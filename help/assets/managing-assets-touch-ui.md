@@ -4,7 +4,7 @@ description: Saiba mais sobre várias tarefas de gerenciamento de ativos e ediç
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 28ebd6c7648e4f32203e20dbc8a7d7f205acb740
+source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
 
 ---
 
@@ -381,7 +381,7 @@ Quando você copia um ativo ou uma pasta, o ativo inteiro ou a pasta é copiado,
 
 Alguns atributos exclusivos a uma cópia específica de um ativo não são transmitidos. Alguns exemplos são:
 
-* Caminho relativo, ID do ativo, data e hora de criação e versões e histórico de versões. Algumas dessas propriedades são indicadas pelas propriedades `dam:relativePath`, `jcr:uuid`, `jcr:created`e `cq:name`.
+* ID do ativo, data e hora de criação e versões e histórico de versões. Algumas dessas propriedades são indicadas pelas propriedades `jcr:uuid`, `jcr:created`e `cq:name`.
 
 * O tempo de criação e os caminhos referenciados são exclusivos para cada ativo e cada uma de suas execuções.
 
