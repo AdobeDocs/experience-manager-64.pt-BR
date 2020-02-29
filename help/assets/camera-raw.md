@@ -3,7 +3,7 @@ title: Suporte ao Camera Raw
 description: Saiba como ativar o suporte do Camera Raw nos ativos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2404241676daeb5e4b53149c03a23d5ee2f2667
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -55,9 +55,13 @@ Para ativar o suporte do Camera Raw nos ativos Adobe Experience Manager, siga es
 
 Agora você pode importar arquivos do Camera Raw para o AEM Assets. Depois de instalar o pacote Camera RAW e configurar o fluxo de trabalho necessário, a opção **[!UICONTROL Ajustar]** imagem é exibida na lista de painéis laterais.
 
-![chlimage_1-337](assets/chlimage_1-337.png)*Figura: Opções no painel lateral.*
+![chlimage_1-338](assets/chlimage_1-337.png)
 
-![chlimage_1-338](assets/chlimage_1-338.png)*Figura: Use a opção para fazer edições leves em suas imagens.*
+*Figura: Opções no painel lateral.*
+
+![chlimage_1-338](assets/chlimage_1-338.png)
+
+*Figura: Use a opção para fazer edições leves em suas imagens.*
 
 Depois de salvar as edições em uma imagem do Camera Raw, uma nova execução `AdjustedPreview.jpg` é gerada para a imagem. Para outros tipos de imagem, exceto o Camera Raw, as alterações são refletidas em todas as execuções.
 
