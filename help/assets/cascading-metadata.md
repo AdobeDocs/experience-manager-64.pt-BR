@@ -3,7 +3,7 @@ title: Metadados em cascata
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    ![Metadados em cascata para o ativo Vídeo](assets/video_asset.png)
 
-   **** Figura: Metadados em *cascata para o ativo Vídeo*
+   *Figura: Metadados em cascata para o ativo Vídeo*
 
    ![Metadados em cascata para ativo de documento](assets/doc_type_fields.png)
 
-   **** Figura: Metadados em *cascata para ativo de documento*
-
+   *Figura:Metadados em cascata para ativo de documento*
