@@ -3,7 +3,7 @@ title: Usar ativos do Adobe Stock nos ativos AEM
 description: Pesquise, busque, licencie e gerencie ativos do Adobe Stock no AEM. Tratar os ativos licenciados como qualquer outro ativo AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -52,7 +52,9 @@ Usando esse recurso, as organizações podem permitir que seus usuários trabalh
 
 Depois que um ativo do Adobe Stock é licenciado no AEM, ele pode ser usado e gerenciado como um ativo comum. No AEM, os usuários podem pesquisar e visualizar os ativos; copiar e publicar os ativos; compartilhar os ativos no Brand Portal; acessar e usar os ativos por meio do aplicativo de desktop do AEM; e assim por diante.
 
-![Procure ativos do Adobe Stock e filtre os resultados de sua área de trabalho](assets/adobe-stock-search-results-workspace.png)do AEM *Figura: Procure ativos do Adobe Stock e filtre os resultados de sua área de trabalho do AEM*
+![Procure ativos do Adobe Stock e filtre os resultados de sua área de trabalho do AEM](assets/adobe-stock-search-results-workspace.png)
+
+*Figura: Procure ativos do Adobe Stock e filtre os resultados de sua área de trabalho do AEM*
 
 **A.** Pesquise ativos semelhantes aos ativos cuja ID do Adobe Stock é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C.** Procure um dos tipos de ativos mais compatíveis **D.** Abra ou recolha o painel Filtros **E.** Licencie e salve o ativo selecionado no AEM **F.** Salve o ativo no AEM com a marca d&#39;água **G.** Explore os ativos no site do Adobe Stock que são semelhantes ao ativo selecionado **H.** Exiba os ativos selecionados no site do Adobe Stock **I.** Número de ativos selecionados dos resultados de pesquisa **J.** Alterne entre a exibição Cartão e a exibição em Lista
 
@@ -70,7 +72,9 @@ Como alternativa, comece a digitar `Location: Adobe Stock` na barra de pesquisa 
 >
 >Os ativos pesquisados a partir do Adobe Stock são exibidos apenas no AEM. Os ativos do Adobe Stock são obtidos e armazenados no repositório do AEM somente depois que um usuário [salva um ativo](aem-assets-adobe-stock.md#saveassets) ou [licencia um ativo](aem-assets-adobe-stock.md#licenseassets). Os ativos já armazenados no AEM são exibidos e destacados para facilitar a referência e o acesso. Além disso, esses ativos são salvos com alguns metadados adicionais para indicar a fonte como o Adobe Stock.
 
-![Pesquise os filtros no AEM e realce os ativos do Adobe Stock nos resultados](assets/aem-search-filters2.jpg)da pesquisa *Figura: Pesquisar filtros no AEM e destacar ativos do Adobe Stock nos resultados da pesquisa*
+![Pesquisar filtros no AEM e destacar ativos do Adobe Stock nos resultados da pesquisa](assets/aem-search-filters2.jpg)
+
+*Figura: Pesquisar filtros no AEM e destacar ativos do Adobe Stock nos resultados da pesquisa*
 
 ### Salvar e exibir os ativos necessários {#saveassets}
 
@@ -86,7 +90,9 @@ Na próxima vez que você pesquisar ativos, os ativos salvos serão destacados c
 
 Os usuários podem licenciar ativos do Adobe Stock usando a cota de seu plano Adobe Stock Enterprise. Ao licenciar um ativo, ele é salvo sem uma marca d&#39;água e está disponível para pesquisa e uso nos ativos AEM.
 
-![Caixa de diálogo para licenciar e salvar ativos do Adobe Stock no AEM Assets](assets/aem-stock_licenseandsave.jpg)*Figura: Diálogo para licenciar e salvar ativos do Adobe Stock nos ativos AEM*
+![Diálogo para licenciar e salvar ativos do Adobe Stock nos ativos AEM](assets/aem-stock_licenseandsave.jpg)
+
+*Figura: Diálogo para licenciar e salvar ativos do Adobe Stock nos ativos AEM*
 
 ### Acessar metadados e propriedades de ativos {#access-metadata-and-asset-properties}
 
@@ -96,7 +102,7 @@ Os usuários podem ver as propriedades dos ativos licenciados e não licenciados
 
 ![Exibir e acessar metadados e referências de licença de ativos salvos](assets/metadata_properties.jpg)
 
-**** Figura: *Exibir e acessar metadados e referências de licença de ativos salvos*
+*Figura: Exibir e acessar metadados e referências de licença de ativos salvos*
 
 ## Limitações conhecidas {#known-limitations}
 
