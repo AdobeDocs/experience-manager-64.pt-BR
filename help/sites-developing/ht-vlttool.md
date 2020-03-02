@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: 154f92ac459ff4d4a69bcad9b8beae440582beec
+source-git-commit: 274c043eadbb6dda125062bf53ed145a5b101a2e
 
 ---
 
@@ -215,7 +215,7 @@ Options:
 
 Veja a seguir algumas tarefas comuns executadas no VLT. Para obter informações detalhadas sobre cada comando, consulte os [comandos](#vlt-commands)individuais.
 
-### Fazendo check-out de uma árvore {#checking-out-a-subtree}
+### Fazendo check-out de uma subárvore {#checking-out-a-subtree}
 
 Se você quiser fazer check-out apenas de uma subárvore do repositório, por exemplo, `/apps/geometrixx`, digite o seguinte:
 
