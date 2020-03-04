@@ -4,7 +4,7 @@ description: Saiba mais sobre várias tarefas de gerenciamento de ativos e ediç
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
+source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
 
 ---
 
@@ -21,7 +21,9 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, vo
 
 >[!NOTE]
 >
->O compartilhamento de uma pasta Ativos do tipo não `sling:OrderedFolder` é suportado ao compartilhar com a Marketing Cloud. Se quiser compartilhar uma pasta, não selecione Solicitado ao criar uma pasta.
+>* O compartilhamento de uma pasta Ativos do tipo não `sling:OrderedFolder` é suportado ao compartilhar com a Marketing Cloud. Se quiser compartilhar uma pasta, não selecione Solicitado ao criar uma pasta.
+>* O Experience Manager não permite o uso de `subassets` word como nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos.
+
 
 1. Navegue até o local na pasta de ativos digitais onde deseja criar uma nova pasta.
 1. No menu, clique em **[!UICONTROL Criar]**. Selecione **[!UICONTROL Nova pasta]**.
