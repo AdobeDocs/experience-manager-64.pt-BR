@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -44,7 +44,7 @@ Clicar em uma das opções abre o respectivo console. Para obter uma boa compree
 
 Clique ou toque em **Sites** para começar.
 
-### Navegação do produto  {#product-navigation}
+### Navegação do produto   {#product-navigation}
 
 Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação do produto é iniciado. Reserve alguns momentos para clicar ou tocar no conteúdo a fim de obter uma boa visão geral sobre a manipulação básica do AEM.
 
@@ -68,7 +68,7 @@ Você pode fechar o painel de navegação global clicando ou tocando em **Fechar
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
-* **Navegação** - Representado por uma bússola 
+* **Navegação** - Representado por uma bússola  
 * **Ferramentas** - Representado por um martelo
 
 As opções disponíveis nesses painéis estão descritas abaixo.
@@ -112,10 +112,6 @@ As opções disponíveis nesses painéis estão descritas abaixo.
   <tr>
    <td>Projetos</td> 
    <td>O console <a href="/help/sites-authoring/touch-ui-managing-projects.md">Projetos</a> oferece acesso direto aos seus projetos. Os projetos são painéis virtuais. Eles podem ser usados para criar uma equipe e depois dar a ela acesso aos recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem em um objetivo comum. <br /> </td> 
-  </tr>
-  <tr>
-   <td>Screens</td> 
-   <td><a href="/help/screens/authoring-screens.md">Permitem gerenciar todas as telas voltadas para o cliente, de qualquer tamanho e em qualquer local.</a></td> 
   </tr>
   <tr>
    <td>Sites</td> 
@@ -269,7 +265,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas  {#quick-actions}
+## Ações rápidas   {#quick-actions}
 
 Na [Exibição de cartão](#quick-actions), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -286,13 +282,13 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 * [Exibição de coluna](#column-view)
 * [Exibição de cartão](#card-view)
 
-* [Exibição de lista ](#list-view)
+* [Exibição de lista  ](#list-view)
 
 >[!NOTE]
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos  {#selecting-resources}
+### Seleção de recursos   {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -320,17 +316,17 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>Exibição de cartão<br /> </td> 
    <td>
     <ul> 
-     <li><br /> Área de trabalho: Passe o mouse sobre o mouse e use a ação rápida de marca de seleção</li> 
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
      <li>Dispositivo móvel:<br /> Tocar e segurar o cartão</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> Área de trabalho:Clique no cartão</li> 
-     <li><br /> Dispositivo móvel:Toque no cartão</li> 
+     <li>Desktop:<br /> Click the card</li> 
+     <li>Mobile device:<br /> Tap the card</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>Exibição de lista </td> 
+   <td>Exibição de lista  </td> 
    <td>
     <ul> 
      <li>Desktop: <br /> Clique na miniatura</li> 
@@ -419,7 +415,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#the-header).
 
-### Exibição de lista  {#list-view}
+### Exibição de lista   {#list-view}
 
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 
