@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -43,11 +43,7 @@ Para criar um projeto de demonstração do Screens e publicar seu conteúdo no S
 
 ## Iniciar um novo projeto do AEM Screens {#starting-a-new-aem-screens-project}
 
-Iniciar uma nova experiência de sinalização digital requer uma coesão de funções antes de estar pronto para o consumo. As seguintes funções fornecem um ponto de partida para a criação de um novo projeto do Screens:
-
-* [Autor](authoring-screens.md)
-* [Desenvolvedor](developing-screens.md)
-* [Administrador do sistema/técnico](administering-screens.md)
+Iniciar uma nova experiência de sinalização digital requer uma coesão de funções antes de estar pronto para o consumo.
 
 A figura a seguir define as personas e suas funções para o AEM Screens.
 
@@ -71,7 +67,7 @@ Consulte os seguintes tutoriais e recursos para saber mais sobre o Adobe Experie
 
 Siga o caminho de aprendizado guiado AEM Screens Implementation Essentials, que abrange recursos fundamentais e avançados compatíveis com o AEM Screens.
 
-Ao criar um novo projeto, funções diferentes podem se sobrepor dependendo de suas necessidades organizacionais e comerciais. Você pode consultar os seguintes recursos para obter funções detalhadas passo a passo que permitirão criar e gerenciar projetos do AEM Screens:
+Ao criar um novo projeto, funções diferentes podem se sobrepor dependendo de suas necessidades organizacionais e comerciais. Você pode consultar os seguintes recursos para obter funções detalhadas passo a passo que permitirão criar e gerenciar o projeto do AEM Screens:
 
 1. [Instalar e configurar telas](configuring-screens-introduction.md)
 1. [Criar e gerenciar projetos de telas](creating-a-screens-project.md)
