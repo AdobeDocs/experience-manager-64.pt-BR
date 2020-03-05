@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -94,12 +94,12 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Como editar ou adicionar metadados](meta-edit.md)
    + [Guia de migração de ativos](assets-migration-guide.md)
    + [Metadados XMP](xmp.md)
-   + [Considerações de rede de ativos](assets-network-considerations.md)
+   + [Considerações sobre a rede de ativos](assets-network-considerations.md)
    + [AEM Assets vs. AEM MediaLibrary](medialibrary.md)
    + [Uso do PDF rasterizer](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload de ativos](configuring-asset-upload-restrictions.md)
    + [Práticas recomendadas de integração do AEM e da Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integração dos ativos AEM com o servidor InDesign](indesign.md)
+   + [Integração dos ativos AEM com o servidor do InDesign](indesign.md)
    + [Perfis de metadados](metadata-profiles.md)
    + [Gerenciamento de direitos digitais em ativos](drm.md)
    + [Uso do pacote de demonstração para o Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
@@ -119,7 +119,8 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Esquema de metadados de pasta](folder-metadata-schema.md)
    + [Gerenciamento de tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configurar a integração do AEM Assets com o Brand Portal](brand-portal-configuring-integration.md)
+   + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
+   + [Publicar ativos no Brand Portal](brand-portal-publish-assets.md)
    + [Publicar coleções no Brand Portal](brand-portal-publish-collection.md)
    + [Publicar pastas no Brand Portal](brand-portal-publish-folder.md)
 + Fragmentos de conteúdo {#fragments}
@@ -139,7 +140,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Gerenciamento de coleções](managing-collections-touch-ui.md)
    + [Fazer check-in e check-out de arquivos em Ativos](check-out-and-submit-assets.md)
    + [Configurar a marcação de ativos usando o Serviço de conteúdo inteligente](config-smart-tagging.md)
-   + [Ativando detecção de duplicatas](duplicate-detection.md)
+   + [Habilitando detecção de duplicatas](duplicate-detection.md)
    + [Classificação aprimorada de ativos no AEM](enhance-sort.md)
    + [Organizar ativos digitais](organize-assets.md)
    + [Gerenciamento de ativos de vídeo](managing-video-assets.md)
@@ -154,7 +155,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Uso do rastreador de páginas e do código incorporado em páginas da Web](touch-ui-using-page-tracker.md)
    + [Gerenciamento de ativos compostos](managing-linked-subassets.md)
    + [Ativos relacionados](related-assets.md)
-   + [ Informações de ativos](touch-ui-asset-insights.md)
+   + [Informações de ativos ](touch-ui-asset-insights.md)
    + [Pesquisar ativos de vídeo](search-video-assets.md)
    + [Compartilhamento de pasta particular](private-folder.md)
    + [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
