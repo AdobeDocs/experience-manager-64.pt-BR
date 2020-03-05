@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -132,7 +132,7 @@ As etapas necessárias são:
 
 1. Repita as etapas 3 e 4 em todas as instâncias de autor e publicação
 
-Mais informações sobre a instalação de pacotes estão disponíveis na página Console [da](../../help/sites-deploying/configuring-web-console.md#bundles) Web.
+Mais informações sobre a instalação de pacotes estão disponíveis na página Console [da](/help/sites-deploying/web-console.md#bundles) Web.
 
 #### Exemplo: Pacote do Conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
@@ -204,7 +204,7 @@ Para obter detalhes e informações sobre instalação, consulte Configuração 
 
 **Pacotes visíveis na Adobe AEM Cloud**
 
-Os links para pacotes nesta página não exigem nenhuma instância em execução do AEM, pois eles são usados para compartilhar pacotes `adobeaemcloud.com`. Enquanto os pacotes são visualizáveis, o `Install`botão é para instalar os pacotes em um site hospedado da Adobe. Se você pretende instalar em uma instância AEM local, selecionar `Install`resultará em um erro.
+Os links para pacotes nesta página não exigem nenhuma instância em execução do AEM, pois eles são usados para compartilhar pacotes `adobeaemcloud.com`. Enquanto os pacotes são visualizáveis, o `Install`botão é para instalar os pacotes em um site hospedado da Adobe. Se você pretende instalar em uma instância AEM local, a seleção `Install`resultará em um erro.
 
 **Como instalar na instância local do AEM**
 
@@ -298,7 +298,7 @@ As imagens a seguir mostram os resultados da alteração da porta de 4503 para 6
 
 ### Serviço de túnel no autor {#tunnel-service-on-author}
 
-Ao usar o ambiente do autor para [criar sites](sites-console.md), [modificar as propriedades](sites-console.md#modifying-site-properties) do site ou [gerenciar membros](members.md)da comunidade, é necessário acessar membros (usuários) registrados no ambiente de publicação, e não usuários registrados no autor.
+Ao usar o ambiente do autor para [criar sites](sites-console.md), [modificar as propriedades](sites-console.md#modifying-site-properties) do site ou [gerenciar membros](members.md)da comunidade, é necessário acessar os membros (usuários) registrados no ambiente de publicação, e não os usuários registrados no autor.
 
 O serviço de túnel fornece esse acesso usando o agente de replicação do autor.
 
