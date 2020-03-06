@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
+source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
 | Versão | 6.4.8.0 |
 | Tipo | Lançamento do Service Pack |
 | Data | 05 de março de 2020 |
-| URL de download | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0) |
+| URL de download | AEM 6.4.8.0 em [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), Distribuição [de software (Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## O que está incluído no AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -51,6 +51,9 @@ Alguns destaques principais desta versão do Service pack:
 
 ### Sites {#sites}
 
+* Quando um URL de uma página do AEM Sites contém um sinal de dois pontos ou de porcentagem, o navegador subjacente para de responder e os ciclos da CPU mostram um pico (NPR-32368, NPR-31917).
+* Quando uma página do AEM Sites é aberta para edição e um componente é copiado, a ação de colar permanece indisponível para alguns espaços reservados (NPR-32328).
+* O fluxo de trabalho de solicitação de ativação não inclui ativos referenciados (NPR-32304).
 * Quando um Blueprint é criado, se o número de registros for superior a 80, somente os primeiros 80 registros serão exibidos. O Blueprint exibe linhas em branco para o restante dos registros (NPR-32058).
 * Os usuários podem salvar um Fragmento de conteúdo sem fornecer informações nos campos obrigatórios (NPR-31988).
 * A navegação automática não funciona para o caminho configurado em um Componente de fragmento de experiência principal (NPR-31921).
@@ -58,7 +61,6 @@ Alguns destaques principais desta versão do Service pack:
    `Error: No common ancestor found, cannot continue` (NPR-31916).
 * Quando o conteúdo é movido dentro da mesma pasta, a opção de movimentação da página é desativada (NPR-31841).
 * Adicionado suporte para dividir frases em japonês usando o método BUNSETSU e linhas de quebra na posição apropriada (NPR-31836).
-* Quando os URLs terminam com `/_jcr_content/.html` ou `/jcr:content/.html` são acessados, o AEM deixa de responder (NPR-31755).
 * Ao editar um hiperlink no Editor de Rich Text (RTE), o caminho recém-selecionado não é salvo (NPR-31659).
 * Ao excluir um componente de vários campos e desfazer a exclusão, o componente é restaurado, mas os dados não são restaurados (NPR-31617).
 
@@ -80,7 +82,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Exceção de falta de memória observada quando um arquivo ZIP grande é carregado no Experience Manager DAM (NPR-32155).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
 
 * Cancelar a publicação do Brand Portal, na página Gerenciar publicação, falha em subpastas de uma pasta publicada (NPR-31835).
 
@@ -109,10 +111,6 @@ Alguns destaques principais desta versão do Service pack:
 ### Tradução {#translation-6480}
 
 * A criação de projetos de tradução para vários idiomas gera o projeto somente para alguns idiomas em vez de todos e um erro (o resolvedor de recursos já está fechado) é observado no log (NPR-32212).
-
-### Editor de modelo WCM {#wcm-template-editor-6480}
-
-* Picos de CPU e o Experience Manager não responde quando URLs terminam com `/_jcr_content/.html` ou `/jcr:content/.html` são acessados (CQ-4280770).
 
 ### WCM-MSM {#wcm-msm-6480}
 
@@ -200,7 +198,7 @@ Se você estiver usando o pacote `com.day.cq.dam.handler.standard.msoffice` em s
 
 * O fluxo de trabalho do Dynamic Media Encode Video está falhando ao gerar miniatura para o vídeo que é migrado do Scene 7 para o Dynamic Media - modo de execução do Scene 7 (NPR-31523).
 
-* Erro interno do servidor é observado ao usar o filtro para pesquisar por Conjuntos, no AEM em execução no Dynamic Media - modo de execução Scene 7 (NPR-31388).
+* Erro interno do servidor é observado ao usar o filtro para procurar por Conjuntos, no AEM em execução no Dynamic Media - modo de execução Scene 7 (NPR-31388).
 
 * Ocorreu um erro ao editar um conjunto de imagens remoto, para a imagem que reside na pasta com o mesmo nome que o nome da empresa Scene 7 (NPR-31347).
 
@@ -1902,7 +1900,7 @@ As correções do AEM Forms são entregues por meio de pacotes complementares e 
 Os principais destaques do AEM Forms são:
 
 * O AEM Forms apresenta o recurso [de relatórios de](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html) transação para rastrear e manter a contagem de transações, como formulários enviados, documentos processados e documentos renderizados, na implantação do AEM Forms. Ele fornece informações sobre o uso do produto e ajuda os usuários empresariais a compreender os volumes de processamento digital.
-* Ativado o suporte a PDF/UA para formulários XML.
+* Ativado o suporte PDF/UA para formulários XML.
 * Adicionado allowProxy = true para Clientlib **aemfd.ccm.channel.contentpage**
 * Código atualizado para fazer pesquisa de título avançada como contém em vez de igual.
 * Atualize para a nova versão do NPM (Node Package Manager) no Computador de Integração Contínua.
