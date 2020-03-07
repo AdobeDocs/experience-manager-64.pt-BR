@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.4 Forms User Guide
 translation-type: tm+mt
-source-git-commit: 6546a047d3013740be93b739ccd880c685250200
+source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
 
 ---
 
@@ -22,15 +22,15 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Introdução às Comunicações Interativas](using/interactive-communications-overview.md)
    + [Introdução ao gerenciamento de formulários](using/introduction-managing-forms.md)
    + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
-      + [Tutorial:Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
+      + [Tutorial: Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
       + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
-      + [Tutorial:Criar modelo de dados de formulário](using/create-form-data-model.md)
+      + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
       + [Tutorial: Aplicar regras a campos de formulário adaptáveis l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo do formulário adaptativo](using/style-your-adaptive-form.md)
    + Tutorial: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
-      + [Tutorial:Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
+      + [Tutorial: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
       + [Tutorial: Planeje a comunicação interativa](using/planning-interactive-communications.md)
-      + [Tutorial:Criar modelo de dados de formulário](using/create-form-data-model0.md)
+      + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model0.md)
       + [Tutorial: Criar fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Criar modelos](using/create-templates-print-web.md)
       + [Tutorial: Criar comunicação interativa](using/create-interactive-communication0.md)
@@ -41,7 +41,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + [Apresentação do site de referência de autoatendimento do funcionário](/help/forms/using/employee-self-service-reference-site.md)
       + [Apresentação do site de referência de recrutamento de funcionários](/help/forms/using/employee-recruitment-reference-site.md)
       + [Site de referência de Renovação de Seguro Automático do We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
-      + [Apresentação do sítio de referência relativo a We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
+      + [Apresentação do site de referência We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
       + [Referência a fragmentos de formulário adaptável](using/reference-adaptive-form-fragments.md)
       + [Temas de referência](using/reference-themes.md)
       + [Modelos de carta de referência](using/reference-cm-layout-templates.md)
@@ -102,7 +102,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Pesquisar formulários e ativos](using/searching-forms-or-assets.md)
    + [Gerenciar metadados do formulário](using/manage-form-metadata.md)
    + [Download de um modelo de formulário XFA ou PDF](using/download-xfa-or-pdf-form.md)
-   + [Excluir formulários e recursos relacionados](using/deleting-forms-related-resources.md)
+   + [Excluindo formulários e recursos relacionados](using/deleting-forms-related-resources.md)
    + [Obter documentos XDP e PDF no AEM Forms](using/get-xdp-pdf-documents-aem.md)
    + [Importação e exportação de ativos para o AEM Forms](using/import-export-forms-templates.md)
    + [Suporte a novas localidades para a localização de formulários adaptáveis](using/supporting-new-language-localization.md)
@@ -144,7 +144,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Introdução à sequência de formulários em várias etapas](using/introduction-form-sequence.md)
    + [Recursos de layout de formulários adaptáveis](using/layout-capabilities-adaptive-forms.md)
    + [Texto de espaço reservado no AEM Forms](using/placeholder-text-in-aem-forms-.md)
-   + [Visualizar um formulário](using/previewing-forms.md)
+   + [Visualização de um formulário](using/previewing-forms.md)
    + [Reutilização de formulários adaptáveis](using/reusing-adaptive-forms.md)
    + [Componente separador em formulários adaptáveis](using/separator-component-in-adaptive-forms.md)
    + [Aplicar assinaturas eletrônicas a um formulário usando assinaturas rabiscadas](using/signing-forms-using-scribble.md)
@@ -167,7 +167,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Preencher previamente campos de formulário adaptáveis](using/prepopulate-adaptive-form-fields.md)
    + [Uso de expressões SOM em formulários adaptáveis](using/using-som-expressions-adaptive-forms.md)
    + [Adicionar informações dos dados do usuário aos metadados de envio do formulário](using/form-submission-metadata.md)
-   + [Suporte XFA em formulários adaptativos baseados em XDP](using/xfa-api-supported-in-adaptive-form.md)
+   + [Suporte XFA em formulários adaptáveis baseados em XDP](using/xfa-api-supported-in-adaptive-form.md)
    + [Alteração do conteúdo Zero da página no Designer](using/changing-page-zero-content-designer.md)
    + [Conceder acesso ao editor de regras para grupos de usuários selecionados](using/rule-editor-access-user-groups.md)
    + [Usar o fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documento de registro](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
@@ -192,7 +192,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Selecionar dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Ações e recursos de fluxos de trabalho do AEM centrados em forma nos fluxos de trabalho do OSGi e do AEM Forms JEE](using/capabilities-osgi-jee-workflows.md)
    + [Iniciar APIs do Document Services a partir do fluxo de trabalho do AEM](using/initiating-document-services-apis-aem.md)
-+ AEM Forms Workspace {#use-aem-forms-workspace}
++ Espaço de trabalho do AEM Forms {#use-aem-forms-workspace}
    + [Introdução à área de trabalho do AEM Forms](using/introduction-html-workspace.md)
    + [Trabalhar com a área de trabalho do AEM Forms](using/html-workspace-overview.md)
    + [Arquitetura do AEM Forms Workspace](using/html-workspace-architecture.md)
@@ -211,7 +211,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Alteração da localidade da interface do usuário da área de trabalho do AEM Forms](using/changing-locale-user-interface.md)
    + [Criar uma nova tela de login](using/creating-new-login-screen.md)
    + [Personalização de caixas de diálogo de erro](using/customizing-error-dialogs.md)
-   + [Personalizar guias para uma tarefa](using/customizing-tabs-task.md)
+   + [Personalização de guias para uma tarefa](using/customizing-tabs-task.md)
    + [Personalização da página de detalhes da tarefa](using/customizing-task-details-page.md)
    + [Personalização da lista de instâncias de processo](using/customizing-listing-process-instances.md)
    + [Personalização de ações de tarefa](using/customizing-task-actions.md)
@@ -286,7 +286,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Alteração de estilos padrão de formulários HTML5](using/changing-default-styles.md)
    + [Suporte a cláusula de imagem para formulários HTML5](using/picture-clause-support.md)
    + [Criar tabelas complexas acessíveis em formulários HTML5](using/accessible-tables.md)
-   + [Criar estilos CSS para formulários HTML5](using/css-styles.md)
+   + [Criação de estilos CSS para formulários HTML5](using/css-styles.md)
    + [Personalização de mensagens de erro para formulários HTML5](using/customzing-errors-html5-forms.md)
    + [Salvar um formulário HTML5 como rascunho](using/saving-html5-form-draft.md)
    + [Ativar o registro em log para formulários HTML5](using/enable-logs.md)
@@ -341,7 +341,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
 + Portal de formulários {#use-forms-portal}
    + [Personalização de modelos para componentes do portal de formulários](using/customizing-templates-forms-portal-components.md)
    + [Ativação de componentes do portal de formulários](using/enabling-forms-portal-components.md)
-   + [Criar uma página de portal de formulários](using/creating-form-portal-page.md)
+   + [Criação de uma página de portal de formulários](using/creating-form-portal-page.md)
    + [APIs para trabalhar com formulários enviados no portal de formulários](using/report-submitted-data-forms.md)
    + [Armazenamento personalizado para componentes de rascunhos e envios](using/adding-custom-storage-provider-forms.md)
 + Serviços de documentação {#use-document-services}
@@ -358,7 +358,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Ofertas de segurança de documentos](using/document-security-offerings.md)
    + [Habilitar o AEM para pesquisar documentos PDF protegidos pela segurança do documento](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
    + [O Reader estende documentos PDF protegidos por política usando a Biblioteca de proteção portátil](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
-   + [Permitir que o AEM pesquise documentos PDF e documentos do Microsoft Office protegidos por segurança](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
+   + [Permitir que o AEM pesquise documentos PDF e documentos do Microsoft Office protegidos pela segurança do documento](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Proteger um documento em nome de outro usuário](using/protect-document-on-behalf-of-another-user.md)
 + Designer do Forms {#use-forms-designer}
    + [Uso do Designer](http://www.adobe.com/go/learn_aemforms_designer_64)
@@ -385,7 +385,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Criação de temas de formulário adaptáveis personalizados](using/creating-custom-adaptive-form-themes.md)
 + Relatórios de transação {#transaction-reports}
    + [Visão geral dos relatórios de transação](using/transaction-reports-overview.md)
-   + [Exibindo e Entendendo Relatórios de Transação](using/viewing-and-understanding-transaction-reports.md)
+   + [Exibindo e Compreendendo Relatórios de Transação](using/viewing-and-understanding-transaction-reports.md)
    + [Relatórios de transação APIs faturáveis](using/transaction-reports-billable-apis.md)
    + [Registrar uma transação para implementações personalizadas](using/record-transaction-custom-implementation.md)
 + Ajuda do administrador para o AEM Forms no JEE {#administrator-help}
@@ -403,8 +403,8 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + Configuração do gerenciamento de usuários {#configure-user-management}
       + [Alterar a ordem de avaliação para autenticação](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
       + [Configurar a senha de ligação LDAP](/help/forms/using/admin-help/configure-ldap-bind-password.md)
-      + [Configurar formulários AEM para pré-buscar informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
-      + [Configurar autenticação baseada em certificado](/help/forms/using/admin-help/configuring-certificate-based-authentication.md)
+      + [Configurar formulários do AEM para pré-buscar informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
+      + [Configurando a autenticação baseada em certificado](/help/forms/using/admin-help/configuring-certificate-based-authentication.md)
       + [Definir configurações do provedor de serviços SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md)
       + [Habilitar logon único em formulários AEM](/help/forms/using/admin-help/enabling-single-sign-on-aem.md)
       + [Configurar o Gerenciamento de usuários para um servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md)
@@ -444,7 +444,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + [Configurando pontos de extremidade do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Tipos de pontos finais](/help/forms/using/admin-help/types-endpoints.md)
    + Configuração de extensões do Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
-      + [Tipos de certificado usados pelas extensões do Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
+      + [Tipos de certificado usados por extensões do Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Como reconhecer certificados válidos e expirados em documentos PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configuração de extensões do Acrobat Reader DC para captura de dados](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
       + [Revisar informações de uso de credenciais](/help/forms/using/admin-help/review-credential-information.md)
@@ -459,7 +459,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + [Definição das configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Definição das configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings.md)
       + [Importação e exportação de arquivos de configuração do Gerador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
-      + [Ativar suporte a PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
+      + [Habilitar suporte a PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configuração de uma impressora de rede PDFG (somente Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configurar fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [Modificação das configurações de conversão de Exportação de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
@@ -482,7 +482,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + [Criação e gerenciamento de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
       + [Registrando-se como um usuário](/help/forms/using/admin-help/registering-as-a-user.md)
    + Configuração de formulários {#configure-forms}
-      + [Noções básicas para configurar formulários](/help/forms/using/admin-help/overview-7.md)
+      + [Noções básicas sobre a configuração de formulários](/help/forms/using/admin-help/overview-7.md)
       + [Configuração de opções de internacionalização](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Configuração do cache para formulários](/help/forms/using/admin-help/configuring-caching-forms.md)
       + [Especificação de opções de configuração XCI](/help/forms/using/admin-help/specifying-xci-configuration-options.md)
@@ -490,7 +490,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + [Especificação de fontes a serem incorporadas](/help/forms/using/admin-help/specifying-fonts-embed.md)
       + [Configurar locais para o Forms](/help/forms/using/admin-help/configuring-locations-forms.md)
       + [Especificação de configurações de segurança](/help/forms/using/admin-help/specifying-security-settings.md)
-      + [Configurar mensagens de validação](/help/forms/using/admin-help/configuring-validation-messages.md)
+      + [Configuração de mensagens de validação](/help/forms/using/admin-help/configuring-validation-messages.md)
    + Configuração de saída {#configure-output}
       + [Visão geral do serviço de saída](/help/forms/using/admin-help/overview-8.md)
       + [Alterar o conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md)
@@ -567,7 +567,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Consultas Ad-hoc em Relatório de Processo](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Solução de problemas de relatórios de processo](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referência do desenvolvedor {#developer-reference}
-   + [Noções básicas sobre desenvolvedor](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
+   + [Noções básicas para desenvolvedores](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
    + [Linguagem de modelo HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
    + [Plug-in AEM para depurar formulários adaptativos](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referência da API Java do AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
@@ -612,7 +612,8 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + Invocar formulários AEM no JEE usando APIs {#invoking-aem-forms-jee-apis}
          + [Invocar formulários AEM usando solicitações REST](developing/invoking-aem-forms-using-rest.md)
          + [Invocar formulários AEM usando o recurso Remoting](developing/invoking-aem-forms-using-remoting.md)
-         + [Invocar formulários AEM usando serviços da Web](developing/invoking-human-centric-long-lived.md)
+         + [Invocar o AEM Forms usando Serviços da Web](developing/invoking-aem-forms-using-web.md)
+         + [Invocar o AEM Forms usando Serviços da Web](developing/invoking-human-centric-long-lived.md)
          + [Invocar o AEM Forms usando a JavaAPI](developing/invoking-aem-forms-using-java.md)
          + [Criação de aplicativos Flash Builder que executam autenticação SSO usando tokens HTTP](developing/creating-flash-builder-applications-perform.md)
       + Execução de operações de serviço usando APIs {#performing-service-operations-using-apis}
@@ -655,7 +656,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
          + [Criptografando e descriptografando documentos PDF](developing/encrypting-decrypting-pdf-documents.md)
          + [Importação e exportação de dados](developing/importing-exporting-data.md)
          + [Gerenciamento de usuários](developing/users.md)
-         + [Trabalhar com o AEM Forms Repository](developing/aem-forms-repository.md)
+         + [Trabalhar com o repositório de formulários do AEM](developing/aem-forms-repository.md)
          + [Como trabalhar com formulários com códigos de barras](developing/barcoded-forms.md)
          + [Trabalhar com credenciais](developing/credentials.md)
          + [Como trabalhar com documentos PDF/A](developing/pdf-a-documents.md)
