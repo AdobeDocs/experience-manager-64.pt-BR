@@ -1,17 +1,9 @@
 ---
 title: Configurar os plug-ins do Editor de Rich Text
-seo-title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do AEM para ativar funcionalidades individuais.
-seo-description: Saiba como configurar os plug-ins do Editor de Rich Text do AEM para ativar funcionalidades individuais.
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -57,7 +49,7 @@ Por padrão, `format`, `link`, `list`, `justify`, e `control` plug-ins e todos o
    * **Nome** `rtePlugins`
    * **Tipo** `nt:unstructured`
 
-1. Crie um nó para cada plug-in que deseja ativar:
+1. Crie um nó para cada plug-in que você deseja ativar:
 
    * **Tipo** `nt:unstructured`
    * **Nomeie** a ID do plug-in necessário
@@ -103,15 +95,15 @@ A caixa de diálogo localizar e substituir fica transparente quando a localizaç
 
 Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir:
 
-* **Modo** de navegador:Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas.
+* **Modo** de navegador: Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas.
 
 * **Modo** de texto simples: Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM.
 
-* **Modo** MS Word: Cole o texto, incluindo tabelas, com formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida.
+* **Modo** MS Word: Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida.
 
-### Configure as opções de Colagem disponíveis na barra de ferramentas RTE {#configure-paste-options-available-on-the-rte-toolbar}
+### Configure as opções de Colagem disponíveis na barra de ferramentas do RTE {#configure-paste-options-available-on-the-rte-toolbar}
 
-Você pode fornecer alguns, todos ou nenhum desses três ícones aos autores na barra de ferramentas do RTE:
+Você pode fornecer alguns, todos ou nenhum desses três ícones aos seus autores na barra de ferramentas do RTE:
 
 * **[!UICONTROL Colar (Ctrl+V)]**: Pode ser pré-configurado para corresponder a um dos três modos Colar acima.
 
@@ -132,13 +124,13 @@ Para configurar o RTE para exibir os ícones necessários, siga estas etapas.
 
 Você pode pré-configurar o comportamento do ícone **[!UICONTROL Colar (Ctrl+V)]** , usando as seguintes etapas. Essa configuração também define o comportamento do atalho de teclado Ctrl+V que os Autores usam para colar o conteúdo.
 
-A configuração permite os seguintes três tipos de casos de uso:
+A configuração permite os três tipos de casos de uso a seguir:
 
 * Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas. Configurado usando `browser` abaixo.
 
-*  Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM. Configurado usando `plaintext` abaixo.
+* Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM. Configurado usando `plaintext` abaixo.
 
-*  Cole o texto, incluindo tabelas, com formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida. Configurado usando `wordhtml` abaixo.
+* Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida. Configurado usando `wordhtml` abaixo.
 
 1. Em seu componente, navegue até o `<rtePlugins-node>/edit` nó. Crie os nós se eles não existirem. Para obter mais informações, consulte [ativar um plug-in](#activateplugin).
 1. No `edit` nó, crie uma propriedade usando os seguintes detalhes:
@@ -333,7 +325,7 @@ O Editor de Rich Text usa um elemento DOM de contêiner com uma ID `CQrte` que p
 
    * **Nome** `text`
    * **Tipo** `String`
-   * **Valor** Descrição do estilo; aparece na caixa de seleção suspensa Estilo.
+   * **Valor** Descrição do estilo; é exibida na caixa de seleção suspensa Estilo.
 
 1. Salve as alterações.
 
@@ -447,7 +439,7 @@ Adicionar seus próprios caracteres especiais substitui a seleção padrão. Se 
 
 1. Em `chars` Adicionar um novo nó para manter uma definição de caractere individual:
 
-   * **Nome** que você pode especificar, mas deve refletir o caractere; por exemplo, metade.
+   * **Nome** que você pode especificar, mas que deve refletir o caractere; por exemplo, metade.
    * **Tipo** `nt:unstructured`
 
 1. Para esse nó, adicione a seguinte propriedade:
@@ -709,7 +701,7 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
-      * **Valores** de um ou mais protocolos
+      * **Valor**(s) um ou mais protocolos
    * **defaultProtocol** (propriedade do tipo **String**): Protocolo a ser usado se o usuário não especificou um explicitamente.
 
       * **Nome** `defaultProtocol`
