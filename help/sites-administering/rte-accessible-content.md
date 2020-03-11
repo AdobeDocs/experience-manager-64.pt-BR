@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -24,12 +24,8 @@ O AEM suporta ambos:
 
 >[!NOTE]
 >
->Consulte também:
->
->* Nosso [Guia rápido do WCAG 2.0](/help/managing/qg-wcag.md) para obter mais detalhes
+>* [Guia rápido para WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Criação de conteúdo acessível (conformidade com WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 Os autores de conteúdo podem usar os recursos do RTE para fornecer informações de acessibilidade ao adicionar conteúdo a uma página. Isso pode incluir a adição de informações estruturais por meio de cabeçalhos e elementos de parágrafo.
@@ -86,7 +82,7 @@ Podem ser disponibilizados novos formatos de blocos semânticos para seleção a
    * Uso do campo **Formatar** (seletor suspenso) na interface clássica.
 
 
-Com elementos estruturais disponíveis no RTE por meio das opções de formato de parágrafo, o AEM fornece uma boa base para o desenvolvimento de conteúdo acessível. Os autores de conteúdo não podem usar o RTE para formatar tamanho de fonte ou cores ou outros atributos relacionados, impedindo a criação de formatação em linha. Em vez disso, eles devem selecionar os elementos estruturais apropriados, como cabeçalhos e usar estilos globais escolhidos na opção Estilos. Isso garante uma marcação limpa, maiores opções para usuários que navegam com suas próprias folhas de estilos e conteúdo estruturado corretamente.
+Com elementos estruturais disponíveis no RTE por meio das opções de formato de parágrafo, o AEM fornece uma boa base para o desenvolvimento de conteúdo acessível. Os autores de conteúdo não podem usar o RTE para formatar tamanho de fonte ou cores ou outros atributos relacionados, impedindo a criação de formatação em linha. Em vez disso, eles devem selecionar os elementos estruturais apropriados, como cabeçalhos e usar estilos globais escolhidos na opção Estilos. Isso garante a limpeza da marcação, maiores opções para usuários que navegam com suas próprias folhas de estilos e conteúdo estruturado corretamente.
 
 ## Uso do recurso Editar fonte {#use-of-the-source-edit-feature}
 
@@ -196,7 +192,7 @@ Na **Tabela** , você deve definir ou remover explicitamente o atributo de/para 
    }
    ```
 
-1. Salvar suas alterações usando **Salvar tudo ...**
+1. Salvar suas alterações usando **Salvar tudo**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ Na **Tabela** , você deve definir ou remover explicitamente o atributo de/para 
 >
 >* A `itemId` propriedade para cada campo correspondente é definida como o nome do atributo DOM (`TablePropertiesDialog`) apropriado.
 >* O atributo é definido e/ou removido no elemento DOM explicitamente (`Table`).
-
 
