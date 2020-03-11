@@ -3,7 +3,7 @@ title: Pesquisar ativos no AEM
 description: Saiba como localizar os ativos necessários no AEM usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -27,10 +27,12 @@ Você pode pesquisar com base nas seguintes opções (predicados):
 * Estilo
 * Insights
 
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
+
 Você pode personalizar o painel Filtros e adicionar/remover predicados de pesquisa usando aspectos [de](search-facets.md)pesquisa. Para exibir o painel Filtros, execute estas etapas:
 
 1. Na interface do usuário do Assets, toque/clique em ![search_icon](assets/search_icon.png) na barra de ferramentas para exibir a caixa Omnisearch.
-1. Insira o termo de pesquisa e pressione Enter. Como alternativa, basta pressionar Enter sem inserir nenhum termo de pesquisa. Não insira espaços à esquerda; caso contrário, a pesquisa não funcionará.
+1. Digite o termo de pesquisa e pressione Enter. Como alternativa, basta pressionar Enter sem inserir nenhum termo de pesquisa. Não insira espaços à esquerda; caso contrário, a pesquisa não funcionará.
 
 1. Toque/clique no ícone GlobalNav. O painel Filtros é exibido.
 
