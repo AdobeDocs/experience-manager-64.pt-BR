@@ -3,7 +3,7 @@ title: Metadados em cascata
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -53,7 +53,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]**, toque/clique em **[!UICONTROL Adicionar escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
    * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho]** JSON e forneça o caminho do arquivo JSON. O AEM obtém os pares de valor chave em tempo real quando o formulário é apresentado ao usuário.
-   Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editar manualmente.
+   Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editá-las manualmente.
 
    ![add_choice](assets/add_choice.png)
 
@@ -88,7 +88,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
 1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Toque/clique em **[!UICONTROL Concluído]** para salvar as alterações.
 
-   ![define_regra de visibilidade](assets/define_visibilityrule.png)
+   ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!NOTE]
    >
@@ -110,4 +110,4 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    ![Metadados em cascata para ativo de documento](assets/doc_type_fields.png)
 
-   *Figura:Metadados em cascata para ativo de documento*
+   *Figura: Metadados em cascata para ativo de documento*
