@@ -3,7 +3,7 @@ title: Gerenciamento de direitos digitais em ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados no AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -11,6 +11,8 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 # Digital Rights Management in Assets {#digital-rights-management-in-assets}
 
 Os ativos digitais geralmente são associados a uma licença, que especifica seus termos e duração de uso. Como os ativos Adobe Experience Manager (AEM) são totalmente integrados à plataforma AEM, você pode gerenciar com eficiência as informações de expiração de ativos e os estados de ativos. Também é possível associar informações de licenciamento a ativos.
+
+<!-- TBD see if adding more UICONTROL tags is needed -->
 
 ## Expiração do ativo {#asset-expiration}
 
@@ -20,21 +22,21 @@ Você pode exibir o status de expiração de um ativo no console Ativos nas exib
 
 **Exibição de cartão**
 
- Para um ativo expirado, um sinalizador no cartão indica que ele expirou.
+Para um ativo expirado, um sinalizador no cartão indica que ele expirou.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
 **Exibição de lista**
 
- Para ativos expirados, a coluna **[!UICONTROL Status]** exibe o banner **[!UICONTROL Expirado]** .
+Para ativos expirados, a coluna **[!UICONTROL Status]** exibe o banner **[!UICONTROL Expirado]** .
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
- Você pode exibir o status de expiração de um ativo na linha do tempo. Selecione o ativo e escolha Linha do tempo no menu GlobalNav.
+Você pode exibir o status de expiração de um ativo na linha do tempo. Selecione o ativo e escolha Linha do tempo no menu GlobalNav.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
- Você também pode exibir o status de expiração dos ativos no painel **[!UICONTROL Referências]** . Ele gerencia os status e as relações de expiração de ativos entre ativos compostos e subativos, coleções e projetos referenciados.
+Você também pode exibir o status de expiração dos ativos no painel **[!UICONTROL Referências]** . Ele gerencia os status e as relações de expiração de ativos entre ativos compostos e subativos, coleções e projetos referenciados.
 
 1. Navegue até o ativo para o qual você deseja exibir páginas da Web de referência e ativos compostos.
 1. Selecione o ativo e clique/toque no ícone de navegação global.
@@ -91,7 +93,7 @@ Para permitir que o console Assets exiba os ativos compostos de referência junt
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
 1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; aciona o trabalho às 00 horas.
-1. Selecione **[!UICONTROL enviar email]** para receber emails quando um ativo expirar.
+1. Selecione **[!UICONTROL enviar e-mail]** para receber e-mails quando um ativo expirar.
 
    >[!NOTE]
    >
@@ -105,7 +107,7 @@ Para permitir que o console Assets exiba os ativos compostos de referência junt
 
 ## Estados do ativo {#asset-states}
 
-O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários estados dos ativos. Dependendo do estado atual de um ativo específico, sua exibição de cartão exibe um rótulo que descreve seu estado, por exemplo, Expirado, Publicado, Aprovado, Rejeitado etc.
+O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários estados dos ativos. Dependendo do estado atual de um ativo específico, sua exibição de cartão exibe um rótulo que descreve seu estado, por exemplo, Expirado, Publicado, Aprovado, Rejeitado e assim por diante.
 
 1. Na interface do usuário Ativos, selecione um ativo.
 
@@ -164,7 +166,7 @@ O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários e
 
 Este recurso impõe a aceitação do contrato de licença antes de você poder baixar um ativo licenciado dos ativos Adobe Experience Manager (AEM).
 
-Se você selecionar um ativo protegido e clicar no ícone **[!UICONTROL Download]** , você será redirecionado para a página de licença na qual aceita o contrato de licença. Se você não aceitar o contrato de licença, o botão **[!UICONTROL Download]** será desativado.
+Se você selecionar um ativo protegido e clicar no ícone **[!UICONTROL Download]** , você será redirecionado para a página de licença na qual você aceita o contrato de licença. Se você não aceitar o contrato de licença, o botão **[!UICONTROL Download]** será desativado.
 
 Se a seleção contiver vários ativos protegidos, selecione um ativo de cada vez, aceite o contrato de licença e continue com o download do ativo.
 
