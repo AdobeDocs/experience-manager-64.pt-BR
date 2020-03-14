@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
+source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
 
 ---
 
@@ -198,7 +198,7 @@ Se você estiver usando o pacote `com.day.cq.dam.handler.standard.msoffice` em s
 
 * O fluxo de trabalho do Dynamic Media Encode Video está falhando ao gerar miniatura para o vídeo que é migrado do Scene 7 para o Dynamic Media - modo de execução do Scene 7 (NPR-31523).
 
-* Erro interno do servidor é observado ao usar o filtro para procurar por Conjuntos, no AEM em execução no Dynamic Media - modo de execução Scene 7 (NPR-31388).
+* Erro interno do servidor é observado ao usar o filtro para pesquisar por Conjuntos, no AEM em execução no Dynamic Media - modo de execução Scene 7 (NPR-31388).
 
 * Ocorreu um erro ao editar um conjunto de imagens remoto, para a imagem que reside na pasta com o mesmo nome que o nome da empresa Scene 7 (NPR-31347).
 
@@ -2206,7 +2206,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 <dependency>
       <code>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.0</version>
+      <version>6.4.8</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
