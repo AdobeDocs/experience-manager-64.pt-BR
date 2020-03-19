@@ -3,7 +3,7 @@ title: Configurar ativos AEM com o Portal de marcas
 description: 'Saiba como configurar os ativos AEM com o Portal de marcas para publicar ativos e coleções no Portal de marcas. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
+source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
 
 ---
 
@@ -195,7 +195,6 @@ Verifique se você executou as seguintes etapas:
 >
 >Certifique-se de que a configuração esteja saudável. Caso a configuração não esteja funcionando, exclua-a e crie uma configuração nova e saudável.
 
-<br/> <br/>
 
 ### Configurar serviço em nuvem {#configure-the-cloud-service}
 
