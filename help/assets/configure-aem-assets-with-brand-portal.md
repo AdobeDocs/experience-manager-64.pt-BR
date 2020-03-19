@@ -3,7 +3,7 @@ title: Configurar ativos AEM com o Portal de marcas
 description: 'Saiba como configurar os ativos AEM com o Portal de marcas para publicar ativos e coleções no Portal de marcas. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 16ed5bc3a06976d2cd616da9987cb7e70f87210f
+source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
 
 ---
 
@@ -183,17 +183,19 @@ Verifique se você executou as seguintes etapas:
 
    ![Configuração da conta IMS](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >Crie apenas uma configuração IMS. Não crie várias configurações IMS.
-
 1. Selecione a configuração IMS e clique em **[!UICONTROL Verificar integridade]**. Uma caixa de diálogo é exibida.
 
    Clique em **[!UICONTROL Verificar]**. Na conexão bem-sucedida, a mensagem *Token recuperado com êxito* é exibida.
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+>
+>Crie apenas uma configuração IMS válida. Não crie várias configurações IMS.
+>
+>Certifique-se de que a configuração esteja saudável. Caso a configuração não esteja funcionando, exclua-a e crie uma configuração nova e saudável.
+
+<br/> <br/>
 
 ### Configurar serviço em nuvem {#configure-the-cloud-service}
 
