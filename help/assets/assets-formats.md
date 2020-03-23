@@ -3,7 +3,7 @@ title: Formatos de arquivo suportados no AEM Assets
 description: Lista de formatos de arquivo e tipos MIME suportados pelo AEM Assets e os recursos suportados para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71ae585919f3745d36bcbce4eebe49f4477e840
+source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
 
 ---
 
@@ -18,7 +18,7 @@ Use a legenda para entender o nível de suporte.
 
 | Nível de suporte | Descrição |
 |:---:|---|
-| ✓ | Suportado |
+| ✓ | Compatível |
 | * | Suportado com recursos complementares |
 | - | Não aplicável |
 
@@ -37,10 +37,12 @@ Os formatos de imagem rasterizados compatíveis com os recursos de gerenciamento
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**¹** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media são os seguintes:
 
@@ -55,12 +57,12 @@ Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
- &amp;ast; A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+**¹** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Além das informações acima, considere o seguinte:
 
@@ -76,7 +78,7 @@ Além das informações acima, considere o seguinte:
 
 A biblioteca do Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos Adobe Illustrator e PDF grandes e com grande quantidade de conteúdo. A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
 
-* Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para processamento.
+* Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
 * Arquivos AI/PDF, para os quais as miniaturas não são geradas por padrão.
 * Arquivos AI com cores Pantone Matching System (PMS).
 
@@ -204,9 +206,9 @@ Os formatos de arquivo suportados e a aplicabilidade dos fluxos de trabalho DAM 
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP* | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**** &amp;ast; Os arquivos ZIP criados com o `Deflate64` algoritmo têm suporte limitado no AEM. Não há suporte para operações de arquivamento e desarquivamento. No entanto, operações como upload, navegação e download são suportadas.
+**²** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real. Os arquivos ZIP criados com o `Deflate64` algoritmo têm suporte limitado no AEM. Não há suporte para operações de arquivamento e desarquivamento. No entanto, operações como upload, navegação e download são suportadas.
 
 ## Outros formatos suportados {#other-supported-formats}
 
@@ -214,14 +216,14 @@ A aplicabilidade de fluxos de trabalho DAM comuns para alguns outros formatos de
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (quando configurado com o próprio domínio de entrega) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Os outros formatos são suportados no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
+**³** Os outros formatos são suportados no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
 
 ## Supported MIME types {#supported-mime-types}
 
