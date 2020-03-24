@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ef873c07-be89-4cd0-8913-65765b989f90
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
 
 ---
 
@@ -39,7 +39,7 @@ O modelo de dados de formulário é semelhante ao seguinte:
 
 ![form_data_model_callouts](assets/form_data_model_callouts.png)
 
-**********A. Fontes de dados configuradas** B. Esquemas de fontes de dados **C.** Serviços disponíveis **D. Objetos de modelo de dados** E. Serviços configurados
+**A.** Fontes de dados configuradas **B.** Esquemas de fontes de dados **C.** Serviços disponíveis **D.** Objetos de modelo de dados **E.** Serviços configurados
 
 ## Pré-requisitos {#prerequisites}
 
@@ -55,9 +55,61 @@ A imagem a seguir ilustra os dados de amostra da tabela do cliente:
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-A tabela de chamadas inclui detalhes da chamada, como data da chamada, hora da chamada, número da chamada, duração da chamada e taxas da chamada. A tabela do cliente é vinculada à tabela de chamadas usando o campo Número do dispositivo móvel (mobilenum). Para cada número de celular listado na tabela do cliente, há vários registros na tabela de chamadas. Por exemplo, você pode recuperar os detalhes da chamada do número **1457892541** para dispositivos móveis referindo-se à tabela de chamadas.
+Use a seguinte instrução DDL para criar a tabela do **cliente** no banco de dados.
 
-A tabela de títulos inclui os detalhes da lista, como data da fatura, período da fatura, encargos mensais e encargos de chamada. A tabela do cliente é vinculada à tabela de faturamentos usando o campo Plano de Faturamento. Há um plano associado a cada cliente na tabela do cliente. A tabela de faturamentos inclui os detalhes de precificação de todos os planos existentes. Por exemplo, você pode recuperar os detalhes do plano para **Sarah** da tabela do cliente e usar esses detalhes para recuperar os detalhes do preço da tabela de faturamentos.
+```sql
+CREATE TABLE `customer` (
+   `mobilenum` int(11) NOT NULL,
+   `name` varchar(45) NOT NULL,
+   `address` varchar(45) NOT NULL,
+   `alternatemobilenumber` int(11) DEFAULT NULL,
+   `relationshipnumber` int(11) DEFAULT NULL,
+   `customerplan` varchar(45) DEFAULT NULL,
+   PRIMARY KEY (`mobilenum`),
+   UNIQUE KEY `mobilenum_UNIQUE` (`mobilenum`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Use a seguinte instrução DDL para criar a tabela de **faturamentos** no banco de dados.
+
+```sql
+CREATE TABLE `bills` (
+   `billplan` varchar(45) NOT NULL,
+   `latepayment` decimal(4,2) NOT NULL,
+   `monthlycharges` decimal(4,2) NOT NULL,
+   `billdate` date NOT NULL,
+   `billperiod` varchar(45) NOT NULL,
+   `prevbal` decimal(4,2) NOT NULL,
+   `callcharges` decimal(4,2) NOT NULL,
+   `confcallcharges` decimal(4,2) NOT NULL,
+   `smscharges` decimal(4,2) NOT NULL,
+   `internetcharges` decimal(4,2) NOT NULL,
+   `roamingnational` decimal(4,2) NOT NULL,
+   `roamingintnl` decimal(4,2) NOT NULL,
+   `vas` decimal(4,2) NOT NULL,
+   `discounts` decimal(4,2) NOT NULL,
+   `tax` decimal(4,2) NOT NULL,
+   PRIMARY KEY (`billplan`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Use a seguinte instrução DDL para criar a tabela de **chamadas** no banco de dados.
+
+```sql
+CREATE TABLE `calls` (
+   `mobilenum` int(11) DEFAULT NULL,
+   `calldate` date DEFAULT NULL,
+   `calltime` varchar(45) DEFAULT NULL,
+   `callnumber` int(11) DEFAULT NULL,
+   `callduration` varchar(45) DEFAULT NULL,
+   `callcharges` decimal(4,2) DEFAULT NULL,
+   `calltype` varchar(45) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+A tabela de **chamadas** inclui detalhes da chamada, como data da chamada, hora da chamada, número da chamada, duração da chamada e taxas de chamada. A tabela do **cliente** é vinculada à tabela de chamadas usando o campo Número do celular (mobilenum). Para cada número de celular listado na tabela do **cliente** , há vários registros na tabela de **chamadas** . Por exemplo, você pode recuperar os detalhes da chamada para o número móvel **1457892541** referindo-se à tabela de **chamadas** .
+
+A tabela de **faturamentos** inclui os detalhes da lista, como data da fatura, período da lista, encargos mensais e encargos de chamada. A tabela **do cliente** é vinculada à tabela de **faturamentos** usando o campo Plano de Faturamento. Há um plano associado a cada cliente na tabela do **cliente** . A tabela de **faturamentos** inclui os detalhes de precificação de todos os planos existentes. Por exemplo, você pode recuperar os detalhes do plano para **Sarah** da tabela do **cliente** e usar esses detalhes para recuperar os detalhes do preço da tabela de **contas** .
 
 ## Etapa 2: Configurar o banco de dados MySQL como fonte de dados {#step-configure-mysql-database-as-data-source}
 
@@ -69,7 +121,7 @@ Faça o seguinte para configurar seu banco de dados MySQL:
 
    1. Faça logon na instância de autor do AEM Forms como administrador e vá para pacotes de console da Web do AEM. O URL padrão é [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
    1. Toque em **Instalar/atualizar**. Uma caixa de diálogo **Carregar / Instalar pacotes** é exibida.
-   1. Toque em **Escolher arquivo** para procurar e selecionar o pacote OSGi do driver JDBC MySQL. Selecione **Iniciar pacote** e **atualizar pacotes** e toque em **Instalar** ou **atualizar**. Certifique-se de que o Driver JDBC da Oracle Corporation para MySQL esteja ativo. O driver está instalado.
+   1. Toque em **Escolher arquivo** para navegar e selecionar o pacote OSGi do driver JDBC do MySQL. Selecione **Iniciar pacote** e **atualizar pacotes** e toque em **Instalar** ou **atualizar**. Certifique-se de que o Driver JDBC da Oracle Corporation para MySQL esteja ativo. O driver está instalado.
 
 1. Configure o banco de dados MySQL como uma fonte de dados:
 
@@ -77,15 +129,15 @@ Faça o seguinte para configurar seu banco de dados MySQL:
    1. Localize a configuração **Apache Sling Connection Pooling DataSource** . Toque em para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
-      * **** Nome da fonte de dados: Você pode especificar qualquer nome. Por exemplo, especifique **MySQL**.
+      * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **MySQL**.
       * **Nome** da propriedade do serviço DataSource: Especifique o nome da propriedade de serviço que contém o nome DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
       * **Classe** de driver JDBC: Especifique o nome da classe Java do driver JDBC. Para o banco de dados MySQL, especifique **com.mysql.jdbc.Driver**.
       * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e teleca de esquema, o URL é: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** Nome de usuário: Nome de usuário do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
-      * **** Senha: Senha do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
-      * **** Teste de emprestado: Ative a opção **Testar em empréstimo** .
-      * **** Teste na devolução: Ative a opção **Testar ao Retornar** .
-      * **** Consulta de validação: Especifique uma consulta SQL SELECT para validar conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecione &amp;ast; do cliente**.
+      * **Nome de usuário:** Nome de usuário do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
+      * **Senha:** Senha do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
+      * **Teste de emprestado:** Ative a opção **Testar em empréstimo** .
+      * **Teste na devolução:** Ative a opção **Testar ao Retornar** .
+      * **Consulta de validação:** Especifique uma consulta SQL SELECT para validar conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecione &amp;ast; do cliente**.
       * **Isolamento** da transação: Defina o valor como **READ_COMPROMISTED**.
    Deixe outras propriedades com [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) padrão e toque em **Salvar**.
 
@@ -131,7 +183,7 @@ A configuração do modelo de dados de formulário inclui:
 
    * **Objetos** do modelo de dados:
 
-      * notas
+      * faturamento
       * chamadas
       * cliente
    * **Serviços:**
@@ -208,7 +260,7 @@ Execute as seguintes etapas para criar associações entre objetos de modelo de 
 
 1. Na caixa de diálogo **Adicionar argumento** :
 
-   * Selecione **mobilenum** na lista suspensa **Nome** . A propriedade mobile number é uma propriedade comum disponível no cliente e chama objetos de modelo de dados. Como resultado, é usado para criar uma associação entre os objetos do modelo de dados de chamada e cliente.
+   * Selecione **mobilenum** na lista suspensa **Nome** . A propriedade mobile number é uma propriedade comum que está disponível no cliente e chama objetos de modelo de dados. Como resultado, é usado para criar uma associação entre os objetos do modelo de dados de chamada e cliente.
 
       Para cada número móvel disponível no objeto de modelo de dados do cliente, há vários registros de chamada disponíveis na tabela de chamadas.
 
@@ -250,7 +302,7 @@ Execute as seguintes etapas para criar associações entre objetos de modelo de 
 Depois de criar associações entre o cliente e outros objetos de modelo de dados, edite as propriedades do cliente para definir a propriedade com base na qual os dados são recuperados do objeto de modelo de dados. Com base no caso de uso, o número móvel é usado como a propriedade para recuperar dados do objeto de modelo de dados do cliente.
 
 1. Marque a caixa de seleção na parte superior do objeto de modelo de dados do **cliente** para selecioná-lo e toque em **Editar propriedades**. O painel **Editar propriedades** é aberto.
-1. Especifique **cliente** como o objeto **Modelo de nível** superior.
+1. Especifique o **cliente** como o objeto **Modelo de nível** superior.
 1. Selecione **obter** na lista suspensa Serviço **de** leitura.
 1. Na seção **Argumentos** :
 
