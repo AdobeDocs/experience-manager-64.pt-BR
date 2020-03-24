@@ -3,7 +3,7 @@ title: Importação e exportação de metadados em massa
 description: Este artigo descreve como importar e exportar metadados em massa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 093524d47565f63c8179abee704720fe23b0d09a
 
 ---
 
@@ -14,33 +14,30 @@ O AEM Assets permite importar metadados de ativos em massa usando um arquivo CSV
 
 ## Importar metadados {#import-metadata}
 
-A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode exigir muitos recursos devido à atividade de write-back de XMP se o sinalizador de fluxo de trabalho estiver marcado. Planeje tal importação durante o uso de servidor simplificado para que o desempenho para outros usuários não seja afetado.
+A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode exigir muitos recursos devido à atividade de write-back de XMP se o sinalizador de fluxo de trabalho estiver marcado. Planeje tal importação durante o uso de servidor simplificado para evitar o impacto no desempenho de outros usuários.
 
 >[!NOTE]
 >
->Para importar metadados em namespaces personalizados, primeiro registre os namespaces.
+>Para importar metadados em namespaces personalizadas, registre primeiro as namespaces.
+
+Para importar metadados em massa, siga estas etapas:
 
 1. Navegue até a interface do usuário Ativos e toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. No menu, selecione **[!UICONTROL Metadados]**.
 1. On the **[!UICONTROL Metadata Import]** page, tap/click the **[!UICONTROL Select File]**.  Selecione o arquivo CSV com os metadados.
-1. Especifique os seguintes parâmetros:
+1. Verifique se o arquivo CSV contém os seguintes parâmetros:
 
    | Parâmetros de importação de metadados | Descrição |
    |:---|:---|
    | [!UICONTROL Tamanho do lote] | Número de ativos em um lote para os quais os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
-   | [!UICONTROL Separador de campos] | O valor padrão é Vírgula. É possível especificar qualquer outro caractere. |
-   | [!UICONTROL Delimitador de múltiplo valor] | Separador para valores de metadados. O valor padrão é | . |
-   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definidas como true e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho WriteBack de metadados DAM (que grava metadados nos dados binários XMP). Habilitar fluxos de trabalho de inicialização retarda o sistema. |
+   | [!UICONTROL Separador de campos] | O valor padrão é `,` - uma vírgula. É possível especificar qualquer outro caractere. |
+   | [!UICONTROL Delimitador de múltiplo valor] | Separador para valores de metadados. O valor padrão é `|` - um pipe. |
+   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definidas como true e as configurações padrão do Iniciador estiverem em vigor para o `DAM Metadata WriteBack Workflow` (que grava metadados nos dados binários XMP). Habilitar workflows de inicialização tem um impacto no desempenho do sistema. |
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
 1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para sua caixa de entrada de Notificação. Navegue até a página de propriedade do ativo e verifique se os valores de metadados foram importados corretamente para ativos.
 
-<!-- TBD: Format characters in the table using backticks and add UICONTROL after table is converted to MD
--->
-
 ## Exportar metadados {#export-metadata}
-
-Você pode exportar metada para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, o AEM percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
 
 Alguns casos de uso para exportar metadados em massa são:
 
@@ -49,14 +46,18 @@ Alguns casos de uso para exportar metadados em massa são:
 * Teste ou audite os metadados para verificar a conformidade.
 * Externalize os metadados para localização separada.
 
+É possível exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, o AEM percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
+
+Para exportar metadados de vários ativos em massa, siga estas etapas:
+
 1. Selecione a pasta de ativos que contém os ativos para os quais deseja exportar metadados. Na barra de ferramentas, selecione **[!UICONTROL Exportar metadados]**.
 
-1. Na caixa de diálogo Exportação de metadados, especifique um nome para o arquivo CSV. Para exportar metadados para ativos em subpastas, selecione **[!UICONTROL Incluir ativos em subpastas]**.
+1. Na caixa de diálogo Exportação [!UICONTROL de] metadados, especifique um nome para o arquivo CSV. Para exportar metadados para ativos em subpastas, selecione **[!UICONTROL Incluir ativos em subpastas]**.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 
 1. Selecione as opções desejadas. Forneça um nome de arquivo e, se necessário, uma data.
-1. Nas **[!UICONTROL Propriedades a serem exportadas]** , especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades **[!UICONTROL seletivas]** a serem exportadas, adicione as propriedades desejadas.
+1. Nas **[!UICONTROL Propriedades a serem exportadas]**, especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades **[!UICONTROL seletivas]** a serem exportadas, adicione as propriedades desejadas.
 
 1. Na barra de ferramentas, toque/clique em **[!UICONTROL Exportar]**. Uma mensagem confirma que os metadados são exportados. Feche a mensagem.
 
