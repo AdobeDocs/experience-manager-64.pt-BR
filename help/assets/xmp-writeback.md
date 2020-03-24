@@ -3,7 +3,7 @@ title: Write-back de XMP a execuções
 description: Saiba como o recurso de gravação XMP propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
 
 ---
 
@@ -16,7 +16,7 @@ Quando você altera os metadados de um ativo dos ativos AEM ou durante o upload 
 
 O recurso de Writeback XMP propaga as alterações de metadados para todas as execuções ou representações específicas do ativo.
 
-Considere um cenário em que você modifica a propriedade Título do ativo intitulado &quot;Couro **clássico**&quot; para &quot;**Nylon**&quot;.
+Considere um cenário em que você modifica a propriedade [!UICONTROL Título] do ativo com título `Classic Leather` para `Nylon`.
 
 ![metadata](assets/metadata.png)
 
@@ -28,11 +28,11 @@ No entanto, os ativos AEM não propagam automaticamente quaisquer alterações d
 
 O recurso de Writeback XMP permite que você propague as alterações de metadados para todas as representações ou representações específicas do ativo. No entanto, as alterações não são armazenadas no nó de metadados na hierarquia do ativo. Em vez disso, esse recurso incorpora as alterações nos arquivos binários das execuções.
 
-## Habilitar gravação XMP {#enabling-xmp-writeback}
+## Ativar a repetição de escrita XMP {#enabling-xmp-writeback}
 
 Para permitir que as alterações de metadados sejam propagadas para as representações do ativo ao carregá-lo, modifique a configuração do **Adobe CQ DAM Rendition Maker** no Configuration Manager.
 
-1. Abra o Configuration Manager de `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Abra o Configuration Manager de `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração do **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
 1. Selecione a opção **[!UICONTROL Propagar XMP]** e salve as alterações.
 
@@ -44,21 +44,18 @@ Para permitir que o recurso de Gravação XMP propague alterações de metadados
 
 Para o recurso de Writeback XMP propagar metadados para as miniaturas de execução 140.100.png e 319.319.png, execute estas etapas.
 
-1. Toque/clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
-1. Na página Modelos, abra o modelo de fluxo de trabalho Writeback **de metadados** DAM.
+1. No Experience Manager, navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Na página [!UICONTROL Modelos] , abra o modelo de fluxo de trabalho de Gravação **[!UICONTROL de Metadados]** DAM.
 1. Na página de propriedades **[!UICONTROL DAM Metadata Writeback]**, abra a etapa **[!UICONTROL Processo de Writeback XMP]**.
-1. Na caixa de diálogo Propriedades da etapa, toque/clique na guia **[!UICONTROL Processo]**.
-1. Na caixa **[!UICONTROL Argumentos]** , adicione `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`e toque/clique em **[!UICONTROL OK]**.
+1. Na caixa de diálogo **[!UICONTROL Propriedades da etapa]**, toque/clique na guia **[!UICONTROL Processo]**.
+1. Na caixa **[!UICONTROL Argumentos]** , adicione `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Tap/click **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. Salve as alterações.
-1. To regenerate the pyramid TIF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-As representações PTIFF são criadas e armazenadas apenas localmente em uma implementação híbrida do Dynamic Media.
+1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
+As renderizações PTIFF são criadas e armazenadas apenas localmente em um modo Híbrido de Dynamic Media. Salve o fluxo de trabalho.
 
-1. Salve o fluxo de trabalho.
-
-As alterações de metadados são propagadas para as representações representações thumbnail.140.100.png e thumbnail.319.319.png do ativo, e não para as outras.
+As alterações de metadados são propagadas para as representações `thumbnail.140.100.png` e `thumbnail.319.319.png` do ativo, e não para os outros.
 
 >[!NOTE]
 >
@@ -78,17 +75,14 @@ A filtragem da lista de permissões dos metadados XMP resolve esse problema ao p
 >
 >A filtragem funciona somente para as propriedades derivadas de fontes XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada em uma propriedade chamada `CreateDate` em EXIF TIFF. O AEM relata esse valor no campo de metadados chamado `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
 
-1. Abra o Configuration Manager de `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Abra o Configuration Manager de `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração **[!UICONTROL Adobe CQ DAM XmpFilter]** .
 1. Para aplicar a filtragem de lista de permissões, selecione **[!UICONTROL Aplicar lista de permissões às propriedades XMP]** e especifique as propriedades que serão importadas na caixa **[!UICONTROL Nomes XML na lista de permissões para filtragem XMP]**.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. Para filtrar as propriedades XMP proibidas após aplicar a filtragem de lista de permissões, especifique-as na caixa **[!UICONTROL Nomes XML não permitidos para filtragem XMP]**.
+1. Para filtrar as propriedades XMP proibidas após aplicar a filtragem de lista de permissões, especifique-as na caixa **[!UICONTROL Nomes XML não permitidos para filtragem XMP.]** Salve as alterações.
 
    >[!NOTE]
    >
-   >A opção **[!UICONTROL Aplicar lista negra a propriedades]** XMP está selecionada por padrão. Em outras palavras, a filtragem da lista negra é ativada por padrão. Para desativar a filtragem da lista negra, desmarque a opção **[!UICONTROL Aplicar lista negra às propriedades]** XMP.
-
-1. Salve as alterações.
-
+   >A opção **[!UICONTROL Aplicar lista negra a propriedades]** XMP está selecionada por padrão. Em outras palavras, a filtragem da lista negra é ativada por padrão. Para desativar a filtragem da lista negra, desmarque **[!UICONTROL Aplicar lista negra às propriedades]** XMP.
