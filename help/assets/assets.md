@@ -3,7 +3,7 @@ title: Sobre o AEM Assets
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta de ativos AEM da Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
 
 ---
 
@@ -64,21 +64,21 @@ Um ativo é essencialmente um binário com metadados, além de representações 
 
 Ao trabalhar com ativos digitais no AEM, é preciso entender a seguinte terminologia:
 
-* **** Coleção: Uma coleção de ativos, com base na localização física (pasta), nas propriedades comuns (pasta de pesquisa salva) ou na seleção do usuário (pastas lightbox).
+* **Coleção:** Uma coleção de ativos, com base na localização física (pasta), nas propriedades comuns (pasta de pesquisa salva) ou na seleção do usuário (pastas lightbox).
 
-* **** Metadados: Os ativos têm metadados; por exemplo, autor, data de expiração, Informações do DRM (Digital Rights Management) e assim por diante. O acesso aos metadados é controlado. O AEM Assets é compatível com os seguintes esquemas comuns dos metadados padrão:
+* **Metadados:** Os ativos têm metadados; por exemplo, autor, data de expiração, Informações do DRM (Digital Rights Management) e assim por diante. O acesso aos metadados é controlado. O AEM Assets é compatível com os seguintes esquemas comuns dos metadados padrão:
 
    * **Dublin Core**: incluindo autor, descrição, data, assunto e assim por diante.
-   * **IPTC**: incluindo evento, modelo, local e assim por diante.
+   * **IPTC**: incluindo evento, modelo, localização e assim por diante.
    * **WCM**: incluindo propriedades de página, tempo de inatividade e de inatividade e assim por diante.
 
-* **** Marcação: Os ativos podem ser marcados com tags e classificados. Consulte Uso de tags e Administração de tags.
+* **Marcação:** Os ativos podem ser marcados com tags e classificados. Consulte Uso de tags e Administração de tags.
 
-* **** Representações: Uma representação é a representação binária de um ativo. Os ativos sempre possuem uma representação primária: a do arquivo enviado. Eles podem ter qualquer número de representações adicionais que são criadas, por exemplo, por etapas de fluxo de trabalho personalizadas ou quando um ativo é carregado. As representações podem ter tamanhos diferentes, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
+* **Representações:** Uma representação é a representação binária de um ativo. Os ativos sempre possuem uma representação primária: a do arquivo enviado. Eles podem ter qualquer número de representações adicionais que são criadas, por exemplo, por etapas de fluxo de trabalho personalizadas ou quando um ativo é carregado. As representações podem ter tamanhos diferentes, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
 
-* **** Versões: O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. Consulte Controle de versão do AEM Assets.
+* **Versões:** O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **** Sub-ativos: Os subativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo do Adobe Photoshop ou páginas em um arquivo PDF. No AEM Assets, é possível gerenciar subativos como se fossem ativos.
+* **Sub-ativos:** Os subativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo do Adobe Photoshop ou páginas em um arquivo PDF. No AEM Assets, é possível gerenciar subativos como se fossem ativos.
 
 ### Como trabalhar com ativos {#how-to-work-with-assets}
 
