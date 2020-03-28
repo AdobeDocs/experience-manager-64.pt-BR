@@ -3,7 +3,7 @@ title: Configurar ativos AEM com o Portal de marcas
 description: 'Saiba como configurar os ativos AEM com o Portal de marcas para publicar ativos e coleções no Portal de marcas. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
+source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
 
 ---
 
@@ -16,13 +16,15 @@ Os ativos Adobe Experience Manager (AEM) são configurados com o Brand Portal po
 >
 >A configuração dos ativos AEM com o Portal da marca por meio da E/S da Adobe é compatível com o AEM 6.4.8.0 e superior.
 >
->Anteriormente, o Brand Portal estava configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um token de Acesso IMS para autorização.
+>Anteriormente, o Brand Portal estava configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização.
+
+
+>[!TIP]
 >
->Se você for um usuário do Brand Portal com configuração no gateway OAuth herdado, é recomendável excluir as configurações existentes e criar uma nova configuração em E/S da Adobe.
+>***Somente para clientes existentes***
 >
->Se você for um usuário do Brand Portal com configuração no gateway OAuth herdado, é recomendável excluir as configurações existentes e criar uma nova configuração em E/S da Adobe.
->
->No entanto, a configuração existente continuará a funcionar se você não modificar as configurações.
+>É recomendável continuar usando a configuração existente do gateway OAuth. Caso tenha problemas com a configuração antiga do OAuth Gateway, exclua a configuração existente e crie uma nova configuração via E/S da Adobe.
+
 
 Esta ajuda descreve os dois casos de uso a seguir:
 * [Nova configuração](#configure-new-integration-64): Se você for um novo usuário do Brand Portal e quiser configurar sua instância de autor do AEM Assets com o Brand Portal, poderá criar uma nova configuração em E/S da Adobe.
@@ -53,7 +55,7 @@ Você precisa do seguinte para configurar os ativos AEM com o Portal de marcas:
 
 * Se você já for um cliente do AEM, baixe o AEM 6.4 do site [de licenciamento da](http://licensing.adobe.com)Adobe.
 
-* Se você for um parceiro da Adobe, use o Programa [de treinamento para parceiros da](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) Adobe para solicitar o AEM 6.4.
+* Se você for um parceiro da Adobe, use o Programa [](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) Adobe Partner Training para solicitar o AEM 6.4.
 
 Depois de baixar o AEM, para obter instruções sobre como configurar uma instância do autor de AEM, consulte [implantação e manutenção](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
 
@@ -85,7 +87,7 @@ A configuração de IMS inclui duas etapas:
 
 ### Obter certificado público {#public-certificate}
 
-O certificado público permite que você autentique seu perfil em E/S da Adobe.
+O certificado público permite autenticar seu perfil em E/S da Adobe.
 
 1. Faça logon na instância de autor do AEM AssetsURL padrão: http:// localhost:4502/aem/start.html
 1. No painel **Ferramentas** ![Ferramentas](assets/tools.png) , navegue até **[!UICONTROL Segurança]** > Configurações **[!UICONTROL do]** Adobe IMS.
@@ -146,9 +148,9 @@ A integração de E/S da Adobe gera a chave da API, o segredo do cliente e a car
 
 1. Selecione o perfil de sua organização.
 
-   Ou selecione o perfil padrão **[!UICONTROL Assets Brand Portal]** e clique em **[!UICONTROL Criar integração]**. A integração é criada.
+   Ou selecione o Portal **[!UICONTROL de marcas dos]** ativos de perfil padrão e clique em **[!UICONTROL Criar integração]**. A integração é criada.
 
-1. Clique em **[!UICONTROL Continuar para obter os detalhes]** da integração para exibir as informações da integração.
+1. Clique em **[!UICONTROL Continuar para obter detalhes]** de integração para visualização das informações de integração.
 
    Copiar a chave **[!UICONTROL da API]**
 
