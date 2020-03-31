@@ -1,9 +1,9 @@
 ---
 title: Formatos de arquivo suportados no AEM Assets
-description: Lista de formatos de arquivo e tipos MIME suportados pelo AEM Assets e os recursos suportados para cada formato.
+description: Lista de formatos de arquivos e tipos MIME suportados pelo AEM Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
+source-git-commit: 171186251e675094e716931b64c77e7897c03ca7
 
 ---
 
@@ -20,7 +20,7 @@ Use a legenda para entender o nível de suporte.
 |:---:|---|
 | ✓ | Compatível |
 | * | Suportado com recursos complementares |
-| - | Não aplicável |
+| − | Não aplicável |
 
 ## Formatos de imagem rasterizados {#supported-raster-image-formats}
 
@@ -34,19 +34,19 @@ Os formatos de imagem rasterizados compatíveis com os recursos de gerenciamento
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PFM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+**‡** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media são os seguintes:
 
-| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Visualizar<br> representação dinâmica<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de Pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -57,12 +57,12 @@ Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**¹** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+**‡** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Além das informações acima, considere o seguinte:
 
@@ -70,13 +70,13 @@ Além das informações acima, considere o seguinte:
 
 * A gravação de metadados funciona no formato de arquivo PSB quando é adicionada ao manipulador `NComm` .
 
-* Para usar o Dynamic Media para visualizar e gerar renderizações dinâmicas para arquivos EPS, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos EPS, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de estruturação de documentos PostScript (PS-Adobe).
+* Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de estruturação de Documentos PostScript (PS-Adobe).
 
 ## Biblioteca do PDF Rasterizer {#supported-pdf-rasterizer-library}
 
-A biblioteca do Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos Adobe Illustrator e PDF grandes e com grande quantidade de conteúdo. A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
+A biblioteca do Adobe PDF Rasterizer gera miniaturas e pré-visualizações de alta qualidade para arquivos Adobe Illustrator e PDF grandes e com grande quantidade de conteúdo. A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
 
 * Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
 * Arquivos AI/PDF, para os quais as miniaturas não são geradas por padrão.
@@ -96,11 +96,11 @@ Consulte Biblioteca [de transcodificação de](imaging-transcoding-library.md)im
 
 A biblioteca do Adobe Camera Raw permite que os ativos AEM assimilem imagens brutas. See [Camera Raw Support](camera-raw.md).
 
-## Formatos de documento {#supported-document-formats}
+## formatos de Documento {#supported-document-formats}
 
-Os formatos de documento suportados para recursos de gerenciamento de ativos são os seguintes:
+Os formatos de Documento suportados para recursos de gerenciamento de ativos são os seguintes:
 
-| Formato | Armazenamento | Gerenciamento de metadados<br> | Extração de texto completo<br> | Metadata<br> extraction | Geração de miniaturas<br> | Extração<br> de subconjuntos | Writeback de metadados<br> |
+| Formato | Armazenamento | Gerenciamento de metadados<br> | extração de texto<br> completo | Metadata<br> extraction | Geração de miniaturas<br> | extração<br> subasset | Writeback de metadados<br> |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -121,9 +121,9 @@ Os formatos de documento suportados para recursos de gerenciamento de ativos sã
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-Os formatos de documento suportados para recursos do Dynamic Media são os seguintes:
+Os formatos de Documento suportados para recursos do Dynamic Media são os seguintes:
 
-| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Visualizar<br> representação dinâmica<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de Pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | DOC |  |  |  |  |  |
@@ -148,7 +148,7 @@ Além da funcionalidade acima, considere o seguinte:
 
 * Para usar o Dynamic Media para gerar renderizações dinâmicas para arquivos PDF, consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para usar o Dynamic Media para visualizar e gerar renderizações dinâmicas para arquivos AI, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para usar o Dynamic Media para gerar execuções dinâmicas para arquivos INDD, consulte o formato [de arquivo](../assets/managing-image-presets.md#indesign-indd-file-format)InDesign (INDD).
 
@@ -156,16 +156,16 @@ Além da funcionalidade acima, considere o seguinte:
 
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Transcodificação FMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -198,32 +198,32 @@ Além da funcionalidade acima, considere o seguinte:
 
 ## Formatos de arquivo {#supported-archive-formats}
 
-Os formatos de arquivo suportados e a aplicabilidade dos fluxos de trabalho DAM comuns são abordados na tabela a seguir.
+Os formatos de arquivamento suportados e a aplicabilidade dos workflows DAM comuns são abordados na tabela a seguir.
 
-| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
+| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**²** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real. Os arquivos ZIP criados com o `Deflate64` algoritmo têm suporte limitado no AEM. Não há suporte para operações de arquivamento e desarquivamento. No entanto, operações como upload, navegação e download são suportadas.
+**†** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real. Os arquivos ZIP criados com o `Deflate64` algoritmo têm suporte limitado no AEM. Não há suporte para operações de arquivamento e desarquivamento. No entanto, operações como upload, navegação e download são suportadas.
 
 ## Outros formatos suportados {#other-supported-formats}
 
-A aplicabilidade de fluxos de trabalho DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo.
+A aplicabilidade de workflows DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo.
 
-| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
+| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript (quando configurado com o próprio domínio de entrega) |  |  |  |  |  | ✓ |
+| JavaScript (quando configurado com o próprio domínio do delivery) |  |  |  |  |  | ✓ |
 
-**³** Os outros formatos são suportados no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
+**#** Os outros formatos são suportados no DAM para gerenciamento de armazenamentos, versões, ACL, fluxo de trabalho, publicação e metadados.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -271,7 +271,7 @@ Consulte também [Habilitar suporte](/help/sites-administering/scene7.md#enablin
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
