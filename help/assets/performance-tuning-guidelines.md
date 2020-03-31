@@ -136,7 +136,7 @@ Sempre que possível, defina o fluxo de trabalho Atualizar ativo DAM como Transi
 
    Nos casos em que workflows transitórios não podem ser usados, execute a remoção de fluxo de trabalho regularmente para excluir workflows arquivados de ativos de atualização de DAM para garantir que o desempenho do sistema não diminua.
 
-   Normalmente, você deve executar workflows de expurgação semanalmente. No entanto, em cenários com uso intenso de recursos, como durante a ingestão de ativos em larga escala, você pode executá-los com mais frequência.
+   Normalmente, você deve executar workflows de expurgação semanalmente. No entanto, em cenários com muitos recursos, como durante a ingestão de ativos em larga escala, você pode executá-los com mais frequência.
 
    Para configurar a expurgação do fluxo de trabalho, adicione uma nova configuração de Expurgação do fluxo de trabalho do Adobe Granite por meio do console OSGi. Em seguida, configure e agende o fluxo de trabalho como parte da janela de manutenção semanal.
 
@@ -285,7 +285,7 @@ Importar uma grande quantidade de metadados pode resultar em atividade de write-
 
 ## Replicação {#replication}
 
-Ao replicar ativos para um grande número de instâncias de publicação, por exemplo em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
+Ao replicar ativos para um grande número de instâncias de publicação, por exemplo, em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
 
 ### Configurar replicação em cadeia {#configure-chain-replication}
 
