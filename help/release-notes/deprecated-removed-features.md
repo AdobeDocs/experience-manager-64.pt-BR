@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
@@ -63,7 +63,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
      <li>fundação/componentes/conta/ações</li> 
      <li>fundação/componentes/conta/senha</li> 
      <li>base/componentes/conta/confirmação de solicitação</li> 
-     <li>base/componentes/imagem adaptável</li> 
+     <li>fundação/componentes/imagem adaptável</li> 
      <li>fundação/componentes/assetsharepage</li> 
      <li>fundação/componentes/navegação estrutural</li> 
      <li>fundação/componentes/formulário/cartão de crédito</li> 
@@ -96,7 +96,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
   </tr>
   <tr>
    <td>Diretor do portal</td> 
-   <td><p>O Portal Diretor é um conjunto de recursos que permite a hospedagem de conteúdo do AEM via Portlet em servidores de terceiros.</p> <p>A Adobe não planeja fazer mais aprimoramentos no recurso do Editor de portal no local listado abaixo. O AEM 6.4 tem o Portal Diretor incluído, e os clientes que atualizam de versões anteriores podem continuar usando como está. Observe que o Portal Direct permanece totalmente compatível enquanto está sendo substituído.</p> 
+   <td><p>O Portal Diretor é um conjunto de recursos que permite a hospedagem de conteúdo do AEM via Portlet em servidores de terceiros.</p> <p>A Adobe não planeja fazer mais aprimoramentos no recurso do Editor de portal no local listado abaixo. O AEM 6.4 tem o Portal Diretor incluído, e os clientes que atualizam de versões anteriores podem continuar usando como está. Observe que o Portal Direct permanece totalmente compatível enquanto está sendo descontinuado.</p> 
     <ul> 
      <li>/libs/portal/diretor</li> 
     </ul> </td> 
@@ -122,7 +122,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 ## Recursos removidos {#removed-features}
 
-Esta seção lista os recursos e funcionalidades removidos do AEM 6.4. As versões anteriores tiveram esses recursos marcados como obsoletos.
+Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versões anteriores tinham esses recursos marcados como obsoletos.
 
 <table> 
  <tbody>
@@ -132,8 +132,8 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.4. As versõ
    <td><strong>Substituição</strong></td> 
   </tr>
   <tr>
-   <td>Mapa de atividade do Analytics</td> 
-   <td>A versão do Activity Map incluída no AEM.</td> 
+   <td>Mapa de Atividades do Analytics</td> 
+   <td>A versão do Mapa de Atividades incluída no AEM.</td> 
    <td>Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.<br><br>O plug-in <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Activity Map fornecido pelo Adobe Analytics</a> agora deve ser usado.</td> 
   </tr>
   <tr>
@@ -163,8 +163,8 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.4. As versõ
   </tr>
   <tr>
    <td>Gerenciamento de tarefas</td> 
-   <td>Gerenciamento<br /> de tarefas da interface clássica (/libs/cq/taskmanagement/content/taskmanager.html)</td> 
-   <td>Obsoleto desde 6.0. Use o novo gerenciamento de tarefas combinado com a interface do usuário do fluxo de trabalho.</td> 
+   <td>Gerenciamento<br /> de Tarefa da interface clássica (/libs/cq/taskmanagement/content/taskmanager.html)</td> 
+   <td>Obsoleto desde 6.0. Use o novo gerenciamento de tarefas combinado com a interface do fluxo de trabalho.</td> 
   </tr>
   <tr>
    <td>Fluxo de trabalho</td> 
@@ -178,13 +178,48 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.4. As versõ
   </tr>
   <tr>
    <td>Forms</td> 
-   <td>O suporte ao serviço AEM Captcha padrão em formulários adaptativos foi removido. </td> 
+   <td>O suporte para o serviço AEM Captcha padrão em formulários adaptativos foi removido. </td> 
    <td>Em vez disso, use ReCaptcha pelo Google.</td> 
   </tr>
   <tr>
    <td>Forms</td> 
    <td>O suporte para imagens nos fragmentos do documento foi removido. </td> 
-   <td>As comunicações interativas fornecem a capacidade de usar imagens diretamente em canais de impressão e da Web.<br /> </td> 
+   <td>As comunicações interativas fornecem a capacidade de usar imagens diretamente em canais impressos e da Web.<br /> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td> Atualização fora do local </td> 
+   <td>O suporte para executar a atualização fora do local não está disponível <br/> </td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Integrado para migrações TarMK para DocumentMK </td> 
+   <td> Você pode exportar os dados de um sistema mais antigo e depois importá-los em um sistema de configuração recente. Para obter instruções detalhadas, consulte Formulários AEM em documentações de atualização do JEE <br/> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+ <td>AEM Forms no instalador JEE de 32 bits não disponível.</td> 
+   <td>A Adobe parou de enviar o AEM Forms no instalador JEE de 32 bits. Você pode continuar usando o instalador de 64 bits para instalar o AEM Forms no JEE. </td>  
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>Remoção do suporte para o uso de imagens DAM no Componente de fragmento do Documento.</td> 
+    <td> Você pode usar o componente Imagem e Gráfico no canal de impressão da comunicação interativa. Se você estiver usando um componente de fragmento de documento adaptável em formulários adaptáveis, ele deixará de funcionar após a atualização para o AEM 6.4 Forms. </td>  
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Removido o recurso Documentos adaptáveis</td> 
+   <td> Você pode usar o recurso de comunicações interativas para criar comunicações impressas e baseadas na Web. <br/> </td> 
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>Formulários AEM removidos na landing page específica JEE.</td> 
+    <td>O AEM Forms na landing page JEE é substituído pela landing page AEM (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Remoção do suporte para Captcha padrão</td> 
+   <td>Use o serviço reCAPTCHA do Google.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
@@ -208,7 +243,7 @@ Esta seção é usada para anunciar previamente as alterações na versão futur
   <tr>
    <td>Suporte ao navegador</td> 
    <td>Microsoft Internet Explorer</td> 
-   <td>O AEM 6.4 é a última versão que suporta o Microsoft Internet Explorer 11.</td> 
+   <td>O AEM 6.4 é a última versão que oferece suporte ao Microsoft Internet Explorer 11.</td> 
   </tr>
   <tr>
    <td>Foundation</td> 
