@@ -3,7 +3,7 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do AEM para ativar funcionalidades individuais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
 
 ---
 
@@ -87,7 +87,9 @@ Depois de ativar um plug-in, siga estas diretrizes para configurar a `features` 
 
 ## Entenda o plug-in findreplace {#understand--findreplace-plugin}
 
-O plug- `findreplace` -in não precisa de nenhuma configuração. Funciona como esperado, fora da caixa.
+O plug- `findreplace` -in não precisa de nenhuma configuração. Funciona fora da caixa.
+
+Ao usar a funcionalidade de substituição, a string de substituição a ser substituída deve ser inserida ao mesmo tempo que a string de localização. No entanto, você ainda pode clicar em localizar para procurar a string antes de substituí-la. Se a string de substituição for inserida após clicar em Localizar, a pesquisa será redefinida para o início do texto.
 
 A caixa de diálogo localizar e substituir fica transparente quando a localização é clicada e se torna opaca quando a substituição é clicada. Isso permite que o autor reveja o texto que o autor substituirá. Se os usuários clicarem em substituir tudo, a caixa de diálogo será fechada e exibirá o número de substituições feitas.
 
@@ -143,14 +145,14 @@ A configuração permite os três tipos de casos de uso a seguir:
 
 O modo colar como Microsoft Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa definir explicitamente quais estilos são permitidos ao colar no AEM a partir de outro programa, como o Microsoft Word.
 
-Por exemplo, se apenas formatos e listas em negrito devem ser permitidos ao colar no AEM, você pode filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
+Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar no AEM, você pode filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
 
 * [Texto](#pastemodes)
 * [Links](#linkstyles)
 
 Para links, também é possível definir os protocolos que são automaticamente aceitos.
 
-Para configurar quais formatos são permitidos ao colar texto no AEM de outro programa:
+Para configurar quais formatos são permitidos ao colar texto no AEM a partir de outro programa:
 
 1. Em seu componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. Crie um nó sob o `edit` nó para manter as regras de colagem HTML:
@@ -191,7 +193,7 @@ Para configurar quais formatos são permitidos ao colar texto no AEM de outro pr
     <ul> 
      <li>títulos (h1, h2, h3)</li> 
      <li>alínea p)</li> 
-     <li>lists (ol, ul)</li> 
+     <li>listas (ol, ul)</li> 
      <li>tabelas (tabela)</li> 
     </ul> </td> 
   </tr> 
@@ -212,7 +214,7 @@ Para configurar quais formatos são permitidos ao colar texto no AEM de outro pr
   <tr> 
    <td>list</td> 
    <td>nt:unstructured</td> 
-   <td><p>Define o comportamento ao colar listas.<br /> </p> <p>Deve ter a propriedade <code>allow</code> (tipo <code>Boolean</code>) para definir se a colagem de listas é permitida.</p> <p>Se <code>allow</code> estiver definido como <code>false</code>, especifique a propriedade <code>ignoreMode</code> (tipo <code>String</code>) para definir como lidar com qualquer conteúdo da lista colado. Valores válidos para <code>ignoreMode</code> são:</p> 
+   <td><p>Define o comportamento ao colar listas.<br /> </p> <p>Deve ter a propriedade <code>allow</code> (tipo <code>Boolean</code>) para definir se a colagem de listas é permitida.</p> <p>Se <code>allow</code> estiver definido como <code>false</code>, especifique a propriedade <code>ignoreMode</code> (tipo <code>String</code>) para definir como lidar com qualquer conteúdo de lista colado. Valores válidos para <code>ignoreMode</code> são:</p> 
     <ul> 
      <li><code>remove</code>: Remove o conteúdo da lista.</li> 
      <li><code>paragraph</code>: Transforma itens de lista em parágrafos.</li> 
@@ -251,7 +253,7 @@ Os autores podem aplicar estilos para alterar a aparência de uma parte do texto
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
-Quando o plug-in Estilos é ativado pela primeira vez, nenhum Estilo padrão está disponível. A lista suspensa está vazia. Para fornecer estilos aos autores, faça o seguinte:
+Quando o plug-in Estilos é ativado pela primeira vez, nenhum Estilo padrão está disponível. A lista pop-up está vazia. Para fornecer estilos aos autores, faça o seguinte:
 
 * Ative o seletor suspenso Estilo.
 * Especifique os locais das folhas de estilos.
@@ -262,7 +264,7 @@ Para configurações posteriores (re)digamos para adicionar mais estilos, siga a
 >[!NOTE]
 Os estilos também podem ser definidos para [tabelas ou células](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)de tabela. Essas configurações exigem procedimentos separados.
 
-### Ativar a lista suspensa do seletor Estilo {#styleselectorlist}
+### Ativar a lista do seletor suspenso Estilo {#styleselectorlist}
 
 Isso é feito ao ativar o plug-in de estilos.
 
@@ -295,7 +297,7 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
 
 >[!NOTE]
 Ao usar o RTE em uma caixa de diálogo (Interface clássica), talvez você queira especificar folhas de estilos otimizadas para edição de rich text. Devido a restrições técnicas, o contexto CSS é perdido no editor, portanto, você pode querer emular esse contexto para melhorar a experiência WYSIWYG.
-O Editor de Rich Text usa um elemento DOM de contêiner com uma ID `CQrte` que pode ser usada para fornecer estilos diferentes para exibição e edição:
+O Editor de Rich Text usa um elemento DOM de container com uma ID `CQrte` que pode ser usada para fornecer estilos diferentes para exibição e edição:
 # CQ td {
 // define o estilo de exibição }
 # CQrte td {
@@ -333,7 +335,7 @@ O Editor de Rich Text usa um elemento DOM de contêiner com uma ID `CQrte` que p
 
 ## Configurar os formatos de parágrafo {#paraformats}
 
-Qualquer texto criado no RTE é colocado dentro de uma tag de bloco, sendo o padrão `<p>`. Ao ativar o `paraformat` plug-in, você especifica tags de bloco adicionais que podem ser atribuídas a parágrafos, usando uma lista suspensa de seleção. Os formatos de parágrafo determinam o tipo de parágrafo atribuindo a tag de bloco correta. O autor pode selecioná-los e atribuí-los usando o seletor de Formato. As tags de bloco de exemplo incluem, entre outras, o parágrafo padrão &lt;p> e os cabeçalhos &lt;h1>, &lt;h2> e assim por diante.
+Qualquer texto criado no RTE é colocado dentro de uma tag de bloco, sendo o padrão `<p>`. Ao ativar o `paraformat` plug-in, você especifica tags de bloco adicionais que podem ser atribuídas a parágrafos, usando uma lista de seleção suspensa. Os formatos de parágrafo determinam o tipo de parágrafo atribuindo a tag de bloco correta. O autor pode selecioná-los e atribuí-los usando o seletor de Formato. As tags de bloco de exemplo incluem, entre outras, o parágrafo padrão &lt;p> e os cabeçalhos &lt;h1>, &lt;h2> e assim por diante.
 
 >[!CAUTION]
 Esse plug-in não é adequado para conteúdo com estrutura complexa, como listas ou tabelas.
@@ -341,9 +343,9 @@ Esse plug-in não é adequado para conteúdo com estrutura complexa, como listas
 >[!NOTE]
 Se uma tag de bloco, por exemplo, uma tag &lt;hr>, não puder ser atribuída a um parágrafo, não será um caso de uso válido para um plug-in paraformat.
 
-Quando o plug-in Formatos de parágrafo estiver ativado pela primeira vez, nenhum Formato de parágrafo padrão estará disponível. A lista suspensa está vazia. Para fornecer aos autores Formatos de parágrafo, faça o seguinte:
+Quando o plug-in Formatos de parágrafo estiver ativado pela primeira vez, nenhum Formato de parágrafo padrão estará disponível. A lista pop-up está vazia. Para fornecer aos autores Formatos de parágrafo, faça o seguinte:
 
-* Ative a lista suspensa Formatar seletor.
+* Ative a lista do seletor suspenso Formato.
 * Especifique as tags de bloco que podem ser selecionadas como formatos de parágrafo no menu suspenso.
 
 Para configurações posteriores (re)digamos para adicionar mais formatos, siga somente a parte relevante das instruções.
@@ -394,11 +396,11 @@ Os formatos de parágrafo podem ser disponibilizados para seleção por meio de:
 
       Não é necessário digitar as chaves delimitadoras.
 
-1. Para que o mesmo nó adicione outra propriedade, o texto descritivo seja exibido na lista suspensa:
+1. Para que o mesmo nó adicione outra propriedade, para que o texto descritivo apareça na lista suspensa:
 
    * **Nome** `description`
    * **Tipo** `String`
-   * **Valor** O texto descritivo para este formato; por exemplo, Parágrafo, Cabeçalho 1, Cabeçalho 2 e assim por diante. Este texto é exibido na lista de seleção Formato.
+   * **Valor** O texto descritivo para este formato; por exemplo, Parágrafo, Cabeçalho 1, Cabeçalho 2 e assim por diante. Esse texto é exibido na lista de seleção de Formato.
 
 1. Salve as alterações.
 
@@ -551,17 +553,17 @@ Repita as etapas acima para cada estilo necessário.
 
 Às vezes, você pode criar tabelas de dados sem texto visual em um cabeçalho de coluna, assumindo que a finalidade do cabeçalho é implícita pela relação visual da coluna com outras colunas. Nesse caso, é necessário fornecer texto interno oculto dentro da célula do cabeçalho para permitir que leitores de tela e outras tecnologias de assistência ajudem os leitores com várias necessidades a compreender a finalidade da coluna.
 
-Para melhorar a acessibilidade em tais cenários, o RTE suporta células de cabeçalho ocultas. Além disso, fornece configurações relacionadas a cabeçalhos ocultos em tabelas. Essas configurações permitem aplicar estilos CSS em cabeçalhos ocultos nos modos de edição e visualização. Para ajudar os autores a identificar cabeçalhos ocultos no modo de edição, inclua os seguintes parâmetros no código:
+Para melhorar a acessibilidade em tais cenários, o RTE suporta células de cabeçalho ocultas. Além disso, fornece configurações relacionadas a cabeçalhos ocultos em tabelas. Essas configurações permitem aplicar estilos CSS em cabeçalhos ocultos nos modos de edição e pré-visualização. Para ajudar os autores a identificar cabeçalhos ocultos no modo de edição, inclua os seguintes parâmetros no código:
 
 * `hiddenHeaderEditingCSS`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculto, quando o RTE é editado.
 * `hiddenHeaderEditingStyle`: Especifica uma string de estilo que é aplicada na célula de cabeçalho oculto quando o RTE é editado.
 
 Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
 
-Para ajudar os autores a aplicar CSS em cabeçalhos ocultos no modo de visualização, é possível incluir os seguintes parâmetros no código:
+Para ajudar os autores a aplicar o CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
 
-* `hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta no modo de visualização.
-* `hiddenHeaderStyle`: Especifica uma string de Estilo aplicada na célula de cabeçalho oculto no modo de visualização.
+* `hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta no modo de pré-visualização.
+* `hiddenHeaderStyle`: Especifica uma string de estilo que é aplicada na célula de cabeçalho oculto no modo de pré-visualização.
 
 Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
 
@@ -592,7 +594,7 @@ Para adicionar mais dicionários, se necessário, siga estas etapas.
 1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você começa a digitar o texto.
+O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você start digitar um texto.
 Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico da barra de ferramentas. O RTE verifica a ortografia de palavras e realça palavras com ortografia incorreta.
 Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto muda e as palavras com ortografia incorreta não são mais destacadas. Para executar o verificador ortográfico, toque/clique novamente no botão Verificador ortográfico.
 
@@ -707,34 +709,34 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
       * **Nome** `defaultProtocol`
       * **Tipo** `String`
       * **Valores** de um ou mais protocolos padrão
-   * Definição de como manipular o atributo de destino de um link. Criar um novo nó:
+   * Definição de como tratar o atributo de público alvo de um link. Criar um novo nó:
 
       * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
       No nó `targetConfig`: defina as propriedades necessárias:
 
-      * Especifique o modo de destino:
+      * Especifique o modo de público alvo:
 
          * **Nome** `mode`
          * **Tipo** `String`)
          * **Valor**(es) :
 
-            * `auto`: significa que é escolhido um objetivo automático
+            * `auto`: significa que é escolhido um público alvo automático
 
                (especificado pela `targetExternal` propriedade para links externos ou `targetInternal` para links internos).
 
             * `manual`: não aplicável neste contexto
             * `blank`: não aplicável neste contexto
-      * O destino para links internos:
+      * O público alvo para links internos:
 
          * **Nome** `targetInternal`
          * **Tipo** `String`
-         * **Valor** do destino para links internos (use somente quando o &quot;modo estiver `auto`)
-      * O destino para links externos:
+         * **Valor** do público alvo para links internos (use apenas quando &quot;mode is `auto`)
+      * O público alvo para links externos:
 
          * **Nome** `targetExternal`
          * **Tipo** `String`
-         * **Valor** do destino para links externos (usado somente quando o modo está `auto`).
+         * **Valor** do público alvo para links externos (usado apenas quando o modo está `auto`).
 
 
 
