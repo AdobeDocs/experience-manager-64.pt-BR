@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
+source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 
 ---
 
@@ -800,7 +800,7 @@ Alguns dos principais destaques do AEM 6.4.4.0 são:
 * O Editor de Rich Text na caixa de diálogo está oscilando quando o posicionamento de um plug-in é superior à área de texto, portanto, bloqueando qualquer criação adicional. NPR-27579: Hotfix do CQ-4257440
 * (Interface clássica) cq:action editannotate não funciona. NPR-28232: Hotfix do CQ-4257703
 * A remoção de tags do painel de pesquisa de ativos de filtro de tags do editor de páginas não atualiza a lista corretamente. NPR-27983: Hotfix do CQ-4245567
-* Se os valores de número de vários campos estiverem vazios, clicar em Salvar resultará em um prompt de carregamento infinito sem concluir.  NPR-28400, NPR-28393: Hotfix do CQ-4244058, CQ-4244349
+* Se os valores do número de vários campos estiverem vazios, clicar em Salvar resultará em um prompt de carregamento infinito sem concluir.  NPR-28400, NPR-28393: Hotfix do CQ-4244058, CQ-4244349
 * Com permissão de leitura, os usuários/grupos não conseguem selecionar um XF e não têm opção para visualização do XF e suas propriedades de página. NPR-28341: Hotfix do CQ-4260412
 * Os dados JSON recebidos do Público alvo têm vários caracteres de escape fazendo com que a página do aplicativo quebre. NPR-28318: Hotfix do CQ-4252043
 * Não é possível editar nenhum componente após a instalação do AEM 6.4.3. NPR-28125: Hotfix para CQ-4261216
@@ -1605,7 +1605,7 @@ Os principais destaques dos formulários do AEM 6.4.2.0 são:
 
 **Serviços de documentação**
 
-* (Serviço de formulário) O OSGI não tem suporte para XFAF. NPR-25181, Hotfix para CQ-4251313
+* (Form Service) O OSGI não tem suporte para XFAF. NPR-25181, Hotfix para CQ-4251313
 * Os caracteres no cabeçalho do arquivo PDF montado estão ficando ilegíveis. NPR-25113: Hotfix do CQ-4244682
 
 **Formulários adaptáveis**
@@ -1694,6 +1694,7 @@ O AEM 6.4.1.0 pode ser instalado no AEM 6.4 GA. Alguns dos principais destaques 
 * Adicionado o suporte ARIA para Print e PrintDialog.
 * Adição do suporte ARIA para validação de email.
 * Backport pró-ativo para correções platform.clientlibs.
+* Prevenção da execução automática de scripts quando não houver entrada para o dataType explícito.
 
 **Ativos**
 
