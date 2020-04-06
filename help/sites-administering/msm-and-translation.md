@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 As seguintes ferramentas de administração estão disponíveis para gerenciar sites e páginas:
 
-* O Multi Site Manager (MSM) permite que você use o mesmo conteúdo do site em vários locais, permitindo variações:
+* O Multi Site Manager (MSM) permite que você use o mesmo conteúdo do site em vários locais, ao mesmo tempo que permite variações:
 
    * [Reutilizando conteúdo: Multi Site Manager e Live Copy](/help/sites-administering/msm.md)
 
@@ -39,7 +39,7 @@ Você pode criar conteúdo para sites multinacionais e multilíngues com eficiê
 
    * Reutilize o conteúdo do site mestre e as traduções para criar sites para outros países e culturas.
    * Certifique-se de limitar o uso do Multi Site Manager ao conteúdo em um idioma, por exemplo, mestre em inglês -> ramificações de idioma inglês em sites de países, mestre em francês -> ramificações de idioma francês em sites de países.
-   * Quando necessário, desanexe elementos das cópias online para adicionar detalhes de localização.
+   * Se necessário, desanexe elementos das cópias online para adicionar detalhes da localização.
 
 O diagrama a seguir ilustra como os conceitos principais se cruzam (mas não mostra todos os níveis/elementos envolvidos):
 
@@ -49,7 +49,7 @@ O diagrama a seguir ilustra como os conceitos principais se cruzam (mas não mos
 >
 >Nesse cenário, e em situações comparáveis, o MSM não gerencia as diferentes versões de idioma como tal.
 >
->* [O MSM](/help/sites-administering/msm.md) gerencia a implantação de conteúdo traduzido de um blueprint (por exemplo, um mestre global) para as cópias online (por exemplo, os sites locais), dentro dos limites de um idioma.
+>* [O MSM](/help/sites-administering/msm.md) gerencia a implantação de conteúdo traduzido de um blueprint (por exemplo, um mestre global) para as cópias ao vivo (por exemplo, os sites locais), dentro dos limites de um idioma.
 >* Os recursos de integração de [tradução](/help/sites-administering/translation.md) do AEM, juntamente com serviços de gerenciamento de tradução de terceiros, gerenciam os idiomas e traduzem o conteúdo para esses diferentes idiomas.
 >
 >
@@ -61,10 +61,9 @@ Para casos de uso mais avançados, o MSM também pode ser usado em mestres de id
 >
 >* [Práticas recomendadas para a MSM](/help/sites-administering/msm-best-practices.md); em particular:
    >
-   >  
-* [Criar site](/help/sites-administering/msm-best-practices.md#create-site)
->  * [Sites MSM e multilíngues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-   >
-   >
-* [Práticas recomendadas para tradução](/help/sites-administering/tc-bp.md)
+   >   
+   * [Criar site](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [Sites MSM e multilíngues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>* [Práticas recomendadas para tradução](/help/sites-administering/tc-bp.md)
 
