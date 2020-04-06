@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 3b26eacff87d3ce84cf5db6133b44c955055c737
 
 ---
 
@@ -36,7 +36,7 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 | dps-version | Sequência de caracteres |  | versão da entidade do AEM Mobile (também contida na aemm-id completa) |
 | dps-lastSynced | Data |  | data da última sincronização/importação do AEM Mobile para o AEM |
 | dps-lastUploaded | Data |  | data do último upload do AEM para o AEM Mobile |
-| dps-lastUploadedBy | String:userid |  | usuário de ID que realizou a última solicitação de upload do AEM para o AEM Mobile |
+| dps-lastUploadedBy | String:userid |  | usuário de ID que executou a última solicitação de upload do AEM para o AEM Mobile |
 
 ## Propriedades de metadados principais {#core-metadata-properties}
 
@@ -47,7 +47,7 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 | dps-abstract | Sequência de caracteres |  |
 | dps-shortAbstract | Sequência de caracteres |  |
 | departamento de dps | Sequência de caracteres |  |
-| dps-category | Sequência de caracteres |  |
+| dps-categoria | Sequência de caracteres |  |
 | palavras-chave dps | Sequência de caracteres[] |  |
 | dps-internalKeywords | Sequência de caracteres[] |  |
 | importância de dps | Sequência de caracteres[] | Importância de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
@@ -88,7 +88,7 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 ### Nós comuns {#common-nodes}
 
 | Nome do nó | Tipo | Valores padrão ou valores esperados | Descrição |
---- |--- |--- |--- |
+|--- |--- |--- |--- |
 | imagem | jcr:PrimaryType=nt: <br> sling não estruturado:resourceType=base/components/image |  |  |
 
 ### Entidades {#entities}
