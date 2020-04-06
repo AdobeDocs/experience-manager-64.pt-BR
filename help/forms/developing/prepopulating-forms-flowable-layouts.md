@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: 8c151c582d4355b98445ec4bf6510d668cb0d5bd
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 ## Pré-preenchimento de formulários com layouts flutuantes {#prepopulating-forms-with-flowable-layouts2}
 
-O pré-preenchimento de formulários exibe dados para os usuários em um formulário renderizado. Por exemplo, suponha que um usuário faça logon em um site com um nome de usuário e senha. Se a autenticação for bem-sucedida, o aplicativo cliente consultará um banco de dados para obter informações do usuário. Os dados são unidos ao formulário e, em seguida, ele é renderizado ao usuário. Como resultado, o usuário pode exibir dados personalizados dentro do formulário.
+O pré-preenchimento de formulários exibe dados para os usuários em um formulário renderizado. Por exemplo, suponha que um usuário faça logon em um site com um nome de usuário e senha. Se a autenticação for bem-sucedida, o aplicativo cliente query um banco de dados para obter informações do usuário. Os dados são unidos ao formulário e, em seguida, ele é renderizado ao usuário. Como resultado, o usuário pode visualização dados personalizados dentro do formulário.
 
 O pré-preenchimento de um formulário tem as seguintes vantagens:
 
@@ -29,14 +29,14 @@ O pré-preenchimento de um formulário tem as seguintes vantagens:
 
 As duas fontes de dados XML a seguir podem pré-preencher um formulário:
 
-* Uma fonte de dados XDP, que é XML em conformidade com a sintaxe XFA (ou dados XFDF para pré-preencher um formulário criado usando o Acrobat).
+* Uma fonte de dados XDP, que é um XML em conformidade com a sintaxe XFA (ou dados XFDF para pré-preencher um formulário criado usando o Acrobat).
 * Uma fonte de dados XML arbitrária que contém pares de nome/valor correspondentes aos nomes de campo do formulário (os exemplos nesta seção usam uma fonte de dados XML arbitrária).
 
 Um elemento XML deve existir para cada campo de formulário que você deseja pré-preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem na qual os elementos XML são exibidos, desde que todos os elementos XML sejam especificados.
 
-Ao pré-preencher um formulário que já contém dados, você deve especificar os dados que já são exibidos na fonte de dados XML. Suponha que um formulário contendo 10 campos tenha dados em quatro campos. Em seguida, suponha que você deseja pré-preencher os seis campos restantes. Nessa situação, você deve especificar 10 elementos XML na fonte de dados XML usada para pré-preencher o formulário. Se você especificar apenas seis elementos, os quatro campos originais ficarão vazios.
+Ao pré-preencher um formulário que já contém dados, você deve especificar os dados que já são exibidos na fonte de dados XML. Suponha que um formulário contendo 10 campos tenha dados em quatro campos. Em seguida, suponha que você deseja pré-preencher os seis campos restantes. Nessa situação, você deve especificar 10 elementos XML na fonte de dados XML que é usada para pré-preencher o formulário. Se você especificar apenas seis elementos, os quatro campos originais ficarão vazios.
 
-Por exemplo, é possível pré-preencher um formulário como o formulário de confirmação de amostra. (Consulte &quot;Formulário de confirmação&quot; em [Renderização de formulários]PDF interativos (/help/forms/develop/rendering-forms-rendering-forms-interative-pdf-forms-rendering.md#rendering-interative-pdf-forms).)
+Por exemplo, é possível pré-preencher um formulário, como o formulário de confirmação de amostra. (Consulte &quot;Formulário de confirmação&quot; na [renderização de formulários](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interativos.)
 
 Para pré-preencher o formulário de confirmação de amostra, é necessário criar uma fonte de dados XML que contenha três elementos XML que correspondam aos três campos no formulário. Este formulário contém os três campos a seguir: `FirstName`, `LastName`e `Amount`. A primeira etapa é criar uma fonte de dados XML que contenha elementos XML correspondentes aos campos localizados no design de formulário. A próxima etapa é atribuir valores de dados aos elementos XML, como mostrado no código XML a seguir.
 
@@ -82,7 +82,7 @@ A tabela a seguir descreve as etapas neste diagrama.
   </tr> 
   <tr> 
    <td><p>3</p></td> 
-   <td><p>A fonte de dados XML é usada para pré-preencher um formulário de pedido de compra (um exemplo desse formulário é exibido após esta tabela). </p></td> 
+   <td><p>A fonte de dados XML é usada para pré-preencher um formulário de pedido de compra (um exemplo desse formulário é mostrado a seguir a esta tabela). </p></td> 
   </tr> 
   <tr> 
    <td><p>4</p></td> 
@@ -101,7 +101,7 @@ O diagrama a seguir mostra um exemplo de formulário de pedido de compra. As inf
 
 ### Considerações sobre design de formulário {#form-design-considerations}
 
-Formulários com layouts flutuantes são baseados em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão no design de formulário. Por exemplo, no formulário de pedido de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criar um formulário de pedido de compra com layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)flutuante.
+Formulários com layouts flutuantes são baseados em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão dentro do design de formulário. Por exemplo, no formulário de pedido de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criar um formulário de pedido de compra com layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)flutuante.
 
 ### Noções básicas sobre subgrupos de dados {#understanding-data-subgroups}
 
@@ -209,7 +209,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar uma fonte de dados XML na memória**
 
-É possível usar `org.w3c.dom` classes para criar uma fonte de dados XML na memória para pré-preencher um formulário com um layout flutuante. É necessário colocar os dados em uma fonte de dados XML que esteja em conformidade com o formulário. Para obter informações sobre a relação entre um formulário com um layout flutuante e a fonte de dados XML, consulte [Noções básicas sobre subgrupos]de dados (/help/forms/develop/rendering-forms-rendering-forms prepopulating-forms-fluxable-layouts-pré-povoando-formulários-fluxíveis-layouts-pré-povoando.md#Understanding-data-subgrupos).
+É possível usar `org.w3c.dom` classes para criar uma fonte de dados XML na memória para pré-preencher um formulário com um layout flutuante. É necessário colocar os dados em uma fonte de dados XML que esteja em conformidade com o formulário. Para obter informações sobre a relação entre um formulário com um layout flutuante e a fonte de dados XML, consulte [Entendendo subgrupos](#understanding-data-subgroups)de dados.
 
 **Converter a fonte de dados XML**
 
@@ -229,11 +229,11 @@ Uma fonte de dados XML na memória criada usando `org.w3c.dom` classes pode ser 
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de formulários](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Start rápidos da API do Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Como renderizar formulários PDF interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Criação de aplicativos da Web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Criação de Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Pré-preenchimento de formulários usando a API Java {#prepopulating-forms-using-the-java-api}
 
@@ -248,7 +248,7 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
    * Crie um objeto Java `DocumentBuilderFactory` chamando o `DocumentBuilderFactory` método da classe `newInstance` .
    * Crie um objeto Java `DocumentBuilder` chamando o `DocumentBuilderFactory` método do `newDocumentBuilder` objeto.
    * Chame o `DocumentBuilder` método do `newDocument` objeto para instanciar um `org.w3c.dom.Document` objeto.
-   * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` método do `createElement` objeto. Isso cria um `Element` objeto que representa o elemento raiz. Passe um valor de string representando o nome do elemento para o `createElement` método. Converta o valor de retorno em `Element`. Em seguida, acrescente o elemento raiz ao documento chamando o método do `Document` objeto `appendChild` e passe o objeto do elemento raiz como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
+   * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` método do `createElement` objeto. Isso cria um `Element` objeto que representa o elemento raiz. Passe um valor de string representando o nome do elemento para o `createElement` método. Converta o valor de retorno em `Element`. Em seguida, acrescente o elemento raiz ao documento chamando o método do `Document` objeto `appendChild` e transmita o objeto do elemento raiz como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
@@ -256,7 +256,7 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crie um elemento filho que pertença ao elemento header chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como valor do elemento filho. Por fim, acrescente o elemento filho ao elemento header chamando o `appendChild` método do elemento header e passe o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
+   * Crie um elemento filho que pertença ao elemento header chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, acrescente o elemento filho ao elemento header chamando o `appendChild` método do elemento header e passe o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
@@ -266,7 +266,7 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crie um elemento filho que pertence ao elemento detail chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como valor do elemento filho. Finalmente, acrescente o elemento filho ao elemento detail chamando o `appendChild` método do elemento detail e transmita o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
+   * Crie um elemento filho que pertence ao elemento detail chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, acrescente o elemento filho ao elemento detail chamando o `appendChild` método do elemento detail e transmita o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -290,9 +290,9 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
    Chame o método do `FormsServiceClient` objeto `renderPDFForm` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo.
-   * Um `com.adobe.idp.Document` objeto que contém dados a serem unidos ao formulário. Certifique-se de usar o `com.adobe.idp.Document` objeto criado nas etapas um e dois.
+   * Um `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário. Certifique-se de usar o `com.adobe.idp.Document` objeto criado nas etapas um e dois.
    * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
+   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
    O `renderPDFForm` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
@@ -300,12 +300,12 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
    * Crie um `com.adobe.idp.Document` objeto chamando o `FormsResult` método do objeto `getOutputContent` .
    * Crie um `java.io.InputStream` objeto chamando o `com.adobe.idp.Document` método do `getInputStream` objeto.
    * Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o método do `InputStream` objeto `read` e transmitindo a matriz de bytes como um argumento.
-   * Chame o método do `javax.servlet.ServletOutputStream` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+   * Chame o método `javax.servlet.ServletOutputStream` `write` do objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
 
 
 **Consulte também:**
 
-[Início rápido (modo SOAP): Pré-preenchimento de formulários com layouts flutuantes usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Start rápido (modo SOAP): Pré-preenchimento de formulários com layouts flutuantes usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -325,7 +325,7 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
    * Crie um objeto Java `DocumentBuilderFactory` chamando o `DocumentBuilderFactory` método da classe `newInstance` .
    * Crie um objeto Java `DocumentBuilder` chamando o `DocumentBuilderFactory` método do `newDocumentBuilder` objeto.
    * Chame o `DocumentBuilder` método do `newDocument` objeto para instanciar um `org.w3c.dom.Document` objeto.
-   * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` método do `createElement` objeto. Isso cria um `Element` objeto que representa o elemento raiz. Passe um valor de string representando o nome do elemento para o `createElement` método. Converta o valor de retorno em `Element`. Em seguida, acrescente o elemento raiz ao documento chamando o método do `Document` objeto `appendChild` e passe o objeto do elemento raiz como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
+   * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` método do `createElement` objeto. Isso cria um `Element` objeto que representa o elemento raiz. Passe um valor de string representando o nome do elemento para o `createElement` método. Converta o valor de retorno em `Element`. Em seguida, acrescente o elemento raiz ao documento chamando o método do `Document` objeto `appendChild` e transmita o objeto do elemento raiz como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
@@ -333,7 +333,7 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crie um elemento filho que pertença ao elemento header chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como valor do elemento filho. Por fim, acrescente o elemento filho ao elemento header chamando o `appendChild` método do elemento header e passe o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
+   * Crie um elemento filho que pertença ao elemento header chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, acrescente o elemento filho ao elemento header chamando o `appendChild` método do elemento header e passe o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
@@ -342,7 +342,7 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crie um elemento filho que pertence ao elemento detail chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como valor do elemento filho. Finalmente, acrescente o elemento filho ao elemento detail chamando o `appendChild` método do elemento detail e transmita o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
+   * Crie um elemento filho que pertence ao elemento detail chamando o `Document` método do `createElement` objeto e transmita um valor de string que representa o nome do elemento. Converta o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` método e transmita o `Document` `createTextNode` método do objeto como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, acrescente o elemento filho ao elemento detail chamando o `appendChild` método do elemento detail e transmita o objeto de elemento filho como um argumento. As seguintes linhas de código mostram essa lógica de aplicativo:
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -366,9 +366,9 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
    Chame o método do `FormsService` objeto `renderPDFForm` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo.
-   * Um `BLOB` objeto que contém dados a serem unidos ao formulário. Certifique-se de usar o `BLOB` objeto criado nas etapas um e dois.
+   * Um `BLOB` objeto que contém dados para mesclar com o formulário. Certifique-se de usar o `BLOB` objeto criado nas etapas um e dois.
    * Um `PDFFormRenderSpecc` objeto que armazena opções de tempo de execução. Para obter mais informações, consulte Referência [da API de formulários](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
+   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
    * Um `com.adobe.idp.services.holders.BLOBHolder` objeto vazio que é preenchido pelo método. Isso é usado para armazenar o formulário PDF renderizado.
    * Um `javax.xml.rpc.holders.LongHolder` objeto vazio que é preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário).
