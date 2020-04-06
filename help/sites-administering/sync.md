@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
+source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 Quando a implantação é um farm [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm)publicação, os membros precisam fazer logon e ver seus dados em qualquer nó de publicação.
 
-Os usuários e os grupos de usuários (dados do usuário) criados no ambiente de publicação não são necessários no ambiente do autor.
+Usuários e grupos de usuários (dados de usuário) criados no ambiente publish não são necessários no ambiente author.
 
 A maioria dos dados do usuário criados no ambiente do autor deve permanecer no ambiente do autor e não ser copiada para publicar instâncias.
 
@@ -35,7 +35,7 @@ Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/secur
 
 Os benefícios da sincronização do usuário usando a distribuição Sling, em comparação com a replicação tradicional são:
 
-* *usuários*, perfis *de* usuário e grupos *de* usuários criados na publicação não são criados no autor
+* *usuários*, perfis *de* usuários e grupos *de* usuários criados na publicação não são criados no autor
 
 * A distribuição Sling define propriedades em eventos jcr, possibilitando a ação de ouvintes de eventos do lado da publicação sem preocupação com loops de replicação infinitos
 * A distribuição Sling envia somente dados do usuário para instâncias de publicação não originárias, eliminando tráfego desnecessário
@@ -61,7 +61,7 @@ Os benefícios da sincronização do usuário usando a distribuição Sling, em 
 >
 >Nenhuma nova configuração deve ser adicionada como resultado da ativação da sincronização do usuário.
 
-A sincronização do usuário depende do ambiente do autor para gerenciar as distribuições de dados do usuário, mesmo que os dados do usuário não sejam criados no autor. Muito, mas não toda, da configuração acontece no ambiente do autor e cada etapa identifica claramente se ela deve ser executada no autor ou publicação.
+A sincronização do usuário depende do ambiente do autor para gerenciar as distribuições de dados do usuário, mesmo que os dados do usuário não sejam criados no autor. Grande parte, mas não toda, da configuração acontece no ambiente do autor e cada etapa identifica claramente se ela deve ser executada no autor ou publicação.
 
 Veja a seguir as etapas necessárias para habilitar a sincronização do usuário, seguidas por uma seção [Solução de problemas](#troubleshooting) :
 
@@ -73,7 +73,7 @@ Veja a seguir as etapas necessárias para habilitar a sincronização do usuári
 
 1. Verifique se o código mais recente foi instalado:
 
-* [Atualizações da plataforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [Atualizações da plataforma AEM](https://helpx.adobe.com/br/experience-manager/kb/aem62-available-hotfixes.html)
 * [Atualizações do AEM Communities](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
@@ -307,7 +307,7 @@ Se houver dados personalizados que serão sincronizados em várias instâncias d
 
    Esta é a lista de tipos de nós que serão sincronizados. Qualquer tipo de nó diferente de sling:Folder precisa ser listado aqui (sling:folder é manipulado separadamente).
 
-   Lista padrão de tipos de nó a serem sincronizados:
+   lista padrão de tipos de nó a sincronizar:
 
    * rep:User
    * nt:unstructured
@@ -370,7 +370,7 @@ Se a Sling ID de uma instância de publicação corresponder à Sling ID de qual
 
          `use windows explorer and search for *sling.id.file*`
 
-1. iniciar a instância de publicação
+1. start da instância de publicação
 
    * na inicialização, ele receberá uma nova ID de Sling
 
@@ -411,9 +411,9 @@ Para que as atualizações sejam sincronizadas corretamente, é necessário modi
 
 ## O Que Acontece Quando... {#what-happens-when}
 
-### Perfil de autoinscrição ou edição do usuário na publicação {#user-self-registers-or-edits-profile-on-publish}
+### Perfil de Autoinscrição ou edição do usuário na publicação {#user-self-registers-or-edits-profile-on-publish}
 
-Por padrão, os usuários e perfis criados no ambiente de publicação (autoregistro) não aparecem no ambiente do autor.
+Por padrão, os usuários e perfis criados no ambiente de publicação (autoinscrição) não aparecem no ambiente do autor.
 
 Quando a topologia é um farm [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm) publicação e a sincronização do usuário foi configurada corretamente, o *usuário *e o perfil *do* usuário são sincronizados no farm de publicação usando a distribuição Sling.
 
@@ -421,7 +421,7 @@ Quando a topologia é um farm [de](/help/sites-deploying/recommended-deploys.md#
 
 Por padrão, os dados do usuário criados no ambiente de publicação não aparecem no ambiente do autor e vice-versa.
 
-Quando o console Administração e segurança [do](/help/sites-administering/security.md) usuário for usado para adicionar novos usuários no ambiente de publicação, a sincronização do usuário sincronizará os novos usuários e sua associação de grupo com outras instâncias de publicação, se necessário. A sincronização do usuário também sincronizará os grupos de usuários criados por meio do console de segurança.
+Quando o console Administração e segurança [do](/help/sites-administering/security.md) usuário for usado para adicionar novos usuários ao ambiente de publicação, a sincronização do usuário sincronizará os novos usuários e sua associação de grupo com outras instâncias de publicação, se necessário. A sincronização do usuário também sincronizará os grupos de usuários criados por meio do console de segurança.
 
 ## Resolução de Problemas{#troubleshooting}
 
@@ -452,7 +452,7 @@ Quando a fila de distribuição estiver vazia, desative a sincronização do usu
 
    * *desmarque a caixa de `Enabled` [seleção Apache Sling Distribution Agent - Fábrica de agentes de sincronização](#apache-sling-distribution-agent-sync-agents-factory)
 
-Após a conclusão das tarefas, para reativar a sincronização do usuário:
+Após a conclusão do tarefa, para reativar a sincronização do usuário:
 
 * sobre o autor
 
@@ -474,7 +474,7 @@ Isso é o que é exibido quando a Sincronização do usuário não está ativada
 
 Quando o diagnóstico é executado a partir do ambiente do autor, os resultados de aprovação/falha incluirão uma seção [INFO] exibindo a lista de instâncias de publicação configuradas para confirmação.
 
-A lista inclui um URL para cada instância de publicação que executará o diagnóstico para essa instância. O parâmetro url `syncUser` é anexado ao URL de diagnóstico com seu valor definido para o usuário *de sincronização* autorizado criado na [Etapa 2](/help/sites-administering/sync.md#createauthuser).
+Incluído na lista, há um URL para cada instância de publicação que executará o diagnóstico para essa instância. O parâmetro url `syncUser` é anexado ao URL de diagnóstico com seu valor definido para o usuário *de sincronização* autorizado criado na [Etapa 2](/help/sites-administering/sync.md#createauthuser).
 
 **Observação** : antes de iniciar o URL, o usuário *de sincronização* autorizado já deve estar conectado a essa instância de publicação.
 
@@ -484,7 +484,7 @@ A lista inclui um URL para cada instância de publicação que executará o diag
 
 Quando a sincronização do usuário falha, o problema mais comum é que configurações adicionais foram *adicionadas*. Em vez disso, a *configuração *padrão existente deve ter sido *editada*.
 
-Veja a seguir as exibições de como as configurações padrão editadas devem aparecer no Console da Web. Se mais de uma instância for exibida, a configuração adicionada deverá ser removida.
+Veja a seguir visualizações de como as configurações padrão editadas devem aparecer no console da Web. Se mais de uma instância for exibida, a configuração adicionada deverá ser removida.
 
 #### (autor) One Apache Sling Distribution Agent - Sync Agents Fatory {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
@@ -514,7 +514,7 @@ Se o seguinte estiver visível no registro:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Em seguida, verifique se a seção [2. Criar usuário]autorizado(/content/docs/en/aem/6-1/administer/security/security/sync.md#2). create authorized user) foi seguido corretamente.
+Em seguida, verifique se a seção [2. Criar usuário](#createauthuser) autorizado foi seguido corretamente.
 
 Esta seção descreve a criação de um usuário autorizado, que existe em todas as instâncias de publicação e a identificação deles na configuração OSGi do &#39;Provedor secreto&#39; no autor. By default, the user is `admin`.
 
@@ -524,9 +524,9 @@ O usuário autorizado deve ter explicitamente os seguintes privilégios e restri
 
 | **path** | **jcr:all** | **rep:global** |
 |---|---|---|
-| /home | X | &amp;ast;/actions/&amp;ast; |
-| /home/users | X | &amp;ast;/actions/&amp;ast; |
-| /home/groups | X | &amp;ast;/actions/&amp;ast; |
+| /home | X | &amp;ast;/atividade/&amp;ast; |
+| /home/users | X | &amp;ast;/atividade/&amp;ast; |
+| /home/groups | X | &amp;ast;/atividade/&amp;ast; |
 
 Como membro do `administrators` grupo, o usuário autorizado deve ter os seguintes privilégios em todas as instâncias de publicação:
 
@@ -553,7 +553,7 @@ Ver seção [9. ID de Sling exclusiva](#unique-sling-id)
 
       * ao editar o pacote
 
-         * Guia Filtros: Adicionar filtro: Caminho raiz: `/home`
+         * guia Filtros : Adicionar filtro: Caminho raiz: `/home`
          * Guia Avançado : Tratamento AC: `Overwrite`
    * [exportar o pacote](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
@@ -568,7 +568,7 @@ Para configurar ou ativar a sincronização do usuário, vá para a etapa 1: Apa
 
 Quando uma instância de publicação ficar indisponível, ela não deverá ser removida se estiver novamente online no futuro. As alterações serão colocadas em fila para o editor e, uma vez que estejam novamente online, as alterações serão processadas.
 
-Se a instância de publicação nunca mais estiver on-line, se estiver off-line permanentemente, ela deverá ser removida, pois a construção da fila resultará no uso notável do espaço em disco no ambiente do autor.
+Se a instância de publicação nunca mais estiver on-line, se estiver off-line permanentemente, ela deverá ser removida, pois a construção da fila resultará no uso notável de espaço em disco no ambiente do autor.
 
 Quando um editor estiver inativo, o registro do autor terá exceções semelhantes a:
 
@@ -587,7 +587,7 @@ Para remover um editor do [Apache Sling Distribution Agent - Sync Agents Fatory]
 * sobre o autor :
 
    * [Colocar a sincronização do usuário offline](#how-to-take-user-sync-offline)
-   * siga a [etapa 7](#apache-sling-distribution-agent-sync-agents-factory) para remover o editor das duas listas de servidores:
+   * siga a [etapa 7](#apache-sling-distribution-agent-sync-agents-factory) para remover o editor das duas listas do servidor:
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
