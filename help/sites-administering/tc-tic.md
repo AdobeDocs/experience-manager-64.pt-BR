@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: 70039d5f7d6f773e64402c3a3e88198bb52fb11f
+source-git-commit: 64d4362c933ed30c2b9474cafbcd9c318d9c52bd
 
 ---
 
@@ -77,7 +77,7 @@ Depois de configurar uma estrutura de integração de tradução, você pode [as
 **Observação:** Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Traduzir conteúdo para sites multilíngues](/help/sites-administering/translation.md).
 
 Uma única configuração da estrutura controla como traduzir o conteúdo da página, o conteúdo da comunidade e os ativos.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-64.jpg)
 
 ### Propriedades de configuração de sites {#sites-configuration-properties}
 
