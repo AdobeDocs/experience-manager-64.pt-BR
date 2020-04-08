@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 43a28b0d9552cfde74850dfd1a1d63d04f7e4540
 
 ---
 
@@ -29,13 +29,13 @@ Consulte as imagens interativas em ação na página da Web acima, acessando o s
 
 ## Veja como os banners de imagem interativos são criados {#watch-how-interactive-image-banners-are-created}
 
-Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). Você também aprenderá a visualizar, editar e fornecer banners de imagem interativos.
+Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). Você também aprenderá a pré-visualização, edição e fornecimento de banners de imagem interativos.
 
-## Início rápido: Imagens interativas {#quick-start-interactive-images}
+## Start rápido: Imagens interativas {#quick-start-interactive-images}
 
 A seguinte descrição passo a passo do fluxo de trabalho foi projetada para ajudá-lo a começar a usar imagens interativas rapidamente nos ativos AEM.
 
-Procure o cabeçalho **Exemplo** em algumas das tarefas de Início rápido. Ele contém um breve tutorial baseado no seguinte exemplo de página da Web que ainda não tem Imagens interativas adicionadas a ele:
+Procure o cabeçalho **Exemplo** em algumas tarefas do Start rápido. Ele contém um breve tutorial baseado no seguinte exemplo de página da Web que ainda não tem Imagens interativas adicionadas a ele:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
@@ -43,7 +43,7 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 **Fluxo de trabalho** de Imagens Interativas:
 
-1. **(Opcional) Identificação de variáveis** de ponto de acesso - se você usar os ativos AEM e o Dynamic Media individualmente, comece identificando as variáveis dinâmicas usadas na implementação do Quickview existente para que você possa digitar dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificação de variáveis](#optional-identifying-hotspot-variables)de pontos de conexão.
+1. **(Opcional) Identificação de variáveis** de ponto de acesso - se você usar os ativos AEM e o Dynamic Media de forma independente, identifique as variáveis dinâmicas usadas na implementação do Quickview existente para que você possa digitar dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificação de variáveis](#optional-identifying-hotspot-variables)de pontos de conexão.
 
    No entanto, se você usar o AEM Sites, o eCommerce do AEM ou ambos, essa etapa não será necessária.
 
@@ -51,7 +51,7 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 1. **(Opcional) Criação de uma predefinição** do visualizador de Imagem interativa - Personalize a imagem gráfica usada para representar pontos de acesso. A criação de sua própria predefinição do visualizador de Imagem interativa não é necessária se você pretende usar a predefinição do visualizador de Imagem interativa predefinida chamada `Shoppable_Banner` .
 
-   Consulte [(Opcional) Criação de uma predefinição](managing-viewer-presets.md#creating-a-new-viewer-preset)do visualizador de imagens interativas.
+   Consulte [(Opcional) Criação de uma predefinição](managing-viewer-presets.md#creating-a-new-viewer-preset)do visualizador de Imagem interativa.
 
 1. **Carregar um banner** de imagem - Carregue banners de imagem que você deseja tornar interativos.
 
@@ -60,12 +60,12 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 1. **Adicionar pontos de acesso a um banner** de imagem - Adicione um ou mais pontos de acesso a um banner de imagem e associe cada um a uma ação, como um hiperlink, uma visualização rápida ou um fragmento de experiência. Depois de adicionar pontos de acesso, você concluirá essa tarefa publicando a imagem interativa.
 
    * Consulte [Adicionar pontos de acesso a um banner](#adding-hotspots-to-an-image-banner)de imagem.
-   * Consulte [Visualizar imagens](#optional-previewing-interactive-images) interativas - Opcional. Se desejar, você pode exibir uma representação do banner que pode ser comprado e testar sua interatividade.
+   * Consulte [Visualizar imagens](#optional-previewing-interactive-images) interativas - Opcional. Se desejar, você pode visualização uma representação do banner que pode ser comprado e testar sua interatividade.
    * Consulte [Publicação de ativos](publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
 
 1. **Adicionar uma imagem interativa ao seu site ou ao seu site no AEM**
 
-   * Se você usar o AEM Sites ou o eCommerce do AEM, ou ambos, poderá adicionar a imagem interativa diretamente a uma página da Web no AEM arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+   * Se você usar o AEM Sites ou o eCommerce do AEM, ou ambos, poderá adicionar a imagem interativa diretamente a uma página da Web no AEM arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
    * Se você usar os ativos AEM e o Dynamic Media de forma independente, é necessário copiar o código incorporado no seu site e, em seguida, integrá-lo ao seu Quickview existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
    * Se você estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview usada em seu site. Consulte [Integração de uma imagem interativa com uma exibição rápida](#integrating-an-interactive-image-with-an-existing-quickview)existente.
 
@@ -73,21 +73,21 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 >[!NOTE]
 >
->Esta tarefa só é necessária se as seguintes condições forem verdadeiras:
+>Essa tarefa só é necessária se as seguintes condições forem verdadeiras:
 >
 >* Você deseja adicionar interatividade à sua imagem, acionando para o Quickviews.
 >* Sua implementação do AEM *não* usa uma estrutura de integração de comércio eletrônico para extrair dados de produtos para o AEM de qualquer solução de comércio eletrônico como IBM Webphere Commerce, Elastic Path, hybris ou Intershop. Consulte Conceitos de [comércio eletrônico nos ativos](/help/sites-administering/concepts.md)AEM.
 >
 >
-Se sua implementação do AEM usar eCommerce, você poderá ignorar essa tarefa e prosseguir para a próxima.
+Se sua implementação do AEM usar o eCommerce, você poderá ignorar essa tarefa e ir para a próxima tarefa.
 
-Comece identificando as variáveis dinâmicas usadas pela implementação do Quickview existente para que você possa digitar os dados do ponto de acesso para criar a imagem interativa.
+Start identificando variáveis dinâmicas usadas pela implementação do Quickview existente para que você possa digitar dados de ponto de acesso para criar a imagem interativa.
 
-Quando você adiciona pontos de acesso a uma imagem de banner nos ativos AEM, é necessário atribuir um SKU (Stock Keeping Unit; Unidade de manutenção de estoque); um identificador exclusivo para cada produto ou serviço distinto que você oferece) e variáveis adicionais opcionais para cada ponto de conexão. Essas variáveis de ponto de conexão são usadas posteriormente para corresponder a pontos de conexão com conteúdo do Quickview.
+Quando você adiciona pontos de acesso a uma imagem de banner nos ativos AEM, é necessário atribuir um SKU (Stock Keeping Unit; Unidade de manutenção de estoque); um identificador exclusivo para cada produto ou serviço distinto que você oferta) e variáveis adicionais opcionais para cada ponto de conexão. Essas variáveis de ponto de conexão são usadas posteriormente para corresponder a pontos de conexão com conteúdo do Quickview.
 
 É importante identificar corretamente o número e o tipo de variáveis a serem associadas aos dados dos pontos de conexão. Cada ponto de conexão adicionado a uma imagem de banner deve ter informações suficientes para identificar inequivocamente o produto no sistema de backend existente.
 
-Existem diferentes maneiras de identificar um conjunto de variáveis a serem usadas para dados de pontos de conexão.
+Há diferentes maneiras de identificar um conjunto de variáveis a serem usadas para dados de pontos de conexão.
 
 Às vezes, pode ser suficiente consultar especialistas de TI responsáveis pela implementação atual do Quickview, já que eles provavelmente saberão qual é o conjunto mínimo de dados necessário para identificar o Quickview no sistema. No entanto, na maioria dos casos, é possível simplesmente analisar o comportamento existente do código front-end.
 
@@ -100,7 +100,7 @@ A maioria das implementações do Quickview usa o seguinte paradigma:
 
 A abordagem então é visitar diferentes áreas do site existente onde o recurso Quickview é implementado, acionar o Quickview e capturar o URL Ajax enviado por página da Web para carregar os dados ou o conteúdo do Quickview.
 
-Normalmente, não é necessário usar nenhuma ferramenta de depuração especializada. Os navegadores da Web modernos apresentam inspetores da Web que fazem um trabalho adequado. A seguir estão alguns exemplos de navegadores da Web que incluem inspetores da Web:
+Normalmente, não é necessário usar nenhuma ferramenta de depuração especializada. Os navegadores da Web modernos dispõem de inspetores da Web que fazem um trabalho adequado. A seguir estão alguns exemplos de navegadores da Web que incluem inspetores da Web:
 
 * Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 para abrir o painel Ferramentas **[!UICONTROL do]** desenvolvedor e clique na guia **[!UICONTROL Rede]** .
 
@@ -112,27 +112,27 @@ Normalmente, não é necessário usar nenhuma ferramenta de depuração especial
 
 Quando o monitoramento de rede estiver ativado no navegador, dispare o Quickview na página.
 
-Agora, encontre o URL Ajax do Quickview no log de rede e copie o URL gravado para análise futura. Na maioria dos casos, quando você aciona o Quickview, há várias solicitações que são enviadas para o servidor. Normalmente, o URL do Ajax do Quickview é um dos primeiros da lista. Ele tem uma parte ou um caminho de sequência de consulta complexo, e seu tipo MIME de resposta é `text/html`, `text/xml`ou `text/javascript`.
+Agora, encontre o URL Ajax do Quickview no registro de rede e copie o URL gravado para análise futura. Na maioria dos casos, quando você aciona o Quickview, há várias solicitações que são enviadas para o servidor. Normalmente, o URL do Ajax do Quickview é um dos primeiros na lista. Ele tem uma parte ou um caminho de sequência de query complexo, e seu tipo MIME de resposta é `text/html`, `text/xml`ou `text/javascript`.
 
-Durante esse processo, é importante visitar diferentes áreas do seu site, com diferentes categorias e tipos de produtos. O motivo é que os URLs do Quickview podem ter partes comuns para uma determinada categoria de site, mas são alterados somente se você visitar uma área diferente do site.
+Durante esse processo, é importante visitar diferentes áreas do seu site, com diferentes categorias e tipos de produtos. O motivo é que os URLs do Quickview podem ter partes comuns para uma determinada categoria do site, mas são alterados somente se você visitar uma área diferente do site.
 
 No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor SKU é o único dado necessário para adicionar pontos de acesso à imagem do banner.
 
-No entanto, em casos complexos, o URL do Quickview tem elementos variáveis diferentes além do SKU, como ID da categoria, código de cor, código de tamanho e assim por diante. Nesses casos, cada elemento é uma variável separada na definição dos dados do ponto de conexão no recurso de imagem interativa que pode ser comprado nos ativos AEM.
+No entanto, em casos complexos, o URL do Quickview tem diferentes elementos variáveis além do SKU, como ID da categoria, código de cor, código de tamanho e assim por diante. Nesses casos, cada elemento é uma variável separada na definição dos dados do ponto de conexão no recurso de imagem interativa que pode ser comprado nos ativos AEM.
 
 Considere os seguintes exemplos de URLs do Quickview e suas variáveis de ponto de acesso resultantes:
 
 <table> 
      <tbody> 
       <tr> 
-       <td><p>SKU único, encontrado na string de consulta.</p> </td> 
+       <td><p>SKU único, encontrado na string do query.</p> </td> 
        <td><p>Os URLs de exibição rápida gravados incluem o seguinte:</p> 
         <ul> 
          <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li> 
          <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li> 
          <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li> 
          <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li> 
-        </ul> <p>A única parte variável no URL é o valor do parâmetro da string de consulta productId= e é claramente um valor SKU. Portanto, nossos pontos de conexão precisam apenas de campos SKU preenchidos com valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
+        </ul> <p>A única parte variável no URL é o valor do parâmetro da string de query productId= e é claramente um valor SKU. Portanto, nossos pontos de conexão precisam apenas de campos SKU preenchidos com valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
       </tr> 
       <tr> 
        <td><p>SKU único, encontrado no caminho do URL.</p> </td> 
@@ -144,7 +144,7 @@ Considere os seguintes exemplos de URLs do Quickview e suas variáveis de ponto 
         </ul> <p>A parte variável está na última parte do caminho e se torna o valor SKU dos pontos de acesso: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>...</p> </td> 
       </tr> 
       <tr> 
-       <td><p>SKU e ID de categoria na string de consulta.</p> </td> 
+       <td><p>SKU e ID da categoria na sequência do query.</p> </td> 
        <td><p>Os URLs de exibição rápida gravados incluem o seguinte:</p> 
         <ul> 
          <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
@@ -158,17 +158,17 @@ Você pode aplicar a mesma abordagem usada nos três exemplos acima à página d
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
-A página da Web de demonstração tem várias miniaturas de produtos, cada uma com um botão do Quickview chamado **[!UICONTROL Ver mais]**. Com a ferramenta de depuração do navegador da Web ainda ativada, clique em cada botão e observe os URLs de exibição rápida gravados. Depois de ativar as quatro exibições rápidas de produtos disponíveis na página, você tem a seguinte lista de solicitações do Quickview feitas ao backend:
+A página da Web de demonstração tem várias miniaturas de produtos, cada uma com um botão do Quickview chamado **[!UICONTROL Ver mais]**. Com a ferramenta de depuração do navegador da Web ainda ativada, clique em cada botão e observe os URLs de exibição rápida gravados. Após ativar as quatro exibições rápidas de produtos disponíveis na página, você terá a seguinte lista de solicitações do Quickview feitas ao backend:
 
 * `/datafeed/Men-Windbreaker.json`
 * `/datafeed/Men-SimpleHenley.json`
 * `/datafeed/Men-CamoPullover.json`
 * `/datafeed/Women-QuiltedDownJacket.json`
 
-Olhando para essas chamadas de servidor, você verá que informações específicas do produto estão presentes apenas no caminho da solicitação. Você também observa que a string de consulta não é usada de todo e há dois tipos distintos de partes de dados envolvidas:
+Olhando para essas chamadas de servidor, você verá que informações específicas do produto estão presentes apenas no caminho da solicitação. Você também observa que a sequência de caracteres do query não é usada e que há dois tipos distintos de partes de dados envolvidas:
 
-* O primeiro tipo é Homens ou Mulheres. Você pode chamar esta &quot;categoria de produto&quot;.
-* O segundo tipo é o nome do produto, como CamoPullover. Você pode assumir que este é o SKU do produto.
+* O primeiro tipo é Homens ou Mulheres. Você pode chamar isso de &quot;categoria do produto&quot;.
+* O segundo tipo é o nome do produto, como CamoPullover. Você pode supor que este é o SKU do produto.
 
 Considerando essas informações, todo o URL do Quickview tem o seguinte padrão:
 
@@ -184,7 +184,7 @@ Você pode optar por usar a predefinição padrão do visualizador de Imagem int
 
 Ao criar uma predefinição personalizada do visualizador de Imagem interativa, você pode determinar a aparência dos pontos de acesso no banner de imagem. Como parte da criação da predefinição do visualizador, você pode optar por usar um gráfico de ponto de acesso de uma galeria de imagens predefinidas.
 
-Depois de salvar a predefinição do visualizador, ela é ativada automaticamente (ativada) na página de lista Predefinição **[!UICONTROL do]** visualizador nos ativos AEM. Essa funcionalidade significa que é visível no componente de Mídia interativa e sempre que você exibe um ativo. No entanto, para *fornecer* um banner interativo com essa predefinição do visualizador, você também deve *publicar* sua predefinição do visualizador (isso vale para predefinições personalizadas ou não).
+Depois de salvar a predefinição do visualizador, ela é ativada automaticamente (ativada) na página de lista **[!UICONTROL do visualizador predefinido]** nos ativos AEM. Essa funcionalidade significa que é visível no componente de Mídia interativa e sempre que você visualização um ativo. No entanto, para *fornecer* um banner interativo com essa predefinição do visualizador, você também deve *publicar* sua predefinição do visualizador (isso vale para predefinições personalizadas ou não).
 
 **Para criar uma predefinição** do visualizador de Imagem interativa:
 
@@ -192,7 +192,7 @@ Depois de salvar a predefinição do visualizador, ela é ativada automaticament
 1. Near the upper-right corner of the page, tap **[!UICONTROL Create]**.
 1. Na caixa de diálogo **[!UICONTROL Nova predefinição]** do visualizador, digite um nome para descrever a predefinição do visualizador de banner interativo.
 
-   Este é o título que aparecerá na página de lista **[!UICONTROL Visualizar predefinições]** após salvar.
+   Este é o título que aparecerá na página lista **[!UICONTROL do visualizador predefinido]** após salvar.
 1. In the **[!UICONTROL Rich Media Type]** pull-down menu, select **[!UICONTROL Interactive Image]**.
 1. Toque em **Criar**.
 1. On the **[!UICONTROL Edit Viewer Preset]** page, tap the **[!UICONTROL Appearance]** tab.
@@ -209,7 +209,7 @@ Depois de salvar a predefinição do visualizador, ela é ativada automaticament
 
    Agora você está pronto para carregar um banner de imagem.
 
-## Carregar um banner de imagem {#uploading-an-image-banner}
+## Fazer upload de um banner de imagem {#uploading-an-image-banner}
 
 Se você já tiver carregado as imagens que deseja usar, vá para a próxima etapa, [Adicionando pontos de acesso a um banner](#adding-hotspots-to-an-image-banner)de imagem.
 
@@ -219,7 +219,7 @@ Se você já tiver carregado as imagens que deseja usar, vá para a próxima eta
 
    See [Uploading assets](managing-assets-touch-ui.md#uploading-assets).
 
-   Agora você está pronto para adicionar pontos de acesso ao banner de imagem; consulte a próxima tarefa abaixo.
+   Agora você está pronto para adicionar pontos de acesso ao banner de imagem; veja a próxima tarefa abaixo.
 
 ## Adicionar pontos de acesso a um banner de imagem {#adding-hotspots-to-an-image-banner}
 
@@ -235,7 +235,7 @@ Consulte Fragmentos [de experiência](/help/sites-authoring/experience-fragments
 
 **[!UICONTROL As opções Desfazer]** e **[!UICONTROL Refazer]** , perto do canto superior direito da página, são suportadas durante a sessão de criação/edição atual.
 
-Ao terminar de criar sua imagem interativa, você pode usar a opção **[!UICONTROL Visualizar]** para ver uma representação de como sua imagem interativa aparecerá para os clientes.
+Ao terminar de criar sua imagem interativa, você pode usar a **[!UICONTROL Pré-visualização]** para ver uma representação de como sua imagem interativa aparecerá para os clientes.
 
 Consulte [(Opcional) Visualização de imagens](#optional-previewing-interactive-images)interativas.
 
@@ -253,20 +253,21 @@ Consulte [(Opcional) Visualização de imagens](#optional-previewing-interactive
 
 **Para adicionar pontos de acesso a um banner** de imagem:
 
-1. Na exibição Ativos, navegue até o banner de imagem que deseja tornar interativo.
+1. Na visualização Ativos, navegue até o banner de imagem que deseja tornar interativo.
 1. Faça uma das seguintes opções:
 
    * Hover on the image, then tap **[!UICONTROL Select** (checkmark icon). Na barra de ferramentas, toque em **[!UICONTROL Edit**.
    * Passe o mouse sobre a imagem e toque em **[!UICONTROL Mais ações]** (ícone de três pontos) > **[!UICONTROL Editar]**.
-   * Toque na imagem para abri-la na página Exibição **** detalhada. Na barra de ferramentas, toque em **[!UICONTROL Edit**.
+   * Toque na imagem para abri-la na página **[!UICONTROL Visualização]** Detalhe. Na barra de ferramentas, toque em **[!UICONTROL Edit**.
 
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 1. a. Perto do canto superior esquerdo da página Gerenciamento **de** hotspots, toque em **[!UICONTROL Hotspot]**.
 b. Na imagem, toque em um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
-c.Adicione outros pontos de conexão, conforme necessário, repetindo as etapas a e b.d.(Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone de lixeira) no cabeçalho **[!UICONTROL Pontos de acesso]** .
+c. Adicione outros pontos de conexão, conforme necessário, repetindo as etapas a e b.
+d. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone de lixeira) no cabeçalho **[!UICONTROL Pontos de acesso]** .
 
-1. No campo de texto **[!UICONTROL Nome]** , digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso **** selecionado.
+1. No campo de texto **[!UICONTROL Nome]** , digite o nome do ponto de acesso. Esse nome também é exibido na lista suspensa Ponto de acesso **** selecionado.
 1. Faça uma das seguintes opções:
 
    * Toque em **[!UICONTROL Quickview]**.
@@ -275,7 +276,7 @@ c.Adicione outros pontos de conexão, conforme necessário, repetindo as etapas 
       * Se você *não* for um cliente do AEM Sites ou eCommerce
 
          * Consulte [Identificação de variáveis](#optional-identifying-hotspot-variables)de pontos de conexão; será necessário definir essas variáveis.
-         * Em seguida, insira manualmente o valor SKU. No campo de texto Valor **** SKU, digite o SKU (Stock Keeping Unit) do produto, que é um identificador exclusivo para cada produto ou serviço distinto oferecido. O valor SKU inserido preenche automaticamente a parte variável do modelo do Quickview, de modo que o sistema saiba associar o ponto de acesso tocado a uma exibição rápida do SKU.
+         * Em seguida, insira manualmente o valor SKU. No campo de texto Valor **** SKU, digite o SKU (Stock Keeping Unit) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferta. O valor SKU inserido preenche automaticamente a parte variável do modelo do Quickview, de modo que o sistema saiba associar o ponto de acesso tocado a uma exibição rápida do SKU.
          * (Opcional) Se houver outras variáveis na exibição Rápida que você precisa usar para identificar ainda mais um produto, toque em **[!UICONTROL Adicionar variável]** genérica. No campo de texto, especifique uma variável adicional. Por exemplo, `category=Mens` é uma variável adicionada.
    * Toque em **Hiperlink**.
 
@@ -312,17 +313,17 @@ c.Adicione outros pontos de conexão, conforme necessário, repetindo as etapas 
 
 ### (Opcional) Visualização de imagens interativas {#optional-previewing-interactive-images}
 
-Você pode usar a opção Visualizar para ver uma representação da aparência da imagem interativa para os clientes e testar os pontos de conexão da imagem para garantir que eles estejam se comportando como esperado.
+Você pode usar a Pré-visualização para ver uma representação da aparência da imagem interativa para os clientes e testar os pontos de conexão da imagem para garantir que eles estejam se comportando como esperado.
 
 Quando estiver satisfeito com a imagem interativa, você poderá publicá-la.\
 See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).\
 See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.\
 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
-**Para visualizar imagens** interativas:
+**Para pré-visualização de imagens** interativas:
 
-1. Na exibição Ativos, navegue até uma imagem interativa existente que você criou e toque para abri-la na visualização.
-1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa **[!UICONTROL Conteúdo]** , toque em **[!UICONTROL Visualizadores]**.
+1. Na visualização Ativos, navegue até uma imagem interativa existente que você criou e toque para abri-la na Pré-visualização.
+1. Próximo ao canto superior esquerdo da página de Pré-visualização, na lista suspensa **[!UICONTROL Conteúdo]** , toque em **[!UICONTROL Visualizadores]**.
 1. Na lista **[!UICONTROL Visualizadores]** , toque em **[!UICONTROL Shoppable_Banner]** ou no nome da predefinição do visualizador de imagens interativo que você criou.
 1. Toque em pontos de acesso na imagem para testar suas ações associadas.
 
@@ -344,7 +345,7 @@ Se você for um cliente independente do AEM Assets, poderá adicionar manualment
 
 1. Adicione o código incorporado copiado no local desejado na página da Web.
 
-   O código incorporado copiado é definido para um ambiente responsivo para que ele se ajuste automaticamente à área atribuída.
+   O código incorporado copiado é definido para um ambiente responsivo, de modo que ele deve se ajustar automaticamente à área atribuída.
 
 **Exemplo**
 
@@ -366,7 +367,7 @@ A integração é tão simples quanto remover a `IMG` tag e substituí-la pelo c
 >
 >Neste ponto, os pontos de conexão na imagem interativa que pode ser comprada do site da demonstração são apenas para fins de exibição; eles ainda não estão integrados às exibições rápidas existentes.
 
-Para aplicar um recorte a uma imagem interativa que pode ser comprada para um ambiente responsivo, você pode incluir o atributo de configuração Imagem interativa `ZoomView.iscommand` ao caminho — onde `ZoomView` é o componente a ser chamado e `iscommand` é o comando de serviço de imagem de corte aplicado.
+Para aplicar um recorte a uma imagem interativa que pode ser comprada para um ambiente responsivo, é possível incluir o atributo de configuração Imagem interativa `ZoomView.iscommand` ao caminho — onde `ZoomView` é o componente a ser chamado e `iscommand` é o comando de serviço de imagem de recorte que você aplica.
 
 Consulte Atributo de configuração [ZoomView.iscommand](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html) .
 
@@ -378,13 +379,13 @@ Agora você está pronto para integrar a imagem interativa com uma exibição r�
 
 >[!NOTE]
 >
->Esta tarefa só se aplica se você for um cliente independente do AEM Assets.
+>Esta tarefa se aplica somente se você for um cliente independente dos ativos AEM.
 
 A última etapa neste processo é integrar a imagem interativa com uma implementação do Quickview existente em seu site. Não há solução para a integração que funcione para todos os casos. Toda implementação do QuickView é única e é necessária uma abordagem específica que provavelmente envolva a assistência de uma pessoa de TI de front-end.
 
 A implementação atual do Quickview normalmente representa uma cadeia de ações inter-relacionadas que ocorrem na página da Web na seguinte ordem:
 
-1. Um usuário aciona um elemento na interface do usuário do site.
+1. Um usuário aciona um elemento na interface do usuário do seu site.
 1. O código front-end obtém um URL de exibição rápida com base no elemento da interface do usuário que foi acionado na etapa 1.
 1. O código de front-end envia uma solicitação do Ajax usando o URL obtido na etapa 2.
 1. A lógica de backend retorna os dados ou o conteúdo correspondentes do Quickview de volta ao código de front-end.
@@ -402,7 +403,7 @@ Nesse manipulador de eventos, o código front-end faz o seguinte:
 * Constrói um URL de exibição rápida com base nos dados do ponto de acesso.
 * Aciona o processo de carregamento do Quickview do backend e renderização na tela para exibição.
 
-O código incorporado retornado pelos ativos AEM já tem um manipulador de eventos pronto para uso no lugar, que é comentado, como visto no trecho de código destacado a seguir:
+O código incorporado retornado pelos ativos AEM já possui um manipulador de eventos pronto para uso que é comentado, como visto no trecho de código destacado a seguir:
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -437,7 +438,7 @@ Usando nossos exemplos anteriores de URL do Quickview, você pode ver, nos segui
 <table> 
  <tbody> 
   <tr> 
-   <td><p>SKU único, encontrado na string de consulta</p> </td> 
+   <td><p>SKU único, encontrado na string do query</p> </td> 
    <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
@@ -453,7 +454,7 @@ Usando nossos exemplos anteriores de URL do Quickview, você pode ver, nos segui
       });</code></td> 
   </tr> 
   <tr> 
-   <td><p>SKU e ID de categoria na string de consulta</p> </td> 
+   <td><p>SKU e ID de categoria na sequência de query</p> </td> 
    <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
