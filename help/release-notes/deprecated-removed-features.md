@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -96,7 +96,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
   </tr>
   <tr>
    <td>Diretor do portal</td> 
-   <td><p>O Portal Diretor é um conjunto de recursos que permite a hospedagem de conteúdo do AEM via Portlet em servidores de terceiros.</p> <p>A Adobe não planeja fazer mais aprimoramentos no recurso do Editor de portal no local listado abaixo. O AEM 6.4 tem o Portal Diretor incluído, e os clientes que atualizam de versões anteriores podem continuar usando como está. Observe que o Portal Direct permanece totalmente compatível enquanto está sendo descontinuado.</p> 
+   <td><p>O Portal Diretor é um conjunto de recursos que permite a hospedagem de conteúdo do AEM via Portlet em servidores de terceiros.</p> <p>A Adobe não planeja fazer mais aprimoramentos no recurso Portal Diretor no local listado abaixo. O AEM 6.4 tem o Portal Diretor incluído, e os clientes que atualizam de versões anteriores podem continuar usando como está. Observe que o Portal Direct permanece totalmente compatível enquanto está sendo descontinuado.</p> 
     <ul> 
      <li>/libs/portal/diretor</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
   <tr>
    <td>Forms</td> 
    <td><p>O suporte ao serviço Adobe Central Migration Bridge foi substituído, pois o produto Adobe Central não é mais compatível.</p> </td> 
-   <td> </td> 
+   <td>Nenhuma substituição </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td><p>Uso obsoleto de JSONObject em Query e OperationOptions. As seguintes APIs estão obsoletas:
+   <ul><li>setArguments(argumentos JSONObject)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, argumentos JSONObject</li><li>JSONObject getArguments()</li><li>void setArguments (argumentos JSONObject)</li></ul>
+   </p> </td> 
+   <td>Usar a API IValueMap </td> 
   </tr>
   <tr>
    <td>Ativos</td> 
@@ -209,12 +216,17 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versõ
   <tr>
    <td>Forms</td> 
    <td> Removido o recurso Documentos adaptáveis</td> 
-   <td> Você pode usar o recurso de comunicações interativas para criar comunicações impressas e baseadas na Web. <br/> </td> 
+   <td> Você pode usar o recurso de comunicações interativas para criar comunicações impressas e baseadas na Web. Se você usar Documentos adaptativos, instale o pacote de compatibilidade para continuar usando os documentos adaptáveis existentes<br/> </td> 
   </tr>
     <tr>
     <td>Forms</td> 
     <td>Formulários AEM removidos na landing page específica JEE.</td> 
     <td>O AEM Forms na landing page JEE é substituído pela landing page AEM (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Remoção do suporte para Captcha padrão</td> 
+   <td>Use o serviço reCAPTCHA do Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
