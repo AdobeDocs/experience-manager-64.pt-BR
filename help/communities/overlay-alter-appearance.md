@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
 
 ---
 
@@ -29,13 +29,13 @@ Para não exibir o avatar ao lado de cada comentário publicado:
    1. Selecionar `/apps/social/commons/components/hbs/comments/comment`
    1. Selecionar **[!UICONTROL colar]**
 1. Abrir o sobreposto `comment.hbs`
-   * Clique duas vezes no nó `comment.hbs`em `/apps/social/commons/components/hbs/comments/comment folder`
+   * Duplo- clique no nó `comment.hbs`em `/apps/social/commons/components/hbs/comments/comment folder`
 1. Encontre as seguintes linhas e exclua-as ou comente-as:
 
-```xml
-<aside class="scf-comment-author">
-        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-```
+   ```xml
+   <aside class="scf-comment-author">
+           <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+   ```
 
 Exclua as linhas ou rode-as com &#39;&lt;!—&#39; e &#39;—>&#39; para comentá-los. Além disso, os caracteres &#39;xxx&#39; estão sendo adicionados como um indicador visual de onde o avatar estaria.
 
@@ -55,11 +55,11 @@ Encaminhe o componente de comentários sobrepostos para a instância de publica�
 
 Na navegação global, selecione **[!UICONTROL Ferramentas > Implantação > Replicação]** e, em seguida, **[!UICONTROL Ativar árvore]**.
 
-Para o Caminho inicial, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
+Para Caminho do Start, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-## Exibir resultados {#view-results}
+## Resultados da Visualização {#view-results}
 
 Se você fizer logon na instância de publicação como administrador, por exemplo, http://localhost:4503/crx/de como administrador/administrador, poderá verificar se os componentes sobrepostos estão lá.
 
