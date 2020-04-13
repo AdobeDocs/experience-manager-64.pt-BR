@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ Alguns destaques principais desta versão do Service pack:
 * Os menus suspensos **Empresa** e Conjunto de **Relatórios** ficam ocultos depois que a Fonte **do** Relatórios é selecionada ao configurar o Adobe Analytics nos serviços em nuvem do Experience Manager (NPR-31729).
 
 * As propriedades do Adobe Campaign não são limpas quando é feita uma cópia de idioma de um boletim informativo vinculado a um Adobe Campaign, enquanto a limpeza acontece quando um boletim informativo vinculado a um Adobe Campaign é copiado ou colado (NPR-32540).
+
+* ReportSuitesServlet está vulnerável a SSRF (NPR-32161).
 
 ### Sling {#sling-6480}
 
@@ -1133,7 +1135,7 @@ Alguns dos principais destaques do AEM 6.4.3.0 são:
 * Somente 10 grupos são listados na página de recursos de ativação, mesmo se a paginação estiver ativada para a listagem de grupos. NPR-26934: Hotfix do CQ-4252985
 * A opção para habilitar/desabilitar a pesquisa para o componente Publicação agendada no journal é fornecida no ConfigMgr, e o trabalho SearchScheduledPosts é otimizado. NPR-26923: Hotfix do CQ-4250463
 * A pesquisa por palavras-chave no endereço não funciona na página do componente de calendário quando a comunidade AEM está definida para trabalhar com DSRP. NPR-26737: Hotfix do CQ-4258493
-* Foi implementado um link direto para o comentário, em vez da publicação principal nos detalhes do comentário, para a interface do usuário de moderação e recursos de ativação. NPR-26704: Hotfix do CQ-4251381
+* Foi implementado um link direto para o comentário em vez da publicação principal nos detalhes do comentário, para recursos de moderação da interface do usuário e ativação. NPR-26704: Hotfix do CQ-4251381
 * O conteúdo moderado por meio da seleção múltipla no console de moderação não aparece no Fluxo de Atividades. NPR-26695: Hotfix do CQ-4253244
 * A pesquisa com nome e sobrenome no campo Mensagens de comunidades em Para não retorna o resultado esperado. NPR-26385: Hotfix do CQ-4248673
 * Erro observado ao carregar um anexo diferente de imagem (por exemplo, .pdf) no Fórum. NPR-27360: Hotfix do CQ-4257753
@@ -1605,7 +1607,7 @@ Os principais destaques dos formulários do AEM 6.4.2.0 são:
 
 **Serviços de documentação**
 
-* (Form Service) O OSGI não tem suporte para XFAF. NPR-25181, Hotfix para CQ-4251313
+* (Serviço de formulário) O OSGI não tem suporte para XFAF. NPR-25181, Hotfix para CQ-4251313
 * Os caracteres no cabeçalho do arquivo PDF montado estão ficando ilegíveis. NPR-25113: Hotfix do CQ-4244682
 
 **Formulários adaptáveis**
@@ -1883,7 +1885,7 @@ O AEM 6.4.1.0 pode ser instalado no AEM 6.4 GA. Alguns dos principais destaques 
 * Ao usar a seleção suspensa &quot;Formato&quot; e selecionar formatos PNG ou JPG, o arquivo baixado é exibido como supersaturado e mais escuro que o ativo original. Hotfix do CQ-4240073
 * (DMS7) Remova o mapeamento de Tipo MIME: image_x-eps. Hotfix do CQ-4240394
 * (DMS7) Os parâmetros de carregamento para o plano de fundo de separação não passam no ipsApiService.log e, portanto, não funcionam. Hotfix do CQ-4240686
-* A atualização de Perfis de processamento de imagem criados em uma instância 6.3 a 6.4 quebra a propriedade &quot;Tipo de corte&quot;. Hotfix do CQ-4237739
+* A atualização de Perfis de processamento de imagem criados em uma instância 6.3 a 6.4 divide a propriedade &quot;Tipo de corte&quot;. Hotfix do CQ-4237739
 * (Dynamic Media) Falha no carregamento regular de ativos fora da pasta smartcut. Hotfix do CQ-4237670
 * Ajuste o código de fallback do perfil para o nome do perfil &quot;Codificação de vídeo adaptável&quot; para &quot;Adaptive_Video_Encoding&quot;. Hotfix do CQ-4237666
 * Os dados EmbedXMP são sempre definidos como &quot;ativos&quot; para o processo de geração de Ptiff. Hotfix do CQ-4234498
