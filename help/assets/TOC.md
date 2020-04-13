@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: Guia do usuário do AEM 6.4 Assets
 translation-type: tm+mt
-source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -17,14 +17,14 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 + [Melhorias na experiência do usuário](ux-improvements.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
 + Usar ativos AEM {#using}
-   + [Experiência da página inicial do AEM Assets](assets-home-page.md)
+   + [Experiência de home page do AEM Assets](assets-home-page.md)
    + [Pesquisar ativos no AEM](search-assets.md)
    + [Pesquisa em texto completo do GQL](gql-search.md)
    + [Ativos multilíngues](multilingual-assets.md)
    + [Usar ativos do Adobe Stock nos ativos AEM](aem-assets-adobe-stock.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
-   + [Fluxo de atividade na linha do tempo](activity-stream.md)
-   + [Aplicação de fluxos de trabalho a ativos](assets-workflow.md)
+   + [Atividade na linha do tempo](activity-stream.md)
+   + [Processar ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
@@ -69,10 +69,10 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
    + [Personalização e extensão de ativos](extending-assets.md)
-   + [Processamento de ativos usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
+   + [Processando ativos usando manipuladores de mídia e workflows](media-handlers.md)
    + [Estendendo a pesquisa de ativos](searchx.md)
    + [Instalar e configurar o ImageMagick para trabalhar com os ativos AEM](best-practices-for-imagemagick.md)
-   + [Integração de ativos com o fluxo de atividade](extending-activity-stream.md)
+   + [Integração de ativos com fluxo de Atividade](extending-activity-stream.md)
    + [Extensão do Editor de ativos](asseteditorx.md)
    + [API HTTP de ativos](mac-api-assets.md)
    + [Desenvolvimento de proxy de ativos](proxy.md)
@@ -84,7 +84,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Compartilhamento de link de ativos](link-sharing.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
-   + [Perfis para processar metadados, imagens e vídeos](processing-profiles.md)
+   + [Perfis para processamento de metadados, imagens e vídeos](processing-profiles.md)
    + [Metadados em cascata](cascading-metadata.md)
    + [Criar e configurar páginas do Editor de ativos](assets-finder-editor.md)
    + [Guia de dimensionamento de ativos](assets-sizing-guide.md)
@@ -140,7 +140,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Gerenciamento de coleções](managing-collections-touch-ui.md)
    + [Fazer check-in e check-out de arquivos em Ativos](check-out-and-submit-assets.md)
    + [Configurar a marcação de ativos usando o Serviço de conteúdo inteligente](config-smart-tagging.md)
-   + [Habilitando detecção de duplicatas](duplicate-detection.md)
+   + [Ativar a detecção de duplicados](duplicate-detection.md)
    + [Classificação aprimorada de ativos no AEM](enhance-sort.md)
    + [Organizar ativos digitais](organize-assets.md)
    + [Gerenciamento de ativos de vídeo](managing-video-assets.md)
