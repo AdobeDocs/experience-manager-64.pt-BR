@@ -3,7 +3,7 @@ title: Configurar ativos AEM com o Portal de marcas
 description: 'Saiba como configurar os ativos AEM com o Portal de marcas para publicar ativos e coleções no Portal de marcas. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
+source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
 
 ---
 
@@ -193,7 +193,7 @@ Verifique se você executou as seguintes etapas:
 
 >[!CAUTION]
 >
->Crie apenas uma configuração IMS válida. Não crie várias configurações IMS.
+>Crie apenas uma configuração IMS válida.
 >
 >Certifique-se de que a configuração esteja saudável. Caso a configuração não esteja funcionando, exclua-a e crie uma configuração nova e saudável.
 
