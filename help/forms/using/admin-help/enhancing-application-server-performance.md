@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
 
 ---
 
@@ -81,39 +81,39 @@ Quando o administrador do servidor de aplicativos determinar as configurações 
 1. Na tela seguinte, em Propriedades adicionais, clique em Propriedades do pool de conexões e digite um valor na caixa Máximo de conexões e na caixa Mínimo de conexões:
 1. Clique em OK ou Aplicar e em Salvar diretamente na configuração mestre.
 
-## Otimização de documentos em linha e impacto na memória JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
+## Otimizar documentos em linha e impacto na memória JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
 
-Se você estiver processando documentos de tamanho relativamente pequeno, é possível melhorar o desempenho associado à velocidade de transferência do documento e ao espaço de armazenamento. Para fazer isso, implemente as seguintes configurações de produto de formulários AEM:
+Se você estiver processando documentos de tamanho relativamente pequeno, é possível melhorar o desempenho associado à velocidade de transferência do documento e ao espaço do armazenamento. Para fazer isso, implemente as seguintes configurações de produto de formulários AEM:
 
 * Aumente o tamanho em linha máximo do documento padrão para formulários AEM para que ele seja maior que o tamanho da maioria dos documentos.
-* Para processar arquivos maiores, especifique os diretórios de armazenamento que estão em um sistema de disco de alta velocidade ou em um disco RAM.
+* Para processar arquivos maiores, especifique diretórios de armazenamento que estejam em um sistema de disco de alta velocidade ou em um disco RAM.
 
-O tamanho máximo em linha e os diretórios de armazenamento (o diretório de arquivos temporários dos formulários AEM e o diretório GDS) são configurados no console de administração.
+O tamanho máximo em linha e os diretórios de armazenamento (o diretório de arquivos temporários de formulários AEM e o diretório GDS) são configurados no console de administração.
 
-### Tamanho do documento e tamanho máximo em linha {#document-size-and-maximum-inline-size}
+### Tamanho do Documento e tamanho máximo em linha {#document-size-and-maximum-inline-size}
 
-Quando um documento enviado para processamento por formulários AEM for menor ou igual ao tamanho em linha máximo do documento padrão, o documento será armazenado no servidor em linha e o documento será serializado como um objeto de documento da Adobe. Armazenar documentos em linha pode ter benefícios significativos de desempenho. No entanto, se você estiver usando o fluxo de trabalho de formulários, o conteúdo também poderá ser armazenado no banco de dados para fins de rastreamento. Portanto, aumentar o tamanho máximo em linha pode afetar o tamanho do banco de dados.
+Quando um documento enviado para processamento por formulários AEM for menor ou igual ao tamanho em linha máximo do documento padrão, o documento será armazenado no servidor em linha e o documento será serializado como um objeto de Documento da Adobe. Armazenar documentos em linha pode ter benefícios significativos de desempenho. No entanto, se você estiver usando o fluxo de trabalho de formulários, o conteúdo também poderá ser armazenado no banco de dados para fins de rastreamento. Portanto, aumentar o tamanho máximo em linha pode afetar o tamanho do banco de dados.
 
-Um documento maior que o tamanho máximo em linha é armazenado no sistema de arquivos local. O objeto Adobe Document que é transferido de e para o servidor é apenas um ponteiro para esse arquivo.
+Um documento maior que o tamanho máximo em linha é armazenado no sistema de arquivos local. O objeto de Documento da Adobe transferido de e para o servidor é apenas um ponteiro para esse arquivo.
 
-Quando o conteúdo do documento é incorporado (ou seja, menor que o tamanho máximo em linha), o conteúdo é armazenado no banco de dados como parte da carga de serialização do documento. Portanto, aumentar o tamanho máximo em linha pode afetar o tamanho do banco de dados.
+Quando o conteúdo do documento é incorporado (ou seja, menor que o tamanho máximo em linha), o conteúdo é armazenado no banco de dados como parte da carga da serialização do documento. Portanto, aumentar o tamanho máximo em linha pode afetar o tamanho do banco de dados.
 
 **Alterar o tamanho máximo em linha**
 
 1. No console de administração, clique em Configurações > Configurações principais do sistema > Configurações.
-1. Digite um valor na caixa Tamanho máximo em linha do documento padrão e clique em OK.
+1. Digite um valor na caixa Tamanho máximo em linha do Documento padrão e clique em OK.
 
    >[!NOTE]
    >
-   >O valor da propriedade Tamanho máx. em linha do documento deve ser idêntico para o AEM Forms no ambiente JEE e o AEM Forms no pacote OSGi incluído no ambiente JEE. Essas etapas atualizaram o valor somente para o AEM Forms no ambiente JEE e não para o AEM Forms no pacote OSGi incluíram o AEM Forms no ambiente JEE.
+   >O valor da propriedade Tamanho máximo em linha do Documento deve ser idêntico para os Formulários AEM no ambiente JEE e os Formulários AEM no pacote OSGi incluídos nos Formulários AEM no ambiente JEE. Essas etapas atualizaram o valor somente para AEM Forms no ambiente JEE e não para AEM Forms no pacote OSGi incluíram AEM Forms no ambiente JEE.
 
 1. Reinicie o servidor de aplicativos com a seguinte propriedade do sistema:
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=[*valor especificado na Etapa 2*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
-   >A propriedade do sistema acima mencionada substitui o valor da propriedade Tamanho máximo em linha do documento definida para os formulários AEM no ambiente JEE e os formulários AEM no pacote OSGi incluíram os formulários AEM no ambiente JEE.
+   >A propriedade do sistema acima mencionada substitui o valor da propriedade Documento Max Inline Size definido para AEM Forms no ambiente JEE e AEM Forms no pacote OSGi incluiu AEM Forms no ambiente JEE.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Um aumento no tamanho máximo em linha requer mais memória para armazenar os do
 
 Um sistema altamente carregado que está processando muitos documentos pode saturar rapidamente a memória do heap JVM. Para evitar um OutOfMemoryError, aumente o tamanho máximo do heap da JVM em uma quantidade correspondente ao tamanho dos documentos em linha multiplicado pelo número de documentos que normalmente são executados em um determinado momento.
 
-Aumento máximo do tamanho do heap JVM = (tamanho dos documentos em linha) x (número médio de documentos processados).
+Aumento do tamanho máximo do heap JVM = (tamanho dos documentos em linha) x (número médio de documentos processados).
 
 **Cálculo do tamanho máximo do heap JVM**
 
@@ -143,15 +143,15 @@ O tamanho máximo do heap JVM deve ser aumentado em 50 MB para um total de 562 M
 
 A definição do tamanho dos documentos em linha para valores grandes aumenta o risco de um OutOfMemoryError em sistemas que são propensos a hepar a fragmentação. Para armazenar um documento em linha, a memória do heap JVM deve ter espaço contíguo suficiente. Alguns sistemas operacionais, JVMs e algoritmos de coleta de lixo estão sujeitos à fragmentação do heap. A fragmentação diminui a quantidade de espaço de heap contíguo e pode levar a um OutOfMemoryError mesmo quando existe espaço livre total suficiente.
 
-Por exemplo, operações anteriores no servidor de aplicativos deixaram o heap JVM em um estado fragmentado e o coletor de lixo não pode compactar o heap o suficiente para recuperar grandes blocos de espaço livre. Um OutOfMemoryError pode ocorrer mesmo se o tamanho máximo do heap JVM foi ajustado para um aumento no tamanho máximo em linha.
+Por exemplo, operações anteriores no servidor de aplicativos deixaram o heap JVM em um estado fragmentado e o coletor de lixo não pode compactar o heap o suficiente para recuperar grandes blocos de espaço livre. Um OutOfMemoryError pode ocorrer mesmo que o tamanho máximo do heap JVM tenha sido ajustado para um aumento no tamanho máximo em linha.
 
-Para contabilizar a fragmentação de heap, o tamanho do documento incorporado não deve ser definido acima de 0,1% do tamanho total de heap. Por exemplo, um tamanho máximo de heap JVM de 512 MB pode suportar um tamanho máximo em linha de 512 MB x 0,001 = 0,512 MB, ou 512 KB.
+Para contabilizar a fragmentação do heap, o tamanho do documento em linha não deve ser definido acima de 0,1% do tamanho total do heap. Por exemplo, um tamanho máximo de heap JVM de 512 MB pode suportar um tamanho máximo em linha de 512 MB x 0,001 = 0,512 MB, ou 512 KB.
 
 ## Aprimoramentos do WebSphere Application Server {#websphere-application-server-enhancements}
 
 Esta seção descreve as configurações específicas de um ambiente do WebSphere Application Server.
 
-### Aumento da memória máxima alocada para a JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
+### Aumentando a memória máxima alocada para a JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
 Se você estiver executando o Configuration Manager ou tentando gerar o código de implantação do Enterprise JavaBeans (EJB) usando o utilitário de linha de comando *ejbdeployment* e ocorrer um erro OutOfMemory, aumente a quantidade de memória alocada para a JVM.
 
@@ -172,20 +172,20 @@ O uso do pooling de conexão na conexão de pesquisa pode diminuir o número de 
 
 ### Configurar o Windows Server para pooling de conexão {#configure-your-windows-server-for-connection-pooling}
 
-1. Clique em Iniciar > Executar para iniciar o editor do Registro e, na caixa Abrir, digite `regedit` e clique em OK.
+1. Clique em Start > Executar para start do editor de registro e, na caixa Abrir, digite `regedit` e clique em OK.
 1. Ir para a chave do Registro `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. No painel direito do editor do Registro, localize o nome do valor TcpTimedWaitDelay. Se o nome não for exibido, selecione Editar > Novo > Valor DWORD na barra de menus para adicionar o nome.
 1. Na caixa Nome, digite `TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Se você não vir um cursor piscando e `New Value #` dentro da caixa, clique com o botão direito do mouse no painel direito, selecione Renomear e, na caixa Nome, digite `TcpTimedWaitDelay`*.*
+   >Se você não vir um cursor piscando e `New Value #` dentro da caixa, clique com o botão direito do mouse dentro do painel direito, selecione Renomear e, na caixa Nome, digite `TcpTimedWaitDelay`*.*
 
 1. Repita a etapa 4 para os nomes MaxUserPort, MaxHashTableSize e MaxFreeTcbs.
-1. Clique duas vezes dentro do painel direito para definir o valor TcpTimedWaitDelay. Em Base, selecione Decimal e, na caixa Valor, digite `30`.
-1. Clique duas vezes dentro do painel direito para definir o valor MaxUserPort. Em Base, selecione Decimal e, na caixa Valor, digite `65534`.
-1. Clique duas vezes dentro do painel direito para definir o valor MaxHashTableSize. Em Base, selecione Decimal e, na caixa Valor, digite `65536`.
-1. Clique duas vezes dentro do painel direito para definir o valor MaxFreeTcbs. Em Base, selecione Decimal e, na caixa Valor, digite `16000`.
+1. Clique com o Duplo no painel direito para definir o valor TcpTimedWaitDelay. Em Base, selecione Decimal e, na caixa Valor, digite `30`.
+1. Clique com o Duplo no painel direito para definir o valor MaxUserPort. Em Base, selecione Decimal e, na caixa Valor, digite `65534`.
+1. Clique com o Duplo no painel direito para definir o valor MaxHashTableSize. Em Base, selecione Decimal e, na caixa Valor, digite `65536`.
+1. Clique com o Duplo no painel direito para definir o valor MaxFreeTcbs. Em Base, selecione Decimal e, na caixa Valor, digite `16000`.
 
 >[!NOTE]
 >
