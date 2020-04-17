@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
@@ -144,7 +144,7 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versõ
    <td>Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.<br><br>O plug-in <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Activity Map fornecido pelo Adobe Analytics</a> agora deve ser usado.</td> 
   </tr>
   <tr>
-   <td>Componentes</td> 
+   <td>Componentes-formulários</td> 
    <td>Captcha<br /> de formulário (fundação/componentes/formulário/captcha)</td> 
    <td>Use o componente ReCaptcha pelo Google</td> 
   </tr>
@@ -185,11 +185,6 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versõ
   </tr>
   <tr>
    <td>Forms</td> 
-   <td>O suporte para o serviço AEM Captcha padrão em formulários adaptativos foi removido. </td> 
-   <td>Em vez disso, use ReCaptcha pelo Google.</td> 
-  </tr>
-  <tr>
-   <td>Forms</td> 
    <td>O suporte para imagens nos fragmentos do documento foi removido. </td> 
    <td>As comunicações interativas fornecem a capacidade de usar imagens diretamente em canais impressos e da Web.<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versõ
     <td>Forms</td> 
     <td>Formulários AEM removidos na landing page específica JEE.</td> 
     <td>O AEM Forms na landing page JEE é substituído pela landing page AEM (/aem/start.html) </td>  
-  </tr>
-   <tr>
-   <td>Forms</td> 
-   <td>Remoção do suporte para Captcha padrão</td> 
-   <td>Use o serviço reCAPTCHA do Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
