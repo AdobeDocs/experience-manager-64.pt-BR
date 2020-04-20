@@ -3,7 +3,7 @@ title: Formatos de arquivo suportados no AEM Assets
 description: Lista de formatos de arquivos e tipos MIME suportados pelo AEM Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 171186251e675094e716931b64c77e7897c03ca7
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -54,7 +54,7 @@ Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
-| PGM |  |  |  |  |  |
+| PFM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
 | PSD **‡** | ✓ |  |  |  |  |
@@ -231,10 +231,6 @@ Por padrão, o AEM detecta o tipo de arquivo usando a extensão de arquivo. O AE
 
 Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
-Consulte [Configurar o suporte](config-dynamic.md)a parâmetros de trabalho MIME para fazer upload.
-
-Consulte também [Habilitar suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)a parâmetros de trabalho de upload de ativos/Scene7 baseados em tipos MIME.
-
 | Extensão de arquivo | Tipo MIME/tipo de mídia da Internet | Valor de jobParam padrão | Valor jobParam permitido |
 |---|---|---|---|
 | Imagem | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | O jobParam padrão se aplica a todos os ativos do tipo mime de imagem.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
@@ -295,4 +291,6 @@ Consulte também [Habilitar suporte](/help/sites-administering/scene7.md#enablin
 
 >[!MORELIKETHIS]
 >
->[Habilite o suporte](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)ao parâmetro de trabalho de upload do tipo MIME Assets/Scene7.
+>* [Habilite o suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)ao parâmetro de trabalho de upload do tipo MIME Assets/Scene7.
+>* [Configure o tipo de MIME baseado no suporte](config-dynamic.md)de parâmetros de trabalho de upload.
+
