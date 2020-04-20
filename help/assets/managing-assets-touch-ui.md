@@ -4,7 +4,7 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ Algumas limitações do recurso são:
 
 ## Pré-visualizações {#previewing-assets}
 
-Consulte também [Visualizar ativos de mídia dinâmica.](previewing-assets.md)
-
 **Para pré-visualização de ativos**:
 
 1. Na interface do usuário Ativos, navegue até o local do ativo que deseja pré-visualização.
@@ -331,6 +329,12 @@ Consulte também [Visualizar ativos de mídia dinâmica.](previewing-assets.md)
    Toque no botão **[!UICONTROL Redefinir]** para redefinir a visualização para o tamanho original.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [Pré-visualização de ativos](/help/assets/previewing-assets.md)de mídia dinâmica.
+>* [subativos](managing-linked-subassets.md#viewing-subassets)de Visualização.
+
 
 ## Editar propriedades {#editing-properties}
 
