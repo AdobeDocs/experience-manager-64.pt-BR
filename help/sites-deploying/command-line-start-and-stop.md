@@ -1,8 +1,8 @@
 ---
 title: Início e interrupção da linha de comando
 seo-title: Início e interrupção da linha de comando
-description: Saiba como iniciar e parar o AEM na linha de comando.
-seo-description: Saiba como iniciar e parar o AEM na linha de comando.
+description: Saiba como start e parar o AEM na linha de comando.
+seo-description: Saiba como start e parar o AEM na linha de comando.
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 ---
 
@@ -19,14 +19,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Iniciar o Adobe Experience Manager na linha de comando {#starting-adobe-experience-manager-from-the-command-line}
 
-O `start` script está disponível no diretório &lt;cq-installation>/bin ** . As versões Unix e Windows são fornecidas. O script inicia a instância instalada no diretório *&lt;cq-installation>* .
+O `start` script está disponível no diretório &lt;cq-installation>/bin ** . As versões Unix e Windows são fornecidas. O script start a instância instalada no diretório *&lt;cq-installation>* .
 
-Essas duas versões suportam uma lista de variáveis de ambiente que podem ser usadas para iniciar e ajustar a instância do AEM.
+Essas duas versões suportam uma lista de variáveis de ambiente que podem ser usadas para start e ajuste da instância do AEM.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Variável de ambiente </strong></td> 
+   <td><strong>variável Ambiente </strong></td> 
    <td><strong>Descrição </strong></td> 
   </tr> 
   <tr> 
@@ -74,7 +74,7 @@ Essas duas versões suportam uma lista de variáveis de ambiente que podem ser u
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Exemplo de script de início de plataforma Unix {#unix-platform-start-script-example}
+### Exemplo de script de start da plataforma Unix {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -82,18 +82,18 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->O script start inicia o Quickstart do AEM instalado na pasta &lt;cq-installation>/app ** .
+>O script de start inicia o Quickstart do AEM instalado na pasta &lt;cq-installation>/app ** .
 
 ## Stopping Adobe Experience Manager {#stopping-adobe-experience-manager}
 
-Para interromper o AEM, siga um destes procedimentos:
+Para interromper o AEM, execute um dos procedimentos a seguir:
 
 * Dependendo da plataforma usada:
 
    * Se você iniciou o AEM a partir de um script ou da linha de comando, pressione **Ctrl+C** para encerrar o servidor.
-   * Se você tiver usado o script de inicialização no UNIX, deverá usar o script stop para interromper o AEM.
+   * Se você tiver usado o script de start no UNIX, deverá usar o script stop para interromper o AEM.
 
-* Se você começou o AEM clicando duas vezes no arquivo jar, clique no botão **Ligado** na janela de inicialização (o botão em seguida muda para **Desligado**) para desligar o servidor.
+* Se você começou o AEM clicando no arquivo jar com o duplo, clique no botão **Ligado** na janela de inicialização (o botão em seguida muda para **Desligado**) para desligar o servidor.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -122,4 +122,3 @@ Caso deseje pré-configurar o repositório (sem relocá-lo), você só terá que
 * criar `bootstrap.properties` e definir `repository.config`
 
 Novamente, antes de iniciar a instalação real.
-
