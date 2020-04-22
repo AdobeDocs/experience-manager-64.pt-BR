@@ -3,7 +3,7 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do AEM para ativar funcionalidades individuais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -321,7 +321,7 @@ O Editor de Rich Text usa um elemento DOM de container com uma ID `CQrte` que po
 
    * **Nome** `cssName`
    * **Tipo** `String`
-   * **Valor** O nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
+   * **Valor** O nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
 
 1. Adicione a propriedade `text` ao mesmo nó; isso define o texto mostrado na caixa de seleção:
 
@@ -572,20 +572,18 @@ Se você especificar o CSS e a string de estilo no código, a classe CSS terá p
 Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a `/en/` sucursal é verificada em inglês, a `/de/` sucursal em alemão.
 
 >[!NOTE]
-A mensagem &quot;Falha na verificação ortográfica&quot;. é exibido se uma verificação for feita para um idioma que não está instalado.
+A mensagem `Spell checking failed` é exibida se uma verificação for feita para um idioma que não está instalado. Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
 
-Uma instalação padrão do AEM inclui os dicionários para:
+Uma instalação padrão do AEM inclui os dicionários para inglês americano (`en_us`) e inglês britânico (`en_gb`). Para adicionar mais dicionários, siga estas etapas.
 
-* Inglês Americano (pt_br)
-* Inglês britânico (en_gb)
+1. Navegue até a página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
->[!NOTE]
-Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
+1. Execute um dos procedimentos a seguir para encontrar um dicionário de sua escolha de idioma:
 
-Para adicionar mais dicionários, se necessário, siga estas etapas.
+   * Procure o dicionário de sua escolha de idioma. Na página do dicionário, localize o link para a página da Web da fonte original ou do autor. Localize os arquivos de dicionário da v2.x nessa página.
+   * Procure arquivos de dicionário v2.x em [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. Navegue até a página [http://download.services.openoffice.org/contrib/dictionaries/](http://download.services.openoffice.org/contrib/dictionaries/).
-1. Selecione o idioma necessário e baixe o arquivo ZIP com as definições de ortografia. Extraia o conteúdo do arquivo em seu sistema de arquivos.
+1. Baixe o arquivo com as definições de ortografia. Extraia o conteúdo do arquivo em seu sistema de arquivos.
 
    >[!CAUTION]
    Somente os dicionários no `MySpell` formato para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos de arquivamento, recomenda-se verificar o arquivo após o download.
@@ -594,9 +592,8 @@ Para adicionar mais dicionários, se necessário, siga estas etapas.
 1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você start digitar um texto.
-Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico da barra de ferramentas. O RTE verifica a ortografia de palavras e realça palavras com ortografia incorreta.
-Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto muda e as palavras com ortografia incorreta não são mais destacadas. Para executar o verificador ortográfico, toque/clique novamente no botão Verificador ortográfico.
+O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você start digitar um texto. Para executar o verificador ortográfico, clique em Verificador [!UICONTROL ortográfico] na barra de ferramentas. O RTE verifica a ortografia das palavras e realça as palavras com erro ortográfico.
+Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto muda e as palavras com erros ortográficos não serão mais destacadas. Para executar o verificador ortográfico, toque/clique novamente no botão Verificador ortográfico.
 
 ## Configurar o tamanho do histórico para ações de desfazer e refazer {#undohistory}
 
@@ -693,12 +690,12 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
       * **Nome** `cssInternal`
       * **Tipo** `String`
-      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
+      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
    * Estilo CSS para links externos
 
       * **Nome** `cssExternal`
       * **Tipo** `String`
-      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
+      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
    * Matriz de **protocolos** válidos (incluindo https://, https:// file://, mailto:, entre outros)
 
       * **Nome** `protocols`
