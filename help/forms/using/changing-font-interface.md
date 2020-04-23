@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -40,7 +40,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
    1. Para adicionar a família de fontes em linha para o elemento HTML, copie o `/libs/ws/js/runtime/templates/appnavigation.html` arquivo para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
-      Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html como segue:
+      Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
       ```
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
@@ -74,8 +74,6 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
 1. Reinicie o espaço de trabalho e limpe o cache do navegador para que as alterações fiquem visíveis.
 
-![](assets/change_font_before.png) change_font_before **** Figura: Barra de navegação *superior antes da personalização de fontes*
+![change_font_before](assets/change_font_before.png)**Figura:** Barra de navegação *superior antes da personalização de fontes*
 
-![](assets/change_font_after.png) change_font_after **** Figura: Barra de navegação *superior após personalização da primeira guia*
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+![change_font_after](assets/change_font_after.png)**Figura:** Barra de navegação *superior após personalização da primeira guia*
