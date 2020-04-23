@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
 
 ## Adicionar anexos em formulários sincronizados com o servidor de fluxo de trabalho do AEM Forms (AEM Forms no JEE) {#adding-annotations}
 
-O aplicativo AEM Forms permite anexar imagens, notas com script e notas de texto ao formulário sincronizado com o servidor AEM Forms JEE. Se o formulário for carregado de um servidor de fluxo de trabalho do AEM Forms, seus anexos serão adicionados ao formulário. Você pode tocar no botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação vermelha especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão de notificações vermelhas. Se não houver anexos no formulário, quando você tocar no botão de anexos ![anexar](assets/attch.png), você obterá opções para anexar fotos ou scripts.
+O aplicativo AEM Forms permite anexar imagens, notas com script e notas de texto ao formulário sincronizado com o servidor JEE do AEM Forms. Se o formulário for carregado de um servidor de fluxo de trabalho do AEM Forms, seus anexos serão adicionados ao formulário. Você pode tocar no botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação vermelha especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão de notificações vermelhas. Se não houver anexos no formulário, quando você tocar no botão de anexos ![anexar](assets/attch.png), você obterá opções para anexar fotos ou scripts.
 
 Suas opções são:
 
@@ -68,7 +68,7 @@ A opção **Anotações** permite adicionar rabiscos à mão livre e anexos de t
 1. Na interface do usuário do Notes que é iniciada, capture um script à mão livre.
 
    ![Interface do script](assets/scribble-ui.png)
-   **** Figura: *Rabisco*
+   **Figura:** *Rabisco*
 
    Você pode usar as seguintes opções na interface do Scribble:
 
@@ -84,6 +84,4 @@ Os anexos para formulários móveis sincronizados com os servidores OSGi do AEM 
 
 Os anexos de nível de formulário não são suportados para formulários adaptáveis carregados no aplicativo a partir de um servidor OSGi do AEM Forms. Para anexar imagens ou notas de texto, ative os anexos de nível de campo no formulário ao criá-lo. Arraste e solte o componente de anexo de arquivo do navegador de componentes no campo.
 
-No caso de formulários adaptáveis, é possível exibir os arquivos anexados no documento de registro (DoR). Consulte [Gerar documento de registro para formulários](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adaptáveis não XFA.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+No caso de formulários adaptáveis, você pode visualização os arquivos anexados no documento de registro (DoR). Consulte [Gerar Documento de registro para formulários](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adaptáveis não XFA.
