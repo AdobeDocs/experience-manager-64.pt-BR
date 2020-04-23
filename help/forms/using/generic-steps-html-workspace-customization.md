@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -20,9 +20,9 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 As etapas genéricas para executar qualquer personalização são:
 
 1. Faça logon no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Crie uma pasta chamada `ws`em `/apps`, se ela não existir. Clique em **[!UICONTROL Salvar tudo]**.
-1. Navegue até `/apps/ws`e navegue até a guia Controle **[!UICONTROL de]** acesso.
-1. Na lista Controle **[!UICONTROL de]** acesso, clique em **[!UICONTROL +]** para adicionar uma nova entrada. Clique **[!UICONTROL +]** novamente.
+1. Crie uma pasta com o nome `ws`em `/apps`, se ela não existir. Clique em **[!UICONTROL Salvar tudo]**.
+1. Navegue até `/apps/ws`a guia **[!UICONTROL Controle de acesso]** e navegue até ela.
+1. Na lista do **[!UICONTROL Controle de acesso]** , clique em **[!UICONTROL +]** para adicionar uma nova entrada. Clique **[!UICONTROL +]** novamente.
 1. Pesquise e selecione o Principal **[!UICONTROL PERM_WORKSPACE_USER]** .
 
    ![Selecione o principal PERM_WORKSPACE_USER como parte das etapas genéricas para personalizar a área de trabalho HTML](assets/perm_workspace_user.png)
@@ -58,7 +58,7 @@ As etapas genéricas para executar qualquer personalização são:
 
    >[!NOTE]
    >
-   >Insira a entrada do arquivo CSS definido pelo usuário após a entrada de newStyle.css, como mostrado acima.
+   >Coloque a entrada do arquivo CSS definido pelo usuário após a entrada de newStyle.css, como mostrado acima.
 
 1. No arquivo /apps/ws/html.jsp, altere de
 
@@ -74,9 +74,9 @@ As etapas genéricas para executar qualquer personalização são:
 
 1. Faça o seguinte:
 
-   1. Crie uma pasta chamada `js`em `/apps/ws`. Clique em **[!UICONTROL Salvar tudo]**.
-   1. Crie uma pasta chamada `libs`em `/apps/ws/js`. Clique em **[!UICONTROL Salvar tudo]**.
-   1. Crie uma pasta chamada `jqueryui`em `/apps/ws/js/libs`. Clique em **[!UICONTROL Salvar tudo]**.
+   1. Crie uma pasta com o nome `js`em `/apps/ws`. Clique em **[!UICONTROL Salvar tudo]**.
+   1. Crie uma pasta com o nome `libs`em `/apps/ws/js`. Clique em **[!UICONTROL Salvar tudo]**.
+   1. Crie uma pasta com o nome `jqueryui`em `/apps/ws/js/libs`. Clique em **[!UICONTROL Salvar tudo]**.
    1. Copie `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` para `/apps/ws/js/libs/jqueryui`. Clique em **[!UICONTROL Salvar tudo]**.
 
 1. Faça o seguinte para personalizações de HTML:
@@ -90,4 +90,3 @@ As etapas genéricas para executar qualquer personalização são:
 
    Acesse o URL `https://[server]:[port]/lc/ws` e faça logon com as credenciais de administrador/senha. O navegador é redirecionado para `https://[server]:[port]/lc/apps/ws/index.html`.
 
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
