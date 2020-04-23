@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Personalização do tema {#theme-customization}
 
-Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência específica da organização ao aplicativo AEM Forms. Por exemplo, você pode alterar a cor e a altura do plano de fundo de tarefas ou Pontos de partida. O exemplo a seguir fornece instruções para alterar:
+Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência específica da organização ao aplicativo AEM Forms. Por exemplo, é possível alterar a cor e a altura do plano de fundo de tarefas ou Pontos de partida. O exemplo a seguir fornece instruções para alterar:
 
 * instruções de exibição no lugar da descrição
 * número de rotas de exibição
@@ -83,4 +83,3 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
    O aplicativo AEM Forms agora exibe instruções em vez de descrição.
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
