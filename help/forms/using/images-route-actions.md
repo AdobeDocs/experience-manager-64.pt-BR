@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -42,9 +42,9 @@ Para personalizar as imagens usadas em ações de rota, execute as etapas descri
        }
    ```
 
-## Pop-up de ação da tarefa Lista de Tarefas {#task-list-task-action-popup}
+## pop-up de ação da tarefa da Lista da Tarefa {#task-list-task-action-popup}
 
-1. Crie um pop-up de ação de lista de tarefas, consulte [Criar código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)de área de trabalho do AEM Forms. É necessário usar o pacote dev.
+1. Crie um pop-up de ação de lista de tarefa, consulte [Criar código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)de área de trabalho do AEM Forms. É necessário usar o pacote dev.
 
 1. Copie `/libs/ws/js/runtime/templates/task.html` para `/apps/ws/js/runtime/templates/task.html`.
 
@@ -114,7 +114,7 @@ To
             <%}%>
 ```
 
-## Pop-up de ação da tarefa Detalhes da Tarefa {#task-details-task-action-popup}
+## pop-up de ação de tarefa Detalhes da Tarefa {#task-details-task-action-popup}
 
 1. Copie `/libs/ws/js/runtime/templates/taskdetails.html` para `/apps/ws/js/runtime/templates/taskdetails.html`.
 
@@ -172,4 +172,3 @@ To
 1. Substitua o texto pelo seguinte:\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
 
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
