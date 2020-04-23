@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Ativar o registro em log para formulários HTML5 {#enable-logging-for-html-forms}
 
-Você pode configurar o utilitário logger para começar a criar registros para formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível conforme suas necessidades. Os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar registros para ambos os componentes.
+Você pode configurar o utilitário logger para start criando registros para formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível conforme suas necessidades. Os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar registros para ambos os componentes.
 
 ## Configuração do registro no servidor {#configuring-server-side-logging}
 
@@ -52,7 +52,7 @@ Usando esse método, você pode gerar logs para uma solicitação específica. O
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
-A configuração do log é composta pelo nível do log e pela categoria do agente de log.
+A configuração do log é composta pelo nível do log e pela categoria do logger.
 
 #### Destino do registro {#log-destination}
 
@@ -120,7 +120,7 @@ A configuração do log é composta pelo nível do log e pela categoria do agent
  </tbody> 
 </table>
 
-#### Categorias do logarista {#logger-categories}
+#### Categorias do registrador {#logger-categories}
 
 <table> 
  <tbody> 
@@ -145,7 +145,7 @@ A configuração do log é composta pelo nível do log e pela categoria do agent
 
 #### Configuração do registro {#log-configuration}
 
-No URL do log, o parâmetro da string de consulta de configuração do log é definido da seguinte forma:
+No URL do log, o parâmetro da string de configuração do query é definido da seguinte forma:
 
 `{destination}-{a level}-{b level}-{c level}`
 
@@ -159,7 +159,7 @@ Por exemplo:
   </tr> 
   <tr> 
    <td>2-a4-b5-c6<br type="_moz" /> </td> 
-   <td>Destino: Nível xfa do servidor<br /> : Nível de INFO<br /> xfaView: Nível DEBUG<br /> xfaPerf:TRAÇO</td> 
+   <td>Destino: Nível xfa do servidor<br /> : Nível de INFO<br /> xfaView: Nível DEBUG<br /> xfaPerf: TRAÇO</td> 
   </tr> 
  </tbody> 
 </table>
@@ -175,7 +175,7 @@ Por exemplo:
 
 Se você usar o Configuration Manager para ativar o registro, os registros serão gerados para cada solicitação de renderização até que o registro seja desabilitado novamente.
 
-1. Faça logon no CQ Configuration Manager em `https://[server]:[port]/system/console/configMgr` e faça logon com credenciais de administrador.
+1. Faça logon no CQ Configuration Manager em `https://[server]:[port]/system/console/configMgr` e faça logon com as credenciais de administrador.
 1. Procure e clique em Configurações **de formulários** móveis.
 1. Na caixa de texto Opções de depuração, digite as configurações de log conforme descrito na seção anterior, por exemplo, **2-a4-b5-c6**
 
@@ -206,4 +206,3 @@ Para alterar o local e o nome do arquivo de log:
 
 1. Altere o **Logger** para **HTMLFormsPerfLogger** e clique em **Salvar**.
 
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
