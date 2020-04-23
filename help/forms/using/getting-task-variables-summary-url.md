@@ -1,6 +1,6 @@
 ---
-title: Obtendo variáveis de tarefa no URL de resumo
-seo-title: Obtendo variáveis de tarefa no URL de resumo
+title: Obtendo variáveis de Tarefa no URL de resumo
+seo-title: Obtendo variáveis de Tarefa no URL de resumo
 description: Como reutilizar as informações sobre uma tarefa e gerar um URL de resumo para resumir ou descrever uma tarefa.
 seo-description: Como reutilizar as informações sobre uma tarefa e gerar um URL de resumo para resumir ou descrever uma tarefa.
 uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# Obtendo variáveis de tarefa no URL de resumo {#getting-task-variables-in-summary-url}
+# Obtendo variáveis de Tarefa no URL de resumo {#getting-task-variables-in-summary-url}
 
-A página de resumo exibe informações relacionadas à tarefa. Este artigo descreve como você pode reutilizar informações relacionadas a tarefas na página de resumo.
+A página de resumo exibe informações relacionadas à tarefa. Este artigo descreve como você pode reutilizar informações relacionadas à tarefa na página de resumo.
 
 Nessa orquestração de amostra, um funcionário envia um formulário de solicitação de licença. O formulário de inscrição será então enviado ao gerente do funcionário para aprovação.
 
@@ -55,7 +55,7 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
 
 1. Modifique a orquestração para extrair as quatro propriedades dos dados de formulário enviados. Depois disso, crie um nó no CRX do tipo **Funcionários/Aplicativo** Pto, com as propriedades preenchidas.
 
-   1. Crie um processo para **criar um resumo** PTO e use-o como um subprocesso antes da operação **Atribuir tarefa** em sua orquestração.
+   1. Crie um processo para **criar um resumo** PTO e use-o como um subprocesso antes da operação **Atribuir Tarefa** em sua orquestração.
    1. Defina **funcionárioName**, **funcionárioID**, **ptoReason**, **totalDays** e **nodeName** como variáveis de entrada no novo processo. Essas variáveis serão passadas como dados de formulário enviados.
 
       Defina também uma variável de saída **ptoNodePath **que será usada ao configurar o URL de resumo.
@@ -73,7 +73,7 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
       * **Caminho** da pasta: O caminho onde o novo nó CRX é criado. Defina o caminho como **/conteúdo**.
       * **Nome** do nó: Atribua a variável de entrada nodeName a este campo. Esta é uma string de nome de nó exclusiva.
       * **Tipo** de nó: Defina o tipo como **nt:unstruct**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O ndoePath seria a saída final do processo de **criação de resumo PTO** .
-   1. Passe os dados de formulário enviados (**funcionárioName**, **funcionárioID**, **ptoReason** e **totalDays**) como entrada para o novo processo de **criação do resumo** PTO. Use a saída como **ptoSummaryNodePath**.
+   1. Passe os dados de formulário enviados (**funcionárioName**, **funcionárioID**, **ptoReason** e **totalDays**) como entrada para o novo processo de **criação do resumo** PTO. Obtenha a saída como **ptoSummaryNodePath**.
 
 
 1. Defina o URL de resumo como uma expressão XPath que contém os detalhes do servidor junto com **ptoSummaryNodePath**.
@@ -84,4 +84,3 @@ Na área de trabalho do AEM Forms, quando você abre uma tarefa, o URL de resumo
 
 O layout de resumo pode ser alterado sem modificar o processo. O renderizador HTML exibe o resumo adequadamente.
 
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
