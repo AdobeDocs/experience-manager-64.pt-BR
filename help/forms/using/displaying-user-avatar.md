@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Exibir o avatar do usuário {#displaying-the-user-avatar}
 
-O avatar do usuário conectado é exibido no canto superior direito da área de trabalho do AEM Forms. Além disso, os avatares dos relatórios diretos na hierarquia organizacional são exibidos na Visualização do gerente. Você pode configurar o espaço de trabalho do AEM Forms para escolher as imagens de usuário do banco de dados, por exemplo, o servidor LDAP.
+O avatar do usuário conectado é exibido no canto superior direito da área de trabalho do AEM Forms. Além disso, os avatares dos relatórios diretos na hierarquia organizacional são exibidos na Visualização do Gerente. Você pode configurar o espaço de trabalho do AEM Forms para escolher as imagens de usuário do banco de dados, por exemplo, o servidor LDAP.
 
 >[!NOTE]
 >
@@ -81,7 +81,5 @@ O avatar do usuário conectado é exibido no canto superior direito da área de 
    </component>
    ```
 
-1. Implante o DSC pelo Workbench. Reinicie o `ProcessManagementClientSessionService` serviço.
+1. Implante o DSC por meio do Workbench. Reinicie o `ProcessManagementClientSessionService` serviço.
 1. Talvez seja necessário atualizar seu navegador ou fazer logout/login com o usuário novamente.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
