@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -37,7 +37,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
 1. Copie a `i18n` pasta:
 
-   * from `/libs/livecycle/core/components/login`
+   * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
 1. Exclua todas as pastas dentro `i18n` exceto uma, digamos `en`.
@@ -51,7 +51,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
 1. Copiar `login.jsp`:
 
-   * from `/libs/livecycle/core/components/login`
+   * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
 1. Modifique o seguinte trecho de código para `/apps/livecycle/core/components/login/login.jsp`:
@@ -180,16 +180,16 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
 1. Copiar `i18n` pasta:
 
-   * from `/libs/livecycle/core/components/login`
+   * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
-1. Agora, modifique o valor da propriedade `sling:message` do nó (na pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita por meio da chave mencionada no valor da `sling:key` propriedade do nó.
+1. Agora, modifique o valor da propriedade `sling:message` do nó (sob a pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita por meio da chave mencionada no valor da `sling:key` propriedade do nó.
 1. Para adicionar um novo par de valores chave, execute as seguintes ações. Verifique um exemplo na captura de tela a seguir.
 
    1. Crie um nó do tipo `sling:MessageEntry`, ou copie um nó existente e renomeie-o em todas as pastas de localidade.
    1. Copiar `login.jsp` :
 
-      * from `/libs/livecycle/core/components/login`
+      * de `/libs/livecycle/core/components/login`
       * para `/apps/livecycle/core/components/login`
    1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar o texto recém-adicionado.
    ![captura](assets/capture.png)
@@ -215,7 +215,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
 1. Copy `login` node:
 
-   * from `/libs/livecycle/core/content`
+   * de `/libs/livecycle/core/content`
    * para `/apps/livecycle/core/content`
 
 1. Excluir arquivos `login.js` e `jquery-1.8.0.min.js`, do nó `/apps/livecycle/core/content/login.`
@@ -225,7 +225,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
    1. Adicionar novos estilos a `/apps/livecycle/core/content/login/login.css`
    1. Copiar `login.jsp`
 
-      * from `/libs/livecycle/core/components/login`
+      * de `/libs/livecycle/core/components/login`
       * para `/apps/livecycle/core/components/login`
    1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar os estilos recém-adicionados.
 
@@ -261,7 +261,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 1. Adicione novas imagens em `/apps/livecycle/core/content/login`. Para adicionar imagem:
 
    1. Instale o cliente WebDAV.
-   1. Navegue até a `/apps/livecycle/core/content/login` pasta, usando o cliente webDAV.  Para obter mais informações, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navegue até a `/apps/livecycle/core/content/login` pasta, usando o cliente webDAV. Para obter mais informações, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
    1. Adicione novas imagens.
 
 1. Adicione novos estilos `/apps/livecycle/core/content/login/login.css,` correspondentes a novas imagens adicionadas em `/apps/livecycle/core/content/login`.
@@ -288,5 +288,3 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
    
    <div class="newLginContainerBkg">
    ```
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
