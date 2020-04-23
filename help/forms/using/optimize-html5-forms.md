@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -56,7 +56,7 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
    >Quando você usa um proxy, as seguintes alterações de configuração são necessárias:
    > 
    >* Acesso: *https://&lt;servidor>:&lt;porta>/system/console/configMgr*
-   * Editar a configuração para o Filtro do Apache Sling Referrer
+   * Editar a configuração do Filtro de Quem indicou Apache Sling
    * Em Permitir hosts, adicione a entrada para o servidor proxy
 
 
@@ -82,4 +82,3 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
 1. Para acessar o servidor AEM, use https://[Apache_server]:80.
 
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
