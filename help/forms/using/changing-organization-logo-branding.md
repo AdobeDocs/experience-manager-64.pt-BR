@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
 
 # Alteração do logotipo da organização para marcas {#changing-the-organization-logo-for-branding}
 
-O logotipo da organização é exibido no canto superior esquerdo da área de trabalho do AEM Forms. Para atualizar o logotipo, siga as etapas [Genéricas da personalização](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) da área de trabalho do AEM Forms e siga as seguintes etapas.
+O logotipo da organização é exibido no canto superior esquerdo da área de trabalho do AEM Forms. Para atualizar o logotipo, siga as etapas [Genéricas da personalização](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) da área de trabalho do AEM Forms e, em seguida, siga as etapas a seguir.
 
 1. Crie um logotipo e nomeie o arquivo como `NewWorkspace.png`. Coloque o arquivo de imagem na pasta /apps/ws/images usando um cliente WebDAV.
 
@@ -34,9 +34,6 @@ O logotipo da organização é exibido no canto superior esquerdo da área de tr
    ```css
    #logo {
    
-          background: url(../images/NewWorkspace.png) no-repeat 14px 11px;
-   
-   }
+          background: url(../images/NewWorkspace.png) no-repeat 14px 11px; 
+         }
    ```
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
