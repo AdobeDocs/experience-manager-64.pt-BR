@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ Para gerar um código minified para alterações semânticas, siga estas etapas.
    >
    >Consulte [Introdução à área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) Personalizar formulários AEM para obter mais detalhes sobre os pacotes.
 
-1. Atualize os caminhos em `main.js` client-html/src/main/webapp/js para obter modelos/visualizações adicionados/atualizados.
+1. Atualize os caminhos em `main.js` client-html/src/main/webapp/js para modelos/visualizações adicionados/atualizados.
 
    Por exemplo, adição de um novo modelo do Sharequeue, digamos mySharequeue, alterar:
 
@@ -72,5 +72,3 @@ Para gerar um código minified para alterações semânticas, siga estas etapas.
 >[!NOTE]
 >
 >Se você minimizar, a atualização será afetada.
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
