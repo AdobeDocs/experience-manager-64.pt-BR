@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -29,17 +29,17 @@ A tabela a seguir especifica o suporte ao recurso fornecido para formulários HT
   <tr>
    <td>Códigos de barras<br /> </td> 
    <td>Não disponível no nível da interface do usuário. </td> 
-   <td>Suportado</td> 
+   <td>Compatível</td> 
   </tr>
   <tr>
    <td>Campo de assinatura<br /> </td> 
-   <td><strong>Assinaturas</strong> digitais não são suportadas, mas um novo campo de assinatura <strong></strong> Scribble é adicionado para assinaturas como em papel. É possível escrever sua assinatura no formulário usando o campo Assinatura <strong>em forma de script</strong> . A assinatura é salva no formulário como uma imagem. É possível salvar informações de localização geográfica no campo Assinatura <strong></strong> em script.</td> 
+   <td><strong>Assinaturas</strong> digitais não são suportadas, mas um novo campo de assinatura <strong></strong> Scribble é adicionado para assinaturas como em papel. É possível escrever sua assinatura no formulário usando o campo Assinatura <strong>em forma de script</strong> . A assinatura é salva no formulário como uma imagem. É possível salvar informações de localização geográfica no campo Assinatura <strong></strong> em forma de script.</td> 
    <td>Campo de assinatura disponível para Assinaturas <strong>digitais</strong>.</td> 
   </tr>
   <tr>
    <td>Mesclagem de dados</td> 
-   <td>Suportado</td> 
-   <td>Suportado</td> 
+   <td>Compatível</td> 
+   <td>Compatível</td> 
   </tr>
   <tr>
    <td>Imagens</td> 
@@ -48,13 +48,13 @@ A tabela a seguir especifica o suporte ao recurso fornecido para formulários HT
   </tr>
   <tr>
    <td>Paginação<br /> </td> 
-   <td><p>Um formulário HTML5 é dividido em painéis e caixas para dar uma aparência semelhante aos formulários PDF. O tamanho da página é calculado dinamicamente. Se todo o conteúdo de uma página em um formulário HTML5 for excluído ou marcado como oculto, a página em branco ficará oculta e um espaço vazio (espaço em branco) não será exibido entre as páginas acima e abaixo da página em branco.</p> <p>Se os scripts ou mesclagens de dados adicionarem conteúdo a uma página, o tamanho da página será expandido para acomodar o conteúdo recém-adicionado. Nenhuma nova página é adicionada ao formulário para acomodar o conteúdo recém-adicionado. </p> <p><strong></strong> Observação: Quando todo o conteúdo de uma página em um formulário HTML5 é excluído ou marcado como oculto, a página em branco (espaço em branco) permanece visível entre a 1ª e a 2ª página, mas não entre quaisquer outras páginas.</p> </td> 
+   <td><p>Um formulário HTML5 é dividido em painéis e caixas para dar a ele uma aparência semelhante aos formulários PDF. O tamanho da página é calculado dinamicamente. Se todo o conteúdo de uma página em um formulário HTML5 for excluído ou marcado como oculto, a página em branco ficará oculta e um espaço vazio (espaço em branco) não será exibido entre as páginas acima e abaixo da página em branco.</p> <p>Se os scripts ou mesclagens de dados adicionarem conteúdo a uma página, o tamanho da página será expandido para acomodar o conteúdo recém-adicionado. Nenhuma nova página é adicionada ao formulário para acomodar o conteúdo recém-adicionado. </p> <p><strong>Observação:</strong> Quando todo o conteúdo de uma página em um formulário HTML5 é excluído ou marcado como oculto, a página em branco (espaço em branco) permanece visível entre a 1ª e a 2ª página, mas não entre quaisquer outras páginas.</p> </td> 
    <td>A paginação no PDF depende da união do conteúdo de dados ou do conteúdo do usuário e a contagem de páginas é aumentada/reduzida com base nele.</td> 
   </tr>
   <tr>
    <td>Cabeçalhos/rodapés </td> 
-   <td>Suportado. <br /> <br /> Como os formulários móveis HTML5 não suportam quebras de página, os cabeçalhos e rodapés são exibidos apenas uma vez. Entretanto, é possível configurá-los no layout para serem exibidos em vários lugares na visualização de formulários móveis.<br /> </td> 
-   <td>Suportado.</td> 
+   <td>Compatível. <br /> <br /> Como os formulários móveis HTML5 não suportam quebras de página, os cabeçalhos e rodapés são exibidos apenas uma vez. Entretanto, é possível configurá-los no layout para serem exibidos em vários lugares na pré-visualização de formulários móveis.<br /> </td> 
+   <td>Compatível.</td> 
   </tr>
   <tr>
    <td>Widgets personalizados</td> 
@@ -63,7 +63,7 @@ A tabela a seguir especifica o suporte ao recurso fornecido para formulários HT
   </tr>
   <tr>
    <td>API de script XFA</td> 
-   <td>Suporta as construções de script XFA mais usadas. Para obter uma lista detalhada das construções compatíveis, consulte suporte <a href="/help/forms/using/scripting-support.md">a</a>scripts.</td> 
+   <td>Suporta as construções de script XFA mais usadas. Para obter detalhes sobre a lista de construções compatíveis, consulte suporte <a href="/help/forms/using/scripting-support.md">a</a>scripts.</td> 
    <td>Suporta todas as construções de script XFA.</td> 
   </tr>
   <tr>
@@ -73,12 +73,11 @@ A tabela a seguir especifica o suporte ao recurso fornecido para formulários HT
   </tr>
   <tr>
    <td>Suporte para idiomas da direita para a esquerda </td> 
-   <td>Suportado</td> 
-   <td>Suportado</td> 
+   <td>Compatível</td> 
+   <td>Compatível</td> 
   </tr>
  </tbody>
 </table>
 
 Siga as práticas recomendadas para ativar um modelo de formulário para execuções HTML5 e garantir que o comportamento e a aparência dos formulários HTML5 e PDF com base em XFA sejam consistentes. Para obter uma lista detalhada das práticas recomendadas, consulte Práticas [recomendadas para criar um formulário HTML5.](/help/forms/using/best-practices-for-html5-forms.md)
 
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
