@@ -1,21 +1,21 @@
 ---
 title: '"Tutorial: Criar modelos"'
-seo-title: Criar modelos de impressão e Web para comunicação interativa
-description: Criar modelos de impressão e Web para comunicação interativa
-seo-description: Criar modelos de impressão e Web para comunicação interativa
+seo-title: Criar modelos de impressão e da Web para comunicação interativa
+description: Criar modelos de impressão e da Web para comunicação interativa
+seo-description: Criar modelos de impressão e da Web para comunicação interativa
 uuid: d7b0d9a5-f5f0-4c21-a6f8-622bf94f4491
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
 
 # Tutorial: Criar modelos {#tutorial-create-templates}
 
-Criar modelos de impressão e Web para comunicação interativa
+Criar modelos de impressão e da Web para comunicação interativa
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -27,7 +27,7 @@ Os modelos para o canal Imprimir são criados no Adobe Forms Designer e carregad
 
 Os modelos para o canal da Web são criados no AEM. Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Depois de criados e ativados, esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
-Este tutorial o orienta pelas etapas para criar modelos para canais de Impressão e da Web para que eles estejam disponíveis para uso ao criar Comunicações Interativas. No final deste tutorial, você poderá:
+Este tutorial o orienta pelas etapas para criar modelos para canais de Impressão e da Web, de modo que eles estejam disponíveis para uso ao criar o Interative Communications. No final deste tutorial, você poderá:
 
 * Criar modelos XDP para canal de impressão usando o Adobe Forms Designer
 * Carregar os modelos XDP no AEM Forms Server
@@ -35,7 +35,7 @@ Este tutorial o orienta pelas etapas para criar modelos para canais de Impressã
 
 ## Criar modelo para canal de impressão {#create-template-for-print-channel}
 
-Crie e gerencie modelos para o canal Imprimir de Comunicação Interativa usando as seguintes tarefas:
+Crie e gerencie modelos para o canal Imprimir de comunicação interativa usando as seguintes tarefas:
 
 * [Criar modelo XDP usando o Forms Designer](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
 * [Carregar modelo XDP no servidor de formulários AEM](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
@@ -55,9 +55,9 @@ Com base no caso [de](/help/forms/using/create-your-first-interactive-communicat
 
 ![create_print_template](assets/create_print_template.gif)
 
-Esses subformulários são exibidos como áreas de destino no modelo Imprimir depois de fazer upload do arquivo XDP para o servidor de formulários. Todas as entidades, como fragmentos de documento, gráficos, fragmentos de layout e imagens, são adicionadas às áreas de destino ao criar a Comunicação interativa.
+Esses subformulários são exibidos como áreas de público alvo no modelo Imprimir depois de fazer upload do arquivo XDP para o servidor de formulários. Todas as entidades, como fragmentos de documento, gráficos, fragmentos de layout e imagens, são adicionadas às áreas de público alvo ao criar a Comunicação interativa.
 
-Execute as seguintes etapas para criar um modelo XDP para o canal Imprimir:
+Execute as seguintes etapas para criar um modelo XDP para o canal Print:
 
 1. Abra o Designer de Formulários, selecione **Arquivo** > **Novo** > **Usar um formulário em branco,** toque em **Avançar** e em **Concluir** para abrir o formulário para a criação do modelo.
 
@@ -92,7 +92,7 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Imprimir:
    * ValueAddedServices
    Para economizar tempo, também é possível copiar e colar subformulários existentes para criar novos subformulários.
 
-   Para deslocar o subformulário **Gráficos** para a direita do subformulário Encargos, selecione o subformulário **Gráficos** no painel esquerdo, selecione a guia **Layout** e especifique um valor para o campo **ÂncoraX** . O valor deve ser maior que o valor do campo **Largura** para o subformulário **Encargos** . Selecione o subformulário **Encargos** e selecione a guia **Layout** para exibir o valor do campo **Largura** .
+   Para deslocar o subformulário **Gráficos** para a direita do subformulário Encargos, selecione o subformulário **Gráficos** no painel esquerdo, selecione a guia **Layout** e especifique um valor para o campo **ÂncoraX** . O valor deve ser maior que o valor do campo **Largura** para o subformulário **Encargos** . Selecione o subformulário **Encargos** e selecione a guia **Layout** para visualização do valor do campo **Largura** .
 
 1. Arraste e solte o objeto de **Texto** da Biblioteca **de** objetos para o formulário e digite a caixa **Discar XXXX para assinar** o texto.
 1. Clique com o botão direito do mouse no objeto de texto no painel esquerdo, selecione **Renomear objeto** e insira o nome do objeto de texto como **Assinar**.
@@ -109,8 +109,8 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Imprimir:
 
 Depois de criar um modelo XDP usando o Designer de Formulários, você deve carregá-lo no servidor de Formulários AEM para que o modelo esteja disponível para uso ao criar a Comunicação Interativa.
 
-1. Selecione **Formulários** > **Formulários e documentos**.
-1. Toque em **Criar** > Carregamento **de arquivo**.
+1. Selecione **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e Documentos]**.
+1. Toque em **Criar** > Upload **de arquivo**.
 
    Navegue e selecione o modelo **create_first_ic_print_template** (XDP) e toque em **Abrir** para importar o modelo XDP para o servidor de formulários AEM.
 
@@ -134,7 +134,7 @@ Para criar um fragmento de layout para o canal Imprimir da comunicação interat
 
    Da mesma forma, renomeie **Cell2**, **Cell3**, **Cell4** e **Cell5** como **Time************** , Number, Duration e Charges, respectivamente.
 
-1. Clique nos campos de texto Cabeçalho na Exibição **do** Designer e renomeie-os para **Hora**, **Número**, **Duração** e **Encargos**.
+1. Clique nos campos de texto Cabeçalho na Visualização **do** Designer e renomeie-os para **Hora**, **Número**, **Duração** e **Encargos**.
 
    ![layout_fragment_print](assets/layout_fragment_print.png)
 
@@ -142,7 +142,7 @@ Para criar um fragmento de layout para o canal Imprimir da comunicação interat
 
    ![layout_fragment_print_again](assets/layout_fragment_print_repeat.png)
 
-1. Arraste e solte o componente Campo **de** texto da Biblioteca **de** objetos para a Exibição **** do Designer.
+1. Arraste e solte o componente Campo **de** texto da Biblioteca **de** objetos para a Visualização **do** Designer.
 
    ![layout_fragment_print_text_field](assets/layout_fragment_print_text_field.png)
 
@@ -155,9 +155,9 @@ Para criar um fragmento de layout para o canal Imprimir da comunicação interat
    1. Toque em **Salvar**.
    Depois de criar um modelo XDP para fragmento de layout usando o Designer de Formulários, você deve [carregá](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) -lo no servidor de Formulários AEM para que o modelo esteja disponível para uso ao criar fragmentos de layout.
 
-## Criar modelo para canal Web {#create-template-for-web-channel}
+## Criar modelo para o canal da Web {#create-template-for-web-channel}
 
-Crie e gerencie modelos para o canal da Web de Comunicação Interativa usando as seguintes tarefas:
+Crie e gerencie modelos para o canal Web de comunicação interativa usando as seguintes tarefas:
 
 * [Criar pasta para modelos](/help/forms/using/create-templates-print-web.md#create-folder-for-templates)
 * [Criar o modelo](/help/forms/using/create-templates-print-web.md#create-the-template)
@@ -166,7 +166,7 @@ Crie e gerencie modelos para o canal da Web de Comunicação Interativa usando a
 
 ### Criar pasta para modelos {#create-folder-for-templates}
 
-Para criar um modelo de canal da Web, defina uma pasta onde você possa salvar os modelos criados. Depois de criar um modelo dentro dessa pasta, ative o modelo para permitir que os usuários de formulários criem um canal da Web de uma Comunicação interativa com base no modelo.
+Para criar um modelo de canal da Web, defina uma pasta onde você possa salvar os modelos criados. Depois de criar um modelo dentro dessa pasta, ative o modelo para permitir que os usuários de formulários criem um canal da Web de uma Comunicação Interativa com base no modelo.
 
 Execute as seguintes etapas para criar uma pasta para os modelos editáveis:
 
@@ -198,18 +198,18 @@ Execute as seguintes etapas para criar um modelo para o canal da Web na pasta **
 
 1. Navegue até a pasta de modelo apropriada selecionando **Ferramentas** > **Modelos** > pasta **Create_First_IC_models** .
 1. Toque em **Criar**.
-1. No assistente de configuração **Escolha um tipo** de modelo, selecione **Interative Communication - Web Channel** e toque **Next (Avançar)**.
+1. No assistente de configuração **Escolha um tipo** de modelo, selecione **Interative Communication - Canal** da Web e toque **Próximo**.
 1. No assistente de configuração Detalhes **do** modelo, especifique **Create_First_IC_Web_Template** como o título do modelo. Especifique uma descrição opcional e toque em **Criar**.
 
    Uma mensagem de confirmação informando que o **Create_First_IC_Web_Template** é exibido.
 
 1. Toque em **Abrir** para abrir o modelo no editor de modelo.
-1. Selecione Conteúdo **** inicial na lista suspensa ao lado da opção **Visualizar** .
+1. Selecione Conteúdo **** inicial na lista suspensa ao lado da opção **Pré-visualização** .
 
    ![template_editor_initial_content](assets/template_editor_initial_content.png)
 
-1. Toque em Painel **** raiz e toque em **+** para exibir a lista de componentes que podem ser adicionados ao modelo.
-1. Selecione **Painel** na lista para adicionar um painel acima do Painel **raiz**.
+1. Toque em Painel **** raiz e, em seguida, toque **+** para visualização na lista dos componentes que você pode adicionar ao modelo.
+1. Selecione **Painel** na lista para adicionar um painel acima do painel **raiz**.
 1. Selecione a guia **Conteúdo** no painel esquerdo. O novo painel adicionado na etapa 8 é exibido abaixo do Painel **** raiz na árvore de conteúdo.
 
    ![content_tree_root_panel](assets/content_tree_root_panel.png)
@@ -228,7 +228,7 @@ Execute as seguintes etapas para criar um modelo para o canal da Web na pasta **
    | Nome | Título | Número de colunas |
    |---|---|---|
    | detalhes do cliente | Detalhes do cliente | 1 |
-   | resumo | Resumo da Lista | 1 |
+   | cédula | Resumo da Lista | 1 |
    | despesas sumariadas | Resumo das taxas | 2 |
    | chamadas itemisedec | Chamadas discriminadas | 1 |
    | pagamento | Pagar Agora | 2 |
@@ -254,12 +254,12 @@ Execute as seguintes etapas para ativar o modelo da Web:
 
 Com base no caso de uso, você deve incluir os botões **Pagar agora** e **Assinar** (componentes de formulários adaptáveis) na Interative Communication. Para habilitar o uso desses botões na Comunicação interativa, execute as seguintes etapas:
 
-1. Selecione **Estrutura** na lista suspensa ao lado da opção **Visualizar** .
-1. Selecione o painel raiz **Contêiner** de documentos usando a árvore de conteúdo e toque em **Política** para selecionar os componentes que são permitidos para uso na Comunicação interativa.
+1. Selecione **Estrutura** na lista suspensa ao lado da opção **Pré-visualização** .
+1. Selecione o painel raiz do Container **do** Documento usando a árvore de conteúdo e toque em **Política** para selecionar os componentes que são permitidos para uso no Interative Communication.
 
    ![structure_configure_policy](assets/structure_configure_policy.png)
 
-1. Na guia Componentes **** permitidos da seção **Propriedades** , selecione **Botão** nos componentes do Formulário **** adaptável.
+1. Na guia Componentes **** permitidos da seção **Propriedades** , selecione **Botão** nos componentes do formulário **** adaptável.
 
    ![allow_components_af](assets/allowed_components_af.png)
 
