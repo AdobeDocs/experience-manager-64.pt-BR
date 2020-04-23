@@ -1,22 +1,22 @@
 ---
-title: Relatórios predefinidos no Process Reporting
-seo-title: Relatórios predefinidos no Process Reporting
-description: Consulte Formulários AEM nos dados do processo JEE para criar relatórios sobre processos de longa execução, duração do processo e volume do fluxo de trabalho
-seo-description: Consulte Formulários AEM nos dados do processo JEE para criar relatórios sobre processos de longa execução, duração do processo e volume do fluxo de trabalho
+title: Relatórios predefinidos no Relatórios em andamento
+seo-title: Relatórios predefinidos no Relatórios em andamento
+description: Query para os dados do processo do AEM Forms no JEE para criar relatórios sobre processos de longa execução, duração do processo e volume do fluxo de trabalho
+seo-description: Query para os dados do processo do AEM Forms no JEE para criar relatórios sobre processos de longa execução, duração do processo e volume do fluxo de trabalho
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: ec74a1c3b1d3686a1f5216e06dfc33dc1dccfb2f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# Relatórios predefinidos no Process Reporting {#pre-defined-reports-in-process-reporting}
+# Relatórios predefinidos no Relatórios em andamento {#pre-defined-reports-in-process-reporting}
 
-O Relatório de processo de formulários AEM é enviado com os seguintes relatórios *prontos para uso* :
+O Relatórios de processo de formulários AEM é fornecido com os seguintes relatórios *prontos* :
 
 * **[Processos](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**de longa duração: Um relatório de todos os processos do AEM Forms que levaram mais de um tempo para serem concluídos
 
@@ -30,14 +30,14 @@ O relatório de Processos de longa execução exibe os processos do AEM Forms qu
 
 ### Para executar um relatório de Processo Longo de Execução {#to-execute-a-long-running-process-report-br}
 
-1. Para exibir a lista de relatórios predefinidos no Process Reporting, na exibição em árvore do **Process Reporting** , clique no nó **Relatórios** .
+1. Para visualização da lista de relatórios predefinidos no Process Relatórios, na visualização em árvore do Relatórios **** Process, clique no nó **Reports** .
 1. Clique no nó do relatório Processos **de Execução** Longa.
 
    ![long_running_node](assets/long_running_node.png)
 
    Quando você seleciona um relatório, o painel Parâmetros **de** relatório é exibido à direita da visualização em árvore.
 
-   ![painel Parâmetros de relatório de processos longos](assets/report_parameters_panel.png)
+   ![painel de parâmetros do relatório de processos longos](assets/report_parameters_panel.png)
 
    Parâmetros:
 
@@ -47,7 +47,7 @@ O relatório de Processos de longa execução exibe os processos do AEM Forms qu
 
 1. Clique em **Ir** para executar o relatório.
 
-   O relatório é exibido no painel **Relatório **à direita da janela Relatório de **processo** .
+   O relatório é exibido no painel **Relatório **à direita da janela **Processar Relatórios** .
 
    ![long_running_process](assets/long_running_processes.png)
 
@@ -63,14 +63,14 @@ O relatório Duração do processo exibe o número de instâncias de um processo
 
 ### Para executar um relatório de Duração do processo {#to-execute-a-process-duration-report-br}
 
-1. Para exibir os relatórios predefinidos no Process Reporting, na visualização em árvore do **Process Reporting** , clique no nó **Relatórios** .
+1. Para visualização dos relatórios predefinidos no Relatórios Process, na visualização em árvore do Relatórios **** Process, clique no nó **Reports** .
 1. Clique no nó do relatório Duração **** dos processos.
 
    ![process_duration_node](assets/process_duration_node.png)
 
    Quando você seleciona um relatório, o painel Parâmetros **de** relatório é exibido à direita da visualização em árvore.
 
-   ![painel Parâmetros de relatório de processos longos](assets/process_duration_params.png)
+   ![painel de parâmetros do relatório de processos longos](assets/process_duration_params.png)
 
    Parâmetros:
 
@@ -78,7 +78,7 @@ O relatório Duração do processo exibe o número de instâncias de um processo
 
 1. Clique em **Ir** para executar o relatório.
 
-   O relatório é exibido no painel **Relatório** à direita da janela Processar relatório.
+   O relatório é exibido no painel **Relatório** à direita da janela Processar Relatórios.
 
    ![process_duration_report](assets/process_duration_report.png)
 
@@ -94,24 +94,24 @@ O relatório de Volume do fluxo de trabalho exibe o número de instâncias atual
 
 ### Para executar um relatório de Volume do fluxo de trabalho {#to-execute-a-workflow-volume-report-br}
 
-1. Para exibir os relatórios predefinidos no Process Reporting, na visualização em árvore do **Process Reporting** , clique no nó **Relatórios** .
+1. Para visualização dos relatórios predefinidos no Relatórios Process, na visualização em árvore do Relatórios **** Process, clique no nó **Reports** .
 1. Clique no nó do relatório Volume **do** fluxo de trabalho.
 
    ![workflow_volume_node](assets/workflow_volume_node.png)
 
    Quando você seleciona um relatório, o painel Parâmetros **de** relatório é exibido à direita da visualização em árvore.
 
-   ![painel Parâmetros de relatório de processos longos](assets/workflow_volume_params.png)
+   ![painel de parâmetros do relatório de processos longos](assets/workflow_volume_params.png)
 
    Parâmetros:
 
    * **Selecione Processo**(*obrigatório*): Selecione um processo do AEM Forms.
-   * **Iniciado após** (*opcional*): Selecione uma data. Filtra o relatório para exibir instâncias de processo que começaram após a data especificada.
-   * **Iniciado antes** (*opcional*): Selecione uma data. Filtra o relatório para exibir instâncias de processo iniciadas antes da data especificada.
+   * **Iniciado após** (*opcional*): Selecione uma data. Filtros o relatório para exibir instâncias de processo que foram iniciadas após a data especificada.
+   * **Iniciado antes** (*opcional*): Selecione uma data. Filtros o relatório para exibir instâncias de processo iniciadas antes da data especificada.
 
 1. Clique em **Ir** para executar o relatório.
 
-   O relatório é exibido no painel **Relatório** à direita da janela Relatório de **processo** .
+   O relatório é exibido no painel **Relatório** à direita da janela **Processar Relatórios** .
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 
@@ -121,4 +121,3 @@ O relatório de Volume do fluxo de trabalho exibe o número de instâncias atual
    * **Alterar cor** da legenda: Selecionar e alterar a cor da legenda do relatório
    * **Exportar para CSV**: Exportar e baixar os dados do relatório para um arquivo separado por vírgulas
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
