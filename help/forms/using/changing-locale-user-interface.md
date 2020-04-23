@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -22,7 +22,7 @@ A área de trabalho do AEM Forms fornece suporte imediato para idiomas inglês, 
 Para localizar a interface de usuário do espaço de trabalho do AEM Forms para o idioma de sua escolha:
 
 * Localize o texto da área de trabalho do AEM Forms.
-* Localize categorias, filas e processos recolhidos.
+* Localize categorias recolhidas, filas e processos.
 * Localizar o seletor de datas
 
 Antes de executar as etapas acima, siga as etapas listadas em Etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
@@ -51,7 +51,7 @@ Execute as seguintes etapas para adicionar suporte para um idioma *Novo* e o có
 
 A área de trabalho do AEM Forms usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
 
-Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categories_nw.png*, *Queue_nw.png* e *Processes_nw.png*. A largura recomendada das imagens é de 19x.
+Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categoria_nw.png*, *Queue_nw.png* e *Processes_nw.png*. A largura recomendada das imagens é de 19x.
 
 >[!NOTE]
 >
@@ -178,18 +178,18 @@ Você precisa de um pacote de desenvolvimento para localizar a *datepicker *API.
    }
    ```
 
-   ```
-   if (locale === 'ja-JP') {
-       $.datepicker.setDefaults($.datepicker.regional.ja);
-   } else if (locale === 'de-DE') {
-       $.datepicker.setDefaults($.datepicker.regional.de);
-   } else if (locale === 'fr-FR') {
-       $.datepicker.setDefaults($.datepicker.regional.fr);
-   } else if (locale === 'nw') {
-       $.datepicker.setDefaults($.datepicker.regional.nw);
-   } else {
-       $.datepicker.setDefaults($.datepicker.regional['']);
-   }
-   ```
+para
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+```
+if (locale === 'ja-JP') {
+    $.datepicker.setDefaults($.datepicker.regional.ja);
+} else if (locale === 'de-DE') {
+    $.datepicker.setDefaults($.datepicker.regional.de);
+} else if (locale === 'fr-FR') {
+    $.datepicker.setDefaults($.datepicker.regional.fr);
+} else if (locale === 'nw') {
+    $.datepicker.setDefaults($.datepicker.regional.nw);
+} else {
+    $.datepicker.setDefaults($.datepicker.regional['']);
+}
+```
