@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -52,7 +52,7 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
 ```
 
-Para obter mais informações sobre perfis de Formulário móvel, acesse [Criar um perfil](/help/forms/using/custom-profile.md)personalizado.
+Mais informações sobre perfis de formulário móvel podem ser encontradas em [Criar um perfil](/help/forms/using/custom-profile.md)personalizado.
 
 ## Novos processos de renderização e envio de formulário HTML {#new-html-form-render-amp-submit-processes}
 
@@ -113,17 +113,17 @@ Os navegadores estão retirando gradualmente o suporte para plug-ins baseados em
 
 1. Selecione os aplicativos para os quais deseja alterar a renderização do formulário móvel e clique em **OK**.
 1. Abra o processo para o qual deseja alterar a renderização.
-1. Abra o ponto de partida/tarefa direcionada, navegue até a seção Apresentação e dados e clique em **Gerenciar perfis** de ação.
+1. Abra o ponto de partida/tarefa direcionada, navegue até a seção Apresentação e dados e clique em **Gerenciar Perfis** de ação.
 
-   A caixa de diálogo Gerenciar perfis de ação é exibida.
-1. Altere Configurações de perfil de renderização padrão de PDF para HTML e clique em **OK**.
+   A caixa de diálogo Gerenciar Perfis de ação é exibida.
+1. Altere as configurações de perfil de renderização padrão de PDF para HTML e clique em **OK**.
 1. Verifique o processo.
 1. Repita as etapas para alterar a renderização para outros processos.
 1. Implante o aplicativo relevante para os processos que você alterou.
 
 ### Perfil de ação padrão {#default-action-profile}
 
-O Perfil de ação padrão renderizou o Formulário XDP como PDF. Esse comportamento agora foi alterado para usar os processos Formulário de renderização padrão e Formulário de envio padrão.
+O Perfil de Ação padrão renderizou o Formulário XDP como PDF. Esse comportamento agora foi alterado para usar os processos Formulário de renderização padrão e Formulário de envio padrão.
 
 Algumas perguntas frequentes sobre perfis de ação são as seguintes:
 
@@ -138,7 +138,7 @@ Algumas perguntas frequentes sobre perfis de ação são as seguintes:
 
 E, processos de envio equivalentes.
 
-![gen_question_b_20](assets/gen_question_b_20.png) Que perfis de ação estarão disponíveis prontamente **?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Que Perfis de ação estarão disponíveis imediatamente?**
 
 Para formulários XDP:
 
@@ -146,19 +146,17 @@ Para formulários XDP:
 
 ![gen_question_b_20](assets/gen_question_b_20.png) O **que precisa ser feito pelo designer do processo para permitir que o formulário seja renderizado em HTML em um dispositivo e em PDF em um desktop?**
 
-Nada. O Perfil de ação padrão é escolhido automaticamente e o modo de renderização também é feito automaticamente.
+Nada. O Perfil de Ação padrão é escolhido automaticamente e o modo de renderização também é feito automaticamente.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) O **que precisa ser feito para permitir que o formulário seja renderizado em HTML em um desktop?**
 
 O usuário deve selecionar o botão de opção HTML para o perfil padrão.
 
-![gen_question_b_20](assets/gen_question_b_20.png) Haverá **algum impacto de atualização na alteração do comportamento padrão do perfil de ação?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Haverá algum impacto de atualização na alteração do comportamento padrão do perfil de ação?**
 
 Sim, como os serviços de renderização e envio anteriores associados ao perfil de ação padrão eram diferentes, eles são tratados como uma personalização dos formulários existentes. Ao clicar em **[!UICONTROL Restaurar padrões]**, os serviços padrão de renderização e envio são definidos.
 
-Se você modificou os serviços de Renderização ou Enviar formulário PDF existentes ou criou serviços personalizados (por exemplo, custom1) e agora deseja usar a mesma funcionalidade para renderização HTML. É necessário replicar o novo serviço de renderização ou envio (como por exemplo, custom2) e aplicar personalizações semelhantes a essas personalizações. Agora, modifique o perfil de ação para seu XDP para começar a usar serviços custom2, em vez do custom1 para renderização ou envio.
+Se você modificou os serviços de Renderização ou Enviar formulário PDF existentes ou criou serviços personalizados (por exemplo, custom1) e agora deseja usar a mesma funcionalidade para renderização HTML. É necessário replicar o novo serviço de renderização ou envio (como por exemplo, custom2) e aplicar personalizações semelhantes a essas personalizações. Agora, modifique o perfil de ação para seu XDP para start usando serviços custom2, em vez do custom1 para renderização ou envio.
 
 O que precisa ser feito pelo designer de processos para permitir que o formulário seja renderizado em HTML em um dispositivo e em PDF em um desktop?\
 O que precisa ser feito pelo designer de processos para permitir que o formulário seja renderizado em HTML em um dispositivo e em PDF em um desktop?
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
