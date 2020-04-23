@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -31,11 +31,11 @@ O MDM (Mobile Device Management, gerenciamento de dispositivos móveis) permite 
 
 Uma solução MDM junto com o Gerenciamento de aplicativos móveis permite gerenciar aplicativos internos, públicos e comprados em todos os dispositivos móveis da sua empresa.
 
-O administrador do MDM pode carregar arquivos ipa e apk no servidor MDM e controlar os usuários que podem acessar os arquivos ipa ou apk. O administrador também pode controlar a configuração de perfil correspondente a cada aplicativo.
+O administrador do MDM pode carregar arquivos ipa e apk no servidor MDM e controlar os usuários que podem acessar os arquivos ipa ou apk. O administrador também pode controlar a configuração do perfil correspondente a cada aplicativo.
 
-## Configurações de perfil que afetam o aplicativo AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
+## Configurações de Perfil que afetam o aplicativo AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
 
-As seguintes configurações de perfil em seu dispositivo afetarão o funcionamento do aplicativo AEM Forms em seu dispositivo:
+As seguintes configurações de Perfil em seu dispositivo afetarão o funcionamento do aplicativo AEM Forms em seu dispositivo:
 
 * **Permitir uso da câmera** na seção **Funcionalidade** do dispositivo
 
@@ -44,5 +44,3 @@ Se você desativar **Permitir uso de câmera**, o recurso de câmera da anotaç�
 * **Exigir senha no dispositivo** na seção Políticas de senha
 
 Para ativar a **criptografia de dados** do aplicativo, é recomendável ativar a **senha** no dispositivo. Se a senha não estiver definida no dispositivo, os dados do aplicativo armazenados no dispositivo não serão criptografados.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
