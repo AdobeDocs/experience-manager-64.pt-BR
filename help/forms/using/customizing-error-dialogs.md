@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -182,7 +182,7 @@ A área de trabalho do AEM Forms permite personalizar caixas de diálogo de erro
    }
    ```
 
-1. Para a extensão do botão da barra de pé, separe as extensões do botão `.error-dialog` e `.foot-bar` da lista composta. Para fazer essa alteração, adicione o seguinte no arquivo newStyle.css:
+1. Para a extensão do botão da barra de pé, separe as `.error-dialog` e `.foot-bar` as faixas do botão da lista composta. Para fazer essa alteração, adicione o seguinte no arquivo newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -279,5 +279,3 @@ To
     padding-top: 15px;
 }
 ```
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
