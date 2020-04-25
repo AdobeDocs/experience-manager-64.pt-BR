@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -21,14 +21,14 @@ A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou 
 
 As seguintes regras se aplicam para comunicar a remoção/substituição iminente das funcionalidades do AEM:
 
-1. O anúncio sobre a descontinuidade é oferecido primeiro. Enquanto obsoletas, as funcionalidade continuam disponíveis, mas não serão aprimoradas.
+1. O anúncio sobre a descontinuidade é oferecido primeiro. Embora obsoletos, os recursos ainda estão disponíveis, mas não serão aprimorados.
 1. A remoção de funcionalidades obsoletas ocorrerá assim que possível na versão principal seguinte. A data definida para a remoção será anunciada.
 
 Esse processo oferece ao usuário ao menos um ciclo de versão para adaptar sua implementação a uma nova versão ou sucessor de uma funcionalidade descontinuada, antes da remoção.
 
 ## Recursos obsoletos {#deprecated-features}
 
-Esta seção lista os recursos e funcionalidades que foram marcados como obsoleto no AEM 6.4. Normalmente, os recursos são, em primeiro lugar, marcados como obsoletos, com remoção planejada para uma versão futura, com uma alternativa fornecida.
+A tabela abaixo lista recursos e recursos que foram marcados como obsoletos com o AEM 6.4. Geralmente, os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma alternativa fornecida.
 
 Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua implementação no momento, bem como a planejar a alteração de sua implementação para usar a alternativa fornecida.
 
@@ -120,6 +120,11 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
    <td>Usar a API IValueMap </td> 
   </tr>
   <tr>
+   <td>Forms</td> 
+   <td><p>Serviço da ponte de migração central obsoleto</p> </td> 
+   <td> Nenhuma substituição </td> 
+  </tr>
+  <tr>
    <td>Ativos</td> 
    <td><p>A descarga de ativos foi substituída a partir do AEM 6.4</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 ## Recursos removidos {#removed-features}
 
-Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versões anteriores tinham esses recursos marcados como obsoletos.
+A tabela abaixo lista recursos e recursos que foram removidos do AEM 6.4. As versões anteriores tinham esses recursos marcados como obsoletos.
 
 <table> 
  <tbody>
@@ -215,13 +220,18 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versõ
   </tr>
     <tr>
     <td>Forms</td> 
-    <td>Formulários AEM removidos na landing page específica JEE.</td> 
+    <td>Formulários AEM removidos na landing page específica do JEE.</td> 
     <td>O AEM Forms na landing page JEE é substituído pela landing page AEM (/aem/start.html) </td>  
   </tr>
    <tr>
    <td>Forms</td> 
    <td>Remoção do suporte para Captcha padrão</td> 
    <td>Use o serviço reCAPTCHA do Google.</td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td>Remoção do suporte para campos flash no AEM Designer. O AEM Designer não permite a edição de campos flash usados em um formulário.</td> 
+   <td>Você pode usar o AEM Designer lançado para uma versão anterior para editar esses formulários.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
@@ -233,7 +243,8 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.4. As versõ
 
 ## Anúncio prévio da próxima versão {#pre-announcement-for-next-release}
 
-Esta seção é usada para anunciar previamente as alterações na versão futura, que não estão obsoletas, mas afetará os clientes. Elas são fornecidas para propósito de planejamento.
+
+A tabela abaixo fornece uma lista de alterações para versões futuras, que não estão obsoletas, mas podem afetar os clientes. Elas são fornecidas para propósito de planejamento.
 
 <table> 
  <tbody>
