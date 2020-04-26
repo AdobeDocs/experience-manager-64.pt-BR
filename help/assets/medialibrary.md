@@ -3,16 +3,16 @@ title: Compare os recursos disponíveis nos ativos AEM e na biblioteca de mídia
 description: Perguntas frequentes sobre os ativos AEM e a biblioteca de mídia do AEM, incluindo as diferenças.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
+source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
 
 ---
 
 
 # AEM Assets vs. AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
 
-Os ativos Adobe Experience Manager (AEM) são parte integrante da plataforma AEM. Essa integração suave é considerada uma grande vantagem do AEM e garante consistência no gerenciamento de conteúdo e alta produtividade para os autores de conteúdo.
+Os ativos Adobe Experience Manager (AEM) são parte integrante da plataforma AEM. Essa integração suave é considerada uma grande vantagem do AEM e garante consistência na gestão de conteúdo e alta produtividade para os autores de conteúdo.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Perguntas frequentes {#frequently-asked-questions}
 
 ### O que é o AEM Assets? {#what-is-aem-assets}
 
@@ -27,8 +27,8 @@ A Biblioteca de mídia do AEM é uma parte designada do repositório de conteúd
 Os recursos exclusivos que estão disponíveis somente para clientes do AEM Assets são:
 
 1. a capacidade de extrair e editar metadados diferentes de título, tags e descrição.
-1. o administrador do AEM Assets, disponível na tela de boas-vindas, clicando no segundo botão ao lado do `siteadmin`.
-1. Todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, a inclusão de ativos AEM, a exclusão de ativos AEM, o gerenciamento de subativos do AEM Assets, a extração de metadados do AEM Assets.
+1. o Admin do AEM Assets, disponível na tela de boas-vindas, clicando no segundo botão ao lado do `siteadmin`.
+1. Todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, ou seja, a inclusão de ativos AEM, a exclusão de ativos AEM, o gerenciamento de subativos AEM Assets, a extração de metadados do AEM Assets.
 1. bibliotecas incluindo o espaço do pacote `dam` im.
 
 O uso desses recursos requer uma licença válida dos ativos AEM.
@@ -41,10 +41,6 @@ Não. Para facilitar a instalação e a implantação, todos os aplicativos e co
 
 Se você estiver planejando editar metadados diferentes de título, descrição e tags, é necessário licenciar os ativos AEM.
 
-#### Quero usar o predicado de categoria no meu site. Preciso dos ativos AEM? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
-
-Sim, o predicado de categoria, juntamente com todos os outros componentes usados no Geometrixx Press Center, fazem parte dos ativos AEM e exigem uma licença dos ativos AEM.
-
 #### Desejo redimensionar automaticamente as imagens após a importação. Preciso dos ativos AEM? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
 Não. A redimensionamento e a transformação automática de imagens estáticas por fluxo de trabalho, bem como a capacidade de gerenciar execuções, fazem parte da Biblioteca de mídia do AEM. Esses recursos não exigem uma licença do AEM Assets.
@@ -55,7 +51,7 @@ O componente de imagem faz parte do AEM WCM. A biblioteca de gráficos que está
 
 ### Como impedir que meus usuários usem ativos AEM se eu não licenciei ativos AEM? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Você pode remover do AEM todos os fluxos de trabalho, componentes, taxonomias, opções e o administrador do AEM Assets específicos. Isso impede que os usuários usem acidentalmente os recursos do AEM Assets que você não licenciou.
+Você pode remover do AEM todos os workflows, componentes, taxonomias, opções e o administrador do AEM Assets específicos. Isso impede que os usuários usem acidentalmente os recursos do AEM Assets que você não licenciou.
 
 ### Quero adicionar imagens a uma página e cortar e redimensionar essas imagens. Preciso dos ativos AEM? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -63,4 +59,5 @@ Para esse caso de uso, não é necessário comprar ativos AEM, nem mesmo o uso d
 
 >[!MORELIKETHIS]
 >
->* [Lista detalhada de diferenças de recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [lista detalhada das diferenças de recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+
