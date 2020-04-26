@@ -1,20 +1,20 @@
 ---
-title: Gerenciar metadados de seus ativos digitais
-description: Saiba mais sobre os tipos de metadados e como os ativos Adobe Experience Manager ajudam a gerenciar metadados de ativos para facilitar a categorização e organização de ativos. Com a capacidade de manter e gerenciar metadados arbitrários com seus ativos, os ativos Adobe Experience Manager permitem organizar e processar automaticamente ativos com base em seus metadados.
+title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Manager].
+description: Saiba mais sobre os tipos de metadados e como o [!DNL Adobe Experience Manager Assets] ajuda a gerenciar metadados de ativos para facilitar a categorização e a organização de ativos. O [!DNL Experience Manager] permite organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
 
 ---
 
 
 # Gerenciar metadados de seus ativos digitais {#managing-metadata-for-digital-assets}
 
-Os ativos Adobe Experience Manager mantêm metadados para cada ativo. Isso facilita a categorização e organização de ativos e ajuda as pessoas que estão procurando um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para ativos do Experience Manager, o gerenciamento de metadados se integra ao fluxo de trabalho criativo. Com a capacidade do Experience Manager de manter e gerenciar metadados com seus ativos, você pode organizar e processar automaticamente ativos com base nos metadados.
+[!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Isso facilita a categorização e organização de ativos e ajuda as pessoas que estão procurando um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para [!DNL Experience Manager Assets], o gerenciamento de metadados se integra ao fluxo de trabalho criativo. Com a capacidade de manter e gerenciar metadados com seus ativos, [!DNL Experience Manager Assets] torna possível organizar e processar automaticamente ativos com base em seus metadados.
 
-* [Metadados XMP](xmp.md)
-* [Como editar ou adicionar metadados](meta-edit.md)
-* [Referência dos esquemas de metadados](meta-ref.md)
+* [Metadados XMP](xmp.md).
+* [Como editar ou adicionar metadados](meta-edit.md).
+* [Referência](meta-ref.md)de esquemas de metadados.
 
 ## Por que precisamos de metadados {#why-we-need-metadata}
 
@@ -28,7 +28,7 @@ Metadados é a coleta de todos os dados disponíveis para um ativo, mas não nec
 * Nome da pasta em que está contido.
 * Ativos relacionados ou tags aplicadas.
 
-Essas são as propriedades básicas de metadados que o Experience Manager pode gerenciar para ativos, o que permite que os usuários vejam todos os ativos, por exemplo, solicitados pela última data de modificação - úteis ao tentar descobrir quais ativos foram adicionados recentemente ao repositório.
+Essas são as propriedades básicas de metadados que [!DNL Experience Manager] podem ser gerenciadas para ativos, o que permite que os usuários vejam todos os ativos, por exemplo, ordenados por sua última data de modificação - úteis ao tentar descobrir quais ativos foram adicionados recentemente ao repositório.
 
 Você pode adicionar mais dados de alto nível a ativos digitais, por exemplo:
 
@@ -40,30 +40,30 @@ Você pode adicionar mais dados de alto nível a ativos digitais, por exemplo:
 
 Mais metadados ajudam a categorizar ativos e são úteis à medida que a quantidade de informações digitais cresce. É possível gerenciar algumas centenas de arquivos com base apenas nos nomes dos arquivos. No entanto, essa abordagem não é escalável e rapidamente fica aquém do número de pessoas envolvidas e o número de ativos gerenciados aumenta.
 
-À medida que os metadados são adicionados aos ativos, o valor do ativo cresce, pois o ativo se torna,
+Com a adição de metadados, o valor de um ativo digital cresce, pois o ativo se torna,
 
-* mais acessível - as pessoas podem achá-lo muito mais fácil.
-* mais fácil de gerenciar - você pode encontrar ativos com o mesmo conjunto de propriedades mais facilmente e aplicar alterações a eles.
-* mais complexo - quanto mais metadados você tiver adicionado a um ativo, mais importante será o gerenciamento de metadados.
+* Mais acessível - os sistemas e usuários podem encontrá-lo facilmente.
+* Mais fácil de gerenciar - você pode encontrar ativos com o mesmo conjunto de propriedades mais facilmente e aplicar alterações a eles.
+* Mais completo: quanto mais metadados você adicionar a um ativo, mais informações e contexto serão exibidos.
 
-Por esses motivos, os ativos Experience Manager fornecem os meios certos para criar, gerenciar e trocar metadados para seus ativos digitais.
+Por esses motivos, [!DNL Assets] fornece os meios certos de criar, gerenciar e trocar metadados para seus ativos digitais.
 
 ## Tipos de metadados {#types-of-metadata}
 
 Os dois tipos básicos de metadados são metadados técnicos e metadados descritivos.
 
-Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. Os ativos do Experience Manager e outros softwares determinam automaticamente os metadados técnicos e os metadados podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem em grande parte do tipo de arquivo do ativo. Alguns exemplos de metadados técnicos são:
+Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. [!DNL Experience Manager Assets] e outros softwares determinam automaticamente os metadados técnicos e os metadados podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem em grande parte do tipo de arquivo do ativo. Alguns exemplos de metadados técnicos são:
 
-* Tamanho de um arquivo
-* Dimensões (altura e largura) de uma imagem
-* Taxa de bits de um arquivo de áudio ou vídeo
-* Resolução (nível de detalhes) de uma imagem
+* Tamanho de um arquivo.
+* Dimensões (altura e largura) de uma imagem.
+* Taxa de bits de um arquivo de áudio ou vídeo.
+* Resolução (nível de detalhes) de uma imagem.
 
 Metadados descritivos são metadados relacionados ao domínio do aplicativo, por exemplo, o negócio de onde um ativo vem. Metadados descritivos não podem ser determinados automaticamente. É criado manual ou semiautomaticamente. Por exemplo, uma câmera habilitada para GPS pode rastrear automaticamente a latitude e a longitude e adicionar geolocalização da imagem.
 
 Devido ao alto custo do esforço manual necessário para criar informações descritivas de metadados, foram estabelecidos padrões para facilitar a troca de metadados entre sistemas de software e organizações.
 
-Os ativos Experience Manager oferecem suporte a todos os padrões relevantes para o gerenciamento de metadados.
+[!DNL Experience Manager Assets] oferece suporte a todas as normas relevantes para o gerenciamento de metadados.
 
 Devido à importância dos metadados e ao alto envolvimento manual necessário para criar metadados, foram estabelecidas normas que facilitam o intercâmbio.
 
@@ -71,14 +71,14 @@ Devido à importância dos metadados e ao alto envolvimento manual necessário p
 
 Há várias maneiras de incorporar metadados em arquivos. Há suporte para uma seleção de padrões de codificação:
 
-* XMP: usado pelos ativos do Experience Manager para armazenar os metadados extraídos no repositório.
+* XMP: usado por [!DNL Assets] para armazenar os metadados extraídos no repositório.
 * ID3: para arquivos de áudio e vídeo.
 * Exif: para arquivos de imagem.
 * Outro/Legado: do Microsoft Word, PowerPoint, Excel e assim por diante.
 
 ### XMP {#xmp}
 
-O Extensible Metadata Platform (XMP) é um padrão aberto usado pelos Ativos do Experience Manager para todo o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e dos ativos Experience Manager têm uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+O Extensible Metadata Platform (XMP) é um padrão aberto que é usado por todos [!DNL Experience Manager Assets] o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e do [!DNL Experience Manager Assets] têm uma plataforma poderosa para desenvolver. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -94,11 +94,11 @@ As tags ID3 foram projetadas para o formato de arquivo MP3. Informações adicio
 
 ### Exif {#exif}
 
-O formato de arquivo de imagem permutável (Exif) é o formato de metadados mais popular usado na fotografia digital. Ele fornece uma maneira de incorporar um vocabulário fixo de propriedades de metadados em muitos formatos de arquivo, como JPEG, TIFF, RIFF e WAV. O Exif armazena metadados como pares de um nome de metadados e um valor de metadados. Esses pares de nome-valor de metadados também são chamados de tags, para não serem confundidos com a marcação no Experience Manager. Como a Exif é criada automaticamente por câmeras digitais modernas e é suportada por software de gráficos modernos, ela pode ser vista como o menor denominador comum para o gerenciamento de metadados.
+O formato de arquivo de imagem permutável (Exif) é o formato de metadados mais popular usado na fotografia digital. Ele fornece uma maneira de incorporar um vocabulário fixo de propriedades de metadados em muitos formatos de arquivo, como JPEG, TIFF, RIFF e WAV. O Exif armazena metadados como pares de um nome de metadados e um valor de metadados. Esses pares de nome-valor de metadados também são chamados de tags, para não serem confundidos com a marcação em [!DNL Experience Manager]. Como a Exif é criada automaticamente por câmeras digitais modernas e é suportada por software de gráficos modernos, ela pode ser vista como o menor denominador comum para o gerenciamento de metadados.
 
 Uma grande limitação do Exif é que alguns formatos de arquivo de imagem populares, como BMP, GIF ou PNG, não são compatíveis.
 
-Os campos de metadados normalmente definidos pela Exif são de natureza técnica e são de uso limitado para o gerenciamento descritivo de metadados. Por esse motivo, os Ativos do Experience Manager ofertas o mapeamento de propriedades Exif em esquemas [de metadados](metadata-schemas.md) comuns e em [XMP](xmp-writeback.md).
+Os campos de metadados normalmente definidos pela Exif são de natureza técnica e são de uso limitado para o gerenciamento descritivo de metadados. Por esse motivo, o [!DNL Experience Manager Assets] oferta mapeia as propriedades Exif em esquemas [de metadados](metadata-schemas.md) comuns e em [XMP](xmp-writeback.md).
 
 ### Outros metadados {#other-metadata}
 
@@ -106,9 +106,9 @@ Outros metadados que podem ser incorporados de arquivos incluem Microsoft Word, 
 
 ## Esquemas de metadados {#metadata-schemata}
 
-Os schemas de metadados são conjuntos predefinidos de definições de propriedade de metadados que podem ser usados em vários aplicativos. As propriedades estão sempre associadas a um ativo, o que significa que as propriedades são &quot;sobre&quot; o recurso.
+Os schemas de metadados são conjuntos predefinidos de definições de propriedade de metadados que podem ser usados em vários aplicativos. As propriedades estão sempre associadas a um ativo, o que significa que as propriedades são &#39;sobre&#39; o recurso.
 
-Você também pode projetar seus próprios esquemas de metadados se não houver nenhum que atenda às suas necessidades. Não duplicado informações existentes. Em uma organização, a separação de esquemas facilita o compartilhamento de metadados. O Experience Manager fornece uma lista padrão dos esquemas de metadados mais populares. A lista ajuda você a iniciar rapidamente sua estratégia de metadados e a escolher rapidamente as propriedades de metadados de que você precisa.
+Você também pode projetar seus próprios esquemas de metadados se não houver nenhum que atenda às suas necessidades. Não duplicado informações existentes. Em uma organização, a separação de esquemas facilita o compartilhamento de metadados. [!DNL Experience Manager] fornece uma lista padrão dos esquemas de metadados mais populares. A lista ajuda você a iniciar rapidamente sua estratégia de metadados e a escolher rapidamente as propriedades de metadados de que você precisa.
 
 Os esquemas de metadados suportados estão listados abaixo.
 
@@ -123,19 +123,19 @@ Os esquemas de metadados suportados estão listados abaixo.
 
 ### Metadados específicos do aplicativo {#application-specific-metadata}
 
-Os metadados específicos do aplicativo incluem metadados técnicos e descritivos. Se você os usar, outros aplicativos talvez não consigam usar os metadados. Por exemplo, se você tiver um ativo com metadados do Adobe Photoshop e outro aplicativo de renderização de imagem tentar acessar os metadados, talvez ele não consiga acessar os metadados. Se você descobrir que tem muitos metadados específicos do aplicativo em seus ativos, poderá criar uma etapa de fluxo de trabalho que altera uma propriedade específica do aplicativo para uma propriedade padrão.
+Os metadados específicos do aplicativo incluem metadados técnicos e descritivos. Se você os usar, outros aplicativos talvez não consigam usar os metadados. Por exemplo, se você tiver um ativo com [!DNL Adobe Photoshop] metadados e outro aplicativo de renderização de imagem tentar acessar os metadados, talvez ele não consiga acessar os metadados. Se você descobrir que tem muitos metadados específicos do aplicativo em seus ativos, poderá criar uma etapa de fluxo de trabalho que altera uma propriedade específica do aplicativo para uma propriedade padrão.
 
 * acdsee - metadados gerenciados pelo programa ACDSee [www.acdsee.com/](https://www.acdsee.com/).
 * álbum - Adobe Photoshop Album.
-* cq - usado pelos ativos do Experience Manager.
-* dam - usado pelos ativos do Experience Manager.
+* cq - usado por [!DNL Experience Manager Assets].
+* dam - usado por [!DNL Experience Manager Assets].
 * dex - Optima SC Description Explorer.
 * crs - Adobe Photoshop Camera Raw.
 * lr - Adobe Lightroom.
 * mediapro - IView MediaPro.
 * MicrosoftPhoto &amp; MP - Microsoft Photo.
-* pdf e pdfx
-* photoshop &amp; psAux - Adobe Photoshop
+* pdf &amp; pdfx.
+* photoshop &amp; psAux - Adobe Photoshop.
 
 ### Metadados do Gerenciamento de direitos digitais {#digital-rights-management-metadata}
 
