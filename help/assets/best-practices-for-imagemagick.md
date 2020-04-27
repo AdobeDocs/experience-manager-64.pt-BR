@@ -3,7 +3,7 @@ title: Instalar e configurar o ImageMagick para trabalhar com os ativos AEM
 description: Saiba mais sobre o software ImageMagick, como instalá-lo, configurar a etapa do processo da linha de comando e usá-lo para editar, compor e gerar miniaturas de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -12,22 +12,22 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 ImageMagick é um plug-in de software para criar, editar, compor ou converter imagens de bitmap. Ele pode ler e gravar imagens em vários formatos (mais de 200), incluindo PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF e SVG. Use o ImageMagick para redimensionar, virar, espelhar, girar, distorcer, distorcer e transformar imagens. Você também pode ajustar as cores da imagem, aplicar vários efeitos especiais ou desenhar texto, linhas, polígonos, elipses e curvas usando o ImageMagick.
 
-Use o manipulador de mídia do Adobe Experience Manager (AEM) na linha de comando para processar imagens por meio do ImageMagick. Para trabalhar com vários formatos de arquivo usando o ImageMagick, consulte Práticas [recomendadas para formatos de arquivo](assets-file-format-best-practices.md)Assets. Para saber mais sobre todos os formatos de arquivo suportados, consulte Formatos [compatíveis com o](assets-formats.md)Assets.
+Use o manipulador de mídia do Adobe Experience Manager (AEM) na linha de comando para processar imagens por meio do ImageMagick. Para trabalhar com vários formatos de arquivo usando o ImageMagick, consulte Práticas [recomendadas para formatos de arquivo de](assets-file-format-best-practices.md)Ativos. Para saber mais sobre todos os formatos de arquivo suportados, consulte Formatos [compatíveis com o](assets-formats.md)Assets.
 
 Para processar arquivos grandes usando o ImageMagick, considere requisitos de memória mais altos do que o normal, possíveis alterações necessárias às políticas de IM e o impacto geral no desempenho. Os requisitos de memória dependem de vários fatores, como resolução, profundidade de bits, perfil de cores e formato de arquivo. Se você pretende processar arquivos muito grandes usando o ImageMagick, faça o benchmark adequado do servidor AEM. Alguns recursos úteis são fornecidos no final.
 
 >[!NOTE]
 >
->Se você estiver usando o AEM no Adobe Managed Services (AMS), entre em contato com o suporte da Adobe se planeja processar vários arquivos grandes PSD ou PSB.
+>Se você estiver usando o AEM no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe se você planeja processar muitos arquivos grandes PSD ou PSB. O Experience Manager talvez não processe arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 ## Instalar ImageMagick {#installing-imagemagick}
 
-Várias versões de arquivos de instalação ImageMagic estão disponíveis para vários sistemas operacionais. Use a versão apropriada para seu sistema operacional.
+Várias versões dos arquivos de instalação do ImageMagic estão disponíveis para vários sistemas operacionais. Use a versão apropriada para seu sistema operacional.
 
 1. Baixe os arquivos [de instalação apropriados do](https://www.imagemagick.org/script/download.php) ImageMagick para seu sistema operacional.
 1. Para instalar o ImageMagick no disco que hospeda o servidor AEM, inicie o arquivo de instalação.
 
-1. Defina a variável Path Environment para o diretório de instalação ImageMagic.
+1. Defina a variável path Ambiente para o diretório de instalação ImageMagic.
 1. Para verificar se a instalação foi bem-sucedida, execute o `identify -version` comando.
 
 ## Configurar a etapa do processo da linha de comando {#set-up-the-command-line-process-step}
@@ -36,7 +36,7 @@ Você pode configurar a etapa do processo da linha de comando para seu caso de u
 
 1. No servidor AEM, vá para o console Fluxo de trabalho (`https://[aem_server]:[Port]/workflow`) e abra o modelo de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM.
 1. No modelo de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM, abra a etapa de miniaturas **[!UICONTROL EPS (acionada pelo ImageMagick)]** .
-1. Na guia **** Argumentos, adicione `image/jpeg` à lista **[!UICONTROL Tipos]** MIME.
+1. Na guia **** Argumentos, adicione `image/jpeg` à lista **[!UICONTROL Mime Types]** .
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
@@ -64,7 +64,7 @@ Você pode configurar a etapa do processo da linha de comando para seu caso de u
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Na guia Imagem **[!UICONTROL ativada pela]** Web, adicione o tipo MIME `image/jpeg` na Lista **[!UICONTROL de]** navegação. Tap/click **[!UICONTROL OK]** to save the changes.
+1. Na guia Imagem **[!UICONTROL ativada pela]** Web, adicione o tipo MIME `image/jpeg` sob a Lista **[!UICONTROL Ignorar]**. Tap/click **[!UICONTROL OK]** to save the changes.
 
    ![web_enabled](assets/web_enabled.png)
 
@@ -77,7 +77,7 @@ Há várias vulnerabilidades de segurança associadas ao uso do ImageMagick para
 
 Além disso, vários plug-ins de processamento de imagens dependem da biblioteca do ImageMagick, incluindo, mas não limitado às imagens do PHP, o rmagick e o clipe de papel de Ruby e a imagem do Node.js.
 
-Se você usar o ImageMagick ou uma biblioteca afetada, a Adobe recomenda atenuar as vulnerabilidades conhecidas executando pelo menos uma das seguintes tarefas (mas, de preferência, ambas):
+Se você usar o ImageMagick ou uma biblioteca afetada, a Adobe recomenda atenuar as vulnerabilidades conhecidas, executando pelo menos uma das seguintes tarefas (mas, de preferência, ambas):
 
 1. Verifique se todos os arquivos de imagem começam com os [&quot;bytes mágicos&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) esperados correspondentes aos tipos de arquivos de imagem suportados antes de enviá-los para o ImageMagick para processamento.
 1. Use um arquivo de política para desativar os codificadores vulneráveis do ImageMagick. A política global para ImageMagick encontra-se em `/etc/ImageMagick`.
@@ -88,6 +88,6 @@ Se você usar o ImageMagick ou uma biblioteca afetada, a Adobe recomenda atenuar
 >* [Opções de linha de comando para ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
 >* [Exemplos básicos e avançados de uso do ImageMagick](https://www.imagemagick.org/Usage/)
 >* [Ajuste de desempenho de ativos para ImageMagick](performance-tuning-guidelines.md)
->* [Lista completa dos formatos de arquivo suportados pelo AEM Assets](assets-formats.md)
+>* [lista completa dos formatos de arquivo suportados pelo AEM Assets](assets-formats.md)
 >* [Entender os formatos de arquivo e o custo de memória das imagens](https://www.scantips.com/basics1d.html)
 
