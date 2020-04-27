@@ -3,7 +3,7 @@ title: Guia de ajuste de desempenho de ativos
 description: Principais áreas de foco sobre a configuração do AEM, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho dos ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -136,7 +136,7 @@ Sempre que possível, defina o fluxo de trabalho Atualizar ativo DAM como Transi
 
    Nos casos em que workflows transitórios não podem ser usados, execute a remoção de fluxo de trabalho regularmente para excluir workflows arquivados de ativos de atualização de DAM para garantir que o desempenho do sistema não diminua.
 
-   Normalmente, você deve executar workflows de expurgação semanalmente. No entanto, em cenários com muitos recursos, como durante a ingestão de ativos em larga escala, você pode executá-los com mais frequência.
+   Normalmente, você deve executar workflows de expurgação semanalmente. No entanto, em cenários com uso intenso de recursos, como durante a ingestão de ativos em larga escala, você pode executá-los com mais frequência.
 
    Para configurar a expurgação do fluxo de trabalho, adicione uma nova configuração de Expurgação do fluxo de trabalho do Adobe Granite por meio do console OSGi. Em seguida, configure e agende o fluxo de trabalho como parte da janela de manutenção semanal.
 
@@ -209,11 +209,9 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo *co
 
 >[!NOTE]
 >
->Os arquivos ImageMagick policy.xml e configure.xml podem ser encontrados em /usr/lib64/ImageMagick-&amp;ast;/config/ em vez de /etc/ImageMagick/. Consulte a documentação [do](https://www.imagemagick.org/script/resources.php) ImageMagick para obter detalhes sobre os locais dos arquivos de configuração.
+>Os arquivos ImageMagick `policy.xml` e `configure.xml` ImageMagick podem ser encontrados em `/usr/lib64/ImageMagick-*/config/` vez de `/etc/ImageMagick/`. Consulte a documentação [do](https://www.imagemagick.org/script/resources.php) ImageMagick para obter detalhes sobre os locais dos arquivos de configuração.
 
->[!NOTE]
->
->Se você estiver usando o AEM no Adobe Managed Services (AMS), entre em contato com o suporte da Adobe se planeja processar vários arquivos grandes PSD ou PSB.
+Se você estiver usando o AEM no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe se você planeja processar muitos arquivos grandes PSD ou PSB. O Experience Manager talvez não processe arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 <!-- 
 
