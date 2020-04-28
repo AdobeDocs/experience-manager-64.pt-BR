@@ -3,7 +3,7 @@ title: Write-back de XMP a execuções
 description: Saiba como o recurso de gravação XMP propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: eb135e5898fe521498eecae7109b39f54d274cce
 
 ---
 
@@ -73,7 +73,7 @@ A filtragem da lista de permissões dos metadados XMP resolve esse problema ao p
 
 >[!NOTE]
 >
->A filtragem funciona somente para as propriedades derivadas de fontes XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada em uma propriedade chamada `CreateDate` em EXIF TIFF. O AEM relata esse valor no campo de metadados chamado `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
+>A filtragem funciona somente para as propriedades derivadas de fontes XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada em uma propriedade chamada `CreateDate` em EXIF TIFF. O AEM armazena esse valor no campo de metadados chamado `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
 
 1. Abra o Configuration Manager de `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração **[!UICONTROL Adobe CQ DAM XmpFilter]** .
