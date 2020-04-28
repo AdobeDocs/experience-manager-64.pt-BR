@@ -3,7 +3,7 @@ title: Compare os recursos disponíveis nos ativos AEM e na biblioteca de mídia
 description: Perguntas frequentes sobre os ativos AEM e a biblioteca de mídia do AEM, incluindo as diferenças.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 
