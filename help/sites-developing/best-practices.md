@@ -1,6 +1,6 @@
 ---
-title: 'Práticas recomendadas '
-seo-title: 'Práticas recomendadas '
+title: 'Práticas recomendadas  '
+seo-title: 'Práticas recomendadas  '
 description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
 seo-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
 uuid: f962c31f-8140-482f-b189-16376e23bfed
@@ -10,18 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 82e065a7faefe6d91f23e2b54dd045fd240fafbb
+source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 
 ---
 
 
-# Práticas recomendadas {#best-practices}
+# Práticas recomendadas  {#best-practices}
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
 
 As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM. Os desenvolvedores da Adobe seguem essas práticas recomendadas ao desenvolver atualizações de produtos AEM e código do cliente para implementações de clientes.
 
-Antes de iniciar o projeto de desenvolvimento do AEM, analise primeiro essas práticas recomendadas:
+Antes de start de seu projeto de desenvolvimento do AEM, analise primeiro essas práticas recomendadas:
 
 * [Práticas de desenvolvimento](/help/sites-developing/development-practices.md)
 * [Arquitetura de conteúdo](/help/sites-developing/content-architecture.md)
@@ -30,6 +30,7 @@ Antes de iniciar o projeto de desenvolvimento do AEM, analise primeiro essas pr�
 * [Opções de código](/help/sites-developing/code-pitfalls.md)
 * [Interação JCR](/help/sites-developing/jcr-integration.md)
 * [Pacotes OSGi](/help/sites-developing/osgi-bundles.md)
+* [Práticas recomendadas da API Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informações adicionais sobre práticas recomendadas {#additional-best-practices-information}
 
@@ -70,8 +71,8 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
   </tr>
   <tr>
    <td>Fluxos de trabalhos</td> 
-   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de fluxos de trabalho</a></td> 
-   <td><p>Os fluxos de trabalho permitem que você automatize as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de fluxos de trabalho com cuidado.</p> </td> 
+   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de Workflows</a></td> 
+   <td><p>Os Workflows permitem que você automatize as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td> 
   </tr>
  </tbody>
 </table>
