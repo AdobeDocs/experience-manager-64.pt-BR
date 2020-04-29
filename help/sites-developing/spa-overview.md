@@ -1,8 +1,8 @@
 ---
 title: Visão geral do editor SPA
 seo-title: Visão geral do editor SPA
-description: Este artigo fornece uma visão geral abrangente do Editor SPA e de como ele funciona, incluindo fluxos de trabalho detalhados de interação do Editor SPA no AEM.
-seo-description: Este artigo fornece uma visão geral abrangente do Editor SPA e de como ele funciona, incluindo fluxos de trabalho detalhados de interação do Editor SPA no AEM.
+description: Este artigo fornece uma visão geral abrangente do Editor SPA e de como ele funciona, incluindo workflows detalhados de interação do Editor SPA no AEM.
+seo-description: Este artigo fornece uma visão geral abrangente do Editor SPA e de como ele funciona, incluindo workflows detalhados de interação do Editor SPA no AEM.
 uuid: 600f1100-5cfa-4b75-a58c-f773395b5e05
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,16 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: cd5d0f22986888d90a6cb448da949dc17b0564cf
+source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
 
 ---
 
 
 # Visão geral do editor SPA{#spa-editor-overview}
 
-Os aplicativos de página única (SPAs) podem oferecer experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM sem problemas para um site criado usando essas estruturas.
+Os aplicativos de página única (SPAs) podem oferta experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM sem problemas para um site criado usando essas estruturas.
 
-O Editor SPA oferece uma solução abrangente para suportar SPAs no AEM. Esta página fornece uma visão geral de como o suporte a SPA está estruturado no AEM, como o Editor SPA funciona e como a estrutura SPA e o AEM permanecem sincronizados.
+O Editor SPA oferta uma solução abrangente para suportar SPAs no AEM. Esta página fornece uma visão geral de como o suporte a SPA está estruturado no AEM, como o Editor SPA funciona e como a estrutura SPA e o AEM permanecem sincronizados.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Se o componente de página SPA herdar do componente principal da página, há du
 * Ou adicione as categorias usando o `customfooterlibs.html`.
 
 Para cada recurso no modelo exportado, o SPA mapeará um componente real que fará o\
-renderização. O modelo, representado como JSON, é renderizado usando os mapeamentos de componente em um contêiner.\
+renderização. O modelo, representado como JSON, é renderizado usando os mapeamentos de componente dentro de um container.\
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
@@ -157,7 +157,7 @@ Esta é uma visão geral mais detalhada da interação cliente-servidor ao edita
 
 ### Fluxo de trabalho de criação {#authoring-workflow}
 
-Esta é uma visão geral mais detalhada focada na experiência de criação.
+Esta é uma visão geral mais detalhada que foca na experiência de criação.
 
 ![spa_content_authoringmodel](assets/spa_content_authoringmodel.png)
 
@@ -167,7 +167,7 @@ Esta é uma visão geral mais detalhada focada na experiência de criação.
 
    **2b** Quando notificado, o orquestrador de componentes atualiza a estrutura de conteúdo da página.
 
-1. O orquestrador de componentes consulta o mapeamento entre um tipo de recurso AEM e um componente SPA.
+1. O orquestrador do componente query o mapeamento entre um tipo de recurso AEM e um componente SPA.
 
 1. O orquestrador de componentes instancia dinamicamente o componente SPA com base no modelo de página e no mapeamento de componentes.
 
@@ -185,7 +185,7 @@ Esta é uma visão geral mais detalhada focada na experiência de criação.
 
 ## Requisitos e limitações {#requirements-limitations}
 
-Para permitir que o autor use o editor de página para editar o conteúdo de um SPA, seu aplicativo SPA deve ser implementado para interagir com o SDK do editor SPA do AEM. Consulte a [Introdução aos SPAs no documento AEM](/help/sites-developing/spa-getting-started-react.md) para obter o mínimo necessário para executar o seu.
+Para permitir que o autor use o editor de página para editar o conteúdo de um SPA, seu aplicativo SPA deve ser implementado para interagir com o SDK do editor SPA do AEM. Consulte [Introdução aos SPAs no documento AEM](/help/sites-developing/spa-getting-started-react.md) para obter o mínimo necessário para executar o seu.
 
 ### Estruturas suportadas {#supported-frameworks}
 
@@ -198,15 +198,26 @@ As versões anteriores dessas estruturas podem funcionar com o AEM SPA Editor SD
 
 ### Estruturas adicionais {#additional-frameworks}
 
-Estruturas SPA adicionais podem ser implementadas para funcionar com o SDK do editor SPA do AEM. Consulte o documento [SPA Blueprint](/help/sites-developing/spa-blueprint.md) para ver os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta de módulos, componentes e serviços para trabalhar com o AEM SPA Editor.
+Estruturas SPA adicionais podem ser implementadas para funcionar com o SDK do editor SPA do AEM. Consulte o documento [SPA Blueprint](/help/sites-developing/spa-blueprint.md) para ver os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta de módulos, componentes e serviços para trabalhar com o editor AEM SPA.
 
-### Limitações  {#limitations}
+### Requisitos do editor de texto {#text-editor-requirements}
+
+Se você quiser usar o editor no local de um componente de texto criado no SPA, há uma configuração adicional necessária.
+
+1. Defina um atributo (pode ser qualquer) no elemento invólucro do container que contém o texto HTML. No caso do conteúdo de amostra do Journal WKND, ele é um `<div>` elemento e o seletor que foi usado é `data-rte-editelement`.
+1. Defina a configuração `editElementQuery` no componente de texto do AEM correspondente `cq:InplaceEditingConfig` que aponta para o seletor, por exemplo `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
+
+Para ver um exemplo de como isso é feito, consulte o conteúdo de amostra do Journal [WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+
+Para obter informações adicionais sobre a `editElementQuery` propriedade e a configuração do editor de Rich Text, consulte [Configurar o Editor de Rich Text.](/help/sites-administering/rich-text-editor.md)
+
+### Limitações         {#limitations}
 
 O AEM SPA Editor SDK foi introduzido com o AEM 6.4 service pack 2. Ele é totalmente compatível com a Adobe e, como um novo recurso, continua sendo aprimorado e expandido. Os seguintes recursos do AEM ainda não são abordados pelo Editor SPA:
 
-* Modo de destino
+* modo Público alvo
 * ContextHub
-* Edição de imagens em linha
+* Edição de imagens embutidas
 * Editar configurações (por exemplo, ouvintes)
 * Sistema de estilos
 * Desfazer / Refazer
