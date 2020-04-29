@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
 
 ---
 
@@ -255,7 +255,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 >
 >Navegar para outras páginas do editor de páginas só é possível no modo de visualização, pois os links não estão ativos no modo de Edição...
 
-### Copiar e colar uma página  {#copying-and-pasting-a-page}
+### Copiar e colar uma página   {#copying-and-pasting-a-page}
 
 É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
@@ -362,8 +362,12 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
    >
    >Como uma precaução de segurança, o ícone de **Excluir página** não está disponível como uma ação rápida.
 
-1. Uma caixa de diálogo irá pedir confirmação, use:
+1. Uma caixa de diálogo pedirá confirmação.
 
+   * **Você deseja arquivar as páginas antes de excluir?** - Se marcada, as versões das páginas selecionadas para exclusão serão criadas após a exclusão.
+      * [As versões podem ser restauradas em uma data posterior.](/help/sites-authoring/working-with-page-versions.md)
+      * As páginas excluídas sem versões anteriores não podem ser restauradas.
+      * Essa opção só está disponível no AEM versão 6.4.7.0.
    * **Cancelar** para suspender a ação
    * **Excluir** para confirmar a ação:
 
