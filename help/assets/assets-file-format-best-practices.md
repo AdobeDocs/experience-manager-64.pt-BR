@@ -3,7 +3,7 @@ title: Práticas recomendadas de formato de arquivo de ativos
 description: Práticas recomendadas para suporte a arquivos nos ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
@@ -33,7 +33,7 @@ Para obter melhores resultados, a Adobe recomenda usar a biblioteca do Adobe PDF
 * Arquivos AI com miniaturas não gerados na caixa
 * Para arquivos AI com cores SPOT (PMS)
 
-As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação à saída rasterizada predefinida. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Independentemente do espaço de cor do arquivo PDF de origem, o Adobe PDF Rasterizer gera apenas saída RGB.
+As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação à saída rasterizada predefinida. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Independentemente do espaço de cor do arquivo PDF de origem, o Adobe PDF Rasterizer gera apenas saída RGB.
 
 ## Adobe InDesign Server {#adobe-indesign-cc-server}
 
@@ -41,9 +41,9 @@ A Adobe recomenda usar o servidor do Adobe InDesign para extrair execuções esp
 
 ## Dynamic Media  {#dynamic-media}
 
-O Dynamic Media gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele proporciona experiências de visualização interativas e simplifica o processo de gerenciamento de campanha digital. Para obter detalhes sobre como ativar o Dynamic Media, consulte [Configuração do Dynamic Media](config-dynamic.md).
+O Dynamic Media gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele proporciona experiências de visualização interativas e simplifica o processo de gestão de campanha digital. Para obter detalhes sobre como ativar o Dynamic Media, consulte [Configuração do Dynamic Media](config-dynamic.md).
 
-Atualmente, o Dynamic Media pode oferecer suporte a vídeos com até 20 GB de conteúdo por arquivo.
+Atualmente, o Dynamic Media pode oferecer suporte a vídeos com até 15 GB de conteúdo por arquivo.
 
 ## Biblioteca ImageMagick {#imagemagick-library}
 
