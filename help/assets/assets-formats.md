@@ -3,7 +3,7 @@ title: Formatos de arquivo suportados no AEM Assets
 description: Lista de formatos de arquivos e tipos MIME suportados pelo AEM Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
 
 ---
 
@@ -34,7 +34,7 @@ Os formatos de imagem rasterizados compatíveis com os recursos de gerenciamento
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PFM | ✓ | ✓ |  |  |  |  | ✓ |
+| PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
 | PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
@@ -54,7 +54,7 @@ Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
-| PFM |  |  |  |  |  |
+| PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
 | PSD **‡** | ✓ |  |  |  |  |
@@ -73,6 +73,17 @@ Além das informações acima, considere o seguinte:
 * Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos EPS, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de estruturação de Documentos PostScript (PS-Adobe).
+
+## Formatos de imagem rasterizada não suportados no Dynamic Media (#unsupported-image-format-dynamic-media)
+
+A lista a seguir descreve os subtipos de formatos de arquivo de imagem rasterizada que *não* são suportados no Dynamic Media.
+
+* Arquivos PNG com um tamanho de bloco IDAT maior que 100 MB.
+* Arquivos PSB.
+* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são suportados. Espaços de cores Indexadas, Lab e DuoTone não são suportados.
+* Arquivos PSD com uma profundidade de bits superior a 16.
+* Arquivos TIFF com dados de ponto flutuante.
+* Arquivos TIFF com espaço de cor Lab.
 
 ## Biblioteca do PDF Rasterizer {#supported-pdf-rasterizer-library}
 
