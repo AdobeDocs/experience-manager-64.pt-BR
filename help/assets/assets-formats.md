@@ -3,7 +3,7 @@ title: Formatos de arquivo suportados no AEM Assets
 description: Lista de formatos de arquivos e tipos MIME suportados pelo AEM Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
+source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
 
 ---
 
@@ -74,7 +74,7 @@ Além das informações acima, considere o seguinte:
 
 * Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de estruturação de Documentos PostScript (PS-Adobe).
 
-## Formatos de imagem rasterizada não suportados no Dynamic Media (#unsupported-image-format-dynamic-media)
+## Formatos de imagem rasterizada não suportados no Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 A lista a seguir descreve os subtipos de formatos de arquivo de imagem rasterizada que *não* são suportados no Dynamic Media.
 
