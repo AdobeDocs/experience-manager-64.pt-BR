@@ -3,7 +3,7 @@ title: Importação e exportação de metadados em massa
 description: Este artigo descreve como importar e exportar metadados em massa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 093524d47565f63c8179abee704720fe23b0d09a
+source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
 
 ---
 
@@ -35,7 +35,13 @@ Para importar metadados em massa, siga estas etapas:
    | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definidas como true e as configurações padrão do Iniciador estiverem em vigor para o `DAM Metadata WriteBack Workflow` (que grava metadados nos dados binários XMP). Habilitar workflows de inicialização tem um impacto no desempenho do sistema. |
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
-1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para sua caixa de entrada de Notificação. Navegue até a página de propriedade do ativo e verifique se os valores de metadados foram importados corretamente para ativos.
+1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para sua caixa de entrada de Notificação. Navegue até a página de propriedades do ativo e verifique se os valores de metadados foram importados corretamente para ativos.
+
+Para adicionar data e carimbo de data e hora ao importar metadados, use o `YYYY-MM-DDThh:mm:ss.fff-00:00` formato para data e hora. A data e a hora são separadas por `T`, `hh` é horas no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 da hora PST.
+
+>[!CAUTION]
+>
+>Se o formato de data não corresponder `YYYY-MM-DDThh:mm:ss.fff-00:00`, os valores de data não serão definidos. Os formatos de data do arquivo CSV de metadados exportados estão no formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desejar importá-lo, converta-o no formato aceitável adicionando o valor de nanossegundos indicado por `fff`.
 
 ## Exportar metadados {#export-metadata}
 
