@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
 
 ## Visão geral {#overview}
 
-Os aplicativos de página única (SPAs) podem oferecer ao usuário experiências ricas e dinâmicas que reagem e se comportam de maneiras familiares, geralmente como os aplicativos nativos. [Isso é feito contando com o cliente para carregar o conteúdo antecipadamente e, em seguida, fazer um pesado levantamento da manipulação da interação](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work) do usuário, minimizando a quantidade de comunicação necessária entre o cliente e o servidor, tornando o aplicativo mais reativo.
+Os aplicativos de página única (SPAs) podem oferta ao usuário de experiências ricas e dinâmicas que reagem e se comportam de maneiras familiares, geralmente como os aplicativos nativos. [Isso é feito contando com o cliente para carregar o conteúdo antecipadamente e, em seguida, fazer um pesado levantamento da manipulação da interação](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work) do usuário, minimizando a quantidade de comunicação necessária entre o cliente e o servidor, tornando o aplicativo mais reativo.
 
 No entanto, isso pode levar a tempos de carregamento iniciais mais longos, especialmente se o SPA for grande e rico em seu conteúdo. Para otimizar o tempo de carregamento, parte do conteúdo pode ser renderizada no lado do servidor. O uso da renderização no lado do servidor (SSR) pode acelerar a carga inicial da página e passar a renderização para o cliente.
 
@@ -40,8 +40,8 @@ Ao decidir implementar a SSR, você deve primeiro estimar o que a complexidade a
 
 A SSR geralmente fornece algum valor quando há um claro &quot;sim&quot; a qualquer uma das seguintes perguntas:
 
-* **** SEO: O SSR ainda é necessário para que seu site seja indexado corretamente pelos mecanismos de pesquisa que trazem tráfego? Lembre-se de que os principais rastreadores de mecanismo de pesquisa agora avaliam o JS.
-* **** Velocidade da página: A SSR fornece uma melhoria mensurável da velocidade em ambientes reais e adiciona à experiência geral do usuário?
+* **SEO:** O SSR ainda é necessário para que seu site seja indexado corretamente pelos mecanismos de pesquisa que trazem tráfego? Lembre-se de que os principais rastreadores de mecanismo de pesquisa agora avaliam o JS.
+* **Velocidade da página:** A SSR fornece uma melhoria mensurável da velocidade em ambientes reais e adiciona à experiência geral do usuário?
 
 Somente quando uma dessas duas perguntas for respondida com um claro &quot;sim&quot; para o seu projeto, a Adobe recomenda implementar a SSR. As seções a seguir descrevem como fazer isso usando o Adobe I/O Runtime.
 
@@ -57,11 +57,11 @@ Para obter mais informações sobre o tempo de execução de E/S da Adobe, consu
 As seções a seguir detalham como o Adobe I/O Runtime pode ser usado para implementar o SSR para seu SPA em dois modelos diferentes:
 
 * [Fluxo de comunicação orientado pelo AEM](#aem-driven-communication-flow)
-* [Fluxo de comunicação direcionado para E/S da Adobe](#adobe-io-driven-communication-flow)
+* [Fluxo de comunicação direcionado para o tempo de execução de E/S da Adobe](#adobe-io-driven-communication-flow)
 
 >[!NOTE]
 >
->A Adobe recomenda uma instância separada do tempo de execução de E/S da Adobe para cada ambiente AEM (autor, publicação, estágio etc.).
+>A Adobe recomenda uma instância separada do Tempo de execução de E/S da Adobe para cada ambiente AEM (autor, publicação, estágio etc.).
 
 ## Configuração remota do renderizador de conteúdo {#remote-content-renderer-configuration}
 
@@ -73,7 +73,7 @@ Isso é feito por meio do serviço **RemoteContentRenderer - OSGi de fábrica** 
 
 Os seguintes campos estão disponíveis para a configuração:
 
-* **Padrão** de caminho de conteúdo - Expressão regular para corresponder a uma parte do conteúdo, se necessário
+* **Padrão** do caminho do conteúdo - expressão regular para corresponder a uma parte do conteúdo, se necessário
 * **URL** de ponto de extremidade remoto - URL do ponto de extremidade responsável pela geração do conteúdo
    * Use o protocolo HTTPS protegido se não estiver na rede local.
 * **Cabeçalhos** de solicitação adicionais - Cabeçalhos adicionais a serem adicionados à solicitação enviada ao terminal remoto
@@ -97,7 +97,7 @@ Ao usar o SSR, o fluxo de trabalho [de interação do](/help/sites-developing/sp
 1. O navegador solicita o conteúdo SSR do AEM.
 1. O AEM publica o modelo no Adobe I/O Runtime.
 1. O tempo de execução de E/S da Adobe retorna o conteúdo gerado
-1. O AEM serve o HTML retornado pelo Adobe I/O Runtime via modelo HTL do componente de página de backend.
+1. O AEM serve o HTML retornado pelo Adobe I/O Runtime através do modelo HTL do componente de página de backend.
 
 ![server-side-rendering-cms-drivenaemnode](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)
 
@@ -109,7 +109,7 @@ Como alternativa, a SSR pode ser implementada para que o Adobe I/O Runtime seja 
 
 Ambos os modelos são válidos e são suportados pelo AEM. No entanto, é preciso considerar as vantagens e desvantagens de cada um antes de implementar um modelo específico.
 
-| Inicialização | Vantagens | Desvantagens |
+| Bootstrapping | Vantagens | Desvantagens |
 |---|---|---|
 | via AEM | O AEM gerencia a inserção de bibliotecas onde<br>necessárioRecursos só precisam ser mantidos no AEM | Possivelmente estranho para o desenvolvedor SPA |
 | via Adobe I/O Runtime | Mais familiar para desenvolvedores de SPA | Os recursos clientlib exigidos pelo aplicativo, como CSS e JavaScript, precisarão ser disponibilizados pelo desenvolvedor do AEM por meio da [`allowProxy` propriedade. Os recursos devem ser sincronizados entre o AEM e o Adobe I/O](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br><br>RuntimePara habilitar a criação do SPA, pode ser necessário um servidor proxy para o Adobe I/O Runtime |
@@ -124,7 +124,7 @@ Ao considerar implementar a renderização do lado do servidor para o SPA, é ne
 
 Os componentes SPA podem ser renderizados pelo cliente (no navegador) ou pelo servidor. Quando o servidor renderizado, as propriedades do navegador, como tamanho e localização da janela, não estão presentes. Por conseguinte, os componentes do SPA devem ser isomórficos, não assumindo qualquer hipótese quanto ao local em que serão apresentados.
 
-Para aproveitar a SSR, será necessário implantar seu código no AEM, bem como no Adobe I/O Runtime, que é responsável pela renderização no servidor. A maioria do código será o mesmo, no entanto, as tarefas específicas do servidor serão diferentes.
+Para aproveitar a SSR, será necessário implantar seu código no AEM, bem como no Adobe I/O Runtime, que é responsável pela renderização no servidor. A maioria do código será o mesmo, no entanto, tarefas específicas do servidor serão diferentes.
 
 ## SSR para SPAs no AEM {#ssr-for-spas-in-aem}
 
@@ -135,13 +135,13 @@ Da mesma forma que o AEM suporta as estruturas SPA Angular e Reata prontas para 
 * Reagir: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Para obter um exemplo simplista, consulte o aplicativo [We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Ele renderiza todo o lado do servidor de aplicativos. Embora este não seja um exemplo real, ilustra o que é necessário para implementar a RSS.
+Para obter um exemplo simplista, consulte o aplicativo de Journal [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Ele renderiza todo o lado do servidor de aplicativos. Embora este não seja um exemplo real, ele ilustra o que é necessário para implementar a SSR.
 
 >[!CAUTION]
->O aplicativo [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal é apenas para fins de demonstração e, portanto, usa Node.js como um exemplo simples em vez do Adobe I/O Runtime recomendado. Este exemplo não deve ser usado para nenhum trabalho de projeto.
+>O aplicativo [Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail é apenas para fins de demonstração e, portanto, usa Node.js como um exemplo simples em vez do tempo de execução de E/S recomendado pela Adobe. Este exemplo não deve ser usado para nenhum trabalho de projeto.
 
 >[!NOTE]
->Todos os projetos de SPA no AEM devem se basear no [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+>Qualquer projeto do AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
 
 ## Uso de Node.js {#using-node-js}
 
@@ -153,7 +153,7 @@ Node.js não é compatível com instâncias AEM hospedadas pela Adobe.
 
 >[!NOTE]
 >
->Se o SSR precisar ser implementado via Node.js, a Adobe recomenda uma instância diferente do Node.js para cada ambiente do AEM (autor, publicação, estágio etc.).
+>Se o SSR precisar ser implementado via Node.js, a Adobe recomenda uma instância diferente de Node.js para cada ambiente AEM (autor, publicação, estágio etc.).
 
 ## Renderizador de conteúdo remoto {#remote-content-renderer}
 
@@ -195,7 +195,7 @@ Para obter um servlet e retornar algum conteúdo que possa ser inserido na pági
 1. Como opção, crie ou modifique as configurações do OSGi.
 1. Procurar o conteúdo do site
 
-Normalmente, o modelo HTL de um componente de página é o principal destinatário desse recurso.
+Normalmente, o modelo HTL de um componente de página é o recipient principal desse recurso.
 
 ```
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
