@@ -10,14 +10,14 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
 
 # Desenvolver SPAs para o AEM{#developing-spas-for-aem}
 
-Os aplicativos de página única (SPAs) podem oferecer experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM sem problemas para um site criado usando essas estruturas.
+Os aplicativos de página única (SPAs) podem oferta experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM sem problemas para um site criado usando essas estruturas.
 
 Este artigo apresenta questões importantes a serem consideradas ao envolver um desenvolvedor front-end para desenvolver um SPA para o AEM e fornece uma visão geral da arquitetura do AEM em relação à implantação de SPAs no AEM.
 
@@ -27,9 +27,9 @@ Este artigo apresenta questões importantes a serem consideradas ao envolver um 
 >
 >O Editor SPA é a solução recomendada para projetos que exigem renderização do lado do cliente baseada em estrutura SPA (por exemplo, Reagir ou Angular).
 
-## Maven Archetype para o kit de início SPA {#maven-archetype-for-spa-starter-kit}
+## AEM Project Archetype {#aem-project-archetype}
 
-Qualquer projeto SPA no AEM deve aproveitar o [Maven Archetype para o Kit](https://github.com/adobe/aem-spa-project-archetype)Inicial SPA.
+Qualquer projeto do AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
 
 ## Princípios de desenvolvimento do SPA para o AEM {#spa-development-principles-for-aem}
 
@@ -40,7 +40,7 @@ Desenvolver aplicativos de página única no AEM pressupõe que o desenvolvedor 
 * **[Renderização](/help/sites-developing/spa-architecture.md#dynamic-rendering)**dinâmica - todas as renderizações devem ser dinâmicas.
 * **[Roteamento](#dynamic-routing)dinâmico -**o SPA é responsável pelo roteamento e o AEM o escuta e busca os dados do componente com base nele. Qualquer roteamento também deve ser dinâmico.
 
-Se você tiver esses princípios em mente ao desenvolver seu SPA, ele será o mais flexível e a prova mais futura possível, além de ativar toda a funcionalidade de criação do AEM suportada.
+Se você tiver esses princípios em mente ao desenvolver seu SPA, ele será o mais flexível e a prova futura possível, além de ativar todas as funcionalidades de criação do AEM suportadas.
 
 Se você não precisar suportar os recursos de criação do AEM, pode ser necessário considerar um modelo [de design](/help/sites-developing/spa-architecture.md#spa-design-models)SPA diferente.
 
@@ -56,13 +56,13 @@ O SPA resultante deve ser construído com componentes altamente portáteis e reu
 
 O desenvolvedor front-end deve se considerar responsável pela criação de uma biblioteca de componentes SPA usados para criar o aplicativo. O desenvolvedor front-end tem controle total da estrutura interna dos componentes. [No entanto, o AEM sempre possui a estrutura do site.](/help/sites-developing/spa-overview.md)
 
-Isso significa que o desenvolvedor front-end pode adicionar conteúdo ao cliente antes ou depois do ponto de entrada dos componentes e também pode fazer chamadas de terceiros dentro do componente. No entanto, o desenvolvedor de front-end não controla totalmente como os componentes são aninhados, por exemplo.
+Isso significa que o desenvolvedor front-end pode adicionar conteúdo ao cliente antes ou depois do ponto de entrada dos componentes e também pode fazer chamadas de terceiros dentro do componente. No entanto, o desenvolvedor de front-end não está no controle total de como os componentes são aninhados, por exemplo.
 
 ### Renderização dinâmica {#dynamic-rendering}
 
 O SPA deve depender apenas da renderização dinâmica do conteúdo. Essa é a expectativa padrão na qual o AEM busca e renderiza todos os filhos da estrutura de conteúdo.
 
-Qualquer renderização explícita que aponte para um conteúdo específico é considerada uma renderização estática e, embora seja compatível com os recursos de criação de conteúdo do AEM. Isto também vai contra o princípio da [portabilidade](/help/sites-developing/spa-architecture.md#portability).
+Qualquer renderização explícita que aponte para um conteúdo específico é considerada uma renderização estática e, embora compatível, não será compatível com os recursos de criação de conteúdo do AEM. Isto também vai contra o princípio da [portabilidade](/help/sites-developing/spa-architecture.md#portability).
 
 ### Roteamento dinâmico {#dynamic-routing}
 
@@ -115,7 +115,7 @@ Siga estas etapas para preparar seu SPA existente para trabalhar com o AEM.
 
    Torne-os capazes de serem renderizados em qualquer ordem, posição e tamanho.
 
-1. **Use os contêineres fornecidos pelo SDK para colocar seus componentes na tela.**
+1. **Use os container fornecidos pelo SDK para colocar seus componentes na tela.**
 
    O AEM fornece um componente de sistema de página e parágrafo para você usar.
 
@@ -155,7 +155,7 @@ A seguir está um resumo das etapas que um desenvolvedor front-end precisa segui
 
    Esse parâmetro é necessário para informar ao editor como o componente deve ser nomeado desde que ainda não seja renderizado ou não tenha conteúdo para renderizar.
 
-1. **Estender a`Container`classe fornecida para páginas e contêineres**
+1. **Estender a`Container`classe fornecida para páginas e container**
 
    Os sistemas de páginas e parágrafos devem estender essa classe para que a delegação aos componentes internos funcione como esperado.
 
@@ -178,7 +178,7 @@ Esses blocos de código ilustram como seus componentes React e Angular não prec
 
 O `MapTo` auxiliar é a &quot;cola&quot; que permite que os componentes de back-end e de front-end sejam combinados:
 
-* Ele informa ao contêiner JS (ou sistema de parágrafo JS) qual componente JS é responsável pela renderização de cada um dos componentes presentes no JSON.
+* Ele informa ao container JS (ou sistema de parágrafo JS) qual componente JS é responsável pela renderização de cada um dos componentes presentes no JSON.
 * Ele adiciona um atributo de dados HTML ao HTML que o componente JS renderiza, para que o Editor SPA saiba qual caixa de diálogo será exibida ao autor ao editar o componente.
 
 Para obter mais informações sobre como usar `MapTo` e criar SPAs para o AEM em geral, consulte o guia Introdução para sua estrutura selecionada.
@@ -192,7 +192,7 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
 ![screen_shot_2018-12-11at145348](assets/screen_shot_2018-12-11at145348.png)
 
-* **Criar ambiente**
+* **Criar Ambiente**
 
    É aqui que a fonte da fonte do aplicativo SPA e da fonte do componente é retirada.
 
@@ -217,10 +217,10 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
 * **Dispatcher / CDN**
 
-   O dispatcher serve como a camada de cache do AEM para visitantes do site.
+   O dispatcher serve como a camada de cache do AEM para visitantes no site.
 
    * As solicitações são processadas de forma semelhante à forma como estão no autor de AEM, no entanto, não há solicitação de informações da página, pois isso só é necessário para o editor.
-   * Javascript, CSS, JSON e HTML são armazenados em cache, otimizando a página para entrega rápida.
+   * Javascript, CSS, JSON e HTML são armazenados em cache, otimizando a página para delivery rápido.
 
 >[!NOTE]
 >
