@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -44,7 +44,7 @@ A apresentação é baseada na funcionalidade padrão do AEM e no aplicativo de 
 >
 >Este documento usa o aplicativo [do Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail apenas para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
 >
->Todos os projetos de SPA no AEM devem se basear no [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+>Qualquer projeto do AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
 
 ### O que é um SPA? {#what-is-a-spa}
 
