@@ -3,7 +3,10 @@ title: Esquemas de metadados
 description: 'O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
+source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+workflow-type: tm+mt
+source-wordcount: '2524'
+ht-degree: 13%
 
 ---
 
@@ -32,22 +35,34 @@ Você pode usar o editor de Formulários de Schemas de Metadados para modificar 
 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
-   O AEM fornece os seguintes modelos prontos para uso:
-   * **padrão**: O formulário de schema de metadados base para ativos.
+## Formulários de Schema de metadados disponíveis por padrão {#available-metadata-schema-templates}
 
-      Os seguintes formulários filho herdam as propriedades do formulário padrão:
+[!DNL Experience Manager] fornece os seguintes modelos de formulário de Schema de metadados:
 
-      1. **imagem**: Formulário de Schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, `image/jpeg`, `image/png`etc.
+### default {#default-template}
 
-         O formulário &quot;image&quot; tem os seguintes modelos de formulário filho:
-         * **jpeg**: Formulário de Schema para ativos com subtipo `jpeg`.
-         * **TIFF**: Formulário de Schema para os ativos com subtipo `tiff`.
-      1. **aplicação**: Formulário de Schema para ativos com tipo MIME `application`, por exemplo `application/pdf`, `application/zip`etc.
-         * **pdf**: Formulário de Schema para ativos com subtipo `pdf`.
-      1. **vídeo**: Formulário de Schema para ativos com tipo MIME `video`, como `video/avi`, `video/mp4`etc.
-   * **coleção**: Formulário de Schema para coleções.
-   * **contentfragment:** Formulário de Schema para Fragmentos de conteúdo.
-   * **formulários**: Este formulário de schema está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md).
+O [!UICONTROL padrão] é o formulário de schema de metadados base para ativos. Os seguintes formulários filho herdam as propriedades do formulário padrão:
+
+* **image** é o formulário de schema para ativos com o tipo MIME &quot;image&quot;. Por exemplo, `image/jpeg`, `image/png`e assim por diante. O formulário &quot;image&quot; tem os seguintes modelos de formulário filho:
+   * **jpeg** é o formulário de schema para ativos com subtipo `jpeg`.
+
+   * **tiff** é o formulário de schema para os ativos com subtipo `tiff`.
+
+* **application** é o formulário de schema para ativos com tipo MIME `application`. Por exemplo, `application/pdf`, `application/zip`e assim por diante. **pdf** é o formulário de schema para ativos com subtipo `pdf`.
+
+* **video** é o formulário de schema para ativos com tipo MIME `video`, como `video/avi`, `video/mp4`etc.
+
+### collection {#collection-template}
+
+A [!UICONTROL coleção] é o formulário de schema para coleções.
+
+### contentfragment {#contentfragment-template}
+
+O fragmento de [!UICONTROL conteúdo] é o formulário de schema para Fragmentos de conteúdo.
+
+### forms {#forms-template}
+
+O formulário de schema de [!UICONTROL formulários] está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
@@ -165,7 +180,7 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**, por padrão.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
 
