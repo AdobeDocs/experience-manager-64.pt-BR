@@ -3,10 +3,10 @@ title: Esquemas de metadados
 description: 'O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 13%
+source-wordcount: '2511'
+ht-degree: 12%
 
 ---
 
@@ -31,38 +31,22 @@ Você pode usar o editor de Formulários de Schemas de Metadados para modificar 
 
    Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Edição de formulários](metadata-schemas.md#editing-metadata-schema-forms) de Schema de metadados para obter mais informações. Se você modificar o schema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um `jpeg` schema em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com tipo MIME `IMAGE/JPEG`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
-1. Para exibir uma lista de formulários/modelos, clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**.
+## Formulários de esquema de metadados {#default-metadata-schema-forms}
 
-   ![chlimage_1-37](assets/chlimage_1-173.png)
-
-## Formulários de Schema de metadados disponíveis por padrão {#available-metadata-schema-templates}
+Para visualização de uma lista de formulários/modelos, na [!DNL Experience Manager] interface, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados.
 
 [!DNL Experience Manager] fornece os seguintes modelos de formulário de Schema de metadados:
 
-### default {#default-template}
-
-O [!UICONTROL padrão] é o formulário de schema de metadados base para ativos. Os seguintes formulários filho herdam as propriedades do formulário padrão:
-
-* **image** é o formulário de schema para ativos com o tipo MIME &quot;image&quot;. Por exemplo, `image/jpeg`, `image/png`e assim por diante. O formulário &quot;image&quot; tem os seguintes modelos de formulário filho:
-   * **jpeg** é o formulário de schema para ativos com subtipo `jpeg`.
-
-   * **tiff** é o formulário de schema para os ativos com subtipo `tiff`.
-
-* **application** é o formulário de schema para ativos com tipo MIME `application`. Por exemplo, `application/pdf`, `application/zip`e assim por diante. **pdf** é o formulário de schema para ativos com subtipo `pdf`.
-
-* **video** é o formulário de schema para ativos com tipo MIME `video`, como `video/avi`, `video/mp4`etc.
-
-### collection {#collection-template}
-
-A [!UICONTROL coleção] é o formulário de schema para coleções.
-
-### contentfragment {#contentfragment-template}
-
-O fragmento de [!UICONTROL conteúdo] é o formulário de schema para Fragmentos de conteúdo.
-
-### forms {#forms-template}
-
-O formulário de schema de [!UICONTROL formulários] está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md).
+| Modelos |  | Descrição |
+|---|---|---|
+| [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
+|  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Formulário de Schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
+|  | <ul><li> [!UICONTROL aplicativo]</li></ul> | Formulário de Schema para ativos com tipo MIME &quot;application&quot; (aplicativo), por exemplo application/ pdf, application/ zip e assim por diante. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com pdf de subtipo. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de Schema para ativos com MIME tipo &quot;vídeo&quot;, como vídeo/avi, vídeo/mp4 e assim por diante. |
+| [!UICONTROL collection] |  | Formulário de Schema para coleções. |
+| [!UICONTROL contentfragment] |  | Formulário de Schema para fragmentos de conteúdo. |
+| [!UICONTROL formulários] |  | Este formulário de schema está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -78,7 +62,7 @@ O formulário de schema de [!UICONTROL formulários] está relacionado ao [Adobe
 
 1. Na caixa de diálogo, digite o título do formulário de schema e clique em **[!UICONTROL Criar]** para concluir o processo de criação do formulário.
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## Editar formulários de schema de metadados {#editing-metadata-schema-forms}
 
@@ -93,7 +77,7 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. Na página **[!UICONTROL Editor de esquema de metadados]**, personalize a página de propriedades do ativo arrastando um ou mais componentes da lista de tipos de componentes na guia **[!UICONTROL Criar formulário]** para a guia **[!UICONTROL Básico]**.
 
@@ -180,7 +164,7 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**, por padrão.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
 
