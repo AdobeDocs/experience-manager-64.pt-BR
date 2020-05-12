@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '1698'
+ht-degree: 0%
 
 ---
 
@@ -199,6 +202,10 @@ As versões anteriores dessas estruturas podem funcionar com o AEM SPA Editor SD
 ### Estruturas adicionais {#additional-frameworks}
 
 Estruturas SPA adicionais podem ser implementadas para funcionar com o SDK do editor SPA do AEM. Consulte o documento [SPA Blueprint](/help/sites-developing/spa-blueprint.md) para ver os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta de módulos, componentes e serviços para trabalhar com o editor AEM SPA.
+
+### Uso de vários seletores {#multiple-selectors}
+
+Seletores personalizados adicionais podem ser definidos e usados como parte de um SPA desenvolvido para o SDK do AEM SPA. No entanto, este suporte exige que o `model` seletor seja o primeiro e a extensão seja `.json` conforme [exigido pelo Exportador JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Requisitos do editor de texto {#text-editor-requirements}
 
