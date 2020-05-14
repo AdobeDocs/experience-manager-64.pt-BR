@@ -3,9 +3,9 @@ title: Esquemas de metadados
 description: 'O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
+source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2528'
 ht-degree: 12%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 12%
 
 # Esquemas de metadados {#metadata-schemas}
 
-Em [!DNL Experience Manager Assets], um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema específico. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante.
+Em [!DNL Experience Manager Assets], um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema específico. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante. Você pode usar o editor de Formulários de Schemas de Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados.
 
-Você pode usar o editor de Formulários de Schemas de Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados. Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
+Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
 1. Clique ou toque em Propriedades **[!UICONTROL da]** Visualização a partir de ações rápidas no bloco de ativos na visualização de cartão.
 
@@ -25,7 +25,7 @@ Você pode usar o editor de Formulários de Schemas de Metadados para modificar 
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. É possível editar as propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
+1. É possível editar as várias propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -77,7 +77,7 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-174](assets/chlimage_1-175.png)
+   ![chlimage_1-175](assets/chlimage_1-175.png)
 
 1. Na página **[!UICONTROL Editor de esquema de metadados]**, personalize a página de propriedades do ativo arrastando um ou mais componentes da lista de tipos de componentes na guia **[!UICONTROL Criar formulário]** para a guia **[!UICONTROL Básico]**.
 
