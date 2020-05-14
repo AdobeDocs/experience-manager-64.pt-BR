@@ -3,9 +3,9 @@ title: Esquemas de metadados
 description: 'O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
+source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2527'
 ht-degree: 12%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 12%
 
 # Esquemas de metadados {#metadata-schemas}
 
-Nos ativos Adobe Experience Manager (AEM), um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema em particular. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante.
+Em [!DNL Experience Manager Assets], um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema específico. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante.
 
-Você pode usar o editor de Formulários de Schemas de Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados.
+Você pode usar o editor de Formulários de Schemas de Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados. Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
-1. Para visualização da página de propriedades de um ativo, clique ou toque em Propriedades **[!UICONTROL da]** Visualização em Ações **** rápidas no bloco de ativo em visualização de cartão.
+1. Clique ou toque em Propriedades **[!UICONTROL da]** Visualização a partir de ações rápidas no bloco de ativos na visualização de cartão.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -25,7 +25,7 @@ Você pode usar o editor de Formulários de Schemas de Metadados para modificar 
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Edite as propriedades de metadados editáveis nas várias guias.
+1. É possível editar as propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -164,7 +164,7 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**, por padrão.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
 
