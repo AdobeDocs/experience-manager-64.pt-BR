@@ -3,7 +3,10 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 2%
 
 ---
 
@@ -98,6 +101,10 @@ Para um modelo de fluxo de trabalho, os usuários podem criar um inicializador d
 
 * Faça uma cópia do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM e modifique-o para ser executado em uma hierarquia de pastas específica. Essa abordagem é útil para algumas pastas.
 * As etapas de processamento adicionais podem ser adicionadas usando uma divisão [OU](/help/sites-developing/workflows-step-ref.md#or-split) , como aplicável condicionalmente a quantas pastas forem necessárias.
+
+## Práticas recomendadas e limitações {#best-practices-limitations-tips}
+
+* Considere suas necessidades para todos os tipos de execuções ao projetar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As execuções não podem ser excluídas em massa depois. As representações indesejadas podem ocupar muito espaço no armazenamento após uso prolongado de [!DNL Experience Manager]. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
 
 >[!MORELIKETHIS]
 >
