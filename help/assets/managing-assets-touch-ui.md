@@ -4,7 +4,10 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+workflow-type: tm+mt
+source-wordcount: '9812'
+ht-degree: 2%
 
 ---
 
@@ -32,8 +35,8 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, vo
 
 Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
-* o nome do arquivo de ativo não deve conter `* / : [ \ \ ] | # % { } ? &`
-* o nome da pasta de ativos não deve conter `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+* o nome do arquivo de ativo não deve conter  `* / : [ \ \ ] | # % { } ? &`
+* o nome da pasta de ativos não deve conter  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Upload assets {#uploading-assets}
 
@@ -111,8 +114,8 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
    No entanto, os seguintes caracteres (lista separada por espaços de) não são suportados:
-   * o nome do arquivo de ativo não deve conter `* / : [ \ \ ] | # % { } ? &`
-   * o nome da pasta de ativos não deve conter `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   * o nome do arquivo de ativo não deve conter  `* / : [ \ \ ] | # % { } ? &`
+   * o nome da pasta de ativos não deve conter  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
    Além disso, a interface Ativos exibe o ativo mais recente que você carrega ou a pasta que você cria primeiro em todas as visualizações (visualização **[!UICONTROL de]** cartão, visualização **[!UICONTROL de]** Lista e visualização **[!UICONTROL de]** coluna).
 
    Muitas vezes, ao fazer upload de ativos grandes ou de vários ativos simultaneamente, os indicadores visuais permitem avaliar o progresso. A caixa de diálogo **[!UICONTROL Carregar progresso]** exibe a contagem de arquivos carregados com êxito e os arquivos que não foram carregados.
@@ -436,8 +439,8 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >[!NOTE]
    >
    >Os seguintes caracteres (lista separada por espaços de) não são suportados:
-   >* o nome do arquivo de ativo não deve conter `* / : [ \ \ ] | # % { } ? &`
-   >* o nome da pasta de ativos não deve conter `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* o nome do arquivo de ativo não deve conter  `* / : [ \ \ ] | # % { } ? &`
+   >* o nome da pasta de ativos não deve conter  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 
 1. Na página **[!UICONTROL Selecionar destino]** , execute um dos procedimentos a seguir:
@@ -477,9 +480,9 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
 1. Selecione uma representação para visualização ou exclua a representação.
 
-   **Excluindo uma representação**
+   **Excluir uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e toque no ícone **[!UICONTROL Excluir representação]** da [barra de ferramentas](/help/sites-authoring/basic-handling.md).
+   Selecione uma representação no painel **[!UICONTROL Representações]** e toque no ícone **[!UICONTROL Excluir representação]** da [barra de ferramentas](/help/sites-authoring/basic-handling.md). As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload dos ativos excluídos novamente.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
