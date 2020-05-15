@@ -1,9 +1,12 @@
 ---
-title: 'Gerenciar ativos compostos e '
-description: Saiba como criar referências a ativos AEM a partir de arquivos do InDesign, Adobe Illustrator e Photoshop. Saiba mais sobre como usar o recurso Visualizador de página para exibir páginas individuais de arquivos de várias páginas, incluindo arquivos PDF, INDD, PPT, PPTX e Ai.
+title: Gerencie ativos compostos e gere subativos.
+description: Saiba como criar referências a ativos AEM a partir de arquivos do InDesign, Adobe Illustrator e Photoshop. Saiba mais sobre como usar o recurso Visualizador de página para visualização de páginas individuais de arquivos de várias páginas, incluindo arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28ebd6c7648e4f32203e20dbc8a7d7f205acb740
+source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+workflow-type: tm+mt
+source-wordcount: '1388'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ Os ativos Adobe Experience Manager (AEM) podem identificar se um arquivo carrega
 
 Além de eliminar a redundância, a referência aos ativos AEM nos aplicativos da Adobe Creative Cloud melhora a colaboração e aumenta a eficiência e a produtividade dos usuários.
 
-Os ativos AEM oferecem suporte para referência **bidirecional**. Você pode encontrar ativos referenciados na página de detalhes do ativo do arquivo carregado. Além disso, você pode exibir os arquivos de referência para ativos AEM na página de detalhes do ativo referenciado.
+Os ativos AEM oferecem suporte para referência **bidirecional**. Você pode encontrar ativos referenciados na página de detalhes do ativo do arquivo carregado. Além disso, você pode visualização os arquivos de referência para ativos AEM na página de detalhes do ativo referenciado.
 
 As referências são resolvidas com base no caminho, na ID do documento e na ID da instância dos ativos referenciados.
 
@@ -29,11 +32,11 @@ Você pode fazer referência a ativos AEM existentes em um arquivo do Adobe Illu
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
-1. Os ativos referenciados que aparecem em **[!UICONTROL Dependências]** também podem ser referenciados por arquivos diferentes do atual. Para exibir uma lista de arquivos de referência para um ativo, clique no ativo em **[!UICONTROL Dependências]**.
+1. Os ativos referenciados que aparecem em **[!UICONTROL Dependências]** também podem ser referenciados por arquivos diferentes do atual. Para visualização de uma lista de arquivos de referência para um ativo, clique no ativo em **[!UICONTROL Dependências]**.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
-1. Clique no ícone **[!UICONTROL Exibir propriedades]** na barra de ferramentas. Na página de propriedades, a lista de arquivos que fazem referência ao ativo atual é exibida na coluna **[!UICONTROL Referências]** da guia **[!UICONTROL Básico]** .
+1. Clique no ícone Propriedades **[!UICONTROL da]** Visualização na barra de ferramentas. Na página de propriedades, a lista de arquivos que fazem referência ao ativo atual é exibida na coluna **[!UICONTROL Referências]** da guia **[!UICONTROL Básico]** .
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -45,7 +48,7 @@ Os ativos referenciados já existem nos ativos AEM. Você pode extrair subativos
 
 >[!NOTE]
 >
->Se o servidor do InDesign for proxy, os arquivos do InDesign terão sua visualização incorporada aos metadados XMP. Nesse caso, a extração de miniaturas não é explicitamente necessária. No entanto, se o servidor do InDesign não tiver proxy, as miniaturas deverão ser explicitamente extraídas para arquivos do InDesign.
+>Se o servidor do InDesign for proxy, os arquivos do InDesign terão sua pré-visualização incorporada aos metadados XMP. Nesse caso, a extração em miniatura não é explicitamente exigida. No entanto, se o servidor do InDesign não tiver proxy, as miniaturas deverão ser explicitamente extraídas para arquivos do InDesign.
 
 ### Criar referências arrastando ativos AEM {#create-references-by-dragging-aem-assets}
 
@@ -57,8 +60,8 @@ Esse procedimento é semelhante a [Adicionar ativos AEM como referências no Ado
 1. Use o recurso Pacote do Adobe InDesign para exportar o documento.
 O Adobe InDesign pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta Links que contém subativos no arquivo do InDesign.
 1. Crie um arquivo ZIP e carregue-o no repositório do AEM.
-1. Inicie o fluxo de trabalho do Unarchiver.
-1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente mencionadas como subativos. Para exibir uma lista de ativos referenciados, navegue até a página de detalhes do ativo do InDesign e feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Start do fluxo de trabalho do Unarchiver.
+1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente mencionadas como subativos. Para visualização de uma lista de ativos referenciados, navegue até a página de detalhes do ativo do InDesign e feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adicionar ativos AEM como referências no Adobe Photoshop {#refps}
 
@@ -70,13 +73,13 @@ O Adobe InDesign pode exportar um documento e os ativos vinculados como um pacot
 1. Salve o arquivo do Photoshop na unidade montada ou [carregue](managing-assets-touch-ui.md#uploading-assets) no repositório do AEM.
 1. Após a conclusão do fluxo de trabalho, as referências aos ativos AEM existentes são listadas na página de detalhes do ativo.
 
-   Para exibir os ativos referenciados, feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector) na página de detalhes do ativo.
+   Para visualização dos ativos referenciados, feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector) na página de detalhes do ativo.
 
-1. Os ativos referenciados também contêm a lista de ativos dos quais são referenciados. Para exibir uma lista de ativos referenciados, navegue até a página de detalhes do ativo e feche o [painel](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Os ativos referenciados também contêm a lista de ativos dos quais são referenciados. Para visualização de uma lista de ativos referenciados, navegue até a página de detalhes do ativo e feche o [painel](/help/sites-authoring/basic-handling.md#rail-selector).
 
 >[!NOTE]
 >
->Os ativos em ativos compostos também podem ser referenciados com base na ID do documento e na ID da instância. Essa funcionalidade está disponível somente nas versões do Adobe Illustrator e do Adobe Photoshop. Para outros, a referência é feita com base no caminho relativo dos ativos vinculados no ativo composto principal, conforme feito em versões anteriores do AEM.
+>Os ativos em ativos compostos também podem ser referenciados com base na ID do Documento e na ID da instância. Essa funcionalidade está disponível somente nas versões do Adobe Illustrator e do Adobe Photoshop. Para outros, a referência é feita com base no caminho relativo dos ativos vinculados no ativo composto principal, conforme feito em versões anteriores do AEM.
 
 ## Criar subativos {#generate-subassets}
 
@@ -93,24 +96,24 @@ Para gerar os subativos, execute um dos procedimentos a seguir:
 * Novos ativos: O fluxo de trabalho de Atualização de ativos [!UICONTROL do] DAM é executado em qualquer novo ativo carregado no AEM. Os subativos são gerados automaticamente para novos ativos de várias páginas.
 * Ativos de várias páginas existentes: Execute manualmente o fluxo de trabalho Atualizar ativos [!UICONTROL do] DAM seguindo uma das etapas:
 
-   * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho do teclado `alt + 3`. Clique em [!UICONTROL Iniciar fluxo de trabalho], selecione [!UICONTROL DAM Update Asset (Ativo]de atualização de DAM), clique em [!UICONTROL Iniciar]e em [!UICONTROL Continuar].
-   * Selecione um ativo e clique em [!UICONTROL Criar > Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione Fluxo de trabalho [!UICONTROL DAM Update Asset (Atualizar ativo] DAM), clique em [!UICONTROL Start (Iniciar]) e em [!UICONTROL Continue (Continuar]).
+   * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho do teclado `alt + 3`. Clique em Fluxo de trabalho [!UICONTROL do]Start, selecione Ativo [!UICONTROL de atualização]DAM, clique em [!UICONTROL Start]e em [!UICONTROL Prosseguir].
+   * Selecione um ativo e clique em [!UICONTROL Criar > Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione Fluxo de trabalho [!UICONTROL DAM Update Asset (Atualizar ativo] DAM), clique em [!UICONTROL Start]e em [!UICONTROL Continue (Continuar]).
 
-Especificamente para documentos do Microsoft Word, execute o fluxo de trabalho Analisar Documentos **[!UICONTROL do Word]** DAM. Ele gera um `cq:Page` componente do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do `cq:Page` componente. Essas imagens são extraídas mesmo se a geração de subativos estiver desativada.
+Especificamente para documentos do Microsoft Word, execute o fluxo de trabalho de Documentos **[!UICONTROL do]** DAM Parse Word. Ele gera um `cq:Page` componente do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do `cq:Page` componente. Essas imagens são extraídas mesmo se a geração de subativos estiver desativada.
 
 ## View subassets {#viewing-subassets}
 
-Os subativos são exibidos somente se os subativos forem gerados e estiverem disponíveis para o ativo multipáginas selecionado. Para exibir os subativos gerados, abra o ativo de várias páginas. Na área superior esquerda da página, clique no ícone ![Painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo e clique em **[!UICONTROL Subativos]** na lista. Quando você seleciona **[!UICONTROL Subativos]** na lista. Como alternativa, use o atalho do teclado `alt + 5`.
+Os subativos são exibidos somente se os subativos forem gerados e estiverem disponíveis para o ativo multipáginas selecionado. Para visualização dos subativos gerados, abra o ativo de várias páginas. Na área superior esquerda da página, clique no ícone ![Painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo e clique em **[!UICONTROL Subativos]** na lista. Quando você seleciona **[!UICONTROL Subativos]** na lista. Como alternativa, use o atalho do teclado `alt + 5`.
 
-![Exibir subativos para um ativo de várias páginas](assets/view_subassets_simulation.gif)
+![Visualização de subativos para um ativo de várias páginas](assets/view_subassets_simulation.gif)
 
-## Exibir páginas de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
+## páginas de Visualização de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
 
-É possível exibir um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e AI, usando o recurso Visualizador de páginas dos ativos AEM. Abra um ativo de várias páginas e clique em **[!UICONTROL Exibir páginas]** no canto superior esquerdo da página. O Visualizador de página que é aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom em cada página.
+É possível visualização de um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e AI, usando o recurso Visualizador de páginas dos ativos AEM. Abra um ativo de várias páginas e clique em Páginas **[!UICONTROL de]** Visualização no canto superior esquerdo da página. O Visualizador de página que é aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom em cada página.
 
-![Exibir e ver páginas de um ativo de várias páginas](assets/view_multipage_asset_fmr.gif)
+![Visualização e visualização de páginas de um ativo de várias páginas](assets/view_multipage_asset_fmr.gif)
 
-Para o InDesign, é possível extrair páginas usando o servidor do InDesign. Se as visualizações das páginas forem salvas durante a criação do arquivo do InDesign, o InDesign Server não será necessário para a extração da página.
+Para o InDesign, é possível extrair páginas usando o servidor do InDesign. Se as pré-visualizações das páginas forem salvas durante a criação do arquivo do InDesign, o InDesign Server não será necessário para a extração da página.
 
 As seguintes opções estão disponíveis na barra de ferramentas, no painel esquerdo e nos controles do Visualizador de páginas:
 
@@ -122,4 +125,12 @@ As seguintes opções estão disponíveis na barra de ferramentas, no painel esq
 
 * **[!UICONTROL A opção Visão geral]** da página exibe todos os subativos simultaneamente.
 
-* **[!UICONTROL A opção Linha do tempo]** do painel esquerdo depois de clicar no ícone ![do painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo exibe o fluxo de atividade do arquivo.
+* **[!UICONTROL A opção Linha]** do tempo no painel esquerdo depois de clicar no ícone ![do painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo exibe o fluxo de atividade do arquivo.
+
+## Práticas recomendadas e limitação {#best-practice-limitation-tips}
+
+* A geração de subconjuntos pode consumir muitos recursos em qualquer implantação do Experience Manager. Se você estiver gerando subativos quando os ativos complexos forem carregados, adicione a etapa no fluxo de trabalho Atualizar ativo do DAM. Se você estiver gerando subativos sob demanda, crie um fluxo de trabalho separado para gerar subativos. Um fluxo de trabalho dedicado permite que você pule as outras etapas no fluxo de trabalho do DAM Update Asset e salve os recursos tecnológicos.
+
+>[!MORELIKETHIS]
+>
+>* [Usar o aplicativo de desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
