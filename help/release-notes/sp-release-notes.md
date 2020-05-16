@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b46378657b8a173986a669beaa56468886b23266
+source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+workflow-type: tm+mt
+source-wordcount: '21556'
+ht-degree: 24%
 
 ---
 
@@ -84,7 +87,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Exceção de falta de memória observada quando um arquivo ZIP grande é carregado no Experience Manager DAM (NPR-32155).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
 
 * Cancelar a publicação do Brand Portal, na página Gerenciar publicação, falha em subpastas de uma pasta publicada (NPR-31835).
 
@@ -185,6 +188,10 @@ Alguns dos principais destaques do AEM 6.4.7.0 são:
 
 * A versão de exportação do pacote da API `package com.day.cq.dam.handler.standard.msoffice` compatível com o `dam-handler` pacote é atualizada para 6.0.0 (CQ-4279059).
 Se você estiver usando o pacote `com.day.cq.dam.handler.standard.msoffice` em sua implementação personalizada, recomendamos que você compile o `dam-handler` pacote com o uber jar mais recente.
+
+* A nova coluna para a data criada, que é classificável, foi adicionada na visualização de lista DAM e nos resultados da pesquisa de ativos na visualização de lista (NPR-31311).
+
+* A classificação de ativos com base na coluna Nome foi permitida na visualização da Lista (NPR-31299).
 
 **Correções**
 
@@ -802,7 +809,7 @@ Alguns dos principais destaques do AEM 6.4.4.0 são:
 * O Editor de Rich Text na caixa de diálogo está oscilando quando o posicionamento de um plug-in é superior à área de texto, portanto, bloqueando qualquer criação adicional. NPR-27579: Hotfix do CQ-4257440
 * (Interface clássica) cq:action editannotate não funciona. NPR-28232: Hotfix do CQ-4257703
 * A remoção de tags do painel de pesquisa de ativos de filtro de tags do editor de páginas não atualiza a lista corretamente. NPR-27983: Hotfix do CQ-4245567
-* Se os valores do número de vários campos estiverem vazios, clicar em Salvar resultará em um prompt de carregamento infinito sem concluir.  NPR-28400, NPR-28393: Hotfix do CQ-4244058, CQ-4244349
+* Se os valores de número de vários campos estiverem vazios, clicar em Salvar resultará em um prompt de carregamento infinito sem concluir.  NPR-28400, NPR-28393: Hotfix do CQ-4244058, CQ-4244349
 * Com permissão de leitura, os usuários/grupos não conseguem selecionar um XF e não têm opção para visualização do XF e suas propriedades de página. NPR-28341: Hotfix do CQ-4260412
 * Os dados JSON recebidos do Público alvo têm vários caracteres de escape fazendo com que a página do aplicativo quebre. NPR-28318: Hotfix do CQ-4252043
 * Não é possível editar nenhum componente após a instalação do AEM 6.4.3. NPR-28125: Hotfix para CQ-4261216
@@ -1370,7 +1377,7 @@ Alguns dos principais destaques do AEM 6.4.2.0 são:
 
 **Plataforma**
 
-* Ciclo de reindexação| NPE ao executar BinaryTextExtraction durante a atualização no local de 6.3 para 6.4. Hotfix para Granite - 21677
+* Ciclo de reindexação | NPE ao executar BinaryTextExtraction durante a atualização no local de 6.3 para 6.4. Hotfix para Granite - 21677
 * Substituição transfronteiras do caminho marcado interno /libs/cq/cloudserviceconfigs/models/configpage/jcr:content - Problema ao executar o detector de padrões. NPR-25036: Hotfix do CQ-4248597
 * Entradas de registro não gravadas devido ao NPE no LogEntryImpl. NPR-25627: Hotfix do Granite-22383
 * A replicação do evento delete não verifica se há direitos. NPR-25679: Hotfix do CQ-4241234
@@ -1607,7 +1614,7 @@ Os principais destaques dos formulários do AEM 6.4.2.0 são:
 
 **Serviços de documentação**
 
-* (Serviço de formulário) O OSGI não tem suporte para XFAF. NPR-25181, Hotfix para CQ-4251313
+* (Form Service) O OSGI não tem suporte para XFAF. NPR-25181, Hotfix para CQ-4251313
 * Os caracteres no cabeçalho do arquivo PDF montado estão ficando ilegíveis. NPR-25113: Hotfix do CQ-4244682
 
 **Formulários adaptáveis**
