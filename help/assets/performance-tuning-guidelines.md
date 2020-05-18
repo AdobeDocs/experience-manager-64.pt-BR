@@ -3,7 +3,10 @@ title: Guia de ajuste de desempenho de ativos
 description: Principais áreas de foco sobre a configuração do AEM, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho dos ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '3201'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Para melhorar os tempos de upload de ativos, use o armazenamento de alto desempe
 
 Supondo que o servidor tenha ampla memória, configure uma unidade RAM. No Linux, execute estes comandos para criar uma unidade de 8 GB de RAM:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -81,7 +84,7 @@ A implementação de um armazenamento de dados de arquivos compartilhados ou S3 
 
 A seguinte configuração S3 Data Store ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ajudou a Adobe a extrair 12,8 TB de BLOBs (objetos grandes binários) de um armazenamento de dados de arquivo existente para um armazenamento de dados S3 em um local do cliente:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -297,7 +300,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 ## Índices de pesquisa {#search-indexes}
 
-Certifique-se de implementar os service packs mais recentes e os hotfixes relacionados ao desempenho, pois eles frequentemente incluem atualizações para índices do sistema. Consulte Dicas [de ajuste de desempenho| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) para algumas otimizações de índice que podem ser aplicadas, dependendo da sua versão do AEM.
+Certifique-se de implementar os service packs mais recentes e os hotfixes relacionados ao desempenho, pois eles frequentemente incluem atualizações para índices do sistema. Consulte Dicas [de ajuste de desempenho | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) para algumas otimizações de índice que podem ser aplicadas, dependendo da sua versão do AEM.
 
 Crie índices personalizados para query executados com frequência. Para obter detalhes, consulte a [metodologia para analisar query](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) lentos e [criar índices](/help/sites-deploying/queries-and-indexing.md)personalizados. Para obter informações adicionais sobre as práticas recomendadas de query e índice, consulte Práticas [recomendadas para Query e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -349,7 +352,7 @@ Atualize as configurações de índice para melhorar o tempo de reindexação:
 1. Clique em **[!UICONTROL Salvar tudo]**
 1. Monitore o error.log para ver quando a indexação é concluída:
 
-   Reindexação concluída para índices: [/carvalho:index/ntBaseLucene]
+   Reindexação concluída para índices: [/oak:index/ntBaseLucene]
 
 1. Você também pode ver que a indexação foi concluída atualizando o nó /oak:index/ntBaseLucene no CRXDe, pois a propriedade reindex voltaria para false
 1. Quando a indexação for concluída, volte para CRXDe e defina a propriedade **[!UICONTROL type]** como desativada nesses dois índices
