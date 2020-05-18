@@ -3,7 +3,10 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 O Gerenciamento dinâmico de tags da Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para clientes do Adobe Analytics.
 
-Embora você possa personalizar seu código de rastreamento para permitir que as soluções de CMS de terceiros usem o Asset Insights, a Adobe recomenda usar o DTM para inserir tags do Asset Insights.
+Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, a Adobe recomenda usar o DTM para inserir tags do Asset Insights.
 
 Execute estas etapas para ativar os Insights de ativos por meio do DTM:
 
@@ -64,7 +67,7 @@ Execute estas etapas para ativar os Insights de ativos por meio do DTM:
 
 1. Cole o seguinte código na janela:
 
-   ```
+   ```java
    var sObj;
    
    if (arguments.length > 0) {
@@ -102,7 +105,7 @@ Execute estas etapas para ativar os Insights de ativos por meio do DTM:
 
    * A regra de carregamento de página no DTM inclui somente o código pagetracker.js. Quaisquer `assetAnalytics` campos são considerados substituições para valores padrão. Elas não são obrigatórias por padrão.
    * O código chama `assetAnalytics.dispatcher.init()` depois de verificar se `_satellite.getToolsByType('sc')[0].getS()` está inicializado e `assetAnalytics,dispatcher.init` está disponível. Portanto, você pode ignorar a adição na etapa 11.
-   * Conforme indicado nos comentários no código do Controlador de página do Insights (**[!UICONTROL Ferramentas > Ativos > Controlador]** de página do Insights), quando o Controlador de página não cria um `AppMeasurement` objeto, os três primeiros argumentos (RSID, Servidor de rastreamento e Namespace do visitante) são irrelevantes. Strings vazias são passadas para realçar isso.
+   * Conforme indicado nos comentários no código do Controlador de página do Insights (**[!UICONTROL Ferramentas > Ativos > Controlador]** de página do Insights), quando o Controlador de página não cria um `AppMeasurement` objeto, os três primeiros argumentos (RSID, Servidor de rastreamento e Namespace do Visitante) são irrelevantes. Strings vazias são passadas para realçar isso.
 
       Os argumentos restantes correspondem ao que está configurado na página Configuração de Insights (**[!UICONTROL Ferramentas > Ativos > Configuração]** de Insights).
 
