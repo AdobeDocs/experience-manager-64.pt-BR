@@ -3,7 +3,10 @@ title: Uso do rastreador de páginas e do código incorporado em páginas da Web
 description: Saiba como incluir o rastreador de páginas e incorporar códigos JavaScript no código do seu site para permitir que o Adobe Analytics capture dados de uso em torno dos ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
