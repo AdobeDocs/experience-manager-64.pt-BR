@@ -1,378 +1,267 @@
 ---
-title: API HTTP de ativos
-description: Saiba mais sobre a implementação, o modelo de dados e os recursos da API HTTP do Assets. Usar a API HTTP Assets para executar várias tarefas em ativos
+title: API HTTP de ativos em [!DNL Adobe Experience Manager].
+description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+workflow-type: tm+mt
+source-wordcount: '1458'
+ht-degree: 1%
 
 ---
 
 
 # API HTTP de ativos {#assets-http-api}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em Ativos, incluindo binários, metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos de conteúdo AEM. Ele é exposto em `/api/assets` e é implementado como REST API.
+A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos [!DNL Experience Manager] de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API.
 
 Para acessar a API:
 
-1. Abra o documento do serviço API em `http://[hostname]:[port]/api.json`.
-1. Siga o link de serviço Ativos à esquerda para `http://[hostname]:[server]/api/assets.json`.
+1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
+1. Siga o link de serviço Ativos à esquerda para `https://[hostname]:[server]/api/assets.json`.
 
-A resposta da API é um JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
+A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
 
-Depois do tempo de [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web Ativos ou por meio da API HTTP. A API retornará uma mensagem de erro 404 se o Tempo [!UICONTROL ligado] estiver no futuro ou Tempo [!UICONTROL desligado] estiver no passado.
+Após o Tempo [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da [!DNL Assets] Web e da API HTTP. A API retornará uma mensagem de erro 404 se o Tempo [!UICONTROL ligado] estiver no futuro ou Tempo [!UICONTROL desligado] estiver no passado.
+
 
 ## Modelo de dados {#data-model}
 
-A API HTTP Assets expõe dois elementos principais, pastas e ativos.
+A API HTTP Assets expõe dois elementos principais, pastas e ativos (para ativos padrão).
 
 ### Pastas {#folders}
 
-As pastas são como diretórios em sistemas de arquivos tradicionais. São contêineres para outras pastas ou asserções. As pastas têm os seguintes componentes:
+As pastas são como diretórios em sistemas de arquivos tradicionais. São container para outras pastas ou asserções. As pastas têm os seguintes componentes:
 
 **Entidades**: As entidades de uma pasta são seus elementos filho, que podem ser pastas e ativos.
 
 **Propriedades**:
 
-```
-name  -- Name of the folder. This is the same as the last segment in the URL path without the extension
-title -- Optional title of the folder which can be displayed instead of its name
-```
+* `name` é o nome da pasta. É o mesmo que o último segmento no caminho do URL sem a extensão.
+* `title` é um título opcional da pasta que pode ser exibido em vez de seu nome.
 
 >[!NOTE]
 >
->Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente. O prefixo JCR de `jcr:title`, `jcr:description`e `jcr:language` é substituído pelo `dc` prefixo. Daí no JSON retornado, `dc:title` e `dc:description` contém os valores de `jcr:title` e `jcr:description`, respectivamente.
+>Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente. O `jcr` prefixo de `jcr:title`, `jcr:description`e `jcr:language` é substituído pelo `dc` prefixo. Daí no JSON retornado, `dc:title` e `dc:description` contém os valores de `jcr:title` e `jcr:description`, respectivamente.
 
 **As Pastas de links** expõem três links:
 
-```xml
-self      -- Link to itself
-parent    -- Link to the parent folder
-thumbnail -- (Optional) link to a folder thumbnail image
-```
+* `self`: Vincule-se a si mesmo.
+* `parent`: Link para a pasta pai.
+* `thumbnail`: (Opcional) link para uma imagem em miniatura da pasta.
 
 ### Ativos {#assets}
 
-Os ativos são elementos de várias partes, que incluem:
+No Experience Manager, um ativo contém os seguintes elementos:
 
 * As propriedades e os metadados do ativo.
-* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As execuções adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas do PDF ou Adobe InDesign.
+* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As execuções adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
 * Comentários opcionais.
 
-No AEM, uma pasta tem os seguintes componentes:
+Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
-* Entidades: Os filhos do Assets são suas representações.
-* Propriedades
-* Links
+* Entidades: Os filhos dos ativos são suas representações.
+* Propriedades.
+* Links.
 
 A API HTTP Assets inclui os seguintes recursos:
 
-* Recuperar uma lista de pastas
-* Criar uma pasta
-* Criar um ativo
-* Atualizar binário de ativo
-* Atualizar metadados do ativo
-* Criar uma representação de ativo
-* Atualizar uma representação de ativo
-* Criar um comentário de ativo
-* Copiar uma pasta ou um ativo
-* Mover uma pasta ou um ativo
-* Excluir uma pasta, ativo ou representação
+* Recuperar uma lista de pastas.
+* Criar uma pasta.
+* Criar um ativo.
+* Atualize o binário do ativo.
+* Atualize os metadados do ativo.
+* Crie uma representação de ativo.
+* Atualizar uma representação de ativo.
+* Crie um comentário de ativo.
+* Copie uma pasta ou um ativo.
+* Mova uma pasta ou um ativo.
+* Exclua uma pasta, ativo ou representação.
 
 >[!NOTE]
 >
->Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com [Resty](https://github.com/micha/resty) , que é um invólucro de script para cURL.
+>Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com o [Resty](https://github.com/micha/resty) , que é um invólucro de scripts para `cURL`.
 
 **Pré-requisitos**
 
-* Ir para `https://[AEM_server]:[port]/system/console/configMgr`.
+* Acesso `https://[aem_server]:[port]/system/console/configMgr`.
 * Navegue até Filtro **[!UICONTROL CSRF do]** Adobe Granite.
-* Verifique se a propriedade Métodos **[!UICONTROL de]** filtro inclui: `POST`, `PUT`, `DELETE`...
+* Verifique se a propriedade Métodos **[!UICONTROL de]** filtro inclui: `POST`, `PUT`, `DELETE`.
 
-## Recuperar uma lista de pastas {#retrieve-a-folder-listing}
+## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
 
 Recupera uma representação Siren de uma pasta existente e de suas entidades filhas (subpastas ou ativos).
 
-**Solicitar**
+**Solicitação**: `GET /api/assets/myFolder.json`
 
-```
-GET /api/assets/myFolder.json
-```
+**Códigos** de resposta: Os códigos de resposta são:
 
-**Códigos de resposta**
+* 200 - OK - sucesso.
+* 404 - NOT FOUND - a pasta não existe ou não está acessível.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
-```
-200 - OK - success
-404 - NOT FOUND - folder does not exist or is not accessible
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+**Resposta**: A classe da entidade retornada é um ativo ou uma pasta. As propriedades de entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
-**Resposta**
+## Criar uma pasta {#create-a-folder}
 
-A classe da entidade retornada é assets/folder.
+Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um nome `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
 
-As propriedades de entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
+Uma chamada de API falhará com um código de `500` resposta se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
 
-## Create a Folder {#create-a-folder}
-
-Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um &amp;ast; é fornecida em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de consulta de URL.
-
-A operação falhará com um código de `500` resposta se o nó pai do caminho especificado não existir. Se a pasta já existir, um código de `409` resposta será retornado.
-
-**Parâmetros**
-
-```
-name - Folder name
-```
+**Parâmetros**: `name` é o nome da pasta.
 
 **Solicitar**
 
-```
-POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'
-```
+* `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
+* `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-Ou
+**Códigos** de resposta: Os códigos de resposta são:
 
-```
-POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
-```
-
-**Códigos de resposta**
-
-```
-201 - CREATED - on successful creation
-409 - CONFLICT - if folder already exist
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CRIADO - sobre criação bem sucedida.
+* 409 - CONFLICT - se a pasta já existir.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
 ## Criar um ativo {#create-an-asset}
 
-Cria um ativo DAM no caminho fornecido com o arquivo especificado. Se um &amp;ast; é fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro ou o nome do arquivo como nome do nó.
+Coloque o arquivo fornecido no caminho fornecido para criar um ativo no repositório DAM. Se um nome `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro ou o nome do arquivo como nome do nó.
 
-**Parâmetros**
-
-```
-name - Asset name
-file - File reference
-```
+**Parâmetros**: Os parâmetros são `name` para o nome do ativo e `file` para a referência do arquivo.
 
 **Solicitar**
 
-```
-POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"
-```
+* `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
+* `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
 
-ou
+**Códigos** de resposta: Os códigos de resposta são:
 
-```
-POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"
-```
+* 201 - CRIADO - se o Ativo tiver sido criado com êxito.
+* 409 - CONFLITO - se o Ativo já existir.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
-**Códigos de resposta**
+## Atualizar um binário de ativo {#update-asset-binary}
 
-```
-201 - CREATED - if Asset has been created successfully
-409 - CONFLICT - if Asset already exist
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+Atualiza o binário de um ativo (execução com o nome original). Uma atualização aciona o fluxo de trabalho de processamento de ativos padrão para ser executado, se estiver configurado.
 
-## Atualizar binário do ativo {#update-asset-binary}
+**Solicitação**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
-Atualiza um binário do Assets (execução com o nome original). Isso acionará o fluxo de trabalho padrão de Ativos, se configurado.
+**Códigos** de resposta: Os códigos de resposta são:
 
-**Solicitar**
-
-```
-PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png
-```
-
-**Códigos de resposta**
-
-```
-200 - OK - if Asset has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 200 - OK - se Asset (Ativo) tiver sido atualizado com êxito.
+* 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
 ## Atualizar metadados do ativo {#update-asset-metadata}
 
-Atualiza as propriedades de metadados do ativo.
+Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na `dc:` namespace, a API atualizará a mesma propriedade na `jcr` namespace. A API não sincroniza as propriedades nas duas namespaces.
 
-**Solicitar**
+**Solicitação**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
-```
-PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'
-```
+**Códigos** de resposta: Os códigos de resposta são:
 
-**Códigos de resposta**
-
-```
-200 - OK - if Asset has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 200 - OK - se Asset (Ativo) tiver sido atualizado com êxito.
+* 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
 ## Criar uma representação de ativo {#create-an-asset-rendition}
 
-Cria uma nova representação de ativo para um ativo. Se o nome do parâmetro de solicitação não for fornecido, o nome do arquivo será usado como nome de execução.
+Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de solicitação não for fornecido, o nome do arquivo será usado como nome de execução.
 
-**Parâmetros**
-
-```
-name - Rendition name
-file - File reference
-```
+**Parâmetros**: Os parâmetros são `name` para o nome da representação e `file` como uma referência de arquivo.
 
 **Solicitar**
 
-```
-POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"
-```
+* `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
+* `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-ou
+**Códigos** de resposta: Os códigos de resposta são:
 
-```
-POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"
-```
-
-**Códigos de resposta**
-
-```
-201 - CREATED - if Rendition has been created successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CREATED - se a Renderização tiver sido criada com êxito.
+* 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
 ## Atualizar uma representação de ativo {#update-an-asset-rendition}
 
 As atualizações substituem respectivamente uma representação de ativo pelos novos dados binários.
 
-**Solicitar**
+**Solicitação**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-```
-PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png
-```
+**Códigos** de resposta: Os códigos de resposta são:
 
-**Códigos de resposta**
+* 200 - OK - se Renderização tiver sido atualizada com êxito.
+* 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
-```
-200 - OK - if Rendition has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
-## Criar um comentário de ativo {#create-an-asset-comment}
+## Adicionar um comentário em um ativo {#create-an-asset-comment}
 
 Cria um novo comentário de ativo.
 
-**Parâmetros**
+**Parâmetros**: Os parâmetros são `message` para o corpo da mensagem do comentário e `annotationData` para os dados de anotação no formato JSON.
 
-```
-message - Message
-annotationData - Annotation data (JSON)
-```
+**Solicitação**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**Solicitar**
+**Códigos** de resposta: Os códigos de resposta são:
 
-```
-POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"
-```
-
-**Códigos de resposta**
-
-```
-201 - CREATED - if Comment has been created successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CRIADO - se Comentário tiver sido criado com êxito.
+* 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
 ## Copiar uma pasta ou um ativo {#copy-a-folder-or-asset}
 
-Copia uma pasta ou ativo no caminho fornecido para um novo destino.
+Copia uma pasta ou ativo disponível no caminho fornecido para um novo destino.
 
-**Cabeçalhos de solicitação**
+**Cabeçalhos** de solicitação: Os parâmetros são:
 
-```
-X-Destination - a new destination URI within the API solution scope to copy the resource to
-X-Depth - either 'infinity' or '0'. The value '0' only copies the resource and its properties, no children.
-X-Overwrite - 'F' to prevent overwriting an existing destination
-```
+* `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
+* `X-Depth` - quer `infinity` quer `0`. O uso `0` só copia o recurso e suas propriedades, e não seus filhos.
+* `X-Overwrite` - Use `F` para evitar a substituição de um ativo no destino existente.
 
-**Solicitar**
+**Solicitação**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-```
-COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"
-```
+**Códigos** de resposta: Os códigos de resposta são:
 
-**Códigos de resposta**
-
-```
-201 - CREATED - if folder/asset has been copied to a non-existing destination
-204 - NO CONTENT - if the folder/asset has been copied to an existing destination
-412 - PRECONDITION FAILED - if a request header is missing or
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CRIADO - se a pasta/ativo tiver sido copiado para um destino não existente.
+* 204 - SEM CONTEÚDO - se a pasta/ativo tiver sido copiado para um destino existente.
+* 412 - PRECONDITION FAILED - se um cabeçalho de solicitação estiver ausente.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
 ## Mover uma pasta ou um ativo {#move-a-folder-or-asset}
 
 Move uma pasta ou um ativo no caminho fornecido para um novo destino.
 
-**Cabeçalhos de solicitação**
+**Cabeçalhos** de solicitação: Os parâmetros são:
 
-```
-X-Destination - a new destination URI within the API solution scope to copy the resource to
-X-Depth - either 'infinity' or '0'. The value '0' only copies the resource and its properties, no children.
-X-Overwrite - either 'T' to force deletion of existing resources or 'F' to prevent overwriting an existing resource.
-```
+* `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
+* `X-Depth` - quer `infinity` quer `0`. O uso `0` só copia o recurso e suas propriedades, e não seus filhos.
+* `X-Overwrite` - Use `T` para forçar a exclusão de um recurso existente ou `F` para evitar a substituição de um recurso existente.
 
-**Solicitar**
+**Solicitação**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-```
-MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
-```
+**Códigos** de resposta: Os códigos de resposta são:
 
-**Códigos de resposta**
+* 201 - CRIADO - se a pasta/ativo tiver sido copiado para um destino não existente.
+* 204 - SEM CONTEÚDO - se a pasta/ativo tiver sido copiado para um destino existente.
+* 412 - PRECONDITION FAILED - se um cabeçalho de solicitação estiver ausente.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
-```
-201 - CREATED - if folder/asset has been copied to a non-existing destination
-204 - NO CONTENT - if the folder/asset has been copied to an existing destination
-412 - PRECONDITION FAILED - if a request header is missing or
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+## Excluir uma pasta, um ativo ou uma representação {#delete-a-folder-asset-or-rendition}
 
-## Excluir uma pasta, ativo ou representação {#delete-a-folder-asset-or-rendition}
-
-Exclui um recurso (-tree) no caminho especificado.
+Exclui um recurso (-tree) no caminho fornecido.
 
 **Solicitar**
 
-```
-DELETE /api/assets/myFolder
-```
+* `DELETE /api/assets/myFolder`
+* `DELETE /api/assets/myFolder/myAsset.png`
+* `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-ou
+**Códigos** de resposta: Os códigos de resposta são:
 
-```
-DELETE /api/assets/myFolder/myAsset.png
-```
-
-ou
-
-```xml
-DELETE /api/assets/myFolder/myAsset.png/renditions/original
-```
-
-**Códigos de resposta**
-
-```
-200 - OK - if folder has been deleted successfully
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
+* 200 - OK - se a pasta tiver sido excluída com êxito.
+* 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
+* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
