@@ -3,7 +3,10 @@ title: Estender editor de ativos
 description: Saiba como estender os recursos do Editor de ativos usando componentes personalizados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '701'
+ht-degree: 13%
 
 ---
 
@@ -40,7 +43,7 @@ Na maioria dos casos, copiar a amostra existente `init.jsp` (`/apps/geometrixx/c
 
 Alguns componentes do AEM Assets exigem funções JS definidas em `component.js`. Copie esse arquivo para o diretório do componente e vincule-o.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,13 +53,13 @@ A amostra carrega essa fonte javascript em `head.jsp`(`/apps/geometrixx/componen
 
 Alguns componentes do AEM Assets usam a biblioteca de widgets do AEM. Para ser renderizada corretamente no contexto do conteúdo, uma folha de estilos adicional deve ser carregada. O componente de ação de tag requer mais um.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
 ### Folha de estilo do Geometrixx {#geometrixx-style-sheet}
 
-Os componentes da página de amostra exigem que todos os seletores comecem com `.asseteditor` ( `static.css``/etc/designs/geometrixx/static.css`). Melhores práticas: Copie todos os `.asseteditor` seletores para sua folha de estilos e ajuste as regras conforme desejado.
+Os componentes da página de amostra exigem que todos os seletores start com `.asseteditor` ( `static.css``/etc/designs/geometrixx/static.css`). Melhores práticas: Copie todos os `.asseteditor` seletores para sua folha de estilos e ajuste as regras conforme desejado.
 
 ### FormChooser: Ajustes para recursos eventualmente carregados {#formchooser-adjustments-for-eventually-loaded-resources}
 
@@ -113,7 +116,7 @@ As alças da amostra em `head.jsp` (`/apps/geometrixx/components/asseteditor/hea
 
 Na parte HTML, use o conjunto de título anterior (ativo ou título de página):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -136,10 +139,10 @@ Este exemplo descreve como criar um componente que mostra e exibe os metadados d
 
 1. Adicione `samplemeta.jsp` o seguinte snippet:
 
-   ```xml
+   ```javascript
    <%--
    
-     Sample metadata field comopnent
+     Sample metadata field component
    
    --%><%@ page import="com.day.cq.dam.api.Asset,
                     java.security.AccessControlException" %><%
@@ -200,11 +203,11 @@ Este exemplo descreve como criar um componente que mostra e exibe os metadados d
 
 ## Modificando opções de metadados {#modifying-metadata-options}
 
-É possível modificar os namespaces disponíveis no formulário [de](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)metadados.
+É possível modificar as namespaces disponíveis no formulário [de](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)metadados.
 
 Os metadados atualmente disponíveis são definidos em `/libs/dam/options/metadata`:
 
-* O primeiro nível dentro deste diretório contém os namespaces.
+* O primeiro nível dentro deste diretório contém as namespaces.
 * Os itens dentro de cada namespace representam metadados, como resultados em um item de peça local.
 * O conteúdo de metadados contém as informações para o tipo e as opções de vários valores.
 
@@ -216,4 +219,4 @@ As opções podem ser substituídas em `/apps/dam/options/metadata`:
 
 >[!NOTE]
 >
->Se você adicionar novos namespaces, eles deverão estar registrados no repositório/CRX. Caso contrário, o envio do formulário de metadados resultará em um erro.
+>Se você adicionar novas namespaces, elas deverão estar registradas no repositório/CRX. Caso contrário, o envio do formulário de metadados resultará em um erro.
