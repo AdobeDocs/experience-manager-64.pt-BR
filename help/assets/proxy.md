@@ -3,7 +3,10 @@ title: Desenvolvimento de proxy de ativos
 description: 'Um proxy é uma instância do AEM que usa trabalhadores proxy para processar trabalhos. Saiba mais sobre como configurar um proxy AEM, operações suportadas, componentes proxy e como desenvolver um trabalho proxy personalizado. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ O Adobe Experience Manager (AEM) Assets usa um proxy para distribuir o processam
 
 Um proxy é uma instância específica (e às vezes separada) do AEM que usa os funcionários proxy como processadores responsáveis por manipular um trabalho e criar um resultado. Um funcionário proxy pode ser usado para uma grande variedade de tarefas. No caso de um proxy do AEM Assets, isso pode ser usado para carregar ativos para renderização nos ativos AEM. Por exemplo, o trabalho [proxy do](indesign.md) IDS usa um InDesign Server para processar arquivos para uso nos ativos AEM.
 
-Quando o proxy é uma instância do AEM separada, isso ajuda a reduzir a carga nas instâncias de criação do AEM. Por padrão, o AEM Assets executa as tarefas de processamento de ativos na mesma JVM (externalizada via Proxy) para reduzir a carga na instância de criação do AEM.
+Quando o proxy é uma instância do AEM separada, isso ajuda a reduzir a carga nas instâncias de criação do AEM. Por padrão, o AEM Assets executa as tarefas de processamento de ativos na mesma JVM (externalizada por proxy) para reduzir a carga na instância de criação do AEM.
 
 ## Proxy (Acesso HTTP) {#proxy-http-access}
 
@@ -59,7 +62,7 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
    **Requisitos**: o parâmetro jobid deve ser definido.
 
-   **Resultados**: Remove um trabalho se encontrado.
+   **Resultados**: Remove um trabalho, se encontrado.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -80,7 +83,7 @@ Um trabalhador proxy é um processador responsável por manipular um trabalho e 
 
 Este é um exemplo de uso da API:
 
-```xml
+```java
 @Reference
  JobService proxyJobService;
 
@@ -100,7 +103,7 @@ Este é um exemplo de uso da API:
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurações do serviço de nuvem {#cloud-service-configurations}
+### Configurações do Cloud Service {#cloud-service-configurations}
 
 >[!NOTE]
 >
@@ -114,7 +117,7 @@ As configurações de proxy e de trabalho proxy estão disponíveis por meio de 
 
 Este é um exemplo de uso da API:
 
-```xml
+```java
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
  
@@ -161,15 +164,15 @@ O diagrama e as etapas a seguir detalham como proceder:
 
 1. A etapa externa é usada para acionar o evento e, em seguida, aguardar até que ele seja concluído; isso é feito por pesquisa no id. Você deve desenvolver sua própria etapa para implementar novas funcionalidades.
 
-   Implemente um `WorkflowExternalProcess`e, em seguida, use a API JobService e seu tópico de trabalho para preparar um evento de trabalho e enviá-lo para o JobService (um serviço OSGi).
+   Implemente um `WorkflowExternalProcess`e, em seguida, use a API JobService e o tópico de seu trabalho para preparar um evento de trabalho e enviá-lo para o JobService (um serviço OSGi).
 
    Como exemplo, consulte `INDDMediaExtractProcess`.java para o trabalho proxy do IDS.
 
-1. Implemente um manipulador de trabalho para o tópico. Esse manipulador requer desenvolvimento para executar sua ação específica e é considerado a implementação do trabalhador.
+1. Implemente um gerenciador de tarefas para o seu tópico. Esse manipulador requer desenvolvimento para que execute sua ação específica e seja considerado a implementação do trabalhador.
 
    Como exemplo, consulte `IDSJobProcessor.java` para obter o representante do IDS.
 
-1. Aproveite o `ProxyUtil.java` dialeto comum. Isso permite despachar trabalhos para trabalhadores usando o proxy dam.
+1. Aproveite o `ProxyUtil.java` dialeto comum. Isso permite que você despache trabalhos para trabalhadores usando o proxy dam.
 
 >[!NOTE]
 >
