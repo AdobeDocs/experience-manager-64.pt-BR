@@ -3,7 +3,10 @@ title: Estendendo a pesquisa de ativos
 description: Estenda os recursos de pesquisa dos ativos AEM além das pesquisas prontas para uso de ativos por strings.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +25,7 @@ Você também pode adicionar outras guias ao painel de administração do AEM As
 
 ## Sobreposição {#overlaying}
 
-Para sobrepor os predicados pré-configurados, copie o `facets` nó `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outra `facetURL` propriedade na configuração do painel de pesquisa (o padrão é para `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outra `facetURL` propriedade na configuração do painel de pesquisa (o padrão é para `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
@@ -46,7 +49,7 @@ Para sobrepor os predicados pré-configurados, copie o `facets` nó `/libs/dam/c
 
 Os ativos AEM vêm com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar predicados pré-existentes, os desenvolvedores do AEM também podem criar seus próprios predicados usando a API [do](/help/sites-developing/querybuilder-api.md)Query Builder.
+Além de usar predicados pré-existentes, os desenvolvedores do AEM também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
 
 A criação de predicados personalizados requer conhecimento básico sobre a estrutura [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)Widgets.
 
@@ -142,7 +145,7 @@ Para criar um predicado de propriedade:
 1. Para disponibilizar o componente, é necessário editá-lo. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor **DELETE**.
 1. Navegue até o navegador e, na sua página de amostra (por exemplo, `press.html`) mude para o modo de design e ative o novo componente para o sistema de parágrafo do predicado (por exemplo, **à esquerda**).
 
-1. No modo **Editar** , o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar** ). Insira o componente na coluna **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamante** , e clique na lupa para iniciar a pesquisa.
+1. No modo **Editar** , o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar** ). Insira o componente na coluna **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamante** , e clique na lupa para start da pesquisa.
 
    >[!NOTE]
    >
@@ -169,7 +172,7 @@ Para criar um predicado de grupo:
 
 1. Adicionar `titlepredicate.jsp`:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
