@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2865'
 ht-degree: 33%
 
 ---
@@ -45,12 +45,13 @@ Adicionar um componente de Mídia dinâmica a uma página é o mesmo que adicion
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Arraste um componente de Mídia dinâmica que deseja usar para a página no local desejado.
-1. Clique na caixa azul ao redor do componente e, em seguida, toque no ícone **[!UICONTROL Configuração]** (chave).
+1. Passe o ponteiro do mouse diretamente no componente. Quando o componente estiver rodeado por uma caixa azul, toque uma vez para exibir a barra de ferramentas do componente. Toque no ícone **[!UICONTROL Configuração]** (chave inglesa).
 1. [Edite os componentes](#dynamic-media-components) conforme necessário e clique na marca de seleção para salvar as alterações.
+1. 
 
 ### Ativação de componentes do Dynamic Media {#enabling-dynamic-media-components}
 
-Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma página, isso provavelmente significa que você precisa ativar os componentes.
+Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma página, isso provavelmente significa que você precisa primeiro ativar os componentes que deseja usar.
 
 1. No AEM, abra a página à qual você deseja adicionar o componente Mídia dinâmica.
 1. No lado esquerdo da barra de ferramentas próximo à parte superior da página, toque no ícone Informações da página e, em seguida, toque em **[!UICONTROL Editar modelo]** na lista suspensa.
@@ -59,17 +60,17 @@ Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma p
 
 1. No lado direito da barra de ferramentas, perto da parte superior da página, na lista suspensa, toque em **[!UICONTROL Estrutura]**.
 
-![Política](/help/assets/assets-dm/structure-mode.png)
+   ![Política](/help/assets/assets-dm/structure-mode.png)
 
 1. Próximo à parte inferior da página, toque em Container **[!UICONTROL de]** layout para abrir sua barra de ferramentas e, em seguida, toque no ícone Política.
 1. Na página Container **[!UICONTROL de]** layout, sob o cabeçalho **[!UICONTROL Propriedades]** , verifique se a guia Componentes **** permitidos está selecionada.
 
-![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
+   ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
 
 1. Role até ver **[!UICONTROL Dynamic Media]**.
 1. Toque no ícone > à esquerda de **[!UICONTROL Dynamic Media]** para expandir a lista e selecione os componentes de Dynamic Media que deseja ativar.
 
-![lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+   ![lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Perto do canto superior direito da página Container **[!UICONTROL de]** layout, toque no ícone Concluído (marca de seleção).
 
