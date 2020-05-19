@@ -10,14 +10,17 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 48f7e9ca8038ab0217af251be31b4b0e98f75912
+workflow-type: tm+mt
+source-wordcount: '5552'
+ht-degree: 4%
 
 ---
 
 
 # Configuração do Dynamic Media - modo Scene7 {#configuring-dynamic-media-scene-mode}
 
-Se você usar o Adobe Experience Manager configurado para ambientes diferentes, como um para desenvolvimento, outro para armazenamento temporário e outro para produção ao vivo, precisará configurar os Serviços da Dynamic Media Cloud para cada um desses ambientes.
+Se você usar a configuração do Adobe Experience Manager para ambientes diferentes, como um para desenvolvimento, um para armazenamento temporário e outro para produção ao vivo, precisará configurar os Serviços da Dynamic Media Cloud para cada um desses ambientes.
 
 ## Diagrama de arquitetura do Dynamic Media - modo Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -26,8 +29,8 @@ O diagrama de arquitetura a seguir descreve como o modo Mídia dinâmica - Scene
 Com a nova arquitetura, o AEM é responsável por ativos principais e sincronizações com o Dynamic Media para processamento e publicação de ativos:
 
 1. Quando o ativo mestre é carregado no AEM, ele é replicado para o Dynamic Media. Nesse ponto, o Dynamic Media lida com todo o processamento de ativos e geração de representação, como codificação de vídeo e variantes dinâmicas de uma imagem.
-1. Depois que as renderizações são geradas, o AEM pode acessar e visualizar com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância do AEM).
-1. Depois que o conteúdo estiver pronto para ser publicado e aprovado, ele aciona o serviço de Mídia dinâmica para enviar o conteúdo para os servidores de entrega e armazená-lo em cache no CDN.
+1. Depois que as renderizações são geradas, o AEM pode acessar e pré-visualização com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância do AEM).
+1. Depois que o conteúdo estiver pronto para ser publicado e aprovado, ele aciona o serviço de Mídia dinâmica para enviar conteúdo para os servidores de delivery e armazená-lo em cache no CDN.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -69,7 +72,7 @@ Consulte [Instalação do pacote de recursos 18912 para migração](bulk-ingest-
 
 ## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-Altere a senha antes de configurar os Serviços do Dynamic Media Cloud.  Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) no Dynamic Media Classic para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante que você atualize a senha para que o Serviço da Dynamic Media Cloud seja configurado com as credenciais corretas.
+Altere a senha antes de configurar os Serviços do Dynamic Media Cloud. Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) no Dynamic Media Classic para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante que você atualize a senha para que o Serviço da Dynamic Media Cloud seja configurado com as credenciais corretas.
 
 >[!NOTE]
 >
@@ -77,7 +80,7 @@ Altere a senha antes de configurar os Serviços do Dynamic Media Cloud.  Depois 
 
 Para configurar os Serviços da Dynamic Media Cloud:
 
-1. No AEM, toque no logotipo do AEM para acessar o console de navegação global e toque no ícone Ferramentas, em seguida, toque em Serviços **[!UICONTROL em Nuvem > Configuração]** de mídia dinâmica.
+1. No AEM, toque no logotipo do AEM para acessar o console de navegação global e toque no ícone Ferramentas, em seguida, toque em Serviços **[!UICONTROL em Nuvem > Configuração]** de Dynamic Media.
 1. Na página Navegador de configuração de Dynamic Media, no painel esquerdo, toque em **[!UICONTROL global]** e em **[!UICONTROL Criar]**. Não toque nem selecione o ícone de pasta à esquerda de [!UICONTROL global].
 1. Na página [!UICONTROL Criar configuração] de mídia dinâmica, digite um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Eles são fornecidos pela Adobe para você no email de provisionamento. Entre em contato com o suporte se você não recebeu essa solicitação.
 
@@ -91,35 +94,35 @@ Para configurar os Serviços da Dynamic Media Cloud:
 
    * **[!UICONTROL Empresa]** - o nome da conta do Dynamic Media. É possível que você tenha várias contas de Dynamic Media para diferentes submarcas, divisões ou diferentes ambientes de preparo/produção.
    * **[!UICONTROL Caminho da pasta raiz da empresa]**
-   * **[!UICONTROL Publicar ativos]** - a opção **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema ingere os ativos e fornece o URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos. A opção **[!UICONTROL Na ativação]** significa que você precisa publicar o ativo explicitamente primeiro antes de fornecer um URL/link Incorporado.
-   * **[!UICONTROL Servidor]** de visualização segura - permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o AEM pode acessar e visualizar com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância do AEM).
+   * **[!UICONTROL Publicar ativos]** - a opção **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema ingere os ativos e fornece o URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos. A opção **[!UICONTROL Na Ativação]** significa que você precisa publicar explicitamente o ativo primeiro antes que um link URL/Incorporado seja fornecido.
+   * **[!UICONTROL Servidor]** de Pré-visualização seguro - permite que você especifique o caminho do URL para o servidor de pré-visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o AEM pode acessar e pré-visualização com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do AEM).
 
-      A menos que você tenha uma disposição especial para usar o servidor da sua empresa ou um servidor especial, a Adobe recomenda que você use a configuração padrão.
+      A menos que você tenha uma disposição especial para usar seu próprio servidor empresa ou um servidor especial, a Adobe recomenda que você use a configuração padrão.
    >[!NOTE]
    >
    >Não há suporte para controle de versão no DMS7. Além disso, a ativação atrasada se aplica somente se **[!UICONTROL Publicar ativos]** na página Editar configuração do Dynamic Media estiver definida como **[!UICONTROL Na ativação]** e, em seguida, somente até a primeira vez que o ativo for ativado.
    >
-   >Depois que um ativo é ativado, todas as atualizações são imediatamente publicadas ao vivo até a entrega S7.
+   >Depois que um ativo é ativado, todas as atualizações são publicadas imediatamente no Delivery S7.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Toque em **[!UICONTROL Salvar]**.
-1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ser publicado, é necessário &quot;adicionar uma lista de permissões&quot; à instância do autor do AEM para se conectar ao Dynamic Media:
+1. Para pré-visualização segura do conteúdo do Dynamic Media antes de ser publicado, é necessário &quot;adicionar uma lista de permissões&quot; à instância do autor do AEM para se conectar ao Dynamic Media:
 
    * Faça logon em sua conta do Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Suas credenciais e logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
    * Na barra de navegação próxima à parte superior direita da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configuração de publicação > Servidor]** de imagem.
-   * Na página de Publicação do Servidor de imagens, na lista suspensa Contexto de publicação, selecione **[!UICONTROL Testar serviço]** de imagem.
+   * Na página de Publicação do Servidor de Imagens, na lista suspensa Contexto de Publicação, selecione **[!UICONTROL Testar Servidor]** de Imagens.
    * Para o Filtro de endereço do cliente, toque em **[!UICONTROL Adicionar]**.
    * Marque a caixa de seleção para ativar (ativar) o endereço e, em seguida, insira o endereço IP da instância do autor de AEM (não o IP do Dispatcher).
    * Toque em **[!UICONTROL Salvar]**.
 
-Agora você terminou com a configuração básica; você está pronto para usar o Dynamic Media - modo Scene7.
+Agora você terminou com a configuração básica; você está pronto para usar o modo Mídia dinâmica - Scene7.
 
 Se desejar personalizar ainda mais sua configuração, você pode, opcionalmente, concluir qualquer uma das tarefas em [(Opcional) Configuração de configurações avançadas no modo](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)Mídia dinâmica - Scene7.
 
 ## (Opcional) Configuração de configurações avançadas no Dynamic Media - modo Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Se quiser personalizar ainda mais a configuração e configuração do modo Mídia dinâmica - Scene7, ou otimizar seu desempenho, conclua uma ou mais das seguintes tarefas opcionais:
+Se você quiser personalizar ainda mais a configuração e configuração do modo Dynamic Media - Scene7, ou otimizar seu desempenho, conclua uma ou mais das seguintes tarefas opcionais:
 
 * [(Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
@@ -128,9 +131,9 @@ Se quiser personalizar ainda mais a configuração e configuração do modo Míd
 
 ### (Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
 
-Quando estiver no modo de execução **dynamicmedia_sceno7**, use a interface do usuário do Dynamic Media Classic (Scene7) para fazer alterações nas configurações do Dynamic Media.
+Quando você estiver no modo de execução **dynamicmedia_sceno7**, use a interface do usuário do Dynamic Media Classic (Scene7) para fazer alterações nas configurações do Dynamic Media.
 
-Algumas das tarefas acima requerem que você faça logon no Dynamic Media Classic aqui: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Algumas das tarefas acima exigem que você faça logon no Dynamic Media Classic aqui: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 As tarefas de configuração são:
 
@@ -154,24 +157,24 @@ A tela Servidor de imagens estabelece as configurações padrão para a entrega 
 * **[!UICONTROL Atributos]** de miniatura comuns - Essas configurações pertencem à aparência padrão das imagens em miniatura.
 * **[!UICONTROL Padrões para campos]** de catálogo - Essas configurações pertencem à resolução e ao tipo de miniatura padrão das imagens.
 * **[!UICONTROL Atributos]** de gerenciamento de cores - essas configurações determinam quais perfis de cores ICC são usados.
-* **[!UICONTROL Atributos]** de compatibilidade - essa configuração permite que parágrafos anteriores e posteriores em camadas de texto sejam tratados como na versão 3.6 para compatibilidade com versões anteriores.
-* **[!UICONTROL Suporte]** à localização - Essas configurações permitem gerenciar vários atributos de localidade. Ele também permite que você especifique uma string de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas nos Visualizadores. Para obter mais informações sobre como configurar o suporte de localização, consulte [Considerações ao configurar a localização de ativos](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Atributos]** de compatibilidade - essa configuração permite que os parágrafos à esquerda e à direita em camadas de texto sejam tratados como na versão 3.6 para compatibilidade com versões anteriores.
+* **[!UICONTROL Suporte]** à Localização - Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite que você especifique uma string de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas nos Visualizadores. Para obter mais informações sobre como configurar o suporte à Localização, consulte [Considerações ao configurar a localização de ativos](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
 #### Definição das configurações gerais do aplicativo {#configuring-application-general-settings}
 
 Para abrir a página Configurações [!UICONTROL gerais do] aplicativo, na barra de navegação global do Dynamic Media Classic, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações]** gerais.
 
-**[!UICONTROL Servidores]** - no provisionamento de conta, o Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte do AEM.
+**[!UICONTROL Servidores]** - no provisionamento de conta, o Dynamic Media fornece automaticamente os servidores atribuídos para a sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte do AEM.
 
-**[!UICONTROL Substituir imagens]** - o Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se eles substituem o original ou se tornam duplicados. Os ativos duplicados são renomeados com um &quot;-1&quot; (por exemplo, o nome &quot;President.tif&quot; é renomeado como President-1.tif). Essas opções afetam os ativos carregados em uma pasta diferente do original ou os ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
+**[!UICONTROL Substituir imagens]** - o Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se eles substituem o original ou se tornam duplicados. Os ativos do Duplicado são renomeados com um &quot;-1&quot; (por exemplo, o nome &quot;President.tif&quot; é renomeado como President-1.tif). Essas opções afetam os ativos carregados em uma pasta diferente do original ou os ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
 
-* **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]** da imagem base - Essa opção é a regra mais rigorosa para substituição. Ele requer que você carregue a imagem de substituição na mesma pasta que a original e que a imagem de substituição tenha a mesma extensão de nome de arquivo que a original. Se estes requisitos não forem cumpridos, será criada uma duplicata.
+* **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]** da imagem base - Essa opção é a regra mais estrita para substituição. Ele requer que você carregue a imagem de substituição na mesma pasta que a original e que a imagem de substituição tenha a mesma extensão de nome de arquivo que a original. Se esses requisitos não forem atendidos, será criado um duplicado.
 
 >[!NOTE]
 >
 >Para manter a consistência com o AEM, selecione **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]** da imagem base.
 
-* **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão]** do ativo básico - exige que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, `chair.jpg` substitui `chair.jpg` e não `chair.tif`). Entretanto, é possível carregar a imagem de substituição em uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
+* **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão]** do ativo básico - exige que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, `chair.jpg` substitui `chair.jpg` e não `chair.tif`). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
 * **[!UICONTROL Substituir em qualquer pasta, o mesmo nome do ativo básico independentemente da extensão]** - Essa opção é a regra de substituição mais inclusiva. Você pode carregar uma imagem de substituição para uma pasta diferente da original, carregar um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada.
 
 **[!UICONTROL Perfis]** de cor padrão - Consulte [Configuração do gerenciamento](#configuring-color-management) de cores para obter mais informações.
@@ -182,7 +185,7 @@ Para abrir a página Configurações [!UICONTROL gerais do] aplicativo, na barra
 
 #### Configuração do gerenciamento de cores {#configuring-color-management}
 
-O gerenciamento dinâmico de cores de mídia permite que você corrija ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cor de destino usando saída CMYK, RGB ou Cinza. See [Configuring Image Presets](managing-image-presets.md).
+O gerenciamento dinâmico de cores de mídia permite que você corrija ativos. Com a correção de cores, os ativos ingeridos retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cor do público alvo usando a saída CMYK, RGB ou Gray. See [Configuring Image Presets](managing-image-presets.md).
 
 Para configurar as propriedades de cor padrão para ativar a correção de cores ao solicitar imagens:
 
@@ -204,8 +207,8 @@ Por exemplo, você pode definir o **[!UICONTROL Espaço de cor padrão RGB]** co
 Isso faria o seguinte:
 
 * Permite a correção de cores para imagens RGB e CMYK.
-* Imagens RGB que não têm um perfil de cor serão consideradas como estando no espaço de `sRGB` cores.
-* Imagens CMYK que não têm um perfil de cor serão consideradas como estando no espaço de `WebCoated` cores.
+* Imagens RGB que não tenham um perfil colorido serão consideradas como estando no espaço de `sRGB` cores.
+* Imagens CMYK que não têm um perfil colorido serão consideradas como estando no espaço `WebCoated` colorido.
 * As representações dinâmicas que retornam a saída RGB retornarão no espaço de `sRGB` cores.
 * As renderizações dinâmicas que retornam a saída CMYK retornarão no espaço de `WebCoated` cores.
 
@@ -214,12 +217,12 @@ Isso faria o seguinte:
 Você pode definir quais tipos de ativos devem ser processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
 * Converta um Adobe PDF em um ativo eCatalog.
-* Converta um documento do Adobe Photoshop (.PSD) em um ativo de modelo de banner para personalização.
+* Converta um Documento do Adobe Photoshop (.PSD) em um ativo de modelo de banner para personalização.
 * Rasterize um arquivo do Adobe Illustrator (.AI) ou um arquivo Postscript encapsulado do Adobe Photoshop (.EPS).
 
 >[OBSERVAÇÃO]
 >
-> Perfis de vídeo e Perfis de imagem podem ser usados para definir o processamento de vídeos e imagens, respectivamente.
+>Perfis de vídeo e Perfis de imagem podem ser usados para definir o processamento de vídeos e imagens, respectivamente.
 
 Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 
@@ -235,12 +238,12 @@ Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 1. Na `mimeTypes` pasta, selecione um tipo mime.
 1. No lado direito da página CRXDE Lite, na parte inferior:
 
-   * clique duas vezes no campo **[!UICONTROL ativado]** . Por padrão, todos os tipos MIME de ativos estão ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos serão sincronizados com o Dynamic Media para processamento. Se desejar excluir esse tipo MIME de ativo do processamento, altere essa configuração para **[!UICONTROL false]**.
-   * clique duas vezes em **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte Tipos [Mime](assets-formats.md#supported-mime-types) suportados para obter uma lista de valores de parâmetros de processamento permitidos que você pode usar para um determinado tipo mime.
+   * Clique com o duplo no campo **[!UICONTROL ativado]** . Por padrão, todos os tipos MIME de ativos estão ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos serão sincronizados com o Dynamic Media para processamento. Se desejar excluir esse tipo MIME de ativo do processamento, altere essa configuração para **[!UICONTROL false]**.
+   * duplo-clique em **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte Tipos [Mime](assets-formats.md#supported-mime-types) suportados para obter uma lista de valores de parâmetro de processamento permitidos que você pode usar para um determinado tipo mime.
 
 1. Faça uma das seguintes opções:
 
-   * Repita as etapas 3 a 4 para editar tipos MIME adicionais.
+   * Repita as etapas de 3 a 4 para editar tipos MIME adicionais.
    * Na barra de menus da página CRXDE Lite, toque em **[!UICONTROL Salvar tudo]**.
 
 1. No canto superior esquerdo da página, toque em **[!UICONTROL CRXDE Lite]** para retornar ao AEM.
@@ -303,7 +306,7 @@ Adicione tipos MIME personalizados para formatos não compatíveis com o AEM Ass
 
 Use predefinições de conjuntos de lotes para automatizar a criação de conjuntos de imagens ou conjuntos de rotação enquanto os ativos são carregados para o Dynamic Media.
 
-Primeiro, defina a convenção de nomenclatura para como os ativos devem ser agrupados em um conjunto. Em seguida, é possível criar uma predefinição de conjunto de lotes, que é um conjunto exclusivo de instruções autocontidas, que define como construir o conjunto usando imagens que correspondem às convenções de nomenclatura definidas na fórmula predefinida.
+Primeiro, defina a convenção de nomenclatura para como os ativos devem ser agrupados em um conjunto. Em seguida, é possível criar uma predefinição de conjunto de lotes, que é um conjunto exclusivo de instruções autocontidas e nomeadas que define como construir o conjunto usando imagens que correspondem às convenções de nomenclatura definidas na fórmula predefinida.
 
 Quando você carrega arquivos, o Dynamic Media cria automaticamente um conjunto com todos os arquivos que correspondem à convenção de nomenclatura definida nas predefinições ativas.
 
@@ -313,9 +316,9 @@ Crie uma convenção de nomenclatura padrão que seja usada em qualquer fórmula
 
 Embora a configuração de uma convenção de nomenclatura padrão não seja necessária para usar a funcionalidade predefinida de conjunto de lotes, as práticas recomendadas recomendam que você use a convenção de nomenclatura padrão para definir quantos elementos da convenção de nomenclatura você deseja agrupar em um conjunto, de modo a facilitar a criação de conjuntos de lotes.
 
-Como alternativa, observe que você pode usar **[!UICONTROL Exibir código]** sem campos de formulário disponíveis. Nesta exibição, você cria suas definições de convenção de nomenclatura totalmente usando expressões regulares.
+Como alternativa, observe que você pode usar o Código **[!UICONTROL de]** Visualização sem campos de formulário disponíveis. Nessa visualização, você cria suas definições de convenção de nomenclatura totalmente usando expressões regulares.
 
-Dois elementos estão disponíveis para definição, **[!UICONTROL Correspondência]** e Nome **** básico. Esses campos permitem que você defina todos os elementos de uma convenção de nomenclatura e identifique a parte da convenção usada para nomear o conjunto no qual eles estão contidos. A convenção de nomenclatura individual de uma sociedade pode utilizar uma ou mais linhas de definição para cada um destes elementos. Você pode usar quantas linhas desejar para sua definição exclusiva e agrupá-las em elementos distintos, como para a Imagem principal, o elemento Cor, o elemento Exibição alternativa e o elemento Amostra.
+Dois elementos estão disponíveis para definição, **[!UICONTROL Correspondência]** e Nome **** básico. Esses campos permitem que você defina todos os elementos de uma convenção de nomenclatura e identifique a parte da convenção usada para nomear o conjunto no qual eles estão contidos. A convenção de nomenclatura individual de uma empresa pode utilizar uma ou mais linhas de definição para cada um desses elementos. Você pode usar quantas linhas desejar para sua definição exclusiva e agrupá-las em elementos distintos, como para a Imagem principal, o elemento Cor, o elemento Visualização alternativa e o elemento Amostra.
 
 **Para configurar a nomeação padrão:**
 
@@ -326,11 +329,11 @@ Dois elementos estão disponíveis para definição, **[!UICONTROL Correspondên
 1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Predefinições do conjunto de lotes > Nomeação]padrão.**
 1. Selecione **[!UICONTROL Exibir formulário]** ou **[!UICONTROL Exibir código]** para especificar como deseja exibir e inserir informações sobre cada elemento.
 
-   Você pode marcar a caixa de seleção **[!UICONTROL Exibir código]** para exibir a criação do valor da expressão regular ao lado das seleções de formulário. Você pode inserir ou alterar esses valores para ajudar a definir os elementos da convenção de nomenclatura, se a exibição do formulário limitar você por algum motivo. Se os valores não puderem ser analisados na exibição do formulário, os campos do formulário ficarão inativos.
+   Você pode marcar a caixa de seleção Código **[!UICONTROL de]** Visualização para visualização do valor de expressão comum ao lado das seleções de formulário. Você pode inserir ou alterar esses valores para ajudar a definir os elementos da convenção de nomenclatura, se a visualização de formulário limitar você por algum motivo. Se os valores não puderem ser analisados na visualização de formulário, os campos de formulário ficarão inativos.
 
    >[!NOTE]
    >
-   >Campos de formulário desativados não executam nenhuma validação de que suas expressões regulares estejam corretas. Você verá os resultados da expressão regular que está criando para cada elemento após a linha Resultado. A expressão regular completa fica visível na parte inferior da página.
+   >Campos de formulário desativados não executam nenhuma validação de que suas expressões normais estão corretas. Você verá os resultados da expressão regular que está criando para cada elemento após a linha de resultados. A expressão regular completa fica visível na parte inferior da página.
 
 1. Expanda cada elemento conforme necessário e informe as convenções de nomenclatura que deseja usar.
 1. Conforme necessário, execute um dos procedimentos a seguir:
@@ -349,7 +352,7 @@ O Dynamic Media usa predefinições de conjuntos de lotes para organizar ativos 
 
 Você pode criar, editar e gerenciar predefinições de conjuntos de lotes. Existem duas formas de definições predefinidas de conjuntos de lotes: uma para uma convenção de nomenclatura padrão que você pode ter configurado e outra para convenções de nomenclatura personalizadas que você cria dinamicamente.
 
-Você pode usar o método de campo de formulário para definir uma predefinição de conjunto de lotes ou o método de código, que permite usar expressões regulares. Como em Nomenclatura padrão, você pode escolher [!UICONTROL Exibir código] ao mesmo tempo que está definindo na Exibição [!UICONTROL do] formulário e usar expressões regulares para criar suas definições. Como alternativa, você pode desmarcar qualquer exibição para usar uma ou a outra exclusivamente.
+Você pode usar o método de campo de formulário para definir uma predefinição de conjunto de lotes ou o método de código, que permite usar expressões regulares. Como em Nomenclatura padrão, você pode escolher Código [!UICONTROL de] Visualização ao mesmo tempo que está definindo na Visualização  de formulário e usar expressões comuns para criar suas definições. Como alternativa, você pode desmarcar qualquer visualização para usar uma ou a outra exclusivamente.
 
 **Para criar uma predefinição de conjunto de lotes:**
 
@@ -359,9 +362,9 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
 1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Predefinições do conjunto de lotes > Predefinição]do conjunto de lotes.**
 
-   Observe que [!UICONTROL Exibir formulário], conforme definido no canto superior direito da página [!UICONTROL Detalhes] , é a exibição padrão.
+   Observe que o Formulário [!UICONTROL de]Visualização, conforme definido no canto superior direito da página [!UICONTROL Detalhes] , é a visualização padrão.
 
-1. No painel Lista predefinida, toque em **[!UICONTROL Adicionar]** para ativar os campos de definição no painel **[!UICONTROL Detalhes]** no lado direito da tela.
+1. No painel Lista predefinida, toque em **[!UICONTROL Adicionar]** para ativar os campos de definição no painel **[!UICONTROL Detalhes]** , no lado direito da tela.
 1. No painel **[!UICONTROL Detalhes]** , no campo Nome **[!UICONTROL da]** predefinição, digite um nome para a predefinição.
 1. No menu suspenso Tipo **[!UICONTROL de conjunto de]** lotes, selecione um tipo predefinido.
 1. Faça uma das seguintes opções:
@@ -384,7 +387,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
 **Criando uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D**
 
-Você pode usar o Conjunto de Lotes Tipo Conjunto de Lotes Conjunto de **[!UICONTROL rotação de vários eixos]** para criar uma fórmula que automatize a geração de Conjuntos de rotação 2D. O agrupamento de imagens usa expressões regulares Linha e Coluna para que os ativos de imagem sejam alinhados corretamente no local correspondente na matriz multidimensional. Não há um número mínimo ou máximo de linhas ou colunas que você deve ter em um conjunto de rotação de vários eixos.
+Você pode usar o Conjunto de Lotes Tipo Conjunto de Lotes Conjunto de **[!UICONTROL rotação de vários eixos]** para criar uma fórmula que automatize a geração de Conjuntos de rotação 2D. O agrupamento de imagens usa expressões regulares de Linha e Coluna para que os ativos de imagem sejam alinhados corretamente no local correspondente na matriz multidimensional. Não há um número mínimo ou máximo de linhas ou colunas que você deve ter em um conjunto de rotação de vários eixos.
 
 Por exemplo, suponha que você queira criar um conjunto de rotação de vários eixos chamado `spin-2dspin`. Você tem um conjunto de imagens de conjunto de rotação que contém três linhas, com 12 imagens por linha. As imagens são nomeadas da seguinte forma:
 
@@ -414,13 +417,13 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Predefinições do conjunto de lotes > Predefinição]** do conjunto de lotes.
 
-   Observe que [!UICONTROL Exibir formulário], conforme definido no canto superior direito da página [!UICONTROL Detalhes] , é a exibição padrão.
+   Observe que o Formulário [!UICONTROL de]Visualização, conforme definido no canto superior direito da página [!UICONTROL Detalhes] , é a visualização padrão.
 
-1. No painel Lista **** predefinida, toque em **[!UICONTROL Adicionar]** para ativar os campos de definição no painel **[!UICONTROL Detalhes]** no lado direito da tela.
+1. No painel Lista **** predefinida, toque em **[!UICONTROL Adicionar]** para ativar os campos de definição no painel **[!UICONTROL Detalhes]** , no lado direito da tela.
 1. No painel **[!UICONTROL Detalhes]** , no campo [!UICONTROL Preset Name[!UICONTROL, digite um nome para a predefinição.
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. Na lista suspensa **[!UICONTROL Subtipo]** , selecione Conjunto de rotação de **[!UICONTROL vários eixos]**.
-1. Expanda Convenções **[!UICONTROL de nomenclatura de]** ativos e, na lista suspensa Nomenclatura de **[!UICONTROL arquivos]** , toque em **[!UICONTROL Personalizado]**.
+1. Expanda Convenções **[!UICONTROL de nomenclatura de]** ativos e, na lista suspensa Nomenclatura de **[!UICONTROL arquivo]** , toque em **[!UICONTROL Personalizado]**.
 1. Use os atributos **[!UICONTROL Correspondência]** e, opcionalmente, **[!UICONTROL Nome de base]** para definir uma expressão regular para nomear ativos de imagem que compõem o agrupamento.
 
    Por exemplo, sua expressão regular de Correspondência literal pode parecer com o seguinte:
@@ -431,7 +434,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
    Use os parênteses para adotar a posição de linha ou coluna no nome do arquivo.
 
-   Por exemplo, para sua expressão regular de linha, ela pode parecer com o seguinte:
+   Por exemplo, para a sua expressão regular de linha, ela pode parecer com o seguinte:
 
    `\w+-R([0-9]+)-\w+`
 
@@ -447,7 +450,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
    `\w+-\w+-C(\d+)`
 
-   Lembre-se de que esses são apenas exemplos. Você pode criar sua expressão regular, no entanto, deseja se adaptar às suas necessidades.
+   Lembre-se de que esses são apenas exemplos. Você pode criar sua expressão normal da maneira que quiser, de acordo com suas necessidades.
 
    >[!NOTE]
    >
@@ -466,11 +469,26 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 ### (Opcional) Ajuste do desempenho do Dynamic Media - modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Para manter o Dynamic Media (com o modo de execução dynamicmedia_sceno7) funcionando sem problemas, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
+Para manter o modo Dynamic Media - Scene7 em execução sem problemas, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
 
-* Atualize os processos de trabalho da fila do fluxo de trabalho Granite (ativos de vídeo) predefinidos.
-* Atualize os processos de trabalho de fila de trabalho temporário de Granite predefinidos (imagens e ativos que não sejam de vídeo).
-* Atualize o máximo de conexões de upload para o servidor do Dynamic Media Classic.
+* Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo.
+* Atualizando os threads de trabalho de fila do fluxo de trabalho Granite (ativos de vídeo) predefinidos.
+* Atualizando os threads de trabalho de fila de trabalho temporário Granite predefinidos (imagens e ativos que não sejam de vídeo).
+* Atualização das conexões máximas de upload para o servidor do Dynamic Media Classic.
+
+#### Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo
+
+Você pode ajustar os parâmetros de trabalho para processamento mais rápido ao carregar arquivos. Por exemplo, se você estiver carregando arquivos PSD, mas não quiser processá-los como modelos, poderá definir a extração de camada como false (desligado). Nesse caso, o parâmetro de trabalho ajustado apareceria como `process=None&createTemplate=false`.
+
+A Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot; para arquivos PDF, Postscript e PSD:
+
+| Tipo de arquivo | Parâmetros de tarefa recomendados |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o suporte](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)ao parâmetro de trabalho de upload do Assets/Dynamic Media Classic baseado no tipo MIME.
 
 #### Atualizando a fila Fluxo de Trabalho Transitório do Granite {#updating-the-granite-transient-workflow-queue}
 
@@ -482,7 +500,7 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
    >[!NOTE]
    >
-   >Uma pesquisa de texto é necessária em vez de um URL direto porque o PID do OSGi é gerado dinamicamente.
+   >Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID do OSGi é gerado dinamicamente.
 
 1. No campo **[!UICONTROL Máximo de trabalhos]** paralelos, altere o número para o valor desejado.
 
@@ -496,15 +514,15 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
 #### Atualizando a fila Fluxo de Trabalho do Granite {#updating-the-granite-workflow-queue}
 
-A fila Fluxo de trabalho Granite é usada para fluxos de trabalho não transitórios. No Dynamic Media, costumava processar vídeos com o fluxo de trabalho **[!UICONTROL Dynamic Media Encode Video]** .
+A fila Fluxo de trabalho Granite é usada para workflows não transitórios. No Dynamic Media, costumava processar vídeos com o fluxo de trabalho **[!UICONTROL Dynamic Media Encode Video]** .
 
 **Para atualizar a fila do Fluxo de Trabalho de Granite:**
 
-1. Navegue até `https://<server>/system/console/configMgr` e procure **[!UICONTROL Fila: Fila]** de Fluxo de Trabalho Granite.
+1. Navegue até `https://<server>/system/console/configMgr` e pesquise por **[!UICONTROL Fila: Fila]** de Fluxo de Trabalho Granite.
 
    >[!NOTE]
    >
-   >Uma pesquisa de texto é necessária em vez de um URL direto porque o PID do OSGi é gerado dinamicamente.
+   >Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID do OSGi é gerado dinamicamente.
 
 1. No campo **[!UICONTROL Máximo de trabalhos]** paralelos, altere o número para o valor desejado.
 
@@ -527,7 +545,7 @@ A configuração Scene7 Upload Connection sincroniza os ativos AEM aos servidore
 
    A configuração **[!UICONTROL Número de conexões]** controla o número máximo de conexões HTTP permitidas para o upload do AEM para o Dynamic Media; normalmente, o valor predefinido de 10 conexões é suficiente.
 
-   A configuração de tempo limite **[!UICONTROL do trabalho]** ativo determina o tempo de espera para que os ativos do Dynamic Media carregados sejam publicados no servidor de entrega. Esse valor é de 2100 segundos ou 35 minutos por padrão.
+   A configuração de tempo limite **[!UICONTROL do trabalho]** ativo determina o tempo de espera para que os ativos do Dynamic Media carregados sejam publicados no servidor do delivery. Esse valor é de 2100 segundos ou 35 minutos por padrão.
 
    Para a maioria dos casos de uso, a configuração de 2100 é suficiente.
 
@@ -537,15 +555,15 @@ A configuração Scene7 Upload Connection sincroniza os ativos AEM aos servidore
 
 ### (Opcional) Filtrar ativos para replicação {#optional-filtering-assets-for-replication}
 
-Em implantações de mídia não dinâmica, você replica *todos os ativos *do ambiente de autor de AEM (imagens e vídeo) para o nó de publicação de AEM. Esse fluxo de trabalho é necessário porque os servidores de publicação do AEM também fornecem os ativos.
+Em implantações de mídia não dinâmica, você replica *todos os ativos *do ambiente do autor do AEM para o nó de publicação do AEM (imagens e vídeo). Esse fluxo de trabalho é necessário porque os servidores de publicação do AEM também fornecem os ativos.
 
-No entanto, em implantações de Dynamic Media, como os ativos são fornecidos por meio do serviço em nuvem, não há necessidade de replicar esses mesmos ativos para nós de publicação do AEM. Esse fluxo de trabalho de &quot;publicação híbrida&quot; evita custos de armazenamento extra e tempos de processamento mais longos para replicar ativos. Outros conteúdos, como as páginas do site, continuam a ser oferecidos pelos nós de publicação do AEM.
+No entanto, em implantações de Dynamic Media, como os ativos são fornecidos por meio do serviço em nuvem, não há necessidade de replicar esses mesmos ativos para nós de publicação do AEM. Esse fluxo de trabalho de &quot;publicação híbrida&quot; evita custos de armazenamento extras e tempos de processamento mais longos para replicar ativos. Outros conteúdos, como as páginas do site, continuam a ser oferecidos pelos nós de publicação do AEM.
 
 Os filtros fornecem uma maneira de *excluir* ativos de serem replicados para o nó de publicação do AEM.
 
 #### Uso de filtros de ativos padrão para replicação {#using-default-asset-filters-for-replication}
 
-Se você estiver usando o Dynamic Media para geração de imagens e/ou vídeo, poderá usar os filtros padrão que fornecemos como estão. Os seguintes filtros estão ativos por padrão:
+Se você estiver usando o Dynamic Media para criação de imagens e/ou vídeos, poderá usar os filtros padrão que fornecemos como estão. Os seguintes filtros estão ativos por padrão:
 
 <table> 
  <tbody> 
@@ -556,21 +574,21 @@ Se você estiver usando o Dynamic Media para geração de imagens e/ou vídeo, p
    <td><strong>Representações</strong></td> 
   </tr> 
   <tr> 
-   <td>Entrega de imagem do Dynamic Media</td> 
+   <td>Delivery de imagem do Dynamic Media</td> 
    <td><p>filtro-imagens</p> <p>conjuntos de filtros</p> <p> </p> </td> 
-   <td><p>Começa com <strong>image/</strong></p> <p>Contém <strong>aplicativo/</strong> e termina com <strong>conjunto</strong>.</p> </td> 
+   <td><p>Start com <strong>image/</strong></p> <p>Contém <strong>aplicativo/</strong> e termina com <strong>conjunto</strong>.</p> </td> 
    <td>As "imagens-filtro" predefinidas (se aplica a ativos de imagens únicas, incluindo imagens interativas) e "conjuntos de filtros" (se aplica a Conjuntos de rotação, Conjuntos de imagens, Conjuntos de mídia mista e Conjuntos de carrossel): 
     <ul> 
-     <li>Excluir da replicação a imagem original e as representações de imagem estática.</li> 
+     <li>Exclua da replicação a imagem original e as representações de imagem estática.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Entrega de vídeo do Dynamic Media</td> 
+   <td>Delivery de vídeo do Dynamic Media</td> 
    <td>filter-video</td> 
-   <td>Começa com <strong>vídeo/</strong></td> 
+   <td>Start com <strong>vídeo/</strong></td> 
    <td>O "filtro-vídeo" predefinido irá: 
     <ul> 
-     <li><br /> Exclua da replicação o vídeo original e as execuções de miniatura estáticas. <br /> </li> 
+     <li>Exclua da replicação o vídeo original e as execuções de miniatura estáticas.<br /> <br /> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -578,7 +596,7 @@ Se você estiver usando o Dynamic Media para geração de imagens e/ou vídeo, p
 
 >[!NOTE]
 >
->Os filtros se aplicam a tipos mime e não podem ser específicos de caminho.
+>Filtros se aplicam a tipos mime e não podem ser específicos de caminho.
 
 #### Personalização de filtros de ativos para replicação {#customizing-asset-filters-for-replication}
 
@@ -597,19 +615,19 @@ Se você estiver usando o Dynamic Media para geração de imagens e/ou vídeo, p
 
    Observe que o valor `dc:format` do ativo `Fiji Red.jpg` é `image/jpeg`.
 
-   Para que esse filtro se aplique a todas as imagens, independentemente do formato, defina o valor como `image/*` onde `*` é uma expressão regular aplicada a todas as imagens de qualquer formato.
+   Para que esse filtro se aplique a todas as imagens, independentemente do formato, defina o valor para `image/*` onde `*` é uma expressão regular aplicada a todas as imagens de qualquer formato.
 
    Para que o filtro seja aplicado somente a imagens do tipo JPEG, insira um valor de `image/jpeg`.
 
 1. Defina quais execuções você deseja incluir ou excluir da replicação.
 
-   Os caracteres que você pode usar para filtrar para replicação incluem:
+   Os caracteres que você pode usar para filtrar para replicação incluem o seguinte:
 
    <table> 
     <tbody> 
     <tr> 
     <td><strong>Caractere a ser usado</strong></td> 
-    <td><strong>Como ele filtra ativos para replicação</strong></td> 
+    <td><strong>Como ele filtros ativos para replicação</strong></td> 
     </tr> 
     <tr> 
     <td>*</td> 
@@ -632,5 +650,5 @@ Se você estiver usando o Dynamic Media para geração de imagens e/ou vídeo, p
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
-   Se você só quisesse replicar o original, então entraria `+original`.
+   Se você só quisesse replicar o original, então você entraria `+original`.
 
