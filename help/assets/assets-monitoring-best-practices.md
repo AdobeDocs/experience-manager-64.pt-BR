@@ -3,23 +3,26 @@ title: Práticas recomendadas de monitoramento de ativos
 description: Práticas recomendadas para monitorar o ambiente e o desempenho da sua instância do AEM após sua implantação.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 0%
 
 ---
 
 
 # Práticas recomendadas de monitoramento de ativos {#assets-monitoring-best-practices}
 
-Do ponto de vista dos ativos Adobe Experience Manager (AEM), o monitoramento deve incluir a observação e o relatório dos seguintes processos e tecnologias:
+Do ponto de vista dos ativos Adobe Experience Manager (AEM), o monitoramento deve incluir a observação e o relatórios dos seguintes processos e tecnologias:
 
 * CPU do sistema
 * Uso da memória do sistema
-* Tempo de espera de E/S do disco do sistema
+* Tempo de espera de E/S e E/S do disco do sistema
 * E/S de rede do sistema
 * MBeans JMX para:
 
    * Utilização de pilha
-   * Processos assíncronos, como fluxos de trabalho
+   * Processos assíncronos, como workflows
 
 * Verificações de integridade do console OSGi
 
@@ -29,7 +32,7 @@ Normalmente, os ativos AEM podem ser monitorados de duas formas, monitoramento a
 
 Você deve executar monitoração ao vivo durante a fase de teste de desempenho do seu desenvolvimento ou durante situações de alta carga para entender as características de desempenho do seu ambiente. Normalmente, a monitoração ao vivo deve ser realizada usando um conjunto de ferramentas. Estas são algumas recomendações:
 
-* [VM](https://visualvm.github.io/)visual: O Visual VM permite que você visualize informações detalhadas do Java VM, incluindo o uso da CPU, o uso da memória Java. Além disso, permite que você faça uma amostra e avalie o código que é executado em uma instância.
+* [VM](https://visualvm.github.io/)visual: A VM visual permite que você visualização informações detalhadas da VM Java, incluindo o uso da CPU e da memória Java. Além disso, permite que você faça uma amostra e avalie o código que é executado em uma instância.
 * [Parte superior](http://man7.org/linux/man-pages/man1/top.1.html): Parte superior é um comando Linux que abre um painel, que exibe as estatísticas de uso, incluindo CPU, memória e uso de E/S. Ele fornece uma visão geral de alto nível do que está acontecendo em uma instância.
 * [Acima](https://hisham.hm/htop/): Htop é um visualizador de processo interativo. Ele fornece uso detalhado da CPU e da memória além do que o Top pode fornecer. O Htop pode ser instalado na maioria dos sistemas Linux usando `yum install htop` ou `apt-get install htop`.
 
@@ -38,8 +41,8 @@ Você deve executar monitoração ao vivo durante a fase de teste de desempenho 
 * [Iftop](http://www.ex-parrot.com/pdw/iftop/): O Iftop exibe informações detalhadas sobre o uso da rede/Ethernet. O Iftop exibe as estatísticas por canal de comunicação nas entidades que usam a Ethernet e a quantidade de largura de banda que usam. O Iftop pode ser instalado na maioria dos sistemas Linux usando `yum install iftop` ou `apt-get install iftop`.
 
 * Gravador de Voo Java (JFR): Uma ferramenta comercial da Oracle que você pode usar livremente em ambientes que não sejam de produção. Para obter mais detalhes, consulte [Como usar o Gravador de voo Java para diagnosticar problemas](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)de tempo de execução do CQ.
-* Arquivo AEM error.log: Você pode investigar o arquivo error.log do AEM para obter detalhes dos erros registrados no sistema. Use o comando `tail -F quickstart/logs/error.log` para identificar erros que devem ser investigados.
-* [Console](../sites-administering/workflows.md)de fluxo de trabalho: Aproveite o console de fluxo de trabalho para monitorar fluxos de trabalho atrasados ou travados.
+* Arquivo AEM error.log: Você pode investigar o arquivo error.log do AEM para obter detalhes dos erros registrados no sistema. Use o comando `tail -F quickstart/logs/error.log` para identificar os erros que devem ser investigados.
+* [Console](../sites-administering/workflows.md)de fluxo de trabalho: Aproveite o console de fluxo de trabalho para monitorar workflows que ficam atrás ou travam.
 
 Normalmente, você usa essas ferramentas em conjunto para obter uma ideia abrangente sobre o desempenho da sua instância do AEM.
 
@@ -51,15 +54,15 @@ Normalmente, você usa essas ferramentas em conjunto para obter uma ideia abrang
 
 ## Monitoramento de longo prazo {#long-term-monitoring}
 
-O monitoramento de longo prazo de uma instância do AEM envolve o monitoramento por uma duração maior das mesmas partes que são monitoradas ao vivo. Também inclui a definição de alertas específicos para o seu ambiente.
+O monitoramento de longo prazo de uma instância do AEM envolve o monitoramento por um período mais longo das mesmas partes que são monitoradas ao vivo. Também inclui a definição de alertas específicos para o seu ambiente.
 
-### Agregação de registros e relatórios {#log-aggregation-and-reporting}
+### Agregação de registro e relatórios {#log-aggregation-and-reporting}
 
-Há várias ferramentas disponíveis para agregar registros, por exemplo Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Para avaliar o tempo de atividade da sua instância do AEM, é importante que você entenda os eventos de registro específicos do seu sistema e crie alertas com base neles. Um bom conhecimento de suas práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar seu processo de agregação de log para gerar alertas críticos.
+Há várias ferramentas disponíveis para registros de agregações, por exemplo Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Para avaliar o tempo de atividade da sua instância do AEM, é importante que você entenda eventos de registro específicos do seu sistema e crie alertas com base neles. Um bom conhecimento de suas práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar seu processo de agregação de log para gerar alertas críticos.
 
-### Monitoramento do ambiente {#environment-monitoring}
+### Monitorização dos Ambientes {#environment-monitoring}
 
-O monitoramento do ambiente inclui o monitoramento do seguinte:
+A monitorização dos Ambientes inclui a monitorização dos seguintes elementos:
 
 * Saída de rede
 * E/S de disco
@@ -111,13 +114,13 @@ Estes são alguns parâmetros de linha de base que podem ser monitorados para o 
 Agentes de replicação
 
 * MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: */system/console/jmx/com.adobe.granite.Replication:type=agent,id=&quot;&lt;AGENT_NAME>&quot;*
+* URL: */system/console/jmx/com.adobe.granite.Replication:type=agent,id=&quot;&lt;NOME_AGENTO>&quot;*
 * Instâncias: Um autor e todas as instâncias de publicação (para agentes de liberação)
 * Limiar de alarme: Quando o valor de `QueueBlocked` é verdadeiro ou o valor de `QueueNumEntries` é maior que 150% da linha de base.
 
-* Definição do alarme: Presença de uma fila bloqueada no sistema que indica que o destino de replicação está inacessível ou inacessível. Muitas vezes, problemas de rede ou infraestrutura fazem com que entradas excessivas sejam enfileiradas, o que pode afetar negativamente o desempenho do sistema.
+* Definição do alarme: Presença de uma fila bloqueada no sistema, indicando que o público alvo de replicação está inativo ou inacessível. Muitas vezes, problemas de rede ou infraestrutura fazem com que entradas excessivas sejam enfileiradas, o que pode afetar negativamente o desempenho do sistema.
 
-**Observação**:Para os parâmetros MBean e URL, substitua `<AGENT_NAME>` pelo nome do agente de replicação que deseja monitorar.
+**Observação**: Para os parâmetros MBean e URL, substitua `<AGENT_NAME>` pelo nome do agente de replicação que você deseja monitorar.
 
 Contador de sessões
 
@@ -163,7 +166,7 @@ Estas são algumas verificações de integridade prontas que são úteis para mo
    * URL: */system/console/jmx/org.apache.sling.saudcheck:name= queriesStatus,type=HealthCheck*
    * Instâncias: Um autor, todos os servidores de publicação
    * Limiar de alarme: Quando o status não estiver OK
-   * Definição do alarme: Uma ou mais consultas estão sendo executadas lentamente no sistema. Verifique o atributo log para obter mais informações sobre as consultas que causaram o problema.
+   * Definição do alarme: Um ou mais query lentamente executados no sistema. Verifique o atributo log para obter mais informações sobre os query que causaram o problema.
 
 * Grupos ativos
 
@@ -181,17 +184,15 @@ Estas são algumas verificações de integridade prontas que são úteis para mo
    * Limiar de alarme: Quando o status não estiver OK
    * Definição do alarme: Há erros nos arquivos de registro. Verifique o atributo log para obter mais informações sobre a causa do problema.
 
-## Problemas comuns e resoluções {#common-issues-and-resolutions}
+## Problemas comuns e resoluções  {#common-issues-and-resolutions}
 
 No processo de monitoramento, se você encontrar problemas, veja algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com instâncias do AEM:
 
 * Se estiver usando TarMK, execute a compactação Tar com frequência. Para obter mais detalhes, consulte [Manutenção do repositório](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Verificar `OutOfMemoryError` registros. Para obter mais informações, consulte [Analisar problemas](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)de memória.
-
-* Verifique nos registros se há referências a consultas não indexadas, travessias em árvore ou conversas de índice. Elas indicam consultas não indexadas ou consultas indexadas inadequadamente. Para obter as práticas recomendadas de otimização do desempenho de consulta e indexação, consulte Práticas [recomendadas para consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
-* Use o console de fluxo de trabalho para verificar se seus fluxos de trabalho estão funcionando como esperado. Se possível, condensar vários fluxos de trabalho em um único fluxo de trabalho.
+* Verifique os registros em busca de referências a query não indexados, traversais de árvore ou traversais de índice. Estes indicam query não indexados ou query inadequadamente indexados. Para obter as práticas recomendadas de otimização do desempenho de query e indexação, consulte Práticas [recomendadas para Query e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+* Use o console de fluxo de trabalho para verificar se seus workflows têm o desempenho esperado. Se possível, condensar vários workflows em um único fluxo de trabalho.
 * Revise o monitoramento ao vivo e procure gargalos adicionais ou grandes consumidores de recursos específicos.
 * Investigue os pontos de saída da rede do cliente e os pontos de entrada para a rede de instância do AEM, incluindo o dispatcher. Frequentemente, essas são áreas de gargalo. Para obter mais informações, consulte Considerações [de rede do](assets-network-considerations.md)Assets.
-* Atualize seu servidor AEM. Você pode ter uma instância do AEM de tamanho inadequado. O suporte da Adobe pode ajudá-lo a identificar se o servidor está com tamanho inferior ao do.
+* Atualize seu servidor AEM. Você pode ter uma instância do AEM de tamanho inadequado. O Atendimento ao cliente da Adobe pode ajudá-lo a identificar se o servidor está com tamanho inferior ao normal.
 * Examine os arquivos `access.log` `error.log` e os arquivos para ver as entradas na hora em que algo deu errado. Procure padrões que possam indicar anomalias de código personalizadas. Adicione-os à lista de eventos que você monitorar.
-
