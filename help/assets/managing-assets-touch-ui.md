@@ -4,9 +4,9 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9813'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface. A caixa de diálogo para renomear o arquivo não é exibida.
    ![create_menu](assets/create_menu.png)
 
-   Para selecionar vários arquivos, pressione a tecla Ctrl/Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Em um iPad, é possível selecionar apenas um arquivo por vez.
+   Para selecionar vários arquivos, pressione a tecla Ctrl/Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Em um iPad, você pode selecionar apenas um arquivo de cada vez.
 
    Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando os start são carregados.
 
@@ -142,7 +142,7 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 
 >[!NOTE]
 >
->Para fazer upload de ativos por meio do FTP no Dynamic Media - Pacote de recursos de instalação do modo Scene7 (FP) 18912 no autor de AEM. Entre em contato com o suporte da Adobe para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md)de ativos em massa.
+>Para fazer upload de ativos por meio do FTP no Dynamic Media - Pacote de recursos de instalação do modo Scene7 (FP) 18912 no autor de AEM. Entre em contato com o Atendimento ao cliente da Adobe para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md)de ativos em massa.
 Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas no AEM serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definidas no Dynamic Media Classic, são usadas.
 
 **Para fazer upload de ativos usando FTP**
