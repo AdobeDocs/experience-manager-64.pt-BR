@@ -3,9 +3,9 @@ title: Guia de ajuste de desempenho de ativos
 description: Principais áreas de foco sobre a configuração do AEM, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho dos ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
+source-wordcount: '3202'
 ht-degree: 0%
 
 ---
@@ -417,6 +417,6 @@ Para minimizar a latência e alcançar alta throughput por meio da utilização 
 * Remova etapas desnecessárias do fluxo de trabalho Atualizar ativo do DAM.
 * Configure o fluxo de trabalho e a remoção de versão.
 * Otimizar a configuração de índice do Lucene.
-* Otimize índices com os service packs e hotfixes mais recentes. Consulte o Suporte da Adobe para obter outras otimizações de índice que possam estar disponíveis.
+* Otimize índices com os service packs e hotfixes mais recentes. Consulte o Atendimento ao cliente da Adobe para obter outras otimizações de índice que possam estar disponíveis.
 * Use `guessTotal` para otimizar o desempenho do query.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
