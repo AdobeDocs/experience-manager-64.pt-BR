@@ -3,7 +3,10 @@ title: Configurar o AEM Assets com o Brand Portal
 description: 'Saiba como configurar os ativos AEM com o Portal de marcas para publicar ativos e coleções no Portal de marcas. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: a2bd2734b1ec923c87f707c5183b3813e4511f10
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1717'
+ht-degree: 46%
 
 ---
 
@@ -65,7 +68,7 @@ Para obter instruções detalhadas, consulte
 
 * [Notas de versão do AEM 6.4 Service Pack ](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Entre em contato com o suporte** se não conseguir encontrar o pacote AEM ou o Service Pack mais recente.
+**Entre em contato com o Atendimento** ao cliente se não conseguir encontrar o pacote AEM ou o Service Pack mais recente.
 
 ## Criar configuração {#configure-new-integration-64}
 
@@ -195,7 +198,7 @@ Verifique se você executou as seguintes etapas:
 >
 >Você deve ter apenas uma configuração IMS. Não crie várias configurações IMS.
 >
->Certifique-se de que a configuração do IMS passe na verificação de integridade. Se a configuração não for aprovada na verificação de integridade, ela será inválida. Você deve excluí-la e criar uma configuração nova e válida.
+>A configuração IMS deve ser aprovada na verificação de integridade. Se a configuração não for aprovada na verificação de integridade, ela será inválida. Você deve excluí-la e criar uma configuração nova e válida.
 
 
 
