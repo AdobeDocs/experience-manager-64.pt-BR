@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '7663'
+ht-degree: 0%
 
 ---
 
@@ -210,7 +213,7 @@ Um exemplo de nó de configuração de pasta de observação com propriedades ob
 
 Você pode start um fluxo de trabalho, serviço ou script para processar os documentos colocados em uma pasta monitorada.
 
-### Uso de um serviço para processar arquivos de uma pasta assistida {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Uso de um serviço para processar arquivos de uma pasta assistida   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Um Serviço é uma implementação personalizada da `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interface. Está registrado no OSGi junto com algumas propriedades personalizadas. As propriedades personalizadas da implementação tornam-na única e ajudam a identificar a implementação.
 
@@ -631,7 +634,7 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 
 1. Abra a interface do usuário do fluxo de trabalho do AEM em uma janela do navegador.
 
-   https://[do servidor]:[porta]/worklow
+   https://[server]:[port]/workflow
 
 1. Na visualização Modelos, clique em **Novo**. Na caixa de diálogo Novo fluxo de trabalho, especifique **Título** e clique em **OK**.
 
@@ -720,7 +723,7 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 
 ### Criar um fluxo de trabalho {#create-a-workflow-1}
 
-1. Abra a interface do usuário do fluxo de trabalho do AEM em uma janela do navegador. `https://[server]:[port]/worklow`
+1. Abra a interface do usuário do fluxo de trabalho do AEM em uma janela do navegador. `https://[server]:[port]/workflow`
 
 1. Na visualização Modelos, clique em **Novo**. Na caixa de diálogo Novo fluxo de trabalho, especifique **Título** e clique em **OK**.
 1. Selecione o fluxo de trabalho recém-criado e clique em **Editar**. O fluxo de trabalho é aberto em uma nova janela.
