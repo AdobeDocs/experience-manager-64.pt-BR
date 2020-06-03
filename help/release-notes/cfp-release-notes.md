@@ -4,7 +4,7 @@ description: Notas de versão específicas dos Pacotes de correção cumulativos
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 22%
@@ -50,7 +50,7 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 * Quando você baseia um Fragmento de conteúdo em um schema e ele contém uma área de texto obrigatória ou um campo de caminho, o Fragmento de conteúdo não é salvo (NPR-33007)
 * Ao criar um componente personalizado usando o componente de fragmento de experiência pronto para uso e usá-lo nas páginas do AEM Sites, o AEM não exibe referências (uso) para o componente personalizado (NPR-32852).
 * Quando uma página do AEM Sites faz parte de um grande conjunto de conteúdo com várias cópias online, a pré-visualização do histórico de versão da página não é carregada (NPR-32772).
-* Quando você promove uma inicialização, ele adiciona a combinação &quot;cq:LiveRelationship&quot; a cada componente adicionado na inicialização. Tem impacto em todas as inicializações, independentemente do fato de um lançamento ser criado com ou sem a seleção do —  Herdar dados ao vivo da página de origem —  (NPR-32664).
+* Quando você promove uma inicialização, ele adiciona a combinação &quot;cq:LiveRelationship&quot; a cada componente adicionado na inicialização. Tem impacto em todas as inicializações, independentemente do lançamento com ou sem a seleção dos —  Herdar dados ao vivo da página de origem —  (NPR-32664).
 * Quando start de paginação, o Seletor de fragmentos de experiência não carrega todos os itens (NPR-32605).
 * Não é possível criar uma inicialização para uma página do AEM Sites. A criação de inicialização resulta em um erro (NPR-32544).
 * Gerenciar publicação não inclui ativos referenciados na solicitação de fluxo de trabalho de ativação (NPR-32463).
@@ -237,7 +237,7 @@ Esta seção lista os recursos e funcionalidades removidos ou descontinuados do 
 
 ## Problemas conhecidos {#known-issues}
 
-* A atualização da [!DNL chrome] versão 83 está causando um problema na criação de pacotes. Use outros navegadores disponíveis, como [!DNL Internet Explorer] e [!DNL Edge], ou outras opções de instalação de pacote padrão do AEM para resolver o problema.
+* A atualização da [!DNL chrome] versão 83 está causando um problema na criação de pacotes. Use outros navegadores disponíveis, como [!DNL Internet Explorer] e [!DNL Firefox], ou outras opções de instalação de pacote padrão do AEM para resolver o problema.
 
 * Não é possível enviar um email para o servidor SMTP remoto usando o remetente de email padrão do AEM, pois ele permite apenas a comunicação usando TLS v1.2. Remova o pacote `javax.mail:mail:1.5.0-b01` de `system/console` e atualize os pacotes para resolver o problema.
 
