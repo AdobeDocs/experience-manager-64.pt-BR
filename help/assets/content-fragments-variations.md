@@ -10,7 +10,10 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '1845'
+ht-degree: 18%
 
 ---
 
@@ -35,14 +38,14 @@ Executar várias outras ações, dependendo do tipo de dados que está sendo edi
 
 * [Fazer upload de conteúdo](#uploading-content)
 
-* [Exibir estatísticas](#viewing-key-statistics) principais (sobre texto de várias linhas)
+* [Estatísticas](#viewing-key-statistics) de chave de Visualização (sobre texto de várias linhas)
 * [Resumir texto](#summarizing-text)
 
 * [Sincronizar variações com conteúdo mestre](#synchronizing-with-master)
 
 >[!CAUTION]
 >
->Após a publicação e/ou referência de um fragmento, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>Depois que um fragmento é publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Criação de seu conteúdo {#authoring-your-content}
 
@@ -57,7 +60,7 @@ Quando você abre seu fragmento de conteúdo para edição, a guia **Variações
 
 Por exemplo:
 
-* Editar um fragmento simples
+* Edição de um fragmento simples
 
    Um fragmento simples consiste em um campo de texto de várias linhas (ativos visuais podem ser adicionados pelo editor de tela cheia).
 
@@ -111,17 +114,17 @@ A edição de rich text permite formatar:
 * Itálico
 * Sublinhado
 * Alinhamento: esquerda, centro, direita
-* Lista com marcadores
-* Lista numerada
+* lista com marcadores
+* lista numerada
 * Recuo: aumento, diminuição
-* Criar/quebrar hiperlinks
+* Criar/Quebrar hiperlinks
 * Abra o editor de tela cheia, onde as seguintes opções de formatação estão disponíveis:
 
    * Colar texto/do Word
    * Inserir uma tabela
    * Estilo do parágrafo: Parágrafo, Título 1/2/3
    * [Inserir ativos visuais](#inserting-assets-into-your-fragment)
-   * Pesquisar 
+   * Pesquisar  
    * Localizar/substituir
    * Verificador ortográfico
    * [Anotações](content-fragments-variations.md#annotating-a-content-fragment)
@@ -172,7 +175,7 @@ Para facilitar o processo de criação de fragmentos de conteúdo, é possível 
 
 ### Resumo de texto {#summarizing-text}
 
-O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento do texto para um número predefinido de palavras, mantendo os pontos principais e o significado geral.
+O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento do texto para um número predefinido de palavras, mantendo os pontos-chave e o significado geral.
 
 >[!NOTE]
 >
@@ -190,12 +193,13 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 >
 >O inglês está disponível prontamente.
 >
->Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
+>Outros idiomas estão disponíveis como Pacotes de modelo de idioma do Compartilhamento de pacotes ou Distribuição de software:
 >
->* [Francês (França)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemão (Alemanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (Itália)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espanhol (Espanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francês (fr) do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) de pacotes ou [Francês (fr) da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemão (de) de Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) de pacotes ou [Alemão (de) de Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) de Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) de pacotes ou [Italiano (it) de Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espanhol (es) do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) de pacotes ou [Espanhol (es) da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -207,12 +211,13 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 
    ![cf-17](assets/cf-17.png)
 
-1. Especifique o número alvo de palavras e selecione **[!UICONTROL Iniciar]**:
+1. Especifique o número de palavras do público alvo e selecione o **[!UICONTROL Start]**:
 1. O texto original é exibido lado a lado com a sumariação proposta:
 
    * Todas as frases a serem eliminadas são destacadas em vermelho, com greve.
    * Clique em qualquer frase destacada para mantê-la no conteúdo resumido.
    * Clique em qualquer frase não realçada para eliminá-la.
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Selecione **[!UICONTROL Resumir]** para confirmar as alterações.
@@ -259,7 +264,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 >
 >Esses ativos não podem ser movidos ou excluídos em uma página de referência, isso deve ser feito no editor de fragmentos.
 >
->No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-authoring/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é meramente para criação do fluxo de conteúdo.
+>No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-authoring/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é apenas para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 >
@@ -274,6 +279,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 
    * navegue até o ativo necessário no DAM
    * procurar o ativo no DAM
+
    Depois de localizado, selecione o ativo desejado clicando na miniatura.
 
 1. Use **[!UICONTROL Selecionar]** para adicionar o ativo ao sistema de parágrafo do fragmento de conteúdo no local atual.
@@ -369,6 +375,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
    * verde indica o conteúdo adicionado (à variação)
    * vermelho indica o conteúdo removido (da variação)
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. Selecione **[!UICONTROL Sincronizar]**, a variação será atualizada e mostrada.
