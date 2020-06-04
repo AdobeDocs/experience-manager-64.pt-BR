@@ -1,6 +1,6 @@
 ---
-title: 'Diferencial de páginas '
-seo-title: 'Diferencial de páginas '
+title: 'Diferencial de páginas  '
+seo-title: 'Diferencial de páginas  '
 description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 seo-description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
@@ -10,12 +10,15 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 95%
 
 ---
 
 
-# Diferencial de páginas {#page-diff}
+# Diferencial de páginas  {#page-diff}
 
 ## Introdução {#introduction}
 
@@ -25,7 +28,7 @@ O recurso de diferencial de página permite a comparação lado a lado convenien
 
 >[!CAUTION]
 >
->O usuário deve ter a permissão de **Modificar/Criar/Excluir** no nó `/content/versionhistory` para usar o recurso.
+>Se você estiver executando uma versão anterior ao AEM 6.4.3, o usuário deverá ter a permissão **Modificar/Criar/Excluir** no nó `/content/versionhistory` para usar o recurso.
 >
 >Consulte [Desenvolvimento e diff de página](/help/sites-developing/pagediff.md#operation-details) para obter mais detalhes técnicos sobre este recurso.
 
@@ -40,7 +43,7 @@ O diferencial lado a lado pode comparar o seguinte:
 
 Consulte os respectivos tópicos sobre como iniciar o diferencial nesses contextos.
 
-### Apresentação das diferenças  {#presentation-of-differences}
+### Apresentação das diferenças   {#presentation-of-differences}
 
 Independentemente do conteúdo que está sendo comparado, a apresentação das diferenças permanece a mesma.
 
@@ -73,7 +76,7 @@ Observe que as cores alteradas e movidas são as mesmas.
 >
 >Ao comparar cópias de idiomas, o realce é desativado, pois, em uma tradução, tudo muda, e não seria benéfico realçar.
 
-### Tela cheia e ao sair  {#fullscreen-and-exiting}
+### Tela cheia e ao sair   {#fullscreen-and-exiting}
 
 Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
@@ -89,7 +92,7 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 Você pode sair do diferencial lado a lado a qualquer momento clicando no botão Fechar do cabeçalho.
 
-## Limitações  {#limitations}
+## Limitações   {#limitations}
 
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 
