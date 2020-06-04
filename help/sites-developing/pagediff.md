@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 7%
 
 ---
 
@@ -41,7 +44,7 @@ Porque ao usar o mecanismo de diff de página, o AEM recria a versão anterior d
 
 >[!CAUTION]
 >
->Para usar o recurso diff de página, o usuário precisa ter a permissão** Modificar/Criar/Excluir** no nó `/content/versionhistory`.
+>Para usar o recurso de diff de página, o usuário precisa ter a permissão **Modificar/Criar/Excluir** no nó `/content/versionhistory`.
 
 ### A partir do AEM 6.4.3 {#as-of-aem}
 
