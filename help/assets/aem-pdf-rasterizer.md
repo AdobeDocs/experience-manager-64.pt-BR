@@ -3,7 +3,10 @@ title: Usar o rasterizador de PDF
 description: Gere miniaturas e execuções de alta qualidade usando a biblioteca do Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 0%
 
 ---
 
@@ -18,25 +21,25 @@ A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
 * Arquivos AI ou PDF com miniaturas não gerados na caixa.
 * Arquivos AI com cores Pantone Matching System (PMS).
 
-As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qualidade em relação à saída predefinida e, portanto, proporcionam uma experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Sempre resulta em RGB independentemente do espaço de cor do arquivo de origem.
+As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação com a saída predefinida e, portanto, proporcionam uma experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Sempre resulta em RGB independentemente do espaço de cor do arquivo de origem.
 
-1. Instale o pacote PDF Rasterizer na instância do AEM a partir do Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)pacotes.
+1. Instale o pacote PDF Rasterizer em sua instância do AEM a partir de Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) pacotes ou Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
 
    >[!NOTE]
    >
    >A biblioteca do PDF Rasterizer está disponível somente para Windows e Linux.
 
-1. Acesse o console de fluxo de trabalho dos ativos AEM de `https://[AEM_server]:[port]/workflow`.
+1. Acesse o console de fluxo de trabalho do AEM Assets a partir de `https://[AEM_server]:[port]/workflow`.
 1. Abra a página de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM.
 1. Configure o seguinte para ignorar a geração de miniatura e execução da Web padrão para arquivos PDF e AI:
 
    * Abra a etapa Processo **[!UICONTROL de]** miniatura e adicione `application/pdf` ou `application/postscript` no campo **[!UICONTROL Ignorar tipos]** de mime.
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
-   * Na guia Imagem **[!UICONTROL habilitada para a]** Web, adicione `application/pdf` ou `application/postscript` em **[!UICONTROL Lista]** ignorada, dependendo de seus requisitos.
+   * Na guia Imagem **[!UICONTROL ativada pela]** Web, adicione `application/pdf` ou `application/postscript` em **[!UICONTROL Ignorar Lista]** , dependendo de seus requisitos.
    ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
 
-1. Abra a etapa **[!UICONTROL Rasterizar representação de visualização]** de imagem PDF/AI e remova o tipo MIME para o qual você deseja ignorar a geração padrão de representações de imagem de visualização. Por exemplo, remova o tipo MIME *application/pdf*, *application/postscript,* ou *application/illustrator* da lista Tipos **[!UICONTROL de]** MIME.
+1. Abra a etapa **[!UICONTROL Rasterizar representação de Pré-visualização]** de imagem PDF/AI e remova o tipo MIME para o qual você deseja ignorar a geração padrão de representações de imagem de pré-visualização. Por exemplo, remova o tipo MIME *application/pdf*, *application/postscript,* ou *application/illustrator* da lista **[!UICONTROL MIME Types]** .
 
    ![process_argumentos](assets/process_arguments.png)
 
@@ -61,7 +64,7 @@ As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qual
    `-h`: Ajuda
 
 1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir representação gerada]**.
-1. Para permitir que PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
+1. Para permitir que o PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
@@ -89,10 +92,10 @@ As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qual
 
    **-i**: Caminho para entrada de PDF. É um parâmetro obrigatório.
 
-   **-h**:Ajuda
+   **-h**: Ajuda
 
 1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir representação gerada]**.
-1. Para permitir que PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
+1. Para permitir que o PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
