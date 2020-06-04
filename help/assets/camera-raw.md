@@ -3,14 +3,17 @@ title: Suporte ao Camera Raw
 description: Saiba como ativar o suporte do Camera Raw nos ativos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
 
 # Suporte para processar imagens usando o Camera Raw {#camera-raw-support}
 
-Você pode ativar o suporte do Camera Raw para processar formatos de arquivo brutos, como CR2, NEF e RAF, e renderizar as imagens no formato JPEG. A funcionalidade é compatível com os ativos Adobe Experience Manager usando o pacote [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponível por meio do Compartilhamento de pacotes.
+Você pode ativar o suporte do Camera Raw para processar formatos de arquivo brutos, como CR2, NEF e RAF, e renderizar as imagens no formato JPEG. A funcionalidade é suportada nos ativos Adobe Experience Manager usando o pacote [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponível por meio do Compartilhamento de pacotes ou da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)software.
 
 >[!NOTE]
 >
@@ -18,7 +21,7 @@ Você pode ativar o suporte do Camera Raw para processar formatos de arquivo bru
 
 Para habilitar o suporte do Camera Raw nos ativos Adobe Experience Manager, siga estas etapas:
 
-1. Baixe o pacote [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw do Compartilhamento de pacotes.
+1. Baixe o pacote [Camera Raw do Compartilhamento de pacotes ou da Distribuição](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)software.
 
 1. Acesso `https://[aem_server]:[port]/workflow`. Abra o fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM.
 
@@ -30,7 +33,7 @@ Para habilitar o suporte do Camera Raw nos ativos Adobe Experience Manager, siga
    * **[!UICONTROL Ignorar tipos Mime]**: `skip:image/dng, skip:image/x-raw-(.*)`
    ![calúnia](assets/chlimage_1-334.png)
 
-1. Na guia Imagem **[!UICONTROL ativada pela]** Web, no campo Lista **** ignorada, especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. Na guia Imagem **[!UICONTROL ativada pela]** Web, no campo **[!UICONTROL Ignorar Lista]** , especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![calúnia](assets/chlimage_1-335.png)
 
@@ -53,7 +56,7 @@ Para habilitar o suporte do Camera Raw nos ativos Adobe Experience Manager, siga
 >
 >Certifique-se de que a configuração acima seja a mesma do Ativo de atualização de DAM de **[!UICONTROL amostra com a Camera RAW e a configuração da Etapa]** de manuseio de DNG.
 
-Agora você pode importar arquivos do Camera Raw para o AEM Assets. Depois de instalar o pacote Camera RAW e configurar o fluxo de trabalho necessário, a opção **[!UICONTROL Ajustar]** imagem é exibida na lista de painéis laterais.
+Agora você pode importar arquivos do Camera Raw para o AEM Assets. Depois de instalar o pacote Camera RAW e configurar o fluxo de trabalho necessário, a opção **[!UICONTROL Ajuste]** de imagem é exibida na lista dos painéis laterais.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
