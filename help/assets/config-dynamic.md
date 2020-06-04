@@ -8,7 +8,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '8013'
+ht-degree: 1%
 
 ---
 
@@ -189,7 +192,7 @@ Em uma implantação WAR do QuickStart do AEM, o número da porta e o caminho do
 >[!NOTE]
 Em uma implantação [independente do](/help/sites-deploying/deploy.md)AEM Quickstart, um domínio **próprio** geralmente não precisa ser configurado, pois o número da porta e o caminho do contexto podem ser configurados automaticamente. No entanto, se todas as interfaces de rede estiverem desativadas, será necessário configurar o domínio **próprio** .
 
-## Desabilitando o Dynamic Media {#disabling-dynamic-media}
+## Desabilitando o Dynamic Media  {#disabling-dynamic-media}
 
 A mídia dinâmica não está ativada por padrão. No entanto, se você ativou a mídia dinâmica anteriormente, talvez você queira desativá-la posteriormente.
 
@@ -274,6 +277,7 @@ Para alterar o limite de memória para a criação do PTIFF, navegue até **[!UI
    * No campo Senha **[!UICONTROL do arquivo]** KeyStore, digite a senha do arquivo KeyStore. Esta _não_ é a senha do KeyStore criada na etapa 5, mas é a senha do Arquivo KeyStore fornecida pela Adobe no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu uma senha do Arquivo KeyStore.
    * No campo Senha **[!UICONTROL da chave]** privada, digite a senha da chave privada (pode ser a mesma senha da chave privada fornecida na etapa anterior). A Adobe fornece a senha da chave privada no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu uma senha de chave privada.
    * No campo Alias **[!UICONTROL da chave]** privada, informe o alias da chave privada. Por exemplo, `companyname-alias`. A Adobe fornece o alias da chave privada no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu um alias de chave privada.
+
    ![edit_settings_fordynamic-media-Replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. Toque em **[!UICONTROL Salvar e fechar]** para salvar suas alterações neste usuário.
@@ -292,6 +296,7 @@ Para alterar o limite de memória para a criação do PTIFF, navegue até **[!UI
    * **[!UICONTROL ID]** do inquilino - esse valor é o nome da sua empresa/inquilino que está publicando no Serviço de Replicação. Esse valor é a ID do locatário fornecida pela Adobe no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu essa notificação.
    * **[!UICONTROL Alias]** do armazenamento de chave - Esse valor é o mesmo que o valor** New Alias*** definido ao gerar a chave na [Configuração da autenticação](#setting-up-authentication); por exemplo, `replication`. (Consulte a etapa 7 na [configuração da autenticação](#setting-up-authentication).)
    * **[!UICONTROL Senha]** do armazenamento de chaves - esta é a senha do KeyStore criada quando você tocou em **[!UICONTROL Criar armazenamento de chaves]**. A Adobe não fornece esta senha. Consulte a etapa 5 de [Configuração da autenticação](#setting-up-authentication).
+
    A imagem a seguir mostra o agente de replicação com dados de amostra:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
@@ -468,7 +473,7 @@ Para testar sua configuração:
 1. Publique o ativo de imagem. (Selecione o ativo e toque em Publicação **[!UICONTROL rápida]**.)
 1. Navegue até as representações dessa imagem abrindo a imagem e tocando em **[!UICONTROL Representações]**.
 
-   ![chlimage_1-513](assets/chlimage_1-510.png)
+   ![chlimage_1-510](assets/chlimage_1-510.png)
 
 1. Selecione qualquer representação dinâmica.
 1. Toque em **[!UICONTROL URL]** para obter o URL para este ativo.
@@ -567,7 +572,7 @@ Verifique se o pacote [!DNL Video Analytics] predefinido do primeiro nó Autor e
 
    * **Verifique a[!DNL Video Analytics]predefinição através da ferramenta Relatórios de vídeo no AEM**
 
-      Toque em **[!UICONTROL Ferramentas > Ativos > Relatórios]** de vídeo `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+      Toque em **[!UICONTROL Ferramentas > Ativos > Relatórios de vídeo]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
       Se você vir a seguinte mensagem de erro, o conjunto de relatórios estará disponível, mas não será preenchido. Esse erro está correto — e desejado — em uma nova instalação antes que o sistema colete dados.
 
@@ -794,7 +799,7 @@ A configuração do Servidor de Imagem de Mídia Dinâmica envolve a edição do
 >[!NOTE]
 O Dynamic Media funciona prontamente [após ser ativado](#enabling-dynamic-media). No entanto, opcionalmente, você pode optar por refinar sua instalação configurando o Servidor de Imagem do Dynamic Media para atender a determinadas especificações ou requisitos.
 
-**Pré-requisito**: _Antes_ de configurar o Dynamic Media Image Server, verifique se sua VM do Windows inclui uma instalação das Bibliotecas do Microsoft Visual C++. As bibliotecas são necessárias para executar o Dynamic Media Image Server. Você pode [baixar o Microsoft Visual C++ 2010 Redistributable Package (x64) aqui](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
+**Pré-requisito**: _Antes_ de configurar o Dynamic Media Image Server, verifique se a VM do Windows inclui uma instalação das Bibliotecas do Microsoft Visual C++. As bibliotecas são necessárias para executar o Dynamic Media Image Server. Você pode [baixar o Microsoft Visual C++ 2010 Redistributable Package (x64) aqui](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
 
 **Para definir as configurações** do Servidor de Imagens do Dynamic Media:
 
@@ -958,7 +963,7 @@ Casos de uso avançado podem usar um modificador manual configure **[!UICONTROL 
 * **[!UICONTROL iccEmbed]** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
 
 >[!NOTE]
-O conjunto padrão de perfis de cor da Adobe só estará disponível se o [Feature Pack 12445](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) estiver instalado. Todos os pacotes de recursos e service packs estão disponíveis via Compartilhamento de [pacotes](https://www.adobeaemcloud.com/content/packageshare.html). O Feature Pack 12445 fornece os perfis coloridos da Adobe.
+O conjunto padrão de perfis coloridos da Adobe só estará disponível se você tiver o [Feature Pack 12445 do Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) ou do [Feature Pack 12445 do Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) instalado. Todos os pacotes de recursos e service packs estão disponíveis via Compartilhamento [de](https://www.adobeaemcloud.com/content/packageshare.html) pacotes e Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software. O Feature Pack 12445 fornece os perfis coloridos da Adobe.
 
 ### Instalação do pacote de recursos 12445 {#installing-feature-pack}
 
@@ -966,7 +971,7 @@ O conjunto padrão de perfis de cor da Adobe só estará disponível se o [Featu
 
 **Para instalar o pacote de recursos 12445**:
 
-1. Navegue até Compartilhamento [de](https://www.adobeaemcloud.com/content/packageshare.html) pacotes e faça o download `cq-6.3.0-featurepack-12445`.
+1. Navegue até Compartilhamento [de](https://www.adobeaemcloud.com/content/packageshare.html) pacotes ou Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software e faça o download `cq-6.3.0-featurepack-12445`.
 
    Consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md) para obter mais informações sobre como usar o Compartilhamento de pacotes e pacotes no AEM.
 
@@ -1052,7 +1057,7 @@ Depois de instalar o pacote de recursos, é necessário configurar os perfis de 
       <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccrenderintent.html">iccrenderintent</a></td> 
       <td>Sequência de caracteres</td> 
       <td>relativo</td> 
-      <td><p>Especifica o propósito de renderização. Os valores aceitáveis são: <strong>perceptual, relativo, saturação, absoluto. </strong><i></i>A Adobe recomenda <strong>relativa </strong><i></i>como padrão.</p> </td> 
+      <td><p>Especifica o propósito de renderização. Os valores aceitáveis são: <strong>perceptual, relativo, saturação, absoluta. </strong><i></i>A Adobe recomenda <strong>relativa </strong><i></i>como padrão.</p> </td> 
       </tr> 
     </tbody> 
     </table>
