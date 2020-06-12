@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 48f7e9ca8038ab0217af251be31b4b0e98f75912
+source-git-commit: 05595377d4a5f24e4f311e5c34f10e6dc964d35e
 workflow-type: tm+mt
 source-wordcount: '5552'
 ht-degree: 4%
@@ -107,7 +107,7 @@ Para configurar os Serviços da Dynamic Media Cloud:
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Toque em **[!UICONTROL Salvar]**.
-1. Para pré-visualização segura do conteúdo do Dynamic Media antes de ser publicado, é necessário &quot;adicionar uma lista de permissões&quot; à instância do autor do AEM para se conectar ao Dynamic Media:
+1. Para pré-visualização segura do conteúdo do Dynamic Media antes de ser publicado, é necessário &quot;permitir a lista&quot; da instância do autor do AEM para se conectar ao Dynamic Media:
 
    * Faça logon em sua conta do Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Suas credenciais e logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
    * Na barra de navegação próxima à parte superior direita da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configuração de publicação > Servidor]** de imagem.
