@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 0%
 
 ---
 
@@ -84,4 +87,4 @@ Para personalizar a página de detalhes da tarefa:
 >
 >Para personalizar a página de detalhes da tarefa com tarefas criadas na **guia Processo de Start **da área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Para adicionar novos estilos para as informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção de alterações *da interface do* usuário em Personalização [da](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3)Workspace.
+>Para adicionar novos estilos para as informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção de alterações *da interface do* usuário em Personalização [da](/help/forms/using/changing-locale-user-interface.md)Workspace.
