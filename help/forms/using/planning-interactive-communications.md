@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +52,7 @@ A anatomia inclui dados com os seguintes modos de entrada:
 * Dados condicionais
 * Imagens
 
-Em cada seção, o texto em negrito representa o texto estático. O banco de dados inclui tabelas de clientes, contas e chamadas. Um modelo de dados de formulário pode receber dados de qualquer uma dessas tabelas. Para obter mais informações, consulte [Criar modelo](/help/forms/using/create-form-data-model0.md)de dados de formulário.
+Em cada seção, o texto em negrito representa o texto estático. O banco de dados inclui tabelas de clientes, contas e chamadas. Um modelo de dados de formulário pode receber dados de qualquer uma dessas tabelas. Para obter mais informações, consulte [Criar modelo](create-form-data-model-tutorial.md)de dados de formulário.
 
 A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da Comunicação Interativa:
 
