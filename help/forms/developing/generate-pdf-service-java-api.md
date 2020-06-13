@@ -10,28 +10,33 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 0%
 
 ---
 
 
-# Gerar o SOAP (Java API) do serviço PDF {#generate-pdf-service-java-api-quickstart-soap}
+# Gerar o Start rápido SOAP (Java API) do serviço PDF {#generate-pdf-service-java-api-quickstart-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço Gerar PDF.
+O SOAP (Java API Quick Start) está disponível para o serviço Gerar PDF.
 
-[Início rápido (modo SOAP): Converter um documento do Microsoft Word em um documento PDF usando a API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Converter um documento do Microsoft Word em um documento PDF usando a API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Converter um documento PDF em um arquivo RTF usando a API Java (modo SOAP)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
+[Start rápido (modo SOAP): Converter um documento PDF em um arquivo RTF usando a API Java (modo SOAP)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: O Início rápido localizado em Programação com AEM Forms baseia-se no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+>[!NOTE]
+>
+>O Start rápido localizado em Programação com AEM Forms baseia-se no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
-## Início rápido (modo SOAP): Converter um documento do Microsoft Word em um documento PDF usando a API Java {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
+## Start rápido (modo SOAP): Converter um documento do Microsoft Word em um documento PDF usando a API Java {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
-O exemplo de código a seguir converte um arquivo do Word chamado *Loan.doc* em um documento PDF chamado *Loan.pdf*. (Consulte [Convertendo documentos do Word em documentos](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents)PDF.)
+O exemplo de código a seguir converte um arquivo do Word chamado *Loan.doc* em um documento PDF chamado *Loan.pdf*. (Consulte [Converter Documentos do Word em Documentos](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -143,9 +148,9 @@ O exemplo de código a seguir converte um arquivo do Word chamado *Loan.doc* em 
  }
 ```
 
-## Início rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
+## Start rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir converte o conteúdo HTML localizado em https://www.adobe.com em um documento PDF chamado *AdobeHTML.pdf*. (Consulte [Convertendo documentos HTML em documentos](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)PDF.)
+O exemplo de código Java a seguir converte o conteúdo HTML localizado em https://www.adobe.com para um documento PDF chamado *AdobeHTML.pdf*. (Consulte [Converter Documentos HTML em Documentos](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -249,9 +254,9 @@ O exemplo de código Java a seguir converte o conteúdo HTML localizado em https
  }
 ```
 
-## Início rápido (modo SOAP): Converter um documento PDF em um arquivo RTF usando a API Java (modo SOAP) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
+## Start rápido (modo SOAP): Converter um documento PDF em um arquivo RTF usando a API Java (modo SOAP) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
-O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um documento RTF chamado *Loan.rtf*. (Consulte [Converter documentos PDF em formatos](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats)que não sejam de imagem.)
+O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um documento RTF chamado *Loan.rtf*. (Consulte [Converter Documentos PDF em formatos](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats)que não sejam de imagem.)
 
 ```as3
  /* 
