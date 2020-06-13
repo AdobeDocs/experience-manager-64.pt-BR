@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,10 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
    * empid
    * reason
    * duration
-   **Observação**: Esse renderizador é o modelo de página de resumo.
+
+   >[!NOTE]
+   >
+   >Esse renderizador é o modelo de página de resumo.
 
    O código de amostra a seguir para este renderizador está contido em:
 
