@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '1695'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +49,7 @@ Cada fragmento de documento inclui campos com texto estático, dados recebidos d
 
 Ao criar fragmentos de documento neste tutorial, as variáveis são criadas para campos que recebem dados usando a interface do usuário do agente.
 
-Use **FDM_Create_First_IC**, conforme descrito na seção [Criar modelo](/help/forms/using/create-form-data-model0.md) de dados de formulário, como o modelo de dados de formulário para criar fragmentos de documento neste tutorial.
+Use **FDM_Create_First_IC**, conforme descrito na seção [Criar modelo](create-form-data-model-tutorial.md) de dados de formulário, como o modelo de dados de formulário para criar fragmentos de documento neste tutorial.
 
 ## Etapa 1: Criar fragmento de documento de texto Detalhes da Lista {#step-create-bill-details-text-document-fragment}
 
@@ -77,12 +80,14 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    1. Insira **Invoicenumber** como o nome da variável.
    1. Selecione **String** como tipo.
    1. Toque em **Criar**.
+
    ![variable_create_string](assets/variable_create_string.png)
 
    Repita as etapas 4 e 5 para criar as seguintes variáveis:
 
    * Período de cobrança: Tipo de string
    * Data da Lista: Tipo de data
+
    ![variables_bill_details](assets/variables_bill_details.png)
 
 1. Crie texto estático para os seguintes campos usando o painel direito:
@@ -91,6 +96,7 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    * Período de Cobrança
    * Data da Cobrança
    * Seu plano
+
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
 1. Posicione o cursor ao lado do campo **Nº** fatura e clique com o duplo na variável **Número** da fatura na guia **Variáveis** , no painel esquerdo.
@@ -135,6 +141,7 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    1. Insira **Placefply** como o nome da variável.
    1. Selecione **String** como tipo.
    1. Toque em **Criar**.
+
    Repita as etapas 4 e 5 para criar as seguintes variáveis:
 
    * Status: Tipo de número
@@ -151,10 +158,11 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    * Número do Relacionamento
    * Código do Estado
    * Número de conexões
+
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. Posicione o cursor ao lado do campo Número **do** celular e clique com o duplo do mouse na propriedade **customer** > **mobilenum** .
-1. Posicione o cursor ao lado do campo Número **de contato** alternativo e clique com o duplo pressionado em *** customer** > propriedade **alternatemobilenumber** .
+1. Posicione o cursor ao lado do campo Número **de contato** alternativo e clique com o duplo do mouse na propriedade **customer** > **alternatemobilenumber** .
 1. Posicione o cursor ao lado do campo Número **do** relacionamento e clique com o duplo na propriedade **customer** > **relative number** .
 1. Selecione a guia **Variáveis** , posicione o cursor ao lado do campo **Local de suprimento** e clique com o duplo na variável **Disponibilização** .
 1. Posicione o cursor ao lado do campo Código **de** estado e clique com o duplo na variável **Status** .
@@ -194,6 +202,7 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    1. Informe o saldo **anterior** como o nome da variável.
    1. Selecione **Número** como tipo.
    1. Toque em **Criar**.
+
    Repita as etapas 4 e 5 para criar as seguintes variáveis:
 
    * Pagamentos: Tipo de número
@@ -211,6 +220,7 @@ Execute as seguintes etapas para criar variáveis para campos com a interface do
    * Valor Devido
    * Data de vencimento
    * Encargos de pagamento atrasados após a Data de Vencimento é $ 20
+
    ![bill_summary_static](assets/bill_summary_static.png)
 
 1. Posicione o cursor ao lado do campo Saldo **** anterior e clique com o duplo na variável Saldo **anterior** .
@@ -246,7 +256,7 @@ Execute as seguintes etapas para criar texto estático e usar elementos de model
 1. Selecione **Criar** > **Texto**.
 1. Especifique as seguintes informações:
 
-   1. Digite **summary_charge_first_ic **como o nome no campo **Título** . O título é preenchido automaticamente no campo Nome.
+   1. Digite **summary_charge_first_ic** como o nome no campo **Título** . O título é preenchido automaticamente no campo Nome.
    1. Selecione Modelo **de dados de** formulário na seção Modelo **de** dados.
    1. Selecione **FDM_Create_First_IC** como o modelo de dados de formulário e toque em **Selecionar**.
    1. Toque em **Avançar**.
@@ -262,6 +272,7 @@ Execute as seguintes etapas para criar texto estático e usar elementos de model
    * Encargos de Serviços de Valor Agregado
    * Total de Encargos
    * TOTAL A PAGAR
+
    ![summary_charge_static](assets/summary_charges_static.png)
 
 1. Selecione a guia Objetos **do modelo de** dados.
@@ -283,6 +294,7 @@ Execute as seguintes etapas para criar texto estático e usar elementos de model
    1. Selecione Modelos **de dados e variáveis** e, em seguida, **listas** > **cobranças**.
    1. Selecionar **é menor que** o operador.
    1. Selecione **Número** e insira o valor como **60**.
+
    Com base nessa condição, a linha Encargos de Serviços de Valor Agregado é exibida somente se o valor do campo Encargos de Chamada for menor que 60.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
