@@ -9,7 +9,10 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -47,11 +50,11 @@ O relatório de Processos de longa execução exibe os processos do AEM Forms qu
 
 1. Clique em **Ir** para executar o relatório.
 
-   O relatório é exibido no painel **Relatório **à direita da janela **Processar Relatórios** .
+   O relatório é exibido no painel **Relatório** à direita da janela **Processar Relatórios** .
 
    ![long_running_process](assets/long_running_processes.png)
 
-   Use as opções no canto superior direito do painel **Relatório **para executar as seguintes operações no relatório.
+   Use as opções no canto superior direito do painel **Relatório** para executar as seguintes operações no relatório.
 
    * **Atualizar**: Atualiza o relatório com os dados mais recentes no armazenamento
    * **Alterar cor** da legenda: Selecionar e alterar a cor da legenda do relatório
