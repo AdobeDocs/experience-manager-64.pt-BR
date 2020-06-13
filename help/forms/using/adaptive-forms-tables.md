@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ Por exemplo, a primeira linha de corpo na tabela a seguir inclui caixa de texto,
 
 ![tipos de célula de linha](assets/row-cell-types.png)
 
-É possível unir duas ou mais células de corpo selecionando as células que deseja unir, clicando com o botão direito do mouse e selecionando **Unir**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
+É possível unir duas ou mais células de corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecionando **Mesclar**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
 
 ### Adicionar, excluir, mover linhas e colunas {#add-delete-move-rows-and-columns}
 
@@ -77,7 +80,7 @@ Você pode adicionar uma descrição da tabela para explicar como as informaçõ
 
 É possível definir o estilo de uma tabela usando o modo Estilo na barra de ferramentas da página. Execute as seguintes etapas para alternar para o modo de estilo e editar o estilo da tabela
 
-1. Na barra de ferramentas da página, antes de Visualizar, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra de ferramentas da página, antes da Pré-visualização, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
 
 1. Na barra lateral, selecione a tabela e toque no botão editar, botão ![editar, botão](assets/edit-button.png).
 
@@ -107,29 +110,29 @@ No tempo de execução, você verá **`+`** e *`-`* botões para adicionar ou ex
 
 ## Expressões em uma tabela {#expressions-in-a-table}
 
-Tabelas em formulários adaptativos permitem gravar expressões em JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou linha, adicionar todos os números e mostrar o total em uma célula, ativar ou desativar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
+Tabelas em formulários adaptativos permitem que você grave expressões no JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou linha, adicionar todos os números e mostrar o total em uma célula, ativar ou desativar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
 
-Embora tabelas e linhas suportem somente expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células suportam as seguintes expressões:
+Embora tabelas e linhas suportem apenas expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células suportam as seguintes expressões:
 
-* **** Script de inicialização: para executar uma ação na inicialização de um campo.
-* **** Script de confirmação de valor: para alterar os componentes de um formulário após a alteração do valor de um campo.
+* **Script de inicialização:** para executar uma ação na inicialização de um campo.
+* **Script de confirmação de valor:** para alterar os componentes de um formulário após a alteração do valor de um campo.
 
 >[!NOTE]
 >
 >Se o script XFA change/exit também for aplicado ao mesmo campo, o script XFA change/exit será executado antes do script Value Commit.
 
 * **Calcular expressões**: para calcular automaticamente o valor de um campo.
-* **Expressões** de validação: para validar um campo.
-* **Expressões** de acesso: para ativar/desativar um campo.
-* **Expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
+* **expressões** de validação: para validar um campo.
+* **expressões** de acesso: para ativar/desativar um campo.
+* **expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
 
-A expressão de visibilidade para uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente Editar. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
+A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente Editar. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
 Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptáveis.
 
 ## Layouts móveis {#mobile-layouts}
 
-Tabelas em formulários adaptáveis oferecem experiência inigualável em dispositivos móveis devido aos layouts fluidos e responsivos. O AEM Forms oferece dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colaboráveis.
+Tabelas em formulários adaptáveis oferecem experiência inigualável em dispositivos móveis devido aos layouts fluidos e responsivos. O AEM Forms oferta dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colaboráveis.
 
 Você pode configurar um layout móvel para uma tabela na guia Estilo da caixa de diálogo Editar componente para uma tabela.
 
@@ -137,21 +140,23 @@ Você pode configurar um layout móvel para uma tabela na guia Estilo da caixa d
 
 No layout Cabeçalhos à esquerda, o cabeçalho na tabela é transposto à esquerda com apenas uma célula aparecendo em um cabeçalho. Cada linha neste layout aparece como uma seção distinta. As imagens a seguir comparam uma tabela em um desktop com a tabela em um dispositivo móvel.
 
-![](assets/desktopview.png) desktopview **** Figura: Exibição de *desktop de uma tabela com cabeçalho no layout esquerdo*
+![desktopview](assets/desktopview.png)**Figura:** *visualização de desktop de uma tabela com cabeçalho no layout esquerdo*
 
-![](assets/headersontheleft.png) headersontheleft **** Figura: Exibição *móvel de uma tabela com cabeçalho no layout esquerdo*
+![headersontheleft](assets/headersontheleft.png)**Figura:** *visualização móvel de uma tabela com cabeçalho no layout esquerdo*
 
 ### Layout de colunas flexível {#collapsible-columns-layout}
 
-No layout de coluna flexível, as colunas na tabela são recolhidas para mostrar uma ou duas colunas, dependendo do tamanho do dispositivo, enquanto outras colunas são recolhidas. Você pode clicar no ícone recolher/expandir para exibir outras colunas na tabela.
+No layout de coluna flexível, as colunas na tabela são recolhidas para mostrar uma ou duas colunas, dependendo do tamanho do dispositivo, enquanto outras colunas são recolhidas. Você pode clicar no ícone recolher/expandir para visualização de outras colunas na tabela.
 
-***Observação**: Embora o layout de coluna flexível seja otimizado para dispositivos móveis, ele também funcionará na área de trabalho, se a largura disponível não for suficiente para mostrar todas as colunas em uma tabela. *
+>[!NOTE]
+>
+>Embora o layout de coluna flexível seja otimizado para dispositivos móveis, ele também funcionará na área de trabalho, se a largura disponível não for suficiente para mostrar todas as colunas em uma tabela.
 
 As imagens a seguir comparam a aparência de uma tabela em um dispositivo com colunas recolhidas e expandidas.
 
-![](assets/collapsed-column.png) coluna **recolhida** Figura: Colunas *recolhidas de uma tabela com apenas duas colunas aparecendo em um dispositivo móvel*
+![coluna](assets/collapsed-column.png)recolhida **Figura:** *Colunas recolhidas de uma tabela com apenas duas colunas aparecendo em um dispositivo móvel*
 
-![](assets/collapsible_column.png) collapsible_column **** Figura: Coluna *expandida de uma tabela em um dispositivo móvel*
+![collapsible_column](assets/collapsible_column.png)**Figura:** *Coluna expandida de uma tabela em um dispositivo móvel*
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
@@ -229,7 +234,7 @@ O arquivo XML que contém dados no seguinte formato:
 
 No XML de amostra, os dados de uma linha são definidos pelas `<Row1>` tags, que é o nome do elemento da linha na tabela. Na `<Row1>` tag , os dados de cada célula são definidos dentro da tag para seu nome de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
 
-Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *http://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados estiver salvo em *C:/myTransactions/bankSummary.xml*, você poderá exibir a tabela com dados no seguinte URL:
+Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *http://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados estiver salvo em *C:/myTransactions/bankSummary.xml*, você pode visualização a tabela com dados no seguinte URL:
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
