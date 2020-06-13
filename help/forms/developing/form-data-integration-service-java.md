@@ -1,6 +1,6 @@
 ---
-title: Início rápido do JavaAPI do serviço de integração de dados de formulário (SOAP)
-seo-title: Início rápido do JavaAPI do serviço de integração de dados de formulário (SOAP)
+title: Start rápido JavaAPI (SOAP) do serviço de integração de dados de formulário
+seo-title: Start rápido JavaAPI (SOAP) do serviço de integração de dados de formulário
 description: 'null'
 seo-description: 'null'
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
@@ -10,24 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 0%
 
 ---
 
 
-# Início rápido da API Java do serviço de integração de dados de formulário (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
+# SOAP (Form Data Integration Service API Quick Start, serviço de integração de dados de formulário) {#form-data-integration-service-javaapi-quick-start-soap}
 
-Os Início rápido a seguir estão disponíveis para o serviço de Integração de dados de formulário.
+Os seguintes Start rápidos estão disponíveis para o serviço de Integração de dados de formulário.
 
-[Início rápido (modo SOAP): Importação de dados de formulário usando a API Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Start rápido (modo SOAP): Importação de dados de formulário usando a API Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Início rápido (modo SOAP): Exportação de dados de formulário usando a API Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Start rápido (modo SOAP): Exportação de dados de formulário usando a API Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: O Início rápido localizado em Programação com formulários AEM tem por base o Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+>[!NOTE]
+>
+>O Start rápido localizado em Programação com formulários AEM tem por base o Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
-## Início rápido (modo SOAP): Importação de dados de formulário usando a API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+## Start rápido (modo SOAP): Importação de dados de formulário usando a API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
 O exemplo de código Java a seguir importa dados para um formulário PDF. Os dados estão localizados em um arquivo XML chamado *Loan_data.xml* e o formulário PDF é salvo como um arquivo PDF chamado *ResultLoanForm.pdf*. (Consulte [Importação de dados](/help/forms/developing/importing-exporting-data.md#importing-form-data)do formulário.)
 
@@ -129,7 +134,7 @@ O exemplo de código Java a seguir importa dados para um formulário PDF. Os dad
  
 ```
 
-## Início rápido (modo SOAP): Exportação de dados de formulário usando a API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+## Start rápido (modo SOAP): Exportação de dados de formulário usando a API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
 O exemplo de código Java a seguir exporta dados de um formulário PDF. Os dados do formulário são salvos como um arquivo XML chamado *Loan_data.xml*. (Consulte [Exportação de dados](/help/forms/developing/importing-exporting-data.md#exporting-form-data)de formulário.)
 
