@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Observação**: As configurações recomendadas são para o JDK do Windows 2008 R2 8 Core e do Oracle HotSpot 1.7 (64 bits) e devem ser ampliadas para cima ou para baixo de acordo com a configuração do seu sistema.
+>[!NOTE]
+>
+>As configurações recomendadas são para o JDK do Windows 2008 R2 8 Core e do Oracle HotSpot 1.7 (64 bits) e devem ser ampliadas para cima ou para baixo de acordo com a configuração do seu sistema.
 
 ## Uso de um servidor da Web {#using-a-web-server}
 
@@ -62,7 +67,9 @@ Formulários adaptáveis e formulários HTML5 são renderizados no formato HTML5
 
 Por exemplo, execute as seguintes etapas para ativar a compactação no Apache Web Server 2.0 de 32 bits com JBoss:
 
-***Observação **: As instruções a seguir não se aplicam a nenhum servidor além do Apache Web Server 2.0 de 32 bits. Para obter as etapas específicas de qualquer outro servidor, consulte a documentação do produto correspondente.*
+>[!NOTE]
+>
+>As instruções a seguir não se aplicam a nenhum servidor além do Apache Web Server 2.0 de 32 bits. Para obter as etapas específicas de qualquer outro servidor, consulte a documentação do produto correspondente.
 
 As etapas a seguir demonstram as alterações necessárias para habilitar a compactação com o Apache Web Server
 
@@ -147,11 +154,11 @@ Para melhorar o desempenho, é possível direcionar o software antivírus para e
 
 * Diretório temporário do servidor de aplicativos. O local padrão é:
 
-   * (JHead) Diretório [de instalação do]AEM \jboss\standalone\tmp
+   * (Jpatrão) Diretório de instalação [do AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (Webphere) \Arquivos de Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+   * (Webphere) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(AEM Forms somente no JEE)** diretório Global Document Storage (GDS). O local padrão é:
+* **(AEM Forms somente em JEE)** Diretório GDS (Global Documento Armazenamento). O local padrão é:
 
    * (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
    * (WebLogic) `[appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage`
@@ -166,7 +173,7 @@ Para melhorar o desempenho, é possível direcionar o software antivírus para e
 >
 >* Se você estiver usando um local diferente para GDS e diretório temporário, abra a interface do usuário Admin em `https://[server]:[port]/adminui)`, navegue até **Início > Configurações > Configurações principais do sistema > Configurações** principais para confirmar o local em uso.
 
-* Se o servidor do AEM Forms executar lentamente mesmo depois de excluir os diretórios sugeridos, exclua também o arquivo executável Java (java.exe).
+* Se o servidor de formulários AEM for executado lentamente mesmo depois de excluir os diretórios sugeridos, exclua também o arquivo executável Java (java.exe).
 
 
 
