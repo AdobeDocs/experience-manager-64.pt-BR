@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ Conhecimento da CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista classes css de formulários adaptáveis disponíveis ao público. É possível aproveitar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está além do escopo deste artigo. Use essas construções de estilização para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o editor [de](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)temas.
+O artigo lista classes css de formulários adaptativos disponíveis ao público. É possível aproveitar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está além do escopo deste artigo. Use essas construções de estilização para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o editor [de](themes.md)temas.
 
 ## Personalização de estilos em formulários adaptáveis {#customizing-styles-in-adaptive-forms}
 
@@ -52,7 +55,7 @@ Atualmente, as variáveis MENOS são definidas apenas para essas propriedades do
 
 ## Alteração do estilo do componente {#changing-component-style}
 
-É possível fazer alterações na aparência, no layout, no posicionamento e na visibilidade dos elementos. Para realizar essa tarefa, crie ou atualize seus arquivos .css personalizados para incluir os construções de estilo listados neste artigo.
+É possível fazer alterações na aparência, no layout, no posicionamento e na visibilidade dos elementos. Para obter essa tarefa, crie ou atualize seus arquivos .css personalizados para incluir os construções de estilização listados neste artigo.
 
 Para aplicar um estilo a um formulário adaptável, abra o formulário adaptável na guia básica para edição, abra as propriedades do contêiner de formulário adaptável e especifique o caminho do Arquivo CSS personalizado. O estilo padrão cria construções do formulário adaptativo e é substituído pelas construções listadas no arquivo .css personalizado.
 
@@ -60,9 +63,9 @@ Para aplicar um estilo a um formulário adaptável, abra o formulário adaptáve
 
 Os componentes discutidos neste artigo têm suas classes CSS predefinidas. É possível editar as variáveis para modificar os estilos nas classes CSS. Como alternativa, você pode regravar a classe inteira. Esta seção descreve as classes nos componentes e estilos que podem ser modificadas usando variáveis.
 
-## Estilo do contêiner {#container-styling}
+## estilo do Container {#container-styling}
 
-Um contêiner é o componente de nível superior. Outros painéis e campos estão sob o componente de contêiner.
+Um container é o componente de nível superior. Outros painéis e campos estão sob o componente container.
 
 <table> 
  <tbody> 
@@ -81,19 +84,19 @@ Um contêiner é o componente de nível superior. Outros painéis e campos estã
   </tr> 
   <tr> 
    <td><p><code>container-bgColor</code></p> </td> 
-   <td><p>Cor de fundo do contêiner</p> </td> 
+   <td><p>Cor de fundo do container</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>container-padding</code></p> </td> 
-   <td><p>Preenchimento do contêiner</p> </td> 
+   <td><p>Preenchimento para o container</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>container-margin</code></p> </td> 
-   <td><p>Margem do contêiner</p> </td> 
+   <td><p>Margem para o container</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>container-fontColor</code></p> </td> 
-   <td><p>Cor da fonte do contêiner</p> </td> 
+   <td><p>Cor da fonte do container</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -167,7 +170,7 @@ O **rótulo** do elemento HTML usado para o campo inclui as classes **left** ou 
   </tr> 
   <tr> 
    <td><p><code>label-font-weight</code></p> </td> 
-   <td>Propriedade de espessura de fonte CSS para o rótulo do campo </td> 
+   <td>Propriedade de peso de fonte CSS para o rótulo do campo </td> 
   </tr> 
   <tr> 
    <td><p><code>label-margin</code></p> </td> 
@@ -271,7 +274,7 @@ Dependendo do tipo, os widgets também incluem classes. Normalmente, os widgets 
   </tr> 
   <tr> 
    <td><p><code>checkbutton-height</code></p> </td> 
-   <td><p>Altura para caixa de seleção e botão de opção.</p> </td> 
+   <td><p>Altura da caixa de seleção e do botão de opção.</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>listboxwidget-height</code></p> </td> 
@@ -437,7 +440,7 @@ Código HTML do botão:
   </tr> 
   <tr> 
    <td><p><code>button-info-background-color</code></p> </td> 
-   <td><p>Cor do fundo para botões informativos (botões com classe .buttoninformative)</p> </td> 
+   <td><p>Cor do plano de fundo para botões informativos (botões com classe .buttoninformative)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-info-font-color</code></p> </td> 
@@ -516,7 +519,7 @@ Para os widgets, um questionMark é exibido quando um autor adiciona uma descri�
   </tr> 
   <tr> 
    <td><p><code>table-header-bg-color</code></p> </td> 
-   <td><p>Cor do plano de fundo da linha de cabeçalho. O valor padrão é <code>#333</code>.<br /> </p> </td> 
+   <td><p>Cor do plano de fundo para a linha de cabeçalho. O valor padrão é <code>#333</code>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p><code>table-odd-row-bg-color</code></p> </td> 
@@ -557,7 +560,7 @@ O widget Anexo de arquivo de formulários adaptativos permite carregar arquivos.
   </tr> 
   <tr> 
    <td><p><code>filePreviewIconColor</code></p> </td> 
-   <td><p>Cor do ícone Visualizar (ícone Bootstrap) no widget</p> </td> 
+   <td><p>Cor do ícone de Pré-visualização (ícone Bootstrap) no widget</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>fileItemCommentHeight</code></p> </td> 
@@ -695,7 +698,7 @@ Além disso, há classes para navegadores de guias de estilo (esquerda e superio
   </tr> 
   <tr> 
    <td><p><code>nested_true</code></p> </td> 
-   <td><p>Navegadores de guias (esquerda e superior) com navegadores aninhados/filhos/subnavegadores</p> </td> 
+   <td><p>Navegadores de guias (esquerda e superior) que têm navegadores aninhados/filhos/subnavegadores</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>nested_false</code></p> </td> 
@@ -843,7 +846,7 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-font-color</code></p> </td> 
-   <td><p>Cor da fonte quando o painel é focalizado uma vez, mas a expressão de conclusão retorna false</p> </td> 
+   <td><p>Cor da fonte quando o painel está focalizado uma vez, mas a expressão de conclusão retorna falso</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-border-color</code></p> </td> 
@@ -929,7 +932,7 @@ Um Painel inclui uma barra de ferramentas opcional e seu conteúdo.
   </tr> 
   <tr> 
    <td><p><code>panel-help-bg-color</code></p> </td> 
-   <td><p>Cor do plano de fundo da ajuda do painel</p> </td> 
+   <td><p>Cor do plano de fundo para a ajuda do painel</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>panel-help-border-indicator-color</code></p> </td> 
@@ -980,7 +983,7 @@ Essas variáveis influenciam a barra de cabeçalho que está visível em um disp
 
 ## Indicador de rolagem {#scroll-indicator}
 
-Essas variáveis influenciam o indicador de rolagem, que é uma seta laranja que aparece em um dispositivo móvel ou em dispositivos de tela pequena. Um indicador de rolagem indica que há conteúdo além da parte visível da tela. Você pode rolar para baixo para vê-lo. Quando você chega ao final do conteúdo, a seta desaparece.
+Essas variáveis influenciam o indicador de rolagem, que é uma seta laranja que aparece em um dispositivo móvel ou em dispositivos de tela pequena. Um indicador de rolagem indica que há conteúdo além da parte visível da tela. Você pode rolar para baixo para vê-lo. Quando você atinge o final do conteúdo, a seta desaparece.
 
 <table> 
  <tbody> 
