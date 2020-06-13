@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Saiba como criar sua primeira Comunicação interativa.
 
 ![01-create-first-adaptive-form-herói-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-O Interative Communications centraliza e gerencia a criação, montagem e entrega de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, emails de marketing, contas e kits de boas-vindas. As Comunicações interativas podem ser entregues usando dois canais: Imprimir e Web. O canal Imprimir é usado para criar PDFs e comunicações em papel, enquanto o canal Web é usado para fornecer experiências online.
+O Interative Communications centraliza e gerencia a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, emails de marketing, contas e kits de boas-vindas. As Comunicações interativas podem ser entregues usando dois canais: Imprimir e Web. O canal Print é usado para criar PDFs e comunicações em papel, enquanto o canal da Web é usado para fornecer experiências online.
 
 Este tutorial fornece uma estrutura completa para criar uma comunicação interativa. O tutorial é organizado em um caso de uso e em várias guias. Cada guia ajuda a criar recursos que são usados como blocos de construção para criar uma Comunicação interativa.
 
@@ -36,13 +39,13 @@ No final deste tutorial, você poderá:
 
 ## Use case {#use-case}
 
-A jornada começa com o aprendizado do caso de uso:
+A jornada start com o aprendizado do caso de uso:
 
 Um operador de telecom envia contas mensais aos clientes por email. O projeto de lei é uma Comunicação Interativa. O email inclui:
 
-* Um PDF protegido por senha, conhecido como Canal de impressão neste tutorial. Inclui detalhes do cliente, detalhes da lista, resumo das cobranças, modos convenientes de pagamento da lista e detalhes de uso.
-* Um link para a versão da Web do bill, conhecido como canal da Web neste tutorial. A versão da Web da lista, além dos detalhes abordados na versão PDF, fornece uma representação gráfica dos detalhes de uso e ofertas personalizadas com base no Adobe Target. A versão da Web também contém um formulário de pagamento online. Ajuda a efetuar pagamentos em linha sem deixar o IC.
-* Um link para serviços de valor agregado, como armazenamento online, assinaturas de música e assinaturas de vídeo sob demanda.
+* Um PDF protegido por senha, conhecido como canal de impressão neste tutorial. Inclui detalhes do cliente, detalhes da lista, resumo das cobranças, modos convenientes de pagamento da lista e detalhes de uso.
+* Um link para a versão da Web da lista, conhecido como canal da Web neste tutorial. A versão da Web da lista, além dos detalhes abordados na versão PDF, fornece uma representação gráfica dos detalhes de uso e ofertas personalizadas com base no Adobe Target. A versão da Web também contém um formulário de pagamento on-line. Ajuda a efetuar pagamentos em linha sem deixar o IC.
+* Um link para serviços de valor agregado, como armazenamento online, subscrições de música e subscrições de vídeo sob demanda.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -73,7 +76,7 @@ Para criar uma anatomia para a Comunicação interativa com os seguintes modos d
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Um modelo de dados de formulário permite que você conecte uma Comunicação interativa a fontes de dados diferentes. Por exemplo, perfil de usuário do AEM, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um esquema unificado de representação de dados de entidades de negócios e serviços disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação Interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+Um modelo de dados de formulário permite que você conecte uma Comunicação interativa a fontes de dados diferentes. Por exemplo, perfil de usuário do AEM, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um schema unificado de representação de dados de entidades de negócios e serviços disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação Interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
 
 **Objetivos:**
 
@@ -82,21 +85,21 @@ Um modelo de dados de formulário permite que você conecte uma Comunicação in
 * Adicionar objetos de modelo de dados ao modelo de dados de formulário
 * Configurar serviços de leitura e gravação para o modelo de dados de formulário
 * Criar associações entre objetos de modelo de dados
-* Exibir dados de amostra gerados automaticamente
+* Visualização de dados de amostra gerados automaticamente
 * Editar dados de amostra
 * Testar modelo de dados de formulário e serviços configurados com dados de teste
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
 ## Etapa 3: Criar fragmentos de documento {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Os fragmentos de documento são componentes reutilizáveis de uma correspondência usada para compor uma Comunicação interativa. Os fragmentos do documento são de tipos: Texto, Lista e Condição.
+Os fragmentos de Documento são componentes reutilizáveis de uma correspondência usada para compor uma Comunicação interativa. Os fragmentos do documento são de tipos: Texto, Lista e Condição.
 
 **Objetivos:**
 
-*  Criar fragmentos de documento
+* Criar fragmentos de documento
 * Criar variáveis
 * Criar e aplicar regras
 
@@ -124,20 +127,20 @@ Os modelos para o canal da Web são criados no AEM. Os autores e administradores
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
-Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento e modelos para a versão da Web, você pode começar a criar uma Comunicação interativa.
+Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento e modelos para a versão da Web, você pode criar um start para a criação de uma comunicação interativa.
 
-As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de Comunicação interativa com Impressão como mestre. A opção Imprimir como principal para canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir.
+As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de comunicação interativa com impressão como mestre. A opção Imprimir como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir.
 
 **Objetivos:**
 
-* Criar comunicação interativa para o canal Imprimir
+* Criar comunicação interativa para o canal de impressão
 * Criar comunicação interativa para o canal da Web
 * Criar Comunicações Interativas Impressas e da Web com Imprimir como Mestre
 * Criar uma tabela dinâmica na versão Web do Interative Communication
 * Criar um gráfico na versão Web do Interative Communication
 * Criar hiperlinks na versão da Web do Interative Communication
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
 ## Etapa 6: Testar sua comunicação interativa {#step-test-your-interactive-communication}
 
@@ -155,11 +158,11 @@ Depois de criar uma Comunicação interativa, é importante testar todas as alte
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-Depois de criar e testar o Interative Communications usando canais Imprimir e Web, você pode publicar esses ativos. O caso de uso descrito neste tutorial foca na integração desses ativos com um cliente de email. O cliente de email serve como uma ponte para enviar as Comunicações interativas para vários endereços de email.
+Depois de criar e testar o Interative Communications usando canais de Impressão e da Web, você pode publicar esses ativos. O caso de uso descrito neste tutorial foca na integração desses ativos com um cliente de email. O cliente de email serve como uma ponte para enviar as Comunicações interativas para vários endereços de email.
 
 **Objetivos:**
 
 * Integre o Interative Communications a um cliente de email para poder enviar uma comunicação aos clientes
-* Incluir um documento PDF como anexo (Comunicação interativa criada no canal Imprimir)
+* Incluir um documento PDF como anexo (Comunicação interativa criada no canal de impressão)
 * Incluir um link para a versão da Web do Interative Communication
 
