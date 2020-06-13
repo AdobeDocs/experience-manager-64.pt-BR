@@ -10,38 +10,43 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 0%
 
 ---
 
 
-# Início rápido da API Java do Serviço de assinatura (SOAP) {#signature-service-java-api-quickstart-soap}
+# SOAP (Signature Service Java API Quick Start) {#signature-service-java-api-quickstart-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço de assinatura:
+O SOAP (Java API Quick Start) está disponível para o serviço de assinatura:
 
-[Início rápido (modo SOAP): Adicionar um campo de assinatura a um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Adicionar um campo de assinatura a um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Recuperar nomes de campos de assinatura usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Start rápido (modo SOAP): Recuperar nomes de campos de assinatura usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[Início rápido (modo SOAP): Modificação de um campo de assinatura usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
+[Start rápido (modo SOAP): Modificação de um campo de assinatura usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
 
-[Início rápido (modo SOAP): Assinando digitalmente um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Assinando digitalmente um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Assinando digitalmente um formulário baseado em XFA usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
+[Start rápido (modo SOAP): Assinando digitalmente um formulário baseado em XFA usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
 
-[Início rápido (modo SOAP): Como certificar um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Como certificar um documento PDF usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Verificação de uma assinatura digital usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
+[Start rápido (modo SOAP): Verificação de uma assinatura digital usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
-[Início rápido (modo SOAP): Verificação de várias assinaturas digitais usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
+[Start rápido (modo SOAP): Verificação de várias assinaturas digitais usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
-[Início rápido (modo SOAP): Remoção de uma assinatura digital usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
+[Start rápido (modo SOAP): Remoção de uma assinatura digital usando a API Java](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: O Início rápido localizado em Programação com AEM Forms baseia-se no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+>[!NOTE]
+>
+>O Start rápido localizado em Programação com AEM Forms baseia-se no servidor Forms que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
-## Início rápido (modo SOAP): Adicionar um campo de assinatura a um documento PDF usando a API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
+## Start rápido (modo SOAP): Adicionar um campo de assinatura a um documento PDF usando a API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
 O exemplo de código Java a seguir adiciona um campo de assinatura *SignatureField1* a um documento PDF que se baseia em um arquivo PDF *chamadoLoan.pdf*. O documento PDF que contém o novo campo de assinatura é salvo como um arquivo PDF chamado *LoanSig.pdf*. (Consulte [Adicionar Campos](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)de Assinatura.)
 
@@ -157,7 +162,7 @@ O exemplo de código Java a seguir adiciona um campo de assinatura *SignatureFie
  
 ```
 
-## Início rápido (modo SOAP): Recuperar nomes de campos de assinatura usando a API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
+## Start rápido (modo SOAP): Recuperar nomes de campos de assinatura usando a API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
 O exemplo de código Java a seguir recupera os nomes dos campos de assinatura localizados em um documento PDF chamado *LoanSig.pdf*. (Consulte [Recuperando Nomes](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)De Campo De Assinatura.)
 
@@ -263,7 +268,7 @@ O exemplo de código Java a seguir recupera os nomes dos campos de assinatura lo
  }
 ```
 
-## Início rápido (modo SOAP): Modificação de um campo de assinatura usando a API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
+## Start rápido (modo SOAP): Modificação de um campo de assinatura usando a API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
 O exemplo de código Java a seguir modifica um campo de assinatura chamado SignatureField1, bloqueando todos os campos no formulário quando uma assinatura é aplicada ao campo de assinatura e garantindo que nenhuma alteração seja permitida. Depois que o serviço de assinatura retorna o documento PDF que contém o campo de assinatura modificado, o documento PDF é salvo como um arquivo PDF chamado LoanSig.pdf. (Este exemplo substitui o arquivo PDF passado para o serviço de assinatura.) (Consulte [Modificação de campos](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)de assinatura.)
 
@@ -391,9 +396,9 @@ O exemplo de código Java a seguir modifica um campo de assinatura chamado Signa
  
 ```
 
-## Início rápido (modo SOAP): Assinando digitalmente um documento PDF usando a API Java {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
+## Start rápido (modo SOAP): Assinando digitalmente um documento PDF usando a API Java {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir assina digitalmente um documento PDF que se baseia em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação é executada. Como nenhuma informação CRL ou OCSP do servidor é especificada, as informações do servidor são obtidas do certificado usado para assinar digitalmente o documento PDF. O documento assinado é salvo como um arquivo PDF chamado *LoanSigned.pdf*. (Consulte Assinatura [digital de documentos](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF.)
+O exemplo de código Java a seguir assina digitalmente um documento PDF que se baseia em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação é executada. Como nenhuma informação CRL ou OCSP do servidor é especificada, as informações do servidor são obtidas do certificado usado para assinar digitalmente o documento PDF. O documento assinado é salvo como um arquivo PDF chamado *LoanSigned.pdf*. (Consulte Assinando [digitalmente Documentos](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -540,9 +545,9 @@ O exemplo de código Java a seguir assina digitalmente um documento PDF que se b
  
 ```
 
-## Início rápido (modo SOAP): Assinando digitalmente um formulário baseado em XFA usando a API Java {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
+## Start rápido (modo SOAP): Assinando digitalmente um formulário baseado em XFA usando a API Java {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-O exemplo de código Java a seguir assina um formulário interativo que é renderizado pelo serviço Forms. A `com.adobe.idp.Document` instância retornada pelo serviço Forms é transmitida ao serviço Signature. O formulário interativo assinado é salvo como um arquivo PDF chamado *LoanXFASigned.pdf*.
+O exemplo de código Java a seguir assina um formulário interativo que é renderizado pelo serviço Forms. A `com.adobe.idp.Document` instância retornada pelo serviço Forms é passada para o serviço Signature. O formulário interativo assinado é salvo como um arquivo PDF chamado *LoanXFASigned.pdf*.
 
 ```as3
  /* 
@@ -752,9 +757,9 @@ O exemplo de código Java a seguir assina um formulário interativo que é rende
  
 ```
 
-## Início rápido (modo SOAP): Como certificar um documento PDF usando a API Java {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
+## Start rápido (modo SOAP): Como certificar um documento PDF usando a API Java {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir certifica um documento PDF que se baseia em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação não é executada. O documento certificado é salvo como um arquivo PDF chamado *LoanCertified.pdf*. (Consulte [Certificando documentos](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents)PDF.)
+O exemplo de código Java a seguir certifica um documento PDF que se baseia em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação não é executada. O documento certificado é salvo como um arquivo PDF chamado *LoanCertified.pdf*. (Consulte [Certificando Documentos](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -901,9 +906,9 @@ O exemplo de código Java a seguir certifica um documento PDF que se baseia em u
  }
 ```
 
-## Início rápido (modo SOAP): Verificação de uma assinatura digital usando a API Java {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
+## Start rápido (modo SOAP): Verificação de uma assinatura digital usando a API Java {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-O exemplo de código Java a seguir verifica uma assinatura digital que está localizada em um documento PDF assinado, baseado em um arquivo PDF chamado LoanSigned.pdf. O tempo de verificação é definido como a hora atual e a opção de verificação de revogação é definida como o melhor esforço. (Consulte [Verificação de assinaturas](#unresolvedlink-lc-si)digitais.)
+O exemplo de código Java a seguir verifica uma assinatura digital localizada em um documento PDF assinado, com base em um arquivo PDF chamado LoanSigned.pdf. O tempo de verificação é definido como a hora atual e a opção de verificação de revogação é definida como o melhor esforço. (Consulte [Verificação de assinaturas](#unresolvedlink-lc-si)digitais.)
 
 ```as3
  /* 
@@ -1065,9 +1070,9 @@ O exemplo de código Java a seguir verifica uma assinatura digital que está loc
  
 ```
 
-## Início rápido (modo SOAP): Verificação de várias assinaturas digitais usando a API Java {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
+## Start rápido (modo SOAP): Verificação de várias assinaturas digitais usando a API Java {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-O exemplo de código Java a seguir verifica várias assinaturas digitais que estão localizadas em um documento PDF assinado que é baseado em um arquivo PDF chamado LoanAllSigs.pdf. O tempo de verificação é definido como a hora atual e a opção de verificação de revogação é definida como o melhor esforço. (Consulte [Verificando várias assinaturas](#unresolvedlink-lc-si)digitais.)
+O exemplo de código Java a seguir verifica várias assinaturas digitais que estão localizadas em um documento PDF assinado com base em um arquivo PDF chamado LoanAllSigs.pdf. O tempo de verificação é definido como a hora atual e a opção de verificação de revogação é definida como o melhor esforço. (Consulte [Verificando várias assinaturas](#unresolvedlink-lc-si)digitais.)
 
 ```as3
  /* 
@@ -1227,7 +1232,7 @@ O exemplo de código Java a seguir verifica várias assinaturas digitais que est
  }
 ```
 
-## Início rápido (modo SOAP): Remoção de uma assinatura digital usando a API Java {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
+## Start rápido (modo SOAP): Remoção de uma assinatura digital usando a API Java {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
 O exemplo de código Java a seguir remove uma assinatura digital de um campo de assinatura chamado *SignatureField1*. O nome do arquivo PDF que contém o campo de assinatura é *LoanSigned.pdf*. (Consulte [Remoção de assinaturas](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures)digitais.)
 
