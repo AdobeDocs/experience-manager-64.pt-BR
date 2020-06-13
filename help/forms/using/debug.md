@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ Verifique os seguintes parâmetros:
 
 ## Problema: Não é possível renderizar um formulário (uma mensagem de erro é exibida) {#problem-unable-to-render-a-form-an-error-message-is-displayed}
 
-1. Verifique se os parâmetros especificados estão corretos. Para obter informações detalhadas sobre parâmetros, consulte [Renderizar parâmetros](/help/forms/using/debug.md#main-pars-table).
+1. Verifique se os parâmetros especificados estão corretos. Para obter informações detalhadas sobre parâmetros, consulte [Renderizar parâmetros](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. Faça logon no CRX Package Manager (em https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) e verifique se os seguintes pacotes estão instalados corretamente:
 
    * adobe-lc-forms-content-pkg-&lt;versão>.zip
@@ -65,12 +68,15 @@ Verifique os seguintes parâmetros:
    Verifique se o status dos seguintes pacotes está &quot;ativo&quot;:
 
    * escala-lang.bundle [osgi]
+
    (com.adobe.livecyclescala-lang.bundle)
 
    * Renderizador de formulários do Adobe XFA
+
    (com.adobe.livecycle.adobe-lc-forms-core)
 
    * Adobe XFA Forms LC Connector
+
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
 ## Problema: Renderizações de formulário sem estilos {#problem-form-renders-without-styles}
