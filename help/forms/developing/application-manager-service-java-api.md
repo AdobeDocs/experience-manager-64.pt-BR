@@ -1,6 +1,6 @@
 ---
-title: Início rápido do JavaAPI do serviço Application Manager (SOAP)
-seo-title: Início rápido do JavaAPI do serviço Application Manager (SOAP)
+title: Start rápido JavaAPI do serviço Application Manager (SOAP)
+seo-title: Start rápido JavaAPI do serviço Application Manager (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
@@ -10,18 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 
 
-# Início rápido do JavaAPI do serviço Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Start rápido JavaAPI (SOAP) do serviço Application Manager {#application-manager-service-javaapi-quick-start-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço Application Manager.
+O SOAP (Java API Quick Start) está disponível para o serviço Application Manager.
 
-[Início rápido: Implantação de aplicativos usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[Start rápido: Implantação de aplicativos usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Início rápido: Remoção de um aplicativo usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
+[Start rápido: Remoção de um aplicativo usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
@@ -29,9 +32,11 @@ O Java API Quick Start (SOAP) está disponível para o serviço Application Mana
 
 As operações do AEM Forms podem ser executadas usando a API fortemente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
-* ***Observação **: O Início rápido da API Java (SOAP) localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+>[!NOTE]
+>
+>O Start rápido da API Java (SOAP) localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
-## Início rápido (modo SOAP): Implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Start rápido (modo SOAP): Implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 O exemplo de código Java a seguir importa um aplicativo com base em um arquivo LCA existente chamado *EncryptDocument.lca*.
 
@@ -133,7 +138,7 @@ O exemplo de código Java a seguir importa um aplicativo com base em um arquivo 
  
 ```
 
-## Início rápido (modo SOAP): Remoção de um aplicativo usando a API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Start rápido (modo SOAP): Remoção de um aplicativo usando a API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 O exemplo de código Java a seguir remove um aplicativo chamado *EncryptDocument*.
 
