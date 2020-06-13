@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Por padrão, a tela Início exibe todos os formulários, incluindo pontos de par
 A figura a seguir é anotada com chamadas para os componentes essenciais na tela inicial padrão.
 ![Tela](assets/home-screen-1.png)inicial do aplicativo Forms[Clique para ampliar](assets/home-screen-1-1.png)
 
-1. **Botão** Menu: Toque no botão **Menu **para navegar até Tarefas, Formulários, Caixa de saída e Configurações. Se seu aplicativo AEM Forms estiver conectado a um servidor AEM Forms JEE, você poderá ver a opção Tarefa. A opção Tarefas também armazena os rascunhos criados a partir do tarefa em um processo. Para servidores OSGi do AEM Forms, a opção Tarefa está oculta. A caixa de saída armazena os formulários e rascunhos salvos antes de sincronizar com o servidor. Todos os formulários e rascunhos salvos na caixa de saída são carregados no servidor de formulários AEM quando o aplicativo é [sincronizado com o servidor](/help/forms/using/sync-app.md). Para obter informações sobre Configurações, consulte [Atualizar configurações](/help/forms/using/update-general-settings.md)gerais.
+1. **Botão** Menu: Toque no botão **Menu** para navegar até Tarefa, Forms, Outbox e Settings. Se seu aplicativo AEM Forms estiver conectado a um servidor AEM Forms JEE, você poderá ver a opção Tarefa. A opção Tarefas também armazena os rascunhos criados a partir do tarefa em um processo. Para servidores OSGi do AEM Forms, a opção Tarefa está oculta. A caixa de saída armazena os formulários e rascunhos salvos antes de sincronizar com o servidor. Todos os formulários e rascunhos salvos na caixa de saída são carregados no servidor de formulários AEM quando o aplicativo é [sincronizado com o servidor](/help/forms/using/sync-app.md). Para obter informações sobre Configurações, consulte [Atualizar configurações](/help/forms/using/update-general-settings.md)gerais.
 1. **Tarefa ou formulário**: Toque na tarefa ou formulário listado com o qual você deseja trabalhar.
 1. **Reticências** horizontais: Indica que as ações estão disponíveis para o formulário. Tocar nas reticências exibe as ações e a descrição fornecidas pelo autor. A opção **Excluir rascunho** e **concluir** fica visível quando você toca nas reticências.
 1. **Ícone** Atualizar: Toque no ícone de atualização para sincronizar seu aplicativo com o servidor do AEM Forms.
