@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 0%
 
 ---
 
@@ -22,12 +25,12 @@ Saiba como configurar diferentes tipos de fontes de dados e aproveitar para cria
 A integração de dados do AEM Forms permite configurar e conectar-se a fontes de dados diferentes. Os seguintes tipos são suportados prontamente. No entanto, com pouca personalização, também é possível integrar outras fontes de dados.
 
 * Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
-* Perfil de usuário do AEM
+* perfil de usuário do AEM
 * Serviços Web RESTful
 * Serviços Web baseados em SOAP
 * Serviços OData
 
-A integração de dados suporta os tipos de autenticação OAuth2.0, Autenticação básica e Chave de API prontos para uso e permite implementar autenticação personalizada para acessar serviços da Web. Embora os serviços RESTful, SOAP e OData estejam configurados nos serviços da AEM Cloud, o JDBC para bancos de dados relacionais e o conector para o perfil de usuário do AEM são configurados no console da Web do AEM.
+A integração de dados suporta os tipos de autenticação OAuth2.0, Autenticação básica e Chave de API prontos para uso e permite implementar autenticação personalizada para acessar serviços da Web. Embora os serviços RESTful, baseados em SOAP e OData estejam configurados nos serviços da AEM Cloud, o JDBC para bancos de dados relacionais e o conector para o perfil de usuário do AEM são configurados no console da Web do AEM.
 
 ## Configurar banco de dados relacional {#configure-relational-database}
 
@@ -52,20 +55,20 @@ Você pode configurar bancos de dados relacionais usando a Configuração do con
    >O texto criptografado aparece no campo Texto protegido que você pode especificar na configuração.
 
 1. Ative **[!UICONTROL Testar emprestado]** ou **[!UICONTROL Testar ao Retornar]** para especificar que os objetos são validados antes de serem emprestados ou devolvidos de e para o pool, respectivamente.
-1. Especifique uma consulta SQL SELECT no campo Consulta **[!UICONTROL de]** Validação para validar conexões do pool. A consulta deve retornar pelo menos uma linha. Com base no banco de dados, especifique um dos seguintes:
+1. Especifique um query SELECT SQL no campo Query **** Validação para validar conexões do pool. O query deve retornar pelo menos uma linha. Com base no banco de dados, especifique um dos seguintes:
 
    * SELECT 1 (MySQL e MS SQL)
    * SELECT 1 from dual (Oracle)
 
 1. Toque em **[!UICONTROL Salvar]** para salvar a configuração.
 
-## Configurar perfil de usuário do AEM {#configure-aem-user-profile}
+## Configurar o perfil de usuário do AEM {#configure-aem-user-profile}
 
-Você pode configurar o perfil de usuário do AEM usando a configuração do Conector de perfil do usuário no console da Web do AEM. Faça o seguinte:
+Você pode configurar o perfil do usuário do AEM usando a configuração do Conector do Perfil do usuário no console da Web do AEM. Faça o seguinte:
 
 1. Vá para o console da Web do AEM em `https://[server]:[host]/system/console/configMgr`.
-1. Procure Integrações de dados de formulários **[!UICONTROL AEM - Configuração]** do conector do perfil do usuário e toque para abrir a configuração no modo de edição.
-1. Na caixa de diálogo Configuração do Conector de Perfil de Usuário, você pode adicionar, remover ou atualizar as propriedades do perfil de usuário. As propriedades especificadas estarão disponíveis para uso no modelo de dados de formulário. Use o seguinte formato para especificar as propriedades do perfil de usuário:
+1. Procure Integrações de dados de formulários **[!UICONTROL AEM - Configuração]** do conector do Perfil do usuário e toque para abrir a configuração no modo de edição.
+1. Na caixa de diálogo Configuração do conector do Perfil do usuário, você pode adicionar, remover ou atualizar as propriedades do perfil do usuário. As propriedades especificadas estarão disponíveis para uso no modelo de dados de formulário. Use o seguinte formato para especificar as propriedades do perfil do usuário:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -75,15 +78,17 @@ Você pode configurar o perfil de usuário do AEM usando a configuração do Con
    * `name=profile/empLocation/*/city,type=string`
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
-   >**O**&amp;ast; no exemplo acima indica todos os nós sob o `profile/empLocation/` nó no perfil de usuário do AEM na estrutura CRXDE. Isso significa que o modelo de dados de formulário pode acessar a `city` propriedade do tipo `string` presente em qualquer nó sob o `profile/empLocation/` nó. No entanto, os nós que contêm a propriedade especificada devem seguir uma estrutura consistente.
+   >O **&amp;ast;** no exemplo acima indica todos os nós sob o `profile/empLocation/` nó no perfil de usuário do AEM na estrutura CRXDE. Isso significa que o modelo de dados de formulário pode acessar a `city` propriedade do tipo `string` presente em qualquer nó sob o `profile/empLocation/` nó. No entanto, os nós que contêm a propriedade especificada devem seguir uma estrutura consistente.
 
 1. Toque em **[!UICONTROL Salvar]** para salvar a configuração.
 
 ## Configurar pasta para configurações do serviço de nuvem {#cloud-folder}
 
-**Observação**: A configuração da pasta de serviços em nuvem é necessária para configurar serviços em nuvem para os serviços RESTful, SOAP e OData.
+>[!NOTE]
+>
+>A configuração da pasta de serviços em nuvem é necessária para configurar serviços em nuvem para os serviços RESTful, SOAP e OData.
 
-Todas as configurações de serviço em nuvem no AEM são consolidadas na `/conf` pasta no repositório do AEM. Por padrão, a `conf` pasta contém a `global` pasta onde você pode criar configurações de serviço em nuvem. Entretanto, é necessário ativá-lo manualmente para configurações de nuvem. Você também pode criar pastas adicionais em `conf` para criar e organizar configurações de serviço em nuvem.
+Todas as configurações de serviço em nuvem no AEM são consolidadas na `/conf` pasta no repositório do AEM. Por padrão, a `conf` pasta contém a `global` pasta onde você pode criar configurações de serviço em nuvem. No entanto, é necessário ativá-lo manualmente para configurações de nuvem. Você também pode criar pastas adicionais em `conf` para criar e organizar configurações de serviço em nuvem.
 
 Para configurar a pasta das configurações do serviço de nuvem:
 
@@ -125,7 +130,7 @@ Os serviços Web baseados em SOAP são descritos usando as especificações [WSD
    Consulte [Configurar pasta para configurações](/help/forms/using/configure-data-sources.md#cloud-folder) de serviço em nuvem para obter informações sobre como criar e configurar uma pasta para configurações de serviço em nuvem.
 
 1. Toque em **[!UICONTROL Criar]** para abrir a caixa de diálogo **[!UICONTROL Criar configuração de fonte de dados]**. Especifique um nome e, opcionalmente, um título para a configuração, selecione **[!UICONTROL SOAP Web Service]** no menu suspenso Tipo **[!UICONTROL de]** serviço, navegue e selecione uma imagem em miniatura para a configuração e toque em **[!UICONTROL Próximo]**.
-1. Especifique o seguinte para o serviço Web SOAP:
+1. Especifique o seguinte para o serviço da Web SOAP:
 
    * URL WSDL para o serviço da Web.
    * Selecione o tipo de autenticação — Nenhum, OAuth2.0, Autenticação básica ou Autenticação personalizada — para acessar o serviço SOAP e, portanto, fornecer os detalhes para autenticação.
