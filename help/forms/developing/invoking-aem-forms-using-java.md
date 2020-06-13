@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '5409'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ O site do Adobe Developer contém os seguintes artigos que discutem como chamar 
 
 [Incluir arquivos da biblioteca Java do AEM Forms](#including-aem-forms-java-library-files)
 
-[Invocando processos de vida longa centrados em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[Invocando processos de vida longa centrados em humanos](invoking-human-centric-long-lived.md)
 
 [Invocar o AEM Forms usando Serviços da Web](/help/forms/developing/invoking-aem-forms-using-web.md)
 
@@ -55,7 +58,7 @@ O site do Adobe Developer contém os seguintes artigos que discutem como chamar 
 
 [Invocar um processo de duração curta usando a API de chamada](#invoking-a-short-lived-process-using-the-invocation-api)
 
-[Criação de um aplicativo da Web Java que chama um processo de vida longa centrado em humanos](/help/forms/developing/invoking-human-centric-long-lived.md)
+[Criação de um aplicativo da Web Java que chama um processo de vida longa centrado no ser humano](/help/forms/developing/invoking-human-centric-long-lived.md)
 
 ## Incluir arquivos da biblioteca Java do AEM Forms {#including-aem-forms-java-library-files}
 
@@ -444,13 +447,18 @@ Para chamar com êxito um serviço AEM Forms, defina as seguintes propriedades d
    * Se você definir essa propriedade de conexão como `WebLogic`, o `java.naming.factory.initial` valor será definido como `weblogic.jndi.WLInitialContextFactory`.
    * Da mesma forma, se você definir essa propriedade de conexão como `JBoss`, o `java.naming.factory.initial` valor será definido como `org.jnp.interfaces.NamingContextFactory`.
    * Você pode definir a `java.naming.factory.initial` propriedade como um valor que atenda aos seus requisitos se não quiser usar os valores padrão.
-   ***Observação**: Em vez de usar uma string para definir a propriedade de `DSC_SERVER_TYPE` conexão, você pode usar um membro estático da `ServiceClientFactoryProperties` classe. Os seguintes valores podem ser usados: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+
+   >[!NOTE]
+   >
+   >Em vez de usar uma string para definir a propriedade de `DSC_SERVER_TYPE` conexão, você pode usar um membro estático da `ServiceClientFactoryProperties` classe. Os seguintes valores podem ser usados: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Especifica o nome de usuário dos formulários AEM. Para que um usuário chame com êxito um serviço AEM Forms, ele precisa da função Usuário de serviços. Um usuário também pode ter outra função que inclui a permissão Chamada de serviço. Caso contrário, uma exceção será lançada quando eles tentarem invocar um serviço. Se a segurança do serviço estiver desativada, não é necessário especificar essa propriedade de conexão.
 * **DSC_CREDENTIAL_PASSWORD:** Especifica o valor da senha correspondente. Se a segurança do serviço estiver desativada, não é necessário especificar essa propriedade de conexão.
 * **DSC_REQUEST_TIMEOUT:** O limite de tempo limite de solicitação padrão para a solicitação SOAP é de 1200000 milissegundos (20 minutos). Em algum momento, uma solicitação pode exigir mais tempo para concluir a operação. Por exemplo, uma solicitação SOAP que recupera um grande conjunto de registros pode exigir um limite de tempo limite mais longo. Você pode usar o para aumentar o limite de tempo limite de chamada de solicitação para as solicitações SOAP. `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT`
 
-   **Observação**: Somente invocações baseadas em SOAP suportam a propriedade DSC_REQUEST_TIMEOUT.
+   >[!NOTE]
+   >
+   >Somente invocações baseadas em SOAP suportam a propriedade DSC_REQUEST_TIMEOUT.
 
 Para definir as propriedades de conexão, execute as seguintes tarefas:
 
@@ -459,6 +467,7 @@ Para definir as propriedades de conexão, execute as seguintes tarefas:
 
    * O valor da `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` lista discriminada
    * Um valor de string que especifica o URL do servidor de aplicativos J2EE que hospeda o AEM Forms
+
    >[!NOTE]
    >
    >Se você estiver usando o modo de conexão SOAP, especifique o valor da `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` lista discriminada em vez do valor da `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` lista discriminada.
@@ -467,6 +476,7 @@ Para definir as propriedades de conexão, execute as seguintes tarefas:
 
    * O valor da `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` lista discriminada
    * O valor da `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` lista discriminada
+
    >[!NOTE]
    >
    >Se você estiver usando o modo de conexão SOAP, especifique o valor da `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`lista discriminada em vez do valor da `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` lista discriminada.
@@ -984,6 +994,7 @@ Você pode chamar o serviço Repositório usando uma biblioteca de cliente Java 
    * Um valor de ID exclusivo ao especificar `new Id()`.
    * Um valor UUID exclusivo ao especificar `new Lid()`.
    * O nome do recurso. Você pode especificar o nome do arquivo XDP.
+
    Converta o valor de retorno em `Resource`.
 
 1. Crie um `ResourceContent` objeto chamando o método do `RepositoryInfomodelFactoryBean` objeto e `newImage` atribuindo o valor de retorno ao `ResourceContent`. Este objeto representa o conteúdo adicionado ao repositório.
