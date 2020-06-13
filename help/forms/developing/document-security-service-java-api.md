@@ -1,6 +1,6 @@
 ---
-title: Início rápido do JavaAPI do Document Security Service (SOAP)
-seo-title: Início rápido do JavaAPI do Document Security Service (SOAP)
+title: Start rápido JavaAPI (SOAP) do Serviço de segurança do Documento
+seo-title: Start rápido JavaAPI (SOAP) do Serviço de segurança do Documento
 description: 'null'
 seo-description: 'null'
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
@@ -10,44 +10,49 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
 
-# Início rápido da API Java (SOAP) do Document Security Service {#document-security-service-javaapi-quick-start-soap}
+# Start rápido (SOAP) da API do Serviço de Segurança do Documento {#document-security-service-javaapi-quick-start-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço Rights Management:
+O SOAP (Java API Quick Start) está disponível para o serviço Rights Management:
 
-[Início rápido (modo SOAP): Criação de uma política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
+[Start rápido (modo SOAP): Criação de uma política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
-[Início rápido (modo SOAP): Modificação de uma política usando a API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
+[Start rápido (modo SOAP): Modificação de uma política usando a API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
 
-[Início rápido (modo SOAP): Excluir uma política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
+[Start rápido (modo SOAP): Excluir uma política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
 
-[Início rápido (modo SOAP): Aplicar uma política a um documento PDF usando a API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Aplicar uma política a um documento PDF usando a API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Remoção de uma política de um documento PDF usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Remoção de uma política de um documento PDF usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Revogar um documento usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
+[Start rápido (modo SOAP): Revogação de um documento usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Reinstalando o acesso a um documento revogado usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
+[Start rápido (modo SOAP): Reinstalando o acesso a um documento revogado usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
 
-[Início rápido (modo SOAP): Como inspecionar documentos PDF protegidos por política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
+[Start rápido (modo SOAP): Inspecionar documentos PDF protegidos por política usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
 
-[Início rápido (modo SOAP): Criação de uma marca d&#39;água usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
+[Start rápido (modo SOAP): Criação de uma marca d&#39;água usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
 
-[Início rápido (modo SOAP): Modificação de uma marca d&#39;água usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-modifying-a-watermark-using-the-java-api)
+[Start rápido (modo SOAP): Modificação de uma marca d&#39;água usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-modifying-a-watermark-using-the-java-api)
 
-[Início rápido (modo SOAP): Procurando eventos usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
+[Start rápido (modo SOAP): Procurando eventos usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
 
-[Início rápido (modo SOAP): Remover uma política de um documento do Word usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
+[Start rápido (modo SOAP): Remoção de uma política de um documento do Word usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: O Início rápido localizado em Programação com AEM Forms baseia-se no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+>[!NOTE]
+>
+>O Start rápido localizado em Programação com AEM Forms baseia-se no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
-## Início rápido (modo SOAP): Criação de uma política usando a API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
+## Start rápido (modo SOAP): Criação de uma política usando a API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
 O exemplo de código Java a seguir cria uma nova política chamada *Permitir cópia*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. Esse conjunto de políticas existe por padrão. (Consulte [Criando Políticas](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
@@ -176,7 +181,7 @@ O exemplo de código Java a seguir cria uma nova política chamada *Permitir có
  
 ```
 
-## Início rápido (modo SOAP): Modificação de uma política usando a API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
+## Start rápido (modo SOAP): Modificação de uma política usando a API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
 O exemplo de código Java a seguir modifica uma política chamada *Permitir cópia* definindo o período de empréstimo offline como 40 dias. (Consulte [Modificando Políticas](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
@@ -277,7 +282,7 @@ O exemplo de código Java a seguir modifica uma política chamada *Permitir cóp
  }
 ```
 
-## Início rápido (modo SOAP): Excluir uma política usando a API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
+## Start rápido (modo SOAP): Excluir uma política usando a API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
 O exemplo de código Java a seguir exclui uma política chamada *Permitir cópia*. (Consulte [Excluindo Políticas](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
@@ -369,9 +374,9 @@ O exemplo de código Java a seguir exclui uma política chamada *Permitir cópia
  
 ```
 
-## Início rápido (modo SOAP): Aplicar uma política a um documento PDF usando a API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
+## Start rápido (modo SOAP): Aplicar uma política a um documento PDF usando a API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia* a um documento PDF chamado *Loan.pdf*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. O documento protegido por política é salvo como um arquivo PDF chamado *PolicyProtectedLoanDoc.pdf. *(Consulte [Aplicar políticas a documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia* a um documento PDF chamado *Loan.pdf*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. O documento protegido por política é salvo como um arquivo PDF chamado *PolicyProtectedLoanDoc.pdf. *(Consulte [Aplicar políticas a Documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -475,9 +480,9 @@ O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia
  }
 ```
 
-## Início rápido (modo SOAP): Remoção de uma política de um documento PDF usando a API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
+## Start rápido (modo SOAP): Remoção de uma política de um documento PDF usando a API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-O exemplo de código a seguir remove uma política de um documento PDF chamado *PolicyProtectedLoanDoc.pdf*. O documento PDF não protegido é salvo como *unProtectedLoan.pdf*. (Consulte [Remoção de políticas de documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.)
+O exemplo de código a seguir remove uma política de um documento PDF chamado *PolicyProtectedLoanDoc.pdf*. O documento PDF não protegido é salvo como *unProtectedLoan.pdf*. (Consulte [Remoção de políticas de Documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -582,9 +587,9 @@ O exemplo de código a seguir remove uma política de um documento PDF chamado *
  
 ```
 
-## Início rápido (modo SOAP): Revogar um documento usando a API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
+## Start rápido (modo SOAP): Revogação de um documento usando a API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-O exemplo de código Java a seguir revoga um documento protegido por política chamado *PolicyProtectedLoanDoc.pdf*. Um documento PDF revisado está localizado no seguinte local do URL `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (Consulte [Revogando acesso a documentos](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+O exemplo de código Java a seguir revoga um documento protegido por política chamado *PolicyProtectedLoanDoc.pdf*. Um documento PDF revisado está localizado no seguinte local do URL `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (Consulte [Revogação do acesso a Documentos](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
 ```as3
  /* 
@@ -696,9 +701,9 @@ O exemplo de código Java a seguir revoga um documento protegido por política c
  
 ```
 
-## Início rápido (modo SOAP): Como inspecionar documentos PDF protegidos por política usando a API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
+## Start rápido (modo SOAP): Inspecionar documentos PDF protegidos por política usando a API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-O exemplo de código Java a seguir inspeciona um documento PDF protegido por política chamado *PolicyProtectedLoanDoc.* pdf. (Consulte [Inspeção de documentos](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protegidos por política.)
+O exemplo de código Java a seguir inspeciona um documento PDF protegido por política chamado *PolicyProtectedLoanDoc.* pdf. (Consulte [Inspeção de Documentos](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protegidos por política.)
 
 ```as3
  /* 
@@ -814,9 +819,9 @@ O exemplo de código Java a seguir inspeciona um documento PDF protegido por pol
  
 ```
 
-## Início rápido (modo SOAP): Reinstalando o acesso a um documento revogado usando a API Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
+## Start rápido (modo SOAP): Reinstalando o acesso a um documento revogado usando a API Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-O exemplo de código Java a seguir restabelece o acesso a um documento PDF revogado chamado *PolicyProtectedLoanDoc.pdf*. (Consulte [Reinstalando o acesso a documentos](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)Revogados.)
+O exemplo de código Java a seguir restabelece o acesso a um documento PDF revogado chamado *PolicyProtectedLoanDoc.pdf*. (Consulte [Reinstalando o acesso a Documentos](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)Revogados.)
 
 ```as3
  /* 
@@ -920,7 +925,7 @@ O exemplo de código Java a seguir restabelece o acesso a um documento PDF revog
  
 ```
 
-## Início rápido (modo SOAP): Criação de uma marca d&#39;água de PDF usando a API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
+## Start rápido (modo SOAP): Criação de uma marca d&#39;água de PDF usando a API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
 O exemplo de código Java a seguir cria uma nova marca d&#39;água do PDF chamada &#39;Amostra de marca d&#39;água do PDF&#39;. Essa marca d&#39;água contém um único elemento (Consulte [Criação de Marcas d&#39;água](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
@@ -1053,7 +1058,7 @@ public class PDFWatermarksSOAPMode {
 }
 ```
 
-## Início rápido (modo SOAP): Criação de uma marca d&#39;água de texto usando a API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
+## Start rápido (modo SOAP): Criação de uma marca d&#39;água de texto usando a API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
 O exemplo de código Java a seguir cria uma nova marca d&#39;água de texto chamada *Amostra de marca d&#39;água*. Esta marca d&#39;água contém um único elemento.
 
@@ -1202,7 +1207,7 @@ public class TextWatermarks {
 }
 ```
 
-## Início rápido (modo SOAP): Modificação de uma marca d&#39;água de texto usando a API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
+## Start rápido (modo SOAP): Modificação de uma marca d&#39;água de texto usando a API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
 
 O exemplo de código Java a seguir modifica uma marca d&#39;água chamada &#39;Amostra de marca d&#39;água do texto&#39; e define a opacidade do primeiro elemento como 100.
 
@@ -1314,7 +1319,7 @@ public class ModifyWatermarks {
 }
 ```
 
-## Início rápido (modo SOAP): Modificação de uma marca d&#39;água usando a API Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
+## Start rápido (modo SOAP): Modificação de uma marca d&#39;água usando a API Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
 O exemplo de código Java a seguir modifica uma marca d&#39;água chamada *Confidencial* modificando o valor do `opacity` atributo para 80.
 
@@ -1412,9 +1417,9 @@ O exemplo de código Java a seguir modifica uma marca d&#39;água chamada *Confi
  
 ```
 
-## Início rápido (modo SOAP): Procurando eventos usando a API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
+## Start rápido (modo SOAP): Procurando eventos usando a API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
 
-O exemplo de código Java a seguir pesquisa o evento de criação de política.
+O exemplo de código Java a seguir pesquisa pelo evento de criação de política.
 
 ```as3
  /* 
@@ -1525,9 +1530,9 @@ O exemplo de código Java a seguir pesquisa o evento de criação de política.
  
 ```
 
-## Início rápido (SOAP): Aplicar uma política a um documento do Word usando a API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
+## Start rápido (SOAP): Aplicar uma política a um documento do Word usando a API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia* a um documento do Word chamado *Loan.doc*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. O documento protegido por política é salvo como um arquivo DOC chamado *PolicyProtectedLoanDoc.doc. *(Consulte [Aplicar políticas a documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia* a um documento do Word chamado *Loan.doc*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. O documento protegido por política é salvo como um arquivo DOC chamado *PolicyProtectedLoanDoc.doc. *(Consulte [Aplicar políticas a Documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -1640,9 +1645,9 @@ O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia
  
 ```
 
-## Início rápido (modo SOAP): Remover uma política de um documento do Word usando a API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
+## Start rápido (modo SOAP): Remoção de uma política de um documento do Word usando a API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-O exemplo de código a seguir remove uma política de um documento do Word chamado *PolicyProtectedLoanDoc.doc*. O documento do Word não protegido é salvo como *unProtectedLoan.doc*. (Consulte [Remoção de políticas de documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)do Word.)
+O exemplo de código a seguir remove uma política de um documento do Word chamado *PolicyProtectedLoanDoc.doc*. O documento do Word não protegido é salvo como *unProtectedLoan.doc*. (Consulte [Remoção de políticas de Documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)do Word.)
 
 ```as3
  /* 
@@ -1748,7 +1753,7 @@ O exemplo de código a seguir remove uma política de um documento do Word chama
  
 ```
 
-## Início rápido (modo SOAP): Criação de uma política abstrata usando a API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
+## Start rápido (modo SOAP): Criação de uma política abstrata usando a API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
 O exemplo de código Java a seguir cria uma nova política abstrata chamada AllowCopy. O conjunto de políticas ao qual a política é adicionada é chamado de Conjunto de Políticas Global. Esse conjunto de políticas existe por padrão. (Consulte Criação de políticas.)
 
@@ -1865,7 +1870,7 @@ public class CreateAbstractPolicySoap {
 }
 ```
 
-## Início rápido (modo SOAP): Modificação de uma política abstrata usando a API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
+## Start rápido (modo SOAP): Modificação de uma política abstrata usando a API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
 O exemplo de código Java a seguir modifica uma política abstrata chamada AllowCopy. O conjunto de políticas no qual a política é modificada é chamado de Conjunto de Políticas Global. Esse conjunto de políticas existe por padrão. (Consulte Criação de políticas.)
 
@@ -1964,7 +1969,7 @@ public class ModifyingAbstractPolicySoap {
 }
 ```
 
-## Início rápido (modo SOAP): Excluir uma política abstrata usando a API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
+## Start rápido (modo SOAP): Excluir uma política abstrata usando a API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
 
 O exemplo de código Java a seguir exclui uma política abstrata chamada AllowCopy. O conjunto de políticas do qual a política é excluída é chamado de Conjunto de Políticas Global. Esse conjunto de políticas existe por padrão. (Consulte Criação de políticas.)
 
@@ -2051,9 +2056,9 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Início rápido (modo SOAP): Proteger um PDF no fluxo de trabalho do demonstrativo para um usuário existente, usando a API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Start rápido (modo SOAP): Proteger um PDF no fluxo de trabalho do demonstrativo para um usuário existente, usando a API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
-O exemplo de código Java a seguir demonstra o método para proteger um documento no fluxo de trabalho do demonstrativo, para um usuário existente.
+O exemplo de código Java a seguir demonstra o método para proteger um Documento no Fluxo de trabalho do demonstrativo, para um usuário existente.
 
 ```as3
 /* 
@@ -2159,7 +2164,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Início rápido (modo SOAP): Proteger um PDF no fluxo de trabalho do demonstrativo para um novo usuário, usando a API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Start rápido (modo SOAP): Proteger um PDF no fluxo de trabalho do demonstrativo para um novo usuário, usando a API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 O exemplo de código Java a seguir demonstra como você pode proteger um documento no Fluxo de trabalho do demonstrativo. Este é um processo de duas etapas:
 
