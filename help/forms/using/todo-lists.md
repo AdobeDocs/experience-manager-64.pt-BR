@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2cb251a6-d8d0-4563-b0f0-2dca38037155
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '4026'
+ht-degree: 0%
 
 ---
 
@@ -132,6 +135,7 @@ Você pode encaminhar uma tarefa junto com quaisquer observações ou anexos par
    * **Encaminhar**
    * **Compartilhar**
    * **Consulta**
+
    >[!NOTE]
    >
    >Dependendo da tarefa, também é possível executar essas ações a partir da lista de Tarefas Pendentes sem abrir a tarefa.
@@ -229,6 +233,7 @@ Ao concluir uma tarefa, dependendo da tarefa, uma caixa de diálogo de confirma�
    * Selecione a tarefa e clique no botão apropriado para a próxima etapa necessária no processo, na parte inferior da lista.
    * Se o formulário não tiver botões e o botão Concluir na área de trabalho do AEM Forms estiver disponível, clique em **Concluir**.
    * Se o formulário tiver botões e o botão Concluir na área de trabalho do AEM Forms não estiver disponível, clique no botão apropriado no formulário para a próxima etapa necessária no processo.
+
    Se o formulário não tiver botões e o botão Concluir na área de trabalho do AEM Forms não estiver disponível, uma mensagem será exibida, indicando que o formulário não pode ser enviado.
 
 1. Se uma caixa de diálogo Confirmação for exibida, execute uma destas ações:
@@ -271,7 +276,9 @@ Primeiro, defina suas preferências de espaço de trabalho do AEM Forms para rec
 
 As mensagens de email podem conter um link que abre a tarefa na área de trabalho do AEM Forms, um anexo do formulário usado para a tarefa ou ações para completar a tarefa por email. Se um formulário for incluído na mensagem de email, você poderá abrir o formulário e preencher a tarefa se os botões para preencher a tarefa forem criados no formulário. Se as ações para completar a tarefa forem incluídas na mensagem de e-mail, você poderá concluir a tarefa clicando nas ações no e-mail ou respondendo ao e-mail com a ação digitada como a primeira linha no corpo do e-mail.
 
-**Observação**: Para configurar o espaço de trabalho para usar os modelos de e-mail apropriados, consulte o Guia [](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)do administrador do AEM Forms JEE.
+>[!NOTE]
+>
+>Para configurar o espaço de trabalho para usar os modelos de e-mail apropriados, consulte o Guia [](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)do administrador do AEM Forms JEE.
 
 Quando você conclui uma tarefa por email, a tarefa é removida da lista de tarefas na área de trabalho do AEM Forms.
 
