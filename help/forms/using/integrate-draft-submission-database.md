@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
 
@@ -77,7 +80,9 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
    Para fornecer um nome diferente para a tabela de dados:
 
    * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de dados do Portal do Forms. É possível alterar os valores da fonte de dados e do nome da tabela de dados.
-   **Observação**: Se você alterar os nomes das tabelas, forneça-os na configuração do Portal de formulários.
+   >[!NOTE]
+   >
+   >Se você alterar os nomes das tabelas, forneça-os na configuração do Portal de formulários.
 
 1. Deixe outras configurações como estão e clique em **[!UICONTROL Salvar]**.
 
@@ -317,7 +322,7 @@ O zip a seguir contém `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMe
 
 [Obter arquivo](assets/sample_package.zip)
 
-## Verifique o comprimento do nome do arquivo {#verify-length-of-the-file-name}
+## Verifique o comprimento do nome do arquivo  {#verify-length-of-the-file-name}
 
 A implementação do banco de dados do Portal do Forms usa uma tabela de metadados adicional. A tabela tem uma chave primária composta com base nas colunas Chave e ID da tabela. O MySQL permite chaves primárias até o comprimento de 255 caracteres. Você pode usar o seguinte script de validação do lado do cliente para verificar a duração do nome de arquivo anexado ao widget de arquivo. A validação é executada quando um arquivo é anexado. O script fornecido no procedimento a seguir exibe uma mensagem, quando o nome do arquivo for maior que 150 (incluindo extensão). É possível modificar o script para verificar se há um número diferente de caracteres.
 
