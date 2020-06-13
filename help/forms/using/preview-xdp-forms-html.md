@@ -1,25 +1,28 @@
 ---
-title: Gerar visualização HTML5 de um formulário XDP
-seo-title: Gerar visualização HTML5 de um formulário XDP
-description: A guia Visualizar HTML no LiveCycle Designer pode ser usada para visualizar formulários conforme eles aparecem em um navegador.
-seo-description: A guia Visualizar HTML no LiveCycle Designer pode ser usada para visualizar formulários conforme eles aparecem em um navegador.
+title: Gerar pré-visualização HTML5 de um formulário XDP
+seo-title: Gerar pré-visualização HTML5 de um formulário XDP
+description: A guia HTML de Pré-visualização no LiveCycle Designer pode ser usada para pré-visualização de formulários conforme eles aparecem em um navegador.
+seo-description: A guia HTML de Pré-visualização no LiveCycle Designer pode ser usada para pré-visualização de formulários conforme eles aparecem em um navegador.
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 14%
 
 ---
 
 
-# Gerar visualização HTML5 de um formulário XDP {#generate-html-preview-of-an-xdp-form}
+# Gerar pré-visualização HTML5 de um formulário XDP {#generate-html-preview-of-an-xdp-form}
 
-Ao projetar um formulário no AEM Forms Designer, além de visualizar a execução em PDF de um formulário, também é possível visualizar uma execução HTML5 dele. Você pode usar a guia **Visualizar HTML** para visualizar um formulário como ele apareceria em um navegador.
+Ao projetar um formulário no AEM Forms Designer, além de visualizar a execução em PDF de um formulário, também é possível pré-visualização uma execução HTML5 dele. Você pode usar a guia HTML **de** Pré-visualização para pré-visualização de um formulário como ele apareceria em um navegador.
 
-## Ativar visualização HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
+## Ativar Pré-visualização HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
 
-Para permitir que o Designer gere uma visualização HTML de formulários XDP, execute as seguintes configurações:
+Para permitir que o Designer gere pré-visualizações HTML de formulários XDP, execute as seguintes configurações:
 
 * Configurar o serviço de autenticação Apache Sling
 * Desativar modo protegido
@@ -43,6 +46,7 @@ Para permitir que o Designer gere uma visualização HTML de formulários XDP, e
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >Não copie e cole o valor especificado no campo Requisitos de autenticação, pois ele pode corromper os caracteres especiais no valor. Em vez disso, digite o valor especificado no campo.
@@ -52,7 +56,7 @@ Para permitir que o Designer gere uma visualização HTML de formulários XDP, e
 
 ### Desativar modo protegido {#disable-protected-mode}
 
-Por padrão, o modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está ativado. Mantenha-o habilitado para os ambientes de produção. Você pode desativá-lo para um ambiente de desenvolvimento para visualizar formulários HTML5 no Designer. Execute as seguintes etapas para desativá-la:
+Por padrão, o modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está ativado. Mantenha-o ativado para os ambientes de produção. Você pode desativá-lo para um ambiente de desenvolvimento para pré-visualização de formulários HTML5 no Designer. Execute as seguintes etapas para desativá-la:
 
 1. Faça logon no console da Web do AEM como administrador.
 
@@ -69,29 +73,30 @@ Por padrão, o modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido
 
    * **URL** do servidor: URL do servidor do AEM Forms.
    * **Número** da porta HTTP: Porta do servidor AEM. O valor padrão é 4502.
-   * **** Contexto de visualização HTML: Caminho do perfil para renderizar formulários XFA. Os seguintes perfis padrão são usados para visualizar o formulário no Designer. No entanto, também é possível especificar um caminho para um perfil personalizado.
+   * **Contexto de Pré-visualização HTML:** Caminho do perfil para renderizar formulários XFA. Os perfis padrão a seguir são usados para pré-visualização do formulário no Designer. No entanto, também é possível especificar um caminho para um perfil personalizado.
 
       * `/content/xfaforms/profiles/default.html` (Formulários AEM no OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (Formulários AEM em JEE)
-   * **** Contexto do Gerenciador de Formulários: Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
+   * **Contexto do Gerenciador de Formulários:** Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
 
       * `/aem/forms` (Formulários AEM no OSGi)
       * `/lc/forms` (Formulários AEM em JEE)
-   **** Observação: *Verifique se o servidor do AEM Forms está ativo e em execução. The HTML preview connects to the CRX server to* generate *a preview.*
+
+   **Observação:** *Verifique se o servidor do AEM Forms está ativo e em execução. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Opções do AEM Forms Designer ](assets/server_options.png)
 
    Opções do AEM Forms Designer
 
-1. Para visualizar um formulário em HTML, clique na guia **Visualizar HTML** .
+1. Para pré-visualização um formulário em HTML, clique na guia HTML **da** Pré-visualização.
 
    >[!NOTE]
    >
-   >Se a guia Visualização HTML estiver fechada, pressione F4 para abrir a guia Visualizar HTML. Você também pode selecionar Visualizar HTML no menu Exibir para abrir a guia Visualizar HTML.
+   >Se a guia Pré-visualização HTML estiver fechada, pressione F4 para abrir a guia HTML Pré-visualização. Você também pode selecionar HTML de Pré-visualização no menu Visualização para abrir a guia HTML de Pré-visualização.
 
    >[!NOTE]
    >
-   >A visualização HTML não é compatível com documentos PDF, a visualização HTML é apenas para documentos XDP.
+   >A pré-visualização HTML não suporta documentos PDF, a pré-visualização HTML é somente para documentos XDP.
 
 ## Visualização de formulário usando dados de formulário {#to-preview-a-form-using-sample-data}
 
@@ -103,12 +108,12 @@ Testar seu formulário usando uma fonte de dados de amostra garante que os dados
 
 1. Select **File > Form Properties**.
 
-1. Clique na guia **Visualização **e, na caixa Arquivo de dados, digite o caminho completo para o arquivo de dados de teste. Você também pode usar o botão Procurar para navegar até o arquivo.
+1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. Você também pode usar o botão Procurar para navegar até o arquivo.
 
 1. Clique em **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
 
-## Visualizar formulários localizados em um repositório {#html-preview-of-forms-in-forms-manager}
+## Formulários de Pré-visualização localizados em um repositório {#html-preview-of-forms-in-forms-manager}
 
-No AEM Forms, é possível visualizar formulários e documentos em um repositório. A visualização ajuda a saber exatamente como os formulários se parecem e se comportam, pois serão usados pelos usuários finais.
+No AEM Forms, é possível pré-visualização de formulários e documentos em um repositório. A Pré-visualização ajuda a saber exatamente como os formulários se parecem e se comportam conforme serão usados pelos usuários finais.
 
-[**Contate o suporte **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Entre em contato com o suporte **](https://www.adobe.com/account/sign-in.supportportal.html)
