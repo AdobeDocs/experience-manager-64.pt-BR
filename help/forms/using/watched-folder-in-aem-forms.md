@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
 workflow-type: tm+mt
-source-wordcount: '7663'
+source-wordcount: '7662'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Pasta assistida no AEM Forms {#watched-folder-in-aem-forms}
 
-Um administrador pode configurar uma pasta de rede, conhecida como Pasta assistida, para que quando um usuário coloca um arquivo (como um arquivo PDF) na Pasta assistida, uma operação de fluxo de trabalho, serviço ou script pré-configurado seja iniciada para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script, consulte [Vários métodos de processamento de arquivos](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
+Um administrador pode configurar uma pasta de rede, conhecida como Pasta assistida, para que quando um usuário coloca um arquivo (como um arquivo PDF) na Pasta assistida, uma operação de fluxo de trabalho, serviço ou script pré-configurado seja iniciada para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script, consulte [Vários métodos de processamento de arquivos](#variousmethodsforprocessingfiles).
 
 ## Criar uma pasta assistida {#create-a-watched-folder}
 
@@ -29,7 +29,7 @@ Você pode usar um dos seguintes métodos para criar uma Pasta assistida no sist
 
    A `MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
 
-* Crie uma pasta no sistema de arquivos antes de configurar um ponto final de Pasta assistida e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte Propriedades [da pasta](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)assistida.
+* Crie uma pasta no sistema de arquivos antes de configurar um ponto final de Pasta assistida e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte Propriedades [da pasta](#watchedfolderproperties)assistida.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Para configurar uma Pasta assistida, crie um nó de configuração de Pasta assi
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   Para obter a lista completa das propriedades compatíveis, consulte Propriedades [da pasta](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)assistida.
+   Para obter a lista completa das propriedades compatíveis, consulte Propriedades [da pasta](#watchedfolderproperties)assistida.
 
 1. Clique em **Salvar tudo**. Depois que o nó é criado e as propriedades são salvas. As `input`pastas, `result`, `failure`e `preserve`são criadas no caminho especificado na `stage``folderPath` propriedade.
 
@@ -80,8 +80,9 @@ Você pode configurar as seguintes propriedades para uma Pasta assistida.
    * autor,publicação
 
    * publicar, autor
-
-**Observação**: *Se o servidor que hospeda a Pasta monitorada não tiver um dos modos de execução especificados, a Pasta monitorada sempre será ativada independentemente dos modos de execução no servidor.*
+   >[!NOTE]
+   >
+   >Se o servidor que hospeda a Pasta monitorada não tiver um dos modos de execução especificados, a Pasta monitorada sempre será ativada independentemente dos modos de execução no servidor.
 
 * **outputFilePattern (String)**: Padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito no padrão de arquivo. [O padrão](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) de arquivo e pasta também pode especificar uma estrutura de diretório para os arquivos de saída. É uma propriedade obrigatória.
 
@@ -669,7 +670,7 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
    * inputProcessorId (String): O comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. Neste exemplo, o valor da propriedade inputProcessorType é workflow. Portanto, para a propriedade inputProcessorId, especifique o seguinte caminho do fluxo de trabalho PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito no padrão de arquivo.
-   Além das propriedades obrigatórias mencionadas acima, as Pastas monitoradas também oferecem suporte para algumas propriedades opcionais. Para obter a lista completa e a descrição das propriedades opcionais, consulte Propriedades [da pasta](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)assistida.
+   Além das propriedades obrigatórias mencionadas acima, as Pastas monitoradas também oferecem suporte para algumas propriedades opcionais. Para obter a lista completa e a descrição das propriedades opcionais, consulte Propriedades [da pasta](#watchedfolderproperties)assistida.
 
 ## Usando a Central Migration Bridge (obsoleta) com uma pasta assistida {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
@@ -750,4 +751,4 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 
    * **outputFilePattern (String)**: Padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito no padrão de arquivo.
 
-Além das propriedades obrigatórias mencionadas acima, as Pastas monitoradas também oferecem suporte para algumas propriedades opcionais. Para obter a lista completa e a descrição das propriedades opcionais, consulte Propriedades [da pasta](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)assistida.
+Além das propriedades obrigatórias mencionadas acima, as Pastas monitoradas também oferecem suporte para algumas propriedades opcionais. Para obter a lista completa e a descrição das propriedades opcionais, consulte Propriedades [da pasta](#watchedfolderproperties)assistida.
