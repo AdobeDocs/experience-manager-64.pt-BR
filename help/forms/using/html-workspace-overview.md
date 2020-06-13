@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ebabecb9-91c4-4991-8f5b-d27f940d2ecb
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1082'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ O AEM Forms no JEE também implanta o Flex Workspace por padrão. Ele continua a
 
 **Migração de processos existentes para a área de trabalho do AEM Forms:**
 
-Na área de trabalho do AEM Forms, os serviços padrão de renderização e envio, no perfil de ação padrão, associados aos formulários XDP, foram alterados e novos serviços foram introduzidos. Para obter detalhes, consulte [Novo serviço](/help/forms/using/new-render-submit-service.md)de renderização e envio. Para migrar seus processos existentes, que funcionam com formulários XDP, para usar esses serviços, siga [estas etapas](/help/forms/using/new-render-submit-service.md#main-pars-faq).
+Na área de trabalho do AEM Forms, os serviços padrão de renderização e envio, no perfil de ação padrão, associados aos formulários XDP, foram alterados e novos serviços foram introduzidos. Para obter detalhes, consulte [Novo serviço](/help/forms/using/new-render-submit-service.md)de renderização e envio. Para migrar seus processos existentes, que funcionam com formulários XDP, para usar esses serviços, siga [estas etapas](/help/forms/using/new-render-submit-service.md).
 
 **Mapeamento de personalizações do Flex Workspace com a área de trabalho do AEM Forms:**
 
@@ -125,11 +128,11 @@ A área de trabalho do AEM Forms oferece suporte a uma grande variedade de perso
 * Funcionalidade usando personalizações semânticas
 * Reutilização de componentes HTML em outros aplicativos da Web
 
-O artigo de [personalização](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) explica os tipos dessas personalizações.
+O artigo de [personalização](introduction-customizing-html-workspace.md) explica os tipos dessas personalizações.
 
 ### Set up the developer environment {#set-up-the-developer-environment}
 
-Os resultados da área de trabalho do AEM Forms incluem um pacote CRX implantado no CRX, um arquivo SDK que contém o código fonte completo, bibliotecas JavaScript de terceiros e scripts de criação da área de trabalho do AEM Forms. Use-os para configurar o ambiente do desenvolvedor para executar as personalizações mencionadas acima. Para obter mais detalhes, consulte [Criar código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)da área de trabalho do AEM Forms.
+Os resultados da área de trabalho do AEM Forms incluem um pacote CRX implantado no CRX, um arquivo SDK que contém o código fonte completo, bibliotecas JavaScript de terceiros e scripts de criação da área de trabalho do AEM Forms. Use-os para configurar o ambiente do desenvolvedor para executar as personalizações mencionadas acima. Para obter mais detalhes, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)da área de trabalho do AEM Forms.
 
 Você pode personalizar uma parte importante da interface e da funcionalidade principal, como fontes, esquema de cores, logotipo, tela de login, caixas de diálogo de erros, integração com aplicativos de terceiros e reutilização de componentes em aplicativos de terceiros. Você também pode aprimorar o conteúdo exibido na página Resumo da Tarefa, mostrar imagens para ações de rota da tarefa e até modificar os Modelos de backbone de baixo nível e as Visualizações que criam o aplicativo de área de trabalho do AEM Forms.
 
