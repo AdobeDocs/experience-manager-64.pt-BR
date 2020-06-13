@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +53,8 @@ Execute as seguintes etapas para alterar o cronograma de publicação:
 >
 >Se você estiver executando sua implementação do AEM Forms em um cluster, execute as seguintes etapas em cada nó do cluster.
 
+#### Servidor de aplicativos JBoss {#jboss-application-server}
+
 1. Pare a instância do servidor do AEM Forms.
    * (Para Windows) Abra o `[*JBoss root*]/bin/run.conf.bat` arquivo em um editor.
    * (Para Linux, AIX e Solaris) `[*JBoss root*]/bin/run.conf.sh` em um editor.
@@ -63,6 +68,8 @@ Execute as seguintes etapas para alterar o cronograma de publicação:
 1. Salve e feche o `run.conf.bat` arquivo.
 
 1. Reinicie a instância do servidor do AEM Forms.
+
+#### Servidor de aplicativos WebSphere {#websphere-application-server}
 
 1. Pare a instância do servidor do AEM Forms.
 1. Faça logon no Console administrativo do WebSphere. Na árvore de navegação, clique em **Servidores** > Servidores **de** aplicativos e, no painel direito, clique no nome do servidor.
@@ -80,6 +87,8 @@ Execute as seguintes etapas para alterar o cronograma de publicação:
 1. Clique em **Aplicar**, clique em OK e em **Salvar diretamente na configuração** mestre.
 
 1. Reinicie a instância do servidor do AEM Forms.
+
+#### Servidor de Aplicações WebLogic {#weblogic-application-server}
 
 1. Pare a instância do servidor do AEM Forms.
 1. Faça logon no Console de administração do WebLogic. O endereço padrão do Console de administração do WebLogic é `https://[hostname]:[port]/console`.
@@ -165,7 +174,7 @@ O serviço ReportConfiguration é usado pelo Process Relatórios para configurar
 
 O serviço ProcessDataPublisher importa dados do processo do banco de dados do AEM Forms e publica os dados no serviço ProcessDataStorageProvider para o armazenamento.
 
-#### Para configurar o serviço ProcessDataPublisher {#to-configure-processdatapublisher-service-nbsp}
+#### Para configurar o serviço ProcessDataPublisher   {#to-configure-processdatapublisher-service-nbsp}
 
 1. Faça logon no Console **** de administração com credenciais de administrador.
 
