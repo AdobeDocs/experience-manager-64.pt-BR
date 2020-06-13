@@ -9,7 +9,10 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 116995858cd81f69d330b77fbae6a4cff97a5c2d
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '1444'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ O modelo de dados de formulário será semelhante ao seguinte:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**********A. Fontes de dados configuradas** B. Esquemas de fontes de dados **C.** Serviços disponíveis **D. Objetos de modelo de dados** E. Serviços configurados
+**A.** Fontes de dados configuradas **B.** schemas de fonte de dados **C.** Serviços disponíveis **D.** Objetos de modelo de dados **E.** Serviços configurados
 
 ## Pré-requisitos {#prerequisites}
 
@@ -45,7 +48,7 @@ Antes de começar, verifique se você tem o seguinte:
 
 * Banco de dados MySQL com dados de amostra conforme declarado na seção Pré-requisitos de [Criar seu primeiro formulário adaptável](/help/forms/using/create-your-first-adaptive-form.md)
 * Pacote OSGi para o driver JDBC MySQL, conforme explicado em [Bundling the JDBC Database Driver](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
-* Formulário adaptável conforme explicado no primeiro tutorial [Criar um formulário adaptável](/help/forms/using/create-adaptive-form.md)
+* Formulário adaptável, conforme explicado no primeiro tutorial [Criar um formulário adaptável](/help/forms/using/create-adaptive-form.md)
 
 ## Etapa 1: Configurar o banco de dados MySQL como fonte de dados {#config-database}
 
@@ -59,7 +62,7 @@ Faça o seguinte para configurar seu banco de dados MySQL:
 
    1. Toque em **Instalar/atualizar**. Uma caixa de diálogo **Carregar / Instalar pacotes** é exibida.
 
-   1. Toque em **Escolher arquivo** para procurar e selecionar o pacote OSGi do driver JDBC MySQL. Selecione **Iniciar pacote** e **atualizar pacotes** e toque em **Instalar ou atualizar**. Certifique-se de que o Driver JDBC da Oracle Corporation para MySQL esteja ativo. O driver está instalado.
+   1. Toque em **Escolher arquivo** para navegar e selecionar o pacote OSGi do driver JDBC do MySQL. Selecione Pacote **de** Start e **Atualize pacotes** e toque em **Instalar ou atualizar**. Certifique-se de que o Driver JDBC da Oracle Corporation para MySQL esteja ativo. O driver está instalado.
 
 1. Configure o banco de dados MySQL como uma fonte de dados:
 
@@ -67,16 +70,17 @@ Faça o seguinte para configurar seu banco de dados MySQL:
    1. Localize a configuração **Apache Sling Connection Pooling DataSource** . Toque em para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
-      * **** Nome da fonte de dados: Você pode especificar qualquer nome. Por exemplo, especifique **WeRetailMySQL**.
+      * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **WeRetailMySQL**.
       * **Nome** da propriedade do serviço DataSource: Especifique o nome da propriedade de serviço que contém o nome DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
       * **Classe** de driver JDBC: Especifique o nome da classe Java do driver JDBC. Para o banco de dados MySQL, especifique **com.mysql.jdbc.Driver**.
-      * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e o esquema não funcionaram, o URL é: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** Nome de usuário: Nome de usuário do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
-      * **** Senha: Senha do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
-      * **** Teste de emprestado: Ative a opção **Testar em empréstimo** .
-      * **** Teste na devolução: Ative a opção **Testar ao Retornar** .
-      * **** Consulta de validação: Especifique uma consulta SQL SELECT para validar conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecione &amp;ast; dos detalhes** do cliente.
+      * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e schema, o URL é: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **Nome de usuário:** Nome de usuário do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
+      * **Senha:** Senha do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
+      * **Teste de emprestado:** Ative a opção **Testar em empréstimo** .
+      * **Teste na devolução:** Ative a opção **Testar ao Retornar** .
+      * **Query de validação:** Especifique um query SQL SELECT para validar conexões do pool. O query deve retornar pelo menos uma linha. Por exemplo, **selecione &amp;ast; dos detalhes** do cliente.
       * **Isolamento** da transação: Defina o valor como **READ_COMPROMISTED**.
+
       Deixe outras propriedades com [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) padrão e toque em **Salvar**.
    É criada uma configuração semelhante à seguinte.
 
@@ -84,7 +88,7 @@ Faça o seguinte para configurar seu banco de dados MySQL:
 
 ## Step 2: Create form data model {#create-fdm}
 
-O AEM Forms fornece uma interface de usuário intuitiva para [criar um](/help/forms/using/data-integration.md#main-pars-header-1524967585)modelo de dados de formulário a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Em nosso caso de uso, usaremos a fonte de dados MySQL configurada.
+O AEM Forms fornece uma interface de usuário intuitiva para [criar um modelo](data-integration.md) de dados de formulário a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Em nosso caso de uso, usaremos a fonte de dados MySQL configurada.
 
 Faça o seguinte para criar um modelo de dados de formulário:
 
@@ -113,7 +117,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Expanda a árvore da fonte de dados WeRailMySQL. Selecione os seguintes objetos e serviços de modelo de dados em **weretail** > esquema de detalhes **do** cliente para formar o modelo de dados:
+1. Expanda a árvore da fonte de dados WeRailMySQL. Selecione os seguintes objetos e serviços de modelo de dados em **weretail** > schema **customerdetails** para formar o modelo de dados:
 
    * **Objetos** do modelo de dados:
 
@@ -127,9 +131,10 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
       * get
       * atualizar
+
    Toque em **Adicionar selecionados** para adicionar objetos e serviços de modelo de dados selecionados ao modelo de dados do formulário.
 
-   ![weretail-schema](assets/weretail-schema.png)
+   ![schema de rede](assets/weretail-schema.png)
 
    >[!NOTE]
    >
@@ -166,11 +171,12 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
          Este serviço recupera o endereço de entrega e outros detalhes do cliente do banco de dados MySQL
 
-      * **Objeto** do Modelo de Saída: Selecione o esquema que contém os dados do cliente. Por exemplo:
+      * **Objeto** do Modelo de Saída: Selecione o schema que contém os dados do cliente. Por exemplo:
 
-         esquema customerdetail
+         schema customerdetail
       * **Matriz** de retorno: Desative a opção **Retornar matriz** .
-      * **Argumentos**: Selecione o argumento chamado **ID**.
+      * **Argumentos**: Selecione o argumento com o nome **ID**.
+
       Toque em **Concluído**. O serviço para recuperar detalhes do cliente do banco de dados MySQL está configurado.
 
       ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
@@ -185,12 +191,13 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
          Este serviço atualiza o endereço de envio e os campos relacionados no banco de dados MySQL
 
-      * **Objeto** do Modelo de Entrada: Selecione o esquema que contém os dados do cliente. Por exemplo:
+      * **Objeto** do Modelo de Entrada: Selecione o schema que contém os dados do cliente. Por exemplo:
 
-         esquema customerdetail
+         schema customerdetail
 
       * **Tipo** de saída: Selecione **BOOLEAN**.
       * **Argumentos**: Selecione o argumento chamado **ID** e detalhes **do** cliente.
+
       Toque em **Concluído**. O serviço de **atualização** para atualizar os detalhes do cliente no banco de dados MySQL está configurado.
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
