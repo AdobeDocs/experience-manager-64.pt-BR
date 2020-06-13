@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+workflow-type: tm+mt
+source-wordcount: '1824'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Este tutorial o orienta pelas etapas para criar modelos para canais de Impressã
 
 ## Criar modelo para canal de impressão {#create-template-for-print-channel}
 
-Crie e gerencie modelos para o canal Imprimir de comunicação interativa usando as seguintes tarefas:
+Crie e gerencie modelos para o canal Imprimir de Comunicação Interativa usando as seguintes tarefas:
 
 * [Criar modelo XDP usando o Forms Designer](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
 * [Carregar modelo XDP no servidor de formulários AEM](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
@@ -70,12 +73,14 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
 
    1. Especifique **BillDetails** no campo **Nome** .
    1. Selecione **Nenhum vínculo** de dados na lista suspensa Vínculo **de** dados.
+
    ![forms_designer_subform](assets/forms_designer_subform.png)
 
 1. Da mesma forma, selecione o subformulário raiz, selecione a guia **Subformulário** e selecione **Fluxo** na lista suspensa **Conteúdo** . Na guia **Vínculos** :
 
    1. Especifique **TelecaBill** no campo **Nome** .
    1. Selecione **Nenhum vínculo** de dados na lista suspensa Vínculo **de** dados.
+
    ![root_subform_print_template](assets/root_subform_print_template.png)
 
 1. Repita as etapas de 2 a 5 para criar os seguintes subformulários:
@@ -90,6 +95,7 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
    * ConsultasDetalhadas
    * PayNow
    * ValueAddedServices
+
    Para economizar tempo, também é possível copiar e colar subformulários existentes para criar novos subformulários.
 
    Para deslocar o subformulário **Gráficos** para a direita do subformulário Encargos, selecione o subformulário **Gráficos** no painel esquerdo, selecione a guia **Layout** e especifique um valor para o campo **ÂncoraX** . O valor deve ser maior que o valor do campo **Largura** para o subformulário **Encargos** . Selecione o subformulário **Encargos** e selecione a guia **Layout** para visualização do valor do campo **Largura** .
@@ -153,6 +159,7 @@ Para criar um fragmento de layout para o canal Imprimir da comunicação interat
    1. Navegue até o local para salvar o arquivo e especifique o nome como **table_lf**.
    1. Selecione **.xdp** na lista suspensa **Salvar como tipo** .
    1. Toque em **Salvar**.
+
    Depois de criar um modelo XDP para fragmento de layout usando o Designer de Formulários, você deve [carregá](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) -lo no servidor de Formulários AEM para que o modelo esteja disponível para uso ao criar fragmentos de layout.
 
 ## Criar modelo para o canal da Web {#create-template-for-web-channel}
@@ -170,7 +177,7 @@ Para criar um modelo de canal da Web, defina uma pasta onde você possa salvar o
 
 Execute as seguintes etapas para criar uma pasta para os modelos editáveis:
 
-1. Toque em **Ferramentas** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > Navegador **de configuração**.
+1. Toque em **Ferramentas** ![Ferramentas](assets/tools-icon.svg) > Navegador **de configuração**.
 1. Na página Navegador de configuração, toque em **Criar**.
 1. Na caixa de diálogo **Criar configuração** , especifique **Create_First_IC_models** como o título da pasta, marque Modelos **** editáveis e toque em **Criar**.
 
@@ -221,6 +228,7 @@ Execute as seguintes etapas para criar um modelo para o canal da Web na pasta **
    1. Especifique Detalhes **da** Lista no campo Título.
    1. Selecione **1** na lista suspensa **Número de colunas** .
    1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades.
+
    O nome do painel é atualizado para Detalhes **da** Lista na árvore de conteúdo.
 
 1. Repita as etapas 7 a 11 para adicionar painéis com as seguintes propriedades ao modelo:
@@ -244,7 +252,7 @@ Depois de criar o modelo da Web, você deve ativá-lo para usar o modelo ao cria
 
 Execute as seguintes etapas para ativar o modelo da Web:
 
-1. Toque em **Ferramentas** > ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) Modelos ****.
+1. Toque em **Ferramentas** ![Ferramentas](assets/tools-icon.svg) > **Modelos**.
 1. Navegue até o modelo **Create_First_IC_Web_Template** , selecione-o e toque em **Ativar**.
 1. Guia **Ativar** novamente para confirmar.
 
