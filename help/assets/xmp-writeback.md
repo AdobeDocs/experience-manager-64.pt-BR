@@ -3,7 +3,10 @@ title: Write-back de XMP a execuções
 description: Saiba como o recurso de gravação XMP propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: eb135e5898fe521498eecae7109b39f54d274cce
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '794'
+ht-degree: 4%
 
 ---
 
@@ -65,11 +68,21 @@ As alterações de metadados são propagadas para as representações `thumbnail
 
 ## Filtrar metadados XMP {#filtering-xmp-metadata}
 
-Os ativos AEM oferecem suporte à filtragem de listas negras e de listas brancas de propriedades/nós para metadados XMP que são lidos de binários de ativos e armazenados no JCR quando os ativos são ingeridos.
+[!DNL Experience Manager Assets] suporta lista bloqueada e filtragem de lista permitida de propriedades/nós para metadados XMP que são lidos de binários de ativos e armazenados no JCR quando os ativos são ingeridos.
 
-A filtragem da lista negra permite importar todas as propriedades de metadados XMP, exceto as propriedades especificadas para exclusão. No entanto, para tipos de ativos, como arquivos INDD que têm quantidades enormes de metadados XMP (por exemplo, 1000 nós com 10.000 propriedades), os nomes dos nós a serem filtrados nem sempre são conhecidos antecipadamente. Se a filtragem da lista negra permitir a importação de um grande número de ativos com diversos metadados XMP, a instância/cluster do AEM poderá enfrentar problemas de estabilidade, por exemplo, filas de observação obstruídas.
+Filtrar usando uma lista bloqueada permite importar todas as propriedades de metadados XMP, exceto as propriedades especificadas para exclusão. No entanto, para tipos de ativos, como arquivos INDD que têm quantidades enormes de metadados XMP (por exemplo, 1000 nós com 10.000 propriedades), os nomes dos nós a serem filtrados nem sempre são conhecidos antecipadamente. Se a filtragem usando uma lista bloqueada permitir a importação de um grande número de ativos com vários metadados XMP, a instância ou cluster do AEM poderá enfrentar problemas de estabilidade, por exemplo, filas de observação bloqueadas.
 
-A filtragem da lista de permissões dos metadados XMP resolve esse problema ao permitir que você defina as propriedades XMP a serem importadas. Dessa forma, outras propriedades XMP/desconhecidas são ignoradas. Você pode adicionar algumas dessas propriedades ao filtro da lista negra para compatibilidade com versões anteriores.
+A filtragem de metadados XMP por lista permitida resolve esse problema ao permitir que você defina as propriedades XMP a serem importadas. Dessa forma, quaisquer outras propriedades XMP ou desconhecidas são ignoradas. Para compatibilidade com versões anteriores, você pode adicionar algumas dessas propriedades ao filtro que usa uma lista bloqueada.
+
+<!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
+in Config Manager. And the settings are,
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_whitelist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.whitelist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_blacklist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.blacklist.name
+ 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
 
 >[!NOTE]
 >
@@ -77,12 +90,12 @@ A filtragem da lista de permissões dos metadados XMP resolve esse problema ao p
 
 1. Abra o Configuration Manager de `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração **[!UICONTROL Adobe CQ DAM XmpFilter]** .
-1. Para aplicar a filtragem de lista de permissões, selecione **[!UICONTROL Aplicar lista de permissões às propriedades XMP]** e especifique as propriedades que serão importadas na caixa **[!UICONTROL Nomes XML na lista de permissões para filtragem XMP]**.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. Para filtrar as propriedades XMP proibidas após aplicar a filtragem de lista de permissões, especifique-as na caixa **[!UICONTROL Nomes XML não permitidos para filtragem XMP.]** Salve as alterações.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box. Salve as alterações.
 
    >[!NOTE]
    >
-   >A opção **[!UICONTROL Aplicar lista negra a propriedades]** XMP está selecionada por padrão. Em outras palavras, a filtragem da lista negra é ativada por padrão. Para desativar a filtragem da lista negra, desmarque **[!UICONTROL Aplicar lista negra às propriedades]** XMP.
+   >A opção **[!UICONTROL Aplicar lista negra a propriedades]** XMP está selecionada por padrão. Em outras palavras, a filtragem usando uma lista bloqueada é ativada por padrão. Para desativar essa filtragem, desmarque a opção **[!UICONTROL Aplicar lista negra a propriedades]** XMP.
