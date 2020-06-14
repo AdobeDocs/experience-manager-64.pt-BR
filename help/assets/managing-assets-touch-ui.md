@@ -4,9 +4,9 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
-source-wordcount: '9813'
+source-wordcount: '9812'
 ht-degree: 2%
 
 ---
@@ -59,9 +59,10 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
 
    * Na barra de ferramentas, toque no ícone **[!UICONTROL Criar]** . Em seguida, no menu, toque em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface. A caixa de diálogo para renomear o arquivo não é exibida.
+
    ![create_menu](assets/create_menu.png)
 
-   Para selecionar vários arquivos, pressione a tecla Ctrl/Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Em um iPad, você pode selecionar apenas um arquivo de cada vez.
+   Para selecionar vários arquivos, pressione a tecla Ctrl/Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Em um iPad, é possível selecionar apenas um arquivo por vez.
 
    Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando os start são carregados.
 
@@ -116,6 +117,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
    No entanto, os seguintes caracteres (lista separada por espaços de) não são suportados:
    * o nome do arquivo de ativo não deve conter  `* / : [ \ \ ] | # % { } ? &`
    * o nome da pasta de ativos não deve conter  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+
    Além disso, a interface Ativos exibe o ativo mais recente que você carrega ou a pasta que você cria primeiro em todas as visualizações (visualização **[!UICONTROL de]** cartão, visualização **[!UICONTROL de]** Lista e visualização **[!UICONTROL de]** coluna).
 
    Muitas vezes, ao fazer upload de ativos grandes ou de vários ativos simultaneamente, os indicadores visuais permitem avaliar o progresso. A caixa de diálogo **[!UICONTROL Carregar progresso]** exibe a contagem de arquivos carregados com êxito e os arquivos que não foram carregados.
@@ -379,6 +381,7 @@ Para criar tags, é necessário ter permissão de gravação `/content/cq:tags/d
    * Número de vezes que o ativo foi exibido ou baixado.
    * Canais/dispositivos através dos quais o ativo foi usado.
    * Soluções criativas onde o ativo foi usado recentemente.
+
    Para obter mais detalhes, consulte [Asset Insights](touch-ui-asset-insights.md).
 
 1. Toque em **[!UICONTROL Salvar e fechar]**.
@@ -432,6 +435,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    * Especifique o nome do ativo depois de movê-lo. Em seguida, toque em **[!UICONTROL Próximo]** para prosseguir.
    * Toque em **[!UICONTROL Cancelar]** para interromper o processo.
+
    >[!NOTE]
    >
    >Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde um ativo com o mesmo nome exista. Se você usar o mesmo nome, o sistema gera automaticamente uma variação do nome. Por exemplo, se seu ativo tiver o nome Quadrado, o sistema gera o nome Quadrado1 para sua cópia.
@@ -456,6 +460,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Na coluna **[!UICONTROL Ajustar]** , selecione ou cancele a seleção de referências aos ativos.
    * Toque em **[!UICONTROL Voltar]** para retornar à página **[!UICONTROL Selecionar destino]** .
    * Toque em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
+
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
 ## Gerenciar execuções {#managing-renditions}
@@ -535,6 +540,7 @@ Você precisa de permissões de exclusão no dam/asset para poder excluir um ati
 
       * Se o ativo não tiver referências, ele será excluído.
       * Se o ativo tiver referências, uma mensagem de erro informará que **[!UICONTROL Um ou mais ativos são referenciados]**. Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo.
@@ -667,6 +673,7 @@ Também é possível adicionar mapas de imagem usando o editor de imagens. Para 
    * Selecione o ativo e clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    * Toque na opção **[!UICONTROL Editar]** que é exibida em um ativo na visualização do cartão.
    * Na página do ativo, toque no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Para recortar a imagem, toque em **[!UICONTROL Recortar]**.
@@ -738,6 +745,7 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
 
    * [Ações rápidas](managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
+
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
