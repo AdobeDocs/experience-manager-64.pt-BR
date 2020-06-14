@@ -1,20 +1,23 @@
 ---
-title: Processar ativos usando manipuladores de mídia e fluxos de trabalho
-description: Saiba mais sobre vários manipuladores de mídia e como usá-los em fluxos de trabalho para executar tarefas em ativos.
+title: Processar ativos usando manipuladores de mídia e workflows
+description: Saiba mais sobre vários manipuladores de mídia e como usá-los em workflows para executar tarefas em ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2ab97e4bfb9eca32d343d22d6570dd21885db69
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 5%
 
 ---
 
 
-# Processar ativos usando manipuladores de mídia e fluxos de trabalho {#processing-assets-using-media-handlers-and-workflows}
+# Processar ativos usando manipuladores de mídia e workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Os ativos Adobe Experience Manager fornecem um conjunto de fluxos de trabalho padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define uma tarefa típica de gerenciamento e processamento de ativos e, em seguida, delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
+Os ativos Adobe Experience Manager fornecem um conjunto de workflows padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define um gerenciamento de ativos típico e uma tarefa de processamento e, em seguida, delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
 
 É possível definir um fluxo de trabalho que é executado automaticamente quando um ativo de um tipo ou formato específico é carregado no servidor. As etapas de processamento são definidas como uma série de manipuladores de mídia do AEM Assets. O AEM fornece alguns manipuladores [integrados,](#default-media-handlers) e outros podem ser desenvolvidos [](#creating-a-new-media-handler) personalizados ou definidos delegando o processo a uma ferramenta [de linha de](#command-line-based-media-handler)comando.
 
-Os manipuladores de mídia são serviços dentro dos ativos AEM que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado no AEM, um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com fluxos de trabalho. Os tipos MIME mais comuns são suportados no AEM. Tarefas específicas podem ser executadas em ativos estendendo/criando fluxos de trabalho, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
+Os manipuladores de mídia são serviços dentro dos ativos AEM que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado no AEM, um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com workflows. Os tipos MIME mais comuns são suportados no AEM. tarefas específicas podem ser executadas em ativos estendendo/criando workflows, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
 
 >[!NOTE]
 >
@@ -44,7 +47,7 @@ Todos os manipuladores executam as seguintes tarefas:
 * extrair todos os metadados disponíveis do ativo.
 * criação de uma imagem em miniatura fora do ativo.
 
-É possível exibir os manipuladores de mídia ativos:
+É possível visualização dos manipuladores de mídia ativos:
 
 1. No navegador, navegue até `http://localhost:4502/system/console/components`.
 1. Clique no link `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
@@ -52,13 +55,13 @@ Todos os manipuladores executam as seguintes tarefas:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Usar manipuladores de mídia em fluxos de trabalho para executar tarefas em Ativos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Use manipuladores de mídia em workflows para executar tarefas em Ativos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-Os manipuladores de mídia são serviços normalmente usados em combinação com fluxos de trabalho.
+Os manipuladores de mídia são serviços normalmente usados em combinação com workflows.
 
-O AEM tem alguns fluxos de trabalho padrão para processar ativos. Para exibi-los, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que começam com os ativos AEM são os ativos específicos.
+O AEM tem alguns workflows padrão para processar ativos. Para visualização, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que são start com os ativos AEM são os ativos específicos.
 
-Os fluxos de trabalho existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
+workflows existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
 
 O exemplo a seguir mostra como aprimorar o fluxo de trabalho de **[!UICONTROL Sincronização do AEM Assets]** para que os ativos secundários sejam gerados para todos os ativos, exceto documentos PDF.
 
@@ -79,7 +82,7 @@ Para suportar um novo tipo de mídia ou para executar tarefas específicas em um
 
 #### Classes e interfaces importantes {#important-classes-and-interfaces}
 
-A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: a `com.day.cq.dam.core.AbstractAssetHandler` classe.
+A melhor maneira de start de uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: a `com.day.cq.dam.core.AbstractAssetHandler` classe.
 
 Essa classe já fornece um descritor de serviço abstrato. Portanto, se você herdar desta classe e usar o plug-in maven-sling-sling, certifique-se de definir o sinalizador de herança como `true`.
 
@@ -95,28 +98,28 @@ Este é um modelo de exemplo:
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum.
 * classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade comum usada, além da funcionalidade usada frequentemente na extração de ativos secundários.
-   * A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: a classe com.day.cq.dam.core.AbstractAssetHandler.
+   * A melhor maneira de start de uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: a classe com.day.cq.dam.core.AbstractAssetHandler.
    * Essa classe já fornece um descritor de serviço abstrato. Portanto, se você herdar desta classe e usar o plug-in maven-sling-sling, certifique-se de definir o sinalizador de herança como verdadeiro.
 
 É necessário implementar os seguintes métodos:
 
 * `extractMetadata()`: este método extrai todos os metadados disponíveis.
 * `getThumbnailImage()`: esse método cria uma imagem em miniatura do ativo passado.
-* `getMimeTypes()`: esse método retorna os tipos MIME do ativo.
+* `getMimeTypes()`: esse método retorna o(s) tipo(s) mime(s) do ativo.
 
 Este é um modelo de exemplo:
 
-pacote my.own.stuff /&amp;ast;&amp;ast; &amp;ast; @scr.component hereit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ classe pública MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
+empacotar my.own.stuff /&amp;ast;&amp;ast; &amp;ast; @scr.component hereit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ classe pública MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` classe:Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum usada, além da funcionalidade usada comum para a extração de subativos.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum usada, além da funcionalidade usada comum para a extração de subativos.
 
 #### Exemplo: criar um manipulador de texto específico {#example-create-a-specific-text-handler}
 
@@ -126,7 +129,7 @@ Proceda do seguinte modo:
 
 Consulte Ferramentas [de](../sites-developing/dev-tools.md) desenvolvimento para instalar e configurar o Eclipse com um plug-in Maven e para configurar as dependências necessárias para o projeto Maven.
 
-Após executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, os metadados do arquivo são extraídos e duas miniaturas com uma marca d&#39;água são geradas.
+Depois de executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, os metadados do arquivo são extraídos e duas miniaturas com uma marca d&#39;água são geradas.
 
 1. No Eclipse, crie um projeto `myBundle` Maven:
 
@@ -400,8 +403,8 @@ Após executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, 
      * * @return the number of words in the string
      * */ 
     private long wordCount(String text) { 
-     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count 
-     // The starting of the document is always a whitespace 
+     // We need to keep track of the last character, if we have two whitespace in a row we don't want to double count.
+     // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true; 
      boolean currentWhiteSpace = true; 
      char c; long numwords = 0; 
@@ -414,7 +417,7 @@ Após executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, 
       if (currentWhiteSpace && !prevWhiteSpace) { numwords++; } 
       prevWhiteSpace = currentWhiteSpace; 
      } 
-     // If we do not end with a white space then we need to add one extra word 
+     // If we do not end with a whitespace then we need to add one extra word.
      if (!currentWhiteSpace) { numwords++; } 
      return numwords; 
     } 
@@ -428,9 +431,9 @@ Após executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, 
 
 1. No CRX Explorer, crie um novo nó em `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
 1. Copie o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazene-o em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo no AEM.
-1. No navegador, abra o Console de gerenciamento da Web do Apache Felix. Selecione a guia Componentes e desative o manipulador de texto padrão `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. No seu navegador, abra o Console de gerenciamento da Web do Apache Felix. Selecione a guia Componentes e desative o manipulador de texto padrão `com.day.cq.dam.core.impl.handler.TextHandler`.
 
-## Manipulador de mídia baseado em linha de comando {#command-line-based-media-handler}
+## Manipulador de Mídia Baseado em Linha de Comando {#command-line-based-media-handler}
 
 O AEM permite que você execute qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como ImageMagick) e adicionar a nova representação ao ativo. Você só precisa instalar a ferramenta de linha de comando no disco que hospeda o servidor AEM e adicionar e configurar uma etapa do processo ao fluxo de trabalho. O processo chamado `CommandLineProcess`, também permite filtrar de acordo com tipos MIME específicos e criar várias miniaturas com base na nova execução.
 
@@ -447,7 +450,7 @@ As seguintes conversões podem ser executadas e armazenadas automaticamente nos 
 
 O `CommandLineProcess` processo executa as seguintes operações na ordem em que são listadas:
 
-* Filtra o arquivo de acordo com tipos MIME específicos, se especificado.
+* Filtros o arquivo de acordo com tipos MIME específicos, se especificado.
 * Cria um diretório temporário no disco que hospeda o servidor AEM.
 * Transmite o arquivo original para o diretório temporário.
 * Executa o comando definido pelos argumentos da etapa. O comando está sendo executado no diretório temporário com as permissões do usuário que está executando o AEM.
@@ -493,7 +496,7 @@ Para testar o fluxo de trabalho modificado, adicione um ativo ao `/content/dam`.
 
 #### Configurar a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Esta seção descreve como definir os **[!UICONTROL Argumentos de processo]** do `CommandLineProcess`. Separe os valores de Argumentos [!UICONTROL de] Processo usando uma vírgula e não inicie um valor com um espaço em branco.
+Esta seção descreve como definir os **[!UICONTROL Argumentos de processo]** do `CommandLineProcess`. Separe os valores de Argumentos [!UICONTROL de] Processo usando uma vírgula e não start um valor com um espaço em branco.
 
 | Formato do argumento | Descrição |
 |---|---|
