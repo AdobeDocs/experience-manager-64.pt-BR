@@ -3,7 +3,10 @@ title: Preparação de ativos para tradução
 description: Crie pastas raiz de idioma para se preparar para a tradução de ativos multilíngues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ Nos ativos Adobe Experience Manager (AEM), ativos multilíngues são incluídos 
 
 Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, */content/dam/it* é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma raiz [de idioma configurada](preparing-assets-for-translation.md#creating-a-language-root) corretamente para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
 
-A cópia de idioma para a qual você adicionou ativos originalmente é o idioma mestre. O mestre de idioma é a fonte traduzida para outros idiomas.
+A cópia de idioma para a qual você adicionou ativos originalmente é o idioma principal. O idioma principal é a fonte traduzida para outros idiomas.
 
 A hierarquia da pasta de amostra inclui várias raízes de idioma:
 
@@ -34,12 +37,12 @@ A hierarquia da pasta de amostra inclui várias raízes de idioma:
 
 Execute as seguintes etapas para preparar seus ativos para tradução:
 
-1. Crie a raiz do idioma do seu mestre de idiomas. Por exemplo, a raiz do idioma da cópia em inglês na hierarquia da pasta de amostra é `/content/dam/en`. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criação de uma raiz](preparing-assets-for-translation.md#creating-a-language-root)de idioma.
+1. Crie a raiz do idioma do idioma principal. Por exemplo, a raiz do idioma da cópia em inglês na hierarquia da pasta de amostra é `/content/dam/en`. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criação de uma raiz](preparing-assets-for-translation.md#creating-a-language-root)de idioma.
 
-1. Adicione ativos ao seu mestre de idiomas.
-1. Crie a raiz de cada idioma de destino para o qual você precisa de uma cópia de idioma.
+1. Adicione ativos ao seu idioma principal.
+1. Crie a raiz do idioma de cada idioma do público alvo para o qual você precisa de uma cópia do idioma.
 
-## Criando uma raiz de idioma {#creating-a-language-root}
+## Criação de uma raiz de idioma {#creating-a-language-root}
 
 Para criar a raiz do idioma, crie uma pasta e use um código de idioma ISO como o valor da propriedade Name. Depois de criar a raiz do idioma, é possível criar uma cópia do idioma em qualquer nível na raiz do idioma.
 
@@ -59,7 +62,7 @@ Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostr
 
 A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas nos ativos AEM.
 
-1. No console Ativos, selecione o idioma mestre para o qual deseja criar cópias de idioma.
+1. No console Ativos, selecione o idioma principal para o qual deseja criar cópias de idioma.
 1. Clique ou toque no ícone GlobalNav e escolha **[!UICONTROL Referências]** para abrir o painel Referência.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
