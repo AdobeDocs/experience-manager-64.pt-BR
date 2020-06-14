@@ -1,11 +1,14 @@
 ---
 title: Reutilizar ativos usando o MSM para ativos
-description: Use ativos em várias páginas/pastas que são derivadas e vinculadas a ativos pai. Os ativos permanecem sincronizados com uma cópia mestre e, com alguns cliques, recebem as atualizações dos ativos principais.
+description: Use ativos em várias páginas/pastas que são derivadas e vinculadas a ativos pai. Os ativos permanecem sincronizados com uma cópia principal e, com alguns cliques, recebem as atualizações dos ativos principais.
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14e89bf1e17243cc10c60fc712ee23f846ceb907
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '3158'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 14e89bf1e17243cc10c60fc712ee23f846ceb907
 A funcionalidade Multi Site Manager (MSM) no Adobe Experience Manager (AEM) permite que os usuários reutilizem o conteúdo criado uma vez e reutilizado em vários locais da Web. O mesmo está disponível para ativos digitais que a funcionalidade MSM para ativos. Usando o MSM para ativos, é possível:
 
 * Crie ativos uma vez e faça cópias desses ativos para reutilizá-los em outras áreas do site.
-* Mantenha várias cópias sincronizadas e atualize a cópia mestre original uma vez para encaminhar as alterações para as cópias secundárias.
+* Mantenha várias cópias sincronizadas e atualize a cópia primária original uma vez para enviar as alterações para as cópias secundárias.
 * Faça alterações locais suspendendo temporária ou permanentemente a vinculação entre ativos pai e filho.
 
 ## Pré-requisitos {#msm-prerequisites}
@@ -27,7 +30,7 @@ Para usar o MSM para os Ativos, instale pelo menos o Service Pack 5. Para obter 
 
 ### Como funciona e benefícios {#how-it-works-the-benefits}
 
-Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [possíveis cenários](/help/sites-administering/msm.md#possible-scenarios)MSM. O AEM mantém um link entre o ativo original e suas cópias vinculadas, chamadas de cópias ativas (LCs). A vinculação mantida permite que alterações centralizadas sejam enviadas para muitas cópias online. Isso permite atualizações mais rápidas, além de eliminar as limitações do gerenciamento de cópias de duplicados. A propagação das alterações é livre de erros e centralizada. A funcionalidade permite espaço para atualizações limitadas a cópias online selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não serão substituídas quando a próxima vez que a cópia mestre for atualizada e as alterações forem distribuídas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ele permite flexibilidade para atualizar localmente ativos que são originalmente herdados de uma cópia mestre.
+Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [possíveis cenários](/help/sites-administering/msm.md#possible-scenarios)MSM. O AEM mantém um link entre o ativo original e suas cópias vinculadas, chamadas de cópias ativas (LCs). A vinculação mantida permite que alterações centralizadas sejam enviadas para muitas cópias online. Isso permite atualizações mais rápidas, além de eliminar as limitações do gerenciamento de cópias de duplicados. A propagação das alterações é livre de erros e centralizada. A funcionalidade permite espaço para atualizações limitadas a cópias online selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não são substituídas quando a próxima vez que a cópia principal for atualizada e as alterações forem distribuídas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ele permite flexibilidade para atualizar localmente ativos que são originalmente herdados de uma cópia primária.
 
 O MSM mantém uma relação ao vivo entre o ativo de origem e suas cópias ao vivo para que:
 
@@ -37,7 +40,7 @@ O MSM mantém uma relação ao vivo entre o ativo de origem e suas cópias ao vi
 
 ### Glossário de termos de MSM para ativos {#glossary-msm-for-assets}
 
-* **Fonte:** Os ativos ou pastas originais. Cópia principal da qual são derivadas cópias online.
+* **Fonte:** Os ativos ou pastas originais. Cópia principal da qual as cópias online são derivadas.
 
 * **Live copy:** A cópia dos ativos/pastas de origem que está em sincronização com a origem. As cópias online podem ser uma fonte de outras cópias online. Consulte [como criar LCs](#create-live-copy-asset).
 
