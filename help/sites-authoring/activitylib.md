@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+workflow-type: tm+mt
+source-wordcount: '2023'
+ht-degree: 86%
 
 ---
 
@@ -80,7 +83,7 @@ Adicione uma atividade ou edite uma atividade existente para concentrar seus esf
 * **Mecanismo de definição de metas:** o [AEM](/help/sites-authoring/personalization.md#aem) ou o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como mecanismo de conteúdo direcionado.
 
 * **Selecionar uma configuração de destino:** (somente no Adobe Target) a configuração em nuvem que essa atividade deve usar para se conectar ao Adobe Target. Essa opção aparece somente quando o Adobe Target é selecionado para o Mecanismo de direcionamento.
-* **** Tipo de atividade: O tipo de atividade - teste A/B ou direcionamento de experiência
+* **Tipo de Atividade:** O tipo de atividade - teste A/B ou direcionamento de experiência
 * **Objetivo:** (opcional) uma descrição da atividade.
 * **Experiências:** mapeamentos entre os nomes de público-alvo e os segmentos de marketing que você está direcionando.
 * **Porcentagens de tráfego:** se o teste A/B for selecionado, você poderá alterar a quantidade de tráfego (em porcentagem) de cada experiência.
@@ -108,9 +111,10 @@ Para adicionar uma atividade:
 1. Adicione uma ou mais experiências à atividade. Clique ou toque em **Adicionar experiência**.
 1. Se estiver usando o direcionamento do AEM ou o direcionamento de experiência do Adobe Target:
 
-   1. Clique ou toque em **Selecionar público **e selecione o segmento que sua experiência direciona.
+   1. Clique ou toque em **Selecione a Audiência **e selecione o segmento cujos públicos alvos de experiência você possui.
    1. Clique ou toque em **Adicionar experiência**, digite um nome e clique ou toque em **OK**.
    1. Clique ou toque em **Próximo**.
+
    Se estiver usando a opção Teste A/B do Adobe Target:
 
    1. Clique ou toque no ícone de lápis na caixa de públicos-alvo para selecionar um público-alvo.
@@ -143,7 +147,7 @@ Para adicionar uma atividade:
 
 >[!NOTE]
 >
->Ao cancelar a publicação de uma atividade,
+>Ao cancelar a publicação de uma atividade, o status da atividade não é alterado a menos que você atualize a página.
 
 Para publicar ou cancelar a publicação de atividades:
 
@@ -179,6 +183,7 @@ Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
    * Desativa a atividade atual
    * Modifica todas as páginas e substitui o conteúdo segmentado pelo conteúdo real da experiência vencedora. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
    Uma experiência vencedora é a experiência que gera mais Incentivo nos relatórios, que se baseia na taxa de conversão.
@@ -224,7 +229,7 @@ Para evitar problemas de sincronização, use sempre nomes exclusivos para ativi
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, atribua um nome exclusivo a cada campanha; os nomes de campanha não podem, portanto, ser reutilizados em tipos de campanha diferentes.
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, nomeie cada campanha como um nome exclusivo; Assim, os nomes de campanhas não podem ser reutilizados em tipos de campanha diferentes.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >
