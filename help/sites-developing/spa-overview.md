@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -194,8 +194,8 @@ Para permitir que o autor use o editor de página para editar o conteúdo de um 
 
 O SDK do Editor SPA oferece suporte às seguintes versões mínimas:
 
-* Reagir 16.3
-* Angular 6.x
+* Reagir 16.x e acima
+* Angular 6.x e superior
 
 As versões anteriores dessas estruturas podem funcionar com o AEM SPA Editor SDK, mas não são compatíveis.
 
