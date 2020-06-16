@@ -1,8 +1,8 @@
 ---
 title: Tutorial WKND do SPA
 seo-title: Tutorial WKND do SPA
-description: Mergulhe no desenvolvimento de SPA com este tutorial de várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento front-end e roteamento de aplicativos para implementar seu próprio SPA.
-seo-description: Mergulhe no desenvolvimento de SPA com este tutorial de várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento front-end e roteamento de aplicativos para implementar seu próprio SPA.
+description: Mergulhe no desenvolvimento de SPA com este tutorial de várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento de front-end e roteamento de aplicativos para implementar seu próprio SPA.
+seo-description: Mergulhe no desenvolvimento de SPA com este tutorial de várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento de front-end e roteamento de aplicativos para implementar seu próprio SPA.
 uuid: f57be84b-a037-4c76-856e-afb0275c1a0f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,18 +10,23 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bb200d5361b8927c37683ec1cc0534d1d99176c7
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
 
 # Tutorial WKND do SPA{#spa-wknd-tutorial}
 
-Mergulhe no desenvolvimento de SPA com este tutorial de várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento front-end e roteamento de aplicativos para implementar seu próprio SPA.
+Mergulhe no desenvolvimento de SPA com este tutorial de várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento de front-end e roteamento de aplicativos para implementar seu próprio SPA.
 
 ## Tutoriais {#tutorials}
 
-Para obter um exemplo completo de como criar seu próprio aplicativo de página única que é editável com o AEM começando com a configuração do projeto por meio do roteamento do aplicativo, consulte o Tutorial [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)Introdução ao editor AEM SPA - Eventos WKND. Há versões do tutorial para as estruturas React e Angular.
+Para obter um exemplo completo de como criar seu próprio aplicativo de página única que é editável com o AEM começando com a configuração do projeto por meio do roteamento do aplicativo, consulte os Tutoriais SPA do WKND:
 
-No entanto, antes de iniciar seu próprio projeto SPA para o AEM, verifique também o documento [Desenvolvendo SPAs para o AEM](/help/sites-developing/spa-architecture.md) .
+* [Introdução ao Editor SPA do AEM e ao Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Introdução ao editor AEM SPA e reação](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
+No entanto, antes de iniciar seu próprio projeto SPA para o AEM, verifique também os [SPAs de desenvolvimento para o documento AEM](/help/sites-developing/spa-architecture.md) .
