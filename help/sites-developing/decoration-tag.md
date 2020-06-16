@@ -2,7 +2,7 @@
 title: Tag de decoração
 description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro dele mesmo. Para desenvolvedores, a lógica clara e simples do AEM oferta controla as marcas de decoração que envolvem os componentes incluídos.
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Tag de decoração{#decoration-tag}
+# Tag de decoração {#decoration-tag}
 
 Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro dele mesmo. Isto serve principalmente dois objetivos:
 
@@ -38,9 +38,7 @@ Estas são algumas recomendações gerais de quando incluir o elemento wrapper q
 As seguintes propriedades e nós podem ser aplicados aos componentes para controlar o comportamento de sua tag de decoração:
 
 * **`cq:noDecoration {boolean}`:**Essa propriedade pode ser adicionada a um componente e um valor real faz com que o AEM não gere elementos de invólucro sobre o componente.
-
 * **`cq:htmlTag`nó :**Esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
-
    * **`cq:tagName {String}`:**Isso pode ser usado para especificar uma tag HTML personalizada a ser usada para vincular os componentes em vez do elemento DIV padrão.
    * **`class {String}`:**Isso pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
    * Outros nomes de propriedade serão adicionados como atributos HTML com o mesmo valor String fornecido.
