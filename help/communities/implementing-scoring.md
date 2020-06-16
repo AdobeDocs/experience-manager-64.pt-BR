@@ -1,8 +1,8 @@
 ---
-title: Pontuação e símbolos das comunidades
-seo-title: Pontuação e símbolos das comunidades
-description: A pontuação e os emblemas do AEM Communities permitem identificar e recompensar os membros da comunidade
-seo-description: A pontuação e os emblemas do AEM Communities permitem identificar e recompensar os membros da comunidade
+title: Pontuação das comunidades e emblemas
+seo-title: Pontuação das comunidades e emblemas
+description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
+seo-description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2885'
+ht-degree: 2%
 
 ---
 
 
-# Pontuação e símbolos das comunidades {#communities-scoring-and-badges}
+# Pontuação das comunidades e emblemas {#communities-scoring-and-badges}
 
 ## Visão geral {#overview}
 
-O recurso de pontuação e selo do AEM Communities permite identificar e recompensar membros da comunidade.
+O recurso de pontuação de AEM Communities e emblemas fornece a capacidade de identificar e recompensar membros da comunidade.
 
 Os principais aspectos da pontuação e dos emblemas são:
 
@@ -39,7 +42,7 @@ Os principais aspectos da pontuação e dos emblemas são:
 
 Os símbolos são colocados sob o nome de um membro para indicar sua função ou sua posição na comunidade. Os símbolos podem ser exibidos como uma imagem ou como um nome. Quando exibido como uma imagem, o nome é incluído como texto alternativo para acessibilidade.
 
-Por padrão, os símbolos estão localizados no repositório em
+Por padrão, os emblemas estão localizados no repositório em
 
 * /etc/community/badging/images
 
@@ -63,7 +66,7 @@ Na versão estão incluídos três emblemas baseados em função:
 
    `/etc/community/badging/images/moderator/jcr:content/moderator.png`
 
-* Gerenciador de grupos
+* Gerente de grupo
 
    `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
 
@@ -75,9 +78,9 @@ Na versão estão incluídos três emblemas baseados em função:
 
 ### Crachás recompensados {#awarded-badges}
 
-Os crachás baseados em recompensa são concedidos pelo serviço de pontuação aos membros da comunidade com base nas regras aplicadas à sua atividade na comunidade.
+Os crachás baseados em recompensas são concedidos pelo serviço de pontuação aos membros da comunidade com base nas regras aplicadas à sua atividade na comunidade.
 
-Para que os crachás apareçam como recompensa para a atividade, há duas coisas que devem acontecer:
+Para que os crachás apareçam como recompensa pela atividades, há duas coisas que devem acontecer:
 
 * A marcação deve estar [ativada](#enable-badges-for-component) para o componente de recurso
 * As regras de pontuação e marcação devem ser [aplicadas](#apply-rules-to-content) à página (ou ancestral) na qual o componente é colocado
@@ -159,13 +162,13 @@ Uma propriedade booleana `allowBadges`, ativa/desativa a exibição de emblemas 
 
 As regras de pontuação são a base da pontuação para fins de atribuição de emblemas.
 
-Muito simplesmente, cada regra de pontuação é uma lista de uma ou mais subregras. As regras de pontuação são aplicadas ao conteúdo do site da comunidade para identificar as regras a serem aplicadas quando os emblemas estiverem ativados.
+Muito simplesmente, cada regra de pontuação é uma lista de uma ou mais sub-regras. As regras de pontuação são aplicadas ao conteúdo do site da comunidade para identificar as regras a serem aplicadas quando os emblemas estiverem ativados.
 
 As regras de pontuação são herdadas, mas não aditivas. Por exemplo:
 
 * Se page2 contiver regra de pontuação2 e sua página anterior1 contiver regra de pontuação1
 * Uma ação em um componente page2 chamará rule1 e rule2
-* Se ambas as regras contiverem subregras aplicáveis para o mesmo `topic/verb`:
+* Se ambas as regras contiverem sub-regras aplicáveis para o mesmo `topic/verb`:
 
    * Somente a subregra da regra2 afetará a pontuação
    * As pontuações de ambas as subregras não são adicionadas juntas
@@ -196,7 +199,7 @@ Cada subregra de pontuação identifica
 * Que função comunitária específica está envolvida
 * Quantos pontos são atribuídos
 
-Por padrão, os pontos são concedidos ao membro que realiza a ação, a menos que a subregra especifique o proprietário do conteúdo como recebendo os pontos ( `forOwner`).
+Por padrão, os pontos são concedidos ao membro que está tomando a ação, a menos que a subregra especifique o proprietário do conteúdo como recebendo os pontos ( `forOwner`).
 
 Cada subregra pode ser incluída em uma ou mais regras de pontuação.
 
@@ -222,7 +225,7 @@ Subregras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó q
      <li>obrigatório; o verbo corresponde a uma ação de evento</li> 
      <li>deve haver pelo menos uma propriedade verb</li> 
      <li>o verbo deve ser inserido em todas as MAIÚSCULAS</li> 
-     <li>pode haver várias propriedades de verbo, mas nenhuma duplicação</li> 
+     <li>pode haver várias propriedades de verbo, mas nenhum duplicado</li> 
      <li>o valor é a pontuação a ser aplicada para este evento</li> 
      <li>o valor pode ser positivo ou negativo</li> 
      <li>uma lista de verbos suportados na versão está na seção <a href="#topics-and-verbs">Tópicos e Verbos</a></li> 
@@ -233,7 +236,7 @@ Subregras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó q
    <td>Sequência de caracteres[]</td> 
    <td> 
     <ul> 
-     <li>facultativo; restringe a sub-regra aos componentes da comunidade identificados por tópicos do evento</li> 
+     <li>facultativo; restringe a sub-regra aos componentes da comunidade identificados pelos tópicos do evento</li> 
      <li>se especificado: value é uma string de vários valores de tópicos de evento</li> 
      <li>uma lista de tópicos na versão está na seção <a href="#topics-and-verbs">Tópicos e Verbos</a></li> 
      <li>o padrão é aplicar a todos os tópicos associados aos verbos</li> 
@@ -320,7 +323,7 @@ As regras de marcação vinculam as regras de pontuação aos símbolos especifi
 * Qual regra de pontuação
 * A pontuação necessária para receber um crachá específico
 
-As regras de marcação são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó que correlacionam as regras de pontuação com pontuações e símbolos.
+As regras de marcação são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó que correlacionam as regras de pontuação com pontuações e emblemas.
 
 As regras para identificação consistem em uma `thresholds`propriedade obrigatória que é uma lista ordenada de pontuações mapeadas para símbolos. As pontuações devem ser ordenadas em valor crescente. Por exemplo:
 
@@ -361,7 +364,7 @@ A `scoringRules`propriedade em uma regra de identificação simplesmente restrin
      <li>número = pontuação</li> 
      <li>| = barra vertical (U+007C)</li> 
      <li>caminho = caminho completo para o recurso de imagem de emblema</li> 
-    </ul> As strings devem ser ordenadas para que os números aumentem em valor e nenhum espaço em branco deve aparecer entre o número e o caminho.<br /><br /> Exemplo de entrada: <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
+    </ul> As strings devem ser ordenadas para que os números aumentem em valor e nenhum espaço em branco deve aparecer entre o número e o caminho.<br /> Exemplo de entrada:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
   </tr> 
   <tr> 
    <td>badgingType</td> 
@@ -395,7 +398,7 @@ Na versão estão incluídas duas Regras de marcação que correspondem às Regr
 
 Quaisquer alterações ou adições feitas às regras de marcação ou imagens feitas no ambiente do autor precisam ser instaladas na publicação.
 
-## Atribuir e revogar símbolos {#assign-and-revoke-badges}
+## Atribuir e Revogar Crachás {#assign-and-revoke-badges}
 
 Os emblemas podem ser atribuídos a membros usando o console [de](members.md#badges-tab) membros ou de forma programática usando comandos cURL.
 
@@ -407,24 +410,25 @@ cURL -i -X POST -H *cabeçalho* -u *logon * -F *operação * -F *emblema * *memb
 cabeçalho personalizado para passar para o servidor (obrigatório)
 
 *logon* = id-administrador:senha\
- por exemplo: admin:admin
+por exemplo: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OU &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
 *badge-image-file* = o local do arquivo de imagem do emblema no repositório\
- por exemplo: /etc/community/badging/images/moderator/jcr:content/moderator.png
+por exemplo: /etc/community/badging/images/moderator/jcr:content/moderator.png
 
-*membro-profile-url* = o ponto final do perfil do membro na publicação\
- por exemplo: https://&lt;servidor>:&lt;porta>/home/users/community/riley/profile.social.json
+*membro-perfil-url* = o ponto final do perfil do membro ao publicar\
+por exemplo: https://&lt;servidor>:&lt;porta>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
->O *membro-profile-url*
+>O *membro-perfil-url*
 >
 >* Pode fazer referência a uma instância do autor se o Serviço [de](users.md#tunnel-service) Túnel estiver ativado
 >* Pode ser um nome obscuro e aleatório - consulte Lista [](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) de verificação de segurança com relação à ID autorizada
+
 >
 
 
@@ -449,19 +453,19 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 ## Pontuação e emblemas para componentes personalizados {#scoring-and-badges-for-custom-components}
 
-As regras de pontuação e marcação podem ser criadas para componentes personalizados associando os tópicos de evento criados para o componente aos verbos.
+As regras de pontuação e marcação podem ser criadas para componentes personalizados associando os tópicos do evento criados para o componente aos verbos.
 
 ## Tópicos e verbos {#topics-and-verbs}
 
 Quando os membros interagem com os recursos das comunidades, são enviados eventos que podem acionar ouvintes assíncronos, como notificações e pontuação.
 
-Uma instância do SocialEvent de um componente registra os eventos como `actions`os que ocorrem para um `topic`evento. O SocialEvent inclui um método para retornar um método `verb`associado à ação. Existe uma relação *n-1* entre `actions`e `verbs`.
+Uma instância do SocialEvent de um componente registra os eventos como `actions`os que ocorrem para um `topic`. O SocialEvent inclui um método para retornar um método `verb`associado à ação. Existe uma relação *n-1* entre `actions`e `verbs`.
 
 Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `verbs`definido para cada `topic`disponível para uso em subregras [de](#scoring-sub-rules)pontuação.
 
 >[!NOTE]
 >
->Uma nova propriedade booleana `allowBadges`, ativa/desativa a exibição de emblemas para uma instância do componente. Ele será configurável em caixas de diálogo [de edição de](author-communities.md) componentes atualizadas por meio de uma caixa de seleção denominada **Exibir emblemas**.
+>Uma nova propriedade booleana `allowBadges`, ativa/desativa a exibição de emblemas para uma instância do componente. Ele será configurável em caixas de diálogo [de edição de](author-communities.md) componentes atualizadas por meio de uma caixa de seleção rotulada **Exibir emblemas**.
 
 **[Componente](calendar.md)**de calendárioSocialEvent`topic`= com/adobe/cq/social/calendário
 
@@ -469,7 +473,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 |---|---|
 | POSTAGEM | membro cria um evento de calendário |
 | ADICIONAR | comentários do membro em um evento de calendário |
-| ATUALIZAR | o evento ou comentário do calendário do membro é editado |
+| ATUALIZAR | o evento do calendário ou comentário do membro é editado |
 | EXCLUIR | o evento ou comentário do calendário do membro é excluído |
 
 **[Componente Comentários](comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
@@ -499,7 +503,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 | ATUALIZAR | o tópico do fórum do membro ou a resposta é editada |
 | EXCLUIR | o tópico do fórum do membro ou a resposta é excluída |
 
-**[Componente](blog-feature.md)**de diárioSocialEvent`topic`= com/adobe/cq/social/diário
+**[Componente](blog-feature.md)**de JournalSocialEvent`topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrição** |
 |---|---|
@@ -514,9 +518,9 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 |---|---|
 | POSTAGEM | membro cria uma pergunta QnA |
 | ADICIONAR | membro cria uma resposta QnA |
-| ATUALIZAR | pergunta ou resposta do membro é editada |
+| ATUALIZAR | pergunta ou resposta QnA do membro é editada |
 | SELECIONAR | a resposta do membro é selecionada |
-| DESMARCAR | a resposta do membro é desmarcada |
+| CANCELAR SELEÇÃO | a resposta do membro é desmarcada |
 | EXCLUIR | pergunta ou resposta do membro é excluída |
 
 **[Revisa o componente](reviews.md)**SocialEvent`topic`= com/adobe/cq/social/review
@@ -554,7 +558,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 ### Eventos de componentes personalizados {#custom-component-events}
 
-Para um componente personalizado, um SocialEvent é instanciado para gravar os eventos do componente como `actions`os que ocorrem para um `topic`componente.
+Para um componente personalizado, um SocialEvent é instanciado para gravar os eventos do componente como `actions`ocorrem para um `topic`componente.
 
 Para suportar a pontuação, o SocialEvent precisaria sobrescrever o método para `getVerb()` que um apropriado `verb`seja retornado para cada `action`. A ação `verb` retornada pode ser uma ação comumente usada (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe uma relação *n-1* entre `actions`e `verbs`.
 
