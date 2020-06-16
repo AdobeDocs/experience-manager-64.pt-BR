@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Os limites de contribuição podem ser ativados individualmente no console [](me
 
 Usando o console Membros, os limites de contribuição podem ser removidos de forma proativa para um membro por um gerente da comunidade a qualquer momento ou removidos de forma reativa quando um membro envia uma mensagem para um gerente da comunidade que faz tal solicitação.
 
-## Configuração de limites de contribuição de conteúdo gerado pelo usuário do AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuração de limites de contribuição de conteúdo gerada pelo usuário do AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Esta configuração do OSGi
 
@@ -50,7 +53,7 @@ Para atingir essa configuração do OSGi:
 
 * **[!UICONTROL Aplicar automaticamente limites de contribuição UGC]**
 
-   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso é refletido no perfil do membro da comunidade e pode ser ativado/desativado no console [de](members.md)membros. Os novos membros com um endereço de email de um domínio listado em branco nunca são restringidos.
+   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso se reflete no perfil do membro da comunidade e pode ser ativado/desativado no console [de](members.md)membros. Os novos membros com um endereço de email de uma lista permitida de domínios nunca são restringidos.
 
    O padrão está desmarcado.
 
@@ -58,7 +61,7 @@ Para atingir essa configuração do OSGi:
 
    Número máximo de contribuições.
 
-   O padrão é 10 publicações.
+   O padrão é 10 postagens.
 
 * **[!UICONTROL Frequência limite UGC]**
 
@@ -68,18 +71,18 @@ Para atingir essa configuração do OSGi:
 
 * **[!UICONTROL Domínios]**
 
-   Uma lista branca de um ou mais domínios de email. Selecione o ícone + para fazer entradas adicionais.
+   Uma lista permitida de um ou mais domínios de email. Selecione o ícone + para fazer entradas adicionais.
 
-   Os usuários com endereços de email nos domínios da lista branca não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email nunca `me@mycompany.com` será restringido à publicação.
+   Os usuários com endereços de email na lista permitida de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email nunca `me@mycompany.com` será restringido à publicação.
 
-   O padrão é uma lista branca vazia.
+   O padrão é uma lista vazia permitida.
 
-* **[!UICONTROL Destinatários de mensagens]**
+* **[!UICONTROL Recipient de mensagens]**
 
-   Lista de uma ou mais IDs autorizadas de membros que podem modificar os limites de contribuição dos membros. Selecione o ícone + para fazer entradas adicionais.
+   Lista de uma ou mais IDs autorizadas de membros capazes de alterar os limites de contribuição dos membros. Selecione o ícone + para fazer entradas adicionais.
 
    Os membros só podem alcançar determinados membros quando o seu limite tiver sido atingido.
 
-   O padrão não é nenhum destinatário de mensagens.
+   O padrão não é nenhum recipient de mensagem.
 
 Observação: A configuração padrão resulta em um limite de 10 publicações dentro de um período de uma hora.
