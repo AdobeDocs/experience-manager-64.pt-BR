@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
-source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 ## Visão geral {#overview}
 
-O recurso de mensagens do AEM Communities fornece a capacidade de os visitantes do site que fizeram logon (membros) enviarem mensagens para os outros que podem ser acessadas quando conectados ao site.
+O recurso de mensagens para AEM Communities fornece a capacidade de visitantes (membros) de sites conectados enviarem mensagens para outros que sejam acessíveis quando conectados ao site.
 
 As mensagens são ativadas para um site da comunidade marcando uma caixa durante a criação [do site da](sites-console.md)comunidade.
 
@@ -45,17 +48,17 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Lista de permissões dos campos de mensagem]** Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: *assunto* e *conteúdo*.
+* **[!UICONTROL Lista de permissão de campos de mensagem]** Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: *assunto* e *conteúdo*.
 
 * **[!UICONTROL Limite]** de tamanho da caixa de mensagem O número máximo de bytes na caixa de mensagem de cada usuário. O padrão é *1073741824* (1 GB).
 
 * **[!UICONTROL Limite]** de contagem de mensagens O número total de mensagens permitidas por usuário. Um valor de -1 indica que um número ilimitado de mensagens é permitido, sujeito ao limite de tamanho da caixa de mensagem. O padrão é *10000* (10 mil).
 
-* **[!UICONTROL Notificar falha]** de entrega Se marcada, notifique o remetente se a entrega da mensagem falhar para alguns destinatários. O padrão está *marcado*.
+* **[!UICONTROL Notificar falha]** do delivery Se marcada, notifique o remetente se o delivery da mensagem falhar para alguns recipient. O padrão está *marcado*.
 
-* **[!UICONTROL Falha ao entregar ID]** do remetente Nome do remetente que aparece na mensagem de falha de entrega. O padrão é *failureNotifier*.
+* **[!UICONTROL Falha ID]** do remetente do delivery Nome do remetente que aparece na mensagem de falha do delivery. O padrão é *failureNotifier*.
 
-* **[!UICONTROL Caminho do modelo de mensagem de falha Caminho]** absoluto para a raiz do modelo de mensagem de falha de entrega. O padrão é */etc/notification/messaging/default*.
+* **[!UICONTROL Caminho do modelo de mensagem de falha Caminho]** absoluto para a raiz do modelo de mensagem de falha do delivery. O padrão é */etc/notification/messaging/default*.
 
 * **[!UICONTROL maxRetries.name]** Número de vezes que tentar reenviar a mensagem que falhou ao ser entregue. O padrão é *3*.
 
@@ -69,24 +72,24 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
 * **[!UICONTROL supportAttachments.name]** Se marcado, os usuários poderão adicionar anexos às suas mensagens. O padrão está *marcado*.
 
-* **[!UICONTROL batchSize.name]** Número de mensagens a serem agrupadas em lote para um envio ao enviar para um grande grupo de destinatários. O padrão é *100*.
+* **[!UICONTROL batchSize.name]** Número de mensagens a serem agrupadas em lote para um envio ao enviar para um grande grupo de recipient. O padrão é *100*.
 
 * **[!UICONTROL maxTotalAttachmentSize.name]** Se supportAttachments estiver marcado, esse valor especifica o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é *104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeBlacklist.name]** Uma lista negra de extensões de arquivo, prefixada com &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não estiver na lista negra, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;. O padrão é *PADRÃO*.
+* **[!UICONTROL attachmentTypeAllowlist.name]** Uma lista de blocos de extensões de arquivo, prefixada com &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não estiver bloqueada, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;. O padrão é *PADRÃO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
-   **(*Ação necessária*)** Uma lista de permissões de extensões de arquivos, o oposto da lista negra. Para permitir todas as extensões de arquivo, exceto aquelas proibidas, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
+   **(*Ação necessária*)** Uma lista permitida de extensões de arquivo, o oposto da lista de bloqueio. Para permitir todas as extensões de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
 
 * **[!UICONTROL serviceSelector.name]**(*obrigatório*) Um caminho absoluto (ponto final) pelo qual o serviço é chamado (um recurso virtual). A raiz do caminho escolhido deve ser uma incluída na configuração Caminhos *de execução* da configuração do OSGi [ , como `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`e `/apps/``/services/`. Para selecionar essa configuração para o recurso de mensagens de um site, esse terminal é fornecido como o **`Service selector`** valor para o `Message List and Compose Message components` (consulte Recurso [](configure-messaging.md)de mensagem). O padrão é */bin/messaging* .
 
-* **[!UICONTROL fieldWhitelist.name]** Usar lista de permissões dos campos **de mensagem**.
+* **[!UICONTROL fieldAllowlist.name]** Usar lista de permissões de campos **de mensagem**.
 
 >[!CAUTION]
 >
 >Sempre que uma `Messaging Operations Service` configuração é aberta para edição, se `allowedAttachmentTypes.name` foi removida, uma entrada vazia é adicionada novamente para tornar a propriedade configurável. Uma única entrada vazia efetivamente desativa anexos de arquivo.
 >
->Para permitir todas as extensões de arquivo, exceto aquelas proibidas, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **[!UICONTROL Salvar]**.
+>Para permitir todas as extensões de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **[!UICONTROL Salvar]**.
 
 ## Resolução de Problemas{#troubleshooting}
 
