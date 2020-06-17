@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
+source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+workflow-type: tm+mt
+source-wordcount: '3805'
+ht-degree: 0%
 
 ---
 
@@ -35,13 +38,13 @@ As seguintes configurações OSGi (listadas de acordo com o pacote) são relevan
 
 >[!NOTE]
 >
->A ferramenta Dif de configuração do OSGi, parte das Ferramentas [do](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, pode ser usada para listar as configurações padrão do OSGi.
+>A ferramenta Dif de configuração do OSGi, parte das Ferramentas [do](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, pode ser usada para lista das configurações padrão do OSGi.
 
 >[!NOTE]
 >
 >Outros pacotes podem ser necessários para áreas específicas de funcionalidade no AEM. Nesses casos, os detalhes de configuração podem ser encontrados na página relacionada à funcionalidade apropriada.
 
-**Configuração do ouvinte** de eventos de replicação do AEM:
+**Configuração do ouvinte** de Eventos de replicação do AEM:
 
 * Os modos **de** execução, nos quais os eventos de replicação serão distribuídos aos ouvintes. Por exemplo, se definido como autor, esse é o sistema que &quot;iniciará&quot; a replicação.
 
@@ -49,7 +52,7 @@ As seguintes configurações OSGi (listadas de acordo com o pacote) são relevan
 
 **AEM Repository change listener** Configurar:
 
-* Os **Caminhos**, os locais para acompanhar os eventos do repositório prontos para distribuição.
+* Os **Caminhos**, os locais para acompanhar eventos de repositório prontos para distribuição.
 
 **Repositório** do cliente Sling CRX Configure o acesso ao repositório de conteúdo subjacente.
 
@@ -84,13 +87,13 @@ Para obter mais informações, consulte Registro [de AEM e Registro de](/help/si
 
 **Apache Sling Event Thread Pool** Configurar:
 
-* **Tamanho** mín. do pool e Tamanho **** máx. do pool, o tamanho do pool usado para armazenar threads de evento.
+* **Tamanho** mín. do pool e Tamanho **** máx. do pool, o tamanho do pool usado para armazenar threads do evento.
 
 * **Tamanho** da fila, o tamanho máximo da fila de encadeamento se o pool estiver esgotado.
 
    O valor recomendado é definido `-1` como ilimitado; se um limite for definido, as perdas podem ocorrer quando for excedido.
 
-* A alteração dessas configurações pode ajudar no desempenho em cenários com um grande número de eventos; por exemplo, uso intenso do AEM DAM ou Fluxo de trabalho.
+* Alterar essas configurações pode ajudar no desempenho em cenários com um número elevado de eventos; por exemplo, uso intenso do AEM DAM ou Fluxo de trabalho.
 * Valores específicos do seu cenário devem ser estabelecidos por meio de testes.
 * Essas configurações podem afetar o desempenho da sua instância, portanto, não as altere sem motivo e consideração.
 
@@ -109,7 +112,7 @@ Para obter mais informações, consulte Registro [de AEM e Registro de](/help/si
 
 Determinadas configurações podem afetar o desempenho; elas devem ser desativadas sempre que possível, principalmente para uma instância de produção.
 
-* VM **de** origem e VM **de** destino, defina a versão do JDK como a usada como JVM de tempo de execução
+* VM **de** origem e VM **de** Público alvo, defina a versão do JDK como a usada como JVM de tempo de execução
 
 * para instâncias de produção:
 
@@ -119,13 +122,13 @@ Determinadas configurações podem afetar o desempenho; elas devem ser desativad
 
 * **Pastas de instalação nomeiam regexp** e profundidade de hierarquia **máxima de pastas** de instalação - especifica onde e em que profundidade as pastas do repositório são pesquisadas para que os recursos sejam instalados. Quando um curinga é usado (como em .&amp;ast;/install) todas as correspondências apropriadas serão pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
 
-* **Caminho** de pesquisa, a lista de caminhos que o jcrinstall pesquisa os recursos a serem instalados, juntamente com um número que indica o fator de ponderação para esse caminho.
+* **Caminho** de pesquisa, lista de caminhos que se desinstalam procura recursos a serem instalados, juntamente com um número indicando o fator de ponderação para esse caminho.
 
-**Manipulador** de eventos de trabalho Apache Sling Configure parâmetros que gerenciam a programação de trabalhos:
+**Manipulador** de Eventos de Trabalho do Apache Sling Configure parâmetros que gerenciam a programação de tarefas:
 
-* **Intervalo** de tentativas, **Máximo de tentativas**, **Máximo de trabalhos** paralelos, Tempo **de espera de** reconhecimento, entre outros.
+* **Intervalo** de tentativas, Tentativas **** máximas, Trabalhos **paralelos** máximos, Tempo **de espera de** reconhecimento, entre outros.
 
-* A alteração dessas configurações pode melhorar o desempenho em cenários com um alto número de trabalhos; por exemplo, uso intenso do AEM DAM e fluxos de trabalho.
+* A alteração dessas configurações pode melhorar o desempenho em cenários com um alto número de trabalhos; por exemplo, uso intenso do AEM DAM e Workflows.
 * Valores específicos do seu cenário devem ser estabelecidos por meio de testes.
 * Não altere essas configurações sem motivo, só altere após a devida consideração.
 
@@ -158,7 +161,7 @@ Para obter mais informações, consulte Registro [de AEM e Registro de](/help/si
 
 * **Logger** para definir a categoria; por exemplo, registre apenas com.day.cq.
 
-* Usando Configurações **de** fábrica, qualquer número de configurações adicionais pode ser adicionado para atender aos vários níveis e categorias de log necessários.
+* Usando Configurações **de** fábrica, qualquer número de configurações adicionais pode ser adicionado para atender aos vários níveis de log e categorias necessários.
 * Essas configurações são úteis durante o desenvolvimento; por exemplo, para registrar mensagens TRACE de um serviço específico em um arquivo de log específico.
 * Essas configurações são úteis em um ambiente de produção; por exemplo, para que mensagens sobre um serviço específico sejam registradas em um arquivo de log individual para facilitar o monitoramento.
 
@@ -184,19 +187,19 @@ Para obter mais informações, consulte Registro [de AEM e Registro de](/help/si
 
 * **Tipos** MIME para adicionar os necessários ao seu projeto ao sistema. Isso permite que uma `GET` solicitação em um arquivo defina o cabeçalho correto do tipo de conteúdo para vincular o tipo de arquivo e o aplicativo.
 
-**Filtro** de referenciador Apache Sling Para resolver problemas de segurança conhecidos com o CSRF (Cross-Site Request Forgery) no CRX WebDAV e Apache Sling, é necessário configurar o filtro Referenciador.
+**Filtro** de Quem indicou Apache Sling Para resolver problemas de segurança conhecidos com o CSRF (Cross-Site Request Forgery) no CRX WebDAV e Apache Sling, é necessário configurar o filtro de Quem indicou.
 
-O serviço de filtro do referenciador é um serviço OSGi que permite configurar:
+O serviço de filtro de quem indicou é um serviço OSGi que permite configurar:
 
 * quais métodos http devem ser filtrados
-* se um cabeçalho de referenciador vazio é permitido
-* e uma lista branca de servidores a serem permitidos além do host do servidor.
+* se um cabeçalho de quem indicou vazio é permitido
+* e uma lista de servidores a ser permitida além do host do servidor.
 
 Consulte a Lista de verificação de [segurança - Problemas com falsificação](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de solicitação entre sites para obter mais detalhes.
 
 >[!NOTE]
 >
->O Filtro de referência Apache Sling depende da instalação de um pacote de correção rápida.
+>O Filtro de Quem indicou Apache Sling depende da instalação de um pacote de correção rápida.
 
 **Configuração do Registrador** de Solicitações do Apache Sling:
 
@@ -239,7 +242,7 @@ Para obter mais informações, consulte: [https://cwiki.apache.org/confluence/di
 
 Vários parâmetros podem ser definidos, incluindo:
 
-* **Os Caminhos** de execução listam os caminhos para procurar scripts executáveis; ao configurar caminhos específicos, você pode limitar quais scripts podem ser executados. Se nenhum caminho estiver configurado, o padrão será usado ( `/` = raiz), isso permitirá a execução de todos os scripts.
+* **Caminhos** de execução lista os caminhos para procurar scripts executáveis; ao configurar caminhos específicos, você pode limitar quais scripts podem ser executados. Se nenhum caminho estiver configurado, o padrão será usado ( `/` = raiz), isso permitirá a execução de todos os scripts.
 
    Se um valor de caminho configurado terminar com uma barra, a subárvore inteira será pesquisada. Sem essa barra, o script só será executado se for uma correspondência exata.
 
@@ -300,12 +303,12 @@ Ao usar grupos [de usuários](/help/sites-administering/cug.md) fechados, você 
 
 **Verificação de serviço** do Verificador de links CQ de dia e, se necessário, configure:
 
-* **Período** do Agendador para definir o intervalo no qual os links externos devem ser verificados automaticamente.
+* **Período** do Scheduler para definir o intervalo no qual os links externos devem ser verificados automaticamente.
 
 * Verifique o Intervalo **de tolerância de link** incorreto para o período após o qual um link externo malsucedido é considerado incorreto.
 * **Padrões** de substituição de verificação de link para definir quaisquer caminhos a serem excluídos da verificação de link.
 
-**Tarefa** do Verificador de links CQ de dia Defina as configurações de uma única tarefa do verificador de links (uma tarefa que verifica um link externo):
+**Tarefa** do verificador de links CQ de dia Defina as configurações de uma única tarefa do verificador de links (uma tarefa que verifica um link externo):
 
 * Verifique os intervalos definidos em Intervalo **de teste de link** bom e Intervalo de teste de link **incorreto**
 
@@ -317,7 +320,7 @@ Ao usar grupos [de usuários](/help/sites-administering/cug.md) fechados, você 
 
 **Configuração do mapeamento** raiz do Day CQ:
 
-* **Caminho** do Target para definir para onde uma solicitação para &quot; `/`&quot; será redirecionada.
+* **Caminho** do Público alvo para definir para onde uma solicitação para &quot; `/`&quot; será redirecionada.
 
 Há [duas interfaces de usuário](/help/sites-authoring/select-ui.md) disponíveis no AEM:
 
@@ -326,13 +329,13 @@ Há [duas interfaces de usuário](/help/sites-authoring/select-ui.md) disponíve
 
 Usando o Mapeamento raiz do AEM, você pode configurar a interface que deseja ter como padrão para sua instância:
 
-* Para que a interface otimizada ao toque seja a interface padrão, o Caminho **do** Target deve apontar para:
+* Para que a interface otimizada ao toque seja a interface padrão, o Caminho **do** Público alvo deve apontar para:
 
    ```
       /projects.html
    ```
 
-* Para ter a interface clássica como a interface padrão, o Caminho **do** Target deve apontar para:
+* Para ter a interface clássica como a interface padrão, o Caminho **do** Público alvo deve apontar para:
 
    ```
       /welcome.html
@@ -348,7 +351,8 @@ Várias propriedades de configuração estão disponíveis:
 
 * **Caminho** Caminho para o qual o manipulador de autenticação está ativo. Se esse parâmetro for deixado em branco, o manipulador de autenticação será desativado. Por exemplo, o caminho / faz com que o manipulador de autenticação seja usado para todo o repositório.
 
-* **O valor de classificação de serviço** OSGi Framework é usado para indicar a ordem usada para chamar esse serviço. Esse é um `int` valor em que valores mais altos designam precedência mais alta.
+* **O valor de classificação de serviço** OSGi Framework é usado para indicar a ordem usada para chamar esse serviço. Isto é um 
+`int` quando valores mais altos designam precedência mais alta.
 
    O valor padrão é `0`.
 
@@ -358,12 +362,13 @@ Várias propriedades de configuração estão disponíveis:
 
 * **Nomes** de parâmetros O nome dos parâmetros de solicitação que podem fornecer a ID do usuário.
 
-* **Mapa** de usuário Para usuários selecionados, o nome de usuário extraído da solicitação HTTP pode ser substituído por outro no objeto de credenciais. O mapeamento é definido aqui. Se o nome de usuário `admin` for exibido em ambos os lados do mapa, o mapeamento será ignorado. Lembre-se de que o caractere &quot;=&quot; deve ser escapado com um &quot;\&quot; à esquerda.
+* **Mapa** de usuário Para usuários selecionados, o nome de usuário extraído da solicitação HTTP pode ser substituído por outro no objeto de credenciais. O mapeamento é definido aqui. Se o nome do usuário 
+`admin` for exibido em ambos os lados do mapa, o mapeamento será ignorado. Lembre-se de que o caractere &quot;=&quot; deve ser escapado com um &quot;\&quot; à esquerda.
 
 * **Formato** Indica o formato no qual a ID de usuário é fornecida. Uso:
 
    * `Basic` se a ID do usuário estiver codificada no formato HTTP Basic Authentication
-   * `AsIs` se a ID do usuário for fornecida em texto sem formatação ou qualquer expressão regular aplicada, o valor deve ser usado como está ou como qualquer expressão regular
+   * `AsIs` se a ID do usuário for fornecida em texto simples ou qualquer valor aplicado de expressão regular deve ser usado como está ou em qualquer expressão regular
 
 **Filtro** de Depuração do WCM CQ de Diaútil ao desenvolver, pois permite o uso de sufixos como ?debug=layout ao acessar uma página. Por exemplo, http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornecerá informações de layout que podem ser de interesse para o desenvolvedor.
 
@@ -414,7 +419,7 @@ Várias propriedades de configuração estão disponíveis:
 
 **Controle do Day CQ WCM Version Manager** se, e como, as versões são gerenciadas no seu sistema:
 
-* **Criar versão na ativação**, ativada em uma instalação padrão
+* **Criar versão na Ativação**, ativada em uma instalação padrão
 * **Ativar Expurgação**
 
 * **Expurgar caminhos**, os caminhos que uma ação de pesquisa procurará
