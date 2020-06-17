@@ -8,17 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 14%
+source-wordcount: '820'
+ht-degree: 15%
 
 ---
 
 
 # Gerar pré-visualização HTML5 de um formulário XDP {#generate-html-preview-of-an-xdp-form}
 
-Ao projetar um formulário no AEM Forms Designer, além de visualizar a execução em PDF de um formulário, também é possível pré-visualização uma execução HTML5 dele. Você pode usar a guia HTML **de** Pré-visualização para pré-visualização de um formulário como ele apareceria em um navegador.
+Ao projetar um formulário no AEM Forms Designer, além de visualizar a execução em PDF de um formulário, também é possível pré-visualização uma execução em HTML5 dele. Você pode usar a guia HTML **de** Pré-visualização para pré-visualização de um formulário como ele apareceria em um navegador.
 
 ## Ativar Pré-visualização HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
 
@@ -26,23 +26,23 @@ Para permitir que o Designer gere pré-visualizações HTML de formulários XDP,
 
 * Configurar o serviço de autenticação Apache Sling
 * Desativar modo protegido
-* Fornecer detalhes do servidor do AEM Forms
+* Fornecer detalhes do servidor AEM Forms
 
 ### Configurar o serviço de autenticação Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Vá para https://[*server*]:[*port*]/system/console/configMgr no AEM Forms executado em OSGi ou
+1. Ir para `https://[server]:[port]/system/console/configMgr` AEM Forms em execução no OSGi ou
 
-   https://[*server*]:[*port*]/lc/system/console/configMgr no AEM Forms executado em JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` em AEM Forms em execução no JEE.
 
 1. Localize e clique em **Apache Sling Authentication Service** configuration para abri-la no modo de edição.
 
-1. Dependendo de você estar executando o AEM Forms em OSGi ou JEE, adicione o seguinte no campo Requisitos **de** autenticação:
+1. Dependendo de se você estiver executando AEM Forms em OSGi ou JEE, adicione o seguinte no campo Requisitos **de** autenticação:
 
-   * AEM Forms em JEE
+   * AEM Forms no JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
-   * Formulários AEM no OSGi
+   * AEM Forms no OSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
@@ -60,29 +60,29 @@ Por padrão, o modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido
 
 1. Faça logon no console da Web do AEM como administrador.
 
-   * O URL para AEM Forms no OSGi é https://[server]:[port]/system/console/configMgr
-   * O URL para AEM Forms no JEE é https://[*server*]:[*port*]/lc/system/console/configMgr
+   * O URL para AEM Forms no OSGi é `https://[server]:[port]/system/console/configMgr`
+   * O URL para AEM Forms no JEE é `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Abra Configurações **[!UICONTROL de formulários]** móveis para edição.
 1. Desmarque a opção Modo **** protegido e clique em **[!UICONTROL Salvar]**.
 
-### Fornecer detalhes do servidor do AEM Forms {#provide-details-of-aem-forms-server}
+### Fornecer detalhes do servidor AEM Forms {#provide-details-of-aem-forms-server}
 
 1. No Designer, vá para **Ferramentas** > **Opções**.
 1. Na janela Opções, selecione a página Opções **do** servidor, forneça os detalhes a seguir e clique em **OK**.
 
-   * **URL** do servidor: URL do servidor do AEM Forms.
+   * **URL** do servidor: URL do servidor AEM Forms.
    * **Número** da porta HTTP: Porta do servidor AEM. O valor padrão é 4502.
    * **Contexto de Pré-visualização HTML:** Caminho do perfil para renderizar formulários XFA. Os perfis padrão a seguir são usados para pré-visualização do formulário no Designer. No entanto, também é possível especificar um caminho para um perfil personalizado.
 
-      * `/content/xfaforms/profiles/default.html` (Formulários AEM no OSGi)
-      * `/lc/content/xfaforms/profiles/default.html` (Formulários AEM em JEE)
+      * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
+      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
    * **Contexto do Gerenciador de Formulários:** Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
 
-      * `/aem/forms` (Formulários AEM no OSGi)
-      * `/lc/forms` (Formulários AEM em JEE)
+      * `/aem/forms` (AEM Forms no OSGi)
+      * `/lc/forms` (AEM Forms no JEE)
 
-   **Observação:** *Verifique se o servidor do AEM Forms está ativo e em execução. The HTML preview connects to the CRX server to* generate *a preview.*
+   **Observação:** *Verifique se o servidor AEM Forms está ativo e em execução. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Opções do AEM Forms Designer ](assets/server_options.png)
 
@@ -114,6 +114,6 @@ Testar seu formulário usando uma fonte de dados de amostra garante que os dados
 
 ## Formulários de Pré-visualização localizados em um repositório {#html-preview-of-forms-in-forms-manager}
 
-No AEM Forms, é possível pré-visualização de formulários e documentos em um repositório. A Pré-visualização ajuda a saber exatamente como os formulários se parecem e se comportam conforme serão usados pelos usuários finais.
+Em AEM Forms, você pode pré-visualização formulários e documentos em um repositório. A Pré-visualização ajuda a saber exatamente como os formulários se parecem e se comportam conforme serão usados pelos usuários finais.
 
 [**Entre em contato com o suporte **](https://www.adobe.com/account/sign-in.supportportal.html)
