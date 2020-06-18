@@ -1,17 +1,20 @@
 ---
 title: Guia do usuário para implantação do AEM 6.4
 seo-title: Guia do usuário para implantação do AEM 6.4
-description: 'Este guia cobre todas as tarefas de implantação do AEM, como instalar e implantar o AEM. '
-seo-description: 'Abrange todas as tarefas de implantação do AEM, como instalar e implantar o AEM. '
+description: 'Este guia aborda todas as tarefas de implantação do AEM, como a instalação e a implantação do AEM. '
+seo-description: 'Abrange todas as tarefas de implantação do AEM, como a instalação e a implantação do AEM. '
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 22%
 
 ---
 
 
 # Guia do usuário para implantação do AEM 6.4
 
-Este guia cobre todas as tarefas de implantação do AEM, como instalar e implantar o AEM.
+Este guia aborda todas as tarefas de implantação do AEM, como a instalação e a implantação do AEM.
 
 ## Principais artigos do AEM
 
@@ -31,7 +34,7 @@ Este guia cobre todas as tarefas de implantação do AEM, como instalar e implan
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface clássica do usuário. |
-| [Guia do usuário do Screens](/help/screens/home.md) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Implantação do Guia do Usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância do AEM. |
 | [Gerenciamento do Guia do Usuário](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do AEM com êxito. |
@@ -41,10 +44,10 @@ Este guia cobre todas as tarefas de implantação do AEM, como instalar e implan
 ## Principais recursos do AEM
 
 * [Tutoriais do AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [Guia do usuário HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guia do usuário Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.htmlhttps://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)
+* [Guia do usuário HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
+* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
