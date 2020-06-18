@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 ## Introdução {#introduction}
 
-A descarga distribui as tarefas de processamento, incluindo as instâncias do Experience Manager em uma topologia. Com a descarga, você pode usar instâncias específicas do Experience Manager para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
+A descarga distribui tarefas de processamento que somam instâncias de Experience Manager em uma topologia. Com o descarregamento, você pode usar instâncias de Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
 
-A descarga é baseada nos recursos [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Para usar a descarga, adicione clusters do Experience Manager a uma topologia e identifique os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias do Experience Manager, de modo que uma única instância é considerada um cluster.
+A descarga é baseada nos recursos [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Para usar a descarga, adicione clusters de Experience Manager a uma topologia e identifique os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias Experience Manager, de modo que uma única instância é considerada um cluster.
 
 Para obter informações sobre como adicionar instâncias a uma topologia, consulte [Administração de topologias](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -32,7 +35,7 @@ O Sling JobManager e o JobConsumer permitem a criação de jobs que são process
 * JobManager: Um serviço que cria empregos para tópicos específicos.
 * JobConsumer: Um serviço que executa trabalhos de um ou mais tópicos. Vários serviços JobConsumer podem ser registrados para o mesmo tópico.
 
-Quando o JobManager cria um job, a estrutura de Descarregamento seleciona um cluster do Experience Manager na topologia para executar o job:
+Quando o JobManager cria um job, a estrutura de Descarregamento seleciona um cluster Experience Manager na topologia para executar o job:
 
 * O cluster deve incluir uma ou mais instâncias que estejam executando um JobConsumer registrado para o tópico do trabalho.
 * O tópico deve ser ativado para pelo menos uma instância no cluster.
@@ -51,9 +54,9 @@ Após a criação de um cargo, a carga fica apenas garantida na instância que c
 
 ## Administração de topologias {#administering-topologies}
 
-As topologias são clusters do Experience Manager que estão participando da descarga em conjunto. Um cluster consiste em uma ou mais instâncias de servidor do Experience Manager (uma única instância é considerada um cluster).
+As topologias são clusters de Experience Manager que estão participando da descarga. Um cluster consiste em uma ou mais instâncias de servidor de Experience Manager (uma única instância é considerada um cluster).
 
-Cada instância do Experience Manager executa os seguintes serviços relacionados à descarga:
+Cada instância de Experience Manager executa os seguintes serviços relacionados à descarga:
 
 * Serviço de descoberta: Envia solicitações para um Conector de topologia para unir a topologia.
 * Conector de topologia: Recebe as solicitações de ingresso e aceita ou recusa cada solicitação.
@@ -72,7 +75,7 @@ Para cada cluster, você verá uma lista de membros do cluster que indica a orde
 
 Para cada instância do cluster, é possível ver várias propriedades relacionadas à topologia:
 
-* Uma lista de tópicos para o consumidor de trabalho do exemplo.
+* Uma lista de permissão de tópicos para o consumidor de trabalho da instância.
 * Os pontos finais expostos para conexão com a topologia.
 * Os tópicos da tarefa para os quais a instância está registrada para descarregamento.
 * Os tópicos da tarefa que a instância processa.
@@ -85,13 +88,13 @@ Para cada instância do cluster, é possível ver várias propriedades relaciona
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Clique em um cluster para ver uma lista das instâncias no cluster e sua ID, status atual e status de líder.
+1. Clique em um cluster para ver uma lista das instâncias no cluster e sua ID, status atual e status de pontilhado.
 1. Clique em uma ID de instância para ver as propriedades mais detalhadas.
 
-Você também pode usar o Console da Web para exibir informações de topologia. O console fornece mais informações sobre os clusters de topologia:
+Você também pode usar o Console da Web para obter informações sobre topologia de visualização. O console fornece mais informações sobre os clusters de topologia:
 
 * Qual instância é a instância local.
-* Os serviços do Topology Connector que esta instância usa para se conectar à topologia (de saída) e aos serviços que se conectam a esta instância (de entrada).
+* Os serviços do Conector de topologia que esta instância usa para se conectar à topologia (de saída) e aos serviços que se conectam a essa instância (de entrada).
 * Alterar histórico das propriedades de topologia e instância.
 
 Use o seguinte procedimento para abrir a página Gerenciamento de topologia do Console da Web:
@@ -103,12 +106,12 @@ Use o seguinte procedimento para abrir a página Gerenciamento de topologia do C
 
 ### Configuração da associação à topologia {#configuring-topology-membership}
 
-O Apache Sling Resource-Based Discovery Service é executado em cada instância para controlar como as instâncias do Experience Manager interagem com uma topologia.
+O serviço de descoberta baseado em recursos do Apache Sling é executado em cada instância para controlar como as instâncias do Experience Manager interagem com uma topologia.
 
 O serviço Discovery envia solicitações POST periódicas (pulsações) aos serviços do Topology Connector para estabelecer e manter conexões com a topologia. O serviço Topology Connector mantém uma lista de permissões de endereços IP ou nomes de host que podem participar da topologia:
 
 * Para unir uma instância a uma topologia, especifique o URL do serviço Conector de topologia do membro raiz.
-* Para permitir que uma instância participe de uma topologia, adicione a instância à lista de permissões do serviço Conector de topologia do membro raiz.
+* Para permitir que uma instância participe de uma topologia, adicione a instância à lista de permissões do serviço do Conector de Topologia do membro raiz.
 
 Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes propriedades do serviço org.apache.sling.detection.impt.Config:
 
@@ -133,7 +136,7 @@ Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
    <td>15</td> 
   </tr> 
   <tr> 
-   <td>Atraso mínimo de evento (segundos)</td> 
+   <td>Atraso mínimo no Evento (segundos)</td> 
    <td>minEventDelay</td> 
    <td><p>Quando uma alteração ocorre na topologia, o tempo necessário para atrasar a alteração de estado de TOPOLOGY_CHANGING para TOPOLOGY_CHANGED. Cada alteração que ocorre quando o estado é TOPOLOGY_CHANGING aumenta o atraso nessa quantidade de tempo.</p> <p>Esse atraso impede que os ouvintes sejam inundados com eventos. </p> <p>Para não usar atraso, especifique 0 ou um número negativo.</p> </td> 
    <td>3</td> 
@@ -145,7 +148,7 @@ Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>Lista de permissões do conector de topologia</td> 
+   <td>Lista de permissões do Conector de topologia</td> 
    <td>topologyConnectorWhitelist</td> 
    <td>A lista de endereços IP ou nomes de host que o serviço local do Topology Connector permite na topologia. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -166,16 +169,16 @@ Use o procedimento a seguir para conectar uma instância do CQ ao membro raiz de
 1. Clique em Configurar serviço de descoberta.
 1. Adicione um item à propriedade URLs do conector de topologia e especifique o URL do serviço do conector de topologia raiz. O URL está no formato https://rootservername:4502/libs/sling/topology/connector.
 
-Execute o seguinte procedimento no membro raiz da topologia. O procedimento adiciona os nomes dos outros membros da topologia à lista de permissões do serviço de descoberta.
+Execute o seguinte procedimento no membro raiz da topologia. O procedimento adiciona os nomes dos outros membros da topologia à lista de permissões do Discovery Service.
 
 1. Abra o Console da Web em seu navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Clique em Principal > Gerenciamento de topologia.
 1. Clique em Configurar serviço de descoberta.
-1. Para cada membro da topologia, adicione um item à propriedade Lista de permissões do conector de topologia e especifique o nome do host ou endereço IP do membro da topologia.
+1. Para cada membro da topologia, adicione um item à propriedade de lista de permissão do Conector de topologia e especifique o nome do host ou endereço IP do membro da topologia.
 
 ## Configuração do consumo de tópicos {#configuring-topic-consumption}
 
-Use o navegador de descarga para configurar o consumo de tópicos das instâncias do Experience Manager na topologia. Para cada instância, é possível especificar os tópicos que ela consome. Por exemplo, para configurar sua topologia de forma que somente uma instância consuma tópicos de um tipo específico, desative o tópico em todas as instâncias, exceto uma.
+Use o navegador de descarga para configurar o consumo de tópicos das instâncias de Experience Manager na topologia. Para cada instância, é possível especificar os tópicos que ela consome. Por exemplo, para configurar sua topologia de forma que somente uma instância consuma tópicos de um tipo específico, desative o tópico em todas as instâncias, exceto uma.
 
 Os trabalhos são instâncias distribuídas de quantidade que têm o tópico associado ativado usando a lógica round-robin.
 
@@ -197,32 +200,32 @@ Os trabalhos são instâncias distribuídas de quantidade que têm o tópico ass
    * Ativado: Esta instância consome trabalhos deste tópico.
    * Desativado: Esta instância não consome trabalhos deste tópico.
    * Exclusivo: Essa instância consome trabalhos apenas deste tópico.
-   **** Observação: Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
+   **Observação:** Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
 
 ### Consumidores de trabalho instalados {#installed-job-consumers}
 
-Várias implementações do JobConsumer são instaladas com o Experience Manager. Os tópicos para os quais esses Consumidores de trabalho estão registrados aparecem no Navegador de descarga. Os tópicos adicionais que aparecem são aqueles que JobConsumers personalizados registraram. A tabela a seguir descreve o JobConsumers padrão.
+Várias implementações do JobConsumer são instaladas com o Experience Manager. Os tópicos para os quais esses Consumidores de trabalho estão registrados são exibidos no Navegador de descarga. Os tópicos adicionais que aparecem são aqueles que JobConsumers personalizados registraram. A tabela a seguir descreve o JobConsumers padrão.
 
 | Tópico do trabalho | PID do serviço | Descrição |
 |---|---|---|
-| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos que o administrador de eventos OSGi gera para compatibilidade com versões anteriores. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos que o administrador do evento OSGi gera para compatibilidade com versões anteriores. |
 | com/day/cq/Replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
 | com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Processa trabalhos que o fluxo de trabalho do DAM Update Asset Offloader gera. |
 
 ### Desativar e ativar tópicos para uma instância {#disabling-and-enabling-topics-for-an-instance}
 
-O serviço Gerenciador de consumidor de trabalho do Apache Sling fornece propriedades de lista de permissões e de negação de tópicos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
+O serviço Apache Sling Job Consumer Manager fornece propriedades de lista de tópicos e lista de blocos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
 
-**** Observação: Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar tópicos.
+**Observação:** Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar tópicos.
 
-A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove tópicos que estão na lista negra.Por padrão, todos os tópicos estão ativados (o valor da lista de permissões é `*`) e nenhum tópico está desativado (a lista negra não tem valor).
+A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissão e, em seguida, remove tópicos que estão na lista de blocos.Por padrão, todos os tópicos estão ativados (o valor da lista de permissão é `*`) e nenhum tópico está desativado (a lista de blocos não tem valor).
 
-Use o Console da Web ou um `sling:OsgiConfig` nó para configurar as seguintes propriedades. Para `sling:OsgiConfig` nós, o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.event.impl.jobs.JobConsumerManager.
+Use o Console da Web ou um `sling:OsgiConfig` nó para configurar as seguintes propriedades. Para `sling:OsgiConfig` nós, o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.evento.impl.jobs.JobConsumerManager.
 
 | Nome da propriedade no console da Web | ID do OSGi | Descrição |
 |---|---|---|
 | Lista de permissões do tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço local do JobManager processa. O valor padrão do &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
-| Lista negra de tópicos | job.consumermanager.blacklist | Uma lista de tópicos que o serviço JobManager local não processa. |
+| Lista negra de tópicos | job.consumermanager.blacklist | Uma lista de tópicos que o serviço local do JobManager não processa. |
 
 ## Criação De Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
 
@@ -230,7 +233,7 @@ A estrutura de descarga usa replicação para transportar recursos entre o autor
 
 >[!CAUTION]
 >
->Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação. Siga o procedimento em [Problemas usando os agentes](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) de replicação gerados automaticamente antes de criar os agentes para descarga.
+>Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação. Siga o procedimento em [Problemas ao usar os agentes](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) de replicação gerados automaticamente antes de criar os agentes para descarga.
 
 Crie os agentes de replicação que transportam cargas de trabalho entre instâncias para descarregamento. A ilustração a seguir mostra os agentes que devem ser descarregados do autor para uma instância de trabalho. O autor tem uma Sling ID de 1 e a instância do trabalhador tem uma Sling ID de 2:
 
@@ -277,8 +280,8 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Configurações > Tipo de serialização | Padrão |
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Usuário de transporte | Usuário de replicação na instância de destino |
-   | Transporte > Senha de transporte | Senha do usuário de replicação na instância de destino |
+   | Transporte > Usuário de transporte | Usuário de replicação na instância do público alvo |
+   | Transporte > Senha de transporte | Senha do usuário de replicação na instância do público alvo |
    | Estendido > Método HTTP | POSTAGEM |
    | Acionadores > Ignorar padrão | Verdadeiro |
 
@@ -291,8 +294,8 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Configurações > Tipo de serialização | Padrão |
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Usuário de transporte | Usuário de replicação na instância de destino |
-   | Transporte > Senha de transporte | Senha do usuário de replicação na instância de destino |
+   | Transporte > Usuário de transporte | Usuário de replicação na instância do público alvo |
+   | Transporte > Senha de transporte | Senha do usuário de replicação na instância do público alvo |
    | Estendido > Método HTTP | GET |
 
 ### Criação do agente da caixa de saída {#creating-the-outbox-agent}
@@ -308,7 +311,7 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Localizando a ID de Sling {#finding-the-sling-id}
 
-Obtenha a Sling ID de uma instância do Experience Manager usando um dos seguintes métodos:
+Obtenha a Sling ID de uma instância Experience Manager usando um dos seguintes métodos:
 
 * Abra o Console da Web e, nas Configurações Sling, localize o valor da propriedade Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Esse método é útil se a instância ainda não fizer parte da topologia.
 * Use o navegador Topologia se a instância já fizer parte da topologia.
@@ -321,14 +324,14 @@ Por padrão, o Experience Manager executa o fluxo de trabalho Atualizar ativo DA
 
 >[!CAUTION]
 >
->Nenhum fluxo de trabalho deve ser temporário quando usado com a descarga do fluxo de trabalho. Por exemplo, o fluxo de trabalho Atualizar ativo DAM não deve ser temporário quando usado para descarregamento de ativos. Para definir/desdefinir o sinalizador transitório em um fluxo de trabalho, consulte Fluxos de trabalho [transitórios](/help/assets/performance-tuning-guidelines.md#workflows).
+>Nenhum fluxo de trabalho deve ser temporário quando usado com a descarga do fluxo de trabalho. Por exemplo, o fluxo de trabalho Atualizar ativo do DAM não deve ser temporário quando usado para descarregamento de ativos. Para definir/desdefinir o sinalizador transitório em um fluxo de trabalho, consulte Workflows [](/help/assets/performance-tuning-guidelines.md#workflows)transitórios.
 
 O procedimento a seguir assume as seguintes características para a topologia de descarga:
 
-* Uma ou mais instâncias do Experience Manager estão criando instâncias com as quais os usuários interagem para adicionar ou atualizar ativos DAM.
-* Os usuários não devem interagir diretamente com uma ou mais instâncias do Experience Manager que processam os ativos DAM. Essas instâncias são dedicadas ao processamento em segundo plano de ativos DAM.
+* Uma ou mais instâncias de Experience Manager estão criando instâncias com as quais os usuários interagem para adicionar ou atualizar ativos DAM.
+* Os usuários não devem interagir diretamente com uma ou mais instâncias de Experience Manager que processam os ativos DAM. Essas instâncias são dedicadas ao processamento em segundo plano de ativos DAM.
 
-1. Em cada instância do Experience Manager, configure o Discovery Service para que aponte para o Topography Connector raiz. (Consulte [Configuração da associação](#title4)de topologia.)
+1. Em cada instância de Experience Manager, configure o serviço Discovery para que aponte para o conector Topografia raiz. (Consulte [Configuração da associação](#title4)de topologia.)
 1. Configure o Conector de Topografia raiz para que as instâncias de conexão estejam na lista de permissões.
 1. Abra o navegador de descarga e desative o `com/adobe/granite/workflow/offloading` tópico nas instâncias com que os usuários interagem para carregar ou alterar ativos do DAM.
 
@@ -338,8 +341,8 @@ O procedimento a seguir assume as seguintes características para a topologia de
 
    1. Abra o console Fluxo de trabalho.
    1. Clique na guia Iniciador.
-   1. Localize as duas configurações do Iniciador que executam o fluxo de trabalho do Ativo de atualização do DAM. Um tipo de evento de configuração do iniciador é Nó Criado e o outro tipo é Nó Modificado.
-   1. Altere ambos os tipos de evento para que eles executem o fluxo de trabalho de Descarregamento de ativos de atualização de DAM. (Para obter informações sobre configurações de iniciador, consulte [Iniciando fluxos de trabalho quando nós mudarem](/help/sites-administering/workflows-starting.md).)
+   1. Localize as duas configurações do Iniciador que executam o fluxo de trabalho do Ativo de atualização do DAM. Um tipo de evento de configuração do iniciador é Nó criado e o outro tipo é Nó modificado.
+   1. Altere ambos os tipos de evento para que eles executem o fluxo de trabalho de Descarregamento de ativos de atualização de DAM. (Para obter informações sobre configurações de iniciador, consulte [Iniciar Workflows quando os nós mudarem](/help/sites-administering/workflows-starting.md).)
 
 1. Nas instâncias que executam o processamento em segundo plano de ativos DAM, desative os iniciadores de fluxo de trabalho que executam o fluxo de trabalho do Ativo de atualização DAM.
 
