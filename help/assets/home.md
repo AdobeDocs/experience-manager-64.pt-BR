@@ -1,15 +1,18 @@
 ---
 title: Guia do usuário do AEM 6.4 Assets
-description: Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
+description: Este guia abrange todas as tarefas AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 23%
 
 ---
 
 
 # Guia do usuário do AEM 6.4 Assets
 
-Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
+Este guia abrange todas as tarefas AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
 
 ## Principais artigos do AEM
 
@@ -28,7 +31,7 @@ Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer 
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface clássica do usuário. |
-| [Guia do usuário do Screens](/help/screens/home.md) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Implantação do Guia do Usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância do AEM. |
 | [Gerenciamento do Guia do Usuário](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do AEM com êxito. |
@@ -38,10 +41,10 @@ Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer 
 ## Principais recursos do AEM
 
 * [Tutoriais do AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [Guia do usuário HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guia do usuário Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.htmlhttps://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)
+* [Guia do usuário HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
+* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
