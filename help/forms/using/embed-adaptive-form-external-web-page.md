@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -20,16 +20,16 @@ ht-degree: 0%
 
 Saiba como incorporar um formulário adaptável em uma página da Web externa
 
-Você pode [Incorporar um formulário adaptável na página do AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou em uma página da Web hospedada fora do AEM. O formulário adaptativo incorporado está totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ajuda o usuário a permanecer no contexto de outros elementos na página da Web e a interagir simultaneamente com o formulário.
+Você pode [Incorporar formulário adaptável na página AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou em uma página da Web hospedada fora do AEM. O formulário adaptativo incorporado está totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ajuda o usuário a permanecer no contexto de outros elementos na página da Web e a interagir simultaneamente com o formulário.
 
 ## Pré-requisitos {#prerequisites}
 
 Execute as seguintes etapas antes de incorporar um formulário adaptável a um site externo:
 
-* Publique o formulário adaptável na instância de publicação de AEM.
+* Publique o formulário adaptável na instância AEM Publish.
 * Crie ou identifique uma página da Web em seu site para hospedar o formulário adaptável. Certifique-se de que a página da Web possa [ler arquivos jQuery de um CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) ou tenha uma cópia local do jQuery incorporada. jQuery é necessário para renderizar um formulário adaptável.
 * Quando o servidor AEM e a página da Web estiverem em domínios diferentes, execute as etapas listadas na seção, [ative o AEM Forms para fornecer formulários adaptáveis a um site](#cross-domain-sites)entre domínios.
-* [Configure o proxy](#reveseproxy) reverso para ativar a comunicação entre a página externa e o servidor do AEM Forms.
+* [Configure o proxy](#reveseproxy) reverso para ativar a comunicação entre a página externa e o servidor de AEM Forms.
 
 ## Incorporar formulário adaptativo {#embed-adaptive-form}
 
@@ -114,7 +114,7 @@ O formulário adaptável é incorporado na página da Web. Observe o seguinte na
 * A ação Enviar configurada no formulário adaptável original é retida no formulário incorporado.
 * As regras de formulário adaptável são retidas e totalmente funcionais no formulário incorporado.
 * O direcionamento de experiência e os testes A/B configurados no formulário adaptativo original não funcionam no formulário incorporado.
-* Se o Adobe Analytics estiver configurado no formulário original, os dados de análise serão capturados no servidor do Adobe Analytics. No entanto, ele não está disponível no relatório de análise do Forms.
+* Se o Adobe Analytics estiver configurado no formulário original, os dados de análise serão capturados no servidor Adobe Analytics. No entanto, ele não está disponível no relatório de análise do Forms.
 
 ## Proxy reverso da configuração  {#reveseproxy}
 
@@ -155,19 +155,19 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Se você configurar qualquer outra topologia, certifique-se de adicionar a lista de permissão Enviar, Preencher e outros URLs na camada do dispatcher.
+>Se você configurar qualquer outra topologia, adicione os URLs de envio, preenchimento prévio e outros à lista permitida na camada do despachante.
 
 ## Best practices {#best-practices}
 
 Ao incorporar um formulário adaptável em uma página da Web, considere as seguintes práticas recomendadas:
 
-* Certifique-se de que as regras de estilização definidas na página da Web CSS não entrem em conflito com o objeto de formulário CSS. Para evitar conflitos, é possível reutilizar a página da Web CSS no tema do formulário adaptável usando a biblioteca do cliente AEM. Para obter informações sobre como usar a biblioteca do cliente em temas de formulário adaptáveis, consulte [Temas no AEM Forms](/help/forms/using/themes.md).
+* Certifique-se de que as regras de estilização definidas na página da Web CSS não entrem em conflito com o objeto de formulário CSS. Para evitar conflitos, é possível reutilizar a página da Web CSS no tema do formulário adaptável usando a biblioteca do cliente AEM. Para obter informações sobre como usar a biblioteca do cliente em temas de formulário adaptáveis, consulte [Temas em AEM Forms](/help/forms/using/themes.md).
 * Faça com que o container de formulário na página da Web use toda a largura da janela. Isso garante que as regras de CSS configuradas para dispositivos móveis funcionem sem alterações. Se o container de formulário não tiver a largura total da janela, será necessário gravar um CSS personalizado para fazer com que o formulário se adapte a diferentes dispositivos móveis.
 * Use a API [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) para obter a representação XML ou JSON dos dados do formulário no cliente.
 * Use a API [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) para descarregar o formulário adaptável do DOM HTML.
 * Configure o cabeçalho access-control-origem ao enviar resposta do servidor AEM.
 
-## Ativar o AEM Forms para servir formulários adaptáveis a um site entre domínios  {#cross-domain-sites}
+## Permitir que os AEM Forms disponibilizem formulários adaptáveis para um site entre domínios  {#cross-domain-sites}
 
 1. Na instância do autor de AEM, vá para Gerenciador de configuração do console da Web de AEM em `http://[server]:[port]/system/console/configMgr`.
 1. Localize e abra a configuração do Filtro de Quem indicou **** Apache Sling.
