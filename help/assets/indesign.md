@@ -1,9 +1,9 @@
 ---
-title: Integrar ativos AEM ao Adobe InDesign Server
-description: Saiba como integrar os ativos AEM ao InDesign Server.
+title: Integrar AEM Assets ao Adobe InDesign Server
+description: Saiba como integrar AEM Assets ao InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 5%
@@ -11,7 +11,7 @@ ht-degree: 5%
 ---
 
 
-# Integrar ativos AEM ao Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# Integrar AEM Assets ao Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
 Os ativos Adobe Experience Manager (AEM) usam:
 
@@ -20,7 +20,7 @@ Os ativos Adobe Experience Manager (AEM) usam:
 
 Podem abranger uma grande variedade de tarefas; por exemplo, usar um Adobe InDesign Server para processar arquivos.
 
-Para fazer upload completo de arquivos para os ativos AEM criados com o Adobe InDesign, um proxy é usado. Isso usa um funcionário proxy para se comunicar com o Adobe InDesign Server, onde [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) são executados para extrair metadados e gerar várias execuções para os ativos AEM. O trabalho proxy permite a comunicação bidirecional entre o InDesign Server e as instâncias do AEM em uma configuração em nuvem.
+Para fazer upload completo de arquivos para AEM Assets criados com o Adobe InDesign, um proxy é usado. Isso usa um funcionário proxy para se comunicar com o Adobe InDesign Server, onde [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) são executados para extrair metadados e gerar várias execuções para AEM Assets. O trabalho proxy permite a comunicação bidirecional entre o InDesign Server e as instâncias do AEM em uma configuração em nuvem.
 
 >[!NOTE]
 >
@@ -40,13 +40,13 @@ Para fazer upload completo de arquivos para os ativos AEM criados com o Adobe In
 
 ## Como a Extração funciona {#how-the-extraction-works}
 
-O InDesign Server pode ser integrado aos ativos AEM para que os arquivos criados com o InDesign ( `.indd`) possam ser carregados, as execuções geradas, *todas* as mídias extraídas (por exemplo, vídeo) e armazenados como ativos:
+O InDesign Server pode ser integrado a AEM Assets para que os arquivos criados com o InDesign ( `.indd`) possam ser carregados, as execuções geradas, *todas* as mídias extraídas (por exemplo, vídeo) e armazenados como ativos:
 
 >[!NOTE]
 >
 >As versões anteriores do AEM podiam extrair XMP e a miniatura, agora todas as mídias podem ser extraídas.
 
-1. Carregue seu `.indd` arquivo nos ativos AEM.
+1. Carregue seu `.indd` arquivo para o AEM Assets.
 1. Uma estrutura envia scripts de comando para o InDesign Server via SOAP (Simple Object Access Protocol).
 
    Esse script de comando:
@@ -57,7 +57,7 @@ O InDesign Server pode ser integrado aos ativos AEM para que os arquivos criados
       * A estrutura, o texto e quaisquer arquivos de mídia são extraídos.
       * Execuções de PDF e JPG são geradas.
       * Execuções HTML e IDML são geradas.
-   * Poste os arquivos resultantes de volta aos ativos AEM.
+   * Poste os arquivos resultantes de volta aos AEM Assets.
 
    >[!NOTE]
    >
@@ -72,15 +72,15 @@ O InDesign Server pode ser integrado aos ativos AEM para que os arquivos criados
 1. Após a geração de extração e execução:
 
    * A estrutura é replicada para um `cq:Page` (tipo de representação).
-   * O texto e os arquivos extraídos são armazenados nos ativos AEM.
-   * Todas as renderizações são armazenadas nos ativos AEM, no próprio ativo.
+   * O texto e os arquivos extraídos são armazenados em AEM Assets.
+   * Todas as representações são armazenadas em AEM Assets, no próprio ativo.
 
 ## Integração do InDesign Server com o AEM {#integrating-the-indesign-server-with-aem}
 
-Para integrar o InDesign Server para uso com os ativos AEM e após configurar seu proxy, é necessário:
+Para integrar o InDesign Server para uso com AEM Assets e depois de configurar seu proxy, é necessário:
 
 1. [Instale o InDesign Server](#installing-the-indesign-server).
-1. Se necessário, [configure o fluxo de trabalho](#configuring-the-aem-assets-workflow)dos ativos AEM.
+1. Se necessário, [configure o Fluxo de trabalho](#configuring-the-aem-assets-workflow)do AEM Assets.
 
    Isso só é necessário se os valores padrão não forem apropriados para sua instância.
 
@@ -110,7 +110,7 @@ Para instalar e start o InDesign Server para uso com o AEM:
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### Configuração do fluxo de trabalho dos ativos AEM {#configuring-the-aem-assets-workflow}
+### Configuração do fluxo de trabalho dos AEM Assets {#configuring-the-aem-assets-workflow}
 
 AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several process steps specifically for InDesign:
 
@@ -119,7 +119,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 Este fluxo de trabalho é configurado com valores padrão que podem ser adaptados para sua configuração nas várias instâncias do autor (este é um fluxo de trabalho padrão, portanto, mais informações estão disponíveis em [Editar um fluxo de trabalho](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Se você estiver usando os valores padrão (incluindo a porta SOAP), nenhuma configuração será necessária.
 
-Após a configuração, o upload de arquivos do InDesign para os ativos AEM (por qualquer um dos métodos habituais) acionará o fluxo de trabalho necessário para processar o ativo e preparar as várias renderizações. Teste sua configuração fazendo upload de um `.indd` arquivo para os ativos AEM para confirmar que você visualiza as diferentes execuções criadas pelo IDS em `<*your_asset*>.indd/Renditions`
+Após a configuração, o upload de arquivos do InDesign para AEM Assets (por qualquer um dos métodos habituais) acionará o fluxo de trabalho necessário para processar o ativo e preparar as várias execuções. Teste sua configuração carregando um `.indd` arquivo no AEM Assets para confirmar que você vê as diferentes execuções criadas pelo IDS em `<*your_asset*>.indd/Renditions`
 
 #### Extração de mídia {#media-extraction}
 
@@ -171,7 +171,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **Extraçã
 >
 >O trabalhador reside na instância do proxy.
 
-1. No console Ferramentas, expanda Configurações **[!UICONTROL de serviços em]** nuvem no painel esquerdo. Em seguida, expanda Configuração **[!UICONTROL de proxy da]** Cloud.
+1. No console Ferramentas, expanda Configurações **[!UICONTROL de]** Cloud Service no painel esquerdo. Em seguida, expanda Configuração **[!UICONTROL de proxy da]** Cloud.
 
 1. Clique duas vezes no **[!UICONTROL trabalhador IDS]** para abrir a configuração.
 
@@ -225,7 +225,7 @@ Para configurar o número de trabalhos de IDS paralelos:
 
    >[!NOTE]
    >
-   >Ao trabalhar com um pool de trabalhadores, você pode ativar a lista bloqueada de funcionários do IDS.
+   >Ao trabalhar com o pool de trabalhadores, você pode ativar a lista bloqueada de trabalhadores IDS.
    >
    >Para fazer isso, ative a caixa de seleção &quot;enable.retry.name&quot;, na `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuração, que ativa as tentativas de trabalho do IDS.
    >
@@ -233,7 +233,7 @@ Para configurar o número de trabalhos de IDS paralelos:
    >
    >Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o IDS worker é revalidado. Se o trabalhador estiver online, ele será removido da lista bloqueada.
 
-<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## Habilitar suporte para o Adobe InDesign Server 10.0 ou posterior {#enabling-support-for-indesign-server-or-higher}
@@ -248,7 +248,7 @@ Para o InDesign Server 10.0 ou superior, execute as seguintes etapas para habili
 >
 >Para [!DNL InDesign Server] integração com [!DNL Assets], use um processador multi-core porque o recurso de suporte de sessão necessário para a integração não é suportado em sistemas de núcleo único.
 
-## Configurar credenciais do Experience Manager {#configure-aem-credentials}
+## Configurar credenciais de Experience Manager {#configure-aem-credentials}
 
 Você pode alterar as credenciais padrão do administrador (nome de usuário e senha) para acessar o servidor do InDesign a partir da instância do AEM sem interromper a integração com o servidor do Adobe InDesign.
 
