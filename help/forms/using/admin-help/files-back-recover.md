@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ O aplicativo e os arquivos de dados que devem ser submetidos a backup são descr
 Considere os seguintes pontos em relação ao backup e à recuperação:
 
 * O backup do banco de dados deve ser feito antes do repositório GDS e AEM.
-* Se precisar desativar os nós em um ambiente clusterizado para backup, verifique se os nós escravos estão desligados antes do nó mestre. Caso contrário, pode levar a inconsistência no cluster ou servidor. Além disso, o nó mestre deve ser tornado ao vivo antes de qualquer nó escravo.
+* Se for necessário desativar os nós em um ambiente clusterizado para backup, verifique se os nós secundários foram desligados antes do nó primário. Caso contrário, pode levar a inconsistência no cluster ou servidor. Além disso, o nó primário deve ser ativado antes de qualquer nó secundário.
 * Para a operação de restauração de um cluster, o servidor de aplicativos deve ser interrompido para cada nó no cluster.
 
 ## Diretório global do Armazenamento do Documento {#global-document-storage-directory}
@@ -61,7 +61,7 @@ Quando você seleciona a opção &quot;Ativar armazenamento de documento no banc
 
 ## Repositório do AEM {#aem-repository}
 
-O repositório AEM (crx-repository) é criado se o repositório crx for configurado durante a instalação de formulários AEM. A localização do diretório crx-repository é determinada durante o processo de instalação dos formulários AEM. O backup e a restauração do repositório AEM são necessários juntamente com o banco de dados e o GDS para dados de formulários AEM consistentes em formulários AEM. O repositório do AEM contém dados para a Solução de gerenciamento de correspondência, o Gerenciador de formulários e a Área de trabalho de formulários do AEM.
+O repositório AEM (crx-repository) é criado se o repositório crx for configurado durante a instalação de formulários AEM. A localização do diretório crx-repository é determinada durante o processo de instalação dos formulários AEM. O backup e a restauração do repositório AEM são necessários juntamente com o banco de dados e o GDS para dados de formulários AEM consistentes em formulários AEM. O repositório AEM contém dados para a Solução de gerenciamento de correspondência, o Gerenciador de formulários e o AEM Forms Workspace.
 
 ### Solução de gerenciamento de correspondência {#correspondence-management-solution}
 
@@ -73,15 +73,15 @@ Uma configuração simples da Solução de gerenciamento de correspondência inc
 
 o Gerenciador de formulários simplifica o processo de atualização, gerenciamento e aposentadoria de formulários.
 
-### Espaço de trabalho do AEM Forms {#html-workspace}
+### Área de trabalho do AEM Forms {#html-workspace}
 
-O AEM Forms Workspace corresponde aos recursos do (Obsoleto para formulários AEM no JEE) Flex Workspace e adiciona novos recursos para estender e integrar o Workspace e torná-lo mais fácil de usar.
+A área de trabalho do AEM Forms corresponde aos recursos da área de trabalho flexível (obsoleta para formulários AEM no JEE) e adiciona novos recursos para estender e integrar a área de trabalho e torná-la mais fácil de usar.
 
 >[!NOTE]
 >
 >O Flex Workspace está obsoleto para a versão de formulários do AEM.
 
-Ele permite o gerenciamento de tarefas em clientes sem o Flash Player e o Adobe Reader. Ele facilita a execução de formulários HTML, além de formulários PDF e Flex.
+Ele permite o gerenciamento de tarefas em clientes sem o Flash Player e o Adobe Reader. Ele facilita a execução de formulários HTML, além de formulários PDF forms e Flex.
 
 ## Banco de dados de formulários AEM {#aem-forms-database}
 
@@ -141,7 +141,7 @@ Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco
 >
 >O modo de log binário padrão para MySQL é &quot;Instrução&quot;, o que é incompatível com tabelas usadas pelo Content Services (obsoleto). O uso do logon binário nesse modo padrão faz com que o Content Services (obsoleto) falhe. Se o seu sistema incluir o Content Services (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao file:*`binlog_format=mixed log-bin=logname`my.ini.
 
-Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, verifique se você start o servidor com a opção - conforme descrito na seção anterior `log-bin` . Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. É possível forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` comando, que cria o próximo arquivo de log.
+Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, certifique-se de start do servidor com a opção - conforme descrito na seção anterior `log-bin` . Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. É possível forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` comando, que cria o próximo arquivo de log.
 
 Consulte Resumo [da estratégia de](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html)backup.
 
