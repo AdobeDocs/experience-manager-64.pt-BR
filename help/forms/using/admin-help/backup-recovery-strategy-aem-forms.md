@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Depois de identificar como os formulários AEM são usados, determine quais arqu
 >
 >Assim como em qualquer outro aspecto da implementação de formulários do AEM, sua estratégia de backup e recuperação deve ser desenvolvida e testada em um ambiente de desenvolvimento ou armazenamento temporário antes de ser usada na produção para garantir que toda a solução esteja funcionando como esperado, sem perda de dados.
 
-O Adobe Experience Manager (AEM) é parte integrante dos formulários AEM. Portanto, é necessário fazer backup do AEM, bem como sincronizar com o backup de formulários do AEM, como a Solução de gerenciamento de correspondência e serviços, como o gerenciador de formulários, com base nos dados armazenados no AEM parte dos formulários do AEM.Para evitar perda de dados, é necessário fazer backup dos dados específicos dos formulários do AEM para garantir que o GDS e o AEM (repositório) estejam correlacionados com referências de banco de dados.Os diretórios raiz do banco de dados, GDS, AEM, AEM e Armazenamento de conteúdo e Root ser restaurado para um computador com o mesmo nome DNS do original.
+O Adobe Experience Manager (AEM) é parte integrante dos formulários do AEM. Portanto, é necessário fazer backup do AEM, bem como sincronizar com o backup de formulários do AEM, como a Solução de gerenciamento de correspondência e serviços, como o gerenciador de formulários, com base nos dados armazenados no AEM parte dos formulários do AEM.Para evitar perda de dados, é necessário fazer backup dos dados específicos dos formulários do AEM para garantir que o GDS e o AEM (repositório) estejam correlacionados com referências de banco de dados.Os diretórios raiz do banco de dados, GDS, AEM, AEM e Armazenamento de conteúdo e Root ser restaurado para um computador com o mesmo nome DNS do original.
 
 ## Tipos de backups {#types-of-backups}
 
@@ -88,7 +88,7 @@ Antes de reiniciar o servidor de formulários após uma recuperação, faça o s
    1. Clique em Opções **administrativas**.
    1. Clique em **Start** para sincronizar ativos do repositório.
 
-1. Em um ambiente clusterizado, o nó mestre (com relação ao AEM) deve estar ativo antes dos nós escravos.
+1. Em um ambiente clusterizado, o nó primário (com relação ao AEM) deve estar ativo antes dos nós secundários.
 1. Certifique-se de que nenhum processo seja iniciado de fontes internas ou externas, como iniciadores de processos da Web, SOAP ou EJB, até que a operação normal do sistema seja validada.
 
 Se o banco de dados principal de formulários do AEM for movido ou alterado, consulte os Guias de instalação relevantes ao servidor de aplicativos para obter informações sobre como atualizar as informações de conexão do banco de dados para as fontes de dados de formulários do AEM IDP_DS e EDC_DS.
