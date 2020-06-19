@@ -1,9 +1,9 @@
 ---
 title: Práticas recomendadas de descarregamento de ativos
-description: Casos de uso recomendados e práticas recomendadas para descarregar a ingestão de ativos e workflows de replicação nos ativos AEM.
+description: Casos de uso recomendados e práticas recomendadas para descarregar a ingestão de ativos e workflows de replicação em AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 0%
@@ -17,15 +17,15 @@ ht-degree: 0%
 >
 >Este recurso foi substituído pelo AEM 6.4 e foi removido no AEM 6.5. Planeje de acordo.
 
-Manusear arquivos grandes e executar workflows nos ativos Adobe Experience Manager (AEM) pode consumir recursos consideráveis de CPU, memória e E/S. Em particular, a dimensão dos ativos, os workflows, o número de usuários e a frequência de ingestão dos ativos podem afetar o desempenho geral do sistema. As operações mais intensivas em recursos incluem a assimilação de ativos AEM e workflows de replicação. O uso intenso desses workflows em uma única instância de criação do AEM pode afetar negativamente a eficiência da criação.
+Manusear arquivos grandes e executar workflows nos ativos Adobe Experience Manager (AEM) podem consumir recursos consideráveis de CPU, memória e E/S. Em particular, a dimensão dos ativos, os workflows, o número de usuários e a frequência de ingestão dos ativos podem afetar o desempenho geral do sistema. As operações mais intensivas em recursos incluem a assimilação de ativos AEM e workflows de replicação. O uso intenso desses workflows em uma única instância de criação do AEM pode afetar negativamente a eficiência da criação.
 
 Descarregar essas tarefas para instâncias de trabalho dedicadas pode reduzir as despesas gerais de CPU, memória e E/S. Em geral, a ideia por trás da descarga é distribuir tarefas que consomem recursos intensivos de CPU/Memória/E para instâncias de trabalho dedicadas. As seções a seguir incluem casos de uso recomendados para descarregamento de Ativos.
 
-## Descarregamento de ativos AEM {#aem-assets-offloading}
+## Descarregamento de AEM Assets {#aem-assets-offloading}
 
-Os ativos AEM implementam uma extensão de fluxo de trabalho específica de ativos nativos para descarregamento. Ele se baseia na extensão de fluxo de trabalho genérica fornecida pela estrutura de descarga, mas inclui recursos adicionais específicos de ativos na implementação. O objetivo da descarga de Ativos é executar com eficiência o fluxo de trabalho Atualizar ativo DAM em um ativo carregado. A descarga de ativos permite que você tenha maior controle dos workflows de ingestão.
+O AEM Assets implementa uma extensão de fluxo de trabalho nativa específica do ativo para descarregamento. Ele se baseia na extensão de fluxo de trabalho genérica fornecida pela estrutura de descarga, mas inclui recursos adicionais específicos de ativos na implementação. O objetivo da descarga de Ativos é executar com eficiência o fluxo de trabalho Atualizar ativo DAM em um ativo carregado. A descarga de ativos permite que você tenha maior controle dos workflows de ingestão.
 
-## Componentes de descarga do AEM Assets {#aem-assets-offloading-components}
+## Componentes de descarga de AEM Assets {#aem-assets-offloading-components}
 
 O diagrama a seguir descreve os componentes principais no processo de descarga de ativos:
 
@@ -57,7 +57,7 @@ A divisão de tarefas distribuídas facilita a distribuição de tarefas entre u
 
 Os trabalhos são distribuídos somente para instâncias que fornecem um consumidor de trabalho para o tópico. Ao ativar/desativar os consumidores de trabalho em uma instância, você pode definir os recursos de uma instância e influenciar o mecanismo de distribuição. Os consumidores de trabalho disponíveis de uma instância são transmitidos para toda a topologia.
 
-Neste contexto, o termo distribuição significa a atribuição de uma tarefa a uma instância específica que fornece um consumidor de trabalho. A atribuição a uma instância é armazenada no repositório. Em outras palavras, os trabalhos distribuídos Sling podem ser atribuídos a qualquer instância na topologia por padrão. No entanto, outros trabalhos só podem ser executados por instâncias que compartilham o mesmo repositório. Isso implica que esses trabalhos só podem ser executados por instâncias que fazem parte do mesmo cluster. Os trabalhos atribuídos a instâncias de um cluster diferente não são executados.
+Neste contexto, o termo distribuição significa a atribuição de uma tarefa a uma instância específica que fornece um consumidor de trabalho. A atribuição a uma instância é armazenada no repositório. Em outras palavras, os trabalhos distribuídos Sling podem ser atribuídos a qualquer instância na topologia por padrão. No entanto, outros trabalhos só podem ser executados por instâncias que compartilham o mesmo repositório. Isso implica que esses trabalhos só podem ser executados por instâncias que fazem parte do mesmo cluster. Tarefas atribuídas a instâncias de um cluster diferente não são executadas.
 
 ### Granite offloading framework {#granite-offloading-framework}
 
@@ -112,6 +112,7 @@ Por padrão, a descarga de transporte usa replicação reversa para retornar os 
 1. Altere o valor da propriedade `default.transport.agent-to-master.prefix` de `offloading_reverse` para `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
 ### Uso de armazenamento de dados compartilhado e replicação sem binários entre o autor e os trabalhadores  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
