@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+workflow-type: tm+mt
+source-wordcount: '1912'
+ht-degree: 1%
 
 ---
 
@@ -50,11 +53,11 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
 
    * Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **** Caminho:/libs/fd/cm/config/defaultApp/
+      **[!UICONTROL Caminho:]** /libs/fd/cm/config/defaultApp/
 
-      **** Localização da sobreposição: /apps/
+      **[!UICONTROL Localização da sobreposição:]** /apps/
 
-      **** Corresponder tipos de nós: Verificado
+      **[!UICONTROL Corresponder tipos de nós:]** Verificado
 
       ![Nó Sobreposição](assets/2_defaultappoverlaynode.png)
 
@@ -72,7 +75,7 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
    * Clique com o botão direito do mouse na pasta **[!UICONTROL defaultApp]** em &quot;/apps/fd/cm/config/defaultApp/&quot; e selecione **[!UICONTROL Colar]**.
    * Clique em **[!UICONTROL Salvar tudo]**.
 
-1. Clique duas vezes na cópia de acmExtentionsConfig.xml que você criou recentemente na pasta de aplicativos. O arquivo é aberto para edição.
+1. Clique com o Duplo na cópia de acmExtentionsConfig.xml que você criou recentemente na pasta de aplicativos. O arquivo é aberto para edição.
 1. Localize o seguinte código:
 
    ```xml
@@ -99,11 +102,11 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
 
    ![tag customAction](assets/5_acmextensionsconfig_xml.png)
 
-   A tag modelExtension tem um conjunto de tags-filho customAction que configuram a ação, as permissões e a aparência do botão de ação. Esta é a lista de tags de configuração customAction:
+   A tag modelExtension tem um conjunto de tags-filho customAction que configuram a ação, as permissões e a aparência do botão de ação. Veja a seguir a lista das tags de configuração customAction:
 
    | **Nome** | **Descrição** |
    |---|---|
-   | name | O nome alfanumérico da ação a ser executada. O valor dessa tag é obrigatório, deve ser exclusivo (dentro da tag modelExtension) e deve começar com um alfabeto. |
+   | name | O nome alfanumérico da ação a ser executada. O valor dessa tag é obrigatório, deve ser exclusivo (dentro da tag modelExtension) e deve ser start com um alfabeto. |
    | label | O rótulo a ser exibido no botão de ação |
    | tooltip | Texto de dica de ferramenta do botão, que é exibido quando o usuário passa o mouse sobre o botão. |
    | styleName | Nome do estilo personalizado aplicado ao botão de ação. |
@@ -130,11 +133,11 @@ O arquivo ACMExtensionsMessages.properties inclui rótulos e mensagens de dica d
 
 1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-   **** Caminho:/libs/fd/cm/config/defaultApp/locale
+   **[!UICONTROL Caminho:]** /libs/fd/cm/config/defaultApp/locale
 
-   **** Localização da sobreposição: /apps/
+   **[!UICONTROL Localização da sobreposição:]** /apps/
 
-   **** Corresponder tipos de nós: Verificado
+   **[!UICONTROL Corresponder tipos de nós:]** Verificado
 
 1. Clique em **[!UICONTROL OK]**.
 1. Clique em **[!UICONTROL Salvar tudo]**.
@@ -168,11 +171,11 @@ Depois de fazer todas as alterações no servidor, reinicie o pacote de blocos c
 
 1. Ir para `https://[host]:[port]/system/console/bundles`. Se necessário, faça logon como Administrador.
 
-1. Localize o pacote de blocos componentes do Adobe Asset Composer. Reinicie o pacote: clique em Parar e em Iniciar.
+1. Localize o pacote de blocos componentes do Adobe Asset Composer. Reinicie o pacote: clique em Parar e em Start.
 
    ![Bloco construtor do Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
 
-Após reiniciar o pacote Bloco de construção do Adobe Asset Composer, o botão personalizado será exibido na interface Criar usuário de correspondência. Você pode abrir uma carta na interface de usuário Criar correspondência para visualizar o botão personalizado.
+Após reiniciar o pacote Bloco de construção do Adobe Asset Composer, o botão personalizado será exibido na interface Criar usuário de correspondência. Você pode abrir uma carta na interface Criar usuário de correspondência para pré-visualização o botão personalizado.
 
 ### Adicionar manipulação de ação ao botão {#add-action-handling-to-the-button}
 
@@ -185,7 +188,7 @@ Para manipulação de ações personalizadas, crie uma sobreposição do arquivo
 O manuseio da ação/botão ao clicar em ação/botão inclui lógica para:
 
 * Tornando a ação recém-adicionada visível/invisível: feita substituindo a função actionVisible().
-* Ativando/desabilitando ação recém-adicionada: feita substituindo a função actionEnabled().
+* Ativando/desabilitando a ação recém-adicionada: feita substituindo a função actionEnabled().
 * Manuseio real da ação quando o usuário clica no botão: feita substituindo a implementação da função identificadorAction().
 
 1. Ir para `https://[server]:[port]/[ContextPath]/crx/de`. Se necessário, faça logon como Administrador.
@@ -202,11 +205,11 @@ O manuseio da ação/botão ao clicar em ação/botão inclui lógica para:
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **** Caminho: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **[!UICONTROL Caminho:]** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **** Localização da sobreposição: /apps/
+      **[!UICONTROL Localização da sobreposição:]** /apps/
 
-      **** Corresponder tipos de nós: Verificado
+      **[!UICONTROL Corresponder tipos de nós:]** Verificado
 
    1. Clique em **[!UICONTROL OK]**.
    1. Clique em **[!UICONTROL Salvar tudo]**.
@@ -219,7 +222,7 @@ O manuseio da ação/botão ao clicar em ação/botão inclui lógica para:
 
       Nomeie o arquivo como ccrcustomization.js.
 
-   1. Clique duas vezes no arquivo crcustomization.js para abri-lo no CRX.
+   1. Clique com o Duplo no arquivo crcustomization.js para abri-lo no CRX.
    1. No arquivo, cole o seguinte código e clique em **[!UICONTROL Salvar tudo]**:
 
       ```
@@ -347,6 +350,7 @@ O processo LCA é executado no servidor do LiveCycle e requer o endereço do ser
    * **[!UICONTROL URL]** do servidor: URL do servidor LC cujo serviço Enviar para revisão o código do manipulador de ação usa.
    * **[!UICONTROL Nome de usuário]**: Nome de usuário administrador do servidor LC
    * **[!UICONTROL Senha]**: Senha do nome de usuário administrador
+
    ![Configuração do Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
 
 #### Instalar o LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
@@ -355,7 +359,7 @@ O processo necessário do LiveCycle que ativa o processo do serviço de email.
 
 >[!NOTE]
 >
->Para exibir o que esse processo faz ou para criar um processo semelhante ao seu, você precisa do Workbench.
+>Para visualização do que este processo faz ou para criar um processo semelhante ao seu, você precisa do Workbench.
 
 1. Faça logon como Administrador no adminui do Livecycle Server em `https:/[lc server]/:[lc port]/adminui`.
 
@@ -371,15 +375,15 @@ O processo necessário do LiveCycle que ativa o processo do serviço de email.
 
    ![Selecione o arquivo SendLetterForReview.lca](assets/14_sendletterforreview_lca.png)
 
-1. Clique em **[!UICONTROL Visualizar]**.
+1. Clique em **[!UICONTROL Pré-visualização]**.
 
 1. Selecione **[!UICONTROL Implantar ativos para tempo de execução quando a importação estiver concluída]**.
 
 1. Clique em **[!UICONTROL Importar]**.
 
-#### Adicionando ServiceName à lista WhiteListed Service {#adding-servicename-to-the-whitelisted-service-list}
+#### Adicionando ServiceName à lista de Serviço AllowListed {#adding-servicename-to-the-allowlisted-service-list}
 
-Mencione no servidor AEM os serviços do LiveCycle que você deseja acessar no servidor AEM.
+Mencione no servidor de AEM os serviços do LiveCycle que você deseja acessar no servidor de AEM.
 
 1. Faça logon como Administrador para `https:/[host]/:[port]/system/console/configMgr`.
 
@@ -392,7 +396,7 @@ Mencione no servidor AEM os serviços do LiveCycle que você deseja acessar no s
 
 Nesse cenário, para que o Gerenciamento de correspondência possa enviar um email, configure o serviço de email no servidor do LiveCycle.
 
-1. Efetue logon com as credenciais de administrador no servidor do Livecycle em `https:/[lc server]:[lc port]/adminui`.
+1. Efetue logon com as credenciais de Administrador no adminui do Livecycle Server em `https:/[lc server]:[lc port]/adminui`.
 
 1. Navegue até **[!UICONTROL Início > Serviços > Aplicativos e serviços > Gerenciamento]** de serviços.
 
@@ -406,7 +410,7 @@ Nesse cenário, para que o Gerenciamento de correspondência possa enviar um ema
 
 Para usar a API do Correspondence Management, baixe o DSCSampliar.jar (anexado neste documento como parte de components.zip) e carregue-o no servidor do LiveCycle. Depois que o arquivo DSCSamplie.jar é carregado no servidor do LiveCycle, o servidor do AEM usa o arquivo DSCSamplie.jar para acessar a API renderLetter.
 
-Para obter mais informações, consulte [Conexão de formulários AEM com o Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Para obter mais informações, consulte [Conectar AEM Forms ao Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Atualize o URL do servidor AEM em cmsa.properties em DSCSampliar.jar, que está no seguinte local:
 
@@ -418,6 +422,7 @@ Para obter mais informações, consulte [Conexão de formulários AEM com o Adob
    * **crx.username**= nome de usuário do AEM
    * **crx.password**= senha do AEM
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >Sempre que você fizer alterações no lado do servidor, reinicie o LiveCycle Server. Para obter informações sobre como criar seu próprio componente do LiveCycle ES, consulte [Extensão do software LiveCycle ES por meio do desenvolvimento](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)personalizado do DSC.
@@ -428,13 +433,13 @@ Para obter mais informações, consulte [Conexão de formulários AEM com o Adob
 
 O arquivo DSCSamplie.jar usa a API renderLetter para renderizar a carta como bytes PDF dos dados XML que C fornece como entrada. Para obter mais informações sobre a renderizaçãoCarta e outras APIs, consulte Serviço [de renderização de](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)carta.
 
-1. Inicie o Workbench e faça logon.
-1. Selecione **[!UICONTROL Janela > Mostrar exibições > Componentes]**. A exibição Componentes é adicionada ao Workbench ES2.
+1. Start Workbench e faça logon.
+1. Selecione **[!UICONTROL Janela > Mostrar Visualizações > Componentes]**. A visualização Componentes é adicionada ao Workbench ES2.
 
 1. Clique com o botão direito do mouse em **[!UICONTROL Componentes]** e selecione **[!UICONTROL Instalar componente]**.
 
 1. Selecione o arquivo **[!UICONTROL DSCSamplie.jar]** no navegador de arquivos e clique em **[!UICONTROL Abrir]**.
-1. Clique com o botão direito do mouse em **[!UICONTROL RenderWrapper]** e selecione **[!UICONTROL Iniciar componente]**. Se o componente for iniciado, uma seta verde será exibida ao lado do nome do componente.
+1. Clique com o botão direito do mouse em **[!UICONTROL RenderWrapper]** e selecione Componente **[!UICONTROL do]** Start. Se o componente for start, uma seta verde será exibida ao lado do nome do componente.
 
 ## Enviar carta para revisão {#send-letter-for-review}
 
