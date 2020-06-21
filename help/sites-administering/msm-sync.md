@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 8cf319b54e1a2afa1385f9bea1e946eaad0e60f7
+workflow-type: tm+mt
+source-wordcount: '2682'
+ht-degree: 78%
 
 ---
 
@@ -164,7 +167,7 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. If t
   </tr> 
   <tr> 
    <td>referencesUpdate</td> 
-   <td><p>Na Live Copy, essa ação de sincronização atualiza as referências como links.<br /> Ela procura caminhos nas páginas de Live Copy que apontam para um recurso dentro do blueprint. Quando encontrado, ela atualiza o caminho para apontar para o recurso relacionado dentro da Live Copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço</a> Ação de Atualização de Referências MSM do CQ para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td> 
+   <td><p>Na Live Copy, essa ação de sincronização atualiza as referências como links.<br /> Ela procura caminhos nas páginas de Live Copy que apontam para um recurso dentro do blueprint. Quando encontrado, ela atualiza o caminho para apontar para o recurso relacionado dentro da Live Copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço</a> Ação de Atualização de Referências MSM do CQ para especificar os tipos de nó, os itens de parágrafo e as propriedades da página a serem excluídos. </p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -286,7 +289,7 @@ A tabela a seguir descreve as propriedades que você pode configurar:
    <td>Uma expressão regular que corresponde aos tipos de nó a serem excluídos da ação de sincronização.</td> 
   </tr> 
   <tr> 
-   <td><p>Itens de parágrafo excluídos</p> <p>cq.wcm.msm.action.excludedparágrafos items</p> </td> 
+   <td><p>Itens de parágrafo excluídos</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td> 
    <td>Uma expressão regular que corresponde aos itens de parágrafo a serem excluídos da ação de sincronização.</td> 
   </tr> 
   <tr> 
@@ -322,12 +325,6 @@ Por exemplo, se você quiser que o **Título** da página seja incluído nas alt
 
 `jcr:(?!(title)$).*`
 
->[!CAUTION]
->
->Antes da versão 5.5 SP2, as propriedades de página excluídas eram configuradas no console do sistema no **Gerenciador de implementação do WCM CQ do dia**. Com a 5.5 SP2 e versões posteriores, as configurações de propriedades de página excluídas nesse painel são ignoradas. Property exclusion on rollout is configured as described above, in **CQ MSM Content Update Action**.
->
->Portanto, se você tiver ajustado manualmente essa configuração em uma instalação anterior ao 5.5 SP2 e estiver atualizando para 5.5 SP2 ou versão posterior, *será necessário transferir manualmente essas configurações do painel de configuração antigo para o novo*.
-
 ### Configurar sincronização para atualizar referências {#configuring-synchronization-for-updating-references}
 
 Você pode configurar vários serviços OSGi que oferecem suporte às ações de sincronização correspondentes relacionadas à atualização de referências.
@@ -344,7 +341,7 @@ A tabela a seguir lista as ações de sincronização para as quais você pode e
   </tr> 
   <tr> 
    <td><p>Atualizar referência em LiveCopies aninhados</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_updateNested</p> </td> 
-   <td>Disponível somente para a Ação de atualização de referências CQ MSM. Selecione essa opção (Console da Web) ou defina essa propriedade booleana como true (configuração do repositório) para substituir referências que direcionam qualquer recurso que esteja na ramificação do LiveCopy mais avançado.</td> 
+   <td>Disponível somente para a Ação de atualização de referências CQ MSM. Selecione essa opção (Console da Web) ou defina essa propriedade booleana como true (configuração do repositório) para substituir referências que públicos alvos qualquer recurso que esteja na ramificação do LiveCopy mais avançado.</td> 
   </tr> 
   <tr> 
    <td><p>Atualizar páginas de referência</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td> 
@@ -361,8 +358,8 @@ A lista de locais a seguir em que você pode especificar as configurações de i
 
 * **[Propriedades da página de Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):**quando uma página de Live Copy é configurada para usar uma ou mais configurações de implementação, o MSM usa essas configurações.
 * **[Propriedades da página do blueprint](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):**quando uma Live Copy é baseada em um blueprint, e a página de Live Copy não está configurada com uma configuração de implementação, a configuração associada à página de origem do blueprint é usada.
-* **** Propriedades da página pai da Live Copy: Quando nem a página live copy nem a página de origem do blueprint estão configuradas com uma configuração de implementação, a configuração de implementação que se aplica à página pai da página live copy é usada.
-* **[](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)Padrão **do sistema: Quando a configuração de implantação da página pai da live copy não puder ser determinada, a configuração de implantação padrão do sistema será usada.
+* **Propriedades da página pai da Live Copy:** Quando nem a página live copy nem a página de origem do blueprint estão configuradas com uma configuração de implementação, a configuração de implementação que se aplica à página pai da página live copy é usada.
+* **[Padrão](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)do sistema:**Quando a configuração de implantação da página pai da live copy não puder ser determinada, a configuração de implantação padrão do sistema será usada.
 
 Por exemplo, um blueprint usa o site de referência We.Retail como conteúdo de origem. Um site é criado a partir do blueprint. Cada item da lista a seguir descreve um cenário diferente sobre o uso de configurações de implementação:
 
@@ -413,9 +410,9 @@ Especifique uma configuração de implementação a ser usada como padrão do si
 
 * O PID de serviço do **Gerente de relacionamento dinâmico do WCM CQ do dia**  é `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)
 
-* No console da Web, o nome da propriedade a ser configurada é Configuração de implementação padrão.
-* Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
+* Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+* No console da Web, o nome da propriedade a ser configurada é Configuração de implementação padrão.`liverelationshipmgr.relationsconfig.default`
 
-Defina esse valor de propriedade como o caminho da configuração de implementação a ser usada como padrão do sistema. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.****
