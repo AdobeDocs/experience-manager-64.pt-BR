@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -48,42 +48,58 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Lista de permissão de campos de mensagem]** Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: *assunto* e *conteúdo*.
+* **[!UICONTROL Lista de permissão de campos de mensagem]** Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: 
+*assunto* e *conteúdo*.
 
-* **[!UICONTROL Limite]** de tamanho da caixa de mensagem O número máximo de bytes na caixa de mensagem de cada usuário. O padrão é *1073741824* (1 GB).
+* **[!UICONTROL Limite]** de tamanho da caixa de mensagem O número máximo de bytes na caixa de mensagem de cada usuário. O padrão é 
+*1073741824* (1 GB).
 
-* **[!UICONTROL Limite]** de contagem de mensagens O número total de mensagens permitidas por usuário. Um valor de -1 indica que um número ilimitado de mensagens é permitido, sujeito ao limite de tamanho da caixa de mensagem. O padrão é *10000* (10 mil).
+* **[!UICONTROL Limite]** de contagem de mensagens O número total de mensagens permitidas por usuário. Um valor de -1 indica que um número ilimitado de mensagens é permitido, sujeito ao limite de tamanho da caixa de mensagem. O padrão é 
+*10000* (10 mil).
 
-* **[!UICONTROL Notificar falha]** do delivery Se marcada, notifique o remetente se o delivery da mensagem falhar para alguns recipient. O padrão está *marcado*.
+* **[!UICONTROL Notificar falha]** do delivery Se marcada, notifique o remetente se o delivery da mensagem falhar para alguns recipient. O padrão é 
+*verificado*.
 
-* **[!UICONTROL Falha ID]** do remetente do delivery Nome do remetente que aparece na mensagem de falha do delivery. O padrão é *failureNotifier*.
+* **[!UICONTROL Falha ID]** do remetente do delivery Nome do remetente que aparece na mensagem de falha do delivery. O padrão é 
+*failureNotifier*.
 
-* **[!UICONTROL Caminho do modelo de mensagem de falha Caminho]** absoluto para a raiz do modelo de mensagem de falha do delivery. O padrão é */etc/notification/messaging/default*.
+* **[!UICONTROL Caminho do modelo de mensagem de falha Caminho]** absoluto para a raiz do modelo de mensagem de falha do delivery. O padrão é 
+*/etc/notification/messaging/default*.
 
-* **[!UICONTROL maxRetries.name]** Número de vezes que tentar reenviar a mensagem que falhou ao ser entregue. O padrão é *3*.
+* **[!UICONTROL maxRetries.name]** Número de vezes que tentar reenviar a mensagem que falhou ao ser entregue. O padrão é 
+*3*.
 
 * **[!UICONTROL minWaitBetweenRetries.name]** Número de segundos para aguardar entre as tentativas de reenviar a mensagem após falha no envio. O padrão é *100 *(segundos).
 
-* **[!UICONTROL Contagem do tamanho]** do pool de atualizações Número de threads simultâneos usados para atualização de contagem. O padrão é *10*.
+* **[!UICONTROL Contagem do tamanho]** do pool de atualizações Número de threads simultâneos usados para atualização de contagem. O padrão é 
+*10*.
 
-* **[!UICONTROL inbox.path.name]**(*obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`inbox`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/caixa de entrada* .
+* **[!UICONTROL inbox.path.name]**(
+*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`inbox`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/caixa de entrada* .
 
-* **[!UICONTROL sentitems.path.name]**(*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`senditems`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
+* **[!UICONTROL sentitems.path.name]**(
+*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`senditems`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
 
-* **[!UICONTROL supportAttachments.name]** Se marcado, os usuários poderão adicionar anexos às suas mensagens. O padrão está *marcado*.
+* **[!UICONTROL supportAttachments.name]** Se marcado, os usuários poderão adicionar anexos às suas mensagens. O padrão é 
+*verificado*.
 
-* **[!UICONTROL batchSize.name]** Número de mensagens a serem agrupadas em lote para um envio ao enviar para um grande grupo de recipient. O padrão é *100*.
+* **[!UICONTROL batchSize.name]** Número de mensagens a serem agrupadas em lote para um envio ao enviar para um grande grupo de recipient. O padrão é 
+*100*.
 
-* **[!UICONTROL maxTotalAttachmentSize.name]** Se supportAttachments estiver marcado, esse valor especifica o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é *104857600* (100 MB).
+* **[!UICONTROL maxTotalAttachmentSize.name]** Se supportAttachments estiver marcado, esse valor especifica o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é 
+*104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeAllowlist.name]** Uma lista de blocos de extensões de arquivo, prefixada com &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não estiver bloqueada, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;. O padrão é *PADRÃO*.
+* **[!UICONTROL attachmentTypeBlocklist.name]** Uma lista de bloqueios de extensões de arquivo, com o prefixo &#39;
+**.**&quot;, isso será rejeitado pelo sistema. Se não estiver bloqueada, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;. O padrão é *PADRÃO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
+
    **(*Ação necessária*)** Uma lista permitida de extensões de arquivo, o oposto da lista de bloqueio. Para permitir todas as extensões de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
 
 * **[!UICONTROL serviceSelector.name]**(*obrigatório*) Um caminho absoluto (ponto final) pelo qual o serviço é chamado (um recurso virtual). A raiz do caminho escolhido deve ser uma incluída na configuração Caminhos *de execução* da configuração do OSGi [ , como `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`e `/apps/``/services/`. Para selecionar essa configuração para o recurso de mensagens de um site, esse terminal é fornecido como o **`Service selector`** valor para o `Message List and Compose Message components` (consulte Recurso [](configure-messaging.md)de mensagem). O padrão é */bin/messaging* .
 
-* **[!UICONTROL fieldAllowlist.name]** Usar lista de permissões de campos **de mensagem**.
+* **[!UICONTROL fieldAllowlist.name]** Use 
+**Lista de permissão** dos campos de mensagem.
 
 >[!CAUTION]
 >
