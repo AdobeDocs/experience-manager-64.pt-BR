@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '3429'
+ht-degree: 32%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
 
 [O Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) é uma solução hospedada para gerenciar, aprimorar, publicar e fornecer ativos de mídia avançada para Web, dispositivos móveis, email e telas e impressão conectadas à Internet.
 
-Você pode exibir ativos AEM publicados no Dynamic Media Classic em vários visualizadores:
+Você pode visualização ativos AEM publicados no Dynamic Media Classic em vários visualizadores:
 
 * Zoom
 * Flyout
@@ -29,7 +32,7 @@ Você pode exibir ativos AEM publicados no Dynamic Media Classic em vários visu
 
 Você pode publicar ativos digitais diretamente do AEM para o Dynamic Media Classic e pode publicar ativos digitais do Dynamic Media Classic para o AEM.
 
-Esta seção descreve como publicar ativos digitais do AEM para o Dynamic Media Classic e vice-versa. Os visualizadores também são descritos detalhadamente. Para obter informações sobre como configurar o AEM para o Dynamic Media Classic, consulte [Integrar o Dynamic Media Classic ao AEM](/help/sites-administering/scene7.md).
+Esta seção descreve como publicar ativos digitais do AEM para o Dynamic Media Classic e vice-versa. Os visualizadores também são descritos detalhadamente. Para obter informações sobre como configurar o AEM para Dynamic Media Classic, consulte [Integrar o Dynamic Media Classic ao AEM](/help/sites-administering/scene7.md).
 
 Consulte também [Adição de mapas de imagem](/help/assets/image-maps.md).
 
@@ -52,7 +55,7 @@ Você pode publicar ativos digitais no Dynamic Media Classic no console Ativos n
 
 ### Publicação por meio do console Assets {#publishing-from-the-assets-console}
 
-Para publicar no Dynamic Media Classic no console Ativos se os ativos estiverem em uma pasta de destino do Dynamic Media Classic:
+Para publicar no Dynamic Media Classic no console Ativos, se os ativos estiverem em uma pasta de público alvo do Dynamic Media Classic:
 
 1. In the AEM classic UI, click **[!UICONTROL Digital Assets]** to access the digital asset manager.
 
@@ -60,7 +63,7 @@ Para publicar no Dynamic Media Classic no console Ativos se os ativos estiverem 
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Vá para Dynamic Media Classic e confirme se os ativos estão disponíveis.
+1. Vá para o Dynamic Media Classic e confirme se os ativos estão disponíveis.
 
    >[!NOTE]
    >
@@ -84,7 +87,7 @@ Você pode publicar manualmente um ativo, contanto que ele esteja localizado den
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
-1. O link é alterado para **[!UICONTROL Publicando...]** e, em seguida, para **[!UICONTROL Publicado]**. Vá para Dynamic Media Classic e confirme se o ativo está disponível.
+1. O link é alterado para **[!UICONTROL Publicando...]** e, em seguida, para **[!UICONTROL Publicado]**. Vá para o Dynamic Media Classic e confirme se o ativo está disponível.
 
    >[!NOTE]
    >
@@ -92,7 +95,7 @@ Você pode publicar manualmente um ativo, contanto que ele esteja localizado den
 
 ### Publishing assets from outside the CQ target folder {#publishing-assets-from-outside-the-cq-target-folder}
 
-A Adobe recomenda que você publique ativos no Dynamic Media Classic somente de ativos na pasta de destino do Dynamic Media Classic. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an *ad-hoc* folder on Dynamic Media Classic.
+A Adobe recomenda que você publique ativos no Dynamic Media Classic somente de ativos na pasta do público alvo Dynamic Media Classic. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an *ad-hoc* folder on Dynamic Media Classic.
 
 Para fazer isso, configure a configuração da nuvem para a página onde o ativo será exibido. Em seguida, adicione um componente do Dynamic Media Classic à página e arraste e solte um ativo no componente. After the page properties are set for that page, a **[!UICONTROL Publish to Dynamic Media Classic]** link appears that when selected triggers uploading to Dynamic Media Classic.
 
@@ -106,7 +109,7 @@ Para fazer isso, configure a configuração da nuvem para a página onde o ativo
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. Clique em **[!UICONTROL Cloud Services > Adicionar serviços > Dynamic Media Classic (Scene7)**.
+1. Clique em **[!UICONTROL Cloud Service > Adicionar serviços > Dynamic Media Classic (Scene7)**.
 1. Na lista suspensa Adobe Dynamic Media Classic, selecione a configuração desejada e clique em **[!UICONTROL OK]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -120,7 +123,7 @@ Para fazer isso, configure a configuração da nuvem para a página onde o ativo
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Clique em **[!UICONTROL Verificar status]** de publicação do Dynamic Media Classic. Se o ativo não for publicado, o AEM publica o ativo no Dynamic Media Classic. Depois de enviado por upload, o ativo estará localizado na pasta ad-hoc. By default, the ad-hoc folder is located in the `name_of_the_company/CQ5_adhoc`. É possível [alterar essa configuração, se necessário](#configuringtheadhocfolder).
+1. Clique em **[!UICONTROL Verificar status]** de publicação do Dynamic Media Classic. Se o ativo não for publicado, o AEM publica-o no Dynamic Media Classic. Depois de enviado por upload, o ativo estará localizado na pasta ad-hoc. By default, the ad-hoc folder is located in the `name_of_the_company/CQ5_adhoc`. É possível [alterar essa configuração, se necessário](#configuringtheadhocfolder).
 
    >[!NOTE]
    >
@@ -146,7 +149,7 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
 A partir de 31 de janeiro de 2017, o Adobe Dynamic Media Classic encerrou oficialmente o suporte para a plataforma do visualizador Flash.
 
-For more information about this important change, see [Flash viewer end-of-life FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+For more information about this important change, see [Flash viewer end-of-life FAQs](https://docs.adobe.com/content/docs/pt/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
 
 ### Adding a Dynamic Media Classic component to a page {#adding-a-scene-component-to-a-page}
 
@@ -154,7 +157,7 @@ Adicionar um componente do Dynamic Media Classic a uma página é o mesmo que ad
 
 **Para adicionar um componente/visualizador do Dynamic Media Classic a uma página na interface clássica**:
 
-1. No AEM, abra a página onde deseja adicionar o componente do Dynamic Media Classic.
+1. No AEM, abra a página onde deseja adicionar o componente Dynamic Media Classic.
 
 1. If no Dynamic Media Classic components are available, click the ruler in the sidekick to enter **[!UICONTROL Design]** mode, click **[!UICONTROL Edit]** parsys, and select all the **[!UICONTROL Dynamic Media Classic]** components to make them available.
 
@@ -219,7 +222,7 @@ No componente do Flyout HTML5, o ativo é exibido como tela dividida; na parte �
 
 ### Imagem {#image}
 
-O componente de Imagem clássica do Dynamic Media permite que você adicione a funcionalidade do Dynamic Media Classic às imagens, como modificadores do Dynamic Media Classic, predefinições de imagem ou visualizador e nitidez. O componente de imagem do Dynamic Media Classic é semelhante a outros componentes de imagem no AEM com funcionalidade especial do Dynamic Media Classic. Neste exemplo, a imagem tem o modificador de URL do Dynamic Media Classic, `&op_invert=1` aplicado.
+O componente Imagem clássica do Dynamic Media permite que você adicione a funcionalidade do Dynamic Media Classic às suas imagens, como modificadores do Dynamic Media Classic, predefinições de imagens ou visualizador e nitidez. O componente de imagem do Dynamic Media Classic é semelhante a outros componentes de imagem no AEM com funcionalidade especial do Dynamic Media Classic. Neste exemplo, a imagem tem o modificador de URL do Dynamic Media Classic, `&op_invert=1` aplicado.
 
 ![](do-not-localize/chlimage_1-6.png)
 
@@ -237,9 +240,9 @@ O componente de Imagem clássica do Dynamic Media permite que você adicione a f
 
 **[!UICONTROL Formato]** de saída - Selecione o formato de saída da imagem, por exemplo jpeg. Dependendo do formato de saída selecionado, você pode ter opções de configuração adicionais. Consulte [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Nitidez]** - Selecione como deseja tornar a imagem nítida. O ajuste de nitidez é explicado em detalhes na Qualidade de imagem do [*Adobe Dynamic Media Classic e nas Práticas *](/help/assets/assets/s7_sharpening_images.pdf)recomendadas de ajuste de nitidez.
+**[!UICONTROL Nitidez]** - Selecione como deseja tornar a imagem nítida. O ajuste de nitidez é explicado em detalhes na Qualidade de imagem [*do Adobe Dynamic Media Classic e nas Práticas *](/help/assets/assets/s7_sharpening_images.pdf)recomendadas de ajuste de nitidez.
 
-**[!UICONTROL Modificadores]** de URL - você pode alterar os efeitos de imagem fornecendo comandos de imagem adicionais do Dynamic Media Classic. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL Modificadores]** de URL - você pode alterar os efeitos de imagem fornecendo comandos de imagem adicionais do Dynamic Media Classic. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Pontos de interrupção]** - se o site estiver respondendo, você deseja ajustar os pontos de interrupção. Os pontos de interrupção devem ser separados por vírgulas `,`.
 
@@ -257,7 +260,7 @@ Clique em **[!UICONTROL Editar]** para configurar o componente. You can configur
 >
 >Os parâmetros e comandos do URL do Dynamic Media Classic não podem ser adicionados diretamente ao URL de referência de arquivo. Eles podem ser definidos somente na interface do componente no painel **[!UICONTROL Parâmetro]**.
 
-**[!UICONTROL Título, Texto]** alternativo Na guia Modelo [!UICONTROL de imagem do] Dynamic Media Classic, adicione um título à imagem e ao texto alternativo para os usuários que tiverem gráficos desativados.
+**[!UICONTROL Título, Texto]** alternativo Na guia Modelo [!UICONTROL de imagem do] Dynamic Media Classic, adicione um título à imagem e texto alternativo para os usuários que tiverem gráficos desativados.
 
 **[!UICONTROL URL, Abrir]** Você pode definir um ativo de para abrir um link. Defina o **[!UICONTROL URL]** e, em **[!UICONTROL Abrir em]**, indique se você deseja que ele abra na mesma janela ou em uma nova.
 
@@ -313,20 +316,20 @@ See [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) 
 O Adobe DAM e o WCM mostram se um vídeo principal é carregado por upload. Eles não mostram os ativos de proxy a seguir:
 
 * Execuções codificadas do Dynamic Media Classic
-* Conjuntos de vídeo adaptativos do Dynamic Media Classic
+* Conjuntos de vídeo adaptativos Dynamic Media Classic
 
 Ao usar um conjunto de vídeo adaptável com o componente de vídeo Dynamic Media Classic, você deve redimensionar o componente para ajustar às dimensões do vídeo.
 
 ## Navegador de conteúdo do Dynamic Media Classic {#scene-content-browser}
 
-O navegador de conteúdo do Dynamic Media Classic permite exibir o conteúdo do Dynamic Media Classic diretamente no AEM. To access the content browser, in the Content Finder, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. A funcionalidade é idêntica em ambas as interfaces do usuário.
+O navegador de conteúdo do Dynamic Media Classic permite que você visualização conteúdo do Dynamic Media Classic diretamente no AEM. To access the content browser, in the Content Finder, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. A funcionalidade é idêntica em ambas as interfaces do usuário.
 
 Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração padrão](/help/sites-administering/scene7.md#configuring-a-default-configuration). Você pode selecionar configurações diferentes diretamente no navegador de conteúdo do Dynamic Media Classic no menu suspenso.
 
 >[!NOTE]
 >
 >* Os ativos localizados na pasta ad-hoc não aparecem no navegador de conteúdo do Dynamic Media Classic.
->* Quando a Visualização [segura está ativada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), os ativos publicados e não publicados no Dynamic Media Classic aparecem no navegador de conteúdo do Dynamic Media Classic.
+>* Quando a Pré-visualização [segura está ativada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), os ativos publicados e não publicados no Dynamic Media Classic são exibidos no navegador de conteúdo do Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
    >
    >
@@ -361,9 +364,9 @@ Por padrão, os ativos são exibidos por nome de arquivo. Além disso, é possí
 
 
 
-### Procurando ativos do Dynamic Media Classic com o navegador de conteúdo {#searching-for-scene-assets-with-the-content-browser}
+### Como pesquisar ativos do Dynamic Media Classic com o navegador de conteúdo {#searching-for-scene-assets-with-the-content-browser}
 
-Pesquisar ativos do Dynamic Media Classic é semelhante a pesquisar ativos do AEM, exceto que ao pesquisar, você está vendo uma exibição remota dos ativos no sistema do Dynamic Media Classic, em vez de importá-los diretamente para o AEM.
+Pesquisar ativos do Dynamic Media Classic é semelhante a pesquisar ativos do AEM, exceto que quando você pesquisa, você está vendo uma visualização remota dos ativos no sistema Dynamic Media Classic, em vez de importá-los diretamente para o AEM.
 
 É possível usar a interface do usuário clássica ou a otimizada para toque para visualizar e pesquisar ativos. Dependendo da interface, a maneira como você pesquisa é levemente diferente.
 
@@ -385,7 +388,7 @@ Por padrão, o AEM procura na pasta selecionada e em todas as subpastas.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-**[!UICONTROL Configuração]** Se você tiver mais de uma configuração do Dynamic Media Classic definida no [!UICONTROL Cloud Services], poderá selecioná-la aqui. Como resultado, a pasta será alterada com base na configuração escolhida.
+**[!UICONTROL Configuração]** Se você tiver mais de uma configuração do Dynamic Media Classic definida no [!UICONTROL Cloud Service], poderá selecioná-la aqui. Como resultado, a pasta será alterada com base na configuração escolhida.
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
