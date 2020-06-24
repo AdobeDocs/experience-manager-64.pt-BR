@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2792'
+source-wordcount: '2787'
 ht-degree: 4%
 
 ---
@@ -88,16 +88,16 @@ Para configurar os recursos do Analytics for Communities, é necessário trabalh
 
 ## Adobe Analytics Report Suite para Relatórios de vídeo {#adobe-analytics-report-suite-for-video-reporting}
 
-Usando o Adobe Marketing Cloud, os conjuntos de relatórios do Analytics [Report Suite Manager](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)podem ser configurados para que um site da comunidade seja habilitado para fornecer relatórios sobre os recursos das Comunidades.
+Usando o Adobe Marketing Cloud, os conjuntos de relatórios do Analytics [Report Suite Manager](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)podem ser configurados para que um site da comunidade seja habilitado para fornecer relatórios sobre os recursos das Comunidades.
 
-Ao fazer logon no [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) com o Nome da [Empresa e o Nome do usuário](analytics.md#prerequisites), é possível configurar um conjunto de relatórios novo ou existente para que tenha:
+Ao fazer logon no [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) com o Nome da [Empresa e o Nome do usuário](analytics.md#prerequisites), é possível configurar um conjunto de relatórios novo ou existente para que tenha:
 
-* [11 Variáveis](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) de conversão (evars)
+* [11 Variáveis](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) de conversão (evars)
 
    * **`evar1`** por meio **`evar11`** ativado
    * Pode reaproveitar (renomear) evars existentes ou criar novas para usar nos recursos das Comunidades
 
-* [7 Eventos](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) bem-sucedidos (eventos)
+* [7 Eventos](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) bem-sucedidos (eventos)
 
    * **`event1`** por meio **`event7`** ativado
    * Tipo **`Counter`**
@@ -106,7 +106,7 @@ Ao fazer logon no [Adobe Marketing Cloud](https://marketing.adobe.com/resources/
    * Pode alterar a finalidade (renomear) dos eventos existentes ou criar novos para usar nos recursos das Comunidades
 
 
-* [Gerenciamento de vídeo](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [Gerenciamento de vídeo](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * Console de Relatórios de vídeo
 
@@ -128,6 +128,7 @@ Se estiver usando um conjunto **de relatórios** existente, talvez seja necessá
 >
 >* **`evar1`** a **`evar11`**
 >* **`event1`** a **`event7`**
+
 >
 >
 **Depois, antes de o site da comunidade ser publicado,** é importante restaurar o mapeamento preexistente movendo as variáveis AEM que foram mapeadas automaticamente para variáveis Analytics quando o Analytics foi habilitado para um site da comunidade.
@@ -456,6 +457,7 @@ Consulte as seções:
 >
 >* **`evar1`** a **`evar11`**
 >* **`event1`** a **`event7`**
+
 >
 >
 **Depois, antes de o site da comunidade ser publicado,** é importante restaurar o mapeamento preexistente e mover as variáveis AEM das Comunidades que foram automaticamente mapeadas (quando o Analytics foi ativado para o site da comunidade) para outras variáveis do Analytics. Esse novo mapeamento deve ser consistente em todos os componentes das Comunidades.
@@ -545,11 +547,11 @@ O tópico do fórum é atualmente o único exemplo dessa personalização:
 
 ## Gerenciar dados do usuário no Analytics {#manage-user-data-in-analytics}
 
-A Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do usuário. Para obter mais informações, consulte [Enviar acesso e excluir solicitações](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html).
+A Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do usuário. Para obter mais informações, consulte [Enviar acesso e excluir solicitações](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## Recursos {#resources}
 
-* Adobe Marketing Cloud: [Ajuda e referência da Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Ajuda e referência da Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics com provedores externos](../../help/sites-administering/external-providers.md)
 
