@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 1%
 
 ---
 
@@ -23,19 +26,19 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 Os aplicativos do AEM Mobile são baseados em um plano que define uma estrutura de página e propriedades. Você pode configurar as seguintes propriedades do aplicativo:
 
-* **** Título: O título do aplicativo.
-* **** Caminho de destino: O local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
+* **Título:** O título do aplicativo.
+* **Caminho de destino:** O local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
 
-* **** Nome: O valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado no AEM para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
-* **** Descrição: Uma descrição do aplicativo.
-* **** URL do servidor: O URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
+* **Nome:** O valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado no AEM para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
+* **Descrição:** Uma descrição do aplicativo.
+* **URL do servidor:** O URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
 
 Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração do PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem é usada apenas como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
-Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
+Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in do SDK do Adobe Mobile Services ao seu aplicativo.
 
-* Criar: Clique em gerenciar configurações e configure seu serviço de compilação.phonegap.com aqui. Em seguida, na lista suspensa, você poderá selecionar o serviço de nuvem de construção PhoneGap recém-criado.
-* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem SDK [do](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) Adobe Mobile Services. Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
+* Compilação: Clique em gerenciar configurações e configure seu serviço de compilação.phonegap.com aqui. Em seguida, na lista suspensa, você poderá selecionar o serviço de nuvem de construção PhoneGap recém-criado.
+* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem SDK [do](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
 
 ## Uso de modelos de aplicativo {#using-app-templates}
 
@@ -55,7 +58,7 @@ Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-Selecione um modelo de aplicativo disponibilizado para você por um desenvolvedor do AEM. Consulte [Estrutura de um aplicativo](/help/mobile/phonegap-structure-an-app.md) do AEM Mobile para obter ajuda para o desenvolvedor.
+Selecione um modelo de aplicativo disponibilizado para você por um desenvolvedor do AEM. Consulte [Estrutura de um aplicativo](/help/mobile/phonegap-structure-an-app.md) do AEM Mobile para obter ajuda para desenvolvedores.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
@@ -73,7 +76,7 @@ Consulte os seguintes recursos para saber mais sobre outras funções de criaç�
 * [Importar um aplicativo híbrido existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionais {#additional-resources}
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
