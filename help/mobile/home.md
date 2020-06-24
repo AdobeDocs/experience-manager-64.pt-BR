@@ -4,7 +4,7 @@ seo-title: Guia do usuário do AEM 6.4 Mobile
 description: Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis.
 seo-description: Descreve como criar e gerenciar conteúdo para aplicativos móveis.
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 22%
@@ -39,12 +39,12 @@ Este guia aborda todas as tarefas do AEM Mobile, como criar e gerenciar conteúd
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância do AEM. |
 | [Gerenciamento do Guia do Usuário](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do AEM com êxito. |
 | [Guia do usuário móvel](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o Livefyre. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o Livefyre. |
 
 ## Principais recursos do AEM
 
 * [Tutoriais do AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guia do usuário Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.htmlhttps://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)
+* [Guia do usuário Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)
 * [Guia do usuário HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
 * [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
