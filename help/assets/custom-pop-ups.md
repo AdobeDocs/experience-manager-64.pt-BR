@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 translation-type: tm+mt
-source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '1064'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +48,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tr> 
     <tr> 
     <td>Vídeos interativos</td> 
-    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adicionar interatividade ao vídeo</a>.</td> 
+    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adicionando interatividade ao vídeo</a>.</td> 
     </tr> 
     <tr> 
     <td>Banners em carrossel</td> 
@@ -104,12 +107,12 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    Saiba mais sobre o `setHandlers()` método no seguinte:
 
-   * Visualizador de imagens interativas: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html)
-   * Visualizador de vídeo interativo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html)
+   * Visualizador de imagens interativas: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visualizador de vídeo interativo: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Agora é necessário configurar o manipulador &quot;quickViewActivate&quot;.
 
-   O manipulador QuickViewActivate controla as exibições rápidas no visualizador. O manipulador contém a lista de variáveis e as chamadas de função para uso com o Quickview. O código incorporado fornece mapeamento para a variável SKU definida no Quickview, bem como uma amostra da chamada da função loadQuickView.
+   O manipulador QuickViewActivate controla as exibições rápidas no visualizador. O manipulador contém a lista variável e as chamadas de função para uso com o Quickview. O código incorporado fornece mapeamento para a variável SKU definida no Quickview, bem como uma amostra da chamada da função loadQuickView.
 
    **Variável mapeando variáveis** do mapa para uso na sua página da Web para o valor SKU e variáveis genéricas contidas no Quickview:
 
@@ -134,13 +137,13 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    Saiba mais sobre o método quickViewActivate no seguinte endereço:
 
-   * Visualizador de imagens interativas: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
-   * Visualizador de vídeo interativo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
-   * Suporte a dados interativos no Visualizador de vídeo interativo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
+   * Visualizador de imagem interativa - retornos de chamada de [Evento](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Visualizador de vídeo interativo - retornos de chamada do [Evento](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Suporte a dados interativos no Visualizador de vídeo interativo - Suporte a dados [interativos](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Faça o seguinte:
 
-   * Exclua o comentário da seção setHandlers do código incorporado.
+   * Exclua as barras de comentário da seção setHandlers do código incorporado.
    * Mapeie quaisquer variáveis adicionais contidas no Quickview.
 
       * Atualize a `loadQuickView(sku,*var1*,*var2*)` chamada se você estiver adicionando variáveis adicionais.
@@ -202,7 +205,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    Alguns visualizadores, como o Visualizador de vídeo interativo, suportam a exibição no modo de tela cheia. No entanto, usar o pop-up conforme descrito nas etapas anteriores faz com que ele seja exibido atrás do visualizador no modo de tela cheia.
 
-   Para ter a exibição pop-up nos modos padrão e de tela cheia, anexe a pop-up ao contêiner do visualizador. Para fazer isso, você pode usar um segundo método handler, `initComplete`.
+   Para ter a exibição pop-up nos modos padrão e de tela cheia, anexe a pop-up ao container do visualizador. Para fazer isso, você pode usar um segundo método handler, `initComplete`.
 
    O `initComplete` hander é chamado depois que o visualizador é inicializado.
 
@@ -212,8 +215,8 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    Saiba mais sobre o `init()` método no seguinte:
 
-   * Visualizador de imagens interativas: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
-   * Visualizador de vídeo interativo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
+   * Visualizador de imagens interativas - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Visualizador de vídeo interativo - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Para anexar o pop-up — descrito nas etapas anteriores — ao visualizador, use o seguinte código:
 
@@ -231,8 +234,8 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    * Identificado nosso pop-up personalizado.
    * Removido do DOM.
-   * Identificado o contêiner do visualizador.
-   * O pop-up foi anexado ao contêiner do visualizador.
+   * Identificado o container do visualizador.
+   * O pop-up foi anexado ao container do visualizador.
 
 1. O código de setHandlers inteiro agora deve ser semelhante ao seguinte (o visualizador de vídeo interativo foi usado):
 
