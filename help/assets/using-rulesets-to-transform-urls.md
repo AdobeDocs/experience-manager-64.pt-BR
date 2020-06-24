@@ -1,8 +1,8 @@
 ---
 title: Uso de conjuntos de regras para transformar URLs
 seo-title: Uso de conjuntos de regras para transformar URLs
-description: 'É possível implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. '
-seo-description: 'É possível implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. '
+description: 'Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. '
+seo-description: 'Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. '
 uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,14 +10,17 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '841'
+ht-degree: 5%
 
 ---
 
 
 # Uso de conjuntos de regras para transformar URLs {#using-rulesets-to-transform-urls}
 
-É possível implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, ela executará a ação apropriada. Exemplos de conjuntos de regras incluem:
+Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, ela executará a ação apropriada. Exemplos de conjuntos de regras incluem:
 
 * Adicionando um sufixo de tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` a um URL.
 * Criando um caminho de pasta para o URL para fins de SEO (Search Engine Otimization).
@@ -35,24 +38,24 @@ source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
 
    Consulte [Remoção de caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem carregar arquivos XML para o Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir aos ativos do Dynamic Media. Esse arquivo reestrutura o formato de protocolo URL padrão para atender à lógica comercial dos sistemas que estão sendo integrados ao Dynamic Media. Especifique um arquivo XML para servir como o caminho de arquivo de definições de conjuntos de regras.
+No contexto da Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem carregar arquivos XML para a Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir ativos Dynamic Media. Esse arquivo reestrutura o formato padrão do protocolo URL para atender à lógica comercial dos sistemas que estão sendo integrados à Dynamic Media. Especifique um arquivo XML para servir como o caminho de arquivo de definições de conjuntos de regras.
 
 >[!CAUTION]
 >
 >Tenha cuidado ao usar conjuntos de regras; eles podem impedir que o conteúdo do Dynamic Media seja exibido em seu site.
 
 Existem conjuntos de regras de amostra disponíveis que podem ajudar a criar seu próprio conjunto de regras.\
-Consulte Referência [do conjunto de](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)regras.
+Consulte Referência [do conjunto de](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)regras.
 
 Como ocorre com a criação de todo o conjunto de regras, verifique se o arquivo XML é válido antes de carregá-lo usando um programa validador XML, como xmlvalid.\
 Consulte também [Solução de problemas de conjuntos](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)de regras.
 
-Além disso, primeiro teste seu conjunto de regras em um ambiente de preparo que não afete seu ambiente de produção ativo.\
-Ambientes de produção e ambientes de preparo normalmente exigem logons diferentes.
+Além disso, primeiro teste seu conjunto de regras em um ambiente temporário que não afete seu ambiente de produção em tempo real.\
+ambientes de produção e ambientes de preparo geralmente exigem logons diferentes.
 
 * **Página de logon do ambiente** de preparo para NA: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Página de logon do ambiente** de preparo EMEA: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **Página de logon do ambiente** de preparo JAPAC: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+* **Página de login do ambiente** de preparo EMEA: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **Página de login do ambiente** de preparo JAPAC: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
 
 Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um conjunto](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)de regras.
 
@@ -81,7 +84,7 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
 1. In the lower-right corner of the Setup page, click **[!UICONTROL Close]**.
 1. Execute um trabalho de publicação do Image Server.
 
-   As condições do conjunto de regras são aplicadas às solicitações dos Servidores de Imagem de Mídia Dinâmica ativos.
+   As condições do conjunto de regras são aplicadas às solicitações dos Dynamic Media Image Servers ativos.
 
    Se você fizer alterações no arquivo do conjunto de regras, as alterações serão aplicadas imediatamente quando você fizer upload e publicar novamente o arquivo atualizado do conjunto de regras.
 
