@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 96%
 
 ---
 
@@ -64,8 +67,6 @@ Antes de fornecer a visão geral das especificações, veja uma pequena coleçã
 >
 >* [Atalhos de teclado ao editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Atalhos de teclado para Consoles](/help/sites-authoring/keyboard-shortcuts.md)
->
-
 
 
 ## Encontrar a sua página {#finding-your-page}
@@ -89,7 +90,7 @@ Antes de fornecer a visão geral das especificações, veja uma pequena coleçã
 
 1. Isso abrirá o assistente que vai guiá-lo na coleta das informações necessárias ao [criar sua nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page). Siga as instruções na tela.
 
-## Selecionar sua página para mais ações  {#selecting-your-page-for-further-action}
+## Selecionar sua página para mais ações   {#selecting-your-page-for-further-action}
 
 Você pode selecionar uma página para executar ações. A seleção de uma página atualizará automaticamente a barra de ferramentas para que as ações pertinentes a esse recurso sejam mostradas.
 
@@ -101,9 +102,10 @@ A forma de selecionar uma página dependerá da exibição usada no console:
 
       * Dispositivo móvel: tocar e segurar
       * Área de trabalho: a [ação rápida](/help/sites-authoring/basic-handling.md#quick-actions) - ícone de marca de verificação:
-   ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
-   * O cartão será sobreposto como uma marca de verificação para mostrar que a página foi selecionada.
+         ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
+
+      * O cartão será sobreposto como uma marca de verificação para mostrar que a página foi selecionada.
    >[!NOTE]
    >
    >No modo de seleção, o ícone **Selecionar** (uma marca de verificação) será alterado para o ícone **Desmarcar** (uma marca de cruz).
@@ -143,14 +145,15 @@ A forma de selecionar uma página dependerá da exibição usada no console:
       * selecionando a guia componentes (o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
       * arrastando o componente desejado para a página.
       O painel lateral pode ser aberto (ou fechado) com:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+
+      ![](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [Edite o conteúdo de um componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) na página:
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone **Editar** (lápis) para abrir a caixa de diálogo.
       * Abra o editor no local para o componente com a opção de tocar e segurar ou dê um clique duplo lento. As ações disponíveis serão exibidas (para alguns componentes isso será uma seleção limitada).
       * Para visualizar todas as ações disponíveis entre no modo de tela cheia usando:
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar as propriedades de um componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -162,9 +165,9 @@ A forma de selecionar uma página dependerá da exibição usada no console:
    * [Copiar (e Colar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Copiar** e **Colar** conforme necessário.
-   >[!NOTE]
-   >
-   >Você pode **Colar** os componentes na mesma página ou em uma diferente. Ao colar em uma página diferente que já foi aberta antes da operação de cortar/copiar, essa página precisará de uma atualização. 
+      >[!NOTE]
+      >
+      >Você pode **Colar** os componentes na mesma página ou em uma diferente. Ao colar em uma página diferente que já foi aberta antes da operação de cortar/copiar, essa página precisará de uma atualização. 
 
    * [Excluir](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
@@ -172,7 +175,7 @@ A forma de selecionar uma página dependerá da exibição usada no console:
    * [Adicionar anotações](/help/sites-authoring/annotations.md#annotations) à página:
 
       * Selecione o modo **Anotar** (ícone de balão). Adicione anotações usando o ícone **Adicionar anotação** (mais). Saia do modo de anotação usando o X na parte superior direita.
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Visualizar uma página](/help/sites-authoring/editing-content.md#preview-mode) (para verificar como ela será exibida no ambiente de publicação)
 
@@ -182,7 +185,7 @@ A forma de selecionar uma página dependerá da exibição usada no console:
    >
    >Para navegar usando os links no conteúdo, você deve usar o [Modo de visualização](/help/sites-authoring/editing-content.md#preview-mode).
 
-## Editar as propriedades da página  {#editing-the-page-properties}
+## Editar as propriedades da página   {#editing-the-page-properties}
 
 Existem dois métodos (principais) [para editar as propriedades da página](/help/sites-authoring/editing-page-properties.md):
 
@@ -231,7 +234,7 @@ Existem dois métodos principais [para publicar a sua página](/help/sites-autho
 
    Consulte [Publicação de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obter mais informações.
 
-## Mover, copiar e colar ou excluir sua página  {#move-copy-and-paste-or-delete-your-page}
+## Mover, copiar e colar ou excluir sua página   {#move-copy-and-paste-or-delete-your-page}
 
 1. [Navegue até a página](#finding-your-page) que deseja mover, copiar e colar ou excluir.
 1. Selecione o ícone copiar (e colar), mover ou excluir, conforme necessário, usando:
@@ -278,7 +281,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 1. Toque/clique no tipo de referência desejado para mostrar mais detalhes e (conforme o caso) realizar novas ações.
 
-## Criar uma versão da sua página  {#creating-a-version-of-your-page}
+## Criar uma versão da sua página   {#creating-a-version-of-your-page}
 
 1. Para abrir o painel Linha do tempo, selecione **[Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)**usando o ícone da barra de ferramentas (antes ou depois de[selecionar a página](#selecting-your-page-for-further-action)):
 
