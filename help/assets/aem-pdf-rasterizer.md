@@ -3,9 +3,9 @@ title: Usar o rasterizador de PDF
 description: Gere miniaturas e execuções de alta qualidade usando a biblioteca do Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
 
 As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação com a saída predefinida e, portanto, proporcionam uma experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Sempre resulta em RGB independentemente do espaço de cor do arquivo de origem.
 
-1. Instale o pacote PDF Rasterizer em sua instância do AEM a partir de Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) pacotes ou Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
+1. Instale o pacote PDF Rasterizer na sua instância do AEM a partir da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
 
    >[!NOTE]
    >
    >A biblioteca do PDF Rasterizer está disponível somente para Windows e Linux.
 
-1. Acesse o console de fluxo de trabalho do AEM Assets a partir de `https://[AEM_server]:[port]/workflow`.
+1. Acesse o console de fluxo de trabalho do AEM Assets de `https://[AEM_server]:[port]/workflow`.
 1. Abra a página de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM.
 1. Configure o seguinte para ignorar a geração de miniatura e execução da Web padrão para arquivos PDF e AI:
 
@@ -104,4 +104,4 @@ As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Salve o fluxo de trabalho.
-1. Carregue um arquivo PDF ou um arquivo AI para os ativos AEM. O PDF Rasterizer gera miniaturas e representações da Web para o arquivo.
+1. Carregue um arquivo PDF ou um arquivo AI para o AEM Assets. O PDF Rasterizer gera miniaturas e representações da Web para o arquivo.
