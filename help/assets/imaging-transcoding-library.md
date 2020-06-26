@@ -3,7 +3,7 @@ title: Biblioteca de transcodificação de imagens
 description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens da Adobe, uma solução de processamento de imagens que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Para configurar o processamento ITL, crie um arquivo de configuração e atualiz
 
 Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas usando as etapas a seguir. Você precisa de permissões de administrador ou raiz.
 
-1. Baixe o pacote da Biblioteca de transcodificação de imagens da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) software e instale-o usando o Gerenciador de pacotes. O pacote é compatível com o AEM 6.5.
+1. Baixe o pacote da Biblioteca de transcodificação de [imagens da Distribuição](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instale-o usando o Gerenciador de pacotes. O pacote é compatível com o AEM 6.5.
 
 1. Para saber uma ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no console da Web e toque em **[!UICONTROL OSGi > Pacotes]**. Como alternativa, para abrir o console de pacotes, acesse o `https://[aem_server:[port]/system/console/bundles/` URL. Localize o `com.day.cq.dam.cq-dam-switchengine` pacote e sua ID.
 
