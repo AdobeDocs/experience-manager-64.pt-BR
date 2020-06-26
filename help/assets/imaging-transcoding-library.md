@@ -3,9 +3,9 @@ title: Biblioteca de transcodificação de imagens
 description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens da Adobe, uma solução de processamento de imagens que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Para configurar o processamento ITL, crie um arquivo de configuração e atualiz
 
 Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas usando as etapas a seguir. Você precisa de permissões de administrador ou raiz.
 
-1. Baixe o pacote da Biblioteca de transcodificação de imagens do Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) pacotes ou da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) software e instale-o usando o Gerenciador de pacotes. O pacote é compatível com o AEM 6.5.
+1. Baixe o pacote da Biblioteca de transcodificação de imagens da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) software e instale-o usando o Gerenciador de pacotes. O pacote é compatível com o AEM 6.5.
 
 1. Para saber uma ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no console da Web e toque em **[!UICONTROL OSGi > Pacotes]**. Como alternativa, para abrir o console de pacotes, acesse o `https://[aem_server:[port]/system/console/bundles/` URL. Localize o `com.day.cq.dam.cq-dam-switchengine` pacote e sua ID.
 
@@ -129,6 +129,7 @@ Por exemplo, se você quiser criar miniaturas para uma imagem TIFF usando a Bibl
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![calúnia](assets/chlimage_1-199.png)
 
 1. (Opcional) Gere miniaturas de uma execução intermediária usando um único comando. A execução intermediária atua como fonte para gerar representações estáticas e da Web. Este método é mais rápido do que o método anterior. No entanto, não é possível aplicar parâmetros personalizados a miniaturas usando esse método.
