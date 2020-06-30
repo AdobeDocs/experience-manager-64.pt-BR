@@ -3,9 +3,9 @@ title: Configure o RTE para vários editores no local.
 description: Crie vários editores no local no Adobe Experience Manager configurando o Editor de Rich Text.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '445'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # Configurar vários editores no local {#configure-multiple-in-place-editors}
 
-Você pode configurar o Editor de Rich Text no Adobe Experience Manager para que ele tenha vários editores no local. Quando configurado, você pode selecionar o conteúdo apropriado e abrir o editor apropriado. Por exemplo:
+Você pode configurar o Editor de Rich Text no Adobe Experience Manager para que ele tenha vários editores no local. Quando configurado, você pode selecionar o conteúdo apropriado e abrir o editor apropriado.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![Um editor local específico](assets/rte-inplace-editor.png)
 
 ## Configurar vários editores {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ Por exemplo:
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.
