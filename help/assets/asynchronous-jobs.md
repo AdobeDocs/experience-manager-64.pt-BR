@@ -1,106 +1,96 @@
 ---
-title: Operações assíncronas para melhorar o desempenho
-description: Visão geral das operações assíncronas nos ativos AEM.
+title: Configure operações assíncronas [!DNL Adobe Experience Manager].
+description: Conclua de forma assíncrona algumas tarefas que consomem muitos recursos para otimizar o desempenho [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 2%
 
 ---
 
 
 # Operações assíncronas {#asynchronous-operations}
 
-Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager (AEM) Assets processa de modo assíncrono determinadas operações de ativos de longa duração e com uso intenso de recursos. Essas operações incluem:
+Para reduzir o impacto adverso no desempenho, [!DNL Adobe Experience Manger Assets] processa de forma assíncrona determinadas operações de ativos de longa duração e de uso intensivo de recursos. O processamento assíncrono envolve enfileirar várias tarefas e, eventualmente, executá-las de forma serial, dependendo da disponibilidade de recursos do sistema. Essas operações incluem:
 
 * Excluindo muitos ativos.
 * Movimentação de muitos ativos ou ativos com muitas referências.
-* Exportar/importar metadados de ativos em massa.
+* Exportar e importar metadados de ativos em massa.
 
-O processamento assíncrono envolve enfileiramento de várias tarefas e, eventualmente, sua execução em série, dependendo da disponibilidade dos recursos do sistema.
-
-Você pode exibir o status de trabalhos assíncronos na página Status **[!UICONTROL do trabalho]** assíncrono.
+Você pode visualização o status de tarefas assíncronas na página Status **[!UICONTROL do trabalho]** assíncrono.
 
 >[!NOTE]
 >
->Por padrão, os trabalhos no AEM Assets são executados em paralelo. Se N for o número de núcleos da CPU, os trabalhos N/2 poderão ser executados em paralelo, por padrão. Para usar configurações personalizadas para a fila de trabalhos, modifique a configuração da Fila **[!UICONTROL padrão de operação]** assíncrona do console da Web. Para obter mais informações, consulte Configurações [de](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)fila.
+>Por padrão, as [!DNL Assets] tarefas são executadas em paralelo. Se `N` for o número de núcleos da CPU, o `N/2` tarefa pode executar simultaneamente, por padrão. Para usar configurações personalizadas para a fila de tarefas, modifique a configuração da Fila **[!UICONTROL padrão de operação]** assíncrona do console [!UICONTROL da]Web. Para obter mais informações, consulte configurações [de](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)fila.
 
 ## Monitore o status das operações assíncronas {#monitoring-the-status-of-asynchronous-operations}
 
-Sempre que o AEM Assets processa uma operação de forma assíncrona, você recebe uma notificação na sua caixa de entrada e por email.
+Sempre que [!DNL Assets] processar uma operação de forma assíncrona, você receberá uma notificação em sua [!DNL Experience Manager] Caixa de [entrada](/help/sites-authoring/inbox.md) e por email. Para visualização o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
 
-Para exibir o status das operações assíncronas em detalhes, navegue até a página Status **do trabalho** assíncrono.
+1. Na [!DNL Experience Manager] interface, clique em **[!UICONTROL Operações]** > **[!UICONTROL Tarefas]**.
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ativos > Trabalhos]**.
 1. Na página Status **[!UICONTROL do trabalho]** assíncrono, reveja os detalhes das operações.
 
-   ![job_status](assets/job_status.png)
+   ![Status e detalhes das operações assíncronas](assets/job_status.png)
 
-   Para verificar o progresso de uma operação específica, consulte o valor na coluna **[!UICONTROL Status]** . Dependendo do progresso, um dos seguintes status é exibido:
+   Para verificar o progresso de uma operação, consulte a coluna **[!UICONTROL Status]** . Dependendo do progresso, um dos seguintes status é exibido:
 
-   **Ativo**: A operação está sendo processada
+   * **[!UICONTROL Ativo]**: A operação está sendo processada.
+   * **[!UICONTROL Sucesso]**: A operação está concluída.
+   * **[!UICONTROL Falha]** ou **[!UICONTROL erro]**: não foi possível processar a operação.
+   * **[!UICONTROL Agendado]**: A operação está programada para processamento posterior.
 
-   **Sucesso**: A operação está concluída
+1. Para interromper uma operação ativa, selecione-a na lista e clique no ícone **[!UICONTROL Parar]** ![parar](assets/do-not-localize/stop_icon.svg) na barra de ferramentas.
 
-   **Falha**: Não foi possível processar a operação
+1. Para visualização de detalhes adicionais, por exemplo, descrição e registros, selecione a operação e clique em **[!UICONTROL Abrir]** ![open_icon](assets/do-not-localize/edit_icon.svg) na barra de ferramentas. A página de detalhes da tarefa é exibida.
 
-   **Agendado**: A operação está programada para processamento posterior
+   ![Detalhes de uma tarefa de importação de metadados](assets/job_details.png)
 
-1. Para interromper uma operação ativa, selecione-a na lista e toque/clique no ícone **[!UICONTROL Parar]** na barra de ferramentas.
-
-   ![stop_icon](assets/stop_icon.png)
-
-1. Para exibir detalhes adicionais, por exemplo, descrição e registros, selecione a operação e toque/clique no ícone **[!UICONTROL Abrir]** na barra de ferramentas.
-
-   ![open_icon](assets/open_icon.png)
-
-   A página de detalhes da tarefa é exibida.
-
-   ![job_details](assets/job_details.png)
-
-1. Para excluir a operação da lista, selecione **[!UICONTROL Excluir]** na barra de ferramentas. Para baixar os detalhes em um arquivo CSV, toque/clique no ícone **[!UICONTROL Download]** .
+1. Para excluir a operação da lista, selecione **[!UICONTROL Excluir]** na barra de ferramentas. Para baixar os detalhes em um arquivo CSV, clique em **[!UICONTROL Download]**.
 
    >[!NOTE]
    >
-   >Não é possível excluir um trabalho se seu status estiver ativo ou na fila.
+   >Não é possível excluir uma tarefa se seu status estiver ativo ou na fila.
 
-## Expurgar trabalhos concluídos {#purging-completed-jobs}
+## Limpar tarefas concluídas {#purge-completed-tasks}
 
-Os ativos AEM executam um trabalho de limpeza todos os dias às 13:00 da manhã para excluir trabalhos assíncronos concluídos que têm mais de um dia.
+[!DNL Experience Manager Assets] executa uma tarefa de expurgação todos os dias às 100 horas para excluir tarefas assíncronas concluídas com mais de um dia de idade.
 
-Você pode modificar a programação para a ordem de produção de expurgação e a duração para a qual os detalhes das ordens de produção concluídas são retidos antes de serem deletados. Você também pode configurar o número máximo de trabalhos concluídos para os quais os detalhes são retidos a qualquer momento.
+<!-- TBD: Find out from the engineering team and mention the time zone of this 1:00 am task.
+-->
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
-1. Abra o trabalho **[!UICONTROL Adobe CQ DAM Async Jobs para Expurgar agendado]** .
-1. Especifique o número limite de dias após o qual as tarefas concluídas são excluídas e o número máximo de trabalhos para os quais os detalhes são mantidos no histórico.
+Você pode modificar a programação para a tarefa de expurgação e a duração para a qual os detalhes das tarefas concluídas são retidos antes de serem excluídas. Você também pode configurar o número máximo de tarefas concluídas para as quais os detalhes são retidos a qualquer momento.
 
-   ![purge_job](assets/purge_job.png)
+1. Na [!DNL Experience Manager] interface, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da Web]**.
+1. Abra a tarefa Programada **[!UICONTROL de Expurgação de tarefas assíncronas do]** Adobe CQ DAM.
+1. Especifique o número limite de dias após os quais as tarefas concluídas são excluídas e o número máximo de tarefas para as quais os detalhes são mantidos no histórico. Salve as alterações.
 
-1. Salve as alterações.
+   ![Configuração para agendar a remoção de tarefas assíncronas](assets/purge_job.png)
 
-## Configurar limites para processamento assíncrono {#configuring-thresholds-for-asynchronous-processing}
+## Configurar limite para operações de exclusão assíncronas {#configure-thresholds-for-asynchronous-delete-operations}
 
-Você pode configurar o número limite de ativos ou referências para que os ativos AEM processem uma determinada operação de forma assíncrona.
+Se o número de ativos ou pastas a serem excluídos exceder o número limite definido, a operação de exclusão será executada de forma assíncrona.
 
-### Configurar o limite para operações de exclusão assíncronas {#configuring-thresholds-for-asynchronous-delete-operations}
+1. Na [!DNL Experience Manager] interface, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da Web]**.
+1. No Console [!UICONTROL da]Web, abra a configuração Processamento **[!UICONTROL de Trabalho da Operação de Exclusão]** Assíncrona.
+1. Na caixa Número **[!UICONTROL limite de ativos]** , especifique os números limite para excluir ativos, pastas ou referências de forma assíncrona. Salve as alterações.
 
-Se o número de ativos ou pastas a serem excluídos exceder o número limite, a operação de exclusão será executada de forma assíncrona.
+   ![Definir o limite para a tarefa excluir ativos](assets/delete_threshold.png)
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
-1. No console da Web, abra a configuração **[!UICONTROL Async Delete Operation Job Processing]** .
-1. Na caixa Número **[!UICONTROL limite de ativos]** , especifique o número limite de ativos/pastas para o processamento assíncrono de operações de exclusão.
+## Configurar limite para operações de movimentação assíncronas {#configure-thresholds-for-asynchronous-move-operations}
 
-   ![delete_limit](assets/delete_threshold.png)
+Se o número de ativos, pastas ou referências a serem movidos exceder o número limite definido, a operação de movimentação será executada de forma assíncrona.
 
-1. Salve as alterações.
+1. Na [!DNL Experience Manager] interface, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da Web]**.
+1. No Console Web, abra a configuração Processamento **[!UICONTROL de Trabalho da Operação de Movimentação]** Assíncrona.
+1. Na caixa Número **[!UICONTROL limite de ativos/referências]** , especifique os números limite para mover ativos, pastas ou referências de forma assíncrona. Salve as alterações.
 
-### Configurar o limite para operações de movimentação assíncronas {#configuring-thresholds-for-asynchronous-move-operations}
+   ![Definir o limite de tarefa para mover ativos](assets/move_threshold.png)
 
-Se o número de ativos/pastas ou referências a serem movidos exceder o número limite, a operação de movimentação será executada de forma assíncrona.
+>[!MORELIKETHIS]
+>
+>* [Configure e-mail no Experience Manager](/help/sites-administering/notification.md).
+>* [Importe e exporte metadados de ativos em massa](/help/assets/metadata-import-export.md).
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
-1. No console da Web, abra a configuração Processamento **[!UICONTROL de Trabalho da Operação de Movimentação]** Assíncrona.
-1. Na caixa Número **[!UICONTROL limite de ativos/referências]** , especifique o número limite de ativos/pastas ou referências para o processamento assíncrono de operações de movimentação.
-
-   ![move_limit](assets/move_threshold.png)
-
-1. Salve as alterações.
