@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 0dced2f56fcebfb03fa6264e98cd686e8e7902c6
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Em uma instalação padrão, o AEM cria uma nova versão de uma página ou nó q
 
 Você pode criar versões adicionais mediante solicitação usando a guia **Controle de versão** do sidekick. Essas versões são armazenadas no repositório e podem ser restauradas se necessário.
 
-Essas versões nunca são removidas, portanto, o tamanho do repositório crescerá com o tempo e, portanto, precisará ser gerenciado.
+Essas versões nunca são expurgadas, portanto, o tamanho do repositório crescerá com o tempo e, portanto, precisará ser gerenciado.
 
 O AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositório:
 
@@ -35,7 +38,7 @@ O AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositó
 
 * a ferramenta [Expurgar versões](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
 
-   Isso é usado como parte do monitoramento e manutenção do repositório.
+   Isso é usado como parte do monitoramento e da manutenção do repositório.
 
    Ele permite que você intervenha para remover versões antigas de um nó, ou uma hierarquia de nós, de acordo com estes parâmetros:
 
@@ -47,11 +50,11 @@ O AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositó
 
       Quando a idade de uma versão exceder esse valor, ele será removido do repositório.
 
-* a tarefa [de manutenção Expurgação da](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)Versão. Você pode agendar a tarefa de manutenção Expurgação da Versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Expurgação de versão.
+* a tarefa [de manutenção Expurgação da](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)versão. Você pode agendar a tarefa de manutenção Expurgação da versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Expurgação de versão.
 
 >[!CAUTION]
 >
->Para otimizar o tamanho do repositório, execute a tarefa de expurgação da versão com frequência. A tarefa deve ser programada fora do horário comercial quando houver uma quantidade limitada de tráfego.
+>Para otimizar o tamanho do repositório, execute a tarefa de expurgação da versão com frequência. A tarefa deve ser agendada fora do horário comercial quando houver uma quantidade limitada de tráfego.
 
 ## Gerenciador de versão {#version-manager}
 
@@ -69,13 +72,13 @@ As opções disponíveis são as seguintes:
 
    Uma versão é criada, a menos que o agente de replicação esteja configurado para suprimir a criação de versões, o que é respeitado pelo Gerenciador de versões
 
-   Uma versão só será criada se a ativação ocorrer em caminhos contidos em versionmanager.ivCaminhos (consulte abaixo).
+   Uma versão só será criada se a ativação ocorrer em caminhos contidos em versionmanager.ivCaminhos (veja abaixo).
 
 * `versionmanager.ivPaths` (String[], padrão: {&quot;/&quot;})
 
    caminhos nos quais as versões são criadas implicitamente na ativação se versionmanager.createVersionOnActivation for verdadeiro.
 
-* `versionmanager.purgingEnabled` (Booleano, padrão: false)
+* `versionmanager.purgingEnabled` (Booleano, padrão: falso)
 
    se ativar a remoção quando novas versões forem criadas
 
