@@ -1,8 +1,8 @@
 ---
 title: Integração ao Adobe Analytics
 seo-title: Integração ao Adobe Analytics
-description: Saiba como integrar o AEM ao Adobe Analytics.
-seo-description: Saiba como integrar o AEM ao Adobe Analytics.
+description: Saiba como integrar o AEM com a Adobe Analytics.
+seo-description: Saiba como integrar o AEM com a Adobe Analytics.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
 translation-type: tm+mt
-source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 21%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
 A integração do Adobe Analytics e do AEM permite rastrear a atividade da página da Web:
 
 * Uma configuração do Adobe Analytics permite que o AEM se autentique com o Adobe Analytics.
-* Uma estrutura identifica os dados enviados para o conjunto de relatórios do Adobe Analytics.
+* Uma estrutura identifica os dados enviados para o conjunto de relatórios da Adobe Analytics.
 
 Os dados incluem dados da página e do utilizador; por exemplo:
 
@@ -31,10 +34,10 @@ Os dados incluem dados da página e do utilizador; por exemplo:
 
 As páginas a seguir ajudam a configurar a integração:
 
-* [Conexão com o Adobe Analytics e criação de estruturas](/help/sites-administering/adobeanalytics-connect.md)
-* [Configuração do rastreamento de links para o Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
-* [Mapeamento de dados de componentes com as propriedades do Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
-* [Configuração do rastreamento de vídeo para o Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
+* [Conectando-se ao Adobe Analytics e criando estruturas](/help/sites-administering/adobeanalytics-connect.md)
+* [Configuração do rastreamento de links para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Mapeamento de dados do componente com as propriedades do Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
+* [Configuração do rastreamento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
 Você também pode usar o assistente [de](/help/sites-administering/opt-in.md) aceitação para executar facilmente a integração.
 
@@ -46,8 +49,8 @@ Você também pode usar o assistente [de](/help/sites-administering/opt-in.md) a
 
 Consulte:
 
-* [Extensão da integração](/help/sites-developing/extending-analytics.md) do Adobe Analytics para obter informações sobre o desenvolvimento de componentes que coletam dados de usuários e personalizam a estrutura do Adobe Analytics.
-* O artigo da base de conhecimento, Integração do [Adobe Analytics - solução de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obter informações sobre como solucionar problemas de integração do Adobe Analytics.
+* [Estendendo a integração](/help/sites-developing/extending-analytics.md) do Adobe Analytics para obter informações sobre o desenvolvimento de componentes que coletam dados de usuários e personalizam a estrutura do Adobe Analytics.
+* O artigo da base de conhecimento, Integração com o [Adobe Analytics - solução de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obter informações sobre como solucionar problemas da integração com o Adobe Analytics.
 
 >[!NOTE]
 >
@@ -57,9 +60,8 @@ Consulte:
    >  por exemplo, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configuração** de proxy de componentes HTTP Apache para configurar a API 4.x;\
-   >  por exemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+* **Configuração** de proxy de componentes HTTP do Apache para configurar a API 4.x;
 >
-
-
+>  
+por exemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
