@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 9%
@@ -166,7 +166,7 @@ Depois que uma fonte é modificada, as alterações podem ser propagadas para as
 Você pode iniciar uma ação de implantação a partir do ativo de origem e atualizar todas ou algumas cópias ao vivo selecionadas.
 
 1. Selecione um ativo de live copy ou uma pasta. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
-1. Clique em **[!UICONTROL Origem da Live Copy]**. Clique em **[!UICONTROL Rollout]** na barra de ferramentas.
+1. Clique em **[!UICONTROL Origem da Live Copy]**. Click **[!UICONTROL Rollout]** from the toolbar.
 1. Selecione as cópias online que deseja atualizar. Clique em **[!UICONTROL Rollout]**.
 1. Para implementar as atualizações feitas nos ativos filho, selecione Origem do **[!UICONTROL roll-out e Todos os filhos]**.
    ![Implantar as modificações da origem em algumas ou em todas as cópias online](assets/lc_rollout_page.png)
@@ -253,9 +253,9 @@ O AEM permite estender a funcionalidade usando as APIs Java MSM. Para os Ativos,
 
 >[!NOTE]
 >
-> * O Blueprint no MSM for Site é chamado de Live Copy source in MSM for Assets.
-> * A remoção da etapa de capítulos no assistente para criação de site não é compatível com o MSM for Assets.
-> * A configuração de bloqueios MSM nas propriedades da página (interface habilitada para toque) não é suportada no MSM para Ativos.
+>* O Blueprint no MSM for Site é chamado de Live Copy source in MSM for Assets.
+>* A remoção da etapa de capítulos no assistente para criação de site não é compatível com o MSM for Assets.
+>* A configuração de bloqueios MSM nas propriedades da página (interface habilitada para toque) não é suportada no MSM para Ativos.
 
 
 ## Impacto das tarefas de gerenciamento de ativos em cópias online {#impact-of-asset-management-tasks-on-live-copies}
