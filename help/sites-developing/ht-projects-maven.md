@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -553,6 +553,7 @@ Para obter a exclusão das classes compiladas dos JSPs, configuramos o plug-in M
 >
 >Por exemplo, se você incluir `/libs/foundation/global.jsp`, poderá usar a seguinte configuração para a configuração `maven-resources-plugin` em vez da configuração acima, que ignora completamente `/libs`.
 >
+>
 ```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
@@ -672,8 +673,8 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### Como trabalhar com o AEM Communities {#how-to-work-with-aem-communities}
+### Como trabalhar com AEM Communities {#how-to-work-with-aem-communities}
 
-Quando licenciado para o recurso AEM Communities, é necessário um jar de API adicional.
+Quando licenciado para o recurso de AEM Communities, é necessário um jar de API adicional.
 
 Para obter detalhes, consulte [Uso do Maven para comunidades](/help/communities/maven.md)
