@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '4726'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ Antes de começar a configurar ou codificar seu componente, você deve perguntar
 Antes de qualquer start sério de discussão sobre o desenvolvimento de componentes, você precisa saber qual interface seus autores usarão:
 
 * **Interface do usuário habilitada para toque**
-   [A interface](/help/sites-developing/touch-ui-concepts.md) de usuário padrão que foi introduzida no AEM 5.6.0 como uma pré-visualização e estendida no 6.x. Ele se baseia na experiência unificada do usuário para a Adobe Marketing Cloud, usando as tecnologias subjacentes da interface do usuário [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e da interface do usuário [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [A interface](/help/sites-developing/touch-ui-concepts.md) de usuário padrão que foi introduzida no AEM 5.6.0 como uma pré-visualização e estendida no 6.x. Ele é baseado na experiência unificada do usuário para o Adobe Marketing Cloud, usando as tecnologias subjacentes da interface do usuário [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e da interface do usuário [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Interface clássica do** usuário com base na tecnologia ExtJS que foi introduzida com o CQ 5.1.
 
@@ -69,9 +72,10 @@ Os componentes podem ser implementados para suportar a interface habilitada para
 Por isso cobriremos as noções básicas de ambos, e como reconhecê-los, nesta página.
 
 >[!NOTE]
-> A Adobe recomenda aproveitar a interface habilitada para toque para se beneficiar da tecnologia mais recente. [Ferramentas e ferramentas de moderação do AEM (moderniatzion-tools.md) podem facilitar a migração.
+>
+>A Adobe recomenda aproveitar a interface habilitada para toque para se beneficiar da tecnologia mais recente. [Ferramentas e ferramentas de moderação do AEM (moderniatzion-tools.md) podem facilitar a migração.
 
-### Lógica de conteúdo e marcação de renderização {#content-logic-and-rendering-markup}
+### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
 É recomendável manter o código responsável pela marcação e renderização separado do código que controla a lógica usada para selecionar o conteúdo do componente.
 
@@ -87,7 +91,7 @@ HTL e JSP podem ser usados para desenvolver componentes para a interface clássi
 
 >[!NOTE]
 >
->As exceções são Campos de formulário da Fundação da interface do usuário Granite (conforme usado em caixas de diálogo). Eles ainda exigem o uso do JSP.
+>As exceções são os Campos de formulário da Fundação da interface do usuário Granite (conforme usado em caixas de diálogo). Eles ainda exigem o uso do JSP.
 
 ### Desenvolver seus próprios componentes {#developing-your-own-components}
 
@@ -583,7 +587,7 @@ A configuração é comum à interface habilitada para toque e clássica, embora
 
 O comportamento de edição de um componente é configurado adicionando um `cq:editConfig` nó do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades e nós filhos específicos. As seguintes propriedades e nós secundários estão disponíveis:
 
-* [ Propriedades `cq:editConfig`](#configuring-with-cq-editconfig-properties)do nó:
+* [ `cq:editConfig` propriedades](#configuring-with-cq-editconfig-properties)do nó:
 
    * `cq:actions` ( `String array`): define as ações que podem ser executadas no componente.
    * `cq:layout` ( `String`): : define como o componente é editado na interface clássica.
