@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Há vários métodos disponíveis para rastrear eventos de vídeo, sendo 2 opç�
 >[!NOTE]
 >
 >Antes de continuar, verifique se você tem um vídeo **** reproduzível carregado no AEM.
-> 
+>
 >Para garantir que seus vídeos sejam reproduzidos na página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)**para obter informações sobre como transcodificar arquivos de vídeo no AEM.
 
 Use o procedimento a seguir para configurar uma estrutura para rastreamento de vídeo usando cada método.
