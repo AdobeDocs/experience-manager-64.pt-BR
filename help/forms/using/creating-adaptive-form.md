@@ -1,17 +1,17 @@
 ---
 title: Criação de um formulário adaptável
 seo-title: Criação de um formulário adaptável
-description: Como criar um formulário adaptável usando o AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
-seo-description: Como criar um formulário adaptável usando o AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
+description: Como criar um formulário adaptável usando AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
+seo-description: Como criar um formulário adaptável usando AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Siga estas etapas para criar um formulário adaptável.
 
-1. Acessar a instância do autor de formulários AEM em `https://[server]:[port]/<custom-context-if-any>.`
+1. Acessar instância do autor do AEM Forms em `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -67,7 +67,7 @@ Siga estas etapas para criar um formulário adaptável.
 
    Para obter informações sobre a interface adaptativa de criação de formulários e os componentes disponíveis, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Permita que as janelas pop-up do seu navegador abram o formulário recém-criado em uma nova guia.
 
@@ -97,7 +97,7 @@ Você pode reaproveitar os modelos de formulário XFA para criar formulários ad
 
 >[!NOTE]
 >
->[Faça upload do modelo](/help/forms/using/get-xdp-pdf-documents-aem.md) de formulário XFA para formulários AEM antes de criar um formulário adaptável com base no modelo de formulário.
+>[Carregue o Modelo](/help/forms/using/get-xdp-pdf-documents-aem.md) de formulário XFA para AEM Forms antes de criar um start de formulário adaptável com base no modelo de formulário.
 
 Faça o seguinte para usar um modelo de formulário XFA como modelo de formulário para o formulário adaptável:
 
@@ -130,7 +130,7 @@ Faça o seguinte para usar o schema XML ou JSON como modelo de formulário para 
    * **[!UICONTROL Carregar do disco]** - Selecione essa opção e toque em Carregar definição de Schema para navegar e carregar um schema XML ou schema JSON do seu sistema de arquivos. O arquivo de schema carregado reside no formulário e não pode ser acessado por outros formulários adaptáveis.
    * **[!UICONTROL Pesquisar no repositório]** - Selecione essa opção para selecionar a partir da lista de arquivos de definição de schemas disponíveis no repositório. Selecione o arquivo de schema XML ou JSON como modelo de formulário. O schema selecionado será associado ao formulário por referência e estará acessível para uso em outros formulários adaptáveis.
 
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+   >[!CAUTION]
    >
    >Verifique se o nome do arquivo do schema JSON termina com **.schema.json**. Por exemplo: mySchema.schema.json
 
@@ -148,7 +148,7 @@ Faça o seguinte para usar o schema XML ou JSON como modelo de formulário para 
 
 ## Modelos de formulário adaptável {#adaptive-form-templates}
 
-Um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele possui componentes pré-formatados contendo determinadas propriedades e estrutura de conteúdo. O AEM Forms fornece alguns modelos de formulário adaptáveis. Para obter o pacote de modelo completo, incluindo modelos avançados, é necessário instalar o pacote complementar AEM Forms. Para obter mais informações, consulte [Instalação do pacote](/help/forms/using/installing-configuring-aem-forms-osgi.md)complementar AEM Forms.
+Um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele possui componentes pré-formatados contendo determinadas propriedades e estrutura de conteúdo. O AEM Forms fornece alguns modelos de formulário adaptáveis. Para obter o pacote de modelo completo, incluindo modelos avançados, é necessário instalar o pacote de complementos AEM Forms. Para obter mais informações, consulte [Instalação do pacote](/help/forms/using/installing-configuring-aem-forms-osgi.md)complementar AEM Forms.
 
 Além disso, você pode usar o editor de modelos para criar seus próprios modelos. Para obter mais informações sobre como trabalhar com modelos, consulte Modelos [de formulário](/help/forms/using/template-editor.md)adaptáveis.
 
