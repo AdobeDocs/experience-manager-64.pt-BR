@@ -10,14 +10,17 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
 # Princípios básicos para mensagens {#messaging-essentials}
 
-Esta página documenta os detalhes de como trabalhar com o componente Mensagens para incluir um recurso de mensagem em um site.
+Esta página documentos os detalhes de como trabalhar com o componente Mensagens para incluir um recurso de mensagem em um site.
 
 ## Essenciais para o lado do cliente {#essentials-for-client-side}
 
@@ -52,13 +55,13 @@ Esta página documenta os detalhes de como trabalhar com o componente Mensagens 
  </tbody> 
 </table>
 
-**Lista** de mensagens (para Caixa de entrada, Enviado e Lixeira)
+**Lista** de mensagem (para Caixa de entrada, Enviado e Lixeira)
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>resourceType</strong></td> 
-   <td><p>social/mensagens/componentes/hbs/messagebox</p> </td> 
+   <td><p>social/mensagens/componentes/hbs/caixa de mensagem</p> </td> 
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
@@ -103,17 +106,16 @@ Consulte também Personalizações do lado do [cliente](client-customize.md)
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 Por exemplo:
 >
 >
-```>
+```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
 
 ### Site da comunidade {#community-site}
 
@@ -123,7 +125,7 @@ Uma estrutura de site da comunidade, criada usando o assistente, incluirá o rec
 
 O recurso Mensagens sociais lança eventos para operações, por exemplo `send`, `marking read`, `marking delete`. Esses eventos podem ser capturados e as ações executadas nos dados contidos no evento.
 
-O exemplo a seguir é de um manipulador de eventos que escuta o `message sent` evento e envia um email para todos os destinatários da mensagem que usam o `Day CQ Mail Service`.
+O exemplo a seguir é de um manipulador de eventos que escuta o `message sent` evento e envia um email para todos os recipient de mensagens que usam o `Day CQ Mail Service`.
 
 Para tentar o script de amostra do servidor, você precisará de um ambiente de desenvolvimento e a capacidade de criar um pacote OSGi.
 
@@ -146,7 +148,7 @@ Para tentar o script de amostra do servidor, você precisará de um ambiente de 
 1. Criar o pacote
 1. Verifique se o serviço `Day CQ Mail Service`OSGi está configurado
 1. Faça logon como um usuário de demonstração e envie e-mail para outro
-1. O destinatário deve receber um email com relação a uma nova mensagem
+1. O recipient deve receber um email com relação a uma nova mensagem
 
 #### MessageEventHandler.java {#messageeventhandler-java}
 
