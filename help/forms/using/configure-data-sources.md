@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,14 +45,12 @@ Você pode configurar bancos de dados relacionais usando a Configuração do con
    * Nome da classe Java para o driver JDBC
    * URI de conexão JDBC
    * Nome de usuário e senha para estabelecer conexão com o driver JDBC
-
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Certifique-se de criptografar informações confidenciais, como senhas, antes de configurar a fonte de dados. Para criptografar:
    >
    >1. Ir para `https://[server]:[port]/system/console/crypto`.
    >1. No campo Texto **** simples, especifique a senha ou qualquer string a ser criptografada e clique em **[!UICONTROL Proteger]**.
-
    >
    >O texto criptografado aparece no campo Texto protegido que você pode especificar na configuração.
 
@@ -78,8 +76,7 @@ Você pode configurar o perfil do usuário do AEM usando a configuração do Con
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
-
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >O **&amp;ast;** no exemplo acima indica todos os nós sob o `profile/empLocation/` nó no perfil de usuário do AEM na estrutura CRXDE. Isso significa que o modelo de dados de formulário pode acessar a `city` propriedade do tipo `string` presente em qualquer nó sob o `profile/empLocation/` nó. No entanto, os nós que contêm a propriedade especificada devem seguir uma estrutura consistente.
 
@@ -161,7 +158,6 @@ Um serviço OData é identificado pelo URL raiz do serviço. Para configurar um 
 
    * URL raiz do serviço para o serviço OData a ser configurado.
    * Selecione o tipo de autenticação — Nenhum, OAuth2.0, Autenticação básica ou Autenticação personalizada — para acessar o serviço OData e, portanto, fornecer os detalhes para autenticação.
-
    >[!NOTE]
    >
    >Você deve selecionar o tipo de autenticação OAuth 2.0 para se conectar aos serviços do Microsoft Dynamics usando o terminal OData como a raiz do serviço.
