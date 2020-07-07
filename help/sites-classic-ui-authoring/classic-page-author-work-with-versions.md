@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +26,7 @@ O controle de versão cria um “instantâneo” de uma página em um ponto no t
 * Restaurar uma página para uma versão anterior, por exemplo, para desfazer uma alteração feita em uma página.
 * Comparar a versão atual de uma página com uma versão anterior, com diferenças no texto e nas imagens realçadas.
 
-## Criar uma nova versão  {#creating-a-new-version}
+## Criar uma nova versão   {#creating-a-new-version}
 
 Para criar uma nova versão de uma página:
 
@@ -95,11 +98,12 @@ Para comparar a versão atual da página com uma versão anterior:
    * O texto que foi excluído é vermelho e riscado.
    * O texto que foi adicionado é verde e destacado.
    * As imagens que foram adicionadas ou excluídas são contornadas por uma borda verde.
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. No Sidekick, selecione a subguia **Restaurar versão** e clique no botão **&lt;&lt;Voltar** para exibir a versão atual.
 
-## Timewarp  {#timewarp}
+## Timewarp   {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado ***publicado*** de uma página em ocasiões específicas no passado.
 
@@ -146,6 +150,7 @@ A versão do calendário será usada se você tiver um dia específico a ser exi
 
    * **Sair do Timewarp** para sair e retornar à página de autor atual.
    * [Exibir linha do tempo](#using-the-timewarp-timeline) para exibir a linha do tempo.
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ### Using the Timewarp Timeline {#using-the-timewarp-timeline}
@@ -189,4 +194,4 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 >[!CAUTION]
 >
-> O Timewarp foi projetado como uma ferramenta para auxiliar autores com a compreensão e criação de conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi projetado como uma ferramenta para auxiliar autores com a compreensão e criação de conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
