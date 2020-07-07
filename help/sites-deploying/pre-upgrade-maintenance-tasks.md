@@ -1,6 +1,6 @@
 ---
-title: Tarefas de manutenção de pré-atualização
-seo-title: Tarefas de manutenção de pré-atualização
+title: Tarefas de manutenção pré-atualização
+seo-title: Tarefas de manutenção pré-atualização
 description: Saiba mais sobre as tarefas de pré-atualização no AEM.
 seo-description: Saiba mais sobre as tarefas de pré-atualização no AEM.
 uuid: 6c0d4b31-6464-470b-9e40-1fc2abb9b2a6
@@ -10,12 +10,15 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 translation-type: tm+mt
-source-git-commit: 1d1914f760e3d77350665ab55025266e79d9f0fe
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '2178'
+ht-degree: 0%
 
 ---
 
 
-# Tarefas de manutenção de pré-atualização{#pre-upgrade-maintenance-tasks}
+# Tarefas de manutenção pré-atualização{#pre-upgrade-maintenance-tasks}
 
 Antes de iniciar a atualização, é importante seguir essas tarefas de manutenção para garantir que o sistema esteja pronto e possa ser revertido em caso de problemas:
 
@@ -24,20 +27,20 @@ Antes de iniciar a atualização, é importante seguir essas tarefas de manuten�
 * [Fazer backup das alterações em /etc](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#backup-changes-etc)
 * [Gerar o arquivo quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configurar o fluxo de trabalho e a remoção do registro de auditoria](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
-* [Instalar, configurar e executar as tarefas de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
+* [Instalar, configurar e executar as Tarefas de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
 * [Desativar Módulos de Logon Personalizados](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Remover Atualizações Do Diretório /install](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Parar instâncias de espera frias](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Desativar Tarefas Agendadas Personalizadas](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
 * [Executar Limpeza de Revisão Offline](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Executar coleta de lixo do armazenamento de dados](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
-* [Atualizar o esquema do banco de dados, se necessário](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
+* [Atualize o Schema do banco de dados se necessário](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
 * [Excluir usuários que possam prejudicar a atualização](pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
 * [Girar arquivos de registro](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Garantir espaço em disco suficiente {#ensure-sufficient-disk-space}
 
-Ao executar a atualização, além das atividades de atualização de código e conteúdo, será necessário executar uma migração de repositório. A migração criará uma cópia do repositório no novo formato Segment Tar. Como resultado, você precisará de espaço em disco suficiente para manter uma segunda versão, potencialmente maior, do repositório.
+Ao executar a atualização, além das atividades de atualização de conteúdo e código, será necessário executar uma migração de repositório. A migração criará uma cópia do repositório no novo formato Segment Tar. Como resultado, você precisará de espaço em disco suficiente para reter uma segunda versão, potencialmente maior, do repositório.
 
 ## Fazer backup completo do AEM {#fully-back-up-aem}
 
@@ -49,15 +52,15 @@ O processo de atualização faz um bom trabalho para manter e mesclar o conteúd
 
 ## Gerar o arquivo quickstart.properties {#generate-quickstart-properties}
 
-Ao iniciar o AEM a partir do arquivo jar, um `quickstart.properties` arquivo será gerado em `crx-quickstart/conf`. Se o AEM só tiver sido iniciado com o script de inicialização no passado, esse arquivo não estará presente e a atualização falhará. Verifique a existência desse arquivo e reinicie o AEM do arquivo jar se ele não estiver presente.
+Ao iniciar o AEM a partir do arquivo jar, um `quickstart.properties` arquivo será gerado em `crx-quickstart/conf`. Se o AEM só tiver sido iniciado com o script de start no passado, esse arquivo não estará presente e a atualização falhará. Verifique a existência desse arquivo e reinicie o AEM do arquivo jar se ele não estiver presente.
 
 ## Configurar o fluxo de trabalho e a remoção do registro de auditoria {#configure-wf-audit-purging}
 
-As `WorkflowPurgeTask` `com.day.cq.audit.impl.AuditLogMaintenanceTask` tarefas e as configurações exigem configurações OSGi separadas e não funcionarão sem elas. Se falharem durante a execução da tarefa de pré-atualização, configurações ausentes serão o motivo mais provável. Portanto, certifique-se de adicionar configurações OSGi para essas tarefas ou removê-las completamente da lista de tarefas de otimização de pré-atualização, caso não deseje executá-las. A documentação para configurar tarefas de remoção de fluxo de trabalho pode ser encontrada em [Administração de instâncias](/help/sites-administering/workflows-administering.md) de fluxo de trabalho e a configuração da tarefa de manutenção de log de auditoria pode ser encontrada em Manutenção de log de [auditoria no AEM 6](/help/sites-administering/operations-audit-log.md).
+As configurações `WorkflowPurgeTask` e `com.day.cq.audit.impl.AuditLogMaintenanceTask` tarefa exigem configurações OSGi separadas e não funcionarão sem elas. Se falharem durante a execução da tarefa de pré-atualização, as configurações ausentes serão o motivo mais provável. Portanto, adicione configurações OSGi para essas tarefas ou remova-as completamente da lista de otimização de pré-atualização da tarefa se você não desejar executá-las. A documentação para configurar tarefas de depuração de fluxo de trabalho pode ser encontrada em [Administração de instâncias](/help/sites-administering/workflows-administering.md) de fluxo de trabalho e a configuração da tarefa de manutenção de log de auditoria pode ser encontrada em Manutenção de log de [auditoria no AEM 6](/help/sites-administering/operations-audit-log.md).
 
 Para obter fluxo de trabalho e expurgação de log de auditoria no CQ 5.6, bem como expurgação de log de auditoria no AEM 6.0, consulte [Expurgar fluxo de trabalho e nós](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)de auditoria.
 
-## Instalar, configurar e executar as tarefas de pré-atualização {#install-configure-run-pre-upgrade-tasks}
+## Instalar, configurar e executar as Tarefas de pré-atualização {#install-configure-run-pre-upgrade-tasks}
 
 Devido ao nível de personalização que o AEM permite, os ambientes geralmente não seguem uma maneira uniforme de executar atualizações. Isso torna difícil a criação de um procedimento padronizado para atualizações.
 
@@ -67,7 +70,7 @@ Para solucionar esses problemas, a Adobe adicionou várias melhorias ao processo
 
 As tarefas de manutenção de pré-atualização estão distribuídas por várias interfaces que são parcial ou completamente executadas manualmente. A otimização de manutenção de pré-atualização introduzida no AEM 6.3 permite uma maneira unificada de acionar essas tarefas e inspecionar seus resultados sob demanda.
 
-Todas as tarefas incluídas na etapa de otimização de pré-atualização são compatíveis com todas as versões do AEM 6.0 em diante.
+Todas as tarefas incluídas na etapa de otimização pré-atualização são compatíveis com todas as versões do AEM 6.0 em diante.
 
 ### How to Set It Up {#how-to-set-it-up}
 
@@ -89,11 +92,11 @@ O componente `PreUpgradeTasksMBean` OSGI vem pré-configurado com uma lista de t
 
 1. Procure &quot;**preupgradetask**&quot; e clique no primeiro componente correspondente. O nome completo do componente é `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
-1. Modifique a lista de tarefas de manutenção que precisam ser executadas, conforme mostrado abaixo:
+1. Modifique a lista das tarefas de manutenção que precisam ser executadas, conforme mostrado abaixo:
 
    ![1487758925984](assets/1487758925984.png)
 
-A lista de tarefas difere dependendo do modo de execução usado para iniciar a instância. Abaixo está uma descrição do modo de execução para o qual cada tarefa de manutenção foi projetada.
+A lista da tarefa difere dependendo do modo de execução usado para start da instância. Abaixo está uma descrição do modo de execução para o qual cada tarefa de manutenção foi projetada.
 
 <table> 
  <tbody> 
@@ -135,18 +138,18 @@ A lista de tarefas difere dependendo do modo de execução usado para iniciar a 
   <tr> 
    <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td> 
    <td>crx3</td> 
-   <td>É necessário configurar a configuração OSGi do Agendador de Expurgação do Log de Auditoria antes da execução.</td> 
+   <td>É necessário configurar a configuração OSGi do Scheduler de Expurgação do Log de Auditoria antes da execução.</td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!CAUTION]
 >
->`DataStoreGarbageCollectionTask` O está chamando uma operação de Coleta de Lixo do Datastore com a fase de marcação e varredura, se usada. Para implantações que usam um armazenamento de dados compartilhado, certifique-se de reconfigurá-lo ou prepará-lo corretamente ou preparar a instância para evitar a exclusão de itens referenciados por outra instância. Isso pode exigir a execução manual da fase de marcação em todas as instâncias antes de acionar essa tarefa de pré-atualização.
+>`DataStoreGarbageCollectionTask` O está chamando uma operação de Coleta de Lixo do Datastore com a fase de marcação e varredura, se usada. Para implantações que usam um armazenamento de dados compartilhado, certifique-se de reconfigurá-lo ou prepará-lo corretamente ou preparar a instância para evitar a exclusão de itens referenciados por outra instância. Isso pode exigir a execução manual da fase de marca em todas as instâncias antes de disparar essa tarefa de pré-atualização.
 
 ### Configuração padrão das verificações de integridade pré-atualização {#default-configuration-of-the-pre-upgrade-health-checks}
 
-O componente `PreUpgradeTasksMBeanImpl` OSGI vem pré-configurado com uma lista de tags de verificação de integridade pré-atualização a serem executadas quando o `runAllPreUpgradeHealthChecks` método é chamado:
+O componente `PreUpgradeTasksMBeanImpl` OSGI vem pré-configurado com uma lista de tags de verificação de integridade de pré-atualização a serem executadas quando o `runAllPreUpgradeHealthChecks` método é chamado:
 
 * **sistema** - a tag usada pelas verificações de integridade da manutenção do granito
 
@@ -192,7 +195,7 @@ Abaixo está uma lista de todos os métodos disponíveis que o `PreUpgradeTasksM
   <tr> 
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td> 
    <td>AÇÃO</td> 
-   <td>Executa a tarefa de manutenção de pré-atualização com o nome fornecido como parâmetro.</td> 
+   <td>Executa a tarefa de manutenção pré-atualização com o nome fornecido como parâmetro.</td> 
   </tr> 
   <tr> 
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td> 
@@ -202,7 +205,7 @@ Abaixo está uma lista de todos os métodos disponíveis que o `PreUpgradeTasksM
   <tr> 
    <td><code>getAnyPreUpgradeTaskRunning()</code></td> 
    <td>ACTION_INFO</td> 
-   <td>Verifica se alguma tarefa de manutenção de pré-atualização está em execução no momento e<br /> retorna um storage contendo os nomes das tarefas em execução no momento.</td> 
+   <td>Verifica se alguma tarefa de manutenção pré-atualização está em execução no momento e<br /> retorna um storage contendo os nomes do tarefa em execução no momento.</td> 
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td> 
@@ -217,23 +220,24 @@ Abaixo está uma lista de todos os métodos disponíveis que o `PreUpgradeTasksM
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
    <td>AÇÃO</td> 
-   <td><p>Executa todas as verificações de integridade pré-atualização e salva seu status em um arquivo chamado <code>preUpgradeHCStatus.properties</code> que está localizado no caminho inicial do sling. Se o <code>shutDownOnSuccess</code> parâmetro estiver definido como <code>true</code>, a instância do AEM será desligada, mas somente se todas as verificações de integridade anteriores à atualização tiverem um status OK.</p> <p>O arquivo de propriedades será usado como pré-condição para qualquer atualização<br /> futura e o processo de atualização será interrompido se a execução da verificação<br /> de integridade da pré-atualização falhar. Se quiser ignorar o resultado das verificações de integridade de pré-atualização<br /> e iniciar a atualização assim mesmo, você pode excluir o arquivo.</p> </td> 
+   <td><p>Executa todas as verificações de integridade pré-atualização e salva seu status em um arquivo chamado <code>preUpgradeHCStatus.properties</code> que está localizado no caminho inicial do sling. Se o <code>shutDownOnSuccess</code> parâmetro estiver definido como <code>true</code>, a instância do AEM será desligada, mas somente se todas as verificações de integridade anteriores à atualização tiverem um status OK.</p> <p>O arquivo de propriedades será usado como uma pré-condição para qualquer atualização<br /> futura e o processo de atualização será interrompido se a execução da verificação<br /> de integridade da pré-atualização falhar. Se quiser ignorar o resultado das verificações de integridade de pré-atualização<br /> e iniciar a atualização assim mesmo, você pode excluir o arquivo.</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
    <td>AÇÃO</td> 
-   <td>Lista todos os pacotes importados que não serão mais satisfeitos ao atualizar para<br /> a versão do AEM especificada. A versão de destino do AEM deve ser<br /> fornecida como parâmetro.</td> 
+   <td>Lista todos os pacotes importados que não serão mais satisfeitos ao atualizar para<br /> a versão especificada do AEM. A versão do AEM do público alvo deve ser<br /> fornecida como parâmetro.</td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Os métodos MBean podem ser chamados via:
+>Os métodos MBean podem ser chamados por meio de:
 >
 >* O console JMX
 >* Qualquer aplicativo externo que se conecte ao JMX
 >* cURL
+
 >
 
 
@@ -281,7 +285,7 @@ Para desativar os módulos personalizados definidos na configuração JAAS de `r
 >
 >Remova apenas os pacotes do diretório crx-quickstart/install APÓS encerrar a instância do AEM. Esta será uma das últimas etapas antes de iniciar o procedimento de atualização no local.
 
-Remova todos os service packs, pacotes de recursos ou hotfixes que foram implantados pelo `crx-quickstart/install` diretório no sistema de arquivos local. Isso impedirá a instalação inadvertida de hotfixes e service packs antigos na nova versão do AEM após a atualização ser concluída.
+Remova todos os service packs, pacotes de recursos ou hotfixes que foram implantados pelo `crx-quickstart/install` diretório no sistema de arquivos local. Isso impedirá a instalação inadvertida de hotfixes e service packs antigos sobre a nova versão do AEM após a atualização ser concluída.
 
 ## Parar instâncias de espera frias {#stop-tarmk-coldstandby-instance}
 
@@ -297,7 +301,7 @@ Desative quaisquer trabalhos programados OSGi que estejam incluídos no código 
 >
 >Esta etapa só é necessária para instalações TarMK
 
-Se estiver usando o TarMK, você deve executar a Limpeza de revisão offline antes de atualizar. Isso tornará a etapa de migração do repositório e as tarefas subsequentes de atualização mais rápidas e ajudará a garantir que a Limpeza de revisão online possa ser executada com êxito após a conclusão da atualização. Para obter informações sobre como executar a Limpeza de revisão offline, consulte [Executando limpeza](https://helpx.adobe.com/experience-manager/6-2/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup)de revisão offline.
+Se estiver usando o TarMK, você deve executar a Limpeza de revisão offline antes de atualizar. Isso fará com que a etapa de migração do repositório e as tarefas subsequentes de atualização sejam executadas muito mais rapidamente e ajudará a garantir que a Limpeza de revisão online possa ser executada com êxito após a conclusão da atualização. Para obter informações sobre como executar a Limpeza de revisão offline, consulte [Executando a Limpeza](https://helpx.adobe.com/experience-manager/6-2/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup)de revisão offline.
 
 ## Executar coleta de lixo do armazenamento de dados {#execute-datastore-garbage-collection}
 
@@ -313,8 +317,8 @@ Depois de executar a limpeza de revisão em instâncias do CRX3, você deve exec
 >
 >Esta tarefa de manutenção pré-atualização só é necessária se:
 >
-> * Você está atualizando de versões do AEM anteriores ao AEM 6.3
-> * Você encontra qualquer um dos erros mencionados abaixo durante a atualização.
+>* Você está atualizando de versões do AEM anteriores ao AEM 6.3
+>* Você encontra qualquer um dos erros mencionados abaixo durante a atualização.
 
 
 Há casos excepcionais em que os usuários do serviço podem acabar sendo marcados incorretamente como usuários comuns em versões anteriores do AEM.
@@ -330,7 +334,7 @@ Para contornar esse problema, certifique-se de fazer o seguinte:
 
 * Desanexar a instância do tráfego de produção
 * Crie um backup dos usuários que causam o problema. Isso pode ser feito por meio do Gerenciador de pacotes. Para obter mais informações, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
-* Exclua os usuários que estão causando o problema. Abaixo está uma lista de usuários que podem estar incluídos nesta categoria:
+* Exclua os usuários que estão causando o problema. Abaixo está uma lista de usuários que podem se encaixar nesta categoria:
    * replicação de mídia dinâmica
    * Communities-ugc-writer
    * Communities-utility-reader
@@ -338,18 +342,18 @@ Para contornar esse problema, certifique-se de fazer o seguinte:
    * oauthservice
    * sling-scripting
 
-## Atualizar o esquema do banco de dados, se necessário {#upgrade-the-database-schema-if-needed}
+## Atualize o Schema do banco de dados se necessário {#upgrade-the-database-schema-if-needed}
 
-Normalmente, a pilha subjacente do Apache Oak que o AEM usa para persistência cuidará da atualização do esquema do banco de dados, se necessário.
+Normalmente, a pilha subjacente do Apache Oak que o AEM usa para persistência cuidará da atualização do schema do banco de dados, se necessário.
 
-No entanto, podem surgir casos em que o esquema não pode ser atualizado automaticamente. Esses são principalmente ambientes de alta segurança em que o banco de dados está sendo executado sob um usuário com privilégios muito limitados. Se isso acontecer, o AEM continuará a usar o esquema antigo.
+No entanto, podem surgir casos em que o schema não pode ser atualizado automaticamente. Esses são ambientes de alta segurança em que o banco de dados está sendo executado sob um usuário com privilégios muito limitados. Se isso acontecer, o AEM continuará a usar o schema antigo.
 
-Para evitar que isso aconteça, é necessário atualizar o esquema seguindo o procedimento abaixo:
+Para evitar que isso aconteça, é necessário atualizar o schema seguindo o procedimento abaixo:
 
 1. Desligue a instância do AEM que precisa ser atualizada.
-1. Atualize o esquema do banco de dados. Consulte a documentação do tipo de banco de dados para ver qual é a ferramenta que você precisa usar para conseguir isso.
+1. Atualize o schema do banco de dados. Consulte a documentação do tipo de banco de dados para ver qual é a ferramenta que você precisa usar para conseguir isso.
 
-   Para obter mais informações sobre como o Oak lida com atualizações de esquema, consulte [esta página no site](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)do Apache.
+   Para obter mais informações sobre como o Oak lida com atualizações de schemas, consulte [esta página no site](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)do Apache.
 
 1. Prossiga com a atualização do AEM.
 
