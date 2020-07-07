@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Visão geral da amostra {#sample-overview}
 
-O componente de rascunhos e envios do portal do AEM Forms permite que os usuários salvem seus formulários como rascunhos e enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem visualização seus formulários enviados no portal. Para habilitar essa funcionalidade, o AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório CRX, por padrão. No entanto, à medida que os usuários interagem com formulários por meio da instância de publicação do AEM, que geralmente está fora do firewall da empresa, as organizações podem querer personalizar o armazenamento de dados para que ele seja mais seguro e confiável.
+O componente de rascunhos e envios do portal do AEM Forms permite que os usuários salvem seus formulários como rascunhos e enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem visualização seus formulários enviados no portal. Para habilitar essa funcionalidade, o AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados do formulário associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório CRX, por padrão. No entanto, à medida que os usuários interagem com formulários por meio da instância de publicação do AEM, que geralmente está fora do firewall da empresa, as organizações podem querer personalizar o armazenamento de dados para que ele seja mais seguro e confiável.
 
 A amostra, discutida neste documento, é uma implementação de referência de dados personalizados e serviços de metadados para integrar os componentes de rascunhos e envios a um banco de dados. O banco de dados usado na implementação de amostra é o **MySQL 5.6.24**. No entanto, você pode integrar o componente de rascunhos e envios a qualquer banco de dados de sua escolha.
 
 >[!NOTE]
 >
 >* Os exemplos e configurações explicados neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los adequadamente para o seu sistema de banco de dados.
->* Verifique se você instalou a versão mais recente do pacote complementar AEM Forms. Para obter a lista dos pacotes disponíveis, consulte o artigo de versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-> * O pacote de amostra funciona somente com ações de envio de formulários adaptativos.
+>* Verifique se você instalou a versão mais recente do pacote de complementos do AEM Forms. Para obter a lista dos pacotes disponíveis, consulte o artigo sobre as versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+>* O pacote de amostra funciona somente com ações de envio de formulários adaptativos.
 
 
 ## Configurar e configurar a amostra {#set-up-and-configure-the-sample}
@@ -77,6 +77,7 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
    Para fornecer um nome diferente para a tabela de metadados:
 
    * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de metadados do Portal do Forms. Você pode alterar os valores da fonte de dados, dos metadados/do nome da tabela de metadados adicionais.
+
    Para fornecer um nome diferente para a tabela de dados:
 
    * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de dados do Portal do Forms. É possível alterar os valores da fonte de dados e do nome da tabela de dados.
@@ -162,6 +163,7 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 >
 > * O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de que você o tenha provisionado e forneça as informações necessárias para configurar o pool de conexões JDBC.
 > * Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI de conexão JDBC deve ser o mesmo para todas as instâncias de autor e publicação.
+
 >
 
 
@@ -340,7 +342,7 @@ Execute as seguintes etapas para criar [uma biblioteca](/help/sites-developing/c
     util.js
    ```
 
-   No código acima, `util` é o nome da pasta e o `util.js` nome do arquivo na `util` pasta. A `util` `util.js` pasta e o arquivo são criados em etapas bem-sucedidas.
+   No código acima, `util` é o nome da pasta e o `util.js` nome do arquivo na `util` pasta. A `util` pasta e `util.js` o arquivo são criados em etapas bem-sucedidas.
 
 1. Clique com o botão direito do mouse no `cq:ClientLibraryFolder` nó criado na etapa 2, selecione Criar > Criar pasta. Crie uma pasta chamada `util`. Clique em **[!UICONTROL Salvar tudo]**. Clique com o botão direito do mouse na `util` pasta e selecione Criar > Criar arquivo. Crie um arquivo chamado `util.js`. Clique em **[!UICONTROL Salvar tudo]**.
 
