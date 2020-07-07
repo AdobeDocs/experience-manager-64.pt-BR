@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '3150'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ Se você tiver criado um modelo de dados de formulário com fontes de dados, pod
 Para adicionar objetos e serviços de modelo de dados:
 
 1. Faça logon na instância do autor do AEM, navegue até **[!UICONTROL Formulários > Integrações]** de dados e abra o modelo de dados de formulário no qual deseja adicionar objetos de modelo de dados.
-1. No painel Fontes de dados, expanda as fontes de dados para exibir os serviços e objetos do modelo de dados disponíveis.
+1. No painel Fontes de dados, expanda as fontes de dados para visualização de objetos e serviços de modelo de dados disponíveis.
 1. Selecione os objetos e serviços do modelo de dados que deseja adicionar ao modelo de dados do formulário e toque em **[!UICONTROL Adicionar selecionados]**.
 
    ![objetos selecionados](assets/selected-objects.png)
@@ -51,11 +54,11 @@ Para adicionar objetos e serviços de modelo de dados:
 
    ![guia modelo](assets/model-tab.png)
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >É possível manter e arrastar caixas de objetos de modelo de dados ao redor para organizá-las na área de conteúdo. Todos os objetos de modelo de dados adicionados no modelo de dados de formulário ficam acinzentados no painel Fontes de Dados.
 
-   A guia Serviços lista os serviços adicionados.
+   A guia Serviços lista serviços adicionados.
 
    ![guia Serviços](assets/services-tab.png)
 
@@ -65,7 +68,7 @@ Para adicionar objetos e serviços de modelo de dados:
 
 1. Toque em **[!UICONTROL Salvar]** para salvar o objeto de modelo de formulário.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Você pode chamar os serviços configurados na guia Serviços de um modelo de dados de formulário usando as regras de formulário adaptáveis. Os serviços configurados estão disponíveis na ação Invocar serviços do editor de regras. Para obter mais informações sobre como usar esses serviços em regras de formulário adaptáveis, consulte Invocar serviços e Definir valor de regras no editor [de](/help/forms/using/rule-editor.md)regras.
 
@@ -93,10 +96,10 @@ Para criar uma propriedade filho:
 
 1. Em um modelo de dados de formulário, selecione um objeto de modelo de dados e toque em **[!UICONTROL Criar propriedade]** secundária.
 1. Na caixa de diálogo **[!UICONTROL Criar propriedade]** secundária, especifique um nome e um tipo de dados para a propriedade nos campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** , respectivamente. Como opção, você pode especificar um título e uma descrição para a propriedade.
-1. Ative Calculado se a propriedade for uma propriedade calculada. O valor de uma propriedade calculada é avaliado com base em uma regra ou uma expressão. Para obter mais informações, consulte [Editar propriedades](#edit-properties).
+1. Ative Calculado se a propriedade for uma propriedade calculada. O valor de uma propriedade calculada é avaliado com base em uma regra ou expressão. Para obter mais informações, consulte [Editar propriedades](#edit-properties).
 1. Se o objeto de modelo de dados estiver vinculado a uma fonte de dados, a propriedade filho adicionada será automaticamente vinculada à propriedade do objeto de modelo de dados pai com o mesmo nome e tipo de dados.
 
-   Para vincular manualmente uma propriedade filho a uma propriedade de objeto de modelo de dados, toque no ícone Procurar ao lado do campo **[!UICONTROL Vincular referência]** . A caixa de diálogo **[!UICONTROL Selecionar objeto]** lista todas as propriedades do objeto de modelo de dados pai. Selecione uma propriedade à qual vincular e toque no ícone de marca de verificação. Observe que você só pode selecionar uma propriedade do mesmo tipo de dados que a propriedade filho.
+   Para vincular manualmente uma propriedade filho a uma propriedade de objeto de modelo de dados, toque no ícone Procurar ao lado do campo **[!UICONTROL Vincular referência]** . A caixa de diálogo **[!UICONTROL Selecionar objeto]** lista todas as propriedades do objeto de modelo de dados pai. Selecione uma propriedade com a qual vincular e toque no ícone de marca de verificação. Observe que você só pode selecionar uma propriedade do mesmo tipo de dados que a propriedade filho.
 
 1. Toque em **[!UICONTROL Concluído]** para salvar a propriedade filho e toque em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário. A propriedade filho agora é adicionada ao objeto de modelo de dados.
 
@@ -143,13 +146,13 @@ Para ler e gravar dados de um objeto de modelo de dados, faça o seguinte para c
 
    Objetos de modelo de dados configurados em um modelo de dados de formulário estão disponíveis para uso na guia Objetos de modelo de dados no navegador Conteúdo de um formulário adaptável com base no modelo de dados de formulário. Quando você adiciona associação entre dois objetos de modelo de dados, o objeto de modelo de dados ao qual você está associado é aninhado sob o objeto de modelo de dados ao qual você está associando na guia Objetos de modelo de dados. Se o modelo de dados aninhado for um objeto de nível superior, ele também será exibido separadamente na guia Objetos do modelo de dados. Portanto, você verá duas entradas dela, uma dentro e outra fora da hierarquia aninhada, o que pode confundir os autores de formulários. Para fazer com que o objeto de modelo de dados associado apareça apenas na hierarquia aninhada, desative a propriedade Objeto de nível superior.
 
-1. Selecione Serviços de leitura e gravação para os objetos de modelo de dados selecionados. Os argumentos para os serviços aparecem.
+1. Selecione Serviços de leitura e gravação para os objetos de modelo de dados selecionados. Os argumentos para os serviços são exibidos.
 
    ![serviços de leitura/gravação](assets/read-write-services.png)
 
    Serviços de leitura e gravação configurados para a fonte de dados do funcionário
 
-1. Toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) para que o argumento do serviço de leitura vincule o argumento a um Atributo de perfil do usuário, Atributo de solicitação ou valor Literal e especifique o valor de vínculo. Ele vincula o argumento de serviço ao atributo de vínculo especificado ou ao valor literal, que é transmitido ao serviço como um argumento para buscar detalhes associados ao valor especificado na fonte de dados.
+1. Toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) para que o argumento do serviço de leitura vincule o argumento a um Atributo de Perfil do usuário, Atributo de solicitação ou valor Literal e especifique o valor de vínculo. Ele vincula o argumento de serviço ao atributo de vínculo especificado ou ao valor literal, que é transmitido ao serviço como um argumento para buscar detalhes associados ao valor especificado na fonte de dados.
 
    Neste exemplo, o `id` argumento usará o valor do `empid` atributo do perfil do usuário e o enviará como um argumento para o serviço de leitura. Ele lerá e retornará valores de propriedades associadas do objeto de modelo de `employee` dados para o objeto especificado `empid`. Portanto, se você especificar 00250 no `empid` campo no formulário, o serviço de leitura lerá detalhes do funcionário com a ID do funcionário 00250.
 
@@ -167,7 +170,7 @@ Normalmente, há associações criadas entre objetos de modelo de dados em uma f
 
 Quando objetos de modelo de dados associados são adicionados em uma fonte de dados a um modelo de dados de formulário, suas associações são mantidas e exibidas como conectadas por linhas de seta. É possível adicionar associações entre objetos de modelo de dados em diferentes fontes de dados em um modelo de dados de formulário.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >As associações predefinidas em uma fonte de dados JDBC não são retidas no modelo de dados de formulário. Você deve criá-los manualmente.
 
@@ -193,6 +196,7 @@ Para adicionar uma associação:
    * Selecione o tipo de associação — Um para um ou um para muitos.
    * Selecione o objeto de modelo de dados ao qual associar.
    * Selecione o serviço de leitura para ler dados do objeto de modelo selecionado. O argumento read service é exibido. Edite para alterar o argumento, se necessário, e vincule-o à propriedade do objeto de modelo de dados a ser associado.
+
    No exemplo a seguir, o argumento padrão para o serviço de leitura do objeto de modelo de dados Dependents é `dependentid`.
 
    ![add-Association-example](assets/add-association-example.png)
@@ -207,10 +211,10 @@ Para adicionar uma associação:
 
    Toque em **[!UICONTROL Concluído]** para salvar o argumento.
 
-1. Toque em **[!UICONTROL Concluído]** para salvar a associação e em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
+1. Toque em **[!UICONTROL Concluído]** para salvar a associação e, em seguida, em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 1. Repita as etapas para criar mais associações, conforme necessário.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >A associação adicionada é exibida na caixa de objetos de modelo de dados com o título especificado e uma linha que conecta os objetos de modelo de dados associados.
 >
@@ -230,6 +234,7 @@ Para editar propriedades:
    * **Objeto** de modelo de dados: Especifique os serviços de leitura e gravação e edite argumentos.
    * **Propriedade**: Especifique o tipo, o subtipo e o formato da propriedade. Você também pode especificar se a propriedade selecionada é a chave primária para o objeto de modelo de dados.
    * **Serviço**: Especifique o objeto do modelo de entrada, o tipo de saída e os argumentos para o serviço. Para um serviço Get, você pode especificar se é esperado que ele retorne uma matriz.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Caixa de diálogo Editar propriedades para um serviço get
@@ -238,12 +243,12 @@ Para editar propriedades:
 
 ### Criar propriedades calculadas {#computed}
 
-Uma propriedade calculada é aquela cujo valor é calculado com base em uma regra ou uma expressão. Usando uma regra, é possível definir o valor de uma propriedade calculada como uma string literal, um número, resultado de uma expressão matemática ou o valor de outra propriedade no modelo de dados de formulário.
+Uma propriedade calculada é aquela cujo valor é calculado com base em uma regra ou expressão. Usando uma regra, é possível definir o valor de uma propriedade calculada como uma string literal, um número, resultado de uma expressão matemática ou o valor de outra propriedade no modelo de dados de formulário.
 
 Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor é resultado da concatenação das propriedades **FirstName** e **LastName** existentes. Para isso:
 
 1. Crie uma nova propriedade com o nome `FullName` cujo tipo de dados é String.
-1. Ative **[!UICONTROL Calculado]** e toque **[!UICONTROL Concluído]** para criar a propriedade.
+1. Ative **[!UICONTROL Calculado]** e toque em **[!UICONTROL Concluído]** para criar a propriedade.
 
    ![calculado](assets/computed.png)
 
@@ -258,7 +263,7 @@ Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor 
 
 1. Na expressão matemática, selecione **[!UICONTROL FirstName]** e **[!UICONTROL LastName]** no primeiro e segundo objetos, respectivamente. Selecione **[!UICONTROL mais]** como operador.
 
-   Toque em **[!UICONTROL Concluído]** e em **[!UICONTROL Fechar]** para fechar a janela do editor de regras. A regra é semelhante ao seguinte.
+   Toque em **[!UICONTROL Concluído]** e, em seguida, toque em **[!UICONTROL Fechar]** para fechar a janela do editor de regras. A regra é semelhante ao seguinte.
 
    ![regra](assets/rule.png)
 
@@ -296,7 +301,7 @@ Para obter mais informações sobre propriedades de navegação, consulte a docu
 </EntityType>
 ```
 
-Quando você configura um serviço OData em um Modelo de dados de formulário, todas as propriedades de navegação em um contêiner de entidade são disponibilizadas por meio de um serviço no Modelo de dados de formulário. Neste exemplo do serviço OData do TripPin, as três propriedades de navegação no contêiner da `Person` entidade podem ser lidas usando um `GET LINK` serviço no Modelo de dados de formulário.
+Quando você configura um serviço OData em um Modelo de dados de formulário, todas as propriedades de navegação em um container de entidade são disponibilizadas por meio de um serviço no Modelo de dados de formulário. Neste exemplo do serviço OData do TripPin, as três propriedades de navegação no container da `Person` entidade podem ser lidas usando um `GET LINK` serviço no Modelo de dados de formulário.
 
 O seguinte destaca o `GET LINK of Person /People` serviço no Modelo de dados de formulário, que é um serviço combinado para as três propriedades de navegação na `Person` entidade do serviço OData do TripPin.
 
@@ -314,7 +319,7 @@ Neste exemplo, você também pode escolher o objeto de modelo de saída como Pes
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Da mesma forma, você pode escolher um `GET LINK` serviço e configurar suas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. Entretanto, para poder selecionar uma propriedade de navegação, verifique se o campo **[!UICONTROL Vínculo a está definido como]** Literal ****.
+Da mesma forma, você pode escolher um `GET LINK` serviço e configurar suas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. No entanto, para poder selecionar uma propriedade de navegação, verifique se o campo **[!UICONTROL Vínculo a está definido como]** Literal ****.
 
 ![add-Association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -352,4 +357,4 @@ Da mesma forma, é possível testar outros objetos e serviços de modelo de dado
 
 ## Próximos passos {#next-steps}
 
-Você tem um modelo de dados de formulário que agora está pronto para uso em formulários adaptáveis e fluxos de trabalho de comunicações interativas. Para obter mais informações, consulte [Usar modelo](/help/forms/using/using-form-data-model.md)de dados de formulário.
+Você tem um modelo de dados de formulário que agora está pronto para uso em formulários adaptáveis e workflows de comunicação interativos. Para obter mais informações, consulte [Usar modelo](/help/forms/using/using-form-data-model.md)de dados de formulário.
