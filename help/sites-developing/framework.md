@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -184,6 +184,7 @@ A `cq:OwnerTaggable` mistura, que herda de `cq:Taggable`, serve para indicar que
    >
    >
 * ativos ( `cq:Asset`) em que o `jcr:content/metadata` nó sempre tem a `cq:Taggable` combinação.
+
 >
 
 
@@ -259,14 +260,17 @@ A seguir está uma descrição dos efeitos no repositório ao mover ou mesclar t
 
 ## Migração de tags {#tags-migration}
 
-As tags do Experience Manager 6.4 e posteriores são armazenadas em `/content/cq:tags`, que antes eram armazenadas em `/etc/tags`. No entanto, em cenários em que o Adobe Experience Manager foi atualizado da versão anterior, as tags ainda estarão presentes no local antigo `/etc/tags`. Em sistemas atualizados, as tags precisam ser migradas em `/content/cq:tags`.
+As tags a partir de Experience Manager 6.4 são armazenadas em `/content/cq:tags`, que antes eram armazenadas em `/etc/tags`. No entanto, em cenários em que o Adobe Experience Manager foi atualizado da versão anterior, as tags ainda estão presentes no local antigo `/etc/tags`. Em sistemas atualizados, as tags precisam ser migradas em `/content/cq:tags`.
 
-> [!NOTE]
-> Na página Propriedades da página de tags, é aconselhável usar a ID da tag (por exemplo, `geometrixx-outdoors:activity/biking`) em vez de codificar o caminho base da tag (por exemplo, `/etc/tags/geometrixx-outdoors/activity/biking`).
-> Para lista de tags, `com.day.cq.tagging.servlets.TagListServlet` é possível usá-las.
+>[!NOTE]
+>
+>Na página Propriedades da página de tags, é aconselhável usar a ID da tag (por exemplo, `geometrixx-outdoors:activity/biking`) em vez de codificar o caminho base da tag (por exemplo, `/etc/tags/geometrixx-outdoors/activity/biking`).
+>
+>Para lista de tags, `com.day.cq.tagging.servlets.TagListServlet` é possível usá-las.
 
-> [!NOTE]
-> Recomenda-se usar a API do gerenciador de tags como recurso.
+>[!NOTE]
+>
+>Recomenda-se usar a API do gerenciador de tags como recurso.
 
 **Se a instância AEM atualizada suportar a API do TagManager**
 
@@ -332,9 +336,9 @@ O script obtém todas as tags que têm `/etc/tags` o valor da `cq:movedTo/cq:bac
 
 **Se uma instância do AEM atualizada for executada na interface do usuário clássica**
 
-> [!NOTE]
-> A interface clássica não é compatível com zero tempo de inatividade e não oferece suporte para o novo caminho de base de tags. Se você quiser usar a interface clássica do que `/etc/tags` precisa ser criada, seguido da reinicialização do `cq-tagging` componente.
-
+>[!NOTE]
+>
+>A interface clássica não é compatível com zero tempo de inatividade e não oferece suporte para o novo caminho de base de tags. Se você quiser usar a interface clássica do que `/etc/tags` precisa ser criada, seguido da reinicialização do `cq-tagging` componente.
 
 No caso de instâncias AEM atualizadas suportadas pela API do TagManager e executadas na interface clássica:
 
