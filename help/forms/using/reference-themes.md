@@ -1,21 +1,24 @@
 ---
 title: Temas de referência
 seo-title: Temas de referência
-description: 'O AEM Forms fornece temas de formulários adaptáveis que você pode obter do compartilhamento de pacotes e usar para criar estilo em um formulário. '
-seo-description: 'O AEM Forms fornece temas de formulários adaptáveis que você pode obter do compartilhamento de pacotes e usar para criar estilo em um formulário. '
+description: 'Os AEM Forms fornecem temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
+seo-description: 'Os AEM Forms fornecem temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 0%
 
 ---
 
 
 # Temas de referência {#reference-themes}
 
-[Os temas](/help/forms/using/themes.md) permitem estilizar seus formulários sem o profundo conhecimento da CSS. Além do tema padrão, você pode obter os seguintes temas instalando o pacote [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+[Temas](/help/forms/using/themes.md) permitem que você estime seus formulários sem o conhecimento profundo do CSS. Além do tema padrão, você pode obter os seguintes temas instalando o pacote [AEM-FORMS-6.3-REFERENCE-TEMAS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
 
 * Beril
 * Exec
@@ -26,11 +29,11 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 * Padrões de Web Design dos EUA
 * Tranquilo
 
-Cada tema contém um estilo exclusivo e elegante que você pode usar para criar formulários adaptativos deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. As estilos nesses temas se baseiam em requisitos. Por exemplo, em um cenário específico, é necessário um tema minimalista com fontes limpas. O tema da liberdade permite que você alcance esse olhar.
+Cada tema contém um estilo exclusivo e elegante que você pode usar para criar formulários adaptativos deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. As estilos nesses temas são baseadas em requisitos. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite que você alcance esse olhar.
 
 ![Temas de referência](assets/ref-themes.png)
 
-Os temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para exibições móveis e de desktop. A maioria dos navegadores modernos em vários dispositivos pode renderizar formulários aplicados com um desses temas sem qualquer inconveniente.
+Os Temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para telas móveis e de desktop. A maioria dos navegadores modernos em vários dispositivos pode renderizar formulários aplicados com um desses temas sem problemas.
 
 Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
@@ -48,7 +51,7 @@ O tema Exec evita preenchimentos sólidos em segundo plano para enfatizar os com
 
 ## Exec Light {#exec-light}
 
-O tema Exec Light usa espaço em branco para criar uma experiência contínua. Os botões Próximo e Enviar obtêm um preenchimento sólido e uma sombra 3D. As guias selecionadas à esquerda recebem uma seta em vez de marcas de seleção duplas.
+O tema Exec Light usa espaço em branco para criar uma experiência contínua. Os botões Próximo e Enviar obtêm um preenchimento sólido e uma sombra 3D. As guias selecionadas à esquerda recebem uma seta em vez de marcas de seleção de duplo.
 ![Tema de luz executiva](assets/exec-light.png)
 
 [Clique para ampliar](assets/exec-light-1.png)
@@ -62,7 +65,7 @@ O tema da liberdade usa uma abordagem minimalista para destacar a importância. 
 
 ## Tranquilo {#tranquil}
 
-O tema Tranquil fornece tons claros e escuros do esquema de cores Tranquil para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias recebem uma cor verde diferente.
+O tema Tranquilo fornece tons claros e escuros do Esquema de cores Tranquilo para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias recebem uma cor verde diferente.
 ![Tema tranquilo](assets/tranquil.png)
 
 [Clique para ampliar](assets/tranquil-1.png)
