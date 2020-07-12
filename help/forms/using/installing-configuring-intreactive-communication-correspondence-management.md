@@ -7,9 +7,9 @@ uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1420'
 ht-degree: 1%
 
 ---
@@ -88,17 +88,19 @@ Antes de começar a instalar e configurar os recursos interativos de comunicaç�
 
 O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote contém AEM Forms de comunicação interativa, gerenciamento de correspondência e outros recursos. Execute as seguintes etapas para instalar o pacote complementar:
 
-1. Faça logon no servidor [](http://localhost:4502) AEM como administrador e abra o compartilhamento [](http://localhost:4502/crx/packageshare)de pacote. Você precisa de um Adobe ID para fazer logon no compartilhamento de pacote.
-1. Em Compartilhamento [de pacote do](http://localhost:4502/crx/packageshare/login.html)AEM, pesquise nos pacotes complementares do **AEM 6.4** ou nos **service packs** mais recentes, clique no pacote aplicável ao seu sistema operacional e clique em **Download**. Leia e aceite o contrato de licença e clique em **OK**. Os start de download. Após o download, a palavra **Download** é exibida ao lado do pacote.
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Na seção **[!UICONTROL Filtros]** :
+   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
+1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
+1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   Você também pode usar o número da versão para pesquisar um pacote de complementos. Para obter o número da versão do pacote mais recente, consulte o artigo sobre as versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-
-1. Depois que o download for concluído, clique em **Download**. Você é redirecionado para o gerenciador de pacotes. No gerenciador de pacotes, pesquise o pacote baixado e clique em **Instalar**.
-
-   Se você baixar manualmente o pacote por meio do link direto listado no artigo de versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms, faça logon no gerenciador de pacotes, clique em **Carregar pacote**, selecione o pacote baixado e clique em Fazer upload. Depois que o pacote for carregado, clique no nome do pacote e clique em **Instalar.**
+   Você também pode baixar o pacote por meio do link direto listado no artigo de versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log esteja estável.
-1. Repita as etapas de 1 a 4 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
@@ -133,11 +135,11 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
-Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote à lista permitida:
+Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote à lista de permissões:
 
 1. Abra o AEM Configuration Manager em uma janela do navegador. O URL padrão é `https://[server]:[port]/system/console/configMgr`.
 1. Pesquise e abra a Configuração **do firewall de** desserialização.
-1. Adicione o pacote **sun.util.calendário** ao campo **permitido** . Clique em Salvar.
+1. Adicione o pacote **sun.util.calendário** ao campo de **lista de permissões** . Clique em Salvar.
 1. Repita as etapas de 1 a 3 em todas as instâncias de Autor e Publicação.
 
 ### Configurações opcionais pós-instalação {#optional-post-installation-configurations}
@@ -167,7 +169,7 @@ A Dispatcher está armazenando em cache e balanceamento de carga em ferramenta p
 
 1. Configure o serviço de filtro de quem indicou:
 
-   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é `https://[server]:[port_number]/system/console/configMgr`. No menu **Configurações** , selecione a opção Filtro **** de Quem indicou Apache Sling. No campo Permitir hosts, digite o nome de host do dispatcher para permitir como uma quem indicou e clique em **Salvar**. O formato da entrada é `https://[server]:[port]`.
+   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é `https://[server]:[port_number]/system/console/configMgr`. No menu **Configurações** , selecione a opção Filtro **** de Quem indicou Apache Sling. No campo Permitir hosts, digite o nome de host do dispatcher para permitir como uma quem indicou e clique em **Salvar**. The format of the entry is `https://[server]:[port]`.
 
 #### Integrar Adobe Target {#integrate-adobe-target}
 
