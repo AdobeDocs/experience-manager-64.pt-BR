@@ -1,31 +1,36 @@
 ---
 title: Configure o projeto do Visual Studio e crie o aplicativo do Windows
 seo-title: Configure o projeto do Visual Studio e crie o aplicativo do Windows
-description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel do AEM Forms Windows.
-seo-description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel do AEM Forms Windows.
+description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel AEM Forms Windows.
+seo-description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel AEM Forms Windows.
 uuid: 0a72387a-d920-4f66-8983-d500ef0ecd90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 0%
 
 ---
 
 
 # Configure o projeto do Visual Studio e crie o aplicativo do Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-O AEM Forms fornece o código fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo de espaço de trabalho personalizado. O arquivo de código fonte `adobe-lc-mobileworkspace-src-<version>.zip`é uma parte do `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote em compartilhamento de pacote.
+O AEM Forms fornece o código fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo de espaço de trabalho personalizado. O arquivo de código-fonte `adobe-lc-mobileworkspace-src-<version>.zip`é parte do `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote de distribuição de software.
 
 Para obter a fonte do aplicativo AEM Forms, execute as seguintes etapas:
 
-1. Navegar para compartilhamento de pacote
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Baixe o pacote de origem. Ao baixar o pacote, ele é adicionado ao gerenciador de pacote do AEM Forms.
-1. Após o download, navegue até: `https://<server>:<port>/crx/packmgr/index.jsp`e instale `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Na seção **[!UICONTROL Filtros]** :
+   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
+1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
+1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
+1. Select the package and click **[!UICONTROL Install]**.
 
 1. Para baixar o arquivo de código fonte, abra `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` no navegador.
 
@@ -91,11 +96,13 @@ Execute as seguintes etapas para criar e implantar o aplicativo AEM Forms.
 
    * Windows PowerShell
    * Visual Studio
+
    O `.appx` pacote requer os seguintes itens para ser instalado com êxito:
 
    1. Biblioteca WinJS
-   1. Verifique se o pacote vem com um certificado autoassinado ou um certificado público assinado por uma autoridade confiável, como o VeriSign.
+   1. Certifique-se de que o pacote vem com um certificado autoassinado ou um certificado público assinado por uma autoridade confiável, como o VeriSign.
    1. Licença do desenvolvedor
+
    O diretório Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contém os quatro componentes principais nele:
 
    1. `.appx` arquivo
@@ -125,12 +132,12 @@ Para dispositivos de propriedade de empresas que estejam ligados ao domínio da 
 
 Dispositivos de propriedade corporativa usam edições Professional e Enterprise do Windows.
 
-A Microsoft recomenda instalar um certificado público emitido por uma autoridade confiável, como o VeriSign.
+A Microsoft recomenda que você instale um certificado público emitido por uma autoridade confiável, como o VeriSign.
 
 Para implantar o aplicativo:
 
 * Verifique se o dispositivo está associado ao domínio da empresa.
-* Ativar a configuração de política de grupo.
+* Habilitar a configuração de política de grupo.
 
 **Para ativar a configuração de política de grupo:**
 
