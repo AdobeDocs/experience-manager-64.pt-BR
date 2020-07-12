@@ -10,9 +10,9 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '849'
 ht-degree: 3%
 
 ---
@@ -45,23 +45,25 @@ Use um dos seguintes caminhos de atualização, conforme apropriado para o seu a
 
       >[!NOTE]
       >
-      >Depois que o servidor estiver funcionando, alguns pacotes do AEM Forms permanecem no estado de instalação. O número de pacotes pode variar para cada instalação. É possível ignorar com segurança o estado desses pacotes. Os pacotes estão listados em `https://[server]:[port]/system/console/`.
+      >Depois que o servidor estiver funcionando, alguns pacotes de AEM Forms permanecerão no estado de instalação. O número de pacotes pode variar para cada instalação. É possível ignorar com segurança o estado desses pacotes. Os pacotes estão listados em `https://[server]:[port]/system/console/`.
 
 
-1. Instale o pacote complementar do AEM Forms. As etapas estão listadas abaixo:
+1. Instale o pacote suplementar do AEM Forms. As etapas estão listadas abaixo:
 
-   1. Faça logon no servidor AEM como administrador e abra o compartilhamento de pacote. O URL padrão do compartilhamento de pacote é `https://[server]:[port]/crx/packageshare`.
-   1. No compartilhamento de pacotes, pesquise nos pacotes **[!UICONTROL complementares do]** AEM 6.4 Forms, clique no pacote aplicável ao seu sistema operacional e clique em **[!UICONTROL Download]**. Leia e aceite o contrato de licença e clique em **[!UICONTROL OK]**. Os start de download. Após o download, a palavra **[!UICONTROL Download]** é exibida ao lado do pacote.
+   1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+   1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+   1. Na seção **[!UICONTROL Filtros]** :
+      1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+      1. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
+   1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
+   1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
+   1. Select the package and click **[!UICONTROL Install]**.
 
-      Como alternativa, você também pode usar os hiperlinks listados nas versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms para baixar manualmente um pacote.
-
-   1. Depois que o download for concluído, clique em **[!UICONTROL Download]**. Você é redirecionado para o gerenciador de pacotes. No gerenciador de pacotes, pesquise o pacote baixado e clique em **[!UICONTROL Instalar]**.
-
-      Se você baixar manualmente o pacote usando o link direto listado nas versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)AEM Forms, abra o Gerenciador de pacote AEM, clique em **[!UICONTROL Carregar pacote]**, selecione o pacote baixado e clique em Fazer upload. Depois que o pacote for carregado, clique no nome do pacote e clique em **[!UICONTROL Instalar]**.
+      Você também pode baixar o pacote usando o link direto listado no artigo de versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 
       >[!NOTE]
       >
-      >Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não interrompa imediatamente o servidor.** Antes de parar o servidor de formulários AEM, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo &lt;crx-repository>/error.log e o log esteja estável. Observe também que alguns pacotes podem permanecer no estado instalado. É possível ignorar com segurança o estado desses pacotes.
+      >Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não interrompa imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo &lt;crx-repository>/error.log e o log esteja estável. Observe também que alguns pacotes podem permanecer no estado instalado. É possível ignorar com segurança o estado desses pacotes.
 
    1. Pare a instância do AEM e exclua os seguintes arquivos:
 
@@ -74,7 +76,7 @@ Use um dos seguintes caminhos de atualização, conforme apropriado para o seu a
 
    * **Executar utilitário de migração**
 
-      O utilitário de migração torna os formulários adaptáveis e os ativos de gerenciamento de correspondência das versões anteriores compatíveis com os formulários AEM 6.4. Você pode baixar o utilitário do compartilhamento de pacote do AEM. Para obter informações detalhadas sobre como configurar e usar o utilitário de migração, consulte o utilitário [de](/help/forms/using/migration-utility.md)migração.
+      O utilitário de migração torna os formulários adaptáveis e os ativos de gerenciamento de correspondência das versões anteriores compatíveis com os formulários AEM 6.4. Você pode baixar o utilitário da Distribuição de software AEM. Para obter informações detalhadas sobre como configurar e usar o utilitário de migração, consulte o utilitário [de](/help/forms/using/migration-utility.md)migração.
 
       Se você estiver usando o [Exemplo para integrar o componente](integrate-draft-submission-database.md) de rascunhos e envios ao banco de dados e atualizar de uma versão anterior, execute os seguintes query SQL após executar a atualização:
 
@@ -92,11 +94,11 @@ Use um dos seguintes caminhos de atualização, conforme apropriado para o seu a
 
    * **(Se estiver atualizando do AEM 6.2 Forms ou somente versões anteriores) Reconfigure o Adobe Sign**
 
-      Se você tiver o Adobe Sign configurado na versão anterior do AEM Forms, reconfigure o Adobe Sign nos serviços da AEM Cloud. Para obter mais detalhes, consulte [Integrar o Adobe Sign a formulários](/help/forms/using/adobe-sign-integration-adaptive-forms.md)AEM.
+      Se você tiver o Adobe Sign configurado na versão anterior dos AEM Forms, reconfigure o Adobe Sign a partir dos AEM cloud services. Para obter mais detalhes, consulte [Integrar o Adobe Sign a AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **(Se estiver atualizando do AEM 6.2 Forms ou somente versões anteriores) Reconfigurar análises e relatórios**
 
-      No AEM 6.4 Forms, variável de tráfego para fonte e evento bem-sucedido para impressão não está disponível. Portanto, ao atualizar do AEM 6.2 Forms ou de versões anteriores, o AEM Forms interrompe o envio de dados para o servidor do Adobe Analytics e os relatórios de análise para formulários adaptáveis não estão disponíveis. Além disso, o AEM 6.4 Forms apresenta uma variável de tráfego para a versão de análise de formulário e evento bem-sucedido pelo tempo gasto em um campo. Portanto, reconfigure análises e relatórios para seu ambiente de formulários AEM. Para obter etapas detalhadas, consulte [Configuração de análises e relatórios](/help/forms/using/configure-analytics-forms-documents.md).
+      No AEM 6.4 Forms, variável de tráfego para fonte e evento bem-sucedido para impressão não está disponível. Portanto, quando você atualiza do AEM 6.2 Forms ou de versões anteriores, o AEM Forms para de enviar dados para o servidor e os relatórios de análise do Adobe Analytics para formulários adaptáveis não estão disponíveis. Além disso, o AEM 6.4 Forms apresenta uma variável de tráfego para a versão de análise de formulário e evento bem-sucedido pelo tempo gasto em um campo. Portanto, reconfigure análises e relatórios para o seu ambiente de AEM Forms. Para obter etapas detalhadas, consulte [Configuração de análises e relatórios](/help/forms/using/configure-analytics-forms-documents.md).
 
 1. Verifique se o servidor foi atualizado com êxito, se todos os dados também foram migrados com êxito e se podem funcionar normalmente.
 
