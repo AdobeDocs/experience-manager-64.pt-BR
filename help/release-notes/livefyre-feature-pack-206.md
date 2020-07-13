@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 4%
 
 ---
 
@@ -54,24 +57,24 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 Este pacote integra os recursos de curadoria líderes do setor do Livefyre à sua instância do AEM, permitindo que você publique conteúdo valioso gerado pelo usuário (UGC) das redes sociais para seu site em minutos. Há três componentes diferentes para este pacote:
 
-**Importar conteúdo UGC para ativos AEM**
+**Importar conteúdo UGC para AEM Assets**
 
-* Importe conteúdo gerado pelo usuário (UGC) do Twitter e do Instagram do Livefyre Studio para os ativos AEM usando o Importador UGC.
+* Importe o conteúdo gerado pelo usuário (UGC) do Twitter e do Instagram do Livefyre Studio para o AEM Assets usando o Importador UGC.
 * Acesse sua biblioteca do Livefyre.
 * Pesquise em tempo real no Twitter e no Instagram usando o Livefyre Social Search.
 * Gerenciar direitos no UGC.
 
-**Adicionar componentes do Livefyre a sites ou comunidades do AEM**
+**Adicionar componentes do Livefyre a AEM Sites ou comunidades**
 
 * Crie e personalize instantaneamente experiências dinâmicas e envolventes usando um conjunto de componentes sociais, incluindo Mapas, Galerias e Muros de Mídia.
-* Publicar UGC em Sites ou comunidades do AEM.
+* Publicar UGC em AEM Sites ou comunidades.
 
 **Importar catálogos de produtos para o Livefyre com o AEM Commerce**
 
 * Integre facilmente seu catálogo de produtos existente ao Livefyre para incentivar o envolvimento e a conversão dos usuários em seus sites, além de fornecer experiências UGC que podem ser compradas.
 * Edite ou exclua itens no Catálogo de produtos do AEM Commerce e atualize automaticamente as alterações no Livefyre.
 
-Para obter ajuda com a instalação, consulte [Integração com o Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+Para obter ajuda com a instalação, consulte [Integração com o Livefyre](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/livefyre.html).
 
 ### Informações adicionais sobre a versão {#additional-release-information}
 
@@ -84,7 +87,7 @@ Devido a atualizações que afetam a agregação de conteúdo de contas de usuá
 #### Novo recurso ou melhoria {#new-feature-or-improvement}
 
 * Foi adicionada a capacidade de pesquisar UGC antes de configurar direitos para solicitar contas sociais no Livefyre. É necessário configurar contas sociais para solicitar direitos ou substituir a solicitação de direitos se você for o proprietário do conteúdo.
-* O fluxo de trabalho [de solicitação de direitos](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html) UGC do Instagram e do Twitter foi atualizado para estar em conformidade com as APIs mais recentes.
+* O fluxo de trabalho [de solicitação de direitos](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/livefyre.html) UGC do Instagram e do Twitter foi atualizado para estar em conformidade com as APIs mais recentes.
 * O status dos direitos e as ações apropriadas agora são exibidos na tela de solicitação de direitos.
 
 #### Correções de erros {#bug-fixes}
@@ -93,7 +96,7 @@ Devido a atualizações que afetam a agregação de conteúdo de contas de usuá
 * Correção de um problema em que a contagem de ativos no estúdio Livefyre não correspondia à contagem de ativos na biblioteca UGC do AEM.
 * Correção de um problema na biblioteca UGC em que os resultados filtrados eram exibidos após as opções de filtro serem redefinidas.
 * Correção de um problema com o AEM Commerce, no qual os botões de chamada para ação redirecionavam os usuários para o URL incorreto.
-* Correção de um problema no AEM Sites em que arrastar e soltar vários componentes no espaço reservado parsys fazia com que ele desaparecessem.
+* Correção de um problema em AEM Sites em que arrastar e soltar vários componentes no espaço reservado parsys fazia com que ele desaparecessem.
 * Correção de um problema em que as contas sociais desativadas estavam disponíveis para seleção ao enviar uma solicitação de direitos.
 * Correção de um problema em que arrastar e soltar UGC de Ativos em Sites gerava um erro.
 * Correção de um problema em que arrastar e soltar componentes de Bate-papo e Liveblog em Sites não criava o aplicativo.
