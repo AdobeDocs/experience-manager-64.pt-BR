@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 28%
 
 ---
@@ -144,7 +144,7 @@ A criação de variações em um fragmento com o mesmo conteúdo, mas com layout
 
 **Content Services**
 
-Várias melhorias no Sling Model Exporter e nos Componentes principais estão incluídas para fornecer uma saída JSON robusta para incorporar conteúdo em aplicativos móveis e experiências criadas com aplicativos de página única.
+Várias melhorias no Sling Model Exporter e nos Componentes Principais foram incluídas para fornecer uma saída JSON robusta para incorporar conteúdo em aplicativos móveis e experiências criadas com aplicativos de página única.
 
 #### Obtendo sites criados mais rapidamente {#gettings-sites-built-quicker}
 
@@ -290,7 +290,7 @@ Mais detalhes sobre a página de notas de versão do [AEM Forms](forms.md) . Als
 
 É possível integrar o Livefyre com sua instância do AEM 6.4. As informações sobre como integrar o Livefyre com o AEM estão localizadas aqui:
 
-* [Integração do Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Integração do Livefyre](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/livefyre.html)
 
 ### Aproveite o desenvolvimento voltado ao cliente {#leverage-customer-focused-development}
 
@@ -327,7 +327,7 @@ Esse processo de priorização gerou a correção de mais de 500 alterações fo
 
 * [Ferramenta](/help/sites-developing/dialog-conversion.md) de conversão de diálogo para migrar componentes da interface clássica para o Coral 3
 
-**Ativos**
+**Assets**
 
 * Aplicativo para desktop Adobe Experience Manager ([leia mais](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) e [baixe](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
 
