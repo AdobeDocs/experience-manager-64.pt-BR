@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21534'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 24%
 | Versão | 6.4.8.0 |
 | Tipo | Lançamento do Service Pack |
 | Data | 05 de março de 2020 |
-| URL de download | AEM 6.4.8.0 em [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), Distribuição [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| URL de download | AEM 6.4.8.0 sobre distribuição [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## O que está incluído no AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -87,7 +87,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Exceção de falta de memória observada quando um arquivo ZIP grande é carregado no Experience Manager DAM (NPR-32155).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
 
 * Cancelar a publicação do Brand Portal, na página Gerenciar publicação, falha em subpastas de uma pasta publicada (NPR-31835).
 
@@ -788,7 +788,7 @@ Alguns dos principais destaques do AEM 6.4.4.0 são:
 **Sites**
 
 * (Interface clássica) Uma fração das cópias online é exibida na lista de lançamento. NPR-28598, NPR-28574: Hotfix do CQ-4263410
-* O LiveRelationshipManagerImpl lança exceções quando cq:master está vazio ou é inválido. NPR-28590: Hotfix do CQ-4263115
+* O LiveRelationshipManagerImpl lança exceções quando cq:principal está vazio ou é inválido. NPR-28590: Hotfix do CQ-4263115
 * O fluxo de trabalho &quot;Solicitar exclusão&quot; da caixa não exclui as páginas corretamente. NPR-28668: Hotfix do CQ-4263195
 * A interface do usuário de status de relacionamento não mostra os valores adequados de ano ou carimbo de data e hora para os campos coral-datepicker relacionados. NPR-28666: Hotfix do CQ-4263661
 * Script entre sites (XSS) no SuggestionHandler para 6.4. NPR-28693: Hotfix do CQ-4253821
@@ -809,7 +809,7 @@ Alguns dos principais destaques do AEM 6.4.4.0 são:
 * O Editor de Rich Text na caixa de diálogo está oscilando quando o posicionamento de um plug-in é superior à área de texto, portanto, bloqueando qualquer criação adicional. NPR-27579: Hotfix do CQ-4257440
 * (Interface clássica) cq:action editannotate não funciona. NPR-28232: Hotfix do CQ-4257703
 * A remoção de tags do painel de pesquisa de ativos de filtro de tags do editor de páginas não atualiza a lista corretamente. NPR-27983: Hotfix do CQ-4245567
-* Se os valores de número de vários campos estiverem vazios, clicar em Salvar resultará em um prompt de carregamento infinito sem concluir.  NPR-28400, NPR-28393: Hotfix do CQ-4244058, CQ-4244349
+* Se os valores do número de vários campos estiverem vazios, clicar em Salvar resultará em um prompt de carregamento infinito sem concluir.  NPR-28400, NPR-28393: Hotfix do CQ-4244058, CQ-4244349
 * Com permissão de leitura, os usuários/grupos não conseguem selecionar um XF e não têm opção para visualização do XF e suas propriedades de página. NPR-28341: Hotfix do CQ-4260412
 * Os dados JSON recebidos do Público alvo têm vários caracteres de escape fazendo com que a página do aplicativo quebre. NPR-28318: Hotfix do CQ-4252043
 * Não é possível editar nenhum componente após a instalação do AEM 6.4.3. NPR-28125: Hotfix para CQ-4261216
@@ -1347,7 +1347,7 @@ Alguns dos principais destaques do AEM 6.4.2.0 são:
 * (Componente de página) Adicionar um componente ao Parsys é cortado da direita e sai da largura do quadro do dispositivo. NPR-25536: Hotfix do CQ-4238224
 * O editor de texto simples envia dados não aparados e adiciona espaços extras. NPR-25312: Hotfix do CQ-4249006
 * Ao abrir o componente usando o modo de inversão, os plug-ins carregados anteriormente não ficam visíveis na segunda vez. NPR-24610: Hotfix do CQ-4236850
-* Carregar um XF na visualização do editor copiando/colando não carrega a variação mestre automaticamente. NPR-24841: Hotfix do CQ-4248037
+* Carregar um XF na visualização do editor copiando/colando não carrega a variação principal automaticamente. NPR-24841: Hotfix do CQ-4248037
 * Estrutura HTML incorreta no siteadmin / damadmin quebra o IE11. NPR-24686: Hotfix do CQ-4246363, CQ-4248402
 * (Assistente de gerenciamento de publicação) O calendário para a data de ativação na etapa Opções não é aberto após algumas ações na etapa Escopo. NPR-25681: Hotfix do CQ-4250205
 * A interface do usuário clássica não funciona para editar o CUG pois está obsoleta. NPR-25075: Hotfix do 4241823
@@ -1600,7 +1600,7 @@ Os principais destaques dos formulários do AEM 6.4.2.0 são:
 * (CCR) O recarregamento de rascunho está falhando devido à análise XML. Hotfix do CQ-4250950
 * (Editor IC) O botão &quot;Editar fragmento&quot; deve ser mais descoberto. Hotfix do CQ-4244694
 * (XDP) Uma tela em branco é exibida ao adicionar um fragmento de layout no novo subformulário criado. Hotfix do CQ-4248810
-* Falha no teste DocumentFragment-master-DeployWithServerSideTests. Hotfix do CQ-4245496
+* Falha no teste DocumentFragment-principal-DeployWithServerSideTests. Hotfix do CQ-4245496
 * Variável de módulo de texto Instância duplicada no módulo Condição. Hotfix do CQ-4252128
 * O URL de pré-visualização do PDF não mostra o relatórios de transação na publicação. Hotfix do CQ-4246158
 * Problemas relacionados ao IC Sync com a sincronização do Canal de impressão com o Canal da Web. Hotfix do CQ-4251505
@@ -2106,8 +2106,8 @@ Lista de pacotes de conteúdo incluídos no AEM 6.4.1.0
 >
 >Para clientes com Pacotes de recursos instalados no AEM 6.4. Os Pacotes de recursos opcionais fornecidos pela Adobe têm dependências na versão de lançamento e no service pack. Se você tiver algum Feature Pack instalado, entre em contato com a equipe de Atendimento ao cliente do AEM para validar a compatibilidade desses pacotes de recursos com este Service Pack para o AEM 6.4.
 
-* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* O download do Service Pack está disponível no Compartilhamento de pacotes da Adobe, que pode ser acessado diretamente da instância do AEM 6.4.
+* O AEM 6.4.8.0 requer o AEM 6.4. Para obter detalhes, consulte a documentação [de](../sites-deploying/upgrade.md)atualização.
+* O download do Service Pack está disponível no portal [de distribuição de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software para download.
 * Em uma implantação com MongoDB e várias instâncias, instale o AEM 6.4.8.0 em uma das instâncias do autor usando o Gerenciador de pacotes.
 * Antes de instalar o Service pack, verifique se você tem um instantâneo ou um backup atualizado da sua instância do AEM.
 * Reinicie a instância antes da instalação. Embora isso seja necessário apenas quando a instância ainda está no modo de atualização (e esse é o caso quando a instância foi atualizada de uma versão anterior), geralmente é recomendado se a instância estava sendo executada por um período de tempo maior.
@@ -2116,14 +2116,13 @@ Lista de pacotes de conteúdo incluídos no AEM 6.4.1.0
 >
 >A Adobe não recomenda remover ou desinstalar o pacote AEM 6.4.8.0.
 
-### Instalar o Service Pack por meio do Compartilhamento de pacotes {#install-the-service-pack-via-package-share}
+### Install the Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 Execute as seguintes etapas para instalar o Service Pack em uma instância do AEM 6.4 existente:
 
-1. Faça logon no Compartilhamento de pacotes no AEM ou diretamente do navegador e baixe o pacote do AEM 6.4.8.0.
+1. Baixe o pacote da Distribuição de software.
 
-   (procure por &quot;AEM-6.4.8.0&quot; para encontrá-lo)
-1. Instale o pacote baixado usando o Gerenciador de pacotes.
+1. No AEM, faça logon no Package Manager e adicione o pacote baixado do AEM 6.4.8.0. Selecione o pacote carregado e clique em **[!UICONTROL Instalar]**.
 
 >[!NOTE]
 >
