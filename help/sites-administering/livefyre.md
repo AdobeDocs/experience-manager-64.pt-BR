@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1652'
 ht-degree: 4%
 
 ---
@@ -39,22 +39,13 @@ O AEM 6.4 vem com o pacote de recursos 1.2.6 do Livefyre pré-instalado. Este pa
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Retorne à página inicial do AEM, clique em Ferramentas e navegue até **Implantação > Compartilhamento** de pacotes.
+1. Baixe o pacote Livefyre da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software.
 
-   Uma lista de pacotes de recursos e hotfixes disponíveis para download é exibida.
-
-1. Na pesquisa por palavra-chave, procure &quot;Livefyre&quot; e selecione o Livefyre feature pack correspondente à sua versão do AEM.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. Na página de informações do pacote de recursos, clique em **Download**, depois leia o Contrato de licença do pacote e clique em **Aceitar**.
-1. Retorne ao Gerenciador de pacotes, localize o pacote recém-baixado e clique em **Instalar**.
+1. No Gerenciador de pacotes, instale o pacote baixado. Para obter instruções sobre como usar a Distribuição de software e os pacotes no AEM, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Seu pacote Livefyre-AEM está instalado agora. Antes de começar a usar os recursos de integração, você deve configurar o AEM para usar o Livefyre.
-
-   Para obter mais informações sobre pacotes, consulte [Como trabalhar com pacotes](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    Para obter mais informações e notas de versão sobre pacotes de recursos, consulte Pacotes de [recursos](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
@@ -81,7 +72,7 @@ Configure o AEM para usar as credenciais de licença do Livefyre de sua organiza
    >
    >As pastas devem ter as Configurações de nuvem ativadas em suas propriedades antes que as configurações do Livefyre possam ser adicionadas a elas. As pastas de configuração são criadas e gerenciadas no Navegador de configuração.
    >
-   >Não é possível criar um nome para uma configuração; ele é referenciado pelo caminho da pasta em que está. Você só pode ter uma configuração por pasta.
+   >Não é possível criar um nome para uma configuração; ele é referenciado pelo caminho da pasta em que está. You can only have one configuration per folder.
 
 1. Selecione o cartão de configuração do Livefyre recém-criado e clique em **Propriedades**.
 
