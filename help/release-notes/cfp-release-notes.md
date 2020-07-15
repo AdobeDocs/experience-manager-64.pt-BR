@@ -1,13 +1,13 @@
 ---
 title: Notas de versão do AEM 6.4 Cumulative Fix Pack
-description: Notas de versão específicas dos Pacotes de correção cumulativos do Adobe Experience Manager 6.4.
+description: Notas de versão específicas do Adobe Experience Manager 6.4 Cumulative Fix Packs.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 22%
+source-wordcount: '2119'
+ht-degree: 21%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 22%
 |---|---|
 | Versão | 6.4.8.1 |
 | Tipo | Cumulative Fix Pack |
-| Data | 04 de junho de 2020 |
+| Data | June 04, 2020 |
 | Pré-requisitos | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
-| URL de download | AEM 6.4.8.1 em Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1)pacotes, Distribuição de [software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| URL de download | AEM 6.4.8.1 sobre distribuição [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## O que está incluído no AEM 6.4.8.1 {#what-s-included-in-aem}
 
@@ -48,15 +48,15 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 * Quando a opção Coral.Select define emptyOption=true ou contém um item padrão com valor = &quot;&quot;, o arquivo dropdownshoide.js encontra um erro: TypeError não detectado: component.getValue não é uma função (NPR-33163).
 * Quando um componente inclui outro componente como recurso de envio de dados, o espaço reservado do componente do container pai é substituído pelo espaço reservado dos componentes internos (NPR-33119).
 * Quando você baseia um Fragmento de conteúdo em um schema e ele contém uma área de texto obrigatória ou um campo de caminho, o Fragmento de conteúdo não é salvo (NPR-33007)
-* Ao criar um componente personalizado usando o componente de fragmento de experiência pronto para uso e usá-lo nas páginas do AEM Sites, o AEM não exibe referências (uso) para o componente personalizado (NPR-32852).
-* Quando uma página do AEM Sites faz parte de um grande conjunto de conteúdo com várias cópias online, a pré-visualização do histórico de versão da página não é carregada (NPR-32772).
+* Ao criar um componente personalizado usando o componente de fragmento de experiência out-of-the-box e usá-lo em páginas de AEM Sites, o AEM não exibe referências (uso) para o componente personalizado (NPR-32852).
+* Quando uma página AEM Sites faz parte de um grande conjunto de conteúdo com várias cópias online, a pré-visualização do histórico de versão da página não é carregada (NPR-32772).
 * Quando você promove uma inicialização, ele adiciona a combinação &quot;cq:LiveRelationship&quot; a cada componente adicionado na inicialização. Tem impacto em todas as inicializações, independentemente do lançamento com ou sem a seleção dos —  Herdar dados ao vivo da página de origem —  (NPR-32664).
 * Quando start de paginação, o Seletor de fragmentos de experiência não carrega todos os itens (NPR-32605).
-* Não é possível criar uma inicialização para uma página do AEM Sites. A criação de inicialização resulta em um erro (NPR-32544).
+* Não é possível criar uma inicialização para uma página de AEM Sites. A criação de inicialização resulta em um erro (NPR-32544).
 * Gerenciar publicação não inclui ativos referenciados na solicitação de fluxo de trabalho de ativação (NPR-32463).
-* A verificação de integridade do Dispatcher exibe a mensagem de `Invalid cookie header` aviso nos arquivos de registro (NPR-33630).
+* A verificação de integridade do Dispatcher exibe uma mensagem de `Invalid cookie header` aviso nos arquivos de registro (NPR-33630).
 
-### Ativos {#assets-6481}
+### Assets {#assets-6481}
 
 * A contagem de ativos não é alterada de acordo com a alteração na seleção na Visualização da Lista (NPR-33285).
 
@@ -106,13 +106,13 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 
 >[!NOTE]
 >
->O AEM Cumulative Fix Pack não inclui correções para formulários AEM. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para o AEM Forms no JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>O Cumulative Fix Pack do AEM não inclui correções para AEM Forms. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para o AEM Forms no JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * Gerenciamento de correspondência: Quando um usuário cola o conteúdo de um [!DNL Word] documento, o fragmento do documento de texto não retém a formatação (NPR-33213).
 * Formulários adaptativos: Uma nova linha de uma string em um dicionário de formulários adaptáveis adiciona `&#xa;` caracteres ao dicionário (NPR-33265).
 * Formulários adaptativos: O usuário não pode salvar um formulário adaptável com mais de um anexo (NPR-33214).
 * Formulários adaptativos: `AddInstance` e `RemoveInstance` os métodos para a classe Instance Manager não adicionam um número dinâmico de instâncias para fragmentos de carregamento lento em [!DNL Internet Explorer 11] (NPR-33201).
-* Formulários adaptativos: O Analytics ativado em um formulário adaptável incorporado em uma [!DNL Sites] página não registra dados para eventos Enviar e Abandonar (NPR-31359).
+* Formulários adaptativos: A Analytics habilitada em um formulário adaptável incorporado em uma [!DNL Sites] página não grava dados para eventos Enviar e Abandonar (NPR-31359).
 * Formulários adaptativos: Quando um usuário cola o conteúdo de um [!DNL Word] documento para um formulário adaptável e o envia, o formulário adaptativo enviado inclui caracteres unicode. Além disso, a conversão de PDF em PDF/A falha devido a caracteres unicode (NPR-33348).
 * BackendIntegration: As solicitações do modelo de dados de formulário falham, pois o token de atualização expira devido ao estado inativo incorreto (NPR-33168).
 * Serviços do Documento: Falha do serviço de conversão de PDF ao converter documentos PDF em PostScript devido à ausência de jars Gibson para [!DNL WebLogic] no [!DNL Linux] servidor (NPR-33515, CQ-4292239).
@@ -149,11 +149,11 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 
 Execute as seguintes etapas para instalar o Cumulative Fix Pack em uma instância do AEM 6.4.8.0 existente:
 
-1. Clique no link Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1) pacotes ou Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) software para baixar o pacote.
+1. Clique no link [Software Distribution (Distribuição](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) de software) para baixar o pacote.
 
-1. Abra o Gerenciador [de](http://localhost:4502/crx/packmgr/index.jsp) pacotes e clique em **Carregar pacote** para fazer upload do pacote.
+1. Abra o Gerenciador [de](http://localhost:4502/crx/packmgr/index.jsp) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
 
-1. Selecione o nome do pacote e clique em **Instalar**.
+1. Selecione o nome do pacote e clique em **[!UICONTROL Instalar]**.
 
 >[!NOTE]
 >
@@ -179,14 +179,14 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/p
 1. Todos os pacotes OSGI são ATIVOS ou FRAGMENTOS no Console OSGi (Use o console da Web: /system/console/bundles).
 1. O pacote OSGI org.apache.Jackrabbit.oak-core está na versão 1.8.17 ou superior (Use o console da Web: /system/console/bundles).
 
-Para determinar a plataforma certificada para execução com esta versão do AEM Sites e Assets, consulte Requisitos [](../sites-deploying/technical-requirements.md)técnicos.
+Para determinar a plataforma certificada para execução com esta versão do AEM Sites e do Assets, consulte Requisitos [](../sites-deploying/technical-requirements.md)técnicos.
 
 >[!Nnota]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
-### Atualizar visualizadores de mídia dinâmica (5.10.1) {#update-dynamic-media-viewers}
+### Atualizar visualizadores do Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">O AEM 6.4.8.1 contém a nova versão dos visualizadores do Dynamic Media (5.10.1) que ativa a verificação de nomes de duplicados na página Predefinição de imagem. Os clientes do Dynamic Media são aconselhados a executar o seguinte comando para exibir as predefinições do visualizador de caixa para um estado atualizado.
+<p id="Dynamic">O AEM 6.4.8.1 contém uma nova versão dos visualizadores do Dynamic Media (5.10.1) que permite a verificação de nomes de duplicados na página Predefinição de imagem. Os clientes da Dynamic Media devem executar o seguinte comando para exibir as predefinições do visualizador de caixa para um estado atualizado.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
