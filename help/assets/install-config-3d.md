@@ -10,7 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Consulte também [Trabalhar com o componente](using-the-3d-sites-component.md)Si
 >
 >Antes de baixar e instalar o pacote 3D, verifique se você instalou todos os pacotes AEM de pré-requisito com êxito. See the [AEM 3D Release Notes.](install-config-3d.md)
 
-## Instalação da biblioteca SDK do Autodesk FBX {#installing-the-autodesk-fbx-sdk-library}
+## Instalação da biblioteca de SDK do Autodesk FBX {#installing-the-autodesk-fbx-sdk-library}
 
 O código AEM 3D nativo requer a biblioteca FBX do Autodesk para suportar o formato de arquivo FBX. (No momento, a Adobe não pode redistribuir essa biblioteca.)
 
@@ -59,7 +62,7 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
       [https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_linux.tar.gz](https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_linux.tar.gz)
 
-1. Instale o FBX SDK:
+1. Instale o SDK do FBX:
 
    * Windows. Instale na mesma unidade em que o AEM está localizado.
    * Mac. Instale na mesma partição em que o AEM está localizado.
@@ -78,21 +81,19 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 1. Faça uma das seguintes opções:
 
    * Se esta for uma implantação do Windows Server, faça logon no servidor como Administrador.
-   * Se for um desktop Mac ou Windows, verifique se você tem privilégios de Administrador.
+   * Se for uma área de trabalho Mac ou Windows, verifique se você tem privilégios de Administrador.
 
 1. Verifique se você tem um navegador compatível disponível para acessar o AEM.
 
    Consulte Requisitos [do sistema](/help/release-notes/aem3d-release-notes.md#system-requirements).
 
-1. Usando um navegador compatível, faça logon no AEM com privilégios de administrador.
-1. No AEM, clique no logotipo do AEM para acessar o console de navegação global, clique no ícone **[!UICONTROL Ferramentas]** e navegue até **[!UICONTROL Administração > Implantação > Compartilhamento]** de pacotes.
-1. Na página da Adobe, use as credenciais da Adobe ID para fazer logon na sua conta da Adobe Creative Cloud.
-1. Na página de pacotes da Adobe, localize a versão 3.0.1 do pacote de `AEM-6.4-DynamicMedia-3D` recursos e baixe-a.
+1. Acesse o portal [de distribuição de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software. Localize a versão 3.0.1 do pacote de `AEM-6.4-DynamicMedia-3D` recursos e baixe-a.
 
 1. No AEM, clique em **[!UICONTROL Ferramentas > Administração > Implantação > Gerenciador]** de pacotes.
-1. Localize o pacote de recursos baixado e clique em **[!UICONTROL Instalar]**.
 
-1. Na caixa de diálogo **[!UICONTROL Instalar pacote]** , expanda Configurações **** avançadas e defina Manuseio **[!UICONTROL de controle de]** acesso como **Mesclar**.
+1. Carregue o pacote de recursos baixado no AEM. Localize-o e clique em **[!UICONTROL Instalar]**.
+
+1. Na caixa de diálogo **[!UICONTROL Instalar pacote]** , expanda Configurações **** avançadas e defina Manuseio **[!UICONTROL de]** Controle de acesso como **Mesclar**.
 1. Clique em **[!UICONTROL Instalar]** para iniciar a instalação do pacote.
 
    O arquivo `sample-3D-content.zip` é colocado na pasta raiz **[!UICONTROL Assets]** . Consulte [Validação da configuração do AEM 3D](#validating-the-setup-of-aem-d) para obter mais informações.
@@ -105,12 +106,12 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 1. Na página Modelos **[!UICONTROL de]** fluxo de trabalho, passe o mouse sobre o fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM e, quando a marca de seleção for exibida, selecione-a.
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Editar]**.
-1. Na tela Atualizar ativo **[!UICONTROL do]** DAM, no painel flutuante do AEM, clique no ícone **[!UICONTROL Plus]** à direita de Workflow para expandir a lista. Selecione Etapa **[!UICONTROL do]** processo na lista.
+1. Na tela Atualizar ativo **[!UICONTROL do]** DAM, no painel flutuante do AEM, clique no ícone **[!UICONTROL Plus]** à direita de Fluxo de trabalho para expandir a lista. Selecione Etapa **[!UICONTROL do]** processo na lista.
 1. Arraste a Etapa **[!UICONTROL do]** processo e solte-a no fluxo de trabalho imediatamente antes do componente Fluxo de trabalho de atualização do ativo **[!UICONTROL DAM concluído]** próximo ao final do fluxo de trabalho.
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
 
-1. Clique duas vezes na etapa de processo recém-adicionada.
+1. Clique com o Duplo do mouse na etapa de processo recém-adicionada.
 1. Na caixa de diálogo Propriedades **[!UICONTROL da]** etapa, na guia **[!UICONTROL Comum]** , no campo **[!UICONTROL Título]** , digite uma descrição adequada para o processo, como `Process 3D content`.
 1. Click the **[!UICONTROL Process]** tab.
 
@@ -122,7 +123,7 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 1. Perto do canto superior direito da página Atualizar ativo **[!UICONTROL do]** DAM, clique em **[!UICONTROL Sincronizar]** para salvar o modelo de fluxo de trabalho editado.
 1. Reinicie o AEM.
 
-   Após reiniciar, você está pronto para carregar conteúdo 3D e fazer com que o AEM o processe.
+   Após a reinicialização, você está pronto para carregar conteúdo 3D e fazer com que o AEM o processe.
 
    Continue com [Validação da configuração do AEM 3D](#validating-the-setup-of-aem-d).
 
@@ -130,7 +131,7 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
 1. No AEM, clique em **[!UICONTROL Ferramentas > Ativos]**, baixe `sample-3D-content.zip`e expanda o arquivo baixado. (Agora você pode excluir `sample-3D-content.zip` no AEM.)
 
-   Certifique-se de estar na Visualização **[!UICONTROL de]** cartão para exibir o feedback de upload e processamento nas etapas restantes.
+   Verifique se você está na Visualização **[!UICONTROL de]** cartão para fazer upload e processar feedback de visualização nas etapas restantes.
 
 1. Crie uma pasta chamada `test3d` para receber conteúdo de teste.
 1. Faça upload de todos os arquivos `sample-3D-content/images` para a `test3d` pasta.
@@ -140,9 +141,9 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
    Ainda não carregue os arquivos do modelo .ma.
 
-1. Na exibição de cartão, observe os banners de mensagem exibidos nos cartões de ativos 3d.
+1. Na Visualização de cartão, observe os banners de mensagem exibidos nos cartões de ativos 3d.
 
-   Cada ativo continua por várias etapas de processamento. **[!UICONTROL Quando a]** criação de visualização... etapa de processamento concluída, o cartão é atualizado com uma imagem em miniatura. Quando o processamento final estiver concluído, o banner será substituído pelo indicador **[!UICONTROL NEW]** .
+   Cada ativo continua por várias etapas de processamento. Quando a Pré-visualização **[!UICONTROL de criação...]** etapa de processamento concluída, o cartão é atualizado com uma imagem em miniatura. Quando o processamento final estiver concluído, o banner será substituído pelo indicador **[!UICONTROL NEW]** .
 
    >[!NOTE]
    >
@@ -152,7 +153,7 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
 1. Agora você aprenderá a resolver dependências de arquivos.
 
-   No banner Dependências **** não resolvidas do `stage-helipad.fbx` cartão, clique no ícone **[!UICONTROL Ponto]** de exclamação para navegar até as propriedades do ativo e abrir a guia **Dependências** .
+   No banner Dependências **** Não Resolvidas do `stage-helipad.fbx` cartão, clique no ícone **[!UICONTROL Ponto]** de Exclamação para navegar até as propriedades do ativo e abrir a guia **Dependências** .
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
@@ -160,12 +161,12 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-1. Clique em **[!UICONTROL Salvar]** e **[!UICONTROL Fechar]** para concluir o processamento do ativo e retornar à Exibição **[!UICONTROL de]** cartão, respectivamente.
-1. Quando o processamento estiver concluído, você verá o seguinte na Visualização **** de cartão:
+1. Clique em **[!UICONTROL Salvar]** e **[!UICONTROL Fechar]** para concluir o processamento do ativo e retornar à Visualização **[!UICONTROL de]** cartão, respectivamente.
+1. Quando o processamento estiver concluído, você verá o seguinte na Visualização **[!UICONTROL da]** placa:
 
    ![chlimage_1-374](assets/chlimage_1-374.png)
 
-1. Na página test3d, clique no `logo-sphere.fbx` cartão para abrir o modelo na Exibição **[!UICONTROL detalhada]**.
+1. Na página test3d, clique no `logo-sphere.fbx` cartão para abrir o modelo em **[!UICONTROL Detail Visualização]**.
 
    Próximo ao canto superior direito da página logo-spero.fbx, clique no ícone Destaque do Palco para expandir o menu suspenso e selecione `stage-spotlights.fbx`.
 
@@ -173,7 +174,7 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
 1. Na lista suspensa **[!UICONTROL Destaque]** do palco, selecione `stage-helipad.fbx`.
 
-   Usando o botão esquerdo do mouse para ajustar a exibição. A iluminação do plano de fundo e do modelo muda para refletir a nova seleção de estágio.
+   Usando o botão esquerdo do mouse para ajustar a visualização. A iluminação do plano de fundo e do modelo muda para refletir a nova seleção de estágio.
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
@@ -185,11 +186,11 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
 Como opção, você pode configurar o suporte no AEM 3D para ativos do Adobe Dimension.
 
-Você deve configurar um serviço de conversão externo para permitir a ingestão, visualização e publicação de ativos 3D do Adobe Dimension no AEM. O serviço converte do formato exclusivo Adobe Dimension (`.dn`) em uma variante de glTF (formatado como um `.glb` arquivo) que é salva com o ativo Dn como uma execução. A `.glb` execução é usada para a visualização baseada na Web do ativo 3D nos ativos AEM, sites e telas, e também está disponível para download para uso com aplicativos de terceiros.
+Você deve configurar um serviço de conversão externo para permitir a ingestão, pré-visualização e publicação de ativos 3D do Adobe Dimension no AEM. O serviço converte do formato exclusivo Adobe Dimension (`.dn`) em uma variante de glTF (formatado como um `.glb` arquivo) que é salva com o ativo Dn como uma execução. A `.glb` execução é usada para a visualização baseada na Web do ativo 3D em AEM Assets, sites e telas, e também está disponível para download para uso com aplicativos de terceiros.
 
 >[!NOTE]
 >
->O serviço de conversão é hospedado pela Adobe no Amazon AWS. Depois de configurar adequadamente o serviço, `.dn` os arquivos carregados no AEM são copiados com segurança para o serviço de conversão por meio do armazenamento temporário no Amazon S3. O resultado da conversão é transferido de volta para o AEM por meio de armazenamento temporário S3. Todas as transferências e armazenamento são protegidos. Além disso, o conteúdo persiste no S3 e o serviço de conversão apenas brevemente (normalmente não mais do que alguns minutos).
+>O serviço de conversão é hospedado pela Adobe no Amazon AWS. Depois de configurar corretamente o serviço, `.dn` os arquivos carregados no AEM são copiados com segurança para o serviço de conversão por meio de armazenamento temporário no Amazon S3. O resultado da conversão é transferido de volta para o AEM por meio de um armazenamento S3 temporário. Todas as transferências e armazenamentos são garantidas. Além disso, o conteúdo persiste no S3 e o serviço de conversão apenas brevemente (normalmente não mais do que alguns minutos).
 
 **Para configurar o suporte para ativos** do Adobe Dimension:
 
@@ -232,15 +233,16 @@ Você deve configurar um serviço de conversão externo para permitir a ingestã
 
 1. Valide a configuração fazendo o seguinte:
 
-   1. Abra os ativos AEM.
+   1. Abra AEM Assets.
    1. Carregue `logo_sphere.dn` para a `test3d` pasta. O arquivo está localizado em `sample-3D-content/models`.
 
       Observe que `sample-3D-content.zip` foi baixado anteriormente para validar a funcionalidade básica 3D.
-   1. Retorne à exibição **[!UICONTROL de]** cartão e observe o banner de mensagem mostrado no ativo carregado. **[!UICONTROL O Formato de]** Conversão... o banner é exibido durante o processo de conversão.
-   1. Depois que todo o processamento for concluído, abra o ativo na Exibição **** detalhada para verificar se o ativo convertido é exibido corretamente e se os controles de navegação do visualizador são utilizáveis.
+   1. Retorne à Visualização **[!UICONTROL do]** cartão e observe o banner de mensagem mostrado no ativo carregado. O Formato de **[!UICONTROL Conversão...]** o banner é exibido enquanto o processo de conversão está em andamento.
+   1. Depois que todo o processamento for concluído, abra o ativo em Visualização **** Detalhada para verificar se o ativo convertido é exibido corretamente e se os controles de navegação do visualizador são utilizáveis.
+
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
-   Se um &quot;Erro de processamento&quot; for exibido no ativo Dn na Visualização **[!UICONTROL de]** cartão após 10 a 15 minutos, a conversão falhou.
+   Se um &quot;Erro de processamento&quot; for exibido no ativo Dn na Visualização **[!UICONTROL do]** cartão após 10 a 15 minutos, a conversão falhou.
 
    Nesse caso, você pode solucionar o problema da conversão fazendo o seguinte:
 
