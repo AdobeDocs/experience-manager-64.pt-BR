@@ -3,9 +3,9 @@ title: Esquemas de metadados
 description: 'O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
+source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2536'
 ht-degree: 12%
 
 ---
@@ -41,7 +41,8 @@ Para visualização de uma lista de formulários/modelos, na [!DNL Experience Ma
 |---|---|---|
 | [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
 |  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Formulário de Schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
+|  | [!UICONTROL dm_video] | Formulário de Schema para vídeos do Dynamic Media. |
+|  | <ul><li> [!UICONTROL imagem]</li></ul> | Formulário de Schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
 |  | <ul><li> [!UICONTROL aplicativo]</li></ul> | Formulário de Schema para ativos com tipo MIME &quot;application&quot; (aplicativo), por exemplo application/ pdf, application/ zip e assim por diante. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com pdf de subtipo. |
 |  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de Schema para ativos com MIME tipo &quot;vídeo&quot;, como vídeo/avi, vídeo/mp4 e assim por diante. |
 | [!UICONTROL collection] |  | Formulário de Schema para coleções. |
@@ -62,7 +63,7 @@ Para visualização de uma lista de formulários/modelos, na [!DNL Experience Ma
 
 1. Na caixa de diálogo, digite o título do formulário de schema e clique em **[!UICONTROL Criar]** para concluir o processo de criação do formulário.
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## Editar formulários de schema de metadados {#editing-metadata-schema-forms}
 
@@ -164,7 +165,7 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**, por padrão.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
 
@@ -182,7 +183,7 @@ Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Exclui
 
 >[!NOTE]
 >
->Não é possível excluir os formulários de schema de metadados prontos nos ativos AEM.
+>Não é possível excluir os formulários de schema de metadados prontos em AEM Assets.
 
 ## Formulários de Schema para tipos MIME {#schema-forms-for-mime-types}
 
@@ -225,7 +226,7 @@ O recurso de schema de metadados está disponível somente para administradores.
 
 ## Aplicar metadados específicos da pasta {#applying-folder-specific-metadata}
 
-Os ativos AEM permitem que você defina uma variante de um schema de metadados e aplique-o a uma pasta específica.
+O AEM Assets permite que você defina uma variante de um schema de metadados e aplique-o a uma pasta específica.
 
 Por exemplo, você pode definir uma variante do schema de metadados padrão e aplicá-la a uma pasta. Quando você aplica o schema modificado, ele substitui o schema de metadados padrão original aplicado aos ativos dentro da pasta.
 
