@@ -3,7 +3,7 @@ title: Esquemas de metadados
 description: 'O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
+source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 12%
@@ -41,7 +41,7 @@ Para visualização de uma lista de formulários/modelos, na [!DNL Experience Ma
 |---|---|---|
 | [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
 |  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
-|  | [!UICONTROL dm_video] | Formulário de Schema para vídeos do Dynamic Media. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Formulário de Schema para vídeos do Dynamic Media. |
 |  | <ul><li> [!UICONTROL imagem]</li></ul> | Formulário de Schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
 |  | <ul><li> [!UICONTROL aplicativo]</li></ul> | Formulário de Schema para ativos com tipo MIME &quot;application&quot; (aplicativo), por exemplo application/ pdf, application/ zip e assim por diante. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com pdf de subtipo. |
 |  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de Schema para ativos com MIME tipo &quot;vídeo&quot;, como vídeo/avi, vídeo/mp4 e assim por diante. |
@@ -63,7 +63,7 @@ Para visualização de uma lista de formulários/modelos, na [!DNL Experience Ma
 
 1. Na caixa de diálogo, digite o título do formulário de schema e clique em **[!UICONTROL Criar]** para concluir o processo de criação do formulário.
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## Editar formulários de schema de metadados {#editing-metadata-schema-forms}
 
@@ -78,7 +78,7 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. Na página **[!UICONTROL Editor de esquema de metadados]**, personalize a página de propriedades do ativo arrastando um ou mais componentes da lista de tipos de componentes na guia **[!UICONTROL Criar formulário]** para a guia **[!UICONTROL Básico]**.
 
