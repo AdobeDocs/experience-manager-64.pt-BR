@@ -48,7 +48,7 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Lista de permissão de campos de mensagem]** Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: 
+* **[!UICONTROL Campos de mensagem Lista de permissões]** Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: 
 *assunto* e *conteúdo*.
 
 * **[!UICONTROL Limite]** de tamanho da caixa de mensagem O número máximo de bytes na caixa de mensagem de cada usuário. O padrão é 
@@ -90,22 +90,22 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 *104857600* (100 MB).
 
 * **[!UICONTROL attachmentTypeBlocklist.name]** Uma lista de bloqueios de extensões de arquivo, com o prefixo &#39;
-**.**&quot;, isso será rejeitado pelo sistema. Se não estiver bloqueada, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;. O padrão é *PADRÃO*.
+**.**&quot;, isso será rejeitado pelo sistema. Se não for incluir na lista de bloqueios, a extensão será permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;. O padrão é *PADRÃO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
 
-   **(*Ação necessária*)** Uma lista permitida de extensões de arquivo, o oposto da lista de bloqueio. Para permitir todas as extensões de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
+   **(*Ação necessária*)** Uma lista de permissões de extensões de arquivo, o oposto da  lista de bloqueios. Para permitir todas as extensões de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
 
 * **[!UICONTROL serviceSelector.name]**(*obrigatório*) Um caminho absoluto (ponto final) pelo qual o serviço é chamado (um recurso virtual). A raiz do caminho escolhido deve ser uma incluída na configuração Caminhos *de execução* da configuração do OSGi [ , como `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`e `/apps/``/services/`. Para selecionar essa configuração para o recurso de mensagens de um site, esse terminal é fornecido como o **`Service selector`** valor para o `Message List and Compose Message components` (consulte Recurso [](configure-messaging.md)de mensagem). O padrão é */bin/messaging* .
 
 * **[!UICONTROL fieldAllowlist.name]** Use 
-**Lista de permissão** dos campos de mensagem.
+**Campos de mensagem Lista de permissões**.
 
 >[!CAUTION]
 >
 >Sempre que uma `Messaging Operations Service` configuração é aberta para edição, se `allowedAttachmentTypes.name` foi removida, uma entrada vazia é adicionada novamente para tornar a propriedade configurável. Uma única entrada vazia efetivamente desativa anexos de arquivo.
 >
->Para permitir todas as extensões de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **[!UICONTROL Salvar]**.
+>Para permitir todas as extensões de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **[!UICONTROL Salvar]**.
 
 ## Resolução de Problemas{#troubleshooting}
 
