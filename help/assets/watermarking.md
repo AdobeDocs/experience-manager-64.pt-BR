@@ -3,14 +3,17 @@ title: Marque com água suas imagens
 description: Use o recurso de marca d'água para adicionar uma marca d'água digital às imagens PNG E JPEG.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+source-git-commit: 04de28347ddf0082d2e224aa3853297cad3aacd8
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 4%
 
 ---
 
 
 # Marque com água seus ativos {#watermarking}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você adicione uma marca d&#39;água digital a imagens que ajudam os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. O AEM Assets oferece suporte para texto a ser usado como marca d&#39;água em arquivos PNG e JPEG.
+Os ativos Adobe Experience Manager (AEM) permitem que você adicione uma marca d&#39;água digital a imagens que ajudam os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. O AEM Assets oferece suporte ao texto a ser usado como marca d&#39;água em arquivos PNG e JPEG.
 
 Para poder aplicar uma marca d&#39;água em ativos, adicione a etapa [!UICONTROL Marca d&#39;água] no fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM.
 
@@ -32,3 +35,5 @@ Para poder aplicar uma marca d&#39;água em ativos, adicione a etapa [!UICONTROL
 
 1. Salve o fluxo de trabalho do **[!UICONTROL Ativo de atualização do DAM]** com a etapa Marca d&#39;água.
 1. Na interface do usuário do AEM, carregue um ativo de amostra. A marca d&#39;água é exibida com o tamanho da fonte, a cor e assim por diante, na posição configurada nas etapas acima.
+
+Para marcar documentos PDF de forma programada ou com informações dinâmicas, considere usar a oferta de serviços [de Documento](/help/forms/using/overview-aem-document-services.md) AEM.
