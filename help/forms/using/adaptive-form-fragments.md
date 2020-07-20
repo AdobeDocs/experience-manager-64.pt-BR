@@ -28,7 +28,7 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 
 ### Criar fragmento do zero {#create-fragment-from-scratch}
 
-1. Faça logon na instância do autor do AEM Forms em https://[*hostname*]:[*port*]/aem/forms.html.
+1. Efetue login na instância do autor do AEM Forms em https://[*hostname*]:[*port*]/aem/forms.html.
 1. Click **[!UICONTROL Create > Adaptive Form Fragment]**.
 1. Especifique o título, o nome, a descrição e as tags do fragmento.
 
@@ -39,7 +39,7 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 1. Clique para abrir a guia Modelo **[!UICONTROL de]** formulário e, no menu suspenso **[!UICONTROL Selecionar]** , selecione um dos seguintes modelos para o fragmento:
 
    * **[!UICONTROL Nenhum]**: Especifica a criação do fragmento do zero sem usar qualquer modelo de formulário.
-   * **[!UICONTROL Modelo]** de formulário: Especifica a criação do fragmento usando um modelo XDP carregado no AEM Forms. Selecione o modelo XDP apropriado como o modelo de formulário para o fragmento.
+   * **[!UICONTROL Modelo]** de formulário: Especifica a criação do fragmento usando um modelo XDP carregado para AEM Forms. Selecione o modelo XDP apropriado como o modelo de formulário para o fragmento.
 
    ![Criação de um formulário adaptável usando modelo de formulário como modelo](assets/form-template-model.png)
 
@@ -49,7 +49,7 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 
    Além disso, é possível criar um fragmento de formulário adaptável usando subformulários que não estão marcados como fragmentos no modelo de formulário especificando a expressão SOM para o subformulário na caixa suspensa.
 
-   * **[!UICONTROL Schema]** XML: Especifica a criação do fragmento usando um schema XML carregado no AEM Forms. É possível carregar ou selecionar entre os schemas XML disponíveis como o modelo de formulário para o fragmento.
+   * **[!UICONTROL Schema]** XML: Especifica a criação do fragmento usando um schema XML carregado em AEM Forms. É possível carregar ou selecionar entre os schemas XML disponíveis como o modelo de formulário para o fragmento.
 
    ![Criar um fragmento de formulário adaptável com base em um schema XML como modelo](assets/xml-schema-model.png)
 
@@ -107,7 +107,7 @@ Além disso, se você selecionou um schema XML ou modelo de formulário XDP como
 
 ### Configurar aparência do fragmento {#configure-fragment-appearance}
 
-Qualquer fragmento inserido em formulários adaptáveis aparece como uma imagem de espaço reservado. O espaço reservado exibe títulos de até um máximo de dez painéis filhos no fragmento. Você pode configurar o AEM Forms para mostrar o fragmento completo em vez da imagem de espaço reservado.
+Qualquer fragmento inserido em formulários adaptáveis aparece como uma imagem de espaço reservado. O espaço reservado exibe títulos de até um máximo de dez painéis filhos no fragmento. Você pode configurar AEM Forms para mostrar o fragmento completo em vez da imagem de espaço reservado.
 
 Execute as seguintes etapas para mostrar fragmentos completos em formulários:
 
