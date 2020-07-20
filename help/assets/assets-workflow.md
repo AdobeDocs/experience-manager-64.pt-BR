@@ -3,9 +3,9 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: 73d440198028bfa6b47e9fde13f3a354a1b8445f
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Para ver os vários modelos de fluxo de trabalho disponíveis por padrão, consu
 
 ![Alguns dos fluxos de trabalho padrão](assets/aem-default-workflows.png)
 
-*Figura: Alguns dos fluxos de trabalho padrão disponíveis em[!DNL Experience Manager]*
+*Figura: Alguns dos fluxos de trabalho padrão estão disponíveis em[!DNL Experience Manager].*
 
 ## Aplicar workflows a ativos {#applying-workflows-to-assets}
 
@@ -105,6 +105,7 @@ Para um modelo de fluxo de trabalho, os usuários podem criar um inicializador d
 ## Práticas recomendadas e limitações {#best-practices-limitations-tips}
 
 * Considere suas necessidades para todos os tipos de execuções ao projetar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As execuções não podem ser excluídas em massa depois. As representações indesejadas podem ocupar muito espaço no armazenamento após uso prolongado de [!DNL Experience Manager]. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
+* Por padrão, o fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM inclui algumas etapas para criar miniaturas e representações da Web. Se qualquer renderização padrão for removida do fluxo de trabalho, a interface do usuário do não [!DNL Assets] será renderizada corretamente.
 
 >[!MORELIKETHIS]
 >
