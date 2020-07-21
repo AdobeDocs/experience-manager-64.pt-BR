@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 249f2dd2553bc436a432ef68eae5cf846794ff81
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 27%
@@ -270,9 +270,9 @@ Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração
 >* Quando a Pré-visualização [segura está ativada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), os ativos publicados e não publicados no Dynamic Media Classic são exibidos no navegador de conteúdo do Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Para vídeo, o navegador de conteúdo do Dynamic Media Classic é compatível:
->  * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
->  * Vídeo MP4 único
->  * Vídeo F4V único
+   >   * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
+   >   * Vídeo MP4 único
+   >   * Vídeo F4V único
 
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
