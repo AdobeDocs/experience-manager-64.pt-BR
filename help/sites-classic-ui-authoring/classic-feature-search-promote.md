@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 57%
 
 ---
 
@@ -31,7 +34,7 @@ Facetas são configuradas no servidor Search&amp;Promote, assim como as informa�
 <table> 
  <tbody> 
   <tr> 
-   <th>Componente do Search&amp;Promote</th> 
+   <th>componente do Search&amp;Promote</th> 
    <th>Descrição</th> 
   </tr> 
   <tr> 
@@ -43,7 +46,7 @@ Facetas são configuradas no servidor Search&amp;Promote, assim como as informa�
    <td>Exibe a palavra-chave de pesquisa e a sequência de filtros que o usuário aplicou aos resultados da pesquisa.</td> 
   </tr> 
   <tr> 
-   <td>Aspecto da lista da caixa de seleção</td> 
+   <td>Lista da caixa de seleção - Aspecto</td> 
    <td>Uma lista de caixas de seleção para selecionar aspectos para filtrar os resultados da pesquisa.</td> 
   </tr> 
   <tr> 
@@ -63,7 +66,7 @@ Facetas são configuradas no servidor Search&amp;Promote, assim como as informa�
    <td>Exibe os resultados de uma pesquisa por palavra-chave.</td> 
   </tr> 
   <tr> 
-   <td>Pesquisar </td> 
+   <td>Pesquisar  </td> 
    <td>Adiciona um campo de pesquisa à página.</td> 
   </tr> 
  </tbody> 
@@ -84,15 +87,15 @@ O componente **[!UICONTROL Paginação]** permite que os usuários naveguem em v
 You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
 
 * **[!UICONTROL Ocultar página]** de resultado único - Selecione essa opção para ocultar os controles de navegação da página quando a pesquisa retornar uma única página de resultados.
-* **[!UICONTROL Ocultar primeiro/último]** : selecione essa opção para impedir que os usuários pulem para a primeira ou última página de resultados.
+* **[!UICONTROL Ocultar primeiro/último]** : selecione essa opção para impedir que os usuários pulem para a primeira ou a última página de resultados.
 * **[!UICONTROL Ocultar anterior/próximo]** - Determina se os usuários podem navegar pelas páginas de resultados em relação à página atual.
-* **[!UICONTROL Ocultar exibição de todos]** - Determina se o usuário pode consolidar todos os resultados de pesquisa em uma única página. Normalmente, fornecer dados paginados usa de maneira mais eficiente os recursos do servidor. Selecione essa opção para impedir a transferência de grandes conjuntos de dados em uma única mensagem de resposta.
+* **[!UICONTROL Ocultar visualização para todos]** - Determina se o usuário pode consolidar todos os resultados da pesquisa em uma única página. Normalmente, fornecer dados paginados usa de maneira mais eficiente os recursos do servidor. Selecione essa opção para impedir a transferência de grandes conjuntos de dados em uma única mensagem de resposta.
 
 ## Ativação da filtragem de resultados por facetas {#enabling-the-filtering-of-results-by-facets}
 
 Você pode permitir que os usuários filtrem os resultados da pesquisa por facetas. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Ao usar esses componentes, você também deve incluir o componente **[!UICONTROL Caminhos de navegação]**. Caminhos de navegação indicam os filtros atuais que são usados.
 
-The **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
 
 * **[!UICONTROL Nome]** da faceta - o nome da faceta usada para filtros.
 
@@ -123,7 +126,7 @@ O componente **[!UICONTROL Caminhos de navegação]** permite que os clientes ve
 Você pode configurar as seguintes propriedades para Caminhos de navegação no modo de Edição, para personalizar a aparência do componente:
 
 * **[!UICONTROL Delimitador]** - Defina o caractere ou a sequência de caracteres para agir como um delimitador entre cada navegação estrutural. O campo Delimitador aceita qualquer string de caractere como entrada. A configuração padrão é: &quot;>&quot; (sem as aspas)
-* **[!UICONTROL Delimitador]** de Trailing - Defina um caractere ou uma string de caractere a ser exibida no final das navegações estruturais. O campo Delimitador de Trailing aceita qualquer string de caractere como entrada. A configuração padrão para isso é &quot;em branco&quot; (ou seja, nada é exibido no final da linha de navegação estrutural)
+* **[!UICONTROL Delimitador]** de Trailing - Defina um caractere ou uma string de caractere a ser exibida no final das Trilhas de navegação. O campo Delimitador de Trailing aceita qualquer string de caractere como entrada. A configuração padrão para isso é &quot;em branco&quot; (ou seja, nada é exibido no final da linha de navegação estrutural)
 
 ## Adição de caixas de pesquisa {#adding-search-boxes}
 
