@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário do AEM 6.4 Assets
+user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 44%
 
 ---
 
@@ -16,38 +20,38 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 + [Sobre o DAM](assets.md)
 + [Melhorias na experiência do usuário](ux-improvements.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
-+ Usar ativos AEM {#using}
-   + [Experiência de home page do AEM Assets](assets-home-page.md)
++ Usar AEM Assets {#using}
+   + [Experiência com homes page AEM Assets](assets-home-page.md)
    + [Pesquisar ativos no AEM](search-assets.md)
    + [Pesquisa em texto completo do GQL](gql-search.md)
    + [Ativos multilíngues](multilingual-assets.md)
-   + [Usar ativos do Adobe Stock nos ativos AEM](aem-assets-adobe-stock.md)
+   + [Usar ativos do Adobe Stock em AEM Assets](aem-assets-adobe-stock.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Atividade na linha do tempo](activity-stream.md)
    + [Processar ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Informativo da mídia dinâmica pela Experience League](dynamic-media-newsletter.md)
-   + [Configuração da mídia dinâmica](administering-dynamic-media.md)
+   + [Informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
+   + [Configuração do Dynamic Media](administering-dynamic-media.md)
    + [Trabalhar com o Dynamic Media](dynamic-media.md)
    + [Configuração do Dynamic Media - modo Scene7](config-dms7.md)
    + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Solução de problemas do Dynamic Media - modo Scene7](troubleshoot-dms7.md)
-   + [Gerenciamento de ativos da mídia dinâmica](managing-assets.md)
+   + [Gerenciamento de ativos do Dynamic Media](managing-assets.md)
    + [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Gerenciamento de predefinições do visualizador de mídia dinâmica](managing-viewer-presets.md)
-   + [Aplicação de predefinições do visualizador de mídia dinâmica](viewer-presets.md)
-   + [Gerenciamento de predefinições da imagem de mídia dinâmica](managing-image-presets.md)
-   + [Aplicação de predefinições da imagem de mídia dinâmica](image-presets.md)
-   + [Perfis de vídeo da mídia dinâmica](video-profiles.md)
-   + [Perfis de imagem da mídia dinâmica](image-profiles.md)
+   + [Gerenciamento de predefinições do visualizador do Dynamic Media](managing-viewer-presets.md)
+   + [Aplicação de predefinições do visualizador do Dynamic Media](viewer-presets.md)
+   + [Gerenciamento de predefinições da imagem do Dynamic Media](managing-image-presets.md)
+   + [Aplicação de predefinições da imagem do Dynamic Media](image-presets.md)
+   + [Perfis de vídeo do Dynamic Media](video-profiles.md)
+   + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
    + [Adicionar recursos do Scene7 à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entrega de ativos de mídia dinâmica](delivering-dynamic-media-assets.md)
-   + [Ativação da proteção de hotlink na mídia dinâmica](hotlink-protection.md)
+   + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
    + [Conjuntos de imagem](image-sets.md)
    + [Conjuntos de mídia mista](mixed-media-sets.md)
    + [Conjuntos de rotação](spin-sets.md)
@@ -58,24 +62,24 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Banners em carrossel](carousel-banners.md)
    + [Uso do Quickviews para criar pop-ups personalizados](custom-pop-ups.md)
    + [Entrega de imagens otimizadas para um site responsivo](responsive-site.md)
-   + [Visualização de ativos da mídia dinâmica](previewing-assets.md)
-   + [Adição de ativos de Mídia dinâmica a páginas](adding-dynamic-media-assets-to-pages.md)
-   + [Incorporação do visualizador do Dynamic Video ou Image em uma página da Web](embed-code.md)
+   + [Visualização de ativos do Dynamic Media](previewing-assets.md)
+   + [Adição de ativos do Dynamic Media a páginas](adding-dynamic-media-assets-to-pages.md)
+   + [Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web](embed-code.md)
    + [Vincular URLs ao aplicativo da Web.](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
-   + [Publicação de ativos da mídia dinâmica](publishing-dynamicmedia-assets.md)
+   + [Publicação de ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Invalidação do conteúdo em cache do CDN](invalidate-cdn-cached-content.md)
    + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
    + [Personalização e extensão de ativos](extending-assets.md)
    + [Processando ativos usando manipuladores de mídia e workflows](media-handlers.md)
-   + [Estendendo a pesquisa de ativos](searchx.md)
-   + [Instalar e configurar o ImageMagick para trabalhar com os ativos AEM](best-practices-for-imagemagick.md)
-   + [Integração de ativos com fluxo de Atividade](extending-activity-stream.md)
-   + [Extensão do Editor de ativos](asseteditorx.md)
+   + [Extending Assets Search](searchx.md)
+   + [Instale e configure o ImageMagick para trabalhar com AEM Assets](best-practices-for-imagemagick.md)
+   + [Integrating Assets with Activity Stream](extending-activity-stream.md)
+   + [Extending Asset Editor](asseteditorx.md)
    + [API HTTP de ativos](mac-api-assets.md)
-   + [Desenvolvimento de proxy de ativos](proxy.md)
+   + [Assets Proxy Development](proxy.md)
 + Administrar ativos {#administer}
    + [Formatos compatíveis de ativos](assets-formats.md)
    + [Pesquisar aspectos](search-facets.md)
@@ -99,7 +103,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Uso do PDF rasterizer](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload de ativos](configuring-asset-upload-restrictions.md)
    + [Práticas recomendadas de integração do AEM e da Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integração dos ativos AEM com o servidor do InDesign](indesign.md)
+   + [Integração de AEM Assets com o servidor InDesign](indesign.md)
    + [Perfis de metadados](metadata-profiles.md)
    + [Gerenciamento de direitos digitais em ativos](drm.md)
    + [Uso do pacote de demonstração para o Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
@@ -119,7 +123,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Esquema de metadados de pasta](folder-metadata-schema.md)
    + [Gerenciamento de tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
+   + [Configurar o AEM Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos no Brand Portal](brand-portal-publish-assets.md)
    + [Publicar coleções no Brand Portal](brand-portal-publish-collection.md)
    + [Publicar pastas no Brand Portal](brand-portal-publish-folder.md)
