@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21534'
+source-wordcount: '21532'
 ht-degree: 24%
 
 ---
@@ -87,7 +87,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Exceção de falta de memória observada quando um arquivo ZIP grande é carregado no Experience Manager DAM (NPR-32155).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
 
 * Cancelar a publicação do Brand Portal, na página Gerenciar publicação, falha em subpastas de uma pasta publicada (NPR-31835).
 
@@ -99,7 +99,7 @@ Alguns destaques principais desta versão do Service pack:
 
 ### Integrações {#integrations-6480}
 
-* Os menus suspensos **Empresa** e Conjunto de **Relatórios** ficam ocultos assim que a Origem **do** Relatórios é selecionada ao configurar o Adobe Analytics nos serviços em nuvem do Experience Manager (NPR-31729).
+* Os menus suspensos **Empresa** e Conjunto de **Relatórios** ficam ocultos depois que a Fonte **do** Relatórios é selecionada ao configurar o Adobe Analytics nos serviços em nuvem do Experience Manager (NPR-31729).
 
 * As propriedades do Adobe Campaign não são limpas quando é feita uma cópia de idioma de um boletim informativo vinculado a um Adobe Campaign, enquanto a limpeza acontece quando um boletim informativo vinculado a um Adobe Campaign é copiado ou colado (NPR-32540).
 
@@ -287,7 +287,7 @@ Se você estiver usando o pacote `com.day.cq.dam.handler.standard.msoffice` em s
 
 * As atualizações na configuração de tamanho do buffer do serviço HTTP baseado em Java não são salvas (NPR-30925).
 
-* O QueryBuilder agora oferece suporte a order by fn:name() em query xpath (NPR-31322).
+* O QueryBuilder agora suporta orderby fn:name() em query xpath (NPR-31322).
 
 * Atualizado o administrador do evento distribuído Sling para a versão 1.1.4, melhorando a qualidade dos registros em um ambiente agrupado (NPR-29256).
 
@@ -995,10 +995,6 @@ Um pacote permanece no estado instalado após a instalação do pacote de gerenc
 
 * Algumas imagens JPEG em um modelo XDP não são renderizadas corretamente.  NPR-26702: Hotfix do LC-3917457
 
-**Formulários - OBSOLETOS**
-
-* O serviço de captura de papel falha ao processar arquivos TIFF. NPR-28079: Hotfix do CQ-4240649
-
 **Forms - Fluxo de trabalho**
 
 * Os formulários HTML5 com processo de envio padrão em an.lca não funcionam no JBoss 7. NPR-28675: Hotfix do CQ-4243928
@@ -1142,7 +1138,7 @@ Alguns dos principais destaques do AEM 6.4.3.0 são:
 * Somente 10 grupos são listados na página de recursos de ativação, mesmo se a paginação estiver ativada para a listagem de grupos. NPR-26934: Hotfix do CQ-4252985
 * A opção para habilitar/desabilitar a pesquisa para o componente Publicação agendada no journal é fornecida no ConfigMgr, e o trabalho SearchScheduledPosts é otimizado. NPR-26923: Hotfix do CQ-4250463
 * A pesquisa por palavras-chave no endereço não funciona na página do componente de calendário quando a comunidade AEM está definida para trabalhar com DSRP. NPR-26737: Hotfix do CQ-4258493
-* Foi implementado um link direto para o comentário, em vez da publicação principal nos detalhes do comentário, para a interface do usuário de moderação e recursos de ativação. NPR-26704: Hotfix do CQ-4251381
+* Foi implementado um link direto para o comentário em vez da publicação principal nos detalhes do comentário, para recursos de moderação da interface do usuário e ativação. NPR-26704: Hotfix do CQ-4251381
 * O conteúdo moderado por meio da seleção múltipla no console de moderação não aparece no Fluxo de Atividades. NPR-26695: Hotfix do CQ-4253244
 * A pesquisa com nome e sobrenome no campo Mensagens de comunidades em Para não retorna o resultado esperado. NPR-26385: Hotfix do CQ-4248673
 * Erro observado ao carregar um anexo diferente de imagem (por exemplo, .pdf) no Fórum. NPR-27360: Hotfix do CQ-4257753
@@ -1255,6 +1251,7 @@ Os principais destaques dos formulários do AEM 6.4.3.0 são:
 
 * Não é possível exibir as configurações de Relatórios de padrões e conformidade para o Gerador de PDF. NPR-26715: Hotfix do CQ-4253384
 * o arquivo binário convertpdf está ausente no pacote complementar AIX Forms, o que causa falha ao chamar o serviço PDFA. Hotfix do CQ-4257873
+* O serviço de captura de papel falha ao processar arquivos TIFF. NPR-28079: Hotfix do CQ-4240649
 
 **Serviços de documentação**
 
