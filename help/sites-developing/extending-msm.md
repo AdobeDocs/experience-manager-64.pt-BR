@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 3309352520878fd5b2bff91ce4d18d5b1a90b97d
+source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2597'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,7 @@ Uma `Blueprint` (como na configuração [do](/help/sites-administering/msm.md#so
 
    * A configuração de uma live copy pela primeira vez também usa um RolloutConfig (que aciona o LiveActions).
 
-### Criando uma Nova Ação de Sincronização {#creating-a-new-synchronization-action}
+## Criando uma Nova Ação de Sincronização {#creating-a-new-synchronization-action}
 
 Crie ações de sincronização personalizadas para usar com suas configurações de implementação. Crie uma ação de sincronização quando as ações [](/help/sites-administering/msm-sync.md#installed-synchronization-actions) instaladas não atenderem aos requisitos específicos do aplicativo. Para fazer isso, crie duas classes:
 
@@ -105,7 +105,7 @@ O `LiveActionFactory` cria instâncias da `LiveAction` classe para uma determina
    * `createAction`: Cria uma instância do `LiveAction`. O `Resource` parâmetro opcional pode ser usado para fornecer informações de configuração.
    * `createsAction`: Retorna o nome do associado `LiveAction`.
 
-#### Acessar o nó de configuração do LiveAction {#accessing-the-liveaction-configuration-node}
+### Acessar o nó de configuração do LiveAction {#accessing-the-liveaction-configuration-node}
 
 Use o nó `LiveAction` de configuração no repositório para armazenar informações que afetam o comportamento do tempo de execução da `LiveAction` instância. O nó no repositório que armazena a `LiveAction` configuração está disponível para o `LiveActionFactory` objeto em tempo de execução. Portanto, você pode adicionar propriedades ao nó de configuração e usá-las na sua `LiveActionFactory` implementação, conforme necessário.
 
@@ -125,7 +125,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-#### Acessar nós de Público alvo, nós de origem e o LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Acessar nós de Público alvo, nós de origem e o LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 Os seguintes objetos são fornecidos como parâmetros do `execute` método do `LiveAction` objeto:
 
@@ -150,7 +150,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >Os `Resource` argumentos podem ser `null` objetos que não se adaptam a `Resources` objetos, como `Node` [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objetos.
 
-### Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
+## Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 
 Crie uma configuração de implementação quando as configurações de implementação instaladas não atenderem aos requisitos do aplicativo:
 
@@ -163,7 +163,7 @@ A nova configuração de implementação estará disponível para você quando d
 >
 >Consulte também as práticas [recomendadas para personalizar as implantações](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-#### Create the Rollout Configuration {#create-the-rollout-configuration}
+### Create the Rollout Configuration {#create-the-rollout-configuration}
 
 Para criar uma nova configuração de implantação:
 
@@ -212,7 +212,7 @@ Para criar uma nova configuração de implantação:
 
 1. Clique em **Salvar tudo**.
 
-#### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
+### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
 
 As configurações de implantação são armazenadas abaixo do nó [de configuração de](#create-the-rollout-configuration) implantação criado no `/apps/msm/<your-project>/rolloutconfigs` nó.
 
@@ -233,7 +233,7 @@ O nome deve ser igual ao Nome **da** ação na tabela em Ações [de](/help/site
 
 1. Clique em **Salvar tudo**.
 
-### Criar e usar uma classe simples do LiveActionFactory {#creating-and-using-a-simple-liveactionfactory-class}
+## Criar e usar uma classe simples do LiveActionFactory {#creating-and-using-a-simple-liveactionfactory-class}
 
 Siga os procedimentos desta seção para desenvolver um `LiveActionFactory` e usá-lo em uma configuração de implementação. Os procedimentos usam Maven e Eclipse para desenvolver e implantar o `LiveActionFactory`:
 
@@ -252,7 +252,7 @@ Você pode encontrar o código desta página no GitHub
 * [Abra o projeto experienceemanager-java-msmrollout no GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-#### Criar o projeto Maven {#create-the-maven-project}
+### Criar o projeto Maven {#create-the-maven-project}
 
 O procedimento a seguir requer que você tenha adicionado o perfil adobe-public ao arquivo de configurações Maven.
 
@@ -278,7 +278,7 @@ O procedimento a seguir requer que você tenha adicionado o perfil adobe-public 
 
 1. Start Eclipse e [importe o projeto](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse)Maven.
 
-#### Adicionar dependências ao arquivo POM {#add-dependencies-to-the-pom-file}
+### Adicionar dependências ao arquivo POM {#add-dependencies-to-the-pom-file}
 
 Adicione dependências para que o compilador do Eclipse possa fazer referência às classes usadas no `LiveActionFactory` código.
 
@@ -368,7 +368,7 @@ Adicione dependências para que o compilador do Eclipse possa fazer referência 
     </dependency>
    ```
 
-#### Implementação do LiveActionFactory {#implement-liveactionfactory}
+### Implementação do LiveActionFactory {#implement-liveactionfactory}
 
 A `LiveActionFactory` classe a seguir implementa um relatório `LiveAction` `cq:lastModifiedBy` que registra mensagens sobre as páginas de origem e público alvo e copia a propriedade do nó de origem para o nó público alvo. O nome da ação ao vivo é `exampleLiveAction`.
 
@@ -534,7 +534,7 @@ A `LiveActionFactory` classe a seguir implementa um relatório `LiveAction` `cq:
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-#### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
+### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
 
 Crie a configuração de implantação MSM que usa a `LiveActionFactory` que você criou:
 
@@ -544,7 +544,7 @@ Crie a configuração de implantação MSM que usa a `LiveActionFactory` que voc
    * **Nome**: examplerolloutconfig
    * **cq:trigger**: `publish`
 
-#### Adicionar a ação ao vivo à configuração de implantação de exemplo {#add-the-live-action-to-the-example-rollout-configuration}
+### Adicionar a ação ao vivo à configuração de implantação de exemplo {#add-the-live-action-to-the-example-rollout-configuration}
 
 Configure a configuração de implantação criada no procedimento anterior para que ela use a `ExampleLiveActionFactory` classe.
 
@@ -565,7 +565,7 @@ Configure a configuração de implantação criada no procedimento anterior para
 
 1. Clique em **Salvar tudo**.
 
-#### Criar a Live Copy {#create-the-live-copy}
+### Criar a Live Copy {#create-the-live-copy}
 
 [Crie uma cópia](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) ao vivo da ramificação Inglês/Produtos do Site de Referência We.Retail usando a configuração de lançamento:
 
@@ -581,7 +581,7 @@ Ative a página **Produtos** (inglês) da ramificação de origem e observe as m
 ```
 
 <!--
-### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
+## Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
@@ -600,7 +600,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-### Alteração de nomes de idiomas e países padrão {#changing-language-names-and-default-countries}
+## Alteração de nomes de idiomas e países padrão {#changing-language-names-and-default-countries}
 
 O AEM usa um conjunto padrão de códigos de idioma e país.
 
@@ -630,9 +630,7 @@ Para modificar os idiomas:
 
    Nomeie a nova pasta `wcm`.
 
-1. Repita a etapa anterior para criar a árvore de `/apps/wcm/core` pastas. Crie um nó do tipo `sling:Folder` no núcleo chamado `resources`.
-
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+1. Repita a etapa anterior para criar a árvore de `/apps/wcm/core` pastas. Crie um nó do tipo `sling:Folder` no núcleo chamado `resources`. <!-- ![chlimage_1-39](assets/chlimage_1-39.png) -->
 
 1. Clique com o botão direito do mouse no `/libs/wcm/core/resources/languages` nó e clique em **Copiar**.
 1. Clique com o botão direito do mouse na `/apps/wcm/core/resources` pasta e clique em **Colar**. Modifique os nós secundários conforme necessário.
@@ -642,7 +640,7 @@ Para modificar os idiomas:
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-### Configuração de bloqueios MSM em propriedades da página (interface habilitada para toque) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## Configuração de bloqueios MSM em propriedades da página (interface habilitada para toque) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 Ao criar uma propriedade de página personalizada, talvez seja necessário considerar se a nova propriedade deve ser qualificada para implantação em qualquer cópia ao vivo.
 
