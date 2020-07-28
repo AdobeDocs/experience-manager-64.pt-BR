@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
+source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2588'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,9 @@ Esta página ajuda a estender as funcionalidades do Multi Site Manager:
 
 * Saiba mais sobre os principais membros da API Java MSM.
 * Crie uma nova ação de sincronização que pode ser usada em uma configuração de implantação.
-* Remova a etapa &quot;Capítulos&quot; no assistente para Criar site.
 * Modifique o idioma padrão e os códigos de país.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
