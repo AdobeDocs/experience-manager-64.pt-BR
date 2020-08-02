@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1896'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ O cenário neste documento explica como você pode criar um botão na interface 
 Para concluir este cenário, você precisa do seguinte:
 
 * Conhecimento sobre CRX e JavaScript
-* LiveCycle Server
+* Servidor LiveCycle
 
 ## Cenário: Crie o botão na interface Criar usuário de correspondência para enviar uma carta para revisão {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
@@ -38,7 +38,7 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
 
 1. Adicionar o botão à interface Criar usuário de correspondência
 1. Adicionar manipulação de ação ao botão
-1. Adicionar o processo do LiveCycle para ativar a ação &quot;manuseio
+1. Adicionar o processo de LiveCycle para ativar a ação &quot;manuseio
 
 ### Adicione o botão à interface do usuário Criar correspondência {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -75,7 +75,7 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
    * Clique com o botão direito do mouse na pasta **[!UICONTROL defaultApp]** em &quot;/apps/fd/cm/config/defaultApp/&quot; e selecione **[!UICONTROL Colar]**.
    * Clique em **[!UICONTROL Salvar tudo]**.
 
-1. Clique com o Duplo na cópia de acmExtentionsConfig.xml que você criou recentemente na pasta de aplicativos. O arquivo é aberto para edição.
+1. Clique com o Duplo do mouse na cópia de acmExtentionsConfig.xml que você criou recentemente na pasta de aplicativos. O arquivo é aberto para edição.
 1. Localize o seguinte código:
 
    ```xml
@@ -92,7 +92,7 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
    </extensionsConfig> 
    ```
 
-1. Para enviar uma carta por email, você pode usar o LiveCycle Forms Workflow. Adicione uma tag customAction sob a tag modelExtension em acmExtensionsConfig.xml como segue:
+1. Para enviar uma carta por email, você pode usar o LiveCycle. Adicione uma tag customAction sob a tag modelExtension em acmExtensionsConfig.xml como segue:
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -117,7 +117,7 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
 
    | **Nome** | **Descrição** |
    |---|---|
-   | serviceName | Se um customAction contiver uma tag-filho com o nome serviceName, ao clicar no botão/link relevante, um processo é chamado com o nome representado pela tag serviceName. Certifique-se de que esse processo tenha a mesma assinatura que a Carta PostProcess. Adicione o prefixo &quot;Fluxo de trabalho do Forms ->&quot; no nome do serviço. |
+   | serviceName | Se um customAction contiver uma tag-filho com o nome serviceName, ao clicar no botão/link relevante, um processo é chamado com o nome representado pela tag serviceName. Certifique-se de que esse processo tenha a mesma assinatura que a Carta PostProcess. Adicione o prefixo &quot;Forms Workflow ->&quot; no nome do serviço. |
    | Parâmetros que contêm o prefixo cm_ no nome da tag | Se um customAction contiver tags-filho que começam com o nome cm_, então no processo posterior (seja o Processo de publicação de carta ou o processo especial representado pela tag serviceName) esses parâmetros estão disponíveis no código XML de entrada sob a tag relevante com a remoção do prefixo cm_. |
    | actionName | Sempre que um processo de publicação é devido a um clique, o XML enviado contém uma tag especial com nome na tag com o nome da ação do usuário. |
 
@@ -163,7 +163,7 @@ O arquivo ACMExtensionsMessages.properties inclui rótulos e mensagens de dica d
 
 #### Reinicie o pacote de blocos componentes do Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Depois de fazer todas as alterações no servidor, reinicie o pacote de blocos componentes do Adobe Asset Composer. Nesse cenário, os arquivos acmExtensionsConfig.xml e ACMExtensionsMessages.properties no lado do servidor são editados e, portanto, o pacote Bloco de construção do Adobe Asset Composer requer uma reinicialização.
+Depois de fazer todas as alterações no servidor, reinicie o pacote de blocos componentes do Adobe Asset Composer. Nesse cenário, os arquivos acmExtensionsConfig.xml e ACMExtensionsMessages.properties no lado do servidor são editados e, portanto, o pacote de Bloco de Construção do Adobe Asset Composer requer uma reinicialização.
 
 >[!NOTE]
 >
@@ -171,11 +171,11 @@ Depois de fazer todas as alterações no servidor, reinicie o pacote de blocos c
 
 1. Ir para `https://[host]:[port]/system/console/bundles`. Se necessário, faça logon como Administrador.
 
-1. Localize o pacote de blocos componentes do Adobe Asset Composer. Reinicie o pacote: clique em Parar e em Start.
+1. Localize o conjunto de blocos componentes do Adobe Asset Composer. Reinicie o pacote: clique em Parar e em Start.
 
-   ![Bloco construtor do Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Bloco de construção do Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
 
-Após reiniciar o pacote Bloco de construção do Adobe Asset Composer, o botão personalizado será exibido na interface Criar usuário de correspondência. Você pode abrir uma carta na interface Criar usuário de correspondência para pré-visualização o botão personalizado.
+Depois de reiniciar o conjunto de blocos componentes do Adobe Asset Composer, o botão personalizado será exibido na interface Criar usuário de correspondência. Você pode abrir uma carta na interface Criar usuário de correspondência para pré-visualização o botão personalizado.
 
 ### Adicionar manipulação de ação ao botão {#add-action-handling-to-the-button}
 
@@ -322,19 +322,18 @@ O manuseio da ação/botão ao clicar em ação/botão inclui lógica para:
       '</div>';
       ```
 
-### Adicionar o processo do LiveCycle para ativar a <span class="acrolinxCursorMarker"></span>manipulação de ações {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Adicione o processo de LiveCycle para ativar a <span class="acrolinxCursorMarker"></span>manipulação de ações {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Nesse cenário, ative os seguintes componentes, que fazem parte do arquivo components.zip anexado:
 
-* DSC componente jar (DSCSampliar.jar)
-* Enviar carta para o processo de revisão LCA (SendLetterForReview.lca)
+* Conjunto de componentes DSC (`DSCSample.jar`)
+* Enviar carta para o processo de revisão LCA (`SendLetterForReview.lca`)
 
-Baixe e descompacte o arquivo components.zip para obter os arquivos DSCSape.jar e SendLetterForReview.lca. Use esses arquivos conforme especificado nos procedimentos a seguir.\
-components.zip
+Baixe e descompacte o `components.zip` arquivo para obter `DSCSample.jar` e `SendLetterForReview.lca` arquivos. Use esses arquivos conforme especificado nos procedimentos a seguir.
 
 [Obter arquivo](assets/components.zip)
 
-#### Configurar o LiveCycle Server para executar o processo LCA {#configure-the-livecycle-server-to-run-the-lca-process}
+#### Configure o servidor do LiveCycle para executar o processo LCA {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -343,7 +342,7 @@ components.zip
 O processo LCA é executado no servidor do LiveCycle e requer o endereço do servidor e as credenciais de logon.
 
 1. Vá para `https://[server]:[port]/system/console/configMgr` e faça logon como Administrador.
-1. Localize a Configuração do SDK do Adobe LiveCycle Client e clique em **[!UICONTROL Editar]** (ícone editar). O painel Configurações é aberto.
+1. Localize a Configuração do SDK do cliente do LiveCycle Adobe e clique em **[!UICONTROL Editar]** (ícone de edição). O painel Configurações é aberto.
 
 1. Digite os seguintes detalhes e clique em **[!UICONTROL Salvar]**:
 
@@ -351,11 +350,11 @@ O processo LCA é executado no servidor do LiveCycle e requer o endereço do ser
    * **[!UICONTROL Nome de usuário]**: Nome de usuário administrador do servidor LC
    * **[!UICONTROL Senha]**: Senha do nome de usuário administrador
 
-   ![Configuração do Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
+   ![Configuração do SDK do cliente do LiveCycle Adobe](assets/3_clientsdkconfiguration.png)
 
-#### Instalar o LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
+#### Instalar o arquivo de LiveCycles (LCA) {#install-livecycle-archive-lca}
 
-O processo necessário do LiveCycle que ativa o processo do serviço de email.
+O processo de LiveCycle necessário que habilita o processo de serviço de email.
 
 >[!NOTE]
 >
@@ -381,13 +380,13 @@ O processo necessário do LiveCycle que ativa o processo do serviço de email.
 
 1. Clique em **[!UICONTROL Importar]**.
 
-#### Adicionando ServiceName à lista de Serviço AllowListed {#adding-servicename-to-the-allowlisted-service-list}
+#### Adicionando ServiceName à lista de Serviço Incluído na lista de permissões {#adding-servicename-to-the-allowlisted-service-list}
 
-Mencione no servidor de AEM os serviços do LiveCycle que você deseja acessar no servidor de AEM.
+Mencione no servidor de AEM os serviços de LiveCycle que você deseja acessar o servidor de AEM.
 
 1. Faça logon como Administrador para `https:/[host]/:[port]/system/console/configMgr`.
 
-1. Localize e clique em Configuração **[!UICONTROL do SDK do cliente]** Adobe LiveCycle. O painel Configuração do SDK do Adobe LiveCycle Client é exibido.
+1. Localize e clique em Configuração **[!UICONTROL do SDK do cliente do]** LiveCycle. O painel Configuração do SDK do cliente do LiveCycle é exibido.
 1. Na lista Nome do serviço, clique no ícone + e adicione um serviceName **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**.
 
 1. Clique em **[!UICONTROL Salvar]**.
@@ -408,37 +407,37 @@ Nesse cenário, para que o Gerenciamento de correspondência possa enviar um ema
 
 #### Configurar o serviço DSC {#configure-the-dsc-service}
 
-Para usar a API do Correspondence Management, baixe o DSCSampliar.jar (anexado neste documento como parte de components.zip) e carregue-o no servidor do LiveCycle. Depois que o arquivo DSCSamplie.jar é carregado no servidor do LiveCycle, o servidor do AEM usa o arquivo DSCSamplie.jar para acessar a API renderLetter.
+Para usar a API de gerenciamento de correspondência, baixe o arquivo `DSCSample.jar` (anexado neste documento como parte do `components.zip`) e carregue-o no servidor do LiveCycle. Depois que o `DSCSample.jar` arquivo é carregado no servidor do LiveCycle, o servidor AEM usa o `DSCSample.jar` arquivo para acessar a API renderLetter.
 
-Para obter mais informações, consulte [Conectar AEM Forms ao Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Para obter mais informações, consulte [Conectando AEM Forms ao LiveCycle](/help/forms/using/aem-livecycle-connector.md)Adobe.
 
-1. Atualize o URL do servidor AEM em cmsa.properties em DSCSampliar.jar, que está no seguinte local:
+1. Atualize o URL do servidor AEM em cmsa.properties em `DSCSample.jar`, que está no seguinte local:
 
    DSCSamplia.jar\com\adobe\livecycle\cmsa.properties
 
 1. Forneça os seguintes parâmetros no arquivo de configuração:
 
-   * **crx.serverUrl**=https:/[host]/:[porta]/caminho[]de contexto/URL[AEM]
-   * **crx.username**= nome de usuário do AEM
-   * **crx.password**= senha do AEM
+   * **crx.serverUrl**=https:/[host]/:[porta]/caminho[de]contexto/URL[AEM]
+   * **crx.username**= nome de usuário AEM
+   * **crx.password**= senha AEM
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >Sempre que você fizer alterações no lado do servidor, reinicie o LiveCycle Server. Para obter informações sobre como criar seu próprio componente do LiveCycle ES, consulte [Extensão do software LiveCycle ES por meio do desenvolvimento](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)personalizado do DSC.
+   >Sempre que você fizer alterações no lado do servidor, reinicie o LiveCycle Server. Para obter informações sobre como criar seu próprio componente de LiveCycle, consulte [Extensão do software LiveCycle ES por meio do desenvolvimento](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)personalizado do DSC.
 
-   O arquivo DSCSamplie.jar usa a API renderLetter. Para obter mais informações sobre a API renderLetter, consulte [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   O `DSCSample.jar` arquivo usa a `renderLetter` API. Para obter mais informações sobre a API renderLetter, consulte [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importar DSC para o LiveCycle {#import-dsc-to-livecyle}
 
-O arquivo DSCSamplie.jar usa a API renderLetter para renderizar a carta como bytes PDF dos dados XML que C fornece como entrada. Para obter mais informações sobre a renderizaçãoCarta e outras APIs, consulte Serviço [de renderização de](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)carta.
+`DSCSample.jar` o arquivo usa a `renderLetter` API para renderizar a carta como bytes PDF dos dados XML que C fornece como entrada. Para obter mais informações sobre a renderizaçãoCarta e outras APIs, consulte Serviço [de renderização de](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)carta.
 
 1. Start Workbench e faça logon.
 1. Selecione **[!UICONTROL Janela > Mostrar Visualizações > Componentes]**. A visualização Componentes é adicionada ao Workbench ES2.
 
 1. Clique com o botão direito do mouse em **[!UICONTROL Componentes]** e selecione **[!UICONTROL Instalar componente]**.
 
-1. Selecione o arquivo **[!UICONTROL DSCSamplie.jar]** no navegador de arquivos e clique em **[!UICONTROL Abrir]**.
+1. Selecione o `DSCSample.jar` arquivo no navegador de arquivos e clique em **[!UICONTROL Abrir]**.
 1. Clique com o botão direito do mouse em **[!UICONTROL RenderWrapper]** e selecione Componente **[!UICONTROL do]** Start. Se o componente for start, uma seta verde será exibida ao lado do nome do componente.
 
 ## Enviar carta para revisão {#send-letter-for-review}
