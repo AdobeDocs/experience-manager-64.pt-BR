@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -27,11 +27,13 @@ Esta página mantém uma lista dos problemas conhecidos Adobe Experience Manager
 Dispositivos híbridos não são suportados. Vários problemas podem ser encontrados ao usar esses dispositivos. Os procedimentos sugeridos a seguir ajudam a resolver muitos problemas:
 
 Se você estiver usando o Google Chrome como navegador:
+
 * Digite `chrome://flags/` na barra de endereços e pressione Enter.
 * Clique em Ativar eventos de toque > Desativado.
 * Reinicie o navegador (todas as guias e janelas).
 
 Se você estiver usando o Mozilla Firefox como navegador:
+
 * Digite `about:config` na barra de endereços e pressione Enter.
 * Filtre as configurações para `dom.w3c`.
 * Verifique se as configurações estão `0` e `false`.
@@ -70,7 +72,7 @@ Se você estiver usando o Microsoft Edge como navegador:
 * **Omnisearch:** Os predicados do painel esquerdo estão acompanhando a solicitação do servidor Omnisearch (GRANITE-20524)
 * **Omnisearch:** O Omnisearch não suporta caminhos de contexto (GRANITE-16044)
 
-## Ativos {#assets}
+## Assets {#assets}
 
 * **Pesquisar**: A pesquisa não retornará nenhum resultado se a string de pesquisa for start com um espaço em branco [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
@@ -112,19 +114,19 @@ Se você estiver usando o Microsoft Edge como navegador:
 
    * O canal da Web leva algum tempo para sincronizar ao mudar do canal de impressão pela primeira vez.
    * O canal da Web não será sincronizado se o canal de impressão incluir um componente gráfico não configurado. Para resolver o problema, exclua o componente de gráfico e sincronize novamente.
-   * Às vezes, a sincronização falha com o erro &quot;Ocorreu um erro ao sincronizar a Live Copy&quot;. Para resolver o problema, atualize a página.
+   * Sync sometimes fails with the &quot;An error occurred while synchronizing the Live Copy&quot; error. Para resolver o problema, atualize a página.
    * O texto estático em um fragmento de layout é substituído pelo nome da célula da tabela quando a primeira coluna da tabela é uma coluna de cabeçalho no modelo de canal de impressão.
-   * Não é possível adicionar componentes ou ativos em nenhum local além da parte inferior de uma comunicação de canal da Web. Para colocá-lo em outro local, adicione um painel na parte inferior do canal da Web e reorganize usando a árvore de conteúdo.
-   * É possível mover o conteúdo para a área de público alvo herdada do canal da Web sem remover a herança da cópia ativa.
+   * Cannot add components or assets at any location other than at the bottom of a web channel communication. To place it at another location, add a panel at the bottom of web channel and reorder using the content tree.
+   * Can move content into inherited target area of web channel without removing the live copy inheritance.
 
 (CQ-4239780)
 
-### Integração de dados
+### Data integration
 
-* As configurações de autenticação para serviços da Web baseados em SOAP não estão visíveis e, portanto, não podem ser configuradas nos serviços em nuvem. Para resolver o problema:
+* Authentication configurations for SOAP-based web services are not visible and thus cannot be configured in cloud services. To resolve the issue:
 
-   1. No console CRXDE Lite, vá para o seguinte nó.\
-      /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigWizard/cloudservices/\
+   1. In CRXDE Lite console, go to the following node.\
+      /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices/\
       wsdlauthenticationsettings/items/fixedcolumns/items/container/items/wsdl/items/\
       selectAuthentication/items/custom.
    1. Atualize o valor da propriedade value para o mesmo valor da propriedade text.
@@ -132,12 +134,12 @@ Se você estiver usando o Microsoft Edge como navegador:
 
 (CQ-4238462)
 
-### Integração com o Adobe Sign
+### Integração Adobe Sign
 
-* O scheduler Adobe Sign para de funcionar intermitentemente e, portanto, os formulários pendentes de assinatura não são movidos para envio. Para resolver o problema, reinicie o pacote de suporte **ao Scheduler Apache Sling do console da Web do AEM em https://** server [*:*] port [**]/system/console/bundles.
+* O scheduler Adobe Sign para de funcionar intermitentemente e, portanto, os formulários pendentes não são movidos para o envio. Para resolver o problema, reinicie o pacote de suporte **ao Scheduler** Apache Sling AEM console da Web em https://[*server*]:[*port*]/system/console/bundles.
 
-### Criação de formulários adaptáveis
+### Adaptive Forms authoring
 
 * O componente Gráfico em formulários adaptáveis ocupa mais espaço do que normalmente.
-* Uma exceção é retornada ao salvar propriedades para formulários adaptáveis, fragmentos de formulário adaptáveis ou comunicações interativas na interface do usuário do Forms Manager.
+* An exception is returned when saving properties for adaptive forms, adaptive form fragments, or interactive communications in Forms Manager UI.
 * O número máximo de caracteres especificado para uma caixa de texto de formulário adaptável não é respeitado em dispositivos Android 6.0 Samsung. (Ref# CQ-4235205)
