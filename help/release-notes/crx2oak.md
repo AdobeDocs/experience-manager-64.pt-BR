@@ -1,8 +1,8 @@
 ---
 title: Ferramenta de migração CRX2OAK
 seo-title: Ferramenta de migração CRX2OAK
-description: Notas de versão específicas da ferramenta de migração CRX2OAK do Adobe Experience Manager 6.4.
-seo-description: Notas de versão específicas da ferramenta de migração CRX2OAK do Adobe Experience Manager 6.4.
+description: Notas de versão específicas da ferramenta de migração Adobe Experience Manager 6.4 CRX2OAK.
+seo-description: Notas de versão específicas da ferramenta de migração Adobe Experience Manager 6.4 CRX2OAK.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 * Atualização da versão Oak para 1.6.1
 * CQ-61847 Mesclar crx2oak-quickstart-extension com crx2oak (perfis de migração adicionados)
-* CQ-97488 Promover e descartar modos de execução do AEM (regravando sling.options.file)
+* CQ-97488 Promover e soltar AEM modos de execução (regravando sling.options.file)
 * GRANITE-12798/OAK-4260 Capacidade de colidir o nível do segmento Oak com o segmento Oak Tar
 
 ### Versão 1.4.2 (março de 2016) {#version-march-1}
@@ -60,8 +63,8 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 * Atualiza a versão Oak para 1.3.12
 * O diretório Datastore não deve ser movido após a migração (GRANITE-10447)
 * Mesclar crx2oak-quickstart-extension com crx2oak (CQ-61847)
-* crx2oak falha em valores duplicados no repositório (CQ-61906)
-* Início longo do AEM após a migração do CQ 5.x (GRANITE-10309)
+* falha de crx2oak em valores de duplicado no repositório (CQ-61906)
+* start longo AEM após a migração do CQ 5.x (GRANITE-10309)
 * Suporte para vários servidores LDAP no crx2oak (GRANITE-9917)
 * Forçar verificação do comprimento máximo do nome do nó (OAK-3111)
 * Suporta S3DataSource como a fonte de migração (OAK-3685)
