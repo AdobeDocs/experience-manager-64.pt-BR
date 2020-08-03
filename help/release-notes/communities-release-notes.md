@@ -10,14 +10,17 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 translation-type: tm+mt
-source-git-commit: 242f60c70c7cc00871d2ff9f42d2ade4125eaa31
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 12%
 
 ---
 
 
 # AEM Communities Notas de versão {#aem-communities-release-notes}
 
-Esta seção fornece informações sobre as melhorias no AEM Communities desde a versão 6.3. Para saber mais sobre os novos recursos, consulte [Novidades do AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
+Esta seção fornece informações sobre as melhorias para AEM Communities desde a versão 6.3. Para saber mais detalhes sobre os novos recursos, consulte [Novidades no AEM 6.4 Comunidades](/help/communities/whats-new-aem-communities.md).
 
 To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
 
@@ -52,13 +55,13 @@ Notificações:
 
 Moderação:
 
-* Filtro de detecção de spam automatizado
-* Os Moderadores da comunidade têm filtros de moderação adicionais (por exemplo, perguntas respondidas/não respondidas)
+* Filtro de Detecção de Spam Automatizado
+* Os Moderadores da comunidade têm filtros adicionais de moderação (por exemplo, perguntas respondidas/não respondidas)
 * Os Moderadores da comunidade podem marcar e vincular a moderação a filtros predefinidos (por exemplo, todas as publicações que aguardam aprovação)
 
-Compatibilidade geral com alterações fundamentais no AEM 6.4.
+Compatibilidade global com as alterações fundamentais no AEM 6.4.
 
-Observação: todos esses recursos também estão disponíveis para o AEM 6.3. Verifique as notas de versão do AEM Communities para [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
+Observação: todos esses recursos também estão disponíveis para a AEM 6.3. Verifique as notas de versão do AEM Communities para [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
 
 ## Problemas conhecidos {#known-issues}
 
@@ -71,4 +74,4 @@ A Expert Scoring (*Powered by Sensei*) é usada para habilitar a gamificação, 
 
 ## Demonstrações {#demonstrations}
 
-Todos esses recursos podem ser demonstrados usando a Máquina [de demonstração do](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) AEM disponível publicamente no GitHub.com ao usar o cenário de demonstração do AEM Communities e também na nova implementação de referência We.Retail.
+Todos esses recursos podem ser demonstrados usando a Máquina [de demonstração de](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) AEM disponível publicamente no GitHub.com ao usar o cenário de demonstração de AEM Communities e também dentro da nova implementação de referência We.Retail.
