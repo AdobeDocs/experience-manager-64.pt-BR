@@ -4,9 +4,9 @@ description: Notas de versão específicas do Adobe Experience Manager 6.4 Cumul
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2159'
 ht-degree: 21%
 
 ---
@@ -55,6 +55,8 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 * Não é possível criar uma inicialização para uma página de AEM Sites. A criação de inicialização resulta em um erro (NPR-32544).
 * Gerenciar publicação não inclui ativos referenciados na solicitação de fluxo de trabalho de ativação (NPR-32463).
 * A verificação de integridade do Dispatcher exibe uma mensagem de `Invalid cookie header` aviso nos arquivos de registro (NPR-33630).
+* A integração do Salesforce é vulnerável ao SSRF (NPR-32671).
+* XSS refletido em PreferencesServlet (NPR-33439).
 
 ### Assets {#assets-6481}
 
@@ -74,6 +76,8 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 
 * O processamento de ativos enquanto o upload em massa fica travado (CQ-4293916).
 
+* Vulnerabilidade SSRF no Experience Manager (NPR-33437).
+
 ### Plataforma {#platform-6481}
 
 * O [!DNL Sling] filtro não será chamado se a entrada do `sling:match` mapa for criada em `/etc/maps` (NPR-33308).
@@ -89,12 +93,17 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 
 * Um `NullPointerException` erro é visto nos registros ao executar um trabalho de tradução (NPR-32220).
 
+### Integrações {#integrations-6481}
+
+* Scripts entre sites para JSON (NPR-32745).
+
 ### Communities {#communities-6481}
 
 * Após a criação de um novo grupo, os autores não são redirecionados para a seção Grupo [!UICONTROL da] Comunidade no [!DNL Internet Explorer] 11 (NPR-33202).
 * Ocorre um erro ao acessar a página [!UICONTROL Atividade Stream] (NPR-33152).
 * Editar um [!DNL Communities] grupo e alterar a imagem em miniatura não atualiza a imagem em miniatura do grupo (NPR-32603).
 * Ao criar uma versão de notificações e subscrições de Conteúdo gerado pelo usuário (UGC), uma ID incorreta da página de origem é armazenada (CQ-4289703).
+* Problema de script entre sites (NPR-33212).
 
 ### Fluxo de trabalho {#workflow-6481}
 
@@ -117,6 +126,8 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 * BackendIntegration: As solicitações do modelo de dados de formulário falham, pois o token de atualização expira devido ao estado inativo incorreto (NPR-33168).
 * Serviços do Documento: Falha do serviço de conversão de PDF ao converter documentos PDF em PostScript devido à ausência de jars Gibson para [!DNL WebLogic] no [!DNL Linux] servidor (NPR-33515, CQ-4292239).
 * Serviços do Documento: Quando um usuário converte um arquivo de texto em PDF, os caracteres japoneses não são renderizados corretamente (NPR-33239).
+* XSS armazenado com o GuideSOMProviderServlet (NPR-32701).
+
 
 ## Install 6.4.8.1 {#install}
 
