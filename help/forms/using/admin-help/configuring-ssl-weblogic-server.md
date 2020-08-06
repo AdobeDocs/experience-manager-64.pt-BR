@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +46,7 @@ O comando keytool geralmente está localizado no diretório Java jre/bin e deve 
    <td> 
     <ul> 
      <li><p>Armazenamento de chaves de identidade personalizada: <code>ads-credentials</code></p></li> 
-     <li><p>Armazenamento de chaves de confiança personalizado: <code>bedrock</code></p></li> 
+     <li><p>Armazenamento de chave de Confiança personalizado: <code>bedrock</code></p></li> 
     </ul></td> 
   </tr> 
   <tr> 
@@ -57,7 +60,7 @@ O comando keytool geralmente está localizado no diretório Java jre/bin e deve 
    <td> 
     <ul> 
      <li><p>Armazenamento de chaves de identidade personalizada: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[nome do servidor]</i><code>/ads-ssl.jks</code></p></li> 
-     <li><p>Armazenamento de chaves de confiança personalizado: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[nome do servidor]</i><code>/ads-ca.jks</code></p></li> 
+     <li><p>Armazenamento de chave de Confiança personalizado: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[nome do servidor]</i><code>/ads-ca.jks</code></p></li> 
     </ul></td> 
   </tr> 
   <tr> 
@@ -71,12 +74,12 @@ O comando keytool geralmente está localizado no diretório Java jre/bin e deve 
    <td><p>3650</p><p>Você pode usar um valor diferente, dependendo da política de sua empresa.</p></td> 
   </tr> 
   <tr> 
-   <td><p>-tempestade</p></td> 
+   <td><p>-cegonha</p></td> 
    <td><p>A senha que protege o conteúdo do armazenamento de chaves. </p></td> 
    <td> 
     <ul> 
      <li><p>Armazenamento de chaves de identidade personalizada: A senha do armazenamento de chaves deve corresponder à senha de credenciais SSL especificada para o componente Armazenamento de Confiança do Console de Administração.</p></li> 
-     <li><p>Armazenamento de chaves de confiança personalizado: Use a mesma senha que você usou para o armazenamento de chaves de identidade personalizada.</p></li> 
+     <li><p>Armazenamento de chave de Confiança personalizado: Use a mesma senha que você usou para o armazenamento de chaves de identidade personalizada.</p></li> 
     </ul></td> 
   </tr> 
   <tr> 
@@ -144,7 +147,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
 1. Copie o arquivo ads-ca.cer para qualquer computador host que precise de comunicação segura com o servidor de aplicativos.
 1. Insira o certificado em um novo arquivo de armazenamento de chaves (o armazenamento de chaves de Confiança personalizado) digitando o seguinte comando:
 
-   [JAVA_HOME]`/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
+   [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
    >[!NOTE]
    >
@@ -156,13 +159,13 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-O arquivo de keystore de confiança personalizada chamado &quot;ads-ca.jks&quot; é criado no diretório [appserverdomain]/adobe/[server] .
+O arquivo de armazenamento de chave de Confiança personalizada chamado &quot;ads-ca.jks&quot; é criado no diretório [appserverdomain]/adobe/[server] .
 
 Configure o WebLogic para que ele use o armazenamento de chaves Identidade personalizada e o armazenamento de chaves Confiança personalizada criados. Além disso, desative o recurso Verificação de nome de host WebLogic porque o nome distinto usado para criar os arquivos de armazenamento de chaves não incluía o nome do computador que hospeda o WebLogic Server.
 
 ## Configurar WebLogic para usar SSL {#configure-weblogic-to-use-ssl}
 
-1. Inicie o console de administração do WebLogic Server digitando o nome `https://`*[do ]*host`:7001/console`na linha de URL de um navegador da Web.
+1. Start o console de administração do WebLogic Server digitando o nome `https://`*[do ]*host`:7001/console`na linha de URL de um navegador da Web.
 1. Em Ambiente, em Configurações de domínio, selecione **Servidores >[servidor]> Configuração > Geral**.
 1. Em Geral, em Configuração, verifique se a opção Porta de **escuta ativada** e Porta de escuta **SSL ativada** está selecionada. Se não estiver ativado, faça o seguinte:
 
@@ -174,14 +177,14 @@ Configure o WebLogic para que ele use o armazenamento de chaves Identidade perso
 1. Em Ambiente, em Configurações de domínio, clique em **Servidores > Servidor [**]gerenciado > Configuração > Geral**.
 1. Em Geral, em Configuração, selecione **armazenamentos de chaves**.
 1. Em Centro de alterações, clique em **Bloquear e editar** para modificar seleções e valores.
-1. Clique em **Alterar** para obter a lista de armazenamento de chaves como lista suspensa e selecione Identidade **personalizada e Confiança** personalizada.
+1. Clique em **Alterar** para obter a lista do keystore como lista suspensa e selecione Identidade **personalizada e Confiança** personalizada.
 1. Em Identidade, especifique os seguintes valores:
 
    **Armazenamento de chaves** de identidade personalizado: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, onde *[appserverdomain] *é o caminho real e o nome *[do]* servidor é o nome do servidor de aplicativos.
 
    **Tipo** de armazenamento de chave de identidade personalizado: JKS
 
-   **Senha** personalizada do armazenamento de chave de identidade: *mypassword* (senha personalizada do keystore de identidade)
+   **Senha** personalizada do armazenamento de chave de identidade: *mypassword* (senha personalizada do armazenamento de chaves de identidade)
 
 1. Em Confiança, especifique os seguintes valores:
 
@@ -204,7 +207,7 @@ Configure o WebLogic para que ele use o armazenamento de chaves Identidade perso
 ## Desativar o recurso Verificação do nome do host {#disable-the-hostname-verification-feature}
 
 1. Na guia Configuração, clique em SSL.
-1. Em Avançado, selecione Nenhum na lista Verificação do nome do host.
+1. Em Avançado, selecione Nenhum na lista de verificação do nome do host.
 
    Se a Verificação do nome do host não estiver desativada, o Nome comum (CN) deverá conter o nome do host do servidor.
 
