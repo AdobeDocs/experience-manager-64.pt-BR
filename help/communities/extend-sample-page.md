@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7185fb13-46a2-4fa3-aa21-a51e63cdb9be
 translation-type: tm+mt
 source-git-commit: 44c56ec5de6e9a832aaa52ab4a6c4978af7a9865
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Agora que os componentes do sistema de comentários personalizado estão no dire
 
 As bibliotecas do cliente necessárias para o estilo e o funcionamento dos Comentários padrão também são necessárias para os Comentários estendidos.
 
-O Guia [de componentes da](components-guide.md) comunidade identifica as bibliotecas de clientes necessárias. Navegue até o Guia do componente e exiba o componente Comentários, por exemplo:
+O Guia [de componentes da](components-guide.md) comunidade identifica as bibliotecas de clientes necessárias. Navegue até o Guia do componente e visualização o componente Comentários, por exemplo:
 
 [http://localhost:4502/content/community-components/en/comments.html](http://localhost:4502/content/community-components/en/comments.html)
 
