@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 A Visão geral **** da Live Copy permite:
 
-* Exibir/gerenciar herança em um site:
+* Visualização/gerenciamento da herança em um site:
 
-   * Exibir a árvore de blueprint e a estrutura de live copy correspondente, juntamente com o status de herança
+   * Visualização da árvore de blueprint e da estrutura de live copy correspondente, juntamente com o status de herança
    * Alterar o status da herança; por exemplo, suspender, retomar
-   * Exibir propriedades de blueprint e live copy
+   * Propriedades de blueprint e live copy da Visualização
 
 * Executar ações de implantação
 
@@ -100,7 +103,7 @@ Quando você seleciona uma página de live copy, as seguintes ações estão dis
 
 * [Status do relacionamento](#relationship-status)
 
-   * Exibir informações sobre o status e a herança.
+   * Informações de Visualização sobre o status e a herança.
 
 * [Sincronizar](/help/sites-administering/msm.md#rollout-and-synchronize)
 
@@ -137,7 +140,7 @@ Esta guia fornece informações detalhadas sobre o status da relação entre o b
 
 ### Informações da Live Copy {#live-copy-information}
 
-Esta guia permite que você visualize e edite a configuração da live copy:
+Esta guia permite que você visualização e edite a configuração da live copy:
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
