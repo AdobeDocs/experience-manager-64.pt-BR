@@ -42,7 +42,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
 ### Create text {#create-text}
 
-1. Selecione **Formulários** > Fragmentos **de** Documento.
+1. Selecione **Forms** > Fragmentos **do** Documento.
 
 1. Toque em **Criar** > **Texto.** Ou selecione um ativo de texto e toque em **Editar**.
 1. Especifique as seguintes informações para o texto:
@@ -71,6 +71,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
    * **Condição**: Toque em para inserir uma condição. Inserir texto com base na condição. Se a condição for verdadeira, o texto estará visível na letra, caso contrário não.
    * **Adicionar descrição**: Adicione uma anotação a um texto. Esses são metadados visíveis para o autor, mas não são parte da carta criada.
    * **Quebra** de página: Se você definir o atributo de quebra de página de um módulo de texto como falso, o módulo de texto não será quebrado nas páginas.
+
    Um editor de texto é aberto. Insira o texto. A barra de ferramentas muda dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
 
    ![Selecionar tipo de barra de ferramentas](assets/toolbarselection.png)
@@ -108,6 +109,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
    * Símbolos monetários como €, ¥ e £
    * Símbolos matemáticos como ∑, √,  e ^
    * Símbolos de pontuação como ‟ e&quot;
+
    ![caracteres especiais](assets/specialcharacters.png)
 
    O Gerenciamento de correspondência tem suporte integrado para 210 caracteres especiais. O administrador pode [adicionar suporte para caracteres especiais mais/personalizados por personalização](/help/forms/using/custom-special-characters.md).
@@ -128,6 +130,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
    * Adicione um elemento de dicionário de dados no texto, selecione um elemento de dados da lista e toque em Inserir ( ![inserir](assets/insert.png)). Se você selecionar Protegido, o elemento do dicionário de dados será somente leitura e aparecerá no editor de letras, mas não na interface de usuário Criar correspondência ou no Criador de correspondência.
    * Adicione um elemento de espaço reservado no texto, no painel Elementos de dados, toque em Criar novo, insira os detalhes do novo Elemento de dados e toque em Criar para adicionar o novo elemento à lista. O novo espaço reservado pode ser inserido no texto da mesma forma que o elemento de dicionário de dados. Para editar um espaço reservado, selecione um espaço reservado e toque em Editar.
+
    ![Elementos de espaço reservado](assets/placeholder_elements_in_xmldata.png)
 
    **Figura:** *Elementos de espaço reservado conforme especificado no arquivo de dados de amostra de um Dicionário de dados*
@@ -222,7 +225,7 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 * **Carta**: Uma lista alfabética com a escolha de letras minúsculas (a,b,...) e maiúsculas (A,B,...).
 * **Personalizado**: Você pode criar qualquer tipo numerado/alfabetizado e valores de prefixo e sufixo de sua escolha.
 
-1. Selecione **Formulários** > Fragmentos **de** Documento.
+1. Selecione **Forms** > Fragmentos **do** Documento.
 
 1. Selecione **Criar** > **Lista**.
 
@@ -295,7 +298,7 @@ O Editor de condições permite que você especifique uma condição padrão. Se
 
 ### Criar uma condição {#create-a-condition}
 
-1. Selecione **Formulários** > Fragmentos **de** Documento.
+1. Selecione **Forms** > Fragmentos **do** Documento.
 1. Selecione **Criar > Condição**.
 1. Especifique as seguintes informações para a lista:
 
@@ -398,19 +401,21 @@ Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em 
    * **Configuração para**: Selecione a tabela que está sendo configurada. Como sufixo do nome da tabela na lista suspensa é (Estático) se a tabela for estática ou (Dinâmica) se a tabela for dinâmica. As tabelas estáticas contêm um número fixo de linhas. Tabelas estáticas podem conter áreas e campos de público alvo. A área e os campos do público alvo não podem ser vinculados a DDEs repetitivos. Os dados vinculados às células da tabela determinam o número de linhas para tabelas dinâmicas.
    * **Linhas**: Selecione o número de linhas para o layout. A contagem de linhas configuradas deve ser maior ou igual à contagem de linhas original.
    * **Colunas**: selecione o número de colunas para o layout. A contagem de colunas configurada deve ser maior ou igual à contagem de colunas original.
+
    Para cada coluna são necessários os seguintes detalhes:
 
    * **Cabeçalho**: texto a ser exibido para o cabeçalho
    * **Rodapé**: texto a ser exibido para o rodapé
    * **Tipo**: tipo de coluna adicional. Área do campo ou do Público alvo. O tipo é ativado para tabelas de espaço reservado estáticas. O tipo pode ser definido no nível da coluna e não no nível da célula. Todas as células em uma coluna estendida seriam do mesmo tipo. Para uma tabela dinâmica, todas as colunas são do tipo Campo. Para tabelas sem espaço reservado, não é possível definir o tipo de colunas adicionais. Neste caso, o tipo de células adicionais na coluna alargada é igual ao tipo da última coluna dessa linha; e o tipo de célula em linha adicional é o mesmo que o tipo da última célula nessa coluna.
    * **Taxa de largura:** proporção das larguras de coluna da tabela.
+
    Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em fragmentos de layout, consulte [Exemplo com arquivos de amostra: usando tabelas estáticas e dinâmicas em uma letra](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
 1. Toque em **Salvar**.
 
 ### Fazer upload de um XDP para o Gerenciamento de correspondência {#upload-an-xdp-to-correspondence-management}
 
-Para obter instruções sobre como carregar/importar um XDP para o Gerenciamento de correspondência, consulte [Importar e exportar ativos para o AEM Forms](/help/forms/using/import-export-forms-templates.md).
+Para obter instruções sobre como carregar/importar um XDP para o Gerenciamento de correspondência, consulte [Importar e exportar ativos para a AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 ### Práticas recomendadas/dicas e truques {#best-practices-tips-and-tricks-2}
 
@@ -448,20 +453,20 @@ Ao lidar com uma combinação de datas, como startDate - endDate, use um único 
 
 Quando um layout contém vários campos e áreas de público alvo que estão mapeados para elementos XML únicos, use o vínculo no nível do formulário e crie um nó separado para cada elemento. Os campos vinculados no nível do formulário são ignorados ao mapear dados no Gerenciamento de correspondência.
 
-#### Não usar áreas de público alvo de subformulários em uma página mestre {#do-not-use-subform-target-areas-in-a-master-page}
+#### Não usar áreas de público alvo de subformulários em uma página principal {#do-not-use-subform-target-areas-in-a-master-page}
 
-As áreas de públicos alvos de subformulários em uma página mestre não estão visíveis na interface do usuário Gerenciar ativos e os dados não podem ser mapeados para elas.
+As áreas de públicos alvos de subformulários em uma página principal não estão visíveis na interface do usuário Gerenciar ativos e os dados não podem ser mapeados para elas.
 
 #### Escolhendo posições e tipos apropriados para áreas de público alvo {#choosing-appropriate-positions-and-types-for-target-areas}
 
 Ao projetar o layout, tenha cuidado ao escolher subformulários. Se o layout contiver um único subformulário, poderá ser um tipo continuado. Depois de posicionar os campos no subformulário, é possível vinculá-lo em outro subformulário para que o subformulário vinculado também seja continuado e o layout não seja perturbado.
 
-#### Colocação de campos em páginas mestre {#placing-fields-on-master-pages}
+#### Colocação de campos em páginas principais {#placing-fields-on-master-pages}
 
-Observe o seguinte ao colocar um campo em uma página mestre:
+Observe o seguinte ao colocar um campo em uma página principal:
 
-* Definir o vínculo dos campos da página mestre para Usar dados globais
-* Não coloque o campo diretamente sob a Área de página raiz da página mestre.
+* Definir o vínculo de campos de página principais para Usar dados globais
+* Não coloque o campo diretamente sob a PageArea raiz da página principal.
 * Vincule o campo em um subformulário nomeado e verifique se o vínculo do subformulário nomeado está definido como Usar nome.
 
 ## Criação de tabelas usando fragmentos de layout {#creating-tables-using-layout-fragments}
@@ -492,6 +497,7 @@ Este exemplo mostra como você pode criar uma tabela dinâmica e estática, vinc
 
    * Adicione subformulário à coluna da tabela. Certifique-se de alterar o layout do subformulário pai da tabela para continuado e remover os vínculos do subformulário na tabela.
    * Adicione um subformulário à célula da tabela. Certifique-se de alterar o layout do subformulário pai da tabela para continuado e remover os vínculos do subformulário na tabela.
+
    Ou use os XDPs estáticos e dinâmicos conectados a essa etapa.
 
    Para obter mais informações sobre como trabalhar com Fragmentos de layout, consulte Fragmentos [de](#layoutfragments)layout.
@@ -502,7 +508,7 @@ Este exemplo mostra como você pode criar uma tabela dinâmica e estática, vinc
 
    [Obter arquivo](assets/dynamic.xdp.zip)
 
-1. Faça upload dos XDPs para o AEM Forms.
+1. Carregue os XDPs no AEM Forms.
 1. Crie um fragmento de layout com base no XDP dinâmico. A guia Tabela das propriedades exibe que a tabela é dinâmica (campo Configuração para). O número de linhas (1) e colunas (3) são derivados do Fragmento XDP/Layout.
 
    Os campos desse layout são vinculados posteriormente à DDD importada e, na letra, o número de linhas é criado dinamicamente com base no número de registros no arquivo de dados de teste (o arquivo de dados XML anexado à DDD).
