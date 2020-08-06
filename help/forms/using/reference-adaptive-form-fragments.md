@@ -1,14 +1,17 @@
 ---
 title: Referência a fragmentos de formulário adaptável
 seo-title: Referência a fragmentos de formulário adaptável
-description: 'O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
-seo-description: 'O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
+description: 'A AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
+seo-description: 'A AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ Para autores de formulários adaptáveis, os fragmentos de referência são forn
 * Termos e condições
 * Termos e condições com script
 
-Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Formulários e documentos. Para instalar um pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
+Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e Documentos. Para instalar um pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
 ![Todos os fragmentos listados](assets/ootb-frags.png)
 
@@ -51,7 +54,7 @@ Inclui campos para capturar o número de telefone e o endereço de email.
 ## Informações sobre cartão de crédito {#credit-card-information}
 
 Inclui campos para capturar informações de cartão de crédito que podem ser usadas para processar pagamentos.
-[ Fragmento de Informações do Cartão de ![Crédito](assets/cc-info.png)](assets/cc-info-1.png)
+[ ![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emprego Atual {#current-employment}
 
@@ -76,14 +79,14 @@ Inclui campos para capturar o histórico de emprego. Permite adicionar várias o
 
 ## Receitas e despesas {#income-expenditure}
 
-Inclui campos para capturar fluxos de caixa e despesas mensais. Formulários que exigem que os usuários forneçam detalhes financeiros podem usar esse fragmento para capturar receita e dispêndio.
+Inclui campos para capturar fluxos de caixa e despesas mensais. A Forms que exige que os usuários forneçam detalhes financeiros pode usar esse fragmento para capturar receita e dispêndio.
 ![Fragmento Receitas e Despesas](assets/income.png)
 
 [Clique para ampliar](assets/income-1.png)
 
 ## Nome {#name}
 
-Inclui campos para especificar título, nome, nome do meio e sobrenome.
+Inclui campos para especificar o título, o nome, o nome do meio e o sobrenome.
 ![Nomear fragmento](assets/name.png)
 
 [Clique para ampliar](assets/name-1.png)
