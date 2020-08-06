@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
 
 ---
 
 
 # Personalização do cliente {#client-side-customization}
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Auxiliares da proteção contra a fraude SCF](handlebars-helpers.md)** |
 
-Para personalizar a aparência e/ou o comportamento de um componente do AEM Communities no cliente, há várias abordagens.
+Para personalizar a aparência e/ou o comportamento de um componente AEM Communities no lado do cliente, há várias abordagens.
 
 Duas abordagens principais são sobrepor ou estender um componente.
 
@@ -53,7 +56,7 @@ Para obter um exemplo rápido de como estender o componente de comentários, exp
 
 ## Vínculo Javascript {#javascript-binding}
 
-O script HBS do componente deve estar vinculado aos objetos, modelos e exibições JavaScript, que implementam esse recurso.
+O script HBS do componente deve estar vinculado aos objetos, modelos e visualizações JavaScript, que implementam esse recurso.
 
 O valor do `data-scf-component` atributo pode ser o padrão, como **`social/tally/components/hbs/rating`**, ou um componente estendido (personalizado) para funcionalidade personalizada, como **weretail/components/hbs/rating**.
 
@@ -102,7 +105,7 @@ Os estilos personalizados substituirão os estilos de estrutura padrão e o comp
 
 >[!CAUTION]
 >
->**Qualquer nome de classe CSS com prefixo** scf-js-&amp;ast; tem um uso específico no código javascript. Essas classes afetam o estado de um componente (por exemplo, alternar de oculto para visível) e não devem ser substituídas nem removidas.
+>Qualquer nome de classe CSS com prefixo **scf-js-&amp;ast;** tem um uso específico no código javascript. Essas classes afetam o estado de um componente (por exemplo, alternar de oculto para visível) e não devem ser substituídas nem removidas.
 >
 >Enquanto o scf-js-&amp;ast; classes não afetam estilos, os nomes de classe podem ser usados em folhas de estilos com a ressalva de que, como controlam os estados dos elementos, pode haver efeitos colaterais.
 
@@ -112,11 +115,11 @@ Para estender uma implementação do Javascript de componentes, é necessário a
 
 1. Crie um componente para seu aplicativo com um conjunto jcr:resourceSuperType definido com o valor de jcr:resourceType do componente estendido, por exemplo, social/forum/components/hbs/forum
 1. Examine o Javascript do componente SCF padrão para determinar que métodos devem ser registrados usando SCF.registerComponent()
-1. Copie o Javascript do componente estendido ou inicie do zero
+1. Copie o Javascript ou o start do componente estendido do zero
 1. Estender o método
-1. Use SCF.registerComponent() para registrar todos os métodos com os padrões ou os objetos e exibições personalizados.
+1. Use SCF.registerComponent() para registrar todos os métodos com os padrões ou os objetos e visualizações personalizados.
 
-### forum.js: Exemplo de extensão do fórum - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Exemplo de extensão do fórum - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -151,9 +154,9 @@ As tags de script nos scripts SCF não devem ser removidas ao substituir ou subs
 
 O uso de bibliotecas [do lado do](../../help/sites-developing/clientlibs.md) cliente (clientlibs) fornece uma forma de organizar e otimizar o Javascript e o CSS usados para renderizar conteúdo no cliente.
 
-As clientlibs para SCF seguem um padrão de nomenclatura muito específico para duas variantes, que variam apenas pela presença de &#39;autor&#39; no nome da categoria:
+As clientlibs para SCF seguem um padrão de nomeação muito específico para duas variantes, que variam apenas pela presença de &#39;autor&#39; no nome da categoria:
 
-| Variante Clientlib | Padrão para a propriedade Categorias |
+| Variante Clientlib | Padrão para a propriedade Categoria |
 |--- |--- |
 | clientlib completo | cq.social.hbs.&lt;nome do componente> |
 | clientlib do autor | cq.social.author.hbs.&lt;nome do componente> |
@@ -169,7 +172,7 @@ Essas versões são encontradas em:
 Por exemplo:
 
 * Nó de pasta do cliente: /etc/clientlibs/social/hbs/forum
-* Propriedade Categorias: cq.social.hbs.forum
+* propriedade Categoria: cq.social.hbs.forum
 
 O guia [Componentes da](components-guide.md) comunidade lista as clientlibs completas necessárias para cada componente do SCF.
 
@@ -188,11 +191,11 @@ Essas versões são encontradas na pasta libs SCF:
 Por exemplo:
 
 * Nó de pasta do cliente: /libs/social/forum/hbs/forum/clientlibs
-* Propriedade Categorias: cq.social.author.hbs.forum
+* propriedade Categoria: cq.social.author.hbs.forum
 
-Observação: embora clientlibs do autor nunca incorporem outras bibliotecas, eles listam suas dependências. Quando incorporadas em outras bibliotecas, as dependências não são automaticamente extraídas e também devem ser incorporadas.
+Observação: enquanto os clientlibs do autor nunca incorporam outras bibliotecas, eles fazem lista de suas dependências. Quando incorporadas em outras bibliotecas, as dependências não são automaticamente extraídas e também devem ser incorporadas.
 
-Os clientlibs do autor necessários podem ser identificados inserindo &quot;autor&quot; nos clientlibs listados para cada componente SCF no guia [Componentes da](components-guide.md)comunidade.
+Os clientlibs do autor necessários podem ser identificados inserindo &quot;autor&quot; nos clientlibs listados para cada componente do SCF no guia [Componentes da](components-guide.md)comunidade.
 
 ### Considerações sobre o uso {#usage-considerations}
 
@@ -202,7 +205,7 @@ Cada site é diferente em como gerenciam bibliotecas de clientes. Vários fatore
 * Tempo curto para a primeira página: Talvez o desejo seja que a primeira página seja carregada rapidamente. Nesse caso, o Javascript está em vários arquivos pequenos para serem referenciados somente quando necessário.
 * Um equilíbrio entre o carregamento da primeira página e os downloads subsequentes.
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Auxiliares da proteção contra a fraude SCF](handlebars-helpers.md)** |
 
