@@ -1,16 +1,19 @@
 ---
-title: Migrar ativos para os ativos Adobe Experience Manager em massa
-description: Como trazer ativos para o AEM, aplicar metadados, gerar representações e ativá-los para publicar instâncias.
+title: Migrar ativos para o Adobe Experience Manager Assets em massa
+description: Como trazer ativos para AEM, aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 11%
 
 ---
 
 
 # Guia de migração de ativos {#assets-migration-guide}
 
-Ao migrar ativos para o AEM, há várias etapas a serem consideradas. A extração de ativos e metadados para fora de sua casa atual está fora do escopo deste documento, pois varia muito entre as implementações. Em vez disso, este documento descreve como trazer esses ativos para o AEM, aplicar seus metadados, gerar representações e ativar ou publicar os ativos.
+Ao migrar ativos para o AEM, há várias etapas a serem consideradas. A extração de ativos e metadados para fora de sua casa atual está fora do escopo deste documento, pois varia muito entre as implementações. Em vez disso, este documento descreve como trazer esses ativos para AEM, aplicar seus metadados, gerar representações e ativar ou publicar os ativos.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -18,20 +21,21 @@ Antes de executar qualquer uma das etapas descritas abaixo, reveja e implemente 
 
 >[!NOTE]
 >
->As seguintes ferramentas de migração de ativos não fazem parte do Adobe Experience Manager. O Atendimento ao cliente da Adobe não é compatível com essas ferramentas.
+>As seguintes ferramentas de migração de ativos não fazem parte da Adobe Experience Manager. O Atendimento ao cliente do Adobe não suporta essas ferramentas.
 >
 >* Criador de tags de ferramentas AEM ACS
 >* Importador de ativos CSV das ferramentas AEM ACS
 >* Gerenciador de fluxo de trabalho em massa do ACS
 >* Gerenciador de ações rápidas do ACS Commons
 >* Fluxo de trabalho sintético
+
 >
 >
 Este software é de código aberto e é coberto pela [Licença Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Para fazer uma pergunta ou relatar um problema, visite os respectivos [Problemas do GitHub para as ferramentas do ACS AEM](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e os [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migrar para o AEM {#migrate-to-aem}
+## Migrar para AEM {#migrate-to-aem}
 
-A migração de ativos para o AEM requer várias etapas e deve ser exibida como um processo em fases. As fases da migração são as seguintes:
+A migração de ativos para AEM requer várias etapas e deve ser exibida como um processo em fases. As fases da migração são as seguintes:
 
 1. Desative workflows.
 1. Carregar tags.
@@ -58,7 +62,7 @@ Há duas abordagens para carregar os ativos no sistema: uma abordagem baseada em
 
 #### Enviar por HTTP {#push-through-http}
 
-A equipe de Serviços gerenciados da Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma instância do AEM. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
+A equipe do Adobe Managed Services usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma instância AEM. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
 
 Há duas desvantagens principais ao usar a abordagem de passar por https:
 
@@ -69,13 +73,13 @@ A outra abordagem para assimilar ativos é extrair ativos do sistema de arquivos
 
 #### Retire do sistema de arquivos local {#pull-from-the-local-file-system}
 
-O Importador [de ativos CSV das ferramentas AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do AEM Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
+O Importador [de ativos CSV das ferramentas](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do AEM Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
 
 Quando os ativos não são transmitidos através de uma rede, o desempenho geral melhora bastante. Normalmente, esse método é o mais eficiente para carregar ativos no repositório. Além disso, você pode importar todos os ativos e metadados em uma única etapa, já que a ferramenta suporta a ingestão de metadados. Nenhuma outra etapa é necessária para aplicar os metadados, digamos, usando uma ferramenta separada.
 
 ### Processar execuções {#process-renditions}
 
-Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo do DAM para extrair metadados e gerar execuções. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo de atualização do DAM para atender às suas necessidades. Algumas etapas no fluxo de trabalho padrão podem não ser necessárias para você, como a geração Scene7 PTIFF ou a integração do servidor InDesign.
+Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo do DAM para extrair metadados e gerar execuções. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo de atualização do DAM para atender às suas necessidades. Algumas etapas no fluxo de trabalho padrão podem não ser necessárias para você, como a geração do Scene7 PTIFF ou a integração do servidor do InDesign.
 
 Depois de configurar o fluxo de trabalho de acordo com suas necessidades, você tem duas opções para executá-lo:
 
@@ -94,7 +98,7 @@ Para qualquer uma dessas abordagens, a advertência é que os ativos na instânc
 
 >[!NOTE]
 >
->A Adobe não mantém nem suporta Grabbit.
+>O Adobe não mantém nem suporta Grabbit.
 
 ### Clonar publicação {#clone-publish}
 
@@ -112,22 +116,22 @@ Depois que os ativos tiverem sido ativados, você poderá clonar sua instância 
 
 Após a conclusão da migração, os iniciadores dos workflows de ativos de atualização do DAM devem ser reativados para suportar a geração de execução e a extração de metadados para uso diário contínuo do sistema.
 
-## Migrar ativos em implantações do AEM {#migrate-between-aem-instances}
+## Migrar ativos em implantações AEM {#migrate-between-aem-instances}
 
-Embora não seja tão comum, às vezes é necessário migrar grandes quantidades de dados de uma instância do AEM para outra; por exemplo, ao executar uma atualização do AEM, atualize seu hardware ou migre para um novo datacenter, como com uma migração do AMS.
+Embora não seja tão comum, às vezes é necessário migrar grandes quantidades de dados de uma instância AEM para outra; por exemplo, ao executar uma atualização AEM, atualize seu hardware ou migre para um novo datacenter, como com uma migração do AMS.
 
-Nesse caso, seus ativos já estão preenchidos com metadados e as execuções já são geradas. Você pode simplesmente se concentrar em mover ativos de uma instância para outra. Ao migrar entre instâncias do AEM, execute as seguintes etapas:
+Nesse caso, seus ativos já estão preenchidos com metadados e as execuções já são geradas. Você pode simplesmente se concentrar em mover ativos de uma instância para outra. Ao migrar entre instâncias AEM, execute as seguintes etapas:
 
 1. Desativar workflows: Como você está migrando execuções juntamente com nossos ativos, deseja desativar os iniciadores de fluxo de trabalho para o Ativo de atualização do DAM.
 
-1. Migrar tags: Como as tags já foram carregadas na instância do AEM de origem, é possível criá-las em um pacote de conteúdo e instalá-las na instância do público alvo.
+1. Migrar tags: Como as tags já foram carregadas na instância de AEM de origem, é possível criá-las em um pacote de conteúdo e instalá-las na instância de público alvo.
 
-1. Migrar ativos: Há duas ferramentas recomendadas para mover ativos de uma instância do AEM para outra:
+1. Migrar ativos: Há duas ferramentas recomendadas para mover ativos de uma instância AEM para outra:
 
    * **Cofre Remote Copy**, ou `vlt rcp`, permite que você use vlt em uma rede. Você pode especificar um diretório de origem e destino e vlt baixa todos os dados do repositório de uma instância e os carrega na outra. O Vlt rcp está documentado em [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **O Grabbit** é uma ferramenta de sincronização de conteúdo de código aberto desenvolvida pelo Time Warner Cable para sua implementação do AEM. Como ele usa fluxos contínuos de dados, em comparação ao vlt rcp, ele tem uma latência mais baixa e exige uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também oferece suporte apenas à sincronização do conteúdo delta, o que permite sincronizar as alterações após a conclusão de uma passagem de migração inicial.
+   * **O Grabbit** é uma ferramenta de sincronização de conteúdo de código aberto desenvolvida pela Time Warner Cable para sua implementação de AEM. Como ele usa fluxos contínuos de dados, em comparação ao vlt rcp, ele tem uma latência mais baixa e exige uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também oferece suporte apenas à sincronização do conteúdo delta, o que permite sincronizar as alterações após a conclusão de uma passagem de migração inicial.
 
-1. Ativar ativos: Siga as instruções para [ativar ativos](#activate-assets) documentados para a migração inicial para o AEM.
+1. Ativar ativos: Siga as instruções para [ativar ativos](#activate-assets) documentados para a migração inicial para AEM.
 
 1. Publicação de clone: Como ocorre com uma nova migração, carregar uma única instância de publicação e clonar é mais eficiente do que ativar o conteúdo em ambos os nós. Consulte [Clonando publicação.](#clone-publish)
 
