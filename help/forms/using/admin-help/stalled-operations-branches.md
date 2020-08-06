@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -26,21 +29,21 @@ Quando um processo é interrompido, nenhuma outra operação é executada até q
 
 Para cada item parado, a lista mostra as seguintes informações:
 
-**** Nome da Operação ou Nome da Ramificação: O nome da operação ou ramificação.
+**Nome da Operação ou Nome da Ramificação:** O nome da operação ou ramificação.
 
-**** Status: Sempre parado para itens parados.
+**Status:** Sempre parado para itens parados.
 
-**** Erro: Uma breve descrição do problema.
+**Erro:** Uma breve descrição do problema.
 
-**** ID do processo: O número inteiro positivo que o fluxo de trabalho do formulário atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automática inicia um processo). É possível usar esse identificador para rastrear a instância do processo por todo o ciclo de vida.
+**ID do processo:** O número inteiro positivo que o fluxo de trabalho do formulário atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automática inicia um processo). É possível usar esse identificador para rastrear a instância do processo por todo o ciclo de vida.
 
-**** Nome do processo - Versão: O nome do processo atribuído no Workbench.
+**Nome do processo - Versão:** O nome do processo atribuído no Workbench.
 
-**** Data de bloqueio: A data e a hora em que a operação ou ramificação parou.
+**Data de parada:** A data e a hora em que a operação ou ramificação parou.
 
-Você pode executar as seguintes tarefas na página Operações paradas ou Ramificações paradas:
+Você pode fazer as seguintes tarefas na página Operações paradas ou Ramificações paradas:
 
-* Selecione um erro para exibir detalhes. Quando você seleciona um erro, a página Detalhes do erro é exibida.
+* Selecione um erro para visualização de detalhes sobre ele. Quando você seleciona um erro, a página Detalhes do erro é exibida.
 * Encerre ou tente novamente operações paradas ou tente novamente ramificações paradas.
 
 ## Terminando ou repetindo operações ou ramificações paralisadas {#terminating-or-retrying-stalled-operations-or-branches}
@@ -51,7 +54,7 @@ Quando você encerra uma instância do processo, ela para de ser executada e nen
 
 Na página Operações paradas ou na página Ramificações paradas, você pode repetir a operação ou ramificação.
 
-Quando você tenta uma operação novamente, o fluxo de trabalho do Forms recebe uma solicitação para reiniciar a operação. Se o erro que causou a paralisação do processo tiver sido corrigido e a solicitação de nova tentativa for bem-sucedida, o processo começará a ser executado novamente a partir do ponto em que havia parado e seu status mudará para EXECUÇÃO. Se a operação não puder ser reiniciada, ela permanecerá PARADA e talvez seja necessário encerrá-la.
+Quando você tenta uma operação novamente, o fluxo de trabalho da Forms recebe uma solicitação para reiniciar a operação. Se o erro que causou a paralisação do processo tiver sido corrigido e a solicitação de nova tentativa for bem-sucedida, o processo começará a ser executado novamente a partir do ponto em que havia parado e seu status mudará para EXECUÇÃO. Se a operação não puder ser reiniciada, ela permanecerá PARADA e talvez seja necessário encerrá-la.
 
 ### Encerrar uma operação parada {#terminate-a-stalled-operation}
 
@@ -60,7 +63,7 @@ Quando você tenta uma operação novamente, o fluxo de trabalho do Forms recebe
 
 ### Repetir uma operação ou ramificação parada {#retry-a-stalled-operation-or-branch}
 
-1. No console de administração, clique em Serviços > fluxo de trabalho de formulários e clique em Erros de operações paradas ou Erros de ramificação parados.
+1. No console de administração, clique em Serviços > fluxo de trabalho de formulários e, em seguida, clique em Erros de operações paradas ou Erros de ramificação parados.
 1. Na página Operações paradas ou Ramificações paradas, selecione o item que deseja repetir e clique em Repetir.
 
 ## Exibição de detalhes de erros sobre operações ou ramificações paradas {#viewing-error-details-about-stalled-operations-or-branches}
@@ -73,12 +76,12 @@ Você também pode encerrar ou tentar novamente operações paradas e tentar nov
 
 ## O processo não pára quando o usuário de escalonamento não existe {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Erros ocorrem quando a operação Atribuir tarefa no serviço Usuário de formulários AEM é configurada para escalonar a tarefa a outro usuário após um período de tempo específico, e o usuário de escalonamento é excluído depois que a operação Atribuir tarefa é executada, mas antes do escalonamento ocorrer.
+Erros ocorrem quando a operação Atribuir Tarefa nos formulários AEM serviço Usuário está configurada para escalonar a tarefa a outro usuário após um período de tempo específico, e o usuário de escalonamento é excluído depois que a operação Atribuir Tarefa é executada, mas antes que o escalonamento ocorra.
 
-Quando essa situação ocorre, o estado do processo e da tarefa não é alterado no tempo de escalonamento configurado, e o escalonamento não ocorre, mas o processo não é interrompido. A seguinte mensagem é exibida no log do servidor:
+Quando essa situação ocorre, o estado do processo e a tarefa não são alterados no tempo de escalonamento configurado, e o escalonamento não ocorre, mas o processo não é interrompido. A seguinte mensagem é exibida no log do servidor:
 
 &quot;O principal especificado para escalonamento não é válido, para taskID: *número*, fila especificada: *número*.&quot;
 
-Se o usuário de escalonamento for excluído antes da tarefa ser gerada (antes da operação Atribuir tarefa ser executada), o processo será interrompido ou o evento de exceção InvalidPrincipal será lançado.
+Se o usuário de escalonamento for excluído antes da geração da tarefa (antes da execução da operação Atribuir Tarefa), o processo será interrompido ou o evento de exceção InvalidPrincipal será lançado.
 
-Para evitar esse problema, ao excluir um usuário, procure as tarefas pertencentes a esse usuário e trate-as de acordo. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Para evitar esse problema, ao excluir um usuário, procure tarefas pertencentes a esse usuário e trate-as de acordo. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
