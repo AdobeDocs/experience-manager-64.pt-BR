@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ O ContextHub armazena dados de contexto persistentes no cliente. A API Javascrip
 Cada armazenamento ContextHub é uma instância de um tipo de armazenamento predefinido:
 
 * O ContextHub fornece vários tipos [de armazenamento de](/help/sites-developing/ch-samplestores.md)amostra.
-* Use consoles de AEM para [criar lojas](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* Use AEM consoles para [criar lojas](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
 * Os desenvolvedores podem [criar tipos](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)de loja personalizados.
 * Os desenvolvedores podem [acessar dados](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) do armazenamento por meio do Javascript.
 
@@ -46,12 +49,12 @@ O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e deter
 
 ## Apresentação {#presentation}
 
-A barra de ferramentas [do](/help/sites-authoring/ch-previewing.md) ContextHub permite que comerciantes e autores vejam e manipulem dados de armazenamento para simular a experiência do usuário ao criar páginas. A barra de ferramentas consiste em grupos de módulos de interface que fornecem acesso às lojas do ContextHub.
+A barra de ferramentas [do](/help/sites-authoring/ch-previewing.md) ContextHub permite que profissionais de marketing e autores vejam e manipulem dados de armazenamento para simular a experiência do usuário ao criar páginas. A barra de ferramentas consiste em grupos de módulos de interface que fornecem acesso às lojas do ContextHub.
 
 Cada módulo de interface do usuário do ContextHub é uma instância de um tipo de módulo predefinido:
 
 * O ContextHub fornece vários tipos [de módulo de](/help/sites-developing/ch-samplemodules.md)amostra.
-* Use consoles de AEM para [adicionar módulos](/help/sites-administering/contexthub-config.md#adding-a-ui-module)de interface e [agrupá-los em modos](/help/sites-administering/contexthub-config.md#adding-a-ui-mode)de interface.
+* Use AEM consoles para [adicionar módulos](/help/sites-administering/contexthub-config.md#adding-a-ui-module)de interface e [agrupá-los em modos](/help/sites-administering/contexthub-config.md#adding-a-ui-mode)de interface.
 
 * Os desenvolvedores podem [criar tipos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de módulo personalizados.
 
