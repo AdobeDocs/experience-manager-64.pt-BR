@@ -49,8 +49,8 @@ Um operador de telecom envia contas mensais aos clientes por email. O projeto de
 
 ## Pré-requisitos {#prerequisites}
 
-* Configure uma instância do autor de AEM.
-* Instalar complemento [](/help/forms/using/installing-configuring-aem-forms-osgi.md) do AEM Forms na instância do autor
+* Configure uma instância do autor AEM.
+* Instalar complemento [do](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms na instância do autor
 * Configurar o banco de dados MYSQL
 * Obtenha o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Os exemplos no tutorial são baseados no banco de dados MySQL e usam o driver [de banco de dados](https://dev.mysql.com/downloads/connector/j/5.1.html)MySQL JDBC da Oracle.
 
@@ -76,7 +76,7 @@ Para criar uma anatomia para a Comunicação interativa com os seguintes modos d
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Um modelo de dados de formulário permite que você conecte uma Comunicação interativa a fontes de dados diferentes. Por exemplo, perfil de usuário do AEM, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um schema unificado de representação de dados de entidades de negócios e serviços disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação Interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+Um modelo de dados de formulário permite que você conecte uma Comunicação interativa a fontes de dados diferentes. Por exemplo, AEM perfil do usuário, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um schema unificado de representação de dados de entidades de negócios e serviços disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação Interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
 
 **Objetivos:**
 
@@ -95,7 +95,7 @@ Um modelo de dados de formulário permite que você conecte uma Comunicação in
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Os fragmentos de Documento são componentes reutilizáveis de uma correspondência usada para compor uma Comunicação interativa. Os fragmentos do documento são de tipos: Texto, Lista e Condição.
+Os fragmentos de Documento são componentes reutilizáveis de uma correspondência que são usados para compor uma comunicação interativa. Os fragmentos do documento são de tipos: Texto, Lista e Condição.
 
 **Objetivos:**
 
@@ -129,13 +129,13 @@ Os modelos para o canal da Web são criados no AEM. Os autores e administradores
 
 Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento e modelos para a versão da Web, você pode criar um start para a criação de uma comunicação interativa.
 
-As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de comunicação interativa com impressão como mestre. A opção Imprimir como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir.
+As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de comunicação interativa com impressão como o principal. A opção Imprimir como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir.
 
 **Objetivos:**
 
 * Criar comunicação interativa para o canal de impressão
 * Criar comunicação interativa para o canal da Web
-* Criar Comunicações Interativas Impressas e da Web com Imprimir como Mestre
+* Crie Comunicações interativas da Web e da impressão com a opção Imprimir como Principal
 * Criar uma tabela dinâmica na versão Web do Interative Communication
 * Criar um gráfico na versão Web do Interative Communication
 * Criar hiperlinks na versão da Web do Interative Communication
@@ -146,7 +146,7 @@ As Comunicações interativas podem ser fornecidas por meio de dois canais: Impr
 
 ![11-teste-sua-forma adaptativa](assets/11-test-your-adaptive-form.png)
 
-Depois de criar uma Comunicação interativa, é importante testar todas as alterações feitas nelas. Testar cada campo de uma comunicação interativa é tedioso. O AEM Forms fornece um SDK (Calvin SDK) para automatizar o teste do Interative Communications no navegador da Web.
+Depois de criar uma Comunicação interativa, é importante testar todas as alterações feitas nelas. Testar cada campo de uma comunicação interativa é tedioso. A AEM Forms fornece um SDK (Calvin SDK) para automatizar o teste de Comunicações interativas no navegador da Web.
 
 **Objetivos:**
 
