@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1662'
+ht-degree: 3%
 
 ---
 
 
 # Modelos de página - Estáticos{#page-templates-static}
 
-Um Modelo é usado para criar uma Página e define quais componentes podem ser usados dentro do escopo selecionado. Um modelo é uma hierarquia de nós que tem a mesma estrutura da página a ser criada, mas sem nenhum conteúdo real.
+Um Modelo é usado para criar uma Página e define quais componentes podem ser usados dentro do escopo selecionado. Um modelo é uma hierarquia de nós que tem a mesma estrutura que a página a ser criada, mas sem nenhum conteúdo real.
 
 Cada modelo apresentará uma seleção de componentes disponíveis para uso.
 
@@ -86,12 +89,12 @@ Um modelo é um nó do tipo cq:Template e tem as seguintes propriedades e nós s
   </tr> 
   <tr> 
    <td> thumbnail.png</td> 
-   <td>  nt:file</td> 
+   <td> nt:file</td> 
    <td>Miniatura do modelo.<br /> </td> 
   </tr> 
   <tr> 
    <td> icon.png</td> 
-   <td>  nt:file</td> 
+   <td> nt:file</td> 
    <td>Ícone do modelo.<br /> </td> 
   </tr> 
  </tbody> 
@@ -131,7 +134,7 @@ Esse componente é usado para definir a estrutura e o design do conteúdo quando
 
 ### O conteúdo produzido por um modelo {#the-content-produced-by-a-template}
 
-Os modelos são usados para criar páginas do tipo `cq:Page` (como mencionado anteriormente, uma página é um tipo especial de componente). Cada página AEM tem um nó estruturado `jcr:content`. Isso:
+Os modelos são usados para criar páginas do tipo `cq:Page` (como mencionado anteriormente, uma página é um tipo especial de componente). Cada Página AEM tem um nó estruturado `jcr:content`. Isso:
 
 * é do tipo cq:PageContent
 * é um tipo de nó estruturado que contém uma definição de conteúdo definida
@@ -139,24 +142,24 @@ Os modelos são usados para criar páginas do tipo `cq:Page` (como mencionado an
 
 ### Modelos padrão {#default-templates}
 
-O AEM vem com vários modelos padrão disponíveis prontamente. Em alguns casos, talvez você queira usar os modelos como estão. Nesse caso, é necessário garantir que o modelo esteja disponível para seu site.
+AEM vem com vários modelos padrão disponíveis prontamente. Em alguns casos, talvez você queira usar os modelos como estão. Nesse caso, é necessário garantir que o modelo esteja disponível para seu site.
 
-Por exemplo, o AEM vem com vários modelos, incluindo uma página de conteúdo e uma página inicial.
+Por exemplo, AEM vem com vários modelos, incluindo uma página de conteúdo e um home page.
 
 | **Título** | **Componente** | **Local** | **Propósito** |
 |---|---|---|---|
-| Página Inicial | homepage | geometrixx | O modelo da página inicial do Geometrixx. |
-| Página de conteúdo |  contentpage | geometrixx | O modelo de página de conteúdo do Geometrixx. |
+| Página Inicial | homepage | geometrixx | O modelo de home page do Geometrixx. |
+| Página de conteúdo | contentpage | geometrixx | O modelo da página de conteúdo do Geometrixx. |
 
 #### Exibição de modelos padrão {#displaying-default-templates}
 
 Para ver uma lista de todos os modelos no repositório, proceda da seguinte maneira:
 
-1. No CRXDE Lite, abra o menu **Ferramentas** e clique em **Consulta**.
+1. No CRXDE Lite, abra o menu **Ferramentas** e clique em **Query**.
 
-1. Na guia Consulta
+1. Na guia Query
 1. Como **Tipo**, selecione **XPath**.
-1. No campo de entrada **Consulta** , digite a seguinte string:
+1. No campo de entrada do **Query** , digite a seguinte string:
 
    //element(&amp;ast;, cq:Template)
 
@@ -172,7 +175,7 @@ Quando os estilos são definidos na interface usando o Modo [de](/help/sites-aut
 
 >[!CAUTION]
 >
->A Adobe recomenda aplicar designs somente pelo Modo [](/help/sites-authoring/default-components-designmode.md)de design.
+>O Adobe recomenda aplicar designs somente pelo Modo [de design](/help/sites-authoring/default-components-designmode.md).
 >
 >A modificação de designs no CRX DE por exemplo não uma prática recomendada e a aplicação desses designs pode variar do comportamento esperado.
 
@@ -180,13 +183,13 @@ Se os designs só forem aplicados usando o Modo de design, as seguintes seções
 
 >[!NOTE]
 >
->Esta seção descreve o comportamento da resolução do caminho de design a partir do AEM 6.4.2.0.
+>Esta seção descreve o comportamento de resolução do caminho de design a partir da AEM 6.4.2.0.
 
 ### Resolução do caminho de design {#design-path-resolution}
 
-Ao renderizar conteúdo com base em um modelo estático, o AEM tentará aplicar o design e os estilos mais relevantes ao conteúdo com base em uma transversal da hierarquia de conteúdo.
+Ao renderizar conteúdo com base em um modelo estático, AEM tentará aplicar o design e os estilos mais relevantes ao conteúdo com base em uma transversal da hierarquia de conteúdo.
 
-O AEM determina o estilo mais relevante para um nó de conteúdo na seguinte ordem:
+AEM determina o estilo mais relevante para um nó de conteúdo na seguinte ordem:
 
 * Se houver um design para o caminho completo e exato do nó de conteúdo (como quando o design é definido no Modo de design), use esse design.
 * Se houver um design para o nó de conteúdo do pai, use esse design.
@@ -206,7 +209,7 @@ Considere uma estrutura de conteúdo simples da seguinte maneira, na qual um des
 
 `/root/branch/leaf`
 
-A tabela a seguir descreve como o AEM escolherá um design.
+A tabela a seguir descreve como AEM escolherá um design.
 
 <table> 
  <tbody> 
@@ -267,11 +270,11 @@ A tabela a seguir descreve como o AEM escolherá um design.
 
 ## Desenvolvimento de modelos de página {#developing-page-templates}
 
-Os modelos de página AEM são simplesmente modelos usados para criar novas páginas. Eles podem conter o mínimo ou tanto conteúdo inicial quanto necessário, sendo sua função criar as estruturas de nó iniciais corretas, com as propriedades necessárias (principalmente sling:resourceType) definidas para permitir a edição e a renderização.
+AEM modelos de página são simplesmente modelos usados para criar novas páginas. Eles podem conter o mínimo ou tanto conteúdo inicial quanto necessário, sendo sua função criar as estruturas de nó iniciais corretas, com as propriedades necessárias (principalmente sling:resourceType) definidas para permitir a edição e a renderização.
 
 ### Criando um novo modelo (com base em um modelo existente) {#creating-a-new-template-based-on-an-existing-template}
 
-É necessário dizer que um novo modelo pode ser criado completamente do zero, mas geralmente um modelo existente será copiado e atualizado para economizar tempo e esforço. Por exemplo, os modelos no Geometrixx podem ser usados para ajudá-lo a começar.
+É necessário dizer que um novo modelo pode ser criado completamente do zero, mas geralmente um modelo existente será copiado e atualizado para economizar tempo e esforço. Por exemplo, os modelos dentro do Geometrixx podem ser usados para ajudá-lo a começar.
 
 Para criar um novo modelo com base em um modelo existente:
 
@@ -281,7 +284,7 @@ Para criar um novo modelo com base em um modelo existente:
 
    >[!NOTE]
    >
-   >A lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo. Consulte Disponibilidade [](/help/sites-developing/templates.md#template-availability)do modelo.
+   >A lista dos modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo. Consulte Disponibilidade [](/help/sites-developing/templates.md#template-availability)do modelo.
 
 1. Altere o **jcr:title** do novo nó de modelo para refletir sua nova função. Você também pode atualizar o **jcr:description** , se apropriado. Certifique-se de alterar a disponibilidade do modelo da página, conforme apropriado.
 
@@ -303,20 +306,20 @@ Para criar um novo modelo com base em um modelo existente:
    >[!NOTE]
    >
    >As alterações feitas no nó **/apps/&lt;site>/models/&lt;nome-modelo>** afetarão a instância do modelo (como na lista de seleção).
-   As alterações feitas no nó **/apps/&lt;site>/components/&lt;nome-componente>** afetarão a página de conteúdo criada quando o modelo for usado.
+   As alterações feitas no nó **/apps/&lt;site>/components/&lt;nome-do-componente>** afetarão a página de conteúdo criada quando o modelo for usado.
 
    Agora você pode criar uma página em seu site usando o novo modelo.
 
 >[!NOTE]
-A biblioteca do cliente do editor assume a presença do `cq.shared` namespace nas páginas de conteúdo e, se ele não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
-Todas as páginas de conteúdo de amostra contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de amostra, deverá incluir o `cq.shared` namespace.
+A biblioteca do cliente do editor assume a presença da `cq.shared` namespace nas páginas de conteúdo e, se ela não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
+Todas as páginas de conteúdo de amostra contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de amostra, deverá incluir a `cq.shared` namespace.
 Consulte [Uso de bibliotecas](/help/sites-developing/clientlibs.md) do lado do cliente para obter mais informações.
 
 ## Disponibilização de um modelo existente {#making-an-existing-template-available}
 
 Este exemplo ilustra como permitir que um modelo seja usado para determinados caminhos de conteúdo. Os modelos que estão disponíveis para o autor da página ao criar novas páginas são determinados pela lógica definida na Disponibilidade [do](/help/sites-developing/templates.md#template-availability)modelo.
 
-1. No CRXDE Lite, navegue até o modelo que deseja usar para a sua página, por exemplo, o modelo de Newsletter.
+1. No CRXDE Lite, navegue até o modelo que deseja usar para a sua página, por exemplo, o modelo de boletim.
 1. Altere a `allowedPaths` propriedade e outras propriedades usadas para a disponibilidade [do](/help/sites-developing/templates.md#template-availability)modelo. Por exemplo, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa que este modelo é permitido em qualquer caminho em `/content/geometrixx-outdoors`.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
