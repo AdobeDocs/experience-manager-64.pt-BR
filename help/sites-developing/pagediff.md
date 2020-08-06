@@ -28,11 +28,11 @@ O diff da página permite que um usuário compare a página atual com inicializa
 
 ## Detalhes da operação {#operation-details}
 
-Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar a diferença. Isso é necessário para que o conteúdo seja renderizado [para comparação](/help/sites-authoring/page-diff.md#presentation-of-differences)lado a lado.
+Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada por AEM em segundo plano para facilitar a diferença. Isso é necessário para que o conteúdo seja renderizado [para comparação](/help/sites-authoring/page-diff.md#presentation-of-differences)lado a lado.
 
-Essa operação de recriação é feita pelo AEM internamente e é transparente para o usuário e não requer intervenção. No entanto, um administrador que visualiza o repositório, por exemplo, no CRX DE Lite, veria essas versões recriadas na estrutura de conteúdo.
+Esta operação de recriação é feita por AEM interna e é transparente para o usuário e não requer intervenção. No entanto, um administrador que visualiza o repositório, por exemplo, no CRX DE Lite, veria essas versões recriadas dentro da estrutura de conteúdo.
 
-Dependendo do nível de correção do AEM, o comportamento é diferente e pode exigir determinadas permissões para funcionar corretamente.
+Dependendo do nível de correção AEM, o comportamento é diferente e pode exigir determinadas permissões para funcionar corretamente.
 
 ### Antes do AEM 6.4.3 {#prior-to-aem}
 
@@ -40,13 +40,13 @@ Quando o conteúdo é comparado, a árvore inteira até a página a ser comparad
 
 `/content/versionhistory/<userId>/<site structure>`
 
-Porque ao usar o mecanismo de diff de página, o AEM recria a versão anterior da página, para usar o recurso, o usuário deve ter certas permissões de JCR.
+Como ao usar o mecanismo de diff de página, AEM recria a versão anterior da página, para usar o recurso, o usuário deve ter certas permissões de JCR.
 
 >[!CAUTION]
 >
 >Para usar o recurso de diff de página, o usuário precisa ter a permissão **Modificar/Criar/Excluir** no nó `/content/versionhistory`.
 
-### A partir do AEM 6.4.3 {#as-of-aem}
+### AEM 6.4.3 {#as-of-aem}
 
 Quando o conteúdo é comparado, a árvore inteira até a página a ser comparada é recriada no seguinte local:
 
@@ -58,11 +58,11 @@ Uma tarefa de limpeza é executada automaticamente para limpar esse conteúdo te
 
 ## Limitações do desenvolvedor {#developer-limitations}
 
-Anteriormente, na interface clássica, era necessário considerar um desenvolvimento especial para facilitar a difusão do AEM (como o uso da `cq:text` `DiffService` tag lib ou a integração personalizada do serviço OSGi nos componentes). Isso não é mais necessário para o novo recurso diff, pois o diff ocorre no cliente por meio da comparação DOM.
+Anteriormente, na interface clássica, era necessário considerar um desenvolvimento especial para facilitar a difusão AEM (como o uso da `cq:text` `DiffService` tag lib ou a integração personalizada do serviço OSGi nos componentes). Isso não é mais necessário para o novo recurso diff, pois o diff ocorre no cliente por meio da comparação DOM.
 
 No entanto, há várias limitações que precisam ser consideradas pelo desenvolvedor.
 
-* Esse recurso usa classes CSS que não têm o nome espaçado para o produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diff poderá ser afetada.
+* Este recurso usa classes CSS que não têm nomes espaçados para o Produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diff pode ser afetada.
 
    * `html-added`
    * `html-removed`
