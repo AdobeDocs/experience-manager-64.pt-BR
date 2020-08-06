@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 19%
 
 ---
 
 
 # Naming Conventions{#naming-conventions}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o AEM impõe outras convenções para o nome dos nós de página.
+Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). No entanto, AEM impõem outras convenções para o nome dos nós de página.
 
 ## Convenções de nomenclatura para páginas {#naming-conventions-for-pages}
 
 Essas convenções de nomenclatura são implementadas em vários níveis:
 
-* JcrUtil: a implementação do AEM dos utilitários [do](#jcr-utilities)JCR.
+* JcrUtil: a implementação AEM dos serviços de [JCR](#jcr-utilities).
 * PageManager: o [Page Manager](#page-manager) fornece métodos para operações de nível de página.
 * De acordo com a interface que está sendo usada:
 
@@ -42,7 +45,7 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 * `createValidName`
 
    * Isso cria um rótulo válido a partir de uma string arbitrária.
-   * Pode ser usado para criar um nome a partir de um título.
+   * Ele pode ser usado para criar um nome a partir de um título.
 
 ### Gerenciador de páginas {#page-manager}
 
