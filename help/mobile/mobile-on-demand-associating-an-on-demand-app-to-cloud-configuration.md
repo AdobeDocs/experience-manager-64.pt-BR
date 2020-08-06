@@ -1,8 +1,8 @@
 ---
 title: Configuração na nuvem
 seo-title: Configuração na nuvem
-description: Associar um aplicativo sob demanda a uma configuração na nuvem permite que o Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado sob demanda móvel estabelecendo um link bidirecional. Siga esta página para saber mais.
-seo-description: Associar um aplicativo sob demanda a uma configuração na nuvem permite que o Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado sob demanda móvel estabelecendo um link bidirecional. Siga esta página para saber mais.
+description: Associar um aplicativo sob demanda a uma configuração na nuvem permite que a Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado no Mobile On-Demand estabelecendo um link bidirecional. Siga esta página para saber mais.
+seo-description: Associar um aplicativo sob demanda a uma configuração na nuvem permite que a Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado no Mobile On-Demand estabelecendo um link bidirecional. Siga esta página para saber mais.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 2%
 
 ---
 
@@ -19,31 +22,31 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Associar um aplicativo sob demanda a uma configuração na nuvem permite que o Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado sob demanda móvel estabelecendo um link bidirecional. Ao vincular seu aplicativo a um projeto Mobile On-Demand, você poderá realizar a criação de conteúdo, como artigos, banners e coleções no AEM, mas também fornecer esse conteúdo para Mobile On-Demand.
+Associar um aplicativo sob demanda a uma configuração na nuvem permite que a Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado no Mobile On-Demand estabelecendo um link bidirecional. Ao vincular seu aplicativo a um projeto Mobile On-Demand, você poderá realizar a criação de conteúdo, como artigos, banners e coleções no AEM, mas também fornecer esse conteúdo para Mobile On-Demand.
 
-Daí, a publicação, visualização e gerenciamento de conteúdo se torna possível. Também é possível importar conteúdo Mobile On-Demand existente para o AEM e realizar a edição de conteúdo.
+Daí, a publicação, visualização e gerenciamento de conteúdo se torna possível. Também é possível importar conteúdo Mobile On-Demand existente para AEM e realizar a edição de conteúdo.
 
-## Configuração da Cloud {#setting-up-cloud-configuration}
+## Configuração da nuvem de configuração {#setting-up-cloud-configuration}
 
 >[!CAUTION]
 >
->Antes de começar a configurar a configuração em nuvem para seu aplicativo sob demanda, você deve estar familiarizado com o AEM Mobile Provisioning e a configurar o cliente de serviços sob demanda do AEM Mobile.
+>Antes de configurar a configuração em nuvem para seu aplicativo sob demanda, você deve estar familiarizado com o AEM Mobile Provisioning e a configuração do AEM Mobile On-demand Services Client.
 >
->Para obter detalhes, consulte [Configuração dos serviços](/help/mobile/aem-mobile-setup.md) sob demanda do AEM Mobile na seção Administração.
+>Para obter detalhes, consulte [Configuração do AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) na seção Administração.
 
-Para configurar Mobile On-Demand Cloud Services, clique na engrenagem superior no canto superior direito do bloco **Gerenciar conexão** no painel do aplicativo.
+Para configurar Cloud Services Mobile On-Demand, clique na engrenagem superior no canto superior direito do bloco **Gerenciar conexão** do painel do aplicativo.
 
-Familiarize-se com o painel do aplicativo e os blocos disponíveis. Consulte Painel [de aplicativos do](/help/mobile/mobile-apps-ondemand-application-dashboard.md) AEM Mobile para obter mais detalhes.
+Familiarize-se com o painel do aplicativo e os blocos disponíveis. Consulte Painel [do aplicativo](/help/mobile/mobile-apps-ondemand-application-dashboard.md) AEM Mobile para obter mais detalhes.
 
 ### Configuração do link para a configuração na nuvem {#setting-up-link-to-cloud-configuration}
 
 >[!CAUTION]
 >
->Verifique se você tem uma configuração de cliente e nuvem sob demanda existente.
+>Certifique-se de ter uma configuração de cliente e nuvem sob demanda existente.
 >
->Para obter detalhes, consulte [Configuração dos serviços](/help/mobile/aem-mobile-setup.md) sob demanda do AEM Mobile na seção Administração.
+>Para obter detalhes, consulte [Configuração do AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) na seção Administração.
 
 As etapas a seguir descrevem como configurar o link para a configuração da nuvem:
 
@@ -68,13 +71,13 @@ As etapas a seguir descrevem como configurar o link para a configuração da nuv
 
    >[!CAUTION]
    >
-   >Se tentar alterar o projeto ao qual este aplicativo está associado, ao mudar de projeto no painel, você receberá um aviso sobre problemas de integridade de conteúdo, como mostrado na figura abaixo:
+   >Se tentar alterar o projeto ao qual este aplicativo está associado, ao mudar o projeto no painel, você receberá um aviso sobre problemas de integridade do conteúdo, como mostrado na figura abaixo:
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ### Próximas etapas {#the-next-steps}
 
-Depois de configurar a configuração em nuvem para o aplicativo, consulte os seguintes recursos para gerenciar conteúdo:
+Depois de configurar a configuração em nuvem para o aplicativo, consulte os seguintes recursos para gerenciar o conteúdo:
 
 * [Gerenciamento de artigos](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)
