@@ -1,8 +1,8 @@
 ---
 title: Emuladores
 seo-title: Emuladores
-description: O AEM permite que os autores visualizem uma página em um emulador que simula o ambiente no qual um usuário final visualizará a página
-seo-description: O AEM permite que os autores visualizem uma página em um emulador que simula o ambiente no qual um usuário final visualizará a página
+description: AEM permite que os autores visualizações uma página em um emulador que simula o ambiente no qual um usuário final visualização a página
+seo-description: AEM permite que os autores visualizações uma página em um emulador que simula o ambiente no qual um usuário final visualização a página
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -20,11 +23,11 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O Adobe Experience Manager (AEM) permite que os autores visualizem uma página em um emulador que simula o ambiente no qual um usuário final visualizará a página, por exemplo, em um dispositivo móvel ou em um cliente de email.
+O Adobe Experience Manager (AEM) permite que os autores visualizações uma página em um emulador que simula o ambiente no qual um usuário final visualização a página, como, por exemplo, em um dispositivo móvel ou em um cliente de email.
 
-A estrutura do emulador do AEM:
+A estrutura do emulador de AEM:
 
 * Fornece a criação de conteúdo em uma interface de usuário (UI) simulada, por exemplo, um dispositivo móvel ou um cliente de email (usado para criar boletins informativos).
 * Adapta o conteúdo da página de acordo com a interface simulada.
@@ -60,7 +63,7 @@ O emulador funciona vinculando o conteúdo do corpo HTML em DIVs do emulador. Po
 </body>
 ```
 
-é transformado no seguinte código html após o início do emulador:
+é transformado no seguinte código html após o start do emulador:
 
 ```xml
 <body>
@@ -91,9 +94,9 @@ Duas tags div foram adicionadas:
 
 * a div com a ID que representa a `cq-emulator-content` janela de visualização/tela/área de conteúdo do dispositivo na qual o conteúdo da página reside.
 
-Novas classes CSS também são atribuídas aos novos divs do emulador: representam o nome do emulador atual.
+As novas classes CSS também são atribuídas aos novos divs do emulador: representam o nome do emulador atual.
 
-Os plug-ins de um emulador podem estender ainda mais a lista de classes CSS atribuídas, como no exemplo do plug-in de rotação, inserindo uma classe &quot;vertical&quot; ou &quot;horizontal&quot; dependendo da rotação atual do dispositivo.
+Os plug-ins de um emulador podem estender ainda mais a lista das classes CSS atribuídas, como no exemplo do plug-in de rotação, inserindo uma classe &quot;vertical&quot; ou &quot;horizontal&quot; dependendo da rotação atual do dispositivo.
 
 Dessa forma, a aparência completa do emulador pode ser controlada por ter classes CSS correspondentes às classes IDs e CSS do emulador divs.
 
@@ -129,7 +132,7 @@ Quando o componente de página depende do componente de página móvel ( `/libs/
 
       `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
-#### Criando um emulador móvel personalizado {#creating-a-custom-mobile-emulator}
+#### Criação de um emulador móvel personalizado {#creating-a-custom-mobile-emulator}
 
 Para criar um emulador móvel personalizado:
 
@@ -150,5 +153,6 @@ Para criar um emulador móvel personalizado:
    * Nome = `canRotate`, Tipo = `Boolean`, Valor = `true`: para incluir a funcionalidade de rotação.
 
    * Nome = `touchScrolling`, Tipo = `Boolean`, Valor = `true`: para incluir a funcionalidade de rolagem de toque.
+
    É possível adicionar mais funcionalidades definindo seus próprios plug-ins.
 
