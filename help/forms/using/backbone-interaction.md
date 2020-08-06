@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Alguns conceitos-chave são os seguintes:
 
 **Modelo** HTML Um modelo de invólucro que tem espaços reservados preenchidos pelo modelo.
 
-**Área de trabalho** do AEM Forms Contém vários componentes individuais. Cada componente:
+**A área de trabalho** do AEM Forms contém vários componentes individuais. Cada componente:
 
 * Representa um único elemento lógico da interface do usuário.
 * Pode ser uma coleção de componentes semelhantes.
@@ -50,8 +53,8 @@ Um exemplo:
 
 1. O usuário clica em um modelo de tarefa na lista de tarefa.
 1. A visualização de Tarefa escuta o clique e chama a função de renderização no modelo de tarefa.
-1. Posteriormente, o modelo de Tarefa chama o serviço, que é um ponto comum para todas as comunicações com o servidor de formulários AEM.
-1. A classe de serviço chama o terminal REST do AEM Forms para método de renderização via ajax.
+1. O modelo de Tarefa chama subsequentemente o serviço, que é um ponto comum para toda a comunicação com o servidor AEM Forms.
+1. A classe Service chama o terminal REST do AEM Forms para método de renderização via ajax.
 1. O retorno de sucesso para esta invocação Ajax é definido no modelo de tarefa.
 1. O modelo de Tarefa gera um evento de backbone como uma notificação de conclusão da chamada de renderização.
 1. Outra visualização, a visualização de detalhes da tarefa escuta esse evento do modelo de tarefa.
