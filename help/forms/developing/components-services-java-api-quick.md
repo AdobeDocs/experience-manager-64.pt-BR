@@ -34,7 +34,7 @@ O SOAP (Java API Quick Start) está disponível para componentes e serviços.
 
 [Start rápido (modo SOAP): Remoção de componentes usando a API Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 >[!NOTE]
 >
->start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms que está sendo implantado no JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms que está sendo implantado em JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 >[!NOTE]
 >
