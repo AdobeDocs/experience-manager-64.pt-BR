@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 As bibliotecas de tags Granite, CQ e Sling fornecem acesso a funções específicas para uso no script JSP dos seus modelos e componentes.
 
-## Biblioteca de tags Granite {#granite-tag-library}
+## Biblioteca de tags do Granite {#granite-tag-library}
 
 A biblioteca de tags Granite contém funções úteis.
 
@@ -37,23 +40,23 @@ O global também declara a biblioteca [](/help/sites-developing/taglib.md#sling-
 
 ### <ui:includeClientLib> {#ui-includeclientlib}
 
-A `<ui:includeClientLib>` tag Inclui uma biblioteca de cliente html do AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no jsp. Esta tag é um invólucro de conveniência em torno da interface de ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` serviço.
+A `<ui:includeClientLib>` tag Inclui uma biblioteca de cliente html AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no jsp. Esta tag é um invólucro de conveniência em torno da interface de ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` serviço.
 
 Ele tem os seguintes atributos:
 
-**categorias** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias especificadas. O nome do tema é extraído da solicitação.
+**categoria** - uma lista de categorias de biblioteca de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias em questão. O nome do tema é extraído da solicitação.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**tema** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias especificadas. O nome do tema é extraído da solicitação.
+**tema** - Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias em questão. O nome do tema é extraído da solicitação.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript para as categorias especificadas.
+**js** - uma lista de categorias de biblioteca de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas do Javascript para as categorias em questão.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias especificadas.
+**css** - uma lista de categorias de biblioteca de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias em questão.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
@@ -79,7 +82,7 @@ A `<ui:includeClientLib>` tag pode ser usada como segue em um jsp:
 
 A biblioteca de tags do CQ contém funções úteis.
 
-Para usar a Biblioteca de tags do CQ em seu script, o script deve começar com o seguinte código:
+Para usar a Biblioteca de tags do CQ em seu script, o script deve ser start com o seguinte código:
 
 ```xml
 <%@taglib prefix="cq" uri="https://www.day.com/taglibs/cq/1.0" %>
@@ -123,7 +126,7 @@ Ele tem os seguintes atributos opcionais:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
-**default** - Valor padrão a ser usado para texto nulo ou vazio. Observe que a verificação padrão é realizada após a formatação opcional e a saída, isto é, é gravada como está na saída.
+**default** - Valor padrão a ser usado para texto nulo ou vazio. Observe que a verificação padrão é executada após a formatação opcional e a saída, isto é, ela é gravada como está na saída.
 
 Alguns exemplos de como a `<cq:text>` tag pode ser usada em um JSP:
 
@@ -157,13 +160,13 @@ Alguns exemplos de como a `<cq:text>` tag pode ser usada em um JSP:
 
 ### <cq:setContentBundle> {#cq-setcontentbundle}
 
-A `<cq:setContentBundle>` tag cria um contexto de localização do i18n e o armazena na variável de `javax.servlet.jsp.jstl.fmt.localizationContext` configuração.
+A `<cq:setContentBundle>` tag cria um contexto de localização i18n e o armazena na variável de `javax.servlet.jsp.jstl.fmt.localizationContext` configuração.
 
 Ele tem os seguintes atributos:
 
 **idioma** - o idioma da localidade para a qual recuperar o conjunto de recursos.
 
-**source** - a fonte de onde a localidade deve ser retirada. Pode ser definido como um dos seguintes valores:
+**source** - a fonte de onde a localidade deve ser retirada. Ele pode ser definido como um dos seguintes valores:
 
 * **static** - a localidade é retirada do `language` atributo, se disponível, caso contrário, da localidade padrão do servidor.
 
@@ -171,13 +174,13 @@ Ele tem os seguintes atributos:
 
 * **request** - a localidade é retirada da localidade da solicitação ( `request.getLocale()`).
 
-* **auto** - a localidade é retirada do `language` atributo, se disponível, caso contrário, do idioma da página ou recurso atual, se disponível, caso contrário, da solicitação.
+* **auto** - a localidade é retirada do `language` atributo, se disponível, caso contrário, do idioma da página atual ou do recurso, se disponível, caso contrário, da solicitação.
 
 Se o `source` atributo não estiver definido:
 
 * Se o `language` atributo estiver definido, o `source` atributo assumirá &quot; `static`.
 
-* Se o `language` atributo não estiver definido, o `source` atributo assumirá `auto`.
+* Se o `language` atributo não estiver definido, o `source` atributo assumirá o padrão `auto`.
 
 O &quot;pacote de conteúdo&quot; pode ser usado simplesmente por `<fmt:message>` tags JSTL padrão. A consulta das mensagens por chaves é dupla:
 
@@ -210,7 +213,7 @@ Ele tem os seguintes atributos:
 
 **descarga**
 
-* Um booliano que define se a saída deve ser despachada antes de incluir a meta.
+* Um booliano que define se deve liberar a saída antes de incluir o público alvo.
 
 **path**
 
@@ -249,32 +252,32 @@ Você deve usar `<%@ include file="myScript.jsp" %>` ou `<cq:include script="myS
 
 Você deveria usar `<cq:include>` ou `<sling:include>`?
 
-* Ao desenvolver componentes do AEM, a Adobe recomenda que você use `<cq:include>`.
+* Ao desenvolver componentes AEM, o Adobe recomenda que você use `<cq:include>`.
 * `<cq:include>` permite que você inclua diretamente os arquivos de script pelo seu nome ao usar o atributo de script. Isso leva em conta a herança do tipo de componente e recurso, e geralmente é mais simples do que a estrita adesão à resolução do script do Sling usando seletores e extensões.
 
 ### <cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` foi substituída desde o AEM 5.6. Em vez disso, [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) deve ser utilizado.
+>`<cq:includeClientLib>` está obsoleto desde AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) deve ser usada em vez disso.
 
-A `<cq:includeClientLib>` tag Inclui uma biblioteca de cliente html do AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no jsp. Esta tag é um invólucro de conveniência em torno da interface de `com.day.cq.widget.HtmlLibraryManager` serviço.
+A `<cq:includeClientLib>` tag Inclui uma biblioteca de cliente html AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no jsp. Esta tag é um invólucro de conveniência em torno da interface de `com.day.cq.widget.HtmlLibraryManager` serviço.
 
 Ele tem os seguintes atributos:
 
-**categorias** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias especificadas. O nome do tema é extraído da solicitação.
+**categoria** - uma lista de categorias de biblioteca de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias em questão. O nome do tema é extraído da solicitação.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**tema** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias especificadas. O nome do tema é extraído da solicitação.
+**tema** - Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias em questão. O nome do tema é extraído da solicitação.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript para as categorias especificadas.
+**js** - uma lista de categorias de biblioteca de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas do Javascript para as categorias em questão.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** - uma lista de categorias de lib de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias especificadas.
+**css** - uma lista de categorias de biblioteca de cliente separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias em questão.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
@@ -306,7 +309,7 @@ A `<cq:defineObjects>` tag expõe os seguintes objetos de script, usados regular
 
 **componente**
 
-* o objeto do componente AEM atual do recurso atual (com.day.cq.wcm.api.components.Component interface).
+* o objeto AEM componente atual do recurso atual (com.day.cq.wcm.api.components.Component interface).
 
 **currentDesign**
 
@@ -500,7 +503,7 @@ Exemplo:
 
 A biblioteca de tags Sling contém funções Sling úteis.
 
-Ao usar a Biblioteca de tags do Sling em seu script, o script deve começar com o seguinte código:
+Quando você usa a Biblioteca de tags Sling em seu script, o script deve ser start com o seguinte código:
 
 ```xml
 <%@ taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0" %>
@@ -518,7 +521,7 @@ Ele tem os seguintes atributos:
 
 **descarga**
 
-* Um booliano que define se a saída deve ser despachada antes de incluir a meta.
+* Um booliano que define se deve liberar a saída antes de incluir o público alvo.
 
 **recurso**
 
