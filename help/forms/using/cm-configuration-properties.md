@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 3%
 
 ---
 
@@ -48,25 +51,25 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr> 
   <tr> 
    <td>Tipo de representação</td> 
-   <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a visualização da carta. </td> 
+   <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a pré-visualização da carta. </td> 
    <td>Representação HTML</td> 
    <td>Representação HTML / representação de PDF</td> 
   </tr> 
   <tr> 
    <td><p>Ativar destaque do CCR PDF</p> </td> 
-   <td><p>Permite destacar PDF no aplicativo Criar correspondência</p> </td> 
+   <td><p>Permite destacar em PDF no aplicativo Criar correspondência</p> </td> 
    <td><p>verdadeiro</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Tipo de Destaque do Target</p> </td> 
-   <td><p>Tipo de destaque do Target no aplicativo Criar correspondência</p> </td> 
+   <td><p>Tipo de realce do Público alvo</p> </td> 
+   <td><p>Tipo de realce do Público alvo no aplicativo Criar correspondência</p> </td> 
    <td><p>border</p> </td> 
    <td><p>borda / preenchimento / nenhum</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Cor de realce do Target</p> </td> 
-   <td><p>Cor de realce do Target no aplicativo Criar correspondência</p> </td> 
+   <td><p>Cor de realce do Público alvo</p> </td> 
+   <td><p>Cor de realce do Público alvo no aplicativo Criar correspondência</p> </td> 
    <td><p>90;155;245</p> </td> 
    <td><p>Qualquer cor RGB no formato R;G;B</p> </td> 
   </tr> 
@@ -102,7 +105,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr> 
   <tr> 
    <td><p>Nome do parâmetro do documento PDF</p> </td> 
-   <td><p>Nome do parâmetro para documento PDF em pós-processo</p> </td> 
+   <td><p>Nome do parâmetro para documento PDF no pós-processo</p> </td> 
    <td><p>inPDFDoc</p> </td> 
    <td><p>Qualquer nome de variável de string</p> </td> 
   </tr> 
@@ -114,7 +117,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr> 
   <tr> 
    <td><p>Nome do parâmetro do documento XDP</p> </td> 
-   <td><p>Nome do parâmetro para documento XDP enviado ao processo de publicação</p> </td> 
+   <td><p>Nome do parâmetro para o documento XDP enviado para o processo de publicação</p> </td> 
    <td><p>inXDPDoc</p> </td> 
    <td><p>Qualquer nome de variável de string</p> </td> 
   </tr> 
@@ -168,7 +171,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr> 
   <tr> 
    <td><p>Ativar auditoria</p> </td> 
-   <td><p>Ativar/desativar a funcionalidade de auditoria. Quando falso, os logs de auditoria de todas as ações serão desativados</p> </td> 
+   <td><p>Ativar/Desativar a funcionalidade de auditoria. Quando falso, os logs de auditoria de todas as ações serão desativados</p> </td> 
    <td><p>falso</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -227,14 +230,14 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>true / false</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Ativar auditoria de entrega personalizada</p> </td> 
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para entrega personalizada de cartas</p> </td> 
+   <td><p>Ativar auditoria de Delivery personalizados</p> </td> 
+   <td><p>Ativar/Desativar a funcionalidade de auditoria para delivery personalizado de letras</p> </td> 
    <td><p>falso</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Nome do parâmetro de documentos anexos</p> </td> 
-   <td><p>Nome do parâmetro para documentos do anexo enviados para o processo de publicação</p> </td> 
+   <td><p>Nome do parâmetro documentos de anexo</p> </td> 
+   <td><p>Nome do parâmetro para documentos de anexo enviados para o processo de publicação</p> </td> 
    <td><p>inAttachmentDocs</p> </td> 
    <td><p>Qualquer nome de variável de string</p> </td> 
   </tr> 
@@ -258,13 +261,13 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr> 
   <tr> 
    <td><p>Pedidos de elementos de dados</p> </td> 
-   <td><p>Mantém os elementos de dados ordenando na criação da interface de correspondência conforme sua sequência em Carta</p> </td> 
+   <td><p>Mantém os elementos de dados ordenando na criação da interface de correspondência de acordo com sua sequência em Carta</p> </td> 
    <td><p>verdadeiro</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Recarregar suporte</p> </td> 
-   <td><p>Ative/desative o suporte para recarregamento em letras renderizadas no lado do servidor.</p> <p>Desativar isso melhorará o desempenho da renderização de letras.</p> </td> 
+   <td><p>Recarregamento de suporte</p> </td> 
+   <td><p>Ative/desative o suporte para recarregamento em letras renderizadas no lado do servidor.</p> <p>Desabilitar isso melhorará o desempenho da renderização de letras.</p> </td> 
    <td><p>falso</p> </td> 
    <td><p>true / false</p> <p> </p> </td> 
   </tr> 
