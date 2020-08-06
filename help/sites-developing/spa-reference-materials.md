@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: c3a81baa-98b0-40b4-bd34-f39e8491acca
 translation-type: tm+mt
 source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 4%
 
 ---
 
 
 # Referências da API Javascript do SPA{#spa-javascript-api-references}
 
-Veja a seguir as referências disponíveis da API JavaScript dos módulos NPM para a estrutura SDK do editor SPA do AEM.
+Veja a seguir as referências da API JavaScript disponíveis dos módulos NPM para a estrutura SDK do Editor SPA AEM.
 
 >[!NOTE]
->O recurso Editor de aplicativo de página única (SPA) exige o Service Pack 2 [do](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) AEM 6.4 ou mais recente.
+>O recurso Editor de aplicativo de página única (SPA) requer [AEM 6.4 service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) ou mais recente.
 >
 >O Editor SPA é a solução recomendada para projetos que exigem renderização do lado do cliente baseada em estrutura SPA (por exemplo, Reagir ou Angular).
 
