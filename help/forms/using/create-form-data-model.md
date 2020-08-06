@@ -25,9 +25,9 @@ Este tutorial é uma etapa da série [Criar seu primeiro formulário](/help/form
 
 ## Sobre o tutorial {#about-the-tutorial}
 
-O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de backend, como perfil de usuário do AEM, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. É possível configurar objetos e serviços de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Campos de formulário adaptáveis são vinculados às propriedades de objetos de modelo de dados. Os serviços permitem que você preencha previamente o formulário adaptável e grave os dados de formulário enviados de volta para o objeto de modelo de dados.
+O módulo de integração de dados da AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de backend, como AEM perfil do usuário, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. É possível configurar objetos e serviços de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Campos de formulário adaptáveis são vinculados às propriedades de objetos de modelo de dados. Os serviços permitem que você preencha previamente o formulário adaptável e grave os dados de formulário enviados de volta para o objeto de modelo de dados.
 
-Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
 
 Este tutorial o orienta pelas etapas para preparar, criar, configurar e associar um modelo de dados de formulário a um formulário adaptável. No final deste tutorial, você poderá:
 
@@ -52,13 +52,13 @@ Antes de começar, verifique se você tem o seguinte:
 
 ## Etapa 1: Configurar o banco de dados MySQL como fonte de dados {#config-database}
 
-Você pode configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, configuraremos o banco de dados MySQL que você configurou e preencheu com dados de amostra. Para obter informações sobre outras fontes de dados compatíveis e como configurá-las, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
+Você pode configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, configuraremos o banco de dados MySQL que você configurou e preencheu com dados de amostra. Para obter informações sobre outras fontes de dados compatíveis e como configurá-las, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
 
 Faça o seguinte para configurar seu banco de dados MySQL:
 
 1. Instale o driver JDBC para o banco de dados MySQL como um pacote OSGi:
 
-   1. Faça logon na instância de autor do AEM Forms como administrador e vá para pacotes de console da Web do AEM. O URL padrão é [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+   1. Faça logon na Instância de autor da AEM Forms como administrador e vá para AEM pacotes de console da Web. O URL padrão é [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
    1. Toque em **Instalar/atualizar**. Uma caixa de diálogo **Carregar / Instalar pacotes** é exibida.
 
@@ -66,7 +66,7 @@ Faça o seguinte para configurar seu banco de dados MySQL:
 
 1. Configure o banco de dados MySQL como uma fonte de dados:
 
-   1. Vá para o console da Web do AEM em [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+   1. Vá para AEM console da Web em [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
    1. Localize a configuração **Apache Sling Connection Pooling DataSource** . Toque em para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
@@ -88,11 +88,11 @@ Faça o seguinte para configurar seu banco de dados MySQL:
 
 ## Step 2: Create form data model {#create-fdm}
 
-O AEM Forms fornece uma interface de usuário intuitiva para [criar um modelo](data-integration.md) de dados de formulário a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Em nosso caso de uso, usaremos a fonte de dados MySQL configurada.
+A AEM Forms fornece uma interface de usuário intuitiva para [criar um modelo](data-integration.md) de dados de formulário a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Em nosso caso de uso, usaremos a fonte de dados MySQL configurada.
 
 Faça o seguinte para criar um modelo de dados de formulário:
 
-1. Na instância do autor de AEM, navegue até **Forms** > **Data** Integrations.
+1. Em AEM instância do autor, navegue até **Forms** > **Integrações de** dados.
 1. Tap **Create** >  **Form Data Model**.
 1. Na caixa de diálogo Criar modelo de dados de formulário, especifique um **nome** para o modelo de dados de formulário. Por exemplo, detalhes **de faturamento de entrega de** clientes. Toque em **Avançar**.
 1. A tela da fonte de dados selecionada lista todas as fontes de dados configuradas. Selecione a fonte de dados **WeRetailMySQL** e toque em **Criar**.
@@ -110,7 +110,7 @@ A configuração do modelo de dados de formulário envolve:
 
 Faça o seguinte para configurar o modelo de dados de formulário:
 
-1. Na instância do autor de AEM, navegue até **Formulários > Integrações** de dados. O URL padrão é [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Em AEM instância do autor, navegue até **Forms > Integrações** de dados. O URL padrão é [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. O modelo de dados do formulário de detalhes **de faturamento de entrega do** cliente criado anteriormente está listado aqui. Abra-o no modo de edição.
 
    A fonte de dados selecionada **WeRetailMySQL** está configurada no modelo de dados de formulário.
