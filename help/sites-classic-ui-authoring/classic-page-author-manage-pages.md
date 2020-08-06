@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 84%
 
 ---
 
@@ -38,7 +41,7 @@ A estrutura de um site pode ser considerada como uma *estrutura em árvore* que 
 
 The following shows an extract from the Geometrixx site; where, for example, the `Triangle` page will be accessed:
 
-* Ambiente do autor
+* ambiente do autor
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -204,7 +207,7 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
 
 * Depois de ter aberto uma página, você pode navegar para outras páginas dentro do site (para editá-las) clicando nos hyperlinks.
 
-### Copiar e colar uma página  {#copying-and-pasting-a-page}
+### Copiar e colar uma página      {#copying-and-pasting-a-page}
 
 Ao copiar, você pode copiar:
 
@@ -223,6 +226,7 @@ Ao copiar, você pode copiar:
 
    * **Colar** - para colar a página com todas as subpáginas
    * **Shift + Colar** - para colar apenas a página selecionada 
+
    As páginas são coladas no novo local.
 
    >[!NOTE]
@@ -279,7 +283,7 @@ Para mover ou renomear uma página:
 
    * **Ajustar**
 
-      Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tem links para a página B, o AEM ajusta os links na página A caso você mova a página B.
+      Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tem links para a página B, AEM os links na página A caso você mova a página B.
 
       Isso pode ser selecionado/desmarcado para cada página de referência individual.
 
