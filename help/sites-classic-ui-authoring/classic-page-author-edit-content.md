@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +46,7 @@ Há várias guias e ícones disponíveis, incluindo:
 * ClientContext
 * Sites
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+![chlimage_1-181](assets/chlimage_1-101.png)
 
 Fornecem acesso a uma ampla seleção de funcionalidade; incluindo:
 
@@ -74,6 +77,7 @@ Para inserir um novo componente:
    * Clique duas vezes na área denominada **Arraste aqui os componentes ou ativos...** - a barra de ferramentas **Inserir um novo componente** abrirá. Selecione um componente e clique em **OK**.
    * Arraste um componente da barra de ferramentas flutuante (chamado sidekick) para inserir um novo parágrafo.
    * Clique com o botão direito do mouse em um parágrafo existente e selecione **Novo** - a barra de ferramentas Inserir um novo componente abrirá. Selecione um componente e clique em **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. No sidekick e na barra de ferramentas **Inserir um novo componente** é possível visualizar uma lista dos componentes disponíveis (tipos parágrafo). Essas listas podem ser divididas em várias seções (por exemplo, geral, colunas, etc.), que podem ser expandidas quando necessário.
@@ -182,9 +186,11 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
    Caso um componente seja parte de uma live-copy ou lançamento, o mesmo é indicado por um ícone de cadeado. Você pode clicar no cadeado para cancelar a herança.
 
    * O ícone de cadeado é apresentado quando o componente é selecionado, por exemplo:
+
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
    * O cadeado também é exibido na caixa de diálogo de componentes, por exemplo:
+
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. **Um sistema de parágrafo herdado**
@@ -197,7 +203,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
 
 [As anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitem que outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas  {#previewing-pages}
+## Visualizar páginas   {#previewing-pages}
 
 Há dois ícones na borda inferior do sidekick que são importantes para a visualização das páginas:
 
@@ -279,6 +285,7 @@ O comportamento dos comandos desfazer e refazer é semelhante à de outros progr
 >* refazer ações, contanto que não tenha feito uma edição de página desde que usou o comando desfazer.
 >* desfazer um máximo de 20 ações de edição (configuração padrão).
 >* use também os [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para desfazer e refazer.
+
 >
 
 
