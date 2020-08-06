@@ -31,19 +31,19 @@ Você pode usar a interface do usuário da pasta assistida para:
 
 Antes de configurar uma pasta assistida, verifique o seguinte:
 
-* Pastas assistidas é um recurso avançado de formulários AEM. Requer que o pacote complementar de formulários AEM funcione. Verifique se o pacote complementar AEM Forms apropriado está instalado e configurado.
-* Você pode criar a pasta assistida em um armazenamento local ou compartilhado. Verifique se o usuário dos formulários AEM configurado para executar a pasta assistida tem permissões de leitura e gravação na pasta assistida.
+* Pastas assistidas é um recurso avançado de formulários AEM. É necessário AEM pacote complementar de formulários para funcionar. Verifique se o pacote complementar AEM Forms apropriado está instalado e configurado.
+* Você pode criar a pasta assistida em um armazenamento local ou compartilhado. Certifique-se de que AEM usuário de formulários configurado para executar a pasta assistida tenha permissões de leitura e gravação na pasta assistida.
 * Você pode usar um Serviço, Fluxo de trabalho ou um Script para automatizar uma operação com uma pasta assistida. Certifique-se de que o Serviço, o Fluxo de Trabalho ou um Script correspondente foi criado e está pronto para ser executado. Para obter informações sobre como criar um Serviço, Fluxo de trabalho e Script, consulte [Vários métodos de processamento de arquivos](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Uma pasta assistida tem várias propriedades, consulte Propriedades [da pasta](/help/forms/using/watched-folder-in-aem-forms.md#watchedfolderproperties)assistida.
 
 Execute as seguintes etapas para criar uma pasta assistida:
 
-1. Toque no ícone **do Adobe Experience Manager** no canto superior esquerdo da tela.
-1. Toque em **Ferramentas** > **Formulários** > **Configurar pasta assistida.** Uma lista de pastas monitoradas já configuradas é exibida.
+1. Toque no ícone do **Adobe Experience Manager** no canto superior esquerdo da tela.
+1. Toque em **Ferramentas** > **Forms** > **Configurar pasta assistida.** Uma lista de pastas monitoradas já configuradas é exibida.
 1. Toque em **Novo**. Uma lista de campos necessários para criar a pasta assistida é exibida:
 
    * **Nome**: Identifica a pasta assistida. Use somente caracteres alfanuméricos para o nome.
-   * **Caminho**: Especifica o local da pasta monitorada. Em um ambiente clusterizado, essa configuração deve apontar para uma pasta de rede compartilhada acessível a todos os usuários que executam o AEM em diferentes nós de um cluster.
+   * **Caminho**: Especifica o local da pasta monitorada. Em um ambiente clusterizado, essa configuração deve apontar para uma pasta de rede compartilhada acessível a todos os usuários que executam AEM em diferentes nós de um cluster.
    * **Processar arquivos usando**: O tipo do processo a ser start. Você pode especificar fluxo de trabalho, script ou serviço.
    * **Nome do serviço/Caminho do script/Caminho** do fluxo de trabalho: O comportamento do campo se baseia no valor especificado para o campo **Processar arquivos usando** . Você pode especificar os seguintes valores:
 
@@ -106,7 +106,7 @@ Execute as seguintes etapas para criar uma pasta assistida:
 
       Se o intervalo de digitalização for pequeno, os threads normalmente digitalizam a pasta de entrada. Se os arquivos forem descartados com frequência na pasta assistida, mantenha o intervalo de verificação pequeno. Se os arquivos forem descartados com pouca frequência, use um intervalo de verificação maior para que os outros serviços possam usar os threads.
 
-   * **Acender:** Quando essa opção está ativada, ela limita o número de trabalhos de pasta monitorados que os formulários AEM processam a qualquer momento. O valor Tamanho do Lote determina o número máximo de trabalhos. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
+   * **Acender:** Quando essa opção está ativada, ela limita o número de trabalhos de pasta observados que AEM processos de formulários em um determinado momento. O valor Tamanho do Lote determina o número máximo de trabalhos. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
    * **Substituir Arquivos Existentes Por Nome** Semelhante: Quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como Falso, arquivos e pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
    * **Preservar arquivos na falha:** Quando definido como Verdadeiro, os arquivos de entrada são preservados em caso de falha. O valor padrão é true.
    * **Incluir arquivos com padrão:** Especifique uma lista de padrões delimitada por ponto-e-vírgula (;) que a pasta assistida usa para determinar quais pastas e arquivos serão examinados e coletados. Por exemplo, se Incluir padrão de arquivo for input&amp;ast;, todos os arquivos e pastas que correspondem input&amp;ast; são apanhados. Para obter mais informações, consulte Ajuda [da administração](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
@@ -120,7 +120,7 @@ Execute as seguintes etapas para criar uma pasta assistida:
 Além de alterar o nome da pasta assistida, você pode modificar todas as propriedades de uma pasta assistida existente. Execute as seguintes etapas para modificar as propriedades de uma pasta assistida existente:
 
 1. Toque no ícone do **Adobe Experience Manager** no canto superior esquerdo da tela.
-1. Toque em **Ferramentas** > **Formulários** > **Configurar pasta assistida.** Uma lista de pastas monitoradas já configuradas é exibida.
+1. Toque em **Ferramentas** > **Forms** > **Configurar pasta assistida.** Uma lista de pastas monitoradas já configuradas é exibida.
 1. No lado esquerdo da tela Pasta assistida, selecione a pasta de observação e toque em **Editar.** Uma lista de campos necessários para criar a pasta assistida é exibida. Os campos listados na guia **Básico** são obrigatórios. A guia avançada contém mais campos. A maioria desses campos contém um valor padrão. É possível modificar essas propriedades de acordo com suas necessidades.
 1. Depois de modificar as propriedades, toque em **Atualizar**. As propriedades modificadas são salvas.
 
