@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 11%
 
 ---
 
@@ -25,9 +28,9 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
 
 >[!NOTE]
 >
->A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo de entrega para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagens [inteligentes](imaging-faq.md) para obter mais informações.
+>A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagens [inteligentes](imaging-faq.md) para obter mais informações.
 
-É possível aplicar uma predefinição de imagem a uma imagem sempre que ela for visualizada.
+É possível aplicar uma predefinição de imagem a uma imagem sempre que ela for pré-visualização.
 
 **Para aplicar predefinições** de imagem do Dynamic Media:
 
@@ -45,11 +48,12 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
 
 1. Siga um destes procedimentos:
 
-   * Selecione uma representação dinâmica para visualizar a predefinição de imagem.
+   * Selecione uma representação dinâmica para pré-visualização a predefinição de imagem.
    * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+
    >[!NOTE]
    >
    >Se o ativo *e* a predefinição de imagem ainda não forem publicados, o botão **[!UICONTROL URL]** (ou os botões **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se aplicável) não estarão disponíveis.
    >
-   >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor Dynamic Media S7.
+   >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor do Dynamic Media S7.
 
