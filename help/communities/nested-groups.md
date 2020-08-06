@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
@@ -45,11 +48,12 @@ Esses consoles são muito semelhantes ao console Sites das Comunidades.
 * `1 Community Group Template`:
    * Título do grupo da comunidade: Artes
    * Descrição do grupo da comunidade: Um grupo pai para vários grupos artísticos.
-   * Raiz do grupo da comunidade: *deixar como padrão*
+   * Raiz do grupo da comunidade: *sair como padrão*
    * Idioma(s) adicional(is) disponível(is) do grupo da comunidade:use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site da comunidade pai foi criado. Os usuários podem selecionar entre esses idiomas para criar grupos em várias localidades nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites da comunidade.
    * Nome do grupo da comunidade: artes
-   * Modelo: menu suspenso para selecionar `Reference Group`
+   * Modelo: puxe para baixo para selecionar `Reference Group`
    * Selecionar `Next`
+
       ![parenttonestedgroup](assets/parenttonestedgroup.png)
 
 Continue pelos outros painéis com estas configurações:
@@ -101,7 +105,8 @@ O `arts` grupo também deve conter uma `groups` pasta, mas que esteja vazia e na
    * Título: `Art History`
    * Nome: `history`
    * Modelo: `Reference Group`
-   * Associação: selecionar `Restricted Membership`Um grupo secreto, visível somente para membros convidados como exemplo, convidar usuário [de](tutorials.md#demo-users) demonstração `emily.andrews@mailinator.com`
+   * Associação: selecionar `Restricted Membership`Um grupo secreto, visível somente para membros convidados como exemplo, convidar 
+[usuário de demonstração](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 Atualize a página para ver os três grupos aninhados (subcomunidades).
 
