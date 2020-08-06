@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 5%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ## Visão geral {#overview}
 
-Para o AEM Communities, há vários relatórios que podem ser acessados de várias maneiras a partir do ambiente do autor.
+No AEM Communities, há vários relatórios que podem ser acessados de várias maneiras a partir do ambiente do autor.
 
 Em geral, os vários relatórios são:
 
 * [Relatório](#assignments-report) de Atribuições - para uma comunidade [de](overview.md#enablement-community)ativação, fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada ao implementar o padrão SCORM
-* [Relatório](#views-report) de exibições - fornece um gráfico de visualizações do conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade
-* [Relatório](#posts-report) de publicações - fornece um gráfico de vários tipos de publicações por membros da comunidade em qualquer site da comunidade
+* [Relatório](#views-report) de Visualizações - fornece um gráfico de visualizações de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade
+* [Relatório](#posts-report) de postagens - fornece um gráfico de vários tipos de postagens por membros da comunidade em qualquer site da comunidade
 
-Quando o [Adobe Analytics estiver ativado](sites-console.md#analytics), os relatórios incluirão o número de exibições, reproduções, comentários e classificações de cada recurso de ativação ao longo do tempo
+Quando o [Adobe Analytics estiver ativado](sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
-## Consoles de relatório {#reporting-consoles}
+## Consoles do Relatórios {#reporting-consoles}
 
 ### Relatórios para sites da comunidade {#reports-for-community-sites}
 
@@ -40,9 +43,9 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
    * **[!UICONTROL Relatório de atribuições]**
       * Gerar um relatório para Site da comunidade, Usuário ou Grupo e Atribuição selecionados
    * **[!UICONTROL Relatório de publicações]**
-      * Gerar um relatório para o Site da comunidade, Tipo de conteúdo e Período
+      * Gerar um relatório para o Site da comunidade, o Tipo de conteúdo e o Período de tempo selecionados
    * **[!UICONTROL Relatório de exibições]**
-      * Gerar um relatório para o Site da comunidade, Tipo de conteúdo e Período
+      * Gerar um relatório para o Site da comunidade, o Tipo de conteúdo e o Período de tempo selecionados
          ![chlimage_1-156](assets/chlimage_1-156.png)
 
 ### Relatórios para recursos de ativação e caminhos de aprendizado {#reports-for-enablement-resources-and-learning-paths}
@@ -51,7 +54,7 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 * Selecionar um site de comunidade de ativação existente
    * Selecione o ícone **[!UICONTROL Relatório]** para gerar relatórios que abrangem todos os recursos de ativação
    * Selecionar um caminho de aprendizado de ativação
-   * Selecione o ícone **[!UICONTROL Relatório]** para gerar relatórios
+   * Selecione o ícone **[!UICONTROL Relatório]** para o qual gerar relatórios
       * Os recursos de ativação incluídos
       * Os alunos atribuídos ao caminho de aprendizado
 * Esses relatórios fornecem:
@@ -77,8 +80,8 @@ Selecione os critérios para o relatório:
 * **[!UICONTROL Site]** Selecione um site de comunidade de ativação
 * **[!UICONTROL Usuário ou grupo]**
    * Selecione Usuário para gerar um relatório para um aluno
-   * Selecione Grupo para gerar um relatório para um grupo de alunosO serviço de túnel acessará membros e grupos membros do ambiente de publicação
-* **[!UICONTROL Atribuição]** Escolha entre os recursos de ativação atribuídos aos alunos selecionados
+   * Selecione Grupo para gerar um relatório para um grupo de alunosO serviço de túnel acessará membros e grupos de membros do ambiente de publicação
+* **[!UICONTROL Atribuição]** Escolha entre os recursos de ativação atribuídos ao(s) aluno(s) selecionado(s)
 
 Selecione **[!UICONTROL Gerar]** para criar o relatório:
 
@@ -86,7 +89,7 @@ Selecione **[!UICONTROL Gerar]** para criar o relatório:
 
 ## Relatório de exibições {#views-report}
 
-O console Exibições permite que relatórios sejam gerados em exibições de página por recursos da comunidade para um determinado período.
+O console do Visualização permite que os relatórios sejam gerados nas visualizações de página por recursos da comunidade para um determinado período.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
@@ -128,4 +131,4 @@ Selecione **[!UICONTROL Gerar]** para criar o relatório:
 
 ### Nenhum site da comunidade listado {#no-community-sites-listed}
 
-Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi habilitado para um site. Se você escolher relatórios em atribuições, verifique se a função de atribuições está na estrutura do site da comunidade.
+Se nenhum site da comunidade estiver listado, verifique se a Adobe Analytics foi ativada para um site. Se você escolher relatórios em atribuições, verifique se a função de atribuições está na estrutura do site da comunidade.
