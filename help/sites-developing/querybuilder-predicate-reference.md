@@ -1,8 +1,8 @@
 ---
-title: Referência do Predicado do Query Builder
-seo-title: Referência do Predicado do Query Builder
-description: Referência de previsão completa para a API do Query Builder.
-seo-description: Referência de previsão completa para a API do Query Builder.
+title: Referência de previsão do Construtor de Query
+seo-title: Referência de previsão do Construtor de Query
+description: Referência de previsão completa para a API do Construtor de Query.
+seo-description: Referência de previsão completa para a API do Construtor de Query.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '2323'
+ht-degree: 3%
 
 ---
 
 
-# Referência do Predicado do Query Builder{#query-builder-predicate-reference}
+# Referência de previsão do Construtor de Query{#query-builder-predicate-reference}
 
 ## Geral {#general}
 
@@ -58,9 +61,11 @@ Suporta extração de facetas. Fornecerá compartimentos para cada `true` ou `fa
 
 #### Propriedades {#properties}
 
-* **boolproperty** relative path to property, por exemplo `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
+* **boolproperty** relative path to property, por exemplo 
+`myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
 
-* **valor** para verificar a propriedade, &quot; `true`&quot; ou &quot; `false`&quot;
+* **valor** para o qual verificar a propriedade, &quot; 
+`true`&quot; ou &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -125,7 +130,7 @@ Não suporta filtragem.
 
 * **upperOperation**
 
-   &quot; `<`&quot; (mais antigo) ou &quot; `<=`&quot; (mais antigo ou mais antigo) se aplica ao `upperBound`. O padrão é &quot; `<`&quot;.
+   &quot; `<`&quot; (mais antigo) ou &quot; `<=`&quot; (mais antigo ou mais antigo), aplica-se ao `upperBound`. O padrão é &quot; `<`&quot;.
 
 * **timeZone**
 
@@ -143,7 +148,7 @@ Não suporta extração de facetas.
 
 * **excludedoors**
 
-   expressão regular comparada com caminhos de resultado, exceto os correspondentes do resultado.
+   a expressão regular correspondeu aos caminhos de resultado, exceto os correspondentes do resultado.
 
 ### fulltext {#fulltext}
 
@@ -161,13 +166,13 @@ Não suporta extração de facetas.
 
 * **relPath**
 
-   o caminho relativo a ser pesquisado na propriedade ou subnó. Essa propriedade é opcional.
+   o caminho relativo a ser pesquisado na propriedade ou no subnó. Essa propriedade é opcional.
 
 ### grupo {#group}
 
-Permite criar condições aninhadas. Os grupos podem conter grupos aninhados. Tudo o que está em uma consulta do querybuilder está implicitamente em um grupo raiz, que também pode ter `p.or` e `p.not` parâmetros.
+Permite criar condições aninhadas. Os grupos podem conter grupos aninhados. Tudo o que está em um query querybuilder está implicitamente em um grupo raiz, que também pode ter `p.or` e `p.not` parâmetros.
 
-Exemplo para corresponder uma de duas propriedades contra um valor:
+Exemplo para corresponder uma de duas propriedades em relação a um valor:
 
 ```
 group.p.or=true
@@ -192,7 +197,7 @@ group.2_group.type=dam:Asset
 
 Isso pesquisa o termo &quot;**Gerenciamento**&quot; nas páginas em `/content/geometrixx/en` ou nos ativos em `/content/dam/geometrixx`.
 
-Isto é conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Observe que tais junções OU precisam de bons índices para o desempenho.
+Isto é conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Esteja ciente de que tais junções OU precisam de bons índices para o desempenho.
 
 #### Propriedades {#properties-6}
 
@@ -216,7 +221,7 @@ Isto é conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. O
 
 Restringe o resultado a itens nos quais a sessão atual tem os privilégios [JCR especificados.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Este é um predicado somente para filtragem e não pode aproveitar um índice de pesquisa. Não suporta a extração de facetas.
+Este é um predicado somente para filtragem e não pode aproveitar um índice de pesquisa. Ele não suporta extração de facetas.
 
 #### Propriedades {#properties-7}
 
@@ -266,7 +271,7 @@ Este é um predicado somente para filtragem e não pode aproveitar um índice de
 
 ### nodenome {#nodename}
 
-Corresponde aos nomes dos nós JCR.
+Corresponde aos nomes dos nós do JCR.
 
 Suporta extração de facetas. Fornecerá compartimentos para cada nome de nó exclusivo (nome de arquivo).
 
@@ -302,7 +307,7 @@ Permite classificar o resultado. Se for necessário ordenar por várias propried
 
 * **orderby**
 
-   o nome da propriedade JCR indicado por um @ à esquerda, por exemplo `@jcr:lastModified` , ou `@jcr:content/jcr:title`, ou outro predicado na consulta, por exemplo `2_property`, no qual classificar
+   o nome da propriedade JCR indicado por um @ à esquerda, por exemplo `@jcr:lastModified` , ou `@jcr:content/jcr:title`, ou outro predicado no query, por exemplo `2_property`, no qual classificar
 
 * **classificar**
 
@@ -370,7 +375,7 @@ Suporta extração de facetas. Fornecerá compartimentos para cada valor de prop
 
 ### rangeproperty {#rangeproperty}
 
-Corresponde uma propriedade JCR a um intervalo. Isso se aplica a propriedades com tipos lineares como `LONG`, `DOUBLE` e `DECIMAL`. Para ver `DATE` o predicado de intervalo de datas que otimizou a entrada de formato de data.
+Corresponde uma propriedade JCR a um intervalo. Isso se aplica a propriedades com tipos lineares, como `LONG`, `DOUBLE` e `DECIMAL`. Para ver `DATE` o predicado de intervalo de datas que otimizou a entrada de formato de data.
 
 É possível definir um limite inferior e um limite superior ou apenas um deles. A operação (por exemplo, &quot;menor que&quot; ou &quot;menor ou igual a&quot;) também pode ser especificado para limite inferior e superior individualmente.
 
@@ -432,15 +437,15 @@ Suporta a extração de facetas da mesma forma que o predicado daterange.
 
 ### root {#root}
 
-Grupo de predicados raiz. Suporta todos os recursos de um grupo e permite definir parâmetros de consulta globais.
+Grupo de predicados raiz. Suporta todos os recursos de um grupo e permite definir parâmetros de query globais.
 
-O nome &quot;raiz&quot; nunca é usado em uma consulta, é implícito.
+O nome &quot;raiz&quot; nunca é usado em um query, é implícito.
 
 #### Propriedades {#properties-18}
 
 * **p.offset**
 
-   número que indica o início da página de resultados, ou seja, quantos itens ignorar
+   número que indica o start da página de resultados, ou seja, quantos itens ignorar
 
 * **p.limit**
 
@@ -464,7 +469,7 @@ O nome &quot;raiz&quot; nunca é usado em uma consulta, é implícito.
 
    * **completo**:
 
-      renderização JSON Sling do nó, com `jcr:path` indicação do caminho da ocorrência: por padrão, apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, ou seja, 0 subárvore inteira infinita; adicione `p.acls=true` para incluir as permissões do JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+      renderização JSON Sling do nó, com `jcr:path` indicação do caminho da ocorrência: por padrão, apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, o que significa 0, a subárvore infinita inteira; adicione `p.acls=true` para incluir as permissões do JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
 
    * **seletivo**:
 
@@ -472,19 +477,19 @@ O nome &quot;raiz&quot; nunca é usado em uma consulta, é implícito.
 
 ### savedquery {#savedquery}
 
-Inclui todos os predicados de uma consulta do querybuilder persistente na consulta atual como um predicado de subgrupo.
+Inclui todos os predicados de um query querybuilder persistente no query atual como um predicado de subgrupo.
 
-Observe que isso não executará uma consulta extra, mas estenderá a consulta atual.
+Observe que isso não executará um query extra, mas estenderá o query atual.
 
-As consultas podem ser mantidas programaticamente usando `QueryBuilder#storeQuery()`. O formato pode ser uma propriedade String de várias linhas ou um `nt:file` nó que contenha a consulta como um arquivo de texto no formato de propriedades Java.
+Query podem ser persistentes de forma programática usando `QueryBuilder#storeQuery()`. O formato pode ser uma propriedade String de várias linhas ou um `nt:file` nó que contenha o query como um arquivo de texto no formato de propriedades Java.
 
-Não suporta a extração de facetas para os predicados da consulta salva.
+Não suporta extração de facetas para os predicados do query salvo.
 
 #### Propriedades {#properties-19}
 
 * **savedquery**
 
-   caminho para a consulta salva (propriedade String ou `nt:file` nó)
+   caminho para o query salvo (propriedade String ou `nt:file` nó)
 
 ### similar {#similar}
 
@@ -496,7 +501,8 @@ Não suporta filtragem. Não suporta extração de facetas.
 
 * **caminho** absoluto semelhante ao nó para o qual encontrar nós semelhantes
 
-* **local** um caminho relativo para um nó descendente ou `.` para o nó atual (opcional, o padrão é &quot; `.`&quot;)
+* **local** de um caminho relativo para um nó descendente ou 
+`.` para o nó atual (opcional, o padrão é &quot; `.`&quot;)
 
 ### tag {#tag}
 
@@ -508,7 +514,7 @@ Suporta extração de facetas. Fornecerá compartimentos para cada tag exclusiva
 
 * **tag**
 
-   caminho do título da tag a procurar, por exemplo, &quot;Propriedades do ativo : Orientação / Paisagem&quot;
+   caminho do título da tag a ser procurado, por exemplo, &quot;Propriedades do ativo : Orientação / Paisagem&quot;
 
 * **N_value**
 
@@ -572,4 +578,4 @@ Suporta extração de facetas. Fornecerá compartimentos para cada tipo exclusiv
 
 * **tipo**
 
-   tipo de nó ou nome de mixagem a ser procurado, por exemplo `cq:Page`
+   tipo de nó ou nome de mixagem a ser pesquisado, por exemplo `cq:Page`
