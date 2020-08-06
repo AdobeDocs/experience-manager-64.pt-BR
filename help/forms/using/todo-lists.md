@@ -106,7 +106,7 @@ Quando você abre e reclama uma tarefa de um grupo ou lista compartilhada, a tar
 
 Depois de abrir uma tarefa, as guias exibidas no painel principal e as ferramentas disponíveis dependem da tarefa. As guias que podem ser vistas estão descritas abaixo:
 
-**Resumo** da Tarefa: Quando uma tarefa é aberta, o painel Resumo da Tarefa permite que você mostre informações sobre a tarefa, se ela existir, usando um URL especificado no processo na etapa Atribuir Tarefa. Usando o painel Resumo da Tarefa, informações adicionais e relevantes para uma tarefa podem ser exibidas para adicionar mais valor ao usuário final da área de trabalho do AEM Forms. Essa guia não estará disponível se o URL de resumo da Tarefa não existir.
+**Resumo** da Tarefa: Quando uma tarefa é aberta, o painel Resumo da Tarefa permite que você mostre informações sobre a tarefa, se ela existir, usando um URL especificado no processo na etapa Atribuir Tarefa. Usando o Painel Resumo da Tarefa, informações adicionais e relevantes para uma tarefa podem ser exibidas para agregar mais valor ao usuário final da área de trabalho do AEM Forms. Essa guia não estará disponível se o URL de resumo da Tarefa não existir.
 
 **Detalhes**: Fornece algumas informações sobre a tarefa atual e o processo ao qual ela pertence.
 
@@ -148,7 +148,7 @@ Você pode encaminhar uma tarefa junto com quaisquer observações ou anexos par
 
 ### Tirar uma tarefa offline {#take-a-task-offline}
 
-Você pode trabalhar em uma tarefa off-line e enviar posteriormente seu formulário do Adobe® Reader® ou Adobe® Acrobat® Professional ou Adobe® Acrobat® Standard. Quando o formulário for enviado, seu cliente de e-mail será iniciado com o endereço de e-mail do servidor apropriado. Em seguida, é possível enviar o formulário preenchido por email para o servidor.
+Você pode trabalhar em uma tarefa off-line e enviar posteriormente seu formulário do Adobe® Reader® ou do Adobe® Acrobat® Professional ou Adobe® Acrobat Standard. Quando o formulário for enviado, seu cliente de e-mail será iniciado com o endereço de e-mail do servidor apropriado. Em seguida, é possível enviar o formulário preenchido por email para o servidor.
 
 1. Em qualquer guia, clique em **Offline**.
 1. Especifique um nome de arquivo para salvar o formulário e clique em **Salvar**. O formulário associado à tarefa é salvo localmente e a tarefa permanece na lista de Tarefas Pendentes até que o formulário seja enviado.
@@ -272,19 +272,19 @@ Você pode enviar várias tarefas da sua lista de Tarefas. Somente tarefas do me
 
 Você pode receber e concluir tarefas por email. A participação em tarefas por e-mails elimina a necessidade de verificar regularmente sua lista de tarefas para fazer em busca de novas tarefas ou verificar o status de uma tarefa na página de rastreamento.
 
-Primeiro, defina suas preferências de espaço de trabalho do AEM Forms para receber notificações por email. A área de trabalho do AEM Forms pode enviar notificações por e-mail para tarefas em sua lista de Tarefas Pendentes ou em qualquer lista de Tarefas Pendentes do grupo ao qual você pertence. O administrador determina quando as mensagens de notificação por email são enviadas e quem as recebe.
+Primeiro, defina suas preferências de espaço de trabalho do AEM Forms para receber notificações por email. A área de trabalho da AEM Forms pode enviar notificações por email para tarefas em sua lista de Tarefas Pendentes ou em qualquer lista de Tarefas Pendentes do grupo ao qual você pertença. O administrador determina quando as mensagens de notificação por email são enviadas e quem as recebe.
 
 As mensagens de email podem conter um link que abre a tarefa na área de trabalho do AEM Forms, um anexo do formulário usado para a tarefa ou ações para completar a tarefa por email. Se um formulário for incluído na mensagem de email, você poderá abrir o formulário e preencher a tarefa se os botões para preencher a tarefa forem criados no formulário. Se as ações para completar a tarefa forem incluídas na mensagem de e-mail, você poderá concluir a tarefa clicando nas ações no e-mail ou respondendo ao e-mail com a ação digitada como a primeira linha no corpo do e-mail.
 
 >[!NOTE]
 >
->Para configurar o espaço de trabalho para usar os modelos de e-mail apropriados, consulte o Guia [](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)do administrador do AEM Forms JEE.
+>Para configurar o espaço de trabalho para usar os modelos de e-mail apropriados, consulte o Guia [do Administrador do](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms JEE.
 
-Quando você conclui uma tarefa por email, a tarefa é removida da lista de tarefas na área de trabalho do AEM Forms.
+Quando você conclui uma tarefa por email, a tarefa é removida de sua lista de tarefas na área de trabalho do AEM Forms.
 
 >[!NOTE]
 >
->Se o usuário não estiver conectado à área de trabalho do AEM Forms no navegador e abrir um link para uma tarefa A fazer, o link direto Para fazer não será aberto e exibirá uma exceção. Faça logon na área de trabalho do AEM Forms antes de clicar nos links nos e-mails.
+>Se o usuário não estiver conectado à área de trabalho do AEM Forms no navegador e abrir um link para uma tarefa a fazer, o link direto para fazer não será aberto e exibirá uma exceção. Faça logon na área de trabalho do AEM Forms antes de clicar nos links nos e-mails.
 
 >[!NOTE]
 >
@@ -294,11 +294,11 @@ Quando você conclui uma tarefa por email, a tarefa é removida da lista de tare
 
 1. Clique em **Preferências**.
 1. Em **Notificar Eventos de Tarefa por lista de email** , selecione **Sim**.
-1. Para incluir o formulário e os dados com a mensagem de email, em **Anexar formulários na lista de email** , selecione **Sim**.
+1. Para incluir o formulário e os dados com a mensagem de email, em **Anexar Forms na lista de email** , selecione **Sim**.
 
 ## Participação no tarefa através de dispositivos móveis {#participating-in-tasks-through-mobile-devices}
 
-Você pode usar o aplicativo de área de trabalho do AEM Forms para participar do tarefa a partir de seu dispositivo móvel. Antes de instalar o aplicativo, verifique com o administrador do sistema se a sua organização oferece suporte ao uso do aplicativo da área de trabalho do AEM Forms.
+Você pode usar o aplicativo de área de trabalho AEM Forms para participar do tarefa a partir do seu dispositivo móvel. Antes de instalar o aplicativo, verifique com o administrador do sistema se a organização oferece suporte ao uso do aplicativo da área de trabalho AEM Forms.
 
 ## Sobre prazos e lembretes {#about-deadlines-and-reminders}
 
