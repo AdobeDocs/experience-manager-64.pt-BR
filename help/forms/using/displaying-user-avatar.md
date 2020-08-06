@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ O avatar do usuário conectado é exibido no canto superior direito da área de 
 >
 >A proporção de aspecto suportada das imagens do usuário é 1:1.
 
-1. Crie um DSC, usando os detalhes mencionados na próxima etapa. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para formulários AEM&quot; no guia [Programação com formulários](https://www.adobe.com/go/learn_aemforms_programming_63) AEM.
+1. Crie um DSC, usando os detalhes mencionados na próxima etapa. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para formulários AEM&quot; no guia [Programação com AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
 1. No DSC, defina um novo SPI que exponha os métodos getCurrentUserImageUrl e getUserImageUrl para obter um URL de imagem para um usuário do AEM Forms. A seguir está um exemplo de trecho de código Java™:
 
    ```as3
