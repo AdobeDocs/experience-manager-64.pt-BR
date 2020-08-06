@@ -1,8 +1,8 @@
 ---
 title: Query Oak e indexação
 seo-title: Query Oak e indexação
-description: Saiba como configurar índices no AEM.
-seo-description: Saiba como configurar índices no AEM.
+description: Saiba como configurar índices em AEM.
+seo-description: Saiba como configurar índices em AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -87,6 +87,7 @@ O Índice de propriedades geralmente é útil para query que têm restrições d
 
    * **tipo:**  `property` (do tipo String)
    * **propertyNames:**  `jcr:uuid` (do tipo Nome)
+
    Este exemplo específico indexará a `jcr:uuid` propriedade, cujo trabalho é expor o identificador universalmente exclusivo (UUID) do nó ao qual está anexado.
 
 1. Salve as alterações.
@@ -211,6 +212,7 @@ Se quiser usar qualquer analisador de caixa, você pode configurá-lo seguindo o
    * **Nome:** `class`
    * **Tipo:** `String`
    * **Valor:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+
    O valor é o nome da classe do analisador que você deseja usar.
 
    Você também pode definir o analisador para ser usado com uma versão específica de lúceno usando a propriedade de `luceneMatchVersion` string opcional. Uma sintaxe válida para usá-la com Lucene 4.7 seria:
@@ -218,6 +220,7 @@ Se quiser usar qualquer analisador de caixa, você pode configurá-lo seguindo o
    * **Nome:** `luceneMatchVersion`
    * **Tipo:** `String`
    * **Valor:** `LUCENE_47`
+
    Se não `luceneMatchVersion` for fornecido, o Oak usará a versão do Lucene que acompanha.
 
 1. Se desejar adicionar um arquivo de palavras de interrupção às configurações do analisador, você poderá criar um novo nó sob o `default` com as seguintes propriedades:
@@ -283,17 +286,17 @@ Para casos como o carregamento de palavras de interrupção em que o conteúdo d
 
 A finalidade do índice Solr é principalmente a pesquisa de texto completo, mas também pode ser usada para indexar a pesquisa por caminho, restrições de propriedade e restrições de tipo primário. Isso significa que o índice Solr no Oak pode ser usado para qualquer tipo de query JCR.
 
-A integração no AEM ocorre no nível do repositório para que o Solr seja um dos possíveis índices que podem ser usados no Oak, a nova implementação do repositório fornecida com o AEM.
+A integração no AEM ocorre no nível do repositório, de modo que o Solr seja um dos possíveis índices que podem ser usados no Oak, a nova implementação do repositório fornecida com o AEM.
 
-Ele pode ser configurado para funcionar como um servidor incorporado com a instância do AEM ou como um servidor remoto.
+Ele pode ser configurado para funcionar como um servidor incorporado com a instância AEM ou como um servidor remoto.
 
-### Configuração do AEM com um servidor integrado do Solr {#configuring-aem-with-an-embedded-solr-server}
+### Configuração de AEM com um servidor Solr incorporado {#configuring-aem-with-an-embedded-solr-server}
 
 >[!CAUTION]
 >
 >Não use um servidor Solr incorporado em um ambiente de produção. Só deve ser utilizado num ambiente de desenvolvimento.
 
-O AEM pode ser usado com um servidor de Solr incorporado que pode ser configurado por meio do console da Web. Nesse caso, o servidor Solr será executado na mesma JVM que a instância do AEM à qual está incorporado.
+AEM pode ser usado com um servidor Solr incorporado que pode ser configurado por meio do Console da Web. Nesse caso, o servidor Solr será executado na mesma JVM da instância AEM à qual está incorporado.
 
 Você pode configurar o servidor Solar incorporado:
 
@@ -316,17 +319,19 @@ Você pode configurar o servidor Solar incorporado:
 
 1. Salve as alterações.
 
-### Configuração do AEM com um único servidor remoto Solr {#configuring-aem-with-a-single-remote-solr-server}
+### Configuração de AEM com um único servidor Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
 
-O AEM também pode ser configurado para funcionar com uma instância remota do servidor Solr:
+AEM também pode ser configurado para funcionar com uma instância remota do servidor Solr:
 
 1. Baixe e extraia a versão mais recente do Solr. Para obter mais informações sobre como fazer isso, consulte a documentação [Instalação do](https://cwiki.apache.org/confluence/display/solr/Installing+Solr)Apache Solr.
 1. Agora, crie dois fragmentos Solr. Você pode fazer isso criando pastas para cada compartilhamento na pasta onde a Solr foi descompactada:
 
    * Para o primeiro compartilhamento, crie a pasta:
+
    `<solrunpackdirectory>\aemsolr1\node1`
 
    * Para o segundo compartilhamento, crie a pasta:
+
    `<solrunpackdirectory>\aemsolr2\node2`
 
 1. Localize a instância de exemplo no pacote Solr. Normalmente, ele está localizado em uma pasta chamada &quot; `example`&quot; na raiz do pacote.
@@ -361,7 +366,7 @@ O AEM também pode ser configurado para funcionar com uma instância remota do s
    ```
 
 1. Depois que ambos os fragmentos tiverem sido iniciados, teste se tudo está funcionando, conectando-se à interface Solr em `http://localhost:8983/solr/#/`
-1. Start AEM e vá para o console da Web em `http://localhost:4502/system/console/configMgr`
+1. Start AEM e vá para o Console da Web em `http://localhost:4502/system/console/configMgr`
 1. Defina a seguinte configuração em Configuração **do servidor remoto** Oak Solr:
 
    * URL HTTP Solr: `http://localhost:8983/solr/`
@@ -379,7 +384,7 @@ O AEM também pode ser configurado para funcionar com uma instância remota do s
 
 #### Configuração recomendada para Solr {#recommended-configuration-for-solr}
 
-Veja abaixo um exemplo de uma configuração básica que pode ser usada com todas as três implantações Solr descritas neste artigo. Ele acomoda os índices de propriedade dedicados que já estão presentes no AEM e não devem ser usados com outros aplicativos.
+Veja abaixo um exemplo de uma configuração básica que pode ser usada com todas as três implantações Solr descritas neste artigo. Ela acomoda os índices de propriedade dedicados que já estão presentes no AEM e não devem ser usados com outras aplicações.
 
 Para usá-lo corretamente, é necessário colocar o conteúdo do arquivo diretamente no diretório inicial do Solr. No caso de implantações de vários nós, elas devem ir diretamente para a pasta raiz de cada nó.
 
@@ -387,14 +392,14 @@ Arquivos de configuração de Solr recomendados
 
 [Obter arquivo](assets/recommended-conf.zip)
 
-### Ferramentas de indexação do AEM {#aem-indexing-tools}
+### AEM ferramentas de indexação {#aem-indexing-tools}
 
-O AEM 6.1 também integra duas ferramentas de indexação presentes no AEM 6.0 como parte do conjunto de ferramentas do Adobe Consulting Services Commons:
+O AEM 6.1 também integra duas ferramentas de indexação presentes no AEM 6.0 como parte do conjunto de ferramentas Comuns dos Serviços de consultoria da Adobe:
 
 1. **Explique o Query**, uma ferramenta projetada para ajudar os administradores a entender como os query são executados;
 1. **Oak Index Manager**, uma interface de usuário da Web para manter índices existentes.
 
-Agora você pode atingi-los indo até **Ferramentas - Operações - Painel - Diagnóstico** na tela de boas-vindas do AEM.
+Agora você pode atingi-los indo até **Ferramentas - Operações - Painel - Diagnóstico** na tela de boas-vindas AEM.
 
 Para obter mais informações sobre como usá-las, consulte a documentação [do Painel de](/help/sites-administering/operations-dashboard.md)Operações.
 
@@ -426,7 +431,7 @@ Para ativar o registro em log, é necessário ativar registros de nível **DEBUG
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-A categoria **com.day.cq.search** só é aplicável se você estiver usando o utilitário QueryBuilder fornecido pelo AEM.
+A categoria **com.day.cq.search** só é aplicável se você estiver usando o utilitário QueryBuilder AEM fornecido.
 
 >[!NOTE]
 >
