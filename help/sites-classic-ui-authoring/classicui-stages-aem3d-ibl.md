@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9291151-851a-4aff-a50e-a24330ee0c13
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 77%
 
 ---
 
@@ -54,7 +57,7 @@ Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, 
    <td>Detalhes do sol IBL</td> 
    <td><p>Permite ajustar a direção e a intensidade da fonte de luz suplementar que simula o sol. <span class="diff-html-added">Essa fonte de luz aumenta o brilho da iluminação e faz com que o objeto projete uma sombra projetada no plano do solo. A projeção de sombra é suportada ao renderizar com o Rapid Refine e ao visualizar com o Google Chrome. No entanto, não é suportada atualmente por outros navegadores.</span></p> 
     <ul> 
-     <li><strong>lat</strong> - A posição vertical da fonte de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> A definição de <code>0.0</code> está no horizonte (centro vertical da imagem de ambiente de iluminação difusa); <code>1.0</code> está no apogeu (margem superior da Imagem do Ambiente de Iluminação Difusa).</li> 
+     <li><strong>lat</strong> - A posição vertical da fonte de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> Uma definição de <code>0.0</code> está no horizonte (centro vertical da Imagem do Ambiente de Iluminação Difusa); <code>1.0</code> está no ápice (margem superior da Imagem do Ambiente de Iluminação Difusa).</li> 
      <li><strong>long</strong> - A posição horizontal da fonte de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> Uma configuração de 0,0 corresponde à esquerda; 1,0 equivale à extrema direita da Imagem do ambiente de iluminação difusa.<br /> </li> 
      <li><strong>claro</strong> - O brilho da fonte de luz solar. Aumente esse valor para clarear a fonte de luz solar; diminua-o para escurecer. <br /> Uma configuração de <code>0</code> desativa a iluminação suplementar e desativa as sombras projetadas. O parâmetro não afeta os reflexos do ambiente.<br /> </li> 
     </ul> </td> 
@@ -64,7 +67,7 @@ Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, 
    <td>Se o fundo IBL parecer distorcido perto do horizonte, é possível reduzir ou eliminar a distorção ajustando essa propriedade. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Iluminação ambiental</td> 
+   <td>Iluminação do Ambiente</td> 
    <td><p><span class="diff-html-added">Permite controlar a iluminação difusa. Talvez seja necessário ajustar manualmente essa propriedade para corrigir o brilho da luz se a Imagem do ambiente de iluminação difusa for excepcionalmente clara ou escura (por exemplo, cenários noturnos).</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Atualmente não utilizado.</li> 
