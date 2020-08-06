@@ -4,6 +4,9 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +39,7 @@ Você pode personalizar o painel Filtros e adicionar/remover predicados de pesqu
 
 1. Toque/clique no ícone GlobalNav. O painel Filtros é exibido.
 
-   ![filter_panel-1](assets/filters_panel-1.png)
+   ![filtros_panel-1](assets/filters_panel-1.png)
 
    Dependendo do tipo de itens pesquisados, o número de correspondências é indicado na parte superior dos resultados da pesquisa.
 
@@ -54,7 +57,7 @@ Você pode restringir ainda mais o escopo da pesquisa especificando o tipo MIME 
 
 ![mime_type](assets/mime_type.png)
 
-Da mesma forma, ao pesquisar documentos, você pode especificar o formato, por exemplo PDF ou MS Word.
+Da mesma forma, ao pesquisar documentos, você pode especificar o formato, por exemplo, PDF ou MS Word.
 
 ![documentos](assets/documents.png)
 
@@ -95,6 +98,6 @@ Use o predicado **Insights** para pesquisar ativos com base em suas estatística
 * Pontuação de uso
 * Impressões
 * Cliques
-* Canais de mídia onde os ativos aparecem
+* canais de mídia nos quais os ativos aparecem
 
 ![insights](assets/insights.png)
