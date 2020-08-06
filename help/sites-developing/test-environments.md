@@ -1,6 +1,6 @@
 ---
-title: Quais ambientes de teste são necessários?
-seo-title: Quais ambientes de teste são necessários?
+title: Quais Ambientes de teste são necessários?
+seo-title: Quais Ambientes de teste são necessários?
 description: Vários ambientes devem ser considerados como parte dos testes
 seo-description: Vários ambientes devem ser considerados como parte dos testes
 uuid: bb725e50-edae-4c20-8107-d1c8df2e60e2
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: db528b9b-3407-462d-8254-20b3cc2c3ccf
 translation-type: tm+mt
 source-git-commit: 2c46d0630690737ef7b7f944cdea5b3d393c92e5
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
 
-# Quais ambientes de teste serão necessários?{#which-test-environments-will-be-needed}
+# Quais Ambientes de teste serão necessários?{#which-test-environments-will-be-needed}
 
 Para definir quais configurações serão testadas, considere o seguinte:
 
@@ -25,7 +28,7 @@ Para definir quais configurações serão testadas, considere o seguinte:
 
 **Ao vivo** - para testes finais de desempenho e de estresse. Também para testes de aceitação com o cliente.
 
-Você também precisará decidir quais instâncias serão necessárias onde (normalmente, pelo menos uma de cada um para todos os níveis de teste):
+Você também precisará decidir quais instâncias serão necessárias em que local (normalmente, pelo menos uma de cada um para todos os níveis de teste):
 
 **Autor** - Essa instância permite que os autores insiram e publiquem conteúdo.
 
@@ -33,7 +36,7 @@ Você também precisará decidir quais instâncias serão necessárias onde (nor
 
 Deve ser testado junto com o Dispatcher.
 
-Por fim, o hardware real deve ser considerado - todos os testes de desempenho devem ser feitos em um sistema tão próximo quanto possível da configuração do ambiente ativo final. Por esta razão, recomenda-se que o lançamento do projeto seja dividido em:
+Por fim, o hardware real deve ser considerado - todos os testes de desempenho devem ser feitos em um sistema tão próximo quanto possível da configuração do ambiente final ao vivo. Por esta razão, recomenda-se também que o lançamento do projeto seja dividido em:
 
 **Lançamento** de software - disponibilidade reduzida; que permite tempo para testes de desempenho, ajuste e otimização em condições realistas no ambiente de produção.
 
