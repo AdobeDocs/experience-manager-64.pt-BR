@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ O caminho para o componente é exclusivo e faz referência ao componente padrão
 
 ## Exemplo {#example}
 
-Suponha que o cabeçalho do componente de comentário deve ser exibido com uma aparência alternativa em um site da instância do AEM, enquanto aparece com a exibição padrão em outro site. Em vez de sobrepor o comentário padrão, que altera o componente de comentário para todas as instâncias, uma solução melhor é garantir que haja vários componentes de comentário disponíveis para uso em vários sites.
+Suponha que o cabeçalho do componente de comentário deve ser exibido com uma aparência alternativa em um site da instância de AEM, enquanto aparece com a exibição padrão em outro site. Em vez de sobrepor o comentário padrão, que altera o componente de comentário para todas as instâncias, uma solução melhor é garantir que haja vários componentes de comentário disponíveis para uso em vários sites.
 
 Para implementar essa solução, crie um novo componente que estenda (substitui) o existente e modifique o script Handlebars. A área do site que usa os novos comentários pode usar o extendido, enquanto os sites que usam a aparência padrão permanecem não afetados.
 
