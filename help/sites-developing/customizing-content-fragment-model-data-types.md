@@ -1,5 +1,5 @@
 ---
-title: NÃO PUBLICAR, MAS NÃO EXCLUIR A Personalização de tipos de dados para modelos de fragmento de conteúdo
+title: NÃO PUBLICAR, MAS NÃO DELETE Personalizar tipos de dados para modelos de fragmento de conteúdo
 seo-title: Personalização de tipos de dados para modelos de fragmento de conteúdo
 description: Os tipos de dados usados em Modelos de fragmento de conteúdo podem ser personalizados.
 seo-description: Os tipos de dados usados em Modelos de fragmento de conteúdo podem ser personalizados.
@@ -10,15 +10,18 @@ discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 1%
 
 ---
 
 
-# NÃO PUBLICAR, MAS NÃO EXCLUIR A Personalização de tipos de dados para modelos de fragmento de conteúdo{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+# NÃO PUBLICAR, MAS NÃO DELETE Personalizar tipos de dados para modelos de fragmento de conteúdo{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
 
 [Os fragmentos](/help/assets/content-fragments.md) de conteúdo são baseados em modelos [de fragmento de](/help/assets/content-fragments-models.md)conteúdo. Esses modelos são construídos a partir de [elementos](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) de diferentes tipos de dados.
 
-Vários tipos de dados estão disponíveis prontamente, incluindo texto de uma única linha, rich text de várias linhas, campos numéricos, seletores booleanos, opções de menu suspenso, data e hora e outros. Os usuários do AEM podem selecionar tipos de dados com base no propósito editorial dos fragmentos correspondentes. Isso permite que você atenda a modelos de texto simples até modelos complexos com vários tipos diferentes de conteúdo, e à experiência associada de criação de fragmentos.
+Vários tipos de dados estão disponíveis prontamente, incluindo texto de uma única linha, rich text de várias linhas, campos numéricos, seletores booleanos, opções de menu suspenso, data e hora e outros. AEM usuários podem selecionar tipos de dados com base no propósito editorial dos fragmentos correspondentes. Isso permite que você atenda a modelos de texto simples até modelos complexos com vários tipos diferentes de conteúdo, e à experiência associada de criação de fragmentos.
 
 Os tipos de dados são definidos por uma [combinação de propriedades](#properties) de nós mantidas em locais [específicos no repositório](#locations-in-the-repository). Você também pode criar seus próprios tipos [de](#creating-your-data-type) dados e [fieldProperties](#creating-your-own-fieldproperties-property).
 
@@ -30,7 +33,7 @@ Os tipos de dados são definidos por uma [combinação de propriedades](#propert
 
 ## Locais no repositório {#locations-in-the-repository}
 
-Todos os tipos de dados predefinidos são declarados em:
+Todos os tipos de dados prontos para uso são declarados em:
 
 `/libs/settings`
 
@@ -84,7 +87,7 @@ Todas as seguintes propriedades devem estar presentes para que o tipo de dados e
 
 * `fieldViewResourceType`
 
-   O tipo de recurso Sling usado para renderizar o tipo de dados na visualização, ao construir o modelo. Quando o usuário arrasta o tipo de dados para o lado esquerdo do editor de modelo, a `fieldViewResourceType` propriedade representa o componente que é renderizado lá. Isso é usado para casos em que você não deseja renderizar o componente completo, mas apenas renderizar um substituto que minimize a sobrecarga para o editor de modelo.
+   O tipo de recurso Sling usado para renderizar o tipo de dados na pré-visualização, ao construir o modelo. Quando o usuário arrasta o tipo de dados para o lado esquerdo do editor de modelo, a `fieldViewResourceType` propriedade representa o componente que é renderizado lá. Isso é usado para casos em que você não deseja renderizar o componente completo, mas apenas renderizar um substituto que minimize a sobrecarga para o editor de modelo.
 
 * `fieldTitle`
 
@@ -144,7 +147,7 @@ Todas as seguintes propriedades devem estar presentes para que o tipo de dados e
   <tr> 
    <td>Enumeração</td> 
    <td>string/long</td> 
-   <td>enumeração</td> 
+   <td>lista discriminada</td> 
   </tr> 
   <tr> 
    <td>Tags</td> 
@@ -204,7 +207,7 @@ As propriedades de configuração para cada tipo de dados. Valores para `fieldPr
 
 * `multieditorfield`
 
-   Isso adiciona todo o campo oculto necessário para que o editor de várias linhas funcione, que é representado pelo tipo de dados Texto **** de várias linhas.
+   Isso adiciona todo o campo oculto necessário para que o editor de várias linhas funcione, que é representado pelo tipo de dados Texto **de** várias linhas.
 
 * `mvfields`
 
@@ -216,11 +219,11 @@ As propriedades de configuração para cada tipo de dados. Valores para `fieldPr
 
 * `numbervaluefield`
 
-   Um seletor de valor `numberfield` padrão para o **Número** `type.options` Isso adiciona as opções de entrada para o tipo de dados **Enumeração** , que é usado para determinar os valores do componente de caixa de seleção.
+   Um seletor de valor `numberfield` padrão para o **Número** `type.options` Isso adiciona as opções de entrada para o tipo de dados de **Lista discriminada** , que é usado para determinar os valores para o componente de caixa de seleção.
 
 * `placeholderfield`
 
-   Este é um campo de texto que atua como a entrada para a `emptyText` propriedade de um componente. Isso deve ser usado por todos os tipos de dados que aceitam um espaço reservado (o que não é muito complicado; por exemplo, Texto **de linha**&#x200B;única, **Número** etc.).
+   Este é um campo de texto que atua como a entrada para a `emptyText` propriedade de um componente. Isso deve ser usado por todos os tipos de dados que aceitam um espaço reservado (o que não é muito complicado); por exemplo, Texto **de linha**&#x200B;única, **Número** etc.).
 
 * `renderasfield`
 
@@ -246,7 +249,7 @@ As propriedades de configuração para cada tipo de dados. Valores para `fieldPr
 
    A propriedade de valor padrão para o tipo de dados Texto **de linha** única.
 
-## Criação do tipo de dados {#creating-your-data-type}
+## Criação de seu tipo de dados {#creating-your-data-type}
 
 Para criar seu próprio tipo de dados, é necessário:
 
@@ -287,11 +290,12 @@ A estrutura do nó deve ser criada `/apps` para sobrepor os tipos de dados. Se e
 
 ### Definição das propriedades para seu tipo de dados {#defining-the-properties-for-your-data-type}
 
-1. Determine os valores para as seguintes propriedades [de tipo de](#data-type-properties) dados que são necessários para seu tipo de dados:
+1. Determine os valores para as seguintes propriedades [de tipo de](#data-type-properties) dados que são necessários para o seu tipo de dados:
 
    * `fieldResourceType`
    * `fieldPropResourceType`
    * `fieldViewResourceType`
+
    Eles definem como os componentes para seu tipo de dados serão renderizados. Podem ser qualquer componente; incluindo seus próprios componentes personalizados (requer um conjunto correspondente de ` [fieldProperties](#fieldproperties)`).
 
    Defina essas propriedades, com os valores adequados, no nó para o seu tipo de dados.
@@ -300,7 +304,7 @@ A estrutura do nó deve ser criada `/apps` para sobrepor os tipos de dados. Se e
 
    Por exemplo, um `granite/ui/components/coral/foundation/form/textfield`deve ter um Nome **de** rótulo, um Comprimento **** máximo, um Texto **de** espaço reservado e uma propriedade Valor **** padrão.
 
-   Você pode escolher dentre [fieldProperties](#fieldproperties)predefinido ou [criar suas próprias propriedades](#creating-your-own-fieldproperties-property).
+   Você pode escolher dentre as [fieldProperties](#fieldproperties)predefinidas ou [criar suas próprias propriedades](#creating-your-own-fieldproperties-property).
 
    Defina essas propriedades, com os valores adequados, no nó para o seu tipo de dados.
 
@@ -311,6 +315,7 @@ A estrutura do nó deve ser criada `/apps` para sobrepor os tipos de dados. Se e
    * `renderType`
    * `valueType`
    * `listOrder`
+
    Defina essas propriedades, com os valores adequados, no nó para o seu tipo de dados.
 
 ### Como usar seu tipo de dados {#using-your-data-type}
@@ -321,7 +326,7 @@ Depois de salvar essa estrutura de nó, com todas as propriedades aplicadas, voc
 
 Você pode escolher dentre as [fieldProperties](#fieldproperties)predefinidas ou criar suas próprias:
 
-1. Criar um componente em:
+1. Crie um componente em:
 
    `/apps/dam/cfm/models/editor/components/datatypeproperties/`
 
@@ -335,7 +340,7 @@ Você pode escolher dentre as [fieldProperties](#fieldproperties)predefinidas ou
 
       `sling:include`
 
-   1. Esse componente deve renderizar um campo (se um usuário precisar inserir dados) ou uma entrada oculta com as propriedades necessárias ao seu tipo de dados. Por exemplo, um componente de vários campos requer um nó filho com o tipo de campo que deve duplicar, portanto, deve haver uma entrada que possa criar (por meio de mecanismos de POST de sling) um nó filho de um tipo específico.
+   1. Esse componente deve renderizar um campo (se um usuário precisar inserir dados) ou uma entrada oculta com as propriedades necessárias ao seu tipo de dados. Por exemplo, um componente de vários campos requer um nó filho com o tipo de campo que deve ser duplicado, portanto, deve haver uma entrada que possa criar (por meio da mecânica de POST sling) um nó filho de um tipo específico.
 
 1. O nome base deste componente deve ser adicionado ao `fieldProperties`.
 1. Repita o procedimento para todas as propriedades necessárias.
