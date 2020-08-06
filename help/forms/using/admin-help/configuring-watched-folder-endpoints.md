@@ -36,7 +36,7 @@ Depois de configurar o serviço de Pasta assistida, adicione um terminal de Past
 Você pode criar uma pasta assistida das duas maneiras a seguir:
 
 * Ao definir as configurações de um ponto de extremidade de pasta monitorada, digite o caminho completo para o diretório pai na caixa Caminho e anexe o nome da pasta monitorada a ser criada, como mostrado neste exemplo:
-   `  C:\MyPDFs\MyWatchedFolder`Como a pasta MyWatchedFolder ainda não existe, os formulários AEM tentam criá-la nesse local.
+   `  C:\MyPDFs\MyWatchedFolder`Como a pasta MyWatchedFolder ainda não existe, AEM formulários tentam criá-la nesse local.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um ponto de extremidade de pasta monitorada e digite o caminho completo na caixa Caminho.
 
@@ -63,13 +63,13 @@ Se o trabalho contiver mais de um arquivo de entrada, o usuário deverá criar u
 
 >[!NOTE]
 >
->Verifique se o servidor de aplicativos excluiu o acesso aos arquivos na pasta assistida. Se os formulários do AEM não puderem excluir os arquivos da pasta de entrada depois que eles forem verificados, o processo associado será chamado indefinidamente.
+>Verifique se o servidor de aplicativos excluiu o acesso aos arquivos na pasta assistida. Se AEM formulários não puderem excluir os arquivos da pasta de entrada depois que eles forem verificados, o processo associado será chamado indefinidamente.
 
 ## Saída de pasta assistida {#watched-folder-output}
 
-Quando a entrada é uma pasta e a saída consiste em vários arquivos, os formulários AEM criam uma pasta de saída com o mesmo nome da pasta de entrada e copiam os arquivos de saída para essa pasta. Quando a saída consiste em um mapa de documentos contendo um par de valores chave, como a saída de um processo de Saída, a chave será usada como o nome do arquivo de saída.
+Quando a entrada é uma pasta e a saída consiste em vários arquivos, AEM formulários cria uma pasta de saída com o mesmo nome da pasta de entrada e copia os arquivos de saída para essa pasta. Quando a saída consiste em um mapa de documentos contendo um par de valores chave, como a saída de um processo de Saída, a chave será usada como o nome do arquivo de saída.
 
-Os nomes de arquivo de saída que resultam de um processo de ponto de extremidade não podem conter caracteres diferentes de letras, números e pontos (.) antes da extensão do arquivo. Os formulários do AEM convertem outros caracteres em seus valores hexadecimais.
+Os nomes de arquivo de saída que resultam de um processo de ponto de extremidade não podem conter caracteres diferentes de letras, números e pontos (.) antes da extensão do arquivo. AEM formulários converte outros caracteres em seus valores hexadecimais.
 
 Os aplicativos clientes coletam os documentos de resultado da pasta monitorada. Os erros de processo são registrados na pasta de falha da pasta assistida.
 
@@ -129,7 +129,7 @@ Use as seguintes configurações para configurar um ponto de extremidade de past
 
 **Contagem de repetição:** Número de vezes que a pasta assistida verifica a pasta ou o diretório. Um valor de -1 indica uma varredura indefinida. O valor padrão é -1.
 
-**Acelerador:** Quando essa opção é selecionada, ela limita o número de trabalhos de pasta monitorados que os formulários AEM processam a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. (Consulte Sobre limitação.)
+**Acelerador:** Quando essa opção é selecionada, ela limita o número de trabalhos de pasta observados que AEM processos de formulários em um determinado momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. (Consulte Sobre limitação.)
 
 **Nome do usuário:** (Obrigatório) O nome de usuário usado ao chamar um serviço de público alvo da pasta assistida. O valor padrão é SuperAdmin.
 
@@ -347,7 +347,7 @@ Quando a Pasta assistida não puder processar os arquivos de origem na pasta sta
    * Em Aplicativos e serviços, altere o parâmetro Incluir padrão de arquivo para o ponto final da pasta assistida para algo que não corresponderá a nenhum dos novos arquivos de entrada (por exemplo, insira `NOMATCH`).
    * Suspenda o processo que está criando novos arquivos de entrada.
 
-   Aguarde até que os formulários do AEM recuperem e processem todos os arquivos. A maioria dos arquivos deve ser recuperada e todos os novos arquivos de entrada processados corretamente. O tempo que você espera que a Pasta assistida recupere e processe os arquivos dependerá da duração da operação a ser chamada e do número de arquivos a serem recuperados.
+   Aguarde até que AEM formulários recupere e processe todos os arquivos. A maioria dos arquivos deve ser recuperada e todos os novos arquivos de entrada processados corretamente. O tempo que você espera que a Pasta assistida recupere e processe os arquivos dependerá da duração da operação a ser chamada e do número de arquivos a serem recuperados.
 
 1. Determine quais arquivos não podem ser processados. Se você esperou um tempo adequado e concluiu a etapa anterior, e ainda houver arquivos não processados restantes na pasta stage, vá para a próxima etapa.
 
@@ -406,7 +406,7 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta assistida:
 
 ## Recomendações específicas de serviço para pastas monitoradas {#service-specific-recommendations-for-watched-folders}
 
-Para todos os serviços, você deve ajustar o tamanho do lote e o intervalo de repetição da pasta assistida para que a taxa na qual a Pasta assistida seleciona novos arquivos e pastas para processamento não exceda a taxa de trabalhos que podem ser processados pelo servidor de formulários do AEM. Os parâmetros reais a serem usados podem variar dependendo de quantas pastas monitoradas estão configuradas, quais serviços estão usando pastas monitoradas e a intensidade das tarefas no processador.
+Para todos os serviços, você deve ajustar o tamanho do lote e o intervalo de repetição da pasta assistida para que a taxa na qual a Pasta assistida seleciona novos arquivos e pastas para processamento não exceda a taxa de trabalhos que podem ser processados pelo servidor de formulários AEM. Os parâmetros reais a serem usados podem variar dependendo de quantas pastas monitoradas estão configuradas, quais serviços estão usando pastas monitoradas e a intensidade das tarefas no processador.
 
 ### Gerar recomendações do serviço PDF {#generate-pdf-service-recommendations}
 
@@ -419,7 +419,7 @@ Para todos os serviços, você deve ajustar o tamanho do lote e o intervalo de r
 
 * Para obter melhor desempenho ao processar formulários com códigos de barras (pequenos arquivos), digite `10` para Tamanho do lote e `2` para Intervalo de repetição.
 * Quando muitos arquivos são colocados na pasta de entrada, podem ocorrer erros com arquivos ocultos chamados *thumbs.db* . Portanto, é recomendável definir o Padrão de inclusão de arquivo para os arquivos incluídos com o mesmo valor especificado para a Variável de entrada (por exemplo, `*.tiff`). Isso impede que a Pasta assistida processe os arquivos do DB.
-* O valor Tamanho do lote `5` e o Intervalo de repetição de `2` é normalmente suficiente, pois o serviço de Formulários com códigos de barras geralmente demora cerca de 0,5 segundos para processar um código de barras.
+* O valor Tamanho do lote `5` e o Intervalo de repetição de `2` é normalmente suficiente porque o serviço Forms com código de barras geralmente demora cerca de 0,5 segundos para processar um código de barras.
 * A Pasta assistida não espera que o Mecanismo de processo conclua o trabalho antes de selecionar novos arquivos ou pastas. Ele continua digitalizando a pasta assistida e chamando o serviço de público alvo. Esse comportamento pode sobrecarregar o mecanismo, causando problemas de recursos e tempos limite. Certifique-se de usar o intervalo de repetição e o tamanho do lote para limitar a entrada da Pasta assistida. Você pode aumentar o intervalo de repetição e reduzir o tamanho do lote se houver mais pastas monitoradas ou ativar a limitação no ponto final. Para obter informações sobre controle de fluxo, consulte [Sobre controle de fluxo](configuring-watched-folder-endpoints.md#about-throttling).
 * A Pasta assistida representa o usuário especificado no nome de usuário e no nome de domínio. A Pasta assistida chama o serviço como esse usuário se for chamado diretamente ou se o processo tiver duração curta. Para um processo de longa duração, o processo é chamado com o contexto Sistema. Os administradores podem definir políticas do sistema operacional para a Pasta assistida para determinar a qual usuário permitir ou negar acesso.
 * Use padrões de arquivo para organizar resultados, falhas e preservar pastas. (Consulte [Sobre padrões](configuring-watched-folder-endpoints.md#about-file-patterns)de arquivo.)
