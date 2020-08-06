@@ -1,8 +1,8 @@
 ---
-title: Alteração da localidade da interface do usuário da área de trabalho do AEM Forms
-seo-title: Alteração da localidade da interface do usuário da área de trabalho do AEM Forms
-description: Como modificar a área de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
-seo-description: Como modificar a área de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
+title: Alteração da localidade da interface do usuário do espaço de trabalho do AEM Forms
+seo-title: Alteração da localidade da interface do usuário do espaço de trabalho do AEM Forms
+description: Como modificar o espaço de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
+seo-description: Como modificar o espaço de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Alteração da localidade da interface do usuário da área de trabalho do AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
+# Alteração da localidade da interface do usuário do espaço de trabalho do AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-A área de trabalho do AEM Forms fornece suporte imediato para idiomas inglês, francês, alemão e japonês. Ele também oferece a capacidade de localizar a interface de usuário do espaço de trabalho do AEM Forms para qualquer outro idioma.
+A área de trabalho do AEM Forms oferece suporte imediato para idiomas inglês, francês, alemão e japonês. Também oferece a capacidade de localizar a interface do usuário do espaço de trabalho AEM Forms para qualquer outro idioma.
 
-Para localizar a interface de usuário do espaço de trabalho do AEM Forms para o idioma de sua escolha:
+Para localizar a interface do usuário do espaço de trabalho AEM Forms para o idioma de sua escolha:
 
 * Localize o texto da área de trabalho do AEM Forms.
 * Localize categorias recolhidas, filas e processos.
@@ -38,7 +38,7 @@ Antes de executar as etapas acima, siga as etapas listadas em Etapas [genéricas
 
 Execute as seguintes etapas para adicionar suporte para um idioma *Novo* e o código de idioma do navegador *agora*.
 
-1. Faça logon no CRXDE Lite.
+1. Efetue login no CRXDE Lite.
 
    O URL padrão do CRXDE Lite é `https://[server]:[port]/lc/crx/de/index.jsp`.
 
@@ -52,7 +52,7 @@ Execute as seguintes etapas para adicionar suporte para um idioma *Novo* e o có
 
 ## Localização de categorias, filas e processos recolhidos {#localizing-collapsed-categories-queues-and-processes}
 
-A área de trabalho do AEM Forms usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+A área de trabalho do AEM Forms usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre a criação de pacotes de desenvolvimento, consulte [Criar código de espaço de trabalho AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categoria_nw.png*, *Queue_nw.png* e *Processes_nw.png*. A largura recomendada das imagens é de 19x.
 
@@ -111,7 +111,7 @@ Execute as seguintes etapas para localizar as imagens:
 
 ## Localizando o seletor de datas {#localizing-date-picker}
 
-Você precisa de um pacote de desenvolvimento para localizar a *datepicker *API. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de área de trabalho do AEM Forms.
+Você precisa de um pacote de desenvolvimento para localizar a *datepicker *API. Para obter informações detalhadas sobre a criação de pacotes de desenvolvimento, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espaço de trabalho AEM Forms.
 
 1. Baixe e extraia o Pacote [da interface do usuário do](https://jqueryui.com/download/all/)jQuery, navegue até *&lt;pacote da interface do usuário jquery extraída>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copie o arquivo jquery.ui.datepicker-nw.js para código de localidade agora em apps/ws/js/libs/jqueryui e faça alterações específicas de localidade no arquivo.
