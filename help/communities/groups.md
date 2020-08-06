@@ -1,8 +1,8 @@
 ---
 title: Console de grupos da comunidade
 seo-title: Console de grupos da comunidade
-description: O console Grupos permite criar grupos da Comunidade
-seo-description: O console Grupos permite criar grupos da Comunidade
+description: O console Grupos permite que você crie grupos da Comunidade
+seo-description: O console Grupos permite que você crie grupos da Comunidade
 uuid: 7dac2d1b-78fc-4b39-a2cb-100f1e220c23
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,6 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ Várias facetas dos grupos comunitários são:
 >
 >Esse console Grupos, que pode ser acessado somente pelo console Sites das Comunidades, não deve ser confundido com o console [](members.md) Grupos de membros para gerenciar grupos de membros.
 >
->Os grupos de membros são grupos de usuários registrados no ambiente de publicação e acessados do ambiente do autor usando o serviço [de](deploy-communities.md#tunnel-service-on-author)túnel.
+>Os grupos de membros são grupos de usuários registrados no ambiente publish e acessados a partir do ambiente autor usando o serviço [de](deploy-communities.md#tunnel-service-on-author)túnel.
 
 ## Criação do grupo {#group-creation}
 
@@ -74,16 +77,16 @@ Desse console Grupos, é possível criar novos grupos.
 
    O título aparece no site publicado do grupo.
 
-* **[!UICONTROL Descrição]** do grupo da comunidade:Uma descrição do grupo.
+* **[!UICONTROL Descrição]** do grupo da comunidade: Uma descrição do grupo.
 * **[!UICONTROL Raiz]** do grupo da comunidade: O caminho raiz para o grupo.
 
    A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local dentro do site. Não é recomendado alterá-la.
 
-* **[!UICONTROL Idiomas adicionais disponíveis do grupo comunitário]** : Use o menu suspenso para selecionar os idiomas do grupo da comunidade disponíveis. O menu exibe todos os idiomas nos quais o site da comunidade pai foi criado. Os usuários podem selecionar entre esses idiomas para criar grupos em várias localidades nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites da comunidade.
+* **[!UICONTROL Idiomas adicionais disponíveis do(s)]** grupo(s) da comunidade: Use o menu suspenso para selecionar os idiomas do grupo da comunidade disponíveis. O menu exibe todos os idiomas nos quais o site da comunidade pai foi criado. Os usuários podem selecionar entre esses idiomas para criar grupos em várias localidades nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites da comunidade.
 
 * **[!UICONTROL Nome]** do grupo da comunidade: O nome da página raiz do grupo que aparece no URL
 
-   * Verifique novamente o nome, pois ele não é facilmente alterado após a criação do grupo
+   * Verifique o nome pelo Duplo, pois ele não é facilmente alterado depois que o grupo é criado
    * O URL base será exibido abaixo do `Community Group Name`
    * Para um URL válido, acrescente &quot;.html&quot;
 
@@ -97,7 +100,7 @@ Desse console Grupos, é possível criar novos grupos.
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-A estrutura usa o [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível ao site. Um dos muitos temas do Bootstrap pré-carregado pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionada, ou um tema do Bootstrap pode ser carregado.
+A estrutura usa o Bootstrap [do](https://twitterbootstrap.org/) Twitter para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo de comunidade selecionado, ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de seleção azul opaca.
 
@@ -122,7 +125,7 @@ Ao criar ou selecionar uma imagem, lembre-se:
    * Menor que a largura do navegador, a imagem será repetida horizontalmente
    * Maior que a largura do navegador, a imagem parece estar cortada
 
-### Etapa 3:Configurações {#step-settings}
+### Etapa 3: Configurações {#step-settings}
 
 #### MODERATION {#moderation}
 
@@ -145,11 +148,11 @@ A configuração de associação permite a seleção de uma das três maneiras d
    Se selecionado, o grupo da comunidade é um grupo público. Os membros do site podem participar do grupo e publicar sem ingressar explicitamente no grupo. O padrão está selecionado.
 * Associação necessária
 
-   se selecionado, o grupo da comunidade é um grupo aberto. Os membros do site da comunidade podem exibir o conteúdo do grupo, mas devem ingressar no grupo antes de poder publicar o conteúdo. Os membros ingressam selecionando o `Join` botão no ambiente de publicação. O padrão não está selecionado.
+   se selecionado, o grupo da comunidade é um grupo aberto. Os membros do site da comunidade podem visualização o conteúdo do grupo, mas devem ingressar no grupo antes de poderem publicar o conteúdo. Os membros ingressam selecionando o `Join` botão no ambiente de publicação. O padrão não está selecionado.
 
 * Associação restrita
 
-   se selecionado, o grupo da comunidade é um grupo secreto. Os membros da Comunidade devem ser expressamente convidados. Os membros convidados são inseridos na caixa de pesquisa. Os membros podem ser adicionados posteriormente usando os consoles [Membros e Grupos](members.md) no ambiente do autor. O padrão não está selecionado.
+   se selecionado, o grupo da comunidade é um grupo secreto. Os membros da Comunidade devem ser expressamente convidados. Os membros convidados são inseridos na caixa de pesquisa. Os membros podem ser adicionados posteriormente usando os consoles [Membros e Grupos](members.md) do ambiente do autor. O padrão não está selecionado.
 
 #### MINIATURA {#thumbnail}
 
@@ -183,7 +186,7 @@ Quando o processo é concluído, o cartão do novo site da subcomunidade (grupo)
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
-O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de qualquer outra página do AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
+O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de qualquer outra página AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
 
 ## Modificando propriedades do grupo {#modifying-group-properties}
 
@@ -191,7 +194,7 @@ As propriedades de um site subcomunitário existente, especificadas durante o pr
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-Os detalhes das seguintes propriedades correspondem às descrições fornecidas na seção Criação de [grupo](#group-creation) . Qualquer grupo aninhado pode ser modificado, seja criado no ambiente de publicação ou no ambiente do autor.
+Os detalhes das seguintes propriedades correspondem às descrições fornecidas na seção Criação de [grupo](#group-creation) . Qualquer grupo aninhado pode ser modificado, independentemente de ser criado no ambiente de publicação ou no ambiente do autor.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -210,7 +213,7 @@ Em vez disso, a [ESTRUTURA](#modify-structure) da subcomunidade pode ser modific
 
 ### Modificar estrutura {#modify-structure}
 
-O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a partir do modelo de grupo da comunidade selecionado ao criar o site da subcomunidade a partir do ambiente do autor ou publicação. Do painel, é possível
+O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a partir do modelo de grupo da comunidade selecionado ao criar o site da subcomunidade a partir do ambiente do autor ou da publicação. Do painel, é possível
 
 * Arraste e solte funções [adicionais da](functions.md) comunidade na estrutura do site
 * Em uma instância de uma função da comunidade na estrutura do site:
