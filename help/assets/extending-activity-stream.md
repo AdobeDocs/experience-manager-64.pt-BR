@@ -4,6 +4,9 @@ description: Descreve os recursos de gravação do AEM e como configurar o AEM p
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +17,9 @@ Os usuários do Adobe Experience Manager (AEM) Assets executam várias ações, 
 
 ## Considerações sobre desempenho e comportamento padrão {#performance-considerations-and-default-behavior}
 
-Essa integração pode ser de CPU e de consumo de espaço em disco, por exemplo, ao fazer a importação em massa. Por esses motivos, a integração dos ativos AEM com o fluxo de atividade é desativada por padrão.
+Essa integração pode ser de CPU e de consumo de espaço em disco, por exemplo, ao fazer a importação em massa. Por esses motivos, a integração do AEM Assets com o Fluxo de Atividades é desativada por padrão.
 
-## Eventos de ação suportados {#supported-action-events}
+## Eventos de Ação Suportados {#supported-action-events}
 
 Os seguintes eventos podem ser configurados para serem gravados:
 
@@ -36,19 +39,19 @@ Os seguintes eventos podem ser configurados para serem gravados:
 * Subativo atualizado (SUBASSET_UPDATED)
 * Subativo removido (SUBASSET_REMOVED)
 
-## Configuração da gravação de eventos do AEM Assets {#configuring-aem-assets-events-recording}
+## Configuração da gravação de Eventos AEM Assets {#configuring-aem-assets-events-recording}
 
-O console [da](/help/sites-deploying/configuring-osgi.md) Web fornece acesso ao ajuste do Gravador de eventos dos ativos AEM. Para configurar o Gravador de eventos do AEM Assets, proceda da seguinte maneira:
+O console [da](/help/sites-deploying/configuring-osgi.md) Web fornece acesso ao ajuste do Gravador do Evento AEM Assets. Para configurar o Gravador de Eventos AEM Assets, proceda da seguinte maneira:
 
 1. Navegue até o console **[!UICONTROL da Web]**
 
 1. Clique em **[!UICONTROL Configuração]**.
 
-1. Clique duas vezes em Gravador **[!UICONTROL de eventos CQ DAM do]** dia.
+1. Duplo clique em Gravador **[!UICONTROL do Evento]** Day CQ DAM.
 
 1. Marcar **[!UICONTROL Ativa este serviço]**.
 
-1. Verifique quais tipos **[!UICONTROL de]** evento você deseja que sejam registrados no fluxo de atividade do usuário.
+1. Verifique quais **[!UICONTROL Tipos de evento]** você deseja que sejam registrados no fluxo de atividade do usuário.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
