@@ -1,8 +1,8 @@
 ---
 title: Configurar formulários AEM para pré-buscar informações de domínio
 seo-title: Configurar formulários AEM para pré-buscar informações de domínio
-description: 'Configure os formulários do AEM para obter previamente informações de domínio se você tiver um tempo de resposta mais lento devido a grupos profundamente aninhados ou se for membro de muitos grupos. '
-seo-description: 'Configure os formulários do AEM para obter previamente informações de domínio se você tiver um tempo de resposta mais lento devido a grupos profundamente aninhados ou se for membro de muitos grupos. '
+description: 'Configure formulários AEM para buscar previamente informações de domínio se você tiver um tempo de resposta mais lento devido a grupos profundamente aninhados ou se for membro de muitos grupos. '
+seo-description: 'Configure formulários AEM para buscar previamente informações de domínio se você tiver um tempo de resposta mais lento devido a grupos profundamente aninhados ou se for membro de muitos grupos. '
 uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
 
 # Configurar formulários AEM para pré-buscar informações de domínio {#configure-aem-forms-to-prefetchdomain-information}
 
-Os usuários podem experimentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem profundamente aninhados (por exemplo, 30 níveis). Se você estiver enfrentando esse problema, é possível configurar formulários do AEM para obter informações previamente de determinados domínios.
+Os usuários podem experimentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem profundamente aninhados (por exemplo, 30 níveis). Se você estiver enfrentando esse problema, é possível configurar formulários AEM para buscar informações de determinados domínios.
 
 1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos]** de configuração.
 1. Para exportar a configuração atual para um arquivo, clique em **[!UICONTROL Exportar]** e salve o arquivo de configuração em outro local.
