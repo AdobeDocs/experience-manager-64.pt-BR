@@ -1,8 +1,8 @@
 ---
 title: Ideação básica
 seo-title: Ideação básica
-description: Visão geral do recurso de ideias
-seo-description: Visão geral do recurso de ideias
+description: Visão geral do recurso de ideação
+seo-description: Visão geral do recurso de ideação
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 4%
 
 ---
 
