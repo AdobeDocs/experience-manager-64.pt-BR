@@ -54,13 +54,13 @@ Este documento supõe que você já esteja familiarizado com a criação e ediç
 >[!NOTE]
 >
 >O tutorial a seguir também pode ser de interesse para configurar um modelo de página editável em um novo projeto:\
->[Introdução ao AEM Sites Parte 2 - Criar uma página básica e um modelo](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Introdução ao AEM Sites Parte 2 - Criação de uma página básica e um modelo](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
 A criação de modelos editáveis é feita principalmente com o console de [modelo e o editor](/help/sites-authoring/templates.md) de modelo por um autor de modelo. Esta seção apresenta uma visão geral deste processo e apresenta uma descrição do que ocorre a nível técnico.
 
-Para obter informações sobre como usar modelos editáveis em um projeto do AEM, consulte [Criar um projeto do AEM usando Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criar um projeto AEM usando Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 Ao criar um novo modelo editável:
 
@@ -180,12 +180,12 @@ Uma lista de todas as entradas permitidas é criada. Se qualquer configuração 
 
 Para criar uma nova pasta, você pode:
 
-* Programaticamente ou com o CRXDE Lite
+* Programaticamente ou com CRXDE Lite
 * Usando o navegador de configuração
 
 ### Uso do CRXDE Lite {#using-crxde-lite}
 
-1. Uma nova pasta (em /conf) pode ser criada para sua instância de forma programática ou com o CRXDE Lite.
+1. Uma nova pasta (em /conf) pode ser criada para sua instância de forma programática ou com CRXDE Lite.
 
    Deve ser utilizada a seguinte estrutura:
 
@@ -239,7 +239,7 @@ As pastas de modelo para a implementação [de referência](/help/sites-developi
 
 #### O Grupo de autores-modelo {#the-template-authors-group}
 
-O `template-authors` grupo é o grupo usado para gerenciar o acesso aos modelos e vem como padrão com o AEM, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
+O `template-authors` grupo é o grupo usado para gerenciar o acesso aos modelos e vem como padrão com AEM, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
 
 >[!CAUTION]
 >
@@ -254,7 +254,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
   <tr> 
    <th>Caminho</th> 
    <th>Função / Grupo</th> 
-   <th>Permissões    <br /> </th> 
+   <th>Permissões <br /> </th> 
    <th>Descrição</th> 
   </tr> 
   <tr> 
@@ -314,7 +314,7 @@ Os modelos não devem mais ser armazenados em `/conf/global`, no entanto, para a
   <tr> 
    <th>Caminho</th> 
    <th>Função / Grupo</th> 
-   <th>Permissões    <br /> </th> 
+   <th>Permissões <br /> </th> 
    <th>Descrição</th> 
   </tr> 
   <tr> 
@@ -378,7 +378,7 @@ Ao criar um novo modelo, é necessário especificar um tipo de modelo:
    * A política do nó raiz, que define os componentes permitidos no editor de modelo.
    * É recomendável definir os pontos de interrupção para a grade responsiva e a configuração do emulador móvel no tipo de modelo. Isso é opcional, pois a configuração também pode ser definida no modelo individual (consulte Tipo de [modelo e Grupos](/help/sites-developing/page-templates-editable.md#template-type-and-mobile-device-groups)de dispositivos móveis).
 
-* O AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página HTML5 e Página de formulário adaptável.
+* AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página HTML5 e Página de formulário adaptável.
 
    * Exemplos adicionais são fornecidos como parte do conteúdo de amostra [We.Retail](/help/sites-developing/we-retail.md) .
 
@@ -430,7 +430,7 @@ Ao criar um novo modelo editável, o valor é copiado do tipo de modelo para o m
 Se você tiver criado um modelo que possa servir como a base de outros modelos, poderá copiar esse modelo como um tipo de modelo.
 
 1. Crie um modelo como faria com qualquer modelo editável [como documentado aqui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), que servirá de base para o seu tipo de modelo.
-1. Usando o CRXDE Lite, copie o modelo recém-criado do `templates` nó para o `template-types` nó na pasta [](/help/sites-developing/page-templates-editable.md#template-folders)de modelo.
+1. Usando o CRXDE Lite, copie o modelo recém-criado do `templates` nó para o `template-types` nó na pasta [](/help/sites-developing/page-templates-editable.md#template-folders)template.
 1. Exclua o modelo do `templates` nó na pasta [](/help/sites-developing/page-templates-editable.md#template-folders)de modelo.
 1. Na cópia do modelo que está sob o `template-types` nó, exclua todas as `cq:template` propriedades e `cq:templateType``jcr:content` .
 
@@ -554,7 +554,7 @@ As políticas do conteúdo (ou design) definem as propriedades do design de um c
 
 >[!NOTE]
 >
->As páginas criadas a partir de modelos editáveis não ofertas um modo de Design no editor de páginas.
+>As páginas criadas a partir de modelos editáveis não ofertas em um modo de Design no editor de páginas.
 >
 >A `policies` árvore de um modelo editável tem a mesma hierarquia que a configuração do modo de design de um modelo estático em:
 >
