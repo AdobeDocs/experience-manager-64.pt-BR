@@ -1,8 +1,8 @@
 ---
 title: Desenvolvimento (genérico)
 seo-title: Desenvolvimento (genérico)
-description: A estrutura de integração inclui uma camada de integração com uma API, permitindo que você crie componentes do AEM para recursos de eCommerce
-seo-description: A estrutura de integração inclui uma camada de integração com uma API, permitindo que você crie componentes do AEM para recursos de eCommerce
+description: A estrutura de integração inclui uma camada de integração com uma API, permitindo que você crie componentes AEM para recursos de eCommerce
+seo-description: A estrutura de integração inclui uma camada de integração com uma API, permitindo que você crie componentes AEM para recursos de eCommerce
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >[A documentação](/help/sites-developing/ecommerce.md#api-documentation) da API também está disponível.
 
-A estrutura de integração inclui uma camada de integração com uma API. Isso permite que você crie componentes do AEM para recursos de comércio eletrônico (independentemente do seu mecanismo de comércio eletrônico específico). Ele também permite que você use o banco de dados CRX interno ou conecte um sistema de comércio eletrônico e extraia dados do produto para o AEM.
+A estrutura de integração inclui uma camada de integração com uma API. Isso permite criar componentes AEM para recursos de eCommerce (independentemente do seu mecanismo de eCommerce específico). Ele também permite que você use o banco de dados CRX interno ou conecte um sistema de comércio eletrônico e extraia dados do produto para o AEM.
 
-Vários componentes prontos para uso do AEM são fornecidos para usar a camada de integração. Atualmente, eles são:
+Vários componentes predefinidos AEM são fornecidos para usar a camada de integração. Atualmente, eles são:
 
 * Um componente de exibição de produto
 * Um carrinho de compras
@@ -35,17 +35,17 @@ Vários componentes prontos para uso do AEM são fornecidos para usar a camada d
 * Check-out
 * Pesquisar  
 
-Para pesquisar, é fornecido um gancho de integração que permite usar a pesquisa do AEM, uma pesquisa de terceiros (como Search&amp;Promote) ou uma combinação de uma pesquisa.
+Para pesquisar, é fornecido um gancho de integração que permite usar a pesquisa AEM, uma pesquisa de terceiros (como o Search &amp; Promote) ou uma combinação dela.
 
 ## Seleção do mecanismo de comércio eletrônico {#ecommerce-engine-selection}
 
-A estrutura eCommerce pode ser usada com qualquer solução de eCommerce, o mecanismo usado precisa ser identificado pelo AEM - mesmo quando o mecanismo genérico AEM é usado:
+A estrutura de eCommerce pode ser usada com qualquer solução de eCommerce, o mecanismo usado precisa ser identificado pelo AEM - mesmo quando o mecanismo genérico AEM é usado:
 
 * Os mecanismos de comércio eletrônico são serviços OSGi que oferecem suporte à `CommerceService` interface
 
    * Os mecanismos podem ser diferenciados por uma propriedade `commerceProvider` de serviço
 
-* Suporte ao AEM `Resource.adaptTo()` para `CommerceService` e `Product`
+* AEM suporte `Resource.adaptTo()` para `CommerceService` e `Product`
 
    * A `adaptTo` implementação procura uma `cq:commerceProvider` propriedade na hierarquia do recurso:
 
@@ -56,10 +56,10 @@ A estrutura eCommerce pode ser usada com qualquer solução de eCommerce, o meca
 
 * A `cq:commerceProvider` propriedade é também utilizada para fazer referência à definição de fábrica de comércio adequada.
 
-   * Por exemplo, uma `cq:commerceProvider` propriedade com o valor geometrixx corresponderá à configuração OSGi para o **Day CQ Commerce Fatory para Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - onde o parâmetro `commerceProvider` também tem o valor `geometrixx`.
+   * Por exemplo, uma `cq:commerceProvider` propriedade com o valor geometrixx se correlacionará à configuração OSGi para o **Day CQ Commerce Fatory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - onde o parâmetro `commerceProvider` também tem o valor `geometrixx`.
    * Aqui, outras propriedades podem ser configuradas (quando apropriado e disponível).
 
-Em uma instalação padrão do AEM, uma implementação específica é necessária, por exemplo:
+Em uma instalação padrão AEM uma implementação específica é necessária, por exemplo:
 
 |  |  |
 |---|---|
@@ -84,7 +84,7 @@ Em uma instalação padrão do AEM, uma implementação específica é necessár
 
 >[!NOTE]
 >
->Usando o CRXDE Lite, você pode ver como isso é tratado no componente do produto para a implementação genérica do AEM:
+>Usando o CRXDE Lite, você pode ver como isso é tratado no componente do produto para a implementação genérica AEM:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -125,7 +125,7 @@ Qualquer recurso de produto pode ser representado por um `Product API`. A maiori
 >
 >Com efeito, os eixos variantes são determinados pelo que quer que `Product.getVariantAxes()` retorne:
 >
->* para a implementação genérica, o AEM o lê de uma propriedade nos dados do produto ( `cq:productVariantAxes`)
+>* para a implementação genérica, AEM lê-la de uma propriedade nos dados do produto ( `cq:productVariantAxes`)
 >
 >
 Embora os produtos (em geral) possam ter vários eixos variantes, o componente de produto pronto para uso trata apenas de dois:
@@ -259,7 +259,7 @@ public class AxisFilter implements VariantFilter {
          * Um nó de produto que contém todas as propriedades localmente (e não contém uma propriedade productData) herda os atributos de produto diretamente de seus próprios ancestrais.
 
 
-* **Estrutura do produto genérico AEM**
+* **Estrutura do produto AEM-genérico**
 
    * Cada variante deve ter seu próprio nó de folha.
    * A interface do produto representa produtos e variantes, mas o nó do repositório relacionado é específico sobre o qual ele é.
@@ -335,16 +335,16 @@ public class AxisFilter implements VariantFilter {
 
 * Armazenamento
 
-   * Nos carrinhos de caso genéricos do AEM são armazenados no [ClientContext](/help/sites-administering/client-context.md)
+   * No AEM-genérico, os cartões de memória são armazenados no [ClientContext](/help/sites-administering/client-context.md)
 
 **Personalização**
 
-* A personalização deve sempre ser conduzida pelo [ClientContext](/help/sites-administering/client-context.md).
+* A personalização deve ser sempre conduzida pelo [ClientContext](/help/sites-administering/client-context.md).
 * Um ClientContext `/version/` do carrinho é criado em todos os casos:
 
    * Os produtos devem ser adicionados utilizando o `CommerceSession.addCartEntry()` método.
 
-* A seguir está um exemplo de informações do carrinho no carrinho ClientContext:
+* A seguir está um exemplo de informações do carrinho no carrinho de ClientContexts:
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -479,8 +479,8 @@ O ponto de entrada da API de pesquisa é o `CommerceService#search` método que 
       * `PerfectPartnerPromotionHandler`, que aplica um desconto de produto absoluto ou percentual se o produto parceiro também estiver no carrinho
    * O ClientContext `SegmentMgr` resolve segmentos e o ClientContext `CartMgr` resolve promoções. Cada promoção sujeita a pelo menos um segmento resolvido será acionada.
 
-      * As promoções por cabo são enviadas de volta ao servidor por meio de uma chamada AJAX para recalcular o carrinho.
-      * Promoções com Fired (e Vouchers adicionados) também são mostrados no painel ClientContext.
+      * As Promoções Fired são enviadas de volta ao servidor por meio de uma chamada AJAX para recalcular o carrinho.
+      * Promoções por fios (e Vouchers adicionados) também são mostrados no painel ClientContext.
 
 
 
