@@ -1,8 +1,8 @@
 ---
 title: Criar páginas
 seo-title: Criar páginas
-description: Há duas visões gerais para a criação com o AEM. (1) Primeiros passos para autores - uma introdução para novos autores e (2) Guia rápido para a criação de páginas - um guia rápido (de alto nível) para as ações principais.
-seo-description: Há duas visões gerais para a criação com o AEM. (1) Primeiros passos para autores - uma introdução para novos autores e (2) Guia rápido para a criação de páginas - um guia rápido (de alto nível) para as ações principais.
+description: Há duas visões gerais para a criação com AEM. (1) Primeiros passos para autores - uma introdução para novos autores e (2) Guia rápido para a criação de páginas - um guia rápido (de alto nível) para as ações principais.
+seo-description: Há duas visões gerais para a criação com AEM. (1) Primeiros passos para autores - uma introdução para novos autores e (2) Guia rápido para a criação de páginas - um guia rápido (de alto nível) para as ações principais.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 translation-type: tm+mt
 source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 78%
 
 ---
 
 
 # Criar páginas{#authoring-pages}
 
-A seguir, é apresentada uma visão geral da criação com o AEM:
+A seguir, é apresentada uma visão geral da criação com AEM:
 
 * [Primeiros passos para criadores](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - uma introdução para novos criadores
 
