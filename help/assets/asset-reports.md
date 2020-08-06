@@ -95,7 +95,7 @@ Para gerar relatórios, verifique se:
 
    ![Página de detalhes do relatório Compartilhamento de links](assets/link_share.png)
 
-1. Clique em **[!UICONTROL Avançar]** na barra de ferramentas.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. Na página **[!UICONTROL Configurar colunas]** , algumas colunas são selecionadas para aparecerem no relatório por padrão. É possível selecionar mais colunas. Desmarque uma coluna selecionada para excluí-la no relatório.
 
@@ -105,7 +105,7 @@ Para gerar relatórios, verifique se:
 
    ![Selecionar ou desmarcar colunas de relatório](assets/custom_columns.png)
 
-1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
+1. Click **[!UICONTROL Create]** from the toolbar. Uma mensagem notifica que a geração de relatórios foi iniciada.
 1. Na página Relatórios [!UICONTROL de] ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Enfileirado]ou [!UICONTROL Programado]. O mesmo status aparece na caixa de entrada de notificações.Para visualização na página de relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Visualização]** na barra de ferramentas.
 
    ![Um relatório gerado](assets/report_page.png)
@@ -146,7 +146,7 @@ Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
    Para adicionar mais colunas personalizadas, clique em **[!UICONTROL Adicionar]** e repita as etapas 5 e 6.
 
-1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
+1. Click **[!UICONTROL Create]** from the toolbar. Uma mensagem notifica que a geração de relatórios foi iniciada.
 
 ## Configurar o serviço de remoção {#configure-purging-service}
 
