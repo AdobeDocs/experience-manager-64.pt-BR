@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## Visão geral {#overview}
 
-O AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando os serviços configurados em um modelo de dados de formulário de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a `guidelib.dataIntegrationUtils.executeOperation` API no editor de código do editor [de](/help/forms/using/rule-editor.md)regras.
+A AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando os serviços configurados em um modelo de dados de formulário a partir de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a `guidelib.dataIntegrationUtils.executeOperation` API no editor de código do editor [de](/help/forms/using/rule-editor.md)regras.
 
-Este documento foca em gravar um JavaScript usando a `guidelib.dataIntegrationUtils.executeOperation` API para chamar um serviço.
+Esse documento se concentra em escrever um JavaScript usando a `guidelib.dataIntegrationUtils.executeOperation` API para chamar um serviço.
 
 ## Uso da API {#using-the-api}
 
