@@ -1,8 +1,8 @@
 ---
 title: Vídeo
 seo-title: Vídeo
-description: Saiba mais sobre os ativos AEM do gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos para autocodificação no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente dos ativos AEM. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
-seo-description: Saiba mais sobre os ativos AEM do gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos para autocodificação no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente dos ativos AEM. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
+description: Saiba mais sobre o gerenciamento centralizado de ativos de vídeo no AEM Assets, onde você pode fazer upload de vídeos para autocodificação no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente da AEM Assets. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
+seo-description: Saiba mais sobre o gerenciamento centralizado de ativos de vídeo no AEM Assets, onde você pode fazer upload de vídeos para autocodificação no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente da AEM Assets. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 55%
 
 ---
 
@@ -19,10 +22,10 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 Os ativos fornecem gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos diretamente para os Ativos para autocodificação para o Dynamic Media Classic (Scene7) e acessar vídeos do Dynamic Media Classic diretamente dos Ativos para criação de página.
 
-A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado a todas as telas (detecção automática de dispositivo e largura de banda).
+A integração de vídeo do Dynamic Media Classic amplia o alcance do vídeo otimizado para todas as telas (detecção automática de dispositivos e largura de banda).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
-* Assets: é possível incluir conjuntos de vídeos adaptáveis, em vez de somente ativos de vídeo individuais. Um conjunto de vídeos adaptáveis é um contêiner para todas as representações de vídeo necessárias para reproduzir o vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo codificadas em diferentes taxas de bits e formatos, como 400 kbps, 800 kbps e 1000 kbps. Você usa um conjunto de vídeos adaptáveis, juntamente com o componente de vídeo do S7, para transmitir vídeo adaptável em vários tipos de telas, incluindo telas de computadores, e dispositivos móveis com iOS, Android, Blackberry e Windows. Consulte a [documentação do Scene7 sobre conjuntos de vídeos adaptáveis](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html) para obter mais informações.
+* Assets: é possível incluir conjuntos de vídeos adaptáveis, em vez de somente ativos de vídeo individuais. Um conjunto de vídeos adaptáveis é um contêiner para todas as representações de vídeo necessárias para reproduzir o vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo que são codificadas em diferentes taxas de bits e formatos, como 400 kbps, 800 kbps e 1000 kbps. Você usa um conjunto de vídeos adaptáveis, juntamente com o componente de vídeo do S7, para transmitir vídeo adaptável em vários tipos de telas, incluindo telas de computadores, e dispositivos móveis com iOS, Android, Blackberry e Windows. Consulte a [documentação do Scene7 sobre conjuntos de vídeos adaptáveis](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html) para obter mais informações.
 
 ## Sobre o FFMPEG e o Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -33,7 +36,7 @@ O processo de codificação de vídeo padrão se baseia no uso da integração e
 
 Lembre-se de que ativar e configurar a integração do Dynamic Media Classic não remove nem desativa automaticamente essas duas etapas do fluxo de trabalho do fluxo de trabalho de ingestão DAM predefinido. Se você já usa a codificação de vídeo baseada em FFMPEG no AEM, é provável que tenha o FFMPEG instalado em seus ambientes de criação. Nesse caso, um novo vídeo assimilado usando DAM seria codificado duas vezes: uma vez do codificador FFMPEG e uma vez da integração do Dynamic Media Classic.
 
-Se você tiver a codificação de vídeo baseada em FFMPEG configurada no AEM e o FFMPEG instalado, a Adobe recomenda remover os dois fluxos de trabalho FFMPEG dos fluxos de trabalho de ingestão de DAM.
+Se você tiver a codificação de vídeo baseada em FFMPEG em AEM configurada e FFMPEG instalada, o Adobe recomenda que você remova os dois workflows FFMPEG de seus workflows de ingestão de DAM.
 
 ## Formatos suportados {#supported-formats}
 
@@ -53,9 +56,9 @@ Se a resposta for “sim” para ambas as perguntas, faça upload do vídeo dire
 
 ### If you are uploading your video directly to Adobe DAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
-Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload do Adobe DAM primeiro. Este é o fluxo de trabalho recomendado:
+Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload para o Adobe DAM primeiro. Este é o fluxo de trabalho recomendado:
 
-1. Carregue o ativo de vídeo no Adobe DAM e codifique e publique automaticamente no Dynamic Media Classic.
+1. Faça upload do ativo de vídeo para Adobe DAM e codifique e publique automaticamente no Dynamic Media Classic.
 1. No AEM, acesse os ativos de vídeo no WCM na guia **[!UICONTROL Filmes]** do Localizador de conteúdo.
 1. Author with **[!UICONTROL Scene7 Video]** or **[!UICONTROL Foundation Video]** component.
 
@@ -119,7 +122,7 @@ A seguinte matriz explica quando você deve usar cada componente:
 
 >[!NOTE]
 >
->Pronto para uso, o componente de vídeo do S7 usa o perfil de vídeo universal. Entretanto, você pode obter o player de vídeo baseado em HTML5 para uso pelo AEM, executando um dos procedimentos a seguir no Scene7: copie o código incorporado do player de vídeo HTML5 e coloque-o na página do AEM.
+>Pronto para uso, o componente de vídeo do S7 usa o perfil de vídeo universal. No entanto, você pode obter o player de vídeo baseado em HTML5 para uso AEM executando um dos procedimentos a seguir no Scene7: copie o código incorporado do player de vídeo HTML5 e coloque-o na sua página de AEM.
 
 ## Componente de vídeo do AEM {#aem-video-component}
 
@@ -149,7 +152,7 @@ As diferentes codificações de vídeo são criadas de acordo com as predefiniç
 
 1. No AEM, toque em **[!UICONTROL Tools > Configuration Console**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Crie um novo perfil de vídeo do S7. **[!UICONTROL No]** Novo... , selecione **[!UICONTROL Criar página]** e, em seguida, selecione o modelo de perfil de vídeo do Scene7. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar]**.
+1. Crie um novo perfil de vídeo do S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -177,8 +180,8 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 >
 >As alterações feitas no design exigem que ele seja aplicado para serem aplicadas na publicação.
 
-1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Em seguida, exclua os perfis predefinidos e adicione os novos perfis de vídeo S7. A ordem da lista de perfis na caixa de diálogo de design define a ordem do elemento de fontes de vídeo ao renderizar.
-1. Para navegadores que não suportam HTML5, o componente de vídeo permite configurar um fallback Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configure as configurações do Flash player e atribua um perfil de fallback para o Flash player.
+1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Em seguida, exclua os perfis predefinidos e adicione os novos perfis de vídeo S7. A ordem da lista do perfil na caixa de diálogo de design define a ordem do elemento de fontes de vídeo ao renderizar.
+1. Para navegadores que não suportam HTML5, o componente de vídeo permite configurar um fallback de Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configure as configurações do player de Flash e atribua um perfil de fallback ao player flash.
 
 #### Lista de verificação {#checklist}
 
