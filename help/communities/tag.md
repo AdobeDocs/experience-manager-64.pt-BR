@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
 
 # Tag Essentials {#tag-essentials}
 
-Quando os componentes do AEM Communities são configurados com marcação ativada, os membros da comunidade podem marcar o conteúdo que publicam no ambiente de publicação.
+Quando os componentes do AEM Communities são configurados com marcação ativada, os membros da comunidade podem marcar o conteúdo que publicaram no ambiente de publicação.
 
-A infraestrutura subjacente para tags aplicadas no ambiente de publicação é a mesma que para tags aplicadas ao conteúdo no ambiente do autor, como páginas e ativos:
+A infraestrutura subjacente para tags aplicadas no ambiente publish é a mesma que para tags aplicadas ao conteúdo no ambiente autor, como páginas e ativos:
 
 * Consulte [Administração de tags](../../help/sites-administering/tags.md) e [marcação de conteúdo](tag-ugc.md) gerado pelo usuário (UGC) para obter informações sobre como criar e gerenciar tags.
 
