@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -27,23 +30,24 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->Se você precisar de informações de página no formato JSON para fornecer a entrega de conteúdo para canais que não sejam páginas tradicionais da Web do AEM, como:
+>Se você precisar de informações de página no formato JSON para fornecer o delivery do conteúdo a canais que não são tradicionais AEM páginas da Web, como:
 >
 >* Aplicativos de página única
 >* Aplicativos móveis nativos
 >* Outros canais e pontos de contato externos ao AEM
+
 >
 >
-Consulte o documento Exportador [JSON para Content Services](/help/sites-developing/json-exporter.md).
+Consulte o Exportador [JSON do documento para serviços](/help/sites-developing/json-exporter.md)de conteúdo.
 
 ## Provedores de informações da página {#page-information-providers}
 
-Os componentes da página podem ser associados a um ou mais `com.day.cq.wcm.api.PageInfoProvider` serviços que geram metadados da página. O servlet PageInfo chama cada serviço PageInfoProvider e agrega os metadados:
+Os componentes da página podem ser associados a um ou mais `com.day.cq.wcm.api.PageInfoProvider` serviços que geram metadados da página. O servlet PageInfo chama cada serviço PageInfoProvider e agregação os metadados:
 
 1. O cliente HTTP envia uma solicitação para o servlet PageInfo, que inclui o URL da página.
 1. O servlet PageInfo descobre qual componente renderiza a página.
 1. O servlet PageInfo chama cada PageInfoProvider associado ao componente.
-1. O servlet agrega os metadados que cada PageInfoProvider retorna e adiciona os metadados à resposta HTTP em um objeto JSON.
+1. O servlet agregação os metadados que cada PageInfoProvider retorna e adiciona os metadados à resposta HTTP em um objeto JSON.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -55,13 +59,13 @@ Os componentes da página podem ser associados a um ou mais `com.day.cq.wcm.api.
 
 O `/libs/foundation/components/page` componente está associado aos seguintes serviços PageInfoProvider:
 
-* **** Provedor de status de página padrão: Informações sobre o status da página, como se ela está bloqueada, se a página é a carga de um fluxo de trabalho ativo e quais fluxos de trabalho estão disponíveis para a página.
-* **** Provedor de Informações de Relacionamento ao Vivo: Informações relacionadas ao Gerenciamento de vários sites (MSM), como se a página faz parte de uma Impressão azul e se é uma Live Copy.
-* **** Servlet de Idioma de Conteúdo: O idioma da página atual e as informações sobre cada idioma no qual a página está disponível.
-* **** Provedor de status do fluxo de trabalho: Informações de status sobre o fluxo de trabalho em execução que tem a página como uma carga.
-* **** Provedor de informações do pacote de fluxo de trabalho: Informações sobre cada pacote de fluxo de trabalho armazenado no repositório e se cada pacote contém o recurso atual.
-* **** Provedor de informações do emulador: Informações sobre os emuladores de dispositivo móvel disponíveis para este recurso. Se o componente de página não renderizar páginas móveis, nenhum emulador estará disponível.
-* **** Provedor de informações de anotações: Informações sobre anotações que estão na página.
+* **Provedor de status de página padrão:** Informações sobre o status da página, como se ela está bloqueada, se a página é a carga de um fluxo de trabalho ativo e quais workflows estão disponíveis para a página.
+* **Provedor de Informações de Relacionamento ao Vivo:** Informações relacionadas ao Gerenciamento de vários sites (MSM), como se a página faz parte de uma Impressão azul e se é uma Live Copy.
+* **Servlet de Idioma de Conteúdo:** O idioma da página atual e as informações sobre cada idioma no qual a página está disponível.
+* **Provedor de status do fluxo de trabalho:** Informações de status sobre o fluxo de trabalho em execução que tem a página como uma carga.
+* **Provedor de Informações do Pacote de Fluxo de Trabalho:** Informações sobre cada pacote de fluxo de trabalho armazenado no repositório e se cada pacote contém o recurso atual.
+* **Provedor de informações do emulador:** Informações sobre os emuladores de dispositivo móvel disponíveis para este recurso. Se o componente de página não renderizar páginas móveis, nenhum emulador estará disponível.
+* **Provedor de informações de anotações:** Informações sobre anotações que estão na página.
 
 Por exemplo, o servlet PageInfo retorna a seguinte resposta JSON para o `/content/we-retail/us/en` nó:
 
@@ -494,7 +498,7 @@ O serviço aplica o resultado cumulativo de todos os filtros. Por exemplo, os se
 
 >[!NOTE]
 >
->Ao trabalhar com o AEM, há vários métodos de gerenciar as configurações desses serviços. Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
+>Ao trabalhar com AEM existem vários métodos de gerenciamento das configurações para esses serviços. Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
 Por exemplo, para configurar o serviço usando o CRXDE Lite:
 
@@ -528,7 +532,7 @@ Para configurar o serviço na origem do projeto:
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Dentro dos colchetes (`[]`) que delimitam a `workflowpackageinfoprovider.filter` propriedade, digite uma lista separada por vírgulas de valores de filtro semelhante ao exemplo a seguir:
+1. Dentro dos colchetes (`[]`) que rodeiam a `workflowpackageinfoprovider.filter` propriedade, digite uma lista separada por vírgulas de valores de filtro semelhante ao exemplo a seguir:
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
