@@ -1,6 +1,6 @@
 ---
-title: 'Criação de modelos de páginas '
-seo-title: 'Criação de modelos de páginas '
+title: 'Criação de modelos de páginas  '
+seo-title: 'Criação de modelos de páginas  '
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
 seo-description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
 uuid: ffdc760d-9504-4d13-9f74-a58499632b78
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
 source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+workflow-type: tm+mt
+source-wordcount: '4811'
+ht-degree: 96%
 
 ---
 
 
-# Criação de modelos de páginas  {#creating-page-templates}
+# Criação de modelos de páginas   {#creating-page-templates}
 
 Ao criar uma página, você deve selecionar um modelo, que será usado como a base de criação da nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados.
 
@@ -181,7 +184,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >
    >Quando um modelo novo for criado, ele será marcado como **Rascunho** no console. Isso indica que ainda não está disponível para uso por autores da página.
 
-### Definir propriedades do modelo - Autor do modelo  {#defining-template-properties-template-author}
+### Definir propriedades do modelo - Autor do modelo   {#defining-template-properties-template-author}
 
 Um modelo pode ter as seguintes propriedades:
 
@@ -226,7 +229,7 @@ Para definir a miniatura do modelo:
 
 1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e fechar**.
 
-### Ativar e permitir um modelo - Autor do modelo  {#enabling-and-allowing-a-template-template-author}
+### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
 
 Para poder usar um modelo ao criar uma página é necessário:
 
@@ -287,7 +290,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 1. Selecione **Publicar** na barra de ferramentas para concluir a ação.
 
-## Editar modelos - Autores do modelo  {#editing-templates-template-authors}
+## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
 
 Ao criar ou editar um modelo há vários aspectos que podem ser definidos. A edição modelos é semelhante à criação de página.
 
@@ -321,7 +324,7 @@ Os seguintes aspectos de um modelo podem ser editados:
 
 * [Estilos](/help/sites-authoring/style-system.md)
 
-   O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
+   O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 
    Consulte a [documentação do Style System](/help/sites-authoring/style-system.md) para obter mais informações.
 
@@ -362,11 +365,13 @@ No modo **Estrutura** do editor de modelo:
    * No navegador **Componentes** no painel lateral.
    * Ao usar a opção **Inserir componente** (ícone **+**), disponível na barra de ferramentas dos componentes já no modelo ou na caixa **Arrastar componentes até aqui**.
    * Ao arrastar um ativo (no navegador de **Ativos** no painel lateral) diretamente no modelo para gerar o componente adequado no local.
+
    Uma vez adicionado, cada componente é marcado com:
 
    * Uma borda
    * Um marcador para mostrar o tipo de componente
    * Um marcador para mostrar quando o componente for desbloqueado
+
    >[!NOTE]
    >
    >Ao adicionar um componente de **Título** pronto ao modelo, ele conterá **estrutura** de texto padrão.
@@ -413,6 +418,7 @@ No modo **Estrutura** do editor de modelo:
 
    * Do lado esquerdo da caixa de diálogo, em **Política**, você tem a capacidade de selecionar uma política existente.
    * Do lado direito da caixa de diálogo, em **Propriedades**, você pode definir as propriedades específicas ao tipo de componente.
+
    As propriedades disponíveis dependem do componente selecionado. Por exemplo, para um componente de texto, as propriedades definem as opções de copiar e colar, de formatação e o estilo de parágrafo, entre outras.
 
    ***Política***
@@ -447,6 +453,7 @@ No modo **Estrutura** do editor de modelo:
 
    * Principal
    * Recursos
+
    *Principal*
 
    Na guia **Principal**, são definidas as configurações mais importantes do componente.
@@ -502,6 +509,7 @@ No modo **Estrutura** do editor de modelo:
    * Componentes permitidos
    * Componentes padrão
    * Configurações receptivas
+
    *Componentes permitidos*
 
    Na guia **Componentes permitidos**, você define quais componentes estão disponíveis para o contêiner de layout.
@@ -511,6 +519,7 @@ No modo **Estrutura** do editor de modelo:
    * Um sinal de menos indica que pelo menos um, mas não todos os itens em um grupo foram selecionados.
    * Uma pesquisa está disponível para filtrar um componente pelo nome.
    * As pontuações listadas à direita do nome do grupo de componentes representa o número total de componentes selecionados nesses grupos independentemente do filtro.
+
    ![chlimage_1-374](assets/chlimage_1-374.png)
 
    *Componentes padrão*
@@ -539,6 +548,7 @@ No modo **Estrutura** do editor de modelo:
 
       * O conteúdo já inserido é considerado conteúdo inicial e é visível apenas no modo **Conteúdo inicial**.
    * Os pais do componente desbloqueado não podem ser movidos, recortados ou excluídos.
+
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
    Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando estiverem no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
@@ -608,6 +618,7 @@ Para acessar a caixa de diálogo **Design da página**:
 
    * A metade esquerda define as [políticas da página](/help/sites-authoring/templates.md#page-policies)
    * A metade direita define as [propriedades da página](/help/sites-authoring/templates.md#page-properties)
+
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
 #### Políticas da página {#page-policies}
@@ -675,7 +686,7 @@ Usando a opção **Propriedades da página inicial**, é possível definir as [p
 
 1. Confirme suas definições em **Concluído**.
 
-## Práticas recomendadas  {#best-practices}
+## Práticas recomendadas   {#best-practices}
 
 Ao criar modelos você deve considerar:
 
@@ -698,6 +709,7 @@ Ao criar modelos você deve considerar:
 
       * Apenas da estrutura - aplicada instantaneamente
       * Contém conteúdo inicial - somente nas páginas criadas após a alteração
+
    Tome cuidado especial ao:
 
    * Bloquear ou desbloquear componentes em modelos permitidos.
@@ -705,6 +717,7 @@ Ao criar modelos você deve considerar:
 
       * Desbloquear componentes (que foram bloqueados) ficará ausente nas páginas existentes.
       * Bloquear componentes (que eram editáveis) ocultará esse conteúdo nas páginas.
+
    >[!NOTE]
    >
    >O AEM dá avisos explícitos ao alterar o status de bloqueio de componentes nos modelos que não são mais rascunhos.
