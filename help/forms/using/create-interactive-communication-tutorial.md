@@ -26,13 +26,13 @@ Este tutorial é uma etapa da série [Criar sua primeira comunicação](/help/fo
 
 Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento, modelos e temas para a versão da Web, você poderá start criando uma Comunicação Interativa.
 
-As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de comunicação interativa com impressão como mestre. A opção Imprimir como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam sincronizadas no canal da Web. No entanto, os autores de Comunicações interativas podem interromper a herança de componentes específicos no canal da Web.
+As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de comunicação interativa com impressão como o principal. A opção Imprimir como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam sincronizadas no canal da Web. No entanto, os autores de Comunicações interativas podem interromper a herança de componentes específicos no canal da Web.
 
 Este tutorial o orienta pelas etapas para criar comunicações interativas para canais de impressão e da Web. No final deste tutorial, você poderá:
 
 * Criar comunicação interativa para o canal de impressão
 * Criar comunicação interativa para o canal da Web
-* Criar Comunicações Interativas Impressas e da Web com Imprimir como Mestre
+* Crie Comunicações interativas da Web e da impressão com a opção Imprimir como Principal
 
 ## Criar Comunicações Interativas para Impressão e Web sem sincronização {#create-interactive-communications-for-print-and-web-with-no-synchronization}
 
@@ -50,12 +50,12 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 
 **Imagens:** PayNow e ValueAddedServices
 
-1. Faça logon na instância do autor do AEM e navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e Documentos]**.
+1. Faça logon na instância do autor AEM e navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Toque em **Criar** e selecione Comunicação **** interativa. O assistente **Criar comunicação** interativa é exibido.
 1. Especifique **create_first_ic** no **Título** e no campo **Nome** . Selecione **FDM_Create_First_IC** como o Modelo de dados de formulário e toque em **Próximo**.
 1. No assistente de **Canais** :
 
-   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como mestre para Canal** da Web não está marcada.
+   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como Principal para Canal** da Web não está marcada.
    1. Especifique a pasta **Create_First_IC_models** > **Create_First_IC_Web_Template** como o modelo da Web e toque em **Selecionar**.
    1. Toque em **Criar**.
 
@@ -111,12 +111,12 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 
 **Imagens:** PayNowWeb e ValueAddedServicesWeb
 
-1. Faça logon na instância do autor do AEM e navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e Documentos]**.
+1. Faça logon na instância do autor AEM e navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Toque em **Criar** e selecione Comunicação **** interativa. O assistente **Criar comunicação** interativa é exibido.
 1. Especifique **create_first_ic** no **Título** e no campo **Nome** . Selecione **FDM_Create_First_IC** como o Modelo de dados de formulário e toque em **Próximo**.
 1. No assistente de **Canais** :
 
-   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como mestre para Canal** da Web não está marcada.
+   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como Principal para Canal** da Web não está marcada.
    1. Especifique a pasta **Create_First_IC_models** > **Create_First_IC_Web_Template** como o modelo da Web e toque em **Selecionar**.
    1. Toque em **Criar**.
 
@@ -171,7 +171,7 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
    1. Toque no componente de texto e selecione ![editar](assets/edit.png) (Editar).
    1. Na seção **Borda** , especifique **1,5px** como Largura **da** Borda, selecione **Sólido** como Estilo **da****** **** Borda e especifique 46pxcomo Raio da Borda.
    1. Selecione Vermelho como a cor de plano de fundo do botão na seção **Plano de fundo** .
-   1. No campo **Margem** para a seção **Dimensões e posição** , toque no ícone **Editar simultaneamente** e defina a margem **Direita** como **450px**. Os campos Superior, Inferior e Esquerdo são definidos como vazios.
+   1. No campo **Margem** para a seção **Dimension e posição** , toque no ícone **Editar simultaneamente** e defina a margem **direita** como **450px**. Os campos Superior, Inferior e Esquerdo são definidos como vazios.
 
    ![ic_web_hyperlink](assets/ic_web_hyperlink.png)
 
@@ -188,17 +188,17 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 
 ## Criar Comunicações Interativas para Impressão e Web com sincronização automática {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
-Você também pode criar uma Comunicação interativa ao ativar a sincronização automática entre canais Impressos e da Web. Para ativar a sincronização automática, selecione a opção Imprimir como mestre ao criar a Comunicação interativa. Selecionar a opção Imprimir como mestre garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam refletidas no canal da Web.
+Você também pode criar uma Comunicação interativa ao ativar a sincronização automática entre canais Impressos e da Web. Para ativar a sincronização automática, selecione a opção Imprimir como principal ao criar a Comunicação interativa. Selecionar a opção Imprimir como principal garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam refletidas no canal da Web.
 
 Execute as seguintes etapas para derivar o conteúdo do canal da Web usando o canal de impressão:
 
-1. Faça logon na instância do autor do AEM e navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e Documentos]**.
+1. Faça logon na instância do autor AEM e navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Toque em **Criar** e selecione Comunicação **** interativa. O assistente **Criar comunicação** interativa é exibido.
 1. Especifique **create_first_ic** no **Título** e no campo **Nome** . Selecione **FDM_Create_First_IC** como o Modelo de dados de formulário e toque em **Próximo**.
 1. No assistente de **Canais** :
 
    1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**.
-   1. Marque a caixa de seleção **Usar impressão como mestre para Canal** da Web.
+   1. Marque a caixa de seleção **Usar impressão como Principal para o Canal** da Web.
    1. Especifique a pasta **Create_First_IC_models** > **Create_First_IC_Web_Template** como o modelo da Web e toque em **Selecionar**.
    1. Toque em **Criar**.
 
@@ -207,7 +207,7 @@ Execute as seguintes etapas para derivar o conteúdo do canal da Web usando o ca
 1. Toque em **Editar** para abrir a Comunicação interativa no painel direito.
 1. Execute as etapas 6 - 15 da seção [Criar comunicação interativa para canal](#create-interactive-communication-for-print-channel) de impressão.
 1. Toque na guia **Canais** no painel esquerdo e toque em **Web** para gerar automaticamente conteúdo para o canal da Web a partir do canal Imprimir.
-1. Como a caixa de seleção **Usar impressão como mestre para Canal** da Web está selecionada na etapa 4, o conteúdo e os vínculos são gerados automaticamente para o canal da Web a partir do canal Imprimir.
+1. Como a caixa de seleção **Usar impressão como Principal para o Canal** da Web está selecionada na etapa 4, o conteúdo e os vínculos são gerados automaticamente para o canal da Web a partir do canal Imprimir.
 
    O conteúdo do canal de impressão é inserido abaixo do conteúdo do modelo do canal da Web. Para modificar o conteúdo do canal da Web que foi gerado automaticamente a partir do canal Imprimir, você pode cancelar a herança para qualquer área do público alvo.
 
