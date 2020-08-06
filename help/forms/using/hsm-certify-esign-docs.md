@@ -1,6 +1,6 @@
 ---
 title: Usar o HSM para assinar ou certificar documentos digitalmente
-seo-title: Usar HSM para certificar documentos assinados eletronicamente
+seo-title: Use o HSM para certificar documentos assinados eletronicamente
 description: Use dispositivos HSM ou token para certificar documentos assinados eletronicamente
 seo-description: Use dispositivos HSM ou token para certificar documentos assinados eletronicamente
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
@@ -11,6 +11,9 @@ topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1011'
+ht-degree: 0%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 Os módulos de segurança de hardware (HSM) e os estoques são dispositivos de computação dedicados, endurecidos e resistentes a danos projetados para gerenciar, processar e armazenar com segurança chaves digitais. Esses dispositivos estão conectados diretamente a um computador ou servidor de rede.
 
-O Adobe Experience Manager Forms pode usar credenciais armazenadas em um HSM ou em um token para assinar eletronicamente ou aplicar assinaturas digitais do lado do servidor a um documento. Para usar um dispositivo HSM ou de token com o AEM Forms:
+A Adobe Experience Manager Forms pode usar as credenciais armazenadas em um HSM ou em um token para assinar eletronicamente ou aplicar assinaturas digitais do lado do servidor a um documento. Para usar um HSM ou dispositivo de token com a AEM Forms:
 
 1. Ative o serviço DocAssurance.
-1. Configure certificados para a extensão do Reader.
-1. Crie um alias para o dispositivo HSM ou token no console da Web do AEM.
+1. Configure certificados para a extensão Reader.
+1. Crie um alias para o dispositivo HSM ou token no Console da Web AEM.
 1. Use as APIs do Serviço DocAssurance para assinar ou certificar os documentos com chaves digitais armazenadas no dispositivo.
 
 ## Antes de configurar os dispositivos HSM ou etoken com o AEM Forms {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
-* Instale e configure o software do cliente HSM ou token no mesmo computador que o servidor AEM. O software cliente é necessário para se comunicar com os dispositivos HSM e etoken.
+* Install [AEM Forms add-on](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) package.
+* Instale e configure o software cliente HSM ou etoken no mesmo computador que o servidor AEM. O software cliente é necessário para se comunicar com os dispositivos HSM e etoken.
 * (Somente Microsoft Windows) Defina a variável de ambiente JAVA_HOME_32 para apontar para o diretório onde a versão de 32 bits do Java 8 Development Kit (JDK 8) está instalada. O caminho padrão do diretório é C:\Program Files(x86)\Java\jdk&lt;versão>
-* (Formulários AEM somente no OSGi) Instale o certificado raiz no armazenamento confiável. É necessário verificar o PDF assinado
+* (AEM Forms somente no OSGi) Instale o certificado raiz no armazenamento confiável. É necessário verificar o PDF assinado
 
 >[!NOTE]
 >
@@ -41,13 +44,13 @@ O Adobe Experience Manager Forms pode usar credenciais armazenadas em um HSM ou 
 
 Por padrão, o serviço DocAssurance não está ativado. Execute as seguintes etapas para habilitar o serviço:
 
-1. Pare a instância Autor do ambiente do AEM Forms.
+1. Pare a instância Autor do seu ambiente AEM Forms.
 
 1. Abra o arquivo [AEM_root]\crx-quickstart\conf\sling.properties para edição.
 
    >[!NOTE]
    >
-   >Se você tiver usado o arquivo [AEM_root]\crx-quickstart\bin\start.bat para iniciar a instância do AEM, abra o arquivo [AEM_root]\crx-quickstart\sling.properties para edição.
+   >Se você tiver usado o arquivo [AEM_root]\crx-quickstart\bin\start.bat para start da instância AEM, abra o arquivo [AEM_root]\crx-quickstart\sling.properties para edição.
 
 1. Adicione ou substitua as seguintes propriedades ao arquivo sling.properties:
 
@@ -59,9 +62,9 @@ Por padrão, o serviço DocAssurance não está ativado. Execute as seguintes et
    ```
 
 1. Salve e feche o arquivo sling.properties.
-1. Reinicie a instância do AEM.
+1. Reinicie a instância AEM.
 
-## Configurar certificados para extensões do Reader {#set-up-certificates-for-reader-extensions}
+## Configurar certificados para extensões Reader {#set-up-certificates-for-reader-extensions}
 
 Execute as seguintes etapas para configurar certificados:
 
@@ -73,7 +76,7 @@ Execute as seguintes etapas para configurar certificados:
 
 1. Na página **Editar configurações** do usuário, clique em **Gerenciar armazenamento** de chaves.
 
-1. Na caixa de diálogo Gerenciamento do KeyStore, expanda a opção **Adicionar chave privada do arquivo** do Key Store e forneça um alias. O alias é usado para executar a operação do Reader Extensions.
+1. Na caixa de diálogo Gerenciamento do KeyStore, expanda a opção **Adicionar chave privada do arquivo** do Key Store e forneça um alias. O alias é usado para executar a operação Extensões de Reader.
 1. Para carregar o arquivo de certificado, clique em **Selecionar arquivo** de armazenamento de chave e carregue um `.pfx` arquivo.
 1. Adicione a senha **do armazenamento de** chave, a senha **da chave** privada e o alias **da chave** privada associados ao certificado aos respectivos campos. Clique em **Enviar**.
 
@@ -87,30 +90,32 @@ Execute as seguintes etapas para configurar certificados:
 
 >[!NOTE]
 >
->Para o AEM Forms no OSGi, para verificar o PDF assinado, o certificado raiz instalado no Trust Store.
+>Para AEM Forms no OSGi, para verificar o PDF assinado, o certificado raiz instalado no Armazenamento de confiança.
 
 >[!NOTE]
 >
->Ao mudar para o ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas do Reader Extensions antes de atualizar uma credencial expirada ou de avaliações.
+>Ao mover-se para o ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas de Extensões de Reader antes de atualizar uma credencial expirada ou de avaliações.
 
 ## Criar um alias para o dispositivo {#configuredeviceinaemconsole}
 
 O alias contém todos os parâmetros exigidos por um HSM ou um token. Execute as instruções listadas abaixo para criar um alias para cada credencial HSM ou token que o eSign ou o Digital Signatures usa:
 
-1. Abra o console do AEM. O URL padrão do console do AEM é https://&lt;host>:&lt;porta>/system/console/configMgr
+1. Abra AEM console. O URL padrão AEM console é https://&lt;host>:&lt;porta>/system/console/configMgr
 1. Abra o Serviço **de configuração de credenciais** HSM e especifique os valores para os seguintes campos:
 
    * **Alias** de Credencial: Especifique uma string usada para identificar o alias. Esse valor é usado como uma propriedade para algumas operações do Digital Signatures, como a operação Assinar campo de assinatura.
    * **Caminho** da DLL: Especifique o caminho totalmente qualificado de sua biblioteca de cliente HSM ou de token no servidor. Por exemplo, C:\Program Files\LunaSA\cryptoki.dll. Em um ambiente clusterizado, esse caminho deve ser idêntico para todos os servidores do cluster.
    * **Pino** HSM: Especifique a senha necessária para acessar a chave do dispositivo.
    * **Id** do slot HSM: Especifique um identificador de slot do tipo inteiro. A ID do slot é definida cliente a cliente. Se você registrar um segundo computador em uma partição diferente (por exemplo, HSMPART2 no mesmo dispositivo HSM), o slot 1 será associado à partição HSMPART2 do cliente.
-   **** Observação: *Ao configurar o Etoken, especifique um valor numérico para o campo ID do slot HSM. Um valor numérico é necessário para que as operações de Assinaturas funcionem.*
+
+   **Observação:** *Ao configurar o Etoken, especifique um valor numérico para o campo ID do slot HSM. Um valor numérico é necessário para que as operações de Assinaturas funcionem.*
 
    * **Certificado SHA1**: Especifique o valor SHA1 (impressão digital) do arquivo de chave pública (.cer) para a credencial que você está usando. Verifique se não há espaços usados no valor SHA1. Se você estiver usando um certificado físico, ele não é obrigatório.
    * **Tipo** de dispositivo HSM: Selecione o fabricante do HSM (Luna ou outro) ou do dispositivo eToken.
-   Clique em **Salvar**. O módulo de segurança de hardware está configurado para o AEM Forms. Agora, você pode usar o módulo de segurança de hardware com o AEM Forms para assinar ou certificar documentos.
 
-## Use as APIs do Serviço DocAssurance para assinar ou certificar um documento com chaves digitais armazenadas no dispositivo {#programatically}
+   Clique em **Salvar**. O módulo de segurança de hardware está configurado para AEM Forms. Agora, você pode usar o módulo de segurança de hardware com a AEM Forms para assinar ou certificar documentos.
+
+## Use as APIs do Serviço DocAssurance para assinar ou certificar um documento com chaves digitais armazenadas no dispositivo  {#programatically}
 
 O código de amostra a seguir usa um HSM ou um token para assinar ou certificar um documento.
 
@@ -393,7 +398,7 @@ public class Sign{
 }
 ```
 
-Se você atualizou do AEM 6.0 Form ou do AEM 6.1 Forms e estava usando o serviço DocAssurance na versão anterior, então:
+Se você atualizou de AEM 6.0 Form ou AEM 6.1 Forms e estava usando o serviço DocAssurance na versão anterior, então:
 
 * Para usar o serviço DocAssurance sem um HSM ou dispositivo de token, continue usando o código existente.
 * Para usar o serviço DocAssurance com um HSM ou dispositivo de token, substitua o código de objeto CredentialContext existente pela API listada abaixo.
@@ -409,4 +414,4 @@ Se você atualizou do AEM 6.0 Form ou do AEM 6.1 Forms e estava usando o serviç
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Para obter informações detalhadas sobre APIs e código de amostra do serviço DocAssurance, consulte [Uso programático](/help/forms/using/aem-document-services-programmatically.md)de serviços de documento do AEM.
+Para obter informações detalhadas sobre APIs e código de amostra do serviço DocAssurance, consulte [Uso programático](/help/forms/using/aem-document-services-programmatically.md)AEM serviços de Documento.
