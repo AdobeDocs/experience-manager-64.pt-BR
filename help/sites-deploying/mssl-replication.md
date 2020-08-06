@@ -1,8 +1,8 @@
 ---
 title: Replicação usando SSL mútuo
 seo-title: Replicação usando SSL mútuo
-description: 'Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL mútuo (MSSL) para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro. '
-seo-description: 'Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL mútuo (MSSL) para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro. '
+description: 'Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro. '
+seo-description: 'Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro. '
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 2%
 
 ---
 
 
 # Replicação usando SSL mútuo{#replicating-using-mutual-ssl}
 
-Configure o AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar com a instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
+Configure AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar com a instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
 
 A configuração do MSSL para replicação envolve a execução das seguintes etapas:
 
@@ -46,7 +49,7 @@ Você precisa de uma chave privada e um certificado público para as instâncias
 
 Gere uma chave privada e um certificado no formato JKS. A chave privada é armazenada em um arquivo KeyStore e o certificado é armazenado em um arquivo TrustStore. Use [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) para criar ambos.
 
-Execute as seguintes etapas usando Java `keytool` para criar a chave privada e a credencial:
+Execute as seguintes etapas usando o Java `keytool` para criar a chave privada e a credencial:
 
 1. Gerar um par de chave privado-público em um KeyStore.
 1. Crie ou obtenha o certificado:
@@ -165,7 +168,7 @@ Para executar o procedimento a seguir, você deve estar conectado como um admini
 
 1. Abra a página Gerenciamento de usuários para a instância do autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir as propriedades da sua conta de usuário, clique ou toque no seu nome de usuário.
-1. Se o link Criar TrustStore aparecer na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
+1. Se o link Criar TrustStore for exibido na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar TrustStore.
 1. Clique em Adicionar certificado do arquivo CER.
 
@@ -200,7 +203,7 @@ Para executar o procedimento a seguir, você deve estar conectado como um admini
 
 1. Abra a página Gerenciamento de usuários para a instância de publicação. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Localize a conta de usuário que você usa para executar solicitações de replicação e clique ou toque no nome de usuário.
-1. Se o link Criar TrustStore aparecer na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
+1. Se o link Criar TrustStore for exibido na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar TrustStore.
 1. Clique em Adicionar certificado do arquivo CER.
 1. Verifique se a opção Mapear certificado para usuário está selecionada. Clique em Selecionar arquivo de certificado, selecione author.cer e clique em Abrir.
