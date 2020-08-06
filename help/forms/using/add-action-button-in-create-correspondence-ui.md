@@ -75,7 +75,7 @@ A adição de um botão com uma ação (aqui, enviar carta para revisão) à int
    * Clique com o botão direito do mouse na pasta **[!UICONTROL defaultApp]** em &quot;/apps/fd/cm/config/defaultApp/&quot; e selecione **[!UICONTROL Colar]**.
    * Clique em **[!UICONTROL Salvar tudo]**.
 
-1. Clique com o Duplo do mouse na cópia de acmExtentionsConfig.xml que você criou recentemente na pasta de aplicativos. O arquivo é aberto para edição.
+1. Clique com o Duplo na cópia de acmExtentionsConfig.xml que você criou recentemente na pasta de aplicativos. O arquivo é aberto para edição.
 1. Localize o seguinte código:
 
    ```xml
@@ -380,7 +380,7 @@ O processo de LiveCycle necessário que habilita o processo de serviço de email
 
 1. Clique em **[!UICONTROL Importar]**.
 
-#### Adicionando ServiceName à lista de Serviço Incluído na lista de permissões {#adding-servicename-to-the-allowlisted-service-list}
+#### Adicionando ServiceName à lista de Serviço Incluir na lista de permissões {#adding-servicename-to-the-allowlisted-service-list}
 
 Mencione no servidor de AEM os serviços de LiveCycle que você deseja acessar o servidor de AEM.
 
@@ -409,7 +409,7 @@ Nesse cenário, para que o Gerenciamento de correspondência possa enviar um ema
 
 Para usar a API de gerenciamento de correspondência, baixe o arquivo `DSCSample.jar` (anexado neste documento como parte do `components.zip`) e carregue-o no servidor do LiveCycle. Depois que o `DSCSample.jar` arquivo é carregado no servidor do LiveCycle, o servidor AEM usa o `DSCSample.jar` arquivo para acessar a API renderLetter.
 
-Para obter mais informações, consulte [Conectando AEM Forms ao LiveCycle](/help/forms/using/aem-livecycle-connector.md)Adobe.
+Para obter mais informações, consulte [Conectando o AEM Forms ao LiveCycle](/help/forms/using/aem-livecycle-connector.md)Adobe.
 
 1. Atualize o URL do servidor AEM em cmsa.properties em `DSCSample.jar`, que está no seguinte local:
 
