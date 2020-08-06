@@ -1,8 +1,8 @@
 ---
-title: Integração de componentes do espaço de trabalho do AEM Forms em aplicativos da Web
-seo-title: Integração de componentes do espaço de trabalho do AEM Forms em aplicativos da Web
-description: Como reutilizar os componentes do espaço de trabalho do AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
-seo-description: Como reutilizar os componentes do espaço de trabalho do AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
+title: Integração de componentes de espaço de trabalho AEM Forms em aplicativos da Web
+seo-title: Integração de componentes de espaço de trabalho AEM Forms em aplicativos da Web
+description: Como reutilizar os componentes do espaço de trabalho da AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
+seo-description: Como reutilizar os componentes do espaço de trabalho da AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
 
 ---
 
 
-# Integração de componentes do espaço de trabalho do AEM Forms em aplicativos da Web {#integrating-aem-forms-workspace-components-in-web-applications}
+# Integração de componentes de espaço de trabalho AEM Forms em aplicativos da Web {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Você pode usar [componentes](/help/forms/using/description-reusable-components.md) de espaço de trabalho do AEM Forms em seu próprio aplicativo da Web. A seguinte implementação de exemplo usa componentes de um pacote de desenvolvimento de espaço de trabalho do AEM Forms instalado em uma instância do CRX™ para criar um aplicativo da Web. Personalize a solução abaixo para atender às suas necessidades específicas. A implementação de amostra reutiliza `UserInfo`, `FilterList`e `TaskList`componentes dentro de um portal da Web.
+Você pode usar [componentes](/help/forms/using/description-reusable-components.md) da área de trabalho do AEM Forms em seu próprio aplicativo da Web. A seguinte implementação de exemplo usa componentes de um pacote dev de espaço de trabalho AEM Forms instalado em uma instância do CRX™ para criar um aplicativo da Web. Personalize a solução abaixo para atender às suas necessidades específicas. A implementação de amostra reutiliza `UserInfo`, `FilterList`e `TaskList`componentes dentro de um portal da Web.
 
-1. Efetue login no ambiente CRXDE Lite em `https://[server]:[port]/lc/crx/de/`. Verifique se você tem um pacote de desenvolvimento de espaço de trabalho do AEM Forms instalado.
+1. Efetue login no CRXDE Lite ambiente em `https://[server]:[port]/lc/crx/de/`. Verifique se você tem um pacote de desenvolvimento de espaço de trabalho AEM Forms instalado.
 1. Crie um caminho `/apps/sampleApplication/wscomponents`.
 1. Copie css, imagens, js/libs, js/runtime e js/registry.js
 
@@ -51,7 +54,7 @@ Você pode usar [componentes](/help/forms/using/description-reusable-components.
    <div class="taskListView gcomponent" data-name="tasklist"></div> 
    ```
 
-   Inclua também os arquivos CSS necessários para os componentes da área de trabalho do AEM Forms.
+   Inclua também os arquivos CSS necessários para os componentes do espaço de trabalho AEM Forms.
 
    >[!NOTE]
    >
