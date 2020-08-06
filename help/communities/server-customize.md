@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 SocialComponents são POJOs que representam um recurso para um recurso do AEM Communities. Idealmente, cada SocialComponent representa um resourceType específico com GETters expostos que fornecem dados ao cliente para que o recurso seja representado com precisão. Toda lógica de negócios e lógica de visualização é encapsulada no SocialComponent, incluindo as informações de sessão do visitante do site, se necessário.
 
-A interface define um conjunto básico de GETters que são necessários para representar um recurso. Importante, a interface estipula os métodos Map&lt;String, Object> getAsMap() e String toJSONString() necessários para renderizar os modelos Handlebars e expor os pontos finais GET JSON para recursos.
+A interface define um conjunto básico de GETters que são necessários para representar um recurso. O importante é que a interface estipula os métodos Map&lt;String, Object> getAsMap() e String toJSONString() necessários para renderizar os modelos Handlebars e expor os endpoints JSON do GET aos recursos.
 
 Todas as classes SocialComponent devem implementar a interface `com.adobe.cq.social.scf.SocialComponent`
 
@@ -61,13 +64,13 @@ Um SocialComponentFactoryManager é um serviço OSGi e tem acesso a outros servi
 
 Um identificador do serviço OSGi é obtido invocando `com.adobe.cq.social.scf.SocialComponentFactoryManager`
 
-### API HTTP - Solicitações POST {#http-api-post-requests}
+### API HTTP - Solicitações de POST {#http-api-post-requests}
 
 #### Classe PostOperation {#postoperation-class}
 
-Os pontos finais HTTP API POST são classes PostOperation definidas pela implementação da `SlingPostOperation`interface (pacote `org.apache.sling.servlets.post`).
+Os pontos finais da API HTTP são classes PostOperation definidas pela implementação da `SlingPostOperation`interface (pacote `org.apache.sling.servlets.post`).
 
-A implementação de `PostOperation`endpont define `sling.post.operation`um valor ao qual a operação responderá. Todas as solicitações POST com um parâmetro:operation definido para esse valor serão delegadas a essa classe de implementação.
+A implementação de `PostOperation`endpont define `sling.post.operation`um valor ao qual a operação responderá. Todas as solicitações de POST com um parâmetro:operation definido para esse valor serão delegadas a essa classe de implementação.
 
 O `PostOperation`chama o `SocialOperation`que executa as ações necessárias para a operação.
 
@@ -95,7 +98,7 @@ Os códigos de status HTTP de sucesso usados são
 
 #### Classe OperationException {#operationexception-class}
 
-Um erro `OperationExcepton`pode ser lançado ao executar uma operação se a solicitação não for válida ou se ocorrer algum outro erro, como erros internos, valores de parâmetros incorretos, permissões inadequadas etc. Um `OperationException`é composto de um código de status HTTP e uma mensagem de erro, que são retornados ao cliente como resposta ao `PostOperatoin`.
+Um erro `OperationExcepton`pode ser lançado ao executar uma operação se a solicitação não for válida ou se ocorrer algum outro erro, como erros internos, valores de parâmetros incorretos, permissões inadequadas etc. Um `OperationException`é composto de um código de status HTTP e uma mensagem de erro, que são retornados ao cliente como a resposta ao `PostOperatoin`.
 
 #### Classe OperationService {#operationservice-class}
 
@@ -106,7 +109,7 @@ Todas as `OperationService`classes se estendem `AbstractOperationService`, permi
 * `performBeforeActions()`
 Permite pré-verificações/pré-processamento e validações
 * `performAfterActions()`
-Permite a modificação adicional de recursos ou invocação de eventos personalizados, fluxos de trabalho etc
+Permite a modificação adicional de recursos ou invocação de eventos personalizados, workflows etc
 
 #### Classe OperationExtension {#operationextension-class}
 
@@ -114,13 +117,13 @@ Permite a modificação adicional de recursos ou invocação de eventos personal
 
 ## Código de exemplo {#sample-code}
 
-O código de amostra está disponível no repositório GitHub da [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) . Procure projetos com prefixo `aem-communities` ou `aem-scf`.
+O código de amostra está disponível no repositório [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Procure projetos com prefixo `aem-communities` ou `aem-scf`.
 
-## Práticas recomendadas  {#best-practices}
+## Práticas recomendadas     {#best-practices}
 
-Consulte a seção Diretrizes [de](code-guide.md) codificação para obter várias diretrizes de codificação e práticas recomendadas para desenvolvedores do AEM Communities.
+Visualização na seção Diretrizes [de](code-guide.md) codificação para obter várias diretrizes de codificação e práticas recomendadas para desenvolvedores AEM Communities.
 
-Consulte também SRP ( [Storage Resource Provider, Provedor de recursos de armazenamento) para UGC](srp.md) para saber mais sobre como acessar conteúdo gerado pelo usuário.
+Consulte também SRP ( [Armazenamento Resource Provider [Provedor de recursos do ]) para UGC](srp.md) para saber mais sobre como acessar conteúdo gerado pelo usuário.
 
 | **[⇐ Fundamentos de recursos](essentials.md)** | **[Localização da personalização do cliente](client-customize.md)** |
 |---|---|
