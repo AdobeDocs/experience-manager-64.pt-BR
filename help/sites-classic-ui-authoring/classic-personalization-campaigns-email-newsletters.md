@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 69%
 
 ---
 
@@ -35,7 +38,7 @@ Para publicar seu email no provedor de serviços de email, você precisa realiza
 
 ## Criação de um email {#creating-an-email}
 
-An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. You can also use the **Geometrixx Outdoors E-Mail** template. Os exemplos de e-mail/boletim informativo baseados no modelo de e-mail **do** Geometrixx Outdoors estão disponíveis em `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. You can also use the **Geometrixx Outdoors E-Mail** template. Amostra de e-mail/boletim informativo com base no modelo de e-mail **do** Geometrixx Outdoors está disponível em `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
 Para criar um novo email publicado no serviço de email configurado:
 
@@ -70,11 +73,11 @@ O componente **Ferramentas de email** para o ExactTarget pode adicionar mais fun
   </tr> 
   <tr> 
    <td>Centro de perfil (obrigatório)</td> 
-   <td>O centro de perfis é uma página da Web na qual os assinantes podem inserir e manter as informações pessoais que você mantém sobre eles.</td> 
+   <td>O centro do perfil é uma página da Web na qual os assinantes podem digitar e manter as informações pessoais que você mantém sobre eles.</td> 
   </tr> 
   <tr> 
    <td>Visualizar e-mail como página da web</td> 
-   <td>Esse componente permite que o usuário visualize o email como uma página da Web.</td> 
+   <td>Esse componente permite que o usuário visualização o email como uma página da Web.</td> 
   </tr> 
   <tr> 
    <td>Política de privacidade</td> 
@@ -82,11 +85,11 @@ O componente **Ferramentas de email** para o ExactTarget pode adicionar mais fun
   </tr> 
   <tr> 
    <td>Central para cancelar inscrição</td> 
-   <td>Dá ao usuário a opção de cancelar a inscrição da sua lista de endereços.</td> 
+   <td>Dá ao usuário a opção de cancelar a inscrição da sua lista de correspondência.</td> 
   </tr> 
   <tr> 
    <td>Centro de assinaturas</td> 
-   <td>Uma central de assinaturas é uma página da Web na qual um assinante pode controlar as mensagens que recebe de sua organização.</td> 
+   <td>Um centro de subscrições é uma página da Web na qual um assinante pode controlar as mensagens recebidas de sua organização.</td> 
   </tr> 
   <tr> 
    <td>Rastrear aberturas de e-mail</td> 
@@ -109,6 +112,7 @@ O componente **Ferramentas de email** para o ExactTarget pode adicionar mais fun
    >
    >
 * Duas das ferramentas de email são obrigatórias: **Endereço de correspondência físico (obrigatório)** e **Centro de perfil (obrigatório)**. Quando o email é publicado no ExactTarget, essas duas ferramentas de email são adicionadas à parte inferior de todas as mensagens por padrão.
+
 >
 
 
