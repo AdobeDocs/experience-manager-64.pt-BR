@@ -11,10 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d3565776-1b7d-498c-9840-b17f80170d9b
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 0%
 
 ---
 
 
 # Limite máximo de cursores abertos do banco de dados Oracle {#oracle-database-maximum-open-cursors-threshold}
 
-Para configurar um valor máximo para cursores abertos no Oracle, talvez seja necessário ajustar esse valor para um número adequado ao seu aplicativo. É evidente que, sob uma carga moderada, a média de cursores abertos era de 2700. Recomenda-se começar com um limite máximo de 3000. Para obter mais informações, acesse [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Para configurar um valor máximo para cursores abertos no Oracle, talvez seja necessário ajustar esse valor para um número adequado ao seu aplicativo. É evidente que, sob uma carga moderada, a média de cursores abertos era de 2700. É recomendável que você start um limite máximo de 3000. Para obter mais informações, acesse [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
