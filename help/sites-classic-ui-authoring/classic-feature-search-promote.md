@@ -34,7 +34,7 @@ Facetas são configuradas no servidor Search&amp;Promote, assim como as informa�
 <table> 
  <tbody> 
   <tr> 
-   <th>componente do Search&amp;Promote</th> 
+   <th>componente do Search &amp; Promote</th> 
    <th>Descrição</th> 
   </tr> 
   <tr> 
