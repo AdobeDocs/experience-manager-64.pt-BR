@@ -1,8 +1,8 @@
 ---
 title: Introdução à sequência de formulários em várias etapas
 seo-title: Introdução à sequência de formulários em várias etapas
-description: Com o AEM Forms, é possível definir uma sequência de painéis de formulário na qual os usuários devem navegar e preencher um formulário adaptável.
-seo-description: Com o AEM Forms, é possível definir uma sequência de painéis de formulário na qual os usuários devem navegar e preencher um formulário adaptável.
+description: Com o AEM Forms, é possível definir uma sequência do painel de formulários na qual os usuários devem navegar e preencher um formulário adaptável.
+seo-description: Com o AEM Forms, é possível definir uma sequência do painel de formulários na qual os usuários devem navegar e preencher um formulário adaptável.
 uuid: b2b94e4c-0c28-47ba-8e23-fd8742baf71c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Formulários adaptáveis permitem que os autores de formulários criem uma exper
 
 Em uma experiência típica de preenchimento de formulário, há mais etapas envolvidas do que apenas capturar dados. Um envio de formulário completo pode incluir outras etapas, como assinar o formulário digitalmente, verificar as informações preenchidas no formulário, processar pagamentos e assim por diante. É diferente de caso a caso.
 
-Se o caso de uso determinar um conjunto de etapas para a captura de dados ou se houver regulamentos que precisam de determinadas etapas a serem seguidas, o AEM Forms fornece uma forma de aplicar essa estrutura comum em todos os formulários. A implementação premeditada da estrutura do formulário define a sequência de etapas para um formulário. ![Exemplo de uma sequência de formulário em várias etapas](assets/formpipeline.png)
+Se seu caso de uso determinar um conjunto de etapas para a captura de dados ou se houver regulamentos que precisam de determinadas etapas a serem seguidas, a AEM Forms fornece uma maneira de aplicar essa estrutura comum em todos os formulários. A implementação premeditada da estrutura do formulário define a sequência de etapas para um formulário. ![Exemplo de uma sequência de formulário em várias etapas](assets/formpipeline.png)
 
 Caso seja necessário criar uma sequência para preencher, verificar, assinar e confirmar as etapas de um formulário, usaremos um caso de uso. As etapas para criar tal sequência são as seguintes:
 
