@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 15%
 
 ---
 
@@ -70,7 +73,7 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
    <td><p>getElement</p> </td> 
   </tr>
   <tr>
-   <td><p>espaço reservadoTexto</p> </td> 
+   <td><p>placeholderText</p> </td> 
    <td><p>autoSaveStartExpression</p> </td> 
    <td><p>filhos</p> </td> 
   </tr>
