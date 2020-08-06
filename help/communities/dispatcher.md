@@ -1,8 +1,8 @@
 ---
 title: Configuração do Dispatcher para Comunidades
 seo-title: Configuração do Dispatcher para Comunidades
-description: Configurar o dispatcher para o AEM Communities
-seo-description: Configurar o dispatcher para o AEM Communities
+description: Configurar o dispatcher para AEM Communities
+seo-description: Configurar o dispatcher para AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## AEM Communities {#aem-communities}
 
-Para o AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos sites [da](overview.md#community-sites)comunidade. Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
+Para a AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos sites [da](overview.md#community-sites)comunidade. Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
 
 Para saber o que é necessário para sua implantação específica e o design do site
 
-* Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+* Contact [Customer Care](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
 Consulte também a documentação [principal do](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Dispatcher.
 
@@ -31,7 +34,7 @@ Consulte também a documentação [principal do](https://helpx.adobe.com/experie
 
 ### Visão geral {#overview}
 
-O armazenamento em cache do Dispatcher para o AEM Communities é a capacidade do dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
+O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
 
 Atualmente, ele é compatível apenas com visitantes anônimos do site, como usuários que navegam no site da comunidade ou que chegam em uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. A vantagem é que os usuários anônimos e os mecanismos de pesquisa experimentarão um melhor desempenho.
 
@@ -42,14 +45,14 @@ Quando configurado para suportar o cache do dispatcher, uma expiração de &quot
 ### Requisitos {#requirements}
 
 * Dispatcher versão 4.1.2 ou posterior (consulte [Instalação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para obter a versão mais recente)
-* [Pacote AEM Commons ACS](https://adobe-consulting-services.github.io/acs-aem-commons/)
+* [Pacote ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versão 3.3.2 ou posterior
    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` Configuração do OSGi
 
 ### Configuração {#configuration}
 
-A configuração OSGi AEM Commons **ACS - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache que aparecem em um caminho especificado.
+A configuração **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache exibidas em um caminho especificado.
 
 * Do Console [da Web](../../help/sites-deploying/configuring-osgi.md)
 
@@ -61,14 +64,16 @@ A configuração OSGi AEM Commons **ACS - Dispatcher Cache Control Header - Max 
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
 * **Padrões de filtro**
+
    *(obrigatório)* Um ou mais caminhos para páginas da comunidade. Por exemplo, `/content/sites/engage/(.*)`.
 
 * **Idade máxima do controle de cache**
+
    *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho Cache Controll. O valor deve ser maior que zero (0).
 
 ## Cabeçalhos do Cliente do Dispatcher {#dispatcher-client-headers}
 
-Na seção /clientheaders de `dispatcher.any`, se listar um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o recurso [](enablement.md) Ativação funcione corretamente.
+Na seção /clientheaders de `dispatcher.any`, se estiver listando um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o recurso [](enablement.md) Ativação funcione corretamente.
 
 ## Filtros do Dispatcher {#dispatcher-filters}
 
@@ -87,7 +92,7 @@ Consulte também:
 >[!NOTE]
 >
 >**Exemplos de nome da propriedade**
->Todos os nomes de propriedade exibidos, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um dispatcher existente.any arquivo de configuração.
+>Todos os nomes de propriedade mostrados, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um dispatcher existente.any arquivo de configuração.
 
 As seguintes entradas devem ser adicionadas ao final da seção /filter, especialmente depois de todas as entradas de negação.
 
@@ -188,11 +193,11 @@ A seção de regras de `dispatcher.any` define quais respostas devem ser armazen
 
 Uma fonte importante de problemas é inserir regras de filtro sem prestar atenção ao efeito em regras anteriores, especialmente ao adicionar uma regra para negar acesso.
 
-O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os seguintes filtros restaurem o acesso de forma controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é aquele em vigor.
+O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os filtros a seguir restaurem o acesso de forma controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é aquele em vigor.
 
 ## Amostra do dispatcher.any {#sample-dispatcher-any}
 
-Veja a seguir um exemplo `dispatcher.any` de arquivo que inclui Comunidades /filtros e /regras.
+A seguir, há um exemplo `dispatcher.any` de arquivo que inclui Comunidades /filtros e /regras.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)
