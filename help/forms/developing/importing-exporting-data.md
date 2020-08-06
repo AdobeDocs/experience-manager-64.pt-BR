@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2742'
+ht-degree: 0%
 
 ---
 
@@ -19,34 +22,34 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Sobre o serviço de integração de dados de formulário {#about-the-form-data-integration-service}
 
-O serviço de Integração de dados de formulário pode importar dados para um formulário PDF e exportar dados de um formulário PDF. As operações de importação e exportação suportam dois tipos de formulários PDF:
+O serviço de Integração de dados de formulário pode importar dados para um formulário PDF e exportar dados de um formulário PDF. As operações de importação e de exportação suportam dois tipos de PDF forms:
 
-* Um formulário do Acrobat (criado no Acrobat) é um documento PDF que contém campos de formulário.
-* Um formulário Adobe XML (criado no Designer) é um documento PDF que está em conformidade com o XML Adobe XML Forms Architecture (XFA).
+* Um formulário Acrobat (criado no Acrobat) é um documento PDF que contém campos de formulário.
+* Um formulário Adobe XML (criado no Designer) é um documento PDF que está em conformidade com a XML Adobe XML Forms Architecture (XFA).
 
 Os dados do formulário podem existir em um dos seguintes formatos, dependendo do tipo de formulário PDF:
 
-* Um arquivo XFDF, que é uma versão XML do formato de dados de formulário do Acrobat.
+* Um arquivo XFDF, que é uma versão XML do formato de dados de formulário Acrobat.
 * Um arquivo XDP, que é um arquivo XML que contém definições de campos de formulário. Ele também pode conter dados de campo de formulário e um arquivo PDF incorporado. Um arquivo XDP gerado pelo Designer só pode ser usado se ele tiver um documento PDF codificado em base 64 incorporado.
 
 É possível realizar essas tarefas usando o serviço de Integração de dados de formulário:
 
-* Importe dados para formulários PDF. Para obter informações, consulte [Importação de dados](importing-exporting-data.md#importing-form-data)do formulário.
-* Exporte dados de formulários PDF. Para obter informações, consulte [Exportação de dados](importing-exporting-data.md#exporting-form-data)de formulário.
+* Importe dados para PDF forms. Para obter informações, consulte [Importação de dados](importing-exporting-data.md#importing-form-data)do formulário.
+* Exportar dados de PDF forms. Para obter informações, consulte [Exportação de dados](importing-exporting-data.md#exporting-form-data)de formulário.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Integração de dados de formulário, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Integração de dados de formulário, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Importação de dados de formulário {#importing-form-data}
 
-É possível importar dados de formulário para formulários PDF interativos usando o serviço de Integração de dados de formulário. Um formulário PDF interativo é um documento PDF que contém um ou mais campos para coletar informações de um usuário ou para exibir informações personalizadas. O serviço de Integração de dados de formulário não oferece suporte a cálculos de formulário, validação ou script.
+É possível importar dados de formulário para PDF forms interativos usando o serviço de Integração de dados de formulário. Um formulário PDF interativo é um documento PDF que contém um ou mais campos para coletar informações de um usuário ou para exibir informações personalizadas. O serviço de Integração de dados de formulário não oferece suporte a cálculos de formulário, validação ou script.
 
 Para importar dados para um formulário criado no Designer, é necessário referenciar uma fonte de dados XML XDP válida. Considere o seguinte formulário de aplicativo hipotecário de exemplo.
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Para importar valores de dados para esse formulário, é necessário ter uma fonte de dados XML XDP válida que corresponda ao formulário. Não é possível usar uma fonte de dados XML arbitrária para importar dados para um formulário usando o serviço de Integração de dados de formulário. A diferença entre uma fonte de dados XML arbitrária e uma fonte de dados XML XDP é que uma fonte de dados XDP está em conformidade com a Arquitetura de formulários XML (XFA). O XML a seguir representa uma fonte de dados XML XDP que corresponde ao formulário de aplicativo hipotecário de exemplo.
+Para importar valores de dados para esse formulário, é necessário ter uma fonte de dados XML XDP válida que corresponda ao formulário. Não é possível usar uma fonte de dados XML arbitrária para importar dados para um formulário usando o serviço de Integração de dados de formulário. A diferença entre uma fonte de dados XML arbitrária e uma fonte de dados XML XDP é que uma fonte de dados XDP está em conformidade com a Arquitetura Forms XML (XFA). O XML a seguir representa uma fonte de dados XML XDP que corresponde ao formulário de aplicativo hipotecário de exemplo.
 
 ```as3
  <?xml version="1.0" encoding="UTF-8" ?>  
@@ -81,7 +84,7 @@ Para importar valores de dados para esse formulário, é necessário ter uma fon
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Integração de dados de formulário, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Integração de dados de formulário, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -103,10 +106,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (obrigatório se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um cliente de serviço de Integração de Dados de Formulário**
 
@@ -114,11 +117,11 @@ Antes de poder importar dados de forma programática para uma API do cliente de 
 
 **Referência a um formulário PDF**
 
-Para importar dados para um formulário PDF, é necessário fazer referência a um formulário XML criado no Designer ou a um formulário do Acrobat criado no Acrobat.
+Para importar dados para um formulário PDF, é necessário fazer referência a um formulário XML criado no Designer ou a um formulário Acrobat criado no Acrobat.
 
 **Referência a uma fonte de dados XML**
 
-Para importar dados de formulário, é necessário referenciar uma fonte de dados válida. Para importar dados para um formulário XML XFA criado no Designer, é necessário usar uma fonte de dados XML XDP. Se você fizer referência a um formulário do Acrobat, deverá usar uma fonte de dados XFDF. Para cada campo para o qual você deseja importar dados, um valor deve ser especificado. Se um elemento localizado na fonte de dados XML não corresponder a um campo no formulário, o elemento será ignorado.
+Para importar dados de formulário, é necessário referenciar uma fonte de dados válida. Para importar dados para um formulário XML XFA criado no Designer, é necessário usar uma fonte de dados XML XDP. Se você fizer referência a um formulário Acrobat, deverá usar uma fonte de dados XFDF. Para cada campo para o qual você deseja importar dados, um valor deve ser especificado. Se um elemento localizado na fonte de dados XML não corresponder a um campo no formulário, o elemento será ignorado.
 
 **Importar dados para o formulário PDF**
 
@@ -134,11 +137,11 @@ Depois de importar dados para um formulário, é possível salvar o formulário 
 
 [Importar dados de formulário usando a API de serviço da Web](importing-exporting-data.md#import-form-data-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de integração de dados de formulário](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de integração de dados de formulário](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
 
 [Exportação de dados de formulário](importing-exporting-data.md#exporting-form-data)
 
@@ -171,20 +174,21 @@ Importe dados de formulário usando a API de integração de dados de formulári
 
    * O `com.adobe.idp.Document` objeto que armazena o formulário PDF.
    * O `com.adobe.idp.Document` objeto que armazena dados de formulário.
+
    O `importData` método retorna um `com.adobe.idp.Document` objeto que armazena um formulário PDF que contém os dados localizados na fonte de dados XML.
 
 1. Salve o formulário PDF como um arquivo PDF.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é &quot;.PDF&quot;.
-   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto retornado pelo `importData` método).
+   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `importData` método).
 
 **Consulte também:**
 
 [Resumo das etapas](importing-exporting-data.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Importação de dados de formulário usando a API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Start rápido (modo SOAP): Importação de dados de formulário usando a API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -216,7 +220,7 @@ Importe dados de formulário usando a API de integração de dados de formulári
 1. Consulte um formulário PDF.
 
    * Crie um `BLOB` objeto usando seu construtor. Esse `BLOB` objeto é usado para armazenar o formulário PDF.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que especifica o local do formulário PDF e o modo no qual abrir o arquivo.
+   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que especifica o local do formulário PDF e o modo no qual o arquivo deve ser aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` objeto `Read` . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
    * Preencha o `BLOB` objeto atribuindo seu `MTOM` campo ao conteúdo da matriz de bytes.
@@ -224,7 +228,7 @@ Importe dados de formulário usando a API de integração de dados de formulári
 1. Referência a uma fonte de dados XML.
 
    * Crie um `BLOB` objeto usando seu construtor. Esse `BLOB` objeto é usado para armazenar os dados importados no formulário.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que especifica o local do arquivo XML que contém os dados a serem importados e o modo no qual o arquivo será aberto.
+   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que especifica o local do arquivo XML que contém os dados a serem importados e o modo no qual o arquivo deve ser aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` objeto `Read` . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
    * Preencha o `BLOB` objeto atribuindo seu `MTOM` campo ao conteúdo da matriz de bytes.
@@ -235,6 +239,7 @@ Importe dados de formulário usando a API de integração de dados de formulári
 
    * O `BLOB` objeto que armazena o formulário PDF.
    * O `BLOB` objeto que armazena dados de formulário.
+
    O `importData` método retorna um `BLOB` objeto que armazena um formulário PDF que contém os dados localizados na fonte de dados XML.
 
 1. Salve o formulário PDF como um arquivo PDF.
@@ -248,15 +253,15 @@ Importe dados de formulário usando a API de integração de dados de formulári
 
 [Resumo das etapas](importing-exporting-data.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Exportação de dados de formulário {#exporting-form-data}
 
-É possível exportar dados de formulário de um formulário PDF interativo usando o serviço de Integração de dados de formulário. O formato dos dados exportados depende do tipo de formulário. Se o tipo de formulário for um formulário do Acrobat criado no Acrobat, os dados exportados serão XFDF. Se o tipo de formulário for um formulário XML criado no Designer, os dados exportados serão XDP.
+É possível exportar dados de formulário de um formulário PDF interativo usando o serviço de Integração de dados de formulário. O formato dos dados exportados depende do tipo de formulário. Se o tipo de formulário for um formulário Acrobat criado no Acrobat, os dados exportados serão XFDF. Se o tipo de formulário for um formulário XML criado no Designer, os dados exportados serão XDP.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Integração de dados de formulário, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Integração de dados de formulário, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -277,8 +282,8 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (obrigatório se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
 **Criar um cliente de serviço de Integração de Dados de Formulário**
 
@@ -286,15 +291,15 @@ Antes de poder importar dados de forma programática para uma API FormClient do 
 
 **Referência a um formulário PDF**
 
-Para exportar dados de um formulário PDF, é necessário fazer referência a um formulário PDF criado no Designer ou Acrobat que contenha dados de formulário. Se tentar exportar dados de um formulário PDF vazio, você receberá um esquema XML vazio.
+Para exportar dados de um formulário PDF, é necessário fazer referência a um formulário PDF criado no Designer ou Acrobat que contenha dados do formulário. Se você tentar exportar dados de um formulário PDF vazio, receberá um schema XML vazio.
 
 **Exportar dados do formulário PDF**
 
-Depois de referenciar um formulário PDF que contém dados de formulário, é possível exportar os dados do formulário. Os dados são exportados dentro de um esquema XML baseado no formulário.
+Depois de referenciar um formulário PDF que contém dados de formulário, é possível exportar os dados do formulário. Os dados são exportados dentro de um schema XML baseado no formulário.
 
 **Salvar os dados do formulário como um arquivo XML**
 
-Depois de exportar dados de formulário, é possível salvar os dados como um arquivo XML. Depois de salvo como um arquivo XML, você pode abrir o arquivo XML em um visualizador XML para exibir os dados do formulário.
+Depois de exportar dados de formulário, é possível salvar os dados como um arquivo XML. Depois de salvo como um arquivo XML, é possível abrir o arquivo XML em um visualizador XML para visualização dos dados do formulário.
 
 **Consulte também:**
 
@@ -302,11 +307,11 @@ Depois de exportar dados de formulário, é possível salvar os dados como um ar
 
 [Exportar dados de formulário usando a API de serviço da Web](importing-exporting-data.md#export-form-data-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de integração de dados de formulário](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de integração de dados de formulário](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
 
 [Importação de dados de formulário](importing-exporting-data.md#importing-form-data)
 
@@ -330,20 +335,20 @@ Exporte dados de formulário usando a API de integração de dados de formulári
 
 1. Exporte dados do formulário PDF.
 
-   Exporte dados de formulário chamando o `FormDataIntegrationClient` método do objeto `exportData` e passe o `com.adobe.idp.Document` objeto que armazena o formulário PDF. Esse método retorna um `com.adobe.idp.Document` objeto que armazena dados de formulário como um esquema XML.
+   Exporte dados de formulário chamando o `FormDataIntegrationClient` método do objeto `exportData` e passe o `com.adobe.idp.Document` objeto que armazena o formulário PDF. Esse método retorna um `com.adobe.idp.Document` objeto que armazena dados de formulário como um schema XML.
 
 1. Salve o formulário PDF como um arquivo PDF.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é XML.
-   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto retornado pelo `exportData` método).
+   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `exportData` método).
 
 **Consulte também:**
 
 [Resumo das etapas](importing-exporting-data.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Exportação de dados de formulário usando a API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Start rápido (modo SOAP): Exportação de dados de formulário usando a API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -373,14 +378,14 @@ Exporte dados de formulário usando a API de integração de dados de formulári
 1. Consulte um formulário PDF.
 
    * Crie um `BLOB` objeto usando seu construtor. Esse `BLOB` objeto é usado para armazenar o formulário PDF a partir do qual os dados são exportados.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que especifica o local do formulário PDF e o modo no qual abrir o arquivo.
+   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que especifica o local do formulário PDF e o modo no qual o arquivo deve ser aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
    * Preencha o `BLOB` objeto atribuindo seu `MTOM` campo ao conteúdo da matriz de bytes.
 
 1. Exporte dados do formulário PDF.
 
-   Importe dados para o formulário PDF chamando o `FormDataIntegrationClient` método do `exportData` objeto e passe o `BLOB` objeto que armazena o formulário PDF. Esse método retorna um `BLOB` objeto que armazena dados de formulário como um esquema XML.
+   Importe dados para o formulário PDF chamando o `FormDataIntegrationClient` método do `exportData` objeto e passe o `BLOB` objeto que armazena o formulário PDF. Esse método retorna um `BLOB` objeto que armazena dados de formulário como um schema XML.
 
 1. Salve o formulário PDF como um arquivo PDF.
 
@@ -393,6 +398,6 @@ Exporte dados de formulário usando a API de integração de dados de formulári
 
 [Resumo das etapas](importing-exporting-data.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
