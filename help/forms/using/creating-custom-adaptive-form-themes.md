@@ -1,8 +1,8 @@
 ---
 title: Criação de temas de formulário adaptáveis personalizados
 seo-title: Criação de temas de formulário adaptáveis personalizados
-description: Um tema de formulário adaptável é uma biblioteca de cliente do AEM que você usa para definir os estilos (aparência) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
-seo-description: Um tema de formulário adaptável é uma biblioteca de cliente do AEM que você usa para definir os estilos (aparência) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
+description: Um tema de formulário adaptável é uma biblioteca cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
+seo-description: Um tema de formulário adaptável é uma biblioteca cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 >[!CAUTION]
 >
->O AEM Forms fornece o recurso Editor [de](/help/forms/using/themes.md) Temas para criar e modificar [temas](/help/forms/using/themes.md)de formulários adaptáveis. Execute as etapas listadas neste artigo somente se você tiver atualizado de uma versão que não tem o Editor [de](/help/forms/using/themes.md) Temas e tiver um investimento existente em temas criados usando arquivos Menos/CSS (método editor pré-temático).
+>A AEM Forms fornece o [recurso Editor](/help/forms/using/themes.md) de Temas para criar e modificar [temas](/help/forms/using/themes.md)de formulários adaptáveis. Execute as etapas listadas neste artigo somente se você tiver atualizado de uma versão que não tem o Editor [de](/help/forms/using/themes.md) Temas e tiver um investimento existente em temas criados usando arquivos Menos/CSS (método editor pré-temático).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -28,7 +31,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 ## Adaptive form theme {#adaptive-form-theme}
 
-Um tema **de formulário** adaptável é uma biblioteca do cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável.
+Um tema **de formulário** adaptável é uma biblioteca cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável.
 
 Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo personalizado para criar um formulário **** adaptável.
 
@@ -38,11 +41,11 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
 >[!NOTE]
 >
->O procedimento a seguir é descrito usando nomes de amostra para objetos AEM, como nó, propriedades e pastas.
+>O procedimento a seguir é descrito usando nomes de amostra para objetos AEM como nó, propriedades e pastas.
 >
 >Se você seguir essas etapas usando os nomes, o modelo resultante deverá aparecer de forma semelhante ao seguinte instantâneo:
 
-![](assets/thumbnail.png) Instantâneo **do formulário adaptável com tema de floresta** Figura: Amostra de tema *da floresta*
+![Instantâneo](assets/thumbnail.png)do formulário adaptável com tema de floresta **Figura:** *Exemplo de tema da floresta*
 
 1. Crie um nó do tipo `cq:ClientLibraryFolder` abaixo do `/apps`nó.
 
@@ -60,15 +63,17 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
    * `less` pasta: Contém os arquivos de `less` variável nos quais você define as `less` variáveis e `less mixins` que são usados para gerenciar os estilos .css.
 
-      Essa pasta consiste em arquivos `less` variáveis, arquivos `less` de combinação, `less` arquivos que definem estilos usando misturas e variáveis. E todos esses arquivos a menos são importados em styles.less.
+      Essa pasta consiste em arquivos `less` variáveis, arquivos `less` de mixagem, `less` arquivos que definem estilos usando misturas e variáveis. E todos esses arquivos a menos são importados em styles.less.
 
    * `css`pasta: Contém os arquivos .css nos quais você define os estilos estáticos a serem usados no tema.
-   **Menos arquivos** de variáveis: Esses são os arquivos, onde você define ou substitui as variáveis usadas na definição de estilos CSS.
+
+   **Menos arquivos** de variáveis: Esses são os arquivos, nos quais você define ou substitui as variáveis usadas na definição de estilos CSS.
 
    Os formulários adaptáveis fornecem variáveis OOTB definidas nos seguintes arquivos .less:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
+
    Os formulários adaptáveis também fornecem variáveis de terceiros definidas em:
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
@@ -96,6 +101,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
    1. Em seguida, importe o arquivo less que inclui variáveis substituídas.
+
    Amostra de novas definições de variáveis:
 
    ```
@@ -103,14 +109,16 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **** Menos arquivos de mixagem: É possível definir as funções que aceitam variáveis como argumentos. A saída dessas funções são os estilos resultantes. Use essas combinações em estilos diferentes para evitar a repetição de estilos CSS.
+   **Menos arquivos de mixagem:** É possível definir as funções que aceitam variáveis como argumentos. A saída dessas funções são os estilos resultantes. Use essas combinações em estilos diferentes para evitar a repetição de estilos CSS.
 
    Os formulários adaptáveis fornecem misturas OOTB definidas em:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
+
    Formulários adaptáveis também fornecem combinações de terceiros definidas em:
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
+
    Definição da mistura de amostra:
 
    ```
@@ -127,7 +135,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
    }
    ```
 
-   **** Arquivo Styles.less: Use esse arquivo para incluir todos os arquivos menores (variáveis, mixins, estilos) que você precisa usar na biblioteca do cliente.
+   **Arquivo Styles.less:** Use esse arquivo para incluir todos os arquivos menores (variáveis, mixins, estilos) que você precisa usar na biblioteca do cliente.
 
    No arquivo de amostra a seguir, a declaração de importação pode ser colocada em qualquer ordem. `styles.less`
 
