@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 6%
 
 ---
 
@@ -111,7 +114,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
   </tr> 
   <tr> 
    <td>6</td> 
-   <td>TRAÇO<br type="_moz" /> </td> 
+   <td>TRACE<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>7</td> 
@@ -159,7 +162,7 @@ Por exemplo:
   </tr> 
   <tr> 
    <td>2-a4-b5-c6<br type="_moz" /> </td> 
-   <td>Destino: Nível xfa do servidor<br /> : Nível de INFO<br /> xfaView: Nível DEBUG<br /> xfaPerf: TRAÇO</td> 
+   <td>Destino: Nível xfa do servidor<br /> : Nível de INFO<br /> xfaView: Nível DEBUG<br /> xfaPerf: TRACE</td> 
   </tr> 
  </tbody> 
 </table>
@@ -176,7 +179,7 @@ Por exemplo:
 Se você usar o Configuration Manager para ativar o registro, os registros serão gerados para cada solicitação de renderização até que o registro seja desabilitado novamente.
 
 1. Faça logon no CQ Configuration Manager em `https://[server]:[port]/system/console/configMgr` e faça logon com as credenciais de administrador.
-1. Procure e clique em Configurações **de formulários** móveis.
+1. Procure e clique em Configurações **do Forms** móvel.
 1. Na caixa de texto Opções de depuração, digite as configurações de log conforme descrito na seção anterior, por exemplo, **2-a4-b5-c6**
 
    ![Configuração de formulários](assets/forms_configuration.png)
