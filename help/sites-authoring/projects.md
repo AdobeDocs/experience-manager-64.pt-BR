@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 88%
 
 ---
 
@@ -66,7 +69,7 @@ Você pode ter os seguintes blocos associados ao seu projeto. Cada um está desc
 * Lançamentos
 * Tarefas
 
-### Ativos {#assets}
+### Assets {#assets}
 
 No bloco **Assets**, você pode reunir todos os ativos que você usa para um projeto específico.
 
@@ -100,7 +103,7 @@ Selecione o caminho para as miniaturas e, se aplicável, altere a miniatura da e
 
 O bloco Links permite associar links externos ao seu projeto.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 Você pode nomear o link com um nome fácil de reconhecer, além de alterar a miniatura.
 
@@ -130,7 +133,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 Nesse bloco, você pode especificar os membros da equipe do projeto. Ao editar, você pode inserir o nome do membro da equipe e atribuir a função do usuário.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 É possível adicionar e excluir membros da equipe. Além disso, você pode editar a [função de usuário](#user-roles-in-a-project) atribuída ao membro da equipe.
 
