@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 93%
 
 ---
 
@@ -50,7 +53,7 @@ Ao editar uma página, a **Ajuda** pode ser acessada de:
 
 Mais [recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Navegador de componentes  {#components-browser}
+## Navegador de componentes   {#components-browser}
 
 O navegador de componentes mostra todos os componentes disponíveis para uso na sua página atual. Eles podem ser arrastados para o local apropriado e depois editados para adição de conteúdo.
 
@@ -90,10 +93,12 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
       * Os ícones dos componentes padrão são monocromáticos.
       * As abreviações são sempre os dois primeiros caracteres do nome do componente.
+
    Na barra de ferramentas superior, no navegador Componentes, é possível:
 
    * Filtrar componentes por nome.
    * Limitar a exibição para um grupo específico usando a seleção suspensa.
+
    Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador Componentes (se disponível).
 
    ![screen_shot_2018-03-22at141929](assets/screen_shot_2018-03-22at141929.png)
@@ -266,11 +271,11 @@ Por exemplo, quando apropriado, **Informações da página** também terá as op
 * [Promover lançamento](/help/sites-authoring/launches-promoting.md) se a página for um lançamento.
 * [Editar modelo](/help/sites-authoring/templates.md) se a página for baseada em um modelo [editável](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [Abrir na interface do usuário](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) clássica se essa opção tiver sido [ativada por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir na interface do usuário](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) clássica se essas opções tiverem sido [ativadas por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Além disso, **Informações da página** pode fornecer acesso ao Analytics e a recomendações, quando apropriado.
 
-## Modos de página  {#page-modes}
+## Modos de página   {#page-modes}
 
 Há vários modos ao editar uma página, o que permite ações diferentes:
 
@@ -301,6 +306,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* O acesso a alguns modos exige permissões/privilégios adequados.
 >* O modo Desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
 >* Existe um [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc).
+
 >
 
 
@@ -309,7 +315,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 
 Ao criar, geralmente é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou ao selecionar uma imagem. Para selecionar um caminho com facilidade, os [campos de caminho](/help/sites-authoring/author-environment-tools.md#path-fields) oferecem o recurso de completar automaticamente, e o [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) permite uma seleção mais robusta.
 
-### Campos de caminho  {#path-fields}
+### Campos de caminho   {#path-fields}
 
 Para ilustração, o exemplo usado aqui é o componente de imagem. Para obter mais informações sobre como usar e editar componentes, consulte [Componentes para criação de página](/help/sites-authoring/default-components.md).
 
