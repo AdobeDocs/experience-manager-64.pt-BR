@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: fbe70162-ced6-4989-9322-e12772edbcbc
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1895'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que os códigos de barras e o campo de assinatura não aparecem no meu formulário?
 
-   Resposta: Os campos de códigos de barras e assinaturas não são relevantes em cenários HTML ou móveis. Esses campos aparecem como uma área não interativa. Entretanto, o AEM Forms Designer fornece um novo campo de script de assinatura que pode ser usado em vez do campo de assinatura. Também é possível adicionar um widget [](/help/forms/using/custom-widgets.md) personalizado para códigos de barras e integrá-lo.
+   Resposta: Os campos de códigos de barras e assinaturas não são relevantes em cenários HTML ou móveis. Esses campos aparecem como uma área não interativa. Entretanto, o AEM Forms Designer fornece um novo campo de assinatura que pode ser usado em vez do campo de assinatura. Também é possível adicionar um widget [](/help/forms/using/custom-widgets.md) personalizado para códigos de barras e integrá-lo.
 
 1. O Rich Text é compatível com o Campo de texto XFA?
 
@@ -87,15 +90,15 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que alguns textos estão truncados ou são exibidos incorretamente em HTML5?
 
-   Resposta: Quando um elemento de texto Desenhar ou Legenda não tiver recebido espaço suficiente para exibir o conteúdo, o texto aparecerá truncado na execução do formulário móvel. Essa truncagem também está visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legendar texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
+   Resposta: Quando um elemento de texto Desenhar ou Legenda não tiver recebido espaço suficiente para exibir o conteúdo, o texto aparecerá truncado na execução do formulário móvel. Esse truncamento também é visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legenda de texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
 
 1. Estou observando problemas de layout relacionados a conteúdo ausente ou sobreposto. Qual é a razão?
 
-   Resposta: Se houver um elemento Desenhar texto ou Desenhar imagem junto com outro elemento sobreposto na mesma posição (digamos um retângulo), o conteúdo Desenhar texto não estará visível se for exibido posteriormente na ordem de documento (na visualização Hierarquia do AEM Forms Designer). O PDF oferece suporte a camadas transparentes, mas o HTML/navegador não oferece suporte a camadas transparentes.
+   Resposta: Se houver um elemento Desenhar texto ou Desenhar imagem junto com outro elemento sobreposto na mesma posição (digamos um retângulo), o conteúdo Desenhar texto não estará visível se for exibido posteriormente na ordem do documento (na visualização Hierarquia do AEM Forms Designer). O PDF oferece suporte a camadas transparentes, mas o HTML/navegador não oferece suporte a camadas transparentes.
 
 1. Por que algumas fontes são exibidas no formulário HTML diferentes daquelas usadas ao projetar o formulário?
 
-   Resposta: Os formulários HTML5 não incorporam fontes (ao contrário dos formulários PDF nos quais as fontes são incorporadas dentro do formulário). Para que a versão HTML do formulário seja renderizada como esperado, verifique se as fontes especificadas no XDP estão disponíveis no servidor e no computador cliente. Se as fontes necessárias não estiverem disponíveis no servidor, serão usadas as fontes fallback. Além disso, se você usar fontes no Modelo de formulário que não estão disponíveis no dispositivo cliente, as fontes padrão do navegador serão usadas para renderizar o texto.
+   Resposta: Os formulários HTML5 não incorporam fontes (em contraste com PDF forms nos quais as fontes são incorporadas dentro do formulário). Para que a versão HTML do formulário seja renderizada como esperado, verifique se as fontes especificadas no XDP estão disponíveis no servidor e no computador cliente. Se as fontes necessárias não estiverem disponíveis no servidor, serão usadas as fontes fallback. Além disso, se você usar fontes no Modelo de formulário que não estão disponíveis no dispositivo cliente, as fontes padrão do navegador serão usadas para renderizar o texto.
 
 1. Os atributos vAlign e hAlign são suportados em formulários HTML?
 
@@ -109,11 +112,11 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    Resposta: Sim, os formulários HTML5 têm algumas limitações. Se o número de dígitos for maior que a contagem especificada na cláusula de imagem, os números não serão localizados e serão exibidos na localidade em inglês.
 
-1. Por que formulários HTML têm tamanho maior que formulários PDF?
+1. Por que os formulários HTML são maiores do que os PDF forms?
 
    Muitas estruturas de dados intermediárias e objetos, como dom de formulário, dom de dados e dom de layout, são necessários para renderizar um XDP em um formulário HTML.
 
-   Para formulários PDF, o Adobe Acrobat tem um mecanismo XTG integrado para criar estruturas de dados intermediárias e objetos. O Acrobat também cuida do layout e dos scripts.
+   Para PDF forms, a Adobe Acrobat tem um mecanismo XTG integrado para criar estruturas de dados intermediárias e objetos. A Acrobat também cuida do layout e dos scripts.
 
    Para formulários HTML5, os navegadores não têm um mecanismo XTG incorporado para criar estruturas de dados intermediárias e objetos de bytes XDP brutos. Assim, para formulários HTML5, estruturas intermediárias são geradas no servidor e enviadas ao cliente. No cliente, o script baseado em javascript e o mecanismo de layout usam essas estruturas intermediárias.
 
@@ -148,7 +151,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    Resposta: Os formulários HTML5 ignoram as propriedades de aparência personalizadas de botões de opção e caixas de seleção. Os botões de opção e as caixas de seleção são exibidos de acordo com as especificações do navegador subjacente.
 
-1. Quando um formulário HTML5 é aberto em um navegador compatível, a borda dos campos colocados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Quando o mesmo formulário HTML5 é visualizado no Designer de Formulários, os campos e o layout não aparecem desalinhados e os subformulários aparecem na posição correta. Como corrigir o problema?
+1. Quando um formulário HTML5 é aberto em um navegador compatível, a borda dos campos colocados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Quando o mesmo formulário HTML5 é visualizado no Forms Designer, os campos e o layout não aparecem desalinhados e os subformulários aparecem na posição correta. Como corrigir o problema?
 
    Quando um subformulário é definido para continuar o conteúdo e ele tem um elemento de borda oculto, a borda dos campos posicionados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Para resolver o problema, você pode remover ou comentar os elementos ocultos &lt;border> do XDP correspondente. Por exemplo, o seguinte elemento &lt;border> é marcado como um comentário:
 
@@ -161,7 +164,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 ## Scripts {#scripting}
 
-1. Existem limitações na implementação do JavaScript para formulários HTML?
+1. Existem limitações na implementação do JavaScript para o HTML Forms?
 
    Resposta:
 
@@ -188,7 +191,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    1. Abra o CRXde lite e navegue até o `/content/xfaforms/profiles/default` nó.
    1. Adicione uma propriedade `mfDataDependentFloatingField` do tipo String e defina o valor da propriedade como `true`**.**
-   1. Clique em **Salvar tudo**. Agora, os campos flutuantes são ativados para os Formulários HTML usando o perfil de renderização atualizado.
+   1. Clique em **Salvar tudo**. Agora os campos flutuantes são ativados para o Forms HTML usando o perfil de renderização atualizado.
 
       >[!NOTE]
       >
