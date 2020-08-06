@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 81%
 
 ---
 
@@ -25,11 +28,12 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * Luzes direcionais
    * Luzes de refletor
    * Luzes de ponto
+
    Outros tipos de luzes são ignorados ou convertidos em um dos tipos acima com suporte quando o estágio é carregado no AEM 3D. Os tipos convertidos são usados quando você visualiza o ativo e renderiza usando o renderizador Rapid Refine integrado. Os tipos de luz originais são usados ao renderizar com Maya.
 
 1. Crie um plano base, se necessário, e aplique um material adequado.
 
-   A Adobe recomenda que você configure um plano base como unilateral. Isso garante que você possa visualizar o ativo de baixo no AEM 3D sem que o plano de fundo oculte o ativo.
+   A Adobe recomenda que você configure um plano base como unilateral. Isso garante que você possa visualização o ativo de baixo em AEM 3D sem que o plano de fundo oculte o ativo.
 
 1. (Opcional) Crie e configure câmeras.
 
