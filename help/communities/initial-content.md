@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 5%
 
 ---
 
@@ -53,6 +56,7 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
    * Nome: `an-scf-sandbox`
    * Selecionar **[!UICONTROL um modelo de reprodução SCF Sandbox]**
    * Clique em **[!UICONTROL Criar]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. No painel explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site`e clique em **[!UICONTROL Nova > Nova página]**:
@@ -62,7 +66,7 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
    * Selecionar **um modelo de reprodução SCF Sandbox **
    * Clique em **Criar **
 
-1. No painel explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site/SCF Sandbox`e clique em **[!UICONTROL Nova > Nova página]**
+1. No painel do explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site/SCF Sandbox`e clique em **[!UICONTROL Nova > Nova página]**
 
    * Título: `SCF Play`
    * Nome: `play`
@@ -73,7 +77,7 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
-   Esta é a exibição do repositório do que foi criado usando a ferramenta Site e o modelo:
+   Esta é a visualização do repositório do que foi criado usando a ferramenta Site e o modelo:
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
