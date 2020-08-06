@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 93%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->A Adobe não pretende aprimorar ainda mais os emails abertos/enviados pelo serviço SMTP AEM.\
->A recomendação é [aproveitar o Adobe Campaign e sua integração](/help/sites-administering/campaign.md)com o AEM.
+>O Adobe não pretende melhorar ainda mais os emails abertos/enviados pelo serviço SMTP AEM.\
+>A recomendação é [aproveitar a Adobe Campaign e sua integração](/help/sites-administering/campaign.md)AEM.
 
 O email marketing (por exemplo, informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus leads. No AEM, é possível criar boletins informativos de conteúdo existente do AEM, bem como adicionar novo conteúdo, específico para boletins informativos.
 
@@ -95,7 +98,7 @@ Este documento descreve os fundamentos da criação de informativos no AEM. Para
 
    * **Lista de destinatários padrão**
 
-      Lista padrão que deve receber o boletim informativo.
+      lista padrão que deve receber o boletim informativo.
    As propriedades podem ser atualizadas posteriormente na caixa de diálogo **Propriedades**.
 
 1. Clique em **OK** para salvar.
@@ -193,6 +196,7 @@ Para personalizar as configurações do boletim informativo:
    1. Modifique o **Assunto** do email, se necessário.
    1. Selecione uma **Lista de destinatários padrão** a partir da lista suspensa.
    1. Clique em **OK**.
+
    Ao testar ou enviar o boletim informativo, os destinatários receberão emails com o endereço de email e assunto especificados.
 
 ## Teste de envio de informativos {#flight-testing-newsletters}
