@@ -1,8 +1,8 @@
 ---
 title: Minificação dos arquivos JavaScript
 seo-title: Minificação dos arquivos JavaScript
-description: Instruções para gerar código minified após as personalizações da área de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
-seo-description: Instruções para gerar código minified após as personalizações da área de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
+description: Instruções para gerar código minified após personalizações de espaço de trabalho AEM Forms para otimizar os arquivos JS para a Web.
+seo-description: Instruções para gerar código minified após personalizações de espaço de trabalho AEM Forms para otimizar os arquivos JS para a Web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Para gerar um código minified para alterações semânticas, siga estas etapas.
 
    >[!NOTE]
    >
-   >Consulte [Introdução à área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) Personalizar formulários AEM para obter mais detalhes sobre os pacotes.
+   >Consulte [Introdução à personalização da área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) do AEM Forms para obter mais detalhes sobre os pacotes.
 
 1. Atualize os caminhos em `main.js` client-html/src/main/webapp/js para modelos/visualizações adicionados/atualizados.
 
