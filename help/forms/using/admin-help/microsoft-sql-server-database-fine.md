@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Modifique as configurações do processador e, mais importante, marque a caixa d
 
 ## Configurações do banco de dados {#database-settings}
 
-Altere as configurações do banco de dados. A configuração mais importante é Intervalo de recuperação, que especifica a quantidade máxima de tempo de espera para a recuperação após uma falha. A configuração padrão é de um minuto. Usar um valor maior, de 5 a 15 minutos, melhora o desempenho, pois dá ao servidor mais tempo para gravar alterações do log do banco de dados de volta nos arquivos do banco de dados.
+Altere as configurações do banco de dados. A configuração mais importante é o Intervalo de recuperação, que especifica a quantidade máxima de tempo de espera para a recuperação após uma falha. A configuração padrão é de um minuto. Usar um valor maior, de 5 a 15 minutos, melhora o desempenho, pois dá ao servidor mais tempo para gravar alterações do log do banco de dados de volta nos arquivos do banco de dados.
 
 >[!NOTE]
 >
