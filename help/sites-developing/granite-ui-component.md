@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 translation-type: tm+mt
 source-git-commit: 26b7692b839e8395d090137e4f85b008171bbfc0
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ Para obter exemplos, consulte:
 
 ## Criação do script do lado do servidor para o componente {#creating-the-server-side-script-for-the-component}
 
-Seu campo personalizado deve substituir somente o `render.jsp` script, onde você fornece a marcação para o componente. Você pode considerar o JSP (ou seja, o script de renderização) como um invólucro para sua marcação.
+Seu campo personalizado deve substituir somente o `render.jsp` script, onde você fornece a marcação para o seu componente. Você pode considerar o JSP (ou seja, o script de renderização) como um invólucro para sua marcação.
 
 1. Crie um novo componente que use a `sling:resourceSuperType` propriedade para herdar de:
 
@@ -98,7 +101,7 @@ Seu campo personalizado deve substituir somente o `render.jsp` script, onde voc�
 Para adicionar um comportamento específico do cliente ao seu componente:
 
 1. Crie uma clientlib de categoria `cq.authoring.dialog`.
-1. Crie uma clientlib de categoria `cq.authoring.dialog` e defina sua `JS`/ `CSS` dentro dela.
+1. Crie uma clientlib de categoria `cq.authoring.dialog` e defina seu `JS`/ `CSS` dentro dela.
 
    Defina seu `JS`/ `CSS` dentro da clientlib.
 
