@@ -1,6 +1,6 @@
 ---
-title: 'Uso de tags '
-seo-title: 'Uso de tags '
+title: 'Uso de tags  '
+seo-title: 'Uso de tags  '
 description: Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 seo-description: Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 83%
 
 ---
 
 
-# Uso de tags {#using-tags}
+# Uso de tags  {#using-tags}
 
 Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 
@@ -37,7 +40,7 @@ Tags são um método rápido e fácil de classificar o conteúdo em um site. Tag
 
 Ao projetar a estrutura de conteúdo de um site e o esquema de metadados para ativos, considere a abordagem leve e acessível de tags.
 
-## Aplicação de tags  {#applying-tags}
+## Aplicação de tags   {#applying-tags}
 
 No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
