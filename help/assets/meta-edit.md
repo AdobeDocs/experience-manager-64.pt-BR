@@ -1,18 +1,21 @@
 ---
 title: Como editar ou adicionar metadados
-description: Saiba mais sobre metadados de ativos no AEM Assets e sobre várias maneiras pelas quais você pode editar metadados de ativos.
+description: Saiba mais sobre os metadados de ativos no AEM Assets e sobre as várias maneiras pelas quais você pode editar os metadados de ativos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 8%
 
 ---
 
 
 # Como editar ou adicionar metadados {#how-to-edit-or-add-metadata}
 
-Os metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados a campos existentes (por exemplo, quando um campo de metadados estiver em branco).
+Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados a campos existentes (por exemplo, quando um campo de metadados estiver em branco).
 
-Como as empresas precisam de vocabulários de metadados controlados e confiáveis, os ativos AEM não permitem a adição ad hoc de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [Criação de nova propriedade de metadados para ativos](meta-edit.md#editing-metadata-schema).
+Como o empresa precisa de vocabulários de metadados controlados e confiáveis, a AEM Assets não permite a adição ad hoc de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [Criação de nova propriedade de metadados para ativos](meta-edit.md#editing-metadata-schema).
 
 ## Editar metadados para um ativo {#editing-metadata-for-an-asset}
 
@@ -20,10 +23,11 @@ Para editar metadados:
 
 1. Faça uma das seguintes opções:
 
-   * Na interface do usuário do Assets, selecione o ativo e clique/toque no ícone **[!UICONTROL Exibir propriedades]** na barra de ferramentas.
-   * Na miniatura do ativo, selecione a ação rápida **[!UICONTROL Exibir propriedades]** .
-   * Na página do ativo, clique/toque no ícone **[!UICONTROL Exibir propriedades]** ícone ![informações da barra de ferramentas](assets/do-not-localize/info_icon.png) .
-   A página do ativo exibe todos os metadados do ativo. Esses metadados foram extraídos automaticamente quando foram carregados (assimilados) nos ativos AEM.
+   * Na interface do usuário Ativos, selecione o ativo e clique/toque no ícone Propriedades **[!UICONTROL da]** Visualização na barra de ferramentas.
+   * Na miniatura do ativo, selecione a ação rápida Propriedades **[!UICONTROL da]** Visualização.
+   * Na página do ativo, clique/toque no ícone Propriedades **[!UICONTROL da]** Visualização ícone ![informações da barra de ferramentas](assets/do-not-localize/info_icon.png) .
+
+   A página do ativo exibe todos os metadados do ativo. Esses metadados foram extraídos automaticamente quando foram carregados (assimilados) no AEM Assets.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -33,20 +37,20 @@ Para editar metadados:
    >
    >Se um campo de texto estiver vazio, não há metadados definidos. Você pode inserir um valor no campo e salvá-lo para adicionar essa propriedade de metadados.
 
-Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados XMP. Isso é feito por meio do fluxo de trabalho de gravação de metadados do AEM. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e as propriedades recém-criadas (incluindo propriedades personalizadas como `cq:tags`) são adicionadas ao esquema.
+Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados XMP. Isso é feito por meio do fluxo de trabalho de gravação de metadados AEM. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e as propriedades recém-criadas (incluindo propriedades personalizadas como `cq:tags`) são adicionadas ao schema.
 
-A gravação XMP é suportada e ativada para as plataformas e formatos de arquivo descritos em Requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
+XMP write-back é compatível e habilitado para as plataformas e formatos de arquivo descritos em Requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
 
-## Editar esquema de metadados {#editing-metadata-schema}
+## Edição do Schema de metadados {#editing-metadata-schema}
 
-Para obter detalhes sobre como editar o esquema de metadados, consulte [Edição de formulários](metadata-schemas.md#editing-metadata-schema-forms)de esquema de metadados.
+Para obter detalhes sobre como editar schemas de metadados, consulte [Edição de formulários](metadata-schemas.md#editing-metadata-schema-forms)de schema de metadados.
 
-## Registrando um namespace personalizado no AEM {#registering-a-custom-namespace-within-aem}
+## Registrando uma namespace personalizada no AEM {#registering-a-custom-namespace-within-aem}
 
-Você pode adicionar seus próprios namespaces no AEM. Assim como há namespaces predefinidos, como cq, jcr e sling, você pode ter um namespace para os metadados do repositório e o processamento xml.
+Você pode adicionar suas próprias namespaces dentro do AEM. Assim como há namespaces predefinidas, como cq, jcr e sling, você pode ter uma namespace para os metadados do repositório e o processamento xml.
 
 1. Vá para a página de administração do tipo de nó `https://[AEM_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. Clique ou toque em **[!UICONTROL Namespaces]** na parte superior da página. A página de administração do namespace é exibida em uma janela.
+1. Clique ou toque em **[!UICONTROL Namespaces]** na parte superior da página. A página de administração da namespace é exibida em uma janela.
 
-1. Para adicionar um namespace, clique ou toque em **[!UICONTROL Novo]** na parte inferior.
-1. Especifique um namespace personalizado na convenção de namespace XML (especifique a id no formato de um URI e um prefixo associado para a id) e clique ou toque em **[!UICONTROL Salvar]**.
+1. Para adicionar uma namespace, clique ou toque em **[!UICONTROL Novo]** na parte inferior.
+1. Especifique uma namespace personalizada na convenção de namespace XML (especifique a ID na forma de um URI e um prefixo associado para a ID) e clique ou toque em **[!UICONTROL Salvar]**.
