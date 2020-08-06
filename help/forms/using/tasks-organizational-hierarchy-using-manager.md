@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
 
 # Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerente {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia - relatórios diretos ou indiretos - e executar várias ações neles. As tarefas estão disponíveis na guia Fazer na área de trabalho do AEM Forms. As ações suportadas nas tarefas dos relatórios diretos são:
+Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia - relatórios diretos ou indiretos - e executar várias ações. As tarefas estão disponíveis na guia Fazer na área de trabalho do AEM Forms. As ações suportadas nas tarefas dos relatórios diretos são:
 
 **Encaminhar** uma tarefa do relatório direto para qualquer usuário.
 
@@ -27,9 +30,9 @@ Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas at
 
 **Rejeitar** Rejeitar uma tarefa encaminhada a um relatório direto por outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um relatório direto.
 
-O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que o usuário possa buscar somente as tarefas nas quais o usuário tenha permissões de acesso. Usando serviços e implementações da Web de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerentes e relatórios diretos de acordo com suas necessidades.
+A AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que o usuário possa buscar somente as tarefas nas quais o usuário tenha permissões de acesso. Usando serviços e implementações da Web de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerentes e relatórios diretos de acordo com suas necessidades.
 
-1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para formulários AEM&quot; no guia [Programação com formulários](https://www.adobe.com/go/learn_aemforms_programming_63) AEM.
+1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para formulários AEM&quot; no guia [Programação com AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
 1. No DSC, defina um novo SPI para o gerenciamento de hierarquia para definir relatórios diretos e hierarquia dentro dos usuários do AEM Forms. A seguir, há um exemplo de trecho de código Java™.
 
    ```as3
