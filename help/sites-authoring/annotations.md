@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
 source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 98%
 
 ---
 
@@ -51,6 +54,7 @@ Um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) é usado
 >
 >* [Anotação de ativos](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Anotação de ativos de vídeo](/help/assets/managing-video-assets.md#annotating-video-assets)
+
 >
 
 
@@ -88,9 +92,11 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Escolher/alterar a cor:
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * Excluir a anotação.
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Você pode fechar a caixa de diálogo de anotação clicando/tocando fora dela. Uma exibição truncada (a primeira palavra) da anotação, junto com os rascunhos existentes, é mostrada:
