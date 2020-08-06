@@ -1,8 +1,8 @@
 ---
 title: Expiração de objetos estáticos
 seo-title: Expiração de objetos estáticos
-description: Saiba como configurar o AEM para que objetos estáticos não expirem (por um período de tempo razoável).
-seo-description: Saiba como configurar o AEM para que objetos estáticos não expirem (por um período de tempo razoável).
+description: Saiba como configurar AEM para que objetos estáticos não expirem (por um período de tempo razoável).
+seo-description: Saiba como configurar AEM para que objetos estáticos não expirem (por um período de tempo razoável).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ As expirações são especificadas pelo padrão HTTP referente à &quot;expiraç
 >
 >Essa configuração é completamente separada do Dispatcher (e não funcionará para ele).
 >
->A finalidade do Dispatcher é armazenar dados em cache na frente do AEM.
+>A finalidade do Dispatcher é armazenar dados em cache na frente da AEM.
 
 Todos os arquivos, que não são dinâmicos e que não mudam ao longo do tempo, podem e devem ser armazenados em cache. A configuração do servidor HTTPD do Apache pode parecer com uma das seguintes opções - dependendo do ambiente:
 
