@@ -166,6 +166,7 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de entrada e 
    * **Fase 3:** Copiado para a pasta de estágio e o processo é chamado
    * **Fase 4:** Manipulação em andamento
    * **Fase 5:** Resultados retornados
+
    Se os arquivos estiverem no Estágio 1, eles serão manipulados. Se os arquivos estiverem no Estágio 2 ou 3, coloque-os na pasta de entrada para que a manipulação ocorra novamente.
 
    >[!NOTE]
