@@ -1,8 +1,8 @@
 ---
 title: Componentes para fragmentos de conteúdo
 seo-title: Componentes para fragmentos de conteúdo
-description: Fragmentos de conteúdo do AEM são criados e gerenciados como ativos independentes da página
-seo-description: Fragmentos de conteúdo do AEM são criados e gerenciados como ativos independentes da página
+description: AEM fragmentos de conteúdo são criados e gerenciados como ativos independentes de página
+seo-description: AEM fragmentos de conteúdo são criados e gerenciados como ativos independentes de página
 uuid: 289ed9cb-9531-43a9-b0d8-a3499e2e9ee5
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 >[!CAUTION]
 >
->Algumas funcionalidades do fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 ## Componentes para criação de fragmentos {#components-for-fragment-authoring}
 
@@ -38,7 +41,7 @@ Consulte a API de gerenciamento de fragmentos de [conteúdo - lado](/help/sites-
 >
 >Esta seção detalha o componente original entregue para uso com fragmentos de conteúdo (Fragmento **de** conteúdo no grupo **Geral** ).
 
-Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments.md). Eles permitem criar um conteúdo neutro ao canal, juntamente com variações (possivelmente, específicas do canal). [Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo](/help/sites-authoring/content-fragments.md). Você também pode usar um ativo de fragmento de conteúdo existente [arrastando-o do navegador de ativos para a página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (como para outros componentes baseados em ativos, como a Imagem do componente de base). O componente de fragmento de conteúdo pronto para uso exibe apenas um [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) do fragmento de conteúdo referenciado. Usando a caixa de diálogo do componente, você pode definir o [elemento, a variação e o intervalo de parágrafos](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) do fragmento que deseja exibir na página.
+Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments.md). Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). [Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo](/help/sites-authoring/content-fragments.md). Você também pode usar um ativo de fragmento de conteúdo existente [arrastando-o do navegador de ativos para a página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (como para outros componentes baseados em ativos, como a Imagem do componente de base). O componente de fragmento de conteúdo pronto para uso exibe apenas um [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) do fragmento de conteúdo referenciado. Usando a caixa de diálogo do componente, você pode definir o [elemento, a variação e o intervalo de parágrafos](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) do fragmento que deseja exibir na página.
 
 >[!NOTE]
 >
@@ -50,7 +53,7 @@ Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e ger
 
 ### Definição {#definition}
 
-O componente Fragmento **de** conteúdo é usado para manter uma referência a um ativo de fragmento de conteúdo (ativos de texto efetivamente aprimorados). O tipo de recurso do fragmento de conteúdo é:
+O componente Fragmento **de** conteúdo é usado para manter uma referência a um ativo de fragmento de conteúdo (ativos de texto efetivamente aprimorados). O tipo de recurso para o fragmento de conteúdo é:
 
 * `dam/cfm/components/contentfragment/contentfragment`
 
@@ -58,7 +61,7 @@ A referência é definida na propriedade:
 
 * `fileReference`
 
-Somente o editor da interface habilitada para toque suporta totalmente os componentes do fragmento de conteúdo, que inclui a biblioteca do cliente:
+Somente o editor da interface habilitada para toque oferece suporte total aos componentes do fragmento de conteúdo, que inclui a biblioteca do cliente:
 
 * `cq.authoring.editor.plugin.cfm`
 
@@ -116,7 +119,7 @@ A configuração predefinida usa os seguintes transformadores:
 
 * `transformer-cfm-payloadfilter` - para recuperar a `body` parte ( `<body>...</body>`) somente do HTML do fragmento
 
-* `transformer-cfm-parfilter` - filtra parágrafos indesejados se um intervalo de parágrafo for especificado (como pode ser feito com o componente Fragmento de conteúdo)
-* `transformer-cfm-assetprocessor` - é usado internamente para recuperar uma lista dos ativos que estão incorporados ao fragmento
+* `transformer-cfm-parfilter` - filtros parágrafos indesejados se um intervalo de parágrafo for especificado (como pode ser feito com o componente Fragmento do conteúdo)
+* `transformer-cfm-assetprocessor` - é usado internamente para recuperar uma lista dos ativos incorporados ao fragmento
 
 O processo de renderização é exposto por meio de ` [com.adobe.cq.dam.cfm.content.FragmentRenderService](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)` e pode ser aproveitado (por exemplo) pelos componentes personalizados, se necessário.
