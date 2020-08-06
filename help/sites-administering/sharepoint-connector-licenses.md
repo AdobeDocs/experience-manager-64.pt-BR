@@ -1,6 +1,6 @@
 ---
-title: Licenças do SharePoint Connector, Avisos de copyright e Isenções de responsabilidade
-seo-title: Licenças do SharePoint Connector, Avisos de copyright e Isenções de responsabilidade
+title: Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade
+seo-title: Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade
 description: Saiba mais sobre as Licenças do Conector do SharePoint, Avisos de direitos autorais e Isenções de responsabilidade.
 seo-description: Saiba mais sobre as Licenças do Conector do SharePoint, Avisos de direitos autorais e Isenções de responsabilidade.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 translation-type: tm+mt
 source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 10%
 
 ---
 
 
-# Licenças do SharePoint Connector, Avisos de copyright e Isenções de responsabilidade{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Esta seção lista todas as licenças, avisos de direitos autorais e avisos de isenção de responsabilidade que devem ser explicitamente mencionados em conexão com o Conector Day JCR para MS SharePoint.
+Esta seção lista todas as licenças, avisos de direitos autorais e avisos de isenção de responsabilidade que devem ser explicitamente mencionados em conexão com o Day JCR Connector for MS SharePoint.
 
 ## Visão geral das bibliotecas de terceiros do conector {#overview-of-connector-rd-party-libraries}
 
-A tabela a seguir lista as bibliotecas de terceiros usadas nas bibliotecas principais do SharePoint Connector, juntamente com as licenças, avisos de direitos autorais ou avisos de isenção de responsabilidade pelos quais são abordados:
+A tabela a seguir lista bibliotecas de terceiros usadas nas bibliotecas principais do SharePoint Connector, juntamente com as licenças, avisos de direitos autorais ou avisos de isenção de responsabilidade pelos quais são abordados:
 
 | Biblioteca | Tipo de licença |
 |---|---|
@@ -39,7 +42,7 @@ A tabela a seguir lista as bibliotecas de terceiros usadas nas bibliotecas princ
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
 | simultâneo | [Concorrente](#concurrent) (Domínio público) |
-| geronimo-ativation_1.1_spec | [Apache](#apache) |
+| geronimo-ativação_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
@@ -62,7 +65,7 @@ A tabela a seguir lista as bibliotecas de terceiros usadas nas bibliotecas princ
 
 ## Visão geral das bibliotecas de terceiros CRX {#overview-of-crx-rd-party-libraries}
 
-A tabela a seguir lista as bibliotecas de terceiros usadas no CRX, juntamente com as licenças, os avisos de copyright ou as isenções de responsabilidade pelas quais são cobertas:
+A tabela a seguir lista bibliotecas de terceiros usadas no CRX, juntamente com licenças, avisos de copyright ou avisos de isenção de responsabilidade pelos quais elas são cobertas:
 
 <table> 
  <colgroup> 
@@ -154,7 +157,7 @@ A tabela a seguir lista as bibliotecas de terceiros usadas no CRX, juntamente co
 
 ## Visão geral das bibliotecas de terceiros CQSE {#overview-of-cqse-rd-party-libraries}
 
-A tabela a seguir lista as bibliotecas de terceiros usadas no Mecanismo de Servlet Communiqué, juntamente com as licenças, os avisos de copyright ou as isenções de responsabilidade pelas quais são cobertas:
+A tabela a seguir listas bibliotecas de terceiros usadas no Mecanismo de Servlet Communiqué, juntamente com as licenças, avisos de copyright ou avisos de isenção de responsabilidade pelos quais são cobertos:
 
 <table> 
  <colgroup> 
