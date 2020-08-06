@@ -41,7 +41,7 @@ Para ativar as Smart Tags aprimoradas, além das anteriores, instale também o s
 
 A public certificate allows you to authenticate your profile on [!DNL Adobe Developer Console].
 
-1. Na interface do [!DNL Experience Manager] usuário, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service]** herdados.
+1. Na interface do [!DNL Experience Manager] usuário, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Cloud Services]** herdados.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 
@@ -119,7 +119,7 @@ Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no
 
 Para configurar a integração, use os valores dos campos ID [!UICONTROL DA CONTA]TÉCNICA, ID [!UICONTROL da]ORGANIZAÇÃO, SECRETO CLIENTE e ID [!UICONTROL do] CLIENTE da integração do Console do desenvolvedor do Adobe. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] implantação.
 
-1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas > Cloud Service > Cloud Service]** herdados para abrir o console [!UICONTROL Cloud Service] .
+1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas > Cloud Service > Cloud Services]** herdados para abrir o console [!UICONTROL Cloud Services] .
 
 1. Em Tags **[!UICONTROL inteligentes de]** ativos, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
 
