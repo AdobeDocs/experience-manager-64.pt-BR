@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 1a6431f19b7eae73150ea3b0bfa00a719e155c41
+source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
 workflow-type: tm+mt
 source-wordcount: '21624'
 ht-degree: 24%
@@ -203,7 +203,7 @@ Se você estiver usando o pacote `com.day.cq.dam.handler.standard.msoffice` em s
 
 * Caracteres especiais que ocorrem na linha Assunto de Modelos de e-mail não são exibidos corretamente (NPR-30547).
 
-* Os nomes dos ativos são alterados para minúsculas ao mover ativos de uma pasta para outra em AEM em execução no modo de execução do Dynamic Media Scene 7 (NPR-31631).
+* Os nomes dos ativos são alterados para letras minúsculas ao mover ativos de uma pasta para outra em AEM em execução no modo de execução do Dynamic Media Scene 7 (NPR-31631).
 
 * Os nomes do conjunto de imagens são alterados para minúsculas na Cena 7, quando o conjunto de imagens (ou conjunto de imagens) é criado e nomeado com a convenção de nomenclatura apropriada no DAM (NPR-31576).
 
@@ -287,7 +287,7 @@ Se você estiver usando o pacote `com.day.cq.dam.handler.standard.msoffice` em s
 
 * As atualizações na configuração de tamanho do buffer do serviço HTTP baseado em Java não são salvas (NPR-30925).
 
-* O QueryBuilder agora suporta orderby fn:name() em query xpath (NPR-31322).
+* O QueryBuilder agora oferece suporte a order by fn:name() em query xpath (NPR-31322).
 
 * Atualizado o administrador do evento distribuído Sling para a versão 1.1.4, melhorando a qualidade dos registros em um ambiente agrupado (NPR-29256).
 
@@ -409,7 +409,7 @@ Alguns dos principais destaques da AEM 6.4.6.0 são:
 * Erro de análise ao abrir um Fragmento de conteúdo com caracteres em dólar ($) e chave aberta ({) um após o outro. Hotfix do CQ-4270266
 * VersionPreviewServlet está falhando em NullPointerException ao tentar exibir uma versão de um Fragmento de experiência na linha do tempo. NPR-30074: Hotfix do CQ-4271881
 * Não é possível bloquear fragmentos de conteúdo por meio do recurso de check-in. NPR-29923: Hotfix do CQ-4258785
-* Falha de verificação de assinatura no manipulador de autenticação SAML. NPR-30379: Solicitação de backport para GRANITE-26567.
+* Falha de verificação de assinatura no manipulador de autenticação SAML. NPR-30379: Solicitação de backport para GRANITE-26567
 
 **Replicação**
 
@@ -1910,7 +1910,7 @@ As correções do AEM Forms são entregues por meio de pacotes complementares e 
 Os principais destaques do AEM Forms são:
 
 * A AEM Forms apresenta o recurso [de relatórios de](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) transação para rastrear e manter a contagem de transações, como formulários enviados, documentos processados e documentos renderizados, na implantação do AEM Forms. Ele fornece informações sobre o uso do produto e ajuda os usuários empresariais a compreender os volumes de processamento digital.
-* Ativado o suporte PDF/UA para formulários XML.
+* Ativado o suporte a PDF/UA para formulários XML.
 * Adicionado allowProxy = true para Clientlib **aemfd.ccm.canal.contentpage**
 * Código atualizado para fazer pesquisa de título avançada como contém em vez de igual.
 * Atualize para a nova versão do NPM (Node Package Manager) no Computador de Integração Contínua.
