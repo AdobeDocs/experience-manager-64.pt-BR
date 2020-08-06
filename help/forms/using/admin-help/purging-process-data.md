@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3157bb92-4b07-40f2-be4c-8f5807f9a380
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
 
 # Expurgando dados do processo {#purging-process-data}
 
-Os dados do processo que são gerados quando um processo de longa duração é chamado podem se tornar grandes demais, resultando em menor desempenho de formulários AEM e no uso de espaço em disco desnecessário. É uma boa prática expurgar os dados do processo quando os registros não forem mais necessários. Os formulários AEM fornecem vários meios de expurgar dados do processo:
+Os dados do processo que são gerados quando um processo de longa duração é chamado podem se tornar grandes demais, resultando em menor desempenho de formulários AEM e no uso de espaço em disco desnecessário. É uma boa prática expurgar os dados do processo quando os registros não forem mais necessários. Os formulários AEM fornecem vários meios de expurgar os dados do processo:
 
 * Você pode usar o console de administração para realizar uma expurgação única de registros obsoletos relacionados a processos de longa duração, ou para programar expurgações automáticas regulares. (Consulte [Expurgar registros do banco de dados](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)do Gerenciador de Jobs.)
 * Você pode usar a API Java de formulários AEM e a API de serviço da Web para expurgar programaticamente os dados de processo relacionados a processos duradouros. (Consulte &quot;Expurgando dados do processo&quot; em [Programação com formulários](https://www.adobe.com/go/learn_aemforms_programming_63)AEM.)
