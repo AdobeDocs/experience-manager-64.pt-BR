@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Na página Rastreamento, você pode pesquisar por processos ativos ou concluído
 
 ## Procurar processos e tarefas {#search-for-processes-and-tasks}
 
-Você pode pesquisar instâncias de processo e tarefas associadas com base em nomes de processo ou usando modelos de pesquisa definidos pelo administrador do espaço de trabalho do AEM Forms.
+Você pode pesquisar instâncias de processo e tarefas associadas com base em nomes de processo ou usando modelos de pesquisa definidos pelo administrador da área de trabalho da AEM Forms.
 
 É possível definir quais colunas serão exibidas nos resultados da pesquisa.
 
