@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 56%
 
 ---
 
@@ -32,9 +35,9 @@ Atualmente, o AEM 3D oferece suporte somente a TIFFs de 32 bits. Se necessário,
 
 Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, o AEM 3D oferece controle adicional sobre os efeitos de IBL, permitindo até três imagens separadas:
 
-* **Imagem** de ambiente de iluminação difusa - esse tipo de imagem deve ser uma imagem HDR, mas pode ser relativamente pequena, já que a imagem será filtrada intensamente antes de ser usada para iluminação difusa.
-* **Refletion Environment Image** (Imagem do ambiente de reflexão) - Esse tipo de imagem é usado para criar reflexões nas superfícies do objeto. Pode ser uma imagem RGB de 8 bits padrão com tamanho e resolução que forneçam a qualidade e a nitidez desejadas para os reflexos. Se uma imagem HDR for especificada, o AEM 3D a converterá em RGB de 8 bits antes de usar um algoritmo proprietário.
-* **Imagem** do ambiente de plano de fundo: esse tipo de imagem é usada como plano de fundo. Pode ser uma imagem RGB de 8 bits padrão e deve ter o tamanho, a resolução e o nível de detalhe desejados para o plano de fundo do palco. Se uma imagem HDR for especificada, o AEM 3D a converterá em RGB de 8 bits usando um algoritmo proprietário. ``
+* **Imagem** de Ambiente de iluminação difusa - esse tipo de imagem deve ser uma imagem HDR, mas pode ser relativamente pequena, já que a imagem será filtrada intensamente antes de ser usada para iluminação difusa.
+* **Imagem** do Ambiente de reflexão - Esse tipo de imagem é usado para criar reflexões nas superfícies do objeto. Pode ser uma imagem RGB de 8 bits padrão com tamanho e resolução que forneçam a qualidade e a nitidez desejadas para os reflexos. Se uma imagem HDR for especificada, o AEM 3D a converterá em RGB de 8 bits antes de usar um algoritmo proprietário.
+* **Imagem** do Ambiente de plano de fundo - Esse tipo de imagem é usada como plano de fundo. Pode ser uma imagem RGB de 8 bits padrão e deve ter o tamanho, a resolução e o nível de detalhe desejados para o plano de fundo do palco. Se uma imagem HDR for especificada, o AEM 3D a converterá em RGB de 8 bits usando um algoritmo proprietário. ``
 
 >[!NOTE]
 >
@@ -54,7 +57,7 @@ Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, 
    <td>Detalhes do sol IBL</td> 
    <td><p>Permite ajustar a direção e a intensidade da fonte de luz suplementar que simula o sol. <span class="diff-html-added">Essa fonte de luz aumenta o brilho da iluminação e faz com que o objeto projete uma sombra projetada no plano do solo. A projeção de sombra é suportada ao renderizar com o Rapid Refine e ao visualizar com o Google Chrome. No entanto, não é suportada atualmente por outros navegadores.</span></p> 
     <ul> 
-     <li><strong>lat</strong> - A posição vertical da fonte de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> A definição de <code>0.0</code> está no horizonte (centro vertical da imagem de ambiente de iluminação difusa); <code>1.0</code> está no apogeu (margem superior da Imagem do Ambiente de Iluminação Difusa).</li> 
+     <li><strong>lat</strong> - A posição vertical da fonte de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> Uma definição de <code>0.0</code> está no horizonte (centro vertical da Imagem do Ambiente de Iluminação Difusa); <code>1.0</code> está no ápice (margem superior da Imagem do Ambiente de Iluminação Difusa).</li> 
      <li><strong>long</strong> - A posição horizontal da fonte de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> Uma configuração de 0,0 corresponde à esquerda; 1,0 equivale à extrema direita da Imagem do ambiente de iluminação difusa.<br /> </li> 
      <li><strong>claro</strong> - O brilho da fonte de luz solar. Aumente esse valor para clarear a fonte de luz solar; diminua-o para escurecer. <br /> Uma configuração de <code>0</code> desativa a iluminação suplementar e desativa as sombras projetadas. O parâmetro não afeta os reflexos do ambiente.<br /> </li> 
     </ul> </td> 
@@ -64,7 +67,7 @@ Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, 
    <td>Se o fundo IBL parecer distorcido perto do horizonte, é possível reduzir ou eliminar a distorção ajustando essa propriedade. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Iluminação ambiental</td> 
+   <td>Iluminação do Ambiente</td> 
    <td><p><span class="diff-html-added">Permite controlar a iluminação difusa. Talvez seja necessário ajustar manualmente essa propriedade para corrigir o brilho da luz se a Imagem do ambiente de iluminação difusa for excepcionalmente clara ou escura (por exemplo, cenários noturnos).</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Atualmente não utilizado.</li> 
@@ -87,7 +90,7 @@ Os estágios IBL usam imagens de fundo esféricas com 20 metros de diâmetro por
 1. Expanda o nó stage para `jcr:content/metadata`.
 1. Defina a propriedade como `dam:gPlaneRadius` o valor milímetro desejado.
 
-   Para eficiência de renderização, a Adobe recomenda que você limite esse valor aproximadamente à maior dimensão do objeto maior que você pretende mostrar no palco.
+   Para eficiência de renderização, o Adobe recomenda que você limite esse valor a aproximadamente a maior dimensão do objeto maior que você pretende mostrar no palco.
 
    Por exemplo, um modelo de avião a jato com 20 metros de comprimento exibe bem se `dam:gPlaneRadius=20000`.
 
