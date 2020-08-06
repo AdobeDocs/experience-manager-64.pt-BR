@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -18,18 +21,18 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
 
 ## Visão geral {#overview}
 
-Você pode ter diferentes tipos de usuários com habilidades variadas que funcionam com os Formulários adaptativos. Embora os usuários especialistas possam ter o conhecimento certo para trabalhar com scripts e regras complexas, pode haver usuários de nível básico que precisam trabalhar somente com o layout e as propriedades básicas de formulários adaptáveis.
+Você pode ter diferentes tipos de usuários com habilidades variadas que funcionam com o Adaptive Forms. Embora os usuários especialistas possam ter o conhecimento certo para trabalhar com scripts e regras complexas, pode haver usuários de nível básico que precisam trabalhar somente com o layout e as propriedades básicas de formulários adaptáveis.
 
-O AEM Forms permite limitar o acesso do editor de regras aos usuários com base em sua função ou função. Nas configurações do Serviço de configuração de formulários adaptáveis, você pode especificar os grupos [de](/help/sites-administering/security.md) usuários que podem exibir e acessar o editor de regras.
+A AEM Forms permite limitar o acesso do editor de regras aos usuários com base em sua função ou função. Nas configurações do Serviço de configuração adaptável Forms, você pode especificar os grupos [de](/help/sites-administering/security.md) usuários que podem visualização e acessar o editor de regras.
 
 ## Especificar grupos de usuários que podem acessar o editor de regras {#specify-user-groups-that-can-access-rule-editor}
 
-1. Faça logon no AEM Forms como administrador.
-1. Na instância do autor, clique em ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martelo](assets/hammer.png) de ferramentas > Operações > Console da Web. O Console da Web é aberto em uma nova janela.
+1. Faça logon na AEM Forms como administrador.
+1. Na instância do autor, clique em ![](assets/adobeexperiencemanager.png)adobeexperiencemanagerAdobe Experience Manager > Ferramentas ![martelo](assets/hammer.png) > Operações > Console da Web. O Console da Web é aberto em uma nova janela.
 
    ![1](assets/1.png)
 
-1. Na janela Console da Web, localize e clique em Serviço **de configuração de formulário** adaptável. **A caixa de diálogo Adaptive Form Configuration Service** é exibida. Não altere nenhum valor e clique em **Salvar**.
+1. Na janela Console da Web, localize e clique em Serviço **de configuração de formulário** adaptável. **A caixa de diálogo Adaptive Form Configuration Service** (Serviço de configuração de formulário adaptável) é exibida. Não altere nenhum valor e clique em **Salvar**.
 
    Ele cria um arquivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config no repositório CRX.
 
@@ -38,7 +41,7 @@ O AEM Forms permite limitar o acesso do editor de regras aos usuários com base 
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
-   Para habilitar o acesso para vários grupos, especifique uma lista de valores separados por vírgula:
+   Para habilitar o acesso para vários grupos, especifique uma lista de valores separados por vírgulas:
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
