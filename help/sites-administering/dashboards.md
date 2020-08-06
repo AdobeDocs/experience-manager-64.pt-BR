@@ -1,8 +1,8 @@
 ---
 title: Painéis
 seo-title: Painéis
-description: Saiba como criar, configurar e desenvolver novos painéis do AEM.
-seo-description: Saiba como criar, configurar e desenvolver novos painéis do AEM.
+description: Saiba como criar, configurar e desenvolver novos painéis AEM.
+seo-description: Saiba como criar, configurar e desenvolver novos painéis AEM.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 2%
 
 ---
 
 
 # Painéis{#dashboards}
 
-Ao usar o AEM, você pode gerenciar um monte de conteúdo de tipos diferentes (por exemplo, páginas, ativos). Os painéis AEM fornecem uma maneira fácil de usar e personalizável de definir páginas que exibem dados consolidados.
+Ao usar AEM você é capaz de gerenciar um monte de conteúdo de tipos diferentes (por exemplo, páginas, ativos). AEM Painéis oferecem uma maneira fácil de usar e personalizável de definir páginas que exibem dados consolidados.
 
 >[!NOTE]
 >
->Os painéis AEM são criados por usuário, de modo que um usuário só pode acessar seu próprio painel.
+>AEM Painéis são criados por usuário, de modo que um usuário só pode acessar seus próprios painéis.
 >
 >
->No entanto, os modelos [do](#creating-a-dashboard-template) Painel podem ser usados para compartilhar configurações comuns e o layout do Painel.
+>No entanto, os modelos [de](#creating-a-dashboard-template) Painéis podem ser usados para compartilhar configurações comuns e layout de Painéis.
 
 ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
-## Administração de painéis {#administering-dashboards}
+## Administração de Painéis {#administering-dashboards}
 
 ### Criação De Um Painel {#creating-a-dashboard}
 
@@ -36,17 +39,17 @@ Para criar um novo Painel, proceda da seguinte forma:
 
 1. Na seção **Ferramentas** , clique em Console **de configuração**.
 
-1. Na árvore, clique duas vezes no **painel**.
+1. Na árvore, clique no **Painel** Duplo.
 
-1. Clique em **Novo painel**.
+1. Clique em **Novo Painel**.
 
-1. Digite o **Título** (por exemplo, Meu painel) e o **Nome**.
+1. Digite o **Título** (por exemplo, Meu Painel) e o **Nome**.
 
 1. Clique em **Criar**.
 
 ### Clonar Um Painel {#cloning-a-dashboard}
 
-Talvez você queira ter vários painéis para ver rapidamente as informações sobre o seu conteúdo de diferentes exibições. Para ajudá-lo a criar um novo Painel, o AEM fornece um recurso de clone que você pode usar para duplicar um Painel existente. Para clonar um painel, proceda da seguinte forma:
+Você pode querer ter vários painéis para ver rapidamente informações sobre o seu conteúdo de diferentes visualizações. Para ajudá-lo a criar um novo Painel, AEM fornece um recurso de clone que pode ser usado para duplicado de um Painel existente. Para clonar um Painel, faça o seguinte:
 
 1. Na seção **Ferramentas** , clique em Console **de configuração**.
 
@@ -68,24 +71,24 @@ Talvez você queira ter vários painéis para ver rapidamente as informações s
 
 1. Click **Yes** to confirm.
 
-## Componentes do painel {#dashboard-components}
+## Componentes do Painel {#dashboard-components}
 
 ### Visão geral {#overview}
 
-Os componentes do painel nada mais são do que os componentes [regulares do](/help/sites-developing/developing-components-samples.md)AEM. Esta seção descreve os componentes de relatório fornecidos com o AEM.
+Os componentes do Painel não passam de componentes [comuns](/help/sites-developing/developing-components-samples.md)AEM. Esta seção descreve os componentes do relatórios fornecidos com AEM.
 
-### Componentes de relatórios do Web Analytics {#web-analytics-reporting-components}
+### Componentes do Relatórios do Web Analytics {#web-analytics-reporting-components}
 
-O AEM vem com um conjunto de componentes que renderizam várias métricas dos dados do [SiteCatalyst](/help/sites-administering/adobeanalytics.md) . Esses componentes são listados no Sidekick na seção **Painel** .
+AEM vem com um conjunto de componentes que renderizam várias métricas dos dados do seu [SiteCatalyst](/help/sites-administering/adobeanalytics.md) . Esses componentes estão listados no Sidekick na seção **Painel** .
 
-Cada componente de relatório fornece pelo menos três guias:
+Cada componente de relatórios fornece pelo menos três guias:
 
 * **Básico**: contém a configuração principal.
 
-* **** Relatório: contém a configuração específica de cada relatório.
+* **Relatório:** contém a configuração específica de cada relatório.
 * **Estilo**: contém uma configuração de estilo, como tamanho e margem do gráfico.
 
-Os componentes de relatório são inicializados com uma configuração padrão que ajuda a configurar rapidamente seu painel.
+Os componentes do relatórios são inicializados com uma configuração padrão que ajuda a configurar rapidamente seu painel.
 
 #### Basic configuration {#basic-configuration}
 
@@ -95,7 +98,7 @@ A guia **Básico** fornece acesso às seguintes entradas de configuração:
 
 **Tipo** de solicitação A forma como os dados são solicitados.
 
-**Configuração do SiteCatalyst (opcional)** A configuração que você deseja usar para se conectar ao SiteCatalyst. Se não fornecido, presume-se que a configuração está configurada na página Painel (por meio das propriedades da página).
+**Configuração do SiteCatalyst (opcional)** A configuração que você deseja usar para se conectar ao SiteCatalyst. Se não fornecido, presume-se que a configuração está configurada na página do Painel (por meio das propriedades da página).
 
 **ID do conjunto de relatórios (opcional)** O conjunto de relatórios do SiteCatalyst que você deseja usar para gerar o gráfico.
 
@@ -119,9 +122,9 @@ Cada componente também define configurações específicas.
 
 **Granularidade** Data Unidade de tempo do eixo X (por exemplo, dia, hora).
 
-**Métricas** A lista de eventos que deseja exibir.
+**Métricas** A lista de eventos que você deseja exibir.
 
-**Elementos** A lista de elementos que analisa os dados das métricas no gráfico.
+**Elementos** A lista de elementos que detalha os dados das métricas no gráfico.
 
 #### Relatório da lista classificada {#ranked-list-report}
 
@@ -159,27 +162,27 @@ Este componente exibe um gráfico que mostra a seção mais visitada de um site,
 
 **Elementos** O elemento que divide os dados das métricas no gráfico.
 
-## Extensão do painel {#extending-dashboard}
+## Extensão do Painel {#extending-dashboard}
 
 ### Visão geral {#overview-1}
 
-Os painéis são páginas normais ( `cq:Page`), portanto, qualquer componente pode ser usado para montar painéis.
+Painéis são páginas normais ( `cq:Page`), portanto, qualquer componente pode ser usado para montar Painéis.
 
-Há um grupo de componentes padrão `Dashboard` que contém componentes de relatório de análise que são ativados no modelo por padrão.
+Há um grupo de componentes padrão `Dashboard` contendo componentes de relatórios de análise que são ativados no modelo por padrão.
 
 ### Creating A Dashboard Template {#creating-a-dashboard-template}
 
 Um modelo define o conteúdo padrão de um novo Painel. Você pode usar vários modelos para criar diferentes tipos de painéis.
 
-Os modelos de painel são criados como outros modelos de página, exceto pelo fato de serem armazenados em `/libs/cq/dashboards/templates/`. Consulte a seção [Criação de modelo](/help/sites-developing/website.md#creating-the-contentpage-template) de página de conteúdo.
+Os modelos de Painéis são criados como outros modelos de página, exceto pelo fato de serem armazenados em `/libs/cq/dashboards/templates/`. Consulte a seção [Criação de modelo](/help/sites-developing/website.md#creating-the-contentpage-template) de página de conteúdo.
 
 >[!NOTE]
 >
->Os modelos de painel são compartilhados entre usuários.
+>Os modelos de Painéis são compartilhados entre usuários.
 
-### Desenvolvimento de um componente do Painel {#developing-a-dashboard-component}
+### Desenvolvimento de um componente de Painel {#developing-a-dashboard-component}
 
-O desenvolvimento de um componente do Dashboard consiste na criação de um componente AEM comum. Esta seção descreve um exemplo de um componente que exibe os 10 principais contribuidores.
+O desenvolvimento de um componente de Painel consiste na criação de um Componente AEM comum. Esta seção descreve um exemplo de um componente que exibe os 10 principais contribuidores.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -193,7 +196,7 @@ Os principais componentes do autor são armazenados no repositório em `/apps/ge
 
 O arquivo Javascript a seguir é definido na Biblioteca `geout.reporting.topauthors` de [](/help/sites-developing/clientlibs.md) clientes como um filho do próprio componente.
 
-O [QueryBuilder](/help/sites-developing/querybuilder-api.md) é usado para consultar o repositório para ler `cq:AuditEvent` nós. O resultado da consulta é um objeto JSON do qual as contribuições do autor são extraídas.
+O [QueryBuilder](/help/sites-developing/querybuilder-api.md) é usado para query do repositório para `cq:AuditEvent` nós de leitura. O resultado do query é um objeto JSON do qual as contribuições do autor são extraídas.
 
 #### top_author.js {#top-authors-js}
 
