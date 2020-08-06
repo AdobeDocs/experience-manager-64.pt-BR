@@ -30,7 +30,7 @@ Você pode criar versões adicionais mediante solicitação usando a guia **Cont
 
 Essas versões nunca são expurgadas, portanto, o tamanho do repositório crescerá com o tempo e, portanto, precisará ser gerenciado.
 
-O AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositório:
+AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositório:
 
 * o Gerenciador [de versões](#version-manager)
 
