@@ -12,6 +12,9 @@ discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 0%
 
 ---
 
@@ -20,15 +23,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->A atualização exigirá tempo de inatividade para o nível Autor, já que a maioria das atualizações do AEM são realizadas no local. Seguindo essas práticas recomendadas, o tempo de inatividade da camada de publicação pode ser minimizado ou eliminado.
+>A atualização exigirá tempo de inatividade para o nível Autor, já que a maioria das atualizações AEM são realizadas no local. Seguindo essas práticas recomendadas, o tempo de inatividade da camada de publicação pode ser minimizado ou eliminado.
 
-Ao atualizar seus ambientes de AEM, é necessário considerar as diferenças de abordagem entre a atualização de ambientes de criação ou publicação, a fim de minimizar o tempo de inatividade para seus autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia do AEM em execução em uma versão do AEM 6.x. Como o processo difere entre os níveis de autor e publicação, bem como implantações baseadas em Mongo e TarMK, cada camada e microkernel foi listado em uma seção separada. Ao executar sua implantação, recomendamos primeiro atualizar seu ambiente de criação, determinar o sucesso e, em seguida, prosseguir para os ambientes de publicação.
+Ao atualizar seus ambientes AEM, é necessário considerar as diferenças de abordagem entre a atualização de ambientes do autor ou a publicação de ambientes para minimizar o tempo de inatividade para seus autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia AEM atualmente em execução em uma versão do AEM 6.x. Como o processo difere entre os níveis de autor e publicação, bem como implantações baseadas em Mongo e TarMK, cada camada e microkernel foi listado em uma seção separada. Ao executar sua implantação, recomendamos primeiro atualizar seu ambiente do autor, determinar o sucesso e, em seguida, prosseguir para os ambientes de publicação.
 
 ## Camada do autor TarMK {#tarmk-author-tier}
 
-### Topologia inicial {#starting-topology}
+### Iniciando topologia {#starting-topology}
 
-A topologia assumida para esta seção consiste em um servidor de autor em execução no TarMK com um modo de espera frio. A replicação ocorre do servidor Autor para o farm de publicação do TarMK. Embora não seja ilustrado aqui, essa abordagem também pode ser aproveitada para implantações que usam descarga. Certifique-se de atualizar ou recriar a instância de descarregamento na nova versão depois de desativar os agentes de replicação na instância Autor e antes de reativá-los.
+A topologia assumida para esta seção consiste em um servidor de autor em execução no TarMK com um modo de espera a frio. A replicação ocorre do servidor Autor para o farm de publicação do TarMK. Embora não seja ilustrado aqui, essa abordagem também pode ser aproveitada para implantações que usam descarga. Certifique-se de atualizar ou recriar a instância de descarregamento na nova versão depois de desativar os agentes de replicação na instância Autor e antes de reativá-los.
 
 ![tarmk_started_topology](assets/tarmk_starting_topology.jpg)
 
@@ -38,7 +41,7 @@ A topologia assumida para esta seção consiste em um servidor de autor em execu
 
 1. Parar a criação de conteúdo
 1. Parar a instância de espera
-1. Desativar agentes de replicação no autor
+1. Desabilitar agentes de replicação no autor
 1. Execute as tarefas [de manutenção de](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)pré-atualização.
 
 ### Execução de atualização {#upgrade-execution-1}
@@ -55,21 +58,21 @@ A topologia assumida para esta seção consiste em um servidor de autor em execu
 ![if_success](assets/if_successful.jpg)
 
 1. Copie a instância atualizada para criar um novo modo de espera frio
-1. Iniciar a instância do autor
-1. Inicie a instância Standby.
+1. Start da instância Autor
+1. Start a instância Standby.
 
 ### Se não for bem-sucedido (Reversão) {#if-unsuccessful-rollback}
 
 ![reversão](assets/rollback.jpg)
 
-1. Inicie a instância do modo de espera frio como o novo modo principal
-1. Reconstrua o ambiente do Autor a partir do modo de espera frio.
+1. Start da instância do modo de espera frio como o novo modo principal
+1. Reconstrua o ambiente Autor do Modo de espera frio.
 
 ## Cluster de Autores MongoMK {#mongomk-author-cluster}
 
-### Topologia inicial {#starting}
+### Iniciando topologia {#starting}
 
-A topologia assumida para esta seção consiste em um cluster MongoMK Author com pelo menos duas instâncias do AEM Author, com backup de pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores de autor para o farm de publicação do TarMK.
+A topologia assumida para esta seção consiste em um cluster MongoMK Author com pelo menos duas instâncias do AEM Author, com backup de pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores de Autor para o farm de publicação do TarMK.
 
 ![mongo-topologia](assets/mongo-topology.jpg)
 
@@ -84,14 +87,14 @@ A topologia assumida para esta seção consiste em um cluster MongoMK Author com
 1. Atualize o `DocumentNodeStoreService.cfg` arquivo no Autor principal para refletir seu conjunto de réplicas de membro único
 1. Reinicie o Autor principal para garantir que ele seja reiniciado corretamente
 1. Desabilitar agentes de replicação no Autor principal
-1. Executar tarefas [de manutenção de](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pré-atualização na instância principal do autor
+1. Executar tarefas [de manutenção](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pré-atualização na instância principal do autor
 1. Se necessário, atualize o MongoDB na instância principal do Mongo para a versão 3.2 com WiredTiger
 
 ### Execução de atualização {#execution}
 
 ![execução mongo](assets/mongo-execution.jpg)
 
-1. Executar uma atualização [no local](/help/sites-deploying/in-place-upgrade.md) no Autor principal
+1. Executar uma atualização [](/help/sites-deploying/in-place-upgrade.md) no local no Autor principal
 1. Atualize o Dispatcher ou o Módulo Web, *se necessário*
 1. O controle de qualidade valida a atualização
 
@@ -100,21 +103,21 @@ A topologia assumida para esta seção consiste em um cluster MongoMK Author com
 ![mongo-secundários](assets/mongo-secondaries.jpg)
 
 1. Criar novas instâncias do autor 6.3, conectadas à instância do Mongo atualizada
-1. Recrie os nós MongoDB que foram removidos do cluster
+1. Reconstrua os nós MongoDB que foram removidos do cluster
 1. Atualize os `DocumentNodeStoreService.cfg` arquivos para refletir o conjunto completo de réplicas
 1. Reinicie as instâncias de Autor, uma de cada vez
 1. Remova o armazenamento de dados clonado.
 
-### Se não for bem-sucedido (Reversão) {#if-unsuccessful}
+### Se não for bem-sucedido (Reversão)  {#if-unsuccessful}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
 1. Reconfigure as instâncias secundárias do Autor para se conectar ao armazenamento de dados clonado
 1. Desligar a instância principal do Autor atualizado
 1. Desligue a instância principal do Mongo atualizada.
-1. Inicie as instâncias secundárias do Mongo com uma delas como a nova principal
+1. Start das instâncias secundárias de Mongo com uma delas como a nova principal
 1. Configure os `DocumentNodeStoreService.cfg` arquivos nas instâncias secundárias do Autor para apontar para o conjunto de réplicas de instâncias Mongo ainda não atualizadas
-1. Inicie as instâncias secundárias do Autor
+1. Start as instâncias secundárias do Autor
 1. Limpe as instâncias atualizadas do autor, o nó Mongo e o armazenamento de dados.
 
 ## Farm de publicação do TarMK {#tarmk-publish-farm}
@@ -137,7 +140,7 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 1. O QA valida o Publicar 2 por meio do Dispatcher, atrás do firewall
 1. Encerrar publicação 2
 1. Copiar a instância do Publicar 2
-1. Iniciar publicação 2
+1. Publicação de Start 2
 
 ### Se bem-sucedido {#successful-2}
 
@@ -148,8 +151,8 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 1. Parar a instância Publicar 1
 1. Substitua a instância Publicar 1 por uma cópia do Publicar 2
 1. Atualize o Dispatcher ou o Módulo Web, *se necessário*
-1. Liberar o cache do Dispatcher para Publicar 1
-1. Iniciar publicação 1
+1. Liberar o cache do Dispatcher para o Publicar 1
+1. Publicação de Start 1
 1. O QA valida o Publicar 1 por meio do Dispatcher, atrás do firewall
 
 ### Se não for bem-sucedido (Reversão) {#rollback}
@@ -159,7 +162,7 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 1. Criar uma cópia do Publicar 1
 1. Substitua a instância do Publicar 2 por uma cópia do Publicar 1
 1. Liberar o cache do Dispatcher para o Publicar 2
-1. Iniciar publicação 2
+1. Publicação de Start 2
 1. O QA valida o Publicar 2 por meio do Dispatcher, atrás do firewall
 1. Habilitar tráfego para publicar 2
 
@@ -167,8 +170,8 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 
 1. Habilitar tráfego para publicar 1
 1. O controle de qualidade executa a validação final de um URL público
-1. Habilitar agentes de replicação do ambiente do autor
+1. Ativar agentes de replicação do ambiente Autor
 1. Retomar criação de conteúdo
-1. Executar verificações [](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)após a atualização.
+1. Executar verificações [após a](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)atualização.
 
 ![final](assets/final.jpg)
