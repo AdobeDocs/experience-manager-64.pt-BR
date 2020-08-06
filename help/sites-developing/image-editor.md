@@ -1,8 +1,8 @@
 ---
 title: 'Editor de imagem '
 seo-title: 'Editor de imagem '
-description: O Editor de imagens é uma peça central do AEM e pode ser aproveitado por componentes para facilitar a manipulação de imagens pelos autores de conteúdo.
-seo-description: O Editor de imagens é uma peça central do AEM e pode ser aproveitado por componentes para facilitar a manipulação de imagens pelos autores de conteúdo.
+description: O Editor de imagens é uma peça central de AEM e pode ser aproveitado por componentes para facilitar a manipulação de imagens pelos autores de conteúdo.
+seo-description: O Editor de imagens é uma peça central de AEM e pode ser aproveitado por componentes para facilitar a manipulação de imagens pelos autores de conteúdo.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 6%
 
 ---
 
 
 # Editor de imagem {#image-editor}
 
-O Editor de imagens é uma peça central do AEM e pode ser aproveitado por componentes para facilitar a manipulação de imagens pelos autores de conteúdo.
+O Editor de imagens é uma peça central de AEM e pode ser aproveitado por componentes para facilitar a manipulação de imagens pelos autores de conteúdo.
 
 >[!CAUTION]
 >
@@ -54,7 +57,7 @@ O SVG (Scalable Vetor Graphics) é compatível com o Editor de imagens.
 
 Em determinadas situações, as ações de criação devem ser restritas para determinados tipos de MIME, devido à falta de suporte no processamento no servidor. Por exemplo, a edição de imagens SVG pode não ser permitida.
 
-Os plug-ins no Editor de imagens podem ser habilitados seletivamente pelo tipo MIME, definindo uma `supportedMimeTypes` propriedade no nó de configuração do plug-in individual.
+Os plug-ins no Editor de imagens podem ser habilitados seletivamente pelo tipo MIME, configurando uma `supportedMimeTypes` propriedade no nó de configuração do plug-in individual.
 
 ### Exemplo {#example}
 
