@@ -1,6 +1,6 @@
 ---
-title: 'Layout responsivo '
-seo-title: 'Layout responsivo '
+title: 'Layout responsivo  '
+seo-title: 'Layout responsivo  '
 description: O AEM permite que você crie um layout responsivo para suas páginas
 seo-description: O AEM permite que você crie um layout responsivo para suas páginas
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1798'
+ht-degree: 93%
 
 ---
 
 
-# Layout responsivo {#responsive-layout}
+# Layout responsivo  {#responsive-layout}
 
 O AEM permite ter um layout responsivo em suas páginas usando o componente **Contêiner de layout.**
 
@@ -109,24 +112,29 @@ Por exemplo, com a seleção do dispositivo **iPhone 6 Plus** (definido com larg
    A barra de ferramentas do emulador exibe opções adicionais de layout:
 
    * **Girar dispositivo** - permite que você gire um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
+
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Selecionar dispositivo** - defina um dispositivo específico para emular de uma lista (consulte a próxima etapa para obter detalhes)
+
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Para selecionar um dispositivo específico a fim de emulá-lo, é possível:
 
    * Use o ícone Selecionar dispositivo e selecione em um seletor suspenso.
    * Toque/clique no indicador do dispositivo na barra de ferramentas do emulador.
+
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
 1. Depois que um dispositivo específico é selecionado, você pode: 
 
    * Visualizar o marcador ativo do dispositivo selecionado, como **iPad.**
    * Visualizar o marcador ativo do [ponto de interrupção apropriado](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) como **Tablet.**
+
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
    * A linha pontilhada azul representa a *dobra* referente ao dispositivo selecionado (aqui, um **iPhone 6**).
+
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
    * A dobra também pode ser considerada a linha de quebra de página (não confundir com [pontos de interrupção ](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) para o conteúdo. Isso é exibido para praticidade em mostrar que parte do conteúdo será vista pelo usuário no dispositivo antes da rolagem de página.
@@ -175,6 +183,7 @@ Assim como em outros componentes, você pode selecionar e executar ações (reco
    * O menor contêiner aninhado do layout será contornado em preto.
    * O segundo menor contêiner aninhado do layout estará em um cinza escuro.
    * Cada contêiner sucessivo será destacado por uma sombra mais clara de cinza.
+
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
 1. Essa ação destacará a grade inteira e seu conteúdo. A barra de ferramentas da ação será exibida e aqui você pode selecionar uma ação, como **Excluir.**
@@ -215,7 +224,7 @@ No modo de layout, é possível executar várias ações em uma grade:
 
    * **Pai**
 
-      Permite que você selecione o componente de contêiner de layout inteiro para executar ações em todo o processo.
+      Permite que você selecione o componente de container de layout inteiro para executar ações em todo o processo.
 
    * **Flutuar até a nova linha**
 
@@ -223,7 +232,7 @@ No modo de layout, é possível executar várias ações em uma grade:
 
    * **Ocultar componente**
 
-      O componente ficará invisível (pode ser restaurado da barra de ferramentas do contêiner de layout).
+      O componente ficará invisível (pode ser restaurado da barra de ferramentas do container de layout).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * No modo **Layout**, você pode tocar/clicar em **Arrastar componentes aqui** para selecionar o componente inteiro. Isso mostrará a barra de ferramentas para este modo.
@@ -231,25 +240,31 @@ No modo de layout, é possível executar várias ações em uma grade:
    A barra de ferramentas tem opções diferentes, dependendo do status do componente de layout e componentes que pertencem a ela. Por exemplo:
 
    * **Pai** - seleciona o componente do pai.
+
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Mostrar componentes ocultos** - revela todos os componentes ou componentes individuais. O número indica quantos componentes ocultos há atualmente. O contador mostra quantos componentes estão ocultos.
+
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Reverter layout do ponto de interrupção** - reverte para o layout padrão. Ou seja, nenhum layout personalizado será imposto.
+
    ![](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Flutuar para uma nova linha** - move o componente uma posição acima, se o espaço permitir.
+
    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Ocultar componente** - oculta o componente atual.
+
    ![](do-not-localize/screen_shot_2018-03-23at090834.png)
 
    >[!NOTE]
    >
    >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Revelar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com a opção **Mostrar componentes ocultos**. Neste exemplo, dois componentes estão ocultos.
+   * **Mostrar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com o 
+**Mostrar opção de componentes** ocultos. Neste exemplo, dois componentes estão ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
