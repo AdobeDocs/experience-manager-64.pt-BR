@@ -1,8 +1,8 @@
 ---
 title: Introdução ao Process Relatórios
 seo-title: Introdução ao Process Relatórios
-description: As etapas que você precisa seguir para começar a usar o AEM Forms no JEE Process Relatórios
-seo-description: As etapas que você precisa seguir para começar a usar o AEM Forms no JEE Process Relatórios
+description: As etapas que você precisa seguir para começar a usar a AEM Forms no Relatórios JEE Process
+seo-description: As etapas que você precisa seguir para começar a usar a AEM Forms no Relatórios JEE Process
 uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,31 +19,31 @@ ht-degree: 0%
 
 # Introdução ao Process Relatórios {#getting-started-with-process-reporting}
 
-O Relatórios de processos oferece aos usuários do AEM Forms a capacidade de query de informações sobre processos do AEM Forms que estão definidos na implementação do AEM Forms. Entretanto, o Relatórios Process não acessa dados diretamente do repositório do AEM Forms. Os dados são publicados pela primeira vez no repositório de Relatórios do Processo de forma programada (*pelos* serviços ProcessDataPublisher e ProcessDataStorage). Os relatórios e query em andamento são gerados a partir dos dados de Relatórios do processo publicados no repositório. O Relatórios Process é instalado como parte do módulo de Fluxo de trabalho do Forms.
+O Process Relatórios oferece aos usuários da AEM Forms a capacidade de query de informações sobre os processos da AEM Forms que estão atualmente definidos na implementação da AEM Forms. Entretanto, o Process Relatórios não acessa dados diretamente do repositório AEM Forms. Os dados são publicados pela primeira vez no repositório de Relatórios do Processo de forma programada (*pelos* serviços ProcessDataPublisher e ProcessDataStorage). Os relatórios e query em andamento são gerados a partir dos dados de Relatórios do Processo publicados no repositório. O Relatórios de processo é instalado como parte do módulo Forms Workflow.
 
-Este artigo detalha as etapas para permitir a publicação de dados do AEM Forms no repositório do Process Relatórios. Depois disso, você poderá usar o Processar Relatórios para executar relatórios e query. O artigo também aborda as opções disponíveis para configurar os serviços de Relatórios do Processo.
+Este artigo detalha as etapas para permitir a publicação de dados da AEM Forms no repositório do Process Relatórios. Depois disso, você poderá usar o Processar Relatórios para executar relatórios e query. O artigo também aborda as opções disponíveis para configurar os serviços de Relatórios do Processo.
 
 ## Pré-requisitos do Relatórios de processamento {#process-reporting-pre-requisites}
 
 ### Limpar processos não essenciais {#purge-non-essential-processes}
 
-Se você estiver usando o Fluxo de trabalho do Forms, o banco de dados do AEM Forms pode conter uma grande quantidade de dados
+Se você estiver usando o Forms Workflow no momento, o banco de dados AEM Forms pode conter uma grande quantidade de dados
 
-Os serviços de publicação de Relatórios do processo publicarão todos os dados do AEM Forms disponíveis no momento no banco de dados. Isso implica que, se o banco de dados contiver dados herdados nos quais você não deseja executar relatórios e query, todos esses dados também serão publicados no repositório, mesmo que não sejam necessários para o relatórios. É recomendável expurgar esses dados antes de executar os serviços para publicar os dados no repositório do Process Relatórios. Isso melhorará o desempenho do serviço do editor e do serviço que query os dados para o relatórios.
+Os serviços de publicação de Relatórios do Processo publicarão todos os dados da AEM Forms disponíveis no momento no banco de dados. Isso implica que, se o banco de dados contiver dados herdados nos quais você não deseja executar relatórios e query, todos esses dados também serão publicados no repositório, mesmo que não sejam necessários para o relatórios. É recomendável expurgar esses dados antes de executar os serviços para publicar os dados no repositório do Process Relatórios. Isso melhorará o desempenho do serviço do editor e do serviço que query os dados para o relatórios.
 
-Para obter detalhes sobre como expurgar dados de processo do AEM Forms, consulte [Expurgando dados](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html)do processo.
+Para obter detalhes sobre como expurgar dados de processo do AEM Forms, consulte [Expurgando Dados](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html)de Processo.
 
 >[!NOTE]
 >
->Para obter as dicas e truques do Utilitário de remoção, consulte o artigo do Adobe Developer Connection sobre [Expurgação de processos e trabalhos](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Para obter as dicas e truques do Utilitário de Expurgação, consulte o artigo da Adobe Developer Connection sobre [Expurgação de processos e trabalhos](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
 
 ## Configurando serviços de Relatórios do processo {#configuring-process-reporting-services}
 
 ### Agendar publicação de dados do processo {#schedule-process-data-publishing}
 
-Os serviços de Relatórios do Processo publicam dados do banco de dados do AEM Forms para o repositório de Relatórios do Processo de forma programada.
+Os serviços de Relatórios do Processo publicam dados do banco de dados da AEM Forms no repositório do Relatórios do Processo de forma programada.
 
-Essa operação pode consumir muitos recursos e afetar o desempenho dos servidores do AEM Forms. É recomendável agendar isso fora dos horários ocupados do servidor do AEM Forms.
+Essa operação pode consumir muitos recursos e afetar o desempenho dos servidores AEM Forms. É recomendável agendar isso fora dos horários ocupados do servidor AEM Forms.
 
 Por padrão, a publicação de dados está programada para ser executada todos os dias às 2h00.
 
@@ -55,23 +55,23 @@ Execute as seguintes etapas para alterar o cronograma de publicação:
 
 #### Servidor de aplicativos JBoss {#jboss-application-server}
 
-1. Pare a instância do servidor do AEM Forms.
+1. Pare a instância do servidor AEM Forms.
    * (Para Windows) Abra o `[*JBoss root*]/bin/run.conf.bat` arquivo em um editor.
    * (Para Linux, AIX e Solaris) `[*JBoss root*]/bin/run.conf.sh` em um editor.
 
 1. Adicione o argumento JVM `-Dreporting.publisher.cron = <expression>.`
 
-   Exemplo: A expressão cron a seguir faz com que o Process Relatórios publique dados do AEM Forms no repositório do Process Relatórios a cada 5 horas:
+   Exemplo: A seguinte expressão cron faz com que o Process Relatórios publique dados do AEM Forms no repositório do Process Relatórios a cada 5 horas:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Salve e feche o `run.conf.bat` arquivo.
 
-1. Reinicie a instância do servidor do AEM Forms.
+1. Reinicie a instância do servidor AEM Forms.
 
 #### Servidor de aplicativos WebSphere {#websphere-application-server}
 
-1. Pare a instância do servidor do AEM Forms.
+1. Pare a instância do servidor AEM Forms.
 1. Faça logon no Console administrativo do WebSphere. Na árvore de navegação, clique em **Servidores** > Servidores **de** aplicativos e, no painel direito, clique no nome do servidor.
 
 1. Em Infraestrutura do servidor, clique em **Java e em Gerenciamento** do processo > Definição **do** processo.
@@ -80,17 +80,17 @@ Execute as seguintes etapas para alterar o cronograma de publicação:
 
    Na caixa Argumentos JVM genéricos, adicione o argumento `-Dreporting.publisher.cron = <expression>.`
 
-   **Exemplo**: A expressão cron a seguir faz com que o Process Relatórios publique dados do AEM Forms no repositório do Process Relatórios a cada 5 horas:
+   **Exemplo**: A seguinte expressão cron faz com que o Process Relatórios publique dados do AEM Forms no repositório do Process Relatórios a cada 5 horas:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Clique em **Aplicar**, clique em OK e em **Salvar diretamente na configuração** mestre.
+1. Clique em **Aplicar**, clique em OK e em **Salvar diretamente na configuração** principal.
 
-1. Reinicie a instância do servidor do AEM Forms.
+1. Reinicie a instância do servidor AEM Forms.
 
 #### Servidor de Aplicações WebLogic {#weblogic-application-server}
 
-1. Pare a instância do servidor do AEM Forms.
+1. Pare a instância do servidor AEM Forms.
 1. Faça logon no Console de administração do WebLogic. O endereço padrão do Console de administração do WebLogic é `https://[hostname]:[port]/console`.
 
 1. Em Centro de alterações, clique em **Bloquear e editar**.
@@ -101,13 +101,13 @@ Execute as seguintes etapas para alterar o cronograma de publicação:
 
 1. Na caixa Argumentos, adicione o argumento JVM `-Dreporting.publisher.cron = <expression>`.
 
-   **Exemplo**: A expressão cron a seguir faz com que o Process Relatórios publique dados do AEM Forms no repositório do Process Relatórios a cada 5 horas:
+   **Exemplo**: A seguinte expressão cron faz com que o Process Relatórios publique dados do AEM Forms no repositório do Process Relatórios a cada 5 horas:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Clique em **Salvar** e em **Ativar alterações**.
 
-1. Reinicie a instância do servidor do AEM Forms.
+1. Reinicie a instância do servidor AEM Forms.
 
 ![processamento datapubiterservice](assets/processdatapublisherservice.png)
 
@@ -172,7 +172,7 @@ O serviço ReportConfiguration é usado pelo Process Relatórios para configurar
 
 ### Serviço ProcessDataPublisher {#processdatapublisher-service}
 
-O serviço ProcessDataPublisher importa dados do processo do banco de dados do AEM Forms e publica os dados no serviço ProcessDataStorageProvider para o armazenamento.
+O serviço ProcessDataPublisher importa dados do processo do banco de dados da AEM Forms e publica os dados para o serviço ProcessDataStorageProvider do armazenamento.
 
 #### Para configurar o serviço ProcessDataPublisher   {#to-configure-processdatapublisher-service-nbsp}
 
@@ -196,7 +196,7 @@ Como alternativa, use essa opção para desativar o processo de publicação de 
 
 **Intervalo de Lote (seg)**
 
-Cada vez que o serviço ProcessDataPublisher é executado, o serviço divide primeiro o tempo desde a última execução do serviço pelo Intervalo em Lote. O serviço processa cada intervalo de dados do AEM Forms separadamente.
+Cada vez que o serviço ProcessDataPublisher é executado, o serviço divide primeiro o tempo desde a última execução do serviço pelo Intervalo em Lote. Em seguida, o serviço processa cada intervalo de dados da AEM Forms separadamente.
 
 Isso ajuda a controlar o tamanho dos dados que os processos do editor terminam durante cada execução (lote) em um ciclo.
 
@@ -218,9 +218,9 @@ Se um serviço do editor que adquiriu um bloqueio estiver inativo pelo número d
 
 **Publicar dados de**
 
-O ambiente do AEM Forms contém dados do momento em que o ambiente foi configurado.
+O ambiente AEM Forms contém dados do momento em que o ambiente foi configurado.
 
-Por padrão, o serviço ProcessDataPublisher importa todos os dados do banco de dados do AEM Forms.
+Por padrão, o serviço ProcessDataPublisher importa todos os dados do banco de dados da AEM Forms.
 
 Dependendo das necessidades do seu relatórios, se você planeja executar relatórios e query em dados após uma determinada data e hora, é recomendável especificar a data e a hora. O serviço de publicação publicará a data a partir desse momento.
 
@@ -244,7 +244,7 @@ Especifique suas credenciais para fazer logon no módulo Processar Relatórios.
 
 >[!NOTE]
 >
->Para fazer logon na interface do usuário do Process Relatórios, você precisa da seguinte permissão de AEM Forms:
+>Para fazer logon na interface do usuário do Process Relatórios, você precisa da seguinte permissão do AEM Forms:
 >
 >`PERM_PROCESS_REPORTING_USER`
 
@@ -278,7 +278,7 @@ Para obter o procedimento de criação e exibição de relatórios personalizado
 
 Clique no título a qualquer momento para voltar à tela inicial.
 
-**Hora da última atualização:** Os dados do processo são publicados do banco de dados do AEM Forms para o repositório do Process Relatórios de forma programada.
+**Hora da última atualização:** Os dados do processo são publicados do banco de dados da AEM Forms para o repositório do Process Relatórios de forma programada.
 
 A Hora da Última Atualização exibe a última data e hora até as quais as atualizações de dados foram enviadas para o repositório do Process Relatórios.
 
@@ -288,7 +288,7 @@ Para obter detalhes sobre o serviço de publicação de dados e como agendar ess
 
 **lista suspensa da barra de título do Relatórios do processo:** A lista suspensa no canto direito da barra de título Processar Relatórios contém as seguintes opções:
 
-* **[!UICONTROL Sincronizar]**: Sincronize o repositório incorporado do Relatórios do Processo com o banco de dados do AEM Forms.
+* **[!UICONTROL Sincronizar]**: Sincronize o repositório incorporado do Process Relatórios com o banco de dados AEM Forms.
 * **[!UICONTROL Ajuda]**: Visualização na documentação de Ajuda do Process Relatórios.
 * **[!UICONTROL Logout]**: Fazer logout do Relatórios Process
 
