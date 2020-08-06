@@ -1,6 +1,6 @@
 ---
-title: 'Solucionar problemas do AEM durante a criação '
-seo-title: 'Solucionar problemas do AEM durante a criação '
+title: 'Solucionar problemas do AEM durante a criação  '
+seo-title: 'Solucionar problemas do AEM durante a criação  '
 description: Alguns problemas que podem ocorrer quando você usa o AEM
 seo-description: Alguns problemas que podem ocorrer quando você usa o AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
 
-# Solucionar problemas do AEM durante a criação {#troubleshooting-aem-when-authoring}
+# Solucionar problemas do AEM durante a criação  {#troubleshooting-aem-when-authoring}
 
 A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 
