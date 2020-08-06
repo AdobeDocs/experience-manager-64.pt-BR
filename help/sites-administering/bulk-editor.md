@@ -1,6 +1,6 @@
 ---
-title: O Editor em massa
-seo-title: O Editor em massa
+title: O Editor em Massa
+seo-title: O Editor em Massa
 description: Saiba como usar o Editor de itens em massa.
 seo-description: Saiba como usar o Editor de itens em massa.
 uuid: 65158ea4-d0fb-4992-99c6-d4b4fa4c87d2
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
 
-# O Editor em massa{#the-bulk-editor}
+# O Editor em Massa{#the-bulk-editor}
 
 O Editor de itens em massa permite uma edição muito eficiente quando o contexto visual da página não é necessário, pois permite:
 
@@ -28,20 +31,20 @@ O Editor de itens em massa permite uma edição muito eficiente quando o context
 >
 >Você também pode importar conteúdo para o repositório, mas por padrão isso é desativado para o Editor de itens em massa, conforme disponível no console **Ferramentas** .
 
-Esta seção descreve como trabalhar com o editor em massa no console **Ferramentas** . Normalmente, os administradores usam o editor em massa para pesquisar e editar vários itens. Isso é feito preenchendo a tabela usando uma consulta GQL e selecionando os itens de conteúdo nos quais trabalhar. Os autores geralmente usam o editor em massa como parte de um aplicativo editor em massa personalizado acessível por meio do componente de listagem [de](/help/sites-authoring/default-components.md) produtos.
+Esta seção descreve como trabalhar com o editor em massa no console **Ferramentas** . Normalmente, os administradores usam o editor em massa para pesquisar e editar vários itens. Isso é feito preenchendo a tabela usando um query GQL e selecionando os itens de conteúdo nos quais trabalhar. Os autores geralmente usam o editor em massa como parte de um aplicativo editor em massa personalizado acessível por meio do componente de listagem [de](/help/sites-authoring/default-components.md) produtos.
 
 >[!CAUTION]
 >
->Com a [substituição da interface](/help/release-notes/deprecated-removed-features.md) clássica no AEM 6.4, o Editor de itens em massa também foi substituído e, portanto, a Adobe não planeja aprimorar ainda mais o Editor de itens em massa.
+>Com a [desaprovação da interface](/help/release-notes/deprecated-removed-features.md) clássica no AEM 6.4, o Editor de itens em massa também foi descontinuado e, portanto, o Adobe não planeja aprimorar ainda mais o Editor de itens em massa.
 
 ## Exemplo de caso de uso para o Editor em massa {#example-use-case-for-the-bulk-editor}
 
 Por exemplo, se você precisar de todos os nomes e endereços de email dos usuários que preencheram uma pesquisa específica, o Editor de itens em massa poderá fornecer essas informações e exportá-las para uma planilha.
 
-Um exemplo para ilustrar esse caso de uso está incluído no site da Geometrixx:
+Um exemplo para ilustrar esse caso de uso está incluído no site do Geometrixx:
 
-1. Navegue até a página **Suporte** e, em seguida, para a pesquisa Satisfação **do Serviço de** Atendimento ao Cliente.
-1. **Edite** o parágrafo **Início do formulário** . **Na caixa de diálogo, clique na guia** Avançado **, expanda a Configuração** da **ação e clique em** Exibir dados... .
+1. Navegue até a página **Suporte** e, em seguida, para a pesquisa de satisfação **do serviço de** atendimento ao cliente.
+1. **Edite** o **Start do parágrafo Formulário** . Na caixa de diálogo, clique na guia **Avançado** , expanda a Configuração **da** ação e clique em Dados de **Visualização...**.
 
    ![inquérito personalizado](assets/custsatsurvey.png)
 
@@ -53,7 +56,7 @@ Um exemplo para ilustrar esse caso de uso está incluído no site da Geometrixx:
 
 O editor em massa permite:
 
-* [pesquisar conteúdo com base em parâmetros de consulta, para exibir propriedades especificadas dos resultados em colunas, para editar esse conteúdo e salvar as alterações](#searching-and-editing-content)
+* [pesquise por conteúdo com base nos parâmetros do query, para exibir as propriedades especificadas dos resultados em colunas, para editar esse conteúdo e salvar as alterações](#searching-and-editing-content)
 * [para exportar esse conteúdo para uma planilha separada por tabulações](#exporting-content)
 
 * [para importar conteúdo de uma planilha separada por tabulação](#importing-content)
@@ -63,7 +66,7 @@ O editor em massa permite:
 Para usar o editor em massa para editar vários itens simultaneamente:
 
 1. No console **Ferramentas** , clique na pasta **Importadores** para expandi-la.
-1. Clique duas vezes no Editor **** em massa para abri-lo.
+1. Clique com o Duplo do mouse no Editor **de** itens em massa para abri-lo.
 1. Informe seus requisitos de seleção:
 
 <table> 
@@ -78,34 +81,34 @@ Para usar o editor em massa para editar vários itens simultaneamente:
   </tr> 
   <tr> 
    <td>Parâmetros de consulta </td> 
-   <td>Usando parâmetros GQL, digite a string de pesquisa que deseja que o editor em massa procure no repositório; por exemplo, <code>type:Page</code> procura por todas as páginas no caminho raiz, <code>text:professional</code> procura por todas as páginas que têm a palavra "profissional" nelas e <code>"jcr:title":English</code> procura por todas as páginas que têm "inglês" como título. Você só pode pesquisar por strings.</td> 
+   <td>Usando parâmetros de GQL, digite a string de pesquisa que deseja que o editor em massa procure no repositório; por exemplo, <code>type:Page</code> procura por todas as páginas no caminho raiz, <code>text:professional</code> procura por todas as páginas que têm a palavra "profissional" nelas e <code>"jcr:title":English</code> procura por todas as páginas que têm "inglês" como título. Você só pode pesquisar por strings.</td> 
   </tr> 
   <tr> 
    <td>Caixa de seleção Modo de conteúdo</td> 
-   <td>Marque essa caixa de seleção para ler as propriedades no <code>jcr:content</code> subnó dos resultados da pesquisa, se houver. Use apenas para páginas. Os nomes de propriedades recebem o prefixo <code>"jcr:content/"</code></td> 
+   <td>Marque essa caixa de seleção para ler as propriedades dentro do <code>jcr:content</code> subnó dos resultados da pesquisa, se houver. Use apenas para páginas. Os nomes de propriedades recebem o prefixo <code>"jcr:content/"</code></td> 
   </tr> 
   <tr> 
    <td>Propriedades / Colunas</td> 
-   <td>Marque as caixas de seleção das propriedades que você deseja que o editor em massa volte. As propriedades selecionadas são os cabeçalhos de coluna no painel de resultados. Por padrão, o caminho do nó é exibido nos resultados.</td> 
+   <td>Marque as caixas de seleção para as propriedades que você deseja que o editor em massa volte. As propriedades selecionadas são os cabeçalhos de coluna no painel de resultados. Por padrão, o caminho do nó é exibido nos resultados.</td> 
   </tr> 
   <tr> 
    <td>Propriedades / Colunas personalizadas</td> 
-   <td>Insira quaisquer outras propriedades que não estejam listadas no campo <strong>Propriedades/Colunas</strong> . Essas propriedades personalizadas aparecem no painel de resultados. É possível adicionar várias propriedades usando uma vírgula para separar as propriedades. <i></i> Observação: Se você adicionar uma propriedade personalizada que ainda não existe, o WCM AEM exibirá uma célula vazia. Quando você modifica a célula vazia e a salva, a propriedade é adicionada ao nó. A propriedade recém-criada deve respeitar as restrições de tipo de nó e os namespaces de propriedade.</td> 
+   <td>Insira quaisquer outras propriedades que não estejam listadas no campo <strong>Propriedades/Colunas</strong> . Essas propriedades personalizadas aparecem no painel de resultados. É possível adicionar várias propriedades usando uma vírgula para separar as propriedades. <i>Observação:</i> Se você adicionar uma propriedade personalizada que ainda não existe, AEM WCM exibirá uma célula vazia. Quando você modifica a célula vazia e a salva, a propriedade é adicionada ao nó. A propriedade recém-criada deve respeitar as restrições de tipo de nó e as namespaces de propriedade.</td> 
   </tr> 
  </tbody> 
 </table>
 
 Por exemplo:
 
-![search filter](assets/searchfilter.png)
+![filtro de pesquisa](assets/searchfilter.png)
 
 1. Clique em **Pesquisar**. O Editor em massa exibe os resultados.
 
-   Para o exemplo acima, todas as páginas que atendem aos critérios de pesquisa são retornadas e exibidas com as colunas solicitadas.
+   Para o exemplo acima, todas as páginas que atendem aos seus critérios de pesquisa são retornadas e exibidas com as colunas solicitadas.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Faça as alterações necessárias clicando duas vezes em uma célula.
+1. Faça as alterações necessárias clicando no duplo em uma célula.
 
    ![srchresultado](assets/srchresultedit.png)
 
@@ -115,21 +118,21 @@ Por exemplo:
    >
    >As alterações feitas aqui são gravadas no conteúdo do repositório; por exemplo, a página referenciada em **Caminho**.
 
-#### Parâmetros de consulta GQL adicionais {#additional-gql-query-parameters}
+#### Parâmetros adicionais do Query GQL {#additional-gql-query-parameters}
 
-* **** caminho: somente nós de pesquisa abaixo desse caminho. Se você especificar mais de um termo com um prefixo de caminho, somente o último será considerado.
-* **** tipo: retornam apenas nós dos tipos de nó especificados. Isso inclui tipos primários e de mixagem. Você pode especificar vários tipos de nós separados por vírgulas. O GQL retornará nós de qualquer um dos tipos especificados.
-* **** pedido: ordene o resultado pelas propriedades fornecidas. Você pode especificar vários nomes de propriedade separados por vírgula. Para ordenar o resultado em ordem decrescente, basta prefixar o nome da propriedade com um sinal de menos. Por exemplo: order:-name. Usar um sinal de mais retornará o resultado em ordem crescente, que também é o padrão.
-* **** limite: limita o número de resultados usando um intervalo. Por exemplo: limit:10.20 Observe que o intervalo é baseado em zero, o início é inclusivo e o fim é exclusivo. Você também pode especificar um intervalo aberto:limit:10. ou limite:..20 Se os pontos forem omitidos e apenas um valor for especificado, o GQL retornará no máximo esse número de resultados. Por exemplo, limite:10 (retornará os primeiros 10 resultados)
+* **caminho:** somente nós de pesquisa abaixo desse caminho. Se você especificar mais de um termo com um prefixo de caminho, somente o último será considerado.
+* **tipo:** retornam apenas nós dos tipos de nó especificados. Isso inclui tipos primários e de mixagem. Você pode especificar vários tipos de nós separados por vírgulas. O GQL retornará nós de qualquer um dos tipos especificados.
+* **pedido:** ordene o resultado pelas propriedades fornecidas. Você pode especificar vários nomes de propriedade separados por vírgula. Para ordenar o resultado em ordem decrescente, basta prefixar o nome da propriedade com um sinal de menos. Por exemplo: order:-name. O uso de um sinal de mais retornará o resultado em ordem crescente, que também é o padrão.
+* **limite:** limita o número de resultados usando um intervalo. Por exemplo: limit:10.20 Observe que o intervalo é baseado em zero, o start é inclusivo e o fim é exclusivo. Você também pode especificar um intervalo aberto:limit:10. ou limite:..20 Se os pontos forem omitidos e apenas um valor for especificado, o GQL retornará no máximo esse número de resultados. Por exemplo, limite:10 (retornará os primeiros 10 resultados)
 
 ### Exportar conteúdo {#exporting-content}
 
-Talvez seja necessário exportar o conteúdo e alterá-lo em uma planilha do Excel. Por exemplo, você pode exportar uma lista de endereçamento e alterar o código de área de todos os números de telefone listados diretamente no Excel, adicionar outras linhas e assim por diante.
+Talvez seja necessário exportar o conteúdo e alterá-lo em uma planilha do Excel. Por exemplo, você pode exportar uma lista de correspondência e alterar o código de área de todos os números de telefone listados diretamente no Excel, adicionar outras linhas e assim por diante.
 
 Para exportar conteúdo:
 
 1. Procure o conteúdo conforme descrito em [Pesquisando e editando conteúdo](#searching-and-editing-content).
-1. Clique em **Exportar** para exportar as alterações para uma planilha do Excel separada por tabulações. O WCM AEM pergunta onde deseja baixar o arquivo.
+1. Clique em **Exportar** para exportar as alterações para uma planilha do Excel separada por tabulações. AEM WCM pergunta onde deseja baixar o arquivo.
 
    >[!NOTE]
    >
@@ -138,17 +141,17 @@ Para exportar conteúdo:
    ![srchrsultexport](assets/srchrsesultexport.png)
 
 1. Selecione o local e confirme que deseja baixar o arquivo.
-1. Depois de baixar o arquivo, é possível abri-lo a partir do programa de planilha, por exemplo, Microsoft Excel. O programa de planilha importa o arquivo e o converte em um formato de planilha.
+1. Depois de baixar o arquivo, é possível abri-lo a partir do programa da planilha, por exemplo, do Microsoft Excel. O programa da planilha importa o arquivo e o converte em um formato de planilha.
 
    ![exportinexcel](assets/exportinexcel.png)
 
 ### Importação de conteúdo {#importing-content}
 
-Por padrão, a funcionalidade de importação fica oculta quando você abre o Editor em massa. A simples adição do parâmetro `hib=false` ao URL exibirá o botão **Importar** na página do Editor em massa. É possível importar conteúdo de qualquer arquivo ( `.tsv`) separado por tabulação. Para que a importação funcione corretamente, os cabeçalhos de coluna (primeira linha de células) devem corresponder aos cabeçalhos de coluna da tabela para a qual você está importando.
+Por padrão, a funcionalidade de importação fica oculta quando você abre o Editor de itens em massa. A simples adição do parâmetro `hib=false` ao URL exibirá o botão **Importar** na página do Editor em massa. É possível importar conteúdo de qualquer arquivo ( `.tsv`) separado por tabulação. Para que a importação funcione corretamente, os cabeçalhos de coluna (primeira linha de células) devem corresponder aos cabeçalhos de coluna da tabela para a qual você está importando.
 
 >[!NOTE]
 >
->Ao reimportar conteúdo, você apaga qualquer conteúdo anterior para esses nós. Tenha cuidado para não substituir informações importantes.
+>Ao importar novamente o conteúdo, você apaga qualquer conteúdo anterior para esses nós. Tenha cuidado para não substituir informações importantes.
 
 Para importar conteúdo:
 
