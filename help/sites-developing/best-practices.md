@@ -1,8 +1,8 @@
 ---
-title: 'Práticas recomendadas  '
-seo-title: 'Práticas recomendadas  '
-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
-seo-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
+description: As equipes de engenharia e consultoria de Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM
+seo-description: As equipes de engenharia e consultoria de Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 9%
 
 ---
 
 
-# Práticas recomendadas  {#best-practices}
+# Práticas recomendadas    {#best-practices}
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
 
-As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM. Os desenvolvedores da Adobe seguem essas práticas recomendadas ao desenvolver atualizações de produtos AEM e código do cliente para implementações de clientes.
+As equipes de engenharia e consultoria de Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM. Os desenvolvedores do Adobe seguem essas práticas recomendadas, pois desenvolvem as principais atualizações de produtos AEM e o código do cliente para implementações de clientes.
 
-Antes de start de seu projeto de desenvolvimento do AEM, analise primeiro essas práticas recomendadas:
+Antes de start de seu projeto de desenvolvimento de AEM, analise primeiro essas práticas recomendadas:
 
 * [Práticas de desenvolvimento](/help/sites-developing/development-practices.md)
 * [Arquitetura de conteúdo](/help/sites-developing/content-architecture.md)
@@ -72,14 +75,14 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
   <tr>
    <td>Fluxos de trabalhos</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de Workflows</a></td> 
-   <td><p>Os Workflows permitem que você automatize as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td> 
+   <td><p>Os Workflows permitem que você automatize as atividades Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td> 
   </tr>
  </tbody>
 </table>
 
 ## Communities {#communities}
 
-[O AEM Communities](/help/communities/overview.md) simplifica a criação e o gerenciamento de comunidades locais.
+[A AEM Communities](/help/communities/overview.md) simplifica a criação e o gerenciamento de comunidades locais.
 
 Algumas práticas recomendadas para Comunidades são descritas aqui:
 
@@ -90,7 +93,7 @@ Algumas práticas recomendadas para Comunidades são descritas aqui:
 
 ## Ferramenta/HTL {#tooling-htl}
 
-A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido com o AEM 6.0. Substitui o JSP e o ESP como o sistema de modelo preferencial do AEM.
+A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido com AEM 6.0. Substitui o JSP e o ESP como o sistema de modelo preferencial da AEM.
 
 |  |  |  |
 |---|---|---|
@@ -99,6 +102,6 @@ A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido 
 
 >[!NOTE]
 >
->O tutorial de várias partes a seguir pode ser de interesse para a prática recomendada de configurar um novo projeto AEM, detalhando os componentes principais, modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes:\
->[Introdução ao AEM Sites - Tutorial de WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>O tutorial de várias partes a seguir pode ser de interesse para a prática recomendada de configurar um novo projeto de AEM, detalhando os Componentes principais, Modelos editáveis, Bibliotecas do cliente e desenvolvimento de componentes:\
+>[Introdução ao AEM Sites - Tutorial WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
