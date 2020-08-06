@@ -11,20 +11,23 @@ topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 0%
 
 ---
 
 
 # Internacionalização de strings de interface {#internationalizing-ui-strings}
 
-As APIs Java e JavaScript permitem internacionalizar strings nos seguintes tipos de recursos:
+As APIs Java e Javascript permitem que você internacionalize strings nos seguintes tipos de recursos:
 
-* Arquivos de origem Java.
+* Arquivos de código-fonte Java.
 * Scripts JSP.
 * Javascript em bibliotecas do lado do cliente ou na fonte da página.
 * Valores de propriedade do nó JCR usados em caixas de diálogo e propriedades de configuração do componente.
 
-Para obter uma visão geral do processo de internacionalização e localização, consulte [Internacionalizando componentes](/help/sites-developing/i18n.md).
+Para obter uma visão geral do processo de internacionalização e localização, consulte [Internacionalização de componentes](/help/sites-developing/i18n.md).
 
 ## Internacionalizando strings no código Java e JSP {#internationalizing-strings-in-java-and-jsp-code}
 
@@ -41,7 +44,7 @@ A identificação da string no idioma inglês difere das estruturas de internaci
 
 Há duas maneiras de determinar o idioma preferido pelo usuário:
 
-* Para usuários autenticados, determine o idioma nas preferências na conta de usuário.
+* Para usuários autenticados, determine o idioma a partir das preferências na conta de usuário.
 * A localidade da página solicitada.
 
 A propriedade language da conta do usuário é o método preferencial, pois é mais confiável. No entanto, o usuário deve estar conectado para usar esse método.
@@ -82,7 +85,7 @@ i18n.get("Enter a search keyword");
 
 #### Uso de dicas de tradução {#using-translation-hints}
 
-Especifique a dica [de](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) conversão da string internacionalizada para distinguir entre strings duplicadas no dicionário. Use o segundo parâmetro opcional do `get` método para fornecer a dica de conversão. A dica de conversão deve corresponder exatamente à propriedade Comentário do item no dicionário.
+Especifique a dica [de](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) tradução da string internacionalizada para distinguir entre strings de duplicado no dicionário. Use o segundo parâmetro opcional do `get` método para fornecer a dica de conversão. A dica de conversão deve corresponder exatamente à propriedade Comentário do item no dicionário.
 
 Por exemplo, o dicionário contém a string `Request` duas vezes: uma vez como verbo e uma vez como substantivo. O código a seguir inclui a dica de conversão como um argumento no `get` método:
 
@@ -92,7 +95,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Inclusão de variáveis em frases localizadas {#including-variables-in-localized-sentences}
 
-Inclua variáveis na string localizada para criar significado contextual em uma sentença. Por exemplo, depois de fazer logon em um aplicativo da Web, a página inicial exibe a mensagem &quot;Bem-vindo ao administrador. Você tem duas mensagens na sua caixa de entrada.&quot; O contexto da página determina o nome do usuário e o número de mensagens.
+Inclua variáveis na string localizada para criar significado contextual em uma sentença. Por exemplo, depois de fazer logon em um aplicativo da Web, o home page exibe a mensagem &quot;Bem-vindo ao administrador. Você tem duas mensagens na sua caixa de entrada.&quot; O contexto da página determina o nome do usuário e o número de mensagens.
 
 [No dicionário](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), as variáveis são representadas em strings como índices entre colchetes. Especifique os valores das variáveis como argumentos do `get` método. Os argumentos são colocados após a dica de tradução, e os índices correspondem à ordem dos argumentos:
 
@@ -100,7 +103,7 @@ Inclua variáveis na string localizada para criar significado contextual em uma 
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems); 
 ```
 
-A string internacionalizada e a dica de tradução devem corresponder exatamente à string e ao comentário no dicionário. É possível omitir a dica de localização fornecendo um `null` valor como segundo argumento.
+A string internacionalizada e a dica de tradução devem corresponder exatamente à string e ao comentário no dicionário. Você pode omitir a dica de localização fornecendo um `null` valor como o segundo argumento.
 
 #### Uso do método Static Get {#using-the-static-get-method}
 
@@ -113,11 +116,11 @@ A `I18N` classe define um `get` método estático que é útil quando é necess�
 
    `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
-### Internacionalizando strings no código JavaScript {#internationalizing-strings-in-javascript-code}
+### Internacionalização de strings no código JavaScript {#internationalizing-strings-in-javascript-code}
 
-A API Javascript permite que você localize sequências de caracteres no cliente. Assim como com o código [Java e JSP](#internationalizing-strings-in-java-and-jsp-code) , a API do Javascript permite identificar strings para localizar, fornecer dicas de localização e incluir variáveis nas strings localizadas.
+A API do Javascript permite que você localize sequências de caracteres no cliente. Assim como com o código [Java e JSP](#internationalizing-strings-in-java-and-jsp-code) , a API do Javascript permite identificar strings para localizar, fornecer dicas de localização e incluir variáveis nas strings localizadas.
 
-A pasta `granite.utils` da biblioteca do [](/help/sites-developing/clientlibs.md) cliente fornece a API do Javascript. Para usar a API, inclua esta pasta da biblioteca de cliente na sua página. As funções de localização usam o `Granite.I18n` namespace.
+A pasta `granite.utils` da biblioteca do [](/help/sites-developing/clientlibs.md) cliente fornece a API do Javascript. Para usar a API, inclua esta pasta da biblioteca de cliente na sua página. As funções de Localização usam a `Granite.I18n` namespace.
 
 Antes de apresentar strings localizadas, é necessário definir a localidade usando a `Granite.I18n.setLocale` função. A função requer o código de idioma da localidade como um argumento:
 
@@ -131,7 +134,7 @@ Para apresentar uma string localizada, use a `Granite.I18n.get` função:
 Granite.I18n.get("string to localize");
 ```
 
-O exemplo a seguir internacionaliza a string &quot;Welcome back&quot;:
+O exemplo a seguir internacionaliza a string &quot;Bem-vindo de volta&quot;:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -141,7 +144,7 @@ Granite.I18n.get("string to localize", [variables], "localization hint");
 Os parâmetros de função são diferentes do método Java I18n.get:
 
 * O primeiro parâmetro é o literal de string a ser localizado.
-* O segundo parâmetro é uma matriz de valores a serem inseridos no literal de string.
+* O segundo parâmetro é uma matriz de valores a serem injetados no literal de string.
 * O terceiro parâmetro é a dica de localização.
 
 O exemplo a seguir usa o Javascript para localizar o &quot;Welcome back Administrator&quot;. Você tem duas mensagens na sua caixa de entrada.&quot; frase:
@@ -164,7 +167,7 @@ O script JSP de exemplo a seguir recupera a `jcr:title` propriedade do repositó
 
 #### Especificação de dicas de tradução para nós JCR {#specifying-translation-hints-for-jcr-nodes}
 
-Semelhante às dicas de [tradução na API](#using-translation-hints)Java, você pode fornecer dicas de tradução para distinguir strings duplicadas no dicionário. Forneça a dica de conversão como uma propriedade do nó que contém a propriedade internacionalizada. O nome da propriedade de dica é composto do nome do nome da propriedade internacionalizada com o `_commentI18n` sufixo:
+Semelhante às dicas de [tradução na API](#using-translation-hints)Java, você pode fornecer dicas de tradução para distinguir strings de duplicado no dicionário. Forneça a dica de conversão como uma propriedade do nó que contém a propriedade internacionalizada. O nome da propriedade de dica é composto do nome do nome da propriedade internacionalizada com o `_commentI18n` sufixo:
 
 `${prop}_commentI18n`
 
@@ -176,11 +179,11 @@ Teste se você internacionalizou todas as strings na sua interface do usuário. 
 
 `USR_*Default-String*_尠`
 
-A imagem a seguir mostra a tradução de stub para a página inicial do AEM:
+A imagem a seguir mostra a tradução de stub para o home page AEM:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-Para definir o idioma para o usuário, configure a propriedade language do nó de preferências para a conta do usuário.
+Para definir o idioma para o usuário, configure a propriedade de idioma do nó de preferências para a conta do usuário.
 
 O nó de preferências de um usuário tem um caminho como este:
 
