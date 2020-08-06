@@ -11,16 +11,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2777706c-d42b-4921-a8f4-720b7c0fa45e
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 0%
 
 ---
 
 
 # Revise os direitos de uso de um arquivo PDF {#review-the-usage-rights-of-a-pdf-file}
 
-Quando você carrega um arquivo PDF no aplicativo da Web de extensões do Acrobat Reader DC, pode exibir estas informações:para verificar se o arquivo foi estendido pelo Reader, se os direitos de uso foram aplicados e se as datas de expiração foram cumpridos.
+Ao carregar um arquivo PDF no aplicativo da Web de extensões da Acrobat Reader DC, você pode visualização estas informações:para visualização se ele foi estendido pela Reader, se os direitos de uso foram aplicados e suas datas de expiração.
 
-1. Faça logon no aplicativo da Web de extensões do Acrobat Reader DC em http://localhost:*[port]*/ReaderExtensions (onde *[port]* é o número da porta do servidor de aplicativos).
+1. Faça logon no aplicativo da Web de extensões da Acrobat Reader DC em http://localhost:*[port]*/ReaderExtensions (onde *[port]* é o número da porta do servidor de aplicativos).
 1. Clique em Procurar para carregar o arquivo PDF e clique em Informações. As informações são exibidas abaixo do nome do arquivo.
 
-   Consulte a Ajuda das extensões do Acrobat Reader DC para obter detalhes sobre como modificar os direitos de uso do arquivo.
+   Consulte a Ajuda de extensões do Acrobat Reader DC para obter detalhes sobre como modificar os direitos de uso do arquivo.
 
