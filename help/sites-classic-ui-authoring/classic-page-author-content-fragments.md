@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments.md).
 
-Eles permitem criar um conteúdo neutro ao canal, juntamente com variações (possivelmente, específicas do canal). Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
+Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
 
 >[!CAUTION]
 >
