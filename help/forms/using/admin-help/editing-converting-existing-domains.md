@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 0%
 
 ---
 
@@ -46,5 +49,5 @@ source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
 1. Clique no nome do domínio híbrido a ser convertido.
 1. Clique em Converter em domínio corporativo.
 1. Revise as informações que aparecem com relação aos dados de usuário e grupo e à autenticação de usuários e clique em OK.
-1. Clique em Adicionar diretório e configure as informações necessárias do diretório. (Consulte [Adicionar diretórios ou SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)personalizados.)
+1. Clique em Adicionar diretório e configure as informações de diretório necessárias. (Consulte [Adicionar diretórios ou SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)personalizados.)
 
