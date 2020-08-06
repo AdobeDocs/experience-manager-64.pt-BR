@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
 
 ## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
 
-A interface clássica é a interface do usuário orientada para desktop que estava disponível desde o CQ5 (o anterior ao AEM). A documentação a seguir sobre criação está focada na interface do usuário.
+A interface clássica é a interface do usuário orientada para desktop que estava disponível desde o CQ5 (o predecessório para AEM). A documentação a seguir sobre criação está focada na interface do usuário.
 
 A interface do usuário habilitada para toque é a interface do usuário padrão do AEM, projetada para uso em dispositivos de toque e desktop. Consulte a [documentação de criação padrão](/help/sites-authoring/author.md) para obter mais informações.
 
