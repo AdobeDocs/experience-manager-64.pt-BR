@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1507'
+ht-degree: 80%
 
 ---
 
@@ -67,7 +70,7 @@ O corpo do scaffold é o formulário. Quando um usuário desejar criar uma pági
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
-*Vá para Propriedades **da**página da nova página e defina o Texto* do *título, a* Descrição *, o Modelo* de *destino e o Caminho* de *destino, conforme descrito acima.*
+*Vá para Propriedades **da**página da nova página e defina o Texto* do *título, a* Descrição *, o Modelo* do *Público alvo e o Caminho* do *Público alvo, conforme descrito acima.*
 
 *Em seguida, é necessário definir a estrutura da página que este scaffold criará. Para fazer isso, vá para o modo de design na página do suporte. Um link será exibido, permitindo editar o scaffold no **editor de caixas de diálogo**.
 
@@ -89,7 +92,7 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 A lista de propriedades para esse campo será exibida no lado direito do editor de caixa de diálogo, da seguinte forma:
 
-![list_of_properties](assets/list_of_properties.png)
+![lista_of_properties](assets/list_of_properties.png)
 
 Observe a propriedade de nome desse campo. Ela tem o valor
 
@@ -110,7 +113,7 @@ Para especificar essas duas informações, use campos ocultos. Click on the firs
 
 As propriedades desse campo oculto são as seguintes:
 
-![hidden_list_props](assets/hidden_list_props.png)
+![hidden_lista_props](assets/hidden_list_props.png)
 
 A propriedade nome desse campo oculto é
 
@@ -130,7 +133,7 @@ O segundo campo oculto pode ser visualizado ao clicá-lo da seguinte maneira:
 
 As propriedades desse campo oculto são as seguintes:
 
-![hidden_list_props2](assets/hidden_list_props2.png)
+![hidden_lista_props2](assets/hidden_list_props2.png)
 
 A propriedade nome desse campo oculto é
 
