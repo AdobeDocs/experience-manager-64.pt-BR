@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Você pode criar credenciais SSL (Secure Sockets Layer) e configurar o SSL no servidor de aplicativos para melhorar a segurança da comunicação com o servidor de aplicativos.
 
-Como um produto de segurança, o Rights Management exige a configuração do SSL. Ao configurar certificados SSL, certifique-se de usar somente chaves RSA. Certificados SSL com chaves DSA não são suportados.
+Como produto de segurança, o Rights Management exige a configuração do SSL. Ao configurar certificados SSL, certifique-se de usar somente chaves RSA. Certificados SSL com chaves DSA não são suportados.
 
-As informações fornecidas se aplicam às instalações chave na mão, automáticas e manuais. Ele oferece um exemplo de um método para configurar o SSL. Você também pode usar outros métodos mais apropriados para sua rede ou organização.
+As informações fornecidas aplicam-se às instalações chave na mão, automáticas e manuais. Ele oferta um exemplo de um método para configurar o SSL. Você também pode usar outros métodos mais apropriados para sua rede ou organização.
 
 >[!NOTE]
 >
->É recomendável concluir a instalação, configuração e implantação dos módulos de formulários do AEM e garantir que os produtos estejam sendo executados corretamente antes de configurar o SSL no servidor de aplicativos.
+>É recomendável concluir a instalação, configuração e implantação dos módulos de formulários AEM e garantir que os produtos estejam sendo executados corretamente antes de configurar o SSL no servidor de aplicativos.
 
 >[!NOTE]
 >
