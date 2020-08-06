@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 translation-type: tm+mt
 source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
 
 # Ativação de anexos para um formulário HTML5 {#enabling-attachments-for-an-html-form}
 
-Você pode carregar, visualizar e enviar anexos com formulários HTML5. Por padrão, o suporte ao anexo é desativado. Para ativar o suporte ao anexo:
+Você pode carregar, pré-visualização e enviar anexos com formulários HTML5. Por padrão, o suporte ao anexo é desativado. Para ativar o suporte ao anexo:
 
 1. Crie um perfil [](/help/forms/using/custom-profile.md) personalizado com a propriedade de string multiselect `mfAttachmentOptions`.
 1. No perfil personalizado, especifique as propriedades `fileSizeLimit`, `multiSelect`e `buttonTex`t para configurar as opções do widget de anexo de arquivo. Conforme necessário, também é possível especificar mais propriedades personalizadas.
@@ -27,6 +30,7 @@ Você pode carregar, visualizar e enviar anexos com formulários HTML5. Por padr
    * **fileSizeLimit** -> value_in_mb (digamos 5) (2 MBs por padrão)
    * **buttonText** -> Texto do botão para janela pop-up (&quot;Anexar&quot; por padrão)
    * **aceitar** -> tipos de arquivo para aceitar (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; por padrão)
+
    >[!NOTE]
    >
    >No Microsoft Internet Explorer 9, os usuários podem anexar arquivos maiores que o limite especificado. É um problema conhecido.
@@ -36,17 +40,17 @@ Você pode carregar, visualizar e enviar anexos com formulários HTML5. Por padr
 
    >[!NOTE]
    >
-   >O portal de formulários fornece um perfil personalizado com o recurso de rascunhos e anexos ativado. Para obter mais informações sobre o perfil **Salvar como rascunho** , consulte [Salvar formulários HTML5 como rascunho](/help/forms/using/saving-html5-form-draft.md).
+   >O portal de formulários fornece um perfil personalizado com recursos de rascunhos e anexos ativados. Para obter mais informações sobre o perfil **Salvar como rascunho** , consulte [Salvar formulários HTML5 como rascunho](/help/forms/using/saving-html5-form-draft.md).
 
 1. Clique no ícone de anexo e uma caixa de diálogo de seleção de anexo será exibida. Procure e selecione o anexo e clique em **Anexar**.
 
    >[!NOTE]
    >
-   >Para visualizar um anexo, clique no nome do anexo.
+   >Para pré-visualização um anexo, clique no nome do anexo.
 
    >[!NOTE]
    >
-   >A opção de visualização de arquivo não está disponível para usuários anônimos.
+   >A opção pré-visualização de arquivo não está disponível para usuários anônimos.
 
 ## Formato de envio do anexo {#attachment-submission-format}
 
@@ -56,4 +60,4 @@ Quando os anexos estão ativados, o formulário HTML5 envia dados de várias par
 >
 >Para compatibilidade com versões anteriores, se a `mfAllowAttachments`opção estiver desativada, os formulários HTML5 não enviarão os dados de várias partes. Ele envia um xml de dados simples no formato **application/xml** .
 
-Se o sinalizador mfAllowAttachments estiver ativado, o serviço [de proxy de serviço de](/help/forms/using/service-proxy.md) envio também postará dados de várias partes com dataXml e anexos.
+Se o sinalizador mfAllowAttachments estiver ativado, o serviço [de proxy de serviço de](/help/forms/using/service-proxy.md) envio também publica dados de várias partes com dataXml e anexos.
