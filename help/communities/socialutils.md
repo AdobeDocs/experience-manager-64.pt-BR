@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 O pacote **com.adobe.cq.social.ugcbase.SocialUtils** foi substituído no AEM 6.1.
 
-As tabelas a seguir listam os métodos a serem usados no lugar dos métodos SocialUtils.
+As tabelas a seguir listas os métodos a serem usados no lugar dos métodos SocialUtils.
 
-## Pacote SocialResourceUtilities {#socialresourceutilities-package}
+## Pacote SocialResourceUtilities  {#socialresourceutilities-package}
 
 | Métodos em com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -55,7 +58,7 @@ As tabelas a seguir listam os métodos a serem usados no lugar dos métodos Soci
 | String getAvatar(UserProperties userProperties, String fixedDefaultAvatar, SocialUtils.AVATAR_SIZE size) |
 | Página getContainPage(Recurso) |
 | String getSocialProfileURL(String username, ResourceResolver resolver, página) |
-| UserProperties getUserProperties(Resolver de Recursos, UserId da cadeia de caracteres) |
+| UserProperties getUserProperties(Resolver de Recursos, UserId de Cadeia de Caracteres) |
 
 ## For Internal Use Only {#for-internal-use-only}
 
