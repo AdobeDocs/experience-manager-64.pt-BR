@@ -1,8 +1,8 @@
 ---
-title: Componentes de eventos OSGi para comunidades
-seo-title: Componentes de eventos OSGi para comunidades
-description: Eventos OSGi enviados que podem acionar ouvintes assíncronos
-seo-description: Eventos OSGi enviados que podem acionar ouvintes assíncronos
+title: Eventos OSGi para componentes de comunidades
+seo-title: Eventos OSGi para componentes de comunidades
+description: São enviados eventos OSGi que podem acionar ouvintes assíncronos
+seo-description: São enviados eventos OSGi que podem acionar ouvintes assíncronos
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 4%
 
 ---
 
 
-# Componentes de eventos OSGi para comunidades {#osgi-events-for-communities-components}
+# Eventos OSGi para componentes de comunidades {#osgi-events-for-communities-components}
 
 ## Visão geral {#overview}
 
-Quando os membros interagem com os recursos das Comunidades, os eventos OSGi são enviados que podem acionar ouvintes assíncronos, como notificações ou gamificação (pontuação e marcação).
+Quando os membros interagem com os recursos das Comunidades, eventos OSGi são enviados que podem acionar ouvintes assíncronos, como notificações ou gamificação (pontuação e emblema).
 
 A instância [SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de um componente registra os eventos como `actions`os que ocorrem para um `topic`. O SocialEvent inclui um método para retornar um método `verb`associado à ação. Existe uma relação *n-1* entre `actions`e `verbs`.
 
@@ -31,16 +34,16 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um evento de calendário |
+| POST | membro cria um evento de calendário |
 | ADICIONAR | comentários do membro em um evento de calendário |
-| ATUALIZAR | o evento ou comentário do calendário do membro é editado |
+| ATUALIZAR | o evento do calendário ou comentário do membro é editado |
 | EXCLUIR | o evento ou comentário do calendário do membro é excluído |
 
 [Componente Comentários](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um comentário |
+| POST | membro cria um comentário |
 | ADICIONAR | membro responde ao comentário |
 | ATUALIZAR | o comentário do membro é editado |
 | EXCLUIR | o comentário do membro é excluído |
@@ -49,7 +52,7 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pasta |
+| POST | membro cria uma pasta |
 | ANEXAR | membro carrega um arquivo |
 | ATUALIZAR | membro atualiza uma pasta ou arquivo |
 | EXCLUIR | membro exclui uma pasta ou arquivo |
@@ -58,16 +61,16 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria tópico do fórum |
+| POST | membro cria tópico do fórum |
 | ADICIONAR | respostas do membro ao tópico do fórum |
 | ATUALIZAR | o tópico do fórum do membro ou a resposta é editada |
 | EXCLUIR | o tópico do fórum do membro ou a resposta é excluída |
 
-[Componente](blog-developer-basics.md)de diárioSocialEvent `topic`= com/adobe/cq/social/diário
+[Componente](blog-developer-basics.md)de JournalSocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um artigo de blog |
+| POST | membro cria um artigo de blog |
 | ADICIONAR | membro comenta em um artigo de blog |
 | ATUALIZAR | artigo ou comentário do membro do blog é editado |
 | EXCLUIR | artigo ou comentário do membro do blog é excluído |
@@ -76,18 +79,18 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pergunta QnA |
+| POST | membro cria uma pergunta QnA |
 | ADICIONAR | membro cria uma resposta QnA |
-| ATUALIZAR | pergunta ou resposta do membro é editada |
+| ATUALIZAR | pergunta ou resposta QnA do membro é editada |
 | SELECIONAR | a resposta do membro é selecionada |
-| DESMARCAR | a resposta do membro é desmarcada |
+| CANCELAR SELEÇÃO | a resposta do membro é desmarcada |
 | EXCLUIR | pergunta ou resposta do membro é excluída |
 
 [Revisa o componente](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria revisão |
+| POST | membro cria revisão |
 | ATUALIZAR | a revisão do membro é editada |
 | EXCLUIR | a revisão do membro é excluída |
 
@@ -118,17 +121,17 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 ## Eventos para componentes personalizados {#events-for-custom-components}
 
-Para um componente personalizado, a classe [abstrata](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) SocialEvent deve ser estendida d para gravar os eventos do componente como `actions`os que ocorrem para um `topic`.
+Para um componente personalizado, a classe [abstrata](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) SocialEvent deve ser estendida d para gravar os eventos do componente como `actions`ocorre para um `topic`.
 
 O evento personalizado substituiria o método para `getVerb()` que um apropriado `verb`seja retornado para cada `action`. A ação `verb` retornada pode ser uma ação comumente usada (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe uma relação *n-1* entre `actions`e `verbs`.
 
 >[!NOTE]
 >
->Verifique se uma extensão personalizada está registrada com uma classificação inferior a qualquer implementação existente no produto.
+>Certifique-se de que uma extensão personalizada esteja registrada com uma classificação inferior a qualquer implementação existente no produto.
 
-### Pseudo-código para o evento de componente personalizado {#pseudo-code-for-custom-component-event}
+### Pseudo-código para o Evento de componente personalizado {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
+[org.osgi.service.evento.Evento](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);\
 [com.adobe.granite.ativitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);\
 [com.adobe.granite.ativitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
@@ -227,11 +230,11 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 }
 ```
 
-## Exemplo de EventListener para filtrar dados de fluxo de atividade {#sample-eventlistener-to-filter-activity-stream-data}
+## Exemplo de EventListener para filtrar dados de fluxo de Atividade {#sample-eventlistener-to-filter-activity-stream-data}
 
-É possível ouvir eventos com o objetivo de modificar o que aparece no fluxo de atividade.
+É possível ouvir eventos com o objetivo de modificar o que aparece no fluxo de atividades.
 
-A amostra de pseudo código a seguir removerá os eventos DELETE para o componente Comentários do fluxo de atividade.
+A amostra de pseudo-código a seguir removerá eventos de DELETE para o componente Comentários do fluxo de atividades.
 
 ### Pseudo-código para EventListener {#pseudo-code-for-eventlistener}
 
