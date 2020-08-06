@@ -1,8 +1,8 @@
 ---
 title: Exportador JSON para serviços de conteúdo
 seo-title: Exportador JSON para serviços de conteúdo
-description: 'Os serviços de conteúdo do AEM foram criados para generalizar a descrição e o delivery do conteúdo de/para o AEM, além do foco nas páginas da Web. Eles fornecem o delivery do conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente. '
-seo-description: 'Os serviços de conteúdo do AEM foram criados para generalizar a descrição e o delivery do conteúdo de/para o AEM, além do foco nas páginas da Web. Eles fornecem o delivery do conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente. '
+description: 'AEM Content Services foram criados para generalizar a descrição e o delivery do conteúdo de/para AEM além de um foco nas páginas da Web. Eles fornecem o delivery do conteúdo para canais que não são tradicionais AEM páginas da Web, usando métodos padronizados que podem ser consumidos por qualquer cliente. '
+seo-description: 'AEM Content Services foram criados para generalizar a descrição e o delivery do conteúdo de/para AEM além de um foco nas páginas da Web. Eles fornecem o delivery do conteúdo para canais que não são tradicionais AEM páginas da Web, usando métodos padronizados que podem ser consumidos por qualquer cliente. '
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -20,15 +20,15 @@ ht-degree: 4%
 
 # Exportador JSON para serviços de conteúdo{#json-exporter-for-content-services}
 
-Os serviços de conteúdo do AEM foram criados para generalizar a descrição e o delivery do conteúdo de/para o AEM, além do foco nas páginas da Web.
+AEM Content Services foram criados para generalizar a descrição e o delivery do conteúdo de/para AEM além de um foco nas páginas da Web.
 
-Eles fornecem o delivery do conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
+Eles fornecem o delivery do conteúdo para canais que não são tradicionais AEM páginas da Web, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
 
 * [Aplicativos de página única](spa-walkthrough.md)
 * Aplicativos móveis nativos
 * outros canais e pontos de contato externos ao AEM
 
-Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer serviços de conteúdo usando o exportador JSON para fornecer o conteúdo de uma página AEM (y) no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
+Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer serviços de conteúdo usando o exportador JSON para fornecer o conteúdo de uma página AEM no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
 
 >[!NOTE]
 >
@@ -36,9 +36,9 @@ Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer 
 
 ## Exportador JSON com componentes principais do fragmento de conteúdo {#json-exporter-with-content-fragment-core-components}
 
-Usando o exportador JSON AEM, você pode fornecer o conteúdo de uma página AEM (y) no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
+Usando o exportador JSON AEM, você pode fornecer o conteúdo de uma página AEM no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
 
-No AEM, o delivery é obtido usando o seletor `model` e a `.json` extensão.
+Dentro AEM delivery é obtido usando o seletor `model` e a `.json` extensão.
 
 `.model.json`
 
