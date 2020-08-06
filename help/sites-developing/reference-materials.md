@@ -1,8 +1,8 @@
 ---
 title: Guias da API
 seo-title: Guias da API
-description: Documentação para as APIs que o AEM fornece para o desenvolvimento de aplicativos
-seo-description: Documentação para as APIs que o AEM fornece para o desenvolvimento de aplicativos
+description: Documentação das APIs que AEM fornecem para o desenvolvimento de aplicativos
+seo-description: Documentação das APIs que AEM fornecem para o desenvolvimento de aplicativos
 uuid: 4ace24c8-8bdf-4c68-b21d-ad2c03cf7362
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,13 +12,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 4%
 
 ---
 
 
 # Guias da API{#api-guides}
 
-O AEM fornece várias APIs para desenvolver aplicativos. A lista a seguir fornece a documentação das APIs compatíveis com o AEM:
+AEM fornece várias APIs para o desenvolvimento de aplicativos. A lista a seguir fornece a documentação para APIs suportadas pela AEM:
 
 * [API do Adobe AEM 6.4.0](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)
 
@@ -34,14 +37,14 @@ O AEM fornece várias APIs para desenvolver aplicativos. A lista a seguir fornec
 
 * [Referência da API do Editor Core Javascript](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-AEM Single Page Application (SPA) Editor SDK framework JavaScript API faz referência a:
+AEM Single Page Application (SPA) Editor SDK estrutura JavaScript API referências:
 
 * [Mapeamento de componentes](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
 * [Gerenciador de modelo de página](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
 * [Reagir componentes editáveis](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
 * [Componentes editáveis angulares](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
 
-APIs de entrega e gerenciamento de conteúdo do AEM:
+AEM APIs de Delivery e Gestão de conteúdo:
 
 * Componentes principais (JSON)
 
@@ -49,7 +52,7 @@ APIs de entrega e gerenciamento de conteúdo do AEM:
    * [Ativando a exportação JSON para um componente](/help/sites-developing/json-exporter-components.md)
    * Consulte a seção [Componentes no Guia](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) do Usuário para Desenvolvimento para obter mais informações
 
-* [API HTTP do AEM Assets](/help/assets/mac-api-assets.md)
+* [API HTTP AEM Assets](/help/assets/mac-api-assets.md)
 
 Os seguintes recursos externos são apenas para referência:
 
