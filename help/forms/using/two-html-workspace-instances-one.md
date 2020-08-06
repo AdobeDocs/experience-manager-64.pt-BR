@@ -10,19 +10,22 @@ topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
 
 # Hospedagem de duas instâncias de espaço de trabalho do AEM Forms em um servidor {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
-A instalação e as configurações padrão do AEM Forms permitem que apenas um espaço de trabalho do AEM Forms esteja disponível no servidor. No entanto, pode ser necessário hospedar duas instâncias diferentes de espaço de trabalho do AEM Forms em um único servidor do AEM Forms. As duas instâncias são acessíveis por URLs diferentes.
+A instalação e as configurações padrão do AEM Forms permitem que apenas um espaço de trabalho AEM Forms esteja disponível no servidor. No entanto, pode ser necessário hospedar duas instâncias diferentes de espaço de trabalho do AEM Forms em um único servidor AEM Forms. As duas instâncias são acessíveis por URLs diferentes.
 
 Os administradores do AEM Forms personalizam o espaço de trabalho para criar dois URLs diferentes e disponibilizar dois espaços de trabalho no mesmo servidor. Neste artigo de personalização, supomos que os dois espaços de trabalho estejam acessíveis em `https://[server]:[port]/lc/ws` e `https://[server]:[port]:/lc/ws2`.
 
 Siga estas etapas para configurar a área de trabalho do AEM Forms.
 
-1. Instale o pacote dev da área de trabalho do AEM Forms em seu servidor. Consulte o pacote [](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)dev para obter instruções sobre como criá-lo.
+1. Instale o pacote dev da área de trabalho do AEM Forms no seu servidor. Consulte o pacote [](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)dev para obter instruções sobre como criá-lo.
 1. Faça logon no CRXDE Lite como administrador, acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Copie o nó em /content e cole em /content. Renomeie o nó como ws2. Clique em **[!UICONTROL Salvar tudo]**. Nas propriedades desse nó, altere o valor de `sling:resourceType` para ws2. Clique em **[!UICONTROL Salvar tudo]**.
 
