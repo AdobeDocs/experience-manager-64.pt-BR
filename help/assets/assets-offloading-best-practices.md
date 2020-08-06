@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas de descarregamento de ativos
-description: Casos de uso recomendados e práticas recomendadas para descarregar a ingestão de ativos e workflows de replicação em AEM Assets.
+description: Casos de uso recomendados e práticas recomendadas para descarregar a ingestão de ativos e workflows de replicação no AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Este recurso foi substituído pelo AEM 6.4 e foi removido no AEM 6.5. Planeje de acordo.
+>Este recurso foi descontinuado AEM 6.4 e foi removido no AEM 6.5. Planeje de acordo.
 
-Manusear arquivos grandes e executar workflows nos ativos Adobe Experience Manager (AEM) podem consumir recursos consideráveis de CPU, memória e E/S. Em particular, a dimensão dos ativos, os workflows, o número de usuários e a frequência de ingestão dos ativos podem afetar o desempenho geral do sistema. As operações mais intensivas em recursos incluem a assimilação de ativos AEM e workflows de replicação. O uso intenso desses workflows em uma única instância de criação do AEM pode afetar negativamente a eficiência da criação.
+Manusear arquivos grandes e executar workflows nos ativos Adobe Experience Manager (AEM) pode consumir recursos consideráveis de CPU, memória e E/S. Em particular, a dimensão dos ativos, os workflows, o número de usuários e a frequência de ingestão dos ativos podem afetar o desempenho geral do sistema. As operações mais intensivas em recursos incluem AEM ingestão de ativos e workflows de replicação. O uso intensivo desses workflows em uma única instância de criação de AEM pode afetar negativamente a eficiência da criação.
 
 Descarregar essas tarefas para instâncias de trabalho dedicadas pode reduzir as despesas gerais de CPU, memória e E/S. Em geral, a ideia por trás da descarga é distribuir tarefas que consomem recursos intensivos de CPU/Memória/E para instâncias de trabalho dedicadas. As seções a seguir incluem casos de uso recomendados para descarregamento de Ativos.
 
-## Descarregamento de AEM Assets {#aem-assets-offloading}
+## Descarregamento do AEM Assets {#aem-assets-offloading}
 
-O AEM Assets implementa uma extensão de fluxo de trabalho nativa específica do ativo para descarregamento. Ele se baseia na extensão de fluxo de trabalho genérica fornecida pela estrutura de descarga, mas inclui recursos adicionais específicos de ativos na implementação. O objetivo da descarga de Ativos é executar com eficiência o fluxo de trabalho Atualizar ativo DAM em um ativo carregado. A descarga de ativos permite que você tenha maior controle dos workflows de ingestão.
+A AEM Assets implementa uma extensão de fluxo de trabalho nativa específica do ativo para descarregamento. Ele se baseia na extensão de fluxo de trabalho genérica fornecida pela estrutura de descarga, mas inclui recursos adicionais específicos de ativos na implementação. O objetivo da descarga de Ativos é executar com eficiência o fluxo de trabalho Atualizar ativo DAM em um ativo carregado. A descarga de ativos permite que você tenha maior controle dos workflows de ingestão.
 
-## Componentes de descarga de AEM Assets {#aem-assets-offloading-components}
+## Componentes de descarga AEM Assets {#aem-assets-offloading-components}
 
 O diagrama a seguir descreve os componentes principais no processo de descarga de ativos:
 
@@ -39,7 +39,7 @@ O fluxo de trabalho de Descarregamento de ativos de atualização do DAM é exec
 
 O gerenciador de trabalhos distribui novos trabalhos para instâncias de trabalho. Ao projetar o mecanismo de distribuição, é importante levar a ativação do tópico em consideração. Os trabalhos só podem ser atribuídos a instâncias nas quais o tópico da tarefa está ativado. Desative o tópico `com/adobe/granite/workflow/offloading` no principal e ative-o no trabalhador para garantir que o trabalho seja atribuído ao trabalhador.
 
-### Descarga do AEM {#aem-offloading}
+### Descarga de AEM {#aem-offloading}
 
 A estrutura de descarga identifica os trabalhos de descarga de fluxo de trabalho atribuídos às instâncias do trabalhador e usa a replicação para transportá-los fisicamente, incluindo sua carga útil (por exemplo, imagens a serem assimiladas), aos trabalhadores.
 
@@ -49,7 +49,7 @@ Quando um trabalho é gravado no trabalhador, o gerente de trabalho chama o cons
 
 ## Topologia Sling {#sling-topology}
 
-A topologia Sling agrupa instâncias do AEM e permite que elas se conheçam mutuamente, independentemente da persistência subjacente. Essa característica da topologia Sling permite criar topologias para cenários não agrupados, agrupados e mistos. Uma instância pode expor as propriedades à topologia inteira. A estrutura fornece retornos de chamada para acompanhar as alterações na topologia (instâncias e propriedades). A topologia Sling fornece a base para trabalhos distribuídos Sling.
+A topologia Sling agrupa instâncias AEM e permite que elas estejam cientes umas das outras, independentemente da persistência subjacente. Essa característica da topologia Sling permite criar topologias para cenários não agrupados, agrupados e mistos. Uma instância pode expor as propriedades à topologia inteira. A estrutura fornece retornos de chamada para acompanhar as alterações na topologia (instâncias e propriedades). A topologia Sling fornece a base para trabalhos distribuídos Sling.
 
 ### Sling de trabalhos distribuídos {#sling-distributed-jobs}
 
@@ -57,7 +57,7 @@ A divisão de tarefas distribuídas facilita a distribuição de tarefas entre u
 
 Os trabalhos são distribuídos somente para instâncias que fornecem um consumidor de trabalho para o tópico. Ao ativar/desativar os consumidores de trabalho em uma instância, você pode definir os recursos de uma instância e influenciar o mecanismo de distribuição. Os consumidores de trabalho disponíveis de uma instância são transmitidos para toda a topologia.
 
-Neste contexto, o termo distribuição significa a atribuição de uma tarefa a uma instância específica que fornece um consumidor de trabalho. A atribuição a uma instância é armazenada no repositório. Em outras palavras, os trabalhos distribuídos Sling podem ser atribuídos a qualquer instância na topologia por padrão. No entanto, outros trabalhos só podem ser executados por instâncias que compartilham o mesmo repositório. Isso implica que esses trabalhos só podem ser executados por instâncias que fazem parte do mesmo cluster. Tarefas atribuídas a instâncias de um cluster diferente não são executadas.
+Neste contexto, o termo distribuição significa a atribuição de uma tarefa a uma instância específica que fornece um consumidor de trabalho. A atribuição a uma instância é armazenada no repositório. Em outras palavras, os trabalhos distribuídos Sling podem ser atribuídos a qualquer instância na topologia por padrão. No entanto, outros trabalhos só podem ser executados por instâncias que compartilham o mesmo repositório. Isso implica que esses trabalhos só podem ser executados por instâncias que fazem parte do mesmo cluster. Os trabalhos atribuídos a instâncias de um cluster diferente não são executados.
 
 ### Granite offloading framework {#granite-offloading-framework}
 
@@ -73,14 +73,14 @@ A estrutura de descarga também vem com uma interface do usuário (UI) para visu
 
 Toda implementação é exclusiva e, como tal, não há configuração de descarga de tamanho único para todos. As seções a seguir fornecem orientação e práticas recomendadas para a descarga de ingestão de ativos.
 
-A descarga de ativos também impõe despesas gerais ao sistema, incluindo despesas gerais de operação. Se você encontrar problemas com a carga de ingestão do ativo, a Adobe recomenda que você primeiro aprimore a configuração sem descarregar. Considere as seguintes opções antes de mover para a descarga de ativos:
+A descarga de ativos também impõe despesas gerais ao sistema, incluindo despesas gerais de operação. Se você encontrar problemas com a carga de ingestão do ativo, o Adobe recomenda que você primeiro aprimore a configuração sem descarregar. Considere as seguintes opções antes de mover para a descarga de ativos:
 
 * Dimensionar hardware
 * Otimizar workflows
 * Usar workflows transitórios
 * Limitar o número de núcleos usados para workflows
 
-Se você concluir que a descarga de ativos é uma abordagem apropriada para você, a Adobe fornece as seguintes orientações:
+Se você concluir que a descarga de ativos é uma abordagem apropriada para você, o Adobe fornece as seguintes orientações:
 
 * Recomenda-se uma implantação com base em TarMK
 * A descarga de ativos baseados em TarMK não foi projetada para ampliar a escala horizontal
@@ -88,15 +88,15 @@ Se você concluir que a descarga de ativos é uma abordagem apropriada para voc�
 
 ### Implantação de descarregamento de ativos recomendados {#recommended-assets-offloading-deployment}
 
-Com o AEM e o Oak, há vários cenários de implantação possíveis. Para descarregamento de Ativos, recomenda-se uma implantação com base em TarMK com um armazenamento de dados compartilhado. O diagrama a seguir descreve a implantação recomendada:
+Com AEM e Oak, há vários cenários de implantação possíveis. Para descarregamento de Ativos, recomenda-se uma implantação com base em TarMK com um armazenamento de dados compartilhado. O diagrama a seguir descreve a implantação recomendada:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-Para obter detalhes sobre como configurar um armazenamento de dados, consulte [Configuração de armazenamentos de nós e armazenamentos de dados no AEM](../sites-deploying/data-store-config.md).
+Para obter detalhes sobre como configurar um armazenamento de dados, consulte [Configuração de armazenamentos de nós e armazenamentos de dados em AEM](../sites-deploying/data-store-config.md).
 
 ### Desativação do gerenciamento automático de agentes {#turning-off-automatic-agent-management}
 
-A Adobe recomenda que você desative o gerenciamento automático de agentes porque ele não oferece suporte à replicação sem binários e pode causar confusão ao configurar uma nova topologia de descarga. Além disso, ele não suporta automaticamente o fluxo de replicação de encaminhamento necessário para a replicação sem binários.
+O Adobe recomenda desativar o gerenciamento automático de agentes, pois ele não oferece suporte à replicação sem binários e pode causar confusão ao configurar uma nova topologia de descarga. Além disso, ele não suporta automaticamente o fluxo de replicação de encaminhamento necessário para a replicação sem binários.
 
 1. Abra o Configuration Manager a partir do URL `http://localhost:4502/system/console/configMgr`.
 1. Abra a configuração para `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
@@ -117,7 +117,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### Uso de armazenamento de dados compartilhado e replicação sem binários entre o autor e os trabalhadores  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-O uso de replicação sem binários é recomendado para reduzir a sobrecarga de transporte para descarregamento de ativos. Para saber como configurar a replicação sem binários para um armazenamento de dados compartilhado, consulte [Configuração de armazenamento de nós e armazenamento de dados no AEM](/help/sites-deploying/data-store-config.md). O procedimento não é diferente para o descarregamento de Ativos, exceto que envolve outros agentes de replicação. Como a replicação sem binários só funciona com agentes de replicação de encaminhamento, você também deve usar a replicação de encaminhamento para todos os agentes de descarga.
+O uso de replicação sem binários é recomendado para reduzir a sobrecarga de transporte para descarregamento de ativos. Para saber como configurar a replicação sem binários para um armazenamento de dados compartilhado, consulte [Configuração de armazenamento de nós e armazenamento de dados em AEM](/help/sites-deploying/data-store-config.md). O procedimento não é diferente para o descarregamento de Ativos, exceto que envolve outros agentes de replicação. Como a replicação sem binários só funciona com agentes de replicação de encaminhamento, você também deve usar a replicação de encaminhamento para todos os agentes de descarga.
 
 ### Desativação de pacotes de transporte {#turning-off-transport-packages}
 
@@ -143,7 +143,7 @@ Para desativar o transporte do modelo de fluxo de trabalho, modifique o fluxo de
 
 ### Otimização do intervalo de polling {#optimizing-the-polling-interval}
 
-A descarga do fluxo de trabalho é implementada usando um fluxo de trabalho externo no principal, que pesquisa a conclusão do fluxo de trabalho descarregado no trabalhador. O intervalo de sondagem padrão para os processos de fluxo de trabalho externo é de cinco segundos. A Adobe recomenda que você aumente o intervalo de sondagem da etapa de descarga de Ativos para pelo menos 15 segundos para reduzir a sobrecarga de descarga no principal.
+A descarga do fluxo de trabalho é implementada usando um fluxo de trabalho externo no principal, que pesquisa a conclusão do fluxo de trabalho descarregado no trabalhador. O intervalo de sondagem padrão para os processos de fluxo de trabalho externo é de cinco segundos. O Adobe recomenda que você aumente o intervalo de sondagem da etapa de descarga de Ativos para pelo menos 15 segundos para reduzir a sobrecarga de descarga no principal.
 
 1. Abra o console de fluxo de trabalho em [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
@@ -155,7 +155,7 @@ A descarga do fluxo de trabalho é implementada usando um fluxo de trabalho exte
 
 ## Mais recursos {#more-resources}
 
-Este documento foca na descarga de ativos. Esta é uma documentação adicional sobre descarregamento:
+Este documento foca na descarga de ativos. Esta é uma documentação adicional sobre descarga:
 
 * [Descarregamento de tarefas](/help/sites-deploying/offloading.md)
 * [Descarga do fluxo de trabalho de ativos](/help/sites-administering/workflow-offloader.md)
