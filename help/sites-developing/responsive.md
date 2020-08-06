@@ -62,7 +62,7 @@ Antes de desenvolver o aplicativo AEM que suporta suas páginas da Web, várias 
 
 ### Estrutura do aplicativo {#application-structure}
 
-A estrutura típica do aplicativo AEM suporta todas as implementações de design responsivo:
+A estrutura típica do aplicativo AEM suporta todas as implementações responsivas de design:
 
 * Os componentes da página ficam abaixo de /apps/*application_name*/components
 * Os modelos residem abaixo de /apps/*application_name*/models
@@ -70,7 +70,7 @@ A estrutura típica do aplicativo AEM suporta todas as implementações de desig
 
 ## Uso de query de mídia {#using-media-queries}
 
-Os query de mídia permitem o uso seletivo de estilos CSS para renderização de página. As ferramentas e os recursos de desenvolvimento do AEM permitem que você implemente de modo eficiente e eficaz query de mídia em seus aplicativos.
+Os query de mídia permitem o uso seletivo de estilos CSS para renderização de página. AEM ferramentas e recursos de desenvolvimento permitem implementar query de mídia em seus aplicativos de modo eficiente e eficiente.
 
 O grupo W3C fornece a recomendação de Query [de](https://www.w3.org/TR/css3-mediaqueries/) mídia que descreve esse recurso CSS3 e a sintaxe.
 
@@ -151,7 +151,7 @@ responsive-1200px.css
 
 **Dica**: Nomes de arquivos descritivos permitem identificar facilmente o tamanho do visor direcionado.
 
-### Usar Query de mídia com páginas do AEM {#using-media-queries-with-aem-pages}
+### Uso de Query de mídia com páginas AEM {#using-media-queries-with-aem-pages}
 
 Inclua a pasta da biblioteca do cliente no script JSP do componente da página para gerar o arquivo CSS que inclui os query de mídia e para fazer referência ao arquivo.
 
@@ -222,7 +222,7 @@ Para especificar os grupos de dispositivos que aparecem na lista Dispositivos, a
 
 Os nós do grupo de dispositivos estão localizados na `/etc/mobile/groups` pasta.
 
-Por exemplo, a página raiz do site de mídia Geometrixx é `/content/geometrixx-media`. O `/content/geometrixx-media/jcr:content` nó inclui a seguinte propriedade:
+Por exemplo, a página raiz do site de Geometrixx Media é `/content/geometrixx-media`. O `/content/geometrixx-media/jcr:content` nó inclui a seguinte propriedade:
 
 * Nome: `cq:deviceGroups`
 * Tipo: `String[]`
@@ -286,11 +286,11 @@ Quando a página é renderizada, Picturefull.js insere um `img` elemento como o 
 </div>
 ```
 
-Em uma página do AEM, o valor do `data-src` atributo é o caminho para um recurso no repositório.
+Em uma página AEM, o valor do `data-src` atributo é o caminho para um recurso no repositório.
 
-### Implementação de imagens adaptáveis no AEM {#implementing-adaptive-images-in-aem}
+### Implementação de imagens adaptativas em AEM {#implementing-adaptive-images-in-aem}
 
-Para implementar imagens adaptáveis em seu aplicativo AEM, é necessário adicionar as bibliotecas de javascript necessárias e incluir a marcação HTML necessária em suas páginas.
+Para implementar imagens adaptáveis no aplicativo AEM, é necessário adicionar as bibliotecas JavaScript necessárias e incluir a marcação HTML necessária nas páginas.
 
 **Bibliotecas**
 
@@ -305,7 +305,7 @@ Obtenha as seguintes bibliotecas de javascript e as inclua em uma pasta da bibli
 
 **HTML**
 
-Crie um componente que gera os elementos div necessários que o código picturefill.js espera. Em uma página do AEM, o valor do atributo data-src é o caminho para um recurso no repositório. Por exemplo, um componente de página pode codificar os query de mídia e os caminhos associados para execuções de imagem no DAM. Ou crie um componente de Imagem personalizado que permita aos autores selecionar representações de imagem ou especificar opções de renderização de tempo de execução.
+Crie um componente que gera os elementos div necessários que o código picturefill.js espera. Em uma página AEM, o valor do atributo data-src é o caminho para um recurso no repositório. Por exemplo, um componente de página pode codificar os query de mídia e os caminhos associados para execuções de imagem no DAM. Ou crie um componente de Imagem personalizado que permita aos autores selecionar representações de imagem ou especificar opções de renderização de tempo de execução.
 
 O exemplo de HTML a seguir seleciona a partir de 2 execuções de DAM da mesma imagem.
 
@@ -329,9 +329,9 @@ O exemplo de HTML a seguir seleciona a partir de 2 execuções de DAM da mesma i
 A seção subsequente fornece detalhes sobre esse componente.
 
 
-### Compreensão da renderização de imagem no AEM {#understanding-image-rendering-in-aem}
+### Como entender a renderização de imagem em AEM {#understanding-image-rendering-in-aem}
 
-Para personalizar a renderização da imagem, você deve entender a implementação padrão de renderização de imagem estática do AEM. O AEM fornece o componente de Imagem e um servlet de renderização de imagem que trabalham juntos para renderizar imagens para a página da Web. A seguinte sequência de eventos ocorre quando o componente de Imagem é incluído no sistema de parágrafo da página:
+Para personalizar a renderização da imagem, você deve entender a implementação padrão AEM de renderização de imagem estática. AEM fornece o componente de Imagem e um servlet de renderização de imagem que trabalham juntos para renderizar imagens para a página da Web. A seguinte sequência de eventos ocorre quando o componente de Imagem é incluído no sistema de parágrafo da página:
 
 1. Criação: Os autores editam o componente de Imagem para especificar o arquivo de imagem a ser incluído em uma página HTML. O caminho do arquivo é armazenado como um valor de propriedade do nó do componente de Imagem.
 1. Solicitação de página: O JSP do componente de página gera o código HTML. O JSP do componente de Imagem gera e adiciona um elemento img à página.
@@ -377,7 +377,7 @@ O servlet que processa a solicitação de imagem precisa executar as seguintes t
 
 **Soluções disponíveis**
 
-O AEM instala as seguintes implementações que você pode usar ou estender.
+AEM instala as seguintes implementações que você pode usar ou estender.
 
 * O componente básico da Imagem adaptativa que gera query de mídia e solicitações HTTP para o Servlet do componente de imagem adaptativa que dimensiona as imagens.
 * O pacote Geometrixx Commons instala os servlets de amostra do Servlet de modificação de referência de imagem que alteram a resolução da imagem.
@@ -475,9 +475,9 @@ Os valores numéricos são 0,4, 0,82 e 1,0, respectivamente.
 
 **Alteração das larguras suportadas padrão**
 
-Use o Console da Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) ou um nó sling:OsgiConfig para configurar as larguras compatíveis do Servlet do Componente de Imagem Adaptável do Adobe CQ.
+Use o Console da Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) ou um nó sling:OsgiConfig para configurar as larguras compatíveis do Servlet do Componente de Imagem Adaptável Adobe CQ.
 
-Para obter informações sobre como configurar os serviços AEM, consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md).
+Para obter informações sobre como configurar AEM serviços, consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md).
 
 <table> 
  <tbody> 
@@ -488,7 +488,7 @@ Para obter informações sobre como configurar os serviços AEM, consulte [Confi
   </tr> 
   <tr> 
    <th>Nome do serviço ou do nó</th> 
-   <td>O nome do serviço na guia Configuração é Servlet do componente de imagem adaptável do Adobe CQ</td> 
+   <td>O nome do serviço na guia Configuração é Servlet do componente de imagem adaptável Adobe CQ</td> 
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td> 
   </tr> 
   <tr> 
@@ -552,7 +552,7 @@ A `AdaptiveImageComponentServlet` classe substitui o `createLayer` método. O m�
 
 A classe AdaptiveImageComponentServlet também substitui o método writeLayer. Este método aplica a qualidade JPEG à imagem.
 
-### Servlet de modificação de referência de imagem (Geometrixx Common) {#image-reference-modification-servlet-geometrixx-common}
+### Servlet de modificação de referência de imagem (Geometrixx comum) {#image-reference-modification-servlet-geometrixx-common}
 
 O Servlet de modificação de referência de imagem de amostra gera atributos de tamanho para o elemento img para dimensionar uma imagem na página da Web.
 
@@ -664,7 +664,7 @@ A `ImageReferenceModificationServlet` classe substitui o `createLayer` método e
 
 ## Desenvolvimento de uma grade fluida {#developing-a-fluid-grid}
 
-O AEM permite que você implemente grades fluidas com eficiência. Esta página explica como você pode integrar sua grade fluida ou uma implementação de grade existente (como o [Bootstrap](https://twitter.github.com/bootstrap/)) no aplicativo AEM.
+AEM permite que você implemente grades fluidas com eficiência e eficiência. Esta página explica como você pode integrar sua grade fluida ou uma implementação de grade existente (como o [Bootstrap](https://twitter.github.com/bootstrap/)) no aplicativo AEM.
 
 Se você não estiver familiarizado com as grades fluidas, consulte a seção [Introdução às grades](/help/sites-developing/responsive.md#developing-a-fluid-grid) fluidas na parte inferior desta página. Esta introdução fornece uma visão geral das grades fluidas e orientações para a sua concepção.
 
@@ -715,7 +715,7 @@ O exemplo a seguir de CSS é um subconjunto desses estilos. Esse subconjunto foc
 
 >[!NOTE]
 >
->A amostra de Mídia Geometrixx integra a estrutura javascript do [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) em sua implementação de grade fluida. A estrutura do Bootstrap fornece o arquivo bootstrap.css.
+>A amostra de Geometrixx Media integra a estrutura javascript do [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) em sua implementação de grade fluida. A estrutura do Bootstrap fornece o arquivo bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -747,7 +747,7 @@ O exemplo a seguir de CSS é um subconjunto desses estilos. Esse subconjunto foc
 
 #### Reposicionamento do conteúdo na grade do componente Página {#repositioning-content-in-the-page-component-grid}
 
-As páginas do aplicativo Geometrixx Media de amostra distribuem linhas de blocos de conteúdo horizontalmente em visualizações amplas. Em visualizações menores, os mesmos blocos são distribuídos verticalmente. O exemplo a seguir CSS mostra os estilos que implementam esse comportamento para o código HTML gerado pelo componente home page de mídia:
+As páginas do aplicativo de exemplo de Geometrixx Media distribuem linhas de blocos de conteúdo horizontalmente em visualizações largas. Em visualizações menores, os mesmos blocos são distribuídos verticalmente. O exemplo a seguir CSS mostra os estilos que implementam esse comportamento para o código HTML gerado pelo componente home page de mídia:
 
 * O CSS padrão para a página de boas-vindas de mídia atribui o `float:left` estilo para `span*` as classes que estão dentro das `row-fluid` classes.
 
