@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 69%
 
 ---
 
@@ -34,7 +37,7 @@ O conteúdo pode ser sincronizado com uma entrega no Adobe Campaign. As instruç
 
 Depois de configurar o AEM e o Adobe Campaign, é possível criar conteúdo de email diretamente no AEM e processá-lo no Adobe Campaign.
 
-Ao criar conteúdo do Adobe Campaign no AEM, você deve vincular-se a um serviço do Adobe Campaign antes de editar o conteúdo para acessar toda a funcionalidade.
+Ao criar conteúdo Adobe Campaign no AEM, é necessário vincular a um serviço Adobe Campaign antes de editar o conteúdo para acessar toda a funcionalidade.
 
 Há dois casos possíveis:
 
@@ -63,6 +66,7 @@ As instruções detalhadas estão descritas neste documento.
 
    * **Email do Adobe Campaign (AC 6.1)**: permite adicionar conteúdo a um modelo predefinido antes de enviá-lo ao Adobe Campaign 6.1 para entrega.
    * **Email do Adobe Campaign (ACS)**: permite adicionar conteúdo a um modelo predefinido antes de enviá-lo ao Adobe Campaign Standard para entrega.
+
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
 1. Click **Create** to create your email or newsletter.
@@ -76,7 +80,7 @@ Além disso, também pode ser necessário selecionar o modelo do Adobe Campaign,
 1. Select the **Page** tab in the sidekick, then select **Page properties.**
 1. In the **Cloud services** tab in the pop-up window, select **Add Service** to add the Adobe Campaign service and click **OK**.
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 1. Selecione a configuração que corresponde à instância do Adobe Campaign na lista suspensa e clique em **Ok**.
 
@@ -112,8 +116,8 @@ Além disso, também pode ser necessário selecionar o modelo do Adobe Campaign,
 
 Ao editar o conteúdo, é possível inserir:
 
-* Campos de contexto do Adobe Campaign. Esses são campos que você pode inserir no texto que serão adaptados de acordo com os dados do destinatário (por exemplo, nome, sobrenome ou quaisquer dados da dimensão de destino).
-* Blocos de personalização do Adobe Campaign. São blocos de conteúdo predefinido que não estão relacionados aos dados do destinatário, como um logotipo de marca, ou link para uma página espelhada.
+* Campos de contexto do Adobe Campaign. Esses são campos que você pode inserir no texto que serão adaptados de acordo com os dados do recipient (por exemplo, nome, sobrenome ou quaisquer dados da dimensão do público alvo).
+* Blocos de personalização do Adobe Campaign. Esses são blocos de conteúdo predefinido que não estão relacionados aos dados do recipient, como o logotipo de uma marca ou o link para um mirror page.
 
 Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) para obter uma descrição completa dos componentes de campanha.
 
@@ -121,6 +125,7 @@ Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classi
 >
 >* Somente os campos da dimensão de direcionamento de **Perfis** do Adobe Campaign são considerados.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. É possível acessá-los diretamente do email ao editar.
+
 >
 
 
@@ -151,7 +156,7 @@ Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classi
 1. Abra o boletim informativo que deseja visualizar e clique em Visualizar (lupa) para encolher o sidekick.
 1. Clique em um dos ícones de cliente de email para visualizar seu boletim informativo em cada cliente de email.
 
-   ![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-101](assets/chlimage_1-181.png)
 
 1. Expanda o sidekick para começar a editar novamente.
 
@@ -175,7 +180,7 @@ No Adobe Campaign Standard:
 
 No Adobe Campaign 6.1:
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 >[!NOTE]
 >
