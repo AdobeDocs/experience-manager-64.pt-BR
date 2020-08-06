@@ -32,7 +32,7 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Utilitários PDF.
 
 [Start rápido (modo SOAP): Como limpar documentos PDF](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
