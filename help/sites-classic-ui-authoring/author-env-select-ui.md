@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 59%
 
 ---
 
 
 # Selecionar sua interface do usuário{#selecting-your-ui}
 
-Como a interface habilitada para toque substitui a interface clássica, o usuário ou o administrador da instância do AEM deve tomar uma decisão ativa para continuar usando a interface clássica. Como a interface clássica não é mais mantida, não há como o usuário de criação simplesmente alternar da interface clássica para o equivalente na interface habilitada para toque.
+Como a interface habilitada para toque substitui a interface clássica, o usuário ou o administrador da instância AEM deve tomar uma decisão ativa para continuar usando a interface clássica. Como a interface clássica não é mais mantida, não há como o usuário de criação simplesmente alternar da interface clássica para o equivalente na interface habilitada para toque.
 
 Para a praticidade dos usuários de criação, a interface do usuário habilitada para toque permite alternar para a interface do usuário clássica quando necessário. Consulte a documentação de criação padrão [Selecionar sua interface do usuário](/help/sites-authoring/select-ui.md) para obter detalhes.
 
