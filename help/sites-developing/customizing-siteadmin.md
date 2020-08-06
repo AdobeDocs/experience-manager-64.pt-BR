@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
 
 # Personalização do console Sites (Interface clássica){#customizing-the-websites-console-classic-ui}
 
-## Adicionar uma coluna personalizada ao console Sites (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
+## Adicionando uma coluna personalizada ao console Sites (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
 O console Administração de sites pode ser estendido para exibir colunas personalizadas. O console é criado com base em um objeto JSON que pode ser estendido pela criação de um serviço OSGI que implementa a `ListInfoProvider` interface. Esse serviço modifica o objeto JSON enviado para o cliente para criar o console.
 
@@ -33,6 +36,7 @@ Este tutorial passo a passo explica como exibir uma nova coluna no console Admin
 >
 >* o console Ativos digitais
 >* o console Comunidade
+
 >
 
 
@@ -47,14 +51,14 @@ A `ListInfoProvider` interface define dois métodos:
 Os argumentos para ambos os métodos são:
 
 * `request`, o objeto de solicitação Sling HTTP associado,
-* `info`, o objeto JSON a ser atualizado, que é, respectivamente, a lista global ou o item da lista atual,
+* `info`, o objeto JSON a ser atualizado, que é respectivamente a lista global ou o item de lista atual,
 * `resource`, um recurso Sling.
 
 A implementação de amostra abaixo:
 
-* Adiciona uma propriedade *estrelada* para cada item, que é `true` se o nome da página começar com um *e*, e `false` assim por diante.
+* Adiciona uma propriedade *estrelada* para cada item, que é `true` se o nome da página for start com um *e*, e `false` assim por diante.
 
-* Adiciona uma propriedade *starredCount* , que é global para a lista e contém o número de itens de lista exibidos.
+* Adiciona uma propriedade *starredCount* , que é global para a lista e contém o número de itens de lista estrelados.
 
 Para criar o serviço OSGI:
 
@@ -106,9 +110,10 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 >[!CAUTION]
 >
->* Sua implementação deve decidir, com base na solicitação e/ou recurso fornecido, se deve ou não adicionar as informações ao objeto JSON.
+>* Sua implementação deve decidir, com base na solicitação e/ou no recurso fornecido, se deve ou não adicionar as informações ao objeto JSON.
 >* Se sua `ListInfoProvider` implementação definir uma propriedade que já existe no objeto response, seu valor será substituído pelo valor fornecido.\
    >  Você pode usar a classificação [de](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) serviço para gerenciar a ordem de execução de várias `ListInfoProvider` implementações.
+
 >
 
 
@@ -117,13 +122,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Quando você abre o console Administração de sites e navega pelo site, o navegador emite uma chamada ajax para obter o objeto JSON usado para criar o console. Por exemplo, quando você navega para a `/content/geometrixx` pasta, a seguinte solicitação é enviada ao servidor AEM para criar o console:
 
-[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Para verificar se o novo serviço está em execução após ter implantado o pacote que o contém:
 
 1. Aponte seu navegador para o seguinte URL:
 
-   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. A resposta deve exibir as novas propriedades da seguinte maneira:
 
@@ -131,7 +136,7 @@ Para verificar se o novo serviço está em execução após ter implantado o pac
 
 ### Exibição da nova coluna {#displaying-the-new-column}
 
-A última etapa consiste em adaptar a estrutura de nós do console Administração de sites para exibir a nova propriedade de todas as páginas do Geometrixx sobrepondo `/libs/wcm/core/content/siteadmin`. Proceda do seguinte modo:
+A última etapa consiste em adaptar a estrutura de nós do console Administração de sites para exibir a nova propriedade de todas as páginas de Geometrixx sobrepondo `/libs/wcm/core/content/siteadmin`. Proceda do seguinte modo:
 
 1. No CRXDE Lite, crie a estrutura de nós `/apps/wcm/core/content` com nós do tipo `sling:Folder` para refletir a estrutura `/libs/wcm/core/content`.
 
@@ -158,13 +163,13 @@ A última etapa consiste em adaptar a estrutura de nós do console Administraç�
    * **cabeçalho**: `Starred` do tipo String
    * **xtype**: `gridcolumn` do tipo String
 
-1. (opcional) Solte as colunas que não deseja exibir em `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (opcional) Solte as colunas nas quais você não deseja exibir `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` é um caminho vaidoso que, como padrão, aponta para `/libs/wcm/core/content/siteadmin`.
 
    Para redirecionar isso para sua versão do siteadmin, `/apps/wcm/core/content/siteadmin` defina a propriedade `sling:vanityOrder` para ter um valor superior ao definido em `/libs/wcm/core/content/siteadmin`. O valor padrão é 300, portanto qualquer valor maior é adequado.
 
-1. Acesse o console Administração de sites e navegue até o site Geometrixx:
+1. Vá para o console Administração de sites e navegue até o site do Geometrixx:
 
    [http://localhost:4502/siteadmin#/content/geometrixx](http://localhost:4502/siteadmin#/content/geometrixx).
 
