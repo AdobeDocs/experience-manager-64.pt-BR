@@ -1,6 +1,6 @@
 ---
-title: Tratamento de solicitações GDPR para a AEM Foundation
-seo-title: Tratamento de solicitações GDPR para a AEM Foundation
+title: Tratamento de Solicitações de RGPD para a Fundação AEM
+seo-title: Tratamento de Solicitações de RGPD para a Fundação AEM
 description: 'null'
 seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
@@ -8,21 +8,24 @@ contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 6%
 
 ---
 
 
-# Tratamento de solicitações GDPR para a AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Tratamento de Solicitações de RGPD para a Fundação AEM{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
 >O RGPD é utilizado como exemplo nas seções abaixo, mas os detalhes abrangidos são aplicáveis a todas as normas de proteção de dados e privacidade; como o RGPD, o CCPA, etc.
 
-## Suporte a GDPR do AEM Foundation {#aem-foundation-gdpr-support}
+## Suporte a GDPR da AEM {#aem-foundation-gdpr-support}
 
-No nível do AEM Foundation, os Dados pessoais armazenados são o Perfil do usuário. Portanto, as informações neste artigo tratam principalmente de como acessar e excluir perfis de usuário, para atender às solicitações de acesso e exclusão do RGPD, respectivamente.
+No nível AEM Foundation, os Dados Pessoais armazenados são o Perfil Usuário. Portanto, as informações neste artigo tratam principalmente de como acessar e excluir perfis de usuários, para atender às solicitações de acesso e exclusão do RGPD, respectivamente.
 
-## Acessar um perfil de usuário {#accessing-a-user-profile}
+## Acessar um Perfil de usuário {#accessing-a-user-profile}
 
 ### Etapas manuais {#manual-steps}
 
@@ -40,7 +43,7 @@ No nível do AEM Foundation, os Dados pessoais armazenados são o Perfil do usu�
 
 ### API HTTP {#http-api}
 
-Conforme mencionado, a Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Existem vários tipos de APIs que você pode usar:
+Como mencionado, o Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Existem vários tipos de APIs que você pode usar:
 
 **API UserProperties**
 
@@ -69,7 +72,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Desabilitando um usuário e excluindo os perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
+## Desabilitar um usuário e Excluir os Perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
 
 ### Desativar usuário {#disable-user}
 
@@ -88,9 +91,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![desabilitador](assets/disableduser.png)
 
-### Excluir informações de perfil do usuário {#delete-user-profile-information}
+### Excluir informações do Perfil do usuário {#delete-user-profile-information}
 
-1. Efetue logon no CRXDE Lite e, em seguida, pesquise pelo `[!UICONTROL userId]`:
+1. Faça logon no CRXDE Lite e, em seguida, procure o `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -98,10 +101,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Exclua os nós de perfil e todos os seus filhos. Há dois formatos para os nós de perfil, dependendo da versão do AEM:
+1. Exclua os nós do perfil e todos os seus filhos. Há dois formatos para os nós de perfil, dependendo da versão AEM:
 
    1. O perfil privado padrão em `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, para novos perfis criados com o AEM 6.4.
+   1. `[!UICONTROL /profiles]`, para novos perfis criados usando o AEM 6.4.
+
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### API HTTP {#http-api-1}
@@ -125,7 +129,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Excluindo perfis de usuário*
 
-Usando o caminho do nó da propriedade home da carga JSON retornada do comando descoberta de conta e os locais conhecidos do nó do perfil de caixa:
+Usando o caminho do nó da propriedade home da carga JSON retornada do comando descoberta de conta e os locais conhecidos do nó do perfil out da caixa:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
