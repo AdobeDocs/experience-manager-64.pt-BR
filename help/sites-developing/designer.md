@@ -1,8 +1,8 @@
 ---
 title: Designs e o Designer
 seo-title: Designs e o Designer
-description: Será necessário criar um design para seu site e no AEM, usando o Designer
-seo-description: Será necessário criar um design para seu site e no AEM, usando o Designer
+description: Você precisará criar um design para seu site e, no AEM, usará o Designer
+seo-description: Você precisará criar um design para seu site e, no AEM, usará o Designer
 uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
 
 >[!CAUTION]
 >
->Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda aproveitar as tecnologias AEM mais recentes para seus sites, conforme descrito em detalhes no artigo [Introdução ao desenvolvimento de sites](/help/sites-developing/getting-started.md)do AEM.
+>Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda aproveitar as tecnologias AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
 
-Você precisará criar um design para seu site e no AEM, usando o Designer.
+Você precisará criar um design para seu site e, no AEM, usará o Designer.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ Seu design pode ser definido na seção **designs** da guia **Ferramentas** :
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
-Aqui você pode criar a estrutura necessária para armazenar o design e, em seguida, fazer upload das folhas de estilos e imagens em cascata necessárias.
+Aqui, você pode criar a estrutura necessária para armazenar o design e, em seguida, fazer upload das folhas de estilos e imagens em cascata necessárias.
 
 Os designs são armazenados em `/etc/designs`. O caminho para o design a ser usado para um site é especificado usando a `cq:designPath` propriedade do `jcr:content` nó.
 
@@ -47,11 +50,11 @@ Os designs são armazenados em `/etc/designs`. O caminho para o design a ser usa
 
 Para realizar seu design, você precisará:
 
-**CSS** - As folhas de estilos em cascata definem os formatos de áreas específicas nas páginas.
+**CSS** - As folhas de estilos em cascata definem os formatos de áreas específicas em suas páginas.
 
 **Imagens** - quaisquer imagens que você usa para recursos como planos de fundo e botões.
 
-### Considerações ao criar seu site {#considerations-when-designing-your-website}
+### Considerações ao projetar seu site {#considerations-when-designing-your-website}
 
 Ao desenvolver um site, é altamente recomendável armazenar imagens e arquivos CSS em `/etc/design/<project>` para que você possa fazer referência aos recursos com base no design atual, como descrito pelo seguinte trecho.
 
@@ -59,7 +62,7 @@ Ao desenvolver um site, é altamente recomendável armazenar imagens e arquivos 
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
 ```
 
-O exemplo anterior oferece vários benefícios:
+O exemplo anterior oferta vários benefícios:
 
 * Os componentes podem ter uma aparência diferente com base em cada site usando um caminho de design diferente.
 * O redesign do site pode ser feito simplesmente apontando o caminho do design para um nó diferente na raiz do site de `design/v1` para `design/v2.`
