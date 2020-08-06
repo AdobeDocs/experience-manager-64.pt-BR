@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '1430'
+ht-degree: 0%
 
 ---
 
@@ -19,18 +22,18 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Consulte as diretrizes a seguir para desenvolver Content Sync Handlers:
 
 * Os manipuladores devem implementar *com.day.cq.contentsync.handler.ContentUpdateHandler* (diretamente ou estendendo uma classe que o faça)
 * Os manipuladores podem estender *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* O manipulador só deve relatar true se tiver atualizado o cache do ContentSync. O relatório falso de true permitirá que o AEM crie uma atualização.
-* O manipulador só deve atualizar o cache se o conteúdo realmente tiver sido alterado. Não grave no cache se um branco não for necessário e evite uma criação desnecessária de atualização.
+* O manipulador só deve relatar true se tiver atualizado o cache do ContentSync. Falsamente relatórios true permitirá AEM criar uma atualização.
+* O manipulador só deve atualizar o cache se o conteúdo realmente tiver sido alterado. Não grave no cache se um branco não for necessário e evite a criação de uma atualização desnecessária.
 
 ## Manipuladores fora da caixa {#out-of-the-box-handlers}
 
-A seguir estão listados os manipuladores de aplicativos prontos para uso:
+Os seguintes listas prontos para uso do aplicativo:
 
 **mobileapppages** Renderiza páginas de aplicativo.
 
@@ -60,12 +63,12 @@ A seguir estão listados os manipuladores de aplicativos prontos para uso:
 
 **mobilecontentlist** Lista o conteúdo do zip ContentSync. Isso é usado pelo lado do cliente js no dispositivo para fazer a cópia de arquivo inicial necessária para aplicativos AEM.
 
-Esse manipulador deve ser adicionado a qualquer configuração ContentSync dos aplicativos AEM.
+Esse manipulador deve ser adicionado a qualquer configuração ContentSync AEM aplicativos.
 
 * ***type - String - mobilecontentlisted***
 * ***path*** - String - manter vazio, deve estar presente para ser visto como um manipulador válido, mas o caminho é inferido como o cache ContentSync atual. Esse valor é ignorado.
-* ***targetRootDirectory *-**String - o prefixo a ser adicionado aos caminhos como uma raiz de destino para a atualização de conteúdo deste manipulador.
-* ***pedido - Longo *-**pedido para que o ContentSync execute este manipulador. Esse número deve ser definido como maior que todos os outros manipuladores, como 100. Ela deve ser executada após manipuladores de conteúdo tradicionais.
+* ***targetRootDirectory *-**String - o prefixo a ser adicionado aos caminhos como uma raiz de público alvo para a atualização de conteúdo deste manipulador.
+* ***pedido - Longo *-**pedido para que o ContentSync extraia este manipulador. Esse número deve ser definido como maior que todos os outros manipuladores, como 100. Ela deve ser executada após manipuladores de conteúdo tradicionais.
 
 ```xml
 {
@@ -85,13 +88,13 @@ Esse manipulador deve ser adicionado a qualquer configuração ContentSync dos a
 }
 ```
 
-**mobilecontentpackageslist** Lista o pacote de conteúdo AEM em um determinado aplicativo, bem como o serverURL para o qual fazer solicitações de atualização. Isso é usado nas js do lado do cliente no dispositivo para solicitar atualizações de conteúdo
+**mobilecontentpackageslist** Lista o pacote de conteúdo AEM em um determinado aplicativo, bem como o serverURL para fazer solicitações de atualização. Isso é usado nas js do lado do cliente no dispositivo para solicitar atualizações de conteúdo
 
-O manipulador deve ser usado na configuração ContentSync do AEM App Shell (nó com pge-type=app-instance)
+O manipulador deve ser usado AEM App Shell ContentSync Config (nó com pge-type=app-instance)
 
 * ***type - String - mobilecontentpackageslist***
 * ***path **-**String*** - Caminho para um shell de aplicativo (nó com pge-type=app-instance).
-* ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de destino para a atualização de conteúdo deste manipulador.
+* ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de público alvo para a atualização de conteúdo deste manipulador.
 * ***order - Long *- Order for ContentSync (Longo **pedido para que o ContentSync execute este manipulador). Esse número deve ser definido como maior que todos os outros manipuladores, como 100. Ela deve ser executada após manipuladores de conteúdo tradicionais.
 
 >[!NOTE]
@@ -122,28 +125,28 @@ O manipulador deve ser usado na configuração ContentSync do AEM App Shell (nó
 
 **widgetconfig** Inclui um config.xml atualizado que mescla todas as edições feitas através do Centro de comando com um config.xml fornecido. Se esse manipulador não estiver incluído, nenhum detalhe de aplicativo que seja alterado pela interface de Administração não será incluído no cache.
 
-Esse manipulador deve ser usado em uma configuração ContentSync da AEM App Shell (nó com pge-type=[app-instance]).
+Esse manipulador deve ser usado em uma configuração ContentSync da App Shell AEM (nó com pge-type=[app-instance]).
 
 * ***type - String* - **widgetconfig
 * ***path **-**String*** - Caminho para qualquer nó filho do shell do aplicativo (nó com pge-type=[app-instance]).
-* ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de destino para a atualização de conteúdo deste manipulador.
+* ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de público alvo para a atualização de conteúdo deste manipulador.
 * ***targetIconDirectory - String*** - o diretório para colocar os ícones do aplicativo
 
 **mobileADBMobileConfigJSON** Inclua o arquivo ADBMobileConfig.JSON se o serviço de nuvem AMS tiver sido configurado.
 
 Isso é usado em tempo de compilação para configurar o plug-in AMS para suporte analítico.
 
-O manipulador deve ser usado na configuração ContentSync do AEM App Shell (nó com pge-type=app-instance)
+O manipulador deve ser usado AEM App Shell ContentSync Config (nó com pge-type=app-instance)
 
 * ***type - String*** - mobileADBMobileConfigJSON
 * ***path - String*** - Caminho para um shell de aplicativo (nó com pge-type=app-instance ou um RT que estende /libs/mobileapps/core/components/instance)
-* ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de destino para a atualização de conteúdo deste manipulador
+* ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de público alvo para a atualização de conteúdo deste manipulador
 
 **notificationsconfig** Extrai configurações de notificações necessárias no dispositivo. As propriedades são extraídas da respectiva configuração do serviço de nuvem do serviço de push associado ao aplicativo.
 
-As propriedades que não são AEM no nó jcr:content do serviço de nuvem são extraídas e adicionadas ao arquivo JSON do serviço de **página-notifications-config.json** para inclusão na raiz www do conteúdo do aplicativo.
+As propriedades que não são AEM no nó jcr:content do serviço de nuvem são extraídas e adicionadas ao arquivo JSON **page-notifications-config.json** para inclusão na raiz www do conteúdo do aplicativo.
 
-As propriedades do AEM são aquelas que têm o nome espaçado com &quot;cq&quot;, &quot;sling&quot; ou &quot;jcr&quot;. Outras propriedades podem ser excluídas usando a propriedade &quot;excludeProperties&quot; no nó de configuração de sincronização de conteúdo.
+AEM propriedades são aquelas que têm o mesmo nome espaçado com &quot;cq&quot;, &quot;sling&quot; ou &quot;jcr&quot;. Outras propriedades podem ser excluídas usando a propriedade &quot;excludeProperties&quot; no nó de configuração de sincronização de conteúdo.
 
 * ***type - String*** - notifications - config
 * ***excludeProperties - String[]*** - propriedades a serem excluídas
@@ -157,9 +160,9 @@ As propriedades do AEM são aquelas que têm o nome espaçado com &quot;cq&quot;
    * para um Pacote de conteúdo (usará sua propriedade phonegap-exportTemplate para localizar sua configuração ContentSync)
    * para um recurso móvel (o app-content&#39;s será encontrado nesse recurso e, se esses pacotes de conteúdo tiverem uma propriedade pge-includeInBuild que for verdadeira, o phonegap-exportTemplate será usado para encontrar sua configuração ContentSync)
 
-* ***autoCreateFirstUpdateBeforeImport - Boolean*** - se verdadeiro, crie uma **atualização** inicial na configuração de destino antes de importar se já não existir uma vez
+* ***autoCreateFirstUpdateBeforeImport - Boolean*** - se verdadeiro, crie uma **atualização** inicial na configuração do público alvo antes de importar se já não existir uma vez
 
-* ***autoFillBeforeImport - Boolean*** - se verdadeiro, atualize/preencha a configuração de destino antes de importar
+* ***autoFillBeforeImport - Boolean*** - se verdadeiro, atualize/preencha a configuração do público alvo antes de importar
 * ***configSuffix - String*** - uma string a ser anexada ao caminho indicado na propriedade &quot;phonegap-exportTemplate&quot; de app-content. Isso pode ser usado para distinguir diferentes modelos de exportação. Por exemplo, essa propriedade pode ser definida como **&quot;-dev&quot;** para indicar que *&quot;/.../.../appconfig-dev&quot;* deve ser usado (em oposição a *&quot;/.../.../appconfig&quot;*).
 
 **app-assets** Inclui todos os ativos associados a uma instância do aplicativo. Esse manipulador incluirá todos os ativos encontrados no caminho especificado junto com quaisquer ativos referenciados pela propriedade appAssetPath de uma instância do aplicativo.
@@ -168,16 +171,16 @@ As propriedades do AEM são aquelas que têm o nome espaçado com &quot;cq&quot;
 
 * ***path **-**String*** - caminho para um local em uma instância do aplicativo onde os ativos do aplicativo são armazenados
 
-**mobileappoffers** Um novo manipulador de sincronização de conteúdo foi introduzido para o caso de uso Personalização para renderizar o conteúdo direcionado. O manipulador &#39;mobileappoffers&#39; sabe como renderizar as ofertas de destino associadas que foram criadas pelo autor do conteúdo. O manipulador mobileappoffers estende o manipulador de atualização de páginas abstratas, portanto, muitas das propriedades são semelhantes. Os detalhes do manipulador mobileappoffers têm as seguintes propriedades.
+**mobileappoffers** Um novo manipulador de sincronização de conteúdo foi introduzido para o caso de uso de Personalização para renderizar o conteúdo direcionado. O manipulador &#39;mobileappoffers&#39; sabe como renderizar as ofertas de público alvo associadas que foram criadas pelo autor do conteúdo. O manipulador mobileappoffers estende o manipulador de atualização de páginas abstratas, portanto, muitas das propriedades são semelhantes. Os detalhes do manipulador mobileappoffers têm as seguintes propriedades.
 
 O manipulador mobileappsoffers estende o manipulador mobileappspages e adiciona as seguintes propriedades:
 
 * ***locationRoot - String*** - especifique o local do aplicativo móvel
 * ***includePageTypes - String*** - padrões para suporte a cq/personalization/components/teaserpage e cq/personalization/components/offerproxy
 * ***seletor - String*** - deve ser definido como tandor
-* ***path - String***- o caminho para a marca da campanha
+* ***path - String***- o caminho para a marca campanha
 
-**mobileappconfig** O manipulador de sincronização de conteúdo mobileappconfig fornece uma maneira de inserir dados JSON no MobileAppsConfig.json. Para registrar uma classe de provedor, os desenvolvedores adicionarão sua classe MobileAppsInfoProvider à lista de provedores. O manipulador repetirá a lista de MobileAppsInfoProviders e permitirá que o provedor injete dados no arquivo json resultante. A lista de propriedades suportadas por este manipulador é:
+**mobileappconfig** O manipulador de sincronização de conteúdo mobileappconfig fornece uma maneira de inserir dados JSON no MobileAppsConfig.json. Para registrar uma classe de provedor, os desenvolvedores adicionarão sua classe MobileAppsInfoProvider à lista de provedores. O manipulador interagirá na lista de MobileAppsInfoProviders e permitirá que o provedor injete dados no arquivo json resultante. A lista das propriedades suportadas por este manipulador é:
 
 * ***path **-**String*** - o caminho para um nó de instância de aplicativo com pge-type=app-instance ou um RT que estende /libs/mobileapps/core/components/instance
 * ***provedores - String*** `[]` - a lista de MobileAppsInfoProviders totalmente qualificados
@@ -202,7 +205,7 @@ O manipulador mobileappsoffers estende o manipulador mobileappspages e adiciona 
 
 **Registrando** Ativar log de Depuração de ConteúdoSync por meio das configurações de log do OSGI no pacote `com.day.cq.contentsync` Isso permitirá rastrear quais manipuladores executaram e se eles atualizaram o cache e relataram a atualização do cache.
 
-## Additional Resources {#additional-resources}
+## Recursos adicionais {#additional-resources}
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
@@ -211,5 +214,5 @@ Para saber mais sobre as funções e responsabilidades de um Administrador e Des
 
 >[!NOTE]
 >
->Para começar a desenvolver aplicativos do AEM Mobile, clique [aqui](/help/mobile/getting-started-aem-mobile.md).
+>Para começar a desenvolver aplicativos AEM Mobile, clique [aqui](/help/mobile/getting-started-aem-mobile.md).
 
