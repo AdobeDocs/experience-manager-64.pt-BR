@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 12%
 
 ---
 
@@ -23,42 +26,44 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
 ## Tentando sair {#trying-it-out}
 
-1. Edite a página Equipamento do ramo mestre de idioma.
+1. Edite a página Equipamento do ramo principal do idioma.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/pt/equipment.html
 
-1. Observe que o seletor de modo não oferece mais um modo Design. Todas as páginas para We.Retail são baseadas em modelos editáveis e para alterar o design de modelos editáveis, eles devem ser editados no editor de modelos.
+1. Observe que o seletor de modo não oferta mais em um modo Design. Todas as páginas para We.Retail são baseadas em modelos editáveis e para alterar o design de modelos editáveis, eles devem ser editados no editor de modelos.
 1. No menu Informações **da** página, selecione **Editar modelo**.
 1. Agora você está editando o modelo Página principal.
 
-   O modo de estrutura da página permite modificar a estrutura do modelo. Isso inclui, por exemplo, os componentes permitidos no contêiner de layout.
+   O modo de estrutura da página permite modificar a estrutura do modelo. Isso inclui, por exemplo, os componentes permitidos no container de layout.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
-1. Configure as políticas do Contêiner de layout para definir quais componentes são permitidos no contêiner.
+1. Configure as políticas para o Container Layout para definir quais componentes são permitidos no container.
 
    As políticas são o equivalente às configurações de design.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
-1. Na caixa de diálogo de design do contêiner de layout, é possível
+1. Na caixa de diálogo de design do container de layout, é possível
 
-   * Selecione uma política existente ou crie uma nova política para o contêiner
-   * Selecionar quais componentes são permitidos no contêiner
-   * Definir os componentes padrão a serem inseridos quando um ativo for arrastado para o contêiner
+   * Selecione uma política existente ou crie uma nova política para o container
+   * Selecione quais componentes são permitidos no container
+   * Defina os componentes padrão a serem inseridos quando um ativo for arrastado para o container
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
-1. De volta ao editor de modelo, é possível editar a política do componente de texto no contêiner de layout.
+1. De volta ao editor de modelos, você pode editar a política do componente de texto dentro do container de layout.
 
-   Isso permite:
+   Isso permite que você:
 
-   * Selecione uma política existente ou crie uma nova política para o contêiner
+   * Selecione uma política existente ou crie uma nova política para o container
    * Defina os recursos disponíveis para o autor da página ao usar este componente, como
 
       * Fontes de colagem permitidas
       * Opções de formatação
       * Estilos de parágrafo permitidos
       * Caracteres especiais permitidos
+
    Muitos componentes baseados nos componentes principais permitem a configuração de opções no nível do componente por meio dos modelos editáveis, removendo a necessidade de personalização pelos desenvolvedores.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
@@ -69,7 +74,7 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
 ## Mais informações {#more-information}
 
-Para obter mais informações, consulte o documento de criação [Criação de modelos](/help/sites-authoring/templates.md) de página ou o documento do desenvolvedor [Modelos de página - Editável](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
+Para obter mais informações, consulte o documento de criação [Criar modelos](/help/sites-authoring/templates.md) de página ou os [modelos de página do documento do desenvolvedor - Editável](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
 
-Você também pode investigar os componentes [](/help/sites-developing/we-retail-core-components.md)principais. Consulte o documento de criação Componentes [principais para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Desenvolvimento dos componentes [](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) principais para obter uma visão geral técnica.
+Você também pode investigar os componentes [](/help/sites-developing/we-retail-core-components.md)principais. Consulte os Componentes [principais do documento de criação para obter uma visão geral dos recursos dos componentes principais e do documento de desenvolvedor Componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais para [](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) desenvolvimento de  para obter uma visão geral técnica.
 
