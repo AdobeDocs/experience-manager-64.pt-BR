@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
 
 # Alterar a aparência (HBS) {#alter-the-appearance-hbs}
 
-Agora que os componentes do sistema de comentários personalizado no diretório do aplicativo (/apps) estão em vigor, com um resourceSuperType referenciando o sistema de comentários padrão e o Modelo/Exibição personalizado registrado, é possível modificar a implementação.
+Agora que os componentes do sistema de comentários personalizado no diretório do aplicativo (/apps) estão em vigor, com um resourceSuperType referenciando o sistema de comentários padrão e o Modelo/Visualização personalizado registrado, é possível modificar a implementação.
 
 Para uma demonstração simples, um recurso visual, o avatar mostrado pelo usuário conectado que publica um comentário, é removido.
 
@@ -65,9 +68,9 @@ Uma maneira de o fazer é
    * Desmarcar `Only Modified`
    * Botão Selecionar `Activate`
 
-## Exibir Comentário Modificado na Página de Amostra Publicada {#view-modified-comment-on-published-sample-page}
+## Página Comentário modificado da Visualização sobre amostra publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuando com a experiência](extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para exibir a modificação para remover o avatar:
+[Continuando com a experiência](extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para visualização da modificação para remover o avatar:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
