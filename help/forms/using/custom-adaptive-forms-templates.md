@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -18,25 +21,25 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Pré-requisitos {#prerequisites}
 
-* Noções básicas sobre o modelo [de](/help/sites-authoring/templates.md) página do AEM e criação de formulário [adaptável](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Noções básicas sobre AEM modelo [de](/help/sites-authoring/templates.md) página e criação de formulário [adaptável](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
-* Compreensão das bibliotecas do lado do [cliente do AEM](/help/sites-developing/clientlibs.md)
+* Compreensão das bibliotecas AEM lado do [cliente](/help/sites-developing/clientlibs.md)
 
 ## Adaptive form template {#adaptive-form-template}
 
-Um modelo de formulário adaptável é um modelo de página AEM especializado, com determinadas propriedades e estrutura de conteúdo usadas para criar o formulário adaptável. O modelo tem layouts pré-configurados, estilos e estrutura básica de conteúdo inicial.
+Um modelo de formulário adaptável é especializado AEM modelo de página, com determinadas propriedades e estrutura de conteúdo usadas para criar o formulário adaptável. O modelo tem layouts pré-configurados, estilos e estrutura básica de conteúdo inicial.
 
 Após a criação de um formulário, quaisquer alterações na estrutura de conteúdo do modelo original não serão refletidas no formulário.
 
 ## Modelos de formulário adaptável padrão {#default-adaptive-form-templates}
 
-O AEM QuickStart fornece os seguintes modelos de formulário adaptáveis:
+AEM QuickStart fornece os seguintes modelos de formulário adaptáveis:
 
 * Básico: Permite criar um formulário adaptável de várias guias usando um layout de guias à esquerda, onde é possível visitar guias em qualquer ordem aleatória.
-* Básico com o Adobe Sign: Permite criar um formulário com várias guias e assistente. Ele usa um layout de guias à esquerda que permite visitar guias em qualquer ordem. Ele usa os serviços de design da Adobe Document Cloud para assinatura e verificação.
-* Modelo em branco: Permite criar um formulário sem qualquer cabeçalho, rodapé e conteúdo inicial. Você pode adicionar componentes como caixas de texto, botões e imagens. O modelo em branco permite criar um formulário que pode ser [incorporado nas páginas](/help/forms/using/embed-adaptive-form-aem-sites.md)do site do AEM.
+* Básico com Adobe Sign: Permite criar um formulário com várias guias e assistente. Ele usa um layout de guias à esquerda que permite que você visite guias em qualquer ordem. Ele usa os serviços de design da Adobe Document Cloud para assinatura e verificação.
+* Modelo em branco: Permite criar um formulário sem qualquer cabeçalho, rodapé e conteúdo inicial. Você pode adicionar componentes, como caixas de texto, botões e imagens. O modelo em branco permite criar um formulário que pode ser [incorporado AEM páginas](/help/forms/using/embed-adaptive-form-aem-sites.md)do site.
 
-Esses modelos têm a `sling:resourceType` propriedade definida para o componente de página correspondente. O componente de página renderiza a página CQ, contendo o contêiner de formulário adaptável, que por sua vez renderiza o formulário adaptável.
+Esses modelos têm a `sling:resourceType` propriedade definida para o componente de página correspondente. O componente de página renderiza a página CQ, contendo o container de formulário adaptável, que por sua vez renderiza o formulário adaptável.
 
 A tabela a seguir enumera a associação entre modelos e componentes de página:
 
@@ -48,7 +51,7 @@ A tabela a seguir enumera a associação entre modelos e componentes de página:
   </tr> 
   <tr> 
    <td><p>/libs/fd/af/models/surveyTemplate</p> </td> 
-   <td><p>/libs/fd/af/components/page/survey</p> </td> 
+   <td><p>/libs/fd/af/components/page/pesquisa</p> </td> 
   </tr> 
   <tr> 
    <td><p>/libs/fd/af/models/simpleEnrollmentTemplate</p> </td> 
@@ -67,7 +70,7 @@ A tabela a seguir enumera a associação entre modelos e componentes de página:
 
 ## Criação de um modelo de formulário adaptável usando o editor de modelo {#creating-an-adaptive-form-template-using-template-editor}
 
-É possível especificar a estrutura e o conteúdo inicial de um formulário adaptável usando o Editor de modelos. Por exemplo, você deseja que todos os autores de formulários tenham poucas caixas de texto, botões de navegação e um botão Enviar em um formulário de inscrição. É possível criar um modelo que os autores possam usar para criar um formulário consistente com outros formulários de inscrição. O Editor de modelos AEM permite:
+É possível especificar a estrutura e o conteúdo inicial de um formulário adaptável usando o Editor de modelos. Por exemplo, você deseja que todos os autores de formulários tenham poucas caixas de texto, botões de navegação e um botão Enviar em um formulário de inscrição. É possível criar um modelo que os autores possam usar para criar um formulário consistente com outros formulários de inscrição. AEM Editor de modelos permite:
 
 * Adicionar componentes de cabeçalho e rodapé de um formulário na camada de estrutura
 * Forneça o conteúdo inicial do formulário.
@@ -78,7 +81,7 @@ Para obter mais informações, consulte Editor [](/help/forms/using/template-edi
 
 ## Criação de um modelo de formulário adaptável a partir do CRXDE {#creating-an-adaptive-form-template-from-crxde}
 
-Em vez de usar os modelos disponíveis, você pode criar um modelo e usá-lo para criar formulários adaptáveis. Os modelos personalizados baseiam-se em vários componentes de página que fazem referência a contêineres de formulário adaptáveis e elementos de página, como cabeçalho e rodapé.
+Em vez de usar os modelos disponíveis, você pode criar um modelo e usá-lo para criar formulários adaptáveis. Os modelos personalizados baseiam-se em vários componentes de página que fazem referência a container de formulário adaptáveis e elementos de página, como cabeçalho e rodapé.
 
 Você pode criar esses componentes usando o componente de página base para seu site. Como alternativa, você pode estender o componente de página do formulário adaptável que os modelos usam.
 
@@ -95,9 +98,9 @@ Execute as seguintes etapas para criar um modelo personalizado, como simpleEnrol
 
 1. Navegue até o local /apps/mycompany/models/enrollment-template.
 
-1. Modifique as propriedades `jcr:title` e `jcr:description` do `jcr:content` nó para distinguir o modelo do modelo copiado.
+1. Modifique as propriedades `jcr:title` e `jcr:description` do `jcr:content` nó para diferenciar o modelo do modelo copiado.
 
-1. O `jcr:content` nó do modelo modificado contém os componentes `guideContainer` e `guideformtitle` . `guideContainer` é o contêiner que contém o formulário adaptável. O `guideformtitle` componente exibe o nome do aplicativo, a descrição e assim por diante.
+1. O `jcr:content` nó do modelo modificado contém os componentes `guideContainer` e `guideformtitle` . `guideContainer` é o container que contém o formulário adaptável. O `guideformtitle` componente exibe o nome do aplicativo, a descrição e assim por diante.
 
    Em vez de `guideformtitle`, você pode incluir um componente personalizado ou o `parsys` componente. Por exemplo, remova `guideformtitle`e adicione um componente personalizado ou o nó do `parsys` componente. Certifique-se de que a `sling:resourceType` propriedade do componente faça referência ao componente e que o mesmo esteja definido no arquivo da página `component.jsp` .
 
