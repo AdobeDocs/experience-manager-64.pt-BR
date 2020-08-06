@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 translation-type: tm+mt
 source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ A pontuação avançada permite a atribuição de emblemas para identificar memb
 
 Essa diferença se deve ao mecanismo de pontuação usado para calcular as pontuações. O mecanismo básico de pontuação aplica matemática simples. O mecanismo avançado de pontuação é um algoritmo adaptável que recompensa os membros ativos que contribuem com conteúdo valioso e relevante, deduzido pelo processamento de linguagem natural (NLP) de um tópico.
 
-Além da relevância do conteúdo, os algoritmos de pontuação levam em conta as atividades dos membros, como votação e porcentagem de respostas. Embora a pontuação básica os inclua quantitativamente, a pontuação avançada os usa algoricamente.
+Além da relevância do conteúdo, os algoritmos de pontuação levam em conta atividades de membros, como votação e porcentagem de respostas. Embora a pontuação básica os inclua quantitativamente, a pontuação avançada os usa algoricamente.
 
 Portanto, o mecanismo de pontuação avançado requer dados suficientes para tornar a análise significativa. O limite de conquista para se tornar um especialista é constantemente reavaliado à medida que o algoritmo se ajusta continuamente ao volume e à qualidade do conteúdo criado. Há também um conceito de *decaimento* das postagens mais antigas de um membro. Se um membro especialista deixar de participar no assunto em que adquiriu o estatuto de perito, em determinado ponto (ver configuração [do mecanismo de](#configurable-scoring-engine)pontuação) poderá perder o seu estatuto de perito.
 
@@ -42,8 +45,8 @@ As diferenças na configuração das regras de pontuação e marcação são:
 
 * Regras avançadas de identificação:
    * `badgingType` definido como **[!UICONTROL avançado]**
-   * `badgingLevels` definido para o número de especialistas a serem atribuídos
-   * Exige `badgingPaths` matriz de emblemas em vez de pontos de mapeamento de matriz de limites para símbolos
+   * `badgingLevels` definido para o número de níveis de especialistas a serem atribuídos
+   * Exige `badgingPaths` matriz de emblemas em vez de pontos de mapeamento de matriz de limites para emblemas
 
 >[!NOTE]
 >
@@ -55,21 +58,20 @@ O mecanismo de pontuação avançado fornece uma configuração OSGi com parâme
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL Pontuação de pesos]** Para um tópico, especifique o verbo que deve receber a prioridade mais alta ao calcular a pontuação. Um ou mais tópicos podem ser inseridos, mas limitados a **um verbo por tópico**. Consulte [Tópicos e Verbos](implementing-scoring.md#topics-and-verbs).
+* **[!UICONTROL pesos]** de pontuação Para um tópico, especifique o verbo que deve receber a prioridade mais alta ao calcular a pontuação. Um ou mais tópicos podem ser inseridos, mas limitados a **um verbo por tópico**. Consulte [Tópicos e Verbos](implementing-scoring.md#topics-and-verbs).
 
    Digitado como `topic,verb` com a vírgula que escapou. Por exemplo:
 
    `/social/forum/hbs/social/forum\,ADD`
 
-   
-O padrão é definido para o verbo ADD para QnA e componentes do fórum.
+   O padrão é definido para o verbo ADD para QnA e componentes do fórum.
 
 
 * **[!UICONTROL Intervalo de pontuação]**
 
-   O intervalo para pontuações avançadas é definido por esse valor (pontuação máxima possível) e 0 (menor pontuação possível).
+   O intervalo para pontuações avançadas é definido por esse valor (pontuação máxima possível) e 0 (pontuação mais baixa possível).
 
-   O valor padrão é 100 para que o intervalo de pontuação seja de 0 a 100.
+   O valor padrão é 100, de modo que o intervalo de pontuação seja de 0 a 100.
 
 
 * **[!UICONTROL Intervalo de tempo de decadência de entidade]**
@@ -109,7 +111,7 @@ O pacote de pontuação avançado instala uma pasta de configuração que conté
 
 * `/etc/community/scoring/configuration/stopwords`
 
-O algoritmo avançado de pontuação usa a lista de palavras contidas no arquivo de palavras de interrupção para identificar palavras comuns em inglês que são ignoradas durante o processamento do conteúdo.
+O algoritmo avançado de pontuação usa a lista de palavras contida no arquivo de palavras de interrupção para identificar palavras comuns em inglês que são ignoradas durante o processamento do conteúdo.
 
 Não há expectativa de que esse arquivo seja modificado.
 
@@ -119,7 +121,7 @@ Se o arquivo de palavras de interrupção estiver ausente, o mecanismo de pontua
 
 As propriedades avançadas da regra de identificação diferem das propriedades [](implementing-scoring.md#badging-rules)básicas da regra de identificação.
 
-Em vez de associar pontos a uma imagem emblema, basta identificar o número de especialistas permitidos e a imagem do crachá a serem premiados.
+Em vez de associar pontos a uma imagem emblema, basta identificar o número de especialistas permitidos e a imagem do crachá a ser premiada.
 
 ![chlimage_1-262](assets/chlimage_1-262.png)
 
@@ -128,7 +130,7 @@ Em vez de associar pontos a uma imagem emblema, basta identificar o número de e
 | badgingPath | Sequência de caracteres[] | (Obrigatório) Uma string de vários valores de imagens de emblema até o número de badgingLevels. Os caminhos de imagem do crachá devem ser ordenados para que o primeiro seja concedido ao especialista mais alto. Se houver menos emblemas do que o indicado por badgingLevels, o último emblema no storage preencherá o restante do storage. Exemplo de entrada:/etc/community/badging/images/expert-badge/jcr:content/expert.png |
 | badgingLevels | Longo | (Opcional) Especifica os níveis de especialização a serem concedidos. Por exemplo, se houver um especialista e um quase especialista (dois símbolos), então o valor deve ser definido como 2. O badgingLevel deve corresponder ao número de imagens de crachá relacionadas a especialistas listadas para a propriedade badgingPath. O padrão é 1. |
 | badgingType | Sequência de caracteres | (Obrigatório) Identifica o mecanismo de pontuação como &quot;básico&quot; ou &quot;avançado&quot;. Definido como &quot;avançado&quot;; caso contrário, o padrão é &quot;básico&quot;. |
-| regras de pontuação | Sequência de caracteres[] | (Opcional) Uma string de vários valores para restringir a regra de identificação a eventos de pontuação identificados pelas regras de pontuação listadas.Exemplo de entrada:/etc/community/scoring/rules/-comments-scoringPadrão não é restrição. |
+| regras de pontuação | Sequência de caracteres[] | (Opcional) Uma string de vários valores para restringir a regra de identificação a eventos de pontuação identificados pelas regras de pontuação listadas.Exemplo de entrada:/etc/community/scoring/rules/-comments-scoringO padrão não é restrição. |
 
 ## Regras e selo incluídos {#included-rules-and-badge}
 
@@ -142,7 +144,7 @@ Incluído nesta versão beta, há um selo de especialista baseado em recompensa:
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
-Para que o selo de um especialista apareça como recompensa pela atividade, há duas coisas que devem acontecer:
+Para que o selo de um especialista apareça como recompensa pela atividades, há duas coisas que devem acontecer:
 
 * `badges` deve estar habilitado para o recurso, como um fórum ou componente QnA
 * regras avançadas de pontuação e marcação devem ser aplicadas à página (ou ancestral) na qual o componente é colocado
