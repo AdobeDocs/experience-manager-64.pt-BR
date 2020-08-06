@@ -1,6 +1,6 @@
 ---
-title: Extensão do rastreamento de eventos
-seo-title: Extensão do rastreamento de eventos
+title: Extensão do rastreamento de Eventos
+seo-title: Extensão do rastreamento de Eventos
 description: O AEM Analytics permite rastrear a interação do usuário em seu site
 seo-description: O AEM Analytics permite rastrear a interação do usuário em seu site
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
 
-# Extensão do rastreamento de eventos{#extending-event-tracking}
+# Extensão do rastreamento de Eventos{#extending-event-tracking}
 
-O AEM Analytics permite rastrear a interação do usuário em seu site. Como desenvolvedor, talvez seja necessário:
+O AEM Analytics permite que você rastreie a interação do usuário em seu site. Como desenvolvedor, talvez seja necessário:
 
 * Acompanhe como os visitantes estão interagindo com seus componentes. Isso pode ser feito com eventos [personalizados.](#custom-events)
 * [Acesse valores no ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
@@ -58,9 +61,9 @@ Um exemplo pode ser semelhante a:
 </span>
 ```
 
-No carregamento da página, todos os `data-tracking` atributos serão coletados e adicionados ao armazenamento de eventos do ContextHub, onde podem ser mapeados para eventos do Adobe Analytics. Os eventos não mapeados não serão rastreados pelo Adobe Analytics. Consulte [Conexão com o Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obter mais detalhes sobre eventos de mapeamento.
+No carregamento da página, todos os `data-tracking` atributos serão coletados e adicionados à loja de eventos do ContextHub, onde podem ser mapeados para eventos Adobe Analytics. Eventos que não estão mapeados não serão rastreados pelo Adobe Analytics. Consulte [Conectando-se ao Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obter mais detalhes sobre o mapeamento de eventos.
 
-### Acompanhamento de eventos personalizados após o carregamento da página {#tracking-custom-events-after-page-load}
+### Rastreamento de Eventos personalizados após o carregamento da página {#tracking-custom-events-after-page-load}
 
 Para rastrear eventos que ocorrem depois que uma página é carregada (como interações de usuário), use a função `CQ_Analytics.record` JavaScript:
 
@@ -76,7 +79,7 @@ Where
 
 * `componentPath` é um atributo necessário e é recomendável defini-lo como `<%=resource.getResourceType()%>`
 
-Por exemplo, com a seguinte definição, um usuário que clicar no link **Ir para o link superior** fará com que os dois eventos `jumptop` e `headlineclick`, sejam acionados:
+Por exemplo, com a seguinte definição, um usuário que clicar no link **Ir para o início** fará com que os dois eventos `jumptop` e `headlineclick`, sejam disparados:
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">
@@ -92,7 +95,7 @@ Você pode ser notificado sobre alterações de valor em uma loja vinculando uma
 
 A melhor maneira de ser notificado sobre a disponibilidade inicial do ContextHub é usar a `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` função.
 
-**Eventos adicionais para o ContextHub:**
+**eventos adicionais para o ContextHub:**
 
 Todas as lojas prontas:
 
