@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '2183'
+ht-degree: 0%
 
 ---
 
@@ -22,19 +25,19 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 No AEM Communities, no ambiente de publicação, os usuários podem se registrar e editar seus perfis. Considerando as permissões apropriadas, eles também podem
 
 * Criar subcomunidades no site da comunidade (consulte grupos [da](creating-groups.md)comunidade)
-* [Moderar](moderation.md) conteúdo gerado pelo usuário (UGC)
+* [Moderar](moderation.md) o conteúdo gerado pelo usuário (UGC)
 * Estar [ativando contatos de recursos](resources.md)
 * Tenha [o privilégio](#privileged-members-group) de criar entradas para blogs, calendários, QnA e fóruns
 
 Os usuários registrados no ambiente de publicação são geralmente chamados de membros da *comunidade (membros)* para diferenciá-los de *usuários *no ambiente do autor.
 
-As permissões são concedidas atribuindo membros a um dos grupos [de](#publish-group-roles) membros (usuário) criados dinamicamente quando o site da comunidade é [criado](sites-console.md) ou [modificado](sites-console.md#modifying-site-properties) a partir do ambiente do autor. Ao trabalhar a partir do ambiente do autor, os membros ficam visíveis do ambiente de publicação por meio do serviço [de](#tunnel-service)túnel.
+As permissões são concedidas atribuindo membros a um dos grupos [de](#publish-group-roles) membros (usuário) criados dinamicamente quando o site da comunidade é [criado](sites-console.md) ou [modificado](sites-console.md#modifying-site-properties) a partir do ambiente do autor. Ao trabalhar a partir do ambiente do autor, os membros ficam visíveis a partir do ambiente de publicação por meio do serviço [de](#tunnel-service)túnel.
 
-Por padrão, os membros e grupos de membros criados no ambiente de publicação não devem aparecer no ambiente do autor. Os usuários e grupos de usuários criados no ambiente do autor têm a intenção de permanecer no ambiente do autor.
+Por padrão, os membros e grupos de membros criados no ambiente de publicação não devem aparecer no ambiente do autor. Os usuários e grupos de usuários criados no ambiente do autor devem permanecer no ambiente do autor.
 
-Quando os usuários do autor e os membros da publicação vêm da mesma lista de usuários, como os sincronizados do mesmo diretório LDAP, eles não são considerados o mesmo usuário com as mesmas permissões e associação de grupo nos ambientes de autor e publicação. As funções dos membros e dos utilizadores devem ser estabelecidas separadamente aquando da publicação e do autor, consoante o caso.
+Quando os usuários do autor e os membros da publicação vêm da mesma lista de usuários, como sincronizados do mesmo diretório LDAP, eles não são considerados o mesmo usuário com as mesmas permissões e associação de grupo nos ambientes do autor e da publicação. As funções dos membros e dos utilizadores devem ser estabelecidas separadamente aquando da publicação e do autor, consoante o caso.
 
-Para um farm [de](topologies.md)publicação, o registro e as modificações feitas em uma instância de publicação precisam ser sincronizados com outras instâncias de publicação para que elas tenham acesso aos mesmos dados do usuário. [Para obter detalhes, consulte Sincronização ](sync.md)[do usuário, que inclui uma seção que descreve ](sync.md#what-happens-when)o que acontece quando... .
+Para um farm [de](topologies.md)publicação, o registro e as modificações feitas em uma instância de publicação precisam ser sincronizados com outras instâncias de publicação para que elas tenham acesso aos mesmos dados do usuário. Para obter detalhes, consulte Sincronização [](sync.md)do usuário, que inclui uma seção que descreve [o que acontece quando...](sync.md#what-happens-when).
 
 ### Limites de contribuição {#contribution-limits}
 
@@ -44,7 +47,7 @@ Para obter detalhes, consulte Limites [de contribuição dos](limits.md)membros.
 
 ### Grupos de usuários criados dinamicamente {#dynamically-created-user-groups}
 
-Quando um novo site da comunidade é criado, novos grupos de usuários são criados dinamicamente com IDs exclusivas (uid) e permissões apropriadas para várias funções administrativas necessárias para gerenciar o site da comunidade no ambiente do autor (consulte Funções [do grupo do](#author-group-roles)autor) ou no ambiente de publicação (consulte Funções [do grupo de](#publish-group-roles)publicação).
+Quando um novo site da comunidade é criado, novos grupos de usuários são criados dinamicamente com IDs exclusivas (uid) e permissões apropriadas para várias funções administrativas necessárias para gerenciar o site da comunidade no ambiente do autor (consulte Funções [do grupo do](#author-group-roles)autor) ou no ambiente de publicação (consulte [Publicar funções](#publish-group-roles)do grupo).
 
 Os nomes dos grupos são gerados a partir do nome dado ao site durante a criação [do site da](sites-console.md#step13asitetemplate)comunidade. As IDs exclusivas evitam nomear conflitos para sites da comunidade com nomes semelhantes e grupos da comunidade no mesmo servidor.
 
@@ -71,15 +74,15 @@ Para gerenciar usuários e grupos de usuários registrados no ambiente do autor,
 | Se Membro do Grupo... | Função principal |
 |---|---|
 | administradores | O grupo de administradores consiste em administradores de sistema que têm todos os recursos de um administrador da comunidade, bem como a capacidade de gerenciar o grupo de administradores da comunidade. |
-| Administradores da comunidade | O grupo Administradores da comunidade se torna automaticamente membro de todos os sites da comunidade e de quaisquer grupos da comunidade criados no site. Um membro inicial do grupo Administradores da comunidade é o grupo de administradores. No ambiente do autor, os administradores da comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem proibir membros da comunidade) e moderar conteúdo. |
-| Comunidade &lt;nome *do* site> Sitecontentmanager | O Community Site Content Manager pode executar a criação tradicional do AEM, a criação de conteúdo e a modificação de páginas para um site da comunidade. |
+| Administradores da comunidade | O grupo Administradores da comunidade se torna automaticamente membro de todos os sites da comunidade e de todos os grupos da comunidade criados no site. Um membro inicial do grupo Administradores da comunidade é o grupo de administradores. No ambiente do autor, os administradores da comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem proibir membros da comunidade) e moderar conteúdo. |
+| Comunidade &lt;nome *do* site> Sitecontentmanager | O Community Site Content Manager é capaz de executar a criação tradicional de AEM, a criação de conteúdo e a modificação de páginas para um site da comunidade. |
 | Gerentes de habilitação da comunidade | O grupo Gerentes de ativação da comunidade consiste em usuários que estão disponíveis para atribuição para gerenciar um grupo de Gerentes de ativação do site da comunidade. |
 | Community &lt;nome *do* site > SiteenableAdministradores | O grupo Gerentes de ativação do site da comunidade consiste em usuários que foram atribuídos para gerenciar os [recursos](resources.md)de ativação do site da comunidade. |
-| Nenhum | Um visitante anônimo do site pode não acessar o ambiente do autor. |
+| Nenhum | Um visitante de site anônimo pode não acessar o ambiente do autor. |
 
 ### Administradores de sistema {#system-administrators}
 
-Os membros do grupo de administradores são administradores de sistema que podem executar a configuração inicial de uma instalação do AEM para os ambientes de autor e publicação.
+Os membros do grupo de administradores são administradores de sistema que podem executar a configuração inicial de uma instalação AEM para o autor e publicar ambientes.
 
 Para fins de demonstração e desenvolvimento, o grupo de administradores tem um membro cujo ID de usuário é *admin* e a senha é *admin*.
 
@@ -91,7 +94,7 @@ Siga a Lista de verificação de [segurança](../../help/sites-administering/sec
 
 ### Tornando-se um membro {#becoming-a-member}
 
-No ambiente de publicação, dependendo das [configurações](sites-console.md#user-management) do site da comunidade, um visitante do site pode se tornar um membro da comunidade
+No ambiente publish, dependendo das [configurações](sites-console.md#user-management) do site da comunidade, um visitante do site pode se tornar um membro da comunidade
 
 * Quando o site da comunidade for privado (fechado):
    * Por convite
@@ -109,12 +112,12 @@ No ambiente de publicação, dependendo das [configurações](sites-console.md#u
 
 | Se Membro do Grupo... | Função principal |
 |---|---|
-| Membros da comunidade &lt;nome *do* site> | Um membro do site da comunidade é um usuário registrado. Eles podem fazer logon, modificar seu perfil, ingressar em um grupo aberto da comunidade, publicar conteúdo na comunidade, enviar mensagens para outros membros e seguir as atividades do site. |
+| Membros da comunidade &lt;nome *do* site> | Um membro do site da comunidade é um usuário registrado. Eles podem fazer logon, modificar o perfil, ingressar em um grupo aberto da comunidade, publicar conteúdo na comunidade, enviar mensagens para outros membros e seguir as atividades do site. |
 | Moderadores do &lt;nome *do* site> da comunidade | Um moderador de site da comunidade é um membro da comunidade confiável que pode moderar o UGC em massa, usando o console de moderação ou no contexto, na página em que o conteúdo é publicado. |
 | Comunidade &lt;nome *do* site> &lt;nome *do* grupo> Membros | Um membro do grupo da comunidade é um membro da comunidade que ingressou em um grupo aberto da comunidade ou foi convidado para um grupo fechado da comunidade. Eles têm as habilidades de um membro para esse grupo da comunidade dentro do site. |
 | Comunidade &lt;nome *do* site> Grupos de administradores | Um administrador de grupo de sites da comunidade é um membro da comunidade confiável que é atribuído para criar e gerenciar subcomunidades (grupos) em um site da comunidade. Inclui a capacidade de fornecer moderação no contexto. |
 | *Grupo de Segurança de Membros Privilegiados* | Um grupo de usuários criado e mantido manualmente para restringir a criação de conteúdo. Consulte Grupo [de membros](#privileged-members-group)privilegiados. |
-| Nenhum | Um visitante anônimo do site, que descobre o site, pode visualizar e pesquisar sites da comunidade que permitem acesso anônimo. Para participar e publicar conteúdo, o usuário deve se registrar automaticamente (se permitido) e se tornar um membro da comunidade. |
+| Nenhum | Um visitante anônimo do site, que descobre o site, pode visualização e pesquisar sites da comunidade que permitem acesso anônimo. Para participar e publicar conteúdo, o usuário deve se registrar automaticamente (se permitido) e se tornar um membro da comunidade. |
 
 ### Atribuindo Membros para Publicar Funções de Grupo {#assigning-members-to-publish-group-roles}
 
@@ -139,7 +142,7 @@ As funções da comunidade que permitem especificar um ou mais grupos de membros
 * [Função](functions.md#forum-function) do fórum - para restringir a criação de novos tópicos
 * [Função](functions.md#qna-function) QnA - para restringir a criação de novas perguntas
 
-Quando uma função da comunidade não está protegida (nenhum grupo de membros privilegiados atribuído), todos os membros do site da comunidade podem criar conteúdo de recursos (artigos, eventos, tópicos, perguntas).
+Quando uma função da comunidade não está protegida (nenhum grupo de membros privilegiados atribuído), todos os membros do site da comunidade têm permissão para criar conteúdo de recursos (artigos, eventos, tópicos, perguntas).
 
 >[!NOTE]
 >
@@ -192,7 +195,7 @@ Há quatro consoles separados disponíveis somente no ambiente do autor:
 
 ### Função do gerente de habilitação da comunidade {#community-enablement-manager-role}
 
-Geralmente, a capacidade de um visitante do site se registrar automaticamente não é permitida para uma comunidade [de](overview.md#enablement-community) ativação, pois há custos associados a cada membro. Os alunos e os recursos de habilitação são gerenciados por um usuário ao qual é atribuída a [função](#author-group-roles) de `enablement manager` durante a criação [do site no autor (adicionado como membro do grupo](sites-console.md#enablement) `Community <site-name> Siteenablementmanagers`). O também `enablement manager` é responsável por [atribuir recursos](resources.md) de aprendizado aos membros da comunidade no autor.
+Normalmente, a capacidade de um visitante do site se registrar automaticamente não é permitida para uma comunidade [de](overview.md#enablement-community) ativação, pois há custos associados a cada membro. Os alunos e os recursos de habilitação são gerenciados por um usuário ao qual é atribuída a [função](#author-group-roles) de `enablement manager` durante a criação [do site no autor (adicionado como membro do grupo](sites-console.md#enablement) `Community <site-name> Siteenablementmanagers`). O também `enablement manager` é responsável por [atribuir recursos](resources.md) de aprendizado aos membros da comunidade no autor.
 
 Somente os usuários que são membros do `Community Enablement Managers` grupo global podem ser selecionados como um `enablement manager` site da comunidade específica.
 
@@ -212,7 +215,7 @@ Por exemplo, [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 
 * No painel esquerdo, procure o usuário recém-criado e selecione para exibir no painel direito.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 No painel esquerdo:
 
@@ -229,11 +232,11 @@ Siga as mesmas etapas que criar e atribuir um usuário à função de gerenciado
 
 ### Integração LDAP {#ldap-integration}
 
-O AEM oferece suporte ao uso do LDAP para autenticação de usuários e criação de contas de usuários. Isso é detalhado em [Configurar o LDAP com o AEM 6](../../help/sites-administering/ldap-config.md).
+AEM suporta o uso do LDAP para autenticação de usuários e criação de contas de usuários. Isso é detalhado em [Configuração do LDAP com AEM 6](../../help/sites-administering/ldap-config.md).
 
 Veja a seguir alguns detalhes de configuração específicos para membros da comunidade e grupos de membros.
 
-1. Configurar o LDAP para cada instância de publicação do AEM
+1. Configurar LDAP para cada instância de publicação de AEM
 2. [O provedor de identidade LDAP](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * Nenhuma instrução especial
@@ -250,11 +253,11 @@ Veja a seguir alguns detalhes de configuração específicos para membros da com
 
    * nenhuma instrução especial
 
-Isso resulta na atribuição automática de usuários ao grupo de membros do site da comunidade e no local do repositório sendo `/home/users/community` e `/home/groups/community`, de modo que eles herdem as permissões apropriadas para ver o perfil de um outro.
+Isso resulta na atribuição automática de usuários ao grupo de membros do site da comunidade e no local do repositório sendo `/home/users/community` e `/home/groups/community`, de modo que eles herdem as permissões apropriadas para ver o perfil de cada um.
 
 * O `User auto membership` valor deve ser a `rep:authorizableId` propriedade, não o `givenName` (nome de exibição) do perfil.
 
-## Sincronizar usuários entre instâncias do AEM {#synchronizing-users-among-aem-instances}
+## Sincronizando usuários entre instâncias AEM {#synchronizing-users-among-aem-instances}
 
 Ao usar um farm [de](topologies.md)publicação, certifique-se de que os usuários tenham o mesmo caminho em cada instância de publicação importando os usuários primeiro para uma instância e [permitindo a sincronização](sync.md) do usuário para Sling e distribuindo os usuários para as outras instâncias de publicação.
 
@@ -268,4 +271,4 @@ Ao discutir grupos, há dois tópicos distintos:
 
 * **[Grupos](overview.md#communitygroups)**comunitários são as subcomunidades que podem ser criadas no ambiente de publicação para um site da comunidade que suporta a criação de grupos da comunidade. A criação de um grupo da comunidade resulta em mais páginas adicionadas ao site e são gerenciadas de maneira semelhante ao site da comunidade pai. Para obter mais informações, visite[Community Group Essentials](essentials-groups.md)for Developers and[Community Group](creating-groups.md)for author.
 
-* **[Grupos de membrosGrupos de](../../help/sites-administering/security.md)**membros são os grupos aos quais os membros podem pertencer e são gerenciados pelo console Grupos. Grande parte da discussão desta página foi dedicada aos grupos de membros. Os grupos de membros criados automaticamente para um site da comunidade, que recebem o prefixo *`Community`*, podem ser chamados de grupos da comunidade, portanto o contexto da discussão deve ser considerado.
+* **[Grupos de membrosGrupos de](../../help/sites-administering/security.md)**membros são os grupos aos quais os membros podem pertencer e são gerenciados pelo console Grupos. Grande parte da discussão desta página foi dedicada aos grupos de membros. Os grupos de membros criados automaticamente para um site da comunidade, que recebem o prefixo *`Community`*, podem ser chamados de grupos da comunidade, portanto, o contexto da discussão deve ser considerado.
