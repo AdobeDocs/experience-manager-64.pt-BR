@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '1429'
+ht-degree: 4%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 O Adobe Experience Manager (AEM) Communities oferece a capacidade de criar rapidamente um site local da comunidade com o melhor desempenho, gerenciamento de site, e estimula a conversão de visitantes do site em membros de alto valor da Comunidade.
 
-Entre em contato com seu representante de conta para obter informações sobre o licenciamento do AEM Communities, além de licenças adicionais para recursos de ativação e Adobe Analytics.
+Entre em contato com seu representante de conta para obter informações sobre o licenciamento da AEM Communities, além de licenças adicionais para recursos de ativação e Adobe Analytics.
 
 ## Recursos das comunidades {#communities-features}
 
-O AEM Communities permite o desenvolvimento de uma relação com visitantes do site que informa por meio de blogs, perguntas e respostas e calendários de eventos, além de obter insights por meio de fóruns, comentários e outros conteúdos da comunidade, geralmente chamados de conteúdo gerado pelo usuário (UGC).
+A AEM Communities permite o desenvolvimento de uma relação com visitantes do site que informa por meio de blogs, P&amp;R e calendários de eventos, além de obter insights por meio de fóruns, comentários e outros conteúdos da comunidade, geralmente chamados de conteúdo gerado pelo usuário (UGC).
 
-Além disso, o AEM Communities permite a moderação por membros confiáveis no ambiente de publicação, o login social com o Twitter e o Facebook, a tradução em linha do conteúdo da comunidade, a criação de grupos da comunidade a partir do site da comunidade publicada, a pontuação para atribuir cartões, o compartilhamento de arquivos, as notificações e os fluxos de atividades.
+Além disso, a AEM Communities permite a moderação por membros confiáveis no ambiente de publicação, login social com o Twitter e o Facebook, tradução em linha do conteúdo da comunidade, criação de grupos da comunidade do site da comunidade publicado, pontuação para prêmios, compartilhamento de arquivos, notificações e fluxos de atividade.
 
-Os recursos das comunidades podem ser demonstrados usando a Máquina [de demonstração do](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) AEM disponível publicamente em GitHub.com ou com a nova implementação de referência We.Retail.
+Os recursos das Comunidades podem ser demonstrados usando a Máquina [de demonstração](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) AEM disponível publicamente em GitHub.com ou com a nova implementação de referência We.Retail.
 
 ## Sites da comunidade {#community-sites}
 
-Um site da comunidade é um site do AEM criado usando um assistente simples que resulta em um site com muitos recursos comuns pré-conectados ao site.
+Um site da comunidade é um site AEM criado usando um assistente simples que resulta em um site com muitos recursos comuns pré-conectados ao site.
 
 O assistente [de criação de](sites-console.md)site:
 
@@ -43,9 +46,9 @@ O assistente [de criação de](sites-console.md)site:
    * Logon
    * Tradução
 * Fornece recursos essenciais:
-   * Design responsivo: Usa temas do Bootstrap [do Twitter](https://getbootstrap.com)
-   * Logon: Autoinscrição, login [](social-login.md)social, perfis de usuário
-   * Notificações: Os membros veem acontecimentos relevantes para eles
+   * Design responsivo: Usa temas de Bootstrap [do Twitter](https://getbootstrap.com)
+   * Logon: Autoinscrição, login [](social-login.md)social, perfis do usuário
+   * Notificações: Os deputados veem eventos relevantes para eles
    * Mensagens: Os membros podem enviar ou receber mensagens no site da comunidade
    * Pesquisar: Capacidade de pesquisar no site da comunidade
    * Mudança de idioma: Capacidade de selecionar um idioma para um site [multilíngue](../../help/sites-administering/translation.md)
@@ -58,15 +61,15 @@ Para experimentar a facilidade de criar rapidamente um novo site da comunidade, 
 
 ## Persistência do conteúdo da comunidade {#community-content-persistence}
 
-Para melhorar o desempenho e a sincronização do conteúdo da comunidade, o AEM Communities exige uma loja comum especificamente para o conteúdo gerado pelo usuário (UGC) compartilhado entre todas as instâncias do AEM (autor e publicação).
+Para melhorar o desempenho e a sincronização do conteúdo da comunidade, a AEM Communities exige uma loja comum especificamente para o conteúdo gerado pelo usuário (UGC) compartilhado entre todas as instâncias de AEM (autor e publicação).
 
-O conteúdo da comunidade é facilmente acessado pelo SRP (Storage Resource Provider, provedor de recursos de armazenamento), que fornece uma camada para separar o acesso da topologia subjacente e oferece suporte a uma loja comum para UGC.
+O conteúdo da comunidade é facilmente acessado por meio do SRP (armazenamento Resource Provider, provedor de recursos do ), que fornece uma camada para separar o acesso da topologia subjacente e oferece suporte a uma loja comum para UGC.
 
 Para saber mais sobre a persistência do conteúdo da comunidade e as implantações recomendadas, visite:
 
 * [Armazenamento](working-with-srp.md)de conteúdo da comunidade: discute as opções disponíveis de armazenamento SRP para UGC
 * [Topologias](topologies.md)recomendadas: discute topologias com base no caso de uso e na escolha do SRP
-* [Atualização para o AEM 6.3 Communities](upgrade.md): fornece informações úteis sobre o UGC ao mudar para o AEM 6.3.
+* [Atualizando para AEM 6.3 Comunidades](upgrade.md): fornece informações úteis sobre o UGC ao mudar para o AEM 6.3.
 
 ## Consoles de comunidades {#communities-consoles}
 
@@ -81,7 +84,7 @@ No ambiente do autor, o console de navegação global fornece acesso ao console 
 
 * [Console de moderação](moderation.md)
 
-   * Interface comum de moderação em massa para ambientes de criação e publicação
+   * Interface comum de usuário de moderação em massa para ambientes de autor e publicação
    * Novos critérios de filtragem
 
 * [Consoles de gerenciamento de membros e grupos](members.md)
@@ -92,7 +95,7 @@ No ambiente do autor, o console de navegação global fornece acesso ao console 
 
 * [Console de relatórios](reports.md)
 
-   * Fornece a capacidade de gerar relatórios em atribuições, postagens e exibições
+   * Fornece a capacidade de gerar relatórios em atribuições, publicações e visualizações
 
 * [Console de recursos](resources.md)
 
@@ -101,7 +104,7 @@ No ambiente do autor, o console de navegação global fornece acesso ao console 
 
 O console de ferramentas globais fornece acesso às seguintes ferramentas de Comunidades:
 
-* [console Modelos](tools.md#sitetemplatesconsole) de site
+* [Console de Modelos](tools.md#sitetemplatesconsole) de site
 
    * Criar e gerenciar modelos de site da comunidade
 
@@ -113,7 +116,7 @@ O console de ferramentas globais fornece acesso às seguintes ferramentas de Com
 
    * Criar e gerenciar funções da comunidade
 
-* [Console de configuração](tools.md#storageconfiguratonconsole) de armazenamento
+* [Console de configuração](tools.md#storageconfiguratonconsole) do Armazenamento
 
    * Selecionar e configurar a loja [](working-with-srp.md) comum do site
 
@@ -125,21 +128,21 @@ O console de ferramentas globais fornece acesso às seguintes ferramentas de Com
 
 A criação de site da comunidade é baseada na seleção de um modelo de site da comunidade para configurar rapidamente um site da comunidade que é independente de qualquer site de amostra.
 
-Um modelo de site da comunidade, composto de funções da comunidade e modelos de grupo da comunidade, fornece a estrutura para um site da comunidade, incluindo logon, perfis de usuário, mensagens, menu do site, pesquisa, temas e recursos de marca.
+Um modelo de site da comunidade, composto de funções da comunidade e modelos de grupo da comunidade, fornece a estrutura para um site da comunidade, incluindo login, perfis do usuário, mensagens, menu do site, pesquisa, temas e recursos de marca.
 
 Consulte o console [Modelos de](sites.md)site.
 
 ## Funções da comunidade {#community-functions}
 
-Os recursos esperados de uma experiência da comunidade são bem conhecidos. Com o AEM Communities, esses recursos estão disponíveis como blocos de construção, conhecidos como funções da comunidade.
+Os recursos esperados de uma experiência da comunidade são bem conhecidos. Com a AEM Communities, esses recursos estão disponíveis como blocos de construção, conhecidos como funções da comunidade.
 
-As funções da comunidade são páginas AEM normais compostas de componentes conectados em conjunto em um recurso que é facilmente incorporado em um modelo de site de uma comunidade.
+As funções da comunidade são páginas normais AEM compostas de componentes conectados em conjunto em um recurso que é facilmente incorporado em um modelo de site da comunidade.
 
 Consulte o console [Funções da](functions.md)comunidade.
 
 ## Grupos da comunidade e modelos de grupo {#community-groups-and-group-templates}
 
-O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente dentro de um site da comunidade por usuários autorizados e membros da comunidade dos ambientes do autor e publicação.
+O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente em um site da comunidade por usuários autorizados e membros da comunidade do autor e publicar ambientes.
 
 No ambiente do autor, grupos da comunidade (subcomunidades) podem ser criados dentro de um site da comunidade existente ou aninhados dentro de um grupo existente, quando a estrutura do modelo contém a função [](functions.md#groups-function)Grupos.
 
@@ -153,7 +156,7 @@ Consulte também:
 
 ## Componentes da comunidade {#community-components}
 
-Os componentes [da](author-communities.md) comunidade a partir dos quais um site da comunidade é criado podem ser usados para adicionar recursos das Comunidades a qualquer site do AEM.
+Os componentes [da](author-communities.md) comunidade a partir dos quais um site da comunidade é criado podem ser usados para adicionar recursos das Comunidades a qualquer Site AEM.
 
 O guia [de componentes da](components-guide.md) comunidade está disponível para exploração interativa dos componentes.
 
@@ -179,13 +182,13 @@ Os recursos de uma comunidade de envolvimento podem incluir:
 * Moderação
 * Notificações
 * Pontuação e emblemas
-* Relatórios do Analytics
+* relatórios do Analytics
 
-Para experimentar a facilidade de criar rapidamente uma nova comunidade de envolvimento, visite [Introdução ao AEM Communities](getting-started.md).
+Para experimentar a facilidade de criar rapidamente uma nova comunidade de envolvimento, visite [Introdução à AEM Communities](getting-started.md).
 
 ### Comunidade de ativação {#enablement-community}
 
-Uma comunidade de capacitação é um site da comunidade que inclui recursos para aprendizagem online.
+Uma comunidade de capacitação é um site da comunidade que inclui recursos para aprendizado online.
 
 Os recursos de uma comunidade de ativação podem incluir:
 
@@ -198,23 +201,23 @@ Os recursos de uma comunidade de ativação podem incluir:
 
 Uma comunidade de ativação pode ser criada quando o complemento [Ativação é configurado](enablement.md), o que requer licenciamento adicional para uso em um ambiente de produção. Um site de comunidade de ativação incluirá a função [de](#community-functions)atribuições.
 
-Para experimentar a facilidade de criar uma nova comunidade de ativação, visite [Introdução ao AEM Communities para Ativação](getting-started-enablement.md).
+Para experimentar a facilidade de criar uma nova comunidade de ativação, visite [Introdução à AEM Communities para Ativação](getting-started-enablement.md).
 
-## Computador de demonstração AEM {#aem-demo-machine}
+## Máquina de demonstração AEM {#aem-demo-machine}
 
-A máquina [de demonstração do](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) AEM gerencia e executa demonstrações para [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites)do AEM, [Ativos](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Comunidades](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Aplicativos](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) [](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)e Formulários, que geralmente exigem mais configuração do que simplesmente iniciar uma instância do QuickStart. A máquina de demonstração do AEM irá configurar [infraestrutura](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) adicional, como os servidores MongoDB, Solr, MySQL, FFmpeg e email.
+A [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gerencia e executa demonstrações para AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Ativos](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Comunidades](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Aplicativos](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) [](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)e Forms, que geralmente exigem mais configuração do que simplesmente iniciar uma instância do QuickStart. A máquina de demonstração AEM irá configurar [infraestrutura](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) adicional, como MongoDB, Solr, MySQL, FFmpeg e servidores de e-mail.
 
-A máquina de demonstração do AEM consiste em
+A máquina de demonstração AEM consiste em
 
 * Uma interface [gráfica do usuário](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface)
-* Scripts do Apache ANT com [propriedades](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) e [destinos configuráveis](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line)
-* Pacotes para instalarA máquina de demonstração do AEM foi testada com êxito com CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2 e AEM 6.3 no Windows, Mac OS e Linux.
+* Scripts do Apache ANT com [propriedades](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) e [públicos alvos configuráveis](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line)
+* Pacotes para instalarA máquina de demonstração AEM foi testada com êxito com CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2 e AEM 6.3 no Windows, MacOS e Linux.
 
-A máquina de demonstração AEM exige uma licença AEM válida.
+A máquina de demonstração AEM requer uma licença AEM válida.
 
 >[!NOTE]
 >
->Veja uma introdução [em](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) vídeo ao AEM Demo Machine (13:26).
+>Visualização uma introdução [de](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) vídeo à máquina de demonstração AEM (13:26).
 
 ## Documentação do AEM Communities {#aem-communities-documentation}
 
