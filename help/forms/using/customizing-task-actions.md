@@ -138,7 +138,7 @@ Para mostrar apenas imagens para ações, personalize as imagens usadas em açõ
 
 ### Menu pop-up Ação da tarefa da Lista da Tarefa {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Você precisa de um pacote de desenvolvimento para personalizar itens do menu pop-up de ação tarefa de lista da área de trabalho do AEM Forms. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Você precisa de um pacote de desenvolvimento para personalizar itens do menu pop-up de ação tarefa de lista da área de trabalho da AEM Forms. Para obter informações detalhadas sobre a criação de pacotes de desenvolvimento, consulte [Criar código de espaço de trabalho AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copie /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`substituir o seguinte trecho de código:
 
