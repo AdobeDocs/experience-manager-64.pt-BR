@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
 source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 2%
 
 ---
 
 
 # Guia de componentes da comunidade {#community-components-guide}
 
-O guia Community Components é uma ferramenta de desenvolvimento interativo para o quadro de componentes [sociais (SCF)](scf.md). Fornece uma lista dos componentes AEM Communities disponíveis ou dos recursos mais complexos criados de vários componentes.
+O guia Community Components é uma ferramenta de desenvolvimento interativo para o quadro de componentes [sociais (SCF)](scf.md). Ele fornece uma lista de componentes AEM Communities disponíveis ou os recursos mais complexos criados com vários componentes.
 
 Juntamente com as informações básicas de cada componente, o guia permite experimentar como os componentes/recursos do SCF funcionam e como eles podem ser configurados ou personalizados.
 
@@ -34,7 +37,7 @@ O site Componentes da comunidade é acessado navegando até
 As interações com os componentes das Comunidades variam, dependendo de:
 
 * O servidor (autor ou publicação)
-* Se o visitante do site está ou não conectado
+* Se o visitante do site está conectado ou não
 * Se conectado, os privilégios atribuídos ao membro
 * Se o SRP padrão, [JSRP](jsrp.md), está ou não em uso
 
@@ -52,17 +55,17 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 >
 >No modo Editar, os links em uma página não estão ativos.
 >
->Para navegar até uma página de componente, primeiro selecione o modo de visualização para ativar os links.
+>Para navegar até uma página de componente, primeiro selecione o modo de Pré-visualização para ativar os links.
 >
 >Com a página do componente exibida no navegador, volte ao modo de Edição para abrir a caixa de diálogo de edição do componente.
 >
->Para obter informações gerais sobre criação, consulte o guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Para obter informações gerais sobre criação, visualização no guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
+>Se não estiver familiarizado com AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
 
 ### Página Inicial {#home-page}
 
-O guia fornece uma lista de componentes SCF disponíveis para visualização e protótipo no lado esquerdo da página.
+O guia fornece uma lista de componentes SCF disponíveis para pré-visualização e prototipagem no lado esquerdo da página.
 
 Guia de componentes conforme exibido em uma instância do autor no modo Editar:
 
@@ -70,14 +73,14 @@ Guia de componentes conforme exibido em uma instância do autor no modo Editar:
 
 ## Páginas de componentes {#component-pages}
 
-Selecione um componente na lista ao lado esquerdo da página.
+Selecione um componente da lista no lado esquerdo da página.
 
 ![chlimage_1-405](assets/chlimage_1-405.png)
 
 O corpo principal da guia exibe:
 
 1. Título: O nome do componente selecionado
-1. [Bibliotecas](#client-side-libraries)do cliente: Uma lista de uma ou mais categorias obrigatórias
+1. [Bibliotecas](#client-side-libraries)do lado do cliente: Uma lista de uma ou mais categorias necessárias
 1. [Incluível](scf.md#add-or-include-a-communities-component): Se o componente puder ser incluído dinamicamente, o estado pode ser alternado no modo de edição do autor:
 
    * Se adicionado, o texto exibido é: &quot;Esse componente é incluído por meio de seu nó par.&quot;
@@ -94,7 +97,7 @@ O corpo principal da guia exibe:
 
 Ao usar o guia em uma instância do autor, é possível experimentar a configuração de um componente abrindo sua caixa de diálogo. As informações para desenvolvedores são fornecidas na seção [Component and Feature Essentials](essentials.md) da documentação, enquanto as configurações da caixa de diálogo são descritas na seção [Communities Components](author-communities.md) (Componentes de comunidades) para autores.
 
-Para o guia Componentes da comunidade, algumas configurações de diálogo do componente são sobrepostas com o estado de alternância [Incluível](scf.md#add-or-include-a-communities-component) . Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto incluível e clique duas vezes para abrir a caixa de diálogo de edição:
+Para o guia Componentes da comunidade, algumas configurações de diálogo do componente são sobrepostas com o estado de alternância [Incluível](scf.md#add-or-include-a-communities-component) . Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto e clique em duplo para abrir a caixa de diálogo de edição:
 
 ![chlimage_1-406](assets/chlimage_1-406.png)
 
@@ -107,9 +110,11 @@ Na guia **Modelos** :
    Se desmarcada, o Guia de componentes usará o recurso existente no repositório (um nó jcr que é filho de um nó par).
 
    * o texto exibido é: &quot;Esse componente é incluído por meio de seu nó par.&quot;
+
    Se marcada, o Guia de componentes usará sling para incluir dinamicamente um componente do resourceType do nó filho (recurso não existente).
 
    * o texto exibido é: &quot;Esse componente é incluído dinamicamente.&quot;
+
    O padrão está desmarcado.
 
 ### Publicar interações {#publish-interactions}
@@ -158,7 +163,7 @@ Usando o componente comments como um exemplo, na instância autor ou de publica�
 
    * **Nome** `scg:showIde`
    * **Tipo** `String`
-   * **Valor**`true`
+   * **Valor** `true`
 
 1. Selecione **[!UICONTROL Salvar tudo]**
 1. Recarregar a página Comentários no guia
@@ -183,7 +188,7 @@ Selecione a guia CSS para ver o CSS associado ao componente.
 
 Se um componente for um composto de vários componentes, alguns CSS podem ser listados em um dos outros componentes.
 
-O Editor CSS permite que o CSS seja modificado e aplicado à instância do componente de amostra na parte superior da página.
+O Editor de CSS permite que o CSS seja modificado e aplicado à instância do componente de amostra na parte superior da página.
 
 Uma regra pode ser selecionada para realçar as partes do DOM usando essa regra clicando em ao lado da regra na medianiz.
 
