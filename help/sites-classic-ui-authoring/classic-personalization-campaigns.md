@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 85%
 
 ---
 
@@ -33,11 +36,15 @@ Esse documento descreve os vários elementos que compõem as campanhas. Informa�
 
 O gerenciamento de campanhas é composto de vários elementos:
 
-* **Marcas** No AEM, marcas são a unidade de nível superior e formam uma coleção de **Campanhas**.
+* **Brands**
+In AEM, brands are the top level unit and form a collection of 
+**Campanhas**.
 
-* **Campanhas** Uma campanha é uma coleção de **Experiências** individuais.
+* **Campanhas** Uma campanha é uma coleção de indivíduos 
+**Experiências**.
 
-* **Experiências** O conteúdo concentrado forma as várias experiências apresentadas ao visitante em **Pontos de interação**. Existem vários tipos de experiências disponíveis:
+* **Experiências** O conteúdo focado forma as várias experiências, apresentadas ao visitante em 
+**Pontos de contato**. Existem vários tipos de experiências disponíveis:
 
    * **Teasers**
       [Página de teaser/Parágrafos](#teasers) são usados para direcionar **Segmentos** específicos de visitantes para conteúdos concentrados em seus interesses.
@@ -46,6 +53,7 @@ O gerenciamento de campanhas é composto de vários elementos:
 
       * apresentar uma gama de opções para o visitante escolher
       * mostrar somente um parágrafo de teaser baseado no segmento de visitantes específico; por exemplo, o parágrafo de teaser mostrado pode depender da idade do visitante.
+
       Geralmente, uma página de teaser é uma ação temporária que durará por um período específico, até ser substituída pela próxima página de teaser.
 
    * **Boletins informativos**
@@ -71,7 +79,7 @@ O gerenciamento de campanhas é composto de vários elementos:
 
 * **Listas**
 
-   Geralmente, os clientes potenciais são agrupados em listas para que você possa realizar ações coletivas neles. **Observação:** a Adobe não planeja aprimorar mais esse recurso.
+   Os clientes em potencial são normalmente agrupados em listas para que você possa realizar ações coletivas neles. **Observação:** a Adobe não planeja aprimorar mais esse recurso.
 
    A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM.](/help/sites-administering/campaign.md)
 
