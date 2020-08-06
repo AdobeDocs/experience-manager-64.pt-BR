@@ -1,9 +1,12 @@
 ---
 title: Configurar o Editor de Rich Text
-description: Saiba como configurar o Editor de Rich Text do AEM.
+description: Saiba como configurar o Editor de Rich Text AEM.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ Para saber como usar os recursos do RTE para criação, consulte [Usar o Editor 
 
 ## Entenda a interface habilitada para toque e a interface clássica {#understand-touch-enabled-ui-and-classic-ui}
 
-A interface do usuário habilitada para toque é a interface padrão do AEM. A Adobe introduziu a interface do usuário para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para criação de ambientes, na versão 5.6. A interface do usuário de toque foi projetada para dispositivos de toque e desktop. A interface do usuário é consideravelmente diferente da interface clássica original.
+A interface habilitada para toque é a interface padrão para AEM. O Adobe introduziu a interface do usuário para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para criação de ambientes, na versão 5.6. A interface do usuário de toque foi projetada para dispositivos de toque e desktop. A interface do usuário é consideravelmente diferente da interface clássica original.
 
 ![Barra de ferramentas do Editor de Rich Text na interface habilitada para toque](assets/chlimage_1-404.png)
 
@@ -33,9 +36,9 @@ A interface do usuário habilitada para toque é a interface padrão do AEM. A A
 >[!MORELIKETHIS]
 >
 >* [Recomendações da interface do usuário](/help/sites-deploying/ui-recommendations.md)
->* Sobre a substituição da interface clássica, consulte Notas de versão do [AEM 6.4](/help/release-notes/deprecated-removed-features.md)
+>* Sobre a substituição da interface clássica, consulte as Notas de versão [AEM 6.4](/help/release-notes/deprecated-removed-features.md)
 >* Para obter a diferença entre as interfaces de usuário, consulte Interface de usuário [sensível ao toque e Interface clássica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Para entender a interface habilitada para toque em detalhes, consulte [Conceitos da interface do usuário de toque do AEM](/help/sites-developing/touch-ui-concepts.md)
+>* Para entender a interface habilitada para toque em detalhes, consulte [Conceitos da interface de usuário AEM toque](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Vários modos de edição {#editingmodes}
@@ -63,9 +66,9 @@ Quando aberto (com um toque/clique lento em duplo), o conteúdo pode ser editado
 
 Na interface clássica, um clique lento em duplo no componente permite a edição em linha e um contorno laranja destaca o conteúdo. Se o Localizador de conteúdo estiver aberto, uma barra de ferramentas com as opções de formatação RTE disponíveis será exibida na parte superior da janela. Se o Localizador de conteúdo não estiver aberto, as opções de formatação não serão exibidas e você só poderá fazer edições de texto básicas.
 
-### Full screen editing {#full-screen-editing}
+### Edição em de tela cheia {#full-screen-editing}
 
-Os componentes do AEM podem ser abertos na visualização de tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferta mais opções de edição. Para abri-lo, clique em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
+AEM componentes podem ser abertos na visualização de tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferta mais opções de edição. Para abri-lo, clique em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
 
 O modo de tela cheia da caixa de diálogo fornece uma barra de ferramentas RTE detalhada e as opções e os componentes que estão disponíveis no modo de diálogo. É aplicável somente para uma caixa de diálogo que contém o RTE junto com outros componentes.
 
@@ -109,7 +112,7 @@ A tabela a seguir lista os plug-ins atuais, mostrando:
 | editar | copiar colar - padrão colar - texto simples colar-pasta-pasta-wordhtml | [Corte, copie e, os três modos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)de colagem. |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | localizar substituição | Localize e substitua. |
 | [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | negrito itálico sublinhado | [Formatação](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)de texto básica. |
-| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | imagem | Suporte básico a imagens (arraste do conteúdo ou do Localizador de conteúdo). Dependendo do navegador, o suporte tem comportamentos diferentes para autores |
+| [imagem](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | imagem | Suporte básico a imagens (arraste do conteúdo ou do Localizador de conteúdo). Dependendo do navegador, o suporte tem comportamentos diferentes para autores |
 | [teclas](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Para definir esse valor, consulte o tamanho [da](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)guia. |
 | [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justificativa justificativa justificativa | Alinhamento de parágrafo. |
 | [links](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modiylink desvincular âncora | [Hiperlinks e âncoras](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -144,6 +147,7 @@ O [modo de edição do RTE (e a interface do usuário)](#editingmodes) que você
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: caminho do nó que contém a configuração real
+
 >
 >
 Não nomeie o nó de configuração RTE como `config`. Caso contrário, as configurações do RTE terão efeito apenas para os administradores e não para os usuários do grupo `content-author`.
@@ -191,13 +195,14 @@ Baixe esta configuração de amostra para entender como configurar o RTE. Neste 
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Para criar seu próprio componente de texto, copie o componente acima em vez de editar esses componentes.
 
 ## Configurar a barra de ferramentas RTE {#dialogfullscreen}
 
-O AEM permite que você configure a interface para o Editor de RichText de forma diferente para os diferentes modos de edição. As configurações padrão são fornecidas abaixo. É possível substituir esses padrões com base em seus requisitos.
+AEM permite que você configure a interface para o Editor de RichText de forma diferente para os diferentes modos de edição. As configurações padrão são fornecidas abaixo. É possível substituir esses padrões com base em seus requisitos.
 
 Para obter a melhor experiência de criação:
 
@@ -243,7 +248,7 @@ Para obter a melhor experiência de criação:
 </uiSettings>
 ```
 
-Diferentes configurações de interface são usadas para o modo em linha e para o modo de tela cheia. A propriedade da barra de ferramentas é usada para especificar os botões da barra de ferramentas. Por exemplo, se o botão for um recurso (por exemplo, `Bold`), ele será especificado como `PluginName#FeatureName` (por exemplo, `links#modifylink`). Se o botão for um pop-up (contendo alguns recursos de um plug-in), ele será especificado como `#PluginName` (por exemplo, `#format`). Separadores (| ) entre um grupo de botões pode ser especificado com &#39;-&#39;.
+Diferentes configurações de interface são usadas para o modo em linha e para o modo de tela cheia. A propriedade da barra de ferramentas é usada para especificar os botões da barra de ferramentas. Por exemplo, se o botão for um recurso (por exemplo, `Bold`), ele será especificado como `PluginName#FeatureName` (por exemplo, `links#modifylink`). Se o botão for um pop-up (contendo alguns recursos de um plug-in), ele será especificado como `#PluginName` (por exemplo, `#format`). Separadores ( | ) entre um grupo de botões pode ser especificado com &#39;-&#39;.
 
 O nó pop-up no modo em linha ou em tela cheia contém uma lista das opções que estão sendo usadas. Cada nó filho sob o `popovers` nó é nomeado após o plug-in (por exemplo, `format`). Ela tem uma propriedade `items` que contém uma lista de recursos do plug-in (por exemplo, `format#bold`).
 
@@ -251,7 +256,7 @@ O nó pop-up no modo em linha ou em tela cheia contém uma lista das opções qu
 
 Os administradores podem controlar as opções de RTE usando políticas de conteúdo, digamos, em vez de fazer a configuração conforme descrito acima. As políticas de conteúdo definem as propriedades de design de um componente quando usadas como parte de um modelo [](../sites-authoring/templates.md)editável. Por exemplo, se um componente de texto que usa o RTE for usado com um modelo editável, a política de conteúdo poderá definir que a opção em negrito esteja disponível e algumas opções de formatação de parágrafo estarão disponíveis. As políticas de conteúdo são reutilizáveis e podem ser aplicadas em vários modelos.
 
-A partir do AEM 6.4 Service Pack 3, as opções disponíveis no RTE fluem a jusante das configurações da interface do usuário para as políticas de conteúdo.
+AEM 6.4 do Service Pack 3 em diante, as opções disponíveis no RTE fluem para jusante das configurações da interface do usuário para as políticas de conteúdo.
 
 * As configurações da interface do usuário definem quais opções estão disponíveis para as políticas de conteúdo.
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
@@ -296,7 +301,7 @@ Em uma página, você pode incluir a clientlib do RTE CoralUI 2 ou a clientlib d
 
 >[!NOTE]
 >
->A Adobe não recomenda a alternância como prática recomendada. Alternar para RTE CoralUI 2 como último recurso. Os plug-ins personalizados para o RTE CoralUI 2 funcionam com o RTE CoralUI 3 se os plug-ins não dependerem dos internos do RTE, como classes. Se você estiver usando plug-ins personalizados para o RTE CoralUI 3, use a `rte.coralui3` biblioteca.
+>O Adobe não recomenda a troca como uma prática recomendada. Alternar para RTE CoralUI 2 como último recurso. Os plug-ins personalizados para o RTE CoralUI 2 funcionam com o RTE CoralUI 3 se os plug-ins não dependerem dos internos do RTE, como classes. Se você estiver usando plug-ins personalizados para o RTE CoralUI 3, use a `rte.coralui3` biblioteca.
 
 1. Sobreponha o nó `/libs/cq/gui/components/authoring/editors/clientlibs/core` em `/apps`, e faça o seguinte:
 
@@ -334,11 +339,11 @@ As opções acima podem ser usadas para estender e personalizar seu próprio RTE
 
 ## Limitações conhecidas {#known-limitations}
 
-O recurso RTE AEM tem as seguintes limitações:
+AEM capacidade RTE tem as seguintes limitações:
 
-* Os recursos do RTE são suportados apenas nas caixas de diálogo de componentes do AEM. O RTE não é compatível com assistentes ou formulários básicos, como Propriedades [da](/help/sites-developing/page-properties-views.md) página e [Andaime](/help/sites-authoring/scaffolding.md) na interface habilitada para toque.
+* Os recursos do RTE são suportados apenas nas caixas de diálogo AEM componente. O RTE não é compatível com assistentes ou formulários básicos, como Propriedades [da](/help/sites-developing/page-properties-views.md) página e [Andaime](/help/sites-authoring/scaffolding.md) na interface habilitada para toque.
 
-* O AEM não funciona em dispositivos [](/help/release-notes/known-issues.md)híbridos.
+* AEM não funciona em dispositivos [](/help/release-notes/known-issues.md)híbridos.
 
 * Não nomeie o nó de configuração RTE `config`. Caso contrário, a configuração do RTE entrará em vigor somente para os administradores e não para os usuários do grupo `content-author`.
 
