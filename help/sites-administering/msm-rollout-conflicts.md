@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Para garantir que a implementação não seja bloqueada, as possíveis definiç�
 * quais páginas serão renomeadas (e como),
 * como isso afetará qualquer conteúdo publicado.
 
-   O comportamento padrão do AEM (predefinido) é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na live copy branch tiver sido publicada, esse conteúdo ainda será publicado após o manuseio e a implementação de conflitos.
+   O comportamento padrão da AEM (out-of-the-box) é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na live copy branch tiver sido publicada, esse conteúdo ainda será publicado após o manuseio e a implementação de conflitos.
 
 Além da funcionalidade padrão, os manipuladores de conflitos personalizados podem ser adicionados para implementar regras diferentes. Eles também podem permitir ações de publicação como um processo individual.
 
@@ -41,7 +44,7 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criada tanto no
 
 * blueprint: `/b`
 
-   Uma página mestre; com 1 página secundária, bp-level-1.
+   Uma página principal; com 1 página secundária, bp-level-1.
 
 * live copy: `/b`
 
@@ -77,19 +80,19 @@ O gerenciador de roll-out permite ativar ou desativar o gerenciamento de conflit
 
 Isso é feito usando a configuração [](/help/sites-deploying/configuring-osgi.md) OSGi do **Day CQ WCM Rollout Manager**:
 
-* **Tratar o conflito com páginas** criadas manualmente:
+* **Lidar com o conflito com páginas** criadas manualmente:
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
    Defina como true se o gerenciador de roll-out deve lidar com conflitos de uma página criada na live copy com um nome que existe no blueprint.
 
-O AEM tem comportamento [predefinido quando o gerenciamento de conflitos é desativado](#behavior-when-conflict-handling-deactivated).
+AEM tem comportamento [predefinido quando o gerenciamento de conflitos é desativado](#behavior-when-conflict-handling-deactivated).
 
 ## Manipuladores de conflito {#conflict-handlers}
 
-O AEM usa manipuladores de conflitos para resolver quaisquer conflitos de página que existam ao implantar conteúdo de um blueprint em uma live copy. Renomear páginas é um método (o normal) para resolver esses conflitos. Mais de um manipulador de conflitos pode estar operacional para permitir uma seleção de comportamentos diferentes.
+AEM usa manipuladores de conflitos para resolver quaisquer conflitos de página que existam ao implantar conteúdo de um blueprint em uma live copy. Renomear páginas é um método (o normal) para resolver esses conflitos. Mais de um manipulador de conflitos pode estar operacional para permitir uma seleção de comportamentos diferentes.
 
-O AEM fornece:
+AEM fornece:
 
 * O manipulador de conflitos [padrão](#default-conflict-handler):
 
@@ -102,7 +105,7 @@ O AEM fornece:
 
 O manipulador de conflitos padrão:
 
-* É chamado `ResourceNameRolloutConflictHandler`
+* É chamado de `ResourceNameRolloutConflictHandler`
 
 * Com esse manipulador, a página de blueprint tem prioridade.
 * A classificação de serviço para este manipulador está definida como baixa ( &quot;ou seja, abaixo do valor padrão para a `service.ranking` propriedade), pois a suposição é que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessário.
@@ -129,8 +132,8 @@ Este manipulador de conflitos dá prioridade ao projeto. A página de live copy 
    <td><strong>blueprint após o lançamento</strong></td> 
    <td><strong>live copy após o lançamento</strong><br /> </td> 
    <td></td>
-   <td><strong>live copy após o lançamento</strong><br /> <br /><br /> </td> 
-   <td><strong>publicar após a implantação</strong><br /><br /> </td> 
+   <td><strong>live copy após o lançamento</strong><br /> <br /> <br /> </td> 
+   <td><strong>publicar após a implementação</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
@@ -167,11 +170,11 @@ Os manipuladores de conflitos personalizados podem:
 
 ### Comportamento ao lidar com conflitos desativado {#behavior-when-conflict-handling-deactivated}
 
-Se você [desativar manualmente a manipulação](#rollout-manager-and-conflict-handling) de conflitos, o AEM não executará nenhuma ação em páginas conflitantes (as páginas não conflitantes são implantadas conforme esperado).
+Se você [desativar manualmente a manipulação](#rollout-manager-and-conflict-handling) de conflitos, AEM não executará nenhuma ação em páginas conflitantes (páginas não conflitantes são implantadas conforme esperado).
 
 >[!CAUTION]
 >
->O AEM não fornece nenhuma indicação de que os conflitos estão sendo ignorados, pois esse comportamento deve ser configurado explicitamente, portanto, presume-se que seja o comportamento necessário.
+>AEM não fornece nenhuma indicação de que os conflitos estão sendo ignorados, pois esse comportamento deve ser configurado explicitamente, portanto, presume-se que seja o comportamento necessário.
 
 Nesse caso, a live copy tem prioridade efetiva. A página de blueprint não `/b` é copiada e a página de live copy não `/b` é tocada.
 
@@ -190,8 +193,8 @@ Nesse caso, a live copy tem prioridade efetiva. A página de blueprint não `/b`
  <tbody> 
   <tr> 
    <td><strong>blueprint após o lançamento</strong></td> 
-   <td><strong>live copy após o lançamento</strong><br /> <br /><br /> </td> 
-   <td><strong>publicar após a implantação</strong><br /><br /> </td> 
+   <td><strong>live copy após o lançamento</strong><br /> <br /> <br /> </td> 
+   <td><strong>publicar após a implementação</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
