@@ -4,17 +4,20 @@ description: Saiba como fazer check-out dos ativos para edição e check-in dele
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 4%
 
 ---
 
 
 # Arquivos de check-in e check-out em Ativos {#check-in-and-check-out-files-in-assets}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos ativos para edição e check-in deles novamente após concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo novamente nos ativos AEM. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
+Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos ativos para edição e check-in deles novamente após concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo de volta para a AEM Assets. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
 
 Para poder fazer check-out ou check-in de ativos, é necessário ter acesso de gravação neles.
 
-Esse recurso ajuda a impedir que outros usuários substituam as alterações feitas por um autor, onde vários usuários colaboram na edição de fluxos de trabalho entre equipes.
+Esse recurso ajuda a impedir que outros usuários substituam as alterações feitas por um autor, onde vários usuários colaboram na edição de workflows entre equipes.
 
 ## Ativos de check-out {#checking-out-assets}
 
@@ -38,7 +41,7 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   No entanto, você pode clicar/tocar no ícone **[!UICONTROL Exibir propriedades]** para editar os metadados do ativo bloqueado.
+   No entanto, você pode clicar/tocar no ícone Propriedades **[!UICONTROL da]** Visualização para editar os metadados do ativo bloqueado.
 
 1. Clique/toque no ícone Editar para abrir o ativo no modo de edição.
 
@@ -54,13 +57,13 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   O ativo modificado é feito check-in nos ativos AEM e está disponível para outros usuários para edição.
+   O ativo modificado é feito check-in no AEM Assets e está disponível para outros usuários para edição.
 
 ## Check-in forçado {#forced-check-in}
 
 Os administradores podem fazer check-in de ativos cujo check-in foi feito por outros usuários.
 
-1. Faça logon nos ativos AEM como administrador.
+1. Faça logon na AEM Assets como administrador.
 1. Na interface do usuário do Assets, selecione um ou mais ativos cujo check-out foi feito por outros usuários.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
