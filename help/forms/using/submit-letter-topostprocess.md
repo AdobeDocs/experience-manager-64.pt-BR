@@ -1,8 +1,8 @@
 ---
 title: Pós-processamento de cartas e comunicações interativas
 seo-title: Pós-processamento de cartas
-description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de publicação do AEM e do Forms, como impressão e-mail, e integrá-los às suas cartas.
-seo-description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de publicação do AEM e do Forms, como impressão e-mail, e integrá-los às suas cartas.
+description: O pós-processamento de cartas no Gerenciamento de correspondência permite que você crie processos de publicação do AEM e do Forms, como impressão e email, e integre-os com suas cartas.
+seo-description: O pós-processamento de cartas no Gerenciamento de correspondência permite que você crie processos de publicação do AEM e do Forms, como impressão e email, e integre-os com suas cartas.
 uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -27,37 +27,37 @@ Os agentes podem associar e executar workflows de pós-processamento em letras e
 
 Para associar processos de publicação a letras ou comunicações interativas, primeiro é necessário configurar os processos de publicação. Dois tipos de workflows podem ser executados em cartas enviadas:
 
-1. **Fluxo de trabalho dos formulários:** Estes são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configurar o fluxo de trabalho [do](#formsworkflow)Forms.
+1. **Forms Workflow:** Estes são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configurar o [Forms Workflow](#formsworkflow).
 
-1. **Fluxo de trabalho do AEM:** workflows AEM também podem ser usados como processos de publicação para cartas enviadas. Instruções para configurar o fluxo de trabalho [do](/help/forms/using/aem-forms-workflow.md)AEM.
+1. **Fluxo de trabalho AEM:** AEM workflows também podem ser usados como processos de publicação para cartas enviadas. Instruções para configurar [AEM fluxo de trabalho](/help/forms/using/aem-forms-workflow.md).
 
 ## Fluxo de trabalho dos formulários {#formsworkflow}
 
-1. No AEM, abra a Configuração do console da Web do Adobe Experience Manager para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Gerenciador de configuração](assets/2configmanager-1.png)
 
-1. Nesta página, localize a Configuração do SDK do cliente do AEM Forms e expanda-a clicando nela.
-1. No URL do servidor, insira o nome dos formulários AEM no servidor JEE, os detalhes de logon e clique em **Salvar**.
+1. Nesta página, localize a Configuração do SDK do AEM Forms Client e expanda-a clicando nela.
+1. No URL do servidor, digite o nome do AEM Forms no servidor JEE, os detalhes de login e clique em **Salvar**.
 
-   ![Digite o nome do servidor do LiveCycle](assets/1cofigmanager.png)
+   ![Digite o nome do servidor de LiveCycles](assets/1cofigmanager.png)
 
 1. Especifique o nome de usuário e a senha.
 1. Certifique-se de que sun.util.calendário é adicionado à Configuração do Firewall de Deserialização.
 
    Vá para Configuração do firewall de desserialização e, em Classes da lista de permissões dos prefixos do pacote, adicione sun.util.calendário.
 
-1. Agora seus servidores são mapeados e os processos de publicação no AEM Forms no JEE estão disponíveis na interface do usuário do AEM ao criar cartas.
+1. Agora seus servidores são mapeados e os processos de publicação no AEM Forms no JEE estão disponíveis na interface do usuário AEM ao criar letras.
 
    ![Criar tela de carta com processos de postagem listados](assets/0configmanager.png)
 
-1. Para autenticar um processo/serviço, copie o nome de um processo e volte para a página Configurações do console da Web do Adobe Experience Manager > Configuração do SDK do cliente do AEM Forms e adicione o processo como um novo serviço.
+1. Para autenticar um processo/serviço, copie o nome de um processo e volte para a página Configurações do Adobe Experience Manager Web Console > Configuração do AEM Forms Client SDK e adicione o processo como um novo serviço.
 
-   Por exemplo, se a lista suspensa na página Propriedades da letra exibir o nome do processo como Fluxo de trabalho do Forms -> ValidCCPostProcess/SaveXML, adicione um Nome de serviço como `ValidCCPostProcess/SaveXML`.
+   Por exemplo, se o menu suspenso na página Propriedades da letra exibir o nome do processo como Forms Workflow -> ValidCCPostProcess/SaveXML, adicione um Nome de serviço como `ValidCCPostProcess/SaveXML`.
 
 1. Para usar o AEM Forms em workflows JEE para pós-processamento, configure os parâmetros e as saídas necessários. Os valores padrão dos parâmetros são indicados abaixo.
 
-   Acesse a página Configurações do console da Web do Adobe Experience Manager > Configurações **[!UICONTROL de gerenciamento de]** correspondência e configure os seguintes parâmetros:
+   Vá para a página Configurações do Adobe Experience Manager Web Console > Configurações **[!UICONTROL do Gerenciamento de]** Correspondência e configure os seguintes parâmetros:
 
    1. **inPDFDoc (parâmetro de documento PDF):** Um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetros indicados são configuráveis. Eles podem ser configurados nas configurações do Gerenciamento de correspondência a partir da configuração.
    1. **inXMLDoc (parâmetro de dados XML):** Um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário na forma de XML.
@@ -71,11 +71,11 @@ Para associar processos de publicação a letras ou comunicações interativas, 
 
 1. login em `http://localhost:publishport/aem/forms`.
 1. Navegue até **[!UICONTROL Cartas]** para visualização da carta publicada que está disponível na instância de publicação.
-1. Configure as configurações do AEM DS. Consulte [Definição das configurações](/help/forms/using/configuring-the-processing-server-url-.md)do AEM DS.
+1. Configure as configurações do AEM DS. Consulte [Configuração AEM configurações](/help/forms/using/configuring-the-processing-server-url-.md)do DS.
 
 >[!NOTE]
 >
->Ao usar o Forms ou workflows AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Caso contrário, a apresentação do formulário não será efetuada.
+>Ao usar workflows Forms ou AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Caso contrário, a apresentação do formulário não será efetuada.
 
 ## Recuperação de instâncias de carta {#letter-instances-retrieval}
 
@@ -117,9 +117,9 @@ Na interface do usuário do CCR, conclua as seguintes etapas para associar um pr
 
 1. Passe o mouse sobre uma letra e toque em Propriedades **da** Visualização.
 1. Selecione **Editar**.
-1. Nas Propriedades básicas, usando o menu suspenso Processo de publicação, selecione o processo de publicação a ser associado à letra. Os processos de publicação relacionados ao AEM e ao Forms são listados na lista suspensa.
+1. Nas Propriedades básicas, usando o menu suspenso Processo de publicação, selecione o processo de publicação a ser associado à letra. Os processos de publicação relacionados ao AEM e ao Forms estão listados na lista suspensa.
 1. Toque em **Salvar**.
-1. Depois de configurar a carta com o Processo de publicação, publique a carta e, opcionalmente, na instância de publicação, especifique o URL de processamento no serviço de Configurações do AEM DS. Isso garante que o processo de publicação seja executado na instância de processamento.
+1. Depois de configurar a carta com o Processo de publicação, publique a carta e, opcionalmente, na instância de publicação, especifique o URL de processamento no serviço de Configurações AEM DS. Isso garante que o processo de publicação seja executado na instância de processamento.
 
 ## Recarregar uma instância de carta de rascunho  {#reloaddraft}
 
