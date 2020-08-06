@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 2%
 
 ---
 
@@ -27,11 +30,11 @@ Consulte a Visão geral [do](https://jackrabbit.apache.org/filevault/overview.ht
 
 ## Introdução ao VLT {#getting-started-with-vlt}
 
-Para começar a usar o VLT, é necessário fazer o seguinte:
+Para start usando o VLT, é necessário fazer o seguinte:
 
-1. Instale o VLT, atualize as variáveis de ambiente e atualize os arquivos de subversão globais ignorados.
-1. Configure o repositório do AEM (caso ainda não tenha feito isso).
-1. Verifique o repositório do AEM.
+1. Instale o VLT, atualize as variáveis do ambiente e atualize os arquivos de subversão globais ignorados.
+1. Configure o repositório AEM (se você ainda não tiver feito isso).
+1. Verifique o repositório AEM.
 1. Sincronizar com o repositório.
 1. Teste se a sincronização funcionou.
 
@@ -44,7 +47,7 @@ Para usar a ferramenta VLT, primeiro é necessário instalá-la. Por padrão, el
    >
    >A origem da ferramenta VLT está [disponível no GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Extraia o arquivo.
-1. Adicione `<archive-dir>/vault-cli-<version>/bin` ao seu ambiente `PATH` para que os arquivos de comando `vlt` ou `vlt.bat` sejam acessados conforme apropriado. Por exemplo:
+1. Adicione `<archive-dir>/vault-cli-<version>/bin` ao seu ambiente para `PATH` que os arquivos de comando `vlt` ou `vlt.bat` sejam acessados conforme apropriado. Por exemplo:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -211,7 +214,7 @@ Options:
   <local-path>            the local path
 ```
 
-## Tarefas Comuns Executadas no VLT {#common-tasks-performed-in-vlt}
+## Tarefas comuns executadas em VLT {#common-tasks-performed-in-vlt}
 
 Veja a seguir algumas tarefas comuns executadas no VLT. Para obter informações detalhadas sobre cada comando, consulte os [comandos](#vlt-commands)individuais.
 
@@ -388,7 +391,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Check-out (co) {#checkout-co}
 
-Realiza uma verificação inicial de um repositório JCR para o sistema de arquivos local, iniciando em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Você também pode adicionar um argumento &lt;jcrPath> para fazer check-out de um subdiretório da árvore remota. É possível especificar filtros de espaço de trabalho que são copiados para o diretório META-INF.
+Realiza uma verificação inicial de um repositório JCR para o sistema de arquivos local, iniciando em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Você também pode adicionar um argumento &lt;jcrPath> para fazer check-out de um subdiretório da árvore remota. É possível especificar filtros do espaço de trabalho que são copiados para o diretório META-INF.
 
 #### Sintaxe {#syntax-2}
 
@@ -403,7 +406,7 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 | `--force` | força o check-out para substituir arquivos locais se eles já existirem |
 | `-v (--verbose)` | saída detalhada |
 | `-q (--quiet)` | imprime o mínimo possível |
-| `-f (--filter) <file>` | especifica os filtros automáticos se nenhum estiver definido |
+| `-f (--filter) <file>` | especifica filtros automáticos se nenhum estiver definido |
 | `<uri>` | uri ponto de montagem |
 | `<jcrPath>` | (opcional) caminho remoto |
 | `<localPath>` | (opcional) caminho local |
@@ -604,7 +607,7 @@ proplist -q|-R <file1> [<file2> ...]
 |--- |--- |
 | `-q (--quiet)` | imprime o mínimo possível |
 | `-R (--recursive)` | descendente recursivamente |
-| `<file> [<file> ...]` | arquivo ou diretório do qual listar as propriedades |
+| `<file> [<file> ...]` | arquivo ou diretório de onde as propriedades serão listas |
 
 ### Propset {#propset}
 
@@ -890,7 +893,7 @@ Para configurar um ambiente de desenvolvimento com base em uma pasta de sincroni
 
    >[!NOTE]
    >
-   >Você pode usar filtros para verificar apenas os caminhos apropriados. Consulte a seção [Executando uma finalização](#performing-a-filtered-checkout) filtrada para obter informações.
+   >Você pode usar filtros para fazer check-out somente dos caminhos apropriados. Consulte a seção [Executando uma finalização](#performing-a-filtered-checkout) filtrada para obter informações.
 
 1. Vá para a pasta raiz da sua cópia de trabalho:
 
