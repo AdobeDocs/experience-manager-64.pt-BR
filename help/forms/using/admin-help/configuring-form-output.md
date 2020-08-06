@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
@@ -22,21 +25,21 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 1. No console de administração, clique em Serviços > formulários.
 1. Em Saída de formulário, na lista Tipo de saída, selecione uma das seguintes opções:
 
-   **** HTML completo: Para renderizar o formulário com tags HTML completas (uma página HTML completa). Esse valor é o padrão.
+   **HTML completo:** Para renderizar o formulário com tags HTML completas (uma página HTML completa). Esse valor é o padrão.
 
-   **** Corpo do formulário: Para renderizar o formulário dentro de `<BODY>` tags (não uma página HTML completa).
+   **Corpo do formulário:** Para renderizar o formulário dentro de `<BODY>` tags (não uma página HTML completa).
 
 1. Clique em Salvar.
 
 ## Especificar o local onde o conteúdo PDF é renderizado {#specify-the-location-where-pdf-content-is-rendered}
 
-1. Em Saída de formulário, na lista Renderizar em, selecione uma das seguintes opções:
+1. Em Saída de formulário, na Renderização na lista, selecione uma das seguintes opções:
 
-   **** Cliente: Para renderizar formulários PDF no Adobe Acrobat ou Adobe Reader. A renderização no cliente melhora o desempenho dos formulários AEM e se aplica somente à transformação PDFForm.
+   **Cliente:** Para renderizar PDF forms no Adobe Acrobat ou Adobe Reader. A renderização no cliente melhora o desempenho de formulários AEM e se aplica somente à transformação PDFForm.
 
-   **** Servidor: Para renderizar formulários PDF no servidor de aplicativos.
+   **Servidor:** Para renderizar PDF forms no servidor de aplicativos.
 
-   **** Automático: Para renderizar o formulário PDF no local especificado pelo valor de `dynamicRender` configuração do arquivo XDP. Esse valor é o padrão.
+   **Automático:** Para renderizar o formulário PDF no local especificado pelo valor de `dynamicRender` configuração do arquivo XDP. Esse valor é o padrão.
 
 1. Clique em Salvar.
 
