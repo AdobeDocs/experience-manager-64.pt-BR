@@ -1,8 +1,8 @@
 ---
 title: Como o Relatórios de processo funciona
 seo-title: Como o Relatórios de processo funciona
-description: Descrição dos serviços que compõem o Relatórios AEM Forms no JEE Process e uma introdução à interface do usuário do Process Relatórios
-seo-description: Descrição dos serviços que compõem o Relatórios AEM Forms no JEE Process e uma introdução à interface do usuário do Process Relatórios
+description: Descrição dos serviços que compõem o Relatórios AEM Forms on JEE Process e uma introdução à interface do Relatórios Process
+seo-description: Descrição dos serviços que compõem o Relatórios AEM Forms on JEE Process e uma introdução à interface do Relatórios Process
 uuid: 4631b734-a679-495c-a708-2348bf22c1f7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 0%
 
 ---
 
 
 # Como o Relatórios de processo funciona {#how-process-reporting-works}
 
-Process Relatórios é o módulo relatórios do AEM Forms no JEE.
+O Process Relatórios é o módulo relatórios do AEM Forms no JEE.
 
-O Process Relatórios permite que você execute relatórios em processos e tarefas do AEM Forms.
+O Process Relatórios permite que você execute relatórios em processos e tarefas AEM Forms.
 
-O Relatórios Process usa o repositório incorporado do Relatórios Process para publicar dados do Forms. Em seguida, ele usa esses dados para executar relatórios.
+O Process Relatórios usa o repositório incorporado do Process Relatórios para publicar dados do Forms. Em seguida, ele usa esses dados para executar relatórios.
 
 O Relatórios de processo consiste nos seguintes módulos:
 
@@ -38,7 +41,7 @@ O Relatórios de processo consiste nos seguintes módulos:
 
 ### Serviço ProcessDataPublisher {#processdatapublisher-service-br}
 
-O servidor ProcessDataPublisher é executado periodicamente no banco de dados do AEM Forms e extrai os dados que foram alterados desde a última execução do serviço. Em seguida, publica os dados no serviço de Armazenamento de Dados do Processo.
+O servidor ProcessDataPublisher é executado periodicamente no banco de dados AEM Forms e extrai os dados que foram alterados desde a última execução do serviço. Em seguida, publica os dados no serviço de Armazenamento de Dados do Processo.
 
 Para obter detalhes sobre como configurar o serviço, consulte [Configurar o serviço](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)ProcessDataPublisher.
 
@@ -60,7 +63,7 @@ O serviço usa os serviços OSGi para obter os dados relevantes do relatórios, 
 
 ### Processar interface do usuário do Relatórios {#process-reporting-user-interface-br}
 
-A interface do usuário do Process Relatórios é uma interface baseada em navegador da Web. Use essa interface para visualização de informações de processo e tarefa publicadas no banco de dados do AEM Forms.
+A interface do usuário do Process Relatórios é uma interface baseada em navegador da Web. Use essa interface para visualização de informações de processo e tarefa publicadas no banco de dados da AEM Forms.
 
 ### Serviço QueryDataServlet {#querydataservlet-service-br-1}
 
