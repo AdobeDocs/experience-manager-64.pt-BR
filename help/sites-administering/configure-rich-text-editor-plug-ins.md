@@ -1,9 +1,12 @@
 ---
 title: Configurar os plug-ins do Editor de Rich Text
-description: Saiba como configurar os plug-ins do Editor de Rich Text do AEM para ativar funcionalidades individuais.
+description: Saiba como configurar os plug-ins do Editor de Rich Text AEM para ativar funcionalidades individuais.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+workflow-type: tm+mt
+source-wordcount: '4220'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +31,7 @@ Por padrão, `format`, `link`, `list`, `justify`, e `control` plug-ins e todos o
 >
 >O nó rtePlugins respectivo é conhecido como &lt;*rtePlugins-node*> para evitar a duplicação neste artigo.
 
-1. Usando o CRXDE Lite, localize o componente de texto para seu projeto.
+1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie o nó pai de `<rtePlugins-node>` se ele não existir, antes de configurar qualquer plug-in RTE:
 
    * Dependendo do seu componente, os nós principais são:
@@ -36,12 +39,12 @@ Por padrão, `format`, `link`, `list`, `justify`, e `control` plug-ins e todos o
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * um nó de configuração alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * São do tipo: **jcr:PrimaryType**`cq:Widget`
+   * São do tipo: **jcr:PrimaryType** `cq:Widget`
    * Ambas têm a seguinte propriedade:
 
       * **Nome** `name`
       * **Tipo** `String`
-      * **Valor**`./text`
+      * **Valor** `./text`
 
 
 1. Dependendo da interface para a qual você está configurando, crie um nó `<rtePlugins-node>`, se ele não existir:
@@ -99,11 +102,11 @@ Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir
 
 * **Modo** de navegador: Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas.
 
-* **Modo** de texto simples: Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM.
+* **Modo** de texto simples: Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir AEM componente.
 
 * **Modo** MS Word: Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida.
 
-### Configure as opções de Colagem disponíveis na barra de ferramentas do RTE {#configure-paste-options-available-on-the-rte-toolbar}
+### Configure as opções de Colagem disponíveis na barra de ferramentas do RTE  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Você pode fornecer alguns, todos ou nenhum desses três ícones aos seus autores na barra de ferramentas do RTE:
 
@@ -130,7 +133,7 @@ A configuração permite os três tipos de casos de uso a seguir:
 
 * Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas. Configurado usando `browser` abaixo.
 
-* Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM. Configurado usando `plaintext` abaixo.
+* Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir AEM componente. Configurado usando `plaintext` abaixo.
 
 * Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida. Configurado usando `wordhtml` abaixo.
 
@@ -143,16 +146,16 @@ A configuração permite os três tipos de casos de uso a seguir:
 
 ### Configurar os formatos permitidos ao colar conteúdo {#pasteformats}
 
-O modo colar como Microsoft Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa definir explicitamente quais estilos são permitidos ao colar no AEM a partir de outro programa, como o Microsoft Word.
+O modo colar como Microsoft Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa definir explicitamente quais estilos são permitidos ao colar em AEM de outro programa, como o Microsoft Word.
 
-Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar no AEM, você pode filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
+Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar em AEM, você poderá filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
 
 * [Texto](#pastemodes)
 * [Links](#linkstyles)
 
 Para links, também é possível definir os protocolos que são automaticamente aceitos.
 
-Para configurar quais formatos são permitidos ao colar texto no AEM a partir de outro programa:
+Para configurar quais formatos são permitidos ao colar texto em AEM de outro programa:
 
 1. Em seu componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. Crie um nó sob o `edit` nó para manter as regras de colagem HTML:
@@ -172,6 +175,7 @@ Para configurar quais formatos são permitidos ao colar texto no AEM a partir de
    * **Nome** `underline`
    * **Nome** `anchor` (para links e âncoras nomeadas)
    * **Nome** `image`
+
    Todas as propriedades são do **Tipo** , portanto, no `Boolean`Valor **** apropriado, você pode selecionar ou remover a marca de seleção para ativar ou desativar a funcionalidade.
 
    >[!NOTE]
@@ -290,6 +294,7 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
    * **Nome** `externalStyleSheets`
    * **Tipo** `String[]` (multistring; clique em **Vários** no CRXDE)
    * **Valor(es)** O caminho e o nome de arquivo de cada folha de estilos que você deseja incluir. Use caminhos do repositório.
+
    >[!NOTE]
    É possível adicionar referências a folhas de estilos adicionais a qualquer momento.
 
@@ -411,7 +416,7 @@ Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<
 
 ## Configurar caracteres especiais {#spchar}
 
-Em uma instalação padrão do AEM, quando o `misctools` plug-in está ativado para caracteres especiais (`specialchars`) uma seleção padrão está imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
+Em uma instalação padrão de AEM, quando o plug- `misctools` in está ativado para caracteres especiais (`specialchars`) uma seleção padrão está imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
 
 Você pode configurar o RTE para disponibilizar sua própria seleção de caracteres; definindo caracteres distintos ou uma sequência inteira.
 
@@ -425,7 +430,7 @@ Adicionar seus próprios caracteres especiais substitui a seleção padrão. Se 
 
    * **Nome** `features`
    * **Tipo** `String[]`
-   * **Valor**`specialchars`
+   * **Valor** `specialchars`
 
           (ou `String / *` se estiver aplicando todos os recursos para este plug-in)
 
@@ -469,10 +474,12 @@ No CRXDE, adicione um único caractere a ser disponibilizado na barra de ferrame
 1. Neste nó (nomeado de acordo com seu intervalo de caracteres especial), adicione as duas propriedades a seguir:
 
    * **Nome** `rangeStart`
+
       **Tipo** `Long`
       **Valor** da representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
+
       **Tipo** `Long`
       **Valor** da representação [Unicode](https://unicode.org/) (decimal) do último caractere no intervalo
 
@@ -486,7 +493,7 @@ No CRXDE, adicione um único caractere a ser disponibilizado na barra de ferrame
 
    ![Caracteres especiais disponíveis no RTE são exibidos aos autores em uma janela pop-up](assets/rtepencil.png)
 
-         Caracteres *especiais disponíveis no RTE são exibidos aos autores em uma janela pop-up*
+         *Caracteres especiais disponíveis no RTE são exibidos aos autores em uma janela pop-up*
 
 ## Configurar estilos de tabela {#tablestyles}
 
@@ -504,6 +511,7 @@ A cópia e colagem de tabelas no componente RTE ou a partir dele depende do nave
    * **Nome** `features`
    * **Tipo** `String`
    * **Valor** `*` (asterisco)
+
    >[!NOTE]
    Se você não quiser ativar todos os recursos da tabela, poderá criar a `features` propriedade como:
    * **Tipo** `String[]`
@@ -574,7 +582,7 @@ Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionário
 >[!NOTE]
 A mensagem `Spell checking failed` é exibida se uma verificação for feita para um idioma que não está instalado. Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
 
-Uma instalação padrão do AEM inclui os dicionários para inglês americano (`en_us`) e inglês britânico (`en_gb`). Para adicionar mais dicionários, siga estas etapas.
+Uma instalação padrão AEM inclui os dicionários para inglês americano (`en_us`) e inglês britânico (`en_gb`). Para adicionar mais dicionários, siga estas etapas.
 
 1. Navegue até a página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -647,6 +655,7 @@ Você pode definir a altura do espaço editável mostrado na caixa de diálogo d
    * **Nome** `height`
    * **Tipo** `Long`
    * **Valor** da altura da tela de edição em pixels
+
    >[!NOTE]
    Isso não altera a altura da janela de diálogo.
 
@@ -657,23 +666,25 @@ Isso só se aplica ao uso do RTE em uma caixa de diálogo (não na edição no l
 
 ## Configurar estilos e protocolos para links {#linkstyles}
 
-Ao adicionar links no AEM, você pode definir:
+Ao adicionar links em AEM, é possível definir:
 
 * Os estilos CSS a serem usados
 * Os protocolos aceitos automaticamente
 
-Para configurar como os links são adicionados no AEM a partir de outro programa, defina as regras HTML.
+Para configurar como os links são adicionados em AEM de outro programa, defina as regras HTML.
 
-1. Usando o CRXDE Lite, localize o componente de texto para seu projeto.
+1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie um novo nó no mesmo nível `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:
 
    * **Nome** `htmlRules`
    * **Tipo** `nt:unstructured`
+
    >[!NOTE]
    O `../items/text` nó tem a propriedade:
    * **Nome** `xtype`
    * **Tipo** `String`
-   * **Valor**`richtext`
+   * **Valor** `richtext`
+
    O local do `../items/text` nó pode variar, dependendo da estrutura da caixa de diálogo; dois exemplos incluem:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
@@ -710,6 +721,7 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
       * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
+
       No nó `targetConfig`: defina as propriedades necessárias:
 
       * Especifique o modo de público alvo:
