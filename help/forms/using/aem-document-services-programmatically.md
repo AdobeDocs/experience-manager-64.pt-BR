@@ -1,6 +1,6 @@
 ---
-title: Usar os serviços de Documento do AEM de forma programada
-seo-title: Usar os serviços de Documento do AEM de forma programada
+title: Uso AEM serviços de Documento programaticamente
+seo-title: Uso AEM serviços de Documento programaticamente
 description: Saiba como usar as APIs de serviços de Documento para assinar, criptografar e gerar documentos PDF digitalmente.
 seo-description: Saiba como usar as APIs de serviços de Documento para assinar, criptografar e gerar documentos PDF digitalmente.
 uuid: bf5ee197-4daf-4a64-8b6d-2c0d1f232b1c
@@ -17,9 +17,9 @@ ht-degree: 1%
 ---
 
 
-# Usar os serviços de Documento do AEM de forma programada {#using-aem-document-services-programmatically}
+# Uso AEM serviços de Documento programaticamente {#using-aem-document-services-programmatically}
 
-As classes de cliente necessárias para criar projetos Maven usando os serviços de Documento AEM estão disponíveis no jar SDK [do cliente do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms. Para obter informações sobre projetos maven, consulte [como criar seu projeto AEM usando o Maven](/help/sites-developing/ht-projects-maven.md).
+As classes de cliente necessárias para criar projetos Maven usando AEM Documento Services estão disponíveis no jar SDK [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms Client. Para obter informações sobre projetos maven, consulte [como criar seu projeto AEM usando o Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ O serviço DocAssurance inclui os seguintes serviços:
 
 * Serviço de assinatura
 * Serviço de criptografia
-* Serviço de extensão do Reader
+* serviço de Extensão Reader
 
 Você pode executar as seguintes operações usando o serviço DocAssurance:
 
@@ -1035,7 +1035,7 @@ public class ModifySignatureField {
 É possível proteger um documento PDF certificando-o com um tipo específico de assinatura chamada assinatura certificada. Uma assinatura certificada é diferenciada de uma assinatura digital destas maneiras:
 
 * Deve ser a primeira assinatura aplicada ao documento PDF. Em outras palavras, quando a assinatura certificada é aplicada, outros campos de assinatura no documento devem ser não assinados. Somente uma assinatura certificada é permitida em um documento PDF. Para assinar e certificar um documento PDF, certifique-o antes de assiná-lo. Depois de certificar um documento PDF, você pode assinar digitalmente campos de assinatura adicionais.
-* O autor ou o originador do documento pode especificar que o documento pode ser modificado de certas formas sem invalidar a assinatura certificada. Por exemplo, o documento pode permitir o preenchimento de formulários ou comentários. Se o autor especificar que determinada modificação não é permitida, o Acrobat impedirá que os usuários modifiquem o documento dessa forma. Se essas modificações forem feitas, a assinatura certificada será inválida. Além disso, o Acrobat emite um aviso quando um usuário abre o documento. (Com assinaturas não certificadas, as modificações não são impedidas e as operações normais de edição não invalidam a assinatura original.)
+* O autor ou o originador do documento pode especificar que o documento pode ser modificado de certas formas sem invalidar a assinatura certificada. Por exemplo, o documento pode permitir o preenchimento de formulários ou comentários. Se o autor especificar que uma determinada modificação não é permitida, a Acrobat impedirá os usuários de modificar o documento dessa forma. Se essas modificações forem feitas, a assinatura certificada será inválida. Além disso, a Acrobat emite um aviso quando um usuário abre o documento. (Com assinaturas não certificadas, as modificações não são impedidas e as operações normais de edição não invalidam a assinatura original.)
 * No momento da assinatura, o documento é verificado quanto a tipos específicos de conteúdo que podem tornar o conteúdo de um documento ambíguo ou enganoso. Por exemplo, uma anotação pode obscurecer algum texto em uma página que é importante para entender o que está sendo certificado. Pode ser fornecida uma explicação (atestado legal) sobre esse conteúdo.
 
 **Sintaxe**:
@@ -1067,7 +1067,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Inclui as opções necessárias para o Reader Estender um documento PDF</td> 
+   <td>Inclui as opções necessárias para a extensão de um documento PDF por Reader</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1341,7 +1341,7 @@ o SecureDocument permite criptografar, assinar/certificar e estender um Document
 
 **Criptografar documentos PDF com senha**
 
-Ao criptografar um documento PDF com uma senha, o usuário deve especificar a senha para abrir o documento PDF no Adobe Reader ou Acrobat. Além disso, antes que outra operação dos Serviços de Documento do AEM Forms use o documento, um documento PDF criptografado por senha deve ser desbloqueado.
+Ao criptografar um documento PDF com uma senha, o usuário deve especificar a senha para abrir o documento PDF no Adobe Reader ou Acrobat. Além disso, antes que outra operação do AEM Forms Documento Services use o documento, um documento PDF criptografado por senha deve ser desbloqueado.
 
 **Criptografar documentos PDF com certificados**
 
@@ -1366,9 +1366,9 @@ Além disso, listas de revogação de certificado (CRLs) fornecem informações 
 
 **Aplicar direitos de uso a documentos PDF**
 
-Você pode aplicar direitos de uso a documentos PDF usando a API do Reader Extensions Java Client e o serviço da Web. Os direitos de uso pertencem à funcionalidade que está disponível por padrão no Acrobat, mas não no Adobe Reader, como a capacidade de adicionar comentários a um formulário ou preencher campos de formulário e salvar o formulário. documentos PDF que têm direitos de uso aplicados a eles são chamados de documentos habilitados por direitos. Um usuário que abre um documento habilitado para direitos no Adobe Reader pode executar operações ativadas para esse documento específico.
+Você pode aplicar direitos de uso a documentos PDF usando a API Java Client do Reader Extensions e o serviço da Web. Os direitos de uso pertencem à funcionalidade que está disponível por padrão no Acrobat, mas não no Adobe Reader, como a capacidade de adicionar comentários a um formulário ou preencher campos de formulário e salvar o formulário. documentos PDF que têm direitos de uso aplicados a eles são chamados de documentos habilitados por direitos. Um usuário que abre um documento habilitado para direitos no Adobe Reader pode executar operações ativadas para esse documento específico.
 
-Para que o Reader possa Estender um documento PDF com um certificado, é necessário adicionar o certificado ao AEM Keystore.
+Antes de poder estender Reader a um documento PDF com um certificado, é necessário adicionar o certificado ao AEM Keystore.
 
 **Assinatura digital de documentos PDF**
 
@@ -1382,11 +1382,11 @@ A chave pública é armazenada no certificado do usuário que deve estar dispon�
 
 >[!NOTE]
 >
->Antes de poder assinar digitalmente um documento PDF, é necessário adicionar a credencial ao AEM Keystore. A credencial é a chave privada usada para assinatura.
+>Antes de poder assinar digitalmente um documento PDF, é necessário adicionar a credencial AEM Keystore. A credencial é a chave privada usada para assinatura.
 
 >[!NOTE]
 >
->O AEM Forms também é compatível com a especificação *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*para assinatura digital de documentos PDF.
+>A AEM Forms também é compatível com a especificação *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*para assinatura digital de documentos PDF.
 
 **Como certificar Documentos PDF**
 
@@ -1402,7 +1402,7 @@ O autor ou o originador do documento pode especificar que o documento pode ser m
 
 Por exemplo, o documento pode permitir o preenchimento de formulários ou comentários. Se o autor especificar que uma determinada modificação não é permitida,
 
-O Acrobat impede que os usuários modifiquem o documento dessa forma. Se tais modificações forem feitas, como ao usar outro aplicativo, a assinatura certificada será inválida e o Acrobat emitirá um aviso quando um usuário abrir o documento. (Com assinaturas não certificadas, as modificações não são impedidas e as operações normais de edição não invalidam a assinatura original.)
+A Acrobat impede que os usuários modifiquem o documento dessa forma. Se tais modificações forem feitas, como ao usar outro aplicativo, a assinatura certificada será inválida e a Acrobat emitirá um aviso quando um usuário abrir o documento. (Com assinaturas não certificadas, as modificações não são impedidas e as operações normais de edição não invalidam a assinatura original.)
 
 No momento da assinatura, o documento é verificado quanto a tipos específicos de conteúdo que podem tornar o conteúdo de um documento ambíguo ou enganoso.
 
@@ -1410,7 +1410,7 @@ Por exemplo, uma anotação pode obscurecer algum texto em uma página que é im
 
 >[!NOTE]
 >
->Antes de poder assinar digitalmente um documento PDF, é necessário adicionar a credencial ao AEM Keystore. A credencial é a chave privada usada para assinatura.
+>Antes de poder assinar digitalmente um documento PDF, é necessário adicionar a credencial AEM Keystore. A credencial é a chave privada usada para assinatura.
 
 
 **Sintaxe**:
@@ -1445,7 +1445,7 @@ secureDocument(Document inDoc,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Inclui as opções necessárias para o Reader Estender um documento PDF</td> 
+   <td>Inclui as opções necessárias para a extensão de um documento PDF por Reader</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1454,7 +1454,7 @@ secureDocument(Document inDoc,
  </tbody> 
 </table>
 
-**Amostra 1**: Este exemplo é usado para executar a criptografia de senha, certificando um campo de assinatura e o Reader Extending the PDF documento.
+**Amostra 1**: Este exemplo é usado para executar a criptografia de senha, certificando um campo de assinatura e o Reader Estendendo o documento PDF.
 
 ```
 /*************************************************************************
@@ -1756,7 +1756,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Amostra 2**: Essa amostra é usada para executar criptografia de PKI, assinar um campo de assinatura e Estender o documento PDF pelo Reader.
+**Amostra 2**: Essa amostra é usada para executar criptografia de PKI, assinar um campo de assinatura e Estender o documento PDF.
 
 ```java
 /*************************************************************************
@@ -2735,7 +2735,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Verificação de várias assinaturas digitais {#verifying-multiple-digital-signatures}
 
-O AEM permite que você verifique assinaturas digitais em documentos PDF. Um documento PDF pode conter várias assinaturas digitais se estiver sujeito a um processo comercial que exija assinaturas de vários assinantes. Por exemplo, uma transação financeira requer assinaturas tanto do agente de empréstimo como do gestor. Você pode usar a API do serviço de assinatura para verificar todas as assinaturas no documento PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, a Adobe recomenda que você a verifique.
+AEM permite que você verifique assinaturas digitais em documentos PDF. Um documento PDF pode conter várias assinaturas digitais se estiver sujeito a um processo comercial que exija assinaturas de vários assinantes. Por exemplo, uma transação financeira requer assinaturas tanto do agente de empréstimo como do gestor. Você pode usar a API do serviço de assinatura para verificar todas as assinaturas no documento PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, o Adobe recomenda que você a verifique.
 
 **Sintaxe**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -4546,7 +4546,7 @@ O serviço createPDF lança as seguintes exceções:
      <li>Sem segurança</li> 
      <li>Segurança de senha<br /> </li> 
      <li>Segurança de certificado<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li>Servidor de Política de Adobe</li> 
     </ul> <p>É um parâmetro opcional.</p> </td> 
   </tr> 
   <tr> 
@@ -4900,7 +4900,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-O serviço Distiller converte arquivos PostScript, Encapsulated PostScript (EPS) e PRN (Printer text files) em arquivos PDF. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e declarações. A conversão de documentos em PDF também permite que as empresas enviem aos seus clientes uma versão em papel e uma versão eletrônica de um documento. Os formatos de arquivo suportados são .ps, .eps e .prn. O serviço oferece suporte à seguinte API:
+O serviço Distiller converte arquivos PostScript, Encapsulated PostScript (EPS) e PRN (Printer text files, arquivos de texto da impressora) em arquivos PDF. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e declarações. A conversão de documentos em PDF também permite que as empresas enviem aos seus clientes uma versão em papel e uma versão eletrônica de um documento. Os formatos de arquivo suportados são .ps, .eps e .prn. O serviço oferece suporte à seguinte API:
 
 O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa são:
 
@@ -4959,7 +4959,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>Sem segurança</li> 
      <li>Segurança de senha<br /> </li> 
      <li>Segurança de certificado<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li>Servidor de Política de Adobe</li> 
     </ul> <p>É um parâmetro opcional.</p> </td> 
   </tr> 
   <tr> 
