@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 86%
 
 ---
 
@@ -36,6 +39,7 @@ Duas interfaces gráficas de usuário são fornecidas para isso e elas podem ser
    * Ela foi projetada para uso em dispositivos de desktop.
    * Não é mais mantida.
    * A documentação a seguir foca nesta interface clássica. Para obter informações sobre a criação na interface do usuário moderna com base em toque, consulte a [documentação de criação padrão](/help/sites-authoring/author.md).
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Interface do usuário habilitada para toque
@@ -46,8 +50,10 @@ Duas interfaces gráficas de usuário são fornecidas para isso e elas podem ser
    * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. A documentação a seguir foca na interface clássica.
 
    * Desktop:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Dispositivos tablet (ou desktop com menos de 1.024 pixels de largura):
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
