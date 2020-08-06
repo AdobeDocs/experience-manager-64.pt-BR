@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1fd28077-37a4-4cba-bbce-6d5b353f1e7d
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 0%
 
 ---
 
 
 # Adicionar e remover credenciais de nome de usuário e senha {#adding-and-removing-user-name-and-password-credentials}
 
-Na página Gerenciamento de armazenamento de confiança, é possível adicionar e remover credenciais de nome de usuário e senha usadas pelo serviço de formulários quando ele recebe uma solicitação com segurança de nível SOAP.
+Na página Gerenciamento de armazenamento de confiança, você pode adicionar e remover credenciais de nome de usuário e senha usadas pelo serviço Forms quando ele recebe uma solicitação com segurança no nível SOAP.
 
 ## Adicionar uma credencial de nome de usuário e senha {#add-a-user-name-and-password-credential}
 
