@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 5%
 
 ---
 
@@ -34,7 +37,7 @@ Esses erros podem ocorrer devido a um dos seguintes:
 
 ### Solução {#workaround}
 
-Verifique se o dicionário de dados que você está usando na carta está presente no servidor e não tem um sublinhado (_) no nome.
+Certifique-se de que o dicionário de dados que você está usando na carta esteja presente no servidor e não tenha um sublinhado (_) em seu nome.
 
 ## Erro ao visualizar uma carta {#error-when-previewing-a-letter}
 
