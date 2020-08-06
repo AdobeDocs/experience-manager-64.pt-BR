@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 
 É possível especificar a localidade usada ao renderizar um formulário PDF. Os campos em um formulário PDF usam a localidade especificada para exibir dados. Por exemplo, se a localidade estiver definida como alemão, o formulário usará separadores decimais alemães para valores numéricos. A localidade também é usada para enviar mensagens de validação para dispositivos cliente, como navegadores da Web, como parte das transformações HTML.
 
-1. No console de administração, clique em Serviços > Formulários.
+1. No console de administração, clique em Serviços > Forms.
 1. Em Internacionalização, na lista Idioma, selecione a localidade usada para renderizar um formulário. O valor padrão é inglês (Estados Unidos).
 1. Clique em Salvar.
 
@@ -29,7 +32,7 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 
 1. Em Internacionalização, na lista Conjunto de caracteres, selecione um conjunto de caracteres. Essa configuração depende da API usada, renderizeHTMLForm ou renderizePDFForm. Para especificar um conjunto de caracteres diferente dos listados, selecione Personalizado e especifique um valor de codificação na caixa exibida.
 
-   Para transformações HTML, os formulários AEM oferecem suporte a valores de codificação de caracteres definidos pelo `java.nio.charset` pacote. Se sFormPreference for PDFForm, somente conjuntos de caracteres específicos serão suportados. O conjunto de caracteres deve ser um nome canônico válido. O valor padrão é ISO-8859-1.
+   Para transformações HTML, os formulários AEM suportam valores de codificação de caracteres definidos pelo `java.nio.charset` pacote. Se sFormPreference for PDFForm, somente conjuntos de caracteres específicos serão suportados. O conjunto de caracteres deve ser um nome canônico válido. O valor padrão é ISO-8859-1.
 
 1. Clique em Salvar.
 
