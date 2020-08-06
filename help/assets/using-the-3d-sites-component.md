@@ -1,8 +1,8 @@
 ---
 title: Trabalhar com o componente Sites 3D
 seo-title: Trabalhar com o componente Sites 3D
-description: O AEM 3D inclui um componente AEM Sites que pode ser usado para implementar a visualização interativa de modelos 3D em páginas da Web.
-seo-description: O AEM 3D inclui um componente AEM Sites que pode ser usado para implementar a visualização interativa de modelos 3D em páginas da Web.
+description: AEM 3D inclui um componente AEM Sites que pode ser usado para implementar a visualização interativa de modelos 3D em páginas da Web.
+seo-description: AEM 3D inclui um componente AEM Sites que pode ser usado para implementar a visualização interativa de modelos 3D em páginas da Web.
 uuid: 4f06bab3-1e31-49ef-89e3-b26195966538
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1041'
+ht-degree: 0%
 
 ---
 
 
 # Trabalhar com o componente Sites 3D {#working-with-the-d-sites-component}
 
-O AEM 3D inclui um componente AEM Sites que você pode usar para implementar a visualização interativa de modelos 3D em páginas da Web.
+AEM 3D inclui um componente AEM Sites que você pode usar para implementar a visualização interativa de modelos 3D em páginas da Web.
 
-Depois de adicionar o componente 3D, você pode [exibir o ativo 3D nesse componente.](viewing-3d-assets.md)
+Depois de adicionar seu componente 3D, você pode [visualização o ativo 3D nesse componente.](viewing-3d-assets.md)
 
 ## Adicionar o componente 3D ao modelo de página {#adding-the-d-component-to-the-page-template}
 
@@ -36,7 +39,7 @@ Você deve ativar o componente 3D na página antes de colocá-lo em uma página.
 
    ![image2017-11-14_15-33-57](assets/image2017-11-14_15-33-57.png)
 
-1. Toque na região **[!UICONTROL Contêiner]** de layout para selecioná-lo.
+1. Toque na região do Container **** Layout para selecioná-lo.
 
 1. Toque no botão **[!UICONTROL Política]** para abrir o Editor **[!UICONTROL de]** políticas.
 1. Na seção **[!UICONTROL Propriedades]** , selecione a marca de seleção **[!UICONTROL 3D]** e, em seguida, toque em **[!UICONTROL Concluído]** para salvar as alterações e fechar o Editor **[!UICONTROL de]** políticas.
@@ -86,7 +89,7 @@ Você deve ativar o componente 3D na página antes de colocá-lo em uma página.
     <tr> 
     <td>Nome da fase</td> 
     <td><p>Selecione um Estágio 3D na lista de estágios disponíveis. O palco fornece fundo e iluminação.</p> <p>See <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">About the use of stages in AEM 3D Sites</a>.</p> </td> 
-    <td>Ignorado para ativos do Adobe Dimension.</td> 
+    <td>Ignorado para ativos Adobe Dimension.</td> 
     </tr> 
     <tr> 
     <td>Velocidade de rotação automática (RPM)</td> 
@@ -95,33 +98,33 @@ Você deve ativar o componente 3D na página antes de colocá-lo em uma página.
         <li>Definir um valor positivo para girar para a direita</li> 
         <li>Definir um valor negativo para girar para a esquerda</li> 
         <li>Defina um valor 0 para desativar a rotação automática.</li> 
-        </ul> <p>O padrão é 3 RPM, o equivalente a 20 segundos por revolução completa.<br /><br /> <strong> </strong>Observação: A velocidade de rotação assume uma taxa de quadros de 60/s. Normalmente, essa taxa é alcançada com modelos pequenos a moderadamente em hardware gráfico mais potente. Modelos maiores ou dispositivos mais lentos giram automaticamente em taxas mais baixas.</p> </td> 
-    <td>Ignorado para ativos do Adobe Dimension.</td> 
+        </ul> <p>O padrão é 3 RPM, o equivalente a 20 segundos por revolução completa.<br /> <br /> <strong>Observação:</strong> A velocidade de rotação assume uma taxa de quadros de 60/s. Normalmente, essa taxa é alcançada com modelos pequenos a moderadamente em hardware gráfico mais potente. Modelos maiores ou dispositivos mais lentos giram automaticamente em taxas mais baixas.</p> </td> 
+    <td>Ignorado para ativos Adobe Dimension.</td> 
     </tr> 
     <tr> 
     <td>Cor do botão de navegação</td> 
     <td>Use o seletor de cores para escolher a cor primária para os botões de controle do visualizador.</td> 
-    <td>Ignorado para ativos do Adobe Dimension.</td> 
+    <td>Ignorado para Adobe Dimension Assets.</td> 
     </tr> 
     <tr> 
     <td>Cor do cursor de navegação</td> 
     <td>Use o seletor de cores para escolher a cor de focagem/selecionada para os botões de controle do visualizador.</td> 
-    <td>Ignorado para ativos do Adobe Dimension.</td> 
+    <td>Ignorado para ativos Adobe Dimension.</td> 
     </tr> 
     <tr> 
     <td>Mostrar amostras</td> 
     <td>Para uso futuro.</td> 
-    <td>Ignorado para ativos do Adobe Dimension.</td> 
+    <td>Ignorado para ativos Adobe Dimension.</td> 
     </tr> 
     <tr> 
     <td>Mostrar predefinições de câmera GLTF</td> 
-    <td>Mostre ou oculte as predefinições da câmera que podem estar presentes nos ativos do Adobe Dimension.</td> 
-    <td>Somente para ativos do Adobe Dimension.</td> 
+    <td>Mostre ou oculte as predefinições da câmera que podem estar presentes nos ativos Adobe Dimension.</td> 
+    <td>Somente para ativos Adobe Dimension.</td> 
     </tr> 
     <tr> 
-    <td>Cor de fundo GLTF</td> 
+    <td>Cor de plano de fundo GLTF</td> 
     <td>Cor de plano de fundo padrão se o modelo 3D não incluir um plano de fundo.</td> 
-    <td>Somente para ativos do Adobe Dimension.</td> 
+    <td>Somente para ativos Adobe Dimension.</td> 
     </tr> 
     </tbody> 
    </table>
@@ -139,25 +142,25 @@ Consulte Configurações [](advanced-config-3d.md) avançadas para obter informa
 
    ![screen_shot_2017-12-11at124258](assets/screen_shot_2017-12-11at124258.png)
 
-1. Procure ou role até o ativo 3D que você deseja visualizar na página que está sendo editada.
+1. Procure ou role até o ativo 3D que você deseja que seja visualização na página que está sendo editada.
 
 1. Arraste o ativo 3D da lista **[!UICONTROL Ativos]** para o componente Visualizador **** 3D colocado anteriormente na página.
 
-   Os ativos do Adobe Dimension são renderizados usando a nova tecnologia do visualizador com base no padrão aberto glTF, enquanto todos os outros tipos de ativos 3D dependem do visualizador clássico do AEM 3D webGL. O componente seleciona automaticamente o visualizador apropriado com base no tipo de modelo 3D.
+   Os ativos Adobe Dimension são renderizados usando a nova tecnologia de visualizador com base no padrão aberto glTF, enquanto todos os outros tipos de ativos 3D dependem do visualizador clássico AEM webGL 3D. O componente seleciona automaticamente o visualizador apropriado com base no tipo de modelo 3D.
 
 ## Visualização de uma página da Web que tenha um componente 3D {#previewing-a-web-page-that-has-a-d-component}
 
 Enquanto a página da Web está no modo **[!UICONTROL Editar]** , o componente 3D exibe o modelo 3D, mas nenhuma interação com o modelo é possível.
 
-Você pode visualizar a página da Web no editor de páginas com total acesso à funcionalidade do componente 3D.
+Você pode pré-visualização a página da Web no editor de páginas com total acesso à funcionalidade do componente 3D.
 
 Consulte também [Exibir ativos 3D no componente](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component)Sites 3D.
 
-**Para visualizar uma página da Web que tenha um componente** 3D:
+**Para pré-visualização de uma página da Web que tenha um componente** 3D:
 
 1. Execute um dos procedimentos a seguir:
 
-   * Próximo ao canto superior direito da página, clique em **[!UICONTROL Visualizar]** para entrar no modo de visualização.
+   * Perto do canto superior direito da página, clique em **[!UICONTROL Pré-visualização]** para entrar no modo de pré-visualização.
    * Exclua `/edit.html` do URL da página no navegador.
 
 ## Publicar a página e os ativos {#publishing-the-page-and-assets}
@@ -168,5 +171,5 @@ Consulte [Publicação de ativos](managing-assets-touch-ui.md) para obter inform
 >
 >Usar o item de menu **[!UICONTROL Publicar página]** no menu Informações **[!UICONTROL da]** página publicará a página e todas as dependências da página principal. As dependências secundárias que podem ser referenciadas pelo modelo 3D e/ou pela etapa 3D, como mapas de textura e imagens IBL, não são publicadas quando você publica a página dessa forma.
 >
->A Adobe recomenda que você publique todos os ativos 3D e suas dependências diretamente dos ativos AEM, antes de publicar a página da Web que faz referência a esses ativos.
+>A Adobe recomenda que você publique todos os ativos 3D e suas dependências diretamente da AEM Assets, antes de publicar a página da Web que faz referência a esses ativos.
 
