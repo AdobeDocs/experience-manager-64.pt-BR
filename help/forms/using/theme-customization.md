@@ -1,8 +1,8 @@
 ---
 title: Personalização do tema
 seo-title: Personalização do tema
-description: Como personalizar o tema do aplicativo AEM Forms.
-seo-description: Como personalizar o tema do aplicativo AEM Forms.
+description: Como personalizar o tema do seu aplicativo AEM Forms.
+seo-description: Como personalizar o tema do seu aplicativo AEM Forms.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
