@@ -1,8 +1,8 @@
 ---
 title: Acessar UGC com SRP
 seo-title: Acessar UGC com SRP
-description: Quando um site é configurado para usar ASRP ou MSRP, o UGC real não é armazenado no armazenamento de nós do AEM (JCR)
-seo-description: Quando um site é configurado para usar ASRP ou MSRP, o UGC real não é armazenado no armazenamento de nós do AEM (JCR)
+description: Quando um site é configurado para usar ASRP ou MSRP, o UGC real não é armazenado AEM armazenamento de nós (JCR)
+seo-description: Quando um site é configurado para usar ASRP ou MSRP, o UGC real não é armazenado AEM armazenamento de nós (JCR)
 uuid: 5f9f8c9b-4c6a-45b0-96ff-14934380eba7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee786a5c-b985-4d78-9063-6c79ae5e13e6
 translation-type: tm+mt
 source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
@@ -21,19 +24,19 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 
 Todos os componentes e recursos do AEM Communities são criados no SCF ( [social component framework)](scf.md), que chama a API SocialResourceProvider para acessar todo o conteúdo gerado pelo usuário (UGC).
 
-Antes de um site da comunidade ser criado, o SRP ( [Storage Resource Provider, provedor de recursos de armazenamento)](working-with-srp.md) deve ser configurado para selecionar uma implementação consistente com a [topologia](topologies.md)subjacente. As implementações SRP são baseadas em três opções de armazenamento:
+Antes de um site da comunidade ser criado, o SRP ( [armazenamento Resource Provider [provedor de recursos do ])](working-with-srp.md) deve ser configurado para selecionar uma implementação consistente com a [topologia](topologies.md)subjacente. As implementações SRP são baseadas em três opções de armazenamento:
 
-1. [ASRP](asrp.md) - armazenamento sob demanda da Adobe
+1. [ASRP](asrp.md) - armazenamento Adobe por demanda
 2. [MSRP](msrp.md) - MongoDB
 3. [JSRP](jsrp.md) - JCR
 
-## Sobre o armazenamento UGC {#about-ugc-storage}
+## Sobre o Armazenamento UGC {#about-ugc-storage}
 
-O que é importante saber sobre o armazenamento do UGC é que, quando um site é configurado para usar o ASRP ou o MSRP, o UGC real não é armazenado na loja [de](../../help/sites-deploying/data-store-config.md) nós do AEM (JCR).
+O que é importante saber sobre o armazenamento do UGC é que, quando um site é configurado para usar o ASRP ou o MSRP, o UGC real não é armazenado AEM repositório [de](../../help/sites-deploying/data-store-config.md) nós (JCR).
 
 Embora possa haver nós no JCR que sombream o UGC para fornecer metadados úteis, esses nós não devem ser confundidos com o UGC real.
 
-Consulte Visão Geral [do Provedor de Recursos de Armazenamento.](srp.md)
+Consulte Visão Geral do Provedor de Recursos do [Armazenamento.](srp.md)
 
 ## Prática recomendada {#best-practice}
 
@@ -57,19 +60,19 @@ Métodos para usar:
 Métodos para evitar:
 
 * API de nó
-* Eventos JCR
+* eventos JCR
 * Iniciadores de fluxo de trabalho (que usam eventos JCR)
 
 ### Usar coleções de pesquisa {#use-search-collections}
 
-Diferentes SRPs podem ter diferentes linguagens de consulta nativas. É recomendável usar métodos do pacote [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) para chamar o idioma de consulta apropriado.
+Diferentes SRPs podem ter diferentes idiomas de query nativos. É recomendável usar métodos do pacote [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) para chamar o idioma do query apropriado.
 
 Para obter mais informações, consulte [Search Essentials](search-implementation.md).
 
 ## Recursos {#resources}
 
 * [Armazenamento](working-with-srp.md) de conteúdo da comunidade - discute as opções de SRP disponíveis para uma loja comum UGC
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório
 * [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP
 * [Search Essentials](search-implementation.md) - informações essenciais para a pesquisa no UGC
 * [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
