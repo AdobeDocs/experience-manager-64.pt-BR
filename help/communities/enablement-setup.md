@@ -11,31 +11,34 @@ content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
 
 # Configuração inicial para ativação {#initial-setup-for-enablement}
 
-## Iniciar instâncias de autor e publicação {#start-author-and-publish-instances}
+## Instâncias de autor e publicação do Start {#start-author-and-publish-instances}
 
-Para fins de desenvolvimento e demonstração, será necessário executar uma instância de autor e publicação.
+Para fins de desenvolvimento e demonstração, será necessário executar uma instância de autor e uma instância de publicação.
 
-Siga as instruções básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) ao AEM que resultarão em
+Siga as instruções AEM básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) que resultarão em
 
 * ambiente do autor em [localhost:4502](http://localhost:4502/)
-* ambiente de publicação em [localhost:4503](http://localhost:4503/)
+* ambiente publish no [localhost:4503](http://localhost:4503/)
 
-Para o AEM Communities,
+Para AEM Communities,
 
 * O ambiente do autor é para
 
    * Desenvolvimento de sites, modelos, componentes, recursos de ativação e caminhos de aprendizagem
-   * Atribuição de membros e grupos de membros para habilitar recursos e caminhos de aprendizagem
-   * Geração de relatórios em atribuições, exibições e postagens
-   * Tarefas administrativas e de configuração
+   * Atribuição de membros e grupos de membros para habilitar recursos e caminhos de aprendizado
+   * Geração de relatórios em atribuições, visualizações e postagens
+   * tarefas administrativas e de configuração
 
-* O ambiente de publicação é para
+* O ambiente publish é para
 
    * Aprendizagem/treinamento com base em tópicos gerenciados pelo Gerenciador de ativação
    * Recursos de ativação de comentários e classificações e caminhos de aprendizado
@@ -43,7 +46,7 @@ Para o AEM Communities,
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
@@ -59,7 +62,7 @@ Para seguir este tutorial, é necessário instalar e [configurar corretamente a 
 
 ## Configurar Analytics {#configure-analytics}
 
-Quando o [Adobe Analytics é configurado para o site](analytics.md)da comunidade, mais informações estão disponíveis nos [relatórios](reports.md) gerados nos recursos de ativação e caminhos de aprendizado atribuídos aos membros da comunidade (alunos).
+Quando o [Adobe Analytics está configurado para o site](analytics.md)da comunidade, mais informações estão disponíveis nos [relatórios](reports.md) gerados nos recursos de ativação e caminhos de aprendizado atribuídos aos membros da comunidade (alunos).
 
 ## Configurar email para notificações {#configure-email-for-notifications}
 
@@ -71,7 +74,7 @@ See [Configuring Email](email.md).
 
 ## Ativar o serviço de túnel {#enable-the-tunnel-service}
 
-Ao criar um site da comunidade no ambiente do autor, o serviço de túnel possibilita a criação e o gerenciamento de usuários e grupos de usuários registrados no ambiente de publicação (membros), atribuir funções a membros da comunidade confiáveis e atribuir conteúdo a alunos.
+Ao criar um site da comunidade no ambiente do autor, o serviço de túnel possibilita a criação e o gerenciamento de usuários e grupos de usuários registrados no ambiente de publicação (membros), a atribuição de funções a membros da comunidade confiáveis e a atribuição de conteúdo a alunos.
 
 Para obter mais informações, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
 
@@ -79,7 +82,7 @@ Para obter instruções simples para habilitar o serviço de túnel, consulte Se
 
 ## Criar tags do tutorial {#create-tutorial-tags}
 
-Crie tags para usar nos tutoriais de envolvimento e ativação, usando o namespace da tag `Tutorial`.
+Crie tags para usar nos tutoriais de envolvimento e ativação, usando a namespace de tags de `Tutorial`.
 
 Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcação para criar as seguintes tags:
 
@@ -97,7 +100,7 @@ Em seguida, siga as instruções para
 1. [Definir as permissões da tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publicar as tags](../../help/sites-administering/tags.md#publishing-tags)
 
-Amostra do pacote de tags criado para os tutoriais de introdução ao AEM Communities
+Pacote de amostra de tags criadas para os Tutorials de Introdução do AEM Communities
 
 [Obter arquivo](assets/communities_tutorialtags-10.zip)
 
@@ -125,8 +128,8 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 * **ID**: estrada
 * **Email**: riley.taylor@mailinator.com
-* **Senha**:password
-* **Confirmar senha**:password
+* **Senha**: password
+* **Confirmar senha**: password
 * **Nome**: Riley
 * **Sobrenome**: Taylor
 
@@ -134,10 +137,10 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 [Crie um segundo membro](members.md#create-new-member) que será adicionado ao grupo Classe de esqui da comunidade.
 
-* **ID**:calçada
+* **ID**: calçada
 * **Email**: sidney.croft@mailinator.com
-* **Senha**:password
-* **Confirmar senha**:password
+* **Senha**: password
+* **Confirmar senha**: password
 * **Nome**: Sidney
 * **Sobrenome**: Corte
 
@@ -147,8 +150,8 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 * **ID**: quinn
 * **Email**: quinn.harper@mailinator.com
-* **Senha**:password
-* **Confirmar senha**:password
+* **Senha**: password
+* **Confirmar senha**: password
 * **Nome**: Quinn
 * **Sobrenome**: Harper
 
@@ -161,7 +164,7 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 * **Descrição**: um grupo de exemplo para atribuir recursos de ativação
 * **Adicionar membros ao grupo** &#39;add&#39;:
 
-   *  estrada
+   * estrada
    * calçada
 
 * Selecione **[!UICONTROL Salvar]**
@@ -197,8 +200,8 @@ Crie um usuário no *autor*, ao qual seja atribuída a função de Administrador
 
    * **ID&amp;ast;**: sírio
    * **Endereço** Emai: sirius.nilson@mailinator.com
-   * **Senha&amp;passado;**:password
-   * **Confirmar Senha&amp;passado;**:password
+   * **Senha&amp;passado;**: password
+   * **Confirmar Senha&amp;passado;**: password
    * **Nome**: Sirius
    * **Sobrenome&amp;ast;**: Nilson
 
