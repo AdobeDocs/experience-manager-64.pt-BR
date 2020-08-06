@@ -1,8 +1,8 @@
 ---
 title: Operações Granite - Administração de usuários e grupos
 seo-title: Operações Granite - Administração de usuários e grupos
-description: Saiba mais sobre a administração de usuários e grupos do Granite.
-seo-description: Saiba mais sobre a administração de usuários e grupos do Granite.
+description: Saiba mais sobre o usuário do Granite e a administração de grupos.
+seo-description: Saiba mais sobre o usuário do Granite e a administração de grupos.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Como o Granite incorpora a implementação do Repositório CRX da Especificação da API JCR, ele tem sua própria administração de usuários e grupos.
 
-Essas contas são a base subjacente das contas [do](/help/sites-administering/security.md) AEM e qualquer alteração de conta feita com a administração do Granite será refletida se/quando as contas forem acessadas pelo console [Usuários do](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, você também pode gerenciar os privilégios e outras especificações do AEM.
+Essas contas são a base subjacente das contas [de](/help/sites-administering/security.md) AEM e qualquer alteração de conta feita com a administração Granite será refletida se/quando as contas forem acessadas pelo console [Usuários de](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, você também pode gerenciar os privilégios e outras AEM específicas.
 
 Os consoles de administração de grupo e usuário granite estão disponíveis no console **[Ferramentas](/help/sites-administering/tools-consoles.md)**da interface otimizada ao toque:
 
@@ -41,7 +44,7 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
-   O console **Grupos** lista:
+   O console **Grupos** listas:
 
    * o nome do grupo
    * a descrição do grupo
@@ -89,7 +92,8 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
    * **Sobre**
    * **Configurações da conta**
 
-      * **Status** Você pode sinalizar a conta como **ativa** ou **inativa**.
+      * **Status** Você pode sinalizar a conta como 
+**ativa** ou **inativa**.
    * **Foto**
 
       Aqui você pode carregar uma foto para usar como avatar.
@@ -145,7 +149,7 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
    Para abrir o menu suspenso de seleção de grupo:
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 1. Na caixa de seleção, é possível selecionar ou desmarcar grupos aos quais a conta de usuário deve pertencer.
 
@@ -161,7 +165,7 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Será solicitado que você confirme a exclusão e uma mensagem confirmará que a exclusão real ocorreu.
+1. Será solicitado que você confirme a exclusão, e então uma mensagem confirmará que a exclusão real ocorreu.
 
 ## Administração de grupos {#group-administration}
 
@@ -228,5 +232,5 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
    ![](do-not-localize/chlimage_1-6.png)
 
-1. Será solicitado que você confirme a exclusão e uma mensagem confirmará que a exclusão real ocorreu.
+1. Será solicitado que você confirme a exclusão, e então uma mensagem confirmará que a exclusão real ocorreu.
 
