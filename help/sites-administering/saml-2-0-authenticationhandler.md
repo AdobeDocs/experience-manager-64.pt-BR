@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Manipulador de autenticação SAML 2.0{#saml-authentication-handler}
 
-O AEM é enviado com um manipulador de autenticação [SAML](http://saml.xml.org/saml-specifications) . Este manipulador fornece suporte para o Protocolo de solicitação de autenticação [SAML](http://saml.xml.org/saml-specifications) 2.0 (perfil Web-SSO) usando o `HTTP POST` vínculo.
+AEM é fornecido com um manipulador de autenticação [SAML](http://saml.xml.org/saml-specifications) . Este manipulador fornece suporte para o Protocolo de solicitação de autenticação [SAML](http://saml.xml.org/saml-specifications) 2.0 (perfil Web-SSO) usando o `HTTP POST` vínculo.
 
 Ele suporta:
 
@@ -33,7 +33,7 @@ Esse manipulador armazena a mensagem de resposta SAML criptografada no nó do us
 
 >[!NOTE]
 >
->Veja [uma demonstração da integração](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)do AEM e do SAML.
+>Veja [uma demonstração da integração](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)de AEM e SAML.
 >
 >Para ler um artigo da comunidade de fim a fim, clique em: [Integração do SAML com o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
@@ -108,7 +108,7 @@ As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. P
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Adicione a chave do Provedor de serviço e a cadeia de certificados ao armazenamento de chaves do AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Adicione a chave do Provedor de serviço e a cadeia de certificados ao armazenamento de chaves AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
