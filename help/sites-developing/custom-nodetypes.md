@@ -1,8 +1,8 @@
 ---
 title: Tipos de nó personalizados
 seo-title: Tipos de nó personalizados
-description: O AEM é baseado no Sling e usa um repositório JCR com tipos de nó oferecidos por ambos, mas o AEM também fornece diversos tipos de nó personalizados
-seo-description: O AEM é baseado no Sling e usa um repositório JCR com tipos de nó oferecidos por ambos, mas o AEM também fornece diversos tipos de nó personalizados
+description: AEM é baseado no Sling e usa um repositório JCR com tipos de nó oferecidos por ambos, mas AEM também fornece vários tipos de nó personalizados
+seo-description: AEM é baseado no Sling e usa um repositório JCR com tipos de nó oferecidos por ambos, mas AEM também fornece vários tipos de nó personalizados
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -25,7 +25,7 @@ Como o AEM é baseado no Sling e usa um repositório JCR, os tipos de nó oferec
 * [Tipos de Nó JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Tipos de Nó Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Além disso. O AEM fornece diversos tipos de nó personalizados.
+Além disso. AEM fornece vários tipos de nós personalizados.
 
 ## Auditoria {#audit}
 
@@ -449,7 +449,7 @@ Lista do Container.
 
 **Descrição**
 
-`cq:attributes` é o tipo de nó das tags de versão ContentBus. Este nó tem apenas uma série de propriedades; dos quais três são predefinidos &quot;created&quot;, &quot;csd&quot; e &quot;timestampe&quot;.
+`cq:attributes` é o tipo de nó das tags de versão do ContentBus. Este nó tem apenas uma série de propriedades; dos quais três são predefinidos &quot;created&quot;, &quot;csd&quot; e &quot;timestampe&quot;.
 
 * `@prop created (long) mandatory copy` - Carimbo de data e hora da criação das informações da versão, geralmente a hora do check-in da versão anterior ou a hora da criação da página.
 * `@prop csd (string) mandatory copy` - atributo padrão csd, cópia da propriedade cq:csd do nó da página
@@ -468,11 +468,11 @@ Lista do Container.
 
 **Descrição**
 
-O tipo de nó `cq:contentPage` contém as definições de propriedade e nó filho para páginas de conteúdo ContentBus. Somente quando esse tipo de combinação é adicionado a um nó do tipo `cq:page`, um nó se torna uma página de conteúdo ContentBus.
+O tipo de nó `cq:contentPage` contém as definições de propriedade e nó filho para páginas de conteúdo de ContentBus. Somente quando esse tipo de combinação é adicionado a um nó do tipo `cq:page`, um nó se torna uma página de conteúdo de ContentBus.
 
 Os itens em um `cq:Cq4ContentPage` são:
 
-* `@prop cq:csd` - A CVM ContentBus da página.
+* `@prop cq:csd` - A CDT ContentBus da página.
 * `@node cq:content` - O conteúdo da página. Esse nó filho não existe se o nó de página estiver no estado &quot;Existente sem conteúdo&quot; ou &quot;Excluído&quot;.
 * `@node cq:attributes` - A lista de atributos de página, anteriormente conhecidos como tags de versão. Esse nó é obrigatório para o tipo cq:contentPage. O nó de atributos tem controle de versão quando a página é um nó com controle de versão.
 
@@ -493,7 +493,7 @@ Configuração da pesquisa.
 * `@prop source (String) mandatory` - URI da fonte de dados, obrigatório e não vazio
 * `@prop target (String)` - O local do público alvo onde os dados recuperados da fonte de dados são armazenados. Isso é opcional e o padrão é o nó cq:PollConfig.
 * `@prop interval (Long)` - O intervalo em segundos no qual pesquisar dados novos ou atualizados da fonte de dados. Isso é opcional e o padrão é 30 minutos (1800 segundos).
-* [Criação de serviços personalizados do Importador de dados para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Criação de serviços personalizados do Importador de dados para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definição**
 
@@ -618,7 +618,7 @@ Configuração do Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Para o AEM 5.4, adicione ao final da lista:
+Para AEM 5.4, adicione ao final da lista:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
