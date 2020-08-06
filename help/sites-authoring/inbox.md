@@ -1,6 +1,6 @@
 ---
-title: 'Sua Caixa de entrada '
-seo-title: 'Sua Caixa de entrada '
+title: Sua caixa de entrada
+seo-title: Sua caixa de entrada
 description: Gerenciar suas tarefas com a caixa de entrada
 seo-description: Gerenciar suas tarefas com a caixa de entrada
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '896'
+ht-degree: 95%
 
 ---
 
 
-# Sua Caixa de entrada {#your-inbox}
+# Sua caixa de entrada{#your-inbox}
 
 Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
 
@@ -46,6 +49,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde você p
 >* [Projetos - trabalhar com tarefas](/help/sites-authoring/task-content.md)
 >* [Fluxos de trabalhos](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
+
 >
 
 
@@ -69,7 +73,7 @@ O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo
 * Permitir coleta de dados estatísticos de uso agregados
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Abrir a Caixa de entrada  {#opening-the-inbox}
+## Abrir a Caixa de entrada   {#opening-the-inbox}
 
 Para abrir a caixa de entrada de notificação do AEM:
 
@@ -120,6 +124,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
    * **Tamanho do cartão**
+
    ![wf-92](assets/wf-92.png)
 
 * **Exibição de lista**
@@ -128,6 +133,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
    * **Classificar por**
    * **Ordem de classificação**
+
    ![wf-83](assets/wf-83.png)
 
 ## Realizar ação em um item {#taking-action-on-an-item}
@@ -148,6 +154,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    * **Recuar** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
    * Criar um projeto a partir do item.
+
    >[!NOTE]
    >
    >Para obter mais informações, consulte:
@@ -160,6 +167,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    * uma caixa de diálogo apropriada para a ação será aberta.
    * um assistente de ação será iniciado.
    * uma página de documentação será aberta.
+
    Por exemplo, **Atribuir novamente** abrirá uma caixa de diálogo:
 
    ![wf-85](assets/wf-85.png)
@@ -188,16 +196,18 @@ Na caixa de entrada, você pode criar tarefas:
       * **Prioridade da tarefa**
       * **Data inicial**
       * **Data de vencimento**
+
    ![wf-86](assets/wf-86.png)
 
    * **Avançado**
 
-      * **Nome:** isso será usado para formar o URL; se estiver vazio, será baseado no **Título**.
+      * **Nome**: this will be used to form the URL; if blank it will be based on the **Title**.
+
    ![wf-87](assets/wf-87.png)
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto  {#creating-a-project}
+## Criação de um projeto   {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
