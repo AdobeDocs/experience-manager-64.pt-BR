@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Criação de um aplicativo AEM Forms seguro para iOS {#building-a-secure-aem-forms-app-for-ios}
 
-É necessário arquivar o projeto Xcode para o aplicativo AEM Forms para criar o instalador (um arquivo .ipa) e um arquivo de lista de propriedade (um arquivo .plist). O arquivo de lista de propriedade contém informações de configuração do aplicativo interno hospedado, como o nome e o local de hospedagem do aplicativo. Para obter mais informações sobre o arquivo de lista de propriedade, consulte [Sobre arquivos](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)de Lista de propriedades de informações.
+É necessário arquivar o projeto Xcode para o aplicativo AEM Forms para criar o instalador (um arquivo .ipa) e uma lista de propriedade (um arquivo .plist). O arquivo de lista de propriedade contém informações de configuração do aplicativo interno hospedado, como o nome e o local de hospedagem do aplicativo. Para obter mais informações sobre o arquivo de lista de propriedade, consulte [Sobre arquivos](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)de Lista de propriedades de informações.
 
 1. Faça logon no seguinte site:
 
@@ -40,5 +40,5 @@ ht-degree: 0%
 1. Na guia **[!UICONTROL Build Settings (Configurações]** de criação), clique em **[!UICONTROL All (Todos]** ) e, em seguida, clique em **[!UICONTROL Combinado]**.
 1. Na lista **[!UICONTROL Configurações]** , expanda Assinatura **[!UICONTROL de código]**.
 1. Para Identidade **[!UICONTROL de assinatura de]** código, selecione a assinatura apropriada. Certifique-se de que a mesma assinatura esteja selecionada para **[!UICONTROL Depurar]**, **[!UICONTROL Liberar]** e **[!UICONTROL Qualquer SDK]** do iOS.
-1. Em **[!UICONTROL PROJECT]**, selecione **[!UICONTROL AEM Forms]** e certifique-se de que a assinatura apropriada esteja selecionada para Identidade **[!UICONTROL de assinatura de]** código, **[!UICONTROL Depuração]**, **[!UICONTROL Liberação]** **** e Qualquer SDK do iOS.
-1. Crie e distribua o aplicativo AEM Forms. Para obter instruções detalhadas sobre como criar e distribuir o aplicativo AEM Forms, consulte [Criar o instalador para o aplicativo](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)AEM Forms.
+1. Em **[!UICONTROL PROJETO]**, selecione **[!UICONTROL AEM Forms]** e certifique-se de que a assinatura apropriada esteja selecionada para Identidade **[!UICONTROL de assinatura de]** código, **[!UICONTROL Depuração]**, **[!UICONTROL Liberação]** **** e Qualquer SDK do iOS.
+1. Crie e distribua aplicativos AEM Forms. Para obter instruções detalhadas sobre como criar e distribuir aplicativos AEM Forms, consulte [Criar o instalador para aplicativos](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)AEM Forms.
