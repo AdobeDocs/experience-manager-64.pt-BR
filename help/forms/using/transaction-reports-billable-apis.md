@@ -21,7 +21,7 @@ ht-degree: 7%
 
 Lista de todas as APIs que são contabilizadas como transações
 
-O AEM Forms fornece várias APIs para enviar formulários, processar documentos e renderizar documentos. Algumas APIs são contabilizadas como transações e outras são livres de usar. Este documento fornece uma lista de todas as APIs que são contabilizadas como transações em um relatório de transação. Veja alguns cenários comuns em que uma API faturável é usada:
+A AEM Forms fornece várias APIs para enviar formulários, processar documentos e renderizar documentos. Algumas APIs são contabilizadas como transações e outras são livres de usar. Este documento fornece uma lista de todas as APIs que são contabilizadas como transações em um relatório de transação. Veja alguns cenários comuns em que uma API faturável é usada:
 
 * Envio de um formulário adaptável, formulário HTML5 e conjunto de formulários
 * Renderização de uma versão impressa ou da Web de uma comunicação interativa
@@ -29,17 +29,17 @@ O AEM Forms fornece várias APIs para enviar formulários, processar documentos 
 * Achatar um documento PDF dinâmico
 * Gerando um Documento de Registro
 * Mesclar um documento PDF interativo com outro documento PDF
-* Uso da etapa de atribuição de tarefa e das etapas de serviços de documentação de Workflows AEM
+* Uso da etapa de atribuição de tarefa e das etapas de serviços de doc de Workflows AEM
 * Uso de formulário adaptável em um formulário adaptável
 
-As APIs de cobrança não contabilizam o número de páginas, o comprimento de um documento ou formulário ou o formato final do documento renderizado. Um relatório de transações divide as transações em três categorias: Documentos processados, Documentos renderizados e formulários enviados.
+As APIs de cobrança não contabilizam o número de páginas, o comprimento de um documento ou formulário ou o formato final do documento renderizado. Um relatório de transações divide as transações em três categorias: Documentos processados, Documentos renderizados e Forms enviado.
 
-* **Formulários enviados:** Quando os dados são enviados de qualquer tipo de formulário criado com o AEM Forms e os dados são enviados para qualquer repositório de armazenamentos de dados ou banco de dados é considerado como envio de formulário. Por exemplo, o envio de um formulário adaptável, formulário HTML5, formulários PDF e conjunto de formulários são contabilizados como formulários enviados. Cada formulário em um conjunto de formulários é considerado um envio. Por exemplo, se um conjunto de formulários tiver 5 formulários, quando o conjunto de formulários for submetido, o serviço de relatórios de transação contará como 5 envios.
+* **Forms Submetido:** Quando os dados são enviados de qualquer tipo de formulário criado com a AEM Forms e os dados são enviados para qualquer repositório ou banco de dados do armazenamento de dados é considerado como envio ao formulário. Por exemplo, o envio de um formulário adaptável, formulário HTML5, PDF forms e conjunto de formulários são contabilizados como formulários enviados. Cada formulário em um conjunto de formulários é considerado um envio. Por exemplo, se um conjunto de formulários tiver 5 formulários, quando o conjunto de formulários for submetido, o serviço de relatórios de transação contará como 5 envios.
 * **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando APIs de serviços de documento faturáveis para serviços de documento ou convertendo um documento de um formato para outro são contabilizados como documentos renderizados.
 
 >[!NOTE]
 >
->A interface do usuário de Relatórios de Transação exibe três categorias: Formulários enviados, Documentos renderizados e Documentos processados. Os Documentos Renderizados e os Documentos Processados são contabilizados como Documentos Renderizados.
+>A interface do usuário de Relatórios de Transação exibe três categorias: Forms Submetido, Documentos Renderizados e Documentos Processados. Os Documentos Renderizados e os Documentos Processados são contabilizados como Documentos Renderizados.
 
 ## APIs de serviços de Documento faturáveis {#billable-document-services-apis}
 
@@ -67,19 +67,19 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td> 
-   <td>Converte o Adobe PDF em tipos de arquivo suportados. </td> 
+   <td>Converte o Adobe PDF em tipos de arquivos suportados. </td> 
    <td>Documentos processados<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td> 
-   <td>Converte o Adobe PDF em tipos de arquivo suportados. </td> 
+   <td>Converte o Adobe PDF em tipos de arquivos suportados. </td> 
    <td>Documentos processados<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td> 
-   <td>Converte o Adobe PDF em tipos de arquivo suportados. </td> 
+   <td>Converte o Adobe PDF em tipos de arquivos suportados. </td> 
    <td>Documentos processados<br /> </td> 
    <td> </td> 
   </tr>
@@ -110,7 +110,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
  </tbody>
 </table>
 
-### Distiller Service {#distiller-service}
+### Serviço Distiller {#distiller-service}
 
 <table> 
  <tbody>
@@ -209,7 +209,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td> 
-   <td>Renderiza o formulário PDF a partir de modelos XDP. Os modelos XP são criados no Forms Designer.</td> 
+   <td>Renderiza o formulário PDF a partir de modelos XDP. Os modelos do XP são criados no Forms Designer.</td> 
    <td>Documentos processados</td> 
    <td> </td> 
   </tr>
@@ -247,7 +247,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
  </tbody>
 </table>
 
-### Serviço de formulários com códigos de barras {#barcoded-forms-service}
+### Serviço Forms com código de barras {#barcoded-forms-service}
 
 <table> 
  <tbody>
@@ -290,7 +290,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invocar</a></td> 
    <td>Executa o documento DDX especificado e retorna um objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> contendo os documentos resultantes. </td> 
    <td>Documentos processados</td> 
-   <td>Todos os formatos de arquivo de entrada suportados pelos serviços de Gerador de PDF, Forms e Output, o serviço Assembler oferece suporte a todos esses formatos como formatos de arquivo de saída. </td> 
+   <td>Todos os formatos de arquivo de entrada suportados pelos serviços de Gerador de PDF, Forms e Saída, o serviço Assembler oferece suporte a todos esses formatos como formatos de arquivo de saída. </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-" target="_blank">toPDFA</a></td> 
@@ -350,14 +350,14 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
 
 ## APIs de captura de dados faturáveis {#billable-data-capture-apis}
 
-Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um formulário PDF não é contabilizado como uma transação. Use a API [de relatórios de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transação fornecida para registrar um envio de formulários PDF como uma transação.
+Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um formulário PDF não é contabilizado como uma transação. Use a API [de relatórios de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transação fornecida para registrar uma submissão de PDF forms como uma transação.
 
 ### Formulários adaptáveis {#adaptive-forms}
 
 <table> 
  <tbody>
   <tr>
-   <td><p>Caso de uso   </p> </td> 
+   <td><p>Caso de uso </p> </td> 
    <td>Descrição</td> 
    <td>categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
@@ -380,7 +380,7 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
 <table> 
  <tbody>
   <tr>
-   <td><p>Caso de uso   </p> </td> 
+   <td><p>Caso de uso </p> </td> 
    <td>Descrição </td> 
    <td>categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
@@ -417,9 +417,9 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
  </tbody>
 </table>
 
-## Comunicação interativa faturável e Workflows AEM centrados em forma em APIs OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+## Comunicação interativa faturável e Workflows de AEM centrados em forma em APIs OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-Atribua etapas de serviços de tarefa e documento de Workflows AEM centrados em forma ao OSGi e todas as execuções de comunicação interativa e são contabilizadas como transações. A visualização de uma comunicação interativa na instância do autor e a visualização na instância de publicação usando a interface do usuário do agente não são contabilizadas como transações. Se uma etapa do fluxo de trabalho contabilizar uma transação e o fluxo de trabalho não for concluído, a contagem de transações não será revertida.
+Atribua etapas de serviços de tarefa e documento a Workflows de AEM centrados em forma no OSGi e todas as execuções de comunicação interativa e são contabilizadas como transações. A visualização de uma comunicação interativa na instância do autor e a visualização na instância de publicação usando a interface do usuário do agente não são contabilizadas como transações. Se uma etapa do fluxo de trabalho contabilizar uma transação e o fluxo de trabalho não for concluído, a contagem de transações não será revertida.
 
 ### Comunicação interativa - Canal da Web {#interactive-communication-web-channel}
 
@@ -463,7 +463,7 @@ Atribua etapas de serviços de tarefa e documento de Workflows AEM centrados em 
  </tbody>
 </table>
 
-### Workflows AEM centrados em forma no OSGi  {#form-centric-aem-workflows-on-osgi}
+### Workflows de AEM centrados em forma no OSGi  {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>
@@ -494,7 +494,7 @@ Atribua etapas de serviços de tarefa e documento de Workflows AEM centrados em 
 
 ## Registrando APIs faturáveis como transações para código personalizado {#recording-billable-apis-as-transactions-for-custom-code}
 
-Ações como enviar um formulário PDF, usar a interface do usuário do agente para pré-visualização de uma comunicação interativa, usar envio de formulário não padrão e implementações personalizadas não são contabilizadas como transações. O AEM Forms fornece uma API para registrar ações como transações. Você pode chamar a API de suas implementações personalizadas para [registrar uma transação](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
+Ações como enviar um formulário PDF, usar a interface do usuário do agente para pré-visualização de uma comunicação interativa, usar envio de formulário não padrão e implementações personalizadas não são contabilizadas como transações. A AEM Forms fornece uma API para registrar ações como transações. Você pode chamar a API de suas implementações personalizadas para [registrar uma transação](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
 
 ## Artigos relacionados {#related-articles}
 
