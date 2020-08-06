@@ -1,6 +1,6 @@
 ---
-title: 'Criação de uma página para dispositivos móveis '
-seo-title: 'Criação de uma página para dispositivos móveis '
+title: 'Criação de uma página para dispositivos móveis  '
+seo-title: 'Criação de uma página para dispositivos móveis  '
 description: Ao criar uma página para dispositivos móveis, a página é exibida de uma maneira que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
 seo-description: Ao criar uma página para dispositivos móveis, a página é exibida de uma maneira que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 77%
 
 ---
 
 
-# Criação de uma página para dispositivos móveis {#authoring-a-page-for-mobile-devices}
+# Criação de uma página para dispositivos móveis   {#authoring-a-page-for-mobile-devices}
 
 Ao criar uma página para dispositivos móveis, a página é exibida de uma maneira que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
 
