@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ## Design para atualizações {#design-for-upgrades}
 
-Ao estender os comportamentos de OOTB, é importante ter em mente as atualizações. Sempre aplique personalizações no diretório /apps e sobreponha na parte superior dos nós correspondentes no diretório /libs ou use sling:resourceSuperType para estender o comportamento fora da caixa. Embora algumas modificações possam ser necessárias para suportar uma nova versão do AEM, a nova versão não deve substituir suas personalizações se esta prática for seguida.
+Ao estender os comportamentos de OOTB, é importante ter em mente as atualizações. Sempre aplique personalizações no diretório /apps e sobreponha na parte superior dos nós correspondentes no diretório /libs ou use sling:resourceSuperType para estender o comportamento fora da caixa. Embora algumas modificações possam ser necessárias para suportar uma nova versão AEM, a nova versão não deve substituir suas personalizações se esta prática for seguida.
 
 ### Reutilizar modelos e componentes quando possível {#reuse-template-and-components-when-possible}
 
@@ -34,10 +37,10 @@ Ao definir quais componentes podem ser incluídos em cada parsys na página, a c
 SÓLIDO é um acrônimo que descreve cinco princípios arquitetônicos que devem ser respeitados:
 
 * **Princípio de responsabilidade**&#x200B;única - cada módulo, classe, método, etc., deve fazer apenas uma coisa.
-* **Princípio** Aberto/Fechado - os módulos devem estar abertos para extensão e fechados para modificação.
+* **Princípio** aberto/fechado - os módulos devem estar abertos para extensão e fechados para modificação.
 * **Princípio de substituição de** Liskov Os tipos de substituição devem ser substituíveis pelos seus subtipos.
 * **Princípio de segmentação da** interface - nenhum cliente deve ser forçado a depender dos métodos que não usa.
-* **Princípio da Inversão de** Dependência - Os módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
+* **Princípio da Inversão de** Dependência - Os módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
 
 A procura do cumprimento destes cinco princípios deverá resultar num sistema que tenha uma separação rigorosa das preocupações.
 
@@ -51,7 +54,7 @@ Os picos e o código de teste são parte integrante de qualquer implementação 
 
 ### Implementar scripts de migração de dados em seu próprio módulo {#implement-data-migration-scripts-in-their-own-module}
 
-Os scripts de migração de dados, enquanto o código de produção, geralmente são executados apenas uma vez na primeira inicialização de um site. Portanto, assim que o site estiver ao vivo, isso se torna código morto. Para garantir que não criemos um código de implementação que dependa dos scripts de migração, eles devem ser implementados em seu próprio módulo. Isso também permite remover e desativar esse código imediatamente após a inicialização, eliminando o código morto do sistema.
+Os scripts de migração de dados, enquanto o código de produção, geralmente são executados apenas uma vez na primeira inicialização de um site. Portanto, assim que o site estiver ao vivo, isso se torna um código morto. Para garantir que não criemos um código de implementação que dependa dos scripts de migração, eles devem ser implementados em seu próprio módulo. Isso também permite remover e desativar esse código imediatamente após a inicialização, eliminando o código morto do sistema.
 
 ### Siga as convenções Maven publicadas em arquivos POM {#follow-published-maven-conventions-in-pom-files}
 
