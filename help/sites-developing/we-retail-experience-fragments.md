@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 38%
 
 ---
 
@@ -23,7 +26,7 @@ Um [Fragmento de experiência](/help/sites-authoring/experience-fragments.md) é
 
 Eles permitem que um autor reutilize partes de uma página (um fragmento de uma experiência), sem precisar copiar e colar o conteúdo.
 
-Isso suporta o caso de uso do Sistema de gerenciamento de conteúdo sem cabeçalho (CMS), no qual os autores desejam usar o AEM somente para criação, mas não para entrega ao cliente. Um ponto de contato/sistema de terceiros pode consumir essa experiência e depois entregar ao usuário final.
+Isso suporta o caso de uso do sistema de Gestão de conteúdo sem cabeçalho (CMS), no qual os autores desejam usar o AEM somente para criação, mas não para entrega ao cliente. Um ponto de contato/sistema de terceiros pode consumir essa experiência e depois entregar para o usuário final.
 
 >[!NOTE]
 >
@@ -31,6 +34,7 @@ Isso suporta o caso de uso do Sistema de gerenciamento de conteúdo sem cabeçal
 >
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
+
 >
 >
 Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
