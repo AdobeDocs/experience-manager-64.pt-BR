@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ O componente de classificação, uma subclasse [total](tally.md) , permite que m
 
 É permitido colocar várias instâncias de um componente de votação na mesma página; cada instância deve ser configurada com uma `tally name` propriedade exclusiva.
 
-Não há suporte para a publicação anônima de uma classificação. Os visitantes do site devem se registrar e fazer logon para participar de uma classificação apenas uma vez. O visitante conectado (membro) pode alterar sua classificação a qualquer momento.
+Não há suporte para a publicação anônima de uma classificação. Os visitantes do site devem se registrar e fazer logon para participar de uma classificação apenas uma vez. O visitante com logon (membro) pode alterar sua classificação a qualquer momento.
 
 ## Essenciais para o lado do cliente {#essentials-for-client-side}
 
@@ -69,13 +72,13 @@ Não há suporte para a publicação anônima de uma classificação. Os visitan
 O UGC deve ser moderado usando um dos métodos padrão de moderação.\
 Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
 
-Desde as comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+Desde AEM 6.1 Comunidades, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório
 * [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
 * [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
