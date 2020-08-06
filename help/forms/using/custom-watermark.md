@@ -1,8 +1,8 @@
 ---
-title: Marca d'água personalizada na visualização de PDF carta
-seo-title: Marca d'água personalizada na visualização de PDF carta
-description: Saiba como criar uma marca d'água personalizada na visualização de PDF carta.
-seo-description: Saiba como criar uma marca d'água personalizada na visualização de PDF carta.
+title: Marca d'água personalizada na pré-visualização PDF carta
+seo-title: Marca d'água personalizada na pré-visualização PDF carta
+description: Saiba como criar uma marca d'água personalizada na pré-visualização PDF carta.
+seo-description: Saiba como criar uma marca d'água personalizada na pré-visualização PDF carta.
 uuid: f406de81-af94-40dd-97ec-9ca95620f961
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,25 +10,28 @@ topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
 
-# Marca d&#39;água personalizada na visualização de PDF carta {#custom-watermark-in-letter-pdf-preview}
+# Marca d&#39;água personalizada na pré-visualização PDF carta {#custom-watermark-in-letter-pdf-preview}
 
 ## Visão geral {#overview}
 
-Na interface Criar correspondência, os usuários do agente visualizam a correspondência na forma final em que é enviada para o processamento de postagens, como para e-mail ou impressão.
+Na interface do usuário Criar correspondência, os usuários agentes pré-visualizações a correspondência na forma final em que é enviada para o processamento de postagens, como para e-mail ou impressão.
 
-Para impedir o uso não autorizado desses dados, as organizações podem impor uma marca d&#39;água no PDF de visualização. A marca d&#39;água padrão é &quot;VISUALIZAÇÃO&quot;, que aparece no PDF.
+Para impedir o uso não autorizado desses dados, as organizações podem impor uma marca d&#39;água no PDF da pré-visualização. A marca d&#39;água padrão é &quot;PRÉ-VISUALIZAÇÃO&quot;, que aparece no PDF.
 
-Para ativar a marca d&#39;água no PDF de visualização, selecione a opção **[!UICONTROL Aplicar marca d&#39;água]** durante visualização em Configurações **[!UICONTROL de gerenciamento de]** correspondência em `https://[server]:[port]/system/console/configMgr`.
+Para ativar a marca d&#39;água em PDF de pré-visualização, selecione a opção **[!UICONTROL Aplicar marca d&#39;água]** durante a Pré-visualização em Configurações **[!UICONTROL de gerenciamento de]** correspondência em `https://[server]:[port]/system/console/configMgr`.
 
 ![marca d&#39;água padrão](assets/default-watermark.png)
 
 Você pode usar as seguintes etapas para personalizar o texto e a aparência da marca d&#39;água:
 
-## Personalizar a marca d&#39;água na visualização de PDF na interface Criar correspondência {#customizewatermark-}
+## Personalizar a marca d&#39;água na pré-visualização PDF na interface Criar correspondência {#customizewatermark-}
 
 1. Vá para `https://[server]:[port]/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta apps, crie uma pasta chamada **[!UICONTROL pré-marca d&#39;água]** com caminho/estrutura semelhante à pasta de marca d&#39;água da visualização na pasta libs:
@@ -39,11 +42,11 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **** Caminho: /libs/fd/cm/configFiles/previewwatermark
+      **Caminho:** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Localização da sobreposição: /apps/
+      **Localização da sobreposição:** /apps/
 
-      **** Corresponder tipos de nós: Verificado
+      **Corresponder tipos de nós:** Verificado
 
       >[!NOTE]
       >
@@ -74,7 +77,7 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
    </DDX>
    ```
 
-   Para obter informações sobre como personalizar a aparência da marca d&#39;água, o texto e o alinhamento, consulte Adicionar e remover marcas d&#39;água e planos de fundo no documento de Referência [do](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) Assembler Service e DDX.
+   Para obter informações sobre como personalizar a aparência da marca d&#39;água, o texto e o alinhamento, consulte Adicionar e remover marcas d&#39;água e planos de fundo no [Assembler Service e no documento de referência](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) DDX.
 
    >[!NOTE]
    >
