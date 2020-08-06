@@ -1,8 +1,8 @@
 ---
 title: Reestruturação do repositório para AEM Communities no 6.4
 seo-title: Reestruturação do repositório para AEM Communities no 6.4
-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 for Communities.
-seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 for Communities.
+description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 para Comunidades.
+seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 para Comunidades.
 uuid: d161655f-4074-44a7-8d69-38e80934c58b
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
@@ -10,18 +10,21 @@ topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
 
 # Reestruturação do repositório para AEM Communities no 6.4{#repository-restructuring-for-aem-communities-in}
 
-Conforme descrito na página principal [Reestruturação do repositório no AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para o AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a solução AEM Communities. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do AEM 6.5.
+Conforme descrito na página principal [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para a AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a AEM Communities Solution. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
 **Com atualização 6.4**
 
 * [Modelos de notificação por email](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#e-mail-notification-templates)
-* [Configurações de assinatura](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#subscription-configurations)
+* [Configurações de Subscrição](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#subscription-configurations)
 
 **Antes da atualização do 6.5**
 
@@ -60,7 +63,7 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
  </tbody>
 </table>
 
-### Configurações de assinatura {#subscription-configurations}
+### Configurações de Subscrição {#subscription-configurations}
 
 <table> 
  <tbody>
@@ -97,7 +100,7 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td>Uma tarefa de Migração lenta está disponível para limpar as Configurações das comunidades.<br /> <p>A Tarefa move palavras de observação de <code>/etc/watchwords</code> para <code>/conf/global/settings/community/watchwords</code>.</p> <p>Se palavras de observação personalizadas forem armazenadas no SCM, elas deverão ser implantadas para <code>/apps/settings/...</code> e você deverá garantir que não haja uma configuração sobreposta <code>/conf/global/settings/...</code> que tenha prioridade.</p> <p>A tarefa de migração remove <code>/etc</code> locais.</p> </td> 
+   <td>Uma tarefa de migração lenta está disponível para limpar as Configurações das comunidades.<br /> <p>A Tarefa move palavras de observação de <code>/etc/watchwords</code> para <code>/conf/global/settings/community/watchwords</code>.</p> <p>Se palavras de observação personalizadas forem armazenadas no SCM, elas deverão ser implantadas para <code>/apps/settings/...</code> e você deverá garantir que não haja uma configuração sobreposta <code>/conf/global/settings/...</code> que tenha prioridade.</p> <p>A tarefa de migração remove <code>/etc</code> locais.</p> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
@@ -184,11 +187,11 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
     <ol> 
      <li>Migre as configurações existentes no Local anterior para o novo local.
       <ol> 
-       <li>Recrie manualmente as novas Configurações de logon do Facebook Social por meio da interface de usuário de criação do AEM em <strong>Ferramentas &gt; Serviços em nuvem &gt; Configuração</strong>de logon social do Facebook.<br /> ou <br /> </li> 
+       <li>Recrie manualmente as novas Configurações de logon do Facebook Social por meio da interface de usuário de criação de AEM em <strong>Ferramentas &gt; Cloud Services &gt; Configuração</strong>de logon social do Facebook.<br /> ou <br /> </li> 
        <li>Copie quaisquer novas Configurações da nuvem do Facebook de Local anterior para o Novo local apropriado, em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova configuração de logon do Facebook Social definindo a <code>[cq:Page]/jcr:content@cq:conf</code> propriedade como o caminho absoluto no novo local.</li> 
-     <li>Desassocie o serviço herdado do Facebook Connect Cloud de qualquer raiz de site do AEM Communities atualizada para fazer referência ao novo local.</li> 
+     <li>Atualize qualquer raiz do site da AEM Communities para fazer referência à nova Configuração de logon social do Facebook definindo a propriedade como o caminho absoluto no Novo local. <code>[cq:Page]/jcr:content@cq:conf</code></li> 
+     <li>Desassocie o Cloud Service legado do Facebook Connect de qualquer raiz do site da AEM Communities atualizada para fazer referência ao novo local.</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -236,15 +239,15 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Quaisquer novas configurações da Pinterest Cloud devem ser migradas para o novo local.</p> 
+   <td><p>Todas as novas configurações da Pinterest Cloud devem ser migradas para o novo local.</p> 
     <ol> 
      <li>Migre as configurações existentes no Local anterior para o novo local.
       <ol> 
-       <li>Recrie manualmente as novas Configurações de logon do Pinterest Social por meio da interface de usuário de criação do AEM em <strong>Ferramentas &gt; Serviços em nuvem &gt; Configuração</strong>de logon do Pinterest Social.<br /> ou</li> 
+       <li>Recrie manualmente as novas Configurações de logon do Pinterest Social por meio da interface de usuário de criação de AEM em <strong>Ferramentas &gt; Cloud Services &gt; Configuração</strong>de logon do Pinterest Social.<br /> ou</li> 
        <li>Copie quaisquer novas configurações da Pinterest Cloud do local anterior para o novo local apropriado em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova configuração de logon do Pinterest Social definindo a propriedade como <code>[cq:Page]/jcr:content@cq:conf</code> caminho absoluto no novo local.</li> 
-     <li>Desassocie o serviço Pinterest Connect Cloud legado de qualquer raiz de site do AEM Communities atualizada para fazer referência ao novo local.</li> 
+     <li>Atualize qualquer raiz do site da AEM Communities para fazer referência à nova Configuração de logon do Pinterest Social definindo a propriedade como <code>[cq:Page]/jcr:content@cq:conf</code> caminho absoluto no novo local.</li> 
+     <li>Desassocie o Cloud Service do Pinterest Connect herdado de qualquer raiz do site da AEM Communities atualizada para fazer referência ao novo local.</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -306,11 +309,11 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
     <ol> 
      <li>Migre as configurações existentes no Local anterior para o novo local.
       <ol> 
-       <li>Recrie manualmente as novas Configurações de logon social do Twitter por meio da interface de usuário de criação do AEM em <strong>Ferramentas &gt; Serviços em nuvem &gt; Configuração</strong>de logon social do Twitter.<br /> ou <br /> </li> 
+       <li>Recrie manualmente as novas Configurações de login social do Twitter por meio da interface de usuário de criação de AEM em <strong>Ferramentas &gt; Cloud Services &gt; Configuração</strong>de logon social do Twitter.<br /> ou <br /> </li> 
        <li>Copie quaisquer novas Configurações da nuvem do Twitter de Local anterior para o Novo local apropriado, em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova configuração de logon do Twitter Social definindo a <code>[cq:Page]/jcr:content@cq:conf</code> propriedade como o caminho absoluto no novo local.</li> 
-     <li>Desassocie o serviço herdado do Twitter Connect Cloud de qualquer raiz de site do AEM Communities atualizada para fazer referência ao novo local.</li> 
+     <li>Atualize qualquer raiz do site da AEM Communities para fazer referência à nova Configuração de logon social do Twitter definindo a <code>[cq:Page]/jcr:content@cq:conf</code> propriedade para o caminho absoluto em Novo local.</li> 
+     <li>Desassocie o Cloud Service herdado do Twitter Connect de qualquer raiz do site da AEM Communities atualizada para fazer referência ao novo local.</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -334,7 +337,7 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>A Adobe disponibilizou um utilitário de migração em:</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td> 
+   <td><p>O Adobe disponibilizou um utilitário de migração em:</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
