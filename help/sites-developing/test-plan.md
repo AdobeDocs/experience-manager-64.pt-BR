@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -35,12 +38,12 @@ Se o seu projeto usar qualquer forma de iteração de desenvolvimento (envolvend
 
 ## Testador
 
-Em algum momento você pode atribuir a equipe de teste apropriada ou uma pessoa de teste específica (possivelmente dependendo da disponibilidade e/ou experiência).
+Em algum momento, você pode atribuir a equipe de teste apropriada ou uma pessoa de teste específica (possivelmente dependendo da disponibilidade e/ou experiência).
 
 ## Resumo ou visão geral
 
-Para fins de relatório, você deseja fornecer uma visão geral dos resultados do teste:
+Para fins de relatórios, forneça uma visão geral dos resultados do teste:
 
-* Percentagem de testes já cobertos.
+* Percentagem de testes já abordados.
 * Porcentagem de sucesso/falha.
 * Dados específicos relativos aos testes prioritários.
