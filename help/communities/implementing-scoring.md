@@ -1,8 +1,8 @@
 ---
 title: Pontuação das comunidades e emblemas
 seo-title: Pontuação das comunidades e emblemas
-description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
-seo-description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
+description: A pontuação e os emblemas do AEM Communities permitem identificar e recompensar os membros da comunidade
+seo-description: A pontuação e os emblemas do AEM Communities permitem identificar e recompensar os membros da comunidade
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-O recurso de pontuação de AEM Communities e emblemas fornece a capacidade de identificar e recompensar membros da comunidade.
+O recurso de pontuação e emblemas do AEM Communities oferece a capacidade de identificar e recompensar membros da comunidade.
 
 Os principais aspectos da pontuação e dos emblemas são:
 
@@ -345,7 +345,7 @@ A `scoringRules`propriedade em uma regra de identificação simplesmente restrin
 
 >[!NOTE]
 >
->Melhores práticas: crie imagens de crachá exclusivas para cada site do AEM.
+>Melhores práticas: crie imagens de emblema exclusivas para cada site AEM.
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -404,7 +404,7 @@ Os emblemas podem ser atribuídos a membros usando o console [de](members.md#bad
 
 Os seguintes comandos cURL mostram o que é necessário para uma solicitação HTTP para atribuir e revogar emblemas. O formato básico é:
 
-cURL -i -X POST -H *cabeçalho* -u *logon * -F *operação * -F *emblema * *membro-perfil-url*
+cURL -i -X POST -H *header* -u *login * -F *operação * -F *emblema * *membro-perfil-url*
 
 *header* = &quot;Accept:application/json&quot;\
 cabeçalho personalizado para passar para o servidor (obrigatório)
@@ -471,7 +471,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um evento de calendário |
+| POST | membro cria um evento de calendário |
 | ADICIONAR | comentários do membro em um evento de calendário |
 | ATUALIZAR | o evento do calendário ou comentário do membro é editado |
 | EXCLUIR | o evento ou comentário do calendário do membro é excluído |
@@ -480,7 +480,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um comentário |
+| POST | membro cria um comentário |
 | ADICIONAR | membro responde ao comentário |
 | ATUALIZAR | o comentário do membro é editado |
 | EXCLUIR | o comentário do membro é excluído |
@@ -489,7 +489,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pasta |
+| POST | membro cria uma pasta |
 | ANEXAR | membro carrega um arquivo |
 | ATUALIZAR | membro atualiza uma pasta ou arquivo |
 | EXCLUIR | membro exclui uma pasta ou arquivo |
@@ -498,7 +498,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria tópico do fórum |
+| POST | membro cria tópico do fórum |
 | ADICIONAR | respostas do membro ao tópico do fórum |
 | ATUALIZAR | o tópico do fórum do membro ou a resposta é editada |
 | EXCLUIR | o tópico do fórum do membro ou a resposta é excluída |
@@ -507,7 +507,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um artigo de blog |
+| POST | membro cria um artigo de blog |
 | ADICIONAR | membro comenta em um artigo de blog |
 | ATUALIZAR | artigo ou comentário do membro do blog é editado |
 | EXCLUIR | artigo ou comentário do membro do blog é excluído |
@@ -516,7 +516,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pergunta QnA |
+| POST | membro cria uma pergunta QnA |
 | ADICIONAR | membro cria uma resposta QnA |
 | ATUALIZAR | pergunta ou resposta QnA do membro é editada |
 | SELECIONAR | a resposta do membro é selecionada |
@@ -527,7 +527,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria revisão |
+| POST | membro cria revisão |
 | ATUALIZAR | a revisão do membro é editada |
 | EXCLUIR | a revisão do membro é excluída |
 
@@ -586,7 +586,7 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
 
 É possível tentar marcar e marcar rapidamente usando o site [Introdução ao tutorial](getting-started.md) (engajar):
 
-* Acesse o CRXDE Lite no autor
+* CRXDE Lite de acesso no autor
 * Navegue até a página base:
 
    * /content/sites/contact/en/jcr:content
@@ -619,7 +619,7 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
 
 Em seguida, verifique se os componentes do fórum e dos comentários permitem a exibição de emblemas:
 
-* Novamente usando o CRXDE Lite
+* Novamente usando CRXDE Lite
 * Navegue até o componente do fórum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
