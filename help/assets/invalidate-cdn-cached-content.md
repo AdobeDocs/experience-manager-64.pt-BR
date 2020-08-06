@@ -1,8 +1,8 @@
 ---
 title: Invalidação do conteúdo em cache do CDN
 seo-title: Invalidação do conteúdo em cache do CDN
-description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite atualizar rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
-seo-description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite atualizar rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
+description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
+seo-description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
 uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 28%
 
 ---
 
 
 # Invalidação do conteúdo em cache do CDN {#invalidating-your-cdn-cached-content}
 
-Os ativos do Dynamic Media são armazenados em cache pelo CDN para entrega rápida. No entanto, ao fazer atualizações em um ativo, você pode desejar que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache CDN (Content Delivery Network) permite atualizar rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
+Os ativos de Dynamic Media são armazenados em cache pelo CDN para delivery rápido. No entanto, ao fazer atualizações em um ativo, você pode desejar que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
 
 Consulte também Visão geral do [cache no Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
@@ -27,12 +30,12 @@ Consulte também Visão geral do [cache no Dynamic Media Classic (Scene7)](https
 
    [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
-   Suas credenciais e logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
 
 1. Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**.
 1. Na página Configurações gerais do aplicativo, no cabeçalho do grupo Servidores, localize a caixa de texto Modelo **[!UICONTROL de invalidação]** CDN.
 
-1. Especifique o modelo usado para invalidar o cache CDN (Content Delivery Network).
+1. Especifique o modelo usado para invalidar o cache CDN (Rede de Delivery de Conteúdo).
 
    Por exemplo, suponha que você insira um URL de imagem (incluindo predefinições ou modificadores de imagem) referenciando `<ID>`, em vez de uma ID de imagem específica, como no exemplo a seguir:
 
@@ -47,7 +50,7 @@ Consulte também Visão geral do [cache no Dynamic Media Classic (Scene7)](https
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
-1. Na caixa de listagem URL, clique em **[!UICONTROL Continuar]** para limpar o cache de cada URL específico. Observe que você pode editar um URL ou adicionar um URL digitando-o ou colando-o na caixa de listagem URL; não é necessário definir CDN Invalidate Template antecipadamente.
+1. Na caixa lista do URL, clique em **[!UICONTROL Continuar]** para limpar o cache de cada URL específico. Observe que é possível editar um URL ou adicioná-lo digitando-o ou colando-o na caixa lista do URL; não é necessário definir CDN Invalidate Template antecipadamente.
 
    Depois de clicar em **[!UICONTROL Continuar]**, um indicador é exibido que fornece uma estimativa de quanto tempo levará para limpar o cache.
 
