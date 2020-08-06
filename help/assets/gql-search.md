@@ -1,22 +1,25 @@
 ---
-title: Pesquisa de texto completo GQL
-description: Explore o recurso de pesquisa de texto completo do GQL nos ativos AEM. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
+title: Pesquisa de texto completo do GQL
+description: Explore o recurso de pesquisa de texto completo do GQL no AEM Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 2%
 
 ---
 
 
-# Pesquisa de texto completo GQL {#gql-full-text-search}
+# Pesquisa de texto completo do GQL {#gql-full-text-search}
 
-Explore o recurso de pesquisa de texto completo do GQL nos ativos AEM. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
+Explore o recurso de pesquisa de texto completo do GQL no AEM Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 
 O recurso de pesquisa de texto completo do GQL permite que você pesquise ativos com base em metadados específicos, como título, descrição, autor e assim por diante.
 
 Para pesquisar um ativo com base em seus metadados, por exemplo, título, especifique a palavra-chave de metadados seguida de seu valor no painel de pesquisa. O recurso de pesquisa de texto completo do GQL buscará somente os ativos cujos metadados correspondam exatamente ao valor correspondente inserido.
 
-Por exemplo, para pesquisar ativos que tenham o título &quot;Target&quot;, execute estas etapas:
+Por exemplo, para pesquisar ativos que tenham o título &quot;Público alvo&quot;, execute estas etapas:
 
 ## Pesquisar ativos {#searching-assets}
 
@@ -26,7 +29,7 @@ Por exemplo, para pesquisar ativos que tenham o título &quot;Target&quot;, exec
 
 1. Com o cursor na caixa Omnisearch, pressione Enter.
 1. Clique ou toque no ícone GlobalNav para exibir o painel **[!UICONTROL Filtros]** .
-1. Na caixa Pesquisa Omni, especifique o valor &quot;Target&quot;. Para limitar sua pesquisa a uma pasta específica, clique ou toque no ícone Procurar no painel Filtros e selecione a pasta. Nesse caso, a correspondência é pesquisada somente dentro da pasta e das subpastas abaixo dela.
+1. Na caixa Pesquisa Omni, especifique o valor &quot;Público alvo&quot;. Para limitar sua pesquisa a uma pasta específica, clique ou toque no ícone Procurar no painel Filtros e selecione a pasta. Nesse caso, a correspondência é pesquisada somente dentro da pasta e das subpastas abaixo dela.
 
    >[!NOTE]
    >
@@ -34,11 +37,11 @@ Por exemplo, para pesquisar ativos que tenham o título &quot;Target&quot;, exec
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. A interface do usuário do AEM Assets exibe apenas os ativos cujo título corresponde exatamente a &quot;Target&quot;.
+1. Press **[!UICONTROL Enter]**. A interface do usuário do AEM Assets exibe apenas os ativos cujo título corresponde exatamente a &quot;Público alvo&quot;.
 
 O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base no seguinte:
 
-* Consulta complexa criada pela combinação de uma operação E, os valores especificados para vários campos de metadados (propriedades)
+* query complexo criado pela combinação de uma operação E, os valores especificados para vários campos de metadados (propriedades)
 * Vários valores para um único campo de metadados
 * Correspondências de subsequência de caracteres
 
@@ -56,16 +59,16 @@ O recurso de pesquisa de texto completo do GQL permite que você pesquise ativos
 | [!UICONTROL Local] | local:Índia |
 | [!UICONTROL Descrição] | descrição:&quot;Imagem de amostra&quot; |
 | [!UICONTROL Ferramenta Criador] | criatortool:&quot;Adobe Photoshop 7.0&quot; |
-| [!UICONTROL Proprietário de direitos autorais] | copyrights towner:&quot;Adobe Systems&quot; |
+| [!UICONTROL Proprietário de direitos autorais] | copyrights towner: &quot;Adobe Systems&quot; |
 | [!UICONTROL Contribuinte] | colaborador:John |
 | [!UICONTROL Termos de Uso ] | usageterms:&quot;CopyRights Reserved&quot; |
 | [!UICONTROL Criado] | criado:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Data de expiração] | expira:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Hora] | hora única:AAAA-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Hora de desligar] | oftime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Intervalo de tempo] (expira dateontime,offtime) | campo de aspecto: limite inferior...upperbound |
+| [!UICONTROL Intervalo de tempo] (expira dateontime,offtime) | campo de faceta: limite inferior...upperbound |
 | [!UICONTROL Caminho] | /content/dam/&lt;nome da pasta> |
-| [!UICONTROL Título do PDF] | pdftitle: &quot;Adobe Document&quot; |
+| [!UICONTROL Título do PDF] | pdftitle: &quot;Adobe Documento&quot; |
 | [!UICONTROL Assunto] | assunto: &quot;Formação&quot; |
 | [!UICONTROL Tags] | tags:&quot;Localização E Viagem&quot; |
 | [!UICONTROL Tipo] | type:&quot;image\png&quot; |
@@ -73,7 +76,7 @@ O recurso de pesquisa de texto completo do GQL permite que você pesquise ativos
 | [!UICONTROL Altura da imagem] | height:limite inferior..upperbound |
 | [!UICONTROL Person] | pessoa:John |
 
-Estes são alguns exemplos de formatos de pesquisa para consultas complexas:
+Estes são alguns exemplos de formatos de pesquisa para query complexos:
 
 * Para exibir todos os ativos com vários campos de facetas (por exemplo: title=John Doe e ferramenta criadora = Adobe Photoshop):
 
@@ -99,9 +102,9 @@ título: &quot;Reynolds&quot;
 
 título:&quot;Reunião&quot;;
 
-* Para exibir ativos que contêm uma determinada string e têm um valor de propriedade específico (por exemplo: pesquisar por string Adobe em ativos com título=João da Silva)
+* Para exibir ativos que contêm uma determinada string e têm um valor de propriedade específico (por exemplo: pesquisar por Adobe de string em ativos com título=João da Silva)
 
-&amp;ast;Adobe&amp;ast; título:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
+&amp;ast;Adobe;ast;amp;ast; título:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
 
 >[!NOTE]
 >
@@ -112,9 +115,9 @@ título:&quot;Reunião&quot;;
 
 >[!NOTE]
 >
->Se você gravar uma consulta JCR para pesquisar apenas por subativos, os ativos referenciados correspondentes também serão exibidos junto com os subativos correspondentes.
+>Se você gravar um query JCR para pesquisar apenas por subativos, os ativos referenciados correspondentes também serão exibidos junto com os subativos correspondentes.
 
-A pesquisa de texto completo também oferece suporte a operadores como -, ^ e assim por diante. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplas. Por exemplo, use &quot;Notebook - Beauty&quot; em vez de Notebook - Beauty.
+A pesquisa de texto completo também oferece suporte a operadores como -, ^ e assim por diante. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. Por exemplo, use &quot;Notebook - Beauty&quot; em vez de Notebook - Beauty.
 
 ## Aumentando a pesquisa {#boosting-search}
 
@@ -129,5 +132,5 @@ Você pode melhorar a relevância das palavras-chave de ativos específicos para
 
    ![add_search_word](assets/add_search_word.png)
 
-1. Clique/toque em **[!UICONTROL Salvar e fechar]**.
+1. Click/tap **[!UICONTROL Save &amp; Close]**.
 1. Procure a palavra-chave usando a caixa Omnisearch. O ativo para o qual você promoveu essa palavra-chave aparece entre os principais resultados da pesquisa.
