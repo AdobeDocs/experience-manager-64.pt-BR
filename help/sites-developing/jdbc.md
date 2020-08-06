@@ -1,8 +1,8 @@
 ---
 title: Conexão com Bancos de Dados SQL
 seo-title: Conexão com Bancos de Dados SQL
-description: Acesse um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
-seo-description: Acesse um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
+description: Acessar um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
+seo-description: Acessar um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 0%
 
 ---
 
@@ -29,14 +32,14 @@ Alguns fornecedores de banco de dados fornecem drivers JDBC em um pacote OSGi, p
 
 O exemplo a seguir usa o plug-in [Bundle para Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) para vincular o driver HSQLDB em um pacote OSGi. O POM instrui o plug-in a incorporar o arquivo hsqldb.jar identificado como uma dependência. Todos os pacotes org.hsqldb são exportados.
 
-O plug-in determina automaticamente quais pacotes serão importados e os relaciona no arquivo MANIFEST.MF do pacote. Se algum dos pacotes não estiver disponível no servidor CQ, o pacote não será iniciado após a instalação. Duas soluções possíveis são as seguintes:
+O plug-in determina automaticamente quais pacotes serão importados e os lista no arquivo MANIFEST.MF do pacote. Se algum dos pacotes não estiver disponível no servidor CQ, o pacote não será start ao instalar. Duas soluções possíveis são as seguintes:
 
-* Indique no POM que os pacotes são opcionais. Use essa solução quando a conexão JDBC não exigir os membros do pacote. Use o elemento Importar pacote para indicar pacotes opcionais, como no exemplo a seguir:
+* Indique no POM que os pacotes são opcionais. Use essa solução quando a conexão JDBC não exigir os membros do pacote. Use o elemento Importar pacote para indicar os pacotes opcionais, como no exemplo a seguir:
 
    `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
 * Encapsule os arquivos JAR que contêm os pacotes em um pacote OSGi que exporta os pacotes e implante o pacote. Use essa solução quando os membros do pacote forem necessários durante a execução do código.
 
-O conhecimento do código fonte permite que você decida qual solução usar. Você também pode tentar qualquer solução e executar testes para validar a solução.
+O conhecimento do código-fonte permite que você decida qual solução usar. Você também pode tentar qualquer solução e executar testes para validar a solução.
 
 ### POM que empacota hsqldb.jar {#pom-that-bundles-hsqldb-jar}
 
@@ -84,7 +87,7 @@ O conhecimento do código fonte permite que você decida qual solução usar. Vo
 
 Os links a seguir abrem as páginas de download de alguns produtos de banco de dados populares:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
@@ -106,12 +109,12 @@ As seguintes propriedades estão disponíveis para configurar um serviço de con
 
 * Senha ( `jdbc.password`): A senha a ser usada para autenticação do usuário. O tipo de dados é `String`.
 
-* Consulta de validação ( `jdbc.validation.query`): A instrução SQL a ser usada para verificar se a conexão foi bem-sucedida, por exemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. O tipo de dados é `String`.
+* Query de validação ( `jdbc.validation.query`): A instrução SQL a ser usada para verificar se a conexão foi bem-sucedida, por exemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. O tipo de dados é `String`.
 
 * Somente leitura por padrão (default.readonly): Selecione esta opção quando quiser que a conexão forneça acesso somente leitura. O tipo de dados é `Boolean`.
 * Confirmação automática por padrão ( `default.autocommit`): Selecione essa opção para criar transações separadas para cada comando SQL enviado para o banco de dados e cada transação é automaticamente confirmada. Não selecione essa opção ao confirmar transações explicitamente em seu código. O tipo de dados é `Boolean`.
 
-* Tamanho do pool ( `pool.size`): O número de conexões simultâneas a serem disponibilizadas ao banco de dados. O tipo de dados é `Long`.
+* Tamanho do pool ( `pool.size`): O número de conexões simultâneas a serem disponibilizadas para o banco de dados. O tipo de dados é `Long`.
 
 * Espera do pool ( `pool.max.wait.msec`): A quantidade de tempo antes de uma solicitação de conexão expirar. O tipo de dados é `Long`.
 
@@ -127,7 +130,7 @@ O serviço JDBC Connections Pool é uma fábrica. Portanto, se você usar um `sl
 
 Em seu código Java, use o serviço DataSourcePool para obter um `javax.sql.DataSource` objeto para a configuração criada. O serviço DataSourcePool fornece o `getDataSource` método que retorna um `DataSource` objeto para um determinado nome de fonte de dados. Como argumento de método, use o valor da propriedade Nome da fonte de dados (ou `datasource.name`) especificada para a configuração do Pool de conexões JDBC.
 
-O exemplo a seguir de código JSP obtém uma instância da fonte de dados hsqldbds, executa uma consulta SQL simples e exibe o número de resultados que são retornados.
+O seguinte exemplo de código JSP obtém uma instância da fonte de dados hsqldbds, executa um query SQL simples e exibe o número de resultados que são retornados.
 
 #### JSP que executa uma pesquisa de banco de dados {#jsp-that-performs-a-database-lookup}
 
@@ -167,10 +170,10 @@ O exemplo a seguir de código JSP obtém uma instância da fonte de dados hsqldb
 
 >[!NOTE]
 >
->Se o método getDataSource lançar uma exceção porque a fonte de dados não foi encontrada, verifique se a configuração do serviço do Pool de conexões está correta. Verifique os nomes, valores e tipos de dados da propriedade.
+>Se o método getDataSource lançar uma exceção porque a fonte de dados não foi encontrada, verifique se a configuração do serviço do Pool de Conexões está correta. Verifique os nomes, valores e tipos de dados da propriedade.
 
 
 >[!NOTE]
 >
->Para saber como injetar um DataSourcePool em um pacote OSGi, consulte [Injeção de um serviço DataSourcePool em um pacote](https://helpx.adobe.com/experience-manager/using/datasourcepool.html)OSGi do Adobe Experience Manager.
+>Para saber como injetar um DataSourcePool em um pacote OSGi, consulte [Injeção de um serviço DataSourcePool em um pacote](https://helpx.adobe.com/experience-manager/using/datasourcepool.html)OSGi da Adobe Experience Manager.
 
