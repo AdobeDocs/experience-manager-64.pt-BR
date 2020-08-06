@@ -10,13 +10,16 @@ topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 0%
 
 ---
 
 
 # Submissão assíncrona de formulários adaptativos {#asynchronous-submission-of-adaptive-forms}
 
-Tradicionalmente, formulários da Web são configurados para envio sincronizado. Quando os usuários enviam um formulário, ele é redirecionado para uma página de confirmação ou, em caso de falha no envio, para uma página de erro. Entretanto, experiências modernas da Web, como aplicativos de página única, estão ganhando popularidade, onde a página da Web permanece estática, enquanto a interação cliente-servidor acontece em segundo plano. Agora você pode fornecer essa experiência com formulários adaptáveis configurando o envio assíncrono. Nesse caso, um formulário adaptável se comporta como um aplicativo de página única, pois o formulário não é recarregado ou seu URL não é alterado quando os dados de formulário enviados são validados no servidor.
+Tradicionalmente, formulários da Web são configurados para envio sincronizado. Quando os usuários enviam um formulário, ele é redirecionado para uma página de confirmação ou, em caso de falha no envio, para uma página de erro. Entretanto, experiências modernas da Web, como aplicativos de página única, estão ganhando popularidade, onde a página da Web permanece estática, enquanto a interação cliente-servidor acontece em segundo plano. Agora você pode fornecer essa experiência com formulários adaptáveis configurando o envio assíncrono. Nesse caso, um formulário adaptável comporta-se como um aplicativo de página única, pois o formulário não é recarregado ou seu URL não é alterado quando os dados de formulário enviados são validados no servidor.
 
 Leia para obter detalhes sobre o envio assíncrono em formulários adaptáveis.
 
@@ -24,24 +27,24 @@ Leia para obter detalhes sobre o envio assíncrono em formulários adaptáveis.
 
 Para configurar o envio assíncrono para um formulário adaptável:
 
-1. No modo de criação de formulário adaptável, selecione o objeto Contêiner de formulário e toque em ![cmppr1](assets/cmppr1.png) para abrir suas propriedades.
+1. No modo de criação de formulário adaptável, selecione o objeto Container de formulário e toque em ![cmppr1](assets/cmppr1.png) para abrir suas propriedades.
 1. Na seção Propriedades de **[!UICONTROL envio]** , ative **[!UICONTROL Usar envio]** assíncrono.
 1. Na seção **[!UICONTROL Ao enviar]** , selecione uma das opções a seguir para executar no envio bem-sucedido do formulário.
 
-   * **[!UICONTROL Redirecionar para URL]**: Redireciona para o URL ou página especificada no envio do formulário. Você pode especificar um URL ou navegar para escolher o caminho para uma página no campo URL/caminho **[!UICONTROL de]** redirecionamento.
+   * **[!UICONTROL Redirecionar para URL]**: Redireciona para o URL ou página especificada no envio do formulário. Você pode especificar um URL ou navegar para escolher o caminho para uma página no campo URL/Caminho **[!UICONTROL de]** redirecionamento.
    * **[!UICONTROL Mostrar mensagem]**: Exibe uma mensagem no envio do formulário. Você pode gravar uma mensagem no campo de texto abaixo da opção Mostrar mensagem. O campo de texto oferece suporte à formatação Rich Text.
 
 1. Toque em ![check-button1](assets/check-button1.png) para salvar as propriedades.
 
 ## Como o envio assíncrono funciona {#how-asynchronous-submission-works}
 
-O AEM Forms fornece manipuladores de erros e sucesso prontos para uso para envios de formulário. Os manipuladores são funções do lado do cliente que são executadas com base na resposta do servidor. Quando um formulário é submetido, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o sucesso ou o evento de erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
+A AEM Forms fornece manipuladores de erros e sucesso prontos para uso para envios de formulário. Os manipuladores são funções do lado do cliente que são executadas com base na resposta do servidor. Quando um formulário é submetido, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
 
 Além disso, autores e desenvolvedores de formulários podem gravar regras no nível de formulário para substituir manipuladores padrão. Para obter mais informações, consulte [Substituir manipuladores padrão usando regras](#custom).
 
-Primeiro, analisemos a resposta do servidor para eventos bem-sucedidos e de erro.
+Analisemos primeiro a resposta do servidor para eventos bem-sucedidos e com erros.
 
-### Resposta do servidor para evento de sucesso de envio {#server-response-for-submission-success-event}
+### Resposta do servidor para o evento bem-sucedido de envio {#server-response-for-submission-success-event}
 
 A estrutura para a resposta do servidor para o evento bem-sucedido de envio é a seguinte:
 
@@ -63,7 +66,7 @@ A resposta do servidor em caso de envio de formulário bem-sucedido inclui:
 
 O manipulador de sucesso lê a resposta do servidor e, consequentemente, redireciona para o URL da página configurada ou exibe uma mensagem.
 
-### Resposta do servidor para evento de erro de envio {#server-response-for-submission-error-event}
+### Resposta do servidor para o evento de erro de envio {#server-response-for-submission-error-event}
 
 A estrutura para a resposta do servidor para o evento de erro de envio é a seguinte:
 
@@ -89,9 +92,9 @@ O manipulador de erros lê a resposta do servidor e, consequentemente, exibe a m
 
 ## Substituir manipuladores padrão usando regras {#custom}
 
-Os desenvolvedores e autores de formulários podem gravar regras, no nível de formulário, no editor de código para substituir manipuladores padrão. A resposta do servidor para eventos bem-sucedidos e de erro é exposta no nível do formulário, que os desenvolvedores podem acessar usando `$event.data` as regras.
+Os desenvolvedores e autores de formulários podem gravar regras, no nível de formulário, no editor de código para substituir manipuladores padrão. A resposta do servidor para eventos de erro e sucesso é exposta no nível do formulário, que os desenvolvedores podem acessar usando `$event.data` as regras.
 
-Execute as seguintes etapas para gravar regras no editor de código para lidar com eventos de erro e sucesso.
+Execute as seguintes etapas para gravar regras no editor de código para lidar com eventos bem-sucedidos e de erro.
 
 1. Abra o formulário adaptável no modo de criação, selecione qualquer objeto de formulário e toque em ![edit-rules1](assets/edit-rules1.png) para abrir o editor de regras.
 1. Selecione **[!UICONTROL Formulário]** na árvore Objetos de formulário e toque em **[!UICONTROL Criar]**.
