@@ -1,6 +1,6 @@
 ---
-title: Configurações do serviço de nuvem
-seo-title: Configurações do serviço de nuvem
+title: Configurações do Cloud Service
+seo-title: Configurações do Cloud Service
 description: Você pode estender as instâncias existentes para criar suas próprias configurações
 seo-description: Você pode estender as instâncias existentes para criar suas próprias configurações
 uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
 
-# Configurações do serviço de nuvem{#cloud-service-configurations}
+# Configurações do Cloud Service{#cloud-service-configurations}
 
-As configurações são projetadas para fornecer a lógica e estrutura para armazenar configurações de serviço.
+As configurações são projetadas para fornecer a lógica e a estrutura para armazenar configurações de serviço.
 
 É possível estender as instâncias existentes para criar suas próprias configurações.
 
@@ -27,10 +30,10 @@ Os princípios utilizados no desenvolvimento das configurações basearam-se nos
 
 * Serviços/Adaptadores são usados para recuperar as configurações.
 * As configurações (por exemplo, propriedades/parágrafos) são herdadas dos pais.
-* Referenciado de nó(s) de análise por caminho.
+* Referenciado de nó(s) do Analytics por caminho.
 * Facilmente extensível.
 * Tem a flexibilidade de atender a configurações mais complexas, como o [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Suporte para dependências (por exemplo, plug-ins do [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) precisam de uma configuração do [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Suporte para dependências (por exemplo, plug-ins [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) precisam de uma configuração [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
 
 ## Estrutura {#structure}
 
@@ -38,7 +41,7 @@ O caminho básico das configurações é:
 
 `/etc/cloudservices`.
 
-Para cada tipo de configuração, um modelo e um componente serão fornecidos.Isso possibilita que os modelos de configuração atendam à maioria das necessidades após serem personalizados.
+Para cada tipo de configuração, um modelo e um componente serão fornecidos.Isso possibilita a existência de modelos de configuração que possam atender à maioria das necessidades após serem personalizados.
 
 Para fornecer uma configuração para novos serviços, é necessário:
 
@@ -51,7 +54,7 @@ Para fornecer uma configuração para novos serviços, é necessário:
    * um modelo de configuração
    * um componente de configuração
 
-O modelo e o componente devem herdar o `sling:resourceSuperType` do modelo base:
+O modelo e o componente devem herdar o modelo `sling:resourceSuperType` do modelo base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -59,7 +62,7 @@ ou componente de base, respectivamente
 
 `cq/cloudserviceconfigs/components/configpage`
 
-O prestador de serviços também deve fornecer a página de serviço:
+O provedor de serviço também deve fornecer a página de serviço:
 
 `/etc/cloudservices/<service-name>`
 
@@ -102,7 +105,7 @@ Seu componente deve estender o componente básico:
 /libs/cq/analytics/components/generictrackerpage
 ```
 
-Após configurar seu modelo e componente, é possível adicionar sua configuração adicionando subpáginas em:
+Depois de configurar seu modelo e componente, você pode adicionar sua configuração adicionando subpáginas em:
 
 `/etc/cloudservices/<service-name>`
 
@@ -121,7 +124,7 @@ O modelo de conteúdo é armazenado como `cq:Page` em:
 
 As configurações são armazenadas sob o subnó `jcr:content`.
 
-* As propriedades fixas, definidas em uma caixa de diálogo, devem ser armazenadas `jcr:node` diretamente.
+* As propriedades fixas, definidas em uma caixa de diálogo, devem ser armazenadas `jcr:node` diretamente no.
 * Os elementos dinâmicos (usando `parsys` ou `iparsys`) usam um subnó para armazenar os dados do componente.
 
 ```xml
@@ -137,9 +140,9 @@ propertyname
 
 Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicessupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
-### Integração do AEM {#aem-integration}
+### Integração AEM {#aem-integration}
 
-Os serviços disponíveis são listados na guia Serviços **em** nuvem da caixa de diálogo Propriedades **da** página (de qualquer página que herda de `foundation/components/page` ou `wcm/mobile/components/page`).
+Os serviços disponíveis são listados na guia **Cloud Services** da caixa de diálogo Propriedades **da** página (de qualquer página que herda de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 A guia também fornece:
 
@@ -174,7 +177,7 @@ A propriedade será automaticamente criptografada (usando o `CryptoSupport` serv
   </tr> 
   <tr> 
    <td>componentReference</td> 
-   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da <code>body</code> tag).<br /> No caso de o Analytics e o Target usarmos isso para incluir funcionalidades adicionais, como chamadas JavaScript para rastrear o comportamento do visitante.</td> 
+   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da <code>body</code> tag).<br /> No caso de o Analytics e o Público alvo usarmos isso para incluir funcionalidades adicionais, como chamadas de JavaScript para rastrear o comportamento do visitante.</td> 
   </tr> 
   <tr> 
    <td>descrição</td> 
@@ -223,5 +226,5 @@ Esses serviços são fornecidos por padrão:
 
 >[!NOTE]
 >
->Consulte também [Criação de um serviço](/help/sites-developing/extending-cloud-config-custom-cloud.md)da nuvem personalizada.
+>Consulte também [Criação de um Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)personalizado.
 
