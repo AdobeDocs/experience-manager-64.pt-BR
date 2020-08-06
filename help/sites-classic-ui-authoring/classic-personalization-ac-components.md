@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2475'
+ht-degree: 77%
 
 ---
 
@@ -128,7 +131,8 @@ O componente Link (Campaign) permite adicionar um link ao seu informativo. Esse 
 
 * **Dica de ferramenta do link** Adiciona mais informações sobre como usar o link.
 
-* **Tipo de link** Na lista suspensa, selecione entre um **URL personalizado** e um **Documento adaptável**. Este campo é obrigatório. Se você selecionar um URL personalizado, será possível fornecer o URL do link. Se você selecionar Documento adaptável, é possível fornecer o caminho do documento.
+* **LinkType** Na lista suspensa, selecione entre uma 
+**URL** personalizado e um Documento **** adaptável. Este campo é obrigatório. Se você selecionar um URL personalizado, será possível fornecer o URL do link. Se você selecionar Documento adaptável, é possível fornecer o caminho do documento.
 
 * **Parâmetro de URL adicional** Adicione qualquer parâmetro de URL adicional. Clique em Adicionar item para adicionar vários itens.
 
@@ -250,7 +254,7 @@ A tabela a seguir descreve os componentes disponíveis para exibir e modificar d
   <tr> 
    <td><p>Caixa de seleção (Campaign)</p> </td> 
    <td><p>boolean</p> </td> 
-   <td><p>Não há mais contato (por qualquer canal)</p> </td> 
+   <td><p>Não há mais contato (por nenhum canal)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Campo de dados (Campanha)</p> <p>Campo de data/HTML 5 (Campanha)</p> </td> 
@@ -371,7 +375,7 @@ Você pode configurar o seguinte no componente Chave primária criptografada (Ca
 
    O padrão é encryptedPK. Você só precisará alterar o nome do elemento quando ele estiver em conflito com o nome de outro elemento no formulário. Dois campos de formulário não podem ter o mesmo nome de elemento.
 
-* **Adobe Campaign - parâmetro do URL**
+* **Adobe Campaign - parâmetro de URL**
 
    Adicione o parâmetro de URL para o EPK. Por exemplo, você pode usar o valor **epk**.
 
@@ -415,7 +419,8 @@ Além das [configurações comuns à maioria dos componentes do Adobe Campaign](
 * **Mensagem de restrição**
 
    Além disso, você pode adicionar uma mensagem de restrição para que os usuários saibam como formatar corretamente suas respostas.
-* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando nos ícones **+** e **-** ou digitando um número.
+* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando no botão 
+**+** e **-** ícones ou inserir um número.
 
 O exemplo a seguir mostra um componente Campo numérico (Campaign) com a largura configurada sendo exibida.
 
