@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Executar uma verificação de consistência {#perform-a-consistency-check}
 
-Para executar uma verificação de consistência, navegue até a página de administração do JMX Mbean** com.adobe.granite (Repositório)**. Na tela principal do AEM, vá para:
+Para executar uma verificação de consistência, navegue até a página de administração do JMX Mbean** com.adobe.granite (Repositório)**. Na tela principal AEM, vá para:
 
 **Ferramentas > Console da Web > Principal(na barra de menus) > JMX > com.adobe.granite (Repositório)**
 
-**[Em uma instalação padrão, ela é encontrada aqui:  |Mostrar-me|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+Em uma instalação padrão, ela é encontrada aqui:  **[|Mostrar-me|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
 Na seção **Operações** da página, você encontrará dois métodos: **`traversalCheck`** e **`consistencyCheck`**. Para executar uma verificação, clique na operação e insira os parâmetros desejados.
 
