@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 ## Introdução {#introduction}
 
-O recurso de blog do AEM Communities transformou de uma atividade de criação em uma verdadeira atividade da comunidade que ocorre no ambiente de publicação.
+O recurso de blog do AEM Communities se transformou de uma atividade de criação em uma verdadeira atividade da comunidade que acontece no ambiente de publicação.
 
 O recurso de blog suporta o fornecimento de informações da comunidade em um formato de diário. As entradas do blog são feitas no ambiente de publicação por membros autorizados (usuários registrados, conectados).
 
@@ -36,7 +39,7 @@ O recurso de blog fornece:
 
 Esta seção da documentação descreve
 
-* Adicionar o recurso de blog a um site do AEM
+* Adicionar o recurso de blog a um site AEM
 * Configurações para componentes de blog
 
 >[!NOTE]
@@ -88,11 +91,11 @@ Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do b
 
 * **[!UICONTROL Bloquear conteúdo gerado pelo usuário no modo]** de edição do autor Se ativado, bloqueia o conteúdo gerado pelo usuário durante a edição no modo de autor.
 
-* **[!UICONTROL Título]** do diárioO título do blog a ser exibido na página.
+* **[!UICONTROL Título]** do JournalO título do blog a ser exibido na página.
    >Nota:
-   >O Título do diário é usado para criar automaticamente o URL para o blog. No máximo 50 caracteres (com 5 caracteres adicionais para exclusividade) são usados no título do diário que você especificou aqui para criar o URL para o blog.
+   >O Título do Journal é usado para criar automaticamente o URL para o blog. No máximo 50 caracteres (com 5 caracteres adicionais para exclusividade) são usados no título do journal que você especificou aqui para criar o URL para o blog.
 
-* **[!UICONTROL Descrição]** do diário A descrição do blog.
+* **[!UICONTROL Descrição]** do JournalA descrição do blog.
 
 * **[!UICONTROL Tópicos por página]**
 
@@ -124,7 +127,7 @@ Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do b
 
 * **[!UICONTROL Tipos de arquivos permitidos]**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **[!UICONTROL Tamanho máximo do arquivo de imagem a ser anexado]**
 
@@ -144,7 +147,7 @@ Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do b
 
 * **[!UICONTROL Permitir assinaturas de email]**
 
-   Se marcada, permita que os membros sejam notificados de novas postagens por email ([assinatura](subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](email.md)email. O padrão está desmarcado.
+   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](email.md)email. O padrão está desmarcado.
 
 * **[!UICONTROL Permitir votação]**
 
@@ -188,7 +191,7 @@ Na guia Moderação **[!UICONTROL do]** usuário, especifique as configurações
 
 * **[!UICONTROL Limite de sinalização]**
 
-   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da exibição pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da visualização pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da visualização pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
@@ -196,7 +199,7 @@ Na guia **[!UICONTROL Tag field]** (Campo de tag), especifique as tags que podem
 
 * **[!UICONTROL Espaços de nomes permitidos]**
 
-   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Configurações]** . As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
+   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Configurações]** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **[!UICONTROL Limite sugerido]**
 
@@ -204,9 +207,9 @@ Na guia **[!UICONTROL Tag field]** (Campo de tag), especifique as tags que podem
 
 ### Configuração da barra lateral do blog {#configuring-blog-sidebar}
 
-Quando você clica duas vezes no `Blog Sidebar` componente, uma caixa de diálogo de edição é aberta.
+Ao clicar com o duplo no `Blog Sidebar` componente, uma caixa de diálogo de edição é aberta.
 
-Na guia Configurações **[!UICONTROL da barra lateral do]** diário, especifique o formato de data para arquivos e que tipo de entradas serão exibidas na barra lateral:
+Na guia Configurações **[!UICONTROL da barra lateral do]** Journal, especifique o formato de data para arquivos e que tipo de entradas serão exibidas na barra lateral:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -219,6 +222,7 @@ Na guia Configurações **[!UICONTROL da barra lateral do]** diário, especifiqu
    * MMMM: mês inteiro, como junho
    * MMM: mês curto, como Jun
    * MM: número do mês, como 06
+
    O padrão é &quot;yyyy MMMM&quot;, que exibiria, por exemplo, &quot;2015 June&quot;
 
 * **[!UICONTROL Visualizar tipo]**
@@ -239,11 +243,11 @@ Na guia Configurações **[!UICONTROL da barra lateral do]** diário, especifiqu
 
    O número de artigos do blog a serem exibidos. Um valor de -1 significa sem limite. O padrão é -1.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
-No ambiente de publicação, o recurso de blog exibirá o artigo mais recente do blog seguido por artigos mais antigos em ordem decrescente de criação. As barras laterais do blog permitem que os visitantes do site apliquem filtros para limitar a seleção de artigos do blog exibidos.
+No ambiente publish, o recurso blog exibirá o artigo mais recente do blog seguido de artigos mais antigos em blog em ordem decrescente de criação. As barras laterais do blog permitem que os visitantes do site apliquem filtros para limitar a seleção de artigos do blog exibidos.
 
-O artigo do blog é seguido de um link para postar ou exibir comentários.
+O artigo do blog é seguido de um link para postar ou visualização de comentários.
 
 Quando um artigo do blog é selecionado, o artigo do blog e os comentários são exibidos (se ativados).
 
@@ -267,16 +271,16 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 ### Membros {#members}
 
-Quando o usuário conectado é membro da comunidade ou membro [](users.md#privileged-members-group) privilegiado (dependendo da configuração), ele pode optar por `New Article` criar e publicar um novo artigo de blog.
+Quando o usuário conectado é um membro da comunidade ou membro [](users.md#privileged-members-group) privilegiado (dependendo da configuração), ele pode selecionar `New Article` criar e publicar um novo artigo de blog.
 
-Especificamente, podem:
+Concretamente, podem:
 
 * Criar um novo artigo de blog
 * Publicar um novo artigo no blog em nome de outro membro
-* Publicar um comentário em um artigo do blog
+* Publicar um comentário em um artigo de blog
 * Editar seu próprio artigo ou comentário no blog
 * Excluir seu próprio artigo ou comentário no blog
-* Sinalizar artigos ou comentários de outros blogues
+* Sinalizar artigos ou comentários de outras pessoas no blog
 
 ![chlimage_1-153](assets/chlimage_1-153.png) ![chlimage_1-154](assets/chlimage_1-154.png)
 
