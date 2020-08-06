@@ -1,8 +1,8 @@
 ---
 title: Recurso Biblioteca de arquivos
 seo-title: Recurso Biblioteca de arquivos
-description: O recurso Biblioteca de arquivos permite que os visitantes do site conectados façam upload, gerenciem e baixem arquivos
-seo-description: O recurso Biblioteca de arquivos permite que os visitantes do site conectados façam upload, gerenciem e baixem arquivos
+description: O recurso Biblioteca de arquivos permite que visitantes do site com logon façam upload, gerenciem e baixem arquivos
+seo-description: O recurso Biblioteca de arquivos permite que visitantes do site com logon façam upload, gerenciem e baixem arquivos
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 ## Introdução {#introduction}
 
-O recurso de biblioteca de arquivos fornece um local para os visitantes do site com logon (membros da comunidade) carregarem, gerenciarem e baixarem arquivos no site da comunidade.
+O recurso de biblioteca de arquivos fornece um local para visitantes do site com logon (membros da comunidade) carregarem, gerenciarem e baixarem arquivos no site da comunidade.
 
 Esta seção da documentação descreve
 
-* Adicionar o recurso da biblioteca de arquivos a um site do AEM
+* Adicionar o recurso da biblioteca de arquivos a um site AEM
 * Configurações para o `File Library` componente
 
 ## Adicionar uma biblioteca de arquivos a uma página {#adding-a-file-library-to-a-page}
@@ -36,7 +39,7 @@ e arraste-o para o lugar em uma página.
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](essentials-file-library.md#essentials-for-client-side) necessárias forem incluídas, o `File Library` componente será exibido desta forma:
+Quando as bibliotecas [do lado do cliente](essentials-file-library.md#essentials-for-client-side) necessárias forem incluídas, o `File Library` componente aparecerá desta forma:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
@@ -52,7 +55,8 @@ Na guia **[!UICONTROL Comentários]** , especifique se e como os comentários do
 
 * **[!UICONTROL Permitir comentários em arquivos]** Se marcada, permita comentários em arquivos carregados. O padrão está desmarcado.
 
-* **[!UICONTROL Comentários por página]** Limita o número de comentários exibidos por página, bem como o número de respostas exibidas. O padrão é **10**.
+* **[!UICONTROL Comentários por página]** Limita o número de comentários exibidos por página, bem como o número de respostas exibidas. O padrão é 
+**10**.
 
 * **[!UICONTROL Tamanho]** máx. do arquivo Esse valor limitará o tamanho do arquivo carregado. O limite padrão é 104857600 (10 Mb).
 
@@ -62,11 +66,11 @@ Na guia **[!UICONTROL Comentários]** , especifique se e como os comentários do
 
 * **[!UICONTROL Editor]** de Rich Text Se marcado, os comentários poderão ser inseridos com marcação. O padrão está desmarcado.
 
-* **[!UICONTROL Excluir comentários]** Se marcados, os usuários poderão excluir seus próprios comentários. O padrão está marcado.
+* **[!UICONTROL Excluir comentários]** Se esta opção estiver marcada, os usuários poderão excluir seus próprios comentários. O padrão está marcado.
 
 * **[!UICONTROL Permitir marcação]** Se marcada, a capacidade de adicionar uma tag ao arquivo será ativada. O padrão está desmarcado.
 
-* **[!UICONTROL Namespaces permitidos]** Se a opção Permitir marcação estiver marcada, as tags disponíveis serão limitadas aos namespaces marcados. Se nenhum estiver marcado, então todos são permitidos. O padrão é todos os namespaces.
+* **[!UICONTROL Namespaces permitidas]** Se a opção Permitir marcação estiver marcada, as tags disponíveis serão limitadas às namespaces verificadas. Se nenhum estiver marcado, então todos são permitidos. O padrão é todas as namespaces.
 
 * **[!UICONTROL Limite de sugestão]** Se a opção Permitir marcação estiver marcada, essa configuração limita o número de tags sugeridas a serem exibidas. Se definido como -1, não há limite. O padrão é -1.
 
@@ -88,15 +92,17 @@ Na guia Moderação **[!UICONTROL do]** usuário, configure a moderação de com
 
 * **[!UICONTROL Fechar / Reabrir comentários]** Se esta opção estiver marcada, permita que os moderadores de membros confiáveis fechem e reabram os comentários. O padrão está desmarcado.
 
-* **[!UICONTROL Sinalizar comentários]** Se estiver marcada, permita que os visitantes sinalizem comentários como inadequados. O padrão está desmarcado.
+* **[!UICONTROL Sinalizar comentários]** Se marcada, permita que os visitantes sinalizem comentários como inadequados. O padrão está desmarcado.
 
-* **[!UICONTROL Sinalizar lista]** de motivosSe marcada, permita que os visitantes escolham, em uma lista suspensa, o motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
+* **[!UICONTROL Sinalizar Lista]** do motivo Se marcada, permita que os visitantes escolham, em uma lista suspensa, o motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
 
-* **[!UICONTROL Motivo]** de sinalização personalizado Se marcado, permita que os visitantes digitem seu próprio motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
+* **[!UICONTROL Motivo]** de sinalização personalizado Se marcado, permita que os visitantes insiram seu próprio motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
 
-* **[!UICONTROL Limite]** de moderaçãoInsira o número de vezes que um comentário deve ser sinalizado pelos visitantes antes que os moderadores sejam notificados. O padrão é uma vez (**1**).
+* **[!UICONTROL Limiar]** de moderaçãoInsira o número de vezes que um comentário deve ser sinalizado por visitantes antes que os moderadores sejam notificados. O padrão é uma vez (
+**1**).
 
-* **[!UICONTROL Limite de sinalização]** Digite o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da exibição pública. Esse número deve ser maior ou igual ao Limite de **moderação**. O padrão é 5.
+* **[!UICONTROL Limite de sinalização]** Digite o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual a 
+**Limite de moderação**. O padrão é 5.
 
 ## Informações adicionais {#additional-information}
 
