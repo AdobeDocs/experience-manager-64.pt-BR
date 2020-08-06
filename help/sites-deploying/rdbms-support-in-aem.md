@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 translation-type: tm+mt
 source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
 
 ## Visão geral {#overview}
 
-O suporte para a persistência do banco de dados relacional no AEM é implementado usando o Document Microkernel. O Document Microkernel é a base que também é usada para implementar a persistência do MongoDB.
+O suporte para a persistência do banco de dados relacional no AEM é implementado usando o Documento Microkernel. O Microkernel do Documento é a base que também é usada para implementar a persistência do MongoDB.
 
 Consiste em uma API Java baseada na API Java Mongo. Uma implementação de uma API BlobStore também é fornecida. Por padrão, os blobs são armazenados no banco de dados.
 
@@ -37,7 +40,7 @@ Para obter mais informações sobre o nível de suporte ao banco de dados relaci
 
 O repositório é criado pela configuração do serviço `DocumentNodeStoreService` OSGi. Foi estendido para suportar a persistência do banco de dados relacional, além do MongoDB.
 
-Para que funcione, uma fonte de dados precisa ser configurada com o AEM. Isso é feito pelo `org.apache.sling.datasource.DataSourceFactory.config` arquivo. Os drivers JDBC para o respectivo banco de dados precisam ser fornecidos separadamente, já que os pacotes OSGi estão dentro da configuração local.
+Para que funcione, uma fonte de dados precisa ser configurada com AEM. Isso é feito pelo `org.apache.sling.datasource.DataSourceFactory.config` arquivo. Os drivers JDBC para o respectivo banco de dados precisam ser fornecidos separadamente, já que os pacotes OSGi estão dentro da configuração local.
 
 Para obter etapas sobre como criar pacotes OSGi para drivers JDBC, consulte esta [documentação](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) no site Apache Sling.
 
@@ -47,12 +50,12 @@ Para obter etapas sobre como criar pacotes OSGi para drivers JDBC, consulte esta
 >
 >Se esse for o caso, basta copiar o arquivo jar para install-path/crx-quickstart/install/9.
 
-Depois que os pacotes estiverem em vigor, siga as etapas abaixo para configurar o AEM com persistência RDB:
+Depois que os pacotes estiverem em vigor, siga as etapas abaixo para configurar o AEM com a persistência RDB:
 
-1. Verifique se o daemon do banco de dados foi iniciado e se você tem um banco de dados ativo para uso com o AEM.
-1. Copie o jar do AEM 6.3 no diretório de instalação.
+1. Verifique se o daemon do banco de dados foi iniciado e se você tem um banco de dados ativo para uso com AEM.
+1. Copie o AEM 6.3 jar no diretório de instalação.
 1. Crie uma pasta chamada `crx-quickstart\install` no diretório de instalação.
-1. Configure o armazenamento de nós do documento criando um arquivo de configuração com o seguinte nome no `crx-quickstart\install` diretório:
+1. Configure o armazenamento de nó do documento criando um arquivo de configuração com o seguinte nome no `crx-quickstart\install` diretório:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
@@ -63,18 +66,18 @@ Depois que os pacotes estiverem em vigor, siga as etapas abaixo para configurar 
    >
    >Para obter informações detalhadas sobre a configuração da fonte de dados para cada banco de dados suportado, consulte Opções [de configuração da fonte de](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)dados.
 
-1. Em seguida, prepare os pacotes JDBC OSGi a serem usados com o AEM:
+1. Em seguida, prepare os pacotes JDBC OSGi a serem usados com AEM:
 
    1. Baixe o arquivo ZIP em https://dev.mysql.com/downloads/connector/j/
       * deve ser >= 5.1.38
    1. Extrair o `mysql-connector-java-version-bin.jar` (pacote) do arquivo
-   1. Use o console da Web para instalar e iniciar o pacote:
+   1. Use o console da Web para instalar e start o pacote:
       * Ir para *http://serveraddress:serverport/system/console/bundles*
       * Selecione **Instalar/Atualizar**
       * Navegue até a seleção do pacote extraído do arquivo ZIP baixado
-      * Verifique se o Driver JDBC da **Oracle Corporation para MySQLcom.mysql.jdbc** está ativo e inicie-o.
+      * Verifique se o Driver JDBC da **Oracle Corporation para MySQLcom.mysql.jdbc** está ativo e start-o.
 
-1. Finalmente, inicie o AEM com os modos de execução `crx3` e `crx3rdb` :
+1. Finalmente, o start AEM com os modos de execução `crx3` e `crx3rdb` :
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -82,15 +85,15 @@ Depois que os pacotes estiverem em vigor, siga as etapas abaixo para configurar 
 
 ## Opções de configuração da fonte de dados {#data-source-configuration-options}
 
-A configuração `org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi é usada para configurar os parâmetros necessários para a comunicação entre o AEM e a camada de persistência do banco de dados.
+A configuração do `org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi é usada para configurar os parâmetros necessários para a comunicação entre o AEM e a camada de persistência do banco de dados.
 
 As seguintes opções de configuração estão disponíveis:
 
 * `datasource.name:` O nome da fonte de dados. O padrão é `oak`.
 
-* `url:` A string de URL do banco de dados que precisa ser usado com JDBC. Cada tipo de banco de dados tem seu próprio formato de string de URL. Para obter mais informações, consulte Formatos [de sequência de caracteres de](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) URL abaixo.
+* `url:` A string de URL do banco de dados que precisa ser usado com o JDBC. Cada tipo de banco de dados tem seu próprio formato de string de URL. Para obter mais informações, consulte Formatos [de sequência de caracteres de](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) URL abaixo.
 
-* `driverClassName:` O nome da classe do driver JDBC. Isso será diferente dependendo do banco de dados que você deseja usar e, subsequentemente, do driver que é necessário para se conectar a ele. Abaixo estão os nomes de classe para todos os bancos de dados suportados pelo AEM:
+* `driverClassName:` O nome da classe do driver JDBC. Isso será diferente dependendo do banco de dados que você deseja usar e, subsequentemente, do driver que é necessário para se conectar a ele. Abaixo estão os nomes de classe para todos os bancos de dados suportados pela AEM:
 
    * `org.postgresql.Driver` PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` DB2;
@@ -104,7 +107,7 @@ As seguintes opções de configuração estão disponíveis:
 
 ### Formatos de cadeia de caracteres de URL {#url-string-formats}
 
-Um formato de string de URL diferente é usado na configuração da fonte de dados, dependendo do tipo de banco de dados que precisa ser usado. Abaixo está uma lista de formatos para os bancos de dados que o AEM suporta atualmente:
+Um formato de string de URL diferente é usado na configuração da fonte de dados, dependendo do tipo de banco de dados que precisa ser usado. Abaixo está uma lista de formatos para os bancos de dados que AEM atualmente compatíveis:
 
 * `jdbc:postgresql:databasename` PostgreSQL;
 
@@ -116,7 +119,7 @@ Um formato de string de URL diferente é usado na configuração da fonte de dad
 
 ## Limitações conhecidas {#known-limitations}
 
-Embora o uso simultâneo de várias instâncias do AEM com um único banco de dados seja suportado pela persistência do RDBMS, as instalações simultâneas não são.
+Embora o uso simultâneo de várias instâncias AEM com um único banco de dados seja suportado pela persistência de RDBMS, as instalações simultâneas não são.
 
 Para contornar esse problema, primeiro execute a instalação com um único membro e adicione os outros depois que a primeira instalação terminar.
 
