@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 97%
 
 ---
 
 
-# Lançamentos Visão geral{#launches}
+# Visão geral das inicializações{#launches}
 
 Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura.
 
@@ -82,12 +85,14 @@ Lançamentos permitem que você:
 
    * As alterações nas páginas de origem são implementadas automaticamente na cópia de lançamento (se configurada como herança, ou seja, como uma live copy).
    * As alterações na sua cópia de lançamento podem ser feitas sem interromper essas atualizações automáticas ou as páginas de origem.
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [Crie um lançamento aninhado](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - um lançamento dentro de outro:
 
    * A origem é um lançamento existente.
    * Você pode [promover um lançamento ](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)aninhado para qualquer destino. Esse destino pode ser um lançamento pai ou as páginas de origem de nível superior (Produção).
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]
