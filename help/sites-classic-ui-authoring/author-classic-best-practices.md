@@ -1,6 +1,6 @@
 ---
-title: 'Práticas recomendadas '
-seo-title: 'Práticas recomendadas '
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
 description: As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 seo-description: As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 82%
 
 ---
 
 
-# Práticas recomendadas {#best-practices}
+# Práticas recomendadas    {#best-practices}
 
 As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 
 As áreas a seguir têm a documentação disponível a respeito das práticas recomendadas:
 
-* [Ativos](#assets)
+* [Assets](#assets)
 * [Sites](#sites)
 * [Forms](#forms)
 
@@ -33,7 +36,7 @@ Para conhecer as práticas recomendadas de administração, implantação e manu
 
 Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
-## Ativos {#assets}
+## Assets {#assets}
 
 As práticas recomendadas referentes ao Assets, incluindo o recurso de mídia dinâmica e a integração com o Scene 7, estão descritas nos seguintes tópicos:
 
@@ -66,10 +69,10 @@ As práticas recomendadas referentes ao Assets, incluindo o recurso de mídia di
 
 O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas recomendadas descritas a seguir:
 
-Criação: Ambiente e ferramentas [do](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) autor - fornece uma visão geral sobre como criar páginas.
+Criação: [ambiente e ferramentas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) do autor - fornece uma visão geral sobre como criar páginas.
 
 ## Forms {#forms}
 
-Formulários adaptativos: Práticas [recomendadas para trabalhar com formulários](/help/forms/using/adaptive-forms-best-practices.md) adaptáveis - descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptáveis.
+Formulários adaptativos: [Práticas recomendadas para trabalhar com formulários](/help/forms/using/adaptive-forms-best-practices.md) adaptáveis - descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptáveis.
 
-Formulários HTML5: Práticas [recomendadas para a criação de formulários](/help/forms/using/best-practices-for-html5-forms.md) HTML5 - descreve as práticas recomendadas para trabalhar com o layout e o design de formulários HTML5.
+Formulários HTML5: [Práticas recomendadas para a criação de formulários](/help/forms/using/best-practices-for-html5-forms.md) HTML5 - descreve as práticas recomendadas para trabalhar com layout e design de formulários HTML5.
