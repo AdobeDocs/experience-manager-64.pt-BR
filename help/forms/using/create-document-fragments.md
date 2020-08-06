@@ -64,7 +64,7 @@ O fragmento do documento Detalhes da Lista inclui os seguintes campos:
 
 Execute as seguintes etapas para criar variáveis para campos com a interface do usuário do agente como a fonte de dados, criar texto estático e usar elementos de modelo de dados de formulário no fragmento do documento:
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
 
 1. Selecione **Criar** > **Texto**.
 1. Especifique as seguintes informações:
@@ -126,7 +126,7 @@ O fragmento do documento Detalhes do cliente inclui os seguintes campos:
 
 Execute as seguintes etapas para criar variáveis para campos com a interface do usuário do agente como a fonte de dados, criar texto estático e usar elementos de modelo de dados de formulário no fragmento do documento:
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
 1. Selecione **Criar** > **Texto**.
 1. Especifique as seguintes informações:
 
@@ -187,7 +187,7 @@ O fragmento do documento Resumo da Lista inclui os seguintes campos:
 
 Execute as seguintes etapas para criar variáveis para campos com a interface do usuário do agente como a fonte de dados, criar texto estático e usar elementos de modelo de dados de formulário no fragmento do documento:
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
 1. Selecione **Criar** > **Texto**.
 1. Especifique as seguintes informações:
 
@@ -252,7 +252,7 @@ O fragmento Resumo dos encargos do documento inclui os seguintes campos:
 
 Execute as seguintes etapas para criar texto estático e usar elementos de modelo de dados de formulário no fragmento do documento:
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
 1. Selecione **Criar** > **Texto**.
 1. Especifique as seguintes informações:
 
