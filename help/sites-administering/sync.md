@@ -1,8 +1,8 @@
 ---
 title: Sincronização do usuário
 seo-title: Sincronização do usuário
-description: Saiba mais sobre a sincronização do usuário no AEM.
-seo-description: Saiba mais sobre a sincronização do usuário no AEM.
+description: Saiba mais sobre a sincronização de usuários no AEM.
+seo-description: Saiba mais sobre a sincronização de usuários no AEM.
 uuid: 0c7c35a3-9fed-4d48-8bd5-7f4382bf5fa3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
 source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+workflow-type: tm+mt
+source-wordcount: '2502'
+ht-degree: 2%
 
 ---
 
@@ -125,13 +128,14 @@ Veja a seguir as etapas necessárias para habilitar a sincronização do usuári
 >
 >* O usuário padrão atribuído é **`admin`**.
 >* Não utilize `*communities-user-admin *user*.*`
+
 >
 
 
 
 #### Como adicionar ACL {#addacls}
 
-* acessar CRXDE Lite
+* CRXDE Lite de acesso
 
    * por exemplo, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -139,7 +143,7 @@ Veja a seguir as etapas necessárias para habilitar a sincronização do usuári
 * no painel direito, selecione a `Access Control` guia
 * selecione o `+` botão para adicionar uma entrada ACL
 
-   * **Principal**: *pesquisar usuário criado para sincronização do usuário*
+   * **Principal**: *procurar utilizador criado para sincronização de utilizador*
    * **Tipo**: `Allow`
    * **Privilégios**: `jcr:all`
    * **Restrições** rep:global: `*/activities/*`
@@ -154,7 +158,7 @@ Consulte também:
 * [Gerenciamento de direitos de acesso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Seção Solução de problemas [Modificar Exceção da Operação Durante o Processamento](#modify-operation-exception-during-response-processing)da Resposta.
 
-### 3. Distribuição do Adobe Granite - Provedor secreto de transporte de senha criptografado {#adobegraniteencpasswrd}
+### 3. Distribuição de Adobe Granite - Provedor Secreto de Transporte de Senha Criptografado {#adobegraniteencpasswrd}
 
 **Configurar permissões**
 
@@ -202,7 +206,7 @@ Depois que um usuário autorizado, um membro do grupo de usuários **`administra
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### 5. Distribuição do Adobe Granite - Fábrica de Observadores Diff {#diffobserver}
+### 5. Distribuição de Adobe Granite - Fábrica de Observadores Diff {#diffobserver}
 
 **Ativar sincronização de grupos**
 
@@ -382,7 +386,7 @@ Repita essas etapas até que todas as instâncias de publicação tenham uma Sli
 
 Para que as atualizações sejam sincronizadas corretamente, é necessário modificar o construtor de pacote do cofre para sincronização do usuário:
 
-* em cada instância de publicação do AEM
+* em cada instância de publicação AEM
 * acessar o console [da Web](/help/sites-deploying/configuring-osgi.md)
 
    * por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
@@ -433,7 +437,7 @@ Para verificar o estado da fila de distribuição:
 
 * sobre o autor:
 
-   * usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+   * usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
       * procurar entradas em `/var/sling/distribution/packages`
 
@@ -462,7 +466,7 @@ Após a conclusão do tarefa, para reativar a sincronização do usuário:
 
 O Diagnóstico de sincronização do usuário é uma ferramenta que verifica a configuração e tenta identificar qualquer problema.
 
-Em autor, basta navegar do console principal por meio de **Ferramentas, Operações, Diagnóstico, Diagnóstico de sincronização do usuário.**
+No autor, basta navegar do console principal por meio de **Ferramentas, Operações, Diagnóstico, Diagnóstico de sincronização do usuário.**
 
 Basta entrar no console Diagnóstico de sincronização do usuário para exibir os resultados.
 
@@ -490,7 +494,7 @@ Veja a seguir visualizações de como as configurações padrão editadas devem 
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-#### (autor) Uma distribuição do Adobe Granite - Provedor secreto de transporte de senha criptografado {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
+#### (autor) Distribuição de um Adobe Granite - Provedor secreto de transporte de senha criptografado {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 ![chlimage_1-400](assets/chlimage_1-400.png)
 
@@ -498,7 +502,7 @@ Veja a seguir visualizações de como as configurações padrão editadas devem 
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
-#### (publicar) Uma distribuição do Adobe Granite - Fábrica de Observadores Diff {#publish-one-adobe-granite-distribution-diff-observer-factory}
+#### (publicar) Distribuição de um Adobe Granite - Fábrica de Observadores Diff {#publish-one-adobe-granite-distribution-diff-observer-factory}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
@@ -562,7 +566,7 @@ Ver seção [9. ID de Sling exclusiva](#unique-sling-id)
 
    * [importar o pacote](/help/sites-administering/package-manager.md#installing-packages)
 
-Para configurar ou ativar a sincronização do usuário, vá para a etapa 1: Apache Sling Distribution Agent - Fábrica de agentes de sincronização [](#apache-sling-distribution-agent-sync-agents-factory)
+Para configurar ou ativar a sincronização do usuário, vá para a etapa 1: [Apache Sling Distribution Agent - Fábrica de agentes de sincronização](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### Quando um editor fica indisponível {#when-a-publisher-becomes-unavailable}
 
