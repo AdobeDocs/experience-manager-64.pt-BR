@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 1%
 
 ---
 
 
 # Referência do processo de fluxo de trabalho{#workflow-process-reference}
 
-O AEM fornece várias etapas do processo que podem ser usadas para criar modelos de fluxo de trabalho. As etapas do processo personalizado também podem ser adicionadas para tarefas não cobertas pelas etapas incorporadas (consulte [Criação de modelos](/help/sites-developing/workflows-models.md)de fluxo de trabalho).
+AEM fornece várias etapas do processo que podem ser usadas para criar modelos de fluxo de trabalho. As etapas do processo personalizado também podem ser adicionadas para tarefas não cobertas pelas etapas incorporadas (consulte [Criação de modelos](/help/sites-developing/workflows-models.md)de fluxo de trabalho).
 
 ## Características do processo {#process-characteristics}
 
@@ -34,15 +37,15 @@ As etapas do processo são definidas por uma classe Java ou por um ECMAScript.
 
 A carga é a entidade na qual uma instância do fluxo de trabalho atua. A carga é selecionada implicitamente pelo contexto no qual uma instância do fluxo de trabalho é iniciada.
 
-Por exemplo, se um fluxo de trabalho for aplicado a uma página *P* do AEM, o *P* será passado de uma etapa para outra à medida que o fluxo de trabalho avança, com cada etapa agindo opcionalmente sobre o *P* de alguma forma.
+Por exemplo, se um fluxo de trabalho for aplicado a uma página AEM *P* , o *P* será passado de uma etapa para outra à medida que o fluxo de trabalho avança, com cada etapa agindo opcionalmente sobre *P* de alguma forma.
 
-No caso mais comum, a carga é um nó JCR no repositório (por exemplo, uma página AEM ou um ativo). Uma carga de nó JCR é transmitida como uma sequência de caracteres que é um caminho JCR ou um identificador JCR (UUID). Em alguns casos, a carga pode ser uma propriedade JCR (transmitida como um caminho JCR), um URL, um objeto binário ou um objeto Java genérico. Etapas de processo individuais que atuam na carga normalmente esperam uma carga de um determinado tipo ou agem de forma diferente dependendo do tipo de carga. Para cada processo descrito abaixo, é descrito o tipo de carga esperado, se houver.
+No caso mais comum, a carga é um nó JCR no repositório (por exemplo, uma página AEM ou um ativo). Uma carga de nó JCR é transmitida como uma sequência de caracteres que é um caminho JCR ou um identificador JCR (UUID). Em alguns casos, a carga pode ser uma propriedade JCR (transmitida como um caminho JCR), um URL, um objeto binário ou um objeto Java genérico. Etapas de processo individuais que atuam na carga normalmente esperam uma carga de um determinado tipo ou agem de forma diferente dependendo do tipo de carga. Para cada processo descrito abaixo, o tipo de carga esperado, se houver, é descrito.
 
 ### Argumentos {#arguments}
 
 Alguns processos de fluxo de trabalho aceitam argumentos que o administrador especifica ao configurar a etapa de fluxo de trabalho.
 
-Os argumentos são inseridos como uma única string na propriedade Argumentos **de** processo no painel **Propriedades** do editor de fluxo de trabalho. Para cada processo descrito abaixo, o formato da string do argumento é descrito em uma gramática EBNF simples. Por exemplo, o seguinte indica que a string de argumento consiste em um ou mais pares delimitados por vírgulas, em que cada par consiste de um nome (que é uma string) e um valor, separados por dois pontos:
+Os argumentos são inseridos como uma única string na propriedade Argumentos **de** processo no painel **Propriedades** do editor de fluxo de trabalho. Para cada processo descrito abaixo, o formato da string do argumento é descrito em uma gramática EBNF simples. Por exemplo, o seguinte indica que a string de argumento consiste em um ou mais pares delimitados por vírgulas, em que cada par consiste de um nome (que é uma string) e um valor, separados por dois-pontos de duplo:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -77,15 +80,15 @@ A maneira recomendada para fazer isso é usar um usuário de serviço criado com
 >
 >As permissões agora são definidas como acima ([Permissões](#permissions)). Como é o método recomendado para atualizar sua implementação.
 >
->Uma solução de curto prazo também está disponível para fins de compatibilidade com versões anteriores quando alterações de código não são viáveis:
+>Uma solução de curto prazo também está disponível para fins de compatibilidade com versões anteriores quando as alterações de código não são viáveis:
 >
->* Usando o Console da Web ( `/system/console/configMgr` localize o serviço de configuração do fluxo de trabalho do **Adobe Granite**
+>* Usando o Console Web ( `/system/console/configMgr` localize o serviço de configuração do fluxo de trabalho **Adobe Granite**
    >
    >
 * ativar o modo herdado do processo de **fluxo de trabalho**
 >
 >
-Isso reverterá para o antigo comportamento de fornecer uma sessão de administrador à `WorkflowProcess` implementação e fornecerá acesso irrestrito a todo o repositório novamente.
+Isso reverterá para o antigo comportamento de fornecer uma sessão de administrador à `WorkflowProcess` implementação e fornecerá acesso irrestrito a todo o repositório mais uma vez.
 
 ## Processos de controle de fluxo de trabalho {#workflow-control-processes}
 
@@ -93,7 +96,7 @@ Os processos a seguir não executam nenhuma ação no conteúdo. Elas servem par
 
 ### AbsoluteTimeAutoAdvancer (Absolute Time Auto Advancer) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
-O processo `AbsoluteTimeAutoAdvancer` (Advancer Automático de Tempo Absoluto) comporta-se de forma idêntica ao **AutoAdvancer**, exceto pelo fato de expirar em um determinado momento e data, em vez de após um determinado período.
+O processo `AbsoluteTimeAutoAdvancer` (Advancer Automático de Tempo Absoluto) comporta-se de forma idêntica ao **AutoAdvancer**, exceto pelo fato de expirar em um determinado momento e data, em vez de após um determinado período de tempo.
 
 * **Classe** Java: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Carga**: Nenhum.
@@ -162,7 +165,7 @@ O item no caminho especificado é excluído.
 
 * **Caminho** ECMAScript: `/libs/workflow/scripts/delete.ecma`
 
-* **Carga**:Caminho JCR
+* **Carga**: Caminho JCR
 * **Argumentos**: Nenhum
 * **Tempo limite**: Ignorado
 
@@ -220,11 +223,11 @@ Por exemplo: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 Bloqueia a carga do fluxo de trabalho.
 
-* **** Classe Java: `com.day.cq.workflow.impl.process.LockProcess`
+* **Classe Java:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **** Carga: JCR_PATH e JCR_UUID
-* **** Argumentos: Nenhum
-* **** Tempo limite: Ignorado
+* **Carga:** JCR_PATH e JCR_UUID
+* **Argumentos:** Nenhum
+* **Tempo limite:** Ignorado
 
 A etapa não tem efeito nas seguintes circunstâncias:
 
@@ -235,11 +238,11 @@ A etapa não tem efeito nas seguintes circunstâncias:
 
 Desbloqueia a carga do fluxo de trabalho.
 
-* **** Classe Java: `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Classe Java:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **** Carga: JCR_PATH e JCR_UUID
-* **** Argumentos: Nenhum
-* **** Tempo limite: Ignorado
+* **Carga:** JCR_PATH e JCR_UUID
+* **Argumentos:** Nenhum
+* **Tempo limite:** Ignorado
 
 A etapa não tem efeito nas seguintes circunstâncias:
 
