@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Fragmentos de conteúdo permitem criar conteúdo neutro ao canal, juntamente com variações (possivelmente específicas ao canal). **We.Retail** (conforme disponível em uma instância predefinida do AEM) fornece o fragmento Surfing no **Ártico em Lofoten** como uma amostra básica. Isto ilustra que:
 
-* Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments.md). Eles permitem criar um conteúdo neutro ao canal, juntamente com variações (possivelmente, específicas do canal).
+* Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments.md). Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). 
 
    * Consulte [Onde localizar ativos de fragmento de conteúdo no We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -37,6 +40,7 @@ Para obter a documentação completa sobre como criar, gerenciar, usar e desenvo
 >
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
+
 >
 >
 Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
@@ -94,7 +98,7 @@ Para obter mais detalhes, consulte:
 
    * Use seu Fragmento de conteúdo ao criar uma página.
 
-* [Desenvolvimento do AEM - Componentes para fragmentos de conteúdo](/help/sites-developing/components-content-fragments.md)
+* [Desenvolvimento de AEM - Componentes para fragmentos de conteúdo](/help/sites-developing/components-content-fragments.md)
 
    * Uma visão geral dos componentes dos Fragmentos de conteúdo.
 
