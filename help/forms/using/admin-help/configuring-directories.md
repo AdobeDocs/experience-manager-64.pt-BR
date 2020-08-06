@@ -137,7 +137,7 @@ Embora o DN de base seja uma configuração obrigatória no console de administr
 
 **Iniciais:** Atributo de Schema para as iniciais do usuário
 
-**Calendário comercial:** Permite mapear um calendário de negócios para um usuário, com base no valor dessa configuração (a chave do calendário de negócios). Os calendários de negócios definem dias úteis e não úteis. Os formulários do AEM podem usar calendários de negócios ao calcular datas e horários futuros para eventos como lembretes, prazos e escalonamentos. A forma como você atribui chaves de calendário de negócios aos usuários depende se você está usando um domínio corporativo, local ou híbrido. (Consulte Configurar Calendários Comerciais.)
+**Calendário comercial:** Permite mapear um calendário de negócios para um usuário, com base no valor dessa configuração (a chave do calendário de negócios). Os calendários de negócios definem dias úteis e não úteis. AEM formulários podem usar calendários de negócios ao calcular datas e horários futuros para eventos como lembretes, prazos e escalonamentos. A forma como você atribui chaves de calendário de negócios aos usuários depende se você está usando um domínio corporativo, local ou híbrido. (Consulte Configurar Calendários Comerciais.)
 
 Se você estiver usando um domínio corporativo, é possível mapear a configuração do Calendário comercial para um campo no diretório LDAP. Por exemplo, se cada registro de usuário em seu diretório contiver um campo de *país* e você quiser atribuir calendários comerciais com base no país onde o usuário está localizado, especifique o nome do campo de *país* como valor para a configuração de Calendário comercial. Em seguida, é possível mapear as chaves do calendário comercial (os valores definidos para o campo *país* no diretório LDAP) para os calendários de negócios no fluxo de trabalho dos formulários.
 
@@ -221,7 +221,7 @@ Se o DN for especificado como um identificador exclusivo, não será necessário
 
 A sincronização de diretórios é um requisito importante para o Gerenciamento de usuários. Os usuários e grupos são sincronizados de um diretório corporativo para o banco de dados de formulários AEM para atribuir funções e permissões. O número de usuários varia de 100 a 100000+, dependendo dos requisitos, e isso representa um desafio de engenharia para sincronizar os dados com eficiência.
 
-O protocolo LDAP fornece um mecanismo para query de grandes conjuntos de dados de forma paginada usando controles de solicitação. Ao usar o Microsoft Ative Diretory, a sincronização de banco de dados de formulários LDAP para AEM usa PagedResultsControl para recuperar dados em lotes de um tamanho específico. O servidor Sun ONE Diretory não suporta este controlo. Para concluir um query paginado em relação ao servidor Sun ONE Diretory, use o controle VLV (Virtual Lista Visualização). Esse controle envolve a configuração do servidor de diretório e a implementação do cliente.
+O protocolo LDAP fornece um mecanismo para query de grandes conjuntos de dados de forma paginada usando controles de solicitação. Ao usar o Microsoft Ative Diretory, o LDAP para AEM a sincronização do banco de dados de formulários usa o PagedResultsControl para recuperar dados em lotes de um tamanho específico. O servidor Sun ONE Diretory não suporta este controlo. Para concluir um query paginado em relação ao servidor Sun ONE Diretory, use o controle VLV (Virtual Lista Visualização). Esse controle envolve a configuração do servidor de diretório e a implementação do cliente.
 
 >[!NOTE]
 >
@@ -233,7 +233,7 @@ O protocolo LDAP fornece um mecanismo para query de grandes conjuntos de dados d
 
 ### Configurando o servidor Sun ONE Diretory para VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
-A criação de um VLV requer um par de entradas que incluem as classes `vlvSearch` e `vlvIndex` objetos. A entrada vlvSearch inclui uma base de pesquisa e o `vlvFilter` atributo, que especifica a classe de objeto que contém os atributos que você pretende classificar. A classe `vlvIndex` object inclui o `vlvSort` atributo, que especifica um ou mais atributos para classificar e a ordem para classificá-los. (Um sinal de menos (-) indica a ordem alfabética inversa). O uso de VLV com formulários AEM requer entradas separadas para usuários e grupos.
+A criação de um VLV requer um par de entradas que incluem as classes `vlvSearch` e `vlvIndex` objetos. A entrada vlvSearch inclui uma base de pesquisa e o `vlvFilter` atributo, que especifica a classe de objeto que contém os atributos que você pretende classificar. A classe `vlvIndex` object inclui o `vlvSort` atributo, que especifica um ou mais atributos para classificar e a ordem para classificá-los. (Um sinal de menos (-) indica a ordem alfabética inversa). O uso do VLV com formulários AEM requer entradas separadas para usuários e grupos.
 
 >[!NOTE]
 >
