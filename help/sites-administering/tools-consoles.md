@@ -1,8 +1,8 @@
 ---
-title: Consoles de ferramentas
-seo-title: Consoles de ferramentas
-description: Saiba mais sobre os diferentes consoles de ferramentas em todo o AEM.
-seo-description: Saiba mais sobre os diferentes consoles de ferramentas em todo o AEM.
+title: Consoles Ferramentas
+seo-title: Consoles Ferramentas
+description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
+seo-description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
 uuid: d01382f8-0c8f-4d76-9271-bed9e34b3b4b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,40 +11,43 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 35%
 
 ---
 
 
-# Consoles de ferramentas{#tools-consoles}
+# Consoles Ferramentas{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. Atualmente, existem duas opções do console **Ferramentas** , dependendo da interface do usuário que você está usando:
+Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem duas opções do console **Ferramentas** , dependendo da interface do usuário que você está usando:
 
 * [Ferramentas - IU clássica](#tools-classic-ui)
 * [Ferramentas - IU otimizada ao toque](#tools-touch-optimized-ui)
 
-## Ferramentas - IU clássica {#tools-classic-ui}
+## Tools - Classic UI {#tools-classic-ui}
 
 <table> 
  <tbody> 
   <tr> 
-   <th>Página ou pasta</th> 
+   <th>Page or Folder</th> 
    <th> </th> 
    <th>Propósito</th> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/msm.md">Centro de controle MSM</a></td> 
+   <td><a href="/help/sites-administering/msm.md">MSM Control Center</a></td> 
    <td> </td> 
-   <td>Ponto centralizado para gerenciar vários sites.</td> 
+   <td>Ponto centralizado para gerenciar seus vários sites.</td> 
   </tr> 
   <tr> 
-   <td>Configurações de contexto do cliente<br /> </td> 
+   <td>Client Context Configurations<br /> </td> 
    <td> </td> 
    <td>O Contexto <a href="/help/sites-developing/client-context.md">do</a> cliente representa uma coleção de dados do usuário dinamicamente montada. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td> 
   </tr> 
   <tr> 
    <td>Configurações dos serviços em nuvem<br /> </td> 
    <td> </td> 
-   <td>Mantém configurações relacionadas à <a href="/help/sites-administering/marketing-cloud.md">integração com a Adobe Marketing Cloud</a>.</td> 
+   <td>Mantém configurações relacionadas à <a href="/help/sites-administering/marketing-cloud.md">integração com o Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Comércio</a></td> 
@@ -52,7 +55,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Fornece acesso aos importadores e a vários dados do produto.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Gerenciamento de direitos digitais<br /> </td> 
+   <td>DAM - Digital Rights Management<br /> </td> 
    <td> </td> 
    <td>Fornece acesso a informações e licenças de direitos digitais.</td> 
   </tr> 
@@ -62,14 +65,14 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Compara <code>/var/dam</code> e <code>/content/dam</code> verifica se há<br /> inconsistências. Quaisquer arquivos/pastas listados podem ser sincronizados ou excluídos. Os tipos de nós para comparação de pastas são configuráveis no console da Web.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Adobe Indesign<br /> </td> 
+   <td>DAM - Indesign Adobe<br /> </td> 
    <td> </td> 
    <td>Scripts para uso em conjunto com o Adobe Indesign.</td> 
   </tr> 
   <tr> 
    <td>DAM - Perfis de vídeo<br /> </td> 
    <td> </td> 
-   <td>Perfis configuráveis para transcodificação ffmpeg.</td> 
+   <td>perfis configuráveis para transcodificações ffmpeg.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">Painéis</a></td> 
@@ -89,7 +92,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>Envio de formulário</td> 
    <td> </td> 
-   <td>Contém a lista de envios de formulário recebidos.</td> 
+   <td>Retém a lista de envios de formulário recebidos.</td> 
   </tr> 
   <tr> 
    <td>Importadores - Editor <a href="/help/sites-administering/bulk-editor.md">em massa</a></td> 
@@ -124,12 +127,12 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">Pacotes</a></td> 
    <td> </td> 
-   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para o AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td> 
+   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td> 
   </tr> 
   <tr> 
    <td>Replicação - Agentes <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">de Replicação</a></td> 
    <td> </td> 
-   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar comentários do usuário do ambiente de publicação ao autor.</td> 
+   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar comentários do usuário do ambiente de publicação para o autor.</td> 
   </tr> 
   <tr> 
    <td>Importadores - <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">Ativar árvore</a></td> 
@@ -139,7 +142,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/reporting.md">Relatórios</a></td> 
    <td> </td> 
-   <td>O AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva seus próprios relatórios.</td> 
+   <td>AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva seus próprios relatórios.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">Scaffolding da página padrão </a></td> 
@@ -149,7 +152,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>Segurança - Configuração de <a href="/help/sites-administering/notification.md">autoatendimento </a> </td> 
    <td> </td> 
-   <td>Permite configurar os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirmam uma senha que foi redefinida.</td> 
+   <td>Permite que você configure os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirme uma senha que foi redefinida.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentação</a></td> 
@@ -159,7 +162,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Configuração SRP padrão. Consulte Console <a href="/help/communities/srp-config.md">de configuração</a> de armazenamento.</td> 
+   <td>Configuração SRP padrão. Consulte Console de configuração <a href="/help/communities/srp-config.md">do</a> Armazenamento.</td> 
   </tr> 
   <tr> 
    <td>gerenciamento de tarefas</td> 
@@ -189,7 +192,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Fluxo de trabalho</a></td> 
    <td> </td> 
-   <td>Os fluxos de trabalho controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td> 
+   <td>Os Workflows controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -204,7 +207,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <th>Propósito</th> 
   </tr> 
   <tr> 
-   <td>Criação </td> 
+   <td>Criação  </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -291,7 +294,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/offloading.md#administering-topologies">Topologia do navegador</a></td> 
-   <td>Exiba a topologia das instâncias.</td> 
+   <td>Visualização da topologia de instâncias.</td> 
   </tr> 
   <tr> 
    <td> </td> 
