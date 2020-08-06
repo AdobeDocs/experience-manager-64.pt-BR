@@ -1,8 +1,8 @@
 ---
 title: Personalização do gesto
 seo-title: Personalização do gesto
-description: Personalizar os gestos no aplicativo AEM Forms
-seo-description: Personalizar os gestos no aplicativo AEM Forms
+description: Personalize os gestos no aplicativo AEM Forms
+seo-description: Personalize os gestos no aplicativo AEM Forms
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Você pode personalizar os gestos do aplicativo AEM Forms para fornecer um méto
 
 ## Como personalizar gestos no aplicativo AEM Forms {#to-customize-gestures-in-aem-forms-app}
 
-No aplicativo AEM Forms, o deslize para a esquerda abre uma nova tarefa ou ponto de partida enquanto o deslize para a direita não faz nada. O exemplo a seguir fornece etapas para abrir uma nova tarefa ou ponto de partida na execução de gestos de deslizamento direito no aplicativo AEM Forms.
+No aplicativo AEM Forms, o deslize para a esquerda abre uma nova tarefa ou ponto de partida enquanto o deslize para a direita não faz nada. O exemplo a seguir fornece etapas para abrir uma nova tarefa ou ponto de partida na execução dos gestos de deslizamento direito no aplicativo AEM Forms.
 
 1. Abra seu projeto.
 
@@ -34,6 +37,7 @@ No aplicativo AEM Forms, o deslize para a esquerda abre uma nova tarefa ou ponto
    * No Xcode, navegue até a pasta **Capture > www > wsmobile > js > runtime > visualização** .
    * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > tempo de execução > visualização** .
    * No Visual Studio, navegue até a pasta **MWSWwindows > www > wsmobile > js > tempo de execução > pasta visualização** .
+
    >[!NOTE]
    >
    >O arquivo tarefa.js contém a visualização de backbone associada a cada tarefa ou ponto de partida listado nas listas de tarefa ou ponto de partida.
