@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '6177'
+ht-degree: 79%
 
 ---
 
@@ -69,7 +72,7 @@ Você pode usar os arquivos de imagem das seguintes extensões de nome de arquiv
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; Arquivos .gif animados não são suportados no AEM para execuções adaptáveis.
+>&amp;ast;&amp;ast; Arquivos .gif animados não são suportados em AEM para execuções adaptáveis.
 
 #### Tamanhos e qualidade de imagens {#images-sizes-and-quality}
 
@@ -165,7 +168,7 @@ Estão disponíveis em duas guias:
 
    * **Criar uso da lista**
 
-      Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa avançada (todas descritas abaixo).
+      Há várias maneiras de criar uma lista de página - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa avançada (todas descritas abaixo).
 
       Observe que não importa qual o método escolhido, cada página que você incluir na sua lista deve ter uma imagem associada à página. É esta imagem que será exibida no carrossel. Caso não haja imagens para uma determinada página na opção Propriedades da página, você deve associar uma imagem à página antes de começar, caso contrário, o carrossel exibirá uma página em branco (ou na maior parte em branco). Consulte [Editar as propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -192,7 +195,7 @@ Estão disponíveis em duas guias:
 
          * **Notação do predicativo do Querybuilder**
 
-            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
+            Você pode inserir um query de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
 
             Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
    * **Ordenar por**
@@ -247,7 +250,7 @@ O exemplo a seguir mostra um gráfico de dados seguido pelo gráfico de barras r
 >
 >Você pode criar um controle gráfico AEM personalizado que exibe os dados localizados no JCR AEM. Para obter informações, consulte [Exibição dos dados do Adobe Experience Manager em um gráfico](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
 
-### Fragmento do conteúdo {#content-fragment}
+### Fragmento de conteúdo {#content-fragment}
 
 >[!CAUTION]
 >
@@ -441,10 +444,10 @@ O componente de Lista permite que você configure os critérios de pesquisa para
          * **Páginas** - Selecione uma lista de páginas. Use + para adicionar mais entradas e os botões para cima/para baixo para ajustar a ordem.
       * **Opções de pesquisa**
 
-         * **Começar** - insira um caminho inicial, manualmente ou usando o seletor. Pesquisar consulta Você pode inserir uma consulta de pesquisa de texto simples.
+         * **Start** - insira um caminho inicial, manualmente ou usando o seletor. Pesquisar consulta Você pode inserir uma consulta de pesquisa de texto simples.
       * **Opções de pesquisa avançada**
 
-         * **Notação** do predicativo do Querybuilder - Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, você pode inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel. Consulte API [do](/help/sites-developing/querybuilder-api.md) QueryBuilder para obter uma discussão completa sobre as expressões de consulta e outros exemplos.
+         * **Notação** do predicativo do Querybuilder - Você pode inserir um query de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel. Consulte API [do](/help/sites-developing/querybuilder-api.md) QueryBuilder para obter uma discussão completa sobre expressões de query e mais exemplos.
       * **Tags** - Especifique a página **** principal, **Tags/palavras-chave** e os critérios de correspondência necessários.
    * **Exibir como**
 
@@ -473,7 +476,7 @@ O componente de Lista permite que você configure os critérios de pesquisa para
 
 O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá exibir uma lista de páginas filhas (o design é controlado pelas definições CSS personalizadas do site).
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_lista_use](assets/dc_list_use.png)
 
 ### Logon {#login}
 
@@ -565,7 +568,7 @@ O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
 É possível configurar:
 
-* Pesquisar 
+* Pesquisar  
 
    * **Tipos de nós**
 
@@ -761,7 +764,7 @@ O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você ta
 
    * **Vincular para**
 
-      Especifique um caminho de destino.
+      Especifique um caminho de público alvo.
 
    * **Descrição**
 
@@ -819,7 +822,8 @@ Depois de adicionar uma instância de componente em sua página, você pode conf
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Vídeo em Flash)
+>* `FLV` (vídeo do Flash)
+
 >
 
 
@@ -870,7 +874,7 @@ Os formulários são criados de vários componentes diferentes:
 
 * **Componentes de perfil**
 
-   Os componentes de perfil estão relacionados aos perfis de visitantes usados para a colaboração social e outras áreas onde a personalização do visitante é necessária.
+   Os componentes do Perfil se relacionam aos perfis do visitante usados para a colaboração social e outras áreas onde a personalização do visitante é necessária.
 
 A seguir, há um formulário de exemplo que contém o componente do **Formulário** (início e fim) com dois campos de **texto de formulário** usados para inserir, um campo de **texto geral** usado para o texto principal e um botão **Enviar.**
 
@@ -941,7 +945,7 @@ Essas guias fornecem os parâmetros necessários; estes dependem do tipo de comp
 
    * **Obrigatório**
 
-      Isso depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo, ou determinadas partes dele, é/são necessários.
+      Isso depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo, ou determinadas partes desse campo, é/são necessários.
 
    * **Mensagem** obrigatória - uma mensagem para informar os usuários que esse campo é obrigatório; um campo obrigatório também será sinalizado com e asterisco.
    * **Restrição** - As restrições disponíveis para seleção dependem do tipo de componente de formulário.
