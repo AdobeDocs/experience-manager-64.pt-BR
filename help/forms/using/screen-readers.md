@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
 
 # Leitores de tela para formulários HTML5 {#screen-readers-for-html-forms}
 
-Os componentes de formulários HTML5 renderizam o modelo de formulário XFA em um formato HTML5. Todos os navegadores padrão que suportam HTML5 podem renderizar esses formulários. Para oferecer suporte a experiências semelhantes de captura de dados em formulários PDF e HTML5, o layout de formulários PDF é retido em formulários HTML5.
+Os componentes de formulários HTML5 renderizam o modelo de formulário XFA em um formato HTML5. Todos os navegadores padrão que suportam HTML5 podem renderizar esses formulários. Para oferecer suporte a experiências semelhantes de captura de dados em formulários PDF e HTML5, o layout de PDF forms é retido em formulários HTML5.
 
 Os formulários HTML5 usam construções HTML padrão que permitem que ferramentas de acessibilidade regulares para HTML sejam usadas com esses formulários. Se um formulário for projetado de acordo com as práticas recomendadas para formulários acessíveis, ele funcionará com qualquer leitor de tela suportado. Além disso, esses formulários são ativados para a navegação pelo teclado.
 
