@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 O `Social Tag Cloud` componente destaca as tags aplicadas pelos membros da comunidade ao publicar conteúdo. É uma forma de identificar os tópicos de tendência e permitir que os visitantes do site localizem rapidamente o conteúdo marcado.
 
-Para obter outro meio de identificar as tendências atuais, visite Tendências [de](trends.md)atividade.
+Para obter outro meio de identificar as tendências atuais, visite Tendências [de](trends.md)Atividade.
 
-Esta página documenta as configurações de diálogo do `Social Tag Cloud` componente e descreve a experiência do usuário.
+Esta página documentos as configurações de diálogo do `Social Tag Cloud` componente e descreve a experiência do usuário.
 
 Para obter informações detalhadas para desenvolvedores, consulte [Tag Essentials](tag.md).
 
@@ -35,7 +38,7 @@ Para adicionar um `Social Tag Cloud` componente a uma página no modo de autor, 
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](tag.md#essentials-for-client-side) necessárias forem incluídas, o `Social Tag Cloud` componente será exibido desta forma:
+Quando as bibliotecas [do lado do cliente](tag.md#essentials-for-client-side) necessárias forem incluídas, o `Social Tag Cloud` componente aparecerá desta forma:
 
 ![chlimage_1-303](assets/chlimage_1-303.png)
 
@@ -45,7 +48,7 @@ Selecione o componente inserido a ser acessado e selecione o `Social Tag Cloud` 
 
 ![chlimage_1-304](assets/chlimage_1-304.png)
 
-Na guia **[!UICONTROL Nuvem]** de tags sociais, especifique quais tags serão exibidas e, se as tags forem links ativos, o local da página para os resultados da pesquisa:
+Na guia Nuvem **[!UICONTROL de tags do]** Social, especifique quais tags serão exibidas e, se as tags forem links ativos, o local da página para os resultados da pesquisa:
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
@@ -53,28 +56,32 @@ Na guia **[!UICONTROL Nuvem]** de tags sociais, especifique quais tags serão ex
 
    * `From page and child pages`
    * `All tags`
+
    O padrão é `From page and child pages`, onde &quot;página&quot; se refere à configuração **Página** abaixo.
 
-* **[!UICONTROL Página]**(obrigatório se não `All tags)` O caminho para o UGC de uma página. O padrão é a página atual se deixado em branco.
+* **[!UICONTROL Página]**(obrigatório se não 
+`All tags)` O caminho para o UGC de uma página. O padrão é a página atual se deixado em branco.
 
 * **[!UICONTROL Sem links em tags]** Se marcadas, as tags serão exibidas na nuvem de tags como texto sem formatação. Se desmarcadas, as tags serão exibidas como links ativos que pesquisam todo o conteúdo ao qual essa tag é aplicada. O padrão está desmarcado e requer que o Caminho **[!UICONTROL do resultado da]** pesquisa seja definido.
 
-* **[!UICONTROL Caminho]** do resultado da pesquisaO caminho para uma página na qual um `Search Result` componente foi colocado, configurado para fazer referência ao UGC que inclui o caminho UGC especificado pela configuração **Página** .
+* **[!UICONTROL Caminho]** do resultado da pesquisaO caminho para uma página na qual uma 
+`Search Result` foi colocado, configurado para fazer referência ao UGC que inclui o caminho UGC especificado pela configuração **Página** .
 
 ## Alterar exibição da nuvem de tags sociais {#change-display-of-social-tag-cloud}
 
-Para editar a exibição da Tag Cloud **do** Social, insira o Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique duas vezes no `Social Tag Cloud` componente inserido para abrir uma caixa de diálogo com uma guia adicional.
+Para editar a exibição da Tag Cloud **do** Social, insira o Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique no duplo no `Social Tag Cloud` componente inserido para abrir uma caixa de diálogo com uma guia adicional.
 
-Usando a guia **[!UICONTROL Nuvem de tags sociais (Design)]** , especifique como as tags são exibidas. Uma tag pode ser uma tag simples, uma única palavra no namespace padrão ou uma taxonomia hierárquica:
+Usando a guia **[!UICONTROL Nuvem de tags sociais (Design)]** , especifique como as tags são exibidas. Uma tag pode ser uma tag simples, uma única palavra na namespace padrão ou uma taxonomia hierárquica:
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
-* **[!UICONTROL Mostrar caminhos]** de título completo Se marcado, mostra os títulos das tags pai e do namespace para cada tag aplicada.
+* **[!UICONTROL Mostrar caminhos]** de título completos Se marcada, mostra os títulos das tags pai e a namespace de cada tag aplicada.
 
    Por exemplo:
 
    * Marcado: `Geometrixx Media: Gadgets / Cars`
    * Desmarcado: `Cars`
+
    Não há diferença para uma tag simples.
 
    O padrão está desmarcado.
@@ -88,7 +95,8 @@ Usando a guia **[!UICONTROL Nuvem de tags sociais (Design)]** , especifique como
    Há três tags que podem ser aplicadas: `Geometrixx Media (the namespace)`, `Gadgets`e `Cars`
 
    * Verificado: somente `Cars` será exibido, se aplicado
-   * Desmarcado: `Geometrixx Media` e `Gadgets`assim como `Cars` será exibido, se aplicado
+   * Desmarcado: `Geometrixx Media` e `Gadgets`assim `Cars` como será exibido, se aplicado
+
    Uma tag simples é uma tag de folha.
 
    O padrão está desmarcado.
