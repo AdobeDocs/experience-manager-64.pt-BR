@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1061'
+ht-degree: 82%
 
 ---
 
@@ -37,7 +40,7 @@ Em Projetos, é possível criar um projeto, associar recursos ao projeto e tamb�
 >
 >For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. A maneira mais fácil de fazer isso é fornecer ao grupo **projects-users** acesso de leitura a **/home/users** e **/home/groups**.
 
-## Criação de um projeto  {#creating-a-project}
+## Criação de um projeto   {#creating-a-project}
 
 Pronto para uso, o AEM permite escolher os seguintes modelos ao criar um projeto:
 
