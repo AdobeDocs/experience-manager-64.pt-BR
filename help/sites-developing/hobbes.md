@@ -1,8 +1,8 @@
 ---
-title: Teste da interface do usuário
-seo-title: Teste da interface do usuário
-description: O AEM fornece uma estrutura para automatizar testes para sua interface do usuário do AEM
-seo-description: O AEM fornece uma estrutura para automatizar testes para sua interface do usuário do AEM
+title: Testando sua interface de usuário
+seo-title: Testando sua interface de usuário
+description: AEM fornece uma estrutura para automatizar testes para sua interface de usuário AEM
+seo-description: AEM fornece uma estrutura para automatizar testes para sua interface de usuário AEM
 uuid: b0280a70-643e-4455-82ea-fa7a90823b53
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ topic-tags: testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 1%
 
 ---
 
 
-# Teste da interface do usuário{#testing-your-ui}
+# Testando sua interface de usuário{#testing-your-ui}
 
-O AEM fornece uma estrutura para a automação de testes para sua interface do usuário do AEM. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece API ajavascript para a criação de testes.
+AEM fornece uma estrutura para automatizar testes para sua interface AEM. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece API ajavascript para a criação de testes.
 
-A estrutura de teste do AEM usa Hobbes.js, uma biblioteca de testes escrita em Javascript. A estrutura do Hobbes.js foi desenvolvida para testar o AEM como parte do processo de desenvolvimento. A estrutura agora está disponível para uso público para testar seus aplicativos AEM.
+A estrutura de teste AEM usa Hobbes.js, uma biblioteca de testes escrita em Javascript. A estrutura do Hobbes.js foi desenvolvida para testar AEM como parte do processo de desenvolvimento. A estrutura agora está disponível para uso público para testar seus aplicativos AEM.
 
 >[!NOTE]
 >
@@ -27,7 +30,7 @@ A estrutura de teste do AEM usa Hobbes.js, uma biblioteca de testes escrita em J
 
 ## Estrutura dos ensaios {#structure-of-tests}
 
-Ao usar testes automatizados no AEM, os seguintes termos são importantes para entender:
+Ao usar testes automatizados em AEM, os seguintes termos são importantes para entender:
 
 |  |  |
 |---|---|
@@ -39,19 +42,19 @@ Ao usar testes automatizados no AEM, os seguintes termos são importantes para e
 
 ### Exibindo conjuntos de testes {#viewing-test-suites}
 
-Abra o console de teste para ver os conjuntos de teste registrados. O painel Testes contém uma lista de conjuntos de testes e seus casos de teste.
+Abra o console de teste para ver os conjuntos de teste registrados. O painel Testes contém uma lista de conjuntos de teste e seus casos de teste.
 
 Navegue até o console Ferramentas por meio de Navegação **global -> Ferramentas > Operações -> Teste**.
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-Ao abrir o console, os Conjuntos de teste são listados à esquerda, juntamente com uma opção para executar todos eles sequencialmente. O espaço à direita mostrado com um plano de fundo verificado é um espaço reservado para mostrar o conteúdo da página durante a execução dos testes.
+Ao abrir o console, os Conjuntos de teste são listados à esquerda, juntamente com uma opção para executar todos eles sequencialmente. O espaço à direita mostrado com um plano de fundo verificado é um espaço reservado para mostrar o conteúdo da página à medida que os testes são executados.
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
 ### Execução de um único Test Suite {#running-a-single-test-suite}
 
-Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página muda conforme os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
+Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página é alterada à medida que os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
 
 Um ícone de marca de seleção indica um teste aprovado:
 
@@ -89,7 +92,7 @@ Os conjuntos de testes são executados sequencialmente na ordem em que são exib
 
    ![](do-not-localize/chlimage_1-8.png)
 
-1. Para exibir os resultados de cada caso de teste, toque ou clique no título do caso de teste. Tocar ou clicar no nome do teste no painel **Resultado** mostra todos os detalhes.
+1. Para visualização dos resultados de cada caso de teste, toque ou clique no título do caso de teste. Tocar ou clicar no nome do teste no painel **Resultado** mostra todos os detalhes.
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
