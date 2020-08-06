@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Um perfil é um nó de recurso no [Apache Sling](https://sling.apache.org/). Rep
 
 O nó do perfil tem a propriedade **sling:resourceSuperType** e o valor padrão é **xfaforms/perfil**. O script de renderização para o nó está em /libs/xfaforms/perfil.
 
-Os scripts Sling são scripts JSP. Esses scripts JSP servem como container para reunir o HTML para o formulário solicitado e os artefatos JS / CSS necessários. Esses scripts Sling também são chamados de scripts do **Perfil Renderer.** O renderizador de perfis chama o serviço OSGi do Forms para renderizar o formulário solicitado.
+Os scripts Sling são scripts JSP. Esses scripts JSP servem como container para reunir o HTML para o formulário solicitado e os artefatos JS / CSS necessários. Esses scripts Sling também são chamados de scripts do **Perfil Renderer.** O renderizador de perfis chama o serviço Forms OSGi para renderizar o formulário solicitado.
 
 O script de perfil está em html.jsp e html.POST.jsp para solicitações GET e POST. Você pode copiar e modificar um ou mais arquivos para substituir e adicionar suas personalizações. Não faça alterações no local, a atualização de patch substitui essas alterações.
 
@@ -80,4 +83,4 @@ Depois de criar um perfil personalizado, adicione informações de renderizaçã
 
 1. Para verificar se o perfil foi criado, abra o URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
-Para verificar seus formulários, [importe seus formulários](/help/forms/using/get-xdp-pdf-documents-aem.md) do sistema de arquivos local para o AEM Forms e [pré-visualização o formulário](/help/forms/using/previewing-forms.md) na instância do autor do servidor AEM.
+Para verificar seus formulários, [importe seus formulários](/help/forms/using/get-xdp-pdf-documents-aem.md) do sistema de arquivos local para a AEM Forms e [pré-visualização o formulário](/help/forms/using/previewing-forms.md) AEM instância do autor do servidor.
