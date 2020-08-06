@@ -38,7 +38,7 @@ Construindo seu projeto AEM com base nas ofertas Maven, você terá vários bene
 
 ### O que é o UberJar? {#what-is-the-uberjar}
 
-O &quot;UberJar&quot; é o nome informal dado a um arquivo Java Archive (JAR) especial fornecido pelo Adobe. Este arquivo JAR contém todas as APIs Java públicas expostas pelo Adobe Experience Manager. Inclui também bibliotecas externas limitadas, especificamente todas as APIs públicas disponíveis em AEM que vêm da biblioteca de imagens JPEG do Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava e duas bibliotecas usadas para o processamento de imagens (Biblioteca CYMK JPEG ImageIO de Werner Randelshofer e a biblioteca de imagens dos TwelveMonkeys). O UberJar contém apenas interfaces e classes de API, o que significa que ele contém apenas interfaces e classes que são exportadas por um pacote OSGi no AEM. Ele também continha um arquivo *MANIFEST.MF* contendo as versões corretas de exportação do pacote para todos esses pacotes exportados, garantindo assim que os projetos criados contra o UberJar tivessem os intervalos corretos de importação do pacote.
+O &quot;UberJar&quot; é o nome informal dado a um arquivo Java Archive (JAR) especial fornecido pelo Adobe. Este arquivo JAR contém todas as APIs Java públicas expostas pela Adobe Experience Manager. Inclui também bibliotecas externas limitadas, especificamente todas as APIs públicas disponíveis em AEM que vêm da biblioteca de imagens JPEG do Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava e duas bibliotecas usadas para o processamento de imagens (Biblioteca CYMK JPEG ImageIO de Werner Randelshofer e a biblioteca de imagens dos TwelveMonkeys). O UberJar contém apenas interfaces e classes de API, o que significa que ele contém apenas interfaces e classes que são exportadas por um pacote OSGi no AEM. Ele também continha um arquivo *MANIFEST.MF* contendo as versões corretas de exportação do pacote para todos esses pacotes exportados, garantindo assim que os projetos criados contra o UberJar tivessem os intervalos corretos de importação do pacote.
 
 ### Por que a Adobe criou o UberJar? {#why-did-adobe-create-the-uberjar}
 
@@ -669,8 +669,8 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### Como trabalhar com AEM Communities {#how-to-work-with-aem-communities}
+### Como trabalhar com a AEM Communities {#how-to-work-with-aem-communities}
 
-Quando licenciado para o recurso de AEM Communities, é necessário um jar de API adicional.
+Quando licenciado para o recurso AEM Communities, é necessário um jar de API adicional.
 
 Para obter detalhes, consulte [Uso do Maven para comunidades](/help/communities/maven.md)
