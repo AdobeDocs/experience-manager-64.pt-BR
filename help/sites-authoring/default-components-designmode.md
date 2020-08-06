@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 87%
 
 ---
 
@@ -86,6 +89,7 @@ Para ativar ou desativar um componente:
 
    * Componentes permitidos
    * Configurações
+
    **Componentes permitidos**
 
    On the **Allowed Components** tab, you define which components are available for the parsys.
@@ -95,6 +99,7 @@ Para ativar ou desativar um componente:
    * Um sinal de menos indica que pelo menos um, mas não todos os itens em um grupo foram selecionados.
    * Uma pesquisa está disponível para filtrar um componente pelo nome.
    * As pontuações listadas à direita do nome do grupo de componentes representa o número total de componentes selecionados nesses grupos independentemente do filtro.
+
    A configuração é definida por um componente de página. Se as páginas secundárias usarem o mesmo modelo e/ou o componente de página (normalmente alinhado), então, a mesma configuração será aplicada ao sistema de parágrafo correspondente.
 
    >[!NOTE]
@@ -130,6 +135,7 @@ Para ativar ou desativar um componente:
    * Principal
    * Recursos
    * Estilos
+
    **Propriedades**
 
    A guia **Propriedades** permite que você configure os parâmetros de design importantes do componente. Por exemplo, para um componente de imagem, você pode definir os tamanhos máximo e mínimo da imagem ativada.
