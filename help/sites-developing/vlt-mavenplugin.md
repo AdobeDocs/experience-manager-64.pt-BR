@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 943de371-0149-4307-be3a-b11c590b3451
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3281'
+ht-degree: 4%
 
 ---
 
 
 # Gerenciamento De Pacotes Usando O Maven{#managing-packages-using-maven}
 
-Use o plug-in Content Package Maven para integrar tarefas de gerenciamento de pacotes aos projetos do Maven. As metas e os parâmetros do plug-in permitem que você automatize muitas das tarefas que normalmente executaria usando a página Gerenciador de pacotes ou a linha de comando do FileVault:
+Use o plug-in Content Package Maven para integrar tarefas de gerenciamento de pacotes aos projetos Maven. As metas e os parâmetros do plug-in permitem que você automatize muitas das tarefas que normalmente executaria usando a página Gerenciador de pacotes ou a linha de comando do FileVault:
 
 * Crie novos pacotes a partir de arquivos no sistema de arquivos.
 * Instale e desinstale pacotes no servidor CRX ou CQ.
@@ -92,7 +95,7 @@ Os parâmetros na tabela a seguir são comuns a todas as metas, exceto quando an
    <td>name</td> 
    <td>Sequência de caracteres</td> 
    <td>compilação: Sim<br /> instalar: Sem<br /> rm: Sim</td> 
-   <td>Criar: Sem padrão.<br /> instalar: O valor da propriedade artiactualId do projeto Maven.</td> 
+   <td>Compilação: Sem padrão.<br /> instalar: O valor da propriedade artiactualId do projeto Maven.</td> 
    <td>O nome do pacote em que agir.</td> 
    <td>Todos os objetivos exceto ls.</td> 
   </tr> 
@@ -157,11 +160,11 @@ Os parâmetros na tabela a seguir são comuns a todas as metas, exceto quando an
 
 ### build {#build}
 
-Cria um pacote de conteúdo que já está definido em uma instância do AEM.
+Cria um pacote de conteúdo que já está definido em uma instância AEM.
 
 >[!NOTE]
 >
->Este objetivo não precisa ser executado em um projeto Maven.
+>Este objetivo não precisa ser executado dentro de um projeto Maven.
 
 #### Parâmetros {#parameters}
 
@@ -169,7 +172,7 @@ Todos os parâmetros para a meta de compilação são descritos na seção Parâ
 
 #### Exemplo {#example}
 
-O exemplo a seguir cria o pacote workflow-mbean instalado na instância do AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
+O exemplo a seguir cria o pacote workflow-mbean instalado na instância AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
 
 ```shell
 mvn content-package:build
@@ -223,7 +226,7 @@ Além dos parâmetros a seguir, consulte as descrições na seção Parâmetros 
    <td>artefato</td> 
    <td>Sequência de caracteres</td> 
    <td>Não</td> 
-   <td> O valor da propriedade artiactualId do projeto Maven.</td> 
+   <td>O valor da propriedade artiactualId do projeto Maven.</td> 
    <td>Uma string do form groupId:artifatoId:version[:package].</td> 
   </tr> 
   <tr> 
@@ -280,7 +283,7 @@ Além dos parâmetros a seguir, consulte as descrições na seção Parâmetros 
    <td>org.apache.maven.<br /> project.MavenProject</td> 
    <td>Sim</td> 
    <td>O projeto para o qual o plug-in está configurado.</td> 
-   <td>O projeto Maven. O projeto está implícito porque contém a configuração do plug-in.</td> 
+   <td>O projeto Maven. O projeto está implícito porque o projeto contém a configuração do plug-in.</td> 
   </tr> 
   <tr> 
    <td>repositoryId <i>(POM)</i><br /> repoID <i>(linha de comando)</i></td> 
@@ -349,7 +352,7 @@ mvn install
 
 ### ls {#ls}
 
-Lista os pacotes implantados no Gerenciador de pacotes.
+Lista os pacotes implantados no Package Manager.
 
 #### Parâmetros {#parameters-2}
 
@@ -357,7 +360,7 @@ Todos os parâmetros da meta de ls estão descritos na seção Parâmetros [](#c
 
 #### Exemplo {#example-2}
 
-O exemplo a seguir lista os pacotes instalados na instância do AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
+O exemplo a seguir lista os pacotes instalados na instância AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
 
 ```shell
 mvn content-package:ls
@@ -398,7 +401,7 @@ Todos os parâmetros do objetivo rm são descritos na seção Parâmetros [](#co
 
 #### Exemplo {#example-3}
 
-O exemplo a seguir remove o pacote workfow-mbean instalado na instância do AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
+O exemplo a seguir remove o pacote workfow-mbean instalado na instância AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
 
 ```shell
 mvn content-package:rm
@@ -440,7 +443,7 @@ Todos os parâmetros da meta de desinstalação estão descritos na seção Par�
 
 #### Exemplo {#example-4}
 
-O exemplo a seguir desinstala o pacote workflow-mbean instalado na instância do AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
+O exemplo a seguir desinstala o pacote workflow-mbean instalado na instância AEM com o endereço IP 10.36.79.223. A meta é executada usando o seguinte comando:
 
 ```shell
 mvn content-package:uninstall
@@ -544,7 +547,7 @@ Além dos parâmetros a seguir, consulte a descrição do `name` parâmetro na s
    <td>com.day.jcr.<br /> vault.maven.pack.impl.<br /> DefaultWorkspaceFilter</td> 
    <td>Não</td> 
    <td></td> 
-   <td>Contém elementos de filtro que definem o conteúdo do pacote. Quando executados, os filtros são incluídos no arquivo filter.xml. Consulte a seção Usando filtros abaixo.</td> 
+   <td>Contém elementos de filtro que definem o conteúdo do pacote. Quando executados, os filtros são incluídos no arquivo filter.xml. Consulte a seção Uso de Filtros abaixo.</td> 
   </tr> 
   <tr> 
    <td>finalName</td> 
@@ -558,7 +561,7 @@ Além dos parâmetros a seguir, consulte a descrição do `name` parâmetro na s
    <td>java.lang.String</td> 
    <td>Sim</td> 
    <td>A groupID definida no projeto Maven.</td> 
-   <td>A groupId do pacote de conteúdo gerado. Esse valor faz parte do caminho de instalação de destino do pacote de conteúdo.</td> 
+   <td>A groupId do pacote de conteúdo gerado. Esse valor faz parte do caminho de instalação do público alvo para o pacote de conteúdo.</td> 
   </tr> 
   <tr> 
    <td>outputDirectory</td> 
@@ -634,7 +637,7 @@ Além dos parâmetros a seguir, consulte a descrição do `name` parâmetro na s
 
 #### Uso de filtros {#using-filters}
 
-Use o elemento de filtros para definir o conteúdo do pacote. Os filtros são adicionados ao elemento workspaceFilter no `META-INF/vault/filter.xml` arquivo do pacote.
+Use o elemento filtros para definir o conteúdo do pacote. Os filtros são adicionados ao elemento workspaceFilter no `META-INF/vault/filter.xml` arquivo do pacote.
 
 O exemplo de filtro a seguir mostra a estrutura XML a ser usada:
 
@@ -656,15 +659,15 @@ O exemplo de filtro a seguir mostra a estrutura XML a ser usada:
 
 O `mode` elemento define como o conteúdo é afetado pelo repositório quando o pacote é importado. Os seguintes valores podem ser usados:
 
-* **** Mesclar: O conteúdo no pacote que ainda não está no repositório é adicionado. O conteúdo que está no pacote e no repositório não é alterado. Nenhum conteúdo é removido do repositório.
-* **** Substituir: O conteúdo no pacote que não está no repositório é adicionado ao repositório. O conteúdo no repositório é substituído pelo conteúdo correspondente no pacote. O conteúdo é removido do repositório quando não existe no pacote.
-* **** Atualização: O conteúdo no pacote que não está no repositório é adicionado ao repositório. O conteúdo no repositório é substituído pelo conteúdo correspondente no pacote. O conteúdo existente é removido do repositório.
+* **Mesclar:** O conteúdo no pacote que ainda não está no repositório é adicionado. O conteúdo que está no pacote e no repositório não é alterado. Nenhum conteúdo é removido do repositório.
+* **Substituir:** O conteúdo no pacote que não está no repositório é adicionado ao repositório. O conteúdo no repositório é substituído pelo conteúdo correspondente no pacote. O conteúdo é removido do repositório quando não existe no pacote.
+* **Atualização:** O conteúdo no pacote que não está no repositório é adicionado ao repositório. O conteúdo no repositório é substituído pelo conteúdo correspondente no pacote. O conteúdo existente é removido do repositório.
 
 Quando o filtro não contém nenhum `mode` elemento, o valor padrão de `replace` é usado.
 
 #### Exemplo {#example-5}
 
-O exemplo a seguir cria um pacote que contém o pacote OSGi do fluxo de trabalho. O arquivo POM identifica o diretório jcr_root como o valor da propriedade buildContentDirectory. O diretório jcr_root contém o arquivo JAR do pacote na estrutura de diretório que espelha o repositório:
+O exemplo a seguir cria um pacote que contém o pacote OSGi do workflow-mbean. O arquivo POM identifica o diretório jcr_root como o valor da propriedade buildContentDirectory. O diretório jcr_root contém o arquivo JAR do pacote na estrutura de diretório que espelha o repositório:
 
 `jcr_root/apps/myapp/install/workflow-mbean-0.03-SNAPSHOT.jar`
 
@@ -746,11 +749,11 @@ Em vez de expressar a `package` meta na seção de plug-in `executions` , você 
 
 ## Obtenção do plug-in Content Package Maven {#obtaining-the-content-package-maven-plugin}
 
-O plug-in está disponível no repositório público da Adobe. Para baixar o plug-in, adicione o seguinte perfil Maven ao arquivo de configurações Maven e ative-o. Quando você usa um comando Maven, o plug-in é baixado no repositório local, se necessário.
+O plug-in está disponível no repositório Adobe público. Para baixar o plug-in, adicione o seguinte perfil Maven ao arquivo de configurações Maven e ative-o. Quando você usa um comando Maven, o plug-in é baixado no repositório local, se necessário.
 
 >[!NOTE]
 >
->O repositório do Adobe Public Releases não pode ser navegado, de modo que navegar até o URL do repositório usando o navegador da Web resulta em um erro Não encontrado. No entanto, a Maven pode acessar os diretórios do repositório.
+>O repositório Adobe Public Releases não pode ser navegado, portanto, navegar até o URL do repositório usando o navegador da Web resulta em um erro Não encontrado. No entanto, a Maven pode acessar os diretórios do repositório.
 
 ```xml
 <profile>
@@ -853,7 +856,7 @@ O exemplo de POM a seguir cria um pacote que contém o pacote Apache Sling JCR U
 
 Substitua os arquivos de configuração do pacote padrão para personalizar as propriedades do pacote. Por exemplo, inclua uma imagem em miniatura para distinguir o pacote no Package Manager e no Package Share.
 
-No pacote, os arquivos específicos do FileVault estão localizados na pasta /META-INF/vault. Os arquivos de origem podem ser localizados em qualquer lugar do sistema de arquivos. No arquivo POM, defina os recursos de compilação para copiar os arquivos de origem para o destino/vault-work/META-INF para inclusão no pacote.
+No pacote, os arquivos específicos do FileVault estão localizados na pasta /META-INF/vault. Os arquivos de origem podem ser localizados em qualquer lugar no seu sistema de arquivos. No arquivo POM, defina os recursos de compilação para copiar os arquivos de origem para o público alvo/vault-work/META-INF para inclusão no pacote.
 
 O seguinte código POM adiciona os arquivos na pasta META-INF da fonte do projeto ao pacote:
 
@@ -883,17 +886,17 @@ O código POM a seguir adiciona apenas uma imagem em miniatura ao pacote. A imag
 </build>
 ```
 
-## Uso De Arquétipos Para Gerar Projetos AEM {#using-archetypes-to-generate-aem-projects}
+## Uso De Arquétipos Para Gerar AEM Projetos {#using-archetypes-to-generate-aem-projects}
 
-Vários arquétipos Maven estão disponíveis para gerar projetos do AEM. Use o arquétipo que corresponde às suas metas de desenvolvimento:
+Vários arquétipos Maven estão disponíveis para gerar projetos AEM. Use o arquétipo que corresponde às suas metas de desenvolvimento:
 
 * Um pacote de conteúdo que instala recursos para um aplicativo AEM: [simple-content-package-archetype](#simple-content-package-archetype)
-* Um pacote de conteúdo que inclui artefatos de terceiros: pacote de conteúdo [simples com arquétipo](#simple-content-package-with-embedded-archetype)incorporado.
+* Um pacote de conteúdo que inclui artefatos de terceiros: [simple-content-package-with-Integrated-archetype](#simple-content-package-with-embedded-archetype).
 * Um aplicativo de vários módulos que acomoda o desenvolvimento de classes Java e testes de unidade: [multimodule-content-package-archetype](#multimodule-content-package-archetype).
 
 >[!NOTE]
 >
->O projeto Apache Sling também oferece arquétipos úteis no desenvolvimento do AEM. Eles estão documentados em [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
+>O projeto Apache Sling também oferta arquétipos úteis no desenvolvimento AEM. Eles estão documentados em [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
 
 Cada arquétipo gera os seguintes itens:
 
@@ -901,7 +904,7 @@ Cada arquétipo gera os seguintes itens:
 * Arquivos POM.
 * Arquivos de configuração do FileVault.
 
-Os artefatos de arquétipo estão disponíveis no repositório do Adobe public Maven. Para baixar e executar um arquétipo, identifique o arquétipo e o repositório da Adobe usando os parâmetros do comando Maven archetype:generate:
+Os artefatos Archetype estão disponíveis no repositório Adobe public Maven. Para baixar e executar um arquétipo, identifique o arquétipo e o repositório de Adobe usando os parâmetros do comando Maven archetype:generate:
 
 ```shell
 mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
@@ -913,7 +916,7 @@ O plug-in Maven archetype usa o modo interativo no shell ou no prompt de comando
 
 **Arquivos POM**
 
-Os arquivos POM gerados incluem comandos para compilar código, criar pacotes e implantá-los no AEM em pacotes. As propriedades `groupID`, `artifactId`, `version`e `name` do projeto Maven são automaticamente preenchidas usando os valores fornecidos ao prompt `archetype:generate` interativo Maven.
+Os arquivos POM gerados incluem comandos para compilar código, criar pacotes e implantá-los em AEM em pacotes. As propriedades `groupID`, `artifactId`, `version`e `name` do projeto Maven são automaticamente preenchidas usando os valores fornecidos ao prompt `archetype:generate` interativo Maven.
 
 Você pode alterar os seguintes valores padrão no arquivo pom.xml gerado:
 
@@ -923,7 +926,7 @@ Você pode alterar os seguintes valores padrão no arquivo pom.xml gerado:
 
 * A versão do plug-in Content Package Maven: Use a versão mais recente como o conteúdo do `version` elemento para o plug-in com `artifactId` de `content-package-maven-plugin`. O valor padrão é `0.0.24`.
 
-**Uso dos arquétipos**
+**Uso de arquétipos**
 
 1. Em uma janela de shell ou prompt de comando, digite o `archetype:generate` comando Maven. Quando solicitado, forneça valores para os parâmetros restantes.
 
@@ -935,7 +938,7 @@ Você pode alterar os seguintes valores padrão no arquivo pom.xml gerado:
 
 ### simple-content-package-archetype {#simple-content-package-archetype}
 
-Cria um projeto maven adequado para instalar recursos para um aplicativo AEM simples. A estrutura de pastas é usada abaixo da `/apps` pasta do repositório do AEM. O POM define comandos para empacotar os recursos que você coloca nas pastas e instalar os pacotes na instância do AEM.
+Cria um projeto maven adequado para instalar recursos para um aplicativo de AEM simples. A estrutura de pastas é usada abaixo da `/apps` pasta do repositório AEM. O POM define comandos para empacotar os recursos que você coloca nas pastas e instalar os pacotes na instância AEM.
 
 **Propriedades de artefatos de arquétipo:**
 
@@ -957,7 +960,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: A groupId do pacote de conteúdo gerado pelo Maven. O valor é usado automaticamente no arquivo POM.
 * artefatoId: O nome do pacote de conteúdo. O valor também é usado como o nome da pasta do projeto.
-* versão:A versão do pacote de conteúdo.
+* versão: A versão do pacote de conteúdo.
 * pacote: Esse valor não é usado para um tipo de arquivamento de pacote simples.
 * appsFolderName: O nome da pasta abaixo de /apps.
 * artefatoName: A descrição do pacote de conteúdo.
@@ -991,7 +994,7 @@ ${artifactId}
 
 ### simple-content-package-with-Integrated-archetype {#simple-content-package-with-embedded-archetype}
 
-Executa as mesmas tarefas que o simples content-package-archetype e também baixa e inclui um artefato de um repositório Maven público.
+Realiza as mesmas tarefas que o simples content-package-archetype, e também baixa e inclui um artefato de um repositório Maven público.
 
 **Propriedades do pacote de arquétipos:**
 
@@ -1013,7 +1016,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: A groupId do pacote de conteúdo gerado pelo Maven. O valor é usado automaticamente no arquivo POM.
 * artefatoId: O nome do pacote de conteúdo. O valor também é usado como o nome da pasta do projeto.
-* versão:A versão do pacote de conteúdo.
+* versão: A versão do pacote de conteúdo.
 * pacote: Este parâmetro não é usado.
 * appsFolderName: O nome da pasta abaixo de /apps.
 * artefatoName: A descrição do pacote de conteúdo.
@@ -1057,7 +1060,7 @@ A `bundle` pasta contém a estrutura de pastas que armazena os arquivos de orige
 
 `${artifactID}` e `${groupId}` são os valores fornecidos para esses parâmetros ao executar os arquétipos.
 
-A `content` pasta contém os recursos instalados na instância do AEM. O valor de artiactualID é `${artifactID}multimodule-bundle`.
+A `content` pasta contém os recursos instalados na instância AEM. O valor de artiactualID é `${artifactID}multimodule-bundle`.
 
 A pasta pai contém o POM pai que gerencia plug-ins e dependências Maven.
 
@@ -1081,7 +1084,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: A groupId do pacote de conteúdo gerado pelo Maven. O valor é usado automaticamente no arquivo POM.
 * artefatoId: O nome do pacote de conteúdo. O valor também é usado como o nome da pasta do projeto.
-* versão:A versão do pacote de conteúdo.
+* versão: A versão do pacote de conteúdo.
 * pacote: Esse valor não é usado para multimodule-content-package-archetype.
 * appsFolderName: O nome da pasta abaixo de /apps.
 * artefatoName: A descrição do pacote de conteúdo.
