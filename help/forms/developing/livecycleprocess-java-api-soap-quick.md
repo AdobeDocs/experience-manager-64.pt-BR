@@ -1,6 +1,6 @@
 ---
-title: Início rápido da API Java do LiveCycleProcess (SOAP)
-seo-title: Início rápido da API Java do LiveCycleProcess (SOAP)
+title: LiveCycleProcess Java API(SOAP)Start rápido
+seo-title: LiveCycleProcess Java API(SOAP)Start rápido
 description: 'null'
 seo-description: 'null'
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
@@ -11,33 +11,36 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
 
-# Início rápido da API Java do LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
+# Start rápido do LiveCycleProcess Java API (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-O Início rápido da API Java (SOAP) está disponível para processos. Uma instância *do* processo é uma ocorrência de um processo específico que foi iniciado por um método de invocação, como a API de Chamada ou dentro do Workspace.
+O Start rápido da API Java (SOAP) está disponível para processos. Uma instância *do* processo é uma ocorrência de um processo específico que foi iniciado por um método de invocação, como a API de Chamada ou dentro do Workspace.
 
-[Início rápido (modo SOAP): Procurando instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[Start rápido (modo SOAP): Procurando instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Início rápido (modo SOAP): Suspender instâncias do processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Start rápido (modo SOAP): Suspender instâncias do processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[Início rápido (Modo SOAP): Iniciar instâncias de processo suspensas usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[Start rápido (Modo SOAP): Iniciar instâncias de processo suspensas usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Início rápido (modo SOAP): Finalizando instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Start rápido (modo SOAP): Encerrando instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[Início rápido (modo SOAP): Expurgando dados do processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[Start rápido (modo SOAP): Expurgando dados do processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
-[Início rápido (Modo SOAP): Recuperar o status de um trabalho usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[Start rápido (Modo SOAP): Recuperar o status de um trabalho usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->As iniciações rápidas localizadas em Programação com formulários AEM são baseadas nos Formulários se você estiver usando outro sistema operacional, como o Unix, substituem os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
+>Os start rápidos localizados em Programação com o AEM Forms são baseados no Forms se você estiver usando outro sistema operacional, como o Unix, substituem os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
 
-## Início rápido (modo SOAP): Procurando instâncias de processo usando a API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+## Start rápido (modo SOAP): Procurando instâncias de processo usando a API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 O exemplo de código Java a seguir pesquisa instâncias de processo que são baseadas no processo *MortgageLoan - Prebuild* .
 
@@ -155,7 +158,7 @@ O exemplo de código Java a seguir pesquisa instâncias de processo que são bas
  
 ```
 
-## Início rápido (modo SOAP): Suspender instâncias do processo usando a API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Start rápido (modo SOAP): Suspender instâncias do processo usando a API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
 O exemplo de código Java a seguir suspende uma instância do processo. Para suspender com êxito uma instância do processo, é necessário o identificador de invocação do processo que pode ser obtido ao invocar um processo de longa duração usando a API de Chamada.
 
@@ -247,9 +250,9 @@ O exemplo de código Java a seguir suspende uma instância do processo. Para sus
  
 ```
 
-## Início rápido (Modo SOAP): Iniciar instâncias de processo suspensas usando a API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Start rápido (Modo SOAP): Iniciar instâncias de processo suspensas usando a API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
-O exemplo de código Java a seguir inicia uma instância de processo suspensa.
+O exemplo de código Java a seguir start uma instância de processo suspensa.
 
 ```as3
  /* 
@@ -335,7 +338,7 @@ O exemplo de código Java a seguir inicia uma instância de processo suspensa.
  
 ```
 
-## Início rápido (modo SOAP): Finalizando instâncias de processo usando a API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Start rápido (modo SOAP): Encerrando instâncias de processo usando a API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 O exemplo de código Java a seguir conclui uma instância do processo com o valor identificador 756c22860a242fb101ec7a5bc0977fd6.
 
@@ -426,7 +429,7 @@ O exemplo de código Java a seguir conclui uma instância do processo com o valo
  
 ```
 
-## Início rápido (modo SOAP): Expurgando dados do processo usando a API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Start rápido (modo SOAP): Expurgando dados do processo usando a API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
 O seguinte código Java remove dados de um processo chamado *SecureDocument*. É usado um filtro que especifica a expurgação de dados para as instâncias de processo em que a variável de processo chamada *inValue* é maior que 200.
 
@@ -533,7 +536,7 @@ O seguinte código Java remove dados de um processo chamado *SecureDocument*. É
  
 ```
 
-## Início rápido (Modo SOAP): Recuperar o status de um trabalho usando a API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Start rápido (Modo SOAP): Recuperar o status de um trabalho usando a API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
 O exemplo de código a seguir recupera o status de 10 trabalhos do AEM Forms.
 
