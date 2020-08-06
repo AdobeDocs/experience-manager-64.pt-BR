@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +42,7 @@ Não há suporte para a publicação anônima de uma revisão. Os visitantes do 
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.views</td> 
+   <td>cq.social.hbs.reviews</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -61,7 +64,7 @@ Não há suporte para a publicação anônima de uma revisão. Os visitantes do 
 | **resourceType** | social/resenhas/componentes/hbs/summary |
 |---|---|
 | [**inclusivo **](scf.md#add-or-include-a-communities-component) | Sim - as propriedades podem ser editadas no modo *design * |
-| [**clientllibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.views |
+| [**clientllibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
 | **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **propriedades** | Consulte [Usando Revisões](reviews.md) |
@@ -81,13 +84,13 @@ Não há suporte para a publicação anônima de uma revisão. Os visitantes do 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.\
 Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
 
-Desde as comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+Desde AEM 6.1 Comunidades, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório
 * [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
 * [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
