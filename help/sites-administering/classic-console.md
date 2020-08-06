@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 1%
 
 ---
 
@@ -31,26 +34,29 @@ Para acessar o console Marcação de interface clássica:
 
 ![managing_tags_usingthetagasministationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
-## Criação de tags e namespaces {#creating-tags-and-namespaces}
+## Criação de tags e Namespaces {#creating-tags-and-namespaces}
 
-1. Dependendo do nível a partir do qual você está começando, é possível criar uma tag ou um namespace usando **Novo**:
+1. Dependendo do nível a partir do qual você está começando, é possível criar uma tag ou uma namespace usando **Novo**:
 
-   Se você selecionar **Tags** , poderá criar um namespace:
+   Se você selecionar **Tags** , poderá criar uma namespace:
 
    ![creating_tags_andnamespaces-1](assets/creating_tags_andnamespaces-1.png)
 
-   Se você selecionar um namespace (por exemplo, **Demonstração**), poderá criar uma tag nesse namespace:
+   Se você selecionar uma namespace (por exemplo, **Demonstração**), poderá criar uma tag dentro dessa namespace:
 
    ![creating_tags_andnamespacesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. Em ambos os casos, informe
 
-   * **Título**(*obrigatório*) O título de exibição da tag . Enquanto qualquer caractere pode ser inserido,
+   * **Título**
+(
+*Obrigatório*) O título de exibição da tag. Enquanto qualquer caractere pode ser inserido,
 
       recomenda-se não usar esses caracteres especiais:
 
       * `colon (:)` - delimitador de namespace
       * `forward slash (/)` - delimitador de subtags
+
       Esses caracteres não serão exibidos se forem inseridos.
 
    * **Nome**
@@ -81,21 +87,21 @@ Para acessar o console Marcação de interface clássica:
 
 ## Ativação e desativação de tags {#activating-and-deactivating-tags}
 
-1. No painel direito, selecione o namespace ou a tag que deseja ativar (publicar) ou desativar (cancelar a publicação).
+1. No painel direito, selecione a namespace ou tag que deseja ativar (publicar) ou desativar (cancelar publicação).
 1. Clique em **Ativar** ou em **Desativar** , conforme necessário.
 
 ## Lista - mostrar onde as tags são referenciadas {#list-showing-where-tags-are-referenced}
 
-**A lista** abre uma nova janela mostrando os caminhos de todas as páginas usando a tag realçada:
+**A Lista** abre uma nova janela mostrando os caminhos de todas as páginas usando a tag realçada:
 
-![list_show_wheretagsarereferenciado](assets/list_showing_wheretagsarereferenced.png)
+![lista_show_wheretagsarereferenciado](assets/list_showing_wheretagsarereferenced.png)
 
 ## Mover tags {#moving-tags}
 
 Para ajudar os administradores e desenvolvedores de tags a limpar a taxonomia ou renomear uma ID de tag, é possível mover uma tag para um novo local:
 
 1. Open the **Tagging** console.
-1. **Selecione a tag e clique em** Mover... na barra de ferramentas superior (ou no menu de contexto).
+1. Selecione a tag e clique em **Mover...** na barra de ferramentas superior (ou no menu de contexto).
 1. Na caixa de diálogo **Mover tag** , defina:
 
    * **para**, o nó de destino.
@@ -103,7 +109,7 @@ Para ajudar os administradores e desenvolvedores de tags a limpar a taxonomia ou
 
 1. Clique em **Mover**.
 
-A caixa de diálogo **Mover tag** é a seguinte:
+A caixa de diálogo **Mover tag** é exibida da seguinte maneira:
 
 ![move_tag](assets/move_tag.png)
 
@@ -113,15 +119,15 @@ A caixa de diálogo **Mover tag** é a seguinte:
 
 ## Mesclar tags {#merging-tags}
 
-A mesclagem de tags pode ser usada quando uma taxonomia tem duplicatas. Quando a tag A é unida à tag B, todas as páginas marcadas com a tag A serão marcadas com a tag B e a tag A não estará mais disponível para os autores.
+A mesclagem de tags pode ser usada quando uma taxonomia tem duplicados. Quando a tag A é unida à tag B, todas as páginas marcadas com a tag A serão marcadas com a tag B e a tag A não estará mais disponível para os autores.
 
 Para unir uma tag a outra:
 
 1. Open the **Tagging** console.
-1. **Selecione a tag e clique em** Mesclar... na barra de ferramentas superior (ou no menu de contexto).
+1. Selecione a tag e clique em **Mesclar...** na barra de ferramentas superior (ou no menu de contexto).
 1. Na caixa de diálogo **Mesclar tag** , defina:
 
-   * **no** nó de destino.
+   * **dentro**, o nó de destino.
 
 1. Clique em **Mesclar**.
 
@@ -134,7 +140,7 @@ A caixa de diálogo **Mesclar tag** é exibida da seguinte maneira:
 Para ver quantas vezes uma tag está sendo usada:
 
 1. Open the **Tagging** console.
-1. Clique em **Contar uso** na barra de ferramentas superior: a contagem de colunas exibe o resultado.
+1. Clique em **Contagem de uso** na barra de ferramentas superior: a contagem de colunas exibe o resultado.
 
 ## Gerenciamento de tags em diferentes idiomas {#managing-tags-in-different-languages}
 
@@ -167,7 +173,7 @@ Para adicionar um novo idioma à caixa de diálogo, consulte a seção [Adiciona
 Por padrão, a tag `titles`nas propriedades da página é exibida no idioma da página. A caixa de diálogo da tag nas propriedades da página tem um campo de idioma que permite a exibição da tag `titles`em um idioma diferente. O procedimento a seguir descreve como exibir a tag `titles`em francês:
 
 1. Consulte a seção anterior para adicionar a tradução em francês aos **Animais** abaixo de **Tags** > Fotografia **de** estoque.
-1. Abra as propriedades da página **Produtos** na ramificação em inglês do site **Geometrixx** .
+1. Abra as propriedades da página **Produtos** na ramificação Inglês do site do **Geometrixx** .
 1. Abra a caixa de diálogo **Tags/Palavras-chave** (selecionando o menu suspenso à direita da área de exibição Tags/Palavras-chave) e selecione o idioma **francês** no menu suspenso no canto inferior direito.
 1. Role usando as setas para a esquerda e para a direita até selecionar a guia Fotografia **do** Stock
 
