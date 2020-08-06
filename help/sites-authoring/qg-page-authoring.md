@@ -144,6 +144,7 @@ A forma de selecionar uma página dependerá da exibição usada no console:
       * abrindo o painel lateral
       * selecionando a guia componentes (o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
       * arrastando o componente desejado para a página.
+
       O painel lateral pode ser aberto (ou fechado) com:
 
       ![](do-not-localize/screen_shot_2018-03-21at160738.png)
@@ -153,6 +154,7 @@ A forma de selecionar uma página dependerá da exibição usada no console:
       * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone **Editar** (lápis) para abrir a caixa de diálogo.
       * Abra o editor no local para o componente com a opção de tocar e segurar ou dê um clique duplo lento. As ações disponíveis serão exibidas (para alguns componentes isso será uma seleção limitada).
       * Para visualizar todas as ações disponíveis entre no modo de tela cheia usando:
+
       ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar as propriedades de um componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
@@ -175,12 +177,14 @@ A forma de selecionar uma página dependerá da exibição usada no console:
    * [Adicionar anotações](/help/sites-authoring/annotations.md#annotations) à página:
 
       * Selecione o modo **Anotar** (ícone de balão). Adicione anotações usando o ícone **Adicionar anotação** (mais). Saia do modo de anotação usando o X na parte superior direita.
+
       ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Visualizar uma página](/help/sites-authoring/editing-content.md#preview-mode) (para verificar como ela será exibida no ambiente de publicação)
 
       * Selecione **Visualização** na barra de ferramentas.
    * Retornar para o modo de edição (ou selecionar outro modo), usando o seletor suspenso **Editar**.
+
    >[!NOTE]
    >
    >Para navegar usando os links no conteúdo, você deve usar o [Modo de visualização](/help/sites-authoring/editing-content.md#preview-mode).
@@ -196,6 +200,7 @@ Existem dois métodos (principais) [para editar as propriedades da página](/hel
 
       * As [Ações rápidas (apenas a exibição de cartão/área de trabalho) ](#quick-actions-card-view-desktop-only) do recurso adequado.
       * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
+
    ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
 * As propriedades da página serão exibidas. É possível fazer atualizações conforme necessário, em seguida, usar a opção Salvar para continuar
@@ -218,12 +223,14 @@ Existem dois métodos principais [para publicar a sua página](/help/sites-autho
 
       * As [Ações rápidas (apenas a exibição de cartão/área de trabalho) ](#quick-actions-card-view-desktop-only) do recurso adequado.
       * A barra de ferramentas quando a sua [página é selecionada](#selecting-your-page-for-further-action) (também fornece o acesso à opção [Publicar mais tarde](/help/sites-authoring/publishing-pages.md#manage-publication)).
+
    ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Ao [editar a sua página](#editing-your-page-content):
 
    1. Abra o menu **Informações da página**.
    1. Selecione **Publicar página**. 
+
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * Desfazer a publicação de uma página do console só pode ser feito por meio da opção **Gerenciar publicação**, que está disponível somente na barra de ferramentas (não pelas ações rápidas).
