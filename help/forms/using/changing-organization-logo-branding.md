@@ -1,8 +1,8 @@
 ---
 title: Alteração do logotipo da organização para marcas
 seo-title: Alteração do logotipo da organização para marcas
-description: Para criar uma marca no espaço de trabalho do AEM Forms, forneça o logotipo de sua organização, personalizando o logotipo padrão.
-seo-description: Para criar uma marca no espaço de trabalho do AEM Forms, forneça o logotipo de sua organização, personalizando o logotipo padrão.
+description: Para a área de trabalho da AEM Forms de marca, forneça o logotipo de sua organização, personalizando o logotipo padrão.
+seo-description: Para a área de trabalho da AEM Forms de marca, forneça o logotipo de sua organização, personalizando o logotipo padrão.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
 
 # Alteração do logotipo da organização para marcas {#changing-the-organization-logo-for-branding}
 
-O logotipo da organização é exibido no canto superior esquerdo da área de trabalho do AEM Forms. Para atualizar o logotipo, siga as etapas [Genéricas da personalização](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) da área de trabalho do AEM Forms e, em seguida, siga as etapas a seguir.
+O logotipo da organização é exibido no canto superior esquerdo da área de trabalho do AEM Forms. Para atualizar o logotipo, siga as etapas [Genéricas da personalização](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) do espaço de trabalho AEM Forms e, em seguida, siga as etapas a seguir.
 
 1. Crie um logotipo e nomeie o arquivo como `NewWorkspace.png`. Coloque o arquivo de imagem na pasta /apps/ws/images usando um cliente WebDAV.
 
