@@ -40,7 +40,7 @@ Quando você instala a segurança do documento pela primeira vez, ela contém um
 
 **Políticas geradas automaticamente pelo Microsoft Outlook**
 
-Usando o Acrobat, é possível aplicar políticas a documentos que você envia como anexos de email no Microsoft Outlook. No Outlook, é possível proteger um documento usando uma política existente ou uma política gerada automaticamente gerada pelo Acrobat com configurações de confidencialidade padrão e se aplica ao documento anexado a uma mensagem de email. (Consulte * Ajuda [do](https://help.adobe.com/en_US/acrobat/pro/using/index.html)Acrobat*.)
+Usando o Acrobat, é possível aplicar políticas a documentos que você envia como anexos de email no Microsoft Outlook. No Outlook, você pode proteger um documento usando uma política existente ou usando uma política gerada automaticamente que a Acrobat gera com configurações de confidencialidade padrão e se aplica ao documento anexado a uma mensagem de email. (Consulte * [Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ O status do documento determina quando a alteração entra em vigor:
 
 >[!NOTE]
 >
->As políticas que o Acrobat gera automaticamente para os recipient de documentos anexados a mensagens de email no Microsoft Outlook não aparecem na lista de política. É possível visualização dessas políticas apenas abrindo a página Detalhes do Documento para o documento associado.
+>As políticas que a Acrobat gera automaticamente para os recipient de documentos anexados a mensagens de email no Microsoft Outlook não aparecem na lista de política. É possível visualização dessas políticas apenas abrindo a página Detalhes do Documento para o documento associado.
 
 Quando você edita políticas, essas restrições se aplicam:
 
@@ -81,7 +81,7 @@ Quando você edita políticas, essas restrições se aplicam:
 * Os coordenadores de definição de política podem editar políticas em conjuntos de políticas somente se tiverem as permissões corretas. O superusuário ou administrador do conjunto de políticas define essas permissões na interface do administrador de segurança do documento.
 * Se a política tiver uma marca d&#39;água configurada que o administrador excluiu desde que a política foi criada, essa marca d&#39;água não será mais aplicada aos documentos se você editar e salvar a política. As marcas d&#39;água excluídas permanecerão em vigor somente para políticas existentes, desde que você não edite a política. Se você editar a política, deverá selecionar outra marca d&#39;água para substituir a que foi excluída.
 * Não é possível conceder acesso anônimo a um documento editando a política aplicada no momento. Se você editar a política, os usuários ainda deverão fazer logon para acessar o documento. Para aplicar acesso anônimo a esse documento, primeiro remova a política no aplicativo cliente e depois aplique outra política que permita acesso anônimo.
-* As políticas que o Acrobat gera automaticamente para os recipient de um documento anexado a uma mensagem de email no Microsoft Outlook não aparecem na lista de política. Para acessar essa política, localize o documento na página Documentos, abra a página Detalhes do Documento e clique no nome da política na lista de detalhes do documento.
+* As políticas que a Acrobat gera automaticamente para os recipient de um documento anexado a uma mensagem de email no Microsoft Outlook não aparecem na lista de política. Para acessar essa política, localize o documento na página Documentos, abra a página Detalhes do Documento e clique no nome da política na lista de detalhes do documento.
 
 **Criar ou editar uma política**
 
@@ -182,11 +182,11 @@ Essas permissões de documento estão disponíveis na guia Permissões. Você po
 
 **Alterar páginas:** O usuário tem permissão para adicionar e remover páginas e editar conteúdo no PDF.
 
-**Preencher e assinar:** O usuário tem permissão para preencher campos de formulário no PDF e assiná-lo.
+**Fill &amp; Sign:** O usuário tem permissão para preencher campos de formulário no PDF e assiná-lo.
 
 **Copiar:** Permite que o usuário copie o texto de um documento protegido com esta política.
 
-**Leitor de tela:** Essa permissão será exibida se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF. Quando essa opção é selecionada, o Adobe Acrobat tem permissão para adicionar tags temporárias ao PDF para melhorar sua legibilidade com um leitor de tela.
+**Reader de tela:** Essa permissão será exibida se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF. Quando essa opção é selecionada, a Adobe Acrobat tem permissão para adicionar tags temporárias ao PDF para melhorar sua legibilidade com um leitor de tela.
 
 Essas permissões de documento estão disponíveis na guia Opções. Você pode aplicar essas permissões a arquivos PDF, PTC Pro/E e Microsoft Office:
 
@@ -264,11 +264,11 @@ Se você estiver editando uma política e o administrador tiver excluído uma ma
 >
 >Para políticas que fornecem acesso anônimo ao usuário, o nome de usuário e o identificador de um usuário anônimo não são exibidos como uma marca d&#39;água mesmo se você selecionar esse tipo de marca d&#39;água.
 
-**Usar somente plug-ins certificados do Acrobat para PDF:** Quando selecionada para uma política, essa opção especifica que o Acrobat 8.0 e posterior deve ser executado no modo certificado ao abrir documentos protegidos com a política. Quando o Acrobat é executado no modo certificado, ele não carregará plug-ins de terceiros.
+**Usar somente plug-ins Acrobat certificados para PDF:** Quando selecionada para uma política, essa opção especifica que o Acrobat 8.0 e posterior devem ser executados no modo certificado ao abrir documentos protegidos com a política. Quando o Acrobat é executado no modo certificado, ele não carrega plug-ins de terceiros.
 
-Selecione essa opção se estiver preocupado com o recipient que está escrevendo um plug-in que pode contornar qualquer proteção de documento no Acrobat 8.0 e posterior. Não selecione essa opção se os recipient do documento precisarem usar plug-ins de terceiros no Acrobat para interagir com documentos.
+Selecione essa opção se estiver preocupado com o recipient que está escrevendo um plug-in que pode contornar qualquer proteção do documento no Acrobat 8.0 e posterior. Não selecione essa opção se os recipient de documentos precisarem usar plug-ins de terceiros no Acrobat para interagir com documentos.
 
-Essa opção ativa somente o modo certificado no Acrobat 8.0 ou posterior; o administrador deve desativar o acesso ao Acrobat 7.0.
+Esta opção ativa somente o modo certificado no Acrobat 8.0 ou posterior; o administrador deve desativar o acesso para Acrobat 7.0.
 
 (Consulte [Configurar o servidor](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server)de segurança do documento.)
 
@@ -283,8 +283,8 @@ A área Configurações avançadas inalteráveis contém as seguintes configura�
 **Algoritmo de criptografia e comprimento da chave:** Usada para proteger seus documentos. É possível escolher uma destas opções:
 
 * AES de 128 bits
-* AES 256 bits. Somente o Acrobat 9.0 e posteriores oferecem suporte para essa opção. Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivos da política de jurisdição de força ilimitada do Java Cryptography Extension (JCE). Esses arquivos substituem os arquivos local_policy.jar e US_export_policy.jar na pasta [JAVE_HOME]/lib/security. Por exemplo, se você estiver usando o Sun JDK 1.6, copie os arquivos baixados para a pasta [dep root]/Java/jdk1.6.0_26/lib/security. Você pode baixar esses arquivos de Downloads [do](https://java.sun.com/javase/downloads/index.jsp)Java SE.
-* Sem criptografia. Atualmente, o Acrobat 9.0 e versões posteriores oferecem suporte para essa opção. Se você selecionar essa opção, as opções Restrições de Documento serão desativadas. Essa opção pode ser útil se você quiser usar a segurança do documento para auditoria do documento ou controle de versão, mas não quiser criptografar o documento.
+* AES 256 bits. Somente o Acrobat 9.0 e posteriores oferecem suporte a essa opção. Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivos da política de jurisdição de força ilimitada do Java Cryptography Extension (JCE). Esses arquivos substituem os arquivos local_policy.jar e US_export_policy.jar na pasta [JAVE_HOME]/lib/security. Por exemplo, se você estiver usando o Sun JDK 1.6, copie os arquivos baixados para a pasta [dep root]/Java/jdk1.6.0_26/lib/security. Você pode baixar esses arquivos de Downloads [do](https://java.sun.com/javase/downloads/index.jsp)Java SE.
+* Sem criptografia. No momento, a Acrobat 9.0 e posterior oferecem suporte para essa opção. Se você selecionar essa opção, as opções Restrições de Documento serão desativadas. Essa opção pode ser útil se você quiser usar a segurança do documento para auditoria do documento ou controle de versão, mas não quiser criptografar o documento.
 
 **Restrições de Documento:** Selecione os componentes do documento PDF a serem criptografados. Outros aplicativos clientes criptografam o documento inteiro, mas não arquivos vinculados ou incorporados. É possível escolher uma destas opções:
 
@@ -326,7 +326,7 @@ Você pode visualização informações mais detalhadas sobre uma política que 
 
 >[!NOTE]
 >
->As políticas que o Acrobat gera automaticamente para os recipient de documentos anexados a mensagens de email no Microsoft Outlook não aparecem na lista de política. É possível visualização dessas políticas apenas abrindo a página Detalhes do Documento para o documento associado.
+>As políticas que a Acrobat gera automaticamente para os recipient de documentos anexados a mensagens de email no Microsoft Outlook não aparecem na lista de política. É possível visualização dessas políticas apenas abrindo a página Detalhes do Documento para o documento associado.
 
 1. Na página Segurança do documento, clique em Políticas e, em seguida, clique na guia Minhas políticas.
 1. Preencha as informações de pesquisa para procurar políticas pessoais.
@@ -396,7 +396,7 @@ Os usuários convidados podem excluir políticas somente se o administrador ativ
 
 >[!NOTE]
 >
->Você deve usar o aplicativo cliente para remover políticas de documentos. (Consulte a Ajuda do Acrobat ou a Ajuda apropriada das extensões do Acrobat Reader DC.)
+>Você deve usar o aplicativo cliente para remover políticas de documentos. (Consulte a Ajuda da Acrobat ou a Ajuda das extensões Acrobat Reader DC apropriadas.)
 
 ## Classificar a lista de política {#sort-the-policy-list}
 
