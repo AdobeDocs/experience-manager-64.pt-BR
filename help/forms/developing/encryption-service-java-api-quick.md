@@ -32,7 +32,7 @@ ht-degree: 0%
 
 [Start rápido (modo SOAP): Determinar o tipo de criptografia usando a API Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pd
 
 ## Start rápido (modo SOAP): Remoção da criptografia baseada em senha usando a API Java {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-O exemplo de código Java a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O valor da senha mestre usado para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não protegido é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)de senha.)
+O exemplo de código Java a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O valor da senha principal usado para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não protegido é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)de senha.)
 
 ```as3
  /* 
