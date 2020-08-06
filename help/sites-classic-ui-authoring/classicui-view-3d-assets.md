@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5e1e0039-670e-4051-9f2a-e88162482467
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 70%
 
 ---
 
@@ -69,28 +72,28 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
       <td><p>Toque ou clique para alternar entre os modos Zoom e Perspectiva.</p> <p>Or, press and hold down the <code>ALT/OPTION</code> key during the action to temporarily toggle to Perspective<br /> mode. Solte a tecla para reverter para o modo Zoom.</p> 
         <ul> 
         <li><strong>Comportamento de mais e menos zoom</strong>- Dolly que move a câmera mais perto ou mais longe do ativo<br /> que você está visualizando. O zoom é o comportamento padrão para o botão de rolagem do mouse (se disponível), para os gestos de pinça com dois dedos em dispositivos móveis ou com se mantém a tecla Shift pressionada ao arrastar para cima ou para baixo usando o botão esquerdo do mouse.</li> 
-        <li><strong>Perspectiva</strong>- Altera a duração focal (também conhecida como campo de visão) da câmera, mantendo o tamanho relativo do ativo na exibição. A perspectiva é o comportamento alternativo para o botão de rolagem (se disponível), para os gestos de pinça com dois dedos em dispositivos móveis ou com se mantém a tecla Shift pressionada ao arrastar para cima ou para baixo usando o botão esquerdo do mouse.</li> 
+        <li><strong>Perspectiva</strong>- Altera a duração focal (também conhecida como campo de visualização) da câmera, mantendo o tamanho relativo do ativo na visualização. A perspectiva é o comportamento alternativo para o botão de rolagem (se disponível), para os gestos de pinça com dois dedos em dispositivos móveis ou com se mantém a tecla Shift pressionada ao arrastar para cima ou para baixo usando o botão esquerdo do mouse.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Órbita</p> <p>ou</p> <p>Panorâmica</p> </td> 
       <td><p>Toque ou clique para alternar entre os modos de órbita e Deslocamento.</p> <p>Or, press and hold the <code>ALT/OPTION</code> key during the action to temporarily toggle to Pan mode. Solte a tecla para reverter para o modo Órbita.</p> 
         <ul> 
-        <li><strong>Órbita</strong>- Move a câmera de visualização em uma esfera centralizada em um ponto de destino que está localizado perto do centro do ativo 3D para ser o padrão. Órbita é o comportamento padrão ao arrastar com o botão esquerdo ou com um único toque em dispositivos móveis.</li> 
+        <li><strong>Órbita</strong>- Move a câmera de visualização em uma esfera centralizada em um ponto de público alvo que está localizado perto do centro do ativo 3D para ser o padrão. Órbita é o comportamento padrão ao arrastar com o botão esquerdo ou com um único toque em dispositivos móveis.</li> 
         <li><strong>Deslocamento</strong>-Move a câmera no plano de visualização. O ponto de destino é movido de modo correspondente; assim, as ações de órbita subsequentes moverão a câmera ao redor de um novo ponto de destino. Deslocamento é o comportamento alternativo para arrastar com o botão esquerdo e arrastar com um único toque.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Examinar</p> <p>ou</p> <p>Target</p> </td> 
-      <td><p>Toque ou clique para alternar entre os modos Examine e Target.</p> 
+      <td><p>Toque ou clique para alternar entre os modos Examine e Público alvo.</p> 
         <ul> 
-        <li><strong>Pressione a tecla Examine</strong>ou clique para entrar no modo Target.</li> 
-        <li><strong>Toque no Target</strong>ou clique em um ponto em qualquer lugar do ativo 3D para centralizar a visualização nessa parte do ativo.<br /> As ações de órbita usam o novo ponto de destino.</li> 
+        <li><strong>Pressione a tecla Examine</strong>ou clique para entrar no modo de Público alvo.</li> 
+        <li><strong>Público alvo</strong>- Toque ou clique em um ponto em qualquer lugar do ativo 3D para centralizar a visualização nessa parte do ativo.<br /> As ações de órbita usam o novo ponto de destino.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td>Redefinir</td> 
-      <td>Toque ou clique para restaurar o ponto de destino da exibição para o centro do modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Toque ou clique para restaurar o ponto de público alvo da visualização para o centro do modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
       </tr> 
     </tbody> 
     </table>
@@ -99,7 +102,7 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 
    ![](do-not-localize/chlimage_1-2.png)
 
-   As etapas fornecem o ambiente, plano de fundo e iluminação em que o modelo 3D é visualizado.
+   As etapas fornecem o plano de fundo do ambiente, plano de solo e iluminação em que o modelo 3D é visualizado.
 
    Consulte [Sobre o uso de palcos no AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
