@@ -27,9 +27,9 @@ Esta seção descreve tópicos sobre o desenvolvimento de componentes para uso c
 
 >[!NOTE]
 >
->Quando você público alvo um componente no autor de AEM, o componente faz uma série de chamadas do lado do servidor para o Adobe Target para registrar a campanha, configurar o oferta e recuperar segmentos de Adobe Target (se configurado). Nenhuma chamada do lado do servidor é feita da publicação do AEM para o Adobe Target.
+>Quando você público alvo um componente AEM autor, o componente faz uma série de chamadas do lado do servidor para a Adobe Target para registrar a campanha, configurar o oferta e recuperar segmentos Adobe Target (se configurado). Nenhuma chamada do lado do servidor é feita AEM publicação para a Adobe Target.
 
-## Habilitar a definição de metas com Adobe Target em suas páginas {#enabling-targeting-with-adobe-target-on-your-pages}
+## Ativar a definição de metas com o Adobe Target em suas páginas {#enabling-targeting-with-adobe-target-on-your-pages}
 
 Para usar componentes direcionados em suas páginas que interagem com o Adobe Target, inclua um código específico do lado do cliente no `<head>` elemento.
 
@@ -197,17 +197,17 @@ O script JSP desse componente gera chamadas para a API javascript do Público al
 
 O arquivo mbox.js padrão usado para criar mboxes está localizado em `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Para usar um arquivo mbox.js do cliente, adicione o arquivo à configuração da nuvem do Público alvo. Para adicionar o arquivo, o `mbox.js` arquivo deve estar disponível no sistema de arquivos.
 
-Por exemplo, se você quiser usar o serviço [da](https://docs.adobe.com/content/help/en/id-service/using/home.html) Marketing Cloud ID, é necessário baixar o arquivo mbox.js para que ele contenha o valor correto para a `imsOrgID` variável, que se baseia no seu locatário. Essa variável é necessária para integração com o serviço da Marketing Cloud ID. Para obter informações, consulte [Adobe Analytics como a Fonte do Relatórios para Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) e [Antes de implementar](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
+Por exemplo, se você quiser usar o serviço [de ID de](https://docs.adobe.com/content/help/en/id-service/using/home.html) `imsOrgID` Marketing Cloud, é necessário baixar o arquivo mbox.js para que ele contenha o valor correto para a variável, que tem por base seu locatário. Essa variável é necessária para integração com o serviço de ID do Marketing Cloud. Para obter informações, consulte [Adobe Analytics como a Fonte do Relatórios para Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) e [Antes de implementar](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
 
 >[!NOTE]
 >
 >Se uma mbox personalizada estiver definida em uma configuração de Público alvo, todos devem ter acesso de leitura a **/etc/cloudservices** nos servidores de publicação. Sem esse acesso, carregar arquivos mbox.js no site de publicação resulta em um erro 404.
 
-1. Vá para a página **Ferramentas** do CQ e selecione **Cloud Service**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-1. Na árvore, selecione Adobe Target e, na lista das configurações, clique com o duplo do mouse na configuração do Público alvo.
+1. Vá para a página **Ferramentas** do CQ e selecione **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Na árvore, selecione Adobe Target e, na lista das configurações, clique com o duplo do mouse em sua configuração de Público alvo.
 1. Na página de configuração, clique em Editar.
 1. Para a propriedade Custom mbox.js, clique em Procurar e selecione o arquivo.
-1. Para aplicar as alterações, digite a senha da sua conta de Adobe Target, clique em Reconectar ao Público alvo e clique em OK quando a conexão for bem-sucedida. Em seguida, clique em OK na caixa de diálogo Editar componente.
+1. Para aplicar as alterações, insira a senha da sua conta Adobe Target, clique em Reconectar ao Público alvo e clique em OK quando a conexão for bem-sucedida. Em seguida, clique em OK na caixa de diálogo Editar componente.
 
 Sua configuração de Público alvo inclui um arquivo mbox.js personalizado, [o código necessário na seção](/help/sites-developing/target.md#the-head-section) de cabeçalho da sua página adiciona o arquivo à estrutura da biblioteca do cliente em vez de uma referência à biblioteca testandtarget.js.
 
@@ -223,17 +223,17 @@ Para remover o comando Público alvo do menu de contexto, adicione a seguinte pr
 * Tipo: `Boolean`
 * Valor: `True`
 
-Por exemplo, para desativar a definição de metas dos componentes de título das páginas do Site de demonstração Geometrixx, adicione a propriedade ao `/apps/geometrixx/components/title/cq:editConfig` nó.
+Por exemplo, para desativar a definição de metas dos componentes de título das páginas de Site de demonstração de Geometrixx, adicione a propriedade ao `/apps/geometrixx/components/title/cq:editConfig` nó.
 
 ![chlimage_1-175](assets/chlimage_1-174.png)
 
-## Enviando informações de confirmação de pedido para o Adobe Target {#sending-order-confirmation-information-to-adobe-target}
+## Enviando informações de confirmação de pedido para a Adobe Target {#sending-order-confirmation-information-to-adobe-target}
 
 >[!NOTE]
 >
->Se você não estiver usando o DTM, envie a confirmação do pedido para o Adobe Target.
+>Se você não estiver usando o DTM, envie a confirmação do pedido para a Adobe Target.
 
-Para rastrear o desempenho de seu site, envie as informações de compra da página de confirmação do pedido para o Adobe Target. (Consulte [Criar uma mbox orderConfirmPage](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) na documentação do Adobe Target.) O Adobe Target reconhece os dados da mbox como dados de confirmação de pedido quando seu nome MBox é exibido `orderConfirmPage` e usa os seguintes nomes de parâmetro específicos:
+Para rastrear o desempenho de seu site, envie informações de compra da página de confirmação do pedido para a Adobe Target. (Consulte [Criar uma mbox orderConfirmPage](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) na documentação do Adobe Target.) A Adobe Target reconhece os dados da mbox como dados de confirmação de pedido quando seu nome MBox é exibido `orderConfirmPage` e usa os seguintes nomes de parâmetro específicos:
 
 * productPurchasedId: Uma lista de IDs que identificam os produtos comprados.
 * orderId: A ID do pedido.
@@ -252,7 +252,7 @@ O código na página HTML renderizada que cria a mbox é semelhante ao seguinte 
 
 Os valores de cada parâmetro são diferentes para cada pedido. Portanto, é necessário um componente que gera o código com base nas propriedades da compra. A Estrutura [de integração do CQ](/help/sites-administering/ecommerce.md) eCommerce permite a integração com seu catálogo de produtos e a implementação de um carrinho de compras e de uma página de checkout.
 
-A amostra do Geometrixx Outdoors exibe a seguinte página de confirmação quando um visitante compra produtos:
+A amostra de Geometrixx Outdoors exibe a seguinte página de confirmação quando um visitante compra produtos:
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -332,9 +332,9 @@ O script público alvo.jsp acessa as propriedades da página para determinar o m
 >
 >Por padrão, as mboxes ficam ocultas - a classe mboxDefault determina esse comportamento. Ocultar mboxes garante que os visitantes não vejam o conteúdo padrão antes de ser trocado; entretanto, ocultar mboxes afeta o desempenho percebido.
 
-Quando o Adobe Target direciona o conteúdo, o script engine_tnt.jsp cria mboxes que contêm o conteúdo da experiência direcionada:
+Quando a Adobe Target direciona o conteúdo, o script engine_tnt.jsp cria mboxes que contêm o conteúdo da experiência direcionada:
 
-* Adiciona um `div` elemento com a classe de `mboxDefault`, conforme exigido pela API Adobe Target.
+* Adiciona um `div` elemento com a classe de `mboxDefault`, conforme exigido pela API do Adobe Target.
 
 * Adiciona o conteúdo da mbox (o conteúdo da experiência direcionada) dentro do `div` elemento.
 
