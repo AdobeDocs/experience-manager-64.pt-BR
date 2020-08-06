@@ -1,14 +1,17 @@
 ---
 title: Criação de ajuda no contexto para campos de formulário
 seo-title: Criação de ajuda no contexto para campos de formulário
-description: 'O AEM Forms permite adicionar ajuda em contexto a campos e painéis de formulário adaptáveis, como texto ou mídia avançada, incluindo vídeos. '
-seo-description: 'O AEM Forms permite adicionar ajuda em contexto a campos e painéis de formulário adaptáveis, como texto ou mídia avançada, incluindo vídeos. '
+description: 'A AEM Forms permite que você adicione ajuda contextual a campos e painéis de formulário adaptáveis, como texto ou mídia avançada, incluindo vídeos. '
+seo-description: 'A AEM Forms permite que você adicione ajuda contextual a campos e painéis de formulário adaptáveis, como texto ou mídia avançada, incluindo vídeos. '
 uuid: 07427ddd-9d35-41f6-a807-0e418aade199
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 Há situações em que os usuários finais que preenchem um formulário não têm certeza de como preencher os detalhes em um campo de formulário específico. Para resolver esses problemas, os formulários adaptáveis fornecem suporte para adicionar texto ou ajuda rich in-context a um campo de formulário. Isso ajuda a melhorar a experiência de preenchimento do formulário e evita qualquer ambiguidade para os usuários finais.
 
-Este artigo discute como os autores de formulários podem adicionar ajuda em contexto ao criar formulários adaptativos.
+Este artigo aborda como os autores de formulários podem adicionar ajuda em contexto ao criar o Forms adaptativo.
 
 ## Adicionar ajuda no contexto {#add-in-context-help}
 
