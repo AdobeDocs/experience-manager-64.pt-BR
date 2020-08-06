@@ -1,6 +1,6 @@
 ---
-title: Criando Filtros de Grupo de Dispositivos
-seo-title: Criando Filtros de Grupo de Dispositivos
+title: Criando Filtros de Grupos de Dispositivos
+seo-title: Criando Filtros de Grupos de Dispositivos
 description: Criar um filtro de grupo de dispositivos para definir um conjunto de requisitos de capacidade do dispositivo
 seo-description: Criar um filtro de grupo de dispositivos para definir um conjunto de requisitos de capacidade do dispositivo
 uuid: 8db98b98-f26d-4924-930a-a682cd7df866
@@ -12,6 +12,9 @@ discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Crie um filtro de grupo de dispositivos para definir um conjunto de requisitos de capacidade do dispositivo. Crie quantos filtros forem necessários para direcionar os grupos necessários de recursos do dispositivo.
+Crie um filtro de grupo de dispositivos para definir um conjunto de requisitos de capacidade do dispositivo. Crie quantos filtros forem necessários para público alvo dos grupos necessários de recursos do dispositivo.
 
 Projete seus filtros para que você possa usar combinações deles para definir os grupos de recursos. Normalmente, há sobreposição dos recursos de diferentes grupos de dispositivos. Portanto, você pode usar alguns filtros com várias definições de grupos de dispositivos.
 
@@ -84,11 +87,11 @@ public String getTitle() {
 }
 ```
 
-A codificação do texto do nome e da descrição é suficiente para ambientes de criação unidiopáticos. Considere a externalização das strings para uso multilíngue ou para permitir a alteração de strings sem recompilar o código fonte.
+A codificação do texto do nome e da descrição é suficiente para ambientes de criação unidilingues. Considere a externalização das strings para uso multilíngue ou para permitir a alteração de strings sem recompilar o código fonte.
 
 ### Avaliação em relação aos critérios de filtragem {#evaluating-against-filter-criteria}
 
-A `matches` função retornará `true` se os recursos do dispositivo atenderem a todos os critérios de filtragem. Avalie as informações fornecidas nos argumentos do método para determinar se o dispositivo pertence ao grupo. Os seguintes valores são fornecidos como argumentos:
+A `matches` função retornará `true` se os recursos do dispositivo atenderem a todos os critérios de filtragem. Avalie as informações fornecidas nos argumentos do método para determinar se o dispositivo pertence ao grupo. Os valores a seguir são fornecidos como argumentos:
 
 * Um objeto DeviceGroup
 * O nome do agente do usuário
@@ -186,11 +189,11 @@ O seguinte código POM é útil se você usar o Maven para criar seus aplicativo
 
 * `org.apache.felix.scr.annotations.jar`: Fornece as anotações Componente e Serviço.
 
-As interfaces DeviceGroup e DeviceGroupFilter estão incluídas no pacote API do Day Communique 5 WCM Mobile. As anotações do Felix estão incluídas no pacote Apache Felix Declarative Services. Você pode obter esse arquivo JAR do repositório público da Adobe.
+As interfaces DeviceGroup e DeviceGroupFilter estão incluídas no pacote de API do Day Communique 5 WCM Mobile. As anotações do Felix estão incluídas no pacote Apache Felix Declarative Services. Você pode obter esse arquivo JAR do repositório Adobe público.
 
-No momento da criação, a versão 5.5.2 é a versão do pacote de API do WCM Mobile que está na versão mais recente do AEM. Use o Adobe Web Console ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) para garantir que esta seja a versão do pacote implantada em seu ambiente.
+No momento da criação, 5.5.2 é a versão do pacote de API do WCM Mobile que está na versão mais recente do AEM. Use o Adobe Web Console ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) para garantir que esta seja a versão do pacote implantada no seu ambiente.
 
-**** POM: (Seu POM usará uma groupId e uma versão diferentes.)
+**POM:** (Seu POM usará uma groupId e uma versão diferentes.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -255,4 +258,4 @@ No momento da criação, a versão 5.5.2 é a versão do pacote de API do WCM Mo
 </project>
 ```
 
-Adicione o perfil que a seção [Obtenção do plug-in](/help/sites-developing/vlt-mavenplugin.md) Content Package Maven fornece ao arquivo de configurações maven para usar o repositório público da Adobe.
+Adicione o perfil que a seção [Obtenção do plug-in](/help/sites-developing/vlt-mavenplugin.md) Content Package Maven fornece ao seu arquivo de configurações maven para usar o repositório Adobe público.
