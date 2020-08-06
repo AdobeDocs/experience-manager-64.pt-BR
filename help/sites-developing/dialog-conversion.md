@@ -1,8 +1,8 @@
 ---
 title: Ferramenta de conversão de diálogo
 seo-title: Ferramenta de conversão de diálogo
-description: A ferramenta de conversão da caixa de diálogo é fornecida para ajudar a estender os componentes existentes que têm apenas uma caixa de diálogo definida para a interface clássica
-seo-description: A ferramenta de conversão da caixa de diálogo é fornecida para ajudar a estender os componentes existentes que têm apenas uma caixa de diálogo definida para a interface clássica
+description: A ferramenta de conversão da caixa de diálogo é fornecida para ajudá-lo a estender os componentes existentes que têm apenas uma caixa de diálogo definida para a interface clássica
+seo-description: A ferramenta de conversão da caixa de diálogo é fornecida para ajudá-lo a estender os componentes existentes que têm apenas uma caixa de diálogo definida para a interface clássica
 uuid: 999aeef5-3351-48e3-a02e-c960fa58f775
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 0%
 
 ---
 
 
 # Ferramenta de conversão de diálogo{#dialog-conversion-tool}
 
-A ferramenta de conversão da caixa de diálogo é fornecida para ajudar a estender os componentes existentes que têm apenas uma caixa de diálogo definida para a interface clássica (baseada em ExtJS) ou com base na interface de usuário Granite e Coral 2. A ferramenta usa a caixa de diálogo original para criar uma caixa de diálogo duplicada projetada para a interface padrão, com base na interface do usuário Granite e no Coral 3.
+A ferramenta de conversão da caixa de diálogo é fornecida para ajudar a estender os componentes existentes que têm apenas uma caixa de diálogo definida para a interface clássica (baseada em ExtJS) ou com base na interface de usuário Granite e Coral 2. A ferramenta usa a caixa de diálogo original para criar uma caixa de diálogo de duplicado projetada para a interface padrão, com base na interface do usuário Granite e no Coral 3.
 
-A meta dessa ferramenta é automatizar o upgrade o máximo possível, aumentar a eficiência e reduzir os erros. No entanto, como a ferramenta não pode abranger todos os cenários, o processo não pode ser totalmente automatizado e o usuário deve revisar as caixas de diálogo convertidas e possivelmente fazer ajustes adicionais. A ferramenta é uma ajuda para ajudá-lo a iniciar o processo de conversão, mas não é destinada a assumir o controle total da conversão.
+A meta dessa ferramenta é automatizar o upgrade o máximo possível, aumentar a eficiência e reduzir os erros. No entanto, como a ferramenta não pode abranger todos os cenários, o processo não pode ser totalmente automatizado e o usuário deve revisar as caixas de diálogo convertidas e possivelmente fazer ajustes adicionais. A ferramenta é uma ajuda para ajudá-lo a start do processo de conversão, mas não é destinada a assumir o controle total da conversão.
 
 A ferramenta criará a nova caixa de diálogo usando a interface padrão, a interface do usuário com base em Granite e a interface do usuário com base em Coral 3, mas ignorará o que não pode ser convertido. Portanto, a caixa de diálogo resultante pode conter nós da caixa de diálogo original copiados como estão, se nenhuma regra correspondesse a esse componente específico. Além disso, um componente convertido pode ter algumas propriedades não convertidas, pois não havia uma regra apropriada para convertê-las.
 
 >[!CAUTION]
 >
->A ferramenta não pode abranger todos os cenários, pois suas regras de conversão não são exaustivas e funcionam na base do melhor esforço. Ele converte os elementos e as propriedades mais usados, mas a conversão estará incompleta ao lidar com personalizações ou caixas de diálogo altamente especializadas. **As caixas de diálogo convertidas podem exigir ajustes adicionais e todas as conversões devem ser revisadas.**
+>A ferramenta não pode abranger todos os cenários, pois suas regras de conversão não são exaustivas e funcionam na base do melhor esforço. Ele converte os elementos e as propriedades usados com mais frequência, mas a conversão estará incompleta ao lidar com personalizações ou caixas de diálogo altamente especializadas. **As caixas de diálogo convertidas podem exigir ajustes adicionais e todas as conversões devem ser revisadas.**
 
 >[!NOTE]
 >
->Como a interface clássica não está mais sendo desenvolvida ou aprimorada, a Adobe recomenda que os clientes atualizem para a interface de usuário padrão da interface do usuário Granite para se beneficiarem da tecnologia mais recente.
+>Como a interface clássica não está mais sendo desenvolvida ou aprimorada, o Adobe recomenda que os clientes atualizem para a interface de usuário padrão da interface de usuário Granite para se beneficiar da tecnologia mais recente.
 >
 >Embora seja uma prática recomendada migrar para a plataforma mais recente, migrar do Coral 2 para o Coral 3 não é crítico. No entanto, qualquer novo projeto deve ser iniciado com base no Coral 3.
 
@@ -46,14 +49,14 @@ Você pode encontrar o código desta página no GitHub
 
 >[!NOTE]
 >
->O AEM não é enviado com a ferramenta de conversão de diálogo. Você deve baixá-lo e instalá-lo para usá-lo.
+>AEM não é enviado com a ferramenta de conversão de diálogo. Você deve baixá-lo e instalá-lo para usá-lo.
 
 Siga estas etapas para instalar a ferramenta de conversão de diálogo.
 
 1. Baixe o pacote do projeto [GitHub da Ferramenta de conversão de](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/releases)diálogo.
 1. Instale o pacote em sua instância. Para obter detalhes sobre o gerenciamento de pacotes, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
-## Convertendo uma caixa de diálogo {#converting-a-dialog}
+## Conversão de uma caixa de diálogo {#converting-a-dialog}
 
 A ferramenta converte caixas de diálogo criando uma caixa de diálogo correspondente da interface do usuário Granite / Coral 3 no mesmo local da caixa de diálogo original na árvore de conteúdo. No caso de caixas de diálogo IU Granite / Coral 2, elas são copiadas para um local de backup (um `.coral2` sufixo é anexado ao nome do nó de diálogo) para não serem substituídas. A ferramenta pode converter caixas de diálogo de design e editar caixas de diálogo.
 
@@ -65,7 +68,7 @@ Use as seguintes etapas para converter uma ou mais caixas de diálogo:
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Insira o caminho necessário, como `/apps/geometrixx/components`. Você também pode inserir um caminho direto para uma única caixa de diálogo, como `/apps/geometrixx/components/lead`.
+1. Insira o caminho desejado, como `/apps/geometrixx/components`. Você também pode inserir um caminho direto para uma única caixa de diálogo, como `/apps/geometrixx/components/lead`.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -75,19 +78,20 @@ Use as seguintes etapas para converter uma ou mais caixas de diálogo:
 
    A tabela lista todas as caixas de diálogo herdadas existentes abaixo do caminho inserido. Cada caixa de diálogo tem seu Tipo listado. Os tipos incluem:
 
-   * **** Clássico: Nós do tipo `cq:Dialog` que têm nome de nó `dialog` ou `design_dialog`
-   * **** Coral 2: Nós nomeados `cq:dialog` ou `cq:design_dialog` que têm um tipo de recurso de IU Granite / Coral 2 no nó de conteúdo filho
-   Cada linha contém um link para exibir a caixa de diálogo e um link para o CRXDE Lite para exibir sua estrutura de nó.
+   * **Clássico:** Nós do tipo `cq:Dialog` que têm nome de nó `dialog` ou `design_dialog`
+   * **Coral 2:** Nós nomeados `cq:dialog` ou `cq:design_dialog` que têm um tipo de recurso de IU Granite / Coral 2 no nó de conteúdo filho
+
+   Cada linha contém um link para visualização da caixa de diálogo e um link para CRXDE Lite para visualização de sua estrutura de nó.
 
    >[!NOTE]
    >
    >Os componentes que não têm uma caixa de diálogo para a interface clássica ou Coral 2 (isto é, eles projetados com a interface do usuário Granite / Coral 3) não são listados.
 
-1. Selecione uma ou mais caixas de diálogo para conversão e clique ou toque em **Converter X para iniciar o processo de conversão** .
+1. Selecione uma ou mais caixas de diálogo para conversão e clique ou toque em **Converter caixas de diálogo X para** start do processo de conversão.
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. As caixas de diálogo selecionadas são listadas com os resultados de suas conversões. Se a conversão tiver sido bem-sucedida, a linha conterá links para exibir a caixa de diálogo convertida ou para abri-la no CRXDE Lite.
+1. As caixas de diálogo selecionadas são listadas com os resultados de suas conversões. Se a conversão tiver sido bem-sucedida, a linha conterá links para visualização da caixa de diálogo convertida ou para abri-la no CRXDE Lite.
 
    Clique ou toque em **Voltar** para retornar à Ferramenta de conversão de diálogo.
 
@@ -113,7 +117,7 @@ A ferramenta de conversão de diálogo usa essa abordagem para reescrever uma de
 
 O algoritmo de regravação utiliza como parâmetro a árvore a ser regravada e um conjunto de regras de regravação. Ele cruza a árvore na pré-ordem e, para cada nó, verifica se uma regra se aplica à subárvore raiz nesse nó. A primeira regra correspondente é aplicada a essa subárvore para regravá-la. O traversal então reinicia a partir da raiz. O algoritmo é interrompido assim que a árvore inteira for atravessada e nenhuma regra corresponder a nenhuma subárvore. Como medida de otimização, o algoritmo mantém o controle de um conjunto de nós que são finais e, portanto, não precisam ser verificados novamente para correspondências em versões posteriores. Cabe às regras de regravação definir quais nós da árvore regravada são finais e quais devem ser revisitados por passagens futuras do algoritmo.
 
-O ponto de entrada para a conversão é o `DialogConversionServlet`, que é registrado nas solicitações POST para `/libs/cq/dialogconversion/content/convert.json`. Ele aceita um parâmetro de solicitação de caminho, que é uma matriz que contém os caminhos para as caixas de diálogo que devem ser convertidos. Para cada caixa de diálogo, o servlet regrava a árvore de diálogo correspondente aplicando todas as regras de regravação da caixa de diálogo definidas.
+O ponto de entrada para a conversão é o `DialogConversionServlet`, que é registrado nas solicitações de POST para `/libs/cq/dialogconversion/content/convert.json`. Ele aceita um parâmetro de solicitação de caminho, que é uma matriz que contém os caminhos para as caixas de diálogo que devem ser convertidos. Para cada caixa de diálogo, o servlet regrava a árvore de diálogo correspondente aplicando todas as regras de regravação da caixa de diálogo definidas.
 
 ### Substituir tipos de regra {#rewrite-rule-types}
 
@@ -129,7 +133,7 @@ Normalmente, uma única regra de regravação de caixa de diálogo é responsáv
 
 >[!CAUTION]
 >
->Os loops de regravação não são detectados pelo algoritmo, portanto, as regras de **regravação não devem regravar árvores de forma** circular.
+>Os loops de regravação não são detectados pelo algoritmo, portanto, as regras de **regravação não devem regravar as árvores de forma** circular.
 
 ### Regras de regravação baseadas em nós {#node-based-rewrite-rules}
 
@@ -159,7 +163,7 @@ No caso de uma correspondência, a subárvore correspondente (chamada de árvore
 
 `${<path>}`
 
-Se a propriedade referenciada não existir na árvore original, a propriedade será omitida. Como alternativa, um valor padrão pode ser especificado para esse caso (somente possível para propriedades de sequência de caracteres):
+Se a propriedade referenciada não existir na árvore original, então a propriedade será omitida. Como alternativa, um valor padrão pode ser especificado para esse caso (somente possível para propriedades de sequência de caracteres):
 
 `${<path>:<default>}`
 
@@ -198,7 +202,7 @@ A árvore de substituição também suporta as seguintes propriedades especiais 
    Esta é uma medida de otimização que informa ao algoritmo que o nó que contém essa propriedade é final e não precisa ser verificado novamente para obter as regras de regravação correspondentes. Quando colocado no nó de substituição propriamente dito, toda a árvore de substituição é considerada final.
 * `cq:rewriteCommonAttrs` (boolean)
 
-   Defina essa propriedade no nó de substituição ( `rule`/ `replacement`) para mapear propriedades relevantes do nó raiz original para equivalentes de atributos comuns Granite na raiz de cópia. Ele lidará com atributos de dados copiando/criando o `granite:data` subnó no destino e escrevendo `data-*` as propriedades nele.
+   Defina essa propriedade no nó de substituição ( `rule`/ `replacement`) para mapear propriedades relevantes do nó raiz original para equivalentes de atributos comuns de Granite na raiz de cópia. Ele lidará com atributos de dados copiando/criando o `granite:data` subnó no público alvo e escrevendo `data-*` as propriedades nele.
 * `cq:rewriteRenderCondition` (boolean)
 
    Defina essa propriedade no nó de substituição ( `rule`/ `replacement`) para copiar qualquer condição de renderização Granite ( `rendercondition` ou `granite:rendercondition`) do nó raiz original para um `granite:rendercondition` filho da raiz de cópia.
@@ -236,7 +240,7 @@ Essas regras podem ser substituídas fornecendo um conjunto de regras em:
 
 `/apps/cq/dialogconversion/rules`
 
-Você pode copiar `/libs/cq/dialogconversion/rules` para `/apps` modificar regras existentes e/ou adicionar novas regras a esta nova instância &quot;.
+Você pode copiar `/libs/cq/dialogconversion/rules` para `/apps` modificar as regras existentes e/ou adicionar novas regras a esta nova instância &quot;.
 
 ### Regras de regravação baseadas em Java {#java-based-rewrite-rules}
 
@@ -250,7 +254,7 @@ Node applyTo(Node root, Set<Node> finalNodes) throws DialogRewriteException, Rep
 int getRanking();
 ```
 
-O `matches` método deve retornar `true` se a regra corresponder à subárvore raiz no nó raiz fornecido. Se a regra corresponder, o algoritmo de regravação de árvore chamará subsequentemente o `applyTo` método, que deve regravar a subárvore raiz no nó raiz especificado. Normalmente, esse método renomeará temporariamente a árvore original, criará a nova árvore como um novo filho do nó pai da árvore original (usando seus nós e propriedades) e, por fim, removerá a árvore original. Informações mais detalhadas podem ser encontradas no Javadoc da `com.adobe.cq.dialogconversion.DialogRewriteRule` interface.
+O `matches` método deve retornar `true` se a regra corresponder à subárvore raiz no nó raiz fornecido. Se a regra corresponder, o algoritmo de regravação de árvore chamará subsequentemente o `applyTo` método, que deve regravar a subárvore enraizada no nó raiz especificado. Normalmente, esse método renomeará temporariamente a árvore original, criará a nova árvore como um novo filho do nó pai da árvore original (usando seus nós e propriedades) e, por fim, removerá a árvore original. Informações mais detalhadas podem ser encontradas no Javadoc da `com.adobe.cq.dialogconversion.DialogRewriteRule` interface.
 
 #### Outras informações - Javadocs {#further-information-javadocs}
 
@@ -314,13 +318,13 @@ O `cq-dialog-conversion-content` pacote contém várias regras de regravação p
   </tr> 
   <tr> 
    <td><code>com.adobe.cq.dialogconversion.rules.CqDialogRewriteRule</code></td> 
-   <td>Nó do tipo <code>cq:Dialog</code>, manipula diferentes subestruturas</td> 
+   <td>Nó do tipo <code>cq:Dialog</code>, lida com subestruturas diferentes</td> 
    <td><p>Um <code>granite/ui/components/foundation/container</code> usando um <code>fixedcolumns</code> ou <code>tabs</code> um layout</p> <p>Os componentes reais da caixa de diálogo são copiados e regravados em passagens subsequentes do algoritmo.</p> </td> 
   </tr> 
   <tr> 
    <td><code>com.adobe.cq.dialogconversion.rules.IncludeRule</code></td> 
    <td>xtype = <code>cqinclude</code></td> 
-   <td>O nó referenciado é copiado para a caixa de diálogo IU Granite / Coral 3 e (possivelmente) reescrito subsequentemente pelo algoritmo.</td> 
+   <td>O nó referenciado é copiado para a caixa de diálogo IU Granite / Coral 3 e (possivelmente) reescrito posteriormente pelo algoritmo.</td> 
   </tr> 
   <tr> 
    <td><code>com.adobe.cq.dialogconversion.rules.MultifieldRewriteRule</code></td> 
@@ -393,7 +397,7 @@ O `cq-dialog-conversion-content` pacote contém várias regras de regravação p
  </tbody> 
 </table>
 
-### Exemplo de regras de substituição {#sample-rewrite-rules}
+### Exemplo de regras de regravação {#sample-rewrite-rules}
 
 CÓDIGO NO GITHUB
 
