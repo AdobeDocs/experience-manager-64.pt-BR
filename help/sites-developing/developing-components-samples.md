@@ -1,8 +1,8 @@
 ---
-title: Desenvolvimento de componentes do AEM - exemplos de código
-seo-title: Desenvolvimento de componentes do AEM - exemplos de código
-description: Esta seção fornece alguns exemplos sobre como criar seus próprios componentes para o AEM.
-seo-description: Esta seção fornece alguns exemplos sobre como criar seus próprios componentes para o AEM.
+title: Desenvolvimento de componentes AEM - exemplos de código
+seo-title: Desenvolvimento de componentes AEM - exemplos de código
+description: Esta seção fornece alguns exemplos sobre como criar seus próprios componentes para AEM.
+seo-description: Esta seção fornece alguns exemplos sobre como criar seus próprios componentes para AEM.
 uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,20 +12,23 @@ discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 2%
 
 ---
 
 
-# Desenvolvimento de componentes do AEM - exemplos de código{#developing-aem-components-code-samples}
+# Desenvolvimento de componentes AEM - exemplos de código{#developing-aem-components-code-samples}
 
-Esta seção fornece alguns exemplos sobre como criar seus próprios componentes para o AEM.
+Esta seção fornece alguns exemplos sobre como criar seus próprios componentes para AEM.
 
 Para os conceitos subjacentes, consulte:
 
-* [Componentes do AEM - Noções básicas](/help/sites-developing/components-basics.md)
-* [Desenvolvimento de componentes do AEM](/help/sites-developing/developing-components.md)
+* [Componentes AEM - Noções básicas](/help/sites-developing/components-basics.md)
+* [Desenvolvimento de componentes AEM](/help/sites-developing/developing-components.md)
 
-Para obter informações sobre a interface clássica, consulte Componentes do [AEM para a interface clássica](/help/sites-developing/developing-components-classic.md).
+Para obter informações sobre a interface clássica, consulte [AEM Componentes para a interface clássica](/help/sites-developing/developing-components-classic.md).
 
 >[!NOTE]
 >
@@ -33,6 +36,7 @@ Para obter informações sobre a interface clássica, consulte Componentes do [A
 >
 >* [Modo de desenvolvedor](/help/sites-developing/developer-mode.md)
 >* uma [estrutura para automatizar testes, com base na biblioteca do Hobbes.js](/help/sites-developing/hobbes.md)
+
 >
 
 
@@ -48,7 +52,7 @@ Você pode encontrar o código desta página no GitHub
 
 >[!NOTE]
 >
->Este exemplo de código está relacionado à sessão Gems do AEM em [Personalizar campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)de diálogo.
+>Esta amostra de código está relacionada à sessão Gems AEM em [Personalizar campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)de diálogo.
 
 ## Recursos relacionados {#related-resources}
 
