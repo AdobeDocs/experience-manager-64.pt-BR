@@ -1,6 +1,6 @@
 ---
-title: Start Java APIQuick do Serviço de Utilitários XMP (SOAP)
-seo-title: Start Java APIQuick do Serviço de Utilitários XMP (SOAP)
+title: XMP Utilities Service Java APIQuick Start (SOAP)
+seo-title: XMP Utilities Service Java APIQuick Start (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Start rápido (SOAP) da API Java do serviço de utilitários XMP {#xmp-utilities-service-java-apiquick-start-soap}
+# Start rápido da API Java (SOAP) do Serviço de utilitários XMP {#xmp-utilities-service-java-apiquick-start-soap}
 
 Os Start Rápidos a seguir estão disponíveis para o serviço Utilitários XMP.
 
@@ -26,15 +26,15 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Utilitários XMP.
 
 [Start rápido (modo SOAP): Importação de metadados XMP usando a API Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms se você estiver usando outro sistema operacional, como UNIX, substitua os caminhos específicos do windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Exportação de metadados XMP usando a API Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-O exemplo de código a seguir recupera, inspeciona e salva metadados XMP. (Consulte [Exportação de metadados de Documentos](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)PDF.)
+O exemplo de código a seguir recupera, inspeciona e salva XMP metadados. (Consulte [Exportação de metadados de Documentos](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)PDF.)
 
 ```as3
  /* 
