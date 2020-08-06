@@ -1,8 +1,8 @@
 ---
-title: Estrutura de marcação do AEM
-seo-title: Estrutura de marcação do AEM
-description: Adicione tags ao conteúdo e aproveite a infraestrutura de AEM Tagging
-seo-description: Adicione tags ao conteúdo e aproveite a infraestrutura de AEM Tagging
+title: Estrutura de marcação AEM
+seo-title: Estrutura de marcação AEM
+description: Adicione tags ao conteúdo e aproveite a infraestrutura de Marcação de AEM
+seo-description: Adicione tags ao conteúdo e aproveite a infraestrutura de Marcação de AEM
 uuid: 55ba5977-217b-4b0f-a794-ddb9216ee62b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Estrutura de marcação do AEM{#aem-tagging-framework}
+# Estrutura de marcação AEM{#aem-tagging-framework}
 
-Para marcar o conteúdo e aproveitar a infraestrutura de marcação do AEM:
+Para marcar o conteúdo e aproveitar a infraestrutura de Marcação de AEM:
 
 * A tag deve existir como um nó do tipo [`cq:Tag`](#tags-cq-tag-node-type) no nó raiz [da taxonomia](#taxonomy-root-node)
 
@@ -66,7 +66,7 @@ A TagID consiste em uma [namespace](#tag-namespace) seguida pela TagID local. [A
 
 O nó raiz de taxonomia é o caminho base para todas as tags no repositório. O nó raiz de taxonomia *não* deve ser do tipo `  cq   :Tag`.
 
-No AEM, o caminho base é `/content/  cq   :tags` e o nó raiz é do tipo `  cq   :Folder`.
+Em AEM, o caminho base é `/content/  cq   :tags` e o nó raiz é do tipo `  cq   :Folder`.
 
 ### Namespace de tags {#tag-namespace}
 
@@ -165,7 +165,7 @@ Além disso, negar permissões de leitura para determinadas tags ou namespaces c
 
 Uma prática típica inclui:
 
-* Permitindo o acesso de gravação de `tag-administrators` grupo/função a todas as namespaces (adicionar/modificar em `/content/cq:tags`). Este grupo vem com o AEM pronto para usar.
+* Permitindo o acesso de gravação de `tag-administrators` grupo/função a todas as namespaces (adicionar/modificar em `/content/cq:tags`). Este grupo vem com AEM prontos.
 
 * Permitir que usuários/autores leiam acesso a todas as namespaces que deveriam ser legíveis para eles (na maioria das vezes, todas).
 * Permitir que usuários/autores gravem acesso às namespaces nas quais as tags devem ser definidas livremente pelos usuários/autores (add_node em `/content/cq:tags/some_namespace`)
@@ -174,7 +174,7 @@ Uma prática típica inclui:
 
 Para que os desenvolvedores de aplicativos anexem a marcação a um tipo de conteúdo, o registro do nó ([CND](https://jackrabbit.apache.org/node-type-notation.html)) deve incluir a `cq:Taggable` mistura ou a `cq:OwnerTaggable` mistura.
 
-A `cq:OwnerTaggable` mistura, que herda de `cq:Taggable`, serve para indicar que o conteúdo pode ser classificado pelo proprietário/autor. No AEM, é apenas um atributo do `cq:PageContent` nó. A `cq:OwnerTaggable` mistura não é exigida pela estrutura de marcação.
+A `cq:OwnerTaggable` mistura, que herda de `cq:Taggable`, serve para indicar que o conteúdo pode ser classificado pelo proprietário/autor. Em AEM, é apenas um atributo do `cq:PageContent` nó. A `cq:OwnerTaggable` mistura não é exigida pela estrutura de marcação.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ A `cq:tags` propriedade é uma matriz String usada para armazenar uma ou mais Ta
 
 >[!NOTE]
 >
->Para aproveitar a funcionalidade de marcação AEM, os aplicativos desenvolvidos personalizados não devem definir outras propriedades de tags além `cq:tags`.
+>Para aproveitar AEM funcionalidade de marcação, os aplicativos desenvolvidos personalizados não devem definir outras propriedades de tags além `cq:tags`.
 
 ## Mover e mesclar tags {#moving-and-merging-tags}
 
@@ -274,7 +274,7 @@ As tags a partir de Experience Manager 6.4 são armazenadas em `/content/cq:tags
 
 **Se a instância AEM atualizada suportar a API do TagManager**
 
-1. No start do componente, a API do TagManager detecta se é uma instância do AEM atualizada. No sistema atualizado, as tags são armazenadas em `/etc/tags`.
+1. No start do componente, a API do TagManager detecta se é uma instância AEM atualizada. No sistema atualizado, as tags são armazenadas em `/etc/tags`.
 
 1. A API do TagManager é executada no modo de compatibilidade com versões anteriores, o que significa que a API usa `/etc/tags` como caminho base. Caso contrário, ele usa uma nova localização `/content/cq:tags`.
 
@@ -334,13 +334,13 @@ println "---------------------------------Success-------------------------------
 
 O script obtém todas as tags que têm `/etc/tags` o valor da `cq:movedTo/cq:backLinks` propriedade. Em seguida, ele é repetido pelo conjunto de resultados obtidos e resolve os valores `cq:movedTo` e `cq:backlinks` de propriedade para `/content/cq:tags` caminhos (no caso em que `/etc/tags` é detectado no valor).
 
-**Se uma instância do AEM atualizada for executada na interface do usuário clássica**
+**Se a instância AEM atualizada for executada na interface do usuário clássica**
 
 >[!NOTE]
 >
 >A interface clássica não é compatível com zero tempo de inatividade e não oferece suporte para o novo caminho de base de tags. Se você quiser usar a interface clássica do que `/etc/tags` precisa ser criada, seguido da reinicialização do `cq-tagging` componente.
 
-No caso de instâncias AEM atualizadas suportadas pela API do TagManager e executadas na interface clássica:
+No caso de instâncias de AEM atualizadas suportadas pela API do TagManager e executadas na interface clássica:
 
 1. Depois que as referências ao caminho base da tag antiga `/etc/tags` forem substituídas usando o tagId ou o novo local da tag, você poderá migrar as tags para o novo local `/content/cq:tags``/content/cq:tags` no CRX, seguido da reinicialização do componente.
 
