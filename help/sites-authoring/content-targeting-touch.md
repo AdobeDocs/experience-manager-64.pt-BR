@@ -268,7 +268,7 @@ Como o componente de Direcionamento é um contêiner, ele é exibido como uma á
 
 No modo de Direcionamento, o componente de Direcionamento tem uma borda azul e a mensagem para soltar indica a natureza de direcionamento.
 
-![chlimage_1-78](assets/chlimage_1-70.png)
+![chlimage_1-70](assets/chlimage_1-70.png)
 
 No modo de Edição, o componente de Direcionamento tem um ícone de alvo.
 
@@ -343,17 +343,20 @@ Não é possível adicionar ofertas da biblioteca à experiência padrão.
    O seletor de oferta permite procurar ou filtrar as ofertas. Ao navegar ou filtrar, também é possível classificar as ofertas e alterar como você as vê. O número na parte superior direita indica quantas ofertas estão disponíveis na biblioteca atual.
 
    * Click or tap **Browse** to navigate to another folder. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Click or tap **Browse** again to close the navigation pane.
+
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
    * Clique ou toque em **Filtro** para filtrar as ofertas com relação a palavras-chave ou tags. Você digita as palavras-chave e seleciona as tags no menu suspenso. Clique ou toque novamente em **Filtro** para fechar o painel de filtragem.
+
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
    * Altere a forma como você classifica as ofertas clicando ou tocando na seta ao lado de **Do mais novo ao mais antigo**. As ofertas podem ser ordenadas da mais recente para a mais antiga ou da mais antiga para a mais recente.
+
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
    Clique ou toque no ícone ao lado de **Exibir como** para exibir as ofertas como mosaicos ou como uma lista.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 #### Adicionar uma oferta personalizada a uma biblioteca {#adding-a-custom-offer-to-a-library}
 
@@ -658,7 +661,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
   </tr> 
   <tr> 
    <td><strong>Mecanismo</strong></td> 
-   <td>Selecione entre Regras do lado do <strong>cliente (sem rastreamento), Adobe Target, ContextHub </strong>e<strong> Adobe Campaign, </strong>dependendo do mecanismo que você deseja usar.</td> 
+   <td>Selecione entre Regras do lado do <strong>cliente (sem rastreamento), Adobe Target, ContextHub </strong>e<strong> Adobe Campaign </strong>dependendo do mecanismo que você deseja usar.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -675,7 +678,7 @@ Se você selecionar Adobe Target como mecanismo:
   </tr> 
   <tr> 
    <td><strong>Destinação exata</strong></td> 
-   <td><p>Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Observação:</strong> A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td> 
+   <td><p>Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para a Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Observação:</strong> A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Incluir segmentos resolvidos</strong></td> 
@@ -683,7 +686,7 @@ Se você selecionar Adobe Target como mecanismo:
   </tr> 
   <tr> 
    <td><strong>Parâmetros herdados de contexto</strong></td> 
-   <td>Parâmetros de contexto do Lista herdados da estrutura Adobe Target, se houver, associados à página selecionada.</td> 
+   <td>Parâmetros de contexto do Lista herdados da estrutura do Adobe Target, se houver, associados à página selecionada.</td> 
   </tr> 
   <tr> 
    <td><strong>Parâmetros de contexto</strong></td> 
