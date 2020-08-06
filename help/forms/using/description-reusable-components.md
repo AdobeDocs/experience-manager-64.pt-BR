@@ -1,8 +1,8 @@
 ---
 title: Descrição dos componentes reutilizáveis
 seo-title: Descrição dos componentes reutilizáveis
-description: Uma lista completa de componentes reutilizáveis com nomes de arquivos e dependências, para ajudá-lo a integrar o componente de espaço de trabalho do AEM Forms em seus aplicativos da Web.
-seo-description: Uma lista completa de componentes reutilizáveis com nomes de arquivos e dependências, para ajudá-lo a integrar o componente de espaço de trabalho do AEM Forms em seus aplicativos da Web.
+description: Uma lista completa de componentes reutilizáveis com nomes de arquivos e dependências, para ajudá-lo a integrar o componente de espaço de trabalho AEM Forms em seus aplicativos da Web.
+seo-description: Uma lista completa de componentes reutilizáveis com nomes de arquivos e dependências, para ajudá-lo a integrar o componente de espaço de trabalho AEM Forms em seus aplicativos da Web.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 9%
 
 ---
 
 
 # Descrição dos componentes reutilizáveis {#description-of-reusable-components}
 
-A área de trabalho do AEM Forms é composta de componentes [reutilizáveis](/help/forms/using/integrating-html-ws-components-web.md) que são organizados em uma estrutura [de](/help/forms/using/folder-structure.md) pasta específica no CRX™. Cada componente tem um modelo, uma visualização e um arquivo de modelo no local especificado na estrutura da pasta, as dependências JavaScript™ em outros arquivos de componente, eventos ouvidos pelos objetos do componente e JavaScript que acionam esses eventos na área de trabalho do AEM Forms. A lista completa de componentes reutilizáveis com nomes de arquivos e dependências constituintes é fornecida aqui.
+A área de trabalho do AEM Forms é composta de componentes [reutilizáveis](/help/forms/using/integrating-html-ws-components-web.md) que são organizados em uma estrutura [de](/help/forms/using/folder-structure.md) pasta específica no CRX™. Cada componente tem modelo, visualização e arquivo de modelo no local especificado na estrutura da pasta, dependências JavaScript™ em outros arquivos de componente, eventos ouvidos pelos objetos de componente e JavaScript que acionam esses eventos na área de trabalho do AEM Forms. A lista completa de componentes reutilizáveis com nomes de arquivos e dependências constituintes é fornecida aqui.
 
 ## TaskList {#tasklist}
 
@@ -66,7 +69,7 @@ A área de trabalho do AEM Forms é composta de componentes [reutilizáveis](/he
 
 >[!NOTE]
 >
->Este componente pode ser usado independentemente da área de trabalho do AEM Forms, desde que você dispare o filterevento selecionado para este componente do seu aplicativo personalizado.
+>Este componente pode ser usado independentemente da área de trabalho do AEM Forms, desde que você dispare o filterSeleted evento para este componente do aplicativo personalizado.
 
 ## Tarefa {#task}
 
