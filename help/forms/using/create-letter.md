@@ -69,7 +69,7 @@ As condições permitem que você defina qual conteúdo será incluído no momen
 
 #### Layout fragment {#layout-fragment}
 
-Um fragmento de layout é um layout que pode ser usado dentro de uma ou mais letras. Um fragmento de layout é usado para criar padrões repetíveis, especialmente tabelas dinâmicas. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Ele também contém subformulários vazios que indicam áreas de público alvo. Os layouts (XDPs) são criados no Designer e, em seguida, são [carregados no Forms e Documentos](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Um fragmento de layout é um layout que pode ser usado dentro de uma ou mais letras. Um fragmento de layout é usado para criar padrões repetíveis, especialmente tabelas dinâmicas. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Ele também contém subformulários vazios que indicam áreas de público alvo. Os layouts (XDPs) são criados no Designer e, em seguida, são [carregados no Forms e nos Documentos](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Criação de cartas {#letter-creation}
 
@@ -95,7 +95,7 @@ A correspondência final pode ser enviada para um processo back-end para pós-pr
 1. Enviado para revisão e aprovação.
 1. Protegido pela aplicação de assinaturas digitais, certificação, criptografia ou gerenciamento de direitos.
 1. Convertido em um documento PDF pesquisável que contém todos os metadados necessários para fins de arquivamento e auditoria.
-1. Incluído em um Portfólio PDF que inclui mais documentos, como material de marketing. O Portfólio PDF pode ser enviado como a correspondência final.
+1. Incluído em um Portfolio PDF que inclui mais documentos, como material de marketing. O Portfolio PDF pode ser enviado como a correspondência final.
 
 ### Arquitetura da solução Gerenciamento de correspondência {#correspondence-management-solution-architecture}
 
@@ -228,7 +228,7 @@ Esta tabela fornece algumas orientações que você pode usar para classificar s
 
 Primeiro, você precisa dos seguintes itens para criar uma correspondência:
 
-* [Pacote](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)de compatibilidade. Instale o Pacote de compatibilidade para visualização da opção **Cartas** na página **Formulários** .
+* [Pacote](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)de compatibilidade. Instale o Pacote de compatibilidade para visualização da opção **Cartas** na página do **Forms** .
 
 * A letra XDP ([layout](/help/forms/using/document-fragments.md)).
 * Outros XDPs (fragmentos[de](/help/forms/using/document-fragments.md)layout) que formam partes da carta. Os XDPs\Layouts são criados no [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
@@ -241,7 +241,7 @@ Primeiro, você precisa dos seguintes itens para criar uma correspondência:
 
 ### Selecione um layout e insira as propriedades das letras {#select-a-layout-and-enter-the-letter-properties}
 
-1. Selecione **Formulários** > **Cartas**.
+1. Selecione **Forms** > **Cartas**.
 
 1. Selecione **Criar > Carta**. O Gerenciamento de correspondência exibe os layouts disponíveis (XDPs). Esses layouts vêm do Designer. Os layouts também incluem os modelos de carta que o Gerenciamento de correspondência fornece na caixa. Para obter mais informações sobre os modelos de Gerenciamento de correspondência, consulte Modelos [de carta de](/help/forms/using/reference-cm-layout-templates.md)referência. Para adicionar seus próprios layouts, crie arquivos XDP (layout) no Designer e, em seguida, [carregue-os no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
@@ -258,7 +258,7 @@ Primeiro, você precisa dos seguintes itens para criar uma correspondência:
    * **Descrição (Opcional):** Descreva a carta para sua referência.
    * **Dicionário de dados (opcional)**: O Dicionário de dados pode ser associado à correspondência. Os ativos que você inserir posteriormente nesta correspondência devem ter o mesmo dicionário de dados que você escolher para a correspondência aqui ou nenhum dicionário de dados.
    * **Tags (opcional):** Selecione as tags a serem aplicadas à correspondência. Você também pode digitar um nome de tag novo/personalizado e pressionar Enter para criá-lo.
-   * **Processo de publicação (opcional):** Selecione o processo de publicação a ser aplicado ao modelo de carta. Há processos de postagem fora da caixa e aqueles que você criou usando o AEM, como email e impressão.
+   * **Processo de publicação (opcional):** Selecione o processo de publicação a ser aplicado ao modelo de carta. Há processos de postagem fora da caixa e aqueles que você criou usando AEM, como email e impressão.
 
    ![Propriedades da correspondência](assets/createcorrespondenceproperties.png)
 
