@@ -1,6 +1,6 @@
 ---
-title: Start rápidos da API do Forms Service
-seo-title: Start rápidos da API do Forms Service
+title: Start rápidos da API de serviço da Forms
+seo-title: Start rápidos da API de serviço da Forms
 description: 'null'
 seo-description: 'null'
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Start rápidos da API do Forms Service {#forms-service-api-quick-starts}
+# Start rápidos da API de serviço da Forms {#forms-service-api-quick-starts}
 
-Os seguintes Start rápidos estão disponíveis para o serviço de Formulários:
+Os seguintes Start rápidos estão disponíveis para o serviço Forms:
 
 [Start rápido (modo SOAP): Como renderizar um formulário PDF interativo usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
 
@@ -34,15 +34,15 @@ Os seguintes Start rápidos estão disponíveis para o serviço de Formulários:
 
 [Start rápido (modo SOAP): Como renderizar um formulário HTML com uma barra de ferramentas personalizada usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Start rápido (modo SOAP): Manuseio de formulários PDF enviados como XML usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Start rápido (modo SOAP): Tratamento de PDF forms enviados como XML usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Start rápido (modo SOAP): Como manipular formulários PDF enviados como PDF usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Start rápido (modo SOAP): Manuseio de PDF forms enviados como PDF usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Start rápido (modo SOAP): Tratamento de formulários HTML enviados como XML usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
 [Start rápido (modo SOAP): Criação de Documentos PDF com dados XML enviados usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[Start rápido (modo SOAP): Pré-preenchimento de formulários com layouts flutuantes usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Start rápido (modo SOAP): Pré-preencher o Forms com layouts flutuantes usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Start rápido (modo SOAP): Manuseio de um formulário contendo um script de cálculo usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
@@ -50,9 +50,9 @@ Os seguintes Start rápidos estão disponíveis para o serviço de Formulários:
 
 [Start rápido (modo SOAP): Renderização por valor usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Start rápido (modo SOAP): Transmissão de documentos ao serviço de formulários usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Start rápido (modo SOAP): Transmissão de documentos ao serviço Forms usando a API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-A lógica do aplicativo que usa a API de serviço do Forms é implementada como servlets Java. As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+A lógica do aplicativo que usa a API de serviço da Forms é implementada como servlets Java. As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ A lógica do aplicativo que usa a API de serviço do Forms é implementada como 
 
 ## Start rápido (modo SOAP): Como renderizar um formulário PDF interativo usando a API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
-O exemplo de código a seguir renderiza um formulário PDF interativo chamado *Loan.xdp* para um navegador da Web do cliente. Um arquivo é anexado ao formulário. Observe que o design de formulário faz parte de um aplicativo e é referenciado usando o valor do URI raiz do conteúdo `repository:///`. (Consulte [Renderização de formulários](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)PDF interativos.)
+O exemplo de código a seguir renderiza um formulário PDF interativo chamado *Loan.xdp* para um navegador da Web do cliente. Um arquivo é anexado ao formulário. Observe que o design de formulário faz parte de um aplicativo e é referenciado usando o valor do URI raiz do conteúdo `repository:///`. (Consulte [Renderização de PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)interativos.)
 
 ```as3
  /* 
@@ -204,7 +204,7 @@ O exemplo de código a seguir renderiza um formulário PDF interativo chamado *L
 
 ## Start rápido (modo SOAP): Como renderizar um formulário no cliente usando a API Java {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
 
-O exemplo de código a seguir renderiza um formulário chamado *Loan.xdp *no cliente usando a API Java do serviço Forms. Observe que o design de formulário faz parte de um aplicativo e é referenciado usando o valor do URI raiz do conteúdo `repository:///`. (Consulte [Renderização de formulários no cliente](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
+O exemplo de código a seguir renderiza um formulário chamado *Loan.xdp *no cliente usando a API Java de serviço da Forms. Observe que o design de formulário faz parte de um aplicativo e é referenciado usando o valor do URI raiz do conteúdo `repository:///`. (Consulte [Renderização do Forms no Cliente](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
 ```as3
  /* 
@@ -473,7 +473,7 @@ O exemplo de código a seguir renderiza um Guia (obsoleto) chamado *TLALifeClaim
 
 ## Start rápido (modo SOAP): Como renderizar um formulário com base em fragmentos usando a API Java {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
 
-O exemplo de código a seguir renderiza um formulário baseado em fragmentos. O nome do design de formulário é *PurchaseOrderDynamic.xdp* e está localizado no repositório AEM Forms (o arquivo XDP é armazenado em uma pasta chamada FormsFolder localizada no repositório). Além disso, os fragmentos aos quais o formulário POFragment faz referência também devem estar localizados no repositório. (Consulte [Renderização de formulários com base em fragmentos](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
+O exemplo de código a seguir renderiza um formulário baseado em fragmentos. O nome do design de formulário é *PurchaseOrderDynamic.xdp* e está localizado no repositório AEM Forms (o arquivo XDP é armazenado em uma pasta chamada FormsFolder localizada no repositório). Além disso, os fragmentos aos quais o formulário POFragment faz referência também devem estar localizados no repositório. (Consulte [Renderização do Forms com base em fragmentos](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
 
 ```as3
  /* 
@@ -606,7 +606,7 @@ O exemplo de código a seguir renderiza um formulário baseado em fragmentos. O 
 
 ## Start rápido (modo SOAP): Como renderizar um formulário habilitado para direitos usando a API Java {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
 
-O exemplo de código a seguir renderiza um formulário habilitado para direitos em um navegador da Web do cliente. Os direitos de uso definidos neste exemplo de código permitem que um usuário adicione comentários no formulário e salve os dados do formulário. (Consulte [Renderizando Formulários](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms)Ativados Por Direitos.)
+O exemplo de código a seguir renderiza um formulário habilitado para direitos em um navegador da Web do cliente. Os direitos de uso definidos neste exemplo de código permitem que um usuário adicione comentários no formulário e salve os dados do formulário. (Consulte [Renderização de Forms](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms)com direitos ativados.)
 
 ```as3
  /* 
@@ -743,7 +743,7 @@ O exemplo de código a seguir renderiza um formulário habilitado para direitos 
 
 ## Start rápido (modo SOAP): Como renderizar um formulário HTML usando a API Java {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}
 
-O exemplo de código a seguir renderiza um formulário HTML usando a API Java do serviço Forms. Uma barra de ferramentas é adicionada ao formulário HTML e dois anexos de arquivo. Além disso, o valor do agente do usuário é obtido do `HttpServletRequest` objeto. (Consulte [Renderizar formulários como HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
+O exemplo de código a seguir renderiza um formulário HTML usando a API Java do serviço Forms. Uma barra de ferramentas é adicionada ao formulário HTML e dois anexos de arquivo. Além disso, o valor do agente do usuário é obtido do `HttpServletRequest` objeto. (Consulte [Renderização do Forms como HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
 
 ```as3
  /* 
@@ -904,7 +904,7 @@ O exemplo de código a seguir renderiza um formulário HTML usando a API Java do
 
 ## Start rápido (modo SOAP): Renderização de um formulário HTML que usa um arquivo CSS usando a API Java {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
 
-O exemplo de código a seguir renderiza um formulário HTML usando a API do cliente do serviço Forms. O nome do arquivo CSS personalizado referenciado é *custom.css*. (Consulte [Renderização de formulários HTML usando arquivos](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files)CSS personalizados.)
+O exemplo de código a seguir renderiza um formulário HTML usando a API do cliente de serviço da Forms. O nome do arquivo CSS personalizado referenciado é *custom.css*. (Consulte [Renderização de HTML Forms usando arquivos](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files)CSS personalizados.)
 
 ```as3
  /* 
@@ -1059,7 +1059,7 @@ O exemplo de código a seguir renderiza um formulário HTML usando a API do clie
 
 ## Start rápido (modo SOAP): Como renderizar um formulário HTML com uma barra de ferramentas personalizada usando a API Java {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
-O exemplo de código a seguir renderiza um formulário HTML com uma barra de ferramentas exibida em francês. O local do fscmenu.xml é C:\Adobe (essa pasta deve estar no servidor que hospeda os formulários AEM). Observe que o valor de localidade é `fr_FR`. A seção que discute como renderizar um formulário HTML com uma barra de ferramentas personalizada mostra a sintaxe do arquivo fscmenu.xml usada neste start rápido. (Consulte [Renderização de formulários HTML com barras de ferramentas](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars)personalizadas.)
+O exemplo de código a seguir renderiza um formulário HTML com uma barra de ferramentas exibida em francês. O local do fscmenu.xml é C:\Adobe  (essa pasta deve estar no servidor que hospeda o AEM Forms). Observe que o valor de localidade é `fr_FR`. A seção que discute como renderizar um formulário HTML com uma barra de ferramentas personalizada mostra a sintaxe do arquivo fscmenu.xml usada neste start rápido. (Consulte [Renderização de HTML Forms com barras de ferramentas](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars)personalizadas.)
 
 ```as3
  /* 
@@ -1213,9 +1213,9 @@ O exemplo de código a seguir renderiza um formulário HTML com uma barra de fer
  
 ```
 
-## Start rápido (modo SOAP): Manuseio de formulários PDF enviados como XML usando a API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Start rápido (modo SOAP): Tratamento de PDF forms enviados como XML usando a API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
-O exemplo de código a seguir trata um formulário enviado como XML. O valor do tipo de conteúdo passado para o `processFormSubmission` método é `CONTENT_TYPE=text/xml`. Os valores que correspondem aos campos nomeados `mortgageAmount`, `lastName`e `firstName` são exibidos. Um método definido pelo usuário nomeado `getNodeText` é usado neste start rápido. Aceita uma `org.w3c.dom.Document` instância e um valor de string que especifica o nome do nó. Esse método retorna um valor de string que representa o valor do nó. (Consulte [Manuseio De Formulários](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Enviados.)
+O exemplo de código a seguir trata um formulário enviado como XML. O valor do tipo de conteúdo passado para o `processFormSubmission` método é `CONTENT_TYPE=text/xml`. Os valores que correspondem aos campos nomeados `mortgageAmount`, `lastName`e `firstName` são exibidos. Um método definido pelo usuário nomeado `getNodeText` é usado neste start rápido. Aceita uma `org.w3c.dom.Document` instância e um valor de string que especifica o nome do nó. Esse método retorna um valor de string que representa o valor do nó. (Consulte [Manuseio do Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms)enviado.)
 
 ```as3
  /* 
@@ -1382,9 +1382,9 @@ O exemplo de código a seguir trata um formulário enviado como XML. O valor do 
 >
 >Ao usar um `com.adobe.idp.Document` objeto e um objeto `org.w3c.dom.Document` no mesmo aplicativo, qualifice-se totalmente `org.w3c.dom.Document`.
 
-## Start rápido (modo SOAP): Como manipular formulários PDF enviados como PDF usando a API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Start rápido (modo SOAP): Manuseio de PDF forms enviados como PDF usando a API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
-O exemplo de código a seguir trata um formulário enviado como dados PDF. O valor do tipo de conteúdo passado para o `processFormSubmission` método é `CONTENT_TYPE=application/pdf`. O formulário enviado é salvo como um arquivo PDF chamado *tempPDF.pdf*. Além disso, como o formulário é enviado como PDF, os anexos de arquivo podem ser recuperados. Todos os anexos de arquivo são salvos como arquivos JPEG. (Consulte [Manuseio De Formulários](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Enviados.)
+O exemplo de código a seguir trata um formulário enviado como dados PDF. O valor do tipo de conteúdo passado para o `processFormSubmission` método é `CONTENT_TYPE=application/pdf`. O formulário enviado é salvo como um arquivo PDF chamado *tempPDF.pdf*. Além disso, como o formulário é enviado como PDF, os anexos de arquivo podem ser recuperados. Todos os anexos de arquivo são salvos como arquivos JPEG. (Consulte [Manuseio do Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms)enviado.)
 
 ```as3
  /* 
@@ -1534,7 +1534,7 @@ O exemplo de código a seguir trata um formulário enviado como dados PDF. O val
 
 ## Start rápido (modo SOAP): Tratamento de formulários HTML enviados como XML usando a API Java {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
-O exemplo de código a seguir trata um formulário HTML enviado como dados XML. O valor do tipo de conteúdo passado para o `processFormSubmission` método é `CONTENT_TYPE=application/x-www-form-urlencoded`.Os valores que correspondem aos campos nomeados `mortgageAmount`, `lastName`e `firstName` são exibidos. Um método definido pelo usuário nomeado `getNodeText` é usado neste start rápido. Aceita uma `org.w3c.dom.Document` instância e um valor de string que especifica o nome do nó. Esse método retorna um valor de string que representa o valor do nó. (Consulte [Manuseio De Formulários](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Enviados.)
+O exemplo de código a seguir trata um formulário HTML enviado como dados XML. O valor do tipo de conteúdo passado para o `processFormSubmission` método é `CONTENT_TYPE=application/x-www-form-urlencoded`.Os valores que correspondem aos campos nomeados `mortgageAmount`, `lastName`e `firstName` são exibidos. Um método definido pelo usuário nomeado `getNodeText` é usado neste start rápido. Aceita uma `org.w3c.dom.Document` instância e um valor de string que especifica o nome do nó. Esse método retorna um valor de string que representa o valor do nó. (Consulte [Manuseio do Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms)enviado.)
 
 ```as3
  /* 
@@ -1694,7 +1694,7 @@ O exemplo de código a seguir trata um formulário HTML enviado como dados XML. 
 
 ## Start rápido (modo SOAP): Criação de Documentos PDF com dados XML enviados usando a API Java {#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api}
 
-O exemplo de código Java a seguir trata dados de formulário enviados como XML. Os dados do formulário são recuperados do envio do formulário usando a API de formulários e enviados para o serviço de Saída. Os dados do formulário e um design de formulário são usados para criar um documento PDF não interativo. O documento PDF não interativo é armazenado em um nó do Content Services (obsoleto) chamado `/Company Home/Test Directory`. O nome do formulário é criado dinamicamente. Ou seja, o nome e o sobrenome do usuário são usados para nomear o arquivo PDF. O identificador de recurso do novo conteúdo é gravado no navegador da Web do cliente. (Consulte [Criação de Documentos PDF com dados](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data)XML enviados.)
+O exemplo de código Java a seguir trata dados de formulário enviados como XML. Os dados do formulário são recuperados do envio do formulário usando a API Forms e enviados para o serviço de Saída. Os dados do formulário e um design de formulário são usados para criar um documento PDF não interativo. O documento PDF não interativo é armazenado em um nó do Content Services (obsoleto) chamado `/Company Home/Test Directory`. O nome do formulário é criado dinamicamente. Ou seja, o nome e o sobrenome do usuário são usados para nomear o arquivo PDF. O identificador de recurso do novo conteúdo é gravado no navegador da Web do cliente. (Consulte [Criação de Documentos PDF com dados](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data)XML enviados.)
 
 ```as3
  /* 
@@ -1964,15 +1964,15 @@ O exemplo de código Java a seguir trata dados de formulário enviados como XML.
  }
 ```
 
-## Start rápido (modo SOAP): Pré-preenchimento de formulários com layouts flutuantes usando a API Java {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
+## Start rápido (modo SOAP): Pré-preencher o Forms com layouts flutuantes usando a API Java {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
 
 O exemplo de código a seguir pré-preenche um formulário com uma fonte de dados dinâmica. Ou seja, a fonte de dados é criada em tempo de execução e não está contida em um arquivo XML ou criada durante o tempo de design. Este exemplo de código contém três métodos definidos pelo usuário:
 
 * `createDataSource`: Cria um `org.w3c.dom.Document` objeto que representa a fonte de dados usada para pré-preencher o formulário. Esse método definido pelo usuário retorna o `org.w3c.dom.Document` objeto.
 * `convertDataSource`: Converte um `org.w3c.dom.Document` objeto em um `com.adobe.idp.Document` objeto. Esse método aceita um `org.w3c.dom.Document` objeto como parâmetro de entrada e retorna um `com.adobe.idp.Document` objeto.
-* `renderPOForm`: Usa a API Java do serviço Forms para renderizar um formulário de pedido de compra dinâmico. O `com.adobe.idp.Document` objeto retornado pelo `convertDataSource` método é usado para pré-preencher o formulário.
+* `renderPOForm`: Usa a API Java de serviço da Forms para renderizar um formulário de pedido de compra dinâmico. O `com.adobe.idp.Document` objeto retornado pelo `convertDataSource` método é usado para pré-preencher o formulário.
 
-   Todos esses métodos são chamados de dentro do `doPost` método do servlet Java. (Consulte [Pré-preenchimento de formulários com layouts](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts)flutuantes.)
+   Todos esses métodos são chamados de dentro do `doPost` método do servlet Java. (Consulte [Pré-preencher o Forms com layouts](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts)flutuantes.)
 
 ```java
 /*
@@ -2369,7 +2369,7 @@ O exemplo de código a seguir processa um formulário que contém um script de c
 
 ## Start rápido (modo SOAP): Otimização do desempenho usando a API Java {#quick-start-soap-mode-optimizing-performance-using-the-java-api}
 
-O exemplo de código a seguir otimiza o desempenho ao configurar as opções de cache, independente e linearizada. Um arquivo linearizado é otimizado para delivery na Web. (Consulte [Otimizando o desempenho do serviço](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service)de formulários.)
+O exemplo de código a seguir otimiza o desempenho ao configurar as opções de cache, independente e linearizada. Um arquivo linearizado é otimizado para delivery na Web. (Consulte [Otimizando o desempenho do serviço](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service)Forms.)
 
 ```as3
  /* 
@@ -2497,7 +2497,7 @@ O exemplo de código a seguir otimiza o desempenho ao configurar as opções de 
 
 ## Start rápido (modo SOAP): Renderização por valor usando a API Java {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
 
-O start rápido do Java a seguir renderiza um formulário PDF interativo com base em um design de formulário chamado *Loan.xdp* por valor. Observe que o design de formulário é usado para preencher um `com.adobe.idp.Document` objeto chamado* inputXDP*. (Consulte [Renderizando Formulários Por Valor](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
+O start rápido do Java a seguir renderiza um formulário PDF interativo com base em um design de formulário chamado *Loan.xdp* por valor. Observe que o design de formulário é usado para preencher um `com.adobe.idp.Document` objeto chamado* inputXDP*. (Consulte [Renderizando o Forms por valor](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
 ```as3
  /* 
@@ -2622,9 +2622,9 @@ O start rápido do Java a seguir renderiza um formulário PDF interativo com bas
  }
 ```
 
-## Start rápido (modo SOAP): Transmissão de documentos ao serviço de formulários usando a API Java {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
+## Start rápido (modo SOAP): Transmissão de documentos ao serviço Forms usando a API Java {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
 
-O seguinte start rápido do Java recupera o arquivo Loan.xdp do Content Services (obsoleto). Este arquivo XDP está localizado no espaço `/Company Home/Form Designs`. O arquivo XDP é retornado em uma `com.adobe.idp.Document` instância. A `com.adobe.idp.Document` instância é passada para o serviço Forms. O formulário interativo é gravado em um navegador da Web do cliente. (Consulte [Transmissão de Documentos ao serviço](/help/forms/developing/passing-documents-forms-service.md)de formulários.)
+O seguinte start rápido do Java recupera o arquivo Loan.xdp do Content Services (obsoleto). Este arquivo XDP está localizado no espaço `/Company Home/Form Designs`. O arquivo XDP é retornado em uma `com.adobe.idp.Document` instância. A `com.adobe.idp.Document` instância é passada para o serviço Forms. O formulário interativo é gravado em um navegador da Web do cliente. (Consulte [Passando Documentos para o serviço](/help/forms/developing/passing-documents-forms-service.md)Forms.)
 
 ```as3
  /* 
