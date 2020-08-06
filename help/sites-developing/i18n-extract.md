@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser
 * Arquivos de origem JavaScript
 * Representações XML de recursos SVN (nós JCR)
 
-## Configurando a extração de string {#configuring-string-extraction}
+## Configurando a Extração de string {#configuring-string-extraction}
 
 Configure como a ferramenta xgettext-maven-plugin extrai strings para o seu projeto.
 
@@ -65,8 +68,8 @@ A parte do padrão de uma regra é usada para corresponder aos nomes dos arquivo
 | Prefixo | Efeito |
 |---|---|
 | / | Indica um caminho JCR. Portanto, esse prefixo corresponde arquivos abaixo do diretório jcr_root. |
-|  &amp;ast; | Indica um arquivo regular no sistema de arquivos. |
-| nenhum | Nenhum prefixo ou padrão que começa com um nome de pasta ou arquivo indica um arquivo regular no sistema de arquivos. |
+| &amp;ast; | Indica um arquivo regular no sistema de arquivos. |
+| nenhum | Nenhum prefixo, ou padrão que começa com um nome de pasta ou arquivo, indica um arquivo regular no sistema de arquivos. |
 
 Quando usado em um padrão, o caractere / indica um subdiretório e o &amp;ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
 
@@ -97,7 +100,7 @@ Quando usado em um padrão, o caractere / indica um subdiretório e o &amp;ast; 
  </tbody> 
 </table>
 
-### Extração das strings {#extracting-the-strings}
+### Extração das strings  {#extracting-the-strings}
 
 sem POM:
 
@@ -139,5 +142,5 @@ mvn xgettext:extract
 * `parserwarn.log`: avisos do analisador (se houver), por exemplo, problemas com o analisador js
 * `potentials.xliff`: Candidatos &quot;potenciais&quot; que não são extraídos, mas podem ser strings legíveis para humanos que precisam de tradução (podem ser ignorados, ainda produzem uma enorme quantidade de falsos positivos)
 * `strings.xliff`: arquivo xliff nivelado, a ser importado para ALF
-* `backrefs.txt`: permite uma pesquisa rápida de locais de código fonte para uma determinada string
+* `backrefs.txt`: permite uma pesquisa rápida de locais de código-fonte para uma determinada string
 
