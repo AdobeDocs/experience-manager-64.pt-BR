@@ -1,6 +1,6 @@
 ---
-title: Suporte ao Camera Raw
-description: Saiba como ativar o suporte do Camera Raw nos ativos Adobe Experience Manager.
+title: apoio Camera Raw
+description: Saiba como ativar o suporte Camera Raw no Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
@@ -13,13 +13,13 @@ ht-degree: 1%
 
 # Usar o Camera Raw para processar imagens {#camera-raw-support}
 
-Você pode ativar o suporte do Camera Raw para processar formatos de arquivo brutos, como CR2, NEF e RAF, e renderizar as imagens no formato JPEG. A funcionalidade é suportada nos Ativos do Adobe Experience Manager usando o pacote [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponível na Distribuição de software.
+Você pode ativar o suporte Camera Raw para processar formatos de arquivo brutos, como CR2, NEF e RAF, e renderizar as imagens no formato JPEG. A funcionalidade é suportada no Adobe Experience Manager Assets usando o pacote [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponível na Distribuição de software.
 
 >[!NOTE]
 >
 >A funcionalidade suporta apenas execuções JPEG. É compatível com Windows 64 bits, Mac OS e RHEL 7.x.
 
-Para habilitar o suporte ao Camera Raw nos ativos Adobe Experience Manager, siga estas etapas:
+Para habilitar o suporte Camera Raw no Adobe Experience Manager Assets, siga estas etapas:
 
 1. Baixe o pacote [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw da Distribuição de software.
 
@@ -38,9 +38,9 @@ Para habilitar o suporte ao Camera Raw nos ativos Adobe Experience Manager, siga
 
    ![calúnia](assets/chlimage_1-335.png)
 
-1. No painel lateral, adicione a etapa **[!UICONTROL Camera Raw/DNG Handler]** abaixo da etapa de criação **[!UICONTROL de]** Miniaturas.
+1. No painel lateral, adicione a etapa **[!UICONTROL Camera Raw/Manipulador]** DNG abaixo da etapa de criação **[!UICONTROL de]** Miniaturas.
 
-1. Na etapa **[!UICONTROL Camera Raw/DNG Handler]** , adicione a seguinte configuração na guia **[!UICONTROL Argumentos]** :
+1. Na etapa Manipulador **[!UICONTROL de DNG/]** Camera Raw, adicione a seguinte configuração na guia **[!UICONTROL Argumentos]** :
 
    * **[!UICONTROL Tipos]** Mime: `image/dng` e `image/x-raw-(.*)`
    * **[!UICONTROL Comando]**:
@@ -56,9 +56,9 @@ Para habilitar o suporte ao Camera Raw nos ativos Adobe Experience Manager, siga
 
 >[!NOTE]
 >
->Certifique-se de que a configuração acima seja a mesma do Ativo de atualização de DAM de **[!UICONTROL amostra com a Camera RAW e a configuração da Etapa]** de manuseio de DNG.
+>Certifique-se de que a configuração acima seja a mesma do Amostra de ativo de atualização de DAM com configuração Camera Raw e DNG Handling Step **** .
 
-Agora você pode importar arquivos do Camera Raw para o AEM Assets. Depois de instalar o pacote Camera RAW e configurar o fluxo de trabalho necessário, a opção **[!UICONTROL Ajuste]** de imagem é exibida na lista dos painéis laterais.
+Agora você pode importar arquivos do Camera Raw para o AEM Assets. Depois de instalar o pacote Camera Raw e configurar o fluxo de trabalho necessário, a opção **[!UICONTROL Ajustar]** imagem é exibida na lista dos painéis laterais.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -68,7 +68,7 @@ Agora você pode importar arquivos do Camera Raw para o AEM Assets. Depois de in
 
 *Figura: Use a opção para fazer edições leves em suas imagens*
 
-Depois de salvar as edições em uma imagem do Camera Raw, uma nova execução `AdjustedPreview.jpg` é gerada para a imagem. Para outros tipos de imagem, exceto o Camera Raw, as alterações são refletidas em todas as execuções.
+Depois de salvar as edições em uma imagem Camera Raw, uma nova execução `AdjustedPreview.jpg` é gerada para a imagem. Para outros tipos de imagem, exceto Camera Raw, as alterações são refletidas em todas as execuções.
 
 ## Práticas recomendadas, problemas conhecidos e limitações {#best-practices}
 
@@ -76,4 +76,4 @@ A funcionalidade tem as seguintes limitações:
 
 * A funcionalidade suporta apenas execuções JPEG. É compatível com Windows 64 Bit, Mac OS e RHEL 7.x.
 * Não há suporte para o write-back de metadados nos formatos RAW e DNG.
-* A biblioteca do Camera Raw tem limitações em torno do total de pixels que pode ser processado por vez. Atualmente, ele pode processar no máximo 65000 pixels no lado longo de um arquivo ou 512 MP, independentemente do critério encontrado primeiro.
+* A biblioteca Camera Raw tem limitações em torno do total de pixels que pode ser processado de cada vez. Atualmente, ele pode processar no máximo 65000 pixels no lado longo de um arquivo ou 512 MP, independentemente do critério encontrado primeiro.
