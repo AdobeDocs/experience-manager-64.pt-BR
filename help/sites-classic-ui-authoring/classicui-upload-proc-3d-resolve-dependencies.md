@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 61%
 
 ---
 
@@ -42,6 +45,7 @@ As dependências do arquivo de modelo 3D principal, como os arquivos de mapa de 
 
       1. Observe os caminhos e nomes de arquivos ausentes.
       1. Próximo do canto superior direito da página de propriedades, toque em **[!UICONTROL Fechar]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. O ativo recém enviado por upload listado corretamente como um ativo referenciado.
 
    * **[!UICONTROL Ignorar as dependências]**.
