@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 8%
 
 ---
 
@@ -25,9 +28,9 @@ Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece lo
 
 >[!NOTE]
 >
->Se um ativo já tiver sido publicado, você usará o AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é &quot;perdido&quot; para o AEM e não pode ser despublicado. Portanto, como prática recomendada, cancele a publicação de ativos primeiro antes de movê-los para uma pasta diferente.
+>Se um ativo já estiver publicado, você usará AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é &quot;perdido&quot; para AEM e não pode ser despublicado. Portanto, como prática recomendada, cancele a publicação de ativos primeiro antes de movê-los para uma pasta diferente.
 
-Se você pretende publicar ativos de vídeo imediatamente após a codificação, certifique-se de que a codificação esteja concluída. Quando os vídeos ainda estão sendo codificados, o sistema permite que você saiba que um fluxo de trabalho de processamento de vídeo está em andamento. Quando a codificação de vídeo estiver concluída, você deverá visualizar as execuções de vídeo. Nesse ponto, é seguro publicar os vídeos sem incorrer em erros de publicação.
+Se você pretende publicar ativos de vídeo imediatamente após a codificação, certifique-se de que a codificação esteja concluída. Quando os vídeos ainda estão sendo codificados, o sistema permite que você saiba que um fluxo de trabalho de processamento de vídeo está em andamento. Quando a codificação de vídeo estiver concluída, você poderá pré-visualização as execuções de vídeo. Nesse ponto, é seguro publicar os vídeos sem incorrer em erros de publicação.
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
@@ -36,15 +39,16 @@ Consulte também [Incorporação do visualizador de vídeo em uma página da Web
 >[!NOTE]
 >
 >* Os ativos devem ser publicados para usar o URL. Se os ativos não forem publicados, copiar e colar o URL em um navegador da Web não funcionará.
->* As predefinições de imagens e as predefinições do visualizador devem ser ativadas e publicadas para entrega ao vivo.
+>* As predefinições de imagens e as predefinições do visualizador devem ser ativadas e publicadas para o delivery ao vivo.
+
 >
 
 
 
 Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicação de ativos.](managing-assets-touch-ui.md)
 
-## Entrega HTTP/2 de ativos do Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## delivery HTTP/2 de ativos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-O AEM agora oferece suporte à entrega de todo o conteúdo de Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Esse método de entrega melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os ativos do Dynamic Media.
+AEM agora suporta o delivery de todo o conteúdo de Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos de Dynamic Media.
 
-Consulte a entrega de conteúdo [HTTP/2 com perguntas](/help/sites-administering/scene7-http2faq.md) frequentes para saber mais.
+Consulte Perguntas frequentes sobre o delivery [HTTP/2 sobre conteúdo](/help/sites-administering/scene7-http2faq.md) para saber mais.
