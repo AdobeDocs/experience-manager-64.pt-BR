@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Pré-requisitos {#prerequisites}
 
-O componente de link é um membro da categoria do Document Services. Certifique-se de que a categoria do Document Services esteja visível no navegador de componentes do AEM. Se a categoria não estiver listada, siga as etapas listadas em [Ativar componentes](/help/forms/using/enabling-forms-portal-components.md)do portal de formulários.
+O componente de link é um membro da categoria de Serviços do Documento. Certifique-se de que a categoria dos Serviços de Documento esteja visível no navegador de componentes AEM. Se a categoria não estiver listada, siga as etapas listadas em [Ativar componentes](/help/forms/using/enabling-forms-portal-components.md)do portal de formulários.
 
 ## Componente do link {#link-component}
 
-O componente Link permite que os autores do portal de formulários criem um link para um formulário adaptável de qualquer lugar em uma página. O componente Link está disponível na seção Document Services no navegador de componentes.
+O componente Link permite que os autores do portal de formulários criem um link para um formulário adaptável de qualquer lugar em uma página. O componente Link está disponível na seção Serviços de Documento no navegador de componentes.
 
 Execute as seguintes etapas para adicionar um componente Link à página:
 
@@ -40,7 +43,7 @@ Execute as seguintes etapas para adicionar um componente Link à página:
 
    * **Caminho** do ativo: Caminho do repositório no qual o ativo é armazenado.
    * **Tipo** de renderização: O formato de renderização — PDF, HTML ou Automático. O tipo de renderização automática detecta o ambiente do usuário e, portanto, renderiza o formulário como HTML ou PDF. Por exemplo, se o formulário for acessado de um dispositivo móvel, o tipo de renderização Automática renderizará o formulário em HTML.
-   * **** Enviar URL:  URL para o servlet onde os dados do formulário são enviados.
+   * **Enviar URL:**  URL para o servlet onde os dados do formulário são enviados.
    * **Perfil** HTML: Perfil para renderizar o formulário como HTML.
    * **Perfil** PDF: Perfil para renderizar o formulário como documento PDF.
 
@@ -54,6 +57,6 @@ Execute as seguintes etapas para adicionar um componente Link à página:
 * O URL de envio de um formulário pode ser especificado em vários locais e sua ordem de precedência é a seguinte:
 
    1. O URL de envio incorporado no formulário (no botão Enviar) tem a prioridade mais alta.
-   1. O URL de envio mencionado no Gerenciador de formulários tem prioridade média.
+   1. O URL de envio mencionado no Forms Manager tem prioridade média.
    1. O URL de envio mencionado no portal de formulários tem a prioridade mais baixa.
 
