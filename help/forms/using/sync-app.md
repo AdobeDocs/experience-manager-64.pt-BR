@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## Sincronizar o aplicativo {#synchronizing-the-app-1}
 
-Os formulários em seu aplicativo são baixados do servidor de formulários AEM. Os formulários são baixados nas guias Tarefa e Forms. Os rascunhos criados a partir de formulários são baixados na guia rascunhos e os rascunhos criados a partir do tarefa são baixados na guia tarefa. Para um formulário independente no servidor OSGi, os formulários e rascunhos são baixados nas guias Formulários e Rascunho, respectivamente.
+Os formulários no aplicativo são baixados do servidor AEM Forms. Os formulários são baixados nas guias Tarefa e Forms. Os rascunhos criados a partir de formulários são baixados na guia rascunhos e os rascunhos criados a partir do tarefa são baixados na guia tarefa. Para um formulário independente no servidor OSGi, os formulários e rascunhos são baixados nas guias Forms e Draft, respectivamente.
 
-Quando você preenche e envia um formulário, o formulário é carregado de volta ao servidor do AEM Forms instantaneamente se o aplicativo estiver online. Os formulários são obtidos do servidor quando o aplicativo é sincronizado. No entanto, os rascunhos são sincronizados com o servidor instantaneamente se o aplicativo estiver online.
+Quando você preenche e envia um formulário, o formulário é carregado de volta ao servidor da AEM Forms instantaneamente se o aplicativo estiver online. Os formulários são obtidos do servidor quando o aplicativo é sincronizado. No entanto, os rascunhos são sincronizados com o servidor instantaneamente se o aplicativo estiver online.
 
-Por padrão, quando você está online com o servidor do AEM Forms, seu aplicativo é sincronizado a cada 15 minutos. No entanto, você tem a opção de alterar a frequência de sincronização. Como alternativa, você pode sincronizar manualmente o aplicativo a qualquer momento.
+Quando você está online com o servidor AEM Forms, por padrão, seu aplicativo é sincronizado a cada 15 minutos. No entanto, você tem a opção de alterar a frequência de sincronização. Como alternativa, você pode sincronizar manualmente o aplicativo a qualquer momento.
 
 **Para sincronizar o aplicativo manualmente**
 
@@ -41,7 +44,7 @@ Toque no botão Sincronizar aplicativo ![de](assets/sync-app.png) sincronizaçã
 
 ### Especificações técnicas {#technical-specifications}
 
-* A lógica principal de enviar os dados do aplicativo offline para o servidor do AEM Forms está incluída em runtime/offline/util/offline.js.
+* A lógica principal de enviar os dados do aplicativo offline para o servidor AEM Forms está incluída em runtime/offline/util/offline.js.
 * Na função .js, a chamada para a função processOfflineSubmitedSavedTasks(...) envia as tarefas salvas / enviadas ao servidor. Também lida com erros ou conflitos no processo de sincronização. Se o envio de uma tarefa falhar, a tarefa no aplicativo será marcada como com falha. Além disso, a tarefa permanece em sua Caixa de saída.
 * As funções syncSubmitedTask() e syncSavedTask() executam operações em tarefas individuais.
 * A chamada para a função processOfflineSubmitedSavedTasks() é iniciada pelo componente de lista depois que um usuário seleciona para sincronizar o estado offline com o servidor ou uma sincronização automática pelo thread em segundo plano.
