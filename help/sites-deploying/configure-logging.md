@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
 
 # Registro{#logging}
 
-O AEM oferece a possibilidade de configurar:
+AEM oferta a possibilidade de configurar:
 
 * parâmetros globais para o serviço central de registro
 * solicitar o registro de dados; uma configuração de registro especializada para informações de solicitação
@@ -27,11 +30,11 @@ Estas são todas configurações [](/help/sites-deploying/configuring-osgi.md)OS
 
 >[!NOTE]
 >
->Fazer logon no AEM é baseado nos princípios do Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
+>Efetuar login AEM é baseado nos princípios Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
 
 ## Registro global {#global-logging}
 
-[A Configuração](/help/sites-deploying/osgi-configuration-settings.md) de registro do Apache Sling é usada para configurar o agente de registro raiz. Isso define as configurações globais para logon no AEM:
+[A Configuração](/help/sites-deploying/osgi-configuration-settings.md) de registro do Apache Sling é usada para configurar o agente de registro raiz. Isso define as configurações globais para logon AEM:
 
 * nível de registro
 * a localização do ficheiro de registro central
@@ -45,18 +48,18 @@ Estas são todas configurações [](/help/sites-deploying/configuring-osgi.md)OS
 
 ## Registradores e Escritores para Serviços Individuais {#loggers-and-writers-for-individual-services}
 
-Além das configurações globais de registro, o AEM permite que você defina configurações específicas para um serviço individual:
+Além das configurações globais de registro, AEM permite que você defina configurações específicas para um serviço individual:
 
-* nível de registro específico
+* o nível de registro específico
 * o local do arquivo de log individual
 * o número de versões a conservar
 * rotação de versões; tamanho máximo ou intervalo de tempo
 * o formato a ser usado ao gravar mensagens de registro
 * o agente de log (o serviço OSGi que fornece as mensagens de log)
 
-Isso permite que você canalize mensagens de log de um único serviço em um arquivo separado. Isto pode ser particularmente útil durante o desenvolvimento ou testes; por exemplo, quando você precisa de um nível de log aumentado para um serviço específico.
+Isso permite que você canal mensagens de log de um único serviço em um arquivo separado. Isto pode ser particularmente útil durante o desenvolvimento ou testes; por exemplo, quando você precisa de um nível de log aumentado para um serviço específico.
 
-O AEM usa o seguinte para gravar mensagens de registro no arquivo:
+AEM usa o seguinte para gravar mensagens de registro no arquivo:
 
 1. Um serviço **** OSGi (logger) grava uma mensagem de registro.
 1. Um **Logging Logger** pega essa mensagem e a formata de acordo com sua especificação.
@@ -82,7 +85,7 @@ Estes elementos estão ligados pelos seguintes parâmetros para os elementos apr
 
 ### Registradores e escritores padrão {#standard-loggers-and-writers}
 
-Alguns registradores e gravadores estão incluídos em uma instalação padrão do AEM.
+Alguns registradores e gravadores estão incluídos em uma instalação padrão AEM.
 
 O primeiro é um caso especial, pois controla os arquivos `request.log` e `access.log` :
 
