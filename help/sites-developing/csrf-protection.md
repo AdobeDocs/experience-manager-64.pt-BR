@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 translation-type: tm+mt
 source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
 # Quadro de proteção do QREF{#the-csrf-protection-framework}
 
-Além do Filtro de referenciador Apache Sling, a Adobe também fornece uma nova Estrutura de proteção CSRF para proteção contra esse tipo de ataque.
+Além do Filtro de Quem indicou Apache Sling, o Adobe também oferece uma nova Estrutura de Proteção CSRF para proteção contra esse tipo de ataque.
 
 A estrutura utiliza tokens para garantir que a solicitação do cliente seja legítima. Os tokens são gerados quando o formulário é enviado ao cliente e validado quando o formulário é enviado de volta ao servidor.
 
