@@ -1,8 +1,8 @@
 ---
 title: Pesquisar formulários e ativos
 seo-title: Pesquisar formulários e ativos
-description: Você pode pesquisar formulários e ativos em sua instância do AEM usando a pesquisa do AEM. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
-seo-description: Você pode pesquisar formulários e ativos em sua instância do AEM usando a pesquisa do AEM. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
+description: Você pode pesquisar formulários e ativos em sua instância AEM usando a pesquisa AEM. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
+seo-description: Você pode pesquisar formulários e ativos em sua instância AEM usando a pesquisa AEM. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 4%
 
 ---
 
 
 # Pesquisar formulários e ativos {#searching-for-forms-and-assets}
 
-Você pode pesquisar seus formulários ou ativos de formulário, usando uma string de texto ou uma string de texto junto com curingas. Você também pode restringir sua pesquisa usando os critérios disponíveis em várias categorias no painel Pesquisar.
+É possível pesquisar por formulários ou ativos de formulário, usando uma string de texto ou uma string de texto junto com curingas. Você também pode restringir sua pesquisa usando os critérios disponíveis em várias categorias no painel Pesquisar.
 
 Quando você seleciona um ou mais critérios e também especifica uma string de texto, a interseção do texto e dos critérios são retornados como resultados de pesquisa. Os resultados da pesquisa são tão bons quanto o formulário e os metadados do ativo fornecidos.
 
@@ -24,28 +27,28 @@ Clique em ![aem6forms_search](assets/aem6forms_search.png)para mostrar ou oculta
 
 ## Pesquisa básica {#basic-search}
 
-Uma pesquisa básica é a pesquisa padrão, executada sem especificar filtros. Uma pesquisa de texto completo em propriedades de metadados é realizada pelo AEM Forms.
+Uma pesquisa básica é a pesquisa padrão, executada sem especificar filtros. A AEM Forms realiza uma pesquisa de texto completo sobre propriedades de metadados.
 
-Para executar uma pesquisa básica, insira a consulta de pesquisa no campo de texto e pressione para retornar. Você também pode inserir o caractere curinga (&amp;ast;) para corresponder a qualquer número de caracteres.
+Para executar uma pesquisa básica, insira o query de pesquisa no campo de texto e pressione a tecla de retorno. Você também pode inserir o caractere curinga (&amp;ast;) para corresponder a qualquer número de caracteres.
 
-O Adobe Experience Manager pesquisa o texto inserido nas propriedades de metadados e retorna os resultados correspondentes. Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo para pesquisa.
+A Adobe Experience Manager pesquisa o texto inserido nas propriedades de metadados e retorna os resultados correspondentes. Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo para pesquisa.
 
 Observe os seguintes pontos sobre a pesquisa básica:
 
 * A pesquisa é realizada usando as propriedades de metadados do formulário e do ativo.
 * Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo para pesquisa.
-* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, quando você digita `geometrixx`, ativos com títulos `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` são exibidos nos resultados da pesquisa.
+* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, quando você digita `geometrixx`, os ativos com títulos `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` são exibidos nos resultados da pesquisa.
 
-* Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando strings parciais, use &amp;ast; coringa. No entanto, se a consulta de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
-* Espaços extras são respeitados e não são aparados durante a pesquisa. Por exemplo, não `My form` é a mesma consulta de pesquisa `My form`.
+* Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando strings parciais, use &amp;ast; coringa. Entretanto, se o query de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
+* Espaços extras são respeitados e não são aparados durante a pesquisa. Por exemplo, não `My form` é o mesmo query de pesquisa `My form`.
 
 * Se os valores de dados e exibição dos campos nas propriedades de metadados forem diferentes, não será possível usar os valores de exibição como parâmetros de pesquisa. Por exemplo, não é possível pesquisar com base em um status, como Modificado ou Publicado, pois essas propriedades são armazenadas em um formato diferente.
 
 ## Advanced search {#advanced-search}
 
-Nos critérios de pesquisa, além da consulta, você pode especificar alguns parâmetros de pesquisa para tornar a pesquisa básica mais eficiente e focalizada.
+Nos critérios de pesquisa, além do query, você pode especificar alguns parâmetros de pesquisa para tornar a pesquisa básica mais eficiente e focalizada.
 
-![Pesquisar em campos e parâmetros ou filtros para pesquisa de formulários e ativos do AEM](assets/search_forms_assets.png)
+![Campo de pesquisa e parâmetros ou filtros para pesquisa AEM formulário e ativos](assets/search_forms_assets.png)
 
 ### Caminho do ativo {#asset-path}
 
