@@ -24,7 +24,7 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de 
 
 >[!NOTE]
 >
->A partir de 5 de agosto de 2011, a Adobe está migrando clientes do Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é migrar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software pela Adobe.
+>A partir de 5 de agosto de 2011, a Adobe está migrando clientes do Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é migrar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software.
 
 [Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -42,11 +42,11 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de 
 
 [Start rápido (modo SOAP): Configuração de permissões de serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado em JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
