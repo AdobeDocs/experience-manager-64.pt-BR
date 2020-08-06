@@ -23,8 +23,8 @@ A página de detalhes da tarefa contém informações sobre uma tarefa e seus pr
 
 Você pode adicionar as seguintes informações à página de detalhes da tarefa:
 
-* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa na área de trabalho do [AEM Forms Descrição](/help/forms/using/html-workspace-json-object-description.md)do objeto JSON)
-* Informações disponíveis no objeto JSON de uma instância de processo (seção de instância de processo na área de trabalho do [AEM Forms Descrição](/help/forms/using/html-workspace-json-object-description.md)de objeto JSON)
+* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa na descrição [do objeto JSON do espaço de trabalho](/help/forms/using/html-workspace-json-object-description.md)AEM Forms)
+* Informações disponíveis no objeto JSON de uma instância do processo (seção da instância do processo na Descrição [do objeto JSON do espaço de trabalho](/help/forms/using/html-workspace-json-object-description.md)AEM Forms)
 
 Para personalizar a página de detalhes da tarefa:
 
@@ -85,6 +85,6 @@ Para personalizar a página de detalhes da tarefa:
 
 >[!NOTE]
 >
->Para personalizar a página de detalhes da tarefa com tarefas criadas na **guia Processo de Start **da área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Para personalizar a página de detalhes da tarefa com tarefas criadas na **guia Processo do Start **área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >Para adicionar novos estilos para as informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção de alterações *da interface do* usuário em Personalização [da](/help/forms/using/changing-locale-user-interface.md)Workspace.
