@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cbcfbe88-e60c-446c-bbfe-2509831d6c22
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 78%
 
 ---
 
@@ -25,5 +28,5 @@ Palcos são arquivos de cenas 3D leves que fornecem o ambiente de visualização
 
 O formato de arquivo do palco determina qual renderizador você pode usar com ele. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Se você pretende usar apenas o renderizador Rapid Refine™ padrão, qualquer formato de arquivo de estágio compatível é aceitável.
 
-Todas as configurações de renderização no AEM 3D, exceto o tipo e o tamanho da imagem de saída, devem ser pré-configurados e salvos no arquivo de palco antes de serem carregados no AEM.
+Todas as configurações de renderização em AEM 3D, exceto o tipo e o tamanho da imagem de saída, devem ser pré-configurados e salvos no arquivo de estágio antes de serem carregados para AEM.
 
