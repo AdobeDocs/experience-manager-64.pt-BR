@@ -1,8 +1,8 @@
 ---
 title: Configuração do uso de cookies
 seo-title: Configuração do uso de cookies
-description: O AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web
-seo-description: O AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web
+description: AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web
+seo-description: AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web
 uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Configuração do uso de cookies{#configuring-cookie-usage}
 
-O AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web:
+AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web:
 
 * Um serviço configurável do lado do servidor mantém uma lista de cookies que podem ser usados.
 * Uma API javascript permite que seu código javascript verifique se um cookie pode ser usado.
@@ -29,7 +29,7 @@ Use esse recurso para garantir que suas páginas estejam em conformidade com o c
 
 ## Configuração de cookies permitidos {#configuring-allowed-cookies}
 
-Configure o serviço de cancelamento do Adobe Granite para especificar como os cookies são usados em suas páginas da Web. A tabela a seguir descreve as propriedades que você pode configurar.
+Configure o serviço de cancelamento de Adobe Granite para especificar como os cookies são usados em suas páginas da Web. A tabela a seguir descreve as propriedades que você pode configurar.
 
 Para configurar o serviço, você pode usar o Console [da](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). A tabela a seguir descreve as propriedades necessárias para qualquer um dos métodos. Para uma configuração OSGi, o PID do serviço é `com.adobe.granite.optout`.
 
@@ -41,7 +41,7 @@ Para configurar o serviço, você pode usar o Console [da](/help/sites-deploying
 
 ## Validação do uso de cookies {#validating-cookie-usage}
 
-Use o javascript do lado do cliente para ligar para o Adobe Granite Opt-Out Service para verificar se você pode usar um cookie. Use o objeto javascript Granite.OptOutUtil para executar qualquer uma das seguintes tarefas:
+Use o javascript do lado do cliente para ligar para o serviço de cancelamento de Adobe Granite para verificar se você pode usar um cookie. Use o objeto javascript Granite.OptOutUtil para executar qualquer uma das seguintes tarefas:
 
 * Obtenha uma lista de nomes de cookies que indicam que o usuário não concorda em usar cookies para fins de rastreamento.
 * Obtenha uma lista de cookies que podem ser usados.
