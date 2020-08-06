@@ -49,7 +49,7 @@ Se houver vários campos de assinatura localizados em um documento PDF, é recom
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de assinatura, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de assinatura, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Adicionar campos de assinatura {#adding-signature-fields}
 
@@ -59,7 +59,7 @@ Você pode adicionar um campo de assinatura de forma programática usando a API 
 
 >[!NOTE]
 >
->Alguns tipos de documentos PDF não permitem que você adicione um campo de assinatura de forma programática. Para obter mais informações sobre o serviço de assinatura e como adicionar campos de assinatura, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Alguns tipos de documentos PDF não permitem que você adicione um campo de assinatura de forma programática. Para obter mais informações sobre o serviço de assinatura e como adicionar campos de assinatura, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -80,8 +80,8 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
 **Criar um cliente de assinatura**
 
@@ -101,7 +101,7 @@ Depois que o serviço de assinatura adicionar um campo de assinatura ao document
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -167,7 +167,7 @@ Para adicionar um campo de assinatura usando a API de assinatura (serviço da We
 1. Criar um cliente de assinatura
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -207,9 +207,9 @@ Para adicionar um campo de assinatura usando a API de assinatura (serviço da We
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Recuperando Nomes de Campos de Assinatura {#retrieving-signature-field-names}
 
@@ -217,7 +217,7 @@ Você pode recuperar os nomes de todos os campos de assinatura localizados em um
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de assinatura, consulte Referência de [serviços para formulários AEM](https://www.adobe.com/go/learn_aemforms_services_63)
+>Para obter mais informações sobre o serviço de assinatura, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -237,10 +237,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um cliente de assinatura**
 
@@ -260,7 +260,7 @@ Recupere um documento PDF que contenha campos de assinatura.
 
 [Recuperar campo de assinatura usando a API de serviço da Web](digitally-signing-certifying-documents.md#retrieve-signature-field-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -295,7 +295,7 @@ Recupere nomes de campos de assinatura usando a API de assinatura (Java):
 
 [Start rápido (modo SOAP): Recuperar nomes de campos de assinatura usando a API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -314,7 +314,7 @@ Recuperar nomes de campos de assinatura usando a API de assinatura (serviço da 
 1. Criar um cliente de assinatura
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -341,9 +341,9 @@ Recuperar nomes de campos de assinatura usando a API de assinatura (serviço da 
 
 [Recuperando Nomes de Campos de Assinatura](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Modificando campos de assinatura {#modifying-signature-fields}
 
@@ -357,7 +357,7 @@ Esta seção explica como modificar um campo de assinatura alterando o dicionár
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de assinatura e a modificação dos campos de assinatura, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de assinatura e a modificação dos campos de assinatura, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -379,8 +379,8 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
 Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do LiveCycle.
 
@@ -422,11 +422,11 @@ Depois de criar um cliente de serviço de assinatura, recuperar o documento PDF 
 
 **Salvar o documento PDF como um arquivo PDF**
 
-Salve o documento PDF que contém o campo de assinatura modificado como um arquivo PDF para que os usuários possam abri-lo no Acrobat ou Adobe Reader.
+Salve o documento PDF que contém o campo de assinatura modificado como um arquivo PDF para que os usuários possam abri-lo no Acrobat ou no Adobe Reader.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -464,7 +464,7 @@ Modifique um campo de assinatura usando a API de assinatura (Java):
 
    >[!NOTE]
    >
-   >Para ver todos os valores do dicionário de valor semente que podem ser definidos, consulte a referência da `PDFSeedValueOptionSpec` classe. (Consulte Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
+   >Para ver todos os valores do dicionário de valor semente que podem ser definidos, consulte a referência da `PDFSeedValueOptionSpec` classe. (Consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
 
 1. Modificar o campo de assinatura
 
@@ -496,7 +496,7 @@ Modifique um campo de assinatura usando a API de assinatura (serviço da Web):
 1. Criar um cliente de assinatura
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -526,7 +526,7 @@ Modifique um campo de assinatura usando a API de assinatura (serviço da Web):
 
    >[!NOTE]
    >
-   >Para ver todos os valores do dicionário de valor semente que podem ser definidos, consulte a referência da `PDFSeedValueOptionSpec` classe. (Consulte Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
+   >Para ver todos os valores do dicionário de valor semente que podem ser definidos, consulte a referência da `PDFSeedValueOptionSpec` classe. (Consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
 
 1. Modificar o campo de assinatura
 
@@ -547,9 +547,9 @@ Modifique um campo de assinatura usando a API de assinatura (serviço da Web):
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Assinando Documentos PDF digitalmente {#digitally-signing-pdf-documents}
 
@@ -559,7 +559,7 @@ documentos PDF são assinados por meio de tecnologia de chave pública. Um assin
 
 >[!NOTE]
 >
->Antes de poder assinar digitalmente um documento PDF, é necessário adicionar o certificado ao AEM Forms. Um certificado é adicionado usando o console de administração ou de forma programática usando a API do Trust Manager. (Consulte [Importação de credenciais usando a API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
+>Antes de poder assinar digitalmente um documento PDF, é necessário adicionar o certificado à AEM Forms. Um certificado é adicionado usando o console de administração ou de forma programática usando a API do Trust Manager. (Consulte [Importação de credenciais usando a API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
 
 Você pode assinar documentos PDF digitalmente de forma programática. Ao assinar digitalmente um documento PDF, é necessário fazer referência a uma credencial de segurança que existe no AEM Forms. A credencial é a chave privada usada para assinatura.
 
@@ -569,7 +569,7 @@ O serviço de assinatura executa as seguintes etapas quando um documento PDF é 
 1. A Truststore pesquisa a credencial especificada.
 1. A credencial é retornada ao serviço de assinatura e é usada para assinar o documento. A credencial também é armazenada em cache no alias para solicitações futuras.
 
-Para obter informações sobre como lidar com as credenciais de segurança, consulte o guia* Installing and Deploying AEM Forms* (Instalação e implantação do AEM Forms*) para seu servidor de aplicativos.
+Para obter informações sobre como lidar com as credenciais de segurança, consulte o guia* Installing and Deploying AEM Forms* (Instalação e implantação do*) para seu servidor de aplicativos.
 
 >[!NOTE]
 >
@@ -577,7 +577,7 @@ Para obter informações sobre como lidar com as credenciais de segurança, cons
 
 >[!NOTE]
 >
->Nem todos os documentos PDF suportam assinatura. Para obter mais informações sobre o serviço de assinatura e documentos de assinatura digital, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Nem todos os documentos PDF suportam assinatura. Para obter mais informações sobre o serviço de assinatura e documentos de assinatura digital, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -585,7 +585,7 @@ Para obter informações sobre como lidar com as credenciais de segurança, cons
 
 **Credencial HSM nShield do Cifrador**
 
-Ao usar uma credencial nShield HSM do Criador para assinar ou certificar um documento PDF, a nova credencial não poderá ser usada até que o servidor de aplicativos J2EE no qual o AEM Forms está implantado seja reiniciado. No entanto, você pode definir um valor de configuração, resultando na operação de assinatura ou certificação funcionando sem reiniciar o servidor de aplicativos J2EE.
+Ao usar uma credencial nShield HSM da Central para assinar ou certificar um documento PDF, a nova credencial não poderá ser usada até que o servidor de aplicativos J2EE no qual a AEM Forms está implantada seja reiniciado. No entanto, você pode definir um valor de configuração, resultando na operação de assinatura ou certificação funcionando sem reiniciar o servidor de aplicativos J2EE.
 
 Você pode adicionar o seguinte valor de configuração no arquivo cknfastrc, localizado em /opt/nfast/cknfastrc (ou c:\nfast\cknfastrc):
 
@@ -597,13 +597,13 @@ Após adicionar esse valor de configuração ao arquivo cknfastrc, a nova creden
 
 **A assinatura não é confiável**
 
-Ao certificar e assinar o mesmo documento PDF, se a assinatura de certificação não for confiável, um triângulo amarelo será exibido contra a primeira assinatura ao abrir o documento PDF no Acrobat ou no Adobe Reader. A assinatura de certificação deve ser confiável para evitar essa situação.
+Ao certificar e assinar o mesmo documento PDF, se a assinatura de certificação não for confiável, um triângulo amarelo será exibido contra a primeira assinatura ao abrir o documento PDF no Acrobat ou Adobe Reader. A assinatura de certificação deve ser confiável para evitar essa situação.
 
 **Assinar documentos que são formulários baseados em XFA**
 
-Se você tentar assinar um formulário com base em XFA usando a API do serviço de assinatura, os dados podem estar ausentes do formulário `View` `Signed` localizado `Version` no Acrobat. Por exemplo, considere o seguinte fluxo de trabalho:
+Se você tentar assinar um formulário baseado em XFA usando a API de serviço de assinatura, os dados podem estar ausentes do formulário `View` `Signed` localizado `Version` no Acrobat. Por exemplo, considere o seguinte fluxo de trabalho:
 
-* Usando um arquivo XDP criado usando o Designer, é possível mesclar um design de formulário que contenha um campo de assinatura e dados XML que contenham dados de formulário. Use o serviço Formulários para gerar um documento PDF interativo.
+* Usando um arquivo XDP criado usando o Designer, é possível mesclar um design de formulário que contenha um campo de assinatura e dados XML que contenham dados de formulário. Use o serviço Forms para gerar um documento PDF interativo.
 * Você assina o documento PDF usando a API de serviço de assinatura.
 
 ### Resumo das etapas {#summary_of_steps-3}
@@ -625,8 +625,8 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
 **Criar um cliente de Assinaturas**
 
@@ -657,7 +657,7 @@ Para executar a verificação de revogação em um certificado, você pode espec
 
 Em vez de usar um servidor CRL, você pode usar um servidor OCSP (protocolo de status de certificado) online ao executar a verificação de revogação. Normalmente, ao usar um servidor OCSP em vez de um servidor CRL, a verificação de revogação é executada mais rapidamente. (Consulte &quot;Online Certificate Status Protocol&quot; em [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
-Você pode definir a ordem do servidor CRL e OCSP que o serviço de assinatura usa com aplicativos e serviços da Adobe. Por exemplo, se o servidor OCSP for definido primeiro em Aplicativos e Serviços da Adobe, o servidor OCSP será marcado, seguido pelo servidor CRL. (Consulte &quot;Gerenciamento de certificados e credenciais usando o Armazenamento de confiança&quot; na Ajuda do AAC).
+Você pode definir a ordem do servidor CRL e OCSP que o serviço de assinatura usa com aplicativos e serviços de Adobe. Por exemplo, se o servidor OCSP for definido primeiro em Aplicativos e Serviços de Adobe, então o servidor OCSP será marcado, seguido pelo servidor CRL. (Consulte &quot;Gerenciamento de certificados e credenciais usando o Armazenamento de confiança&quot; na Ajuda do AAC).
 
 Se você especificar não executar a verificação de revogação, o serviço de Assinatura não verificará se o certificado usado para assinar ou certificar um documento foi revogado. Ou seja, as informações do CRL e do servidor OCSP são ignoradas.
 
@@ -673,7 +673,7 @@ O carimbo de data e hora se refere ao processo de rastreamento da hora em que um
 
 Para assinar com êxito um documento PDF, você pode especificar o nome totalmente qualificado do campo de assinatura que conterá a assinatura digital, como `form1[0].#subform[1].SignatureField3[3]`. Ao usar um campo de formulário XFA, o nome parcial do campo de assinatura também pode ser usado: `SignatureField3[3]`.
 
-Também é necessário referenciar uma credencial de segurança para assinar digitalmente um documento PDF. Para referenciar uma credencial de segurança, especifique um alias. O alias é uma referência a uma credencial real que pode estar em um arquivo PKCS#12 (com uma extensão .pfx) ou em um módulo de segurança de hardware (HSM). Para obter informações sobre as credenciais de segurança, consulte o guia* Installing and Deploying AEM Forms* (Instalação e implantação do AEM Forms*) para seu servidor de aplicativos.
+Também é necessário referenciar uma credencial de segurança para assinar digitalmente um documento PDF. Para referenciar uma credencial de segurança, especifique um alias. O alias é uma referência a uma credencial real que pode estar em um arquivo PKCS#12 (com uma extensão .pfx) ou em um módulo de segurança de hardware (HSM). Para obter informações sobre as credenciais de segurança, consulte o guia* Installing and Deploying AEM Forms* (Instalação e implantação do*) para seu servidor de aplicativos.
 
 **Salvar o documento PDF assinado**
 
@@ -685,7 +685,7 @@ Depois que o serviço de assinatura assinar digitalmente o documento PDF, você 
 
 [Assinatura digital de documentos PDF usando a API de serviço da Web](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -725,7 +725,7 @@ Assine digitalmente um documento PDF usando a API de assinatura (Java):
    * Um `java.lang.Boolean` objeto que especifica se a verificação de revogação deve ser executada no certificado do assinante.
    * Um `OCSPOptionSpec` objeto que armazena preferências para suporte ao Online Certificate Status Protocol (OCSP). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`.
    * Um `CRLPreferences` objeto que armazena preferências de lista de revogação de certificado (CRL). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`.
-   * Um `TSPPreferences` objeto que armazena preferências para suporte ao provedor de carimbo de data e hora (TSP). Esse parâmetro é opcional e pode ser `null`. Para obter mais informações, consulte Referência [da API de formulários](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+   * Um `TSPPreferences` objeto que armazena preferências para suporte ao provedor de carimbo de data e hora (TSP). Esse parâmetro é opcional e pode ser `null`. Para obter mais informações, consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
    O `sign` método retorna um `com.adobe.idp.Document` objeto que representa o documento PDF assinado.
 
@@ -740,7 +740,7 @@ Assine digitalmente um documento PDF usando a API de assinatura (Java):
 
 [Start rápido (modo SOAP): Assinando digitalmente um documento PDF usando a API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -759,7 +759,7 @@ Para assinar digitalmente um documento PDF usando a Signature API (serviço da W
 1. Criar um cliente de Assinaturas
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -791,7 +791,7 @@ Para assinar digitalmente um documento PDF usando a Signature API (serviço da W
    * Um valor de string que representa as informações de contato do assinante.
    * Um `PDFSignatureAppearanceOptions` objeto que controla a aparência da assinatura digital. Por exemplo, você pode usar esse objeto para adicionar um logotipo personalizado a uma assinatura digital.
    * Um `System.Boolean` objeto que especifica se a verificação de revogação deve ser executada no certificado do assinante. Se essa verificação de revogação for feita, ela será incorporada à assinatura. O padrão é `false`.
-   * Um `OCSPOptionSpec` objeto que armazena preferências para suporte ao Online Certificate Status Protocol (OCSP). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`. Para obter informações sobre esse objeto, consulte Referência [da API de formulários](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+   * Um `OCSPOptionSpec` objeto que armazena preferências para suporte ao Online Certificate Status Protocol (OCSP). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`. Para obter informações sobre esse objeto, consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Um `CRLPreferences` objeto que armazena preferências de lista de revogação de certificado (CRL). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`.
    * Um `TSPPreferences` objeto que armazena preferências para suporte ao provedor de carimbo de data e hora (TSP). Esse parâmetro é opcional e pode ser `null`.
 
@@ -808,36 +808,36 @@ Para assinar digitalmente um documento PDF usando a Signature API (serviço da W
 
 [Assinando Documentos PDF digitalmente](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Assinatura digital de formulários interativos {#digitally-signing-interactive-forms}
+## Assinando Digitalmente o Forms Interativo {#digitally-signing-interactive-forms}
 
-Você pode assinar um formulário interativo criado pelo serviço de Formulários. Por exemplo, considere o seguinte fluxo de trabalho:
+Você pode assinar um formulário interativo criado pelo serviço Forms. Por exemplo, considere o seguinte fluxo de trabalho:
 
-* É possível unir um formulário PDF com base em XFA criado usando o Designer e dados de formulário localizados em um documento XML usando o serviço Forms. O servidor Forms renderiza um formulário interativo.
+* É possível unir um formulário PDF baseado em XFA criado usando o Designer e dados de formulário localizados em um documento XML usando o serviço Forms. O servidor Forms renderiza um formulário interativo.
 * Você assina o formulário interativo usando a API de serviço de assinatura.
 
-O resultado é um formulário PDF interativo assinado digitalmente. Ao assinar um formulário PDF com base em um formulário XFA, salve o arquivo PDF como um formulário PDF estático da Adobe. Se você tentar assinar um formulário PDF salvo como um formulário Adobe Dynamic PDF, ocorrerá uma exceção. Como você está assinando o formulário que é retornado pelo serviço de Formulários, verifique se o formulário contém um campo de assinatura.
+O resultado é um formulário PDF interativo assinado digitalmente. Ao assinar um formulário PDF baseado em um formulário XFA, salve o arquivo PDF como um formulário PDF Adobe Static. Se você tentar assinar um formulário PDF salvo como um formulário PDF dinâmico de Adobe, ocorrerá uma exceção. Como você está assinando o formulário que é retornado do serviço Forms, verifique se o formulário contém um campo de assinatura.
 
 >[!NOTE]
 >
->Antes de poder assinar digitalmente um formulário interativo, é necessário adicionar o certificado ao AEM Forms. Um certificado é adicionado usando o console de administração ou de forma programática usando a API do Trust Manager. (Consulte [Importação de credenciais usando a API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
+>Antes de poder assinar digitalmente um formulário interativo, é necessário adicionar o certificado à AEM Forms. Um certificado é adicionado usando o console de administração ou de forma programática usando a API do Trust Manager. (Consulte [Importação de credenciais usando a API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
 
-Ao usar a API do serviço de formulários, defina a opção de tempo de `GenerateServerAppearance` execução como `true`. Essa opção de tempo de execução garante que a aparência do formulário gerado no servidor permaneça válida quando aberto no Acrobat ou no Adobe Reader. É recomendável definir essa opção de tempo de execução ao gerar um formulário interativo para assinar usando a API do Forms.
+Ao usar a Forms Service API, defina a opção de tempo de `GenerateServerAppearance` execução como `true`. Essa opção de tempo de execução garante que a aparência do formulário gerado no servidor permaneça válida quando aberto no Acrobat ou Adobe Reader. É recomendável definir essa opção de tempo de execução ao gerar um formulário interativo para assinar usando a API do Forms.
 
 >[!NOTE]
 >
->Antes de ler Digitalmente Signing Interative Forms, recomenda-se que você esteja familiarizado com a assinatura de documentos PDF. (Consulte Assinando [digitalmente Documentos](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF.)
+>Antes de ler Digitally Signing Interative Forms, recomenda-se que você esteja familiarizado com a assinatura de documentos PDF. (Consulte Assinando [digitalmente Documentos](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF.)
 
 ### Resumo das etapas {#summary_of_steps-4}
 
 Para assinar digitalmente um formulário interativo retornado pelo serviço Forms, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um cliente de Formulários e Assinaturas.
-1. Obtenha o formulário interativo usando o serviço de Formulários.
+1. Crie um cliente Forms e Signatures.
+1. Obtenha o formulário interativo usando o serviço Forms.
 1. Assine o formulário interativo.
 1. Salve o documento PDF assinado como um arquivo PDF.
 
@@ -851,24 +851,24 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
 * adobe-forms-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
-**Criar um cliente de Formulários e Assinaturas**
+**Criar um cliente Forms e Signatures**
 
-Como esse fluxo de trabalho chama os serviços de Formulários e Assinatura, crie um cliente de serviço de Forms e um cliente de serviço de Assinatura.
+Como esse fluxo de trabalho chama os serviços Forms e Signature, crie um cliente de serviço Forms e um cliente de serviço Signature.
 
-**Obter o formulário interativo usando o serviço de Formulários**
+**Obter o formulário interativo usando o serviço Forms**
 
-É possível usar o serviço de Formulários para obter o formulário PDF interativo para assinatura. A partir do AEM Forms, é possível passar um `com.adobe.idp.Document` objeto para o serviço Forms que contém o formulário a ser renderizado. O nome desse método é `renderPDFForm2`. Esse método retorna um `com.adobe.idp.Document` objeto que contém o formulário a ser assinado. Você pode passar essa `com.adobe.idp.Document` instância para o serviço de assinatura.
+Você pode usar o serviço Forms para obter o formulário PDF interativo para assinar. A partir do AEM Forms, é possível enviar um `com.adobe.idp.Document` objeto para o serviço Forms que contém o formulário a ser renderizado. O nome desse método é `renderPDFForm2`. Esse método retorna um `com.adobe.idp.Document` objeto que contém o formulário a ser assinado. Você pode passar essa `com.adobe.idp.Document` instância para o serviço de assinatura.
 
-Da mesma forma, se você estiver usando serviços da Web, poderá passar a `BLOB` instância retornada pelo serviço Forms para o serviço Signature.
+Da mesma forma, se você estiver usando serviços da Web, poderá passar a `BLOB` instância que o serviço Forms retorna ao serviço de assinatura.
 
 >[!NOTE]
 >
->O start rápido associado à seção Formulários interativos de assinatura digital chama o `renderPDFForm2` método.
+>O start rápido associado à seção Assinatura digital interativa do Forms chama o `renderPDFForm2` método.
 
 **Assinar o formulário interativo**
 
@@ -882,7 +882,7 @@ As opções de aparência são definidas usando um `PDFSignatureAppearanceOption
 
 **Salvar o documento PDF assinado**
 
-Depois que o serviço de assinatura assinar digitalmente o documento PDF, você poderá salvá-lo como um arquivo PDF. O arquivo PDF pode ser aberto no Acrobat ou no Adobe Reader.
+Depois que o serviço de assinatura assinar digitalmente o documento PDF, você poderá salvá-lo como um arquivo PDF. O arquivo PDF pode ser aberto no Acrobat ou Adobe Reader.
 
 **Consulte também:**
 
@@ -890,31 +890,31 @@ Depois que o serviço de assinatura assinar digitalmente o documento PDF, você 
 
 [Assinar digitalmente um formulário interativo usando a API de serviço da Web](digitally-signing-certifying-documents.md#digitally-sign-an-interactive-form-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [Assinando Documentos PDF digitalmente](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Como renderizar formulários PDF interativos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
+[Renderização de PDF forms interativos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
 
 ### Assine digitalmente um formulário interativo usando a API Java {#digitally-sign-an-interactive-form-using-the-java-api}
 
-Assine digitalmente um formulário interativo usando o Forms and Signature API (Java):
+Assine digitalmente um formulário interativo usando a API de assinatura e o Forms (Java):
 
 1. Incluir arquivos de projeto
 
    Inclua arquivos JAR do cliente, como adobe-signature-client.jar e adobe-forms-client.jar, no classpath do seu projeto Java.
 
-1. Criar um cliente de Formulários e Assinaturas
+1. Criar um cliente Forms e Signatures
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `SignatureServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
    * Crie um `FormsServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
 
-1. Obter o formulário interativo usando o serviço de Formulários
+1. Obter o formulário interativo usando o serviço Forms
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF para passar para o serviço de Formulários usando seu construtor. Passe um valor de string que especifica o local do documento PDF.
+   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF para passar para o serviço Forms usando seu construtor. Passe um valor de string que especifica o local do documento PDF.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
    * Crie um `java.io.FileInputStream` objeto que represente o documento XML que contém dados de formulário a serem enviados para o serviço Forms usando seu construtor. Passe um valor de string que especifica o local do arquivo XML.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
@@ -924,7 +924,7 @@ Assine digitalmente um formulário interativo usando o Forms and Signature API (
       * Um `com.adobe.idp.Document` objeto que contém o formulário PDF a ser renderizado.
       * Um `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário.
       * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
-      * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários. Você pode especificar `null` para esse valor de parâmetro.
+      * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms. Você pode especificar `null` para esse valor de parâmetro.
       * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
 
       O `renderPDFForm2` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário
@@ -957,23 +957,23 @@ Assine digitalmente um formulário interativo usando o Forms and Signature API (
 
 **Consulte também:**
 
-[Assinatura digital de formulários interativos](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Assinando Digitalmente o Forms Interativo](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [Start rápido (modo SOAP): Assinando digitalmente um documento PDF usando a API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Assinar digitalmente um formulário interativo usando a API de serviço da Web {#digitally-sign-an-interactive-form-using-the-web-service-api}
 
-Assine digitalmente um formulário interativo usando a Forms and Signature API (serviço da Web):
+Assine digitalmente um formulário interativo usando a Forms e Signature API (serviço da Web):
 
 1. Incluir arquivos de projeto
 
-   Crie um projeto do Microsoft .NET que use MTOM. Como esse aplicativo cliente chama dois serviços AEM Forms, crie duas referências de serviço. Use a seguinte definição WSDL para a referência de serviço associada ao serviço de assinatura: `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Crie um projeto do Microsoft .NET que use MTOM. Como este aplicativo cliente chama dois serviços da AEM Forms, crie duas referências de serviço. Use a seguinte definição WSDL para a referência de serviço associada ao serviço de assinatura: `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
-   Use a seguinte definição WSDL para a referência de serviço associada ao serviço de Formulários: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
+   Use a seguinte definição WSDL para a referência de serviço associada ao serviço Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
    Como o tipo de `BLOB` dados é comum a ambas as referências de serviço, qualifice totalmente o tipo de `BLOB` dados ao usá-lo. No start rápido do serviço da Web correspondente, todas as `BLOB` instâncias são totalmente qualificadas.
 
@@ -981,10 +981,10 @@ Assine digitalmente um formulário interativo usando a Forms and Signature API (
    >
    >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
-1. Criar um cliente de Formulários e Assinaturas
+1. Criar um cliente Forms e Signatures
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -996,9 +996,9 @@ Assine digitalmente um formulário interativo usando a Forms and Signature API (
 
    >[!NOTE]
    >
-   >Repita essas etapas para o cliente do serviço Forms.
+   >Repita essas etapas para o cliente de serviço Forms.
 
-1. Obter o formulário interativo usando o serviço de Formulários
+1. Obter o formulário interativo usando o serviço Forms
 
    * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar um documento PDF assinado.
    * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF a ser assinado e o modo no qual o arquivo será aberto.
@@ -1016,7 +1016,7 @@ Assine digitalmente um formulário interativo usando a Forms and Signature API (
       * Um `BLOB` objeto que contém o formulário PDF a ser renderizado.
       * Um `BLOB` objeto que contém dados para mesclar com o formulário.
       * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
-      * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários. Você pode especificar `null` para esse valor de parâmetro.
+      * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms. Você pode especificar `null` para esse valor de parâmetro.
       * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
       * Um parâmetro de saída longo usado para armazenar o número de páginas no formulário.
       * Um parâmetro de saída de string usado para o valor de localidade.
@@ -1038,7 +1038,7 @@ Assine digitalmente um formulário interativo usando a Forms and Signature API (
    * Um valor de string que representa as informações de contato do assinante.
    * Um `PDFSignatureAppearanceOptions` objeto que controla a aparência da assinatura digital. Por exemplo, você pode usar esse objeto para adicionar um logotipo personalizado a uma assinatura digital.
    * Um `System.Boolean` objeto que especifica se a verificação de revogação deve ser executada no certificado do assinante. Se essa verificação de revogação for feita, ela será incorporada à assinatura. O padrão é `false`.
-   * Um `OCSPPreferences` objeto que armazena preferências para suporte ao Online Certificate Status Protocol (OCSP). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`. Para obter informações sobre esse objeto, consulte Referência [da API de formulários](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+   * Um `OCSPPreferences` objeto que armazena preferências para suporte ao Online Certificate Status Protocol (OCSP). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`. Para obter informações sobre esse objeto, consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Um `CRLPreferences` objeto que armazena preferências de lista de revogação de certificado (CRL). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`.
    * Um `TSPPreferences` objeto que armazena preferências para suporte ao provedor de carimbo de data e hora (TSP). Esse parâmetro é opcional e pode ser `null`.
 
@@ -1053,27 +1053,27 @@ Assine digitalmente um formulário interativo usando a Forms and Signature API (
 
 **Consulte também:**
 
-[Assinatura digital de formulários interativos](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Assinando Digitalmente o Forms Interativo](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Como certificar Documentos PDF {#certifying-pdf-documents}
 
 É possível proteger um documento PDF certificando-o com um tipo específico de assinatura chamada assinatura certificada. Uma assinatura certificada é diferenciada de uma assinatura digital destas maneiras:
 
 * Deve ser a primeira assinatura aplicada ao documento PDF; ou seja, no momento em que a assinatura certificada é aplicada, qualquer outro campo de assinatura no documento deve estar sem assinatura. Somente uma assinatura certificada é permitida em um documento PDF. Se você quiser assinar e certificar um documento PDF, deverá certificá-lo antes de assiná-lo. Depois de certificar um documento PDF, você pode assinar digitalmente campos de assinatura adicionais.
-* O autor ou o originador do documento pode especificar que o documento pode ser modificado de certas formas sem invalidar a assinatura certificada. Por exemplo, o documento pode permitir o preenchimento de formulários ou comentários. Se o autor especificar que determinada modificação não é permitida, o Acrobat impedirá que os usuários modifiquem o documento dessa forma. Se tais modificações forem feitas, como ao usar outro aplicativo, a assinatura certificada será inválida e o Acrobat emitirá um aviso quando um usuário abrir o documento. (Com assinaturas não certificadas, as modificações não são impedidas e as operações normais de edição não invalidam a assinatura original.)
+* O autor ou o originador do documento pode especificar que o documento pode ser modificado de certas formas sem invalidar a assinatura certificada. Por exemplo, o documento pode permitir o preenchimento de formulários ou comentários. Se o autor especificar que uma determinada modificação não é permitida, a Acrobat impedirá os usuários de modificar o documento dessa forma. Se tais modificações forem feitas, como ao usar outro aplicativo, a assinatura certificada será inválida e a Acrobat emitirá um aviso quando um usuário abrir o documento. (Com assinaturas não certificadas, as modificações não são impedidas e as operações normais de edição não invalidam a assinatura original.)
 * No momento da assinatura, o documento é verificado quanto a tipos específicos de conteúdo que podem tornar o conteúdo de um documento ambíguo ou enganoso. Por exemplo, uma anotação pode obscurecer algum texto em uma página que é importante para entender o que está sendo certificado. Pode ser fornecida uma explicação (atestado legal) sobre esse conteúdo.
 
-Você pode certificar documentos PDF de forma programática usando a API Java do serviço de assinatura ou a API do serviço da Web de assinatura. Ao certificar um documento PDF, você deve fazer referência a uma credencial de segurança que existe no serviço de Credenciais. Para obter informações sobre as credenciais de segurança, consulte o guia *Instalação e implantação de formulários* AEM para o servidor de aplicativos.
+Você pode certificar documentos PDF de forma programática usando a API Java do serviço de assinatura ou a API do serviço da Web de assinatura. Ao certificar um documento PDF, você deve fazer referência a uma credencial de segurança que existe no serviço de Credenciais. Para obter informações sobre as credenciais de segurança, consulte o guia *Instalação e implantação do AEM Forms* para seu servidor de aplicativos.
 
 >[!NOTE]
 >
->Ao certificar e assinar o mesmo documento PDF, se a assinatura da certificação não for confiável, um triângulo amarelo será exibido ao lado da primeira assinatura de assinatura quando você abrir o documento PDF no Acrobat ou no Adobe Reader. A assinatura de certificação deve ser confiável para evitar essa situação.
+>Ao certificar e assinar o mesmo documento PDF, se a assinatura da certificação não for confiável, um triângulo amarelo será exibido ao lado da primeira assinatura ao abrir o documento PDF no Acrobat ou Adobe Reader. A assinatura de certificação deve ser confiável para evitar essa situação.
 
 >[!NOTE]
 >
->Ao usar uma credencial HSM do nShield do Criador para assinar ou certificar um documento PDF, a nova credencial não poderá ser usada até que o servidor de aplicativos J2EE no qual o AEM Forms é implantado seja reiniciado. No entanto, você pode definir um valor de configuração, resultando na operação de assinatura ou certificação funcionando sem reiniciar o servidor de aplicativos J2EE.
+>Ao usar uma credencial de HSM nShield do Criador para assinar ou certificar um documento PDF, a nova credencial não poderá ser usada até que o servidor de aplicativos J2EE no qual o AEM Forms está implantado seja reiniciado. No entanto, você pode definir um valor de configuração, resultando na operação de assinatura ou certificação funcionando sem reiniciar o servidor de aplicativos J2EE.
 
 Você pode adicionar o seguinte valor de configuração no arquivo cknfastrc, localizado em /opt/nfast/cknfastrc (ou c:\nfast\cknfastrc):
 
@@ -1085,7 +1085,7 @@ Após adicionar esse valor de configuração ao arquivo cknfastrc, a nova creden
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de assinatura e como certificar um documento, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de assinatura e a certificação de um documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-5}
 
@@ -1106,10 +1106,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um cliente de assinatura**
 
@@ -1140,7 +1140,7 @@ Para certificar um documento PDF com êxito, é necessário os seguintes valores
 
 **Salvar o documento PDF certificado como um arquivo PDF**
 
-Depois que o serviço de assinatura certifica o documento PDF, você pode salvá-lo como um arquivo PDF para que os usuários possam abri-lo no Acrobat ou Adobe Reader.
+Depois que o serviço de assinatura certifica o documento PDF, você pode salvá-lo como um arquivo PDF para que os usuários possam abri-lo no Acrobat ou no Adobe Reader.
 
 **Consulte também:**
 
@@ -1148,7 +1148,7 @@ Depois que o serviço de assinatura certifica o documento PDF, você pode salvá
 
 [Certificar documentos PDF usando a API de serviço da Web](digitally-signing-certifying-documents.md#certify-pdf-documents-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1187,9 +1187,9 @@ Certifique um documento PDF usando a API de assinatura (Java):
    * Um valor de string que fornece uma explicação de quais ações invalidam a assinatura.
    * Um `java.lang.Boolean` objeto que especifica se a verificação de revogação deve ser executada no certificado do assinante. Se essa verificação de revogação for feita, ela será incorporada à assinatura. O padrão é `false`.
    * Um `java.lang.Boolean` objeto que especifica se o campo de assinatura que está sendo certificado está bloqueado. Se o campo estiver bloqueado, o campo de assinatura será marcado como somente leitura, suas propriedades não poderão ser modificadas e não poderão ser limpas por ninguém que não tenha as permissões necessárias. O padrão é `false`.
-   * Um `OCSPPreferences` objeto que armazena preferências para suporte ao Online Certificate Status Protocol (OCSP). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`. Para obter informações sobre esse objeto, consulte Referência [da API de formulários](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+   * Um `OCSPPreferences` objeto que armazena preferências para suporte ao Online Certificate Status Protocol (OCSP). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`. Para obter informações sobre esse objeto, consulte Referência [da API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Um `CRLPreferences` objeto que armazena preferências de lista de revogação de certificado (CRL). Se a verificação de revogação não for feita, esse parâmetro não será usado e você poderá especificar `null`.
-   * Um `TSPPreferences` objeto que armazena preferências para suporte ao provedor de carimbo de data e hora (TSP). Por exemplo, depois de criar um `TSPPreferences` objeto, você pode definir o URL do servidor TSP chamando o `TSPPreferences` método do `setTspServerURL` objeto. Esse parâmetro é opcional e pode ser `null`. Para obter mais informações, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+   * Um `TSPPreferences` objeto que armazena preferências para suporte ao provedor de carimbo de data e hora (TSP). Por exemplo, depois de criar um `TSPPreferences` objeto, você pode definir o URL do servidor TSP chamando o `TSPPreferences` método do `setTspServerURL` objeto. Esse parâmetro é opcional e pode ser `null`. Para obter mais informações, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
    O `certify` método retorna um `com.adobe.idp.Document` objeto que representa o documento PDF certificado.
 
@@ -1204,7 +1204,7 @@ Certifique um documento PDF usando a API de assinatura (Java):
 
 [Start rápido (modo SOAP): Como certificar um documento PDF usando a API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1223,7 +1223,7 @@ Certifique um documento PDF usando a API de assinatura (serviço da Web):
 1. Criar um cliente de assinatura
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -1277,9 +1277,9 @@ Certifique um documento PDF usando a API de assinatura (serviço da Web):
 
 [Como certificar Documentos PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verificação de assinaturas digitais {#verifying-digital-signatures}
 
@@ -1293,7 +1293,7 @@ Da mesma forma, ao verificar programaticamente uma assinatura digital, você pod
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de assinatura e verificação de assinaturas digitais, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de assinatura e a verificação de assinaturas digitais, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-6}
 
@@ -1316,10 +1316,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um cliente de assinatura**
 
@@ -1337,15 +1337,15 @@ Defina estas opções de tempo de execução PKI que o serviço de assinatura us
 * Verificação de revogação
 * Valores de carimbo de data e hora
 
-Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), que indica o uso da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte o valor da `VerificationTime` lista discriminada em Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), que indica o uso da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte o valor da `VerificationTime` lista discriminada na Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-Também é possível especificar se a verificação de revogação deve ser executada como parte do processo de verificação. Por exemplo, você pode executar uma verificação de revogação para determinar se o certificado foi revogado. Para obter informações sobre as opções de verificação de revogação, consulte o valor da `RevocationCheckStyle` lista discriminada em Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Também é possível especificar se a verificação de revogação deve ser executada como parte do processo de verificação. Por exemplo, você pode executar uma verificação de revogação para determinar se o certificado foi revogado. Para obter informações sobre as opções de verificação de revogação, consulte o valor da `RevocationCheckStyle` lista discriminada em Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 Para executar a verificação de revogação em um certificado, especifique um URL para um servidor de lista de revogação de certificado (CRL) usando um `CRLOptionSpec` objeto. No entanto, se você não especificar um URL para o servidor CRL, o serviço de assinatura obterá o URL do certificado.
 
 Em vez de usar um servidor CRL, você pode usar um servidor OCSP (protocolo de status de certificado) online ao executar a verificação de revogação. Normalmente, ao usar um servidor OCSP em vez de um servidor CRL, a verificação de revogação é executada mais rapidamente. (Consulte Protocolo [de status de certificado](https://tools.ietf.org/html/rfc2560)online.)
 
-Você pode definir a ordem do servidor CRL e OCSP que o serviço de assinatura usa usando Aplicativos e Serviços da Adobe. Por exemplo, se o servidor OCSP for definido primeiro em Aplicativos e Serviços da Adobe, o servidor OCSP será marcado, seguido pelo servidor CRL.
+Você pode definir a ordem do servidor CRL e OCSP que o serviço de assinatura usa usando Aplicativos e Serviços de Adobe. Por exemplo, se o servidor OCSP for definido primeiro em Aplicativos e Serviços de Adobe, então o servidor OCSP será marcado, seguido pelo servidor CRL.
 
 Se você não executar a verificação de revogação, o serviço de Assinatura não verificará se o certificado foi revogado. Ou seja, as informações do CRL e do servidor OCSP são ignoradas.
 
@@ -1387,7 +1387,7 @@ Você pode determinar a identidade do assinante, que pode ser um dos seguintes v
 
 [Verificar assinaturas digitais usando a API de serviço da Web](#unresolvedlink-lc-si)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1441,7 +1441,7 @@ Verifique uma assinatura digital usando a API do serviço de assinatura (Java):
 
 [Start rápido (modo SOAP): Verificação de uma assinatura digital usando a API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1460,7 +1460,7 @@ Verifique uma assinatura digital usando a Signature Service API (serviço da Web
 1. Criar um cliente de assinatura
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -1508,17 +1508,17 @@ Verifique uma assinatura digital usando a Signature Service API (serviço da Web
 
 [Verificação de assinaturas digitais](#unresolvedlink-lc-si)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verificando várias assinaturas digitais {#verifying-multiple-digital-signatures}
 
-O AEM Forms fornece os meios de verificar todas as assinaturas digitais localizadas em um documento PDF. Considere que um documento PDF contém várias assinaturas digitais como resultado de um processo de negócios que requer assinaturas de vários assinantes. Por exemplo, considere uma transação financeira que exija a assinatura de um agente de empréstimo e de um gerente. Você pode usar a API Java do serviço de assinatura ou a API do serviço da Web para verificar todas as assinaturas no documento PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, é recomendável que você a verifique. É recomendável que você esteja familiarizado com a verificação de uma única assinatura digital.
+A AEM Forms fornece os meios de verificar todas as assinaturas digitais localizadas em um documento PDF. Considere que um documento PDF contém várias assinaturas digitais como resultado de um processo de negócios que requer assinaturas de vários assinantes. Por exemplo, considere uma transação financeira que exija a assinatura de um agente de empréstimo e de um gerente. Você pode usar a API Java do serviço de assinatura ou a API do serviço da Web para verificar todas as assinaturas no documento PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, é recomendável que você a verifique. É recomendável que você esteja familiarizado com a verificação de uma única assinatura digital.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de assinatura e verificação de assinaturas digitais, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de assinatura e a verificação de assinaturas digitais, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-7}
 
@@ -1540,10 +1540,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um cliente de assinatura**
 
@@ -1561,15 +1561,15 @@ Defina estas opções de tempo de execução PKI que o serviço de assinatura us
 * Verificação de revogação
 * Valores de carimbo de data e hora
 
-Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), que indica o uso da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte o valor da `VerificationTime` lista discriminada em Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Como parte da configuração dessas opções, você pode especificar o tempo de verificação. Por exemplo, você pode selecionar a hora atual (a hora no computador do validador), que indica o uso da hora atual. Para obter informações sobre os diferentes valores de tempo, consulte o valor da `VerificationTime` lista discriminada na Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-Também é possível especificar se a verificação de revogação deve ser executada como parte do processo de verificação. Por exemplo, você pode executar uma verificação de revogação para determinar se o certificado foi revogado. Para obter informações sobre as opções de verificação de revogação, consulte o valor da `RevocationCheckStyle` lista discriminada em Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Também é possível especificar se a verificação de revogação deve ser executada como parte do processo de verificação. Por exemplo, você pode executar uma verificação de revogação para determinar se o certificado foi revogado. Para obter informações sobre as opções de verificação de revogação, consulte o valor da `RevocationCheckStyle` lista discriminada em Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 Para executar a verificação de revogação em um certificado, especifique um URL para um servidor de lista de revogação de certificado (CRL) usando um `CRLOptionSpec` objeto. No entanto, se você não especificar um URL para um servidor CRL, o serviço de assinatura obterá o URL do certificado.
 
 Em vez de usar um servidor CRL, você pode usar um servidor OCSP (protocolo de status de certificado) online ao executar a verificação de revogação. Normalmente, ao usar um servidor OCSP em vez de um servidor CRL, a verificação de revogação é executada mais rapidamente. (Consulte Protocolo [de status de certificado](https://tools.ietf.org/html/rfc2560)online.)
 
-Você pode definir a ordem do servidor CRL e OCSP que o serviço de assinatura usa usando Aplicativos e Serviços da Adobe. Por exemplo, se o servidor OCSP for definido primeiro em Aplicativos e Serviços da Adobe, o servidor OCSP será marcado, seguido pelo servidor CRL.
+Você pode definir a ordem do servidor CRL e OCSP que o serviço de assinatura usa usando Aplicativos e Serviços de Adobe. Por exemplo, se o servidor OCSP for definido primeiro em Aplicativos e Serviços de Adobe, o servidor OCSP será marcado, seguido pelo servidor CRL.
 
 Se você não executar a verificação de revogação, o serviço de Assinatura não verificará se o certificado foi revogado. Ou seja, as informações do CRL e do servidor OCSP são ignoradas.
 
@@ -1605,7 +1605,7 @@ Iterar por cada assinatura. Ou seja, para cada assinatura, verifique a assinatur
 
 [Verificação de várias assinaturas digitais usando a API de serviço da Web](#unresolvedlink-lc-si)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1654,7 +1654,7 @@ Verifique várias assinaturas digitais usando a API do serviço de assinatura (J
 
 [Start rápido (modo SOAP): Verificação de várias assinaturas digitais usando a API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verificação de assinaturas digitais](#unresolvedlink-lc-si)
 
@@ -1675,7 +1675,7 @@ Verifique várias assinaturas digitais usando a Signature Service API (serviço 
 1. Criar um cliente de assinatura
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -1718,9 +1718,9 @@ Verifique várias assinaturas digitais usando a Signature Service API (serviço 
 
 [Verificando várias assinaturas digitais](#unresolvedlink-lc-si)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Como remover assinaturas digitais {#removing-digital-signatures}
 
@@ -1728,7 +1728,7 @@ As assinaturas digitais devem ser removidas de um campo de assinatura antes que 
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de assinatura, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de assinatura, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-8}
 
@@ -1749,10 +1749,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um cliente de assinatura**
 
@@ -1776,7 +1776,7 @@ Depois que o serviço de assinatura remover uma assinatura digital de um campo d
 
 [Remover assinaturas digitais usando a API de serviço da Web](digitally-signing-certifying-documents.md#remove-digital-signatures-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1820,7 +1820,7 @@ Remova uma assinatura digital usando a API de assinatura (Java):
 
 [Start rápido (modo SOAP): Remoção de uma assinatura digital usando a API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1839,7 +1839,7 @@ Remova uma assinatura digital usando a API de assinatura (serviço da Web):
 1. Criar um cliente de assinatura
 
    * Crie um `SignatureServiceClient` objeto usando seu construtor padrão.
-   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
+   * Crie um `SignatureServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/SignatureService?WSDL`). Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `SignatureServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -1877,6 +1877,6 @@ Remova uma assinatura digital usando a API de assinatura (serviço da Web):
 
 [Como remover assinaturas digitais](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
