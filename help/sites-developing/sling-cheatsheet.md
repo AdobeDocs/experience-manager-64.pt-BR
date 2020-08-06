@@ -1,6 +1,6 @@
 ---
-title: Folha de Características
-seo-title: Folha de Características
+title: Folha de características do Sling
+seo-title: Folha de características do Sling
 description: Uma referência fácil do Sling
 seo-description: Uma referência fácil do Sling
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: c5ce62ad-ce9f-4681-bf85-78f7e72e1506
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '16'
+ht-degree: 37%
 
 ---
 
 
-# Folha de Características{#sling-cheatsheet}
+# Folha de características do Sling{#sling-cheatsheet}
 
 ![chlimage_1-97](assets/chlimage_1-97.png) ![chlimage_1-98](assets/chlimage_1-98.png)
 
