@@ -1,6 +1,6 @@
 ---
-title: Ferramentas de desenvolvedor do AEM para Eclipse
-seo-title: Ferramentas de desenvolvedor do AEM para Eclipse
+title: Ferramentas de desenvolvedor AEM para Eclipse
+seo-title: Ferramentas de desenvolvedor AEM para Eclipse
 description: 'null'
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 1%
 
 ---
 
 
-# Ferramentas de desenvolvedor do AEM para Eclipse{#aem-developer-tools-for-eclipse}
+# Ferramentas de desenvolvedor AEM para Eclipse{#aem-developer-tools-for-eclipse}
 
 ![](do-not-localize/chlimage_1-9.png)
 
 ## Visão geral {#overview}
 
-As ferramentas de desenvolvedor do AEM para Eclipse são um plug-in do Eclipse baseado no plug-in do [Eclipse para o Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) lançado sob a licença do Apache 2.
+As Ferramentas do desenvolvedor do AEM para Eclipse são um plug-in do Eclipse baseado no plug-in [Eclipse para o Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) lançado sob a licença do Apache 2.
 
-Ele oferece vários recursos que facilitam o desenvolvimento do AEM:
+Ele oferta vários recursos que facilitam AEM desenvolvimento:
 
-* Integração perfeita com instâncias do AEM por meio do Eclipse Server Connector.
+* Integração perfeita com instâncias AEM por meio do Eclipse Server Connector.
 * Sincronização de pacotes de conteúdo e OSGI.
 * Suporte de depuração com capacidade de troca automática de código.
 * Inicialização simples de projetos AEM por meio de um Assistente de criação de projeto específico.
@@ -33,22 +36,22 @@ Ele oferece vários recursos que facilitam o desenvolvimento do AEM:
 
 ## Requisitos {#requirements}
 
-Antes de usar as ferramentas do desenvolvedor do AEM, é necessário:
+Antes de usar as ferramentas do desenvolvedor AEM, é necessário:
 
 * Baixe e instale o [Eclipse IDE para desenvolvedores](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar)Java EE. Atualmente, as ferramentas de desenvolvedor do AEM são compatíveis com o Eclipse Kepler ou mais recente
 
-* Pode ser usado com o AEM versão 5.6.1 ou mais recente
-* Configure a instalação do eclipse para garantir que você tenha pelo menos 1 gigabyte de memória heap editando o arquivo de `eclipse.ini` configuração conforme descrito nas Perguntas frequentes do [Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Pode ser usado com AEM versão 5.6.1 ou mais recente
+* Configure a instalação do eclipse para garantir que você tenha pelo menos 1 gigabyte de memória heap, editando o arquivo de `eclipse.ini` configuração conforme descrito nas Perguntas frequentes do [Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
 >No macOS, você precisa clicar com o botão direito do mouse em **Eclipse.app** e selecionar **Mostrar conteúdo** do pacote para encontrar seu `eclipse.ini`**.**
 
-## Como instalar as ferramentas do desenvolvedor do AEM para o Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Como instalar as ferramentas do desenvolvedor AEM para o Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Depois de cumprir os [requisitos](#requirements) acima, você pode instalar o plug-in da seguinte maneira:
 
-1. Navegue no site [**Ferramentas do desenvolvedor do **AEM](https://eclipse.adobe.com/aem/dev-tools/).
+1. Navegue pelo site [**AEM **Developer Tools na web](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copie o link **de instalação**.
 
@@ -57,7 +60,7 @@ Depois de cumprir os [requisitos](#requirements) acima, você pode instalar o pl
 1. No Eclipse, abra o menu **Ajuda** .
 1. Clique em **Instalar novo software**.
 1. Clique em **Adicionar...**.
-1. Em **Nome** , digite Ferramentas do desenvolvedor do AEM.
+1. Em **Nome** , digite AEM Ferramentas do desenvolvedor.
 1. Em **Local** , copie o URL de instalação.
 1. Click **Ok**.
 1. Verifique os plug-ins **AEM** e **Sling** .
@@ -72,19 +75,19 @@ Depois de cumprir os [requisitos](#requirements) acima, você pode instalar o pl
 >
 >Consulte [Como trabalhar com um pacote no Eclipse quando ele foi baixado do AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
-## A perspectiva do AEM {#the-aem-perspective}
+## A perspectiva AEM {#the-aem-perspective}
 
-As Ferramentas de desenvolvimento do AEM para Eclipse são enviadas com uma Perspectiva que oferece controle total sobre seus projetos e instâncias do AEM.
+As Ferramentas de Desenvolvimento de AEM para Eclipse fornecem uma Perspectiva que oferta o controle total sobre seus projetos e instâncias de AEM.
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
 ## Exemplo de projeto de vários módulos {#sample-multi-module-project}
 
-As Ferramentas de desenvolvedor do AEM para Eclipse vêm com uma amostra de projeto de vários módulos que ajuda você a se familiarizar rapidamente com a configuração de um projeto no Eclipse, além de servir como um guia de práticas recomendadas para vários recursos do AEM. [Saiba mais sobre o Tipo de Arquivo](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)do Projeto.
+As ferramentas de desenvolvedor do AEM para Eclipse vêm com uma amostra de projeto de vários módulos que ajuda você a se familiarizar rapidamente com a configuração de um projeto no Eclipse, além de servir como um guia de práticas recomendadas para vários recursos AEM. [Saiba mais sobre o Tipo de Arquivo](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)do Projeto.
 
 Siga estas etapas para criar o projeto de amostra:
 
-1. No menu **Arquivo** > **Novo** > **Projeto** , navegue até a seção **AEM** e selecione **AEM Sample Multi-Module Project**.
+1. No menu **Arquivo** > **Novo** > **Projeto** , navegue até a seção **AEM** e selecione **AEM Exemplo de projeto** de vários módulos.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -94,7 +97,7 @@ Siga estas etapas para criar o projeto de amostra:
    >
    >Essa etapa pode levar algum tempo, pois m2eclipse precisa verificar os catálogos de arquétipos.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-78](assets/chlimage_1-70.png)
 
 1. Escolha **com.adobe.granite.archetypes : sample-project-archetype : (número mais alto)** no menu e clique em **Avançar**.
 
@@ -145,15 +148,15 @@ Para contornar isso, verifique se o artefato org.apache.sling.scripting.jsp.tagl
 </dependency>
 ```
 
-Certifique-se de adicionar a versão correta para sua implantação do AEM.
+Certifique-se de adicionar a versão correta para a implantação do AEM.
 
 ## More information {#more-information}
 
 A ferramenta oficial Apache Sling IDE para o site Eclipse fornece informações úteis:
 
-* A ferramenta [**Apache Sling IDE para o Guia **do Usuário do Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação o guiará pelos conceitos gerais, integração de servidor e recursos de implantação suportados pelas Ferramentas de Desenvolvimento do AEM.
+* A ferramenta [**Apache Sling IDE para o Guia **do Usuário do Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação o guiará pelos conceitos gerais, integração de servidor e recursos de implantação suportados pelas Ferramentas de Desenvolvimento AEM.
 * A seção [Solução de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
-* A lista [Problemas](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)conhecidos.
+* Os problemas [conhecidos são listas](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
 A seguinte documentação oficial do [Eclipse](https://eclipse.org/) pode ajudar a configurar seu ambiente:
 
