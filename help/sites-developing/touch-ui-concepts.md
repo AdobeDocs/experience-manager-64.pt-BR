@@ -1,8 +1,8 @@
 ---
-title: Conceitos da interface habilitada para toque do AEM
-seo-title: Conceitos da interface habilitada para toque do AEM
-description: Com o AEM 5.6, a Adobe introduziu uma nova interface otimizada ao toque com design responsivo para o ambiente do autor
-seo-description: Com o AEM 5.6, a Adobe introduziu uma nova interface otimizada ao toque com design responsivo para o ambiente do autor
+title: Conceitos da interface de usuário habilitada para toque AEM
+seo-title: Conceitos da interface de usuário habilitada para toque AEM
+description: Com o AEM 5.6 Adobe introduziu uma nova interface otimizada ao toque com design responsivo para o ambiente do autor
+seo-description: Com o AEM 5.6 Adobe introduziu uma nova interface otimizada ao toque com design responsivo para o ambiente do autor
 uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 translation-type: tm+mt
 source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+workflow-type: tm+mt
+source-wordcount: '2218'
+ht-degree: 0%
 
 ---
 
 
-# Conceitos da interface habilitada para toque do AEM{#concepts-of-the-aem-touch-enabled-ui}
+# Conceitos da interface de usuário habilitada para toque AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-Com o AEM 5.6, a Adobe introduziu uma nova interface habilitada para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para o ambiente do autor. Isso difere consideravelmente da interface clássica original, pois foi projetada para operar em dispositivos de toque e desktop.
+Com AEM 5.6 o Adobe introduziu uma nova interface habilitada para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para o ambiente do autor. Isso difere consideravelmente da interface clássica original, pois foi projetada para operar em dispositivos de toque e desktop.
 
-Essa interface habilitada para toque agora é a interface padrão para o AEM, substituindo a interface clássica.
+Essa interface habilitada para toque agora é a interface padrão para AEM, substituindo a interface clássica.
 
 >[!NOTE]
 >
->A interface do usuário habilitada para toque é a interface padrão para o AEM, embora a interface clássica ainda seja suportada.
+>A interface do usuário habilitada para toque é a interface padrão para AEM, embora a interface clássica ainda seja suportada.
 
 A interface habilitada para toque inclui:
 
@@ -31,7 +34,7 @@ A interface habilitada para toque inclui:
 
    * Mostra o logotipo
    * Fornece um link para a Navegação global
-   * Fornece link para outras ações genéricas; como Pesquisa, Ajuda, Soluções da Marketing Cloud, Notificações e Configurações do usuário.
+   * Fornece um link para outras ações genéricas; como Pesquisa, Ajuda, Soluções de Marketing Cloud, Notificações e Configurações do usuário.
 
 * O painel esquerdo (exibido quando necessário e oculto), que pode mostrar:
 
@@ -45,11 +48,11 @@ A interface habilitada para toque inclui:
    * Seleção do painel esquerdo
    * Navegações estruturais
    * Acesso às ações **Criar** apropriadas
-   * Exibir seleções
+   * Seleções de Visualização
 
 * A área de conteúdo que:
 
-   * Lista os itens de conteúdo (sejam páginas, ativos, postagens do fórum etc)
+   * Lista os itens de conteúdo (sejam páginas, ativos, postagens do fórum etc.)
    * Pode ser formatado como solicitado, por exemplo, coluna, cartão ou lista
    * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o dispositivo e/ou o tamanho da janela)
    * Usa rolagem infinita (não há mais paginação, todos os itens são listados em uma janela)
@@ -58,11 +61,11 @@ A interface habilitada para toque inclui:
 
 >[!NOTE]
 >
->Quase toda a funcionalidade do AEM foi portada para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverterá para a interface clássica. Consulte Status [do recurso da interface de](/help/release-notes/touch-ui-features-status.md) toque para obter mais informações.
+>Quase toda a funcionalidade AEM foi portada para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverterá para a interface clássica. Consulte Status [do recurso da interface de](/help/release-notes/touch-ui-features-status.md) toque para obter mais informações.
 
 A interface do usuário habilitada para toque foi projetada pela Adobe para fornecer consistência na experiência do usuário em vários produtos. Baseia-se em:
 
-* **A interface do usuário** do Coral (CUI) é uma implementação do estilo visual da Adobe para a interface do usuário habilitada para toque. A interface do usuário do Coral fornece tudo o que seu produto / projeto / aplicativo da Web precisa para adotar o estilo visual da interface do usuário.
+* **UI** Coral (CUI) uma implementação do estilo visual do Adobe para a interface habilitada para toque. A interface do usuário do Coral fornece tudo o que seu produto / projeto / aplicativo da Web precisa para adotar o estilo visual da interface do usuário.
 * **Os componentes da interface do usuário** Granite são criados com a interface do usuário Coral.
 
 Os princípios básicos da interface habilitada para toque são:
@@ -75,17 +78,17 @@ Os princípios básicos da interface habilitada para toque são:
 * Incluir testes incorporados
 * Design inferior para garantir que esses princípios sejam aplicados a todos os elementos e componentes
 
-Para obter mais uma visão geral da estrutura da interface habilitada para toque, consulte a [Estrutura do artigo da interface do usuário](/help/sites-developing/touch-ui-structure.md)habilitada para toque do AEM.
+Para obter mais uma visão geral da estrutura da interface habilitada para toque, consulte o artigo [Estrutura da interface habilitada para toque AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pilha de tecnologia AEM {#aem-technology-stack}
 
-O AEM usa a plataforma Granite como base e a plataforma Granite inclui, entre outras coisas, o repositório de conteúdo Java.
+AEM usa a plataforma Granite como base e a plataforma Granite inclui, entre outras coisas, o repositório de conteúdo Java.
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
 ## Granite {#granite}
 
-Granite é a pilha Open Web da Adobe, fornecendo vários componentes, incluindo:
+Granite é uma pilha de componentes Open Web que oferece:
 
 * Um iniciador de aplicativo
 * Uma estrutura OSGi na qual tudo é implantado
@@ -97,9 +100,9 @@ Granite é a pilha Open Web da Adobe, fornecendo vários componentes, incluindo:
 
 >[!NOTE]
 >
->O Granite é executado como um projeto de desenvolvimento aberto dentro da Adobe: as contribuições para o código, discussões e questões são feitas em toda a empresa.
+>Granite é executado como um projeto de desenvolvimento aberto dentro do Adobe: as contribuições para o código, discussões e questões são feitas em toda a empresa.
 >
->No entanto, Granite **não** é um projeto de código aberto. Ele é altamente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit e Lucene em particular), mas a Adobe desenha uma linha clara entre o que é público e o que é interno.
+>No entanto, Granite **não** é um projeto de código aberto. Ele é fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit e Lucene em particular), mas o Adobe traça uma linha clara entre o que é público e o que é interno.
 
 ## Interface do usuário Granite {#granite-ui}
 
@@ -152,7 +155,7 @@ Consiste principalmente em uma coleção de padrões de interação (por exemplo
 
 O cliente é independente de qualquer tecnologia de servidor. Desde que o servidor forneça a marcação apropriada, o lado do cliente pode cumprir sua função.
 
-Atualmente, os códigos JS e CSS são fornecidos como [clientlibs](/help/sites-developing/clientlibs.md) Granite na categoria:
+Atualmente, os códigos JS e CSS são entregues como [clientlibs](/help/sites-developing/clientlibs.md) Granite na categoria:
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -282,26 +285,28 @@ Implementação:
 
 ## Interface do usuário do Coral {#coral-ui}
 
-A interface do usuário Coral (CUI) é uma implementação do estilo visual da Adobe para a interface do usuário habilitada para toque, que foi projetada para fornecer consistência na experiência do usuário em vários produtos. A interface do usuário do Coral fornece tudo o que você precisa para adotar o estilo visual usado no ambiente de criação.
+A interface do usuário Coral (UI) é uma implementação de estilo visual CUI habilitado para toque para a interface do usuário, que foi projetada para fornecer consistência na experiência do usuário em vários produtos. A interface do usuário do Coral fornece tudo o que você precisa para adotar o estilo visual usado no ambiente de criação.
 
 >[!CAUTION]
 >
->A interface do usuário Coral é uma biblioteca de interface disponibilizada aos clientes do AEM para criar aplicativos e interfaces da Web dentro dos limites do uso licenciado do produto.
+>A interface do usuário Coral é uma biblioteca da interface do usuário disponibilizada para clientes AEM para criar aplicativos e interfaces da Web dentro dos limites do uso licenciado do produto.
 >
 >O uso da interface do coral é permitido apenas:
 >
->* Quando tiver sido despachado e fornecido junto com o AEM.
+>* Quando tiver sido despachado e acompanhado de AEM.
 >* Para uso ao estender a interface existente do ambiente de criação.
->* Materiais de suporte corporativos, anúncios e apresentações da Adobe.
+>* materiais de apoio corporativos, anúncios e apresentações do Adobe.
 >* A interface do usuário de aplicativos da marca Adobe (a fonte não deve estar prontamente disponível para outros usos).
 >* Com pequenas personalizações.
+
 >
 >
 A utilização da interface do coral deve ser evitada em:
 >
->* Documentos e outros itens não relacionados à Adobe.
->* Ambientes de criação de conteúdo (onde os itens anteriores podem ser gerados por outros).
->* Aplicativos/componentes/páginas da Web que não estão claramente conectados à Adobe.
+>* Documentos e outros itens não relacionados ao Adobe.
+>* ambientes de criação de conteúdo (onde os itens anteriores podem ser gerados por outros).
+>* Aplicativos/componentes/páginas da Web que não estão claramente conectados ao Adobe.
+
 >
 
 
@@ -310,9 +315,9 @@ A interface do usuário do Coral é uma coleção de elementos básicos para o d
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Projetado para ser modular desde o início, cada módulo forma uma camada distinta com base em sua função primária. Embora as camadas tenham sido projetadas para oferecer suporte umas às outras, elas também podem ser usadas independentemente, se necessário. Isso permite implementar a experiência do usuário do Coral em qualquer ambiente compatível com HTML.
+Projetado para ser modular a partir do start, cada módulo forma uma camada distinta com base em sua função primária. Embora as camadas tenham sido projetadas para oferecer suporte umas às outras, elas também podem ser usadas independentemente, se necessário. Isso permite implementar a experiência do usuário do Coral em qualquer ambiente compatível com HTML.
 
-Com a interface do usuário Coral, não é obrigatório usar um modelo e/ou plataforma de desenvolvimento específico. O objetivo principal do Coral é fornecer marcação HTML5 unificada e limpa, independentemente do método real usado para emitir essa marcação. Isso pode ser usado para renderização no cliente ou no servidor, modelos, JSP, PHP ou até mesmo aplicativos Adobe Flash RIA - para nomear apenas alguns.
+Com a interface do usuário Coral, não é obrigatório usar um modelo e/ou plataforma de desenvolvimento específico. O objetivo principal do Coral é fornecer marcação HTML5 unificada e limpa, independentemente do método real usado para emitir essa marcação. Isso pode ser usado para renderização do cliente ou do servidor, modelos, JSP, PHP ou até mesmo aplicativos RIA do Flash do Adobe - para nomear apenas alguns.
 
 ### Elementos HTML - A camada de marcação {#html-elements-the-markup-layer}
 
@@ -366,7 +371,7 @@ Os valores reais são definidos em um arquivo de variável MENOS (o seguinte ext
 
 ### Plug-ins de elemento {#element-plugins}
 
-Muitos dos elementos HTML precisarão exibir algum tipo de comportamento dinâmico, como abrir e fechar menus pop-up. Essa é a função dos plug-ins do elemento, que realizam essas tarefas manipulando o DOM usando o JavaScript.
+Muitos dos elementos HTML precisarão exibir algum tipo de comportamento dinâmico, como abrir e fechar menus pop-up. Essa é a função dos plug-ins do elemento, que fazem essas tarefas manipulando o DOM usando o JavaScript.
 
 Um plug-in é:
 
@@ -383,7 +388,7 @@ Embora o desenvolvedor possa selecionar a melhor abordagem para qualquer plug-in
 * `data-*` para opções relacionadas ao layout HTML. Por exemplo, para especificar o número de colunas
 * Opções/classes da API para funcionalidade relacionada aos dados. Por exemplo, construir a lista de itens a serem exibidos
 
-O mesmo conceito é usado para implementar a validação do formulário. Para um elemento que você deseja validar, especifique o formulário de entrada necessário como um `data-*` atributo personalizado. Esse atributo é usado como uma opção para um plug-in de validação.
+O mesmo conceito é usado para implementar a validação do formulário. Para um elemento que você deseja validar, você deve especificar o formulário de entrada necessário como um `data-*` atributo personalizado. Esse atributo é usado como uma opção para um plug-in de validação.
 
 >[!NOTE]
 >
@@ -493,14 +498,14 @@ Esta biblioteca é uma coleção de plug-ins auxiliares javascript e/ou funçõe
 * Independente da interface
 * No entanto, é fundamental para a criação de aplicativos da Web completos
 
-Eles incluem o manuseio XSS e o barramento de evento.
+Eles incluem o manuseio XSS e o barramento do evento.
 
 Embora os plug-ins e os widgets do elemento HTML possam depender da funcionalidade fornecida pela biblioteca de utilitários, a biblioteca de utilitários não pode ter nenhuma dependência dos elementos nem dos próprios widgets.
 
 Propósito:
 
 * Fornecer funcionalidade comum
-* Implementação de barramento de evento
+* Implementação do barramento do Evento
 * Modelos do cliente
 * XSS
 
