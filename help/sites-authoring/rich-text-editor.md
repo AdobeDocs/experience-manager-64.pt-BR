@@ -1,8 +1,8 @@
 ---
 title: Uso do Editor de rich text para criar conteúdo
 seo-title: Uso do Editor de rich text para criar conteúdo
-description: Usar o Editor de Rich Text para criar texto no AEM.
-seo-description: Usar o Editor de Rich Text para criar texto no AEM.
+description: Usar o Editor de Rich Text para criar texto em AEM.
+seo-description: Usar o Editor de Rich Text para criar texto em AEM.
 uuid: d8dc5989-7a1c-4bab-88fd-040c2c9aa69f
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
 translation-type: tm+mt
 source-git-commit: f1026e4dc9e12f760509a706a92888b90c9af395
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 33%
 
 ---
 
 
 # Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
 
-O Editor de Rich Text (RTE) é um elemento básico fundamental para a criação de texto em páginas do AEM. Muitos componentes, como Texto, Texto e Imagem, e Tabela, são baseados no RTE.
+O Editor de Rich Text (RTE) é um elemento básico fundamental para a criação de texto em AEM páginas. Muitos componentes, como Texto, Texto e Imagem, e Tabela, são baseados no RTE.
 
 >[!NOTE]
 >
 >A cópia de listas aninhadas no RTE não funciona como esperado. Ao copiar listas aninhadas do Microsoft Word, será necessário limpar manualmente as listas depois de colar o texto no RTE.
 
-## In-place editing {#in-place-editing}
+## Edição no local {#in-place-editing}
 
 Selecionar um componente baseado em texto com um único toque ou clique revela a barra de ferramentas [do](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)componente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Tocar/clicar novamente ou selecionar inicialmente o componente com um toque/clique duplo lento abre a edição no local, que tem sua própria barra de ferramentas. Aqui, você pode editar o conteúdo e efetuar alterações básicas na formatação.
+Tocar/clicar novamente ou selecionar inicialmente o componente com um toque/clique lento no duplo abre a edição no local, que tem sua própria barra de ferramentas. Aqui, você pode editar o conteúdo e efetuar alterações básicas na formatação.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -55,7 +58,7 @@ Para componentes baseados em texto, selecionar o modo de tela cheia na barra de 
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-O modo de tela inteira mostra todas as opções do editor de Rich Text, que são configuradas pelo administrador. Elas podem variar entre as instâncias do AEM, [dependendo da configuração](../sites-administering/rich-text-editor.md) fornecida pelos administradores ou desenvolvedores do AEM. Se encontrar uma opção ausente, peça ao administrador para disponibilizá-la.
+O modo de tela inteira mostra todas as opções do editor de Rich Text, que são configuradas pelo administrador. Elas podem variar AEM instâncias, [dependendo da configuração](../sites-administering/rich-text-editor.md) fornecida pelos administradores ou AEM desenvolvedores. Se encontrar uma opção ausente, peça ao administrador para disponibilizá-la.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
