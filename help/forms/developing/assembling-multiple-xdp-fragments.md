@@ -12,21 +12,24 @@ topic-tags: operations
 discoiquuid: 0ed1f69d-c212-4d47-a572-ae030f2983fc
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1876'
+ht-degree: 0%
 
 ---
 
 
 # Montagem de vários fragmentos XDP {#assembling-multiple-xdp-fragments}
 
-Você pode reunir vários fragmentos XDP em um único documento XDP. Por exemplo, considere fragmentos XDP nos quais cada arquivo XDP contenha um ou mais subformulários usados para criar um formulário de integridade. A ilustração a seguir mostra a exibição de estrutura de tópicos (representa o arquivo tuc018_template_flow.xdp usado no início rápido da *Montagem de vários fragmentos* XDP):
+Você pode reunir vários fragmentos XDP em um único documento XDP. Por exemplo, considere fragmentos XDP nos quais cada arquivo XDP contenha um ou mais subformulários usados para criar um formulário de integridade. A ilustração a seguir mostra a visualização do outline (representa o arquivo tuc018_template_flow.xdp usado no start rápido *Montagem de vários fragmentos* XDP):
 
 ![am_am_pro](assets/am_am_forma.png)
 
-A ilustração a seguir mostra a seção do paciente (representa o arquivo tuc018_contact.xdp usado no início rápido da *Montagem de vários fragmentos* XDP):
+A ilustração a seguir mostra a seção do paciente (representa o arquivo tuc018_contact.xdp usado no start rápido *Montagem de vários fragmentos* XDP):
 
 ![am_am_formb](assets/am_am_formb.png)
 
-A ilustração a seguir mostra a seção de integridade do paciente (representa o arquivo tuc018_paciente.xdp usado no início rápido da *Montagem de vários fragmentos* XDP):
+A ilustração a seguir mostra a seção de integridade do paciente (representa o arquivo tuc018_paciente.xdp usado no start rápido *Montagem de vários fragmentos* XDP):
 
 ![am_am_formc](assets/am_am_formc.png)
 
@@ -34,7 +37,7 @@ Este fragmento contém dois subformulários chamados *subPatientPhysical* e *sub
 
 ![am_am_formd](assets/am_am_formd.png)
 
-O seguinte documento DDX reúne vários fragmentos XDP em um documento XDP.
+O seguinte documento DDX monta vários fragmentos XDP em um documento XDP.
 
 ```as3
  <?xml version="1.0" encoding="UTF-8"?> 
@@ -72,17 +75,17 @@ O documento DDX contém uma `result` tag XDP que especifica o nome do resultado.
  }
 ```
 
-A `XDP source` tag especifica o arquivo XDP que representa um documento XDP completo que pode ser usado como contêiner para adicionar fragmentos XDP ou como um de vários documentos anexados juntos em ordem. Nessa situação, o documento XDP é usado somente como um contêiner (a primeira ilustração é mostrada na *Montagem de vários fragmentos* XDP). Ou seja, os outros arquivos XDP são colocados no contêiner XDP.
+A `XDP source` tag especifica o arquivo XDP que representa um documento XDP completo que pode ser usado como um container para adicionar fragmentos XDP ou como um de vários documentos que são anexados juntos em ordem. Nessa situação, o documento XDP é usado somente como um container (a primeira ilustração é mostrada na *Montagem de vários fragmentos* XDP). Ou seja, os outros arquivos XDP são colocados dentro do container XDP.
 
 Para cada subformulário, é possível adicionar um `XDPContent` elemento (esse elemento é opcional). No exemplo acima, observe que há três subformulários: `subPatientContact`, `subPatientPhysical`e `subPatientHealth`. O `subPatientPhysical` subformulário e o `subPatientHealth` subformulário estão localizados no mesmo arquivo XDP, tuc018_paciente.xdp. O elemento de fragmento especifica o nome do subformulário, conforme definido no Designer.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Para obter mais informações sobre um documento DX, consulte Serviço de [Montagem e Referência](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
+>Para obter mais informações sobre um documento DDX, consulte [Assembler Service e DDX Reference](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -105,8 +108,8 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
 **Criar um cliente de Montador de PDF**
 
@@ -114,7 +117,7 @@ Antes de executar programaticamente uma operação de Assembler, crie um cliente
 
 **Referência a um documento DDX existente**
 
-Um documento DDX deve ser referenciado para reunir vários documentos XDP. Este documento DDX deve conter `XDP result`, `XDP source`e `XDPContent` elementos.
+Um documento DDX deve ser referenciado para montar vários documentos XDP. Esse documento DDX deve conter `XDP result`, `XDP source`e `XDPContent` elementos.
 
 **Referência aos documentos XDP**
 
@@ -136,7 +139,7 @@ Para montar vários arquivos XDP, chame a `invokeDDX` operação. O serviço Ass
 
 **Recuperar o documento XDP montado**
 
-Um documento XDP montado é retornado dentro de um objeto de coleção. Insira o objeto da coleção e salve o documento XDP como um arquivo XDP. Você também pode passar o documento XDP para outro serviço de formulários AEM, como Saída.
+Um documento XDP montado é retornado dentro de um objeto de coleção. Insira o objeto da coleção e salve o documento XDP como um arquivo XDP. Você também pode passar o documento XDP para outro serviço AEM Forms, como Saída.
 
 **Consulte também:**
 
@@ -144,13 +147,13 @@ Um documento XDP montado é retornado dentro de um objeto de coleção. Insira o
 
 [Montar vários fragmentos XDP usando a API de serviço da Web](assembling-multiple-xdp-fragments.md#assemble-multiple-xdp-fragments-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Montagem Programática de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[Montagem programática de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-[Criação de documentos PDF usando fragmentos](/help/forms/developing/creating-document-output-streams.md)
+[Criação de Documentos PDF usando fragmentos](/help/forms/developing/creating-document-output-streams.md)
 
 ## Montar vários fragmentos XDP usando a API Java {#assemble-multiple-xdp-fragments-using-the-java-api}
 
@@ -167,7 +170,7 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (Java):
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento DX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
+   * Crie um `java.io.FileInputStream` objeto que represente o documento DDX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
 
 1. Consulte os documentos XDP.
@@ -176,7 +179,7 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (Java):
    * Crie um `com.adobe.idp.Document` objeto e passe o `java.io.FileInputStream` objeto que contém o arquivo XDP de entrada (repita essa tarefa para cada arquivo XDP).
    * Adicione uma entrada ao `java.util.Map` objeto chamando seu `put` método e transmitindo os seguintes argumentos:
 
-      * Um valor de string que representa o nome da chave. Esse valor deve corresponder ao valor do `source` elemento especificado no documento DX (repita essa tarefa para cada arquivo XDP).
+      * Um valor de string que representa o nome da chave. Esse valor deve corresponder ao valor do `source` elemento especificado no documento DDX (repita essa tarefa para cada arquivo XDP).
       * Um `com.adobe.idp.Document` objeto que contém o documento XDP que corresponde ao `source` elemento (repita essa tarefa para cada arquivo XDP).
 
 1. Defina as opções de tempo de execução.
@@ -191,6 +194,7 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (Java):
    * Um `com.adobe.idp.Document` objeto que representa o documento DX a ser usado
    * Um `java.util.Map` objeto que contém os arquivos XDP de entrada
    * Um `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log de trabalhos
+
    O `invokeDDX` método retorna um `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contém o documento XDP montado.
 
 1. Recupere o documento XDP montado.
@@ -205,9 +209,9 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (Java):
 
 [Montagem de vários fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 
-[Início rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Start rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -230,7 +234,7 @@ Monte vários fragmentos XDP usando a API de serviço do Assembler (serviço da 
 1. Crie um cliente do Montador de PDF.
 
    * Crie um `AssemblerServiceClient` objeto usando seu construtor padrão.
-   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM, como `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
+   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms, como `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `AssemblerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -242,7 +246,7 @@ Monte vários fragmentos XDP usando a API de serviço do Assembler (serviço da 
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DX.
+   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DDX.
    * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento DX e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` objeto `Read` . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
@@ -273,6 +277,7 @@ Monte vários fragmentos XDP usando a API de serviço do Assembler (serviço da 
    * Um `BLOB` objeto que representa o documento DDX
    * O `MyMapOf_xsd_string_To_xsd_anyType` objeto que contém os arquivos necessários
    * Um `AssemblerOptionSpec` objeto que especifica opções de tempo de execução
+
    O `invokeDDX` método retorna um `AssemblerResult` objeto que contém os resultados da tarefa e quaisquer exceções que ocorreram.
 
 1. Recupere o documento XDP montado.
@@ -287,4 +292,4 @@ Monte vários fragmentos XDP usando a API de serviço do Assembler (serviço da 
 
 [Montagem de vários fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
