@@ -34,15 +34,15 @@ O seguinte SOAP (Java API Quick Start) está disponível para o Application Mana
 
 [Start rápido (modo SOAP): Obter status de aplicativos usando a API Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Start rápido (modo SOAP):Visualização dos formulários AEM e do arquivo de aplicativos posterior usando a API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Start rápido (modo SOAP):Visualização do arquivo do AEM Forms e de aplicativos posteriores usando a API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Start rápido (modo SOAP):Excluir o arquivo do aplicativo AEM Forms usando a API Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Start rápido (modo SOAP):Exclusão do arquivo do aplicativo AEM Forms usando a API Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O start rápido localizado em Programação com AEM Forms baseia-se no Forms Server que está sendo implantado no JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O start rápido localizado em Programação com a AEM Forms é baseado no Forms Server que está sendo implantado em JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Criação da versão do aplicativo usando a API Java {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -444,7 +444,7 @@ public class GetApplication_SOAP {
 
 O exemplo de código Java a seguir obtém os aplicativos usando a API Java.
 
-***observação**: Obter a API de aplicativo do AEM Forms, getApplications(), retorna somente aplicativos implantados. *
+***observação**: Obter a API do aplicativo AEM Forms, getApplications(), retorna somente aplicativos implantados. *
 
 ```as3
 /* 
@@ -646,7 +646,7 @@ public class GetApplicationStatus_SOAP {
 
 ## Start rápido (modo SOAP):Visualização do arquivo do aplicativo LiveCycle ES2 e posterior usando a API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-O exemplo de código Java a seguir é para preve AEM Forms e arquivamento de aplicativos posteriores usando a API Java.
+O exemplo de código Java a seguir é para preve AEM Forms e o arquivamento de aplicativos posteriores usando a API Java.
 
 ```as3
 /* 
