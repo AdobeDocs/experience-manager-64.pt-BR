@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +50,7 @@ Isso ajuda um desenvolvedor a:
 >
 >* em uma instância do autor usando o modo de execução nosamplecontent
 >* uma instância de publicação
+
 >
 >
 Deve ser desativado novamente após a utilização.
@@ -55,8 +59,8 @@ Deve ser desativado novamente após a utilização.
 >
 >Consulte:
 >
->* Artigo da Base de conhecimento, [Solução de problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)do AEM TouchUI, para obter mais dicas e ferramentas.
->* Sessão do AEM Gems sobre o Modo [de desenvolvedor do](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)AEM 6.0.
+>* Artigo da Base de conhecimento, Solução de [problemas AEM problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)da interface do usuário, para obter mais dicas e ferramentas.
+>* AEM sessão Gems sobre [AEM 6.0 Developer Mode](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 
 ## Abrindo o modo Desenvolvedor {#opening-developer-mode}
@@ -100,6 +104,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
    * todos os scripts de componente usados para renderizar o componente.
    * o caminho do conteúdo do repositório para esse componente específico.
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **Editar script**: um link que:
@@ -110,6 +115,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
    * A hierarquia dentro do componente selecionado.
    * Tempos de renderização do componente selecionado isoladamente, todos os componentes individuais aninhados dentro dele e o total combinado.
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
@@ -122,7 +128,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
 Esperamos que a guia **Erros** esteja sempre vazia (como acima), mas quando ocorrerem problemas, os detalhes a seguir são mostrados para cada componente:
 
-* Um aviso se o componente gravar uma entrada no registro de erros, juntamente com detalhes do erro e links diretos para o código apropriado no CRXDE Lite.
+* Um aviso se o componente gravar uma entrada no registro de erros, juntamente com detalhes do erro e links diretos para o código apropriado dentro do CRXDE Lite.
 * Um aviso se o componente abrir uma sessão de administrador.
 
 Por exemplo, em uma situação em que um método indefinido é chamado, o erro resultante será mostrado na guia **Erros** :
