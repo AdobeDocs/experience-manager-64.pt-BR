@@ -1,8 +1,8 @@
 ---
-title: Reestruturação comum de repositório no AEM 6.4
-seo-title: Reestruturação comum de repositório no AEM 6.4
-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4, que são comuns para todas as áreas do AEM.
-seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4, que são comuns para todas as áreas do AEM.
+title: Reestruturação comum dos repositórios no AEM 6.4
+seo-title: Reestruturação comum dos repositórios no AEM 6.4
+description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4, que são comuns para todas as áreas de AEM.
+seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4, que são comuns para todas as áreas de AEM.
 uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 2%
 ---
 
 
-# Reestruturação comum de repositório no AEM 6.4{#common-repository-restructuring-in-aem}
+# Reestruturação comum dos repositórios no AEM 6.4{#common-repository-restructuring-in-aem}
 
-Conforme descrito na página principal [Reestruturação do repositório no AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para o AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que podem afetar todas as soluções. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do AEM 6.5.
+Conforme descrito na página principal [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para a AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que possam afetar todas as soluções. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
 **Com atualização 6.4**
 
@@ -33,15 +33,15 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
 **Antes da atualização do 6.5**
 
 * [Configurações do ContextHub](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#contexthub-configurations)
-* [Designs do Classic Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-cloud-services-designs)
+* [Designs de Cloud Services clássicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-cloud-services-designs)
 * [Designs de Painéis clássicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-dashboards-designs)
 * [Designs de relatórios clássicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-reports-designs)
 * [Designs padrão](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#default-designs)
-* [Adobe DTM JavaScript Endpoint](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-javascript-endpoint)
-* [Adobe DTM Web Hook Endpoint](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-web-hook-endpoint)
+* [Endpoint JavaScript do Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-javascript-endpoint)
+* [Endpoint de gancho na Web do Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-web-hook-endpoint)
 * [Tarefas da caixa de entrada](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#inbox-tasks)
 * [Configurações de Blueprint do Multi-site Manager](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-* [Configurações de Gadget de Painéis do AEM Projects](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#aem-projects-dashboard-gadget-configurations)
+* [AEM Projetos Configurações de Gadget de Painéis](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#aem-projects-dashboard-gadget-configurations)
 * [Modelo de Correio Eletrônico de Notificação de Replicação](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#replication-notification-e-mail-template)
 * [Tags](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#tags)
 * [Cloud Services de tradução](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-cloud-services)
@@ -49,14 +49,14 @@ Conforme descrito na página principal [Reestruturação do repositório no AEM 
 * [Regras de tradução](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules)
 * [Biblioteca do cliente do widget de tradução](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-widget-client-library)
 * [Console Web de Ativação de árvore](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#tree-activation-web-console)
-* [Serviços em nuvem do fornecedor do conector de tradução](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#vendor-translation-connector-cloud-services)
+* [Cloud Services do conector de tradução do fornecedor](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#vendor-translation-connector-cloud-services)
 * [Modelos de email de notificação de fluxo de trabalho](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-notification-email-templates)
 
 ## Com atualização 6.4 {#with-upgrade}
 
 ### Configurações do ContextHub {#contexthub-6.4}
 
-A partir do AEM 6.4, não há configuração padrão do ContextHub. Portanto, no nível raiz do site, `cq:contextHubPathproperty` deve ser definido um parâmetro para indicar qual configuração deve ser usada.
+A partir AEM 6.4, não há configuração padrão do ContextHub. Portanto, no nível raiz do site, `cq:contextHubPathproperty` deve ser definido um parâmetro para indicar qual configuração deve ser usada.
 
 1. Navegue até a raiz do site.
 1. Abra as propriedades da página raiz e selecione a guia Personalização.
@@ -86,9 +86,9 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
    <td><strong>Orientação relativa à reestruturação</strong></td> 
    <td><p>Todos os modelos de fluxo de trabalho novos ou modificados devem ser migrados para /conf/global/workflow/models.</p> 
     <ol> 
-     <li>Implante os modelos de fluxo de trabalho modificados em uma instância de desenvolvimento local do AEM 6.4, de modo que eles existam no local Anterior.</li> 
-     <li>Edite o modelo de fluxo de trabalho usando o Editor de modelos de fluxo de trabalho do AEM em AEM &gt; Ferramentas &gt; Fluxo de trabalho &gt; Modelos.</li> 
-     <li>Ao migrar modelos de fluxo de trabalho modificados fornecidos pelo AEM
+     <li>Implante os Modelos de fluxo de trabalho modificados em uma instância de desenvolvimento local AEM 6.4, de modo que eles existam no local Anterior.</li> 
+     <li>Edite o modelo de fluxo de trabalho usando AEM Editor de modelos de fluxo de trabalho em AEM &gt; Ferramentas &gt; Fluxo de trabalho &gt; Modelos.</li> 
+     <li>Ao migrar modelos de fluxo de trabalho modificados AEM fornecidos
       <ol> 
        <li>Com o Editor do modelo de fluxo de trabalho aberto, modifique o URL de endereço do navegador e substitua o segmento de caminho /libs/settings/workflow/models por /etc/workflow/models.
         <ul> 
@@ -97,7 +97,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
       </ol> </li> 
      <li>Ative o modo de Edição no Editor do modelo de fluxo de trabalho que copiará a definição do modelo de fluxo de trabalho para /conf/global/workflow/models.</li> 
      <li>Toque no botão Sincronizar para sincronizar as alterações no Modelo de Fluxo de Trabalho em /var/workflow/models.</li> 
-     <li>Exporte o Modelo de fluxo de trabalho (/conf/global/workflow/models/&lt;workflow-model&gt;) e o Modelo de fluxo de trabalho em tempo de execução (/var/workflow/models/&lt;workflow-model&gt;) e integre-os ao projeto do AEM.
+     <li>Exporte o Modelo de fluxo de trabalho (/conf/global/workflow/models/&lt;workflow-model&gt;) e o Modelo de fluxo de trabalho em tempo de execução (/var/workflow/models/&lt;workflow-model&gt;) e integre-se ao projeto AEM.
       <ol> 
        <li>Por exemplo, exportar:
         <ul> 
@@ -114,7 +114,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
      <li><code>/conf/global/settings/workflow/models</code></li> 
      <li><code>/libs/settings/workflow/models</code></li> 
      <li><code>/etc/workflow/models</code></li> 
-    </ol> <p>Portanto, qualquer personalização de modelos de fluxo de trabalho fornecidos pelo AEM persistida no local Anterior deve ser movida para /conf/global/settings/workflow/models se for necessário mantê-los, caso contrário, eles serão substituídos pela definição de Modelo de fluxo de trabalho fornecida pelo AEM em /libs/settings/workflow/models.</p> </td> 
+    </ol> <p>Portanto, qualquer personalização de modelos de fluxo de trabalho fornecidos pela AEM persistiu no local Anterior deve ser movida para /conf/global/settings/workflow/models se for necessário mantê-los, caso contrário, eles serão substituídos pela definição de Modelo de fluxo de trabalho fornecida pela AEM em /libs/settings/workflow/models.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -139,7 +139,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
    <td><strong>Notas</strong></td> 
    <td>Quaisquer referências de caminho explícitas no <code>
      custom
-    </code> código para o Local anterior também devem levar em conta o Novo local. É recomendável que esse código seja refatorado para usar as APIs de fluxo de trabalho do AEM.</td> 
+    </code> código para o Local anterior também devem levar em conta o Novo local. É recomendável que esse código seja refatorado para usar as APIs de fluxo de trabalho AEM.</td> 
   </tr>
  </tbody>
 </table>
@@ -170,7 +170,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
      <li><code>/conf/global/settings/workflow/launcher</code></li> 
      <li><code>/libs/settings/workflow/launcher</code></li> 
      <li><code>/etc/workflow/launcher</code></li> 
-    </ol> <p>Assim, todas as personalizações do Workflow Launcher fornecido pelo AEM persistirem no local Anterior devem ser movidas para o novo local (<code>/conf/global/settings/workflow/launcher</code> se forem retidas, caso contrário, serão substituídas pela definição do Workflow Launcher fornecida pelo AEM em <code>/libs/settings/workflow/launcher</code>.</p> </td> 
+    </ol> <p>Assim, qualquer personalização do Workflow Launcher fornecido AEM persistiu no local Anterior deve ser movida para o Novo Local (<code>/conf/global/settings/workflow/launcher</code> se for necessário mantê-los, caso contrário, eles serão substituídos pela definição do Workflow Launcher fornecida pelo AEM em <code>/libs/settings/workflow/launcher</code>.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -200,9 +200,9 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
-   <td><p>O AEM 6.4 SP1, quando é lançado, faz com que essa reestruturação possa ser adiada para 6.5 <code>
+   <td><p>AEM 6.4 SP1, quando é libertada, faz com que esta reestruturação possa ser adiada para 6.5 <code>
       upgrade
-     </code>.</p> <p>Se a atualização para o AEM 6.4 antes do AEM 6.4 SP1 ser lançado, essa reestruturação deve ser realizada como parte do projeto de atualização. Sem isso, editar e salvar as Etapas do fluxo de trabalho que fazem referência aos scripts no Local anterior removerá a referência do Script do fluxo de trabalho da Etapa do fluxo de trabalho totalmente, e somente os Scripts do fluxo de trabalho em novos locais estarão disponíveis na lista suspensa de seleção de scripts.</p> </td> 
+     </code>.</p> <p>Se a atualização para AEM 6.4 antes da AEM 6.4 SP1 for lançada, esta reestruturação deverá ser realizada como parte do projeto de atualização. Sem isso, editar e salvar as Etapas do fluxo de trabalho que fazem referência aos scripts no Local anterior removerá a referência do Script do fluxo de trabalho da Etapa do fluxo de trabalho totalmente, e somente os Scripts do fluxo de trabalho em novos locais estarão disponíveis na lista suspensa de seleção de scripts.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -223,14 +223,14 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Todas as configurações do ContextHub novas ou modificadas devem ser migradas para o novo local e as páginas de referência do AEM Sites devem ser atualizadas para refletir o novo local.</p> 
+   <td><p>Quaisquer Configurações do ContextHub novas ou modificadas devem ser migradas para o novo local e as páginas do AEM Sites de referência devem ser atualizadas para refletir o novo local.</p> 
     <ol> 
      <li>Copie quaisquer Configurações do ContextHub novas ou modificadas do local anterior para o novo local.</li> 
-     <li>Associe as configurações do AEM aplicáveis às hierarquias de conteúdo do AEM.
+     <li>Associe as configurações AEM aplicáveis às hierarquias de conteúdo AEM.
       <ol> 
-       <li><strong>Hierarquias de página do AEM Sites por meio de Sites AEM &gt; Página &gt; Propriedades da página &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
+       <li><strong>Hierarquias de página do AEM Sites via AEM Sites &gt; Página &gt; Propriedades da página &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
       </ol> </li> 
-     <li>Desassocie todas as configurações do ContextHub herdadas migradas das hierarquias de conteúdo do AEM acima.</li> 
+     <li>Desassocie quaisquer Configurações do ContextHub herdadas migradas das hierarquias de conteúdo AEM acima.</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -240,7 +240,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
  </tbody>
 </table>
 
-### Designs do Classic Cloud Services {#classic-cloud-services-designs}
+### Designs de Cloud Services clássicos {#classic-cloud-services-designs}
 
 <table> 
  <tbody>
@@ -265,7 +265,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
         designPath
        </code></span> propriedade.</li> 
      <li>Atualize quaisquer Páginas que façam referência ao Local anterior para usar a nova categoria da Biblioteca do cliente (isso requer a atualização do código de implementação da Página).</li> 
-     <li>Atualize as regras do AEM Dispatcher para permitir o serviço de Bibliotecas do cliente por meio do diretório /etc.clientlibs/.. servlet proxy.</li> 
+     <li>Atualize AEM regras do Dispatcher para permitir o serviço de Bibliotecas do Cliente através da pasta /etc.clientlibs/.. servlet proxy.</li> 
     </ol> <p>Para qualquer design que NÃO seja gerenciado no SCM, e tempo de execução modificado por meio das Caixas de diálogo de design.</p> 
     <ul> 
      <li>Não remova os Designs que podem ser criados para autores de <code>/etc</code>.</li> 
@@ -303,7 +303,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
        designPath
       </code> propriedade.</li> 
      <li>Atualize quaisquer Páginas que façam referência ao Local anterior para usar a nova categoria da Biblioteca do cliente (isso requer a atualização do código de implementação da Página).</li> 
-     <li>Atualize as regras do AEM Dispatcher para permitir o serviço de Bibliotecas do cliente por meio do diretório /etc.clientlibs/.. servlet proxy.</li> 
+     <li>Atualize AEM regras do Dispatcher para permitir o serviço de Bibliotecas do Cliente através da pasta /etc.clientlibs/.. servlet proxy.</li> 
     </ol> <p>Para qualquer design que NÃO seja gerenciado no SCM, e tempo de execução modificado por meio das Caixas de diálogo de design.</p> 
     <ul> 
      <li>Não remova os Designs que podem ser criados para autores de <code>/etc</code>.</li> 
@@ -341,7 +341,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
        designPath
       </code> propriedade.</li> 
      <li>Atualize quaisquer Páginas que façam referência ao Local anterior para usar a nova categoria da Biblioteca do cliente (isso requer a atualização do código de implementação da Página).</li> 
-     <li>Atualize as regras do AEM Dispatcher para permitir o serviço de Bibliotecas do cliente por meio do diretório /etc.clientlibs/.. servlet proxy.</li> 
+     <li>Atualize AEM regras do Dispatcher para permitir o serviço de Bibliotecas do Cliente através da pasta /etc.clientlibs/.. servlet proxy.</li> 
     </ol> <p>Para qualquer design que NÃO seja gerenciado no SCM, e tempo de execução modificado por meio das Caixas de diálogo de design.</p> 
     <ul> 
      <li>Não remova os Designs que podem ser criados para autores de <code>/etc</code>.</li> 
@@ -379,7 +379,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
        designPath
       </code> propriedade.</li> 
      <li>Atualize quaisquer Páginas que façam referência ao Local anterior para usar a nova categoria da Biblioteca do cliente (isso requer a atualização do código de implementação da Página).</li> 
-     <li>Atualize as regras do AEM Dispatcher para permitir o serviço de Bibliotecas do cliente por meio do diretório /etc.clientlibs/.. servlet proxy.</li> 
+     <li>Atualize AEM regras do Dispatcher para permitir o serviço de Bibliotecas do Cliente através da pasta /etc.clientlibs/.. servlet proxy.</li> 
     </ol> <p>Para qualquer design que NÃO seja gerenciado no SCM, e tempo de execução modificado por meio das Caixas de diálogo de design.</p> 
     <ul> 
      <li>Não remova os Designs que podem ser criados para autores de <code>/etc</code>.</li> 
@@ -392,7 +392,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
  </tbody>
 </table>
 
-### Adobe DTM JavaScript Endpoint {#adobe-dtm-javascript-endpoint}
+### Endpoint JavaScript do Adobe DTM {#adobe-dtm-javascript-endpoint}
 
 <table> 
  <tbody>
@@ -415,7 +415,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
  </tbody>
 </table>
 
-### Adobe DTM Web Hook Endpoint {#adobe-dtm-web-hook-endpoint}
+### Endpoint de gancho na Web do Adobe DTM {#adobe-dtm-web-hook-endpoint}
 
 <table> 
  <tbody>
@@ -492,7 +492,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
  </tbody>
 </table>
 
-### Configurações de Gadget de Painéis do AEM Projects {#aem-projects-dashboard-gadget-configurations}
+### AEM Projetos Configurações de Gadget de Painéis {#aem-projects-dashboard-gadget-configurations}
 
 <table> 
  <tbody>
@@ -506,18 +506,18 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Todas as configurações do Gadget de Painel de projetos AEM novas ou modificadas devem ser migradas para o novo local (<code>/apps</code>).</p> 
+   <td><p>Qualquer configuração de gadget de Painel de projetos nova ou modificada deve ser migrada para o novo local (<code>/apps</code>).</p> 
     <ol> 
-     <li>Copie quaisquer Configurações de Gadget de Painel de projetos AEM novas ou modificadas do local anterior para o novo local (<code>/apps</code>).
+     <li>Copie todas as Configurações de gadget de Painéis de projetos novas ou modificadas do local anterior para o novo local (<code>/apps</code>).
       <ol> 
-       <li>Não copie configurações de Gadget de Painel de projetos AEM não modificadas, pois elas já existem no novo local (<code>/libs</code>).</li> 
+       <li>Não copie configurações de gadget de Painéis AEM projetos não modificadas, pois elas agora existem no novo local (<code>/libs</code>).</li> 
       </ol> </li> 
-     <li>Atualize quaisquer modelos de projetos AEM que façam referência à Localização anterior para apontar para a nova localização apropriada.</li> 
+     <li>Atualize quaisquer modelos de AEM Projetos que façam referência ao Local anterior para apontar para o novo local apropriado.</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
-   <td>Se o pacote de compatibilidade do AEM 6.4 for aplicado, será necessário executar as atividades de alinhamento do repositório no momento da remoção do pacote de compatibilidade.</td> 
+   <td>Se o pacote de compatibilidade AEM 6.4 for aplicado, será necessário executar as atividades de alinhamento do repositório no momento da remoção do pacote de compatibilidade.</td> 
   </tr>
  </tbody>
 </table>
@@ -573,12 +573,12 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
     <ol> 
      <li>Copie todas as tags do local anterior para o novo local.</li> 
      <li>Remova todas as tags do local anterior.</li> 
-     <li>Por meio do console da Web do AEM, reinicie o pacote OSGi de Marcação do Day Communique 5 em <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> para que o AEM reconheça que o novo local contém conteúdo e deve ser usado.</li> 
+     <li>Por meio do console da Web AEM, reinicie o pacote OSGi de Marcação do Day Communique 5 em <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> para AEM reconhecer que o Novo local contém conteúdo e deve ser usado.</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
-   <td><p>Reiniciar o pacote OSGi de Marcação de comunidade do dia registrará apenas o Novo local como a raiz da tag se o Local anterior estiver vazio.</p> <p>As referências ao local anterior continuarão a funcionar após a migração para o novo local para todas as funcionalidades que aproveitam a API do TagManager do AEM para a resolução de tags.</p> <p>Qualquer código personalizado que faça referência explícita ao caminho <code>/etc/tags</code> deve ser atualizado para <span class="code">/content/ <code>
+   <td><p>Reiniciar o pacote OSGi de Marcação de comunidade do dia registrará apenas o Novo local como a raiz da tag se o Local anterior estiver vazio.</p> <p>As referências ao local anterior continuarão a funcionar após a migração para o novo local para todas as funcionalidades que aproveitam AEM API do TagManager para a resolução de tags.</p> <p>Qualquer código personalizado que faça referência explícita ao caminho <code>/etc/tags</code> deve ser atualizado para <span class="code">/content/ <code>
        cq
       </code><code>
        :tags
@@ -601,33 +601,33 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Qualquer novo serviço da Translation Cloud deve ser migrado para o novo local (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</p> 
+   <td><p>Qualquer novo Cloud Services de tradução deve ser migrado para o novo local (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</p> 
     <ol> 
      <li>Migre as configurações existentes no local anterior para o novo local.
       <ul> 
-       <li>Recrie manualmente as novas configurações dos Serviços da tradução em nuvem por meio da interface de usuário de criação do AEM em <strong>Ferramentas &gt; Serviços em nuvem &gt; Serviços</strong>da tradução em nuvem.<br /> OU </li> 
-       <li>Copie quaisquer novas configurações do Translation Cloud Services do Local anterior para o novo local (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</li> 
+       <li>Recrie manualmente as novas configurações de Cloud Services de tradução por meio da interface de criação de AEM em <strong>Ferramentas &gt; Cloud Services &gt; Cloud Services</strong>de tradução.<br /> OU </li> 
+       <li>Copie quaisquer novas configurações de Cloud Services de tradução do Local anterior para o novo local (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</li> 
       </ul> </li> 
-     <li>Associe as configurações do AEM aplicáveis às hierarquias de conteúdo do AEM.
+     <li>Associe as configurações AEM aplicáveis às hierarquias de conteúdo AEM.
       <ol> 
-       <li>Hierarquias de página do AEM Sites por meio de Sites <strong>AEM &gt; Página &gt; Propriedades da página &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
-       <li>Hierarquias de Fragmentos de experiência do AEM por Fragmentos de experiência do <strong>AEM &gt; Fragmento de experiência &gt; Propriedades &gt; Guia Serviços em nuvem &gt; Configuração</strong>em nuvem.</li> 
-       <li>Hierarquias de pastas de fragmento de experiência do AEM por meio de fragmentos de experiência do <strong>AEM &gt; Pasta &gt; Propriedades &gt; Guia Serviços em nuvem &gt; Configuração</strong>em nuvem.<br /> </li> 
-       <li>Hierarquias de pastas do AEM Assets por meio de ativos <strong>AEM &gt; Pasta &gt; Propriedades da pasta &gt; Guia Serviços em nuvem &gt; Configuração</strong>.</li> 
-       <li>Projetos do AEM por meio de projetos do <strong>AEM &gt; Projeto &gt; Propriedades do projeto &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
+       <li>Hierarquias de página do AEM Sites via <strong>AEM Sites &gt; Página &gt; Propriedades da página &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
+       <li>AEM hierarquias do Fragmento de experiência por meio de <strong>AEM Fragmentos de experiência &gt; Fragmento de experiência &gt; Propriedades &gt; Guia Cloud Services &gt; Configuração</strong>da nuvem.</li> 
+       <li>AEM hierarquias da pasta do fragmento de experiência por meio de <strong>AEM Fragmentos de experiência &gt; Pasta &gt; Propriedades &gt; Guia Cloud Services &gt; Configuração</strong>da nuvem.<br /> </li> 
+       <li>Hierarquias de pastas do AEM Assets via <strong>AEM Assets &gt; Pasta &gt; Propriedades da pasta &gt; Guia Cloud Services &gt; Configuração</strong>.</li> 
+       <li>AEM Projetos por meio de <strong>AEM Projetos &gt; Projeto &gt; Propriedades do projeto &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
       </ol> </li> 
-     <li>Desassocie quaisquer serviços herdados da Translation Cloud migrados das hierarquias de conteúdo do AEM acima.</li> 
+     <li>Desassocie quaisquer Cloud Services de tradução herdados migrados das hierarquias de conteúdo AEM acima.</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
-   <td><p>A resolução dos serviços da Translation Cloud ocorre na seguinte ordem:</p> 
+   <td><p>A resolução de Cloud Services de tradução ocorre na seguinte ordem:</p> 
     <ol> 
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li> 
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li> 
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li> 
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li> 
-    </ol> <p>Os serviços migrados da Translation Cloud devem ser compatíveis com o AEM 6.4.</p> </td> 
+    </ol> <p>Os Cloud Services de tradução migrados devem ser compatíveis com o AEM 6.4.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -663,7 +663,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
  </tbody>
 </table>
 
-### Translation Rules {#translation-rules}
+### Regras de tradução {#translation-rules}
 
 <table> 
  <tbody>
@@ -719,7 +719,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
        designPath
       </code> propriedade.</li> 
      <li>Atualize quaisquer Páginas que façam referência ao Local anterior para usar a nova categoria da Biblioteca do cliente (isso requer a atualização do código de implementação da Página).</li> 
-     <li>Atualize as regras do AEM Dispatcher para permitir o serviço de Bibliotecas do cliente por meio do diretório /etc.clientlibs/.. servlet proxy.</li> 
+     <li>Atualize AEM regras do Dispatcher para permitir o serviço de Bibliotecas do Cliente através da pasta /etc.clientlibs/.. servlet proxy.</li> 
     </ol> <p>Para qualquer design que NÃO seja gerenciado no SCM, e tempo de execução modificado por meio das Caixas de diálogo de design.</p> 
     <ul> 
      <li>Não remova os Designs que podem ser criados para autores de <code>/etc</code>.</li> 
@@ -740,7 +740,7 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
 | **Orientação relativa à reestruturação** | Nenhuma ação necessária. |
 | **Notas** | O Console Web de Ativação de árvore agora está disponível em **Ferramentas > Implantação > Replicação > Ativar árvore**. |
 
-### Serviços em nuvem do fornecedor do conector de tradução {#vendor-translation-connector-cloud-services}
+### Cloud Services do conector de tradução do fornecedor {#vendor-translation-connector-cloud-services}
 
 <table> 
  <tbody>
@@ -756,27 +756,27 @@ Ou seja, a configuração `sling:resourceType` do ContextHub deve ser relativa e
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Todos os novos serviços em nuvem do Conector de tradução do fornecedor devem ser migrados para o novo local (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</p> 
+   <td><p>Qualquer novo Cloud Services do Conector de tradução do fornecedor deve ser migrado para o novo local (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</p> 
     <ol> 
      <li>Migre as configurações existentes no Local anterior para o novo local.
       <ul> 
-       <li>Crie manualmente as novas configurações do Vendor Translation Connector Cloud Services por meio da interface de usuário de criação do <strong>AEM em Ferramentas &gt; Serviços em nuvem &gt; Serviços</strong>da Translation Cloud.<br /> OU </li> 
-       <li>Copie quaisquer novas configurações do Vendor Translation Connector Cloud Services do local anterior para o novo local (<code>/apps</code>ou <code>/conf/global </code><code>/conf/&lt;tenant&gt;</code>).</li> 
+       <li>Crie manualmente as novas configurações de Cloud Services do Conector de tradução do fornecedor por meio da interface de usuário de criação de <strong>AEM em Ferramentas &gt; Cloud Services &gt; Cloud Services</strong>de tradução.<br /> OU </li> 
+       <li>Copie quaisquer novas configurações de Cloud Services do Conector de tradução do fornecedor do local anterior para o novo local (<code>/apps</code>ou <code>/conf/global </code><code>/conf/&lt;tenant&gt;</code>).</li> 
       </ul> </li> 
-     <li>Associe as configurações do AEM aplicáveis às hierarquias de conteúdo do AEM.
+     <li>Associe as configurações AEM aplicáveis às hierarquias de conteúdo AEM.
       <ol> 
-       <li>Hierarquias de página do AEM Sites por meio de Sites <strong>AEM &gt; Página &gt; Propriedades da página &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
-       <li>Hierarquias de Fragmentos de experiência do AEM por Fragmentos de experiência do <strong>AEM &gt; Fragmento de experiência &gt; Propriedades &gt; Guia Serviços em nuvem &gt; Configuração</strong>em nuvem.</li> 
-       <li>Hierarquias de pastas de fragmento de experiência do AEM por meio de fragmentos de experiência do <strong>AEM &gt; Pasta &gt; Propriedades &gt; Guia Serviços em nuvem &gt; Configuração</strong>em nuvem.</li> 
-       <li>Hierarquias de pastas do AEM Assets por meio de ativos <strong>AEM &gt; Pasta &gt; Propriedades da pasta &gt; Guia Serviços em nuvem &gt; Configuração</strong>.</li> 
-       <li>Projetos do AEM por meio de projetos do <strong>AEM &gt; Projeto &gt; Propriedades do projeto &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
+       <li>Hierarquias de página do AEM Sites via <strong>AEM Sites &gt; Página &gt; Propriedades da página &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
+       <li>AEM hierarquias do Fragmento de experiência por meio de <strong>AEM Fragmentos de experiência &gt; Fragmento de experiência &gt; Propriedades &gt; Guia Cloud Services &gt; Configuração</strong>da nuvem.</li> 
+       <li>AEM hierarquias da pasta do fragmento de experiência por meio de <strong>AEM Fragmentos de experiência &gt; Pasta &gt; Propriedades &gt; Guia Cloud Services &gt; Configuração</strong>da nuvem.</li> 
+       <li>Hierarquias de pastas do AEM Assets via <strong>AEM Assets &gt; Pasta &gt; Propriedades da pasta &gt; Guia Cloud Services &gt; Configuração</strong>.</li> 
+       <li>AEM Projetos por meio de <strong>AEM Projetos &gt; Projeto &gt; Propriedades do projeto &gt; Guia Avançado &gt; Configuração</strong>da nuvem.</li> 
       </ol> </li> 
-     <li>Desassocie quaisquer serviços herdados da Translation Cloud migrados das hierarquias de conteúdo do AEM acima.</li> 
+     <li>Desassocie quaisquer Cloud Services de tradução herdados migrados das hierarquias de conteúdo AEM acima.</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
-   <td><p>A resolução dos serviços da Translation Cloud ocorre na seguinte ordem:</p> 
+   <td><p>A resolução de Cloud Services de tradução ocorre na seguinte ordem:</p> 
     <ol> 
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li> 
      <li><code>/conf/global/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li> 
