@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
@@ -42,26 +45,28 @@ Para definir um mapeamento de domínio para o serviço **Externalizer** :
 
    `<unique-name> [scheme://]server[:port][/contextpath]`, em que:
 
-   * **o esquema** geralmente é http ou https, mas também pode ser ftp etc.; use https para aplicar links https, se desejar;será usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
+   * **o esquema** geralmente é http ou https, mas também pode ser ftp etc.; use https para aplicar links https, se desejar; será usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
    * **server** é o nome do host (pode ser um nome de domínio ou endereço IP).
    * **porta** (opcional) é o número da porta.
-   * **o contexto** (opcional) só é definido se o AEM estiver instalado como um aplicativo da Web em um caminho de contexto diferente.
+   * **o caminho de contexto** (opcional) só é definido se AEM é instalado como um aplicativo da Web em um caminho de contexto diferente.
+
    Por exemplo: `production https://my.production.instance`
 
-   Os seguintes nomes de mapeamento são predefinidos e devem ser sempre definidos, pois o AEM depende deles:
+   Os seguintes nomes de mapeamento são predefinidos e devem ser sempre definidos como AEM depende deles:
 
    * **local** - a instância local
    * **autor** - o DNS do sistema de criação
    * **publicar** - DNS do site público
+
    >[!NOTE]
    >
-   >Uma configuração personalizada permite adicionar uma nova categoria, como &quot;produção&quot;, &quot;armazenamento temporário&quot; ou até mesmo sistemas externos não-AEM, como &quot;meu serviço interno da Web&quot;, e é útil para evitar a codificação desses URLs em diferentes locais na base de códigos de um projeto.
+   >Uma configuração personalizada permite que você adicione uma nova categoria, como &quot;produção&quot;, &quot;armazenamento temporário&quot; ou até mesmo sistemas externos não AEM, como &quot;meu serviço da Web interno&quot;, e é útil para evitar a codificação desses URLs em diferentes locais na base de códigos de um projeto.
 
 1. Click **Save** to save your changes.
 
 >[!NOTE]
 >
->A Adobe recomenda que você [adicione a configuração ao repositório](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
+>O Adobe recomenda que você [adicione a configuração ao repositório](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
 
 ## Uso do serviço Externalizer {#using-the-externalizer-service}
 
@@ -75,18 +80,18 @@ Esta seção mostra alguns exemplos de como o serviço **Externalizer** pode ser
 
 `String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";`
 
-Presumindo o mapeamento de domínio &quot; `publish https://www.website.com`&quot;, myExternalizedUrl termina com o valor &quot; `https://www.website.com/contextpath/my/page.html`&quot;.
+Supondo que o mapeamento de domínio &quot; `publish https://www.website.com`&quot;, myExternalizedUrl termine com o valor &quot; `https://www.website.com/contextpath/my/page.html`&quot;.
 
 **Para externalizar um caminho com o domínio &#39;autor&#39;:**
 
 `String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";`
 
-Presumindo o mapeamento de domínio &quot; `author https://author.website.com`&quot;, myExternalizedUrl termina com o valor &quot; `https://author.website.com/contextpath/my/page.html`&quot;.
+Supondo que o mapeamento de domínio &quot; `author https://author.website.com`&quot;, myExternalizedUrl termine com o valor &quot; `https://author.website.com/contextpath/my/page.html`&quot;.
 
 **Para externalizar um caminho com o domínio &#39;local&#39;:**
 
 `String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";`
 
-Presumindo o mapeamento de domínio &quot; `local https://publish-3.internal`&quot;, myExternalizedUrl termina com o valor &quot; `https://publish-3.internal/contextpath/my/page.html`&quot;.
+Supondo que o mapeamento de domínio &quot; `local https://publish-3.internal`&quot;, myExternalizedUrl termine com o valor &quot; `https://publish-3.internal/contextpath/my/page.html`&quot;.
 
 Você pode encontrar mais exemplos nos [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
