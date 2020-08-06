@@ -1,8 +1,8 @@
 ---
 title: 'Conceitos '
 seo-title: 'Conceitos '
-description: Conceitos gerais de comércio eletrônico com o AEM.
-seo-description: Conceitos gerais de comércio eletrônico com o AEM.
+description: Conceitos gerais de comércio eletrônico com AEM.
+seo-description: Conceitos gerais de comércio eletrônico com AEM.
 uuid: 1e3f0518-7797-48a7-bac7-0dc3ddaa0385
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 translation-type: tm+mt
 source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
+workflow-type: tm+mt
+source-wordcount: '4532'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
 A estrutura de integração fornece os mecanismos e componentes para:
 
 * conexão com um mecanismo de comércio eletrônico
-* como extrair dados para o AEM
+* extraindo dados para AEM
 * exibição desses dados e coleta as respostas do comprador
 * detalhes da transação de devolução
 * pesquisar os dados de ambos os sistemas
@@ -38,17 +41,18 @@ Isso significa que:
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    >
    >
-* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
+* [Commerce Cloud SAP](/help/sites-administering/sap-commerce-cloud.md)
    >
    >
 * [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+
 >
 
 
 
 >[!CAUTION]
 >
->A estrutura [de integração do](https://www.adobe.com/solutions/web-experience-management/commerce.html) eCommerce é um complemento do AEM.
+>A estrutura [de integração do](https://www.adobe.com/solutions/web-experience-management/commerce.html) eCommerce é um AEM Add-On.
 >
 >Seu representante de vendas poderá fornecer todos os detalhes, de acordo com o mecanismo apropriado.
 
@@ -60,20 +64,20 @@ Isso significa que:
 
 >[!CAUTION]
 >
->A instalação padrão do AEM inclui a implementação genérica de comércio eletrônico do AEM (JCR).
+>A instalação de AEM padrão inclui a implementação de eCommerce AEM genérico (JCR).
 >
 >Atualmente, isso se destina a fins de demonstração ou como base básica para uma implementação personalizada de acordo com suas necessidades.
 
-Para otimizar a operação, o AEM e o mecanismo de comércio eletrônico se concentram em sua própria área de especialização. A informação é transferida entre os dois em tempo real; por exemplo:
+Para otimizar a operação, tanto o AEM quanto o mecanismo de comércio eletrônico se concentram em sua própria área de especialização. A informação é transferida entre os dois em tempo real; por exemplo:
 
-* O AEM pode:
+* AEM pode:
 
    * Solicitação:
 
       * Informações do produto do mecanismo de comércio eletrônico.
    * Fornecer:
 
-      * O usuário exibe informações sobre o produto, carrinho de compras e checkout.
+      * visualizações do usuário para obter informações sobre produtos, carrinho de compras e check-out.
       * Informações sobre carrinho de compras e check-out para o mecanismo de comércio eletrônico.
       * Otimização do mecanismo de pesquisa (SEO).
       * Funcionalidade da comunidade.
@@ -100,9 +104,9 @@ Para otimizar a operação, o AEM e o mecanismo de comércio eletrônico se conc
 >
 >Os detalhes exatos dependerão do mecanismo de comércio eletrônico e da implementação do projeto.
 
-Vários componentes prontos para uso do AEM são fornecidos para usar a camada de integração. Atualmente, eles incluem:
+Vários componentes predefinidos AEM são fornecidos para usar a camada de integração. Atualmente, eles incluem:
 
-* Informações do produto
+* Informações sobre o produto
 * Carrinho de compras
 * Check-out
 * Minha conta
@@ -121,46 +125,47 @@ A estrutura oferece acesso a funcionalidades como:
 
 ### Implementações {#implementations}
 
-O eCommerce do AEM é implementado com um mecanismo de comércio eletrônico:
+AEM eCommerce é implementado com um mecanismo de eCommerce:
 
-* A estrutura de integração de eCommerce foi criada para permitir a integração fácil de um mecanismo de eCommerce com o AEM. O mecanismo de comércio eletrônico criado para fins específicos controla os dados do produto, os carrinhos de compras, o check-out e o cumprimento de pedidos, enquanto o AEM controla a exibição de dados e as campanhas de marketing.
+* A estrutura de integração de eCommerce foi criada para permitir a integração fácil de um mecanismo de eCommerce com AEM. O mecanismo de comércio eletrônico criado para fins específicos controla dados de produtos, carrinhos de compras, finalização e cumprimento de pedidos, enquanto AEM controla a exibição de dados e campanhas de marketing.
 
 
 >[!NOTE]
 >
->A instalação padrão do AEM inclui a implementação genérica de comércio eletrônico do AEM (JCR).
+>A instalação de AEM padrão inclui a implementação de eCommerce AEM genérico (JCR).
 >
 >Atualmente, isso se destina a fins de demonstração ou como base básica para uma implementação personalizada de acordo com suas necessidades.
 >
->O eCommerce do AEM implementado no AEM usando desenvolvimento genérico baseado no JCR é:
+>AEM eCommerce implementado em AEM usando desenvolvimento genérico com base no JCR é:
 >
->* Um exemplo independente de comércio eletrônico nativo do AEM para ilustrar o uso da API. Isso pode ser usado para controlar dados de produtos, carrinhos de compras e checkout em conjunto com a exibição de dados e campanhas de marketing existentes. Nesse caso, o banco de dados do produto é armazenado no repositório nativo do AEM (implementação do [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)pela Adobe).\
-   >  A instalação padrão do AEM contém as noções básicas da implementação [genérica do eCommerce](/help/sites-administering/generic.md).
+>* Um exemplo de eCommerce autônomo e AEM nativo para ilustrar o uso da API. Isso pode ser usado para controlar dados de produtos, carrinhos de compras e checkout em conjunto com a exibição de dados e campanhas de marketing existentes. Nesse caso, o banco de dados do produto é armazenado no repositório nativo do AEM (a implementação do Adobe do [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).\
+   >  A instalação de AEM padrão contém as noções básicas da implementação [genérica do eCommerce](/help/sites-administering/generic.md).
+
 >
 
 
 
 ### Provedores de comércio {#commerce-providers}
 
-Ao importar dados de um mecanismo de comércio para o site de comércio eletrônico do AEM, um provedor de comércio é usado para fornecer dados aos importadores. Um provedor de comércio pode suportar vários importadores.
+Ao importar dados de um mecanismo de comércio para seu site de comércio eletrônico AEM, um provedor de comércio é usado para fornecer dados aos importadores. Um único provedor de comércio pode suportar vários importadores.
 
-Um provedor de comércio é um código AEM personalizado para:
+Um provedor de comércio é AEM código personalizado para:
 
 * interface para um mecanismo de comércio back-end
 * implementar um sistema de comércio sobre o repositório JCR
 
-Dois exemplos de provedores de comércio estão disponíveis no momento para o AEM:
+Dois exemplos de provedores de comércio estão disponíveis para AEM:
 
 * um para geometrixx-hybris
 * outro para geometrixx-genérico (JCR)
 
-Embora normalmente um projeto precise desenvolver seu próprio provedor de comércio personalizado e específico para o PIM e esquema de dados do produto.
+Embora normalmente um projeto precise desenvolver seu próprio provedor de comércio personalizado e específico para o PIM e o schema de dados do produto.
 
 >[!NOTE]
 >
->Os importadores geometrixx utilizam arquivos CSV; há uma descrição do esquema aceito (com propriedades personalizadas permitidas) nos comentários acima de sua implementação.
+>Os importadores geometrixx utilizam arquivos CSV; há uma descrição do schema aceito (com propriedades personalizadas permitidas) nos comentários acima de sua implementação.
 
-O [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantém (por meio do [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) uma lista de implementações das interfaces [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) . Eles estão listados no campo suspenso **Importador/Provedor** de comércio do assistente do importador (usando a `commerceProvider` propriedade como nome).
+O [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantém (por meio do [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings))uma lista de implementações das interfaces [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) . Eles estão listados no campo suspenso **Importador/Provedor** de comércio do assistente do importador (usando a `commerceProvider` propriedade como nome).
 
 Quando um importador/provedor de comércio específico estiver disponível na lista suspensa, todos os dados suplementares necessários devem ser definidos (dependendo do tipo de importador) em:
 
@@ -191,9 +196,9 @@ O sistema integrado atende às seguintes funções para manter os dados:
    * Vouchers.
    * Campanhas.
 
-* Surfista/comprador que:
+* Surfista/Comprador que:
 
-   * Exibe as informações do seu produto.
+   * Visualização suas informações do produto.
    * Coloca itens no carrinho de compras.
    * Verifica seus pedidos.
    * Esperar o cumprimento do pedido.
@@ -208,15 +213,15 @@ Embora a localização real possa depender da implementação; por exemplo, gen�
 
 #### Categorias estruturais versus de marketing {#structural-versus-marketing-categories}
 
-Se as duas categorias a seguir puderem ser diferenciadas, isso permitirá que você defina URLs claros com uma estrutura significativa (árvores de `cq:Page` nós) e, portanto, muito próximos do gerenciamento de conteúdo AEM clássico):
+Se as duas categorias a seguir puderem ser diferenciadas, isso permitirá que você defina URLs claros com uma estrutura significativa (árvores de `cq:Page` nós) e, portanto, muito próximo da gestão de conteúdo AEM clássica):
 
-* *Categorias estruturais *
+* *categorias estruturais *
 
-   A árvore de categorias que define *o que é um produto*; por exemplo:
+   A árvore categoria que define *o que é um produto*; por exemplo:
 
    `/products/mens/shoes/sneakers`
 
-* *Categorias de marketing*
+* *categorias de marketing*
 
    Todas as outras categorias a que um *produto pode pertencer*; por exemplo:
 
@@ -228,12 +233,12 @@ Para retratar e gerenciar seu produto, você desejará manter uma variedade de i
 
 Os dados do produto podem ser:
 
-* mantido diretamente no AEM (genérico).
+* mantido diretamente em AEM (genérico).
 * mantido no mecanismo de comércio eletrônico e disponibilizado no AEM.
 
    Dependendo do tipo de dados, é [sincronizada](#catalog-maintenance-data-synchronization) conforme necessário ou é acessada diretamente; por exemplo, dados altamente voláteis e críticos, como preços de produtos, são recuperados do mecanismo de comércio eletrônico em cada solicitação de página para garantir que eles estejam sempre atualizados.
 
-Em ambos os casos, quando os dados do produto são inseridos/importados para o AEM, eles podem ser vistos no console **Produtos** . Aqui, as exibições de cartão e lista de um produto mostram informações como:
+Em ambos os casos, quando os dados do produto são inseridos/importados para AEM, eles podem ser vistos no console **Produtos** . Aqui, as visualizações de cartão e lista de um produto mostram informações como:
 
 * a imagem
 * o código SKU
@@ -249,7 +254,7 @@ Para os produtos adequados, podem também ser mantidas informações sobre as va
 
 ### Atributos do produto {#product-attributes}
 
-Os atributos individuais mantidos em cada produto podem depender do mecanismo de comércio eletrônico que está sendo usado e da implementação do AEM. Eles estão disponíveis (conforme apropriado) ao visualizar páginas de produtos e/ou editar informações de produtos e podem incluir:
+Os atributos individuais mantidos sobre cada produto podem depender do mecanismo de comércio eletrônico que está sendo usado e da implementação AEM. Eles estão disponíveis (conforme apropriado) ao visualizar páginas de produtos e/ou editar informações de produtos e podem incluir:
 
 * **Imagem**
 
@@ -305,21 +310,21 @@ Um catálogo agrupa os dados do produto para facilitar o gerenciamento e a repre
 
 #### Catálogos em vários idiomas {#catalogs-in-multiple-languages}
 
-O AEM oferece suporte ao conteúdo do produto em vários idiomas. Ao solicitar dados, a estrutura de integração recupera o idioma da árvore atual (por exemplo, `en_US` para páginas em `/content/geometrixx-outdoors/en_US`).
+AEM suporta conteúdo de produto em vários idiomas. Ao solicitar dados, a estrutura de integração recupera o idioma da árvore atual (por exemplo, `en_US` para páginas em `/content/geometrixx-outdoors/en_US`).
 
 Para uma loja multilíngue, é possível importar o catálogo para cada árvore de idioma individualmente (ou copiá-lo por meio do [MSM](/help/sites-administering/msm.md)).
 
 #### Catálogos para várias marcas {#catalogs-for-multiple-brands}
 
-Assim como nas línguas, as grandes empresas multinacionais podem precisar atender a várias marcas.
+Assim como com os idiomas, as grandes empresas multinacionais podem precisar atender a várias marcas.
 
 #### Catálogos por tags {#catalogs-by-tags}
 
 As tags também podem ser usadas para agrupar produtos em um catálogo. Eles podem ser usados para catálogos mais dinâmicos, como ofertas sazonais.
 
-### Configuração do catálogo (importação inicial) {#catalog-setup-initial-import}
+### Configuração do Catálogo (Importação Inicial) {#catalog-setup-initial-import}
 
-Dependendo da sua implementação, você pode importar os dados do produto necessários para o catálogo base para o AEM de:
+Dependendo da sua implementação, você pode importar os dados do produto necessários para o seu catálogo base para AEM de:
 
 * um arquivo CSV (para a implementação genérica)
 * o mecanismo de comércio eletrônico
@@ -368,13 +373,13 @@ Esses compartimentos assumem a forma de pastas fantasmas que são introduzidas n
 
 Esse cenário envolve a configuração de duas instâncias do autor:
 
-1. Instância do autor mestre
+1. instância do autor Principal
 
    Importa dados do produto do PIM, no qual o pós-processamento dos caminhos do ativo está desativado.
 
 1. Instância dedicada do autor DAM
 
-   Importa e pós-processa ativos de produtos do PIM, em seguida, os replica de volta para a instância do autor mestre para uso.
+   Importa e pós-processa ativos de produtos do PIM, em seguida, os replica de volta para a instância do autor principal para uso.
 
 ![Diagrama de arquitetura](assets/chlimage_1-171.png)
 
@@ -391,13 +396,13 @@ Nos casos em que os produtos não contêm ativos (imagens) a serem importados, �
 
 #### Teste de desempenho {#performance-testing}
 
-Os testes de desempenho devem ser levados em consideração nas implementações de eCommerce do AEM:
+Os testes de desempenho devem ser considerados nas implementações AEM eCommerce:
 
-* Ambiente do autor:
+* ambiente do autor:
 
-   A atividade em segundo plano (por exemplo, a importação) pode ocorrer ao mesmo tempo que a atividade normal do usuário (por exemplo, a edição de páginas) e mesmo se o desempenho do front-end for (em geral) dado uma prioridade mais alta, um mau desempenho observado por autores online pode levar a frustração capaz de bloquear uma decisão ao vivo.
+   A atividade em segundo plano (por exemplo, a importação) pode ocorrer ao mesmo tempo que a atividade normal do usuário (por exemplo, edição de página) e mesmo se o desempenho do front-end for (em geral) dado uma prioridade mais alta, um mau desempenho observado por autores online pode levar a frustração capaz de bloquear uma decisão ao vivo.
 
-* Ambiente de publicação:
+* ambiente de publicação:
 
    A replicação é um processo essencial para garantir que o conteúdo seja publicado de forma rápida e confiável. Isso pode ser afetado pela forma como o autor agrupa o conteúdo a ser publicado.
 
@@ -405,14 +410,14 @@ Os testes de desempenho devem ser levados em consideração nas implementações
 
    A mistura de invalidações de front-end e cache pode levar a surpresas de desempenho. Testar ajuda a evitar isso.
 
-Observe que este teste de desempenho requer conhecimento e análise da sua meta:
+Observe que este teste de desempenho requer conhecimento e análise do seu público alvo:
 
 * Volumes de conteúdo
 
    * Ativos
    * Produtos e SKUs localizados e de tecnologia I18
 
-* Atividade do usuário:
+* atividade do usuário:
 
    * Edição em massa
    * Publicação em massa
@@ -433,14 +438,14 @@ Para todas as implementações, é possível ter em mente os seguintes pontos:
 
    Quanto mais nós você tiver, mais flexível será o seu conteúdo (por exemplo, parsys). No entanto, tudo é uma troca e você precisa de flexibilidade individual (por padrão) ao manipular (por exemplo) produtos 30K?
 
-* Evite a duplicação o máximo possível (consulte a localização) ou, ao fazê-lo, pense em quantos nós sua duplicação resultará.
-* Tente marcar o seu conteúdo o máximo possível para preparar a otimização da consulta.
+* Evite a duplicação o máximo possível (veja a localização) ou, quando o fizer, pense em quantos nós sua duplicação resultará.
+* Tente marcar o seu conteúdo o máximo possível para preparar a otimização do query.
 
    Por exemplo:
 
    `/content/products/france/fr/shoe/reebok/pump/46 SKU`
 
-   deve ter uma tag por nível de conteúdo (ou seja, país, idioma, categoria, marca, produto). Procurando por
+   deve ter uma tag por nível de conteúdo (por exemplo, país, idioma, categoria, marca, produto). Procurando por
 
    `//element(*,my:Sku)[@country=’france’ and @language=’fr’`
 
@@ -448,7 +453,7 @@ Para todas as implementações, é possível ter em mente os seguintes pontos:
 
    `@category=’shoe’ and @brand=’reebok’ and @product=’pump’]`
 
-   será drasticamente mais rápido do que procurar
+   será drasticamente mais rápido do que procurar por
 
    `/jcr:root/content/france/fr/shoe/reebok/pump/element(*,my:Sku)`
 
@@ -461,8 +466,8 @@ Para todas as implementações, é possível ter em mente os seguintes pontos:
 
 As seções de catálogo fornecem a você, por exemplo:
 
-* Uma introdução (imagem e/ou texto) à categoria; esta opção também pode ser utilizada para banners e teasers que promovam ofertas especiais
-* links para os produtos individuais dessa categoria
+* Uma introdução (imagem e/ou texto) à categoria; isso também pode ser usado para banners e teasers para promover ofertas especiais
+* links para os produtos individuais nessa categoria
 * links para outras categorias
 
 ![ecommerce_categoryrunning](assets/ecommerce_categoryrunning.png)
@@ -471,14 +476,14 @@ As seções de catálogo fornecem a você, por exemplo:
 
 As páginas de produtos fornecem informações abrangentes sobre produtos individuais. As atualizações dinâmicas de também são refletidas; por exemplo, alterações de preço registradas no mecanismo de comércio eletrônico.
 
-As páginas de produto são páginas AEM que usam o componente **Produto** ; por exemplo, no modelo de Produto **de** Comércio:
+As páginas do produto são páginas AEM que usam o componente **Produto** ; por exemplo, no modelo de Produto **de** Comércio:
 
 ![ecommerce_nairobirunnersgreen](assets/ecommerce_nairobirunnersgreen.png)
 
 O componente Produto fornece:
 
 * Informações gerais sobre o produto; incluindo texto e imagens.
-* Preços; isso geralmente é recuperado do mecanismo de comércio eletrônico sempre que a página é mostrada/atualizada.
+* Preços; isso geralmente é recuperado do mecanismo de comércio eletrônico toda vez que a página é mostrada/atualizada.
 * Informação sobre a variante do produto; por exemplo, cor e tamanho.
 
 Essas informações permitem que o comprador selecione o seguinte ao adicionar um item à sua cesta:
@@ -486,9 +491,9 @@ Essas informações permitem que o comprador selecione o seguinte ao adicionar u
 * Variantes de cor e tamanho
 * Quantidade
 
-#### Páginas de aterrissagem do produto {#product-landing-pages}
+#### Landings page de produtos {#product-landing-pages}
 
-São páginas do AEM que fornecem principalmente informações estáticas; por exemplo, uma introdução e uma visão geral com links para as páginas de produtos subjacentes.
+São páginas AEM que fornecem principalmente informações estáticas; por exemplo, uma introdução e uma visão geral com links para as páginas de produtos subjacentes.
 
 ### Componente do produto {#product-component}
 
@@ -500,11 +505,11 @@ O componente **Produto** também pode ser personalizado de acordo com seus requi
 
 As páginas de proxy são usadas para simplificar a estrutura do repositório e otimizar o armazenamento para catálogos grandes.
 
-A criação de um catálogo usará dez nós por produto, pois fornece componentes individuais para cada produto que você pode atualizar e personalizar no AEM. Esse grande número de nós pode se tornar um problema se seu catálogo contiver centenas ou até milhares de produtos. Para evitar problemas, você pode criar seu catálogo usando páginas de proxy.
+A criação de um catálogo usará dez nós por produto, pois fornece componentes individuais para cada produto que você pode atualizar e personalizar dentro do AEM. Esse grande número de nós pode se tornar um problema se seu catálogo contiver centenas ou até milhares de produtos. Para evitar qualquer problema, você pode criar seu catálogo usando páginas de proxy.
 
 As páginas de proxy usam uma estrutura de dois nós ( `cq:Page` e `jcr:content`) que não contém nenhum conteúdo real do produto. O conteúdo é gerado, no momento da solicitação, referenciando os dados do produto e a página do modelo.
 
-No entanto, há uma compensação. Não será possível personalizar as informações do produto no AEM, um modelo padrão (definido para o site) será usado.
+No entanto, há uma compensação. Você não poderá personalizar suas informações de produto dentro do AEM, um modelo padrão (definido para seu site) será usado.
 
 >[!NOTE]
 >
@@ -516,7 +521,7 @@ No entanto, há uma compensação. Não será possível personalizar as informa�
 
 ### Vouchers {#vouchers}
 
-Os vendedores são um método testado e testado de oferecer descontos para atrair os compradores a fazer uma compra e/ou recompensar a lealdade do cliente.
+Os vendedores são um método testado e testado de oferecer descontos para atrair os compradores a fazer uma compra e/ou recompensar a fidelidade do cliente.
 
 * Fornecimento de cupons:
 
@@ -528,24 +533,24 @@ Os vendedores são um método testado e testado de oferecer descontos para atrai
 
 No AEM:
 
-* Um comprovante é um componente baseado em página criado/editado com o console Sites.
+* Um comprovante é um componente baseado em página que é criado/editado com o console Sites.
 * O componente **Voucher** fornece:
 
-   * Um renderizador para administração de comprovantes; isso mostra os vales que estão atualmente no carrinho.
+   * Um renderizador para a administração de comprovantes; isso mostra os vales que estão atualmente no carrinho.
    * As caixas de diálogo de edição (formulário) para administrar (adicionar/remover) os comprovantes.
    * As ações necessárias para adicionar/remover comprovantes de/para o carrinho.
 
-* Os espectadores não têm suas próprias data/hora de entrada e saída, mas usam as campanhas dos pais.
+* Os vendedores não têm data/hora de entrada e saída próprias, mas usam as campanhas pai.
 
 >[!NOTE]
 >
->O AEM usa o termo **Voucher**, que é sinônimo do termo **Cupom**.
+>AEM usa o termo **Voucher**, que é sinônimo do termo **Cupom**.
 
 ### Promoções {#promotions}
 
 As promoções, juntamente com comprovantes, permitem que você realize cenários como:
 
-* Uma empresa fornece preços personalizados para funcionários, que é uma lista artesanal de usuários.
+* Uma empresa fornece preços personalizados para os funcionários, o que é uma lista artesanal de usuários.
 * Os clientes de longo prazo recebem descontos em todos os pedidos.
 * Um preço de venda oferecido durante um período bem definido.
 * Um cliente recebe um comprovante quando seu pedido anterior excedeu uma quantia específica.
@@ -559,7 +564,7 @@ Geralmente, as promoções não são mantidas pelos gerentes de informações do
    * Uma prioridade
    * Um caminho do manipulador de promoção
 
-* Você pode conectar promoções a uma campanha para definir suas datas/horas de ativação/desativação.
+* Você pode conectar promoções a uma campanha para definir a data/hora de ativação/desativação.
 * Você pode conectar promoções a uma experiência para definir seus segmentos.
 * As promoções que não estão ligadas a uma experiência não serão acionadas por si mesmas, mas ainda poderão ser acionadas por um Voucher.
 * O componente de Promoção contém:
@@ -567,14 +572,14 @@ Geralmente, as promoções não são mantidas pelos gerentes de informações do
    * renderizadores e diálogos para administração de promoção
    * subcomponentes para renderizar e editar parâmetros de configuração específicos para os manipuladores de promoção
 
-No AEM, as promoções também são integradas ao Gerenciamento [de](/help/sites-authoring/personalization.md)campanhas:
+AEM as promoções também são integradas na [Gestão de campanha](/help/sites-authoring/personalization.md):
 
 * uma [campanha](/help/sites-authoring/personalization.md) especifica os tempos de ativação/desativação
-* [as experiências](/help/sites-authoring/personalization.md) *dentro* da campanha são usadas para agrupar ativos (páginas de grupo, promoções etc.) de acordo com o segmento de público-alvo ao qual elas correspondem
+* [as experiências](/help/sites-authoring/personalization.md) *dentro* da campanha são usadas para agrupar ativos (páginas de grupo, promoções etc.) de acordo com o segmento de audiência ao qual elas correspondem
 
 Uma promoção pode ser realizada em uma experiência ou diretamente na campanha:
 
-* Se uma promoção for mantida em uma experiência, ela poderá ser automaticamente aplicada a um segmento de público-alvo.
+* Se uma promoção for mantida em uma experiência, ela poderá ser automaticamente aplicada a um segmento de audiência.
 
    Por exemplo, no site de amostra geometrixx-outdoors, a promoção:
 
@@ -582,13 +587,13 @@ Uma promoção pode ser realizada em uma experiência ou diretamente na campanha
 
    está em uma experiência e, portanto, é acionado automaticamente sempre que o segmento ( `ordervalueover100`) é resolvido.
 
-* Se uma promoção não for exibida em uma experiência (somente na campanha), ela não poderá ser automaticamente aplicada a um público-alvo. No entanto, ele ainda pode ser acionado se o comprador inserir um comprovante em seu carrinho e esse comprovante fizer referência à promoção.
+* Se uma promoção não for exibida em uma experiência (somente na campanha), ela não poderá ser automaticamente aplicada a uma audiência. No entanto, ele ainda pode ser acionado se o comprador inserir um comprovante em seu carrinho e esse comprovante fizer referência à promoção.
 
    Por exemplo, a promoção:
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   está fora de uma experiência e, portanto, nunca é acionado automaticamente (isto é: com base na segmentação). No entanto, ela é referenciada pelos comprovantes que podem ser encontrados em várias experiências dentro da campanha do artigo. A inserção desses códigos de comprovante no carrinho resultará no acionamento da promoção.
+   está fora de uma experiência e, portanto, nunca é acionado automaticamente (isto é: com base na segmentação). No entanto, ele é referenciado pelos comprovantes que podem ser encontrados em várias experiências dentro da campanha do artigo. A inserção desses códigos de comprovante no carrinho resultará no acionamento da promoção.
 
 >[!NOTE]
 >
@@ -608,28 +613,28 @@ O mecanismo exato pode depender do cenário:
 
    1. Nenhuma ação necessária.
 
-1. A conta de usuário existe somente no AEM:
+1. A conta de usuário existe somente em AEM:
 
    1. O usuário será criado no mecanismo de comércio eletrônico com a mesma ID de conta e uma senha aleatória que será armazenada no AEM.
-   1. A senha aleatória é necessária, pois o AEM tenta se conectar ao mecanismo de comércio eletrônico na primeira chamada (por exemplo, quando uma página de produto é solicitada e o mecanismo de comércio eletrônico é referenciado pelo preço). Como isso acontece após o logon do AEM, a senha não está disponível.
+   1. A senha aleatória é necessária, pois AEM tenta se conectar ao mecanismo de comércio eletrônico na primeira chamada (por exemplo, quando uma página de produto é solicitada e o mecanismo de comércio eletrônico é referenciado pelo preço). Como isso acontece após o login AEM, a senha não está disponível.
 
 1. A conta de usuário existe somente no mecanismo de comércio eletrônico:
 
-   1. A conta será criada no AEM com a mesma ID de conta e senha.
+   1. A conta será criada em AEM com a mesma ID de conta e senha.
 
-Ao usar um mecanismo de comércio eletrônico, o AEM só armazena a ID da conta e a senha (opcionalmente, um grupo de usuários). Todas as outras informações são armazenadas no mecanismo de comércio eletrônico.
+Ao usar um mecanismo de comércio eletrônico, AEM somente armazena a ID da conta e a senha (opcionalmente, um grupo de usuários). Todas as outras informações são armazenadas no mecanismo de comércio eletrônico.
 
 >[!NOTE]
 >
->Ao usar um mecanismo de comércio eletrônico, é necessário garantir que as contas criadas para usuários que fazem logon em uma instância do AEM sejam replicadas (por exemplo, por meio de fluxos de trabalho) para qualquer outra instância do AEM que se comunique com esse mecanismo.
+>Ao usar um mecanismo de comércio eletrônico, é necessário garantir que as contas criadas para usuários que fazem logon em uma instância AEM sejam replicadas (por exemplo, por meio de workflows) para qualquer outra instância AEM que se comunique com esse mecanismo.
 >
->Caso contrário, essas outras instâncias do AEM também tentarão criar contas para os mesmos usuários no mecanismo. Essas ações falharão com uma `DuplicateUidException` saída do mecanismo.
+>Caso contrário, essas outras instâncias AEM também tentarão criar contas para os mesmos usuários no mecanismo. Essas ações falharão com uma `DuplicateUidException` saída do mecanismo.
 
 ### Inscrição no cliente {#customer-sign-up}
 
 Muitas vezes, a inscrição é necessária para que o comprador tenha acesso ao carrinho de compras. Isso requer o registro (Criar conta) para que uma conta específica do cliente possa ser criada.
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![chlimage_1-175](assets/chlimage_1-174.png)
 
 >[!NOTE]
 >
@@ -639,7 +644,7 @@ Muitas vezes, a inscrição é necessária para que o comprador tenha acesso ao 
 
 Após a inscrição, o comprador pode fazer logon com sua conta para que suas ações possam ser rastreadas e seus pedidos atendidos.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 ### Logon único {#single-sign-on}
 
@@ -647,7 +652,7 @@ O logon único (SSO) é fornecido, de modo que os autores sejam conhecidos tanto
 
 ### myAccount {#myaccount}
 
-Os dados de transação do mecanismo de comércio eletrônico são combinados com informações pessoais sobre o comprador. O AEM usa alguns desses dados como dados de perfil. A ação de um formulário no AEM grava informações de volta no mecanismo de comércio eletrônico.
+Os dados de transação do mecanismo de comércio eletrônico são combinados com informações pessoais sobre o comprador. AEM usa alguns desses dados como dados de perfil. A ação de um formulário no AEM grava informações de volta ao mecanismo de comércio eletrônico.
 
 Há uma página que permite gerenciar facilmente as informações de sua conta. Você pode acessá-la clicando em **Minha conta** na parte superior de uma página geometrixx ou navegando até `/content/geometrixx-outdoors/en/user/account.html`.
 
@@ -655,9 +660,9 @@ Há uma página que permite gerenciar facilmente as informações de sua conta. 
 
 ### Agenda de endereços {#address-book}
 
-Seu site precisará armazenar uma seleção de endereços; incluindo entrega, faturamento e endereços alternativos. Isso pode ser implementado usando formulários com base no formato de endereço padrão ou você pode usar o componente Catálogo de endereços fornecido pelo AEM.
+Seu site precisará armazenar uma seleção de endereços; incluindo endereços de delivery, faturamento e alternativos. Isso pode ser implementado usando formulários com base no formato de endereço padrão ou você pode usar o componente Catálogo de endereços fornecido pela AEM.
 
-Este componente Catálogo de endereços permite:
+Esse componente do Catálogo de endereços permite que você:
 
 * editar endereços no livro
 * selecione um endereço do livro para o endereço de entrega
@@ -669,7 +674,7 @@ O componente do catálogo de endereços pode ser acessado na página **Minha con
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-**Você pode clicar em** Adicionar novo endereço... para adicionar um novo endereço ao seu catálogo de endereços. Ele abre um formulário que pode ser preenchido e, em seguida, clique em **Adicionar endereço**.
+Você pode clicar em **Adicionar novo endereço...** para adicionar um novo endereço ao seu catálogo de endereços. Ele abre um formulário que pode ser preenchido e, em seguida, clique em **Adicionar endereço**.
 
 >[!NOTE]
 >
@@ -680,9 +685,9 @@ O Catálogo de Endereços é usado ao fazer check-out do carrinho:
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 Os endereços são mantidos abaixo `user_home/profile/addresses`.\
-Por exemplo, para Alison Parker, estaria em /home/users/geometrixx/aparker@geometrixx.info/profile/address
+Por exemplo, para Alison Parker, estaria em /home/users/geometrixx/aparker@geometrixx.info/perfil/address
 
-Você pode escolher qual endereço deseja como padrão, essas informações são mantidas no perfil do comprador em vez de no endereço. A propriedade profile `address.default` é definida com o caminho do endereço selecionado para o valor.
+Você pode escolher qual endereço deseja como padrão, essas informações são mantidas no perfil do comprador em vez de no endereço. A propriedade perfil `address.default` é definida com o caminho do endereço selecionado para o valor.
 
 ### Preço específico do cliente {#customer-specific-pricing}
 
@@ -696,7 +701,7 @@ Ao comprar, o comprador irá procurar as páginas de produtos e selecionar itens
 
 Um cliente anônimo pode:
 
-* Exibir produtos
+* produtos de Visualização
 * Adicionar produtos ao carrinho
 * Faça check-out para colocar seu pedido
 
@@ -709,10 +714,10 @@ Um cliente anônimo pode:
 Um cliente registrado pode:
 
 * Efetuar login em sua conta
-* Exibir produtos
+* produtos de Visualização
 * Adicionar produtos ao carrinho
 * Faça check-out para colocar seu pedido
-* Exibir e rastrear pedidos anteriores
+* Visualização e rastreamento de pedidos anteriores
 
 ### Visão geral do conteúdo do carrinho de compras {#shopping-cart-content-overview}
 
@@ -729,7 +734,7 @@ O carrinho de compras fornece:
 
 O carrinho de compras é salvo de acordo com o mecanismo usado:
 
-* O AEM genérico armazena o carrinho em um cookie.
+* AEM genérico armazena o carrinho em um cookie.
 * Determinados mecanismos de comércio eletrônico podem armazenar o carrinho em uma sessão.
 
 Em ambos os casos, os itens permanecem no carrinho (e podem ser restaurados) durante o logon/logout (mas somente no mesmo computador/navegador). Por exemplo:
@@ -747,7 +752,7 @@ Em ambos os casos, os itens permanecem no carrinho (e podem ser restaurados) dur
 
 >[!NOTE]
 >
->Não é recomendado testar a restauração do conteúdo do carrinho com a `admin` conta, pois isso pode entrar em conflito com a `admin` conta do mecanismo de comércio eletrônico (por exemplo, híbridos).
+>Não é recomendável testar a restauração do conteúdo do carrinho com a `admin` conta, pois isso pode entrar em conflito com a `admin` conta do mecanismo de comércio eletrônico (por exemplo, híbridos).
 
 >[!NOTE]
 >
@@ -757,7 +762,7 @@ Antes do check-out, as alterações de preços são refletidas (em ambos os sist
 
 ### Informações do pedido {#order-information}
 
-Dependendo das informações de implementação sobre um pedido, elas serão mantidas no mecanismo de comércio eletrônico ou no AEM, essas informações serão renderizadas pelo AEM.
+Dependendo das informações de implementação sobre um pedido mantidas no mecanismo de comércio eletrônico ou no AEM, essas informações são renderizadas pelo AEM.
 
 São armazenadas várias informações, que podem incluir:
 
@@ -819,7 +824,7 @@ São armazenadas várias informações, que podem incluir:
 
 * **Número de rastreamento**
 
-   Qualquer número de rastreamento usado pela empresa de entrega.
+   Qualquer número de rastreamento usado pela empresa de envio.
 
 * **Link de rastreamento**
 
@@ -827,10 +832,10 @@ São armazenadas várias informações, que podem incluir:
 
 >[!NOTE]
 >
->Os campos usados no assistente de criação de pedido dependem de haver uma estrutura otimizada ao toque definida para o local. No exemplo genérico, isso pode ser encontrado em:\
+>Os campos usados no assistente de criação de pedido dependem de haver um andaime otimizado ao toque definido para o local. No exemplo genérico, isso pode ser encontrado em:\
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
-Quando o pedido é feito dentro do AEM, o console Pedido mostra o seguinte para cada pedido:
+Quando a ordem é mantida dentro AEM console Ordem mostra o seguinte para cada ordem:
 
 * o número de itens no carrinho
 * o valor total do pedido
@@ -847,9 +852,9 @@ Depois de fazer um pedido, os compradores geralmente retornarão para:
 * Remover produtos do pedido
 * Adicionar produtos ao pedido
 
-Depois de receber a entrega da ordem, os compradores também podem desejar exibir o histórico de pedidos feitos durante um período de tempo.
+Depois de receber o delivery do pedido, os compradores também podem desejar visualização do histórico de pedidos feitos durante um período de tempo.
 
-O atendimento e o rastreamento de pedidos geralmente são gerenciados pelo mecanismo de comércio eletrônico. As informações podem ser exibidas pelo AEM usando o componente Histórico de pedidos, que mostra todos os detalhes relevantes, incluindo os comprovantes e as promoções aplicadas. Por exemplo:
+O atendimento e o rastreamento de pedidos geralmente são gerenciados pelo mecanismo de comércio eletrônico. As informações podem ser exibidas AEM usando o componente Histórico de pedidos, que mostra todos os detalhes relevantes, incluindo os comprovantes e as promoções aplicadas. Por exemplo:
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
@@ -857,11 +862,11 @@ O atendimento e o rastreamento de pedidos geralmente são gerenciados pelo mecan
 
 O check-out é implementado com formulários AEM padrão. Isso permite que o gerente de marketing personalize a experiência com conteúdo de marketing.
 
-Em seguida, o eCommerce gerencia o processo de checkout com a entrada dos formulários AEM.
+Em seguida, o eCommerce gerencia o processo de finalização com entrada dos formulários AEM.
 
 ### Segurança de pagamento {#payment-security}
 
-Os detalhes do pagamento, incluindo as informações de cartão de crédito, são geralmente gerenciados pelo mecanismo de comércio eletrônico. O AEM encaminha essas informações transacionais para o mecanismo (de onde são encaminhadas para um serviço de processamento de pagamentos).
+Os detalhes do pagamento, incluindo as informações de cartão de crédito, são geralmente gerenciados pelo mecanismo de comércio eletrônico. AEM transmitir essas informações transacionais ao motor (a partir do local em que são transmitidas a um serviço de processamento de pagamentos).
 
 A complicação do setor de cartões de pagamento (PCI) pode ser alcançada.
 
@@ -871,9 +876,9 @@ A ordem é confirmada na tela e pode ser acompanhada com o rastreamento [do](#or
 
 ## Pesquisar {#search-features}
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
-Como o AEM usa páginas padrão para produtos, você pode usar o componente de pesquisa padrão para criar uma página de pesquisa.
+Como AEM usa páginas padrão para produtos, você pode usar o componente de pesquisa padrão para criar uma página de pesquisa.
 
 Se você precisar de uma implementação mais completa, poderá:
 
