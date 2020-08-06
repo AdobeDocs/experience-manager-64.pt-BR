@@ -1,6 +1,6 @@
 ---
-title: Componentes do AEM - Noções básicas
-seo-title: Componentes do AEM - Noções básicas
+title: Componentes AEM - Noções básicas
+seo-title: Componentes AEM - Noções básicas
 description: Ao start para desenvolver novos componentes, você precisa entender as noções básicas de sua estrutura e configuração
 seo-description: Ao start para desenvolver novos componentes, você precisa entender as noções básicas de sua estrutura e configuração
 uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# Componentes do AEM - Noções básicas{#aem-components-the-basics}
+# Componentes AEM - Noções básicas{#aem-components-the-basics}
 
 Ao start para desenvolver novos componentes, é necessário compreender as noções básicas de sua estrutura e configuração.
 
-Esse processo envolve a leitura da teoria e a análise da ampla variedade de implementações de componentes em uma instância padrão do AEM. Essa última abordagem é um pouco complicada pelo fato de que, embora o AEM tenha mudado para uma nova interface padrão, moderna e habilitada para toque, ele continua a suportar a interface clássica.
+Esse processo envolve a leitura da teoria e a análise da grande variedade de implementações de componentes em uma instância AEM padrão. Esta última abordagem é ligeiramente complicada pelo fato de que, embora AEM tenha mudado para uma nova interface padrão, moderna e habilitada para toque, ela continua a suportar a interface clássica.
 
 ## Visão geral {#overview}
 
@@ -42,7 +42,7 @@ Antes de começar a configurar ou codificar seu componente, você deve perguntar
 * Você precisa criar seu componente do zero ou pode herdar as noções básicas de um componente existente?
 
    * Não há necessidade de reinventar a roda.
-   * Existem vários mecanismos fornecidos pelo AEM para permitir que você herde e estenda detalhes de outra definição de componente, incluindo substituição, sobreposição e Fusão [de recursos do](/help/sites-developing/sling-resource-merger.md)Sling.
+   * Existem vários mecanismos fornecidos pela AEM para permitir que você herde e estenda detalhes de outra definição de componente, incluindo sobreposição, sobreposição e Fusão [de Recursos de](/help/sites-developing/sling-resource-merger.md)Sling.
 
 * Seu componente exigirá lógica para selecionar/manipular o conteúdo?
 
@@ -65,7 +65,7 @@ Antes de qualquer start sério de discussão sobre o desenvolvimento de componen
 
 * **Interface clássica do** usuário com base na tecnologia ExtJS que foi introduzida com o CQ 5.1.
 
-Consulte Recomendações da interface de [usuário para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
+Consulte [Interface da interface do usuário Recommendations para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
 
 Os componentes podem ser implementados para suportar a interface habilitada para toque, a interface clássica ou ambos. Ao observar uma instância padrão, você também verá componentes prontos para uso originalmente projetados para a interface clássica, para a interface habilitada para toque ou para ambos.
 
@@ -73,7 +73,7 @@ Por isso cobriremos as noções básicas de ambos, e como reconhecê-los, nesta 
 
 >[!NOTE]
 >
->A Adobe recomenda aproveitar a interface habilitada para toque para se beneficiar da tecnologia mais recente. [Ferramentas e ferramentas de moderação do AEM (moderniatzion-tools.md) podem facilitar a migração.
+>A Adobe recomenda aproveitar a interface habilitada para toque para se beneficiar da tecnologia mais recente. [AEM Ferramentas de moderação e (moderniatzion-tools.md) podem facilitar a migração.
 
 ### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
@@ -83,11 +83,11 @@ Essa filosofia é apoiada pelo [HTL](https://helpx.adobe.com/experience-manager/
 
 ### HTL vs JSP {#htl-vs-jsp}
 
-HTL é uma linguagem de modelo HTML introduzida com o AEM 6.0.
+HTL é uma linguagem de modelo HTML introduzida com AEM 6.0.
 
-A discussão sobre usar [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) ou JSP (Java Server Pages) ao desenvolver seus próprios componentes deve ser simples, já que o HTL agora é a linguagem de script recomendada para o AEM.
+A discussão sobre usar [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) ou JSP (Java Server Pages) ao desenvolver seus próprios componentes deve ser simples, já que o HTL agora é a linguagem de script recomendada para AEM.
 
-HTL e JSP podem ser usados para desenvolver componentes para a interface clássica e habilitada para toque. Embora possa haver uma tendência de supor que o HTL seja apenas para a interface habilitada para toque e o JSP para a interface clássica, isso é um equívoco e mais devido à temporização. A interface do usuário habilitada para toque e o HTL foram incorporados ao AEM durante aproximadamente o mesmo período. Como o HTL agora é o idioma recomendado, ele está sendo usado para novos componentes, que tendem a ser para a interface habilitada para toque.
+HTL e JSP podem ser usados para desenvolver componentes para a interface clássica e habilitada para toque. Embora possa haver uma tendência de supor que o HTL seja apenas para a interface habilitada para toque e o JSP para a interface clássica, isso é um equívoco e mais devido à temporização. A interface do usuário habilitada para toque e o HTL foram incorporados ao AEM aproximadamente no mesmo período. Como o HTL agora é o idioma recomendado, ele está sendo usado para novos componentes, que tendem a ser para a interface habilitada para toque.
 
 >[!NOTE]
 >
@@ -97,8 +97,8 @@ HTL e JSP podem ser usados para desenvolver componentes para a interface clássi
 
 Para criar seus próprios componentes para a interface de usuário apropriada, consulte (após ler esta página):
 
-* [Componentes do AEM para a interface habilitada para toque](/help/sites-developing/developing-components.md)
-* [Componentes do AEM para a interface clássica](/help/sites-developing/developing-components-classic.md)
+* [AEM componentes para a interface habilitada para toque](/help/sites-developing/developing-components.md)
+* [Componentes AEM para a interface clássica](/help/sites-developing/developing-components-classic.md)
 
 Uma maneira rápida de começar é copiar um componente existente e fazer as alterações desejadas. Para saber como criar seus próprios componentes e adicioná-los ao sistema de parágrafo, consulte:
 
@@ -106,11 +106,11 @@ Uma maneira rápida de começar é copiar um componente existente e fazer as alt
 
 ### Mover componentes para a instância de publicação {#moving-components-to-the-publish-instance}
 
-Os componentes que renderizam o conteúdo devem ser implantados na mesma instância do AEM que o conteúdo. Portanto, todos os componentes usados para criar e renderizar páginas na instância do autor devem ser implantados na instância de publicação. Quando implantados, os componentes ficam disponíveis para renderizar páginas ativadas.
+Os componentes que renderizam o conteúdo devem ser implantados na mesma instância AEM do conteúdo. Portanto, todos os componentes usados para criar e renderizar páginas na instância do autor devem ser implantados na instância de publicação. Quando implantados, os componentes ficam disponíveis para renderizar páginas ativadas.
 
 Use as seguintes ferramentas para mover seus componentes para a instância de publicação:
 
-* [Use o Gerenciador](/help/sites-administering/package-manager.md) de pacotes para adicionar seus componentes a um pacote e movê-los para outra instância do AEM.
+* [Use o Gerenciador](/help/sites-administering/package-manager.md) de pacotes para adicionar seus componentes a um pacote e movê-los para outra instância AEM.
 * [Use a ferramenta](/help/sites-authoring/publishing-pages.md#manage-publication) de replicação Ativar árvore para replicar os componentes.
 
 >[!NOTE]
@@ -121,7 +121,7 @@ Use as seguintes ferramentas para mover seus componentes para a instância de pu
 
 * Página:
 
-   * O AEM tem o componente de *página* ( `cq:Page`).
+   * AEM tem o componente de *página* ( `cq:Page`).
    * Este é um tipo específico de recurso que é importante para a gestão de conteúdo.
       * Uma página corresponde a uma página da Web com conteúdo para seu site.
 
@@ -159,8 +159,8 @@ Essa é uma abstração que ajuda a garantir que, mesmo quando a aparência muda
 
 A definição de um componente pode ser dividida da seguinte forma:
 
-* Os componentes do AEM são baseados no [Sling](https://sling.apache.org/documentation.html).
-* Os componentes do AEM estão (normalmente) localizados em:
+* AEM componentes são baseados em [Sling](https://sling.apache.org/documentation.html).
+* AEM componentes estão (normalmente) localizados em:
 
    * HTL: `/libs/wcm/foundation/components`
    * JSP: `/libs/foundation/components`
@@ -169,7 +169,7 @@ A definição de um componente pode ser dividida da seguinte forma:
 
    * `/apps/<myApp>/components`
 
-* Os componentes padrão do AEM são definidos como `cq:Component` e têm os principais elementos:
+* AEM componentes padrão são definidos como `cq:Component` e têm os principais elementos:
 
    * propriedades do jcr:
 
@@ -180,6 +180,7 @@ A definição de um componente pode ser dividida da seguinte forma:
       Eles definem elementos estáticos usados pelo componente.
 
    * Scripts:
+
    São usados para implementar o comportamento da instância resultante do componente.
 
 * **Nó raiz**:
@@ -457,6 +458,7 @@ As definições de caixa de diálogo são específicas para a interface do usuá
 >
 >* Para fins de compatibilidade, a interface do usuário habilitada para toque pode usar a definição de uma caixa de diálogo clássica, quando nenhuma caixa de diálogo tiver sido definida para a interface habilitada para toque.
 >* A Ferramenta [de conversão de](/help/sites-developing/dialog-conversion.md) caixa de diálogo também é fornecida para ajudar a estender/converter componentes que tenham apenas diálogos definidos para a interface clássica.
+
 >
 
 
@@ -473,6 +475,7 @@ As definições de caixa de diálogo são específicas para a interface do usuá
 
          * Para componentes prontos para uso, isso geralmente faz referência a uma página na documentação.
          * Se nenhum `helpPath` for especificado, o URL padrão (página de visão geral da documentação) será exibido.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    Na caixa de diálogo, os campos individuais são definidos:
@@ -491,6 +494,7 @@ As definições de caixa de diálogo são específicas para a interface do usuá
 
          * Para componentes prontos para uso, isso geralmente faz referência a uma página na documentação.
          * Se nenhum `helpPath` for especificado, o URL padrão (página de visão geral da documentação) será exibido.
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    Na caixa de diálogo, os campos individuais são definidos:
@@ -925,7 +929,7 @@ O `cq:inplaceEditing` nó (tipo de nó `cq:InplaceEditingConfig`) define uma con
    <td><p>(<code>String</code>) Tipo de editor. Os tipos disponíveis são:</p> 
     <ul> 
      <li>plaintext: a ser usado para conteúdo não HTML.<br /> </li> 
-     <li>título: é um editor de texto simples aprimorado que converte títulos gráficos em um texto simples antes do início da edição. Usado pelo componente de título do Geometrixx.<br /> </li> 
+     <li>título: é um editor de texto simples aprimorado que converte títulos gráficos em um texto simples antes do início da edição. Usado pelo componente de título da Geometrixx.<br /> </li> 
      <li>texto: a ser usado para conteúdo HTML (usa o Editor de Rich Text).<br /> </li> 
     </ul> </td> 
   </tr> 
