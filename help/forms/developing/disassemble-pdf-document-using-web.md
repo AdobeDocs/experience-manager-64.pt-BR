@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 translation-type: tm+mt
 source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço da Web
 1. Crie um cliente do Montador de PDF.
 
    * Crie um `AssemblerServiceClient` objeto usando seu construtor padrão.
-   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
+   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `AssemblerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -42,8 +45,8 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço da Web
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DX.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento DDX e o modo no qual o arquivo será aberto.
+   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DDX.
+   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento DDX e o modo no qual o arquivo deve ser aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
    * Preencha o `BLOB` objeto atribuindo sua `MTOM` propriedade ao conteúdo da matriz de bytes.
@@ -51,7 +54,7 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço da Web
 1. Consulte um documento PDF para desmontar.
 
    * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento PDF de entrada. Esse `BLOB` objeto é passado para o `invokeOneDocument` como um argumento.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF de entrada e o modo no qual o arquivo será aberto.
+   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF de entrada e o modo no qual o arquivo deve ser aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
    * Preencha o `BLOB` objeto atribuindo a seu `MTOM` campo o conteúdo da matriz de bytes.
@@ -73,6 +76,7 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço da Web
    * Um `BLOB` objeto que representa o documento DDX que desmonta o documento PDF
    * O `MyMapOf_xsd_string_To_xsd_anyType` objeto que contém o documento PDF a ser desmontado
    * Um `AssemblerOptionSpec` objeto que especifica opções de tempo de execução
+
    O `invokeDDX` método retorna um `AssemblerResult` objeto que contém os resultados da tarefa e quaisquer exceções que ocorreram.
 
 1. Salve os documentos PDF desmontados.
@@ -85,6 +89,6 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço da Web
 
 **Consulte também:**
 
-[Desmontagem Programática de Documentos PDF](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
+[Desmontagem programática de Documentos PDF](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
