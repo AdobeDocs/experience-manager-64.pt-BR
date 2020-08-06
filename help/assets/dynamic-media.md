@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 27%
 
 ---
 
@@ -27,7 +30,7 @@ O Dynamic Media oferece experiências de visualização interativas, incluindo z
 
 ## O que você pode fazer com o Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-O Dynamic Media permite gerenciar seus ativos antes de publicá-los. Como trabalhar com ativos em geral é abordado em detalhes em [Trabalhar com ativos](managing-assets-touch-ui.md)digitais. Tópicos gerais incluem upload, download, edição e publicação de ativos; visualizar e editar propriedades e procurar ativos.
+O Dynamic Media permite que você gerencie seus ativos antes de publicá-los. Como trabalhar com ativos em geral é abordado detalhadamente em [Trabalhar com ativos](managing-assets-touch-ui.md)digitais. Tópicos gerais incluem upload, download, edição e publicação de ativos; visualizar e editar propriedades e procurar ativos.
 
 Os recursos somente Dynamic-Media incluem o seguinte:
 
@@ -58,7 +61,7 @@ Você pode saber se o Dynamic Media está ativado (ativado) pelas seguintes cara
 * Conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista estão disponíveis.
 * Execuções PTIFF são criadas.
 
-Quando você clica em um ativo de imagem, a exibição do ativo é diferente com o Dynamic Media [ativado](config-dynamic.md#enabling-dynamic-media). O Dynamic Media usa visualizadores HTML5 sob demanda.
+Quando você clica em um ativo de imagem, a visualização do ativo é diferente com o Dynamic Media [ativado](config-dynamic.md#enabling-dynamic-media). O Dynamic Media usa visualizadores HTML5 sob demanda.
 
 ### Execuções dinâmicas {#dynamic-renditions}
 
@@ -78,7 +81,7 @@ Os ativos habilitados para mídia dinâmica incluem `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Alterações nas exibições de ativos {#asset-views-change}
+### Alteração de visualizações de ativos {#asset-views-change}
 
 Com o Dynamic Media ativado, você pode aumentar e diminuir o zoom clicando nos botões `+` e `-` . Você também pode clicar/tocar para aplicar zoom em determinada área. O Reverter leva você para a versão original e você pode tornar a imagem em tela cheia clicando nas setas diagonais. O Dynamic Media ativado tem a seguinte aparência:
 
