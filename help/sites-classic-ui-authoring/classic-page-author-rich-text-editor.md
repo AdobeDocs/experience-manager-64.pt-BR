@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 89%
 
 ---
 
@@ -157,7 +160,7 @@ Para listas aninhadas, recue um ou mais itens da lista.
 
 Para alterar o estilo de uma lista, basta posicionar o cursor dentro da lista e, em seguida, selecionando o outro estilo. Uma sublista também pode ter um estilo diferente da lista que a contém. Isso pode ser aplicado quando a sublista tiver sido criada (por recuo).
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_lista_use](assets/cq55_rte_lists_use.png)
 
 ### Links {#links}
 
@@ -326,7 +329,7 @@ As propriedades básicas da tabela podem ser configuradas antes de clicar em **O
 
 * **Espaçamento entre células**
 
-    Isso define a distância entre as células.
+   Isso define a distância entre as células.
 
 >[!NOTE]
 >
@@ -408,6 +411,7 @@ Criar uma tabela aninhada criará uma nova tabela autossuficiente, dentro da cé
 >
 >* IE do Windows: usar o clique do botão do mouse principal + Ctrl (geralmente à esquerda) para selecionar várias células.
 >* Firefox: arrastar o mouse para selecionar um intervalo de células.
+
 >
 
 
