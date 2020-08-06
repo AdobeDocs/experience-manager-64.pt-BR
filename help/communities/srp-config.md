@@ -1,8 +1,8 @@
 ---
 title: Configuração de armazenamento
 seo-title: Configuração de armazenamento
-description: Como acessar o console de configuração de armazenamento
-seo-description: Como acessar o console de configuração de armazenamento
+description: Como acessar o console de configuração do Armazenamento
+seo-description: Como acessar o console de configuração do Armazenamento
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,28 +11,31 @@ content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
 
 # Configuração de armazenamento {#storage-configuration}
 
-A configuração de armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
+A configuração do Armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
 
-Essa configuração informa o código AEM Communities sobre qual implementação do SRP (Storage Resource Provider [fornecedor de recursos de armazenamento]) deve ser usada ao acessar o UGC e deve refletir a topologia estabelecida quando o AEM foi implantado.
+Essa configuração informa o código da AEM Communities sobre qual implementação do SRP (armazenamento resource provider, Provedor de recursos do servidor) deve ser usada ao acessar o UGC e deve refletir a topologia estabelecida quando o AEM foi implantado.
 
 Para obter uma discussão sobre opções de armazenamento e topologias de implantação, visite
 
 * [Armazenamento de conteúdo da comunidade](working-with-srp.md)
 * [Topologias recomendadas](topologies.md)
 
-## Console de configuração de armazenamento {#storage-configuration-console}
+## Console de configuração do Armazenamento {#storage-configuration-console}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-No ambiente do autor, para acessar o console de configuração de armazenamento
+No ambiente do autor, para acessar o console de configuração do armazenamento
 
-* Da navegação global: **[!UICONTROL Ferramentas > Comunidades > Configuração de armazenamento]**
+* Da navegação global: **[!UICONTROL Ferramentas > Comunidades > Configuração do Armazenamento]**
 
 Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
@@ -45,9 +48,9 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 * Selecione **[!UICONTROL Enviar]**
 
-### Sobre o armazenamento JCR {#about-jcr-storage}
+### Sobre o Armazenamento JCR {#about-jcr-storage}
 
-Observe que se nenhuma seleção for feita, o padrão será o repositório do AEM, JCR.
+Observe que se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
 
 O JCR *não* é uma loja comum compartilhada pelos ambientes de autor e publicação. O conteúdo da comunidade estará visível somente do ambiente do autor ou publicação no qual foi criado.
 
