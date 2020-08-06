@@ -10,13 +10,16 @@ topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 0%
 
 ---
 
 
 # Abrir uma tarefa {#opening-a-task}
 
-Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. Tarefas são etapas no Fluxo de trabalho definido na bancada ou no editor de fluxo de trabalho do AEM. Por exemplo, consulte o [Conard obtém a tarefa de avaliação no site](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)de referência Geometrixx Gov. É possível fazer alterações em qualquer tarefa atribuída a você no momento. Todas as tarefas estão disponíveis na guia Tarefa. As Tarefas salvas como rascunhos permanecem na guia tarefa.
+Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. As Tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho AEM. Por exemplo, consulte o [Conard obtém a tarefa de avaliação no site](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)de referência do Geometrixx Gov. É possível fazer alterações em qualquer tarefa atribuída a você no momento. Todas as tarefas estão disponíveis na guia Tarefa. As Tarefas salvas como rascunhos permanecem na guia tarefa.
 
 Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvar um rascunho](/help/forms/using/save-as-draft.md).
 
@@ -35,7 +38,7 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 **Para abrir um aplicativo**
 
-1. Toque no **aplicativo** na guia **Formulários** .
+1. Toque no **aplicativo** na guia **Forms** .
 
    Quando você seleciona um aplicativo, a descrição do aplicativo é exibida abaixo do nome do aplicativo. Após a descrição, as ações/ações do usuário associadas ao aplicativo são exibidas.
 
