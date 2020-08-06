@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Você pode alterar a fonte exibida na área de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário de forma seletiva.
 
-Siga as etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md) do espaço de trabalho do AEM Forms e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
+Siga as etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md) do espaço de trabalho AEM Forms e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
 
 1. Altere ou adicione a família de fontes em um estilo existente.
 1. Altere ou adicione a família de fontes em linha para o elemento HTML.
@@ -27,7 +30,7 @@ Siga as etapas [genéricas para personalização](/help/forms/using/generic-step
 
 Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação superior para Courier New, siga estas etapas:
 
-1. Faça logon no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Efetue login no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Faça uma das seguintes opções:
 
    1. Para alterar a família de fontes em um estilo existente, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
@@ -74,6 +77,6 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
 1. Reinicie o espaço de trabalho e limpe o cache do navegador para que as alterações fiquem visíveis.
 
-![change_font_before](assets/change_font_before.png)**Figura:** Barra de navegação *superior antes da personalização de fontes*
+![change_font_before](assets/change_font_before.png)**Figura:** *Barra de navegação superior antes da personalização de fontes*
 
-![change_font_after](assets/change_font_after.png)**Figura:** Barra de navegação *superior após personalização da primeira guia*
+![change_font_after](assets/change_font_after.png)**Figura:** *Barra de navegação superior após personalização da primeira guia*
