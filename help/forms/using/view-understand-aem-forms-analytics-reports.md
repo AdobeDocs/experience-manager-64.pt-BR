@@ -1,8 +1,8 @@
 ---
-title: Exibir e entender relatórios de análise do AEM Forms
-seo-title: Exibir e entender relatórios de análise do AEM Forms
-description: O AEM Forms integra-se ao Adobe Analytics e fornece um resumo e análises detalhadas sobre os formulários adaptativos publicados.
-seo-description: O AEM Forms integra-se ao Adobe Analytics e fornece um resumo e análises detalhadas sobre os formulários adaptativos publicados.
+title: Visualização e compreensão dos relatórios de análise da AEM Forms
+seo-title: Visualização e compreensão dos relatórios de análise da AEM Forms
+description: A AEM Forms integra-se à Adobe Analytics e fornece um resumo e análises detalhadas sobre seus formulários adaptativos publicados.
+seo-description: A AEM Forms integra-se à Adobe Analytics e fornece um resumo e análises detalhadas sobre seus formulários adaptativos publicados.
 uuid: 193f472d-4aa3-4c31-b3c7-b5a2957dfb3d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,25 +10,28 @@ topic-tags: integrations
 discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 0%
 
 ---
 
 
-# Exibir e entender relatórios de análise do AEM Forms {#view-and-understand-aem-forms-analytics-reports}
+# Visualização e compreensão dos relatórios de análise da AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
-O Adobe Experience Manager Forms é integrado ao Adobe Analytics, que permite capturar e rastrear métricas de desempenho para formulários e documentos publicados. O objetivo da análise dessas métricas é tomar decisões informadas com base nos dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
+A Adobe Experience Manager Forms integra-se à Adobe Analytics, que permite capturar e rastrear métricas de desempenho para seus formulários e documentos publicados. O objetivo da análise dessas métricas é tomar decisões informadas com base nos dados sobre as alterações necessárias para tornar os formulários ou o documento mais utilizáveis.
 
 ## Configurar análises {#setting-up-analytics}
 
-O recurso de análise no AEM Forms está disponível como parte do pacote complementar do AEM Forms. Para obter informações sobre como instalar o pacote complementar, consulte [Instalação e configuração do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+O recurso de análise no AEM Forms está disponível como parte do pacote suplementar do AEM Forms. Para obter informações sobre como instalar o pacote suplementar, consulte [Instalação e configuração do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-Além do pacote complementar, você precisa de uma conta do Adobe Analytics. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+Além do pacote complementar, você precisa de uma conta Adobe Analytics. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Depois que você tiver o pacote complementar AEM Forms e uma conta do Adobe Analytics, integre a conta do Adobe Analytics ao AEM Forms e ative o rastreamento em seus formulários ou documentos, conforme descrito em [Configurar análises e relatórios](/help/forms/using/configure-analytics-forms-documents.md).
+Depois que você tiver o pacote complementar AEM Forms e uma conta Adobe Analytics, integre a conta Adobe Analytics à AEM Forms e ative o rastreamento em seus formulários ou documentos, conforme descrito em [Configurar análises e relatórios](/help/forms/using/configure-analytics-forms-documents.md).
 
 ## Como as informações de interação do usuário são registradas {#how-user-interaction-information-is-recorded}
 
-Quando um usuário interage com o formulário, as interações são registradas e enviadas para o servidor do Analytics. A lista a seguir indica chamadas de servidor para várias atividades do usuário:
+Quando um usuário interage com o formulário, as interações são registradas e enviadas para o servidor do Analytics. A lista a seguir indica chamadas de servidor para várias atividades de usuário:
 
 * 2 chamadas por campo por visita
 * 1 para visita ao painel
@@ -46,25 +49,25 @@ Quando um usuário interage com o formulário, as interações são registradas 
 
 ## Exibição de relatórios de análise {#summary-report}
 
-Execute as seguintes etapas para exibir os relatórios de análise:
+Execute as seguintes etapas para relatórios de análise de visualização:
 
-1. Faça logon no portal do AEM em `https://[hostname]:[port]`
-1. Clique em **Formulários > Formulários e documentos**.
+1. Faça logon no portal AEM em `https://[hostname]:[port]`
+1. Clique em **Forms > Forms e Documentos**.
 
-1. Selecione o formulário para o qual deseja exibir os relatórios de análise.
+1. Selecione o formulário para o qual deseja visualização os relatórios de análise.
 1. Selecione **Mais > Relatórios** do Analytics.
 
 ![analytics report](assets/analyticsreport.png)
 
-**** A. comando Relatório do Analytics
+**A.** comando Relatório do Analytics
 
-O AEM Forms exibe relatórios de análise para o formulário e para cada painel no formulário, como mostrado abaixo.
+A AEM Forms exibe relatórios de análise para o formulário e para cada painel no formulário, como mostrado abaixo.
 
 ![Relatório de resumo de um formulário adaptável](assets/analyticsdashboard_callout.png)
 
-************ A. Conversões **B. Resumo no nível do formulário** C.**Resumo no nível do painel** D. Navegadores de visitantes - filtrar **E. SO dos visitantes - filtro** F. Idioma dos visitantes - filtro
+**A.** Conversões **B.** Resumo no nível do formulário **C.** Resumo no nível do painel **D.** Navegadores de visitantes - filtro **E.** SO de visitantes - filtro **F.** Idioma dos visitantes - filtro
 
-Por padrão, o relatório de análise dos últimos sete dias é exibido. Você pode exibir relatórios dos últimos 15 dias, do último mês e assim por diante, ou especificar um intervalo de datas.
+Por padrão, o relatório de análise dos últimos sete dias é exibido. Você pode visualização relatórios dos últimos 15 dias, do último mês e assim por diante, ou especificar um intervalo de datas.
 
 >[!NOTE]
 >
@@ -86,7 +89,7 @@ O gráfico de conversões em nível de formulário fornece um insight sobre o de
 
 A seção de resumo no nível do formulário fornece um insight sobre o desempenho do formulário nos seguintes KPIs:
 
-* **Tempo** médio de preenchimento: Tempo médio gasto no preenchimento do formulário. Quando os usuários passam tempo no formulário, mas não enviam, esse tempo não é incluído neste cálculo.
+* **Tempo** médio de preenchimento: Tempo médio gasto no preenchimento do formulário. Quando os usuários gastam tempo no formulário, mas não enviam, esse tempo não é incluído neste cálculo.
 * **Representações**: Número de vezes que o formulário foi renderizado ou aberto
 
 * **Rascunhos**: Número de vezes que o formulário foi salvo como rascunho
@@ -104,11 +107,11 @@ A seção de resumo no nível do painel fornece as seguintes informações sobre
 
 * **Erros encontrados**: Número médio de erros encontrados pelos usuários nos campos em um painel. Os erros encontrados são obtidos pela divisão dos erros totais em um campo pelo número de representações do formulário.
 
-* **Ajuda Acessada**: Número médio de vezes que os usuários acessaram a ajuda no contexto dos campos no painel. A Ajuda Acessada é obtida dividindo o número total de vezes que a Ajuda é acessada para um campo por número de representações do formulário.
+* **Ajuda Acessada**: Número médio de vezes que os usuários acessaram a ajuda no contexto para os campos no painel. A Ajuda Acessada é obtida dividindo o número total de vezes que a Ajuda é acessada para um campo por número de representações do formulário.
 
 ### Relatório detalhado do painel {#detailed-panel-report}
 
-Você também pode exibir detalhes de cada painel clicando no nome de um painel no Relatório do painel.
+Você também pode visualização detalhes de cada painel clicando no nome de um painel em Relatório de painel.
 
 ![Relatório detalhado do painel](assets/panel-report-detailed.png)
 
@@ -130,7 +133,7 @@ Para filtrar mais os dados de análise, clique em uma entrada em qualquer uma da
 
 ![Filtro aplicado ao relatório do Analytics - Google Chrome ](assets/filter.png)
 
-Se você exibir o relatório do painel depois de aplicar um filtro, os dados do relatório do painel também serão exibidos de acordo com o filtro aplicado.
+Se você visualização o relatório do painel depois de aplicar um filtro, os dados do relatório do painel também são exibidos de acordo com o filtro aplicado.
 
 Depois que um filtro é aplicado:
 
