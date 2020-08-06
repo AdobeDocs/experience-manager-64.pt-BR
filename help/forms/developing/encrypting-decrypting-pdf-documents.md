@@ -35,7 +35,7 @@ O serviço de criptografia permite criptografar e descriptografar documentos. Qu
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+   >Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Criptografar Documentos PDF com uma senha {#encrypting-pdf-documents-with-a-password}
 
@@ -43,11 +43,11 @@ Ao criptografar um documento PDF com uma senha, o usuário deve especificar a se
 
 >[!NOTE]
 >
->Se você carregar um documento PDF criptografado no repositório do AEM Forms, ele não poderá descriptografar o documento PDF e extrair o conteúdo XDP. É recomendável que você não criptografe um documento antes de carregá-lo no repositório do AEM Forms. (Consulte [Gravando Recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Se você carregar um documento PDF criptografado no repositório AEM Forms, ele não poderá descriptografar o documento PDF e extrair o conteúdo XDP. É recomendável que você não criptografe um documento antes de carregá-lo no repositório AEM Forms. (Consulte [Gravando Recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -69,8 +69,8 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
 **Criar um objeto da API do cliente de criptografia**
 
@@ -82,7 +82,7 @@ Para executar programaticamente uma operação do serviço de criptografia, é n
 
 **Definir opções de tempo de execução da criptografia**
 
-Para criptografar um documento PDF com uma senha, especifique quatro valores, incluindo dois valores de senha. O primeiro valor de senha é usado para criptografar o documento PDF e deve ser especificado ao abrir o documento PDF. O segundo valor de senha, denominado valor de senha mestre, é usado para remover a criptografia do documento PDF. Os valores de senha fazem distinção entre maiúsculas e minúsculas e esses dois valores de senha não podem ser os mesmos.
+Para criptografar um documento PDF com uma senha, especifique quatro valores, incluindo dois valores de senha. O primeiro valor de senha é usado para criptografar o documento PDF e deve ser especificado ao abrir o documento PDF. O segundo valor de senha, chamado de valor de senha principal, é usado para remover a criptografia do documento PDF. Os valores de senha fazem distinção entre maiúsculas e minúsculas e esses dois valores de senha não podem ser os mesmos.
 
 É necessário especificar os recursos do documento PDF a serem criptografados. É possível criptografar todo o documento PDF, tudo exceto os metadados do documento ou apenas os anexos do documento. Se você criptografar apenas os anexos do documento, um usuário será solicitado a fornecer uma senha ao tentar acessar os anexos do arquivo.
 
@@ -109,7 +109,7 @@ Depois de recuperar um documento PDF não protegido e definir valores de tempo d
 
 [Criptografar um documento PDF usando a API de serviço da Web](encrypting-decrypting-pdf-documents.md#encrypting-a-pdf-document-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -141,9 +141,9 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (Java):
    * Especifique os recursos do documento PDF a serem criptografados chamando o `PasswordEncryptionOptionSpec` método do objeto `setEncryptOption` e transmitindo um valor de `PasswordEncryptionOption` lista discriminada que especifica os recursos do documento a serem criptografados. Por exemplo, para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, especifique `PasswordEncryptionOption.ALL`.
    * Crie um `java.util.List` objeto que armazene as permissões de criptografia usando o `ArrayList` construtor.
    * Especifique uma permissão chamando o método do `java.util.List` objeto `add` e transmitindo um valor de lista discriminada que corresponda à permissão que você deseja definir. Por exemplo, para definir a permissão que permite que um usuário copie dados localizados no documento PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita esta etapa para cada permissão a ser definida).
-   * Especifique a opção de compatibilidade do Acrobat, chamando o `PasswordEncryptionOptionSpec` método do objeto `setCompatability` e transmitindo um valor de lista discriminada que especifique o nível de compatibilidade do Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * Especifique a opção de compatibilidade do Acrobat chamando o método do `PasswordEncryptionOptionSpec` objeto `setCompatability` e transmitindo um valor de lista discriminada que especifique o nível de compatibilidade do Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
    * Especifique o valor da senha que permite que um usuário abra o documento PDF criptografado chamando o método do `PasswordEncryptionOptionSpec` objeto `setDocumentOpenPassword` e transmitindo um valor de string que representa a senha aberta.
-   * Especifique o valor da senha mestre que permite que um usuário remova a criptografia do documento PDF chamando o método do `PasswordEncryptionOptionSpec` objeto `setPermissionPassword` e transmitindo um valor de string que representa a senha mestre.
+   * Especifique o valor da senha principal que permite que um usuário remova a criptografia do documento PDF chamando o método do `PasswordEncryptionOptionSpec` objeto `setPermissionPassword` e transmitindo um valor de string que representa a senha principal.
 
 1. Adicione a senha.
 
@@ -165,7 +165,7 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (Java):
 
 [Start rápido (modo SOAP): Criptografar um documento PDF usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -208,7 +208,7 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (serviç
    * Especifique os recursos do documento PDF a serem criptografados atribuindo um valor de `PasswordEncryptionOption` lista discriminada ao membro de `PasswordEncryptionOptionSpec` dados do `encryptOption` objeto. Para criptografar o PDF inteiro, incluindo seus metadados e seus anexos, atribua `PasswordEncryptionOption.ALL` a esse membro de dados.
    * Especifique a opção de compatibilidade do Acrobat atribuindo um valor de `PasswordEncryptionCompatability` lista discriminada ao membro de `PasswordEncryptionOptionSpec` dados do `compatability` objeto. Por exemplo, atribua `PasswordEncryptionCompatability.ACRO_7` a esse membro de dados.
    * Especifique o valor da senha que permite que um usuário abra o documento PDF criptografado atribuindo um valor de string que representa a senha de abertura ao membro de `PasswordEncryptionOptionSpec` dados do `documentOpenPassword` objeto.
-   * Especifique o valor da senha que permite que um usuário remova a criptografia do documento PDF atribuindo um valor de string que representa a senha mestre ao membro de `PasswordEncryptionOptionSpec` dados do `permissionPassword` objeto.
+   * Especifique o valor da senha que permite que um usuário remova a criptografia do documento PDF atribuindo um valor de string que representa a senha principal ao membro de `PasswordEncryptionOptionSpec` dados do `permissionPassword` objeto.
 
 1. Adicione a senha.
 
@@ -230,9 +230,9 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (serviç
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Criptografar Documentos PDF com certificados {#encrypting-pdf-documents-with-certificates}
 
@@ -247,15 +247,15 @@ Um certificado de chave pública contém uma chave pública do usuário e inform
 
 >[!NOTE]
 >
->Se você carregar um documento PDF criptografado no repositório do AEM Forms, ele não poderá descriptografar o documento PDF e extrair o conteúdo XDP. É recomendável que você não criptografe um documento antes de carregá-lo no repositório do AEM Forms. (Consulte [Gravando Recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Se você carregar um documento PDF criptografado no repositório AEM Forms, ele não poderá descriptografar o documento PDF e extrair o conteúdo XDP. É recomendável que você não criptografe um documento antes de carregá-lo no repositório AEM Forms. (Consulte [Gravando Recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
->Antes de criptografar um documento PDF com um certificado, é necessário adicionar o certificado ao AEM Forms. Um certificado é adicionado usando o console de administração ou de forma programática usando a API do Trust Manager. (Consulte [Importação de credenciais usando a API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
+>Antes de poder criptografar um documento PDF com um certificado, é necessário adicionar o certificado à AEM Forms. Um certificado é adicionado usando o console de administração ou de forma programática usando a API do Trust Manager. (Consulte [Importação de credenciais usando a API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -278,8 +278,8 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
 **Criar um objeto da API do cliente de criptografia**
 
@@ -313,7 +313,7 @@ Depois de recuperar um documento PDF não protegido, fazer referência ao certif
 
 [Criptografar um documento PDF com um certificado usando a API de serviço da Web](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -357,7 +357,7 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (Ja
 
    * Crie um `CertificateEncryptionOptionSpec` objeto chamando seu construtor.
    * Especifique os recursos do documento PDF a serem criptografados chamando o `CertificateEncryptionOptionSpec` método do objeto `setOption` e transmitindo um valor de `CertificateEncryptionOption` lista discriminada que especifica os recursos do documento a serem criptografados. Por exemplo, para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, especifique `CertificateEncryptionOption.ALL`.
-   * Especifique a opção de compatibilidade do Acrobat chamando o `CertificateEncryptionOptionSpec` método do objeto `setCompat` e transmitindo um valor de `CertificateEncryptionCompatibility` lista discriminada que especifique o nível de compatibilidade do Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
+   * Especifique a opção de compatibilidade do Acrobat chamando o método do `CertificateEncryptionOptionSpec` objeto `setCompat` e transmitindo um valor de `CertificateEncryptionCompatibility` lista discriminada que especifica o nível de compatibilidade do Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Crie um documento PDF criptografado por certificado.
 
@@ -380,7 +380,7 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (Ja
 
 [Start rápido (modo SOAP): Criptografar um documento PDF com um certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -457,9 +457,9 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (se
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Removendo criptografia baseada em certificado {#removing-certificate-based-encryption}
 
@@ -467,7 +467,7 @@ A criptografia baseada em certificado pode ser removida de um documento PDF para
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -488,8 +488,8 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
 **Criar um cliente de serviço de criptografia**
 
@@ -517,7 +517,7 @@ Depois que a criptografia baseada em certificado for removida de um documento PD
 
 [Remover criptografia baseada em certificado usando a API de serviço da Web](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -561,7 +561,7 @@ Remova a criptografia baseada em certificado de um documento PDF usando a API de
 
 [Start rápido (modo SOAP): Remoção da criptografia baseada em certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -618,9 +618,9 @@ Remova a criptografia baseada em certificado usando a API de criptografia (servi
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Removendo criptografia de senha {#removing-password-encryption}
 
@@ -628,7 +628,7 @@ A criptografia baseada em senha pode ser removida de um documento PDF para que o
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-3}
 
@@ -649,8 +649,8 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
 **Criar um cliente de serviço de criptografia**
 
@@ -662,15 +662,15 @@ Para executar programaticamente uma operação do serviço de criptografia, é n
 
 **Remover a senha**
 
-Para remover a criptografia com base em senha de um documento PDF criptografado, é necessário um documento PDF criptografado e um valor de senha mestre usado para remover a criptografia do documento PDF. A senha usada para abrir um documento PDF criptografado por senha não pode ser usada para remover a criptografia. Uma senha mestre é especificada quando o documento PDF é criptografado com uma senha. (Consulte [Criptografar Documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Para remover a criptografia com base em senha de um documento PDF criptografado, é necessário um documento PDF criptografado e um valor de senha principal usado para remover a criptografia do documento PDF. A senha usada para abrir um documento PDF criptografado por senha não pode ser usada para remover a criptografia. Uma senha principal é especificada quando o documento PDF é criptografado com uma senha. (Consulte [Criptografar Documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 **Salvar o documento PDF**
 
-Depois que o serviço de criptografia remover a criptografia baseada em senha de um documento PDF, você poderá salvar o documento PDF como um arquivo PDF. Os usuários podem abrir o documento PDF no Adobe Reader ou Acrobat sem especificar uma senha.
+Depois que o serviço de criptografia remover a criptografia baseada em senha de um documento PDF, você poderá salvar o documento PDF como um arquivo PDF. Os usuários podem abrir o documento PDF no Adobe Reader ou no Acrobat sem especificar uma senha.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -701,7 +701,7 @@ Remova a criptografia baseada em senha de um documento PDF usando a API de cript
    Remova a criptografia baseada em senha do documento PDF, invocando o método do `EncryptionServiceClient` objeto `removePDFPasswordSecurity` e transmitindo os seguintes valores:
 
    * Um `com.adobe.idp.Document` objeto que contém o documento PDF criptografado.
-   * Um valor de string que especifica o valor da senha mestre usado para remover a criptografia do documento PDF.
+   * Um valor de string que especifica o valor de senha principal usado para remover a criptografia do documento PDF.
 
    O `removePDFPasswordSecurity` método retorna um `com.adobe.idp.Document` objeto que contém um documento PDF não protegido.
 
@@ -765,17 +765,17 @@ Remova a criptografia baseada em senha usando a API de criptografia (serviço da
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Desbloquear Documentos PDF criptografados {#unlocking-encrypted-pdf-documents}
 
-Um documento PDF criptografado por senha ou certificado deve ser desbloqueado antes que outra operação do AEM Forms possa ser executada nele. Se você tentar executar uma operação em um documento PDF criptografado, gerará uma exceção. Depois de desbloquear um documento PDF criptografado, é possível executar uma ou mais operações nele. Essas operações podem pertencer a outros serviços, como o Serviço de extensões do Acrobat Reader DC.
+Um documento PDF criptografado por senha ou certificado deve ser desbloqueado antes que outra operação do AEM Forms possa ser executada nele. Se você tentar executar uma operação em um documento PDF criptografado, gerará uma exceção. Depois de desbloquear um documento PDF criptografado, é possível executar uma ou mais operações nele. Essas operações podem pertencer a outros serviços, como o Serviço de extensões da Acrobat Reader DC.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-4}
 
@@ -785,7 +785,7 @@ Para desbloquear um documento PDF criptografado, execute as seguintes etapas:
 1. Crie um cliente de serviço de criptografia.
 1. Obtenha o documento PDF criptografado.
 1. Destrave o documento.
-1. Execute uma operação do AEM Forms.
+1. Execute uma operação AEM Forms.
 
 **Incluir arquivos de projeto**
 
@@ -796,8 +796,8 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
 **Criar um cliente de serviço de criptografia**
 
@@ -815,7 +815,7 @@ Para desbloquear um documento PDF criptografado por certificado, é necessário 
 
 **Executar uma operação do AEM Forms**
 
-Depois que um documento PDF criptografado é desbloqueado, você pode executar outra operação de serviço nele, como aplicar direitos de uso a ele. Esta operação pertence ao serviço de extensões do Acrobat Reader DC.
+Depois que um documento PDF criptografado é desbloqueado, você pode executar outra operação de serviço nele, como aplicar direitos de uso a ele. Esta operação pertence ao serviço Acrobat Reader DC Extensions.
 
 **Consulte também:**
 
@@ -823,7 +823,7 @@ Depois que um documento PDF criptografado é desbloqueado, você pode executar o
 
 [Desbloquear um documento PDF criptografado usando a API de serviço da Web](encrypting-decrypting-pdf-documents.md#unlock-an-encrypted-pdf-document-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -861,11 +861,11 @@ Desbloqueie um documento PDF criptografado usando a API de criptografia (Java):
    * Um `com.adobe.idp.Document` objeto que contém o documento PDF criptografado por certificado.
    * Um valor de string que especifica o nome do alias da chave pública que corresponde à chave privada usada para criptografar o documento PDF.
 
-   Os métodos `unlockPDFUsingPassword` e `unlockPDFUsingCredential` retornam um `com.adobe.idp.Document` objeto que você transmite para outro método Java do AEM Forms para executar uma operação.
+   Os métodos `unlockPDFUsingPassword` e `unlockPDFUsingCredential` retornam um `com.adobe.idp.Document` objeto que você passa para outro método AEM Forms Java para executar uma operação.
 
-1. Execute uma operação do AEM Forms.
+1. Execute uma operação AEM Forms.
 
-   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender às suas necessidades comerciais. Por exemplo, assumindo que você deseja aplicar direitos de uso a um documento PDF desbloqueado, passe o `com.adobe.idp.Document` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o `ReaderExtensionsServiceClient` método do `applyUsageRights` objeto.
+   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender aos requisitos de sua empresa. Por exemplo, assumindo que você deseja aplicar direitos de uso a um documento PDF desbloqueado, passe o `com.adobe.idp.Document` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o `ReaderExtensionsServiceClient` método do `applyUsageRights` objeto.
 
 **Consulte também:**
 
@@ -875,7 +875,7 @@ Desbloqueie um documento PDF criptografado usando a API de criptografia (Java):
 
 [Aplicar direitos de uso a Documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -926,23 +926,23 @@ Desbloqueie um documento PDF criptografado usando a API de criptografia (serviç
    * Um `BLOB` objeto que contém o documento PDF criptografado por certificado.
    * Um valor de string que especifica o nome do alias da chave pública que corresponde à chave privada usada para criptografar o documento PDf.
 
-   Os métodos `unlockPDFUsingPassword` e `unlockPDFUsingCredential` retornam um `com.adobe.idp.Document` objeto que você passa para outro método de AEM Forms para executar uma operação.
+   Os métodos `unlockPDFUsingPassword` e `unlockPDFUsingCredential` retornam um `com.adobe.idp.Document` objeto que você passa para outro método AEM Forms para executar uma operação.
 
-1. Execute uma operação do AEM Forms.
+1. Execute uma operação AEM Forms.
 
-   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender às suas necessidades comerciais. Por exemplo, assumindo que você deseja aplicar direitos de uso ao documento PDF desbloqueado, passe o `BLOB` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o `ReaderExtensionsServiceClient` método do `applyUsageRights` objeto.
+   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender aos requisitos de sua empresa. Por exemplo, assumindo que você deseja aplicar direitos de uso ao documento PDF desbloqueado, passe o `BLOB` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o `ReaderExtensionsServiceClient` método do `applyUsageRights` objeto.
 
 **Consulte também:**
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Determinando o tipo de criptografia {#determining-encryption-type}
 
-Você pode determinar programaticamente o tipo de criptografia que está protegendo um documento PDF usando a API do Serviço de criptografia Java ou a API do Serviço de criptografia da Web. Às vezes, é necessário determinar dinamicamente se um documento PDF está criptografado e, em caso afirmativo, o tipo de criptografia. Por exemplo, você pode determinar se um documento PDF está protegido por criptografia baseada em senha ou por uma política de Gerenciamento de direitos.
+Você pode determinar programaticamente o tipo de criptografia que está protegendo um documento PDF usando a API do Serviço de criptografia Java ou a API do Serviço de criptografia da Web. Às vezes, é necessário determinar dinamicamente se um documento PDF está criptografado e, em caso afirmativo, o tipo de criptografia. Por exemplo, você pode determinar se um documento PDF está protegido por criptografia baseada em senha ou por uma política de Rights Management.
 
 Um documento PDF pode ser protegido pelos seguintes tipos de criptografia:
 
@@ -953,7 +953,7 @@ Um documento PDF pode ser protegido pelos seguintes tipos de criptografia:
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-5}
 
@@ -973,8 +973,8 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
 **Criar um cliente de serviço**
 
@@ -994,7 +994,7 @@ Você pode determinar o tipo de criptografia que está protegendo um documento P
 
 [Determine o tipo de criptografia usando a API de serviço da Web](encrypting-decrypting-pdf-documents.md#determine-the-encryption-type-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1031,7 +1031,7 @@ Determine o tipo de criptografia que está protegendo um documento PDF usando a 
 
 [Start rápido (modo SOAP): Determinar o tipo de criptografia usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1077,6 +1077,6 @@ Determine o tipo de criptografia que está protegendo um documento PDF usando a 
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
