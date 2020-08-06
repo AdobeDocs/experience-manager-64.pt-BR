@@ -30,7 +30,7 @@ O serviço Convert PDF converte documentos PDF em PostScript ou arquivos de imag
 
 ## Configurar propriedades do serviço   {#properties}
 
-Você pode usar o serviço **** AEMFD ConvertPDF no console AEM para configurar as propriedades desse serviço. O URL padrão do console do AEM é `https://[host]:[port]/system/console/configMgr`.
+Você pode usar o serviço **** AEMFD ConvertPDF no Console AEM para configurar as propriedades desse serviço. O URL padrão AEM console é `https://[host]:[port]/system/console/configMgr`.
 
 ## Uso do serviço {#using-the-service}
 
