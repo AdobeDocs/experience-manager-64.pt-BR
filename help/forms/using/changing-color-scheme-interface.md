@@ -1,8 +1,8 @@
 ---
 title: Alteração do esquema de cores da interface
 seo-title: Alteração do esquema de cores da interface
-description: Como modificar seletivamente o esquema de cores das partes da interface do usuário da área de trabalho do AEM Forms.
-seo-description: Como modificar seletivamente o esquema de cores das partes da interface do usuário da área de trabalho do AEM Forms.
+description: Como modificar seletivamente o esquema de cores das partes da interface do usuário do espaço de trabalho AEM Forms.
+seo-description: Como modificar seletivamente o esquema de cores das partes da interface do usuário do espaço de trabalho AEM Forms.
 uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 
 # Alteração do esquema de cores da interface {#changing-the-color-scheme-of-the-interface}
 
-Você pode modificar o esquema de cores das partes da interface do usuário da área de trabalho do AEM Forms para atender às suas necessidades. Veja a seguir alguns exemplos de personalizações representativas do esquema de cores. Além das etapas discutidas neste artigo, consulte Etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
+Você pode modificar o esquema de cores das partes da interface do usuário do espaço de trabalho do AEM Forms para atender aos seus requisitos. Veja a seguir alguns exemplos de personalizações representativas do esquema de cores. Além das etapas discutidas neste artigo, consulte Etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
 
 ## Top navigation bar {#top-navigation-bar}
 
