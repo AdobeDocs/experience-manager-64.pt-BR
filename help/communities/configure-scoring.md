@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
 source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+workflow-type: tm+mt
+source-wordcount: '975'
+ht-degree: 1%
 
 ---
 
 
 # Essenciais de pontuação e emblemas {#scoring-and-badges-essentials}
 
-O recurso de pontuação e selo do AEM Communities fornece a capacidade de identificar e recompensar membros da comunidade.
+O recurso de pontuação e emblemas do AEM Communities oferece a capacidade de identificar e recompensar membros da comunidade.
 
 Os detalhes da configuração do recurso estão descritos em
 
@@ -79,7 +82,7 @@ Para obter instruções detalhadas, visite [Criar um arquivo](../../help/sites-d
 
 Para configurar rapidamente um arquivo de registro de slides:
 
-1. Acesse o suporte **[!UICONTROL de log do console da Web do]** Adobe Experience Manager, por exemplo
+1. Acesse o suporte **[!UICONTROL de log do Console da Web da]** Adobe Experience Manager, por exemplo
 
    * http://localhost:4502/system/console/slinglog
 
@@ -133,15 +136,15 @@ As seguintes APIs estão disponíveis para uso:
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-Os Javadocs mais recentes para as [versões](deploy-communities.md#LatestReleases) instaladas estão disponíveis para desenvolvedores no repositório da Adobe. Consulte [Uso do Maven para comunidades: Javadocs](maven.md#javadocs).
+Os Javadocs mais recentes para as [versões](deploy-communities.md#LatestReleases) instaladas estão disponíveis para desenvolvedores no repositório do Adobe. Consulte [Uso do Maven para comunidades: Javadocs](maven.md#javadocs).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 ### Exemplo de configuração {#example-setup}
 
-As capturas de tela dos dados do repositório vêm da configuração da pontuação e da identificação de um fórum em dois sites diferentes do AEM:
+As capturas de tela dos dados do repositório vêm da configuração da pontuação e da identificação de um fórum em dois sites de AEM diferentes:
 
-1. Um site do AEM com uma ID exclusiva (site da comunidade criado usando o assistente):
+1. Um site AEM com uma ID exclusiva (site da comunidade criado usando o assistente):
 
    * Usar o site Tutorial de introdução (engajamento) criado durante o tutorial de [introdução](getting-started.md)
    * Localize o nó da página do fórum
@@ -167,7 +170,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 
 
 
-1. Um site do AEM *sem* uma ID exclusiva:
+1. Um site AEM *sem* uma id exclusiva:
 
    * Uso do guia Componentes [da comunidade](components-guide.md)
    * Localize o nó da página do fórum
@@ -176,12 +179,14 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    * Adicionar propriedades de pontuação e marcação
 
       * 
+
          ```
          scoringRules = [/etc/community/scoring/rules/comments-scoring,
          /etc/community/scoring/rules/forums-scoring]
          ```
 
       * 
+
          ```
          badgingRules =[/etc/community/badging/rules/comments-scoring,
          /etc/community/badging/rules/forums-scoring]
@@ -220,7 +225,8 @@ Como um usuário ganhou dois símbolos de bronze e recebeu um crachá de moderad
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
    >
-* criação de imagens de crachá exclusivas para sites do AEM diferentes
+* criação de imagens de crachá exclusivas para sites de AEM diferentes
+
 >
 
 
@@ -235,7 +241,7 @@ Para fins de investigação, usando o JSRP como exemplo, a pasta base que conté
 
 O nó filho de `scoring`é o nome da regra de pontuação. Assim, uma prática recomendada é que os nomes das regras de pontuação em um servidor sejam globalmente exclusivos.
 
-Para o site de Envolvimento Geometrixx, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, a ID do site da comunidade ( `engage-ba81p`), uma ID exclusiva e a ID do usuário:
+Para o site de Envolvimento do Geometrixx, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, a ID do site da comunidade ( `engage-ba81p`), uma ID exclusiva e a ID do usuário:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
