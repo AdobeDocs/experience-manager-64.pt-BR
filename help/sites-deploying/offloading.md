@@ -1,8 +1,8 @@
 ---
 title: Descarregamento de tarefas
 seo-title: Descarregamento de tarefas
-description: Saiba como configurar e usar instâncias do AEM em uma topologia para executar tipos específicos de processamento.
-seo-description: Saiba como configurar e usar instâncias do AEM em uma topologia para executar tipos específicos de processamento.
+description: Saiba como configurar e usar instâncias AEM em uma topologia para executar tipos específicos de processamento.
+seo-description: Saiba como configurar e usar instâncias AEM em uma topologia para executar tipos específicos de processamento.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -75,7 +75,7 @@ Para cada cluster, você verá uma lista de membros do cluster que indica a orde
 
 Para cada instância do cluster, é possível ver várias propriedades relacionadas à topologia:
 
-* Uma lista de permissão de tópicos para o consumidor de trabalho da instância.
+* Uma lista de permissões de tópicos para o consumidor de trabalho do exemplo.
 * Os pontos finais expostos para conexão com a topologia.
 * Os tópicos da tarefa para os quais a instância está registrada para descarregamento.
 * Os tópicos da tarefa que a instância processa.
@@ -111,7 +111,7 @@ O serviço de descoberta baseado em recursos do Apache Sling é executado em cad
 O serviço Discovery envia solicitações POST periódicas (pulsações) aos serviços do Topology Connector para estabelecer e manter conexões com a topologia. O serviço Topology Connector mantém uma lista de permissões de endereços IP ou nomes de host que podem participar da topologia:
 
 * Para unir uma instância a uma topologia, especifique o URL do serviço Conector de topologia do membro raiz.
-* Para permitir que uma instância participe de uma topologia, adicione a instância à lista de permissões do serviço do Conector de Topologia do membro raiz.
+* Para permitir que uma instância participe de uma topologia, adicione a instância à lista de permissões do serviço Conector de topologia do membro raiz.
 
 Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes propriedades do serviço org.apache.sling.detection.impt.Config:
 
@@ -148,7 +148,7 @@ Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>Lista de permissões do Conector de topologia</td> 
+   <td>lista de permissões do conector de topologia</td> 
    <td>topologyConnectorWhitelist</td> 
    <td>A lista de endereços IP ou nomes de host que o serviço local do Topology Connector permite na topologia. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -174,7 +174,7 @@ Execute o seguinte procedimento no membro raiz da topologia. O procedimento adic
 1. Abra o Console da Web em seu navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Clique em Principal > Gerenciamento de topologia.
 1. Clique em Configurar serviço de descoberta.
-1. Para cada membro da topologia, adicione um item à propriedade de lista de permissão do Conector de topologia e especifique o nome do host ou endereço IP do membro da topologia.
+1. Para cada membro da topologia, adicione um item à propriedade de lista de permissões do Conector de topologia e especifique o nome do host ou endereço IP do membro da topologia.
 
 ## Configuração do consumo de tópicos {#configuring-topic-consumption}
 
@@ -200,6 +200,7 @@ Os trabalhos são instâncias distribuídas de quantidade que têm o tópico ass
    * Ativado: Esta instância consome trabalhos deste tópico.
    * Desativado: Esta instância não consome trabalhos deste tópico.
    * Exclusivo: Essa instância consome trabalhos apenas deste tópico.
+
    **Observação:** Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
 
 ### Consumidores de trabalho instalados {#installed-job-consumers}
@@ -214,11 +215,11 @@ Várias implementações do JobConsumer são instaladas com o Experience Manager
 
 ### Desativar e ativar tópicos para uma instância {#disabling-and-enabling-topics-for-an-instance}
 
-O serviço Apache Sling Job Consumer Manager fornece propriedades de lista de tópicos e lista de blocos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
+O serviço Apache Sling Job Consumer Manager fornece propriedades de lista de permissões e lista de bloqueios de tópicos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
 
 **Observação:** Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar tópicos.
 
-A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissão e, em seguida, remove tópicos que estão na lista de blocos.Por padrão, todos os tópicos estão ativados (o valor da lista de permissão é `*`) e nenhum tópico está desativado (a lista de blocos não tem valor).
+A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove tópicos que estão na lista de bloqueios.Por padrão, todos os tópicos estão ativados (o valor da lista de permissões é `*`) e nenhum tópico está desativado (a lista de bloqueios não tem valor).
 
 Use o Console da Web ou um `sling:OsgiConfig` nó para configurar as seguintes propriedades. Para `sling:OsgiConfig` nós, o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.evento.impl.jobs.JobConsumerManager.
 
@@ -282,7 +283,7 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transporte > Usuário de transporte | Usuário de replicação na instância do público alvo |
    | Transporte > Senha de transporte | Senha do usuário de replicação na instância do público alvo |
-   | Estendido > Método HTTP | POSTAGEM |
+   | Estendido > Método HTTP | POST |
    | Acionadores > Ignorar padrão | Verdadeiro |
 
 ### Criação do agente reverso {#creating-the-reverse-agent}
