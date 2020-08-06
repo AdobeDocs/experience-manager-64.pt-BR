@@ -1,8 +1,8 @@
 ---
 title: Resolver dependências de arquivo
 seo-title: Resolver dependências de arquivo
-description: Como resolver dependências de arquivos 3D, como arquivos de mapa de textura quando a resolução automática falha.
-seo-description: Como resolver dependências de arquivos 3D, como arquivos de mapa de textura quando a resolução automática falha.
+description: Como resolver dependências de arquivos 3D, como arquivos de mapa de textura, quando a resolução automática falha.
+seo-description: Como resolver dependências de arquivos 3D, como arquivos de mapa de textura, quando a resolução automática falha.
 uuid: 49cefabf-147b-4a78-90f3-0f2d6a8e8cae
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 40%
 
 ---
 
@@ -42,6 +45,7 @@ As dependências do arquivo de modelo 3D principal, como os arquivos de mapa de 
 
       1. Observe os caminhos e nomes de arquivos ausentes.
       1. Próximo do canto superior direito da página de propriedades, toque em **[!UICONTROL Fechar]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. O ativo recém enviado por upload listado corretamente como um ativo referenciado.
 
    * **Ignorar as dependências**.
