@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ Formulários adaptáveis são parte integrante das interações do cliente. É i
 
 O Calvin permite que você automatize o teste de seus formulários adaptáveis no navegador da Web. Calvin utiliza a interface de usuário [do Hobbes](/help/sites-developing/hobbes.md)para executar os testes e fornece as seguintes ferramentas:
 
-* Uma API JavaScript para criar testes.
+* Uma API JavaScript para criação de testes.
 * Uma interface do usuário para executar testes.
 
 Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes de interface diretamente no navegador da Web para testar detalhadamente os seguintes aspectos dos formulários adaptáveis:
@@ -51,10 +54,10 @@ Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes de i
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>Regras de expressão</p> <p> </p> </td> 
+   <td><p>Regras de Expressão</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>As expressões estão associadas a objetos de formulário, como scripts calculate, visível e execute após sair de um campo, sendo executadas após a execução das operações relevantes da interface do usuário?<br /> </li> 
+     <li>As expressões estão associadas a objetos de formulário, como scripts calculate, visível e execute depois de sair de um campo, sendo executadas após a execução das operações relevantes da interface do usuário?<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -68,7 +71,7 @@ Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes de i
    <td><p>Carregamento lento</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>Ao clicar em guias (ou em qualquer item de navegação de um painel), o HTML está sendo obtido do servidor de acordo com a configuração de carregamento lento?</li> 
+     <li>Ao clicar em guias (ou em qualquer item de navegação de um painel), o HTML está sendo buscado do servidor de acordo com a configuração de carregamento lento?</li> 
     </ul></td> 
   </tr> 
   <tr> 
@@ -93,7 +96,7 @@ Antes de usar este artigo para criar seus casos de teste, é necessário saber o
 
 O exemplo a seguir o orienta na criação de um conjunto de testes para testar vários formulários adaptáveis. É necessário criar um caso de teste separado para cada formulário que você precisa testar. Ao seguir etapas semelhantes às seguintes e modificar o código JavaScript na etapa 11, você pode criar seu próprio conjunto de testes para testar seus formulários adaptáveis.
 
-1. Vá para o CRXDE Lite no seu navegador da Web: `https://[server]:[port]/crx/de`.
+1. Vá para CRXDE Lite no seu navegador da Web: `https://[server]:[port]/crx/de`.
 1. Clique com o botão direito do mouse na subpasta /etc/clientlibs e clique em **[!UICONTROL Criar > Criar nó]**. Insira um nome (aqui afTestRegistration), especifique o tipo de nó como cq:ClientLibraryFolder e clique em **[!UICONTROL OK]**.
 
    A pasta clientlibs contém o aspecto de registro do seu aplicativo (JS e Init). É recomendável registrar todos os objetos de conjuntos de testes Hobbes específicos a um formulário na pasta clientlibs.
@@ -122,7 +125,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
 
 >[!NOTE]
 >
->O clientlib granite.testing.calvin.af contém todas as APIs de formulários adaptáveis. Essas APIs fazem parte do namespace calvin.
+>O clientlib granite.testing.calvin.af contém todas as APIs de formulários adaptáveis. Essas APIs fazem parte da namespace de calvin.
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
@@ -164,11 +167,11 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
    | **Propriedade** | **Tipo** | **Valor** |
    |---|---|---|
    | categorias | Sequência de caracteres[] | granite.testing.hobbes.testing, granite.testing.hobbes.testing.testForm |
-   | dependências | Sequência de caracteres[] | granite.testing.calvin.testing |
+   | dependências | Sequência de caracteres[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
-   >Este exemplo usa uma dependência do cliente lib granite.testing.calvin.tests para obter um melhor gerenciamento. Este exemplo também adiciona uma categoria de biblioteca do cliente, &quot;granite.testing.hobbes.testing.testForm&quot; para reutilizar esta biblioteca do cliente, se necessário.
+   >Este exemplo usa uma dependência do cliente lib granite.testing.calvin.tests para obter um melhor gerenciamento. Este exemplo também adiciona uma categoria de biblioteca do cliente, &quot;granite.testing.hobbes.testing.testForm&quot; para reutilizar essa biblioteca do cliente, se necessário.
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
@@ -274,13 +277,13 @@ Você também pode instalar o pacote no arquivo anexado SampleTestPackage.zip pa
 
 [Obter arquivo](assets/sampletestpackage.zip)
 
-## Teste da interface do usuário usando testes automatizados {#testing-your-ui-using-automated-tests}
+## Testando sua interface de usuário usando testes automatizados {#testing-your-ui-using-automated-tests}
 
 ### Execução de um único Test Suite {#running-a-single-test-suite}
 
-Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página muda conforme os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
+Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página é alterada à medida que os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
 
-Um ícone de marca de seleção indica um teste aprovado: ![marca de seleção](assets/checkmark.png)
+Um ícone de marca de seleção indica um teste aprovado: ![marca](assets/checkmark.png)
 
 Um ícone &quot;X&quot; indica uma falha no teste: ![cruz](assets/cross.png)
 
@@ -302,7 +305,7 @@ Para executar um Test Suite:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-As etapas para testar os formulários adaptáveis do AEM são semelhantes às etapas para testar a interface do usuário do AEM. Para obter mais informações sobre como testar seus formulários adaptáveis, consulte os seguintes tópicos em [Testar sua interface do usuário](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
+As etapas para testar seus formulários adaptáveis AEM são semelhantes às etapas para testar sua interface de usuário AEM. Para obter mais informações sobre como testar seus formulários adaptáveis, consulte os seguintes tópicos em [Testar sua interface do usuário](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
 
 * Exibindo conjuntos de testes
 * Execução de vários testes
@@ -328,8 +331,8 @@ As etapas para testar os formulários adaptáveis do AEM são semelhantes às et
    <td><p>As ações são métodos que executam um gesto na interface do usuário, como clicar em um botão ou preencher uma caixa de entrada com um valor.</p> <p>Os métodos das classes hobs.actions.Asserts, hobs.actions.Core e hobs.utils.af são ações que você pode usar em seus testes. Todas as ações são executadas sincronicamente.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Ambiente de criação ou publicação</p> </td> 
-   <td><p>Em geral, os formulários podem ser testados no ambiente de criação ou publicação. No caso de ambiente de publicação, por padrão, o acesso para executar o teste é restrito. Isso ocorre porque todas as bibliotecas do cliente relacionadas ao runner de teste estão dentro de /libs na estrutura do JCR.</p> </td> 
+   <td><p>ambiente de autor ou publicação</p> </td> 
+   <td><p>Em geral, os formulários podem ser testados no ambiente de autor ou publicação. No caso de ambiente publish, por padrão, o acesso para executar o teste é restrito. Isso ocorre porque todas as bibliotecas do cliente relacionadas ao runner de teste estão dentro de /libs na estrutura do JCR.</p> </td> 
   </tr> 
  </tbody> 
 </table>
