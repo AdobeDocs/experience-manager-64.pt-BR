@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # Esquemas de metadados {#metadata-schemas}
 
-Em [!DNL Experience Manager Assets], um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema específico. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante. Você pode usar o editor de Formulários de Schemas de Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados.
+Em [!DNL Experience Manager Assets], um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema específico. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante. Você pode usar o editor do Forms Schema Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados.
 
 Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
@@ -29,7 +29,7 @@ Para visualização e edição da página de propriedades de um ativo, siga esta
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Edição de formulários](metadata-schemas.md#editing-metadata-schema-forms) de Schema de metadados para obter mais informações. Se você modificar o schema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um `jpeg` schema em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com tipo MIME `IMAGE/JPEG`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
+   Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Edição do Forms](metadata-schemas.md#editing-metadata-schema-forms) Schema de metadados para obter mais informações. Se você modificar o schema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um `jpeg` schema em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com tipo MIME `IMAGE/JPEG`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
 ## Formulários de esquema de metadados {#default-metadata-schema-forms}
 
@@ -63,7 +63,7 @@ Para visualização de uma lista de formulários/modelos, na [!DNL Experience Ma
 
 1. Na caixa de diálogo, digite o título do formulário de schema e clique em **[!UICONTROL Criar]** para concluir o processo de criação do formulário.
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## Editar formulários de schema de metadados {#editing-metadata-schema-forms}
 
@@ -165,7 +165,7 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**, por padrão.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
 
@@ -173,7 +173,7 @@ Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padr
 
 ## Excluir formulários de schema de metadados {#deleting-metadata-schema-forms}
 
-O AEM permite que você exclua somente formulários de schema personalizados. Isso não permite que você exclua os formulários/modelos de schema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
+AEM permite que você exclua apenas formulários de schema personalizados. Isso não permite que você exclua os formulários/modelos de schema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
 
 Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Excluir]** .
 
@@ -183,11 +183,11 @@ Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Exclui
 
 >[!NOTE]
 >
->Não é possível excluir os formulários de schema de metadados prontos em AEM Assets.
+>Não é possível excluir os formulários de schema de metadados prontos no AEM Assets.
 
 ## Formulários de Schema para tipos MIME {#schema-forms-for-mime-types}
 
-O AEM Assets fornece formulários padrão para vários tipos MIME prontos para uso. No entanto, você pode adicionar formulários personalizados para ativos de vários tipos MIME.
+A AEM Assets fornece formulários padrão para vários tipos MIME prontos para uso. No entanto, você pode adicionar formulários personalizados para ativos de vários tipos MIME.
 
 ### Adicionar novos formulários para tipos MIME {#adding-new-forms-for-mime-types}
 
@@ -204,7 +204,7 @@ Nesse caso, crie um novo nó `/etc/dam/metadataeditor/mimetypemappings` no repos
 | `exposedmimetype` | Nome do formulário existente a ser mapeado | `String` | `image/jpeg` |
 | `mimetypes` | Lista de tipos MIME que usam o formulário definido no `exposedmimetype` atributo | `String` | `image/png` |
 
-O AEM Assets mapeia os seguintes tipos MIME e formulários de schema:
+A AEM Assets mapeia os seguintes tipos MIME e formulários de schema:
 
 | Formulário de Schema | Tipos MIME |
 |---|---|
@@ -226,7 +226,7 @@ O recurso de schema de metadados está disponível somente para administradores.
 
 ## Aplicar metadados específicos da pasta {#applying-folder-specific-metadata}
 
-O AEM Assets permite que você defina uma variante de um schema de metadados e aplique-o a uma pasta específica.
+A AEM Assets permite que você defina uma variante de um schema de metadados e aplique-o a uma pasta específica.
 
 Por exemplo, você pode definir uma variante do schema de metadados padrão e aplicá-la a uma pasta. Quando você aplica o schema modificado, ele substitui o schema de metadados padrão original aplicado aos ativos dentro da pasta.
 
@@ -243,13 +243,13 @@ Se a pasta tiver uma subpasta, os ativos dentro da subpasta herdarão os metadad
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. Na página Formulários **[!UICONTROL de Schema de]** metadados, selecione o `my_default` formulário e clique em **[!UICONTROL Editar]**.
+1. Na página Forms **[!UICONTROL do Schema de]** metadados, selecione o `my_default` formulário e clique em **[!UICONTROL Editar]**.
 
 1. Na página Editor **[!UICONTROL de Schemas de]** metadados, adicione um campo de texto ao formulário de schema. Por exemplo, adicione um campo com a **[!UICONTROL Categoria]** da etiqueta.
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Formulários **[!UICONTROL de Schema de]** metadados.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Forms **[!UICONTROL do Schema de]** metadados.
 1. Clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
@@ -268,7 +268,7 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 
 >[!NOTE]
 >
->Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na visualização Cartões, o AEM não exibe a mensagem de aviso sobre metadados ausentes para esses campos de metadados obrigatórios.
+>Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na visualização Cartões, AEM não exibe a mensagem de aviso sobre metadados ausentes para esses campos de metadados obrigatórios.
 
 1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve-o como `my_default`.
@@ -279,14 +279,14 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Formulários **[!UICONTROL de Schema de]** metadados. Para aplicar os metadados personalizados a uma pasta, selecione o formulário e clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Forms **[!UICONTROL do Schema de]** metadados. Para aplicar os metadados personalizados a uma pasta, selecione o formulário e clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas.
 
 1. Navegue até a pasta e carregue alguns ativos com metadados ausentes para o campo obrigatório adicionado ao formulário personalizado. A visualização de cartão para os ativos exibe uma mensagem para os metadados ausentes do campo obrigatório.
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 1. (Opcional) Acesso `http://[server]:[port]/system/console/components/`. Configure e ative `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` o componente que está desativado por padrão. Defina uma frequência na qual o AEM verifica a validade dos metadados nos ativos.
-Essa configuração adiciona uma propriedade `hasValidMetadata` a jcr:content of assets. Usando essa propriedade, o AEM pode filtrar os resultados em uma pesquisa.
+Essa configuração adiciona uma propriedade `hasValidMetadata` a jcr:content of assets. Usando essa propriedade, AEM pode filtrar os resultados em uma pesquisa.
 
 >[!NOTE]
 >
@@ -294,4 +294,4 @@ Essa configuração adiciona uma propriedade `hasValidMetadata` a jcr:content of
 
 >[!Cautorização]
 >
->As verificações de validação de metadados exigem muitos recursos e podem afetar o desempenho do seu sistema. Agendar as verificações em conformidade. Se a implantação do AEM tiver problemas de desempenho, tente desativar esse trabalho.
+>As verificações de validação de metadados exigem muitos recursos e podem afetar o desempenho do seu sistema. Agendar as verificações em conformidade. Se a implantação AEM tiver problemas de desempenho, tente desativar este trabalho.
