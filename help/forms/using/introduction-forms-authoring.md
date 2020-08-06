@@ -1,8 +1,8 @@
 ---
 title: 'Introdução à criação de formulários adaptativos '
 seo-title: 'Introdução à criação de formulários adaptativos '
-description: O AEM Forms fornece interface fácil de usar, mas poderosa, para a criação de formulários adaptáveis. Ele fornece uma variedade de componentes e ferramentas que você pode usar para criar formulários.
-seo-description: O AEM Forms fornece interface fácil de usar, mas poderosa, para a criação de formulários adaptáveis. Ele fornece uma variedade de componentes e ferramentas que você pode usar para criar formulários.
+description: A AEM Forms oferece uma interface fácil de usar, mas poderosa, para a criação de formulários adaptáveis. Ele fornece uma variedade de componentes e ferramentas que você pode usar para criar formulários.
+seo-description: A AEM Forms oferece uma interface fácil de usar, mas poderosa, para a criação de formulários adaptáveis. Ele fornece uma variedade de componentes e ferramentas que você pode usar para criar formulários.
 uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## Visão geral {#overview}
 
-Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptativos. O AEM Forms fornece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou schema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas amplia seus investimentos e ativos de infraestrutura existentes. Você pode escolher entre as seguintes opções para criar um formulário adaptável:
+Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptativos. A AEM Forms oferece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou schema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas amplia seus investimentos e ativos de infraestrutura existentes. Você pode escolher entre as seguintes opções para criar um formulário adaptável:
 
 * **Uso de um modelo de dados de formulário**
    [A integração](/help/forms/using/data-integration.md) de dados permite integrar entidades e serviços de fontes de dados diferentes em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Escolha o modelo de dados do formulário se o formulário adaptativo que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
@@ -62,7 +62,7 @@ A barra lateral permite
 
 * Consulte o conteúdo do formulário, como painéis, componentes, campos e layout.
 * Editar propriedades do componente.
-* Pesquise, visualização e use ativos no repositório do AEM Digital Asset Management (DAM).
+* Pesquise, visualização e use ativos em seu repositório AEM Digital Asset Management (DAM).
 * Adicione componentes ao formulário.
 
    ![Barra lateral](assets/sidebar-comps-2.png)
@@ -152,7 +152,7 @@ A barra lateral inclui os seguintes navegadores:
   </tr> 
   <tr> 
    <td>Anexo de arquivo</td> 
-   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos de suporte a um formulário.</p> <p><strong>Observação: </strong>O componente Anexo de arquivo suporta um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte Formatos <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">de arquivo</a>suportados.</p> </td> 
+   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos de suporte a um formulário.</p> <p><strong>Observação: </strong>O componente Anexo de arquivo suporta um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para Adobe Sign. Para obter mais informações, consulte Formatos <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">de arquivo</a>suportados.</p> </td> 
   </tr> 
   <tr> 
    <td>Lista de anexos de arquivo</td> 
@@ -295,8 +295,8 @@ Algumas práticas recomendadas e pontos importantes a serem lembrados ao trabalh
 * Especifique valores para itens de Botão de opção e Caixa de seleção no `{value}={text}` formato nas propriedades do componente.
 * O componente de anexo Arquivo, por padrão, permite que um usuário anexe apenas um arquivo. No entanto, é possível configurar as propriedades do componente para suportar vários anexos. Além disso, se um usuário anexar vários arquivos com o mesmo nome de arquivo, os anexos podem causar alguns problemas. Portanto, é recomendável associar um identificador exclusivo para cada anexo enviado no envio do formulário. Para isso:
 
-   1. No servidor do AEM Forms, navegue até **[!UICONTROL Adobe Experience Manager > Ferramentas > Operações > Console]** da Web.
-   1. Localize e toque em Serviço **[!UICONTROL de configuração de formulários]** adaptáveis.
+   1. No servidor AEM Forms, navegue até **[!UICONTROL Adobe Experience Manager > Ferramentas > Operações > Console]** da Web.
+   1. Localize e toque em Serviço **[!UICONTROL de configuração]** adaptável Forms.
    1. Na caixa de diálogo Adaptive Forms Configuration Service, ative **[!UICONTROL Tornar nomes de arquivos únicos]**. Por padrão, ele é desativado.
 
 * Para permitir que os usuários anexem um PDF usando o navegador Safari, verifique se o **[!UICONTROL aplicativo/pdf]** foi adicionado à propriedade Tipos de arquivo suportados do componente de anexo Arquivo. Formulários adaptáveis criados com a versão anterior do AEM Forms podem conter **[!UICONTROL .pdf]** em vez de **[!UICONTROL application/pdf]** na propriedade Tipos de arquivo suportados.
