@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 80%
 
 ---
 
@@ -21,14 +24,14 @@ Use mecanismos padrão de upload ou sincronização para trazer recursos 3D e se
 
 Consulte [Upload de ativos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
-A Adobe recomenda que você carregue todos os arquivos referenciados antes ou ao mesmo tempo que carregue o arquivo de modelo 3D principal. No entanto, isso não é um requisito.
+O Adobe recomenda que você carregue todos os arquivos referenciados antes ou ao mesmo tempo que carregue o arquivo de modelo 3D primário. No entanto, isso não é um requisito.
 
 Quando o upload é concluído, seus arquivos 3D são convertidos, e um processamento adicional é aplicado para preparar o ativo para visualização e renderização.
 
 ## Práticas recomendadas para carregar ativos 3D {#best-practices-for-uploading-d-assets}
 
 * Geralmente, não há restrições sobre onde você faz o upload do conteúdo 3D na hierarquia de pastas do AEM Assets. No entanto, a resolução automatizada de dependências de arquivos do AEM 3D tem limitações de alcance para controlar o tempo necessário para pesquisar repositórios de ativos muito grandes. Portanto, a Adobe recomenda que, ao fazer o upload de ativos 3D e seus dependentes de arquivos, você o faça com uma proximidade razoável de cada arquivo (pasta avô comum). Depois que as dependências de arquivos forem resolvidas, você poderá mover livremente o ativo 3D e seus dependentes para qualquer lugar dentro do repositório, sem perder os relacionamentos estabelecidos.
-* A Adobe recomenda que você decida sobre uma estrutura de pastas consistente para conteúdo 3D *antes de *carregar. As dicas a seguir são algumas das abordagens sugeridas que você pode empregar:
+* O Adobe recomenda que você decida sobre uma estrutura de pasta consistente para conteúdo 3D *antes de *fazer upload. As dicas a seguir são algumas das abordagens sugeridas que você pode empregar:
 
    * **Mantenha uma pasta separada para cada ativo 3D que você carregar**.
 
@@ -75,7 +78,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Criando visualização</td> 
+   <td>Criando pré-visualização</td> 
    <td>O arquivo FBX ou OBJ é assimilado e processado. Dependências de arquivos são avaliadas e resolvidas como referências de ativos, quando possível.</td> 
   </tr> 
   <tr> 
