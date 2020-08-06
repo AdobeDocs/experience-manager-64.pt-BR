@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 1%
 
 ---
 
 
 # Como usar Ocultar condições{#using-hide-conditions}
 
-As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o componente [da](https://helpx.adobe.com/experience-manager/core-components/using/list.html) lista Componentes principais no editor [de](/help/sites-authoring/templates.md) modelo e decide desativar as opções para criar a lista com base em páginas secundárias. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
+As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o componente [de](https://helpx.adobe.com/experience-manager/core-components/using/list.html) lista do Componente Principal no editor [de](/help/sites-authoring/templates.md) modelo e decide desativar as opções para criar a lista com base em páginas filhas. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
 
 ## Visão geral {#overview}
 
 As caixas de diálogo podem tornar-se muito complexas, com várias opções para o utilizador, que só podem utilizar uma fração das opções que lhe estão à disposição. Isso pode levar a experiências esmagadoras da interface do usuário para os usuários.
 
-Ao usar condições de ocultação, administradores, desenvolvedores e superusuários têm uma maneira de ocultar recursos com base em um conjunto de regras. Esse recurso permite que eles decidam quais recursos devem ser exibidos quando um autor editar o conteúdo.
+Ao usar condições de ocultação, administradores, desenvolvedores e superusuários têm uma maneira de ocultar recursos com base em um conjunto de regras. Esse recurso permite que eles decidam quais recursos devem ser exibidos quando um autor edita o conteúdo.
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ ${cqDesign.myProperty == true}
 ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 != 1 || header.myHeader}
 ```
 
-Ao definir sua expressão de ocultação, lembre-se:
+Ao definir sua expressão de ocultar, lembre-se:
 
 * Para ser válido, o escopo no qual a propriedade é encontrada deve ser expresso (por exemplo, `cqDesign.myProperty`).
 * Os valores são somente leitura.
@@ -55,7 +58,7 @@ Ao definir sua expressão de ocultação, lembre-se:
 
 ## Exemplo {#example}
 
-Exemplos de condições de ocultação podem ser encontrados em todo o AEM e nos componentes [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principais em particular. Por exemplo, considere o componente [principal da](https://helpx.adobe.com/experience-manager/core-components/using/list.html)lista.
+Exemplos de condições de ocultação podem ser encontrados em todo o AEM e nos componentes [](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais em particular. Por exemplo, considere o componente [principal da](https://helpx.adobe.com/experience-manager/core-components/using/list.html)lista.
 
 [Usando o editor](/help/sites-authoring/templates.md)de modelo, o autor do modelo pode definir na caixa de diálogo de design quais opções do componente de lista estão disponíveis para o autor da página. Opções como permitir que a lista seja uma lista estática, uma lista de páginas secundárias, uma lista de páginas marcadas etc. pode ser ativado ou desativado.
 
@@ -76,9 +79,9 @@ Se um autor de modelo optar por desativar a opção de páginas secundárias, um
 
 1. O valor de `disableChildren` é extraído da configuração de design e a expressão `${cdDesign.disableChildren}` é avaliada como `false`, o que significa que a opção não será renderizada como parte do componente.
 
-   É possível exibir a expressão de ocultação como o valor da `granite:hide` propriedade [no GitHub aqui](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
+   Você pode visualização a expressão de ocultação como o valor da `granite:hide` propriedade [no GitHub aqui](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
-1. A opção Páginas **** secundárias não é mais renderizada para o autor da página ao usar o componente de lista.
+1. A opção Páginas **** secundárias não é mais renderizada para o autor da página ao usar o componente lista.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
