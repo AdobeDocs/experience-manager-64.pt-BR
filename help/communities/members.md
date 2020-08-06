@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
 source-git-commit: c53ad108620f9066179c79195f90b930d5cab0ff
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 3%
 
 ---
 
@@ -19,18 +22,18 @@ source-git-commit: c53ad108620f9066179c79195f90b930d5cab0ff
 
 ## Visão geral {#overview}
 
-Os recursos do AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participarem de uma comunidade no ambiente de publicação. O registro do usuário só precisa existir no ambiente de publicação e eles são comumente chamados de *membros* para diferenciá-los dos *usuários* registrados no ambiente do autor.
+Os recursos da AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participarem de uma comunidade no ambiente de publicação. O registro do usuário só precisa existir no ambiente publish e eles são comumente chamados de *membros* para diferenciá-los dos *usuários* registrados no ambiente author.
 
 ### Membros (usuários) na publicação {#members-users-on-publish}
 
-Usando os consoles Membros e Grupos das Comunidades, os membros e grupos de membros registrados no ambiente de *publicação* podem ser criados e gerenciados a partir do ambiente do *autor* . Isso só é possível quando o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel está ativado.
+Usando os consoles Membros e Grupos das Comunidades, os membros e grupos de membros registrados no ambiente *publish* podem ser criados e gerenciados a partir do ambiente do *autor* . Isso só é possível quando o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel está ativado.
 
 ### Usuários no autor {#users-on-author}
 
 Para gerenciar usuários e grupos registrados no ambiente do *autor* , é necessário usar o console de segurança da plataforma:
 
-* Na navegação global selecione `Tools, Security, Users`
-* Na navegação global selecione `Tools, Security, Groups`
+* Na navegação global, selecione `Tools, Security, Users`
+* Na navegação global, selecione `Tools, Security, Groups`
 
 >[!NOTE]
 >
@@ -38,9 +41,9 @@ Para gerenciar usuários e grupos registrados no ambiente do *autor* , é necess
 
 ## Console de membros {#members-console}
 
-No ambiente do autor, para acessar o console Membros para gerenciar membros registrados no ambiente de publicação:
+No ambiente author, para acessar o console Membros para gerenciar membros registrados no ambiente publish:
 
-* Da navegação global: **[!UICONTROL Navigation > Comunidades > Membros]**
+* Da navegação global: **[!UICONTROL Navegação > Comunidades > Membros]**
 
 >[!CAUTION]
 >
@@ -56,7 +59,7 @@ Selecione o ícone do painel lateral no lado esquerdo do cabeçalho para `Member
 
 Selecione o ícone de pesquisa no lado esquerdo do cabeçalho para `Members` alternar o painel lateral de pesquisa fechado.
 
-### Estatísticas dos membros {#member-statistics}
+### Estatísticas dos Estados-Membros {#member-statistics}
 
 As colunas que exibem `Views`, `Posts`e `Follows`são atualizadas quando o usuário é membro de um ou mais sites da comunidade com o Adobe Analytics `Likes` ativado [](sites-console.md#analytics).
 
@@ -76,22 +79,34 @@ Selecione `Create Member` para criar um usuário no ambiente de publicação.
 
 ### GERAL - Detalhes dos membros {#general-member-details}
 
-A maioria dos campos são opcionais, que podem ser preenchidos posteriormente no perfil.
+A maioria dos campos são opcionais, os membros podem preencher posteriormente seus perfis.
 
-* **[!UICONTROL ID]**(*obrigatório*) A ID de autorização é a ID de logon do membro.
+* **[!UICONTROL ID]**
+(
+*obrigatório*) A ID autorizável é a ID de logon do membro.
 Por padrão, a ID é definida como o valor do endereço de email necessário.
    *Depois de criada, a ID não pode ser modificada.*
 
-* **[!UICONTROL Endereço]** de email (*obrigatório*) O endereço de email do membro.
+* **[!UICONTROL Endereço de email]**
+(
+*obrigatório*) O endereço de email do membro.
 O membro pode alterar seu endereço de email ao atualizar seu perfil.Se o padrão da ID for o endereço de email, a ID *não* será alterada quando o endereço de email for alterado.
 
-* **[!UICONTROL Senha]**(*obrigatório*) A senha de logon.
+* **[!UICONTROL Senha]**
+(
+*obrigatório*) A senha de logon.
 
-* **[!UICONTROL Digite novamente a senha]**(*obrigatório*) e digite novamente a senha para verificação.
+* **[!UICONTROL Digite a senha novamente]**
+(
+*obrigatório*) Insira novamente a senha para verificação.
 
-* **[!UICONTROL Adicionar membro aos sites]**(*opcional*) Selecione dentre os sites da comunidade existente para adicionar o membro ao grupo de membros do site da comunidade.
+* **[!UICONTROL Adicionar membro aos Sites]**
+(
+*(opcional*) selecione dentre os sites existentes da comunidade para adicionar o membro ao grupo de membros do site da comunidade.
 
-* **[!UICONTROL Adicionar membro a grupos]**(*opcional*) Selecione dentre os grupos de membros existentes para adicionar o membro a esse grupo.
+* **[!UICONTROL Adicionar membro aos grupos]**
+(
+*opcional*) selecione dentre os grupos de membros existentes para adicionar o membro a esse grupo.
 
 * Selecione **[!UICONTROL Salvar]**
 
@@ -103,7 +118,8 @@ Em Configurações de conta, é possível que um administrador da comunidade
    * Proibido\
       Um membro não pode fazer logon, impedindo que ele visualize páginas ou participe de atividades que exigem o logon. Eles ainda podem visitar anonimamente um site aberto da comunidade.
 
-   * Não proibidoUm membro tem acesso total ao site da comunidade.
+   * Não banidoUm membro tem acesso total ao site da comunidade.
+
    O padrão é `Not Banned`.
 
 * **[!UICONTROL Limites]**de contribuição Se marcada, a capacidade do membro de publicar conteúdo é limitada.
@@ -159,16 +175,24 @@ Selecione `Add Group` para criar um grupo no ambiente de publicação.
 
 Os campos necessários para criar um novo grupo de membros do lado da publicação são:
 
-* **[!UICONTROL ID]**(*obrigatório*) A ID exclusiva do grupo.
+* **[!UICONTROL ID]**
+(
+*obrigatório*) A ID exclusiva do grupo.
    *Depois de criada, a ID não pode ser modificada.*
 
-* **[!UICONTROL Nome]**(*opcional*) O nome de exibição do grupo.
+* **[!UICONTROL Nome]**
+(
+*opcional*) o nome de exibição do grupo.
 
    O valor padrão é a ID.
 
-* **[!UICONTROL Descrição]**(*opcional*) Uma descrição do objetivo e das permissões do grupo.
+* **[!UICONTROL Descrição]**
+(
+*opcional*) uma descrição do objetivo e das permissões do grupo.
 
-* **[!UICONTROL Adicionar membros ao grupo]**(*opcional*) Selecione os membros do lado da publicação a serem incluídos como membros iniciais do grupo.
+* **[!UICONTROL Adicionar membros ao grupo]**
+(
+*opcional*) Selecione os membros do lado da publicação a serem incluídos como membros iniciais do grupo.
 
 * Selecione **[!UICONTROL Salvar]**
 
