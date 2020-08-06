@@ -1,8 +1,8 @@
 ---
 title: Etapas de atualização para instalações do servidor de aplicativos
 seo-title: Etapas de atualização para instalações do servidor de aplicativos
-description: Saiba como atualizar instâncias do AEM que são implantadas por meio de servidores de aplicativos.
-seo-description: Saiba como atualizar instâncias do AEM que são implantadas por meio de servidores de aplicativos.
+description: Saiba como atualizar instâncias de AEM implantadas pelos Servidores de aplicativos.
+seo-description: Saiba como atualizar instâncias de AEM implantadas pelos Servidores de aplicativos.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 translation-type: tm+mt
 source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
 
 # Etapas de atualização para instalações do servidor de aplicativos{#upgrade-steps-for-application-server-installations}
 
-Esta seção descreve o procedimento que precisa ser seguido para atualizar o AEM para instalações do Servidor de aplicativos.
+Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão funcional do AEM implantada. O procedimento destina-se a documentar as atualizações executadas do **AEM versão 5.6 para 6.3**.
+Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão em funcionamento do AEM implantado. O procedimento foi criado para documento de atualizações executadas de **AEM versão 5.6 para 6.3**.
 
-1. Primeiro, inicie o JBoss. Na maioria das situações, é possível fazer isso executando o script de `standalone.sh` inicialização executando esse comando do terminal:
+1. Primeiro, start JBoss. Na maioria das situações, é possível fazer isso executando o script de `standalone.sh` inicialização executando esse comando do terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -90,7 +93,8 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-   Esses dois arquivos configurarão o AEM para usar um armazenamento de nó TarMK e um armazenamento de dados File.
+
+   Esses dois arquivos configurarão AEM para usar um armazenamento de nó TarMK e um armazenamento de dados File.
 
 1. Edite os arquivos de configuração para prepará-los para uso. Mais especificamente:
 
@@ -111,7 +115,7 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. Agora é necessário alterar os modos de execução no arquivo de guerra do AEM 6.3. Para fazer isso, primeiro crie uma pasta temporária que hospede a guerra do AEM 6.3. O nome da pasta neste exemplo será **temp**. Depois que o arquivo de guerra tiver sido copiado, extraia seu conteúdo executando de dentro da pasta temporária:
+1. Agora é necessário alterar os modos de execução no arquivo de guerra AEM 6.3. Para fazer isso, primeiro crie uma pasta temporária que estará hospedando a guerra AEM 6.3. O nome da pasta neste exemplo será **temp**. Depois que o arquivo de guerra tiver sido copiado, extraia seu conteúdo executando de dentro da pasta temporária:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
