@@ -1,8 +1,8 @@
 ---
 title: Criar aparências personalizadas para campos de formulário adaptáveis
 seo-title: Criar aparências personalizadas para campos de formulário adaptáveis
-description: 'Personalize a aparência dos componentes prontos para uso nos Formulários adaptativos. '
-seo-description: 'Personalize a aparência dos componentes prontos para uso nos Formulários adaptativos. '
+description: 'Personalize a aparência dos componentes prontos para uso no Forms adaptável. '
+seo-description: 'Personalize a aparência dos componentes prontos para uso no Forms adaptável. '
 uuid: 1f2d2ac4-44e1-45f9-a6a0-eb95931b0633
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 1115697c-cb7d-441a-876f-3c01761568c0
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1728'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Formulários adaptáveis aproveitam a estrutura [de](/help/forms/using/introduction-widgets.md) aparência para ajudá-lo a criar aparências personalizadas para campos de formulário adaptáveis e fornecer uma experiência diferente ao usuário. Por exemplo, substitua botões de opção e caixas de seleção por botões de alternância ou use plug-ins jQuery personalizados para restringir as entradas de usuários em campos como números de telefone ou ID de email.
 
-Este documento explica como usar um plug-in do jQuery para criar essas experiências alternativas para campos de formulário adaptáveis. Além disso, exibe um exemplo para criar uma aparência personalizada para que o componente de campo numérico apareça como um auxiliar numérico ou controle deslizante.
+Este documento explica como usar um plug-in do jQuery para criar essas experiências alternativas para campos de formulário adaptáveis. Além disso, exibe um exemplo para criar uma aparência personalizada para que o componente de campo numérico apareça como um auxiliar numérico ou um controle deslizante.
 
 Vamos primeiro ver os termos e conceitos principais usados neste artigo.
 
@@ -28,7 +31,7 @@ Vamos primeiro ver os termos e conceitos principais usados neste artigo.
 
 **Plug-in** jQuery Fornece um mecanismo padrão, baseado na estrutura do widget jQuery, para implementar uma aparência alternativa.
 
-**ClientLib** Um sistema de bibliotecas do lado do cliente no processamento do lado do cliente AEM, controlado por complexos códigos JavaScript e CSS. Para obter mais informações, consulte Usar bibliotecas do lado do cliente.
+**ClientLib** Um sistema de bibliotecas do lado do cliente em AEM processamento do lado do cliente controlado por complexos códigos JavaScript e CSS. Para obter mais informações, consulte Usar bibliotecas do lado do cliente.
 
 **Archetype** Um kit de ferramentas de modelo de projeto Maven definido como um padrão ou modelo original para projetos Maven. Para obter mais informações, consulte Introdução aos arquétipos.
 
@@ -38,16 +41,16 @@ Vamos primeiro ver os termos e conceitos principais usados neste artigo.
 
 As etapas, em alto nível, para criar uma aparência personalizada são as seguintes:
 
-1. **Criar um projeto**: Crie um projeto Maven que gera um pacote de conteúdo para implantar no AEM.
+1. **Criar um projeto**: Crie um projeto Maven que gera um pacote de conteúdo para implantação no AEM.
 1. **Estende uma classe** de widget existente: Estende uma classe de widget existente e substitui as classes necessárias.
-1. **Criar uma biblioteca** do cliente: Crie uma `clientLib: af.customwidget` biblioteca e adicione os arquivos JavaScript e CSS necessários.
+1. **Criar uma biblioteca** de clientes: Crie uma `clientLib: af.customwidget` biblioteca e adicione os arquivos JavaScript e CSS necessários.
 
 1. **Crie e instale o projeto**: Crie o projeto Maven e instale o pacote de conteúdo gerado no AEM.
 1. **Atualize o formulário** adaptável: Atualize as propriedades de campos de formulário adaptáveis para usar a aparência personalizada.
 
 ### Criar um projeto {#create-a-project}
 
-Um arquétipo maven é um ponto de partida para criar uma aparência personalizada. Os detalhes do arquétipo a utilizar são os seguintes:
+Um arquétipo maven é um ponto de partida para a criação de uma aparência personalizada. Os detalhes do arquétipo a utilizar são os seguintes:
 
 * **Repositório**: https://repo.adobe.com/nexus/content/groups/public/
 * **Id** do artefato: custom-appearance-archetype
@@ -64,8 +67,8 @@ O comando baixa os plug-ins Maven e as informações de tipo de arquivo do repos
 * **artefatoId**: ID de artefato usada pelo projeto Maven gerado.
 * **versão**: Versão do projeto Maven gerado.
 * **pacote**: Pacote usado para a estrutura do arquivo.
-* **artefatoName**: Nome do artefato do pacote AEM gerado.
-* **packageGroup**: Grupo de pacotes do pacote AEM gerado.
+* **artefatoName**: Nome do artefato do pacote de AEM gerado.
+* **packageGroup**: Grupo de pacotes do pacote de AEM gerado.
 * **widgetName**: Nome de aparência usado para referência.
 
 O projeto gerado tem a seguinte estrutura:
@@ -133,7 +136,7 @@ Depois que o modelo de projeto for criado, faça as seguintes alterações, conf
   </tr> 
   <tr> 
    <td><code>getOptionsMap</code></td> 
-   <td>Retorna um mapa que fornece detalhes sobre a ação a ser executada na alteração de uma opção. As teclas são as opções fornecidas ao widget e os valores são funções que são chamadas sempre que uma alteração na opção é detectada. O widget fornece manipuladores para todas as opções comuns (exceto <code>value</code> e <code>displayValue</code>).</td> 
+   <td>Retorna um mapa que fornece detalhes sobre a ação a ser executada na alteração de uma opção. As teclas são as opções fornecidas para o widget e os valores são funções que são chamadas sempre que uma alteração na opção é detectada. O widget fornece manipuladores para todas as opções comuns (exceto <code>value</code> e <code>displayValue</code>).</td> 
   </tr> 
   <tr> 
    <td><code>getCommitValue</code></td> 
@@ -145,7 +148,7 @@ Depois que o modelo de projeto for criado, faça as seguintes alterações, conf
   </tr> 
   <tr> 
    <td><code>showDisplayValue</code></td> 
-   <td>Por padrão, no evento XFA on exit, o campo é exibido. <code>formattedValue</code> Essa função é chamada para mostrar o <code>formattedValue</code> ao usuário. </td> 
+   <td>Por padrão, no XFA ao sair do evento, o campo <code>formattedValue</code> é exibido. Essa função é chamada para mostrar o <code>formattedValue</code> ao usuário. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -155,15 +158,15 @@ Depois que o modelo de projeto for criado, faça as seguintes alterações, conf
    * Substitua o texto `__widgetName__` pelo nome do widget real.
    * Estenda o widget de uma classe de widget pronta para uso adequada. Na maioria dos casos, é a classe do widget correspondente ao widget existente que está sendo substituído. O nome da classe pai é usado em vários locais, portanto, é recomendável procurar todas as instâncias da string `xfaWidget.textField` no arquivo e substituí-las pela classe pai real usada.
    * Estenda o `render` método para fornecer uma interface alternativa. É o local de onde o plug-in jQuery será chamado para atualizar a interface do usuário ou o comportamento de interação. O `render` método deve retornar um elemento de controle de usuário.
-   * Estende o `getOptionsMap` método para substituir qualquer configuração de opção afetada devido a uma alteração no widget. A função retorna um mapeamento que fornece detalhes para a ação executar quando uma opção for alterada. As teclas são as opções fornecidas ao widget e os valores são as funções chamadas sempre que uma alteração na opção é detectada.
+   * Estende o `getOptionsMap` método para substituir qualquer configuração de opção afetada devido a uma alteração no widget. A função retorna um mapeamento que fornece detalhes para a ação ser executada quando uma opção é alterada. As teclas são as opções fornecidas ao widget e os valores são as funções chamadas sempre que uma alteração na opção é detectada.
    * O `getEventMap` método mapeia eventos acionados pelo widget, com os eventos exigidos pelo modelo de formulário adaptável. O valor padrão mapeia eventos HTML padrão para o widget padrão e precisa ser atualizado se um evento alternativo for acionado.
    * A cláusula de exibição `showDisplayValue` e edição de imagem é aplicada `showValue` e pode ser substituída para ter um comportamento alternativo.
-   * O `getCommitValue` método é chamado pela estrutura de formulários adaptáveis quando o `commit`evento ocorre. Geralmente, é o evento exit, exceto para os elementos suspensos, botões de opção e caixas de seleção nos quais ocorre durante a alteração). Para obter mais informações, consulte Expressões [de formulários](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)adaptáveis.
+   * O `getCommitValue` método é chamado pela estrutura de formulários adaptáveis quando o `commit`evento ocorre. Geralmente, é o evento exit, exceto para os elementos suspensos, botões de opção e caixas de seleção nos quais ocorre ao mudar). Para obter mais informações, consulte Forms Expressão [](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)adaptável.
    * O arquivo de modelo fornece implementação de amostra para vários métodos. Remova os métodos que não devem ser estendidos.
 
 ### Criar uma biblioteca de cliente {#create-a-client-library}
 
-O projeto de amostra gerado pelo arquétipo Maven cria automaticamente as bibliotecas de cliente necessárias e as envolve em uma biblioteca de cliente com uma categoria `af.customwidgets`. Os arquivos JavaScript e CSS disponíveis no `af.customwidgets` são incluídos automaticamente no tempo de execução.
+O projeto de amostra gerado pelo arquétipo Maven cria automaticamente as bibliotecas do cliente necessárias e as envolve em uma biblioteca do cliente com uma categoria `af.customwidgets`. Os arquivos JavaScript e CSS disponíveis no `af.customwidgets` são incluídos automaticamente no tempo de execução.
 
 ### Criar e instalar {#build-and-install}
 
@@ -183,9 +186,9 @@ Para aplicar a aparência personalizada a um campo de formulário adaptável:
 1. Abra a caixa de diálogo **Propriedade** do campo no qual você deseja aplicar a aparência personalizada.
 1. Na guia **Estilo** , atualize a `CSS class` propriedade para adicionar o nome da aparência no `widget_<widgetName>` formato. Por exemplo: **widget_numericstep**
 
-## Amostra: Criar uma aparência personalizada {#sample-create-a-custom-appearance-nbsp}
+## Amostra: Criar uma aparência personalizada   {#sample-create-a-custom-appearance-nbsp}
 
-Agora vamos observar um exemplo para criar uma aparência personalizada para que um campo numérico apareça como um auxiliar numérico ou controle deslizante. Execute as seguintes etapas:
+Agora vamos observar um exemplo para criar uma aparência personalizada para que um campo numérico apareça como uma revisão numérica ou um controle deslizante. Execute as seguintes etapas:
 
 1. Execute o seguinte comando para criar um projeto local com base no arquétipo Maven:
 
@@ -304,7 +307,7 @@ Agora vamos observar um exemplo para criar uma aparência personalizada para que
 
    `mvn clean install`
 
-1. Instale o pacote usando o AEM Package Manager.
+1. Instale o pacote usando AEM Package Manager.
 
 1. Abra o formulário adaptável no modo de edição no qual você deseja aplicar a aparência personalizada e faça o seguinte:
 
