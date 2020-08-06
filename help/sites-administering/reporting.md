@@ -1,8 +1,8 @@
 ---
 title: Relatório
 seo-title: Relatório
-description: Saiba como trabalhar com o Relatórios no AEM.
-seo-description: Saiba como trabalhar com o Relatórios no AEM.
+description: Saiba mais sobre como trabalhar com Relatórios em AEM.
+seo-description: Saiba mais sobre como trabalhar com Relatórios em AEM.
 uuid: d6105d54-4d38-40a4-bd60-00057b84f7b8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 5%
 
 ---
 
 
 # Relatório {#reporting}
 
-Para ajudá-lo a monitorar e analisar o estado de sua instância, o AEM fornece uma seleção de relatórios padrão, que podem ser configurados para seus requisitos individuais:
+Para ajudá-lo a monitorar e analisar o estado da sua instância, AEM fornece uma seleção de relatórios padrão, que podem ser configurados para seus requisitos individuais:
 
 * [Relatório de componentes](#component-report)
 * [Uso do disco](#disk-usage)
@@ -28,13 +31,13 @@ Para ajudá-lo a monitorar e analisar o estado de sua instância, o AEM fornece 
 * [Relatório de instâncias do fluxo de trabalho](#workflow-instance-report)
 * [Relatório de fluxo de trabalho](#workflow-report)
 
-Todos os relatórios podem ser acessados no console **Ferramentas** . Selecione **Relatórios** no painel esquerdo e clique duas vezes no relatório necessário no painel direito para abri-lo para exibição e/ou configuração.
+Todos os relatórios podem ser acessados no console **Ferramentas** . Selecione **Relatórios** no painel esquerdo e clique com o duplo no relatório desejado no painel direito para abri-lo para exibição e/ou configuração.
 
-Novas instâncias de um relatório também podem ser criadas no console **Ferramentas** . **Selecione** Relatórios **no painel esquerdo e, em seguida,** Novo... na barra de ferramentas. Defina um **Título** e um **Nome**, selecione o tipo de relatório necessário e clique em **Criar**. Sua nova instância de relatório será exibida na lista. Clique duas vezes para abrir e arraste um componente do sidekick para criar a primeira coluna e iniciar a definição do relatório.
+Novas instâncias de um relatório também podem ser criadas no console **Ferramentas** . Selecione **Relatórios** no painel esquerdo e, em seguida, **Novo...** na barra de ferramentas. Defina um **Título** e um **Nome**, selecione o tipo de relatório necessário e clique em **Criar**. Sua nova instância do relatório será exibida na lista. Clique com o Duplo do mouse para abrir e arraste um componente do sidekick para criar a primeira coluna e o start da definição do relatório.
 
 >[!NOTE]
 >
->Além dos relatórios padrão do AEM que estão disponíveis prontamente, você pode [desenvolver seus próprios relatórios](/help/sites-developing/dev-reports.md)(completamente novos).
+>Além dos relatórios de AEM padrão que estão disponíveis prontamente, você pode [desenvolver seus próprios relatórios](/help/sites-developing/dev-reports.md)(completamente novos).
 
 ## Noções básicas da personalização de relatórios {#the-basics-of-report-customization}
 
@@ -53,7 +56,8 @@ Há vários formatos de relatórios disponíveis. Os relatórios a seguir usam c
 >
 >* [A Verificação](#health-check) de Integridade usa campos de seleção para especificar os dados que você deseja reportar.
 >* [O uso](#disk-usage) de disco usa links para detalhar a estrutura do repositório.
->* [O relatório](/help/sites-administering/reporting.md#workflow-report) de fluxo de trabalho fornece uma visão geral dos fluxos de trabalho em execução na sua instância.
+>* [O relatório](/help/sites-administering/reporting.md#workflow-report) de fluxo de trabalho fornece uma visão geral dos workflows em execução na sua instância.
+
 >
 >
 Portanto, os seguintes procedimentos para configuração de coluna não são apropriados. Consulte as descrições dos relatórios individuais para obter detalhes.
@@ -62,13 +66,13 @@ Portanto, os seguintes procedimentos para configuração de coluna não são apr
 
 As colunas podem ser adicionadas, reposicionadas ou removidas de qualquer um dos relatórios, padrão ou personalizado.
 
-A guia **Componentes** do sidekick (disponível na página de relatório) lista todas as categorias de dados que podem ser selecionadas como colunas.
+A guia **Componentes** do sidekick (disponível na página de relatório) lista todas as categorias de dados que podem ser selecionados como colunas.
 
 Para alterar a seleção de dados:
 
 * para adicionar uma nova coluna, arraste o componente desejado do sidekick e solte na posição desejada
 
-   * uma marca de verificação verde indicará quando a posição é válida e um par de setas indicará exatamente onde será colocada
+   * uma marca de verificação verde indicará quando a posição é válida e um par de setas indicará exatamente onde ela será colocada
    * um símbolo vermelho de ausência de movimento indicará quando a posição for inválida
 
 * para mover uma coluna, clique no cabeçalho, segure e arraste até a nova posição
@@ -99,9 +103,9 @@ Após pelo menos uma coluna ter sido agrupada, um gráfico de pizza dos dados **
 
 ![reportuser](assets/reportuser.png)
 
-Mover o cursor sobre o gráfico setorial mostrará o valor agregado do segmento apropriado. Isso usa o agregado atualmente definido para a coluna; por exemplo, contar, mínimo, médio, entre outros.
+Mover o cursor sobre o gráfico setorial mostrará o valor agregado do segmento apropriado. Isso usa a agregação atualmente definida para a coluna; por exemplo, contar, mínimo, médio, entre outros.
 
-### Filtros e agregados {#filters-and-aggregates}
+### Filtros e Agregações {#filters-and-aggregates}
 
 Em colunas apropriadas, também é possível configurar Configurações **de** filtro e/ou **Agregações** no menu [suspenso da](#column-drop-down-menu)coluna.
 
@@ -125,7 +129,7 @@ Para desativar o filtro:
 1. Remova o texto do filtro.
 1. Clique em **Aplicar**.
 
-#### Agregados {#aggregates}
+#### Agregações {#aggregates}
 
 Você também pode selecionar um método de agregação (eles podem variar dependendo da coluna selecionada):
 
@@ -148,7 +152,7 @@ O relatório pode ser gerado:
 
 1. Defina **Agrupamento** na coluna desejada.
 1. **Edite** a configuração para definir a frequência com que os instantâneos devem ser feitos; por hora ou por dia.
-1. **** Concluir... a definição para iniciar a coleção de instantâneos.
+1. **Concluir...** a definição para start da coleção de instantâneos.
 
    O botão deslizante vermelho/verde na parte superior esquerda indica quando os instantâneos estão sendo coletados.
 
@@ -177,9 +181,9 @@ Selecione seus requisitos e clique em **Ir** para aplicá-los ao relatório. Par
 
 Quando os instantâneos estão sendo coletados, você pode:
 
-* **Usar** Concluir... novamente para reinicializar a coleção.
+* Usar **Concluir...** novamente para reinicializar a coleção.
 
-   **Concluir** &quot;congela&quot; a estrutura do relatório (ou seja, as colunas atribuídas ao relatório e que são agrupadas, classificadas, filtradas, etc.) e começa a tirar fotos.
+   **Concluir** &quot;congela&quot; a estrutura do relatório (ou seja, as colunas atribuídas ao relatório e que são agrupadas, classificadas, filtradas, etc.) e start tirando fotos.
 
 * Abra a caixa de diálogo **Editar** para selecionar **Nenhum instantâneo** de dados para encerrar a coleção até que seja necessário.
 
@@ -194,7 +198,7 @@ Quando os instantâneos estão sendo coletados, você pode:
 
 >[!NOTE]
 >
->Os relatórios pré-configurados não exigem muito desempenho, mas ainda é recomendável usar instantâneos diários em um ambiente de produção. Se possível, execute esses instantâneos diários no momento em que não há muita atividade em seu site; isso pode ser definido com o `Daily snapshots (repconf.hourofday)` parâmetro para Configuração **de relatórios do** Day CQ; consulte Configuração [](/help/sites-deploying/configuring-osgi.md) OSGI para obter mais detalhes sobre como configurar isso.
+>Os relatórios pré-configurados não exigem muito desempenho, mas ainda é recomendável usar instantâneos diários em um ambiente de produção. Se possível, execute esses instantâneos diários no momento em que não há muita atividade em seu site; isso pode ser definido com o `Daily snapshots (repconf.hourofday)` parâmetro para Configuração **do Relatórios** Day CQ; consulte Configuração [](/help/sites-deploying/configuring-osgi.md) OSGI para obter mais detalhes sobre como configurar isso.
 
 #### Limites de exibição {#display-limits}
 
@@ -285,7 +289,7 @@ Ao **finalizar** o relatório:
 
 Com essa caixa de diálogo, você pode definir ou atualizar seu próprio título e descrição para o relatório resultante.
 
-![relatório](assets/reportfinish.png)
+![reportagem](assets/reportfinish.png)
 
 ## Tipos de relatórios {#report-types}
 
@@ -309,7 +313,7 @@ Isso significa que você pode ver, por exemplo:
 
 * Como as instâncias de um componente específico são distribuídas.
 
-   Isso pode ser interessante se páginas específicas (ou seja, &quot;páginas pesadas&quot;) apresentam problemas de desempenho.
+   Isso pode ser interessante se páginas específicas (ou seja, &quot;páginas pesadas&quot;) estão enfrentando problemas de desempenho.
 
 * Identificar partes do site com alterações frequentes/menos frequentes.
 * Veja como o conteúdo da página se desenvolve ao longo do tempo.
@@ -322,7 +326,7 @@ Todos os componentes são incluídos, padrão do produto e específicos do proje
 
 O relatório de uso do disco mostra informações sobre os dados armazenados no repositório.
 
-O relatório é iniciado na raiz ( / ) do repositório; ao clicar em uma ramificação específica, você pode fazer drill-down dentro do repositório (o caminho atual será refletido no título do relatório).
+Os start de relatório na raiz ( / ) do repositório; ao clicar em uma ramificação específica, você pode fazer drill-down dentro do repositório (o caminho atual será refletido no título do relatório).
 
 ![reportdiskusage](assets/reportdiskusage.png)
 
@@ -331,8 +335,7 @@ O relatório é iniciado na raiz ( / ) do repositório; ao clicar em uma ramific
 Este relatório analisa o log de solicitações atual:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`\
-
-para ajudá-lo a identificar as solicitações mais caras em um determinado período.
+para ajudá-lo a identificar as solicitações mais caras dentro de um determinado período.
 
 Para gerar o relatório, você pode especificar:
 
@@ -358,13 +361,13 @@ Para gerar o relatório, você pode especificar:
 
    Envie os resultados para um endereço de email.
 
-   Facultativo;Padrão: blank
+   Facultativo; Padrão: blank
 
 * **Executar diariamente às (hh:mm)**
 
    Especifique um horário para que o relatório seja executado automaticamente diariamente.
 
-   Facultativo;Padrão: blank
+   Facultativo; Padrão: blank
 
 ![informação](assets/reporthealth.png)
 
@@ -414,7 +417,7 @@ Permitir que você:
 
 ### Relatório do usuário {#user-report}
 
-Este relatório fornece informações sobre todos os usuários que registraram uma conta e/ou perfil; isso pode incluir tanto autores em sua organização quanto visitantes externos.
+Este relatório fornece informações sobre todos os usuários que registraram uma conta e/ou perfil; isso pode incluir tanto os autores em sua organização quanto os visitantes externos.
 
 [Colunas de informações](#selecting-and-positioning-the-data-columns) (se disponíveis) sobre:
 
@@ -441,7 +444,7 @@ Permitir que você:
 
 #### Generic Column {#generic-column}
 
-A coluna **Genérica** está disponível no Relatório do usuário para que você possa acessar informações personalizadas, geralmente dos perfis [do](/help/sites-administering/identity-management.md#profiles-and-user-accounts)usuário; por exemplo, Cor [favorita conforme detalhado em Adicionar campos à definição](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)de perfil.
+A coluna **Genérica** está disponível no Relatório do usuário para que você possa acessar informações personalizadas, geralmente dos perfis [do](/help/sites-administering/identity-management.md#profiles-and-user-accounts)usuário; por exemplo, Cor [favorita conforme detalhado em Adicionar campos à definição](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)do Perfil.
 
 A caixa de diálogo da coluna Genérica será aberta quando você:
 
@@ -458,7 +461,7 @@ From the **Definitions** tab you can define:
 
 * **Propriedade**
 
-   O nome da propriedade como armazenado no repositório, geralmente dentro do perfil do usuário.
+   O nome da propriedade como armazenado no repositório, normalmente no perfil do usuário.
 
 * **Caminho**
 
@@ -470,17 +473,17 @@ From the **Definitions** tab you can define:
 
 * **Agregação padrão**
 
-   Isso define o agregado usado por padrão se a coluna for desagrupada em um relatório com pelo menos uma coluna agrupada. Selecione o agregado necessário de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Isso define a agregação usada por padrão se a coluna for desagrupada em um relatório com pelo menos uma coluna agrupada. Selecione a agregação necessária de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Por exemplo, *Count* para um `String` campo significa que o número de `String` valores distintos é exibido para a coluna no estado agregado.
+   Por exemplo, *Contar* para um `String` campo significa que o número de `String` valores distintos é exibido para a coluna no estado agregado.
 
-Na guia **Estendido** , também é possível definir os agregados e filtros disponíveis:
+Na guia **Estendido** , também é possível definir as agregações e filtros disponíveis:
 
 ![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
 ### Relatório de instâncias do fluxo de trabalho {#workflow-instance-report}
 
-Isso oferece uma visão geral concisa, fornecendo informações sobre as instâncias individuais dos fluxos de trabalho, tanto em execução quanto concluídos.
+Isso oferece uma visão geral concisa, fornecendo informações sobre as instâncias individuais dos workflows, tanto em execução quanto concluídos.
 
 [Colunas de informações](#selecting-and-positioning-the-data-columns) sobre:
 
@@ -494,23 +497,23 @@ Isso oferece uma visão geral concisa, fornecendo informações sobre as instân
 
 Ou seja, você pode:
 
-* Monitorar a duração média dos fluxos de trabalho; se isso acontecer regularmente, é possível destacar problemas com o fluxo de trabalho.
+* Acompanhar a duração média dos workflows; se isso acontecer regularmente, é possível destacar problemas com o fluxo de trabalho.
 
 ![reportworkflow](assets/reportworkflowintance.png)
 
 ### Relatório de fluxo de trabalho {#workflow-report}
 
-Isso fornece as principais estatísticas sobre os fluxos de trabalho em execução na sua instância.
+Isso fornece as principais estatísticas sobre os workflows em execução em sua instância.
 
 ![reportworkflow](assets/reportworkflow.png)
 
-## Uso de relatórios em um ambiente de publicação {#using-reports-in-a-publish-environment}
+## Uso de relatórios em um Ambiente de publicação {#using-reports-in-a-publish-environment}
 
 Depois de configurar os relatórios para seus requisitos específicos, você pode ativá-los para transferir a configuração para o ambiente de publicação.
 
 >[!CAUTION]
 >
->Se desejar dados **** históricos para o ambiente de publicação, **conclua** o relatório no ambiente do autor antes de ativar a página.
+>Se desejar dados **** históricos para o ambiente de publicação, **Finalize** o relatório no ambiente do autor antes de ativar a página.
 
 O relatório adequado será então disponibilizado em
 
@@ -537,7 +540,7 @@ As permissões necessárias dependem da ação:
 * Os dados do relatório são basicamente coletados usando os privilégios do usuário atual.
 * Os dados históricos são coletados usando os privilégios do usuário que concluiu o relatório.
 
-Em uma instalação padrão do AEM, as seguintes permissões estão predefinidas para os relatórios:
+Em uma instalação padrão AEM as seguintes permissões estão predefinidas para os relatórios:
 
 * **Relatório do usuário**
 
