@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +24,7 @@ Você pode definir as propriedades desejadas para uma página. Eles podem variar
 
 ## Propriedades da página {#page-properties}
 
-As propriedades são distribuídas por meio de várias guias:
+As propriedades são distribuídas por várias guias:
 
 ### Básico {#basic}
 
@@ -155,9 +158,9 @@ As propriedades são distribuídas por meio de várias guias:
 
 * **Personalização**
 
-   Selecione uma [Marca para especificar um escopo para a segmentação](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+   Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permissões  {#permissions}
+### Permissões   {#permissions}
 
 * **Permissões** (interface otimizada para toque)
 
