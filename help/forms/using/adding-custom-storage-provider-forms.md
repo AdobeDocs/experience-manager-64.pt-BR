@@ -1,8 +1,8 @@
 ---
-title: Armazenamento personalizado para componentes de rascunhos e envios
-seo-title: Armazenamento personalizado para componentes de rascunhos e envios
-description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
-seo-description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
+title: armazenamento personalizado para componentes de rascunhos e envios
+seo-title: armazenamento personalizado para componentes de rascunhos e envios
+description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
+seo-description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
 
-# Armazenamento personalizado para componentes de rascunhos e envios {#custom-storage-for-drafts-and-submissions-component}
+# armazenamento personalizado para componentes de rascunhos e envios {#custom-storage-for-drafts-and-submissions-component}
 
 ## Visão geral {#overview}
 
-O AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser preenchido e enviado posteriormente de qualquer dispositivo.
+A AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser preenchido e enviado posteriormente de qualquer dispositivo.
 
-Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no `/content/forms/fp` nó da instância Publicar. Além disso, os componentes do portal do AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
+Por padrão, a AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no `/content/forms/fp` nó da instância Publicar. Além disso, os componentes do portal da AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
 
 ## Pré-requisitos  {#prerequisites}
 
@@ -181,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-O portal de formulários usa o conceito de identificador universalmente exclusivo (UUID) para gerar uma ID exclusiva para cada rascunho e formulário enviado. Você também pode gerar uma ID exclusiva própria. Você pode implementar a interface FPKeyGeneratorService, substituir seus métodos e desenvolver uma lógica personalizada para gerar uma ID exclusiva personalizada para cada rascunho e formulário enviado. Além disso, defina a classificação de serviço da implementação de geração de ID personalizada superior a 0. Ela garante que a implementação personalizada seja usada em vez da implementação padrão.
+O portal da Forms usa o conceito de identificador universalmente único (UUID) para gerar uma ID exclusiva para cada rascunho e formulário enviado. Você também pode gerar uma ID exclusiva própria. Você pode implementar a interface FPKeyGeneratorService, substituir seus métodos e desenvolver uma lógica personalizada para gerar uma ID exclusiva personalizada para cada rascunho e formulário enviado. Além disso, defina a classificação de serviço da implementação de geração de ID personalizada superior a 0. Ela garante que a implementação personalizada seja usada em vez da implementação padrão.
 
 ```java
 public interface FPKeyGeneratorService {
