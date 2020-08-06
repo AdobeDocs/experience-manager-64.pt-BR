@@ -1,8 +1,8 @@
 ---
 title: Ferramentas de teste e rastreamento
 seo-title: Ferramentas de teste e rastreamento
-description: O AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
-seo-description: O AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
+description: AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
+seo-description: AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
 uuid: 29c43202-0a4e-41ba-9176-92fa77c627d5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 translation-type: tm+mt
 source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
 
 ## Testes {#testing}
 
-O AEM fornece:
+AEM fornece:
 
 * [uma estrutura para testar a interface do usuário](/help/sites-developing/hobbes.md)do componente.
 * [um mecanismo para testar e depurar componentes](/help/sites-developing/developer-mode.md).
@@ -59,6 +62,6 @@ Se forem usados para rastreamento, então:
 * devem ser atualizados regularmente.
 * apenas uma cópia principal deve ser mantida e todos devem saber onde está a cópia principal.
 * devem ser acessíveis a todos os membros do projeto.
-* se a segurança for um problema (muitas vezes ocorre em grandes empresas) e o acesso comum não for possível, as cópias poderão ser distribuídas desde que todos entendam que são cópias e não podem ser atualizadas.
+* se a segurança for um problema (geralmente ocorre em empresas grandes) e o acesso comum não for possível, as cópias poderão ser distribuídas desde que todos entendam que são cópias e não podem ser atualizadas.
 
-Novamente, há muitas ferramentas proprietárias para rastrear erros e requisitos de recursos.
+Novamente, há muitas ferramentas proprietárias para rastrear bugs e requisitos de recursos.
