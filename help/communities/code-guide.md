@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Diretrizes, dicas e truques {#guidelines-tips-and-tricks}
 
-Trabalhar com o AEM Communities evoluiu de uma grande dependência das páginas do Java Server para uma flexibilidade na escolha de modelar linguagens de script em que a lógica comercial, o estilo e o conteúdo da página são diferentes entre si.
+Trabalhar com a AEM Communities evoluiu de uma grande dependência das Páginas do Java Server para uma flexibilidade na escolha de modelar as linguagens de script, onde a lógica comercial, o estilo e o conteúdo da página são distintos entre si.
 
 Mais flexibilidade ao trabalhar com conteúdo gerado pelo usuário (UGC) é através da API do SocialResourceProvider, o que elimina a necessidade de conscientização sobre qual opção de [SRP](srp.md) foi escolhida para a implantação.
 
-Veja a seguir várias diretrizes de codificação e práticas recomendadas para desenvolvedores do AEM Communities:
+Veja a seguir várias diretrizes de codificação e práticas recomendadas para desenvolvedores AEM Communities:
 
 ### Código {#code}
 
