@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -47,11 +50,11 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **** Caminho: /libs/fd/cm/config
+      **Caminho:** /libs/fd/cm/config
 
-      **** Localização: /apps/
+      **Localização:** /apps/
 
-      **** Corresponder tipos de nós: Selecionado
+      **Corresponder tipos de nós:** Selecionado
 
       ![Nó Sobreposição](assets/2-2.png)
 
@@ -70,7 +73,7 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
 1. Abra o arquivo tbxeditor-config.xml em apps/fd/cm/config e faça as alterações necessárias.
 
-   1. Clique duas vezes no arquivo tbxeditor-config.xml em apps/fd/cm/config. O arquivo é aberto.
+   1. Duplo clique no arquivo tbxeditor-config.xml em apps/fd/cm/config. O arquivo é aberto.
 
       ```xml
       <editorConfig>
@@ -163,6 +166,7 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
       * Propriedades como altura e espaçamento entre letras
       * Valores padrão de família e tamanho de fonte, altura, espaçamento entre letras e formato de data
       * Recuos com marcadores
+
       Por exemplo, para adicionar uma fonte japonesa chamada Sazanami Mincho Medium, é necessário inserir a seguinte entrada no arquivo XML: `<font>Sazanami Mincho Medium</font>`. Também é necessário ter essa fonte instalada no computador cliente usada para acessar e trabalhar com a personalização da fonte. Para obter mais informações, consulte [Adicionar fontes personalizadas ao computador](#addcustomfonts)cliente.
 
       Você também pode alterar os padrões de vários aspectos do texto e, ao remover as entradas, remover as fontes do editor de texto.
@@ -174,14 +178,14 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
 Quando você acessa uma fonte no editor de texto do Gerenciamento de correspondência, ela precisa estar presente no computador cliente que você está usando para acessar o Gerenciamento de correspondência. Para poder usar uma fonte personalizada no editor de texto, primeiro é necessário instalar a mesma fonte no computador cliente.
 
-Para obter mais informações sobre a instalação de fontes, consulte:
+Para obter mais informações sobre como instalar fontes, consulte o seguinte:
 
 * [Instalar ou desinstalar fontes no Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
 * [Noções básicas sobre Mac: Livro de fontes](https://support.apple.com/en-us/HT201749)
 
 ## Acessar personalizações de fontes {#access-font-customizations}
 
-Depois de alterar as fontes no arquivo tbxeditor-config.xml no CRX e instalar as fontes necessárias no computador cliente usadas para acessar o AEM Forms, as alterações serão exibidas no editor de texto.
+Depois de fazer alterações nas fontes no arquivo tbxeditor-config.xml no CRX e instalar as fontes necessárias no computador cliente usadas para acessar o AEM Forms, as alterações serão exibidas no editor de texto.
 
 Por exemplo, a fonte Sazanami Mincho Medium adicionada em [Personalizar fontes editando o arquivo tbxeditor-config.xml no procedimento CRX](#customizefonts) aparece na interface do editor de texto da seguinte forma:
 
