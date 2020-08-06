@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
 translation-type: tm+mt
 source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Para configurar tal área dentro do seu site, você:
 
 Para criar um grupo de usuários fechado:
 
-1. Vá para **Ferramentas - Segurança** na tela inicial do AEM.
+1. Vá para **Ferramentas - Segurança** da tela inicial AEM.
 
    >[!NOTE]
    >
@@ -55,12 +58,12 @@ Para criar um grupo de usuários fechado:
 
    ![captura de tela_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
-1. Vá até a guia **Membros** e atribua os usuários necessários a esse grupo.
+1. Vá até a guia **Membros** e atribua os usuários desejados a esse grupo.
 
    ![captura de tela_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
 1. Ative quaisquer usuários que você tenha atribuído ao CUG; neste caso, todos os membros do `cug_access`.
-1. Ative o grupo de usuários fechado para que esteja disponível no ambiente de publicação; neste exemplo, `cug_access`.
+1. Ative o grupo de usuários fechado para que ele esteja disponível no ambiente de publicação; neste exemplo, `cug_access`.
 
 ## Aplicar seu grupo de usuários fechado às páginas de conteúdo {#applying-your-closed-user-group-to-content-pages}
 
@@ -72,7 +75,7 @@ Para aplicar o CUG a uma página:
    ![captura de tela_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
 1. Na janela a seguir, vá para a guia **Avançado** .
-1. Role para baixo e ative o tickbox na seção Requisitos **de** autenticação.
+1. Role para baixo e ative o tickbox na seção **Authentication Requirements** (Requisitos de autenticação).
 
 1. Adicione o caminho de configuração abaixo e pressione Salvar.
 1. Em seguida, vá para a guia **Permissões** e pressione o botão **Editar grupo** de usuários fechado.
@@ -97,11 +100,11 @@ Para aplicar o CUG a uma página:
 1. Atribua um **Realm** (um nome para os grupos de páginas), se necessário. Deixe em branco para utilizar o título da página.
 1. Click **OK** to save the specification.
 
-Consulte Gerenciamento [de](/help/sites-administering/identity-management.md) identidade para obter informações sobre perfis no ambiente de publicação e fornecer formulários para logon e logout.
+Consulte a [Identity Management](/help/sites-administering/identity-management.md) para obter informações sobre perfis no ambiente publish e fornecer formulários para fazer logon e logout.
 
 ## Vinculação Ao Realm {#linking-to-the-realm}
 
-Como o destino de qualquer link para o Realm CUG não está visível para o usuário anônimo, o verificador de links removerá esses links.
+Como o público alvo de qualquer link para o Realm CUG não está visível para o usuário anônimo, o verificador de links removerá esses links.
 
 Para evitar isso, é aconselhável criar páginas de redirecionamento não protegidas que apontem para páginas dentro do território CUG. As entradas de navegação são renderizadas sem causar problemas ao verificador de links. Somente ao acessar a página de redirecionamento, o usuário será redirecionado dentro do território CUG - depois de fornecer suas credenciais de logon com êxito.
 
