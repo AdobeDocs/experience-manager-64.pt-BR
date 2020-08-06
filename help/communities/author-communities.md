@@ -1,8 +1,8 @@
 ---
 title: Componentes do Communities
 seo-title: Componentes do Communities
-description: 'Adicionar recursos da comunidade a qualquer site do AEM '
-seo-description: 'Adicionar recursos da comunidade a qualquer site do AEM '
+description: 'Adicionar recursos da comunidade a qualquer site AEM '
+seo-description: 'Adicionar recursos da comunidade a qualquer site AEM '
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 44%
 
 ---
 
@@ -29,7 +32,7 @@ Para saber mais sobre como criar um site da comunidade, visite:
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o ambiente de criação, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o ambiente de criação, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes de comunidades disponíveis {#available-communities-components}
 
@@ -48,7 +51,7 @@ Consulte também o guia [interativo Componentes da](components-guide.md)comunida
 | Barra lateral do blog | [Blog](blog-feature.md) |
 | Calendário | [Calendário](calendar.md) |
 | Comentários | [Comentários](comments.md) |
-| Lista de atividades da comunidade | [Tendências da atividade](trends.md) |
+| Lista de atividades da comunidade | [Tendências de Atividade](trends.md) |
 | Lista de membros do grupo da comunidade | [Grupos de comunidades](creating-groups.md) |
 | Escrever mensagem | [Mensagens](configure-messaging.md) |
 | Atribuições da ativação | [Atribuições](assignments.md) |
@@ -69,14 +72,14 @@ Consulte também o guia [interativo Componentes da](components-guide.md)comunida
 | Perguntas relacionadas | [Perguntas e respostas](working-with-qna.md) |
 | Revisões | [Revisões](reviews.md) |
 | Resumo das revisões (Exibição) | [Revisões](reviews.md) |
-| Pesquisar  | [Pesquisar](search.md) |
+| Pesquisar   | [Pesquisar](search.md) |
 | Resultados da pesquisa | [Pesquisar](search.md) |
 | Nuvem de tags sociais | [Nuvem de tags sociais](tagcloud.md) |
 | Votação | [Votação](voting.md) |
 
 >[!NOTE]
 >
->O componente de pesquisa não está mais disponível e é compatível com o Experience Manager Communities.
+>O componente de pesquisa não está mais disponível e é suportado no Experience Manager Communities.
 
 ## Documentação das Comunidades relacionadas {#related-communities-documentation}
 
