@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4849da13-518c-40c8-b80e-1b2264d7f8f5
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ A intenção de [sobrepor](client-customize.md#overlays) um componente padrão �
 
 ## Exemplo {#example}
 
-Suponha que você queira modificar o recurso de comentário para que ele corresponda ao design do seu site, alterando o cabeçalho do comentário para que ele não exiba mais o avatar para qualquer comentário. As soluções para ocultar o avatar estão usando o CSS ou, conforme descrito aqui, sobrepondo o header.jsp na pasta de aplicativos para que o HTML que contém o avatar nunca seja enviado ao cliente.
+Suponha que você queira modificar o recurso de comentário para que ele corresponda ao design do seu site, alterando o cabeçalho do comentário para que ele não exiba mais o avatar para qualquer comentário. As soluções para ocultar o avatar estão usando o CSS ou, conforme descrito aqui, sobrepondo o header.jsp na pasta de aplicativos para que o HTML que contém o avatar nunca seja enviado para o cliente.
 
 Para sobrepor comentários, você precisará:
 
