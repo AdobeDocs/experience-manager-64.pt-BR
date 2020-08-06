@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
 
 # Identificação do conteúdo a ser traduzido{#identifying-content-to-translate}
 
-As regras de tradução identificam o conteúdo a ser traduzido para páginas, componentes e ativos que estão incluídos ou excluídos de projetos de tradução. Quando uma página ou ativo está sendo traduzido, o AEM extrai esse conteúdo para que ele possa ser enviado ao serviço de tradução.
+As regras de tradução identificam o conteúdo a ser traduzido para páginas, componentes e ativos que estão incluídos ou excluídos de projetos de tradução. Quando uma página ou ativo está sendo traduzido, AEM extrai esse conteúdo para que ele possa ser enviado ao serviço de tradução.
 
 As páginas e os ativos são representados como nós no repositório JCR. O conteúdo extraído é um ou mais valores de propriedade dos nós. As regras de conversão identificam as propriedades que contêm o conteúdo a ser extraído.
 
@@ -31,14 +34,14 @@ O arquivo se aplica a todos os projetos de tradução.
 
 >[!NOTE]
 >
->Após uma atualização para a versão 6.4, é recomendável mover o arquivo de /etc. Consulte Reestruturação [comum de repositório no AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) para obter mais detalhes.
+>Após uma atualização para a versão 6.4, é recomendável mover o arquivo de /etc. Consulte Reestruturação [comum de repositórios no AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) para obter mais detalhes.
 
 As regras incluem as seguintes informações:
 
 * O caminho do nó ao qual a regra se aplica. A regra também se aplica aos descendentes do nó.
 * Os nomes das propriedades do nó que contêm o conteúdo a ser traduzido. A propriedade pode ser específica para um tipo de recurso específico ou para todos os tipos de recurso.
 
-Por exemplo, você pode criar uma regra que traduza o conteúdo que os autores adicionam a todos os componentes de Texto de base do AEM em suas páginas. A regra pode identificar o `/content` nó e a `text` propriedade do `foundation/components/text` componente.
+Por exemplo, você pode criar uma regra que traduza o conteúdo que os autores adicionam a todos os componentes de Texto de base AEM suas páginas. A regra pode identificar o `/content` nó e a `text` propriedade do `foundation/components/text` componente.
 
 Há um [console](#translation-rules-ui) que foi adicionado para configurar as regras de tradução. As definições na interface do usuário preencherão o arquivo para você.
 
@@ -46,11 +49,11 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 >[!NOTE]
 >
->O AEM oferece suporte ao mapeamento de um para um entre tipos de recursos e atributos de referência para a tradução do conteúdo referenciado em uma página.
+>AEM suporta mapeamento de um para um entre tipos de recursos e atributos de referência para conversão de conteúdo referenciado em uma página.
 
 ## Sintaxe de regra para páginas, componentes e ativos {#rule-syntax-for-pages-components-and-assets}
 
-Uma regra é um `node` elemento com um ou mais elementos filho `property` e zero ou mais elementos filho `node` :
+Uma regra é um `node` elemento com um ou mais elementos filho `property` e zero ou mais `node` elementos filho:
 
 ```xml
 <node path="content path">
@@ -95,7 +98,7 @@ O exemplo a seguir traduz o conteúdo de todas as `text` propriedades e também 
 </node>
 ```
 
-## Sintaxe de regra para extrair ativos de páginas {#rule-syntax-for-extracting-assets-from-pages}
+## Sintaxe de regra para extrair ativos de páginas  {#rule-syntax-for-extracting-assets-from-pages}
 
 Use a seguinte sintaxe de regra para incluir ativos incorporados ou referenciados de componentes:
 
@@ -116,7 +119,7 @@ O exemplo a seguir extrai imagens do componente de base Imagem:
 
 ## Substituição de regras {#overriding-rules}
 
-O arquivo Translation_rules.xml consiste em um `nodelist` elemento com vários `node` elementos filho. O AEM lê a lista de nós de cima para baixo. Quando várias regras direcionam para o mesmo nó, a regra que é menor no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo em `text` propriedades seja convertido, exceto para a `/content/mysite/en` ramificação de páginas:
+O arquivo Translation_rules.xml consiste em um `nodelist` elemento com vários `node` elementos filho. AEM lê a lista do nó de cima para baixo. Quando várias regras públicos alvos o mesmo nó, a regra que é menor no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo em `text` propriedades seja convertido, exceto para a `/content/mysite/en` ramificação de páginas:
 
 ```xml
 <nodelist>
@@ -133,7 +136,7 @@ O arquivo Translation_rules.xml consiste em um `nodelist` elemento com vários `
 
 Você pode filtrar nós que têm uma propriedade específica usando um `filter` elemento.
 
-Por exemplo, as seguintes regras fazem com que todo o conteúdo em `text` propriedades seja convertido, exceto os nós que têm a propriedade `draft` definida como `true`.
+Por exemplo, as regras a seguir fazem com que todo o conteúdo em `text` propriedades seja convertido, exceto os nós que têm a propriedade `draft` definida como `true`.
 
 ```xml
 <nodelist>
@@ -160,7 +163,7 @@ Para acessá-lo:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-Aqui, você pode **Adicionar contexto**. Isso permite adicionar um caminho.
+Aqui, você pode **Adicionar contexto**. Isso permite que você adicione um caminho.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -213,9 +216,9 @@ O resultado no xml será semelhante a:
 
 ## Editar o arquivo de regras manualmente {#editing-the-rules-file-manually}
 
-O arquivo Translation_rules.xml instalado com o AEM contém um conjunto padrão de regras de conversão. Você pode editar o arquivo para dar suporte aos requisitos de seus projetos de tradução. Por exemplo, você pode adicionar regras para que o conteúdo de seus componentes personalizados seja traduzido.
+O arquivo Translation_rules.xml instalado com AEM contém um conjunto padrão de regras de conversão. Você pode editar o arquivo para suportar os requisitos dos projetos de tradução. Por exemplo, você pode adicionar regras para que o conteúdo de seus componentes personalizados seja traduzido.
 
-Se você editar o arquivo Translation_rules.xml, mantenha uma cópia de backup em um pacote de conteúdo. A instalação de service packs do AEM ou a reinstalação de determinados pacotes do AEM podem substituir o arquivo atual Translation_rules.xml pelo arquivo original. Para restaurar suas regras nesta situação, você pode instalar o pacote que contém sua cópia de backup.
+Se você editar o arquivo Translation_rules.xml, mantenha uma cópia de backup em um pacote de conteúdo. A instalação AEM service packs ou a reinstalação de determinados pacotes AEM pode substituir o arquivo Translation_rules.xml atual pelo original. Para restaurar suas regras nesta situação, você pode instalar o pacote que contém sua cópia de backup.
 
 >[!NOTE]
 >
