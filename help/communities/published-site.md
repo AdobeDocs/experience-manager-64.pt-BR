@@ -1,8 +1,8 @@
 ---
 title: Experimente o site publicado
 seo-title: Experimente o site publicado
-description: Navegue até um site publicado
-seo-description: Navegue até um site publicado
+description: Navegar até um site publicado
+seo-description: Navegar até um site publicado
 uuid: f510224c-d991-4528-864d-44672138740c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Ao chegar ao site publicado pela primeira vez, o visitante do site normalmente n
 
 ## Visitante Anônimo do Site {#anonymous-site-visitor}
 
-Um visitante anônimo do site visualiza o seguinte na interface do usuário:
+Um visitante de site anônimo vê o seguinte na interface do usuário:
 
 * Título do site. Tutorial de introdução
 * Nenhum link de perfil
@@ -83,7 +86,7 @@ Depois de conectado, observe que há um novo item de menu, `Administration`, que
 
 ![chlimage_1-313](assets/chlimage_1-313.png)
 
-Observe que a página Calendário é a página inicial porque o Modelo de site de referência escolhido incluiu a função Calendário primeiro, seguido pela função de Fluxo de atividade, função Fórum e assim por diante. Essa estrutura é visível no console Modelo [de](sites.md#edit-site-template) site ou ao modificar as propriedades do site no ambiente do autor:
+Observe que a página Calendário é o home page porque o Modelo de site de referência escolhido incluiu a função Calendário primeiro, seguido pela função Fluxo de Atividade, função Fórum e assim por diante. Essa estrutura é visível no console Modelo [de](sites.md#edit-site-template) site ou ao modificar as propriedades do site no ambiente do autor:
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 
@@ -93,17 +96,18 @@ Observe que a página Calendário é a página inicial porque o Modelo de site d
 >
 >* [Componentes](author-communities.md) das comunidades (para autores)
 >* [Componentes, funções e recursos básicos](essentials.md) (para desenvolvedores)
+
 >
 
 
 
 ## Link do fórum {#forum-link}
 
-Visualize o recurso básico do fórum selecionando o link do Fórum.
+Visualização o recurso básico do fórum selecionando o link do Fórum.
 
 Os membros podem publicar um novo tópico ou seguir um tópico.
 
-Os visitantes do site podem exibir as publicações e classificá-las de várias maneiras.
+Os visitantes do site podem visualização as publicações e classificá-las de várias maneiras.
 
 ![chlimage_1-315](assets/chlimage_1-315.png)
 
@@ -111,9 +115,9 @@ Os visitantes do site podem exibir as publicações e classificá-las de várias
 
 Como Aaron é um administrador de grupo, selecionar o link Grupos permitirá que Aaron crie um novo grupo da comunidade selecionando um modelo de grupo, uma imagem, se o grupo estiver aberto ou secreto e convidando os membros.
 
-Este é um exemplo onde um grupo é criado no ambiente de publicação.
+Este é um exemplo onde um grupo é criado no ambiente publish.
 
-Os grupos também podem ser criados no ambiente do autor e gerenciados no site da comunidade no ambiente do autor (o console [Grupos da](groups.md)comunidade). A experiência de [criação de grupos no autor](nested-groups.md) é a seguinte neste tutorial.
+Grupos também podem ser criados no ambiente do autor e gerenciados no site da comunidade no ambiente do autor (o console [Grupos da](groups.md)comunidade). A experiência de [criação de grupos no autor](nested-groups.md) é a seguinte neste tutorial.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -135,7 +139,7 @@ Após a criação do novo grupo, **selecione o novo grupo** Esportes para criar 
 
 ![chlimage_1-318](assets/chlimage_1-318.png)
 
-O segundo conjunto de links, começando com `Blog`, pertence ao grupo atualmente selecionado, o `Sports`grupo. Ao selecionar o link Esportes, é possível aninhar dois grupos dentro do grupo Esportes. `Groups`
+O segundo conjunto de links, começando com `Blog`, pertence ao grupo atualmente selecionado, o `Sports`grupo. Ao selecionar o link Esportes, é possível aninhar dois grupos dentro do grupo Esportes `Groups` .
 
 Como exemplo, adicione dois n `ew groups.`
 
@@ -152,15 +156,16 @@ Como exemplo, adicione dois n `ew groups.`
 * Este modelo *não *inclui a função de grupos, portanto, nenhum aninhamento adicional de grupos será possível
 * No autor, o console [](groups.md) Grupos oferece uma terceira opção - uma `Public Group` (associação opcional)
 
-Depois que ambos os grupos forem criados, selecione o grupo Beisebol, um grupo aberto e observe seus links: `Discussions``What's New` `Members`Os links do grupo são exibidos abaixo dos links do site principal e os resultados são exibidos na seguinte exibição:
+Depois que ambos os grupos forem criados, selecione o grupo Beisebol, um grupo aberto e observe seus links: `Discussions` `What's New` `Members`
+Os links do grupo são exibidos abaixo dos links do site principal e os resultados são exibidos na seguinte exibição:
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
 Autor - com privilégios administrativos, navegue até o console [Grupos de](members.md) comunidades e adicione Weston McCall ao `Community Engage Gymnastics <uid> Members` grupo.
 
-Continuando a publicar, faça logout como Aaron McDonald e veja os grupos no Sports Group como um visitante anônimo do site:
+Continuando a publicar, faça logout como Aaron McDonald e visualização os grupos no Sports Group como um visitante anônimo do site:
 
-* Da home page
+* Do home page
 * Select `Groups`link
 * Select `Sports`link
 * Selecione o `Groups`link Esportes
@@ -173,9 +178,9 @@ Faça logon como Weston McCall (weston.mccall@dodgit.com / senha) e navegue até
 
 ## Link da página da Web {#web-page-link}
 
-Visualize a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação padrão do AEM podem ser usadas para adicionar conteúdo a esta página no ambiente do autor.
+Visualização a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação de AEM padrão podem ser usadas para adicionar conteúdo a esta página no ambiente do autor.
 
-Por exemplo, vá para a instância do **autor** , abra a `engage` pasta no console [Sites](sites-console.md)das Comunidades e selecione o ícone **Abrir site** para entrar no modo de edição do autor. Em seguida, selecione o modo de visualização para selecionar o `Web Page`link e, em seguida, selecione o modo de edição para adicionar componentes de Título e Texto. Por último, publique novamente apenas a página ou o site inteiro.
+Por exemplo, vá para a instância do **autor** , abra a `engage` pasta no console [Sites](sites-console.md)das Comunidades e selecione o ícone **Abrir site** para entrar no modo de edição do autor. Em seguida, selecione o modo de pré-visualização para selecionar o `Web Page`link e, em seguida, selecione o modo de edição para adicionar componentes de Título e Texto. Por último, publique novamente apenas a página ou o site inteiro.
 
 ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -183,7 +188,7 @@ Por exemplo, vá para a instância do **autor** , abra a `engage` pasta no conso
 
 Quando o membro da comunidade tiver privilégios de moderação, o link Administração ficará visível e sua seleção exibirá o conteúdo da comunidade publicado e permitirá que ele seja [moderado](moderate-ugc.md) de maneira semelhante ao console [de](moderation.md) moderação no ambiente do autor.
 
-Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos consoles não está acessível da navegação global no ambiente de publicação.
+Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos consoles não está acessível da navegação global no ambiente publish.
 
 ![chlimage_1-322](assets/chlimage_1-322.png)
 
@@ -196,13 +201,13 @@ Depois de fazer logoff, é possível criar um novo registro de usuário.
 
 ![chlimage_1-323](assets/chlimage_1-323.png) ![chlimage_1-324](assets/chlimage_1-324.png)
 
-Por padrão, o endereço de email é a ID de login. Se essa opção estiver desmarcada, o visitante poderá inserir sua própria ID de login (nome de usuário). O nome de usuário deve ser exclusivo no ambiente de publicação.
+Por padrão, o endereço de email é a ID de login. Se essa opção estiver desmarcada, o visitante poderá inserir sua própria ID de login (nome de usuário). O nome de usuário deve ser exclusivo no ambiente publish.
 
 Depois de especificar o nome, o email e a senha do usuário, a seleção `Sign Up`criará o usuário e permitirá que ele assine.
 
 Depois de conectado, a primeira página apresentada é a `Profile`página deles, que podem personalizar.
 
-![chlimage_1-321](assets/chlimage_1-325.png)
+![chlimage_1-325](assets/chlimage_1-325.png)
 
 Se o membro se esquecer da ID de login, será possível recuperar se está usando seu endereço de email.
 
