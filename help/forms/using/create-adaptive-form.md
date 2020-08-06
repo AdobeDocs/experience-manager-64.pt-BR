@@ -1,13 +1,16 @@
 ---
 title: '"Tutorial: Criar um formulário adaptável"'
 seo-title: '"Criar um formulário adaptável"'
-description: Saiba como criar, criar um layout e visualizar um formulário adaptável. Além disso, aprenda a configurar ações de envio.
-seo-description: Saiba como criar, criar um layout e visualizar um formulário adaptável. Além disso, aprenda a configurar ações de envio.
+description: Saiba como criar, criar um layout e pré-visualização um formulário adaptável. Além disso, aprenda a configurar ações de envio.
+seo-description: Saiba como criar, criar um layout e pré-visualização um formulário adaptável. Além disso, aprenda a configurar ações de envio.
 page-status-flag: de-activated
 uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1416'
+ht-degree: 3%
 
 ---
 
@@ -20,16 +23,16 @@ Este tutorial é uma etapa da série [Criar seu primeiro formulário](/help/form
 
 ## Sobre o tutorial {#about-the-tutorial}
 
-Formulários adaptáveis são formulários de nova geração que são dinâmicos e responsivos. Você pode usar os formulários adaptativos para fornecer experiências personalizadas. Você também pode integrar formulários adaptáveis ao Adobe Analytics para estatísticas de uso e ao Adobe Campaign para gerenciamento de campanha. Para obter mais informações sobre recursos de formulários adaptáveis, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
+Formulários adaptáveis são formulários de nova geração que são dinâmicos e responsivos. Você pode usar os formulários adaptativos para fornecer experiências personalizadas. Também é possível integrar formulários adaptáveis à Adobe Analytics para estatísticas de uso e à Adobe Campaign para gestões de campanha. Para obter mais informações sobre recursos de formulários adaptáveis, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
 
 É mais fácil criar e gerenciar formulários quando um processo adequado é seguido. Neste artigo, você aprenderá a:
 
-* [Criar um formulário adaptável que permita ao cliente adicionar um endereço de entrega](/help/forms/using/create-adaptive-form.md#step-create-the-adaptive-form)
+* [Crie um formulário adaptável que permita ao cliente adicionar um endereço de entrega](/help/forms/using/create-adaptive-form.md#step-create-the-adaptive-form)
 
 * [Campos de layout de um formulário adaptável para exibir e aceitar informações de um cliente](/help/forms/using/create-adaptive-form.md#step-add-header-and-footer)
 
 * [Criar ação de envio para enviar um email contendo conteúdo de formulário](/help/forms/using/create-adaptive-form.md#step-add-components-to-capture-and-display-information)
-* [Visualizar e enviar um formulário adaptável](/help/forms/using/create-adaptive-form.md)
+* [Pré-visualização e envio de um formulário adaptável](/help/forms/using/create-adaptive-form.md)
 
 Você terá um formulário semelhante ao seguinte no final do artigo:
 
@@ -37,13 +40,13 @@ Você terá um formulário semelhante ao seguinte no final do artigo:
 
 ## Etapa 1: Criar o formulário adaptativo {#step-create-the-adaptive-form}
 
-1. Faça logon na instância do autor do AEM e navegue até **Adobe Experience Manager** > **Formulários** > **Formulários e documentos**. O URL padrão é [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Faça logon na instância do autor AEM e navegue até **Adobe Experience Manager** > **Forms** > **Forms e Documentos**. O URL padrão é [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 1. Toque em **Criar** e selecione Formulário **** adaptável. Uma opção para selecionar um modelo é exibida. Toque no modelo **em branco** para selecioná-lo e toque em **Avançar**.
 
 1. Uma opção para **Adicionar propriedades** é exibida. Os campos **Título** e **Nome** são obrigatórios:
 
-   * **** Título: Especifique `Add new or update shipping address` no campo Título. O campo de título especifica o nome de exibição do formulário. O título ajuda a identificar o formulário na interface do usuário do AEM Forms.
-   * **** Nome: Especifique `shipping-address-add-update-form` no campo Nome. O campo Nome especifica o nome do formulário.  Um nó com o nome especificado é criado no repositório. À medida que você digita um título, o valor do campo de nome é gerado automaticamente. Você pode alterar o valor sugerido. O campo de nome pode incluir somente caracteres alfanuméricos, hífens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
+   * **Título:** Especifique `Add new or update shipping address` no campo Título. O campo de título especifica o nome de exibição do formulário. O título ajuda a identificar o formulário na interface do usuário do AEM Forms.
+   * **Nome:** Especifique `shipping-address-add-update-form` no campo Nome. O campo Nome especifica o nome do formulário. Um nó com o nome especificado é criado no repositório. À medida que você digita um título, o valor do campo de nome é gerado automaticamente. Você pode alterar o valor sugerido. O campo de nome pode incluir somente caracteres alfanuméricos, hífens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
 
 1. Toque em **Criar**. Um formulário adaptável é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Toque em **Abrir** para abrir o formulário recém-criado em uma nova guia. O formulário é aberto para edição. Ela também exibe a barra lateral para personalizar o formulário recém-criado de acordo com as necessidades.
 
@@ -53,7 +56,7 @@ Você terá um formulário semelhante ao seguinte no final do artigo:
 
 ## Etapa 2: Adicionar cabeçalho e rodapé {#step-add-header-and-footer}
 
-O AEM Forms fornece vários componentes para exibir informações em um formulário adaptável. Os componentes Cabeçalho e Rodapé ajudam a fornecer uma aparência consistente a um formulário. Um cabeçalho normalmente inclui o logotipo de uma empresa, o título do formulário e o resumo. Um rodapé normalmente inclui informações de direitos autorais e links para outras páginas.
+A AEM Forms fornece vários componentes para exibir informações em um formulário adaptável. Os componentes Cabeçalho e Rodapé ajudam a fornecer uma aparência consistente a um formulário. Um cabeçalho normalmente inclui o logotipo de uma empresa, o título do formulário e o resumo. Um rodapé normalmente inclui informações de direitos autorais e links para outras páginas.
 
 1. Toque em ![alternar painel](assets/toggle-side-panel.png) lateral > ![treeexpandall](assets/treeexpandall.png). O navegador de componentes é aberto. Arraste o componente **Cabeçalho** do navegador de componentes para o formulário adaptável.
 1. Toque em **Logotipo**. A barra de ferramentas é exibida. Toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) na barra de ferramentas, digite **We.Retail** e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -64,13 +67,13 @@ O AEM Forms fornece vários componentes para exibir informações em um formulá
 
    [Obter arquivo](assets/logo.png)
 
-1. Arraste o componente **Rodapé** de ![treeexpandall](assets/treeexpandall.png) para o formulário adaptável. Nesse estágio, o formulário tem a seguinte aparência:
+1. Arraste o componente **Rodapé** de ![treeexpandall](assets/treeexpandall.png) para a forma adaptável. Nesse estágio, o formulário tem a seguinte aparência:
 
    ![forma adaptável com cabeçalhos e rodapés](assets/adaptive-form-with-headers-and-footers.png)
 
 ## Etapa 3: Adicionar componentes para capturar e exibir informações {#step-add-components-to-capture-and-display-information}
 
-Os componentes são blocos componentes de um formulário adaptável. O AEM Forms fornece vários componentes para capturar e exibir informações em um formulário adaptável. É possível arrastar os componentes de ![treeexpandall](assets/treeexpandall.png) para um formulário. Para saber mais sobre os componentes disponíveis e a funcionalidade correspondente, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
+Os componentes são blocos componentes de um formulário adaptável. A AEM Forms fornece vários componentes para capturar e exibir informações em um formulário adaptável. É possível arrastar os componentes de ![treeexpandall](assets/treeexpandall.png) para um formulário. Para saber mais sobre os componentes disponíveis e a funcionalidade correspondente, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
 
 1. Arraste o componente Caixa numérica para o formulário adaptável. Coloque-o antes do componente de rodapé. Abra as propriedades do componente, altere o **Título** do componente para **`Customer ID`**, altere o Nome **do** elemento para **`customer_ID`**, ative a opção Campo **** obrigatório, ative a opção **Usar tipo** ![](assets/aem_6_3_forms_save.png)de entrada de número HTML5 e toque em aem_6_3_forms_save.
 1. Arraste três componentes da caixa de texto para o formulário adaptável. Coloque-os antes do componente de rodapé. Defina as seguintes propriedades para essas caixas de texto.:
@@ -110,7 +113,7 @@ Os componentes são blocos componentes de um formulário adaptável. O AEM Forms
  </tbody> 
 </table>
 
-1. Arraste um componente Caixa **** numérica antes do componente de rodapé. Abra as propriedades do componente, defina os valores listados na tabela abaixo, Toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Arraste um componente Caixa **numérica** antes do componente de rodapé. Abra as propriedades do componente, defina os valores listados na tabela abaixo, Toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propriedade | Valor |
    |---|---|
@@ -138,11 +141,11 @@ Os componentes são blocos componentes de um formulário adaptável. O AEM Forms
   </tr> 
   <tr> 
    <td>Título</td> 
-   <td>Prova de endereços aprovada pelo governo<br /> </td> 
+   <td>prova de endereços aprovada pelo governo<br /> </td> 
   </tr> 
   <tr> 
    <td>Nome do elemento</td> 
-   <td>customer_Address_Proof</td> 
+   <td>customer_Address_Prova</td> 
   </tr> 
   <tr> 
    <td>Campo obrigatório</td> 
@@ -165,7 +168,7 @@ Usando as etapas a seguir, é possível configurar a ação de envio por email e
 
    /content/help/en/experience-manager/6-4/sites-administering/notification.html
 
-1. Toque em Contêiner **de** formulário no navegador Conteúdo e toque em ![cmppr](assets/cmppr.png). O navegador de propriedades é aberto à esquerda.
+1. Toque em **Container** de formulário no navegador Conteúdo e toque em ![cmppr](assets/cmppr.png). O navegador de propriedades é aberto à esquerda.
 1. Vá até **Enviar** > **Enviar ação**. Selecione **Enviar email**. Especifique os seguintes valores e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propriedade | Valor |
@@ -173,19 +176,19 @@ Usando as etapas a seguir, é possível configurar a ação de envio por email e
    | De | `donotreply@weretail.com` |
    | Para | `${customer_Email}` |
    | Assunto | Confirmação: Você adicionou o endereço de envio no site We.Retail. |
-   | Modelo do e-mail | Oi `${customer_Name}`, o seguinte endereço é adicionado como endereço de entrega da sua conta: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Regardes, We.Retail |
+   | Modelo do e-mail | Oi `${customer_Name}`, o seguinte endereço é adicionado como endereço de entrega da sua conta: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Regards, We.Retail |
    | Incluir anexos | Ativado |
 
-   Seu formulário está pronto. Agora, você pode visualizar o formulário e testar a funcionalidade. Se você tiver usado o nome mencionado no tutorial e acessado o formulário na máquina que executa o servidor do AEM Forms, o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
+   Seu formulário está pronto. Agora, você pode pré-visualização o formulário e testar a funcionalidade. Se você tiver usado o nome mencionado no tutorial e acessado o formulário na máquina que executa o servidor AEM Forms, o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
 
-## Etapa 5: Visualizar e enviar o formulário adaptativo {#step-preview-and-submit-the-adaptive-form}
+## Etapa 5: Pré-visualização e envie o formulário adaptativo {#step-preview-and-submit-the-adaptive-form}
 
-Você pode usar a opção **** Visualizar para avaliar a aparência e o comportamento de um formulário. É possível enviar um formulário no modo de visualização e também verificar as validações aplicadas a um formulário. Por exemplo, se um erro for exibido quando um campo obrigatório for deixado em branco.
+É possível usar a opção **** Pré-visualização para avaliar a aparência e o comportamento de um formulário. É possível enviar um formulário no modo de pré-visualização e também verificar as validações aplicadas a um formulário. Por exemplo, se um erro for exibido quando um campo obrigatório for deixado em branco.
 
-Formulários adaptáveis também oferecem uma opção para emular a experiência de um formulário para vários dispositivos. Por exemplo, iPhone, iPad e Desktop. Você pode usar as opções **Visualizar** e **Emulador** de ![régua](assets/ruler.png) em conjunto para visualizar um formulário para dispositivos de tamanhos de tela diferentes.
+Formulários adaptáveis também oferecem uma opção para emular a experiência de um formulário para vários dispositivos. Por exemplo, iPhone, iPad e Desktop. É possível usar as opções de **Pré-visualização** e **Emulador** de ![régua](assets/ruler.png) em conjunto para pré-visualização de um formulário para dispositivos de tamanhos de tela diferentes.
 
-1. Toque na opção **Visualizar** no lado direito do editor de formulário. O formulário é aberto no modo de visualização. Se você tiver usado o nome mencionado no tutorial, o URL de visualização do formulário será [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
-1. Use a ![régua](assets/ruler.png) para exibir a aparência do formulário em vários dispositivos.
+1. Toque na opção **Pré-visualização** no lado direito do editor de formulários. O formulário é aberto no modo de pré-visualização. Se você tiver usado o nome mencionado no tutorial, o URL de pré-visualização do formulário será [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Use a ![régua](assets/ruler.png) para visualização da aparência do formulário em vários dispositivos.
 1. Preencha os campos do formulário e toque em **Enviar**. O formulário é enviado e você é redirecionado para a página **Agradecimentos** padrão. Você também pode especificar uma página de agradecimento personalizada. Para obter detalhes, consulte [Configuração da página](/help/forms/using/configuring-redirect-page.md)de redirecionamento.
 
-O formulário adaptável para adicionar um endereço está pronto. Se você tiver usado o nome mencionado no tutorial e acessado o formulário na máquina que executa o servidor do AEM Forms, o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
+O formulário adaptável para adicionar um endereço está pronto. Se você tiver usado o nome mencionado no tutorial e acessado o formulário na máquina que executa o servidor AEM Forms, o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
