@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 0%
 
 ---
 
@@ -20,11 +23,11 @@ A operação de download, como o nome indica, permite exportar formulários do r
 
 No AEM Forms, a operação de download é compatível com os seguintes tipos de ativos:
 
-* Modelos de formulário (formulários XFA)
-* Formulários PDF
+* Modelos de formulário (XFA Forms)
+* PDF forms
 * Documentos (arquivos PDF simples)
 
-O AEM Forms é compatível com o download desses tipos de formulário individualmente ou em uma pasta que contém um ou mais formulários suportados.
+A AEM Forms oferece suporte ao download desses tipos de formulário individualmente ou em uma pasta que contenha um ou mais formulários suportados.
 
 Além desses ativos, é possível baixar o `Resource` tipo de ativo se ele estiver presente em uma pasta. Essa funcionalidade é fornecida para permitir o download do recurso referenciado por um formulário XFA junto com o formulário.
 
@@ -42,7 +45,7 @@ Além desses ativos, é possível baixar o `Resource` tipo de ativo se ele estiv
 
 1. Na caixa de diálogo exibida, clique em **[!UICONTROL Download]**.
 
-   O AEM Forms gera um arquivo ZIP contendo o arquivo selecionado ou a pasta selecionada.
+   A AEM Forms gera um arquivo ZIP contendo o arquivo selecionado ou a pasta selecionada.
 
    Se você estiver baixando uma pasta, os ativos suportados dentro dela serão baixados em sua hierarquia existente.
 
