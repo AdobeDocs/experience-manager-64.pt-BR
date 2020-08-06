@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +71,7 @@ Identifique o modelo personalizado adicionando uma `page-template` propriedade a
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Certifique-se de **Salvar tudo** e replicar o código personalizado para todas as instâncias do AEM (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado no console).
+Certifique-se de **Salvar tudo** e replicar o código personalizado para todas as instâncias AEM (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado no console).
 
 A prática recomendada para replicar código personalizado é [criar um pacote](../../help/sites-administering/package-manager.md#creating-a-new-package) e implantá-lo em todas as instâncias.
 
@@ -80,15 +83,15 @@ Isso está disponível no console [Sites de](sites-console.md#exporting-the-site
 
 Observe que o UGC e o código personalizado não estão incluídos no pacote do site da comunidade.
 
-Para exportar o UGC, use a Ferramenta [de migração UGC do](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, uma ferramenta de migração de código aberto disponível no GitHub.
+Para exportar o UGC, use a Ferramenta [de migração UGC da](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, uma ferramenta de migração de código aberto disponível no GitHub.
 
 ## Excluindo um site da comunidade {#deleting-a-community-site}
 
-A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console Comunidades > Sites. Durante o desenvolvimento, se desejar excluir um site da comunidade e começar a ser iniciado, você pode usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
+A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console Comunidades > Sites. Durante o desenvolvimento, se desejar excluir um site da comunidade e atualizar o start, você poderá usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuários](#community-user-groups)
-* [Ativos](#enablement-assets)
+* [Assets](#enablement-assets)
 * [Registros do banco de dados](#database-records)
 
 ### ID exclusiva do site da comunidade {#community-unique-site-id}
@@ -99,7 +102,8 @@ Para identificar a ID de site exclusiva associada ao site da comunidade, use o C
 
 * Localizar o `allow<#>` nó com um `rep:principalName` neste formato `rep:principalName = *community-enable-nrh9h-members*`
 
-* A ID do site é o terceiro componente de `rep:principalName`Por exemplo, se `rep:principalName = community-enable-nrh9h-members`
+* A ID do site é o terceiro componente de `rep:principalName`Por exemplo, se 
+`rep:principalName = community-enable-nrh9h-members`
 
    * **nome** do site = *ativar*
    * **ID** do site = *nrh9h*
