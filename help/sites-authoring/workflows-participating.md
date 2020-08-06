@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 37c8b1bd-0e60-42d2-80ed-dece3f5c2342
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 80%
 
 ---
 
@@ -46,6 +49,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
       * usar as setas para a esquerda/direita para navegar pelas informações de status dos vários fluxos de trabalho.
       * clicar/tocar no número real para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e, em seguida, selecionar o fluxo de trabalho que deseja exibir na barra de status.
+
    ![wf-59](assets/wf-59.png)
 
    >[!NOTE]
