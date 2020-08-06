@@ -8,15 +8,18 @@ topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 1%
 
 ---
 
 
-# Usar metadados em uma notificação por email {#use-metadata-in-an-email-notification}
+# Usar metadados em uma notificação por email  {#use-metadata-in-an-email-notification}
 
 Usar metadados para preencher informações em uma notificação por email do fluxo de trabalho de formulários
 
-Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada para o usuário definido ou para cada membro do grupo definido. Uma notificação [por](/help/forms/using/use-custom-email-template-assign-task-step.md) email típica contém um link da tarefa atribuída e informações relacionadas à tarefa.
+Você pode usar a etapa Atribuir Tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada para o usuário definido ou para cada membro do grupo definido. Uma notificação [por](/help/forms/using/use-custom-email-template-assign-task-step.md) email típica contém um link da tarefa atribuída e informações relacionadas à tarefa.
 
 Você pode usar metadados em um modelo de email para preencher dinamicamente as informações em uma notificação por email. Por exemplo, o valor do título, a descrição, a data de vencimento, a prioridade, o fluxo de trabalho e a última data na notificação por email a seguir são selecionados dinamicamente no tempo de execução (quando uma notificação por email é gerada).
 
@@ -152,13 +155,13 @@ Um aplicativo AEM Forms fornece várias variáveis de metadados (pares de valore
 
 Você também pode usar metadados personalizados em uma notificação por email. Os metadados personalizados contêm informações além dos metadados gerados pelo sistema. Por exemplo, detalhes de política recuperados de um banco de dados. Você pode usar um pacote ECMAScript ou OSGi para adicionar metadados personalizados no repositório crx:
 
-### Usar o ECMAScript para adicionar metadados personalizados {#use-ecmascript-to-add-custom-metadata}
+### Usar o ECMAScript para adicionar metadados personalizados  {#use-ecmascript-to-add-custom-metadata}
 
 [O ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) é uma linguagem de script. É usado para aplicativos de servidor e scripts do cliente. Execute as seguintes etapas para usar o ECMAScript para adicionar metadados personalizados para um modelo de email:
 
 1. Faça logon no CRX DE com uma conta administrativa. O URL é `https://[server]:[port]/crx/de/index.jsp`
 
-1. Navegue até /apps/fd/dashboard/scripts/metadataScripts. Crie um arquivo com extensão .ecma. Por exemplo, usermetadata.ecma
+1. Navegue até /apps/fd/painel/scripts/metadataScripts. Crie um arquivo com a extensão .ecma. Por exemplo, usermetadata.ecma
 
    Se o caminho mencionado acima não existir, crie-o.
 
@@ -176,9 +179,9 @@ Você também pode usar metadados personalizados em uma notificação por email.
    }
    ```
 
-1. Clique em Salvar tudo. Agora, o script está disponível para seleção no modelo de fluxo de trabalho do AEM.
+1. Clique em Salvar tudo. Agora, o script está disponível para seleção AEM modelo de fluxo de trabalho.
 
-   ![atribui-metadata](assets/assigntask-metadata.png)
+   ![atribuir metadados-tarefa](assets/assigntask-metadata.png)
 
 1. (Opcional) Especifique o título do script:
 
@@ -191,13 +194,13 @@ Você também pode usar metadados personalizados em uma notificação por email.
       | Nome | jcr:title |
       |---|---|
       | Tipo | Sequência de caracteres |
-      | Valor | Especifique o título do script. Por exemplo, metadados personalizados para o detentor da política. O valor especificado é exibido na etapa de atribuição da tarefa. |
+      | Valor | Especifique o título do script. Por exemplo, metadados personalizados para o detentor da política. O valor especificado é exibido na etapa de atribuição de tarefa. |
 
 ### Usar um pacote OSGi e uma interface Java para adicionar metadados personalizados {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Você pode usar a interface Java WorkitemUserMetadataService para adicionar metadados personalizados para modelos de email. Você pode criar um pacote OSGi que usa a interface Java WorkitemUserMetadataService e implantá-lo no servidor de formulários AEM. Disponibiliza os metadados para seleção na etapa Atribuir tarefa.
+Você pode usar a interface Java WorkitemUserMetadataService para adicionar metadados personalizados para modelos de email. Você pode criar um pacote OSGi que usa a interface Java WorkitemUserMetadataService e implantá-lo no servidor AEM Forms. Disponibiliza os metadados para seleção na etapa Atribuir Tarefa.
 
-Para criar um pacote OSGi com interface Java, adicione arquivos jar do SDK [do cliente do](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms e jar jar [granite](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
+Para criar um pacote OSGi com interface Java, adicione arquivos jar e jar jar [granite do SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) do [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) AEM Forms Client como dependências externas ao projeto de pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
 1. Abra o Eclipse IDE. Navegue até Arquivo > Novo projeto.
 
@@ -251,6 +254,6 @@ Para criar um pacote OSGi com interface Java, adicione arquivos jar do SDK [do c
 
    `mvn clean install`
 
-1. Carregue o pacote em um servidor de formulários AEM. Você pode usar o Gerenciador de pacotes de AEM para importar o pacote para o servidor de formulários de AEM.
+1. Carregue o pacote em um servidor AEM Forms. Você pode usar AEM Gerenciador de pacotes para importar o pacote para o servidor AEM Forms.
 
-Depois que o pacote é importado, você pode selecionar os metadados na etapa Atribuir tarefa e usá-los como modelo de email.
+Depois que o pacote é importado, você pode selecionar os metadados na etapa Atribuir Tarefa e usá-los como modelo de email.
