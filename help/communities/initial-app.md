@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +31,7 @@ Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem 
 
 Neste exercício, todas as páginas são baseadas em um modelo simples.
 
-1. No painel explorador do CRXDE Lite
+1. No painel explorador de CRXDE Lite
 
    * select `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Criar > Criar modelo]**
@@ -40,6 +43,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
    * Descrição: `An SCF Sandbox template for play pages`
    * Tipo de recurso: `an-scf-sandbox/components/playpage`
    * Classificação: &lt;deixar como padrão>
+
    O Rótulo é usado para o nome do nó.
 
    O Tipo de recurso é exibido no nó jcr:content `playpage`da propriedade `sling:resourceType`. Ela identifica o componente (recurso) que renderiza o conteúdo quando solicitado por um navegador.
@@ -56,11 +60,11 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
    Para adicionar um caminho, clique no botão de adição `+` e digite `/content(/.&ast;)?` na caixa de texto exibida. Se estiver usando copiar/colar, verifique se não há espaços à esquerda ou à direita.
 
-   Observação:O valor da propriedade path permitida é uma expressão *regular.* As páginas de conteúdo com um caminho que corresponda à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as suas subpáginas.
+   Observação: O valor da propriedade path permitida é uma expressão *regular.* As páginas de conteúdo com um caminho que corresponda à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as suas subpáginas.
 
-   Quando um autor cria uma página abaixo `/content`, o `playpage`modelo &quot;Um modelo de página de caixa de proteção SCF&quot; aparece em uma lista de modelos disponíveis para uso.
+   Quando um autor cria uma página abaixo `/content`, o `playpage`modelo intitulado &quot;Um modelo de página de caixa de proteção SCF&quot; aparece em uma lista de modelos disponíveis para uso.
 
-   Depois que a página raiz é criada a partir do modelo, o acesso ao modelo pode ser restrito a este site modificando a propriedade para incluir o caminho raiz na expressão regular, isto é,
+   Depois que a página raiz é criada a partir do modelo, o acesso ao modelo pode ser restrito a este site modificando a propriedade para incluir o caminho raiz na expressão normal, isto é,
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -82,7 +86,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
 ### Criar o componente de renderização do modelo {#create-the-template-s-rendering-component}
 
-Crie o *componente* que define o conteúdo e renderiza quaisquer páginas criadas com base no modelo [de](#createthepagetemplate)página de reprodução.
+Crie o *componente* que define o conteúdo e renderiza todas as páginas criadas com base no modelo [de](#createthepagetemplate)página de reprodução.
 
 1. No CRXDE Lite, clique com o botão direito do mouse **`/apps/an-scf-sandbox/components`** e clique em **[!UICONTROL Criar > Componente]**.
 1. Ao definir o nome do nó (Rótulo) para a *página* de reprodução, o caminho para o componente é
@@ -93,11 +97,12 @@ Crie o *componente* que define o conteúdo e renderiza quaisquer páginas criada
 
    Na caixa de diálogo **[!UICONTROL Criar componente]** , digite os seguintes valores de propriedade:
 
-   * Rótulo: página **de reprodução**
-   * Título: Componente **de reprodução de caixa de proteção SCF**
+   * Rótulo: **playpage**
+   * Título: **Um componente de reprodução de caixa de proteção SCF**
    * Descrição: **Este é o componente que renderiza conteúdo para a página de Caixa de proteção de SCF.**
    * Supertipo: *&lt;deixar em branco>*
    * Grupo:
+
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Clique em **[!UICONTROL Avançar]** até que o painel Filhos **** permitidos da caixa de diálogo seja exibido
