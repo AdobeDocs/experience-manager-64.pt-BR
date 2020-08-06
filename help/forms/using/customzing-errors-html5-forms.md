@@ -9,6 +9,9 @@ topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ O artigo fornece as etapas para personalizar mensagens de erro de formulários H
 * exibir mensagens de erro para vários campos em qualquer momento.
 * exiba o erro independentemente de um campo estar selecionado ou não.
 
-## Personalização de mensagens de erro {#customizing-error-messages-nbsp}
+## Personalização de mensagens de erro  {#customizing-error-messages-nbsp}
 
 Antes de personalizar as mensagens de erro, baixe e extraia o pacote anexado (CustomErrorManager-1.0-SNAPSHOT.zip).
 
@@ -31,7 +34,7 @@ Depois de extrair o pacote, abra a pasta CustomErrorManager-1.0-SNAPSHOT. Ele co
 
 [Obter arquivo](assets/customerrormanager-1.0-snapshot.zip)
 
-### Personalização da posição das mensagens de erro {#customizing-the-position-of-error-messages-nbsp}
+### Personalização da posição das mensagens de erro  {#customizing-the-position-of-error-messages-nbsp}
 
 Para personalizar a posição da mensagem de erro, adicione a tag &lt;div> para cada campo de erro e aviso, posicione a tag &lt;div> à esquerda ou à direita e aplique estilos css na tag &lt;div>. Para ver as etapas detalhadas, consulte o procedimento listado abaixo:
 
@@ -77,7 +80,7 @@ Para personalizar a posição da mensagem de erro, adicione a tag &lt;div> para 
 1. Navegue até a `CustomErrorManager-1.0-SNAPSHOT` pasta e crie um arquivo de pastas jcr_root e META-INF. Renomeie o arquivo como CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Use o gerenciador de pacote para fazer upload e instalar o pacote.
 
-## Exibir mensagens de erro para vários campos {#display-error-messages-for-multiple-fields-nbsp}
+## Exibir mensagens de erro para vários campos  {#display-error-messages-for-multiple-fields-nbsp}
 
 Use o pacote anexado para exibir simultaneamente mensagens de erro para todos os campos. Para exibir uma única mensagem de erro, use o perfil padrão.
 
@@ -119,7 +122,7 @@ Use o pacote anexado para exibir simultaneamente mensagens de erro para todos os
 
 Os formulários html5 usam um perfil padrão: https://&lt;servidor>/content/xfaforms/profiles/default.html?contentRoot=&lt;localização xdp>&amp;template=&lt;nome do xdp>
 
-Para exibir um formulário com mensagens de erro personalizadas, renderize o formulário com o perfil de erro: https://&lt;servidor>/content/xfaforms/profiles/error.html?contentRoot=&lt;localização xdp>&amp;template=&lt;nome do xdp>
+Para visualização um formulário às mensagens de erro personalizadas, renderize o formulário com o perfil de erro: https://&lt;servidor>/content/xfaforms/profiles/error.html?contentRoot=&lt;localização xdp>&amp;template=&lt;nome do xdp>
 
 >[!NOTE]
 >
