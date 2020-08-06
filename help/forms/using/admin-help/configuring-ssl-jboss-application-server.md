@@ -26,7 +26,7 @@ Você pode executar keytool usando um único comando que inclui todas as informa
 
 Neste procedimento:
 
-* `[appserver root]` é o diretório inicial do servidor de aplicativos que executa formulários AEM.
+* `[appserver root]` é o diretório inicial do servidor de aplicativos que executa AEM formulários.
 * `[type]` é um nome de pasta que varia, dependendo do tipo de instalação executada.
 
 ## Criar uma credencial SSL {#create-an-ssl-credential}
@@ -141,12 +141,12 @@ Neste procedimento:
 
    * Para instalações chave na mão:
 
-      * No Painel de controle do Windows, clique em Ferramentas administrativas e em Serviços.
+      * No Painel de controle do Campaign do Windows, clique em Ferramentas administrativas e em Serviços.
       * Selecione JBoss para formulários Adobe Experience Manager.
       * Selecione Ação > Parar.
       * Aguarde até que o status do serviço seja exibido como interrompido.
       * Selecione Ação > Start.
-   * Para instalações JBoss pré-configuradas ou configuradas manualmente da Adobe:
+   * Para instalações JBoss pré-configuradas ou configuradas manualmente para Adobe:
 
       * Em um prompt de comando, navegue até *`[appserver root]`*/bin.
       * Pare o servidor inserindo o seguinte comando:
