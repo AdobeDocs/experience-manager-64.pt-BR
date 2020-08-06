@@ -1,6 +1,6 @@
 ---
 title: Biblioteca de transcodificação de imagens
-description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens da Adobe, uma solução de processamento de imagens que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
+description: Saiba como configurar e usar a Biblioteca principal de transcodificação de imagens do Adobe Imaging, uma solução que pode executar funções de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Biblioteca de transcodificação de imagens {#imaging-transcoding-library}
 
-A Biblioteca de transcodificação de imagens da Adobe é uma solução proprietária de processamento de imagens que pode executar as principais funções de manipulação de imagens, incluindo:
+A Imagem da Biblioteca de Transcodificação proprietária é uma solução de processamento de imagens que pode executar funções principais de manipulação de imagens, incluindo:
 
 * Codificação
 * Transcodificação (conversão de formatos suportados)
@@ -27,7 +27,7 @@ A Biblioteca de transcodificação de imagens fornece suporte a CMYK e suporte a
 Além de suportar uma grande variedade de formatos de arquivos e perfis, a Biblioteca de transcodificação de imagens tem vantagens significativas em relação a outras soluções de terceiros em termos de desempenho, escalabilidade e qualidade. Estes são alguns dos principais benefícios do uso da Biblioteca de transcodificação de imagens:
 
 * **Dimensiona com tamanho ou resolução** cada vez maiores: O dimensionamento é obtido principalmente pela capacidade patenteada da Biblioteca de transcodificação de imagens de redimensionar ao decodificar arquivos. Essa capacidade garante que o uso da memória em tempo de execução seja sempre ótimo e não seja uma função quadrática do aumento do tamanho do arquivo ou da resolução dos megapixels. A Biblioteca de transcodificação de imagens pode processar arquivos maiores e de alta resolução (contendo megapixels mais altos). Ferramentas de terceiros, como o ImageMagick, não conseguem lidar com arquivos grandes e falhas ao processar esses arquivos.
-* **Algoritmos** de compactação e redimensionamento de qualidade do Photoshop: Coerência com o padrão da indústria em termos de qualidade da amostragem decrescente (regular, nítida e automática, bicúbica) e qualidade de compressão. A Biblioteca de transcodificação de imagens avalia ainda mais o fator de qualidade da imagem de entrada e usa de forma inteligente as tabelas e configurações de qualidade ideais para a imagem de saída. Essa capacidade produz arquivos de tamanho ideal sem comprometer a qualidade visual.
+* **Algoritmos** de compactação e redimensionamento de qualidade Photoshop: Coerência com o padrão da indústria em termos de qualidade da amostragem decrescente (regular, nítida e automática, bicúbica) e qualidade de compressão. A Biblioteca de transcodificação de imagens avalia ainda mais o fator de qualidade da imagem de entrada e usa de forma inteligente as tabelas e configurações de qualidade ideais para a imagem de saída. Essa capacidade produz arquivos de tamanho ideal sem comprometer a qualidade visual.
 * **Alta throughput:** O tempo de resposta é menor e o throughput é consistentemente maior que o ImageMagick. Portanto, a Biblioteca de transcodificação de imagens deve diminuir o tempo de espera dos usuários e o custo de hospedagem.
 * **Dimensione melhor com carga simultânea:** A Biblioteca de transcodificação de imagens é executada de forma ideal em condições de carregamento simultâneas. Ele oferece alta throughput com desempenho otimizado da CPU, uso da memória e baixo tempo de resposta, o que ajuda a reduzir o custo da hospedagem.
 
@@ -95,7 +95,7 @@ Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas 
 
 1. Execute `ldconfig` o comando para criar os links e o cache necessários.
 
-1. Na conta usada para start do AEM, edite o arquivo `.bash_profile` . Adicione `LD_LIBRARY_PATH` adicionando o seguinte.
+1. Na conta usada para start de AEM, edite o arquivo `.bash_profile` . Adicione `LD_LIBRARY_PATH` adicionando o seguinte.
 
    ```shell
    LD_LIBRARY_PATH=.
