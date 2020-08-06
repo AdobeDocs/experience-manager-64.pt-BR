@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 99%
 
 ---
 
@@ -67,6 +70,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
    * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
 
       * Selecione **Editar lançamento**.
+
    As páginas de origem serão mostradas.
 
 1. Faça as alterações necessárias e confirme com **Salvar**.
@@ -87,6 +91,7 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
    * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
 
       * Selecione **Editar propriedades**.
+
    Os detalhes serão mostrados.
 
 1. Faça as alterações necessárias e confirme com **Salvar**.
