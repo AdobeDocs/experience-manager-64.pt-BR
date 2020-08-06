@@ -1,6 +1,6 @@
 ---
-title: Etapas genéricas para personalização da área de trabalho do AEM Forms
-seo-title: Etapas genéricas para personalização da área de trabalho do AEM Forms
+title: Etapas genéricas para personalização do espaço de trabalho AEM Forms
+seo-title: Etapas genéricas para personalização do espaço de trabalho AEM Forms
 description: Como começar a personalizar a interface do usuário da área de trabalho do AEM Forms.
 seo-description: Como começar a personalizar a interface do usuário da área de trabalho do AEM Forms.
 uuid: 555b5039-cd68-4090-8a8f-30b654474f55
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
 
-# Etapas genéricas para personalização da área de trabalho do AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
+# Etapas genéricas para personalização do espaço de trabalho AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 As etapas genéricas para executar qualquer personalização são:
 
-1. Faça logon no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Efetue login no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Crie uma pasta com o nome `ws`em `/apps`, se ela não existir. Clique em **[!UICONTROL Salvar tudo]**.
 1. Navegue até `/apps/ws`a guia **[!UICONTROL Controle de acesso]** e navegue até ela.
 1. Na lista do **[!UICONTROL Controle de acesso]** , clique em **[!UICONTROL +]** para adicionar uma nova entrada. Clique **[!UICONTROL +]** novamente.
