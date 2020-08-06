@@ -1,8 +1,8 @@
 ---
 title: Markdown
 seo-title: Markdown
-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você grave conteúdo facilmente.
-seo-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você grave conteúdo facilmente.
+description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
+seo-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 translation-type: tm+mt
 source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
 
 >[!CAUTION]
 >
->Algumas funcionalidades do fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
 Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmentos de conteúdo usa a sintaxe de *markdown* para permitir que você escreva conteúdo facilmente:
 
@@ -101,7 +104,7 @@ A sintaxe inclui:
 
 * Um ponto de exclamação: !;
 * seguido de um conjunto de colchetes, que contém o texto alternativo do atributo da imagem;
-* seguido por um conjunto de parênteses, contendo o URL ou o caminho para a imagem, e um atributo de título opcional entre aspas duplas ou simples.
+* seguido por um conjunto de parênteses, contendo o URL ou o caminho para a imagem, e um atributo de título opcional incluído entre duplos ou aspas simples.
 
 Uma imagem de estilo de referência tem a seguinte sintaxe:
 
@@ -145,7 +148,7 @@ Para criar uma lista não ordenada, use o &amp;ast; antes dos itens na lista. Po
 
     `* item in list`
 
-Para criar uma lista ordenada, adicione os números, seguidos de um ponto, antes de cada item da lista. Por exemplo:
+Para criar uma lista ordenada, adicione os números, seguidos de um ponto, antes de cada item na lista. Por exemplo:
 
     `1. First item in list.`
 
@@ -189,7 +192,7 @@ Blocos de código geralmente são usados para ilustrar o código-fonte. É poss�
 
 ## A barra invertida escapa {#backslash-escapes}
 
-Você pode usar escape de barra invertida para gerar caracteres literais com significado especial na formatação da sintaxe. Por exemplo, se você quiser circundar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em>), você pode usar barras invertidas antes dos asteriscos, como em:
+Você pode usar escape de barra invertida para gerar caracteres literais que têm um significado especial na formatação da sintaxe. Por exemplo, se você quiser circundar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em>), você pode usar barras invertidas antes dos asteriscos, como em:
 
     `\\*literal asterisks\\*`
 
