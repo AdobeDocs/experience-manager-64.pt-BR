@@ -172,7 +172,7 @@ A API do lado do servidor tem métodos localizados `title`relacionados:
    * createTagByTitle(String tagTitlePath, localidade local)
    * resolveByTitle(String tagTitlePath, localidade local)
 
-No AEM, o idioma pode ser obtido do idioma da página ou do idioma do usuário:
+Em AEM, o idioma pode ser obtido do idioma da página ou do idioma do usuário:
 
 * para recuperar o idioma da página em um JSP:
 
@@ -198,5 +198,5 @@ O novo idioma (finlandês) agora está disponível na caixa de diálogo de tags 
 
 >[!NOTE]
 >
->O novo idioma precisa ser um dos idiomas reconhecidos pelo AEM, ou seja, precisa estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.
+>A nova língua precisa ser uma das línguas reconhecidas AEM, ou seja, precisa estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.
 
