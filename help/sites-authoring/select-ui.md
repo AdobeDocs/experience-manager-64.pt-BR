@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 70%
 
 ---
 
@@ -29,14 +32,16 @@ Duas interfaces gráficas de usuário são fornecidas para isso. Elas podem ser 
 
 1. Interface do usuário habilitada para toque
 
-   * Esta é a interface do usuário AEM moderna e padrão.
+   * This is the modern, default AEM UI.
    * É predominantemente cinza, com uma interface limpa e plana.
    * Projetada para uso em dispositivos desktop e habilitados para toque, a aparência e a experiência de uso são iguais em todos os dispositivos, embora [ visualizar e selecionar recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) sejam um pouco diferentes (toques vs cliques).
 
       * Desktop:
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * Dispositivos tablet (ou desktop com menos de 1.024 pixels de largura):
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. Interface do usuário clássica
@@ -45,6 +50,7 @@ Duas interfaces gráficas de usuário são fornecidas para isso. Elas podem ser 
    * É predominantemente verde.
    * Ela foi projetada para uso em dispositivos de desktop.
    * A seguinte documentação se concentra na interface do usuário moderna. Para obter informações sobre a criação na interface do usuário clássica, consulte a [ documentação de criação para a interface do usuário clássica](/help/sites-classic-ui-authoring/classicui.md).
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## Alternando UIs
@@ -167,6 +173,7 @@ As configurações definidas por um usuário ou administrador de sistema podem s
 >
 >* Editar manualmente o URL - Um URL não padrão pode resultar em uma situação desconhecida e em falta de funcionalidade.
 >* Ter ambos os editores abertos ao mesmo tempo - Por exemplo, em janelas separadas.
+
 >
 
 
