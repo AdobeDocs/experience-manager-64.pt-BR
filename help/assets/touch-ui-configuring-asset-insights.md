@@ -1,16 +1,19 @@
 ---
 title: Configuração de Insights de Ativos
-description: Saiba como configurar os insights de ativos nos ativos AEM.
+description: Saiba como configurar o Asset Insights no AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 10%
 
 ---
 
 
 # Configuração de Insights de Ativos {#configuring-asset-insights}
 
-O Adobe Experience Manager (AEM) Assets obtém dados de uso em ativos AEM usados por sites de terceiros do Adobe Analytics. Para permitir que o Asset Insights recupere esses dados e gere insights, configure primeiro o recurso para integrar-se ao Adobe Analytics.
+O Adobe Experience Manager (AEM) Assets obtém dados de uso AEM ativos usados por sites de terceiros da Adobe Analytics. Para permitir que o Asset Insights recupere esses dados e gere insights, configure primeiro o recurso para integrar-se à Adobe Analytics.
 
 >[!NOTE]
 >
@@ -26,12 +29,12 @@ O Adobe Experience Manager (AEM) Assets obtém dados de uso em ativos AEM usados
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Clique/toque em **[!UICONTROL Autenticar]**.
-1. Depois que o AEM autenticar suas credenciais, na lista **[!UICONTROL Report Suite]** , escolha um conjunto de relatórios do Adobe Analytics de onde deseja que o Asset Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
-1. Depois que o AEM configurar seu conjunto de relatórios, clique/toque em **[!UICONTROL Concluído]**.
+1. Depois que AEM autenticar suas credenciais, na lista **[!UICONTROL Report Suite]** , escolha um conjunto de relatórios da Adobe Analytics de onde deseja que o Asset Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
+1. Depois de AEM configurar seu conjunto de relatórios, clique/toque em **[!UICONTROL Concluído]**.
 
 ## Rastreador de página {#page-tracker}
 
-Depois de configurar sua conta do Analytics, o código do rastreador de páginas é gerado para você. Para ativar o Assets Insights para rastrear ativos AEM usados em sites de terceiros, inclua o código do rastreador de página no código do site. Use o utilitário do rastreador de páginas nos ativos AEM para gerar o código do rastreador de páginas. Para obter mais informações sobre como incluir o código do rastreador de páginas em páginas da Web de terceiros, consulte [Uso do rastreador de páginas e Incorporar código em páginas](touch-ui-using-page-tracker.md)da Web.
+Depois de configurar sua conta do Analytics, o código do rastreador de páginas é gerado para você. Para permitir que o Assets Insights rastreie ativos AEM usados em sites de terceiros, inclua o código do rastreador de página no código do site. Use o utilitário do rastreador de páginas no AEM Assets para gerar o código do rastreador de páginas. Para obter mais informações sobre como incluir o código do Rastreador de páginas em páginas da Web de terceiros, consulte [Uso do Rastreador de páginas e Incorporar código em páginas](touch-ui-using-page-tracker.md)da Web.
 
 1. In AEM, click the **[!UICONTROL Tools > Assets]**.
 
