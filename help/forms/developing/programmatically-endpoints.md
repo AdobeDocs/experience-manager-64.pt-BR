@@ -28,14 +28,14 @@ O serviço Endpoint Registry fornece a capacidade de gerenciar programaticamente
 * SOAP
 * Pasta assistida
 * E-mail
-* (Obsoleto para formulários do AEM) Solução remota
+* (Obsoleto para formulários AEM) Remoção
 * Gerenciador de Tarefas
 
    >[!NOTE]
    >
-   >SOAP, EJB e (obsoleto para formulários AEM no JEE) Os pontos finais remotos são criados automaticamente para cada serviço ativado. Os pontos de extremidade SOAP e EJB habilitam SOAP e EJB para todas as operações de serviço.
+   >SOAP, EJB e (Obsoleto para formulários AEM no JEE) Os pontos finais remotos são criados automaticamente para cada serviço ativado. Os pontos de extremidade SOAP e EJB habilitam SOAP e EJB para todas as operações de serviço.
 
-   Um terminal Remoting permite que clientes Flex chamem operações no serviço AEM Forms ao qual o terminal é adicionado. Um destino Flex com o mesmo nome do ponto de extremidade é criado e os clientes Flex podem criar RemoteObjects que apontam para esse destino para chamar operações no serviço relevante.
+   Um terminal Remoting permite que os clientes Flex chamem operações no serviço AEM Forms ao qual o terminal é adicionado. É criado um destino Flex com o mesmo nome do ponto de extremidade e os clientes Flex podem criar RemoteObjects que apontam para esse destino para chamar operações no serviço relevante.
 
    Os pontos de extremidade Email, Gerenciador de Tarefas e Pasta assistida expõem apenas uma operação específica do serviço. A adição desses pontos finais requer uma segunda etapa de configuração para selecionar um método para chamar, definir parâmetros de configuração e especificar mapeamentos de parâmetros de entrada e saída.
 
@@ -55,7 +55,7 @@ O serviço Endpoint Registry fornece a capacidade de gerenciar programaticamente
 
 ## Adicionando pontos finais EJB {#adding-ejb-endpoints}
 
-Você pode adicionar programaticamente um terminal EJB a um serviço usando a API Java de formulários AEM. Ao adicionar um terminal EJB a um serviço, você está permitindo que um aplicativo cliente chame o serviço usando o modo EJB. Ou seja, ao definir as propriedades de conexão necessárias para chamar os formulários AEM, você pode selecionar o modo EJB. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
+Você pode adicionar programaticamente um terminal EJB a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal EJB a um serviço, você está permitindo que um aplicativo cliente chame o serviço usando o modo EJB. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, você pode selecionar o modo EJB. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
 
 >[!NOTE]
 >
@@ -81,12 +81,12 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Os seguintes arqu
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
-**Criar um objeto Cliente EndpointRegistry**
+**Criar um objeto de Cliente EndpointRegistry**
 
 Antes de poder adicionar programaticamente um terminal EJB, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -112,7 +112,7 @@ Depois de criar um novo terminal, é necessário ativá-lo. Depois de ativar o t
 
 [Adicionar um terminal EJB usando a API Java](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -152,13 +152,13 @@ Adicione um terminal EJB usando a API Java:
 
 [Início rápido: Adicionar um terminal EJB usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Adicionando pontos de extremidade SOAP {#adding-soap-endpoints}
 
-Você pode adicionar programaticamente um terminal SOAP a um serviço usando a API Java de formulários AEM. Ao adicionar um terminal SOAP, você permite que um aplicativo cliente chame o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar os formulários AEM, você pode selecionar o modo SOAP.
+Você pode adicionar programaticamente um terminal SOAP a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal SOAP, você permite que um aplicativo cliente chame o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, você pode selecionar o modo SOAP.
 
 >[!NOTE]
 >
@@ -186,12 +186,12 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, é necessário adicionar arquivos JAR se você usar o terminal SOAP para chamar o serviço. Para obter informações sobre arquivos JAR do AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, é necessário adicionar arquivos JAR se você usar o terminal SOAP para chamar o serviço. Para obter informações sobre arquivos AEM Forms JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca AEM Forms Java.
 
-**Criar um objeto de Cliente EndpointRegistry**
+**Criar um objeto Cliente EndpointRegistry**
 
 Para adicionar programaticamente um terminal SOAP a um serviço, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -217,7 +217,7 @@ Depois de criar um novo terminal, é necessário ativá-lo. Quando o terminal es
 
 [Adicionar um terminal SOAP usando a API Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -257,15 +257,15 @@ Adicione um terminal SOAP a um serviço usando a API Java:
 
 [Início rápido: Adicionar um terminal SOAP usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Adicionando pontos de extremidade de pasta monitorada {#adding-watched-folder-endpoints}
 
-Você pode adicionar programaticamente um terminal de Pasta assistida a um serviço usando a API Java de formulários AEM. Ao adicionar um terminal de Pasta assistida, você permite que os usuários coloquem um arquivo (como um arquivo PDF) em uma pasta. Quando o arquivo é colocado na pasta, o serviço configurado é então chamado e manipula o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada. Uma pasta assistida é configurada para ser digitalizada em um intervalo de taxa fixa ou com um cronograma de verificação, como todas as segundas, quartas e sextas-feiras ao meio-dia.
+Você pode adicionar programaticamente um terminal de Pasta assistida a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal de Pasta assistida, você permite que os usuários coloquem um arquivo (como um arquivo PDF) em uma pasta. Quando o arquivo é colocado na pasta, o serviço configurado é então chamado e manipula o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada. Uma pasta assistida é configurada para ser digitalizada em um intervalo de taxa fixa ou com um cronograma de verificação, como todas as segundas, quartas e sextas-feiras ao meio-dia.
 
-Para fins de adicionar programaticamente um ponto de extremidade de Pasta assistida a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*. (Consulte [Como entender os processos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)do AEM Forms.)
+Para fins de adicionar programaticamente um ponto de extremidade de Pasta assistida a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*. (Consulte [Como entender os processos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)da AEM Forms.)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -296,10 +296,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um objeto Cliente EndpointRegistry**
 
@@ -385,13 +385,13 @@ Depois de criar um terminal de Pasta assistida, é necessário ativá-lo. Quando
 
 [Adicionar um terminal de Pasta assistida usando a API Java](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Adicionar um terminal de Pasta assistida usando a API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Adicione um terminal de Pasta assistida usando a API Java de formulários AEM:
+Adicione um terminal de Pasta assistida usando a API Java da AEM Forms:
 
 1. Incluir arquivos de projeto.
 
@@ -457,7 +457,7 @@ Adicione um terminal de Pasta assistida usando a API Java de formulários AEM:
 
 [Início rápido: Adicionar um ponto de extremidade de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -496,9 +496,9 @@ O [QuickStart: A adição de um terminal de Pasta assistida usando a API](/help/
 
 ## Adicionando Pontos de Extremidade de Email {#adding-email-endpoints}
 
-Você pode adicionar programaticamente um terminal de email a um serviço usando a API Java de formulários AEM. Ao adicionar um terminal de email, você permite que os usuários enviem uma mensagem de email com um ou mais anexos de arquivo para uma conta de email especificada. Em seguida, a operação de configuração de serviço é chamada e manipula os arquivos. Depois que o serviço executa a operação especificada, ele envia uma mensagem de email para o remetente com os arquivos modificados como anexos de arquivo.
+Você pode adicionar programaticamente um terminal de email a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal de email, você permite que os usuários enviem uma mensagem de email com um ou mais anexos de arquivo para uma conta de email especificada. Em seguida, a operação de configuração de serviço é chamada e manipula os arquivos. Depois que o serviço executa a operação especificada, ele envia uma mensagem de email para o remetente com os arquivos modificados como anexos de arquivo.
 
-Para fins de adicionar programaticamente um ponto de extremidade de email a um serviço, considere o seguinte processo de vida curta chamado *MyApplication\EncryptDocument*. Para obter informações sobre processos de duração curta, consulte [Entendendo os processos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)do AEM Forms.
+Para fins de adicionar programaticamente um ponto de extremidade de email a um serviço, considere o seguinte processo de vida curta chamado *MyApplication\EncryptDocument*. Para obter informações sobre processos de duração curta, consulte [Entendendo os processos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -529,10 +529,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um objeto Cliente EndpointRegistry**
 
@@ -591,7 +591,7 @@ Ao criar um terminal de email, você deve definir valores de parâmetro de entra
 
 Para definir os valores de parâmetro de entrada necessários para um ponto de extremidade Email, especifique os seguintes valores:
 
-**Nome** do parâmetro de entrada: O nome do parâmetro de entrada. O nome de um valor de entrada é especificado no Workbench para um processo. Se o valor de entrada pertencer a uma operação de serviço (um serviço do Forms que não é um processo criado no Workbench), o nome de entrada será especificado no arquivo component.xml. Por exemplo, o nome do parâmetro de entrada para o processo introduzido nesta seção é `InDoc`.
+**Nome** do parâmetro de entrada: O nome do parâmetro de entrada. O nome de um valor de entrada é especificado no Workbench para um processo. Se o valor de entrada pertencer a uma operação de serviço (um serviço Forms que não é um processo criado no Workbench), o nome de entrada será especificado no arquivo component.xml. Por exemplo, o nome do parâmetro de entrada para o processo introduzido nesta seção é `InDoc`.
 
 **Tipo** de mapeamento: Usado para configurar os valores de entrada necessários para chamar a operação de serviço. Dois tipos de mapeamento são os seguintes:
 
@@ -630,7 +630,7 @@ Depois de criar um terminal de email, é necessário ativá-lo. Quando o termina
 
 [Adicionar um terminal de email usando a API Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -702,7 +702,7 @@ Adicione um terminal de email usando a API Java:
 
 [Início rápido: Adicionar um ponto de extremidade de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -750,9 +750,9 @@ O [QuickStart: Adicionar um terminal de email usando a API](/help/forms/developi
 
 >[!NOTE]
 >
->As APIs do LiveCycle Remoting foram substituídas para formulários AEM no JEE.
+>APIs de LiveCycle Remoting substituídas para formulários AEM em JEE.
 
-Você pode adicionar programaticamente um terminal Remoting a um serviço usando a API Java de formulários AEM. Ao adicionar um terminal Remoting, você está permitindo que um aplicativo Flex chame o serviço usando a remoção. (Consulte [Invocar formulários AEM usando (obsoleto para formulários AEM) Formulários AEM Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Você pode adicionar programaticamente um terminal Remoting a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal Remoting, você está permitindo que um aplicativo Flex chame o serviço usando a remoção. (Consulte [Invocando o AEM Forms usando (obsoleto para formulários AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Para fins de adicionar programaticamente um terminal Remoto a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*.
 
@@ -784,10 +784,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um objeto de Cliente EndpointRegistry**
 
@@ -809,13 +809,13 @@ Depois de definir os atributos de ponto de extremidade Remoto, você pode criar 
 
 **Ativar o ponto final**
 
-Depois de criar um novo terminal, é necessário ativá-lo. Quando um terminal Remoting está ativado, ele permite que um cliente Flex chame o serviço.
+Depois de criar um novo terminal, é necessário ativá-lo. Quando um terminal Remoting é ativado, ele permite que um cliente Flex chame o serviço.
 
 **Consulte também:**
 
 [Adicionar um terminal Remoto usando a API Java](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -855,13 +855,13 @@ Adicione um terminal Remoting usando a API Java:
 
 [Início rápido: Adicionar um terminal Remoting usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Adicionando pontos finais do TaskManager {#adding-taskmanager-endpoints}
 
-Você pode adicionar programaticamente um terminal do TaskManager a um serviço usando a API Java do AEM Forms. Ao adicionar um terminal do TaskManager a um serviço, você permite que um usuário do Workspace chame o serviço. Ou seja, um usuário que trabalha no Workspace pode chamar um processo que tem um terminal do TaskManager correspondente.
+Você pode adicionar programaticamente um terminal do TaskManager a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal do TaskManager a um serviço, você permite que um usuário do Workspace chame o serviço. Ou seja, um usuário que trabalha no Workspace pode chamar um processo que tem um terminal do TaskManager correspondente.
 
 >[!NOTE]
 >
@@ -886,10 +886,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um objeto Cliente EndpointRegistry**
 
@@ -926,7 +926,7 @@ Depois de criar um novo terminal, é necessário ativá-lo. Quando o terminal es
 
 [Adicionar um terminal do TaskManager usando a API Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -976,13 +976,13 @@ Adicione um terminal do TaskManager usando a API Java:
 
 [Início rápido: Adicionar um terminal do TaskManager usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Modificação de Pontos de Extremidade {#modifying-endpoints}
 
-Você pode modificar programaticamente um terminal existente usando a API Java de formulários AEM. Ao modificar um endpoint, você pode alterar o comportamento do endpoint. Considere, por exemplo, um endpoint de Pasta assistida que especifica uma pasta que é usada como a pasta assistida. Você pode modificar programaticamente os valores de configuração que pertencem ao ponto final da Pasta assistida, resultando em outra pasta funcionando como a pasta assistida. Para obter informações sobre os valores de configuração que pertencem a um endpoint de Pasta assistida, consulte [Adicionar pontos finais](programmatically-endpoints.md#adding-watched-folder-endpoints)de pasta monitorada.
+Você pode modificar programaticamente um terminal existente usando a API Java da AEM Forms. Ao modificar um endpoint, você pode alterar o comportamento do endpoint. Considere, por exemplo, um endpoint de Pasta assistida que especifica uma pasta que é usada como a pasta assistida. Você pode modificar programaticamente os valores de configuração que pertencem ao ponto final da Pasta assistida, resultando em outra pasta funcionando como a pasta assistida. Para obter informações sobre os valores de configuração que pertencem a um endpoint de Pasta assistida, consulte [Adicionar pontos finais](programmatically-endpoints.md#adding-watched-folder-endpoints)de pasta monitorada.
 
 Para demonstrar como modificar um terminal, esta seção modifica um terminal de Pasta assistida alterando a pasta que se comporta como a pasta assistida.
 
@@ -1007,10 +1007,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
 **Criar um objeto de Cliente EndpointRegistry**
 
@@ -1038,7 +1038,7 @@ Ao modificar um terminal, especifique novos valores de configuração. Por exemp
 
 [Modificação de um terminal usando a API Java](programmatically-endpoints.md#modifying-an-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1057,7 +1057,7 @@ Modifique um terminal usando a API Java:
 
 1. Recupere o terminal para modificá-lo.
 
-   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) pode acessar chamando o `EndpointRegistryClient` método do `getEndpoints` objeto e transmitindo um `PagingFilter` objeto que atue como filtro. Você pode passar um `(PagingFilter)null` valor para retornar todos os pontos de extremidade. Esse método retorna um `java.util.List` objeto no qual cada elemento é um `Endpoint` objeto. Para obter informações sobre um `PagingFilter` objeto, consulte Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) pode acessar chamando o `EndpointRegistryClient` método do `getEndpoints` objeto e transmitindo um `PagingFilter` objeto que atue como filtro. Você pode passar um `(PagingFilter)null` valor para retornar todos os pontos de extremidade. Esse método retorna um `java.util.List` objeto no qual cada elemento é um `Endpoint` objeto. Para obter informações sobre um `PagingFilter` objeto, consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Iterar pelo `java.util.List` objeto para determinar se ele tem pontos de extremidade. Se houver pontos de extremidade, cada elemento será uma `EndPoint` instância.
    * Determine o serviço que corresponde a um ponto final chamando o método do `EndPoint` objeto `getServiceId` . Esse método retorna um valor de string que especifica o nome do serviço.
    * Determine o tipo de terminal chamando o `EndPoint` método do `getConnectorId` objeto. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o endpoint for um endpoint de Pasta assistida, esse método retornará `WatchedFolder`.
@@ -1078,13 +1078,13 @@ Modifique um terminal usando a API Java:
 
 [Início rápido: Modificação de um terminal usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Remoção de pontos de extremidade {#removing-endpoints}
 
-Você pode remover programaticamente um terminal de um serviço usando a API Java de formulários AEM. Depois de remover um terminal, o serviço não pode ser chamado usando o método de invocação que o terminal ativou. Por exemplo, se você remover um terminal SOAP de um serviço, não será possível chamar o serviço usando o modo SOAP.
+Você pode remover programaticamente um terminal de um serviço usando a API Java da AEM Forms. Depois de remover um terminal, o serviço não pode ser chamado usando o método de invocação que o terminal ativou. Por exemplo, se você remover um terminal SOAP de um serviço, não será possível chamar o serviço usando o modo SOAP.
 
 Para demonstrar como remover um ponto de extremidade de um serviço, esta seção remove um ponto de extremidade EJB de um serviço chamado *EncryptDocument*.
 
@@ -1109,12 +1109,12 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
 
-**Criar um objeto de Cliente EndpointRegistry**
+**Criar um objeto Cliente EndpointRegistry**
 
 Para remover programaticamente um terminal, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -1132,7 +1132,7 @@ Depois de criar um novo terminal, é necessário ativá-lo. Quando o terminal es
 
 [Remoção de um terminal usando a API Java](programmatically-endpoints.md#removing-an-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1166,13 +1166,13 @@ Remova um terminal usando a API Java:
 
 [Início rápido: Remoção de um terminal usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Recuperando informações do conector do ponto de extremidade {#retrieving-endpoint-connector-information}
 
-Você pode recuperar programaticamente informações sobre conectores de ponto de extremidade usando a API de formulários do AEM. Um conector permite que um terminal chame um serviço usando vários métodos de invocação. Por exemplo, um conector de Pasta assistida permite que um terminal chame um serviço usando pastas monitoradas. Ao recuperar informações programaticamente sobre conectores de ponto de extremidade, você pode recuperar valores de configuração associados a um conector, como quais valores de configuração são obrigatórios e quais são opcionais.
+Você pode recuperar programaticamente informações sobre conectores de ponto de extremidade usando a API do AEM Forms. Um conector permite que um terminal chame um serviço usando vários métodos de invocação. Por exemplo, um conector de Pasta assistida permite que um terminal chame um serviço usando pastas monitoradas. Ao recuperar informações programaticamente sobre conectores de ponto de extremidade, você pode recuperar valores de configuração associados a um conector, como quais valores de configuração são obrigatórios e quais são opcionais.
 
 Para demonstrar como recuperar informações sobre conectores de ponto de extremidade, esta seção recupera informações sobre um conector de Pasta assistida. (Consulte [Adicionando Pontos de Extremidade](programmatically-endpoints.md#adding-watched-folder-endpoints)da Pasta Observada.)
 
@@ -1182,7 +1182,7 @@ Para demonstrar como recuperar informações sobre conectores de ponto de extrem
 
 >[!NOTE]
 >
->Este tópico usa a `ConnectorRegistryClient` API para recuperar informações sobre conectores de ponto de extremidade. (Consulte Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
+>Este tópico usa a `ConnectorRegistryClient` API para recuperar informações sobre conectores de ponto de extremidade. (Consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
 
 ### Resumo das etapas {#summary_of_steps-8}
 
@@ -1201,10 +1201,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, substitua adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Se a AEM Forms for implantada em um servidor de aplicativos J2EE compatível que não seja JBoss, substitua adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos ao servidor de aplicativos J2EE no qual a AEM Forms está implantada. Para obter informações sobre a localização de todos os arquivos AEM Forms JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca AEM Forms Java.
 
 **Criar um objeto ConnectorRegistry Client**
 
@@ -1229,7 +1229,7 @@ Depois de especificar o tipo de conector, você pode recuperar informações sob
 
 [Recuperar informações do conector do ponto de extremidade usando a API Java](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1261,6 +1261,6 @@ Recupere informações do conector do ponto de extremidade usando a API Java:
 
 [Início rápido: Recuperando informações do conector do ponto de extremidade usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
