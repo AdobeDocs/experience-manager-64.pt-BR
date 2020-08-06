@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +57,7 @@ Um site ou uma live copy se vincula a uma área que contém as atividades que pr
 >
 >* Quando você usa implantações ou cópias em tempo real, é necessário usar uma licença do MSM.
 >* Quando você usa a sincronização com o Adobe Target, é necessária uma licença do Adobe Target.
+
 >
 
 
@@ -238,7 +242,7 @@ Você pode querer suspender ou desconectar a herança do conteúdo direcionado. 
 
 A suspensão da live copy interrompe temporariamente a herança, mas, no futuro, você poderá restaurar a herança. A desconexão da live copy interrompe permanentemente a herança.
 
-Você suspende ou desconecta a herança do conteúdo direcionado restaurando-o em uma atividade. Se uma página ou site se vincula a uma área que seja uma Live Copy, você poderá exibir o status de herança de uma atividade.
+Você suspende ou desconecta a herança do conteúdo direcionado restaurando-o em uma atividade. Se uma página ou site se vincula a uma área que seja uma Live Copy, você pode visualização um status de herança de atividade.
 
 Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma herança suspensa é marcada em vermelho, e uma atividade criada localmente não tem ícone.
 
@@ -246,6 +250,7 @@ Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma
 >
 >* Apenas é possível suspender ou desconectar cópias em tempo real em uma atividade.
 >* Não é necessário suspender ou desconectar cópias em tempo real para estender uma atividade herdada. Você sempre pode criar **novas** experiências e ofertas locais para essa atividade. Se quiser modificar uma atividade existente, será necessário suspender a herança.
+
 >
 
 
@@ -260,6 +265,7 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
    1. Selecione um elemento da atividade, como o público-alvo. O AEM exibe automaticamente uma caixa de confirmação Suspender Live Copy. (É possível suspender a cópia ao vivo tocando ou clicando em qualquer elemento por todo o processo de Direcionamento.)
    1. Selecione **Suspender Live Copy** no menu suspenso da barra de ferramentas.
+
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
 1. Tap or click **Suspend** to suspend the activity. Atividades suspensas são marcadas em vermelho.
@@ -293,7 +299,7 @@ Para restaurar a herança do conteúdo direcionado em uma atividade:
 
 ## Exclusão de áreas {#deleting-areas}
 
-Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento para essa marca será automaticamente mapeado para a área mestre.
+Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento dessa marca será automaticamente mapeado para a área principal.
 
 Para excluir uma área:
 
