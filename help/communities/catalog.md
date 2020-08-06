@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7cd7921e-6438-450a-a676-9da3c4a5ced3
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Os componentes [ e `Enablement Assignments`](assignments.md) componentes encontr
 
 O `Enablement Catalog` componente permite que os membros da comunidade acessem um catálogo de recursos [de](resources.md)ativação. O uso de tags AEM é uma parte importante do gerenciamento da lista de recursos de ativação em um catálogo (consulte [Marcação de recursos](tag-resources.md)de ativação).
 
-No tutorial [Introdução ao AEM Communities para ativação](getting-started-enablement.md) , consulte a exibição de um membro de atribuições e catálogos na seção [Experiência do site](enablement-published-site.md) publicado.
+No tutorial [Introdução à AEM Communities para ativação](getting-started-enablement.md) , consulte a visualização de atribuições e catálogos de um membro na seção [Experiência no site](enablement-published-site.md) publicado.
 
 ## Informações adicionais {#additional-information}
 
