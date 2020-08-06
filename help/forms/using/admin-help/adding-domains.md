@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
    Se você selecionar LDAP, poderá usar o servidor LDAP especificado na configuração do diretório ou escolher outro servidor LDAP para autenticação. Se você escolher um servidor diferente, seus usuários deverão existir em ambos os servidores LDAP.
 
 1. Forneça quaisquer informações adicionais necessárias na página. (Consulte Configurações [de autenticação](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
-1. Adicione um diretório ou uma SPI (Service Provider Interface, Interface de Provedor de Serviços) personalizada. (Consulte [Adicionar diretórios ou SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)personalizados.)
+1. Adicione um diretório ou uma interface de Provedor de serviço personalizada (SPI). (Consulte [Adicionar diretórios ou SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)personalizados.)
 1. Clique em Concluir e em OK.
 
 Depois de criar um domínio corporativo, sincronize manualmente o diretório ou crie um acionador para executar uma sincronização antes que o Gerenciamento de usuários possa usá-lo. Em seguida, você pode configurar um agendamento de sincronização de diretório e executar a sincronização manual, conforme necessário. (Consulte [Sincronizando diretórios](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
@@ -56,19 +59,19 @@ Lembre-se das seguintes considerações ao escolher um nome de domínio e ID:
 ### Considerações gerais {#general-considerations}
 
 * Quando você estiver usando um provedor de banco de dados diferente de DB2, a ID de domínio poderá conter até 50 bytes. Se você estiver usando caracteres ASCII de byte único, o limite será de 50 caracteres. Se o identificador de domínio contiver caracteres multibyte, esse limite será reduzido. Por exemplo, se você criar um domínio cujo identificador contenha caracteres de 3 bytes, o limite será de 16 caracteres. Além disso, não é possível criar domínios que contenham caracteres de 4 bytes. Se você criar uma ID de domínio que exceda esse limite, os formulários AEM estarão em um estado instável. Para recuperar desse estado instável, consulte &quot; [Remover um domínio que contém caracteres](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)estendidos ou de vários bytes&quot; nesta página.
-* O número de domínios corporativos e domínios locais que podem ser criados nos formulários AEM depende da duração de cada IDs de domínio. Quando você adiciona um domínio corporativo ou híbrido, o Gerenciamento de usuários atualiza a string configInstance no nó AuthProviders do arquivo de configuração de formulários AEM (config.xml). A string configInstance contém uma lista separada por dois-pontos dos caminhos absolutos de todos os domínios associados ao provedor de autorização. Essa string tem um limite de tamanho de 8192 caracteres. Quando esse limite é atingido, não é possível criar domínios adicionais.
+* O número de domínios corporativos e domínios locais que podem ser criados em formulários AEM depende da duração de cada IDs de domínio. Quando você adiciona um domínio corporativo ou híbrido, o Gerenciamento de usuários atualiza a string configInstance no nó AuthProviders do arquivo de configuração de formulários AEM (config.xml). A string configInstance contém uma lista separada por dois-pontos dos caminhos absolutos de todos os domínios associados ao provedor de autorização. Essa string tem um limite de tamanho de 8192 caracteres. Quando esse limite é atingido, não é possível criar domínios adicionais.
 
 ### Considerações ao usar DB2 {#considerations-when-using-db2}
 
-Ao usar DB2 para o banco de dados de formulários do AEM, o comprimento máximo permitido da ID de domínio depende do tipo de caracteres usados:
+Ao usar DB2 para o banco de dados de formulários AEM, o comprimento máximo permitido da ID de domínio depende do tipo de caracteres usados:
 
 * 100 byte único (ASCII) (por exemplo, caracteres usados em inglês, francês ou alemão)
-* 50 bytes duplos (por exemplo, caracteres usados em idiomas chinês, japonês ou coreano)
+* 50 bytes-duplo (por exemplo, caracteres usados em idiomas chinês, japonês ou coreano)
 * 25 caracteres de quatro bytes (por exemplo, caracteres usados no idioma chinês tradicional)
 
 ### Considerações ao usar o MySQL {#considerations-when-using-mysql}
 
-Ao usar o MySQL como seu banco de dados de formulários do AEM, as seguintes limitações se aplicam:
+Ao usar o MySQL como banco de dados de formulários AEM, as seguintes limitações se aplicam:
 
 * Use somente caracteres de byte único (ASCII) para a ID do domínio e o nome do domínio. Se você usar caracteres ASCII estendidos, os formulários AEM estarão em um estado instável e poderão gerar uma exceção se você tentar excluir o domínio. Para recuperar desse estado instável, consulte o tópico &quot; [Remover um domínio que contém caracteres](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)estendidos ou de vários bytes&quot; nesta página.
 * Não é possível criar dois domínios com o mesmo nome, mas diferentes em caso de erro. Por exemplo, tentar criar um domínio chamado *Adobe* quando um domínio chamado *adobe* já existe resulta em um erro.
@@ -83,5 +86,5 @@ Ao usar o MySQL como seu banco de dados de formulários do AEM, as seguintes lim
    * Selecione `*` de edcprincipaldomainentity.
    * Localize o nome do domínio que contém caracteres estendidos ou multibytes e defina seu status como OBSOLETE.
 
-1. Importe o arquivo de configuração atualizado, conforme descrito em [Importar e exportar o arquivo](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)de configuração.
+1. Importe o arquivo de configuração atualizado, conforme descrito em [Importando e exportando o arquivo](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)de configuração.
 
