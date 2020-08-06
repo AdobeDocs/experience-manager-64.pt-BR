@@ -26,7 +26,7 @@ O SOAP (Java API Quick Start) está disponível para o serviço de Credenciais.
 
 [Start rápido (modo SOAP): Excluindo credenciais usando a API Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
