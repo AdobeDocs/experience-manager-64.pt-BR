@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 90%
 
 ---
 
@@ -44,6 +47,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 >
 >* [Promover um lançamento aninhado](#promoting-a-nested-launch) quando há mais de um lançamento na estrutura.
 >* [Lançamentos - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automática.
+
 >
 
 
@@ -71,6 +75,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
    * **Divulgar as páginas modificadas**
    * **Divulgar a página atual**
    * **Divulgar página atual e subpáginas**
+
    Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
    ![chlimage_1](assets/chlimage_1.png)
@@ -117,6 +122,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
       * **Divulgar as páginas modificadas**
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. Selecione **Próximo**.
