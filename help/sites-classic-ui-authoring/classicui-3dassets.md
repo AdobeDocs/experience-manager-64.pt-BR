@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c601a44a-6604-4cc2-b35a-60d2c5a950e1
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 88%
 
 ---
 
@@ -25,5 +28,5 @@ Consulte também [Instalação e configuração do AEM 3D](/help/assets/install-
 
 >[!NOTE]
 >
->O AEM 3D está disponível somente na interface do usuário de toque do AEM, não na interface clássica. Consulte [Trabalhar com ativos 3D](/help/assets/assets-3d.md) na documentação de criação padrão para obter detalhes completos.
+>AEM 3D está disponível somente na interface de usuário de toque AEM, não na interface de usuário clássica. Consulte [Trabalhar com ativos 3D](/help/assets/assets-3d.md) na documentação de criação padrão para obter detalhes completos.
 
