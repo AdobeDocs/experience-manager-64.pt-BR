@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +38,7 @@ Se o portal tiver o nome do modelo Carta à mão, o URL poderá ser\
 
 >[!NOTE]
 >
->Chamar dessa forma não é seguro, pois os parâmetros necessários são passados como uma solicitação GET, expondo o mesmo (claramente visível) no URL.
+>Chamar dessa forma não é seguro, pois os parâmetros necessários são passados como uma solicitação de GET, expondo o mesmo (claramente visível) no URL.
 
 >[!NOTE]
 >
@@ -43,7 +46,7 @@ Se o portal tiver o nome do modelo Carta à mão, o URL poderá ser\
 
 ## Invocação em linha baseada em dados {#inline-data-based-invocation}
 
-Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente acessar o URL em `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, enviando os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora você pode passar os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData), que não era possível/ideal na abordagem anterior.
+Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente acessar o URL em `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, enviando os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação de POST (ocultando-os do usuário final). Isso também significa que agora você pode passar os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData), que não era possível/ideal na abordagem anterior.
 
 ### Parâmetros para especificar a carta {#parameters-for-specifying-letter}
 
@@ -62,7 +65,7 @@ Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode
   <tr>
    <td>cmLetterName</td> 
    <td>Sequência de caracteres</td> 
-   <td><p>O identificador do modelo de carta. </p> <p>Se houver várias letras CM com o mesmo nome em um servidor, o uso do parâmetro cmLetterName no URL emite um erro "Várias letras existem com o nome". Nesse caso, use o parâmetro cmLetterId no URL em vez de cmLetterName.</p> </td> 
+   <td><p>O identificador do modelo de carta. </p> <p>Se houver várias letras CM com o mesmo nome em um servidor, o uso do parâmetro cmLetterName no URL gerará um erro "Várias letras existem com o nome". Nesse caso, use o parâmetro cmLetterId no URL em vez de cmLetterName.</p> </td> 
   </tr>
   <tr>
    <td>cmLetterId</td> 
@@ -115,7 +118,7 @@ A ordem dos parâmetros na tabela especifica a preferência dos parâmetros usad
   <tr>
    <td>cmPreview<br /> </td> 
    <td>Booleano</td> 
-   <td>Verdadeiro para abrir a letra no modo de visualização<br /> </td> 
+   <td>Verdadeiro para abrir a letra no modo de pré-visualização<br /> </td> 
   </tr>
   <tr>
    <td>Aleatório</td> 
