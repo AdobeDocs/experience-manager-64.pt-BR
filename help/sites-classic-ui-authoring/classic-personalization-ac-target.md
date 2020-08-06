@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 72%
 
 ---
 
@@ -44,7 +47,7 @@ Para criar segmentos:
 Para criar uma marca:
 
 1. Em **Sites**, navegue até a pasta **Campanhas** (por exemplo, em We.Retail).
-1. Clique em **Criar página **e insira um título para a página, por exemplo Marca We.Retail e selecione o **modelo da Marca **s.
+1. Clique em **Criar página **e insira um título para a página, por exemplo, Marca We.Retail e selecione o **modelo da Marca **s.
 
 ### Criando uma campanha {#creating-a-campaign}
 
@@ -68,7 +71,7 @@ Para criar experiências para segmentos:
 
 Depois de criar segmentos, uma marca, uma campanha e uma experiência, você pode criar um informativo com conteúdo direcionado. Depois de criar a experiência, você a vincula aos seus segmentos.
 
-Você pode criar o boletim informativo com conteúdo direcionado na interface habilitada para toque e clássica. Este documento descreve o procedimento para a interface habilitada para toque.
+Você pode criar o boletim informativo com conteúdo direcionado na interface do usuário clássica e habilitada para toque. Este documento descreve o procedimento para a interface habilitada para toque.
 
 Para criar um informativo com conteúdo direcionado:
 
