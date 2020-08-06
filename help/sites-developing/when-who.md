@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Vários papéis podem ser envolvidos em testes e em várias etapas do desenvolvi
   <tr> 
    <td>Equipe de controle de qualidade</td> 
    <td><p>Você precisará de uma Equipe de controle de qualidade (do tamanho apropriado) para testes funcionais e de desempenho.</p> <p>Estes são testadores neutros e dedicados - uma regra de ouro do software afirma sempre que um desenvolvedor nunca deve testar o seu próprio trabalho.</p> <p>Os membros dessa equipe podem ser retirados da equipe do projeto Day, do parceiro e/ou da equipe do cliente.</p> </td> 
-   <td><p>A primeira libertação de função deve ser disponibilizada aos testadores (logo que seja realisticamente possível). Embora uma versão provisória antecipada possa gerar muitos erros, ela pode fornecer feedback antecipado sobre problemas críticos.</p> </td> 
+   <td><p>A primeira libertação de função deve ser disponibilizada aos testadores (logo que seja realisticamente possível). Embora uma versão preliminar provisória possa gerar muitos erros, ela pode fornecer feedback antecipado sobre problemas críticos.</p> </td> 
   </tr> 
   <tr> 
    <td>Equipe de teste do cliente</td> 
