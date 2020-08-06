@@ -4,17 +4,20 @@ description: Este artigo descreve como importar e exportar metadados em massa.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 9%
 
 ---
 
 
 # Importação e exportação de metadados em massa {#bulk-metadata-import-and-export}
 
-O AEM Assets permite importar metadados de ativos em massa usando um arquivo CSV. É possível fazer atualizações em massa para os ativos carregados recentemente ou os ativos existentes importando um arquivo CSV. Você também pode assimilar metadados de ativos em massa de sistemas de terceiros em formato CSV.
+A AEM Assets permite importar metadados de ativos em massa usando um arquivo CSV. É possível fazer atualizações em massa para os ativos carregados recentemente ou os ativos existentes importando um arquivo CSV. Você também pode assimilar metadados de ativos em massa de sistemas de terceiros em formato CSV.
 
 ## Importar metadados {#import-metadata}
 
-A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode exigir muitos recursos devido à atividade de write-back de XMP se o sinalizador de fluxo de trabalho estiver marcado. Planeje tal importação durante o uso de servidor simplificado para evitar o impacto no desempenho de outros usuários.
+A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode exigir muitos recursos devido à atividade de gravação XMP caso o sinalizador de fluxo de trabalho esteja marcado. Planeje tal importação durante o uso de servidor simplificado para evitar o impacto no desempenho de outros usuários.
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ Alguns casos de uso para exportar metadados em massa são:
 * Teste ou audite os metadados para verificar a conformidade.
 * Externalize os metadados para localização separada.
 
-É possível exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, o AEM percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
+É possível exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, AEM percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
 
 Para exportar metadados de vários ativos em massa, siga estas etapas:
 
