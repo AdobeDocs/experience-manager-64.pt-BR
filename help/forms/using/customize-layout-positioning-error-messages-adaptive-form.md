@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Com o AEM Forms, agora é possível criar um tema e aplicá-lo ao formulário. O
 Crie um tema usando o Editor de Temas para personalizar o layout de todos os campos do formulário. Depois de criar um tema, execute as seguintes etapas para aplicá-lo a um formulário:
 
 1. Abra o formulário no modo de edição.
-1. No modo de edição, selecione um componente, em seguida, toque em nível ![de](assets/field-level.png) campo > Contêiner **de formulário** adaptável e, em seguida, toque em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente, em seguida, toque em nível ![de](assets/field-level.png) campo > Container **de formulário** adaptável e, em seguida, toque em ![cmppr](assets/cmppr.png).
 1. Na barra lateral, em Tema de formulário adaptável, selecione o tema que você criou usando o Editor de temas.
 
 ## Criar um layout de campo personalizado {#create-a-custom-field-layout}
@@ -57,7 +60,7 @@ Crie um tema usando o Editor de Temas para personalizar o layout de todos os cam
 
 1. Para adicionar novos estilos e comportamento, crie uma biblioteca de cliente no nó /etc.
 
-   Por exemplo, no local /etc/af-field-layout-clientlib, crie o nó client-library. Adicione a propriedade category com o valor af.field.errorOnRight e o arquivo style.less com o seguinte código:
+   Por exemplo, no local /etc/af-field-layout-clientlib, crie o nó client-library. Adicione a propriedade categoria com o valor af.field.errorOnRight e o arquivo style.less com o seguinte código:
 
    ```css
    .widgetErrorWrapper {
