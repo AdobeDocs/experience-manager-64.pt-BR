@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 74%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->A Adobe não pretende aprimorar ainda mais esse recurso (Gerenciando Clientes Potenciais e Listas).\
->A recomendação é aproveitar o [Adobe Campaign e sua integração](/help/sites-administering/campaign.md)com o AEM.
+>O Adobe não pretende melhorar ainda mais essa capacidade (Gerenciando Clientes Potenciais e Listas).\
+>A recomendação é aproveitar a [Adobe Campaign e sua integração](/help/sites-administering/campaign.md)AEM.
 
 Users can be asked to subscribe to **Email Service Provider&#39;s** mailing lists with the help of the **Form** component used on an AEM web page. Para preparar uma página do AEM com um formulário de inscrição para assinatura de listas de distribuição do seu serviço de email, você deve aplicar a configuração de serviço correspondente à página do AEM que o possível assinante visitará.
 
