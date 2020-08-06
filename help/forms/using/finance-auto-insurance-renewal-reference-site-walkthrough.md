@@ -9,6 +9,9 @@ topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
 source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
@@ -17,15 +20,15 @@ source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
 
 ## Pré-requisitos {#pre-requisites}
 
-Configure o site de referência conforme descrito em [Configuração e configure o Site](/help/forms/using/setup-reference-sites.md)de referência de formulários do AEM 6.4.
+Configure o site de referência conforme descrito em [Configuração e configure AEM 6.4 Site](/help/forms/using/setup-reference-sites.md)de referência do Forms.
 
-## Cenário do Site de Referência do We.Finance {#we-finance-reference-site-scenario}
+## Cenário do Site de Referência do We.Finance  {#we-finance-reference-site-scenario}
 
-O site We.Finance é um site de serviços financeiros projetado para ajudar você a aprender os recursos de comunicação interativa do AEM Forms.
+We.Finance site é um site de serviços financeiros projetado para ajudá-lo a conhecer os recursos interativos de comunicação da AEM Forms.
 
-Leia a apresentação detalhada do caso de uso do We.Finance Auto Insurance que mostra como o AEM formulários e sua integração com o Microsoft Dynamics ajudam a personalizar a experiência do cliente em uma empresa de serviços financeiros. A apresentação interativa foi projetada para facilitar a implementação de transações digitais complexas e a comunicação do cliente em uma empresa financeira.
+Leia a apresentação detalhada do caso de uso do We.Finance Auto Insurance que mostra como os formulários AEM e sua integração com o Microsoft Dynamics ajudam a personalizar a experiência do cliente em uma empresa de serviço financeiro. A apresentação interativa foi projetada para facilitar a implementação de transações digitais complexas e a comunicação do cliente em uma empresa financeira.
 
-**A viagem começa com o caso de uso:**
+**A viagem start com o caso de utilização:**
 
 Sarah Rose é uma cliente existente da We.Finance e comprou uma apólice de seguro de automóveis. Agora é a hora do ano para renovar sua apólice de seguro. Gloria Rios, Agente de Seguros, We.Finance envia um lembrete para Sarah sobre sua renovação de apólice. Sarah segue as instruções fornecidas no email e conclui com êxito o processo.
 
@@ -38,7 +41,7 @@ O cenário do aplicativo We.Finance AutoInsurance é uma narração visual para 
 
 ### Gloria envia uma comunicação de renovação da apólice de seguro do We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria entra na instância do AEM, clica em Renovação **automática de seguro e,** em seguida, clica em **Abrir interface do usuário do agente.** O clique pré-preenche o documento de seguro com detalhes da apólice da Sarah Rose. Gloria clica **em Enviar** e uma mensagem é exibida na tela &quot;Enviar iniciado&quot; e em alguns segundos &quot;Enviado com êxito&quot;.
+Gloria entra em AEM instância, clica em Renovação **automática de seguro e,** em seguida, clica em **Abrir interface do usuário do agente.** O clique pré-preenche o documento com detalhes da apólice da Sarah Rose. Gloria clica **em Enviar** e uma mensagem é exibida na tela &quot;Enviar iniciado&quot; e em alguns segundos &quot;Enviado com êxito&quot;.
 
 Sarah recebe um email com o assunto &quot;Sua renovação do seguro automático&quot;.
 
@@ -46,7 +49,7 @@ Sarah recebe um email com o assunto &quot;Sua renovação do seguro automático&
 
 #### Veja você mesmo {#see-it-yourself}
 
-Acesse **Adobe Experience Manager** > **Formulários** > **Formulários e documentos** > **We.Finance** > **Auto Insurance**. Selecione a comunicação interativa Renovação **de seguro** automático e clique em **Abrir interface do usuário** do agente. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para receber o email com o documento de política anexado e clique em Enviar.
+Vá para **Adobe Experience Manager** > **Forms** > **Forms e Documentos** > **We.Finance** > **Auto Insurance**. Selecione a comunicação interativa Renovação **de seguro** automático e clique em **Abrir interface do usuário** do agente. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para receber o email com o documento de política anexado e clique em Enviar.
 
 Você pode acessar e revisar a comunicação interativa Renovação automática de seguro diretamente de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
@@ -60,7 +63,7 @@ Sarah clica em **Renove Now (Renovar agora** ) e é direcionada para a versão d
 
 #### Como funciona {#how-it-works}
 
-A saída da Web e da impressão da carta de Seguro Automático são criadas usando os recursos multicanal das Comunicações Interativas.
+A saída da Web e da impressão da carta de Seguro Automático são criadas usando os recursos de vários canais das Comunicações Interativas.
 
 O botão Renovar agora no email está vinculado ao aplicativo Renovação de seguro automático, que é uma comunicação interativa em uma instância de publicação.
 
@@ -100,6 +103,6 @@ Quando Sarah preenche os detalhes do cartão de crédito e clica em Enviar, o pa
 
 #### Veja você mesmo {#see-it-yourself-3}
 
-Você pode exibir a mensagem de confirmação depois de clicar em Efetuar pagamento em
+Você pode visualização a mensagem de confirmação depois de clicar em Efetuar pagamento em
 
 `https://[authorServer]:[authorPort]/content/forms/af/we-finance/credit-card/ccbillpayment/jcr:content/guideContainer.guideThankYouPage.html?owner=admin&status=Submitted`
