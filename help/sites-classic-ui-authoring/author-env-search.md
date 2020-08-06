@@ -1,6 +1,6 @@
 ---
-title: 'Pesquisar '
-seo-title: 'Pesquisar '
+title: 'Pesquisar  '
+seo-title: 'Pesquisar  '
 description: O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
 seo-description: O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
 uuid: b50c8144-1993-441d-8303-fcb6b0f24376
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 85%
 
 ---
 
@@ -42,11 +45,13 @@ O painel de pesquisa permite pesquisar em todas as páginas do site. Ele contém
 >
 >* [Curingas](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operadores booleanos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [Expressões regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Agrupamento de campo](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Promover](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
+
 >
 
 
@@ -75,6 +80,7 @@ No console **Sites** uma opção de menu **Localizar e substituir** permite que 
    * define o termo que deve substituí-lo
    * indica se a pesquisa deve diferenciar maiúsculas e minúsculas
    * indica se apenas palavras inteiras devem ser encontradas (caso contrário, subsequências também serão encontradas)
+
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
