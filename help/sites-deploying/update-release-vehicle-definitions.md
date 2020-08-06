@@ -1,8 +1,8 @@
 ---
 title: Atualizar Definições do Veículo de Liberação
 seo-title: Atualizar Definições do Veículo de Liberação
-description: Este artigo detalha os vários tipos de versões do AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
-seo-description: Este artigo detalha os vários tipos de versões do AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
+description: Este artigo detalha os vários tipos de versões de AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
+seo-description: Este artigo detalha os vários tipos de versões de AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
 uuid: 388fb6f5-0249-41e2-a460-1bb4cd0f8494
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
 source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
+workflow-type: tm+mt
+source-wordcount: '998'
+ht-degree: 3%
 
 ---
 
 
-# Definições do veículo de lançamento do AEM Update {#update-release-vehicle-definitions}
+# AEM Atualizar Definições do Veículo de Liberação {#update-release-vehicle-definitions}
 
-Este documento inclui detalhes sobre os vários tipos de versões do Adobe Experience Manager (AEM), incluindo versões completas, pacotes de recursos e pacotes de serviços que a Adobe fornece aos clientes.
+Este documento inclui detalhes sobre os vários tipos de versões do Adobe Experience Manager (AEM), incluindo versões completas, pacotes de recursos e pacotes de serviços que o Adobe fornece aos seus clientes.
 
 ## Versão completa {#full-release}
 
@@ -65,7 +68,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td>
     <ul> 
      <li>Fornecido como instalador de produto independente</li> 
-     <li>Disponível no site de licenciamento e no site de licenciamento de serviços gerenciados</li> 
+     <li>Disponível no site de licenciamento e no site de licenciamento da Managed Services</li> 
      <li>Pode exigir migração do repositório de conteúdo</li> 
     </ul> </td> 
   </tr>
@@ -146,7 +149,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td><strong>Definição</strong></td> 
    <td>
     <ul> 
-     <li>Modelo único de entrega de correções de liberação</li> 
+     <li>Modelo de delivery único para liberação de correções</li> 
      <li>Pacote de conteúdo do agregador contendo o pacote de conteúdo de componentes individuais</li> 
      <li>Os CFPs são sobrepostos de hot fixes e nenhum aprimoramento faz parte dele.</li> 
     </ul> </td> 
@@ -180,7 +183,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
   </tr>
   <tr>
    <td><strong>Nível de teste</strong></td> 
-   <td>QA validado no nível de integração e teste de regressão</td> 
+   <td>Garantia de qualidade validada no nível de integração e teste de regressão</td> 
   </tr>
  </tbody>
 </table>
@@ -222,7 +225,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
   </tr>
   <tr>
    <td><strong>Nível de teste</strong></td> 
-   <td><p>Avaliações de qualidade</p> </td> 
+   <td><p>Validado pelo controle de qualidade</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -245,7 +248,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
   </tr>
   <tr>
    <td><strong>Documentação</strong></td> 
-   <td>As notas de versão dos hotfixes públicos estão disponíveis somente com base na solicitação do cliente por meio do portal de suporte do AEM.</td> 
+   <td>As notas de versão dos hotfixes públicos só estão disponíveis com base na solicitação do cliente por meio do Portal de suporte AEM.</td> 
   </tr>
   <tr>
    <td><strong>Cadência</strong></td> 
@@ -258,7 +261,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
      <li>Entregue como um pacote</li> 
      <li>Disponível no Compartilhamento de pacotes</li> 
      <li>Dependendo do service pack mais recente lançado</li> 
-     <li>A maioria dos hot fixes são independentes, a menos que especificado. Pode ser instalado em qualquer ordem. Pode ser verificado na guia Detalhes do compartilhamento de pacotes do elemento Dependências.</li> 
+     <li>A maioria dos hot fixes são independentes, a menos que especificado. Pode ser instalado em qualquer ordem. Pode ser verificado por meio da guia Detalhes do compartilhamento de pacotes do elemento Dependências.</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -266,7 +269,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td>
     <ul> 
      <li>Validado pelo Atendimento ao cliente</li> 
-     <li>Os hot fixes do AEM não se beneficiam do mesmo nível de garantia de qualidade que os service packs ou as versões de produtos. Portanto, eles devem ser validados primeiro em um ambiente de preparo como parte dos processos de implantação de qualidade.</li> 
+     <li>AEM hot fixes não se beneficiam do mesmo nível de garantia de qualidade que os service packs ou as versões de produtos. Portanto, eles devem primeiro ser validados em um ambiente de preparo como parte dos processos de implantação de qualidade.</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -282,7 +285,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
   </tr>
   <tr>
    <td><strong>Nomeação</strong></td> 
-   <td>overlay-&lt;ID do ticket&gt;</td> 
+   <td>overlay-&lt;ID do tíquete&gt;</td> 
   </tr>
   <tr>
    <td><strong>Inclusões</strong></td> 
@@ -300,7 +303,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td><strong>Disponibilidade e instalação</strong></td> 
    <td>
     <ul> 
-     <li>Entregue como pacote pelo Atendimento ao cliente do AEM</li> 
+     <li>Entregue como pacote pelo Atendimento ao cliente AEM</li> 
      <li>Não necessariamente incluído em service packs ou versões completas</li> 
     </ul> </td> 
   </tr>
@@ -319,9 +322,9 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td><strong>Definição</strong></td> 
    <td>
     <ul> 
-     <li>Pacotes de recursos são funcionalidades complementares e são fornecidos por Service Packs. Se uma versão do AEM tiver lançado seu último service pack, a Adobe não fornecerá nenhum pacote de recursos para ele no futuro.</li> 
-     <li>Os FPs contêm aprimoramentos de produtos, programados para uma versão subsequente do produto, mas disponibilizados antecipadamente com base na decisão do Gerenciamento de produtos da Adobe.</li> 
-     <li>Os recursos sempre são mesclados com a próxima versão principal e, em seguida, são suportados para a versão AEM exigida pelo cliente</li> 
+     <li>Pacotes de recursos são funcionalidades complementares e são fornecidos por Service Packs. Se uma versão AEM tiver lançado seu último service pack, o Adobe não fornecerá nenhum pacote de recursos para ele no futuro.</li> 
+     <li>Os FPs contêm aprimoramentos de produtos, programados para uma versão subsequente do produto, mas fornecidos antecipadamente com base na decisão do Gerenciamento de produto Adobe.</li> 
+     <li>Os recursos são sempre mesclados com a próxima versão principal e depois suportados para a versão AEM exigida pelo cliente</li> 
      <li>Os pacotes de recursos de interesse comum e GA são mesclados no próximo service pack</li> 
     </ul> </td> 
   </tr>
@@ -351,7 +354,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td>
     <ul> 
      <li>Entregue como um pacote</li> 
-     <li>Disponível em Compartilhamento de pacotes. Os clientes aceitam os termos e condições da Adobe por meio do Compartilhamento de pacotes.</li> 
+     <li>Disponível em Compartilhamento de pacotes. Os clientes aceitam Termos e Condições por meio do Compartilhamento de pacotes.</li> 
     </ul> </td> 
   </tr>
   <tr>
