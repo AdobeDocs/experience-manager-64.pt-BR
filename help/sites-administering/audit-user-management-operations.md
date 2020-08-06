@@ -1,8 +1,8 @@
 ---
-title: Como auditar operações de gerenciamento de usuários no AEM
-seo-title: Como auditar operações de gerenciamento de usuários no AEM
-description: Saiba como auditar as operações de gerenciamento de usuários no AEM.
-seo-description: Saiba como auditar as operações de gerenciamento de usuários no AEM.
+title: Como auditar operações de gerenciamento de usuários em AEM
+seo-title: Como auditar operações de gerenciamento de usuários em AEM
+description: Saiba como auditar as Operações de Gerenciamento de Usuário no AEM.
+seo-description: Saiba como auditar as Operações de Gerenciamento de Usuário no AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
 
-# Como auditar operações de gerenciamento de usuários no AEM{#how-to-audit-user-management-operations-in-aem}
+# Como auditar operações de gerenciamento de usuários em AEM{#how-to-audit-user-management-operations-in-aem}
 
 ## Introdução {#introduction}
 
-O AEM introduziu a capacidade de registrar alterações de permissão para que possam ser auditadas posteriormente.
+AEM introduziu a capacidade de registrar alterações de permissão para que possam ser auditadas posteriormente.
 
 O aprimoramento permite a auditoria de ações CRUD (Criar, Ler, Atualizar, Excluir) em permissões e atribuições de grupos de usuários. Mais especificamente, registrará:
 
@@ -37,11 +40,12 @@ Para redirecionar a saída de log para um arquivo de log separado, é necessári
 1. Procure a configuração **do** Apache Sling Logging Logger. Em seguida, pressione o &quot;+&quot; no lado direito da entrada para criar uma nova configuração de fábrica.
 1. Crie a seguinte configuração:
 
-   * **** Nível de registro:Informações
-   * **** Arquivo de log: logs/useraudit.log
-   * **** Padrão de mensagem: padrão nível
-   * **** Logger: com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
-   Para inserir os dois loggers no campo **Logger** , é necessário digitar o nome do primeiro, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo logger.
+   * **Nível de registro:** Informações
+   * **Arquivo de log:** logs/useraudit.log
+   * **Padrão de mensagem:** padrão de nível
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
+   Para inserir os dois loggers no campo **Logger** , é necessário digitar o nome do primeiro, depois criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo logger.
 
 ## Exemplo de saída {#example-output}
 
