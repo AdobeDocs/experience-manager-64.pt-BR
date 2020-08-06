@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 translation-type: tm+mt
 source-git-commit: a210d3bf80b7e7ec62c76a21f1cc2e71e986a4dc
+workflow-type: tm+mt
+source-wordcount: '1107'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: a210d3bf80b7e7ec62c76a21f1cc2e71e986a4dc
 
 ### Verifique se não há erros de JavaScript {#ensure-there-are-no-javascript-errors}
 
-Verifique se o JavaScript Console do navegador exibe quaisquer erros. Erros sem tratamento podem impedir que o código subsequente seja executado corretamente. Caso haja erros, verifique qual script está causando o erro e em qual área. O caminho para o script pode fornecer uma indicação para a funcionalidade à qual o script pertence.
+Verifique se o JavaScript Console do navegador exibe quaisquer erros. Erros não processados podem impedir que o código subsequente seja executado corretamente. Caso haja erros, verifique qual script está causando o erro e em qual área. O caminho para o script pode fornecer uma indicação para a funcionalidade à qual o script pertence.
 
 ### Logon no nível do componente {#logging-on-component-level}
 
@@ -54,13 +57,13 @@ O Importador de relatórios causa alto uso de CPU/memória ou gera `OutOfMemoryE
 Para corrigir esse problema, tente o seguinte:
 
 * Certifique-se de que não haja uma grande quantidade de pesquisadores registrados (consulte a seção &quot;Desligamento leva muito tempo devido ao PollingImporter&quot; abaixo).
-* Execute os Importadores de relatórios em um determinado momento do dia usando expressões CRON para as `ManagedPollingImporter` configurações no console [](/help/sites-deploying/configuring-osgi.md)OSGi.
+* Execute os Importadores de relatórios em uma determinada hora do dia usando o CRON expressão para as `ManagedPollingImporter` configurações no console [](/help/sites-deploying/configuring-osgi.md)OSGi.
 
 Para obter detalhes adicionais sobre como criar serviços personalizados de importação de dados no AEM, leia o seguinte artigo [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html).
 
 ### O encerramento demora muito devido ao PollingImporter {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você ativa o Analytics para um site adicionando uma referência a uma configuração do Analytics na guia Serviços [da](/help/sites-developing/extending-cloud-config.md) nuvem de propriedades da página. A configuração é herdada automaticamente para todas as subpáginas, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para o AEM 6.3 e anterior ou 6 para o AEM 6.4) do tipo `cq;PollConfig` que instancia os Importadores de pesquisa usados para importar dados do Analytics para o AEM. Como resultado:
+O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você ativa o Analytics para um site adicionando uma referência a uma configuração do Analytics na guia [Cloud Services](/help/sites-developing/extending-cloud-config.md) das propriedades da página. A configuração é herdada automaticamente para todas as subpáginas, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para AEM 6.3 e anterior ou 6 para AEM 6.4) do tipo `cq;PollConfig` que instancia os PollingImporters usados para importar dados do Analytics para AEM. Como resultado:
 
 * Ter muitas páginas referenciando o Analytics resulta em uma grande quantidade de PollingImporters.
 * Além disso, copiar e colar páginas com uma referência a uma configuração do Analytics resulta em uma duplicação de seus Importadores de pesquisa.
@@ -81,7 +84,7 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 28115
 ```
 
-Em segundo lugar, certifique-se de que somente as principais páginas (acima na hierarquia) tenham uma configuração do Analytics referenciada.
+Em segundo lugar, certifique-se de que somente as principais páginas (alta na hierarquia) tenham uma configuração do Analytics referenciada.
 
 Para obter detalhes adicionais sobre como criar serviços personalizados de importação de dados no AEM, leia o seguinte artigo [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html).
 
@@ -89,13 +92,13 @@ Para obter detalhes adicionais sobre como criar serviços personalizados de impo
 
 ### A tag de script do DTM não é renderizada na fonte da página {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-A tag de script do [DTM](/help/sites-administering/dtm.md) não está incluída corretamente na página, mesmo que a configuração tenha sido referenciada nas propriedades da página na guia Serviços [da](/help/sites-developing/extending-cloud-config.md) Nuvem.
+A tag de script do [DTM](/help/sites-administering/dtm.md) não está incluída corretamente na página, mesmo que a configuração tenha sido referenciada na guia [Cloud Services](/help/sites-developing/extending-cloud-config.md) das propriedades da página.
 
 #### Solução {#solution-2}
 
 Para corrigir o problema, tente o seguinte:
 
-* Verifique se as propriedades criptografadas podem ser descriptografadas (observe que a criptografia pode usar uma chave gerada automaticamente diferente em cada instância do AEM). Para obter mais detalhes, leia também Suporte [a criptografia para propriedades](/help/sites-administering/encryption-support-for-configuration-properties.md)de configuração.
+* Verifique se as propriedades criptografadas podem ser descriptografadas (observe que a criptografia pode usar uma chave gerada automaticamente diferente em cada instância AEM). Para obter mais detalhes, leia também Suporte [a criptografia para propriedades](/help/sites-administering/encryption-support-for-configuration-properties.md)de configuração.
 * Publicar novamente as configurações encontradas em `/etc/cloudservices/dynamictagmanagement`
 * Verifique as ACLs ativadas `/etc/cloudservices`. As ACLs devem ser:
 
@@ -107,11 +110,11 @@ Para corrigir o problema, tente o seguinte:
 
 Para obter mais informações sobre como gerenciar ACLs, leia a página Administração e segurança [do](/help/sites-administering/security.md#permissions-in-aem) usuário.
 
-## Problemas de integração do Target {#target-integration-issues}
+## Problemas de integração de Público alvo {#target-integration-issues}
 
-### Conteúdo direcionado não visível no modo de Visualização ao usar componentes de página personalizados {#targeted-content-not-visible-in-preview-mode-when-using-custom-page-components}
+### Conteúdo direcionado não visível no modo de Pré-visualização ao usar componentes de página personalizados {#targeted-content-not-visible-in-preview-mode-when-using-custom-page-components}
 
-Esse problema ocorre porque os componentes de página personalizados não incluem as bibliotecas JSP ou cliente corretas que manipulam as integrações do Target DTM.
+Esse problema ocorre porque os componentes de página personalizados não incluem as bibliotecas JSP ou cliente corretas que lidam com as integrações de DTM de Públicos alvos.
 
 #### Solução {#solution-3}
 
@@ -131,17 +134,17 @@ Você pode experimentar as seguintes soluções:
 <meta data-sly-include="/libs/cq/dtm/components/dynamictagmanagement/headlibs.jsp" data-sly-unwrap/>
 ```
 
-O `servicelibs.jsp` adiciona os objetos JavaScript do Analytics necessários e carrega as bibliotecas do serviço de nuvem associadas ao site. Para o serviço do Target, as bibliotecas são carregadas por meio do `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
+O `servicelibs.jsp` adiciona os objetos JavaScript do Analytics necessários e carrega as bibliotecas do serviço de nuvem associadas ao site. Para o serviço de Públicos alvos, as bibliotecas são carregadas por meio do `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
 
-O conjunto de bibliotecas que são carregadas depende do tipo de biblioteca do cliente de destino ( `mbox.js` ou `at.js`) usada na configuração do Target.
+O conjunto de bibliotecas que são carregadas depende do tipo de biblioteca do cliente do público alvo ( `mbox.js` ou `at.js`) usada na configuração do Público alvo.
 
-Ao usar o DTM para fornecer `mbox.js` ou `at.js` garantir que as bibliotecas sejam carregadas antes da renderização do conteúdo. O uso de sistemas de gerenciamento de tags que carregam essas bibliotecas de forma assíncrona pode causar problemas na execução do código JavaScript específico do destino.
+Ao usar o DTM para fornecer `mbox.js` ou `at.js` garantir que as bibliotecas sejam carregadas antes da renderização do conteúdo. O uso de sistemas de gerenciamento de tags que carregam essas bibliotecas de forma assíncrona pode causar problemas na execução do código JavaScript específico do público alvo.
 
 Para obter mais informações, leia a página [Desenvolvimento para conteúdo](/help/sites-developing/target.md#understanding-the-target-component) direcionado.
 
 ### O erro &quot;ID de conjunto de relatórios ausente na inicialização do AppMeasurement&quot; é exibido no console do navegador {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
-Esse problema pode aparecer quando o Adobe Analytics é implementado no site usando o DTM e o Código personalizado. A causa é usar o objeto `s = new AppMeasurement()` para instanciar o `s` objeto.
+Esse problema pode aparecer quando a Adobe Analytics é implementada no site usando o DTM e o Código personalizado. A causa é usar o objeto `s = new AppMeasurement()` para instanciar o `s` objeto.
 
 #### Solução {#solution-4}
 
@@ -156,20 +159,20 @@ var s=s_gi(s_account)
 
 Esse problema pode ter várias causas:
 
-* Carregar bibliotecas de clientes do Target ( `mbox.js` ou `at.js`) de forma assíncrona usando sistemas de gerenciamento de tags de terceiros pode quebrar aleatoriamente a definição de metas. As bibliotecas do Target devem ser carregadas sincronicamente no cabeçalho da página. Isso é sempre verdadeiro quando as bibliotecas são entregues do AEM.
+* O carregamento assíncrono de bibliotecas clientes de Públicos alvos ( `mbox.js` ou `at.js`) usando sistemas de gerenciamento de tags de terceiros pode quebrar aleatoriamente a definição de metas. As bibliotecas de Públicos alvos devem ser carregadas sincronicamente no cabeçalho da página. Isso é sempre verdadeiro quando as bibliotecas são entregues da AEM.
 
-* Carregar duas bibliotecas de clientes do Target ( `at.js`) simultaneamente, por exemplo, uma usando o DTM e outra usando a configuração do Target no AEM. Isso pode causar conflitos para a `adobe.target` definição se as `at.js` versões forem diferentes.
+* Carregando duas bibliotecas clientes de Públicos alvos ( `at.js`) simultaneamente, por exemplo, uma usando o DTM e outra usando a configuração do Público alvo no AEM. Isso pode causar conflitos para a `adobe.target` definição se as `at.js` versões forem diferentes.
 
 #### Solução {#solution-5}
 
 Você pode experimentar as seguintes soluções:
 
-* Certifique-se de que o código do cliente que carrega as bibliotecas semelhantes ao DTM (que por sua vez carregam as bibliotecas do Target) seja executado sincronicamente no cabeçalho da [página](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
-* se o site estiver configurado para usar o DTM para fornecer bibliotecas do Target, verifique se a opção **Clientlib fornecida pelo DTM** está marcada na configuração [do](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) Target do site.
+* Verifique se o código do cliente que carrega as bibliotecas semelhantes ao DTM (que por sua vez carregam as bibliotecas de Públicos alvos) é executado sincronicamente no cabeçalho da [página](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
+* se o site estiver configurado para usar o DTM para fornecer bibliotecas de Públicos alvos, verifique se a opção **Clientlib fornecida pelo DTM** está marcada na configuração [do](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) Público alvo do site.
 
 ### Uma oferta padrão é sempre exibida em vez da oferta correta ao usar o AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
-O AEM 6.2 e 6.3 prontos para uso não é compatível com a versão 1.3.0+ do AT.js. Com a versão 1.3.0 do AT.js introduzindo a validação de parâmetro para suas APIs, `adobe.target.applyOffer()` é necessário um parâmetro &quot;mbox&quot; que não é fornecido pelo `atjs-itegration.js` código.
+A versão AEM 6.2 e 6.3 não é compatível com a versão 1.3.0+ do AT.js. Com a versão 1.3.0 do AT.js introduzindo a validação de parâmetro para suas APIs, `adobe.target.applyOffer()` é necessário um parâmetro &quot;mbox&quot; que não é fornecido pelo `atjs-itegration.js` código.
 
 #### Solução {#solution-6}
 
@@ -188,13 +191,13 @@ adobe.target.getOffer({
     },
 ```
 
-### A página Metas e configurações não mostra a seção Fontes de relatórios {#the-goals-settings-page-does-not-show-the-reporting-sources-section}
+### A página Metas e configurações não mostra a seção Fontes do Relatórios {#the-goals-settings-page-does-not-show-the-reporting-sources-section}
 
-Esse problema provavelmente é um problema de provisionamento da Configuração [da nuvem do](/help/sites-administering/target-configuring.md) A4T Analytics.
+Esse problema provavelmente é um problema de provisionamento da Configuração [](/help/sites-administering/target-configuring.md) Analytics Cloud A4T.
 
 #### Solução {#solution-7}
 
-É necessário verificar se o A4T está corretamente ativado para sua conta do Target emitindo a seguinte solicitação de verificação para o AEM:
+É necessário verificar se o A4T está corretamente ativado para a sua conta de Público alvo emitindo a seguinte solicitação de verificação para AEM:
 
 ```
 http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.a4t.json
@@ -210,13 +213,13 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o Atendimento [ao cliente da](https://helpx.adobe.com/contact.html) Adobe para obter a conta provisionada corretamente.
+Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o Atendimento [ao cliente do](https://helpx.adobe.com/contact.html) Adobe para obter a conta provisionada corretamente.
 
-### APIs úteis do Target {#helpful-target-apis}
+### APIs de Público alvo úteis {#helpful-target-apis}
 
-Abaixo estão apresentadas duas APIs do Target que podem ser úteis ao solucionar problemas do Target:
+Abaixo estão apresentadas duas APIs de Público alvo que podem ser úteis ao solucionar problemas de Público alvo:
 
-* Recuperar o terminal do Target para um determinado clientcode
+* Recuperar o terminal do Público alvo para um determinado clientcode
 
 ```
 https://admin.testandtarget.omniture.com/rest/v1/endpoint/<CLIENTCODE>.json
