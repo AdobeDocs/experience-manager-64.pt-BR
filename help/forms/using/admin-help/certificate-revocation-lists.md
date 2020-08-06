@@ -11,29 +11,32 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 1%
 
 ---
 
 
 # Gerenciando listas de revogação de certificados{#managing-certificate-revocationlists}
 
-Usando o Gerenciamento de Armazenamento de Confiança, você pode importar, editar e excluir CRLs (certificate Revolutions lists). As listas de revogação de certificados codificados por Base64 e DER são suportadas.
+Usando o Gerenciamento de Armazenamento de Confiança, você pode importar, editar e excluir listas de revogação de certificados (CRLs). listas de revogação de certificados codificados por Base64 e DER são suportadas.
 
 ## Importar uma CRL {#import-a-crl}
 
-1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificados e clique em Importar.
+1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificado e clique em Importar.
 1. Na caixa Alias, digite um identificador para a CRL.
 1. Clique em Procurar para localizar a CRL e clique em OK.
 
 ## Exportar uma CRL {#export-a-crl}
 
-1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificados.
+1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificado.
 1. Clique no nome do alias da CRL a ser exportada e clique em Exportar.
 1. Siga as instruções para exportar a CRL. As CRLs são exportadas na codificação Base64.
 1. Clique em OK.
 
 ## Excluir uma CRL {#delete-a-crl}
 
-1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificados.
+1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificado.
 1. Marque as caixas de seleção das CRLs a serem excluídas, clique em Excluir e, em seguida, clique em OK.
 
