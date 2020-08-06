@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +32,7 @@ Para um ativo carregado se qualificar como uma imagem de panorama esférica que 
 
 * Uma proporção largura/altura de 2.
 
-   Você pode substituir a configuração de proporção padrão de 2 no **[!UICONTROL CRXDE Lite]** no seguinte:
+   Você pode substituir a configuração padrão de proporção de 2 no **[!UICONTROL CRXDE Lite]** no seguinte:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -37,13 +40,13 @@ Para um ativo carregado se qualificar como uma imagem de panorama esférica que 
 
 Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e o componente **[!UICONTROL Panorâmica Media]** 
 
-Para fazer upload de ativos para uso com o Visualizador de imagem panorâmica, consulte [Fazer upload de ativos](managing-assets-touch-ui.md#uploading-assets).
+Para fazer upload de ativos para uso com o visualizador de Imagem panorâmica, consulte [Fazer upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 
 ## Configuração do Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
 Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é necessário sincronizar as predefinições do visualizador de Imagem panorâmica com os metadados específicos do Dynamic Media Classic e do Dynamic Media Classic para que as predefinições do visualizador sejam atualizadas no JCR. Para fazer isso, configure o Dynamic Media Classic da seguinte maneira:
 
-1. [Faça logon na sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta da empresa.
+1. [Efetue logon em sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
 
 1. Perto do canto superior direito da página, clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configuração de publicação > Servidor]** de imagem.
 1. Na página Publicação **[!UICONTROL do Servidor de]** imagens, no menu suspenso **[!UICONTROL Publicar contexto]** próximo à parte superior, selecione Serviço de **[!UICONTROL imagens]**.
@@ -57,10 +60,11 @@ Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é n
    >
    >Somente as imagens que se encaixam no tamanho máximo permitido de imagem são suportadas. As solicitações de imagens acima do limite de tamanho resultarão em uma resposta 403.
 
-1. No cabeçalho **Solicitar atributos]** , faça o seguinte:
+1. No cabeçalho **Atributos de solicitação]** , faça o seguinte:
 
    * Defina **[!UICONTROL Request Obfuscation Mode (Modo]** de ofuscação de solicitação) como **[!UICONTROL Disabled (Desativado]**).
    * Defina **[!UICONTROL Request Locking Mode (Modo]** de bloqueio de solicitação) como **[!UICONTROL Disabled (Desativado]**).
+
    Essas configurações são necessárias para o uso do componente **[!UICONTROL Mídia]** panorâmica no AEM.
 
 1. Na parte inferior da página Publicação **[!UICONTROL do servidor de]** imagens, no lado esquerdo, toque em **[!UICONTROL Salvar]**.
@@ -71,7 +75,7 @@ Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é n
 
 Se você soltou uma imagem no componente **[!UICONTROL Mídia]** panorâmica em seu WCM e o espaço reservado do componente desabou, talvez você queira solucionar o seguinte problema:
 
-* Se houver um erro 403 Proibido, ele pode ter sido causado pelo tamanho da imagem solicitada ser muito grande. Revise as configurações de Limite *de tamanho de imagem de* resposta em [Configuração do Dynamic Media Classic (Scene7)](#configuring-dynamic-media-classic-scene).
+* Se você encontrar um erro 403 Proibido, ele pode ter sido causado pelo tamanho da imagem solicitada ser muito grande. Revise as configurações de Limite *de tamanho de imagem de* resposta em [Configuração do Dynamic Media Classic (Scene7)](#configuring-dynamic-media-classic-scene).
 
 * Para um erro *de bloqueio* inválido no ativo ou de *análise exibido na página, marque* Solicitar modo **[!UICONTROL de ofuscação e]** Solicitar modo **** de bloqueio para garantir que eles estejam desativados.
 * Para um erro de tela contaminada, configure um Caminho de arquivo de definição de conjunto de **[!UICONTROL regras e Invalide o CTN]** para as solicitações anteriores do ativo de imagem.
