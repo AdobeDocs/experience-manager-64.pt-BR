@@ -22,7 +22,7 @@ ht-degree: 55%
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. A mídia dinâmica e os componentes de mídia interativa são inteligentes: eles sabem se você está adicionando uma imagem ou um vídeo, e as opções disponíveis mudam de acordo.
 
-Você adiciona ativos de mídia dinâmica diretamente à página se estiver usando o AEM como seu WCM.
+Você adiciona ativos de mídia dinâmica diretamente à página se estiver usando AEM como seu WCM.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Para adicionar um componente/visualizador de mídia dinâmica a uma página:
 
 ## Componentes de mídia dinâmica {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] e [!UICONTROL Interative Media] estão disponíveis no [!UICONTROL Sidekick] em **[!UICONTROL Dynamic Media]**. Você usa o componente **[!UICONTROL Mídia interativa]** para quaisquer ativos interativos, como vídeo interativo, imagens interativas ou conjuntos de carrossel. Para todos os outros componentes de mídia dinâmica, use o componente **[!UICONTROL Mídia dinâmica]**.
+[!UICONTROL O Dynamic Media] e o [!UICONTROL Interative Media] estão disponíveis no [!UICONTROL Sidekick] em **[!UICONTROL Dynamic Media]**. Você usa o componente **[!UICONTROL Mídia interativa]** para quaisquer ativos interativos, como vídeo interativo, imagens interativas ou conjuntos de carrossel. Para todos os outros componentes de mídia dinâmica, use o componente **[!UICONTROL Mídia dinâmica]**.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -58,7 +58,7 @@ Para adicionar um componente/visualizador de mídia dinâmica a uma página:
 
 ### Componente Mídia dinâmica {#dynamic-media-component}
 
-O componente Dynamic Media é inteligente — dependendo se você adicionar uma imagem ou um vídeo, você terá várias opções. O componente oferece suporte a predefinições de imagem, visualizadores baseados em imagem, como conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista e vídeo. Além disso, o visualizador responde. Ou seja, o tamanho da tela muda automaticamente com base no tamanho da tela. Todos os visualizadores são visualizadores baseados em HTML5.
+O componente Dynamic Media é inteligente, dependendo se você adicionar uma imagem ou um vídeo, você terá várias opções. O componente oferece suporte a predefinições de imagem, visualizadores baseados em imagem, como conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista e vídeo. Além disso, o visualizador responde. Ou seja, o tamanho da tela muda automaticamente com base no tamanho da tela. Todos os visualizadores são visualizadores baseados em HTML5.
 
 >[!NOTE]
 >
