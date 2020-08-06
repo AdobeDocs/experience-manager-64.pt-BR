@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -29,6 +32,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 >
 >* Windows: Ctrl + clique nos componentes desejados.
 >* MAC: Cmd+clicar nos componentes exigidos.
+
 >
 
 
@@ -166,7 +170,7 @@ Vários atalhos de teclado estão disponíveis para os desenvolvedores de deskto
   </tr> 
   <tr> 
    <td>Modo de Edição</td> 
-   <td><br /> Defina o sufixo a seguir no URL: <code>?debugClientLibs=true</code><br /> Em seguida, use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Para visualizar as estatísticas de tempo para o carregamento da página.</td> 
   </tr> 
  </tbody> 
