@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Os ensaios devem definir claramente:
 * Resultados esperados.
 * Critérios claros para aprovação ou falha.
 
-A perspectiva de automatizar os casos de testes é obviamente atraente, pois pode eliminar tarefas repetitivas.
+O prospecto de automatizar os casos de teste é obviamente atraente, pois pode eliminar tarefas repetitivas.
 
 ## Testes manuais versus automatizados {#manual-versus-automated-tests}
 
@@ -48,17 +51,17 @@ No entanto, a automatização dos casos de ensaio constitui um investimento sign
 
 ## Teste de aspectos específicos {#testing-specific-aspects}
 
-Ao testar o AEM, alguns detalhes específicos são de especial interesse:
+Ao testar AEM alguns detalhes específicos são de especial interesse:
 
 Ambientes de autor e publicação
 
-Embora esteja coberto em [Ambientes](/help/sites-developing/the-basics.md#environments) , vale destacar um fator decisivo do AEM em relação aos testes.
+Embora esteja coberto em [Ambientes](/help/sites-developing/the-basics.md#environments) , vale a pena destacar um fator decisivo de AEM no que diz respeito aos testes.
 
-Você deve considerar o AEM como dois aplicativos:
+Você deve considerar AEM como duas aplicações:
 
 * ambiente do **autor** Essa instância permite que os autores insiram e publiquem conteúdo.
 Isso tem um conjunto pequeno e previsível de usuários, para os quais a funcionalidade e o desempenho específicos são fundamentais.
-* o ambiente de **publicação** Essa instância apresenta o site em seu formulário publicado para acesso dos visitantes.
+* o ambiente de **publicação** Essa instância apresenta o site em seu formulário publicado para acesso de visitantes.
 Isso geralmente tem um conjunto maior de usuários, onde o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é crucial - ao responder às solicitações. O armazenamento em cache e o balanceamento de carga também devem ser considerados.
 
 Embora o mesmo software como tal, eles:
@@ -93,6 +96,6 @@ Quando usado para um projeto do cliente, o cluster deve ser testado para confirm
 
 ## Teste de software de terceiros {#testing-third-party-software}
 
-Todos os softwares de terceiros com interface com o AEM serão mencionados nas Especificações detalhadas.
+Todos os softwares de terceiros com interface para AEM serão referenciados nas Especificações de requisitos detalhados.
 
 Os ensaios necessários (dependendo do âmbito definido) devem ser analisados e deve ser obtido um ensaio limpo.
