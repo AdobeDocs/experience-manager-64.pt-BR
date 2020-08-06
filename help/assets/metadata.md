@@ -1,9 +1,12 @@
 ---
 title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Manager].
-description: Saiba mais sobre os tipos de metadados e como o [!DNL Adobe Experience Manager Assets] ajuda a gerenciar metadados de ativos para facilitar a categorização e a organização de ativos. O [!DNL Experience Manager] permite organizar e processar ativos automaticamente com base em seus metadados.
+description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] como tornar possível organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Os dois tipos básicos de metadados são metadados técnicos e metadados descrit
 Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. [!DNL Experience Manager Assets] e outros softwares determinam automaticamente os metadados técnicos e os metadados podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem em grande parte do tipo de arquivo do ativo. Alguns exemplos de metadados técnicos são:
 
 * Tamanho de um arquivo.
-* Dimensões (altura e largura) de uma imagem.
+* Dimension (altura e largura) de uma imagem.
 * Taxa de bits de um arquivo de áudio ou vídeo.
 * Resolução (nível de detalhes) de uma imagem.
 
@@ -74,7 +77,7 @@ Há várias maneiras de incorporar metadados em arquivos. Há suporte para uma s
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por todos [!DNL Experience Manager Assets] o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e do [!DNL Experience Manager Assets] têm uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por [!DNL Experience Manager Assets] todos os gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. Adobe e outras empresas oferecem suporte XMP padrão, pois oferecem um modelo de conteúdo avançado. Os usuários XMP padrão e de [!DNL Experience Manager Assets] uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -133,7 +136,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Metadados do Gerenciamento de direitos digitais {#digital-rights-management-metadata}
+### Metadados de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -141,7 +144,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PRISM - Requisitos de [publicação para metadados](https://www.idealliance.org/prism-metadata)padrão do setor.
 * PRL - Idioma dos Direitos do PRISM.
 * PUR - Direitos de uso do PRISM.
-* `xmpPlus` - Integração da PLUS com a XMP.
+* `xmpPlus` - Integração do PLUS com o XMP.
 
 ### Metadados específicos da fotografia {#photography-specific-metadata}
 
@@ -155,7 +158,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
 * PRISM - Requisitos de [publicação para metadados](https://www.prismstandard.org)padrão do setor.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - Metadados XMP para texto paginado.
+* `xmpPG` - XMP metadados para texto paginado.
 
 ### Metadados específicos de multimídia {#multimedia-specific-metadata}
 
