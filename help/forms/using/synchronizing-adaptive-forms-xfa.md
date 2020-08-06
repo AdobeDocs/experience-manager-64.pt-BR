@@ -1,19 +1,22 @@
 ---
-title: Sincronização de formulários adaptáveis com modelos de formulário XFA
-seo-title: Sincronização de formulários adaptáveis com modelos de formulário XFA
-description: Sincronizando formulários adaptáveis com arquivos XFA/XDP.
-seo-description: Sincronizando formulários adaptáveis com arquivos XFA/XDP.
+title: Sincronização do Forms adaptável com modelos de formulário XFA
+seo-title: Sincronização do Forms adaptável com modelos de formulário XFA
+description: Sincronização de formulários adaptáveis com arquivos XFA/XDP.
+seo-description: Sincronização de formulários adaptáveis com arquivos XFA/XDP.
 uuid: 6613a9bf-c862-4c18-a5b5-f574d301e936
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
 
-# Sincronização de formulários adaptáveis com modelos de formulário XFA {#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Sincronização do Forms adaptável com modelos de formulário XFA {#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Introdução {#introduction}
 
@@ -21,7 +24,7 @@ Você pode criar um formulário adaptável com base em um modelo de formulário 
 
 É possível reutilizar campos do arquivo XDP no formulário adaptável. Esses campos são chamados de campos vinculados. As propriedades dos campos vinculados (como scripts, rótulos e formato de exibição) são copiadas do arquivo XDP. Você também pode optar por substituir o valor de algumas dessas propriedades.
 
-O AEM Forms fornece uma maneira de ajudar a manter os campos dos formulários adaptáveis sincronizados com quaisquer alterações feitas posteriormente nos campos correspondentes no arquivo XDP. Este artigo explica como ativar essa sincronização.
+A AEM Forms fornece uma maneira de ajudar a manter os campos dos formulários adaptáveis sincronizados com quaisquer alterações feitas posteriormente nos campos correspondentes no arquivo XDP. Este artigo explica como ativar essa sincronização.
 
 ![É possível arrastar campos de um formulário XFA para um formulário adaptável](assets/drag-drop-xfa.gif.gif)
 
@@ -33,7 +36,7 @@ Para usar as informações neste artigo, recomenda-se uma familiaridade com as s
 
 * [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md)
 
-* XFA (Arquitetura de formulários XML)
+* XFA (Arquitetura Forms XML)
 
 Para usar os ativos fornecem o exemplo no artigo, baixe o pacote de amostra como explicado na próxima seção, Pacote [de](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p)amostra.
 
@@ -41,7 +44,7 @@ Para usar os ativos fornecem o exemplo no artigo, baixe o pacote de amostra como
 
 O artigo usa um exemplo para demonstrar como sincronizar o formulário adaptável com um modelo de formulário XFA atualizado. Os ativos usados no exemplo estão disponíveis em um pacote, que pode ser baixado da seção [Downloads](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) neste artigo.
 
-Após carregar o pacote, você pode exibir esses ativos na interface do usuário do AEM Forms.
+Depois de fazer upload do pacote, você pode visualização esses ativos na interface do usuário do AEM Forms.
 
 Instale o pacote usando o gerenciador de pacote: `https://<server>:<port>/crx/packmgr/index.jsp`
 
@@ -66,25 +69,26 @@ O pacote contém os seguintes ativos:
 
 Sempre que houver qualquer alteração em um arquivo XDP ou em um fragmento, a interface do usuário do AEM Forms sinaliza todos os formulários adaptáveis que são baseados no arquivo XDP ou no fragmento.
 
-Após atualizar um arquivo XDP, é necessário carregá-lo novamente na interface do usuário do AEM Forms para que as alterações sejam sinalizadas.
+Depois de atualizar um arquivo XDP, é necessário carregá-lo novamente na interface do usuário do AEM Forms para que as alterações sejam sinalizadas.
 
 Por exemplo, atualizemos o `sample-form.xdp` arquivo usando as seguintes etapas:
 
 1. Navegue até `https://<server>:<port>/projects.html.` Insira suas credenciais, se solicitado.
-1. Clique na guia Formulários à esquerda.
+1. Clique na guia Forms à esquerda.
 1. Baixe o `sample-form.xdp` arquivo em sua máquina local. O arquivo XDP é baixado como um `.zip` arquivo, que pode ser extraído usando qualquer utilitário de descompactação de arquivo.
 
 1. Abra o `sample-form.xdp` arquivo e altere o título do campo TextField1 de Campo **de** texto para **Meu campo** de texto.
 
 1. Faça upload do `sample-form.xdp` arquivo de volta para a interface do usuário do AEM Forms.
 
-Se um arquivo XDP for atualizado, você verá um ícone no editor, ao editar os formulários adaptáveis com base no arquivo XDP. Este ícone indica que o formulário adaptável está dessincronizado com o arquivo XDP. Na imagem a seguir, consulte o ícone ao lado na barra lateral.
+Se um arquivo XDP for atualizado, você verá um ícone no editor ao editar os formulários adaptáveis com base no arquivo XDP. Este ícone indica que o formulário adaptável está dessincronizado com o arquivo XDP. Na imagem a seguir, consulte o ícone ao lado na barra lateral.
 
 ![Ícone para exibir se o formulário adaptável está fora de sincronização com o arquivo XDP](assets/sync-af-xfa.png)
 
 ## Sincronizar formulários adaptáveis com o arquivo XDP mais recente {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-Quando um formulário adaptável que não esteja sincronizado com o arquivo XDP for aberto para criação na próxima vez, a seguinte mensagem será exibida: O modelo de **esquema/formulário para o formulário adaptável foi atualizado.`Click Here`para rebaseá-lo na nova versão.**
+Quando um formulário adaptável que não esteja sincronizado com o arquivo XDP for aberto para criação na próxima vez, a seguinte mensagem será exibida:
+**O modelo de Schema/formulário para o formulário adaptável foi atualizado.`Click Here`para rebaseá-lo na nova versão.**
 
 Clicar na mensagem sincroniza os campos no formulário adaptável com os campos correspondentes no arquivo XDP.
 
@@ -104,7 +108,7 @@ Para atualizar as propriedades no formulário adaptável de exemplo, clique no l
 >
 >O rótulo Campo numérico AF não foi alterado porque você substituiu essa propriedade da caixa de diálogo de propriedades do componente, conforme descrito em [Adicionar conteúdo a formulários](#p-add-content-to-adaptive-form-br-p)adaptáveis.
 
-### Adicionar novos campos do arquivo XDP ao formulário adaptável {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Adicionar novos campos do arquivo XDP ao formulário adaptável   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Todos os campos adicionados posteriormente ao arquivo XDP original aparecem na guia Hierarquia de formulário e você pode arrastar esses novos campos para o formulário adaptável.
 
@@ -118,7 +122,7 @@ As etapas a seguir ilustram esse fluxo de uso para os ativos no exemplo usado ne
 
 1. Atualize o `sample-form.xdp` arquivo e exclua NumericField1.
 1. Carregar o `sample-form.xdp` arquivo na interface do usuário do AEM Forms
-1. Abra o formulário `sample-xfa-af` adaptável para criação. A seguinte mensagem de erro é exibida: O esquema/modelo de formulário para o formulário adaptável foi atualizado. `Click Here` para rebaseá-lo na nova versão.
+1. Abra o formulário `sample-xfa-af` adaptável para criação. A seguinte mensagem de erro é exibida: O modelo de Schema/formulário para o formulário adaptável foi atualizado. `Click Here` para rebaseá-lo na nova versão.
 
 1. Clique no link (rotulado como &quot; `Click Here`&quot;) na mensagem. Uma mensagem de erro é exibida, observando que o campo não existe mais no arquivo XDP.
 
