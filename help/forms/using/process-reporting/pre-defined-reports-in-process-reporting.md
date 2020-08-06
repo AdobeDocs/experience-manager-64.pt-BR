@@ -1,8 +1,8 @@
 ---
 title: Relatórios predefinidos no Relatórios em andamento
 seo-title: Relatórios predefinidos no Relatórios em andamento
-description: Query para os dados do processo do AEM Forms no JEE para criar relatórios sobre processos de longa execução, duração do processo e volume do fluxo de trabalho
-seo-description: Query para os dados do processo do AEM Forms no JEE para criar relatórios sobre processos de longa execução, duração do processo e volume do fluxo de trabalho
+description: Query para dados de processo do AEM Forms em JEE para criar relatórios em processos de execução longa, duração do processo e volume do fluxo de trabalho
+seo-description: Query para dados de processo do AEM Forms em JEE para criar relatórios em processos de execução longa, duração do processo e volume do fluxo de trabalho
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
 topic-tags: process-reporting
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Relatórios predefinidos no Relatórios em andamento {#pre-defined-reports-in-process-reporting}
 
-O Relatórios de processo de formulários AEM é fornecido com os seguintes relatórios *prontos* :
+O Relatórios do AEM Forms Process é fornecido com os seguintes relatórios *prontos para uso* :
 
-* **[Processos](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**de longa duração: Um relatório de todos os processos do AEM Forms que levaram mais de um tempo para serem concluídos
+* **[Processos](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**de longa duração: Um relatório de todos os processos da AEM Forms que levaram mais de um tempo para serem concluídos
 
-* **[Gráfico](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**de Duração do Processo: Um relatório de um processo de AEM Forms especificado por duração
+* **[Gráfico](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**de Duração do Processo: Um relatório de um processo AEM Forms especificado por duração
 
 * **[Volume](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**do fluxo de trabalho: Um relatório das instâncias em execução e concluídas do processo especificado por data
 
@@ -77,7 +77,7 @@ O relatório Duração do processo exibe o número de instâncias de um processo
 
    Parâmetros:
 
-   * **Selecionar Processo** (*obrigatório*): Selecione um processo do AEM Forms.
+   * **Selecionar Processo** (*obrigatório*): Selecione um processo AEM Forms.
 
 1. Clique em **Ir** para executar o relatório.
 
@@ -93,7 +93,7 @@ O relatório Duração do processo exibe o número de instâncias de um processo
 
 ## Relatório de volume do fluxo de trabalho {#workflow-volume-report}
 
-O relatório de Volume do fluxo de trabalho exibe o número de instâncias atualmente em execução e concluídas de um processo de formulários AEM por dia de calendário.
+O relatório de Volume do fluxo de trabalho exibe o número de instâncias atualmente em execução e concluídas de um processo AEM Forms por dia de calendário.
 
 ### Para executar um relatório de Volume do fluxo de trabalho {#to-execute-a-workflow-volume-report-br}
 
@@ -108,7 +108,7 @@ O relatório de Volume do fluxo de trabalho exibe o número de instâncias atual
 
    Parâmetros:
 
-   * **Selecione Processo**(*obrigatório*): Selecione um processo do AEM Forms.
+   * **Selecione Processo**(*obrigatório*): Selecione um processo AEM Forms.
    * **Iniciado após** (*opcional*): Selecione uma data. Filtros o relatório para exibir instâncias de processo que foram iniciadas após a data especificada.
    * **Iniciado antes** (*opcional*): Selecione uma data. Filtros o relatório para exibir instâncias de processo iniciadas antes da data especificada.
 
