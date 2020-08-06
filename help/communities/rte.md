@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 Um Editor de Rich Text (RTE) fornece a capacidade de inserir texto com marcação.
 
-Para os componentes Comunidades, embora semelhante ao editor de texto [avançado no ambiente](../../help/sites-authoring/rich-text-editor.md)do autor, afeta o texto inserido no ambiente de publicação.
+Para componentes Comunidades, embora semelhantes ao editor de texto [avançado no ambiente](../../help/sites-authoring/rich-text-editor.md)do autor, isso afeta o texto inserido no ambiente de publicação.
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -44,13 +47,13 @@ O RTE está disponível para os seguintes componentes das Comunidades:
 
 ## Personalização {#customization}
 
-A personalização do editor de rich text é possível, pois a implementação se baseia no [CKEditor](https://www.ckeditor.com/).
+A personalização do editor de Rich Text é possível, pois a implementação se baseia no [CKEditor](https://www.ckeditor.com/).
 
 A configuração atual dos componentes Comunidades está no repositório, localizado no `cq.social.  scf   clientlib`diretório
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
-Não é recomendado modificar a clientlib cq.social.scf, pois as atualizações futuras podem substituir qualquer edição.
+Não é recomendável modificar a clientlib cq.social.scf, pois as atualizações futuras podem substituir qualquer edição.
 
 ### Exemplo de personalização: Links em linha {#example-customization-inline-links}
 
