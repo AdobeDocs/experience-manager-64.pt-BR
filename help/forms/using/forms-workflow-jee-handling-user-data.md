@@ -1,6 +1,6 @@
 ---
-title: workflows JEE de formulários | Tratamento de dados de utilizadores
-seo-title: workflows JEE de formulários | Tratamento de dados de utilizadores
+title: workflows Forms JEE | Tratamento de dados de utilizadores
+seo-title: workflows Forms JEE | Tratamento de dados de utilizadores
 description: 'null'
 seo-description: 'null'
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# workflows JEE de formulários | Tratamento de dados de utilizadores {#forms-jee-workflows-handling-user-data}
+# workflows Forms JEE | Tratamento de dados de utilizadores {#forms-jee-workflows-handling-user-data}
 
-Os workflows JEE do AEM Forms fornecem ferramentas para projetar, criar e gerenciar processos de negócios. Um processo de fluxo de trabalho consiste em uma série de etapas que são executadas em uma ordem especificada. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Um processo pode interagir com ativos, contas de usuário e serviços, e pode ser acionado usando qualquer um dos seguintes métodos:
+Os workflows AEM Forms JEE fornecem ferramentas para projetar, criar e gerenciar processos comerciais. Um processo de fluxo de trabalho consiste em uma série de etapas que são executadas em uma ordem especificada. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Um processo pode interagir com ativos, contas de usuário e serviços, e pode ser acionado usando qualquer um dos seguintes métodos:
 
 * Iniciar um processo a partir do AEM Forms Workspace
 * Uso do serviço SOAP ou RESTful
@@ -26,11 +26,11 @@ Os workflows JEE do AEM Forms fornecem ferramentas para projetar, criar e gerenc
 * Uso da pasta assistida
 * Usando email
 
-Para obter mais informações sobre como criar o processo de fluxo de trabalho JEE do AEM Forms, consulte Ajuda [do](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)Workbench.
+Para obter mais informações sobre como criar o processo de fluxo de trabalho do AEM Forms JEE, consulte a Ajuda [do](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)Workbench.
 
 ## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
-Quando um processo é acionado e à medida que ele avança, ele captura dados sobre os participantes do processo, dados inseridos pelos participantes no formulário associado ao processo e anexos adicionados ao formulário. Os dados são armazenados no banco de dados do servidor JEE do AEM Forms e, se configurados, alguns dados como anexos são armazenados no diretório GDS (Global Documento Armazenamento). O diretório GDS pode ser configurado em um sistema de arquivos compartilhado ou em um banco de dados.
+Quando um processo é acionado e à medida que ele avança, ele captura dados sobre os participantes do processo, dados inseridos pelos participantes no formulário associado ao processo e anexos adicionados ao formulário. Os dados são armazenados no banco de dados do servidor AEM Forms JEE e, se configurados, alguns dados como anexos são armazenados no diretório GDS (Global Documento Armazenamento). O diretório GDS pode ser configurado em um sistema de arquivos compartilhado ou em um banco de dados.
 
 ## Acessar e excluir dados do usuário {#access-and-delete-user-data}
 
@@ -39,14 +39,14 @@ Quando um processo é acionado, uma ID de instância de processo exclusiva e uma
 No entanto, não é possível identificar a ID da instância do processo para um iniciador nos seguintes cenários:
 
 * **Processo acionado por meio de uma pasta** assistida: Uma instância do processo não pode ser identificada usando seu iniciador se o processo for acionado por uma pasta monitorada. Nesse caso, as informações do usuário são codificadas nos dados armazenados.
-* **Processo iniciado a partir da instância** do AEM de publicação: Todas as instâncias de processo acionadas pela instância de publicação do AEM não capturam informações sobre o iniciador. No entanto, os dados do usuário podem ser capturados no formulário associado ao processo, que é armazenado nas variáveis do fluxo de trabalho.
+* **Processo iniciado da instância** de publicação AEM: Todas as instâncias de processo acionadas AEM instância de publicação não capturam informações sobre o iniciador. No entanto, os dados do usuário podem ser capturados no formulário associado ao processo, que é armazenado nas variáveis do fluxo de trabalho.
 * **Processo iniciado por email**: A ID de e-mail do remetente é capturada como uma propriedade em uma coluna de blob opaca da tabela do `tb_job_instance` banco de dados, que não pode ser consultada diretamente.
 
 ### Identificar as IDs de instância do processo quando o iniciador ou participante do fluxo de trabalho for conhecido {#initiator-participant}
 
 Execute as seguintes etapas para identificar as IDs de instância de processo para um iniciador de fluxo de trabalho ou um participante:
 
-1. Execute o seguinte comando no banco de dados do servidor do AEM Forms para recuperar a ID principal do iniciador do fluxo de trabalho ou do participante da tabela do `edcprincipalentity` banco de dados.
+1. Execute o seguinte comando no banco de dados do servidor AEM Forms para recuperar a ID principal do iniciador ou participante do fluxo de trabalho da tabela do `edcprincipalentity` banco de dados.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -139,7 +139,7 @@ Agora que você identificou as IDs de instância de processo associadas a um usu
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   O `purgeProcessInstance` método exclui completamente todos os dados para a ID de invocação especificada do banco de dados do servidor do AEM Forms e do GDS, se configurado.
+   O `purgeProcessInstance` método exclui completamente todos os dados para a ID de invocação especificada do banco de dados do servidor AEM Forms e do GDS, se configurado.
 
 ### Trabalhar com tarefas órfãs {#orphan}
 
@@ -147,7 +147,7 @@ As tarefas órfãs são as tarefas cujo processo de contenção foi iniciado mas
 
 Depois de ter as IDs de tarefa, faça o seguinte para expurgar os arquivos e dados associados com uma tarefa órfã do GDS e do banco de dados.
 
-1. Execute o seguinte comando no banco de dados do servidor do AEM Forms para recuperar IDs para as IDs de tarefa identificadas.
+1. Execute o seguinte comando no banco de dados do servidor AEM Forms para recuperar IDs para as IDs de tarefa identificadas.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -187,7 +187,7 @@ Depois de ter as IDs de tarefa, faça o seguinte para expurgar os arquivos e dad
 
 
 
-1. Execute os seguintes comandos para excluir dados de IDs de tarefa do banco de dados do servidor do AEM Forms:
+1. Execute os seguintes comandos para excluir dados de IDs de tarefa do banco de dados do servidor AEM Forms:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>
