@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 8%
 
 ---
 
@@ -23,18 +26,18 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 >
 >Consulte [Personalizar os consoles](/help/sites-developing/customizing-consoles-touch.md) para obter detalhes sobre a interface de usuário padrão habilitada para toque.
 
-O console de boas-vindas fornece uma lista de links para os vários consoles e funcionalidades no AEM.
+O console de boas-vindas fornece uma lista de links para os vários consoles e funcionalidades dentro do AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-É possível configurar os links que estão visíveis. Isso pode ser definido para usuários e/ou grupos específicos. As ações a serem executadas dependem do tipo de destino (que corresponde à seção do console em que estão):
+É possível configurar os links que estão visíveis. Isso pode ser definido para usuários e/ou grupos específicos. As ações a serem executadas dependem do tipo de público alvo (que corresponde à seção do console em que estão):
 
 * [Consoles](#links-in-main-console-left-pane) principais - Links no console principal (painel esquerdo)
 * [Recursos, documentação e referência, Recursos](#links-in-sidebar-right-pane) - Links na barra lateral (painel direito)
 
 ## Links no console principal (painel esquerdo) {#links-in-main-console-left-pane}
 
-Isso lista os consoles principais do AEM.
+Isso lista os consoles principais da AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
@@ -46,7 +49,7 @@ As permissões de nível de nó determinam se o link pode ser visto ou não. Os 
 
 * **Ativos digitais:** `/libs/wcm/core/content/damadmin`
 
-* **** Comunidade: `/libs/collab/core/content/admin`
+* **Comunidade:** `/libs/collab/core/content/admin`
 
 * **Campanhas:** `/libs/mcm/content/admin`
 
@@ -187,26 +190,27 @@ Consulte a seção [](/help/sites-administering/security.md) Segurança para obt
 
 ### Mecanismo de seleção de links {#link-selection-mechanism}
 
-Em `/libs/cq/core/components/welcome/welcome.jsp` uso é feito de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa uma consulta em nós que têm a propriedade:
+Em `/libs/cq/core/components/welcome/welcome.jsp` uso é feito de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa um query em nós que têm a propriedade:
 
 * `jcr:mixinTypes` com o valor: `cq:Console`
 
 >[!NOTE]
 >
->Execute a seguinte consulta para ver a lista existente:
+>Execute o seguinte query para ver a lista existente:
 >
 >* `select * from cq:Console`
+
 >
 
 
 
-Quando um usuário ou grupo não tem permissão de leitura em um nó com a mistura `cq:Console`, esse nó não é recuperado pela `ConsoleUtil` pesquisa, portanto, não está listado no console.
+Quando um usuário ou grupo não tem permissão de leitura em um nó com a mistura `cq:Console`, esse nó não é recuperado pela `ConsoleUtil` pesquisa, portanto, ele não está listado no console.
 
 ### Adicionar um item personalizado {#adding-a-custom-item}
 
 O mecanismo [de seleção de](#link-selection-mechanism) links pode ser usado para adicionar seu próprio item personalizado à lista de links.
 
-Adicione seu item personalizado à lista, adicionando o `cq:Console` mixin ao seu widget ou recurso. Isso é feito definindo a propriedade:
+Adicione seu item personalizado à lista adicionando o `cq:Console` mixin ao seu widget ou recurso. Isso é feito definindo a propriedade:
 
 * `jcr:mixinTypes` com o valor: `cq:Console`
 
