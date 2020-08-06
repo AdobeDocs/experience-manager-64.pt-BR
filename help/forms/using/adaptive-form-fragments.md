@@ -39,7 +39,7 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 1. Clique para abrir a guia Modelo **[!UICONTROL de]** formulário e, no menu suspenso **[!UICONTROL Selecionar]** , selecione um dos seguintes modelos para o fragmento:
 
    * **[!UICONTROL Nenhum]**: Especifica a criação do fragmento do zero sem usar qualquer modelo de formulário.
-   * **[!UICONTROL Modelo]** de formulário: Especifica a criação do fragmento usando um modelo XDP carregado para AEM Forms. Selecione o modelo XDP apropriado como o modelo de formulário para o fragmento.
+   * **[!UICONTROL Modelo]** de formulário: Especifica a criação do fragmento usando um modelo XDP carregado no AEM Forms. Selecione o modelo XDP apropriado como o modelo de formulário para o fragmento.
 
    ![Criação de um formulário adaptável usando modelo de formulário como modelo](assets/form-template-model.png)
 
@@ -49,7 +49,7 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 
    Além disso, é possível criar um fragmento de formulário adaptável usando subformulários que não estão marcados como fragmentos no modelo de formulário especificando a expressão SOM para o subformulário na caixa suspensa.
 
-   * **[!UICONTROL Schema]** XML: Especifica a criação do fragmento usando um schema XML carregado em AEM Forms. É possível carregar ou selecionar entre os schemas XML disponíveis como o modelo de formulário para o fragmento.
+   * **[!UICONTROL Schema]** XML: Especifica a criação do fragmento usando um schema XML carregado no AEM Forms. É possível carregar ou selecionar entre os schemas XML disponíveis como o modelo de formulário para o fragmento.
 
    ![Criar um fragmento de formulário adaptável com base em um schema XML como modelo](assets/xml-schema-model.png)
 
@@ -59,7 +59,7 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 
 1. Clique em **[!UICONTROL Criar]** e em **[!UICONTROL Abrir]** para abrir o fragmento, com um modelo padrão, no modo de edição.
 
-No modo de edição, você pode arrastar e soltar qualquer componente de formulário adaptável do sidekick AEM no fragmento. Para obter informações sobre componentes de formulário adaptáveis, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
+No modo de edição, você pode arrastar e soltar qualquer componente de formulário adaptável do sidekick AEM para o fragmento. Para obter informações sobre componentes de formulário adaptáveis, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
 
 Além disso, se você selecionou um schema XML ou modelo de formulário XDP como o modelo de formulário para o fragmento, uma nova guia exibindo a hierarquia do modelo de formulário será exibida no localizador de conteúdo. Ela permite arrastar e soltar elementos de modelo de formulário no fragmento. Os elementos de modelo de formulário adicionados são convertidos em componentes de formulário enquanto mantêm as propriedades originais do XDP ou XSD associado.
 
@@ -107,17 +107,17 @@ Além disso, se você selecionou um schema XML ou modelo de formulário XDP como
 
 ### Configurar aparência do fragmento {#configure-fragment-appearance}
 
-Qualquer fragmento inserido em formulários adaptáveis aparece como uma imagem de espaço reservado. O espaço reservado exibe títulos de até um máximo de dez painéis filhos no fragmento. Você pode configurar AEM Forms para mostrar o fragmento completo em vez da imagem de espaço reservado.
+Qualquer fragmento inserido em formulários adaptáveis aparece como uma imagem de espaço reservado. O espaço reservado exibe títulos de até um máximo de dez painéis filhos no fragmento. Você pode configurar o AEM Forms para mostrar o fragmento completo em vez da imagem de espaço reservado.
 
 Execute as seguintes etapas para mostrar fragmentos completos em formulários:
 
-1. Vá para a página de configuração do console da Web do AEM em https:[*host*]:[*port*]/system/console/configMgr.
+1. Vá para AEM página de configuração do console da Web em https:[*host*]:[*port*]/system/console/configMgr.
 1. Pesquise e clique em Serviço **** de configuração de formulário adaptável para abri-lo no modo de edição.
 1. Desative **[!UICONTROL a caixa de seleção Ativar espaço reservado no lugar do fragmento]** para mostrar fragmentos completos em vez da imagem do espaço reservado.
 
 ### Inserir um fragmento em um formulário adaptável {#insert-a-fragment-in-an-adaptive-form}
 
-Os fragmentos de formulário adaptáveis criados aparecem na guia Fragmentos de formulário adaptáveis do localizador de conteúdo do AEM. Para inserir um fragmento de formulário adaptável em um formulário adaptável:
+Os fragmentos de formulário adaptável criados são exibidos na guia Fragmentos de formulário adaptáveis do localizador de conteúdo AEM. Para inserir um fragmento de formulário adaptável em um formulário adaptável:
 
 1. Abra o formulário adaptável, no modo de edição, no qual deseja inserir um fragmento de formulário adaptável.
 1. Clique em **[!UICONTROL Assets]** ![assets-browser](assets/assets-browser.png) na barra lateral. No navegador de ativos, selecione Fragmentos **[!UICONTROL de formulário]** adaptáveis no menu suspenso.
@@ -158,7 +158,7 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
 
 >[!NOTE]
 >
->Também é possível arrastar e soltar um fragmento de formulário adaptável vinculado da biblioteca do fragmento de formulário adaptável no localizador de conteúdo AEM e fornecer a referência de vínculo correta na caixa de diálogo Editar componente do painel do fragmento de formulário adaptável.
+>Também é possível arrastar e soltar um fragmento de formulário adaptável vinculado da biblioteca do fragmento de formulário adaptável AEM localizador de conteúdo e fornecer a referência de vínculo correta na caixa de diálogo Editar componente do painel do fragmento de formulário adaptável.
 
 ## Gerenciar fragmentos {#manage-fragments}
 
