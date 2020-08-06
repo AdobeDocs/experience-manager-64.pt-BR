@@ -1,8 +1,8 @@
 ---
-title: Obter documentos XDP e PDF no AEM Forms
-seo-title: Obter documentos XDP e PDF no AEM Forms
-description: O AEM Forms permite carregar formulários e ativos suportados para uso com formulários adaptáveis. Você também pode fazer upload em massa de formulários e recursos relacionados como um ZIP.
-seo-description: O AEM Forms permite carregar formulários e ativos suportados para uso com formulários adaptáveis. Você também pode fazer upload em massa de formulários e recursos relacionados como um ZIP.
+title: Obtendo documentos XDP e PDF no AEM Forms
+seo-title: Obtendo documentos XDP e PDF no AEM Forms
+description: A AEM Forms permite carregar formulários e ativos suportados para uso com formulários adaptáveis. Você também pode fazer upload em massa de formulários e recursos relacionados como um ZIP.
+seo-description: A AEM Forms permite carregar formulários e ativos suportados para uso com formulários adaptáveis. Você também pode fazer upload em massa de formulários e recursos relacionados como um ZIP.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,25 +10,28 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
 
-# Obter documentos XDP e PDF no AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
+# Obtendo documentos XDP e PDF no AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Visão geral {#overview}
 
-É possível importar seus formulários do sistema de arquivos local para o repositório CRX, fazendo upload para o AEM Forms. A operação de upload é compatível com os seguintes tipos de ativos:
+É possível importar seus formulários do sistema de arquivos local para o repositório CRX, fazendo upload para a AEM Forms. A operação de upload é compatível com os seguintes tipos de ativos:
 
 * Modelos de formulário (formulários XFA)
-* Formulários PDF
+* PDF forms
 * Documento (documentos PDF simples)
 
-Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode carregar um ativo do tipo `Resource`, somente ao lado de um formulário XFA em um arquivo ZIP.
+Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode fazer upload de um ativo do tipo `Resource`, somente ao lado de um formulário XFA em um arquivo ZIP.
 
 >[!NOTE]
 >
->Certifique-se de que você é um membro do `form-power-users` grupo para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar membro do grupo.
+>Certifique-se de que você é um membro do `form-power-users` grupo para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar um membro do grupo.
 
 ## Carregar formulários {#uploading-forms}
 
@@ -36,7 +39,7 @@ Você pode fazer upload dos tipos de ativos suportados individualmente ou como u
 1. Navegue até a pasta onde deseja carregar o formulário ou a pasta que contém os formulários.
 1. Na barra de ferramentas de ações, toque em **Criar > Upload** de arquivo.
 
-   ![Arquivos da opção de armazenamento local em Criar](assets/step.png)
+   ![Arquivos da opção armazenamento local em Criar](assets/step.png)
 
 1. A caixa de diálogo Carregar formulário(s) ou pacote permite que você navegue e escolha o arquivo que deseja carregar. O navegador de arquivos exibe apenas os formatos de arquivo suportados (ZIP, XDP e PDF).
 
@@ -44,11 +47,11 @@ Você pode fazer upload dos tipos de ativos suportados individualmente ou como u
    >
    >Um nome de arquivo só pode conter caracteres alfanuméricos, hífen ou sublinhado.
 
-1. Clique em Carregar após a seleção do arquivo para fazer upload dos arquivos ou clique em &#39;Cancelar&#39; para cancelar o upload. Uma pop-up lista os ativos que são adicionados e os ativos que são atualizados no local atual.
+1. Clique em Carregar após a seleção do arquivo para fazer upload dos arquivos ou clique em &#39;Cancelar&#39; para cancelar o upload. Um pop-up lista os ativos adicionados e os ativos que são atualizados no local atual.
 
    >[!NOTE]
    >
-   >Para um arquivo ZIP, os caminhos relativos de todos os ativos suportados são exibidos. Os ativos não suportados dentro do ZIP são ignorados e não listados. Entretanto, se o arquivo ZIP contiver apenas os ativos não suportados, uma mensagem de erro será exibida em vez da caixa de diálogo pop-up.
+   >Para um arquivo ZIP, os caminhos relativos de todos os ativos suportados são exibidos. Os ativos não suportados dentro do ZIP são ignorados e não listados. No entanto, se o arquivo ZIP contiver apenas os ativos não suportados, uma mensagem de erro será exibida em vez da caixa de diálogo pop-up.
 
    ![Carregar caixa de diálogo ao carregar um formulário XFA](assets/upload-scr.png)
 
@@ -56,16 +59,16 @@ Você pode fazer upload dos tipos de ativos suportados individualmente ou como u
 
    ![Mensagem de erro ao carregar um formulário XFA](assets/upload-scr-err.png)
 
-Quando o upload for concluído, um fluxo de trabalho em segundo plano gerará miniaturas para cada ativo, com base na visualização do ativo. As versões mais recentes dos ativos, se carregados, substituem os ativos existentes.
+Quando o upload for concluído, um fluxo de trabalho em segundo plano gerará miniaturas para cada ativo, com base na pré-visualização do ativo. As versões mais recentes dos ativos, se carregados, substituem os ativos existentes.
 
 ### Modo protegido {#protected-mode}
 
-O servidor do AEM Forms permite executar código JavaScript. Um código JavaScript mal-intencionado pode prejudicar um ambiente AEM Forms. O modo protegido restringe o AEM Forms a executar arquivos XDP somente de ativos e locais confiáveis. Todos os XDP disponíveis na interface do usuário do AEM Forms são considerados ativos confiáveis.
+O servidor AEM Forms permite que você execute o código JavaScript. Um código JavaScript mal-intencionado pode prejudicar um ambiente AEM Forms. O modo protegido restringe o AEM Forms a executar arquivos XDP somente de ativos e locais confiáveis. Todos os XDP disponíveis na interface do usuário do AEM Forms são considerados ativos confiáveis.
 
 O modo protegido está ativado, por padrão. Se necessário, você pode desativar o modo protegido:
 
-1. Faça logon no console da Web do AEM como administrador. O URL é `https://[server]:[port]/system/console/configMgr`
-1. Abra Configurações de formulários móveis para edição.
+1. Efetue login no AEM Web Console como um administrador. O URL é `https://[server]:[port]/system/console/configMgr`
+1. Abra Configurações de Forms móvel para edição.
 1. Desmarque a opção Modo protegido e clique em **Salvar**. O modo protegido está desativado.
 
 ## Atualização de formulários XFA referenciados {#updating-referenced-xfa-forms}
