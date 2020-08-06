@@ -50,12 +50,12 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 * `parent`: Link para a pasta pai.
 * `thumbnail`: (Opcional) link para uma imagem em miniatura da pasta.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 No Experience Manager, um ativo contém os seguintes elementos:
 
 * As propriedades e os metadados do ativo.
-* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As execuções adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
+* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
 * Comentários opcionais.
 
 Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
@@ -85,7 +85,7 @@ A API HTTP Assets inclui os seguintes recursos:
 **Pré-requisitos**
 
 * Acesso `https://[aem_server]:[port]/system/console/configMgr`.
-* Navegue até Filtro **[!UICONTROL CSRF do]** Adobe Granite.
+* Navegue até **[!UICONTROL Adobe Granite CSRF Filter]**.
 * Verifique se a propriedade Métodos **[!UICONTROL de]** filtro inclui: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
