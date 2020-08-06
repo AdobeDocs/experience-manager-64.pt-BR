@@ -179,7 +179,7 @@ Não é possível encerrar processos que tenham elementos de gateway no diagrama
 
 Você pode repetir a operação com um status STALLED.
 
-Quando você tenta uma operação novamente, o fluxo de trabalho do Forms recebe uma solicitação para reiniciar a operação. Se a solicitação for bem-sucedida, o status mudará para EXECUÇÃO. Se a operação não puder ser reiniciada, ela permanecerá PARADA e talvez seja necessário encerrá-la.
+Quando você tenta uma operação novamente, o fluxo de trabalho da Forms recebe uma solicitação para reiniciar a operação. Se a solicitação for bem-sucedida, o status mudará para EXECUÇÃO. Se a operação não puder ser reiniciada, ela permanecerá PARADA e talvez seja necessário encerrá-la.
 
 1. Na página Detalhes da instância do processo, clique na guia Operações.
 1. Selecione a operação e clique em Repetir.
