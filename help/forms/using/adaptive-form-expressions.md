@@ -89,7 +89,7 @@ A expressão click manipula as ações executadas no evento click de um botão. 
 
 **Tipo** de retorno: A expressão click não retorna nenhum valor. Se qualquer expressão retornar um valor, ele será ignorado.
 
-**Exemplo**: Para preencher uma caixa de texto **caixa1** na ação de clique de um botão com o valor **AEM Forms**, a expressão de clique do botão é `textbox1.value="AEM Forms"` &quot;
+**Exemplo**: Para preencher uma caixa de texto **caixa1** na ação de clique de um botão com valor **AEM Forms**, a expressão de clique do botão é `textbox1.value="AEM Forms"` &quot;
 
 ### Script de inicialização {#initialization-script}
 
@@ -166,7 +166,7 @@ O script de Confirmação de Valor é acionado quando:
 
 >[!NOTE]
 >
->Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado de forma programática. Para fazer isso, acesse Versão de formulários `https://[server]:[port]/system/console/configMgr and change` adaptáveis para compatibilidade **com o** AEM Forms 6.1 ****. Em seguida, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
+>Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado de forma programática. Para fazer isso, vá para Versão `https://[server]:[port]/system/console/configMgr and change` adaptável Forms para compatibilidade **com o** AEM Forms 6.1 ****. Em seguida, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
 
 ### Expressão de visibilidade {#visibility-expression}
 
@@ -255,7 +255,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->No AEM, é uma boa prática gravar um código em um clientLib e incluí-lo em sua página (header.jsp ou footer.jsp da página)
+>No AEM, é uma boa prática gravar o código em um clientLib e incluí-lo na sua página (header.jsp ou footer.jsp da página)
 
 Para usar o GuideBridge após a inicialização do formulário (o `bridgeInitializeComplete` evento é despachado), use a instância do GuideBridge `window.guideBridge`. Você pode verificar o status de inicialização do GuideBridge usando a `guideBride.isConnected` API.
 
@@ -283,7 +283,7 @@ Execute as seguintes etapas para criar um padrão personalizado para um tipo de 
 1. Crie uma pasta para manter seus padrões personalizados. No diretório /apps, crie um nó do tipo sling:folder. Por exemplo, crie um nó com o nome `customPatterns`. Neste nó, crie outro nó do tipo `nt:unstructed` e nomeie-o `textboxpatterns`. Este nó contém os vários padrões personalizados que você deseja adicionar.
 1. Abra a guia Propriedades do nó criado. Por exemplo, abra a guia Propriedades de `textboxpatterns`. Adicione a `guideComponentType` propriedade a esse nó e defina seu valor como *fd/af/components/formatter/guideTextBox*.
 1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para o campo numérico, o valor da `guideComponentType` propriedade é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*.
-1. É possível adicionar um padrão personalizado atribuindo uma propriedade ao `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas em Formulários adaptáveis.
+1. É possível adicionar um padrão personalizado atribuindo uma propriedade ao `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as caixas de texto usadas no Forms adaptável.
 
    ![Criação de padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
    **Figura:** *Criação de padrões personalizados*
