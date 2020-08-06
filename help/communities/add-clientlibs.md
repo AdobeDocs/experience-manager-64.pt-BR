@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 ## Adicionar uma ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Crie uma ClientLibraryFolder `clientlibs`que conterá o JS e o CSS usados para renderizar as páginas do site.
+Crie uma ClientLibraryFolder com o nome `clientlibs`que conterá o JS e o CSS usados para renderizar as páginas do site.
 
 O valor de `categories`propriedade fornecido para essa biblioteca de cliente é o identificador usado para incluir diretamente essa clientlib de uma página de conteúdo ou para incorporá-la a outras clientlibs.
 
@@ -42,7 +45,7 @@ Na guia **[!UICONTROL Propriedades]** do novo `clientlibs` nó, digite a **`cate
 * Clique em **[!UICONTROL Adicionar]**
 * Clique em **[!UICONTROL Salvar tudo]**
 
-Observação: como pré-visualizar o valor das categorias com &quot;aplicativos&quot;. é uma convenção para identificar o &quot;aplicativo proprietário&quot; como estando na pasta /apps, não /libs.  IMPORTANTE: Adicione espaço reservado `js.txt` e `css.txt` arquivos. (Não é oficialmente uma cq:ClientLibraryFolder sem eles.)
+Observação: como visualizar o valor do categoria com &quot;aplicativos&quot;. é uma convenção para identificar o &quot;aplicativo proprietário&quot; como estando na pasta /apps, não /libs.  IMPORTANTE: Adicione espaço reservado `js.txt` e `css.txt` arquivos. (Não é oficialmente uma cq:ClientLibraryFolder sem eles.)
 
 
 1. Clique com o botão direito em **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -79,7 +82,7 @@ Na guia **[!UICONTROL Propriedades]** do `clientlibs` nó, digite a propriedade 
 
 **Observe** que essa pode ou não ser a abordagem desejada para usar em um site de produção, pois há considerações de conveniência em relação ao tamanho/velocidade dos clientlibs baixados para cada página.
 
-Se apenas estiver usando um recurso em uma página, você poderá incluir a clientlib completa desse recurso diretamente na página, por exemplo, &lt;% ui:includeClientLib category=cq.social.hbs.forum&quot; %>
+Se apenas estiver usando um recurso em uma página, você poderá incluir a clientlib completa desse recurso diretamente na página, por exemplo, &lt;% ui:includeClientLib categoria=cq.social.hbs.forum&quot; %>
 
 Neste caso, estamos incluindo todos, e assim preferimos os clientlibs SCF mais básicos que são os clientlibs do autor:
 
@@ -111,7 +114,7 @@ Neste caso, estamos incluindo todos, e assim preferimos os clientlibs SCF mais b
 
 ## Incluir Clientlibs no modelo PlayPage {#include-clientlibs-in-playpage-template}
 
-Sem incluir a categoria `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes do SCF não serão funcionais nem estilizados, pois os Javascript e os estilos necessários não estarão disponíveis.
+Sem incluir a categoria `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes do SCF não estarão funcionais nem com estilo, pois os Javascript e o(s) estilo(s) necessários não estarão disponíveis.
 
 Por exemplo, sem incluir clientlibs, o componente de comentários SCF aparece sem estilo:
 
@@ -129,7 +132,7 @@ A declaração include pertence ao <head><meta http-equiv="Content-Type" content
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Copiar]** (ou selecione Copiar na barra de ferramentas)
 1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Colar]** (ou selecione Colar na barra de ferramentas)
-1. Clique duas vezes em **`headlibs.jsp`** para abri-lo
+1. Clique no Duplo **`headlibs.jsp`** para abri-lo
 1. Anexar a seguinte linha ao final do arquivo
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
@@ -155,14 +158,14 @@ Carregue seu site no navegador e veja se o plano de fundo não é uma sombra de 
 
 ## Salvando Seu Trabalho Até Agora {#saving-your-work-so-far}
 
-Nesse ponto, existe uma caixa de proteção minimalista e pode valer a pena salvar como um pacote para que, durante a reprodução, se o seu repositório ficar corrompido e você desejar reiniciar, você possa desligar, renomear ou excluir a pasta crx-quickstart/, ligar o servidor, carregar e instalar esse pacote salvo e não precisar repetir essas etapas mais básicas.
+Nesse ponto, existe uma caixa de proteção minimalista e pode valer a pena salvar como um pacote para que, durante a reprodução, se o seu repositório ficar corrompido e você desejar start, você possa desligar, renomear ou excluir a pasta crx-quickstart/, ligar o servidor, carregar e instalar esse pacote salvo e não precisar repetir essas etapas mais básicas.
 
-Este pacote existe no tutorial [Criar uma página](create-sample-page.md) de amostra para aqueles que não podem esperar para pular e começar a reproduzir!...
+Este pacote existe no tutorial [Criar uma página](create-sample-page.md) de amostra para aqueles que não podem esperar para pular e reproduzir start!...
 
 Para criar um pacote:
 
 
-* No **[!UICONTROL CRXDE Lite]**, clique no ícone [Pacote](http://localhost:4502/crx/packmgr/)
+* Na **[!UICONTROL CRXDE Lite]**, clique no ícone [Pacote](http://localhost:4502/crx/packmgr/)
 * Clique em **[!UICONTROL Criar pacote]**
 
    * Nome do pacote: `an-scf-sandbox-minimal-pkg`
@@ -172,7 +175,7 @@ Para criar um pacote:
 
 * Clique em **[!UICONTROL Editar]**
 
-   * Guia Selecionar **[!UICONTROL filtros]**
+   * Guia Selecionar **[!UICONTROL Filtros]**
 
       * Clique em **[!UICONTROL Adicionar filtro]**
       * Caminho raiz: &lt;navegar até `/apps/an-scf-sandbox`>
