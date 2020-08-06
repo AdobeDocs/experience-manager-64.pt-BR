@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
 source-git-commit: abf41bed195c7ea77202e0772e7be12501a6a5ac
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Este tutorial é uma etapa da série [Criar seu primeiro formulário](/help/form
 
 Você pode usar regras para adicionar interatividade, lógica comercial e validações inteligentes a um formulário adaptável. Formulários adaptáveis têm um editor de regras incorporado. O editor de regras fornece uma funcionalidade de arrastar e soltar, semelhante aos tours guiados. O método arrastar e soltar é o método mais rápido e fácil de criar regras. O editor de regras também fornece uma janela de código para usuários interessados em testar suas habilidades de codificação ou levar as regras para o próximo nível.
 
-Você pode saber mais sobre o editor de regras no editor de regras do [Adaptive Forms](/help/forms/using/rule-editor.md).
+Saiba mais sobre o editor de regras no editor de regras [Adaptive Forms](/help/forms/using/rule-editor.md).
 
 Ao final do tutorial, você aprenderá a criar regras para:
 
@@ -35,7 +38,7 @@ As imagens GIF interativas ao final de cada seção do tutorial ajudam você a a
 
 ## Etapa 1: Recuperar um registro de cliente do banco de dados {#retrieve-customer-record}
 
-Você criou um modelo de dados de formulário seguindo o artigo [Criar modelo](/help/forms/using/create-form-data-model.md) de dados de formulário. Agora, você pode usar o editor de regras para chamar os serviços de Modelo de dados de formulários para recuperar e adicionar informações ao banco de dados.
+Você criou um modelo de dados de formulário seguindo o artigo [Criar modelo](/help/forms/using/create-form-data-model.md) de dados de formulário. Agora, você pode usar o editor de regras para chamar os serviços do Forms Data Model para recuperar e adicionar informações ao banco de dados.
 
 A cada cliente é atribuído um número exclusivo de ID do cliente, que ajuda a identificar os dados relevantes do cliente em um banco de dados. O procedimento abaixo usa a ID do cliente para recuperar informações do banco de dados:
 
@@ -64,7 +67,7 @@ A cada cliente é atribuído um número exclusivo de ID do cliente, que ajuda a 
 
    Toque em **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, toque em **[!UICONTROL Fechar]**.
 
-1. Visualize o formulário adaptável. Insira uma ID no campo ID **[!UICONTROL do]** cliente. O formulário agora pode recuperar detalhes do cliente do banco de dados.
+1. Pré-visualização o formulário adaptável. Insira uma ID no campo ID **[!UICONTROL do]** cliente. O formulário agora pode recuperar detalhes do cliente do banco de dados.
 
    ![retrieve-information](assets/retrieve-information.gif)
 
@@ -92,11 +95,11 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
    >[!NOTE]
    >
-   >Não arraste e solte os campos **[!UICONTROL Nome]** e ID **[!UICONTROL do]** cliente para a propriedade tablename.property correspondente (por exemplo, customerdetails.name). Isso ajuda a evitar a atualização do nome e ID do cliente por engano.
+   >Não arraste e solte os campos **[!UICONTROL Nome]** e ID **[!UICONTROL do]** cliente para a propriedade tablename.property correspondente (por exemplo, customerdetails.name). Isso ajuda a evitar a atualização do nome e da ID do cliente por engano.
 
 1. Arraste e solte o campo ID **[!UICONTROL do]** cliente da guia Objetos de formulário para o campo id na caixa **[!UICONTROL ENTRADA]** . Os campos sem um nome de tablet prefixo (por exemplo, detalhes do cliente neste caso de uso) servem como parâmetro de pesquisa para o serviço de atualização. O campo **[!UICONTROL id]** nesse caso de uso identifica exclusivamente um registro na tabela de detalhes do cliente.
 1. Toque em **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, toque em **[!UICONTROL Fechar]**.
-1. Visualize o formulário adaptável. Recupere detalhes de um cliente, atualize o endereço de envio e envie o formulário. Quando você recupera os detalhes do mesmo cliente novamente, o endereço de entrega atualizado é exibido.
+1. Pré-visualização o formulário adaptável. Recupere os detalhes de um cliente, atualize o endereço de envio e envie o formulário. Quando você recupera os detalhes do mesmo cliente novamente, o endereço de entrega atualizado é exibido.
 
 ## Etapa 3: (seção Bônus) Use o editor de código para executar validações e exibir mensagens de erro {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
@@ -104,7 +107,7 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
 Os formulários adaptáveis fornecem vários componentes com validações incorporadas, por exemplo, e-mail e campos numéricos que podem ser usados para casos de uso comuns. Use o editor de regras para casos de uso avançado, por exemplo, para exibir uma mensagem de erro quando o banco de dados retornar zero (0) registros (nenhum registro).
 
-O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de erro se a ID do cliente inserida no formulário não existir no banco de dados. A regra também traz o foco e redefine o campo ID do cliente. A regra usa [a API dataIntegrationUtils do serviço](/help/forms/using/invoke-form-data-model-services.md) de modelo de dados de formulário para verificar se a ID do cliente existe no banco de dados.
+O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de erro se a ID do cliente inserida no formulário não existir no banco de dados. A regra também traz o foco para o campo ID do cliente e o redefine. A regra usa [a API dataIntegrationUtils do serviço](/help/forms/using/invoke-form-data-model-services.md) de modelo de dados de formulário para verificar se a ID do cliente existe no banco de dados.
 
 1. Toque no campo ID **[!UICONTROL do]** cliente e toque no `Edit Rules` ícone. A janela Editor de regras é aberta.
 1. Toque no ícone **[!UICONTROL + Criar]** para adicionar uma regra. Ele abre o Editor visual.
@@ -146,7 +149,7 @@ O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de 
    });
    ```
 
-1. Visualize o formulário adaptável. Insira uma ID de cliente incorreta. Uma mensagem de erro é exibida.
+1. Pré-visualização o formulário adaptável. Insira uma ID de cliente incorreta. Uma mensagem de erro é exibida.
 
    ![display-validation-error](assets/display-validation-error.gif)
 
