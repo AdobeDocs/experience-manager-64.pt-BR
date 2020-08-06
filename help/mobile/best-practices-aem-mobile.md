@@ -1,8 +1,8 @@
 ---
-title: 'Práticas recomendadas '
-seo-title: 'Práticas recomendadas '
-description: Siga esta página para saber mais sobre as práticas recomendadas e as diretrizes que ajudarão desenvolvedores experientes do AEM para sites que desejam criar modelos e componentes de aplicativos móveis.
-seo-description: Siga esta página para saber mais sobre as práticas recomendadas e as diretrizes que ajudarão desenvolvedores experientes do AEM para sites que desejam criar modelos e componentes de aplicativos móveis.
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
+description: Siga esta página para saber mais sobre as práticas recomendadas e as diretrizes que ajudarão desenvolvedores experientes AEM para sites, que desejam criar modelos e componentes de aplicativos móveis.
+seo-description: Siga esta página para saber mais sobre as práticas recomendadas e as diretrizes que ajudarão desenvolvedores experientes AEM para sites, que desejam criar modelos e componentes de aplicativos móveis.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
-# Práticas recomendadas  {#best-practices}
+# Práticas recomendadas     {#best-practices}
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Criar um aplicativo de serviços sob demanda do AEM Mobile é diferente de criar um aplicativo que é executado diretamente no shell do Cordova (ou PhoneGap). Os desenvolvedores devem estar familiarizados com:
+A criação de um aplicativo AEM Mobile On-demand Services é diferente da criação de um aplicativo que é executado diretamente no shell do Cordova (ou PhoneGap). Os desenvolvedores devem estar familiarizados com:
 
 * Plug-ins compatíveis prontos para uso, bem como plug-ins específicos do AEM Mobile.
 
@@ -30,7 +33,8 @@ Criar um aplicativo de serviços sob demanda do AEM Mobile é diferente de criar
 >Para saber mais sobre plug-ins, consulte os seguintes recursos:
 >
 >* [Usar plug-ins do Cordova no AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Usar plug-ins do Cordova específicos para o AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Usar plug-ins do Cordova específicos para AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+
 >
 
 
@@ -39,11 +43,11 @@ Criar um aplicativo de serviços sob demanda do AEM Mobile é diferente de criar
 
    * Por exemplo, aguarde a função *deviceready* antes de tentar acessar a API de um plug-in.
 
-## Diretrizes para desenvolvedores do AEM {#guidelines-for-aem-developers}
+## Diretrizes para AEM desenvolvedores {#guidelines-for-aem-developers}
 
-As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites que desejam criar modelos e componentes de aplicativos móveis:
+As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites, que desejam criar modelos e componentes de aplicativos móveis:
 
-**Estruturar modelos de sites do AEM para incentivar a reutilização e a extensibilidade**
+**Estruturar AEM sites modelos para incentivar a reutilização e a extensibilidade**
 
 * Preferir vários arquivos de script de componente em um único monolítico
 
@@ -52,7 +56,7 @@ As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites que 
 
 * Preferir Sightly/HTL sobre JSP como a linguagem de modelo
 
-   * Usar isso incentiva uma separação do código da marcação, oferece proteção XSS integrada e tem uma sintaxe mais familiar
+   * Usar isso incentiva a separação do código da marcação, as ofertas incorporadas à proteção XSS e têm uma sintaxe mais familiar
 
 **Otimizar para o desempenho no dispositivo**
 
@@ -62,7 +66,7 @@ As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites que 
 
 >[!NOTE]
 >
->Você pode aprender mais detalhes sobre scripts externos de bloqueio de renderização [aqui](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Você pode saber mais detalhadamente sobre scripts externos de bloqueio de renderização [aqui](https://developers.google.com/speed/docs/insights/BlockingJS).
 
 **Preferir bibliotecas JS e CSS do cliente específicas do aplicativo em relação a bibliotecas específicas da Web**
 
@@ -84,7 +88,7 @@ As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites que 
 * Use os menores ativos possíveis que possam cobrir efetivamente o maior visor que você estará suportando, em uma resolução razoável
 * Use uma ferramenta como *ImageOptim* em suas imagens para remover qualquer excesso de metadados
 
-## Como avançar {#getting-ahead}
+## Aproximando-se {#getting-ahead}
 
 Para entender mais sobre as outras duas funções e responsabilidades, consulte os recursos abaixo:
 
