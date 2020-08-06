@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 73%
 
 ---
 
@@ -176,7 +179,7 @@ O exemplo a seguir mostra um componente Link (Campaign) sendo exibido.
 
 ### Modelo de imagem do Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Modelos](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) de imagem Scene7 são em camadas arquivos de imagem em camadas, onde o conteúdo e as propriedades podem ser parametrizados para a variabilidade. O componente **Modelo de imagem** permite usar modelos do Scene7 em informativos e alterar os valores dos parâmetros de modelo. Além disso, você pode usar variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
+[Os Modelos](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) de imagem Scene7 são em camadas de arquivos de imagem, onde o conteúdo e as propriedades podem ser parametrizados para a variabilidade. O componente **Modelo de imagem** permite usar modelos do Scene7 em informativos e alterar os valores dos parâmetros de modelo. Além disso, você pode usar variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
@@ -271,6 +274,7 @@ No editor local, você pode adicionar texto, alterar a justificação, adicionar
 >
 >* Os campos de personalização disponíveis dependem do modelo do Adobe Campaign ao qual o seu informativo está vinculado.
 >* Após a seleção de uma persona no ContextHub, os campos de personalização são automaticamente substituídos pelos dados do perfil selecionado.
+
 >
 >
 Consulte [Inserir personalização](/help/sites-authoring/campaign.md#inserting-personalization).
@@ -319,7 +323,7 @@ A tabela a seguir descreve os componentes disponíveis para exibir e modificar d
   <tr> 
    <td><p>Caixa de seleção (Campaign)</p> </td> 
    <td><p>boolean</p> </td> 
-   <td><p>Não há mais contato (por qualquer canal)</p> </td> 
+   <td><p>Não há mais contato (por nenhum canal)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Campo de dados (Campanha)</p> <p>Campo de data/HTML 5 (Campanha)</p> </td> 
@@ -425,7 +429,8 @@ Além das [configurações comuns à maioria dos componentes do Adobe Campaign](
 * **Mensagem de restrição**
 
    Além disso, você pode adicionar uma mensagem de restrição para que os usuários saibam como formatar corretamente suas respostas.
-* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando nos ícones **+** e **-** ou digitando um número.
+* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando no botão 
+**+** e **-** ícones ou inserir um número.
 
 O exemplo a seguir mostra um componente Campo de dados (Campaign) com a largura ajustada sendo exibida.
 
@@ -442,7 +447,8 @@ Você pode configurar o seguinte no componente Chave primária criptografada (Ca
 * **Título e texto - Nome do elemento**
 
    O padrão é encryptedPK. Você só precisará alterar o nome do elemento quando ele estiver em conflito com o nome de outro elemento no formulário. Dois campos de formulário não podem ter o mesmo nome de elemento.
-* **Adobe Campaign - parâmetro de URL** Adicione o parâmetro de URL para a EPK. Por exemplo, você pode usar o valor **epk**.
+* **Adobe Campaign - parâmetro de URL** Adicione o parâmetro de URL para a EPK. Por exemplo, você pode usar o valor 
+**epk**.
 
 O exemplo a seguir mostra um componente Chave primária criptografada (Campaign) sendo exibido.
 
@@ -484,11 +490,12 @@ Além das [configurações comuns à maioria dos componentes do Adobe Campaign](
 * **Mensagem de restrição**
 
    Além disso, você pode adicionar uma mensagem de restrição para que os usuários saibam como formatar corretamente suas respostas.
-* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando nos ícones **+** e **-** ou digitando um número.
+* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando no botão 
+**+** e **-** ícones ou inserir um número.
 
 O exemplo a seguir mostra um componente Campo numérico (Campaign) com a largura configurada sendo exibida.
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![chlimage_1-129](assets/chlimage_1-127.png)
 
 ### Campo de opções (Campaign) {#option-field-campaign}
 
@@ -500,7 +507,7 @@ Essa lista suspensa permite selecionar uma opção, por exemplo, o sexo ou o sta
 
 O exemplo a seguir mostra um componente Campo de opções (Campaign) sendo exibido.
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+![chlimage_1-127](assets/chlimage_1-129.png)
 
 ### Lista de verificação de assinaturas (Campaign) {#subscriptions-checklist-campaign}
 
@@ -538,5 +545,5 @@ Além das [configurações comuns à maioria dos componentes do Adobe Campaign](
 
 O exemplo a seguir mostra um componente Campo de texto (Campaign) sendo exibido.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
