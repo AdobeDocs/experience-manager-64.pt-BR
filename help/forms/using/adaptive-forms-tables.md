@@ -1,8 +1,8 @@
 ---
 title: Tabelas em formulários adaptáveis
 seo-title: Tabelas em formulários adaptáveis
-description: 'O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP. '
-seo-description: 'O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP. '
+description: 'O componente Tabela no AEM Forms permite que você crie tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP. '
+seo-description: 'O componente Tabela no AEM Forms permite que você crie tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP. '
 uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 O uso de tabelas é uma forma eficiente, simplificada e organizada de apresentar dados complexos. Ajuda os usuários a identificar informações facilmente e a fornecer entradas em uma organização ordenada de linhas e colunas. A maioria dos formulários de serviços financeiros e organizações governamentais exigem grandes tabelas de dados para colocar números e realizar cálculos.
 
-O AEM Forms fornece um componente de Tabela no navegador de componentes na barra lateral que permite criar tabelas em formulários adaptáveis. Alguns dos principais recursos que ele oferece são:
+A AEM Forms fornece um componente Tabela no navegador de componentes na barra lateral que permite criar tabelas em formulários adaptáveis. Alguns dos principais recursos que ele oferece são:
 
 * Layout responsivo em dispositivos móveis
 * Linhas e colunas configuráveis
@@ -36,7 +36,7 @@ O AEM Forms fornece um componente de Tabela no navegador de componentes na barra
 
 Para criar uma tabela, arraste e solte o componente Tabela do navegador de componentes no sidekick no formulário adaptável. Por padrão, a tabela contém duas colunas e três linhas, incluindo a linha de cabeçalho.
 
-![Componente de tabela na barra lateral do AEM](assets/sidebar-tables.png)
+![Componente de tabela AEM barra lateral](assets/sidebar-tables.png)
 
 ### Sobre células de cabeçalho e corpo {#about-header-and-body-cells}
 
@@ -160,7 +160,7 @@ As imagens a seguir comparam a aparência de uma tabela em um dispositivo com co
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
-Tabelas em formulários adaptáveis permitem preencher a tabela em tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor do AEM Forms está sendo executado ou no repositório do CRX.
+Tabelas em formulários adaptáveis permitem preencher a tabela em tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor AEM Forms está sendo executado ou no repositório CRX.
 
 Vejamos a seguinte tabela de resumo de transações bancárias que queremos preencher com dados de um arquivo XML.
 
@@ -242,7 +242,7 @@ Para unir esses dados à tabela no tempo de execução, é necessário apontar o
 
 ## Usar componentes XDP e tipos complexos XSD {#use-xdp-components-and-xsd-complex-types}
 
-Se você tiver criado um formulário adaptável com base em um modelo de formulário XFA, os elementos XFA estarão disponíveis na guia Modelo de dados do AEM Content Finder. Você pode arrastar e soltar esses elementos XFA, incluindo tabelas, no formulário adaptável.
+Se você tiver criado um formulário adaptável com base em um modelo de formulário XFA, os elementos XFA estarão disponíveis na guia Modelo de dados AEM Localizador de conteúdo. Você pode arrastar e soltar esses elementos XFA, incluindo tabelas, no formulário adaptável.
 
 O elemento de tabela XFA é mapeado para o componente Tabela e funciona prontamente em formulários adaptáveis. Todas as propriedades e funcionalidades da tabela XDP são preservadas quando movidas para um formulário adaptável, e você pode executar qualquer operação nela da mesma forma que faz com a tabela de formulário adaptável nativa. Por exemplo, se uma linha em uma tabela XDP estiver marcada como repetível, ela será repetida quando solta também em formulários adaptáveis.
 
