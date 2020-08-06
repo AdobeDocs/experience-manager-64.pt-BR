@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 4%
 
 ---
 
@@ -39,13 +42,19 @@ Na guia **[!UICONTROL Textos e etiquetas]** , especifique as propriedades usadas
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Rótulo]** de resposta positiva (*obrigatório*) O nome da propriedade interna para uma resposta positiva.
+* **[!UICONTROL Rótulo de resposta positiva]**
+(
+*Obrigatório*) O nome da propriedade interna para uma resposta positiva.
 
-* **[!UICONTROL Rótulo]** de resposta negativa (*obrigatório*) O nome da propriedade interna para uma resposta negativa.
+* **[!UICONTROL Etiqueta de resposta negativa]**
+(
+*Obrigatório*) O nome da propriedade interna para uma resposta negativa.
 
-* **[!UICONTROL Nome]** de contagem (*obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
+* **[!UICONTROL Nome Tally]**
+(
+*Obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Membros {#members}
 
@@ -53,7 +62,7 @@ Os deputados só podem votar uma vez, mas podem alterar a sua votação em qualq
 
 ### Anônimo {#anonymous}
 
-Voto anônimo não é apoiado. Os visitantes do site devem se registrar (tornar-se um membro) e fazer logon para participar da votação uma vez.
+Voto anônimo não é apoiado. Os visitantes do site devem se registrar (tornar-se membros) e fazer logon para participar da votação uma vez.
 
 ## Informações adicionais {#additional-information}
 
