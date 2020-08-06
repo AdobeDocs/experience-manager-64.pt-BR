@@ -71,11 +71,11 @@ Verifique os seguintes parâmetros:
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Renderizador de formulários do Adobe XFA
+   * Renderizador Adobe XFA Forms
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Adobe XFA Forms LC Connector
+   * Conector LC Adobe XFA Forms
 
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
