@@ -1,6 +1,6 @@
 ---
-title: Pré-preenchimento de formulários com layouts flutuantes
-seo-title: Pré-preenchimento de formulários com layouts flutuantes
+title: Pré-preenchimento do Forms com layouts flutuantes
+seo-title: Pré-preenchimento do Forms com layouts flutuantes
 description: 'null'
 seo-description: 'null'
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
@@ -11,13 +11,16 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
 source-git-commit: 8c151c582d4355b98445ec4bf6510d668cb0d5bd
+workflow-type: tm+mt
+source-wordcount: '3489'
+ht-degree: 1%
 
 ---
 
 
-# Pré-preenchimento de formulários com layouts flutuantes {#prepopulating-forms-with-flowable-layouts1}
+# Pré-preenchimento do Forms com layouts flutuantes {#prepopulating-forms-with-flowable-layouts1}
 
-## Pré-preenchimento de formulários com layouts flutuantes {#prepopulating-forms-with-flowable-layouts2}
+## Pré-preenchimento do Forms com layouts flutuantes {#prepopulating-forms-with-flowable-layouts2}
 
 O pré-preenchimento de formulários exibe dados para os usuários em um formulário renderizado. Por exemplo, suponha que um usuário faça logon em um site com um nome de usuário e senha. Se a autenticação for bem-sucedida, o aplicativo cliente query um banco de dados para obter informações do usuário. Os dados são unidos ao formulário e, em seguida, ele é renderizado ao usuário. Como resultado, o usuário pode visualização dados personalizados dentro do formulário.
 
@@ -29,14 +32,14 @@ O pré-preenchimento de um formulário tem as seguintes vantagens:
 
 As duas fontes de dados XML a seguir podem pré-preencher um formulário:
 
-* Uma fonte de dados XDP, que é um XML em conformidade com a sintaxe XFA (ou dados XFDF para pré-preencher um formulário criado usando o Acrobat).
+* Uma fonte de dados XDP, que é XML em conformidade com a sintaxe XFA (ou dados XFDF para pré-preencher um formulário criado usando o Acrobat).
 * Uma fonte de dados XML arbitrária que contém pares de nome/valor correspondentes aos nomes de campo do formulário (os exemplos nesta seção usam uma fonte de dados XML arbitrária).
 
 Um elemento XML deve existir para cada campo de formulário que você deseja pré-preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem na qual os elementos XML são exibidos, desde que todos os elementos XML sejam especificados.
 
 Ao pré-preencher um formulário que já contém dados, você deve especificar os dados que já são exibidos na fonte de dados XML. Suponha que um formulário contendo 10 campos tenha dados em quatro campos. Em seguida, suponha que você deseja pré-preencher os seis campos restantes. Nessa situação, você deve especificar 10 elementos XML na fonte de dados XML que é usada para pré-preencher o formulário. Se você especificar apenas seis elementos, os quatro campos originais ficarão vazios.
 
-Por exemplo, é possível pré-preencher um formulário, como o formulário de confirmação de amostra. (Consulte &quot;Formulário de confirmação&quot; na [renderização de formulários](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interativos.)
+Por exemplo, é possível pré-preencher um formulário, como o formulário de confirmação de amostra. (Consulte &quot;Formulário de confirmação&quot; em [Renderização de PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interativos.)
 
 Para pré-preencher o formulário de confirmação de amostra, é necessário criar uma fonte de dados XML que contenha três elementos XML que correspondam aos três campos no formulário. Este formulário contém os três campos a seguir: `FirstName`, `LastName`e `Amount`. A primeira etapa é criar uma fonte de dados XML que contenha elementos XML correspondentes aos campos localizados no design de formulário. A próxima etapa é atribuir valores de dados aos elementos XML, como mostrado no código XML a seguir.
 
@@ -54,7 +57,7 @@ Depois de pré-preencher o formulário de confirmação com essa fonte de dados 
 
 ### Pré-preenchimento de formulários com layouts flutuantes {#prepopulating_forms_with_flowable_layouts-1}
 
-Formulários com layouts flutuantes são úteis para exibir uma quantidade indeterminada de dados aos usuários. Como o layout do formulário se ajusta automaticamente à quantidade de dados que é unida, não é necessário pré-determinar um layout fixo ou um número de páginas para o formulário, conforme necessário, para um formulário com layout fixo.
+O Forms com layouts flutuantes é útil para exibir uma quantidade indeterminada de dados para os usuários. Como o layout do formulário se ajusta automaticamente à quantidade de dados que é unida, não é necessário pré-determinar um layout fixo ou um número de páginas para o formulário, conforme necessário, para um formulário com layout fixo.
 
 Normalmente, um formulário é preenchido com dados obtidos durante o tempo de execução. Como resultado, é possível pré-preencher um formulário criando uma fonte de dados XML na memória e colocando os dados diretamente na fonte de dados XML na memória.
 
@@ -101,7 +104,7 @@ O diagrama a seguir mostra um exemplo de formulário de pedido de compra. As inf
 
 ### Considerações sobre design de formulário {#form-design-considerations}
 
-Formulários com layouts flutuantes são baseados em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão dentro do design de formulário. Por exemplo, no formulário de pedido de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criar um formulário de pedido de compra com layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)flutuante.
+O Forms com layouts flutuantes baseia-se em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão dentro do design de formulário. Por exemplo, no formulário de pedido de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criar um formulário de pedido de compra com layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)flutuante.
 
 ### Noções básicas sobre subgrupos de dados {#understanding-data-subgroups}
 
@@ -184,11 +187,11 @@ Cada subgrupo de dados deve conter elementos XML que correspondam aos nomes dos 
 
 >[!NOTE]
 >
->Se você tentar pré-preencher um formulário com uma fonte de dados que contenha elementos XML repetitivos e definir a `RenderAtClient` opção como `No`, somente o primeiro registro de dados será unido ao formulário. Para garantir que todos os registros de dados sejam mesclados no formulário, defina `RenderAtClient` como `Yes`. Para obter informações sobre a `RenderAtClient` opção, consulte [Renderização de formulários no Cliente](/help/forms/developing/rendering-forms-client.md).
+>Se você tentar pré-preencher um formulário com uma fonte de dados que contenha elementos XML repetitivos e definir a `RenderAtClient` opção como `No`, somente o primeiro registro de dados será unido ao formulário. Para garantir que todos os registros de dados sejam mesclados no formulário, defina `RenderAtClient` como `Yes`. Para obter informações sobre a `RenderAtClient` opção, consulte [Renderização do Forms no Cliente](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Forms, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -225,23 +228,23 @@ Uma fonte de dados XML na memória criada usando `org.w3c.dom` classes pode ser 
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Start rápidos da API do Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Start rápidos da API de serviço da Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Como renderizar formulários PDF interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Criação de Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Criação de Aplicações web que renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Pré-preenchimento de formulários usando a API Java {#prepopulating-forms-using-the-java-api}
 
-Para pré-preencher um formulário com um layout flutuante usando a API de formulários (Java), execute as seguintes etapas:
+Para pré-preencher um formulário com um layout flutuante usando a API do Forms (Java), execute as seguintes etapas:
 
 1. Incluir arquivos de projeto
 
-   Inclua arquivos JAR do cliente, como adobe-forms-client.jar, no caminho de classe do seu projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+   Inclua arquivos JAR do cliente, como adobe-forms-client.jar, no caminho de classe do seu projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca AEM Forms Java.
 
 1. Criar uma fonte de dados XML na memória
 
@@ -292,28 +295,29 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo.
    * Um `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário. Certifique-se de usar o `com.adobe.idp.Document` objeto criado nas etapas um e dois.
    * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários.
+   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
+
    O `renderPDFForm` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
    * Crie um `javax.servlet.ServletOutputStream` objeto usado para enviar um fluxo de dados de formulário para o navegador da Web do cliente.
    * Crie um `com.adobe.idp.Document` objeto chamando o `FormsResult` método do objeto `getOutputContent` .
    * Crie um `java.io.InputStream` objeto chamando o `com.adobe.idp.Document` método do `getInputStream` objeto.
    * Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o método do `InputStream` objeto `read` e transmitindo a matriz de bytes como um argumento.
-   * Chame o método `javax.servlet.ServletOutputStream` `write` do objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+   * Chame o método do `javax.servlet.ServletOutputStream` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
 
 
 **Consulte também:**
 
-[Start rápido (modo SOAP): Pré-preenchimento de formulários com layouts flutuantes usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Start rápido (modo SOAP): Pré-preencher o Forms com layouts flutuantes usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Pré-preenchimento de formulários usando a API de serviço da Web {#prepopulating-forms-using-the-web-service-api}
 
-Para pré-preencher um formulário com um layout flutuante usando a API de formulários (serviço da Web), execute as seguintes etapas:
+Para pré-preencher um formulário com um layout flutuante usando a API do Forms (serviço da Web), execute as seguintes etapas:
 
 1. Incluir arquivos de projeto
 
@@ -367,13 +371,14 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo.
    * Um `BLOB` objeto que contém dados para mesclar com o formulário. Certifique-se de usar o `BLOB` objeto criado nas etapas um e dois.
-   * Um `PDFFormRenderSpecc` objeto que armazena opções de tempo de execução. Para obter mais informações, consulte Referência [da API de formulários](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários.
+   * Um `PDFFormRenderSpecc` objeto que armazena opções de tempo de execução. Para obter mais informações, consulte Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
    * Um `com.adobe.idp.services.holders.BLOBHolder` objeto vazio que é preenchido pelo método. Isso é usado para armazenar o formulário PDF renderizado.
    * Um `javax.xml.rpc.holders.LongHolder` objeto vazio que é preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário).
    * Um `javax.xml.rpc.holders.StringHolder` objeto vazio que é preenchido pelo método. (Esse argumento armazenará o valor da localidade).
    * Um `com.adobe.idp.services.holders.FormsResultHolder` objeto vazio que conterá os resultados dessa operação.
+
    O `renderPDFForm` método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto passado como o último valor do argumento com um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
    * Crie um `FormResult` objeto obtendo o valor do membro de `com.adobe.idp.services.holders.FormsResultHolder` dados do `value` objeto.
@@ -383,11 +388,12 @@ Para pré-preencher um formulário com um layout flutuante usando a API de formu
    * Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
    * Crie uma matriz de bytes e preencha-a chamando o método do `BLOB` objeto `getBinaryData` . Essa tarefa atribui o conteúdo do `FormsResult` objeto à matriz de bytes.
    * Chame o método do `javax.servlet.http.HttpServletResponse` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+
    >[!NOTE]
    >
    >O `renderPDFForm` método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto passado como o último valor do argumento com um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 **Consulte também:**
 
-[Invocar formulários AEM usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocar o AEM Forms usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
