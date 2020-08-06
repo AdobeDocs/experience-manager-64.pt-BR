@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +24,7 @@ Os fluxos de trabalho de projeto disponíveis para uso imediato incluem os segui
 
 * **Fluxo de trabalho** de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
 * **Solicitar lançamento** - um fluxo de trabalho que solicita uma inicialização.
-* **Página** de aterrissagem da solicitação - Este fluxo de trabalho solicita uma página de aterrissagem.
+* **Landing page** de solicitação - esse fluxo de trabalho solicita uma landing page.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
 * **Sessão fotográfica do produto e Sessão fotográfica do produto (Comércio)** - Mapeia ativos com produtos
 * **Criar e traduzir cópia DAM e Criar cópia de idioma DAM** - Cria binários, metadados e tags traduzidos para ativos e pastas.
@@ -93,9 +96,9 @@ Esse fluxo de trabalho permite solicitar um lançamento.
 1. No projeto Simples, selecione o sinal **+** no bloco **Fluxos de trabalho** e selecione **Solicitar fluxo de trabalho de inicialização**.
 1. Insira um título para o lançamento e forneça o caminho da origem de lançamento. Você também pode adicionar uma descrição e uma data de colocação ao vivo, se aplicável. Selecione Herdar dados online de página fonte ou Excluir subpáginas, dependendo de como você deseja que o lançamento se comporte.
 
-   ![chlimage_1-321](assets/chlimage_1-325.png)
+   ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Clique em **Criar**. O fluxo de trabalho é iniciado. **O fluxo de trabalho é exibido na lista** Fluxos de trabalho **(clique em elipses**... no bloco **Fluxos de trabalho** para acessar essa lista).
+1. Clique em **Criar**. O fluxo de trabalho é iniciado. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
 
 ## Fluxo de trabalho Solicitar página de aterrissagem {#request-landing-page-workflow}
 
