@@ -1,6 +1,6 @@
 ---
 title: Estendendo a pesquisa de ativos
-description: Estenda os recursos de pesquisa dos ativos AEM além das pesquisas prontas para uso de ativos por strings.
+description: Estenda os recursos de pesquisa do AEM Assets para além das pesquisas prontas para uso de ativos por strings.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # Estendendo a pesquisa de ativos {#extending-assets-search}
 
-Você pode estender os recursos de pesquisa dos ativos Adobe Experience Manager (AEM). Os ativos AEM pesquisam ativos por sequências de caracteres.
+Você pode estender os recursos de pesquisa do Adobe Experience Manager (AEM) Assets. A AEM Assets procura ativos por strings imediatamente.
 
 A pesquisa é feita pela interface do QueryBuilder para que a pesquisa possa ser personalizada com vários predicados. Você pode sobrepor o conjunto padrão de predicados no seguinte diretório: `/apps/dam/content/search/searchpanel/facets`.
 
@@ -36,7 +36,7 @@ Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/da
 
 ## Adicionar guias {#adding-tabs}
 
-É possível adicionar guias de pesquisa adicionais configurando-as no Admin do AEM Assets. Para criar guias adicionais:
+É possível adicionar guias de pesquisa adicionais configurando-as no AEM Assets Admin. Para criar guias adicionais:
 
 1. Crie a estrutura de pastas `/apps/wcm/core/content/damadmin/tabs,`se ela ainda não existir e copie o `tabs` nó de `/libs/wcm/core/content/damadmin` e cole-o.
 1. Crie e configure a segunda guia, conforme desejado.
@@ -47,9 +47,9 @@ Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/da
 
 ## Criação de Predicados Personalizados {#creating-custom-predicates}
 
-Os ativos AEM vêm com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
+A AEM Assets vem com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar predicados pré-existentes, os desenvolvedores do AEM também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
+Além de usar predições pré-existentes, AEM desenvolvedores também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
 
 A criação de predicados personalizados requer conhecimento básico sobre a estrutura [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)Widgets.
 
@@ -257,7 +257,7 @@ Para criar um predicado de grupo:
 
 Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados.
 
-### PredicadoTexto completo {#fulltextpredicate}
+### PredicadoTextoCompleto {#fulltextpredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
@@ -303,6 +303,6 @@ Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados
 
 ## Personalização dos resultados da pesquisa {#customizing-search-results}
 
-A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. Os ativos AEM vêm com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
+A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. A AEM Assets vem com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar lentes pré-existentes, os desenvolvedores do AEM também podem criar suas próprias lentes.
+Além de usar lentes pré-existentes, AEM desenvolvedores também podem criar suas próprias lentes.
