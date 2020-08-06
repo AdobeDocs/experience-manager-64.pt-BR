@@ -1,8 +1,8 @@
 ---
 title: Personalização dos consoles
 seo-title: Personalização dos consoles
-description: O AEM fornece vários mecanismos para permitir que você personalize os consoles da sua instância de criação
-seo-description: O AEM fornece vários mecanismos para permitir que você personalize os consoles da sua instância de criação
+description: AEM fornece vários mecanismos para permitir que você personalize os consoles da sua instância de criação
+seo-description: AEM fornece vários mecanismos para permitir que você personalize os consoles da sua instância de criação
 uuid: f10cea87-ef8a-468e-94ca-89a1017dcf44
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 translation-type: tm+mt
 source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
 
 >[!CAUTION]
 >
->Este documento descreve como personalizar consoles na interface de usuário moderna e habilitada para toque e não se aplica à interface de usuário clássica.
+>Este documento descreve como personalizar consoles na interface moderna e habilitada para toque e não se aplica à interface clássica.
 
-O AEM fornece vários mecanismos para permitir que você personalize os consoles (e a funcionalidade [de criação de](/help/sites-developing/customizing-page-authoring-touch.md)página) da sua instância de criação.
+AEM fornece vários mecanismos para permitir a personalização dos consoles (e a funcionalidade [de criação de](/help/sites-developing/customizing-page-authoring-touch.md)página) da sua instância de criação.
 
 * Clientlibs
 
@@ -31,7 +34,7 @@ O AEM fornece vários mecanismos para permitir que você personalize os consoles
 
    As sobreposições são baseadas em definições de nó e permitem que você sobreponha a funcionalidade padrão (em `/libs`) com sua própria funcionalidade personalizada (em `/apps`). Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, já que a fusão de recursos sling permite herança.
 
-Eles podem ser usados de várias maneiras para estender seus consoles do AEM. Uma pequena seleção é coberta abaixo (em um nível alto).
+Eles podem ser usados de várias maneiras para estender seus consoles de AEM. Uma pequena seleção é abordada abaixo (em um nível alto).
 
 >[!NOTE]
 >
@@ -40,9 +43,10 @@ Eles podem ser usados de várias maneiras para estender seus consoles do AEM. Um
 >* Usar e criar [clientlibs](/help/sites-developing/clientlibs.md).
 >* Uso e criação de [sobreposições](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
-Este tópico também é abordado na sessão do [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - personalização da interface do [usuário para o AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Este tópico também é abordado na sessão [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - personalização da interface [do usuário para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
@@ -56,13 +60,14 @@ Este tópico também é abordado na sessão do [AEM Gems](https://docs.adobe.com
    >
    >
 1. Faça quaisquer alterações em `/apps`
+
 >
 
 
 
 Por exemplo, os seguintes locais na `/libs` estrutura podem ser sobrepostos:
 
-* consoles (quaisquer consoles com base nas páginas da interface do usuário Granite); por exemplo:
+* consoles (quaisquer consoles com base nas páginas da interface do usuário do Granite); por exemplo:
 
    * `/libs/wcm/core/content`
 
@@ -93,7 +98,7 @@ Por exemplo, os seguintes locais na `/libs` estrutura podem ser sobrepostos:
 -->
 >[!NOTE]
 >
->Consulte o artigo da Base de conhecimento, [Solução de problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)do AEM TouchUI, para obter mais dicas e ferramentas.
+>Consulte o artigo da Base de conhecimento, [Solução de problemas AEM problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)da interface do usuário, para obter mais dicas e ferramentas.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -182,17 +187,17 @@ You can find the code of this page on GitHub
         * `srcPath` = `cq/core/content/nav`
 -->
 
-## Personalização da exibição padrão para um console {#customizing-the-default-view-for-a-console}
+## Personalização da Visualização padrão para um console {#customizing-the-default-view-for-a-console}
 
-Você pode personalizar a exibição padrão (coluna, cartão, lista) para um console:
+Você pode personalizar a visualização padrão (coluna, cartão, lista) para um console:
 
-1. É possível reordenar as exibições sobrepondo a entrada necessária de abaixo:
+1. É possível reordenar as visualizações sobrepondo a entrada necessária de abaixo:
 
    `/libs/wcm/core/content/sites/jcr:content/views`
 
    A primeira entrada será o padrão.
 
-   Os nós disponíveis estão correlacionados às opções de exibição disponíveis:
+   Os nós disponíveis correlacionam-se às opções de visualização disponíveis:
 
    * `column`
    * `card`
@@ -290,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Usando as propriedades neste nó, é possível definir o `groups` permitido para executar a ação específica;por exemplo, `administrators`
+   Usando as propriedades neste nó, é possível definir o `groups` permitido para executar a ação específica; por exemplo, `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -359,7 +364,7 @@ You can restrict access to a navigation option using ACLs:
     * `communities`
 -->
 
-## Personalização de colunas na exibição de lista {#customizing-columns-in-the-list-view}
+## Personalização de colunas na Visualização da Lista {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
@@ -375,9 +380,9 @@ You can find the code of this page on GitHub
 * Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/aem-sites-extension-listview-columns/archive/master.zip)
 -->
 
-Para personalizar as colunas na exibição de lista:
+Para personalizar as colunas na visualização da lista:
 
-1. Sobreponha a lista de colunas disponíveis.
+1. Sobreponha a lista das colunas disponíveis.
 
    * No nó:
 
@@ -393,10 +398,10 @@ Para personalizar as colunas na exibição de lista:
       `pageInfoProviderType` propriedade.
    Por exemplo, consulte a classe/grupo anexado (do GitHub) abaixo.
 
-1. Agora é possível selecionar a coluna no configurador de colunas da exibição de lista.
+1. Agora é possível selecionar a coluna no configurador de coluna da visualização de lista.
 
 ## Filtrar recursos {#filtering-resources}
 
-Ao usar um console, um caso de uso comum é quando o usuário deve selecionar entre os recursos (por exemplo, páginas, componentes, ativos etc.). Isso pode assumir a forma de uma lista, por exemplo, da qual o autor deve escolher um item.
+Ao usar um console, um caso de uso comum é quando o usuário deve selecionar entre os recursos (por exemplo, páginas, componentes, ativos etc.). Isso pode assumir a forma de uma lista, por exemplo, a partir da qual o autor deve escolher um item.
 
 Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado na forma de um predicado personalizado. Consulte [este artigo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obter detalhes.
