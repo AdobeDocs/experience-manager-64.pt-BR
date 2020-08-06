@@ -1,8 +1,8 @@
 ---
 title: Importação e exportação do arquivo de configuração
 seo-title: Importação e exportação do arquivo de configuração
-description: Saiba como importar e exportar o arquivo de configuração para editar as preferências do servidor ou configurar outra instância de produto de formulários AEM.
-seo-description: Saiba como importar e exportar o arquivo de configuração para editar as preferências do servidor ou configurar outra instância de produto de formulários AEM.
+description: Saiba como importar e exportar o arquivo de configuração para editar as preferências do servidor ou configurar outra instância do produto de formulários AEM.
+seo-description: Saiba como importar e exportar o arquivo de configuração para editar as preferências do servidor ou configurar outra instância do produto de formulários AEM.
 uuid: 32e8a709-2d7c-4740-9533-d53aa751bc58
 contentOwner: admin
 content-type: reference
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Para evitar riscos de segurança, o valor da senha de ligação para o servidor 
 
 >[!NOTE]
 >
->A importação do arquivo de configuração reconfigura os formulários AEM com base nas informações do arquivo. Somente um administrador do sistema ou um consultor de serviços profissionais familiarizado com o produto de formulários AEM e o XML devem considerar modificar o arquivo de configuração. Talvez seja necessário editar o arquivo de configuração, por exemplo, para reconfigurar uma configuração corrompida.
+>A importação do arquivo de configuração reconfigura AEM formulários com base nas informações do arquivo. Somente um administrador do sistema ou um consultor de serviços profissionais familiarizado com o produto de formulários AEM e o XML devem considerar modificar o arquivo de configuração. Talvez seja necessário editar o arquivo de configuração, por exemplo, para reconfigurar uma configuração corrompida.
 
 **Exportar as informações de configuração**
 
