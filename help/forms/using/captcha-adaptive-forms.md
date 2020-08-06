@@ -1,8 +1,8 @@
 ---
 title: Uso do CAPTCHA em formulários adaptáveis
 seo-title: Uso do CAPTCHA em formulários adaptáveis
-description: Saiba como configurar o serviço AEM CAPTCHA ou Google reCAPTCHA em formulários adaptáveis.
-seo-description: Saiba como configurar o serviço AEM CAPTCHA ou Google reCAPTCHA em formulários adaptáveis.
+description: Saiba como configurar AEM CAPTCHA ou o serviço Google reCAPTCHA em formulários adaptáveis.
+seo-description: Saiba como configurar AEM CAPTCHA ou o serviço Google reCAPTCHA em formulários adaptáveis.
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 O CAPTCHA (Completamente Automated Public Turing test para distinguir computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. Ela representa um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. Impede que o usuário continue se o teste falhar e ajuda a tornar as transações on-line seguras, impedindo que bots postem spam ou fins mal-intencionados.
 
-O AEM Forms suporta CAPTCHA em formulários adaptáveis. Você pode usar o serviço reCAPTCHA do Google para implementar CAPTCHA.
+A AEM Forms suporta CAPTCHA em formulários adaptáveis. Você pode usar o serviço reCAPTCHA do Google para implementar CAPTCHA.
 
 >[!NOTE]
 >
->Os AEM Forms suportam apenas reCaptcha v2. Nenhuma outra versão é suportada.
+>O AEM Forms suporta apenas reCaptcha v2. Nenhuma outra versão é suportada.
 >
 >O CAPTCHA em formulários adaptáveis não é suportado no modo offline no aplicativo AEM Forms.
 
@@ -53,7 +53,7 @@ Para implementar o serviço reCAPTCHA no AEM Forms:
 
 1. Configure o serviço de nuvem para reCAPTCHA.
 
-   1. Em sua instância do autor de AEM, vá para ![Ferramentas](assets/tools.png) > **Cloud Service**.
+   1. Em sua instância do autor AEM, vá para ![Ferramentas](assets/tools.png) > **Cloud Services**.
    1. Toque em **[!UICONTROL reCAPTCHA]**. A página Configurações é aberta. Selecione o container de configuração criado na etapa anterior e toque em **[!UICONTROL Criar]**.
    1. Especifique Nome, Chave do site e Chave secreta para o serviço reCAPTCHA e toque em **[!UICONTROL Criar]** para criar a configuração do serviço de nuvem.
    1. Na caixa de diálogo Editar componente, especifique o site e as chaves secretas obtidas na etapa 1. Toque em **[!UICONTROL Salvar configurações]** e, em seguida, toque em **[!UICONTROL OK]** para concluir a configuração.
