@@ -1,8 +1,8 @@
 ---
 title: Personalização de páginas mostradas pelo manipulador de erros
 seo-title: Personalização de páginas mostradas pelo manipulador de erros
-description: O AEM vem com um manipulador de erros padrão para lidar com erros HTTP
-seo-description: O AEM vem com um manipulador de erros padrão para lidar com erros HTTP
+description: AEM vem com um manipulador de erros padrão para lidar com erros HTTP
+seo-description: AEM vem com um manipulador de erros padrão para lidar com erros HTTP
 uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
 
 # Personalização de páginas mostradas pelo manipulador de erros{#customizing-pages-shown-by-the-error-handler}
 
-O AEM vem com um manipulador de erros padrão para lidar com erros HTTP; por exemplo, mostrando:
+AEM vem com um manipulador de erros padrão para lidar com erros HTTP; por exemplo, mostrando:
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
 Os scripts fornecidos pelo sistema existem (em `/libs/sling/servlet/errorhandler`) para responder a códigos de erro, por padrão, os seguintes estão disponíveis com uma instância CQ padrão:
 
-* 403,jsp
-* 404,jsp
+* 403.jsp
+* 404.jsp
 
 >[!NOTE]
 >
->O AEM é baseado no Apache Sling, portanto consulte [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) para obter informações detalhadas sobre como lidar com erros.
+>AEM é baseado no Apache Sling, portanto consulte [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) para obter informações detalhadas sobre como lidar com erros de sling.
 
 >[!NOTE]
 >
@@ -46,8 +49,9 @@ Você pode desenvolver seus próprios scripts para personalizar as páginas most
 
 1. No repositório, copie os scripts padrão:
 
-   * from `/libs/sling/servlet/errorhandler/`
+   * de `/libs/sling/servlet/errorhandler/`
    * para `/apps/sling/servlet/errorhandler/`
+
    Como o caminho de destino não existe por padrão, será necessário criá-lo ao fazer isso pela primeira vez.
 
 1. Vá até `/apps/sling/servlet/errorhandler`. Aqui você pode:
@@ -69,13 +73,14 @@ Os erros HTTP 500 são causados por exceções do lado do servidor.
 
 * **[Erro](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**interno do servidor 500O servidor encontrou uma condição inesperada que o impedia de atender à solicitação.
 
-Quando o processamento da solicitação resulta em uma exceção, a estrutura Apache Sling (na qual o AEM é criado):
+Quando o processamento da solicitação resulta em uma exceção, a estrutura Apache Sling (que AEM incorporada):
 
 * registra a exceção
 * retorna:
 
    * o código de resposta HTTP 500
    * o rastreamento da pilha de exceções
+
    no corpo da resposta.
 
 Ao [personalizar as páginas mostradas pelo manipulador](#how-to-customize-pages-shown-by-the-error-handler) de erros, é possível criar um `500.jsp` script. No entanto, só é utilizado se `HttpServletResponse.sendError(500)` for executado explicitamente; Ou seja, de um coletor de exceção.
