@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão de formulários do AEM.
+>O Flex Workspace está obsoleto para AEM versão de formulários.
 
 Por exemplo, é possível mover de um ambiente de desenvolvimento para um ambiente de produção exportando as definições do modelo de pesquisa e as configurações globais de um ambiente e importando-as para o outro.
 
@@ -67,7 +67,7 @@ Você pode modificar o arquivo de configurações globais; no entanto, as única
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão de formulários do AEM.
+>O Flex Workspace está obsoleto para AEM versão de formulários.
 
 O arquivo de configurações globais da Workspace inclui as seguintes configurações:
 
@@ -87,7 +87,7 @@ As configurações *SpecialRoutes* especificam as propriedades das rotas especia
 
 ### Configurações do JGroup {#jgroup-settings}
 
-Essas configurações aparecem somente se você tiver atualizado do Adobe LiveCycle ES 2.5 ou anterior.
+Essas configurações serão exibidas somente se você tiver atualizado do LiveCycle ES 2.5 ou anterior.
 
 **server_remoteevents_ClientTimeoutMillisegundos:** O tempo máximo que o JGroup aguarda por mensagens de evento. Essa configuração não deve ser alterada.
 
@@ -105,7 +105,7 @@ As propriedades restantes nesta configuração não devem ser alteradas.
 
 **server_remoteevents_JGroupName:** O nome do JGroup usado para comunicação de eventos remotos. Esse valor é gerado aleatoriamente para evitar conflitos em clusters. Esse valor não deve ser alterado.
 
-Para obter informações adicionais sobre JGroups e Workspace, consulte [JGroups e AEM Forms Workspace - Explicado](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+Para obter informações adicionais sobre JGroups e Workspace, consulte [JGroups e AEM formulários Workspace - Explicado](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
 
 ### configurações de FormView {#formview-settings}
 
@@ -125,7 +125,7 @@ Para obter informações adicionais sobre JGroups e Workspace, consulte [JGroups
 
 **server_debugLevel:** Não altere esta configuração.
 
-**client_pollingInterval:** Define o intervalo de sondagem (em segundos) usado na área de trabalho flexível (obsoleto para formulários AEM no JEE) para detectar tarefas novas e modificadas. O padrão é 3 segundos. Isso não funciona para o AEM Forms Workspace.
+**client_pollingInterval:** Define o intervalo de sondagem (em segundos) usado no Flex Workspace (obsoleto para formulários AEM no JEE) para detectar tarefas novas e modificadas. O padrão é 3 segundos. Isso não funciona para o AEM Forms Workspace.
 
 **client_systemContext_name:** Especifique um nome personalizado (por exemplo, Cidadão) a ser exibido no campo Adicionado por (na guia Anexos) para os anexos de uma tarefa no AEM Forms Workspace.
 
