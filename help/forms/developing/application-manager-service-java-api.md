@@ -28,9 +28,9 @@ O SOAP (Java API Quick Start) está disponível para o serviço Application Mana
 
 >[!NOTE]
 >
->As APIs do gerenciador de aplicativos suportam somente arquivos LCA do AEM Forms. Ele não suporta arquivos LCA do LiveCycle ES2 e ES4.
+>As APIs do gerenciador de aplicativos suportam somente arquivos LCA AEM Forms. Ele não suporta arquivos LCA do LiveCycle ES2 e ES4.
 
-As operações do AEM Forms podem ser executadas usando a API fortemente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
