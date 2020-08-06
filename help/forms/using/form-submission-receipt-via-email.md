@@ -1,8 +1,8 @@
 ---
 title: Envio de uma confirmação de envio de formulário por email
 seo-title: Envio de uma confirmação de envio de formulário por email
-description: O AEM Forms permite configurar a ação de envio de email que envia uma confirmação para um usuário ao enviar o formulário.
-seo-description: O AEM Forms permite configurar a ação de envio de email que envia uma confirmação para um usuário ao enviar o formulário.
+description: A AEM Forms permite que você configure a ação de envio por email que envia uma confirmação para um usuário ao enviar o formulário.
+seo-description: A AEM Forms permite que você configure a ação de envio por email que envia uma confirmação para um usuário ao enviar o formulário.
 uuid: 77b3c836-6011-48bd-831c-ebc214218efb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 ## Submissão de dados do formulário adaptável {#adaptive-form-data-submission}
 
-Os formulários adaptativos fornecem vários fluxos de trabalho de ações [de](/help/forms/using/configuring-submit-actions.md) envio prontos para uso para enviar os dados do formulário para diferentes pontos de extremidade.
+Os formulários adaptativos fornecem vários workflows de ações [de](/help/forms/using/configuring-submit-actions.md) envio prontos para uso para enviar os dados do formulário para diferentes pontos de extremidade.
 
 Por exemplo, a ação de envio de ação **de** email envia um email sobre o envio bem-sucedido de um formulário adaptável. Também pode ser configurado para enviar os dados do formulário e o PDF no email.
 
@@ -30,7 +33,7 @@ Este artigo detalha as etapas para habilitar a ação Email em um formulário ad
 
 ## Email action {#email-action}
 
-A ação Email permite que um autor envie emails automaticamente para um ou mais destinatários no envio bem-sucedido de um formulário adaptável.
+A ação Email permite que um autor envie emails automaticamente para um ou mais recipient no envio bem-sucedido de um formulário adaptável.
 
 >[!NOTE]
 >
@@ -40,7 +43,7 @@ A ação Email permite que um autor envie emails automaticamente para um ou mais
 
 1. Abra um formulário adaptável no modo de edição.
 
-1. Clique em **Editar** ao lado de **Iniciar de uma barra de ferramentas de formulário** adaptável.
+1. Clique em **Editar** ao lado do **Start da barra de ferramentas Formulário** adaptável.
 
    A caixa de diálogo Editar componente é aberta.
 
