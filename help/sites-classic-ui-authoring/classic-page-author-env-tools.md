@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 83%
 
 ---
 
@@ -98,7 +101,7 @@ Esta guia lista os produtos. Depois que você criar um parágrafo apropriado (po
 
 ### Encontrar páginas {#finding-pages}
 
-Esta guia mostra todas as páginas. Clique duas vezes em qualquer página para abri-la para edição.
+Esta guia mostra todas as páginas. Clique em qualquer página para abri-la para edição.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -138,7 +141,7 @@ os seguintes padrões de pesquisa vão encontrá-la (e qualquer outra imagem cor
 
 * `name:*nmv*`
 * `name:AD*` - o caractere correspondente *não* diferencia maiúsculas e minúsculas.
-* `name:ad?nm??is.*` - você pode usar qualquer número de curingas em uma consulta.
+* `name:ad?nm??is.*` - você pode usar qualquer número de curingas em um query.
 
 >[!NOTE]
 >
@@ -154,7 +157,7 @@ Para mostrar referências de página diretas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Selecione** Mostrar referências... O AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -177,7 +180,7 @@ O **Log de auditoria** pode ser acessado na guia **Informações** do sidekick. 
 
 The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
 
-## Modos de página  {#page-modes}
+## Modos de página   {#page-modes}
 
 Durante a edição de uma página com a interface de usuário clássica, há vários modos que podem ser acessados com o uso de ícones na parte inferior do sidekick:
 
@@ -191,7 +194,7 @@ Os ícones na parte inferior do Sidekick são usados para alternar os modos de t
 
 * [Visualizar](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
 
-   Esse modo permite que você visualize a página como se ela estivesse aparecendo em seu site em sua forma final.
+   Esse modo permite que você pré-visualização a página como se ela estivesse aparecendo em seu site em sua forma final.
 
 * [Design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 
