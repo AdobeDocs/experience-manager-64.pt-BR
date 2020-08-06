@@ -1,6 +1,6 @@
 ---
-title: Gerenciar seus ativos digitais usando os ativos AEM
-description: Saiba mais sobre várias tarefas de gerenciamento e edição de ativos que você pode executar usando a interface de usuário otimizada ao toque dos ativos AEM
+title: Gerencie seus ativos digitais usando o AEM Assets
+description: Saiba mais sobre várias tarefas de gerenciamento e edição de ativos que você pode executar usando a interface de usuário otimizada ao toque da AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -14,18 +14,18 @@ ht-degree: 2%
 
 # Gerenciar seus ativos digitais {#managing-assets-with-the-touch-optimized-ui}
 
-Saiba mais sobre várias tarefas de gerenciamento e edição de ativos que você pode executar usando a interface de usuário otimizada ao toque dos ativos AEM.
+Saiba mais sobre várias tarefas de gerenciamento e edição de ativos que você pode executar usando a interface de usuário otimizada ao toque do AEM Assets.
 
 Este artigo descreve como gerenciar e editar ativos usando a interface de usuário otimizada ao toque do Adobe Experience Manager (AEM) Assets. Para obter um conhecimento elementar sobre a interface do usuário, consulte Manuseio [básico da interface do usuário](/help/sites-authoring/basic-handling.md)de toque. Para gerenciar fragmentos de conteúdo, consulte [Gerenciamento de ativos de fragmentos](content-fragments-managing.md) de conteúdo.
 
 ## Criar pastas {#create-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. Os ativos AEM não exigem que você organize ativos em pastas para trabalhar melhor.
+Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. A AEM Assets não exige que você organize ativos em pastas para trabalhar melhor.
 
 >[!NOTE]
 >
->* O compartilhamento de uma pasta Ativos do tipo não `sling:OrderedFolder` é suportado ao compartilhar com a Marketing Cloud. Se quiser compartilhar uma pasta, não selecione Solicitado ao criar uma pasta.
->* O Experience Manager não permite o uso de `subassets` word como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos.
+>* O compartilhamento de uma pasta Assets do tipo não `sling:OrderedFolder` é suportado ao compartilhar com o Marketing Cloud. Se quiser compartilhar uma pasta, não selecione Solicitado ao criar uma pasta.
+>* Experience Manager não permite o uso de `subassets` word como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos.
 
 
 1. Navegue até o local na pasta de ativos digitais onde deseja criar uma nova pasta.
@@ -40,11 +40,11 @@ Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 ## Upload assets {#uploading-assets}
 
-Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos PDF, arquivos RAW e assim por diante) da pasta local ou de uma unidade de rede para os ativos AEM.
+Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos PDF, arquivos RAW e assim por diante) da pasta local ou de uma unidade de rede para o AEM Assets.
 
 >[!NOTE]
 >
->No modo Mídia dinâmica - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
+>No modo Dynamic Media - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
 
 Você pode optar por carregar ativos para pastas com ou sem um perfil de processamento atribuído a eles.
 
@@ -78,11 +78,11 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   Para cancelar um upload em andamento, clique no `X` botão ao lado da barra de progresso. Ao cancelar a operação de upload, os ativos AEM excluem a parte parcialmente carregada do ativo.
+   Para cancelar um upload em andamento, clique no `X` botão ao lado da barra de progresso. Ao cancelar a operação de upload, a AEM Assets exclui a parte parcialmente carregada do ativo.
 
    A capacidade de retomar o carregamento é especialmente útil em cenários de largura de banda baixa e falhas de rede, onde demora muito para carregar um grande ativo. Você pode pausar a operação de upload e continuar mais tarde quando a situação melhorar. Ao retomar, carregando start a partir do ponto em que você o pausou.
 
-   Durante a operação de upload, o AEM salva as partes do ativo que estão sendo carregadas como partes de dados no repositório CRX. Quando o upload é concluído, o AEM consolida esses blocos em um único bloco de dados no repositório.
+   Durante a operação de upload, o AEM salva as partes do ativo que estão sendo carregadas como partes de dados no repositório CRX. Quando o upload é concluído, AEM consolida esses blocos em um único bloco de dados no repositório.
 
    Para configurar a tarefa de limpeza para os trabalhos de carregamento de segmentos não concluídos, vá para `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
@@ -96,9 +96,9 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
    >
    >Quando você seleciona **[!UICONTROL Substituir]** na caixa de diálogo Conflito **[!UICONTROL de]** nomes, a ID do ativo é regenerada para o novo ativo. Essa ID é diferente da ID do ativo anterior.
    >
-   >Se o **[!UICONTROL Asset Insights]** estiver habilitado para rastrear impressões/cliques com o Adobe Analytics, essa ID de ativo regenerada invalida os dados capturados para o ativo no Adobe Analytics.
+   >Se o **[!UICONTROL Asset Insights]** estiver habilitado para rastrear impressões/cliques com a Adobe Analytics, essa ID de ativo regenerada invalida os dados capturados para o ativo no Adobe Analytics.
 
-   Se o ativo carregado existir nos ativos AEM, a caixa de diálogo **[!UICONTROL Duplicados detectados]** avisa que você está tentando carregar um ativo de duplicado. A caixa de diálogo é exibida somente se o valor de soma de verificação SHA 1 do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Neste caso, os nomes dos ativos são irrelevantes. Em outras palavras, a caixa de diálogo pode aparecer até mesmo para ativos que têm nomes diferentes se os valores SHA 1 para seus binários forem os mesmos.
+   Se o ativo carregado existir no AEM Assets, a caixa de diálogo **[!UICONTROL Duplicados detectados]** avisará que você está tentando carregar um ativo de duplicado. A caixa de diálogo é exibida somente se o valor de soma de verificação SHA 1 do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Neste caso, os nomes dos ativos são irrelevantes. Em outras palavras, a caixa de diálogo pode aparecer até mesmo para ativos que têm nomes diferentes se os valores SHA 1 para seus binários forem os mesmos.
 
    >[!NOTE]
    >
@@ -106,9 +106,9 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   Toque em **[!UICONTROL Manter]** para manter o ativo do duplicado nos ativos AEM. Toque em **[!UICONTROL Excluir]** para excluir o ativo de duplicado que você carregou.
+   Toque em **[!UICONTROL Manter]** para manter o ativo do duplicado no AEM Assets. Toque em **[!UICONTROL Excluir]** para excluir o ativo de duplicado que você carregou.
 
-   Os ativos AEM impedem que você carregue ativos com caracteres proibidos em seus nomes de arquivo. Se você tentar carregar um ativo que inclui os caracteres não permitidos, os ativos AEM exibirão uma mensagem de aviso com relação à presença de caracteres proibidos no nome do arquivo e interromperão o upload até que você remova esses caracteres ou carregue com um nome permitido.
+   A AEM Assets impede que você carregue ativos com caracteres proibidos em seus nomes de arquivo. Se você tentar carregar um ativo que inclua os caracteres não permitidos, o AEM Assets exibirá uma mensagem de aviso sobre a presença de caracteres proibidos no nome do arquivo e interromperá o upload até que você remova esses caracteres ou faça upload com um nome permitido.
 
    Para adequar-se a convenções de nomenclatura de arquivos específicas para sua organização, a caixa de diálogo **[!UICONTROL Carregar ativos]** permite especificar nomes longos para os arquivos carregados.
 
@@ -124,13 +124,13 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   Se você cancelar a operação de upload antes que os arquivos sejam carregados, o AEM Assets interromperá o upload do arquivo atual e atualizará o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
+   Se você cancelar a operação de upload antes que os arquivos sejam carregados, a AEM Assets interrompe o upload do arquivo atual e atualiza o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
 
 ### Carregamentos em série {#serial-uploads}
 
-Fazer upload de vários ativos em massa consome recursos significativos do sistema, o que pode afetar negativamente o desempenho da sua implantação do AEM. Os gargalos potenciais podem ser a sua conexão com a Internet, operações de leitura/gravação em disco, limitações do navegador da Web no número de solicitações POST no upload de ativos simultâneos. A operação de carregamento em massa pode falhar ou terminar prematuramente. Em outras palavras, os ativos do AEM podem perder alguns arquivos ao assimilar vários arquivos ou não assimilar nenhum arquivo.
+O upload de vários ativos em massa consome recursos significativos do sistema, o que pode afetar negativamente o desempenho da sua implantação AEM. Os gargalos potenciais podem ser a sua conexão com a Internet, operações de leitura/gravação em disco, limitações do navegador da Web no número de solicitações de POST no carregamento de ativos simultâneos. A operação de carregamento em massa pode falhar ou terminar prematuramente. Em outras palavras, os ativos AEM podem perder alguns arquivos enquanto ingerem vários arquivos ou, ao mesmo tempo, não assimilam nenhum arquivo.
 
-Para superar essa situação, o AEM Assets ingere um ativo por vez (upload em série) durante uma operação de upload em massa, em vez de ingressar simultaneamente todos os ativos.
+Para superar essa situação, a AEM Assets ingere um ativo por vez (upload em série) durante uma operação de upload em massa, em vez de ingerir todos os ativos simultaneamente.
 
 Por padrão, o carregamento em série de ativos é ativado. Para desativar o recurso e permitir o carregamento simultâneo, sobreponha o `fileupload` nó no CRXDe e defina o valor da `parallelUploads` propriedade como `true`.
 
@@ -140,12 +140,12 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 
 >[!NOTE]
 >
->No modo Mídia dinâmica - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
+>No modo Dynamic Media - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
 
 >[!NOTE]
 >
->Para fazer upload de ativos por meio do FTP no Dynamic Media - Pacote de recursos de instalação do modo Scene7 (FP) 18912 no autor de AEM. Entre em contato com o Atendimento ao cliente da Adobe para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md)de ativos em massa.
-Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas no AEM serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definidas no Dynamic Media Classic, são usadas.
+>Para fazer upload de ativos por meio do FTP no Dynamic Media - Pacote de recursos de instalação do modo Scene7 (FP) 18912 AEM autor. Entre em contato com o Atendimento ao cliente do Adobe para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md)de ativos em massa.
+Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas em AEM serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definidas no Dynamic Media Classic, são usadas.
 
 **Para fazer upload de ativos usando FTP**
 
@@ -165,7 +165,7 @@ Se você usar o FTP para fazer upload de ativos, as configurações de upload es
 1. No canto inferior direito da caixa de diálogo Opções **[!UICONTROL de trabalho de]** upload, toque em **[!UICONTROL Salvar]**.
 1. No canto inferior direito da página **[!UICONTROL Carregar]** , toque em **[!UICONTROL Enviar upload]**.
 
-   Para visualização do progresso do upload, na barra de navegação global, toque em **[!UICONTROL Tarefas]**. A página **[!UICONTROL Tarefas]** exibe o progresso do upload. Você pode continuar trabalhando no AEM e voltar para a página de Tarefas no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
+   Para visualização do progresso do upload, na barra de navegação global, toque em **[!UICONTROL Tarefas]**. A página **[!UICONTROL Tarefas]** exibe o progresso do upload. Você pode continuar trabalhando no AEM e voltar para a página Tarefas no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
 
    Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancelar]** ao lado do tempo de **[!UICONTROL Duração]** .
 
@@ -179,14 +179,14 @@ Se você usar o FTP para fazer upload de ativos, as configurações de upload es
 | Descompactar arquivos ZIP ou TAR no upload |  |  |
 | Opções de trabalho |  | Toque/ clique em Opções **[!UICONTROL de]** trabalho para abrir a caixa de diálogo Opções [!UICONTROL de trabalho de] upload e escolha as opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos a partir da página Configurações gerais do aplicativo. Para abrir esta página, escolha **[!UICONTROL Configuração]** > Configuração **** do aplicativo. Toque no botão Opções **[!UICONTROL de upload]** padrão para abrir a caixa de diálogo Opções [!UICONTROL de] upload de trabalho. |
 |  | Quando | Selecione Uma vez ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir (Diário, Semanal, Mensal ou Personalizado) para especificar quando você deseja que o trabalho de upload do FTP seja repetido. Em seguida, especifique as opções de agendamento conforme necessário. |
-|  | Incluir subpastas | Carregue todas as subpastas dentro da pasta que você deseja carregar. Os nomes da pasta e suas subpastas carregadas são inseridos automaticamente nos ativos AEM. |
+|  | Incluir subpastas | Carregue todas as subpastas dentro da pasta que você deseja carregar. Os nomes da pasta e suas subpastas carregadas são inseridos automaticamente no AEM Assets. |
 |  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direita, Inferior e Esquerda, meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerda para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para aparar com base na cor, especifique 0 para recortar os pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se eles forem transparentes. Números mais próximos a 1 permitem mais transparência.</li></ul><br>Observe que essas opções de corte não são destrutivas. |
 |  | Opções de Perfil de cores | Escolha uma conversão de cores ao criar arquivos otimizados usados para o delivery:<ul><li>Preservação de cor padrão: Mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cor; não há conversão de cores. Quase todas as imagens hoje têm o perfil de cor apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cor incorporado, as cores serão convertidas em espaço de cor sRGB (azul verde padrão). O sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: Mantém as cores originais sem qualquer conversão de cores no momento. Para imagens sem um perfil de cor incorporado, qualquer conversão de cor é feita usando os perfis de cor padrão definidos nas configurações de Publicação. Os perfis coloridos podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Os menus Personalizado de > Para<br> abre para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui todas as informações de cores incorporadas no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cor incorretos ou ausentes.</li></ul> |
 |  | Opções de edição de imagens | É possível preservar as máscaras de recorte em imagens e escolher um perfil colorido.<br> Consulte [Configuração de opções de edição de imagens no upload](#setting-image-editing-options-at-upload). |
-|  | Opções de Postscript | Você pode rasterizar arquivos PostScript®, cortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload do PostScript e do Illustrator. |
-|  | Opções do Photoshop | Você pode criar modelos a partir de arquivos do Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Observe que os modelos não são suportados no AEM.<br> Consulte [Configuração de opções](#setting-photoshop-upload-options)de upload do Photoshop. |
-|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cor.<br> Observe que o AEM não oferece suporte a eCatalogs. <br> Consulte [Configuração de opções](#setting-pdf-upload-options)de upload de PDF. |
-|  | Opções do Illustrator | Você pode rasterizar arquivos do Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload do PostScript e do Illustrator. |
+|  | Opções de Postscript | Você pode rasterizar arquivos de PostScript®, recortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload de PostScript e Illustrator. |
+|  | Opções do Photoshop | Você pode criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Observe que os modelos não são suportados no AEM.<br> Consulte [Configuração das opções](#setting-photoshop-upload-options)de upload do Photoshop. |
+|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cor.<br> Observe que os eCatalogs não são suportados no AEM. <br> Consulte [Configuração de opções](#setting-pdf-upload-options)de upload de PDF. |
+|  | Opções do Illustrator | Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload de PostScript e Illustrator. |
 |  | Opções de vídeo | Você pode transcodificar um arquivo de vídeo escolhendo uma predefinição de vídeo.<br> Consulte [Configuração de opções](#setting-evideo-upload-options)de upload de eVideo. |
 |  | Predefinições de Conjunto de Lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Predefinições de Configuração de aplicativo/Conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
 
@@ -204,17 +204,17 @@ Ao fazer upload de arquivos de imagem, incluindo arquivos AI, EPS e PSD, você p
 | Opção | Subopção | Descrição |
 |---|---|---|
 | Criar máscara a partir do caminho de recorte |  | Crie uma máscara para a imagem com base em suas informações de caminho de recorte. Essa opção se aplica a imagens criadas com aplicativos de edição de imagens nas quais um caminho de recorte foi criado. |
-| Mascaramento sem nitidez |  | Permite ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida, controlando a intensidade do efeito, o raio do efeito (conforme medido em pixels) e um limite de contraste que é ignorado.<br> Esse efeito usa as mesmas opções do filtro Máscara de nitidez do Photoshop. Ao contrário do que o nome sugere, a Máscara de nitidez é um filtro de nitidez. Em Mascaramento de nitidez, defina as opções desejadas. As opções de configuração são descritas a seguir: |
-|  | Quantidade | Controla a quantidade de contraste que é aplicada aos pixels da borda.<br> Pense nisso como a intensidade do efeito. A principal diferença entre os valores de quantidade de máscara de nitidez no Dynamic Media e os valores de quantidade no Adobe Photoshop é que o Photoshop tem um intervalo de quantidade de 1% a 500%. Enquanto que, no Dynamic Media, o intervalo de valores é de 0,0 a 5,0. Um valor de 5,0 é o equivalente bruto de 500% no Photoshop; um valor de 0,9 é o equivalente a 90%, e assim por diante. |
+| Mascaramento sem nitidez |  | Permite ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida, controlando a intensidade do efeito, o raio do efeito (conforme medido em pixels) e um limite de contraste que é ignorado.<br> Esse efeito usa as mesmas opções do filtro Máscara de nitidez da Photoshop. Ao contrário do que o nome sugere, a Máscara de nitidez é um filtro de nitidez. Em Mascaramento de nitidez, defina as opções desejadas. As opções de configuração são descritas a seguir: |
+|  | Quantidade | Controla a quantidade de contraste que é aplicada aos pixels da borda.<br> Pense nisso como a intensidade do efeito. A principal diferença entre os valores da quantidade de máscara de nitidez no Dynamic Media e os valores da quantidade no Adobe Photoshop é que o Photoshop tem um intervalo de valores de 1% a 500%. Enquanto que, no Dynamic Media, o intervalo de valores é de 0,0 a 5,0. Um valor de 5,0 é o equivalente bruto de 500% no Photoshop; um valor de 0,9 é o equivalente a 90%, e assim por diante. |
 |  | Raio | Controla o raio do efeito. O intervalo de valores é de 0 a 250.<br> O efeito é executado em todos os pixels em uma imagem e irradia de todos os pixels em todas as direções. O raio é medido em pixels. Por exemplo, para obter um efeito de nitidez semelhante para uma imagem de 2000 x 2000 pixels e 500 x 500 pixels, você definiria um raio de dois pixels na imagem de 2000 x 2000 pixels e um valor de raio de um pixel na imagem de 500 x 500 pixels. Um valor maior é usado para uma imagem que tem mais pixels. |
 |  | Limite | O limite é um intervalo de contraste que é ignorado quando o filtro Máscara de nitidez é aplicado. É importante para que nenhum &quot;ruído&quot; seja introduzido em uma imagem quando esse filtro for usado. O intervalo de valores é de 0 a 255, que é o número de etapas de brilho em uma imagem em tons de cinza. 0=preto, 128=50% cinza e 255=branco.<br> Por exemplo, um valor limite de 12 ignora pequenas variações é o brilho do tom de pele para evitar a adição de ruído, mas ainda adiciona o contraste da borda a áreas contrastantes, como onde as pestanas encontram a pele.<br> Por exemplo, se você tiver uma foto do rosto de uma pessoa, a Máscara de nitidez afeta as partes contrastantes da imagem, como o local em que as pestanas e a pele se encontram para criar uma área de contraste óbvia, e a própria pele lisa. Mesmo a pele mais suave exibe alterações sutis nos valores de brilho. Se você não usar um valor limite, o filtro acentuará essas alterações sutis em pixels de pele. Por sua vez, cria-se um efeito ruidoso e indesejável enquanto o contraste nas pestanas aumenta, aumentando a nitidez.<br> Para evitar esse problema, é introduzido um valor limite que informa ao filtro que ignore os pixels que não alteram o contraste drasticamente, como pele lisa.<br> No gráfico de zipper mostrado anteriormente, observe a textura ao lado dos zippers. O ruído da imagem é exibido porque os valores de limite eram muito baixos para suprimir o ruído. |
 |  | Monocromático | Selecione para desmarcar o brilho da imagem da máscara de nitidez (intensidade).<br> Desmarque para desmarcar a máscara de nitidez de cada componente de cor separadamente. |
 | Plano de fundo de separação |  | Remove automaticamente o plano de fundo de uma imagem quando você a carrega. Essa técnica é útil para chamar a atenção para um objeto específico e destacá-lo de um fundo ocupado. Selecione para ativar ou &quot;ativar&quot; o recurso de Plano de fundo de separação e as seguintes subopções: |
 |  | Canto | Obrigatório.<br> O canto da imagem que é usado para definir a cor do plano de fundo para separação.<br> Você pode escolher entre **Superior esquerdo**, **Inferior esquerdo**, **Superior direito** ou **Inferior direito**. |
-|  | Método de preenchimento | Obrigatório.<br> Controla a transparência de pixels a partir do local Canto que você definiu.<br> Você pode escolher entre os seguintes métodos de preenchimento: <ul><li>**Preenchimento** de Flood - torna todos os pixels transparentes que correspondem ao Canto especificado e conectado a ele.</li><li>**Corresponder pixel** - torna todos os pixels correspondentes transparentes, independentemente de sua localização na imagem.</li></ul> |
+|  | Método de preenchimento | Obrigatório.<br> Controla a transparência de pixels a partir do local Canto que você definiu.<br> Você pode escolher entre os seguintes métodos de preenchimento: <ul><li>**Preenchimento** do Flood - torna todos os pixels transparentes que correspondem ao Canto especificado e conectado a ele.</li><li>**Corresponder pixel** - torna todos os pixels correspondentes transparentes, independentemente de sua localização na imagem.</li></ul> |
 |  | Tolerância | Opcional.<br> Controla a quantidade permitida de variação na correspondência de cores de pixels com base no local Canto que você definiu.<br> Use um valor de 0,0 para corresponder exatamente às cores dos pixels ou use um valor de 1,0 para permitir a maior variação. |
 
-#### Definir opções de upload do PostScript e do Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Definir opções de upload de PostScript e Illustrator {#setting-postscript-and-illustrator-upload-options}
 
 Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cor. As opções para a formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo Carregar opções de trabalho em Opções de PostScript e Opções do Illustrator.
 
@@ -231,7 +231,7 @@ Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode 
 
 #### Definir opções de upload do Photoshop {#setting-photoshop-upload-options}
 
-Os arquivos PSD (Documento do Photoshop) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção Criar modelo na tela Carregar).
+Os arquivos PSD (Documento Photoshop) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção Criar modelo na tela Carregar).
 
 O Dynamic Media cria várias imagens a partir de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
@@ -239,7 +239,7 @@ Use as Opções **[!UICONTROL de]** corte e as Opções **[!UICONTROL de Perfil]
 
 >[!NOTE]
 >
->Modelos não são suportados no AEM.
+>Os modelos não são suportados em AEM.
 
 | Opção | Subopção | Descrição |
 |---|---|---|
@@ -249,8 +249,8 @@ Use as Opções **[!UICONTROL de]** corte e as Opções **[!UICONTROL de Perfil]
 | Estender camadas ao tamanho do plano de fundo |  | Estende o tamanho das camadas de imagem recortadas até o tamanho da camada de plano de fundo. |
 | Nomenclatura de camada |  | As camadas no arquivo PSD são carregadas como imagens separadas. |
 |  | Nome da camada | Nomeia as imagens após seus nomes de camada no arquivo PSD. Por exemplo, uma camada chamada Tag de preço no arquivo PSD original se torna uma imagem chamada Tag de preço. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD, não seus nomes de camada padrão. |
-|  | Photoshop e número de camada | Nomeia as imagens após seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo do Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado Spring Ad.psd é chamada Spring Ad_2 mesmo se ela tiver um nome não padrão no Photoshop. |
-|  | Photoshop e nome de camada | Nomeia as imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada será usado se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop. Por exemplo, uma camada chamada Marca de preço em um arquivo PSD chamado SpringAd é chamada Marca Ad_Price Primavera. Uma camada com o nome padrão Camada 2 é chamada Primavera Ad_2. |
+|  | Photoshop e número de camada | Nomeia as imagens após seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado Spring Ad.psd é chamada Spring Ad_2 mesmo se ela tiver um nome não padrão no Photoshop. |
+|  | Nome da Photoshop e da camada | Nomeia as imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada será usado se os nomes da camada no arquivo PSD forem nomes padrão da camada Photoshop. Por exemplo, uma camada chamada Marca de preço em um arquivo PSD chamado SpringAd é chamada Marca Ad_Price Primavera. Uma camada com o nome padrão Camada 2 é chamada Primavera Ad_2. |
 | Âncora |  | Especifique como as imagens são ancoradas em modelos gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que as imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. Imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se o aplicativo exigir as imagens de substituição para preencher o espaço alocado no modelo. |
 
 #### Definir opções de upload de PDF {#setting-pdf-upload-options}
@@ -259,7 +259,7 @@ Ao carregar um arquivo PDF, você pode formatá-lo de várias maneiras. Você co
 
 >[!NOTE]
 >
->O AEM não oferece suporte a eCatalogs.
+>Os eCatalogs não são suportados em AEM.
 
 Escolha uma das seguintes opções:
 
@@ -296,17 +296,17 @@ Consulte [Configuração de predefinições de conjuntos de lotes para gerar aut
 
 ### Carregamentos em fluxo {#streamed-uploads}
 
-Se você carregar vários ativos, as chamadas de E/S para o servidor AEM aumentam drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que o tempo limite seja excedido. O AEM Assets oferece suporte ao upload simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado nos ativos AEM.
+Se você carregar vários ativos, as chamadas de E/S para o servidor AEM aumentam drasticamente, o que reduz a eficiência de upload e pode até mesmo fazer com que o tempo limite seja excedido. A AEM Assets oferece suporte ao upload simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload continuado é ativado no AEM Assets.
 
-O carregamento de fluxo é desativado para o AEM em execução no servidor JEE com a versão servlet-api inferior a 3.1.
+O carregamento de fluxo é desabilitado para AEM em execução no servidor JEE com a versão servlet-api inferior a 3.1.
 
 ### Extrair arquivo ZIP contendo ativos {#extract-zip-archive-containing-assets}
 
-Você pode carregar arquivos ZIP como qualquer outro ativo suportado. As mesmas regras de nome de arquivo se aplicam aos arquivos ZIP. O AEM permite que você extraia um arquivo ZIP para um local DAM.
+Você pode carregar arquivos ZIP como qualquer outro ativo suportado. As mesmas regras de nome de arquivo se aplicam aos arquivos ZIP. AEM permite que você extraia um arquivo ZIP para um local DAM.
 
 Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção para lidar com conflitos, se houver. Se os ativos no arquivo ZIP já existirem na pasta de destino, você poderá selecionar uma destas opções: pule a extração, substitua os arquivos existentes, mantenha ambos os ativos renomeando ou crie uma nova versão.
 
-Depois que a extração é concluída, o AEM notifica você na área de notificação. Enquanto o AEM extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
+Após a extração ser concluída, AEM notifica você na área de notificação. Enquanto AEM extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
 
 ![Notificação de extração ZIP](assets/zip_extract_notification.png)
 
@@ -411,7 +411,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    >[!NOTE]
    >
-   >Se você copiar um ativo no mesmo local, o AEM gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo chamado Quadrado, o AEM gera automaticamente o título para sua cópia como Quadrado1.
+   >Se você copiar um ativo no mesmo local, AEM gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo chamado Quadrado, AEM gera automaticamente o título para sua cópia como Quadrado1.
 
 1. Toque no ícone do ativo **[!UICONTROL Colar]** na barra de ferramentas:
 
@@ -481,13 +481,13 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    >[!NOTE]
    >
-   >Por padrão, os ativos AEM não exibem a representação original do ativo no modo de pré-visualização. Se você for um administrador, poderá usar sobreposições para configurar os ativos AEM para exibir as representações originais no modo de pré-visualização.
+   >Por padrão, a AEM Assets não exibe a representação original do ativo no modo de pré-visualização. Se você for um administrador, poderá usar sobreposições para configurar o AEM Assets para exibir as representações originais no modo de pré-visualização.
 
 1. Selecione uma representação para visualização ou exclua a representação.
 
    **Excluir uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e toque no ícone **[!UICONTROL Excluir representação]** da [barra de ferramentas](/help/sites-authoring/basic-handling.md). As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload dos ativos excluídos novamente.
+   Selecione uma representação no painel **[!UICONTROL Representações]** e toque no ícone **[!UICONTROL Excluir representação]** da [barra de ferramentas](/help/sites-authoring/basic-handling.md). As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -501,7 +501,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >Se você selecionar uma representação no painel **[!UICONTROL Representações]**, a barra de ferramentas alterará o contexto e exibirá somente as ações relevantes para a representação. Options, such as the **[!UICONTROL Upload Rendition]** icon is not displayed. Para exibir essas opções na barra de ferramentas, navegue até a página de detalhes do ativo.
 
-   Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, os ativos AEM exibem a representação com as dimensões exatas ou mais próximas.
+   Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, o AEM Assets exibe a representação com as dimensões exatas ou mais próximas.
 
    To configure rendition dimensions of an image at the asset detail level, overlay the **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` and configure the value of the width property. Configure o **[!UICONTROL tamanho (Longo) em KB]** da propriedade no lugar da largura para personalizar a representação na página Detalhes do ativo com base no tamanho da imagem. For size-based customization, the property **[!UICONTROL preferOriginal]** assigns preference to the original if the size of the matched rendition is greater than the original.
 
@@ -596,7 +596,7 @@ Ao cancelar a publicação de um ativo complexo, cancele a publicação somente 
 
 ## Criar um grupo de usuários fechado {#closed-user-group}
 
-Um CUG (Closed User Group) é usado para limitar o acesso a pastas de ativos específicas publicadas do AEM. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo os ativos e as subpastas da pasta) será restrito somente aos membros ou grupos atribuídos. Para acessar a pasta, eles devem fazer logon usando suas credenciais de segurança.
+Um CUG (Closed User Group) é usado para limitar o acesso a pastas de ativos específicas publicadas da AEM. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo os ativos e as subpastas da pasta) será restrito somente aos membros ou grupos atribuídos. Para acessar a pasta, eles devem fazer logon usando suas credenciais de segurança.
 
 CUG são uma maneira extra de restringir o acesso aos seus ativos. Você também pode configurar uma página de logon para a pasta.
 
@@ -611,10 +611,10 @@ CUG são uma maneira extra de restringir o acesso aos seus ativos. Você também
 
    ![login_page](assets/login_page.png)
 
-   Se você não especificar o caminho para uma página de logon, o AEM exibirá a página de logon padrão na instância de publicação.
+   Se você não especificar o caminho para uma página de logon, AEM exibirá a página de logon padrão na instância de publicação.
 
 1. Publique a pasta e tente acessá-la da instância de publicação. Uma tela de login é exibida.
-1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que o AEM o autentica.
+1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que AEM o autentica.
 
 ## Pesquisar ativos {#searching-assets}
 
@@ -624,7 +624,7 @@ A pesquisa básica é detalhada na seção [Pesquisar e filtrar](/help/sites-aut
 
 Para ativos carregados recentemente, seus metadados (incluindo títulos, tags e assim por diante) não estão disponíveis imediatamente na lista de sugestões que aparecem quando você digita na caixa Omnisearch.
 
-Isso ocorre porque os ativos AEM aguardam até a expiração de um período limite (1 hora por padrão) antes de executar um trabalho em segundo plano para indexar os metadados de todos os ativos recentemente carregados/atualizados e adicioná-los à lista de sugestões.
+Isso ocorre porque a AEM Assets aguarda até a expiração de um período de tempo limite (1 hora por padrão) antes de executar um trabalho em segundo plano para indexar os metadados de todos os ativos recentemente carregados/atualizados e adicioná-los à lista de sugestões.
 
 ## Usar ações rápidas {#quick-actions}
 
@@ -711,7 +711,7 @@ A **[!UICONTROL Linha]** do tempo permite que você visualização vários event
 
 No console [](managing-collections-touch-ui.md#navigating-the-collections-console)Coleções, a lista **[!UICONTROL Mostrar todas]** fornece opções para visualização somente de comentários e workflows. Além disso, a linha do tempo é exibida somente para coleções de nível superior listadas no console. Ela não será exibida se você navegar dentro de qualquer uma das coleções.
 
-**[!UICONTROL A linha do tempo]** contém várias [opções específicas para Fragmentos](content-fragments-managing.md#timeline-for-content-fragments)de conteúdo; essa funcionalidade exige o [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou posterior.
+**[!UICONTROL A linha do tempo]** contém várias [opções específicas para Fragmentos](content-fragments-managing.md#timeline-for-content-fragments)de conteúdo; essa funcionalidade exige [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou posterior.
 
 **Para usar a Linha do tempo**:
 
@@ -728,9 +728,9 @@ No console [](managing-collections-touch-ui.md#navigating-the-collections-consol
 
 Anotações são comentários ou notas explicativas adicionadas a imagens ou vídeos. As anotações fornecem aos comerciantes a capacidade de colaborar e deixar feedback sobre os ativos.
 
-As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo compatíveis com o AEM Assets dependem do navegador.
+As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo suportados pela AEM Assets dependem do navegador.
 
-Para Fragmentos de conteúdo, [as anotações são criadas no editor](content-fragments-variations.md#annotating-a-content-fragment); essa funcionalidade exige o [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou posterior.
+Para Fragmentos de conteúdo, [as anotações são criadas no editor](content-fragments-variations.md#annotating-a-content-fragment); essa funcionalidade exige [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou posterior.
 
 É possível adicionar várias anotações antes de salvá-las.
 
@@ -765,7 +765,7 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. Toque em **[!UICONTROL Fechar]** para sair do modo **[!UICONTROL Anotar]** .
-1. Para visualização da notificação, faça logon nos ativos AEM com as credenciais do Aaron MacDonald e toque no ícone **[!UICONTROL Notificações]** para visualização da notificação.
+1. Para visualização da notificação, faça logon no AEM Assets com as credenciais do Aaron MacDonald e toque no ícone **[!UICONTROL Notificações]** para visualização da notificação.
 
 1. Para escolher uma cor diferente para diferenciar os usuários, toque no ícone de **[!UICONTROL Perfil]** e toque em **[!UICONTROL Minhas preferências]**.
 
@@ -799,7 +799,7 @@ Se um ativo tiver anotações ou tiver sido submetido a um fluxo de trabalho de 
 
 Você também pode imprimir somente as anotações ou o status da revisão.
 
-Anotações extensas podem não ser renderizadas corretamente no arquivo PDF. Para uma renderização ideal, a Adobe recomenda que você limite as anotações a 50 palavras.
+Anotações extensas podem não ser renderizadas corretamente no arquivo PDF. Para uma renderização ideal, o Adobe recomenda que você limite as anotações a 50 palavras.
 
 Para imprimir as anotações e revisar o status, toque no ícone **[!UICONTROL Imprimir]** e siga as instruções do assistente. O ícone **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuídos a ele.
 
@@ -846,13 +846,13 @@ Para imprimir as anotações e revisar o status, toque no ícone **[!UICONTROL I
    Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
 
 **Para imprimir anotações em idiomas**estrangeiros:
-Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas não latinos), você deve primeiro configurar o serviço CQ-DAM-Handler-Gibson Font Manager no servidor AEM para poder imprimir essas anotações. Ao configurar o serviço CQ-DAM-Handler-Gibson Font Manager, forneça o caminho onde as fontes dos idiomas desejados estão localizadas.
+Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas não latinos), você deve primeiro configurar o CQ-DAM-Handler-Gibson Font Manager Service no servidor AEM para poder imprimir essas anotações. Ao configurar o serviço CQ-DAM-Handler-Gibson Font Manager, forneça o caminho onde as fontes dos idiomas desejados estão localizadas.
 
 1. Abra a página de configuração do serviço **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager no URL]** https://&lt;servidor>:&lt;porta>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl [](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Para configurar o serviço **** CQ-DAM-Handler-Gibson Font Manager, execute um dos seguintes procedimentos:
 
-   * Na opção de diretório Fontes **[!UICONTROL do]** sistema, especifique o caminho completo para o diretório de fontes do seu sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como `/Library/Fonts` na opção de diretório Fontes **[!UICONTROL do]** sistema. O AEM busca as fontes desse diretório.
-   * Crie um diretório chamado **fonts** dentro da pasta **[!UICONTROL crx-quickstart]** . **[!UICONTROL O serviço]** CQ-DAM-Handler-Gibson Font Manager busca automaticamente as fontes no local `crx-quickstart/fonts`. Você pode substituir esse caminho padrão na opção de diretório Fontes **[!UICONTROL do]** Adobe Server.
+   * Na opção de diretório Fontes **[!UICONTROL do]** sistema, especifique o caminho completo para o diretório de fontes do seu sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como `/Library/Fonts` na opção de diretório Fontes **[!UICONTROL do]** sistema. AEM as fontes deste diretório.
+   * Crie um diretório chamado **fonts** dentro da pasta **[!UICONTROL crx-quickstart]** . **[!UICONTROL O serviço]** CQ-DAM-Handler-Gibson Font Manager busca automaticamente as fontes no local `crx-quickstart/fonts`. Você pode substituir esse caminho padrão na opção de diretório Fontes **[!UICONTROL do servidor]** Adobe.
    * Crie uma nova pasta para fontes em seu sistema e armazene as fontes desejadas na pasta. Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes **[!UICONTROL do]** cliente.
 
 1. Acesse a configuração de PDF **[!UICONTROL de]** anotação no URL [https://&lt;servidor>:&lt;porta>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
@@ -860,9 +860,9 @@ Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas n
 
    * Inclua a string `<font_family_name_of_custom_font, sans-serif>` na opção font-family. Por exemplo, se você quiser imprimir anotações em CJK (chinês, japonês e coreano), inclua a string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` na opção família de fontes. Se quiser imprimir anotações em Hindi, baixe a fonte apropriada e configure a família de fontes como Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Reinicie a instância do AEM.
+1. Reinicie a instância AEM.
 
-A seguir está um exemplo de como configurar o AEM para imprimir anotações em CJK (chinês, japonês e coreano):
+Este é um exemplo de como você configura AEM para imprimir anotações em CJK (chinês, japonês e coreano):
 
 1. Baixe as fontes do Google Noto CJK dos links a seguir e armazene-as no diretório de fontes configurado no Serviço do Gerenciador de fontes.
 
@@ -879,9 +879,9 @@ O controle de versão cria um instantâneo de ativos digitais em um ponto espec�
 
 A seguir estão os cenários nos quais você cria versões:
 
-* Você modifica uma imagem em um aplicativo diferente e faz upload para os ativos AEM. Uma versão da imagem é criada para que sua imagem original não seja substituída.
+* Você modifica uma imagem em um aplicativo diferente e faz upload para a AEM Assets. Uma versão da imagem é criada para que sua imagem original não seja substituída.
 * Edite os metadados de um ativo.
-* Use o aplicativo de desktop AEM para fazer check-out de um ativo existente e salvar as alterações. Uma nova versão é criada sempre que o ativo é salvo.
+* Use AEM aplicativo de desktop para fazer check-out de um ativo existente e salvar suas alterações. Uma nova versão é criada sempre que o ativo é salvo.
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Quando você cria uma versão para um ativo, os metadados e as execuções são salvos junto com a versão. As execuções são alternativas renderizadas das mesmas imagens, por exemplo, uma execução PNG de um arquivo JPEG carregado.
 
