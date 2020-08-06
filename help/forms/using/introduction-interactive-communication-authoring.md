@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1315'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +36,7 @@ Quando você [cria uma nova Comunicação](/help/forms/using/create-interactive-
 
 ![interface do usuário de criação de comunicação interativa](assets/form-editor.png)
 
-******A. Barra lateral** B. Barra de ferramentas da página **C.** Área de conteúdo
+**A.** Barra lateral **B.** Barra de ferramentas da página **C.** Área de conteúdo
 
 ## Barra lateral {#sidebar}
 
@@ -41,32 +44,31 @@ Quando você [cria uma nova Comunicação](/help/forms/using/create-interactive-
 
 [Clique para ampliar](assets/sidebar-comps-1.png)
 
-**************A. Navegador de canal** B. Navegador de conteúdo **C.** Propriedades navegador **D. Navegador de ativos** E. Navegador de componentes **F. Navegador de Fontes de Dados - Modelo de Dados** G. Navegador de Fontes de Dados - Conteúdo Mestre
+**A.** Navegador de Canais **B.** Navegador de conteúdo **C.** Propriedades navegador **D.** Navegador de ativos **E.** Navegador de componentes **F.** Navegador de Fontes de Dados - Modelo de Dados **G.** Navegador de Fontes de Dados - Conteúdo Principal
 
 A barra lateral inclui o seguinte:
 
-* **Navegador de canal**
+* **Navegador de Canais**
 
-   O navegador de canal ajuda a alternar entre os canais de impressão e da Web da Comunicação interativa. Com base no canal selecionado no navegador de canal, os navegadores, como Conteúdo e Componentes, exibem as opções.
+   O navegador de Canais ajuda a alternar entre os canais de impressão e da Web da Comunicação interativa. Com base no canal selecionado no navegador do canal, os navegadores, como Conteúdo e Componentes, exibem as opções.
 
 * **Navegador de conteúdo**
 
-   No navegador de conteúdo, é possível ver a hierarquia de objetos do documento para o canal selecionado. O autor pode navegar até um componente específico tocando nesse elemento na Árvore de objetos de documento. O autor pode pesquisar objetos no canal da Web e reorganizá-los a partir dessa árvore.
+   No navegador de conteúdo, é possível ver a hierarquia de objetos do documento para o canal selecionado. O autor pode navegar até um componente específico tocando nesse elemento na Árvore de objetos do Documento. O autor pode pesquisar objetos no canal da Web e reorganizá-los a partir dessa árvore.
 
 * **Navegador de propriedades**
 
-   Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do contêiner de documento:
+   Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do container do documento:
 
-   
-Selecione um componente, toque em nível ![de](assets/field-level.png) campo > Contêiner **** de documento e, em seguida, em ![cmppr](assets/cmppr.png).
+   Selecione um componente, toque em nível ![de](assets/field-level.png) campo > Container **do** Documento e, em seguida, em ![cmppr](assets/cmppr.png).
 
 * **Navegador de ativos**
 
-   Segrega diferentes tipos de conteúdo, como fragmentos de layout, imagens, documentos, páginas, vídeos. O autor pode arrastar e soltar ativos na Comunicação interativa.
+   Segrega tipos diferentes de conteúdo, como fragmentos de layout, imagens, documentos, páginas, vídeos. O autor pode arrastar e soltar ativos na Comunicação interativa.
 
 * **Navegador de componentes**
 
-   Inclui componentes que podem ser usados para criar canais de impressão e da Web de um documento. Você pode arrastar componentes para a Comunicação interativa para adicionar elementos e configurar elementos adicionados de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador Componentes para canais de impressão e da Web:
+   Inclui componentes que podem ser usados para criar canais de impressão e da Web de um documento. Você pode arrastar componentes para a Comunicação interativa para adicionar elementos e configurar elementos adicionados de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador Componentes para canais impressos e da Web:
 
 | **Componente** | **Canal de impressão** | **Canal da Web** | **Funcionalidade** |
 |---|---|---|---|
@@ -74,13 +76,13 @@ Selecione um componente, toque em nível ![de](assets/field-level.png) campo > C
 | Fragmento do documento | ✓ | ✓ | Permite adicionar um componente reutilizável, texto, lista ou condição, a uma Comunicação interativa. O componente reutilizável adicionado a uma Comunicação interativa pode ser baseado em modelo de dados de formulário ou sem um modelo de dados de formulário. |
 | Imagem | ✓ | ✓ | Permite inserir uma imagem. |
 | Painel | - | ✓ | O componente Painel é um espaço reservado para agrupar outros componentes e controla como um grupo de componentes é apresentado em uma Comunicação interativa. Um componente de painel também permite tornar um grupo de componentes repetíveis para o usuário final, como em várias entradas necessárias para o preenchimento de credenciais educacionais. Também é uma boa prática usar um painel cada para uma guia de uma Comunicação interativa com várias guias. |
-| Tabela |  &amp;ast; | ✓ | Adiciona uma tabela que permite organizar dados em linhas e colunas. |
-| Área de destino | &amp;ast;&amp;ast; | ✓ | Insere uma área de destino em um canal da Web para organizar os componentes específicos do canal da Web. |
+| Tabela | &amp;ast; | ✓ | Adiciona uma tabela que permite organizar dados em linhas e colunas. |
+| Área de destino | &amp;ast;&amp;ast; | ✓ | Insere uma área de público alvo em um canal da Web para organizar os componentes específicos do canal da Web. |
 | Texto | - | ✓ | Adiciona texto ao canal da Web de uma Comunicação Interativa. O texto pode usar objetos de modelo de dados de formulário para tornar o conteúdo dinâmico. |
 
- &amp;ast; Use Fragmentos de layout no canal Imprimir para adicionar tabelas.
+&amp;ast; Use Fragmentos de layout no canal Imprimir para adicionar tabelas.
 
-&amp;ast;&amp;ast; No canal Impressão, as áreas de destino são predefinidas no modelo XDP/impressão. Não é possível adicionar novas áreas de destino usando a interface do usuário de criação de Comunicação interativa.
+&amp;ast;&amp;ast; No canal de impressão, as áreas de público alvo são predefinidas no modelo XDP/print. Não é possível adicionar novas áreas de público alvo usando a interface de usuário de criação de Comunicação interativa.
 
 * **Navegador de fontes de dados**
 
@@ -102,7 +104,7 @@ Os pontos principais ao trabalhar com componentes de comunicação interativa s�
 
 ![](do-not-localize/toolbar.png)
 
-Ao selecionar um componente, você verá uma barra de ferramentas que permite trabalhar com ele. Você obtém opções para cortar, colar, mover e especificar propriedades dos componentes. Suas opções são:
+Ao selecionar um componente, você verá uma barra de ferramentas que permite trabalhar com ele. Você obtém opções para recortar, colar, mover e especificar propriedades dos componentes. Suas opções são:
 
 A. **Configurar**: Quando você toca em **Configurar**, as propriedades do componente ficam visíveis na barra lateral.
 
@@ -112,9 +114,9 @@ C. **Cópia**: Você pode usar a opção de cópia para copiar um componente e c
 
 D. **Recortar**: Você pode usar a opção de corte para mover um componente de um local para outro na Comunicação interativa.
 
-E. **Excluir**: Permite excluir o componente da Comunicação interativa.
+E. **Excluir**: Permite que você exclua o componente da Comunicação interativa.
 
-F. Componente **Inserir**: Permite inserir um componente acima do componente selecionado.
+F. **Inserir componente**: Permite inserir um componente acima do componente selecionado.
 
 G. **Colar**: Permite colar o componente que você recortou ou copiou usando as opções descritas acima.
 
@@ -124,7 +126,7 @@ Eu. **Pai**: Permite selecionar o pai de um componente.
 
 J. **Mais**: Fornece mais opções para trabalhar com o componente selecionado.
 
-* Exibir expressão SOM (somente para painéis)
+* Expressão SOM de Visualização (somente para painéis)
 * Agrupar objetos no painel (somente para painéis)
 * Editar fragmento (somente para fragmentos)
 * Salvar um painel como fragmento (somente para painéis)
@@ -134,10 +136,10 @@ J. **Mais**: Fornece mais opções para trabalhar com o componente selecionado.
 
 ## Barra de ferramentas da página {#page-toolbar}
 
-A barra de ferramentas Página na parte superior fornece opções que permitem que você visualize a Comunicação interativa e altere suas propriedades. Você pode visualizar a Comunicação interativa ao criá-la e fazer alterações de acordo. Na barra de ferramentas da página, você verá:
+A barra de ferramentas Página na parte superior fornece opções que permitem que você pré-visualização a Comunicação interativa e altere suas propriedades. Você pode pré-visualização a Comunicação interativa ao criá-la e fazer alterações de acordo. Na barra de ferramentas da página, você verá:
 
 * Alternar painel lateral ![alternar painel](assets/toggle-side-panel.png): Permite mostrar ou ocultar a barra lateral.
-* Informações da página ![pageinformationad](assets/pageinformationad.png): Permite exibir as propriedades da página.
+* Informações da página ![pageinformationad](assets/pageinformationad.png): Permite visualização das propriedades da página.
 * Régua ![de emulador](assets/ruler.png): Permite que você emule a aparência da sua Comunicação interativa para tamanhos de exibição diferentes, como tablets e telefones.
 * Editar: Permite selecionar outros modos, como: Editar, Estilo, Desenvolvedor e Design.
 
@@ -147,8 +149,8 @@ A barra de ferramentas Página na parte superior fornece opções que permitem q
 
       * Descubra de que comunicação interativa é composta.
       * Depurar o que está acontecendo onde e quando, o que por sua vez ajuda a resolver problemas.
-   * Destino:Permite ativar ou desativar componentes personalizados ou componentes prontos para uso que não estejam listados na barra lateral.
+   * Público alvo: Permite ativar ou desativar componentes personalizados ou componentes prontos para uso que não estejam listados na barra lateral.
 
 
-* Visualização: Permite que você visualize a aparência da Comunicação interativa ao publicá-la.
+* Pré-visualização: Permite que você pré-visualização a aparência da Comunicação interativa ao publicá-la.
 
