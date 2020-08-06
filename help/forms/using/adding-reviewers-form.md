@@ -9,11 +9,14 @@ topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
 
-# Associar revisores de envio a um formulário {#associating-submission-reviewers-with-a-form}
+# Associar revisores de envio a um formulário  {#associating-submission-reviewers-with-a-form}
 
 Ao criar um formulário, você pode especificar usuários que revisam os envios do formulário por meio do portal de formulários e fornecem feedback. Sua organização pode coletar feedback e retrabalhar os formulários enviados.
 
@@ -23,14 +26,14 @@ Os grupos do revisor atribuídos a um formulário só podem revisar os envios do
 
 ## Pré-requisitos {#prerequisite}
 
-### Habilitar a propriedade de grupos do revisor de envio para formulários adaptáveis usando o editor de esquema de metadados {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
+### Habilitar a propriedade de grupos do revisor de envio para formulários adaptáveis usando o editor de schemas de metadados {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
-Para associar um grupo de revisores a um formulário, edite o esquema de metadados de formulários adaptáveis. Por padrão, não é possível adicionar um grupo de revisores a um formulário enviado.
+Para associar um grupo de revisores a um formulário, edite o schema de metadados de formulários adaptáveis. Por padrão, não é possível adicionar um grupo de revisores a um formulário enviado.
 
-Para editar o esquema de metadados:
+Para editar o schema de metadados:
 
-1. No modo de autor, em Experience Manager, clique em **[!UICONTROL Ferramentas > Ativos > Esquemas]** de metadados.
-1. Na página Formulários de esquema, navegue até **[!UICONTROL Formulários > Formulários criados no AEM]**.
+1. No modo de autor, em Experience Manager, clique em **[!UICONTROL Ferramentas > Ativos > Schemas]** de metadados.
+1. Na página Schema Forms, navegue até **[!UICONTROL Forms > Forms Authored in AEM]**.
 
    O url da página é:
 
@@ -58,20 +61,20 @@ Antes de executar as etapas a seguir, consulte [Pré-requisito](/help/forms/usin
 
 Para criar um grupo e adicionar membros a ele, navegue até **[!UICONTROL Ferramentas > Operações > Segurança > Grupos]**.\
 Para obter mais informações, consulte Administração [do usuário e Serviços](/help/sites-administering/security.md).\
-Certifique-se de adicionar o grupo criado como membro do grupo de usuários predefinido: revisores **de envio de** formulários. Esse grupo de usuários é enviado com o AEM Forms e garante que os usuários sejam adicionados como revisores de envio.
+Certifique-se de adicionar o grupo criado como membro do grupo de usuários predefinido: **revisores** de envio de formulários. Esse grupo de usuários é enviado com a AEM Forms e garante que os usuários sejam adicionados como revisores de envio.
 
 Para associar grupos de usuários a um formulário adaptável:
 
-1. No modo de criação, navegue até **[!UICONTROL Formulários > Formulários e documentos]**.
-1. Use a opção **[!UICONTROL Selecionar]** para selecionar um formulário adaptável e clique em **[!UICONTROL Exibir propriedades]**.
+1. No modo de criação, navegue até **[!UICONTROL Forms > Forms e Documentos]**.
+1. Use a opção **[!UICONTROL Selecionar]** para selecionar um formulário adaptável e clique em Propriedades **[!UICONTROL da]** Visualização.
 1. Na janela Propriedades do formulário, clique em **[!UICONTROL Editar]** e em **[!UICONTROL AVANÇADO]**.
 1. Insira o grupo no campo do grupo do revisor de submissão e clique em **[!UICONTROL Concluído]**.
 
-   O campo de grupo do revisor de envio é exibido com o nome especificado no esquema de metadados editado dos formulários adaptáveis.
+   O campo de grupo do revisor de envio é exibido com o nome especificado no schema de metadados editados dos formulários adaptáveis.
 
 >[!NOTE]
 >
->Replicar usuários e formulários para garantir a disponibilidade dos usuários e formulários na implementação remota do AEM Forms.
+>Replicar usuários e formulários para garantir a disponibilidade dos usuários e formulários na implementação remota da AEM Forms.
 >
 >Certifique-se de que todos os usuários sejam replicados como membros de revisão dos grupos de usuários na implementação remota.
 
