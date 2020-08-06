@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 86%
 
 ---
 
@@ -46,7 +49,7 @@ No MCM, você pode acessar:
       Selecionar um segmento específico abrirá a página de definição de segmento.
 
    * [Relatórios](/help/sites-administering/reporting.md)\
-      O AEM fornece relatórios diferentes para ajudá-lo a analisar e monitorar o estado da sua instância. Este painel do MCM lista os relatórios.
+      AEM fornece relatórios diferentes para ajudá-lo a analisar e monitorar o estado da sua instância. Este painel do MCM lista os relatórios.
 
       Selecionar um relatório abrirá a página do relatório.
 
@@ -72,7 +75,7 @@ No MCM, você pode acessar:
 
 O painel mostra quatro painéis que fornecem uma visão geral de suas listas (de leads), segmentos, relatórios e campanhas. O acesso à funcionalidade básica destes também está disponível aqui.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_painel](assets/mcm_dashboard.png)
 
 ## Leads {#leads}
 
@@ -129,7 +132,7 @@ Para acessar as campanhas existentes, clique em **Campanhas** no MCM.
 
 * **No painel** direito:
 
-   Os ícones são exibidos para cada marca (as campanhas históricas não serão exibidas).
+   Os ícones são mostrados para cada marca (campanhas históricas não serão mostradas).
 
    É possível clicar duas vezes nestes para abrir a visão geral da marca.
 
@@ -183,7 +186,7 @@ Para campanhas individuais, há duas exibições disponíveis:
 
    Aqui você pode:
 
-   * **Criar um** novo... Experiência; por exemplo, ofertas, teasers e boletins informativos do Adobe Target.
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * **Editar** os detalhes de uma página de teaser ou boletim informativo específico (também é possível clicar duas vezes).
    * Definir as **Propriedades...** para uma página de teaser ou boletim informativo específico.
    * **Simular** a aparência de uma experiência (página de teaser ou boletim informativo).
