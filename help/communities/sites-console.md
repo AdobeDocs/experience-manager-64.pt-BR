@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '3241'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +45,7 @@ Antes de criar um site da comunidade, é *necessário* :
 A prática recomendada, para garantir que o site esteja preparado para suportar muitos recursos, é executar as seguintes etapas:
 
 * Instale o pacote de recursos [mais recente](deploy-communities.md#latestfeaturepack)
-* Ativar o [Adobe Analytics](analytics.md) para o AEM Communities
+* Ativar o [Adobe Analytics](analytics.md) para AEM Communities
 * Configurar [email](email.md)
 * Identificar administradores [da comunidade](users.md#creating-community-members)
 * [Habilitar o manipulador](social-login.md#adobe-granite-oauth-authentication-handler) OAuth para logon social
@@ -67,7 +70,7 @@ Por exemplo, a imagem a seguir mostra o console Sites das Comunidades principais
 
 O console de criação de site fornece uma abordagem passo a passo para reunir os recursos do site com base em um modelo [e configurações selecionados do site da](sites.md) comunidade.
 
-Cada site criado inclui um recurso de logon, já que os visitantes do site precisam fazer logon antes de postar conteúdo, enviar mensagens ou participar de um grupo. Outros recursos incluídos são perfis de usuário, mensagens, notificações, menu do site, pesquisa, tema e marca.
+Cada site criado inclui um recurso de logon, já que visitantes do site precisam fazer logon antes de postar conteúdo, enviar mensagens ou participar de um grupo. Outros recursos incluídos são perfis do usuário, mensagens, notificações, menu do site, pesquisa, temas e marca.
 
 O processo é iniciado selecionando o `Create` botão localizado na parte superior do console Sites das Comunidades.
 
@@ -81,7 +84,7 @@ No painel Modelo do site, o Título, Descrição, Raiz do site, Idioma base, Nom
 
 * **[!UICONTROL Título]** do site da comunidade: Um título de exibição para o site.
 
-   O título aparece no site publicado, bem como na interface do usuário do administrador do site.
+   O título é exibido no site publicado, bem como na interface do usuário do administrador do site.
 
 * **[!UICONTROL Descrição]** do site da comunidade: Uma descrição do site.
 
@@ -91,11 +94,11 @@ No painel Modelo do site, o Título, Descrição, Raiz do site, Idioma base, Nom
 
    A raiz padrão é `/content/sites`, mas a raiz pode ser movida para qualquer local dentro do site.
 
-* **[!UICONTROL Idioma]** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas básicos dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo a melhor prática descrita em [Traduzir conteúdo para sites](../../help/sites-administering/translation.md)multilíngues. A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
+* **[!UICONTROL Idioma]** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas base dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo as práticas recomendadas descritas em [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
 
 * **[!UICONTROL Nome]** do site da comunidade: O nome da página raiz do site que aparece no URL
 
-   * Verifique novamente o nome, pois ele não é facilmente alterado depois que o site é criado
+   * Verifique o nome pelo Duplo, pois ele não é facilmente alterado depois que o site é criado
    * O URL base ( `https://*server:port/site root/site name*)` será exibido abaixo do `Community Site Name`
    * Para um URL válido, acrescente um código de idioma base + &quot;.html&quot;
 
@@ -113,7 +116,7 @@ O painel Design contém dois subpainéis para selecionar o tema e o banner de ma
 
 ![tema-1](assets/sitetheme-1.png)
 
-A estrutura usa o [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível ao site. Um dos muitos temas do Bootstrap pré-carregado pode ser selecionado para criar o estilo do modelo de site da comunidade selecionado, ou um tema do Bootstrap pode ser carregado.
+A estrutura usa o Bootstrap [do](https://twitterbootstrap.org/) Twitter para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de site da comunidade selecionado, ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de seleção azul opaca.
 
@@ -138,7 +141,7 @@ Ao criar ou selecionar uma imagem, lembre-se:
 
 Selecione **[!UICONTROL Próximo]**.
 
-### Etapa 3:Configurações {#step-settings}
+### Etapa 3: Configurações {#step-settings}
 
 O painel Configurações contém vários subpainéis que apresentam recursos a serem configurados antes de passar para a última etapa para criar o site.
 
@@ -154,13 +157,13 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 >
 >**Ativar serviço de túnel**
 >
->Vários subpainéis Configurações permitem a atribuição de um membro confiável para moderar o UGC, gerenciar grupos ou ser contatos para recursos de ativação no ambiente de publicação.
+>Vários subpainéis de Configurações permitem a atribuição de um membro confiável para moderar o UGC, gerenciar grupos ou ser contatos para recursos de ativação no ambiente de publicação.
 >
 >A convenção é que [usuários e grupos](users.md) de usuários do lado da publicação (membros e grupos de membros) não sejam duplicados no ambiente do autor.
 >
 >Assim, ao criar o site da comunidade no ambiente do autor e atribuir membros confiáveis a várias funções, é necessário recuperar dados de membros do ambiente de publicação.
 >
->Isso é feito habilitando o ` [AEM Communities Publish Tunnel Service](deploy-communities.md#tunnel-service-on-author)`para o ambiente do autor.
+>Isso é feito ao habilitar o ` [AEM Communities Publish Tunnel Service](deploy-communities.md#tunnel-service-on-author)`para o ambiente do autor.
 
 #### USER MANAGEMENT {#user-management}
 
@@ -170,7 +173,7 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 >
 >Recomenda-se que os sites [da comunidade de](overview.md#enablement-community) ativação sejam privados (entre em contato com seu representante de conta para obter mais informações).
 >
->Um site da comunidade é privado quando o acesso aos visitantes anônimos do site é negado, pode não se inscrever e pode não usar o login social.
+>Um site da comunidade é privado quando visitantes anônimos do site têm acesso negado, podem não se inscrever e podem não usar o login social.
 
 * **[!UICONTROL Permitir registro do usuário]**
 
@@ -178,7 +181,7 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
    Se desmarcada, o site da comunidade é *restrito* e os visitantes do site devem ser atribuídos ao grupo de membros do site da comunidade, fazer uma solicitação ou receber um convite por email. Se desmarcada, o acesso anônimo não deve ser permitido.
 
-   Desmarque para obter um site de comunidade *particular* . O padrão está marcado.
+   Desmarque a existência de um site de comunidade *particular* . O padrão está marcado.
 
 * **[!UICONTROL Permitir acesso anônimo]**
 
@@ -186,7 +189,7 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
    Se não estiver marcada, somente os membros conectados poderão acessar o site.
 
-   Desmarque para obter um site de comunidade *particular* . O padrão está marcado.
+   Desmarque a existência de um site de comunidade *particular* . O padrão está marcado.
 
 * **[!UICONTROL Ativar mensagens]**
 
@@ -206,7 +209,7 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
 * **[!UICONTROL Permitir logons sociais: Twitter]**
 
-   Se marcada, permita que os visitantes do site façam logon com suas credenciais de conta do Twitter. A configuração [selecionada da nuvem do](social-login.md#create-a-twitter-connect-cloud-service) Twitter deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
+   Se marcada, permita que visitantes do site façam logon com suas credenciais de conta do Twitter. A configuração [selecionada da nuvem do](social-login.md#create-a-twitter-connect-cloud-service) Twitter deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
 
    Se desmarcada, nenhum logon do Twitter será apresentado.
 
@@ -221,11 +224,11 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
 
-As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando Espaços de nomes de tags previamente definidos pelo Console [de](../../help/sites-administering/tags.md#tagging-console)marcação.
+As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando Namespaces de tags definidas anteriormente pelo Console [de](../../help/sites-administering/tags.md#tagging-console)marcação.
 
-Além disso, a seleção de namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos. Consulte [Marcação de recursos](tag-resources.md) de ativação para obter informações importantes.
+Além disso, selecionar namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos. Consulte [Marcação de recursos](tag-resources.md) de ativação para obter informações importantes.
 
-* Caixa de pesquisa de texto: comece a digitar para identificar as tags que podem ser usadas no site
+* Caixa de pesquisa de texto: Digitação de start para identificar tags que podem ser usadas no site
 
 #### ROLES {#roles}
 
@@ -237,15 +240,15 @@ Encontrar membros da comunidade é fácil usar a busca antecipada por tipos.
 
 * **[!UICONTROL Gerentes da comunidade]**
 
-   Comece digitando para selecionar um ou mais membros da comunidade ou grupos de membros que podem gerenciar membros da comunidade e grupos de membros.
+   Digitação de Start para selecionar um ou mais membros da comunidade ou grupos de membros que podem gerenciar membros da comunidade e grupos de membros.
 
 * **[!UICONTROL Moderadores da comunidade]**
 
-   Comece digitando para selecionar um ou mais membros da comunidade ou grupos de membros que devem ser confiáveis como moderadores do conteúdo gerado pelo usuário.
+   Digitação de Start para selecionar um ou mais membros da comunidade ou grupos de membros que devem ser confiáveis como moderadores de conteúdo gerado pelo usuário.
 
 * **[!UICONTROL Membros privilegiados da comunidade]**
 
-   Comece a digitar para selecionar um ou mais membros da comunidade ou grupos de membros que terão a capacidade de criar novo conteúdo quando `Allow Privileged Member` tiver sido selecionado para uma função [da](functions.md)comunidade.
+   Digitação de Start para selecionar um ou mais membros da comunidade ou grupos de membros que terão a capacidade de criar novo conteúdo quando `Allow Privileged Member` tiverem sido selecionados para uma função [da](functions.md)comunidade.
 
 #### MODERATION {#moderation}
 
@@ -259,7 +262,7 @@ A configuração global para moderar o conteúdo gerado pelo usuário (UGC) é c
 
 * **[!UICONTROL Sinalização de limite antes do conteúdo estar oculto]**
 
-   Se for maior que 0, o número de vezes que um tópico ou publicação deve ser sinalizado antes de ser ocultado da exibição pública. Se definido como -1, o tópico ou publicação sinalizado nunca será ocultado da exibição pública. O padrão é 5.
+   Se for maior que 0, o número de vezes que um tópico ou publicação deve ser sinalizado antes de ser ocultado da visualização pública. Se definido como -1, o tópico sinalizado ou a postagem nunca será ocultado da visualização pública. O padrão é 5.
 
 #### ANALYTICS {#analytics}
 
@@ -283,7 +286,7 @@ A configuração global para moderar o conteúdo gerado pelo usuário (UGC) é c
 
 ![chlimage_1-455](assets/chlimage_1-455.png)
 
-* **[!UICONTROL Permitir tradução]** automática Quando marcada (o padrão está desmarcado), a tradução automática está ativada para UGC dentro do site. Isso não afeta nenhum outro conteúdo, como o conteúdo da página, mesmo se o site estiver configurado como um site multilíngue. Consulte [Traduzindo conteúdo](translate-ugc.md) gerado pelo usuário para obter informações sobre como configurar um serviço de tradução licenciado para o AEM Communities. Consulte [Traduzir conteúdo para sites](../../help/sites-administering/translation.md) multilíngues para obter uma visão geral completa.
+* **[!UICONTROL Permitir tradução]** automática Quando marcada (o padrão está desmarcado), a tradução automática está ativada para UGC dentro do site. Isso não afeta nenhum outro conteúdo, como o conteúdo da página, mesmo se o site estiver configurado como um site multilíngue. Consulte [Traduzindo conteúdo](translate-ugc.md) gerado pelo usuário para obter informações sobre como configurar um serviço de tradução licenciado para AEM Communities. Consulte [Traduzir conteúdo para sites](../../help/sites-administering/translation.md) multilíngues para obter uma visão geral completa.
 
 ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -293,11 +296,11 @@ A configuração global para moderar o conteúdo gerado pelo usuário (UGC) é c
 
 * **[!UICONTROL Escolher o provedor de tradução]**
 
-   Por padrão, o provedor de serviços é um serviço de avaliação que usa apenas `microsoft`para demonstração. Se nenhum provedor de serviços de tradução estiver licenciado, a opção **Permitir tradução** automática deve ser desmarcada.
+   Por padrão, o provedor de serviço é um serviço de avaliação que usa somente `microsoft`para demonstração. Se nenhum provedor de serviço de tradução estiver licenciado, **Permitir tradução** automática deve estar desmarcada.
 
 * **[!UICONTROL Escolher armazenamento global compartilhado]**
 
-   Para um site com várias cópias de idioma, uma loja compartilhada global fornece um único thread de conversação, visível de cada cópia de idioma. Isso é feito selecionando um dos idiomas incluídos como uma cópia de idioma. O padrão é *Nenhuma loja* compartilhada global.
+   Para um site com várias cópias de idioma, uma loja compartilhada global fornece um único thread de conversação, visível a partir de cada cópia de idioma. Isso é feito selecionando um dos idiomas incluídos como uma cópia de idioma. O padrão é *Nenhuma loja* compartilhada global.
 
 * **[!UICONTROL Escolher a configuração do provedor de tradução]**
 
@@ -313,7 +316,7 @@ A configuração global para moderar o conteúdo gerado pelo usuário (UGC) é c
 
    * **[!UICONTROL Traduzir somente a seleção]**
 
-      Se selecionada, uma opção de tradução será exibida ao lado de cada publicação, permitindo que as publicações individuais sejam traduzidas para o idioma base da página.
+      Se selecionada, uma opção de tradução será exibida ao lado de cada postagem, permitindo que postagens individuais sejam traduzidas para o idioma base da página.
 
       O padrão está *selecionado*.
 
@@ -384,12 +387,12 @@ Ao passar o mouse sobre um site ou tocar em um cartão de site, são exibidos í
 
 ![chlimage_1-460](assets/chlimage_1-460.png)
 
-O conteúdo de um site pode ser criado com as mesmas ferramentas de qualquer outro site do AEM. Para abrir o site para criação, selecione o ícone `Open Site` que aparece ao passar o mouse sobre ele. O site será aberto em uma nova guia para que o console Sites das Comunidades permaneça acessível.
+O conteúdo de um site pode ser criado com as mesmas ferramentas que qualquer outro site AEM. Para abrir o site para criação, selecione o ícone `Open Site` que aparece ao passar o mouse sobre o site. O site será aberto em uma nova guia, de modo que o console Sites das Comunidades permaneça acessível.
 
-![chlimage_1-462](assets/chlimage_1-461.png)
+![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Modificando Propriedades do Site {#modifying-site-properties}
 
@@ -397,7 +400,7 @@ Se não estiver familiarizado com o AEM, consulte a documentação sobre manusei
 
 As propriedades de um site existente, especificadas durante o processo de criação do site, podem ser modificadas selecionando o `Edit Site`ícone que aparece ao passar o mouse sobre o site.
 
-`Details of the following properties match the descriptions provided in the` seção Criação [de](#site-creation) site.
+`Details of the following properties match the descriptions provided in the` [Seção Criação](#site-creation) de site.
 
 ![chlimage_1-463](assets/chlimage_1-463.png)
 
@@ -429,16 +432,14 @@ O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a pa
 
    * **`trashcan icon`**
 
-      
-remover (excluir) funções da estrutura do site
+      remover (excluir) funções da estrutura do site
 
    * **`grid icon`**
 
-      
-modificar a ordem das funções, conforme exibido na barra de navegação de nível superior do site
+      modificar a ordem das funções, conforme exibido na barra de navegação de nível superior do site
 
 >[!NOTE]
-Você pode alterar a ordem de todas as funções na Estrutura do site, exceto a função na parte superior. Portanto, a página inicial do site de comunidades não pode ser alterada.
+Você pode alterar a ordem de todas as funções na Estrutura do site, exceto a função na parte superior. Portanto, o home page de sites de comunidades não pode ser alterado.
 
 >[!CAUTION]
 Embora o título de exibição possa ser alterado sem efeitos colaterais, não é recomendável editar o nome do URL de uma função da comunidade pertencente a um site da comunidade.
@@ -497,7 +498,7 @@ Depois de publicar um site da comunidade, é necessário publicar individualment
 
 ## Exportar o site {#exporting-the-site}
 
-![chlimage_1-468](assets/chlimage_1-467.png)
+![chlimage_1-467](assets/chlimage_1-467.png)
 
 Selecione o ícone de exportação, ao passar o mouse sobre o site, para criar um pacote do site da comunidade armazenado no gerenciador [de](../../help/sites-administering/package-manager.md) pacotes e baixado.\
 Observe que o UGC não está incluído no pacote do site.
@@ -510,9 +511,9 @@ Para excluir o site da comunidade, selecione o ícone Excluir site que aparece a
 
 ## Grupos de usuários da comunidade criados {#created-community-user-groups}
 
-Depois que o novo site da comunidade é publicado, os novos grupos de membros (os grupos de usuários são criados no ambiente de publicação) que têm as permissões apropriadas definidas para várias funções administrativas e membros.
+Depois que o novo site da comunidade é publicado, os novos grupos de membros (os grupos de usuários são criados no ambiente de publicação) que têm as permissões apropriadas definidas para várias funções administrativas e de membros.
 
-O nome criado para os grupos membros inclui o nome *do* site fornecido na [Etapa 1](#step13asitetemplate) (o nome que aparece no URL), bem como uma ID exclusiva para evitar conflitos com sites da comunidade e grupos que têm o mesmo nome do site para diferentes raízes do site da comunidade.
+O nome criado para os grupos de membros inclui o nome *do* site fornecido na [Etapa 1](#step13asitetemplate) (o nome que aparece no URL), bem como uma ID exclusiva para evitar conflitos com sites da comunidade e grupos que têm o mesmo nome do site para diferentes raízes do site da comunidade.
 
 Por exemplo, se o nome fosse &quot;engajar&quot; para um site chamado &quot;Tutorial de introdução&quot;, o grupo de usuários para moderadores seria:
 
@@ -524,7 +525,7 @@ Observe que quaisquer membros com funções atribuídas como moderadores ou admi
 Para obter detalhes, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
 
 >[!NOTE]
-Se [Permitir login social: O Facebook](#user-management) é ativado, assim que o grupo de usuários
+Se [Permitir login social: O Facebook](#user-management) é ativado, uma vez que o grupo de usuários
 * community-*&lt;nome do site>*-*&lt;id>* membros
 
 for criado, o serviço [de nuvem do](social-login.md#createafacebookcloudservice) Facebook aplicado deve ser configurado para adicionar usuários a esse grupo.
@@ -535,7 +536,7 @@ Por padrão, um site da comunidade será redirecionado para uma página de logon
 
 Para redirecionar corretamente, depois que um site tiver sido configurado e enviado para publicação, complete estas etapas para obter a falha de autenticação para redirecionar para o site da comunidade:
 
-* Em cada instância de publicação do AEM
+* Em cada instância de publicação AEM
 * Primeiro logon com privilégios de administrador
 * Acesse o console [da Web](../../help/sites-deploying/configuring-osgi.md)
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
@@ -556,9 +557,9 @@ Para redirecionar corretamente, depois que um site tiver sido configurado e envi
 
 ### Testar redirecionamento de autenticação {#test-authentication-redirection}
 
-Na mesma instância de publicação do AEM configurada com um mapeamento de página de logon para o site da comunidade:
+Na mesma instância de publicação AEM configurada com um mapeamento de página de logon para o site da comunidade:
 
-* Navegue até a página inicial do site da comunidade
+* Navegue até o home page do site da comunidade
    * Por exemplo, [http://localhost:4503/content/sites/engage/en.html](http://localhost:4503/content/sites/engage/en.html)
 
 * Selecione Desconectar
