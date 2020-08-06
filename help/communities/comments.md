@@ -1,8 +1,8 @@
 ---
 title: Uso de comentários
 seo-title: Uso de comentários
-description: O recurso Comentários permite que os visitantes do site conectados compartilhem suas opiniões e conhecimentos
-seo-description: O recurso Comentários permite que os visitantes do site conectados compartilhem suas opiniões e conhecimentos
+description: Os recursos de comentários permitem que visitantes do site conectados compartilhem suas opiniões e conhecimentos
+seo-description: Os recursos de comentários permitem que visitantes do site conectados compartilhem suas opiniões e conhecimentos
 uuid: 30fc48ac-134c-4acb-a65c-398855c93829
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 ## Introdução {#introduction}
 
-O recurso comments é usado para permitir que os visitantes do site conectados (membros) compartilhem suas opiniões e conhecimentos sobre o conteúdo do site. Esse recurso geralmente já está presente em outros recursos, mas pode ser adicionado a qualquer site.
+O recurso comments é usado para permitir que visitantes do site conectados (membros) compartilhem suas opiniões e conhecimentos sobre o conteúdo do site. Esse recurso geralmente já está presente em outros recursos, mas pode ser adicionado a qualquer site.
 
 Esta seção da documentação descreve
 
@@ -46,7 +49,7 @@ Quando as bibliotecas [do lado do cliente](essentials-comments.md#essentials-for
 
 >[!NOTE]
 >
->Somente um `Comments`componente pode existir em uma página. Observe que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
+>Somente um `Comments`componente pode existir em uma página. Esteja ciente de que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
 
 ## Configuração de comentários {#configuring-comments}
 
@@ -80,7 +83,7 @@ Na guia **[!UICONTROL Comentários]** , especifique como os comentários são in
 
 * **[!UICONTROL Tipos de arquivos permitidos]**
 
-   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **[!UICONTROL Editor de Rich Text]**
 
@@ -136,7 +139,7 @@ Na guia Moderação **[!UICONTROL do]** usuário, especifique como os comentári
 
 * **[!UICONTROL Limite de sinalização]**
 
-   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da exibição pública. Esse número deve ser maior ou igual ao Limite de **[!UICONTROL moderação]**. O padrão é 5.
+   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao Limite de **[!UICONTROL moderação]**. O padrão é 5.
 
 ### Guia Configurações de classificação {#sort-settings-tab}
 
@@ -154,7 +157,7 @@ Na guia **[!UICONTROL Classificar configurações]** , especifique como os comen
 
 Ao alterar o Tipo de recurso de comentário, o sistema de comentários não gerará mais uma instância de um comentário usando o padrão, mas uma que foi personalizada (estendida) pelos desenvolvedores.
 
-Depois que os tipos de recursos personalizados forem conhecidos, entre no Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique duas vezes no `Comments` componente inserido para abrir uma caixa de diálogo com uma guia adicional.
+Depois que os tipos de recursos personalizados forem conhecidos, digite Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique no duplo no componente colocado `Comments` para abrir uma caixa de diálogo com uma guia adicional.
 
 Na guia Tipos **[!UICONTROL de]** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting`componentes:
 
@@ -176,7 +179,7 @@ Na guia Tipos **[!UICONTROL de]** recursos, especifique o resourceType personali
 
    Navegue até resourceType de um `comments`componente estendido (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página inclua [](scf.md#add-or-include-a-communities-component) dinamicamente o Sistema de comentários no script subjacente em vez de ser adicionado à página como um recurso (nó de comentários). Saiba mais lendo sobre o auxiliar [](handlebars-helpers.md#include){{include}}.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Moderadores e administradores {#moderators-and-administrators}
 
@@ -184,7 +187,7 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 ### Membros {#members}
 
-Quando o visitante do site está conectado, dependendo da configuração, ele pode
+Quando o visitante do site estiver conectado, dependendo da configuração, eles poderão
 
 * Publicar um novo comentário
 * Editar seus próprios comentários
