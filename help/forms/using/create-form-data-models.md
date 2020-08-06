@@ -9,6 +9,9 @@ topic-tags: integration
 discoiquuid: 3a3a6ede-52af-4c37-8a51-c2ea721a28dc
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '966'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Saiba como criar modelos de dados de formulário com ou sem fontes de dados conf
 
 ![](do-not-localize/data-integeration.png)
 
-A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com modelos de dados de formulário. Um modelo de dados de formulário depende de fontes de dados para o intercâmbio de dados; no entanto, é possível criar um modelo de dados de formulário com ou sem uma fonte de dados. Existem duas abordagens para criar um modelo a partir de dados, dependendo se você configurou fontes de dados:
+A integração de dados da AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com modelos de dados de formulário. Um modelo de dados de formulário depende de fontes de dados para o intercâmbio de dados; no entanto, é possível criar um modelo de dados de formulário com ou sem uma fonte de dados. Existem duas abordagens para criar um modelo a partir de dados, dependendo se você configurou fontes de dados:
 
 * **Usando fontes** de dados pré-configuradas: Se você tiver configurado fontes de dados como descrito em [Configurar fontes](/help/forms/using/configure-data-sources.md)de dados, poderá selecioná-las ao criar um modelo de dados de formulário. Ele traz todos os objetos, propriedades e serviços do modelo de dados das fontes de dados selecionadas disponíveis para uso no modelo de dados do formulário.
 
@@ -33,23 +36,24 @@ A integração de dados do AEM Forms fornece uma interface de usuário intuitiva
 
 Verifique se você configurou as fontes de dados que pretende usar no modelo de dados de formulário conforme descrito em [Configurar fontes](/help/forms/using/configure-data-sources.md)de dados. Faça o seguinte para criar um modelo de dados de formulário com base em fontes de dados configuradas:
 
-1. Na instância do autor de AEM, navegue até **[!UICONTROL Formulários > Integrações]** de dados.
+1. Em AEM instância do autor, navegue até **[!UICONTROL Forms > Integrações]** de dados.
 1. Tap **[!UICONTROL Create > Form Data Model]**.
 1. Na caixa de diálogo Criar modelo de dados de formulário:
 
    * Especifique um nome para o modelo de dados de formulário.
    * (**Opcional**) Especifique o título, a descrição e as tags para o modelo de dados do formulário.
-   * (**Opcional e aplicável somente se as fontes de dados estiverem configuradas**) Toque no ícone de verificação ao lado do campo Configuração **[!UICONTROL da fonte de]** dados e selecione o nó de configuração no qual residem os serviços em nuvem para as fontes de dados que deseja usar. Ele restringe a lista de fontes de dados disponíveis para seleção na próxima página às disponíveis no nó de configuração selecionado. No entanto, qualquer banco de dados JDBC e fontes de dados de perfil de usuário do AEM são listadas por padrão. Se você não selecionar um nó de configuração, as fontes de dados de todos os nós de configuração serão listadas.
+   * (**Opcional e aplicável somente se as fontes de dados estiverem configuradas**) Toque no ícone de verificação ao lado do campo Configuração **[!UICONTROL da fonte de]** dados e selecione o nó de configuração no qual residem os serviços em nuvem para as fontes de dados que você deseja usar. Ele restringe a lista de fontes de dados disponíveis para seleção na próxima página às disponíveis no nó de configuração selecionado. No entanto, qualquer banco de dados JDBC e fontes de dados de perfil de usuário AEM são listadas por padrão. Se você não selecionar um nó de configuração, as fontes de dados de todos os nós de configuração serão listadas.
+
    Toque em **[!UICONTROL Avançar]**.
 
-1. (**Aplicável somente se fontes de dados estiverem configuradas**) A tela **[!UICONTROL Selecionar fonte de dados]** lista as fontes de dados disponíveis, se houver. Selecione as fontes de dados que deseja usar no modelo de dados de formulário.
+1. (**Aplicável somente se fontes de dados estiverem configuradas**) A tela **[!UICONTROL Selecionar fonte de dados]** lista fontes de dados disponíveis, se houver. Selecione as fontes de dados que deseja usar no modelo de dados de formulário.
 1. Toque em **[!UICONTROL Criar]** e, na caixa de diálogo de confirmação, toque em **[!UICONTROL Abrir]** para abrir o editor do modelo de dados de formulário.
 
 Analisemos os diferentes componentes da interface do usuário do editor de modelo de dados de formulário.
 
-![Um modelo de dados de formulário com três fontes de dados - um serviço RESTful, perfil de usuário do AEM e um RDBMS](assets/fdm-ui.png)
+![Um modelo de dados de formulário com três fontes de dados - um serviço RESTful, AEM perfil do usuário e um RDBMS](assets/fdm-ui.png)
 
-**A. Fontes** de dados Lista as fontes de dados em um modelo de dados de formulário. Expanda uma fonte de dados para exibir seus objetos e serviços de modelo de dados.
+**A. As Fontes** de dados Listas as fontes de dados em um modelo de dados de formulário. Expanda uma fonte de dados para visualização de seus objetos e serviços de modelo de dados.
 
 **B. Atualizar definições** da fonte de dadosBusca todas as alterações nas definições da fonte de dados de fontes de dados configuradas e as atualiza na guia Fontes de dados do editor de modelo de dados de formulário.
 
@@ -67,15 +71,16 @@ Para obter mais informações sobre o editor de modelo de dados de formulário e
 
 Faça o seguinte para adicionar ou atualizar fontes de dados para um modelo de dados de formulário existente.
 
-1. Vá para **[!UICONTROL Formulários > Integrações]** de dados, selecione o modelo de dados de formulário no qual deseja adicionar ou atualizar fontes de dados e toque em **[!UICONTROL Propriedades]**.
+1. Vá para **[!UICONTROL Forms > Integrações]** de dados, selecione o modelo de dados de formulário no qual deseja adicionar ou atualizar fontes de dados e toque em **[!UICONTROL Propriedades]**.
 1. Nas propriedades do modelo de dados de formulário, vá para a guia **[!UICONTROL Atualizar fonte]** .
 
    Na guia Atualizar fonte:
 
    * Toque no ícone Procurar no campo Configuração **[!UICONTROL sensível ao]** contexto e selecione um nó de configuração no qual a configuração da nuvem para a fonte de dados que deseja adicionar reside. Se você não selecionar um nó, as configurações de nuvem que residem apenas no `global` nó serão listadas quando você tocar em **[!UICONTROL Adicionar fontes]**.
    * Para adicionar uma nova fonte de dados, toque em **[!UICONTROL Adicionar fontes]** e selecione as fontes de dados a serem adicionadas ao modelo de dados do formulário. Todas as fontes de dados configuradas no nó de configuração `global` e o nó de configuração selecionado, se houver, serão exibidos.
-   * Para substituir uma fonte de dados existente por outra fonte de dados do mesmo tipo, toque no ícone **[!UICONTROL Editar]** da fonte de dados e selecione na lista de fontes de dados disponíveis.
+   * Para substituir uma fonte de dados existente por outra fonte de dados do mesmo tipo, toque no ícone **[!UICONTROL Editar]** para a fonte de dados e selecione na lista de fontes de dados disponíveis.
    * Para excluir uma fonte de dados existente, toque no ícone **[!UICONTROL Excluir]** da fonte de dados. O ícone Excluir será desativado se um objeto de modelo de dados na fonte de dados for adicionado ao modelo de dados do formulário.
+
    ![fdm-properties](assets/fdm-properties.png)
 
 1. Toque em **[!UICONTROL Salvar e fechar]** para salvar as atualizações.
