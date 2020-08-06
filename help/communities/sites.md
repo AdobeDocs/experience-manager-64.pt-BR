@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +40,7 @@ Este console exibe os modelos a partir dos quais um site [da](sites-console.md) 
 
 Para começar a criar um novo modelo de site, selecione `Create`.
 
-Isso exibirá o painel Editor de sites, que contém três subpainéis:
+Isso exibirá o painel do Editor de sites, que contém três subpainéis:
 
 ### Basic info {#basic-info}
 
@@ -45,7 +48,7 @@ Isso exibirá o painel Editor de sites, que contém três subpainéis:
 
 No painel Informações básicas, um nome, uma descrição e se o modelo está ativado ou desativado são configurados:
 
-* **[!UICONTROL Nome]** do modelo do site da comunidade O nome do modelo
+* **[!UICONTROL Nome]** do modelo do site da comunidadeA ID do nome do modelo
 
 * **[!UICONTROL Descrição]** do modelo do site da comunidade A descrição do modelo
 
@@ -63,7 +66,7 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
 Para adicionar funções de comunidade, arraste do lado direito para a esquerda na ordem em que os links de menu do site devem aparecer. Os estilos serão aplicados ao modelo durante a criação do site.
 
-Por exemplo, se você quiser uma página inicial, arraste a função Página da biblioteca e solte sob o construtor de modelos. Isso resultará na abertura da caixa de diálogo de configuração da página. Consulte o console [de](functions.md) funções para obter informações sobre as caixas de diálogo de configuração.
+Por exemplo, se desejar um home page, arraste a função Página da biblioteca e solte sob o construtor de modelos. Isso resultará na abertura da caixa de diálogo de configuração da página. Consulte o console [de](functions.md) funções para obter informações sobre as caixas de diálogo de configuração.
 
 Continue arrastando e soltando quaisquer outras funções da comunidade desejadas para um site da comunidade com base neste modelo.
 
@@ -79,7 +82,7 @@ A função page fornece uma página vazia. A função groups fornece a capacidad
 
 ### Função Modelos de grupo para grupos {#group-templates-for-groups-function}
 
-Ao incluir uma função de grupos no modelo de site, a configuração exige a especificação das opções de modelo de grupo permitidas quando um novo grupo é criado no ambiente de publicação.
+Ao incluir uma função de grupos no modelo do site, a configuração exige a especificação das opções de modelo de grupo permitidas quando um novo grupo é criado no ambiente de publicação.
 
 >[!CAUTION]
 >
