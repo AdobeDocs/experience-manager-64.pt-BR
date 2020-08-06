@@ -86,7 +86,7 @@ Para configurar vários editores, siga estas etapas:
 
 ### Configuração adicional para editores de Rich Text {#additional-configuration-for-rich-text-editors}
 
-A configuração para vários editores de Rich Text é um pouco diferente, pois você pode configurar cada instância individual do RTE separadamente. Para obter detalhes, consulte [configurar o Editor](/help/sites-administering/rich-text-editor.md)de Rich Text. Para que vários RTEs criem uma configuração para cada RTE no local. A Adobe recomenda criar o novo nó de configuração em `cq:InplaceEditingConfig` que cada RTE individual possa ter uma configuração diferente. No novo nó, crie cada configuração individual do RTE.
+A configuração para vários editores de Rich Text é um pouco diferente, pois você pode configurar cada instância individual do RTE separadamente. Para obter detalhes, consulte [configurar o Editor](/help/sites-administering/rich-text-editor.md)de Rich Text. Para que vários RTEs criem uma configuração para cada RTE no local. O Adobe recomenda criar o novo nó de configuração em `cq:InplaceEditingConfig` que cada RTE individual possa ter uma configuração diferente. No novo nó, crie cada configuração individual do RTE.
 
 ```xml
     texttext
