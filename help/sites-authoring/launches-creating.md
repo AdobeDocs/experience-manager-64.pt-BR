@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 93%
 
 ---
 
@@ -45,6 +48,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
       1. Selecione **Criar** na barra de ferramentas para abrir a caixa de seleção.
       1. Aqui, selecione **Criar lançamento** para abrir o assistente.
+
    >[!NOTE]
    >
    >No console **Sites**, também é possível usar o [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para selecionar uma página antes de selecionar **Criar**.
@@ -55,6 +59,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    * Navegue até o local necessário.
    * Selecione as páginas de origem e confirme-as (marca de verificação).
+
    Repita conforme necessário.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
    * **Incluir subpáginas**:
 
       * Especifique se você deseja criar o lançamento com ou sem as páginas secundárias.  Por padrão, essas subpáginas são incluídas.
+
    Continue com **Próximo**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -84,6 +90,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
       Por padrão, esta opção é selecionada.
 
    * **Data de lançamento**: a data e a hora em que a cópia de lançamento deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Lançamentos - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Use **Criar** para concluir o processo e criar seu novo lançamento. A caixa de diálogo de confirmação irá perguntar se deseja abrir o lançamento imediatamente.
