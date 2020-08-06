@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 79%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Depois de criar (e revisar) seu conteúdo no ambiente de criação, o objetivo é disponibilizá-lo em seu site público (seu ambiente de publicação).
 
-Isso é referido como a publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente de criação para modificações adicionais até que você a exclua.
+Isso é referido como a publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente de criação para modificações adicionais até que você a exclua.
 
 Você também pode publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida posteriormente.
 
@@ -27,7 +30,7 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >Certos termos relacionados à publicação podem ser confundidos:
 >
->* **Publicar/Desfazer publicação**
+>* **Publicar/Desfazer a publicação**
    >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
    >
    >
@@ -47,6 +50,7 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >* Um fluxo de trabalho será acionado para notificar a pessoa adequada sobre a sua solicitação para publicação.
 >* Uma mensagem será exibida (por um curto período) para notificá-lo sobre isso.
+
 >
 
 
