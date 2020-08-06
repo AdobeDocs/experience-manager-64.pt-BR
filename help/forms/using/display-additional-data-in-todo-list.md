@@ -1,8 +1,8 @@
 ---
 title: Exibição de dados adicionais na lista do ToDo
 seo-title: Exibição de dados adicionais na lista do ToDo
-description: Como personalizar a exibição da lista de tarefas do LiveCycle AEM Forms para mostrar mais informações além do padrão.
-seo-description: Como personalizar a exibição da lista de tarefas do LiveCycle AEM Forms para mostrar mais informações além do padrão.
+description: Como personalizar a exibição da lista de tarefas da área de trabalho do LiveCycle AEM Forms para mostrar mais informações além do padrão.
+seo-description: Como personalizar a exibição da lista de tarefas da área de trabalho do LiveCycle AEM Forms para mostrar mais informações além do padrão.
 uuid: 4c678d9c-7794-4b62-8705-d62c7780c13f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Exibição de dados adicionais na lista do ToDo {#displaying-additional-data-in-todo-list}
 
-Por padrão, a lista A fazer do espaço de trabalho do AEM Forms exibe o nome e a descrição de exibição da tarefa. No entanto, você pode adicionar outras informações, como data de criação e data de término. Você também pode adicionar ícones e alterar o estilo da exibição.
+Por padrão, a lista do AEM Forms Workspace To-do exibe o nome de exibição e a descrição da tarefa. No entanto, você pode adicionar outras informações, como data de criação e data de término. Você também pode adicionar ícones e alterar o estilo da exibição.
 
 ![Uma amostra da guia HTML Workspace To-do mostrando a configuração padrão](assets/html-todo-list.png)
 
@@ -134,7 +137,7 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
 
 ## Adicionar entrada no modelo HTML {#adding-entry-in-the-html-template}
 
-Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma, consulte Criar código de área de trabalho do AEM Forms.
+Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar um, consulte Criar código de espaço de trabalho AEM Forms.
 
 1. Copiar `task.html`:
 
