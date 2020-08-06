@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +30,7 @@ Os componentes estão disponíveis ao [editar uma página](/help/sites-authoring
 >
 >Dependendo do seu caso, você pode ter componentes personalizados desenvolvidos explicitamente para as suas necessidades. Eles podem até ter o mesmo nome que alguns dos componentes discutidos aqui.
 
-## Uso geral  {#general-usage}
+## Uso geral   {#general-usage}
 
 Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página](/help/sites-authoring/editing-content.md).
 
@@ -55,7 +58,7 @@ O console [Componentes](/help/sites-authoring/default-components-console.md) for
 
 As páginas a seguir fornecem links para algumas informações adicionais e importantes sobre os componentes:
 
-* [Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+* [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
 * [Comunidades](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
 
