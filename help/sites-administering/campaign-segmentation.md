@@ -1,8 +1,8 @@
 ---
 title: Configuração da segmentação
 seo-title: Configuração da segmentação
-description: Saiba como configurar a segmentação para o AEM Campaign.
-seo-description: Saiba como configurar a segmentação para o AEM Campaign.
+description: Saiba como configurar a segmentação para AEM Campanha.
+seo-description: Saiba como configurar a segmentação para AEM Campanha.
 uuid: f22e41b6-d9d9-4f18-9925-2d4aebc167b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 2%
 
 ---
 
@@ -19,21 +22,21 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
 
 >[!NOTE]
 >
->Este documento aborda a configuração da segmentação, conforme usado com o Contexto do cliente. Para configurar segmentos com o ContextHub usando a interface de usuário de toque, consulte [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md).
+>Este documento aborda a configuração da segmentação, conforme usada com o Contexto do cliente. Para configurar segmentos com o ContextHub usando a interface de usuário de toque, consulte [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md).
 
 A segmentação é uma consideração importante ao criar uma campanha. Consulte o glossário [de](/help/sites-authoring/segmentation-overview.md) segmentação para obter informações sobre como a segmentação funciona e os termos principais.
 
 Dependendo das informações que você já coletou sobre os visitantes do site e as metas que deseja atingir, será necessário definir os segmentos e as estratégias necessárias para o conteúdo direcionado.
 
-Esses segmentos são usados para fornecer a um visitante conteúdo direcionado especificamente. Esse conteúdo é mantido na seção [Campanhas](/help/sites-authoring/personalization.md) do site. As páginas do teaser definidas aqui podem ser incluídas como parágrafos do teaser em qualquer página e definem para qual segmento de visitante o conteúdo especializado se aplica.
+Esses segmentos são então usados para fornecer um visitante com conteúdo direcionado especificamente. Esse conteúdo é mantido na seção [Campanha](/help/sites-authoring/personalization.md) do site. As páginas do teaser definidas aqui podem ser incluídas como parágrafos do teaser em qualquer página e definem para qual segmento de visitante o conteúdo especializado se aplica.
 
-O AEM permite que você crie e atualize facilmente segmentos, teasers e campanhas. Também permite verificar os resultados de suas definições.
+AEM permite que você crie e atualize facilmente segmentos, teasers e campanhas. Também permite verificar os resultados de suas definições.
 
-O Editor **de** segmentos permite definir facilmente um segmento:
+O Editor **de** segmentos permite que você defina facilmente um segmento:
 
 ![segmenteditor-1](assets/segmenteditor-1.png)
 
-Você pode **Editar** cada segmento para especificar um **Título**, **Descrição** e fator **de Aumento** . Usando o sidekick, você pode adicionar contêineres **AND** e **OR** para definir a lógica **do** segmento e, em seguida, adicionar as Características **do** segmento necessárias para definir os critérios de seleção.
+Você pode **Editar** cada segmento para especificar um **Título**, **Descrição** e fator **de Aumento** . Usando o sidekick, você pode adicionar container **AND** e **OR** para definir a lógica **do** segmento e, em seguida, adicionar as Características **do** segmento necessárias para definir os critérios de seleção.
 
 ## Fator de aumento {#boost-factor}
 
@@ -44,7 +47,7 @@ Cada segmento tem um parâmetro **Boost** que é utilizado como fator de pondera
 
 ## Lógica do segmento {#segment-logic}
 
-Os seguintes contêineres lógicos estão disponíveis prontamente e permitem que você construa a lógica de sua seleção de segmento. Eles podem ser arrastados do sidekick para o editor:
+Os container lógicos a seguir estão disponíveis prontamente e permitem construir a lógica de sua seleção de segmento. Eles podem ser arrastados do sidekick para o editor:
 
 <table> 
  <tbody> 
@@ -83,7 +86,7 @@ Os seguintes traços de segmento estão disponíveis prontamente; eles podem ser
   </tr> 
   <tr> 
    <td> Script</td> 
-   <td>Expressão de JavaScript a ser avaliada.<br /> </td> 
+   <td>expressão do JavaScript a ser avaliada.<br /> </td> 
   </tr> 
   <tr> 
    <td> Referência do segmento <br /> </td> 
@@ -106,7 +109,7 @@ Os seguintes traços de segmento estão disponíveis prontamente; eles podem ser
 
 É possível combinar essas características usando os operadores booleanos OU e E (consulte [Criação de um novo segmento](#creating-a-new-segment)) para definir o cenário exato para a seleção desse segmento.
 
-Quando a declaração inteira for avaliada como true, esse segmento será resolvido. Se vários segmentos forem aplicáveis, o fator de **[aumento](/help/sites-administering/campaign-segmentation.md#boost-factor)**também será usado.
+Quando a declaração inteira for avaliada como true, esse segmento será resolvido. No evento de vários segmentos serem aplicáveis, o fator de **[aumento](/help/sites-administering/campaign-segmentation.md#boost-factor)**também é usado.
 
 >[!CAUTION]
 >
@@ -129,24 +132,24 @@ Para definir seu novo segmento:
 
    ![screen_shot_2012-02-02at101726am](assets/screen_shot_2012-02-02at101726am.png)
 
-1. **Use o sidekick ou o menu de contexto (normalmente, clique com o botão direito do mouse e selecione** Novo... para abrir a janela Inserir novo componente) para encontrar a característica do segmento que você precisa. Em seguida, arraste-o para o Editor **de** segmentos que aparecerá no contêiner **AND** padrão.
-1. Clique duas vezes na nova característica para editar os parâmetros específicos; por exemplo, a posição do mouse:
+1. Use o sidekick ou o menu de contexto (normalmente, clique com o botão direito do mouse e selecione **Novo...** para abrir a janela Inserir novo componente) para encontrar a característica do segmento que você precisa. Em seguida, arraste-o para o Editor **de** segmentos que aparecerá no container **AND** padrão.
+1. Duplo-clique na nova característica para editar os parâmetros específicos; por exemplo, a posição do mouse:
 
    ![screen_shot_2012-02-02at103135am-1](assets/screen_shot_2012-02-02at103135am-1.png)
 
 1. Click **OK** to save your definition:
-1. Você pode **Editar** a definição do segmento para fornecer um **Título**, **Descrição** e **[Fator de aumento](/help/sites-administering/campaign-segmentation.md#boost-factor)**:
+1. Você pode **Editar** a definição do segmento para dar a ele um **Título**, **Descrição** e **[Fator de aumento](/help/sites-administering/campaign-segmentation.md#boost-factor)**:
 
    ![screen_shot_2012-02-02at103547am](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Adicione mais características, se necessário. Você pode formular expressões booleanas usando os componentes **E contêiner** e **OU contêiner** encontrados em **Lógica** de segmento. Com o editor de segmentos, é possível excluir características ou contêineres desnecessários ou arrastá-los para novas posições na declaração.
+1. Adicione mais características, se necessário. Você pode formular expressões booleanas usando os componentes **AND Container** e **OR Container** encontrados em **Segment Logic**. Com o editor de segmentos, é possível excluir características ou container desnecessários ou arrastá-los para novas posições dentro da declaração.
 
-## Uso de contêineres E e OU {#using-and-and-or-containers}
+## Uso de Container E e OU {#using-and-and-or-containers}
 
-É possível construir segmentos complexos no AEM. Ele ajuda a conhecer alguns pontos básicos:
+É possível construir segmentos complexos em AEM. Ele ajuda a conhecer alguns pontos básicos:
 
-* O nível superior da definição é sempre o contêiner AND criado inicialmente; isso não pode ser alterado, mas não afeta o restante da definição do segmento.
-* Verifique se o aninhamento do contêiner faz sentido. Os contêineres podem ser exibidos como colchetes da sua expressão booleana.
+* O nível superior da definição é sempre o container AND criado inicialmente; isso não pode ser alterado, mas não afeta o restante da definição do segmento.
+* Certifique-se de que o aninhamento do seu container faça sentido. Os container podem ser exibidos como colchetes de sua expressão booleana.
 
 O exemplo a seguir é usado para selecionar visitantes que sejam:
 
@@ -156,7 +159,7 @@ OU
 
 Feminino e entre os 16 e os 62 anos
 
-Como o operador principal é OU, você precisa começar com um Contêiner **OU**. Dentro disso, você tem 2 instruções AND, para cada uma delas, é necessário um **Contêiner** AND, no qual é possível adicionar as características individuais.
+Como o operador principal é OU, é necessário start com um Container **OU**. Dentro disso você tem 2 declarações AND, para cada uma delas você precisa de um Container **AND**, no qual você pode adicionar as características individuais.
 
 ![screen_shot_2012-02-02at105145am-1](assets/screen_shot_2012-02-02at105145am-1.png)
 
@@ -189,4 +192,4 @@ Passar o mouse sobre um parágrafo do teaser mostrará os segmentos aplicados, s
 
 ## Usando seu segmento {#using-your-segment}
 
-Os segmentos são usados atualmente em [Campanhas](/help/sites-authoring/personalization.md). Eles são usados para direcionar o conteúdo real visto por públicos-alvo específicos. Consulte [Entendendo segmentos](/help/sites-authoring/segmentation-overview.md) para obter mais informações.
+Os segmentos são usados atualmente no [Campanha](/help/sites-authoring/personalization.md). Eles são usados para direcionar o conteúdo real visualizado por audiências específicas do público alvo. Consulte [Entendendo segmentos](/help/sites-authoring/segmentation-overview.md) para obter mais informações.
