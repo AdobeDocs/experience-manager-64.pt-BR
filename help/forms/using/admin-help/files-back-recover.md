@@ -73,7 +73,7 @@ Uma configuração simples da Solução de gerenciamento de correspondência inc
 
 o Gerenciador de formulários simplifica o processo de atualização, gerenciamento e aposentadoria de formulários.
 
-### Área de trabalho do AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
 O AEM Forms Workspace corresponde aos recursos do Flex Workspace (obsoleto para formulários AEM no JEE) e adiciona novos recursos para estender e integrar o Workspace e torná-lo mais fácil de usar.
 
