@@ -1,8 +1,8 @@
 ---
 title: Administração de conteúdo para Adobe PhoneGap Enterprise com AEM
 seo-title: Administração de conteúdo para Adobe PhoneGap Enterprise com AEM
-description: Esta página serve como página de aterrissagem para administrar o Adobe PhoneGap Enterprise.
-seo-description: Esta página serve como página de aterrissagem para administrar o Adobe PhoneGap Enterprise.
+description: Esta página serve como landing page para administrar o Adobe PhoneGap Enterprise.
+seo-description: Esta página serve como landing page para administrar o Adobe PhoneGap Enterprise.
 uuid: 31bda96a-bc35-4f04-9107-7d575c04d761
 contentOwner: msm-service
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: cd080122-7ae5-4e6e-a8f6-b95dfbb0b511
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Um administrador ***do*** AEM é responsável por adicionar um novo aplicativo ao catálogo do AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente. Os administradores de AEM que criam um novo aplicativo usando o assistente *de* criação do AEM Mobile geralmente selecionam um dos modelos de aplicativo desejados em nossos exemplos de referência prontos ou (na maioria dos casos) em um modelo de aplicativo personalizado criado pelos desenvolvedores do *AEM.*
+Um administrador ****** AEM é responsável por adicionar um novo aplicativo ao catálogo da AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente. AEM administradores que criam um novo aplicativo usando o assistente *de* criação da AEM Mobile geralmente selecionam um dos modelos de aplicativo desejados em nossos exemplos de referência prontos ou (na maioria dos casos) em um modelo de aplicativo personalizado criado por desenvolvedores de *AEM.*
 
 Depois de criar seu aplicativo móvel usando HTML5 e PhoneGap, você poderá gerenciá-lo no Centro de Comando. É claro que você também pode gerenciar o conteúdo HTML5 para um aplicativo nativo no Centro de comando, usando webviews do Cordova (para permitir plug-ins do PhoneGap para acessar recursos nativos).
 
@@ -32,17 +35,17 @@ Para criar seu aplicativo AEM Mobile, consulte a página [Criação de aplicativ
 Para configurar seu ambiente e começar a usar o Control Center,
 
 1. [Configurar usuários e grupos](/help/mobile/configure-users-groups.md)
-1. [Defina seu filtro de referenciador para permitir vazio](/help/mobile/setting-referrer-filter-empty.md)
-1. [Configurar o serviço Adobe PhoneGap Build Cloud](/help/mobile/configure-phonegap-build-cloud.md)
+1. [Defina o filtro de quem indicou para permitir vazio](/help/mobile/setting-referrer-filter-empty.md)
+1. [Configure seu Cloud Service Adobe PhoneGap Build](/help/mobile/configure-phonegap-build-cloud.md)
 1. [Configurar o serviço Adobe Analytics Cloud](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
 Para saber mais sobre serviços de conteúdo, consulte [Administração de serviços](/help/mobile/developing-content-services.md)de conteúdo.
 
 >[!NOTE]
 >
->A verificação *do* AEM é uma maneira rápida e fácil de executar seus aplicativos móveis do AEM em qualquer dispositivo móvel iOS ou Android. O *AEM Verify* é um aplicativo móvel no seu dispositivo e você o conecta ao servidor que executa o recurso de início rápido para obter uma lista de aplicativos a serem exibidos. Clique [aqui](/help/mobile/phonegap-mobile-quickstart.md) para ver os detalhes.
+>A *AEM Verify* é uma maneira rápida e fácil de executar seus aplicativos móveis AEM em qualquer dispositivo móvel iOS ou Android. O *AEM Verify* é um aplicativo móvel no seu dispositivo e você o conecta ao servidor que executa o recurso de início rápido para obter uma lista de aplicativos para a visualização. Clique [aqui](/help/mobile/phonegap-mobile-quickstart.md) para visualização dos detalhes.
 
-## Additional Resources {#additional-resources}
+## Recursos adicionais {#additional-resources}
 
 Para saber mais sobre as funções e responsabilidades de um autor e desenvolvedor, consulte os recursos abaixo:
 
