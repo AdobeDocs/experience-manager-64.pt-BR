@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O processo de desenvolvimento de aplicativos móveis do AEM reconhece que usuários de diferentes especialidades contribuem para o desenvolvimento de aplicativos móveis. O mapa de processos a seguir ilustra a ordem geral na qual os autores de conteúdo e desenvolvedores de aplicativos executam tarefas.
+O processo de desenvolvimento de aplicativos móveis AEM reconhece que usuários de diferentes especialidades contribuem para o desenvolvimento de aplicativos móveis. O mapa de processos a seguir ilustra a ordem geral na qual os autores de conteúdo e desenvolvedores de aplicativos executam tarefas.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -32,7 +32,7 @@ As informações sobre como executar as tarefas do profissional de marketing sã
 
 ## A estrutura dos aplicativos móveis {#the-structure-of-mobile-applications}
 
-O AEM Mobile fornece o plano do aplicativo Phonegap para criar aplicativos móveis. O blueprint define a estrutura dos aplicativos que você cria. As candidaturas consistem nos seguintes elementos:
+A AEM Mobile fornece o plano do aplicativo Phonegap para criar aplicativos móveis. O blueprint define a estrutura dos aplicativos que você cria. As candidaturas consistem nos seguintes elementos:
 
 * A página raiz.
 * As variações de idioma do aplicativo.
@@ -57,7 +57,7 @@ As primeiras páginas secundárias da página raiz são as variações de idioma
 A página de idioma tem dois objetivos:
 
 * O conteúdo da página é a página de falhas para a variação de idioma do aplicativo.
-* As propriedades da página controlam vários aspectos de design do aplicativo, como o URL a ser usado para solicitar atualizações de conteúdo, e informações sobre a conexão com a criação da nuvem e a integração dos Serviços Analytics da Adobe.
+* As propriedades da página controlam vários aspectos de design do aplicativo, como o URL a ser usado para solicitar atualizações de conteúdo, e informações sobre a conexão com a criação da nuvem e a integração dos Serviços Adobe Analytics.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -77,7 +77,7 @@ Os aplicativos móveis são baseados em um plano que define a estrutura e as pro
 
 Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração do PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem é usada apenas como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
-Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in do SDK do Adobe Mobile Services ao seu aplicativo.
+Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
 
 * Compilação: Clique em gerenciar configurações e configure seu serviço de compilação.phonegap.com aqui. Em seguida, na lista suspensa, você poderá selecionar o serviço de nuvem de construção PhoneGap recém-criado.
 * Analytics: Clique em gerenciar configurações e configure o serviço em nuvem SDK [do](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
@@ -149,7 +149,7 @@ Depois de criar o aplicativo móvel, adicione o conteúdo que é usado como a in
 
 ### Mover conteúdo para aplicativos móveis {#moving-content-to-mobile-applications}
 
-O cache de Sincronização de conteúdo na instância de publicação do AEM é usado como repositório de conteúdo para aplicativos móveis:
+O cache de Sincronização de conteúdo na instância de publicação AEM é usado como repositório de conteúdo para aplicativos móveis:
 
 * O conteúdo no cache de Sincronização de conteúdo é incluído no aplicativo quando os desenvolvedores compilam o aplicativo.
 * O conteúdo no cache está disponível para aplicativos móveis instalados para atualizar o conteúdo do aplicativo.
@@ -192,10 +192,10 @@ Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Clique emAvançar.
+1. Clique em Avançar.
 1. Forneça uma ID e um título do aplicativo, no entanto, você também pode incluir um Nome e uma Descrição.
 
-   1. Além disso, você pode fornecer um PNG (formato de ícone PhoneGap suportado) como um ícone ao navegar pelos ativos AEM.
+   1. Além disso, você pode fornecer um PNG (formato de ícone PhoneGap suportado) como um ícone, navegando AEM ativos.
    1. Lembre-se de que você pode editar todos esses campos depois que o aplicativo for criado no bloco Gerenciar aplicativo. Com exceção da ID do aplicativo, depois que a ID do aplicativo for definida, não será possível alterá-la.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -209,11 +209,11 @@ Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 
 >[!NOTE]
 >
->Se você desinstalar o pacote de aplicativo de referência do Geometrixx Outdoors do AEM e criar um aplicativo com base em seu modelo, esse aplicativo não estará mais funcionando. O aplicativo Geometrixx Outdoors pode ser removido, no entanto, o modelo de aplicativo deve permanecer se for usado por outros aplicativos móveis.
+>Se você desinstalar o pacote do aplicativo de referência do Geometrixx Outdoors de AEM e criar um aplicativo com base em seu modelo, o aplicativo não funcionará mais. O aplicativo Geometrixx Outdoors pode ser removido, no entanto, o modelo do aplicativo deve permanecer se for usado por outros aplicativos móveis.
 
-## Explorar o aplicativo Geometrixx Outdoors de amostra {#exploring-the-sample-geometrixx-outdoors-app}
+## Explorar o aplicativo de exemplos de Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
 
-O aplicativo Geometrixx Outdoors é um exemplo de aplicativo PhoneGap que demonstra os recursos do blueprint padrão do aplicativo PhoneGap e os componentes móveis de amostra.
+Geometrixx Outdoors App é um exemplo de aplicativo PhoneGap que demonstra os recursos do padrão do aplicativo PhoneGap e os componentes móveis de amostra.
 
 Para abrir o aplicativo, no painel, clique em Aplicativos móveis e selecione Aplicativo Geometrixx Outdoors.
 
@@ -238,7 +238,7 @@ O conteúdo do Home page é composto pelas seguintes ferramentas de navegação:
 * Um componente de Lista de menu que fornece links para as páginas secundárias Arte, Revisões, Notícias e Sobre nós.
 * Um componente do carrossel de troca que exibe as páginas secundárias.
 
-### Página de engrenagens - Aplicativo Geometrixx para dispositivos móveis {#the-gear-page-geometrixx-mobile-app}
+### A página de engrenagens - Aplicativo móvel Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 A página de engrenagens fornece aos usuários acesso às páginas de produtos. Um componente de lista de menu fornece acesso às páginas secundárias da página de engrenagens. As páginas secundárias são categorias de produtos que o site possui.
 
@@ -267,13 +267,13 @@ Contém um botão Voltar. O sistema de parágrafo permite que você adicione com
 
 Ao usar o aplicativo, a página Notícias está disponível no carrossel da página em inglês.
 
-### A página Sobre nós - Aplicativo Geometrixx Mobile {#the-about-us-page-geometrixx-mobile-app}
+### A página Sobre nós - Aplicativo móvel Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
 A página Sobre nós contém vários componentes de Linha de duas colunas. Cada coluna contém um componente de Imagem ou Texto. Os componentes são editáveis e o sistema de parágrafo permite que você adicione componentes.
 
 Ao usar o aplicativo, a página Sobre nós está disponível no carrossel da página em inglês.
 
-### Página Locais - Aplicativo Geometrixx para dispositivos móveis {#the-locations-page-geometrixx-mobile-app}
+### Página Locais - Aplicativo móvel Geometrixx {#the-locations-page-geometrixx-mobile-app}
 
 A página Locais contém um componente Locais.
 
