@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ O uso do Dispatcher 4.1.6 ou posterior resolverá esse problema.
 
 ### Não é possível acessar a publicação do fórum após atualizar do CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Se um fórum tiver sido criado no CQ 5.4 e os tópicos tiverem sido publicados e o site tiver sido atualizado para o AEM 5.6.1 ou posterior, tentar exibir as publicações existentes pode resultar em um erro na página:
+Se um fórum tiver sido criado no CQ 5.4 e os tópicos tiverem sido publicados e o site tiver sido atualizado para AEM 5.6.1 ou posterior, tentar visualização das publicações existentes poderá resultar em um erro na página:
 
 caractere padrão ilegal &#39;a&#39;\
 Não é possível enviar solicitação para /content/demoforums/forum-test.html neste servidor
@@ -62,7 +65,7 @@ Durante a inicialização (não o 1º, mas todos depois disso), o seguinte aviso
 
 * 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars O Auxiliar &#39;i18n&#39; foi substituído por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Este aviso pode ser ignorado com segurança como jknack.handlebars.Handlebars, usado pelo [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Na inicialização, é substituído por um auxiliar AEM específico [i18n](handlebars-helpers.md#i-n). Esse aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
+Este aviso pode ser ignorado com segurança como jknack.handlebars.Handlebars, usado pelo [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Ao start para cima, ele é substituído por um auxiliar [i18n específico AEM](handlebars-helpers.md#i-n). Esse aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
 
 ### Aviso em registros: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
@@ -81,7 +84,7 @@ Esses avisos podem ser ignorados com segurança.
 
 ### Erro nos registros: NoClassDefFoundError para IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Atualizar o AEM 5.6.1 GA para o cq-socialCommunities-pkg-1.4.x mais recente ou para o AEM 6.0 resulta em erros no arquivo de log durante a inicialização para uma condição que resolverá a si mesmo, como evidenciado pelo erro, que não é visto na reinicialização.
+A atualização do AEM 5.6.1 GA para o cq-socialCommunities-pkg-1.4.x mais recente ou para o AEM 6.0 resulta em erros no arquivo de log durante a inicialização para uma condição que será resolvida como evidenciado pelo erro que não é visto na reinicialização.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
