@@ -1,6 +1,6 @@
 ---
-title: Configurar autenticação baseada em certificado
-seo-title: Configurar autenticação baseada em certificado
+title: Configurando a autenticação baseada em certificado
+seo-title: Configurando a autenticação baseada em certificado
 description: Importe um certificado da autoridade de certificação (CA) para o armazenamento de confiança e crie um mapeamento de certificado para autenticação baseada em certificado.
 seo-description: Importe um certificado da autoridade de certificação (CA) para o armazenamento de confiança e crie um mapeamento de certificado para autenticação baseada em certificado.
 uuid: 9802a969-6d29-4b80-a4ed-06eb6e66e046
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
 
-# Configurar autenticação baseada em certificado {#configuring-certificate-based-authentication}
+# Configurando a autenticação baseada em certificado {#configuring-certificate-based-authentication}
 
 O Gerenciamento de usuários geralmente realiza a autenticação usando um nome de usuário e senha. O Gerenciamento de usuários também oferece suporte à autenticação baseada em certificados, que você pode usar para autenticar usuários por meio do Acrobat ou para autenticar usuários de forma programática. Para obter detalhes sobre como autenticar usuários de forma programática, consulte [Programação com formulários](https://www.adobe.com/go/learn_aemforms_programming_63)AEM.
 
-Para usar a autenticação baseada em certificado, importe um certificado da autoridade de certificação (CA) confiável no armazenamento confiável e crie um mapeamento de certificado.
+Para usar autenticação baseada em certificado, importe um certificado da autoridade de certificação (CA) confiável no armazenamento confiável e crie um mapeamento de certificado.
 
 ## Importar o certificado CA {#import-the-ca-certificate}
 
@@ -34,7 +37,7 @@ Ao testar um certificado, o Gerenciamento de usuários carrega as verificações
 * O certificado é válido.
 * O Emissor especificado pode verificar o certificado.
 * O certificado contém o atributo necessário para mapeamento.
-* O mapeamento especificado mapeia o certificado para apenas um usuário no banco de dados de formulários do AEM. Os usuários atuais e obsoletos (excluídos) são verificados para determinar se correspondem aos critérios de mapeamento. Portanto, o teste de certificado falhará se mais de um usuário, incluindo usuários obsoletos, tiver o valor do atributo sendo considerado.
+* O mapeamento especificado mapeia o certificado para apenas um usuário no banco de dados de formulários AEM. Os usuários atuais e obsoletos (excluídos) são verificados para determinar se correspondem aos critérios de mapeamento. Portanto, o teste de certificado falhará se mais de um usuário, incluindo usuários obsoletos, tiver o valor do atributo sendo considerado.
 
 >[!NOTE]
 >
@@ -55,33 +58,34 @@ Ao testar um certificado, o Gerenciamento de usuários carrega as verificações
    Você pode usar os seguintes caracteres no regex:
 
    * . (qualquer caractere)
-   *  &amp;ast; (0 ou mais ocorrências)
+   * &amp;ast; (0 ou mais ocorrências)
    * () (especificar o grupo entre parênteses)
    * \ (usado para escapar de um caractere regex para um caractere regular)
    * $n (usado para se referir ao enésimo grupo)
+
    Exemplos de expressões regulares:
 
    * Para extrair &quot;Alex Pink&quot; de &quot;Alex Pink (Autenticação)&quot;
 
-      **** Regex: (.&amp;ast;) \(Autenticação\)
+      **Regex:** (.&amp;ast;) \(Autenticação\)
 
    * Para extrair &quot;Alex Pink&quot; de &quot;Alex (Autenticação) Pink&quot;
 
-      **** Regex: (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
    * Para extrair &quot;Alex Rosa&quot; de &quot;Alex (Autenticação) Rosa&quot;
 
-      **** Regex: (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
       Ordem personalizada: $2 $1 (retornar o segundo grupo, concatenado para o primeiro grupo, capturado pelo caractere de espaço em branco)
 
    * Para extrair &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
-      **** Regex: smtp:(.&amp;ast;)
-   Para obter detalhes sobre como usar expressões regulares, consulte o tutorial [Java sobre expressões](https://java.sun.com/docs/books/tutorial/essential/regex/)regulares.
+      **Regex:** smtp:(.&amp;ast;)
+   Para obter detalhes sobre como usar expressões comuns, consulte o tutorial [Java sobre expressões](https://java.sun.com/docs/books/tutorial/essential/regex/)regulares.
 
-1. Na lista Por domínio, selecione o domínio do usuário.
-1. Para testar essa configuração, clique em Procurar para carregar um certificado de usuário de amostra, clique em Testar certificado e, se a configuração estiver correta, clique em OK.
+1. Na lista Para domínio, selecione o domínio do usuário.
+1. Para testar essa configuração, clique em Procurar para fazer upload de um certificado de usuário de amostra, clique em Testar certificado e, se a configuração estiver correta, clique em OK.
 
 **Editar um mapeamento de certificado existente**
 
@@ -93,5 +97,5 @@ Ao testar um certificado, o Gerenciamento de usuários carrega as verificações
 **Excluir um mapeamento de certificado**
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Mapeamento de certificados.
-1. Marque a caixa de seleção do mapeamento de certificado a ser excluído, clique em Excluir e, em seguida, clique em OK.
+1. Marque a caixa de seleção para o mapeamento de certificado a ser excluído, clique em Excluir e, em seguida, clique em OK.
 
