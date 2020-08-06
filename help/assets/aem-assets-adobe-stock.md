@@ -19,7 +19,7 @@ As organizações podem integrar seus planos [!DNL Adobe Stock] corporativos [!D
 
 ## Pré-requisitos {#prerequisites}
 
-A integração requer um plano [corporativo do Adobe Stock e](https://stockenterprise.adobe.com/) [!DNL Experience Manager] 6.4 com pelo menos o Service Pack 2 implantado. Para obter detalhes sobre o service pack [!DNL Experience Manager] 6.4, consulte estas notas [de](/help/release-notes/sp-release-notes.md)versão.
+A integração requer um plano [Adobe Stock](https://stockenterprise.adobe.com/) corporativo e [!DNL Experience Manager] 6.4 com pelo menos o Service Pack 2 implantado. Para obter detalhes sobre o service pack [!DNL Experience Manager] 6.4, consulte estas notas [de](/help/release-notes/sp-release-notes.md)versão.
 
 ## Integrar [!DNL Experience Manager] e [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -34,8 +34,8 @@ Para permitir a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stoc
 1. In [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Clique em **[!UICONTROL Criar]** e selecione **[!UICONTROL Solução da nuvem]** > **[!UICONTROL Adobe Stock]**.
 1. Reutilize um certificado existente ou selecione **[!UICONTROL Criar novo certificado]**.
 1. Clique em **[!UICONTROL Criar certificado]**. Depois de criada, baixe a chave pública. Clique em **[!UICONTROL Avançar]**.
-1. Adicione a chave pública baixada à sua conta [!DNL Adobe Developer Console] de serviço. Clique em **[!UICONTROL Avançar]**. Deixe a tela Configuração [!UICONTROL da conta técnica] Adobe IMS aberta para fornecer os valores em breve.
-1. Acesse o [Adobe Developer Console](https://console.adobe.io). Certifique-se de que sua conta tenha permissões de administrador para a organização para a qual a integração é necessária.
+1. Adicione a chave pública baixada à sua conta [!DNL Adobe Developer Console] de serviço. Clique em **[!UICONTROL Avançar]**. Deixe a tela Configuração  de conta técnica Adobe IMS aberta para fornecer os valores em breve.
+1. Acesse o Console [do desenvolvedor do](https://console.adobe.io)Adobe. Certifique-se de que sua conta tenha permissões de administrador para a organização para a qual a integração é necessária.
 1. Clique em **[!UICONTROL Criar novo projeto]** e em **[!UICONTROL Adicionar API]**. Selecione **[!UICONTROL Adobe Stock]** na lista de APIs [!UICONTROL disponíveis para você]. Selecione [!UICONTROL OAUTH 2.0 Web]. Configure e copie os vários valores apresentados.
 1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Consulte start [rápido de autenticação](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)JWT para obter informações detalhadas sobre esses valores.
 
@@ -60,7 +60,7 @@ Usando esse recurso, as organizações podem permitir que seus usuários trabalh
 
 Quando um [!DNL Adobe Stock] ativo é licenciado em [!DNL Experience Manager], ele pode ser usado e gerenciado como um ativo comum. Em [!DNL Experience Manager], os usuários podem pesquisar e pré-visualização os ativos; copiar e publicar os ativos; compartilhar os ativos em [!DNL Brand Portal]; acessar e usar os ativos por meio do aplicativo [!DNL Experience Manager] desktop; e assim por diante.
 
-![Procure ativos do Adobe Stock e filtre os resultados da sua área de trabalho do Adobe Experience Manager](assets/adobe-stock-search-results-workspace.png)
+![Procure ativos do Adobe Stock e filtre os resultados de sua área de trabalho do Adobe Experience Manager](assets/adobe-stock-search-results-workspace.png)
 
 *Figura: Procure[!DNL Adobe Stock]ativos e filtre os resultados da sua[!DNL Experience Manager]interface.*
 
@@ -80,7 +80,7 @@ Como alternativa, digite um start `Location: Adobe Stock` na barra de pesquisa p
 >
 >Assets searched from [!DNL Adobe Stock] are just displayed in [!DNL Experience Manager]. [!DNL Adobe Stock] os ativos são buscados e armazenados no [!DNL Experience Manager] repositório somente depois que um usuário [salva um ativo](/help/assets/aem-assets-adobe-stock.md#saveassets) ou [licencia e salva um ativo](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets that are already stored in [!DNL Experience Manager] are displayed and highlighted for ease of reference and access. Also, the [!DNL Stock] assets are saved with some additional metadata to indicate the source as [!DNL Stock].
 
-![Pesquise filtros no Experience Manager e destaque os ativos do Adobe Stock nos resultados da pesquisa](assets/aem-search-filters2.jpg)
+![Pesquisar filtros no Experience Manager e ativos Adobe Stock destacados nos resultados da pesquisa](assets/aem-search-filters2.jpg)
 
 *Figura: Pesquise filtros em[!DNL Experience Manager]e[!DNL Adobe Stock]ativos destacados nos resultados da pesquisa.*
 
@@ -98,7 +98,7 @@ Na próxima vez que você pesquisar ativos, os ativos salvos serão realçados c
 
 Os usuários podem licenciar [!DNL Adobe Stock] ativos usando a cota de seu plano de [!DNL Adobe Stock] empresa. Quando você licencia um ativo, ele é salvo sem uma marca d&#39;água e está disponível para pesquisa e uso no [!DNL Experience Manager Assets].
 
-![Diálogo para licenciar e salvar ativos do Adobe Stock nos ativos Experience Manager](assets/aem-stock_licenseandsave.jpg)
+![Caixa de diálogo para licenciar e salvar ativos Adobe Stock nos Experience Manager Assets](assets/aem-stock_licenseandsave.jpg)
 
 *Figura: Caixa de diálogo para licenciar e salvar[!DNL Adobe Stock]ativos em[!DNL Experience Manager Assets].*
 
@@ -122,7 +122,7 @@ Os usuários podem ver as propriedades dos ativos licenciados e não licenciados
 
 >[!MORELIKETHIS]
 >
->* [Tutorial em vídeo sobre como usar ativos do Adobe Stock com ativos Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
->* [Ajuda do plano corporativo do Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Perguntas frequentes sobre o Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Tutorial em vídeo sobre como usar ativos Adobe Stock com ativos Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Ajuda do plano corporativo Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Perguntas frequentes sobre a Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
