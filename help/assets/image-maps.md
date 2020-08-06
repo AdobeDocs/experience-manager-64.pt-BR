@@ -4,6 +4,9 @@ description: Saiba como adicionar mapas de imagem hipervinculados a ativos de im
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +19,13 @@ Os mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que fun
 
 1. Execute um dos procedimentos a seguir para abrir o Editor **[!UICONTROL de imagens]** no local:
 
-   * Usando Ações rápidas, toque no ícone **[!UICONTROL Editar]** que aparece em um ativo na exibição **[!UICONTROL Cartão]** . Na exibição de Lista, selecione o ativo e toque no ícone **Editar** na barra de ferramentas.
+   * Usando Ações rápidas, toque no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização **[!UICONTROL Cartão]** . Na visualização da Lista, selecione o ativo e toque no ícone **Editar** na barra de ferramentas.
 
       >[!NOTE]
       >
-      >As Ações rápidas não estão disponíveis na exibição **[!UICONTROL Lista]** .
+      >As Ações rápidas não estão disponíveis na visualização da **[!UICONTROL Lista]** .
 
-   * Na exibição **[!UICONTROL Cartão]** ou **[!UICONTROL Lista]** , selecione o ativo e toque no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+   * Na visualização **[!UICONTROL Cartão]** ou **[!UICONTROL Lista]** , selecione o ativo e toque no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    * Toque no ícone **[!UICONTROL Editar]** na página do ativo.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
@@ -35,7 +38,7 @@ Os mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que fun
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Toque no ponto de acesso e insira o URL e o texto Alt. Na lista **[!UICONTROL Target]** , especifique onde deseja que o mapa de imagem seja exibido, por exemplo, a mesma guia, uma nova guia ou um iFrame. Por exemplo, insira `https://www.adobe.com` como o URL, `Adobe website` como o texto alternativo, e especifique **[!UICONTROL Nova guia]** na lista **[!UICONTROL Target]** para que o mapa de imagem seja aberto em uma nova guia.
+1. Toque no ponto de acesso e insira o URL e o texto Alt. Na lista do **[!UICONTROL Público alvo]** , especifique onde deseja que o mapa de imagem seja exibido, por exemplo, a mesma guia, uma nova guia ou um iFrame. Por exemplo, insira `https://www.adobe.com` como o URL, `Adobe website` como o texto alternativo, e especifique **[!UICONTROL Nova guia]** na lista do **[!UICONTROL Público alvo]** para que o mapa de imagem seja aberto em uma nova guia.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
@@ -47,8 +50,8 @@ Os mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que fun
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
-1. Para exibir o mapa de imagem, navegue até a página de detalhes do ativo e passe o cursor sobre a imagem.
+1. Para visualização do mapa de imagem, navegue até a página de detalhes do ativo e passe o cursor sobre a imagem.
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se a opção Mídia dinâmica estiver ativada, navegue até o editor de ativos e toque no ícone **[!UICONTROL Mapa]** para exibir todos os mapas de imagem aplicados.
+   Se a opção Mídia dinâmica estiver ativada, navegue até o editor de ativos e toque no ícone **[!UICONTROL Mapa]** para visualização de todos os mapas de imagem aplicados.
