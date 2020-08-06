@@ -12,6 +12,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Os modelos são usados em vários pontos no AEM:
 
 * When [creating a page you need to select a template](#templates-pages); this will be used as the base for the new page. The template defines the structure of the resultant page, any initial content and the [components](/help/sites-authoring/default-components.md) that can be used (design properties).
 
-* Ao [criar um fragmento de conteúdo, também é necessário selecionar um modelo](#templates-content-fragments). Este modelo define a estrutura, os elementos iniciais e as variações.
+* Ao [criar um Fragmento de conteúdo, também é necessário selecionar um modelo](#templates-content-fragments). Este modelo define a estrutura, os elementos iniciais e as variações.
 
 Os seguintes modelos são abordados detalhadamente:
 
@@ -33,7 +36,7 @@ Os seguintes modelos são abordados detalhadamente:
 
 ## Modelos - Páginas {#templates-pages}
 
-O AEM agora oferece dois tipos básicos de modelos para a criação de páginas:
+AEM agora oferta dois tipos básicos de modelos para criar páginas:
 
 >[!NOTE]
 >
@@ -41,7 +44,7 @@ O AEM agora oferece dois tipos básicos de modelos para a criação de páginas:
 
 ### Modelos editáveis {#editable-templates}
 
-Modelos editáveis agora são considerados práticas recomendadas para desenvolvimento com o AEM.
+Modelos editáveis agora são considerados práticas recomendadas para desenvolvimento com AEM.
 
 As vantagens dos modelos editáveis:
 
@@ -60,14 +63,14 @@ As vantagens dos modelos editáveis:
 
 >[!NOTE]
 >
->Um artigo da comunidade AEM está disponível para explicar como desenvolver um site do Experience Manager com modelos editáveis. Consulte [Criar um site do Adobe Experience Manager 6.4 usando modelos](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html)editáveis.
+>Um artigo AEM da comunidade está disponível para explicar como desenvolver um site Experience Manager com modelos editáveis. Consulte [Criar um site do Adobe Experience Manager 6.4 usando modelos](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html)editáveis.
 
 ### Modelos estáticos {#static-templates}
 
 Modelos estáticos:
 
 * Deve ser definido e configurado pelos desenvolvedores.
-* Esse era o sistema de modelo original do AEM e estava disponível para muitas versões.
+* Esse era o sistema de modelo original de AEM e estava disponível para muitas versões.
 * Um modelo estático é uma hierarquia de nós que tem a mesma estrutura da página a ser criada, mas sem nenhum conteúdo real.
 * São copiados para criar a nova página; não há conexão dinâmica após isso.
 * Uses [Design Mode](/help/sites-authoring/default-components-designmode.md) to persist design properties.
@@ -76,17 +79,17 @@ Modelos estáticos:
 
 >[!NOTE]
 >
->A partir do AEM 6.4, o uso de Modelos estáticos não é considerado uma prática recomendada. Em vez disso, use Modelos editáveis.
+>A partir AEM 6.4 o uso de Modelos estáticos não é considerado uma prática recomendada. Em vez disso, use Modelos editáveis.
 >
->[As ferramentas de modernização](modernization-tools.md) do AEM podem ajudá-lo a migrar de modelos estáticos para editáveis.
+>[AEM As ferramentas de modernização](modernization-tools.md) podem ajudá-lo a migrar de modelos estáticos para modelos editáveis.
 
 ### Disponibilidade do modelo {#template-availability}
 
 >[!CAUTION]
 >
->O AEM oferece várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-las pode levar a regras muito complexas que são difíceis de rastrear e gerenciar.
+>AEM oferta várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-las pode levar a regras muito complexas que são difíceis de rastrear e gerenciar.
 >
->Portanto, a Adobe recomenda que você comece de forma simples, definindo:
+>Portanto, o Adobe recomenda que você start de forma simples, definindo:
 >
 >* somente a `cq:allowedTemplates` propriedade
    >
@@ -102,7 +105,7 @@ Para ver um exemplo, consulte We.Retail: `/content/we-retail/jcr:content`
 
 Ao criar uma nova página na interface do administrador do site, a lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo.
 
-As propriedades a seguir determinam se um modelo `T` pode ser usado para uma nova página ser colocada como um filho da página `P`. Cada uma dessas propriedades é uma string de vários valores contendo zero ou mais expressões regulares usadas para correspondência com caminhos:
+As propriedades a seguir determinam se um modelo `T` pode ser usado para uma nova página ser colocada como um filho da página `P`. Cada uma dessas propriedades é uma string de vários valores contendo zero ou mais Expressões Regulares usadas para correspondência com caminhos:
 
 * A `cq:allowedTemplates` propriedade do `jcr:content` subnó de `P` ou um ancestral de `P`.
 
