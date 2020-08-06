@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -43,9 +46,9 @@ Execute as seguintes etapas para mostrar os componentes na barra lateral com bas
 
    ![Copiando políticas padrão](assets/crx-default1.png)
 
-1. Selecione a nova política criada e selecione a propriedade **components** no painel direito com o tipo `string[]`.
+1. Selecione a nova política que você cria e selecione a propriedade **components** no painel direito com o tipo `string[]`.
 
-   Ao selecionar e abrir a propriedade components, é exibida a caixa de diálogo Editar componentes. A caixa de diálogo Editar componentes permite adicionar ou remover grupos de componentes usando os botões **+** e **-** . Você pode adicionar um grupo de componentes que inclui componentes que os autores devem usar.
+   Quando você seleciona e abre a propriedade components, é exibida a caixa de diálogo Editar componentes. A caixa de diálogo Editar componentes permite adicionar ou remover grupos de componentes usando os botões **+** e **-** . Você pode adicionar um grupo de componentes que inclui componentes que os autores devem usar.
 
    ![Adicionar ou remover componentes na política](assets/add-components-list1.png)
 
