@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 1%
 
 ---
 
@@ -48,11 +51,11 @@ Use as seguintes etapas para adicionar suporte para caracteres especiais persona
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **** Caminho: /libs/fd/cm/ma/gui/configuration/textEditorConfiguração/caracteres especiais
+      **Caminho:** /libs/fd/cm/ma/gui/configuration/textEditorConfiguração/caracteres especiais
 
-      **** Localização da sobreposição: /apps/
+      **Localização da sobreposição:** /apps/
 
-      **** Corresponder tipos de nós: Verificado
+      **Corresponder tipos de nós:** Verificado
 
       >[!NOTE]
       >
@@ -78,7 +81,7 @@ Use as seguintes etapas para adicionar suporte para caracteres especiais persona
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcaracteres/&lt;YourChildNode>
 
-1. Atualize a página Editor de texto\Criar interface de usuário de correspondência. O nó que você adicionou é o último na lista de caracteres Especiais na interface do usuário.
+1. Atualize a página Editor de texto\Criar interface de usuário de correspondência. O nó que você adicionou é o último na lista de caracteres especiais na interface do usuário.
 1. Clique em **Salvar tudo**.
 1. Faça as alterações nos caracteres especiais, conforme necessário:
 
