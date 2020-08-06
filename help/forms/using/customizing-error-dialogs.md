@@ -1,8 +1,8 @@
 ---
 title: Personalização de caixas de diálogo de erro
 seo-title: Personalização de caixas de diálogo de erro
-description: Como personalizar as caixas de diálogo de erros do LiveCycle AEM Forms para adicionar diferentes descrições de falhas.
-seo-description: Como personalizar as caixas de diálogo de erros do LiveCycle AEM Forms para adicionar diferentes descrições de falhas.
+description: Como personalizar as caixas de diálogo de erro da área de trabalho do LiveCycle AEM Forms para adicionar diferentes descrições de falhas.
+seo-description: Como personalizar as caixas de diálogo de erro da área de trabalho do LiveCycle AEM Forms para adicionar diferentes descrições de falhas.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 1%
 
 ---
 
 
 # Personalização de caixas de diálogo de erro {#customizing-error-dialogs}
 
-A área de trabalho do AEM Forms permite personalizar caixas de diálogo de erro. Execute as etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md) da área de trabalho do AEM Forms seguidas pelas etapas abaixo para personalizar caixas de diálogo de erro.
+A área de trabalho do AEM Forms permite personalizar caixas de diálogo de erro. Execute as etapas [Genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md) da área de trabalho do AEM Forms, seguidas pelas etapas abaixo para personalizar caixas de diálogo de erro.
 
 ## Personalização de texto {#customizing-text}
 
