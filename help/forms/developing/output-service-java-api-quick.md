@@ -30,7 +30,7 @@ O SOAP (Java API Quick Start) está disponível para o serviço de Saída.
 
 [Start rápido (modo SOAP): Transmissão de documentos ao serviço de saída usando a API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Start rápido (modo SOAP): Transmissão de um documento localizado no repositório de formulários do AEM para o serviço de Saída usando a API do Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Start rápido (modo SOAP): Transmissão de um documento localizado no repositório AEM Forms para o serviço de Saída usando a API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Start rápido (modo SOAP): Criação de um documento PDF com base em fragmentos usando a API Java](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
@@ -44,7 +44,7 @@ O SOAP (Java API Quick Start) está disponível para o serviço de Saída.
 
 [Start rápido (modo SOAP): Transformando um documento PDF usando a API Java](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ O exemplo de código Java a seguir cria um documento PDF chamado *Loan.pdf*. Est
 
 >[!NOTE]
 >
->Antes de executar esse start rápido, certifique-se de criar um aplicativo AEM Forms chamado Applications/FormsApplication. Crie uma pasta dentro do aplicativo chamada FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento](/help/forms/developing/creating-document-output-streams.md)*PDF.*
+>Antes de executar esse start rápido, certifique-se de criar um aplicativo AEM Forms chamado Aplicativos/FormsApplication. Crie uma pasta dentro do aplicativo chamada FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento](/help/forms/developing/creating-document-output-streams.md)*PDF.*
 
 ```as3
  /* 
@@ -310,7 +310,7 @@ O *Loan.pdf* é gravado no diretório C:\Adobe folder located on the J2EE applic
 
 >[!NOTE]
 >
->Antes de executar esse start rápido, certifique-se de criar um aplicativo AEM Forms chamado Applications/FormsApplication. Crie uma pasta dentro do aplicativo chamada FormsFolder e coloque o arquivo XDP na pasta.
+>Antes de executar esse start rápido, certifique-se de criar um aplicativo AEM Forms chamado Aplicativos/FormsApplication. Crie uma pasta dentro do aplicativo chamada FormsFolder e coloque o arquivo XDP na pasta.
 
 ```as3
  /* 
