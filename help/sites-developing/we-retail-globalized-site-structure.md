@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ We.Retail foi construído com uma estrutura de site globalizada que oferece mest
 ## Tentando sair {#trying-it-out}
 
 1. Abra o console Sites de Navegação **global -> Sites**.
-1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo da estrutura do país com a Suíça, os Estados Unidos, a França, etc., ao lado dos Mestres em Linguagem.
+1. Alterne para a visualização da coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo da estrutura do país com a Suíça, os Estados Unidos, a França, etc., ao lado dos Mestres em Linguagem.
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -30,17 +33,17 @@ We.Retail foi construído com uma estrutura de site globalizada que oferece mest
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Alterne para a exibição de lista e veja se as cópias de idioma dos países são todas cópias online.
+1. Mude para a visualização da lista e veja que as cópias de idioma para os países são todas cópias ao vivo.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
-1. Retorne à exibição de coluna e clique em Idioma mestre e veja as raízes do idioma mestre com conteúdo. Observe que somente o inglês tem conteúdo.
+1. Retorne à visualização da coluna e clique no Idioma Principal e veja o idioma principal raiz com conteúdo. Observe que somente o inglês tem conteúdo.
 
    We.Retail não vem com nenhum conteúdo traduzido, mas a estrutura e configuração estão em vigor para permitir que você demonstre os serviços de tradução.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Com o Idioma mestre selecionado, abra o painel **Referências** no console de sites e selecione Cópias **de** idioma.
+1. Com o idioma Principal selecionado, abra o painel **Referências** no console de sites e selecione Cópias **de** idioma.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -48,25 +51,25 @@ We.Retail foi construído com uma estrutura de site globalizada que oferece mest
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Um projeto é criado para cada tradução de idioma. Exiba-os em **Navegação -> Projetos**.
+1. Um projeto é criado para cada tradução de idioma. Visualização-os em **Navegação -> Projetos**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Clique em alemão para ver os detalhes do projeto de tradução. Observe que o status está em **Rascunho**. Para iniciar a tradução com o serviço de tradução da Microsoft, clique na divisa ao lado do cabeçalho Trabalho **de** tradução e selecione **Iniciar**.
+1. Clique em alemão para ver os detalhes do projeto de tradução. Observe que o status está em **Rascunho**. Para start da tradução com o serviço de tradução da Microsoft, clique na divisa ao lado do cabeçalho Trabalho **de** tradução e selecione **Start**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. O projeto de tradução começa. Clique nas reticências na parte inferior do cartão rotulado Trabalho de tradução para ver os detalhes. As páginas com o estado **Pronto para revisão** já foram traduzidas pelo serviço de tradução.
+1. Os start do projeto de tradução. Clique nas reticências na parte inferior do cartão rotulado Trabalho de tradução para ver os detalhes. As páginas com o estado **Pronto para revisão** já foram traduzidas pelo serviço de tradução.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Selecionar uma das páginas na lista e, em seguida, **Visualizar nos sites** na barra de ferramentas abrirá a página traduzida no editor de páginas.
+1. Selecionar uma das páginas na lista e, em seguida, **Pré-visualização nos Sites** na barra de ferramentas abrirá a página traduzida no editor de páginas.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
 >[!NOTE]
 >
->Este procedimento demonstrou a integração integrada com a tradução automática da Microsoft. Usando a estrutura [de integração de tradução do](/help/sites-administering/translation.md)AEM, você pode se integrar a muitos serviços de tradução padrão para orquestrar a tradução do AEM.
+>Este procedimento demonstrou a integração integrada com a tradução automática da Microsoft. Usando a Estrutura [de Integração de Tradução](/help/sites-administering/translation.md)AEM, você pode se integrar a muitos serviços de tradução padrão para orquestrar a tradução de AEM.
 
 ## Informações adicionais {#further-information}
 
