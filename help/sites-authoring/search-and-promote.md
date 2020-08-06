@@ -1,6 +1,6 @@
 ---
-title: Adicionar recursos do Search&Promote à sua página
-seo-title: Adicionar recursos do Search&Promote à sua página
+title: Adicionar recursos de Search & Promote à sua página
+seo-title: Adicionar recursos de Search & Promote à sua página
 description: Para integrar os recursos do Search&Promote ao seu site, use os componentes do Search&Promote para adicionar os recursos de pesquisa por palavra-chave, página de resultados da pesquisa, refinamento da pesquisa e banners à sua página
 seo-description: Para integrar os recursos do Search&Promote ao seu site, use os componentes do Search&Promote para adicionar os recursos de pesquisa por palavra-chave, página de resultados da pesquisa, refinamento da pesquisa e banners à sua página
 uuid: 382cf784-4214-4bf3-ace6-6f66451195e2
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 79%
 
 ---
 
