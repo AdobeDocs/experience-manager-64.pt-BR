@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Algumas funcionalidades do fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
 ## Permissões - Excluir ou não excluir {#permissions-delete-or-not-delete}
 
@@ -45,7 +48,7 @@ No que se refere a excluir permissões, os Fragmentos de conteúdo devem ser con
 
 >[!NOTE]
 >
->Consulte também [Como auditar operações de gerenciamento de usuários no AEM](/help/sites-administering/audit-user-management-operations.md).
+>Consulte também [Como auditar operações de gerenciamento de usuários em AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
 
@@ -87,7 +90,7 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
-Esses `remove` privilégios devem ser [administrados usando Listas de Controle de Acesso, dentro do CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Esses `remove` privilégios devem ser [administrados usando Listas Controle de acesso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 Os privilégios `add` e `modify` também podem ser administrados no CRXDE Lite ou usando o console Gerenciamento de usuários.
 
