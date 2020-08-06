@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Visão geral {#overview}
 
-O AEM Communities simplifica a criação e personalização de recursos da comunidade, como fóruns, grupos de usuários, blogs, perguntas e respostas, calendários, comentários, revisões, votação, classificações e atribuições. Esses recursos fazem com que o conteúdo gerado pelo usuário (UGC) seja inserido no ambiente de publicação.
+A AEM Communities simplifica a criação e personalização de recursos da comunidade, como fóruns, grupos de usuários, blogs, P&amp;R, calendários, comentários, revisões, votação, classificações e atribuições. Esses recursos fazem com que o conteúdo gerado pelo usuário (UGC) seja inserido no ambiente de publicação.
 
 A base de um site [da](overview.md#communitiessites) comunidade é a estrutura [de componentes](scf.md) sociais (SCF). A criação de um site da comunidade começa com a seleção de um modelo [de site da](sites-console.md) comunidade composto por funções [da](functions.md)comunidade.
 
@@ -44,13 +47,13 @@ Para obter uma visão geral e tutoriais de introdução, visite:
 * [Auxiliares](handlebars-helpers.md)de barras de mão SCF: ajuda padrão e como escrever os auxiliares personalizados
 * [Personalização](client-customize.md)do cliente: personalização do código executado no navegador
 * [Personalização](server-customize.md)do servidor: personalização do código executado no servidor
-* [SRP (Storage Resource Provider, Provedor de recursos de armazenamento)](srp.md): visão geral do armazenamento de conteúdo da comunidade
+* [Provedor de recursos do Armazenamento (SRP)](srp.md): visão geral do armazenamento de conteúdo da comunidade
 * [Diretrizes](code-guide.md)de codificação: orientações, dicas e truques
 * [Guia](components-guide.md)dos componentes da comunidade: ferramenta de desenvolvimento interativo
 
 ## Componentes, funções e recursos básicos {#component-function-and-feature-essentials}
 
-Os componentes, as funções e os recursos do AEM Communities fornecem os elementos básicos para os sites [da](sites-console.md)comunidade.
+Os componentes, funções e recursos da AEM Communities fornecem os blocos de construção para sites [da](sites-console.md)comunidade.
 
 * [Componentes, funções e recursos básicos](essentials.md)
 * [Clientlibs para componentes de comunidades](clientlibs.md)
@@ -76,7 +79,7 @@ Os componentes, as funções e os recursos do AEM Communities fornecem os elemen
 ## Gerenciamento de dados {#managing-data}
 
 * [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos do utilitário de API SRP
-* [Tag Essentials](tag.md) - possibilidade de membros da comunidade marcarem os recursos de ativação do UGC e/ou catalogados
+* [Tag Essentials](tag.md) - possibilidade de membros da comunidade marcarem os recursos de habilitação do UGC e/ou catalogados
 
 ## Tutoriais {#tutorials}
 
