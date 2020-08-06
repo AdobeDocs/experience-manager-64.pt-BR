@@ -1,8 +1,8 @@
 ---
-title: Configurar locais para o Forms
-seo-title: Configurar locais para o Forms
-description: Saiba como configurar a localização para o Forms.
-seo-description: Saiba como configurar a localização para o Forms.
+title: Configuração de locais para Forms
+seo-title: Configuração de locais para Forms
+description: Saiba como configurar a localização para Forms.
+seo-description: Saiba como configurar a localização para Forms.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
 contentOwner: admin
 content-type: reference
@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Configurar locais para o Forms {#configuring-locations-for-forms}
+# Configuração de locais para Forms {#configuring-locations-for-forms}
 
 Você pode especificar o URL, o URI e os locais de arquivos dos atributos, como a raiz da Web, o local dos formulários a serem recuperados, o arquivo PDF semente usado nas transformações do PDFForm e o local do cache.
 
-1. No console de administração, clique em Serviços > Formulários.
+1. No console de administração, clique em Serviços > Forms.
 1. Em Locais, especifique as opções apropriadas. As opções estão descritas abaixo.
 1. Clique em Salvar.
 
@@ -44,17 +44,17 @@ O exemplo a seguir aponta para o mesmo conteúdo (usando o URI raiz do conteúdo
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI raiz da Web FS:** O URL do aplicativo da Web Forms. Você pode deixar essa caixa vazia se o aplicativo da Web Forms e o aplicativo cliente estiverem implantados no mesmo servidor de aplicativos; o URL raiz da Web da API do Forms será usado.
+**URI raiz da Web FS:** O URL do aplicativo da Web da Forms. Você pode deixar essa caixa vazia se o aplicativo da Web da Forms e o aplicativo cliente estiverem implantados no mesmo servidor de aplicativos; o URL raiz da Web da API do Forms será usado.
 
-Se o aplicativo da Web Forms e o aplicativo cliente não estiverem implantados no mesmo servidor de aplicativos, forneça o URL para o aplicativo da Web Forms nesta caixa, como mostra este exemplo:
+Se o aplicativo da Web da Forms e o aplicativo cliente não estiverem implantados no mesmo servidor de aplicativos, forneça o URL do aplicativo da Web da Forms nesta caixa, como mostra este exemplo:
 
 `https://<host name>:<port>/FormServer`
 
-Onde `host name`e `port` é o nome do servidor e o número da porta do servidor que está hospedando o aplicativo da Web Forms.
+Onde `host name`e `port` é o nome do servidor e o número da porta do servidor que está hospedando o aplicativo da Web da Forms.
 
 O valor padrão é uma string vazia.
 
-**URI raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do SDK de formulários AEM, para criar um URL absoluto para acessar conteúdo da Web específico do aplicativo.
+**URI raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do SDK de formulários AEM, para construir um URL absoluto para acessar conteúdo da Web específico do aplicativo.
 
 O valor padrão é uma string vazia.
 
@@ -62,11 +62,11 @@ O valor padrão é uma string vazia.
 
 O valor padrão é uma string vazia.
 
-**URI de configuração XCI:** O local relativo ou absoluto no qual o arquivo XCI usado para renderização é encontrado. Para obter um valor relativo, presume-se que o arquivo XCI reside no arquivo AEM de formulários AEM implantáveis.
+**URI de configuração XCI:** O local relativo ou absoluto no qual o arquivo XCI usado para renderização é encontrado. Para um valor relativo, presume-se que o arquivo XCI reside no arquivo AEM formulários implantáveis AER.
 
 O valor padrão é `com/adobe/formServer/PA/pa.xci`.
 
-**URI do mapa de fontes:** O local relativo ou absoluto do arquivo de mapeamento de fontes. Para um valor relativo, presume-se que esse arquivo reside no arquivo AEM de formulários AEM implantável.
+**URI do mapa de fontes:** O local relativo ou absoluto do arquivo de mapeamento de fontes. Para um valor relativo, presume-se que esse arquivo reside no arquivo AEM formulários implantáveis EAR.
 
 O arquivo de mapeamento de fontes é usado para criar mapeamentos de fontes personalizados para transformações HTML em formulários, portanto, permite especificar qual fonte será substituída quando uma fonte não estiver disponível no computador do cliente.
 
@@ -76,11 +76,11 @@ A entrada a seguir é um exemplo de uma entrada no arquivo de mapeamento de font
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Seed PDF File:** O arquivo PDF inicial usado em uma transformação PDFForm para otimizar o delivery. O arquivo PDF semente especifica um arquivo PDF personalizado (contendo apenas recursos de fluxo XFA, imagem e fonte) que é anexado ao design de formulário e aos dados. O formulário é renderizado pelo Acrobat 7 ou posterior e se aplica à transformação PDFForm.
+**Seed PDF File:** O arquivo PDF inicial usado em uma transformação PDFForm para otimizar o delivery. O arquivo PDF semente especifica um arquivo PDF personalizado (contendo apenas recursos de fluxo XFA, imagem e fonte) que é anexado ao design de formulário e aos dados. O formulário é renderizado pela Acrobat 7 ou posterior e se aplica à transformação PDFForm.
 
 O valor padrão é uma string vazia.
 
-**Localização do Cache:** Especifica o local do cache em disco do Forms. Quando você altera essa configuração, todas as informações de cache existentes no local atual são redefinidas e um novo cache é criado no novo local. Selecione uma destas opções:
+**Localização do Cache:** Especifica o local do cache de disco Forms. Quando você altera essa configuração, todas as informações de cache existentes no local atual são redefinidas e um novo cache é criado no novo local. Selecione uma destas opções:
 
 **Local padrão:** Esta é a seleção padrão. Quando essa opção é selecionada, o cache é criado em um local que depende do servidor de aplicativos que você está usando:
 
@@ -92,5 +92,5 @@ O valor padrão é uma string vazia.
 
 >[!NOTE]
 >
->Se você estiver usando um utilitário de limpeza temporária, lembre-se de que ao excluir esses diretórios não afeta a funcionalidade, isso pode afetar significativamente o desempenho por pouco tempo até que o novo cache seja criado. Para evitar esse problema, não exclua esses diretórios enquanto limpa o diretório temporário de formulários AEM.
+>Se você estiver usando um utilitário de limpeza temporária, lembre-se de que ao excluir esses diretórios não afeta a funcionalidade, isso pode afetar significativamente o desempenho por pouco tempo até que o novo cache seja criado. Para evitar esse problema, não exclua esses diretórios enquanto limpa o diretório temporário dos formulários AEM.
 
