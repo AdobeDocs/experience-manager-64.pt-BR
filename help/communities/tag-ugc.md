@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ A marcação de conteúdo gerado pelo usuário (UGC) é o meio pelo qual os memb
 
 Normalmente, as tags são aplicadas por autores e administradores no ambiente do autor. A marcação UGC é exclusiva porque as tags UGC são aplicadas por membros da comunidade no ambiente de publicação.
 
-Os namespaces de tags e as taxonomias são os mesmos para ambos os aplicativos.
+As namespaces e as taxonomias de tags são as mesmas para ambos os aplicativos.
 
 ## Recursos das comunidades {#communities-features}
 
@@ -45,7 +48,7 @@ Consulte [Usar a Nuvem](tagcloud.md) de tags sociais para adicionar um component
 
 ### Permissões de tag {#tag-permissions}
 
-As permissões padrão estão definidas para não permitir que os namespaces de tags sejam lidos por todos no ambiente de publicação.
+As permissões padrão estão definidas para não permitir que namespaces de tags sejam lidas por todos no ambiente publish.
 
 Como as tags são aplicadas ao UGC no ambiente de publicação, a permissão de leitura precisa ser ativada para membros da comunidade para que possam selecionar as tags a serem aplicadas.
 
