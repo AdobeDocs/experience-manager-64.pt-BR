@@ -1,8 +1,8 @@
 ---
 title: 'Configuração do cache para saída '
 seo-title: 'Configuração do cache para saída '
-description: O serviço de Saída armazena em cache os designs de formulário, fragmentos e imagens. Saiba como configurar o cache para saída.
-seo-description: O serviço de Saída armazena em cache os designs de formulário, fragmentos e imagens. Saiba como configurar o cache para saída.
+description: O serviço de Saída armazena em cache os designs de formulário, os fragmentos e as imagens. Saiba como configurar o cache para saída.
+seo-description: O serviço de Saída armazena em cache os designs de formulário, os fragmentos e as imagens. Saiba como configurar o cache para saída.
 uuid: 00bffeb5-c9c4-4a46-98b5-e14ec9f4514e
 contentOwner: admin
 content-type: reference
@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1462'
+ht-degree: 0%
 
 ---
 
 
-# Configuração do cache para saída {#configuring-caching-for-output}
+# Configuração do cache para saída  {#configuring-caching-for-output}
 
 O serviço de Saída mescla dados de formulário XML com um design de formulário criado no Designer para criar um fluxo de saída de documento em vários formatos.
 
@@ -23,28 +26,28 @@ A página Saída no console de administração contém configurações que contr
 
 O serviço de Saída armazena em cache os seguintes itens:
 
-* **** designs de formulário: O serviço de Saída armazena em cache os designs de formulário recuperados do repositório ou de fontes HTTP. Esse armazenamento em cache melhora o desempenho, pois para solicitações de renderização subsequentes, o serviço de Saída recupera o design de formulário do cache em vez de do repositório.
-* **** fragmentos e imagens: O serviço de Saída pode armazenar em cache fragmentos e imagens usados em designs de formulário. Quando o serviço de Saída armazena esses objetos em cache, melhora o desempenho, pois os fragmentos e as imagens são lidos somente do repositório na primeira solicitação.
+* **designs de formulário:** O serviço de Saída armazena em cache os designs de formulário recuperados do repositório ou de fontes HTTP. Esse armazenamento em cache melhora o desempenho, pois para solicitações de renderização subsequentes, o serviço de Saída recupera o design de formulário do cache em vez de do repositório.
+* **fragmentos e imagens:** O serviço de Saída pode armazenar em cache fragmentos e imagens usados em designs de formulário. Quando o serviço de Saída armazena esses objetos em cache, melhora o desempenho, pois os fragmentos e as imagens são lidos somente do repositório na primeira solicitação.
 
 A Saída armazena o cache em dois locais:
 
-* **** na memória: Os itens são armazenados na memória para acesso rápido. O cache da memória tem um tamanho limitado e é excluído quando você reiniciar o servidor.
-* **** no disco: Os itens são armazenados no sistema de arquivos do servidor. O cache de disco tem uma capacidade maior do que o cache na memória e é retido quando você reinicia o servidor. O local do cache de disco depende do servidor de aplicativos. Para obter informações sobre como alterar o local do cache de disco, consulte [Especificar locais de arquivo para Saída](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
+* **na memória:** Os itens são armazenados na memória para acesso rápido. O cache da memória tem um tamanho limitado e é excluído quando você reiniciar o servidor.
+* **no disco:** Os itens são armazenados no sistema de arquivos do servidor. O cache de disco tem uma capacidade maior do que o cache na memória e é retido quando você reinicia o servidor. O local do cache de disco depende do servidor de aplicativos. Para obter informações sobre como alterar o local do cache de disco, consulte [Especificar locais de arquivo para Saída](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
 
 ## Especificação do modo de cache {#specifying-the-cache-mode}
 
-A saída suporta dois modos de cache:
+A saída suporta dois modos de armazenamento em cache:
 
 * incondicional
 * usando o ponto de verificação do cache
 
-Se você alternar entre os modos de cache, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formulários AEM para obter instruções.
+Se você alternar entre os modos de cache, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Start ou pare os serviços associados aos módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formulários AEM para obter instruções.
 
 A hora do ponto de verificação do cache é redefinida automaticamente quando você alterna entre os modos.
 
 ### Uso de cache incondicional {#using-unconditional-caching}
 
-Nesse modo, quando o serviço de Saída recebe uma solicitação, valida os recursos (design de formulário e quaisquer ativos relacionados, como fragmentos e imagens) necessários. O serviço de Saída compara o carimbo de data e hora dos recursos no repositório ao carimbo de data e hora dos recursos no cache. Se o recurso no cache for mais antigo, o serviço de Saída o atualizará.
+Nesse modo, quando o serviço de Saída recebe uma solicitação, ele valida os recursos (design de formulário e quaisquer ativos relacionados, como fragmentos e imagens) necessários. O serviço de Saída compara o carimbo de data e hora dos recursos no repositório ao carimbo de data e hora dos recursos no cache. Se o recurso no cache for mais antigo, o serviço de Saída o atualizará.
 
 Esse modo de cache garante que os recursos mais recentes sejam usados. No entanto, o desempenho é afetado porque o serviço de Saída valida os itens em cache em relação ao repositório com cada solicitação. Esse modo de cache é adequado para ambientes de desenvolvimento e armazenamento temporário nos quais os recursos são atualizados com frequência e o desempenho não é uma preocupação principal.
 
@@ -78,7 +81,7 @@ Você pode limpar o conteúdo do cache a qualquer momento. Após uma redefiniç�
 
 ## Definição das configurações de cache {#configuring-cache-settings}
 
-Você pode especificar configurações que o Output usa para armazenamento em cache, o que pode otimizar o desempenho do ambiente de formulários do AEM.
+Você pode especificar configurações que o Output usa para armazenamento em cache, o que pode otimizar o desempenho do seu ambiente de formulários AEM.
 
 Para acessar essas configurações, no console de administração, clique em Serviços > saída.
 
@@ -88,23 +91,23 @@ Para acessar essas configurações, no console de administração, clique em Ser
 
 ### Especificação de configurações de cache global {#specifying-global-cache-settings}
 
-As configurações na área Configurações **de cache** global afetam todos os tipos de caches. Se você alterar qualquer uma dessas configurações, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formulários AEM para obter instruções.
+As configurações na área Configurações **de cache** global afetam todos os tipos de caches. Se você alterar qualquer uma dessas configurações, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Start ou pare os serviços associados aos módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formulários AEM para obter instruções.
 
-**** Tamanho máx. do documento do cache (KB): O tamanho máximo, em quilobytes, de um design de formulário ou de outro recurso que pode ser armazenado em qualquer cache de memória. Esta é uma configuração global que se aplica a todos os caches de memória. Se o recurso for maior que esse valor, ele não será armazenado em cache na memória. O valor padrão é 1024 kilobytes. Essa configuração não afeta o cache de disco.
+**Tamanho máximo do Documento do cache (KB):** O tamanho máximo, em quilobytes, de um design de formulário ou de outro recurso que pode ser armazenado em qualquer cache de memória. Esta é uma configuração global que se aplica a todos os caches de memória. Se o recurso for maior que esse valor, ele não será armazenado em cache na memória. O valor padrão é 1024 kilobytes. Essa configuração não afeta o cache de disco.
 
-**** Cache de renderização de formulário ativado: Por padrão, essa opção é selecionada, o que significa que os formulários renderizados são armazenados em cache para recuperação subsequente. Essa configuração tem pouco efeito no desempenho do serviço de Saída porque não armazena em cache documentos não interativos. Essa opção tem efeito quando você usa o serviço de Saída para documentos não interativos renderizados no cliente.
+**Cache de renderização de formulário ativado:** Por padrão, essa opção é selecionada, o que significa que os formulários renderizados são armazenados em cache para recuperação subsequente. Essa configuração tem pouco efeito no desempenho do serviço de Saída porque não armazena documentos não interativos em cache. Essa opção tem efeito quando você usa o serviço de Saída para documentos não interativos renderizados no cliente.
 
 ### Como armazenar designs de formulário {#caching-form-designs}
 
 Quando o serviço de Saída recebe uma solicitação de renderização, ele recupera o design de formulário do repositório ou de uma fonte HTTP e o armazena em cache. Esse armazenamento em cache melhora o desempenho, pois para solicitações de renderização subsequentes, o serviço de Saída recupera o design de formulário do cache em vez de do repositório.
 
-O serviço de Saída sempre armazena em cache designs de formulário em disco. Se os designs de formulário forem armazenados no servidor, esses arquivos serão considerados cache de disco. O serviço de Saída também armazena em cache designs de formulário na memória, de acordo com a configuração na área **Em cache** de modelo de memória. Se você alterar qualquer uma dessas configurações, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formulários AEM para obter instruções.
+O serviço de Saída sempre armazena em cache designs de formulário em disco. Se os designs de formulário forem armazenados no servidor, esses arquivos serão considerados cache de disco. O serviço de Saída também armazena em cache os designs de formulário na memória, de acordo com a configuração na área **Em cache** de modelo de memória. Se você alterar qualquer uma dessas configurações, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte [Start ou pare os serviços associados aos módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formulários AEM para obter instruções.
 
-**** Tamanho do Cache de Configuração do Modelo: O número máximo de objetos de configuração de modelo a serem mantidos na memória. O valor padrão é 100. É recomendável definir esse valor maior ou igual ao valor Tamanho do Cache de Modelo. Essa configuração não afeta o cache de disco.
+**Tamanho do Cache de Configuração do Modelo:** O número máximo de objetos de configuração de modelo a serem mantidos na memória. O valor padrão é 100. É recomendável definir esse valor maior ou igual ao valor Tamanho do Cache de Modelo. Essa configuração não afeta o cache de disco.
 
-**** Tamanho do Cache do Modelo: O número máximo de objetos de conteúdo de modelo a serem mantidos na memória. O valor padrão é 100. Essa configuração não afeta o cache de disco.
+**Tamanho do Cache do Modelo:** O número máximo de objetos de conteúdo de modelo a serem mantidos na memória. O valor padrão é 100. Essa configuração não afeta o cache de disco.
 
-**** Ativado: Por padrão, essa caixa de seleção é selecionada, o que significa que os modelos de formulário são armazenados em cache na memória. Quando essa opção não está selecionada, os modelos de formulário são armazenados em cache somente em disco.
+**Ativado:** Por padrão, essa caixa de seleção é selecionada, o que significa que os modelos de formulário são armazenados em cache na memória. Quando essa opção não está selecionada, os modelos de formulário são armazenados em cache somente em disco.
 
 ### Como armazenar fragmentos e imagens em cache {#caching-fragments-and-images}
 
@@ -114,17 +117,17 @@ Você pode usar as seguintes configurações para controlar o armazenamento em c
 
 **Cache** de recursos Selecione uma das seguintes opções na lista:
 
-**** Ativado para fragmentos e imagens: O serviço de Saída armazena em cache fragmentos e imagens. Esta é a opção padrão.
+**Ativado para fragmentos e imagens:** O serviço de Saída armazena em cache fragmentos e imagens. Esta é a opção padrão.
 
-**** Ativado para fragmentos: O serviço de Saída armazena em cache fragmentos, mas não imagens.
+**Ativado para fragmentos:** O serviço de Saída armazena em cache fragmentos, mas não imagens.
 
-**** Desativado: O serviço de Saída não armazena em cache fragmentos ou imagens.
+**Desativado:** O serviço de Saída não armazena em cache fragmentos ou imagens.
 
-**** Intervalo de limpeza (segundos): Especifica com que frequência o serviço de Saída remove arquivos de cache antigos inválidos. O serviço de Saída não remove arquivos de cache válidos. Se você alterar o intervalo de limpeza, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte Iniciar ou parar os serviços associados aos módulos de formulários AEM para obter instruções.
+**Intervalo de limpeza (segundos):** Especifica com que frequência o serviço de Saída remove arquivos de cache antigos inválidos. O serviço de Saída não remove arquivos de cache válidos. Se você alterar o intervalo de limpeza, reinicie o serviço de Saída para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte Start ou pare os serviços associados aos módulos de formulários AEM para obter instruções.
 
 ## Considerações de cluster para caches {#clustering-considerations-for-caches}
 
-Em um ambiente clusterizado, cada nó mantém seu próprio cache em memória e disco. O conteúdo do cache em cada nó depende de quais formulários foram renderizados nesse nó.
+Em um ambiente clusterizado, cada nó mantém seu próprio cache na memória e no disco. O conteúdo do cache em cada nó depende de quais formulários foram renderizados nesse nó.
 
 O local do cache deve ser idêntico (mesmo disco e caminho) em cada nó do cluster. Não coloque o cache no armazenamento compartilhado.
 
