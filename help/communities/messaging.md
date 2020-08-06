@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-O recurso de mensagens para AEM Communities fornece a capacidade de visitantes (membros) de sites conectados enviarem mensagens para outros que sejam acessíveis quando conectados ao site.
+O recurso de mensagens para o AEM Communities fornece a capacidade de visitantes de sites conectados (membros) enviarem mensagens entre si que podem ser acessadas quando conectados ao site.
 
 As mensagens são ativadas para um site da comunidade marcando uma caixa durante a criação [do site da](sites-console.md)comunidade.
 
