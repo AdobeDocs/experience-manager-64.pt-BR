@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '1923'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 ## O que é o Dia Difícil 2 {#what-is-tough-day}
 
-O Dia 2 difícil é um aplicativo que permite que você teste os limites da sua instância do AEM. Pode ser executado fora da caixa com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir a [esta gravação](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) para uma apresentação do aplicativo.
+O Dia 2 difícil é um aplicativo que permite que você teste os limites da sua instância AEM. Pode ser executado fora da caixa com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir a [esta gravação](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) para uma apresentação do aplicativo.
 
 ## Como executar o Dia 2 difícil {#how-to-run-tough-day}
 
-Baixe a versão mais recente do Dia 2 difícil do Repositório [da](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/)Adobe. Depois de baixar o aplicativo, você pode executá-lo fora da caixa fornecendo o `host` parâmetro. No exemplo a seguir, a instância do AEM é executada localmente para que o `localhost` valor seja usado:
+Baixe a versão mais recente do Dia 2 difícil do Repositório do [Adobe](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Depois de baixar o aplicativo, você pode executá-lo fora da caixa fornecendo o `host` parâmetro. No exemplo a seguir, a instância AEM é executada localmente para que o `localhost` valor seja usado:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -33,7 +36,7 @@ O conjunto padrão que é executado após a adição dos parâmetros é nomeado 
 
 * Criar páginas e cópias ao vivo para elas (incluindo rolluts)
 * Obter página inicial
-* Executar consultas no querybuilder
+* Executar query no querybuilder
 * Criar hierarquias de ativos
 * Excluir ativos
 
@@ -54,7 +57,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 ### Obter ajuda {#getting-help}
 
-O Dia 2 difícil oferece uma grande variedade de opções de ajuda que podem ser acessadas da linha de comando. Por exemplo:
+O Dia 2 difícil oferta uma grande variedade de opções de ajuda que podem ser acessadas da linha de comando. Por exemplo:
 
 ```xml
 java -jar toughday2.jar --help_full
@@ -114,7 +117,7 @@ Na tabela abaixo, você pode encontrar os parâmetros de ajuda relevantes.
 
 ### Parâmetros globais {#global-parameters}
 
-O Dia 2 difícil oferece parâmetros globais que definem ou alteram o ambiente para os testes. Eles incluem o host alvo, o número da porta, o protocolo usado, o usuário e a senha da instância e muito mais. Por exemplo:
+Dia 2 difícil oferta parâmetros globais que definem ou alteram o ambiente para os testes. Eles incluem o host alvo, o número da porta, o protocolo usado, o usuário e a senha da instância e muito mais. Por exemplo:
 
 ```xml
 java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true 
@@ -124,7 +127,7 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 
 | **Parâmetro** | **Descrição** | **Valor padrão** | **Valores possíveis** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Instala ou ignora o pacote de conteúdo padrão do Dia difícil 2. | verdadeiro |  true ou false |
+| `--installsamplecontent=<Val>` | Instala ou ignora o pacote de conteúdo padrão do Dia difícil 2. | verdadeiro | true ou false |
 | `--protocol=<Val>` | O protocolo usado para o host. | http | http ou https |
 | `--host=<Val>` | O nome do host ou IP que será direcionado. |  |  |
 | `--port=<Val>` | A porta do host. | 4502 |  |
@@ -132,11 +135,11 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 | `--password=<Val>` | Senha para o usuário em questão. | admin |  |
 | `--duration=<Val>` | A duração dos testes. Pode ser expresso em (**s**)segundos, (**m**)minutos, (**h**)horas e (**d**)dias. | 1d |  |
 | `--timeout=<Val>` | Quanto tempo um teste será executado antes de ser interrompido e marcado como reprovado. Expresso em segundos. | 180 |  |
-| `--suite=<Val>` | O valor pode ser uma ou uma lista (separada por vírgulas) de conjuntos de testes predefinidos. | dia difícil |  |
+| `--suite=<Val>` | O valor pode ser uma ou uma lista (separadas por vírgulas) de conjuntos de testes predefinidos. | dia difícil |  |
 | `--configfile=<Val>` | O arquivo de configuração de email de destino. |  |  |
 | `--contextpath=<Val>` | Caminho de contexto da instância. |  |  |
 | `--loglevel=<Val>` | O nível de log do mecanismo do Dia 2 Difícil. | INFO | TUDO, DEPURAR, INFORMAÇÕES, AVISO, ERRO, FATAL, DESLIGADO |
-| `--dryrun=<Val>` | Se verdadeiro, imprime a configuração resultante e não executa nenhum teste. | falso |  true ou false |
+| `--dryrun=<Val>` | Se verdadeiro, imprime a configuração resultante e não executa nenhum teste. | falso | true ou false |
 
 ## Personalização {#customizing}
 
@@ -163,7 +166,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Adicionando várias instâncias do mesmo teste {#adding-multiple-instances-of-the-same-test}
+### Adicionando várias instâncias do mesmo teste  {#adding-multiple-instances-of-the-same-test}
 
 Você também pode adicionar e executar várias instâncias do mesmo teste, mas cada instância deve ter um nome exclusivo. Os exemplos abaixo mostram como adicionar duas instâncias do mesmo teste usando parâmetros de linha de comando ou um arquivo de configuração de vídeo.
 
@@ -280,7 +283,7 @@ tests:
 
 ### Modos de execução {#run-modes}
 
-O Dia 2 difícil pode ser executado em um dos seguintes modos: carga **normal** e **constante**.
+O Dia 2 difícil pode ser executado em um dos seguintes modos: **carga normal** e **constante**.
 
 O modo de execução **normal** tem dois parâmetros:
 
@@ -307,9 +310,9 @@ O modo de execução de carga **** constante difere do modo de execução normal
 
 ### Seleção de teste {#test-selection}
 
-O processo de seleção de teste é o mesmo para ambos os modos de execução e é assim: todos os testes têm uma `weight` propriedade, que determina a probabilidade de execução em um thread. Por exemplo, se tivermos dois testes, um com peso de 5 e outro com peso de 10, o último é duas vezes mais provável de ser executado do que o primeiro.
+O processo de seleção de teste é o mesmo para ambos os modos de execução e é assim: todos os testes têm uma `weight` propriedade, que determina a probabilidade de execução em um thread. Por exemplo, se tivermos dois testes, um com um peso de 5 e outro com um peso de 10, o último é duas vezes mais provável de ser executado do que o primeiro.
 
-Além disso, os testes podem ter uma `count` propriedade, o que limita o número de execuções a um determinado número. Após esse número ser aprovado, nenhuma execução adicional do teste ocorrerá. Todas as instâncias de teste que já estão em execução concluirão a execução como configurado. O exemplo a seguir mostra como adicionar esses parâmetros na linha de comando ou usando um arquivo de configuração de modelo.
+Além disso, os testes podem ter uma `count` propriedade, o que limita o número de execuções a um determinado número. Após esse número ser aprovado, nenhuma execução adicional do teste ocorrerá. Todas as instâncias de teste que já estão em execução concluirão a execução como configurada. O exemplo a seguir mostra como adicionar esses parâmetros na linha de comando ou usando um arquivo de configuração de modelo.
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20 
@@ -346,7 +349,7 @@ O Dia 2 difícil gera métricas de teste e registros. Para obter mais detalhes, 
 
 ### Testar métricas {#test-metrics}
 
-O Dia 2 difícil atualmente relata 9 métricas de teste que você pode avaliar. **Métricas com o**&amp;ast; são reportados somente após execuções bem-sucedidas:
+O Dia 2 difícil atualmente relata 9 métricas de teste que você pode avaliar. Métricas com o **&amp;ast;** são reportados somente após execuções bem-sucedidas:
 
 | **Nome** | **Descrição** |
 |---|---|
@@ -357,7 +360,7 @@ O Dia 2 difícil atualmente relata 9 métricas de teste que você pode avaliar. 
 | Máx&amp;ast; | A maior duração da execução do teste. |
 | Median&amp;ast; | Duração mediana calculada de todas as execuções de teste. |
 | Méd&amp;ast; | Duração média calculada de todas as execuções de teste. |
-| StdDev&amp;ast; | O desvio padrão. |
+| Std&amp;Dev&amp;ast; | O desvio padrão. |
 | 90p&amp;ast; | 90%. |
 | 99p&amp;ast; | 99%. |
 | 99,9 p&amp;ast; | 99,9 percentil. |
@@ -373,7 +376,7 @@ Por padrão, ambos os editores estão habilitados.
 Além disso, há dois modos nos quais as métricas são reportadas:
 
 * O modo de publicação **simples** - relata os resultados do início da execução até o ponto de publicação.
-* O modo de publicação de **intervalos** - relata os resultados em um determinado período. Você pode definir o período com o parâmetro de modo de publicação de **intervalo** .
+* O modo de publicação de **intervalos** - relata os resultados em um determinado intervalo de tempo. Você pode definir o período com o parâmetro de modo de publicação de **intervalo** .
 
 O exemplo a seguir mostra como configurar o `intervals` parâmetro na linha de comando ou usando um arquivo de configuração de modelo.
 
