@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 O console Modelos de grupo é muito semelhante ao console Modelos [de](sites.md) site. Ambos são blueprints para um conjunto de páginas e recursos pré-conectados que formam um site da comunidade. A diferença é que um modelo de site é para a comunidade principal e um modelo de grupo é para um grupo da comunidade, uma subcomunidade aninhada na comunidade principal.
 
-Um grupo da comunidade é incorporado a um modelo de site incluindo a função [](functions.md#groups-function) Grupos (que pode não ser a primeira nem apenas a função no modelo).
+Um grupo da comunidade é incorporado a um modelo de site, incluindo a função [](functions.md#groups-function) Grupos (que pode não ser a primeira nem apenas a função no modelo).
 
 No pacote de [recursos de Comunidades 1](deploy-communities.md#latestfeaturepack), é possível aninhar grupos incluindo a função Grupos em um modelo de grupo.
 
@@ -43,7 +46,7 @@ Este console exibe os modelos a partir dos quais um site [da](sites-console.md) 
 
 Para começar a criar um novo modelo de grupo, selecione **[!UICONTROL Criar]**
 
-Isso exibirá o painel Editor de sites, que contém três subpainéis:
+Isso exibirá o painel do Editor de sites, que contém três subpainéis:
 
 ### Informações básicas {#basic-info}
 
@@ -67,7 +70,7 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
 >[!CAUTION]
 >
->Se estiver trabalhando com o AEM 6.1 Communities FP4 ou anterior, não adicione uma função de grupo a um modelo de grupo.
+>Se estiver trabalhando com AEM 6.1 Communities FP4 ou anterior, não adicione uma função de grupos a um modelo de grupo.
 >
 >O recurso de grupos aninhados está disponível a partir do [FP1](communities.md#latestfeaturepack)das Comunidades.
 >
