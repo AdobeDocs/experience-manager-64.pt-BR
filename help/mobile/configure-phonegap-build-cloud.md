@@ -1,6 +1,6 @@
 ---
-title: Configurar o serviço Adobe PhoneGap Build Cloud
-seo-title: Configurar o serviço Adobe PhoneGap Build Cloud
+title: Configure seu Cloud Service Adobe PhoneGap Build
+seo-title: Configure seu Cloud Service Adobe PhoneGap Build
 description: Siga esta página para configurar os serviços em nuvem e criar seu aplicativo com a criação do PhoneGap.
 seo-description: Siga esta página para configurar os serviços em nuvem e criar seu aplicativo com a criação do PhoneGap.
 uuid: 59aa99c3-1425-4cc5-9839-a57a6a545d45
@@ -11,45 +11,48 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '698'
+ht-degree: 0%
 
 ---
 
 
-# Configurar o serviço Adobe PhoneGap Build Cloud {#configure-your-adobe-phonegap-build-cloud-service}
+# Configure seu Cloud Service Adobe PhoneGap Build {#configure-your-adobe-phonegap-build-cloud-service}
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O bloco **PhoneGap Build no painel** do aplicativo fornece a capacidade de criar e distribuir seu aplicativo PhoneGap para dispositivos móveis por meio do Adobe PhoneGap Build Service.
+O mosaico **do** PhoneGap Build no painel do aplicativo fornece a capacidade de criar e distribuir seu aplicativo móvel PhoneGap pelo Serviço Adobe PhoneGap Build.
 
-Todas as plataformas compatíveis definidas no bloco **Gerenciar aplicativos** serão criadas com o PhoneGap Build ao enviar uma compilação remota com o bloco **PhoneGap Build** .
+Todas as plataformas compatíveis definidas no bloco **Gerenciar aplicativos** serão construídas com o PhoneGap Build ao enviar uma compilação remota com o bloco **PhoneGap Build** .
 
 Você pode enviar uma compilação remota para [https://build.phonegap.com](https://build.phonegap.com) ou baixar a fonte para criar localmente com a CLI [PhoneGap](https://docs.phonegap.com/references/phonegap-cli/).
 
-![Mosaico do PhoneGap Build](assets/chlimage_1-60.png)
+![PhoneGap Build](assets/chlimage_1-60.png)
 
-## Configuração do serviço em nuvem {#configuring-the-cloud-service}
+## Configuração do Cloud Service {#configuring-the-cloud-service}
 
-Para aproveitar as vantagens do PhoneGap Build, é necessário configurar o serviço da AEM PhoneGap Build Cloud com suas informações de conta do PhoneGap Build.
+Para aproveitar melhor o PhoneGap Build, é necessário configurar o Cloud Service de PhoneGap Build de AEM com as informações da conta de PhoneGap Build.
 
-Se você não tiver uma conta no momento, navegue até [https://build.phonegap.com](https://build.phonegap.com) e inscreva-se! Se você tiver uma associação à Adobe Creative Cloud, poderá ter suporte para até 25 aplicativos privados (aplicativos de origem não abertos).
+Se você não tiver uma conta no momento, navegue até [https://build.phonegap.com](https://build.phonegap.com) e inscreva-se! Se você tiver uma associação ao Adobe Creative Cloud, poderá ter suporte para até 25 aplicativos privados (aplicativos de origem não abertos).
 
-Depois de verificar se a conta do PhoneGap Build está ativa, navegue até o console de gerenciamento da AEM Cloud, especificamente o serviço [da](http://localhost:4502/etc/cloudservices/phonegap-build.html) PhoneGap Build Cloud (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Depois de verificar se sua conta de PhoneGap Build está ativa, navegue até seu AEM Cloud Management Console, especificamente o Cloud Service [de](http://localhost:4502/etc/cloudservices/phonegap-build.html) PhoneGap Build (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-Use o bloco **Gerenciar serviços** em nuvem para configurar uma nova configuração de serviço em nuvem.
+Use o bloco **Gerenciar Cloud Services** para configurar uma nova configuração de serviço de nuvem.
 
-### Uso do mosaico Gerenciar serviços em nuvem {#using-manage-cloud-services-tile}
+### Uso do bloco Gerenciar Cloud Services {#using-manage-cloud-services-tile}
 
-Antes de começar a criar seu aplicativo usando o bloco **PhoneGap Build** , você deve configurar seus serviços em nuvem usando o bloco **Gerenciar serviços** em nuvem do painel do AEM Mobile.
+Antes de começar a criar seu aplicativo usando o bloco **PhoneGap Build** , você deve configurar seus serviços em nuvem usando o bloco **Gerenciar Cloud Services** do painel AEM Mobile.
 
 Para configurar serviços em nuvem para seu aplicativo, siga as etapas abaixo:
 
-1. Clique no canto superior direito do bloco **Gerenciar serviços** em nuvem.
+1. Clique no canto superior direito do bloco **Gerenciar Cloud Services** .
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. Escolha a opção **PhoneGap Build** na tela **Adicionar ou Editar serviço** em nuvem.
+1. Escolha a opção **PhoneGap Build** na tela **Adicionar ou Editar Cloud Service** .
 
    Clique em **Avançar**.
 
@@ -57,11 +60,11 @@ Para configurar serviços em nuvem para seu aplicativo, siga as etapas abaixo:
 
 1. Insira suas credenciais para criar uma nova configuração de nuvem.
 
-   Depois de verificado, clique em **Enviar**. Essa configuração da nuvem configurada agora é exibida no bloco **Gerenciar serviços** da nuvem.
+   Depois de verificado, clique em **Enviar**. Essa configuração da nuvem configurada agora é exibida no bloco **Gerenciar Cloud Services** .
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
-### Criação de seu aplicativo com o PhoneGap Build {#building-your-application-with-phonegap-build}
+### Criação de seu aplicativo com PhoneGap Build {#building-your-application-with-phonegap-build}
 
 Depois de configurar os serviços em nuvem, você pode criar seu aplicativo com o bloco **PhoneGap Build** . Clique no canto superior direito para escolher entre as opções **Criar remoto** ou **Baixar origem** .
 
@@ -77,7 +80,7 @@ Para invocar uma compilação remota com o Adobe PhoneGap Build, clique em **Cri
 
 O PhoneGap fornece uma interface de linha de comando para criar seu aplicativo localmente.
 
-Compile o aplicativo PhoneGap em seu computador usando a CLI (Command Line Interface, interface de linha de comando) do PhoneGap. Para incluir o conteúdo do AEM em seu aplicativo, o AEM cria um arquivo ZIP que contém o conteúdo de seu aplicativo móvel, configurações de Sincronização de conteúdo e outros ativos necessários. Baixe o arquivo ZIP e inclua-o na sua compilação.
+Compile o aplicativo PhoneGap em seu computador usando a CLI (Command Line Interface, interface de linha de comando) do PhoneGap. Para incluir o conteúdo AEM em seu aplicativo, AEM cria um arquivo ZIP que contém o conteúdo de seu aplicativo móvel, configurações de Sincronização de conteúdo e outros ativos necessários. Baixe o arquivo ZIP e inclua-o na sua compilação.
 
 Para aproveitar a interface de linha de comando do PhoneGap, é necessário configurar o ambiente local para incluir:
 
@@ -98,12 +101,12 @@ phonegap run ios (or android, ...)
 >
 >adicione —emule ao final desta linha se você não quiser executá-la em seu dispositivo conectado.
 
-Depois de verificar se o procedimento acima funciona, use o título **PhoneGap Build** para **baixar a fonte**. Salve e descompacte o arquivo no sistema local. Uma vez feito:
+Depois de verificar se as opções acima funcionam, use o **PhoneGap Build** Tile para **Baixar a fonte**. Salve e descompacte o arquivo no sistema local. Uma vez feito:
 
 * navegar até o arquivo salvo (pasta)
 * executar &#39;phonegap run ios&#39; (ou android etc)
 
-### Additional Resources {#additional-resources}
+### Recursos adicionais {#additional-resources}
 
 Para saber mais sobre as funções e responsabilidades de um autor e desenvolvedor, consulte os recursos abaixo:
 
