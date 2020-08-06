@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 0%
 
 ---
 
@@ -19,21 +22,21 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 Este documento descreve o que você precisa saber para planejar seu teste. Além disso, você deve responder a essas perguntas antes de realizar seus testes:
 
-* [Quais ambientes de teste serão necessários?](/help/sites-developing/test-environments.md)
+* [Quais Ambientes de teste serão necessários?](/help/sites-developing/test-environments.md)
 * [Definição dos casos de teste](/help/sites-developing/test-cases.md)
 * [Teste - quando e com quem?](/help/sites-developing/when-who.md)
 
 ## Antes de começar {#before-you-start}
 
-Antes de começar com a análise real e a definição dos testes, consulte as seguintes informações:
+Antes de start com a análise real e a definição dos testes, consulte as seguintes informações:
 
-**Arquitetura** do AEM - consulte Conceitos básicos para se apresentar à arquitetura e aos princípios básicos do AEM.
+**Arquitetura** AEM - Consulte Conceitos básicos para se apresentar à arquitetura e aos princípios básicos da AEM.
 
 **Documentação** - Consulte qualquer uma das seções de documentação ou os artigos &quot;Como&quot; para obter mais informações.
 
 **Princípios básicos de teste** - Você deve estar ciente dos princípios básicos de teste de software e controle de qualidade. De preferência, você deve ter experiência em projetos de teste.
 
-Há muitos sítios web, livros e cursos que tratam desses princípios e, por isso, não serão tratados em pormenor neste documento.
+Há muitos websites, livros e cursos que tratam desses princípios e, portanto, não serão tratados em detalhes neste documento.
 
 **Pressupostos para evitar** - A maior suposição (feita regularmente) é que seu site da Web precisará atender a milhões de solicitações todos os dias. Em determinadas circunstâncias, isso pode ser verdade, mas não pode ser assumido.
 
@@ -43,17 +46,17 @@ Embora os números futuros não possam ser previstos com 100% de precisão, a ob
 
 Cabe ao gestor do projeto decidir e iniciar ações em função dos resultados.
 
-**Envolver** -se - Embora seja da responsabilidade do Gerente de projetos garantir que todas as partes estejam plenamente envolvidas em qualquer reunião (status, workshops, etc.), você também deve tentar se envolver o mais cedo possível no ciclo do projeto, incluindo os processos de coleta de informações e análise de requisitos.
+**Envolver** -se - Embora seja da responsabilidade do Gerente de projetos garantir que todas as partes estejam plenamente envolvidas em qualquer reunião (status, workshops, etc.), você também deve tentar se envolver o mais cedo possível no ciclo do projeto, incluindo os processos de coleta de informações e análise obrigatória.
 
-**Envolver o cliente** - em um tema semelhante, tente envolver o cliente (quando possível) ao definir seus casos de teste e seu plano.
+**Envolver o cliente** - em um tema semelhante, tente envolver o cliente (sempre que possível) ao definir seus casos de teste e seu plano.
 
 ## Tipos de testes {#types-of-tests}
 
-Há várias classificações padrão de testes que são apropriadas para uso ao testar um projeto do AEM. Familiarize-se com estes itens para decidir qual usará:
+Existem várias classificações padrão de testes que são apropriadas para uso ao testar um projeto AEM. Familiarize-se com estes itens para decidir qual usará:
 
 >[!NOTE]
 >
->Estes estão listados na ordem cronológica de aplicação.
+>Estes estão listados por ordem cronológica de aplicação.
 
 **Testes** de unidades - Testes (geralmente) feitos pela equipe de desenvolvimento para garantir que os elementos individuais se comportem corretamente - embora isoladamente.
 
@@ -69,23 +72,23 @@ Os ensaios em caixa preta são testes funcionais de uma unidade completa / compo
 
 Eles testam a funcionalidade com base em caixa preta.
 
-**Testes** de desempenho - Os testes de desempenho são fundamentais para testar o AEM.
+**Testes** de desempenho - Os testes de desempenho são cruciais ao testar AEM.
 
 Eles são usados para ilustrar o desempenho em condições diferentes:
 
 * Normal
 
-   Condições que o site vai experimentar por 90% das vezes. Por exemplo, quando apenas uma proporção dos autores está usando o sistema.
+   Condições que o site experimentará por, digamos, 90% das vezes. Por exemplo, quando apenas uma proporção dos autores está usando o sistema.
 
 * Pico
 
-   Condições que serão sentidas durante um período de tempo proporcionalmente curto devido a circunstâncias especiais; por exemplo, quando todos os autores usam o sistema simultaneamente ou quando novo conteúdo é publicado e um número maior de visitantes visualizam seu site.
+   Condições que serão sentidas durante um período de tempo proporcionalmente curto devido a circunstâncias especiais; por exemplo, quando todos os autores usam o sistema simultaneamente ou quando novo conteúdo é publicado e um número maior de visitantes visualização seu site.
 
 * Extreme
 
    Pode ser usado para emular a previsão de desempenho quando um novo conteúdo extremamente interessante é publicado em seu site. Então pode-se observar um pico extremo - embora isso nem sempre seja totalmente previsível.
 
-   Essas circunstâncias são observadas às vezes quando ingressos para eventos específicos são disponibilizados ou um site muito aguardado é publicado pela primeira vez.
+   Essas circunstâncias são observadas às vezes quando ingressos para eventos específicos são disponibilizados, ou um site muito aguardado é publicado pela primeira vez.
 
 Os resultados são então usados para ajustar o aplicativo.
 
@@ -95,20 +98,20 @@ Os resultados são então usados para ajustar o aplicativo.
 
 Os testes de regressão são são bons candidatos à automação (se possível) para garantir que possam ser repetidos rápida e consistentemente.
 
-**Testes** de aceitação - os Testes de aceitação são uma categoria especial, pois são usados para indicar a aceitação do projeto pelo cliente.
+**Testes** de aceitação - Os Testes de aceitação são uma categoria especial, pois são usados para indicar a aceitação do projeto pelo cliente.
 
-A lista de testes de aceitação pode conter uma combinação de testes das várias categorias acima e são selecionados para verificar se o projeto atende aos requisitos do cliente
+A lista dos testes de aceitação pode conter uma combinação de testes das várias categorias acima e são selecionados para verificar se o projeto atende aos requisitos do cliente
 
 Consulte [Aceitação e Logoff](/help/sites-developing/acceptance-signoff.md) para obter mais detalhes.
 
 ## Introdução {#getting-started}
 
-Antes de iniciar seus casos de teste e plano de teste detalhados, você pode:
+Antes de iniciar em seus casos de teste e plano de teste detalhados, você pode:
 
 **Defina as metas** - Defina suas metas de alto nível para agir como um ponto de partida para o ajuste fino à medida que o teste prossegue. Você desejará:
 
 * Teste a funcionalidade de acordo com a Especificação detalhada do requisito.
-* Teste o desempenho de acordo com as métricas [do](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics)Target.
+* Teste o desempenho de acordo com as métricas [do](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics)Público alvo.
 
 entre outros.
 
@@ -118,6 +121,6 @@ Estes valores fornecerão uma indicação do tráfego atual (volume e difusão) 
 
 **Coletar estatísticas de tráfego de sites** externos - Se possível, você pode tentar coletar estatísticas de tráfego de outros sites para comparação, mas esses números nem sempre são publicados.
 
-**Confirmar métricas** de meta - as métricas são usadas para definir medidas quantitativas para a qualidade do site, já que representam as metas de desempenho a serem alcançadas.
+**Confirmar métricas** de Público alvo - as métricas são usadas para definir medidas quantitativas para a qualidade do site, já que representam as metas de desempenho a serem alcançadas.
 
-Devem ser definidas no início do projeto, juntamente com o cliente. Consulte Métricas [do](/help/sites-developing/planning.md) Target para obter mais informações.
+Devem ser definidas no start do projeto, juntamente com o cliente. Consulte Métricas [de](/help/sites-developing/planning.md) Público alvo para obter mais informações.
