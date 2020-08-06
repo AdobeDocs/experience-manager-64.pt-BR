@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 17%
 
 ---
 
 
 # Componentes, funções e recursos básicos {#component-function-and-feature-essentials}
 
-Os recursos do AEM Communities exigem que os visitantes do site se tornem membros e façam logon no site [da](overview.md#communitiessites) comunidade antes de poderem publicar conteúdo. Assim, os modelos [de site da](sites.md)comunidade, a partir dos quais um site da comunidade é [criado](sites-console.md), são projetados para incluir um recurso de logon, bem como perfis de usuário, mensagens, pesquisa, moderação e tradução.
+Os recursos do AEM Communities exigem que os visitantes do site se tornem membros e façam logon no site [da](overview.md#communitiessites) comunidade antes de poderem publicar conteúdo. Assim, os modelos [de site da](sites.md)comunidade, a partir dos quais um site da comunidade é [criado](sites-console.md), são projetados para incluir um recurso de logon, bem como perfis do usuário, mensagens, pesquisa, moderação e tradução.
 
 Um site da comunidade oferecerá suporte aos membros que criam grupos da comunidade quando a função [de grupos da](functions.md#groups-function) comunidade for incluída no modelo de site da comunidade selecionada.
 
@@ -61,9 +64,9 @@ A seguir estão links para informações essenciais para componentes, funções 
 * [Pontuação e emblemas](configure-scoring.md)
 * [Pesquisar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Provedor](srp-and-ugc.md) de recursos de armazenamento `(SRP)`
+* [Provedor de recursos do Armazenamento](srp-and-ugc.md) `(SRP)`
 
-* [Marcação](tag.md)
+* [Marcação com tags](tag.md)
 
 ## Javadocs {#javadocs}
 
@@ -78,7 +81,7 @@ Para cada pacote [de](deploy-communities.md#latestfeaturepack)recursos, um jar j
 
    * [Personalizações do cliente](client-customize.md)
    * [Personalizações do servidor](server-customize.md)
-   * [Visão geral do provedor de recursos de armazenamento](srp.md)
+   * [Visão geral do provedor de recursos do Armazenamento](srp.md)
 
 * [Diretrizes de codificação](code-guide.md)
 * [Tutoriais](tutorials.md)
