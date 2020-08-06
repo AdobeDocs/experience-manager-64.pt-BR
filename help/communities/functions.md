@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '2542'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 O tipo de recursos esperados de uma experiência da comunidade são bem conhecidos. Os recursos da comunidade estão disponíveis como funções da comunidade. Basicamente, elas são uma ou mais páginas pré-conectadas para implementar um recurso da comunidade que requer mais do que simplesmente adicionar um componente a uma página no modo de autor. Eles são os elementos básicos usados para definir a estrutura de um modelo [de site da](sites.md) comunidade a partir do qual os sites da comunidade são [criados](sites-console.md).
 
-Depois que um site da comunidade é criado, o conteúdo pode ser adicionado às páginas resultantes usando o modo [de criação padrão do](../../help/sites-authoring/editing-content.md)AEM.
+Depois que um site da comunidade é criado, o conteúdo pode ser adicionado às páginas resultantes usando o modo [de criação padrão](../../help/sites-authoring/editing-content.md)AEM.
 
 Várias funções da comunidade estão imediatamente disponíveis, como visto no console de funções da comunidade. Mais funções da comunidade serão disponibilizadas em versões futuras e funções personalizadas também poderão ser criadas.
 
@@ -37,9 +40,9 @@ No ambiente do autor, para acessar o console de funções da comunidade
 
 ## Funções pré-criadas {#pre-built-functions}
 
-Veja a seguir uma breve descrição das funções fornecidas com o AEM Communities. Cada função é composta de uma ou mais páginas do AEM contendo componentes das Comunidades conectadas em um recurso que é facilmente incorporado a um modelo [de site da](sites.md)comunidade.
+Veja a seguir uma breve descrição das funções fornecidas com a AEM Communities. Cada função é composta de uma ou mais páginas AEM que contêm componentes Comunidades conectados em um recurso que é facilmente incorporado a um modelo [de site da](sites.md)comunidade.
 
-Um modelo de site da comunidade fornece a estrutura para um site da comunidade, incluindo logon, perfis de usuário, notificações, mensagens, menu do site, pesquisa, tema e recursos de marca.
+Um modelo de site da comunidade fornece a estrutura para um site da comunidade, incluindo logon, perfis do usuário, notificações, mensagens, menu do site, pesquisa, tema e recursos de marca.
 
 ### Configurações de título e URL {#title-and-url-settings}
 
@@ -51,9 +54,11 @@ Quando uma função da comunidade é adicionada a um modelo de site da comunidad
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
-* **[!UICONTROL Título]**(*obrigatório*) O texto que aparece no menu de recursos do site
+* **[!UICONTROL Título]**
+(
+*(obrigatório*) O texto que aparece no menu de recursos do site
 
-* **[!UICONTROL URL]**(*obrigatório*) O nome usado para gerar o URI. O nome deve estar em conformidade com as convenções [de](../../help/sites-developing/naming-conventions.md) nomenclatura impostas pelo AEM e JCR.
+* **[!UICONTROL URL]**(*obrigatório*) O nome usado para gerar o URI. O nome deve estar em conformidade com as convenções [de](../../help/sites-developing/naming-conventions.md) nomenclatura impostas pela AEM e pelo JCR.
 
 Por exemplo, usar o site criado a partir do acompanhamento do tutorial [Introdução](getting-started.md) , se
 
@@ -66,7 +71,7 @@ Em seguida, o URL da página é http://local_host:4503/content/sites/engage/en/p
 
 ### Função de fluxo de atividades {#activity-stream-function}
 
-A função de fluxo de atividade é uma página com um componente [de Fluxos de](activities.md) atividade com todas as exibições selecionadas (todas as atividades, atividades do usuário e seguintes). Consulte também [Activity Stream Essentials](essentials-activities.md) para desenvolvedores.
+A função de fluxo de atividade é uma página com um componente [de Fluxos de](activities.md) Atividade com todas as visualizações selecionadas (todas as atividades, atividades do usuário e seguintes). Consulte também [Atividade Stream Essentials](essentials-activities.md) para desenvolvedores.
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
@@ -75,11 +80,11 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 ![chlimage_1-382](assets/chlimage_1-382.png)
 
 * Consulte Configurações de [título e URL](#title-and-url-settings)
-* **[!UICONTROL Mostrar exibição]**&quot;Minhas atividades&quot; Se marcada, a página Atividades incluirá uma guia que filtra as atividades com base nas geradas na comunidade pelo membro atual. O padrão está marcado.
+* **[!UICONTROL Mostrar visualização]**&quot;Minhas Atividades&quot; Se marcada, a página Atividades incluirá uma guia que filtros atividades com base nas geradas na comunidade pelo membro atual. O padrão está marcado.
 
-* **[!UICONTROL Mostrar exibição]**&quot;Todas as atividades&quot; Se marcada, a página Atividades incluirá uma guia que inclui todas as atividades geradas na comunidade às quais o membro atual tem acesso. O padrão está marcado.
+* **[!UICONTROL Mostrar visualização]**&quot;Todas as Atividades&quot; Se marcada, a página do Atividade incluirá uma guia que inclui todas as atividades geradas na comunidade à qual o membro atual tem acesso. O padrão está marcado.
 
-* **[!UICONTROL Mostrar exibição]** do &quot;Feed de notícias&quot; Se marcada, a página Atividades incluirá uma guia que filtra as atividades com base nas atividades que o membro atual está seguindo. O padrão está marcado.
+* **[!UICONTROL Mostrar visualização]** do &quot;Feed de notícias&quot; Se marcada, a página do Atividade incluirá uma guia que filtros atividades com base nas  que o membro atual está seguindo. O padrão está marcado.
 
 ### Função das atribuições {#assignments-function}
 
@@ -115,7 +120,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 ![chlimage_1-384](assets/chlimage_1-384.png)
 
 * Consulte Configurações de [título e URL](#title-and-url-settings)
-* **[!UICONTROL Permitir fixação]** Se marcada, o fórum permitirá que as respostas dos tópicos sejam fixadas no início da lista de comentários. O padrão está marcado.
+* **[!UICONTROL Permitir fixação]** Se marcada, o fórum permitirá que as respostas dos tópicos sejam fixadas no início da lista dos comentários. O padrão está marcado.
 
 * **[!UICONTROL Permitir membros]** privilegiados Se marcada, o blog permitirá que membros privilegiados criem artigos apenas permitindo a seleção de um grupo [de membros](users.md#privileged-members-group)privilegiados. Se não estiver marcada, todos os membros da comunidade poderão criar. O padrão está desmarcado.
 
@@ -131,16 +136,16 @@ A função de catálogo fornece a capacidade de [ativar membros da comunidade](o
 
 Todos os recursos de ativação e caminhos de aprendizado do site da comunidade serão exibidos em todos os catálogos se sua propriedade ` [Show in Catalog](resources.md)`, estiver definida como true. Para incluir explicitamente recursos e caminhos de aprendizado, é necessário aplicar um [pré-filtro](catalog-developer-essentials.md#pre-filters) ao catálogo.
 
-Quando adicionada a um modelo, a configuração permite especificar os namespaces de tags usados para configurar o filtro de tags apresentado aos visitantes do site:
+Quando adicionada a um modelo, a configuração permite especificar namespaces de tags usadas para configurar o filtro de tags apresentado aos visitantes do site:
 
 ![catalogfunc](assets/catalogfunc.png)
 
 * Consulte Configurações de [título e URL](#title-and-url-settings)
 * **[!UICONTROL Selecionar todos os namespaces]**
 
-   * Os namespaces de tags selecionados definem quais tags podem ser selecionadas pelos visitantes para filtrar a lista de recursos de ativação listados no catálogo.
-   * Se marcada, todos os namespaces de tags permitidos para o site da comunidade estarão disponíveis.
-   * Se desmarcada, é possível selecionar um ou mais namespaces permitidos para o site da comunidade.
+   * As namespaces de tags selecionadas definem quais tags podem ser selecionadas por visitantes para filtrar a lista de recursos de ativação listados no catálogo.
+   * Se marcada, todas as namespaces de tags permitidas para o site da comunidade estarão disponíveis.
+   * Se desmarcada, é possível selecionar uma ou mais namespaces permitidas para o site da comunidade.
    * O padrão está marcado.
 
 ### Função de conteúdo em destaque {#featured-content-function}
@@ -168,7 +173,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
 * Consulte Configurações de [título e URL](#title-and-url-settings)
-* **[!UICONTROL Permitir fixação]** Se marcada, o fórum permitirá que as respostas dos tópicos sejam fixadas no início da lista de comentários. O padrão está marcado.
+* **[!UICONTROL Permitir fixação]** Se marcada, o fórum permitirá que as respostas dos tópicos sejam fixadas no início da lista dos comentários. O padrão está marcado.
 
 * **[!UICONTROL Permitir membros]** privilegiadosSe marcado, o fórum permitirá somente que membros privilegiados postem tópicos permitindo a seleção de um grupo [de membros](users.md#privileged-members-group)privilegiados. Se não estiver marcada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
@@ -192,7 +197,7 @@ Dependendo das [configurações](sites-console.md#groupmanagement) quando a fun�
 
 Quando um grupo da comunidade é criado, um grupo de membros é criado dinamicamente para o novo grupo, ao qual os membros podem ser atribuídos ou associados. Para obter mais informações, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
 
-No pacote de [recursos Comunidades 1](deploy-communities.md#latestfeaturepack), os grupos da comunidade são criados no ambiente do autor usando o console [Grupos do Sites](groups.md)das Comunidades e podem ser criados no ambiente de publicação quando ativados.
+No pacote de [recursos Comunidades 1](deploy-communities.md#latestfeaturepack), os grupos da comunidade são criados no ambiente do autor usando o console [Grupos dos Sites](groups.md)das Comunidades e podem ser criados no ambiente de publicação quando ativados.
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
@@ -203,7 +208,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 * **[!UICONTROL Permitir membros]** privilegiadosSe marcado, o fórum permitirá somente que membros privilegiados postem tópicos permitindo a seleção de um grupo [de segurança de membros](users.md#privileged-members-group)privilegiados. Se não estiver marcada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
-* **[!UICONTROL Permitir criação de publicação]** Se marcada, é possível que membros autorizados da comunidade criem um grupo no ambiente de publicação. Se estiver desmarcada, novos grupos (subcomunidades) só poderão ser criados no ambiente do autor a partir do console Grupos dos Sites das Comunidades.
+* **[!UICONTROL Permitir criação de publicação]** Se marcada, é possível que membros autorizados da comunidade criem um grupo no ambiente de publicação. Se estiver desmarcada, novos grupos (subcomunidades) só poderão ser criados no ambiente do autor a partir do console Grupos do Sites das Comunidades.
 
    O padrão é `checked`.
 
@@ -249,7 +254,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, que espec
 
 ### Função da página {#page-function}
 
-A função de página adiciona uma página em branco ao site da comunidade que é conectada aos recursos do site da comunidade: login, menu, notificações, mensagens, temas e marcas. O conteúdo pode ser adicionado à página usando o modo [de criação AEM](../../help/sites-authoring/editing-content.md)padrão.
+A função de página adiciona uma página em branco ao site da comunidade que é conectada aos recursos do site da comunidade: login, menu, notificações, mensagens, temas e marcas. O conteúdo pode ser adicionado à página usando o modo [de criação de AEM](../../help/sites-authoring/editing-content.md)padrão.
 
 Quando adicionada a um modelo, a única configuração é para as Configurações [de](#title-and-url-settings)Título e URL.
 
@@ -262,7 +267,7 @@ Quando adicionada a um modelo, a configuração permite a restrição para membr
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
 * Consulte Configurações de [título e URL](#title-and-url-settings)
-* **[!UICONTROL Permitir fixação]** Se marcada, o fórum permitirá que as respostas dos tópicos sejam fixadas no início da lista de comentários. O padrão está marcado.
+* **[!UICONTROL Permitir fixação]** Se marcada, o fórum permitirá que as respostas dos tópicos sejam fixadas no início da lista dos comentários. O padrão está marcado.
 
 * **[!UICONTROL Permitir membros]** privilegiados Se marcada, o fórum QnA permitirá somente que membros privilegiados postem perguntas permitindo a seleção de um grupo [de membros](users.md#privileged-members-group)privilegiados. Se não estiver marcada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
@@ -274,7 +279,7 @@ Quando adicionada a um modelo, a configuração permite a restrição para membr
 
 ## Criar função da comunidade {#create-community-function}
 
-A capacidade de criar uma função da comunidade é alcançada selecionando o `Create Community Function` ícone localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo Blueprint do AEM podem ser criadas e personalizadas exclusivamente ao abrir no modo de edição do autor.
+A capacidade de criar uma função da comunidade é alcançada selecionando o `Create Community Function` ícone localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo AEM Blueprint podem ser criadas e personalizadas exclusivamente ao abrir no modo de edição do autor.
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -294,9 +299,9 @@ No painel Nome da função da comunidade, um nome, uma descrição e se a funç�
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-No `AEM Blueprint` painel, é possível selecionar o modelo que é a implementação subjacente da função da comunidade.
+No `AEM Blueprint` painel, é possível selecionar o blueprint que é a implementação subjacente da função da comunidade.
 
-A função da comunidade é um mini site composto de uma ou mais páginas, pré-conectado para inclusão em um site da comunidade, incluindo logon, perfis de usuário, notificações, mensagens, menu do site, pesquisa, temas e recursos de marca. Depois que a função é criada, é possível [abrir a função](#open-community-function) no modo de edição do autor e personalizar as configurações da página e/ou do componente.
+A função da comunidade é um mini site composto de uma ou mais páginas, pré-conectado para inclusão em um site da comunidade, incluindo login, perfis do usuário, notificações, mensagens, menu do site, pesquisa, temas e recursos de marca. Depois que a função é criada, é possível [abrir a função](#open-community-function) no modo de edição do autor e personalizar as configurações da página e/ou do componente.
 
 Como a função da comunidade é implementada como uma cópia [](../../help/sites-administering/msm.md#live-copies) ativa de um [blueprint](../../help/sites-administering/msm-livecopy.md#creatingablueprint), é possível implementar alterações feitas em uma função que afeta todas as páginas do site da comunidade criadas a partir do modelo [de site da](sites.md) comunidade ou do modelo [de grupo da](tools-groups.md) comunidade que incluiu a função. Também é possível dissociar uma página do seu blueprint pai para fazer modificações no nível da página.
 
@@ -316,11 +321,11 @@ Selecione o `Open Community Function` ícone para entrar no modo de edição do 
 
 ### Configuração de componentes {#configuring-components}
 
-Uma função da comunidade é implementada como uma Live Copy de um Blueprint do AEM, cujos detalhes são documentados em [Multi Site Manager](../../help/sites-administering/msm.md).
+Uma função da comunidade é implementada como uma Live Copy de um Blueprint AEM, cujos detalhes são documentados em [Multi Site Manager](../../help/sites-administering/msm.md).
 
 É possível não apenas criar conteúdo de página, mas também configurar componentes.
 
-Se configurar um componente em uma página de um site da comunidade criado, talvez seja necessário cancelar a [herança](../../help/sites-administering/msm-livecopy.md#changing-live-copy-content) para configurar o componente. A herança deve ser restabelecida quando a configuração for concluída.
+Se você configurar um componente em uma página de um site da comunidade criado, talvez seja necessário cancelar a [herança](../../help/sites-administering/msm-livecopy.md#changing-live-copy-content) para configurar o componente. A herança deve ser restabelecida quando a configuração for concluída.
 
 Para obter detalhes sobre a configuração, visite Componentes [de](author-communities.md) comunidades para autores.
 
