@@ -1,8 +1,8 @@
 ---
 title: Personalização da criação de página
 seo-title: Personalização da criação de página
-description: O AEM fornece vários mecanismos para permitir que você personalize a funcionalidade de criação de página
-seo-description: O AEM fornece vários mecanismos para permitir que você personalize a funcionalidade de criação de página
+description: AEM fornece vários mecanismos para permitir que você personalize a funcionalidade de criação de página
+seo-description: AEM fornece vários mecanismos para permitir que você personalize a funcionalidade de criação de página
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 >
 >Este documento descreve como personalizar a criação de páginas na interface moderna e habilitada para toque e não se aplica à interface clássica.
 
-O AEM fornece vários mecanismos para permitir que você personalize a funcionalidade de criação de página (e os [consoles](/help/sites-developing/customizing-consoles-touch.md)) da sua instância de criação.
+AEM fornece vários mecanismos para permitir que você personalize a funcionalidade de criação de página (e os [consoles](/help/sites-developing/customizing-consoles-touch.md)) da sua instância de criação.
 
 * Clientlibs
 
@@ -38,7 +41,7 @@ O AEM fornece vários mecanismos para permitir que você personalize a funcional
 >
 >Para obter mais informações, consulte o conjunto [de documentação do](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)JS.
 
-Eles podem ser usados de várias maneiras para estender a funcionalidade de criação de página na sua instância do AEM. Uma seleção é abordada abaixo (em um nível alto).
+Eles podem ser usados de várias maneiras para estender a funcionalidade de criação de página na sua instância AEM. Uma seleção é abordada abaixo (em um nível alto).
 
 >[!NOTE]
 >
@@ -47,10 +50,11 @@ Eles podem ser usados de várias maneiras para estender a funcionalidade de cria
 >* Usar e criar [clientlibs](/help/sites-developing/clientlibs.md).
 >* Uso e criação de [sobreposições](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Estrutura da interface do usuário](/help/sites-developing/touch-ui-structure.md) habilitada para toque do AEM para obter detalhes das áreas estruturais usadas para a criação de página.
+>* [Estrutura da interface de usuário](/help/sites-developing/touch-ui-structure.md) habilitada para toque AEM para obter detalhes das áreas estruturais usadas para a criação de página.
+
 >
 >
-Este tópico também é abordado na sessão do [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - personalização da interface do [usuário para o AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+Este tópico também é abordado na sessão [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - personalização da interface [do usuário para AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
@@ -66,13 +70,13 @@ Este tópico também é abordado na sessão do [AEM Gems](https://docs.adobe.com
 
 ## Adicionar nova camada (modo) {#add-new-layer-mode}
 
-Quando você está editando uma página, há vários [modos](/help/sites-authoring/author-environment-tools.md#page-modes) disponíveis. Esses modos são implementados usando [camadas](/help/sites-developing/touch-ui-structure.md#layer). Eles permitem acesso a diferentes tipos de funcionalidade para o mesmo conteúdo de página. As camadas padrão são: editar, visualizar, anotar, desenvolvedor e segmentação.
+Quando você está editando uma página, há vários [modos](/help/sites-authoring/author-environment-tools.md#page-modes) disponíveis. Esses modos são implementados usando [camadas](/help/sites-developing/touch-ui-structure.md#layer). Eles permitem acesso a diferentes tipos de funcionalidade para o mesmo conteúdo de página. As camadas padrão são: editar, pré-visualização, anotar, desenvolvedor e segmentação.
 
 ### Exemplo de camada: Status da Live Copy {#layer-example-live-copy-status}
 
 Uma instância AEM padrão fornece a camada MSM. Isso acessa dados relacionados ao gerenciamento [de](/help/sites-administering/msm.md) vários sites e os destaca na camada.
 
-Para vê-la em ação, você pode editar qualquer página de cópia [de idioma](/help/sites-developing/we-retail-globalized-site-structure.md) We.Retail (ou qualquer outra página de cópia ao vivo) e selecionar o modo Status **da Cópia** online.
+Para vê-la em ação, você pode editar qualquer página de cópia [de idioma](/help/sites-developing/we-retail-globalized-site-structure.md) We.Retail (ou qualquer outra página de cópia ao vivo) e selecionar o modo Status **da Cópia** ao vivo.
 
 Você pode encontrar a definição de camada MSM (para referência) em:
 
@@ -80,7 +84,7 @@ Você pode encontrar a definição de camada MSM (para referência) em:
 
 ### Exemplo de código {#code-sample}
 
-Este é um pacote de amostra que mostra como criar uma nova camada (modo), que é uma nova camada para a exibição MSM.
+Este é um pacote de amostra que mostra como criar uma nova camada (modo), que é uma nova camada para a visualização MSM.
 
 CÓDIGO NO GITHUB
 
@@ -89,7 +93,7 @@ Você pode encontrar o código desta página no GitHub
 * [Abrir projeto aem-authoring-new-layer-mode no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
 
-## Adicionar nova categoria de seleção ao navegador de ativos {#add-new-selection-category-to-asset-browser}
+## Adicionar nova Categoria de seleção ao navegador de ativos {#add-new-selection-category-to-asset-browser}
 
 O navegador de ativos mostra ativos de vários tipos/categorias (por exemplo, imagem, documentos etc.). Os ativos também podem ser filtrados por essas categorias de ativos.
 
@@ -106,7 +110,7 @@ Você pode encontrar o código desta página no GitHub
 
 ## Filtrar recursos {#filtering-resources}
 
-Durante a criação de páginas, o usuário geralmente deve selecionar entre os recursos (por exemplo, páginas, componentes, ativos etc.). Isso pode assumir a forma de uma lista, por exemplo, da qual o autor deve escolher um item.
+Durante a criação de páginas, o usuário geralmente deve selecionar entre os recursos (por exemplo, páginas, componentes, ativos etc.). Isso pode assumir a forma de uma lista, por exemplo, a partir da qual o autor deve escolher um item.
 
 Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado na forma de um predicado personalizado. Por exemplo, se o componente [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui) for usado para permitir que o usuário selecione o caminho para um recurso específico, os caminhos apresentados podem ser filtrados da seguinte maneira:
 
@@ -157,7 +161,7 @@ Em uma instalação padrão do AEM:
 
          * propriedade: `editorType`
 
-            Define o tipo de editor em linha que será usado quando a edição no local for acionada para esse componente;por exemplo `text`, `textimage`, `image`, `title`.
+            Define o tipo de editor em linha que será usado quando a edição no local for acionada para esse componente; por exemplo, `text`, `textimage`, `image`, `title`.
 
 1. Detalhes adicionais de configuração do editor podem ser configurados usando um `config` nó contendo configurações, bem como um outro `plugin` nó para conter os detalhes necessários de configuração do plug-in.
 
@@ -185,7 +189,7 @@ Em uma instalação padrão do AEM:
 
    >[!CAUTION]
    >
-   >Observe que nas relações de corte do AEM, conforme definidas pela `ratio` propriedade, são definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. The authoring users will not be aware of any difference provided you define the `name` property clearly since this is what is displayed in the UI.
+   >Observe que em AEM relações de corte, conforme definidas pela `ratio` propriedade, são definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. The authoring users will not be aware of any difference provided you define the `name` property clearly since this is what is displayed in the UI.
 
 #### Criar um novo editor no local {#creating-a-new-in-place-editor}
 
@@ -209,13 +213,13 @@ Para implementar um novo editor no local (na clientlib):
 
 #### Amostra de código para criar um novo editor no local {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` é um pacote de amostra que mostra como criar um novo editor no local no AEM.
+`aem-authoring-extension-inplace-editor` é um exemplo de pacote que mostra como criar um novo editor no local no AEM.
 
 CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abra o projeto aem-authoring-extension-inplace-editor no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* [Abra o projeto aem-authoring-extension-in-place-editor no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
 #### Configuração de vários editores no local {#configuring-multiple-in-place-editors}
@@ -237,11 +241,11 @@ Você pode encontrar o código desta página no GitHub
 * [Abra o projeto aem-authoring-extension-header-backtosites no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
-## Personalização do fluxo de trabalho de solicitação de ativação {#customizing-the-request-for-activation-workflow}
+## Personalização do fluxo de trabalho de solicitação de Ativação {#customizing-the-request-for-activation-workflow}
 
-O fluxo de trabalho predefinido, **Solicitação de ativação**, é acionado automaticamente quando um autor de conteúdo não tem os direitos de replicação apropriados.
+O fluxo de trabalho predefinido, **Solicitar Ativação**, é automaticamente acionado quando um autor de conteúdo não tem os direitos de replicação apropriados.
 
-Para ter um comportamento personalizado nessa ativação, é possível sobrepor o fluxo de trabalho **Solicitar ativação** :
+Para ter um comportamento personalizado nessa ativação, é possível sobrepor o fluxo de trabalho **Solicitar Ativação** :
 
 1. Em `/apps` sobrepor o assistente **Sites** :
 
