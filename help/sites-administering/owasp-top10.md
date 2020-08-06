@@ -1,8 +1,8 @@
 ---
 title: OWASP Top 10
 seo-title: OWASP Top 10
-description: Saiba como o AEM lida com os 10 principais riscos de segurança do OWASP.
-seo-description: Saiba como o AEM lida com os 10 principais riscos de segurança do OWASP.
+description: Saiba como AEM lidar com os 10 principais riscos de segurança OWASP.
+seo-description: Saiba como AEM lidar com os 10 principais riscos de segurança OWASP.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -38,7 +38,7 @@ O XSS é uma prioridade máxima durante testes e desenvolvimento, e todos os pro
 
 ## 3. Autenticação quebrada e Gerenciamento de sessão {#broken-authentication-and-session-management}
 
-O AEM usa técnicas de autenticação seguras e comprovadas, confiando no [Apache Jackrabbit](https://jackrabbit.apache.org/) e no [Apache Sling](https://sling.apache.org/). Sessões de Navegador/HTTP não são usadas no AEM.
+AEM usa técnicas de autenticação comprovadas e sonoras, contando com o [Apache Jackrabbit](https://jackrabbit.apache.org/) e o [Apache Sling](https://sling.apache.org/). Sessões de Navegador/HTTP não são usadas em AEM.
 
 ## 4. Referências de objeto direto inseguras {#insecure-direct-object-references}
 
@@ -46,13 +46,13 @@ Todo o acesso a objetos de dados é mediado pelo repositório e, portanto, restr
 
 ## 5. CSRF (Cross-Site Request Forgery) {#cross-site-request-forgery-csrf}
 
-O CSRF (Cross-Site Request Forgery) é mitigado injetando automaticamente um token criptográfico em todos os formulários e solicitações AJAX e verificando esse token no servidor para cada POST.
+O CSRF (Cross-Site Request Forgery) é atenuado pela injeção automática de um token criptográfico em todos os formulários e solicitações de AJAX e verificação desse token no servidor para cada POST.
 
-Além disso, o AEM é enviado com um filtro baseado no cabeçalho da quem indicou, que pode ser configurado para *somente* permitir solicitações POST de hosts específicos (definidos em uma lista).
+Além disso, AEM vem com um filtro baseado no cabeçalho da quem indicou, que pode ser configurado para permitir *somente* solicitações POST de hosts específicos (definido em uma lista).
 
 ## 6. Configuração incorreta de segurança {#security-misconfiguration}
 
-É impossível garantir que todos os softwares estejam sempre configurados corretamente. No entanto, esforçamo-nos por fornecer o máximo possível de orientações e por tornar a configuração o mais simples possível. Além disso, o AEM é fornecido com verificações [](/help/sites-administering/operations-dashboard.md) de segurança integradas que ajudam a monitorar rapidamente a configuração de segurança.
+É impossível garantir que todos os softwares estejam sempre configurados corretamente. No entanto, esforçamo-nos por fornecer o máximo possível de orientações e por tornar a configuração o mais simples possível. Além disso, AEM os navios com verificações [de integridade de segurança](/help/sites-administering/operations-dashboard.md) integradas que ajudam você a monitorar rapidamente a configuração de segurança.
 
 Consulte a Lista [de verificação de](/help/sites-administering/security-checklist.md) segurança para obter mais informações, que fornecem instruções detalhadas passo a passo.
 
