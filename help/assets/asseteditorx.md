@@ -17,7 +17,7 @@ O Editor de ativos é a página que é aberta quando um ativo encontrado por mei
 
 A configuração do editor usando os componentes de edição predefinidos é abordada em [Criar e configurar uma página](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)do editor de ativos.
 
-Além de usar componentes de editor pré-existentes, os desenvolvedores do Adobe Experience Manager (AEM) também podem criar seus próprios componentes.
+Além de usar componentes de editor pré-existentes, os desenvolvedores da Adobe Experience Manager (AEM) também podem criar seus próprios componentes.
 
 ## Criando um modelo do editor de ativos {#creating-an-asset-editor-template}
 
@@ -31,7 +31,7 @@ As seguintes páginas de amostra estão incluídas no geometrixx:
 
 Os componentes do AEM Assets usam uma extensão da clientlib de edição do WCM. Os clientlibs normalmente são carregados em `init.jsp`.
 
-Comparado ao carregamento padrão do clientlib (nos principais `init.jsp`), um modelo do AEM Assets deve ter o seguinte:
+Comparado ao carregamento padrão do clientlib (nos principais `init.jsp`), um modelo da AEM Assets deve ter o seguinte:
 
 * O modelo deve incluir a `cq.dam.edit` clientlib (em vez de `cq.wcm.edit`).
 
@@ -51,13 +51,13 @@ A amostra carrega essa fonte javascript em `head.jsp`(`/apps/geometrixx/componen
 
 ### Folhas de estilos adicionais {#additional-style-sheets}
 
-Alguns componentes do AEM Assets usam a biblioteca de widgets do AEM. Para ser renderizada corretamente no contexto do conteúdo, uma folha de estilos adicional deve ser carregada. O componente de ação de tag requer mais um.
+Alguns componentes do AEM Assets usam a biblioteca de widgets AEM. Para ser renderizada corretamente no contexto do conteúdo, uma folha de estilos adicional deve ser carregada. O componente de ação de tag requer mais um.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Folha de estilo do Geometrixx {#geometrixx-style-sheet}
+### Folha de estilos de Geometrixx {#geometrixx-style-sheet}
 
 Os componentes da página de amostra exigem que todos os seletores start com `.asseteditor` ( `static.css``/etc/designs/geometrixx/static.css`). Melhores práticas: Copie todos os `.asseteditor` seletores para sua folha de estilos e ajuste as regras conforme desejado.
 
