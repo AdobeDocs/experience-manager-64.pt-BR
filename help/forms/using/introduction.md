@@ -9,6 +9,9 @@ topic-tags: hTML5_forms
 discoiquuid: b8cd2656-8bc2-4bd7-a3d6-dc76b0a2d429
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 4%
 
 ---
 
@@ -39,8 +42,8 @@ Os desenvolvedores de formulários podem usar um modelo XFA para renderizar form
 
 ## Gerenciar formulários HTML5 {#manage-html-forms}
 
-O AEM também fornece uma visualização unificada para listar e gerenciar todos os modelos de formulário usando a interface do usuário do AEM Forms. Você pode ativar, desativar, publicar e pré-visualização formulários. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](/help/forms/using/introduction-managing-forms.md).
+AEM também fornece uma visualização unificada para listar e gerenciar todos os modelos de formulário usando a interface do usuário do AEM Forms. Você pode ativar, desativar, publicar e pré-visualização formulários. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](/help/forms/using/introduction-managing-forms.md).
 
-### Personalização de formulários {#forms-customization}
+### Personalização do Forms {#forms-customization}
 
 Formulários HTML5 renderizam modelos de formulário usando construções HTML5 padrão. Isso simplifica a personalização e a extensão de formulários no formato HTML5 usando tecnologias da Web, principalmente CSS e JavaScript. Você pode personalizar facilmente a aparência de widgets existentes, criar seus próprios widgets personalizados ou usar estilos personalizados em formulários. Para obter mais informações sobre como criar widgets personalizados e personalizar widgets existentes, consulte [Plug-in de widgets personalizados com formulários](/help/forms/using/custom-widgets.md)HTML5.
