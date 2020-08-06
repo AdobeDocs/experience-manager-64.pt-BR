@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ O componente de votação, uma subclasse [tally](tally.md) , é uma ferramenta �
 
 É permitido colocar várias instâncias de um componente de votação na mesma página; cada instância deve ser configurada com uma `tally name` propriedade exclusiva.
 
-Não se apoia o envio anônimo de uma votação. Os visitantes do site devem se registrar e fazer logon para participar da votação apenas uma vez. O visitante conectado (membro) pode alterar seu voto a qualquer momento.
+Não se apoia o envio anônimo de uma votação. Os visitantes do site devem se registrar e fazer logon para participar da votação apenas uma vez. Os visitantes conectados (membros) podem alterar seus votos a qualquer momento.
 
 ## Essenciais para o lado do cliente {#essentials-for-client-side}
 
@@ -37,7 +40,7 @@ Não se apoia o envio anônimo de uma votação. Os visitantes do site devem se 
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
-   <td> cq.social.hbs.vote</td> 
+   <td> cq.social.hbs.voting</td> 
   </tr> 
   <tr> 
    <td> <strong>templates</strong></td> 
@@ -69,13 +72,13 @@ Não se apoia o envio anônimo de uma votação. Os visitantes do site devem se 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.\
 Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
 
-Desde as comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+Desde AEM 6.1 Comunidades, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório
 * [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
 * [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
