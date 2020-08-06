@@ -1,8 +1,8 @@
 ---
-title: Criação de um serviço personalizado da nuvem
-seo-title: Criação de um serviço personalizado da nuvem
-description: O conjunto padrão de Serviços em nuvem pode ser estendido com tipos de Serviço em nuvem personalizados
-seo-description: O conjunto padrão de Serviços em nuvem pode ser estendido com tipos de Serviço em nuvem personalizados
+title: Criação de um Cloud Service personalizado
+seo-title: Criação de um Cloud Service personalizado
+description: O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Service personalizados
+seo-description: O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Service personalizados
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 11%
 
 ---
 
 
-# Criação de um serviço personalizado da nuvem{#creating-a-custom-cloud-service}
+# Criação de um Cloud Service personalizado{#creating-a-custom-cloud-service}
 
-O conjunto padrão de Serviços em nuvem pode ser estendido com tipos de Serviço em nuvem personalizados. Isso permite que você insira marcação personalizada na página de forma estruturada. Isso será usado principalmente para provedores de análises de terceiros, como Google Analytics, Chartbeat etc. Os Serviços em nuvem são herdados das páginas pai para as páginas secundárias com a capacidade de quebrar a herança em qualquer nível.
+O conjunto padrão de Cloud Services pode ser estendido com tipos de Cloud Service personalizados. Isso permite que você insira a marcação personalizada na página de forma estruturada. Isso será usado principalmente para provedores de análises de terceiros, por exemplo, Google Analytics, Chartbeat etc. Cloud Services são herdados de páginas pai para páginas secundárias com a capacidade de quebrar a herança em qualquer nível.
 
 >[!NOTE]
 >
->Este guia passo a passo para a criação de um novo serviço em nuvem é um exemplo usando o Google Analytics. Tudo pode não se aplicar ao seu caso de uso.
+>Este guia passo a passo para a criação de um novo Cloud Service é um exemplo usando Google Analytics. Tudo pode não se aplicar ao seu caso de uso.
 
 1. No CRXDE Lite, crie um novo nó em `/apps`:
 
@@ -37,13 +40,14 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos de Serviç
 
    * **Nome**: componentes
    * **Tipo**: `sling:Folder`
+
    e
 
    * **Nome**: modelos
    * **Tipo**: `sling:Folder`
 
 
-1. Clique com o botão direito do mouse em `/apps/acs/analytics/components`. **** Selecionar **Criar... seguido por** Criar componente... A caixa de diálogo que é aberta permite especificar:
+1. Clique com o botão direito do mouse em `/apps/acs/analytics/components`. Selecionar **Criar...** seguido por **Criar componente...** A caixa de diálogo que é aberta permite especificar:
 
    * **Rótulo**: `googleanalyticspage`
    * **Título**: `Google Analytics Page`
@@ -53,12 +57,13 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos de Serviç
 1. Clique duas vezes em **Avançar** e especifique:
 
    * **Primários permitidos:** `acs/analytics/templates/googleanalytics`
+
    Clique em **Avançar** duas vezes e clique em **OK**.
 
 1. Adicione uma propriedade a `googleanalyticspage`:
 
    * **Nome:** `cq:defaultView`
-   * **** Valor: `html`
+   * **Valor:** `html`
 
 1. Crie um novo arquivo com o nome `content.jsp` em `/apps/acs/analytics/components/googleanalyticspage`, com o seguinte conteúdo:
 
@@ -195,7 +200,8 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos de Serviç
 
    * **Título**: `Google Analytics`
    * **Nome**: `googleanalytics`
-   Volte no CRXDE Lite e, em `/etc/cloudservices/googleanalytics`, adicione a seguinte propriedade a `jcr:content`:
+
+   Retorne no CRXDE Lite e, em `/etc/cloudservices/googleanalytics`, adicione a seguinte propriedade a `jcr:content`:
 
    * **Nome**: `componentReference`
    * **Tipo**: `String`
@@ -206,9 +212,10 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos de Serviç
 
    * **Configuração primária**: `/etc/cloudservices/googleanalytics`
    * **Título:**  `My First GA Config`
+
    Escolha Configuração **do** Google Analytics e clique em **Criar**.
 
 1. Insira uma ID **** de conta, por exemplo `AA-11111111-1`. Clique em **OK**.
-1. Navegue até uma página e adicione a configuração recém-criada nas propriedades da página, na guia Serviços **em** nuvem.
+1. Navegue até uma página e adicione a configuração recém-criada nas propriedades da página, na guia **Cloud Services** .
 1. A página terá a marcação personalizada adicionada.
 
