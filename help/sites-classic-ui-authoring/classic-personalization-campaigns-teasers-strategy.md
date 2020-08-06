@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 81%
 
 ---
 
@@ -21,16 +24,16 @@ Campanhas costumam usar teasers como um mecanismo para atrair um segmento espec�
 
 >[!NOTE]
 >
-> O componente Teaser foi substituído no AEM 6.2.
+>O componente Teaser foi substituído no AEM 6.2.
 
 * **As páginas** de marca são armazenadas na seção Campanhas do site. Uma marca contém as campanhas individuais.
 
-* **As páginas** de campanha são armazenadas na seção Campanhas do site. Cada campanha tem uma página individual, na qual as definições de teaser são mantidas. A página de contêiner, ou visão geral, também inclui algumas informações e estatísticas sobre as páginas de teaser individuais.
+* **As páginas** de Campanha são armazenadas na seção Campanhas do site. Cada campanha tem uma página individual, na qual as definições de teaser são mantidas. A página de contêiner, ou visão geral, também inclui algumas informações e estatísticas sobre as páginas de teaser individuais.
 
 Os teasers no AEM são compostos por várias partes:
 
 * **As páginas** do teaser são armazenadas na página de campanha apropriada e mantêm as definições dos parágrafos do teaser disponíveis para cada campanha específica. Essas definições são usadas ao exibir os parágrafos de teaser, incluindo variações de conteúdo, o segmento a ser usado para selecionar uma variação e um fator de reforço.
-* O **componente Teaser** está disponível para uso imediato e permite que você crie uma instância do seu parágrafo de teaser específico em uma página de conteúdo. É possível arrastar o componente de teaser do sidekick e especificar sua definição para criar seu próprio parágrafo de teaser. **** Observação: O componente Teaser foi substituído no AEM 6.2.
+* O **componente Teaser** está disponível para uso imediato e permite que você crie uma instância do seu parágrafo de teaser específico em uma página de conteúdo. É possível arrastar o componente de teaser do sidekick e especificar sua definição para criar seu próprio parágrafo de teaser. **Observação:** O componente Teaser foi substituído no AEM 6.2.
 
 * Os **parágrafos de Teaser** são instâncias reais do seu teaser dentro de uma página de conteúdo. Eles atraem um segmento de visitantes para um conteúdo focado em seus interesses.
 * As páginas que contêm o conteúdo da campanha focado em um segmento específico de visitantes. Geralmente, os parágrafos de teaser direcionarão o visitante a essas páginas.
@@ -215,7 +218,7 @@ Esses valores são usados para determinar os teasers que o visitante verá, depe
   <tr> 
    <td>Pontuação da sequência de cliques</td> 
    <td>T6</td> 
-   <td><p>Segmentos para T1, T4, T5 e T6 são resolvidos para o visitante. Os maiores fatores de reforço de T5 e T6 e, portanto, T1 e T4 são excluídos. Por fim, a pontuação de sequência de cliques mais alta de T6 resulta na sua seleção.</p> </td> 
+   <td><p>Os segmentos para T1, T4, T5 e T6 são resolvidos para o visitante. Os maiores fatores de reforço de T5 e T6 e, portanto, T1 e T4 são excluídos. Por fim, a pontuação de sequência de cliques mais alta de T6 resulta na sua seleção.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -236,7 +239,7 @@ Após criar a marca e a campanha, é possível criar e configurar a experiência
 
 >[!NOTE]
 >
-> O componente Teaser foi substituído no AEM 6.2.
+>O componente Teaser foi substituído no AEM 6.2.
 
 1. Navegue até a página de conteúdo à qual deseja adicionar o parágrafo do teaser que direcionará para a página da sua campanha.
 1. Adicione um componente **Teaser** (disponível na seção **Personalização** do sidekick) na posição desejada. Quando criado pela primeira vez, mostrará que o caminho da campanha ainda não foi configurado:
