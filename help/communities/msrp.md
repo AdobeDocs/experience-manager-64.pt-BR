@@ -1,8 +1,8 @@
 ---
 title: MSRP - Provedor de recursos do Armazenamento MongoDB
 seo-title: MSRP - Provedor de recursos do Armazenamento MongoDB
-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
-seo-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
+description: Configurar a AEM Communities para usar um banco de dados relacional como sua loja comum
+seo-description: Configurar a AEM Communities para usar um banco de dados relacional como sua loja comum
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Sobre o MSRP {#about-msrp}
 
-Quando o AEM Communities está configurado para usar o MSRP como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
+Quando a AEM Communities está configurada para usar o MSRP como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
 
 Consulte também [Características das opções](working-with-srp.md#characteristics-of-srp-options) de SRP e das topologias [](topologies.md)recomendadas.
 
@@ -33,7 +33,7 @@ Consulte também [Características das opções](working-with-srp.md#characteris
    * Versão 2.6 ou superior
    * Não há necessidade de configurar mongos ou compartilhamento
    * Recomendar o uso de um conjunto de [réplicas](#mongoreplicaset)
-   * Pode ser executado no mesmo host do AEM ou executado remotamente
+   * Pode ser executado no mesmo host que AEM ou executado remotamente
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -95,7 +95,7 @@ Deixe em branco se estiver sendo executado no modo SolrCloud.
 
 >[!NOTE]
 >
->O banco de dados mongoDB, que padroniza o nome `communities`, não deve ser definido como o nome de um banco de dados que está sendo usado para armazenamentos de [nó ou armazenamentos](../../help/sites-deploying/data-store-config.md)de dados (binários). Consulte também Elementos [de Armazenamento no AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>O banco de dados mongoDB, que padroniza o nome `communities`, não deve ser definido como o nome de um banco de dados que está sendo usado para armazenamentos de [nó ou armazenamentos](../../help/sites-deploying/data-store-config.md)de dados (binários). Consulte também Elementos para [Armazenamentos no AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### Conjunto de Réplicas MongoDB {#mongodb-replica-set}
 
@@ -129,7 +129,7 @@ Para obter detalhes sobre a configuração, consulte Configuração [Solr para S
 
 Se a atualização de uma versão anterior configurada com MSRP, será necessário
 
-1. Execute a [atualização para AEM Communities](upgrade.md)
+1. Faça a [atualização para a AEM Communities](upgrade.md)
 1. Instalar novos arquivos de configuração do Solr
    * Para MLS [padrão](solr.md#installing-standard-mls)
    * Para MLS [avançado](solr.md#installing-advanced-mls)
@@ -217,7 +217,7 @@ Para configurar o MSRP para um ambiente de demonstração ou desenvolvimento, co
 
 Verifique se o MSRP foi configurado para ser o provedor padrão ao verificar a configuração da opção armazenamento. Por padrão, o provedor de recursos do armazenamento é JSRP.
 
-Em todas as instâncias do autor e publicação de AEM, reveja o console [Configuração do](srp-config.md) Armazenamento ou verifique o repositório do AEM:
+Em todas as instâncias de autor e publicação AEM, reveja o console [Configuração do](srp-config.md) Armazenamento ou verifique o repositório AEM:
 
 * No JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -226,13 +226,13 @@ Em todas as instâncias do autor e publicação de AEM, reveja o console [Config
 
 ### O UGC desaparece após a atualização {#ugc-disappears-after-upgrade}
 
-Se você estiver atualizando de um site existente do AEM Communities 6.0, qualquer UGC pré-existente deve ser convertido para estar em conformidade com a estrutura necessária para a API [SRP](srp.md) após a atualização para o AEM Communities 6.3.
+Se você estiver atualizando de um site AEM Communities 6.0 existente, qualquer UGC pré-existente deve ser convertido para estar em conformidade com a estrutura necessária para a API [SRP](srp.md) após a atualização para o AEM Communities 6.3.
 
 Há uma ferramenta de código aberto disponível no GitHub para esse fim:
 
-* [Ferramenta de migração UGC do AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Ferramenta de migração AEM Communities UGC](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-A ferramenta de migração pode ser personalizada para exportar o UGC de versões anteriores de comunidades sociais do AEM para importação para o AEM Communities 6.1 ou posterior.
+A ferramenta de migração pode ser personalizada para exportar o UGC de versões anteriores de comunidades sociais AEM para importação para o AEM Communities 6.1 ou posterior.
 
 ### Erro - id_do_provedor de campo indefinido {#error-undefined-field-provider-id}
 
@@ -258,8 +258,8 @@ Para resolver o erro, ao seguir as instruções de [instalação do Standard MLS
 Se uma tentativa de fazer uma conexão segura com o servidor MongoDB falhar devido a uma definição de classe ausente, será necessário atualizar o conjunto de drivers MongoDB, `mongo-java-driver`, disponível no repositório maven público.
 
 1. Baixe o driver em [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versão 2.13.2 ou posterior)
-1. Copie o pacote na pasta &quot;crx-quickstart/install&quot; para uma instância do AEM
-1. Reinicie a instância do AEM
+1. Copie o pacote na pasta &quot;crx-quickstart/install&quot; para uma instância AEM
+1. Reinicie a instância AEM
 
 ## Recursos {#resources}
 
