@@ -10,16 +10,19 @@ topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 translation-type: tm+mt
 source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 
-# Preenchimento dinâmico de listas suspensas {#dynamically-populating-drop-down-lists}
+# Preenchimento dinâmico de listas suspensas  {#dynamically-populating-drop-down-lists}
 
 ## Pré-requisitos {#prerequisites}
 
 * [Criação de pacotes OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Desenvolvimento de componentes do AEM](/help/sites-developing/components.md)
+* [Desenvolvimento de componentes AEM](/help/sites-developing/components.md)
 * [Criar formulário adaptável](/help/forms/using/creating-adaptive-form.md)
 * [Criação de formulário adaptativo](/help/forms/using/introduction-forms-authoring.md)
 
@@ -148,11 +151,11 @@ Considere um cenário em que você deseja preencher a lista suspensa **Estado** 
    ![Criar um nó suspenso](assets/dropdown-node.png)
 
 1. Compacte o nó de conteúdo e incorpore o arquivo .jar em um local específico (por exemplo, /apps/myfolder/demo/install/). Implante o mesmo arquivo no servidor.
-1. Crie um formulário adaptável e adicione duas listas suspensas, País e Estado. A lista de países pode incluir os nomes dos países. A lista Estado pode preencher dinamicamente os nomes de estados para o país selecionado na primeira lista.
+1. Crie um formulário adaptável e adicione duas listas suspensas, País e Estado. A lista País pode incluir os nomes dos países. A lista State pode preencher dinamicamente os nomes dos estados para o país selecionado na primeira lista.
 
-   Adicione os nomes dos países a serem exibidos na lista de países. Na lista Estado, adicione um script para preenchê-lo com base no nome do país na lista País.
+   Adicione os nomes dos países a serem exibidos na lista do país. Na lista State (Estado), adicione um script para preenchê-lo com base no nome do país na lista Country (País).
 
-   ![Adicionando nomes](assets/country-dropdown.png) de países ![Adicionando script para preencher nomes](assets/state-dropdown.png) de estado Listas suspensas ![País e Estado para reunir](assets/2dropdowns.png)
+   ![Adicionando nomes](assets/country-dropdown.png) de países ![Adicionando script para preencher nomes](assets/state-dropdown.png) de estado ![País e Estado listas suspensas para reunir](assets/2dropdowns.png)
 
    ```
    JSON.parse(
