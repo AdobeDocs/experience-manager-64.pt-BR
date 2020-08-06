@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e tornados pesquisáveis. A pesquisa permite a filtragem sofisticada de ativos e respeita totalmente as permissões adequadas. Os metadados são abordados detalhadamente em metadados no Gerenciamento de ativos digitais.
 
-O AEM Assets oferece suporte a várias formas de organização de conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de forma não ordenada e ad-hoc, usando, por exemplo, tags. Os usuários podem editar tags no DAM Asset Editor, onde subativos, representações e metadados são exibidos.
+A AEM Assets oferece suporte a várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de forma não ordenada e ad-hoc, usando, por exemplo, tags. Os usuários podem editar tags no DAM Asset Editor, onde subativos, representações e metadados são exibidos.
 
 ## Organizar ativos em pastas {#organize-using-folders}
 
@@ -35,23 +35,23 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
    * **Pastas** baseadas em datas - contém ativos digitais com base em uma data de criação ou em uma data de última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue funcionando. Por exemplo, os perfis de processamento atribuídos continuam funcionando.
-* Se um ativo já tiver sido publicado, você usará o AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é *perdido* para o AEM e não pode ser despublicado. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois mova-o para uma pasta diferente.
+* Se um ativo já estiver publicado, você usará AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é *perdido* para AEM e não pode ser despublicado. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois mova-o para uma pasta diferente.
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
-Usando tags, como metadados, você pode pesquisar facilmente ativos, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e aproveitar os algoritmos AI do Adobe Sensei para a descoberta de ativos.
+Usando tags, como metadados, você pode pesquisar facilmente ativos, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e aproveitar os algoritmos AI da Adobe Sensei para a descoberta de ativos.
 
-Os ativos Adobe Experience Manager usam um algoritmo de autoaprendizado para criar tags altamente descritivas que permitem encontrar o ativo certo em apenas alguns cliques. A marcação inteligente usa o Adobe Sensei, nossa inteligência artificial e estrutura de aprendizado de máquina, que pode ser treinada para reconhecer e aplicar tags padrão e específicas de negócios à imagem. Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas a ativos
+O Adobe Experience Manager Assets usa um algoritmo de autoaprendizado para criar tags altamente descritivas que permitem encontrar o ativo certo em apenas alguns cliques. A marcação inteligente usa a Adobe Sensei, nossa inteligência artificial e estrutura de aprendizado de máquina, que pode ser treinada para reconhecer e aplicar tags padrão e específicas de negócios à imagem. Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas a ativos
 
 Para obter mais informações, consulte os seguintes artigos:
 
-* [Sobre tags no AEM](/help/sites-authoring/tags.md)
+* [Sobre tags em AEM](/help/sites-authoring/tags.md)
 * [Editar metadados de ativos](meta-edit.md)
 * [Tags inteligentes aprimoradas em ativos](enhanced-smart-tags.md)
 
 ## Organizar como coleções {#organize-as-collections}
 
-Com as coleções de ativos nos ativos do Experience Manager, você pode simplificar a capacidade de criar, editar e compartilhar ativos entre usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções, bem como coleções que extraiam ativos com base em critérios de pesquisa.  Você também pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de privilégios de acesso, visualização e edição.
+Com as coleções de ativos nos ativos Experience Manager, você pode simplificar a capacidade de criar, editar e compartilhar ativos entre os usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções, bem como coleções que extraiam ativos com base em critérios de pesquisa.  Você também pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de privilégios de acesso, visualização e edição.
 
 Para obter mais informações, consulte [gerenciar coleções](managing-collections-touch-ui.md)
 
