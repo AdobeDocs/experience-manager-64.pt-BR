@@ -1,6 +1,6 @@
 ---
 title: Ativar insights de ativos por meio do DTM
-description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
+description: Saiba como usar o Gerenciamento dinâmico de tags do Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,22 +13,23 @@ ht-degree: 0%
 
 # Ativar insights de ativos por meio do DTM {#enabling-asset-insights-through-dtm}
 
-O Gerenciamento dinâmico de tags da Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para clientes do Adobe Analytics.
+O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. Ele é fornecido gratuitamente aos clientes da Adobe Analytics.
 
-Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, a Adobe recomenda usar o DTM para inserir tags do Asset Insights.
+Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, o Adobe recomenda que você use o DTM para inserir tags do Asset Insights.
 
 Execute estas etapas para ativar os Insights de ativos por meio do DTM:
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Insights Configuration]**.
-1. [Configurar a instância do AEM com o serviço da DTM Cloud](../sites-administering/dtm.md)
+1. [Configurar AEM instância com o Cloud Service DTM](../sites-administering/dtm.md)
 
-   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no ícone Perfil. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração dos Sites AEM com Asset Insights ainda está em andamento.
+   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no ícone Perfil. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração da AEM Sites com o Asset Insights ainda está em andamento.
 
 1. Faça logon em [https://dtm.adobe.com](https://dtm.adobe.com/)e selecione uma Empresa, conforme apropriado.
 1. Criar/abrir uma propriedade da Web existente
 
    * Selecione a guia Propriedades **[!UICONTROL da]** Web e toque/clique em **[!UICONTROL Adicionar propriedade]**.
    * Atualize os campos conforme apropriado e toque/clique em **[!UICONTROL Criar propriedade]** (consulte a [documentação](https://helpx.adobe.com/experience-manager/using/dtm.html)).
+
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. Na guia **[!UICONTROL Regras]** , selecione Regras **[!UICONTROL de carregamento de]** página no painel de navegação e toque/clique em **[!UICONTROL Criar nova regra]**.
@@ -45,9 +46,9 @@ Execute estas etapas para ativar os Insights de ativos por meio do DTM:
    >[!NOTE]
    >
    >* `AppMeasurement.js` foi removido. Ela deve estar disponível por meio da ferramenta Adobe Analytics do DTM.
-   >* A chamada para `assetAnalytics.dispatcher.init()` é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar de carregar.
-   >* Dependendo de onde o Controlador de página do Asset Insights estiver hospedado (por exemplo, AEM, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
-   >* Para o AEM-hosted Page Tracker, a fonte deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
+   >* A chamada para `assetAnalytics.dispatcher.init()` é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar o carregamento.
+   >* Dependendo de onde o Asset Insights Page Tracker estiver hospedado (por exemplo, AEM, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
+   >* Para o rastreador de página hospedado AEM, a fonte deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
 
 
 
@@ -109,7 +110,7 @@ Execute estas etapas para ativar os Insights de ativos por meio do DTM:
 
       Os argumentos restantes correspondem ao que está configurado na página Configuração de Insights (**[!UICONTROL Ferramentas > Ativos > Configuração]** de Insights).
 
-   * O objeto AppMeasurement é recuperado consultando-se `satelliteLib` para todos os mecanismos disponíveis do SiteCatalyst. Se várias tags estiverem configuradas, altere o índice do seletor de matriz adequadamente. As entradas no storage são ordenadas de acordo com as ferramentas do SiteCatalyst disponíveis na interface do DTM.
+   * O objeto AppMeasurement é recuperado consultando todos os mecanismos de SiteCatalyst disponíveis `satelliteLib` . Se várias tags estiverem configuradas, altere o índice do seletor de matriz adequadamente. As entradas no storage são ordenadas de acordo com as ferramentas de SiteCatalyst disponíveis na interface do DTM.
 
 1. Salve e feche a janela Editor de código e salve as alterações na configuração da ferramenta.
 1. Na guia **[!UICONTROL Aprovações]** , aprove ambas as aprovações pendentes. A tag do DTM está pronta para ser inserida na sua página da Web. Para obter detalhes sobre como inserir tags do DTM em páginas da Web, consulte [Integração do DTM em modelos](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/)de página personalizados.
