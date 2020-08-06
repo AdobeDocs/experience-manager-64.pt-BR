@@ -1,8 +1,8 @@
 ---
 title: Renderizar modelo de formulário para formulários HTML5
 seo-title: Renderizar modelo de formulário para formulários HTML5
-description: perfis de formulários HTML5 estão associados a renderizações de perfis. Renderizações de Perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço OSGi do Forms.
-seo-description: perfis de formulários HTML5 estão associados a renderizações de perfis. Renderizações de Perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço OSGi do Forms.
+description: perfis de formulários HTML5 estão associados a renderizações de perfis. Renderizações de Perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço OSGi da Forms.
+seo-description: perfis de formulários HTML5 estão associados a renderizações de perfis. Renderizações de Perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço OSGi da Forms.
 uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## Renderizar ponto final {#render-endpoint}
 
-Formulários HTML5 têm a noção de **Perfis** que são expostos como pontos finais REST para permitir a renderização móvel de modelos de formulário. Esses Perfis associaram o **Perfil Renderer**. Elas são páginas JSP responsáveis por gerar a representação HTML do formulário chamando o serviço Forms OSGi. O caminho JCR do nó do Perfil determina o URL do ponto final de renderização. O ponto final de renderização padrão do formulário que aponta para o perfil &#39;padrão&#39; é semelhante a:
+Formulários HTML5 têm a noção de **Perfis** que são expostos como pontos finais REST para permitir a renderização móvel de modelos de formulário. Esses Perfis associaram o **Perfil Renderer**. São páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço OSGi da Forms. O caminho JCR do nó do Perfil determina o URL do ponto final de renderização. O ponto final de renderização padrão do formulário que aponta para o perfil &#39;padrão&#39; é semelhante a:
 
 https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*caminho da pasta que contém o formulário xdp*>&amp;template=&lt;*nome do xdp*>
 
@@ -28,7 +31,7 @@ Para um perfil personalizado, o ponto de extremidade é alterado de acordo. Por 
 
 `http://localhost:4502/content/xfaforms/profiles/hrforms.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
-Se seu modelo residir no repositório do AEM em um aplicativo chamado FormSubmission, o URI será:
+Se o modelo residir no repositório AEM em um aplicativo chamado FormSubmission, o URI será:
 
 ```
 http://localhost:4502/content/xfaforms/profiles/default.html?
@@ -80,4 +83,4 @@ Os formulários HTML5 suportam três métodos para transmitir os parâmetros de 
 
 ### Enviar parâmetros {#submit-parameters}
 
-Dados de envio de formulários HTML5; execute scripts do lado do servidor e serviços da Web em servidores AEM. Para obter informações detalhadas sobre parâmetros usados para executar scripts do lado do servidor e serviços da Web em servidores AEM, consulte Proxy [de Serviço para formulários](/help/forms/using/service-proxy.md)HTML5.
+Dados de envio de formulários HTML5; execute scripts do lado do servidor e serviços da Web em servidores AEM. Para obter informações detalhadas sobre parâmetros usados para executar scripts do lado do servidor e serviços da Web em servidores AEM, consulte Proxy [de Serviço de formulários](/help/forms/using/service-proxy.md)HTML5.
