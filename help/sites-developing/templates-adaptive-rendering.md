@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ A renderização do modelo adaptável fornece uma maneira de gerenciar uma pági
 
 ## Visão geral {#overview}
 
-Normalmente, os modelos são criados em torno de uma grade responsiva, e as páginas criadas com base nesses modelos são totalmente responsivas, ajustando-se automaticamente à janela do dispositivo cliente. Usando a barra de ferramentas Emulador no editor de páginas, os autores podem direcionar layouts para dispositivos específicos.
+Normalmente, os modelos são criados em torno de uma grade responsiva, e as páginas criadas com base nesses modelos são totalmente responsivas, ajustando-se automaticamente à janela do dispositivo cliente. Usando a barra de ferramentas Emulador no editor de páginas, os autores podem público alvo layouts para dispositivos específicos.
 
 Também é possível configurar modelos para suportar renderização adaptável. Quando os grupos de dispositivos estiverem configurados corretamente, a página será renderizada com um seletor diferente no URL ao selecionar um dispositivo no modo de emulador. Usando um seletor, uma renderização de página específica pode ser chamada diretamente pelo URL.
 
