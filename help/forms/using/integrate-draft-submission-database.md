@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Visão geral da amostra {#sample-overview}
 
-O componente de rascunhos e envios do portal do AEM Forms permite que os usuários salvem seus formulários como rascunhos e enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem visualização seus formulários enviados no portal. Para habilitar essa funcionalidade, o AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados do formulário associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório CRX, por padrão. No entanto, à medida que os usuários interagem com formulários por meio da instância de publicação do AEM, que geralmente está fora do firewall da empresa, as organizações podem querer personalizar o armazenamento de dados para que ele seja mais seguro e confiável.
+O componente de rascunhos e envios do portal da AEM Forms permite que os usuários salvem seus formulários como rascunhos e enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem visualização seus formulários enviados no portal. Para habilitar essa funcionalidade, a AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório CRX, por padrão. No entanto, à medida que os usuários interagem com formulários por meio AEM instância de publicação, que geralmente está fora do firewall da empresa, as organizações podem querer personalizar o armazenamento de dados para que ele seja mais seguro e confiável.
 
 A amostra, discutida neste documento, é uma implementação de referência de dados personalizados e serviços de metadados para integrar os componentes de rascunhos e envios a um banco de dados. O banco de dados usado na implementação de amostra é o **MySQL 5.6.24**. No entanto, você pode integrar o componente de rascunhos e envios a qualquer banco de dados de sua escolha.
 
 >[!NOTE]
 >
 >* Os exemplos e configurações explicados neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los adequadamente para o seu sistema de banco de dados.
->* Verifique se você instalou a versão mais recente do pacote de complementos do AEM Forms. Para obter a lista dos pacotes disponíveis, consulte o artigo sobre as versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
->* O pacote de amostra funciona somente com ações de envio de formulários adaptativos.
+>* Verifique se você instalou a versão mais recente do pacote complementar AEM Forms. Para obter a lista dos pacotes disponíveis, consulte o artigo sobre as versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+>* O pacote de amostra funciona somente com ações de envio da Forms adaptativa.
 
 
 ## Configurar e configurar a amostra {#set-up-and-configure-the-sample}
@@ -42,24 +42,24 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
    [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Vá para o gerenciador de pacote do AEM em https://[*host*]:[*port*]/crx/packmgr/.
+1. Vá para AEM gerenciador de pacotes em https://[*host*]:[*port*]/crx/packmgr/.
 1. Clique em **[!UICONTROL Carregar pacote]**.
 
 1. Navegue para selecionar o pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
 1. Clique em **[!UICONTROL Instalar]** ao lado do pacote para instalar o pacote.
-1. Vá para a **[!UICONTROL página Configuração]** do console da Web do AEM em https://[*host*]:[*port*]/system/console/configMgr.
-1. Clique para abrir Configuração **[!UICONTROL de rascunho e envio do Portal do]** Forms no modo de edição.
+1. Vá para **[!UICONTROL AEM]** página Configuração [*do console da Web em https://*] host [*:*] port/system/console/configMgr.
+1. Clique para abrir Configuração **[!UICONTROL de rascunho e envio do]** Forms Portal no modo de edição.
 
 1. Especifique os valores para as propriedades conforme descrito na tabela a seguir:
 
    | **Propriedade** | **Descrição** | **Valor** |
    |---|---|---|
-   | Serviço de Dados de Rascunho do Portal de Formulários | Identificador do serviço de dados de rascunho | formsportal.sampledataservice |
-   | Serviço de Metadados de Rascunho do Portal de Formulários | Identificador do serviço de metadados de rascunho | formsportal.samplemetadataservice |
-   | Serviço de Dados de Envio de Portal de Formulários | Identificador para enviar o serviço de dados | formsportal.sampledataservice |
-   | Serviço de Metadados de Envio do Portal de Formulários | Identificador para o serviço de metadados de envio | formsportal.samplemetadataservice |
-   | Serviço de Dados de Assinatura Pendente do Portal de Formulários | Identificador do serviço de dados de assinatura pendente | formsportal.sampledataservice |
-   | Serviço de Metadados de Assinatura Pendente do Portal de Formulários | Identificador do serviço de metadados de assinatura pendente | formsportal.samplemetadataservice |
+   | Serviço de dados de rascunho do Forms Portal | Identificador do serviço de dados de rascunho | formsportal.sampledataservice |
+   | Serviço de Metadados de Rascunho do Forms Portal | Identificador do serviço de metadados de rascunho | formsportal.samplemetadataservice |
+   | Serviço de dados de envio do portal da Forms | Identificador para enviar o serviço de dados | formsportal.sampledataservice |
+   | Serviço de Metadados de Envio do Forms Portal | Identificador para o serviço de metadados de envio | formsportal.samplemetadataservice |
+   | Serviço de Dados de Assinatura Pendente do Forms Portal | Identificador do serviço de dados de assinatura pendente | formsportal.sampledataservice |
+   | Serviço de Metadados de Assinatura Pendente do Forms Portal | Identificador do serviço de metadados de assinatura pendente | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -76,11 +76,11 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
    Para fornecer um nome diferente para a tabela de metadados:
 
-   * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de metadados do Portal do Forms. Você pode alterar os valores da fonte de dados, dos metadados/do nome da tabela de metadados adicionais.
+   * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de metadados do portal Forms. Você pode alterar os valores da fonte de dados, dos metadados/do nome da tabela de metadados adicionais.
 
    Para fornecer um nome diferente para a tabela de dados:
 
-   * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de dados do Portal do Forms. É possível alterar os valores da fonte de dados e do nome da tabela de dados.
+   * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de dados do portal Forms. É possível alterar os valores da fonte de dados e do nome da tabela de dados.
    >[!NOTE]
    >
    >Se você alterar os nomes das tabelas, forneça-os na configuração do Portal de formulários.
@@ -326,7 +326,7 @@ O zip a seguir contém `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMe
 
 ## Verifique o comprimento do nome do arquivo  {#verify-length-of-the-file-name}
 
-A implementação do banco de dados do Portal do Forms usa uma tabela de metadados adicional. A tabela tem uma chave primária composta com base nas colunas Chave e ID da tabela. O MySQL permite chaves primárias até o comprimento de 255 caracteres. Você pode usar o seguinte script de validação do lado do cliente para verificar a duração do nome de arquivo anexado ao widget de arquivo. A validação é executada quando um arquivo é anexado. O script fornecido no procedimento a seguir exibe uma mensagem, quando o nome do arquivo for maior que 150 (incluindo extensão). É possível modificar o script para verificar se há um número diferente de caracteres.
+A implementação do banco de dados do Forms Portal usa outra tabela de metadados. A tabela tem uma chave primária composta com base nas colunas Chave e ID da tabela. O MySQL permite chaves primárias até o comprimento de 255 caracteres. Você pode usar o seguinte script de validação do lado do cliente para verificar a duração do nome de arquivo anexado ao widget de arquivo. A validação é executada quando um arquivo é anexado. O script fornecido no procedimento a seguir exibe uma mensagem, quando o nome do arquivo for maior que 150 (incluindo extensão). É possível modificar o script para verificar se há um número diferente de caracteres.
 
 Execute as seguintes etapas para criar [uma biblioteca](/help/sites-developing/clientlibs.md) do cliente e usar o script:
 
@@ -342,7 +342,7 @@ Execute as seguintes etapas para criar [uma biblioteca](/help/sites-developing/c
     util.js
    ```
 
-   No código acima, `util` é o nome da pasta e o `util.js` nome do arquivo na `util` pasta. A `util` pasta e `util.js` o arquivo são criados em etapas bem-sucedidas.
+   No código acima, `util` é o nome da pasta e o `util.js` nome do arquivo na `util` pasta. A `util` `util.js` pasta e o arquivo são criados em etapas bem-sucedidas.
 
 1. Clique com o botão direito do mouse no `cq:ClientLibraryFolder` nó criado na etapa 2, selecione Criar > Criar pasta. Crie uma pasta chamada `util`. Clique em **[!UICONTROL Salvar tudo]**. Clique com o botão direito do mouse na `util` pasta e selecione Criar > Criar arquivo. Crie um arquivo chamado `util.js`. Clique em **[!UICONTROL Salvar tudo]**.
 
