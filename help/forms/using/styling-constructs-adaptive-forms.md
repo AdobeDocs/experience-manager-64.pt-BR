@@ -560,7 +560,7 @@ O widget Anexo de arquivo de formulários adaptativos permite carregar arquivos.
   </tr> 
   <tr> 
    <td><p><code>filePreviewIconColor</code></p> </td> 
-   <td><p>Cor do ícone de Pré-visualização (ícone Bootstrap) no widget</p> </td> 
+   <td><p>Cor do ícone de Pré-visualização (ícone de Bootstrap) no widget</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>fileItemCommentHeight</code></p> </td> 
