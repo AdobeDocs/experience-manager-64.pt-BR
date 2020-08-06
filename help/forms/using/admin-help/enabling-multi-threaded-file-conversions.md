@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ Ao adicionar usuários para OpenOffice, Microsoft Word ou Microsoft PowerPoint n
 
 Em um sistema operacional Windows, as contas de usuário administradores usadas para conversão de PDF (usuários de PDFG) precisarão substituir privilégios de token de nível de processo. Você pode adicionar esse direito usando o Editor de Diretiva de Grupo:
 
-1. No menu Iniciar do Windows, clique em Executar e digite gpedit.msc.
+1. No menu Start do Windows, clique em Executar e digite gpedit.msc.
 1. Clique em Política local do computador > Configuração do computador > Configurações do Windows > Configurações de segurança > Políticas locais > Atribuição de direitos de usuário. Edite a política *Substituir token* de nível de processo para incluir o grupo Administradores.
 1. Adicione o usuário à entrada Substituir um token de nível de processo.
 
@@ -49,7 +52,7 @@ Em um sistema operacional Windows, as contas de usuário administradores usadas 
 
 Se você estiver executando o OpenOffice, o Microsoft Word ou o Microsoft PowerPoint no Windows Server 2008, desative o UAC para cada usuário adicionado.
 
-1. Clique em Painel de controle > Contas de usuário > Ativar ou desativar o controle de conta de usuário.
+1. Clique em Painel de controle do Campaign > Contas de usuário > Ativar ou desativar o controle de conta de usuário.
 1. Desmarque a caixa &quot;Use User Account Control (UAC) Control (Usar controle de conta de usuário) para ajudar a proteger seu computador&quot; e clique em OK.
 1. Reinicie o computador para que as configurações entrem em vigor.
 
@@ -102,7 +105,7 @@ Se você estiver executando o OpenOffice, o Microsoft Word ou o Microsoft PowerP
 
 1. Reinicie o servidor de formulários.
 
-### Remover um usuário da lista usada para conversões de arquivos de vários processos {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
+### Remova um usuário da lista usada para conversões de arquivos de vários processos {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
 
 1. No console de administração, clique em Serviços > Gerador de PDF > Contas de usuário.
 1. Clique na caixa de seleção ao lado do usuário que você deseja remover e clique em Excluir.
