@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +44,7 @@ Usando o CRXDE Lite:
 
 ### Scripts de cabeça e corpo {#head-and-body-scripts}
 
-1. No painel do **CRXDE Lite** Explorer, navegue até `/apps/an-scf-sandbox/components/playpage` o arquivo e clique nele duas vezes `playpage.jsp` para abri-lo no painel de edição.
+1. No painel do **CRXDE Lite** explorer, navegue até `/apps/an-scf-sandbox/components/playpage` o arquivo e clique com o duplo no arquivo `playpage.jsp` para abri-lo no painel de edição.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -92,6 +95,7 @@ Usando o CRXDE Lite:
 
       * Nome: **body.jsp**
    1. Clique em **[!UICONTROL Salvar tudo]**
+
    Abra `/apps/an-scf-sandbox/components/playpage/body.jsp` e cole o seguinte texto:
 
    ```xml
@@ -112,7 +116,7 @@ Usando o CRXDE Lite:
 
 1. Clique em **[!UICONTROL Salvar tudo]**
 
-**Visualize a página em um navegador no modo de edição:**
+**Visualização a página em um navegador no modo de edição:**
 
 * Interface padrão: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
@@ -130,11 +134,11 @@ Veja como a página de reprodução aparece na interface clássica, incluindo o 
 
 ## Componentes do Communities {#communities-components}
 
-Para ativar os componentes Comunidades para criação, comece seguindo estas instruções:
+Para ativar os componentes Comunidades para criação, start seguindo estas instruções:
 
 * [Acessar componentes das comunidades](basics.md#accessing-communities-components)
 
-Para os fins desta caixa de proteção, comece com esses componentes **Comunidades** (ative marcando a caixa):
+Para os fins desta caixa de proteção, start com estes componentes **Comunidades** (ativar marcando a caixa):
 
 * Comentários
 * Fórum
@@ -159,7 +163,7 @@ Além disso, escolha os componentes **[!UICONTROL Gerais]** , como
 
 Em um ambiente de vários idiomas, a página raiz incluiria um script que analisaria a solicitação do cliente para determinar o idioma preferencial.
 
-Neste exemplo simples, a página raiz está sendo configurada estaticamente para redirecionar para a página em inglês, que pode ser desenvolvida no futuro para ser a página inicial principal com um link para a página de reprodução.
+Neste exemplo simples, a página raiz está sendo configurada estaticamente para redirecionar para a página em inglês, que pode ser desenvolvida no futuro para ser a landing page principal com um link para a página de reprodução.
 
 Altere o URL do navegador para a página raiz: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
@@ -167,11 +171,11 @@ Altere o URL do navegador para a página raiz: [http://localhost:4502/editor.htm
 * Selecionar propriedades **[!UICONTROL abertas]**
 * Na guia AVANÇADO
 
-   * Para a entrada Redirecionar, navegue até **[!UICONTROL Sites > Site do SCF Sandbox > Caixa de proteção do SCF]**
+   * Para a entrada Redirecionar, navegue até **[!UICONTROL Sites > Sites > Sites do SCF Sandbox > Caixa de proteção do SCF]**
    * Clique em **[!UICONTROL OK]**
 
 * Clique em **[!UICONTROL OK]**
 
 Depois que o site é publicado, navegar até a página raiz em uma instância de publicação redirecionará para a página em inglês.
 
-A última etapa antes de reproduzir com as comunidades componentes do SCF é adicionar uma pasta da biblioteca do cliente (clientlibs) ... . **[⇒](add-clientlibs.md)**
+A última etapa antes de reproduzir com as comunidades componentes do SCF é adicionar uma Pasta da biblioteca do cliente (clientlibs) .... **[execute](add-clientlibs.md)**
