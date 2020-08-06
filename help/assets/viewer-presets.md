@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 23%
 
 ---
 
 
 # Applying Dynamic Media viewer presets {#applying-viewer-presets}
 
-Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Você pode aplicar qualquer predefinição do visualizador criada pelo administrador a um ativo.
+Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizações ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Você pode aplicar qualquer predefinição do visualizador criada pelo administrador a um ativo.
 
 Se você for um administrador e precisar gerenciar, criar, classificar e excluir predefinições do visualizador, consulte [Gerenciamento de predefinições](managing-viewer-presets.md)do visualizador.
 
@@ -26,7 +29,7 @@ Consulte também Predefinições [do visualizador de](managing-viewer-presets.md
 Talvez não seja necessário publicar predefinições do visualizador, dependendo do modo de publicação utilizado.
 Qualquer problema com as predefinições do visualizador, consulte [Solução de problemas do Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
-## Aplicar uma predefinição do visualizador de Dynamic Media a um ativo {#applying-a-viewer-preset-to-an-asset}
+## Aplicar uma predefinição do visualizador de Mídia dinâmica a um ativo {#applying-a-viewer-preset-to-an-asset}
 
 1. Abra o ativo e, no painel à esquerda, e toque em **[!UICONTROL Visualizadores]**.
 
@@ -37,6 +40,6 @@ Qualquer problema com as predefinições do visualizador, consulte [Solução de
 
 1. Selecione um visualizador no painel esquerdo para aplicá-lo ao ativo, como visto no painel direito. Você também pode [copiar o URL para compartilhar](linking-urls-to-yourwebapplication.md) com outros usuários.
 
-## Obter URLs predefinidos do visualizador {#obtaining-viewer-preset-urls}
+## Obtenção de URLs predefinidos do visualizador {#obtaining-viewer-preset-urls}
 
-Para obter os URLs das predefinições do visualizador, consulte [Vincular URLs ao aplicativo](linking-urls-to-yourwebapplication.md)da Web.
+Para obter os URLs das predefinições do visualizador, consulte [Vincular URLs à sua Aplicação web](linking-urls-to-yourwebapplication.md).
