@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 translation-type: tm+mt
 source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
 
 # Configuração de filas compartilhadas{#configuring-shared-queues}
 
-As Filas compartilhadas permitem que você configure e gerencie as filas de usuários de forma eficaz. Uma fila de usuários é simplesmente todas as tarefas atribuídas a um usuário. Consulte Listas [](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) de atividade para obter mais informações. Você pode atribuir, cancelar a atribuição e reatribuir filas de usuário, dependendo de suas necessidades organizacionais. Você pode gerenciar Filas compartilhadas de duas formas:
+As Filas compartilhadas permitem que você configure e gerencie as filas de usuários de forma eficaz. Uma fila de usuários é simplesmente todas as tarefas atribuídas a um usuário, consulte [Listas](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) de Tarefas para obter mais informações. Você pode atribuir, cancelar a atribuição e reatribuir filas de usuário, dependendo de suas necessidades organizacionais. Você pode gerenciar Filas compartilhadas de duas formas:
 
 **Gerenciar Acesso A Um Usuário**
 
@@ -35,14 +38,14 @@ Depois de compartilhadas, essas tarefas podem ser concluídas pelo usuário, com
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão de formulários do AEM.
+>O Flex Workspace está obsoleto para AEM versão de formulários.
 
 ### Configurar acesso a uma fila de usuários selecionada {#configuring-access-to-a-selected-user-queue}
 
 1. Faça logon no console de administração usando uma conta de administrador.
 1. Selecione **Serviços** > Fluxo de trabalho **de** formulários > Fila **compartilhada**.
 
-1. Na guia Gerenciar acesso a um usuário, localize e selecione o usuário cuja fila você deseja compartilhar. A qualquer momento, o painel inferior direito exibe a lista de usuários com acesso à fila de usuários selecionada.
+1. Na guia Gerenciar acesso a um usuário, localize e selecione o usuário cuja fila você deseja compartilhar. A qualquer momento, o painel inferior direito exibe a lista dos usuários com acesso à fila de usuários selecionada.
 1. No painel inferior esquerdo, localize e selecione o usuário. Clique em Compartilhar.
 1. Clique em Salvar para concluir.
 
@@ -52,7 +55,7 @@ Depois de compartilhadas, essas tarefas podem ser concluídas pelo usuário, com
 1. Selecione **Serviços** > Fluxo de trabalho **de** formulários > Fila **compartilhada**.
 
 1. Na guia Gerenciar acesso a um usuário, localize e selecione o usuário cuja fila você deseja gerenciar.
-1. O painel inferior direito exibe a lista de usuários com acesso à fila de usuários selecionada. Selecione o usuário e clique em Revogar.
+1. O painel inferior direito exibe a lista dos usuários com acesso à fila de usuários selecionada. Selecione o usuário e clique em Revogar.
 1. Clique em Salvar para concluir.
 
 ## Gerenciar filas atribuídas a um usuário {#managing-queues-assigned-to-a-user}
@@ -63,14 +66,14 @@ Depois de atribuídas, essas tarefas podem ser concluídas pelo usuário usando 
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão de formulários do AEM.
+>O Flex Workspace está obsoleto para AEM versão de formulários.
 
-### Conceder acesso a uma fila de usuários selecionada {#granting-access-to-a-selected-user-queue}
+### Concessão de acesso a uma fila de usuários selecionada {#granting-access-to-a-selected-user-queue}
 
 1. Faça logon no console de administração usando uma conta de administrador.
 1. Selecione **Serviços** > Fluxo de trabalho **de** formulários > Fila **compartilhada**.
 
-1. Na guia Gerenciar acesso a um usuário, localize e selecione o usuário cuja fila você deseja compartilhar. A qualquer momento, o painel inferior direito exibe a lista de usuários com acesso à fila de usuários selecionada.
+1. Na guia Gerenciar acesso a um usuário, localize e selecione o usuário cuja fila você deseja compartilhar. A qualquer momento, o painel inferior direito exibe a lista dos usuários com acesso à fila de usuários selecionada.
 1. No painel inferior esquerdo, localize e selecione as filas de usuário que deseja compartilhar com o usuário selecionado. Clique em Compartilhar.
 1. Clique em Salvar para concluir.
 
@@ -80,6 +83,6 @@ Depois de atribuídas, essas tarefas podem ser concluídas pelo usuário usando 
 1. Selecione **Serviços** > Fluxo de trabalho **de** formulários > Fila **compartilhada**.
 
 1. Na guia Gerenciar acesso por usuário, localize e selecione o usuário cuja fila você deseja gerenciar.
-1. O painel inferior direito exibe a lista de filas de usuários atribuídas ao usuário selecionado. Selecione a fila de usuários e clique em Revogar.
+1. O painel inferior direito exibe a lista das filas de usuário atribuídas ao usuário selecionado. Selecione a fila de usuários e clique em Revogar.
 1. Clique em Salvar para concluir.
 
