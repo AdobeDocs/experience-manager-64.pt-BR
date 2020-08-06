@@ -22,7 +22,7 @@ Saiba como selecionar um usuário ou grupo para um fluxo de trabalho do AEM Form
 
 Em organizações grandes, há requisitos para selecionar dinamicamente usuários para um processo. Por exemplo, selecionar um agente de campo para servir um cliente com base na proximidade do agente com o cliente. Nesse cenário, o agente é selecionado dinamicamente.
 
-Atribuir etapas de tarefa e Adobe Sign de workflows centrados no [Forms no OSGi](/help/forms/using/aem-forms-workflow.md) fornece opções para selecionar dinamicamente um usuário. Você pode usar pacotes ECMAScript ou OSGi para selecionar dinamicamente um destinatário para a etapa Atribuir Tarefa ou para selecionar signatários para a etapa Assinar Documento.
+Atribuir etapas de tarefa e Adobe Sign de workflows centrados na [Forms no OSGi](/help/forms/using/aem-forms-workflow.md) fornece opções para selecionar dinamicamente um usuário. Você pode usar pacotes ECMAScript ou OSGi para selecionar dinamicamente um destinatário para a etapa Atribuir Tarefa ou para selecionar signatários para a etapa Assinar Documento.
 
 ## Usar o ECMAScript para selecionar dinamicamente um usuário ou grupo {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -48,7 +48,7 @@ O ECMAScript é uma linguagem de script. É usado para aplicativos de servidor e
       |--- |--- |--- |
       | jcr:title | Sequência de caracteres | Especifique o nome do script. Por exemplo, escolha o agente de campo mais próximo. Esse nome é exibido nas etapas Atribuir Tarefa e Assinar Documento. |
 
-   1. Clique em **Salvar tudo**. O script fica disponível para seleção nos componentes do fluxo de trabalho do AEM.
+   1. Clique em **Salvar tudo**. O script fica disponível para seleção nos componentes do Fluxo de trabalho AEM.
 
       ![script](assets/script.png)
 
@@ -74,11 +74,11 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-A amostra a seguir do ECMAScript seleciona dinamicamente um destinatário para a etapa do Adobe Sign. Antes de usar o script abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no script estão corretas. Se as informações do usuário mencionadas no script estiverem incorretas, o processo relacionado poderá falhar.
+A amostra a seguir do ECMAScript seleciona dinamicamente um destinatário para a etapa Adobe Sign. Antes de usar o script abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no script estão corretas. Se as informações do usuário mencionadas no script estiverem incorretas, o processo relacionado poderá falhar.
 
 >[!NOTE]
 >
->Ao usar o ECMAScript para o Adobe Sign, o script deve estar localizado em crx-repository em /apps/fd/workflow/scripts/adobesign/ e deve ter uma função chamada getAdobeSignRecipients para retornar uma lista dos usuários.
+>Ao usar o ECMAScript para Adobe Sign, o script deve estar localizado no repositório crx em /apps/fd/workflow/scripts/adobesign/, e deve ter uma função chamada getAdobeSignRecipients para retornar uma lista dos usuários.
 
 ```
 function getAdobeSignRecipients() {
@@ -117,9 +117,9 @@ function getAdobeSignRecipients() {
 
 ## Usar interface Java para escolher dinamicamente um usuário ou grupo {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Você pode usar a interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou grupo para as etapas do Adobe Sign e Atribuir Tarefa. Você pode criar um pacote OSGi que usou a interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implantá-lo no servidor de formulários AEM. Ela disponibiliza a opção para seleção nos componentes Atribuir Tarefa e Adobe Sign do fluxo de trabalho do AEM.
+Você pode usar a interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou um grupo para as etapas Adobe Sign e Atribuir Tarefa. Você pode criar um pacote OSGi que usou a interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implantá-lo no servidor AEM Forms. Ela disponibiliza a opção para seleção nos componentes Atribuir Tarefa e Adobe Sign do Fluxo de trabalho AEM.
 
-Você precisa de arquivos jar SDK [do cliente do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) AEM Forms para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto de pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
+Você precisa de arquivos jar do SDK [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms Client e jar jar [granite](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto de pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
 1. Abra o Eclipse IDE. Navegue até **[!UICONTROL Arquivo]**> **[!UICONTROL Novo projeto]**.
 1. Na tela Selecionar um assistente, selecione **[!UICONTROL Maven Project]** e clique em **[!UICONTROL Avançar]**.
@@ -231,13 +231,13 @@ Você precisa de arquivos jar SDK [do cliente do](https://helpx.adobe.com/br/aem
 
    `mvn clean install`
 
-1. Carregue o pacote em um servidor de formulários AEM. Você pode usar o Gerenciador de pacotes de AEM para importar o pacote para o servidor de formulários de AEM.
+1. Carregue o pacote em um servidor AEM Forms. Você pode usar AEM Gerenciador de pacotes para importar o pacote para o servidor AEM Forms.
 
-Depois que o pacote é importado, a opção de escolher a interface Java para selecionar dinamicamente um usuário ou grupo fica disponível nas etapas do Adobe Sign e Atribuir Tarefa.
+Depois que o pacote é importado, a opção de escolher a interface Java para selecionar dinamicamente um usuário ou grupo fica disponível para as etapas de Tarefa do Adobe Sign e Atribuir.
 
 ### Amostra do código Java para escolher dinamicamente um usuário ou grupo {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-O código de amostra a seguir escolhe dinamicamente um destinatário para a etapa do Adobe Sign. Use o código em um pacote OSGi. Antes de usar o código listado abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no código estão corretas. Se as informações do usuário mencionadas no código estiverem incorretas, o processo relacionado poderá falhar.
+O código de amostra a seguir escolhe dinamicamente um destinatário para a etapa Adobe Sign. Use o código em um pacote OSGi. Antes de usar o código listado abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no código estão corretas. Se as informações do usuário mencionadas no código estiverem incorretas, o processo relacionado poderá falhar.
 
 ```java
 /*************************************************************************
