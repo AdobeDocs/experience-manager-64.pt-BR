@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 93%
 
 ---
 
@@ -195,12 +198,14 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
 
    * Selecionar o modelo que deseja usar para criar a nova página, em seguida, clicar/tocar em **Próximo** para prosseguir.
    * **Cancelar** para suspender o processo.
+
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
 1. A partir do último estágio do assistente, você pode:
 
    * Usar as três guias para inserir as [propriedades de página](/help/sites-authoring/editing-page-properties.md) que deseja atribuir à nova página, em seguida, clicar/tocar em **Criar** para realmente criar a página.
    * Usar **Voltar** para voltar à seleção do modelo.
+
    Os campos principais são:
 
    * **Título**:
@@ -211,6 +216,7 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
       * Usado para gerar o URI. Se não for especificado, o nome é derivado do título.
       * Se você fornecer um **Nome** de página ao criar uma nova página, o AEM vai [ validar o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
       * **Não é possível enviar caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+
    >[!NOTE]
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
@@ -245,6 +251,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#product-navigation) e a barra de ferramentas
+
    E, em seguida, selecione o ícone **Editar**:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -255,7 +262,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 >
 >Navegar para outras páginas do editor de páginas só é possível no modo de visualização, pois os links não estão ativos no modo de Edição...
 
-### Copiar e colar uma página   {#copying-and-pasting-a-page}
+### Copiar e colar uma página      {#copying-and-pasting-a-page}
 
 É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
@@ -264,6 +271,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#product-navigation) e a barra de ferramentas
+
    E, em seguida, o ícone **Copiar** página:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -306,6 +314,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#product-navigation) e a barra de ferramentas
+
    E, em seguida, selecione o ícone **Mover** página:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -316,6 +325,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    * Especifique o nome que deseja para a página após movê-la, em seguida, clique/toque em **Próximo** para prosseguir.
    * **Cancelar** para suspender o processo.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    O nome da página pode permanecer o mesmo se você estiver somente movendo a página.
@@ -331,6 +341,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
       * Para selecionar o destino, clique em sua miniatura.
       * Clique em **Avançar** para continuar.
    * Use **Voltar** para voltar às especificações do nome de página.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
    >[!NOTE]
@@ -367,7 +378,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
    * **Você deseja arquivar as páginas antes de excluir?** - Se marcada, as versões das páginas selecionadas para exclusão serão criadas após a exclusão.
       * [As versões podem ser restauradas em uma data posterior.](/help/sites-authoring/working-with-page-versions.md)
       * As páginas excluídas sem versões anteriores não podem ser restauradas.
-      * Essa opção só está disponível no AEM versão 6.4.7.0.
+      * Esta opção só está disponível AEM versão 6.4.7.0.
    * **Cancelar** para suspender a ação
    * **Excluir** para confirmar a ação:
 
@@ -397,6 +408,7 @@ Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 >* Pastas só podem ser criadas diretamente em **Sites** ou em outras pastas. Eles não podem ser criadas em uma página.
 >* As ações padrão de mover, copiar, colar, excluir, publicar, cancelar a publicação e exibir/editar propriedades podem ser executadas em uma pasta.
 >* As pastas não estão disponíveis para seleção em uma live copy.
+
 >
 
 
