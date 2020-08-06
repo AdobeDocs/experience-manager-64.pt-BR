@@ -1,8 +1,8 @@
 ---
-title: SRP e UGC Essentials
-seo-title: SRP e UGC Essentials
-description: Visão geral do provedor de recursos de armazenamento e do conteúdo gerado pelo usuário
-seo-description: Visão geral do provedor de recursos de armazenamento e do conteúdo gerado pelo usuário
+title: Princípios básicos de SRP e UGC
+seo-title: Princípios básicos de SRP e UGC
+description: Visão geral do provedor de recursos do Armazenamento e do conteúdo gerado pelo usuário
+seo-description: Visão geral do provedor de recursos do Armazenamento e do conteúdo gerado pelo usuário
 uuid: a4ee8725-f554-4fcf-ac1e-34878d6c02f8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
 
-# SRP e UGC Essentials {#srp-and-ugc-essentials}
+# Princípios básicos de SRP e UGC {#srp-and-ugc-essentials}
 
 ## Introdução {#introduction}
 
-Se você não estiver familiarizado com o SRP (Storage Resource Provider [fornecedor de recursos de armazenamento]) e seu relacionamento com o UGC (User-Gered Content Producer [conteúdo gerado pelo usuário]), visite [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md).
+Se você não estiver familiarizado com o SRP (armazenamento Resource Provider [fornecedor de recursos do ]) e seu relacionamento com o UGC (User-Gered Content Provider [conteúdo gerado pelo usuário]), visite a Visão geral [do Armazenamento](working-with-srp.md) de conteúdo da comunidade e do provedor de recursos do [](srp.md)Armazenamento.
 
 Esta seção da documentação fornece algumas informações essenciais sobre o SRP e o UGC.
 
@@ -27,15 +30,15 @@ Esta seção da documentação fornece algumas informações essenciais sobre o 
 
 A API SocialResourceProvider (API SRP) é uma extensão de várias APIs do Provedor de recursos Sling. Inclui suporte para paginação e incremento atômico (útil para tally e pontuação).
 
-As consultas são necessárias para os componentes do quadro SEPA, uma vez que é necessário classificar por data, utilidade, número de votos e assim por diante. Todas as opções de SRP têm mecanismos de consulta flexíveis que não dependem da definição de categorias.
+Os Query são necessários para os componentes do quadro SEPA para os cartões, uma vez que é necessário classificar por data, utilidade, número de votos, etc. Todas as opções de SRP têm mecanismos flexíveis de query que não dependem da definição de baldes.
 
-O local de armazenamento SRP incorpora o caminho do componente. A API SRP deve ser sempre usada para acessar o UGC, já que o caminho raiz depende da opção SRP selecionada, como ASRP, MSRP ou JSRP.
+A localização do armazenamento SRP incorpora o caminho do componente. A API SRP deve ser sempre usada para acessar o UGC, já que o caminho raiz depende da opção SRP selecionada, como ASRP, MSRP ou JSRP.
 
 A API SRP não é uma classe abstrata, é uma interface. Uma implementação personalizada não deve ser realizada com ligeireza, já que os benefícios de futuras melhorias nas implementações internas seriam desperdiçados ao atualizar para uma nova versão.
 
 Os meios para usar a API SRP são utilitários fornecidos, como os encontrados no pacote SocialResourceUtilities.
 
-Durante a atualização do AEM 6.0 ou anterior, será necessário migrar o UGC para todos os SRPs, para os quais uma ferramenta Open Source está disponível. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Ao atualizar do AEM 6.0 ou anterior, será necessário migrar o UGC para todos os SRPs, para os quais uma ferramenta Open Source está disponível. See [Upgrading to AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -62,7 +65,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Para outras substituições do SocialUtils, consulte Refatoração [SocialUtils](socialutils.md).
+Para outras substituições do SocialUtils, consulte Refatoração [do SocialUtils](socialutils.md).
 
 Para obter diretrizes de codificação, consulte [Acesso ao UGC com SRP](accessing-ugc-with-srp.md).
 
@@ -97,13 +100,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >
 >O caminho retornado por resourceToACLPath() é *não é *adequado para [acessar o próprio UGC](#utility-method-to-access-acls) .
 
-## Locais de armazenamento relacionados ao UGC {#ugc-related-storage-locations}
+## Locais de Armazenamentos relacionados ao UGC {#ugc-related-storage-locations}
 
-As descrições a seguir do local de armazenamento podem ser úteis no desenvolvimento com JSRP ou talvez MSRP. No momento, não há interface para acessar o UGC armazenado no ASRP, como há para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (ferramentas MongoDB).
+As seguintes descrições da localização do armazenamento podem ser úteis ao desenvolver com JSRP ou talvez MSRP. No momento, não há interface para acessar o UGC armazenado no ASRP, como há para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (ferramentas MongoDB).
 
 **localização do componente**
 
-Quando um membro entra no UGC no ambiente de publicação, ele interage com um componente como parte de um site do AEM.
+Quando um membro entra no UGC no ambiente de publicação, ele interage com um componente como parte de um site AEM.
 
 Um exemplo desse componente é o componente [](http://localhost:4502/content/community-components/en/comments.html) comments que existe no site [Community Components Guide](components-guide.md) . O caminho para o nó de comentário no repositório local é:
 
@@ -123,11 +126,11 @@ O UGC é criado em nenhum desses locais e só deve ser acessado usando um métod
 * Caminho raiz = /content/usergenerate/asi/srp-choice
 * Nó UGC para JSRP = /content/usergenerate/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_
 
-*Esteja ciente* de que, para o JSRP, o nó UGC *só* estará presente na instância do AEM (autor ou publicação) na qual foi inserido. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
+*Esteja ciente* de que, para o JSRP, o nó UGC *só* estará presente na instância AEM (autor ou publicação) na qual foi inserido. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
 
 ## Informações relacionadas {#related-information}
 
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - Introdução e visão geral de uso do repositório
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
 * [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
 
