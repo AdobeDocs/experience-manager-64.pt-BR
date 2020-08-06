@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1649'
+ht-degree: 1%
 
 ---
 
@@ -45,11 +48,11 @@ Na etapa [Modelo de](sites-console.md#step2013asitetemplate)site, insira um tít
 * **[!UICONTROL Raiz]** do site da comunidade: (deixe em branco para a raiz padrão `/content/sites`)
 
 * **[!UICONTROL Configurações]** da nuvem: (deixe em branco se nenhuma configuração de nuvem for especificada) forneça o caminho para as configurações de nuvem especificadas.
-* **[!UICONTROL Idioma]** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas básicos dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo a melhor prática descrita em [Traduzir conteúdo para sites](../../help/sites-administering/translation.md)multilíngues. A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
+* **[!UICONTROL Idioma]** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas base dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo as práticas recomendadas descritas em [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
 
 * **[!UICONTROL Nome]** do site da comunidade: engajamento
 
-   * Verifique novamente o nome, pois ele não é facilmente alterado depois que o site é criado
+   * Verifique o nome pelo Duplo, pois ele não é facilmente alterado depois que o site é criado
    * O URL inicial será exibido abaixo do Nome do site da comunidade
    * Para um URL válido, acrescente um código de idioma base + &quot;.html&quot;
    * *Por exemplo*, http://localhost:4502/content/sites/ `engage/en.html`
@@ -64,7 +67,7 @@ A etapa de design é apresentada em duas seções para selecionar o tema e o ban
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
-Selecione o estilo desejado para aplicar ao modelo. Quando selecionado, o tema será sobreposto com uma marca de seleção.
+Selecione o estilo desejado a ser aplicado ao modelo. Quando selecionado, o tema será sobreposto com uma marca de seleção.
 
 ![tema do site](assets/sitetheme.png)
 
@@ -76,7 +79,7 @@ Selecione o estilo desejado para aplicar ao modelo. Quando selecionado, o tema s
 
 Selecione **[!UICONTROL Próximo]**.
 
-### Etapa 3:Configurações {#step-settings}
+### Etapa 3: Configurações {#step-settings}
 
 Na etapa Configurações, antes de selecionar `Next`, observe que há sete seções que fornecem acesso às configurações que envolvem gerenciamento de usuários, marcação, moderação, gerenciamento de grupos, análise, tradução e ativação.
 
@@ -100,9 +103,9 @@ Marque todas as caixas de seleção para Gerenciamento de [usuários](sites-cons
 
 #### TAGGING {#tagging}
 
-As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando namespaces do AEM previamente definidos pelo console [de](../../help/sites-administering/tags.md#tagging-console) marcação (como o namespace [do](setup.md#create-tutorial-tags)Tutorial).
+As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando AEM namespaces previamente definidas por meio do Console [de](../../help/sites-administering/tags.md#tagging-console) marcação (como a namespace [do](setup.md#create-tutorial-tags)tutorial).
 
-Encontrar namespaces é fácil usando a pesquisa de tipo avançado. Por exemplo,
+Encontrar namespaces é fácil usando a pesquisa antecipada por tipo. Por exemplo,
 
 * Digite &#39;tut&#39;
 * Selecionar `Tutorial`
@@ -122,7 +125,7 @@ Por exemplo,
 
 >[!NOTE]
 >
->[O serviço](https://helpx.adobe.com/experience-manager/6-3/communities/using/deploy-communities.html#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes somente no ambiente de publicação.
+>[O serviço](https://helpx.adobe.com/experience-manager/6-3/communities/using/deploy-communities.html#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes apenas no ambiente publish.
 
 ![community_role-1](assets/community_roles-1.png)
 
@@ -134,7 +137,7 @@ Aceite as configurações globais padrão para [moderar](sites-console.md#modera
 
 #### ANALYTICS {#analytics}
 
-Se o Adobe Analytics estiver licenciado e um serviço e uma estrutura em nuvem do Analytics tiverem sido configurados, será possível habilitar o Analytics e selecionar a estrutura.
+Se a Adobe Analytics estiver licenciada e um serviço e uma estrutura em nuvem do Analytics tiverem sido configurados, será possível habilitar o Analytics e selecionar a estrutura.
 
 Consulte Configuração [do Analytics para recursos](analytics.md)de comunidades.
 
@@ -157,7 +160,7 @@ As configurações [de](sites-console.md#translation) Tradução especificam o i
 
 Deixe em branco ao criar uma comunidade de envolvimento.
 
-Para que um tutorial semelhante crie rapidamente uma comunidade [de](overview.md#enablement-community)ativação, consulte [Introdução ao AEM Communities para ativar](getting-started-enablement.md).
+Para obter um tutorial semelhante para criar rapidamente uma comunidade [de](overview.md#enablement-community)ativação, consulte [Introdução à AEM Communities para Ativação](getting-started-enablement.md).
 
 Selecione **[!UICONTROL Próximo]**.
 
@@ -179,7 +182,7 @@ Depois de selecionar a pasta do site da comunidade para abri-la, passe o mouse s
 
 ![siteactionicons-1](assets/siteactionicons-1.png)
 
-Ao selecionar o quarto ícone de elipses (Mais ações), as opções Exportar site e Excluir site aparecem.
+Ao selecionar o quarto ícone de elipses (Mais ações), as opções Exportar site e Excluir site são exibidas.
 
 ![siteactionsnew-1](assets/siteactionsnew-1.png)
 
@@ -191,13 +194,13 @@ Da esquerda para a direita estão:
 
 * **Publicar site** Selecione o ícone do mundo para publicar o site da comunidade (por exemplo, se o servidor de publicação estiver sendo executado em sua máquina local, em seguida, para localhost:4503 por padrão)
 
-* **Exportar site** Selecione o ícone de exportação para criar um pacote do site da comunidade armazenado no gerenciador [de](../../help/sites-administering/package-manager.md) pacotes e baixado.
+* **Exportar site** Selecione o ícone de exportação para criar um pacote do site da comunidade que esteja armazenado no gerenciador [de](../../help/sites-administering/package-manager.md) pacotes e baixado.
 
    Observe que o UGC não está incluído no pacote do site.
 
 * **Excluir site**
 
-   selecione o ícone excluir para excluir o site da comunidade no console **[!UICONTROL Comunidades > Sites]**. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
+   selecione o ícone de exclusão para excluir o site da comunidade no console **[!UICONTROL Comunidades > Sites]**. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
 
 ![siteactions-1](assets/siteactions-1.png)
 
@@ -213,6 +216,7 @@ Da esquerda para a direita estão:
 >1. Ao lado de **[!UICONTROL Configurações]** , selecione **[!UICONTROL Editar]**
 >1. Na caixa de diálogo pop-up de Configurações do agente, selecione a guia Transporte
 >1. No URI, altere o número da porta, 4503, para o número da porta desejado
+
 >
 >
 Por exemplo, para usar a porta 6103: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
@@ -240,14 +244,14 @@ Para este novo site da comunidade, dado o nome do site &quot;engajar&quot; na Et
 * Gerentes de comunidades de envolvimento
 * Administradores de grupos de envolvimento da comunidade
 * Membros de participação da comunidade
-*  Moderadores de envolvimento da comunidade
+* Moderadores de envolvimento da comunidade
 * Membros com privilégios de envolvimento da comunidade
 * Sitecontentmanager do envolvimento da comunidade
 
 Observe que [Aaron McDonald](tutorials.md#demo-users) é membro do
 
 * Gerentes de comunidades de envolvimento
-*  Moderadores de envolvimento da comunidade
+* Moderadores de envolvimento da comunidade
 * Membros participantes da comunidade (indiretamente como membro do grupo Moderadores)
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
@@ -266,9 +270,9 @@ Adicionar um `Login Page Mapping` como
 
 ## Etapas opcionais {#optional-steps}
 
-### Alterar a página inicial padrão {#change-the-default-home-page}
+### Alterar o Home page padrão {#change-the-default-home-page}
 
-Ao trabalhar com o site de publicação para fins de demonstração, pode ser útil alterar a página inicial padrão para o novo site.
+Ao trabalhar com o site de publicação para fins de demonstração, pode ser útil alterar o home page padrão para o novo site.
 
 Para fazer isso, é necessário usar o [CRXDE](http://localhost:4503/crx/de) Lite para editar a tabela de mapeamento [de](../../help/sites-deploying/resource-mapping.md) recursos na publicação.
 
@@ -323,11 +327,11 @@ Se não for possível salvar as alterações, verifique se o nome do nó é `loc
 
 #### Solução de problemas: Falha ao redirecionar {#troubleshooting-fail-to-redirect}
 
-O valor &#39;**$**&#39; no final da `sling:match`string de expressão regular é crucial, de modo que apenas `http://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Assim, quando o AEM tenta redirecionar para a página de logon, ele falha.
+O valor &#39;**$**&#39; no final da `sling:match`string de expressão regular é crucial, de modo que apenas `http://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Dessa forma, quando AEM tentar redirecionar para a página de logon, isso falhará.
 
 ### Modificar o Site {#modify-the-site}
 
-Após a criação inicial do site, os autores podem usar o ícone [](sites-console.md#authoring-site-content) Abrir site para executar atividades de criação padrão do AEM.
+Após a criação inicial do site, os autores podem usar o ícone [](sites-console.md#authoring-site-content) Abrir site para executar atividades de criação padrão AEM.
 
 Além disso, os administradores podem usar o ícone [](sites-console.md#modifying-site-properties) Editar site para modificar as propriedades do site, como o título.
 
@@ -335,4 +339,4 @@ Após qualquer modificação, lembre-se de **salvar** e **republicar** o site.
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
