@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
 source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ Elementos com posição absoluta podem causar problemas na posição de sua sobr
 
 ### unidades vh {#vh-units}
 
-`vh` não há suporte para unidades, pois a altura do iframe deve ser automaticamente ajustada pelo AEM.
+`vh` não há suporte para unidades, pois a altura do iframe deve ser automaticamente ajustada por AEM.
 
 ### Imagens de plano de fundo fixas {#fixed-background-images}
 
