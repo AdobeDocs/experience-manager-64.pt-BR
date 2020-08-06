@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aeacddc5-a128-40cd-a4c3-07fa173f90c4
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Os componentes Atribuições de ativação e Catálogo [de](catalog.md) ativaç�
 
 O componente Atribuições de ativação permite que o membro da comunidade (aluno) atualmente conectado acesse seus recursos [de](resources.md)ativação atribuídos.
 
-No tutorial [Introdução ao AEM Communities para ativação](getting-started-enablement.md) , consulte a exibição de um membro de atribuições e catálogos na seção [Experiência do site](enablement-published-site.md) publicado.
+No tutorial [Introdução à AEM Communities para ativação](getting-started-enablement.md) , consulte a visualização de atribuições e catálogos de um membro na seção [Experiência no site](enablement-published-site.md) publicado.
 
 ## Informações adicionais {#additional-information}
 
