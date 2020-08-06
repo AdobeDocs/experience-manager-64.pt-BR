@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 0%
 
 ---
 
 
 # Configuração de uma impressora de rede PDFG (somente Windows) {#setting-up-a-pdfg-network-printer-windows-only}
 
-A impressora de rede PDFG permite que os usuários gerem um documento PDF a partir de qualquer aplicativo compatível com impressão. Depois que um usuário instala a impressora de rede PDFG, uma nova impressora chamada gerador *de* PDF é exibida na seção Impressoras do Painel de controle do Windows. Se uma impressora com o mesmo nome já existir, o usuário será solicitado a fornecer outro nome.
+A impressora de rede PDFG permite que os usuários gerem um documento PDF a partir de qualquer aplicativo compatível com impressão. Depois que um usuário instala a impressora de rede PDFG, uma nova impressora chamada gerador *de* PDF é exibida na seção Impressoras do Painel de controle do Campaign do Windows. Se uma impressora com o mesmo nome já existir, o usuário será solicitado a fornecer outro nome.
 
 A impressão nesta impressora a partir de qualquer aplicativo envia o documento (em formato PostScript) para o Gerador de PDF, que converte o arquivo PostScript em PDF. Dependendo de como você configurou o Gerador de PDF, ele envia o documento PDF para o usuário como um anexo para uma mensagem de email, encaminha o documento PDF para um serviço ou processo de formulários AEM especificado ou executa ambas as ações.
 
