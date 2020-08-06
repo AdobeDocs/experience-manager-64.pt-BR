@@ -10,13 +10,16 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 0%
 
 ---
 
 
 # Criar novas pastas para categorizar formulários {#create-new-folders-to-categorize-forms}
 
-Você pode organizar seus ativos melhor usando pastas. Como o AEM Forms oferece suporte a vários tipos de ativos, como modelos de formulário, PDFs, documentos, recursos e formulários adaptáveis, com vários metadados, você pode usar pastas para categorizar seus formulários com base nos critérios desejados.
+Você pode organizar seus ativos melhor usando pastas. Como a AEM Forms suporta vários tipos de ativos, como modelos de formulário, PDFs, documentos, recursos e formulários adaptáveis, com vários metadados, você pode usar pastas para categorizar seus formulários com base nos critérios desejados.
 
 O AEM Forms permite alterar o título de uma pasta. O título não é igual ao nome do nó sob o qual a pasta é armazenada no repositório. Em vez disso, o título é mantido como metadados para a pasta. Se você alterar o título de uma pasta, o caminho de qualquer ativo presente na pasta não será afetado.
 
@@ -24,18 +27,19 @@ O AEM Forms permite alterar o título de uma pasta. O título não é igual ao n
 
 Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
-* Carregue um arquivo ZIP que contenha ativos na estrutura de pastas desejada (consulte [Obter documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* Carregue um arquivo ZIP que contenha ativos na estrutura de pastas desejada (Consulte [Obtendo documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
 * Criar uma nova pasta vazia
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
-1. Navegue até o local em que deseja criar uma pasta.
+1. Navegue até o local sob o qual você deseja criar uma pasta.
 1. Clique no ícone ![aem6forms_add](assets/aem6forms_add.png) na barra de ferramentas e selecione **[!UICONTROL Criar pasta]**.
 
 1. Digite os seguintes detalhes:
 
-   * **** Título: Nome de exibição da pasta
-   * **** Nome: *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
+   * **Título:** Nome de exibição da pasta
+   * **Nome:** *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
+
    >[!NOTE]
    >
    >Por padrão, o valor do campo de nome é automaticamente preenchido a partir do título. O nome só pode conter caracteres alfanuméricos ou os caracteres especiais hífen (-) e underscore (_). Quaisquer outros caracteres especiais inseridos no título serão automaticamente substituídos por um hífen e você será solicitado a confirmar o novo nome. Você pode optar por continuar com o nome sugerido ou editá-lo posteriormente.
@@ -44,7 +48,7 @@ Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
    Uma nova pasta com o título definido é exibida no local atual na lista de ativos.
 
-   Se existir uma pasta com o nome especificado, o envio falhará com um erro. É possível exibir a mensagem de erro passando o mouse sobre o ícone error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece ao lado do campo de nome.
+   Se existir uma pasta com o nome especificado, o envio falhará com um erro. É possível visualização a mensagem de erro passando o mouse sobre o ícone error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece ao lado do campo de nome.
 
 ### Editar o título da pasta {#edit-the-folder-title-br}
 
