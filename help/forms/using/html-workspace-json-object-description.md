@@ -1,6 +1,6 @@
 ---
-title: Descrição do objeto JSON da área de trabalho do AEM Forms
-seo-title: Descrição do objeto JSON da área de trabalho do AEM Forms
+title: Descrição do objeto JSON do espaço de trabalho AEM Forms
+seo-title: Descrição do objeto JSON do espaço de trabalho AEM Forms
 description: Informações conceituais sobre os objetos JavaScript JSON usados na área de trabalho do LiveCycle AEM Forms para personalização, extensão, modificação e reutilização.
 seo-description: Informações conceituais sobre os objetos JavaScript JSON usados na área de trabalho do LiveCycle AEM Forms para personalização, extensão, modificação e reutilização.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
@@ -10,11 +10,14 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 9%
 
 ---
 
 
-# Descrição do objeto JSON da área de trabalho do AEM Forms {#aem-forms-workspace-json-object-description}
+# Descrição do objeto JSON do espaço de trabalho AEM Forms {#aem-forms-workspace-json-object-description}
 
 Os objetos JSON usados na área de trabalho do AEM Forms estão descritos abaixo.
 
