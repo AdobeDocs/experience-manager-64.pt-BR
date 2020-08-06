@@ -1,25 +1,28 @@
 ---
-title: Matriz de compatibilidade para o AEM Screens Player
-seo-title: Matriz de compatibilidade para o AEM Screens Player
-description: Esta página lista os AEM Screens Players com sua respectiva versão do AEM Screens.
-seo-description: Esta página lista os AEM Screens Players com sua respectiva versão do AEM Screens.
+title: Matriz de compatibilidade para AEM Screens Player
+seo-title: Matriz de compatibilidade para AEM Screens Player
+description: Esta página lista os AEM Screens Players com sua respectiva versão AEM Screens.
+seo-description: Esta página lista os AEM Screens Players com sua respectiva versão AEM Screens.
 page-status-flag: never-activated
 uuid: d5bf1eee-d22a-4962-8289-fd56a54d85ae
 contentOwner: jsyal
 discoiquuid: dbc16a51-74c4-43bb-9501-081de1eb2f7d
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 7%
 
 ---
 
 
-# Matriz de compatibilidade para o AEM Screens Player{#compatibility-matrix-for-aem-screens-player}
+# Matriz de compatibilidade para AEM Screens Player{#compatibility-matrix-for-aem-screens-player}
 
 >[!NOTE]
 >
 >As seguintes informações são atualizadas a partir de 14 de maio de 2018.
 
-A seção a seguir lista os players de tela do Adobe Experience Manager (AEM) com sua respectiva versão do AEM Screens.
+A seção a seguir lista o Adobe Experience Manager (AEM) Screens Players com sua respectiva versão do AEM Screens.
 
 ## iOS Player {#ios-player}
 
@@ -46,7 +49,7 @@ A seção a seguir lista os players de tela do Adobe Experience Manager (AEM) co
 
 ### Link de download {#download-link}
 
-Clique no link de download do iOS Player:
+Clique no link de download para o iOS Player:
 
 aem-screens-player-ios-3.3.0.ipa.zip
 
@@ -87,7 +90,7 @@ aem-screens-player-windows-1.0.48-signed.exe.zip
 
 | **Versão do servidor AEM** | **Android Player** |
 |---|---|
-| **AEM 6.3+SP1+Screens FP1(1.0.64_B002)** | **3.2.68 -** (Disponível no Site Macromedia) e Google Play Store |
+| **AEM 6.3+SP1+Screens FP1(1.0.64_B002)** | **3.2.68 -** (Disponível no site da Macromedia) e Google Play Store |
 | **AEM 6.3+SP1+Screens FP2(1.0.298)** | **3.3.0** |
 | **AEM 6.4** | **3.3.0** |
 
@@ -113,7 +116,7 @@ aem-screens-player-android-3.3.0.apk.zip
    <td><p><strong>3.2.72 - </strong>Disponível na Apple Store</p> <p><strong>3.3.0</strong> - Não funciona</p> <p> </p> </td> 
    <td><strong>1.0.12</strong> - (Disponível no Macromedia)</td> 
    <td><p><strong>1.0.30 -</strong> Disponível na Chrome Store.</p> <p>Não suportado com o Feature Pack1</p> </td> 
-   <td><strong>3.2.68 -</strong> (Disponível no Site Macromedia) e Google Play Store</td> 
+   <td><strong>3.2.68 -</strong> (Disponível no site da Macromedia) e Google Play Store</td> 
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
