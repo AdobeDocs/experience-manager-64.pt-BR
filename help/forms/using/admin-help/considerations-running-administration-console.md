@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +27,7 @@ Estes são alguns aspectos a serem considerados ao executar o Console de adminis
 
    * Clicar em um link o retorna à página de logon em vez do link esperado.
    * Clicar em um link exibe um erro de permissão.
+
    A prática recomendada é executar o console de administração de outro navegador, como o Mozilla Firefox, para garantir que nenhum link falhe.
 
 * Não use caracteres de barra invertida () ao executar pesquisas no console de administração.
