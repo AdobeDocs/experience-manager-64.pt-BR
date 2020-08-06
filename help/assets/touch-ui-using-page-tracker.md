@@ -1,6 +1,6 @@
 ---
 title: Uso do rastreador de páginas e do código incorporado em páginas da Web
-description: Saiba como incluir o rastreador de páginas e incorporar códigos JavaScript no código do seu site para permitir que o Adobe Analytics capture dados de uso em torno dos ativos.
+description: Saiba como incluir o rastreador de páginas e incorporar códigos JavaScript no código do seu site para permitir que a Adobe Analytics capture dados de uso em torno dos ativos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Uso do rastreador de páginas e do código incorporado em páginas da Web {#using-page-tracker-and-embed-code-in-web-pages}
 
-O rastreador de páginas é uma parte do código JavaScript que você inclui no código de sites de terceiros para permitir que o Adobe Analytics capture dados de uso em ativos do Adobe Experience Manager (AEM) nesses sites.
+O rastreador de páginas é um código JavaScript que você inclui no código de sites de terceiros para permitir que a Adobe Analytics capture dados de uso em torno de ativos da Adobe Experience Manager (AEM) nesses sites.
 
 Para capturar eventos, como cliques e assim por diante, específicos dos ativos, você também inclui o código Incorporado no código de sites de terceiros.
 
