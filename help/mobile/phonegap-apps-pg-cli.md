@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -19,29 +22,29 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 A qualquer momento, como desenvolvedor, você pode executar seu aplicativo em um dispositivo ou em um emulador, desde que tenha configurado seu ambiente de desenvolvimento.
 
-Para executar os seguintes exemplos, você precisará de um sistema que execute o OSx (Mac) com Xcode ou um sistema Mac/Win/Linux com o Android SDK instalado.
+Para executar os seguintes exemplos, você precisará de um sistema que execute o OSx (Mac) com Xcode ou de um sistema Mac/Win/Linux com o Android SDK instalado.
 
-## Inicialize seu ambiente de desenvolvimento {#bootstrap-your-development-environment}
+## Bootstrap de seu ambiente de desenvolvimento {#bootstrap-your-development-environment}
 
 [Configurar CLI do PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
 Para iOS: Para desenvolver para iPhones e iPads, você precisa do Xcode IDE da Apple.
 
-* Faça o download gratuitamente [aqui](https://developer.apple.com/xcode/downloads/).
+* Descarregue-o gratuitamente [aqui](https://developer.apple.com/xcode/downloads/).
 * [Guia da plataforma PhoneGap iOS](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
 Para Android: Para desenvolver para iPhones e iPads, você precisa do Android Stuido IDE do Google.
 
-* Faça o download gratuitamente [aqui](https://developer.android.com/sdk/index.html).
+* Descarregue-o gratuitamente [aqui](https://developer.android.com/sdk/index.html).
 * [Guia da plataforma PhoneGap Android](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 ## Baixar a fonte {#download-the-source}
 
-Depois de inicializar com êxito seu ambiente de desenvolvimento, baixe a fonte do bloco de ferramentas de criação do aplicativo AEM:
+Depois de inicializar com êxito seu ambiente de desenvolvimento, baixe a fonte do bloco AEM App Build:
 
 * Clique no ícone suspenso PhoneGap Build.
 
@@ -91,13 +94,14 @@ phonegap run ios
 >1. Navegue até helloWorld (cd helloWorld)
 >1. Execute &#39;phonegap run android (ou substitua o Android por ios como acima).
 >1. O Emulador abrirá a execução do aplicativo PhoneGap recém-criado, dizendo &quot;Pronto para dispositivo&quot; se a ponte JavaScript para nativo estiver operacional.
+
 >
 >
-Isso verificará se o ambiente de desenvolvimento da CLI PhoneGap está ativo e funcionando corretamente.
+Isso verificará se o ambiente de desenvolvimento PhoneGap CLI está ativo e funcionando corretamente.
 
 ## Depurar Javascripts com depuração Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
 
-Você pode depurar JavaScripts do aplicativo usando as ferramentas do desenvolvedor do Safari, da mesma forma que faria com um aplicativo da Web.
+Você pode depurar JavaScripts de seu aplicativo usando as ferramentas de desenvolvedor do Safari, da mesma forma que faria com um aplicativo da Web.
 
 ## Ativar ferramentas para desenvolvedores do Safari {#enable-safari-developer-tools}
 
@@ -148,7 +152,7 @@ Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quan
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-* Use os botões de controle para continuar a execução, navegue até, entre e saia dos métodos:
+* Use os botões de controle para continuar a execução, passe o mouse sobre, passe para dentro e saia dos métodos:
 
 ![](do-not-localize/chlimage_1-4.png)
 
