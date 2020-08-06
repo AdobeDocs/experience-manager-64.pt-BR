@@ -9,6 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
 source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+workflow-type: tm+mt
+source-wordcount: '3866'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ Normalmente, os usuários corporativos não exigem conhecimento de representaç�
 
 ## Pré-requisitos {#prerequisite}
 
-Instale o Pacote [de](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) compatibilidade para visualização da opção **Dicionários** de dados na página **Formulários** .
+Instale o Pacote [de](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) compatibilidade para visualização da opção **Dicionários** de dados na página do **Forms** .
 
 ## Criar um dicionário de dados {#createdatadictionary}
 
@@ -46,7 +49,7 @@ Use o Editor de dicionário de dados para criar um dicionário de dados ou faça
 >
 >Para várias letras que exigem elementos semelhantes, é possível criar um dicionário de dados comum. Entretanto, um grande dicionário de dados com um grande número de elementos pode causar problemas de desempenho ao usar o dicionário de dados e carregar os elementos, como em letras e fragmentos de documento. Se tiver problemas de desempenho, tente criar dicionários de dados separados para letras diferentes.
 
-1. Selecione **Formulários** > Dicionários **de dados**.
+1. Selecione **Forms** > Dicionários **de dados**.
 1. Toque em **Criar dicionário** de dados.
 1. Na tela Propriedades, adicione o seguinte:
 
@@ -56,6 +59,7 @@ Use o Editor de dicionário de dados para criar um dicionário de dados ou faça
    * **Descrição**: (Opcional) Descrição do dicionário de dados.
    * **Tags:** (Opcional) Para criar uma tag personalizada, insira o valor no campo de texto e pressione Enter. Você pode ver sua tag abaixo do campo de texto das tags. Quando você salva esse texto, as tags recém-adicionadas também são criadas.
    * **Propriedades** estendidas: (Opcional) Toque em **Adicionar campo** para especificar atributos de metadados para o dicionário de dados. Na coluna Nome da propriedade, digite um nome de propriedade exclusivo. Na coluna Valor, insira um valor a ser associado à propriedade.
+
    ![Propriedades do dicionário de dados especificadas em alemão](do-not-localize/1_ddproperties.png)
 
 1. (Opcional) Para carregar uma definição de schema XSD para seu dicionário de dados, no painel Estrutura do dicionário de dados, toque em **Carregar Schema** XML. Navegue até o arquivo XSD, selecione-o e toque em **Abrir**. Um Dicionário de dados é criado com base no schema XML carregado. É necessário ajustar os nomes de exibição e as descrições dos elementos no dicionário de dados. Para fazer isso, selecione os nomes dos elementos tocando neles e edite suas descrições, nomes de exibição e outros detalhes nos campos no painel direito.
@@ -78,6 +82,7 @@ Use o Editor de dicionário de dados para criar um dicionário de dados ou faça
    * Um DDE composto contém outros DDEs, que podem ser do tipo primitivo, composto ou coleção. Por exemplo, um endereço, que consiste em um endereço, cidade, província, país e código postal.
    * DDEs primitivos são elementos como sequências de caracteres, números, datas e valores booleanos que contêm informações como um nome de cidade.
    * Uma coleção é uma lista de DDEs simples ou compostos semelhantes. Por exemplo, um cliente com vários locais ou endereços de faturamento e envio diferentes.
+
    Veja a seguir algumas regras para criar um dicionário de dados:
 
    * Somente o tipo composto é permitido como DDE de nível superior em um dicionário de dados.
@@ -85,6 +90,7 @@ Use o Editor de dicionário de dados para criar um dicionário de dados ou faça
    * O nome de referência deve ser exclusivo.
    * Um DDE pai (composto) não pode ter dois filhos com o mesmo nome.
    * As enumerações contêm apenas tipos de String primitiva.
+
    Para obter mais informações sobre elementos Compostos, Coleção e Primitivos e como trabalhar com elementos do dicionário de dados, consulte [Mapeamento de elementos do dicionário de dados para o Schema](#mappingddetoschema)XML.
 
    Para obter informações sobre validações no Dicionário de dados, consulte Validações [do Editor do dicionário de](#ddvalidations)dados.
@@ -125,6 +131,7 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos no d
    * Passe o mouse sobre um dicionário de dados e toque em Editar.
    * Selecione um dicionário de dados e toque em Editar no cabeçalho.
    * Passe o mouse sobre um dicionário de dados e toque em Selecionar. Em seguida, toque em Editar no cabeçalho.
+
    Ou toque em um dicionário de dados para visualização-lo.
 
 1. No dicionário de dados, toque em um elemento simples para selecioná-lo. Os elementos de composição e coleção não têm referências.
@@ -357,7 +364,7 @@ A exportação de um XSD requer mapeamento de dados específicos, que é detalha
   </tr> 
   <tr> 
    <td><p>xs:element onde maxOcorre &gt; 1<br /> </p> </td> 
-   <td><p>DDE do tipo - COLLECTION-<br /> Um nó DDE é criado ao lado do DDE COLLECTION, que captura informações do nó COLLECTION pai. O mesmo é criado para a coleção de tipos de dados simples/compostos. Sempre que você tiver uma COLEÇÃO do tipo composto, a árvore do Dicionário de dados captura os campos constituintes nos filhos do DDE criados para capturar informações de tipo.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE para informações de tipo)<br /> - campo<br /> DDE(STRING) - campo<br /> DDE(STRING) <br /> </p> </td> 
+   <td><p>DDE do tipo - COLLECTION-<br /> Um nó DDE é criado ao lado do DDE COLLECTION, que captura informações do nó COLLECTION pai. O mesmo é criado para a coleção de tipos de dados simples/compostos. Sempre que você tiver uma COLEÇÃO do tipo composto, a árvore do Dicionário de dados captura os campos constituintes nos filhos do DDE criados para capturar informações de tipo.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE para informações de tipo)<br /> - campo DDE(STRING)1<br /> - campo DDE(STRING)2<br /> <br /> </p> </td> 
    <td>java.util.List<br /> </td> 
   </tr> 
   <tr> 
@@ -559,7 +566,7 @@ O exemplo a seguir mostra o schema de uma observação.
    <td>/note/to</td> 
   </tr> 
   <tr> 
-   <td>from</td> 
+   <td>de</td> 
    <td>/note/from</td> 
   </tr> 
   <tr> 
