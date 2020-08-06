@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ A execução HTML5 de um modelo de formulário baseado em XFA consiste em vário
 >
 >Nas classes CSS, não altere o valor da largura, altura, espessura da borda, superior, esquerda, direita, inferior, preenchimento, margem e outros atributos de posição e tamanho. Qualquer alteração nos atributos de posição e tamanho traz alterações ao layout do formulário.
 
-## Classes CSS para elementos {#css-classes-nbsp-for-elements-nbsp}
+## Classes CSS para elementos  {#css-classes-nbsp-for-elements-nbsp}
 
 Cada elemento contém classes CSS bem definidas. É possível modificar essas classes para alterar a aparência de um elemento. Cada elemento, exceto os elementos field e draw, tem duas classes CSS - classe Type e classe Name.
 
@@ -46,7 +49,7 @@ O elemento field contém dois elementos aninhados: widget e legenda.
 O elemento do widget contém o elemento da interface do usuário para interação com os usuários. Ele tem três classes de CSS:
 
 * **Widget**: Todo widget tem essa classe.
-* **name**: Todos os widgets enviados com o AEM contêm a classe de nome do widget. Para widgets personalizados, o desenvolvedor do widget fornece a classe de nome do Widget.
+* **name**: Todos os widgets enviados com AEM contêm a classe de nome do widget. Para widgets personalizados, o desenvolvedor do widget fornece a classe de nome do Widget.
 * **tipo**: Todo widget tem um elemento de interface do usuário. Essa classe define o tipo do elemento da interface do usuário.
 
 ```xml
@@ -122,7 +125,7 @@ Além da classe type e name, o componente field também contém uma classe CSS a
 
 ## Classes CSS para diferentes campos {#css-classes-for-different-fields}
 
-O AEM Forms Designer oferece suporte a diferentes tipos de campos em um formulário como NumericField, DecimalField e Data Field. Todos esses campos em HTML contêm as classes CSS mencionadas acima. Eles também contêm algumas classes adicionais dependendo do tipo de campo.
+O AEM Forms Designer oferece suporte a diferentes tipos de campos em um formulário como NumericField, DecimalField e Date Field. Todos esses campos em HTML contêm as classes CSS mencionadas acima. Eles também contêm algumas classes adicionais dependendo do tipo de campo.
 
 Cada campo tem um widget associado que representa o elemento da interface do usuário. As classes de cada campo e os widgets associados a cada campo são listados abaixo.
 
