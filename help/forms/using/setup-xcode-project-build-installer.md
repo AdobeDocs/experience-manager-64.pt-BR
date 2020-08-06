@@ -1,8 +1,8 @@
 ---
 title: Configure o projeto Xcode e crie o aplicativo iOS
 seo-title: Configure o projeto Xcode e crie o aplicativo iOS
-description: Explica como criar aplicativos de AEM Forms padrão para iOS.
-seo-description: Explica como criar aplicativos de AEM Forms padrão para iOS.
+description: Explica como criar um aplicativo AEM Forms padrão para iOS.
+seo-description: Explica como criar um aplicativo AEM Forms padrão para iOS.
 uuid: 33ccf014-05af-43c2-abb2-e0bd9c89ce32
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Configure o projeto Xcode e crie o aplicativo iOS {#set-up-the-xcode-project-and-build-the-ios-app}
 
-O AEM Forms fornece o código fonte completo do aplicativo AEM Forms. A fonte contém todos os componentes para criar aplicativos AEM Forms personalizados. O arquivo de código-fonte `adobe-lc-mobileworkspace-src-<version>.zip` é parte do `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote de distribuição de software.
+A AEM Forms fornece o código fonte completo do aplicativo AEM Forms. A fonte contém todos os componentes para criar aplicativos AEM Forms personalizados. O arquivo de código-fonte `adobe-lc-mobileworkspace-src-<version>.zip` é parte do `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote de distribuição de software.
 
 Para obter a fonte do aplicativo AEM Forms, execute as seguintes etapas:
 
-1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de uma Adobe ID para fazer logon na Software Distribution (Distribuição de software).
 1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. Na seção **[!UICONTROL Filtros]** :
-   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]** .
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
 1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
 1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
@@ -69,7 +69,7 @@ A tabela a seguir detalha o conteúdo da `adobe-lc-mobileworkspace-src-[version]
 
 Para obter informações detalhadas sobre a assinatura de código e a adição de dispositivos ao portal de provisionamento do iOS, consulte Configuração, processo e solução de problemas [da assinatura de código do](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html)iOS.
 
-## Criar aplicativo de AEM Forms padrão {#set-up-the-xcode-project}
+## Criar aplicativo AEM Forms padrão {#set-up-the-xcode-project}
 
 1. Execute as seguintes etapas para configurar um projeto no Xcode e fornecer uma identidade de assinatura:
 
@@ -128,7 +128,7 @@ Para obter informações detalhadas sobre a assinatura de código e a adição d
    >
    >Esta etapa é necessária somente se o aplicativo AEM Forms precisar se conectar a um servidor que não siga os requisitos de segurança do App Transport.
 
-1. Em **PROJETO**, selecione **AEM Forms** e certifique-se de que a assinatura apropriada esteja selecionada para Identidade **de assinatura de** código, **Depuração**, **Liberação** **** e Qualquer SDK iOS.
+1. Em **PROJETO**, selecione **AEM Forms** e certifique-se de que a assinatura apropriada esteja selecionada para Identidade **de assinatura de** código, **Depuração**, **Liberação** **** e Qualquer SDK do iOS.
 1. Conecte um iPad provisionado a uma máquina Mac.
 1. Selecione o dispositivo provisionado para o projeto **AEM Forms** .
 
