@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 4%
 
 ---
 
@@ -40,10 +43,10 @@ Preencha as informações básicas do Recurso:
 * **[!UICONTROL Nome]**do site:
 definido para o nome do site da comunidade selecionado: Tutorial de ativação
 * **[!UICONTROL Nome do recurso &amp;ast;]**: Lição de Esqui 1
-* **[!UICONTROL Tags]**:Tutorial: Esportes / Esqui
+* **[!UICONTROL Tags]**: Tutorial: Esportes / Esqui
 * **[!UICONTROL Mostrar no catálogo]**: Ligado
 * **[!UICONTROL Descrição]**: Deslizando sobre a neve para principiantes
-* **[!UICONTROL Adicionar imagem]**: Adicionar uma imagem para representar o Recurso ao membro na exibição Atribuições
+* **[!UICONTROL Adicionar imagem]**: Adicionar uma imagem para representar o Recurso ao membro em sua visualização Atribuições
    ![chlimage_1-202](assets/chlimage_1-202.png)
 * Selecione **[!UICONTROL Próximo]**
 
@@ -55,7 +58,7 @@ Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de es
 
 ![chlimage_1-203](assets/chlimage_1-203.png) ![chlimage_1-204](assets/chlimage_1-204.png)
 
-Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personalizada para ser exibida antes da reprodução do vídeo ou permitir que uma miniatura seja gerada a partir do vídeo (pode levar alguns minutos - não é necessário aguardar).
+Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personalizada para ser exibida antes da reprodução dos start de vídeo, ou permitir que uma miniatura seja gerada a partir do vídeo (pode levar alguns minutos - não é necessário aguardar).
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
@@ -65,15 +68,19 @@ Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personal
 
 * **[!UICONTROL Configurações]** sociais Deixe as configurações padrão para que os alunos façam comentários e avaliem os recursos de ativação.
 * **[!UICONTROL Data de vencimento]**
+
    *(Opcional)* Uma data na qual a atribuição deve ser concluída pode ser selecionada.
 * **[!UICONTROL Autor do recurso]**
+
    *(Opcional)* Deixe em branco.
 * **[!UICONTROL &amp;Painel de Recurso;ast;]**
+
    *(Obrigatório)* Use o menu suspenso para selecionar o membro `Quinn Harper`.
 * **[!UICONTROL Especialista de recurso]**
+
    *(Opcional)* Deixe em branco.
    **Observação**: se os usuários ou grupos não estiverem visíveis, verifique se foram adicionados ao `Community Enable Members` grupo e *salvos* na instância de publicação.
-   ![chlimage_1-205](assets/chlimage_1-206.png)
+   ![chlimage_1-206](assets/chlimage_1-206.png)
 * Selecione **[!UICONTROL Próximo]**
 
 ### Atribuições {#assignments}
@@ -96,7 +103,7 @@ Antes de os inscritos poderem ver o recurso atribuído, ele deve ser publicado:
 
 * Selecionar o `Publish`ícone do mundo
 
-A ativação é confirmada com uma mensagem de sucesso:
+A Ativação é confirmada com uma mensagem de sucesso:
 
 ![chlimage_1-209](assets/chlimage_1-209.png)
 
@@ -126,7 +133,7 @@ Um caminho de aprendizado é um agrupamento lógico de recursos de ativação qu
 Adicione as Informações **** básicas:
 
 * **[!UICONTROL Nome]** do caminho de aprendizado: Lições de esqui
-* **[!UICONTROL Tags]**:Tutorial: Esqui
+* **[!UICONTROL Tags]**: Tutorial: Esqui
 * **[!UICONTROL Mostrar no catálogo]**: deixar desmarcado
 * **[!UICONTROL Carregar uma imagem]** para representar o caminho de aprendizado no console Recursos
 
@@ -156,9 +163,11 @@ No painel Adicionar recursos
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
-* **[!UICONTROL Adicionar destinatários]** Use o menu suspenso para selecionar o `Community Ski Class` grupo, que deve incluir membros `Riley Taylor` e `Sidney Croft.`
+* **[!UICONTROL Adicionar destinatários]** Use o menu suspenso para selecionar a variável 
+`Community Ski Class` , que deve incluir membros `Riley Taylor` e `Sidney Croft.`
 
 * **[!UICONTROL &amp;Painel de Contato do Caminho de Aprendizagem;ast;]**
+
    *(Obrigatório)* Use o menu suspenso para selecionar o membro `Quinn Harper`.
 
 * Selecione **[!UICONTROL Criar]**
