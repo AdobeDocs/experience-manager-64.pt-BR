@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 4%
 
 ---
 
@@ -25,9 +28,9 @@ Cada etapa do diagrama está vinculada a um recurso de documentação ou a uma r
 
 ## Pré-requisitos e Pressupostos {#prerequisites-and-assumptions}
 
-A suposição é que um problema de desempenho seja observado em uma determinada página (um console do AEM ou uma página da Web) e possa ser reproduzido de forma consistente. A existência de uma forma de testar ou monitorizar o desempenho é um pré-requisito antes de iniciar a investigação.
+A suposição é que um problema de desempenho seja observado em uma determinada página (um console AEM ou uma página da Web) e possa ser reproduzido de forma consistente. A existência de uma forma de testar ou monitorizar o desempenho é um pré-requisito antes de iniciar a investigação.
 
-A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatcher, host externo ou AEM) é responsável pelo problema de desempenho e determinar qual área (servidor ou rede) deve ser investigada.
+A análise start na etapa 0. O objetivo é determinar qual entidade (dispatcher, host externo ou AEM) é responsável pelo problema de desempenho e determinar qual área (servidor ou rede) deve ser investigada.
 
 ### Seção 1 {#section}
 
@@ -81,7 +84,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr> 
    <td><strong>Etapa 5</strong></td> 
    <td>O Dispatcher está tentando autenticar cada solicitação via AEM?</td> 
-   <td>Verifique se o despachante envia solicitações para o AEM para autenticação antes de entregar o recurso em cache. <code>HEAD</code> Você pode fazer isso procurando por <code>HEAD</code> solicitações no AEM <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td> 
+   <td>Verifique se o dispatcher envia <code>HEAD</code> solicitações para AEM para autenticação antes de entregar o recurso em cache. Você pode fazer isso procurando <code>HEAD</code> solicitações no AEM <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 6</strong></td> 
@@ -115,7 +118,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   </tr> 
   <tr> 
    <td><strong>Etapa 12</strong></td> 
-   <td>Solução de problemas do servidor AEM</td> 
+   <td>Solução de problemas AEM servidor</td> 
    <td>Verifique as seguintes subetapas no diagrama para obter mais informações.</td> 
   </tr> 
   <tr> 
@@ -135,8 +138,8 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   </tr> 
   <tr> 
    <td><strong>Etapa 16</strong></td> 
-   <td>Servidor de perfil</td> 
-   <td><p>Para obter informações sobre as ferramentas de criação de perfis que você pode usar com o AEM, consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Ferramentas para monitoramento e análise de desempenho</a>.<br /> </p> </td> 
+   <td>Servidor Perfil</td> 
+   <td><p>Para obter informações sobre ferramentas de criação de perfis que podem ser usadas com AEM, consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Ferramentas para monitoramento e análise de desempenho</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 17</strong></td> 
@@ -146,7 +149,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr> 
    <td><strong>Etapa 18</strong></td> 
    <td>Cenários comuns de criação de perfis</td> 
-   <td>Consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Análise de cenários</a> específicos na seção Otimização de desempenho.<br /> </td> 
+   <td>Consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Analisando cenários</a> específicos na seção Otimização de desempenho.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 19</strong></td> 
@@ -171,12 +174,12 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr> 
    <td><strong>Etapas 22 e 22.1</strong></td> 
    <td>Taxa de cache</td> 
-   <td><a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio"> Consulte </a>Calculando a Proporção<br />do Cache do Dispatcher. <br /> </td> 
+   <td>Consulte <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Calculando a Proporção</a>do Cache do Dispatcher.<br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 23</strong></td> 
-   <td>Consultas lentas</td> 
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Práticas recomendadas para consultas e indexação</a></td> 
+   <td>query lentos</td> 
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Práticas recomendadas para Query e indexação</a></td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 24</strong></td> 
@@ -190,13 +193,13 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   </tr> 
   <tr> 
    <td><strong>Etapa 25</strong></td> 
-   <td>Fluxos de trabalho em execução</td> 
+   <td>Workflows em execução</td> 
    <td> 
     <ul> 
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">Processamento de fluxo de trabalho simultâneo</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">Configurar a fila para um fluxo de trabalho específico</a></li> 
      <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">Expurgação Regular de Instâncias de Fluxo de Trabalho</a></li> 
-     <li><a href="/help/sites-developing/workflows.md#transient-workflows">Fluxos de trabalho transitórios</a><br /> </li> 
+     <li><a href="/help/sites-developing/workflows.md#transient-workflows">Workflows transitórios</a><br /> </li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
@@ -231,7 +234,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   </tr> 
   <tr> 
    <td><strong>Etapa 32</strong></td> 
-   <td>Usar o gerenciamento de sessões no nível do despachante para descarregar o servidor AEM</td> 
+   <td>Usar o gerenciamento de sessões no nível do despachante para descarregar AEM servidor</td> 
    <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Ativação de sessões seguras</a></p> </td> 
   </tr> 
   <tr> 
@@ -244,7 +247,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
     </ol> <p>Como melhorar a taxa de cache; tornar as solicitações compatíveis com o cache (práticas recomendadas do Dispatcher)</p> <p>Além disso, considere as configurações abaixo para otimizar suas configurações de cache<br /> </p> 
     <ol> 
      <li>Definir uma regra sem cache para solicitações HTTP que não sejam GET</li> 
-     <li>Configurar cadeias de caracteres de consulta para não poder ser armazenadas em cache</li> 
+     <li>Configurar strings de query para que não possam ser armazenadas em cache</li> 
      <li>Não armazene URLs em cache com extensões ausentes</li> 
      <li>Cabeçalhos de autenticação de cache (possível desde o Dispatcher versão 4.1.10)</li> 
     </ol> </td> 
@@ -271,12 +274,12 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr> 
    <td><strong>Etapas 37 e 38</strong></td> 
    <td>Carregamento lento</td> 
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Consulte a Sessão Gem sobre o desempenho da Web do AEM.</a><br /> </td> 
+   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Consulte a Sessão Gem em Desempenho AEM Web.</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 39</strong></td> 
    <td>Usar a pré-conexão para reduzir a sobrecarga da conexão</td> 
-   <td>Consulte a Sessão Gem indicada acima. <a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> Além disso, pré-conexão de documentação adicional no W3c: https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
+   <td>Consulte a Sessão Gem indicada acima. Além disso, pré-conexão de documentação adicional no W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
   </tr> 
   <tr> 
    <td><strong>Etapas 40 e 41</strong><br /> </td> 
@@ -296,7 +299,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr> 
    <td><strong>Etapas 42 e 43</strong></td> 
    <td>Keep-Alive</td> 
-   <td><p>O <code>Keep-Alive</code> cabeçalho está presente nas diferentes solicitações para reutilizar conexões? Caso contrário, cada pedido conduziria a outro estabelecimento de conexão, o que introduz despesas gerais desnecessárias. (Análise de solicitação HTTP padrão no navegador)</p> <p>Você pode verificar a ferramenta <a href="/help/sites-administering/proxy-jar.md">Servidor</a> proxy para verificar se há conexões Keep-Alive.<br /> </p> </td> 
+   <td><p>O <code>Keep-Alive</code> cabeçalho está presente nas diferentes solicitações para reutilizar conexões? Caso contrário, cada pedido conduziria a outro estabelecimento de conexão, o que introduz despesas gerais desnecessárias. (análise de solicitação HTTP padrão no navegador)</p> <p>Você pode verificar a ferramenta <a href="/help/sites-administering/proxy-jar.md">Servidor</a> proxy para verificar se há conexões Keep-Alive.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 44</strong></td> 
@@ -318,7 +321,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr> 
    <td><strong>Etapa 48</strong></td> 
    <td>Qual é o tamanho da carga?</td> 
-   <td>Análise de solicitação HTTP padrão no navegador</td> 
+   <td>análise de solicitação HTTP padrão no navegador</td> 
   </tr> 
   <tr> 
    <td><strong>Etapas 50 e 51</strong></td> 
