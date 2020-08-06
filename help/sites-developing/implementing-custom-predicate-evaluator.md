@@ -1,8 +1,8 @@
 ---
-title: Implementação de um Avaliador Predicado Personalizado para o Construtor de Consultas
-seo-title: Implementação de um Avaliador Predicado Personalizado para o Construtor de Consultas
-description: O Query Builder oferece uma maneira fácil de consultar o repositório de conteúdo
-seo-description: O Query Builder oferece uma maneira fácil de consultar o repositório de conteúdo
+title: Implementação de um Avaliador de Predicado Personalizado para o Construtor de Query
+seo-title: Implementação de um Avaliador de Predicado Personalizado para o Construtor de Query
+description: O Query Builder oferta uma maneira fácil de consultar o repositório de conteúdo
+seo-description: O Query Builder oferta uma maneira fácil de consultar o repositório de conteúdo
 uuid: 5b599b60-a149-4425-b7ac-7fbe7e048bca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
 
-# Implementação de um Avaliador Predicado Personalizado para o Construtor de Consultas{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Implementação de um Avaliador de Predicado Personalizado para o Construtor de Query{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-Esta seção descreve como estender o Construtor [de](/help/sites-developing/querybuilder-api.md) Consulta implementando um avaliador de predicado personalizado.
+Esta seção descreve como estender o Construtor [de](/help/sites-developing/querybuilder-api.md) Query implementando um avaliador de predicado personalizado.
 
 ## Visão geral {#overview}
 
-O [Query Builder](/help/sites-developing/querybuilder-api.md) oferece uma maneira fácil de consultar o repositório de conteúdo. O AEM é enviado com um conjunto de avaliadores de predicados que ajudam você a lidar com seus dados.
+O Construtor de [Query](/help/sites-developing/querybuilder-api.md) oferta uma maneira fácil de consultar o repositório de conteúdo. AEM com um conjunto de avaliadores de predicados que ajudam você a lidar com seus dados.
 
-No entanto, talvez você queira simplificar suas consultas implementando um avaliador de predicado personalizado que oculta alguma complexidade e garante uma melhor semântica.
+No entanto, você pode querer simplificar seus query implementando um avaliador de predicado personalizado que oculta alguma complexidade e garante uma melhor semântica.
 
 Um predicado personalizado também pode executar outras coisas que não são diretamente possíveis com o XPath, por exemplo:
 
@@ -36,7 +39,7 @@ Um predicado personalizado também pode executar outras coisas que não são dir
 
 >[!NOTE]
 >
->Você pode encontrar exemplos de consultas na seção [Query Builder](/help/sites-developing/querybuilder-api.md) .
+>Você pode encontrar exemplos de query na seção Construtor [de](/help/sites-developing/querybuilder-api.md) Query.
 
 CÓDIGO NO GITHUB
 
@@ -47,9 +50,9 @@ Você pode encontrar o código desta página no GitHub
 
 ## Prever avaliador em detalhes {#predicate-evaluator-in-detail}
 
-Um avaliador de predicado lida com a avaliação de determinados predicados, que são as restrições de definição de uma consulta.
+Um avaliador de predicado lida com a avaliação de determinados predicados, que são as restrições de definição de um query.
 
-Ele mapeia uma restrição de pesquisa de nível superior (como &quot;largura > 200&quot;) para uma consulta JCR específica que se encaixa no modelo de conteúdo real (por exemplo, metadata/@width > 200). Ou pode filtrar manualmente os nós e verificar suas restrições.
+Ele mapeia uma restrição de pesquisa de nível superior (como &quot;largura > 200&quot;) para um query JCR específico que se encaixa no modelo de conteúdo real (por exemplo, metadata/@width > 200). Ou pode filtrar manualmente os nós e verificar suas restrições.
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Como exemplo, esta seção descreve como criar um avaliador de predicado persona
 
 ### Consultando metadados de replicação com avaliadores preditivos padrão {#querying-replication-metadata-with-default-predicate-evaluators}
 
-A consulta a seguir busca a lista de nós em `/content` ramificações que foram ativados `admin` desde o início do ano.
+O query a seguir busca a lista de nós em `/content` ramificações que foram ativados `admin` desde o início do ano.
 
 ```xml
 path=/content
@@ -83,11 +86,11 @@ daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
 ```
 
-Essa consulta é válida, mas difícil de ler, e não destaca a relação entre as três propriedades de replicação. A implementação de um avaliador de predicado personalizado reduzirá a complexidade e melhorará a semântica dessa consulta.
+Esse query é válido, mas difícil de ler, e não destaca a relação entre as três propriedades de replicação. A implementação de um avaliador de predicado personalizado reduzirá a complexidade e melhorará a semântica desse query.
 
 ### Objetivos {#objectives}
 
-O objetivo da consulta `ReplicationPredicateEvaluator` é suportar a consulta acima usando a seguinte sintaxe.
+O objetivo do `ReplicationPredicateEvaluator` é suportar o query acima usando a seguinte sintaxe.
 
 ```xml
 path=/content
@@ -97,19 +100,19 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-O agrupamento de metadados de replicação prevê com um avaliador de predicado personalizado ajuda a criar uma consulta significativa.
+O agrupamento de metadados de replicação prevê com um avaliador de predicado personalizado ajuda a criar um query significativo.
 
 ### Atualizando dependências Maven {#updating-maven-dependencies}
 
 >[!NOTE]
 >
->A configuração de novos projetos do AEM usando o maven está documentada em [Como criar projetos do AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>A configuração de novos projetos AEM usando o maven está documentada em [Como construir projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 Primeiro, você precisa atualizar as dependências Maven do seu projeto. O `PredicateEvaluator` é parte do `cq-search` artefato, portanto, ele precisa ser adicionado ao arquivo pom Maven.
 
 >[!NOTE]
 >
->O escopo da `cq-search` dependência está definido como `provided` porque `cq-search` será fornecido pelo `OSGi` contêiner.
+>O escopo da `cq-search` dependência é definido como `provided` porque `cq-search` será fornecido pelo `OSGi` container.
 
 pom.xml
 
@@ -168,7 +171,7 @@ O `cq-search` projeto contém a classe `AbstractPredicateEvaluator` abstrata. Is
 
 >[!NOTE]
 >
->O nome do predicado `PredicateEvaluator` é o nome do predicado, que é usado ao criar consultas.
+>O nome do predicado `PredicateEvaluator` é o nome do predicado, que é usado ao criar query.
 
 1. Substituir:
 
