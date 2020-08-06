@@ -4,13 +4,16 @@ description: Saiba como criar uma pasta privada nos ativos Adobe Experience Mana
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 6%
 
 ---
 
 
 # Compartilhamento de pasta particular {#private-folder-sharing}
 
-Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Experience Manager (AEM) que está disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, exibir ativos na pasta ou editar os ativos.
+Você pode criar uma pasta privada na interface do usuário do Adobe Experience Manager (AEM) Assets que está disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
 
 1. No console Ativos, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
 
@@ -38,11 +41,11 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 
    >[!NOTE]
    >
-   >Você pode atribuir várias funções, como Editor, Proprietário ou Visualizador ao usuário com quem você compartilha a pasta. Se você atribuir uma função Proprietário ao usuário, este terá privilégios de Editores na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir uma função de Editor, o usuário poderá editar os ativos em sua pasta particular. Se você atribuir uma função de Visualizador, o usuário só poderá exibir os ativos em sua pasta privada.
+   >Você pode atribuir várias funções, como Editor, Proprietário ou Visualizador ao usuário com quem você compartilha a pasta. Se você atribuir uma função Proprietário ao usuário, este terá privilégios de Editores na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir uma função de Editor, o usuário poderá editar os ativos em sua pasta particular. Se você atribuir uma função de Visualizador, o usuário poderá apenas visualização os ativos em sua pasta particular.
 
-1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando ele faz logon nos ativos AEM.
+1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando ele faz logon no AEM Assets.
 1. Clique em **[!UICONTROL Ok]** para fechar a mensagem de confirmação.
-1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Faça logon nos ativos AEM com as credenciais do usuário para exibir a notificação.
+1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Faça logon na AEM Assets com as credenciais do usuário para visualização da notificação.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
@@ -54,5 +57,5 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 
 >[!NOTE]
 >
->Para poder criar uma pasta privada, você precisa de permissões de Ler e Editar ACL na pasta pai na qual deseja criar uma pasta privada. Se você não for um administrador, essas permissões não serão ativadas para você por padrão em */content/dam*. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas ou exibir configurações de pastas.
+>Para poder criar uma pasta privada, você precisa de permissões de Ler e Editar ACL na pasta pai na qual deseja criar uma pasta privada. Se você não for um administrador, essas permissões não serão ativadas para você por padrão em */content/dam*. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas ou configurações de pastas de visualização.
 
