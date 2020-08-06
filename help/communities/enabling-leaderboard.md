@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 6%
 
 ---
 
@@ -61,11 +64,11 @@ Na guia **[!UICONTROL Configurações]** , especifique quais informações relac
 
    O padrão está desmarcado.
 
-* **[!UICONTROL Nome]** do selo Se marcada, uma coluna para o nome do selo é incluída no quadro de líderes.
+* **[!UICONTROL Nome]** do emblema Se marcada, uma coluna para o nome do emblema é incluída no quadro de líderes.
 
    O padrão está desmarcado.
 
-* **[!UICONTROL Usar avatar]** Se marcada, a imagem de avatar do membro será incluída no quadro de líderes, ao lado do link de nome para o perfil do membro.
+* **[!UICONTROL Usar avatar]** Se marcada, a imagem de avatar do membro será incluída no quadro de líderes, ao lado do link do nome para o perfil do membro.
 
    O padrão está desmarcado.
 
