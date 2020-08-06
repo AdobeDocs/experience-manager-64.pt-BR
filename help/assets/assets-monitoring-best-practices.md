@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas de monitoramento de ativos
-description: Práticas recomendadas para monitorar o ambiente e o desempenho da sua instância do AEM após sua implantação.
+description: Práticas recomendadas para monitorar o ambiente e o desempenho da instância AEM após sua implantação.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Práticas recomendadas de monitoramento de ativos {#assets-monitoring-best-practices}
 
-Do ponto de vista dos ativos Adobe Experience Manager (AEM), o monitoramento deve incluir a observação e o relatórios dos seguintes processos e tecnologias:
+Do ponto de vista dos Ativos Adobe Experience Manager (AEM), o monitoramento deve incluir a observação e o relatórios dos seguintes processos e tecnologias:
 
 * CPU do sistema
 * Uso da memória do sistema
@@ -26,7 +26,7 @@ Do ponto de vista dos ativos Adobe Experience Manager (AEM), o monitoramento dev
 
 * Verificações de integridade do console OSGi
 
-Normalmente, os ativos AEM podem ser monitorados de duas formas, monitoramento ao vivo e monitoramento de longo prazo.
+Normalmente, o AEM Assets pode ser monitorado de duas formas, monitoramento ao vivo e monitoramento de longo prazo.
 
 ## Monitoramento ao vivo {#live-monitoring}
 
@@ -41,24 +41,24 @@ Você deve executar monitoração ao vivo durante a fase de teste de desempenho 
 * [Iftop](http://www.ex-parrot.com/pdw/iftop/): O Iftop exibe informações detalhadas sobre o uso da rede/Ethernet. O Iftop exibe as estatísticas por canal de comunicação nas entidades que usam a Ethernet e a quantidade de largura de banda que usam. O Iftop pode ser instalado na maioria dos sistemas Linux usando `yum install iftop` ou `apt-get install iftop`.
 
 * Gravador de Voo Java (JFR): Uma ferramenta comercial da Oracle que você pode usar livremente em ambientes que não sejam de produção. Para obter mais detalhes, consulte [Como usar o Gravador de voo Java para diagnosticar problemas](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)de tempo de execução do CQ.
-* Arquivo AEM error.log: Você pode investigar o arquivo error.log do AEM para obter detalhes dos erros registrados no sistema. Use o comando `tail -F quickstart/logs/error.log` para identificar os erros que devem ser investigados.
+* AEM arquivo error.log: Você pode investigar o arquivo error.log AEM para obter detalhes dos erros registrados no sistema. Use o comando `tail -F quickstart/logs/error.log` para identificar os erros que devem ser investigados.
 * [Console](../sites-administering/workflows.md)de fluxo de trabalho: Aproveite o console de fluxo de trabalho para monitorar workflows que ficam atrás ou travam.
 
-Normalmente, você usa essas ferramentas em conjunto para obter uma ideia abrangente sobre o desempenho da sua instância do AEM.
+Normalmente, você usa essas ferramentas em conjunto para obter uma ideia abrangente sobre o desempenho da sua instância de AEM.
 
 >[!NOTE]
 >
->Essas ferramentas são ferramentas padrão e não são suportadas diretamente pela Adobe. Eles não exigem licenças adicionais.
+>Essas ferramentas são ferramentas padrão e não são suportadas diretamente pelo Adobe. Eles não exigem licenças adicionais.
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## Monitoramento de longo prazo {#long-term-monitoring}
 
-O monitoramento de longo prazo de uma instância do AEM envolve o monitoramento por um período mais longo das mesmas partes que são monitoradas ao vivo. Também inclui a definição de alertas específicos para o seu ambiente.
+A monitorização a longo prazo de uma instância AEM envolve a monitorização, por um período mais longo, das mesmas partes que são monitorizadas ao vivo. Também inclui a definição de alertas específicos para o seu ambiente.
 
 ### Agregação de registro e relatórios {#log-aggregation-and-reporting}
 
-Há várias ferramentas disponíveis para registros de agregações, por exemplo Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Para avaliar o tempo de atividade da sua instância do AEM, é importante que você entenda eventos de registro específicos do seu sistema e crie alertas com base neles. Um bom conhecimento de suas práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar seu processo de agregação de log para gerar alertas críticos.
+Há várias ferramentas disponíveis para registros de agregações, por exemplo Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Para avaliar o tempo de atividade da instância de AEM, é importante que você entenda eventos de log específicos do seu sistema e crie alertas com base neles. Um bom conhecimento de suas práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar seu processo de agregação de log para gerar alertas críticos.
 
 ### Monitorização dos Ambientes {#environment-monitoring}
 
@@ -71,11 +71,11 @@ A monitorização dos Ambientes inclui a monitorização dos seguintes elementos
 * MBeans JMX
 * Sites externos
 
-Você precisa de ferramentas externas, como NewRelic(TM) e AppDynamics(TM) para monitorar cada item. Usando essas ferramentas, você pode definir alertas específicos ao seu sistema, por exemplo, alta utilização do sistema, backup do fluxo de trabalho, falhas na verificação de integridade ou acesso não autenticado ao seu site. A Adobe não recomenda nenhuma ferramenta específica sobre outras. Encontre a ferramenta que funciona para você e aproveite-a para monitorar os itens discutidos.
+Você precisa de ferramentas externas, como NewRelic(TM) e AppDynamics(TM) para monitorar cada item. Usando essas ferramentas, você pode definir alertas específicos ao seu sistema, por exemplo, alta utilização do sistema, backup do fluxo de trabalho, falhas na verificação de integridade ou acesso não autenticado ao seu site. O Adobe não recomenda nenhuma ferramenta específica sobre outras. Encontre a ferramenta que funciona para você e aproveite-a para monitorar os itens discutidos.
 
 #### Monitoramento interno de aplicativos {#internal-application-monitoring}
 
-O monitoramento interno de aplicativos inclui o monitoramento dos componentes do aplicativo que compõem a pilha do AEM, incluindo JVM, o repositório de conteúdo e o monitoramento por meio do código personalizado de aplicativo criado na plataforma. Em geral, ele é executado por meio de JMX Mbeans que podem ser monitorados diretamente por várias soluções de monitoramento populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) e outras. Para sistemas que não suportam uma conexão direta com o JMX, você pode gravar scripts de shell para extrair os dados do JMX e expô-los a esses sistemas em um formato que eles compreendem nativamente.
+O monitoramento interno do aplicativo inclui o monitoramento dos componentes do aplicativo que compõem a pilha de AEM, incluindo JVM, o repositório de conteúdo e o monitoramento por meio do código personalizado do aplicativo criado na plataforma. Em geral, ele é executado por meio de JMX Mbeans que podem ser monitorados diretamente por várias soluções de monitoramento populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) e outras. Para sistemas que não suportam uma conexão direta com o JMX, você pode gravar scripts de shell para extrair os dados do JMX e expô-los a esses sistemas em um formato que eles compreendem nativamente.
 
 O acesso remoto ao JMX Mbeans não está habilitado por padrão. Para obter mais informações sobre monitoramento por meio do JMX, consulte [Monitoramento e gerenciamento por meio da tecnologia](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)JMX.
 
@@ -83,7 +83,7 @@ Em muitos casos, é necessária uma linha de base para monitorizar eficazmente u
 
 **Monitoramento JVM**
 
-Assim como em qualquer pilha de aplicativos baseada em Java, o AEM depende dos recursos que lhe são fornecidos por meio da Java Virtual Machine subjacente. Você pode monitorar o status de muitos desses recursos por meio da Plataforma MXBeans que são expostos pela JVM. Para obter mais informações sobre o MXBeans, consulte [Uso do Servidor MBean de plataforma e MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)de plataforma.
+Assim como em qualquer pilha de aplicativos baseada em Java, AEM depende dos recursos que são fornecidos a ela por meio da Java Virtual Machine subjacente. Você pode monitorar o status de muitos desses recursos por meio da Plataforma MXBeans que são expostos pela JVM. Para obter mais informações sobre o MXBeans, consulte [Uso do Servidor MBean de plataforma e MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)de plataforma.
 
 Estes são alguns parâmetros de linha de base que você pode monitorar para JVM:
 
@@ -105,11 +105,11 @@ Threads
 * Limiar de alarme: Quando o número de threads for maior que 150% da linha de base.
 * Definição do alarme: Ou há um processo de runaway ativo, ou uma operação ineficiente consome uma grande quantidade de recursos. Analise um despejo de thread para chegar a uma definição.
 
-**Monitoramento do AEM**
+**AEM monitoramento**
 
-O AEM também expõe um conjunto de estatísticas e operações por meio do JMX. Eles podem ajudar a avaliar a integridade do sistema e identificar possíveis problemas antes de afetarem os usuários. Para obter mais informações, consulte a [documentação](/help/sites-administering/jmx-console.md) sobre MBeans AEM JMX.
+AEM também expõe um conjunto de estatísticas e operações por meio do JMX. Eles podem ajudar a avaliar a integridade do sistema e identificar possíveis problemas antes de afetarem os usuários. Para obter mais informações, consulte a [documentação](/help/sites-administering/jmx-console.md) AEM MBeans JMX.
 
-Estes são alguns parâmetros de linha de base que podem ser monitorados para o AEM:
+Estes são alguns parâmetros de linha de base que podem ser monitorados para AEM:
 
 Agentes de replicação
 
@@ -186,13 +186,13 @@ Estas são algumas verificações de integridade prontas que são úteis para mo
 
 ## Problemas comuns e resoluções  {#common-issues-and-resolutions}
 
-No processo de monitoramento, se você encontrar problemas, veja algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com instâncias do AEM:
+No processo de monitoramento, se você encontrar problemas, veja algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com instâncias AEM:
 
 * Se estiver usando TarMK, execute a compactação Tar com frequência. Para obter mais detalhes, consulte [Manutenção do repositório](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Verificar `OutOfMemoryError` registros. Para obter mais informações, consulte [Analisar problemas](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)de memória.
 * Verifique os registros em busca de referências a query não indexados, traversais de árvore ou traversais de índice. Estes indicam query não indexados ou query inadequadamente indexados. Para obter as práticas recomendadas de otimização do desempenho de query e indexação, consulte Práticas [recomendadas para Query e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Use o console de fluxo de trabalho para verificar se seus workflows têm o desempenho esperado. Se possível, condensar vários workflows em um único fluxo de trabalho.
 * Revise o monitoramento ao vivo e procure gargalos adicionais ou grandes consumidores de recursos específicos.
-* Investigue os pontos de saída da rede do cliente e os pontos de entrada para a rede de instância do AEM, incluindo o dispatcher. Frequentemente, essas são áreas de gargalo. Para obter mais informações, consulte Considerações [de rede do](assets-network-considerations.md)Assets.
-* Atualize seu servidor AEM. Você pode ter uma instância do AEM de tamanho inadequado. O Atendimento ao cliente da Adobe pode ajudá-lo a identificar se o servidor está com tamanho inferior ao normal.
+* Investigue os pontos de saída da rede do cliente e os pontos de entrada para a rede de instância AEM, incluindo o dispatcher. Frequentemente, essas são áreas de gargalo. Para obter mais informações, consulte Considerações [de rede do](assets-network-considerations.md)Assets.
+* Atualize seu servidor AEM. Você pode ter um tamanho inadequado para sua instância AEM. O Atendimento ao cliente do Adobe pode ajudá-lo a identificar se o servidor está com tamanho inferior ao normal.
 * Examine os arquivos `access.log` `error.log` e os arquivos para ver as entradas na hora em que algo deu errado. Procure padrões que possam indicar anomalias de código personalizadas. Adicione-os à lista de eventos que você monitorar.
