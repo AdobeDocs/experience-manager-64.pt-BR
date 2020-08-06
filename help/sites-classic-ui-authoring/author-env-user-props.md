@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 69%
 
 ---
 
@@ -21,7 +24,8 @@ O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do 
 
 Usando as [configurações da conta](#account-settings) e [preferências do usuário](#user-preferences) as opções e preferências a seguir podem ser definidas:
 
-* **Barra de ferramentas de edição** Seleciona se deseja ter a barra de ferramentas de edição global. Essa barra de ferramentas, que é exibida na parte superior da janela do navegador, oferece os botões **Copiar**,**Recortar**, **Colar** e **Excluir** para usar com os componentes do parágrafo nessa página:
+* **Barra de ferramentas de edição** Seleciona se deseja ter a barra de ferramentas de edição global. Esta barra de ferramentas, que é mostrada na parte superior da janela do navegador, oferece 
+**Botões Copiar**, **Recortar**, **Colar** e **Excluir** para usar com os componentes de parágrafo naquela página:
 
    * Mostrar quando necessário (Padrão)
    * Sempre mostrar
