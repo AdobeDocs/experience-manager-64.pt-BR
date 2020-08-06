@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ A interface REST do CRX QueryBuilder expõe a funcionalidade do Criador de Query
    >
    >Em cada query, o parâmetro path aponta para o local do armazenamento crx e os caracteres são escapados de acordo com o padrão de URL.
 
-## Criação de um serviço usando a API do Construtor de Query {#creating-a-service-using-query-builder-api-nbsp}
+## Criação de um serviço usando a API do Construtor de Query  {#creating-a-service-using-query-builder-api-nbsp}
 
 O pré-requisito para a criação de um serviço usando a API do construtor de Query é a [criação e implantação do pacote](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) OSGI do CQ e o [uso da API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)do Construtor de Query.
 
@@ -420,7 +423,7 @@ O `pom.xml`arquivo de amostra a ser criado acima do serviço é:
 </project>
 ```
 
-## Criação de uma interface de usuário separada {#creating-a-separate-ui-nbsp}
+## Criação de uma interface de usuário separada  {#creating-a-separate-ui-nbsp}
 
 Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornece privilégios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acesso apropriados.
 
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integração da interface do usuário do relatório na interface do Relatórios do processo existente {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integração da interface do usuário do relatório na interface do Relatórios do processo existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornece privilégios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acesso apropriados.
 
@@ -640,6 +643,7 @@ Os pré-requisitos para criar uma interface de usuário separada para exibir res
    * **link**- Especifica o link relativo para o renderizador da interface de usuário separada. O link é criado na Etapa 1.
    * **descrição**- Especifica a descrição de uma linha do relatório. Você pode deixar o campo de descrição vazio.
    * **ícone**- Especifica a imagem para representar pictorialmente o relatório. Você pode deixar o campo de ícone vazio.
+
    ![Propriedades do nó ](assets/nodeproperties.png)
 
    Propriedades do nó
