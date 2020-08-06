@@ -8,21 +8,24 @@ contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 0%
 
 ---
 
 
 # What&#39;s New in AEM 6.4 Communities {#what-s-new-in-aem-communities}
 
-O AEM Communities oferece uma estrutura para as empresas colaborarem entre seus parceiros, clientes e funcionários. Ela proporciona recursos sociais à estrutura do site, e ajuda as empresas a engajarem e distribuírem conhecimento às partes interessadas, a fim de melhorar o valor de sua marca no seu caminho.
+A AEM Communities oferta uma estrutura para as empresas colaborarem entre seus parceiros, clientes e funcionários. Ela proporciona recursos sociais à estrutura do site, e ajuda as empresas a engajarem e distribuírem conhecimento às partes interessadas, a fim de melhorar o valor de sua marca no seu caminho.
 
-O AEM 6.4 Communities oferece funcionalidades para aprimorar as experiências dos usuários da comunidade e facilitar as tarefas diárias de administradores, moderadores e gerentes da comunidade.
+AEM 6.4 Comunidades traz funcionalidades para aprimorar as experiências dos usuários da comunidade e facilitar as tarefas atuais de administradores, moderadores e gerentes da comunidade.
 
-Leia mais a fundo para uma rápida introdução a novos recursos e melhorias. Além disso, consulte Notas de [versão](../release-notes/communities-release-notes.md)do AEM 6.4 Communities. Para obter a documentação do AEM 6.4 Communities, visite o Guia [do usuário do](home.md)AEM 6.4 Communities.
+Leia mais a fundo para uma rápida introdução a novos recursos e melhorias. Além disso, consulte AEM 6.4 Notas de [versão](../release-notes/communities-release-notes.md)das Comunidades. Para obter a documentação AEM 6.4 Comunidades, visite [AEM 6.4 Guia](home.md)do usuário das Comunidades.
 
 ## Gerenciar subcomunidades ou grupos da comunidade {#managing-sub-communities-or-community-groups}
 
-O AEM Communities permite que os administradores da comunidade criem grupos e subgrupos no site de comunidades, usando modelos predefinidos, no ambiente do autor. Esses grupos servem como subcomunidades, o que pode herdar muitas configurações, como temas e estilos do site pai. No entanto, esses grupos podem diferir do site pai, por exemplo, ter um conjunto diferente de moderadores de grupo ou podem variar no nível de segurança. Esses grupos funcionam como minicomunidades independentes e de pleno direito, que são mais capacitadas pelos seguintes aprimoramentos.
+A AEM Communities permite que os administradores da comunidade criem grupos e subgrupos dentro do site de comunidades, usando modelos predefinidos, no ambiente do autor. Esses grupos servem como subcomunidades, o que pode herdar muitas configurações, como temas e estilização do site pai. No entanto, esses grupos podem diferir do site pai, por exemplo, ter um conjunto diferente de moderadores de grupo ou podem variar no nível de segurança. Esses grupos funcionam como minicomunidades independentes e de pleno direito, que são mais capacitadas pelos seguintes aprimoramentos.
 
 ### Criar grupos de várias localidades em uma única etapa {#create-multi-locale-groups-in-single-step}
 
@@ -34,7 +37,7 @@ Para criar esses grupos, os usuários podem simplesmente navegar até a Coleçã
 
 ### Excluir grupos da comunidade do console de grupos {#delete-community-groups-from-groups-console}
 
-O AEM 6.4 Communities fornece o ícone Excluir grupo nos grupos existentes da comunidade, na coleção Grupos da comunidade no console Sites da comunidade. Isso permite a exclusão [do](groups.md#deleting-the-group) grupo em um clique, juntamente com a exclusão de todos os itens associados (como conteúdo e associações de usuários) ao grupo.
+AEM 6.4 Comunidades fornece o ícone Excluir grupo nos grupos existentes da comunidade, na coleção Grupos da comunidade no console Sites da comunidade. Isso permite a exclusão [do](groups.md#deleting-the-group) grupo em um clique, juntamente com a exclusão de todos os itens associados (como conteúdo e associações de usuários) ao grupo.
 
 ![deletegrp](assets/deletegrp.png)
 
@@ -46,9 +49,9 @@ O conteúdo de aprendizado agora pode ser criado, gerenciado e publicado para um
 
 ## Moderação de conteúdo gerado pelo usuário {#moderating-user-generated-content}
 
-O AEM 6.4 Communities oferece poucas melhorias à moderação, que são fundamentais para facilitar o dia a dia dos moderadores da comunidade.
+AEM 6.4 Comunidades oferta poucas melhorias na moderação, que são fundamentais para facilitar o dia a dia dos moderadores comunitários.
 
-### Detecção automática de spam {#automatic-spam-detection}
+### Detecção automática de spam  {#automatic-spam-detection}
 
 O novo mecanismo de detecção de spam ajuda a filtrar o conteúdo indesejado e não solicitado gerado pelo usuário em sites ou grupos da comunidade. Quando ativada, essa funcionalidade pode marcar um conteúdo gerado pelo usuário como Spam ou Não spam com base em um conjunto predefinido de palavras de spam. Os moderadores podem agir ainda mais sobre o conteúdo para negar ou permitir que ele apareça na instância de publicação. Essas ações de moderação podem ser executadas em linha ou por meio do console de moderação em massa.
 
@@ -58,27 +61,27 @@ O novo mecanismo de detecção de spam ajuda a filtrar o conteúdo indesejado e 
 
 ![spamprocess-1](assets/spamprocess-1.png)
 
-### Filtros novos (respondidos/não atendidos) para QnA {#new-answered-unanswered-filters-for-qna}
+### Novos filtros (respondidos/não atendidos) para QnA {#new-answered-unanswered-filters-for-qna}
 
-O AEM 6.4 adiciona dois [novos filtros](moderation.md#filter-rail), chamados Respondido e Não Respondido para perguntas QnA, ao console de moderação em massa. Esses filtros estão disponíveis em Status no painel Filtro.
+AEM 6.4 adiciona dois [novos filtros](moderation.md#filter-rail), chamados Respondido e Não Respondido para perguntas de QnA, ao console de moderação em massa. Esses filtros estão disponíveis em Status no painel Filtro.
 
 ![status](assets/statuses.png)
 
 Ao selecionar o status Respondido, todas as perguntas respondidas estarão visíveis para o moderador na área de conteúdo. Enquanto que, se apenas o status Não respondida for selecionado, o moderador visualizará todo o conteúdo (para todos os tipos de conteúdo), exceto as perguntas respondidas, pois a propriedade responsável pela pergunta respondida não existe no caso de perguntas não respondidas e outros conteúdos, como tópico do fórum, artigo do blog ou comentários.
 
-### Filtros de moderação de marcadores {#bookmark-moderation-filters}
+### filtros de moderação de marcadores {#bookmark-moderation-filters}
 
-O AEM Communities oferece a capacidade de [marcar os filtros](moderation.md#filter-rail) de moderação predefinidos no console de moderação. Esses marcadores salvos podem ser revisitados posteriormente e compartilhados com outros usuários.
+A AEM Communities oferece a capacidade de [marcar os filtros](moderation.md#filter-rail) de moderação predefinidos no console de moderação. Esses marcadores salvos podem ser revisitados posteriormente e compartilhados com outros usuários.
 
-Os usuários precisam apenas selecionar os filtros desejados no painel Filtro no console de moderação para visualizar o UGC filtrado e marcar os filtros em seus navegadores. Esses filtros são anexados ao final da string do URL e, portanto, podem ser compartilhados, reutilizados e revisitados posteriormente.
+Os usuários precisam apenas selecionar os filtros desejados no painel Filtro no console de moderação para visualização do UGC filtrado e marcar os filtros em seus navegadores. Esses filtros são anexados ao final da string do URL e, portanto, podem ser compartilhados, reutilizados e revisitados posteriormente.
 
 ## Gerenciamento de sites da comunidade {#managing-community-sites}
 
-O AEM 6.4 Communities fornece melhorias no gerenciamento de sites, que garantem que vários sites da comunidade em diferentes idiomas sejam facilmente criados, gerenciados e excluídos pelos administradores do site.
+AEM 6.4 Comunidades fornece melhorias no gerenciamento de sites, que garantem que vários sites da comunidade em diferentes idiomas sejam facilmente criados, gerenciados e excluídos pelos administradores do site.
 
 ### Criar sites de comunidade de várias localidades em uma etapa {#create-multi-locale-community-sites-in-one-step}
 
-O AEM Communities permite a criação de sites [da comunidade](create-site.md) multilíngues em uma única operação. Isso é possível devido à disponibilidade de vários idiomas para selecionar no campo Idioma **[!UICONTROL básico do site da]** comunidade na página Modelo **[!UICONTROL do]** site, ao criar um novo site da comunidade a partir do console de sites.
+A AEM Communities permite a criação de sites [](create-site.md) de comunidade multilíngues em uma única operação. Isso é possível devido à disponibilidade de vários idiomas para selecionar no campo Idioma **[!UICONTROL básico do site da]** comunidade na página Modelo **[!UICONTROL do]** site, ao criar um novo site da comunidade a partir do console de sites.
 
 ![multilocalesite](assets/multilocalesite.png)
 
@@ -86,13 +89,13 @@ Os usuários podem selecionar pastas de configuração, marcas e muitas outras c
 
 ### Excluir sites da comunidade do console de sites {#delete-community-sites-from-sites-console}
 
-O AEM 6.4 Communities fornece o ícone Excluir site nos sites existentes da comunidade, no console Sites da comunidade. Isso permite a [exclusão do site](create-site.md) e dos itens associados em um clique.
+AEM 6.4 Comunidades fornece o ícone Excluir site nos sites existentes da comunidade, no console Sites da comunidade. Isso permite a [exclusão do site](create-site.md) e dos itens associados em um clique.
 
 ![siteactions](assets/siteactions.png)
 
 ## Gerenciamento de perfis de usuário e UGC {#managing-ugc-and-user-profiles}
 
-Mantendo a proteção de dados do usuário no centro da experiência das comunidades, o AEM Communities expõe [APIs prontas para uso](user-ugc-management-service.md) e servlet [de](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)amostra. Essas APIs ajudam a gerenciar em massa (exclusão em massa e exportação em massa) o conteúdo gerado pelo usuário e a excluir perfis de usuário, além de serem fundamentais para lidar com solicitações de conformidade com o RGPD da UE.
+Mantendo a proteção de dados do usuário no centro da experiência das comunidades, a AEM Communities expõe [APIs prontas para uso](user-ugc-management-service.md) e servlet [de](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)amostra. Essas APIs ajudam a gerenciar em massa (exclusão em massa e exportação em massa) o conteúdo gerado pelo usuário e excluir perfis do usuário, além de serem fundamentais para lidar com solicitações de conformidade com o RGPD da UE.
 
 ## O que mudou {#what-s-changed}
 
