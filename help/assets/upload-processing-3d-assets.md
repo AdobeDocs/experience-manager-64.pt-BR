@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 71%
 
 ---
 
@@ -21,7 +24,7 @@ Use mecanismos padrão de upload ou sincronização para trazer recursos 3D e se
 
 Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 
-A Adobe recomenda que você carregue todos os arquivos referenciados antes ou ao mesmo tempo que carregue o arquivo de modelo 3D principal. No entanto, isso não é um requisito.
+O Adobe recomenda que você carregue todos os arquivos referenciados antes ou ao mesmo tempo que carregue o arquivo de modelo 3D primário. No entanto, isso não é um requisito.
 
 Quando o upload é concluído, seus arquivos 3D são convertidos, e um processamento adicional é aplicado para preparar o ativo para visualização e renderização.
 
@@ -77,7 +80,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Criando visualização</td> 
+   <td>Criando pré-visualização</td> 
    <td>O arquivo FBX ou OBJ é assimilado e processado. Dependências de arquivos são avaliadas e resolvidas como referências de ativos, quando possível.</td> 
   </tr> 
   <tr> 
