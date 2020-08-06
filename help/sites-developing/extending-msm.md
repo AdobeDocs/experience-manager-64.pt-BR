@@ -168,7 +168,7 @@ A nova configuração de implementação estará disponível para você quando d
 
 Para criar uma nova configuração de implantação:
 
-1. Abrir o CRXDE Lite; por exemplo:
+1. CRXDE Lite aberto; por exemplo:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Vá até :
@@ -523,7 +523,7 @@ A `LiveActionFactory` classe a seguir implementa um relatório `LiveAction` `cq:
    mvn -PautoInstallPackage clean install
    ```
 
-   O arquivo AEM `error.log` deve indicar que o pacote foi iniciado.
+   O `error.log` arquivo AEM deve indicar que o pacote foi iniciado.
 
    Por exemplo, [http://localhost:4502/system/console/status-slinglogs](http://localhost:4502/system/console/status-slinglogs).
 
@@ -549,7 +549,7 @@ Crie a configuração de implantação MSM que usa a `LiveActionFactory` que voc
 
 Configure a configuração de implantação criada no procedimento anterior para que ela use a `ExampleLiveActionFactory` classe.
 
-1. Abrir o CRXDE Lite; por exemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. CRXDE Lite aberto; por exemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 1. Crie o seguinte nó em `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Nome**: `exampleLiveAction`
@@ -603,7 +603,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 
 ## Alteração de nomes de idiomas e países padrão {#changing-language-names-and-default-countries}
 
-O AEM usa um conjunto padrão de códigos de idioma e país.
+AEM usa um conjunto padrão de códigos de idioma e país.
 
 * O código de idioma padrão é o código de duas letras minúsculas, conforme definido pela ISO-639-1.
 * O código padrão do país é o código de duas letras em minúsculas ou maiúsculas, conforme definido pela ISO 3166.
