@@ -1,8 +1,8 @@
 ---
 title: Renderização de ativos 3D
 seo-title: Renderização de ativos 3D
-description: Saiba como renderizar ativos 3D manipulados e salvos no AEM para criar imagens 2D para suas páginas da Web.
-seo-description: Saiba como renderizar ativos 3D manipulados e salvos no AEM para criar imagens 2D para suas páginas da Web.
+description: Saiba como renderizar ativos 3D manipulados e salvos em AEM para criar imagens 2D para suas páginas da Web.
+seo-description: Saiba como renderizar ativos 3D manipulados e salvos em AEM para criar imagens 2D para suas páginas da Web.
 uuid: ee4d669c-72b1-4f7a-9a68-a7c6d59c7856
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 66%
 
 ---
 
@@ -35,7 +38,7 @@ A renderização de conteúdo 3D consome recursos significativos do servidor, co
 
 O renderizador Rapid Refine normalmente demora vários minutos para renderizar imagens maiores. No entanto, os renderizadores de terceiros costumam demorar muitos minutos, até mesmo horas, quando configurados para proporcionar qualidade máxima.
 
-As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. A mensagem “Aguardando renderização...” é mostrada em ativos recém-carregados na Visualização de cartão. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser iniciado.
+As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. A mensagem “Aguardando renderização...” é mostrada em ativos recém-carregados na Visualização de cartão. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser start.
 
 >[!NOTE]
 >
