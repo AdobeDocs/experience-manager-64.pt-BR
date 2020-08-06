@@ -79,8 +79,8 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 | Recolher todas as acordeões na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todos os acordeões seguidos de Seta para a esquerda para recolher | Command+A para selecionar todos os acordeões seguidos pela seta para a esquerda para recolher |
 | Expandir a opção selecionada na árvore Objetos de formulário | Seta para a direita | Seta para a direita |
 | Recolher a opção selecionada na árvore Objetos de formulário | Seta para a esquerda | Seta para a esquerda |
-| Selecione o próximo item na árvore Objetos de formulário | Seta para baixo | Seta para baixo |
-| Selecione o item anterior na árvore Objetos de formulário | Seta para cima | Seta para cima |
+| Selecione o próximo item na árvore de objetos do Forms | Seta para baixo | Seta para baixo |
+| Selecione o item anterior na árvore Objetos do Forms | Seta para cima | Seta para cima |
 
 [1] Substitui Ctrl + seta para a direita para Windows e Command + seta para a direita para Mac OS.\
 [2] Substitui Ctrl + seta para a esquerda para Windows e Command + seta para a esquerda para Mac OS.
