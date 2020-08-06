@@ -1,8 +1,8 @@
 ---
-title: Gerenciar aplicativos e tarefas de formulários na Caixa de entrada do AEM
-seo-title: Gerenciar aplicativos e tarefas de formulários na Caixa de entrada do AEM
-description: A Caixa de entrada do AEM permite que você inicie workflows centrados no Forms por meio do envio de aplicativos e do gerenciamento do tarefa.
-seo-description: A Caixa de entrada do AEM permite que você inicie workflows centrados no Forms por meio do envio de aplicativos e do gerenciamento do tarefa.
+title: Gerenciar aplicativos e tarefas Forms na Caixa de entrada AEM
+seo-title: Gerenciar aplicativos e tarefas Forms na Caixa de entrada AEM
+description: AEM Caixa de entrada permite que você inicie workflows centrados na Forms, enviando aplicativos e gerenciando tarefas.
+seo-description: AEM Caixa de entrada permite que você inicie workflows centrados na Forms, enviando aplicativos e gerenciando tarefas.
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Gerenciar aplicativos e tarefas de formulários na Caixa de entrada do AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
+# Gerenciar aplicativos e tarefas Forms na Caixa de entrada AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é através de aplicativos na Caixa de entrada do AEM. É necessário criar um aplicativo de fluxo de trabalho para disponibilizar um fluxo de trabalho do Forms como aplicativo na Caixa de entrada. Para obter mais informações sobre o aplicativo de fluxo de trabalho e outras formas de iniciar workflows do Forms, consulte [Iniciar um fluxo de trabalho centrado no Forms no OSGi](/help/forms/using/aem-forms-workflow.md#launch).
+Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado na Forms é através de aplicativos AEM Caixa de entrada. É necessário criar um aplicativo de fluxo de trabalho para disponibilizar um fluxo de trabalho do Forms como aplicativo na Caixa de entrada. Para obter mais informações sobre o aplicativo de fluxo de trabalho e outras formas de iniciar workflows Forms, consulte [Iniciar um fluxo de trabalho centralizado na Forms no OSGi](/help/forms/using/aem-forms-workflow.md#launch).
 
-Além disso, a Caixa de entrada do AEM consolida notificações e tarefas de vários componentes do AEM, incluindo workflows do Forms. Quando um fluxo de trabalho de formulários contendo uma etapa Atribuir tarefa é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário. Se o destinatário for um grupo, a tarefa será exibida na Caixa de entrada de todos os membros do grupo até que um indivíduo solicite ou delegue a tarefa.
+Além disso, AEM Caixa de entrada consolida notificações e tarefas de vários componentes AEM, incluindo workflows Forms. Quando um fluxo de trabalho de formulários contendo uma etapa Atribuir tarefa é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário. Se o destinatário for um grupo, a tarefa será exibida na Caixa de entrada de todos os membros do grupo até que um indivíduo solicite ou delegue a tarefa.
 
 A interface do usuário Caixa de entrada fornece visualizações de calendário e listas para tarefas de visualização. Você também pode definir as configurações de visualização. É possível filtrar tarefas com base em vários parâmetros. Para obter mais informações sobre visualizações e filtros, consulte [Caixa de entrada](/help/sites-authoring/inbox.md).
 
@@ -29,11 +29,11 @@ Em resumo, a Caixa de entrada permite que você crie um novo aplicativo e gerenc
 
 >[!NOTE]
 >
->Você deve ser um membro do grupo de usuários do fluxo de trabalho para poder usar a Caixa de entrada do AEM.
+>Você deve ser um membro do grupo de usuários do fluxo de trabalho para poder usar AEM Caixa de entrada.
 
 ## Criar aplicativo {#create-application}
 
-1. Vá para Caixa de entrada do AEM em `https://[server]:[port]/aem/inbox`.
+1. Vá para AEM Caixa de entrada em `https://[server]:[port]/aem/inbox`.
 1. Na interface da caixa de entrada, toque em **[!UICONTROL Criar > Aplicativo]**. A página Selecionar aplicativo é exibida.
 1. Selecione um aplicativo e clique em **[!UICONTROL Criar]**. O formulário Adaptável associado ao aplicativo é aberto. Preencha os formulários e toque em **[!UICONTROL Enviar]**. Ele inicia o fluxo de trabalho associado e cria uma tarefa na Caixa de entrada do destinatário.
 
@@ -52,9 +52,11 @@ As Tarefas atribuídas a um grupo são exibidas na Caixa de entrada de todos os 
 1. Faça uma das seguintes opções:
 
    * Para delegar a tarefa, toque em **[!UICONTROL Delegar]**. A caixa de diálogo Delegar item é aberta. Selecione um usuário, adicione um comentário e toque em **[!UICONTROL OK]**.
+
    ![delegate](assets/delegate.png)
 
    * Para reivindicar a tarefa, toque em **[!UICONTROL Abrir]**. A caixa de diálogo Atribuir a si mesmo é aberta. Toque em **[!UICONTROL Prosseguir]** para reclamar a tarefa. A tarefa reivindicada é exibida com você como o destinatário em sua Caixa de entrada.
+
    ![reclamação](assets/claim.png)
 
 ### Detalhes da Visualização e executar ações no tarefa {#view-details-and-perform-actions-on-tasks}
@@ -101,9 +103,9 @@ A barra de ferramentas Ações mostra todas as opções disponíveis para a tare
 
 ### Visualização concluída tarefas {#view-completed-tasks}
 
-A Caixa de entrada do AEM exibe somente tarefas ativas. tarefas concluídas não são exibidas na lista. No entanto, você pode usar filtros de Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status, datas de start e término e assim por diante. Para visualização de tarefas concluídas:
+AEM Caixa de entrada exibe somente tarefas ativas. tarefas concluídas não são exibidas na lista. No entanto, você pode usar filtros de Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status, datas de start e término e assim por diante. Para visualização de tarefas concluídas:
 
-1. Na Caixa de entrada do AEM, toque em ![alternar no painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtro.
+1. Em AEM Caixa de entrada, toque em ![alternar o painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtro.
 1. Toque em Status **[!UICONTROL da]** Tarefa e selecione **[!UICONTROL Concluir]**. Todas as tarefas concluídas são exibidas.
 
    ![filter-1](assets/filter-1.png)
