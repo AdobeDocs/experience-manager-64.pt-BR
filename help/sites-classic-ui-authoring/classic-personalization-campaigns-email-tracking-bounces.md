@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 67%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->A Adobe não pretende aprimorar ainda mais o rastreamento de emails abertos/enviados por um serviço SMTP AEM.
+>O Adobe não pretende melhorar ainda mais o rastreamento de emails abertos/enviados por AEM serviço SMTP.
 >
->A recomendação é [aproveitar o Adobe Campaign e sua integração](/help/sites-administering/campaign.md)com o AEM.
+>A recomendação é [aproveitar a Adobe Campaign e sua integração](/help/sites-administering/campaign.md)AEM.
 
 Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços é devolvido. O AEM é capaz de gerenciar esses saltos e pode parar de enviar informativos para esses endereços depois que o contador de saltos configurado for excedido. Por padrão, a taxa de saltos é definida como 3, mas pode ser configurada.
 
@@ -69,7 +72,7 @@ Para configurar o importador de feeds para rastrear emails devolvidos:
 
    **Exemplos de IMAP:**
 
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Usar IMAP sobre SSL para conectar-se ao GMail na porta 993 com usuário/segredo. Por padrão, apenas obtendo novas mensagens. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Usar o IMAP sobre SSL para conectar-se ao GMail na porta 993 com usuário/segredo. Por padrão, apenas obtendo novas mensagens. |
    |---|---|
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Usar o IMAP sobre SSL para conectar-se ao GMail 993 com usuário/segredo, apenas recebendo uma mensagem já vista. |
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Usar o IMAP sobre SSL para conectar-se ao GMail 993 com usuário/segredo, já lendo OU novas mensagens. |
@@ -92,7 +95,7 @@ Para configurar o serviço de informativo:
 
    | Contador de rejeição máximo (max.bounce.count) | Define o número de rejeições até que um usuário seja omitido ao enviar um boletim informativo. Definir este valor como 0 desativa completamente a verificação de saltos. |
    |---|---|
-   | Atividade sem cache (send.activity.nocache) | Define a configuração de cache a ser usada para a atividade enviada do boletim informativo |
+   | Atividade sem cache (send.atividade.nocache) | Define a configuração de cache a ser usada para a atividade enviada para o boletim informativo |
 
    Depois de salvo, o serviço MCM do informativo faz o seguinte:
 
