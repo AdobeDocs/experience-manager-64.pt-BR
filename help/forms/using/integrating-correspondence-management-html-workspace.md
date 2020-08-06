@@ -1,8 +1,8 @@
 ---
-title: Integração de aplicativos de terceiros na área de trabalho do AEM Forms
-seo-title: Integração de aplicativos de terceiros na área de trabalho do AEM Forms
-description: Como integrar aplicativos de terceiros como o Gerenciamento de correspondência na área de trabalho do AEM Forms.
-seo-description: Como integrar aplicativos de terceiros como o Gerenciamento de correspondência na área de trabalho do AEM Forms.
+title: Integração de aplicativos de terceiros na área de trabalho AEM Forms
+seo-title: Integração de aplicativos de terceiros na área de trabalho AEM Forms
+description: Como integrar aplicativos de terceiros como o Gerenciamento de correspondência na área de trabalho da AEM Forms.
+seo-description: Como integrar aplicativos de terceiros como o Gerenciamento de correspondência na área de trabalho da AEM Forms.
 uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# Integração de aplicativos de terceiros na área de trabalho do AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
+# Integração de aplicativos de terceiros na área de trabalho AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
 
-A área de trabalho do AEM Forms suporta o gerenciamento de atividades de conclusão e atribuição de tarefas para formulários e documentos. Esses formulários e documentos podem ser XDP Forms, Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
+A área de trabalho da AEM Forms oferece suporte ao gerenciamento de atividades de atribuição e conclusão de tarefas para formulários e documentos. Esses formulários e documentos podem ser XDP Forms, Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
 
-Esses recursos são aprimorados ainda mais. Agora, o AEM Forms oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes à área de trabalho dos AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho da atribuição e aprovação subsequente de uma tarefa. O AEM Forms fornece uma única experiência unificada para usuários corporativos do AEM Forms, para que todas as atribuições ou aprovações de tarefa para os aplicativos suportados possam ser tratadas por meio da área de trabalho do AEM Forms.
+Esses recursos são aprimorados ainda mais. A AEM Forms agora oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes à área de trabalho da AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho da atribuição e aprovação subsequente de uma tarefa. A AEM Forms fornece uma única experiência unificada para usuários corporativos AEM Forms para que todas as atribuições ou aprovações de tarefa para os aplicativos suportados possam ser tratadas por meio da área de trabalho da AEM Forms.
 
-Como exemplo, consideremos o Gerenciamento de correspondência como o candidato de amostra para integração com o espaço de trabalho do AEM Forms. O Gerenciamento de correspondência tem o conceito de &quot;Carta&quot;, que pode ser renderizada e permite ações.
+Como exemplo, consideremos o Gerenciamento de correspondência como o candidato de amostra para integração com a área de trabalho da AEM Forms. O Gerenciamento de correspondência tem o conceito de &quot;Carta&quot;, que pode ser renderizada e permite ações.
 
 ## Criar ativos do Gerenciamento de correspondência {#create-correspondence-management-assets}
 
