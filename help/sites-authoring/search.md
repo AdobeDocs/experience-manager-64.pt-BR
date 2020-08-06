@@ -1,6 +1,6 @@
 ---
-title: 'Pesquisar '
-seo-title: 'Pesquisar '
+title: 'Pesquisar  '
+seo-title: 'Pesquisar  '
 description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
 seo-description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 94%
 
 ---
 
@@ -70,6 +73,7 @@ Para pesquisar e filtrar os recursos:
    * Diretório de pesquisa
    * Tags
    * Critérios de pesquisa; por exemplo, datas modificadas, status de publicação, status da Live Copy. 
+
    >[!NOTE]
    >
    >O critério de pesquisa pode variar:
