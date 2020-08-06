@@ -37,7 +37,7 @@ Primeiro, um Modelo Sling deve ser definido para o componente.
 
 >[!NOTE]
 >
->Para obter um exemplo de uso de modelos Sling, consulte o artigo [Desenvolvimento de exportadores de modelos Sling no AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
+>Para obter um exemplo de uso de modelos Sling, consulte o artigo [Desenvolvendo exportadores de modelos Sling em AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
 
 A classe de implementação do Modelo Sling deve ser anotada com o seguinte:
 
