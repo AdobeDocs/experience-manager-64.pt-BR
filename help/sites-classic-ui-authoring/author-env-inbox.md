@@ -1,6 +1,6 @@
 ---
-title: 'Sua Caixa de entrada '
-seo-title: 'Sua Caixa de entrada '
+title: Sua caixa de entrada
+seo-title: Sua caixa de entrada
 description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
 seo-description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
 uuid: 90a3b4db-add9-47d4-a95d-fcc3863d6255
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 93%
 
 ---
 
 
-# Sua Caixa de entrada {#your-inbox}
+# Sua caixa de entrada{#your-inbox}
 
 Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
 
@@ -42,6 +45,7 @@ Para exibir suas notificações:
 
    * [Se inscrever para receber notificações](#subscribing-to-notifications)
    * [Processar suas notificações](#processing-your-notifications)
+
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ## Se inscrever para receber notificações {#subscribing-to-notifications}
@@ -66,6 +70,7 @@ Para assinar notificações:
 
    * **Caixa de entrada**: as notificações serão exibidas na sua caixa de entrada do AEM.
    * **Email**: as notificações serão enviadas por email para o endereço definido no seu perfil de usuário.
+
    >[!NOTE]
    >
    >Algumas configurações precisam ser definidas para serem notificadas por email. Também é possível personalizar o modelo de email ou adicionar um modelo de email para um novo idioma. Consulte [Configurar a notificação por email](/help/sites-administering/notification.md#configuringemailnotification) para configurar as notificações por email no AEM.
@@ -92,6 +97,7 @@ Para assinar notificações:
       Para ser notificado somente sobre ações na página definidas pelo caminho, defina **Exata?** como **Sim**.
 
    * Para permitir a regra, defina **Regra** como **Permitir**. Se definida como **Negar**, a regra será negada, mas não removida e poderá ser permitida depois.
+
    Para remover uma definição, selecione a linha clicando em uma célula de tabela e clique em **Excluir**.
 
 1. Clique em **OK** para salvar a configuração.
