@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ Essa seção fornece uma visão geral das principais tarefas que você usará ao
 
 Abrange:
 
-* [Introdução](#getting-started) - detalhar a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
+* [Introdução](#getting-started) - detalhando a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
 
 * [Outras ações](#further-actions) - siga as muitas outras ações que você pode usar ao criar.
 
