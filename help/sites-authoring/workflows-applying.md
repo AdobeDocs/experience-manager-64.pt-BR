@@ -11,13 +11,16 @@ topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 84%
 
 ---
 
 
 # Aplicação de fluxos de trabalho a páginas{#applying-workflows-to-pages}
 
-Ao criar, você pode chamar fluxos de trabalho para executar ações em suas páginas; também é possível aplicar mais de um fluxo de trabalho.
+Ao criar, você pode chamar workflows para executar ações em suas páginas; também é possível aplicar mais de um fluxo de trabalho.
 
 Ao aplicar o fluxo de trabalho, você especifica as seguintes informações:
 
@@ -39,6 +42,7 @@ Fluxos de trabalho podem ser iniciados a partir de:
 >
 >* [Como aplicar fluxos de trabalho a ativos do DAM](/help/assets/assets-workflow.md).
 >* [Trabalhar com fluxos de trabalho de projeto](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -98,6 +102,7 @@ Você pode especificar os detalhes:
    * **Título do fluxo de trabalho**
 
       * Você pode especificar um título para essa instância, para que ele possa ser identificado em um estágio posterior.
+
    Dependendo do modelo de fluxo de trabalho, as seguintes opções também estão disponíveis. Isso permite que o pacote criado como carga seja mantido após a conclusão do fluxo de trabalho.
 
    * **Manter o pacote do fluxo de trabalho**
@@ -124,9 +129,11 @@ Você pode especificar os detalhes:
          * Incluir somente filhos imediatos.
          * Incluir somente as páginas modificadas.
          * Incluir somente páginas já publicadas.
+
          Qualquer filho especificado é adicionado à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
       * **Remover seleção** para remover esse recurso do fluxo de trabalho.
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
