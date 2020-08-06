@@ -24,7 +24,7 @@ O Connector for IBM FileNet permite a comunicação entre formulários AEM e IBM
 
 >[!NOTE]
 >
->Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Nesta versão, os ativos são armazenados no repositório nativo de formulários do AEM e os serviços do Provedor de repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório de formulários AEM é feita quando você faz uma atualização para formulários AEM. Para obter mais informações, consulte o Guia de atualização de formulários do AEM para seu servidor de aplicativos.
+>Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Nesta versão, os ativos são armazenados no repositório nativo de formulários AEM e os serviços do Provedor de Repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório de formulários AEM é feita quando você faz uma atualização para formulários AEM. Para obter mais informações, consulte o guia Atualização de formulários AEM para o servidor de aplicativos.
 
 ## Configurar a conexão com o mecanismo de conteúdo {#configure-the-connection-to-the-content-engine}
 
