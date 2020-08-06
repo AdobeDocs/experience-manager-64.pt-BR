@@ -9,13 +9,16 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
 
 # Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
-É possível definir a aparência geral e o estilo de um formulário adaptável especificando estilos usando o editor [de](/help/forms/using/themes.md)temas. Além disso, é possível aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações dinamicamente. Os estilos incorporados substituem o estilo fornecido no tema.
+É possível definir a aparência geral e o estilo de um formulário adaptável especificando estilos usando o editor [de](/help/forms/using/themes.md)temas. Além disso, é possível aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e pré-visualização as alterações dinamicamente. Os estilos incorporados substituem o estilo fornecido no tema.
 
 ## Aplicar propriedades CSS em linha {#apply-inline-css-properties}
 
@@ -32,7 +35,7 @@ Para adicionar estilos incorporados a um componente:
 
 1. Clique em uma guia na barra lateral para especificar as propriedades CSS. Você pode especificar propriedades como:
 
-   * Dimensões e posição (configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuante, claro, sobrefluxo)
+   * Dimension e posição (configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuante, claro, sobrefluxo)
    * Texto (família da fonte, peso, cor, tamanho, altura da linha e alinhamento)
    * Plano de fundo (imagem e gradiente, cor do plano de fundo)
    * Borda (Largura, estilo, cor, raio)
@@ -46,7 +49,7 @@ Para adicionar estilos incorporados a um componente:
 
 As imagens a seguir representam um campo de texto antes e depois da aplicação de estilos incorporados a ele.
 
-![Componente de caixa de texto antes da aplicação do estilo incorporado](assets/no-style.png)
+![Componente de caixa de texto antes da aplicação do estilo em linha](assets/no-style.png)
 
 Componente da caixa de texto antes de aplicar propriedades de estilo em linha
 
@@ -64,7 +67,7 @@ Observe a alteração no estilo da caixa de texto como mostrado na imagem a segu
    <td><p>Texto</p> </td> 
    <td><p>border</p> </td> 
    <td><p>Largura da borda = 2px</p> <p>Estilo de borda=Sólido</p> <p>Cor da borda=#1111</p> </td> 
-   <td><p>Cria uma borda preta com largura de 2x ao redor do campo</p> </td> 
+   <td><p>Cria uma borda preta com largura de 2 px ao redor do campo</p> </td> 
   </tr> 
   <tr> 
    <td><p>Caixa de texto</p> </td> 
@@ -93,7 +96,7 @@ Observe a alteração no estilo da caixa de texto como mostrado na imagem a segu
  </tbody> 
 </table>
 
-![](assets/applied-style.png) Estilo da caixa de texto depois que o estilo incorporado é aplicado **** Figura: componente de caixa de *texto após a aplicação de propriedades de estilo em linha*
+![Estilo da caixa de texto depois que o estilo em linha é aplicado](assets/applied-style.png)**Figura:** *Componente da caixa de texto após aplicar propriedades de estilo em linha*
 
 Siga as etapas acima para selecionar e criar um estilo para outros componentes, como painéis, botões de envio e botões de opção.
 
