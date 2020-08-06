@@ -1,5 +1,5 @@
 ---
-title: NÃO PUBLICAR, MAS NÃO EXCLUIR A Personalização De Modelos De Fragmento De Conteúdo
+title: NÃO PUBLICAR, MAS NÃO DELETE Personalizar modelos de fragmento de conteúdo
 seo-title: Personalização de modelos de fragmento de conteúdo
 description: Os Modelos de fragmento de conteúdo podem ser personalizados e estendidos.
 seo-description: Os Modelos de fragmento de conteúdo podem ser personalizados e estendidos.
@@ -10,11 +10,14 @@ discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 
-# NÃO PUBLICAR, MAS NÃO EXCLUIR A Personalização De Modelos De Fragmento De Conteúdo{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# NÃO PUBLICAR, MAS NÃO DELETE Personalizar modelos de fragmento de conteúdo{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
 O editor do Modelo de fragmento de conteúdo é um assistente baseado em `Formbuilder`, herdado de:
 
@@ -26,7 +29,8 @@ Esse componente tem as ferramentas necessárias para renderizar a interface de a
 
 Os modelos são salvos e criados em `/conf`, em uma pasta que tem a propriedade [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) conteúdo ativada. Essa configuração também pode ser vista nas Propriedades **** de configuração, acessíveis no Navegador **de** configuração.
 
-1. Navegue até o navegador por meio de **Ferramentas**, **Geral**, Navegador **de** configuração. Por exemplo, `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
+1. Navegue até o navegador por meio de **Ferramentas**, **Geral**, Navegador **de** configuração. Por exemplo, 
+`http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
 1. No navegador, selecione a configuração apropriada e, em seguida, **Propriedades** na barra de ferramentas.
 
@@ -73,15 +77,15 @@ O assistente criará uma entrada com esta estrutura:
 >
 >Todos os tipos de dados arrastados e soltos em um editor de modelo e, como tal, instanciados **devem** ter a `name` propriedade inserida pelo usuário.
 >
->**Isto é visto como Nome da** propriedade &amp;ast; na guia **Propriedades** do editor de modelo.
+>Isto é visto como Nome da **propriedade &amp;ast;** na guia **Propriedades** do editor de modelo.
 
 ## Estrutura do Editor de Modelos {#structure-of-the-model-editor}
 
-O Editor **do Modelo de Fragmento de** Conteúdo tem duas partes:
+O Editor **do Modelo de fragmento de** conteúdo tem duas partes:
 
-* O painel de visualização, ou exibição, no lado esquerdo, onde é possível soltar itens. Isso:
+* O painel pré-visualização, ou visualização, no lado esquerdo, onde é possível soltar itens. Isso:
 
-   * Mostra uma visualização do Tipo **de** dados que é instanciado.
+   * Mostra uma pré-visualização do Tipo **de** dados que é instanciada.
    * Permite a ordem dentro do Editor de modelos.
 
 * As guias Tipos **de** dados/**Propriedades** no painel à direita. Isso:
@@ -95,7 +99,7 @@ O Editor **do Modelo de Fragmento de** Conteúdo tem duas partes:
       This node contains all the data types currently supported in the model editor. For more information on how to configure the data types, see [Customizing Data Types for Content Fragment Models](/help/sites-developing/customizing-content-fragment-model-data-types.md).
       -->
 
-   * Todos os tipos de dados renderizados têm duas tags de script que, quando instanciadas, formarão a exibição (o componente renderizado no lado esquerdo) e a guia **Propriedades** , que define as propriedades que um usuário pode definir para um determinado componente.
+   * Todos os tipos de dados renderizados têm duas tags de script que, quando instanciadas, formarão a visualização (o componente renderizado no lado esquerdo) e a guia **Propriedades** , que define as propriedades que um usuário pode definir para um determinado componente.
 
 >[!CAUTION]
 >
@@ -109,7 +113,7 @@ The properties on the right side define a form that is submitted directly into J
 
 Quando um tipo de dados é instanciado, as entradas HTML são criadas para cada propriedade que o componente precisa ser renderizado em um fragmento de conteúdo. Por exemplo, eles incluem:
 
-* **** Nome da propriedade &amp;ast; ( `name`) - atua como um identificador para componentes
+* **Nome da propriedade &amp;ast;** ( `name`) - atua como um identificador para componentes
 
 * **Renderizar como** ( `metaType`) - digite o componente a ser renderizado como
 
