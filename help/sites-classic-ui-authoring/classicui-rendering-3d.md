@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
 source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 68%
 
 ---
 
@@ -35,7 +38,7 @@ A renderização de conteúdo 3D consome recursos significativos do servidor, co
 
 O renderizador Rapid Refine normalmente demora vários minutos para renderizar imagens maiores. No entanto, os renderizadores de terceiros costumam demorar muitos minutos, até mesmo horas, quando configurados para proporcionar qualidade máxima.
 
-As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser iniciado.
+As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser start.
 
 >[!NOTE]
 >
