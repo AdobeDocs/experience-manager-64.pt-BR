@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 94%
 
 ---
 
@@ -151,16 +154,18 @@ O placeholder do componente indica onde um componente será posicionado quando v
 1. Há duas maneiras de selecionar e adicionar um novo componente do sistema de parágrafo:
 
    * Selecione a opção **Inserir componente** (+) na barra de ferramentas de um componente existente ou na caixa **Arrastar componentes aqui**.
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
    * Se você estiver em um dispositivo de desktop, clique duas vezes na caixa **Arraste componentes aqui**.
+
    A caixa de diálogo **Inserir novo componente** será aberta para permitir que você selecione o componente desejado: 
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
 
 1. O componente selecionado será adicionado à parte inferior da página. [Edite](#edit-content) o componente conforme necessário.
 
-### Inserir um componente usando o Navegador de ativos  {#inserting-a-component-using-the-assets-browser}
+### Inserir um componente usando o Navegador de ativos   {#inserting-a-component-using-the-assets-browser}
 
 Você também pode adicionar um novo componente à página, arrastando um ativo a partir do [navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser). Isto criará automaticamente um novo componente do tipo apropriado (e que contém o ativo).
 
@@ -189,8 +194,8 @@ Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema
    <td>Flash</td> 
   </tr>
   <tr>
-   <td>Fragmento do conteúdo</td> 
-   <td>Fragmento do conteúdo<br /> </td> 
+   <td>Fragmento de conteúdo</td> 
+   <td>Fragmento de conteúdo<br /> </td> 
   </tr>
  </tbody>
 </table>
@@ -268,6 +273,7 @@ As ações reais disponíveis para o usuário serão mostradas conforme apropria
    * Você pode colar na mesma página ou em uma diferente.
    * O item colado será colocado acima do item no qual você seleciona a ação de colar.
    * A ação de Colar será mostrada somente se houver conteúdo na área de transferência.
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -305,7 +311,7 @@ Existem dois métodos de adição e/ou edição do conteúdo dos componentes:
 * Abra a caixa de diálogo de [componentes para editar](#component-edit-dialog).
 * [Arraste e solte um ativo](#inserting-a-component-using-the-assets-browser) do navegador de ativos para adicionar diretamente o conteúdo.
 
-### Caixa de diálogo de edição de componente  {#component-edit-dialog}
+### Caixa de diálogo de edição de componente   {#component-edit-dialog}
 
 Você pode abrir um componente para editar o conteúdo usando o [ícone Editar (lápis) na barra de ferramentas do componente](#edit-configure-copy-cut-delete-paste).
 
@@ -346,7 +352,7 @@ Para tipos de componentes específicos, você pode arrastar e soltar os ativos d
 | Documento | Download |
 | Produto | Produto |
 | Vídeo | Flash |
-| Fragmento do conteúdo | Fragmento do conteúdo |
+| Fragmento de conteúdo | Fragmento do conteúdo |
 
 ## Editar (conteúdo) Modo de tela cheia {#edit-content-full-screen-mode}
 
@@ -394,6 +400,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
    * As alças de redimensionamento do componente são exibidas.
    * A barra de ferramentas do emulador é exibida na parte superior da tela.
    * As ações de Layout são exibidas na barra de ferramentas do componente no lugar das ações padrão de edição.
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
    Agora é possível modificar o layout do componente da mesma maneira que você faria no [modo de layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
@@ -404,7 +411,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
 >[!NOTE]
 >
->O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado e as alças de redimensionamento, bem como a barra de ferramentas do emulador desaparecerão.
+>O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado e as alças de redimensionamento, bem como a barra de ferramentas do emulador, desaparecerão.
 >
 >Se precisar editar o layout geral da página, afetando vários componentes, alterne para o [modo de layout](/help/sites-authoring/responsive-layout.md).
 
@@ -450,7 +457,7 @@ If the page is based on a [static template](/help/sites-authoring/templates.md#e
 
 É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-authoring/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Status da Live Copy  {#live-copy-status}
+## Status da Live Copy   {#live-copy-status}
 
 O modo de página [Status da Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e quais componentes são/não são herdados:
 
@@ -465,7 +472,7 @@ Por exemplo:
 
 As [anotações ](/help/sites-authoring/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas  {#previewing-pages}
+## Visualizar páginas   {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
@@ -478,6 +485,7 @@ Existem duas opções para a visualização de uma página:
 >* Os links no conteúdo são visíveis, mas não são acessíveis no modo Editar.
 >* Use qualquer uma das opções de visualização, caso deseje navegar usando os links.
 >* Use o [atalho de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para alternar entre a visualização e o último modo selecionado.
+
 >
 
 
@@ -512,6 +520,7 @@ Uma página pode ser bloqueada através do:
 
    1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Selecione o ícone de bloqueio.
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
@@ -578,6 +587,7 @@ O comportamento dos comandos desfazer e refazer é semelhante à de outros progr
 >* Refazer ações, contanto que não tenha feito uma edição de página desde que usou o comando desfazer.
 >* Desfazer um máximo de 20 ações de edição (configuração padrão).
 >* Usar também os [Atalhos de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para desfazer e refazer.
+
 >
 
 
