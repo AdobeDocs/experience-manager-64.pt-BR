@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -27,13 +30,13 @@ Se necessário, você pode usar as tags HTML suportadas pelo Adobe Flash® Playe
 * &lt;font> Marca de fonte
 * Marca &lt;img> Imagem
 * Marca &lt;i> Itálico
-* &lt;li> Marca de item de lista
+* &lt;li> marca de item de Lista
 * &lt;p> Marca de parágrafo
 * tag &lt;span> Span
 * Marca de formato de texto &lt;textformat>
 * &lt;u> Marca sublinhada
 
-Para obter mais informações sobre as tags compatíveis, consulte a definição da `htmlText` propriedade para a classe TextField na Referência [de linguagem](https://www.adobe.com/support/documentation/en/flex/)flexível.
+Para obter mais informações sobre as tags compatíveis, consulte a definição da `htmlText` propriedade para a classe TextField na Referência [de linguagem do](https://www.adobe.com/support/documentation/en/flex/)Flex.
 
 ## Definir a mensagem do dia {#set-the-message-of-the-day}
 
@@ -43,5 +46,5 @@ Para obter mais informações sobre as tags compatíveis, consulte a definição
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão de formulários do AEM.
+>O Flex Workspace está obsoleto para AEM versão de formulários.
 
