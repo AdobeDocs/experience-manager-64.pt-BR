@@ -1,6 +1,6 @@
 ---
-title: QuickStart(SOAP) da API Java do Distiller Service
-seo-title: QuickStart(SOAP) da API Java do Distiller Service
+title: QuickStart (SOAP) da API Java do Distiller Service
+seo-title: QuickStart (SOAP) da API Java do Distiller Service
 description: 'null'
 seo-description: 'null'
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Start rápido da API Java do Distiller Service (SOAP) {#distiller-service-java-api-quickstart-soap}
+# Start rápido (SOAP) da API do Distiller Service Java {#distiller-service-java-api-quickstart-soap}
 
 O SOAP (Java API Quick Start) está disponível para o serviço Distiller®:
 
 [Start rápido (modo SOAP): Converter um arquivo PostScript em um documento PDF usando a API Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
