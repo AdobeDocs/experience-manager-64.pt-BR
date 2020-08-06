@@ -1,8 +1,8 @@
 ---
 title: Sobreposições
 seo-title: Sobreposições
-description: 'O AEM usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades '
-seo-description: 'O AEM usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades '
+description: 'AEM usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades '
+seo-description: 'AEM usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades '
 uuid: d14c08fe-04c0-4925-8c99-c6644357919d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
 
 # Sobreposições{#overlays}
 
-O AEM (e antes disso, o CQ) há muito tempo usa o princípio de sobreposições para permitir estender e personalizar os [consoles](/help/sites-developing/customizing-consoles-touch.md) e outras funcionalidades (por exemplo, criação [de](/help/sites-developing/customizing-page-authoring-touch.md)página).
+AEM (e antes disso, o CQ) há muito tempo usa o princípio de sobreposições para permitir estender e personalizar os [consoles](/help/sites-developing/customizing-consoles-touch.md) e outras funcionalidades (por exemplo, criação [de](/help/sites-developing/customizing-page-authoring-touch.md)página).
 
-Sobreposição é um termo que pode ser usado em muitos contextos. Neste contexto (estender o AEM), uma sobreposição significa usar a funcionalidade predefinida e impor suas próprias definições sobre isso (para personalizar a funcionalidade padrão).
+A sobreposição é um termo que pode ser usado em muitos contextos. Neste contexto (estender AEM) uma sobreposição significa usar a funcionalidade predefinida e impor suas próprias definições sobre isso (para personalizar a funcionalidade padrão).
 
-Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e é recomendável definir sua sobreposição (personalizações) na `/apps` ramificação. O AEM usa um caminho de pesquisa para localizar um recurso, pesquisando primeiro a `/apps` ramificação e, em seguida, a `/libs` ramificação (o caminho [de pesquisa pode ser configurado](#configuring-the-search-paths)). Esse mecanismo significa que sua sobreposição (e as personalizações definidas ali) terão prioridade.
+Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e é recomendável definir sua sobreposição (personalizações) sob a `/apps` ramificação. AEM usa um caminho de pesquisa para localizar um recurso, pesquisando primeiro a `/apps` ramificação e, em seguida, a `/libs` ramificação (o caminho [de pesquisa pode ser configurado](#configuring-the-search-paths)). Esse mecanismo significa que sua sobreposição (e as personalizações definidas ali) terão prioridade.
 
-Desde o AEM 6.0, alterações foram feitas em como as sobreposições são implementadas e usadas:
+Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são implementadas e usadas:
 
-* A partir do AEM 6.0 - para sobreposições relacionadas ao [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)(ou seja, a interface habilitada para toque)
+* AEM 6.0 em diante - para sobreposições relacionadas ao [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)(ou seja, a interface habilitada para toque)
 
    * Método
 
@@ -40,7 +43,7 @@ Desde o AEM 6.0, alterações foram feitas em como as sobreposições são imple
       * Apenas redefina o que é realmente necessário.
 
 
-* Sobreposições não granitas e sobreposições anteriores ao AEM 6.0
+* Sobreposições e sobreposições não granitas anteriores ao AEM 6.0
 
    * Método
 
@@ -72,7 +75,7 @@ As sobreposições são o método recomendado para muitas alterações, como [co
 
 ## Configuração dos caminhos de pesquisa {#configuring-the-search-paths}
 
-Para sobreposições, o recurso fornecido é um agregado dos recursos e propriedades recuperados, dependendo dos caminhos de pesquisa que podem ser definidos:
+Para sobreposições, o recurso fornecido é uma agregação dos recursos e propriedades recuperados, dependendo dos caminhos de pesquisa que podem ser definidos:
 
 * O Caminho **de pesquisa do** Resolvedor de recursos, conforme definido na configuração [do](/help/sites-deploying/configuring-osgi.md) OSGi para a Fábrica **do Resolvedor de Recursos do Sling do** Apache.
 
