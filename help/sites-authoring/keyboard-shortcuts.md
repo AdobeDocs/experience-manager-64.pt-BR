@@ -1,5 +1,5 @@
 ---
-title: Atalhos de teclado para Consoles
+title: 'Atalhos de teclado para Consoles  '
 seo-title: Atalhos de teclado para Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
 seo-description: Poupe tempo durante a criação usando estes atalhos de teclado
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 100%
 
 ---
 
 
-# Atalhos de teclado para Consoles {#keyboard-shortcuts-for-consoles}
+# Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
 
 Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
