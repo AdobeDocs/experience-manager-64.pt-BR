@@ -14,7 +14,7 @@ ht-degree: 16%
 
 # Gerenciar coleções {#managing-collections}
 
-Uma coleção é um conjunto de ativos nos Ativos do Adobe Experience Manager. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
+Uma coleção é um conjunto de ativos no Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
 
 Diferentemente das pastas, uma coleção pode incluir ativos de diferentes locais. Você pode compartilhar coleções com vários usuários aos quais são atribuídos diferentes níveis de privilégios, incluindo exibição, edição e assim por diante.
 
@@ -194,7 +194,7 @@ Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo ad
 
 ## Pesquisar coleções {#searching-collections}
 
-Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, o AEM Assets pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
+Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, a AEM Assets pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas dentro das coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
 
@@ -202,7 +202,7 @@ Se você pesquisar por coleções do nível superior, somente coleções individ
 
 No console Coleções, toque/clique em uma coleção para abri-la.
 
-Em uma coleção, a pesquisa do AEM Asset está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
+Em uma coleção, AEM pesquisa de ativos está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
 
 ## Editar configurações de coleção {#editing-collection-settings}
 
