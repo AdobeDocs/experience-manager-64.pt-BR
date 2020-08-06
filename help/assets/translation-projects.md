@@ -1,16 +1,19 @@
 ---
 title: Criando projetos de tradução
-description: Saiba como criar projetos de tradução no AEM.
+description: Saiba como criar projetos de tradução em AEM.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '1934'
+ht-degree: 23%
 
 ---
 
 
 # Criando projetos de tradução {#creating-translation-projects}
 
-Para criar uma cópia de idioma, dispare um dos seguintes fluxos de trabalho de cópia de idioma disponíveis no painel Referências na interface do usuário do Assets:
+Para criar uma cópia de idioma, dispare um dos seguintes workflows de cópia de idioma disponíveis no painel Referências na interface do usuário do Assets:
 
 **Criar e traduzir**
 
@@ -18,15 +21,15 @@ Neste fluxo de trabalho, os ativos a serem traduzidos são copiados para a raiz 
 
 **Atualizar cópias de idioma**
 
-Você executa esse fluxo de trabalho para traduzir um grupo adicional de ativos e incluí-lo em uma cópia de idioma para uma localidade específica. Nesse caso, os ativos convertidos são adicionados à pasta de destino que já contém ativos convertidos anteriormente.
+Você executa esse fluxo de trabalho para traduzir um grupo adicional de ativos e incluí-lo em uma cópia de idioma para uma localidade específica. Nesse caso, os ativos convertidos são adicionados à pasta do público alvo que já contém os ativos convertidos anteriormente.
 
 >[!NOTE]
 >
->Os binários de ativos são traduzidos somente se o provedor de serviços de tradução suportar a tradução de binários.
+>Os binários de ativos são traduzidos somente se o provedor de serviço de tradução suportar a tradução de binários.
 
 >[!NOTE]
 >
->Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como arquivos PDF e InDesign, seus subativos ou representações (se houver) não serão submetidos para conversão.
+>Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como PDFs e arquivos de InDesign, seus subativos ou representações (se houver) não serão submetidos para conversão.
 
 ## Criar e traduzir fluxo de trabalho {#create-and-translate-workflow}
 
@@ -40,7 +43,7 @@ Use o fluxo de trabalho Criar e traduzir para gerar cópias de idioma para um id
 
 Use a opção **Somente criar estrutura** para criar uma hierarquia de pasta de destino na raiz do idioma de destino para corresponder à hierarquia da pasta de origem na raiz do idioma de origem. Nesse caso, os ativos de origem são copiados na pasta de destino. No entanto, nenhum projeto de tradução é gerado.
 
-1. Na interface do usuário do Assets, selecione a pasta de origem para a qual deseja criar uma estrutura na raiz do idioma de destino.
+1. Na interface do usuário do Assets, selecione a pasta de origem para a qual deseja criar uma estrutura na raiz do idioma do público alvo.
 1. Abra o painel **[!UICONTROL Referências]** e clique/toque em **[!UICONTROL Cópias de idioma]**, em **[!UICONTROL Cópias]**.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -57,11 +60,11 @@ Use a opção **Somente criar estrutura** para criar uma hierarquia de pasta de 
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. Clique/toque em **[!UICONTROL Criar]**. A nova estrutura para o idioma de destino é listada em Cópias **[!UICONTROL de idiomas]**.
+1. Clique/toque em **[!UICONTROL Criar]**. A nova estrutura para o idioma do público alvo é listada em Cópias **[!UICONTROL de idiomas]**.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. Clique/toque na estrutura da lista e, em seguida, clique/toque em **[!UICONTROL Revelar nos ativos]** para navegar até a estrutura de pastas dentro do idioma de destino.
+1. Clique/toque na estrutura da lista e, em seguida, clique/toque em **[!UICONTROL Revelar nos ativos]** para navegar até a estrutura da pasta no idioma do público alvo.
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -90,7 +93,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Click/tap on **[!UICONTROL Create]**. Os ativos da pasta de origem são copiados para as pastas de destino das localidades selecionadas na etapa 4.
+1. Click/tap on **[!UICONTROL Create]**. Os ativos da pasta de origem são copiados para as pastas de públicos alvos para as localidades selecionadas na etapa 4.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -102,7 +105,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
-1. Abra a pasta para exibir o projeto de tradução.
+1. Abra a pasta para visualização do projeto de tradução.
 
    ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -110,13 +113,13 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Para exibir o status do trabalho de tradução, clique nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
+1. Para visualização do status do trabalho de tradução, clique nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
    Para obter mais detalhes sobre status de trabalhos, consulte [Monitorando o Status de um Trabalho](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de Tradução.
 
-1. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para exibir os metadados traduzidos.
+1. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -126,7 +129,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
 ### Adicionar ao projeto de tradução existente {#add-to-existing-translation-project}
 
-Se você usar essa opção, o fluxo de trabalho de tradução será executado para os ativos adicionados à pasta de origem após executar um fluxo de trabalho de tradução anterior. Somente os ativos recém-adicionados são copiados para a pasta de destino que contém ativos convertidos anteriormente. Nenhum novo projeto de tradução é criado neste caso.
+Se você usar essa opção, o fluxo de trabalho de tradução será executado para os ativos adicionados à pasta de origem após executar um fluxo de trabalho de tradução anterior. Somente os ativos recém-adicionados são copiados para a pasta do público alvo que contém ativos convertidos anteriormente. Nenhum novo projeto de tradução é criado neste caso.
 
 1. Na interface do usuário Ativos, navegue até a pasta de origem que contém ativos não convertidos.
 1. Selecione um ativo que deseja traduzir e abra o **[!UICONTROL painel Referência]**. A seção **[!UICONTROL Cópias de idioma]** exibe o número de cópias de tradução atualmente disponíveis.
@@ -147,7 +150,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
    >
    >Se você escolher a opção **[!UICONTROL Adicionar ao projeto]** de tradução existente, seu projeto de tradução será adicionado a um projeto pré-existente somente se as configurações do projeto corresponderem exatamente às configurações do projeto pré-existente. Caso contrário, um novo projeto será criado.
 
-1. Na lista Projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
+1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -156,7 +159,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Navegue até o console Projetos e abra o projeto de tradução existente ao qual você adicionou.
-1. Clique/toque na exibição do projeto de tradução na página de detalhes do projeto.
+1. Clique/toque na visualização do projeto de tradução na página de detalhes do projeto.
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -174,7 +177,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
    >
    >Se o ativo adicionado ao trabalho de tradução incluir subativos, selecione os subativos e remova-os para que a tradução continue sem falhas.
 
-1. Para iniciar a tradução dos ativos, clique/toque na seta no bloco Trabalho **[!UICONTROL de]** tradução e selecione **[!UICONTROL Iniciar]** na lista.
+1. Para start da tradução dos ativos, clique/toque na seta no bloco Trabalho **[!UICONTROL de]** tradução e selecione **[!UICONTROL Start]** na lista.
 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -182,17 +185,17 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 
    ![chlimage_1-82](assets/chlimage_1-82.png)
 
-1. Para exibir o status do trabalho de tradução, clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
+1. Para visualização do status do trabalho de tradução, clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
    Para obter mais detalhes, consulte [Monitorando o Status de um Trabalho](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de Tradução.
 
-1. Após a conclusão da tradução, o status é alterado para Pronto para Revisão. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para exibir os metadados traduzidos.
+1. Após a conclusão da tradução, o status é alterado para Pronto para Revisão. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
 ## Atualizar cópias de idioma {#update-language-copies}
 
-Execute esse fluxo de trabalho para traduzir qualquer conjunto adicional de ativos e incluí-lo em uma cópia de idioma para uma localidade específica. Nesse caso, os ativos convertidos são adicionados à pasta de destino que já contém ativos convertidos anteriormente. Dependendo da escolha das opções, um projeto de tradução é criado ou um projeto de tradução existente é atualizado para os novos ativos. O fluxo de trabalho de cópias de idioma de atualização inclui as seguintes opções:
+Execute esse fluxo de trabalho para traduzir qualquer conjunto adicional de ativos e incluí-lo em uma cópia de idioma para uma localidade específica. Nesse caso, os ativos convertidos são adicionados à pasta do público alvo que já contém os ativos convertidos anteriormente. Dependendo da escolha das opções, um projeto de tradução é criado ou um projeto de tradução existente é atualizado para os novos ativos. O fluxo de trabalho de cópias de idioma de atualização inclui as seguintes opções:
 
 * Criar um novo projeto de tradução
 * Adicionar ao projeto de tradução existente
@@ -224,7 +227,7 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Abra a pasta para exibir o projeto de tradução.
+1. Abra a pasta para visualização do projeto de tradução.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -232,7 +235,7 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Para iniciar a tradução dos ativos, clique na seta no bloco Trabalho **[!UICONTROL de]** tradução e selecione **[!UICONTROL Iniciar]** na lista.
+1. Para start da tradução dos ativos, clique na seta no bloco Trabalho **[!UICONTROL de]** tradução e selecione **[!UICONTROL Start]** na lista.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -240,13 +243,13 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Para exibir o status do trabalho de tradução, clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
+1. Para visualização do status do trabalho de tradução, clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
    Para obter mais detalhes sobre status de trabalhos, consulte [Monitorando o Status de um Trabalho](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de Tradução.
 
-1. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para exibir os metadados traduzidos.
+1. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
 ### Adicionar ao projeto de tradução existente {#add-to-existing-translation-project-1}
 
@@ -269,7 +272,7 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-1. Na lista Projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
+1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -278,7 +281,7 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
 ## Criação de cópias temporárias de idioma {#creating-temporary-language-copies}
 
-Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com versões editadas dos ativos originais, a cópia de idioma existente é preservada até que você aprove os ativos convertidos. O AEM Assets armazena os ativos recém-traduzidos em um local temporário e atualiza a cópia de idioma existente depois que você aprova explicitamente os ativos. Se você rejeitar o(s) ativo(s), a cópia de idioma permanecerá inalterada.
+Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com versões editadas dos ativos originais, a cópia de idioma existente é preservada até que você aprove os ativos convertidos. A AEM Assets armazena o(s) ativo(s) recém-traduzido(s) em um local temporário e atualiza a cópia de idioma existente após você aprovar explicitamente o(s) ativo(s). Se você rejeitar o(s) ativo(s), a cópia de idioma permanecerá inalterada.
 
 1. Clique/toque na pasta raiz de origem, em **[!UICONTROL Cópias de idioma]**, para as quais você já criou uma cópia de idioma e clique/toque em **[!UICONTROL Revelar no Assets]** para abrir a pasta nos AEM Assets.
 
@@ -290,7 +293,7 @@ Quando você executa um fluxo de trabalho de tradução para atualizar uma cópi
 
 1. Edite o ativo e salve as alterações.
 1. Execute as etapas 2 a 14 do procedimento [Adicionar ao projeto](#add-to-existing-translation-project) de tradução existente para atualizar a cópia de idioma.
-1. Clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução. Na lista de ativos na página Trabalho **[!UICONTROL de]** tradução, é possível exibir claramente o local temporário onde a versão traduzida do ativo é armazenada.
+1. Clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução. Na lista de ativos na página Trabalho **[!UICONTROL de]** tradução, é possível visualização claramente o local temporário onde a versão traduzida do ativo é armazenada.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
@@ -303,10 +306,10 @@ Quando você executa um fluxo de trabalho de tradução para atualizar uma cópi
    >
    >Para permitir que o fluxo de trabalho de tradução atualize o(s) ativo(s) de destino, aceite o ativo e os metadados.
 
-   Clique/toque em **[!UICONTROL Rejeitar tradução]** para manter a versão traduzida originalmente do ativo na raiz da localidade de destino e rejeitar a versão editada.
+   Clique/toque em **[!UICONTROL Rejeitar tradução]** para manter a versão traduzida originalmente do ativo na raiz da localidade do público alvo e rejeitar a versão editada.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Navegue até o console Ativos e abra a página Propriedades de cada um dos ativos traduzidos para exibir os metadados traduzidos.
+1. Navegue até o console Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
 Para obter dicas sobre como traduzir metadados para ativos com eficiência, consulte [5 etapas para traduzir metadados](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)de forma eficiente.
