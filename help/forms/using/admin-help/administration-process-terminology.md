@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9b40e1f-956d-498b-92e4-4fe21e23fc4a
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Para administrar o fluxo de trabalho dos formulários de forma eficaz, você deve entender os seguintes termos e a hierarquia dos elementos:
 
-* *As categorias* de processo organizam processos em grupos lógicos.
+* *As categorias* de processamento organizam processos em grupos lógicos.
 * *Os processos* representam os processos de negócios automatizados. Deve existir pelo menos um processo para cada processo de negócios implementado.
 * Um diagrama *de* processo é a representação visual do processo de negócios que está sendo automatizado.
 * Uma instância *do* processo é um processo iniciado por um usuário (como preencher e enviar um formulário) ou uma etapa automática. Pode haver várias instâncias de um processo.
