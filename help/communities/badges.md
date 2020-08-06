@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 4%
 
 ---
 
 
 # Console de símbolos {#badges-console}
 
-## Sobre emblemas {#about-badges}
+## Sobre os emblemas {#about-badges}
 
 O console Distintos de comunidades fornece a capacidade de adicionar emblemas personalizados que podem ser exibidos para um membro quando obtidos (concedidos) ou quando assumem uma função específica na comunidade (atribuídos).
 
@@ -31,7 +34,7 @@ Atualmente, os emblemas que um membro da comunidade recebe ou está atribuído s
 * [Quadros de líderes](enabling-leaderboard.md)
 * [Ideação](ideation-feature.md)
 
-No ambiente do autor, para acessar o console Distintos
+No ambiente do autor, para acessar o console Badges
 
 * Da navegação global: **[!UICONTROL Ferramentas > Comunidades > Crachás]**
 
@@ -43,7 +46,7 @@ Esse console exibe os emblemas disponíveis no momento e a partir dos quais novo
 
 Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do crachá é armazenada no repositório em `/etc/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
 
-Se o ambiente de publicação for um farm de editores, será necessário configurar a sincronização [](sync.md)do usuário.
+Se o ambiente publish for um farm de editores, será necessário configurar a sincronização [](sync.md)do usuário.
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
