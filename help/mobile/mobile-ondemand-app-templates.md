@@ -1,8 +1,8 @@
 ---
 title: Criação e adição de modelos e componentes
 seo-title: Criação e adição de modelos e componentes
-description: Siga esta página para saber mais sobre como criar e adicionar modelos e componentes ao seu aplicativo. A página usa o aplicativo ilimitado Geometrixx como o aplicativo que contém um modelo de aplicativo de amostra e modelos de página.
-seo-description: Siga esta página para saber mais sobre como criar e adicionar modelos e componentes ao seu aplicativo. A página usa o aplicativo ilimitado Geometrixx como o aplicativo que contém um modelo de aplicativo de amostra e modelos de página.
+description: Siga esta página para saber mais sobre como criar e adicionar modelos e componentes ao seu aplicativo. A página usa o aplicativo Geometrixx Unlimited como o aplicativo que contém um exemplo de modelo de aplicativo e modelos de página.
+seo-description: Siga esta página para saber mais sobre como criar e adicionar modelos e componentes ao seu aplicativo. A página usa o aplicativo Geometrixx Unlimited como o aplicativo que contém um exemplo de modelo de aplicativo e modelos de página.
 uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 translation-type: tm+mt
 source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
@@ -18,19 +21,19 @@ source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O AEM Mobile On-Demand fornece um modelo de aplicativo totalmente configurado, um modelo de artigo e componentes de artigo.
+O AEM Mobile On-Demand oferece um modelo de aplicativo totalmente configurado, um modelo de artigo e componentes de artigo.
 
 O aplicativo We.Unlimited é um modelo de amostra que representa o shell de um aplicativo AEM Mobile On-Demand totalmente configurável e gerenciável.
 
-Selecionar esse modelo de exemplo ao criar um novo aplicativo fornece um painel rico em recursos do AEM Mobile.
+Selecionar este modelo de exemplo ao criar um novo aplicativo fornece um painel rico em recursos da AEM Mobile.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
 >[!NOTE]
 >
->Para gerenciar o conteúdo do aplicativo e do aplicativo móvel no Centro de controle de aplicativos do AEM Mobile, consulte o Painel [do aplicativo](/help/mobile/mobile-apps-ondemand-application-dashboard.md)AEM Mobile.
+>Para gerenciar o conteúdo do aplicativo e do aplicativo móvel no AEM Mobile Apps Control Center, consulte o Painel [do aplicativo](/help/mobile/mobile-apps-ondemand-application-dashboard.md)AEM Mobile.
 
 ## Criação de modelos de aplicativo {#creating-app-templates}
 
@@ -42,14 +45,14 @@ Ao criar um novo aplicativo com base no modelo de outro aplicativo, você obter�
 
 Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 
-1. Navegue até o catálogo de aplicativos do AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
+1. Navegue até o catálogo de aplicativos AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Selecione **Criar** —> **Aplicativo** como mostrado abaixo
 
-Depois de criar um aplicativo usando esse modelo, você pode adicionar artigos, banners e coleções ao seu aplicativo. Para visitar novamente, criar artigos, banners e coleções, consulte Ações [de gerenciamento de](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)conteúdo.
+Depois de criar um aplicativo usando esse modelo, você pode adicionar artigos, banners e coleções ao seu aplicativo. Para visitar novamente, criar artigos, banners e coleções, consulte Ações [de](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)Gestão de conteúdo.
 
 >[!NOTE]
 >
->Como alternativa, você também pode selecionar um modelo de aplicativo de amostra, por exemplo, **We.Unlimited** app, disponibilizado para você por um desenvolvedor do AEM. Se você usar esse modelo de amostra para seu aplicativo, você obterá alguns artigos de amostra e coleções para trabalhar. Você terá a opção de usar os modelos e componentes de amostra, personalizar os existentes ou criar novos modelos para seu aplicativo.
+>Como alternativa, você também pode selecionar um modelo de aplicativo de exemplo, por exemplo, **We.Unlimited** app, disponibilizado para você por um desenvolvedor AEM. Se você usar esse modelo de amostra para seu aplicativo, você obterá alguns artigos de amostra e coleções para trabalhar. Você terá a opção de usar os modelos e componentes de amostra, personalizar os existentes ou criar novos modelos para seu aplicativo.
 
 >[!CAUTION]
 >
@@ -66,12 +69,12 @@ Depois de criar um aplicativo usando esse modelo, você pode adicionar artigos, 
 
 Cada tipo de entidade tem dois modelos prontos para uso. São eles:
 
-* **** Modelos padrão: usado para criação de conteúdo com propriedades/estrutura padrão aplicáveis
-* **** Modelos importados: usado para importar conteúdo do AEM Mobile com propriedades/estrutura padrão aplicáveis
+* **Modelos padrão:** usado para a criação de conteúdo com propriedades/estrutura padrão aplicáveis
+* **Modelos importados:** usado para importar conteúdo do AEM Mobile com propriedades/estrutura padrão aplicáveis
 
 ### Modelos de artigo {#article-templates}
 
-O artigo ilimitado é um modelo de amostra que representa um layout de artigo AEM Mobile On-Demand típico.
+O Artigo ilimitado é um modelo de amostra que representa um layout de artigo AEM Mobile On-Demand típico.
 
 1. Clique em **+** em **Gerenciar artigos** para criar um novo artigo. Você pode escolher um Artigo **** ilimitado ou um Artigo **** Rich Text. A imagem abaixo mostra a opção que permite escolher entre qualquer um desses dois modelos de artigo.
 
@@ -86,7 +89,7 @@ O artigo ilimitado é um modelo de amostra que representa um layout de artigo AE
 
 ### Adicionar componentes ao artigo {#adding-components-to-article}
 
-Depois de criado, um autor pode editar o conteúdo de um artigo adicionando componentes como texto e imagens. Os artigos são uma extensão dos modelos de página do AEM.
+Depois de criado, um autor pode editar o conteúdo de um artigo adicionando componentes como texto e imagens. Os artigos são uma extensão AEM modelos de página.
 
 Selecione um artigo que deseja editar e clique em **Editar** para adicionar componentes ao artigo.
 
@@ -98,13 +101,13 @@ Escolha &#39;**+**&#39; no painel esquerdo para adicionar componentes ao artigo.
 
 ### Criação de modelos prontos para uso {#creating-out-of-the-box-templates}
 
-Não há modelos de artigo predefinidos, no entanto, há um modelo padrão que os modelos personalizados devem estender, consulte Exemplo [de modelo de](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)artigo do aplicativo ilimitado Geometrixx.
+Não há modelos de artigo predefinidos, no entanto, há um modelo padrão que os modelos personalizados devem estender, consulte a amostra [de modelo de](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)artigo do aplicativo Geometrixx Unlimited.
 
-As principais propriedades além das propriedades normais do modelo AEM necessárias incluem:
+As principais propriedades além do modelo normal AEM propriedades exigidas incluem:
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
-Essa propriedade garante que a página do AEM seja reconhecida como uma página de artigo direcionada ao AEM Mobile.
+Essa propriedade garante que a página AEM seja reconhecida como uma página de artigo direcionada para a AEM Mobile.
 
 Conforme os modelos de AEM, você pode adicionar quaisquer propriedades padrão ou nós filhos ao ***jcr:content*** do modelo.
 
@@ -118,18 +121,18 @@ Conforme os modelos de AEM, você pode adicionar quaisquer propriedades padrão 
 
 Os componentes usam e permitem o acesso aos Widgets, que são usados para renderizar o Conteúdo.
 
-Um componente simples é incluído no repositório de código, cuja fonte pode ser encontrada no AEM. Posteriormente, também pode ser aberto localmente no CRXDE Lite.
+Um componente simples é incluído no repositório de códigos, cuja fonte pode ser encontrada no AEM. Posteriormente, também pode ser aberto localmente no CRXDE Lite.
 
 >[!NOTE]
 >
->No momento, não há componentes prontos para uso fornecidos para o AEM Mobile.
+>Atualmente, não há componentes prontos para uso fornecidos para AEM Mobile.
 
 
-Você pode adicionar componentes à sua página. Qualquer componente pode ser usado em um aplicativo do AEM Mobile, mas quando aplicado, pode não ser renderizado corretamente.
+Você pode adicionar componentes à sua página. Qualquer componente pode ser usado em um aplicativo AEM Mobile, mas quando aplicado, pode não ser renderizado corretamente.
 
-No entanto, os componentes personalizados podem não exportar e fazer upload para o AEM Mobile On-Demand Services corretamente sem um manipulador de sincronização de conteúdo de exportação personalizado que é renderizado no AEM.
+No entanto, os componentes personalizados podem não exportar e carregar corretamente para o AEM Mobile On-demand Services sem um manipulador de sincronização de conteúdo de exportação personalizado que é renderizado no AEM.
 
-Depois que o componente já tiver sido incluído em uma página do AEM, juntamente com alguns outros componentes de blocos componentes, você poderá adicionar outro componente à página ou editar um existente.
+Depois que o componente já tiver sido incluído em uma página AEM, juntamente com alguns outros componentes de blocos de construção, você poderá adicionar outro componente à página ou editar um existente.
 
 **Para adicionar outro componente à página:**
 
@@ -147,11 +150,11 @@ Depois que o componente já tiver sido incluído em uma página do AEM, juntamen
 
 >[!NOTE]
 >
->Você pode criar um componente no AEM e personalizar o mesmo usando [Desenvolver com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Depois que você tiver personalizado o componente existente como suas necessidades, poderá adicioná-lo à sua página usando a opção **Editar** em **Gerenciar artigos** , conforme mostrado na figura acima.
+>Você pode criar um componente no AEM e personalizar o mesmo usando [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Depois que você tiver personalizado o componente existente como suas necessidades, poderá adicioná-lo à sua página usando a opção **Editar** em **Gerenciar artigos** , conforme mostrado na figura acima.
 
 >[!NOTE]
 >
->Consulte Práticas [recomendadas para desenvolvimento](/help/mobile/best-practices-aem-mobile.md) de modelos e componentes no AEM Mobile.
+>Consulte Práticas [recomendadas para o desenvolvimento](/help/mobile/best-practices-aem-mobile.md) de modelos e componentes no AEM Mobile.
 
 ### Próximas etapas {#the-next-steps}
 
