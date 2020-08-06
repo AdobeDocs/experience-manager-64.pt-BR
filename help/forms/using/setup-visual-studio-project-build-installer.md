@@ -1,8 +1,8 @@
 ---
 title: Configure o projeto do Visual Studio e crie o aplicativo do Windows
 seo-title: Configure o projeto do Visual Studio e crie o aplicativo do Windows
-description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel AEM Forms Windows.
-seo-description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel AEM Forms Windows.
+description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel do AEM Forms Windows.
+seo-description: Saiba como configurar um projeto do Visual Studio para criar o aplicativo de dispositivo móvel do AEM Forms Windows.
 uuid: 0a72387a-d920-4f66-8983-d500ef0ecd90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Configure o projeto do Visual Studio e crie o aplicativo do Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-O AEM Forms fornece o código fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo de espaço de trabalho personalizado. O arquivo de código-fonte `adobe-lc-mobileworkspace-src-<version>.zip`é parte do `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote de distribuição de software.
+A AEM Forms fornece o código fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo de espaço de trabalho personalizado. O arquivo de código-fonte `adobe-lc-mobileworkspace-src-<version>.zip`é parte do `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote de distribuição de software.
 
 Para obter a fonte do aplicativo AEM Forms, execute as seguintes etapas:
 
-1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de uma Adobe ID para fazer logon na Software Distribution (Distribuição de software).
 1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. Na seção **[!UICONTROL Filtros]** :
-   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]** .
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
 1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
 1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
@@ -67,7 +67,7 @@ Execute as seguintes etapas para criar e implantar o aplicativo AEM Forms.
 
 >[!NOTE]
 >
->Os dados armazenados no sistema de arquivos do Windows para o aplicativo AEM Forms não são criptografados. É recomendável usar uma ferramenta de terceiros, como a Encriptação de Unidade BitLocker do Windows, para encriptar dados de disco.
+>Os dados armazenados no sistema de arquivos do Windows para aplicativos AEM Forms não são criptografados. É recomendável usar uma ferramenta de terceiros, como a Encriptação de Unidade BitLocker do Windows, para encriptar dados de disco.
 
 1. Na barra de ferramentas do Visual Studio Standard, selecione **Liberar** no menu suspenso para o modo de compilação.
 
