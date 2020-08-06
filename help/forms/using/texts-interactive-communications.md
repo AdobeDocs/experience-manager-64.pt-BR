@@ -78,7 +78,7 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
 
 ## Personalização de um fragmento de documento de texto usando propriedades de modelo de dados de formulário {#formdatamodel}
 
-É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo as propriedades do modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do recipient da fonte de dados associada enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo as propriedades do modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do recipient da fonte de dados associada enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
 
 Se você tiver especificado um modelo de dados de formulário ao criar um texto, as propriedades no modelo de dados de formulário aparecerão no painel esquerdo do editor de texto. O modelo de dados de formulário especificado deve ser o mesmo para o fragmento do documento de texto, bem como para a Comunicação interativa que o inclui.
 
