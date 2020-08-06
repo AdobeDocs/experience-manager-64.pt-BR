@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
 
 # Moderação no contexto {#in-context-moderation}
 
-Para o AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
+No AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
 
 Ao usar um console [de](moderation.md)moderação, as informações exibidas para o conteúdo incluem um link para a página publicada para permitir o acesso a ações de moderação adicionais disponíveis ao moderar no contexto.
 
@@ -57,7 +60,7 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
    * Insira o texto do corpo
 
-      Não tenho tido muito sucesso quando penduro um alimentador de beija-flores todos os anos. Parece que chegam um dia ou dois, então é isso. Eu mudo uma vez por semana é muito tempo? Preciso mudar isso mais cedo?
+      Não tenho tido muito sucesso quando penduro um alimentador de beija-flores todos os anos. Parece que chegam um dia ou dois, então é isso. Eu mudo uma vez por semana é muito tempo? Eu preciso mudar isso mais cedo?
    * Selecionar publicação
    * Selecione Desconectar
 
@@ -85,9 +88,9 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
 ### Visitante do site anônimo (#5) {#anonymous-site-visitor}
 
-Veja a seguir uma exibição do fórum visto por um visitante do site que não está conectado (5).
+Veja a seguir uma visualização do fórum visto por um visitante do site que não está conectado (5).
 
-Um visitante anônimo do site só pode exibir o fórum, mas não pode publicar nenhum conteúdo nem executar ações de moderação.
+Um visitante de site anônimo só pode visualização no fórum, mas não pode publicar nenhum conteúdo nem executar ações de moderação.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -122,7 +125,7 @@ Aviso
 
 Selecione o item de menu Administração para acessar o console [de](moderation.md) moderação do ambiente de publicação.
 
-Observe que, para um administrador, todo o conteúdo moderável é visível, não apenas o conteúdo do site da comunidade Geometrixx Engage.
+Observe que, para um administrador, todo o conteúdo moderável é visível, não apenas o conteúdo do site da comunidade do Geometrixx Engage.
 
 O filtro de pesquisa é um painel lateral que alterna entre aberto e fechado.
 
@@ -136,7 +139,7 @@ Faça logon como Aaron McDonald (aaron.mcdonal@mailinator.com), um moderador da 
 
 Aviso
 
-* Aaron pode responder, excluir, editar ou negar sua própria postagem
+* Aaron pode Responder, Excluir, Editar ou Negar sua própria postagem
 * Aaron também pode Sinalizar/Permitir, Responder, Excluir, Editar, Negar outro conteúdo
 * Aaron pode cortar o tópico do fórum para movê-lo para outro fórum para o qual ele modera
 * Aaron pode selecionar Administração para acessar o console de moderação
@@ -147,7 +150,7 @@ Selecione o item de menu Administração para acessar o console [de](moderation.
 
 Observe que, para um moderador da comunidade, somente o conteúdo moderável do site da comunidade do Geometrixx Engage está visível.
 
-Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está na barra lateral de pesquisa alternada fechada), mas não há acesso a outros consoles do AEM.
+Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está na barra lateral de pesquisa alternada fechada), mas não há acesso a outros consoles AEM.
 
 Fazer logoff.
 
