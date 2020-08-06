@@ -1,8 +1,8 @@
 ---
-title: Formulários AEM em grupos e privilégios OSGi
-seo-title: Formulários AEM em grupos e privilégios OSGi
-description: Atribua usuários aos grupos para gerenciar formulários AEM no OSGi
-seo-description: Atribua usuários aos grupos para gerenciar formulários AEM no OSGi
+title: AEM Forms em grupos e privilégios OSGi
+seo-title: AEM Forms em grupos e privilégios OSGi
+description: Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
+seo-description: Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Formulários AEM em grupos e privilégios OSGi {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms em grupos e privilégios OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
-Atribua usuários aos grupos para gerenciar formulários AEM no OSGi
+Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
 
 Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos no AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
 
-Depois de instalar o pacote [complementar do](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, os grupos mencionados neste artigo, como usuário de formulários e usuário avançado de formulários, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições do grupo:
+Depois que você instalar o pacote [complementar do](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, os grupos mencionados neste artigo, como usuários de formulários e usuários avançados de formulários, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições do grupo:
 
 <table> 
  <tbody>
@@ -38,7 +38,7 @@ Depois de instalar o pacote [complementar do](/help/forms/using/installing-confi
     <ul> 
      <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
      <li>Criar, pré-visualização e publicar comunicações interativas e fragmentos de documento</li> 
-     <li>Fazer upload de ativos para uma instância do AEM</li> 
+     <li>Fazer upload de ativos para uma instância AEM</li> 
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
@@ -95,7 +95,7 @@ Depois de instalar o pacote [complementar do](/help/forms/using/installing-confi
    <td>usuário do fluxo de trabalho</td> 
    <td>
     <ul> 
-     <li>Usar aplicativos da caixa de entrada do AEM</li> 
+     <li>Usar aplicativos AEM caixa de entrada</li> 
      <li>Gerenciar instâncias de fluxo de trabalho</li> 
     </ul> </td> 
   </tr>
