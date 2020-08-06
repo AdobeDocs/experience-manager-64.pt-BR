@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '3911'
+ht-degree: 36%
 
 ---
 
@@ -104,7 +107,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   <tr> 
    <td><code>numPages</code></td> 
    <td>Retorna o número de páginas no documento.</td> 
-   <td>A política de paginação de formulários HTML5 não é idêntica à política de paginação de formulários PDF. Portanto, a API numPages pode retornar valores diferentes em ambos os casos.</td> 
+   <td>A política de paginação de formulários HTML5 não é idêntica à política de paginação de PDF forms. Portanto, a API numPages pode retornar valores diferentes em ambos os casos.</td> 
   </tr> 
   <tr> 
    <td><code>platform</code></td> 
@@ -114,7 +117,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   <tr> 
    <td><code>title</code></td> 
    <td>Especifica o título do documento. Apenas está disponível para aplicativos clientes.</td> 
-   <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como no caso dos Formulários PDF.</td> 
+   <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como no caso de PDF forms.</td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
@@ -1170,7 +1173,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
  </tbody> 
 </table>
 
-### Suporte à API do Acrobat {#acrobat-api-support}
+### Suporte à API Acrobat {#acrobat-api-support}
 
 1. **Funções aritméticas**
 
@@ -1310,7 +1313,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
   <tr> 
    <td>app.calculate</td> 
    <td>Se verdadeiro (o valor padrão), os cálculos podem ser executados. Se falso, os cálculos não são permitidos.</td> 
-   <td>Sempre verdadeiro para formulários HTMl5.</td> 
+   <td>Sempre verdadeiro para HTMl5 Forms.</td> 
   </tr> 
   <tr> 
    <td>app.constants</td> 
@@ -1329,7 +1332,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
   </tr> 
   <tr> 
    <td>app.language</td> 
-   <td>O idioma do visualizador do Acrobat em execução.</td> 
+   <td>O idioma do visualizador Acrobat em execução.</td> 
    <td>Sempre "ENU" para formulários HTMl5.</td> 
   </tr> 
  </tbody> 
