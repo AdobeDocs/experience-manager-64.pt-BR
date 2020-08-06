@@ -1,8 +1,8 @@
 ---
-title: Desenvolvimento e extensão de fluxos de trabalho
-seo-title: Desenvolvimento e extensão de fluxos de trabalho
-description: O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho
-seo-description: O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho
+title: Desenvolvimento e extensão de Workflows
+seo-title: Desenvolvimento e extensão de Workflows
+description: AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com workflows
+seo-description: AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com workflows
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 1%
 
 ---
 
 
-# Desenvolvimento e extensão de fluxos de trabalho{#developing-and-extending-workflows}
+# Desenvolvimento e extensão de Workflows{#developing-and-extending-workflows}
 
-O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir de forma programática com fluxos de trabalho.
+AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas do fluxo de trabalho e interagir programaticamente com workflows.
 
-Os fluxos de trabalho permitem que você automatize processos para gerenciar recursos e publicar conteúdo em seu ambiente AEM. Os fluxos de trabalho são compostos de uma série de etapas, com cada etapa realizando uma tarefa discreta. Você pode usar dados de lógica e tempo de execução para tomar decisões sobre quando um processo pode continuar e selecionar a próxima etapa de uma de várias etapas possíveis.
+Os Workflows permitem que você automatize processos para gerenciar recursos e publicar conteúdo no seu ambiente AEM. Os Workflows são compostos de uma série de etapas, com cada etapa realizando uma tarefa discreta. Você pode usar dados de lógica e tempo de execução para tomar decisões sobre quando um processo pode continuar e selecionar a próxima etapa de uma de várias etapas possíveis.
 
-Por exemplo, os processos de negócios para criação e publicação de páginas da Web incluem tarefas de aprovação e aprovação por vários participantes. Esses processos podem ser modelados usando fluxos de trabalho do AEM e aplicados a conteúdo específico.
+Por exemplo, os processos de negócios para criação e publicação de páginas da Web incluem tarefas de aprovação e aprovação por vários participantes. Esses processos podem ser modelados usando workflows AEM e aplicados a conteúdo específico.
 
-Os principais aspectos são abordados abaixo, enquanto as páginas a seguir cobrem mais detalhes:
+Os principais aspectos são abordados abaixo, enquanto as páginas a seguir abordam mais detalhes:
 
 * [Criação de modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md)
 * [Ampliação da funcionalidade do fluxo de trabalho](/help/sites-developing/workflows-customizing-extending.md)
-* [Interagir com fluxos de trabalho programaticamente](/help/sites-developing/workflows-program-interaction.md)
-* [Referência da etapa do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md)
+* [Interação programática com Workflows](/help/sites-developing/workflows-program-interaction.md)
+* [Referência da Etapa do Fluxo de Trabalho](/help/sites-developing/workflows-step-ref.md)
 * [Referência do processo de fluxo de trabalho](/help/sites-developing/workflows-process-ref.md)
 * [Práticas recomendadas do fluxo de trabalho](/help/sites-developing/workflows-best-practices.md)
 
@@ -36,19 +39,20 @@ Os principais aspectos são abordados abaixo, enquanto as páginas a seguir cobr
 >
 >Para obter informações sobre:
 >
->* Como participar de fluxos de trabalho, consulte [Uso de fluxos de trabalho](/help/sites-authoring/workflows.md).
->* Administrando fluxos de trabalho e instâncias de fluxo de trabalho, consulte [Administração de fluxos de trabalho](/help/sites-administering/workflows.md).
->* Para obter um artigo completo da Comunidade, consulte [Modificação de ativos digitais usando fluxos de trabalho do Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
->* Consulte o Webinar [Pergunte aos especialistas do AEM sobre fluxos de trabalho](https://bit.ly/ATACE218).
->* Para obter um artigo completo da Comunidade, consulte [Criar um participante dinâmico do Adobe Experience Manager 6.3 personalizado, etapa](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html).
->* Alterações nos locais das informações consulte Reestruturação [do repositório no AEM 6.4](/help/sites-deploying/repository-restructuring.md) e Práticas recomendadas de [fluxo de trabalho - Locais](/help/sites-developing/workflows-best-practices.md#locations).
+>* Participação em workflows, consulte [Uso de Workflows](/help/sites-authoring/workflows.md).
+>* Administrando workflows e instâncias de fluxo de trabalho, consulte [Administração de Workflows](/help/sites-administering/workflows.md).
+>* Para obter um artigo completo da Comunidade, consulte [Modificação de ativos digitais usando Workflows Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+>* Consulte o Webinar [Pergunte aos especialistas AEM sobre Workflows](https://bit.ly/ATACE218).
+>* Para obter um artigo completo da Comunidade, consulte [Criação de uma etapa](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)personalizada do Adobe Experience Manager 6.3 Dynamic Participant.
+>* As alterações nos locais das informações estão disponíveis na seção Reestruturação [do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md) e Práticas recomendadas [do fluxo de trabalho - Locais](/help/sites-developing/workflows-best-practices.md#locations).
+
 >
 
 
 
 ## Modelo {#model}
 
-Um `WorkflowModel` representa uma definição (modelo) de um fluxo de trabalho. É feito de `WorkflowNodes` e `WorkflowTransitions`. As transições conectam os nós e definem o *fluxo*. O Modelo sempre tem um nó inicial e um nó final.
+Um `WorkflowModel` representa uma definição (modelo) de um fluxo de trabalho. É feito de `WorkflowNodes` e `WorkflowTransitions`. As transições conectam os nós e definem o *fluxo*. O Modelo sempre tem um nó de start e um nó final.
 
 ### Modelo de tempo de execução {#runtime-model}
 
@@ -62,7 +66,7 @@ As edições no modelo de fluxo de trabalho que ocorrem e/ou os modelos de tempo
 >
 >As etapas executadas são as definidas pelo modelo [de](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)tempo de execução; isso é gerado no momento em que a ação **Sincronizar** é acionada no editor do modelo de fluxo de trabalho.
 >
->Se o modelo de fluxo de trabalho for alterado após esse ponto no tempo (sem que a **sincronização** seja acionada), a instância do tempo de execução não refletirá essas alterações. Somente os modelos de tempo de execução gerados após a atualização refletirão as alterações. As exceções são os scripts ECMA subjacentes, que são mantidos somente uma vez, portanto, as alterações são feitas.
+>Se o modelo de fluxo de trabalho for alterado após esse ponto no tempo (sem que a **Sincronização** seja acionada), a instância do tempo de execução não refletirá essas alterações. Somente os modelos de tempo de execução gerados após a atualização refletirão as alterações. As exceções são os scripts ECMA subjacentes, que são mantidos somente uma vez, portanto, as alterações são feitas.
 
 ### Etapa {#step}
 
@@ -70,7 +74,7 @@ Cada etapa realiza uma tarefa discreta. Existem diferentes tipos de etapas do fl
 
 * Participante (usuário/grupo): Essas etapas geram um item de trabalho e o atribuem a um usuário ou grupo. Um usuário deve concluir o item de trabalho para avançar no fluxo de trabalho.
 * Processo (Script, chamada de método Java): Essas etapas são executadas automaticamente pelo sistema. Um script ECMA ou uma classe Java implementa a etapa. Os serviços podem ser desenvolvidos para acompanhar eventos de fluxo de trabalho especiais e executar tarefas de acordo com a lógica comercial.
-* Contêiner (Sub fluxo de trabalho): Esse tipo de etapa inicia outro modelo de fluxo de trabalho.
+* Container (Sub fluxo de trabalho): Esse tipo de etapa start outro modelo de fluxo de trabalho.
 * OU Dividir/Ingressar: Use a lógica para decidir qual etapa executar em seguida no fluxo de trabalho.
 * E dividir/unir: Permite que várias etapas sejam executadas simultaneamente.
 
@@ -78,7 +82,7 @@ Todas as etapas compartilham as seguintes propriedades comuns: `Autoadvance` e `
 
 ### Transição {#transition}
 
-Um `WorkflowTransition` representa uma transição entre dois `WorkflowNodes` de um `WorkflowModel`.
+A `WorkflowTransition` representa uma transição entre dois `WorkflowNodes` de um `WorkflowModel`.
 
 * Ela define o link entre duas etapas consecutivas.
 * É possível aplicar regras.
@@ -125,26 +129,26 @@ Há vários tipos de fluxo de trabalho, conforme indicado no console Modelos de 
 
 * **Padrão**
 
-   Esses são os fluxos de trabalho predefinidos incluídos em uma instância padrão do AEM.
+   Esses são os workflows prontos para uso incluídos em uma instância AEM padrão.
 
-* Fluxos de trabalho personalizados (nenhum indicador no console)
+* workflows personalizados (nenhum indicador no console)
 
-   Esses são fluxos de trabalho que foram criados como novos ou de fluxos de trabalho prontos para uso que foram sobrepostos com personalizações.
+   Esses são workflows que foram criados como novos ou de workflows prontos para uso que foram sobrepostos com personalizações.
 
 * **Legado**
 
-   Fluxos de trabalho criados em uma versão anterior do AEM. Eles podem ser retidos durante uma atualização ou exportados como um pacote de fluxo de trabalho da versão anterior, e depois importados para a nova versão.
+   Workflows criados em uma versão anterior do AEM. Eles podem ser retidos durante uma atualização ou exportados como um pacote de fluxo de trabalho da versão anterior e, em seguida, importados para a nova versão.
 
-### Fluxos de trabalho transitórios {#transient-workflows}
+### Workflows transitórios {#transient-workflows}
 
-Os fluxos de trabalho padrão salvam informações de tempo de execução (histórico) durante sua execução. Você também pode definir um modelo de fluxo de trabalho como **Transitório** para evitar que esse histórico seja persistente. Isso é usado para ajuste de desempenho, pois economiza/evita o tempo/recursos usados para persistir nas informações.
+workflows padrão salvam informações de tempo de execução (histórico) durante sua execução. Você também pode definir um modelo de fluxo de trabalho como **Transitório** para evitar que esse histórico seja persistente. Isso é usado para ajuste de desempenho, pois economiza/evita o tempo/recursos usados para persistir nas informações.
 
-Fluxos de trabalho transitórios podem ser usados para qualquer fluxo de trabalho que:
+workflows transitórios podem ser usados para qualquer workflows que:
 
 * são executados com frequência.
 * não precisa do histórico de fluxo de trabalho.
 
-Fluxos de trabalho transitórios foram introduzidos para carregar um grande número de ativos, onde as informações do ativo são importantes, mas não o histórico de tempo de execução do fluxo de trabalho.
+Foram introduzidos workflows transitórios para carregar um grande número de ativos, onde as informações do ativo são importantes, mas não o histórico de tempo de execução do fluxo de trabalho.
 
 >[!NOTE]
 >
@@ -156,7 +160,8 @@ Fluxos de trabalho transitórios foram introduzidos para carregar um grande núm
 >
 >* O tipo de carga (por exemplo, vídeo) requer etapas externas para processamento. nesses casos, o histórico do tempo de execução é necessário para a confirmação do status.
 >* O fluxo de trabalho entra em um **AND Split**; nesses casos, o histórico do tempo de execução é necessário para a confirmação do status.
->* Quando o fluxo de trabalho temporário entra em uma etapa do participante, ele muda de modo (no tempo de execução) para não transitório; como a tarefa está sendo passada para uma pessoa, a história precisa ser mantida
+>* Quando o fluxo de trabalho temporário entra em uma etapa do participante, ele muda de modo (no tempo de execução) para não transitório; como a tarefa está sendo passada para uma pessoa, a história precisa ser persistente
+
 >
 
 
@@ -171,7 +176,7 @@ Fluxos de trabalho transitórios foram introduzidos para carregar um grande núm
 
 >[!NOTE]
 >
->Consulte Práticas [recomendadas para os ativos](/help/assets/performance-tuning-guidelines.md#transient-workflows) para obter mais informações sobre como os fluxos de trabalho transitórios afetam o desempenho dos ativos.
+>Consulte Práticas [recomendadas para os ativos](/help/assets/performance-tuning-guidelines.md#transient-workflows) para obter mais informações sobre como os Workflows transitórios afetam o desempenho dos ativos.
 
 ### Suporte a vários recursos {#multi-resource-support}
 
@@ -185,9 +190,9 @@ Se o suporte **a** vários recursos não estiver ativado para seu modelo de flux
 
 ### Etapas do fluxo de trabalho {#workflow-stages}
 
-As Etapas do fluxo de trabalho ajudam a visualizar o progresso de um fluxo de trabalho ao manipular tarefas. Eles podem ser usados para fornecer uma visão geral de até onde o fluxo de trabalho está por meio do processamento, como quando o fluxo de trabalho é executado, o usuário pode visualizar o progresso descrito pelo **Stage** (em vez de cada etapa).
+As Etapas do fluxo de trabalho ajudam a visualizar o progresso de um fluxo de trabalho ao manipular tarefas. Eles podem ser usados para fornecer uma visão geral de até onde o fluxo de trabalho está por meio do processamento, como quando o fluxo de trabalho é executado, o usuário pode visualização o progresso descrito pelo **Stage** (em vez de uma etapa individual).
 
-Como os nomes de etapas individuais podem ser específicos e técnicos, os nomes de etapas podem ser definidos para fornecer uma visão conceitual do progresso do fluxo de trabalho.
+Como os nomes de etapas individuais podem ser específicos e técnicos, os nomes de etapas podem ser definidos para fornecer uma visualização conceitual do progresso do fluxo de trabalho.
 
 Por exemplo, para um fluxo de trabalho com seis etapas e quatro etapas:
 
@@ -195,6 +200,7 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro etapas:
 
    * Vários nomes de palco podem ser criados.
    * Em seguida, um nome de estágio individual é atribuído a cada etapa (um nome de estágio pode ser atribuído a uma ou mais etapas).
+
    | **Nome da etapa** | **Estágio (atribuído à etapa)** |
    |---|---|
    | Etapa 1 | Criar |
@@ -204,14 +210,14 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro etapas:
    | Etapa 5 | Concluir |
    | Etapa 6 | Concluir |
 
-1. Quando o fluxo de trabalho é executado, o usuário pode exibir o progresso de acordo com os nomes do Palco (em vez dos nomes das etapas). O andamento do fluxo de trabalho será exibido na guia INFORMAÇÕES DO [FLUXO DE TRABALHO da janela de detalhes da tarefa do item](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) de trabalho listado na [Caixa de entrada](/help/sites-authoring/inbox.md).
+1. Quando o fluxo de trabalho é executado, o usuário pode visualização o progresso de acordo com os nomes do Palco (em vez dos nomes das etapas). O andamento do fluxo de trabalho será exibido na guia INFORMAÇÕES DO [FLUXO DE TRABALHO da janela de detalhes da tarefa do item](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) de trabalho listado na [Caixa de entrada](/help/sites-authoring/inbox.md).
 
-### Fluxos de trabalho e formulários {#workflows-and-forms}
+### Workflows e Forms {#workflows-and-forms}
 
-Normalmente, os fluxos de trabalho são usados para processar envios de formulário no AEM. Isso pode ocorrer com os componentes [principais do formulário](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) disponíveis em uma instância padrão do AEM ou com a solução [](/help/forms/using/aem-forms-workflow.md)AEM Forms.
+Normalmente, os workflows são usados para processar envios de formulário em AEM. Isso pode ocorrer com os componentes [principais de formulário](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) disponíveis em uma instância AEM padrão ou com a solução [](/help/forms/using/aem-forms-workflow.md)AEM Forms.
 
 Ao criar um novo formulário, o envio do formulário pode ser facilmente associado a um modelo de fluxo de trabalho; por exemplo, para armazenar o conteúdo em um local específico do repositório ou notificar um usuário sobre o envio do formulário e seu conteúdo.
 
-### Fluxos de trabalho e tradução {#workflows-and-translation}
+### Workflows e tradução {#workflows-and-translation}
 
-Os fluxos de trabalho também são parte integrante do processo de [Tradução](/help/sites-administering/translation.md) .
+Os Workflows também são parte integrante do processo de [Tradução](/help/sites-administering/translation.md) .
