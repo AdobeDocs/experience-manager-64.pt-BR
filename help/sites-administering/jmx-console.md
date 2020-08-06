@@ -375,7 +375,7 @@ Informações sobre o repositório CRX
   </tr> 
   <tr> 
    <td>crx.cluster.preferredMaster</td> 
-   <td>true indica que esse nó de cluster é o mestre preferencial do cluster.</td> 
+   <td>true indica que esse nó de cluster é o principal preferencial do cluster.</td> 
   </tr> 
   <tr> 
    <td>option.transactions.supported</td> 
@@ -440,7 +440,7 @@ Informações sobre o repositório CRX
   </tr> 
   <tr> 
    <td>crx.cluster.master</td> 
-   <td>true indica que esse nó de repositório é o nó mestre do cluster.</td> 
+   <td>true indica que esse nó de repositório é o nó principal do cluster.</td> 
   </tr> 
   <tr> 
    <td>level.1.supported</td> 
@@ -523,7 +523,7 @@ Somente leitura.
 
 **ClusterId** O identificador deste cluster de repositório. Somente leitura.
 
-**ClusterMasterId** O identificador do nó mestre deste cluster de repositório. Somente leitura.
+**ClusterMasterId** O identificador do nó principal deste cluster de repositório. Somente leitura.
 
 **ClusterNodeId** O identificador deste nó do cluster de repositório. Somente leitura.
 
@@ -597,16 +597,16 @@ Somente leitura.
 
 * Valor retornado: none
 
-**tornarClusterMaster** Define este nó de repositório como o nó mestre do cluster. Se ainda não for mestre, esse comando interrompe o ouvinte da instância mestre atual e start um ouvinte mestre no nó atual. Esse nó é definido como o nó mestre e reiniciado, fazendo com que todos os outros nós do cluster (ou seja, aqueles controlados pelo mestre) se conectem a essa instância.
+**tornarClusterMaster** Define este nó de repositório como o nó principal do cluster. Se ainda não estiver principal, esse comando interrompe o ouvinte da instância principal atual e start um ouvinte principal no nó atual. Esse nó é definido como o nó principal e reiniciado, fazendo com que todos os outros nós do cluster (ou seja, aqueles controlados pelo principal) se conectem a essa instância.
 
 * Argumentos: none
 * Valor retornado: none
 
-**joinCluster** Adiciona este repositório a um cluster como um nó controlado pelo mestre de cluster. Você deve fornecer um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas em base 64 antes de serem enviadas para o servidor.
+**joinCluster** Adiciona este repositório a um cluster como um nó controlado pelo cluster principal. Você deve fornecer um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas em base 64 antes de serem enviadas para o servidor.
 
 * Argumentos:
 
-   * `master`: Um valor de string que representa o endereço IP ou o nome do computador do computador que executa o nó do repositório mestre.
+   * `master`: Um valor de string que representa o endereço IP ou o nome do computador do computador que executa o nó do repositório principal.
    * `username`: O nome a ser usado para autenticação com o cluster.
    * `password`: A senha a ser usada para autenticação.
 
