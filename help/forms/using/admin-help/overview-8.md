@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 A Saída permite unir dados de formulário XML a um design de formulário criado no Designer para criar um fluxo de saída de documento em vários formatos. O fluxo de saída pode ser enviado para uma impressora de rede, uma impressora local ou um arquivo de disco
 
-Você pode usar a página Saída no console de administração para administrar o serviço de Saída. As configurações definidas são usadas em tempo de execução quando as configurações equivalentes não foram especificadas pela API de formulários do AEM. A configuração feita por meio do SDK de formulários AEM substitui as configurações definidas por meio do console de administração.
+Você pode usar a página Saída no console de administração para administrar o serviço de Saída. As configurações definidas são usadas em tempo de execução quando as configurações equivalentes não foram especificadas pela API de formulários AEM. A configuração feita por meio do SDK de formulários AEM substitui as configurações definidas por meio do console de administração.
 
 Para obter informações adicionais sobre o serviço de Saída, consulte Referência [de](https://www.adobe.com/go/learn_aemforms_services_61)serviços.
 
-Nas páginas de saída no console de administração, é possível executar várias tarefas:
+Nas páginas de Saída no console de administração, é possível executar várias tarefas:
 
 * Especifique conjuntos de caracteres para internacionalização. (Consulte [Alterar o conjunto](/help/forms/using/admin-help/change-character-set.md#change-the-character-set)de caracteres.)
 * Especifique caminhos absolutos e relativos para URLs, URIs, XCIs e locais de arquivos. (Consulte [Especificar locais de arquivo para Saída](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
