@@ -1,8 +1,8 @@
 ---
 title: Trabalhar com pontos de partida
 seo-title: Trabalhar com pontos de partida
-description: Etapas para trabalhar com um processo do AEM Forms a partir do dispositivo móvel definido no Workbench.
-seo-description: Etapas para trabalhar com um processo do AEM Forms a partir do dispositivo móvel definido no Workbench.
+description: Etapas para trabalhar com um processo AEM Forms a partir do dispositivo móvel definido no Workbench.
+seo-description: Etapas para trabalhar com um processo AEM Forms a partir do dispositivo móvel definido no Workbench.
 uuid: 9c51ce52-e7ba-43d3-a85c-67067f680ccb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Para iniciar um processo a partir do aplicativo AEM Forms, é necessário ter um
 **Para start de um processo definido no Workbench**
 
 1. Para visualização dos pontos de partida disponíveis no aplicativo AEM Forms, vá para a tela [inicial](/help/forms/using/home-screen.md).
-1. Na tela **[!UICONTROL Início]** , por padrão, a lista **[!UICONTROL Todos os formulários]** é exibida.
+1. Na tela **[!UICONTROL Início]** , por padrão, a lista **[!UICONTROL Todos os Forms]** é exibida.
 
    O ponto de partida está associado a um formulário. Toque no formulário associado ao ponto de partida na lista para abri-lo.
 
@@ -43,6 +46,6 @@ Para iniciar um processo a partir do aplicativo AEM Forms, é necessário ter um
 
 Se o aplicativo estiver offline, o formulário e seus dados serão salvos na pasta Caixa de saída.
 
-Se o aplicativo estiver online, a tarefa será sincronizada com o servidor de formulários AEM e atribuída ao usuário especificado no processo.
+Se o aplicativo estiver online, a tarefa será sincronizada com o servidor AEM Forms e atribuída ao usuário especificado no processo.
 
 Para trabalhar com a tarefa na lista da tarefa, consulte [Abrindo uma tarefa](/help/forms/using/open-task.md).
