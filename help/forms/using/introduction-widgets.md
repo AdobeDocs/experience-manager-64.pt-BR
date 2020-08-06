@@ -1,8 +1,8 @@
 ---
 title: Estrutura de aparência para formulários adaptáveis e HTML5
 seo-title: Estrutura de aparência para formulários adaptáveis e HTML5
-description: 'Formulários móveis renderizam Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script. '
-seo-description: 'Formulários móveis renderizam Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script. '
+description: 'O Mobile Forms renderiza os Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script. '
+seo-description: 'O Mobile Forms renderiza os Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script. '
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 3%
 
 ---
 
 
 # Estrutura de aparência para formulários adaptáveis e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-Os formulários (formulários adaptáveis e HTML5) usam as bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) para obter aparência e scripts. Os formulários também usam a arquitetura [jQuery UI](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins disponíveis do jQuery no Forms. Você também pode implementar uma lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementar cláusulas de imagem. Os desenvolvedores de formulários podem criar e usar percepções personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.
+O Forms (formulários adaptáveis e formulários HTML5) usa as bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) para obter aparência e scripts. Os formulários também usam a arquitetura [jQuery UI](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins disponíveis do jQuery no Forms. Você também pode implementar uma lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementar cláusulas de imagem. Os desenvolvedores de formulários podem criar e usar percepções personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.
 
 Este artigo destina-se a desenvolvedores com conhecimento suficiente dos widgets jQuery e jQuery. Ele fornece informações sobre a estrutura de aparência e permite que os desenvolvedores criem uma aparência alternativa para um campo de formulário.
 
@@ -50,7 +53,7 @@ A seguir estão as opções globais definidas. Essas opções estão disponívei
   </tr>
   <tr>
    <td>screenReaderText</td> 
-   <td>Leitores de tela usam esse valor para registrar informações sobre o campo. O formulário fornece o valor e você pode substituí-lo.<br /> </td> 
+   <td>Os Reader de tela usam esse valor para registrar informações sobre o campo. O formulário fornece o valor e você pode substituí-lo.<br /> </td> 
   </tr>
   <tr>
    <td>tabIndex</td> 
@@ -216,7 +219,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <td>Adiciona um item à lista.</td> 
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice do item a ser removido da lista<br /> </em><br /><br /> </td> 
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice do item a ser removido da lista<br /> </em><br /> <br /> </td> 
    <td>Exclui uma opção da lista.</td> 
   </tr>
   <tr>
