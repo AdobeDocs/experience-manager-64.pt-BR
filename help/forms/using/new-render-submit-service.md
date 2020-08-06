@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ Um XDP pode ser renderizado como um formulário PDF ou HTML. Os novos recursos i
 * Renderizar e enviar um formulário XDP como HTML
 * Renderizar e enviar um formulário XDP como PDF no desktop e como HTML em dispositivos móveis (por exemplo, um iPad)
 
-### Novo serviço de formulários HTML {#new-html-forms-service}
+### Novo serviço HTML Forms {#new-html-forms-service}
 
-O novo serviço de Formulários HTML aproveita o novo recurso no Forms para suportar a renderização de formulários XDP como HTML. O novo serviço de Formulários HTML expõe os seguintes métodos:
+O novo serviço HTML Forms aproveita o novo recurso no Forms para suportar a renderização do formulário XDP como HTML. O novo serviço HTML Forms expõe os seguintes métodos:
 
 ```java
 /*
@@ -104,7 +107,7 @@ Esse processo envia um formulário XDP em várias plataformas sem problemas. Ele
 
 ## Alternar a renderização de formulários móveis de PDF para HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
-Os navegadores estão retirando gradualmente o suporte para plug-ins baseados em NPAPI, incluindo plug-ins para o Adobe Acrobat e o Adobe Acrobat Reader. É possível alterar a renderização de formulários móveis de PDF para HTML usando as seguintes etapas:
+Os navegadores estão retirando gradualmente o suporte para plug-ins baseados em NPAPI, incluindo plug-ins para Adobe Acrobat e Adobe Acrobat Reader. É possível alterar a renderização de formulários móveis de PDF para HTML usando as seguintes etapas:
 
 1. Faça logon no Workbench como um usuário válido.
 1. Selecione **Arquivo** > **Obter aplicativos**.
@@ -140,7 +143,7 @@ E, processos de envio equivalentes.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Que Perfis de ação estarão disponíveis imediatamente?**
 
-Para formulários XDP:
+Para XDP Forms:
 
 * Padrão (renderizar/enviar usando os novos processos &#39;Renderização padrão/Enviar&#39;)
 
