@@ -1,8 +1,8 @@
 ---
 title: Recurso de conteúdo em destaque
 seo-title: Recurso de conteúdo em destaque
-description: 'O recurso Conteúdo em destaque permite que os visitantes do site com logon destacem o conteúdo '
-seo-description: 'O recurso Conteúdo em destaque permite que os visitantes do site com logon destacem o conteúdo '
+description: 'O recurso Conteúdo em destaque permite que visitantes do site com logon destacem conteúdo '
+seo-description: 'O recurso Conteúdo em destaque permite que visitantes do site com logon destacem conteúdo '
 uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 ## Introdução {#introduction}
 
-O recurso de conteúdo em destaque fornece uma área para visitantes do site com logon (membros da comunidade) no ambiente de publicação para destacar o conteúdo para
+O recurso de conteúdo em destaque fornece uma área para visitantes de site conectados (membros da comunidade) no ambiente de publicação para destacar o conteúdo para
 
 * [Blogs](blog-feature.md)
 * [Calendários](calendar.md)
@@ -27,7 +30,7 @@ O recurso de conteúdo em destaque fornece uma área para visitantes do site com
 * [Ideias](ideation-feature.md)
 * [Perguntas e respostas](working-with-qna.md)
 
-Quando o conteúdo for sinalizado como em destaque, ele será listado dentro deste componente, que pode ser colocado em páginas de aterrissagem específicas ou áreas que chamam facilmente a atenção dos membros da comunidade.
+Quando o conteúdo for sinalizado como em destaque, ele será listado dentro deste componente, que pode ser colocado em landings page específicas ou áreas que facilmente chamam a atenção dos membros da comunidade.
 
 A capacidade de incluir conteúdo pode ser permitida ou não permitida por componente.
 
@@ -60,18 +63,20 @@ Selecione o componente inserido a ser acessado e selecione o `Featured Content` 
 
 Na guia **[!UICONTROL Configurações]** , identifique o conteúdo a ser exibido:
 
-* **[!UICONTROL Nome]** de exibiçãoO título da lista de conteúdos em destaque. For example `Featured Questions` or `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
+* **[!UICONTROL Nome]** de exibiçãoO título da lista do conteúdo em destaque. Por exemplo 
+`Featured Questions` ou `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
 
 * **[!UICONTROL Local do conteúdo em destaque]**
+
    *(Obrigatório)* Navegue até a página que contém o conteúdo que pode ser um recurso (os componentes dessa página devem ser configurados para Permitir conteúdo em destaque). Por exemplo, `/content/sites/engage/en/forum`
 
 * **[!UICONTROL Limite de exibição]** O número máximo de conteúdo em destaque a ser exibido. O padrão é 5.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 A capacidade de sinalizar o conteúdo como conteúdo em destaque requer privilégios de moderador.
 
-Quando um moderador exibe o conteúdo publicado, ele tem acesso aos sinalizadores de moderação no contexto, que inclui o novo `Feature` sinalizador.
+Quando um moderador visualização postou conteúdo, ele tem acesso aos sinalizadores de moderação no contexto, que inclui o novo `Feature` sinalizador.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
