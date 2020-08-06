@@ -12,6 +12,9 @@ discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 O Designer está disponível como um instalador independente e também é fornecido com o WorkBench. Se você estiver usando um instalador independente para o Designer, siga estas etapas:
 
-1. Entre em contato com o suporte da Adobe para baixar o instalador do Designer.
+1. Entre em contato com o suporte ao Adobe para baixar o instalador do Designer.
 
    >[!NOTE]
    >
@@ -29,7 +32,7 @@ O Designer está disponível como um instalador independente e também é fornec
 1. Inicie o instalador do Designer, clicando duas vezes em setup.exe.
 1. Continue e forneça os detalhes e o número de série na tela Personalização.
 1. Se você aceitar o contrato de licença, clique em Avançar para continuar.
-1. (Opcional) Altere o caminho da instalação padrão, se quiser instalar o Designer e salve-o no local desejado. Clique emAvançar.
+1. (Opcional) Altere o caminho da instalação padrão, se quiser instalar o Designer e salve-o no local desejado. Clique em Avançar.
 1. Para alterar as preferências, clique em Voltar. Para instalar o Designer, clique em Instalar.
 1. Quando a instalação for concluída, clique em Concluir.
 
