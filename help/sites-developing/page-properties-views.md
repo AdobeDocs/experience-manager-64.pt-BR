@@ -1,6 +1,6 @@
 ---
-title: Personalização de exibições das propriedades da página
-seo-title: Personalização de exibições das propriedades da página
+title: Personalização de Visualizações de propriedades da página
+seo-title: Personalização de Visualizações de propriedades da página
 description: Cada página tem um conjunto de propriedades que podem ser editadas conforme necessário
 seo-description: Cada página tem um conjunto de propriedades que podem ser editadas conforme necessário
 uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
@@ -11,32 +11,35 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 translation-type: tm+mt
 source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
 
-# Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
+# Personalização de Visualizações de propriedades da página{#customizing-views-of-page-properties}
 
-Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-page-properties.md) que podem ser visualizadas e editadas pelos usuários; alguns são necessários ao criar a página (criar exibição), outros podem ser exibidos e editados (editar exibição) em um estágio posterior. Essas propriedades de página são definidas e disponibilizadas pela caixa de diálogo ( `cq:dialog`) do componente de página apropriado.
+Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-page-properties.md) que podem ser visualizadas e editadas pelos usuários; alguns são necessários ao criar a página (criar visualização), outros podem ser visualizados e editados (editar visualização) em um estágio posterior. Essas propriedades de página são definidas e disponibilizadas pela caixa de diálogo ( `cq:dialog`) do componente de página apropriado.
 
 >[!CAUTION]
 >
->A visualização personalizada das propriedades da página não está disponível na interface clássica.
+>A personalização da visualização das propriedades da página não está disponível na interface clássica.
 
 O estado padrão para cada propriedade de página é:
 
-* oculto na exibição de criação (por exemplo, assistente **Criar página** )
+* oculto na visualização de criação (por exemplo, Assistente de **criação de página** )
 
-* disponível na exibição de edição (por exemplo, Propriedades **da** exibição)
+* disponível na visualização de edição (por exemplo, Propriedades **da** Visualização)
 
 Os campos devem ser configurados especificamente se qualquer alteração for necessária. Isso é feito usando as propriedades de nó apropriadas:
 
-* Propriedade da página a ser disponibilizada na exibição de criação (por exemplo, assistente **Criar página** ):
+* Propriedade da página a ser disponibilizada na visualização de criação (por exemplo, assistente **Criar página** ):
 
    * Nome: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* Propriedade da página a ser disponibilizada na exibição de edição (por exemplo, **opção** Exibir **/** Editar **)** Propriedades):
+* Propriedade da página a ser disponibilizada na visualização de edição (por exemplo, **Visualização**/**Editar**) **Propriedades** ):
 
    * Nome: `cq:hideOnEdit`
    * Tipo: `Boolean`
@@ -100,6 +103,7 @@ Por exemplo, por padrão, o assistente [**para **Criar página](/help/sites-auth
    * **Nome**: `cq:showOnCreate`
    * **Tipo**: `Boolean`
    * **Valor**: `false`
+
    A seção **Mais títulos e Descrição** não será mais exibida no assistente **Criar página** .
 
 >[!NOTE]
@@ -108,7 +112,7 @@ Por exemplo, por padrão, o assistente [**para **Criar página](/help/sites-auth
 
 ## Exemplo de configuração de propriedades da página {#sample-configuration-of-page-properties}
 
-Esta amostra demonstra a técnica de diálogo diferente da [Sling Resource Fusão](/help/sites-developing/sling-resource-merger.md); incluindo a utilização de [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Ele também ilustra o uso tanto `cq:showOnCreate` quanto `cq:hideOnEdit`.
+Esta amostra demonstra a técnica de diálogo diferente da [Sling Resource Fusão](/help/sites-developing/sling-resource-merger.md); incluindo a utilização de [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Ele também ilustra o uso tanto do `cq:showOnCreate` quanto do `cq:hideOnEdit`.
 
 CÓDIGO NO GITHUB
 
