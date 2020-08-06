@@ -1,8 +1,8 @@
 ---
 title: Criar uma nova tela de login
 seo-title: Criar uma nova tela de login
-description: Como modificar a página de logon dos módulos do LiveCycle, por exemplo, da área de trabalho do AEM Forms ou do Gerenciador de Formulários.
-seo-description: Como modificar a página de logon dos módulos do LiveCycle, por exemplo, da área de trabalho do AEM Forms ou do Gerenciador de Formulários.
+description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho da AEM Forms ou do Forms Manager.
+seo-description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho da AEM Forms ou do Forms Manager.
 uuid: c7643f87-4a08-4c63-b87c-f987dbe18ece
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 4%
 
 ---
 
@@ -45,6 +48,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
    1. Renomeie a pasta para o nome da localidade que deseja suportar. Por exemplo, `ar`.
    1. Altere o `jcr:language` valor da propriedade para `ar`(para a `ar` pasta).
+
    >[!NOTE]
    >
    >Se locale for uma combinação de código de país de idioma, digamos, `ar-DZ`altere o nome da pasta e o valor da propriedade para `ar-DZ`.
@@ -192,6 +196,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
       * de `/libs/livecycle/core/components/login`
       * para `/apps/livecycle/core/components/login`
    1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar o texto recém-adicionado.
+
    ![captura](assets/capture.png)
 
    ```
@@ -211,7 +216,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
                        <% if (loginFailed) {%>
    ```
 
-## Adicionar novo estilo ou modificar o estilo existente {#adding-new-style-or-modifying-existing-style}
+## Adicionar novo estilo ou modificar um estilo existente {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
 
