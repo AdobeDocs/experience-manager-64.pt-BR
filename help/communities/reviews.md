@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 1%
 
 ---
 
@@ -33,9 +36,9 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Reviews`componente será exibido.
 
-![chlimage_1-344](assets/chlimage_1-340.png)
+![chlimage_1-340](assets/chlimage_1-340.png)
 
-## Configurando revisões {#configuring-reviews}
+## Configuração de revisões {#configuring-reviews}
 
 Selecione o componente inserido a ser acessado e selecione o `Reviews` `Configure` ícone que abre a caixa de diálogo de edição.
 
@@ -47,13 +50,13 @@ Na guia Classificações **** permitidas, especifique a lista completa de classi
 
 * **[!UICONTROL Classificações permitidas]**
 
-   Uma lista de classificações das quais um membro pode escolher.
+   Uma lista de classificações da qual um membro pode escolher.
 
    Use a seta para cima, a seta para baixo e os botões para excluir para modificar as seleções visíveis.
 
    Clique em **[!UICONTROL Adicionar item]** para adicionar outra opção de classificação.
 
-Na guia Classificações **** obrigatórias, digite novamente os itens da lista de Classificações **** permitidas que precisam ser classificadas. Se um item for especificado apenas na guia Classificações permitidas, ele poderá ficar desmarcado quando submetido pelo membro.
+Na guia Classificações **** obrigatórias, digite novamente os itens da lista de Classificações **** permitidas que precisam ser classificados. Se um item for especificado apenas na guia Classificações permitidas, ele poderá ficar desmarcado quando submetido pelo membro.
 
 No site, as classificações necessárias são marcadas com um asterisco. Se um item for obrigatório e não estiver marcado, uma mensagem será exibida para o membro e o envio será negado até que todas as classificações necessárias sejam marcadas.
 
@@ -85,7 +88,7 @@ Na guia **[!UICONTROL Revisões]** , especifique como as revisões serão tratad
 
 * **[!UICONTROL Extensão]** máxima da mensagem Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4096 caracteres.
 
-* **[!UICONTROL Tipos]** de arquivo permitidosRelevante somente se **[!UICONTROL Permitir uploads]** de arquivo estiver marcado. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+* **[!UICONTROL Tipos]** de arquivo permitidosRelevante somente se **[!UICONTROL Permitir uploads]** de arquivo estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **[!UICONTROL Editor]** de Rich Text Se marcada, as publicações podem ser inseridas com marcação. O padrão está desmarcado.
 
@@ -105,13 +108,13 @@ Na guia Moderação **[!UICONTROL do]** usuário, especifique como as revisões 
 
 * **[!UICONTROL Sinalizar revisões]** Se marcada, permita que os membros sinalizem revisões como inadequadas. O padrão está desmarcado.
 
-* **[!UICONTROL Sinalizar lista]** de motivos Se marcada, permita que os membros escolham, em uma lista suspensa, o motivo para sinalizar uma revisão como inadequada. O padrão está desmarcado.
+* **[!UICONTROL Sinalizar Lista]** Se marcada, permita que os membros escolham, em uma lista suspensa, o motivo para sinalizar uma revisão como inadequada. O padrão está desmarcado.
 
 * **[!UICONTROL Motivo]** do sinalizador personalizado Se marcado, permita que os membros insiram seu próprio motivo para marcar uma revisão como inadequada. O padrão está desmarcado.
 
 * **[!UICONTROL Limite]** de moderaçãoInsira o número de vezes que uma revisão deve ser sinalizada pelos membros antes que os moderadores sejam notificados. O padrão é uma vez (1).
 
-* **[!UICONTROL Limite de sinalização]** Digite o número de vezes que uma revisão deve ser sinalizada antes de ser ocultada da exibição pública. Esse número deve ser maior ou igual ao Limite de **[!UICONTROL moderação]**. O padrão é 5.
+* **[!UICONTROL Limite de sinalização]** Digite o número de vezes que uma revisão deve ser sinalizada antes de ser ocultada da visualização pública. Esse número deve ser maior ou igual ao Limite de **[!UICONTROL moderação]**. O padrão é 5.
 
 ### Adicionar um resumo de revisão (exibição) a uma página {#adding-a-review-summary-display-to-a-page}
 
@@ -139,13 +142,13 @@ Selecione o componente inserido a ser acessado e selecione o `Reviews Summary (D
 
 Na guia **[!UICONTROL Revisar resumo]**
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![chlimage_1-347](assets/chlimage_1-348.png)
 
 * `Review Path`
 
-   digite ou navegue até a instância colocada do `reviews`componente para resumir, por exemplo, se adicionada à Página da Web do site de envolvimento do [Geometrixx,](getting-started.md) o caminho seria:
+   digite ou navegue até a instância colocada do `reviews`componente para resumir, por exemplo, se adicionada à Página da Web do site de [Envolvimento do Geometrixx,](getting-started.md) o caminho seria:
 
-   /content/sites/contact/en/page/jcr:content/content/Primary/views
+   /content/sites/contact/br/page/jcr:content/content/Primary/views
 
 * `Include histogram`
 
@@ -157,7 +160,7 @@ O componente Revisões usa o Sistema de comentários.
 
 Ao alterar o Tipo de recurso de comentário, o sistema de comentários não gerará mais uma instância de um comentário usando o padrão, mas uma que foi personalizada (estendida) pelos desenvolvedores.
 
-Depois que os tipos de recursos personalizados forem conhecidos, entre no Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique duas vezes no `Comments` componente inserido para abrir uma caixa de diálogo com uma guia adicional.
+Depois que os tipos de recursos personalizados forem conhecidos, digite Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique no duplo no componente colocado `Comments` para abrir uma caixa de diálogo com uma guia adicional.
 
 Na guia Tipos **[!UICONTROL de]** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting`componentes:
 
@@ -179,7 +182,7 @@ Na guia Tipos **[!UICONTROL de]** recursos, especifique o resourceType personali
 
    Navegue até resourceType de um `comments`componente estendido (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página inclua [](scf.md#add-or-include-a-communities-component) dinamicamente o Sistema de comentários no script subjacente em vez de ser adicionado à página como um recurso (nó de comentários). Saiba mais lendo sobre o auxiliar [{{include}}](handlebars-helpers.md#include)
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Moderadores e administradores {#moderators-and-administrators}
 
@@ -187,7 +190,7 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 ### Membros {#members}
 
-Quando o visitante do site está conectado, dependendo da configuração, ele pode
+Quando o visitante do site estiver conectado, dependendo da configuração, eles poderão
 
 * Publicar uma nova revisão
 * Editar sua própria revisão
@@ -198,7 +201,7 @@ Somente uma classificação por membro é permitida. O membro pode alterar a sua
 
 ### Anônimo {#anonymous}
 
-Os visitantes do site que não estão conectados só podem ler as revisões publicadas, traduzi-las se suportadas, mas não podem adicionar uma classificação ou uma revisão, nem sinalizar os comentários de outras pessoas.
+Os visitantes do site que não estão conectados só podem ler revisões publicadas, traduzi-las se suportadas, mas não podem adicionar uma classificação ou uma revisão, nem sinalizar comentários de revisão de outras pessoas.
 
 ## Informações adicionais {#additional-information}
 
