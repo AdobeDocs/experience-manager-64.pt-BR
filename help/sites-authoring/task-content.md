@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 95%
 
 ---
 
@@ -53,7 +56,7 @@ Clique nas reticências (...) no Mosaico de tarefas para exibir a lista de taref
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na Lista de Tarefas, toque/clique na tarefa e **Detalhes da Tarefa **abrir.
+Para obter mais informações sobre uma tarefa específica, na Lista da Tarefa, toque/clique na tarefa e **detalhes da Tarefa **abra.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
