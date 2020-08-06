@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
@@ -43,13 +46,19 @@ Na guia **[!UICONTROL Textos e etiquetas]** , especifique as propriedades usadas
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Rótulo]** de resposta positiva (*obrigatório*) O nome da propriedade para uma resposta positiva.
+* **[!UICONTROL Rótulo de resposta positiva]**
+(
+*Obrigatório*) O nome da propriedade para uma resposta positiva.
 
-* **[!UICONTROL Rótulo]** de resposta negativa (*obrigatório*) O nome da propriedade para uma resposta negativa.
+* **[!UICONTROL Etiqueta de resposta negativa]**
+(
+*Obrigatório*) O nome da propriedade para uma resposta negativa.
 
-* **[!UICONTROL Nome]** de contagem (*obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
+* **[!UICONTROL Nome Tally]**
+(
+*Obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Membros {#members}
 
