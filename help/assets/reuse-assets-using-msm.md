@@ -30,7 +30,7 @@ Para usar o MSM para os Ativos, instale pelo menos o Service Pack 5. Para obter 
 
 ### Como funciona e benefícios {#how-it-works-the-benefits}
 
-Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [possíveis cenários](/help/sites-administering/msm.md#possible-scenarios)MSM. O AEM mantém um link entre o ativo original e suas cópias vinculadas, chamadas de cópias ativas (LCs). A vinculação mantida permite que alterações centralizadas sejam enviadas para muitas cópias online. Isso permite atualizações mais rápidas, além de eliminar as limitações do gerenciamento de cópias de duplicados. A propagação das alterações é livre de erros e centralizada. A funcionalidade permite espaço para atualizações limitadas a cópias online selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não são substituídas quando a próxima vez que a cópia principal for atualizada e as alterações forem distribuídas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ele permite flexibilidade para atualizar localmente ativos que são originalmente herdados de uma cópia primária.
+Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [possíveis cenários](/help/sites-administering/msm.md#possible-scenarios)MSM. AEM mantém um link entre o ativo original e suas cópias vinculadas, chamadas de cópias ativas (LCs). A vinculação mantida permite que alterações centralizadas sejam enviadas para muitas cópias online. Isso permite atualizações mais rápidas, além de eliminar as limitações do gerenciamento de cópias de duplicados. A propagação das alterações é livre de erros e centralizada. A funcionalidade permite espaço para atualizações limitadas a cópias online selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não são substituídas quando a próxima vez que a cópia principal for atualizada e as alterações forem distribuídas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ele permite flexibilidade para atualizar localmente ativos que são originalmente herdados de uma cópia primária.
 
 O MSM mantém uma relação ao vivo entre o ativo de origem e suas cópias ao vivo para que:
 
@@ -65,7 +65,7 @@ O MSM mantém uma relação ao vivo entre o ativo de origem e suas cópias ao vi
 Para criar uma live copy de um ou mais ativos ou pastas de origem, siga um destes procedimentos:
 
 * **Método 1**: Selecione os ativos de origem e clique em **[!UICONTROL Criar > Live Copy]** na barra de ferramentas na parte superior.
-* **Método 2**: Na interface do usuário do AEM, clique em **[!UICONTROL Criar > Live Copy]** no canto superior direito da interface.
+* **Método 2**: Em AEM interface do usuário, clique em **[!UICONTROL Criar > Live Copy]** no canto superior direito da interface.
 
 Você pode criar cópias ao vivo de um ativo ou de uma pasta, uma de cada vez. Você pode criar cópias ao vivo que são derivadas de um ativo ou de uma pasta que seja uma cópia ao vivo.
 
@@ -74,15 +74,15 @@ Fragmentos de conteúdo (CFs) não são suportados no caso de uso. Ao tentar cri
 Para criar cópias ao vivo usando o primeiro método, siga estas etapas:
 
 1. Selecione os ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Criar > Live Copy]**.
-   ![Criar live copy a partir da interface do AEM](assets/lc_create1.png)
+   ![Criar live copy a partir AEM interface](assets/lc_create1.png)
 1. Selecione o ativo ou pasta de origem. Clique em **[!UICONTROL Avançar]**.
 1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma cópia ao vivo das pastas, você pode optar por incluir ou excluir filhos.
 1. Selecione uma configuração de implantação. Clique em **[!UICONTROL Criar]**.
 
 Para criar cópias ao vivo usando o segundo método, siga estas etapas:
 
-1. Na interface do AEM, no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
-   ![Criar live copy a partir da interface do AEM](assets/lc_create2.png)
+1. Em AEM interface, no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
+   ![Criar live copy a partir AEM interface](assets/lc_create2.png)
 1. Selecione o ativo ou pasta de origem. Clique em **[!UICONTROL Avançar]**.
 1. Selecione a pasta de destino. Clique em **[!UICONTROL Avançar]**.
 1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma cópia ao vivo das pastas, você pode optar por incluir ou excluir filhos.
@@ -94,7 +94,7 @@ Para criar cópias ao vivo usando o segundo método, siga estas etapas:
 
 ## Visualização de várias propriedades e status de cópia de origem e live {#view-properties-statuses-source-and-lc}
 
-Você pode visualização as informações e os status relacionados ao MSM de live copy, como relacionamento, sincronização, implantações e muito mais, das várias áreas da interface do usuário do AEM. Os dois métodos a seguir funcionam para ativos e pastas:
+Você pode visualização as informações e os status relacionados ao MSM de live copy, como relacionamento, sincronização, implantações e muito mais, das várias áreas da interface do usuário AEM. Os dois métodos a seguir funcionam para ativos e pastas:
 
 * Selecione o ativo live copy e localize as informações em sua página **[!UICONTROL Propriedades]** .
 * Selecione a pasta de origem e localize as informações detalhadas de cada live copy no **[!UICONTROL Live Copy Console]**.
@@ -115,7 +115,7 @@ Para verificar as informações e os status de um ativo de live copy ou de uma p
 
 ### Informações e status de todas as cópias online de uma pasta {#information-status-of-all-lcs-of-folder}
 
-O AEM fornece um console para verificar as estátuas de todas as cópias online de uma pasta de origem. Esse console exibe o status de todos os ativos filho.
+AEM fornece um console para verificar as estátuas de todas as cópias online de uma pasta de origem. Esse console exibe o status de todos os ativos filho.
 
 1. Selecione uma pasta de origem. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**. Esse painel fornece um status de nível superior de todos os ativos secundários.
@@ -132,7 +132,7 @@ O AEM fornece um console para verificar as estátuas de todas as cópias online 
 Para um ativo ou pasta de origem, você pode ver as seguintes informações e realizar as seguintes ações diretamente do painel Referências:
 
 * Veja os caminhos das cópias online.
-* Abra ou revele uma cópia ativa específica na interface do usuário do AEM.
+* Abra ou revele uma cópia ativa específica AEM interface do usuário.
 * Sincronize as atualizações com uma cópia ativa específica.
 * Suspenda a relação ou altere a configuração de implantação de uma cópia ativa específica.
 * Acesse o console de visão geral do live copy.
@@ -150,7 +150,7 @@ Para obter uma cópia online específica, clique em **[!UICONTROL Editar Live Co
 Para um ativo ou pasta live copy, você pode ver as seguintes informações e realizar as seguintes ações diretamente do painel Referências:
 
 * Consulte o caminho de sua origem.
-* Abra ou revele uma cópia ativa específica na interface do usuário do AEM.
+* Abra ou revele uma cópia ativa específica AEM interface do usuário.
 * Implantar as atualizações.
 
 Selecione um ativo ou uma pasta de live copy, abra o painel à esquerda e clique em **[!UICONTROL Referências]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
@@ -183,7 +183,7 @@ Como alternativa, você pode iniciar uma ação de implantação no painel [!UIC
 
 Uma ação de sincronização puxa as modificações de uma fonte somente para a live copy selecionada. A ação de sincronização respeita e mantém as modificações locais feitas após cancelar a herança. As modificações locais não são substituídas e a herança cancelada não é restabelecida. É possível iniciar uma ação de sincronização de três maneiras.
 
-| Onde na interface do AEM | Quando e por que usar | Como usar |
+| Onde na interface AEM | Quando e por que usar | Como usar |
 |---|---|---|
 | [!UICONTROL Painel Referências] | Sincronize rapidamente quando você já tiver a fonte selecionada. | Consulte Ações [rápidas do painel Referências para origem](#quick-actions-from-references-rail-for-source) |
 | Barra de ferramentas na página [!UICONTROL Propriedades] | Inicie uma sincronização quando você já tiver as propriedades de live copy abertas. | Consulte [Sincronizar uma live copy](#synchronize-live-copy) |
@@ -221,7 +221,7 @@ Você pode desfazer todas as modificações locais e reverter o ativo para o est
 
 ## Remover relação ao vivo {#remove-live-relationship}
 
-Você pode remover completamente a relação entre uma fonte e uma cópia ao vivo usando a ação Desanexar. A live copy torna-se um ativo ou pasta independente depois de ser desanexada. Ele é exibido como um novo ativo na interface do AEM, imediatamente após a desanexação. Para desanexar uma live copy de sua origem, siga estas etapas.
+Você pode remover completamente a relação entre uma fonte e uma cópia ao vivo usando a ação Desanexar. A live copy torna-se um ativo ou pasta independente depois de ser desanexada. É exibido como um novo ativo na interface AEM, imediatamente após a desanexação. Para desanexar uma live copy de sua origem, siga estas etapas.
 
 1. Selecione um ativo ou pasta de cópia ativa. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado p.
 1. Click **[!UICONTROL Live Copy]**. Clique em **[!UICONTROL Desanexar]** na barra de ferramentas. Clique em **[!UICONTROL Desanexar]** na caixa de diálogo apresentada.
@@ -244,7 +244,7 @@ Se você tiver vários ativos em uma pasta live copy, iniciar ações em cada at
 
 ## Estender MSM para ativos {#extend-msm-for-assets}
 
-O AEM permite estender a funcionalidade usando as APIs Java MSM. Para os Ativos, a extensão funciona exatamente como funciona com o MSM para o Site. Para obter detalhes, consulte [Extensão do MSM](../sites-developing/extending-msm.md) e as seguintes seções para obter informações sobre tarefas específicas:
+AEM permite estender a funcionalidade usando as APIs Java MSM. Para os Ativos, a extensão funciona exatamente como funciona com o MSM para o Site. Para obter detalhes, consulte [Extensão do MSM](../sites-developing/extending-msm.md) e as seguintes seções para obter informações sobre tarefas específicas:
 
 * [Visão geral das APIs](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Criar uma nova ação de sincronização](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -260,7 +260,7 @@ O AEM permite estender a funcionalidade usando as APIs Java MSM. Para os Ativos,
 
 ## Impacto das tarefas de gerenciamento de ativos em cópias online {#impact-of-asset-management-tasks-on-live-copies}
 
-As cópias online e as fontes são ativos ou pastas que podem ser gerenciados, até certo ponto, como ativos digitais. Algumas tarefas de gerenciamento de ativos no AEM têm um impacto específico nas cópias online.
+As cópias online e as fontes são ativos ou pastas que podem ser gerenciados, até certo ponto, como ativos digitais. Algumas tarefas de gerenciamento de ativos em AEM têm um impacto específico nas cópias online.
 
 * A cópia de uma live copy cria um ativo live copy com a mesma fonte da primeira live copy.
 * Quando você move uma fonte ou sua cópia ao vivo, a relação ao vivo é mantida.
