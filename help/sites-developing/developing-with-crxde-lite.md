@@ -1,6 +1,6 @@
 ---
-title: Desenvolver com o CRXDE Lite
-seo-title: Desenvolver com o CRXDE Lite
+title: Desenvolvimento com CRXDE Lite
+seo-title: Desenvolvimento com CRXDE Lite
 description: O CRXDE Lite está incorporado ao AEM e permite que você execute tarefas de desenvolvimento padrão no navegador
 seo-description: O CRXDE Lite está incorporado ao AEM e permite que você execute tarefas de desenvolvimento padrão no navegador
 uuid: a5eafc8c-f9fa-49ba-ad2f-0cccc427ca49
@@ -18,24 +18,24 @@ ht-degree: 5%
 ---
 
 
-# Desenvolver com o CRXDE Lite {#developing-with-crxde-lite}
+# Desenvolvimento com CRXDE Lite {#developing-with-crxde-lite}
 
 Esta seção descreve como desenvolver seu aplicativo AEM usando o CRXDE Lite.
 
 Consulte a documentação de visão geral para obter mais informações sobre os diferentes ambientes de desenvolvimento disponíveis.
 
-O CRXDE Lite está incorporado ao AEM e permite que você execute tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, é possível criar um projeto, criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes durante o registro.
+O CRXDE Lite está incorporado ao AEM e permite que você execute tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, você pode criar um projeto, criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes durante o registro.
 
-O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor AEM, quando desenvolve um aplicativo, estendendo ou modificando os componentes predefinidos e os pacotes Java ou quando não precisa de um depurador dedicado, finalização de código e realce de sintaxe.
+É recomendado o CRXDE Lite quando você não tem acesso direto ao servidor AEM, quando você desenvolve um aplicativo, estendendo ou modificando os componentes predefinidos e os pacotes Java ou quando não precisa de um depurador dedicado, finalização de código e realce de sintaxe.
 
 >[!NOTE]
 >
->A partir do AEM 6.4.8.1, o acesso anônimo do CRXDE Lite não é mais possível.
+>A partir AEM 6.4.8.1, o acesso anônimo ao CRXDE Lite não é mais possível.
 >Os usuários são redirecionados para a tela de logon.
 
 >[!NOTE]
 >
->É recomendável usar as Ferramentas do desenvolvedor do [AEM para o Eclipse](/help/sites-developing/aem-eclipse.md) e a Extensão [dos suportes HTL do](/help/sites-developing/aem-brackets.md) AEM durante o desenvolvimento do projeto.
+>É recomendável usar as Ferramentas do desenvolvedor [AEM para o Eclipse](/help/sites-developing/aem-eclipse.md) e a Extensão [dos suportes HTL](/help/sites-developing/aem-brackets.md) AEM durante o desenvolvimento do projeto.
 
 ## Introdução ao CRXDE Lite {#getting-started-with-crxde-lite}
 
@@ -47,7 +47,7 @@ Para começar a usar o CRXDE Lite, proceda da seguinte forma:
 
 1. Clique em **OK**.
 
-A interface do usuário CRXDE Lite é exibida da seguinte forma em seu navegador:
+A interface do usuário do CRXDE Lite é exibida da seguinte maneira no seu navegador:
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -55,13 +55,13 @@ Agora você pode usar o CRXDE Lite para desenvolver seu aplicativo.
 
 ### Visão geral da interface do usuário {#overview-of-the-user-interface}
 
-O CRXDE Lite oferta a seguinte funcionalidade:
+CRXDE Lite oferta a seguinte funcionalidade:
 
 <table> 
  <tbody> 
   <tr> 
    <td>Barra do comutador superior</td> 
-   <td>Permite alternar rapidamente entre o CRXDE Lite, o Package Manager e o Package Share.</td> 
+   <td>Permite alternar rapidamente entre o CRXDE Lite, o Gerenciador de pacotes e o Compartilhamento de pacotes.</td> 
   </tr> 
   <tr> 
    <td>Widget de caminho de nó</td> 
@@ -73,7 +73,7 @@ O CRXDE Lite oferta a seguinte funcionalidade:
   </tr> 
   <tr> 
    <td>Painel Editar</td> 
-   <td><p><strong>Guia Início</strong> : permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de conhecimento) e suporte (página inicial e centro de suporte da Adobe).<br /> </p> <p>Duplo clique em um arquivo no painel <strong>do Explorer</strong> para exibir seu conteúdo; como, por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-la e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong> , as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir ...</strong>: faça pesquisa ou substitua.<br /> <br /> Clique com o Duplo na linha de status do painel <strong>Editar</strong> para abrir a caixa de diálogo <strong>Ir para linha</strong> para que você possa digitar um número de linha específico para acessar.<br /> </td> 
+   <td><p><strong>Guia Início</strong> : permite que você pesquise conteúdo e/ou documentação e acesse recursos do desenvolvedor (documentação, blog do desenvolvedor, base de conhecimento) e suporte (Adobe homepage e centro de suporte).<br /> </p> <p>Duplo clique em um arquivo no painel <strong>do Explorer</strong> para exibir seu conteúdo; como, por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-la e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong> , as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir ...</strong>: faça pesquisa ou substitua.<br /> <br /> Clique com o Duplo na linha de status do painel <strong>Editar</strong> para abrir a caixa de diálogo <strong>Ir para linha</strong> para que você possa digitar um número de linha específico para acessar.<br /> </td> 
   </tr> 
   <tr> 
    <td>Guia Propriedades<br /> </td> 
@@ -105,7 +105,7 @@ O CRXDE Lite oferta a seguinte funcionalidade:
   </tr> 
   <tr> 
    <td>Criar ...<br /> </td> 
-   <td><p>Menu suspenso para criar o seguinte sob o nó selecionado:<br /> </p> <p>- <strong>Nó</strong>: um nó com um tipo de nó arbitrário<br /> </p> <p>- <strong>Arquivo</strong>: nt:nó de arquivo e seu subnó nt:resource</p> <p>- <strong>Pasta</strong>: nt:nó de pasta</p> <p>- <strong>Modelo</strong>: Modelo AEM</p> <p>- <strong>Componente</strong>: Componente AEM</p> <p>- <strong>Diálogo</strong>: Caixa de diálogo AEM</p> </td> 
+   <td><p>Menu suspenso para criar o seguinte sob o nó selecionado:<br /> </p> <p>- <strong>Nó</strong>: um nó com um tipo de nó arbitrário<br /> </p> <p>- <strong>Arquivo</strong>: nt:nó de arquivo e seu subnó nt:resource</p> <p>- <strong>Pasta</strong>: nt:nó de pasta</p> <p>- <strong>Modelo</strong>: Modelo AEM</p> <p>- <strong>Componente</strong>: componente AEM</p> <p>- <strong>Diálogo</strong>: Caixa de diálogo AEM</p> </td> 
   </tr> 
   <tr> 
    <td>Exclua<br /> </td> 
@@ -144,7 +144,7 @@ O CRXDE Lite oferta a seguinte funcionalidade:
 
 ### Creating a Folder {#creating-a-folder}
 
-Para criar uma pasta com o CRXDE Lite:
+Para criar uma pasta com CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
 1. No painel Navegação, clique com o botão direito do mouse na pasta sob a qual deseja criar a nova pasta, selecione **Criar ...** e, em seguida, **Criar pasta ...**.
@@ -155,7 +155,7 @@ Para criar uma pasta com o CRXDE Lite:
 
 ### Creating a Template {#creating-a-template}
 
-Para criar um modelo com o CRXDE Lite:
+Para criar um modelo com CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
 1. No painel de Navegação, clique com o botão direito do mouse na pasta em que deseja criar o modelo, selecione **Criar ...**, em seguida, **Criar modelo ...**.
@@ -227,7 +227,7 @@ Você também pode usar o Editor de diálogo para editar uma caixa de diálogo. 
 Para criar um nó com CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. No painel Navegação, clique com o botão direito do mouse no nó onde deseja criar o novo nó, selecione **Criar ...** e, em seguida, **Criar nó ...**.
+1. No painel de Navegação, clique com o botão direito do mouse no nó em que deseja criar o novo nó, selecione **Criar ...** e, em seguida, **Criar nó ...**.
 
 1. Insira o **Nome** e o **Tipo**. Clique em **OK**.
 
@@ -266,7 +266,7 @@ Para criar um novo script:
 
 ### Exportação e importação de tipos de nó {#exporting-and-importing-node-types}
 
-Com o CRXDE Lite, é possível importar e/ou exportar definições de tipo de nó na notação [](http://jackrabbit.apache.org/jcr/node-type-notation.html)CND (Namespace compacta e Definição de tipo de nó).
+Com o CRXDE Lite, é possível importar e/ou exportar definições de tipo de nó na notação [CND (Compact Namespace and Node Type Definition)](http://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Para exportar uma definição de tipo de nó:
 
