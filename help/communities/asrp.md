@@ -1,8 +1,8 @@
 ---
-title: ASRP - Provedor de Recursos de Armazenamento da Adobe
-seo-title: ASRP - Provedor de Recursos de Armazenamento da Adobe
-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
-seo-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
+title: ASRP - Provedor de Recursos de Armazenamento de Adobe
+seo-title: ASRP - Provedor de Recursos de Armazenamento de Adobe
+description: Configurar a AEM Communities para usar um banco de dados relacional como sua loja comum
+seo-description: Configurar a AEM Communities para usar um banco de dados relacional como sua loja comum
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# ASRP - Provedor de Recursos de Armazenamento da Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP - Provedor de Recursos de Armazenamento de Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Sobre o ASRP {#about-asrp}
 
-Quando o AEM Communities está configurado para usar o ASRP como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
+Quando a AEM Communities está configurada para usar o ASRP como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
 
 Consulte também [Características das opções](working-with-srp.md#characteristics-of-srp-options) de SRP e das topologias [](topologies.md)recomendadas.
 
@@ -30,7 +30,7 @@ Consulte também [Características das opções](working-with-srp.md#characteris
 
 É necessária uma licença adicional para o uso do ASRP.
 
-Para configurar seu site de AEM Communities para usar o ASRP para UGC, entre em contato com seu representante de conta para:
+Para configurar seu site da AEM Communities para usar o ASRP para UGC, entre em contato com seu representante de conta para:
 
 * URL do centro de dados (endereço do ponto final ASRP)
 * Chave do consumidor
@@ -85,7 +85,7 @@ Após enviar a configuração, teste a conexão:
 
 ### Replicar a chave de criptografia {#replicate-the-crypto-key}
 
-O Consumer key e a chave secreta estão criptografados. Para que as chaves sejam criptografadas/descriptografadas corretamente, a chave principal Criptografia Granite deve ser a mesma em todas as instâncias do AEM.
+O Consumer key e a chave secreta estão criptografados. Para que as chaves sejam criptografadas/descriptografadas corretamente, a chave principal Criptografia Granite deve ser a mesma em todas as instâncias AEM.
 
 Siga as instruções em [Replicate the Crypto Key (Replicar a chave](deploy-communities.md#replicate-the-crypto-key)de criptografia).
 
@@ -97,7 +97,7 @@ Certifique-se de definir os domínios como URLs roteáveis a partir do URL do da
 
 ### Sincronização de tempo {#time-synchronization}
 
-Para que a autenticação com o ponto de extremidade ASRP tenha êxito, os computadores que executam seus AEM Communities hospedados devem ser sincronizados no tempo, como com o Protocolo de Tempo de [Rede (NTP)](https://www.ntp.org/).
+Para que a autenticação com o terminal ASRP tenha êxito, os computadores que executam seu AEM Communities hospedado devem ser sincronizados no tempo, como com o Protocolo de Tempo de [Rede (NTP)](https://www.ntp.org/).
 
 ### Publicar a configuração {#publishing-the-configuration}
 
@@ -122,7 +122,7 @@ Para disponibilizar a configuração idêntica no ambiente publish:
 >
 >Se você ativar o ASRP em um site da comunidade publicada, qualquer UGC já armazenado no [JCR](jsrp.md) não estará mais visível, pois não há sincronização de dados entre o armazenamento local e o armazenamento em nuvem.
 
-**`AEM Communities Extension`** foi introduzido anteriormente em comunidades sociais do AEM 6.0 como um serviço em nuvem. A partir das comunidades do AEM 6.1, nenhuma configuração de nuvem é necessária, basta selecionar ASRP no console [de configuração do](srp-config.md)armazenamento.
+**`AEM Communities Extension`** foi introduzido anteriormente em AEM 6.0 comunidades sociais como um serviço em nuvem. A partir AEM Comunidades 6.1, nenhuma configuração de nuvem é necessária, basta selecionar ASRP no console [de configuração do](srp-config.md)armazenamento.
 
 Devido à nova estrutura do armazenamento, é necessário seguir as instruções de [atualização](upgrade.md#adobe-cloud-storage) ao atualizar de comunidades sociais para Comunidades.
 
@@ -137,17 +137,17 @@ Para obter informações sobre *usuários*, perfis *de* usuários e grupos *de* 
 
 ### O UGC desaparece após a atualização {#ugc-disappears-after-upgrade}
 
-Se a atualização de um site da comunidade social AEM 6.0 já existir, siga as instruções [de](upgrade.md#adobe-cloud-storage)atualização; caso contrário, o UGC *parecerá* estar perdido.
+Se você estiver atualizando de um site AEM 6.0 existente da comunidade social, siga as instruções [de](upgrade.md#adobe-cloud-storage)atualização; caso contrário, o UGC *parecerá* perdido.
 
 ### Erros de autenticação {#authentication-errors}
 
 Se estiver recebendo erros de autenticação no URL do data center e o AEM error.log contiver mensagens sobre carimbos de data e hora obsoletos, verifique se a sincronização de hora está ocorrendo.
 
-É recomendável usar uma ferramenta como o NTP ( [Network Time Protocol, Protocolo de tempo de rede)](https://www.ntp.org/) para sincronizar o tempo de todos os servidores de autor e publicação do AEM.
+É recomendável usar uma ferramenta como o NTP ( [Network Time Protocol, Protocolo de tempo de rede)](https://www.ntp.org/) para sincronizar o tempo de todos os servidores de autor e publicação AEM.
 
 ### Novo conteúdo não aparece nas pesquisas {#new-content-does-not-appear-in-searches}
 
-A infraestrutura de armazenamentos em nuvem da Adobe usa *eventual consistência* para ajudar a atingir suas metas de dimensionamento e desempenho. Por isso, o novo conteúdo não está disponível instantaneamente e pode levar vários segundos para aparecer nos resultados da pesquisa.
+A infraestrutura de armazenamento em nuvem do Adobe usa *uma eventual consistência* para ajudar a atingir suas metas de dimensionamento e desempenho. Por isso, o novo conteúdo não está disponível instantaneamente e pode levar vários segundos para aparecer nos resultados da pesquisa.
 
 Enquanto o intervalo que afeta uma eventual consistência for monitorado, entre em contato com seu representante de conta se ele levar mais de alguns segundos para que o novo conteúdo apareça nas pesquisas.
 
@@ -155,7 +155,7 @@ Enquanto o intervalo que afeta uma eventual consistência for monitorado, entre 
 
 Verifique se o ASRP foi configurado para ser o provedor padrão ao verificar a configuração da opção de armazenamento. Por padrão, o provedor de recursos do armazenamento é JSRP, não ASRP.
 
-Em todas as instâncias do autor e publicação do AEM, reveja o console Configuração do Armazenamento ou verifique o repositório do AEM:
+Em todas as instâncias de autor e publicação AEM, reveja o console Configuração do Armazenamento ou verifique o repositório AEM:
 
 * No JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
