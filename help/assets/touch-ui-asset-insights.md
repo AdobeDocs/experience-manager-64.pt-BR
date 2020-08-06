@@ -1,34 +1,37 @@
 ---
 title: Usar o recurso Asset Insights para rastrear o uso de suas imagens
-description: O recurso Asset Insights permite que você rastreie as classificações de usuários e as estatísticas de uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas da Adobe.
+description: O Asset Insights permite que você rastreie as estatísticas de classificação e uso de imagens que são usadas em sites de terceiros, campanhas e soluções criativas de recursos do Adobe.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 8%
 
 ---
 
 
-#  Informações de ativos{#asset-insights}
+# Informações de ativos {#asset-insights}
 
-Saiba como o recurso Asset Insights permite rastrear as classificações de usuários e as estatísticas de uso de ativos usados em sites de terceiros, campanhas de marketing e soluções criativas da Adobe.
+Saiba como o recurso Asset Insights permite rastrear as classificações de usuários e as estatísticas de uso de ativos usados em sites de terceiros, campanhas de marketing e soluções criativas de Adobe.
 
-O recurso Asset Insights permite que você rastreie as classificações e estatísticas de uso de usuários de ativos usados em sites de terceiros, campanhas de marketing e soluções criativas da Adobe para obter insights sobre o desempenho e a popularidade desses ativos.
+O Asset Insights permite que você rastreie as classificações e estatísticas de uso de usuários de ativos usados em sites de terceiros, campanhas de marketing e soluções criativas de recursos do Adobe para obter insights sobre o desempenho e a popularidade.
 
 O Assets Insights captura detalhes da atividade do usuário, como o número de vezes que um ativo é classificado, clicado e impressões (número de vezes que o ativo é carregado no site). Atribui pontuações a ativos com base nessas estatísticas. Você pode usar as estatísticas de pontuação e desempenho para selecionar os ativos mais populares para inclusão em catálogos, campanhas de marketing e assim por diante. Você pode até mesmo formular políticas de renovação de arquivos e licenças para ativos com base nessas estatísticas.
 
-Para que o Assets Insights capture as estatísticas de uso de ativos de um site, você deve incluir o código incorporado do ativo no código do site.
+Para que o Assets Insights capture as estatísticas de uso de ativos de um site, você deve incluir o código incorporado para o ativo no código do site.
 
-Para permitir que o Asset Insights exiba estatísticas de uso de ativos, configure primeiro o recurso para buscar dados de relatório do [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar insights](touch-ui-configuring-asset-insights.md)de ativos.
+Para permitir que o Asset Insights exiba as estatísticas de uso de ativos, configure primeiro o recurso para buscar dados de relatórios de [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar insights](touch-ui-configuring-asset-insights.md)de ativos.
 
 >[!NOTE]
 >
 >Os insights são suportados e fornecidos apenas para imagens.
 
-## Exibir estatísticas de um ativo {#viewing-statistics-for-an-asset}
+## Estatísticas de Visualização de um ativo {#viewing-statistics-for-an-asset}
 
-Você pode exibir as pontuações do Asset Insights na página de metadados.
+Você pode visualização as pontuações do Asset Insights na página de metadados.
 
-1. Na interface do usuário do Assets (UI), selecione o ativo e toque/clique no ícone **[!UICONTROL Propriedades]** na barra de ferramentas.
+1. Na interface do usuário do Assets (UI), selecione o ativo e, em seguida, toque/clique no ícone **[!UICONTROL Propriedades]** na barra de ferramentas.
 1. Na página Propriedades, toque/clique na guia **[!UICONTROL Insights]** .
 1. Revise os detalhes de uso do ativo na guia **[!UICONTROL Insights]** . A seção **[!UICONTROL Pontuação]** descreve o uso total de ativos e as funções de desempenho de um ativo.
 
@@ -40,13 +43,14 @@ Você pode exibir as pontuações do Asset Insights na página de metadados.
 
    * **[!UICONTROL Ativo]**: O número de vezes que o ativo fez parte de uma coleção ou de um ativo composto
    * **[!UICONTROL Web e dispositivos móveis]**: O número de vezes que o ativo fez parte de sites e aplicativos
-   * **[!UICONTROL Social]**: O número de vezes que o ativo foi usado em soluções, como o Adobe Social e o Adobe Campaign
-   * **[!UICONTROL Email]**: O número de vezes que o ativo foi usado em campanhas por email
+   * **[!UICONTROL Social]**: O número de vezes que o ativo foi usado em soluções, como Adobe Social e Adobe Campaign
+   * **[!UICONTROL Email]**: O número de vezes que o ativo foi usado em campanhas de email
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Como o recurso Asset Insights normalmente obtém os dados de Soluções do Adobe Analytics de forma periódica, a seção Soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende da programação da operação de busca executada pelo Asset Insights para recuperar os dados do Analytics.
+   >Como o recurso Asset Insights normalmente obtém os dados de Soluções da Adobe Analytics de forma periódica, a seção Soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende da programação da operação de busca executada pelo Asset Insights para recuperar os dados do Analytics.
 
 1. Para exibir estatísticas de desempenho do ativo graficamente durante um período de tempo, selecione o período na seção **[!UICONTROL Estatísticas de desempenho]**. Detalhes, incluindo cliques e impressões, são exibidos como linhas de tendência de um gráfico.
 
@@ -60,21 +64,21 @@ Você pode exibir as pontuações do Asset Insights na página de metadados.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-## Exibir estatísticas agregadas de ativos {#viewing-aggregate-statistics-for-assets}
+## Estatísticas de agregação de Visualizações para ativos {#viewing-aggregate-statistics-for-assets}
 
 Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!UICONTROL Exibição do Insights]**.
 
-1. Na interface do usuário Ativos, navegue até a pasta que contém os ativos para os quais deseja exibir insights.
-1. Toque/clique no ícone Layout na barra de ferramentas e escolha Exibição **[!UICONTROL de]** insights.
+1. Na interface do usuário Ativos, navegue até a pasta que contém os ativos para os quais você deseja visualização insights.
+1. Toque/clique no ícone Layout na barra de ferramentas e escolha **[!UICONTROL Visualização]** Insights.
 1. A página exibe as pontuações de uso dos ativos. Compare as classificações dos vários ativos e obtenha insights.
 
 ## Agendar tarefa em segundo plano {#scheduling-background-job}
 
-O Asset Insights busca os dados de uso de ativos dos conjuntos de relatórios do Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço Trabalho **[!UICONTROL de sincronização de relatório de desempenho de ativos do]** Adobe CQ DAM no console da Web.
+O Asset Insights busca dados de uso de ativos de conjuntos de relatórios da Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço Trabalho **[!UICONTROL de sincronização de relatório de desempenho de ativos do]** Adobe CQ DAM no console da Web.
 
 1. Toque no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
-1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** .
+1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Sync Job]** .
 
    ![chlimage_1-304](assets/chlimage_1-304.png)
 
-1. Especifique a frequência do agendador desejada e a hora de início do trabalho na expressão do agendador de propriedades. Salve as alterações.
+1. Especifique a frequência de scheduler desejada e a hora de start para o trabalho na expressão de scheduler de propriedade. Salve as alterações.
