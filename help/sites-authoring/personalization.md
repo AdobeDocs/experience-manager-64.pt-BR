@@ -1,8 +1,8 @@
 ---
 title: Personalização e direcionamento de conteúdo
 seo-title: Personalização e direcionamento de conteúdo
-description: Saiba como o AEM pode criar conteúdo personalizado
-seo-description: Saiba como o AEM pode criar conteúdo personalizado
+description: Saiba como AEM criar conteúdo personalizado
+seo-description: Saiba como AEM criar conteúdo personalizado
 uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
 translation-type: tm+mt
 source-git-commit: 80395c4695b326474f9ae0e73caa075a5782eaf6
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 84%
 
 ---
 
@@ -49,7 +52,7 @@ Você define experiências para uma atividade. É possível usar o [console Ativ
 
 Uma oferta é um conteúdo que aparece em uma localização em uma página para uma experiência. Use ofertas diferentes para experiências diferentes para maximizar a eficácia do conteúdo para os seus públicos.
 
-Por exemplo, a página Mulheres do site de amostra We.Retail pode usar ofertas como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Mulheres acima de 30 anos e para a experiência Mulheres com menos de 30 anos.
+Por exemplo, a página Mulheres do site de amostra We.Retail pode usar o oferta como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Mulheres acima de 30 anos e para a experiência Mulheres com menos de 30 anos.
 
 Use o [console Ofertas](/help/sites-authoring/offerlib.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
 
