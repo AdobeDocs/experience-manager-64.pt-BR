@@ -1,14 +1,17 @@
 ---
-title: Suporte XFA em formulários adaptativos baseados em XDP
-seo-title: Suporte XFA em formulários adaptativos baseados em XDP
-description: Lista eventos XFA, propriedades, scripts e validação suportados em formulários adaptáveis.
-seo-description: Lista eventos XFA, propriedades, scripts e validação suportados em formulários adaptáveis.
+title: Suporte XFA em formulários adaptáveis baseados em XDP
+seo-title: Suporte XFA em formulários adaptáveis baseados em XDP
+description: O Lista suportou eventos XFA, propriedades, scripts e validação em formulários adaptáveis.
+seo-description: O Lista suportou eventos XFA, propriedades, scripts e validação em formulários adaptáveis.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +28,7 @@ Formulários adaptáveis oferecem suporte para vários eventos XFA, propriedades
 
 Quando um formulário adaptável é criado com base em um arquivo XDP, as propriedades, os eventos e as validações são preenchidos automaticamente na interface de criação do formulário. No entanto, os autores de formulários podem substituir alguns desses elementos para criar uma experiência alternativa.
 
-Este artigo lista os eventos, propriedades e validações XFA suportados em formulários adaptáveis e explica como substituí-los em formulários adaptáveis.
+Este artigo lista eventos, propriedades e validações XFA suportados em formulários adaptáveis e explica como substituí-los em formulários adaptáveis.
 
 ## Elementos XFA suportados e seu mapeamento em formulários adaptáveis {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
@@ -36,7 +39,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>Campo ou contêiner XFA</strong></p> </td> 
+   <td><p><strong>Campo ou container XFA</strong></p> </td> 
    <td><p><strong>Componente de formulário adaptável correspondente</strong></p> </td> 
   </tr>
   <tr>
@@ -114,11 +117,11 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
   </tr>
   <tr>
    <td><p>presence </p> </td> 
-   <td><p>Mapeado para a propriedade visível em forma adaptável. É possível substituí-la usando a expressão Visibilidade.</p> </td> 
+   <td><p>Mapeado para a propriedade visível em forma adaptável. É possível substituí-lo usando a expressão de visibilidade.</p> </td> 
   </tr>
   <tr>
    <td><p>access </p> </td> 
-   <td><p>Mapeado para a propriedade enabled em forma adaptável. É possível substituí-la usando a expressão Acesso.</p> </td> 
+   <td><p>Mapeado para a propriedade enabled em forma adaptável. Você pode substituí-la usando a expressão Access.</p> </td> 
   </tr>
   <tr>
    <td><p>Acessibilidade: função </p> </td> 
@@ -149,8 +152,8 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeada para a propriedade value em Formulário adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>itens<em> (Caixa de listagem, Caixa de seleção)</em></p> </td> 
-   <td><p>Mapeada para a propriedade options em forma adaptável. É possível substituí-la usando a expressão Opções.</p> </td> 
+   <td><p>itens<em> (Caixa de Lista, Caixa de seleção)</em></p> </td> 
+   <td><p>Mapeada para a propriedade options em forma adaptável. É possível substituí-lo usando a expressão Opções.</p> </td> 
   </tr>
   <tr>
    <td><p>maxChar<em> (Campo de texto)</em></p> </td> 
@@ -169,7 +172,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade de dígitos de cliente potencial em forma adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Caixa de listagem)</em></p> </td> 
+   <td><p>multiSelect<em> (Caixa de Lista)</em></p> </td> 
    <td><p>Mapeado para a propriedade de seleção múltipla no formulário adaptável.</p> </td> 
   </tr>
  </tbody>
@@ -182,7 +185,7 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>Eventos de script XFA</strong></p> </td> 
+   <td><p><strong>eventos de script XFA</strong></p> </td> 
    <td><p><strong>Comportamento correspondente em formulários adaptáveis</strong></p> </td> 
   </tr>
   <tr>
