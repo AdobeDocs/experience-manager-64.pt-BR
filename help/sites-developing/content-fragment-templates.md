@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 translation-type: tm+mt
 source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
 
 >[!CAUTION]
 >
->Algumas funcionalidades do fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 >[!CAUTION]
 >
@@ -29,7 +32,7 @@ source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
 
 Os modelos são selecionados ao criar um fragmento de conteúdo. Eles fornecem ao novo fragmento a estrutura básica, os elementos e a variação. Os modelos usados para fragmentos de conteúdo estão sujeitos ao Gerenciador de configuração do Granite.
 
-Os modelos predefinidos são mantidos em:
+Os modelos prontos para uso são mantidos em:
 
 * `/libs/settings/dam/cfm/templates`
 
@@ -37,13 +40,11 @@ Você pode criar modelos específicos do site para fragmentos de conteúdo em:
 
 * `/apps/settings/dam/cfm/templates`
 
-   
-O local para sobreposição de modelos predefinidos ou para fornecer modelos específicos do cliente, em todo o aplicativo, que não devem ser estendidos/alterados no tempo de execução.
+   O local para sobrepor modelos predefinidos ou fornecer modelos específicos do cliente e de todo o aplicativo que não se destinam a ser estendidos/alterados no tempo de execução.
 
 * `/conf/global/settings/dam/cfm/templates`
 
-   
-O local para modelos específicos do cliente em toda a instância que precisam ser alterados em tempo de execução.
+   O local para modelos específicos do cliente em toda a instância que precisam ser alterados em tempo de execução.
 
 A ordem de precedência é (em ordem decrescente) `/conf`, `/apps`, `/libs`.
 
@@ -59,6 +60,7 @@ A ordem de precedência é (em ordem decrescente) `/conf`, `/apps`, `/libs`.
    >
    >
 1. Faça quaisquer alterações em `/apps`
+
 >
 
 
@@ -139,7 +141,7 @@ Mais detalhes sobre os nós e suas propriedades são:
   <tr> 
    <td><code>precreateElements</code></td> 
    <td><p><code>Boolean</code></p> <p>required</p> </td> 
-   <td><p><code>true</code>, se os subativos que representam os elementos (exceto o elemento mestre) do fragmento de conteúdo devem ser criados quando o fragmento de conteúdo é criado; <em>falso</em> se devem ser criados "imediatamente".</p> <p><strong>Observação</strong>: atualmente, esse parâmetro deve ser definido como <code>true</code>.</p> </td> 
+   <td><p><code>true</code>, se os subativos que representam os elementos (exceto o elemento principal) do fragmento de conteúdo devem ser criados quando o fragmento de conteúdo é criado; <em>falso</em> se deveriam ser criados "imediatamente".</p> <p><strong>Observação</strong>: atualmente, esse parâmetro deve ser definido como <code>true</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
@@ -161,7 +163,7 @@ Mais detalhes sobre os nós e suas propriedades são:
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>required</p> </td> 
-   <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. É obrigatório e precisa conter pelo menos um nó filho para o elemento <strong>Principal</strong> , mas pode conter [1.n] nós secundários.</p> <p>Quando o modelo é usado, a subramificação de elementos é copiada para a subramificação do modelo do fragmento.</p> <p>O primeiro elemento (conforme visualizado no CRXDE Lite) é automaticamente considerado o elemento <i>principal</i> ; O nome do nó é irrelevante e o nó em si não tem um significado especial, além do fato de ser representado pelo ativo principal; os outros elementos são tratados como subativos.</p> </td> 
+   <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. É obrigatório e precisa conter pelo menos um nó filho para o elemento <strong>Principal</strong> , mas pode conter [1.n] nós secundários.</p> <p>Quando o modelo é usado, a subramificação de elementos é copiada para a subramificação do modelo do fragmento.</p> <p>O primeiro elemento (conforme exibido em CRXDE Lite) é automaticamente considerado o elemento <i>principal</i> ; O nome do nó é irrelevante e o nó em si não tem um significado especial, além do fato de ser representado pelo ativo principal; os outros elementos são tratados como subativos.</p> </td> 
   </tr> 
  </tbody> 
 </table>
