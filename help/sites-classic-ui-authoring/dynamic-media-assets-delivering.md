@@ -1,6 +1,6 @@
 ---
-title: Entrega de ativos de mídia dinâmica
-seo-title: Entrega de ativos de mídia dinâmica
+title: Entrega de ativos do Dynamic Media
+seo-title: Entrega de ativos do Dynamic Media
 description: Com a Mídia dinâmica, você tem várias opções para fornecer ativos de mídia dinâmica (vídeo e imagens) ao seu site.
 seo-description: Com a Mídia dinâmica, você tem várias opções para fornecer ativos de mídia dinâmica (vídeo e imagens) ao seu site.
 uuid: 88a3ceec-034d-43a6-8623-3ef8b926a338
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 84%
 
 ---
 
 
-# Entrega de ativos de mídia dinâmica{#delivering-dynamic-media-assets}
+# Entrega de ativos do Dynamic Media{#delivering-dynamic-media-assets}
 
 A forma como você pode fornecer seus ativos de Mídia dinâmica - vídeo e imagens - depende de como seu site é implementado.
 
@@ -26,5 +29,5 @@ Com a Mídia dinâmica, você tem várias opções:
 
 Para obter mais informações, consulte os seguintes tópicos:
 
-* [Adição de ativos de Mídia dinâmica a páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+* [Adição de ativos do Dynamic Media a páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
 
