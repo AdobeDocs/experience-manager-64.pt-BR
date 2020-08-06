@@ -31,7 +31,7 @@ O serviço Convert PDF converte documentos PDF em PostScript e em vários format
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o serviço Converter PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+   >Para obter mais informações sobre o serviço Converter PDF, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Converter Documentos PDF em PostScript {#converting-pdf-documents-to-postscript}
 
@@ -39,7 +39,7 @@ Este tópico descreve como você pode usar a Converter API do serviço PDF (Java
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Converter PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Converter PDF, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -60,7 +60,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Antes de executar programaticamente uma operação de serviço Converter PDF, é necessário criar um cliente de serviço Converter PDF. Se você estiver usando a API Java, crie um `ConvertPdfServiceClient` objeto. Se você estiver usando a API de serviço da Web, crie um `ConvertPDFServiceService` objeto.
 
-Esta seção usa a funcionalidade de serviço da Web introduzida no AEM Forms. Para acessar a nova funcionalidade, é necessário construir o objeto proxy usando o `lc_version` atributo. (Consulte &quot;Acessar novas funcionalidades usando serviços da Web&quot; em [Invocar formulários AEM usando serviços](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)da Web.)
+Esta seção usa a funcionalidade de serviço da Web introduzida no AEM Forms. Para acessar a nova funcionalidade, é necessário construir o objeto proxy usando o `lc_version` atributo. (Consulte &quot;Acessar novas funcionalidades usando serviços da Web&quot; em [Invocar AEM Forms usando serviços](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)da Web.)
 
 **Referência ao documento PDF a ser convertido em um arquivo PostScript**
 
@@ -76,7 +76,7 @@ Da mesma forma, se você selecionar a `ExpandToFit` opção (que expande a saíd
 
 >[!NOTE]
 >
->Para obter informações sobre os valores de tempo de execução que podem ser definidos, consulte a referência de `ToPSOptionsSpec` classe em Referência [de API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+>Para obter informações sobre os valores de tempo de execução que podem ser definidos, consulte a referência de `ToPSOptionsSpec` classe na Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Converter o documento PDF em um arquivo PostScript**
 
@@ -92,7 +92,7 @@ Depois de converter o documento PDF em PostScript, é possível salvar a saída 
 
 [Converter um documento PDF em PS usando a API de serviço da Web](converting-pdf-postscript-image-files.md#convert-a-pdf-document-to-ps-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -119,7 +119,7 @@ Converta um documento PDF em PostScript usando a API Converter serviço PDF (Jav
 1. Defina as opções de tempo de execução de conversão.
 
    * Crie um `ToPSOptionsSpec` objeto chamando seu construtor.
-   * Defina as opções de tempo de execução chamando um método apropriado que pertence ao `ToPSOptionsSpec` objeto. Por exemplo, para definir o nível PostScript que é criado, chame o método do `ToPSOptionsSpec` objeto `setPsLevel` e transmita um valor de `PSLevel` lista discriminada que especifique o nível PostScript. Para obter informações sobre todos os valores de tempo de execução que podem ser definidos, consulte a referência de `ToPSOptionsSpec` classe em Referência [de API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Defina as opções de tempo de execução chamando um método apropriado que pertence ao `ToPSOptionsSpec` objeto. Por exemplo, para definir o nível PostScript que é criado, chame o método do `ToPSOptionsSpec` objeto `setPsLevel` e transmita um valor de `PSLevel` lista discriminada que especifique o nível PostScript. Para obter informações sobre todos os valores de tempo de execução que você pode definir, consulte a referência de `ToPSOptionsSpec` classe na Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 1. Converta o documento PDF em um arquivo PostScript.
 
@@ -141,7 +141,7 @@ Converta um documento PDF em PostScript usando a API Converter serviço PDF (Jav
 
 [Start rápido (modo SOAP): Converter um documento PDF em PostScript usando a API Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -203,9 +203,9 @@ Converta um documento PDF em PostScript usando a API Converter serviço PDF (ser
 
 [Resumo das etapas](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Converter Documentos PDF em formatos de imagem {#converting-pdf-documents-to-image-formats}
 
@@ -215,7 +215,7 @@ Ao converter um documento PDF em uma imagem, o serviço Converter PDF cria uma i
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Converter PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Converter PDF, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -242,7 +242,7 @@ Antes de executar programaticamente uma operação de serviço Converter PDF, é
 
 **Definir opções de tempo de execução**
 
-É necessário definir opções de tempo de execução, como o formato da imagem e os valores de resolução. Para obter informações sobre os valores de tempo de execução, consulte a referência da `ToImageOptionsSpec` classe em Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+É necessário definir opções de tempo de execução, como o formato da imagem e os valores de resolução. Para obter informações sobre os valores de tempo de execução, consulte a referência de `ToImageOptionsSpec` classe na Referência [de API da](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Converter o PDF em uma imagem**
 
@@ -256,7 +256,7 @@ O formato do arquivo de imagem depende da opção de tempo de `ImageConvertForma
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -364,6 +364,6 @@ Converta um documento PDF em um formato de imagem usando a API Converter serviç
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
