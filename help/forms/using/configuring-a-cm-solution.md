@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 2%
 
 ---
 
@@ -34,9 +37,9 @@ Use as seguintes etapas para definir um URL de instância do autor para a restau
 
 1. Clique em **[!UICONTROL Salvar]**.
 
-## Definindo o URL da instância de publicação para AtivationManagerImpl (gerenciador de ativação da instância pública) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## Definindo o URL da instância de publicação para AtivationManagerImpl (gerenciador de ativação de instância pública) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Siga estas etapas para definir o URL da instância de publicação para o gerenciador de ativação da instância pública:
+Siga estas etapas para definir o URL da instância de publicação para o gerenciador de ativações de instância pública:
 
 1. Vá para *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Faça logon com as credenciais de usuário do Console de gerenciamento OSGi. As credenciais padrão são admin/admin.
 1. Localize e clique no ícone **[!UICONTROL Editar]** ao lado da configuração **[!UICONTROL com.adobe.livecycle.content.ativation.impl.AtivationManagerImpl.name]** .
