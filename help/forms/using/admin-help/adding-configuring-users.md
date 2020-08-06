@@ -40,7 +40,7 @@ Ao criar usuários, você pode adicioná-los a grupos e atribuir funções a ele
 
    >[!NOTE]
    >
-   >Se você encontrar algum problema de logon com o usuário, consulte [AEM Forms on JEE user failed to login on AEM Forms on OSGi side](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Se você encontrar algum problema de login com o usuário, consulte Falha do usuário do [AEM Forms no JEE ao fazer login no AEM Forms no lado](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html)do OSGi.
 
 ## Configurações de usuário {#user-settings}
 
@@ -72,7 +72,7 @@ Evite usar caracteres sublinhados (_) em nomes canônicos, por exemplo, `sample_
 
 **Local:** Local ISO do usuário
 
-**Chave do Calendário Comercial:** Permite mapear um calendário de negócios para um usuário, com base no valor dessa configuração. Os calendários de negócios definem dias úteis e não úteis. Os formulários do AEM podem usar calendários de negócios ao calcular datas e horários futuros para eventos como lembretes, prazos e escalonamentos. A forma como você atribui chaves de calendário de negócios aos usuários depende se você está usando um domínio corporativo, local ou híbrido. (Consulte [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**Chave do Calendário Comercial:** Permite mapear um calendário de negócios para um usuário, com base no valor dessa configuração. Os calendários de negócios definem dias úteis e não úteis. AEM formulários podem usar calendários de negócios ao calcular datas e horários futuros para eventos como lembretes, prazos e escalonamentos. A forma como você atribui chaves de calendário de negócios aos usuários depende se você está usando um domínio corporativo, local ou híbrido. (Consulte [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 Se você estiver usando um domínio local ou híbrido, as informações sobre os usuários serão armazenadas somente no banco de dados Gerenciamento de usuários. Para esses usuários, defina a Chave do calendário comercial como uma string. Em seguida, mapeie a chave do calendário comercial (a sequência) para um calendário comercial no fluxo de trabalho dos formulários.
 
@@ -88,7 +88,7 @@ Em domínios corporativos, use um atributo não DN como a ID do usuário, pois o
 
 Certifique-se de que a ID de usuário seja exclusiva. Não use um que tenha sido atribuído a um usuário excluído.
 
-Os formulários do AEM não podem diferenciar entre contas de usuário que têm IDs de usuário e senhas idênticas, mas pertencem a domínios diferentes. Para evitar esse problema, não crie contas que tenham a mesma ID de usuário em vários domínios.
+AEM formulários não podem diferenciar entre contas de usuário que têm IDs de usuário e senhas idênticas, mas pertencem a domínios diferentes. Para evitar esse problema, não crie contas que tenham a mesma ID de usuário em vários domínios.
 
 Ao usar o SQL Server como banco de dados, não é possível criar uma ID de usuário que exceda 255 caracteres.
 
@@ -159,16 +159,16 @@ Evite criar nomes de usuários que comecem com um sinal de número (#). A execu�
 
 >[!NOTE]
 >
->O AEM Forms no JEE também permite que os usuários do complemento de formulários AEM em execução em um OSGi sejam reconhecidos como usuários do AEM. Isso é necessário para cenários em que o logon único entre os formulários AEM no JEE e o complemento de formulários AEM em execução em um OSGi é necessário (por exemplo, área de trabalho HTML). A operação de exclusão acima mencionada remove um usuário somente do AEM Forms no JEE. O usuário não é excluído do complemento AEM Forms em execução no ambiente OSGi. No entanto, qualquer tentativa de logon realizada após a exclusão do usuário (uma tentativa de logon no servidor JEE complemento AEM Forms ou complemento AEM Forms no ambiente OSGi) é negada.
+>O AEM Forms em JEE também permite que os usuários do complemento de formulários AEM em execução em um OSGi sejam reconhecidos como usuários AEM. Isso é necessário para cenários em que o logon único entre o AEM Forms no JEE e o complemento de formulários AEM em execução em um OSGi é necessário (por exemplo, espaço de trabalho HTML). A operação de exclusão acima mencionada remove um usuário somente da AEM Forms no JEE. O usuário não é excluído do complemento AEM Forms em execução no ambiente OSGi. No entanto, qualquer tentativa de logon feita após a exclusão do usuário (uma tentativa de logon no servidor JEE do complemento AEM Forms ou no complemento AEM Forms no ambiente OSGi) é negada.
 
 ## Criar manipulador de erros de logon personalizado {#create-custom-login-error-handler}
 
-Se um usuário sem os formulários AEM e as permissões CQ necessárias, tentar fazer logon nos seguintes aplicativos incorporados ao CQ, o usuário será redirecionado para a página padrão do CQ 404 que contém o rastreamento do erro:
+Se um usuário sem os formulários AEM obrigatórios e as permissões de CQ, tentar fazer logon nos seguintes aplicativos incorporados ao CQ, o usuário será redirecionado para a página padrão do CQ 404 que contém o rastreamento de erro:
 
 * Solução de gerenciamento de correspondência
 * Espaço de trabalho de formulários AEM
 
-   ***observação **: O Flex Workspace está obsoleto para a versão de formulários do AEM.*
+   ***observação **: O Flex Workspace está obsoleto para AEM versão de formulários.*
 
 * gerenciador de formulários
 * Relatório de processo
