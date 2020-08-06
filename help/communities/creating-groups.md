@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +30,7 @@ Um ou mais modelos de grupo são selecionados para a função de grupos quando a
 
 ## Creating a New Group {#creating-a-new-group}
 
-A capacidade de criar um novo grupo da comunidade depende da existência de um site da comunidade que inclui a função de grupos, como um criado do ` [Reference Site Template](sites.md)`.
+A capacidade de criar um novo grupo da comunidade depende da existência de um site da comunidade que inclui a função de grupos, como um criado a partir do ` [Reference Site Template](sites.md)`.
 
 Os exemplos a seguir usam o site da comunidade criado a partir do `Reference Site Template` como descrito no tutorial [Introdução ao AEM Communities](getting-started.md) .
 
@@ -37,7 +40,7 @@ Esta é a página que é carregada na publicação quando o item de menu **[!UIC
 
 Quando você seleciona o ícone **[!UICONTROL Novo grupo]** , uma caixa de diálogo de edição é aberta.
 
-Na guia **[!UICONTROL Configurações]** , forneça os recursos básicos do grupo:
+Na guia **[!UICONTROL Configurações]** , você fornece os recursos básicos do grupo:
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -45,13 +48,15 @@ Na guia **[!UICONTROL Configurações]** , forneça os recursos básicos do grup
 
 * **[!UICONTROL Descrição]** Uma descrição do grupo a ser exibido no site da comunidade.
 
-* **[!UICONTROL Convidar]** Uma lista de membros para convidar para entrar no grupo. A pesquisa antecipada fornecerá sugestões de membros da comunidade a serem convidados.
+* **[!UICONTROL Convidar]** uma lista de membros para convidar para entrar no grupo. A pesquisa antecipada fornecerá sugestões de membros da comunidade a serem convidados.
 
 * **[!UICONTROL Nome]** do URL do grupoO nome da página do grupo que se torna parte do URL.
 
-* **[!UICONTROL Abrir grupo]** A seleção `Open Group` indica que qualquer visitante anônimo do site pode exibir o conteúdo e cancelará a seleção `Member Only Group`.
+* **[!UICONTROL Abrir grupo]** selecionando 
+`Open Group` indica que qualquer visitante anônimo do site pode visualização no conteúdo e desmarcará a seleção `Member Only Group`.
 
-* **[!UICONTROL Grupo]** somente membro A seleção `Member Only Group` indica que somente os membros do grupo podem exibir o conteúdo e cancelará a seleção `Open Group`.
+* **[!UICONTROL Grupo]** Selecionando Somente Membro 
+`Member Only Group` indica que somente os membros do grupo podem visualização no conteúdo e serão desmarcados `Open Group`.
 
 Na guia **[!UICONTROL Modelo]** está a capacidade de selecionar na lista de modelos de grupos da comunidade que foram especificados quando a função de grupos foi incluída na estrutura do site da comunidade ou em um modelo de site da comunidade.
 
@@ -67,7 +72,7 @@ Por exemplo, a página Grupos com uma nova subcomunidade chamada &quot;Grupo de 
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-A seleção do `Focus Group` link abrirá a página Grupo de foco no navegador, que tem uma aparência inicial com base no modelo escolhido, e inclui um submenu abaixo do menu principal do site da comunidade:
+A seleção do link `Focus Group` abrirá a página Grupo de foco no navegador, que tem uma aparência inicial com base no modelo escolhido, e inclui um submenu abaixo do menu principal do site da comunidade:
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
