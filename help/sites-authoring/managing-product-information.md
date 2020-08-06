@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
 source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 67%
 
 ---
 
 
 # Integração com o Creative Project e o PIM{#creative-project-and-pim-integration}
 
-Se você for um profissional de marketing ou criativo, poderá usar as ferramentas do Creative Project no Adobe Experience Manager (AEM) para gerenciar a fotografia de produtos relacionados ao comércio eletrônico e os processos criativos associados em sua organização.
+Se você for um profissional de marketing ou criativo, poderá usar as ferramentas da Creative Project na Adobe Experience Manager (AEM) para gerenciar a fotografia de produtos relacionados ao comércio eletrônico e processos criativos associados em sua organização.
 
 Em particular, é possível usar o Projeto de criação para simplificar as seguintes tarefas em seu fluxo de trabalho de sessão fotográfica:
 
@@ -73,7 +76,7 @@ Um Projeto de sessão fotográfica do produto inclui os seguintes fluxos de trab
 
 Use o fluxo de trabalho de Sessão fotográfica do produto (integração com o Commerce) para mapear ativos de imagem com os produtos do AEM. Esse fluxo de trabalho utiliza a integração do Commerce para vincular as imagens aprovadas aos dados existentes do produto no local */etc/commerce*.
 
-O fluxo de trabalho Foto do produto (Integração de comércio) inclui as seguintes tarefas:
+The Product Photo Shoot (Commerce Integration) workflow includes the following tasks:
 
 * Criar lista de capturas
 * Fazer upload da sessão fotográfica
@@ -109,7 +112,7 @@ Use o seguinte para monitorar o andamento de um projeto:
 
 * **Lista de tarefas**
 
-O cartão de tarefa descreve o progresso geral do projeto. Ele é exibido na página Detalhes do projeto somente se o projeto tiver tarefas relacionadas. O Cartão de tarefas exibe o status de conclusão atual do projeto com base no número de tarefas concluídas. Não inclui tarefas futuras.
+O cartão de Tarefa descreve o progresso geral do projeto. Ele é exibido na página Detalhes do projeto somente se o projeto tiver tarefas relacionadas. O Cartão de tarefas exibe o status de conclusão atual do projeto com base no número de tarefas concluídas. Não inclui tarefas futuras.
 
 O Cartão de tarefas fornece os seguintes detalhes:
 
@@ -153,6 +156,7 @@ Para configurar o fluxo de trabalho de **Sessão fotográfica do produto**:
    * Retocar sessão fotográfica do produto
    * Análise da sessão fotográfica
    * Mover para produção
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 Essa seção descreve como integrar o gerenciamento de informações do produto ao seu projeto de criação.
@@ -219,6 +223,7 @@ A tarefa **Criar lista de capturas** permite ao proprietário do projeto selecio
    * Os ativos que correspondem à hierarquia do produto são criados em uma pasta com o mesmo nome que o título do fluxo de trabalho.
    * Os metadados dos ativos poderão ser editados usando o console Assets, mesmo antes de o fotógrafo fornecer as imagens.
    * Uma pasta Sessão fotográfica é criada e armazena as imagens fornecidas pelo fotógrafo. A pasta da Sessão fotográfica contém subpastas para cada entrada de produto na Lista de capturas.
+
    Para o fluxo de trabalho de Sessão fotográfica do produto (sem integração com o Commerce), a primeira tarefa é Fazer upload da lista de capturas. Toque/clique em **Fazer upload da lista de capturas** para fazer upload de um arquivo **shotlist.csv.** O arquivo CSV deve conter a ID do produto. Os outros campos são opcionais. Use-os para mapear ativos a produtos.
 
 ### Tarefa Fazer upload da lista de capturas {#upload-shot-list-task}
@@ -245,7 +250,7 @@ Um produto pode pertencer a uma categoria específica. A categoria do produto po
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
 1. Tap/click the **Upload Shot List** button to upload the CSV file with filename shotlist.csv. O fluxo de trabalho reconhece este arquivo como uma fonte de extração de dados do produto para a tarefa seguinte.
-1. Faça upload de um arquivo CSV contendo as informações sobre o produto no formato apropriado. O link **Exibir ativos carregados **aparece sob o cartão após o upload do arquivo CSV.
+1. Faça upload de um arquivo CSV contendo as informações sobre o produto no formato apropriado. O link **Ativos carregados da Visualização **aparece sob o cartão após o upload do arquivo CSV.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -316,7 +321,7 @@ Nesta tarefa, você analisa as imagens da sessão fotográfica carregadas por um
 
 Toque/clique no próximo nível para exibir os produtos de acordo com a hierarquia de dados do produto.
 
-O Projeto de criação associa os ativos aprovados ao produto referenciado. Os metadados do ativo são atualizados com a referência do produto e as informações básicas na guia **Dados do produto **nas propriedades do ativo, elas aparecem na seção Metadados do ativo AEM.
+O Projeto de criação associa os ativos aprovados ao produto referenciado. Os metadados do ativo são atualizados com a referência do produto e as informações básicas na guia **Dados do produto **nas propriedades do ativo que aparecem na seção Metadados do ativo AEM.
 
 >[!NOTE]
 No Fluxo de trabalho de Sessão fotográfica do produto (sem integração com o Commerce), as imagens aprovadas não têm nenhuma associação com produtos.
@@ -359,7 +364,7 @@ Toque/clique no link exibido para navegar para a respectiva página de detalhes 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
 1. Open the **Role Based Task** step.
-1. No guia **Tarefas**, forneça um nome para a tarefa que será exibido na lista **Tarefa**. Você também pode atribuir a tarefa a uma função, definir a prioridade padrão, fornecer uma descrição e especificar um horário em que a tarefa está atrasada.
+1. No guia **Tarefas**, forneça um nome para a tarefa que será exibido na lista **Tarefa**. Você também pode atribuir a tarefa a uma função, definir a prioridade padrão, fornecer uma descrição e especificar um horário em que a tarefa deve ocorrer.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
