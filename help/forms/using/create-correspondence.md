@@ -43,6 +43,7 @@ Selecione a letra para pré-visualização usando as seguintes etapas:
 
    * usuários de formulários (para pré-visualização na instância do autor)
    * cm-agent-users (para execução na instância de publicação)
+
    Se você não tiver as permissões necessárias, solicite ao administrador o acesso apropriado. Para obter mais informações sobre como criar e adicionar usuários a grupos, consulte [Adicionar usuários ou grupos a um grupo](/help/sites-administering/security.md). Se você tentar renderizar uma correspondência sem ter as permissões apropriadas, a página de erro 404 será exibida.
 
 1. Se você selecionou **Pré-visualização** > **Personalizado**, uma caixa de diálogo será aberta. Na caixa de diálogo, selecione um arquivo de dados, correspondente ao dicionário de dados, para pré-visualização a carta e, em seguida, selecione **Pré-visualização**. Um arquivo de dados é criado com base em um dicionário de dados para uma carta específica. Para obter mais informações sobre o arquivo de dados, consulte Dicionário [de](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)dados.
@@ -51,13 +52,13 @@ Selecione a letra para pré-visualização usando as seguintes etapas:
 
 1. A letra pré-visualização HTML (pré-visualização de formulários móveis) é aberta com a guia Dados em foco por padrão.
 
-   Para obter mais informações sobre formulários móveis e os recursos compatíveis, consulte Diferenciação de [recursos entre formulários](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)móveis e formulários PDF.
+   Para obter mais informações sobre formulários móveis e os recursos que eles suportam, consulte Diferenciação de [recursos entre o Mobile Forms e os PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
    Há três guias: dados, conteúdo e anexos. Se não houver elementos de dados (variáveis de espaço reservado e campos de layout), a letra será aberta diretamente com a guia Conteúdo exibida. A guia Anexos está disponível somente quando os anexos estão presentes ou o acesso à biblioteca está ativado.
 
    >[!NOTE]
 
-   >Para obter mais informações sobre como alternar entre o modo de representação HTML ou PDF da pré-visualização de letra, consulte [Alterar modo de representação de letra](#changerenditionmode). Para obter mais informações sobre o suporte a PDF no Gerenciamento de correspondência e no AEM, consulte [Descontinuação de plug-ins do navegador NPAPI e seu impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e formulários [PDF para formulários](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)HTML5.
+   >Para obter mais informações sobre como alternar entre o modo de representação HTML ou PDF da pré-visualização de letra, consulte [Alterar modo de representação de letra](#changerenditionmode). Para obter mais informações sobre suporte a PDF no Gerenciamento de correspondência e AEM, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e [PDF forms para o Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)HTML5.
 
 ### Enter data {#enterdata}
 
@@ -77,7 +78,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    ![guia Conteúdo - realçar módulo no conteúdo](assets/3_content.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, é possível tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
 
    Por exemplo, a linha &quot;Nós revisamos... &quot; é selecionado no gráfico abaixo e o módulo de conteúdo relevante é selecionado na guia Conteúdo.
 
@@ -128,6 +129,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
    * Símbolos monetários como €, ¥ e £
    * Símbolos matemáticos como ∑, √,  e ^
    * Símbolos de pontuação como ‟ e&quot;
+
    ![specialcharacter-1](assets/specialcharacters-1.png)
 
    O Gerenciamento de correspondência tem suporte integrado para 210 caracteres especiais. O administrador pode [adicionar suporte para caracteres especiais mais/personalizados por personalização](/help/forms/using/custom-special-characters.md).
@@ -158,6 +160,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
    * Campos obrigatórios.
    * Campos de layout se forem obrigatórios e vinculados ao usuário.
    * Somente instâncias de variáveis exclusivas. Se um módulo, área de público alvo ou modelo de carta contiver duas ou mais instâncias da mesma variável, a contagem será exibida como 1 (uma). No entanto, para cada uma das instâncias, a contagem é exibida como 1.
+
    A contagem de variáveis não preenchidas não inclui módulos desmarcados. Se um módulo estiver incluído em um modelo de carta, mas não estiver na letra, a contagem de variáveis não preenchidas neste módulo não será exibida.
 
    Para a área do público alvo, módulo e variável, a contagem é exibida à direita de cada objeto no modelo de letra. Entretanto, para o modelo completo, a contagem é exibida na barra de status Criar correspondência.
@@ -168,6 +171,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
    * **Condição** Exibe a soma das variáveis de condição não preenchidas exclusivas contidas na condição e as variáveis contidas nos módulos resultantes.
    * **Lista** Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à lista.
    * **Área** do Público alvo Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à área do público alvo.
+
    Observe o seguinte em relação às variáveis com valores padrão:
 
    * O padrão de um campo de variável Booliana é *false*. No entanto, a variável é considerada como não preenchida. Isso implica que a contagem de variáveis inclui todos os campos de variável Booliana com valor *false*.
@@ -255,7 +259,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    >[!NOTE]
    >
-   >Se você estiver usando o Mozilla Firefox e o tipo de execução HTML, para pré-visualização a letra como PDF nivelado, certifique-se de usar o plug-in nativo do navegador e não o plug-in do Acrobat. Para selecionar o plug-in nativo do navegador, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Pré-visualização no Firefox.
+   >Se você estiver usando o Mozilla Firefox e o tipo de execução HTML, para pré-visualização a letra como PDF nivelado, certifique-se de usar o plug-in nativo do navegador e não o plug-in Acrobat. Para selecionar o plug-in nativo do navegador, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Pré-visualização no Firefox.
 
 1. Se a pré-visualização em PDF nivelada for satisfatória, toque em **Enviar** para enviar a carta. Ou para fazer alterações na carta, toque em **Sair da Pré-visualização** para voltar à pré-visualização Criar interface de usuário de correspondência da carta para fazer alterações na carta. Quando você toca em Enviar, se a configuração Gerenciar instância da carta estiver ativada na instância Publicar, a instância da carta de envio será gerada.
 
@@ -265,7 +269,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    Depois de fazer as alterações necessárias, você pode enviar a carta da pré-visualização HTML5 ou tocar em Pré-visualização novamente para revisar a saída de PDF nivelado.
 
-   Para obter informações sobre diferenças entre formulários HTML5 e PDF, consulte Diferenciação de [recursos entre formulários HTML5 e formulários](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)PDF.
+   Para obter informações sobre diferenças entre formulários e PDF forms HTML5, consulte Diferenciação de [recursos entre formulários HTML5 e PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Salvar rascunhos e enviar instâncias de carta {#savingdrafts}
 
@@ -279,7 +283,7 @@ Há dois tipos de instâncias de carta que podem ser salvas: Instância de rascu
 
 Essas instâncias só podem ser salvas quando a carta estiver sendo visualizada na instância de publicação. Por padrão, salvar em instâncias é desativado. Para ativar a gravação de instâncias de carta, execute as seguintes etapas.
 
-1. No AEM, abra a Configuração do console da Web do Adobe Experience Manager para seu servidor usando o seguinte URL: https://&lt;servidor>:&lt;porta>/&lt;caminho de contexto>/system/console/configMgr
+1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: https://&lt;servidor>:&lt;porta>/&lt;caminho de contexto>/system/console/configMgr
 1. Localize Configurações **[!UICONTROL de gerenciamento de]** correspondência e clique nela.
 1. Marque **[!UICONTROL Gerenciar instâncias de carta na configuração de publicação]** e clique em **[!UICONTROL Salvar]**.
 
@@ -291,25 +295,25 @@ As instâncias de carta são salvas na instância de publicação e são replica
 
 ### Salvar remoto {#remote-save}
 
-Essa opção existe para pessoas que têm preocupações sobre como salvar dados do usuário em instâncias de publicação, que em geral estão fora do firewall corporativo. Quando o salvamento remoto é ativado, as instâncias de carta não são salvas na instância de publicação, mas são salvas remotamente no autor do processamento especificado pelas configurações do SDK do LiveCycle Client.
+Essa opção existe para pessoas que têm preocupações sobre como salvar dados do usuário em instâncias de publicação, que em geral estão fora do firewall corporativo. Quando o salvamento remoto é ativado, as instâncias de carta não são salvas na instância de publicação, mas são salvas remotamente no autor do processamento especificado pelas configurações do SDK do cliente do LiveCycle.
 
 #### Ativar salvamento remoto {#enable-remote-save}
 
-1. No AEM, abra a Configuração do console da Web do Adobe Experience Manager para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. Procure Configurações **[!UICONTROL de gerenciamento de]** correspondência e clique nele.
 1. Localize a configuração de Salvar **** Remoto, marque-a e clique em **[!UICONTROL Salvar]**.
 
 #### Especificar configurações do autor de processamento {#specify-processing-author-settings}
 
-1. No AEM, abra a Configuração do console da Web do Adobe Experience Manager para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
-   ![Configuração do console da Web do Adobe Experience Manager](assets/2configmanager.png)
+   ![Configuração do Adobe Experience Manager Web Console](assets/2configmanager.png)
 
-1. Nesta página, localize a Configuração do SDK do Adobe LiveCycle Client e expanda-a clicando nela.
+1. Nesta página, localize a Configuração do SDK do cliente do LiveCycle Adobe e expanda-a clicando nela.
 
 1. No URL do Servidor de processamento, digite o nome do servidor do LiveCycle, forneça as informações de logon e clique em **Salvar**.
 
-   ![Digite o nome e as informações de logon do servidor do LiveCycle](assets/3configmanager.png)
+   ![Digite o nome e as informações de login do servidor do LiveCycle](assets/3configmanager.png)
 
 1. Se necessário, defina o nome de usuário e a senha com os quais você deseja acessar o servidor.
 
@@ -322,7 +326,7 @@ Essa opção existe para pessoas que têm preocupações sobre como salvar dados
 
 ## Modos de representação da pré-visualização de letras: pré-visualização de formulários móveis e pré-visualização de PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-O Gerenciamento de correspondência de formulários AEM exibe uma letra como HTML na interface Criar correspondência. No entanto, o Gerenciamento de correspondência ainda oferece suporte para reverter para a pré-visualização PDF em vez da pré-visualização HTML. Para obter mais informações sobre como alternar entre os modos de pré-visualização HTML e PDF, consulte [Alterar modo de representação da letra](#changerenditionmode).
+O AEM Forms Correspondence Management exibe uma letra como HTML na interface Criar correspondência. No entanto, o Gerenciamento de correspondência ainda oferece suporte para reverter para a pré-visualização PDF em vez da pré-visualização HTML. Para obter mais informações sobre como alternar entre os modos de pré-visualização HTML e PDF, consulte [Alterar modo de representação da letra](#changerenditionmode).
 
 Veja a seguir os benefícios e a funcionalidade disponíveis na pré-visualização de HTML e PDF.
 
@@ -338,7 +342,7 @@ Veja a seguir os benefícios e a funcionalidade disponíveis na pré-visualizaç
 * **Quebra** de página: Na pré-visualização PDF, é possível visualização exatamente como as quebras de página na letra afetam sua saída.
 * **pré-visualização** final: Na pré-visualização do PDF, é possível visualização a formatação exata e a aparência da letra, à medida que ela aparecerá em sua saída.
 
-Para obter informações sobre suporte a scripts em formulários PDF, consulte Suporte [a](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)scripts.
+Para obter informações sobre o suporte a scripts no PDF forms, consulte Suporte [a](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)scripts.
 
 Para obter mais informações sobre o suporte a scripts em formulários HTML5, consulte Suporte a [scripts para formulários](/help/forms/using/scripting-support.md)HTML5.
 
