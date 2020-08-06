@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -20,19 +23,19 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Ao criar um formulário adaptável, é possível especificar um layout da barra de ferramentas para o formulário. O layout da barra de ferramentas define os comandos e o layout da barra de ferramentas no formulário.
 
-O layout da barra de ferramentas usa muito o processamento no cliente, orientado por códigos complexos de JavaScript e CSS. Organizar e otimizar a entrega desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, o AEM fornece Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam no AEM.](/help/sites-developing/clientlibs.md)
+O layout da barra de ferramentas usa muito o processamento no cliente, orientado por códigos complexos de JavaScript e CSS. Organizar e otimizar a entrega desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, o AEM fornece Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam em AEM.](/help/sites-developing/clientlibs.md)
 
-![](assets/default_toolbar_layout.png) Layout de amostra da barra de ferramentas **** Figura: Layout de *amostra da barra de ferramentas*
+![Layout de amostra da barra de ferramentas](assets/default_toolbar_layout.png)**Figura:** *Layout de amostra da barra de ferramentas*
 
 Os formulários adaptativos fornecem um conjunto de layouts predefinidos:
 
-![](assets/toolbar1.png) Layouts da barra de ferramentas disponíveis prontamente **** Figura: Layouts da *barra de ferramentas disponíveis prontos para uso*
+![Layouts da barra de ferramentas disponíveis prontamente ](assets/toolbar1.png)**Figura:** *Layouts da barra de ferramentas disponíveis prontamente*
 
 Além disso, é possível criar um layout personalizado da barra de ferramentas.
 
 O procedimento a seguir detalha as etapas para criar uma barra de ferramentas personalizada que exibe três ações na barra de ferramentas e as outras ações em uma lista suspensa na barra de ferramentas.
 
-O pacote de conteúdo anexado contém todo o código descrito abaixo. Após instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` para exibir a demonstração de layout personalizada da barra de ferramentas.
+O pacote de conteúdo anexado contém todo o código descrito abaixo. Depois de instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` a visualização da demonstração de layout personalizada da barra de ferramentas.
 
 CustomToolbarLayoutDemo.zip
 
@@ -68,9 +71,9 @@ CustomToolbarLayoutDemo.zip
 
    O novo layout personalizado da barra de ferramentas é exibido na configuração da caixa de diálogo Barra de ferramentas **adaptável** .
 
-   ![Lista de layouts disponíveis da barra de ferramentas](assets/toolbar4.png)
+   ![Lista dos layouts disponíveis da barra de ferramentas](assets/toolbar4.png)
 
-   Lista de layouts disponíveis da barra de ferramentas
+   Lista dos layouts disponíveis da barra de ferramentas
 
    >[!NOTE]
    >
@@ -223,4 +226,4 @@ CustomToolbarLayoutDemo.zip
 >
 >A descrição atualizada na etapa anterior é exibida na lista suspensa Layout.
 
-![](assets/toolbar_1.png) Exibição de área de trabalho da barra de ferramentas **de layout personalizado** Figura: Exibição de *área de trabalho da barra de ferramentas de layout personalizado*
+![visualização da área de trabalho da barra de ferramentas](assets/toolbar_1.png)de layout personalizado **Figura:** *visualização da área de trabalho da barra de ferramentas de layout personalizado*
