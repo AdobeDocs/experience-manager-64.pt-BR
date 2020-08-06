@@ -1,8 +1,8 @@
 ---
 title: Query Ad-hoc no Relatórios em andamento
 seo-title: Query Ad-hoc no Relatórios em andamento
-description: Crie query personalizados para pesquisar por AEM Forms no processo JEE e detalhes da tarefa no Relatórios Process
-seo-description: Crie query personalizados para pesquisar por AEM Forms no processo JEE e detalhes da tarefa no Relatórios Process
+description: Crie query personalizados para pesquisar o AEM Forms no processo JEE e detalhes da tarefa no Relatórios Process
+seo-description: Crie query personalizados para pesquisar o AEM Forms no processo JEE e detalhes da tarefa no Relatórios Process
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1690'
+ht-degree: 0%
 
 ---
 
 
 # Query Ad-hoc no Relatórios em andamento {#ad-hoc-queries-in-process-reporting}
 
-query ad-hoc no Process Relatórios permitem que você crie query personalizados que podem ser usados para pesquisar detalhes de processo e tarefa das instâncias de processo do AEM Forms definidas no seu ambiente do AEM Forms.
+query ad-hoc no Process Relatórios permitem que você crie query personalizados que podem ser usados para pesquisar detalhes de processo e tarefa das instâncias de processo AEM Forms definidas no seu ambiente AEM Forms.
 
 Além disso, query ad hoc podem ser definidos usando filtros de propriedades de processo e tarefa. Esses filtros podem ser salvos e usados para executar os relatórios posteriormente.
 
@@ -126,6 +129,7 @@ Use as opções no painel **Meus Filtros** para **Adicionar** ![lc_pr_add_filter
    * **Hora** de conclusão: A data e a hora em que a instância do processo foi concluída
    * **Duração**: A duração do start até a conclusão da instância do processo
    * **Status**: O status atual da instância do processo.
+
    Por padrão, o resultado é classificado pela ID do processo. No entanto, para classificar o resultado por qualquer um dos campos, clique no título do campo.
 
    Como a classificação é uma operação de alternância, clique em um cabeçalho de coluna para classificar o resultado em ordem crescente e clique nele novamente para classificar em ordem decrescente.
@@ -139,6 +143,7 @@ Use as opções no painel **Meus Filtros** para **Adicionar** ![lc_pr_add_filter
    * **Hora** de conclusão: A data e a hora em que a instância do processo foi concluída
    * **Duração**: A duração do start até a conclusão da instância do processo
    * **Status**: O status atual da instância do processo.
+
    Por padrão, o resultado é classificado por ID de Tarefa. No entanto, para classificar o resultado por qualquer um dos campos, clique no título do campo. O resultado é classificado pela coluna que é indicada por uma seta escurecida ao lado do cabeçalho da coluna.
 
    Como a classificação é uma operação de alternância, clique em um cabeçalho de campo para classificar o resultado em ordem crescente e clique nele novamente para classificar em ordem decrescente. A ordem de classificação atual (crescente/decrescente) é indicada pela direção da seta escurecida ao lado do cabeçalho da coluna.
@@ -150,6 +155,7 @@ Use as opções no painel **Meus Filtros** para **Adicionar** ![lc_pr_add_filter
 
    * **Atualizar**: Atualiza o relatório com os dados mais recentes no armazenamento
    * **Exportar para CSV**: Exporte os dados do relatório para um arquivo separado por vírgulas.
+
    >[!NOTE]
    >
    >Quando você exporta um relatório, todo o resultado da pesquisa é exportado para um arquivo CSV e não apenas para a página atual
@@ -162,7 +168,7 @@ Da mesma forma, use o painel Detalhes **da** Tarefa para visualização dos deta
 
 ### Detalhes do processo de visualização/Tarefa {#to-view-process-task-details}
 
-Você pode visualização os detalhes de um processo/tarefa específica do AEM Forms:
+Você pode visualização os detalhes de um processo/tarefa AEM Forms específico:
 
 * **De um resultado de Pesquisa de Processo/Tarefa**
 * **Inserindo a ID de processo/Tarefa no painel Detalhes do processo/Tarefa**
@@ -195,6 +201,7 @@ Você pode visualização os detalhes de um processo/tarefa específica do AEM F
    * Duração do processo
    * Status do processo
    * Iniciador do processo
+
    **Painel Superior direito:** Exibe os seguintes detalhes das tarefas que compõem o processo selecionado:
 
    * ID da Tarefa
@@ -205,6 +212,7 @@ Você pode visualização os detalhes de um processo/tarefa específica do AEM F
    * Hora de conclusão da Tarefa
    * duração da Tarefa
    * status da Tarefa
+
    **Painel inferior direito:** Exibe os seguintes detalhes do histórico do processo selecionado:
 
    * Nome do processo
@@ -212,6 +220,7 @@ Você pode visualização os detalhes de um processo/tarefa específica do AEM F
    * Hora da data de atualização do processo
    * Hora de conclusão do processo
    * Status do processo
+
    **Resultado Detalhes da Tarefa**
 
    ![tarefa_details](assets/task_details.png)
@@ -226,12 +235,14 @@ Você pode visualização os detalhes de um processo/tarefa específica do AEM F
    * duração da Tarefa
    * status da Tarefa
    * Rota selecionada da tarefa
+
    **Painel Superior direito:** Exibe os seguintes detalhes dos formulários que compõem a tarefa selecionada:
 
    * ID do formulário
    * Data e hora de criação do formulário
    * Data e hora de atualização do formulário
    * URL do modelo de formulário
+
    **Painel inferior direito:** Exibe os seguintes detalhes do histórico do processo da tarefa selecionada:
 
    * Tipo de atribuição de Tarefa
