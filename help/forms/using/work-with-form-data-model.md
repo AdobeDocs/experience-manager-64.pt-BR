@@ -24,9 +24,9 @@ A integração de dados fornece o editor de modelo de dados de formulário para 
 
 O editor de modelo de dados de formulário fornece uma interface de usuário intuitiva e ferramentas para editar e configurar um modelo de dados de formulário. Usando o editor, você pode adicionar e configurar objetos, propriedades e serviços do modelo de dados de fontes de dados associadas no modelo de dados de formulário. Além disso, permite criar objetos e propriedades de modelo de dados sem fontes de dados e vinculá-los posteriormente aos respectivos objetos e propriedades de modelo de dados. Você também pode gerar e editar dados de amostra para propriedades de objetos de modelo de dados que podem ser usados para preencher previamente formulários adaptáveis e comunicações interativas ao visualizar. É possível testar objetos e serviços de modelo de dados configurados em um modelo de dados de formulário para garantir que eles sejam integrados corretamente às fontes de dados.
 
-Se você for novo na integração de dados do Forms e não tiver configurado uma fonte de dados ou criado um modelo de dados de formulário, consulte os seguintes tópicos:
+Se você for novo na integração de dados da Forms e não tiver configurado uma fonte de dados ou criado um modelo de dados de formulário, consulte os seguintes tópicos:
 
-* [Integração de dados do AEM Forms](/help/forms/using/data-integration.md)
+* [Integração de dados AEM Forms](/help/forms/using/data-integration.md)
 * [Configurar fontes de dados](/help/forms/using/configure-data-sources.md)
 * [Criar modelo de dados de formulário](/help/forms/using/create-form-data-models.md)
 
@@ -44,7 +44,7 @@ Se você tiver criado um modelo de dados de formulário com fontes de dados, pod
 
 Para adicionar objetos e serviços de modelo de dados:
 
-1. Faça logon na instância do autor do AEM, navegue até **[!UICONTROL Formulários > Integrações]** de dados e abra o modelo de dados de formulário no qual deseja adicionar objetos de modelo de dados.
+1. Faça logon na instância AEM autor, navegue até **[!UICONTROL Forms > Integrações]** de dados e abra o modelo de dados de formulário no qual deseja adicionar objetos de modelo de dados.
 1. No painel Fontes de dados, expanda as fontes de dados para visualização de objetos e serviços de modelo de dados disponíveis.
 1. Selecione os objetos e serviços do modelo de dados que deseja adicionar ao modelo de dados do formulário e toque em **[!UICONTROL Adicionar selecionados]**.
 
@@ -80,7 +80,7 @@ Embora seja possível adicionar objetos de modelo de dados de fontes de dados co
 
 Para criar um objeto de modelo de dados sem fontes de dados:
 
-1. Faça logon na instância do autor do AEM, navegue até **[!UICONTROL Formulários > Integrações]** de dados e abra o modelo de dados do formulário no qual deseja criar um objeto ou entidade de modelo de dados.
+1. Faça logon na instância do autor AEM, navegue até **[!UICONTROL Forms > Integrações]** de dados e abra o modelo de dados do formulário no qual você deseja criar um objeto ou entidade de modelo de dados.
 1. Toque em **[!UICONTROL Criar entidade]**.
 1. Na caixa de diálogo Criar modelo de dados, especifique um nome para o objeto de modelo de dados e toque em **[!UICONTROL Adicionar]**. Um objeto de modelo de dados é adicionado ao modelo de dados do formulário. Observe que o objeto de modelo de dados recém-adicionado não está vinculado a uma fonte de dados e não tem nenhuma propriedade, como mostrado na imagem a seguir.
 
@@ -160,7 +160,7 @@ Para ler e gravar dados de um objeto de modelo de dados, faça o seguinte para c
 
    ![argumento de edição](assets/edit-argument.png)
 
-   Vincular o argumento id ao atributo empid do Perfil de usuário do AEM
+   Vinculando o argumento id ao atributo vazio de AEM Perfil de usuário
 
 1. Toque em **[!UICONTROL Concluído]** para salvar o argumento, **[!UICONTROL Concluído]** para salvar as propriedades e, em seguida, em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 
