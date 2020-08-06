@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ Sobreponha o sistema de comentários com uma versão personalizada copiando o n�
 >
 >O conteúdo da pasta /libs nunca é editado porque qualquer reinstalação ou atualização pode excluir ou substituir a pasta /libs enquanto o conteúdo da pasta /apps é deixado inalterado.
 
-Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
+Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps, que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
 
 O caminho que está sendo duplicado é
 
@@ -78,6 +81,7 @@ Alguns nós no caminho são pastas e alguns são componentes.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
