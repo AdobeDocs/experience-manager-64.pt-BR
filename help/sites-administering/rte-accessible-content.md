@@ -1,8 +1,8 @@
 ---
 title: Configuração do RTE para produção de sites acessíveis
 seo-title: Configuração do RTE para produção de sites acessíveis
-description: Saiba como configurar o Editor de Rich Text do AEM para produzir sites acessíveis.
-seo-description: Saiba como configurar o Editor de Rich Text do AEM para produzir sites acessíveis.
+description: Saiba como configurar o Editor de Rich Text AEM para produzir sites acessíveis.
+seo-description: Saiba como configurar o Editor de Rich Text AEM para produzir sites acessíveis.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
 
 # Configuração do RTE para produção de sites acessíveis {#configuring-rte-for-producing-accessible-sites}
 
-O AEM suporta ambos:
+AEM suporta ambos:
 
 * recursos de acessibilidade padrão, incluindo texto alternativo para imagens
 * além dos recursos adicionais que podem ser acessados ao criar conteúdo com componentes que usam o editor de Rich Text (RTE)
@@ -50,6 +53,7 @@ O componente de **Texto** no AEM está disponível para as interfaces de usuári
 >
 >* [Plug-ins e seus recursos](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [Plug-ins e seus recursos - Interface habilitada para toque](/help/sites-administering/rich-text-editor.md#aboutplugins)
+
 >
 
 
@@ -63,7 +67,7 @@ Instruções completas sobre a configuração do RTE estão disponíveis na pág
 * [Ativar um plug-in e configurar a propriedade features](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configuração de outra funcionalidade do RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Ao configurar um plug-in dentro da `rtePlugins` subramificação apropriada no CRXDE Lite (consulte a imagem a seguir), você pode ativar todos os recursos ou recursos específicos para esse plug-in.
+Ao configurar um plug-in dentro da `rtePlugins` sub-ramificação apropriada no CRXDE Lite (consulte a imagem a seguir), você pode ativar todos os recursos ou recursos específicos desse plug-in.
 
 ![CRXDE Lite mostrando um exemplo de rtePlugin.](assets/chlimage_1-208.png)
 
@@ -77,12 +81,13 @@ Podem ser disponibilizados novos formatos de blocos semânticos para seleção a
 1. Os formatos de parágrafo ficam disponíveis para o autor do conteúdo nos campos de seleção no RTE. Eles podem ser acessados:
 
    * Usando o ícone de parágrafo ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) na interface habilitada para toque:
+
    ![Ícone Parágrafo (pilcrow).](do-not-localize/chlimage_1-7.png)
 
    * Uso do campo **Formatar** (seletor suspenso) na interface clássica.
 
 
-Com elementos estruturais disponíveis no RTE por meio das opções de formato de parágrafo, o AEM fornece uma boa base para o desenvolvimento de conteúdo acessível. Os autores de conteúdo não podem usar o RTE para formatar tamanho de fonte ou cores ou outros atributos relacionados, impedindo a criação de formatação em linha. Em vez disso, eles devem selecionar os elementos estruturais apropriados, como cabeçalhos e usar estilos globais escolhidos na opção Estilos. Isso garante a limpeza da marcação, maiores opções para usuários que navegam com suas próprias folhas de estilos e conteúdo estruturado corretamente.
+Com os elementos estruturais disponíveis no RTE por meio das opções de formato de parágrafo, o AEM fornece uma boa base para o desenvolvimento de conteúdo acessível. Os autores de conteúdo não podem usar o RTE para formatar tamanho de fonte ou cores ou outros atributos relacionados, impedindo a criação de formatação em linha. Em vez disso, eles devem selecionar os elementos estruturais apropriados, como cabeçalhos e usar estilos globais escolhidos na opção Estilos. Isso garante a limpeza da marcação, maiores opções para usuários que navegam com suas próprias folhas de estilos e conteúdo estruturado corretamente.
 
 ## Uso do recurso Editar fonte {#use-of-the-source-edit-feature}
 
@@ -110,7 +115,7 @@ Na **Tabela** , você deve definir ou remover explicitamente o atributo de/para 
 
 ### Instruções passo a passo {#step-by-step-instructions}
 
-1. Inicie o CRXDE Lite. Por exemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. CRXDE Lite de Start. Por exemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copiar:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
@@ -131,7 +136,7 @@ Na **Tabela** , você deve definir ou remover explicitamente o atributo de/para 
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
 
-1. Abra o arquivo a seguir para edição (abra com um clique duplo):
+1. Abra o arquivo a seguir para edição (abra com clique no duplo):
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
