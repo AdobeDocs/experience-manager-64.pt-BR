@@ -1,8 +1,8 @@
 ---
-title: Monitoramento e manutenção da sua instância do AEM
-seo-title: Monitoramento e manutenção da sua instância do AEM
-description: Saiba como monitorar o AEM.
-seo-description: Saiba como monitorar o AEM.
+title: Monitorando e Mantendo sua instância AEM
+seo-title: Monitorando e Mantendo sua instância AEM
+description: Saiba como monitorar AEM.
+seo-description: Saiba como monitorar AEM.
 uuid: 371791ab-2ea3-4d77-9db5-e1672c6b0831
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Monitoramento e manutenção da sua instância do AEM{#monitoring-and-maintaining-your-aem-instance}
+# Monitorando e Mantendo sua instância AEM{#monitoring-and-maintaining-your-aem-instance}
 
-Depois que as instâncias do AEM forem implantadas, determinadas tarefas serão necessárias para monitorar e manter sua operação, desempenho e integridade.
+Depois que suas instâncias AEM tiverem sido implantadas, determinadas tarefas serão necessárias para monitorar e manter sua operação, desempenho e integridade.
 
 Um fator chave aqui é que para reconhecer possíveis problemas você precisa saber como seus sistemas se parecem e se comportam em condições normais. A melhor forma de o fazer é monitorar o sistema e coletar informações ao longo de um período de tempo.
 
@@ -32,7 +32,7 @@ Um fator chave aqui é que para reconhecer possíveis problemas você precisa sa
 | Os sistemas de arquivos estão sendo monitorados. | O repositório CRX &quot;congela&quot; se não houver espaço livre em disco suficiente. Ele será retomado assim que o espaço se tornar disponível. | As mensagens &quot; `*ERROR* LowDiskSpaceBlocker`&quot; podem ser visualizadas no arquivo de log quando o espaço livre se tornar baixo. |
 | [Os arquivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de log estão sendo monitorados. |  |  |
 | O monitoramento do sistema está (constantemente) sendo executado em segundo plano. | Incluindo o uso da CPU, memória, disco e rede. Usando, por exemplo, iostat / vmstat / perfmon. | Os dados registrados são visualizados e podem ser usados para rastrear problemas de desempenho. Os dados brutos também podem ser acessados. |
-| [O desempenho do AEM está sendo monitorado](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Incluindo Contadores [de](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) solicitação para monitorar os níveis de tráfego. | Caso se verifique uma perda significativa ou a longo prazo do desempenho, deve ser efetuada uma investigação aprofundada. |
+| [AEM desempenho está sendo monitorado](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Incluindo Contadores [de](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) solicitação para monitorar os níveis de tráfego. | Caso se verifique uma perda significativa ou a longo prazo do desempenho, deve ser efetuada uma investigação aprofundada. |
 | Você está monitorando seus agentes [de replicação](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
 | Expurgar instâncias de fluxo de trabalho regularmente. | Tamanho do repositório e desempenho do fluxo de trabalho. | Consulte Expurgação [regular de instâncias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de fluxo de trabalho. |
 
@@ -70,12 +70,12 @@ Após a instalação, ou alterações significativas na configuração, faça um
 
 Para fazer isso, é necessário fazer [backup de todo o repositório](#backing-up-your-repository) e, em seguida:
 
-1. Pare o AEM.
+1. Pare de AEM.
 1. Faça backup de todo o sistema `<cq-installation-dir>` de arquivos.
 
 >[!CAUTION]
 >
->Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e talvez também seja necessário fazer backup delas. Consulte [Como instalar o AEM com um servidor](/help/sites-deploying/application-server-install.md) de aplicativos para obter informações sobre como instalar servidores de aplicativos.
+>Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e talvez também seja necessário fazer backup delas. Consulte [Como instalar AEM com um Servidor](/help/sites-deploying/application-server-install.md) de aplicativos para obter informações sobre como instalar servidores de aplicativos.
 
 >[!CAUTION]
 >
@@ -166,7 +166,7 @@ Registros de auditoria e arquivos de registro relacionados ao Adobe Experience M
 
 ### Trabalhar com registros {#working-with-logs}
 
-O WCM AEM registra registros detalhados. Depois de desempacotar e start Quickstart, você pode encontrar registros em:
+AEM WCM registra registros detalhados. Depois de desempacotar e start Quickstart, você pode encontrar registros em:
 
 * `<cq-installation-dir>/crx-quickstart/logs/`
 * `<cq-installation-dir>/crx-quickstart/repository/`
@@ -180,11 +180,11 @@ A rotação do arquivo de log refere-se ao processo que limita o crescimento do 
 
 >[!NOTE]
 >
->Se você atualizar sua instalação do AEM, observe que qualquer arquivo de log existente que não for mais usado pelo AEM permanecerá no disco. Você pode removê-los sem riscos. Todas as novas entradas de log serão gravadas nos novos arquivos de log.
+>Se você atualizar sua instalação AEM, observe que qualquer arquivo de log existente que não for mais usado pelo AEM permanecerá no disco. Você pode removê-los sem riscos. Todas as novas entradas de log serão gravadas nos novos arquivos de log.
 
 ### Como localizar os arquivos de registro {#finding-the-log-files}
 
-Vários arquivos de registro são mantidos no servidor de arquivos onde você instalou o AEM:
+Vários arquivos de log são mantidos no servidor de arquivos onde você instalou AEM:
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
@@ -210,7 +210,7 @@ Vários arquivos de registro são mantidos no servidor de arquivos onde você in
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
-      Esse log só será usado se a mídia dinâmica estiver ativada. O registro s7access registra cada solicitação feita à Dynamic Media por meio `/is/image` e `/is/content`.
+      Esse log só será usado se a mídia dinâmica estiver ativada. O registro s7access registra cada solicitação feita ao Dynamic Media por meio `/is/image` e `/is/content`.
 
    * `stderr.log`
 
@@ -232,7 +232,7 @@ Vários arquivos de registro são mantidos no servidor de arquivos onde você in
 
 >[!NOTE]
 >
->Os registros de acesso ImageServer e s7access não estão incluídos no pacote **Download completo** gerado a partir da página **system/console/status-Bundlelist** . Para fins de suporte, se você tiver problemas com a Dynamic Media, anexe também os registros do ImageServer e s7access ao entrar em contato com o Suporte ao cliente.
+>Os registros de acesso ImageServer e s7access não estão incluídos no pacote **Download completo** gerado a partir da página **system/console/status-Bundlelist** . Para fins de suporte, se você tiver problemas com o Dynamic Media, anexe também os registros ImageServer e s7access ao entrar em contato com o Suporte ao cliente.
 
 ### Ativando o nível de log DEBUG {#activating-the-debug-log-level}
 
@@ -255,7 +255,7 @@ Os níveis de log são os seguintes:
 | 0 | Erro fatal | A ação falhou e o instalador não pode continuar. |
 |---|---|---|
 | 1 | Erro | A ação falhou. A instalação continua, mas uma parte do AEM WCM não foi instalada corretamente e não funcionará. |
-| 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O WCM AEM pode ou não funcionar corretamente. |
+| 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. AEM WCM pode ou não funcionar corretamente. |
 | 3 | Info | A ação foi bem sucedida. |
 
 ### Criar um arquivo de log personalizado {#create-a-custom-log-file}
@@ -438,7 +438,7 @@ O Console do Felix também fornece informações sobre o suporte ao Sling Log em
 
 Os registros de auditoria são mantidos para fornecer um registro de quem fez o quê e quando. Registros de auditoria diferentes são gerados para eventos AEM WCM e OSGi.
 
-#### Registros de auditoria do WCM AEM exibidos durante a criação da página {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM registros de Auditoria do WCM mostrados durante a Criação de Página {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Abra uma página.
 1. No sidekick, você pode selecionar a guia com o ícone de cadeado e, em seguida, clicar em duplo no Log **de auditoria...**
@@ -448,7 +448,7 @@ Os registros de auditoria são mantidos para fornecer um registro de quem fez o 
 
 1. Clique em **OK** quando quiser fechar a janela.
 
-#### Registros de auditoria WCM do AEM no repositório {#aem-wcm-auditing-records-within-the-repository}
+#### AEM registros de Auditoria do WCM no repositório {#aem-wcm-auditing-records-within-the-repository}
 
 Na `/var/audit` pasta, os registros de auditoria são mantidos de acordo com o recurso. Você pode fazer o detalhamento até visualizar os registros individuais e as informações que eles contêm.
 
@@ -456,7 +456,7 @@ Essas entradas possuem as mesmas informações que são exibidas ao editar uma p
 
 #### Registros de auditoria do OSGi do Console da Web {#osgi-audit-records-from-the-web-console}
 
-Os eventos OSGi também geram registros de auditoria que podem ser vistos na guia Status **de** configuração -> **Arquivos de registro **guia no console da Web do AEM:
+Os eventos OSGi também geram registros de auditoria que podem ser vistos na guia Status **de** configuração -> **Arquivos de registro **guia no Console Web AEM:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -527,7 +527,7 @@ As listas a seguir apresentam problemas comuns de desempenho, juntamente com pro
 |  | A navegação local no servidor é (comparativamente) rápida. | Aumente a largura de banda da rede. | Reduza o &quot;peso&quot; de suas páginas da Web (por exemplo, menos imagens, HTML otimizado). |
 | Servidor Web | O uso da CPU no servidor da Web é alto. | Agrupe seus servidores da Web. | Reduza as ocorrências por página (visita). |
 |  |  | Use um balanceador de carga de hardware. |  |
-| Aplicativo | O uso da CPU do servidor é alto. | Agrupamento de instâncias do AEM. | Procure e elimine pernos de CPU e memória (use análise de código, saída de tempo etc). |
+| Aplicativo | O uso da CPU do servidor é alto. | Agrupe suas instâncias AEM. | Procure e elimine pernos de CPU e memória (use análise de código, saída de tempo etc). |
 |  | Alto consumo de memória. |  | Melhore o cache em todos os níveis. |
 |  | Baixo tempo de resposta. |  | Otimizar modelos e componentes (por exemplo, estrutura, lógica). |
 | Repositório |  |  |  |
@@ -586,7 +586,7 @@ Alguns deles dependerão do seu sistema operacional.
   <tr> 
    <td>Despejos de heap</td> 
    <td>Problemas de falta de memória que causam desempenho lento.</td> 
-   <td><p>Adicione o seguinte:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> para a chamada java para o AEM.</p> <p>Consulte o Guia <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">de solução de problemas para Java SE 6 com VM</a>HotSpot.</p> </td> 
+   <td><p>Adicione o seguinte:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> para a chamada java para AEM.</p> <p>Consulte o Guia <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">de solução de problemas para Java SE 6 com VM</a>HotSpot.</p> </td> 
   </tr> 
   <tr> 
    <td>Chamadas do sistema</td> 
@@ -648,7 +648,7 @@ Alguns deles dependerão do seu sistema operacional.
 
 ### Interpretação do request.log {#interpreting-the-request-log}
 
-Esse arquivo registra informações básicas sobre cada solicitação feita ao AEM. A partir destas valiosas conclusões pode ser extraída.
+Este arquivo registra informações básicas sobre cada solicitação feita para AEM. A partir destas valiosas conclusões pode ser extraída.
 
 A `request.log` oferta é uma forma integrada de ver quanto tempo as solicitações demoram. Para fins de desenvolvimento, é útil para `tail -f` o `request.log` e observar os tempos de resposta lentos. Para analisar um valor maior, `request.log` recomendamos o [uso do `rlog.jar` qual permite classificar e filtrar os tempos](#using-rlog-jar-to-find-requests-with-long-duration-times)de resposta.
 
@@ -663,7 +663,7 @@ O registro de solicitações registra cada solicitação feita, juntamente com a
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Ao totalizar todas as entradas GET dentro de um período específico (por exemplo, durante vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio em seu site.
+Ao totalizar todas as entradas de GET dentro de um período específico (por exemplo, durante vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio em seu site.
 
 #### Monitorando os tempos de resposta com request.log {#monitoring-response-times-with-the-request-log}
 
@@ -687,7 +687,7 @@ Este registro tem uma linha por solicitação ou resposta:
 * Uma seta indicando se esta é uma solicitação (seta apontando para a direita) ou uma resposta (seta para a esquerda).
 * Para solicitações, a linha contém:
 
-   * o método (normalmente, GET, HEAD ou POST)
+   * o método (tipicamente, GET, HEAD ou POST)
    * a página solicitada
    * protocolo
 
@@ -736,7 +736,7 @@ Devem ser feitos testes para determinar quantos usuários simultâneos o sistema
 
 ### Usar o rlog.jar para localizar solicitações com tempos de longa duração {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-O AEM inclui várias ferramentas auxiliares localizadas em:\
+AEM inclui várias ferramentas auxiliares localizadas em:\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Uma dessas opções, `rlog.jar`, pode ser usada para classificar rapidamente `request.log` para que as solicitações sejam exibidas por duração, do maior ao menor tempo.
@@ -881,9 +881,9 @@ Recomenda-se que cada projeto inclua `html comments` o desempenho do servidor. S
 
 O comando tool `jconsole` está disponível com o JDK.
 
-1. Start da sua instância do AEM.
+1. Start sua instância AEM.
 1. Executar `jconsole.`
-1. Selecione sua instância do AEM e o **Connect**.
+1. Selecione sua instância AEM e **Connect**.
 
 1. De dentro do `Local` aplicativo, clique com o duplo `com.day.crx.quickstart.Main`; a Visão geral será mostrada como padrão:
 
@@ -895,7 +895,7 @@ O comando tool `jconsole` está disponível com o JDK.
 
 Como o JDK 1.6, o comando de ferramenta `jvisualvm` está disponível. Depois de instalar o JDK 1.6, você pode:
 
-1. Start da sua instância do AEM.
+1. Start sua instância AEM.
 
    >[!NOTE]
    >
@@ -927,7 +927,7 @@ As seguintes informações podem ser úteis:
 * [Quantas páginas você mantém atualmente neste sistema?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [Se você usar MSM, qual é o número médio de lançamentos por mês?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [Qual é o número médio de Live Copies por mês?](#what-is-the-average-number-of-live-copies-per-month)
-* [Se você usar AEM Assets, quantos ativos você mantém atualmente nos Ativos?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
+* [Se você usar o AEM Assets, quantos ativos você mantém atualmente no Assets?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
 * [Qual é o tamanho médio dos ativos?](#what-is-the-average-size-of-the-assets)
 * [Quantos modelos são usados atualmente?](#how-many-templates-are-currently-used)
 * [Quantos componentes são usados atualmente?](#how-many-components-are-currently-used)
@@ -995,7 +995,7 @@ Para determinar o número total de Live Copies feitas desde a instalação, use 
 
 Use novamente o número de meses decorridos desde a instalação para calcular a média.
 
-#### Se você usar AEM Assets, quantos ativos você mantém atualmente nos Ativos? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### Se você usar o AEM Assets, quantos ativos você mantém atualmente no Assets? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
 Para ver quantos ativos DAM você mantém atualmente, use um query de repositório; via CRXDE - Ferramentas - Query:
 
@@ -1099,7 +1099,7 @@ Se o sistema estiver ficando sem memória, isso pode ser visto de várias maneir
 
 Nesses casos, verifique:
 
-* as configurações JVM usadas para [start do AEM](/help/sites-deploying/deploy.md#getting-started)
+* as configurações JVM usadas para o [start AEM](/help/sites-deploying/deploy.md#getting-started)
 * A Base de conhecimento:
 
    * [Analisar problemas de memória](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
