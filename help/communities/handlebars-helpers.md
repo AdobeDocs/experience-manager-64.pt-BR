@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '1540'
+ht-degree: 2%
 
 ---
 
 
 # Auxiliares de barras de mão SCF {#scf-handlebars-helpers}
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Localização da personalização do cliente](client-customize.md)** |
 
@@ -25,7 +28,7 @@ Os Handlebars Helpers (helpers) são métodos chamáveis dos scripts Handlebars 
 
 A implementação inclui uma definição do lado do cliente e do lado do servidor. Também é possível para os desenvolvedores criar auxiliares personalizados.
 
-Os auxiliares SCF personalizados fornecidos com o AEM Communities estão definidos na biblioteca do [cliente](../../help/sites-developing/clientlibs.md):
+Os auxiliares SCF personalizados fornecidos com a AEM Communities são definidos na biblioteca do [cliente](../../help/sites-developing/clientlibs.md):
 
 * /etc/clientlibs/social/commons/scf/helpers.js
 
@@ -57,7 +60,7 @@ Se safeString estiver definido como true, a string retornada será SafeString.
 
    (opcional) Padrão é o número de palavras na string aparada.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
    (opcional) Retorna um Handlebars.SafeString() se verdadeiro. O padrão é falso.
 
@@ -99,7 +102,7 @@ Um auxiliar para adicionar duas extensões sob uma div, uma para o texto complet
 
 * **numChars**: Número
 
-   (opcional) O número de caracteres a serem exibidos ao não exibir texto completo. O padrão é 100.
+   (opcional) O número de caracteres a serem exibidos ao não exibir o texto completo. O padrão é 100.
 
 * **moreText**: String
 
@@ -109,7 +112,7 @@ Um auxiliar para adicionar duas extensões sob uma div, uma para o texto complet
 
    (opcional) O texto a ser exibido indicando que há texto oculto. O padrão é &quot;...&quot;.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
    (opcional) Valor booliano que indica se deve ou não aplicar Handlebars.SafeString() antes de retornar o resultado. O padrão é falso.
 
@@ -181,7 +184,7 @@ Um auxiliar para retornar conteúdo dependendo de uma condição de igualdade.
 
 ## Modo If-wcm {#if-wcm-mode}
 
-Um auxiliar de bloco que testa o valor atual do modo [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM em relação a uma lista de modos separada por strings.
+Um auxiliar de bloco que testa o valor atual do modo [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM em relação a uma lista de modos separada por sequências de caracteres.
 
 ### Parâmetros {#parameters-4}
 
@@ -191,7 +194,7 @@ Um auxiliar de bloco que testa o valor atual do modo [](https://helpx.adobe.com/
 
 * **modo**: String
 
-   (opcional) Uma lista separada por vírgulas de modos [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM para testar se definido.
+   (opcional) Uma lista separada por vírgulas dos modos [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM para testar se estão definidos.
 
 ### Exemplo {#example-2}
 
@@ -236,7 +239,7 @@ Um auxiliar para incluir um componente como um recurso não existente em um mode
 
 Isso permite que o recurso seja programaticamente personalizado mais facilmente do que é possível para um recurso adicionado como um nó JCR. Consulte [Adicionar ou incluir um componente](scf.md#add-or-include-a-communities-component)de Comunidades.
 
-Somente alguns componentes de Comunidades podem ser incluídos. Para o AEM 6.1, os que podem ser incluídos são [comentários](essentials-comments.md), [classificações](rating-basics.md), [revisões](reviews-basics.md)e [votação](essentials-voting.md).
+Somente alguns componentes selecionados de Comunidades podem ser incluídos. No AEM 6.1, os que podem ser incluídos são [comentários](essentials-comments.md), [classificações](rating-basics.md), [revisões](reviews-basics.md)e [votação](essentials-voting.md).
 
 Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade semelhante a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -262,7 +265,7 @@ Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade sem
 
    (obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deverá ser fornecido, caso contrário, a string vazia será retornada.
 
-* **authoringDisabled**:Booleano
+* **authoringDisabled**: Booleano
 
    (opcional) O padrão é falso. Apenas para uso interno.
 
@@ -276,7 +279,7 @@ Isso incluirá um novo componente de comentários em `this.id` + /comments
 
 ## IncludeClientLib {#includeclientlib}
 
-Um auxiliar que inclui uma biblioteca de cliente html do AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no script Handlebars.
+Um auxiliar que inclui uma biblioteca de cliente html AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no script Handlebars.
 
 Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade semelhante à [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -284,19 +287,19 @@ Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade sem
 
 * **categorias**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias especificadas. O nome do tema é extraído da solicitação.
+   (opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias em questão. O nome do tema é extraído da solicitação.
 
 * **tema**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias especificadas. O nome do tema é extraído da solicitação.
+   (opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias em questão. O nome do tema é extraído da solicitação.
 
 * **js**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript para as categorias especificadas.
+   (opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas do Javascript para as categorias em questão.
 
 * **css**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias especificadas.
+   (opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias em questão.
 
 ### Exemplos {#examples-2}
 
@@ -601,7 +604,7 @@ A clientlib deve:
 
 Observação: os auxiliares do quadro SEPA estão definidos em `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Localização da personalização do cliente](client-customize.md)** |
 
