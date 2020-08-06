@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
@@ -19,17 +22,17 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ## Visão geral {#overview}
 
-O conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC), é criado quando um membro (visitante do site conectado) publica conteúdo de um site da comunidade publicado por meio da interação com um dos seguintes componentes da comunidade:
+O conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC), é criado quando um membro (visitante conectado ao site) publica conteúdo de um site da comunidade publicado por meio da interação com um dos seguintes componentes da comunidade:
 
 * [Blog](blog-feature.md): os membros postam um artigo ou comentário no blog
-* [Calendário](calendar.md): os membros postam um evento de calendário ou comentário
+* [Calendário](calendar.md): os membros postam um evento de calendário ou um comentário
 * [Comentários](comments.md): os membros postam um comentário ou respondem a um comentário
 * [Fórum](forum.md): os membros postam um novo tópico ou respondem a um tópico
 * [Ideação](ideation-feature.md): os membros postam uma ideia ou comentário
 * [QnA](working-with-qna.md): membros criam uma pergunta ou respondem uma pergunta
 * [Revisões](reviews.md): os membros postam um comentário ao classificar um item
 
-A moderação do UGC é útil para reconhecer contribuições positivas e limitar as negativas (como spam e linguagem abusiva). O UGC pode ser moderado de vários ambientes:
+A moderação do UGC é útil para reconhecer contribuições positivas e limitar as negativas (como spam e linguagem abusiva). O UGC pode ser moderado a partir de vários ambientes:
 
 * [Console de moderação em massa](moderation.md)
 
@@ -165,9 +168,9 @@ A ação Fechar/Reabrir pode ser executada por administradores ou moderadores da
 
 Sinalizar é um meio para qualquer membro conectado, exceto pelo criador do conteúdo, indicar que há um problema com o conteúdo de uma publicação. Depois de sinalizado, um ícone de cancelamento de sinalizador será exibido permitindo que o mesmo membro desmarque o conteúdo.
 
-A moderação no contexto pode ser configurada para permitir que os membros selecionem um motivo ao sinalizar uma publicação. A lista de motivos de sinalizadores selecionáveis é configurável, incluindo se um motivo personalizado pode ou não ser inserido. O motivo do sinalizador é salvo com o UGC, mas o motivo não aciona nenhuma ação específica. Somente o número de sinalizadores aciona uma notificação. O conteúdo sinalizado é anotado como tal, para que os moderadores possam agir sobre ele.
+A moderação no contexto pode ser configurada para permitir que os membros selecionem um motivo ao sinalizar uma publicação. A lista de motivos de sinalizador selecionáveis é configurável, incluindo se um motivo personalizado pode ou não ser inserido. O motivo do sinalizador é salvo com o UGC, mas o motivo não aciona nenhuma ação específica. Somente o número de sinalizadores aciona uma notificação. O conteúdo sinalizado é anotado como tal, para que os moderadores possam agir sobre ele.
 
-O sistema rastreia todos os sinalizadores, que sinalizaram e o motivo do sinalizador e envia um evento quando o limite foi atingido. Se o UGC for Permitido por um moderador da comunidade, esses sinalizadores serão arquivados. Após permitir e arquivar, se houver sinalizadores subsequentes, eles serão arquivados como se não houvesse sinalizadores anteriores.
+O sistema rastreia todos os sinalizadores, que sinalizaram, o motivo do sinalizador e envia um evento quando o limite foi atingido. Se o UGC for Permitido por um moderador da comunidade, esses sinalizadores serão arquivados. Após permitir e arquivar, se houver sinalizadores subsequentes, eles serão arquivados como se não houvesse sinalizadores anteriores.
 
 ### Permitir {#allow}
 
@@ -187,7 +190,7 @@ Quando o UGC for pré-moderado, a publicação não aparecerá no site publicado
 
 ### Detecção de spam {#spam-detection}
 
-A detecção de spam é uma funcionalidade de moderação automática, que filtra partes indesejadas do conteúdo gerado pelo usuário enviado marcando-as como spam. Depois de habilitado, ele identifica se um conteúdo gerado pelo usuário é spam ou não com base em uma coleção pré-configurada de palavras de spam. As palavras de spam padrão são fornecidas em
+A detecção de spam é uma funcionalidade de moderação automática, que filtros partes indesejadas do conteúdo gerado pelo usuário ao marcá-las como spam. Depois de habilitado, ele identifica se um conteúdo gerado pelo usuário é spam ou não com base em uma coleção pré-configurada de palavras de spam. As palavras de spam padrão são fornecidas em
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
@@ -203,7 +206,7 @@ Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
 1. Abra o Console [da Web](http://localhost:4502/system/console/configMgr), indo até `/system/console/configMgr`.
 
-1. Localize a configuração de Moderação **[!UICONTROL automática do]** AEM Communities e edite-a.
+1. Localize a configuração da Moderação **[!UICONTROL automática do]** AEM Communities e edite-a.
 1. Adicione a `SpamProcess` entrada.
 
 ![spamprocess](assets/spamprocess.png)
@@ -231,11 +234,11 @@ Para substituir ou adicionar regras, crie um conjunto de regras no diretório /a
 
 Depois de analisado, o sentimento é armazenado com o UGC.
 
-No console [de moderação em](moderation.md)massa, é possível filtrar e exibir o UGC com base no fato do sentimento ser negativo, neutro ou positivo.
+No console [de moderação em](moderation.md)massa, é possível filtrar e visualização o UGC com base no fato de o sentimento ser negativo, neutro ou positivo.
 
 #### Watchwords {#watchwords}
 
-As comunidades do AEM fornecem um *analisador de palavra de observação *como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de observação deve-se a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
+AEM comunidades fornece um *analisador de palavra de observação *como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de observação deve-se a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
 
 #### Configurar o sentimento e as palavras de observação {#configure-sentiment-and-watchwords}
 
@@ -257,13 +260,15 @@ Para configurar sentimentos e palavras de observação:
 
 * **Palavras de observação positivas** Uma lista separada por vírgulas de palavras que contribuem para um sentimento positivo que sobrescreve os padrões. O padrão é uma lista vazia.
 
-* **Palavras de observação negativas** Uma lista separada por vírgulas de palavras que contribuem para um sentimento negativo que substitui os padrões. O padrão é uma lista vazia.
+* **Palavras de observação negativas** Uma lista de palavras separadas por vírgulas contribuindo para um sentimento negativo que substitui os padrões. O padrão é uma lista vazia.
 
-* **Caminho explícito para o nó** de palavras de observação O local do repositório de um nó que contém as propriedades padrão `positive` e `negative` as palavras de observação padrão. O padrão é `/libs/settings/community/watchwords/default`.
+* **Caminho explícito para o nó de palavras de observação** A localização do repositório de um nó que contém o padrão 
+`positive` e `negative` propriedades que especificam palavras de observação padrão. O padrão é `/libs/settings/community/watchwords/default`.
 
-* **Regras** de sentimento O local do repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum fluxo de trabalho envolvido).
+* **Regras** de sentimento O local do repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é 
+`/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum fluxo de trabalho envolvido).
 
-Veja a seguir um exemplo de uma entrada personalizada para as palavras de observação padrão, quando `Explicit Path to Watchwords Node` estiver definida como `/libs/settings/community/watchwords/default`.
+A seguir, há um exemplo de uma entrada personalizada para as palavras de observação padrão, quando `Explicit Path to Watchwords Node` está definida como `/libs/settings/community/watchwords/default`.
 
 ![crxde](assets/crxde.png)
 
