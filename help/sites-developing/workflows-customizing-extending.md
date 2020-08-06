@@ -68,6 +68,7 @@ O `/libs/cq/workflow/components/model/step` componente é o ancestral comum mais
 
    * **Frequentes**: para editar o título e a descrição.
    * **Avançado**: para editar as propriedades de notificação por email.
+
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ Use o procedimento a seguir para especificar valores padrão para os campos **T�
 >* A caixa de diálogo de edição da etapa armazena o título e a descrição nos seguintes locais: >
 >* `./jcr:title`
 >* `./jcr:description` localizações
+
 >
 >  
 Esse requisito é atendido quando a caixa de diálogo de edição usa a guia Comum implementada pelo `/libs/cq/flow/components/step/step` componente.
@@ -132,6 +134,7 @@ Esse requisito é atendido quando a caixa de diálogo de edição usa a guia Com
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    >[!NOTE]
    >
    >Para obter mais informações sobre o nó cq:editConfig, consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
@@ -182,6 +185,7 @@ Para focalizar o componente para uso em um cenário de fluxo de trabalho especí
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    Para obter mais informações sobre o nó cq:editConfig, consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Abaixo do nó cq:EditConfig, adicione o seguinte nó:
@@ -203,7 +207,7 @@ Para focalizar o componente para uso em um cenário de fluxo de trabalho especí
 
 1. Para remover a capacidade dos desenvolvedores de modelo de alterar seus valores de propriedade, substitua a caixa de diálogo do supertipo de componente.
 
-### Adicionar formulários e caixas de diálogo às etapas do participante {#adding-forms-and-dialogs-to-participant-steps}
+### Adicionar Forms e caixas de diálogo às etapas do participante {#adding-forms-and-dialogs-to-participant-steps}
 
 Personalize o componente de etapa do participante para fornecer os recursos encontrados nos componentes Etapa [do participante do](/help/sites-developing/workflows-step-ref.md#form-participant-step) formulário e Etapa [do participante da](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) caixa de diálogo:
 
@@ -216,6 +220,7 @@ Execute o seguinte procedimento em seu novo componente (consulte [Criação de c
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    Para obter mais informações sobre o nó cq:editConfig, consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. Abaixo do nó cq:EditConfig, adicione o seguinte nó:
@@ -381,7 +386,7 @@ Quando as etapas do processo são iniciadas durante o processo de um fluxo de tr
 
 Para definir uma etapa do processo como um componente de serviço OSGI (pacote Java):
 
-1. Crie o pacote e implante-o no container OSGI. Consulte a documentação sobre como criar um pacote com o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
+1. Crie o pacote e implante-o no container OSGI. Consulte a documentação sobre como criar um pacote com [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -528,7 +533,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Para usar o script:
 
-1. Crie o script (por exemplo, com o CRXDE Lite) e salve-o no repositório abaixo `/apps/myapp/workflow/scripts`
+1. Crie o script (por exemplo, com CRXDE Lite) e salve-o no repositório abaixo `/apps/myapp/workflow/scripts`
 1. Para especificar um título que identifique o script na caixa de diálogo de edição Etapa **do** processo, adicione as seguintes propriedades ao `jcr:content` nó do script:
 
    | Nome | Tipo | Valor |
@@ -645,7 +650,7 @@ function getParticipant() {
 }
 ```
 
-1. Crie o script (por exemplo, com o CRXDE Lite) e salve-o no repositório abaixo `/apps/myapp/workflow/scripts`
+1. Crie o script (por exemplo, com CRXDE Lite) e salve-o no repositório abaixo `/apps/myapp/workflow/scripts`
 1. Para especificar um título que identifique o script na caixa de diálogo de edição Etapa **do** processo, adicione as seguintes propriedades ao `jcr:content` nó do script:
 
    | Nome | Tipo | Valor |
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ Uma maneira fácil de start para criar sua própria etapa personalizada é copia
       * Projetos
       * Fluxo de trabalho WCM
       * Fluxo de trabalho
+
    ![wf-35](assets/wf-35.png)
 
 1. Agora é possível abrir um modelo de fluxo de trabalho para edição. Nas etapas do navegador, você pode filtrar para ver **Minha etapa** personalizada:
@@ -887,6 +894,7 @@ Depois de [Criar a Etapa](#creating-the-basic-step)Básica, defina a etapa **Con
       Define o título padrão no cartão de etapa no mapa do modelo e no campo **Título** da caixa de diálogo de configuração **Meu personalizado - Propriedades** da etapa.
 
    * Você também pode definir suas próprias propriedades personalizadas.
+
    ![wf-40](assets/wf-40.png)
 
 1. Configure as propriedades no nó `cq:listeners`.
@@ -899,6 +907,7 @@ Depois de [Criar a Etapa](#creating-the-basic-step)Básica, defina a etapa **Con
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    Essa configuração é essencial para o funcionamento correto do editor. Na maioria dos casos, essa configuração não deve ser alterada.
 
    No entanto, definir `cq:inherit` como true (no `cq:editConfig` nó, consulte acima) permite herdar essa configuração, sem precisar incluí-la explicitamente na definição da etapa. Se nenhuma herança estiver no lugar, então é necessário adicionar esse nó com as seguintes propriedades e valores.
@@ -1030,7 +1039,7 @@ A `_cq_dialog/.content.xml` amostra usada neste exemplo:
 >
 >As caixas de diálogo do editor de modelo de interface clássica ainda funcionarão com o editor de interface de usuário padrão e habilitado para toque.
 >
->Embora o AEM tenha uma ferramenta de conversão [de](/help/sites-developing/dialog-conversion.md) diálogo se você quiser atualizar as caixas de diálogo de etapa da interface clássica para as caixas de diálogo padrão da interface do usuário. Após a conversão, ainda há algumas melhorias manuais que poderiam ser feitas no diálogo em certos casos.
+>Embora AEM tenha uma ferramenta de conversão [de](/help/sites-developing/dialog-conversion.md) diálogo se você quiser atualizar as caixas de diálogo de etapa da interface clássica para as caixas de diálogo padrão da interface do usuário. Após a conversão, ainda há algumas melhorias manuais que poderiam ser feitas no diálogo em certos casos.
 >
 >* Nos casos em que uma caixa de diálogo atualizada está vazia, é possível observar as caixas de diálogo com funcionalidades semelhantes `/libs` a exemplos de como fornecer uma solução. Por exemplo:
    >
@@ -1040,6 +1049,7 @@ A `_cq_dialog/.content.xml` amostra usada neste exemplo:
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 Você não deve modificar nada em `/libs`, basta usá-los como exemplos. Se quiser aproveitar qualquer uma das etapas existentes, copie-as para `/apps` e modifique-as.
