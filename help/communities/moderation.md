@@ -11,31 +11,34 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 3%
 
 ---
 
 
 # Console de moderação {#moderation-console}
 
-No AEM Communities, a [moderação em massa do conteúdo](moderate-ugc.md) da comunidade é possível tanto a partir dos ambientes de autor quanto de publicação por administradores e moderadores da comunidade (membros confiáveis da comunidade atribuídos como moderadores).
+No AEM Communities, a [moderação em massa do conteúdo](moderate-ugc.md) da comunidade é possível tanto do autor quanto dos ambientes de publicação por administradores e moderadores da comunidade (membros da comunidade confiáveis atribuídos como moderadores).
 
 Os administradores e os moderadores da comunidade também podem executar moderação [](in-context.md) no contexto no ambiente de publicação.
 
 Um recurso de todos os sites [da](sites-console.md) comunidade é um item de `Administration`menu disponível para usuários que fazem logon com privilégios administrativos. O `Administration`link fornece acesso ao console Moderação.
 
-No console Moderação, os administradores e moderadores da comunidade terão acesso a todo o conteúdo gerado pelo usuário (UGC) para o qual eles têm permissão para moderar. Se for permitido moderar vários sites, é possível exibir publicações em todos os sites ou filtrar por sites de comunidades selecionadas.
+No console Moderação, os administradores e moderadores da comunidade terão acesso a todo o conteúdo gerado pelo usuário (UGC) para o qual eles têm permissão para moderar. Se for permitido moderar vários sites, é possível visualização as publicações em todos os sites ou filtrar por sites de comunidades selecionadas.
 
 Para obter informações mais detalhadas, visite [Gerenciar usuários e grupos](users.md)de usuários.
 
 O console Moderação suporta:
-* Execução de tarefas de moderação em massa
+* Realização de tarefas de moderação em massa
 * Pesquisando UGC
 * Exibição de detalhes do UGC
 * Exibição de detalhes do autor UGC
 
-Somente quando conectado como um administrador, ou um membro com ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, pode executar tarefas de moderação.
+Somente quando conectado como um administrador, ou um membro com ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, pode ser realizada a moderação de tarefas.
 
-## Publicar acesso ao ambiente {#publish-environment-access}
+## Publicar acesso ao Ambiente {#publish-environment-access}
 
 O acesso ao console de Moderação de um site da comunidade publicado é feito por meio de um link de Administração que é exibido quando um moderador da comunidade está conectado.
 
@@ -45,17 +48,17 @@ Ao selecionar o link Administração, o console Moderação é exibido:
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-## Acesso ao ambiente do autor {#author-environment-access}
+## Acesso ao Ambiente do autor {#author-environment-access}
 
 No ambiente do autor, para acessar o console Moderação
 
 * Da navegação global: **[!UICONTROL Navegação > Comunidades > Moderação]**
 
-Somente quando conectado como um administrador, ou como um membro com ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, podem ser executadas tarefas de moderação. O único conteúdo da comunidade exibido é aquele que o membro conectado tem permissão para moderar.
+Somente quando conectado como administrador, ou como membro com ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, as tarefas de moderação podem ser executadas. O único conteúdo da comunidade exibido é aquele que o membro conectado tem permissão para moderar.
 
 >[!NOTE]
 >
->O UGC do ambiente de publicação só estará visível no autor se o SRP escolhido implementar uma loja comum. Por exemplo, por padrão, o armazenamento é JSRP, que não é uma loja comum para autor e publicação. Consulte Armazenamento [de conteúdo da](working-with-srp.md)comunidade.
+>O UGC do ambiente publish só estará visível no autor se o SRP escolhido implementar uma loja comum. Por exemplo, por padrão, o armazenamento é JSRP, que não é uma loja comum para autor e publicação. Consulte Armazenamento [de conteúdo da](working-with-srp.md)comunidade.
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
@@ -118,11 +121,11 @@ No entanto, se você marcar **Pergunta** e **Pendente**, verá somente o conteú
 
 >[!NOTE]
 >
->Os moderadores da comunidade podem marcar os filtros predefinidos na interface do console de moderação. Como esses filtros são anexados ao final do URL (como parâmetros da string de consulta), os moderadores podem voltar aos filtros marcados posteriormente e também compartilhar esses links.
+>Os moderadores da comunidade podem marcar os filtros predefinidos na interface do usuário do console de moderação. Como esses filtros são anexados ao final do URL (como parâmetros de string de query), os moderadores podem voltar aos filtros marcados posteriormente e também compartilhar esses links.
 
 ![search icon](assets/searchicon.png)
 
-Quando o painel de filtros estiver aberto, o ícone Pesquisar alterna o painel lateral para fechá-lo. Entretanto, para fechar o painel de filtros e exibir somente o conteúdo gerado pelo usuário, clique no ícone Pesquisar e selecione a opção Somente conteúdo.
+Quando o trilho do filtro estiver aberto, o ícone Pesquisar alterna o painel lateral para fechado. No entanto, para fechar o painel de filtros e somente visualização o conteúdo gerado pelo usuário, clique no ícone Pesquisar e selecione a opção Somente conteúdo.
 
 #### Caminho do conteúdo {#content-path}
 
@@ -138,13 +141,13 @@ A pesquisa de texto limita o UGC referenciado exibido às postagens que contêm 
 
 #### Site {#site}
 
-O site limita o UGC referenciado exibido às publicações em sites da comunidade selecionados. Se nenhum site for marcado, todas as referências ao UGC serão exibidas.
+O site limita o UGC referenciado exibido às postagens nos sites da comunidade selecionados. Se nenhum site for marcado, todas as referências ao UGC serão exibidas.
 
 ![chlimage_1-474](assets/chlimage_1-474.png)
 
 >[!NOTE]
 >
->Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são exibidas, incluindo sites não criados com o assistente [de criação de](sites-console.md)site, como as amostras do Geometrixx.
+>Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são exibidas, incluindo sites não criados com o assistente [de criação de](sites-console.md)site, como amostras de Geometrixx.
 >
 >Quando o console de moderação em massa é acessado na publicação por um membro da comunidade confiável, somente as referências ao UGC criado para sites da comunidade que o membro está autorizado a moderar são mostradas e podem ser filtradas com o filtro Site.
 
@@ -196,7 +199,7 @@ O status limita o UGC referenciado exibido às postagens do status selecionado, 
 
 >[!NOTE]
 >
->Se apenas o status Não respondida for selecionado, o moderador visualizará todo o conteúdo (para todos os tipos de conteúdo), exceto as perguntas respondidas. Isso ocorre porque a propriedade responsável pela Pergunta respondida não existe no caso de perguntas não respondidas e outros conteúdos, como tópico do fórum, artigo do blog ou comentários.
+>Se apenas o status Não respondida for selecionado, então o moderador visualizará todo o conteúdo (para todos os tipos de conteúdo), exceto as perguntas respondidas. Isso ocorre porque a propriedade responsável pela Pergunta respondida não existe no caso de perguntas não respondidas e outros conteúdos, como tópico do fórum, artigo do blog ou comentários.
 
 ![status](assets/statuses.png)
 
@@ -256,17 +259,17 @@ Os ícones que permitem essas ações só aparecem na barra de ferramentas quand
 
 No modo de seleção única, é possível
 
-* Exibir detalhes do usuário selecionando o nome do usuário
-* Visualize a publicação no contexto selecionando o link para a publicação
+* Visualização dos detalhes do usuário selecionando o nome do usuário
+* Visualização a publicação no contexto selecionando o link para a publicação
 * [Responder](#reply)
 * [Permitir](#allow)
 * [Negar ](#deny)
 * [Excluir](#delete)
 * [Fechar](#close)
-* Exibir histórico [de moderação](#moderation-history)
+* Histórico [de moderação da Visualização](#moderation-history)
 * [Visualizar Detalhes](#viewdetails)
 
-Presente na exibição de cartão acima dos ícones de ação de moderação é o texto da publicação e abaixo estão os dados que indicam
+Presente na visualização do cartão acima dos ícones de ação de moderação é o texto da publicação e abaixo estão os dados que indicam
 
 * Se tiver respondido, e, em caso afirmativo, precedido do número de respostas
 * Se tiver sido sinalizado
@@ -317,7 +320,7 @@ Ao trabalhar com uma única publicação, um ícone Fechar será exibido se o ti
 
 Ao trabalhar com uma única publicação, um ícone Histórico de moderação aparecerá ao passar o mouse sobre ela. Selecionar o ícone exibirá um painel contendo um histórico de ações tomadas em relação à publicação do UGC.
 
-Para retornar à exibição da área de conteúdo de várias publicações UGC, selecione o X no canto superior direito do painel de detalhes da exibição.
+Para retornar à exibição da área de conteúdo de várias postagens UGC, selecione o X no canto superior direito do painel de detalhes da visualização.
 
 Por exemplo:
 
@@ -331,7 +334,7 @@ Ao trabalhar com uma única publicação, mais detalhes podem ser exibidos ao ab
 
 Para fazer isso, passe o mouse sobre a publicação para exibir o `View Detail` ícone e selecione-o para exibir um painel que contenha mais detalhes da publicação.
 
-Para retornar à exibição da área de conteúdo de várias publicações UGC, selecione o X no canto superior direito do painel de detalhes da exibição.
+Para retornar à exibição da área de conteúdo de várias postagens UGC, selecione o X no canto superior direito do painel de detalhes da visualização.
 
 Por exemplo:
 
