@@ -13,19 +13,19 @@ ht-degree: 5%
 
 # Processar ativos usando manipuladores de mídia e workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Os ativos Adobe Experience Manager fornecem um conjunto de workflows padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define um gerenciamento de ativos típico e uma tarefa de processamento e, em seguida, delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
+O Adobe Experience Manager Assets fornece um conjunto de workflows padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define um gerenciamento de ativos típico e uma tarefa de processamento e, em seguida, delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
 
-É possível definir um fluxo de trabalho que é executado automaticamente quando um ativo de um tipo ou formato específico é carregado no servidor. As etapas de processamento são definidas como uma série de manipuladores de mídia do AEM Assets. O AEM fornece alguns manipuladores [integrados,](#default-media-handlers) e outros podem ser desenvolvidos [](#creating-a-new-media-handler) personalizados ou definidos delegando o processo a uma ferramenta [de linha de](#command-line-based-media-handler)comando.
+É possível definir um fluxo de trabalho que é executado automaticamente quando um ativo de um tipo ou formato específico é carregado no servidor. As etapas de processamento são definidas como uma série de manipuladores de mídia AEM Assets. AEM fornece alguns manipuladores [integrados,](#default-media-handlers) e outros podem ser desenvolvidos [](#creating-a-new-media-handler) personalizados ou definidos delegando o processo a uma ferramenta [de linha de](#command-line-based-media-handler)comando.
 
-Os manipuladores de mídia são serviços dentro dos ativos AEM que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado no AEM, um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com workflows. Os tipos MIME mais comuns são suportados no AEM. tarefas específicas podem ser executadas em ativos estendendo/criando workflows, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
+Os manipuladores de mídia são serviços dentro da AEM Assets que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado no AEM, um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com workflows. Os tipos MIME mais comuns são suportados no AEM. tarefas específicas podem ser executadas em ativos estendendo/criando workflows, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
 
 >[!NOTE]
 >
->Consulte a página de formatos [suportados pelos](assets-formats.md) ativos para obter uma descrição de todos os formatos suportados pelos ativos AEM, bem como dos recursos suportados para cada formato.
+>Consulte a página de formatos [suportados pelos](assets-formats.md) Ativos para obter uma descrição de todos os formatos suportados pela AEM Assets, bem como dos recursos suportados para cada formato.
 
 ## Manipuladores de mídia padrão {#default-media-handlers}
 
-Os seguintes manipuladores de mídia estão disponíveis nos ativos AEM e lidam com os tipos MIME mais comuns:
+Os seguintes manipuladores de mídia estão disponíveis no AEM Assets e lidam com os tipos MIME mais comuns:
 
 | Nome do manipulador | Nome do serviço (no Console do sistema) | Tipos MIME suportados |
 |---|---|---|
@@ -59,7 +59,7 @@ Todos os manipuladores executam as seguintes tarefas:
 
 Os manipuladores de mídia são serviços normalmente usados em combinação com workflows.
 
-O AEM tem alguns workflows padrão para processar ativos. Para visualização, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que são start com os ativos AEM são os ativos específicos.
+AEM tem alguns workflows padrão para processar ativos. Para visualização, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que são start com o AEM Assets são os ativos específicos.
 
 workflows existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
 
@@ -129,7 +129,7 @@ Proceda do seguinte modo:
 
 Consulte Ferramentas [de](../sites-developing/dev-tools.md) desenvolvimento para instalar e configurar o Eclipse com um plug-in Maven e para configurar as dependências necessárias para o projeto Maven.
 
-Depois de executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, os metadados do arquivo são extraídos e duas miniaturas com uma marca d&#39;água são geradas.
+Após executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, os metadados do arquivo são extraídos e duas miniaturas com uma marca d&#39;água são geradas.
 
 1. No Eclipse, crie um projeto `myBundle` Maven:
 
@@ -140,8 +140,8 @@ Depois de executar o procedimento a seguir, ao carregar um arquivo de texto no A
 
       * ID do grupo: com.day.cq5.myhandler
       * Id do artefato: myBundle
-      * Nome: Meu pacote do AEM
-      * Descrição: Este é meu pacote do AEM
+      * Nome: Meu pacote AEM
+      * Descrição: Este é o meu pacote AEM
    1. Click **[!UICONTROL Finish]**.
 
 
@@ -435,9 +435,9 @@ Depois de executar o procedimento a seguir, ao carregar um arquivo de texto no A
 
 ## Manipulador de Mídia Baseado em Linha de Comando {#command-line-based-media-handler}
 
-O AEM permite que você execute qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como ImageMagick) e adicionar a nova representação ao ativo. Você só precisa instalar a ferramenta de linha de comando no disco que hospeda o servidor AEM e adicionar e configurar uma etapa do processo ao fluxo de trabalho. O processo chamado `CommandLineProcess`, também permite filtrar de acordo com tipos MIME específicos e criar várias miniaturas com base na nova execução.
+AEM permite executar qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como ImageMagick) e adicionar a nova representação ao ativo. Você só precisa instalar a ferramenta de linha de comando no disco que hospeda o servidor AEM e adicionar e configurar uma etapa do processo ao fluxo de trabalho. O processo chamado `CommandLineProcess`, também permite filtrar de acordo com tipos MIME específicos e criar várias miniaturas com base na nova execução.
 
-As seguintes conversões podem ser executadas e armazenadas automaticamente nos ativos AEM:
+As conversões a seguir podem ser executadas e armazenadas automaticamente no AEM Assets:
 
 * Transformação de EPS e AI usando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/)
 * Transcodificação de vídeo FLV usando [FFmpeg](https://ffmpeg.org/)
@@ -446,7 +446,7 @@ As seguintes conversões podem ser executadas e armazenadas automaticamente nos 
 
 >[!NOTE]
 >
->Em sistemas que não sejam Windows, a ferramenta FFMpeg retorna um erro ao gerar execuções para um ativo de vídeo que tem uma única citação (&#39;) no nome do arquivo. Se o nome do arquivo de vídeo incluir uma única citação, remova-a antes de carregá-la para o AEM.
+>Em sistemas que não sejam Windows, a ferramenta FFMpeg retorna um erro ao gerar execuções para um ativo de vídeo que tem uma única citação (&#39;) no nome do arquivo. Se o nome do arquivo de vídeo incluir uma única citação, remova-a antes de fazer upload para AEM.
 
 O `CommandLineProcess` processo executa as seguintes operações na ordem em que são listadas:
 
@@ -460,7 +460,7 @@ O `CommandLineProcess` processo executa as seguintes operações na ordem em que
 
 ### Um exemplo usando ImageMagick {#an-example-using-imagemagick}
 
-O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que cada vez que um ativo com o tipo mime gif ou tiff for adicionado a /content/dam no servidor AEM, uma imagem invertida do original seja criada junto com três miniaturas adicionais (140x100, 48x48 e 10x250).
+O exemplo a seguir mostra como configurar a etapa de processo da linha de comando para que cada vez que um ativo com o tipo mime gif ou tiff for adicionado a /content/dam no servidor AEM, uma imagem invertida do original seja criada junto com três miniaturas adicionais (140x100, 48x48 e 10x250).
 
 Para fazer isso, use ImageMagick. Instale o ImageMagick no disco que hospeda o servidor AEM:
 
