@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +44,7 @@ Na guia **[!UICONTROL Textos e etiquetas]** , especifique o identificador intern
 
 **[!UICONTROL Nome]** Tally (*Obrigatório*) Um nome simples para o `Rating`que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Membros {#members}
 
