@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 translation-type: tm+mt
 source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-As ações de Gerenciamento de conteúdo são os elementos básicos que ajudam a criar e gerenciar artigos em um aplicativo. As ações a seguir são executadas em artigos dentro do aplicativo.
+As ações de Gestão de conteúdo são os blocos de construção que ajudam a criar e gerenciar artigos em um aplicativo. As ações a seguir são executadas em artigos dentro do aplicativo.
 
 ## Visão geral dos artigos {#articles-overview}
 
@@ -29,12 +32,13 @@ Os artigos representam o texto com base na arte para transmitir informações.
 
 >[!NOTE]
 >
->Consulte os seguintes recursos na Ajuda online para saber mais sobre os seguintes tópicos em aplicativos do AEM Mobile:
+>Consulte os seguintes recursos na Ajuda online para saber mais sobre os seguintes tópicos em aplicativos AEM Mobile:
 >
 >* [Considerações de design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [Gerenciamento de artigos](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+
 >
 
 
@@ -74,7 +78,7 @@ O fluxo de trabalho para importar um novo artigo
 
 ## Editar um artigo {#editing-an-article}
 
-Use o editor arrastar e soltar incorporado do AEM para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. Imagens de ativos DAM podem ser inseridas.
+Use o editor incorporado AEM arrastar e soltar para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. Imagens de ativos DAM podem ser inseridas.
 
 >[!CAUTION]
 >
@@ -83,22 +87,22 @@ Use o editor arrastar e soltar incorporado do AEM para adicionar ou alterar um a
 O fluxo de trabalho para editar um artigo:
 
 1. No Mobile, escolha seu aplicativo Mobile On-Demand no catálogo.
-1. Selecione um artigo de origem do AEM no bloco **Gerenciar artigos** .
-1. Clique no artigo destacado na exibição de lista para abri-lo no editor de conteúdo.
+1. Selecione um artigo de origem AEM no bloco **Gerenciar artigos** .
+1. Clique no artigo destacado da visualização de lista para abri-la no editor de conteúdo.
 1. Use o editor de conteúdo para arrastar o conteúdo do artigo (manuscritos, imagens, texto etc.).
 
 ### Exibição e edição de metadados em um artigo {#viewing-and-editing-the-metadata-within-an-article}
 
-Conteúdos como artigos, banners etc têm várias propriedades, como títulos, descrições, imagens. Esta ação é usada para exibir e modificar essas propriedades. Como opção, essas alterações podem ser carregadas para Mobile On-Demand ao salvar.
+Conteúdos como artigos, banners etc têm várias propriedades, como títulos, descrições, imagens. Essa ação é usada para visualização e modificação dessas propriedades. Como opção, essas alterações podem ser carregadas para Mobile On-Demand ao salvar.
 
-O fluxo de trabalho geral para exibir/editar um artigo:
+O fluxo de trabalho geral para visualização/edição de um artigo:
 
 1. No Mobile, escolha seu aplicativo Mobile On-Demand no catálogo.
 1. Escolha um artigo no bloco **Gerenciar artigos** .
 
-1. Na barra de ações, selecione **Exibir propriedades** .
-1. Exibir todos os metadados disponíveis para esse artigo.
-1. Edite os metadados, se desejar, e clique em **Salvar** quando concluído.
+1. Na barra de ações, selecione Propriedades **da** Visualização.
+1. Visualização todos os metadados disponíveis para esse artigo.
+1. Edite os metadados, se desejado, e clique em **Salvar** quando concluído.
 1. Como opção, carregue as alterações imediatamente no Mobile On-Demand.
 
 ## Upload de um artigo {#uploading-an-article}
@@ -109,7 +113,7 @@ O fluxo de trabalho geral para carregar um artigo:
 
 1. No **Mobile**, escolha seu aplicativo Mobile On-Demand no catálogo.
 1. No bloco **Gerenciar artigos** , selecione um artigo para upload no Mobile On-Demand.
-1. Adicione mais artigos, se necessário, da exibição de lista.
+1. Adicione mais artigos, se necessário, da visualização da lista.
 1. Selecione **Carregar** na barra de ações e clique em Carregar na caixa de diálogo.
 1. Seus artigos agora são carregados para Mobile On-Demand.
 
@@ -117,13 +121,13 @@ O fluxo de trabalho geral para carregar um artigo:
 
 ## Excluindo um artigo {#deleting-an-article}
 
-Essa operação exclui o conteúdo selecionado do Mobile On-Demand e, opcionalmente, da instância do AEM local.
+Esta operação exclui o conteúdo selecionado do Mobile On-Demand e, opcionalmente, da instância de AEM local.
 
 O fluxo de trabalho geral para excluir um artigo:
 
 1. No Mobile, escolha seu aplicativo Mobile On-Demand no catálogo.
 1. Selecione o artigo a ser excluído no bloco **Gerenciar artigos** .
-1. Certifique-se de que esteja selecionado na lista (selecione outras pessoas para excluir, conforme necessário).
+1. Verifique se está selecionado na lista (selecione outras pessoas para excluir, conforme necessário).
 1. Click **Delete** from the action bar.
 1. Verifique se você deseja excluir do AEM, bem como Mobile On-Demand.
 1. Clique em **Excluir**.
