@@ -9,13 +9,16 @@ topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 1%
 
 ---
 
 
 # Recursos de layout de formulários adaptáveis {#layout-capabilities-of-adaptive-forms}
 
-O Adobe Experience Manager (AEM) permite que você crie formulários adaptativos fáceis de usar que oferecem experiências dinâmicas para usuários finais. O layout do formulário controla como os itens ou componentes são exibidos em um formulário adaptável.
+O Adobe Experience Manager (AEM) permite que você crie formulários adaptativos fáceis de usar que oferta experiências dinâmicas para os usuários finais. O layout do formulário controla como os itens ou componentes são exibidos em um formulário adaptável.
 
 ## Conhecimento pré-requisito {#prerequisite-knowledge}
 
@@ -51,7 +54,7 @@ Um autor de formulário pode associar um layout a cada painel de um formulário 
 
 Os layouts do Painel estão disponíveis no `/libs/fd/af/layouts/panel` local.
 
-![](assets/layouts.png) Lista de layouts de painel para o painel raiz de um formulário **adaptável** Figura: *Lista de layouts de painel em formulários adaptáveis*
+![Lista dos layouts do painel para o painel raiz de um formulário](assets/layouts.png)adaptável **Figura:** *Lista de layouts de painel em formulários adaptáveis*
 
 ### Responsive - everything on one page without navigation {#responsive-everything-on-one-page-without-navigation-br}
 
@@ -61,11 +64,11 @@ Usando esse layout, é possível colocar vários componentes de formulário **[!
 
 ![Um formulário usando layout responsivo, como visto em uma tela pequena](assets/responsive_layout_seen_on_small_screen.png)
 
-**** Figura: *Um formulário usando layout responsivo, como visto em uma tela pequena*
+**Figura:** *Um formulário usando layout responsivo, como visto em uma tela pequena*
 
 ![Um formulário que usa layout responsivo como visto em uma tela grande](assets/responsive_layout_seen_on_large_screen.png)
 
-**** Figura: *Um formulário usando layout responsivo, como visto em uma tela grande*
+**Figura:** *Um formulário que usa layout responsivo como visto em uma tela grande*
 
 ### Assistente - um formulário em várias etapas mostrando uma etapa por vez {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
@@ -77,23 +80,23 @@ Use o `Panel adaptive form` componente para fornecer navegação passo a passo d
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
-![Expressão de conclusão de etapa no layout Assistente para um formulário em várias etapas](assets/layout-sidebar.png)
+![expressão de conclusão de etapas no layout Assistente para um formulário em várias etapas](assets/layout-sidebar.png)
 
-**** Figura: Expressão de conclusão de *etapas no layout Assistente para um formulário em várias etapas*
+**Figura:** *expressão de conclusão de etapas no layout Assistente para um formulário em várias etapas*
 
 ![Um formulário usando o layout do assistente](assets/wizard-layout.png)
 
-**** Figura: *Um formulário usando o Assistente*
+**Figura:** *Um formulário usando o Assistente*
 
 ### Layout para design acordeão {#layout-for-accordion-design}
 
-Usando esse layout, você pode colocar o `Panel adaptive form` componente em um painel com navegação no estilo acordeão. Usando esse layout, também é possível criar painéis repetíveis. Painéis repetidos permitem adicionar ou remover dinamicamente painéis, conforme necessário. É possível definir o número mínimo e máximo de vezes que um painel se repete. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
+Usando esse layout, você pode colocar o `Panel adaptive form` componente em um painel com a navegação no estilo acordeão. Usando esse layout, também é possível criar painéis repetíveis. Painéis repetidos permitem adicionar ou remover dinamicamente painéis, conforme necessário. É possível definir o número mínimo e máximo de vezes que um painel se repete. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
 
-A expressão Resumo pode ser usada para mostrar os valores fornecidos pelo usuário final no título do painel minimizado.
+A expressão de resumo pode ser usada para mostrar os valores fornecidos pelo usuário final no título do painel minimizado.
 
 ![Painéis repetidos usando o layout Acordeão em formulários adaptáveis](assets/repeatable_panels_using_accordion_layout.png)
 
-**** Figura: Painéis *repetidos criados com o layout Acordeão*
+**Figura:** *Painéis repetidos criados com o layout Acordeão*
 
 ### Layout com guias - as guias são exibidas à esquerda {#tabbed-layout-tabs-appear-on-the-left}
 
@@ -101,7 +104,7 @@ Usando esse layout, você pode colocar o `Panel adaptive form` componente em um 
 
 ![No layout com guias, as guias são exibidas à esquerda](assets/tabbed_layout_left.png)
 
-**** Figura: *Guias que aparecem à esquerda de um painel*
+**Figura:** *Guias que aparecem à esquerda de um painel*
 
 ### Layout com guias - as guias são exibidas na parte superior {#tabbed-layout-tabs-appear-on-the-top}
 
@@ -109,7 +112,7 @@ Usando esse layout, você pode colocar o Componente em um painel com a navegaç�
 
 ![Layout com guias em formulários adaptáveis com guias na parte superior](assets/tabbed_layout_top.png)
 
-**** Figura: *Guias que aparecem na parte superior de um painel*
+**Figura:** *Guias que aparecem na parte superior de um painel*
 
 ## Layouts móveis {#mobile-layouts}
 
@@ -117,11 +120,11 @@ Os layouts móveis permitem uma navegação fácil de usar nos dispositivos móv
 
 Esse layout controla a navegação usando uma barra de navegação e um menu de navegação. A barra de navegação mostra o ícone **&lt;** e **>** para indicar as etapas de navegação **seguintes** e **anteriores** no formulário.
 
-Os Layouts móveis estão disponíveis no `/libs/fd/af/layouts/mobile/` local. Por padrão, os seguintes layouts móveis estão disponíveis em formulários adaptáveis.
+Os Layouts móveis estão disponíveis no `/libs/fd/af/layouts/mobile/` local. Os seguintes layouts para dispositivos móveis estão disponíveis em formulários adaptáveis, por padrão.
 
 ![Lista de layouts móveis em formulários adaptáveis](assets/mobile-navigation.png)
 
-**** Figura: *Lista de layouts móveis em formulários adaptáveis*
+**Figura:** *Lista de layouts móveis em formulários adaptáveis*
 
 Ao usar um layout móvel, o menu de formulário, para acessar vários painéis de formulário, fica disponível tocando no ícone ![aem6forms_form_menu](assets/aem6forms_form_menu.png) .
 
@@ -131,7 +134,7 @@ Esse layout, como o nome sugere, mostra os títulos do painel junto com o menu d
 
 ![Layouts móveis com títulos de painel nos cabeçalhos de formulário](assets/mobile_layout_with.png)
 
-**** Figura: Layouts *móveis com títulos de painel nos cabeçalhos de formulário*
+**Figura:** *Layouts móveis com títulos de painel nos cabeçalhos de formulário*
 
 ### Layout sem títulos de painel no cabeçalho do formulário {#layout-without-panel-titles-in-the-form-header}
 
@@ -139,15 +142,15 @@ Esse layout, como o nome sugere, mostra apenas o menu de navegação e a barra d
 
 ![Layouts móveis sem títulos de painel nos cabeçalhos do formulário](assets/mobile_layout_without.png)
 
-**** Figura: Layouts *móveis sem títulos de painel nos cabeçalhos de formulário*
+**Figura:** *Layouts móveis sem títulos de painel nos cabeçalhos do formulário*
 
 ## Layouts da barra de ferramentas {#toolbar-layouts}
 
 O Layout da barra de ferramentas controla o posicionamento e a exibição de todos os botões de ação adicionados aos formulários adaptáveis. O layout pode ser adicionado no nível do formulário ou no nível do painel.
 
-![Uma lista de Layouts da barra de ferramentas em formulários adaptáveis para controlar o layout dos botões](assets/toolbar-layouts.png)
+![Uma lista de layouts da barra de ferramentas em formulários adaptáveis para controlar o layout dos botões](assets/toolbar-layouts.png)
 
-**** Figura: *Uma lista de Layouts da barra de ferramentas em formulários adaptáveis*
+**Figura:** *Uma lista de layouts da barra de ferramentas em formulários adaptáveis*
 
 Os layouts da barra de ferramentas estão disponíveis no `/libs/fd/af/layouts/toolbar` local. por padrão, os formulários adaptáveis fornecem os seguintes Layouts da barra de ferramentas.
 
@@ -157,9 +160,9 @@ Esse layout é selecionado como o layout padrão quando você adiciona qualquer 
 
 Além disso, você pode adicionar várias barras de ferramentas que contêm botões de ação configurados com esse layout. Um botão de ação está associado a um controle de formulário. É possível configurar as barras de ferramentas para serem anteriores ou posteriores a um painel.
 
-![Exibição padrão da barra de ferramentas](assets/toolbar_layout_default.png)
+![visualização padrão da barra de ferramentas](assets/toolbar_layout_default.png)
 
-**** Figura: Exibição *padrão da barra de ferramentas*
+**Figura:** *visualização padrão da barra de ferramentas*
 
 ### Layout móvel fixo para a barra de ferramentas {#mobile-fixed-layout-for-toolbar}
 
@@ -171,5 +174,5 @@ Para o layout móvel, é possível adicionar botões de ação usando ícones.
 
 ![Layout móvel fixo para a barra de ferramentas](assets/toolbar_layout_mobile_fixed.png)
 
-**** Figura: Layout fixo *móvel para a barra de ferramentas*
+**Figura:** *Layout fixo móvel para a barra de ferramentas*
 
