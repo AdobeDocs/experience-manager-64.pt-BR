@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
 source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -35,7 +38,7 @@ No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de
 
 >[!NOTE]
 >
->O AEM e o Dispatcher são usados para publicar essa documentação do AEM.
+>AEM e o Dispatcher são usados para publicar essa documentação AEM.
 
 ## Ambiente de criação {#author-environment}
 
@@ -77,7 +80,7 @@ Quando o site do AEM é um [site da comunidade](/help/communities/overview.md), 
 >
 >Infelizmente, há uma sobreposição na terminologia usada. Isso pode acontecer ao:
 >
->* **Publicar/Desfazer publicação**
+>* **Publicar/Desfazer a publicação**
    >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
    >
    >
@@ -93,4 +96,4 @@ Quando o site do AEM é um [site da comunidade](/help/communities/overview.md), 
 
 ## Dispatcher {#dispatcher}
 
-Para otimizar o desempenho para os visitantes do seu site, o **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implementa o balanceamento de carga e o cache.
+Para otimizar o desempenho para os visitantes do seu site, o **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)implementa o balanceamento de carga e o cache.**
