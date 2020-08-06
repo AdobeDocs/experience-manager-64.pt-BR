@@ -1,6 +1,6 @@
 ---
-title: Referência da etapa do fluxo de trabalho
-seo-title: Referência da etapa do fluxo de trabalho
+title: Referência da Etapa do Fluxo de Trabalho
+seo-title: Referência da Etapa do Fluxo de Trabalho
 description: 'null'
 seo-description: 'null'
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2833'
+ht-degree: 2%
 
 ---
 
 
-# Referência da etapa do fluxo de trabalho{#workflow-step-reference}
+# Referência da Etapa do Fluxo de Trabalho{#workflow-step-reference}
 
 Os modelos de fluxo de trabalho consistem em uma série de etapas de vários tipos. De acordo com o tipo, essas etapas podem ser configuradas e estendidas com parâmetros e scripts para fornecer a funcionalidade e o controle necessários.
 
@@ -25,8 +28,9 @@ Os modelos de fluxo de trabalho consistem em uma série de etapas de vários tip
 >
 >Para ver as etapas específicas do módulo, consulte também:
 >
->* [Referência da etapa do fluxo de trabalho do AEM Forms](/help/forms/using/aem-forms-workflow-step-reference.md)
+>* [Referência da etapa do AEM Forms Workflow](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Processando ativos usando manipuladores de mídia e fluxos de trabalho](/help/assets/media-handlers.md)
+
 >
 
 
@@ -55,7 +59,7 @@ Uma combinação das seguintes propriedades está disponível para a maioria dos
 
    O período após o qual a etapa será &quot;atingida&quot;.
 
-   Você pode selecionar entre: **[!UICONTROL Desligado]**, **[!UICONTROL Imediato]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]******, 24h.
+   Você pode selecionar entre: **[!UICONTROL Desligado]**, **[!UICONTROL Imediato]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **** 24h.
 
 * **[!UICONTROL Tempo limite do Handler]**
 
@@ -81,7 +85,7 @@ As seguintes propriedades estão disponíveis para vários componentes de etapa 
    * Uma caixa de seleção suspensa permitirá que você navegue e selecione um usuário ou grupo.
    * Se você atribuir a etapa a um usuário específico, somente esse usuário poderá executar uma ação na etapa.
    * Se você atribuir a etapa a um grupo inteiro, então quando o fluxo de trabalho atingir essa etapa, todos os usuários desse grupo terão a ação em sua Caixa de entrada **[!UICONTROL de fluxo de trabalho]**.
-   * Consulte [Participação em fluxos de trabalho](/help/sites-authoring/workflows-participating.md) para obter mais informações.
+   * Consulte [Participação em Workflows](/help/sites-authoring/workflows-participating.md) para obter mais informações.
 
 ## E dividir {#and-split}
 
@@ -96,36 +100,36 @@ A divisão **[!UICONTROL AND]** cria uma divisão no fluxo de trabalho, após a 
    * **[!UICONTROL Nome]** da divisão: Atribuir uma denominação para fins explicativos.
    * Selecionar o número de ramificações necessárias; 2, 3, 4 ou 5.
 
-* Adicione etapas de fluxo de trabalho às ramificações, conforme necessário.
+* Adicione as etapas do fluxo de trabalho às ramificações, conforme necessário.
 
    ![wf-27](assets/wf-27.png)
 
 ## Etapa do contêiner {#container-step}
 
-Uma etapa **[!UICONTROL do contêiner]** inicia outro modelo de fluxo de trabalho que é executado como um fluxo de trabalho filho.
+Uma etapa do **[!UICONTROL Container]** start outro modelo de fluxo de trabalho que é executado como um fluxo de trabalho filho.
 
-Este **[!UICONTROL Contêiner]]**permite reutilizar modelos de fluxo de trabalho para implementar sequências comuns de etapas. Por exemplo, um modelo de fluxo de trabalho de tradução poderia ser usado em vários fluxos de trabalho de edição.
+Esse **[!UICONTROL Container]]**permite reutilizar modelos de fluxo de trabalho para implementar sequências comuns de etapas. Por exemplo, um modelo de fluxo de trabalho de tradução poderia ser usado em vários workflows de edição.
 
 ![wf-28](assets/wf-28.png)
 
-### Etapa do contêiner - Configuração {#container-step-configuration}
+### Etapa do Container - Configuração {#container-step-configuration}
 
 Para configurar a etapa, edite e use as seguintes guias:
 
 * [**[!UICONTROL Comum]**](#step-properties-common-tab)
 * **[!UICONTROL Container]**
 
-   * **[!UICONTROL Sub fluxo de trabalho]**: Selecione o fluxo de trabalho para iniciar.
+   * **[!UICONTROL Sub fluxo de trabalho]**: Selecione o fluxo de trabalho a ser start.
 
 ## Etapa Ir para {#goto-step}
 
 A Etapa **** Ir para permite especificar a próxima etapa no modelo de fluxo de trabalho a ser executada, dependendo do resultado de um ECMAScript:
 
-* `true`: A Etapa **[!UICONTROL Ir para]** é concluída e o mecanismo de fluxo de trabalho executa a etapa especificada.
+* `true`: A Etapa **[!UICONTROL Ir para]** é concluída e o motor de workflow executa a etapa especificada.
 
-* `false`: A Etapa **[!UICONTROL Ir para]** é concluída e a lógica de roteamento normal determina a próxima etapa a ser executada.
+* `false`: A Etapa **[!UICONTROL Ir para]** é concluída e a lógica normal do roteamento determina a próxima etapa a ser executada.
 
-A Etapa **[!UICONTROL Ir para]** permite implementar estruturas avançadas de roteamento nos modelos de fluxo de trabalho. Por exemplo, para implementar um loop, a Etapa **** Ir para pode ser definida para executar uma etapa anterior no fluxo de trabalho, com o script avaliando uma condição de loop.
+A Etapa **** Ir para permite que você implemente estruturas de roteamento avançadas em seus modelos de fluxo de trabalho. Por exemplo, para implementar um loop, a Etapa **** Ir para pode ser definida para executar uma etapa anterior no fluxo de trabalho, com o script avaliando uma condição de loop.
 
 ### Etapa Ir para - Configuração {#goto-step-configuration}
 
@@ -197,6 +201,7 @@ A divisão **[!UICONTROL OU]** cria uma divisão no fluxo de trabalho, após a q
       * **[!UICONTROL Caminho]** do script: O caminho para um arquivo que contém o script.
       * **[!UICONTROL Script]**: Adicione o script na caixa.
       * **[!UICONTROL Rota]** padrão: A ramificação padrão é seguida quando várias ramificações são avaliadas como true. Você pode especificar somente uma ramificação como padrão.
+
    >[!NOTE]
    >
    >Há uma guia separada para cada ramificação:
@@ -213,9 +218,9 @@ A divisão **[!UICONTROL OU]** cria uma divisão no fluxo de trabalho, após a q
 
    >[!NOTE]
    >
-   >Consulte [Definindo uma regra para uma divisão](/help/sites-developing/workflows-models.md#example-defining-a-rule-for-an-or-split)OR.
+   >Consulte [Definição de uma regra para uma divisão](/help/sites-developing/workflows-models.md#example-defining-a-rule-for-an-or-split)OR.
 
-* Adicione etapas de fluxo de trabalho às ramificações, conforme necessário.
+* Adicione as etapas do fluxo de trabalho às ramificações, conforme necessário.
 
 ## Etapas e opções do participante {#participant-steps-and-choosers}
 
@@ -238,13 +243,14 @@ Para configurar a etapa, edite e use as seguintes guias:
 >
 >* O fluxo de trabalho está concluído (concluído).
 >* O fluxo de trabalho é abortado (encerrado).
+
 >
 
 
 
 >[!NOTE]
 >
->Algumas propriedades precisam ser configuradas para habilitar notificações por email. Você também pode personalizar o modelo de email ou adicionar um modelo de email para um novo idioma. See [Configuring Email Notification](/help/sites-administering/notification.md) to configure email notifications in AEM.
+>Algumas propriedades precisam ser configuradas para habilitar notificações por email. Você também pode personalizar o modelo de e-mail ou adicionar um modelo de e-mail para um novo idioma. See [Configuring Email Notification](/help/sites-administering/notification.md) to configure email notifications in AEM.
 
 ### Etapa do participante do diálogo {#dialog-participant-step}
 
@@ -396,9 +402,9 @@ Crie um serviço OSGi ou um ECMAScript que selecione um usuário ao qual atribui
 
 * **[!UICONTROL ECMAscript]**
 
-   Os scripts devem incluir uma função chamada getParticipant que retorna uma ID de usuário como um `String` valor. Armazene scripts personalizados em, por exemplo, a `/apps/myapp/workflow/scripts` pasta ou uma subpasta.
+   Os scripts devem incluir uma função chamada getParticipant que retorna uma ID de usuário como um `String` valor. Armazene seus scripts personalizados em, por exemplo, a `/apps/myapp/workflow/scripts` pasta ou uma subpasta.
 
-   Um script de amostra é incluído em uma instância padrão do AEM:
+   Um script de amostra é incluído em uma instância AEM padrão:
 
    `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
@@ -427,12 +433,13 @@ Crie um serviço OSGi ou um ECMAScript que selecione um usuário ao qual atribui
 
    * `SERVICE_PROPERTY_LABEL` campo: Use esse campo para especificar o nome do seletor de participantes. O nome aparece em uma lista de selecionadores de participantes disponíveis nas propriedades Etapa **** dinâmica do participante.
    * `getParticipant` método: Retorna a ID Principal dinamicamente resolvida como um `String` valor.
+
    >[!CAUTION]
    >
    >O `getParticipant` método retorna a ID Principal dinamicamente resolvida. Isso pode ser uma ID de grupo ou de usuário.
    >
    >
-   >No entanto, uma ID de grupo só pode ser usada para uma Etapa **[!UICONTROL de]** participante quando uma lista de participantes for retornada. Para uma Etapa **[!UICONTROL de participante]** dinâmico, uma lista vazia é retornada e não pode ser usada para delegação.
+   >No entanto, uma ID de grupo só pode ser usada para uma Etapa **[!UICONTROL de]** participante, quando uma lista de participantes for retornada. Para uma Etapa **[!UICONTROL de participante]** dinâmico, uma lista vazia é retornada e não pode ser usada para delegação.
 
    Para disponibilizar sua implementação para os componentes Etapa **[!UICONTROL do participante]** dinâmico, adicione sua classe Java a um pacote OSGi que exporta o serviço e implante o pacote no servidor AEM.
 
@@ -497,7 +504,7 @@ Para configurar a etapa, especifique o grupo ou usuário ao qual o item de traba
 
 >[!CAUTION]
 >
->Esta seção trata da seção [Formulários dos Componentes do Foundation para a Criação](/help/sites-authoring/default-components-foundation.md#form)de Página.
+>Esta seção trata da seção [Forms de Componentes básicos para criação](/help/sites-authoring/default-components-foundation.md#form)de página.
 
 #### Etapa do participante do formulário - Configuração {#form-participant-step-configuration}
 
@@ -513,9 +520,9 @@ Para configurar a etapa, edite e use as seguintes guias:
 
 Crie um formulário para uso com uma Etapa **[!UICONTROL de participante de]** formulário como normal. No entanto, os formulários para uma Etapa do participante do formulário devem ter as seguintes configurações:
 
-* O componente **[!UICONTROL Início do formulário]** deve ter a propriedade Tipo **[!UICONTROL de]** ação definida como `Edit Workflow Controlled Resource(s)`.
+* O **[!UICONTROL Start do componente Form]** deve ter a propriedade Tipo **[!UICONTROL de]** ação definida como `Edit Workflow Controlled Resource(s)`.
 
-* O componente **[!UICONTROL Início do formulário]** deve ter um valor para a `Form Identifier` propriedade.
+* O **[!UICONTROL Start do componente Form]** deve ter um valor para a `Form Identifier` propriedade.
 
 * Os componentes do formulário devem ter a propriedade Nome **do** elemento definida como o caminho do nó onde os dados do campo são armazenados. O caminho deve localizar um nó no conteúdo de carga do fluxo de trabalho. O valor usa o seguinte formato:
 
@@ -531,7 +538,7 @@ No exemplo a seguir, os dados de campo são usados como conteúdo de um componen
 
 `./jcr:content/par/text_3/text`
 
-&quot;O primeiro exemplo pode ser usado para qualquer página que o `cq:Page` componente renderizar. O segundo exemplo só pode ser usado quando a página de carga inclui um componente de **Texto** com uma ID de `text_3`.
+&quot;O primeiro exemplo pode ser usado para qualquer página que o `cq:Page` componente renderizar. O segundo exemplo só pode ser usado quando a página de carga inclui um componente de **Texto** que tem uma ID de `text_3`.
 
 O formulário pode ser localizado em qualquer lugar no repositório, no entanto, os usuários do fluxo de trabalho devem estar autorizados a ler o formulário.
 
@@ -578,7 +585,7 @@ Para configurar a etapa, edite e use as seguintes guias:
       * Os serviços ECMAScripts e OSGi padrão, consulte Processos [incorporados para etapas](/help/sites-developing/workflows-process-ref.md)do processo.
       * Criação de ECMAScripts para uma etapa **[!UICONTROL do Processo]** , consulte [Implementação de uma Etapa do Processo com um ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Criação de serviços OSGi para uma etapa do **[!UICONTROL Processo]** , consulte [Implementação de uma etapa do processo com uma classe](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)Java.
-   * **[!UICONTROL Avanço]** do manipulador:Selecione essa opção para avançar automaticamente o fluxo de trabalho para a próxima etapa após a execução. Se não estiver selecionado, o script de implementação deve lidar com a evolução do fluxo de trabalho.
-   * **[!UICONTROL Argumentos]**: Argumentos a serem passados ao processo.
+   * **[!UICONTROL Avanço]** do manipulador: Selecione essa opção para avançar automaticamente o fluxo de trabalho para a próxima etapa após a execução. Se não estiver selecionado, o script de implementação deve lidar com a evolução do fluxo de trabalho.
+   * **[!UICONTROL Argumentos]**: Argumentos a serem passados para o processo.
 
 
