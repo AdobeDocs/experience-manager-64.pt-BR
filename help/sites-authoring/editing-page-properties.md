@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +24,7 @@ Você pode definir as propriedades desejadas para uma página. Eles podem variar
 
 ## Propriedades da página {#page-properties}
 
-As propriedades são distribuídas por meio de várias guias.
+As propriedades são distribuídas por várias guias.
 
 ### Básico {#basic}
 
@@ -42,6 +45,7 @@ As propriedades são distribuídas por meio de várias guias.
       * A nova tag será então exibida com uma pequena estrela à direita, indicando que é uma nova tag.
    * Com a funcionalidade suspensa, você pode selecionar a partir das tags existentes.
    * Um x será exibido ao passar o mouse em cima de uma entrada de tag na caixa de seleção, que pode ser usado para remover a tag desta página.
+
    Para obter mais informações sobre tags, acesse [Usar tags](/help/sites-authoring/tags.md).
 
 * **Ocultar na navegação**
@@ -180,9 +184,9 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
 * **Personalização**
 
-   Selecione uma [Marca para especificar um escopo para a segmentação](/help/sites-authoring/personalization.md).
+   Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-authoring/personalization.md).
 
-### Permissões  {#permissions}
+### Permissões   {#permissions}
 
 * **Permissões**
 
@@ -191,6 +195,7 @@ Define a variação do fragmento de experiência usada para gerar metadados para
    * [Adicionar permissões](/help/sites-administering/user-group-ac-admin.md)
    * [Editar grupo de usuários fechado](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * Exibir as [permissões efetivas](/help/sites-administering/user-group-ac-admin.md)
+
    >[!CAUTION]
    >
    >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown and the CUG permissions will not be editable, nor will the Authentication Requirement on the [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) tab be editable.
@@ -244,11 +249,12 @@ Ao clicar ou tocar em **Propriedades** para definir as propriedades da página:
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    As propriedades da página serão exibidas usando as guias adequadas.
 
 1. Exiba ou edite as propriedades conforme necessário.
 
-1. Em seguida, use **Salvar** para salvar as atualizações, seguido por **Fechar** para retornar ao console.
+1. Em seguida, clique em **Salvar** para salvar as atualizações, e em **Fechar** para retornar ao console.
 
 ### Ao editar uma página {#when-editing-a-page}
 
@@ -273,7 +279,7 @@ No console **Sites**, é possível selecionar várias páginas e usar **Propried
 
 >[!NOTE]
 >
->A edição de itens em massa das propriedades também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/managing-multiple-assets.md) para obter detalhes.
+>A edição em massa de propriedades também está disponível no Assets. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/managing-multiple-assets.md) para obter detalhes.
 >
 >Também existe o [Editor de itens em massa](/help/sites-administering/bulk-editor.md), que permite que você pesquise o conteúdo de várias páginas usando o GQL (Google Query Language) e, em seguida, editar o conteúdo diretamente no editor de itens em massa antes de salvar as alterações para as páginas de origem.
 
@@ -315,6 +321,7 @@ Depois de entrar na edição de itens em massa é possível:
 
       * Apenas as propriedades com um valor comum são mostradas no modo de Exibição.
       * Quando o campo tem vários valores (por exemplo, Tags), eles só serão exibidos quando *todos* forem comuns. Se apenas alguns forem comuns, eles só serão exibidos durante a edição.
+
    Quando não existirem propriedades com um valor comum, uma mensagem será exibida.
 
 * **Editar**
