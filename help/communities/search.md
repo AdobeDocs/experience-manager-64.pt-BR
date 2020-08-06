@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
 source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
 
 O recurso de pesquisa funciona com vários outros recursos, como fóruns, para fornecer a capacidade de pesquisar conteúdo.
 
-Ao adicionar a capacidade de pesquisar postagens inseridas por membros da comunidade, chamado de conteúdo gerado pelo usuário (UGC), há dois componentes: [ e `Search`](#search-features)[ `Search Results`](#search-results).
+Ao adicionar a capacidade de pesquisar postagens inseridas por membros da comunidade, chamado de conteúdo gerado pelo usuário (UGC), há dois componentes: [ `Search`](#search-features) e [ `Search Results`](#search-results).
 
 A página que inclui o `Search Results` componente oferece suporte à pesquisa e à exibição de resultados.
 
 A página que inclui o `Search`componente fornece um local para iniciar uma pesquisa com os resultados que aparecem na `Search Results` página.
 
-O recurso de pesquisa pode ser usado com qualquer outro recurso que permita aos visitantes e membros do site exibir o conteúdo.
+O recurso de pesquisa pode ser usado com qualquer outro recurso que permita aos visitantes e membros do site visualizações conteúdo.
 
 ## Pesquisar {#search-features}
 
 ### Adicionar pesquisa a uma página {#add-search-to-a-page}
 
-Para adicionar um `Search` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / Search` e arrastá-lo para um local em uma página. O uso de `Search` requer uma segunda página para o `Search Results.`
+Para adicionar um `Search` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / Search` e arrastá-lo para um local em uma página. O uso de `Search` requer uma segunda página para a variável `Search Results.`
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
 
@@ -45,7 +48,7 @@ Selecione o componente inserido a ser acessado e selecione o `Search` `Configure
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
-Na guia Configurações **[!UICONTROL de]** pesquisa, especifique como os caminhos são pesquisa quando uma consulta é inserida por um visitante.
+Na guia Configurações **[!UICONTROL de]** pesquisa, especifique como os caminhos são pesquisa quando um query é inserido por um visitante.
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -53,7 +56,8 @@ Na guia Configurações **[!UICONTROL de]** pesquisa, especifique como os caminh
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Página]** de resultado Os resultados serão exibidos em uma página separada especificada usando o navegador para selecionar uma página que contém o `Search Results` componente.
+* **[!UICONTROL Página]** de resultados Os resultados serão exibidos em uma página separada especificada usando o navegador para selecionar uma página que contenha a variável 
+`Search Results` componente.
 
 ## Resultados da pesquisa {#search-results}
 
@@ -79,7 +83,7 @@ Selecione o componente inserido a ser acessado e selecione o `Search Results` `C
 
 ![chlimage_1-377](assets/chlimage_1-377.png)
 
-Na guia Configurações **[!UICONTROL de resultado da]** pesquisa, é possível especificar quais caminhos são incluídos na pesquisa quando uma consulta é inserida por um visitante.
+Na guia Configurações **[!UICONTROL de resultado da]** pesquisa, é possível especificar quais caminhos são incluídos na pesquisa quando um query é inserido por um visitante.
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
