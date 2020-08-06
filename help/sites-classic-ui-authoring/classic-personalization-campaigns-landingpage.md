@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 83%
 
 ---
 
@@ -129,7 +132,7 @@ Este componente de CTA pode ser usado para adicionar um link de texto na página
 
 **Rótulo** Os usuários veem o texto. É possível modificar a formatação com o editor de rich text.
 
-**URL** de destinoDigite o URI que deseja que os usuários visitem se clicarem no texto.
+**URL** do Público alvo Digite o URI que deseja que os usuários visitem se clicarem no texto.
 
 **Opções** de renderização Descreve as opções de renderização. Você pode selecionar:
 
@@ -154,7 +157,7 @@ Esse componente de CTA pode ser usado para adicionar qualquer imagem gráfica co
 
 **Rótulo** O texto que os usuários veem no gráfico. É possível modificar a formatação com o editor de rich text.
 
-**URL** de destinoDigite o URI que deseja que os usuários visitem se clicarem na imagem.
+**URL** do Público alvo Digite o URI que deseja que os usuários visitem se clicarem na imagem.
 
 **Opções** de renderização Descreve as opções de renderização. Você pode selecionar:
 
@@ -230,7 +233,7 @@ A seção a seguir descreve os componentes disponíveis para formulários de lea
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-**Id** de email Permite que os usuários digitem um endereço de email (identificação).
+**Id** de emailPermite que os usuários digitem um endereço de email (identificação).
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -246,7 +249,7 @@ A seção a seguir descreve os componentes disponíveis para formulários de lea
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-**Formulário** principalAdicione esse componente para adicionar um formulário de cliente potencial à sua página inicial. Um formulário de lead contém automaticamente os campos Início do formulário de lead e Final do formulário de lead. No meio, você adiciona os componentes de Formulário de lead descritos nesta seção.
+**Formulário** principalAdicione este componente para adicionar um formulário de cliente potencial à sua landing page. Um formulário de lead contém automaticamente os campos Início do formulário de lead e Final do formulário de lead. No meio, você adiciona os componentes de Formulário de lead descritos nesta seção.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -263,7 +266,7 @@ Duas guias estão disponíveis para configuração **Formulário** e **Avançado
 **Página de agradecimento**
 A página para agradecer aos visitantes por suas informações. Caso deixado em branco, o formulário será exibido novamente após o envio.
 
-**Fluxo de trabalho** inicialDetermina qual fluxo de trabalho é acionado depois que um formulário de cliente potencial é enviado.
+**Fluxo de trabalho** do Start Determina qual fluxo de trabalho é acionado depois que um formulário de cliente potencial é enviado.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -271,8 +274,8 @@ A página para agradecer aos visitantes por suas informações. Caso deixado em 
 
 * Criar lead
 * Serviço de email: criar assinante e adicionar à lista - Use essa opção se estiver trabalhando com um provedor de serviços de email, como o ExactTarget.
-* Serviço de e-mail: Enviar email com resposta automática - Use se estiver usando um provedor de serviços de email como ExactTarget.
-* Serviço de e-mail: Cancelar inscrição do usuário na lista - Use se estiver usando um provedor de serviços de email como ExactTarget.
+* Serviço de e-mail: Enviar email de resposta automática - Use se estiver usando um provedor de serviço de email como ExactTarget.
+* Serviço de e-mail: Cancelar a inscrição do usuário na lista - use se estiver usando um provedor de serviço de email como ExactTarget.
 * Cancelar inscrição do usuário
 
 **Identificador** de formulárioO identificador de formulário identifica-o de forma exclusiva. Use o identificador de formulário caso tenha vários formulários em uma única página; verifique se eles têm identificadores diferentes.
@@ -281,7 +284,7 @@ A página para agradecer aos visitantes por suas informações. Caso deixado em 
 
 Isso é um campo opcional que especifica o caminho para um nó no repositório. Quando este nó tem propriedades que correspondem aos nomes do campo, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Caso não exista nenhuma correspondência, o campo vai conter o valor padrão.
 
-**Validação** do cliente Indica se a validação do cliente é necessária para este formulário (a validação do servidor sempre ocorre). Isso pode ser feito em conjunto com o componente Captcha de formulários.
+**Validação** do cliente Indica se a validação do cliente é necessária para este formulário (a validação do servidor sempre ocorre). Isso pode ser feito em conjunto com o componente Forms Captcha.
 
 **Tipo** de recurso de validaçãoDefine o tipo de recurso de validação do formulário se você deseja validar o formulário de cliente potencial inteiro (em vez de campos individuais).
 
@@ -353,7 +356,7 @@ Supondo que você tenha o pacote de design pronto, as etapas a seguir descrevem 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Arraste e solte o pacote de design na caixa suspensa. Observe que a seta muda de direção quando um pacote é arrastado sobre ela.
-1. Como resultado de arrastar e soltar, você verá a página de aterrissagem no lugar da página do importador. Sua página inicial HTML foi importada com êxito.
+1. Como resultado de arrastar e soltar, você verá a página de aterrissagem no lugar da página do importador. Sua landing page HTML foi importada com êxito.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -399,7 +402,7 @@ Caso o pacote de design importado tenha alguns problemas, por exemplo, se ele fi
 
 ### Redefinição de uma página de aterrissagem {#resetting-a-landing-page}
 
-Caso queira reimportar o pacote de design da página de aterrissagem depois de fazer algumas alterações, poderá “limpar” a página de aterrissagem clicando em **Limpar** na parte superior da página na interface do usuário clássica ou clicando em Limpar no menu de configurações na interface do usuário otimizada para toque. Isso exclui a página de aterrissagem importada e cria uma página de importador em branco.
+Caso queira reimportar o pacote de design da página de aterrissagem depois de fazer algumas alterações, poderá “limpar” a página de aterrissagem clicando em **Limpar** na parte superior da página na interface do usuário clássica ou clicando em Limpar no menu de configurações na interface do usuário otimizada para toque. Isso exclui a landing page importada e cria uma página de importador em branco.
 
 Ao limpar a página de aterrissagem, é possível remover as alterações de conteúdo. If you click **No**, then the content changes are preserved, that is, the structure under `jcr:content/importer`is preserved and only the importer page component and the resources in `etc/design` are removed. Whereas, if you click **Yes**, the `jcr:content/importer` is also removed.
 
@@ -425,7 +428,7 @@ A única exceção é que, ao excluir uma página de aterrissagem para desktops,
 
 ### Publicação de uma página de aterrissagem {#publishing-a-landing-page}
 
-Você pode publicar a página de aterrissagem e todas as suas dependências da mesma forma que publicar uma página normal.
+Você pode publicar a landing page e todas as suas dependências da mesma forma que publicar uma página normal.
 
 >[!NOTE]
 >
