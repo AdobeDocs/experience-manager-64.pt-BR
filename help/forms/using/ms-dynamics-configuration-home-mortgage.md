@@ -9,11 +9,14 @@ topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 0%
 
 ---
 
 
-# Configure o Microsoft Dynamics 365 para o fluxo de trabalho hipotecário residencial do site de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
+# Configurar o Microsoft Dynamics 365 para o fluxo de trabalho hipotecário residencial do site de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Saiba como aproveitar os serviços do Microsoft® Dynamics 365 através de formulários adaptáveis para o fluxo de trabalho hipotecário residencial do site de Referência do We.Finance
 
@@ -21,7 +24,7 @@ Saiba como aproveitar os serviços do Microsoft® Dynamics 365 através de formu
 
 O Microsoft® Dynamics 365 é um software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning, gerenciamento de relacionamento com o cliente) que fornece soluções corporativas para criar e gerenciar contas, contatos, clientes potenciais, oportunidades e casos de clientes.
 
-O AEM Forms fornece um serviço em nuvem para integrar o Dynamics 365 com o módulo [Forms Data Integration](/help/forms/using/data-integration.md) . A explicação passo a passo do aplicativo [Home Mortgage com o Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) mostra como um cliente usa o site de referência We.Finance para solicitar um empréstimo quando o site está usando o Microsoft® Dynamics for Forms Data Integration. Antes de poder usar a apresentação do aplicativo Home Mortgage com o cenário Microsoft® Dynamics, é necessário configurar o Microsoft® Dynamics 365 para ser usado com o site de referência We.Finance.
+A AEM Forms fornece um serviço em nuvem para integrar o Dynamics 365 com o módulo Integração [de dados da](/help/forms/using/data-integration.md) Forms. A apresentação do aplicativo [Home Mortgage do cenário com o Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) mostra como um cliente usa o site de referência We.Finance para solicitar um empréstimo quando o site está usando o Microsoft® Dynamics for Forms Data Integration. Antes de poder usar a apresentação do aplicativo Home Mortgage com o cenário Microsoft® Dynamics, é necessário configurar o Microsoft® Dynamics 365 para ser usado com o site de referência We.Finance.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -34,18 +37,18 @@ Antes de começar a configurar o Dynamics 365, verifique se você:
 * Aplicativo registrado para o serviço do Dynamics 365 com o Microsoft® Azure Ative Diretory
 * ID do cliente e segredo do cliente para o aplicativo registrado
 
-## Vincule a calculadora de hipotecas domésticas à página inicial do site {#link-the-home-mortgage-calculator-with-your-site-home-page}
+## Vincule a calculadora de hipotecas residenciais ao home page do site {#link-the-home-mortgage-calculator-with-your-site-home-page}
 
 1. Na instância do autor, vá para a seguinte página:
 
    https://[sderver]:[porta]/editor.html/content/we-finance/global/en/loan-landing-page.html
 
 1. Role para baixo até a Calculadora Hipoteca Inicial.
-1. Realce o painel da coluna direita (da calculadora) e toque para exibir o menu pop-up. No menu pop-up, toque em Configurar. A caixa de diálogo Editar contêiner de formulários AEM é exibida.
+1. Realce o painel da coluna direita (da calculadora) e toque para exibir o menu pop-up. No menu pop-up, toque em Configurar. A caixa de diálogo Editar Container AEM Forms é exibida.
 
    ![calculadora configurepanel](assets/calculatorconfigurepanel.png)
 
-1. Na caixa de diálogo Editar contêiner de formulários AEM, procure o caminho do ativo e selecione a calculadora de hipoteca inicial no seguinte caminho e toque em **Confirmar**:
+1. Na caixa de diálogo Editar Container AEM Forms, procure o caminho do ativo e selecione a calculadora de hipoteca inicial no seguinte caminho e toque em **Confirmar**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
@@ -56,7 +59,7 @@ Antes de começar a configurar o Dynamics 365, verifique se você:
 
    >[!NOTE]
    >
-   >O vínculo dos campos da calculadora com o FDM é pré-configurado pelo pacote do site de referência We.Finance. Para exibir o vínculo, abra o formulário no modo de criação e veja as referências de vínculo de campo.
+   >O vínculo dos campos da calculadora com o FDM é pré-configurado pelo pacote do site de referência We.Finance. Para visualização do vínculo, abra o formulário no modo de criação e veja as referências de vínculo de campo.
 
 1. Para criar uma entidade personalizada para armazenar o registro do candidato para o aplicativo de hipoteca residencial, importe o pacote da solução AEMFormsFSIRefsite_1_0.zip para a instância do Microsoft® Dynamics:
 
