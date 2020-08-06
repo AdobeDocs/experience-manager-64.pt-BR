@@ -11,21 +11,24 @@ topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 3%
 
 ---
 
 
 # eCommerce{#ecommerce}
 
-A estrutura de integração inclui uma camada de integração com uma API. Isso permite:
+A estrutura de integração inclui uma camada de integração com uma API. Isso permite que você:
 
-* conecte um sistema de eCommerce e extraia dados de produto no AEM
-* crie componentes do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico
+* conecte um sistema de eCommerce e extraia dados de produtos para AEM
+* criar componentes AEM para recursos de comércio, independentemente do mecanismo de eCommerce específico
 
 Para obter mais informações, consulte:
 
 * [Desenvolvimento (genérico)](/help/sites-developing/generic.md)
-* [Desenvolvimento com a SAP Commerce Cloud](/help/sites-developing/sap-commerce-cloud.md)
+* [Desenvolvimento com o SAP Commerce Cloud](/help/sites-developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >
@@ -47,5 +50,5 @@ Consulte a documentação [da](https://helpx.adobe.com/experience-manager/6-4/si
 
 >[!NOTE]
 >
->Para obter um artigo completo detalhando todas as etapas para criar um provedor de comércio eletrônico, consulte [Criação de provedores](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)personalizados de comércio eletrônico do Adobe Experience Manager 6.2.
+>Para obter um artigo completo detalhando todas as etapas para criar um provedor de comércio eletrônico, consulte [Criação de provedores](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)personalizados de comércio eletrônico Adobe Experience Manager 6.2.
 
