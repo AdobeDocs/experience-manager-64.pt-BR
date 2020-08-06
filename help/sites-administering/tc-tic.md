@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Configuração da estrutura de integração de tradução{#configuring-the-translation-integration-framework}
 
-A estrutura de integração de tradução integra-se a serviços de tradução de terceiros para orquestrar a tradução de conteúdo do AEM.
+A estrutura de integração de tradução integra-se a serviços de tradução de terceiros para orquestrar a tradução de conteúdo AEM.
 
 * Conecte-se ao seu provedor de serviço de tradução.
 * Criar uma configuração de estrutura de integração de tradução.
@@ -30,7 +30,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 ## Conexão a um Provedor de serviço de tradução {#connecting-to-a-translation-service-provider}
 
-Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviço de tradução. O AEM inclui a capacidade de se conectar ao Microsoft Translator por padrão.
+Crie uma configuração de nuvem que se conecte AEM ao seu provedor de serviço de tradução. AEM inclui a capacidade de conectar-se ao Microsoft Translator por padrão.
 Os seguintes fornecedores de tradução fornecem uma implementação da nova API para os Projetos de tradução. Links para saber mais sobre a integração:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
@@ -51,8 +51,8 @@ Os seguintes fornecedores de tradução fornecem uma implementação da nova API
 >Para encontrar a última lista de provedores de tradução automática e humana, visite estas páginas:
 >
 >
->* [Tradução do AEM Human](https://www.adobe.com/go/aem-human-translation-connectors)
->* [Tradução automática do AEM](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM Tradução Humana](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [Tradução AEM Máquina](https://www.adobe.com/go/aem-machine-translation-connectors)
 
 >
 
@@ -132,7 +132,7 @@ As propriedades de Sites controlam como a tradução do conteúdo da página é 
 
 ### Propriedades de configuração de comunidades {#communities-configuration-properties}
 
-As propriedades das comunidades controlam como a tradução do conteúdo gerado pelo usuário é executada. A tradução de conteúdo gerado pelo usuário sempre usa tradução automática. Para obter mais informações, consulte [Traduzindo conteúdo](/help/communities/translate-ugc.md)gerado pelo usuário.
+As propriedades das comunidades controlam como a tradução do conteúdo gerado pelo usuário é realizada. A tradução de conteúdo gerado pelo usuário sempre usa tradução automática. Para obter mais informações, consulte [Traduzindo conteúdo](/help/communities/translate-ugc.md)gerado pelo usuário.
 
 | Propriedade | Descrição |
 |---|---|
@@ -186,7 +186,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
  </tbody> 
 </table>
 
-1. Na barra lateral, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Service.
+1. Na barra lateral, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Services.
 1. Na área Integração de tradução, se alguma configuração foi criada, determina qual link será exibido:
 
    * Se nenhuma configuração tiver sido criada, clique ou toque em Configurar agora.
@@ -199,7 +199,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 
 Para configurar a tradução das páginas de origem para outros idiomas, associe as páginas às seguintes configurações de nuvem:
 
-* A configuração da nuvem que conecta o AEM ao seu provedor de tradução.
+* A configuração da nuvem que conecta AEM ao seu provedor de tradução.
 * A estrutura de integração da tradução que configura os detalhes da tradução.
 
 Observe que a configuração em nuvem da estrutura de integração de tradução identifica a configuração em nuvem a ser usada para conexão com o provedor de serviço. Quando você associa uma página de origem a uma configuração da estrutura cloud, a página deve ser associada à configuração da nuvem de provedores de serviço que a configuração da estrutura usa.
@@ -215,7 +215,7 @@ Além disso, para quaisquer componentes [](/help/communities/scf.md) SCF de comu
 Associe uma página ao provedor de tradução que você está usando para traduzir a página e as páginas descendentes.
 
 1. No console Sites, selecione a página a ser configurada e clique ou toque em Propriedades da Visualização.
-1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Cloud Service.
+1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Cloud Services.
 1. Clique ou toque em Adicionar configuração > Integração de tradução.
 1. Selecione o provedor de tradução a ser usado e clique ou toque em Concluído.
 
@@ -224,7 +224,7 @@ Associe uma página ao provedor de tradução que você está usando para traduz
 Associe uma página à Estrutura de integração de tradução que define como você deseja executar a tradução da página e das páginas descendentes.
 
 1. No console Sites, selecione a página a ser configurada e clique ou toque em Propriedades da Visualização.
-1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Cloud Service.
+1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Cloud Services.
 1. Clique ou toque em Adicionar configuração > Integração de tradução.
 1. Selecione a estrutura de integração de tradução a ser usada e clique ou toque em Concluído.
 
