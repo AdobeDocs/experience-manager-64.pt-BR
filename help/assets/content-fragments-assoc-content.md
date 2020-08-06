@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 20%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Algumas funcionalidades do fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
 O conteúdo associado fornece a conexão para que os ativos (isto é,) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para procurar o ativo apropriado.
 
