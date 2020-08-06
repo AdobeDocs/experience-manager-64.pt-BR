@@ -1,9 +1,12 @@
 ---
 title: Sobre o AEM Assets
-description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta de ativos AEM da Adobe.
+description: Saiba o que é gerenciamento de ativos digitais, casos de uso e oferta de ativos da Adobe AEM.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 53%
 
 ---
 
@@ -25,9 +28,9 @@ Completamente integrado ao AEM, o AEM Assets permite que você faça o seguinte:
 * Executar funções de edição de imagens como redimensionamento e adição de filtros de imagem. Importar e exportar vários ativos digitais simultaneamente usando uma pasta WebDAV ou CIFS.
 * Usar fluxos de trabalho e notificações para habilitar o processamento conjunto e o download de qualquer conjunto de ativos e gerenciar direitos de acesso a ativos.
 
-### O AEM Assets está completamente integrado aos recursos WCM do AEM {#aem-assets-fully-integrated-in-cq-wcm}
+### A AEM Assets é completamente integrada com recursos AEM WCM {#aem-assets-fully-integrated-in-cq-wcm}
 
-Os ativos AEM são totalmente integrados ao CQ WCM e a funcionalidade está disponível usando o ícone DAM:
+A AEM Assets está totalmente integrada ao CQ WCM e a funcionalidade está disponível usando o ícone DAM:
 
 <!-- TBD: Update image for branding -->
 
@@ -41,11 +44,11 @@ Os ativos gerenciados no CQ DAM podem ser acessados pelo localizador de conteúd
 
 >[!NOTE]
 >
->A navegação básica da interface do usuário é a mesma do AEM - consulte [Visão geral do console](/help/sites-authoring/qg-page-authoring.md) da GUI para obter detalhes completos.
+>A navegação básica da interface do usuário é a mesma do resto dos AEM - consulte [Visão geral do console](/help/sites-authoring/qg-page-authoring.md) da GUI para obter detalhes completos.
 
 ### Gerenciamento de ativos digitais versus o componente de imagem {#digital-asset-management-versus-image-component}
 
-Ao determinar se uma imagem deve ser colocada nos ativos AEM ou usar o componente de imagem, considere o ciclo de vida da imagem:
+Ao determinar se uma imagem deve ser colocada no AEM Assets ou se o componente de Imagem deve ser usado, considere o ciclo de vida da imagem:
 
 * Se a imagem tiver o mesmo ciclo de vida que a página, use o componente Imagem.
 * Se a imagem tiver um ciclo de vida separado, por exemplo, se você usar a imagem duas vezes ou fora do WCM, use o AEM Assets.
@@ -78,7 +81,7 @@ Ao trabalhar com ativos digitais no AEM, é preciso entender a seguinte terminol
 
 * **Versões:** O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **Sub-ativos:** Os subativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo do Adobe Photoshop ou páginas em um arquivo PDF. No AEM Assets, é possível gerenciar subativos como se fossem ativos.
+* **Sub-ativos:** Os subativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo Adobe Photoshop ou páginas em um arquivo PDF. No AEM Assets, é possível gerenciar subativos como se fossem ativos.
 
 ### Como trabalhar com ativos {#how-to-work-with-assets}
 
