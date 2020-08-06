@@ -1,8 +1,8 @@
 ---
 title: Personalizar imagens usadas em ações de roteiro
 seo-title: Personalizar imagens usadas em ações de roteiro
-description: Como personalizar as imagens usadas em ações de roteiro na área de trabalho do LiveCycle AEM Forms.
-seo-description: Como personalizar as imagens usadas em ações de roteiro na área de trabalho do LiveCycle AEM Forms.
+description: Como personalizar as imagens usadas em ações de roteamento na área de trabalho do LiveCycle AEM Forms.
+seo-description: Como personalizar as imagens usadas em ações de roteamento na área de trabalho do LiveCycle AEM Forms.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -47,7 +47,7 @@ Para personalizar as imagens usadas em ações de rota, execute as etapas descri
 
 ## pop-up de ação da tarefa da Lista da Tarefa {#task-list-task-action-popup}
 
-1. Crie um pop-up de ação de lista de tarefa, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de área de trabalho do AEM Forms. É necessário usar o pacote dev.
+1. Crie um pop-up de ação de lista de tarefa, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espaço de trabalho AEM Forms. É necessário usar o pacote dev.
 
 1. Copie `/libs/ws/js/runtime/templates/task.html` para `/apps/ws/js/runtime/templates/task.html`.
 
