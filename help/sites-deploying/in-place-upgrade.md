@@ -11,6 +11,9 @@ topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 0%
 
 ---
 
@@ -27,15 +30,15 @@ Antes de executar a atualização, há várias etapas que devem ser concluídas.
 
 ## Pré-requisitos de migração {#migration-prerequisites}
 
-* **** Versão mínima necessária do Java: A ferramenta de migração só funciona com versões 7 e posteriores do Java. Observe que para o AEM 6.3 e versões posteriores, o JRE 8 da Oracle e o JRE 7 e 8 da IBM são as únicas versões compatíveis.
+* **Versão mínima necessária do Java:** A ferramenta de migração só funciona com versões 7 e posteriores do Java. Observe que para AEM 6.3 e superior, o JRE 8 da Oracle e o JRE 7 e 8 da IBM são as únicas versões compatíveis.
 
-* **** Instância atualizada: Se você estiver atualizando de uma versão **anterior à 5.6**, certifique-se de ter realizado uma atualização no local para o AEM 6.0 seguindo o procedimento descrito na versão 6.0 da documentação de Atualização.
+* **Instância atualizada:** Se você estiver atualizando de uma versão **anterior à 5.6**, certifique-se de ter realizado uma atualização no local para a AEM 6.0 seguindo o procedimento descrito na versão 6.0 da documentação de Atualização.
 
-## Preparação do arquivo jar do Quickstart do AEM {#prep-quickstart-file}
+## Preparação do ficheiro jar AEM Quickstart {#prep-quickstart-file}
 
 1. Pare a instância se ela estiver sendo executada.
 
-1. Baixe o novo arquivo jar do AEM e use-o para substituir o arquivo antigo fora da `crx-quickstart` pasta.
+1. Baixe o novo arquivo AEM jar e use-o para substituir o arquivo antigo fora da `crx-quickstart` pasta.
 
 1. Desembale o novo boião de início rápido executando:
 
@@ -45,15 +48,16 @@ Antes de executar a atualização, há várias etapas que devem ser concluídas.
 
 ## Migração do repositório de conteúdo {#content-repository-migration}
 
-Essa migração não é necessária se você estiver atualizando do AEM 6.3. Para versões anteriores à 6.3, a Adobe fornece uma ferramenta que pode ser usada para migrar o repositório para a nova versão da barra de segmentos Oak presente no AEM 6.3. Ele é fornecido como parte do pacote de início rápido e é obrigatório para qualquer atualização que esteja usando o TarMK. As atualizações para ambientes que estejam usando o MongoMK não exigem a migração do repositório. For more information on what the benefits of the new Segment Tar format are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Essa migração não é necessária se você estiver atualizando do AEM 6.3. Para versões anteriores à 6.3, o Adobe fornece uma ferramenta que pode ser usada para migrar o repositório para a nova versão da barra de segmentos Oak presente no AEM 6.3. Ele é fornecido como parte do pacote de início rápido e é obrigatório para qualquer atualização que esteja usando o TarMK. As atualizações de ambientes que usam MongoMK não exigem migração de repositório. For more information on what the benefits of the new Segment Tar format are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-A migração real é realizada usando o arquivo jar de início rápido padrão do AEM, executado com uma nova `-x crx2oak` opção que executa a ferramenta crx2oak para simplificar a atualização e torná-la mais robusta.
+A migração real é realizada usando o arquivo jar AEM quickstart padrão, executado com uma nova `-x crx2oak` opção que executa a ferramenta crx2oak para simplificar a atualização e torná-la mais robusta.
 
 >[!NOTE]
 >
->Se você estiver executando a migração de conteúdo do repositório TarMK usando a extensão de Início Rápido CRX2Oak, você poderá remover o modo de execução **de conteúdo de amostra** adicionando o seguinte à linha de comando de migração:
+>Se você estiver executando a migração de conteúdo do repositório TarMK usando a extensão de Início Rápido CRX2Oak, poderá remover o **modo de execução de conteúdo de amostra** adicionando o seguinte à linha de comando de migração:
 >
 >* `--promote-runmode nosamplecontent`
+
 >
 
 
@@ -64,13 +68,13 @@ Para determinar o comando que deve ser executado, use o seguinte comando:
 java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<YOUR_PROFILE>> <<ADDITIONAL_FLAGS>>
 ```
 
-Onde `<<YOUR_PROFILE>>` e `<<ADDITIONAL_FLAGS>>` forem substituídos pelo perfil e sinalizadores listados na tabela a seguir:
+Em que `<<YOUR_PROFILE>>` e `<<ADDITIONAL_FLAGS>>` são substituídos pelo perfil e pelos sinalizadores listados na tabela a seguir:
 
 <table> 
  <tbody> 
   <tr> 
    <td><strong>Repositório de origem</strong></td> 
-   <td><strong>Repositório do Target</strong></td> 
+   <td><strong>Repositório de Públicos alvos</strong></td> 
    <td><strong>Perfil</strong></td> 
    <td><strong>Sinalizadores adicionais</strong><br /> </td> 
   </tr> 
@@ -123,21 +127,21 @@ Onde `<<YOUR_PROFILE>>` e `<<ADDITIONAL_FLAGS>>` forem substituídos pelo perfil
 
 * Se você estiver usando o Java 7, adicione o `-XX:MaxPermSize=2048m` parâmetro logo após o `-Xmx` parâmetro.
 
-Para obter instruções adicionais sobre como usar a ferramenta crx2oak, consulte Uso da ferramenta [de migração](/help/sites-deploying/using-crx2oak.md)CRX2Oak. O JAR auxiliar do crx2oak pode ser atualizado manualmente se necessário, substituindo-o manualmente por versões mais recentes depois de desempacotar o início rápido. Sua localização na pasta de instalação do AEM é: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. A versão mais recente da ferramenta de migração CRX2Oak está disponível para download no Adobe Repository em: [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
+Para obter instruções adicionais sobre como usar a ferramenta crx2oak, consulte Uso da ferramenta [de migração](/help/sites-deploying/using-crx2oak.md)CRX2Oak. O JAR auxiliar do crx2oak pode ser atualizado manualmente se necessário, substituindo-o manualmente por versões mais recentes depois de desempacotar o início rápido. Sua localização na pasta de instalação AEM é: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. A versão mais recente da ferramenta de migração CRX2Oak está disponível para download no Repositório de Adobe em: [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
-Se a migração tiver sido concluída com êxito, a ferramenta sairá com um código de saída zero. Além disso, verifique se há mensagens WARN e ERROR no `upgrade.log` arquivo, localizado `crx-quickstart/logs` no diretório de instalação do AEM, pois isso pode indicar erros não fatais que ocorreram durante a migração.
+Se a migração tiver sido concluída com êxito, a ferramenta sairá com um código de saída zero. Além disso, verifique se há mensagens WARN e ERROR no `upgrade.log` arquivo, localizado `crx-quickstart/logs` no diretório de instalação AEM, pois isso pode indicar erros não fatais que ocorreram durante a migração.
 
-Verifique os arquivos de configuração abaixo da `crx-quickstart/install` pasta. Se uma migração for necessária, ela será atualizada para refletir o repositório de destino.
+Verifique os arquivos de configuração abaixo da `crx-quickstart/install` pasta. Se uma migração for necessária, ela será atualizada para refletir o repositório do público alvo.
 
 >[!NOTE]
 >
->Embora `FileDataStore` seja o novo padrão para instalações do AEM 6.3, não é necessário usar um armazenamento de dados externo. Embora o uso de um armazenamento de dados externo seja recomendado como uma prática recomendada para implantações de produção, não é um pré-requisito para a atualização. Devido à complexidade já presente na atualização do AEM, recomendamos executar a atualização sem fazer uma migração de armazenamento de dados. Se desejar, uma migração de armazenamento de dados pode ser executada posteriormente como um esforço separado.
+>Embora `FileDataStore` seja o novo padrão para instalações AEM 6.3, não é necessário usar um armazenamento de dados externo. Embora o uso de um armazenamento de dados externo seja recomendado como uma prática recomendada para implantações de produção, não é um pré-requisito para a atualização. Devido à complexidade já presente no AEM de atualização, recomendamos executar a atualização sem fazer uma migração de armazenamento de dados. Se desejar, uma migração de armazenamento de dados pode ser executada posteriormente como um esforço separado.
 
 ## Solução de problemas de migração {#troubleshooting-migration-issues}
 
-Ignore esta seção se estiver atualizando da 6.3. Embora os perfis de crx2oak fornecidos devam atender às necessidades da maioria dos clientes, há momentos em que parâmetros adicionais serão necessários. Se você encontrar um erro durante a migração, é possível que haja aspectos do seu ambiente que exijam opções de configuração adicionais. Em caso afirmativo, você provavelmente encontrará o seguinte erro:
+Ignore esta seção se estiver atualizando da 6.3. Embora os perfis crx2oak fornecidos devam atender às necessidades da maioria dos clientes, há momentos em que parâmetros adicionais serão necessários. Se você encontrar um erro durante a migração, é possível que haja aspectos do seu ambiente que exijam opções de configuração adicionais. Em caso afirmativo, você provavelmente encontrará o seguinte erro:
 
-**Os pontos de verificação não serão copiados porque nenhum armazenamento de dados externo foi especificado. Isso resultará na reindexação completa do repositório na primeira inicialização. Use —ignore os pontos de verificação para forçar a migração ou consulte https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration para obter mais informações.**
+**Os pontos de verificação não serão copiados porque nenhum armazenamento de dados externo foi especificado. Isso resultará na reindexação completa do repositório no primeiro start. Use —ignore os pontos de verificação para forçar a migração ou consulte https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration para obter mais informações.**
 
 Por algum motivo, o processo de migração precisa acessar binários no armazenamento de dados e não consegue encontrá-lo. Para especificar a configuração do armazenamento de dados, inclua os seguintes sinalizadores na parte `<<ADDITIONAL_FLAGS>>` do comando de migração:
 
@@ -167,19 +171,19 @@ Onde `/path/to/datastore` representa o caminho para seu Arquivo de Dados.
 
 1. Extraia o pacote para uma pasta temporária e copie o conteúdo do `jcr_root/libs/system/install` para a `crx-quickstart/install` pasta.
 
-### Determinando o comando correto de inicialização da atualização {#determining-the-correct-upgrade-start-command}
+### Como determinar o comando correto do start de atualização {#determining-the-correct-upgrade-start-command}
 
-Para executar a atualização, é importante iniciar o AEM usando o arquivo jar para exibir a instância. Para atualizar para a versão 6.4, veja também outras opções de reestruturação e migração de conteúdo na Migração [de conteúdo](/help/sites-deploying/lazy-content-migration.md) ocioso que você pode escolher com o comando de atualização.
+Para executar a atualização, é importante start AEM usando o arquivo jar para exibir a instância. Para atualizar para a versão 6.4, veja também outras opções de reestruturação e migração de conteúdo na Migração [de conteúdo](/help/sites-deploying/lazy-content-migration.md) ocioso que você pode escolher com o comando de atualização.
 
-Observe que iniciar o AEM a partir do script inicial não iniciará a atualização. A maioria dos clientes inicia o AEM usando o script de início e personalizou esse script para incluir switches para configurações de ambiente, como configurações de memória, certificados de segurança etc. Por isso, recomendamos seguir este procedimento para determinar o comando de atualização correto:
+Observe que iniciar AEM a partir do script de start não start a atualização. A maioria dos clientes AEM usando o script de start e personalizou esse script de start para incluir switches para configurações de ambiente, como configurações de memória, certificados de segurança etc. Por isso, recomendamos seguir este procedimento para determinar o comando de atualização correto:
 
-1. Em uma instância do AEM em execução, execute o seguinte na linha de comando:
+1. Em uma instância AEM em execução, execute o seguinte na linha de comando:
 
    ```shell
    ps -ef | grep java
    ```
 
-1. Procure o processo do AEM. Será algo como:
+1. Procure o processo de AEM. Será algo como:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
@@ -191,11 +195,11 @@ Observe que iniciar o AEM a partir do script inicial não iniciará a atualizaç
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.4.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-   Isso garantirá que todas as configurações de memória, modos de execução personalizados e outros parâmetros ambientais sejam aplicados para a atualização. Depois que a atualização for concluída, a instância poderá ser iniciada a partir do script de inicialização em inicializações futuras.
+   Isso garantirá que todas as configurações de memória, modos de execução personalizados e outros parâmetros ambientais sejam aplicados para a atualização. Após a conclusão da atualização, a instância pode ser iniciada a partir do script do start em inicializações futuras.
 
-## Implantar base de códigos atualizada {#deploy-upgraded-codebase}
+## Implantar a base de códigos atualizada {#deploy-upgraded-codebase}
 
-Quando o processo de atualização no local for concluído, a base de código atualizada deverá ser implantada. As etapas para atualizar a base de código para funcionar na versão de destino do AEM podem ser encontradas na página [Código de](/help/sites-deploying/upgrading-code-and-customizations.md)atualização e Personalizações.
+Depois que o processo de atualização no local for concluído, a base de código atualizada deverá ser implantada. As etapas para atualizar a base de código para funcionar na versão de público alvo do AEM podem ser encontradas na página [Código de](/help/sites-deploying/upgrading-code-and-customizations.md)atualização e Personalizações.
 
 ## Execute verificações e solução de problemas após a atualização {#perform-post-upgrade-check-troubleshooting}
 
