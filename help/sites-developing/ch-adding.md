@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Para ativar os recursos do ContextHub e para vincular às bibliotecas do Context
 </head>
 ```
 
-Observe que também é necessário configurar se a barra de ferramentas do ContextHub aparece no modo de Visualização. Consulte [Mostrar e ocultar a interface do usuário](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui)do ContextHub.
+Observe que também é necessário configurar se a barra de ferramentas do ContextHub aparece no modo de Pré-visualização. Consulte [Mostrar e ocultar a interface do usuário](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui)do ContextHub.
 
 ## Sobre as Lojas do ContextHub {#about-contexthub-stores}
 
@@ -48,11 +51,11 @@ Todos os tipos de armazenamento são extensões da [`ContextHub.Store.Core`](/he
 
 Os armazenamentos do Context Hub usam um dos seguintes modos de persistência:
 
-* **** Local: Usa HTML5 localStorage para persistir os dados. O armazenamento local é persistente no navegador entre sessões.
-* **** Sessão: Usa HTML5 sessionStorage para persistir os dados. O armazenamento da sessão é mantido durante a sessão do navegador e está disponível para todas as janelas do navegador.
-* **** Cookie: Usa o suporte nativo do navegador a cookies para armazenamento de dados. Os dados do cookie são enviados para e do servidor em solicitações HTTP.
-* **** Window.name: Usa a propriedade window.name para persistir nos dados.
-* **** Memória: Usa um objeto Javascript para persistir os dados.
+* **Local:** Usa HTML5 localStorage para persistir os dados. O armazenamento local é persistente no navegador entre sessões.
+* **Sessão:** Usa HTML5 sessionStorage para persistir os dados. O armazenamento de sessão é persistente durante a sessão do navegador e está disponível para todas as janelas do navegador.
+* **Cookie:** Usa o suporte nativo do navegador a cookies para armazenamento de dados. Os dados do cookie são enviados para e do servidor em solicitações HTTP.
+* **Window.name:** Usa a propriedade window.name para persistir nos dados.
+* **Memória:** Usa um objeto Javascript para persistir os dados.
 
 Por padrão, o Context Hub usa o modo de persistência Local. Se o navegador não suportar ou permitir HTML5 localStorage, a persistência da sessão será usada. Se o navegador não oferecer suporte ou permitir o HTML5 sessionStorage, a persistência de Window.name será usada.
 
@@ -117,7 +120,7 @@ Observe que os candidatos a armazenamento personalizado podem definir funções 
 >
 >Por padrão, o ContextHub não está ciente do logon atualmente usado em servidores de publicação e esses usuários são considerados pelo ContextHub como &quot;Anônimos&quot;.
 >
->Você pode tornar o ContextHub ciente dos usuários conectados carregando o repositório de perfis conforme implementado no site [de referência](/help/sites-developing/we-retail.md)We.Retail. Consulte o código [relevante no GitHub aqui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Você pode tornar o ContextHub ciente dos usuários conectados carregando a loja de perfis conforme implementado no site [de referência](/help/sites-developing/we-retail.md)We.Retail. Consulte o código [relevante no GitHub aqui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Eventos do ContextHub {#contexthub-eventing}
 
@@ -125,11 +128,11 @@ O ContextHub inclui uma estrutura de evento que permite que você reaja automati
 
 ## Uso do Context Hub para Manipular Cookies {#using-context-hub-to-manipulate-cookies}
 
-A API Javascript do Context Hub fornece suporte entre navegadores para lidar com cookies de navegadores. O [`ContextHub.Utils.Cookie`](/help/sites-developing/contexthub-api.md#contexthub-utils-cookie) namespace define várias funções para criar, manipular e excluir cookies.
+A API Javascript do Context Hub fornece suporte entre navegadores para lidar com cookies de navegadores. A [`ContextHub.Utils.Cookie`](/help/sites-developing/contexthub-api.md#contexthub-utils-cookie) namespace define várias funções para criar, manipular e excluir cookies.
 
 ## Determinando segmentos resolvidos do ContextHub {#determining-resolved-contexthub-segments}
 
-O mecanismo de segmento ContextHub permite determinar quais segmentos registrados são resolvidos no contexto atual. Use a função getResolvedSegments da [`ContextHub.SegmentEngine.SegmentManager`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segmentmanager) classe para recuperar segmentos resolvidos. Em seguida, use a função `getName` ou `getPath` da [`ContextHub.SegmentEngine.Segment`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segment) classe para testar um segmento.
+O mecanismo de segmento ContextHub permite que você determine quais segmentos registrados são resolvidos no contexto atual. Use a função getResolvedSegments da [`ContextHub.SegmentEngine.SegmentManager`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segmentmanager) classe para recuperar segmentos resolvidos. Em seguida, use a função `getName` ou `getPath` da [`ContextHub.SegmentEngine.Segment`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segment) classe para testar um segmento.
 
 ### Segmentos instalados {#installed-segments}
 
@@ -146,7 +149,7 @@ Os segmentos do ContextHub são instalados abaixo do `/conf/we-retail/settings/w
 * acima de 30
 * verão
 * fêmea de verão
-* verão-fêmea com mais de 30
+* verão-fêmea com mais de 30 anos
 * verão-fêmea com menos de 30 anos
 * homem do verão
 * verão-homem-acima-30
