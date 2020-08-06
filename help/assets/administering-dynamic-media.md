@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 9%
 
 ---
 
@@ -21,23 +24,23 @@ source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
 >
 >Esta documentação descreve os recursos do Dynamic Media, que são integrados diretamente ao AEM. Se você estiver usando o Dynamic Media Classic (anteriormente denominado Scene7) integrado ao AEM, consulte a documentação [de integração do](/help/sites-administering/scene7.md)Dynamic Media Classic.
 >
->Consulte Cenário [de uso](/help/sites-administering/scene7.md#dual-use-scenario) duplo para ver os momentos em que você pode usar o AEM integrado ao Dynamic Media Classic junto com o Dynamic Media.
+>Consulte Cenário [de uso](/help/sites-administering/scene7.md#dual-use-scenario) duplo para ver os momentos em que você deseja usar AEM integrado ao Dynamic Media Classic com o Dynamic Media.
 
 Se você estiver administrando uma mídia dinâmica, os seguintes tópicos serão de interesse:
 
 * [Configuração do modo](config-dms7.md) Dynamic Media-Scene7 - Use essa configuração se você for um novo cliente do Dynamic Media.
-* [Configuração do modo](config-dynamic.md) Dynamic Media-Hybrid - Use essa configuração se você for um cliente do Dynamic Media que está atualizando o AEM.
+* [Configuração do modo](config-dynamic.md) Dynamic Media-Hybrid - Use essa configuração se você for um AEM de atualização do cliente do Dynamic Media.
 * [Gerenciamento de predefinições de imagens](managing-image-presets.md)
 * [Gerenciamento de predefinições do visualizador](managing-viewer-presets.md)
-* [Solução de problemas do Dynamic Media - modo Scene7](troubleshoot-dms7.md)
+* [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
 
 Consulte também os seguintes tópicos:
 
-* [Codificação de vídeo e perfis de vídeo](video-profiles.md)
-* [Perfis de imagem](image-profiles.md)
+* [perfis de vídeo e codificação](video-profiles.md)
+* [perfis de imagem](image-profiles.md)
 
 >[!NOTE]
 >
 >**Se você estiver atualizando:**
 >
->* Depois que o AEM estiver funcionando, qualquer ativo carregado terá o Dynamic Media automaticamente ativado (a menos que explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do AEM e for novo no Dynamic Media, talvez precise reprocessar seus ativos para torná-los habilitados para o Dynamic Media.
+>* Depois que você AEM ativado e em execução, qualquer ativo carregado terá o Dynamic Media automaticamente ativado (a menos que explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do AEM e do novo para o Dynamic Media, talvez precise reprocessar seus ativos para torná-los habilitados para o Dynamic Media.
