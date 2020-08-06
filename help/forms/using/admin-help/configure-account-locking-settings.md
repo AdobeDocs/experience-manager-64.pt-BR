@@ -1,8 +1,8 @@
 ---
 title: Definir configurações de bloqueio de conta
 seo-title: Definir configurações de bloqueio de conta
-description: Use a opção Ativar bloqueio de conta para bloquear contas de usuário após um número especificado de falhas consecutivas de autenticação.
-seo-description: Use a opção Ativar bloqueio de conta para bloquear contas de usuário após um número especificado de falhas consecutivas de autenticação.
+description: Use a opção Habilitar bloqueio de conta para bloquear contas de usuário após um número especificado de falhas consecutivas de autenticação.
+seo-description: Use a opção Habilitar bloqueio de conta para bloquear contas de usuário após um número especificado de falhas consecutivas de autenticação.
 uuid: 5ff3fb76-8b11-4818-9a75-40ed8e121da5
 contentOwner: admin
 content-type: reference
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 4%
 
 ---
 
