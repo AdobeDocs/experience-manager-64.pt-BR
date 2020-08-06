@@ -23,7 +23,7 @@ Execute as seguintes etapas na sequência recomendada para criar o aplicativo An
 
 1. [Download do pacote de código-fonte do aplicativo AEM Forms](#download-android-zip)
 1. [Definir as variáveis de ambiente](#set-environment-variable-android)
-1. [Criar aplicativo de AEM Forms padrão](#set-up-the-xcode-project)
+1. [Criar aplicativo AEM Forms padrão](#set-up-the-xcode-project)
 
 ## Download do pacote de código-fonte do aplicativo AEM Forms {#download-android-zip}
 
@@ -31,10 +31,10 @@ O Pacote de código-fonte do aplicativo AEM Forms se refere ao `adobe-lc-mobilew
 
 Execute as seguintes etapas para baixar o `adobe-aemfd-forms-app-src-pkg-<version>.zip` arquivo:
 
-1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de uma Adobe ID para fazer logon na Software Distribution (Distribuição de software).
 1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
 1. Na seção **[!UICONTROL Filtros]** :
-   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]** .
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
 1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
 1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
@@ -54,16 +54,16 @@ Defina as seguintes variáveis de ambiente antes de iniciar o processo de criaç
 * Defina a variável de ambiente do `ANDROID_SDK_ROOT` sistema para o local do SDK para Android. Por exemplo, C:\Users\username\AppData\Local\Android\Sdk
 * Defina a variável de ambiente do `Path` sistema para incluir os locais de pastas de ferramentas de plataforma para Android. Por exemplo, C:\Users\username\AppData\Local\Android\Sdk\platform-tools and C:\Users\username\AppData\Local\Android\Sdk\tools.
 
-## Criar aplicativo de AEM Forms padrão {#set-up-the-xcode-project}
+## Criar aplicativo AEM Forms padrão {#set-up-the-xcode-project}
 
-Depois de salvar o arquivo adobe-lc-mobileworkspace-src-&lt;versão>.zip no sistema de arquivos local e definir as variáveis do ambiente, crie um aplicativo AEM Forms padrão para Android usando qualquer uma das seguintes opções:
+Depois de salvar o arquivo adobe-lc-mobileworkspace-src-&lt;versão>.zip no sistema de arquivos local e definir as variáveis do ambiente, crie um aplicativo AEM Forms Android padrão usando qualquer uma das seguintes opções:
 
 * [Criar aplicativo AEM Forms usando o Android Studio](#using-android-studio)
 * [Gerar arquivo .apk usando o Android Studio](#generate-apk-android-studio)
 
 ### Criar aplicativo AEM Forms usando o Android Studio {#using-android-studio}
 
-Execute as seguintes etapas para criar aplicativos AEM Forms usando o Android Studio:
+Execute as seguintes etapas para criar um aplicativo AEM Forms usando o Android Studio:
 
 1. Inicie o aplicativo Android Studio em seu computador.
 1. Clique em **Abrir um projeto** Android Studio existente. Se a caixa de diálogo para abrir um projeto existente não for exibida automaticamente, selecione **Arquivo** > **Abrir**.
