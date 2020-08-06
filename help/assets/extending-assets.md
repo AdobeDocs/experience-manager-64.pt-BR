@@ -4,15 +4,18 @@ description: Saiba como personalizar e estender o Asset Share e o Editor de ativ
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
 
 # Personalização e extensão de ativos {#customizing-and-extending-assets}
 
-O Editor de ativos é o principal ponto de acesso que os usuários de um site do Adobe Enterprise Manager (AEM) usarão para localizar, exibir e manipular os ativos digitais no repositório.
+O Editor de ativos é o principal ponto de acesso que os usuários de um site do Adobe Enterprise Manager (AEM) usarão para localizar, visualização e manipular os ativos digitais no repositório.
 
-Como desenvolvedor do AEM, você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface especificamente personalizada e um conjunto de funcionalidades.
+Como um desenvolvedor AEM, você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface especificamente personalizada e um conjunto de funcionalidades.
 
 Os seguintes aspectos da funcionalidade podem ser personalizados ou aprimorados:
 
@@ -33,6 +36,6 @@ Os seguintes aspectos da aparência do Editor de ativos são personalizáveis:
 
 ## Personalização de execuções {#customizing-renditions}
 
-Na terminologia do AEM Assets, uma representação é o formulário no qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, imagens em cores completas podem ter uma representação em seu tamanho original, outra em tamanho reduzido e outra em escala decrescente e outra em escala de cinza.
+Na terminologia do AEM Assets, uma representação é a forma na qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, imagens em cores completas podem ter uma representação em seu tamanho original, outra em tamanho reduzido e outra em escala decrescente e outra em escala de cinza.
 
 As representações nas quais um ativo específico está disponível podem ser personalizadas e novas representações podem ser criadas.
