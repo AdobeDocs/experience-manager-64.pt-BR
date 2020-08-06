@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 translation-type: tm+mt
 source-git-commit: 9a1fe3265f1cd7907dfe576666a694b3c5b78d76
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 67%
 
 ---
 
@@ -37,7 +40,7 @@ Segmentos são definidos em [Configuração da segmentação](/help/sites-admini
 
 Ao discutir segmentação, a seguinte terminologia é usada:
 
-**Visitante** Um visitante é uma pessoa que visita um site. Normalmente, a visita dessa pessoa começa em uma página de referência e passa para uma ou mais visualizações de página no seu próprio site. Um perfil comportamental pode ser criado a partir dos detalhes da visita dessa pessoa.
+**Visitante** Um visitante é uma pessoa visitando um site. Normalmente, a visita dessa pessoa começa em uma página de referência e passa para uma ou mais visualizações de página no seu próprio site. Um perfil comportamental pode ser criado a partir dos detalhes da visita dessa pessoa.
 
 **Usuário** Um usuário é um visitante que se registra no site para receber um perfil de conta. Para gerar seu perfil, ele fornece identificação adicional, como endereço de email e gênero, entre outras informações. Informações adicionais também podem ser coletadas, incluindo a atividade na comunidade e os padrões de compra, entre outros. Com base nas informações fornecidas no perfil, um perfil demográfico pode ser criado.
 
@@ -45,14 +48,14 @@ Ao discutir segmentação, a seguinte terminologia é usada:
 
 **Segmento** Um segmento é uma coleção de visitantes que compartilham certas características. Segmentos devem ser distintos, com um mínimo de sobreposição com outros segmentos.
 
-**Características** comportamentais As características comportamentais são aquelas relacionadas ao comportamento de um visitante no site. Dentre elas:
+**Características** comportamentais As características comportamentais são aquelas que se relacionam com o comportamento de um visitante no site. Dentre elas:
 
 * Interesse no seu site; incluindo páginas visitadas e produtos comprados.
 * Interesse no site de referência; incluindo termos de pesquisa usados ou anúncios clicados.
 * Interesse em outros sites, determinado com o uso de ferramentas como o Spyjax.
 * Fidelidade dos visitantes, duração da visita, frequência de visitas.
 
-**Características** demográficas São características da população selecionadas incluindo:
+**Características** demográficas São características da população selecionadas, incluindo:
 
 * Idade
 * Renda
@@ -67,13 +70,13 @@ Por exemplo, a combinação do URL de referência (como uma característica comp
 
 **Subsegmento** Um segmento pode ser subdividido em vários subsegmentos. Isso é feito com a definição de características adicionais.
 
-**Página** do teaserA página do teaser é direcionada a um público-alvo específico. Ela tem conteúdo reutilizável que pode ser usado no parágrafo de teaser.
+**Página** do teaser A página do teaser é direcionada a uma audiência específica. Ela tem conteúdo reutilizável que pode ser usado no parágrafo de teaser.
 
-**Campanha** Uma campanha é uma coleção de páginas de teaser e páginas de marketing por email, como boletins informativos ou convites. Normalmente, uma campanha é veiculada por um período limitado, sendo substituída por outra.
+**Campanha** Uma campanha é uma coleção de páginas de teaser e páginas de marketing de email, como boletins informativos ou convites. Normalmente, uma campanha é veiculada por um período limitado, sendo substituída por outra.
 
 **Parágrafo** do TeaserEste é um parágrafo que extrai conteúdo de outra página dependendo de uma estratégia de seleção. Essa estratégia de seleção pode considerar segmentos e campanhas.
 
-**Lista** A lista é extraída de um segmento de usuários registrados. Por exemplo, a localização usada para orientar o conteúdo do parágrafo de teaser.
+**Lista** Uma lista é extraída de um segmento de usuários registrados. Por exemplo, a localização usada para orientar o conteúdo do parágrafo de teaser.
 
 >[!NOTE]
 >
