@@ -1,8 +1,8 @@
 ---
 title: Temas de referência
 seo-title: Temas de referência
-description: 'Os AEM Forms fornecem temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
-seo-description: 'Os AEM Forms fornecem temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
+description: 'A AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
+seo-description: 'A AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
