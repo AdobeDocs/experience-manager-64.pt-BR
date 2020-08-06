@@ -1,23 +1,26 @@
 ---
-title: Canal de impressão e canal da Web
-seo-title: Canal de impressão e canal da Web
-description: Importação de modelos de canal de impressão e criação e habilitação de modelos de canal da Web
-seo-description: Importação de modelos de canal de impressão e criação e habilitação de modelos de canal da Web
+title: Imprimir canal e canal da Web
+seo-title: Imprimir canal e canal da Web
+description: Importação de modelos de canais de impressão e criação e habilitação de modelos de canais da Web
+seo-description: Importação de modelos de canais de impressão e criação e habilitação de modelos de canais da Web
 uuid: 19e6ffab-00d2-4084-9ee7-9643b11eb6c6
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
 
-# Canal de impressão e canal da Web {#print-channel-and-web-channel}
+# Imprimir canal e canal da Web {#print-channel-and-web-channel}
 
-Importação de modelos de canal de impressão e criação e habilitação de modelos de canal da Web
+Importação de modelos de canais de impressão e criação e habilitação de modelos de canais da Web
 
-As Comunicações interativas podem ser fornecidas por meio de dois canais: impressão e Web. O canal de impressão é usado para criar PDFs e comunicações em papel, como uma carta impressa como lembrete do pagamento de prêmio de seguro, enquanto o canal da Web é usado para fornecer experiências online, como uma declaração de cartão de crédito em um site.
+As Comunicações interativas podem ser fornecidas por meio de dois canais: impressão e Web. O canal impresso é usado para criar PDFs e comunicações em papel, como uma carta impressa como lembrete do pagamento de prêmio de seguro, enquanto o canal da Web é usado para fornecer experiências online, como uma declaração de cartão de crédito em um site.
 
 Os autores do Interative Communication podem reutilizar ativos como fragmentos de documento e imagens para criar versões impressas e da Web do Interative Communication.
 
@@ -25,15 +28,15 @@ Um dos pré-requisitos para [Criar uma comunicação](/help/forms/using/create-i
 
 ## Print channel {#printchannel}
 
-O canal de impressão de uma Comunicação interativa usa o modelo de formulário XFA, XDP. Um XDP foi projetado no Adobe Forms Designer. Para obter mais informações sobre como criar modelos de canal de impressão, consulte Design [de](/help/forms/using/layout-design-details.md)layout. Para usar um modelo de canal de impressão em sua Comunicação interativa, é necessário carregar o modelo no servidor de formulários AEM.
+O canal de impressão de uma comunicação interativa usa o modelo de formulário XFA, XDP. Um XDP foi projetado no Adobe Forms Designer. Para obter mais informações sobre como criar modelos de canais de impressão, consulte Design [de](/help/forms/using/layout-design-details.md)layout. Para usar um modelo de canal de impressão em sua Comunicação interativa, é necessário carregar o modelo no servidor AEM Forms.
 
 ### Carregar modelo de canal de impressão do Interative Communication {#upload-interactive-communication-print-channel-template}
 
-Para carregar o modelo, é necessário ser um membro do grupo de usuários de formulários. Use as seguintes etapas para carregar o modelo de canal de impressão (XDP) no AEM Forms:
+Para carregar o modelo, é necessário ser um membro do grupo de usuários de formulários. Use as seguintes etapas para fazer upload do modelo de canal de impressão (XDP) para a AEM Forms:
 
-1. Selecione **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e documentos]**.
+1. Selecione **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 
-1. Toque em **[!UICONTROL Criar]** > Carregamento **[!UICONTROL de arquivo]**.
+1. Toque em **[!UICONTROL Criar]** > Upload **[!UICONTROL de arquivo]**.
 
    Navegue e selecione o modelo de canal de impressão apropriado (XDP) e toque em **[!UICONTROL Abrir]**.
 
@@ -41,13 +44,13 @@ Para carregar o modelo, é necessário ser um membro do grupo de usuários de fo
 
 Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Para permitir que outros usuários criem modelos da Web, é necessário conceder direitos a eles. Para obter mais informações, consulte Administração [de direitos de acesso, grupo e](/help/sites-administering/user-group-ac-admin.md)usuário.
 
-### Criando Modelo de Canal da Web {#authoring-web-channel-template}
+### Criação de modelo de Canal da Web {#authoring-web-channel-template}
 
-Para criar um modelo de canal da Web, é necessário primeiro criar uma pasta Modelo. Depois de criar um modelo da Web dentro de uma pasta de modelo, é necessário ativar o modelo para permitir que os usuários criem um canal da Web de uma Comunicação interativa com base no modelo.
+Para criar um modelo de canal da Web, é necessário primeiro criar uma pasta Modelo. Depois de criar um modelo da Web dentro de uma pasta de modelo, é necessário ativar o modelo para permitir que os usuários criem um canal da Web de uma Comunicação Interativa com base no modelo.
 
-Para criar um modelo de canal da Web Conclua as seguintes etapas:
+Para criar um modelo de canal da Web Complete as etapas a seguir:
 
-1. Crie uma pasta de modelo para manter seus modelos da Web de comunicação interativa, caso ainda não tenha um. Para obter mais informações, consulte Pastas de modelo em Modelos de [página - Editável](/help/sites-developing/page-templates-editable.md).
+1. Crie uma pasta de modelo para manter seus modelos da Web de comunicação interativa, se você ainda não tiver um. Para obter mais informações, consulte Pastas de modelo em Modelos de [página - Editável](/help/sites-developing/page-templates-editable.md).
 
    1. Toque em **[!UICONTROL Ferramentas]** ![ferramentas-1](assets/tools-1.png) > Navegador **** de configuração.
    1. Na página Navegador de configuração, toque em **[!UICONTROL Criar]**.
@@ -77,11 +80,11 @@ Para criar um modelo de canal da Web Conclua as seguintes etapas:
    1. Toque em **[!UICONTROL Ferramentas]** ![ferramentas-1](assets/tools-1.png) > **[!UICONTROL Modelos]**.
    1. Navegue até o modelo apropriado, selecione-o e toque em **[!UICONTROL Ativar]** e, na mensagem de alerta, toque em **[!UICONTROL Ativar]**.
 
-      O modelo está ativado e seu status é exibido como Ativado. Agora você pode continuar criando uma Comunicação interativa onde você pode usar o modelo de canal da Web recém-criado.
+      O modelo está ativado e seu status é exibido como Ativado. Agora, você pode continuar criando uma Comunicação interativa onde você pode usar o modelo de canal da Web recém-criado.
 
-### Imprimir canal como mestre para canal da Web {#print-channel-as-master-for-web-channel}
+### Imprimir canal como principal para canal da Web {#print-channel-as-master-for-web-channel}
 
-Ao criar uma comunicação interativa, os autores podem selecionar essa opção para criar o canal da Web em sincronia com o canal de impressão. O uso do canal de impressão como mestre para canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal de impressão e as alterações feitas no canal de impressão possam ser refletidas no canal da Web. No entanto, os autores de Comunicações interativas podem quebrar a herança de componentes específicos no canal da Web, conforme necessário.
+Ao criar uma comunicação interativa, os autores podem selecionar essa opção para criar o canal da Web em sincronia com o canal de impressão. O uso do canal de impressão como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal de impressão e as alterações feitas no canal de impressão possam ser refletidas no canal da Web. No entanto, os autores de Comunicações interativas podem interromper a herança de componentes específicos no canal da Web, conforme necessário.
 
 ![printweb_2-2](assets/printweb_2-2.png)
 
