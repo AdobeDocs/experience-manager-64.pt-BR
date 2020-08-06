@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
 source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 83%
 
 ---
 
@@ -43,7 +46,7 @@ Use os Fragmentos de experiência:
 >
 >Entre em contato com o administrador do sistema se você tiver problemas.
 
-## Quando você deve usar fragmentos de experiência?  {#when-should-you-use-experience-fragments}
+## Quando você deve usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
 
 Os fragmentos de experiência devem ser usados:
 
@@ -91,7 +94,7 @@ O exemplo a seguir mostra Fragmentos de experiência estruturados de acordo com 
 
 >[!CAUTION]
 >
->A seguinte captura de tela foi tirada do site da WKND usando o Adobe Experience Manager como um serviço em nuvem.
+>A seguinte captura de tela foi tirada do site da WKND usando o Adobe Experience Manager como Cloud Service.
 
 ![Pastas para Fragmentos de experiência](assets/xf-folders.png)
 
@@ -212,7 +215,8 @@ Você pode criar variações de seu fragmento de experiência, de acordo com sua
    * **[!UICONTROL Nome]**; se deixado em branco, ele será derivado do título
    * **[!UICONTROL Descrição]**
    * **[!UICONTROL Tags de variação]**
-   ![xf-authoring-06](assets/xf-authoring-07.png)
+
+   ![xf-authoring-07](assets/xf-authoring-07.png)
 
 1. Confirme com **[!UICONTROL Concluído]** (ícone de marca de verificação) e a nova variação será mostrada no painel:
 
@@ -224,7 +228,7 @@ Agora você pode usar o Fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
 
-   Por exemplo: [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Por exemplo: [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/br/products/men.html)
 
 1. Crie uma instância do componente do fragmento de experiência arrastando o componente do navegador Componentes até o sistema de parágrafos da página:
 
@@ -234,6 +238,7 @@ Agora você pode usar o Fragmento de experiência ao criar suas páginas:
 
    * Arraste o fragmento necessário do Navegador de Ativos e solte no componente
    * Selecione **[!UICONTROL Configurar]** na barra de ferramentas do componente e especifique o fragmento a ser usado, confirme com **Concluído** (marca de seleção)
+
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
    >[!NOTE]
@@ -292,7 +297,7 @@ A execução HTML simples adiciona o protocolo, o host e o caminho de contexto a
 
 * do tipo: `src`, `href`ou `action`
 
-* ou terminar com: `-src`, ou `-href`
+* ou terminar com: `-src`ou `-href`
 
 Por exemplo:
 
@@ -304,9 +309,9 @@ Por exemplo:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportar fragmentos de experiência  {#exporting-experience-fragments}
+## Exportar fragmentos de experiência   {#exporting-experience-fragments}
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 
-Para exportar para o Adobe Target, o HTML é usado. Consulte [Integração do Target com os fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.
+Para exportação para o Adobe Target, o HTML é usado. Consulte [Integração do Target com os fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.
 
