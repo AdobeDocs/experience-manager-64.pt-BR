@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Definir configurações de serviço {#configure-service-settings}
 
-Você pode usar a página Gerenciamento de serviços para definir as configurações de cada um dos serviços que fazem parte dos formulários do AEM. As configurações disponíveis variam dependendo do serviço que está sendo configurado.
+Você pode usar a página Gerenciamento de serviços para definir as configurações de cada um dos serviços que fazem parte dos formulários AEM. As configurações disponíveis variam dependendo do serviço que está sendo configurado.
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de serviços.
 1. Pare o serviço antes de alterá-lo. (Consulte [Iniciar e interromper serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
@@ -69,7 +69,7 @@ As configurações a seguir estão disponíveis para o serviço de formulários 
 
 ## Configurações do serviço Central Migration Bridge (obsoleto) {#central-migration-bridge-service-settings}
 
-O serviço Central Migration Bridge ( `CentralMigrationBridge`) chama um subconjunto da funcionalidade do Adobe Central Pro Output Server (Central), que inclui os comandos JFMERGE, JFTRANS e XMLIMPORT. As operações do serviço Central Migration Bridge permitem reutilizar os seguintes ativos centrais em formulários AEM:
+O serviço Central Migration Bridge ( `CentralMigrationBridge`) chama um subconjunto da funcionalidade Adobe Central Pro Output Server (Central), que inclui os comandos JFMERGE, JFTRANS e XMLIMPORT. As operações do serviço Central Migration Bridge permitem que você reutilize os seguintes ativos centrais em formulários AEM:
 
 * design de modelo (&amp;ast;.ifd)
 * modelos de saída (&amp;ast;.mdf)
@@ -79,7 +79,7 @@ O serviço Central Migration Bridge ( `CentralMigrationBridge`) chama um subconj
 
 A configuração a seguir está disponível para o serviço Central Migration Bridge.
 
-**Diretório de instalação central:** O diretório em que o Adobe Central 5.7 está instalado.
+**Diretório de instalação central:** O diretório onde o Adobe Central 5.7 está instalado.
 
 ## Configurações do serviço Content Repository Connector for EMC Documentum {#content-repository-connector-for-emc-documentum-service-settings}
 
@@ -87,7 +87,7 @@ O Content Repository Connector for EMC Documentum Service ( `EMCDocumentumConten
 
 A configuração a seguir está disponível para o Content Repository Connector for EMC Documentum Service.
 
-**Caminho padrão do objeto do link do ativo:** A parte padrão do caminho no repositório Documentum para armazenar o objeto Asset Link. O caminho real consiste no caminho padrão e no local do modelo de formulário no repositório de formulários do AEM.
+**Caminho padrão do objeto do link do ativo:** A parte padrão do caminho no repositório Documentum para armazenar o objeto Asset Link. O caminho real consiste no caminho padrão e no local do modelo de formulário no repositório de formulários AEM.
 
 Por exemplo, se o caminho padrão estiver definido como `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects`, e o modelo de formulário estiver armazenado em uma pasta `/Docbase/forms/`, o objeto Link de ativo será armazenado no seguinte local:
 
@@ -101,7 +101,7 @@ O Content Repository Connector for IBM FileNet permite que você crie processos 
 
 A seguinte configuração está disponível para o Content Repository Connector para o serviço IBM FileNet.
 
-**Caminho padrão do objeto do link do ativo:** A parte padrão do caminho no repositório IBM FileNet para armazenar o objeto Asset Link. O caminho real consiste no caminho padrão e no local do modelo de formulário no repositório de formulários do AEM.
+**Caminho padrão do objeto do link do ativo:** A parte padrão do caminho no repositório IBM FileNet para armazenar o objeto Asset Link. O caminho real consiste no caminho padrão e no local do modelo de formulário no repositório de formulários AEM.
 
 Por exemplo, se o caminho padrão estiver definido como `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects`, e o modelo de formulário estiver armazenado em uma pasta `/Docbase/forms/`, o objeto Link de ativo será armazenado no seguinte local:
 
@@ -159,7 +159,7 @@ Novas configurações podem ser criadas pela interface do usuário do Gerador de
 
 >[!NOTE]
 >
->O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gestão de conteúdo instalado com o LiveCycle. Ela permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte documento do ciclo de vida [do produto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)da Adobe. Para saber mais sobre como configurar o Content Services (obsoleto), consulte [Administração do Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gestão de conteúdo instalado com o LiveCycle. Ela permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte documento do ciclo de vida do produto [Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Para saber mais sobre como configurar o Content Services (obsoleto), consulte [Administração do Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 O serviço Gerenciamento de Documentos ( `DocumentManagementService`) permite que os processos usem a funcionalidade de gestão de conteúdo fornecida pelo Content Services (obsoleto). As operações de Gerenciamento de Documentos fornecem tarefas básicas necessárias para manter espaços e conteúdo no sistema de gestões de conteúdo. Exemplos dessas tarefas são copiar, excluir, mover, recuperar e armazenar conteúdo, criar espaços e associações e obter e definir atributos de conteúdo.
 
@@ -249,19 +249,19 @@ O serviço Gerar PDF ( `GeneratePDFService`) converte arquivos em vários format
 
 As configurações a seguir estão disponíveis para o serviço Gerar PDF.
 
-**Configurações do Adobe PDF:** O nome das configurações pré-definidas do Adobe PDF a serem aplicadas a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações do Adobe PDF são definidas no console de administração, clicando em Serviços > Gerador de PDF> Configurações do Adobe PDF. Essas configurações são aplicáveis somente às conversões baseadas no PDFMaker.
+**Configurações do Adobe PDF:** O nome das configurações pré-definidas do Adobe PDF a serem aplicadas a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações do Adobe PDF são definidas no console de administração, clicando em Serviços > Gerador de PDF > Configurações do Adobe PDF. Essas configurações são aplicáveis somente às conversões baseadas no PDFMaker.
 
 **Configurações de segurança:** O nome das configurações de segurança pré-definidas a serem aplicadas a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações de segurança são definidas no console de administração, clicando em Serviços > Gerador de PDF> Configurações de segurança.
 
 **Configurações do tipo de arquivo:** O nome da Configuração de tipo de arquivo pré-configurada a ser aplicada a um trabalho de conversão, se essas configurações não forem especificadas como parte dos parâmetros de invocação da API. As configurações de tipo de arquivo são definidas no console de administração, clicando em Serviços > Gerador de PDF> Configurações de tipo de arquivo.
 
-**Usar o Acrobat WebCapture (somente Windows):** Quando essa configuração for verdadeira, o serviço Gerar PDF usará o Acrobat X Pro para todas as conversões HTML em PDF. Isso pode melhorar a qualidade dos arquivos PDF produzidos a partir de HTML, embora o desempenho possa ser um pouco menor. O valor padrão é false.
+**Usar o Acrobat WebCapture (somente Windows):** Quando essa configuração for verdadeira, o serviço Gerar PDF usará o Acrobat X Pro para todas as conversões de HTML em PDF. Isso pode melhorar a qualidade dos arquivos PDF produzidos a partir de HTML, embora o desempenho possa ser um pouco menor. O valor padrão é false.
 
-**Usar a conversão de imagem do Acrobat (somente Windows):** Quando essa configuração for verdadeira, o serviço Gerar PDF usará o Acrobat X Pro para todas as conversões de Imagem em PDF. Essa configuração é útil somente se o mecanismo de conversão Java puro padrão não conseguir converter uma proporção significativa das imagens de entrada com êxito. O valor padrão é false.
+**Usar a Conversão de Imagem do Acrobat (somente Windows):** Quando essa configuração for verdadeira, o serviço Gerar PDF usará o Acrobat X Pro para todas as conversões de Imagem em PDF. Essa configuração é útil somente se o mecanismo de conversão Java puro padrão não conseguir converter uma proporção significativa das imagens de entrada com êxito. O valor padrão é false.
 
-**Ativar conversões do AutoCAD baseadas no Acrobat (somente Windows):** Quando essa configuração for verdadeira, o serviço Gerar PDF usará o Acrobat X Pro para todas as conversões DWG em PDF. Essa configuração é útil somente se o AutoCAD não estiver instalado no servidor ou se o mecanismo de conversão do AutoCAD não conseguir converter arquivos com êxito.
+**Habilitar conversões do AutoCAD baseadas em Acrobat (somente Windows):** Quando essa configuração for verdadeira, o serviço Gerar PDF usará o Acrobat X Pro para todas as conversões DWG em PDF. Essa configuração é útil somente se o AutoCAD não estiver instalado no servidor ou se o mecanismo de conversão do AutoCAD não conseguir converter arquivos com êxito.
 
-**Expressões Regulares Para Encontrar Caracteres Especiais Proibidos Em Nome De Usuário (Somente No Windows):** Especifica caracteres que interferem nas operações Exportar PDF e Otimizar PDF quando os caracteres aparecem no nome de um usuário.
+**Expressões Regulares Para Encontrar Caracteres Especiais Proibidos Em Nome De Usuário (Somente No Windows):** Especifica caracteres que interferem nas operações de Export PDF e Optimize PDF quando os caracteres aparecem no nome de um usuário.
 
 **Tamanho do pool ImageToPDF:** O tamanho do pool do conversor padrão Imagem para PDF (Java puro) no serviço Gerar PDF. Essa configuração controla o máximo de conversões simultâneas de Imagem para PDF que o serviço Gerar PDF pode executar. O valor padrão dessa configuração (recomendado para sistemas de processador único) é 3, que pode ser aumentado em sistemas de vários processadores.
 
@@ -269,7 +269,7 @@ As configurações a seguir estão disponíveis para o serviço Gerar PDF.
 
 **Tamanho do pool de OCR:** O tamanho do pool do PaperCaptureService que o Gerador de PDF usa para OCR. O valor padrão dessa configuração (recomendado para sistemas de processador único) é 3, que pode ser aumentado em sistemas de vários processadores. Esta configuração é válida somente em sistemas Windows.
 
-**Família de fontes de fallback para conversões de HTML em PDF:** O nome da família de fontes a ser usada em documentos PDF quando a fonte usada no HTML original não estiver disponível para o servidor de formulários do AEM. Especifique uma família de fontes se você espera converter páginas HTML que usam fontes indisponíveis. Por exemplo, as páginas criadas em idiomas regionais podem usar fontes indisponíveis.
+**Família de fontes de fallback para conversões de HTML em PDF:** O nome da família de fontes a ser usada em documentos PDF quando a fonte usada no HTML original não estiver disponível para o servidor de formulários AEM. Especifique uma família de fontes se você espera converter páginas HTML que usam fontes indisponíveis. Por exemplo, as páginas criadas em idiomas regionais podem usar fontes indisponíveis.
 
 **A lógica de repetição para conversões** nativas governa as tentativas de geração de PDF se a primeira tentativa de conversão falhar:
 
@@ -334,7 +334,7 @@ Se você estiver usando Guias em um cluster de servidores que não usa sessões 
 
 O valor macKeySeed é a semente do gerador de números aleatórios usado para gerar os URLs seguros. Definir esse valor faz com que cada nó de cluster inicialize o gerador de números aleatórios da mesma maneira e tenha acesso aos mesmos URLs protegidos. Você pode usar qualquer string aleatória para esse valor semente.
 
-Altere o valor macKeySeed quando precisar atualizar os URLs protegidos. Atualizar os URLs protegidos depende da sua política de segurança e é semelhante à política de atualização para alterar a senha raiz mestre do servidor. O macSeedValue é análogo à senha mestre para os URLs protegidos, pois é usado para gerar um novo número aleatório exclusivo para uso na geração e recuperação seguras de URL.
+Altere o valor macKeySeed quando precisar atualizar os URLs protegidos. Atualizar os URLs protegidos depende da sua política de segurança e é semelhante à política de atualização para alterar a senha raiz principal do servidor. O macSeedValue é análogo à senha principal para os URLs seguros, pois é usado para gerar um novo número aleatório exclusivo para uso na geração e recuperação seguras de URLs.
 
 É necessário reiniciar o cluster porque macSeedValue é somente leitura na inicialização do sistema. Todos os nós precisam reiniciar para ler o valor, pois eles o usam independentemente para inicializar seus números aleatórios internos com o valor semente.
 
@@ -354,7 +354,7 @@ Configure o serviço JMS com as propriedades padrão para que as operações de 
 
 As configurações a seguir estão disponíveis para o serviço JMS.
 
-**URL do provedor:** O URL do provedor de serviço JNDI. O valor padrão é baseado no JBoss Application Server. O URL a seguir são valores padrão para os servidores de aplicativos compatíveis com os formulários AEM:
+**URL do provedor:** O URL do provedor de serviço JNDI. O valor padrão é baseado no JBoss Application Server. O URL a seguir são valores padrão para os servidores de aplicativos que AEM formulários oferecem suporte:
 
 **JBoss:** `<server name>:1099`
 
@@ -366,7 +366,7 @@ As configurações a seguir estão disponíveis para o serviço JMS.
 
 **Senha JNDI:** A senha associada ao nome de usuário especificado para JNDI Username. O valor padrão é convidado.
 
-**Fábrica de contexto inicial:** A classe Java a ser usada como a fábrica de contexto inicial. O serviço JMS usa essa classe para criar um contexto inicial, que é o ponto de partida para resolver nomes de tópicos e filas. O valor padrão é a fábrica de contexto inicial para o serviço JMS no JBoss. As seguintes classes são as fábricas de contexto iniciais para os servidores de aplicativos compatíveis com os formulários AEM:
+**Fábrica de contexto inicial:** A classe Java a ser usada como a fábrica de contexto inicial. O serviço JMS usa essa classe para criar um contexto inicial, que é o ponto de partida para resolver nomes de tópicos e filas. O valor padrão é a fábrica de contexto inicial para o serviço JMS no JBoss. As seguintes classes são as fábricas de contexto iniciais para os servidores de aplicativos que AEM formulários oferecem suporte:
 
 **JBoss:** org.jnp.interfaces.NamingContextFactory
 
@@ -392,7 +392,7 @@ As configurações a seguir estão disponíveis para o serviço LDAP.
 
 **Fábrica de contexto inicial:** A classe Java a ser usada como a fábrica de contexto. Essa classe é usada para criar uma conexão com o servidor LDAP. O valor padrão é com.sun.jndi.ldap.LdapCtxFactory, que é apropriado para a maioria dos servidores LDAP.
 
-**URL do provedor:** O URL a ser usado para conexão com o serviço LDAP. O formato do valor é `ldap://server name:port`
+**URL do provedor:** O URL a ser usado para conexão com o serviço LDAP. The format of the value is `ldap://server name:port`
 
 *nome* do servidor é o nome do computador que hospeda o servidor LDAP
 
@@ -423,7 +423,7 @@ As seguintes configurações estão disponíveis para o serviço de configuraç�
 
 **Criptografia:** Especifica se os dados armazenados no dispositivo móvel devem ser criptografados.
 
-**Aplicativo de formulários:** Habilita o recurso Formulários nos aplicativos clientes móveis. Quando essa opção é selecionada, os usuários podem abrir formulários e iniciar processos a partir de seus dispositivos móveis.
+**Aplicativo Forms:** Habilita o recurso Forms nos aplicativos clientes móveis. Quando essa opção é selecionada, os usuários podem abrir formulários e iniciar processos a partir de seus dispositivos móveis.
 
 **Aplicativo Tarefa:** Habilita o recurso Tarefa nos aplicativos clientes móveis. Quando essa opção é selecionada, os usuários podem acessar suas listas de tarefa e concluir tarefas de seus dispositivos móveis.
 
@@ -439,11 +439,11 @@ As seguintes configurações estão disponíveis para o serviço de configuraç�
 
 **Apple iOS:** Permite que iPhones e iPads se conectem ao servidor.
 
-**AR:** Permite que dispositivos que executam aplicativos com base no Adobe AIR® se conectem ao servidor.
+**AR:** Permite que dispositivos que executam aplicativos baseados na Adobe AIR® se conectem ao servidor.
 
 **BlackBerry:** Permite que dispositivos BlackBerry se conectem ao servidor.
 
-**Android Microsoft Exchange AtiveSync Necessário:** Especifica se o Gerenciador de políticas do Microsoft Exchange AtiveSync (EAS) deve ser instalado e ativo em dispositivos Android. Quando essa opção é selecionada, o EAS deve ser aplicado no dispositivo Android. Quando essa opção não está selecionada, nenhuma verificação é executada, embora outros requisitos ainda sejam aplicados.
+**Android Microsoft Exchange AtiveSync Necessário:** Especifica se o Microsoft Exchange AtiveSync Policy Manager (EA) deve ser instalado e ativo em dispositivos Android. Quando essa opção é selecionada, EA deve ser imposta no dispositivo Android. Quando essa opção não está selecionada, nenhuma verificação é executada, embora outros requisitos ainda sejam aplicados.
 
 **Extensão Mínima do PIN do Android:** Os dispositivos Android devem ter uma configuração global que imponha que o PIN ou a senha tenham pelo menos esse comprimento. Simplesmente ter um PIN com o comprimento especificado não é suficiente. A duração do PIN deve ser imposta pelo sistema para que os usuários não possam remover ou encurtar o PIN posteriormente. O valor padrão é 4.
 
@@ -453,7 +453,7 @@ As seguintes configurações estão disponíveis para o serviço de configuraç�
 
 ## Configurações do serviço de saída {#output-service-settings}
 
-O serviço de Saída `(OutputService)`permite unir dados de formulário XML a um design de formulário criado no AEM Forms Designer para criar um fluxo de saída de documento em um dos seguintes formatos:
+O serviço de Saída `(OutputService)`permite unir dados de formulário XML a um design de formulário criado AEM Designer para criar um fluxo de saída de documento em um dos seguintes formatos:
 
 * Um fluxo de saída de documento PDF ou PDF/A.
 * Um fluxo de saída do Adobe PostScript.
@@ -488,7 +488,7 @@ As configurações a seguir estão disponíveis para o serviço de configuraçã
 
 **Tempo limite global do servidor:** Ao executar conversões em PDF, um servidor de formulários leva em conta o limite de tempo limite. Configure o valor de tempo limite para resolver o problema.
 
-**Prefixo de opções de tarefa:** Um prefixo usado pelo serviço Gerar PDF para anexar uma string curta aos arquivos de opções de trabalho criados temporariamente para uso pelo Acrobat Distiller. O valor padrão é pdfg.
+**Prefixo de opções de tarefa:** Um prefixo usado pelo serviço Gerar PDF para anexar uma string curta aos arquivos de opções de trabalho criados temporariamente para uso pela Acrobat Distiller. O valor padrão é pdfg.
 
 **Aplicativos não Unicode:** Uma lista separada por vírgulas de nomes de aplicativos conhecidos por serem incapazes de Unicode. Essa lista é pré-preenchida com os nomes de vários aplicativos, cujo suporte é pré-configurado no Gerador de PDF. Se você optar por adicionar suporte para conversões de PDF por meio de outros aplicativos de terceiros que não sejam compatíveis com o Unicode, será necessário adicioná-los a essa lista. O valor padrão é Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect.
 
@@ -508,7 +508,7 @@ O valor padrão dos segundos de verificação da limpeza do PDFG é `43200` (12 
 
 ## configurações do serviço de Serviços de Dados do fluxo de trabalho de formulários {#forms-workflow-data-services-service-settings}
 
-Os seguintes serviços estendem os Serviços de Dados e expõem os montadores que o Workspace usa para conversar com o servidor. Não altere as opções de configuração desses serviços, a menos que seja instruído a fazê-lo pelo Suporte da Adobe. Estes serviços não se destinam ao acesso direto:
+Os seguintes serviços estendem os Serviços de Dados e expõem os montadores que o Workspace usa para conversar com o servidor. Não altere as opções de configuração desses serviços, a menos que seja instruído a fazê-lo pelo Suporte ao Adobe. Estes serviços não se destinam ao acesso direto:
 
 * `ProcessManagementLcdsAttachmentService`
 * `ProcessManagementLcdsPropertyService`
@@ -516,17 +516,17 @@ Os seguintes serviços estendem os Serviços de Dados e expõem os montadores qu
 
 ## Configurações de serviço remoto {#remoting-service-settings}
 
-A maioria dos serviços é configurada para que você possa acessá-los por meio do AEM Forms Remoting (obsoleto para formulários AEM). Para obter informações sobre (Desaprovado para formulários AEM), consulte Remoção de formulários AEM, consulte [Programação com formulários](https://adobe.com/go/learn_aemforms_programming_63)AEM.
+A maioria dos serviços é configurada para que você possa acessá-los por meio de (obsoleto para formulários AEM) AEM Remota de formulários. Para obter informações sobre (Obsoleto para formulários AEM) AEM formulários Remoto, consulte [Programação com formulários](https://adobe.com/go/learn_aemforms_programming_63)AEM.
 
 As configurações a seguir estão disponíveis para o serviço Remoting.
 
 **Método de autenticação de cliente Flex:** Determina o tipo de resposta que o servidor envia para o cliente quando o serviço chamado está habilitado para segurança, a operação invocada não suporta invocações anônimas e o cliente transmite nenhuma credenciais ou inválidas. Escolha entre Personalizado ou Básico. O valor padrão é Básico.
 
-**Permitir Serialização De Classes Não Serializáveis:** A maioria dos pontos de extremidade de formulários AEM permite que somente as classes serializáveis sejam usadas para invocação. Em versões anteriores, o terminal Remoting permitia que classes não serializáveis fossem usadas para invocação de clientes baseados em Flex. Para evitar uma vulnerabilidade de segurança descrita em APS11-15, isso foi alterado. Se você quiser continuar usando classes não serializáveis com o ponto final Flex Remoting, marque essa caixa de seleção.
+**Permitir Serialização De Classes Não Serializáveis:** A maioria dos pontos de extremidade de formulários AEM permite que somente as classes serializáveis sejam usadas para invocação. Em versões anteriores, o terminal Remoting permitia que classes não serializáveis fossem usadas para invocação de clientes baseados em Flex. Para evitar uma vulnerabilidade de segurança descrita em APS11-15, isso foi alterado. Se você quiser continuar usando classes não serializáveis com o ponto de extremidade Flex Remoting, marque essa caixa de seleção.
 
 ## Configurações do serviço de repositório {#repository-service-settings}
 
-O serviço Repositório ( `RepositoryService`) fornece serviços de armazenamento e gerenciamento de recursos para formulários do AEM. Quando os desenvolvedores criam um aplicativo, eles podem implantar os ativos no repositório em vez de em um sistema de arquivos. Os ativos podem incluir qualquer tipo de material de apoio, incluindo formulários XML, formulários PDF (incluindo formulários Acrobat), fragmentos de formulário, imagens, perfis, políticas, arquivos SWF, arquivos DX, schemas XML, arquivos WSDL e dados de teste.
+O serviço Repositório ( `RepositoryService`) fornece armazenamento de recursos e serviços de gerenciamento para AEM formulários. Quando os desenvolvedores criam um aplicativo, eles podem implantar os ativos no repositório em vez de em um sistema de arquivos. Os ativos podem incluir qualquer tipo de material de apoio, incluindo formulários XML, PDF forms (incluindo formulários Acrobat), fragmentos de formulário, imagens, perfis, políticas, arquivos SWF, arquivos DX, schemas XML, arquivos WSDL e dados de teste.
 
 Você pode usar o repositório padrão incluído nos formulários AEM ou usar um repositório de terceiros (EMC Documentum Content Server, IBM FileNet Content Manager ou IBM Content Manager).
 
@@ -538,19 +538,19 @@ A configuração a seguir está disponível para o serviço Repositório.
 
 ## Configurações do serviço de assinatura {#signature-service-settings}
 
-O serviço de assinatura ( `SignatureService`) permite que sua organização proteja a segurança e a privacidade dos documentos Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que os documentos não sejam alterados. Alterar um documento quebra sua assinatura. Dado que os elementos de segurança são aplicados ao próprio documento, este permanece seguro e controlado durante todo o seu ciclo de vida; além do firewall, quando é baixado offline e quando é enviado de volta à sua organização.
+O serviço de assinatura ( `SignatureService`) permite que sua organização proteja a segurança e a privacidade dos documentos Adobe PDF que ele distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que os documentos não sejam alterados. Alterar um documento quebra sua assinatura. Dado que os elementos de segurança são aplicados ao próprio documento, este permanece seguro e controlado durante todo o seu ciclo de vida; além do firewall, quando é baixado offline e quando é enviado de volta à sua organização.
 
 As configurações a seguir estão disponíveis para o serviço de assinatura.
 
-**Nome Do Serviço SPI HSM Remoto:** Essa opção é para uso quando o HSM está instalado em um computador remoto. Especifique essa opção quando os formulários AEM estiverem instalados em um Windows de 64 bits e você estiver usando dispositivos HSM para assinatura.
+**Nome Do Serviço SPI HSM Remoto:** Essa opção é para uso quando o HSM está instalado em um computador remoto. Especifique essa opção quando AEM formulários estiverem instalados em um Windows de 64 bits e você estiver usando dispositivos HSM para assinatura.
 
-**URL Do Serviço Web HSM Remoto:** Especifique essa opção quando os formulários AEM estiverem instalados no Windows de 64 bits e você estiver usando dispositivos HSM para assinatura.
+**URL Do Serviço Web HSM Remoto:** Especifique essa opção quando AEM formulários estiverem instalados no Windows de 64 bits e você estiver usando dispositivos HSM para assinatura.
 
 **Certificação Para Incluir Alterações No Carregamento Do Formulário:** Quando essa opção é selecionada, o Estado do formulário XFA é certificado além do modelo XFA. Observe que ativar essa opção pode ter um impacto negativo no desempenho. O valor padrão é true.
 
 **Executar scripts JavaScript de Documento:** Especifica se os scripts JavaScript de Documento devem ser executados durante operações de assinatura. O valor padrão é false.
 
-**Processar documentos com compatibilidade com o Acrobat 9:** Especifica se a compatibilidade do Acrobat 9 deve ser ativada. Por exemplo, quando essa opção é selecionada, a Certificação visível em PDFs dinâmicos é ativada. O valor padrão é false.
+**Processar documentos com compatibilidade Acrobat 9:** Especifica se a compatibilidade do Acrobat 9 deve ser ativada. Por exemplo, quando essa opção é selecionada, a Certificação visível em PDFs dinâmicos é ativada. O valor padrão é false.
 
 **Incorporar informações de revogação ao assinar:** Especifica se as informações de revogação são incorporadas ao assinar o documento PDF. O valor padrão é false.
 
@@ -560,9 +560,9 @@ As configurações a seguir estão disponíveis para o serviço de assinatura.
 
 **Ordem de verificação de revogação:** Especifica a ordem de verificação de revogação quando a verificação é possível por meio dos mecanismos CRL (Certificate Revocation Lista) e OCSP (Online Certificate Status Protocol). O valor padrão é OCSPFirst.
 
-**Tamanho Máximo De Informações De Arquivo De Revogação:** O tamanho máximo das informações de arquivo de revogação em kilobytes. Os formulários do AEM tentam armazenar o máximo de informações de revogação possível sem exceder o limite. O valor padrão é 10 KB.
+**Tamanho Máximo De Informações De Arquivo De Revogação:** O tamanho máximo das informações de arquivo de revogação em kilobytes. AEM formulários tentam armazenar o máximo possível de informações de revogação sem exceder o limite. O valor padrão é 10 KB.
 
-**Assinaturas De Suporte Criadas A Partir De Compilações Pré-Lançamento De Produtos Adobe:** Quando essa opção for selecionada, a assinatura criada usando a versão de pré-lançamento dos produtos Adobe será validada corretamente. O valor padrão é false.
+**Assinaturas De Suporte Criadas A Partir De Compilações Pré-Lançamento De Produtos Adobe:** Quando essa opção é selecionada, a assinatura criada usando a versão de pré-lançamento dos produtos Adobe será validada corretamente. O valor padrão é false.
 
 **Opção de tempo de verificação:** Especifica o tempo de verificação do certificado de um assinante. O valor padrão é Tempo seguro ou Hora atual.
 
@@ -570,7 +570,7 @@ As configurações a seguir estão disponíveis para o serviço de assinatura.
 
 **Use As Informações De Validação Armazenadas No Documento Para Validação De Assinaturas:** Quando essa opção é selecionada, as informações de validação (incluindo informações de revogação e carimbo de data e hora) incorporadas no documento são usadas para validar assinaturas. O valor padrão é true.
 
-**Máximo de sessões de verificação aninhadas permitidas:** O número máximo de sessões de verificação aninhadas permitidas. Os formulários AEM usam esse valor para impedir um loop infinito ao verificar os certificados do assinante OCSP ou CRL quando o certificado OCSP ou CRL não está configurado corretamente. O valor padrão é 10.
+**Máximo de sessões de verificação aninhadas permitidas:** O número máximo de sessões de verificação aninhadas permitidas. AEM formulários usam esse valor para impedir um loop infinito ao verificar os certificados do assinante OCSP ou CRL quando o certificado OCSP ou CRL não está configurado corretamente. O valor padrão é 10.
 
 **Inclinação máxima do relógio para verificação:** O tempo máximo, em minutos, em que o tempo de assinatura pode ser após o tempo de validação. Se a inclinação do relógio for maior que esse valor, a assinatura não será válida. O valor padrão é 65 minutos.
 
@@ -628,7 +628,7 @@ As configurações a seguir estão disponíveis para o serviço de assinatura.
 
 **Tamanho da resposta do TSP:** Tamanho estimado, em bytes, da resposta TSP. Esse valor deve representar o tamanho máximo da resposta do carimbo de data e hora que o provedor configurado poderia retornar. Não altere isso a menos que tenha certeza absoluta. O valor mínimo é 60B e o valor máximo é 10240B. O valor padrão é 4096B.
 
-**Ignorar extensão** do servidor TimeStamp: Selecione a opção **Ignorar extensão** do servidor de carimbo de data e hora para impedir que o servidor de formulários AEM entre em contato com o servidor de carimbo de data e hora especificado. A seleção da opção ajuda a evitar falhas de processo que ocorrem devido ao tempo limite de conexão entre os formulários AEM e os servidores de carimbo de data e hora.
+**Ignorar extensão** do servidor TimeStamp: Selecione a opção **Ignorar extensão** do servidor TimeStamp para impedir que o servidor AEM Forms entre em contato com o servidor de carimbo de data/hora especificado. A seleção da opção ajuda a evitar falhas no processo que ocorrem devido ao tempo limite de conexão entre a AEM Forms e os servidores de carimbo de data e hora.
 
 ### Opções de Lista de revogação de certificado {#certificate-revocation-list-options}
 
@@ -743,7 +743,7 @@ Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pas
 
 **Preservar na falha:** Se verdadeiro, os arquivos originais serão preservados na pasta de falha em caso de falha.
 
-**Acelerador:** Quando essa opção é selecionada, ela limita o número de trabalhos de pasta monitorados que os formulários AEM processam a qualquer momento. O valor Tamanho do Lote determina o número máximo de trabalhos (Consulte Sobre a limitação).
+**Acelerador:** Quando essa opção é selecionada, ela limita o número de trabalhos de pasta observados que AEM processos de formulários em um determinado momento. O valor Tamanho do Lote determina o número máximo de trabalhos (Consulte Sobre a limitação).
 
 ## Configurações de serviço do serviço Web {#web-service-service-settings}
 
