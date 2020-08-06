@@ -10,15 +10,18 @@ topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
 source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 0%
 
 ---
 
 
 # Adicionar anexos {#adding-attachments}
 
-## Adicionar anexos em formulários sincronizados com o servidor de fluxo de trabalho do AEM Forms (AEM Forms no JEE) {#adding-annotations}
+## Adicionar anexos em formulários sincronizados com o servidor do AEM Forms Workflow (AEM Forms em JEE) {#adding-annotations}
 
-O aplicativo AEM Forms permite anexar imagens, notas com script e notas de texto ao formulário sincronizado com o servidor JEE do AEM Forms. Se o formulário for carregado de um servidor de fluxo de trabalho do AEM Forms, seus anexos serão adicionados ao formulário. Você pode tocar no botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação vermelha especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão de notificações vermelhas. Se não houver anexos no formulário, quando você tocar no botão de anexos ![anexar](assets/attch.png), você obterá opções para anexar fotos ou scripts.
+O aplicativo AEM Forms permite anexar imagens, anotações com script e notas de texto ao formulário sincronizado com o servidor AEM Forms JEE. Se o formulário for carregado de um servidor do AEM Forms Workflow, os anexos serão adicionados ao formulário. Você pode tocar no botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação vermelha especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão de notificações vermelhas. Se não houver anexos no formulário, quando você tocar no botão de anexos ![anexar](assets/attch.png), você obterá opções para anexar fotos ou scripts.
 
 Suas opções são:
 
@@ -76,12 +79,13 @@ A opção **Anotações** permite adicionar rabiscos à mão livre e anexos de t
    * **[!UICONTROL Feito]**: Anexa o script atual.
    * **[!UICONTROL Cancelar]**: Descarta o script atual e sai da interface do usuário do Scribble.
    * ![teclado](assets/keyboard.png): Limpa o rabisco e permite que você adicione uma nota de texto.
+
    ![Teclado no script do aplicativo AEM Forms](assets/keyboard-inapp.png)
 
-## Anexos em formulários sincronizados com os servidores de formulários AEM sem fluxo de trabalho de formulários AEM (formulários AEM no OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
+## Anexos em formulários sincronizados com os servidores AEM Forms sem o AEM Forms Workflow (AEM Forms no OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
-Os anexos para formulários móveis sincronizados com os servidores OSGi do AEM Forms funcionam de forma semelhante aos servidores JEE do AEM Forms.
+Os anexos para formulários móveis sincronizados com os servidores OSGi da AEM Forms funcionam de forma semelhante aos servidores AEM Forms JEE.
 
-Os anexos de nível de formulário não são suportados para formulários adaptáveis carregados no aplicativo a partir de um servidor OSGi do AEM Forms. Para anexar imagens ou notas de texto, ative os anexos de nível de campo no formulário ao criá-lo. Arraste e solte o componente de anexo de arquivo do navegador de componentes no campo.
+Os anexos de nível de formulário não são suportados para formulários adaptáveis carregados no aplicativo a partir de um servidor OSGi da AEM Forms. Para anexar imagens ou notas de texto, ative os anexos de nível de campo no formulário ao criá-lo. Arraste e solte o componente de anexo de arquivo do navegador de componentes no campo.
 
 No caso de formulários adaptáveis, você pode visualização os arquivos anexados no documento de registro (DoR). Consulte [Gerar Documento de registro para formulários](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adaptáveis não XFA.
