@@ -1,8 +1,8 @@
 ---
-title: APIs do serviço de informações do sistema
-seo-title: APIs do serviço de informações do sistema
-description: Este documento fornece informações detalhadas sobre as APIs fornecidas pelo serviço de informações do sistema.
-seo-description: Este documento fornece informações detalhadas sobre as APIs fornecidas pelo serviço de informações do sistema.
+title: APIs de serviço de informação do sistema
+seo-title: APIs de serviço de informação do sistema
+description: Este documento fornece informações detalhadas sobre as APIs fornecidas pelo serviço de informação do sistema.
+seo-description: Este documento fornece informações detalhadas sobre as APIs fornecidas pelo serviço de informação do sistema.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
 
-# APIs do serviço de informações do sistema {#system-information-service-apis}
+# APIs de serviço de informação do sistema {#system-information-service-apis}
 
-O serviço de informações do sistema fornece um conjunto de REST APIs para recuperar informações. A tabela a seguir fornece informações detalhadas sobre as APIs:
+O serviço de informação do sistema fornece um conjunto de REST APIs para recuperar informações. A tabela a seguir fornece informações detalhadas sobre as APIs:
 
 <table>
  <thead>
@@ -31,7 +34,7 @@ O serviço de informações do sistema fornece um conjunto de REST APIs para rec
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[servidor]:[porta]/rest/services/SystemInfo.properties`</p></td> 
-   <td><p>Esta API é um invólucro para a API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> . Ele recupera a configuração do ambiente de trabalho atual. </p></td> 
+   <td><p>Esta API é um invólucro para a API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> . Ele recupera a configuração do ambiente ativo atual. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 
@@ -51,7 +54,7 @@ O serviço de informações do sistema fornece um conjunto de REST APIs para rec
   <tr>
    <td><p>SystemInfo.services</p></td> 
    <td><p>https://[servidor]:[porta]/rest/services/ SystemInfo.services</p></td> 
-   <td><p>Recupera o status e os parâmetros de configuração dos serviços de formulários AEM.</p></td> 
+   <td><p>Recupera os parâmetros de status e configuração dos serviços de formulários AEM.</p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td> 
@@ -85,7 +88,7 @@ O serviço de informações do sistema fornece um conjunto de REST APIs para rec
   <tr>
    <td><p>SystemInfo.licenseInfo</p></td> 
    <td><p>https://[servidor]:[porta]/rest/services/ SystemInfo.licenseInfo</p></td> 
-   <td><p>Recupera informações de versão e licença dos componentes de formulários AEM instalados. </p></td> 
+   <td><p>Recupera as informações de versão e licença dos componentes de formulários AEM instalados. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td> 
@@ -95,16 +98,16 @@ O serviço de informações do sistema fornece um conjunto de REST APIs para rec
   <tr>
    <td><p>SystemInfo.threads?delay=[n]&amp;iterações=[n]</p></td> 
    <td><p>https://[servidor]:[porta]/rest/services/ SystemInfo.threads?delay=[n]&amp;iterações=[n]</p></td> 
-   <td><p>Recupera o rastreamento de contagem e pilha de threads ativos. Ele aceita os seguintes parâmetros:</p>
+   <td><p>Recupera a contagem e o rastreamento de empilhamento de threads ativos. Ele aceita os seguintes parâmetros:</p>
     <ul>
      <li><p>iterações= [n]: Especifica a contagem de iterações. Substitua n por um número. </p></li>
-     <li><p>Atraso= [n]: Especifica o número de milissegundos a aguardar antes de iniciar a próxima repetição. </p></li>
+     <li><p>Atraso= [n]: Especifica o número de milissegundos a aguardar antes de iniciar a próxima iteração. </p></li>
     </ul><p></p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.info</p></td> 
    <td><p>https://[servidor]:[porta]/rest/services/ SystemInfo.info</p></td> 
-   <td><p>Esta API é um invólucro para todas as APIs do serviço de informações do sistema. Internamente, ele executa todas as APIs de informações do sistema e baixa informações em formato zip. </p><p><i><strong>observação</strong>: O SystemInfo.info não fornece rastreamento de contagem e pilha de threads ativos. </i></p></td> 
+   <td><p>Essa API é um invólucro para todas as APIs de serviço de informação do sistema. Internamente, ele executa todas as APIs de informações do sistema e baixa informações em formato zip. </p><p><i><strong>observação</strong>: O SystemInfo.info não fornece rastreamento de contagem e empilhamento de threads ativos. </i></p></td> 
   </tr> 
  </tbody> 
 </table>
