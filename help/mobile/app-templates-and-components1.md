@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 translation-type: tm+mt
 source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Um Modelo é usado para criar uma Página e define quais componentes podem ser usados dentro do escopo selecionado. Um modelo é uma hierarquia de nós que tem a mesma estrutura da página a ser criada, mas sem nenhum conteúdo real.
+Um Modelo é usado para criar uma Página e define quais componentes podem ser usados dentro do escopo selecionado. Um modelo é uma hierarquia de nós que tem a mesma estrutura que a página a ser criada, mas sem nenhum conteúdo real.
 
 Cada modelo apresentará uma seleção de componentes disponíveis para uso.
 
@@ -60,6 +63,7 @@ Este nó contém *um nó jcr:content (cq:PageContent)* que pode ser usado como a
 >
 >* [Modelos](/help/sites-developing/templates.md)
 >* [Componentes](/help/sites-developing/components.md)
+
 >
 
 
@@ -68,10 +72,10 @@ Depois de ter a compreensão básica de Modelos e componentes, consulte os segui
 
 * [Criação e adição de modelos e componentes](/help/mobile/mobile-ondemand-app-templates.md)
 * [Uso das propriedades do conteúdo para exportar conteúdo](/help/mobile/on-demand-content-properties-exporting.md)
-* [Práticas recomendadas ](/help/mobile/best-practices-aem-mobile.md)
-* [Desenvolvimento de serviços de conteúdo do AEM Mobile](/help/mobile/developing-content-services.md)
+* [Práticas recomendadas    ](/help/mobile/best-practices-aem-mobile.md)
+* [Desenvolvimento dos serviços de conteúdo da AEM Mobile](/help/mobile/developing-content-services.md)
 
-### Additional Resources {#additional-resources}
+### Recursos adicionais {#additional-resources}
 
 Para saber mais sobre tópicos adicionais em aplicativos móveis, consulte os links abaixo:
 
