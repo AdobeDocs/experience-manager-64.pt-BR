@@ -11,6 +11,9 @@ topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Os formulários HTML5 estão sendo cada vez mais usados em dispositivos de toque
 
    >[!NOTE]
    >
-   >As dimensões do campo selecionado no Designer de Formulários são refletidas quando o campo é renderizado. No entanto, a dimensão da caixa de assinatura renderizada é calculada com base na proporção do campo, e não na dimensão especificada no Designer de Formulários.
+   >Dimension do campo selecionado no Forms Designer são refletidas quando o campo é renderizado. No entanto, a dimensão da caixa de assinatura renderizada é calculada com base na proporção do campo, e não na dimensão especificada no Forms Designer.
 
 1. Configure o campo Signature Scribble.
 
