@@ -1,6 +1,6 @@
 ---
-title: Renderização e entrega
-seo-title: Renderização e entrega
+title: Renderização e Delivery
+seo-title: Renderização e Delivery
 description: 'null'
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
@@ -10,21 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 8%
 
 ---
 
 
-# Renderização e entrega{#rendering-and-delivery}
+# Renderização e Delivery{#rendering-and-delivery}
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O conteúdo do AEM pode ser facilmente renderizado por meio de Servlets [padrão](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) Sling para renderizar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
+AEM conteúdo pode ser facilmente renderizado por meio de Servlets [padrão](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) Sling para renderizar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
 
 Essas renderizações predefinidas normalmente caminham pelo repositório e retornam o conteúdo como está.
 
-O AEM, via Sling, também oferece suporte ao desenvolvimento e implantação de renderizadores de sling personalizados para ter total controle do esquema renderizado e do conteúdo.
+AEM, via Sling, também oferece suporte ao desenvolvimento e implantação de renderizadores personalizados de sling para ter total controle do schema e conteúdo renderizados.
 
 Os renderizadores padrão dos serviços de conteúdo preenchem a lacuna entre os Sling Defaults predefinidos e o Custom Development que permite a personalização e o controle de muitos aspectos do conteúdo renderizado sem desenvolvimento.
 
@@ -93,7 +96,7 @@ A tabela a seguir mostra as propriedades das Configurações de exportação:
    <td>Sequência de caracteres[]</td>
    <td>excluir nada</td>
    <td>Prefixos de propriedade</td>
-   <td>excluir propriedades que começam com prefixos especificados da exportação JSON</td>
+   <td>excluir propriedades que start com prefixos especificados da exportação JSON</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
@@ -222,7 +225,7 @@ Essa configuração estende o padrão para incluir o agrupamento de filhos em um
 
 &lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
 
-### Additional Resources {#additional-resources}
+### Recursos adicionais {#additional-resources}
 
 Consulte os recursos abaixo para saber mais sobre tópicos adicionais nos Serviços de conteúdo:
 
