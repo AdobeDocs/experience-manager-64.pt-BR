@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: 80d451aa6a325d1b668d7d0ddae95a1a14ee877a
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 80d451aa6a325d1b668d7d0ddae95a1a14ee877a
 
 Os detalhes a seguir são ideias e comentários expressos por David Nuescheler.
 
-David foi cofundador e CTO da Day Software AG, um provedor líder de software global de gerenciamento de conteúdo e infraestrutura de conteúdo, que foi adquirido pela Adobe em 2010. Ele agora é sócio e vice-presidente de tecnologia empresarial da Adobe e também lidera o desenvolvimento da JSR-170, a API (application programming interface, interface de programação de aplicativos) do Java Content Repository (JCR), o padrão de tecnologia para o gerenciamento de conteúdo.
+David foi cofundador e CTO da Day Software AG, um provedor líder de software global de gestão de conteúdo e infraestrutura de conteúdo, que foi adquirido pela Adobe em 2010. Ele agora é sócio e vice-presidente de tecnologia empresarial na Adobe e também lidera o desenvolvimento da JSR-170, a API (application programming interface, interface de programação de aplicativos) do repositório de conteúdo Java (JCR), o padrão de tecnologia para a gestões de conteúdo.
 
 Outras atualizações também podem ser vistas em [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
@@ -31,11 +34,11 @@ Em várias discussões, descobri que os desenvolvedores estão um pouco inquieto
 
 Enquanto no mundo relacional a indústria de software tem muita experiência em como modelar dados, ainda estamos nos estágios iniciais para o espaço no repositório de conteúdo.
 
-Gostaria de começar a preencher este vazio, expressando minhas opiniões pessoais sobre como o conteúdo deve ser modelado, esperando que isso possa algum dia se formar em algo mais significativo para a comunidade de desenvolvedores, que não é apenas &quot;minha opinião&quot;, mas algo que é mais generalizado. Então considerem isto como se evoluíssemos rapidamente, primeiro esfaqueando.
+Gostaria de start para preencher este vazio expressando minhas opiniões pessoais sobre como o conteúdo deve ser modelado, esperando que isso possa algum dia se formar em algo mais significativo para a comunidade de desenvolvedores, que não é apenas &quot;minha opinião&quot;, mas algo que é mais generalizado. Então considerem isto como se evoluíssemos rapidamente, primeiro esfaqueando-os.
 
 >[!NOTE]
 >
->Isenção de responsabilidade: Estas orientações exprimem as minhas opiniões pessoais, por vezes controversas. Aguardo com expectativa o debate e o aperfeiçoamento destas orientações.
+>Isenção de responsabilidade: Essas diretrizes expressam minhas visualizações pessoais, às vezes controversas. Aguardo com expectativa o debate e o aperfeiçoamento destas orientações.
 
 ## Sete regras simples {#seven-simple-rules}
 
@@ -57,7 +60,7 @@ Outras restrições de dados, como restrições obrigatórias ou de tipo e valor
 
 #### Exemplo {#example-1}
 
-O exemplo acima de usar uma propriedade `lastModified` Date no nó, por exemplo, &quot;postagem no blog&quot;, não significa que haja necessidade de um tipo de nó especial. Definitivamente usaria `nt:unstructured` para meus nós de postagem de blog pelo menos inicialmente. Já que no meu aplicativo de blogue tudo o que vou fazer é mostrar a última data Modificada de qualquer forma (possivelmente &quot;ordene por&quot;) eu mal me importo se é uma Data. Como eu implícita a minha aplicação de blogue para colocar uma &quot;data&quot; lá de qualquer forma, não há necessidade de declarar a presença de uma `lastModified` data na forma de um tipo nodetype.
+O exemplo acima de usar uma propriedade `lastModified` Date no nó, por exemplo, &quot;postagem no blog&quot;, realmente não significa que haja necessidade de um tipo de nó especial. Definitivamente usaria `nt:unstructured` para meus nós de postagem de blog pelo menos inicialmente. Já que no meu aplicativo de blogue tudo o que vou fazer é mostrar a última data Modificada de qualquer forma (possivelmente &quot;ordene por&quot;) eu mal me importo se é uma Data. Como eu implícita a minha aplicação de blogue para colocar uma &quot;data&quot; lá de qualquer forma, não há necessidade de declarar a presença de uma `lastModified` data na forma de um tipo nodetype.
 
 ### Regra nº 2: Direcione a hierarquia de conteúdo, não deixe que isso aconteça. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -67,7 +70,7 @@ A hierarquia de conteúdo é um ativo muito valioso. Então não deixe que isso 
 
 Embora seja extremamente fácil colocar rapidamente um modelo relacional existente em um modelo hierárquico, é preciso pensar nesse processo.
 
-Na minha experiência, se você pensar no controle de acesso e na contenção, geralmente são bons drivers para a hierarquia de conteúdo. Pense nisso como se fosse o seu sistema de arquivos. Talvez até use arquivos e pastas para modelá-los no disco local.
+Na minha experiência, se você pensar em controle de acesso e contenção, geralmente bons drivers para a hierarquia de conteúdo. Pense nisso como se fosse o seu sistema de arquivos. Talvez até use arquivos e pastas para modelá-los no disco local.
 
 Pessoalmente, prefiro as convenções de hierarquia do que o sistema de digitação em muitos casos inicialmente, e introduzo a digitação mais tarde.
 
@@ -93,7 +96,7 @@ Eu modelaria um simples sistema de blogues da seguinte maneira. Por favor, obser
 
 Penso que uma das coisas que se torna evidente é que todos nós entendemos a estrutura do conteúdo com base no exemplo, sem mais explicações.
 
-O que pode ser inesperado inicialmente é por que eu não armazenaria os &quot;comentários&quot; com o &quot;post&quot;, que é devido ao controle de acesso que eu gostaria que fosse aplicado de forma razoavelmente hierárquica.
+O que pode ser inesperado inicialmente é por que eu não armazenaria os &quot;comentários&quot; com a &quot;postagem&quot;, que é devido ao controle de acesso que eu gostaria de ser aplicado de forma razoavelmente hierárquica.
 
 Usando o modelo de conteúdo acima, posso permitir que o usuário &quot;anônimo&quot; &quot;crie&quot; comentários, mas manter o usuário anônimo somente leitura para o restante da área de trabalho.
 
@@ -111,9 +114,9 @@ Se você tiver uma sobreposição considerável de nós &quot;correspondentes&qu
 
 Se não houver sobreposição de nós com a mesma UUID, você provavelmente está abusando de espaços de trabalho.
 
-Os espaços de trabalho não devem ser usados para controle de acesso. A visibilidade do conteúdo para um grupo específico de usuários não é um bom argumento para separar as coisas em diferentes espaços de trabalho. O JCR apresenta &quot;Controle de acesso&quot; no repositório de conteúdo para fornecer isso.
+Os espaços de trabalho não devem ser usados para o controle de acesso. A visibilidade do conteúdo para um grupo específico de usuários não é um bom argumento para separar as coisas em diferentes espaços de trabalho. O JCR apresenta &quot;Controle de acesso&quot; no repositório de conteúdo para fornecer isso.
 
-Espaços de trabalho são o limite para referências e consultas.
+Espaços de trabalho são o limite para referências e query.
 
 #### Exemplo {#example-3}
 
@@ -125,7 +128,7 @@ Use espaços de trabalho para coisas como:
 Não use espaços de trabalho para coisas como:
 
 * diretórios home do usuário
-* conteúdo distinto para públicos-alvo diferentes, como público, privado, local, ...
+* conteúdo distinto para audiências de públicos alvos diferentes, como público, privado, local, ...
 * caixas de entrada de email para usuários diferentes
 
 ### Regra nº 4: Cuidado com irmãos de mesmo nome. {#rule-beware-of-same-name-siblings}
@@ -158,15 +161,15 @@ em vez de
 
 #### Explicação {#explanation-5}
 
-As referências implicam integridade referencial. Acho importante entender que as referências não apenas aumentam o custo para o repositório que gerencia a integridade referencial, mas também são caras do ponto de vista da flexibilidade do conteúdo.
+As referências implicam integridade referencial. Eu acho importante entender que as referências não apenas aumentam o custo para o repositório que gerencia a integridade referencial, mas também são caras do ponto de vista da flexibilidade do conteúdo.
 
-Pessoalmente, tenho certeza de que só utilizo referências quando realmente não posso lidar com uma referência perigosa e, de outra forma, usar um caminho, um nome ou uma string UUID para fazer referência a outro nó.
+Pessoalmente, tenho certeza de que só utilizo referências quando realmente não posso lidar com uma referência em modo de espera e, de outra forma, usar um caminho, um nome ou uma string UUID para fazer referência a outro nó.
 
 #### Exemplo {#example-5}
 
-Vamos supor que eu permita &quot;referências&quot; de um documento (a) a outro documento (b). Se eu modelar essa relação usando propriedades de referência, isso significa que os dois documentos estão vinculados em um nível de repositório. Não é possível exportar/importar o documento (a) individualmente, uma vez que o destino da propriedade de referência pode não existir. Outras operações, como mesclar, atualizar, restaurar ou clonar, também são afetadas.
+Vamos supor que eu permita &quot;referências&quot; de um documento (a) a outro documento (b). Se eu modelar essa relação usando propriedades de referência, isso significa que os dois documentos estão vinculados em um nível de repositório. Não é possível exportar/importar o documento a) individualmente, uma vez que o público alvo da propriedade de referência pode não existir. Outras operações, como mesclar, atualizar, restaurar ou clonar, também são afetadas.
 
-Então eu modelaria essas referências como &quot;referências fracas&quot; (no JCR v1.0, isso essencialmente se resume a propriedades de sequência que contêm o uuid do nó de destino) ou simplesmente usaria um caminho. Às vezes o caminho é mais significativo para começar.
+Então eu modelaria essas referências como &quot;referências fracas&quot; (no JCR v1.0, isso essencialmente se resume a propriedades de sequência que contêm o uuid do nó do público alvo) ou simplesmente usaria um caminho. Às vezes o caminho é mais significativo para começar.
 
 Eu acho que existem casos de uso em que um sistema realmente não pode funcionar se uma referência está caindo, mas eu simplesmente não consigo encontrar um bom &quot;real&quot; mas simples exemplo de minha experiência direta.
 
@@ -176,7 +179,7 @@ Eu acho que existem casos de uso em que um sistema realmente não pode funcionar
 
 Se um modelo de conteúdo expor algo que até *cheira* remotamente como um arquivo ou uma pasta que tento usar (ou a partir de) `nt:file`, `nt:folder` e `nt:resource`.
 
-Em minha experiência, muitos aplicativos genéricos permitem a interação com arquivos nt:folder e nt:implícita e sabem como lidar e exibir esses eventos se estiverem enriquecidos com metadados adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos como CIFS ou WebDAV sentados sobre o JCR torna-se implícita.
+Em minha experiência, muitos aplicativos genéricos permitem a interação com nt:folder e nt:files implicitamente e sabem como manipular e exibir esses eventos se estiverem enriquecidos com metadados adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos como CIFS ou WebDAV sentados sobre o JCR torna-se implícita.
 
 Penso que, como regra geral, poderíamos usar o seguinte: Se você precisar armazenar o nome do arquivo e o tipo MIME, então `nt:file`/ `nt:resource` é uma correspondência muito boa. Se você puder ter vários &quot;arquivos&quot; e nt:folder é um bom local para armazená-los.
 
@@ -210,7 +213,7 @@ Se o modelo de conteúdo estiver cheio de propriedades que terminam em &quot;Id&
 
 É verdade que alguns nós precisam de uma identificação estável durante todo o seu ciclo de vida. Muito menos do que você poderia pensar. mix:referenciável fornece um mecanismo desse tipo integrado no repositório, de modo que não há necessidade de encontrar um meio adicional de identificar um nó de forma estável.
 
-Lembre-se também de que os itens podem ser identificados por caminho, e tanto quanto &quot;links simbólicos&quot; façam mais sentido para a maioria dos usuários do que os links rígidos em um sistema de arquivos unix, um caminho faz sentido para a maioria dos aplicativos se referirem a um nó de destino.
+Lembre-se também de que os itens podem ser identificados por caminho, e tanto quanto &quot;links simbólicos&quot; façam mais sentido para a maioria dos usuários do que os links rígidos em um sistema de arquivos unix, um caminho faz sentido para a maioria dos aplicativos se referirem a um nó de público alvo.
 
 Mais importante, é **mix**:referenciável, o que significa que pode ser aplicado a um nó no momento em que você realmente precisa referenciá-lo.
 
