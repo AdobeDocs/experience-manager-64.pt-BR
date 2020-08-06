@@ -1,6 +1,6 @@
 ---
-title: Solução de problemas do AEM
-seo-title: Solução de problemas do AEM
+title: Solução de problemas AEM
+seo-title: Solução de problemas AEM
 description: Saiba mais sobre como solucionar problemas com o AEM.
 seo-description: Saiba mais sobre como solucionar problemas com o AEM.
 uuid: d68e9ead-8aa6-4108-9f1e-85d7cd7a370f
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 10%
 
 ---
 
 
-# Solução de problemas do AEM{#troubleshooting-aem}
+# Solução de problemas AEM{#troubleshooting-aem}
 
-A seção a seguir aborda alguns problemas que podem ocorrer ao usar o AEM, juntamente com sugestões sobre como solucioná-los.
+A seção a seguir aborda alguns problemas que podem ocorrer ao usar AEM, juntamente com sugestões sobre como solucioná-los.
 
 >[!NOTE]
 >
@@ -27,7 +30,7 @@ A seção a seguir aborda alguns problemas que podem ocorrer ao usar o AEM, junt
 >
 >Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/known-issues.md) para a sua instância (pacotes de versões e serviços).
 
-## Solução de problemas para administradores {#troubleshooting-scenarios-for-administrators}
+## Cenários de solução de problemas para administradores {#troubleshooting-scenarios-for-administrators}
 
 A tabela a seguir fornece uma visão geral dos problemas que os administradores podem precisar resolver:
 
@@ -39,7 +42,7 @@ A tabela a seguir fornece uma visão geral dos problemas que os administradores 
   </tr> 
   <tr> 
    <td>Administrador do sistema</td> 
-   <td><p>Clicar duas vezes no jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivos)</p> </td> 
+   <td><p>Clicar no Duplo do jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivamento)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Administrador do sistema</p> </td> 
@@ -47,11 +50,11 @@ A tabela a seguir fornece uma visão geral dos problemas que os administradores 
   </tr> 
   <tr> 
    <td><p>Administrador do sistema</p> </td> 
-   <td><p>A tela de boas-vindas do AEM não é exibida no navegador após clicar duas vezes no Início rápido do AEM CM</p> </td> 
+   <td><p>A tela de boas-vindas do AEM não é exibida no navegador após clicar no duplo AEM Início rápido do CM</p> </td> 
   </tr> 
   <tr> 
    <td><p>Administrador do sistema</p> <p>usuário administrador</p> </td> 
-   <td><p>Como fazer um despejo de thread</p> </td> 
+   <td><p>Como fazer um despejo de encadeamento</p> </td> 
   </tr> 
   <tr> 
    <td><p>Administrador do sistema</p> <p>usuário administrador</p> </td> 
@@ -68,15 +71,15 @@ Consulte Problemas [de instalação](/help/sites-deploying/troubleshooting.md#co
 * Os aplicativos em execução em CRX resultam em erros de falta de memória.
 * A tela de boas-vindas do AEM não exibe no navegador depois de clicar duas vezes no Início rápido do AEM.
 
-## Métodos para análise de solução de problemas {#methods-for-troubleshooting-analysis}
+## Métodos para solução de problemas de Análise {#methods-for-troubleshooting-analysis}
 
-### Como fazer um despejo de thread {#making-a-thread-dump}
+### Como fazer um despejo de encadeamento {#making-a-thread-dump}
 
-O despejo de thread é uma lista de todos os threads Java que estão ativos no momento. Se o AEM não responder corretamente, o despejo de encadeamento pode ajudá-lo a identificar bloqueios ou outros problemas.
+O despejo de thread é uma lista de todos os threads Java que estão ativos no momento. Se o AEM não responder corretamente, o despejo de encadeamento poderá ajudá-lo a identificar bloqueios ou outros problemas.
 
 ### Usando o Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Abra o **AEM Web Console**; por exemplo em `http://localhost:4502/system/console/`.
+1. Abra o console **da Web** AEM; por exemplo em `http://localhost:4502/system/console/`.
 
 1. Selecione **Threads** na **guia Status** .
 
@@ -84,7 +87,7 @@ O despejo de thread é uma lista de todos os threads Java que estão ativos no m
 
 ### Usando jstack (linha de comando) {#using-jstack-command-line}
 
-1. Encontre o PID (ID do processo) da instância Java do AEM.
+1. Encontre o PID (ID do processo) da instância do Java AEM.
 
    Por exemplo, você pode usar `ps -ef` ou `jps`.
 
@@ -104,19 +107,19 @@ Consulte [Como tirar os Thread Dumps de uma documentação JVM](https://helpx.ad
 
 ### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 
-Quando a funcionalidade for desenvolvida para o AEM WCM, as Sessões JCR poderão ser abertas (comparável à abertura de uma conexão de banco de dados). Se as sessões abertas nunca forem fechadas, seu sistema poderá apresentar os seguintes sintomas:
+Quando a funcionalidade é desenvolvida para AEM WCM, as Sessões JCR podem ser abertas (comparável à abertura de uma conexão de banco de dados). Se as sessões abertas nunca forem fechadas, seu sistema poderá apresentar os seguintes sintomas:
 
 * O sistema fica mais lento.
-* Você pode ver um monte de CacheManager: redimensionarTodas as entradas no arquivo de log; o seguinte número (size=&lt;x>) mostra o número de caches, cada sessão abre vários caches.
+* Você pode ver um monte de CacheManager: redimensionarTodas as entradas no arquivo de log; o número a seguir (size=&lt;x>) mostra o número de caches, cada sessão abre vários caches.
 * De tempos em tempos, o sistema fica sem memória (após algumas horas, dias ou semanas - dependendo da gravidade).
 
 Para analisar sessões não fechadas e descobrir qual código não está fechando uma sessão, consulte o artigo da Base de conhecimento [Analisar sessões](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html)não fechadas.
 
-### Uso do console da Web do Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
+### Usando o Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 
 O estatuto dos pacotes OSGi também pode dar uma indicação precoce de possíveis emissões.
 
-1. Abra o **AEM Web Console**; por exemplo em `http://localhost:4502/system/console/`.
+1. Abra o console **da Web** AEM; por exemplo em `http://localhost:4502/system/console/`.
 
 1. Selecione **Pacotes** na guia **OSGI** .
 
