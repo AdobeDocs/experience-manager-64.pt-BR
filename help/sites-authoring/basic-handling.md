@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
 source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+workflow-type: tm+mt
+source-wordcount: '2764'
+ht-degree: 94%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
    >
 * Algumas funcionalidades não estão disponíveis em todos os consoles, e funcionalidades adicionais podem estar disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-authoring/keyboard-shortcuts.md) e [edição](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -86,7 +90,7 @@ As opções disponíveis nesses painéis estão descritas abaixo.
    <td><strong>Propósito</strong></td> 
   </tr>
   <tr>
-   <td>Ativos<br /> </td> 
+   <td>Assets<br /> </td> 
    <td>Esse consoles permitem importar e <a href="/help/assets/assets.md">gerenciar ativos digitais</a> como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM. </td> 
   </tr>
   <tr>
@@ -265,7 +269,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas   {#quick-actions}
+## Ações rápidas {#quick-actions}
 
 Na [Exibição de cartão](#quick-actions), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -372,6 +376,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 * É possível navegar para cima e para baixo na árvore, tocando ou clicando no nome do recurso ou na divisa à direita do nome do recurso.
 
    * O nome do recurso e a divisa serão destacados quando forem tocados ou clicados.
+
    ![chlimage_1-361](assets/chlimage_1-361.png)
 
    * Os filhos do recurso clicado/tocado aparecerão na coluna à direita do pai.
@@ -382,6 +387,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
    * Quando essa opção for selecionada, uma marca de seleção será sobreposta à miniatura, e o nome do recurso também será destacado.
    * Os detalhes do recurso selecionado serão mostrados na coluna final.
+
    ![chlimage_1-362](assets/chlimage_1-362.png)
 
    Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
@@ -435,7 +441,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
       * Clique ou toque na caixa de seleção mais uma vez para desmarcar tudo.
 
 
-* Selecione as colunas a serem exibidas usando a opção **Configurações de exibição **localizada sob o botão Exibições. As seguintes colunas estão disponíveis para exibição:
+* Selecione as colunas a serem exibidas usando a opção **Configurações de Visualização **localizada sob o botão Visualização. As seguintes colunas estão disponíveis para exibição:
 
    * **Nome** - O nome da página, que pode ser útil em um ambiente de criação multilíngue, pois faz parte do URL da página e não muda, independentemente do idioma
    * **Modificado** - Data da última modificação e o usuário que a realizou
@@ -444,6 +450,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * **Análise de páginas**
    * **Visitantes únicos**
    * **Tempo na página**
+
    ![screen_shot_2018-03-23at105952](assets/screen_shot_2018-03-23at105952.png)
 
    Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que normalmente é imutável) pode ser de grande ajuda quando ele não conhece o idioma.
