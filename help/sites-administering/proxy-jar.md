@@ -1,8 +1,8 @@
 ---
 title: Ferramenta Servidor Proxy (proxy.jar)
 seo-title: Ferramenta Servidor Proxy (proxy.jar)
-description: Saiba mais sobre a ferramenta Servidor proxy no AEM.
-seo-description: Saiba mais sobre a ferramenta Servidor proxy no AEM.
+description: Saiba mais sobre a Ferramenta de servidor proxy no AEM.
+seo-description: Saiba mais sobre a Ferramenta de servidor proxy no AEM.
 uuid: 9a095b12-1d54-4b79-b0c5-d973f16479d3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ Você pode usar o servidor proxy para monitorar todas as interações cliente-se
 * SMTP para mensagens de email
 * LDAP para gerenciamento de usuários
 
-Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; Por exemplo, um navegador da Web e o AEM. Isso permite que você monitore exatamente o que acontece quando você solicita uma página do AEM.
+Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; Por exemplo, um navegador da Web e AEM. Isso permite que você monitore exatamente o que acontece quando você solicita uma página AEM.
 
 ## Iniciando a ferramenta Servidor proxy {#starting-the-proxy-server-tool}
 
-A ferramenta pode ser encontrada na pasta /opt/helpers da instalação do AEM. Para iniciá-lo, digite:
+A ferramenta pode ser encontrada na pasta /opt/helpers da instalação do AEM. Para start, digite:
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
@@ -45,8 +48,8 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 * **q (modo silencioso)** Não grava as solicitações na janela do console. Use essa opção se não quiser diminuir a velocidade da conexão ou se você registrar a saída em um arquivo (consulte -logfile option).
 * **b (Modo binário)** Se você estiver procurando combinações específicas de bytes no tráfego, ative o modo binário. A saída conterá a saída hexadecimal e de caracteres.
-* **t (entradas de registro de carimbo de data/hora)** Adiciona um carimbo de data/hora a cada saída de registro. O carimbo de data/hora está em segundos, portanto ele pode não ser adequado para verificar solicitações únicas. Use-o para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy durante um período de tempo maior.
-* **logfile &lt;nome do arquivo> (gravar no arquivo de log)** Grava a conversa cliente-servidor em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
+* **t (entradas de registro de carimbo de data/hora)** Adiciona um carimbo de data/hora a cada saída de registro. O carimbo de data/hora está em segundos, portanto ele pode não ser adequado para verificar solicitações únicas. Use-o para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy em um período de tempo mais longo.
+* **logfile &lt;nome do arquivo> (gravar no arquivo de log)** Grava a conversação cliente-servidor em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
 * **i &lt;numIndentions> (adicionar recuo)** Cada conexão ativa é recuada para melhorar a leitura. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
 
 ## Usos da ferramenta Servidor proxy {#uses-of-the-proxy-server-tool}
@@ -55,7 +58,7 @@ Os seguintes cenários ilustram alguns dos objetivos para os quais a Ferramenta 
 
 **Verificar Cookies e seus Valores**
 
-O exemplo de entrada de registro a seguir mostra todos os cookies e seus valores enviados pelo cliente na sexta conexão aberta desde o início do proxy:
+O exemplo de entrada de registro a seguir mostra todos os cookies e seus valores enviados pelo cliente na sexta conexão aberta desde o start proxy:
 
 ```xml
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
@@ -75,7 +78,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 Para verificar se o keep-alive funciona:
 
-1. Inicie o servidor proxy.
+1. Start do servidor proxy.
 1. Solicite uma página.
 
 * Se keep-alive estiver funcionando, o contador de conexão nunca deve ultrapassar 5 a 10 conexões.
@@ -85,17 +88,17 @@ Para verificar se o keep-alive funciona:
 
 Se você perder solicitações em uma configuração complexa de servidor, por exemplo, com um firewall e um dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. No caso de um firewall:
 
-1. Iniciar um proxy antes de um firewall
-1. Iniciar outro proxy após um firewall
+1. Start de um proxy antes de um firewall
+1. Start outro proxy após um firewall
 1. Use-os para ver até que ponto as solicitações estão chegando.
 
 **Solicitações Suspensas**
 
 Se você tiver solicitações pendentes de vez em quando:
 
-1. Inicie um proxy.jar.
+1. Start de proxy.jar.
 1. Aguarde ou grave o log de acesso em um arquivo - com cada entrada com um carimbo de data e hora.
-1. Quando a solicitação começa a ser suspensa, você pode ver quantas conexões estavam abertas e qual solicitação está causando problemas.
+1. Quando o start de solicitação está travado, você pode ver quantas conexões estão abertas e qual solicitação está causando problemas.
 
 ## O formato das mensagens de registro {#the-format-of-log-messages}
 
@@ -112,7 +115,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 ```
 
 * C significa que esta entrada provém do cliente (é uma solicitação para uma página da Web)
-* 0 é o número da conexão (o contador de conexão é iniciado em 0)
+* 0 é o número da conexão (os start do contador de conexão são 0)
 * # 00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
 * [GET &lt;?>] é o conteúdo da solicitação, por exemplo, um dos cabeçalhos HTTP (url).
 
@@ -141,7 +144,7 @@ Analisaremos um modelo simples que produz o seguinte código quando solicitado:
 </html>
 ```
 
-Se o AEM estiver sendo executado em localhost:4303, inicie o servidor proxy como segue:
+Se AEM estiver sendo executado em localhost:4303, start o servidor proxy como segue:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
@@ -160,7 +163,7 @@ starting proxy for localhost:4303 on port 4444
 using logfile: C:\CQUnify355default\opt\helpers\test.log
 ```
 
-Os seguintes campos de cabeçalho são listados no início da primeira conexão (0), que está solicitando a página HTML principal:
+Os seguintes campos de cabeçalho são listados no start da primeira conexão (0), que está solicitando a página HTML principal:
 
 ```xml
 C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102936796533 HTTP/1.1 ]
@@ -201,7 +204,7 @@ S-0-#000158 -> [Set-Cookie: JSESSIONID=4161a56b-f193-d8-88a5-e09c5ff7ef2a;Path=/
 S-0-#000232 -> [ ]
 ```
 
-Aqui, o servidor começa a enviar o código HTML na conexão 0:
+Aqui, os start do servidor enviando o código HTML na conexão 0:
 
 ```xml
 S-0-#000234 -> [<html> ]
@@ -215,14 +218,14 @@ S-0-#000357 -> [.</body> ]
 S-0-#000367 -> [</html>]
 ```
 
-A conexão 0 é fechada imediatamente depois que o arquivo HTML é disponibilizado:
+A conexão 0 é fechada imediatamente depois que o arquivo HTML é servido:
 
 ```xml
 C-0-Finished: 516 bytes (0.0 kb/s)
 S-0-Finished: 374 bytes (0.0 kb/s)
 ```
 
-Agora, a saída é iniciada para a conexão 1, que baixa a imagem contida no código HTML:
+Agora, os start de saída para a conexão 1, que baixa a imagem contida no código HTML:
 
 ```xml
 C-1-#000000 -> [GET /author/logo.gif HTTP/1.1 ]
@@ -266,7 +269,7 @@ S-1-#000167 -> [GIF87a..........................,.......
 ...I....0.A..8......YDA.W...1..`i.`..6...Z...$@.F..)`..f..A.....iu.........$..;]
 ```
 
-Depois que o tempo limite de manutenção de atividade for atingido, a conexão 1 também será fechada:
+Depois que o tempo limite de manutenção de atividade for atingido, a conexão 1 também será encerrada:
 
 ```xml
 S-1-Finished: 291 bytes (0.0 kb/s)
