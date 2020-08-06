@@ -1,6 +1,6 @@
 ---
-title: Princípios básicos do líder
-seo-title: Princípios básicos do líder
+title: Princípios básicos do quadro de líderes
+seo-title: Princípios básicos do quadro de líderes
 description: Visão geral dos recursos do Quadro de líderes
 seo-description: Visão geral dos recursos do Quadro de líderes
 uuid: 815a6928-b147-496d-9751-13159ad1304d
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 6%
 
 ---
 
 
-# Princípios básicos do líder {#leaderboard-essentials}
+# Princípios básicos do quadro de líderes {#leaderboard-essentials}
 
 Esta página fornece as informações essenciais para trabalhar com o recurso de quadro de líderes.
 
-Antes de incluir o componente de quadro de líderes em uma página, é necessário configurar a Pontuação e os Distintos [de](implementing-scoring.md)comunidades. Consulte também [Scoring e Badges Essentials](configure-scoring.md).
+Antes de incluir o componente de quadro de líderes em uma página, é necessário configurar a Pontuação e os Distintos [de](implementing-scoring.md)comunidades. Consulte também [Pontuação e Crachás essenciais](configure-scoring.md).
 
 ## Essenciais para o lado do cliente {#essentials-for-client-side}
 
@@ -35,7 +38,7 @@ Antes de incluir o componente de quadro de líderes em uma página, é necessár
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.gamificação.hbs.leaderboard</td> 
+   <td>cq.social.gamification.hbs.leaderboard</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -56,4 +59,4 @@ Antes de incluir o componente de quadro de líderes em uma página, é necessár
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui a função [](functions.md#leaderboard-function)Quadro de líderes, inclui um `leaderboard` componente configurado.
+Uma estrutura de site da comunidade que inclui a função [](functions.md#leaderboard-function)de Quadro de líderes, inclui um `leaderboard` componente configurado.
