@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
@@ -28,6 +31,7 @@ O procedimento a seguir usa a interface clássica para criar uma raiz de idioma 
       * O código de idioma suportado é o código de duas letras em minúsculas, conforme definido pela ISO-639-1
       * O código do país suportado é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela ISO 3166
    1. Selecione o Modelo e clique em Criar.
+
    ![newpagefer](assets/newpagefr.png)
 
 1. No console Sites, na árvore Sites, selecione a página raiz do site.
