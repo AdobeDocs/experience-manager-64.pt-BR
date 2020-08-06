@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -62,9 +65,9 @@ Consulte [Marcação de recursos](tag-resources.md)de ativação.
 
 Uma estrutura de site da comunidade que inclui a função [](functions.md#catalog-function)Catalog, inclui um `enablement catalog` componente configurado.
 
-### Pré-filtros {#pre-filters}
+### Pré-Filtros {#pre-filters}
 
-Quando uma função de Catálogo é adicionada a um site da comunidade, é possível restringir os recursos de ativação e os caminhos de aprendizado exibidos no catálogo especificando um pré-filtro. Isso é feito configurando propriedades na instância do recurso de catálogo do site.
+Quando uma função de Catálogo é adicionada a um site da comunidade, é possível restringir os recursos de ativação e os caminhos de aprendizado que aparecem no catálogo especificando um pré-filtro. Isso é feito configurando propriedades na instância do recurso de catálogo do site.
 
 Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
 
@@ -77,7 +80,7 @@ Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
 
    * Por exemplo, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Adicionar um nó de filtros filho
+* Adicionar um nó filtros filho
 
    * Selecionar o `catalog`nó
    * Selecionar nó **[!UICONTROL Criar]**
@@ -114,7 +117,7 @@ As [TagIDs](../../help/sites-developing/framework.md#tagid) pré-filtradas devem
 
 * [API de ativação](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [API de relatórios](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API do Relatórios](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API do Reporting Analytics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API do Relatórios Analytics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
