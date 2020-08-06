@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Quando os usuários clicam em links nas páginas do seu site, você pode capturar informações relacionadas no Adobe Analytics. Por exemplo, use o rastreamento de link para saber como os usuários interagem com seu site, rastrear downloads de arquivos e links de saída.
 
-## Configuração do rastreamento de link para um Adobe Analytics Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## Configuração do rastreamento de links para uma Adobe Analytics Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Usando a **Navegação**, vá por **Implantação** e **Cloud Service** para a seção **Adobe Analytics** .
+1. Usando a **Navegação**, vá pela **Implantação**, **Cloud Services** para a seção **Adobe Analytics** .
 
-1. Usando **Mostrar configurações**, abra a estrutura necessária do Adobe Analytics.
+1. Usando **Mostrar configurações**, abra a estrutura Adobe Analytics necessária.
 1. Expanda a seção Configuração **de rastreamento de** link e configure conforme necessário (esta página fornece mais detalhes):
 
    ![aa-08](assets/aa-08.png)
@@ -106,7 +106,7 @@ s.linkLeaveQueryString= false;
 
 ## Envio de dados de variável com cliques em links {#sending-variable-data-with-link-clicks}
 
-Você pode configurar o AEM para enviar dados de evento e variável para o Adobe Analytics quando um usuário clicar em um link. As propriedades de Configuração **de rastreamento de** link permitem que você especifique os eventos e as variáveis do Adobe Analytics para rastrear quando ocorrerem cliques em links.
+Você pode configurar AEM para enviar dados de eventos e variáveis à Adobe Analytics quando um usuário clicar em um link. As propriedades de Configuração **de rastreamento de** link permitem que você especifique os eventos e as variáveis do Adobe Analytics para rastrear quando ocorrerem cliques em links.
 
 Os mapeamentos de estrutura determinam os valores de evento e variável. Você pode mapear variáveis do Adobe Analytics para as variáveis dos componentes de conteúdo que armazenam os dados que deseja rastrear quando os links são clicados.
 
@@ -117,7 +117,7 @@ Para enviar dados variáveis com cliques em links:
 
 Propriedades para enviar dados variáveis com cliques em links:
 
-* **EventosRastreamento de link** Insira as variáveis de evento do Adobe Analytics que você deseja usar para contar cliques em links.
+* **EventosRastreamento de link** Digite as variáveis do evento Adobe Analytics que você deseja usar para contar cliques em links.
 
    Separe vários nomes de variáveis com uma vírgula.
 
@@ -151,7 +151,7 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
    >
    >Caso contrário, você deve ter seu próprio componente exposto ali (definindo um subnó de análise em seu componente de página).
 
-   Configure o mapeamento de acordo com a tabela a seguir, arrastando a variável Analytics (SiteCatalyst) do painel lateral esquerdo:
+   Configure o mapeamento de acordo com a tabela a seguir, arrastando a variável do Analytics (SiteCatalyst) do painel lateral esquerdo:
 
 <table> 
  <tbody> 
@@ -162,7 +162,7 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
   </tr> 
   <tr> 
    <td>pagedata.title</td> 
-   <td>eVar personalizada 1 (eVar1)</td> 
+   <td>eVar personalizado 1 (eVar 1)</td> 
    <td>eVar1</td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
  </tbody> 
 </table>
 
-1. Arraste o componente de Pesquisa para a área de mapeamentos da estrutura. O componente de Pesquisa pertence ao grupo de componentes Geral no Sidekick. Configure o mapeamento de acordo com a tabela a seguir, arrastando a variável Analytics (SiteCatalyst) do painel lateral esquerdo:
+1. Arraste o componente de Pesquisa para a área de mapeamentos da estrutura. O componente de Pesquisa pertence ao grupo de componentes Geral no Sidekick. Configure o mapeamento de acordo com a tabela a seguir, arrastando a variável do Analytics (SiteCatalyst) do painel lateral esquerdo:
 
 <table> 
  <tbody> 
@@ -184,12 +184,12 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
   </tr> 
   <tr> 
    <td>eventdata.keyword</td> 
-   <td>eVar personalizada 2 (eVar2)</td> 
+   <td>eVar personalizado 2 (eVar 2)</td> 
    <td>eVar2</td> 
   </tr> 
   <tr> 
    <td>eventdata.results</td> 
-   <td>eVar personalizada 3 (eVar3)</td> 
+   <td>eVar personalizado 3 (eVar 3)</td> 
    <td>eVar3</td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
 
 1. Alterne para o modo **de** Pré-visualização e clique no link.
 
-A chamada feita terá a seguinte aparência quando exibida com o Depurador de Adobe Marketing Cloud:
+A chamada feita terá a seguinte aparência quando exibida com o Adobe Marketing Cloud Debugger:
 
 ![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
 
@@ -243,7 +243,7 @@ A chamada feita terá a seguinte aparência quando exibida com o Depurador de Ad
 1. Ative **a sequência de caracteres** de Query Leave.
 1. Recarregue a pré-visualização da página e clique no link.
 
-Os detalhes da chamada que aparecem no Depurador de Adobe Marketing Cloud são semelhantes ao exemplo a seguir:
+Os detalhes da chamada que aparecem no Adobe Marketing Cloud Debugger são semelhantes ao seguinte exemplo:
 
 ![aa-leavequerysearch-ative](assets/aa-leavequerysearch-active.png)
 
@@ -324,7 +324,7 @@ Use o seguinte procedimento para configurar o rastreamento de link para um compo
 
    >[!NOTE]
    >
-   >O rastreamento de link personalizado é visível como uma ação separada, ao lado da ação Vincular/Desvincular (Ícone Analytics).
+   >O rastreamento de link personalizado é visível como uma ação separada, ao lado da ação Vincular/Desvincular (Ícone do Analytics).
    >
    >Ela só será ativada quando você tiver selecionado um Link válido no RTE.
 
@@ -332,18 +332,20 @@ Use o seguinte procedimento para configurar o rastreamento de link para um compo
 
 1. Ative o rastreamento **de link** personalizado para substituir a configuração de rastreamento de link da estrutura do Adobe Analytics e ativar o rastreamento de link para o link atual.
 
-1. (Opcional) Para rastrear eventos com o clique no link, adicione os nomes dos eventos da Adobe Analytics no campo **Incluir variáveis** da Adobe Analytics. Separe o nome de vários eventos com vírgulas, por exemplo
+1. (Opcional) Para rastrear eventos com o clique no link, adicione nomes de eventos Adobe Analytics no campo **Incluir variáveis** Adobe Analytics. Separe o nome de vários eventos com vírgulas, por exemplo
 
    `event1, event22`.
 
-1. (Opcional) Para rastrear dados variáveis com o clique do link, adicione variáveis do Adobe Analytics no campo **Incluir variáveis** do Adobe Analytics. Use um dos seguintes formatos:
+1. (Opcional) Para rastrear dados variáveis com o clique do link, adicione variáveis Adobe Analytics no campo **Incluir variáveis** Adobe Analytics. Use um dos seguintes formatos:
 
    * `*<Variable-name>*: *<Dynamic Value>*`
    * `*<Variable-name>*: *‘CONSTANT’*`
+
    Os exemplos a seguir ilustram cada formato:
 
    * `eVar10:pagedata.title`
    * `prop1: ‘Aubergine'`
+
    Separe vários valores com uma vírgula.
 
 1. Selecione **OK**.
