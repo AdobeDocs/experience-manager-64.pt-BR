@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 93%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    >
 * Algumas funcionalidades não estão disponíveis em todos os consoles, e/ou a funcionalidade adicional está disponível em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [edição](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+
 >
 
 
