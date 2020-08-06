@@ -13,6 +13,9 @@ pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
 source-git-commit: dbb6156b375382a23b9a3faece2dcdf47fd7cd82
+workflow-type: tm+mt
+source-wordcount: '2350'
+ht-degree: 0%
 
 ---
 
@@ -31,15 +34,15 @@ A REST API fornece acesso aos mesmos recursos por meio de HTTP, com respostas se
 
 >[!NOTE]
 >
->A API do QueryBuilder é criada usando a API JCR. Você também pode query o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consultar dados do Adobe Experience Manager usando a API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)JCR.
+>A API do QueryBuilder é criada usando a API JCR. Você também pode query o Adobe Experience Manager JCR usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consultar dados da Adobe Experience Manager usando a API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)JCR.
 
 ## Sessão Gem {#gem-session}
 
-[O AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de soluções técnicas oferecidas por especialistas da Adobe Experience Manager. Esta sessão dedicada ao construtor de query é muito útil para uma visão geral e uso da ferramenta.
+[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de soluções técnicas para o Adobe Experience Manager, fornecidas por especialistas em Adobe. Esta sessão dedicada ao construtor de query é muito útil para uma visão geral e uso da ferramenta.
 
 >[!NOTE]
 >
->Consulte os formulários de [pesquisa de sessão do AEM Gem facilitados com o AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de query.
+>Consulte os formulários de [pesquisa da sessão Gem AEM facilitados com o AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de query.
 
 ## Query de amostra {#sample-queries}
 
@@ -291,7 +294,7 @@ property.3_value=bar
 
 Por padrão, o Servlet JSON do QueryBuilder retornará um conjunto padrão de propriedades para cada nó no resultado da pesquisa (por exemplo, caminho, nome, título, etc.). Para obter controle sobre quais propriedades são retornadas, é possível fazer o seguinte:
 
-Especificar
+Especifique
 
 ```
 p.hits=full
@@ -323,7 +326,7 @@ separados por um espaço:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) p.hits=select&amp; [](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3primárioType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=select&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3primárioType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -423,7 +426,7 @@ Para essas propriedades principais, você pode encurtar o query e usar &quot; `s
 
 >[!NOTE]
 >
->Para saber como criar um pacote OSGi que usa a API do QueryBuilder e usar esse pacote OSGi em um aplicativo do Adobe Experience Manager, consulte [Criação de pacotes OSGi do Adobe CQ que usam a](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API do Query Builder.
+>Para saber como criar um pacote OSGi que usa a API do QueryBuilder e usar esse pacote OSGi em um aplicativo Adobe Experience Manager, consulte [Criação de pacotes OSGi da Adobe CQ que usam a](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API do Query Builder.
 
 O mesmo query executado por HTTP usando o servlet Query Builder (JSON):
 
@@ -467,7 +470,7 @@ ou, alternativamente, o servlet json querybuilder em
 
 ( `path=/tmp` é apenas um exemplo).
 
-### Recomendações gerais de depuração {#general-debugging-recommendations}
+### Depuração geral do Recommendations {#general-debugging-recommendations}
 
 ### Obter XPath explicável por meio de registro {#obtain-explain-able-xpath-via-logging}
 
@@ -486,7 +489,7 @@ Explique **todos** os query durante o ciclo de desenvolvimento em relação ao c
 
 ### Obtenha XPath explicável por meio do depurador do Construtor de Query {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Use o depurador do AEM QueryBuilder para gerar um query XPath explicável:
+* Use o depurador AEM QueryBuilder para gerar um query XPath explicável:
 
 Explique **todos** os query durante o ciclo de desenvolvimento em relação ao conjunto de índice do público alvo.
 
@@ -505,7 +508,7 @@ Explique **todos** os query durante o ciclo de desenvolvimento em relação ao c
 
 **Obtenha XPath explicável por meio do depurador do Construtor de Query**
 
-* Use o depurador do AEM QueryBuilder para gerar um query XPath explicável:
+* Use o depurador AEM QueryBuilder para gerar um query XPath explicável:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
