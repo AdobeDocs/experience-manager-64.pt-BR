@@ -12,6 +12,9 @@ discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
 source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +45,8 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
          Você pode ter o container de layout como padrão para a página, ao mesmo tempo em que permite que o usuário adicione outros container de layout dentro desta página; por exemplo, para obter o controle de coluna.
 
-* **[Modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Layout Depois que o container de layout é posicionado na página, você pode usar o modo **Layout**para posicionar o conteúdo na grade responsiva.
+* **[Modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de layout Depois que o container de layout é posicionado na página, você pode usar a variável
+**Modo Layout** para posicionar o conteúdo na grade responsiva.
 
 * [**Emulador **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
 
@@ -114,6 +118,7 @@ Se você estiver migrando um projeto existente (com conteúdo existente), é nec
 >* adicionar pontos de interrupção aos modelos
 >* adicionar os mesmos pontos de interrupção às páginas existentes\
    >  Como a herança está em operação, você pode limitar isso à página raiz do seu conteúdo.
+
 >
 
 
@@ -200,7 +205,7 @@ Os dois exemplos a seguir ilustram a definição:
 
 #### CSS para pontos de interrupção usando MENOS {#css-for-breakpoints-using-less}
 
-O AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas para seus projetos.
+AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas para seus projetos.
 
 Você também precisará criar uma biblioteca [](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) cliente para fornecer configurações e chamadas de função adicionais. A seguinte extração MENOS é um exemplo do mínimo que você precisa adicionar ao seu projeto:
 
