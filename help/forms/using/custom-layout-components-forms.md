@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ O componente Layout do painel de formulário adaptável controla a maneira como 
 >Configurar a propriedade `guideComponentType`para o valor `fd/af/layouts/panel` determina que o layout é um layout de painel.
 
 1. Renomeie o arquivo `tabbedPanelLayout.jsp` sob o novo layout para customPanelLayout.jsp.
-1. Para introduzir novos estilos e comportamentos, crie uma biblioteca de cliente sob o `etc` nó. Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe o nó ter a propriedade category af.panel.custom. Ele tem os seguintes arquivos .css e .js:
+1. Para introduzir novos estilos e comportamentos, crie uma biblioteca de cliente sob o `etc` nó. Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe que o nó tenha a propriedade categoria af.panel.custom. Ele tem os seguintes arquivos .css e .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -196,9 +199,9 @@ O componente Layout do painel de formulário adaptável controla a maneira como 
    </div>
    ```
 
-1. Abra um formulário adaptável no modo Criação. O layout do painel definido é adicionado à lista para configurar layouts do painel.
+1. Abra um formulário adaptável no modo Criação. O layout do painel definido é adicionado à lista para configurar layouts de painel.
 
-   ![O layout Painel personalizado é exibido na lista](assets/auth-layt.png) de layout do painel ![Captura de tela do formulário adaptativo, usando o layout](assets/s1.png) personalizado ![Captura de tela que demonstra a funcionalidade de alternância do layout personalizado](assets/s2.png)
+   ![O layout Painel personalizado é exibido na lista](assets/auth-layt.png) de layout do painel Captura de ![tela do formulário adaptativo, usando o layout](assets/s1.png) personalizado ![Captura de tela que demonstra a funcionalidade de alternância do layout personalizado](assets/s2.png)
 
 Amostra de ZIP para um layout de painel personalizado e um formulário adaptável usando-o.
 
