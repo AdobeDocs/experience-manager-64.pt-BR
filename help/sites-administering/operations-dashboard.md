@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-O Painel Operations no AEM 6 ajuda os operadores do sistema a monitorar rapidamente a integridade do sistema do AEM. Ele também fornece informações de diagnóstico geradas automaticamente sobre aspectos relevantes do AEM e permite configurar e executar automação de manutenção autossuficiente para reduzir significativamente as operações do projeto e os casos de suporte. O Painel Operações pode ser estendido com verificações de integridade personalizadas e tarefas de manutenção. Além disso, os dados do Operations Painel podem ser acessados a partir de ferramentas de monitoramento externas via JMX.
+O Painel Operations no AEM 6 ajuda os operadores do sistema a monitorar AEM integridade do sistema imediatamente. Ele também fornece informações de diagnóstico geradas automaticamente sobre aspectos relevantes da AEM e permite configurar e executar automação de manutenção autônoma para reduzir significativamente as operações do projeto e os casos de suporte. O Painel Operações pode ser estendido com verificações de integridade personalizadas e tarefas de manutenção. Além disso, os dados do Operations Painel podem ser acessados a partir de ferramentas de monitoramento externas via JMX.
 
 **O Painel de Operações:**
 
@@ -31,7 +31,7 @@ O Painel Operations no AEM 6 ajuda os operadores do sistema a monitorar rapidame
 * Reduz o tempo para localizar, analisar e corrigir problemas
 * Oferece automação de manutenção independente que ajuda a reduzir significativamente os custos das operações do projeto
 
-Ele pode ser acessado indo até **Ferramentas** - **Operações** na tela de boas-vindas do AEM.
+Ele pode ser acessado indo até **Ferramentas** - **Operações** na tela de boas-vindas AEM.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Ele pode ser acessado indo até **Ferramentas** - **Operações** na tela de boa
 
 ## Relatórios de integridade {#health-reports}
 
-O sistema de relatório de integridade fornece informações sobre a integridade de uma instância do AEM por meio das verificações de integridade do Sling. Isso pode ser feito por meio de solicitações OSGI, JMX, HTTP (via JSON) ou pela interface de usuário de toque. Ele oferta as medições e o limite de certos contadores configuráveis e, em alguns casos, oferta informações sobre como resolver o problema.
+O sistema de Relatório de Integridade fornece informações sobre a integridade de uma instância AEM por meio de Sling Health Checks. Isso pode ser feito por meio de solicitações OSGI, JMX, HTTP (via JSON) ou pela interface de usuário de toque. Ele oferta as medições e o limite de certos contadores configuráveis e, em alguns casos, oferta informações sobre como resolver o problema.
 
 Ele tem vários recursos, descritos abaixo.
 
@@ -47,7 +47,7 @@ Ele tem vários recursos, descritos abaixo.
 
 Os relatórios **de** saúde são um sistema de cartões que indica boa ou má saúde em relação a uma área específica do produto. Esses cartões são visualizações das Sling Health Checks, que agregação dados do JMX e de outras fontes e expõe as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no console [da Web](/help/sites-administering/jmx-console.md)JMX, no domínio **org.apache.sling.saudcheck** .
 
-A interface de Relatórios de integridade pode ser acessada por meio do menu **Ferramentas** - **Operações** - Relatórios **de** integridade, na tela de Boas-vindas do AEM, ou diretamente por meio do seguinte URL:
+A interface de Relatórios de Integridade pode ser acessada por meio do menu **Ferramentas** - **Operações** - Relatórios **de** Integridade na tela de Boas-vindas AEM ou diretamente pelo seguinte URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -59,7 +59,7 @@ O sistema de cartões expõe três estados possíveis: **OK**, **AVISO** e **CR�
 
 ### Tipos de verificação de integridade {#health-check-types}
 
-Há dois tipos de verificações de integridade no AEM 6:
+Existem dois tipos de controlos sanitários no AEM 6:
 
 1. Verificações de integridade individuais
 1. Verificações de integridade compostas
@@ -184,7 +184,7 @@ A função de uma verificação de integridade composta é agregação de vária
    >
    >Por exemplo, se você criar uma verificação de integridade de segurança individual, tudo o que você precisa fazer é atribuí-la à tag &quot;**security**&quot; e ela for instalada, ela aparecerá automaticamente sob a verificação composta de Verificações de segurança no Painel Operações.
 
-### Verificações de integridade fornecidas com o AEM {#health-checks-provided-with-aem}
+### Verificações de integridade fornecidas com AEM {#health-checks-provided-with-aem}
 
 <table> 
  <tbody> 
@@ -194,7 +194,7 @@ A função de uma verificação de integridade composta é agregação de vária
   </tr> 
   <tr> 
    <td>Desempenho da consulta</td> 
-   <td><p>Essa verificação de integridade foi simplificada <strong>no AEM 6.4</strong>e agora verifica o <code>Oak QueryStats</code> MBean recentemente refatorado, mais especificamente o <code>SlowQueries </code>atributo. Se as estatísticas contiverem query lentos, a verificação de integridade retornará um aviso. Caso contrário, retornará o status OK.<br /> </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.saudcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td> 
+   <td><p>Esta verificação de integridade foi simplificada <strong>no AEM 6.4</strong>e agora verifica o <code>Oak QueryStats</code> MBean recentemente refatorado, mais especificamente o <code>SlowQueries </code>atributo. Se as estatísticas contiverem query lentos, a verificação de integridade retornará um aviso. Caso contrário, retornará o status OK.<br /> </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.saudcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Comprimento da fila de observação</td> 
@@ -233,7 +233,7 @@ A função de uma verificação de integridade composta é agregação de vária
        <li>retorna o status OK se estiver há menos de 45 minutos </li> 
       </ul> </li> 
      <li>se nenhuma dessas condições for atendida, retornará o status OK</li> 
-    </ul> <p>Os limites de status Crítico e Avisar são configuráveis. O Mbean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.saudcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Observação: </strong>Esta verificação de integridade está disponível com o AEM 6.4 e tem suporte para o AEM 6.3.0.1.</p> </td> 
+    </ul> <p>Os limites de status Crítico e Avisar são configuráveis. O Mbean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.saudcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Observação: </strong>Esta verificação de integridade está disponível com o AEM 6.4 e tem suporte para AEM 6.3.0.1.</p> </td> 
   </tr> 
   <tr> 
    <td>Índices Lucene grandes</td> 
@@ -241,7 +241,7 @@ A função de uma verificação de integridade composta é agregação de vária
     <ul> 
      <li>um status de Aviso se houver um índice com mais de 1 bilhão de documentos</li> 
      <li>um status crítico se houver um índice com mais de 1,5 bilhão de documentos</li> 
-    </ul> <p>Os limites são configuráveis e o MBean para a verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.saudcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Observação: </strong>Esta verificação está disponível com o AEM 6.4 e foi suportada para o AEM 6.3.2.0.</p> </td> 
+    </ul> <p>Os limites são configuráveis e o MBean para a verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.saudcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Observação: </strong>Esta verificação está disponível com o AEM 6.4 e tem suporte para AEM 6.3.2.0.</p> </td> 
   </tr> 
   <tr> 
    <td>Manutenção do sistema</td> 
@@ -326,7 +326,7 @@ A função de uma verificação de integridade composta é agregação de vária
 
 ## Monitoramento com Nagios {#monitoring-with-nagios}
 
-O Painel de verificação de integridade pode se integrar ao Nagios por meio do Granite JMX Mbeans. O exemplo a seguir ilustra como adicionar uma verificação que mostre a memória usada no servidor que executa o AEM.
+O Painel de verificação de integridade pode se integrar ao Nagios por meio do Granite JMX Mbeans. O exemplo a seguir ilustra como adicionar uma verificação que mostre a memória usada no servidor que está executando o AEM.
 
 1. Configure e instale Nagios no servidor de monitoramento.
 1. Em seguida, instale o executor de plug-in remoto Nagios (NRPE).
@@ -483,7 +483,7 @@ A página exibe:
 
 Para qualquer query, o Oak tenta descobrir a melhor maneira de executar com base nos índices Oak definidos no repositório no nó **oak:index** . Dependendo do query, diferentes índices podem ser escolhidos por Oak. Entender como o Oak está executando um query é o primeiro passo para otimizar o query.
 
-O Query Explique é uma ferramenta que explica como o Oak está executando um query. Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico** na tela de boas-vindas do AEM, e clicando em Desempenho **do** Query e alternando para a guia **Explicar Query** .
+O Query Explique é uma ferramenta que explica como o Oak está executando um query. Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico** na tela de boas-vindas AEM, e clicando em Desempenho **do** Query e alternando para a guia **Explicar Query** .
 
 **Recursos**
 
@@ -538,7 +538,7 @@ Você também pode baixar um instantâneo do heap para analisá-lo posteriorment
 
 A página Tarefas de manutenção automatizada é um local onde você pode visualização e rastrear tarefas de manutenção recomendadas programadas para execução periódica. As tarefas são integradas ao sistema de verificação de integridade. As tarefas também podem ser executadas manualmente a partir da interface.
 
-Para acessar a página Manutenção no Painel de Operações, é necessário acessar **Ferramentas - Operações - Painel - Manutenção** na tela de Boas-vindas do AEM ou seguir diretamente este link:
+Para chegar à página Manutenção no Painel de Operações, é necessário ir para **Ferramentas - Operações - Painel - Manutenção** na tela de Boas-vindas AEM ou seguir diretamente este link:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -564,11 +564,11 @@ Você também pode configurar os horários pressionando o ícone de engrenagem e
 
 >[!NOTE]
 >
->Como o AEM 6.1, as janelas de manutenção existentes também podem ser configuradas para serem executadas mensalmente.
+>Desde AEM 6.1, as janelas de manutenção existentes também podem ser configuradas para serem executadas mensalmente.
 
 ### Limpeza da revisão {#revision-clean-up}
 
-Para obter mais informações sobre como executar a limpeza de revisão para o AEM 6.4, [consulte este artigo](/help/sites-deploying/revision-cleanup.md)dedicado.
+Para obter mais informações sobre como executar a limpeza de revisão para AEM 6.4, [consulte este artigo](/help/sites-deploying/revision-cleanup.md)dedicado.
 
 ### Limpeza de binários do Lucene {#lucene-binaries-cleanup}
 
@@ -613,7 +613,7 @@ Você pode agendar a tarefa de manutenção Expurgação da versão para excluir
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
-**Com o AEM 6.4**, você pode parar a tarefa de manutenção da Expurgação da versão da seguinte maneira:
+**Com o AEM 6.4**, você pode parar a tarefa de manutenção da Expurgação da Versão da seguinte maneira:
 
 * Automaticamente - se a janela de manutenção programada for fechada antes que a tarefa possa ser concluída, a tarefa será interrompida automaticamente. Ele será retomado quando a próxima janela de manutenção for aberta.
 * Manualmente - Para interromper manualmente a tarefa, no cartão de manutenção Expurgação da versão, clique no ícone **Parar** . Na próxima execução, a tarefa será retomada com segurança.
@@ -697,7 +697,7 @@ Isso adicionará um recurso correspondente em /apps/granite/operations/config/ma
 
 ## Visão geral do sistema {#system-overview}
 
-O Painel **Visão geral do** sistema exibe uma visão geral de alto nível da configuração, hardware e integridade da instância do AEM. Isso significa que o status de integridade do sistema é transparente e todas as informações são agregadas em um único painel.
+O Painel **Visão geral do** sistema exibe uma visão geral de alto nível da configuração, hardware e integridade da instância AEM. Isso significa que o status de integridade do sistema é transparente e todas as informações são agregadas em um único painel.
 
 >[!NOTE]
 >
@@ -777,7 +777,7 @@ Você também pode baixar um `JSON` arquivo resumindo as informações do painel
    <td>Instância</td> 
    <td> 
     <ul> 
-     <li>a versão do AEM</li> 
+     <li>a versão AEM</li> 
      <li>lista dos modos de execução</li> 
      <li>a data em que a instância foi iniciada</li> 
     </ul> </td> 
