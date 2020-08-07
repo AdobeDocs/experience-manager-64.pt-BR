@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '7833'
 ht-degree: 1%
@@ -156,7 +156,7 @@ Para habilitar a mídia dinâmica, você deve habilitar o modo de execução de 
 
    Se você estiver publicando no s7delivery, também precisará incluir os seguintes argumentos trustStore:
 
-   ```
+   ```shell
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -184,7 +184,7 @@ Quando o Dynamic Media está ativado, as renderizações de miniatura estáticas
 
 No AEM:
 
-* O domínio **self** no [externalizador](/help/sites-developing/externalizer.md) é usado para recuperar o número da porta e o caminho do contexto.
+* O domínio **próprio** no [externalizador](/help/sites-developing/externalizer.md) é usado para recuperar o número da porta e o caminho do contexto.
 * Se nenhum domínio **próprio** estiver configurado, o número da porta e o caminho do contexto serão recuperados do serviço HTTP Jetty.
 
 Em uma implantação AEM do QuickStart WAR, o número da porta e o caminho do contexto não podem ser derivados; portanto, você deve configurar um domínio **próprio** . Consulte a documentação [do](/help/sites-developing/externalizer.md) externalizador sobre como configurar o domínio **próprio** .
