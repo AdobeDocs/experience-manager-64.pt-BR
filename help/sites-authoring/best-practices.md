@@ -1,6 +1,6 @@
 ---
-title: 'Práticas recomendadas '
-seo-title: 'Práticas recomendadas '
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
 description: Como usar o AEM da maneira mais eficiente e efetiva possível
 seo-description: Como usar o AEM da maneira mais eficiente e efetiva possível
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 89%
 
 ---
 
 
-# Práticas recomendadas {#best-practices}
+# Práticas recomendadas    {#best-practices}
 
 As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 
 As áreas a seguir têm a documentação disponível a respeito das práticas recomendadas:
 
-* [Ativos](#assets)
+* [Assets](#assets)
 * [Sites](#sites)
 * [Forms](#forms)
 
@@ -33,7 +36,7 @@ Para conhecer as práticas recomendadas de administração, implantação e manu
 
 Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
-## Ativos {#assets}
+## Assets {#assets}
 
 As práticas recomendadas referentes ao Assets, incluindo o recurso de mídia dinâmica e a integração com o Scene 7, estão descritas nos seguintes tópicos:
 
