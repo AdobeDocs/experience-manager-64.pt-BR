@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Esta página fornece mais detalhes para desenvolver e/ou aumentar os documentos e princípios cobertos pela Lista de Verificação de [Gestão de Projetos - Práticas Recomendadas](/help/managing/best-practices.md).
 
-## AEM - O que você usará? {#aem-what-will-you-be-using}
+## AEM - O que você vai usar? {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
@@ -36,18 +36,18 @@ Considere os recursos do AEM que você usará e o impacto no seu design; por exe
 
 * [Comércio](/help/sites-administering/ecommerce.md)
 * [Telas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
-* [Ativos](/help/assets/assets.md)
+* [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Gerenciamento e tradução de vários sites](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/home.md)
 * [Comunidades](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-Além disso, consulte as Notas [de](/help/release-notes/release-notes.md)versão para ver as várias versões do AEM, para ver quando novos recursos foram adicionados.
+Além disso, verifique as Notas [de](/help/release-notes/release-notes.md)versão para ver as várias versões de AEM, para ver quando novos recursos foram adicionados.
 
 ### Integrações {#integrations}
 
-O AEM pode ser integrado a outros produtos da Adobe e/ou serviços de terceiros. Eles podem aumentar a potência e a funcionalidade à sua disposição.
+AEM pode ser integrado a outros produtos de Adobe e/ou serviços de terceiros. Eles podem aumentar a potência e a funcionalidade à sua disposição.
 
 Consulte Integração [de](/help/sites-administering/integration.md) soluções para obter informações completas.
 
@@ -69,7 +69,7 @@ Tal como acontece com qualquer projeto, é fundamental estabelecer regras básic
 
 >[!NOTE]
 >
->Esses pontos são genéricos, a Lista de verificação [de práticas](/help/managing/best-practices.md) recomendadas lida com detalhes específicos em relação ao AEM.
+>Esses pontos são genéricos, a Lista de verificação de [práticas recomendadas](/help/managing/best-practices.md) trata de detalhes específicos relacionados à AEM.
 
 * **Funções**
 
@@ -111,7 +111,7 @@ Tal como acontece com qualquer projeto, é fundamental estabelecer regras básic
    Definir claramente o que deve ser abrangido pelo projeto a vários níveis:
 
    * as versões individuais (se for usado um processo de lançamento iterativo e independentemente de serem entregues aos clientes ou à sua equipe interna de teste).
-   * o projeto do AEM.
+   * o projeto AEM.
    * a totalidade do projeto; incluindo qualquer software de terceiros, seu impacto em testes, problemas organizacionais e muitos outros.
    * Para certos aspectos, pode também ser útil indicar o que *não* está no âmbito do projeto. Tal pode contribuir para evitar confusões e pressupostos incorretos, embora deva limitar-se a questões essenciais.
 
@@ -194,7 +194,7 @@ Todas as métricas a serem medidas serão, de alguma forma, afetadas pelo design
 
 Portanto, você deve definir suas métricas de público alvo *antes* de decidir sobre seu design. Isso permite otimizar seu design com base nesses fatores. Uma vez desenvolvido o seu projeto, será difícil introduzir quaisquer alterações nos princípios básicos de concepção.
 
-Ao criar a estrutura para o site, siga a estrutura recomendada para sites do AEM. Certifique-se de compreender os seguintes problemas e/ou princípios:
+Ao criar a estrutura para o site, siga a estrutura recomendada para AEM sites. Certifique-se de compreender os seguintes problemas e/ou princípios:
 
 * Como estruturar o conteúdo do site.
 * Como os modelos e componentes funcionam.
@@ -217,7 +217,7 @@ Para definir ou avaliar a infraestrutura, ajudará a definir valores de público
 Dependendo da sua situação e do significado estratégico do site, isso o ajudará a avaliar e escolher sua infraestrutura:
 
 * número de servidores
-* número de instâncias do AEM (autor e publicação)
+* número de instâncias AEM (autor e publicação)
 
 ### Show {#performance}
 
@@ -264,7 +264,7 @@ Os tempos de resposta desejados serão diferentes nos ambientes do autor e publi
 Então, como você pode decidir sobre tempos de resposta alcançáveis (médios)? Isso é frequentemente uma questão de experiência:
 
 * experiência passada em seu site
-* experiência com o AEM
+* experiência com AEM
 * reconhecer páginas complexas que têm tempos de resposta acima da média (eles devem ser otimizados individualmente, se possível)
 
 No entanto, (em circunstâncias controladas) podem ser aplicadas as seguintes orientações:
@@ -279,13 +279,13 @@ Os números acima assumem as seguintes condições:
 
 * medido na publicação (sem ambiente de criação e/ou sobrecarga de CFC)
 * medido no servidor (sem sobrecarga de rede)
-* não armazenado em cache (sem cache de saída do AEM, sem cache do Dispatcher)
+* não armazenado em cache (sem cache de saída AEM, sem cache do Dispatcher)
 * somente para itens complexos com muitas dependências (HTML, JS, PDF, ...)
 * nenhuma outra carga no sistema
 
 Existem vários mecanismos que você pode usar para monitorar os tempos de resposta:
 
-* **Monitoramento dos tempos de resposta com o arquivo request.log do AEM**
+* **Monitorando os tempos de resposta com o AEM request.log**
 
    Um bom ponto de partida para a análise de desempenho é o registro de solicitações. Entre outras informações, você pode usar isso para ver os tempos de resposta de solicitações individuais. Consulte Otimização [de desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
@@ -309,7 +309,7 @@ As solicitações de pesquisa podem ter um impacto significativo em seu site, em
 
 A definição de públicos alvos para solicitações de pesquisa é, novamente, uma questão de experiência, dependendo de:
 
-* experiência do AEM
+* experiência de AEM
 * uma avaliação da frequência com que a pesquisa será usada em comparação com outros objetivos
 * seu gerente de persistência
 * seu índice de pesquisa
@@ -317,7 +317,7 @@ A definição de públicos alvos para solicitações de pesquisa é, novamente, 
 
 Eles devem ser planejados e integrados a partir do próprio start do seu projeto. Os mecanismos disponíveis para acompanhamento incluem:
 
-* **Monitoramento dos tempos de resposta da pesquisa com o arquivo request.log do AEM**
+* **Monitorando tempos de resposta de pesquisa com AEM request.log**
 
    Novamente, o request.log pode ser usado para monitorar os tempos de resposta das solicitações de pesquisa; consulte Otimização [de desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
@@ -359,7 +359,7 @@ Antes de discutir as métricas relacionadas, uma definição rápida dos termos:
    |---|---|---|
    | Cliente | Poder computacional do computador do usuário. | Complexidade do layout da página. |
    | Rede | Largura de banda da rede. | Tamanho da página (código, imagens e assim por diante). |
-   | Cache Dispatcher | Memória do servidor da Web (memória principal e disco rígido). | Servidor Web (memória principal e disco rígido). Número e tamanho das páginas em cache. |
+   | Cache do Dispatcher | Memória do servidor da Web (memória principal e disco rígido). | Servidor Web (memória principal e disco rígido). Número e tamanho das páginas em cache. |
    | Cache de saída | Memória do servidor AEM (memória principal e disco rígido). | Número e tamanho das páginas no cache de saída, o número de dependências por página. O cache do dispatcher diminui esse volume. |
    | Servidor Web | Poder computacional do servidor Web. | Quantidade de solicitações. O cache diminui esse volume. |
    | Modelo | Poder computacional do servidor Web. | Complexidade dos modelos. |
@@ -377,7 +377,7 @@ No entanto, é preferível ter um pequeno conjunto de métricas principais e pre
 
 A segurança é crucial e um desafio cada vez maior. Ele ***deve*** ser considerado e planejado a partir das fases iniciais do seu projeto.
 
-A Lista [de verificação de](/help/sites-administering/security-checklist.md) segurança detalha as etapas que você deve seguir para garantir que sua instalação do AEM esteja segura quando implantada. Outros aspectos de segurança são cobertos pela [Segurança (ao desenvolver)](/help/sites-developing/security.md) e pela Administração e Segurança [](/help/sites-administering/security.md)do Usuário.
+A Lista de Verificação [de](/help/sites-administering/security-checklist.md) Segurança detalha as etapas que você deve seguir para garantir que sua instalação AEM esteja segura quando implantada. Outros aspectos de segurança são cobertos pela [Segurança (ao desenvolver)](/help/sites-developing/security.md) e pela Administração e Segurança [](/help/sites-administering/security.md)do Usuário.
 
 ## Tarefas paralelas e iterativas {#parallel-and-iterative-tasks}
 
@@ -385,7 +385,7 @@ A Lista [de verificação de](/help/sites-administering/security-checklist.md) s
 >
 >O seguinte:
 >
->* Oferta uma visão geral relacionada à *primeira* implementação de um projeto do AEM.
+>* Oferta uma visão geral relacionada à *primeira* implementação de um projeto AEM.
 >* É destinado como uma visão geral abstrata; consulte a Lista de verificação [de](/help/managing/best-practices.md) projetos para fases/marcos/tarefas específicas.
 >* Qualquer escala de tempo é teórica.
 
@@ -393,7 +393,7 @@ A Lista [de verificação de](/help/sites-administering/security-checklist.md) s
 
 
 
-Para uma nova implementação de um projeto padrão do AEM, é necessário considerar tarefas como:
+Para uma nova implementação de um projeto padrão de AEM, é necessário considerar tarefas como:
 
 * Entrega do processo de vendas.
 * Implementação do aplicativo do cliente (**Desenvolvimento**).
@@ -427,7 +427,7 @@ Alguns pontos a serem observados para cada categoria são:
       * A primeira impressão resulta na primeira implantação do ambiente de teste.
       * Cada sprint tem um resultado que pode ser utilizado.
       * Cada sprint recebe uma aprovação do cliente (mínimo de teste estruturado com feedback).
-   * Plano para a eventualidade de uma atualização da versão disponível do AEM durante o projeto.
+   * Plano para a eventualidade de uma atualização da versão AEM disponível durante o projeto.
    * Plano de testes e otimização durante as impressões.
    * Plano para as fases de estabilização e otimização.
    * Crie um log de itens a serem planejados para novas versões.
@@ -469,7 +469,7 @@ Alguns pontos a serem observados para cada categoria são:
    * Plano para a criação antecipada de primeiras páginas e conteúdo (para uso em testes e feedback).
    * Plano para a migração do conteúdo existente.
    * Plano de &quot;migração na primavera&quot; após a refatoração.
-   * Planeje a &quot;lista suspensa de conteúdo&quot; (mapa do site para conteúdo disponível).
+   * Planeje &quot;detalhamento de conteúdo&quot; (mapa do site para conteúdo ativo).
 
 ## Estimando o tempo e o esforço {#estimating-time-and-effort}
 
@@ -479,7 +479,7 @@ A lista a seguir mostra aproximações padrão e inter-relações de esforço en
 
 >[!CAUTION]
 >
->Estes valores só podem ser utilizados para estimativas iniciais. Um desenvolvedor de AEM experiente deve fazer a análise detalhada.
+>Estes valores só podem ser utilizados para estimativas iniciais. Um desenvolvedor AEM experiente deve fazer a análise detalhada.
 
 | Fase | Esforço |
 |---|---|
@@ -495,7 +495,7 @@ O planeamento detalhado pode então relacionar os recursos disponíveis ou neces
 
 ## Arquitetura de referência {#reference-architecture}
 
-A arquitetura de referência é fornecida para fornecer uma solução de modelo para a arquitetura do AEM. A arquitetura de referência soluciona problemas comumente encontrados para sistemas corporativos, incluindo dimensionamento, confiabilidade e segurança.
+A arquitetura de referência é fornecida para fornecer uma solução modelo para a arquitetura AEM. A arquitetura de referência soluciona problemas comumente encontrados para sistemas corporativos, incluindo dimensionamento, confiabilidade e segurança.
 
 As seguintes métricas do site devem ser definidas:
 
@@ -527,7 +527,7 @@ A lista a seguir é fornecida para informá-lo sobre as ferramentas que podem se
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>O próprio AEM fornece uma variedade de mecanismos para ajudá-lo a monitorar, testar, investigar e depurar seu aplicativo; incluindo:</p>
+   <td><p>AEM fornece uma variedade de mecanismos para ajudá-lo a monitorar, testar, investigar e depurar seu aplicativo; incluindo:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Modo de desenvolvedor</a></li>
      <li>O console <a href="/help/sites-developing/hobbes.md">de teste</a></li>
@@ -558,11 +558,11 @@ A lista a seguir é fornecida para informá-lo sobre as ferramentas que podem se
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>O Eclipse é um IDE de código aberto, composto por vários projetos. Eles estão voltados para a criação de uma plataforma de desenvolvimento aberta, composta de estruturas, ferramentas e tempos de execução extensíveis para a criação, implantação e gerenciamento de software ao longo do ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Como desenvolver projetos do AEM usando o Eclipse</a> para obter mais informações.</p> </td>
+   <td><p>O Eclipse é um IDE de código aberto, composto por vários projetos. Eles estão voltados para a criação de uma plataforma de desenvolvimento aberta, composta de estruturas, ferramentas e tempos de execução extensíveis para a criação, implantação e gerenciamento de software ao longo do ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Como desenvolver projetos AEM usando o Eclipse</a> para obter mais informações.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Um IDE profissional (e, portanto, sujeito aos custos de licenciamento) que oferece uma ampla variedade de recursos. </p> <p>Consulte <a href="/help/sites-developing/ht-intellij.md">Como desenvolver projetos do AEM usando o IntelliJ IDEA</a> para obter mais informações.</p> </td>
+   <td><p>Um IDE profissional (e, portanto, sujeito aos custos de licenciamento) que oferece uma ampla variedade de recursos. </p> <p>Consulte <a href="/help/sites-developing/ht-intellij.md">Como desenvolver projetos AEM usando o IntelliJ IDEA</a> para obter mais informações.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
@@ -579,9 +579,9 @@ Além disso, as seções seguintes são de especial interesse:
 * [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
 * [Monitoramento e manutenção da instância](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Práticas recomendadas    {#best-practices}
+### Práticas recomendadas     {#best-practices}
 
-A Adobe fornece mais Práticas recomendadas para todas as fases e audiências:
+O Adobe fornece mais Práticas recomendadas para todas as fases e audiências:
 
 * [Implantação](/help/sites-deploying/best-practices.md)
 * [Criação  ](/help/sites-authoring/best-practices.md)
