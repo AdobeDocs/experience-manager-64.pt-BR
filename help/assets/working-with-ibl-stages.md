@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 56%
@@ -37,7 +37,7 @@ Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, 
 
 * **Imagem** de Ambiente de iluminação difusa - esse tipo de imagem deve ser uma imagem HDR, mas pode ser relativamente pequena, já que a imagem será filtrada intensamente antes de ser usada para iluminação difusa.
 * **Imagem** do Ambiente de reflexão - Esse tipo de imagem é usado para criar reflexões nas superfícies do objeto. Pode ser uma imagem RGB de 8 bits padrão com tamanho e resolução que forneçam a qualidade e a nitidez desejadas para os reflexos. Se uma imagem HDR for especificada, o AEM 3D a converterá em RGB de 8 bits antes de usar um algoritmo proprietário.
-* **Imagem** do Ambiente de plano de fundo - Esse tipo de imagem é usada como plano de fundo. Pode ser uma imagem RGB de 8 bits padrão e deve ter o tamanho, a resolução e o nível de detalhe desejados para o plano de fundo do palco. Se uma imagem HDR for especificada, o AEM 3D a converterá em RGB de 8 bits usando um algoritmo proprietário. ``
+* **Imagem** do Ambiente de plano de fundo - Esse tipo de imagem é usada como plano de fundo. Pode ser uma imagem RGB de 8 bits padrão e deve ter o tamanho, a resolução e o nível de detalhe desejados para o plano de fundo do palco. Se uma imagem HDR for especificada, o AEM 3D a converterá em RGB de 8 bits usando um algoritmo proprietário.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, 
    <td>Se o fundo IBL parecer distorcido perto do horizonte, é possível reduzir ou eliminar a distorção ajustando essa propriedade. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Iluminação do Ambiente</td> 
+   <td>Iluminação do ambiente</td> 
    <td><p><span class="diff-html-added">Permite controlar a iluminação difusa. Talvez seja necessário ajustar manualmente essa propriedade para corrigir o brilho da luz se a Imagem do ambiente de iluminação difusa for excepcionalmente clara ou escura (por exemplo, cenários noturnos).</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Atualmente não utilizado.</li> 
