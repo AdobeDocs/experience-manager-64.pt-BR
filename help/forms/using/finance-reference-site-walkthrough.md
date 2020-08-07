@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '9242'
 ht-degree: 0%
@@ -305,7 +305,10 @@ Execute as seguintes etapas para experimentar a criação do teste A/B para o fo
 1. Agora, abra o formulário no navegador do cromo várias vezes usando o seguinte url:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Remova o cookie com o nome **mbox** da persistência de cookies do navegador antes de abrir o formulário na próxima vez. As experiências A e B do formulário serão exibidas aleatoriamente.
+
+   >[!NOTE]
+   >
+   >Remova o cookie com o nome **mbox** da persistência de cookies do navegador antes de abrir o formulário na próxima vez. As experiências A e B do formulário serão exibidas aleatoriamente.
 
 1. Selecione o formulário, clique em **Mais** e clique em Relatório **de teste** A/B. Você não encontrará muitos dados no relatório, pois acabou de iniciar os testes. Agora, vamos fornecer alguns dados semente para ver a aparência do relatório de teste A/B.
 
@@ -552,13 +555,19 @@ Execute as seguintes etapas na instância do autor para experimentar a criação
 1. Agora, abra o formulário no navegador do cromo várias vezes usando o seguinte url:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Remova o cookie com o nome **mbox** da persistência de cookies do navegador antes de abrir o formulário na próxima vez. As experiências A e B do formulário serão exibidas aleatoriamente.
+
+   >[!NOTE]
+   >
+   >Remova o cookie com o nome **mbox** da persistência de cookies do navegador antes de abrir o formulário na próxima vez. As experiências A e B do formulário serão exibidas aleatoriamente.
 
 1. Selecione o formulário, clique em **Mais** e clique em Relatório **de teste** A/B. Você não encontrará muitos dados no relatório, pois acabou de iniciar os testes. Agora, vamos fornecer alguns dados semente para ver a aparência do relatório de teste A/B.
 
 1. Abra o CRXDE Lite e faça um backup do seguinte arquivo: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Substitua a definição da `onReportLoadSuccess` função no arquivo mencionado acima pela definição da função no arquivo a seguir: /apps/we-finance/demo-artifacts/targetreport.js
-   >[!NOTE] Essas mudanças são apenas para fins de demonstração. Certifique-se de restaurar o conteúdo do arquivo após concluir este procedimento.
+
+   >[!NOTE]
+   >
+   >Essas mudanças são apenas para fins de demonstração. Certifique-se de restaurar o conteúdo do arquivo após concluir este procedimento.
 
 1. Atualize o relatório gerado e você verá algo como o seguinte. Revise o painel do relatórios.
 
