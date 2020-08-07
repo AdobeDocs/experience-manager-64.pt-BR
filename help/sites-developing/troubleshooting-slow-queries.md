@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -82,13 +82,11 @@ Antes de adicionar a regra de índice cq:tags
 
 * **query Construtor de Query**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=my:tag
-      ```
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=my:tag
+   ```
 
 * **plano de Query**
 
@@ -100,24 +98,20 @@ Após adicionar a regra de índice cq:tags
 
 * **cq:regras de índice de tags**
 
-   * 
-
-      ```
-      /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-       @name=jcr:content/cq:tags
-       @propertyIndex=true
-      ```
-
+       &quot;
+ /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags     
+ @name=jcr:content/cq:tags     
+ @propertyIndex=true     
+     &quot;
+   
 * **query Construtor de Query**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=myTagNamespace:myTag
-      ```
-
+       &quot;
+ type=cq:Page     
+ property=jcr:content/cq:tags     
+ property.value=myTagNamespace:myTag     
+     &quot;
+   
 * **plano de Query**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -193,21 +187,18 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query não otimizado**
 
-      * 
+      ```
+       property=jcr:content/contentType
+       property.value=article-page
+      ```
 
-         ```
-          property=jcr:content/contentType
-          property.value=article-page
-         ```
    * **query otimizado**
 
-      * 
-
-         ```
-          type=cq:Page 
-          property=jcr:content/contentType 
-          property.value=article-page
-         ```
+      ```
+       type=cq:Page 
+       property=jcr:content/contentType 
+       property.value=article-page
+      ```
    Query que não têm um tipo de restrição de nodetype AEM assumir o `nt:base` tipo de nó, que cada nó em AEM é um subtipo de nó, resultando efetivamente em nenhuma restrição de tipo de nó.
 
    A configuração `type=cq:Page` restringe esse query a apenas `cq:Page` nós e resolve o query para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente `cq:Page` nós) no AEM.
@@ -216,22 +207,19 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query não otimizado**
 
-      * 
+      ```
+      type=nt:hierarchyNode
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=nt:hierarchyNode
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **query otimizado**
 
-      * 
-
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    `nt:hierarchyNode` é o tipo de nó pai de `cq:Page`, e supondo que `jcr:content/contentType=article-page` seja aplicado somente a `cq:Page` nós por meio de nosso aplicativo personalizado, esse query retornará apenas `cq:Page` nós onde `jcr:content/contentType=article-page`. No entanto, esta é uma restrição subótima, porque:
 
    * Outro nó herda de `nt:hierarchyNode` (por exemplo, `dam:Asset`) adicionando desnecessariamente ao conjunto de resultados potenciais.
@@ -243,20 +231,17 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query não otimizado**
 
-      * 
+      ```
+        property=jcr:content/contentType
+        property.value=article-page
+      ```
 
-         ```
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **query otimizado**
 
-      * 
-
-         ```
-         property=jcr:content/sling:resourceType
-         property.value=my-site/components/structure/article-page
-         ```
+      ```
+      property=jcr:content/sling:resourceType
+      property.value=my-site/components/structure/article-page
+      ```
    Alterar a restrição de propriedade de `jcr:content/contentType` (um valor personalizado) para a propriedade bem conhecida `sling:resourceType` permite que o query resolva para o índice de propriedade `slingResourceType` que indexa todo o conteúdo por `sling:resourceType`.
 
    Os índices de propriedade (ao contrário de Índices de propriedades Lucene) são melhor usados quando o query não é discernido por nodetype e uma única restrição de propriedade domina o conjunto de resultados.
@@ -265,24 +250,21 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query não otimizado**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **query otimizado**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    O escopo da restrição de caminho de `path=/content`para `path=/content/my-site/us/en` permite que os índices reduzam o número de entradas de índice que precisam ser inspecionadas. Quando o query puder restringir muito bem o caminho, além de apenas `/content` ou `/content/dam`, verifique se o índice tem `evaluatePathRestrictions=true`.
 
    Observe que usar `evaluatePathRestrictions` aumenta o tamanho do índice.
@@ -291,23 +273,20 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query não otimizado**
 
-      * 
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.operation=like
+      property.value=%article%
+      ```
 
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.operation=like
-         property.value=%article%
-         ```
    * **query otimizado**
 
-      * 
-
-         ```
-         type=cq:Page
-         fulltext=article
-         fulltext.relPath=jcr:content/contentType
-         ```
+      ```
+      type=cq:Page
+      fulltext=article
+      fulltext.relPath=jcr:content/contentType
+      ```
    A condição LIKE é lenta para avaliação, pois nenhum índice pode ser usado se o texto start com um curinga (&quot;%...&#39;). A condição jcr:contains permite o uso de um índice de texto completo e, portanto, é preferida. Isso requer que o Índice de propriedades do Lucene resolvido tenha indexRule para `jcr:content/contentType` with `analayzed=true`.
 
    Usar funções de query como `fn:lowercase(..)` pode ser mais difícil de otimizar, pois não há equivalentes mais rápidos (fora das configurações mais complexas e discretas do analisador de índice). É melhor identificar outras restrições de escopo para melhorar o desempenho geral do query, exigindo que as funções funcionem no menor conjunto possível de resultados potenciais.
@@ -318,21 +297,18 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query não otimizado**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         ```
    * **query otimizado**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content
-         p.guessTotal=100
-         ```
+      ```
+      type=cq:Page
+      path=/content
+      p.guessTotal=100
+      ```
    Nos casos em que a execução do query é rápida, mas o número de resultados é grande, p. `guessTotal` é uma otimização crítica para query do Construtor de Query.
 
    `p.guessTotal=100` instrui o Construtor de Query a coletar apenas os primeiros 100 resultados e a definir um sinalizador booleano indicando se existem pelo menos mais um resultado (mas não quantos mais, já que a contagem desse número resultaria em lentidão). Essa otimização se sobressai para paginação ou casos de uso de carregamento infinito, onde apenas um subconjunto de resultados é exibido incrementalmente.
@@ -345,24 +321,20 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query Construtor de Query**
 
-      * 
+      ```
+      query type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      orderby=@jcr:content/publishDate
+      orderby.sort=desc
+      ```
 
-         ```
-         query type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         orderby=@jcr:content/publishDate
-         orderby.sort=desc
-         ```
    * **XPath gerado do query Construtor de Query**
 
-      * 
-
-         ```
-         /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
-         ```
-
+      ```
+      /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
+      ```
 
 1. Forneça o XPath (ou JCR-SQL2) para o Gerador [de Definição de Índice de](https://oakutils.appspot.com/generate/index) Oak para gerar a definição otimizada do Índice de Propriedades de Lucene.
 
@@ -398,21 +370,17 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    * **query Construtor de Query**
 
-      * 
+      ```
+      type=myApp:Author
+      property=firstName
+      property.value=ira
+      ```
 
-         ```
-         type=myApp:Author
-         property=firstName
-         property.value=ira
-         ```
    * **XPath gerado do query Construtor de Query**
 
-      * 
-
-         ```
-         //element(*, myApp:Page)[@firstName = 'ira']
-         ```
-
+      ```
+      //element(*, myApp:Page)[@firstName = 'ira']
+      ```
 
 1. Forneça o XPath (ou JCR-SQL2) para o Gerador [de Definição de Índice de](https://oakutils.appspot.com/generate/index) Oak para gerar a definição otimizada do Índice de Propriedades de Lucene.
 
