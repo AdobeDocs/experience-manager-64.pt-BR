@@ -3,7 +3,7 @@ title: Estender editor de ativos
 description: Saiba como estender os recursos do Editor de ativos usando componentes personalizados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 13%
@@ -47,7 +47,7 @@ Alguns componentes do AEM Assets exigem funções JS definidas em `component.js`
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-A amostra carrega essa fonte javascript em `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+A amostra carrega essa fonte JavaScript em `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Folhas de estilos adicionais {#additional-style-sheets}
 
