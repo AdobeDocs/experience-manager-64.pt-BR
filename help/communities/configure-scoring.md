@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -178,19 +178,16 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
       * `/content/community-components/en/forum/jcr:content`
    * Adicionar propriedades de pontuação e marcação
 
-      * 
+      ```
+      scoringRules = [/etc/community/scoring/rules/comments-scoring,
+      /etc/community/scoring/rules/forums-scoring]
+      ```
 
-         ```
-         scoringRules = [/etc/community/scoring/rules/comments-scoring,
-         /etc/community/scoring/rules/forums-scoring]
-         ```
+      ```
+      badgingRules =[/etc/community/badging/rules/comments-scoring,
+      /etc/community/badging/rules/forums-scoring]
+      ```
 
-      * 
-
-         ```
-         badgingRules =[/etc/community/badging/rules/comments-scoring,
-         /etc/community/badging/rules/forums-scoring]
-         ```
    * Localize o nó do componente do fórum
 
       * `/content/community-components/en/forum/jcr:content/content/forum`
@@ -200,7 +197,6 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 
       * `allowBadges = true`
    * Um usuário entra, cria um tópico do fórum e recebe um crachá de bronze
-
 
 
 
