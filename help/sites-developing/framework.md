@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -233,14 +233,20 @@ A seguir está uma descrição dos efeitos no repositório ao mover ou mesclar t
 
    Um valor especial para a `cq:movedTo` propriedade é `nirvana`: ela é aplicada quando a tag é excluída, mas não pode ser removida do repositório porque há subtags com uma tag `cq:movedTo` que deve ser mantida.
 
-   >[!NOTE]A `cq:movedTo` propriedade só será adicionada à tag movida ou unida se uma dessas condições for atendida:
+   >[!NOTE]
+   >
+   >A `cq:movedTo` propriedade só será adicionada à tag movida ou unida se uma dessas condições for atendida:
+   >
    >1. A tag é usada no conteúdo (o que significa que ela tem uma referência) OU
    >1. A tag tem filhos que já foram movidos.
 
 
 * `cq:backlinks` mantém as referências na outra direção, isto é, mantém uma lista de todas as tags que foram movidas para ou mescladas com a tag B. Isso é necessário principalmente para manter `cq:movedTo`as propriedades atualizadas quando a tag B também é movida/unida/excluída ou quando a tag B é ativada, nesse caso, todas as tags de backlinks também devem ser ativadas.
 
->[!NOTE]A `cq:backlinks` propriedade só será adicionada à tag movida ou unida se uma dessas condições for atendida:
+>[!NOTE]
+>
+>A `cq:backlinks` propriedade só será adicionada à tag movida ou unida se uma dessas condições for atendida:
+>
 >1. A tag é usada no conteúdo (o que significa que ela tem uma referência) OU
 >1. A tag tem filhos que já foram movidos.
 
