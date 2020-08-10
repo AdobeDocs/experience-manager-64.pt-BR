@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Saiba como configurar o Adobe Sign para AEM Forms
 
 A Adobe Sign habilita workflows de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os workflows para processar documentos para áreas legais, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muitas outras áreas.
 
-Em um cenário típico de formulários adaptáveis e Adobe Sign, um usuário preenche um formulário adaptável para solicitar um serviço. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário de aplicativo, ele é enviado ao provedor de serviço para que seja tomada uma ação adicional. O Provedor de serviço revisa o aplicativo e usa o Adobe Sign para marcar o aplicativo aprovado. Para habilitar workflows semelhantes de assinatura eletrônica, é possível integrar o Adobe Sign ao AEM Forms.
+Em um cenário típico de formulários adaptáveis e Adobe Sign, um usuário preenche um formulário adaptável para solicitar um serviço. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário de aplicativo, ele é enviado ao provedor de serviço para que seja tomada uma ação adicional. O provedor de serviço revisa o aplicativo e usa o Adobe Sign para marcar o aplicativo aprovado. Para habilitar workflows semelhantes de assinatura eletrônica, é possível integrar o Adobe Sign ao AEM Forms.
 
 Para usar o Adobe Sign com o AEM Forms, configure o Adobe Sign nos serviços da AEM Cloud:
 
@@ -66,7 +66,7 @@ Depois que os pré-requisitos estiverem implementados, execute as seguintes etap
    * widget_write
    * workflow_read
 
-   Para obter informações detalhadas sobre como configurar as configurações OAuth para um aplicativo Adobe Sign e obter as chaves, consulte [Configurar as configurações de Auth para a documentação do desenvolvedor do aplicativo](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) .
+   Para obter informações detalhadas sobre como configurar as configurações OAuth para um aplicativo Adobe Sign e obter as chaves, consulte [Configurar as configurações de Auth para a documentação do desenvolvedor do aplicativo](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) .
 
    ![Configuração do OAuth](assets/oauth_config.png)
 
