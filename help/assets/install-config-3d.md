@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1681'
 ht-degree: 0%
 
 ---
 
 
 # Instalação e configuração AEM 3D {#installing-and-configuring-aem-d}
+
+>[!IMPORTANT]
+>
+>AEM 3D no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 A instalação e configuração do AEM 3D (versão 3.0) envolve o seguinte:
 
@@ -111,7 +115,7 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
 
-1. Clique com o Duplo do mouse na etapa de processo recém-adicionada.
+1. Clique com o duplo do mouse na etapa de processo recém-adicionada.
 1. Na caixa de diálogo Propriedades **[!UICONTROL da]** etapa, na guia **[!UICONTROL Comum]** , no campo **[!UICONTROL Título]** , digite uma descrição adequada para o processo, como `Process 3D content`.
 1. Click the **[!UICONTROL Process]** tab.
 
@@ -176,7 +180,7 @@ Consulte também Configurações [](advanced-config-3d.md)avançadas.
 
    Usando o botão esquerdo do mouse para ajustar a visualização. A iluminação do plano de fundo e do modelo muda para refletir a nova seleção de estágio.
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 ## Configurar suporte para ativos Adobe Dimension {#configuring-support-for-adobe-dimension-assets}
 
