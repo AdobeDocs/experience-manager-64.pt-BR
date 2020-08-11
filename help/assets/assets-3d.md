@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com ativos 3D
+title: Trabalhar com AEM ativos 3D
 seo-title: Trabalhar com ativos 3D
 description: Saiba como trabalhar com ativos 3D em AEM 3D
 seo-description: Saiba como trabalhar com ativos 3D em AEM 3D
@@ -10,15 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 6%
+source-wordcount: '1192'
+ht-degree: 5%
 
 ---
 
 
-# Trabalhar com ativos 3D {#working-with-d-assets}
+# Working with AEM 3D assets {#working-with-d-assets}
+
+>[!IMPORTANT]
+>
+>AEM 3D no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 O AEM 3D (Adobe Experience Manager 3D) permite carregar, gerenciar, visualizar e renderizar conteúdo 3D. O suporte para visualização e renderização é otimizado para objetos individuais.
 
