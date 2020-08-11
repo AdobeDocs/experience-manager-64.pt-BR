@@ -1,8 +1,8 @@
 ---
 title: Notas de versão AEM 3D
 seo-title: Notas de versão AEM 3D
-description: Notas de versão específicas do conteúdo 3D nos ativos Adobe Experience Manager.
-seo-description: Notas de versão específicas do conteúdo 3D nos ativos Adobe Experience Manager.
+description: Notas de versão específicas para conteúdo 3D no Adobe Experience Manager Assets.
+seo-description: Notas de versão específicas para conteúdo 3D no Adobe Experience Manager Assets.
 uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,13 @@ ht-degree: 0%
 
 # Notas de versão AEM 3D {#aem-d-release-notes}
 
+>[!IMPORTANT]
+>
+>O pacote de recursos 3D AEM no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+
 AEM-6.4-DynamicMedia-3D versão 3.1.0 (10 de outubro de 2018)
 
-O pacote de recursos 3D AEM permite suporte para conteúdo 3D em AEM Assets. Ele fornece recursos para carregar, gerenciar, pré-visualização e renderizar ativos 3D. O suporte para exibição e renderização é otimizado para objetos individuais (em vez de cenas complexas com vários objetos).
+O pacote de recursos 3D AEM permite suporte para conteúdo 3D no AEM Assets. Ele fornece recursos para carregar, gerenciar, pré-visualização e renderizar ativos 3D. O suporte para exibição e renderização é otimizado para objetos individuais (em vez de cenas complexas com vários objetos).
 
 AEM 3D suporta os tipos de ativos Adobe Dimension (Dn) e glTF. A implementação para esses tipos de ativos é substancialmente diferente da dos tipos 3D tradicionais descritos nesta documentação. Consulte [Trabalhar com ativos](/help/assets/working-dimension-assets.md)da Adobe Dimension.
 
@@ -60,7 +64,7 @@ Outros navegadores podem não suportar a visualização interativa de conteúdo 
 
 * CPU - Processamento e renderização 3D é muito exigente na CPU do computador. Assim, um servidor contemporâneo com no mínimo oito núcleos de CPU é recomendado.
 * Memória - recomenda-se um mínimo de 32 GB.
-* armazenamento em massa - É recomendado o armazenamento SSD de alta largura de banda.
+* Armazenamento em massa - É recomendado o armazenamento SSD de alta largura de banda.
 
    Durante o upload, os ativos 3D são convertidos em um formato proprietário para visualização rápida e interativa. Dependendo do tipo de ativo 3D, é necessário um espaço de armazenamento de 2 a 3 vezes o tamanho do ativo 3D carregado.
 
@@ -106,7 +110,7 @@ Versão 3.1
 
 * Esta versão do AEM3D tem suporte limitado para arquivos .dn criados com o Adobe Dimension.
 * Durante o processamento de upload, AEM aproveita um serviço de conversão baseado em nuvem e hospedado em Adobe para criar uma execução glTF do arquivo .dn nativo. É necessário acessar o serviço de conversão e selecionar pontos de extremidade Amazon AWS.
-* Um novo visualizador glTF é fornecido com suporte à visualização de ativos Dn em AEM Assets e sites/telas. Ainda não há suporte para os Estágios no visualizador.
+* Um novo visualizador glTF é fornecido com suporte à visualização de ativos Dn no AEM Assets e em Sites/telas. Ainda não há suporte para os Estágios no visualizador.
 * Os modelos Dn podem incorporar luzes IBL e fundos que são exibidos, se presentes. Como alternativa, o visualizador aplica iluminação padrão, uma cor de plano de fundo padrão ou ambos.
 * A renderização de alta qualidade para ativos Dn ainda não está disponível.
 * Dependências como mapas de textura são incorporadas em ativos Dn e não podem ser gerenciadas explicitamente em AEM.
@@ -114,7 +118,7 @@ Versão 3.1
 ### Compatibilidade {#compatibility}
 
 * **Não há suporte para a execução como um serviço do Windows (somente Windows)** - isso pode funcionar, mas não foi testado.
-* **Dynamic Media** ( `dynamicmedia-scene7` modo) - A compatibilidade do AEM3D com a nova solução Dynamic Media lançada com o AEM 6.4 ainda não foi totalmente verificada. Se a Dynamic Media e a AEM3D estiverem implantadas juntas, é recomendável colocar os ativos 3D e suas dependências somente em uma área do repositório de AEM Assets que não esteja atribuída à Dynamic Media. Essa recomendação é especialmente importante para arquivos TIFF de 32 bits que são necessários para estágios 3D, mas não são suportados pela Dynamic Media.
+* **Dynamic Media** ( `dynamicmedia-scene7` modo) - A compatibilidade do AEM3D com a nova solução Dynamic Media lançada com o AEM 6.4 ainda não foi totalmente verificada. Se o Dynamic Media e o AEM3D estiverem implantados juntos, é recomendável colocar os ativos 3D e suas dependências somente em uma área do repositório AEM Assets que não esteja atribuída ao Dynamic Media. Essa recomendação é especialmente importante para arquivos TIFF de 32 bits que são necessários para estágios 3D, mas não são suportados pelo Dynamic Media.
 
 ### Geral {#general}
 
@@ -154,10 +158,10 @@ Versão 3.1
 * **Imagem de plano de fundo revertida para estágio** IBL - As imagens para estágios IBL são intencionalmente giradas horizontalmente para corresponder ao comportamento do renderizador de raio mental NVIDIA fornecido com a Autodesk Maya. Solução: Vire as imagens usadas para estágios IBL no Photoshop antes de carregá-las.
 * **Brilho dos estágios** do IBL - A análise automática da imagem IBL pode resultar em uma cena que é muito escura ou muito brilhante. Para ajustar o brilho da iluminação dos estágios IBL, navegue até Propriedades **** básicas e ajuste o valor **brilhante** da iluminação **do** Ambiente, conforme necessário.
 
-### Componente 3D AEM Sites {#aem-sites-d-component}
+### Componente AEM Sites 3D {#aem-sites-d-component}
 
 * **Um componente 3D por página** - No momento, somente uma instância do componente 3D é permitida em cada página da Web. Se mais de um componente 3D for adicionado à mesma página, nenhum dos componentes 3D funcionarão corretamente.
-* **Visualização 3D ausente ao visualizar em Sites** - ao usar a **Pré-visualização** em Sites, a página deve ser recarregada no navegador para inicializar completamente o visualizador 3D. Esse não é um problema quando você visualização a página da Web diretamente (ou seja, quando `edit.html` é removida do caminho) nos nós Autor ou Publicar.
+* **visualização 3D ausente ao visualizar em Sites** - ao usar a **Pré-visualização** em Sites, a página deve ser recarregada no navegador para inicializar completamente o visualizador 3D. Esse não é um problema quando você visualização a página da Web diretamente (ou seja, quando `edit.html` é removida do caminho) nos nós Autor ou Publicar.
 
 * **Modo de tela cheia não disponível em dispositivos** iOS - o botão de tela cheia não está disponível em dispositivos iOS, independentemente do navegador usado.
 
