@@ -6,7 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 8%
@@ -91,7 +91,7 @@ Após a publicação dos ativos de vídeo, eles estarão disponíveis para inclu
 
    Para sair do assistente de anotações, toque em **[!UICONTROL Fechar]**.
 
-1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. For example, to skip the first 10 seconds of video, enter `20` in the text field.
+1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. For example, to skip the first 20 seconds of video, enter `20` in the text field.
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
