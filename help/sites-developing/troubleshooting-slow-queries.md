@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 0%
 
 Há 3 classificações principais de query lentos em AEM, listadas por gravidade:
 
-1. **query sem índice**
+1. **Query sem índice**
 
    * Query que **não** são resolvidos para um índice e percorrem o conteúdo do JCR para coletar resultados
 
-1. **query com pouca restrição (ou com escopo)**
+1. **Query com pouca restrição (ou com escopo)**
 
    * Query que são resolvidos para um índice, mas devem atravessar todas as entradas de índice para coletar resultados
 
@@ -80,7 +80,7 @@ Antes de adicionar a regra de índice cq:tags
 
    * Não existe fora da caixa
 
-* **query Construtor de Query**
+* **Query Construtor de query**
 
    ```
    type=cq:Page
@@ -88,7 +88,7 @@ Antes de adicionar a regra de índice cq:tags
     property.value=my:tag
    ```
 
-* **plano de Query**
+* **plano de query**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
@@ -98,21 +98,21 @@ Após adicionar a regra de índice cq:tags
 
 * **cq:regras de índice de tags**
 
-       &quot;
- /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags     
- @name=jcr:content/cq:tags     
- @propertyIndex=true     
-     &quot;
-   
-* **query Construtor de Query**
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
 
-       &quot;
- type=cq:Page     
- property=jcr:content/cq:tags     
- property.value=myTagNamespace:myTag     
-     &quot;
-   
-* **plano de Query**
+* **Query Construtor de query**
+
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
+* **plano de query**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
@@ -146,7 +146,7 @@ Isso ajuda a evitar query que consomem muitos recursos (ou seja, não suportado 
 
 #### Pós-implantação {#post-deployment-2}
 
-* Monitore os registros em busca de query que acionem um grande nó transversal ou grande consumo de memória heap: &quot;
+* Monitore os registros em busca de query que acionem um grande nó transversal ou grande consumo de memória heap:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Otimizar o query para reduzir o número de nós atravessados
@@ -165,7 +165,7 @@ No AEM 6.3, os 2 parâmetros acima são pré-configurados por padrão e podem se
 
 Mais informações disponíveis em: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
-## Ajuste do desempenho do Query {#query-performance-tuning}
+## Ajuste do desempenho do query {#query-performance-tuning}
 
 O lema da otimização do desempenho do query no AEM é:
 
@@ -185,14 +185,14 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
 1. Adicione uma restrição de tipo de nó para que o query seja resolvido em um Índice de propriedades do Lucene existente.
 
-   * **query não otimizado**
+   * **Query não otimizado**
 
       ```
        property=jcr:content/contentType
        property.value=article-page
       ```
 
-   * **query otimizado**
+   * **Query otimizado**
 
       ```
        type=cq:Page 
@@ -205,7 +205,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
 1. Ajuste a restrição de tipo de query para que o query seja resolvido para um Índice de propriedades Lucene existente.
 
-   * **query não otimizado**
+   * **Query não otimizado**
 
       ```
       type=nt:hierarchyNode
@@ -213,7 +213,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       property.value=article-page
       ```
 
-   * **query otimizado**
+   * **Query otimizado**
 
       ```
       type=cq:Page
@@ -229,14 +229,14 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
 1. Ou ajuste as restrições de propriedade para que o query seja resolvido como um Índice de propriedades existente.
 
-   * **query não otimizado**
+   * **Query não otimizado**
 
       ```
         property=jcr:content/contentType
         property.value=article-page
       ```
 
-   * **query otimizado**
+   * **Query otimizado**
 
       ```
       property=jcr:content/sling:resourceType
@@ -248,7 +248,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
 1. Adicione a restrição de caminho mais estrita possível ao query. Por exemplo, preferir `/content/my-site/us/en` sobre `/content/my-site`ou `/content/dam` sobre `/`.
 
-   * **query não otimizado**
+   * **Query não otimizado**
 
       ```
       type=cq:Page
@@ -257,7 +257,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       property.value=article-page
       ```
 
-   * **query otimizado**
+   * **Query otimizado**
 
       ```
       type=cq:Page
@@ -271,7 +271,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
 1. Sempre que possível, evite funções/operações do query, tais como: `LIKE` e `fn:XXXX` à medida que os seus custos aumentam com o número de resultados baseados em restrições.
 
-   * **query não otimizado**
+   * **Query não otimizado**
 
       ```
       type=cq:Page
@@ -280,7 +280,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       property.value=%article%
       ```
 
-   * **query otimizado**
+   * **Query otimizado**
 
       ```
       type=cq:Page
@@ -295,14 +295,14 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    Use o [supeTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) do Construtor de Query quando o conjunto completo de resultados for **não **necessário imediatamente.
 
-   * **query não otimizado**
+   * **Query não otimizado**
 
       ```
       type=cq:Page
       path=/content
       ```
 
-   * **query otimizado**
+   * **Query otimizado**
 
       ```
       type=cq:Page
@@ -319,7 +319,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 1. Caso contrário, o query deve resolver para um Índice de propriedades Lucene. Se nenhum índice puder ser resolvido, vá para Criar um novo índice.
 1. Conforme necessário, converta o query em XPath ou JCR-SQL2.
 
-   * **query Construtor de Query**
+   * **Query Construtor de query**
 
       ```
       query type=cq:Page
@@ -368,7 +368,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 1. Verifique se o query não é resolvido para um Índice de propriedades do Lucene existente. Se isso acontecer, consulte a seção acima sobre ajuste e índice existente.
 1. Conforme necessário, converta o query em XPath ou JCR-SQL2.
 
-   * **query Construtor de Query**
+   * **Query Construtor de query**
 
       ```
       type=myApp:Author
@@ -413,11 +413,11 @@ Devido à AEM arquitetura de conteúdo flexível, é difícil prever e garantir 
 
 Portanto, certifique-se de que um índice atenda aos query, exceto se a combinação de restrição de caminho e restrição de tipo de nó garantir que **menos de 20 nós sejam atravessados.**
 
-## Ferramentas de desenvolvimento de Query {#query-development-tools}
+## Ferramentas de desenvolvimento de query {#query-development-tools}
 
 ### Adobe Suportado {#adobe-supported}
 
-* **Depurador do Construtor de Query**
+* **Depurador do Construtor de query**
 
    * Uma WebUI para executar query do Construtor de Query e gerar o XPath de suporte (para uso em Explorar Query ou Oak Index Definition Generator).
    * Localizado em AEM em [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
@@ -441,7 +441,7 @@ Portanto, certifique-se de que um índice atenda aos query, exceto se a combina�
 
 * **[Registro](/help/sites-administering/operations-dashboard.md#log-messages)**
 
-   * Registro do Construtor de Query
+   * Registro do Construtor de query
 
       * `DEBUG @ com.day.cq.search.impl.builder.QueryImpl`
    * Registro de execução de query Oak
