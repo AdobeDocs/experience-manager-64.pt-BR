@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,7 @@ ht-degree: 0%
 
 A funcionalidade de formulários HTML5 é implantada como um pacote dentro da instância de AEM incorporada e é exposta como um ponto final REST sobre HTTP/S usando a arquitetura RESTful [Apache Sling](https://sling.apache.org/).
 
-    [ ![01-aem-forms-Architecture](assets/01-aem-forms-architecture.jpg)
-*Visualização Tamanho* Completo](javascript:void(0).md)
-
-    [ ![02-aem-forms-Architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
+![02-aem-forms-Architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Uso da estrutura Sling {#using-sling-framework}
 
@@ -160,7 +157,7 @@ O mecanismo de script do cliente:
 1. Gera um novo estado JSON
 1. Une o novo estado JSON no cliente quando a resposta for retornada.
 
-#### Pacotes de recursos de Localização {#localization-resource-bundles}
+#### Pacotes de recursos de localização {#localization-resource-bundles}
 
 Os formulários HTML5 suportam italiano (it), espanhol (es), português brasileiro (pt_BR), chinês simplificado (zh_CN), chinês tradicional (zh_TW), coreano (ko_KR), inglês (pt_BR), francês (fr_FR), alemão (de_DE) e japonês (ja). Com base na localidade recebida no cabeçalho da solicitação, o Pacote de recursos correspondente é enviado para o cliente. Este pacote de recursos é adicionado ao JSP do Perfil como um Client Lib do CQ com o nome da categoria **xfaforms.I18N**. Você pode substituir a lógica de escolher o pacote de localidade no perfil.
 
@@ -172,7 +169,7 @@ O pacote Sling contém conteúdo relacionado a Perfis e Perfil Renderer.
 
 Perfis são os nós de Recursos no sling que representam um formulário ou uma Família do Forms. No nível do CQ, esses perfis são nós JCR. Os nós residem na pasta **/conteúdo** no repositório JCR e podem estar dentro de qualquer subpasta na pasta **/conteúdo** .
 
-#### Renderizadores de Perfis {#profile-renderers}
+#### Renderizadores de perfis {#profile-renderers}
 
 O nó Perfil tem uma propriedade **sling:resourceSuperType** com valor **xfaforms/perfil**. Essa propriedade envia internamente solicitações para o script sling para nós de Perfil localizados na pasta **/libs/xfaforms/perfil** . Esses scripts são páginas JSP, que são container para reunir os formulários HTML e os artefatos JS/CSS necessários. As páginas incluem referências a:
 
