@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 96%
@@ -316,7 +316,7 @@ Os seguintes aspectos de um modelo podem ser editados:
 
 * [Layout](#editing-a-template-layout-template-author)
 
-   Aqui é possível predefinir o layout do modelo para os formatos de dispositivo necessários. O modo **Layout** de criação do modelo tem a mesma funcionalidade que o modo **[Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**da criação de página].
+   Aqui é possível predefinir o layout do modelo para os formatos de dispositivo necessários. O modo **Layout** de criação do modelo tem a mesma funcionalidade que o modo **[Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** da criação de página.
 
 * [Políticas da página](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ No modo **Estrutura** do editor de modelo:
 
    >[!NOTE]
    >
-   >Se vários componentes do mesmo tipo forem adicionados como conteúdo inicial, a mesma política se aplica a todos os componentes. Isso reflete a mesma restrição no **[Modo Design](/help/sites-authoring/default-components-designmode.md)**dos modelos estáticos.
+   >Se vários componentes do mesmo tipo forem adicionados como conteúdo inicial, a mesma política se aplica a todos os componentes. Isso reflete a mesma restrição no **[Modo Design](/help/sites-authoring/default-components-designmode.md)** dos modelos estáticos.
 
    ***Propriedades***
 
