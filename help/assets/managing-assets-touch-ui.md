@@ -4,9 +4,9 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9811'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um formato [](asset
 
    O tamanho acima do qual um ativo é considerado um grande ativo é configurável. Por exemplo, você pode configurar o sistema para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes. Nesse caso, o botão **[!UICONTROL Pausar]** na barra de progresso é exibido quando ativos de tamanho maior que 1000 MB são carregados.
 
-   O botão **[!UICONTROL Pausar]]**não é exibido se um arquivo maior que 1000 MB for carregado com um arquivo menor que 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, o botão**[!UICONTROL Pausar ]**será exibido.
+   O botão **[!UICONTROL Pausar]** não mostra se um arquivo maior que 1000 MB é carregado com um arquivo menor que 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, o botão **[!UICONTROL Pausar]** será exibido.
 
    Para modificar o limite de tamanho, configure a `chunkUploadMinFileSize` propriedade do `fileupload`nó no repositório CRX.
 
@@ -290,7 +290,7 @@ Você pode transcodificar um arquivo de vídeo escolhendo entre várias predefin
 
 #### Definir predefinições de conjunto de lotes ao carregar {#setting-batch-set-presets-at-upload}
 
-Se quiser criar automaticamente um Conjunto de Imagens ou um Conjunto de rotação a partir de imagens carregadas, clique na coluna **[!UICONTROL Ativo** para a predefinição que deseja usar. É possível selecionar mais de uma predefinição.
+Se quiser criar automaticamente um Conjunto de imagens ou um Conjunto de rotação a partir de imagens carregadas, clique na coluna **[!UICONTROL Ativo]** para a predefinição que deseja usar. É possível selecionar mais de uma predefinição.
 
 Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.
 
@@ -312,7 +312,7 @@ Após a extração ser concluída, AEM notifica você na área de notificação.
 
 Algumas limitações do recurso são:
 
-* Se existir uma pasta com o mesmo nome no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
+* Se uma pasta com o mesmo nome existir no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
 
 * Se você cancelar a extração, os ativos já extraídos não serão excluídos.
 
@@ -338,7 +338,7 @@ Algumas limitações do recurso são:
 >[!MORELIKETHIS]
 >
 >* [Pré-visualização de ativos](/help/assets/previewing-assets.md)de mídia dinâmica.
->* [subativos](managing-linked-subassets.md#viewing-subassets)de Visualização.
+>* [subativos](managing-linked-subassets.md#viewing-subassets)de visualização.
 
 
 ## Editar propriedades {#editing-properties}
@@ -716,7 +716,7 @@ No console [](managing-collections-touch-ui.md#navigating-the-collections-consol
 **Para usar a Linha do tempo**:
 
 1. Abra a página do ativo de um ativo ou selecione-o na interface do usuário Ativos.
-1. Toque no ícone Navegação **** global e escolha **Linha do tempo]** na lista.
+1. Toque no ícone Navegação **** global e escolha **[Linha do tempo]** na lista.
 
    ![linha do tempo](assets/timeline.png)
 
@@ -746,7 +746,7 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
    * [Ações rápidas](managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 
@@ -775,7 +775,7 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-### Anotações salvas da Visualização {#viewing-saved-annotations}
+### Anotações salvas da visualização {#viewing-saved-annotations}
 
 1. Para visualização de anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
 
@@ -950,7 +950,7 @@ Um usuário pode ter acesso a várias coleções. As coleções são dos seguint
 
 * Uma coleção com uma lista **de referência** estática de ativos, pastas e outras coleções.
 
-* Uma coleção que usa um critério **de** pesquisa e preenche dinamicamente os ativos com base nos critérios. Isso é chamado de Coleção **** inteligente.
+* Uma coleção que usa um critério **de** pesquisa e preenche dinamicamente os ativos com base no critério. Isso é chamado de Coleção **** inteligente.
 
 Consulte [Gerenciar coleções](managing-collections-touch-ui.md) para obter detalhes sobre o gerenciamento de coleções.
 
