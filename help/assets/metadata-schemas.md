@@ -3,9 +3,9 @@ title: Esquemas de metadados
 description: 'O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 12%
 
 ---
@@ -41,12 +41,12 @@ Para visualização de uma lista de formulários/modelos, na [!DNL Experience Ma
 |---|---|---|
 | [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
 |  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Formulário de Schema para vídeos do Dynamic Media. |
-|  | <ul><li> [!UICONTROL imagem]</li></ul> | Formulário de Schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
-|  | <ul><li> [!UICONTROL aplicativo]</li></ul> | Formulário de Schema para ativos com tipo MIME &quot;application&quot; (aplicativo), por exemplo application/ pdf, application/ zip e assim por diante. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com pdf de subtipo. |
-|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de Schema para ativos com MIME tipo &quot;vídeo&quot;, como vídeo/avi, vídeo/mp4 e assim por diante. |
-| [!UICONTROL collection] |  | Formulário de Schema para coleções. |
-| [!UICONTROL contentfragment] |  | Formulário de Schema para fragmentos de conteúdo. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Formulário de schema para vídeos do Dynamic Media. |
+|  | <ul><li> [!UICONTROL imagem]</li></ul> | Formulário de schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
+|  | <ul><li> [!UICONTROL aplicativo]</li></ul> | Formulário de schema para ativos com tipo MIME &quot;application&quot; (aplicativo), por exemplo application/ pdf, application/ zip e assim por diante. <br>[!UICONTROL pdf]: Formulário de schema para ativos com pdf de subtipo. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de schema para ativos com MIME tipo &quot;vídeo&quot;, como vídeo/avi, vídeo/mp4 e assim por diante. |
+| [!UICONTROL collection] |  | Formulário de schema para coleções. |
+| [!UICONTROL contentfragment] |  | Formulário de schema para fragmentos de conteúdo. |
 | [!UICONTROL formulários] |  | Este formulário de schema está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
@@ -78,7 +78,7 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-174](assets/chlimage_1-175.png)
+   ![chlimage_1-175](assets/chlimage_1-175.png)
 
 1. Na página **[!UICONTROL Editor de esquema de metadados]**, personalize a página de propriedades do ativo arrastando um ou mais componentes da lista de tipos de componentes na guia **[!UICONTROL Criar formulário]** para a guia **[!UICONTROL Básico]**.
 
@@ -165,7 +165,7 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**, por padrão.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
 
@@ -185,7 +185,7 @@ Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Exclui
 >
 >Não é possível excluir os formulários de schema de metadados prontos no AEM Assets.
 
-## Formulários de Schema para tipos MIME {#schema-forms-for-mime-types}
+## Formulários de schema para tipos MIME {#schema-forms-for-mime-types}
 
 A AEM Assets fornece formulários padrão para vários tipos MIME prontos para uso. No entanto, você pode adicionar formulários personalizados para ativos de vários tipos MIME.
 
@@ -206,7 +206,7 @@ Nesse caso, crie um novo nó `/etc/dam/metadataeditor/mimetypemappings` no repos
 
 A AEM Assets mapeia os seguintes tipos MIME e formulários de schema:
 
-| Formulário de Schema | Tipos MIME |
+| Formulário de schema | Tipos MIME |
 |---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
@@ -292,6 +292,6 @@ Essa configuração adiciona uma propriedade `hasValidMetadata` a jcr:content of
 >
 >Se um ativo for adicionado após a verificação programada, o ativo não será sinalizado `hasValidMetadata` até a próxima verificação programada. Os ativos não aparecem nos resultados de pesquisa intermediária.
 
->[!Cautorização]
+>[!CAUTION]
 >
 >As verificações de validação de metadados exigem muitos recursos e podem afetar o desempenho do seu sistema. Agendar as verificações em conformidade. Se a implantação AEM tiver problemas de desempenho, tente desativar este trabalho.
