@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6008'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->Se você criar um vídeo interativo para iniciar uma página da Web quando um usuário clicar em uma imagem em miniatura, alguns dispositivos impedirão a abertura da página da Web pop-up. Nesses casos, é necessário alterar a configuração do bloqueador de pop-ups no dispositivo. Por exemplo, em um Apple iPhone 6, toque em **[!UICONTROL Settings** > **Safari** > **Block Pop-ups** e deslize o controle para **[!UICONTROL Off**. Agora, ao reproduzir um vídeo interativo e clicar em uma miniatura, você será solicitado a abrir o pop-up. Se você aceitar, a página da Web será aberta.
+>Se você criar um vídeo interativo para iniciar uma página da Web quando um usuário clicar em uma imagem em miniatura, alguns dispositivos impedirão a abertura da página da Web pop-up. Nesses casos, é necessário alterar a configuração do bloqueador de pop-ups no dispositivo. Por exemplo, em um Apple iPhone 6, toque em **[!UICONTROL Configurações]** > **Safari** > Pop-ups **de** bloqueio e deslize o controle para **[!UICONTROL Desativado]**. Agora, ao reproduzir um vídeo interativo e clicar em uma miniatura, você será solicitado a abrir o pop-up. Se você aceitar, a página da Web será aberta.
 
 ## Veja como os vídeos interativos são criados {#watch-how-interactive-videos-are-created}
 
@@ -56,7 +56,7 @@ O webinário &quot;Usando vídeo interativo, compartilhamento de links e compart
 
 A seguinte descrição passo a passo do fluxo de trabalho foi projetada para ajudá-lo a iniciar e executar rapidamente com vídeos interativos no Dynamic Media.
 
-Procure o cabeçalho **Exemplo** em algumas tarefas do Start rápido. Ele contém um breve tutorial baseado nesta página de demonstração inicial da Web que ainda não ** tem interatividade adicionada a ela:
+Procure o cabeçalho **Exemplo** em algumas das tarefas do Start rápido. Ele contém um breve tutorial baseado nesta página de demonstração inicial da Web que ainda não ** tem interatividade adicionada a ela:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
@@ -476,7 +476,7 @@ Após salvar o vídeo interativo, ele será aberto imediatamente na Pré-visuali
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e, em seguida, toque em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]** .
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividindo um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
