@@ -1,6 +1,6 @@
 ---
-title: Detalhes do Documento para renderizador
-seo-title: Detalhes do Documento para renderizador
+title: Detalhes do documento para renderizador
+seo-title: Detalhes do documento para renderizador
 description: Informações conceituais sobre como as renderizações funcionam na área de trabalho do AEM Forms para renderizar os vários tipos de formulários e arquivos suportados.
 seo-description: Informações conceituais sobre como as renderizações funcionam na área de trabalho do AEM Forms para renderizar os vários tipos de formulários e arquivos suportados.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Detalhes do Documento para renderizador {#document-details-for-renderer}
+# Detalhes do documento para renderizador {#document-details-for-renderer}
 
 ## Introdução {#introduction}
 
@@ -38,7 +38,7 @@ Quando um formulário XDP é renderizado como PDF, um `FormBridge` JavaScript™
 
 Na área de trabalho do AEM Forms, a visualização PDFTaskForm se comunica com o `FormBridge`javascript, por meio de um HTML intermediário presente no `/lc/libs/ws/libs/ws/pdf.html`. O fluxo é:
 
-**visualização PDFTaskForm - pdf.html**
+**VISUALIZAÇÃO PDFTaskForm - pdf.html**
 
 Comunica-se usando `window.postMessage` / `window.attachEvent('message')`
 
@@ -92,7 +92,7 @@ A área de trabalho do AEM Forms escuta em `window.global.postMessage([Message],
 
 **Área de trabalho AEM Forms para comunicação de aplicativos de terceiros**
 
-Se os botões de ação direta do espaço de trabalho AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, onde [ `Action]` é lido do `routeActionMap`. O aplicativo de terceiros deve acompanhar essa interface e notificar o espaço de trabalho da AEM Forms por meio da `postMessage ()` API.
+Se os botões de ação direta do espaço de trabalho AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, onde `[Action]` será lido a partir do `routeActionMap`. O aplicativo de terceiros deve acompanhar essa interface e notificar o espaço de trabalho da AEM Forms por meio da `postMessage ()` API.
 
 Por exemplo, um aplicativo Flex pode definir `ExternalInterface.addCallback('getMessage', listener)` para suportar essa comunicação. Se o aplicativo de terceiros desejar manipular o envio do formulário por meio de seus próprios botões, você deverá especificar `hideDirectActions = true() in the runtimeMap` e poderá ignorar esse ouvinte. Por isso, essa construção é opcional.
 
