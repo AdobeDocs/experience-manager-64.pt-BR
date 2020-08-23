@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
@@ -40,10 +40,10 @@ Para usar o Adobe Sign com o AEM Forms, configure o Adobe Sign nos serviços da 
 
 Depois que os pré-requisitos estiverem implementados, execute as seguintes etapas para configurar o Adobe Sign com o AEM Forms na instância Autor:
 
-1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Ferramentas **![martelo](assets/hammer.png)>**Geral **> Navegador**de]**configuração.
+1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Ferramentas** ![martelo](assets/hammer.png) > **Geral** > Navegador **de]** configuração.
 1. Na página Navegador **[!UICONTROL de]** configuração, toque em **[!UICONTROL Criar]**.
 1. Na caixa de diálogo **[!UICONTROL Criar configuração]** , especifique um **[!UICONTROL Título]** para a configuração, ative Configurações **[!UICONTROL da]** nuvem e toque em **[!UICONTROL Criar]**. Ele cria um container de configuração para serviços em nuvem.
-1. Navegue até **[!UICONTROL Ferramentas **![martelo](assets/hammer.png)>**Cloud Services **>**Adobe Sign]**e selecione o container de configuração criado na etapa acima.
+1. Navegue até **[!UICONTROL Ferramentas** ![martelo](assets/hammer.png) > **Cloud Services** > **Adobe Sign]** e selecione o container de configuração criado na etapa acima.
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Depois que os pré-requisitos estiverem implementados, execute as seguintes etap
 
    ![Configuração do OAuth](assets/oauth_config.png)
 
-1. Volte para a página **[!UICONTROL Criar configuração]** Adobe Sign. Na guia **[!UICONTROL Configurações]** , o campo URL **!UICONTROL OAuth]**menciona o seguinte URL padrão:
+1. Volte para a página **[!UICONTROL Criar configuração]** Adobe Sign. Na guia **[!UICONTROL Configurações]** , o campo URL **** OAuth menciona o seguinte URL padrão:
 
    `https://secure.na1.echosign.com/public/oauth`
 
