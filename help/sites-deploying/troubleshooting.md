@@ -1,6 +1,6 @@
 ---
-title: Resolução de Problemas
-seo-title: Resolução de Problemas
+title: Resolução de problemas
+seo-title: Resolução de problemas
 description: Este artigo aborda alguns dos problemas de instalação que você pode encontrar com AEM.
 seo-description: Este artigo aborda alguns dos problemas de instalação que você pode encontrar com AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Resolução de Problemas{#troubleshooting}
+# Resolução de problemas{#troubleshooting}
 
 Esta seção inclui informações detalhadas sobre registros disponíveis para ajudá-lo a solucionar problemas e também informações sobre alguns dos problemas que você pode encontrar com AEM.
 
@@ -48,7 +48,7 @@ A opção detalhada exibe parte da saída de log do Quickstart no console, para 
 
 A seção a seguir descreve alguns problemas de instalação e suas soluções.
 
-### **Clicar no Duplo do jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivamento){#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### Clicar no duplo do jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivamento) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 Isso normalmente indica um problema com a forma como o ambiente para desktop do seu sistema operacional está configurado para abrir arquivos com a extensão .jar. Isso também pode indicar que você não tem o Java instalado ou que está usando uma versão não suportada do Java.
 
@@ -60,12 +60,12 @@ Para solucionar problemas, faça o seguinte:
 * Tente um menu de contexto (normalmente clique com o botão direito do mouse) no Início rápido AEM WCM e selecione &quot;Abrir com....&quot;
 * Verifique se Java ou Sun Java está listado e tente executar AEM WCM com ele. Se você tiver várias versões de Java instaladas, selecione a suportada.
 
-   Se você tiver êxito com essa etapa, e seus sistemas operacionais ofertas uma opção para sempre usar o programa selecionado para executar os arquivos .jar, selecione-o. Clicar em Duplo deve funcionar a partir de agora.
+   Se você tiver êxito com essa etapa, e seus sistemas operacionais ofertas uma opção para sempre usar o programa selecionado para executar os arquivos .jar, selecione-o. Clicar em duplo deve funcionar a partir de agora.
 
 * Às vezes, reinstalar a versão do Java compatível ajuda a restaurar a associação correta.
 * Você sempre pode executar o CRX usando a linha de comando ou scripts start/stop conforme descrito anteriormente neste documento.
 
-### **Meu aplicativo em execução no CRX emite erros de falta de memória{#my-application-running-on-crx-throws-out-of-memory-errors}**
+### Meu aplicativo em execução no CRX emite erros de falta de memória {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Se tudo o mais falhar, verifique os registros para descobrir o que aconteceu.
 
 ## Solução de problemas de instalações com um servidor de aplicativos {#troubleshooting-installations-with-an-application-server}
 
-### **Página não encontrada retornada ao solicitar uma página geometrixx-outdoor{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}**
+### Página não encontrada retornada ao solicitar uma página geometrixx-outdoor {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Aplica-se ao WebLogic 10.3.5 e JBoss 5.1**
 
@@ -108,7 +108,7 @@ Quando uma solicitação para a página geometrixx-outdoors/en retorna uma pági
 
 Consulte as etapas *Implantar AEM aplicativo* da Web para obter detalhes.
 
-### **O tamanho do cabeçalho de resposta pode ser maior que 4Kb{#response-header-size-can-be-greater-than-kb}**
+### O tamanho do cabeçalho de resposta pode ser maior que 4Kb {#response-header-size-can-be-greater-than-kb}
 
 Os erros 502 podem indicar que o servidor da Web não pode lidar com o tamanho do cabeçalho de resposta HTTP AEM. AEM pode gerar cabeçalhos de resposta HTTP que incluem cookies de tamanho superior a 4 Kb. Certifique-se de que seu container de servlet esteja configurado de modo que o tamanho máximo do cabeçalho de resposta possa exceder 4 kb.
 
@@ -126,7 +126,7 @@ Se o armazenamento persistente estiver incorporado no diretório de instalação
 
 Se a instalação do AEM usar um armazenamento externo, por exemplo, um servidor de banco de dados, a remoção da pasta não removerá os dados automaticamente, mas removerá a configuração do armazenamento, o que dificulta a restauração do conteúdo do JCR.
 
-### **Arquivos JSP não são compilados em JBoss{#jsp-files-are-not-compiled-on-jboss}**
+### Arquivos JSP não são compilados em JBoss {#jsp-files-are-not-compiled-on-jboss}
 
 Se você instalar ou atualizar arquivos JSP para o Experience Manager no JBoss e os servlets correspondentes não forem compilados, verifique se o compilador JSP JBoss está configurado corretamente. Para obter informações, consulte a\
 [Problemas de compilação JSP no artigo JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) .
