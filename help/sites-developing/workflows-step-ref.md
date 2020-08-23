@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2831'
 ht-degree: 2%
 
 ---
@@ -108,11 +108,11 @@ A divisão **[!UICONTROL AND]** cria uma divisão no fluxo de trabalho, após a 
 
 Uma etapa do **[!UICONTROL Container]** start outro modelo de fluxo de trabalho que é executado como um fluxo de trabalho filho.
 
-Esse **[!UICONTROL Container]]**permite reutilizar modelos de fluxo de trabalho para implementar sequências comuns de etapas. Por exemplo, um modelo de fluxo de trabalho de tradução poderia ser usado em vários workflows de edição.
+Esse **[!UICONTROL Container]** permite reutilizar modelos de fluxo de trabalho para implementar sequências comuns de etapas. Por exemplo, um modelo de fluxo de trabalho de tradução poderia ser usado em vários workflows de edição.
 
 ![wf-28](assets/wf-28.png)
 
-### Etapa do Container - Configuração {#container-step-configuration}
+### Etapa do container - Configuração {#container-step-configuration}
 
 Para configurar a etapa, edite e use as seguintes guias:
 
@@ -138,7 +138,7 @@ Para configurar a etapa, edite e use as seguintes guias:
 * [**[!UICONTROL Comum]**](#step-properties-common-tab)
 * **[!UICONTROL Processo]**
 
-   * **[!UICONTROL A etapa para]acessar]**: Selecione a etapa a ser executada.
+   * **[!UICONTROL A etapa a ser acessada]**: Selecione a etapa a ser executada.
    * **[!UICONTROL Caminho]** do script: O caminho para o ECMAScript que determina se a Etapa **[!UICONTROL Ir para será executada]**.
    * **[!UICONTROL Script]**: O ECMAScript que determina se a Etapa **[!UICONTROL Ir para será executada]**.
 
@@ -268,7 +268,7 @@ Para configurar a etapa, edite e use as seguintes guias:
 * [**[!UICONTROL Usuário/Grupo]**](#step-properties-user-group-tab)
 * **[!UICONTROL Caixa de diálogo]**
 
-   * **[!UICONTROL Dialog Path**: O caminho para o nó de diálogo da [caixa de diálogo criada](#dialog-participant-step-creating-a-dialog).
+   * **Caminho[!UICONTROL da caixa de diálogo**]: O caminho para o nó de diálogo da [caixa de diálogo criada](#dialog-participant-step-creating-a-dialog).
 
 #### Etapa do participante da caixa de diálogo - Criar uma caixa de diálogo{#dialog-participant-step-creating-a-dialog}
 
@@ -396,7 +396,7 @@ Para configurar a etapa, edite e use as seguintes guias:
 
 #### Etapa dinâmica do participante - Desenvolvimento do seletor de participantes {#dynamic-participant-step-developing-the-participant-chooser}
 
-Crie o seletor de participantes. Portanto, você pode usar qualquer lógica ou critério de seleção. Por exemplo, o selecionador de participantes pode selecionar o usuário (dentro de um grupo) que tem menos itens de trabalho. Você pode criar qualquer número de selecionadores de participantes para usar com diferentes instâncias do componente Etapa **do participante *dinâmico]*em seus modelos de fluxo de trabalho.
+Crie o seletor de participantes. Portanto, você pode usar qualquer lógica ou critério de seleção. Por exemplo, o selecionador de participantes pode selecionar o usuário (dentro de um grupo) que tem menos itens de trabalho. Você pode criar qualquer número de selecionadores de participantes para usar com diferentes instâncias do componente Etapa **do participante** dinâmico em seus modelos de fluxo de trabalho.
 
 Crie um serviço OSGi ou um ECMAScript que selecione um usuário ao qual atribuir o item de trabalho.
 
@@ -514,7 +514,7 @@ Para configurar a etapa, edite e use as seguintes guias:
 * [**[!UICONTROL Usuário/Grupo]**](#step-properties-user-group-tab)
 * **[!UICONTROL Formulário]**
 
-   * **[!UICONTROL Form Path**: O caminho para o [formulário criado](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Caminho]** do formulário: O caminho para o [formulário criado](#form-participant-step-creating-the-form).
 
 #### Etapa do participante do formulário - Criação do formulário {#form-participant-step-creating-the-form}
 
