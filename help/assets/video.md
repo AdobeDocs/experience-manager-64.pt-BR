@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '10507'
+source-wordcount: '10502'
 ht-degree: 4%
 
 ---
@@ -142,7 +142,7 @@ Para gerenciar um único vídeo e Conjuntos de vídeos adaptáveis, há suporte 
 * Carregar vídeo de vários formatos de vídeo e formatos de áudio suportados e codificar vídeo para o formato MP4 H.264 para reprodução em várias telas. Você pode usar predefinições de vídeo adaptáveis predefinidas, predefinições de codificação de vídeo único ou personalizar sua própria codificação para controlar a qualidade e o tamanho do vídeo.
 
    * Quando um conjunto de vídeo adaptável é gerado, ele inclui vídeos MP4.
-   * **Observação**: Vídeos Principais/de origem não são adicionados a um Conjunto de vídeos adaptáveis.
+   * **Observação**: Vídeos principais/de origem não são adicionados a um Conjunto de vídeos adaptáveis.
 
 * Legendagem de vídeo em todos os visualizadores de vídeo HTML5.
 * Organize, navegue e pesquise vídeos com suporte total a metadados para o gerenciamento eficiente dos ativos de vídeo.
@@ -170,7 +170,7 @@ Consulte também [Sobre visualizadores](https://docs.adobe.com/content/help/en/d
 
 As predefinições do visualizador de vídeo HTML5 do Dynamic Media são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo HTML5 e problemas associados a dispositivos móveis, como falta de delivery de transmissão adaptável e alcance limitado do navegador do desktop.
 
-No lado do design do player, é possível projetar toda a funcionalidade do player de vídeo usando ferramentas padrão de desenvolvimento da Web. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
+No lado de design do player, é possível projetar toda a funcionalidade do player de vídeo usando ferramentas padrão de desenvolvimento da Web. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
 
 No lado da reprodução do visualizador, ele detecta automaticamente a capacidade de vídeo do navegador. Em seguida, ele serve o vídeo usando o streaming HLS (streaming de vídeo adaptável). Ou, se esses métodos de delivery não estiverem presentes, então o HTML5 progressivo será usado.
 
@@ -186,7 +186,7 @@ A reprodução do vídeo ocorre usando o streaming de vídeo HLS (HTTP Live Stre
 
 No entanto, no AEM 6.3 e em diante, os vídeos agora são transmitidos por HTTPS (ou seja, streaming de vídeo HLS) porque o URL do serviço de gateway de DM sempre usa HTTPS também. Observe que não há impacto do cliente neste comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá em HTTPS, a menos que não seja suportado pelo navegador. (consulte a tabela a seguir). Portanto,
 
-* Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming está funcionando bem.
+* Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming está correto.
 * Se você tiver um site HTTP com streaming de vídeo HTTPS, o streaming estará correto e não haverá problemas de conteúdo misto no navegador da Web.
 
 HLS (HTTP Live Streaming) é um padrão da Apple para streaming de vídeo adaptável que ajusta automaticamente a reprodução com base na capacidade de largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; qualquer ponto do vídeo sem precisar aguardar o download do restante do vídeo (consulte também HTTP Live Streaming).
@@ -490,7 +490,7 @@ Para publicar no YouTube, você precisa de uma conta do Google. Se você tiver u
 1. No **[!UICONTROL Painel]** do seu projeto, no cartão **[!UICONTROL Introdução]** , toque em **[!UICONTROL Ativar APIs e obtenha credenciais como chaves]**.
 1. Próximo à parte superior da página do **[!UICONTROL Painel]** , toque em **[!UICONTROL Ativar API]**.
 1. Na página **[!UICONTROL Biblioteca]** , em APIs do YouTube, toque em API **[!UICONTROL de dados do]** YouTube.
-1. Próximo à parte superior da página da API de dados do **YouTube v3]** , toque em **[!UICONTROL Ativar]** para ativá-la.
+1. Próximo à parte superior da página da API de dados do **[!UICONTROL YouTube v3]** , toque em **[!UICONTROL Ativar]** para ativá-la.
 1. Para usar a API, talvez você precise de credenciais. Se necessário, toque em **[!UICONTROL Criar credenciais]**.
 1. Em **[!UICONTROL Onde você irá chamar a API?]** lista suspensa, selecione Servidor **[!UICONTROL Web (por exemplo, node.js, Tomcat)]**.
 1. Em **[!UICONTROL Que dados você estará acessando?]** selecione Dados **** do usuário.
@@ -570,7 +570,7 @@ Ou, se você pretende usar as tags padrão no AEM, ignore essa tarefa e acesse [
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. No cabeçalho Serviços **[!UICONTROL de]** terceiros, em YouTube, toque em **[!UICONTROL Configurar agora]**.
-1. Na caixa de diálogo **Criar configuração]** , digite um título (obrigatório) e um nome (opcional) nos respectivos campos.
+1. Na caixa de diálogo **[!UICONTROL Criar configuração]** , digite um título (obrigatório) e um nome (opcional) nos respectivos campos.
 1. Toque em **[!UICONTROL Criar]**.
 1. In the **[!UICONTROL YouTube Account Settings]** dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
@@ -586,7 +586,7 @@ Ou, se você pretende usar as tags padrão no AEM, ignore essa tarefa e acesse [
    Agora você irá configurar canais do YouTube no AEM.
 
 1. À direita de **[!UICONTROL Canais disponíveis]**, toque em **[!UICONTROL +]** (ícone de adição).
-1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel ]**earlier.
+1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel]** earlier.
 
    Como opção, você pode adicionar uma descrição, se desejar.
 
@@ -597,7 +597,7 @@ Ou, se você pretende usar as tags padrão no AEM, ignore essa tarefa e acesse [
    * Dependendo de quantos canais sua conta tiver exibido dois ou mais itens. Selecione um canal. Não selecione o endereço de email.
    * Na próxima página, toque em **[!UICONTROL Aceitar]** para permitir o acesso a este canal.
 
-1. Toque em **[!UICONTROL Permitir**.
+1. Toque em **[!UICONTROL Permitir]**.
 
    Agora, você configurará tags para publicação.
 
@@ -656,7 +656,7 @@ Para criar o perfil de processamento de metadados, você primeiro copiará valor
 1. Perto do canto superior direito da página do Editor **[!UICONTROL de Schemas de]** Metadados, toque em **[!UICONTROL Cancelar]**.
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 
-1. Na página **[!UICONTROL Metadata Perfis** , próximo ao canto superior direito da página, toque em **[!UICONTROL Criar**. In the **[!UICONTROL Add Metadata Profile** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
+1. Na página Perfis **[!UICONTROL de]** metadados, próximo ao canto superior direito da página, toque em **[!UICONTROL Criar]**. In the **[!UICONTROL Add Metadata Profile]** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
 1. Na página Editor **[!UICONTROL de Perfis de]** metadados, toque na guia **[!UICONTROL Avanço]** .
 1. Adicione os valores de Publicação do YouTube copiados ao perfil, fazendo o seguinte:
 
@@ -676,7 +676,7 @@ Para criar o perfil de processamento de metadados, você primeiro copiará valor
    * No lado direito da página, na guia Configurações, no campo de texto Rótulo do campo, digite `YouTube Privacy`.
    * Tap the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Single Line Text]** and drop it below the **[!UICONTROL YouTube Privacy]** heading you just created.
    * Tap **[!UICONTROL Field Label]** to select the component.
-   * No lado direito da página, na guia **[!UICONTROL Configurações]** , cole os valores de Publicação **[!UICONTROL do]** YouTube (valor do Rótulo **[!UICONTROL do]** campo e **[!UICONTROL Mapear para valor de propriedade]** ) que você copiou anteriormente, em seus respectivos campos no formulário. Cole o valor **[!UICONTROL Choices** no campo Valor **** Padrão.
+   * No lado direito da página, na guia **[!UICONTROL Configurações]** , cole os valores de Publicação **[!UICONTROL do]** YouTube (valor do Rótulo **[!UICONTROL do]** campo e **[!UICONTROL Mapear para valor de propriedade]** ) que você copiou anteriormente, em seus respectivos campos no formulário. Cole o valor **[!UICONTROL Opções]** no campo Valor **** padrão.
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 1. Aplique o perfil de metadados de publicação do YouTube às pastas onde você carregará vídeos. Você precisará ter o Perfil Metadados e o Perfil Vídeo definidos.
@@ -690,7 +690,7 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 Para publicar conteúdo do YouTube, AEM usa o fluxo de trabalho **[!UICONTROL Publicar no YouTube]** , que permite que você monitore o progresso e visualização de quaisquer informações de falha.
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-**Para publicar vídeos no seu canal** do YouTube:
+**Para publicar vídeos no canal** do YouTube:
 
 1. Em AEM, navegue até um ativo de vídeo que você deseja publicar no seu canal do YouTube.
 1. Selecione o ativo de vídeo.
@@ -758,7 +758,7 @@ Ao carregar um novo vídeo para uma pasta com codificação de vídeo aplicada o
 
 Para monitorar o progresso (incluindo a codificação com falha/publicação do YouTube):
 
-1. Progresso da codificação de vídeo de Visualização em sua pasta de ativos:
+1. Progresso da codificação de vídeo de visualização em sua pasta de ativos:
 
    * Na Visualização **[!UICONTROL de cartão]**, o progresso da codificação de vídeo é exibido no ativo em uma porcentagem. Se houver um erro, essas informações também serão exibidas no ativo.
 
@@ -772,7 +772,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
 
       ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Progresso da Visualização nos detalhes do ativo. Ao tocar em um ativo, abra o menu suspenso e selecione **[!UICONTROL Linha do tempo]**. Para limitar a atividades de fluxo de trabalho, como codificação ou publicação no YouTube, selecione **[!UICONTROL Workflows]**.
+1. Progresso da visualização nos detalhes do ativo. Ao tocar em um ativo, abra o menu suspenso e selecione **[!UICONTROL Linha do tempo]**. Para limitar a atividades de fluxo de trabalho, como codificação ou publicação no YouTube, selecione **[!UICONTROL Workflows]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -844,7 +844,7 @@ A forma como você configura a notificação depende se deseja notificações pa
 1. Em AEM, selecione **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 1. Selecione o fluxo de trabalho **[!UICONTROL Publicar no YouTube]** e toque em **[!UICONTROL Editar]**.
 1. Clique com o botão direito do mouse na etapa de fluxo de trabalho Carregar **[!UICONTROL do]** YouTube e toque em **[!UICONTROL Editar]**.
-1. Toque na guia **Argumentos **.
+1. Toque na guia **Argumentos** .
 1. Você pode marcar ou desmarcar as seguintes caixas de seleção:
 
    * **[!UICONTROL Início da publicação]**
@@ -1166,7 +1166,7 @@ Para configurar o intervalo de tempo padrão em que as miniaturas de vídeo são
    * Toque no ícone de seta para cima e no ícone de seta para baixo para reordenar os valores do intervalo.
 
 1. Toque em **[!UICONTROL OK]** para retornar à guia **[!UICONTROL Propriedades]** .
-1. Perto do canto superior esquerdo da página CRXDE Lite, toque em **[!UICONTROL Salvar tudo]** e, em seguida, toque no ícone **[!UICONTROL Voltar para a página inicial]** no canto superior esquerdo para retornar ao AEM.
+1. Próximo ao canto superior esquerdo da página CRXDE Lite, toque em **[!UICONTROL Salvar tudo]** e, em seguida, toque no ícone **[!UICONTROL Voltar para a página inicial]** no canto superior esquerdo para retornar ao AEM.
 
    Consulte [Adicionar uma miniatura de vídeo.](#adding-a-video-thumbnail)
 
