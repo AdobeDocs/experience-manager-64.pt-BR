@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Este tutorial descreve como:
    * **[!UICONTROL Imagem de texto]**
    * **[!UICONTROL Pesquisar]**
 
-1. Inclua vários componentes da fundação.
+1. Inclua vários componentes básicos.
 
 Depois de executar todas as etapas, suas páginas terão a seguinte aparência:
 
@@ -75,13 +75,13 @@ Depois de instalar o AEM, acesse o ambiente de desenvolvimento do CRXDE Lite cli
 
 Use a CRXDE Lite para criar a estrutura do aplicativo mywebsite no repositório:
 
-1. Na árvore no lado esquerdo do CRXDE Lite, clique com o botão direito do mouse na **`/apps`** pasta e clique em **[!UICONTROL Criar > Criar pasta]**. Na caixa de diálogo **Criar pasta** , digite `mywebsite` o nome da pasta e clique em **[!UICONTROL OK**.
+1. Na árvore no lado esquerdo do CRXDE Lite, clique com o botão direito do mouse na **`/apps`** pasta e clique em **[!UICONTROL Criar > Criar pasta]**. Na caixa de diálogo **Criar pasta** , digite `mywebsite` o nome da pasta e clique em **OK**.
 1. Clique com o botão direito do mouse na `/apps/mywebsite` pasta e clique em **[!UICONTROL Criar > Criar pasta]**. Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite `components` o nome da pasta e clique em **[!UICONTROL OK]**.
 1. Clique com o botão direito do mouse na `/apps/mywebsite` pasta e clique em **[!UICONTROL Criar > Criar pasta]**. Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite `templates` o nome da pasta e clique em **[!UICONTROL OK]**.
 
    A estrutura da árvore deve ficar parecida com isto:
 
-   ![chlimage_1-181](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Clique em **[!UICONTROL Salvar tudo]**.
 
@@ -148,7 +148,7 @@ Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem 
 
 1. Clique em **[!UICONTROL Avançar]** nos painéis Pais **** permitidos e Filhos **** permitidos e clique em **[!UICONTROL OK]**. No CRXDE Lite, clique em **[!UICONTROL Salvar tudo]**.
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
 #### Criação do componente Contentpage {#creating-the-contentpage-component}
 
@@ -220,7 +220,7 @@ Nesta seção, você cria as seguintes páginas que usam o modelo de página de 
 
 1. Na página de Boas-vindas do AEM ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), clique em Sites.
 
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+   ![chlimage_1-189](assets/chlimage_1-109.png)
 
 1. Na árvore de pastas, selecione a pasta **[!UICONTROL Sites]** e clique em **[!UICONTROL Nova > Nova página]**.
 1. Na janela **[!UICONTROL Criar página]** , digite o seguinte:
@@ -266,7 +266,7 @@ Nesta seção, você cria as seguintes páginas que usam o modelo de página de 
    * **[!UICONTROL Tipo]**: String
    * **[!UICONTROL Valor]**: /etc/designs/mywebsite
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 1. Em uma nova guia ou janela do navegador da Web, abra [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) para ver a página Produtos:
 
@@ -1082,7 +1082,7 @@ Nesta seção, você inclui o componente de título, que é um dos componentes b
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Nnota]
+>[!NOTE]
 >É possível definir um Título diferente e o Tipo/Tamanho no modo **[!UICONTROL Editar]** .
 
 ### Inclusão do componente Sistema de parágrafo {#including-the-paragraph-system-component}
@@ -1105,7 +1105,7 @@ Adicione o componente parsys (um dos componentes da fundação) ao seu component
 
 1. No seu navegador, atualize a página **[!UICONTROL Produtos]** . Ele agora tem o componente parsys, que é visto da seguinte maneira:
 
-   ![chlimage_1-129](assets/chlimage_1-127.png)
+   ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### Criação do componente de imagem {#creating-the-image-component}
 
@@ -1213,7 +1213,7 @@ Nesta seção, você vai visualização a página **[!UICONTROL Produtos]** e ad
 1. Clique no botão **[!UICONTROL Editar]** para editar a caixa de diálogo de design de par.
 1. Na caixa de diálogo, é mostrada uma lista de componentes **** permitidos; navegue até **[!UICONTROL Meu site]**, selecione o componente **** Minha imagem e clique em **[!UICONTROL OK]**.
 1. Retorne ao modo **** Editar.
-1. Clique com o Duplo no quadro parsys (em **[!UICONTROL Arraste componentes ou ativos aqui]**). Os seletores **[!UICONTROL Inserir novo componente]** e **[!UICONTROL Sidekick]** têm a seguinte aparência:
+1. Clique com o duplo no quadro parsys (em **[!UICONTROL Arraste componentes ou ativos aqui]**). Os seletores **[!UICONTROL Inserir novo componente]** e **[!UICONTROL Sidekick]** têm a seguinte aparência:
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -1275,7 +1275,7 @@ Sua caixa de entrada de pesquisa será exibida da seguinte forma na página **[!
       * **[!UICONTROL Descrição]**: Este é o meu componente de pesquisa
       * **[!UICONTROL Grupo]**: MyWebsite
    1. Clique em **[!UICONTROL Avançar]** e, em seguida, clique em **[!UICONTROL Avançar]** novamente.
-   1. No painel **[!UICONTROL Allowed Parents** (Pais permitidos UICONTROL), clique no botão **[!UICONTROL +]** e digite `*/parsys`.
+   1. No painel Pais **** permitidos, clique no botão **[!UICONTROL +]** e digite `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
 
