@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 10%
@@ -139,7 +139,7 @@ O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
    Por exemplo, se a ID de registro fosse `87654321|MyCompany`, o nome do cliente seria `MyCompany`.
 
-1. Perto do canto superior esquerdo da página, toque em **[!UICONTROL Cloud Services**, toque no ícone AEM e navegue até **[!UICONTROL Geral > CRXDE Lite]**.
+1. Perto do canto superior esquerdo da página, toque em **[!UICONTROL Cloud]Services**, toque no ícone AEM e navegue até **[!UICONTROL General > CRXDE Lite]**.
 1. Copie todo o caminho de execução do vídeo do JCR (Java Content Repository).
 
    Por exemplo, o caminho de renderização do vídeo pode aparecer de maneira semelhante ao seguinte:
@@ -203,6 +203,6 @@ O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
 ## Usar HTTP/2 para fornecer seus ativos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
 Consulte Delivery [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
