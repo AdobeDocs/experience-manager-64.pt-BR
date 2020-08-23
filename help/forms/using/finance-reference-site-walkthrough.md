@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9242'
+source-wordcount: '9231'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ O botão **[!UICONTROL Aplicar agora]** direciona Sarah para o aplicativo de car
 Alguns dos principais recursos que você pode revisar no formulário adaptável são:
 
 * É baseado em um schema XSD.
-* Ele foi criado usando o Tema A do We Finance para estilização e o modelo We.Finance para o layout. Além disso, ele usa Layout sem títulos de painel no layout do cabeçalho do formulário para navegação móvel. Ele exibe um layout móvel progressivo quando aberto a partir de um dispositivo móvel. Você pode revisar o modelo em `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` e o tema em `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
+* Ele foi criado usando o Tema A de finanças da Web para estilização e o modelo We.Finance para layout. Além disso, ele usa Layout sem títulos de painel no layout do cabeçalho do formulário para navegação móvel. Ele exibe um layout móvel progressivo quando aberto a partir de um dispositivo móvel. Você pode revisar o modelo em `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` e o tema em `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
 * Ele inclui regras de formulário adaptáveis para chamar os serviços de Modelo de dados de formulário para preencher previamente os detalhes do usuário conectado. Ele também chama os serviços para preencher antecipadamente as informações por número de segurança social ou endereço de email fornecido no formulário. Você pode revisar os Modelos de dados de formulário e seus serviços em `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Ele usa vários componentes de formulário adaptáveis para capturar entradas e adaptá-las às respostas do usuário. Ele também usa componentes como Email que suportam tipos de entrada HTML5.
 * Ele usa o componente Etapa de assinatura para exibir o formulário preenchido e permite a assinatura eletrônica no formulário.
@@ -134,7 +134,7 @@ Você pode revisar o Modelo We.Finance em:
 
 ### Sarah retoma e submete a candidatura {#sarah-resumes-and-submits-the-application}
 
-Sarah volta mais tarde e encontra um email do We.Finance. Ela clica no botão **[!UICONTROL Retomar]** no e-mail que a leva até o rascunho do cartão de crédito. As informações que ela preencheu anteriormente vêm pré-preenchidas. Preenche o formulário de candidatura restante, assina o pedido e submete-o.
+Sarah volta mais tarde e encontra um email do We.Finance. Ela clica no botão **[!UICONTROL Retomar]** no e-mail que a leva ao rascunho do cartão de crédito. As informações que ela preencheu anteriormente vêm pré-preenchidas. Preenche o formulário de candidatura restante, assina o pedido e submete-o.
 
 ![resume-1](assets/resume-1.png)
 
@@ -214,7 +214,7 @@ Sarah clica em Declaração de Visualização no e-mail para visualização da d
 
 * Resumo do demonstrativo
 * Relatório detalhado de despesas
-* análise de despesas gráficas
+* Análise de despesas gráficas
 * Opção para fazer um pagamento pela quantia devida dentro do demonstrativo
 * Download do recibo de pagamento
 
@@ -359,7 +359,7 @@ Vá para o portal We.Finance em `https://<publishHost>:<publishPort>/content/we-
 
 ### Sarah acha a oferta interessante e escolhe aplicar {#sarah-finds-the-offer-interesting-and-chooses-to-apply-1}
 
-Sarah opta por se candidatar à hipoteca domiciliar e clica em **[!UICONTROL Aplicar agora]** nos resultados da calculadora de hipoteca domiciliar. Abre-se o pedido de hipoteca.
+Sarah opta por se candidatar à hipoteca domiciliar e clica em **[!UICONTROL Aplicar Agora]** nos resultados da calculadora de hipoteca domiciliar. Abre-se o pedido de hipoteca.
 
 Se Sarah estiver acessando o aplicativo hipotecário residencial a partir de seu dispositivo móvel, o formulário do aplicativo será aberto em uma visualização otimizada para exibição em um dispositivo móvel. Nessa visualização, o formulário do aplicativo renderiza uma seção de cada vez. Permite que Sarah faça visualizações e forneça informações progressivamente enquanto navega no formulário de inscrição.
 
@@ -392,7 +392,7 @@ Alguns dos principais recursos que você pode revisar no formulário adaptável 
 * A primeira guia, Introdução, no aplicativo é uma calculadora de hipoteca dinâmica que exibe opções com base na seleção do usuário. Por exemplo, os campos e valores são diferentes para opções de Compra e Refinanciamento. Essa funcionalidade é alcançada usando regras de mostrar. Além disso, quando você clica em Continuar e a guia Planos é inicializada, ela chama um serviço da Web configurado em um Modelo de dados de formulário para buscar e exibir planos de hipoteca. Você pode revisar os Modelos de dados de formulário e os serviços configurados em `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Ele usa vários componentes de formulário adaptáveis para capturar entradas e adaptá-las às respostas do usuário. Ele também usa componentes como Email que suportam tipos de entrada HTML5.
 * Ele usa o componente Etapa de assinatura para exibir o formulário preenchido e permite a assinatura eletrônica no formulário.
-* Ele usa a ação de envio Chamar AEM Fluxo de Trabalho para acionar o fluxo de trabalho da AEM de Hipoteca Inicial do We Finance. Você pode revisar o fluxo de trabalho usado neste formulário em `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* Ele usa a ação de envio Chamar AEM Workflow para disparar o fluxo de trabalho AEM da hipoteca inicial do We Finance. Você pode revisar o fluxo de trabalho usado neste formulário em `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 É recomendável revisar o formulário para entender o schema, os componentes, as regras, os Modelos de dados do formulário, o fluxo de trabalho dos formulários e a ação de envio usada para criar o formulário.
 
@@ -522,7 +522,7 @@ Para gerar um relatório de análise com dados semente:
 
 1. No navegador de endereços da lista CRXDE, digite o seguinte: `/apps/we-finance/demo-artifacts/analyticsTestData/HomeMortgageAnalyticsTestData`
 1. Os dados de teste são selecionados na estrutura do diretório do lado esquerdo.
-1. Clique com o Duplo do mouse no arquivo selecionado para abrir seu conteúdo no painel direito.
+1. Clique com o duplo do mouse no arquivo selecionado para abrir seu conteúdo no painel direito.
 1. Copie todo o conteúdo no arquivo de dados semente.
 1. No CRXDE, navegue até: `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
 1. No campo analytics data em Propriedades, cole o conteúdo copiado do arquivo de dados semente.
@@ -606,7 +606,7 @@ Vá para o portal We.Finance em `https://<publishHost>:<publishPort>/content/we-
 
 ### Sarah acha a oferta interessante e escolhe aplicar {#sarah-finds-the-offer-interesting-and-chooses-to-apply-2}
 
-Sarah opta por se candidatar à hipoteca domiciliar e clica em **[!UICONTROL Aplicar agora]** nos resultados da calculadora de hipoteca domiciliar. Abre-se o pedido de hipoteca.
+Sarah opta por se candidatar à hipoteca domiciliar e clica em **[!UICONTROL Aplicar Agora]** nos resultados da calculadora de hipoteca domiciliar. Abre-se o pedido de hipoteca.
 
 Se Sarah estiver acessando o aplicativo hipotecário residencial a partir de seu dispositivo móvel, o formulário do aplicativo será aberto em uma visualização otimizada para exibição em um dispositivo móvel. Nessa visualização, o formulário do aplicativo renderiza uma seção de cada vez. Permite que Sarah faça visualizações e forneça informações progressivamente enquanto navega no formulário de inscrição.
 
@@ -871,7 +871,7 @@ A passagem do seguro automóvel também contém outro cliente, Alison Jones. A I
 * A política normal custa menos do que a política de prêmios.
 * A política premium tem recompensa anti-roubo e a política padrão tem recompensa de viagem inteligente
 
-Ambas as políticas usam a mesma comunicação interativa. As seções na política são alteradas ou ocultas com base na condição de tipo de política. Você pode acessar e revisar a comunicação interativa de renovação do seguro automático diretamente de https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoInsurance/auto-Insurance-renew
+Ambas as políticas usam a mesma comunicação interativa. As seções na política são alteradas ou ocultas com base na condição de tipo de política. Você pode acessar e revisar a comunicação interativa de renovação do seguro automático diretamente de `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Uso do Microsoft Dynamics como fonte de dados**
 
@@ -882,7 +882,7 @@ O site de referência também fornece uma comunicação interativa que usa o Mic
 1. Defina o valor de `FormFieldRequestParameter`para `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Toque em **Salvar tudo**. O site de referência está configurado para usar a comunicação interativa que usa o MS Dynamics como fonte de dados.
 
-Agora, faça logon no Painel **We.Finance Auto Insurance** como Conrad Simms (csimms/password). O URL é https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Especifique a ID **do** cliente. A ID do cliente de Sarah Rose é 900001. Clique em **Renovar política**. A comunicação interativa é aberta na interface do usuário do agente. Na interface do usuário do agente, digite um endereço de email válido para enviar o email com o documento de política anexado e clique em **Enviar**. Uma mensagem, Submission Initiated (Envio iniciado), é exibida na tela e, em alguns segundos, outra mensagem, Submetido com êxito, é exibida. Um email com o assunto **Sua renovação** de seguro automático é enviado no endereço de email especificado.
+Agora, faça logon no Painel **We.Finance Auto Insurance** como Conrad Simms (csimms/password). O URL é https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Especifique a ID **do** cliente. A ID do cliente de Sarah Rose é 900001. Clique em **Renovar política**. A comunicação interativa é aberta na interface do usuário do agente. Na interface do usuário do agente, digite um endereço de email válido para enviar o email com o documento de política anexado e clique em **Enviar**. Uma mensagem, Submission Initiated (Envio iniciado), é exibida na tela e, em alguns segundos, outra mensagem, Submetido com êxito, é exibida. Um email com o assunto **Sua renovação** do seguro automático é enviado no endereço de email especificado.
 
 >[!NOTE]
 >
@@ -912,7 +912,7 @@ O botão **Renovar agora** no email direciona Sarah para a versão da Web da pol
 
 https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
 
-Você pode verificar o resumo detalhado da renovação do seu seguro automático e clicar em **Renovar agora** na parte inferior da página.
+Você pode verificar o resumo detalhado da renovação do seguro automático e clicar em **Renovar agora** na parte inferior da página.
 
 ### Sarah abre a página de pagamento e faz o pagamento e conclui o processo {#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
 
