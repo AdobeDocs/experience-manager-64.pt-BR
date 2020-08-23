@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4300'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Ao adicionar pontos de acesso a uma imagem de banner no AEM Assets, é necessár
 
 É importante identificar corretamente o número e o tipo de variáveis a serem associadas aos dados dos pontos de conexão. Cada ponto de conexão adicionado a uma imagem de banner deve ter informações suficientes para identificar inequivocamente o produto no sistema de backend existente.
 
-Existem diferentes maneiras de identificar um conjunto de variáveis a serem usadas para dados de pontos de conexão.
+Há diferentes maneiras de identificar um conjunto de variáveis a serem usadas para dados de pontos de conexão.
 
 Às vezes, pode ser suficiente consultar especialistas de TI responsáveis pela implementação atual do Quickview, já que eles provavelmente saberão qual é o conjunto mínimo de dados necessário para identificar o Quickview no sistema. No entanto, na maioria dos casos, é possível simplesmente analisar o comportamento existente do código front-end.
 
@@ -260,9 +260,9 @@ Consulte [(Opcional) Visualização de imagens](#optional-previewing-interactive
 1. Na visualização Ativos, navegue até o banner de imagem que deseja tornar interativo.
 1. Faça uma das seguintes opções:
 
-   * Hover on the image, then tap **[!UICONTROL Select** (checkmark icon). Na barra de ferramentas, toque em **[!UICONTROL Edit**.
+   * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
    * Passe o mouse sobre a imagem e toque em **[!UICONTROL Mais ações]** (ícone de três pontos) > **[!UICONTROL Editar]**.
-   * Toque na imagem para abri-la na página **[!UICONTROL Visualização]** Detalhe. Na barra de ferramentas, toque em **[!UICONTROL Edit**.
+   * Toque na imagem para abri-la na página **[!UICONTROL Visualização]** Detalhe. Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
 
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
@@ -386,7 +386,7 @@ Agora você está pronto para integrar a imagem interativa com uma exibição r�
 >
 >Esta tarefa só se aplica se você for um cliente independente da AEM Assets.
 
-A última etapa neste processo é integrar a imagem interativa com uma implementação do Quickview existente em seu site. Não há solução para a integração que funcione para todos os casos. Toda implementação do QuickView é única e é necessária uma abordagem específica que provavelmente envolva a assistência de uma pessoa de TI de front-end.
+A última etapa desse processo é integrar a imagem interativa com uma implementação do Quickview existente em seu site. Não há solução para a integração que funcione para todos os casos. Toda implementação do QuickView é única e é necessária uma abordagem específica que provavelmente envolva a assistência de uma pessoa de TI de front-end.
 
 A implementação atual do Quickview normalmente representa uma cadeia de ações inter-relacionadas que ocorrem na página da Web na seguinte ordem:
 
