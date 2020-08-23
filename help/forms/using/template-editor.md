@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -79,11 +79,11 @@ O seletor de camada está disponível ao lado da opção Pré-visualização no 
 
 Ao selecionar a camada de estrutura no Editor de modelos, é possível ver os container de layout acima e abaixo do Container de formulário adaptável. Os autores podem usar esses container de layout para cabeçalho e rodapé. Você pode adicionar, editar ou personalizar o cabeçalho e o rodapé. Arraste e solte o componente Cabeçalho do formulário adaptativo no container de layout acima do Container de formulário adaptável para personalizar o cabeçalho do modelo. Arraste e solte o componente Rodapé do formulário adaptável no container de layout abaixo do Container de formulário adaptável para personalizar o rodapé do modelo.
 
-![container de layout na camada de estrutura](assets/header-layer-selector.png)
+![Container de layout na camada de estrutura](assets/header-layer-selector.png)
 
-**Figura:** *container de layout na camada de estrutura*
+**Figura:** *Container de layout na camada de estrutura*
 
-**A.** container de layout para o componente Cabeçalho **B.** container de layout para o componente Rodapé
+**A.** Container de layout para o componente Cabeçalho **B.** Container de layout para o componente Rodapé
 
 Arraste e solte o componente Cabeçalho do formulário adaptativo no container de layout acima do Container de formulário adaptável. Depois de adicionar o componente, você pode especificar suas propriedades que permitem adicionar um logotipo e fornecer seu título.
 
@@ -109,11 +109,11 @@ Quando a opção Conteúdo inicial estiver selecionada, o Container Formulário 
 
 Os autores de formulários usam-no como base para criar um formulário. A estrutura de fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes da Pré-visualização na barra de ferramentas da página, toque em ![menu suspenso](assets/canvas-drop-down.png)**[!UICONTROL Tela > Conteúdo ]**inicial.
 
-    [ ![Camada de conteúdo inicial no Editor de modelos](assets/initial-content-layer.png)
+![Camada Conteúdo inicial no Editor de modelos](assets/initial-content-layer.png)
 
 Camada Conteúdo inicial no Editor de modelos mostrando o Container de formulário adaptável selecionado para especificar as propriedades.
 
-](assets/initial-content-layer-1.png) Na camada Conteúdo inicial, você cria o modelo de formulário adaptável que seus autores usam como base. A criação de um modelo é semelhante à criação de um formulário, você usa as opções disponíveis na Barra lateral. A barra lateral fornece navegadores de conteúdo, propriedades, ativos e componentes.
+Na camada Conteúdo inicial, você cria o modelo de formulário adaptável que seus autores usam como base. A criação de um modelo é semelhante à criação de um formulário, você usa as opções disponíveis na Barra lateral. A barra lateral fornece navegadores de conteúdo, propriedades, ativos e componentes.
 
 Consulte [Barra lateral](/help/forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -141,11 +141,11 @@ Para criar as guias Informações gerais e Informações profissionais, adicione
 
 #### Adicionar conteúdo em guias {#adding-content-in-tabs}
 
-    [ ![Adicionar campos no modelo de formulário adaptável](assets/template-edit-initial-content.png)
+![Adicionar campos no modelo de formulário adaptável](assets/template-edit-initial-content.png)
 
 Adicionar campos no modelo
 
-](assets/template-edit-initial-content-1.png) Depois de adicionar painéis e estruturá-los como guias, é possível adicionar campos dentro das guias. Ao selecionar uma guia no editor, é possível ver a opção **[!UICONTROL Arrastar componentes aqui]** . Você pode arrastar e soltar componentes como caixas de texto, itens de lista e botões. Você pode arrastar e soltar componentes do navegador de componentes na barra lateral.
+Depois de adicionar painéis e estruturá-los como guias, é possível adicionar campos dentro das guias. Ao selecionar uma guia no editor, é possível ver a opção **[!UICONTROL Arrastar componentes aqui]** . Você pode arrastar e soltar componentes como caixas de texto, itens de lista e botões. Você pode arrastar e soltar componentes do navegador de componentes na barra lateral.
 
 Cada componente tem propriedades que aprimoram a captura e manipulação de dados. Por exemplo, você pode ativar a propriedade de campo **** Obrigatório de um componente. Seus autores podem especificar uma mensagem que seus clientes veem quando ignoram o preenchimento de um campo obrigatório. Especifique a mensagem na propriedade Mensagem **[!UICONTROL de campo]** obrigatória.
 
