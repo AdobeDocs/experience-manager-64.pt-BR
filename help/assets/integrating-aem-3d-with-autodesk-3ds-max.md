@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Consulte também [Integração AEM 3D com o AutoDesk Maya](integrate-maya-with-3
 
 1. Em 3ds Max, clique em **[!UICONTROL Personalizar > Gerenciador]** de plug-ins.
 
-   Localize `FBXMAX.DLU` e verifique se seu **[!UICONTROL Status]** está **[!UICONTROL carregado**.
+   Localize `FBXMAX.DLU` e verifique se seu **[!UICONTROL Status]** está **[!UICONTROL carregado]**.
 
    Feche a caixa de diálogo Gerenciador **** de plug-ins e 3ds máx.
 
@@ -51,7 +51,7 @@ Consulte também [Integração AEM 3D com o AutoDesk Maya](integrate-maya-with-3
    AEM usa um script de linha de comando para chamar o utilitário de linha de comando 3ds Max `3dsmaxcmd.exe`. Você deve editar esse script se tiver instalado uma versão diferente de 3ds Max 2016, ou se tiver instalado 3ds Max em um local não padrão, ou se tiver instalado AEM em uma partição ou unidade diferente.
 
    1. Abra CRXDE Lite e navegue até `/libs/settings/dam/v3D/scripts/max`.
-   1. Clique com o Duplo do mouse `export-fbx.bat` para abri-lo.
+   1. Clique com o duplo do mouse `export-fbx.bat` para abri-lo.
    1. Edite a primeira linha do script conforme necessário para refletir a localização do `3dsmaxcmd.exe` utilitário. Por exemplo, se 3ds Max 2017 for usado e AEM estiver instalado em uma unidade de disco diferente:
 
    ![image2018-6-22_13-35-8](assets/image2018-6-22_13-35-8.png)
