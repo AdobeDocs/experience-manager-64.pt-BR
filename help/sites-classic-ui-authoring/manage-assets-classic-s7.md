@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 32%
 
 ---
@@ -109,7 +109,7 @@ Para fazer isso, configure a configuração da nuvem para a página onde o ativo
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. Clique em **[!UICONTROL Cloud Services > Adicionar serviços > Dynamic Media Classic (Scene7)**.
+1. Clique em **[!UICONTROL Cloud Services]>[!UICONTROL Adicionar serviços]>[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. Na lista suspensa Adobe Dynamic Media Classic, selecione a configuração desejada e clique em **[!UICONTROL OK]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -121,7 +121,7 @@ Para fazer isso, configure a configuração da nuvem para a página onde o ativo
    >
    >If the digital asset is in the CQ target folder, then no link to **[!UICONTROL Check Dynamic Media Classic Publication Status]** appears. Os ativos são colocados no componente.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Clique em **[!UICONTROL Verificar status]** de publicação do Dynamic Media Classic. Se o ativo não for publicado, AEM o publicará no Dynamic Media Classic. Depois de enviado por upload, o ativo estará localizado na pasta ad-hoc. By default, the ad-hoc folder is located in the `name_of_the_company/CQ5_adhoc`. É possível [alterar essa configuração, se necessário](#configuringtheadhocfolder).
 
@@ -240,7 +240,7 @@ O componente de Imagem clássica do Dynamic Media permite que você adicione a f
 
 **[!UICONTROL Formato]** de saída - Selecione o formato de saída da imagem, por exemplo jpeg. Dependendo do formato de saída selecionado, você pode ter opções de configuração adicionais. Consulte [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Nitidez]** - Selecione como deseja tornar a imagem nítida. O ajuste de nitidez é explicado em detalhes na Qualidade de imagem do [*Adobe Dynamic Media Classic e nas Práticas *](/help/assets/assets/s7_sharpening_images.pdf)recomendadas de ajuste de nitidez.
+**[!UICONTROL Nitidez]** - Selecione como deseja tornar a imagem nítida. O ajuste de nitidez é explicado em detalhes na Qualidade de imagem do [*Adobe Dynamic Media Classic e nas Práticas*](/help/assets/assets/s7_sharpening_images.pdf) recomendadas de ajuste de nitidez.
 
 **[!UICONTROL Modificadores]** de URL - você pode alterar os efeitos de imagem fornecendo comandos de imagem adicionais do Dynamic Media Classic. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
