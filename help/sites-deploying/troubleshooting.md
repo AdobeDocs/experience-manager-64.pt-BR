@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 1%
@@ -86,7 +86,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Isso gera um arquivo de despejo heap (**java_...hprof**) sempre que o processo ficar sem memória. O processo pode continuar sendo executado depois que o despejo de heap for gerado. Normalmente, um arquivo de despejo heap é suficiente para analisar o problema.
 
-### **A tela de boas-vindas do AEM não exibe no navegador depois de clicar duas vezes no Início rápido do AEM{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### A tela de boas-vindas do AEM não exibe no navegador depois de clicar duas vezes no Início rápido do AEM {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 Em determinadas situações, as telas de boas-vindas do AEM WCM não são exibidas automaticamente, mesmo que o repositório esteja em execução com êxito. Isso pode depender da configuração do sistema operacional, da configuração do navegador ou de fatores similares.
 
