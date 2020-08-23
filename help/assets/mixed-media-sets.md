@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 18%
 
 ---
@@ -24,7 +24,7 @@ Os Conjuntos de mídia mista permitem que você forneça uma combinação de ima
 
 Os Conjuntos de mídias mistas são designados por um banner com a palavra **[!UICONTROL MixedMediaSet]**. Além disso, se o Conjunto de mídias mistas for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner junto com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]**.
 
-![chlimage_1-347](assets/chlimage_1-348.png)
+![chlimage_1-348](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Você pode executar várias tarefas de edição em ativos em Conjuntos de mídia
    >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
-1. Toque em **[!UICONTROL Salvar** quando terminar a edição.
+1. Toque em **[!UICONTROL Salvar]** quando terminar a edição.
 
    >[!NOTE]
    >
