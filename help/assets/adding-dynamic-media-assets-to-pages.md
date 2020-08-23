@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2829'
 ht-degree: 34%
 
 ---
@@ -69,7 +69,7 @@ Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma p
 1. Role até ver **[!UICONTROL Dynamic Media]**.
 1. Toque no ícone > à esquerda de **[!UICONTROL Dynamic Media]** para expandir a lista e selecione os componentes de Dynamic Media que deseja ativar.
 
-   ![lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+   ![Lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Perto do canto superior direito da página Container **[!UICONTROL de]** layout, toque no ícone Concluído (marca de seleção).
 
@@ -173,7 +173,7 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
 * **[!UICONTROL Predefinição]** do visualizadorSelecione uma predefinição do visualizador de vídeo existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador.
 
-* **[!UICONTROL Os modificadores do visualizador]** visualizadores assumem a forma de par nome=valor com um &amp; delimitador e permitem alterar os visualizadores conforme descrito no Guia de Referência dos Visualizadores de Adobe. Um exemplo de um modificador do visualizador é post-erimage=img.jpg&amp;caption=text.vtt,1
+* **[!UICONTROL Os modificadores do visualizador]** visualizadores assumem a forma de par name=value com um &amp; delimitador e permitem alterar os visualizadores conforme descrito no Guia de referência do visualizador de Adobe. Um exemplo de um modificador do visualizador é post-erimage=img.jpg&amp;caption=text.vtt,1
 
    Com modificadores do visualizador, por exemplo, você pode fazer o seguinte:
 
@@ -213,7 +213,7 @@ Essa opção não estará disponível se você estiver visualizando conjuntos de
 * **[!UICONTROL URL, Abrir no]**Você pode definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL Altura** e **[!UICONTROL Largura]** Insira o valor em pixels se desejar que a imagem de corte inteligente tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
+* **[!UICONTROL Altura]** e **[!UICONTROL largura]** Insira o valor em pixels se desejar que a imagem de corte inteligente tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
 
 ### Interactive Media component {#interactive-media-component}
 
@@ -264,7 +264,7 @@ Se a predefinição do visualizador que você está procurando não estiver vis�
 
 ### Usar HTTP/2 para delivery de ativos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
 Consulte Delivery [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
 
