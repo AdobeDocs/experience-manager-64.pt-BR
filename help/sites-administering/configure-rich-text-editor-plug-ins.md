@@ -3,9 +3,9 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text AEM para ativar funcionalidades individuais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4206'
 ht-degree: 3%
 
 ---
@@ -303,11 +303,10 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
 >[!NOTE]
 Ao usar o RTE em uma caixa de diálogo (Interface clássica), talvez você queira especificar folhas de estilos otimizadas para edição de rich text. Devido a restrições técnicas, o contexto CSS é perdido no editor, portanto, você pode querer emular esse contexto para melhorar a experiência WYSIWYG.
 O Editor de Rich Text usa um elemento DOM de container com uma ID `CQrte` que pode ser usada para fornecer estilos diferentes para exibição e edição:
-# CQ td {
-// define o estilo de exibição }
-# CQrte td {
-// define o estilo para edição }
-
+`#CQ td {`
+` // defines the style for viewing }`
+`#CQrte td {`
+` // defines the style for editing }`
 
 ### Especificar os Estilos disponíveis na lista pop-up {#stylesindropdown}
 
