@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ O servidor AEM Forms fornece duas instâncias: Autor e publicação. A instânci
 A AEM Forms suporta os seguintes tipos de ativos:
 
 * Formulários adaptáveis
-* documentos adaptáveis
+* Documentos adaptáveis
 * Fragmentos de formulário adaptáveis
 * Temas
 * Modelos de formulário (formulários XFA)
@@ -145,7 +145,7 @@ Siga estas etapas para agendar a data e a hora de publicar e desfazer a publica�
    1. Mova o ponteiro do mouse sobre um ativo e toque em **[!UICONTROL Cancelar publicação]** ![para cancelar a publicação](assets/unpublish.png).
    1. Execute um dos procedimentos a seguir e toque em Cancelar publicação:
 
-      * Se você estiver na visualização do cartão, toque em **[!UICONTROL Enter Selection** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png)e toque no ativo. O ativo é selecionado.
+      * Se você estiver na visualização do cartão, toque em **[!UICONTROL Inserir seleção]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png)e toque no ativo. O ativo é selecionado.
       * Se você estiver na visualização da lista, passe o mouse sobre um ativo e toque em ![seletassetcheckmark](assets/selectassetcheckmark.png) . O ativo é selecionado.
       * Toque em um ativo para exibir seus detalhes.
       * Exiba as propriedades de um ativo tocando em Propriedades da Visualização ![visualizando as propriedades](assets/viewproperties.png).
