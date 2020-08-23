@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 4%
@@ -60,7 +60,7 @@ Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é n
    >
    >Somente as imagens que se encaixam no tamanho máximo permitido de imagem são suportadas. As solicitações de imagens acima do limite de tamanho resultarão em uma resposta 403.
 
-1. No cabeçalho **Atributos de solicitação]** , faça o seguinte:
+1. No cabeçalho **[Solicitar atributos]** , faça o seguinte:
 
    * Defina **[!UICONTROL Request Obfuscation Mode (Modo]** de ofuscação de solicitação) como **[!UICONTROL Disabled (Desativado]**).
    * Defina **[!UICONTROL Request Locking Mode (Modo]** de bloqueio de solicitação) como **[!UICONTROL Disabled (Desativado]**).
