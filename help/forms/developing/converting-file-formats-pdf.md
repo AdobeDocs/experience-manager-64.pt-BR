@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '7876'
 ht-degree: 0%
@@ -715,7 +715,7 @@ Se os atributos não identificarem uma legenda, você poderá identificar um ele
 Esteja ciente destes problemas:
 
 * O Microsoft Spy++ exibe legendas usando um E comercial (&amp;) para identificar a tecla de atalho da legenda. Por exemplo, Spy++ mostra a legenda de uma caixa de diálogo Imprimir como `Pri&nt`, o que indica que a tecla de atalho está *n*. Os títulos de legenda em arquivos XML de script e caixa de diálogo devem omitir os E comercial.
-* Algumas legendas incluem quebras de linha. o serviço Gerar PDF não pode identificar quebras de linha. Se uma legenda incluir uma quebra de linha, inclua uma parte suficiente da legenda para diferenciá-la dos outros itens de menu e, em seguida, use expressões regulares para a parte omitida. Um exemplo é ( `^Long caption title$`).]. (Consulte [Uso de expressões regulares em atributos](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)de legenda.)
+* Algumas legendas incluem quebras de linha. o serviço Gerar PDF não pode identificar quebras de linha. Se uma legenda incluir uma quebra de linha, inclua uma parte suficiente da legenda para diferenciá-la dos outros itens de menu e, em seguida, use expressões regulares para a parte omitida. Um exemplo é ( `^Long caption title$`). (Consulte [Uso de expressões regulares em atributos](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)de legenda.)
 * Use entidades de caractere (também chamadas de sequências de escape) para caracteres XML reservados. Por exemplo, use `&` para o E comercial `<` e `>` para menos que e maior que símbolos, `&apos;` para apóstrofos e `&quot;` para aspas.
 
 Se você planeja trabalhar em arquivos XML de diálogo ou script, instale o aplicativo Microsoft Spy++.
@@ -773,7 +773,7 @@ Use o Microsoft Spy++ para obter as identidades das propriedades de elementos de
 
 É possível usar expressões regulares nas especificações de legenda. O serviço Gerar PDF usa a `java.util.regex.Matcher` classe para suportar expressões regulares. Esse utilitário suporta as expressões regulares descritas em `java.util.regex.Pattern`. (Vá para o site Java em [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
 
-**expressão regular que acomoda o nome do arquivo prefixado ao Bloco de notas no banner Bloco de notas**
+**Expressão regular que acomoda o nome do arquivo prefixado ao Bloco de notas no banner Bloco de notas**
 
 ```as3
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. --> 
@@ -784,7 +784,7 @@ Use o Microsoft Spy++ para obter as identidades das propriedades de elementos de
  </step>
 ```
 
-**expressão regular diferenciando Impressão da configuração de impressão**
+**Expressão regular diferenciando Impressão da configuração de impressão**
 
 ```as3
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. --> 
@@ -943,7 +943,7 @@ A AEM Forms inclui arquivos XML de amostra que fazem com que o serviço Gerar PD
 
 Este exemplo contém as caixas de diálogo adicionais para o aplicativo Bloco de notas. Essas caixas de diálogo podem ser adicionadas às especificadas pelo serviço Gerar PDF.
 
-**Caixas de diálogo do Bloco de notas(appmon.notepad.add.en_US.xml)**
+**Caixas de diálogo do Bloco de notas(appmon.notpad.add.en_US.xml)**
 
 ```as3
  <dialogs app="Notepad" locale="en_US" version="7.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dialogs.xsd"> 
