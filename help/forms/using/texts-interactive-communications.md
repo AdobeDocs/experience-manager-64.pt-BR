@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2249'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 
 * Strings
 * Números
-* expressão matemática
+* Expressão matemática
 * Datas
 * Propriedades do modelo de dados de formulário associado
 * Quaisquer variáveis que você possa ter criado no texto
@@ -194,11 +194,10 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 ## Formatação de texto {#formatting}
 
 Ao criar ou editar texto, a barra de ferramentas muda dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
-[ ![Selecionar tipo de barra de ferramentas](do-not-localize/toolbarselection.png)
 
 Selecione o tipo de barra de ferramentas: Parágrafo, Alinhamento ou Listagem
 
-](assets/toolbarselection.png) Barra de ferramentas de edição de ![fontes](do-not-localize/paragraphtoolbar-1.png)
+![Barra de ferramentas de edição de fontes](do-not-localize/paragraphtoolbar-1.png)
 
 Barra de ferramentas de edição de fontes
 
