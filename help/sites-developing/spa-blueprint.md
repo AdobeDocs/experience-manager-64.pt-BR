@@ -1,17 +1,17 @@
 ---
 title: Blueprint do SPA
 seo-title: Blueprint do SPA
-description: Este documento descreve o contrato geral, independente de estrutura, que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
-seo-description: Este documento descreve o contrato geral, independente de estrutura, que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
+description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
+seo-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
 uuid: 41a5f0f5-bd84-4e56-a368-a14c73366774
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para permitir que o autor use o Editor de páginas AEM para editar os dados expo
 
 ### PageModelManager {#pagemodelmanager}
 
-A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Ele acompanha o SPA e serve como um gerenciador de modelo de dados.
+A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Ele acompanha o SPA e atua como um gerenciador de modelo de dados.
 
 Em nome da ZPE, abstrai a recuperação e a gestão da estrutura JSON que representa a estrutura real do conteúdo. Também é responsável por sincronizar com o SPA para informá-lo quando ele precisa renderizar novamente seus componentes.
 
@@ -88,7 +88,7 @@ O modelo de página aproveita o Exportador do Modelo JSON, que é baseado na API
 * `:hierarchyType`: Tipo hierárquico de um recurso. O `PageModelManager` atualmente suporta o tipo de página
 
 * `:items`: Recursos de conteúdo filho do recurso atual (estrutura aninhada, presente apenas em container)
-* `:itemsOrder`: lista ordenada das crianças. O objeto de mapa JSON não garante a ordem de seus campos. Com o mapa e o array atual, o consumidor da API tem os benefícios de ambas as estruturas
+* `:itemsOrder`: Lista ordenada das crianças. O objeto de mapa JSON não garante a ordem de seus campos. Com o mapa e o array atual, o consumidor da API tem os benefícios de ambas as estruturas
 * `:path`: Caminho do conteúdo de um item (presente em itens que representam uma página)
 
 Consulte também [Introdução ao AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -278,7 +278,7 @@ O fragmento a seguir ilustra a representação HTML típica de uma estrutura de 
 
 O aplicativo é o proprietário do roteamento. Primeiro, o desenvolvedor front-end precisa implementar um componente de Navegação (mapeado para um componente de navegação AEM). Esse componente renderizaria links de URL a serem usados em conjunto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
 
-A [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca subjacente e seu módulo `[`ModelRouter`](/help/sites-developing/spa-routing.md) (ativado por padrão) são responsáveis pela busca prévia e pelo acesso ao modelo associado a um determinado caminho de recurso.
+A [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca subjacente e seu [`ModelRouter`](/help/sites-developing/spa-routing.md) módulo (ativado por padrão) são responsáveis pela busca prévia e pelo acesso ao modelo associado a um determinado caminho de recurso.
 
 As duas entidades estão relacionadas à noção de roteamento, mas o [`ModelRouter`](/help/sites-developing/spa-routing.md) é responsável apenas por ter o [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) carregado com um modelo de dados estruturado em sincronia com o estado atual do aplicativo.
 
