@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Se as coleções Oak e SRP forem usadas intensamente, uma segunda Solr poderá s
 
 Para ambientes de produção, o modo [](#solrcloud-mode) SolrCloud fornece um desempenho aprimorado em relação ao modo independente (uma configuração única local de Solr).
 
-### Requisitos {#requirements}
+### Introdução {#requirements}
 
 Baixe e instale o Apache Solr:
 
@@ -83,8 +83,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \\
 #### 2. Criar uma coleção {#create-a-collection}
 
 Referência:\
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create\
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Uso:\
 ./bin/solr criar \\
@@ -151,7 +150,7 @@ No total, os 33 idiomas a seguir são suportados no Advanced MLS.
 
 ### Instalação do MLS padrão {#installing-standard-mls}
 
-Para que a coleção SRP (MSRP ou DSRP) seja compatível com o Standard Multilingual Search (MLS), é necessário modificar dois arquivos de configuração do Solr:
+Para que a coleção SRP (MSRP ou DSRP) seja compatível com o Standard Multilingual Search (MLS), é necessário modificar dois dos arquivos de configuração do Solr:
 
 * **schema.xml**
 * **solrconfig.xml**
