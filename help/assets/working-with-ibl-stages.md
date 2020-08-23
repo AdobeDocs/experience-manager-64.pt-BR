@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 56%
 
 ---
@@ -31,7 +31,7 @@ Atualmente, o AEM 3D oferece suporte somente a TIFFs de 32 bits. Se necessário,
 * **[!UICONTROL Profundidade]** de bits - 32 bits (flutuante)
 * **[!UICONTROL Ordem]** de pixels - intercalada (RGBRGB)
 * **[!UICONTROL Compactação]** de imagem - LZW
-* **[!UICONTROL Byte Order** - PC IBM
+* **[!UICONTROL Ordem]** de bytes - PC IBM
 
 Embora uma única imagem com HDR geralmente seja suficiente para os palcos IBL, o AEM 3D oferece controle adicional sobre os efeitos de IBL, permitindo até três imagens separadas:
 
