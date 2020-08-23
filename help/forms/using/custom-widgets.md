@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -89,12 +89,14 @@ window.formBridge.registerConfig("widgetConfig",
 
 A configuração do widget é fornecida como um objeto JSON (uma coleção de pares de valores principais), onde a chave identifica os campos e o valor representa o widget a ser usado com esses campos. Uma configuração de amostra é semelhante a:
 
+```
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,\
-&quot;identifier2&quot; : &quot;customwidgetname2&quot;,\
-..\
+*“identifier1” : “customwidgetname”,  
+“identifier2” : “customwidgetname2”,  
+..  
 }*
+```
 
 onde &quot;identificador&quot; é um seletor CSS do jQuery que representa um campo específico, um conjunto de campos de um tipo específico ou todos os campos. O seguinte lista o valor do identificador em casos diferentes:
 
