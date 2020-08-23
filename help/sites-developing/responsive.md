@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '5341'
 ht-degree: 1%
@@ -46,11 +46,11 @@ Desenvolva aplicativos Adobe Experience Manager (AEM) que gerem páginas HTML5 q
 
 Consulte os seguintes tópicos para obter informações sobre como implementar o comportamento de design responsivo:
 
-* [query de mídia](/help/sites-developing/responsive.md#using-media-queries)
+* [Query de mídia](/help/sites-developing/responsive.md#using-media-queries)
 * [Grades fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Imagens adaptativas](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Ao projetar, use o **!UICONTROL Sidekick]**para pré-visualização de suas páginas para vários tamanhos de tela.
+Ao projetar, use o **[!UICONTROL Sidekick]** para pré-visualização de suas páginas para vários tamanhos de tela.
 
 ## Antes de desenvolver {#before-you-develop}
 
@@ -614,7 +614,7 @@ Ao criar uma página, use o **Sidekick** para especificar a imagem e adicionar o
 
 #### Detalhes da implementação {#implementation-details-1}
 
-A classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende a classe [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) . Se o pacote cq-geometrixx-commons-pkg estiver instalado, o código de origem ImageReferenceModificationServlet estará localizado na `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` pasta.
+A classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende a classe [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) . Se você tiver o pacote cq-geometrixx-commons-pkg instalado, o código de origem ImageReferenceModificationServlet estará localizado na `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` pasta.
 
 A classe usa anotações Felix SCR para configurar o tipo de recurso e a extensão do arquivo ao qual o servlet está associado e o nome do primeiro seletor.
 
@@ -705,13 +705,13 @@ Por exemplo, o aplicativo geometrixx-media de amostra contém o componente media
 
 #### Dimensionamento da grade do componente Página {#scaling-the-page-component-grid}
 
-O design associado ao componente de página geometrixx-media (`/etc/designs/geometrixx-media`) contém a `clientlibs` ClientLibraryFolder. Essa ClientLibraryFolder define estilos CSS para `row-fluid` classes, `span*` classes e `span*` classes que são filhos de `row-fluid` classes. query de mídia permitem a redefinição de estilos para tamanhos de visor diferentes.
+O design associado ao componente de página geometrixx-media (`/etc/designs/geometrixx-media`) contém a `clientlibs` ClientLibraryFolder. Essa ClientLibraryFolder define estilos CSS para `row-fluid` classes, `span*` classes e `span*` classes que são filhos de `row-fluid` classes. Query de mídia permitem a redefinição de estilos para tamanhos de visor diferentes.
 
 O exemplo a seguir de CSS é um subconjunto desses estilos. Esse subconjunto foca em `span12`, `span8`e `span4` classes e query de mídia para dois tamanhos de visor. Observe as seguintes características do CSS:
 
 * Os `.span` estilos definem larguras de elementos usando números absolutos.
 * Os `.row-fluid .span*` estilos definem larguras de elementos como porcentagens do pai. As porcentagens são calculadas a partir das larguras absolutas.
-* query de mídia para visualizadores maiores atribuem larguras absolutas maiores.
+* Query de mídia para visualizadores maiores atribuem larguras absolutas maiores.
 
 >[!NOTE]
 >
@@ -751,7 +751,7 @@ As páginas do aplicativo de exemplo de Geometrixx Media distribuem linhas de bl
 
 * O CSS padrão para a página de boas-vindas de mídia atribui o `float:left` estilo para `span*` as classes que estão dentro das `row-fluid` classes.
 
-* query de mídia para visualizações menores atribuem o `float:none` estilo para as mesmas classes.
+* Query de mídia para visualizações menores atribuem o `float:none` estilo para as mesmas classes.
 
 ```xml
 /* default styles (no media queries) */
