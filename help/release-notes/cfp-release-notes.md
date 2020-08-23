@@ -1,12 +1,12 @@
 ---
 title: Notas de versão do Pacote de correções cumulativo AEM 6.4
-description: Notas de versão específicas do Adobe Experience Manager 6.4 Cumulative Fix Packs.
+description: Notas de versão específicas dos Pacotes de correção cumulativos do Adobe Experience Manager 6.4.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2158'
 ht-degree: 21%
 
 ---
@@ -32,7 +32,7 @@ AEM Cumulative Fix Pack 6.4.8.1 depende do AEM 6.4 Service Pack 8. Portanto, voc
 
 Alguns dos principais destaques do AEM 6.4.8.1 são:
 
-* Remoção da integração do Compartilhamento de pacotes com o Adobe Experience Manager.
+* Remoção da integração do Compartilhamento de pacotes com a Adobe Experience Manager.
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.8.21.
 
 For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
@@ -48,13 +48,13 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 * Quando a opção Coral.Select define emptyOption=true ou contém um item padrão com valor = &quot;&quot;, o arquivo dropdownshoide.js encontra um erro: TypeError não detectado: component.getValue não é uma função (NPR-33163).
 * Quando um componente inclui outro componente como recurso de envio de dados, o espaço reservado do componente do container pai é substituído pelo espaço reservado dos componentes internos (NPR-33119).
 * Quando você baseia um Fragmento de conteúdo em um schema e ele contém uma área de texto obrigatória ou um campo de caminho, o Fragmento de conteúdo não é salvo (NPR-33007)
-* Ao criar um componente personalizado usando o componente de fragmento de experiência out-of-the-box e usá-lo em páginas de AEM Sites, AEM não exibe referências (uso) para o componente personalizado (NPR-32852).
-* Quando uma página AEM Sites faz parte de um grande conjunto de conteúdo com várias cópias online, a pré-visualização do histórico de versão da página não é carregada (NPR-32772).
-* Quando você promove uma inicialização, ele adiciona a combinação &quot;cq:LiveRelationship&quot; a cada componente adicionado na inicialização. Tem impacto em todas as inicializações, independentemente do lançamento com ou sem a seleção dos —  Herdar dados ao vivo da página de origem —  (NPR-32664).
+* Quando você cria um componente personalizado usando o componente de fragmento de experiência out-of-the-box e o usa em páginas do AEM Sites, AEM não exibe referências (uso) para o componente personalizado (NPR-32852).
+* Quando uma página do AEM Sites faz parte de um grande conjunto de conteúdo com várias cópias online, a pré-visualização do histórico de versão da página não é carregada (NPR-32772).
+* Quando você promove uma inicialização, ele adiciona a combinação &quot;cq:LiveRelationship&quot; a cada componente adicionado na inicialização. Tem impacto em todas as inicializações, independentemente do fato de um lançamento ser criado com ou sem a seleção do —  Herdar dados ao vivo da página de origem —  (NPR-32664).
 * Quando start de paginação, o Seletor de fragmentos de experiência não carrega todos os itens (NPR-32605).
-* Não é possível criar uma inicialização para uma página de AEM Sites. A criação de inicialização resulta em um erro (NPR-32544).
+* Não é possível criar uma inicialização para uma página do AEM Sites. A criação de inicialização resulta em um erro (NPR-32544).
 * Gerenciar publicação não inclui ativos referenciados na solicitação de fluxo de trabalho de ativação (NPR-32463).
-* A verificação de integridade do Dispatcher exibe uma mensagem de `Invalid cookie header` aviso nos arquivos de registro (NPR-33630).
+* A verificação de integridade do Dispatcher exibe a mensagem de `Invalid cookie header` aviso nos arquivos de registro (NPR-33630).
 * A integração do Salesforce é vulnerável ao SSRF (NPR-32671).
 * XSS refletido em PreferencesServlet (NPR-33439).
 
@@ -121,11 +121,11 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 * Forms adaptável: Uma nova linha de uma string em um dicionário de formulários adaptáveis adiciona `&#xa;` caracteres ao dicionário (NPR-33265).
 * Forms adaptável: O usuário não pode salvar um formulário adaptável com mais de um anexo (NPR-33214).
 * Forms adaptável: `AddInstance` e `RemoveInstance` os métodos para a classe Instance Manager não adicionam um número dinâmico de instâncias para fragmentos de carregamento lento em [!DNL Internet Explorer 11] (NPR-33201).
-* Forms adaptável: A Analytics habilitada em um formulário adaptável incorporado em uma [!DNL Sites] página não grava dados para eventos Enviar e Abandonar (NPR-31359).
+* Forms adaptável: O Analytics ativado em um formulário adaptável incorporado em uma [!DNL Sites] página não registra dados para eventos Enviar e Abandonar (NPR-31359).
 * Forms adaptável: Quando um usuário cola o conteúdo de um [!DNL Word] documento para um formulário adaptável e o envia, o formulário adaptativo enviado inclui caracteres unicode. Além disso, a conversão de PDF em PDF/A falha devido a caracteres unicode (NPR-33348).
 * BackendIntegration: As solicitações do modelo de dados de formulário falham, pois o token de atualização expira devido ao estado inativo incorreto (NPR-33168).
-* Serviços do Documento: Falha do serviço de conversão de PDF ao converter documentos PDF em PostScript devido à ausência de jars Gibson para [!DNL WebLogic] no [!DNL Linux] servidor (NPR-33515, CQ-4292239).
-* Serviços do Documento: Quando um usuário converte um arquivo de texto em PDF, os caracteres japoneses não são renderizados corretamente (NPR-33239).
+* Serviços do documento: Falha do serviço de conversão de PDF ao converter documentos PDF em PostScript devido à ausência de jars Gibson para [!DNL WebLogic] no [!DNL Linux] servidor (NPR-33515, CQ-4292239).
+* Serviços do documento: Quando um usuário converte um arquivo de texto em PDF, os caracteres japoneses não são renderizados corretamente (NPR-33239).
 * XSS armazenado com o GuideSOMProviderServlet (NPR-32701).
 
 
@@ -192,12 +192,12 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/p
 
 Para determinar a plataforma certificada para execução com esta versão do AEM Sites e do Assets, consulte Requisitos [](../sites-deploying/technical-requirements.md)técnicos.
 
->[!Nnota]
+>[!NOTE]
 >On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
-### Atualizar visualizadores do Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
+### Atualizar visualizadores de mídia dinâmica (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.1 contém a nova versão dos visualizadores do Dynamic Media (5.10.1) que ativa a verificação de nomes de duplicados na página Predefinição de imagem. Os clientes da Dynamic Media devem executar o seguinte comando para exibir as predefinições do visualizador de caixa para um estado atualizado.
+AEM 6.4.8.1 contém a nova versão dos visualizadores do Dynamic Media (5.10.1) que permite a verificação dos nomes dos duplicados na página Predefinição de imagem. Os clientes do Dynamic Media são aconselhados a executar o seguinte comando para exibir as predefinições do visualizador de caixa para um estado atualizado.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
