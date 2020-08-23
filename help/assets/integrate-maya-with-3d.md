@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Consulte também [Integração AEM 3D com o AutoDesk 3ds Max](integrating-aem-3d
 
 1. Adicione o caminho para a pasta executável Maya à variável de ambiente do Windows PATH.
 
-   Por exemplo, no Windows Server 2012, toque em **[!UICONTROL Start > Painel de controle do Campaign > Sistema e segurança > Sistema > Configurações avançadas do sistema > Variáveis** de Ambiente. Anexar o caminho completo à `Maya2016\bin` pasta à variável `Path`do sistema.
+   Por exemplo, no Windows Server 2012, toque em **[!UICONTROL Start]>[!UICONTROL Painel de controle do Campaign]>[!UICONTROL Sistema e segurança]>[!UICONTROL Sistema]> Configurações** avançadas do sistema > Variáveis de Ambiente. Anexar o caminho completo à `Maya2016\bin` pasta à variável `Path`do sistema.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -79,7 +79,7 @@ Consulte também [Integração AEM 3D com o AutoDesk 3ds Max](integrating-aem-3d
 
    Observe que `sample-3D-content.zip` foi baixado anteriormente para validar a funcionalidade básica 3D.
 
-1. Retorne à **[!UICONTROL Card** visualização e observe os banners de mensagem exibidos nos ativos carregados.
+1. Retorne à visualização de **[!UICONTROL cartão]** e observe os banners de mensagem exibidos nos ativos carregados.
 
    O banner de Formato de conversão é exibido enquanto o Maya está convertendo o `.MA` formato nativo em `.FBX`.
 
