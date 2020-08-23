@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1838'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ Para colocar você em funcionamento rapidamente com Conjuntos de rotação, siga
 
    Você pode visualização e acessar conjuntos criados por meio de predefinições de conjuntos de lotes de três maneiras diferentes. (Os conjuntos criados usando predefinições de conjuntos de lotes *não* aparecem na interface do usuário.)
 
-1. [Conjuntos de rotação de Pré-visualização.](previewing-assets.md)
+1. [Conjuntos de rotação de pré-visualização.](previewing-assets.md)
 
    Selecione o Conjunto de rotação e você pode pré-visualização-lo. Gire o conjunto de rotação. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel esquerdo.
 
@@ -110,13 +110,13 @@ Os conjuntos de lotes são criados pelo IPS (Image Production System) como parte
 
 **Para criar Conjuntos de rotação:**
 
-1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set**. Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos.
+1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos.
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-1. Na página Editor **[!UICONTROL do conjunto de]** rotação, no campo **[!UICONTROL Título]** , digite um nome para o conjunto de rotação. O nome aparece no banner no Conjunto de rotação. Opcionalmente, informe uma descrição.
+1. Na página Editor **[!UICONTROL de conjunto de]** rotação, no campo **[!UICONTROL Título]** , digite um nome para o Conjunto de rotação. O nome aparece no banner no Conjunto de rotação. Opcionalmente, informe uma descrição.
 
-   ![chlimage_1-302](assets/chlimage_1-382.png)
+   ![chlimage_1-382](assets/chlimage_1-382.png)
 
    Ao criar o conjunto de rotação, você pode alterar a miniatura do conjunto de rotação ou permitir que AEM selecione a miniatura automaticamente com base nos ativos no conjunto de rotação. Para selecionar uma miniatura, toque em **[!UICONTROL Alterar miniatura]**. Selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
