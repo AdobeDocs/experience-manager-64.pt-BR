@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '6146'
 ht-degree: 2%
@@ -114,7 +114,7 @@ Você pode alterar o valor padrão para as configurações do Adobe PDF, configu
 
 As opções a seguir determinam como os arquivos de imagem são convertidos em PDF. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
 
-**Extensões de nome de arquivo:** lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
+**Extensões de nome de arquivo:** Lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
 
 **Tente Conversor de fallback:** O Gerador de PDF pode usar Java™ ou Acrobat para converter arquivos de imagem em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo limite especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se um método alternativo falhar ou atingir o limite de tempo limite especificado, uma exceção será gravada no arquivo de log.
 
@@ -182,7 +182,7 @@ Ative essas opções para especificar como as páginas HTML são convertidas. Co
 
 **Definir configurações de Visualização inicial:** Permite configurar Opções de Documento, Opções de Janela e Opções de Interface do Usuário. Essas configurações determinam como o conteúdo é exibido inicialmente.
 
-### Opções de Documento {#document-options}
+### Opções de documento {#document-options}
 
 Ative essas opções para especificar como exibir o conteúdo, como exibir as páginas no documento PDF e como especificar o nível de ampliação:
 
@@ -220,7 +220,7 @@ Ative estas opções para especificar a aparência da janela:
 
 O Gerador de PDF suporta a capacidade de enviar um vídeo para o Flash Adobe (arquivo SWF ou FLV) e criar um arquivo PDF com um vídeo para o Flash Adobe. Essa conversão não exige que o Flash Player Adobe seja instalado no servidor de formulários. Para obter instruções sobre como acessar essa opção, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
 
-**Extensões de nome de arquivo:** lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
+**Extensões de nome de arquivo:** Lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
 
 ## Configurações do XPS para PDF {#xps-to-pdf-settings}
 
@@ -238,7 +238,7 @@ O Gerador de PDF oferece suporte à capacidade de reduzir o tamanho dos arquivos
 
 Para obter instruções sobre como acessar essa configuração, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
 
-**Versão PDF do Público alvo:** Especifica a versão do Acrobat com a qual o PDF é compatível.
+**Versão PDF do público alvo:** Especifica a versão do Acrobat com a qual o PDF é compatível.
 
 ### Fontes {#fonts}
 
@@ -301,7 +301,11 @@ Selecione **Transparência** para definir as configurações de transparência a
 
 **Converter todos os traçados em contornos** Converte todos os traçados em caminhos preenchidos simples nas páginas que contêm transparência. Essa opção garante que a largura dos traçados permaneça consistente durante o nivelamento. Observe que ativar essa opção faz com que os traçados finos apareçam ligeiramente mais espessos e podem degradar o desempenho do nivelamento.
 
-**Recortar regiões** complexas garante que os limites entre a arte-final vetorial e a arte-final rasterizada caiam ao longo de caminhos de objetos. Esta opção reduz a sutura de artefatos que resultam quando parte de um registro] &quot;>
+**Recortar regiões** complexas garante que os limites entre a arte-final vetorial e a arte-final rasterizada caiam ao longo de caminhos de objetos. Essa opção reduz a sutura de artefatos que resultam quando parte de um logotipo
+
+<!--
+NOTE to WRITER - The above sentence is incomplete.
+-->
 
 >[!NOTE]
 >
@@ -309,7 +313,7 @@ Selecione **Transparência** para definir as configurações de transparência a
 
 Preservar superimposição: Mescla a cor da arte transparente com a cor do plano de fundo para criar um efeito de superimposição.
 
-A tabela a seguir mostra os tipos comuns de impressoras e sua resolução medida em dpi, sua regra de tela padrão medida em linhas por polegada (lpi) e uma resolução de reamostragem para imagens medidas em pixels por polegada (ppi). Por exemplo, se você estivesse imprimindo em uma impressora a laser de 600 dpi, insira 170 para obter a resolução na qual as imagens devem ser reamostradas.
+A tabela a seguir mostra os tipos comuns de impressoras e sua resolução medida em dpi, sua resolução de tela padrão medida em linhas por polegada (lpi) e uma resolução de reamostragem para imagens medidas em pixels por polegada (ppi). Por exemplo, se você estivesse imprimindo em uma impressora a laser de 600 dpi, insira 170 para obter a resolução na qual as imagens devem ser reamostradas.
 
 **Imagens** Selecione Imagens para especificar as opções de compactação e reamostragem para imagens coloridas, em tons de cinza e monocromáticas. Talvez você queira experimentar essas opções para encontrar um equilíbrio apropriado entre o tamanho do arquivo e a qualidade da imagem.A configuração de resolução para imagens coloridas e em tons de cinza deve ser de 1,5 a 2 vezes a regra de tela de linha na qual o arquivo será impresso. A resolução para imagens monocromáticas deve ser a mesma do dispositivo de saída, mas lembre-se de que salvar uma imagem monocromática em uma resolução superior a 1500 dpi aumenta o tamanho do arquivo sem melhorar visivelmente a qualidade da imagem. Imagens que serão ampliadas, como mapas, podem exigir resoluções mais altas.
 
