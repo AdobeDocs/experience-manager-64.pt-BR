@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
-source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 68%
+source-wordcount: '705'
+ht-degree: 70%
 
 ---
 
@@ -50,8 +50,8 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
 
    Consulte [Visualização de ativos 3D](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md).
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View** drop-down list, tap **[!UICONTROL Card View]**.
+1. No **Adobe Experience Manager**, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Assets]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Navegue até um objeto 3D que deseja renderizar.
 
 1. Toque no cartão do objeto 3D para abri-lo na página de detalhes do ativo.
