@@ -3,9 +3,9 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1552'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,9 @@ A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resp
 
 Após o Tempo [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da [!DNL Assets] Web e da API HTTP. A API retornará uma mensagem de erro 404 se o Tempo [!UICONTROL ligado] estiver no futuro ou Tempo [!UICONTROL desligado] estiver no passado.
 
+>[!CAUTION]
+>
+>[A API HTTP atualiza as propriedades](#update-asset-metadata) de metadados na `jcr` namespace. No entanto, a interface do usuário do Experience Manager atualiza as propriedades de metadados na `dc` namespace.
 
 ## Modelo de dados {#data-model}
 
@@ -66,17 +69,17 @@ Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
 A API HTTP Assets inclui os seguintes recursos:
 
-* Recuperar uma lista de pastas.
-* Criar uma pasta.
-* Criar um ativo.
-* Atualize o binário do ativo.
-* Atualize os metadados do ativo.
-* Crie uma representação de ativo.
-* Atualizar uma representação de ativo.
-* Crie um comentário de ativo.
-* Copie uma pasta ou um ativo.
-* Mova uma pasta ou um ativo.
-* Exclua uma pasta, ativo ou representação.
+* [Recuperar uma lista](#retrieve-a-folder-listing)de pastas.
+* [Criar uma pasta](#create-a-folder).
+* [Criar um ativo](#create-an-asset).
+* [Atualize o binário](#update-asset-binary)do ativo.
+* [Atualize os metadados](#update-asset-metadata)do ativo.
+* [Crie uma representação](#create-an-asset-rendition)de ativo.
+* [Atualizar uma representação](#update-an-asset-rendition)de ativo.
+* [Crie um comentário](#create-an-asset-comment)de ativo.
+* [Copie uma pasta ou um ativo](#copy-a-folder-or-asset).
+* [Mova uma pasta ou um ativo](#move-a-folder-or-asset).
+* [Exclua uma pasta, ativo ou representação](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -102,7 +105,7 @@ Recupera uma representação Siren de uma pasta existente e de suas entidades fi
 
 **Resposta**: A classe da entidade retornada é um ativo ou uma pasta. As propriedades de entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
-## Criar uma pasta {#create-a-folder}
+## Crie uma pasta {#create-a-folder}
 
 Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um nome `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
 
@@ -157,7 +160,7 @@ Atualiza o binário de um ativo (execução com o nome original). Uma atualizaç
 
 Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na `dc:` namespace, a API atualizará a mesma propriedade na `jcr` namespace. A API não sincroniza as propriedades nas duas namespaces.
 
-**Solicitação**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Solicitação**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -165,6 +168,27 @@ Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer prop
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
 * 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+
+### Sincronizar atualização de metadados entre `dc` e `jcr` namespace {#sync-metadata-between-namespaces}
+
+O método da API atualiza as propriedades de metadados na `jcr` namespace. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na `dc` namespace. Para sincronizar os valores de metadados entre `dc` e a `jcr` namespace, você pode criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Criar uma representação de ativo {#create-an-asset-rendition}
 
