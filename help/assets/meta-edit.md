@@ -3,9 +3,9 @@ title: Como editar ou adicionar metadados
 description: Saiba mais sobre os metadados de ativos no AEM Assets e sobre as várias maneiras pelas quais você pode editar os metadados de ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '483'
 ht-degree: 8%
 
 ---
@@ -54,3 +54,11 @@ Você pode adicionar suas próprias namespaces dentro do AEM. Assim como há nam
 
 1. Para adicionar uma namespace, clique ou toque em **[!UICONTROL Novo]** na parte inferior.
 1. Especifique uma namespace personalizada na convenção de namespace XML (especifique a ID na forma de um URI e um prefixo associado para a ID) e clique ou toque em **[!UICONTROL Salvar]**.
+
+## Dicas e limitações {#best-practices-limitations}
+
+* Os metadados são atualizados por interface de usuário sensível ao toque e alteram as propriedades dos metadados na `dc` namespace. Qualquer atualização feita por meio da API HTTP altera as propriedades de metadados na `jcr` namespace. Consulte [como atualizar metadados usando a API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
+
+>[!MORELIKETHIS]
+>
+>* [Sobre metadados e suas necessidades em ativos](metadata.md)
