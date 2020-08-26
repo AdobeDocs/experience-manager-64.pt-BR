@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -33,9 +33,10 @@ A primeira etapa é adicionar uma propriedade de supertipo de recurso ao `/apps/
 Usando o CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nome: `sling:resourceSuperType`
-    * Tipo: ‘String`
-    * Valor: &quot;fundação/componentes/página&quot;
+
+* Nome: `sling:resourceSuperType`
+* Tipo: `String`
+* Valor: `foundation/components/page`
 
 1. Clique em verde **[!UICONTROL [+]Adicionar]**
 1. Clique em **[!UICONTROL Salvar tudo]**
