@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+source-git-commit: 269facfb6351b0b7c73e963ac7c5dc0b57c78a3e
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Há os seguintes casos de uso:
 
 * Obtenha objetos específicos da implementação.
 
-   Por exemplo, uma implementação baseada em JCR da interface genérica fornece acesso ao JCR subjacente [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&quot;
+   Por exemplo, uma implementação baseada em JCR da interface genérica fornece acesso ao JCR subjacente [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Criação de atalhos de objetos que exigem a transmissão de objetos de contexto internos.
 
@@ -57,7 +57,7 @@ Há várias razões para isso, incluindo:
 
 É importante que você manipule a caixa nula com cuidado. Para renderizações jsp, pode ser aceitável que o jsp falhe se isso resultar em um conteúdo vazio.
 
-### Cache {#caching}
+### Caching {#caching}
 
 Para melhorar o desempenho, as implementações podem armazenar em cache o objeto retornado de uma `obj.adaptTo()` chamada. Se o objeto `obj` for o mesmo, o objeto retornado será o mesmo.
 
@@ -84,7 +84,7 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
 
 ### Sling {#sling}
 
-[**O recurso **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)se adapta a:
+[**O recurso**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) se adapta a:
 
 <table> 
  <tbody> 
@@ -120,7 +120,7 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
    <td>Retorna o conteúdo binário de um "arquivo"<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>AuthorizableResourceProvider</code><code>org.apache.sling.jackrabbit.usermanager</code><code>/system/userManager</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Page</code><code>cq:PseudoPage</code></td></tr><tr><td></td><td><code>cq:Component</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td><code>cq:Template</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Tag</code></td></tr><tr><td></td><td><code>cq:Preferences</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
 
-[**O ResourceResolver **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html)adapta-se a:
+[**O ResourceResolver**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) adapta-se a:
 
 <table> 
  <tbody> 
@@ -187,11 +187,11 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
  </tbody> 
 </table>
 
-[**SlingHttpServletRequest **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)adapta-se a:
+[**SlingHttpServletRequest**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) adapta-se a:
 
 Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como fonte em um AdapterFactory personalizado.
 
-[**SlingHttpServletResponse **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)adapta-se a:
+[**SlingHttpServletResponse**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) adapta-se a:
 
 <table> 
  <tbody> 
@@ -204,7 +204,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 #### WCM {#wcm}
 
-[**A página **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)se adapta a:
+[**A página**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) se adapta a:
 
 <table> 
  <tbody> 
@@ -227,7 +227,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
  </tbody> 
 </table>
 
-[**O componente **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)adapta-se a:
+[**O componente**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) adapta-se a:
 
 | [Recurso](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do componente. |
 |---|---|
@@ -235,7 +235,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 | [Nó](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do componente. |
 | ... | Tudo ao qual o recurso do componente pode ser adaptado. |
 
-[**O modelo **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)adapta-se a:
+[**O modelo**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html) adapta-se a:
 
 <table> 
  <tbody> 
@@ -260,7 +260,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 #### Segurança {#security}
 
-[**Autorizável **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),[**Usuário**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) e [**Grupo **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html)se adaptam a:
+[**Autorizável**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**Usuário**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) e [**Grupo**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) se adaptam a:
 
 | [Nó](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retorna o nó inicial do usuário/grupo. |
 |---|---|
@@ -268,7 +268,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 #### DAM {#dam}
 
-[**O ativo **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html)se adapta a:
+[**O ativo**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) se adapta a:
 
 | [Recurso](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do ativo. |
 |---|---|
@@ -277,7 +277,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 #### Marcação com tags {#tagging}
 
-[**A tag **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)se adapta a:
+[**A tag**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) se adapta a:
 
 | [Recurso](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso da tag . |
 |---|---|
