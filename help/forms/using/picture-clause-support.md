@@ -38,7 +38,7 @@ expressão suportada para cláusula de imagem de data:
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{date} Símbolos de Cláusula de Imagem}
+* date{date Símbolos de Cláusula de Imagem}
 
 >[!NOTE]
 >
