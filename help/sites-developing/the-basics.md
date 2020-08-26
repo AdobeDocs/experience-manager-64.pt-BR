@@ -474,6 +474,6 @@ Por exemplo, os sites geralmente são fornecidos em vários idiomas para audiên
    * Impor uma estrutura básica comum e usar conteúdo comum em vários sites.
    * Maximize o uso dos recursos disponíveis.
    * Mantenha uma aparência comum.
-   * Concentre os esforços no gerenciamento do conteúdo que difere entre os sites.
+   * Focalize os esforços no gerenciamento do conteúdo que difere entre os sites.
 
 Para obter mais informações, consulte [Multi Site Manager](/help/sites-administering/msm.md).
