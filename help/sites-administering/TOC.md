@@ -5,10 +5,10 @@ audience: admin-user
 user-guide-title: Guia do usuário de administração do AEM 6.4
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 14%
+source-wordcount: '614'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 14%
 + [Visão geral do Guia do usuário de administração](home.md)
 + Recursos do Sites {#introduction}
    + [Administração do site](msm-and-translation.md)
-   + [Reutilizando conteúdo: Multi Site Manager e Live Copy](msm.md)
+   + [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](msm.md)
    + [Console de Visão Geral do Live Copy](msm-livecopy-overview.md)
    + [Configurar a sincronização da Live Copy](msm-sync.md)
    + [Criando e Sincronizando Live Copies](msm-livecopy.md)
@@ -44,7 +44,7 @@ ht-degree: 14%
    + [Trabalhar com registros](troubleshooting.md)
    + [Configurar o Editor de Rich Text](rich-text-editor.md)
    + [Configurar o componente Vídeo](config-video.md)
-   + [O Editor em Massa](bulk-editor.md)
+   + [O Editor em massa](bulk-editor.md)
    + [Configuração de notificação por email](notification.md)
    + [Configuração do RTE para produção de sites acessíveis](rte-accessible-content.md)
    + [O Verificador de links externos](external-link-checker.md)
@@ -105,7 +105,7 @@ ht-degree: 14%
    + [Conceitos ](concepts.md)
    + [Administração de eCommerce genérico](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Comércio AEM - Prontidão para o RGPD](gdpr-compliance-commerce.md)
 + Integração {#integration}
@@ -149,8 +149,7 @@ ht-degree: 14%
    + [Classificações de Adobe](adobeanalytics-classifications.md)
    + [Integração com o Adobe](search-and-promote.md)
    + [Integração de soluções](integration.md)
-   + [Integração de Públicos alvos com fragmentos de experiência](experience-fragments-target.md)
-   + [Práticas recomendadas para modelos de e-mail](best-practices-for-email-templates.md)
+   + [Integração de públicos alvos com fragmentos de experiência](experience-fragments-target.md)
 + Práticas recomendadas     {#bestpractices}
    + [Práticas recomendadas    ](administer-best-practices.md)
    + [Práticas recomendadas de tradução](tc-bp.md)
@@ -164,5 +163,5 @@ ht-degree: 14%
    + [Administração de tags](tags.md)
    + [O Exportador de Página](page-exporter.md)
    + [Console de marcação da interface clássica](classic-console.md)
-   + [Gestão de conteúdo para telas](content-management-screens.md)
+   + [gestão de conteúdo para telas](content-management-screens.md)
    + [Acesso WebDAV](webdav-access.md)
