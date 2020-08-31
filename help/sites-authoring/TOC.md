@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guia do usuário para criação do AEM 6.4
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: e0b25517821971098978db078b2f205a8a380459
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 # Guia do usuário para criação do AEM 6.4 {#authoring}
 
 + [Visão geral do Guia do usuário de criação](home.md)
-+ tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
++ Tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
    + [Primeiros passos para autores](first-steps.md)
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
    + [Conceito de criação](author.md)
@@ -55,7 +55,6 @@ ht-degree: 89%
    + [Andaime](scaffolding.md)
    + [Configuração dos componentes no Modo de design](default-components-designmode.md)
    + [Componentes fundamentais](default-components-foundation.md)
-   + [Andaime](scaffolding.md)
 + Projetos {#projects}
    + [Projetos](projects.md)
    + [Gerenciamento de projetos](touch-ui-managing-projects.md)
