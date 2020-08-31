@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do usuário do Forms AEM 6.4
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 + [Guia do usuário do Forms AEM 6.4](home.md)
 + Notas de versão {#release-notes-new-features}
    + [Notas de versão](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
-   + [Resumo dos novos recursos](using/whats-new.md)
+   + [Tutorial dos novos recursos](using/whats-new.md)
    + [Recursos obsoletos](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Introdução {#getting-started}
    + [Introdução ao AEM Forms](using/introduction-aem-forms.md)
@@ -28,15 +28,15 @@ ht-degree: 1%
    + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
       + [Tutorial: Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
       + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
-      + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
+      + [formulário: Criar modelo de dados de formulário](using/create-form-data-model.md)
       + [Tutorial: Aplicar regras a campos de formulário adaptáveis l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo do formulário adaptativo](using/style-your-adaptive-form.md)
-   + Tutorial: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
-      + [Tutorial: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
+   + formulário: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
+      + [formulário: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
       + [Tutorial: Planeje a comunicação interativa](using/planning-interactive-communications.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model-tutorial.md)
       + [Tutorial: Criar fragmentos de documento](using/create-document-fragments.md)
-      + [Tutorial: Criar modelos](using/create-templates-print-web.md)
+      + [formulário: l Criar modelos](using/create-templates-print-web.md)
       + [Tutorial: Criar comunicação interativa](using/create-interactive-communication-tutorial.md)
    + Materiais de referência da AEM Forms {#aem-forms-reference-collaterals}
       + [Configurar e configurar sites de referência da AEM Forms](using/setup-reference-sites.md)
@@ -45,7 +45,7 @@ ht-degree: 1%
       + [Apresentação do site de referência de autoatendimento do funcionário](/help/forms/using/employee-self-service-reference-site.md)
       + [Apresentação do site de referência de recrutamento de funcionários](/help/forms/using/employee-recruitment-reference-site.md)
       + [Site de referência de Renovação de Seguro Automático do We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
-      + [Apresentação do site de referência We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
+      + [Apresentação do sítio de referência relativo a We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
       + [Referência a fragmentos de formulário adaptável](using/reference-adaptive-form-fragments.md)
       + [Temas de referência](using/reference-themes.md)
       + [Modelos de carta de referência](using/reference-cm-layout-templates.md)
@@ -95,7 +95,7 @@ ht-degree: 1%
       + [Atualização de uma versão do AEM Forms para AEM 6.4 Forms no JEE para JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
       + [Atualização do LiveCycle ES4 SP1 para Adobe Experience Manager Forms no JEE para JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
       + [Atualização de uma versão do AEM Forms para AEM 6.4 Forms no JEE para chave aberta JBoss](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
-      + [Atualização do LiveCycle ES4 SP1 para AEM Forms no JEE para JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
+      + [Atualização do LiveCycle ES4 SP1 para AEM Forms em JEE para JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
       + [Atualização de uma versão do AEM Forms para AEM 6.4 Forms no JEE para WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
       + [Atualização do LiveCycle ES4 SP1 para AEM Forms no JEE para WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
       + [Atualização de uma versão do AEM Forms para AEM 6.4 Forms no JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
@@ -171,7 +171,7 @@ ht-degree: 1%
    + [Preencher previamente campos de formulário adaptáveis](using/prepopulate-adaptive-form-fields.md)
    + [Uso do SOM expressão em formulários adaptáveis](using/using-som-expressions-adaptive-forms.md)
    + [Adicionar informações dos dados do usuário aos metadados de envio do formulário](using/form-submission-metadata.md)
-   + [Suporte XFA em formulários adaptativos baseados em XDP](using/xfa-api-supported-in-adaptive-form.md)
+   + [Suporte XFA em formulários adaptáveis baseados em XDP](using/xfa-api-supported-in-adaptive-form.md)
    + [Alteração do conteúdo Zero da página no Designer](using/changing-page-zero-content-designer.md)
    + [Conceder acesso ao editor de regras para grupos de usuários selecionados](using/rule-editor-access-user-groups.md)
    + [Usar AEM fluxo de trabalho de tradução para localizar formulários adaptáveis e documento de registro](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
@@ -394,7 +394,7 @@ ht-degree: 1%
    + [Registrar uma transação para implementações personalizadas](using/record-transaction-custom-implementation.md)
 + Ajuda do administrador para AEM Forms no JEE {#administrator-help}
    + Introdução {#get-started}
-      + [Configurações gerais do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
+      + [Administrador geral do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Atualizar o tipo de licença para a implantação](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Configurar e gerenciar domínios {#setup-manage-domains}
       + [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md)
@@ -504,7 +504,6 @@ ht-degree: 1%
       + [Disponibilizar fontes](/help/forms/using/admin-help/make-fonts-available.md)
       + [Especificar fontes a serem incorporadas](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Especificar configurações de segurança](/help/forms/using/admin-help/specify-security-settings.md)
-      + [Alterar o conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md)
    + Configuração do fluxo de trabalho de formulários{#configure-forms-workflow}
       + [Sobre administração e terminologia do processo](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Gerenciamento de processos](/help/forms/using/admin-help/processes.md)
@@ -572,7 +571,7 @@ ht-degree: 1%
    + [Solução de problemas do Relatórios do processo](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referência do desenvolvedor {#developer-reference}
    + [Noções básicas para desenvolvedores](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [Linguagem de modelo HTML](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
+   + [Linguagem de modelo HTML](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
    + [AEM plug-in para depurar formulários adaptativos](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referência da API Java AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [Referência da API Java do AEM Forms em JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
@@ -592,7 +591,7 @@ ht-degree: 1%
          + [QuickStart(SOAP) da API Java do Serviço de Assembler](developing/assembler-service-java-api-quick.md)
          + [start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC](developing/acrobat-reader-dc-extensions-service.md)
          + [Start APIQuick do Serviço de Backup e Restauração](developing/backup-restore-service-api-quick.md)
-         + [Start Forms com código de barras Java APIQuick (SOAP)](developing/barcoded-forms-service-java-api.md)
+         + [Start Java APIQuick do serviço Forms com código de barras (SOAP)](developing/barcoded-forms-service-java-api.md)
          + [Start Java APIQuick (SOAP) de componentes e serviços](developing/components-services-java-api-quick.md)
          + [Converter o QuickStart (SOAP) da API Java do serviço PDF](developing/convert-pdf-service-java-api.md)
          + [QuickStart(SOAP) da API Java do serviço de credenciais](developing/credential-service-java-api-quick.md)
