@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Notas de versão do AEM 6.4
 user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 41%
+source-wordcount: '73'
+ht-degree: 38%
 
 ---
 
@@ -22,11 +22,12 @@ ht-degree: 41%
 + [Notas de versão do AEM Sites](sites.md)
 + [Notas de versão do AEM Assets](assets.md)
 + [Notas de versão do AEM Forms](forms.md)
++ [Instalador de patch AEM Forms JEE](jee-patch-installer-64.md)
 + [Notas de versão do AEM Communities](communities-release-notes.md)
-+ [Notas de versão do AEM 3D](aem3d-release-notes.md)
++ [Notas de versão AEM 3D](aem3d-release-notes.md)
 + [Recursos obsoletos e removidos](deprecated-removed-features.md)
 + [Problemas conhecidos](known-issues.md)
-+ [AEM Foundation e Repository](wcm-platform.md)
++ [AEM Foundation e Repositório](wcm-platform.md)
 + [Status do recurso da interface de toque](touch-ui-features-status.md)
 + [Ferramenta de migração CRX2OAK](crx2oak.md)
 + [Notas de versão do Smart Content Service](smart-content-service-release-notes.md)
