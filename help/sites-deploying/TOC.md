@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guia de implantação do AEM 6.4
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: b9a270eb29e92e98a54b596ba745ef71f73a7b55
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 11%
 + Introdução à plataforma AEM {#introduction}
    + [Introdução à plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
-   + [Elementos do Armazenamento no AEM 6.4](storage-elements-in-aem-6.md)
+   + [Elementos do armazenamento no AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM com MongoDB](aem-with-mongodb.md)
 + Implantar AEM {#deploying}
    + [Implantação e manutenção](deploy.md)
@@ -40,7 +40,7 @@ ht-degree: 11%
    + [Resolução de Problemas](troubleshooting.md)
 + Configuração de AEM {#configuring}
    + [Conceitos básicos de configuração](configuring.md)
-   + [Registro](configure-logging.md)
+   + [Logs](configure-logging.md)
    + [Configuração do OSGi](configuring-osgi.md)
    + [Configurações do OSGi](osgi-configuration-settings.md)
    + [Modos de execução](configure-runmodes.md)
@@ -68,6 +68,7 @@ ht-degree: 11%
    + [Avaliação da complexidade da atualização com o detector de padrões](pattern-detector.md)
    + [Compatibilidade com versões anteriores no AEM 6.4](backward-compatibility.md)
    + [Procedimento de atualização](upgrade-procedure.md)
+   + [Uso da reindexação offline para reduzir o tempo de inatividade durante uma atualização](upgrade-offline-reindexing.md)
    + [Execução de uma atualização no local](in-place-upgrade.md)
    + [Migração de conteúdo ociosa](lazy-content-migration.md)
    + [Uso da ferramenta de migração CRX2Oak](using-crx2oak.md)
@@ -89,7 +90,7 @@ ht-degree: 11%
    + [Reestruturação do repositório para AEM Communities no 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Visão geral do eCommerce](ecommerce.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Práticas recomendadas     {#practices}
