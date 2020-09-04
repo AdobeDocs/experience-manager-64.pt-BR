@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 3%
@@ -84,7 +84,7 @@ Na guia **[!UICONTROL Propriedades]** do `clientlibs` nó, digite a propriedade 
 
 Se apenas estiver usando um recurso em uma página, você poderá incluir a clientlib completa desse recurso diretamente na página, por exemplo, &lt;% ui:includeClientLib categoria=cq.social.hbs.forum&quot; %>
 
-Neste caso, estamos incluindo todos, e assim preferimos os clientlibs SCF mais básicos que são os clientlibs do autor:
+Nesse caso, estamos incluindo todos, e assim preferimos os clientlibs SCF mais básicos que são os clientlibs do autor:
 
 * Nome: **`embed`**
 * Tipo: **`String`**
@@ -124,7 +124,7 @@ Depois que apps.an-scf-sandbox clientlibs é incluído, o componente de comentá
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-A declaração include pertence ao <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> seção da <html> script. O padrão **`foundation head.jsp`** inclui um script que pode ser sobreposto: **`headlibs.jsp`**.
+A instrução include pertence à seção `<head>` do `<html>` script. O padrão **`foundation head.jsp`** inclui um script que pode ser sobreposto: **`headlibs.jsp`**.
 
 **Copie headlibs.jsp e inclua clientlibs:**
 
@@ -132,7 +132,7 @@ A declaração include pertence ao <head><meta http-equiv="Content-Type" content
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Copiar]** (ou selecione Copiar na barra de ferramentas)
 1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Colar]** (ou selecione Colar na barra de ferramentas)
-1. Clique no Duplo **`headlibs.jsp`** para abri-lo
+1. Clique no duplo **`headlibs.jsp`** para abri-lo
 1. Anexar a seguinte linha ao final do arquivo
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
