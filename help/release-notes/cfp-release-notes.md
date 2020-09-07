@@ -4,9 +4,9 @@ description: Notas de versão específicas dos Pacotes de correção cumulativos
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
+source-git-commit: d3721590e3c2dfd2b048f1b5964915a343f95f6d
 workflow-type: tm+mt
-source-wordcount: '3331'
+source-wordcount: '3364'
 ht-degree: 14%
 
 ---
@@ -171,6 +171,7 @@ AEM Cumulative Fix Pack 6.4.8.1 depende do AEM 6.4 Service Pack 8. Portanto, voc
 
 Alguns dos principais destaques do AEM 6.4.8.1 são:
 
+* O acesso anônimo ao CRXDE Lite não é permitido para melhorar a segurança. Em vez disso, os usuários são direcionados para a tela de logon. Veja [se desenvolvendo com CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 * Remoção da integração do Compartilhamento de pacotes com a Adobe Experience Manager.
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.8.21.
 
@@ -180,6 +181,7 @@ O Adobe Experience Manager 6.4.8.1 fornece correções para os seguintes problem
 
 #### Sites {#sites-6481}
 
+* Os usuários anônimos podem acessar os recursos do CRX DE Lite (NPR-33522).
 * Quando o nome de um componente local em um LiveCopy é idêntico ao nome de um componente no blueprint e o componente é lançado do blueprint, o termo _msm_move não é adicionado ao nome do componente local (NPR-33207).
 * Os parâmetros anexados à solicitação original não são incluídos no URL de redirecionamento (NPR-33174).
 * Quando a opção Coral.Select define emptyOption=true ou contém um item padrão com valor = &quot;&quot;, o arquivo dropdownshoide.js encontra um erro: TypeError não detectado: component.getValue não é uma função (NPR-33163).
