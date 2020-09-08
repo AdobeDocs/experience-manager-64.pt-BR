@@ -3,9 +3,9 @@ title: Metadados em cascata
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '980'
 ht-degree: 13%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 13%
 # Cascading Metadata {#cascading-metadata}
 
 Este artigo descreve como definir metadados em cascata para ativos.
+
+>[!CAUTION]
+>
+>Metadados em cascata não são compatíveis com Fragmentos de conteúdo.
 
 Ao capturar as informações de metadados de um ativo, os usuários fornecem informações nos vários campos disponíveis. É possível exibir campos de metadados específicos ou valores de campos que dependem das opções selecionadas nos outros campos. Essa exibição condicional de metadados é chamada de metadados em cascata. Em outras palavras, é possível criar uma dependência entre um campo/valor de metadados específico e um ou mais campos e/ou seus valores.
 
