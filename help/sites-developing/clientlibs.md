@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 50d57997496e6809361277f7025f3858857e14af
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Para obter mais detalhes e exemplos de uso, consulte a [Introdução do document
 
 ### Uso do JSP {#using-jsp}
 
-Adicione uma `ui:includeClientLib` tag ao código JSP para adicionar um link às bibliotecas do cliente na página HTML gerada. Para referenciar as bibliotecas, use o valor da `categories` propriedade do `ui:includeClientLib` nó.
+Adicione uma `ui:includeClientLib` tag ao código JSP para adicionar um link às bibliotecas do cliente na página HTML gerada. Para fazer referência às bibliotecas, use o valor da `categories` propriedade do `ui:includeClientLib` nó.
 
 ```
 <%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
@@ -181,8 +181,8 @@ Em seguida, você define a `allowProxy` propriedade como true `foo` .
 1. Selecione a pasta da biblioteca do cliente e clique em **Criar > Criar arquivo**.
 1. Na caixa Nome do arquivo, digite um dos seguintes nomes de arquivo e clique em OK:
 
-   * **`js.txt`:**Use esse nome de arquivo para gerar um arquivo JavaScript.
-   * **`css.txt`:**Use esse nome de arquivo para gerar uma folha de estilos em cascata.
+   * **`js.txt`:** Use esse nome de arquivo para gerar um arquivo JavaScript.
+   * **`css.txt`:** Use esse nome de arquivo para gerar uma folha de estilos em cascata.
 
 1. Abra o arquivo e digite o seguinte texto para identificar a raiz do caminho dos arquivos de origem:
 
@@ -242,7 +242,6 @@ Em alguns casos, você pode descobrir que o HTML final gerado para a página tí
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
@@ -315,7 +314,7 @@ Por exemplo, a tabela a seguir lista o valor da `channels` propriedade para cada
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` | `[`*sem valor *`]` |
+| `/libs/cq/searchpromote/widgets/themes/default` | `[`*sem valor*`]` |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
