@@ -2,10 +2,10 @@
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas de recursos obsoletos e removidos do Adobe Experience Manager 6.4.
 translation-type: tm+mt
-source-git-commit: 543f66c760d7b25681a79d5df3d8ab6e8c0b2f47
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 27%
+source-wordcount: '1281'
+ht-degree: 26%
 
 ---
 
@@ -23,7 +23,7 @@ Esse processo oferece ao usuário ao menos um ciclo de versão para adaptar sua 
 
 ## Recursos obsoletos {#deprecated-features}
 
-The table below lists features and capabilities that have been marked as deprecated with AEM 6.4. Generally, features that are planned to be removed in a future release are set to deprecated first, with an alternative provided.
+A tabela abaixo lista recursos e recursos que foram marcados como obsoletos com o AEM 6.4. Geralmente, os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma alternativa fornecida.
 
 Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua implementação no momento, bem como a planejar a alteração de sua implementação para usar a alternativa fornecida.
 
@@ -40,6 +40,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 | Forms | Uso obsoleto de JSONObject em Query e OperationOptions. As seguintes APIs estão obsoletas: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Usar a `IValueMap` API |
 | Forms | Serviço da Central Migration Bridge obsoleto. | Nenhuma substituição é oferecida. |
 | Ativos | A descarga de ativos foi substituída a partir do AEM 6.4. |  |
+| Desenvolvedores | Biblioteca de cliente Lodash/underscore. O Adobe não pretende manter e atualizar ainda mais a biblioteca do cliente Lodash/underscore que é enviada como parte da distribuição (Início rápido) | A Adobe recomenda que os clientes que ainda precisam do Lodash/underscore para seus códigos adicionem-no à base de códigos do projeto. |
 
 <!-- Original HTML table that came from helpx during migration.
 
@@ -161,11 +162,11 @@ A tabela abaixo lista recursos e recursos que foram removidos da AEM 6.4. As ver
 | Forms | O formato Export PDF para PDF/E-1 usando o Gerador de PDF foi removido. | O Gerador de PDF continua a oferecer suporte à exportação de PDF para formatos PDF/A-1a/b, PDF/A-2a/b e PDF/A-3a/b. |
 | Forms | O suporte para imagens nos fragmentos do documento foi removido. | As comunicações interativas fornecem a capacidade de usar imagens diretamente em canais impressos e da Web. |
 | Forms | Atualização fora do local | O suporte para executar a atualização fora do local não está disponível |
-| Forms | Integrado para migrações TarMK para DocumentMK | Você pode exportar os dados de um sistema mais antigo e depois importá-los em um sistema de configuração recente. Para obter instruções detalhadas, consulte AEM Forms em documentações de atualização do JEE |
-| Forms | AEM Forms no instalador JEE de 32 bits não disponíveis. | O Adobe parou de enviar AEM Forms no instalador JEE de 32 bits. Você pode continuar usando o instalador de 64 bits para instalar AEM Forms no JEE. |
+| Forms | Integrado para migrações TarMK para DocumentMK | Você pode exportar os dados de um sistema mais antigo e depois importá-los em um sistema de configuração recente. Para obter instruções detalhadas, consulte Documentação de atualização do AEM Forms sobre JEE |
+| Forms | O instalador AEM Forms em 32 bits JEE não está disponível. | O Adobe parou de enviar o AEM Forms no instalador JEE de 32 bits. Você pode continuar usando o instalador de 64 bits para instalar o AEM Forms no JEE. |
 | Forms | Remoção do suporte para o uso de imagens DAM no Componente de fragmento do Documento. | Você pode usar o componente Imagem e Gráfico no canal de impressão da comunicação interativa. Se você estiver usando um componente de fragmento de documento adaptável em formulários adaptáveis, ele deixará de funcionar após a atualização para AEM 6.4 Forms. |
-| Forms | Removido o recurso Documentos adaptáveis | Você pode usar o recurso de comunicações interativas para criar comunicações impressas e baseadas na Web. Se você usar Documentos adaptativos, instale o pacote de compatibilidade para continuar usando os documentos adaptáveis existentes |
-| Forms | AEM Forms removidos na landing page específica de JEE. | AEM Forms na landing page JEE são substituídas por AEM landing page (/aem/start.html) |
+| Forms | Removido o recurso Documentos adaptáveis | Você pode usar o recurso de comunicações interativas para criar comunicações impressas e baseadas na Web. Se você usar Documentos adaptáveis, instale o pacote de compatibilidade para continuar usando os documentos adaptáveis existentes |
+| Forms | AEM Forms removido na landing page específica de JEE. | A landing page AEM Forms no JEE é substituída por AEM landing page (/aem/start.html) |
 | Forms | Remoção do suporte para Captcha padrão | Use o serviço reCAPTCHA do Google. |
 | Forms | Remoção do suporte para campos flash no AEM Designer. AEM Designer não permite a edição de campos flash usados em um formulário. | Você pode usar AEM Designer lançado para uma versão anterior para editar esses formulários. |
 | Communities | O suporte para verificação do Captcha foi removido. | Use a integração de captcha personalizada (como reCAPTCHA do Google) para verificação. |
