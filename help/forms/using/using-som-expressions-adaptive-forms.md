@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Os formulários adaptáveis são modelados como AEM Página, que é representada como estrutura de conteúdo JCR no repositório AEM. O elemento principal da estrutura de conteúdo é o nó guideContainer. Abaixo de guideContainer, há um rootPanel que pode conter campos e painel aninhados.
 
-Você pode usar um SOM (Modelo de objeto de script) para fazer referência a valores, propriedades e métodos em um DOM (Modelo de objeto de documento) específico. Um DOM organiza os objetos de memória e as propriedades em uma hierarquia de árvore. Uma expressão SOM faz referência aos elementos Campos/Desenhar e painéis.
+Você pode usar um SOM (Modelo de objeto de script) para fazer referência a valores, propriedades e métodos em um DOM (Modelo de objeto de documento) específico. Um DOM organiza os objetos de memória e as propriedades em uma hierarquia de árvore. Uma expressão SOM faz referência aos elementos Campos/Desenhar e aos painéis.
 
 A imagem a seguir descreve uma estrutura de nó à qual um formulário adaptável se traduz ao adicionar componentes a um formulário. Por exemplo, você pode adicionar um painel ao painel raiz e um botão de opção no painel que é transformado em DOM no tempo de execução. A Expressão SOM do campo de botão de opção em forma adaptável é especificada como `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
