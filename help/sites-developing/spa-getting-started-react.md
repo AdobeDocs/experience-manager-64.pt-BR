@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 1%
@@ -63,9 +63,9 @@ O `package.json` arquivo define os requisitos do pacote SPA geral. As dependênc
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -123,9 +123,9 @@ Na verdade, a criação do aplicativo aproveita o [Webpack](https://webpack.js.o
 
 Depois de criado, o pacote pode ser carregado para uma instância AEM.
 
-### AEM Project Archetype {#aem-project-archetype}
+### Arquétipo de projeto do AEM{#aem-project-archetype}
 
-Qualquer projeto AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
+Qualquer projeto AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 
@@ -139,10 +139,10 @@ Um componente de imagem simplificado é usado como exemplo, mas todos os compone
 
 O ponto de entrada no SPA é, claro, o `index.js` arquivo mostrado aqui simplificado para focar no conteúdo importante.
 
-```
+```javascript
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -154,7 +154,7 @@ ReactDOM.render(
 });
 ```
 
-A função principal do é `index.js` aproveitar a `ReactDOM.render` função para determinar onde o DOM deve injetar o aplicativo.
+A função principal do é `index.js` alavancar a `ReactDOM.render` função para determinar onde o DOM deve injetar o aplicativo.
 
 Este é um uso padrão desta função, não exclusivo para este aplicativo de exemplo.
 
@@ -167,7 +167,7 @@ Quando o componente é instanciado estaticamente usando o modelo de componente (
 Ao renderizar o aplicativo, `index.js` as chamadas `App.js`, que são mostradas aqui em uma versão simplificada para focar no conteúdo importante.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -185,7 +185,7 @@ export default withModel(App);
 Ao renderizar a página, `App.js` as chamadas `Page.js` listadas aqui em uma versão simplificada.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -206,7 +206,7 @@ Com a página renderizada, os componentes, como `Image.js` mostrado aqui, podem 
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -249,7 +249,7 @@ Você pode exportar um componente e mantê-lo editável.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
