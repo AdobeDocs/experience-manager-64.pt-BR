@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário do AEM 6.4 Mobile
+breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 6%
@@ -27,7 +28,7 @@ ht-degree: 6%
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gerenciamento de conteúdo](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Publicar conteúdo não publicado](mobile-on-demand-publishing-unpublishing.md)
-   + [Painel de aplicativos AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
+   + [painel de aplicativos AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
    + [Ações de criação e configuração do aplicativo](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gerenciamento de artigos](mobile-on-demand-managing-articles.md)
    + [Upload de recursos compartilhados](mobile-on-demand-shared-resources.md)
