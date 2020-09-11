@@ -3,7 +3,7 @@ title: Configurar o AEM Assets com o Brand Portal
 description: 'Saiba como configurar o AEM Assets com o Brand Portal para publicar ativos e coleções no Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
+source-git-commit: f9993c7a1a7be95cf4f2652f32e71f370ff3c727
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 47%
@@ -269,6 +269,7 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
    >[!NOTE]
    >
    >Evite desativar qualquer um dos agentes de replicação, pois isso pode causar falha na replicação de alguns ativos.
+   >
    >Verifique se todos os quatro agentes de replicação estão configurados para evitar o erro de tempo limite. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 O Brand Portal foi configurado com êxito com sua instância do autor do AEM Assets. Agora você pode:
