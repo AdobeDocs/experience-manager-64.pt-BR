@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 0%
@@ -49,7 +49,7 @@ A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por 
 
 Em nome da ZPE, abstrai a recuperação e a gestão da estrutura JSON que representa a estrutura real do conteúdo. Também é responsável por sincronizar com o SPA para informá-lo quando ele precisa renderizar novamente seus componentes.
 
-Consulte o pacote NPM [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+Consulte o pacote NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Ao inicializar o aplicativo, `PageModelManager`a biblioteca primeiro carrega o modelo raiz fornecido do aplicativo (por meio de parâmetro, meta propriedade ou URL atual). Se a biblioteca identificar que o modelo da página atual não faz parte do modelo raiz, ele o busca e o inclui como o modelo de uma página secundária.
 
@@ -99,14 +99,14 @@ A separação de preocupações ajuda a facilitar a implementação do projeto. 
 
 Para facilitar a interoperabilidade das bibliotecas, o Adobe aconselha o módulo específico da estrutura a agrupar as seguintes bibliotecas. Se necessário, a camada pode encapsular e adaptar as APIs subjacentes antes de expô-las ao projeto.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementações {#implementations}
 
 #### Reagir {#react}
 
-módulo npm: [@adobe/cq-response-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+módulo npm: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angular {#angular}
 
@@ -169,7 +169,7 @@ O componente de Grade responsiva deve vir pré-mapeado para sua AEM contrapartid
 * `gridClassNames:` Nomes de classe fornecidos para a grade responsiva
 * `columnClassNames:` Nomes de classe fornecidos para a coluna responsiva
 
-Consulte também o recurso npm [@adobe/cq-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+Consulte também o recurso npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Espaço reservado da grade responsiva {#placeholder-of-the-reponsive-grid}
 
