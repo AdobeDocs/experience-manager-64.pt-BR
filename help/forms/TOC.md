@@ -4,9 +4,10 @@ product: adobe experience manager
 sub-product: 'formulários '
 audience: end-user
 user-guide-title: Guia do usuário do Forms AEM 6.4
+breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 + [Guia do usuário do Forms AEM 6.4](home.md)
 + Notas de versão {#release-notes-new-features}
    + [Notas de versão](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
-   + [Tutorial dos novos recursos](using/whats-new.md)
+   + [Resumo dos novos recursos](using/whats-new.md)
    + [Recursos obsoletos](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Introdução {#getting-started}
    + [Introdução ao AEM Forms](using/introduction-aem-forms.md)
@@ -28,16 +29,16 @@ ht-degree: 1%
    + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
       + [Tutorial: Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
       + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
-      + [formulário: Criar modelo de dados de formulário](using/create-form-data-model.md)
+      + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
       + [Tutorial: Aplicar regras a campos de formulário adaptáveis l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo do formulário adaptativo](using/style-your-adaptive-form.md)
-   + formulário: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
-      + [formulário: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
-      + [Tutorial: Planeje a comunicação interativa](using/planning-interactive-communications.md)
+   + Tutorial: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
+      + [Tutorial: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
+      + [formulário: Planeje a comunicação interativa](using/planning-interactive-communications.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model-tutorial.md)
       + [Tutorial: Criar fragmentos de documento](using/create-document-fragments.md)
-      + [formulário: l Criar modelos](using/create-templates-print-web.md)
-      + [Tutorial: Criar comunicação interativa](using/create-interactive-communication-tutorial.md)
+      + [Tutorial: Criar modelos](using/create-templates-print-web.md)
+      + [formulário: A criação de comunicação interativa](using/create-interactive-communication-tutorial.md)
    + Materiais de referência da AEM Forms {#aem-forms-reference-collaterals}
       + [Configurar e configurar sites de referência da AEM Forms](using/setup-reference-sites.md)
       + [Apresentação do site de referência do We.Finance](using/finance-reference-site-walkthrough.md)
@@ -394,7 +395,7 @@ ht-degree: 1%
    + [Registrar uma transação para implementações personalizadas](using/record-transaction-custom-implementation.md)
 + Ajuda do administrador para AEM Forms no JEE {#administrator-help}
    + Introdução {#get-started}
-      + [Administrador geral do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
+      + [Configurações gerais do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Atualizar o tipo de licença para a implantação](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Configurar e gerenciar domínios {#setup-manage-domains}
       + [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md)
