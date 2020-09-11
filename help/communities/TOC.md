@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário do AEM 6.4 Communities
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 7%
@@ -90,9 +91,9 @@ ht-degree: 7%
    + [Personalização do servidor](server-customize.md)
    + [Personalização do cliente](client-customize.md)
    + [Auxiliares de barras de mão SCF](handlebars-helpers.md)
-   + [Visão geral do provedor de recursos do Armazenamento](srp.md)
+   + [Visão geral do provedor de recursos do armazenamento](srp.md)
    + [Princípios básicos do site da comunidade](sites-for-developers.md)
-   + [Princípios básicos de fluxo de Atividade](essentials-activities.md)
+   + [Princípios básicos de fluxo de atividade](essentials-activities.md)
    + [Essenciais de atribuições](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Essenciais do calendário](calendar-basics-for-developers.md)
@@ -143,7 +144,7 @@ ht-degree: 7%
 + Criação {#authoring}
    + [Componentes das comunidades](author-communities.md) 
    + [Componentes básicos das comunidades](basics.md)
-   + [Recurso de fluxos de Atividade](activities.md)
+   + [Recurso de fluxos de atividade](activities.md)
    + [Recurso Atribuições](assignments.md)
    + [Recurso do blog](blog-feature.md)
    + [Recurso de calendário](calendar.md)
@@ -162,7 +163,7 @@ ht-degree: 7%
    + [Usando o Resumo de Revisões e Revisões (Exibição)](reviews.md)
    + [Recurso de pesquisa](search.md)
    + [Uso do gráfico social](socialgraph.md)
-   + [Tendências de Atividade](trends.md)
+   + [Tendências de atividade](trends.md)
    + [Uso da Nuvem de tags sociais](tagcloud.md)
    + [Uso da votação](voting.md)
    + [Criar uma página de amostra](create-sample-page.md)
