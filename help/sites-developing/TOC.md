@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guia do usuário para desenvolvimento do AEM 6.4
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 10%
 
 ---
@@ -48,8 +48,8 @@ ht-degree: 10%
    + [Criando um novo componente de campo da interface do usuário do Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
       + [Implementação de um Avaliador de Predicado Personalizado para o Construtor de Query](implementing-custom-predicate-evaluator.md)
-      + [Referência de previsão do Construtor de Query](querybuilder-predicate-reference.md)
-      + [API do Construtor de Query](querybuilder-api.md)
+      + [Referência de previsão do Construtor de query](querybuilder-predicate-reference.md)
+      + [API do Construtor de query](querybuilder-api.md)
    + Marcação com tags{#tagging}
       + [Marcação com tags](tags.md)
       + [Estrutura de marcação AEM](framework.md)
@@ -70,7 +70,7 @@ ht-degree: 10%
       + [Desenvolvimento (genérico)](generic.md)
       + [Desenvolvimento com o SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componentes{#components}
-   + [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+   + [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
    + [Sistema de estilos](/help/sites-authoring/style-system.md)
    + [Visão geral dos componentes](components.md)
    + [Componentes AEM - Noções básicas](components-basics.md)
@@ -86,7 +86,7 @@ ht-degree: 10%
    + [Testando sua interface de usuário](hobbes.md)
    + [Componentes para fragmentos de conteúdo](components-content-fragments.md)
    + [Obter informações da página no formato JSON](pageinfo.md)
-   + Internacionalização{#internationalization}
+   + internacionalização{#internationalization}
       + [Internacionalização de componentes](i18n.md)
       + [Internacionalização de strings de interface](i18n-dev.md)
       + [Uso do tradutor para gerenciar dicionários](i18n-translator.md)
@@ -114,7 +114,7 @@ ht-degree: 10%
       + [Roteamento de modelo SPA](spa-routing.md)
       + [Integração de SPA e Adobe Experience Platform Launch](spa-launch.md)
       + [Renderização do SPA e do servidor](spa-ssr.md)
-      + [Referências da API Javascript do SPA](spa-reference-materials.md)
+      + [Materiais de referência SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Fragmentos de conteúdo](/help/assets/content-fragments.md)
    + [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)
