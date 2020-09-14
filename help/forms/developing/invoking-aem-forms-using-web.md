@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: d731d290738403f41e601da8e9bdb9bd3b94bcd4
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '9984'
 ht-degree: 0%
@@ -224,7 +224,7 @@ Atribua valores a campos que pertencem à `BLOB` instância da seguinte forma:
 
 O protocolo de transmissão para `BLOB` objetos retornados depende de vários fatores, que são considerados na seguinte ordem, parando quando a condição principal é atendida:
 
-1. **O URL do Público alvo especifica o protocolo** de transmissão. Se o URL do público alvo especificado na invocação SOAP contiver o parâmetro `blob="`*BLOB_TYPE *&quot;, então* BLOB_TYPE *determinará o protocolo de transmissão.* BLOB_TYPE *é um espaço reservado para base64, dime, mime, http, mtom ou swaref.
+1. **O URL do público alvo especifica o protocolo** de transmissão. Se o URL do público alvo especificado na invocação SOAP contiver o parâmetro `blob="`*BLOB_TYPE*&quot;, então *BLOB_TYPE* determinará o protocolo de transmissão. *BLOB_TYPE* é um espaço reservado para base64, dime, mime, http, mtom ou swaref.
 1. **O terminal SOAP do serviço é Smart**. Se as seguintes condições forem verdadeiras, os documentos de saída serão retornados usando o mesmo protocolo de transmissão que os documentos de entrada:
 
    * O parâmetro de ponto final SOAP do serviço Protocolo padrão para objetos de blob de saída está definido como Inteligente.
@@ -372,7 +372,7 @@ Você pode usar o JAX-WS para converter um serviço Forms WSDL em classes proxy 
 
    * Adicione o diretório JDK bin ao caminho da classe.
    * Adicione o diretório JRE bin ao caminho da classe. Esse compartimento está localizado no diretório [*JDK_INSTALL_LOCATION*]/jre.
-   * Defina a variável de `JAVA_HOME` ambiente no diretório em que você instalou o JDK.
+   * Defina a variável `JAVA_HOME` ambiente para o diretório onde você instalou o JDK.
 
    O JDK 1.6 inclui o programa wsimport usado no arquivo build.xml. O JDK 1.5 não inclui esse programa.
 
@@ -837,7 +837,7 @@ Considere o `MyApplication/EncryptDocument` processo que aceita um documento PDF
 
 [Start rápido: Invocar um serviço usando MTOM em um projeto .NET](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-mtom-in-a-net-project)
 
-[Acesso a vários serviços usando serviços da Web](#accessing-multiple-services-using-web-services)
+[Acessar vários serviços usando serviços da Web](#accessing-multiple-services-using-web-services)
 
 [Criação de um aplicativo da Web ASP.NET que chama um processo de vida longa centrado em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process)
 
@@ -1052,7 +1052,7 @@ Esse processo não se baseia em um processo AEM Forms existente. Para seguir com
 
 >[!NOTE]
 >
->Invocar operações de serviço AEM Forms usando DIME está obsoleto. Recomenda-se a utilização de MTOM. (Consulte [Invocando o AEM Forms usando o MTOM](#invoking-aem-forms-using-mtom).)
+>Invocar operações de serviço AEM Forms usando DIME está obsoleto. Recomenda-se usar MTOM. (Consulte [Invocando o AEM Forms usando o MTOM](#invoking-aem-forms-using-mtom).)
 
 ### Criação de um projeto .NET que usa DIME {#creating-a-net-project-that-uses-dime}
 
@@ -1507,12 +1507,12 @@ Para garantir que a invocação assíncrona funcione, modifique o valor do URL d
 A lista a seguir especifica outros serviços que precisam de um arquivo de vínculo personalizado quando chamados de forma assíncrona:
 
 * PDFG3D
-* Gerenciador de Tarefas
+* Gerenciador de tarefas
 * Gerenciador de aplicativos
 * Gerenciador de diretório
 * Distiller
 * Rights Management
-* Gerenciamento de Documentos
+* Gerenciamento de documentos
 
 ### Diferenças nos servidores de aplicativos J2EE {#differences-in-j2ee-application-servers}
 
@@ -1520,7 +1520,7 @@ A lista a seguir especifica outros serviços que precisam de um arquivo de vínc
 
 Alguns tipos de dados complexos da AEM Forms, como `PrincipalReference`o, são definidos de forma diferente quando a AEM Forms é implantada no WebSphere em comparação ao JBoss Application Server. As diferenças nos JDKs usados pelos diferentes serviços de aplicativos J2EE são a razão pela qual há diferenças nas definições de WSDL. Como resultado, use bibliotecas de proxy que são geradas do mesmo servidor de aplicativos J2EE.
 
-### Acesso a vários serviços usando serviços da Web {#accessing-multiple-services-using-web-services}
+### Acessar vários serviços usando serviços da Web {#accessing-multiple-services-using-web-services}
 
 Devido a conflitos de namespace, objetos de dados não podem ser compartilhados entre vários WSDLs de serviço. Diferentes serviços podem compartilhar tipos de dados e, portanto, os serviços compartilham a definição desses tipos nas WSDLs. Por exemplo, não é possível adicionar dois assemblies cliente .NET que contêm um tipo de `BLOB` dados ao mesmo projeto cliente .NET. Se você tentar fazer isso, ocorrerá um erro de compilação.
 
