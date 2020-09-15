@@ -4,10 +4,10 @@ description: Notas de versão específicas dos Pacotes de correção cumulativos
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5989421ee1207880462fd1eaefc1a9714061307e
+source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
 workflow-type: tm+mt
-source-wordcount: '3362'
-ht-degree: 14%
+source-wordcount: '3402'
+ht-degree: 13%
 
 ---
 
@@ -361,7 +361,7 @@ For information about installing the cumulative installer for AEM Forms JEE and 
 
 ### Uber Jar {#uber-jar}
 
-The Uber Jar for AEM 6.4.8.2 is available in the [Adobe Public Maven repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
+The Uber Jar for AEM 6.4.8.2 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
 
 To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -373,6 +373,10 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>A partir desta versão, o UberJar e outros artefatos relacionados estão disponíveis no Repositório Central Maven em vez do repositório do Adobe Public Maven (repo.adobe.com). O arquivo UberJar principal foi renomeado para `uber-jar-<version>.jar`. Como resultado, não há nenhum `classifier`, com `apis` o valor, para a `dependency` tag .
 
 ## Recursos removidos/obsoletos {#removed-deprecated-features}
 
