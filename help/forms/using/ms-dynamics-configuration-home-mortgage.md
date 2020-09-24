@@ -5,10 +5,10 @@ description: Saiba como aproveitar os serviços do Microsoft® Dynamics 365 atra
 seo-description: Saiba como aproveitar os serviços do Microsoft® Dynamics 365 através de formulários adaptáveis para o fluxo de trabalho hipotecário residencial do site de Referência do We.Finance
 uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: Configuration
+topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Saiba como aproveitar os serviços do Microsoft® Dynamics 365 através de formu
 
 O Microsoft® Dynamics 365 é um software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning, gerenciamento de relacionamento com o cliente) que fornece soluções corporativas para criar e gerenciar contas, contatos, clientes potenciais, oportunidades e casos de clientes.
 
-A AEM Forms fornece um serviço em nuvem para integrar o Dynamics 365 com o módulo Integração [de dados da](/help/forms/using/data-integration.md) Forms. A apresentação do aplicativo [Home Mortgage do cenário com o Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) mostra como um cliente usa o site de referência We.Finance para solicitar um empréstimo quando o site está usando o Microsoft® Dynamics for Forms Data Integration. Antes de poder usar a apresentação do aplicativo Home Mortgage com o cenário Microsoft® Dynamics, é necessário configurar o Microsoft® Dynamics 365 para ser usado com o site de referência We.Finance.
+A AEM Forms fornece um serviço em nuvem para integrar o Dynamics 365 com o módulo Integração [de dados da](/help/forms/using/data-integration.md) Forms. A apresentação do aplicativo [Home Mortgage com o Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) mostra como um cliente usa o site de referência We.Finance para solicitar um empréstimo quando o site estiver usando o Microsoft® Dynamics for Forms Data Integration. Antes de poder usar a apresentação do aplicativo Home Mortgage com o cenário Microsoft® Dynamics, é necessário configurar o Microsoft® Dynamics 365 para ser usado com o site de referência We.Finance.
 
 ## Pré-requisitos {#prerequisites}
 
