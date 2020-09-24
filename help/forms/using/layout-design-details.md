@@ -6,10 +6,10 @@ seo-description: Detalhes do design de layout explica como você pode criar layo
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 0%
@@ -106,7 +106,7 @@ Use um campo se desejar capturar os dados do módulo ou os dados do elemento do 
   </tr> 
   <tr> 
    <td><p>O texto é continuado</p> </td> 
-   <td><p>Campos de texto e campos de imagem são usados em páginas principais. Páginas Principais não podem usar subformulários como áreas de público alvo.</p> </td> 
+   <td><p>Campos de texto e campos de imagem são usados em páginas principais. Páginas principais não podem usar subformulários como áreas de público alvo.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Os objetos são agrupados e organizados sem vincular o subformulário a um elemento de dados</p> </td> 
