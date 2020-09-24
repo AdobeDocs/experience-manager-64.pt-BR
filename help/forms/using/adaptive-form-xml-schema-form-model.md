@@ -5,11 +5,11 @@ description: Formulários adaptáveis podem usar o schema XML como modelo de for
 seo-description: Formulários adaptáveis podem usar o schema XML como modelo de formulário, permitindo que você aproveite os modelos XSD existentes para criar formulários adaptáveis. Você pode arrastar e soltar elementos do schema do XSD para o formulário adaptável.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 5%
@@ -24,7 +24,7 @@ ht-degree: 5%
 A criação de um formulário adaptável usando um schema XML como seu modelo de formulário requer uma compreensão básica dos schemas XML. Além disso, é recomendável ler o seguinte conteúdo antes deste artigo.
 
 * [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md)
-* [schema XML](https://www.w3.org/TR/xmlschema-2/)
+* [SCHEMA XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Uso de um schema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
 
@@ -136,7 +136,7 @@ Aqui está um exemplo de um schema XML.
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>propriedade Schema</strong></th> 
+   <th><strong>propriedade schema</strong></th> 
    <th><strong>Usar em forma adaptável</strong></th> 
    <th><strong>Suportado em </strong></th> 
   </tr> 
@@ -182,7 +182,7 @@ Por exemplo, se você adicionar o elemento `userFirstName` schema, a legenda ger
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> propriedade Schema</strong></p> </td> 
+   <td><p><strong> propriedade schema</strong></p> </td> 
    <td><p><strong>Tipo de dados</strong></p> </td> 
    <td><p><strong>Descrição</strong></p> </td> 
    <td><p><strong>Componente</strong></p> </td> 
