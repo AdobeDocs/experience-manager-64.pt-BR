@@ -6,10 +6,10 @@ seo-description: 'Usando condições embutidas e repetidas em Comunicações int
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: interactive-communications
+topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Depois que você incluir o fragmento de texto em uma Comunicação interativa e 
 
 1. Faça o seguinte para criar uma condição para avaliar se o texto selecionado/condicionado aparece na carta e, em seguida, toque na marca de seleção para salvar a expressão:
 
-   Toque no Duplo em um elemento DD para inseri-lo na condição. Insira o operador apropriado e construa a seguinte condição na caixa de diálogo.
+   Toque no duplo em um elemento DD para inseri-lo na condição. Insira o operador apropriado e construa a seguinte condição na caixa de diálogo.
 
    ```java
    ${DD_creditcard_Gender=="Male"}
