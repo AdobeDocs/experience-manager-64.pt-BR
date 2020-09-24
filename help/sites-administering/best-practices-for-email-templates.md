@@ -7,10 +7,10 @@ uuid: 714090bd-a742-4004-a968-aebd8fd03e04
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: best-practices, integration
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 1%
@@ -73,7 +73,7 @@ Verifique se ele está em uma página principal:
    <td>No que diz respeito aos estilos CSS usados para ilustrar o design de demonstração, os query de mídia estão sendo usados para oferta de uma versão compatível com dispositivos móveis.</td> 
   </tr> 
   <tr> 
-   <td>O CSS em linha é melhor do que colocar todos os CSS no início.</td> 
+   <td>O CSS em linha é melhor do que colocar todo o CSS no início.</td> 
    <td><p>Para demonstrar melhor a estrutura HTML subjacente e facilitar a possibilidade de personalizar a estrutura do boletim informativo, apenas algumas definições de CSS foram incorporadas.</p> <p>Os estilos básicos e as variações de modelo foram extraídos para um bloco de estilos no &lt;head&gt; da página. No envio final do boletim informativo, essas definições de CSS devem ser incorporadas no HTML. Está planejado um mecanismo automático de infiltração, mas atualmente não está disponível.</p> </td> 
   </tr> 
   <tr> 
@@ -127,7 +127,7 @@ Verifique se ele está em uma página principal:
 | Não se incomode com JavaScript ou Flash - essas tecnologias geralmente não são suportadas pelos clientes de e-mail. | Nem o JavaScript nem o Flash são usados no modelo do boletim informativo. |
 | Adicione uma versão de texto simples para envio de várias partes. | Um novo widget foi criado nas propriedades da página para extrair facilmente uma versão de texto simples do conteúdo da página. Isso pode ser usado como ponto de partida para a versão final de texto simples. |
 
-## Modelos e exemplos de boletins informativos de Campanha {#campaign-newsletter-templates-and-examples}
+## Modelos e exemplos de boletins informativos de campanha {#campaign-newsletter-templates-and-examples}
 
 AEM vem com vários modelos e componentes prontos para uso para criar newsletters de campanha. Você pode usar esses modelos e componentes para criar seus boletins personalizados.
 
