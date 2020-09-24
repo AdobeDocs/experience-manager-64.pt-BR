@@ -7,10 +7,10 @@ uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: null
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 1%
@@ -26,16 +26,16 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 
 * Planeje cuidadosamente a estrutura e os fluxos **** de conteúdo antes de iniciar a implementação.
 * **Personalize o máximo necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implementação), a prática recomendada para o desempenho, a confiabilidade e a capacidade de atualização do seu site é minimizar a personalização.
-* Estabeleça um modelo de **governança** precocemente e treine os usuários em conformidade, para garantir o sucesso. Uma prática recomendada de um ponto de visualização de controle é **minimizar a autoridade que os produtores de conteúdo local têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas cópias online. This is because un-governed, chained inheritances can significantly increase the complexity of a MSM structure and compromise its performance and reliability.
+* Estabeleça um modelo de **governança** precocemente e treine os usuários em conformidade, para garantir o sucesso. Uma prática recomendada de um ponto de visualização de controle é **minimizar a autoridade que os produtores de conteúdo local têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas cópias online. Isso ocorre porque heranças encadeadas e não governadas podem aumentar significativamente a complexidade de uma estrutura MSM e comprometer seu desempenho e confiabilidade.
 
-* Once a plan exists for your structure, content flows, automation and governance - **prototype and thoroughly test your system**, before starting live implementation.
+* Quando existir um plano para sua estrutura, fluxos de conteúdo, automação e controle - **protótipo e teste minuciosamente seu sistema**, antes de iniciar a implementação ativa.
 * Lembre-se de que a **Adobe Consulting e os Integradores** de sistemas líderes têm um planejamento de experiência profunda e implementam a automação de conteúdo com a MSM, para que eles possam ajudá-lo a começar a usar o projeto MSM e toda a implementação.
 
 >[!NOTE]
 >
 >Mais informações sobre como trabalhar com MSM estão disponíveis nos artigos da Base de conhecimento:
 >
->* [MSM FAQ](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
+>* [Perguntas frequentes do MSM](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
 >* [Solução de problemas de MSM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
 
 >
@@ -47,7 +47,7 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 >Você também pode usar o componente [](/help/sites-authoring/default-components-foundation.md#reference) Referência para reutilizar uma única página ou parágrafo. No entanto, lembre-se:
 >
 >* O MSM é mais flexível e permite controle detalhado sobre qual conteúdo é sincronizado e quando.
->* [Agora, os componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais são recomendados pelos componentes básicos.
+>* [Agora, os componentes](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) principais são recomendados pelos componentes básicos.
 
 >
 
@@ -61,7 +61,7 @@ Os benefícios adicionais do uso de uma configuração de blueprint são:
 
 * Permita que o autor use a opção **Rollout** em um blueprint - para (explicitamente) modificações de envio para cópias online herdadas deste blueprint.
 * Permitir que o autor use **Criar site**; isso permite que o usuário selecione facilmente os idiomas e configure a estrutura da live copy.
-* Define a default rollout configuration for live copies that have a relationship with the blueprint.
+* Defina uma configuração padrão de implementação para cópias online que tenham uma relação com o blueprint.
 
 Caso uma configuração de blueprint não seja mencionada, as rotações só podem ser iniciadas a partir das próprias cópias ativas, essencialmente retirando o conteúdo da fonte.
 
@@ -74,7 +74,7 @@ Em geral, a regra de implantação no MSM em relação à sincronização de com
 * Os componentes são implantados sincronizando quaisquer recursos contidos no blueprint.
 * Container sincronizam somente o recurso atual.
 
-Isso significa que os componentes são tratados como uma agregação, e em um lançamento o próprio componente e todos os seus filhos são substituídos pelos componentes do projeto. Isso significa que, se um recurso for adicionado localmente a esse componente, ele será perdido para o conteúdo do blueprint na implementação.
+Isso significa que os componentes são tratados como uma agregação, e em um lançamento o próprio componente e todos os seus filhos são substituídos pelos componentes do projeto. Isso significa que, se um recurso for adicionado localmente a esse componente, ele será perdido para o conteúdo do blueprint no lançamento.
 
 Para suportar o aninhamento de componentes, de modo que os componentes adicionados localmente sejam mantidos em uma implementação, o componente deve ser declarado como um container. Como exemplo, o parsys padrão é declarado como um container para que ele possa suportar conteúdo adicionado localmente.
 
@@ -133,7 +133,7 @@ As modificações na estrutura do conteúdo em uma árvore de blueprint/origem s
 
 * **A criação** de novas páginas em um blueprint resultará na criação das páginas correspondentes em cópias online após a implantação com a configuração padrão de implantação.
 
-* **A exclusão** de páginas em um blueprint resultará na exclusão de páginas correspondentes de cópias online após a implantação com a configuração padrão de implementação.
+* **A exclusão** de páginas em um blueprint resultará na exclusão de páginas correspondentes de cópias online após a implantação com a configuração padrão de implantação.
 
 * **Mover** páginas em um blueprint **não** resultará na movimentação das páginas correspondentes em cópias online após a implantação com a configuração padrão de roll-out:
 
