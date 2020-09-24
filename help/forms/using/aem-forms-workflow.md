@@ -5,11 +5,11 @@ description: Use o AEM Forms Workflow para automatizar e criar rapidamente revis
 seo-description: Use o AEM Forms Workflow para automatizar e criar rapidamente revisões e aprovações, para os serviços de documentos de start (por exemplo, para converter um documento PDF em outro formato), integrar-se ao fluxo de trabalho de assinatura da Adobe Sign e muito mais.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: document_services
+topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Juntamente com workflows de revisão e aprovação de audiências internas e ext
 
 Você pode usar AEM Workflows para criar rapidamente workflows adaptáveis baseados em formulários. Esses workflows podem ser usados para revisão e aprovações, fluxos de processos de negócios, para serviços de documentos de start, integração com fluxo de trabalho de assinatura da Adobe Sign e operações semelhantes. Por exemplo, o processamento de aplicativos de cartão de crédito, os funcionários deixam workflows de aprovação, salvando um formulário como um documento PDF. Além disso, esses workflows podem ser usados dentro de uma organização ou através de um firewall de rede.
 
-Com o fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente workflows para várias tarefas na pilha OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha JEE. O desenvolvimento e o gerenciamento de workflows usam os recursos familiares Fluxo de trabalho AEM e Caixa de entrada AEM. Os Workflows são a base para automatizar os processos de negócios reais que abrangem vários sistemas de software, redes, departamentos e até mesmo organizações.
+Com o fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente workflows para várias tarefas na pilha OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha JEE. O desenvolvimento e o gerenciamento de workflows usam os recursos familiares Fluxo de trabalho AEM e Caixa de entrada AEM. Os workflows são a base para automatizar os processos de negócios reais que abrangem vários sistemas de software, redes, departamentos e até mesmo organizações.
 
 Depois de configurados, esses workflows podem ser acionados manualmente para concluir um processo definido ou executados de forma programática quando os usuários enviam um formulário ou uma carta de gerenciamento [de](/help/forms/using/cm-overview.md) correspondência. Com esses recursos aprimorados AEM Fluxo de trabalho, a AEM Forms oferta dois recursos distintos, mas semelhantes. Como parte de sua estratégia de implantação, você precisa decidir qual funciona para você. Veja uma [comparação](/help/forms/using/capabilities-osgi-jee-workflows.md) dos Workflows de AEM centrados na Forms no OSGi e no Process Management no JEE. Além disso, para a topologia de implantação, consulte [Arquitetura e topologias de implantação para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
