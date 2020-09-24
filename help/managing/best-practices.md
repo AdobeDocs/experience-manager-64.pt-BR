@@ -6,11 +6,11 @@ seo-description: 'O gerenciamento de um projeto para implementar a Adobe Experie
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '3313'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Para ajudá-lo, as práticas recomendadas consistem em:
 
 * Documentação, baseada diretamente na [lista](/help/managing/best-practices-checklist.md)de verificação, que detalha:
 
-   * [análise do Heartbeat](#project-heartbeat-dashboard) do Project.
+   * [Análise do Heartbeat](#project-heartbeat-dashboard) do Project.
    * [Visão geral de status por função](#status-by-role) .
    * [Fases e marcos](#phases-and-milestones).
    * [Pessoa-chave](#persona) e a sua participação em todas as fases (relevantes).
@@ -57,7 +57,7 @@ A planilha do **Project Heartbeat** fornece uma visão geral gráfica das métri
 
 ## Status por função {#status-by-role}
 
-A planilha **Status por Função** mostra o detalhamento detalhado de **[Saúde, Qualidade e Completidade](#project-heartbeat-dashboard)**por**[ Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
+A planilha **Status por Função** mostra o detalhamento detalhado de **[Saúde, Qualidade e Completidade](#project-heartbeat-dashboard)** por **[Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
 
 ## Fases e marcos {#phases-and-milestones}
 
@@ -184,8 +184,8 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
    * Interfaces; hardware, software e interação humana
    * Servidores para cada ambiente; consulte os requisitos [](/help/sites-deploying/technical-requirements.md) técnicos e as Diretrizes de dimensionamento de [hardware](/help/managing/hardware-sizing-guidelines.md)
    * Processos para cada ambiente; por exemplo, requisitos de implantação e manutenção
-   * atividades de manutenção (armazenamento de dados GC, otimização TarPM etc.)
-   * [Cache do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)
+   * Atividades de manutenção (armazenamento de dados GC, otimização TarPM etc.)
+   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Armazenamento em cache do Dispatcher
    * [Publicação/Authorshare de cluster](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
    * Desempenho para o cliente (minify JS, concat, sprites css, número total de solicitações http e outras)
 
@@ -263,7 +263,7 @@ Da mesma forma, as operações devem ser adequadamente planejadas para garantir 
    O monitoramento e a manutenção são aspectos fundamentais para garantir o funcionamento regular da solução após sua entrada em funcionamento. Para isso, é necessário definir:
 
    * O que precisa de monitoramento
-   * tarefas de manutenção; regular e para casos especiais
+   * Tarefas de manutenção; regular e para casos especiais
 
    Consulte também [Monitoramento e manutenção](/help/sites-deploying/monitoring-and-maintaining.md) para obter mais informações.
 
