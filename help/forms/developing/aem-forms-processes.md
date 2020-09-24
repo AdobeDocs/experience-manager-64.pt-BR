@@ -7,10 +7,10 @@ uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Um caso de uso comum é para um conjunto de serviços da AEM Forms operar em um 
 
 Quando um processo é ativado, ele se torna um serviço e pode ser chamado como outros serviços. Uma diferença entre um serviço padrão, como o Encryption Service e um serviço originado de um processo, é que este tem uma operação que executa muitas ações. Em contraste, um serviço padrão tem muitas operações. Cada operação normalmente executa uma ação, como aplicar uma política a um documento ou criptografar um documento.
 
-Os processos podem ter vida curta ou longa. Um processo de duração curta é uma operação executada de forma síncrona e no mesmo thread de execução a partir do qual foi chamada. As operações de duração curta são comparáveis ao comportamento padrão encontrado na maioria das linguagens de programação, onde um aplicativo cliente chama um método e aguarda um valor de retorno.
+Os processos podem ter vida curta ou longa. Um processo de duração curta é uma operação executada de forma síncrona e no mesmo thread de execução a partir do qual foi invocada. As operações de duração curta são comparáveis ao comportamento padrão encontrado na maioria das linguagens de programação, onde um aplicativo cliente chama um método e aguarda um valor de retorno.
 
 No entanto, há situações em que um processo não pode ser concluído sincronicamente devido a fatores como estes:
 
