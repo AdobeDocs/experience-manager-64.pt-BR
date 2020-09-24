@@ -5,11 +5,11 @@ description: Você pode usar temas para estilizar e fornecer uma identidade visu
 seo-description: Você pode usar temas para estilizar e fornecer uma identidade visual para um formulário adaptável ou comunicação interativa. Você pode compartilhar um tema em qualquer número de formulários adaptáveis ou comunicações interativas.
 uuid: 7fa8afd9-8454-44a5-939b-b213b9a800cc
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 1%
@@ -65,7 +65,7 @@ Você pode exportar temas como um arquivo zip e usá-los em outros projetos ou i
 
 >[!NOTE]
 >
->Se você fizer download de um tema que tenha um formulário adaptável associado e o formulário adaptativo associado for baseado em um modelo personalizado, faça o download do modelo personalizado. Quando você carregar o tema e o formulário adaptativo baixados em um servidor AEM Forms, faça upload do modelo personalizado relacionado também.
+>Se você fizer download de um tema que tenha um formulário adaptável associado e o formulário adaptativo associado for baseado em um modelo personalizado, faça o download do modelo personalizado. Ao carregar o tema e o formulário adaptativo baixados em um servidor AEM Forms, faça upload do modelo personalizado relacionado também.
 
 ### Fazer upload de um tema {#uploading-a-theme}
 
@@ -224,13 +224,13 @@ O Editor de Temas é dividido em dois painéis:
    * **Estado:** Permite personalizar estilos de um objeto em um estado específico. Por exemplo, você pode especificar a aparência de um objeto quando ele está no padrão, foco, desativado, focalizado ou no estado de erro.
    * **Categorias de propriedades:** As propriedades de estilo são divididas em várias categorias. Por exemplo Dimension e posição, texto, plano de fundo, borda e efeitos. Em cada categoria, você fornece informações de estilização. Por exemplo, em Plano de fundo, é possível fornecer Cor do plano de fundo e Imagem e gradiente.
    * **Avançado:** Permite adicionar CSS personalizado a um objeto, que substitui as propriedades que os controles visuais definem se há uma sobreposição.
-   * **CSS** de Visualização: Permite que você visualização o CSS do componente selecionado
+   * **CSS** de visualização: Permite que você visualização o CSS do componente selecionado
 
    Além disso, na barra lateral, na parte inferior há uma seta. Ao clicar na seta, você obtém mais duas opções: **Simule o sucesso** e **simule o erro.** Essas opções, juntamente com as opções descritas acima, são discutidas detalhadamente [abaixo](/help/forms/using/themes.md#using-rail).
 
    [ ![Editor de temas com Painel e Tela realçada.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
 
-### Componentes de estilo {#styling-components}
+### Styling components {#styling-components}
 
 Você pode usar um tema em vários formulários adaptáveis e comunicações interativas, que importam a formatação de componentes especificada no tema. Você pode criar um estilo para vários componentes, como títulos, descrição, painéis, campos, ícones e caixas de texto. Use widgets para configurar as propriedades do componente em um tema. O conhecimento prévio do CSS ou MENOS não é necessário, mas é desejado, embora a seção Substituições de CSS permita que você escreva o código CSS ou forneça seletores personalizados. A seção Substituições de CSS é exibida quando você seleciona um componente na barra lateral.
 
@@ -306,7 +306,7 @@ Quando você fornece um nome personalizado para um estilo, o estilo é vinculado
 
    ![Excluir o estilo salvo](assets/manage-styles.png)
 
-### pré-visualização ao vivo, salvar e descartar alterações {#live-preview-save-and-discard-changes}
+### Pré-visualização ao vivo, salvar e descartar alterações {#live-preview-save-and-discard-changes}
 
 As modificações feitas no estilo são refletidas instantaneamente no formulário ou na comunicação interativa carregada na tela de desenho. A pré-visualização ao vivo permite que você defina e veja interativamente o impacto do estilo. Quando você altera o estilo de um componente, o botão **[!UICONTROL Concluído]** é ativado na barra lateral. Para reter as alterações, use o botão **[!UICONTROL Concluído]** .
 
@@ -354,7 +354,7 @@ Na barra de ferramentas Tela de desenho, você verá:
 * **[!UICONTROL Opções]** do tema Opções do ![tema](assets/theme-options.png): Fornece três opções
 
    * Configurar: Fornece opções para selecionar o formulário de pré-visualização ou a comunicação interativa, a clientlib base e a configuração do typekit.
-   * Tema de Visualização CSS: Gera CSS para o tema selecionado.
+   * Tema de visualização CSS: Gera CSS para o tema selecionado.
    * Gerenciar estilos: Fornece opções para gerenciar estilos de texto e imagem
    * Ajuda: Executa um tour guiado por imagem do Editor de Temas.
 
@@ -388,7 +388,7 @@ Abaixo estão as opções exibidas na barra lateral ao selecionar um componente:
 
 #### Estado {#state}
 
-Um estado é um indicador da interação do usuário com um componente. Por exemplo, quando um usuário digita dados errôneos em uma caixa de texto, o estado da caixa de texto muda para um estado de erro. O editor de temas permite que você especifique o estilo para um estado específico.
+Um estado é um indicador da interação do usuário com um componente. Por exemplo, quando um usuário digita dados incorretos em uma caixa de texto, o estado da caixa de texto muda para um estado de erro. O editor de temas permite que você especifique o estilo para um estado específico.
 
 As opções para personalizar estilos de estado variam para componentes diferentes.
 
@@ -637,7 +637,7 @@ Você pode ver o CSS gerado usando as seguintes opções:
 
 * **Visualização da opção CSS** na barra lateral: Ao selecionar um componente no Tema, você pode ver a opção CSS de VISUALIZAÇÃO na barra lateral. Mostra o CSS gerado, incluindo o CSS para `::before` e `::after` pseudo-elementos.
 
-* **Opção CSS** do tema da Visualização na barra de ferramentas da tela: Na barra de ferramentas Tela, clique em ![opções](assets/theme-options.png) de tema > CSS **do tema de** Visualização. Você pode ver todo o tema CSS gerado a partir das propriedades definidas no Editor de Temas.
+* **Opção CSS** do tema da visualização na barra de ferramentas da tela: Na barra de ferramentas Tela, clique em ![opções](assets/theme-options.png) de tema > CSS **do tema de** Visualização. Você pode ver todo o tema CSS gerado a partir das propriedades definidas no Editor de Temas.
 
 ## Solução de problemas, recomendações e práticas recomendadas {#troubleshooting-recommendations-and-best-practices}
 
