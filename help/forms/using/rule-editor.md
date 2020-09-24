@@ -5,11 +5,11 @@ description: O editor de regras para formulários adaptáveis permite que você 
 seo-description: O editor de regras para formulários adaptáveis permite que você adicione comportamento dinâmico e crie lógica complexa em formulários sem programação ou script.
 uuid: 15c9bb41-ddae-4d3e-b130-5eb1b7572e6e
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: 87680094e87b2ef58c7de2f1e42caa2ad966c28f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6348'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao 
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Ao escrever uma regra Quando, você pode acionar a ação Limpar valor de. A ação Limpar valor de apaga o valor do objeto especificado. Ter Valor limpo como uma opção na instrução Quando permite criar condições complexas com vários campos.
+Ao escrever uma regra Quando, você pode acionar a ação Limpar valor de. A ação Limpar valor de apaga o valor do objeto especificado. Ter um Valor Claro como uma opção na instrução Quando permite criar condições complexas com vários campos.
 
 ![clear value of](assets/clearvalueof.png)
 
@@ -352,7 +352,7 @@ Vamos entender como criar uma regra no editor visual usando o seguinte formulár
 
 ![create-rule-example](assets/create-rule-example.png)
 
-A seção Requisitos de Empréstimo no formulário de pedido de empréstimo de exemplo exige que os requerentes especifiquem o seu estado civil, salário e, se forem casados, o salário do cônjuge. Com base nos dados de entrada do usuário, a regra calcula o montante de elegibilidade do empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
+A seção Requisitos de Empréstimo no formulário de pedido de empréstimo de exemplo exige que os requerentes especifiquem o seu estado civil, salário e, se forem casados, o salário do cônjuge. Com base nos dados de entrada do usuário, a regra calcula o valor de elegibilidade do empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
 
 * O campo Salário do Cônjuge é mostrado apenas quando o Status Marital é Casado.
 * O valor de elegibilidade do empréstimo é 50% do salário total.
@@ -694,7 +694,7 @@ Para copiar e colar regras, faça o seguinte:
 
 1. Toque em **Concluído** para salvar a regra.
 
-## expressões aninhadas {#nestedexpressions}
+## Expressões aninhadas {#nestedexpressions}
 
 O editor de regras permite que você use vários operadores AND e OR para criar regras aninhadas. É possível combinar vários operadores E e OU nas regras.
 
