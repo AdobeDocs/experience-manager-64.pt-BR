@@ -5,11 +5,11 @@ description: Este artigo inclui visão geral, exemplos de casos de uso, fluxo de
 seo-description: Recursos principais do Interative Communication, casos de uso de amostra, fluxo de trabalho de criação e diferenças entre o Interative Communication e o Gerenciamento de correspondência
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
+topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 5%
@@ -32,7 +32,7 @@ Veja a seguir os principais recursos das Comunicações interativas:
 * Integração imediata com o modelo de dados de formulário para permitir acesso fácil e simplificado a bancos de dados back-end e outros sistemas CRM, como o MS® Dynamics
 * Interface de criação integrada para canais de impressão e da Web com capacidade de gerar automaticamente canais da Web a partir do canal de impressão
 * Gráficos para apresentar informações em formatos visuais facilmente compreensíveis na impressão e na Web
-* Os fragmentos de Documento oferecem suporte ao editor de regras e ao modelo de dados de formulário
+* Os fragmentos de documento oferecem suporte ao editor de regras e ao modelo de dados de formulário
 * A interface do usuário do agente exibe a impressão e a pré-visualização da Web do Interative Communication
 * Arraste e solte componentes para construir rapidamente canais de impressão e da Web
 
@@ -58,9 +58,9 @@ Para criar uma comunicação interativa, tenha os [elementos básicos](#building
    1. Imagens
    1. [Tabelas](/help/forms/using/create-interactive-communication.md#tables) (Incluindo Fragmentos de Layout)
    1. [Gráficos](/help/forms/using/chart-component-interactive-communications.md)
-   1. [Fragmentos de Documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
+   1. [Fragmentos de documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Impressão de Pré-visualização e canais da Web e, se necessário, edite a Comunicação interativa.
+1. Impressão de pré-visualização e canais da Web e, se necessário, edite a Comunicação interativa.
 1. O agente usa a interface do agente para [preparar a Comunicação](/help/forms/using/prepare-send-interactive-communication.md) interativa para enviá-la ao processo de recipient/postagem.
 
 ### Elementos básicos {#buildingblocks}
@@ -69,7 +69,7 @@ A seguir estão os blocos de construção necessários para a criação de uma c
 
 * [Modelo de dados de formulário](/help/forms/using/data-integration.md)
 * [Modelos de impressão e canal da Web](/help/forms/using/web-channel-print-channel.md)
-* [Fragmentos de Documento](/help/forms/using/document-fragments.md)
+* [Fragmentos de documento](/help/forms/using/document-fragments.md)
 * Imagens
 * [Temas](/help/forms/using/themes.md) para o canal Web
 
