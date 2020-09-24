@@ -5,13 +5,13 @@ description: O utilitário de Migração permite que você Migre ativos e docume
 seo-description: O utilitário de Migração permite que você Migre ativos e documentos da AEM Forms do AEM 6.3 Forms ou de versões anteriores para o AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Para os ativos de Gestão de Correspondência:
 * Para os ativos importados da plataforma anterior, uma propriedade é adicionada: **fd:version=1.0**.
 * Desde o AEM 6.1 Forms, os comentários não estão disponíveis na caixa. Os comentários adicionados anteriormente estão disponíveis nos ativos, mas não são visíveis automaticamente na interface. É necessário personalizar a propriedade ExtendedProperties na interface do usuário do AEM Forms para tornar os comentários visíveis.
 * Em algumas das versões anteriores, como o LiveCycle ES4, o texto foi editado usando o Flex RichTextEditor, mas desde AEM 6.1 Forms, o editor HTML é usado. Devido a essa renderização e aparência das fontes, os tamanhos de fonte e as margens de fonte podem ser diferentes das versões anteriores na interface do usuário do Autor. No entanto, as letras têm a mesma aparência quando renderizadas.
-* As Listas nos módulos de texto são aprimoradas e agora são renderizadas de forma diferente. Podem existir diferenças visuais. Recomendamos que você renderize e veja as letras nas quais está usando o lista nos módulos de texto.
+* As listas nos módulos de texto são aprimoradas e agora são renderizadas de forma diferente. Podem existir diferenças visuais. Recomendamos que você renderize e veja as letras nas quais está usando o lista nos módulos de texto.
 * Como os módulos de conteúdo de imagem são convertidos em ativos DAM e os layouts e fragmentos são adicionados aos formulários durante a migração, a propriedade Atualizado por para esses módulos muda para admin.
 * O histórico de versão dos ativos não é migrado e não está disponível após a migração. O histórico de versão subsequente após a migração é mantido.
 * O estado Pronto para publicar está obsoleto desde o AEM 6.1 Forms, portanto todos os ativos no estado Pronto para publicar são alterados para o estado Modificado.
@@ -95,7 +95,7 @@ Quando você executa o Utilitário de migração pela primeira vez, um log é cr
    * Para migrar **ativos**, toque em Migração de ativos AEM Forms e, na tela seguinte, toque em Migração **de** Start. Os itens a seguir são migrados:
 
       * Formulários adaptáveis
-      * Fragmentos de Documento
+      * Fragmentos de documento
       * Temas
       * Cartas
       * Dicionários de dados
@@ -133,19 +133,19 @@ Quando você executa o Utilitário de migração pela primeira vez, um log é cr
    * Serviços em nuvem do Form Data Model
 
       * Caminho de origem: /etc/cloudservices/fdm
-      * Caminho do Público alvo: /conf/global/settings/cloudconfigs/fdm
+      * Caminho do público alvo: /conf/global/settings/cloudconfigs/fdm
    * Recaptcha
 
       * Caminho de origem: /etc/cloudservices/recaptcha
-      * Caminho do Público alvo: /conf/global/settings/cloudconfigs/recaptcha
+      * Caminho do público alvo: /conf/global/settings/cloudconfigs/recaptcha
    * Adobe Sign
 
       * Caminho de origem: /etc/cloudservices/echosign
-      * Caminho do Público alvo: /conf/global/settings/cloudconfigs/echosign
+      * Caminho do público alvo: /conf/global/settings/cloudconfigs/echosign
    * Serviços em nuvem Typekit
 
       * Caminho de origem: /etc/cloudservices/typekit
-      * Caminho do Público alvo: /conf/global/settings/cloudconfigs/typekit
+      * Caminho do público alvo: /conf/global/settings/cloudconfigs/typekit
 
    A janela do navegador exibe o seguinte à medida que o processo de migração ocorre:
 
@@ -164,7 +164,7 @@ Quando você executa o Utilitário de migração pela primeira vez, um log é cr
 
 1. Depois que o utilitário de migração terminar de ser executado, vá para as tarefas [de](#housekeepingtasks)manutenção.
 
-### tarefas para uso doméstico após executar o utilitário de migração {#housekeepingtasks}
+### Tarefas para uso doméstico após executar o utilitário de migração {#housekeepingtasks}
 
 Após executar o utilitário de migração, tome cuidado com as seguintes tarefas de manutenção:
 
@@ -175,6 +175,6 @@ Após executar o utilitário de migração, tome cuidado com as seguintes tarefa
    1. Abra o arquivo XFA no Designer mais recente e salve-o. A versão do XFA é atualizada para a mais recente.
    1. Carregue o XFA na interface do usuário do Forms.
 
-1. Publique todos os ativos publicados no sistema anterior antes da migração. O utilitário de migração atualiza os ativos somente na instância do autor e para atualizar os ativos nas instâncias de publicação que você precisa para publicar os ativos.
+1. Publique todos os ativos que foram publicados no sistema anterior antes da migração. O utilitário de migração atualiza os ativos somente na instância do autor e para atualizar os ativos nas instâncias de publicação que você precisa para publicar os ativos.
 1. No AEM Forms 6.4, alguns dos direitos dos grupos de usuários de formulários são alterados. Se você quiser que qualquer um de seus usuários seja capaz de carregar XDPs e Forms adaptável que contêm scripts ou usar o editor de códigos, é necessário adicioná-los ao grupo de usuários avançados para formulários. Da mesma forma, os autores de modelo não podem mais usar o editor de código no Editor de regras. Para que os usuários possam usar o editor de código, adicione-os ao grupo af-template-script-writer. Para obter instruções sobre como adicionar usuários a grupos, consulte [Gerenciamento de usuários e grupos](/help/communities/users.md)de usuários.
 
