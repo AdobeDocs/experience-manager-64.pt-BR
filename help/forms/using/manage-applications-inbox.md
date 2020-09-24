@@ -6,10 +6,10 @@ seo-description: AEM Caixa de entrada permite que você inicie workflows centrad
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: publish
+topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -41,9 +41,9 @@ Em resumo, a Caixa de entrada permite que você crie um novo aplicativo e gerenc
 
 Quando um fluxo de trabalho do Forms é acionado e você é um destinatário ou parte do grupo destinatário, uma tarefa é exibida em sua Caixa de entrada. Você pode visualização detalhes da tarefa e executar ações disponíveis na tarefa na Caixa de entrada.
 
-### tarefas de solicitação ou delegadas {#claim-or-delegate-tasks}
+### Tarefas de solicitação ou delegadas {#claim-or-delegate-tasks}
 
-As Tarefas atribuídas a um grupo são exibidas na Caixa de entrada de todos os membros do grupo. Qualquer membro do grupo pode reivindicar essa tarefa ou delegá-la a outro membro do grupo. Para isso:
+As tarefas atribuídas a um grupo são exibidas na Caixa de entrada de todos os membros do grupo. Qualquer membro do grupo pode reivindicar essa tarefa ou delegá-la a outro membro do grupo. Para isso:
 
 1. Toque para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa são exibidas na parte superior.
 
@@ -59,7 +59,7 @@ As Tarefas atribuídas a um grupo são exibidas na Caixa de entrada de todos os 
 
    ![reclamação](assets/claim.png)
 
-### Detalhes da Visualização e executar ações no tarefa {#view-details-and-perform-actions-on-tasks}
+### Detalhes da visualização e executar ações no tarefa {#view-details-and-perform-actions-on-tasks}
 
 Ao abrir uma tarefa, você pode visualização os detalhes da tarefa e executar as ações disponíveis. As ações disponíveis para uma tarefa são definidas na etapa Atribuir tarefa do fluxo de trabalho do Forms associado.
 
@@ -74,7 +74,7 @@ Ao abrir uma tarefa, você pode visualização os detalhes da tarefa e executar 
 
 A visualização detalhada da tarefa inclui as seguintes seções:
 
-* Detalhes da Tarefa
+* Detalhes da tarefa
 * Formulário
 * Detalhes do fluxo de trabalho
 * Barra de ferramentas Ações
@@ -103,7 +103,7 @@ A barra de ferramentas Ações mostra todas as opções disponíveis para a tare
 
 ### Visualização concluída tarefas {#view-completed-tasks}
 
-AEM Caixa de entrada exibe somente tarefas ativas. tarefas concluídas não são exibidas na lista. No entanto, você pode usar filtros de Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status, datas de start e término e assim por diante. Para visualização de tarefas concluídas:
+AEM Caixa de entrada exibe somente tarefas ativas. Tarefas concluídas não são exibidas na lista. No entanto, você pode usar filtros de Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status, datas de start e término e assim por diante. Para visualização de tarefas concluídas:
 
 1. Em AEM Caixa de entrada, toque em ![alternar o painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtro.
 1. Toque em Status **[!UICONTROL da]** Tarefa e selecione **[!UICONTROL Concluir]**. Todas as tarefas concluídas são exibidas.
@@ -112,7 +112,7 @@ AEM Caixa de entrada exibe somente tarefas ativas. tarefas concluídas não são
 
 1. Toque para selecionar uma tarefa e clique em **[!UICONTROL Abrir]**.
 
-A tarefa é aberta para exibir o documento ou o formulário adaptável associado à tarefa. Para o formulário adaptável, ele exibe o formulário adaptável somente leitura ou seu documento de registro PDF, conforme configurado na guia Formulário/Documento da etapa [do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md)Atribuir Tarefa.
+A tarefa é aberta para exibir o documento ou o formulário adaptável associado à tarefa. Para o formulário adaptável, ele exibe o formulário adaptativo somente leitura ou seu documento de registro PDF, conforme configurado na guia Formulário/Documento da etapa [do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md)Atribuir Tarefa.
 
 A seção de detalhes da tarefa exibe informações como ação executada, status da tarefa, data do start e data de término.
 
