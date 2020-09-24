@@ -6,10 +6,10 @@ seo-description: É possível incorporar formulários adaptáveis AEM páginas d
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -27,9 +27,9 @@ Para obter informações sobre como incorporar um formulário adaptável em uma 
 
 Na página do AEM Sites, é possível adicionar um formulário adaptável ou uma comunicação interativa usando:
 
-* **[Componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**do Container AEM Forms A AEM Forms fornece um componente que você pode adicionar às páginas do site. O componente Container AEM Forms permite incorporar um formulário adaptável e uma comunicação interativa.
+* **[Componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** do Container AEM Forms A AEM Forms fornece um componente que você pode adicionar às páginas do site. O componente Container AEM Forms permite incorporar um formulário adaptável e uma comunicação interativa.
 
-* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**de ativos Todos os formulários e comunicações interativas que você cria estão disponíveis em Ativos. Você pode arrastar e soltar o formulário como um ativo na sua página.
+* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** de ativos Todos os formulários e comunicações interativas que você cria estão disponíveis em Ativos. Você pode arrastar e soltar o formulário como um ativo na sua página.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -60,7 +60,7 @@ Para incorporar um formulário adaptável ou comunicação interativa usando o c
       * **Mensagem** de agradecimento: Grave uma mensagem usando o editor de rich text para mostrar no envio do formulário. Esta opção está disponível somente quando você escolhe mostrar uma mensagem de agradecimento.
       * **Página** de agradecimento: Navegue e selecione a página a ser exibida no envio do formulário. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
       * **Atualizar página no envio**: Ative para atualizar a página que contém o formulário adaptável incorporado para mostrar a página de agradecimentos. Caso contrário, a página de agradecimentos substituirá o formulário adaptável no container AEM Forms, sem atualizar a página. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
-   * **Tema**: Selecione um tema que defina o estilo para os componentes do formulário adaptável ou da comunicação interativa. O estilo inclui propriedades de aparência, como estilo de fonte, cor de plano de fundo, dimensões e alinhamento.
+   * **Tema**: Selecione um tema que defina o estilo para os componentes do formulário adaptável ou da comunicação interativa. O estilo inclui propriedades de aparência como estilo de fonte, cor de plano de fundo, dimensões e alinhamento.
    * **Altura**: Especifique a altura do container. Deixe em branco para redimensionar automaticamente o container.
    * **Biblioteca** do cliente CSS: Especifique o caminho para uma biblioteca de cliente CSS.
 
