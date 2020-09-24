@@ -6,10 +6,10 @@ seo-description: A AEM Forms fornece ferramentas para gerenciar a Adaptive Forms
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
-source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Para obter informações sobre como criar e usar letras, consulte [Criar carta](
 
 ### Fragmentos do documento {#document-fragments}
 
-Os fragmentos de Documento são partes reutilizáveis ou componentes de uma correspondência que podem ser usados para compor letras. Os fragmentos de documento são do tipo texto, lista, condição e fragmento de layout. Para obter informações sobre como criar e usar fragmentos de documento, consulte [Criação de fragmentos](/help/forms/using/document-fragments.md)de documento.
+Os fragmentos de documento são partes reutilizáveis ou componentes de uma correspondência que podem ser usados para compor letras. Os fragmentos de documento são do tipo texto, lista, condição e fragmento de layout. Para obter informações sobre como criar e usar fragmentos de documento, consulte [Criação de fragmentos](/help/forms/using/document-fragments.md)de documento.
 
 ### Dicionários de dados {#data-dictionaries}
 
@@ -114,7 +114,7 @@ AEM painel de ferramentas contém ferramentas para vários componentes. Para nav
    * **Referências:** Um ativo AEM Forms pode ser usado em vários ativos AEM Forms. Por exemplo, um fragmento de documento pode ser usado em várias letras. Referências é uma lista de ativos (outras formas ou recursos) em que o ativo selecionado é usado e também a lista de outros ativos que o ativo selecionado está usando.
 
 * **Trilha:** Uma navegação estrutural representa o título do console ou da pasta atual. Você pode clicar na opção Navegação estrutural para navegar entre o nível de pastas mais alto na hierarquia.
-* **Comutador de Visualização:** Você pode clicar no ícone do Comutador de Visualização na ![lista](assets/viewlist.png) de visualização ou no ![cartão](assets/viewcard.png) para alternar rapidamente entre a lista e a visualização do cartão. Para obter mais informações sobre componentes comuns da interface do usuário, consulte [Trabalhar com o Ambiente](/help/sites-authoring/basic-handling.md)Autor.
+* **Comutador de visualização:** Você pode clicar no ícone do Comutador de Visualização na ![lista](assets/viewlist.png) de visualização ou no ![cartão](assets/viewcard.png) para alternar rapidamente entre a lista e a visualização do cartão. Para obter mais informações sobre componentes comuns da interface do usuário, consulte [Trabalhar com o Ambiente](/help/sites-authoring/basic-handling.md)Autor.
 * **Pesquisar:** A ![pesquisa](assets/search.png) de opções de pesquisa oferece a capacidade de encontrar e ir rapidamente para o conteúdo e as ferramentas de que você precisa. Digite o nome do conteúdo ou da capacidade do produto e selecione uma das sugestões, por exemplo, digite &quot;Documentos&quot; para localizar e navegar rapidamente para o console Forms &amp; Documentos ou Fragmentos de Documento. Para obter mais informações sobre a pesquisa, consulte AEM artigo [de pesquisa](/help/sites-authoring/search.md) 6.2
 * **Barra de ferramentas** Ações: Ao selecionar um ativo, a barra de ferramentas de ações é exibida acima da lista de ativos. Ele contém todas as ferramentas de gerenciamento do ativo selecionado. Você pode passar o mouse sobre um ícone de ferramenta para visualização da dica de ferramenta descrevendo sua funcionalidade
 
