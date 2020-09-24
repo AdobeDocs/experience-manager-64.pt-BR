@@ -7,10 +7,10 @@ uuid: b0280a70-643e-4455-82ea-fa7a90823b53
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: testing
+topic-tags: components, testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -76,7 +76,7 @@ Para executar um Test Suite:
 
 1. O espaço reservado é substituído pelo conteúdo da página à medida que o teste é executado.
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. Revise os resultados do caso de teste tocando ou clicando na descrição para abrir o painel **Resultado** . Tocar ou clicar no nome do caso de teste no painel **Resultado** mostra todos os detalhes.
 
