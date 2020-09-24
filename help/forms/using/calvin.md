@@ -6,10 +6,10 @@ seo-description: Usando o Calvin, você pode criar casos de teste no CRXDE e exe
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 1%
@@ -54,10 +54,10 @@ Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes de i
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>Regras de Expressão</p> <p> </p> </td> 
+   <td><p>Regras de expressão</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>As expressões estão associadas a objetos de formulário, como scripts calculate, visível e execute depois de sair de um campo, sendo executadas após a execução das operações relevantes da interface do usuário?<br /> </li> 
+     <li>As expressões estão associadas a objetos de formulário, como scripts calculate, visível e execute após sair de um campo, sendo executadas após a execução das operações relevantes da interface do usuário?<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -331,7 +331,7 @@ As etapas para testar seus formulários adaptáveis AEM são semelhantes às eta
    <td><p>As ações são métodos que executam um gesto na interface do usuário, como clicar em um botão ou preencher uma caixa de entrada com um valor.</p> <p>Os métodos das classes hobs.actions.Asserts, hobs.actions.Core e hobs.utils.af são ações que você pode usar em seus testes. Todas as ações são executadas sincronicamente.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>ambiente de autor ou publicação</p> </td> 
+   <td><p>Ambiente de autor ou publicação</p> </td> 
    <td><p>Em geral, os formulários podem ser testados no ambiente de autor ou publicação. No caso de ambiente publish, por padrão, o acesso para executar o teste é restrito. Isso ocorre porque todas as bibliotecas do cliente relacionadas ao runner de teste estão dentro de /libs na estrutura do JCR.</p> </td> 
   </tr> 
  </tbody> 
