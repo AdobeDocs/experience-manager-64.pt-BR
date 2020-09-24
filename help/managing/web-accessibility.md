@@ -6,11 +6,11 @@ seo-description: Saiba como criar sites e conteúdo acessíveis com AEM.
 uuid: b68281af-3e8a-4842-b762-1c59f9132795
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+topic-tags: managing-accessibility, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: 13c7e0bd-54af-49f3-9743-075ce6f3314d
 translation-type: tm+mt
-source-git-commit: 40c4631e29093e5425cf0b7bd4bcd543a969bd1e
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 47%
@@ -41,7 +41,7 @@ As páginas e a seção a seguir fornecem informações e diretrizes:
 
 * [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
-   As Diretrizes do WCAG 2.0 fornecem uma lista de critérios de sucesso para os níveis de conformidade dos Níveis A e AA. Esta página detalha os critérios de sucesso abordados pelo AEM, juntamente com como os cumprir ao gerar conteúdo.
+   As Diretrizes do WCAG 2.0 fornecem uma lista de critérios de sucesso para os níveis de conformidade dos Níveis A e AA. Esta página detalha os critérios de sucesso abordados pelo AEM, juntamente com como atendê-los ao gerar conteúdo.
 
 * [Guia rápido para WCAG 2.0](/help/managing/qg-wcag.md)
 
