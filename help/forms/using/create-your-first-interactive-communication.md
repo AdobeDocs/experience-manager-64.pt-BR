@@ -6,10 +6,10 @@ seo-description: Saiba como criar sua primeira Comunicação interativa.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 0%
@@ -95,7 +95,7 @@ Um modelo de dados de formulário permite que você conecte uma Comunicação in
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Os fragmentos de Documento são componentes reutilizáveis de uma correspondência que são usados para compor uma comunicação interativa. Os fragmentos do documento são de tipos: Texto, Lista e Condição.
+Os fragmentos de documento são componentes reutilizáveis de uma correspondência que são usados para compor uma comunicação interativa. Os fragmentos do documento são de tipos: Texto, Lista e Condição.
 
 **Objetivos:**
 
