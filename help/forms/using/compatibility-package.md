@@ -6,11 +6,11 @@ seo-description: A instalação do pacote Compatibilidade no AEM Forms 6.4 permi
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: correspondence-management
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 translation-type: tm+mt
-source-git-commit: 9a2ebded0068213903020d2c5633a05b6ffb07ef
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -28,7 +28,7 @@ A comunicação interativa é a abordagem padrão e recomendada para criar comun
 
 O pacote Compatibilidade do AEMFD permite que você use os seguintes ativos do AEM Forms 6.3 e 6.2 no AEM Forms 6.4:
 
-* Fragmentos de Documento criados no AEM Forms 6.3 e 6.2
+* Fragmentos de documento criados no AEM Forms 6.3 e 6.2
 * Cartas
 * Dicionários de dados
 * Formulários adaptáveis modelos e páginas obsoletos
