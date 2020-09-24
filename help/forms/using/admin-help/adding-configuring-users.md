@@ -8,7 +8,7 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Evite criar nomes de usuários que comecem com um sinal de número (#). A execu�
 
 **Senha e Confirmar senha:** Senha que o usuário usa para fazer logon. Deve ter no mínimo oito caracteres. Uma senha não é necessária para um usuário que faz parte de um domínio híbrido.
 
-## Detalhes da Visualização sobre um usuário {#view-details-about-a-user}
+## Detalhes da visualização sobre um usuário {#view-details-about-a-user}
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Usuários e grupos.
 1. Especifique as informações para restringir a pesquisa e, na lista Em, selecione Usuários e clique em Localizar. Os resultados da pesquisa são listados na parte inferior da página. É possível classificar a lista clicando em qualquer um dos cabeçalhos da coluna.
