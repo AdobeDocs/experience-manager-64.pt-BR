@@ -3,9 +3,9 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags do Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # Ativar insights de ativos por meio do DTM {#enabling-asset-insights-through-dtm}
 
-O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. Ele é fornecido gratuitamente aos clientes da Adobe Analytics.
+O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. Ele é fornecido gratuitamente aos clientes da Adobe Analytics. Você pode personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights ou usar o DTM para inserir tags do Asset Insights. Os insights só são suportados e fornecidos para imagens.
 
-Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, o Adobe recomenda que você use o DTM para inserir tags do Asset Insights.
+>[!CAUTION]
+>
+>O Adobe DTM foi preterido a favor da Adobe Experience Platform Launch e logo chegará ao [fim da vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda [usar o Launch para obter insights](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de ativos.
 
 Execute estas etapas para ativar os Insights de ativos por meio do DTM:
 
@@ -49,7 +51,6 @@ Execute estas etapas para ativar os Insights de ativos por meio do DTM:
    >* A chamada para `assetAnalytics.dispatcher.init()` é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar o carregamento.
    >* Dependendo de onde o Asset Insights Page Tracker estiver hospedado (por exemplo, AEM, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
    >* Para o rastreador de página hospedado AEM, a fonte deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
-
 
 
 1. Abra [https://dtm.adobe.com](https://dtm.adobe.com). Clique em Visão geral na propriedade da Web e clique em Adicionar ferramenta ou abra uma ferramenta Adobe Analytics existente. Ao criar a ferramenta, você pode definir Método de configuração como Automático.
