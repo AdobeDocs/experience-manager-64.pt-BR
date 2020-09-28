@@ -3,10 +3,10 @@ description: 'A newsletter Dynamic Media da Experience League é uma newsletter 
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 seo-description: Os recursos de criação de conhecimento estão disponíveis neste boletim informativo de balcão único, incluindo vídeos, visões gerais de soluções e introduções para alguns dos principais recursos e capacidades, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
 seo-title: 'Newsletter Adobe Dynamic Media '
-solution: Dynamic Media Classic
+solution: Dynamic Media
 title: Newsletter do Dynamic Media
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 8038ae762811bc376768be7fff143521629bc96a
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
