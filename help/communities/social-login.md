@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '2824'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ As etapas necessárias são:
       * Crie e publique um serviço [em nuvem do](#create-a-twitter-connect-cloud-service)Twitter Connect.
 
 
-1. [**Ative **o login](#enable-social-login)social para um site da comunidade.
+1. [**Ative** o login](#enable-social-login) social para um site da comunidade.
 
 Há dois conceitos básicos:
 
@@ -98,7 +98,7 @@ Depois que o aplicativo for criado, localize a ID **[!UICONTROL do]** aplicativo
 
 ### Criar um Cloud Service do Facebook Connect {#create-a-facebook-connect-cloud-service}
 
-A instância de Aplicativo e Provedor [OAuth do](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) Adobe Granite, instanciada ao criar uma configuração de serviço em nuvem, identifica o aplicativo do Facebook e os grupos de membros aos quais os novos usuários são adicionados.
+A instância de Aplicativo e Provedor [OAuth do](#adobe-granite-oauth-application-and-provider) Adobe Granite, instanciada ao criar uma configuração de serviço em nuvem, identifica o aplicativo do Facebook e os grupos de membros aos quais os novos usuários são adicionados.
 
 1. Na instância do autor AEM, faça logon com privilégios de administrador.
 1. Na navegação global, selecione **[!UICONTROL Ferramentas > Cloud Services > Configuração]** de logon do Facebook Social.
@@ -242,7 +242,7 @@ Na seção de permissões do gerenciamento de aplicativos do Twitter:
    * Se não estiver selecionado, o perfil do usuário no AEM não incluirá seu endereço de email.
    * As instruções do Twitter anotam outras etapas a serem tomadas.
 
-A única solicitação REST feita para login social é *[GET de credenciais](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*de conta/verificação.
+A única solicitação REST feita para login social é *[GET de credenciais](https://dev.twitter.com/rest/reference/get/account/verify_credentials)* de conta/verificação.
 
 ### Criar um Cloud Service do Twitter Connect {#create-a-twitter-connect-cloud-service}
 
@@ -265,9 +265,9 @@ A instância de Aplicativo e Provedor [OAuth](#adobe-granite-oauth-application-a
 
    * **[!UICONTROL Título]** (*obrigatório*) Insira um título de exibição que identifica o aplicativo do Twitter. É recomendável usar o mesmo nome inserido como Nome *de* exibição para o aplicativo do Twitter.
 
-   * **[!UICONTROL Consumer key]** (*obrigatório*) Digite a chave **de** consumidor (API) para o aplicativo do Twitter. Isso identifica a instância de Aplicativo e Provedor [OAuth](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) Granite criada a partir da caixa de diálogo.
+   * **[!UICONTROL consumer key]** (*obrigatório*) Digite a chave **de** consumidor (API) para o aplicativo do Twitter. Isso identifica a instância de Aplicativo e Provedor [OAuth](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) Granite criada a partir da caixa de diálogo.
 
-   * **[!UICONTROL Consumer secret]** (*obrigatório*) Digite o segredo ****** Consumidor (API) para o aplicativo do Twitter.
+   * **[!UICONTROL consumer secret]** (*obrigatório*) Digite o segredo ****** Consumidor (API) para o aplicativo do Twitter.
 
    * **[!UICONTROL Criar usuários]** Se marcada, o logon com uma conta do Twitter criará uma entrada de usuário AEM e as adicionará como membro ao(s) grupo(s) de usuários selecionado(s). O padrão está marcado (altamente recomendado).
 
