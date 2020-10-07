@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -117,7 +117,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -142,7 +142,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -161,7 +161,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -204,7 +204,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -229,7 +229,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -254,7 +254,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -273,7 +273,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -317,7 +317,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -336,7 +336,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -350,7 +350,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
 
 ## APIs de captura de dados faturáveis {#billable-data-capture-apis}
 
-Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um formulário PDF não é contabilizado como uma transação. Use a API [de relatórios de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transação fornecida para registrar uma submissão de PDF forms como uma transação.
+Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um formulário PDF não é contabilizado como uma transação. Use a API [de relatórios de](record-transaction-custom-implementation.md) transação fornecida para registrar uma submissão de PDF forms como uma transação.
 
 ### Formulários adaptáveis {#adaptive-forms}
 
@@ -359,7 +359,7 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
   <tr>
    <td><p>Caso de uso </p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -382,7 +382,7 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
   <tr>
    <td><p>Caso de uso </p> </td> 
    <td>Descrição </td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -401,7 +401,7 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -428,7 +428,7 @@ Atribua etapas de serviços de tarefa e documento a Workflows de AEM centrados e
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -449,7 +449,7 @@ Atribua etapas de serviços de tarefa e documento a Workflows de AEM centrados e
   <tr>
    <td><p>API</p> </td> 
    <td>Descrição</td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
@@ -469,7 +469,7 @@ Atribua etapas de serviços de tarefa e documento a Workflows de AEM centrados e
  <tbody>
   <tr>
    <td><p>Caso de uso</p> </td> 
-   <td>categoria do relatório de transação</td> 
+   <td>Categoria do relatório de transação</td> 
    <td>Informações adicionais</td> 
   </tr>
   <tr>
