@@ -4,7 +4,7 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
+source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 2%
@@ -580,7 +580,7 @@ Para obter mais informações específicas do Dynamic Media, consulte [Publicaç
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas ou não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Toque em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
