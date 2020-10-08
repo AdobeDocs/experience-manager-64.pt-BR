@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 5aff983a0e8ef2f3ca790a997b37276567f543fe
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -219,7 +219,7 @@ Defina variáveis de ambiente para o kit de desenvolvimento Java de 32 bits e 64
  <tbody> 
   <tr> 
    <td><p><strong>Aplicativo</strong></p> </td> 
-   <td><p><strong>variável Ambiente</strong></p> </td> 
+   <td><p><strong>variável ambiente</strong></p> </td> 
    <td><p><strong>Exemplo</strong></p> </td> 
   </tr> 
   <tr> 
@@ -555,8 +555,7 @@ Execute as seguintes etapas para configurar os certificados:
 
    >[!NOTE]
    >
-   >* No ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas de Extensões de Reader antes de atualizar uma credencial expirada ou de avaliações.
-
+   >No ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas de Extensões de Reader antes de atualizar uma credencial expirada ou de avaliações.
 
 1. Clique em **[!UICONTROL Salvar e fechar]** na página **[!UICONTROL Editar configurações]** do usuário.
 
@@ -616,6 +615,6 @@ O serviço Assembler depende do serviço de Extensões de Reader, do serviço de
 
 Você tem um ambiente de serviços de documento AEM Forms em funcionamento. Você pode usar os serviços de documento por meio de:
 
-* [workflows centrados em formulários no OSGi](/help/forms/using/aem-forms-workflow.md)
+* [Workflows centrados em formulários no OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Pastas monitoradas](/help/forms/using/watched-folder-in-aem-forms.md)
-* [APIs de serviços de Documento](/help/forms/using/aem-document-services-programmatically.md)
+* [APIs de serviços de documento](/help/forms/using/aem-document-services-programmatically.md)
