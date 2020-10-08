@@ -4,7 +4,7 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 2%
@@ -145,7 +145,8 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 >[!NOTE]
 >
 >Para fazer upload de ativos por meio do FTP no Dynamic Media - Pacote de recursos de instalação do modo Scene7 (FP) 18912 AEM autor. Entre em contato com o Atendimento ao cliente do Adobe para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md)de ativos em massa.
-Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas em AEM serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definidas no Dynamic Media Classic, são usadas.
+>
+>Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas em AEM serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definidas no Dynamic Media Classic, são usadas.
 
 **Para fazer upload de ativos usando FTP**
 
@@ -580,7 +581,7 @@ Para obter mais informações específicas do Dynamic Media, consulte [Publicaç
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas ou não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. Toque em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
@@ -760,7 +761,7 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
    * [Ações rápidas](managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 
