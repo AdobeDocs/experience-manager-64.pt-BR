@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 98%
@@ -254,7 +254,7 @@ Este é um exemplo de como esse problema ocorre:
 
 1. O dispatcher armazena a resposta em cache no `/my-page.html` e retorna a resposta ao usuário.
 1. Um autor de conteúdo faz uma alteração nessa página e a ativa.
-1. O agente de liberação do dispatcher envia uma solicitação de invalidação para o `/content/my-brand/my-page`**.**Como o dispatcher não tem uma página em cache nesse caminho, o conteúdo antigo permanece em cache e será obsoleto.
+1. O agente de liberação do dispatcher envia uma solicitação de invalidação para o `/content/my-brand/my-page`**.** Como o dispatcher não tem uma página em cache nesse caminho, o conteúdo antigo permanece em cache e será obsoleto.
 
 Há maneiras de configurar regras de liberação do dispatcher personalizadas que mapearão o URL mais curto até o URL mais longo para fins de invalidação de cache.
 
