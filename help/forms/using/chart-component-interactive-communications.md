@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Complete as etapas a seguir para adicionar um gráfico a uma Comunicação inter
 
 1. Na barra lateral AEM Componentes, arraste e solte o componente Gráfico em um dos seguintes itens de impressão ou canal da Web de uma Comunicação interativa:
 
-   * canal de impressão: Área do Público alvo e campo de imagem
-   * canal da Web: Área do painel e do Público alvo
+   * Canal de impressão: Área do público alvo e campo de imagem
+   * Canal da Web: Área do painel e do Público alvo
 
    O componente Gráfico solto cria um espaço reservado para um gráfico.
 
@@ -95,7 +95,7 @@ Para fazer isso, é necessário especificar:
 * **[!UICONTROL Título]** para os eixos X e Y (para o gráfico de tipo Coluna no canal de impressão apenas neste exemplo) - neste exemplo, Quantia ($) para o eixo X e Despesa para o eixo Y.
 * **[!UICONTROL Direção]** do rótulo (para o gráfico de tipo de coluna no canal de impressão apenas neste exemplo) - neste exemplo `Tilt Left`
 
-* **[!UICONTROL Dica]** de ferramenta para exibir com o mouse sobre uma despesa (somente canal da Web) - neste exemplo `${x}: $ ${y}`, que é exibido como Rótulo de [Despesa: Valor] $ (Exemplo: Visita ao parque de temas: US$ 315)
+* **[!UICONTROL Dica]** de ferramenta para exibir com o mouse sobre uma despesa (somente canal da Web) - neste exemplo `${x}: $ ${y}`, que é exibido como `[Expense Label: $ Amount]` (Exemplo: Visita ao parque de temas: US$ 315)
 
 ![Gráfico de colunas na saída de impressão de uma](assets/chartprintchannel.png)**Figura de comunicação interativa:** *Gráfico de colunas na saída de impressão de uma comunicação interativa*
 
@@ -109,7 +109,7 @@ Para fazer isso, é necessário especificar:
 
 Ao aplicar funções em um gráfico, é possível plotar dados que não são fornecidos diretamente pelo modelo de dados do formulário. Neste exemplo, usamos um exemplo de declaração de cartão de crédito para entender como as funções Soma e Frequência podem ser aplicadas ao gráfico.
 
-![Gráfico de linhas sem uma função com três transações](assets/creditcarddatalinechartcopy.png)&quot;Cama e Café da manhã&quot;**Figura:** *Gráfico de linhas sem uma função com três transações &quot;Cama e Café da manhã&quot;*
+![Gráfico de linhas sem uma função com três transações](assets/creditcarddatalinechartcopy.png)&quot;Cama e Café da manhã&quot;**Figura:** *Gráfico de linhas sem uma função com três transações de &quot;Cama e Café da manhã&quot;*
 
 ### Função de soma {#sum-function}
 
