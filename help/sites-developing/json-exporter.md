@@ -10,7 +10,7 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 4%
@@ -104,5 +104,5 @@ Para mais informações, consulte:
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Ativando a exportação JSON para um componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais e o componente Fragmento [do conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) principais e o componente Fragmento [do conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
