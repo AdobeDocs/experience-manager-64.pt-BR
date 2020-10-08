@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 4e4dfb105e12b6855ec32a72246d6b921d6d7829
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2882'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Depois que o nó tiver sido criado, adicione as seguintes propriedades:
    false (of type Boolean)
    ```
 
-* **includePropertyNames:** `["alias"] (of type String)`
+* **includePropertyNames:** `[alias]` (do tipo String)
 
 >[!NOTE]
 >
@@ -415,7 +415,7 @@ Você pode acessá-lo pelo Console da Web pesquisando &quot;**Garantir índice**
 
 Podem surgir situações em que query demoram muito para serem executados e o tempo de resposta geral do sistema é lento.
 
-A presente seção apresenta um conjunto de recomendações sobre o que deve ser feito para identificar a causa de tais questões e conselhos sobre a forma de as resolver.
+A presente seção apresenta um conjunto de recomendações sobre o que deve ser feito para identificar a causa dessas questões e fornecer conselhos sobre a forma de as resolver.
 
 #### Preparando informações de depuração para Análise {#preparing-debugging-info-for-analysis}
 
