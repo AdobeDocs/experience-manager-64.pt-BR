@@ -1,18 +1,18 @@
 ---
-title: Guia do usuário do Forms AEM 6.4
+title: Guia do Forms Adobe Experience Manager 6.4
 seo-title: Guia do usuário do Forms AEM 6.4
 description: Este guia aborda todas as tarefas AEM Forms, incluindo como criar, gerenciar, publicar e atualizar formulários digitais.
 seo-description: Abrange todas as tarefas AEM Forms, incluindo como criar, gerenciar, publicar e atualizar formulários digitais.
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '370'
 ht-degree: 22%
 
 ---
 
 
-# Guia do usuário do Forms AEM 6.4
+# Guia do Forms Adobe Experience Manager 6.4
 
 Este guia aborda todas as tarefas AEM Forms, incluindo como criar, gerenciar, publicar e atualizar formulários digitais.
 
@@ -44,10 +44,10 @@ Este guia aborda todas as tarefas AEM Forms, incluindo como criar, gerenciar, pu
 ## Principais recursos AEM
 
 * [AEM tutoriais](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)
-* [Guia do usuário HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
-* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html)
+* [Guia do usuário HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
