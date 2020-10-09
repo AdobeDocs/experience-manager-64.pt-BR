@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: 'formulários '
 audience: end-user
-user-guide-title: Guia do usuário do Forms AEM 6.4
+user-guide-title: Guia do Forms Adobe Experience Manager 6.4
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3713'
 ht-degree: 1%
 
 ---
 
-# AEM 6.4 - Guia do usuário do Forms {#forms}
+# Adobe Experience Manager 6.4 Forms Guide {#forms}
 
 + [Guia do usuário do Forms AEM 6.4](home.md)
 + Notas de versão {#release-notes-new-features}
@@ -34,11 +34,11 @@ ht-degree: 1%
       + [Tutorial: Estilo do formulário adaptativo](using/style-your-adaptive-form.md)
    + Tutorial: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
       + [Tutorial: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
-      + [formulário: Planeje a comunicação interativa](using/planning-interactive-communications.md)
+      + [Tutorial: Planeje a comunicação interativa](using/planning-interactive-communications.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model-tutorial.md)
       + [Tutorial: Criar fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Criar modelos](using/create-templates-print-web.md)
-      + [formulário: A criação de comunicação interativa](using/create-interactive-communication-tutorial.md)
+      + [Tutorial: Criar comunicação interativa](using/create-interactive-communication-tutorial.md)
    + Materiais de referência da AEM Forms {#aem-forms-reference-collaterals}
       + [Configurar e configurar sites de referência da AEM Forms](using/setup-reference-sites.md)
       + [Apresentação do site de referência do We.Finance](using/finance-reference-site-walkthrough.md)
