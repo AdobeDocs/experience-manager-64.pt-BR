@@ -4,9 +4,9 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '10015'
+source-wordcount: '10031'
 ht-degree: 2%
 
 ---
@@ -424,7 +424,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >O ícone **[!UICONTROL Colar]** está disponível na barra de ferramentas até que a operação de colar seja concluída.
 
-### Mover ou renomear ativos {#moving-or-renaming-assets}
+## Mover e renomear ativos {#moving-or-renaming-assets}
 
 Quando você move ativos (ou pastas) para outro local, os ativos (ou pastas) não são duplicados, ao contrário de copiar o ativo. Os ativos (ou as pastas) são colocados no local do público alvo e removidos do local de origem. Também é possível renomear o ativo ao movê-lo para o novo local. Se você estiver movendo um ativo publicado para um local diferente, você terá a opção de publicar novamente o ativo. Por padrão, a operação de movimentação em um ativo publicado automaticamente a despublica. O ativo movido será republicado se o autor selecionar a opção [!UICONTROL Republicar] ao mover o ativo.
 
@@ -434,39 +434,42 @@ Para mover ativos ou pastas:
 
 1. Navegue até o local do ativo que deseja mover.
 
-1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
+![Você pode republicar um ativo já publicado ao movê-lo](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+Para mover ativos ou pastas:
 
-1. No assistente **[!UICONTROL Mover ativos]** , execute um dos procedimentos a seguir:
+1. Navegue até o local do ativo que deseja mover.
 
-   * Especifique o nome do ativo depois de movê-lo. Em seguida, toque em **[!UICONTROL Próximo]** para prosseguir.
-   * Toque em **[!UICONTROL Cancelar]** para interromper o processo.
+1. Selecione o ativo e clique na opção **[!UICONTROL Mover]** na barra de ferramentas.
+   ![Opção Mover na barra de ferramentas Ativos](assets/do-not-localize/move_icon.png)
 
+1. No assistente [!UICONTROL Mover ativos] , execute um dos procedimentos a seguir:
+
+   * Especifique o nome do ativo depois de movê-lo. Em seguida, clique em **[!UICONTROL Avançar]** para continuar.
+
+   * Clique em **[!UICONTROL Cancelar]** para interromper o processo.
    >[!NOTE]
    >
-   >Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde um ativo com o mesmo nome exista. Se você usar o mesmo nome, o sistema gera automaticamente uma variação do nome. Por exemplo, se seu ativo tiver o nome Quadrado, o sistema gera o nome Quadrado1 para sua cópia.
-
-   >[!NOTE]
-   >
-   >Os seguintes caracteres (lista separada por espaços de) não são suportados:
-   >* o nome do arquivo de ativo não deve conter  `* / : [ \ \ ] | # % { } ? &`
-   >* o nome da pasta de ativos não deve conter  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde um ativo com o mesmo nome exista. Se você usar o mesmo nome, o sistema gera automaticamente uma variação do nome. Por exemplo, se seu ativo tiver o nome Quadrado, o sistema gera o nome Quadrado1 para sua cópia.
+   >* Ao renomear, o espaço em branco não é permitido no nome do arquivo.
 
 
-1. Na página **[!UICONTROL Selecionar destino]** , execute um dos procedimentos a seguir:
+1. Na caixa de diálogo **[!UICONTROL Selecionar destino]** , execute um dos procedimentos a seguir:
 
-   * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * Toque em **[!UICONTROL Voltar]** para retornar à página **[!UICONTROL Renomear]** .
+   * Navegue até o novo local dos ativos e clique em **[!UICONTROL Avançar]** para continuar.
+
+   * Clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Renomear]** .
 
 1. Se os ativos que estão sendo movidos tiverem páginas, ativos ou coleções de referência, a guia **[!UICONTROL Ajustar referências]** aparecerá ao lado da guia **[!UICONTROL Selecionar destino]** .
 
-   Siga um destes procedimentos na página **[!UICONTROL Ajustar referências]** :
+   Execute um dos procedimentos a seguir na tela **[!UICONTROL Ajustar referências]** :
 
-   * Especifique as referências a serem ajustadas com base nos novos detalhes e toque em **[!UICONTROL Mover]** para continuar.
-   * Na coluna **[!UICONTROL Ajustar]** , selecione ou cancele a seleção de referências aos ativos.
-   * Toque em **[!UICONTROL Voltar]** para retornar à página **[!UICONTROL Selecionar destino]** .
-   * Toque em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
+   * Especifique as referências a serem ajustadas com base nos novos detalhes e clique em **[!UICONTROL Mover]** para continuar.
+
+   * Na coluna **[!UICONTROL Ajustar]** , selecione/desmarque referências aos ativos.
+   * Clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
+
+   * Clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
 
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
@@ -581,7 +584,7 @@ Para obter mais informações específicas do Dynamic Media, consulte [Publicaç
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas ou não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Toque em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
@@ -761,7 +764,7 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
    * [Ações rápidas](managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 
