@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guia do usuário para criação do AEM 6.4
-breadcrumb-title: Authoring Guide
-user-guide-description: Learn key concepts for creating content and authoring in AEM.
+user-guide-title: Guia do usuário de criação do AEM 6.4
+breadcrumb-title: Guia de criação
+user-guide-description: Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 89%
+source-wordcount: '278'
+ht-degree: 92%
 
 ---
 
 
-# Guia do usuário para criação do AEM 6.4 {#authoring}
+# Guia do usuário de criação do AEM 6.4 {#authoring}
 
 + [Visão geral do Guia do usuário de criação](home.md)
 + Tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
