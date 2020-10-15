@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guia do usuário para desenvolvimento do AEM 6.4
-breadcrumb-title: Developing Guide
-user-guide-description: This guide covers how to build out your AEM instance.
+user-guide-title: Guia do usuário para desenvolvimento no AEM 6.4
+breadcrumb-title: Guia de desenvolvimento
+user-guide-description: Este guia aborda como criar sua instância no AEM.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 10%
+source-wordcount: '815'
+ht-degree: 12%
 
 ---
 
 
-# Guia do usuário para desenvolvimento do AEM 6.4 {#developing}
+# Guia do usuário para desenvolvimento no AEM 6.4 {#developing}
 
 + [Visão geral do Guia do usuário de desenvolvimento](home.md)
 + Introdução para desenvolvedores{#introduction}
@@ -101,20 +101,20 @@ ht-degree: 10%
    + [Sem cabeça e Híbrido com AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Ativando a exportação JSON para um componente](json-exporter-components.md)
    + Aplicativos de página única{#spas}
-      + [Introdução ao SPA e Walkthrough](spa-walkthrough.md)
-      + [Tutorial WKND do SPA](spa-wknd.md)
-      + [Introdução aos SPAs no AEM - Reagir](spa-getting-started-react.md)
-      + [Introdução aos SPAs no AEM - Angular](spa-getting-started-angular.md)
+      + [Introdução SPA e Walkthrough](spa-walkthrough.md)
+      + [Tutorial SPA WKND](spa-wknd.md)
+      + [Introdução ao SPA no AEM - Reagir](spa-getting-started-react.md)
+      + [Introdução ao SPA no AEM - Angular](spa-getting-started-angular.md)
       + [Implementação de um componente de reação para SPA](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
-      + [Visão geral do editor SPA](spa-overview.md)
-      + [Desenvolvimento de SPAs para AEM](spa-architecture.md)
-      + [Blueprint do SPA](spa-blueprint.md)
-      + [Componente de página do SPA](spa-page-component.md)
-      + [Modelo dinâmico para mapeamento de componentes para SPAs](spa-dynamic-model-to-component-mapping.md)
-      + [Roteamento de modelo SPA](spa-routing.md)
-      + [Integração de SPA e Adobe Experience Platform Launch](spa-launch.md)
-      + [Renderização do SPA e do servidor](spa-ssr.md)
+      + [Visão geral do editor de SPA](spa-overview.md)
+      + [Desenvolver SPA para AEM](spa-architecture.md)
+      + [SPA Blueprint](spa-blueprint.md)
+      + [Componente da página SPA](spa-page-component.md)
+      + [Modelo dinâmico para mapeamento de componentes para SPA](spa-dynamic-model-to-component-mapping.md)
+      + [roteamento Modelo SPA](spa-routing.md)
+      + [Integração SPA e Adobe Experience Platform Launch](spa-launch.md)
+      + [Renderização do servidor e do SPA](spa-ssr.md)
       + [Materiais de referência SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Fragmentos de conteúdo](/help/assets/content-fragments.md)
