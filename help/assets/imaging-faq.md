@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1758'
 ht-degree: 2%
 
 ---
@@ -120,8 +120,8 @@ Seu primeiro domínio personalizado não tem custo adicional com uma licença do
 
 Você deve iniciar a solicitação para usar a geração inteligente de imagens; ela não é ativada automaticamente.
 
-1. Iniciar uma solicitação de suporte técnico (email: s7support@adobe.com).
-1. Forneça as seguintes informações em sua solicitação de suporte:
+1. [Use a Admin Console para criar um caso de suporte.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Forneça as seguintes informações em seu caso de suporte:
 
    1. Nome do contato principal, email, telefone.
    1. Todos os domínios a serem ativados para geração de imagens inteligente (ou seja, images.empresa.com ou mycompany.sceno7.com).
