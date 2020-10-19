@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '761'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ O site a seguir descreve o HTTP/2 e seus benefícios de uma forma breve e simple
 
 O aprimoramento do desempenho varia muito com base em fatores como o código do seu site, a forma como você está usando o Scene7, o dispositivo do consumidor, a tela e o local, e assim por diante.
 
-Os resultados obtidos são os seguintes:
+Os resultados obtidos foram os seguintes:
 
 * Para imagens, o tempo de resposta melhorou de 7% a 28%, dependendo do dispositivo e do navegador. Os ganhos de desempenho mais notáveis foram nos dispositivos iOS.
 * Para visualizadores, o desempenho do tempo de carregamento melhorou 15%.
@@ -57,9 +57,8 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 ## Qual é o processo para habilitar HTTP/2 para minha conta do Dynamic Media Classic? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-Você deve iniciar uma solicitação de suporte técnico do Adobe (`s7support@adobe.com`) para alternar para HTTP/2; isso não é feito automaticamente para você.
-
-1. Forneça as seguintes informações em sua solicitação de suporte:
+1. Você deve [usar o Admin Console para criar um caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de suporte e solicitar a alternância para HTTP/2; isso não é feito automaticamente para você.
+1. Forneça as seguintes informações em seu caso de suporte:
 
    * Nome do contato principal, email e número de telefone.
    * Todos os domínios a serem transferidos para HTTP2. Isso é, `images.company.com` ou `mycompany.scene7.com`.
