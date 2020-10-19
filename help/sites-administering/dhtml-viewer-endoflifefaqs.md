@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 1%
+source-wordcount: '1665'
+ht-degree: 0%
 
 ---
 
@@ -131,4 +131,4 @@ Embora você ainda possa estar em produção com visualizadores baseados em DHTM
 
 **Com quem posso entrar em contato para obter mais informações?**
 
-Se essas Perguntas frequentes não responderem todas as suas perguntas, entre em contato com o suporte ([s7support@adobe.com](mailto:s7support@adobe.com)) ou com o gerente de conta da Adobe.
+Se essas Perguntas frequentes não responderem a todas as suas perguntas, [use a Admin Console para criar um caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de suporte ou entre em contato com o gerente da conta do Adobe.
