@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5477'
+source-wordcount: '5491'
 ht-degree: 1%
 
 ---
@@ -217,7 +217,7 @@ Você pode configurar AEM para carregar ativos no Dynamic Media Classic. Os ativ
 Para configurar o Dynamic Media Classic para integração com o AEM, é necessário concluir as seguintes etapas:
 
 1. [Definir uma configuração](#creating-a-cloud-configuration-for-scene) de nuvem - Define o mapeamento entre uma pasta do Dynamic Media Classic e uma pasta Assets. É necessário concluir esta etapa mesmo se você quiser apenas sincronização unidirecional (AEM Assets para o Dynamic Media Classic).
-1. [Ative o **Adobe CQ s7dam Dam Listener **](#enabling-the-adobe-cq-scene-dam-listener)- Concluído no console do[!UICONTROL OSGi].
+1. [Ative o **Adobe CQ s7dam Dam Listener**](#enabling-the-adobe-cq-scene-dam-listener) - Concluído no console do [!UICONTROL OSGi] .
 1. Se quiser que AEM ativos sejam carregados automaticamente no Dynamic Media Classic, ative essa opção e adicione o Dynamic Media Classic ao fluxo de trabalho de ativos de atualização do DAM. Você também pode fazer upload manual de ativos.
 1. Adicionar componentes do Dynamic Media Classic ao sidekick. Isso permite que os usuários usem componentes do Dynamic Media Classic em suas páginas AEM.
 1. [Mapear a configuração para a página no AEM](#enabling-scene-for-wcm) - Essa etapa é necessária para visualização de qualquer predefinição de vídeo criada no Dynamic Media Classic. Também é necessário se você precisar executar um ativo de publicação de fora da pasta do público alvo CQ para o Dynamic Media Classic.
@@ -277,7 +277,7 @@ Com a sincronização entre o AEM Assets e o Dynamic Media Classic, existem atua
    <td>Se um vídeo for carregado no AEM Assets para codificação pelo Dynamic Media Classic, as miniaturas de vídeo e os vídeos codificados podem levar algum tempo para serem disponibilizados no AEM Assets, dependendo do tempo de processamento do vídeo.</td> 
   </tr> 
   <tr> 
-   <td>Subpastas de Públicos alvos</td> 
+   <td>Subpastas de públicos alvos</td> 
    <td><p>Se você estiver usando subpastas dentro da pasta do público alvo, certifique-se de usar nomes exclusivos para cada ativo (independentemente da localização) ou configurar o Dynamic Media Classic (na área de Configuração) para não substituir ativos independentemente da localização.</p> <p>Caso contrário, os ativos com o mesmo nome carregados em uma subpasta do público alvo do Dynamic Media Classic serão carregados, mas o ativo com o mesmo nome na pasta do público alvo será excluído. </p> </td> 
   </tr> 
  </tbody> 
@@ -398,7 +398,7 @@ Para configurar o carregamento automático do AEM Assets:
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
-1. Navegue até a página de boas-vindas AEM e toque em **[!UICONTROL Workflows]**. Clique com o Duplo no fluxo de trabalho Atualizar ativo **do** DAM para abri-lo.
+1. Navegue até a página de boas-vindas AEM e toque em **[!UICONTROL Workflows]**. Clique com o duplo no fluxo de trabalho Atualizar ativo **do** DAM para abri-lo.
 1. No sidekick, navegue até os componentes do **[!UICONTROL Fluxo de trabalho]** e selecione **[!UICONTROL Dynamic Media Classic]**. Arraste o **[!UICONTROL Dynamic Media Classic]** para o fluxo de trabalho e toque em **[!UICONTROL Salvar]**. Os ativos adicionados ao AEM Assets na pasta público alvo serão carregados automaticamente para o Dynamic Media Classic.
 
    ![chlimage_1-301](assets/chlimage_1-301.png)
@@ -425,7 +425,7 @@ No entanto, se você não quiser que os ativos enviados para o Dynamic Media Cla
 
 Antes de poder enviar ativos para o Dynamic Media Classic sem publicá-los, você deve configurar o seguinte:
 
-1. Entre em contato com o Atendimento ao cliente do Dynamic Media Classic (s7support@adobe.com) para ativar a pré-visualização segura para sua conta do Dynamic Media Classic.
+1. [Use a Admin Console para criar um caso de suporte.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) No caso de suporte, solicite que a pré-visualização segura seja ativada para sua conta do Dynamic Media Classic.
 1. Siga as instruções para [configurar a pré-visualização segura para sua conta do Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Estas são as mesmas etapas que você seguiria para criar qualquer configuração de teste segura no Dynamic Media Classic.
@@ -458,7 +458,7 @@ Para definir o estado dos ativos enviados para o Dynamic Media Classic como não
 
    Consulte a documentação [do](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) Dynamic Media Classic para obter mais informações sobre como testar ativos antes de torná-los públicos.
 
-   ![chlimage_1-382](assets/chlimage_1-302.png)
+   ![chlimage_1-302](assets/chlimage_1-302.png)
 
 1. Toque em **[!UICONTROL OK]**.
 
@@ -602,7 +602,7 @@ Se tiver problemas para integrar AEM com o Dynamic Media Classic, consulte os se
 
 * Verifique se você usou o componente de vídeo correto. O componente de vídeo do Dynamic Media Classic é diferente do componente básico de vídeo. Consulte Componente de vídeo do [Foundation versus Componente](/help/assets/s7-video.md)de vídeo do Dynamic Media Classic.
 
-**Se os ativos novos ou modificados no AEM não forem carregados automaticamente no Dynamic Media Classic:**
+**Se os ativos novos ou modificados no AEM não forem carregados automaticamente para o Dynamic Media Classic:**
 
 * Verifique se os ativos estão na pasta do público alvo CQ. Somente os ativos que estão na pasta do público alvo CQ são atualizados automaticamente (desde que você tenha configurado o AEM Assets para fazer upload automático dos ativos).
 * Verifique se você configurou a configuração dos Cloud Services para Ativar o carregamento automático e se atualizou e salvou o fluxo de trabalho do ativo DAM para incluir o upload do Dynamic Media Classic.
