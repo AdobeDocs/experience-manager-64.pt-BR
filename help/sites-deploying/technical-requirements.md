@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3142'
 ht-degree: 2%
 
 ---
@@ -270,7 +270,7 @@ A versão mínima da API do servlet é necessária para o Servlet 3.1, mas abaix
 |---|---|
 | **Mecanismo Servlet integrado Quickstart (Jetty 9.3)** | A: Suportado |
 | Oracle WebLogic Server 12.2 (12cR2) | A: Suportado |
-| Delivery contínuo IBM WebSphere Application Server (LibertyProfile) com Perfil Web 7.0 e IBM JRE 1.8 | A: Suportado |
+| DELIVERY contínuo IBM WebSphere Application Server (LibertyProfile) com Perfil Web 7.0 e IBM JRE 1.8 | A: Suportado |
 | IBM WebSphere Application Server 9.0 | A: Suportado |
 | Apache Tomcat 8.5.x | A: Suportado |
 | JBoss EAP 7.1.0 com JBoss Application Server | A: Suportado (1) |
@@ -319,7 +319,7 @@ A Adobe Experience Manager trabalha com as seguintes plataformas de servidor:
  </tbody> 
 </table>
 
-1. O Linux Kernel 2.6, 3.x e 4.x inclui derivados da distribuição Red Hat, incluindo Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. AEM recursos de complemento de formulário só são suportados no CentOS 7 e Red Hat Enterprise Linux 6.5 e 7.
+1. O Linux Kernel 2.6, 3.x e 4.x inclui derivados da distribuição Red Hat, incluindo Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Os recursos complementares do AEM Forms só são suportados no CentOS 7 e no Red Hat Enterprise Linux 7.
 1. AEM Assets: Consulte a seção [Suporte para XMP gravação de metadados](#requirements-for-aem-assets-xmp-metadata-write-back)
 1. AEM Assets: Não há suporte para o Dynamic Media Imaging. O Dynamic Media Video é compatível.
 1. O AEM Forms é compatível apenas com Ubuntu 16.04 LTS.
@@ -496,7 +496,7 @@ Com o Dynamic Media ativado, os seguintes requisitos de sistema adicionais se ap
 >
 >Os seguintes requisitos do sistema se aplicam **_somente_** se você usar o Dynamic Media - modo Híbrido; Dynamic Media - O modo híbrido tem um servidor de imagem incorporado, que só é certificado em determinados sistemas operacionais.
 >
->Para clientes do Dynamic Media que executam o modo Dynamic Media - Scene7 (ou seja, **modo de execução dynamicmedia_sceno7** ), não há requisitos de sistema adicionais; apenas os mesmos requisitos de sistema AEM. Dynamic Media - A arquitetura de modo Scene7 usa o serviço de imagem baseado em nuvem, não o serviço incorporado no AEM.
+>Para clientes do Dynamic Media que executam o modo Dynamic Media - Scene7 (ou seja, **modo de execução dynamicmedia_sceno7** ), não há requisitos adicionais de sistema; apenas os mesmos requisitos de sistema AEM. Dynamic Media - A arquitetura de modo Scene7 usa o serviço de imagem baseado em nuvem, não o serviço incorporado no AEM.
 
 #### Hardware {#hardware}
 
@@ -617,7 +617,7 @@ x86
 >
 >* O Gerador de PDF requer o rastreamento clássico [Acrobat 2017 versão 17.011.30078 ou posterior](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
 >* A AEM Forms suporta apenas edições de 32 bits de software suportado.
->* Os recursos de OCR PDF (Searchable PDF), Optimize PDF e Export PDF só são suportados no Microsoft Windows.
+>* Os recursos de OCR PDF (Searchable PDF), Optimize PDF e Export PDF são suportados apenas no Microsoft Windows.
 >* O serviço HTML2PDF está obsoleto no AIX.
 >* As conversões do Gerador de PDF para OpenOffice são suportadas somente no Windows, Linux e Solaris.
 >* Os recursos OCR PDF, Optimize PDF e Export PDF são suportados apenas no Windows.
