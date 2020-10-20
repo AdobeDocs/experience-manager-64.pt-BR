@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Resumo dos novos recursos e melhorias no AEM 6.4 Forms.
 
 A AEM Forms inclui vários novos recursos e aprimoramentos que simplificam ainda mais a criação, o gerenciamento e as experiências do usuário com formulários adaptáveis e comunicações interativas.
 
-Leia para uma rápida introdução a novos recursos e melhorias. Consulte a documentação para obter detalhes sobre a oferta de recursos. Além disso, consulte AEM 6.4 Notas de [versão](/help/release-notes/forms.md)do Forms. Para obter a documentação completa do Forms AEM 6.4, visite [AEM Guia](/help/forms/home.md)do Usuário do Forms 6.4.
+Leia para uma rápida introdução a novos recursos e melhorias. Consulte a documentação para obter detalhes sobre a oferta de recursos. Além disso, consulte AEM 6.4 Notas de [versão](/help/release-notes/forms.md)do Forms. Para obter a documentação completa do Forms AEM 6.4, visite [AEM Guia](/help/forms/home.md)Forms 6.4.
 
 ## Comunicações interativas {#interactive-communications}
 
@@ -31,7 +31,7 @@ Leia para uma rápida introdução a novos recursos e melhorias. Consulte a docu
 
 A Interative Communications centraliza e gerencia a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, cartas, documentos, declarações, avisos de benefícios, prospetos de gerenciamento de riquezas, emails de marketing, projetos de lei e kits de boas-vindas.
 
-A Interative Communications usa a mesma tecnologia subjacente, os mesmos processos e componentes que os formulários adaptativos para criar comunicações responsivas com vários canais, como formulários adaptativos responsivos.
+A Interative Communications usa a mesma tecnologia, processos e componentes subjacentes que os formulários adaptativos para criar comunicações responsivas de vários canais, como formulários adaptativos responsivos.
 
 A comunicação interativa oferta vantagens significativas:
 
@@ -193,10 +193,10 @@ Veja a seguir as melhorias no aplicativo AEM Forms:
 
 ![aem-forms-documento-security-](assets/aem-forms-document-security-.png)
 
-Usando a segurança do documento, é possível distribuir com segurança todas as informações salvas em um formato compatível. A segurança do Documento garante que somente usuários autorizados possam usar seus documentos. Veja a seguir as principais mudanças na segurança do documento:
+Usando a segurança do documento, é possível distribuir com segurança todas as informações salvas em um formato compatível. A segurança do documento garante que somente usuários autorizados possam usar seus documentos. Veja a seguir as principais mudanças na segurança do documento:
 
-* A segurança do Documento fornece uma Biblioteca de Proteção [Portátil (PPL)](/help/forms/using/document-security-offerings.md) para proteger um documento localmente, sem enviar o documento para o servidor AEM Forms. Somente as credenciais de segurança e os detalhes da política viajam pela rede para o servidor AEM Forms. AEM 6.4 A Forms introduziu a Biblioteca de Proteção Portátil (PPL) em um formato de pacote OSGi. Agora, você pode instalar diretamente a biblioteca PPL em um servidor AEM Forms e usar os recursos de AEM e PPL em conjunto.
-* A segurança do Documento C++ SDK e a biblioteca PPL C++ podem ser compiladas com o Microsoft Visual Studio 2013. A versão anteriormente suportada era o Microsoft Visual Studio 2010.
+* A segurança do documento fornece uma Biblioteca de Proteção [Portátil (PPL)](/help/forms/using/document-security-offerings.md) para proteger um documento localmente, sem enviar o documento para o servidor AEM Forms. Somente as credenciais de segurança e os detalhes da política viajam pela rede para o servidor AEM Forms. AEM 6.4 A Forms introduziu a Biblioteca de Proteção Portátil (PPL) em um formato de pacote OSGi. Agora, você pode instalar diretamente a biblioteca PPL em um servidor AEM Forms e usar os recursos de AEM e PPL em conjunto.
+* A segurança do documento C++ SDK e a biblioteca PPL C++ podem ser compiladas com o Microsoft Visual Studio 2013. A versão anteriormente suportada era o Microsoft Visual Studio 2010.
 
 ## Plataformas compatíveis {#supported-platforms}
 
