@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+source-git-commit: 503910dbea671cf441307f4fa4bdc24e54fd338e
 workflow-type: tm+mt
-source-wordcount: '3276'
-ht-degree: 1%
+source-wordcount: '3305'
+ht-degree: 0%
 
 ---
 
@@ -253,7 +253,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 
 ### Sistemas operacionais para servidores {#server-operating-systems}
 
-#### ambientes de produção {#production-environments}
+#### Ambientes de produção {#production-environments}
 
 <table> 
  <tbody> 
@@ -278,7 +278,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
    <td><p>Atualizações e patches</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Nota:</b> O Red Hat Enterprise Linux 6 chega ao Fim da Fase de Manutenção e transições para a Fase de Vida Estendida em 30 de novembro de 2020. A Adobe recomenda o Red Hat Enterprise Linux 7 para atualização e novas instalações.</p> </td> 
    <td><p>A: Suportado</p> </td> 
    <td><p>Versões secundárias, atualizações cumulativas e atualizações críticas</p> </td> 
   </tr> 
@@ -309,11 +309,11 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 >
 >A AEM Forms em JEE suporta apenas sistemas operacionais de 64 bits.
 
-#### ambiente virtualizado {#virtualized-environment}
+#### Ambiente virtualizado {#virtualized-environment}
 
 Você pode executar o AEM Forms no JEE em uma máquina física ou em um ambiente virtual. Entretanto, se você encontrar qualquer problema com a AEM Forms em um ambiente virtual, tente replicar o problema em uma máquina física. Se o problema persistir no computador físico, entre em contato com o Suporte ao Adobe para obter uma resolução. Para problemas que não sejam replicados na máquina física, entre em contato com o fornecedor do ambiente virtual.
 
-#### ambientes de desenvolvimento {#development-environments}
+#### Ambientes de desenvolvimento {#development-environments}
 
 <table> 
  <tbody> 
@@ -571,9 +571,9 @@ Os seguintes subsistemas da AEM Forms não são compatíveis com [508](https://w
    <td>Requisitos de hardware para um pequeno ambiente de produção</td> 
    <td> 
     <ul> 
-     <li><strong>ambiente</strong>alimentado pela Intel: Intel® Xeon® E5-2680, 2,4 GHz ou superior. O uso de um processador dual core aumenta ainda mais o desempenho</li> 
-     <li><strong>ambiente acionado por Sun SPARC:</strong> UltraSPARC V ou posterior</li> 
-     <li><strong>ambiente alimentado pelo IBM AIX:</strong> Power6 ou posterior<br /> </li> 
+     <li><strong>Ambiente</strong>alimentado pela Intel: Intel® Xeon® E5-2680, 2,4 GHz ou superior. O uso de um processador dual core aumenta ainda mais o desempenho</li> 
+     <li><strong>Ambiente acionado por Sun SPARC:</strong> UltraSPARC V ou posterior</li> 
+     <li><strong>AMBIENTE alimentado pelo IBM AIX:</strong> Power6 ou posterior<br /> </li> 
      <li><strong>Memória: </strong>4 GB <br /> </li> 
     </ul> </td> 
   </tr> 
@@ -809,4 +809,4 @@ O Adobe reserva-se o direito de alterar as plataformas de referência de terceir
 
 Informações adicionais sobre patches de terceiros também podem ser encontradas ao pesquisar no site de suporte empresarial da Adobe artigos da base de conhecimento relacionados ao seu produto.
 
-[**Entre em contato com o suporte **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Entre em contato com o suporte**](https://www.adobe.com/account/sign-in.supportportal.html)
