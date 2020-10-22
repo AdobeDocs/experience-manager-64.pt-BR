@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
-source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 84%
+source-wordcount: '555'
+ht-degree: 86%
 
 ---
 
@@ -35,10 +35,6 @@ O ambiente de criação oferece os mecanismos para criação, atualização e an
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
 No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces de usuário. Para o ambiente de publicação, você projeta toda a aparência e comportamento da interface disponível para os usuários.
-
->[!NOTE]
->
->AEM e o Dispatcher são usados para publicar essa documentação AEM.
 
 ## Ambiente de criação {#author-environment}
 
@@ -96,4 +92,4 @@ Quando o site do AEM é um [site da comunidade](/help/communities/overview.md), 
 
 ## Dispatcher {#dispatcher}
 
-Para otimizar o desempenho para os visitantes do seu site, o **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)implementa o balanceamento de carga e o cache.**
+Para otimizar o desempenho para os visitantes do seu site, o **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) implementa o balanceamento de carga e o cache.**
