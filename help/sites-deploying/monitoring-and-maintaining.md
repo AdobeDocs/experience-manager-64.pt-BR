@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
 workflow-type: tm+mt
 source-wordcount: '5893'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Um fator chave aqui é que para reconhecer possíveis problemas você precisa sa
 | [Os arquivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de log estão sendo monitorados. |  |  |
 | O monitoramento do sistema está (constantemente) sendo executado em segundo plano. | Incluindo o uso da CPU, memória, disco e rede. Usando, por exemplo, iostat / vmstat / perfmon. | Os dados registrados são visualizados e podem ser usados para rastrear problemas de desempenho. Os dados brutos também podem ser acessados. |
 | [AEM desempenho está sendo monitorado](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Incluindo Contadores [de](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) solicitação para monitorar os níveis de tráfego. | Caso se verifique uma perda significativa ou a longo prazo do desempenho, deve ser efetuada uma investigação aprofundada. |
-| Você está monitorando seus agentes [de replicação](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
+| Você está monitorando seus agentes [de replicação](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Expurgar instâncias de fluxo de trabalho regularmente. | Tamanho do repositório e desempenho do fluxo de trabalho. | Consulte Expurgação [regular de instâncias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de fluxo de trabalho. |
 
 ## Backups {#backups}
@@ -99,13 +99,13 @@ Esta seção trata das operações de manutenção relacionadas ao recurso de co
 
 ### Visão geral {#overview}
 
-A ferramenta **Expurgar versões** está disponível no console **[Ferramentas](/help/sites-administering/tools-consoles.md)**em**Controle de versão **ou diretamente em: &quot;
+A ferramenta **Expurgar versões** está disponível no console **[Ferramentas](/help/sites-administering/tools-consoles.md)** em **Controle de versão** ou diretamente em:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Caminho** do Start Um caminho absoluto no qual a expurgação deve ser feita. Você pode selecionar o Caminho do Start clicando no navegador da árvore do repositório.
+**Caminho** do start Um caminho absoluto no qual a expurgação deve ser feita. Você pode selecionar o Caminho do Start clicando no navegador da árvore do repositório.
 
 **Recursivo** Ao expurgar dados, você pode escolher entre executar a operação em um nó ou em uma hierarquia inteira selecionando Recursivo. No último caso, o caminho especificado define o nó raiz da hierarquia.
 
@@ -121,7 +121,7 @@ A ferramenta **Expurgar versões** está disponível no console **[Ferramentas](
 
 Para expurgar versões de um site, proceda da seguinte maneira:
 
-1. Navegue até o console **[](/help/sites-administering/tools-consoles.md)Ferramentas, selecione **Controle de versão**e clique com o duplo em **Expurgar versões****.
+1. Navegue até o console **[](/help/sites-administering/tools-consoles.md) Ferramentas, selecione** Controle de versão **e clique com o duplo em** Expurgar versões ****.
 1. Defina o caminho do start do conteúdo a ser expurgado (por exemplo, `/content/geometrixx-outdoors`).
 
    * Se você quiser apenas expurgar o nó definido pelo seu caminho, desmarque **Recursivo**.
@@ -143,7 +143,7 @@ Para expurgar versões de um site, proceda da seguinte maneira:
 A Execução **** prática e a **Expurgação** processam a lista de todos os nós que foram processados. Durante o processo, um nó pode ter um dos seguintes status:
 
 * `ignore (not versionnable)`: o nó não oferece suporte ao controle de versão e é ignorado durante o processo.
-* `ignore (no version)`: o nó não tem nenhuma versão e é ignorado durante o processo. &quot;
+* `ignore (no version)`: o nó não tem nenhuma versão e é ignorado durante o processo.
 * `retained`: o nó não é expurgado.
 * `purged`: o nó é limpo.
 
@@ -244,7 +244,7 @@ Para ativar o nível de log de depuração para um Logger, defina a propriedade 
 >
 >Não deixe o log no nível do log de depuração por mais tempo do que o necessário, pois ele gera muitas entradas de log, consumindo recursos.
 
-Uma linha no arquivo de depuração geralmente é start com DEBUG e, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
+Uma linha no arquivo de depuração geralmente é start com DEBUG, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
 
 ```shell
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -317,10 +317,15 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
    >`org.apache.sling.commons.log.pattern` apoia até seis argumentos.
    >
    >{0} O carimbo de data e hora do tipo `java.util.Date`
+   >
    >{1} o marcador de log
-   >{2} o nome do thread atual\
-   >{3} o nome do agente de log\
-   >{4} o nível de log\
+   >
+   >{2} o nome do thread atual
+   >
+   >{3} o nome do agente de log
+   >
+   >{4} o nível de log
+   >
    >{5} a mensagem de registro
    >
    >Se a chamada de log incluir um rastreamento de pilha, ele será anexado à mensagem. `Throwable`
@@ -405,21 +410,20 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
    >* Uma programação de hora/data pode ser especificada como um `java.util.SimpleDateFormat` padrão. Isso define o período após o qual o arquivo será girado; também o sufixo anexado ao arquivo girado (para identificação).
 
    >
-   >  O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
+   >O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
    >
-   >  Assim, por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de registro depois disso ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. O registro para o dia 21 de janeiro será enviado para (um novo e vazio) ../logs/error.log até que seja lançado na próxima mudança de dia.
+   >Assim, por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de registro depois disso ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. O registro para o dia 21 de janeiro será enviado para (um novo e vazio) ../logs/error.log até que seja lançado na próxima mudança de dia.
    >
-   >  | `'.'yyyy-MM` | Rotação no início de cada mês |
-   >  |---|---|
-   >  | `'.'yyyy-ww` | Rotação no primeiro dia de cada semana (depende da localidade). |
-   >  | `'.'yyyy-MM-dd` | Rotação à meia-noite todos os dias. |
-   >  | `'.'yyyy-MM-dd-a` | Rotação à meia-noite e ao meio-dia de cada dia. |
-   >  | `'.'yyyy-MM-dd-HH` | Rotação no topo de cada hora. |
-   >  | `'.'yyyy-MM-dd-HH-mm` | Rotação no início de cada minuto. |
+   >| `'.'yyyy-MM` | Rotação no início de cada mês |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotação no primeiro dia de cada semana (depende da localidade). |
+   >| `'.'yyyy-MM-dd` | Rotação à meia-noite todos os dias. |
+   >| `'.'yyyy-MM-dd-a` | Rotação à meia-noite e ao meio-dia de cada dia. |
+   >| `'.'yyyy-MM-dd-HH` | Rotação no topo de cada hora. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotação no início de cada minuto. |
    >
-   >  Observação: Ao especificar uma data/hora:
-   >
-   >  1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples ( &quot;&#39;);
+   >Observação: Ao especificar uma data/hora:
+   > 1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples ( &quot;&#39;);
       >
       >     
       isso serve para evitar que determinados caracteres sejam interpretados como letras padrão.
@@ -456,7 +460,7 @@ Essas entradas possuem as mesmas informações que são exibidas ao editar uma p
 
 #### Registros de auditoria do OSGi do Console da Web {#osgi-audit-records-from-the-web-console}
 
-Os eventos OSGi também geram registros de auditoria que podem ser vistos na guia Status **de** configuração -> **Arquivos de registro **guia no Console Web AEM:
+Os eventos OSGi também geram registros de auditoria que podem ser vistos na guia Status **de** configuração -> guia Arquivos **de** registro no Console da Web AEM:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -474,7 +478,7 @@ Para monitorar um agente de replicação:
 
 1. Acesse a guia **Ferramentas** no AEM.
 1. Clique em **Replicação**.
-1. Clique com o Duplo no link para os agentes do ambiente apropriado (no painel esquerdo ou direito); por exemplo, **Agentes no autor**.
+1. Clique com o duplo no link para os agentes do ambiente apropriado (no painel esquerdo ou direito); por exemplo, **Agentes no autor**.
 
    A janela resultante mostra uma visão geral de todos os seus agentes de replicação para o ambiente do autor, incluindo seu público alvo e status.
 
@@ -489,7 +493,7 @@ Para monitorar um agente de replicação:
    * Veja se a fila de replicação está ativa no momento (ativada).
    * Veja se há algum item na fila.
    * **Atualizar** ou **Limpar** para atualizar a exibição de entradas da fila; isso ajuda você a ver os itens entrando e saindo da fila.
-   * **Log** de Visualizações para acessar o log de quaisquer ações pelo agente de replicação.
+   * **Log** de visualizações para acessar o log de quaisquer ações pelo agente de replicação.
    * **Testar conexão** com a instância do público alvo.
    * **Forçar nova tentativa** em qualquer item da fila, se necessário.
 
@@ -581,7 +585,7 @@ Alguns deles dependerão do seu sistema operacional.
   <tr> 
    <td>Despejo de thread</td> 
    <td>Observe threads JVM. Identifique as disputas, bloqueios e corredores longos.</td> 
-   <td><p>Dependendo do sistema operacional:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo console): Ctrl-Break<br /> </p> <p>Ferramentas de Análise também estão disponíveis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>Dependendo do sistema operacional:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo console): Ctrl-Break<br /> </p> <p>Ferramentas de análise também estão disponíveis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Despejos de heap</td> 
@@ -1121,7 +1125,7 @@ Se o sistema estiver sem espaço em disco ou se você perceber que o disco está
 * A Base de conhecimento:
 
    * [Muitos arquivos abertos](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
-   * [O Journal consome muito espaço em disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [O journal consome muito espaço em disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradação regular do desempenho {#regular-performance-degradation}
 
