@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ Para criar um modelo de canal da Web Complete as etapas a seguir:
 1. Crie uma pasta de modelo para manter seus modelos da Web de comunicação interativa, se você ainda não tiver um. Para obter mais informações, consulte Pastas de modelo em Modelos de [página - Editável](/help/sites-developing/page-templates-editable.md).
 
    1. Toque em **[!UICONTROL Ferramentas]** ![ferramentas-1](assets/tools-1.png) > Navegador **** de configuração.
+      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
    1. Na página Navegador de configuração, toque em **[!UICONTROL Criar]**.
    1. Na caixa de diálogo Criar configuração, especifique um título para a pasta, marque Modelos **** editáveis e toque em **[!UICONTROL Criar]**.
 
