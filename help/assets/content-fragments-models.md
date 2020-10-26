@@ -9,9 +9,9 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
-source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '704'
 ht-degree: 13%
 
 ---
@@ -41,6 +41,7 @@ Para ativar os modelos de fragmento de conteúdo, é necessário:
 Para [criar um novo Modelo](#creating-a-content-fragment-model) de fragmento de conteúdo, é **necessário** primeiro ativá-los usando o Configuration Manager:
 
 1. Navegue até **[!UICONTROL Ferramentas]**, **[!UICONTROL Gerale]** abra o **[!UICONTROL Navegador de configuração]**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Selecione o local apropriado para seu site.
 1. Use **[!UICONTROL Criar]** para abrir a caixa de diálogo, onde você:
 
