@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '303'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -31,9 +31,9 @@ ht-degree: 3%
 
 O AEM Mobile Content Services é um recurso leve e leve para solicitar conteúdo gerenciado pela AEM. Isso fornece a todos os desenvolvedores de aplicativos uma maneira de obter conteúdo de alto desempenho sem precisar ter um conhecimento profundo AEM repositório de conteúdo (JCR) e estrutura da Web (Sling). Isso permite que os aplicativos solicitantes sejam dissociados do repositório de conteúdo.
 
-Os Serviços de conteúdo apresentam várias novas construções de AEM que permitem que um desenvolvedor acesse AEM conteúdo gerenciado sem conhecer a estrutura do repositório desse conteúdo.
+O Content Services apresenta várias construções novas de AEM que permitem que um desenvolvedor acesse AEM conteúdo gerenciado sem conhecer a estrutura do repositório desse conteúdo.
 
-Essas construções são necessárias para manter a flexibilidade e permitir a futura expansão, fornecendo uma camada de abstração entre o conteúdo gerenciado AEM e os aplicativos móveis que usam o conteúdo. Isso permite que AEM Content Services funcione como uma camada de abstração entre os requisitos de conteúdo do aplicativo nativo e o repositório de conteúdo AEM.
+Essas construções são necessárias para manter a flexibilidade e permitir a futura expansão, fornecendo uma camada de abstração entre o conteúdo gerenciado AEM e os aplicativos móveis que consomem o conteúdo. Isso permite que AEM Content Services funcione como uma camada de abstração entre os requisitos de conteúdo do aplicativo nativo e o repositório de conteúdo AEM.
 
 Os Serviços de conteúdo podem fornecer o conteúdo como ativos, HTML empacotado (HTML/CSS/JS) ou como conteúdo independente do canal.
 
@@ -43,7 +43,9 @@ Os Serviços de conteúdo podem fornecer o conteúdo como ativos, HTML empacotad
 >
 >Antes de começar a usar o Content Services, ative o sinalizador Content Services. Para ativar a criação e o gerenciamento de modelos no aplicativo, é necessário ativar os modelos de dados no Navegador de configuração.
 >
->Consulte **[Administração de serviços](/help/mobile/developing-content-services.md)**de conteúdo para obter detalhes.
+>Consulte **[Administração de serviços](/help/mobile/developing-content-services.md)** de conteúdo para obter detalhes.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
