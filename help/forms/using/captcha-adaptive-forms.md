@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ Para implementar o serviço reCAPTCHA no AEM Forms:
 1. Criar container de configuração para serviços em nuvem.
 
    1. Vá até **[!UICONTROL Ferramentas > Geral > Navegador]** de configuração.
+      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
    1. Faça o seguinte para ativar a pasta global para configurações de nuvem ou ignore esta etapa para criar e configurar outra pasta para configurações de serviço de nuvem.
 
       1. No Navegador de configuração, selecione a pasta **[!UICONTROL global]** e toque em **[!UICONTROL Propriedades]**.
