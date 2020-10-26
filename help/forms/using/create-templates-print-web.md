@@ -8,9 +8,9 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -178,6 +178,7 @@ Para criar um modelo de canal da Web, defina uma pasta onde você possa salvar o
 Execute as seguintes etapas para criar uma pasta para os modelos editáveis:
 
 1. Toque em **Ferramentas** ![Ferramentas](assets/tools-icon.svg) > Navegador **de configuração**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Na página Navegador de configuração, toque em **Criar**.
 1. Na caixa de diálogo **Criar configuração** , especifique **Create_First_IC_models** como o título da pasta, marque Modelos **** editáveis e toque em **Criar**.
 
