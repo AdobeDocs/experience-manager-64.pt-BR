@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1668'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ AEM 6.4 vem com o Livefyre feature package 1.2.6 pré-instalado. Este pacote inc
 
 >[!NOTE]
 >
->Alguns recursos do pacote AEM-LF dependem do SCF (Social Component Framework). Se estiver usando o pacote de recursos do Livefyre como parte de um site que não seja de comunidades, você deve declarar *cq.social.scf* como uma dependência nos clientlibs do autor do site. Se você estiver usando o pacote de recursos LF como parte de um site de comunidades, essa dependência já deve ser declarada.
+>Alguns recursos do pacote AEM-LF dependem da Estrutura de componentes sociais (SCF). Se estiver usando o pacote de recursos do Livefyre como parte de um site que não seja de comunidades, você deve declarar *cq.social.scf* como uma dependência nos clientlibs do autor do site. Se você estiver usando o pacote de recursos LF como parte de um site de comunidades, essa dependência já deve ser declarada.
 
 1. Na página inicial AEM, clique no ícone **Ferramentas** no painel esquerdo.
 1. Navegue até **Implantação > Pacotes**.
@@ -52,6 +52,7 @@ AEM 6.4 vem com o Livefyre feature package 1.2.6 pré-instalado. Este pacote inc
 ### Configure AEM para usar o Livefyre: Criar uma pasta de configuração {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. Na página inicial AEM, clique no ícone **Ferramentas** no painel esquerdo e navegue até **Geral > Navegador** de configuração.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Clique em **Criar** para abrir a caixa de diálogo Criar configuração.
 1. Nomeie sua configuração e marque a caixa de seleção Configurações **da** nuvem.
 
@@ -73,6 +74,8 @@ Configure AEM para usar as credenciais de licença do Livefyre de sua organizaç
    >As pastas devem ter as Configurações de nuvem ativadas em suas propriedades antes que as configurações do Livefyre possam ser adicionadas a elas. As pastas de configuração são criadas e gerenciadas no Navegador de configuração.
    >
    >Não é possível criar um nome para uma configuração; ele é referenciado pelo caminho da pasta em que está. Você só pode ter uma configuração por pasta.
+   >
+   >See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Selecione o cartão de configuração do Livefyre recém-criado e clique em **Propriedades**.
 
