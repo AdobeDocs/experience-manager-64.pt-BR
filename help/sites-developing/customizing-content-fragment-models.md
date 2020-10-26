@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Esse componente tem as ferramentas necessárias para renderizar a interface de a
 
 ## Localizações {#locations}
 
-Os modelos são salvos e criados em `/conf`, em uma pasta que tem a propriedade [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) conteúdo ativada. Essa configuração também pode ser vista nas Propriedades **** de configuração, acessíveis no Navegador **de** configuração.
+Os modelos são salvos e criados em `/conf`, em uma pasta que tem a propriedade [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) conteúdo ativada. Essa configuração também pode ser vista nas Propriedades **** de configuração, acessíveis no Navegador **[de](/help/sites-administering/configurations.md)** configuração.
 
 1. Navegue até o navegador por meio de **Ferramentas**, **Geral**, Navegador **de** configuração. Por exemplo, 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
@@ -81,7 +81,7 @@ O assistente criará uma entrada com esta estrutura:
 
 ## Estrutura do Editor de Modelos {#structure-of-the-model-editor}
 
-O Editor **do Modelo de fragmento de** conteúdo tem duas partes:
+O Editor **do Modelo de Fragmento de** Conteúdo tem duas partes:
 
 * O painel pré-visualização, ou visualização, no lado esquerdo, onde é possível soltar itens. Isso:
 
