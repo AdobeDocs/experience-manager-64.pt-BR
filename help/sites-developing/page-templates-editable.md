@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '3223'
+source-wordcount: '3231'
 ht-degree: 8%
 
 ---
@@ -34,7 +34,7 @@ Com modelos editáveis, as partes que fazem uma página são isoladas dentro dos
 
 >[!NOTE]
 >
->AEM 6.4.5.0 ou posterior é necessário para usar modelos editáveis com o Editor [](/help/sites-developing/spa-overview.md)SPA.
+>AEM 6.4.5.0 ou posterior é necessário para usar modelos editáveis com o Editor [de](/help/sites-developing/spa-overview.md)SPA.
 
 >[!NOTE]
 >
@@ -230,6 +230,8 @@ Para criar uma nova pasta, você pode:
 >[!NOTE]
 >
 >No Navegador de configuração, você pode editar a pasta global e ativar a opção Modelos **** editáveis se desejar criar modelos dentro dessa pasta, no entanto, essa não é a prática recomendada.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ### ACLs e grupos {#acls-and-groups}
 
@@ -585,7 +587,7 @@ As políticas de página permitem que você defina a política [de](#content-pol
 
 1. **Modelos permitidos**
 
-   * [Defina os caminhos de modelo permitidos nas Propriedades **da **](/help/sites-authoring/templates.md#allowing-a-template-author)página da página ou da página raiz apropriada de uma subramificação.
+   * [Defina os caminhos de modelo permitidos nas Propriedades **da**](/help/sites-authoring/templates.md#allowing-a-template-author) página da página ou da página raiz apropriada de uma subramificação.
    * Defina a propriedade:
 
       `cq:allowedTemplates`
@@ -599,7 +601,7 @@ As políticas de página permitem que você defina a política [de](#content-pol
 
 Páginas criadas a partir de modelos editáveis:
 
-* São criados com uma subárvore unida de `structure` e `initial` no modelo
+* São criados com uma subárvore que é unida de `structure` e `initial` no modelo
 
 * Ter referências às informações contidas no modelo e no tipo de modelo. Isso é obtido com um `jcr:content` nó com as propriedades:
 
