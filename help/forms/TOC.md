@@ -1,13 +1,14 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
-sub-product: 'formulários '
+sub-product: formulários
+solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Guia do Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 translation-type: tm+mt
-source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
+source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '3721'
 ht-degree: 2%
