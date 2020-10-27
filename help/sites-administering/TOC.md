@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: Guia do usuário de administração do AEM 6.4
 breadcrumb-title: Guia de administração
 user-guide-description: Saiba mais sobre como administrar o AEM.
 translation-type: tm+mt
-source-git-commit: dd3fdd5fd632d79262aeb2edaca0c58bf6710d18
+source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 17%
