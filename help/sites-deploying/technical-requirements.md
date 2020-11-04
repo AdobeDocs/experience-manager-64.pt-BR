@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 155a0425229c79b06eced72b689972e4fdd09265
+source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3181'
 ht-degree: 2%
 
 ---
@@ -171,14 +171,14 @@ Existem várias opções para implantar o repositório da Adobe Experience Manag
    <td>A: Suportado</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.6 [5]</td> 
+   <td>MongoDB Enterprise 3.6 [5, 6]</td> 
    <td>Repositório</td> 
-   <td>A: Suportado</td> 
+   <td>A: Suportado com limitações</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.4 [2, 3]</td> 
+   <td>MongoDB Enterprise 3.4 [2, 3, 6]</td> 
    <td>Repositório</td> 
-   <td>A: Não suportado</td> 
+   <td>A: Suportado com limitações</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
@@ -233,6 +233,7 @@ Existem várias opções para implantar o repositório da Adobe Experience Manag
 1. O WiredTiger do mecanismo de Armazenamento MongoDB é compatível apenas.
 1. Não suportado para AEM Forms.
 1. O MongoDB Enterprise 3.6 é compatível a partir do AEM versão 6.4.2.0.
+1. O suporte ao MongoDB 3.4 chegou ao fim da vida útil (EOL), enquanto o MongoDB 3.6 deve chegar ao EOL em 30 de abril de 2021. Observe que o Adobe só oferecerá suporte para AEM problemas relacionados ao produto daqui para a frente.
 
 >[!NOTE]
 >
