@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3569'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,8 @@ Em um cenário típico de formulários adaptáveis e Adobe Sign, um usuário pre
 
 A integração do Adobe Sign com o AEM Forms suporta:
 
-* workflows de assinatura de usuário único e múltiplo
-* workflows de assinatura sequenciais e simultâneos
+* Workflows de assinatura de usuário único e múltiplo
+* Workflows de assinatura sequenciais e simultâneos
 * Experiências de assinatura em forma e fora de forma
 * Assinar formulários como um usuário anônimo ou conectado
 * Processos de assinatura dinâmica (integração com o fluxo de trabalho da AEM Forms)
@@ -77,6 +77,10 @@ Execute as seguintes etapas para criar um formulário adaptável para Adobe Sign
 
    1. Especifique o **Nome** e o **Título** para o formulário adaptável.
    1. Selecione o container [de](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuração criado ao configurar o Adobe Sign com o AEM Forms.
+
+      >[!NOTE]
+      >
+      >A lista suspensa Cloud Service **[!UICONTROL do]** Adobe Sign exibe os serviços em nuvem configurados no container de configuração selecionado nesse campo. A lista suspensa Cloud Service **** Adobe Sign está disponível na seção Assinatura **** eletrônica das propriedades do formulário adaptável ao selecionar a opção **[!UICONTROL Ativar Adobe Sign]** .
 
 1. Na guia Modelo **[!UICONTROL de]** formulário, selecione uma das seguintes opções:
 
@@ -153,6 +157,8 @@ Execute as seguintes etapas para selecionar um serviço em nuvem e a ordem de as
 1. Selecione um serviço em nuvem na lista já configurada dos Cloud Services Adobe Sign.
 
    Se a lista **Adobe Sign Cloud Service** estiver vazia, siga o artigo [Configurar o Adobe Sign com AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) para configurar o serviço.
+
+   A lista suspensa lista os serviços em nuvem existentes na `global` pasta em Ferramentas > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Além disso, a lista suspensa também lista os serviços em nuvem existentes na pasta selecionada no campo Container **** Configuração ao criar um formulário adaptável.
 
 1. Selecione a ordem de assinatura na caixa de diálogo **Os assinantes podem assinar** . Os cantores Adobe Sign podem assinar um formulário adaptável **Sequencialmente** - um após o outro assinante, ou **Simultaneamente** - em qualquer ordem.
 
