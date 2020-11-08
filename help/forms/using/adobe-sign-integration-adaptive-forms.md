@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,10 @@ Depois que os pré-requisitos estiverem implementados, execute as seguintes etap
 
    >[!NOTE]
    >
-   >Certifique-se de que o URL da página de configuração dos serviços em nuvem seja start com **HTTPS**. Caso contrário, [habilite o SSL](/help/sites-administering/ssl-by-default.md) para o servidor AEM Forms.
+   >Você pode executar as etapas 1 a 4 para criar um novo container de configuração e criar uma configuração Adobe Sign no container ou usar a `global` pasta existente em **Ferramentas** ![martelo](assets/hammer.png) > **Cloud Services** > **Adobe Sign**. Se você criar a configuração no novo container de configuração, especifique o nome do container no campo Container **** Configuração ao criar um formulário adaptável.
+
+   >[!NOTE]
+   Certifique-se de que o URL da página de configuração dos serviços em nuvem seja start com **HTTPS**. Caso contrário, [habilite o SSL](/help/sites-administering/ssl-by-default.md) para o servidor AEM Forms.
 
 1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar a configuração do Adobe Sign no AEM Forms.
 1. Na guia **[!UICONTROL Geral]** da página **[!UICONTROL Criar configuração]** Adobe Sign, especifique um **Nome** para a configuração e toque em **Avançar**. Como opção, você pode especificar um título e navegar para selecionar uma miniatura para a configuração.
