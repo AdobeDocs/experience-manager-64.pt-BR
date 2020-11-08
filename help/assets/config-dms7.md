@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
 workflow-type: tm+mt
-source-wordcount: '5547'
+source-wordcount: '5571'
 ht-degree: 4%
 
 ---
@@ -140,8 +140,8 @@ As tarefas de configuração são:
 * [Configuração de publicação para o Image Server](#publishing-setup-for-image-server)
 * [Definição das configurações gerais do aplicativo](#configuring-application-general-settings)
 * [Configuração do gerenciamento de cores](#configuring-color-management)
-* [Configurar o processamento de ativos](#configuring-asset-processing)
-* [Adicionar tipos MIME personalizados para formatos não suportados](#adding-custom-mime-types-for-unsupported-formats)
+* [Edição de tipos MIME para formatos suportados](#editing-mime-types-for-supported-formats)
+* [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats)
 * [Criando predefinições de conjuntos de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuração de publicação para o Image Server {#publishing-setup-for-image-server}
@@ -212,21 +212,18 @@ Isso faria o seguinte:
 * As representações dinâmicas que retornam a saída RGB retornarão no espaço de `sRGB` cores.
 * As renderizações dinâmicas que retornam a saída CMYK retornarão no espaço de `WebCoated` cores.
 
-#### Configurar o processamento de ativos {#configuring-asset-processing}
+#### Edição de tipos MIME para formatos suportados {#editing-mime-types-for-supported-formats}
 
 Você pode definir quais tipos de ativos devem ser processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
 * Converter um Adobe PDF em um ativo eCatalog.
 * Converta um Documento Adobe Photoshop (.PSD) em um ativo de modelo de banner para personalização.
 * Rasterize um arquivo Adobe Illustrator (.AI) ou um arquivo Adobe Photoshop Encapsulated Postscript (.EPS).
-
->[!NOTE]
->
->Perfis de vídeo e Perfis de imagem podem ser usados para definir o processamento de vídeos e imagens, respectivamente.
+* [Perfis](/help/assets/video-profiles.md) de vídeo e Perfis [de](/help/assets/image-profiles.md) imagem podem ser usados para definir o processamento de vídeos e imagens, respectivamente.
 
 Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 
-**Para configurar o processamento** de ativos:
+**Para editar tipos MIME para formatos suportados**
 
 1. Em AEM, toque no logotipo AEM para acessar o console de navegação global, toque no ícone **[!UICONTROL Ferramentas]** (martelo) e navegue até **[!UICONTROL Geral > CRXDE Lite]**.
 1. No painel esquerdo, navegue até o seguinte:
@@ -252,7 +249,7 @@ Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 
 Adicione tipos MIME personalizados para formatos não compatíveis com o AEM Assets. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before **[!UICONTROL image_]** and its enabled value is set to **[!UICONTROL false]**.
 
-**Para adicionar tipos MIME personalizados para formatos** não suportados:
+**Para adicionar tipos MIME personalizados para formatos não suportados**
 
 1. Em AEM, clique em **[!UICONTROL Ferramentas > Operações > Console]** da Web.
 
@@ -498,7 +495,7 @@ Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o su
 
 A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho de Atualização de ativo **[!UICONTROL do]** DAM. No Dynamic Media, é usado para assimilação e processamento de imagens.
 
-**Para atualizar a fila** Fluxo de Trabalho Transitório do Granite:
+**Para atualizar a fila Fluxo de Trabalho Transitório do Granite**
 
 1. Navegue até [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) e pesquise por **[!UICONTROL Fila: Fila]** de Fluxo de Trabalho Transitório Granite.
 
@@ -508,11 +505,13 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
 1. No campo **[!UICONTROL Máximo de trabalhos]** paralelos, altere o número para o valor desejado.
 
-   Por padrão, o número máximo de trabalhos paralelos depende do número de núcleos de CPU disponíveis. Por exemplo, em um servidor de 4 núcleos, atribui 2 processos de trabalho. (Um valor entre 0,0 e 1,0 é baseado em relação, ou qualquer número maior que 1 atribuirá o número de threads de trabalho.)
+   Você pode aumentar **[!UICONTROL Máximo de trabalhos]** paralelos para suportar adequadamente o carregamento pesado de arquivos para o Dynamic Media. O valor exato depende da capacidade do hardware. Em certos cenários, ou seja, uma migração inicial ou um carregamento em massa único, é possível usar um valor grande. No entanto, esteja ciente de que o uso de um valor grande (como duas vezes o número de núcleos) pode ter efeitos negativos em outras atividades simultâneas. Dessa forma, você deve testar e ajustar o valor com base no seu caso de uso específico.
 
-   A Adobe recomenda que 32 **[!UICONTROL Máximo de tarefas]** paralelas sejam configuradas para suportar adequadamente o carregamento pesado de arquivos para o Dynamic Media Classic.
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Toque em **[!UICONTROL Salvar]**.
 
