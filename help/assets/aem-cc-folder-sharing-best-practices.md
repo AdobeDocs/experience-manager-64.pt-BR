@@ -3,9 +3,9 @@ title: Compartilhar pastas do AEM Assets com o Creative Cloud
 description: Configuração e práticas recomendadas para permitir que usuários do Adobe Experience Manager Assets troquem pastas de ativos com usuários do Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ O diagrama a seguir fornece uma visão geral da integração.
 A integração inclui os seguintes elementos:
 
 * **Servidor** AEM Assets implantado na rede corporativa (serviços gerenciados ou no local): O compartilhamento de pastas é iniciado aqui.
-* **Serviço** principal do Adobe Marketing Cloud Assets: Atua como intermediário entre os serviços de armazenamento e AEM. O administrador da empresa que usa a integração precisa estabelecer uma relação de confiança entre a organização do Marketing Cloud e a instância do AEM Assets. Eles também [definem uma lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)aprovados para Creative Cloud, que os usuários da AEM Assets também podem compartilhar pastas para segurança adicional.
+* **Serviço** principal do Adobe Marketing Cloud Assets: Atua como intermediário entre os serviços de armazenamento e AEM. O administrador da empresa que usa a integração precisa estabelecer uma relação de confiança entre a organização do Marketing Cloud e a instância do AEM Assets. Eles também [definem uma lista de colaboradores](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets)aprovados para Creative Cloud, que os usuários da AEM Assets também podem compartilhar pastas para segurança adicional.
 * **Serviços** da Web do Creative Cloud Assets (UI da Web de arquivos de armazenamento e Creative Cloud): É aqui que usuários Creative Cloud específicos, com os quais uma pasta AEM Assets foi compartilhada, poderão aceitar o convite e ver a pasta em seu armazenamento de conta Creative Cloud.
 * **Aplicativo** para desktop Creative Cloud: (Opcional) Permite acesso direto a pastas/arquivos compartilhados da área de trabalho do usuário criativo por meio da sincronização com o armazenamento Creative Cloud Assets.
 
