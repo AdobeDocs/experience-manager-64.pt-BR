@@ -3,9 +3,9 @@ title: Gerencie ativos compostos e gere subativos.
 description: Saiba como criar referências a ativos AEM a partir de arquivos InDesign, Adobe Illustrator e Photoshop. Saiba mais sobre como usar o recurso Visualizador de página para visualização de páginas individuais de arquivos de várias páginas, incluindo arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1386'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Os subativos são exibidos somente se os subativos forem gerados e estiverem dis
 
 ![Visualização de subativos para um ativo de várias páginas](assets/view_subassets_simulation.gif)
 
-## páginas de Visualização de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
+## páginas de visualização de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
 
 É possível visualização de um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e AI, usando o recurso Visualizador de páginas do AEM Assets. Abra um ativo de várias páginas e clique em Páginas **[!UICONTROL de]** Visualização no canto superior esquerdo da página. O Visualizador de página que é aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom em cada página.
 
@@ -117,7 +117,7 @@ Para o InDesign, você pode extrair páginas usando o servidor do InDesign. Se a
 
 As seguintes opções estão disponíveis na barra de ferramentas, no painel esquerdo e nos controles do Visualizador de páginas:
 
-* **[!UICONTROL Ações]** da área de trabalho para abrir ou revelar um subativo específico usando AEM aplicativo da área de trabalho. Veja como [configurar as ações](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) da área de trabalho se você estiver usando AEM aplicativo da área de trabalho.
+* **[!UICONTROL Ações]** da área de trabalho para abrir ou revelar um subativo específico usando AEM aplicativo da área de trabalho. Veja como [configurar as ações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) da área de trabalho se você estiver usando AEM aplicativo da área de trabalho.
 
 * **[!UICONTROL A opção Propriedades]** abre a página [!UICONTROL Propriedades] do subativo específico.
 
@@ -133,4 +133,5 @@ As seguintes opções estão disponíveis na barra de ferramentas, no painel esq
 
 >[!MORELIKETHIS]
 >
->* [Usar o aplicativo Adobe Experience Manager para desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Usar o aplicativo Adobe Experience Manager para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+
