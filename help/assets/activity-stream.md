@@ -3,10 +3,10 @@ title: Atividade na linha do tempo
 description: 'Este artigo descreve como exibir registros de atividades para ativos na linha do tempo. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 40%
+source-wordcount: '214'
+ht-degree: 36%
 
 ---
 
@@ -21,18 +21,18 @@ As seguintes operações são registradas no fluxo de atividade:
 * Excluir
 * Download (incluindo execuções)
 * Publicação
-* Cancelar publicação
+* Desfazer publicação
 * Aprovar
 * Rejeitar
 * Mover
 
 Os registros de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de registro são armazenados.
 
-Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou os existentes são modificados e verificados no AEM por meio do [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) ou do [aplicativo de desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html).
+Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou os existentes são modificados e verificados no AEM por meio do [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) ou do [aplicativo de desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 
 >[!NOTE]
 >
->workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
+>Workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
 
 Para visualização do fluxo de atividade, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha]** do tempo na lista GlobalNav.
 
