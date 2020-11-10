@@ -1,17 +1,17 @@
 ---
-title: Guia de ativos
+title: Guia do Assets
 description: Este guia cobre todas as tarefas AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
-user-guide-title: Guia de ativos
+user-guide-title: Guia do Assets
 translation-type: tm+mt
-source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 24%
+source-wordcount: '325'
+ht-degree: 17%
 
 ---
 
 
-# Guia de ativos
+# Guia do Assets
 
 Este guia cobre todas as tarefas AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
 
@@ -32,20 +32,20 @@ Este guia cobre todas as tarefas AEM Assets, como criar, gerenciar, fornecer e o
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação em AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação em AEM na interface clássica do usuário. |
-| [Guia do usuário do Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Implantação do Guia do Usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas de AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância AEM. |
 | [Gerenciamento do Guia do Usuário](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com êxito. |
 | [Guia do usuário móvel](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o Livefyre. |
+| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o Livefyre. |
 
 ## Principais recursos AEM
 
 * [AEM tutoriais](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html)
-* [Guia do usuário HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
-* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guia do usuário do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [Guia do usuário HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [Guia do usuário dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
