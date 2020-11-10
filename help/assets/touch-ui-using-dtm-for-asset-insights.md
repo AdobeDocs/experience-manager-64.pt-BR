@@ -3,9 +3,9 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags do Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferr
 
 >[!CAUTION]
 >
->O Adobe DTM foi preterido a favor da Adobe Experience Platform Launch e logo chegará ao [fim da vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda [usar o Launch para obter insights](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de ativos.
+>O Adobe DTM foi preterido a favor da Adobe Experience Platform Launch e logo chegará ao [fim da vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda [usar o Launch para obter insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de ativos.
 
 Execute estas etapas para ativar os Insights de ativos por meio do DTM:
 
