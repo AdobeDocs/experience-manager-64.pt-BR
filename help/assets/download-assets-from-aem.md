@@ -3,7 +3,7 @@ title: Baixe ativos digitais [!DNL Adobe Experience Manager].
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 05ecc940180ead13676cc5bb8e2e230b1d55162b
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 2%
@@ -66,7 +66,7 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
 
 O `Asset Download Servlet` pode ser desativado em instâncias de [!DNL Experience Manager] Publicação atualizando a configuração do dispatcher para bloquear quaisquer solicitações de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
 
-1. Para bloquear as solicitações de download de ativos por meio de uma configuração de despachante, edite a `dispatcher.any` configuração e adicione uma regra à seção [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Para bloquear as solicitações de download de ativos por meio de uma configuração de despachante, edite a `dispatcher.any` configuração e adicione uma regra à seção [de](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)filtro. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Para desativar o componente OSGi em uma instância de publicação, acesse o console OSGi em `http://[aem_server]:[port]/system/console/components`. Localize `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e clique em **[!UICONTROL Desativar]**.
 
