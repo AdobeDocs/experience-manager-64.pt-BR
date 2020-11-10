@@ -3,9 +3,9 @@ title: Configure a marcação de ativos usando o Serviço de conteúdo inteligen
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1212'
 ht-degree: 34%
 
 ---
@@ -83,7 +83,7 @@ Depois que um certificado expira, ele não é mais confiável. Não é possível
 
    ![Exclua a entrada de pesquisa de similaridade existente no Keystore para adicionar um novo certificado de segurança](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figura: exclua a entrada`similaritysearch`existente no Armazenamento de chaves para adicionar um novo certificado de segurança.*
+   *Figura: exclua a entrada `similaritysearch` existente no Armazenamento de chaves para adicionar um novo certificado de segurança.*
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Serviços da nuvem herdados]**. Clique em **[!UICONTROL Tags inteligentes de ativos]** > **[!UICONTROL Mostrar configuração]** > **[!UICONTROL Configurações disponíveis]**. Clique na configuração necessária.
 
@@ -190,5 +190,4 @@ Após concluir a configuração, use um MBean JMX para validar a configuração.
 >* [Gerenciar tags inteligentes](managing-smart-tags.md)
 >* [Visão geral e como treinar Tags inteligentes](enhanced-smart-tags.md)
 >* [Diretrizes e regras para treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
->* [Tutorial em vídeo sobre como configurar tags inteligentes](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
