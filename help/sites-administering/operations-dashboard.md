@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Ele tem vários recursos, descritos abaixo.
 
 ## Verificações de integridade {#health-checks}
 
-Os relatórios **de** saúde são um sistema de cartões que indica boa ou má saúde em relação a uma área específica do produto. Esses cartões são visualizações das Sling Health Checks, que agregação dados do JMX e de outras fontes e expõe as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no console [da Web](/help/sites-administering/jmx-console.md)JMX, no domínio **org.apache.sling.saudcheck** .
+Os Relatórios **de** Integridade são um sistema de cartões que indica boa ou má saúde em relação a uma área específica do produto. Esses cartões são visualizações das Sling Health Checks, que agregação dados do JMX e de outras fontes e expõe as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no console [da Web](/help/sites-administering/jmx-console.md)JMX, no domínio **org.apache.sling.saudcheck** .
 
 A interface de Relatórios de Integridade pode ser acessada por meio do menu **Ferramentas** - **Operações** - Relatórios **de** Integridade na tela de Boas-vindas AEM ou diretamente pelo seguinte URL:
 
@@ -206,11 +206,11 @@ A função de uma verificação de integridade composta é agregação de vária
   </tr> 
   <tr> 
    <td>Limites de cruzamento da consulta</td> 
-   <td><p>Os Limites de cruzamento de Query verificam o <code>QueryEngineSettings</code> MBean, mais especificamente os atributos <code>LimitInMemory</code> e <code>LimitReads</code> , e retorna o seguinte status:</p> 
+   <td><p>Os Limites de cruzamento de query verificam o <code>QueryEngineSettings</code> MBean, mais especificamente os atributos <code>LimitInMemory</code> e <code>LimitReads</code> , e retorna o seguinte status:</p> 
     <ul> 
      <li>retorna o status Avisar se um dos limites for igual ou superior ao <code>Integer.MAX_VALUE</code></li> 
      <li>retorna o status Aviso se um dos limites for menor que 10000 (a configuração recomendada do Oak)</li> 
-     <li>retorna o status Crítico se não for possível recuperar os limites <code>QueryEngineSettings</code> ou qualquer um deles</li> 
+     <li>retorna o status Crítico se não for possível recuperar o limite <code>QueryEngineSettings</code> ou qualquer um deles</li> 
     </ul> <p>O Mbean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.saudcheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -296,7 +296,7 @@ A função de uma verificação de integridade composta é agregação de vária
   </tr> 
   <tr> 
    <td>Verificações de segurança</td> 
-   <td><p>A verificação de segurança é um composto que agregação os resultados de várias verificações relacionadas à segurança. Essas verificações de integridade individuais tratam de preocupações diferentes da lista de verificação de segurança disponível na página de documentação da Lista de verificação de <a href="/help/sites-administering/security-checklist.md">segurança.</a> A verificação é útil como um teste de segurança de fumaça quando a instância é iniciada. </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.saudcheck:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">security check,type=HealthCheck</a></p> </td> 
+   <td><p>A verificação de segurança é um composto que agregação os resultados de várias verificações relacionadas à segurança. Essas verificações de integridade individuais tratam de preocupações diferentes da lista de verificação de segurança disponível na página de documentação da Lista de verificação de <a href="/help/sites-administering/security-checklist.md">segurança.</a> A verificação é útil como um teste de segurança de fumaça quando a instância é iniciada. </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.saudcheck:name=securityCheckits,type=HealthCheck</a></p> </td> 
   </tr> 
   <tr> 
    <td>Grupos ativos</td> 
@@ -546,7 +546,7 @@ As seguintes tarefas estão disponíveis no Painel Operações:
 
 1. A **tarefa Revision Clean Up **, localizada no menu **Daily Maintenance Window** (Janela de manutenção diária).
 
-1. A **Limpeza de binários Lucene **tarefa, localizada no menu Janela **de manutenção** diária.
+1. A **Limpeza de binários Lucene **tarefa, localizada no menu da janela **de manutenção** diária.
 
 1. A tarefa **Expurgação do fluxo de trabalho **localizada no menu Janela **de manutenção** semanal.
 
@@ -628,7 +628,7 @@ Você pode agendar a tarefa de manutenção Expurgação da versão para excluir
 
 ## Tarefas de manutenção personalizadas {#custom-maintenance-tasks}
 
-tarefas de manutenção personalizadas podem ser implementadas como serviços OSGi. Como a infraestrutura da tarefa de manutenção se baseia no gerenciamento de tarefas do Apache Sling, uma tarefa de manutenção deve implementar a interface java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Além disso, deve declarar várias propriedades de registro de serviço a serem detectadas como tarefa de manutenção, conforme listado abaixo:
+Tarefas de manutenção personalizadas podem ser implementadas como serviços OSGi. Como a infraestrutura da tarefa de manutenção se baseia no gerenciamento de tarefas do Apache Sling, uma tarefa de manutenção deve implementar a interface java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Além disso, deve declarar várias propriedades de registro de serviço a serem detectadas como tarefa de manutenção, conforme listado abaixo:
 
 <table> 
  <tbody> 
@@ -671,7 +671,7 @@ tarefas de manutenção personalizadas podem ser implementadas como serviços OS
  </tbody> 
 </table>
 
-Além das propriedades de serviço acima, o `process()` método da `JobConsumer` interface precisa ser implementado adicionando o código que deve ser executado para a tarefa de manutenção. O formulário fornecido `JobExecutionContext` pode ser usado para exibir informações de status, verificar se o trabalho foi interrompido pelo usuário e criar um resultado (bem-sucedido ou com falha).
+Além das propriedades de serviço acima, o `process()` método da `JobConsumer` interface precisa ser implementado adicionando o código que deve ser executado para a tarefa de manutenção. O formulário fornecido `JobExecutionContext` pode ser usado para exibir informações de status, verificar se o trabalho foi interrompido pelo usuário e criar um resultado (sucesso ou falha).
 
 Para situações em que uma tarefa de manutenção não deve ser executada em todas as instalações (por exemplo, executada apenas na instância de publicação), é possível fazer com que o serviço exija uma configuração para ficar ativo ao adicionar `@Component(policy=ConfigurationPolicy.REQUIRE)`. Você pode marcar a configuração de acordo como sendo o modo de execução dependente no repositório. Para obter mais informações, consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
