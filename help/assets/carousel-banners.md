@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4787'
 ht-degree: 4%
@@ -44,7 +44,7 @@ Assista a uma caminhada de 10 minutos e 33 segundos sobre [como os banners de ca
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **do** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **do** dam.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **do** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **do** DAM.
 
 ## Start rápido: Banners de carrossel {#quick-start-carousel-banners}
 
@@ -186,7 +186,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](managi
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **do** dam.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **do** DAM.
 
 **Para criar um conjunto** de carrossel:
 
@@ -251,7 +251,7 @@ Consulte [(Opcional) Visualização de banners](#optional-previewing-carousel-ba
 >[!NOTE]
 >
 >Quando você adiciona pontos de acesso a uma imagem em uma imagem [](interactive-images.md) interativa ou em um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados - relativo ao local da imagem - independentemente de se tratar de uma imagem interativa ou de um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem - juntamente com seus dados de ponto de acesso definidos - em qualquer um dos visualizadores.
-
+>
 >Esteja ciente, no entanto, de que os Carousel Banners oferecem suporte para mapas de imagem em imagens que também podem conter pontos de conexão; uma imagem interativa não. Lembre-se disso se você pretende criar uma imagem interativa ou um banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
 
 >[!NOTE]
@@ -322,7 +322,7 @@ Consulte [(Opcional) Visualização de banners](#optional-previewing-carousel-ba
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** DAM.
 
 É possível executar várias tarefas de edição em Conjuntos de carrossel, como:
 
