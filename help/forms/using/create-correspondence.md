@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3726'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Selecione a letra para pré-visualização usando as seguintes etapas:
 
 1. Se você selecionou **Pré-visualização** > **Personalizado**, uma caixa de diálogo será aberta. Na caixa de diálogo, selecione um arquivo de dados, correspondente ao dicionário de dados, para pré-visualização a carta e, em seguida, selecione **Pré-visualização**. Um arquivo de dados é criado com base em um dicionário de dados para uma carta específica. Para obter mais informações sobre o arquivo de dados, consulte Dicionário [de](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)dados.
 
-   ![carta Pré-visualização](assets/8_previewcustomdatafile.png)
+   ![carta pré-visualização](assets/8_previewcustomdatafile.png)
 
 1. A letra pré-visualização HTML (pré-visualização de formulários móveis) é aberta com a guia Dados em foco por padrão.
 
@@ -57,7 +57,7 @@ Selecione a letra para pré-visualização usando as seguintes etapas:
    Há três guias: dados, conteúdo e anexos. Se não houver elementos de dados (variáveis de espaço reservado e campos de layout), a letra será aberta diretamente com a guia Conteúdo exibida. A guia Anexos está disponível somente quando os anexos estão presentes ou o acesso à biblioteca está ativado.
 
    >[!NOTE]
-
+   >
    >Para obter mais informações sobre como alternar entre o modo de representação HTML ou PDF da pré-visualização de letra, consulte [Alterar modo de representação de letra](#changerenditionmode). Para obter mais informações sobre suporte a PDF no Gerenciamento de correspondência e AEM, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e [PDF forms para o Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)HTML5.
 
 ### Enter data {#enterdata}
@@ -94,7 +94,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    O sistema exibe um editor de texto para editar e formatar o texto.
 
-   O verificador ortográfico padrão em seu navegador verifica a ortografia no Editor de texto. Para gerenciar a ortografia e a verificação gramatical, edite as configurações do verificador ortográfico do seu navegador ou instale plug-ins/suplementos do navegador para verificar a ortografia e a gramática.
+   O verificador ortográfico padrão em seu navegador verifica a ortografia no Editor de texto. Para gerenciar a ortografia e a verificação gramatical, edite as configurações do verificador ortográfico do navegador ou instale plug-ins/suplementos do navegador para verificar a ortografia e a gramática.
 
    Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre atalhos de teclado do Editor [de](/help/forms/using/keyboard-shortcuts.md#correspondence-management) texto em Atalhos de teclado do Gerenciamento de correspondência.
 
@@ -170,7 +170,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
    * **Texto** Exibe a soma das variáveis exclusivas de espaço reservado não preenchido e dos elementos de dicionário de dados contidos no módulo de texto.
    * **Condição** Exibe a soma das variáveis de condição não preenchidas exclusivas contidas na condição e as variáveis contidas nos módulos resultantes.
    * **Lista** Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à lista.
-   * **Área** do Público alvo Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à área do público alvo.
+   * **Área** do público alvo Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à área do público alvo.
 
    Observe o seguinte em relação às variáveis com valores padrão:
 
@@ -198,11 +198,11 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 * Editar (somente módulos de texto): Abra o editor de Rich Text para editar o módulo de texto.
 * Painel de dados (módulos de texto e condição): Abra todas as variáveis do módulo.
 
-**Módulo de Lista**
+**Módulo de lista**
 
 * Inserir linha em branco: Insere uma nova linha em branco.
 * Biblioteca de conteúdo: Abre a biblioteca de conteúdo para adicionar módulos à lista.
-* Configuração de Lista (somente lista aninhada):
+* Configuração de lista (somente lista aninhada):
 * Bloqueio do pedido (informações): Indica que a ordem dos itens de lista não pode ser alterada.
 
 ### Gerenciar anexos {#manage-attachments}
@@ -229,7 +229,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    ![Realçar conteúdo editável](assets/4_highlightmoduleincontent-1.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, é possível tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
 
    Por exemplo, a linha &quot;Para permitir o acesso...&quot; for selecionado no gráfico abaixo e o módulo de conteúdo correspondente for selecionado na guia Conteúdo.
 
@@ -317,14 +317,14 @@ Essa opção existe para pessoas que têm preocupações sobre como salvar dados
 
 1. Se necessário, defina o nome de usuário e a senha com os quais você deseja acessar o servidor.
 
-#### delivery de anexo {#attachmentdelivery}
+#### Delivery de anexo {#attachmentdelivery}
 
 * Os anexos da carta estão disponíveis no processo de publicação no PDF, que é criado após o envio da carta.
 * Quando a Carta é renderizada usando APIs do lado do servidor como um PDF interativo ou não interativo, o PDF renderizado contém anexos como anexos de PDF.
 * Quando um processo de publicação associado a um modelo de carta é carregado como parte das operações Enviar ou Concluir correspondência usando a interface de usuário Criar correspondência, os anexos são transmitidos como Lista&lt;com.adobe.idp.Documento> no parâmetro AttachmentDocs.
 * Mecanismos de delivery prontos para uso, como email e Impressão, também fornecem anexos juntamente com o PDF da correspondência gerada.
 
-## Modos de representação da pré-visualização de letras: pré-visualização de formulários móveis e pré-visualização de PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Modos de representação da pré-visualização de letras: Pré-visualização de formulários móveis e pré-visualização de PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
 O AEM Forms Correspondence Management exibe uma letra como HTML na interface Criar correspondência. No entanto, o Gerenciamento de correspondência ainda oferece suporte para reverter para a pré-visualização PDF em vez da pré-visualização HTML. Para obter mais informações sobre como alternar entre os modos de pré-visualização HTML e PDF, consulte [Alterar modo de representação da letra](#changerenditionmode).
 
@@ -340,7 +340,7 @@ Veja a seguir os benefícios e a funcionalidade disponíveis na pré-visualizaç
 **Benefícios da pré-visualização de PDF**
 
 * **Quebra** de página: Na pré-visualização PDF, é possível visualização exatamente como as quebras de página na letra afetam sua saída.
-* **pré-visualização** final: Na pré-visualização do PDF, é possível visualização a formatação exata e a aparência da letra, à medida que ela aparecerá em sua saída.
+* **Pré-visualização** final: Na pré-visualização do PDF, é possível visualização a formatação exata e a aparência da letra, à medida que ela aparecerá em sua saída.
 
 Para obter informações sobre o suporte a scripts no PDF forms, consulte Suporte [a](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)scripts.
 
