@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 3%
@@ -94,11 +94,11 @@ No painel Modelo do site, o Título, Descrição, Raiz do site, Idioma base, Nom
 
    A raiz padrão é `/content/sites`, mas a raiz pode ser movida para qualquer local dentro do site.
 
-* **[!UICONTROL Idioma]** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas base dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo as práticas recomendadas descritas em [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
+* **[!UICONTROL Idioma]** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas básicos dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo as práticas recomendadas descritas em [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
 
 * **[!UICONTROL Nome]** do site da comunidade: O nome da página raiz do site que aparece no URL
 
-   * Verifique o nome pelo Duplo, pois ele não é facilmente alterado depois que o site é criado
+   * Verifique o nome pelo duplo, pois ele não é facilmente alterado depois que o site é criado
    * O URL base ( `https://*server:port/site root/site name*)` será exibido abaixo do `Community Site Name`
    * Para um URL válido, acrescente um código de idioma base + &quot;.html&quot;
 
@@ -114,7 +114,7 @@ O painel Design contém dois subpainéis para selecionar o tema e o banner de ma
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
-![tema-1](assets/sitetheme-1.png)
+![tema-1 do site](assets/sitetheme-1.png)
 
 A estrutura usa o Bootstrap [do](https://twitterbootstrap.org/) Twitter para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de site da comunidade selecionado, ou um tema de Bootstrap pode ser carregado.
 
@@ -216,10 +216,11 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
    Deixe desmarcada para um site de comunidade *privada* . O padrão está desmarcado.
 
 >[!NOTE]
-
-**[!UICONTROL Permitir logons sociais]**
->Embora a amostra de configurações do Facebook e do Twitter possa existir e ser selecionável, para um ambiente [de](../../help/sites-administering/production-ready.md)produção, é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte Logon [social com Facebook e Twitter](social-login.md).
 >
+>**[!UICONTROL Permitir logons sociais]**
+>
+>Embora a amostra de configurações do Facebook e do Twitter possa existir e ser selecionável, para um ambiente [de](../../help/sites-administering/production-ready.md)produção, é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte Logon [social com Facebook e Twitter](social-login.md).
+
 #### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
@@ -240,15 +241,15 @@ Encontrar membros da comunidade é fácil usar a busca antecipada por tipos.
 
 * **[!UICONTROL Gerentes da comunidade]**
 
-   Digitação de Start para selecionar um ou mais membros da comunidade ou grupos de membros que podem gerenciar membros da comunidade e grupos de membros.
+   Digitação de start para selecionar um ou mais membros da comunidade ou grupos de membros que podem gerenciar membros da comunidade e grupos de membros.
 
 * **[!UICONTROL Moderadores da comunidade]**
 
-   Digitação de Start para selecionar um ou mais membros da comunidade ou grupos de membros que devem ser confiáveis como moderadores de conteúdo gerado pelo usuário.
+   Digitação de start para selecionar um ou mais membros da comunidade ou grupos de membros que devem ser confiáveis como moderadores de conteúdo gerado pelo usuário.
 
 * **[!UICONTROL Membros privilegiados da comunidade]**
 
-   Digitação de Start para selecionar um ou mais membros da comunidade ou grupos de membros que terão a capacidade de criar novo conteúdo quando `Allow Privileged Member` tiverem sido selecionados para uma função [da](functions.md)comunidade.
+   Digitação de start para selecionar um ou mais membros da comunidade ou grupos de membros que terão a capacidade de criar novo conteúdo quando `Allow Privileged Member` tiverem sido selecionados para uma função [da](functions.md)comunidade.
 
 #### MODERATION {#moderation}
 
@@ -392,7 +393,8 @@ O conteúdo de um site pode ser criado com as mesmas ferramentas que qualquer ou
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Modificando Propriedades do Site {#modifying-site-properties}
 
@@ -439,15 +441,20 @@ O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a pa
       modificar a ordem das funções, conforme exibido na barra de navegação de nível superior do site
 
 >[!NOTE]
-Você pode alterar a ordem de todas as funções na Estrutura do site, exceto a função na parte superior. Portanto, o home page de sites de comunidades não pode ser alterado.
+>
+>Você pode alterar a ordem de todas as funções na Estrutura do site, exceto a função na parte superior. Portanto, o home page de sites de comunidades não pode ser alterado.
 
 >[!CAUTION]
-Embora o título de exibição possa ser alterado sem efeitos colaterais, não é recomendável editar o nome do URL de uma função da comunidade pertencente a um site da comunidade.
-Por exemplo, renomear o URL não moverá o UGC existente, com o efeito de &#39;perder&#39; o UGC.
+>
+>Embora o título de exibição possa ser alterado sem efeitos colaterais, não é recomendável editar o nome do URL de uma função da comunidade pertencente a um site da comunidade.
+>
+>Por exemplo, renomear o URL não moverá o UGC existente, com o efeito de &#39;perder&#39; o UGC.
 
 >[!CAUTION]
-A função groups *não* deve ser a *primeira nem a única* função na estrutura do site.
-Qualquer outra função, como a função [de](functions.md#page-function)página, deve ser incluída e listada primeiro.
+>
+>A função groups *não* deve ser a *primeira nem a única* função na estrutura do site.
+>
+>Qualquer outra função, como a função [de](functions.md#page-function)página, deve ser incluída e listada primeiro.
 
 #### Exemplo: Adicionando uma função de catálogo a uma estrutura de site da comunidade {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -525,8 +532,10 @@ Observe que quaisquer membros com funções atribuídas como moderadores ou admi
 Para obter detalhes, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
 
 >[!NOTE]
-Se [Permitir login social: O Facebook](#user-management) é ativado, uma vez que o grupo de usuários
-* community-*&lt;nome do site>*-*&lt;id>* membros
+>
+>Se [Permitir login social: O Facebook](#user-management) é ativado, uma vez que o grupo de usuários
+>
+>* community-*&lt;nome do site>*-*&lt;id>* membros
 
 for criado, o serviço [de nuvem do](social-login.md#createafacebookcloudservice) Facebook aplicado deve ser configurado para adicionar usuários a esse grupo.
 
