@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4300'
 ht-degree: 1%
@@ -246,7 +246,7 @@ Consulte [(Opcional) Visualização de imagens](#optional-previewing-interactive
 >[!NOTE]
 >
 >Quando você adiciona pontos de acesso a uma imagem em uma imagem interativa ou em um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados (relativo ao local da imagem), independentemente de se tratar de uma imagem interativa ou de um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de conexão definidos, em qualquer um dos visualizadores.
-
+>
 >Esteja ciente, no entanto, de que os Carousel Banners oferecem suporte para mapas de imagem em imagens que também podem conter pontos de conexão; uma imagem interativa não. Lembre-se disso se você pretende criar uma imagem interativa ou um banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
 >
 >Consulte também [Carrossel Banners](carousel-banners.md).
