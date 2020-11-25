@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## Lista de verificação da instalação {#installation-checklist}
 
-**Para a plataforma[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
+**Para a plataforma [AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * Instale as atualizações mais recentes [AEM 6.4](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    (a configuração de amostra é fornecida para desenvolvimento)
 
-**Capacidade das[Comunidades](overview.md)**
+**Capacidade das [Comunidades](overview.md)**
 
 * Se estiver implantando um farm [de](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)publicação, [identifique o editor principal](#primary-publisher)
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA é fornecido com o pacote Communities. Para saber mais sobre atualizações para AEM 6.4 [Comunidades](/help/release-notes/release-notes.md#experience-manager-communities), consulte [AEM Notas](/help/release-notes/release-notes.md#release-information)de versão 6.4.
+AEM 6.4 Communities GA inclui o pacote Communities. Para saber mais sobre atualizações para AEM 6.4 [Comunidades](/help/release-notes/release-notes.md#experience-manager-communities), consulte [AEM Notas](/help/release-notes/release-notes.md#release-information)de versão 6.4.
 
 ### AEM 6.4 Atualizações {#aem-updates}
 
@@ -125,7 +125,7 @@ As etapas necessárias são:
    * Por exemplo, http://localhost:4502/system/console/bundles
    * Selecionar **`Install/Update`**
    * Procurar... para selecionar o pacote extraído do arquivo ZIP baixado
-   * Verifique se o Driver JDBC da *Oracle Corporation para MySQLcom.mysql.jdbc* está ativo e start-o se não estiver (ou verifique os logs)
+   * Verifique se o driver JDBC da *Oracle Corporation para MySQLcom.mysql.jdbc* está ativo e start-o se não estiver (ou verifique os registros)
 
 1. Se a instalação for feita em uma implantação existente depois que o JDBC tiver sido configurado, refaça o JDBC para o novo conector, salvando a configuração do JDBC do console da Web:
 
@@ -150,7 +150,7 @@ O mecanismo AEM Communities SCORM é necessário para o recurso de [ativação](
 
 * **[cq -social- scorm -package, versão 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Este pacote SCORM é suportado por todas as versões AEM 6.4 Communities.
 
-* **[cq -social- scorm -package, versão 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**inclui o mecanismo[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Este pacote SCORM é suportado AEM Comunidades 6.4.2.x a partir de.
+* **[cq -social- scorm -package, versão 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** inclui o mecanismo [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) . Este pacote SCORM é suportado AEM Comunidades 6.4.2.x a partir de.
 
 Para uma nova instalação do mecanismo SCORM, o pacote contendo [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (que é [ cq -social- scorm -package, versão 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)) deve ser usado. Assim, você pode jogar recursos de aprendizado apoiados pelo SCORM 2017.
 
@@ -162,7 +162,7 @@ Para uma nova instalação do mecanismo SCORM, o pacote contendo [SCORM 2017.1](
 1. Baixe **`/libs/social/config/scorm/database_scormengine_data.sql`** da instância cq e execute-a no servidor mysql para criar um schema scormEngineDB atualizado.
 1. Adicione `/content/communities/scorm/RecordResults` a propriedade Caminhos excluídos no filtro CSRF de `https://<hostname>;:<port>/system/console/configMgr` em editores.
 
-As instalações existentes do SCORM podem ser atualizadas para [**cq-social-scorm-package, versão 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(que usa[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se o conteúdo do curso criado exigir SCORM 2017.1.
+As instalações existentes do SCORM podem ser atualizadas para [**cq-social-scorm-package, versão 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (que usa [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se o conteúdo do curso criado exigir SCORM 2017.1.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Para o editor principal, verifique se a Configuração [do Agente de](../../help
 
 Para que outro usuário tenha as permissões apropriadas, ele deve ser adicionado como membro ao grupo de `administrators` usuários (também como membro do `Communities Administrators`).
 
-Há dois agentes de replicação no ambiente autor que precisam que a configuração de transporte seja configurada corretamente.
+Há dois agentes de replicação no ambiente do autor que precisam que a configuração de transporte seja configurada corretamente.
 
 * Acesse o console Replicação no autor
 
