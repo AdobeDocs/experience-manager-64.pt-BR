@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 4%
 
 ---
@@ -22,13 +22,15 @@ ht-degree: 4%
 
 O Adobe Experience Manager (AEM) Communities oferece a capacidade de criar rapidamente um site local da comunidade com o melhor desempenho, gerenciamento de site, e estimula a conversão de visitantes do site em membros de alto valor da Comunidade.
 
-Entre em contato com seu representante de conta para obter informações sobre o licenciamento da AEM Communities, além de licenças adicionais para recursos de ativação e Adobe Analytics.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## Recursos das comunidades {#communities-features}
 
 A AEM Communities permite o desenvolvimento de uma relação com visitantes do site que informa por meio de blogs, P&amp;R e calendários de eventos, além de obter insights por meio de fóruns, comentários e outros conteúdos da comunidade, geralmente chamados de conteúdo gerado pelo usuário (UGC).
 
-Além disso, a AEM Communities permite a moderação por membros confiáveis no ambiente de publicação, login social com o Twitter e o Facebook, tradução em linha do conteúdo da comunidade, criação de grupos da comunidade do site da comunidade publicado, pontuação para prêmios, compartilhamento de arquivos, notificações e fluxos de atividade.
+Além disso, a AEM Communities permite a moderação por membros confiáveis no ambiente de publicação, login social com Twitter e Facebook, tradução em linha do conteúdo da comunidade, criação de grupos da comunidade do site da comunidade publicada, pontuação para crachás de prêmio, compartilhamento de arquivos, notificações e fluxos de atividade.
 
 Os recursos das Comunidades podem ser demonstrados usando a Máquina [de demonstração](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) AEM disponível publicamente em GitHub.com ou com a nova implementação de referência We.Retail.
 
@@ -116,7 +118,7 @@ O console de ferramentas globais fornece acesso às seguintes ferramentas de Com
 
    * Criar e gerenciar funções da comunidade
 
-* [Console de configuração](tools.md#storageconfiguratonconsole) do Armazenamento
+* [Console de configuração](tools.md#storageconfiguratonconsole) do armazenamento
 
    * Selecionar e configurar a loja [](working-with-srp.md) comum do site
 
@@ -182,7 +184,7 @@ Os recursos de uma comunidade de envolvimento podem incluir:
 * Moderação
 * Notificações
 * Pontuação e emblemas
-* relatórios do Analytics
+* Relatórios do Analytics
 
 Para experimentar a facilidade de criar rapidamente uma nova comunidade de envolvimento, visite [Introdução à AEM Communities](getting-started.md).
 
