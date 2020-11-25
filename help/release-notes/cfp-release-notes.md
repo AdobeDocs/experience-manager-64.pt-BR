@@ -1,12 +1,12 @@
 ---
-title: Notas de versão do Pacote de correções cumulativo AEM 6.4
+title: Notas de versão do AEM 6.4 Cumulative Fix Pack
 description: Notas de versão específicas dos Pacotes de correção cumulativos do Adobe Experience Manager 6.4.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c9d5556f2358489ae011add1243785f52c0c4135
+source-git-commit: a969fb6ca6962766b7a69a4f35a9960269dabc86
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4038'
 ht-degree: 11%
 
 ---
