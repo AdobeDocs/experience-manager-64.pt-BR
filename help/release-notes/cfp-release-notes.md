@@ -4,9 +4,9 @@ description: Notas de versão específicas dos Pacotes de correção cumulativos
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f74e20c5264dc38dcbe20c8fc6b9beaaee7cc6da
+source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
 workflow-type: tm+mt
-source-wordcount: '4112'
+source-wordcount: '4156'
 ht-degree: 11%
 
 ---
@@ -99,6 +99,10 @@ O Adobe Experience Manager 6.4.8.3 fornece correções para os seguintes problem
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] libera os pacotes de complementos uma semana após a data de lançamento programada do Pacote de correções  [!DNL Experience Manager] cumulativas.
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] O Cumulative Fix Pack não inclui correções para  [!DNL Experience Manager Forms]. Eles são entregues usando um pacote complementar separado [!DNL Forms]. Além disso, é lançado um instalador cumulativo que inclui correções para [!DNL Experience Manager Forms] no JEE. Para obter mais informações, consulte [Instalar o pacote suplementar da AEM Forms](#install-aem-forms-add-on-package) e [Instalar o instalador do AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Formulários adaptáveis**
 
