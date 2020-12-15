@@ -11,7 +11,7 @@ ht-degree: 4%
 ---
 
 
-# Searching Video Assets {#searching-video-assets}
+# Pesquisando ativos de vídeo {#searching-video-assets}
 
 Para economizar tempo e esforço para não precisar navegar por centenas de vídeos, use palavras-chave, propriedades de arquivos, como o tipo de um arquivo, ou carimbo de data e hora recentemente modificado para encontrar rapidamente seu arquivo.
 
@@ -21,7 +21,7 @@ Você pode procurar ativos digitais com base em uma ou mais das seguintes propri
 
 | Campo Pesquisa | Pesquisar valores de propriedade |
 |---|---|
-| Tipos de mime | [!UICONTROL Imagens], [!UICONTROL Documentos], [!UICONTROL Multimídia], [!UICONTROL Arquivos]ou Outros. |
+| Tipos de mime | [!UICONTROL Imagens],  [!UICONTROL Documentos],  [!UICONTROL Multimídia],  [!UICONTROL Arquivos] ou Outros. |
 | [!UICONTROL Última modificação] | Hora, dia, semana, mês ou ano. |
 | [!UICONTROL Tamanho do arquivo] | Pequeno, Médio ou Grande. |
 | [!UICONTROL Publicar status] | Publicado ou Não publicado. |
@@ -36,7 +36,7 @@ Você pode procurar ativos digitais com base em uma ou mais das seguintes propri
 | Codec de áudio | Libvorbis, Lame Mp3, AAC Encoding.Value é armazenado apenas nos metadados de execuções de vídeo. |
 | Taxa de áudio | Especificado como um valor mínimo e máximo.O valor é armazenado apenas nos metadados de representações de vídeo. |
 
-1. Na página **[!UICONTROL Experience Manager]** , no painel esquerdo, toque em **[!UICONTROL Ativos]**.
+1. Na página **[!UICONTROL Experience Manager]**, no painel esquerdo, toque em **[!UICONTROL Ativos]**.
 
    Se o painel esquerdo não estiver visível, toque no ícone Alternar painel (as linhas no ícone estarão cinza escuro ou azul).
 
@@ -58,4 +58,4 @@ Você pode procurar ativos digitais com base em uma ou mais das seguintes propri
 
       Digite uma palavra-chave, mas em vez de pressionar Enter, expanda uma lista de propriedade de áudio ou vídeo e defina os valores desejados.
 
-1. (Opcional) Próximo à parte inferior da página, toque em **[!UICONTROL Salvar coleção]** inteligente e digite um nome para a pesquisa. Marque **[!UICONTROL Público]** se desejar que a pesquisa salva seja disponibilizada para outros usuários da conta do Adobe Experience Manager. Desmarque se deseja que a pesquisa seja disponibilizada somente para você quando estiver conectado à conta. Toque em **[!UICONTROL Salvar]**.
+1. (Opcional) Próximo à parte inferior da página, toque em **[!UICONTROL Salvar coleção inteligente]**, insira um nome para a pesquisa. Verifique **[!UICONTROL Public]** se deseja que a pesquisa salva seja disponibilizada para outros usuários da conta do Adobe Experience Manager. Desmarque se deseja que a pesquisa seja disponibilizada somente para você quando estiver conectado à conta. Toque em **[!UICONTROL Salvar]**.
