@@ -19,7 +19,7 @@ A capacidade de pesquisa dos Ativos Adobe Experience Manager (AEM) é aprimorada
 
 A AEM Assets implanta a classificação do lado do servidor para classificar todo o conjunto de ativos (o que for grande) em uma pasta ou em um query de pesquisa de uma só vez, em vez de classificá-los em lotes no lado do cliente. Dessa forma, os resultados pré-buscados podem ser rapidamente exibidos na interface do usuário, o que torna a operação de classificação mais ágil e brilhante.
 
-## Classificação de ativos na visualização da Lista {#sorting-assets-in-list-view}
+## Classificação de ativos na visualização de Lista {#sorting-assets-in-list-view}
 
 A AEM Assets permite que você classifique os ativos de pasta com base nos seguintes campos:
 
@@ -50,7 +50,7 @@ A AEM Assets permite que você classifique os ativos de pasta com base nos segui
 
 >[!NOTE]
 >
->Para classificar os valores nas `Name` colunas ou `Title`colunas, sobreponha `/libs/dam/gui/content/commons/availablecolumns` e altere o valor de `sortable` para `True`.
+>Para classificar os valores nas colunas `Name` ou `Title`, sobreponha `/libs/dam/gui/content/commons/availablecolumns` e altere o valor de `sortable` para `True`.
 
 ## Classificação de ativos em resultados de pesquisa {#sorting-assets-in-search-results}
 
@@ -77,7 +77,7 @@ Você pode classificar os resultados da pesquisa com base nos seguintes campos:
 O AEM Assets permite que você classifique cronologicamente as entradas da linha do tempo, como anotações, versões, workflows e atividades.
 
 1. Na interface do usuário Ativos, selecione um ativo para o qual deseja exibir a linha do tempo.
-1. Clique/toque no ícone de Navegação global e selecione **[!UICONTROL Linha do tempo]**.
+1. Clique/toque no ícone de Navegação Global e selecione **[!UICONTROL Linha do tempo]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
@@ -85,7 +85,7 @@ O AEM Assets permite que você classifique cronologicamente as entradas da linha
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Clique/toque no ícone **[!UICONTROL Classificar]** ao lado do rótulo **[!UICONTROL Data]** . Com base na sua seleção, as anotações são listadas na ordem cronológica/reversa em que foram adicionadas ao ativo.
+1. Clique/toque no ícone **[!UICONTROL Classificar]** ao lado do rótulo **[!UICONTROL Data]**. Com base na sua seleção, as anotações são listadas na ordem cronológica/reversa em que foram adicionadas ao ativo.
 
-   ![chlimage_1-401](assets/chlimage_1-401.png)
+   ![chlimage_1-481](assets/chlimage_1-401.png)
 
