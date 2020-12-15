@@ -23,16 +23,16 @@ A página Propriedades dos ativos agora inclui guias separadas para exibir os me
 
 1. Na interface do usuário Ativos, selecione uma imagem.
 1. Clique ou toque no ícone **[!UICONTROL Propriedades]** na barra de ferramentas.
-1. Na página Propriedades, clique/toque na guia **[!UICONTROL IPTC]** para visualização de metadados IPTC do ativo.
+1. Na página Propriedades, clique/toque na guia **[!UICONTROL IPTC]** para visualização dos metadados IPTC do ativo.
 1. Edite as propriedades de metadados IPTC, conforme necessário.
 
    ![iptc_tab](assets/iptc_tab.png)
 
 1. Clique/toque na guia **[!UICONTROL Extensão IPTC]** para exibir os metadados da Extensão IPTC do ativo.
 1. Edite as propriedades de metadados da Extensão do ITPC, conforme necessário.
-1. Tap/click **[!UICONTROL Save &amp; Close]** to save the changes.
+1. Toque/clique em **[!UICONTROL Salvar e fechar]** para salvar as alterações.
 
-## Suporte para classificação criativa {#creative-rating-support}
+## Suporte a classificação de criação {#creative-rating-support}
 
 Além de exibir classificações individuais de usuários e classificações de agregação, a página Propriedades agora exibe as classificações atribuídas aos ativos por meio do Adobe Bridge e de outros aplicativos criativos
 
@@ -42,9 +42,9 @@ Essa classificação é uma propriedade somente leitura e varia entre 1 e 5. Voc
 
 No entanto, essa propriedade não está indexada no momento para evitar conflitos com as alterações personalizadas feitas pelos usuários.
 
-## Suporte a palavra-chave {#keyword-support}
+## Suporte a palavras-chave {#keyword-support}
 
-A guia **[!UICONTROL IPTC]** da página Propriedades também exibe palavras-chave adicionadas aos ativos por meio do Adobe Bridge e de outros aplicativos criativos. Você também pode editar essas palavras-chave e adicionar mais palavras-chave na guia **[!UICONTROL IPTC]** .
+A guia **[!UICONTROL IPTC]** da página Propriedades também exibe palavras-chave adicionadas aos ativos por meio do Adobe Bridge e de outros aplicativos criativos. Você também pode editar essas palavras-chave e adicionar mais palavras-chave na guia **[!UICONTROL IPTC]**.
 
 ![keywords](assets/keywords.png)
 
