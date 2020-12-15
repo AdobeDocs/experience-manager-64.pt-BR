@@ -10,7 +10,7 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
-source-git-commit: 03d738e50be604959af93c863fbdc711ee4b083e
+source-git-commit: a1709aa10d480e7509665f3f7a791348d8323076
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# A lista de verificação{#the-checklist}
+# A Lista de Verificação{#the-checklist}
 
 As Listas de verificação do projeto são destinadas a um conjunto de práticas recomendadas para o delivery do projeto. Elas o orientam por todas as fases do ciclo de vida do projeto e fornecem um monitoramento de alto nível do seu status atual.
 
@@ -28,7 +28,7 @@ Existem listas de verificação para cada pessoa (função) envolvida no seu pro
 
 Lista de verificação das práticas recomendadas do projeto AEM v2
 
-[Obter arquivo](assets/aem_project_bp_checklistv2.xlsx)
+[Obter arquivo](assets/aem_project_bp_checklistv2-64.xlsx)
 
 ## Planilhas {#worksheets}
 
@@ -44,15 +44,15 @@ A planilha fornece as seguintes planilhas:
    * O [Glossário](/help/managing/best-practices-glossary.md) também está disponível como parte da documentação.
 * **[Definições pessoais](/help/managing/best-practices.md#persona)**
 
-## Uso das Listas de Verificação {#using-the-checklists}
+## Usando as Listas de Verificação {#using-the-checklists}
 
 Para entregar com êxito um projeto de alta qualidade, é necessário concluir todos os itens nas listas de verificação, de preferência em ordem:
 
-1. As listas de verificação são definidas de acordo com a **[Pessoa](/help/managing/best-practices.md#persona)**(função) envolvida. Cada pessoa deve usar a lista de verificação apropriada à sua função no projeto.
-1. As listas de verificação abrangem os Documentos **[](/help/managing/best-practices.md#required-documents)**obrigatórios e**[ materiais](/help/managing/best-practices.md#deliverables)** de entrega para cada marco - a pessoa relevante deve definir os campos de status e qualidade apropriados.
+1. As listas de verificação são definidas de acordo com **[Persona](/help/managing/best-practices.md#persona)** (função) envolvida. Cada pessoa deve usar a lista de verificação apropriada à sua função no projeto.
+1. As listas de verificação abrangem os **[Documentos obrigatórios](/help/managing/best-practices.md#required-documents)** e **[Materiais de entrega](/help/managing/best-practices.md#deliverables)** para cada marco - a pessoa relevante deve definir os campos de status e qualidade apropriados.
 
    >[!NOTE]
    >
    >Não há uma relação 1:1 direta entre os documentos individuais obrigatórios e os materiais de entrega.
 
-1. Com base nos status dos Documentos **[](/help/managing/best-practices.md#required-documents)**obrigatórios e**[ materiais](/help/managing/best-practices.md#deliverables)**de entrega, as planilhas Pulsação **[do](/help/managing/best-practices.md#project-heartbeat-dashboard)**projeto e**[ Status por função](/help/managing/best-practices.md#status-by-role)** são automaticamente atualizadas para fornecer uma indicação atualizada do progresso e da integridade do projeto.
+1. Com base nos status dos **[Documentos obrigatórios](/help/managing/best-practices.md#required-documents)** e **[Produtos](/help/managing/best-practices.md#deliverables)**, as planilhas **[Project Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status by Role](/help/managing/best-practices.md#status-by-role)** são automaticamente atualizadas para fornecer uma indicação atualizada do progresso e da saúde do seu projeto.
