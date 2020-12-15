@@ -13,20 +13,20 @@ ht-degree: 1%
 
 # API HTTP de ativos {#assets-http-api}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos [!DNL Experience Manager] de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API.
+A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando [!DNL Experience Manager] Fragmentos de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API.
 
 Para acessar a API:
 
 1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
-1. Siga o link de serviço Ativos à esquerda para `https://[hostname]:[server]/api/assets.json`.
+1. Siga o link de serviço Ativos que leva a `https://[hostname]:[server]/api/assets.json`.
 
 A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
 
-Após o Tempo [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da [!DNL Assets] Web e da API HTTP. A API retornará uma mensagem de erro 404 se o Tempo [!UICONTROL ligado] estiver no futuro ou Tempo [!UICONTROL desligado] estiver no passado.
+Depois do [!UICONTROL Tempo desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web [!DNL Assets] e por meio da API HTTP. A API retornará uma mensagem de erro 404 se [!UICONTROL On Time] estiver no futuro ou [!UICONTROL Off Time] estiver no passado.
 
 >[!CAUTION]
 >
->[A API HTTP atualiza as propriedades](#update-asset-metadata) de metadados na `jcr` namespace. No entanto, a interface do usuário do Experience Manager atualiza as propriedades de metadados na `dc` namespace.
+>[A API HTTP atualiza as ](#update-asset-metadata) propriedades de metadados na  `jcr` namespace. No entanto, a interface do usuário do Experience Manager atualiza as propriedades de metadados na namespace `dc`.
 
 ## Modelo de dados {#data-model}
 
@@ -45,9 +45,9 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 
 >[!NOTE]
 >
->Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente. O `jcr` prefixo de `jcr:title`, `jcr:description`e `jcr:language` é substituído pelo `dc` prefixo. Daí no JSON retornado, `dc:title` e `dc:description` contém os valores de `jcr:title` e `jcr:description`, respectivamente.
+>Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente. O prefixo `jcr` de `jcr:title`, `jcr:description` e `jcr:language` são substituídos pelo prefixo `dc`. Assim, no JSON retornado, `dc:title` e `dc:description` contêm os valores de `jcr:title` e `jcr:description`, respectivamente.
 
-**As Pastas de links** expõem três links:
+**** LinksFolders expõe três links:
 
 * `self`: Vincule-se a si mesmo.
 * `parent`: Link para a pasta pai.
@@ -61,7 +61,7 @@ No Experience Manager, um ativo contém os seguintes elementos:
 * Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
 * Comentários opcionais.
 
-Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
+Em [!DNL Experience Manager] uma pasta tem os seguintes componentes:
 
 * Entidades: Os filhos dos ativos são suas representações.
 * Propriedades.
@@ -69,33 +69,33 @@ Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
 A API HTTP Assets inclui os seguintes recursos:
 
-* [Recuperar uma lista](#retrieve-a-folder-listing)de pastas.
+* [Recuperar uma lista](#retrieve-a-folder-listing) de pastas.
 * [Criar uma pasta](#create-a-folder).
 * [Criar um ativo](#create-an-asset).
-* [Atualize o binário](#update-asset-binary)do ativo.
-* [Atualize os metadados](#update-asset-metadata)do ativo.
-* [Crie uma representação](#create-an-asset-rendition)de ativo.
-* [Atualizar uma representação](#update-an-asset-rendition)de ativo.
-* [Crie um comentário](#create-an-asset-comment)de ativo.
+* [Atualize o binário](#update-asset-binary) do ativo.
+* [Atualize os metadados](#update-asset-metadata) do ativo.
+* [Crie uma representação](#create-an-asset-rendition) de ativo.
+* [Atualizar uma representação](#update-an-asset-rendition) de ativo.
+* [Crie um comentário](#create-an-asset-comment) de ativo.
 * [Copie uma pasta ou um ativo](#copy-a-folder-or-asset).
 * [Mova uma pasta ou um ativo](#move-a-folder-or-asset).
 * [Exclua uma pasta, ativo ou representação](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com o [Resty](https://github.com/micha/resty) , que é um invólucro de scripts para `cURL`.
+>Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com [Resty](https://github.com/micha/resty), que é um invólucro de script para `cURL`.
 
 **Pré-requisitos**
 
 * Acesso `https://[aem_server]:[port]/system/console/configMgr`.
-* Navegue até **[!UICONTROL Adobe Granite CSRF Filter]**.
-* Verifique se a propriedade Métodos **[!UICONTROL de]** filtro inclui: `POST`, `PUT`, `DELETE`.
+* Navegue até **[!UICONTROL Filtro CSRF de Adobe Granite]**.
+* Verifique se a propriedade **[!UICONTROL Métodos de Filtro]** inclui: `POST`, `PUT`, `DELETE`.
 
-## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
+## Recuperar uma lista de pastas {#retrieve-a-folder-listing}
 
 Recupera uma representação Siren de uma pasta existente e de suas entidades filhas (subpastas ou ativos).
 
-**Solicitação**: `GET /api/assets/myFolder.json`
+**Solicitação**:  `GET /api/assets/myFolder.json`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -107,11 +107,11 @@ Recupera uma representação Siren de uma pasta existente e de suas entidades fi
 
 ## Crie uma pasta {#create-a-folder}
 
-Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um nome `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
+Cria um novo `sling`: `OrderedFolder` no caminho especificado. Se um `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação Siren da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
 
-Uma chamada de API falhará com um código de `500` resposta se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
+Uma chamada de API falha com um código de resposta `500` se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
 
-**Parâmetros**: `name` é o nome da pasta.
+**Parâmetros**:  `name` é o nome da pasta.
 
 **Solicitar**
 
@@ -127,9 +127,9 @@ Uma chamada de API falhará com um código de `500` resposta se o nó pai do cam
 
 ## Criar um ativo {#create-an-asset}
 
-Coloque o arquivo fornecido no caminho fornecido para criar um ativo no repositório DAM. Se um nome `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro ou o nome do arquivo como nome do nó.
+Coloque o arquivo fornecido no caminho fornecido para criar um ativo no repositório DAM. Se um `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro ou o nome do arquivo como nome do nó.
 
-**Parâmetros**: Os parâmetros são `name` para o nome do ativo e `file` para a referência do arquivo.
+**Parâmetros**: Os parâmetros são  `name` para o nome do ativo e  `file` para a referência do arquivo.
 
 **Solicitar**
 
@@ -147,7 +147,7 @@ Coloque o arquivo fornecido no caminho fornecido para criar um ativo no reposit�
 
 Atualiza o binário de um ativo (execução com o nome original). Uma atualização aciona o fluxo de trabalho de processamento de ativos padrão para ser executado, se estiver configurado.
 
-**Solicitação**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
+**Solicitação**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -158,9 +158,9 @@ Atualiza o binário de um ativo (execução com o nome original). Uma atualizaç
 
 ## Atualizar metadados do ativo {#update-asset-metadata}
 
-Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na `dc:` namespace, a API atualizará a mesma propriedade na `jcr` namespace. A API não sincroniza as propriedades nas duas namespaces.
+Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na namespace `dc:`, a API atualizará a mesma propriedade na namespace `jcr`. A API não sincroniza as propriedades nas duas namespaces.
 
-**Solicitação**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
+**Solicitação**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -169,9 +169,9 @@ Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer prop
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
 * 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
 
-### Sincronizar atualização de metadados entre `dc` e `jcr` namespace {#sync-metadata-between-namespaces}
+### Sincronizar atualização de metadados entre a namespace `dc` e `jcr` {#sync-metadata-between-namespaces}
 
-O método da API atualiza as propriedades de metadados na `jcr` namespace. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na `dc` namespace. Para sincronizar os valores de metadados entre `dc` e a `jcr` namespace, você pode criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
+O método da API atualiza as propriedades de metadados na namespace `jcr`. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na namespace `dc`. Para sincronizar os valores de metadados entre as namespaces `dc` e `jcr`, é possível criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho após a edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -194,7 +194,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de solicitação não for fornecido, o nome do arquivo será usado como nome de execução.
 
-**Parâmetros**: Os parâmetros são `name` para o nome da representação e `file` como uma referência de arquivo.
+**Parâmetros**: Os parâmetros são  `name` para o nome da representação e  `file` como uma referência de arquivo.
 
 **Solicitar**
 
@@ -212,7 +212,7 @@ Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de
 
 As atualizações substituem respectivamente uma representação de ativo pelos novos dados binários.
 
-**Solicitação**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
+**Solicitação**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -225,9 +225,9 @@ As atualizações substituem respectivamente uma representação de ativo pelos 
 
 Cria um novo comentário de ativo.
 
-**Parâmetros**: Os parâmetros são `message` para o corpo da mensagem do comentário e `annotationData` para os dados de anotação no formato JSON.
+**Parâmetros**: Os parâmetros são  `message` para o corpo da mensagem do comentário e  `annotationData` para os dados de anotação no formato JSON.
 
-**Solicitação**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
+**Solicitação**:  `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -243,10 +243,10 @@ Copia uma pasta ou ativo disponível no caminho fornecido para um novo destino.
 **Cabeçalhos** de solicitação: Os parâmetros são:
 
 * `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
-* `X-Depth` - quer `infinity` quer `0`. O uso `0` só copia o recurso e suas propriedades, e não seus filhos.
-* `X-Overwrite` - Use `F` para evitar a substituição de um ativo no destino existente.
+* `X-Depth` - quer  `infinity` quer  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
+* `X-Overwrite` - Use  `F` para evitar a substituição de um ativo no destino existente.
 
-**Solicitação**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
+**Solicitação**:  `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -262,10 +262,10 @@ Move uma pasta ou um ativo no caminho fornecido para um novo destino.
 **Cabeçalhos** de solicitação: Os parâmetros são:
 
 * `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
-* `X-Depth` - quer `infinity` quer `0`. O uso `0` só copia o recurso e suas propriedades, e não seus filhos.
-* `X-Overwrite` - Use `T` para forçar a exclusão de um recurso existente ou `F` para evitar a substituição de um recurso existente.
+* `X-Depth` - quer  `infinity` quer  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
+* `X-Overwrite` - Use  `T` para forçar a exclusão de um recurso existente ou  `F` para evitar a substituição de um recurso existente.
 
-**Solicitação**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+**Solicitação**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
