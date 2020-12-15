@@ -11,7 +11,7 @@ ht-degree: 4%
 ---
 
 
-# Arquivos de check-in e check-out em Ativos {#check-in-and-check-out-files-in-assets}
+# Arquivos de check-in e check-out no Assets {#check-in-and-check-out-files-in-assets}
 
 Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos ativos para edição e check-in deles novamente após concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo de volta para a AEM Assets. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
 
@@ -25,11 +25,11 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
-1. Na barra de ferramentas, clique/toque no ícone **[!UICONTROL Checkout]** .
+1. Na barra de ferramentas, clique/toque no ícone **[!UICONTROL Check-out]**.
 
    ![chlimage_1-469](assets/chlimage_1-469.png)
 
-   Observe que o ícone **[!UICONTROL Check-out]** alterna para o ícone **[!UICONTROL Checkout]** com o cadeado aberto.
+   Observe que o ícone **[!UICONTROL Check-out]** alterna para o ícone **[!UICONTROL Checkin]** com o cadeado aberto.
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
@@ -41,7 +41,7 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   No entanto, você pode clicar/tocar no ícone Propriedades **[!UICONTROL da]** Visualização para editar os metadados do ativo bloqueado.
+   No entanto, você pode clicar/tocar no ícone **[!UICONTROL Propriedades da Visualização]** para editar os metadados do ativo bloqueado.
 
 1. Clique/toque no ícone Editar para abrir o ativo no modo de edição.
 
@@ -68,6 +68,6 @@ Os administradores podem fazer check-in de ativos cujo check-in foi feito por ou
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Na barra de ferramentas, clique/toque no ícone **[!UICONTROL Liberar bloqueio]** . O ativo é devolvido e está disponível para edição para outros usuários.
+1. Na barra de ferramentas, clique/toque no ícone **[!UICONTROL Bloquear versão]**. O ativo é devolvido e está disponível para edição para outros usuários.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)
