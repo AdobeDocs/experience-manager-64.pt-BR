@@ -44,7 +44,7 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
    >[!NOTE]
    >
    >* Na página de propriedades, é possível remover ativos da lista de ativos desmarcando-os. A lista do ativo tem todos os ativos selecionados por padrão. Os metadados dos ativos que você remove da lista não são atualizados.
-   >* Na parte superior da lista de ativos, marque a caixa de seleção ao lado de **Título** para alternar entre a seleção dos ativos e a limpeza da lista.
+   >* Na parte superior da lista de ativos, marque a caixa de seleção próxima a **Título** para alternar entre selecionar os ativos e limpar a lista.
 
 
 1. Para selecionar um schema de metadados diferente para os ativos, toque/clique no ícone **[!UICONTROL Configurações]** na barra de ferramentas e selecione o schema desejado.
@@ -61,7 +61,7 @@ Para evitar uma situação semelhante ao DOS, AEM limita o número de parâmetro
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+Para alterar o limite, acesse **[!UICONTROL Ferramentas > Operações > Console Web]** e altere o valor de [!UICONTROL Parâmetros POST Máximos] na configuração [!UICONTROL Tratamento de Parâmetro de Solicitação de Sling do Apache] OSGi.
 
 >[!MORELIKETHIS]
 >
