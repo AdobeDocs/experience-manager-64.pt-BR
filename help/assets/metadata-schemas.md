@@ -13,11 +13,11 @@ ht-degree: 12%
 
 # Esquemas de metadados {#metadata-schemas}
 
-Em [!DNL Experience Manager Assets], um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema específico. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante. Você pode usar o editor do Forms Schema Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados.
+Em [!DNL Experience Manager Assets], um schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos que usam o schema em particular. As propriedades de metadados incluem título, descrição, tipos MIME, tags e assim por diante. Você pode usar o editor do Forms Schema Metadados para modificar schemas existentes ou adicionar schemas de metadados personalizados.
 
 Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
-1. Clique ou toque em Propriedades **[!UICONTROL da]** Visualização a partir de ações rápidas no bloco de ativos na visualização de cartão.
+1. Clique ou toque em **[!UICONTROL Propriedades da Visualização]** a partir de ações rápidas no mosaico do ativo na visualização do cartão.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -25,29 +25,29 @@ Para visualização e edição da página de propriedades de um ativo, siga esta
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. É possível editar as várias propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
+1. É possível editar as várias propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o ativo [!UICONTROL Type] na guia [!UICONTROL Basic] da página de propriedades.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Edição do Forms](metadata-schemas.md#editing-metadata-schema-forms) Schema de metadados para obter mais informações. Se você modificar o schema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um `jpeg` schema em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com tipo MIME `IMAGE/JPEG`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
+   Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Edição do Schema de Metadados Forms](metadata-schemas.md#editing-metadata-schema-forms) para obter mais informações. Se você modificar o schema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um schema `jpeg` em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com o tipo MIME `IMAGE/JPEG`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
 ## Formulários de esquema de metadados {#default-metadata-schema-forms}
 
-Para visualização de uma lista de formulários/modelos, na [!DNL Experience Manager] interface, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados.
+Para visualização de uma lista de formulários/modelos, na interface [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Schemas de metadados]**.
 
 [!DNL Experience Manager] fornece os seguintes modelos de formulário de Schema de metadados:
 
 | Modelos |  | Descrição |
 |---|---|---|
 | [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
-|  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
+|  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão]: |  |
 |  | <ul><li> [!UICONTROL dm_video]</li></ul> | Formulário de schema para vídeos do Dynamic Media. |
-|  | <ul><li> [!UICONTROL imagem]</li></ul> | Formulário de schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
+|  | <ul><li> [!UICONTROL imagem]</li></ul> | Formulário de schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> A   forma de imagem tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de schema para ativos com subtipo  [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de schema para os ativos com  [!UICONTROL tiff] de subtipo.</li></ul> |
 |  | <ul><li> [!UICONTROL aplicativo]</li></ul> | Formulário de schema para ativos com tipo MIME &quot;application&quot; (aplicativo), por exemplo application/ pdf, application/ zip e assim por diante. <br>[!UICONTROL pdf]: Formulário de schema para ativos com pdf de subtipo. |
 |  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de schema para ativos com MIME tipo &quot;vídeo&quot;, como vídeo/avi, vídeo/mp4 e assim por diante. |
 | [!UICONTROL collection] |  | Formulário de schema para coleções. |
 | [!UICONTROL contentfragment] |  | Formulário de schema para fragmentos de conteúdo. |
-| [!UICONTROL formulários] |  | Este formulário de schema está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL formulários] |  | Este formulário de schema está relacionado a [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 É possível adicionar novas guias ou itens de formulário ao formulário de schema de metadados. As guias e os itens de formulário derivados do pai estão no estado bloqueado. Não é possível alterá-los no nível da criança.
 
-1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
+1. Na página **[!UICONTROL Forms]** do Schema, marque a caixa de seleção antes de um formulário e clique em **[!UICONTROL Editar]** na barra de ferramentas.
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -84,11 +84,11 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
    ![chlimage_1-176](assets/chlimage_1-176.png)
 
-1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Configurações]** .
+1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Configurações]**.
 
 ### Componentes na guia Criar formulário {#components-within-the-build-form-tab}
 
-A guia **[!UICONTROL Criar formulário]** lista itens de formulário usados no formulário do schema. A guia **[!UICONTROL Configurações]** fornece os atributos de cada item selecionado na guia **[!UICONTROL Criar formulário]** . A tabela a seguir lista os itens de formulário disponíveis na guia **[!UICONTROL Criar formulário]** :
+A guia **[!UICONTROL Criar formulário]** lista itens de formulário que você usa no formulário de schema. A guia **[!UICONTROL Configurações]** fornece os atributos de cada item selecionado na guia **[!UICONTROL Criar formulário]**. A tabela a seguir lista os itens de formulário disponíveis na guia **[!UICONTROL Criar formulário]**:
 
 | Nome do componente | Descrição |
 |---|---|
@@ -109,17 +109,17 @@ A guia **[!UICONTROL Criar formulário]** lista itens de formulário usados no f
 
 ### Editar o componente de metadados {#editing-the-metadata-component}
 
-Para editar as propriedades de um componente de metadados no formulário, clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Configurações]** .
+Para editar as propriedades de um componente de metadados no formulário, clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Configurações]**.
 
 **Rótulo** do campo: O nome da propriedade de metadados que é exibida na página de propriedades do ativo.
 
-**Mapear para propriedade**: Essa propriedade especifica o caminho/nome relativo para o nó do ativo no qual ele é salvo no repositório CRX. Ele é start por `./` indicar que o caminho está sob o nó do ativo.
+**Mapear para propriedade**: Essa propriedade especifica o caminho/nome relativo para o nó do ativo no qual ele é salvo no repositório CRX. Ele start com `./` porque indica que o caminho está sob o nó do ativo.
 
 Estes são os valores válidos para esta propriedade:
 
 * `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
-* `./jcr:created`: Exibe a propriedade JCR no nó do ativo. Se você configurar essas propriedades nas propriedades de exibição, recomendamos marcá-las como Desativar edição, pois elas estão protegidas. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`: Exibe a propriedade JCR no nó do ativo. Se você configurar essas propriedades nas propriedades de exibição, recomendamos marcá-las como Desativar edição, pois elas estão protegidas. Caso contrário, o erro [!UICONTROL Ativo(s) falhou ao modificar] resultados ao salvar as propriedades do ativo.
 
 Para garantir que o componente seja exibido corretamente no formulário de schema de metadados, o caminho da propriedade não deve incluir espaços.
 
@@ -139,7 +139,7 @@ Para garantir que o componente seja exibido corretamente no formulário de schem
 
 **Classe**: Classe de objeto à qual a propriedade está associada.
 
-**Ícone** Excluir Clique nesse ícone para excluir um componente do formulário de schema.
+**Ícone ExcluirClique nesse** ícone para excluir um componente do formulário de schema.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ O editor de esquema permite adicionar ou excluir uma guia. O formulário de esqu
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
-Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
+Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Settings]**. Clique em `X` para excluir uma guia.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -175,7 +175,7 @@ Clique em `+` para adicionar uma nova guia em um formulário de schema. Por padr
 
 AEM permite que você exclua apenas formulários de schema personalizados. Isso não permite que você exclua os formulários/modelos de schema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
 
-Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Excluir]** .
+Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Excluir]**.
 
 >[!NOTE]
 >
@@ -189,20 +189,20 @@ Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Exclui
 
 A AEM Assets fornece formulários padrão para vários tipos MIME prontos para uso. No entanto, você pode adicionar formulários personalizados para ativos de vários tipos MIME.
 
-### Adicionar novos formulários para tipos MIME {#adding-new-forms-for-mime-types}
+### Adicionar novos formulários aos tipos MIME {#adding-new-forms-for-mime-types}
 
-Crie um novo formulário no tipo de formulário apropriado. For example, to add a new template for the `image/png` subtype, create the form under the `image` forms. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é `png`.
+Crie um novo formulário no tipo de formulário apropriado. Por exemplo, para adicionar um novo modelo para o subtipo `image/png`, crie o formulário sob os formulários `image`. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é `png`.
 
-### Usar um modelo de schema existente para vários tipos MIME {#using-an-existing-schema-template-for-various-mime-types}
+### Use um modelo de schema existente para vários tipos MIME {#using-an-existing-schema-template-for-various-mime-types}
 
-Você pode usar um modelo existente para um tipo MIME diferente. Por exemplo, use o `image/jpeg` formulário para ativos do tipo MIME `image/png`.
+Você pode usar um modelo existente para um tipo MIME diferente. Por exemplo, use o formulário `image/jpeg` para ativos do tipo MIME `image/png`.
 
-Nesse caso, crie um novo nó `/etc/dam/metadataeditor/mimetypemappings` no repositório CRX. Especifique um nome para o nó e defina as seguintes propriedades:
+Nesse caso, crie um novo nó em `/etc/dam/metadataeditor/mimetypemappings` no repositório CRX. Especifique um nome para o nó e defina as seguintes propriedades:
 
 | Nome | Descrição | Tipo | Valor |
 |---|---|---|---|
 | `exposedmimetype` | Nome do formulário existente a ser mapeado | `String` | `image/jpeg` |
-| `mimetypes` | Lista de tipos MIME que usam o formulário definido no `exposedmimetype` atributo | `String` | `image/png` |
+| `mimetypes` | Lista de tipos MIME que usam o formulário definido no atributo `exposedmimetype` | `String` | `image/png` |
 
 A AEM Assets mapeia os seguintes tipos MIME e formulários de schema:
 
@@ -222,7 +222,7 @@ A AEM Assets mapeia os seguintes tipos MIME e formulários de schema:
 
 ## Conceder acesso a schemas de metadados {#granting-access-to-metadata-schemas}
 
-O recurso de schema de metadados está disponível somente para administradores. No entanto, os administradores podem fornecer acesso a usuários que não sejam administradores, fornecendo permissões para **[!UICONTROL Criar]**, **[!UICONTROL Modificar]** e **[!UICONTROL Excluir]** na `/conf` pasta.
+O recurso de schema de metadados está disponível somente para administradores. No entanto, os administradores podem fornecer acesso a usuários que não sejam administradores, fornecendo **[!UICONTROL as permissões &lt;a0/>Create]**, **[!UICONTROL Modify]** e **[!UICONTROL Delete]** na pasta `/conf`.
 
 ## Aplicar metadados específicos da pasta {#applying-folder-specific-metadata}
 
@@ -243,13 +243,13 @@ Se a pasta tiver uma subpasta, os ativos dentro da subpasta herdarão os metadad
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. Na página Forms **[!UICONTROL do Schema de]** metadados, selecione o `my_default` formulário e clique em **[!UICONTROL Editar]**.
+1. Na página **[!UICONTROL Forms]** Schema de metadados, selecione o formulário `my_default` e clique em **[!UICONTROL Editar]**.
 
-1. Na página Editor **[!UICONTROL de Schemas de]** metadados, adicione um campo de texto ao formulário de schema. Por exemplo, adicione um campo com a **[!UICONTROL Categoria]** da etiqueta.
+1. Na página **[!UICONTROL Editor de Schemas de metadados]**, adicione um campo de texto ao formulário de schema. Por exemplo, adicione um campo com o rótulo **[!UICONTROL Categoria]**.
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Forms **[!UICONTROL do Schema de]** metadados.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado na página **[!UICONTROL Schema de metadados Forms]**.
 1. Clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
@@ -275,22 +275,22 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 
    ![chlimage_1-189](assets/chlimage_1-189.png)
 
-1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo de **Categoria** e torne-o obrigatório.
+1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo **Categoria** e torne o campo obrigatório.
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Forms **[!UICONTROL do Schema de]** metadados. Para aplicar os metadados personalizados a uma pasta, selecione o formulário e clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado na página **[!UICONTROL Schema de metadados Forms]**. Para aplicar os metadados personalizados a uma pasta, selecione o formulário e clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas.
 
 1. Navegue até a pasta e carregue alguns ativos com metadados ausentes para o campo obrigatório adicionado ao formulário personalizado. A visualização de cartão para os ativos exibe uma mensagem para os metadados ausentes do campo obrigatório.
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. (Opcional) Acesso `http://[server]:[port]/system/console/components/`. Configure e ative `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` o componente que está desativado por padrão. Defina uma frequência na qual o AEM verifica a validade dos metadados nos ativos.
-Essa configuração adiciona uma propriedade `hasValidMetadata` a jcr:content of assets. Usando essa propriedade, AEM pode filtrar os resultados em uma pesquisa.
+1. (Opcional) Acesse `http://[server]:[port]/system/console/components/`. Configure e ative o componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está desativado por padrão. Defina uma frequência na qual o AEM verifica a validade dos metadados nos ativos.
+Essa configuração adiciona uma propriedade `hasValidMetadata` ao jcr:content de ativos. Usando essa propriedade, AEM pode filtrar os resultados em uma pesquisa.
 
 >[!NOTE]
 >
->Se um ativo for adicionado após a verificação programada, o ativo não será sinalizado `hasValidMetadata` até a próxima verificação programada. Os ativos não aparecem nos resultados de pesquisa intermediária.
+>Se um ativo for adicionado após a verificação programada, ele não será sinalizado com `hasValidMetadata` até a próxima verificação programada. Os ativos não aparecem nos resultados de pesquisa intermediária.
 
 >[!CAUTION]
 >
