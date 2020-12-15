@@ -11,7 +11,7 @@ ht-degree: 6%
 ---
 
 
-# Compartilhamento de pasta particular {#private-folder-sharing}
+# Compartilhamento de pasta privada {#private-folder-sharing}
 
 Você pode criar uma pasta privada na interface do usuário do Adobe Experience Manager (AEM) Assets que está disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
 
@@ -19,7 +19,7 @@ Você pode criar uma pasta privada na interface do usuário do Adobe Experience 
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
-1. Na caixa de diálogo **[!UICONTROL Adicionar pasta]** , digite um título e nome (opcional) para a pasta e selecione **[!UICONTROL Privado]**.
+1. Na caixa de diálogo **[!UICONTROL Adicionar pasta]**, digite um título e um nome (opcional) para a pasta e selecione **[!UICONTROL Privado]**.
 
    ![chlimage_1-412](assets/chlimage_1-412.png)
 
@@ -35,7 +35,7 @@ Você pode criar uma pasta privada na interface do usuário do Adobe Experience 
    >
    >A pasta não estará visível para nenhum outro usuário até que você a compartilhe.
 
-1. In the Folder Prperties page, select a user from the **[!UICONTROL Add User]** list, assign a role to the user on your private folder, and click **[!UICONTROL Add]**.
+1. Na página Propriedades da pasta, selecione um usuário da lista **[!UICONTROL Adicionar usuário]**, atribua uma função ao usuário em sua pasta particular e clique em **[!UICONTROL Adicionar]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
