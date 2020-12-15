@@ -15,7 +15,7 @@ ht-degree: 53%
 
 O Assets é uma ferramenta de Gerenciamento de ativos digitais (DAM) que está totalmente integrada à plataforma AEM e permite que sua empresa compartilhe e distribua ativos digitais. Os usuários em uma organização podem armazenar, gerenciar e acessar imagens, vídeos, documentos, clipes de áudio e mídias avançadas como arquivos Flash para uso na Web, em impressões e para distribuição digital.
 
-## What is Digital Asset Management (DAM)? {#what-is-digital-asset-management}
+## O que é o Gerenciamento de ativos digitais (DAM)? {#what-is-digital-asset-management}
 
 O Assets oferece compartilhamento e distribuição dos principais ativos digitais de uma organização para toda a empresa. Os usuários em uma organização podem armazenar, gerenciar e acessar ativos digitais como imagens, gráficos, áudio, vídeo e documentos por uma interface da Web (ou uma pasta CIFS ou WebDAV).
 
@@ -28,13 +28,13 @@ Completamente integrado ao AEM, o AEM Assets permite que você faça o seguinte:
 * Executar funções de edição de imagens como redimensionamento e adição de filtros de imagem. Importar e exportar vários ativos digitais simultaneamente usando uma pasta WebDAV ou CIFS.
 * Usar fluxos de trabalho e notificações para habilitar o processamento conjunto e o download de qualquer conjunto de ativos e gerenciar direitos de acesso a ativos.
 
-### A AEM Assets é completamente integrada com recursos AEM WCM {#aem-assets-fully-integrated-in-cq-wcm}
+### A AEM Assets é completamente integrada aos recursos AEM WCM {#aem-assets-fully-integrated-in-cq-wcm}
 
 A AEM Assets está totalmente integrada ao CQ WCM e a funcionalidade está disponível usando o ícone DAM:
 
 <!-- TBD: Update image for branding -->
 
-![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
+![screen_shot_2012-04-17at15946](assets/screen_shot_2012-04-17at15946pm.png) ![pmscreen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
 
 Os ativos gerenciados no CQ DAM podem ser acessados pelo localizador de conteúdo do WCM:
 
@@ -44,7 +44,7 @@ Os ativos gerenciados no CQ DAM podem ser acessados pelo localizador de conteúd
 
 >[!NOTE]
 >
->A navegação básica da interface do usuário é a mesma do resto dos AEM - consulte [Visão geral do console](/help/sites-authoring/qg-page-authoring.md) da GUI para obter detalhes completos.
+>A navegação básica da interface do usuário é a mesma que o restante dos AEM - consulte [Visão geral do console da GUI](/help/sites-authoring/qg-page-authoring.md) para obter detalhes completos.
 
 ### Gerenciamento de ativos digitais versus o componente de imagem {#digital-asset-management-versus-image-component}
 
@@ -63,25 +63,25 @@ Um ativo é essencialmente um binário com metadados, além de representações 
 >
 >Fazer upload e/ou editar um grande volume de ativos (especialmente imagens) pode afetar o desempenho da sua instância do CQ.
 
-### AEM Assets terminology {#aem-assets-terminology}
+### Terminologia AEM Assets {#aem-assets-terminology}
 
 Ao trabalhar com ativos digitais no AEM, é preciso entender a seguinte terminologia:
 
-* **Coleção:** Uma coleção de ativos, com base na localização física (pasta), nas propriedades comuns (pasta de pesquisa salva) ou na seleção do usuário (pastas lightbox).
+* **Coleção:** uma coleção de ativos, com base na localização física (pasta), nas propriedades comuns (pasta de pesquisa salva) ou na seleção do usuário (pastas lightbox).
 
-* **Metadados:** Os ativos têm metadados; por exemplo, autor, data de expiração, Informações do DRM (Digital Rights Management) e assim por diante. O acesso aos metadados é controlado. O AEM Assets é compatível com os seguintes esquemas comuns dos metadados padrão:
+* **Metadados:** os ativos têm metadados; por exemplo, autor, data de expiração, Informações do DRM (Digital Rights Management) e assim por diante. O acesso aos metadados é controlado. O AEM Assets é compatível com os seguintes esquemas comuns dos metadados padrão:
 
    * **Dublin Core**: incluindo autor, descrição, data, assunto e assim por diante.
    * **IPTC**: incluindo evento, modelo, localização e assim por diante.
    * **WCM**: incluindo propriedades de página, tempo de inatividade e de inatividade e assim por diante.
 
-* **Marcação:** Os ativos podem ser marcados com tags e classificados. Consulte Uso de tags e Administração de tags.
+* **Marcação:** os ativos podem ser marcados e classificados. Consulte Uso de tags e Administração de tags.
 
 * **Representações:** Uma representação é a representação binária de um ativo. Os ativos sempre possuem uma representação primária: a do arquivo enviado. Eles podem ter qualquer número de representações adicionais que são criadas, por exemplo, por etapas de fluxo de trabalho personalizadas ou quando um ativo é carregado. As representações podem ter tamanhos diferentes, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
 
-* **Versões:** O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versões:** o controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. Consulte [controle de versão no AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **Sub-ativos:** Os subativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo Adobe Photoshop ou páginas em um arquivo PDF. No AEM Assets, é possível gerenciar subativos como se fossem ativos.
+* **Sub-ativos:** Sub-ativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo Adobe Photoshop ou páginas em um arquivo PDF. No AEM Assets, é possível gerenciar subativos como se fossem ativos.
 
 ### Como trabalhar com ativos {#how-to-work-with-assets}
 
@@ -98,4 +98,4 @@ E claro, é possível aplicar fluxos de trabalho manualmente. Consulte [Manipula
 
 ## AEM DAM e AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
-See [AEM DAM and AEM MediaLibrary](medialibrary.md) for information on the differences.
+Consulte [AEM DAM e AEM MediaLibrary](medialibrary.md) para obter informações sobre as diferenças.
