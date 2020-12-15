@@ -14,11 +14,11 @@ ht-degree: 12%
 ---
 
 
-# Diretrizes de treinamento do Serviço de conteúdo inteligente {#smart-content-service-training-guidelines}
+# Diretrizes de treinamento do Smart Content Service {#smart-content-service-training-guidelines}
 
 Para que as imagens de sua marca possam ser marcadas com eficácia, o Serviço de conteúdo inteligente exige que as imagens de treinamento estejam em conformidade com determinadas diretrizes.
 
-## Orientações para a formação {#guidelines-for-training}
+## Diretrizes para treinamento {#guidelines-for-training}
 
 Para obter melhores resultados, as imagens em seu conjunto de treinamento devem estar em conformidade com as seguintes diretrizes:
 
@@ -26,13 +26,13 @@ Para obter melhores resultados, as imagens em seu conjunto de treinamento devem 
 
 **Coerência**: As imagens de uma tag devem ser visualmente semelhantes.
 
-Por exemplo, não é uma boa ideia marcar todas essas imagens como *meus participantes* (para treinamento) porque elas não são visualmente semelhantes.
+Por exemplo, não é uma boa ideia marcar todas essas imagens como *my-party* (para treinamento) porque elas não são visualmente semelhantes.
 
 ![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/coherence.png)
 
 **Cobertura**: Deve haver uma variedade suficiente de imagens no treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que AEM aprenda a focar-se nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
 
-Por exemplo, para o *modelo de tag-down-pose*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
+Por exemplo, para a tag *model-down-pose*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
 
 ![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/coverage_1.png)
 
@@ -52,7 +52,7 @@ Tags inteligentes aprimoradas são baseadas em modelos de aprendizado de imagens
 
 * Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
 * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
-* A marcação é suportada nas localidades em que AEM é suportado. Para obter uma lista de idiomas, consulte Notas [de versão do](/help/release-notes/smart-content-service-release-notes.md)Smart Content Services.
+* A marcação é suportada nas localidades em que AEM é suportado. Para obter uma lista de idiomas, consulte [Notas de versão do Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
 
 Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use a pesquisa Omni de ativos (pesquisa em texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 
