@@ -17,7 +17,7 @@ O Adobe Experience Manager (AEM) Assets é configurado com o Brand Portal por me
 
 >[!NOTE]
 >
->A configuração do AEM Assets com o Brand Portal via E/S do Adobe é suportada no AEM 6.4.8.0 e superior.
+>A configuração do AEM Assets com o Brand Portal via Adobe I/O é suportada no AEM 6.4.8.0 e superior.
 >
 >Anteriormente, o Brand Portal estava configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização.
 
@@ -25,12 +25,12 @@ O Adobe Experience Manager (AEM) Assets é configurado com o Brand Portal por me
 >
 >***Somente para clientes existentes***
 >
->É recomendável continuar usando a configuração existente do gateway OAuth. Caso tenha problemas com a configuração herdada do OAuth Gateway, exclua a configuração existente e crie uma nova configuração via E/S do Adobe.
+>É recomendável continuar usando a configuração existente do gateway OAuth. Caso encontre problemas com a configuração herdada do OAuth Gateway, exclua a configuração existente e crie uma nova configuração via Adobe I/O.
 
 Esta ajuda descreve os dois casos de uso a seguir:
 
-* [Nova configuração](#configure-new-integration-64): Se você for um novo usuário do Brand Portal e quiser configurar sua instância de autor do AEM Assets com o Brand Portal, poderá criar uma nova configuração na E/S do Adobe.
-* [Configuração](#upgrade-integration-64)de atualização: Se você for um usuário do Brand Portal com sua instância do autor AEM Assets configurada com o Brand Portal no gateway OAuth herdado, é recomendável excluir as configurações existentes e criar uma nova configuração na E/S do Adobe.
+* [Nova configuração](#configure-new-integration-64): Se você for um novo usuário do Brand Portal e quiser configurar sua instância de autor do AEM Assets com o Brand Portal, poderá criar uma nova configuração no Adobe I/O.
+* [Configuração](#upgrade-integration-64) de atualização: Se você for um usuário do Brand Portal com sua instância do autor do AEM Assets configurada com o Brand Portal no gateway OAuth herdado, é recomendável excluir as configurações existentes e criar uma nova configuração no Adobe I/O.
 
 As informações fornecidas baseiam-se no pressuposto de que qualquer pessoa que leia esta Ajuda está familiarizada com as seguintes tecnologias:
 
@@ -54,11 +54,11 @@ Você precisa do seguinte para configurar o AEM Assets com o Brand Portal:
 
 É recomendável ter AEM 6.4 para configurar uma instância do autor AEM. Se você não tiver AEM funcionando, baixe-o dos seguintes locais:
 
-* Se você já for um cliente AEM, baixe o AEM 6.4 do site [de licenciamento do](http://licensing.adobe.com)Adobe.
+* Se você for um cliente AEM existente, baixe AEM 6.4 do [site de licenciamento do Adobe](http://licensing.adobe.com).
 
-* Se você for um parceiro de Adobe, use o Programa [de treinamento de parceiro de](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) Adobe para solicitar AEM 6.4.
+* Se você for um parceiro Adobe, use [Programa Adobe Partner Training](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.4.
 
-Depois de baixar o AEM, para obter instruções sobre como configurar uma instância AEM do autor, consulte [implantação e manutenção](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
+Depois de baixar o AEM, para obter instruções sobre como configurar uma instância do autor AEM, consulte [implantando e mantendo](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### Baixe e instale AEM Service Pack mais recente {#servicepack}
 
@@ -66,7 +66,7 @@ Para obter instruções detalhadas, consulte
 
 * [Notas de versão do AEM 6.4 Service Pack ](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Entre em contato com o Atendimento** ao cliente se não conseguir encontrar o pacote AEM ou o Service Pack mais recente.
+**Entre em contato com o** Atendimento ao cliente se não conseguir encontrar o pacote AEM ou o Service Pack mais recente.
 
 ## Criar configuração {#configure-new-integration-64}
 
@@ -95,7 +95,8 @@ A configuração IMS inclui duas etapas:
 
 O certificado público permite autenticar seu perfil no Adobe I/O.
 
-1. Faça logon na instância do autor do AEM AssetsURL padrão: http:// localhost:4502/aem/start.html
+1. Faça logon na sua instância do autor do AEM Assets
+URL padrão: http:// localhost:4502/aem/start.html
 1. No painel **Ferramentas** ![Ferramentas](assets/tools.png), navegue até **[!UICONTROL Segurança]** >> **[!UICONTROL Configurações do Adobe IMS]**.
 
    ![Interface do usuário de configuração de conta do Adobe IMS](assets/ims-config1.png)
@@ -124,7 +125,7 @@ O certificado público permite autenticar seu perfil no Adobe I/O.
 
    Na guia **Conta**, crie a conta do Adobe IMS, mas para isso você precisará dos detalhes de integração. Mantenha esta página aberta por enquanto.
 
-   Open a new tab and [Create Adobe I/O integration](#createnewintegration) to get the integration details for IMS Account configurations.
+   Abra uma nova guia e [Crie a integração do Adobe I/O](#createnewintegration) para obter os detalhes de integração das configurações da conta IMS.
 
 ### Criar integração do Adobe I/O {#createnewintegration}
 
@@ -232,7 +233,7 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
 
    URL padrão: http:// localhost:4502/aem/start.html
 
-1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
+1. No painel **Ferramentas** ![Ferramentas](assets/tools.png), navegue até **[!UICONTROL Implantação >> Replicação]**.
 
    ![](assets/test-integration1.png)
 
@@ -255,7 +256,7 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
    >
    >Os agentes de replicação trabalham em paralelo e compartilham a distribuição de tarefas igualmente, aumentando assim a velocidade de publicação em quatro vezes a velocidade original. Depois que o serviço de nuvem é configurado, não é necessária uma configuração adicional para habilitar os agentes de replicação que são ativados por padrão para habilitar a publicação paralela de vários ativos.
 
-1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
+1. Para verificar a conexão entre o autor da AEM Assets e o Portal de marcas, clique em **[!UICONTROL Testar conexão]**.
 
    ![](assets/test-integration4.png)
 
@@ -270,14 +271,14 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
    >
    >Evite desativar qualquer um dos agentes de replicação, pois isso pode causar falha na replicação de alguns ativos.
    >
-   >Verifique se todos os quatro agentes de replicação estão configurados para evitar o erro de tempo limite. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Verifique se todos os quatro agentes de replicação estão configurados para evitar o erro de tempo limite. Consulte [solução de problemas na publicação paralela no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 O Brand Portal foi configurado com êxito com sua instância do autor do AEM Assets. Agora você pode:
 
 * [Publicar ativos do AEM Assets no Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Publicar pastas do AEM Assets no Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publicar coleções do AEM Assets no Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configure a Fonte](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) de ativos, permitindo que os usuários do Brand Portal contribuam e publiquem ativos na AEM Assets.
+* [Configure a ](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) fonte de ativos, permitindo que os usuários do Brand Portal contribuam e publiquem ativos na AEM Assets.
 
 ## Atualizar configuração {#upgrade-integration-64}
 
@@ -286,7 +287,7 @@ Execute as seguintes etapas na sequência listada para atualizar as configuraç�
 1. [Excluir configurações existentes](#delete-existing-configuration)
 1. [Criar configuração](#configure-new-integration-64)
 
-### Verificar trabalhos em execução {#verify-jobs}
+### Verificar a execução de trabalhos {#verify-jobs}
 
 Certifique-se de que nenhum trabalho de publicação esteja em execução na sua instância do autor do AEM Assets antes de fazer qualquer modificação. Para isso, você pode verificar todos os quatro agentes de replicação e garantir que a fila seja ideal/vazia.
 
@@ -294,7 +295,7 @@ Certifique-se de que nenhum trabalho de publicação esteja em execução na sua
 
    URL padrão: http:// localhost:4502/aem/start.html
 
-1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
+1. No painel **Ferramentas** ![Ferramentas](assets/tools.png), navegue até **[!UICONTROL Implantação >> Replicação]**.
 
 1. A página Replicação é aberta.
 
@@ -304,7 +305,7 @@ Certifique-se de que nenhum trabalho de publicação esteja em execução na sua
 
 1. Localize os agentes de replicação do seu locatário do Brand Portal.
 
-   Certifique-se de que a **Fila esteja inativa** para todos os agentes de replicação; nenhum trabalho de publicação está ativo.
+   Certifique-se de que a **Fila esteja inativa** para todos os agentes de replicação, nenhuma tarefa de publicação está ativa.
 
    ![](assets/test-integration3.png)
 
@@ -321,20 +322,20 @@ Execute as seguintes etapas para excluir a configuração existente:
 
    URL padrão: http:// localhost:4502/crx/de/index.jsp
 
-1. Navegue até `/etc/replications/agents.author` e exclua todos os quatro agentes de replicação do seu locatário do Brand Portal.
+1. Navegue até `/etc/replications/agents.author` e exclua todos os quatro agentes de replicação do locatário do Brand Portal.
 
    ![](assets/delete-replication-agent.png)
 
-1. Navegue até `/etc/cloudservices/mediaportal` e exclua a configuração **do** Cloud Service.
+1. Navegue até `/etc/cloudservices/mediaportal` e exclua a **configuração do Cloud Service**.
 
    ![](assets/delete-cloud-service.png)
 
-1. Navegue até `/home/users/mac` e exclua o usuário **** MAC do seu locatário do Brand Portal.
+1. Navegue até `/home/users/mac` e exclua o **usuário MAC** do locatário do Brand Portal.
 
    ![](assets/delete-mac-user.png)
 
 
-Agora você pode [criar a configuração](#configure-new-integration-64) na sua instância do autor AEM 6.4 em E/S Adobe.
+Agora você pode [criar a configuração](#configure-new-integration-64) na sua instância do autor AEM 6.4 no Adobe I/O.
 
 
 
