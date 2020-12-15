@@ -1,6 +1,6 @@
 ---
 title: Markdown
-seo-title: Markdown
+seo-title: Marcação
 description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
 seo-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
@@ -22,9 +22,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação de [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
-Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmentos de conteúdo usa a sintaxe de *markdown* para permitir que você escreva conteúdo facilmente:
+Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmentos de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo facilmente:
 
 ![editor de marcação](/help/assets/assets/cfm-6420-08.png)
 
