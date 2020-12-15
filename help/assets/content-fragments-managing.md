@@ -22,23 +22,23 @@ ht-degree: 11%
 
 >[!CAUTION]
 >
->Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação de [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
-Os Fragmentos de conteúdo são armazenados como **[!UICONTROL Ativos]**, portanto, são gerenciados principalmente no console **[!UICONTROL Ativos]** .
+Os Fragmentos de conteúdo são armazenados como **[!UICONTROL Ativos]**, portanto, são gerenciados principalmente do console **[!UICONTROL Ativos]**.
 
 >[!NOTE]
 >
->Fragmentos de conteúdo são usados com páginas de criação; consulte Criação [de página com fragmentos](/help/sites-authoring/content-fragments.md)de conteúdo.
+>Fragmentos de conteúdo são usados com páginas de criação; consulte [Criação de página com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md).
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
-### Criação de um modelo de conteúdo {#creating-a-content-model}
+### Criando um Modelo de Conteúdo {#creating-a-content-model}
 
-[Os modelos](content-fragments-models.md) de fragmento de conteúdo podem ser ativados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
+[A ](content-fragments-models.md) modelagem de fragmentos de conteúdo deve ser ativada e criada antes da criação de fragmentos de conteúdo com conteúdo estruturado.
 
 >[!NOTE]
 >
->Consulte [Desenvolvimento de fragmentos](/help/sites-developing/customizing-content-fragments.md) de conteúdo para obter mais informações sobre modelos; usado para fragmentos de conteúdo simples.
+>Consulte [Desenvolvimento de fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md) para obter mais informações sobre modelos; usado para fragmentos de conteúdo simples.
 
 ### Criação de um fragmento de conteúdo {#creating-a-content-fragment}
 
@@ -50,8 +50,8 @@ O método de criação de um fragmento de conteúdo é (basicamente) o mesmo par
 
    * Isso pode ser:
 
-      * [Modelo](/help/sites-developing/content-fragment-templates.md) - por exemplo, Fragmento **[!UICONTROL simples]**
-      * [Modelo](content-fragments-models.md) - usado para criar um fragmento que requer conteúdo estruturado; por exemplo, o modelo de **aeroporto**
+      * [Modelo](/help/sites-developing/content-fragment-templates.md)  - por exemplo, Fragmento  **[!UICONTROL simples]**
+      * [Modelo](content-fragments-models.md)  - usado para criar um fragmento que requer conteúdo estruturado; por exemplo, o  **** Airportmodel
    * Todos os modelos e modelos disponíveis são exibidos.
 
    Após a seleção, use **[!UICONTROL Próximo]** para continuar.
@@ -83,10 +83,10 @@ O método de criação de um fragmento de conteúdo é (basicamente) o mesmo par
 
 ## Ações para um fragmento de conteúdo {#actions-for-a-content-fragment}
 
-No console **[!UICONTROL Ativos]** , várias ações estão disponíveis para seus fragmentos de conteúdo:
+No console **[!UICONTROL Assets]**, várias ações estão disponíveis para seus fragmentos de conteúdo:
 
 * Na barra de ferramentas; após a seleção do fragmento, todas as ações apropriadas estarão disponíveis.
-* Como ações [rápidas](/help/sites-authoring/basic-handling.md#quick-actions); um subconjunto de ações disponível para os cartões de fragmento individuais.
+* Como [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions); um subconjunto de ações disponível para os cartões de fragmento individuais.
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
 
@@ -104,13 +104,13 @@ Selecione o fragmento para revelar a barra de ferramentas com as ações aplicá
 
 * **[!UICONTROL Editar]**
 
-   * Permite [abrir o fragmento para edição de conteúdo](content-fragments-variations.md) junto com seus elementos, variações, conteúdo associado e metadados.
+   * Permite [abrir o fragmento para editar conteúdo](content-fragments-variations.md) juntamente com seus elementos, variações, conteúdo associado e metadados.
 
 * **[!UICONTROL Gerenciar tags]**
 * **[!UICONTROL Para a coleção]**
 
    * Adicione o fragmento a uma coleção.
-   * Isso também pode ser feito ao [associar uma coleção ao fragmento](content-fragments-assoc-content.md#adding-associated-content).
+   * Isso também pode ser feito quando [associar uma coleção ao fragmento](content-fragments-assoc-content.md#adding-associated-content).
 
 * **[!UICONTROL Copiar/colar]**
 * **[!UICONTROL Mover]**
@@ -120,7 +120,7 @@ Selecione o fragmento para revelar a barra de ferramentas com as ações aplicá
 
 >[!NOTE]
 >
->Muitas dessas ações são [padrão para os Ativos](managing-assets-touch-ui.md) e/ou o aplicativo [de](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)desktop.
+>Muitas dessas ações são [ações padrão para Assets](managing-assets-touch-ui.md) e/ou [aplicativo desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Abrir o Editor de fragmentos {#opening-the-fragment-editor}
 
@@ -128,9 +128,9 @@ Para abrir o fragmento para edição:
 
 >[!CAUTION]
 >
->Para editar um fragmento de conteúdo, você precisa [das permissões](/help/sites-developing/customizing-content-fragments.md#asset-permissions)apropriadas. Entre em contato com o administrador do sistema se tiver problemas.
+>Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Entre em contato com o administrador do sistema se tiver problemas.
 
-1. Use o console **[!UICONTROL Ativos]** para navegar até o local do fragmento do conteúdo.
+1. Use o console **[!UICONTROL Assets]** para navegar até o local do fragmento do conteúdo.
 1. Abra o fragmento para edição ao:
 
    * Clicar/tocar no fragmento ou link do fragmento (isso depende da visualização do console).
@@ -145,19 +145,19 @@ Para abrir o fragmento para edição:
    >1. Uma mensagem será exibida quando o fragmento já estiver referenciado em uma página de conteúdo.
       >
       >
-   2. O painel lateral pode ser oculto/exibido usando o ícone **[!UICONTROL Alternar painel]** lateral.
+   2. O painel lateral pode ser oculto/exibido usando o ícone **[!UICONTROL Alternar painel lateral]**.
 
 
 1. Navegue pelos três modos usando os ícones no painel lateral:
 
-   * Variações: [Editar o conteúdo](#editing-the-content-of-your-fragment) e [gerenciar suas variações](#creating-and-managing-variations-within-your-fragment)
+   * Variações: [Editar o conteúdo](#editing-the-content-of-your-fragment) e [Gerenciar suas variações](#creating-and-managing-variations-within-your-fragment)
    * [Anotações](content-fragments-variations.md#annotating-a-content-fragment)
    * [Conteúdo associado](#associating-content-with-your-fragment)
    * [Metadados](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
-1. Depois de fazer as alterações, use **[!UICONTROL Salvar]** ou **[!UICONTROL Cancelar]** , conforme necessário.
+1. Depois de fazer as alterações, use **[!UICONTROL Save]** ou **[!UICONTROL Cancel]** conforme necessário.
 
    >[!NOTE]
    >
@@ -167,7 +167,7 @@ Para abrir o fragmento para edição:
 
 >[!NOTE]
 >
->As versões também podem ser [criadas, comparadas e revertidas na Linha do tempo](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
+>As versões também podem ser [criadas, comparadas e revertidas da Linha do tempo](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
 
 O editor tem duas opções:
 
@@ -177,7 +177,7 @@ O editor tem duas opções:
 
    >[!CAUTION]
    >
-   >Para editar um fragmento de conteúdo, você precisa [das permissões](/help/sites-developing/customizing-content-fragments.md#asset-permissions)apropriadas. Entre em contato com o administrador do sistema se tiver problemas.
+   >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Entre em contato com o administrador do sistema se tiver problemas.
 
    >[!NOTE]
    >
@@ -185,7 +185,7 @@ O editor tem duas opções:
 
    >[!CAUTION]
    >
-   >Além de salvar suas alterações, o **[!UICONTROL Save]** também atualiza quaisquer referências e garante que o dispatcher seja liberado conforme necessário. Essas mudanças podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho em um sistema grande/complexo/com carga intensa.
+   >Além de simplesmente salvar suas alterações, **[!UICONTROL Salvar]** também atualiza quaisquer referências e garante que o dispatcher seja liberado conforme necessário. Essas mudanças podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho em um sistema grande/complexo/com carga intensa.
    >
    >
    >Lembre-se disso ao usar **[!UICONTROL Salvar]** e, em seguida, reinserir rapidamente o editor de fragmentos para fazer e salvar outras alterações.
@@ -194,53 +194,53 @@ O editor tem duas opções:
 
    Sairá do editor sem salvar as alterações mais recentes.
 
-Ao editar o fragmento do conteúdo, AEM cria automaticamente versões para garantir que o conteúdo anterior possa ser restaurado se você **[!UICONTROL Cancelar]** suas alterações:
+Durante a edição do fragmento do conteúdo, AEM cria automaticamente versões para garantir que o conteúdo anterior possa ser restaurado se você **[!UICONTROL Cancelar]** suas alterações:
 
-1. Quando um fragmento de conteúdo é aberto para edição AEM verifica a existência do token baseado em cookie que indica se existe uma sessão *de* edição:
+1. Quando um fragmento de conteúdo é aberto para edição AEM verifica a existência do token baseado em cookies que indica se existe uma *sessão de edição*:
 
    1. Se o token for encontrado, o fragmento será considerado parte da sessão de edição existente.
-   1. Se o token *não* estiver disponível e o usuário start a edição de conteúdo, uma versão é criada e um token para esta nova sessão de edição é enviado para o cliente, onde é salvo em um cookie.
+   1. Se o token *não* estiver disponível e o usuário start a edição de conteúdo, uma versão será criada e um token para esta nova sessão de edição será enviado para o cliente, onde será salvo em um cookie.
 
-1. Enquanto há uma sessão de edição *ativa* , o conteúdo que está sendo editado é salvo automaticamente a cada 600 segundos (padrão).
+1. Embora haja uma sessão de edição *ativa*, o conteúdo que está sendo editado é salvo automaticamente a cada 600 segundos (padrão).
 
    >[!NOTE]
    >
-   >O intervalo de salvamento automático é configurável usando o `/conf` mecanismo.
+   >O intervalo de salvamento automático é configurável usando o mecanismo `/conf`.
    >
    >Valor padrão, consulte:
    >
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
 1. Se o usuário selecionar **[!UICONTROL Cancelar]** a edição, a versão criada no start da sessão de edição será restaurada e o token será removido para encerrar a sessão de edição.
-1. Se o usuário selecionar para **[!UICONTROL Salvar]** as edições, os elementos/variações atualizados serão mantidos e o token será removido para encerrar a sessão de edição.
+1. Se o usuário selecionar **[!UICONTROL Salvar]** para as edições, os elementos/variações atualizados serão mantidos e o token será removido para encerrar a sessão de edição.
 
 ## Editar o conteúdo do fragmento {#editing-the-content-of-your-fragment}
 
-Após abrir o fragmento, use a guia [Variações](content-fragments-variations.md) para criar o conteúdo.
+Depois de abrir o fragmento, use a guia [Variações](content-fragments-variations.md) para criar o conteúdo.
 
-## Criação e gerenciamento de variações no fragmento {#creating-and-managing-variations-within-your-fragment}
+## Criação e gerenciamento de variações no seu fragmento {#creating-and-managing-variations-within-your-fragment}
 
-Depois de criar o conteúdo Principal, você pode criar e gerenciar [variações](content-fragments-variations.md) desse conteúdo.
+Depois de criar o conteúdo Principal, você pode criar e gerenciar [Variações](content-fragments-variations.md) desse conteúdo.
 
 ## Associar conteúdo ao fragmento {#associating-content-with-your-fragment}
 
-Também é possível [associar conteúdo](content-fragments-assoc-content.md) a um fragmento. Isso fornece uma conexão para que os ativos (ou seja, imagens) possam ser usados (opcionalmente) com o fragmento quando ele for adicionado a uma página de conteúdo.
+Você também pode [associar conteúdo](content-fragments-assoc-content.md) a um fragmento. Isso fornece uma conexão para que os ativos (ou seja, imagens) possam ser usados (opcionalmente) com o fragmento quando ele for adicionado a uma página de conteúdo.
 
-## Visualização e edição dos metadados (propriedades) do fragmento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Visualização e edição dos metadados (Propriedades) do fragmento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-É possível visualização e editar as propriedades de um fragmento usando a guia [[!UICONTROL Metadados]](content-fragments-metadata.md) .
+É possível visualização e editar as propriedades de um fragmento usando a guia [[!UICONTROL Metadados]](content-fragments-metadata.md).
 
 ## Linha do tempo para fragmentos de conteúdo {#timeline-for-content-fragments}
 
-Além das opções padrão, a [Linha do tempo](managing-assets-touch-ui.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
+Além das opções padrão, [Linha do tempo](managing-assets-touch-ui.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
 * Informações de visualização sobre versões, comentários e anotações
 * Ações para versões
 
-   * **[[!UICONTROL Reverter para esta versão]](#reverting-to-a-version)** (selecione um fragmento existente e, em seguida, uma versão específica)
-   * **[[!UICONTROL Comparar com Atual]](#comparing-fragment-versions)** (selecione um fragmento existente e, em seguida, uma versão específica)
+   * **[[!UICONTROL Reverter para esta versão]](#reverting-to-a-version)**  (selecione um fragmento existente e, em seguida, uma versão específica)
+   * **[[!UICONTROL Comparar com Atual]](#comparing-fragment-versions)**  (selecione um fragmento existente e, em seguida, uma versão específica)
    * Adicionar um **[!UICONTROL Rótulo]** e/ou **[!UICONTROL Comentário]** (selecione um fragmento existente e, em seguida, uma versão específica)
-   * **[!UICONTROL Salvar como versão]** (selecione um fragmento existente e, em seguida, a seta para cima na parte inferior da Linha do tempo)
+   * **[!UICONTROL Salvar como versão]**  (selecione um fragmento existente e, em seguida, a seta para cima na parte inferior da Linha do tempo)
 
 * Ações para anotações
 
@@ -268,11 +268,11 @@ Por exemplo:
 
 ## Comparação de versões de fragmento {#comparing-fragment-versions}
 
-A ação **[!UICONTROL Comparar com o atual]** está disponível na [[!UICONTROL Linha]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) do tempo depois que você seleciona uma versão específica.
+A ação **[!UICONTROL Comparar com Atual]** está disponível na [[!UICONTROL Linha do tempo]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) depois de ter selecionado uma versão específica.
 
 Isso abrirá:
 
-* a versão **[!UICONTROL Atual]** (mais recente) (à esquerda)
+* a versão **[!UICONTROL Atual]** (mais recente) (esquerda)
 
 * a versão selecionada **v&lt;*x.y*>** (direita)
 
@@ -286,7 +286,7 @@ Elas serão mostradas lado a lado, onde:
 
 * O ícone de tela cheia permite que você abra qualquer versão por conta própria; em seguida, alterne de volta para a visualização paralela
 * Você pode **[!UICONTROL Reverter]** para a versão específica
-* **[!UICONTROL Concluído]** retornará ao console
+* **[!UICONTROL O]** Dono retornará ao console
 
 >[!NOTE]
 >
@@ -294,46 +294,46 @@ Elas serão mostradas lado a lado, onde:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Reverting to a Version  {#reverting-to-a-version}
+## Reverter para uma versão {#reverting-to-a-version}
 
 É possível reverter para uma versão específica do fragmento:
 
 * Diretamente da [[!UICONTROL Linha do tempo]](content-fragments-managing.md#timeline-for-content-fragments).
 
-   Selecione a versão necessária e, em seguida, a ação **[!UICONTROL Reverter para esta versão]** .
+   Selecione a versão necessária e a ação **[!UICONTROL Reverter para esta versão]**.
 
-* Ao [comparar uma versão com a versão](content-fragments-managing.md#comparing-fragment-versions) atual, é possível **[!UICONTROL Reverter]** para a versão selecionada.
+* Enquanto [compara uma versão à versão atual](content-fragments-managing.md#comparing-fragment-versions) você pode **[!UICONTROL Reverter]** para a versão selecionada.
 
-## Publicação e referência de um fragmento {#publishing-and-referencing-a-fragment}
+## Publicar e fazer referência a um fragmento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
->Se o fragmento for baseado em um modelo, verifique se o [modelo foi publicado](content-fragments-models.md#publishing-a-content-fragment-model).
+>Se o fragmento for baseado em um modelo, verifique se o modelo [foi publicado](content-fragments-models.md#publishing-a-content-fragment-model).
 >
 >Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
 
 Fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Podem ser publicados:
 
-* Após a criação; no console **[!UICONTROL Ativos]** .
-* Ao [publicar uma página que usa o fragmento](/help/sites-authoring/content-fragments.md#publishing); o fragmento será listado nas referências de página.
+* Após a criação; no console **[!UICONTROL Assets]**.
+* Quando você [publica uma página que usa o fragmento](/help/sites-authoring/content-fragments.md#publishing); o fragmento será listado nas referências de página.
 
 >[!CAUTION]
 >
 >Depois que um fragmento é publicado e/ou referenciado, AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
-## Excluir um fragmento {#deleting-a-fragment}
+## Excluindo um fragmento {#deleting-a-fragment}
 
 Para excluir um fragmento:
 
-1. No console **[!UICONTROL Ativos]** , navegue até o local do fragmento de conteúdo.
+1. No console **[!UICONTROL Assets]**, navegue até o local do fragmento de conteúdo.
 1. Selecione o fragmento.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Delete]** action is not available as a quick action.
+   >A ação **[!UICONTROL Delete]** não está disponível como uma ação rápida.
 
-1. Select **[!UICONTROL Delete]** from the toolbar.
-1. Confirme a ação **[!UICONTROL Excluir]** .
+1. Selecione **[!UICONTROL Excluir]** na barra de ferramentas.
+1. Confirme a ação **[!UICONTROL Delete]**.
 
    >[!CAUTION]
    >
