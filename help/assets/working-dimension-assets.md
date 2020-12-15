@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >O pacote de recursos 3D AEM no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) ao trabalhar com ativos da Adobe Dimension.
 
-O pacote de recursos AEM 3D oferece suporte para ativos (`.dn` arquivos) Adobe Dimension no AEM Assets, AEM Sites e AEM Screens.
+O pacote de recursos AEM 3D oferece suporte para ativos Adobe Dimension (`.dn` arquivos) no AEM Assets, AEM Sites e AEM Screens.
 
 Um novo visualizador 3D baseado no padrão aberto glTF oferece recursos de visualização de pré-visualizações e Sites e telas para ativos do Adobe Dimension.
 
@@ -32,14 +32,14 @@ Um novo visualizador 3D baseado no padrão aberto glTF oferece recursos de visua
 
 Quando um ativo Dimension é carregado para AEM, uma cópia do arquivo é encaminhada para um serviço baseado em nuvem gerenciado por Adobe no Amazon AWS. Esse serviço converte do formato de arquivo Dimension proprietário do Adobe para o formato glTF padrão aberto. O modelo 3D convertido é empacotado como um glTF binário (`.glb`). AEM armazena o modelo convertido com o ativo Dimension principal como uma representação.
 
-Você pode configurar o formato de `.glb` conversão de duas maneiras (consulte [Instalação e configuração AEM 3D](install-config-3d.md) para obter instruções):
+Você pode configurar o formato de conversão `.glb` usando uma de duas maneiras (consulte [Instalar e configurar AEM 3D](install-config-3d.md) para obter instruções):
 
 * Inclua extensões específicas ao Adobe para maximizar a qualidade visual ao usar o visualizador Adobe glTF para visualização ativos do Dimension no AEM Assets, AEM Sites ou AEM Screens. Isso torna as execuções `.glb` incompatíveis com a maioria dos aplicativos de terceiros.
 * Exclua extensões específicas de Adobe para obter compatibilidade da execução `.glb` com aplicativos de terceiros. Isso limita a qualidade visual ao visualizar no AEM Assets, AEM Sites ou AEM Screens (por exemplo, sem iluminação IBL) para simular a qualidade de aplicativos típicos de terceiros.
 
 A transferência dos arquivos Dimension/glTF para ou do Amazon AWS e seu armazenamento temporário no AWS estão totalmente protegidos. Esses arquivos persistem no Amazon AWS por um tempo mínimo; normalmente, não mais do que alguns minutos durante as operações normais.
 
-Para habilitar o suporte para ativos de Dimension, você deve obter credenciais do Adobe para acessar o serviço de conversão. See [Installing and configuring AEM 3D](install-config-3d.md).
+Para habilitar o suporte para ativos de Dimension, você deve obter credenciais do Adobe para acessar o serviço de conversão. Consulte [Instalar e configurar AEM 3D](install-config-3d.md).
 
 >[!NOTE]
 >
@@ -51,9 +51,9 @@ O pacote de recursos AEM 3D inclui um novo visualizador com base no padrão aber
 
 Observe que a interface de usuário do visualizador glTF é um pouco diferente do visualizador 3D padrão, usado para todos os outros tipos de ativos 3D.
 
-#### See also the following: {#see-also-the-following}
+#### Consulte também: {#see-also-the-following}
 
-* [AEM notas](/help/release-notes/aem3d-release-notes.md) de versão 3D para restrições e limitações aplicáveis aos ativos Dn e ao visualizador glTF.
-* [Trabalhar com o componente](using-the-3d-sites-component.md) Sites 3D para propriedades de componentes específicas aos ativos da Adobe Dimension.
-* [Instalação e configuração AEM 3D](install-config-3d.md) para configurar o serviço de conversão baseado em nuvem.
+* [AEM notas de versão 3D ](/help/release-notes/aem3d-release-notes.md) para restrições e limitações aplicáveis aos ativos Dn e ao visualizador glTF.
+* [Trabalhar com o ](using-the-3d-sites-component.md) componente Sites 3D para propriedades de componentes específicas aos ativos da Adobe Dimension.
+* [Instalação e configuração do AEM 3](install-config-3d.md) DPS para configurar o serviço de conversão baseado em nuvem.
 
