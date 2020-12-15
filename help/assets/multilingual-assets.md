@@ -19,7 +19,7 @@ Para automatizar workflows de tradução, você integra provedores de serviço d
 
 Tradução humana: Os ativos convertidos são devolvidos e importados para AEM. Quando seu provedor de tradução está integrado ao AEM, os ativos são automaticamente enviados entre o AEM e o provedor de tradução.
 
-Tradução automática: O serviço de tradução automática traduz imediatamente os metadados e as tags dos ativos.
+Tradução automática: O serviço de tradução automática traduz imediatamente os metadados e as tags para ativos.
 
 Os ativos de tradução incluem o seguinte:
 
@@ -29,6 +29,6 @@ Os ativos de tradução incluem o seguinte:
 1. [Aplicação de serviços de conversão em nuvem a pastas](transition-cloud-services.md)
 1. [Criar projetos de tradução](translation-projects.md)
 
-Se o seu provedor de serviço de tradução não fornecer um conector para integração com o AEM, use um processo [](/help/sites-administering/tc-manage.md#exporting-a-translation-job)alternativo.
+Se o seu provedor de serviço de tradução não fornecer um conector para integração com o AEM, use um [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Consulte também [Criar projetos de tradução para fragmentos](creating-translation-projects-for-content-fragments.md)de conteúdo.
+Consulte também, [Criar projetos de tradução para fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md).
