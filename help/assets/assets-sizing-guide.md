@@ -60,15 +60,15 @@ O exemplo de dados preenchido na ferramenta demonstra a importância de executar
 
 Para grandes armazenamentos de dados, você pode implementar um armazenamento de dados compartilhado por meio de um armazenamento de dados de arquivo compartilhado em uma unidade conectada à rede ou por meio de um armazenamento de dados S3. Nesse caso, as instâncias individuais não precisam manter uma cópia dos binários. Além disso, um armazenamento de dados compartilhado facilita a replicação sem binários e ajuda a reduzir a largura de banda usada para replicar ativos para publicar ambientes ou descarregar instâncias.
 
-#### Use Cases {#use-cases}
+#### Casos de uso {#use-cases}
 
 O armazenamento de dados pode ser compartilhado entre uma instância de autor principal e em espera para minimizar o tempo necessário para atualizar a instância em espera com as alterações feitas na instância principal. O Adobe recomenda compartilhar o armazenamento de dados entre uma instância do autor principal e descarregar instâncias do autor para reduzir os custos indiretos na descarga do fluxo de trabalho. Você também pode compartilhar o armazenamento de dados entre as instâncias de autor e publicação para minimizar o tráfego durante a replicação.
 
-#### Desvantagens {#drawbacks}
+#### Retornos {#drawbacks}
 
 Devido a algumas armadilhas, o compartilhamento de um armazenamento de dados não é recomendado em todos os casos.
 
-#### Ponto único de falha {#single-point-of-failure}
+#### Ponto de falha único {#single-point-of-failure}
 
 Com um armazenamento de dados compartilhado, apresenta um único ponto de falha em uma infraestrutura. Considere um cenário em que seu sistema tenha uma e duas instâncias de publicação, cada uma com seu próprio armazenamento de dados. Se algum deles falhar, os outros dois ainda poderão continuar em execução. No entanto, se o armazenamento de dados for compartilhado, uma única falha de disco poderá derrubar toda a infraestrutura. Portanto, certifique-se de manter um backup do armazenamento de dados compartilhado de onde você pode restaurar o armazenamento de dados rapidamente.
 
@@ -88,14 +88,14 @@ Um armazenamento de dados compartilhado exige que os binários sejam armazenados
 
 A latência em implementações S3 é introduzida pelos threads de escrita em segundo plano. Os procedimentos de backup devem levar em conta essa latência e quaisquer procedimentos de descarga. O ativo S3 pode não estar presente no S3 quando um start de trabalho de descarregamento é desativado. Além disso, os índices Lucene podem ficar incompletos ao fazer um backup. Ele se aplica a qualquer arquivo que faz distinção de tempo gravado no armazenamento de dados S3 e acessado de outra instância.
 
-### Loja de nós/Loja de Documentos {#node-store-document-store}
+### Armazenamento de nó/Armazenamento de Documentos {#node-store-document-store}
 
 É difícil obter números precisos de dimensionamento para um NodeStore ou DocumentStore devido aos recursos consumidos pelos seguintes:
 
 * Metadados do ativo
 * Versões de ativos
 * Logs de auditoria
-* workflows arquivados e ativos
+* Workflows arquivados e ativos
 
 Como os binários são armazenados no armazenamento de dados, cada binário ocupa algum espaço. A maioria dos repositórios tem menos de 100 GB. No entanto, pode haver repositórios maiores de até 1 TB de tamanho. Além disso, para executar compactação offline, é necessário espaço livre suficiente no volume para regravar o repositório compactado junto com a versão pré-compactada. Uma boa regra é dimensionar o disco para 1,5 vezes o tamanho esperado para o repositório.
 
@@ -105,7 +105,7 @@ Para o repositório, use SSDs ou discos com um nível IOPS superior a 3000. Para
 
 ## Rede {#network}
 
-A AEM Assets tem vários casos de uso que tornam o desempenho da rede mais importante do que em muitos de nossos projetos AEM. Um cliente pode ter um servidor rápido, mas se a conexão de rede não for grande o suficiente para suportar a carga dos usuários que estão carregando e baixando ativos do sistema, ele ainda parecerá estar lento. Há uma boa metodologia para determinar o ponto de bloqueio na conexão de rede de um usuário para AEM em [AEM considerações de ativos para experiência do usuário, dimensionamento de instância, avaliação de fluxo de trabalho e topologia](assets-network-considerations.md)de rede.
+A AEM Assets tem vários casos de uso que tornam o desempenho da rede mais importante do que em muitos de nossos projetos AEM. Um cliente pode ter um servidor rápido, mas se a conexão de rede não for grande o suficiente para suportar a carga dos usuários que estão carregando e baixando ativos do sistema, ele ainda parecerá estar lento. Há uma boa metodologia para determinar o ponto de estrangulamento na conexão de rede de um usuário para AEM em [AEM Considerações de ativo para experiência do usuário, dimensionamento de instância, avaliação de fluxo de trabalho e topologia de rede](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
@@ -121,7 +121,7 @@ Para ilustrar essas ineficiências, o Adobe testou o desempenho do sistema usand
 
 Ao analisar o tempo médio de economia para arquivos via WebDAV, descobriu-se que o desempenho aumenta drasticamente à medida que a largura de banda aumenta até o nível de 5 a 10 Mbps. Portanto, a Adobe recomenda que cada usuário que acessa o sistema simultaneamente tenha pelo menos 10 Mbps de velocidade de carregamento e 5 a 10 Mbps de largura de banda.
 
-Para obter mais informações, consulte [Solução de problemas AEM aplicativo](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)para desktop.
+Para obter mais informações, consulte [Resolução de problemas AEM aplicativo de desktop](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Limitações           {#limitations}
 
@@ -129,7 +129,7 @@ Ao dimensionar uma implementação, é importante ter em mente as limitações d
 
 O tamanho do arquivo não é o único fator que contribui para problemas de falta de memória (OOM). Também depende das dimensões da imagem. Você pode evitar problemas de OOM fornecendo um tamanho de heap mais alto ao start de AEM.
 
-Além disso, você pode editar a propriedade de tamanho limite do `com.day.cq.dam.commons.handler.StandardImageHandler` componente no Configuration Manager para usar um arquivo temporário intermediário maior que zero.
+Além disso, você pode editar a propriedade de tamanho limite do componente `com.day.cq.dam.commons.handler.StandardImageHandler` no Configuration Manager para usar um arquivo temporário intermediário maior que zero.
 
 ## Número máximo de ativos {#maximum-number-of-assets}
 
@@ -145,4 +145,4 @@ Se as renderizações forem geradas incorretamente, use a biblioteca Camera Raw.
 
 ## Tamanho dos ativos {#size-of-assets}
 
-Por padrão, AEM permite carregar ativos de tamanhos de arquivos de até 2 GBs. Para fazer upload de ativos muito grandes no AEM, consulte [Configuração para fazer upload de ativos](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)muito grandes.
+Por padrão, AEM permite carregar ativos de tamanhos de arquivos de até 2 GBs. Para carregar ativos muito grandes no AEM, consulte [Configuração para carregar ativos muito grandes](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
