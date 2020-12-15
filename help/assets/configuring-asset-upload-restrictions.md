@@ -13,10 +13,10 @@ ht-degree: 30%
 
 # Configurar restrições de upload de ativos {#configuring-asset-upload-restrictions}
 
-Você pode configurar os ativos Adobe Experience Manager (AEM) para restringir o tipo de ativos (arquivos) que os usuários podem carregar. Este recurso ajuda a eliminar a possibilidade de os usuários carregarem ativos em um formato indesejado ou carregarem arquivos mal-intencionados. O `Day CQ DAM Asset Upload Restriction` serviço permite controlar o tipo de arquivos que os usuários podem carregar. Por padrão, a AEM Assets permite que os usuários façam upload de ativos de todos os tipos MIME. No entanto, você pode configurar o serviço para restringir usuários a carregarem somente arquivos de tipos MIME específicos.
+Você pode configurar os ativos Adobe Experience Manager (AEM) para restringir o tipo de ativos (arquivos) que os usuários podem carregar. Este recurso ajuda a eliminar a possibilidade de os usuários carregarem ativos em um formato indesejado ou carregarem arquivos mal-intencionados. O serviço `Day CQ DAM Asset Upload Restriction` permite controlar o tipo de arquivos que os usuários podem carregar. Por padrão, a AEM Assets permite que os usuários façam upload de ativos de todos os tipos MIME. No entanto, você pode configurar o serviço para restringir usuários a carregarem somente arquivos de tipos MIME específicos.
 
 1. Para abrir o console da Web do Configuration Manager, acesse `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Abra o serviço **[!UICONTROL Dia CQ DAM Asset Upload Restriction (Restrição]** de upload de ativo do CQ DAM) no modo de edição. Por padrão, a opção **Permitir todos os MIME** está selecionada, permitindo que os usuários carreguem arquivos de todos os tipos MIME.
+1. Abra o serviço **[!UICONTROL Day CQ DAM Asset Upload Restriction]** no modo Editar. Por padrão, a opção **Permitir todos os MIME** está selecionada, o que permite que os usuários carreguem arquivos de todos os tipos MIME.
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
