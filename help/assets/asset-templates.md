@@ -22,7 +22,7 @@ A seção de mensagens fixas pode conter conteúdo proprietário, como o logotip
 
 A flexibilidade para fazer edições limitadas e, ao mesmo tempo, proteger assinaturas globais torna os modelos de ativos os blocos de construção ideais para adaptação e distribuição rápidas de conteúdo como artefatos de conteúdo para várias funções. A redefinição de objetivos de conteúdo ajuda a reduzir o custo de gerenciamento de canais digitais e impressos, além de proporcionar experiências holísticas e consistentes nesses canais.
 
-Como comerciante, você pode armazenar e gerenciar modelos no AEM Assets e usar um único modelo básico para criar várias experiências de impressão personalizadas com facilidade. Você pode criar vários tipos de material de marketing, incluindo folhetos, folhetos, cartões postais, cartões de visita e assim por diante, para transmitir de forma lúdica sua mensagem de marketing aos clientes. Você também pode reunir saídas de impressão de várias páginas de saídas de impressão novas ou existentes. Acima de tudo, você pode fornecer experiências digitais e de impressão simultaneamente com facilidade, para proporcionar uma experiência consistente e integrada aos usuários.
+Como comerciante, você pode armazenar e gerenciar modelos no AEM Assets e usar um único modelo básico para criar várias experiências de impressão personalizadas com facilidade. Você pode criar vários tipos de materiais de suporte de marketing, incluindo folhetos, folhetos, cartões postais, cartões de visita e assim por diante, para transmitir de forma lúdica sua mensagem de marketing aos clientes. Você também pode reunir saídas de impressão de várias páginas de saídas de impressão novas ou existentes. Acima de tudo, você pode fornecer experiências digitais e de impressão simultaneamente com facilidade, para proporcionar uma experiência consistente e integrada aos usuários.
 
 Embora os modelos de ativos sejam principalmente arquivos de InDesign, a proficiência no InDesign não é uma barreira para a criação de artefatos estelares. Não é necessário mapear os campos do modelo de InDesign com os campos do produto que você precisaria para criar catálogos. Você pode editar os modelos no modo WYSIWYG diretamente na interface da Web. Entretanto, para que o InDesign processe suas alterações de edição, é necessário configurar primeiro o AEM Assets para integrar-se ao servidor de InDesigns.
 
@@ -33,7 +33,7 @@ Você pode fazer o seguinte com modelos de ativos:
 * Modificar campos de modelo editáveis da interface da Web
 * Controle o estilo básico do texto, por exemplo, tamanho da fonte, estilo e tipo no nível da tag
 * Alterar imagens no modelo usando o Seletor de conteúdo
-* Edições de modelo de Pré-visualização
+* Edições de modelo de pré-visualização
 * Mesclar vários arquivos de modelo para criar um artefato de várias páginas
 
 Quando você escolhe um modelo para seu material de apoio, a AEM Assets cria uma cópia do modelo que você pode editar. O modelo original é preservado, garantindo que sua assinatura global permaneça intacta e possa ser reutilizada para reforçar a consistência da marca.
@@ -46,7 +46,7 @@ Você pode exportar o arquivo atualizado dentro da pasta pai nos seguintes forma
 
 Também é possível baixar a saída nesses formatos para o sistema local.
 
-## Criar um material de apoio {#creating-a-collateral}
+## Criar um material promocional {#creating-a-collateral}
 
 Considere um cenário em que você deseja criar materiais de suporte para impressão digital, como folhetos, folhetos e anúncios para uma próxima campanha e compartilhar com lojas de varejo globalmente. A criação de material de apoio com base em um modelo ajuda a fornecer uma experiência unificada ao cliente em todos os canais. Os designers podem criar os templates de campanha (página única ou página múltipla) usando uma solução criativa, como o InDesign e fazer upload dos modelos para a AEM Assets para você. Antes de criar um material de apoio, faça com que um ou mais modelos INDD sejam carregados e disponibilizados com Experience Manager antecipadamente.
 
@@ -59,7 +59,7 @@ Considere um cenário em que você deseja criar materiais de suporte para impres
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
-1. Faça com que um ou mais modelos INDD sejam carregados e disponibilizados antecipadamente no Experience Manager. Escolha um modelo para o folheto e clique/toque em **[!UICONTROL Avançar]**.
+1. Faça com que um ou mais modelos INDD sejam carregados e disponibilizados antecipadamente no Experience Manager. Escolha um modelo para o folheto e clique/toque em **[!UICONTROL Próximo]**.
 
    ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -69,13 +69,13 @@ Considere um cenário em que você deseja criar materiais de suporte para impres
 
 1. (Opcional) Clique/toque no ícone **[!UICONTROL Tags]** ao lado do campo **[!UICONTROL Tags]** e selecione uma ou mais tags para o folheto. Clique/toque em **[!UICONTROL Confirmar]** para confirmar sua seleção.
 
-   ![chlimage_1-310](assets/chlimage_1-310.png)
+   ![chlimage_1-311](assets/chlimage_1-310.png)
 
 1. Clique em **[!UICONTROL Criar]**. Uma caixa de diálogo confirma que um novo folheto foi criado. Clique/toque em **[!UICONTROL Abrir]** para abrir o folheto no modo de edição.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-   Como alternativa, feche a caixa de diálogo e navegue até a pasta na página Modelos que você começou para visualização o folheto que você criou. O tipo de garantia aparece na sua miniatura na visualização do cartão. Por exemplo, neste caso, Brochure é exibido na miniatura.
+   Como alternativa, feche a caixa de diálogo e navegue até a pasta na página Modelos que você começou para visualização o folheto que criou. O tipo de garantia aparece na sua miniatura na visualização do cartão. Por exemplo, neste caso, Brochure é exibido na miniatura.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -85,7 +85,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
 1. Para abrir o material promocional para edição, execute um dos procedimentos a seguir:
 
-   * Abra o material de apoio (neste caso, brochura) que você criou na etapa 7 de [Criação de um material de apoio](asset-templates.md#creating-a-collateral).
+   * Abra o material de apoio (neste caso, folheto) criado na etapa 7 de [Criação de um material de apoio](asset-templates.md#creating-a-collateral).
    * Na página Modelos, navegue até uma pasta na qual você criou o material colateral e clique/toque na ação rápida Editar na miniatura de um material colateral.
    * Na página de ativos do material de apoio, clique/toque no ícone Editar na barra de ferramentas.
    * Selecione o material de apoio e clique/toque no ícone Editar na barra de ferramentas.
@@ -114,11 +114,11 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    É possível editar as propriedades do texto, por exemplo, estilo da fonte, cor e tamanho usando as opções fornecidas.
 
-1. Clique/toque no ícone de **[!UICONTROL Pré-visualização]** para pré-visualização das alterações de texto.
+1. Clique/toque no ícone **[!UICONTROL Pré-visualização]** para pré-visualização das alterações de texto.
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. Para trocar uma imagem, clique/toque no ícone **[!UICONTROL Localizador]** de ativos.
+1. Para trocar uma imagem, clique/toque no ícone **[!UICONTROL Localizador de ativos]**.
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -130,7 +130,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
-1. Clique/toque no ícone de **[!UICONTROL Pré-visualização]** para pré-visualização da imagem.
+1. Clique/toque no ícone **[!UICONTROL Pré-visualização]** para pré-visualização da imagem.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -138,7 +138,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Clique/toque no ícone de **[!UICONTROL Pré-visualização]** na barra de ferramentas para pré-visualização de todas as alterações. Clique/toque em **[!UICONTROL Concluído]** para salvar as alterações de edição no material de apoio.
+1. Clique/toque no ícone **[!UICONTROL Pré-visualização]** na barra de ferramentas para pré-visualização de todas as alterações. Clique/toque em **[!UICONTROL Concluído]** para salvar as alterações de edição no material de apoio.
 
    >[!NOTE]
    >
@@ -150,13 +150,13 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >
    >Para habilitar AEM para resolver imagens, faça o seguinte:
    >
-   >* Incorporar imagens ao criar modelos de InDesigns (Consulte [Sobre links e gráficos](https://helpx.adobe.com/indesign/using/graphics-links.html)incorporados).
+   >* Incorpore imagens ao criar modelos de InDesigns (Consulte [Sobre links e gráficos incorporados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Monte AEM em seu sistema de arquivos local e mapeie ícones ausentes com ativos AEM existentes.
 
    >
-   >Para obter mais informações sobre como trabalhar com documentos de InDesigns, consulte Práticas [recomendadas para trabalhar com Documentos de InDesigns em AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Para obter mais informações sobre como trabalhar com documentos de InDesigns, consulte [Práticas recomendadas para trabalhar com Documentos de InDesigns em AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
-1. Para gerar uma execução em PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
+1. Para gerar uma representação em PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
 1. O material de apoio é criado na pasta com a qual você começou. Para visualização das representações, abra o material de apoio e escolha **[!UICONTROL Representações]** na lista GlobalNav.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -165,7 +165,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## Materiais de apoio para mesclagem {#merge-collateral}
+## Mesclar ativos de garantia {#merge-collateral}
 
 
 1. Clique ou toque em **[!UICONTROL Ferramentas > Ativos]**.
@@ -194,16 +194,16 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
-1. Clique/toque em **[!UICONTROL Avançar]** na barra de ferramentas.
-1. Na tela **[!UICONTROL Pré-visualização e reorganização]** , reorganize os modelos, se necessário, e pré-visualização a seleção de modelos para mesclar. Em seguida, clique/toque em **[!UICONTROL Avançar]** na barra de ferramentas.
+1. Clique/toque em **[!UICONTROL Próximo]** na barra de ferramentas.
+1. Na tela **[!UICONTROL Pré-visualização e reorganização]**, reorganize os modelos, se necessário, e pré-visualização a seleção de modelos para mesclar. Em seguida, clique/toque em **[!UICONTROL Próximo]** na barra de ferramentas.
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
-1. Na tela Configurar modelo, especifique um nome para o material de apoio. Opcionalmente, especifique quaisquer tags que você considerar apropriadas. Se desejar exportar a saída no formato PDF, selecione a opção **[!UICONTROL Acrobat (.PDF)]** . Por padrão, o material de apoio é exportado no formato JPG e InDesign. Para alterar a miniatura de exibição do material de suporte para várias páginas, clique/toque em **[!UICONTROL Alterar miniatura]**.
+1. Na tela Configurar modelo, especifique um nome para o material de apoio. Opcionalmente, especifique quaisquer tags que você considerar apropriadas. Se desejar exportar a saída no formato PDF, selecione a opção **[!UICONTROL Acrobat (.PDF)]**. Por padrão, o material de apoio é exportado no formato JPG e InDesign. Para alterar a miniatura de exibição para o material de suporte de várias páginas, clique/toque em **[!UICONTROL Alterar miniatura]**.
 
    ![chlimage_1-332](assets/chlimage_1-332.png)
 
-1. Click/tap **[!UICONTROL Save]** and then click/tap **[!UICONTROL OK]** in the dialog to close the dialog. O material de apoio multipáginas é criado na pasta com a qual você começou.
+1. Clique/toque em **[!UICONTROL Salvar]** e, em seguida, clique/toque em **[!UICONTROL OK]** na caixa de diálogo para fechar a caixa de diálogo. O material de apoio multipáginas é criado na pasta com a qual você começou.
 
    >[!NOTE]
    >
