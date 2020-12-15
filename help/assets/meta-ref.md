@@ -11,7 +11,7 @@ ht-degree: 2%
 ---
 
 
-# Referência dos esquemas de metadados {#metadata-schemata-reference}
+# Referência de metadados de esquemas {#metadata-schemata-reference}
 
 A referência a seguir inclui informações sobre esquemas de metadados específicos (em ordem alfabética), bem como uma lista de propriedades e suas definições.
 
@@ -21,7 +21,7 @@ Os metadados do Dublin Core fornecem um conjunto padronizado de convenções par
 
 O conjunto simples de elementos de metadados principais de Dublin (DCMES) contém 15 elementos de metadados, conforme listados na tabela a seguir. Cada elemento de Dublin Core é opcional e pode ser repetido. Você pode adicionar ou excluir informações de metadados do Dublin Core como faria para metadados específicos de tipos de mídia.
 
-Além do DCMES, existem outros elementos de metadados criados pela iniciativa Dublin Core. Consulte a iniciativa [](http://dublincore.org/) Dublin Core para obter mais informações.
+Além do DCMES, existem outros elementos de metadados criados pela iniciativa Dublin Core. Consulte a [Iniciativa de Dublin Core](http://dublincore.org/) para obter mais informações.
 
 | Propriedade | Descrição |
 |---|---|
