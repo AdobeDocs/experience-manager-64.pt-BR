@@ -11,12 +11,12 @@ ht-degree: 0%
 ---
 
 
-# Ativação da detecção de Duplicados {#enabling-duplicate-detection}
+# Ativando a detecção de Duplicados {#enabling-duplicate-detection}
 
-Se você tentar fazer upload de um ativo que existe no Adobe Experience Manager (AEM) Assets, o recurso de detecção de duplicados o identificará como duplicado. A detecção de Duplicados está desativada por padrão. Para ativar o recurso, execute as seguintes etapas:
+Se você tentar fazer upload de um ativo que existe no Adobe Experience Manager (AEM) Assets, o recurso de detecção de duplicados o identificará como duplicado. A detecção de duplicados está desativada por padrão. Para ativar o recurso, execute as seguintes etapas:
 
-1. Abra a página Configuração **[!UICONTROL do console da Web do]** Adobe Experience Manager em `https://[server]:[port]/system/console/configMgr`.
-1. Edite a configuração para o **[!UICONTROL Dia do servlet CQ DAM Criar ativo]**.
+1. Abra a página **[!UICONTROL Configuração do Adobe Experience Manager Web Console]** em `https://[server]:[port]/system/console/configMgr`.
+1. Edite a configuração do servlet **[!UICONTROL Dia CQ DAM Criar Ativo]**.
 1. Selecione a opção **[!UICONTROL detectar duplicado]** e clique/toque em **[!UICONTROL Salvar]**.
 
    ![Selecione a opção detectar duplicado no servlet](assets/chlimage_1-377.png)
@@ -25,5 +25,5 @@ O recurso de detecção de duplicado agora está ativado no AEM Assets. Quando u
 
 >[!MORELIKETHIS]
 >
->* [Ativos do Duplicado no repositório existente (um tutorial de um membro da comunidade)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Ativos do duplicado no repositório existente (um tutorial de um membro da comunidade)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
 
