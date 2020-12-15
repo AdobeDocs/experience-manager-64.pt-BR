@@ -25,23 +25,23 @@ ht-degree: 70%
 1. Crie uma referência (temporária) a um modelo representativo. Isso ajuda facilita a avaliação da iluminação, a configuração de câmeras e a configuração do renderizador.
 1. Configure a iluminação baseada em imagem.
 
-   1. In **[!UICONTROL Render Settings]**, select **[!UICONTROL Render Render Using: mental ray]**, and open the Scene tab.
-   1. Open the **[!UICONTROL Render Environment]** accordion and click **[!UICONTROL Render Create Image Based Lighting]**.
-   1. Click the box icon that has a right arrow on the left side of the box to select the IBL node `mentalRayIblShape1`, then exit **[!UICONTROL Render Settings]**.
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. Em **[!UICONTROL Configurações de renderização]**, selecione **[!UICONTROL Renderizar renderização usando: mental ray]** e abra a guia Cena.
+   1. Abra a opção **[!UICONTROL Renderizar Ambiente]** e clique em **[!UICONTROL Renderizar iluminação baseada em imagem]**.
+   1. Clique no ícone de caixa que tem uma seta para a direita no lado esquerdo da caixa para selecionar o nó IBL `mentalRayIblShape1`, em seguida, saia de **[!UICONTROL Configurações de renderização]**.
+   1. No **[!UICONTROL Editor de atributos]**, selecione o nó de transformação `mentalRayIbl1` e, em seguida, renomeie o nó de transformação para `AdobeIbl`.
    1. Defina a Escala do nó para tornar a esfera do ambiente significativamente maior que o maior objeto 3D a ser mostrado com esse palco (por exemplo, `10000,10000,10000`).
    1. Selecione o nó `AdobeIblShape` e configure-o da seguinte maneira:
 
       * **[!UICONTROL Mapeamento]** - Esférico
       * **[!UICONTROL Tipo]** - Arquivo de imagem
       * **[!UICONTROL Emitir luz]** - verdadeiro
-   1. Attach the desired 32-bit TIFF image to the `AdobeIbl` node.
+   1. Anexe a imagem TIFF de 32 bits desejada ao nó `AdobeIbl`.
 
 
 1. Configure o plano base.
 
    * Crie um plano adequado para usar como plano base e dimensione-o para caber razoavelmente dentro da esfera IBL, passando pela origem das coordenadas.
-   * Attach a **[!UICONTROL Use Background]** material to the ground plane and name it `AdobeUseBackground` and attach it to the ground plane object.
+   * Coloque um material **[!UICONTROL Use Background]** no plano de solo e o nomeie `AdobeUseBackground` e conecte-o ao objeto do plano de solo.
 
 1. (Opcional) Crie e configure câmeras.
 
@@ -49,17 +49,17 @@ ht-degree: 70%
 
 1. Configure a renderização com o Mental Ray.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions.
+   Configure **[!UICONTROL Configurações de renderização]** com as seguintes sugestões.
 
-   * **[!UICONTROL Guia Comum]**
+   * **[!UICONTROL guia]** Comandos
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all **[!UICONTROL Renderable Cameras]**.
+      Desmarque a caixa de seleção **[!UICONTROL canal alfa (máscara)]** para todas as **[!UICONTROL Câmeras renderizadas]**.
 
    * **[!UICONTROL Guia Qualidade]**
 
       * **Qualidade geral** `0.5`-   ou menos
-      * **Modo** de Difusão Indireta (GI) - `Final Gather`
-      * **Tamanho** do filtro - `2.0`, `2.0`
+      * **Modo**  de Difusão Indireta (GI) -  `Final Gather`
+      * **Tamanho**  do filtro -  `2.0`,  `2.0`
    * Renderize a cena nos tamanhos de imagem típicos que você espera usar. Se necessário, refine as luzes, ou as Configurações de renderização, ou faça as duas coisas para obter os resultados desejados.
 
       Esteja ciente de que a renderização com o Mental Ray, usando a iluminação baseada em imagem, é muito lenta e exige muita CPU. A Adobe recomenda que você defina as configurações de qualidade mais baixas que ainda sejam capazes de produzir a qualidade de renderização desejada.
@@ -79,7 +79,7 @@ ht-degree: 70%
 
    O AEM 3D pode não conseguir detectar a imagem IBL configurada no palco. Nessas situações, você deve resolver as dependências ausentes manualmente. Você pode atribuir a mesma imagem PTIFF IBL carregada anteriormente para cada uma das dependências ausentes. Ou, você pode atribuir imagens diferentes para controlar ainda mais os efeitos da IBL. Depois de resolver as dependências, certifique-se de tocar em **[!UICONTROL Salvar]** para iniciar o reprocessamento.
 
-1. Abra as Propriedades do ativo no AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Verifique se a **[!UICONTROL Classe]** está definida como **[!UICONTROL Estágio 3D]**. Salve e saia.
+1. Abra as Propriedades do ativo no AEM. Defina **[!UICONTROL Title]** para uma sequência de caracteres adequada que aparecerá na lista suspensa **[!UICONTROL Seletor de Palco]**. Verifique se a **[!UICONTROL Classe]** está definida como **[!UICONTROL Estágio 3D]**. Salve e saia.
 
 1. Abra um ativo 3D, selecione o novo estágio e verifique se ele é visualizado e renderizado como esperado.
 
