@@ -22,7 +22,7 @@ Se você for um usuário do Adobe Experience Manager (AEM) Assets, o Lightbox se
 ## Adicionar ativos ao lightbox {#adding-assets-to-lightbox}
 
 1. Na interface do usuário Ativos, selecione os ativos que deseja adicionar ao Lightbox.
-1. Arraste os ativos até a zona **[!UICONTROL Soltar no Lightbox]** . Solte quando o Dropzone se tornar ativo e seu rótulo se alterar para **[!UICONTROL Soltar para Adicionar]**.
+1. Arraste os ativos para a zona **[!UICONTROL Soltar na Lightbox]**. Solte quando o Dropzone se tornar ativo e seu rótulo for alterado para **[!UICONTROL Solte para Adicionar]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
@@ -34,7 +34,7 @@ Se você for um usuário do Adobe Experience Manager (AEM) Assets, o Lightbox se
    >
    >Embora a Lightbox seja semelhante a uma coleção, você não pode executar todas as ações que normalmente executa em coleções. Por exemplo, não é possível excluir, compartilhar ou visualização configurações de um Lightbox. Além disso, não é possível adicioná-lo a outras coleções. Entretanto, é possível editar os ativos dentro de uma caixa de luz.
 
-## Remoção de ativos do Lightbox {#removing-assets-from-lightbox}
+## Removendo ativos do Lightbox {#removing-assets-from-lightbox}
 
 1. Navegue até o console Coleções, toque/clique em Lightbox para visualização de seus ativos.
 1. Selecione os ativos que deseja remover.
