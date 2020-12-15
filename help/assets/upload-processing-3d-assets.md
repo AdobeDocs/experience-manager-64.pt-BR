@@ -57,13 +57,13 @@ Quando o upload é concluído, seus arquivos 3D são convertidos, e um processam
 
 Em geral, converter e processar arquivos 3D consome recursos significativos de CPU e memória em um servidor. Esse processo também exige uma quantidade substancial de tempo. Os tempos de processamento geralmente variam muito, dependendo do tamanho do modelo e das capacidades do servidor. Por exemplo, um típico modelo pequeno com menos de 100 mil faces geralmente está pronto para visualização em menos de um minuto e é totalmente processado em 2 a 3 minutos. Por outro lado, um modelo grande com mais de um milhão de faces pode levar dezenas de minutos para ser processado completamente.
 
-Tarefas de conversão, processamento e renderização são enfileiradas conforme necessário para evitar a redução excessiva do servidor. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. Esse status indica que outras tarefas de processamento ou renderização devem ser concluídas antes que o ativo atual seja processado.
+Tarefas de conversão, processamento e renderização são enfileiradas conforme necessário para evitar a redução excessiva do servidor. A mensagem &quot;Aguardando processamento...&quot; às vezes é exibido na **[!UICONTROL Visualização de cartão]** no momento em que você carregou ativos. Esse status indica que outras tarefas de processamento ou renderização devem ser concluídas antes que o ativo atual seja processado.
 
-Há mecanismos disponíveis para restringir o uso da CPU para processamento de ingestão e renderização. Consulte Configurações [](advanced-config-3d.md) avançadas para obter informações sobre como configurar os limites da CPU.
+Há mecanismos disponíveis para restringir o uso da CPU para processamento de ingestão e renderização. Consulte [Configurações avançadas](advanced-config-3d.md) para obter informações sobre como configurar os limites da CPU.
 
 ## Monitoramento do status de processamento dos seus arquivos 3D carregados {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Cada modelo 3D carregado normalmente passa pelas seguintes 4 a 6 etapas de processamento solicitado:
+Somente em **[!UICONTROL Visualização de cartão]**, o status e a progressão do processamento são exibidos como um banner de progresso no cartão do ativo. Cada modelo 3D carregado normalmente passa pelas seguintes 4 a 6 etapas de processamento solicitado:
 
 <table> 
  <tbody> 
@@ -90,17 +90,17 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>4</td> 
    <td>Criando sombra</td> 
-   <td>Opcional. Permite gerar uma sombra projetada de oclusão ambiente no plano de solo abaixo do objeto 3D. Consulte Configurações <a href="/help/assets/advanced-config-3d.md"></a> avançadas para ativar ou desativar esse processamento.</td> 
+   <td>Opcional. Permite gerar uma sombra projetada de oclusão ambiente no plano de solo abaixo do objeto 3D. Consulte <a href="/help/assets/advanced-config-3d.md">Definições avançadas de configuração</a> para ativar ou desativar este processamento.</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
    <td>Criação de mapas de luz</td> 
-   <td>Opcional. Permite aumentar a qualidade da visualização interativa e agilizar a renderização com o renderizador padrão. Consulte Configurações <a href="/help/assets/advanced-config-3d.md"></a> avançadas para ativar ou desativar esse processamento.</td> 
+   <td>Opcional. Permite aumentar a qualidade da visualização interativa e agilizar a renderização com o renderizador padrão. Consulte <a href="/help/assets/advanced-config-3d.md">Definições avançadas de configuração</a> para ativar ou desativar este processamento.</td> 
   </tr> 
   <tr> 
    <td>6<br /> </td> 
    <td>Criação de animação</td> 
-   <td>Opcional. Permite renderizar uma animação simples que é usada como uma miniatura visual na Visualização de cartão. Consulte Configurações <a href="/help/assets/advanced-config-3d.md"></a> avançadas para ativar ou desativar esse processamento.</td> 
+   <td>Opcional. Permite renderizar uma animação simples que é usada como uma miniatura visual na Visualização de cartão. Consulte <a href="/help/assets/advanced-config-3d.md">Definições avançadas de configuração</a> para ativar ou desativar este processamento.</td> 
   </tr> 
   <tr> 
    <td>7<br /> </td> 
@@ -112,5 +112,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. Você não precisa esperar que todas as etapas de processamento sejam concluídas.
+>Você pode visualização um ativo 3D em **[!UICONTROL Visualização Detalhe]** ou renderizá-lo após a conclusão da etapa Criar pré-visualização. Você não precisa esperar que todas as etapas de processamento sejam concluídas.
 
