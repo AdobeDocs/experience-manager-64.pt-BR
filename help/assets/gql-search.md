@@ -11,7 +11,7 @@ ht-degree: 2%
 ---
 
 
-# Pesquisa de texto completo do GQL {#gql-full-text-search}
+# Pesquisa de texto completo GQL {#gql-full-text-search}
 
 Explore o recurso de pesquisa de texto completo do GQL no AEM Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 
@@ -21,14 +21,14 @@ Para pesquisar um ativo com base em seus metadados, por exemplo, título, especi
 
 Por exemplo, para pesquisar ativos que tenham o título &quot;Público alvo&quot;, execute estas etapas:
 
-## Pesquisar ativos {#searching-assets}
+## Pesquisando ativos {#searching-assets}
 
 1. Na barra de ferramentas da interface do usuário do Assets, clique ou toque no ícone **[!UICONTROL Pesquisar]** para exibir a caixa Omnisearch.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Com o cursor na caixa Omnisearch, pressione Enter.
-1. Clique ou toque no ícone GlobalNav para exibir o painel **[!UICONTROL Filtros]** .
+1. Clique ou toque no ícone GlobalNav para exibir o painel **[!UICONTROL Filtros]**.
 1. Na caixa Pesquisa Omni, especifique o valor &quot;Público alvo&quot;. Para limitar sua pesquisa a uma pasta específica, clique ou toque no ícone Procurar no painel Filtros e selecione a pasta. Nesse caso, a correspondência é pesquisada somente dentro da pasta e das subpastas abaixo dela.
 
    >[!NOTE]
@@ -37,11 +37,11 @@ Por exemplo, para pesquisar ativos que tenham o título &quot;Público alvo&quot
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. A interface do usuário do AEM Assets exibe apenas os ativos cujo título corresponde exatamente a &quot;Público alvo&quot;.
+1. Pressione **[!UICONTROL Enter]**. A interface do usuário do AEM Assets exibe apenas os ativos cujo título corresponde exatamente a &quot;Público alvo&quot;.
 
 O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base no seguinte:
 
-* query complexo criado pela combinação de uma operação E, os valores especificados para vários campos de metadados (propriedades)
+* Query complexo criado pela combinação de uma operação E, os valores especificados para vários campos de metadados (propriedades)
 * Vários valores para um único campo de metadados
 * Correspondências de subsequência de caracteres
 
@@ -66,7 +66,7 @@ O recurso de pesquisa de texto completo do GQL permite que você pesquise ativos
 | [!UICONTROL Data de expiração] | expira:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Hora] | hora única:AAAA-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Hora de desligar] | oftime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Intervalo de tempo] (expira dateontime,offtime) | campo de faceta: limite inferior...upperbound |
+| [!UICONTROL Intervalo de tempo]  (expira dateontime,offtime) | campo de faceta: limite inferior...upperbound |
 | [!UICONTROL Caminho] | /content/dam/&lt;nome da pasta> |
 | [!UICONTROL Título do PDF] | pdftitle: &quot;Adobe Documento&quot; |
 | [!UICONTROL Assunto] | assunto: &quot;Formação&quot; |
@@ -124,13 +124,13 @@ A pesquisa de texto completo também oferece suporte a operadores como -, ^ e as
 Você pode melhorar a relevância das palavras-chave de ativos específicos para ajudar a aumentar as pesquisas com base nas palavras-chave. Em outras palavras, as imagens para as quais você promove palavras-chave específicas aparecem na parte superior dos resultados da pesquisa quando você pesquisa com base nessas palavras-chave.
 
 1. Na interface do usuário do Assets, abra a página de propriedades do ativo para o qual você deseja promover uma palavra-chave.
-1. Alterne para a guia **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]** em **[!UICONTROL Elevar para palavras-chave]** de pesquisa.
+1. Alterne para a guia **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]** em **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. Se necessário, especifique várias palavras-chave da mesma maneira.
+1. Na caixa **[!UICONTROL Promote de pesquisa]**, especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. Se necessário, especifique várias palavras-chave da mesma maneira.
 
    ![add_search_word](assets/add_search_word.png)
 
-1. Click/tap **[!UICONTROL Save &amp; Close]**.
+1. Clique/toque em **[!UICONTROL Salvar e fechar]**.
 1. Procure a palavra-chave usando a caixa Omnisearch. O ativo para o qual você promoveu essa palavra-chave aparece entre os principais resultados da pesquisa.
