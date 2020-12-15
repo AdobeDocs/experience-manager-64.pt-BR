@@ -11,7 +11,7 @@ ht-degree: 2%
 ---
 
 
-# Pesquisar ativos no AEM {#search-assets-in-aem}
+# Pesquisar ativos em AEM {#search-assets-in-aem}
 
 Saiba como localizar os ativos necessários no AEM usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 
@@ -32,7 +32,7 @@ Você pode pesquisar com base nas seguintes opções (predicados):
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-Você pode personalizar o painel Filtros e adicionar/remover predicados de pesquisa usando aspectos [de](search-facets.md)pesquisa. Para exibir o painel Filtros, execute estas etapas:
+Você pode personalizar o painel Filtros e adicionar/remover predicados de pesquisa usando [aspectos de pesquisa](search-facets.md). Para exibir o painel Filtros, execute estas etapas:
 
 1. Na interface do usuário do Assets, toque/clique em ![search_icon](assets/search_icon.png) na barra de ferramentas para exibir a caixa Omnisearch.
 1. Digite o termo de pesquisa e pressione Enter. Como alternativa, basta pressionar Enter sem inserir nenhum termo de pesquisa. Não insira espaços à esquerda; caso contrário, a pesquisa não funcionará.
@@ -49,7 +49,7 @@ Você pode personalizar o painel Filtros e adicionar/remover predicados de pesqu
 
 O painel Filtros ajuda a adicionar mais granularidade à sua experiência de pesquisa e torna a funcionalidade de pesquisa mais versátil. Você pode detalhar facilmente até o nível de detalhes desejado.
 
-Por exemplo, se você estiver procurando uma imagem, use o predicado Tipo **[!UICONTROL de]** arquivo para escolher se deseja uma imagem bitmap ou uma imagem vetorial.
+Por exemplo, se você estiver procurando uma imagem, use o predicado **[!UICONTROL Tipo de arquivo]** para escolher se deseja uma imagem bitmap ou uma imagem vetorial.
 
 ![image_type](assets/image_type.png)
 
@@ -63,11 +63,11 @@ Da mesma forma, ao pesquisar documentos, você pode especificar o formato, por e
 
 ## Pesquisar com base no tamanho do arquivo {#search-based-on-file-size}
 
-Use o predicado Tamanho **do** arquivo para pesquisar ativos com base em seu tamanho. Você pode especificar os limites inferior e superior para o intervalo de tamanho para restringir sua pesquisa. Você também pode especificar a unidade de medida, por exemplo, Kilobytes, Megabytes e assim por diante.
+Use o predicado **Tamanho do arquivo** para pesquisar ativos com base em seu tamanho. Você pode especificar os limites inferior e superior para o intervalo de tamanho para restringir sua pesquisa. Você também pode especificar a unidade de medida, por exemplo, Kilobytes, Megabytes e assim por diante.
 
 ![unit_of_measurement](assets/unit_of_measure.png)
 
-## Pesquisar com base em quando os ativos são modificados pela última vez {#search-based-on-when-assets-are-last-modified}
+## Pesquisar com base em quando os ativos foram modificados pela última vez {#search-based-on-when-assets-are-last-modified}
 
 Se você estiver gerenciando ativos do trabalho em andamento ou monitorando um fluxo de trabalho de revisão, poderá pesquisar quando um ativo foi modificado pela última vez com base em carimbos de data e hora precisos. Por exemplo, especifique datas antes ou depois das quais os ativos foram modificados.
 
@@ -79,7 +79,7 @@ Você também pode usar as seguintes opções para alcançar um nível mais alto
 
 ## Pesquisar com base no status {#search-based-on-status}
 
-Use o predicado **Status** para pesquisar ativos com base em vários tipos de status, como Publicar, Aprovação, Finalização e Expiração.
+Use o predicado **Status** para pesquisar ativos com base em vários tipos de status, como Publicar, Aprovação, Check-out e Expiração.
 
 ![status](assets/status.png)
 
@@ -93,11 +93,11 @@ Ao monitorar o status da revisão de ativos, use a opção apropriada para desco
 
 ## Pesquisar com base nos dados do Insights {#search-based-on-insights-data}
 
-Use o predicado **Insights** para pesquisar ativos com base em suas estatísticas de uso obtidas de vários aplicativos da Creative. Os dados de uso são agrupados nas seguintes categorias:
+Use o predicativo **Insights** para pesquisar ativos com base em suas estatísticas de uso obtidas de vários aplicativos da Creative. Os dados de uso são agrupados nas seguintes categorias:
 
 * Pontuação de uso
 * Impressões
 * Cliques
-* canais de mídia nos quais os ativos aparecem
+* Canais de mídia nos quais os ativos aparecem
 
 ![insights](assets/insights.png)
