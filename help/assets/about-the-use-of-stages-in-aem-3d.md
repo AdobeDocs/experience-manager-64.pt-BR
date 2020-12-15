@@ -24,8 +24,8 @@ Palcos são arquivos de cenas 3D leves que fornecem o ambiente de visualização
 
 >[!NOTE]
 >
->The **[!UICONTROL OBJ 3D]** format does not support lights. Portanto, ele não pode ser usado para fornecer palcos ao AEM 3D.
+>O formato **[!UICONTROL OBJ 3D]** não suporta luzes. Portanto, ele não pode ser usado para fornecer palcos ao AEM 3D.
 
-O formato de arquivo do palco determina qual renderizador você pode usar com ele. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Se você pretende usar apenas o renderizador Rapid Refine™ padrão, qualquer formato de arquivo de estágio compatível é aceitável.
+O formato de arquivo do palco determina qual renderizador você pode usar com ele. Por exemplo, se o Autodesk® Maya® for usado para renderização de alta qualidade, o estágio deverá estar no formato `.ma` ou `.mb`. Se você pretende usar apenas o renderizador Rapid Refine™ padrão, qualquer formato de arquivo de estágio compatível é aceitável.
 
 Todas as configurações de renderização em AEM 3D, exceto o tipo e o tamanho da imagem de saída, devem ser pré-configuradas e salvas no arquivo de palco antes do upload para AEM.
