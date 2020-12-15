@@ -34,7 +34,7 @@ Além disso, a atividade da linha do tempo é registrada quando novos ativos sã
 >
 >Workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
 
-Para visualização do fluxo de atividade, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha]** do tempo na lista GlobalNav.
+Para visualização do fluxo de atividade, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNav.
 
 ![linha do tempo 3](assets/timeline-3.png)
 
