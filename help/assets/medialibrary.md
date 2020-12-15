@@ -30,9 +30,9 @@ A Biblioteca de mídia AEM é uma parte designada do repositório de conteúdo A
 Os recursos exclusivos que estão disponíveis somente para clientes da AEM Assets são:
 
 1. a capacidade de extrair e editar metadados diferentes de título, tags e descrição.
-1. o Administrador do AEM Assets, disponível na tela de boas-vindas, clicando no segundo botão ao lado do `siteadmin`.
+1. o AEM Assets Admin, disponível na tela de boas-vindas, clicando no segundo botão ao lado de `siteadmin`.
 1. Todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, AEM inclusão de ativos, exclusão do AEM Assets, tratamento de subativos do AEM Assets, extração de metadados do AEM Assets.
-1. bibliotecas incluindo o espaço do pacote `dam` im.
+1. bibliotecas incluindo o espaço do pacote de `dam` im.
 
 O uso desses recursos requer uma licença válida do AEM Assets.
 
@@ -62,5 +62,5 @@ Nesse caso de uso, não é necessário comprar o AEM Assets, nem mesmo o uso da 
 
 >[!MORELIKETHIS]
 >
->* [lista detalhada das diferenças de recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [Lista detalhada das diferenças de recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
 
