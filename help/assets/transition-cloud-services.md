@@ -11,7 +11,7 @@ ht-degree: 54%
 ---
 
 
-# Aplicação de serviços de conversão em nuvem a pastas {#applying-translation-cloud-services-to-folders}
+# Aplicar serviços de conversão em nuvem a pastas {#applying-translation-cloud-services-to-folders}
 
 A Adobe Experience Manager (AEM) permite que você utilize serviços de tradução baseados em nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos com base em suas necessidades.
 
@@ -37,7 +37,7 @@ A aplicação de serviços de tradução em nuvem diretamente à sua pasta de at
 
 1. Na barra de ferramentas, clique/toque em **[!UICONTROL Salvar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo. O serviço de tradução é aplicado à pasta.
 
-## Aplicação do conector de tradução personalizado  {#applying-custom-translation-connector}
+## Aplicar conector de tradução personalizado {#applying-custom-translation-connector}
 
 Se quiser aplicar um conector personalizado para os serviços de tradução que deseja usar nos fluxos de trabalho de tradução. Para aplicar um conector personalizado, primeiro instale o conector do Gerenciador de pacotes. Em seguida, configure o conector do console Serviços da nuvem. Após configurar o conector, ele estará disponível na lista de conectores na guia Serviços da nuvem descrita em [Aplicar serviços de tradução](transition-cloud-services.md#applying-the-translation-services). Depois de aplicar o conector personalizado e executar os fluxos de trabalho de tradução, o bloco **[!UICONTROL Resumo da tradução]** do projeto de tradução exibe os detalhes do conector nos cabeçalhos **[!UICONTROL Provedor]** e **[!UICONTROL Método]**.
 
@@ -47,7 +47,7 @@ Se quiser aplicar um conector personalizado para os serviços de tradução que 
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Clique/toque no link **[!UICONTROL Configurar agora]** para abrir a caixa de diálogo **[!UICONTROL Criar configuração]** .
+1. Clique/toque no link **[!UICONTROL Configurar agora]** para abrir a caixa de diálogo **[!UICONTROL Criar configuração]**.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
