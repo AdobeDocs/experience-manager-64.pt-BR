@@ -24,7 +24,7 @@ Embora as configurações padrão sejam apropriadas para casos de uso típicos, 
 
 As seguintes configurações avançadas se aplicam à integração de AEM 3D para implantações Maya e não-Maya.
 
-Todas as configurações são acessadas usando o **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**).
+Todas as configurações são acessadas usando **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**).
 
 >[!NOTE]
 >
@@ -36,19 +36,19 @@ Todas as configurações são acessadas usando o **CRXDE Lite** no AEM (**[!UICO
 
 ## Configuração de tipos de ativos {#asset-types-configuration}
 
-No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
+Em **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
 
 | Caminho | Descrição |
 |---|---|
 | `/libs/settings/dam/v3D/assetTypes/*/Conversion` | Especifica o tipo de arquivo para o formato 3D intermediário criado durante a ingestão. Deve estar vazio para os formatos de arquivo &#39;fbx&#39; e &#39;obj&#39; ou &#39;fbx&#39; para formatos habilitados pelo Maya. |
-| `/libs/settings/dam/v3D/assetTypes/*/Enabled` | Defina como true ou false para ativar ou desativar essa entrada na lista **[!UICONTROL assetTypes]** . |
+| `/libs/settings/dam/v3D/assetTypes/*/Enabled` | Defina como true ou false para ativar ou desativar essa entrada na lista **[!UICONTROL assetTypes]**. |
 | `/libs/settings/dam/v3D/assetTypes/*/Extension` | Especifique um ou mais sufixos de arquivo separados por vírgulas ou extensões de arquivo que devem ser associadas a esse tipo de ativo. |
-| `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | Deve ser `native` para formatos de arquivo FBX e OBJ e `maya` para formatos habilitados por Maya. |
-| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Especifica o tipo mime para este tipo de ativo. Para formatos ativados pelo Maya, é recomendável usar `application/x-ext`, onde `ext` é a string especificada como o `Extension` valor. |
+| `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | Deve ser `native` para formatos de arquivo FBX e OBJ e `maya` para formatos habilitados pelo Maya. |
+| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Especifica o tipo mime para este tipo de ativo. Para formatos ativados pelo Maya, é recomendável usar `application/x-ext`, onde `ext` é a string especificada como o valor `Extension`. |
 
 ## Configuração de ingestão {#ingestion-configuration}
 
-No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
+Em **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
 
 <table> 
  <tbody> 
@@ -62,7 +62,7 @@ No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), ac
   </tr> 
   <tr> 
    <td><p>/libs/settings/dam/v3D/settings/cleanupRenderWorkDir</p> </td> 
-   <td>Defina como <strong>falso</strong> para manter arquivos temporários na pasta MayaWork após conversão e renderização. Pode ser útil ao depurar problemas com conversão e renderização do Maya.</td> 
+   <td>Defina como <strong>false</strong> para manter arquivos temporários na pasta MayaWork após a conversão e renderização. Pode ser útil ao depurar problemas com conversão e renderização do Maya.</td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/invokeAnimationOnIngest</td> 
@@ -70,7 +70,7 @@ No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), ac
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/invokeLightMapsOnIngest</td> 
-   <td>Permite a criação automática de mapas de luz na ingestão. Defina como <strong>falso</strong> para desativar a criação automática de mapa de luz; isso pode reduzir significativamente o consumo da CPU ao custo de qualidade reduzida para pré-visualização e renderização com o Refinamento rápido. Não afeta a renderização com Maya.</td> 
+   <td>Permite a criação automática de mapas de luz na ingestão. Defina como <strong>false</strong> para desativar a criação automática de mapa de luz; isso pode reduzir significativamente o consumo da CPU ao custo de qualidade reduzida para pré-visualização e renderização com o Refinamento rápido. Não afeta a renderização com Maya.</td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/gPlaneZero</td> 
@@ -101,9 +101,9 @@ Os valores para as seguintes configurações são fornecidos pelo gerente da con
 | `/libs/settings/dam/v3D/services/aws/userPoolId` | A ID do pool de usuários AWS Cognito aplicável. |
 | `/libs/settings/dam/v3D/services/dncr/clientId` | A ID do cliente AWS Cognito para o serviço de conversão dncr. |
 
-## Configurações comuns de processamento {#common-processing-settings}
+## Configurações de processamento comuns {#common-processing-settings}
 
-No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
+Em **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
 
 | **Caminho** | **Descrição** |
 |---|---|
@@ -113,40 +113,40 @@ No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), ac
 
 ## Configuração do renderizador {#renderer-configuration}
 
-No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
+Em **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
 
 | **Caminho** | **Descrição** |
 |---|---|
-| `/libs/settings/dam/v3D/settings/dynamicIBL` | Quando definido como **[!UICONTROL true]** e os mapas de luz pré-gerados não estão disponíveis (ou seja, invokeLightMapsOnIngest=false), o renderizador de Refinamento Rápido cria mapas de luz durante a renderização para melhorar a qualidade da renderização. Essa configuração pode aumentar substancialmente o tempo de renderização. A configuração como **[!UICONTROL false]** minimiza o uso da CPU nessas situações, mas pode resultar em uma qualidade de renderização menor. |
+| `/libs/settings/dam/v3D/settings/dynamicIBL` | Quando definido como **[!UICONTROL true]** e os mapas de luz pré-gerados não estão disponíveis (ou seja, invokeLightMapsOnIngest=false), o renderizador de Refinamento Rápido cria mapas de luz durante a renderização para melhorar a qualidade da renderização. Essa configuração pode aumentar substancialmente o tempo de renderização. A configuração para **[!UICONTROL false]** minimiza o uso da CPU nessas situações, mas pode resultar em uma qualidade de renderização menor. |
 | `/libs/settings/dam/v3D/renderers/*/Enabled` | Defina como **[!UICONTROL true]** ou **[!UICONTROL false]** para ativar ou desativar um renderizador, respectivamente. |
 | `/libs/settings/dam/v3D/renderers/*/Display` | Permite alterar a string exibida para um renderizador ativado no seletor Renderizador no painel Renderizar. |
 | `/libs/settings/dam/v3D/renderers/*/MaxCpuPercentage` | Especifica quantas CPUs são usadas no máximo para renderizar cenas 3D. Valores mais altos aceleram a renderização, mas podem fazer com que AEM se torne menos responsivo em geral. Esta configuração é aproximada. Ou seja, a precisão aumenta com o número de núcleos de CPU disponíveis. |
 
 ## Configurações de pré-visualização de ativos 3D {#d-asset-preview-settings}
 
-No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
+Em **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
 
 | Caminho | Descrição |
 |---|---|
 | `/libs/settings/dam/v3D/WebGLSites/autoSpin` | Defina como **[!UICONTROL true]** ou **[!UICONTROL false]** para ativar ou desativar a rotação automática (órbita automática da câmera) no carregamento da página. |
-| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Defina como **[!UICONTROL true]** para reiniciar o spin automático depois que **[!UICONTROL Redefinir]** for pressionado. Ignorado quando a rotação automática está desativada. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Defina como **[!UICONTROL true]** para reiniciar o spin automático depois que **[!UICONTROL Reset]** for pressionado. Ignorado quando a rotação automática está desativada. |
 | `/libs/settings/dam/v3D/WebGLSites/autoSpinSpeed` | Especifica a velocidade (rotações por minuto) e a direção da rotação automática, com valores negativos para a direita para a esquerda e positivos para a rotação da esquerda para a direita. |
-| `/libs/settings/dam/v3D/WebGL/continueRotate` | Defina como **[!UICONTROL false]** para desativar a continuação com o fadeout gradual das respostas do visualizador para gestos de toque e mouse. |
+| `/libs/settings/dam/v3D/WebGL/continueRotate` | Defina como **[!UICONTROL false]** para desativar a continuação com o desaparecimento gradual das respostas do visualizador para gestos de toque e mouse. |
 | `/libs/settings/dam/v3D/WebGL/curtainColor` | Especifica a cor da cortina de carregamento que pode opcionalmente cobrir a janela de visualização da pré-visualização de ativo 3D durante a carga e inicialização. Valor R,G,B, com cada componente de cor no intervalo de 0 a 255. |
 | `/libs/settings/dam/v3D/WebGL/fadeCurtains` | Quando definida como **[!UICONTROL true]**, a cortina de carga desaparecerá gradualmente durante as últimas partes da inicialização do visualizador. Quando definida como **[!UICONTROL false]**, a cortina permanece opaca até que o carregamento e a inicialização sejam concluídos. |
-| `/libs/settings/dam/v3D/WebGL/showCurtains` | Defina como **[!UICONTROL true]** ou **[!UICONTROL false]** para ativar ou desativar a cortina de carregamento para pré-visualização de ativos 3D. |
-| `/libs/settings/dam/v3D/WebGL/spinHeight` | Quando a rotação automática está ativada e ativa, a posição vertical da câmera é automaticamente ajustada em relação à altura do objeto 3D. Quando definida como 0,5, a câmera será posicionada verticalmente a 1/2 da altura do objeto, o que resultará na centralização vertical do horizonte no visor. Valores maiores resultam que a câmera olha para baixo no objeto e aumenta a altura do horizonte renderizado, valores menores resultam na câmera olhando para cima no objeto e diminuindo o horizonte. |
+| `/libs/settings/dam/v3D/WebGL/showCurtains` | Defina como **[!UICONTROL true]** ou **[!UICONTROL false]** para ativar ou desativar a cortina de carregamento para a pré-visualização de ativos 3D. |
+| `/libs/settings/dam/v3D/WebGL/spinHeight` | Quando a rotação automática está ativada e ativa, a posição vertical da câmera é automaticamente ajustada em relação à altura do objeto 3D. Quando definida como 0,5, a câmera será posicionada verticalmente a 1/2 da altura do objeto, o que resultará na centralização vertical do horizonte no visor. Valores maiores resultam em uma câmera olhando para baixo no objeto e aumentando a altura do horizonte renderizado, valores menores resultam em uma câmera olhando para cima no objeto e diminuindo o horizonte. |
 
 ## Configurações do componente Sites 3D {#d-sites-component-settings}
 
-No **CRXDE Lite** em AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
+Em **CRXDE Lite** no AEM (**[!UICONTROL Ferramentas > Geral > CRXDE Lite]**), acesse as seguintes configurações:
 
 | Caminho | Descrição |
 |---|---|
-| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Defina como **[!UICONTROL true]** para reativar a rotação automática (órbita automática da câmera) depois que a opção inicial for pressionada. Ignorado quando a rotação automática está desativada. |
-| `/libs/settings/dam/v3D/WebGLSites/continueRotate` | Defina como **[!UICONTROL false]** para desativar a continuação com o fadeout gradual das respostas do visualizador para gestos de toque e mouse. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Defina como **[!UICONTROL true]** para reativar o giro automático (órbita automática da câmera) depois que o início for pressionado. Ignorado quando a rotação automática está desativada. |
+| `/libs/settings/dam/v3D/WebGLSites/continueRotate` | Defina como **[!UICONTROL false]** para desativar a continuação com o desaparecimento gradual das respostas do visualizador para gestos de toque e mouse. |
 | `/libs/settings/dam/v3D/WebGLSites/curtainColor` | Especifica a cor da cortina de carregamento que pode opcionalmente cobrir a janela de visualização do componente Sites 3D durante a carga. Valor R,G,B, com cada componente de cor no intervalo de 0 a 255. |
-| `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Quando definida como **[!UICONTROL true]**, a cortina de carga desaparece gradualmente durante as últimas partes do carregamento e inicialização. Quando definida como **[!UICONTROL false]**, a cortina permanece opaca até que o carregamento e a inicialização sejam concluídos. |
-| `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Defina como **[!UICONTROL true]** ou **[!UICONTROL false]** para ativar ou desativar a cortina de carregamento do componente Sites 3D. |
-| `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Quando a rotação automática está ativada e ativa, a posição vertical da câmera é automaticamente ajustada em relação à altura do objeto 3D. Quando definida como 0,5, a câmera será posicionada verticalmente a 1/2 da altura do objeto, o que resultará na centralização vertical do horizonte no visor. Valores maiores resultam que a câmera olha para baixo no objeto e aumenta a altura do horizonte renderizado, valores menores resultam na câmera olhando para cima no objeto e diminuindo o horizonte. |
+| `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Quando definida como **[!UICONTROL true]**, a cortina de carga desaparecerá gradualmente durante as últimas partes do carregamento e inicialização. Quando definida como **[!UICONTROL false]**, a cortina permanece opaca até que o carregamento e a inicialização sejam concluídos. |
+| `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Defina como **[!UICONTROL true]** ou **[!UICONTROL false]** para ativar ou desativar a cortina de carregamento para o componente Sites 3D. |
+| `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Quando a rotação automática está ativada e ativa, a posição vertical da câmera é automaticamente ajustada em relação à altura do objeto 3D. Quando definida como 0,5, a câmera será posicionada verticalmente a 1/2 da altura do objeto, o que resultará na centralização vertical do horizonte no visor. Valores maiores resultam em uma câmera olhando para baixo no objeto e aumentando a altura do horizonte renderizado, valores menores resultam em uma câmera olhando para cima no objeto e diminuindo o horizonte. |
 
