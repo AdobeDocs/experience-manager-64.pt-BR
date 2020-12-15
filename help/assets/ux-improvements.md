@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# Aprimoramentos de experiência do usuário em ativos {#user-experience-enhancements-in-assets}
+# Melhorias na experiência do usuário em Ativos {#user-experience-enhancements-in-assets}
 
 AEM 6.4 Os ativos incluem várias melhorias de usabilidade que proporcionam uma experiência contínua do usuário e melhoram a produtividade. O aumento na velocidade com que você pode criar/gerenciar seu conteúdo disponível no mercado melhora a velocidade de conteúdo da empresa.
 
@@ -31,11 +31,11 @@ Dependendo do dispositivo usado e da quantidade de detalhes necessários, é pos
 
 Para redimensionar miniaturas na visualização da placa, execute estas etapas:
 
-1. Toque/clique no ícone Layout na barra de ferramentas e escolha a opção Configurações **[!UICONTROL de]** Visualização.
+1. Toque/clique no ícone Layout na barra de ferramentas e escolha a opção **[!UICONTROL Configurações de Visualização]**.
 
    ![visualização_settings](assets/view_settings.png)
 
-1. Na caixa de diálogo Configurações **[!UICONTROL da]** Visualização, selecione o tamanho da miniatura desejado e toque/clique em **[!UICONTROL Atualizar]**.
+1. Na caixa de diálogo **[!UICONTROL Configurações de Visualização]**, selecione o tamanho de miniatura desejado e toque/clique em **[!UICONTROL Atualizar]**.
 
    ![visualização_settings_dialog](assets/view_settings_dialog.png)
 
@@ -47,13 +47,13 @@ O bloco da visualização de cartão agora exibe informações adicionais, como 
 
 ![publish_status](assets/publish_status.png)
 
-## Melhorias na visualização da Lista {#list-view-improvements}
+## Melhorias na visualização de lista {#list-view-improvements}
 
 Na visualização da Lista, a primeira coluna agora exibe os nomes de arquivo dos ativos por padrão. Informações adicionais, como status de publicação e processamento e localidade, também são exibidas.
 
 ![lista_visualização](assets/list_view.png)
 
-Você pode optar por configurar a quantidade de detalhes que deseja exibir. Toque/clique no ícone Layout, escolha a opção Configurações **[!UICONTROL de]** Visualização e especifique as colunas que deseja exibir na caixa de diálogo Configurações **[!UICONTROL de]** Visualização.
+Você pode optar por configurar a quantidade de detalhes que deseja exibir. Toque/clique no ícone Layout, escolha a opção **[!UICONTROL Configurações de Visualização]** e especifique as colunas que deseja exibir na caixa de diálogo **[!UICONTROL Configurações de Visualização]**.
 
 ![visualização_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
@@ -63,11 +63,11 @@ Além das visualizações de Cartão e Lista, agora é possível navegar até a 
 
 ![more_details](assets/more_details.png)
 
-## visualização de árvore {#tree-view}
+## Visualização de árvore {#tree-view}
 
 AEM 6.4 Os ativos incluem uma visualização em árvore que permite navegar convenientemente na hierarquia de ativos e navegar até o ativo ou pasta desejados.
 
-Para abrir a visualização de árvore, toque/clique no ícone GlobalNav no menu `Assets UI`e escolha Árvore **** de conteúdo no menu.
+Para abrir a visualização de árvore, toque/clique no ícone GlobalNav em `Assets UI` e escolha **[!UICONTROL Árvore de conteúdo]** no menu.
 
 ![content_tree](assets/content_tree.png)
 
@@ -75,7 +75,7 @@ Na hierarquia de conteúdo, navegue até o ativo desejado.
 
 ![navigate_contenttree](assets/navigate_contenttree.png)
 
-## Navegação em detalhes do ativo {#navigating-asset-details}
+## Navegar pelos detalhes do ativo {#navigating-asset-details}
 
 A página de detalhes do ativo agora inclui os botões Anterior e Próximo na barra de ferramentas para que você possa visualização todas as imagens em uma pasta sucessivamente.
 
@@ -87,7 +87,7 @@ Dependendo do layout escolhido, você pode abrir a página de detalhes de um ati
 |---|---|
 | [!UICONTROL Exibição de cartão] | Toque/clique no bloco do ativo. |
 | [!UICONTROL Exibição de lista  ] | Toque/clique na entrada de linha do ativo na lista. |
-| [!UICONTROL Exibição de coluna] | Toque/clique no botão **[!UICONTROL Mais detalhes]** no instantâneo do ativo. |
+| [!UICONTROL Exibição de coluna] | Toque/clique no botão **[!UICONTROL Mais Detalhes]** no instantâneo do ativo. |
 
 Use os botões Anterior/Próximo para mover-se para frente e para trás entre os ativos.
 
