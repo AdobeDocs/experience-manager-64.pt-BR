@@ -39,7 +39,7 @@ ht-degree: 46%
    + [Trabalhar com o Dynamic Media](dynamic-media.md)
    + [Configuração do Dynamic Media - modo Scene7](config-dms7.md)
    + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
-   + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
+   + [Solução de problemas do Dynamic Media - modo Scene7](troubleshoot-dms7.md)
    + [Gerenciamento de ativos do Dynamic Media](managing-assets.md)
    + [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gerenciamento de predefinições do visualizador do Dynamic Media](managing-viewer-presets.md)
@@ -139,7 +139,7 @@ ht-degree: 46%
    + [Fragmentos de conteúdo - excluir considerações](content-fragments-delete.md)
    + [Fragmentos de conteúdo - Marcação](content-fragments-markdown.md)
    + [Criar projetos de tradução para Fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Gerenciar ativos {#managing}
    + [Gerenciar ativos com a interface otimizada para toque](managing-assets-touch-ui.md)
    + [Gerenciamento de vários ativos e coleções](managing-multiple-assets.md)
    + [Seletor de ativos](asset-selector.md)
