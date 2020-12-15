@@ -78,7 +78,7 @@ Você adiciona o código do rastreador de página na seção de cabeçalho do c�
  </head>
 ```
 
-## Adicionar código incorporado {#adding-embed-code}
+## Adicionando código incorporado {#adding-embed-code}
 
 Você adiciona o código incorporado dentro do corpo do código do site. O trecho de código a seguir exibe o código Incorporado incluído em uma página da Web de amostra:
 
