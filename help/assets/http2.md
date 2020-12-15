@@ -1,6 +1,6 @@
 ---
-title: Delivery HTTP2 do conteúdo
-seo-title: Delivery HTTP2 do conteúdo
+title: DELIVERY HTTP2 do conteúdo
+seo-title: DELIVERY HTTP2 do conteúdo
 description: O HTTP/2 melhora a maneira como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e reduzindo a quantidade de energia de processamento necessária.
 seo-description: O HTTP/2 melhora a maneira como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e reduzindo a quantidade de energia de processamento necessária.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# HTTP2 Delivery of Content {#http-delivery-of-content}
+# DELIVERY HTTP2 do conteúdo {#http-delivery-of-content}
 
 A Adobe está empolgada em anunciar a disponibilidade do delivery HTTP/2 de conteúdo com o benefício geral de um melhor desempenho.
 
@@ -34,7 +34,7 @@ O site a seguir descreve o HTTP/2 e seus benefícios de uma forma breve e simple
 
 O aprimoramento do desempenho varia muito com base em fatores como o código do seu site, a forma como você está usando o Dynamic Media, o dispositivo do consumidor, a tela e o local, e assim por diante.
 
-Os resultados obtidos são os seguintes:
+Os resultados obtidos foram os seguintes:
 
 * Para imagens, o tempo de resposta melhorou de 7% a 28%, dependendo do dispositivo e do navegador. Os ganhos de desempenho mais notáveis foram nos dispositivos iOS.
 * Para visualizadores, o desempenho do tempo de carregamento melhorou 15%.
@@ -48,18 +48,18 @@ A demonstração a seguir ilustra a diferença entre o carregamento HTTP/1 versu
 Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 * Use HTTPS seguro para suas solicitações de mídia avançada.
-* Use o CDN (content delivery network) fornecido no Adobe como parte da sua licença do Dynamic Media.
+* Use o CDN (content delivery network) fornecido no Adobe como parte de sua licença da Dynamic Media.
 * Use um domínio dedicado (não-empresa-h.assetsadobe#.com).
 
    Se você já tiver um domínio dedicado, poderá aceitar por meio do Suporte Técnico.
 
    Se você não tiver um domínio dedicado, o Adobe agendará sua transição para HTTP/2 em 2018.
 
-## Qual é o processo para habilitar HTTP/2 para minha conta do Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## Qual é o processo para habilitar HTTP/2 para minha conta Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 É necessário iniciar a solicitação para alternar para HTTP/2; isso não é feito automaticamente para você.
 
-1. Inicie uma solicitação de suporte técnico para alternar para HTTP2. Consulte [Acessar o portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)de suporte AEM.
+1. Inicie uma solicitação de suporte técnico para alternar para HTTP2. Consulte [Acessar o Portal de suporte AEM](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Forneça as seguintes informações em sua solicitação de suporte:
 
