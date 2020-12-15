@@ -11,7 +11,7 @@ ht-degree: 3%
 ---
 
 
-# Usar o Apache Tika para detectar o tipo MIME de ativos digitais {#detecting-mime-type-of-assets-using-apache-tika}
+# Use o Apache Tika para detectar o tipo MIME de ativos digitais {#detecting-mime-type-of-assets-using-apache-tika}
 
 Normalmente, o Adobe Experience Manager (AEM) Assets detecta o tipo MIME de ativos que você carrega de sua extensão de arquivo. Se você usar o Apache Tika para carregar ativos, a AEM Assets detectará seu tipo MIME do fluxo de conteúdo durante a operação de upload em vez da extensão do arquivo.
 
@@ -21,10 +21,10 @@ Esse recurso é desativado por padrão. Para ativar o recurso, configure o servi
 >
 >A detecção de tipo MIME usando a biblioteca Apache Tika é uma operação que consome muitos recursos.
 
-1. Vá até `https://[AEM_server]:[port]/system/console/configMgr` para abrir o console da Web do Configuration Manager.
-1. Na lista de serviços, localize o **[!UICONTROL Dia CQ DAM Mime Type Service]** e toque/clique no ícone **[!UICONTROL Editar]** ao lado dele para abri-lo no modo Editar.
+1. Vá para `https://[AEM_server]:[port]/system/console/configMgr` para abrir o console da Web do Configuration Manager.
+1. Na lista de serviços, localize **[!UICONTROL Day CQ DAM Mime Type Service]** e toque/clique no ícone **[!UICONTROL Editar]** ao lado dele para abri-lo no modo Editar.
 
-1. Selecione a opção **[!UICONTROL Detectar MIME do conteúdo]** para permitir a análise de ativos carregados para determinar seu tipo MIME ao ignorar extensões de arquivo. Por padrão, essa opção não está selecionada.
+1. Selecione a opção **[!UICONTROL Detectar MIME de content]** para habilitar a análise de ativos carregados para determinar seu tipo MIME ao ignorar extensões de arquivo. Por padrão, essa opção não está selecionada.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
