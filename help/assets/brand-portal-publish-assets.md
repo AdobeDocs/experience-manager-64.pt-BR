@@ -39,13 +39,13 @@ Depois que a replicação for bem-sucedida, você poderá publicar ativos, pasta
 
 Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos a seguir:
 
-* Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+* Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Em seguida, no menu, selecione **[!UICONTROL Publicar no Brand Portal]**.
 
 * Na barra de ferramentas, selecione **[!UICONTROL Gerenciar publicação]**.
 
-   1. Em seguida, na **[!UICONTROL Ação]** , selecione **[!UICONTROL Publicar no Brand Portal]** e, em **[!UICONTROL Agendamento]** , selecione **[!UICONTROL Agora]**. Tap/ click **[!UICONTROL Next].**
+   1. Em seguida, em **[!UICONTROL Action]** selecione **[!UICONTROL Publicar no Brand Portal]** e em **[!UICONTROL Agendamento]** selecione **[!UICONTROL Agora]**. Toque/ clique em **[!UICONTROL Próximo].**
 
-   2. Dentro do **[!UICONTROL Escopo]**, confirme sua seleção e toque/clique em **[!UICONTROL Publicar no Portal]** da Marca.
+   2. Dentro de **[!UICONTROL Escopo]**, confirme sua seleção e toque/ clique em **[!UICONTROL Publicar no Portal de Marcas]**.
 
 Será exibida uma mensagem informando que os ativos foram enfileirados para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver os ativos publicados.
 
@@ -54,13 +54,13 @@ Será exibida uma mensagem informando que os ativos foram enfileirados para publ
 Para agendar a publicação dos ativos no Brand Portal para uma data ou hora posterior:
 
 1. Depois de selecionar os ativos/ pastas a serem publicados, selecione **[!UICONTROL Gerenciar publicação]** na barra de ferramentas na parte superior.
-2. Na página **[!UICONTROL Gerenciar publicação]** , selecione **[!UICONTROL Publicar no portal]** da marca em **[!UICONTROL Ação]** e selecione **[!UICONTROL Mais tarde]** em **[!UICONTROL Agendamento]**.
+2. Na página **[!UICONTROL Gerenciar publicação]**, selecione **[!UICONTROL Publicar no portal da marca]** em **[!UICONTROL Ação]** e selecione **[!UICONTROL Mais Tarde]** em **[!UICONTROL Agendamento]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-3. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Tap/ click **[!UICONTROL Next]**.
-4. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Tap/ click **[!UICONTROL Next]**.
-5. Especifique um título de Fluxo de trabalho em **[!UICONTROL Fluxos de trabalho]**. Tap/ click **[!UICONTROL Publish Later]**.
+3. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Toque/ clique em **[!UICONTROL Próximo]**.
+4. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Toque/ clique em **[!UICONTROL Próximo]**.
+5. Especifique um título de Fluxo de trabalho em **[!UICONTROL Fluxos de trabalho]**. Toque/ clique em **[!UICONTROL Publicar mais tarde]**.
 
    ![publishworkflow](assets/publishworkflow.png)
 
