@@ -11,15 +11,15 @@ ht-degree: 13%
 ---
 
 
-# Extend Asset Editor {#extending-asset-editor}
+# Estender editor de ativos {#extending-asset-editor}
 
 O Editor de ativos é a página que é aberta quando um ativo encontrado por meio do Compartilhamento de ativos é clicado, permitindo que o usuário edite esses aspectos do ativo como metadados, miniatura, título e tags.
 
-A configuração do editor usando os componentes de edição predefinidos é abordada em [Criar e configurar uma página](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)do editor de ativos.
+A configuração do editor usando os componentes de edição predefinidos é abordada em [Criar e configurar uma página do editor de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
 Além de usar componentes de editor pré-existentes, os desenvolvedores da Adobe Experience Manager (AEM) também podem criar seus próprios componentes.
 
-## Criando um modelo do editor de ativos {#creating-an-asset-editor-template}
+## Criando um Modelo do Editor de Ativos {#creating-an-asset-editor-template}
 
 As seguintes páginas de amostra estão incluídas no geometrixx:
 
@@ -27,13 +27,13 @@ As seguintes páginas de amostra estão incluídas no geometrixx:
 * Modelo de amostra: `/apps/geometrixx/templates/asseteditor`
 * Componente de página de amostra: `/apps/geometrixx/components/asseteditor`
 
-### Configuração do Clientlib {#configuring-clientlib}
+### Configurando o Clientlib {#configuring-clientlib}
 
-Os componentes do AEM Assets usam uma extensão da clientlib de edição do WCM. Os clientlibs normalmente são carregados em `init.jsp`.
+Os componentes do AEM Assets usam uma extensão da clientlib de edição do WCM. Normalmente, os clientlibs são carregados em `init.jsp`.
 
-Comparado ao carregamento padrão do clientlib (nos principais `init.jsp`), um modelo da AEM Assets deve ter o seguinte:
+Em comparação com o carregamento padrão clientlib (no núcleo `init.jsp`), um modelo da AEM Assets deve ter o seguinte:
 
-* O modelo deve incluir a `cq.dam.edit` clientlib (em vez de `cq.wcm.edit`).
+* O modelo deve incluir a clientlib `cq.dam.edit` (em vez de `cq.wcm.edit`).
 
 * A clientlib também deve ser incluído no modo WCM desativado (por exemplo, carregado na **publicação**) para poder renderizar os predicados, as ações e as lentes.
 
@@ -47,7 +47,7 @@ Alguns componentes do AEM Assets exigem funções JS definidas em `component.js`
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-A amostra carrega essa fonte JavaScript em `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+A amostra carrega essa fonte do JavaScript em `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Folhas de estilos adicionais {#additional-style-sheets}
 
@@ -59,7 +59,7 @@ Alguns componentes do AEM Assets usam a biblioteca de widgets AEM. Para ser rend
 
 ### Folha de estilos de Geometrixx {#geometrixx-style-sheet}
 
-Os componentes da página de amostra exigem que todos os seletores start com `.asseteditor` ( `static.css``/etc/designs/geometrixx/static.css`). Melhores práticas: Copie todos os `.asseteditor` seletores para sua folha de estilos e ajuste as regras conforme desejado.
+Os componentes da página de amostra exigem que todos os seletores sejam start com `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Melhores práticas: Copie todos os seletores `.asseteditor` para sua folha de estilos e ajuste as regras conforme desejado.
 
 ### FormChooser: Ajustes para recursos eventualmente carregados {#formchooser-adjustments-for-eventually-loaded-resources}
 
@@ -70,7 +70,7 @@ Por exemplo:
 * Página de formulário simples: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * Ativo carregado na página do formulário: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-As alças da amostra em `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) fazem o seguinte:
+As alças de amostra em `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) fazem o seguinte:
 
 * Eles detectam se um ativo é carregado ou se o formulário simples precisa ser exibido.
 * Se um ativo for carregado, ele desativará o modo WCM como parsys só poderá ser editado em uma página de formulário simples.
@@ -125,7 +125,7 @@ Na parte HTML, use o conjunto de título anterior (ativo ou título de página):
 Este exemplo descreve como criar um componente que mostra e exibe os metadados de um ativo carregado.
 
 1. Crie uma pasta de componentes no diretório de projetos, por exemplo, `/apps/geometrixx/components/samplemeta`.
-1. Adicione `content.xml` o seguinte snippet:
+1. Adicione `content.xml` com o seguinte snippet:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -137,7 +137,7 @@ Este exemplo descreve como criar um componente que mostra e exibe os metadados d
        componentGroup="Asset Editor"/>
    ```
 
-1. Adicione `samplemeta.jsp` o seguinte snippet:
+1. Adicione `samplemeta.jsp` com o seguinte snippet:
 
    ```javascript
    <%--
@@ -195,15 +195,15 @@ Este exemplo descreve como criar um componente que mostra e exibe os metadados d
    </div>
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor `DELETE`.
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE Lite, adicione um nó `cq:editConfig` do tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor `DELETE`.
 
-1. Navegue até o navegador e, na sua página de amostra (por exemplo, `asseteditor.html`) mude para o modo de design e ative o novo componente para o sistema de parágrafo.
+1. Navegue até o navegador e, na página de amostra (por exemplo, `asseteditor.html`), alterne para o modo de design e ative o novo componente para o sistema de parágrafo.
 
 1. No modo **Editar**, o novo componente (por exemplo, **Metadados de amostra**) agora está disponível no sidekick (encontrado no grupo **Editor de ativos**). Insira o componente. Para poder armazenar os metadados, eles devem ser adicionados ao formulário de metadados.
 
-## Modificando opções de metadados {#modifying-metadata-options}
+## Modificando Opções de Metadados {#modifying-metadata-options}
 
-É possível modificar as namespaces disponíveis no formulário [de](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)metadados.
+É possível modificar as namespaces disponíveis no [formulário de metadados](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
 Os metadados atualmente disponíveis são definidos em `/libs/dam/options/metadata`:
 
