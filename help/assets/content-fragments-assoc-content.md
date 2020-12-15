@@ -22,9 +22,9 @@ ht-degree: 20%
 
 >[!CAUTION]
 >
->Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação de [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
-O conteúdo associado fornece a conexão para que os ativos (isto é,) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para procurar o ativo apropriado.
+O conteúdo associado fornece a conexão para que os ativos (isto é,) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos a serem acessados ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 
@@ -32,7 +32,7 @@ O conteúdo associado fornece a conexão para que os ativos (isto é,) possam se
 >
 >Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
-Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](managing-collections-touch-ui.md#adding-assets-to-a-collection). Assim que isso for feito, você poderá:
+Para fazer a associação, primeiro é necessário [adicionar seus ativos de mídia a uma coleção](managing-collections-touch-ui.md#adding-assets-to-a-collection). Assim que isso for feito, você poderá:
 
 1. Abra o fragmento e selecione **[!UICONTROL Conteúdo associado]** no painel lateral.
 
@@ -53,8 +53,8 @@ Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a
 
 Depois de associar uma coleção, você pode:
 
-* **Remova** a associação.
-* **Adicionar ativos** à coleção.
+* **** Remova a associação.
+* **Adicionar** ativos à coleção.
 * Selecione um ativo para ação adicional.
 * Edite o ativo.
 
