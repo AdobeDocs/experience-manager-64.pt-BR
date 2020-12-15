@@ -31,7 +31,7 @@ Dessa forma, você tem a flexibilidade de compartilhar um arquivo de baixa resol
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar outro ativo com o ativo selecionado, clique/toque no ícone **[!UICONTROL Relacionar]** na barra de ferramentas.
+1. Para relacionar outro ativo com o ativo selecionado, clique/toque no ícone **[!UICONTROL Relacionar]** da barra de ferramentas.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -43,24 +43,24 @@ Dessa forma, você tem a flexibilidade de compartilhar um arquivo de baixa resol
 
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
-1. Na tela **[!UICONTROL Selecionar ativo]** , navegue até o local do ativo que deseja relacionar e selecione-o.
+1. Na tela **[!UICONTROL Selecionar ativo]**, navegue até o local do ativo que deseja relacionar e selecione-o.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Clique/toque no ícone **[!UICONTROL Confirmar]** .
-1. Clique/toque em **[!UICONTROL OK]** para fechar a caixa de diálogo. Dependendo da sua escolha de relacionamento na etapa 3, o ativo relacionado é listado sob uma categoria apropriada na seção **[!UICONTROL Relacionado]** . Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Origem]**.
+1. Clique/toque no ícone **[!UICONTROL Confirmar]**.
+1. Clique/toque em **[!UICONTROL OK]** para fechar a caixa de diálogo. Dependendo da sua escolha de relacionamento na etapa 3, o ativo relacionado é listado sob uma categoria apropriada na seção **[!UICONTROL Relacionado]**. Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Para desrelacionar um ativo, clique/toque no ícone **[!UICONTROL Desrelacionar]** na barra de ferramentas.
+1. Para desrelacionar um ativo, clique/toque no ícone **[!UICONTROL Desrelacionar]** da barra de ferramentas.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Selecione o(s) ativo(s) que deseja desrelacionar na caixa de diálogo **[!UICONTROL Remover relações]** e clique/toque em **[!UICONTROL Desrelacionar]**.
+1. Selecione o(s) ativo(s) que deseja desrelacionar na caixa de diálogo **[!UICONTROL Remover Relações]** e clique/toque em **[!UICONTROL Desrelacionar]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Clique/toque em **[!UICONTROL OK]** para fechar a caixa de diálogo. Os ativos para os quais você removeu relações são excluídos da lista de ativos relacionados na seção **[!UICONTROL Relacionado]** .
+1. Clique/toque em **[!UICONTROL OK]** para fechar a caixa de diálogo. Os ativos para os quais você removeu relações são excluídos da lista de ativos relacionados na seção **[!UICONTROL Relacionado]**.
 
 ## Traduzindo ativos relacionados {#translating-related-assets}
 
@@ -72,7 +72,7 @@ Se o arquivo de origem estiver relacionado a outro ativo, a AEM Assets obtém o 
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
-1. Traduza os ativos na pasta de origem para um idioma de público alvo seguindo as etapas em [Criar um novo projeto](translation-projects.md#create-a-new-translation-project)de tradução. Por exemplo, neste caso, traduza seus ativos para francês.
+1. Traduza os ativos na pasta de origem para um idioma de público alvo seguindo as etapas em [Criar um novo projeto de tradução](translation-projects.md#create-a-new-translation-project). Por exemplo, neste caso, traduza seus ativos para francês.
 1. Na página Projetos, abra a pasta de tradução.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
@@ -85,7 +85,7 @@ Se o arquivo de origem estiver relacionado a outro ativo, a AEM Assets obtém o 
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Selecione o ativo e clique/toque em **[!UICONTROL Revelar nos ativos]** na barra de ferramentas para visualização do status de conversão do ativo.
+1. Selecione o ativo e clique/toque em **[!UICONTROL Revelar nos Ativos]** na barra de ferramentas para visualização o status de conversão do ativo.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -93,6 +93,6 @@ Se o arquivo de origem estiver relacionado a outro ativo, a AEM Assets obtém o 
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Selecione o ativo relacionado à origem e clique/toque em **[!UICONTROL Revelar nos Ativos]**. O ativo relacionado convertido é exibido.
+1. Selecione o ativo relacionado à origem e clique/toque em **[!UICONTROL Revelar em Ativos]**. O ativo relacionado convertido é exibido.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
