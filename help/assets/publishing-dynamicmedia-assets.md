@@ -1,6 +1,6 @@
 ---
-title: Publicação de ativos de mídia dinâmica
-seo-title: Publicação de ativos de mídia dinâmica
+title: Publicação de ativos Dynamic Media
+seo-title: Publicação de ativos Dynamic Media
 description: Como publicar ativos de mídia dinâmica
 seo-description: Como publicar ativos de mídia dinâmica
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
@@ -18,11 +18,11 @@ ht-degree: 8%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# Publicar ativos Dynamic Media {#publishing-dynamic-media-assets}
 
-Você publica seus ativos de Mídia dinâmica selecionando os ativos e tocando em **[!UICONTROL Publicar]**. Depois que seus ativos de mídia dinâmica forem publicados, eles estarão disponíveis para você para inclusão em uma página da Web via URL ou por meio da incorporação.
+Você publica seus ativos do Dynamic Media selecionando os ativos e tocando em **[!UICONTROL Publicar]**. Depois que seus ativos de mídia dinâmica forem publicados, eles estarão disponíveis para você para inclusão em uma página da Web via URL ou por meio da incorporação.
 
-Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Consulte [Configuração do Dynamic Media - Modo](config-dms7.md)Scene7.
+Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Consulte [Configuração do Dynamic Media - modo Scene7](config-dms7.md).
 
 Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
@@ -32,9 +32,9 @@ Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece lo
 
 Se você pretende publicar ativos de vídeo imediatamente após a codificação, certifique-se de que a codificação esteja concluída. Quando os vídeos ainda estão sendo codificados, o sistema permite que você saiba que um fluxo de trabalho de processamento de vídeo está em andamento. Quando a codificação de vídeo estiver concluída, você poderá pré-visualização as execuções de vídeo. Nesse ponto, é seguro publicar os vídeos sem incorrer em erros de publicação.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+Consulte também [Vincular URLs à sua Aplicação web](linking-urls-to-yourwebapplication.md).
 
-Consulte também [Incorporação do visualizador de vídeo em uma página da Web.](embed-code.md)
+Consulte também [Incorporar o Visualizador de Vídeo em uma Página da Web.](embed-code.md)
 
 >[!NOTE]
 >
@@ -45,10 +45,10 @@ Consulte também [Incorporação do visualizador de vídeo em uma página da Web
 
 
 
-Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicação de ativos.](managing-assets-touch-ui.md)
+Para obter informações detalhadas sobre como publicar um conjunto ou ativo, consulte [Publicar ativos.](managing-assets-touch-ui.md)
 
-## delivery HTTP/2 de ativos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## DELIVERY HTTP/2 de ativos Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM agora suporta o delivery de todo o conteúdo de Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos de Dynamic Media.
+AEM agora suporta o delivery de todo o conteúdo do Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos Dynamic Media.
 
-Consulte Perguntas frequentes sobre o delivery [HTTP/2 sobre conteúdo](/help/sites-administering/scene7-http2faq.md) para saber mais.
+Consulte [delivery HTTP/2 de conteúdo com perguntas frequentes](/help/sites-administering/scene7-http2faq.md) para saber mais.
