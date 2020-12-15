@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Considerações sobre a rede de ativos {#assets-network-considerations}
+# Considerações de rede de ativos {#assets-network-considerations}
 
 Compreender sua rede é tão importante quanto entender os ativos Adobe Experience Manager (AEM). A rede pode afetar as experiências de upload, download e usuário. O diagrama da topologia de rede ajuda a identificar pontos de estrangulamento e áreas sub-otimizadas na rede que você deve corrigir para melhorar o desempenho da rede e a experiência do usuário.
 
@@ -22,13 +22,13 @@ Certifique-se de incluir o seguinte no diagrama de rede:
 * Faça upload para a Internet a partir da rede corporativa e do ambiente AEM
 * Topologia do ambiente AEM
 * Definir consumidores simultâneos da interface de rede AEM
-* workflows definidos da instância AEM
+* Workflows definidos da instância AEM
 
 ## Conectividade do dispositivo cliente à rede corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
 Comece com a diagramação da conectividade entre os dispositivos cliente individuais e a rede corporativa. Neste estágio, identifique recursos compartilhados, como conexões WiFi, onde vários usuários acessam o mesmo ponto ou switch ethernet para fazer upload e download de ativos.
 
-![chlimage_1-355](assets/chlimage_1-353.png)
+![chlimage_1-353](assets/chlimage_1-353.png)
 
 Os dispositivos cliente se conectam à rede corporativa de várias maneiras, como WiFi compartilhado, ethernet a um switch compartilhado e VPN. Identificar e entender pontos de interrupção nesta rede é importante para o planejamento de ativos e para modificar a rede.
 
@@ -42,7 +42,7 @@ O computador exibido à direita tem um valor upstream limitado para a rede corpo
 
 ## Topologia da rede corporativa {#topology-of-the-corporate-network}
 
-![chlimage_1-356](assets/chlimage_1-354.png)
+![chlimage_1-354](assets/chlimage_1-354.png)
 
 O diagrama exibe velocidades de uplink mais altas dentro da rede corporativa do que o geralmente é usado. Esses tubos são recursos compartilhados. Se for esperado que o switch compartilhado trate de 50 clientes, ele pode ser um ponto de interrupção. No diagrama inicial, apenas dois computadores compartilham a conexão específica.
 
@@ -74,9 +74,9 @@ O dispatcher compartilha sua conexão de 100 Mbps com duas entidades, o mundo ex
 
 A instância AEM compartilha sua conexão de 1Gbps com vários serviços. Do ponto de vista da topologia da rede, equivale a compartilhar um único canal com diferentes serviços.
 
-Revisando a rede do dispositivo cliente para a instância AEM, o menor ponto de interrupção parece ser o controle de 10 Mbit Enterprise Firewall. Você pode usar esses valores na calculadora de dimensionamento no Guia [de dimensionamento de](assets-sizing-guide.md) ativos para determinar a experiência do usuário.
+Revisando a rede do dispositivo cliente para a instância AEM, o menor ponto de interrupção parece ser o controle de 10 Mbit Enterprise Firewall. Você pode usar esses valores na calculadora de dimensionamento no [Guia de dimensionamento de ativos](assets-sizing-guide.md) para determinar a experiência do usuário.
 
-## workflows definidos da instância AEM {#defined-workflows-of-the-aem-instance}
+## Workflows definidos da instância AEM {#defined-workflows-of-the-aem-instance}
 
 Ao considerar o desempenho da rede, pode ser importante considerar os workflows e a publicação que ocorrerão no sistema. Além disso, o S3 ou outro armazenamento conectado à rede que você usa e as solicitações de E/S consomem largura de banda da rede. Portanto, mesmo em uma rede totalmente otimizada, o desempenho pode ser limitado pela E/S do disco.
 
@@ -91,10 +91,10 @@ Ao avaliar a topologia interna do fluxo de trabalho, você deve analisar o segui
 Estes são alguns itens a serem considerados:
 
 * XMP leitura/gravação de metadados
-* ativação automática e replicação
+* Ativação automática e replicação
 * Aplicação de marca d&#39;água
 * Inclusão/extração de página
-* workflows sobrepostos.
+* Workflows sobrepostos.
 
 Este é um exemplo de cliente para a definição de um fluxo de trabalho de ativos.
 
