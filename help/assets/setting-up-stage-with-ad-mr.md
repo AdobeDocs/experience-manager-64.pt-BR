@@ -43,15 +43,15 @@ ht-degree: 77%
 
    Defina as configurações de renderização com as seguintes sugestões:
 
-   * **[!UICONTROL Guia Comum]**
+   * **[!UICONTROL guia]** Comandos
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Desmarque a caixa de seleção **[!UICONTROL canal alfa (máscara)]** para todas as câmeras renderizáveis.
 
    * **[!UICONTROL Guia Qualidade]**
 
-      * **[!UICONTROL Qualidade]** geral `- 0.5` ou menor
-      * **[!UICONTROL Modo]** de Difusão Indireta (GI) - `Final Gather`
-      * **[!UICONTROL Tamanho]** do filtro - `2.0`, `2.0`
+      * **[!UICONTROL Qualidade geral ou]** `- 0.5` menor
+      * **[!UICONTROL Modo]**  de Difusão Indireta (GI) -  `Final Gather`
+      * **[!UICONTROL Tamanho]**  do filtro -  `2.0`,  `2.0`
    * Renderize a cena nos tamanhos de imagem típicos que você espera usar. Se necessário, refine as luzes ou as Configurações de renderização, ou faça as duas coisas para obter os resultados desejados.
 
       Esteja ciente de que a renderização com o Mental Ray, usando a iluminação baseada em imagem, é muito lenta e exige muita CPU. A Adobe recomenda que você defina as configurações de qualidade mais baixas que ainda sejam capazes de produzir a qualidade de renderização desejada.
@@ -66,6 +66,6 @@ ht-degree: 77%
 
    Se o Autodesk® Maya® não estiver configurado no servidor do AEM, exporte um FBX do Maya e faça o upload para o AEM.
 
-1. Abra as Propriedades do ativo no AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Verifique se a **[!UICONTROL Classe]** está definida como **[!UICONTROL Estágio 3D]**. Salve e saia.
+1. Abra as Propriedades do ativo no AEM. Defina **[!UICONTROL Title]** para uma sequência de caracteres adequada que aparecerá na lista suspensa **[!UICONTROL Seletor de Palco]**. Verifique se a **[!UICONTROL Classe]** está definida como **[!UICONTROL Estágio 3D]**. Salve e saia.
 1. Abra um ativo 3D, selecione o novo estágio e verifique se ele é visualizado e renderizado como esperado.
 
