@@ -15,9 +15,9 @@ ht-degree: 19%
 
 XMP (Plataforma de metadados extensível) é o padrão de metadados usado pela AEM Assets para todo o gerenciamento de metadados. XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
 
-Além de oferecer codificação de metadados universais que podem ser incorporados em todos os formatos de arquivo, XMP fornece um modelo [de](xmp.md#xmp-core-concepts) conteúdo avançado e é [suportado pelo Adobe](xmp.md#advantages-of-xmp) e outras empresas, para que os usuários de XMP em combinação com a AEM Assets tenham uma plataforma poderosa para desenvolver.
+Além de oferecer codificação de metadados universais que podem ser incorporados em todos os formatos de arquivo, XMP fornece um [modelo de conteúdo](xmp.md#xmp-core-concepts) rico e é [suportado pelo Adobe](xmp.md#advantages-of-xmp) e outras empresas, para que os usuários de XMP em combinação com a AEM Assets tenham uma plataforma poderosa para desenvolver.
 
-A especificação [](https://www.adobe.com/devnet/xmp.html) XMP está disponível no Adobe.
+A especificação [XMP](https://www.adobe.com/devnet/xmp.html) está disponível no Adobe.
 
 ## O que é XMP? {#what-is-xmp}
 
@@ -76,7 +76,7 @@ XMP pode incluir propriedades de um ou mais schemas.
 
 Por exemplo, um subconjunto típico usado por muitos aplicativos Adobe pode incluir o seguinte:
 
-* schema principal de Dublin: dc:title, dc:creator, dc:subject, dc:format, dc:rights
+* Schema principal de Dublin: dc:title, dc:creator, dc:subject, dc:format, dc:rights
 * XMP schema básico: xmp:CreateDate, xmp:CreatorTool, xmp:ModifyDate, xmp:metadataDate
 * schema de gerenciamento de direitos XMP: xmpRights:WebStatement, xmpRights:Marked
 * schema de gerenciamento de mídia XMP: xmpMM:DocumentID
