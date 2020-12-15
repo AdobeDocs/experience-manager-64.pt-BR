@@ -26,7 +26,7 @@ Os seguintes aspectos da funcionalidade podem ser personalizados ou aprimorados:
 * [Desenvolvimento de proxy de ativos](proxy.md)
 * [Práticas recomendadas para configurar o ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizar a aparência e o sentimento {#customizing-the-look-and-feel}
+## Personalização da aparência {#customizing-the-look-and-feel}
 
 Os seguintes aspectos da aparência do Editor de ativos são personalizáveis:
 
@@ -34,7 +34,7 @@ Os seguintes aspectos da aparência do Editor de ativos são personalizáveis:
 * Cores e fontes: É possível alterar as cores e as fontes usadas na interface.
 * Código HTML: Para uma personalização mais completa, é possível alterar o código HTML subjacente que define as interfaces.
 
-## Personalização de execuções {#customizing-renditions}
+## Personalizar representações {#customizing-renditions}
 
 Na terminologia do AEM Assets, uma representação é a forma na qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, imagens em cores completas podem ter uma representação em seu tamanho original, outra em tamanho reduzido e outra em escala decrescente e outra em escala de cinza.
 
