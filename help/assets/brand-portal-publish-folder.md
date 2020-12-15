@@ -31,11 +31,11 @@ Se você fizer modificações subsequentes no ativo ou pasta original no AEM Ass
 
    Para publicar as pastas selecionadas no Brand Portal, siga um dos procedimentos a seguir:
 
-   * Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Em seguida, no menu, selecione **[!UICONTROL Publicar no Brand Portal]**.
    * Na barra de ferramentas, selecione **[!UICONTROL Gerenciar publicação]**.
 
-3. Em seguida, na **[!UICONTROL Ação]** , selecione **[!UICONTROL Publicar no Brand Portal]** e, em **[!UICONTROL Agendamento]** , selecione **[!UICONTROL Agora]**. Toque em **[!UICONTROL Avançar].**
-4. Dentro do **[!UICONTROL Escopo]**, confirme sua seleção e toque em **[!UICONTROL Publicar no Portal]** da Marca.
+3. Em seguida, em **[!UICONTROL Action]** selecione **[!UICONTROL Publicar no Brand Portal]** e em **[!UICONTROL Agendamento]** selecione **[!UICONTROL Agora]**. Toque em **[!UICONTROL Próximo].**
+4. Dentro de **[!UICONTROL Escopo]**, confirme sua seleção e toque em **[!UICONTROL Publicar no Brand Portal]**.
 
    Será exibida uma mensagem informando que a pasta foi colocada na fila para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver a pasta publicada.
 
@@ -44,12 +44,12 @@ Se você fizer modificações subsequentes no ativo ou pasta original no AEM Ass
    Para agendar a publicação no fluxo de trabalho do Brand Portal das pastas de ativos para uma data ou hora posterior:
 
    1. Depois de selecionar os ativos/pastas a serem publicados, selecione **[!UICONTROL Gerenciar publicação]** na barra de ferramentas na parte superior.
-   2. Na página **[!UICONTROL Gerenciar publicação]** , selecione **[!UICONTROL Publicar no portal]** da marca em **[!UICONTROL Ação]** e selecione **[!UICONTROL Mais tarde]** em **[!UICONTROL Agendamento]**.
+   2. Na página **[!UICONTROL Gerenciar publicação]**, selecione **[!UICONTROL Publicar no portal da marca]** em **[!UICONTROL Ação]** e selecione **[!UICONTROL Mais Tarde]** em **[!UICONTROL Agendamento]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Toque em **[!UICONTROL Avançar]**.
-   4. Confirme sua seleção no **[!UICONTROL Escopo]**. Toque em **[!UICONTROL Avançar]**.
+   3. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Toque em **[!UICONTROL Next]**.
+   4. Confirme sua seleção no **[!UICONTROL Escopo]**. Toque em **[!UICONTROL Next]**.
    5. Especifique um título de Fluxo de trabalho em **[!UICONTROL Fluxos de trabalho]**. Toque em **[!UICONTROL Publicar mais tarde]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
@@ -70,9 +70,9 @@ Você tem a opção de cancelar a publicação rápida de pastas do Brand Portal
 
    Para cancelar a publicação rápida da pasta desejada no Portal de marcas:
 
-   1. Na página **[!UICONTROL Gerenciar publicação]** , em **[!UICONTROL Ação]** , selecione **[!UICONTROL Cancelar publicação do Brand Portal]** e, em **[!UICONTROL Agendamento]** , selecione **[!UICONTROL Agora]**.
-   2. Tap/ click **[!UICONTROL Next].**
-   3. Dentro do **[!UICONTROL Escopo]**, confirme sua seleção e toque em **[!UICONTROL Cancelar publicação do Portal]** da marca.
+   1. Na página **[!UICONTROL Gerenciar publicação]**, em **[!UICONTROL Action]** selecione **[!UICONTROL Cancelar publicação do Brand Portal]** e, em **[!UICONTROL Agendamento]**, selecione **[!UICONTROL Agora]**.
+   2. Toque/ clique em **[!UICONTROL Próximo].**
+   3. Dentro de **[!UICONTROL Escopo]**, confirme sua seleção e toque em **[!UICONTROL Cancelar a publicação do Portal de Marcas]**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
@@ -80,10 +80,10 @@ Você tem a opção de cancelar a publicação rápida de pastas do Brand Portal
 
    Para agendar a publicação de uma pasta do Brand Portal para uma data e hora posteriores:
 
-   1. Na página **[!UICONTROL Gerenciar publicação]** , em **[!UICONTROL Ação]** , selecione **[!UICONTROL Cancelar publicação do Brand Portal]** e, em **[!UICONTROL Agendamento]** , selecione **[!UICONTROL Mais tarde].**
-   2. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Toque em **[!UICONTROL Avançar]**.
-   3. Dentro do **[!UICONTROL Escopo]**, confirme sua seleção e toque em **[!UICONTROL Próximo]**.
-   4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. Toque em **[!UICONTROL Cancelar publicação mais tarde].**
+   1. Na página **[!UICONTROL Gerenciar publicação]**, em **[!UICONTROL Ação]** selecione **[!UICONTROL Cancelar publicação do Brand Portal]** e, em **[!UICONTROL Agendamento]**, selecione **[!UICONTROL Mais Tarde].**
+   2. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Toque em **[!UICONTROL Next]**.
+   3. Em **[!UICONTROL Escopo]**, confirme sua seleção e toque em **[!UICONTROL Próximo]**.
+   4. Especifique um **[!UICONTROL Título do fluxo de trabalho]** em **[!UICONTROL Workflows]**. Toque em **[!UICONTROL Cancelar a publicação mais tarde].**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
