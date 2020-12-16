@@ -7,9 +7,9 @@ user-guide-title: Guia do usuário de administração do AEM 6.4
 breadcrumb-title: Guia de administração
 user-guide-description: Saiba mais sobre como administrar o AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 17%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 17%
    + [O Editor em massa](bulk-editor.md)
    + [Configuração de notificação por email](notification.md)
    + [Configuração do RTE para produção de sites acessíveis](rte-accessible-content.md)
-   + [O Verificador de links externos](external-link-checker.md)
+   + [O Verificador de links](external-link-checker.md)
    + [Solução de problemas AEM](troubleshoot.md)
    + [Manutenção do registro de auditoria no AEM 6](operations-audit-log.md)
    + [Editor](enable-classic-ui-editor.md)
@@ -153,7 +153,7 @@ ht-degree: 17%
    + [Integração com o Adobe](search-and-promote.md)
    + [Integração de soluções](integration.md)
    + [Integração de públicos alvos com fragmentos de experiência](experience-fragments-target.md)
-+ Práticas recomendadas     {#bestpractices}
++ Práticas recomendadas      {#bestpractices}
    + [Práticas recomendadas    ](administer-best-practices.md)
    + [Práticas recomendadas de tradução](tc-bp.md)
    + [Práticas recomendadas do MSM](msm-best-practices.md)
