@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components, testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 088961dd5457f2136a5eea6f6811455105a8dd1f
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # Testando sua interface de usuário{#testing-your-ui}
 
-AEM fornece uma estrutura para automatizar testes para sua interface AEM. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece API ajavascript para a criação de testes.
+AEM fornece uma estrutura para automatizar testes para sua interface AEM. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece uma API javascript para a criação de testes.
 
 A estrutura de teste AEM usa Hobbes.js, uma biblioteca de testes escrita em Javascript. A estrutura do Hobbes.js foi desenvolvida para testar AEM como parte do processo de desenvolvimento. A estrutura agora está disponível para uso público para testar seus aplicativos AEM.
 
 >[!NOTE]
 >
->Consulte a [documentação](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) do Hobbes.js para obter detalhes completos da API.
+>Consulte a documentação do Hobbes.js [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) para obter detalhes completos da API.
 
 ## Estrutura dos ensaios {#structure-of-tests}
 
@@ -34,17 +34,17 @@ Ao usar testes automatizados em AEM, os seguintes termos são importantes para e
 
 |  |  |
 |---|---|
-| Ação | Uma **ação** é uma atividade específica em uma página da Web, como clicar em um link ou em um botão. |
-| Caso de teste | Um caso **de** teste é uma situação específica que pode ser composta por uma ou mais **ações**. |
-| Test Suite | Um **Test Suite** é um grupo de casos **de** teste relacionados que, juntos, testam um caso de uso específico. |
+| Ação | Uma **Ação** é uma atividade específica em uma página da Web, como clicar em um link ou em um botão. |
+| Caso de teste | Uma **Caso de teste** é uma situação específica que pode ser composta de uma ou mais **Ações**. |
+| Test Suite | Um **Test Suite** é um grupo de **Casos de teste** relacionados que, juntos, testam um caso de uso específico. |
 
-## Execução de testes {#executing-tests}
+## Executando testes {#executing-tests}
 
 ### Exibindo conjuntos de testes {#viewing-test-suites}
 
 Abra o console de teste para ver os conjuntos de teste registrados. O painel Testes contém uma lista de conjuntos de teste e seus casos de teste.
 
-Navegue até o console Ferramentas por meio de Navegação **global -> Ferramentas > Operações -> Teste**.
+Navegue até o console Ferramentas por **Navegação global -> Ferramentas > Operações -> Teste**.
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -70,7 +70,7 @@ Para executar um Test Suite:
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-1. Clique ou toque no botão **Executar teste** .
+1. Clique ou toque no botão **Executar teste**.
 
    ![](do-not-localize/chlimage_1-7.png)
 
@@ -78,7 +78,7 @@ Para executar um Test Suite:
 
    ![chlimage_1-21](assets/chlimage_1-29.png)
 
-1. Revise os resultados do caso de teste tocando ou clicando na descrição para abrir o painel **Resultado** . Tocar ou clicar no nome do caso de teste no painel **Resultado** mostra todos os detalhes.
+1. Revise os resultados do caso de teste tocando ou clicando na descrição para abrir o painel **Resultado**. Tocar ou clicar no nome do Caso de teste no painel **Resultado** mostra todos os detalhes.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -98,13 +98,13 @@ Os conjuntos de testes são executados sequencialmente na ordem em que são exib
 
 ## Criação e uso de um conjunto de testes simples {#creating-and-using-a-simple-test-suite}
 
-O procedimento a seguir o orienta pela criação e execução de um Test Suite usando o conteúdo [](/help/sites-developing/we-retail.md)We.Retail, mas você pode modificar facilmente o teste para usar uma página da Web diferente.
+O procedimento a seguir o orienta pela criação e execução de um Test Suite usando [Conteúdo We.Retail](/help/sites-developing/we-retail.md), mas você pode modificar facilmente o teste para usar uma página da Web diferente.
 
-Para obter detalhes completos sobre como criar seus próprios Conjuntos de testes, consulte a documentação [da API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)Hobbes.js.
+Para obter detalhes completos sobre como criar seus próprios Conjuntos de testes, consulte a [documentação da API Hobbes.js](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Abra o CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Clique com o botão direito do mouse na `/etc/clientlibs` pasta e clique em **Criar > Criar pasta**. Digite `myTests` o nome e clique em **OK**.
-1. Clique com o botão direito do mouse na `/etc/clientlibs/myTests` pasta e clique em **Criar > Criar nó**. Use os seguintes valores de propriedade e clique em **OK**:
+1. Clique com o botão direito do mouse na pasta `/etc/clientlibs` e clique em **Criar > Criar pasta**. Digite `myTests` como nome e clique em **OK**.
+1. Clique com o botão direito do mouse na pasta `/etc/clientlibs/myTests` e clique em **Criar > Criar nó**. Use os seguintes valores de propriedade e clique em **OK**:
 
    * Nome: `myFirstTest`
    * Tipo: `cq:ClientLibraryFolder`
@@ -122,22 +122,22 @@ Para obter detalhes completos sobre como criar seus próprios Conjuntos de teste
    >
    >Para testar formulários adaptáveis, adicione os seguintes valores às categorias e dependências. Por exemplo:
    >
-   >**categorias**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categorias**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
-   >**dependências**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
+   >**dependências**:  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
 1. Clique em **Salvar tudo**.
-1. Clique com o botão direito do mouse no `myFirstTest` nó e clique em **Criar > Criar arquivo**. Name the file `js.txt` and click **OK**.
-1. No `js.txt` arquivo, insira o seguinte texto:
+1. Clique com o botão direito do mouse no nó `myFirstTest` e clique em **Criar > Criar arquivo**. Nomeie o arquivo `js.txt` e clique em **OK**.
+1. No arquivo `js.txt`, insira o seguinte texto:
 
    ```
    #base=.
    myTestSuite.js
    ```
 
-1. Clique em **Salvar tudo** e feche o `js.txt` arquivo.
-1. Clique com o botão direito do mouse no `myFirstTest` nó e clique em **Criar > Criar arquivo**. Name the file `myTestSuite.js` and click **OK**.
-1. Copie o seguinte código para o `myTestSuite.js` arquivo e salve o arquivo:
+1. Clique em **Salvar tudo** e feche o arquivo `js.txt`.
+1. Clique com o botão direito do mouse no nó `myFirstTest` e clique em **Criar > Criar arquivo**. Nomeie o arquivo `myTestSuite.js` e clique em **OK**.
+1. Copie o seguinte código para o arquivo `myTestSuite.js` e salve o arquivo:
 
    ```
    new hobs.TestSuite("Experience Content Test Suite", {path:"/etc/clientlibs/myTests/myFirstTest/myTestSuite.js"})
@@ -152,5 +152,5 @@ Para obter detalhes completos sobre como criar seus próprios Conjuntos de teste
    );
    ```
 
-1. Navegue até o console **Testes** para testar seu conjunto de testes.
+1. Navegue até o console **Testando** para testar seu conjunto de testes.
 
