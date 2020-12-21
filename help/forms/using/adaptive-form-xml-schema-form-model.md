@@ -129,7 +129,7 @@ Aqui está um exemplo de um schema XML.
 >
 >Certifique-se de que seu schema XML tenha apenas um elemento raiz. Não há suporte para um schema XML com mais de um elemento raiz.
 
-## Adicionar propriedades especiais a campos usando schema XML {#adding-special-properties-to-fields-using-xml-schema}
+## Adicionar propriedades especiais a campos usando o schema XML {#adding-special-properties-to-fields-using-xml-schema}
 
 É possível adicionar os seguintes atributos aos elementos do Schema XML para adicionar propriedades especiais aos campos do formulário adaptável associado.
 
@@ -142,7 +142,7 @@ Aqui está um exemplo de um schema XML.
   </tr> 
   <tr> 
    <td><code>use=required </code></td> 
-   <td>Marca um campo como obrigatório<br /> </td> 
+   <td>Marca um campo obrigatório<br /> </td> 
    <td>Atributo</td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ Aqui está um exemplo de um schema XML.
 
 >
 >
-Por exemplo, se você adicionar o elemento `userFirstName` schema, a legenda gerada no formulário adaptável será `User First Name`.
+Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda gerada no formulário adaptável será `User First Name`.
 
 ## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -301,7 +301,7 @@ O campo bindRef</code> mostra a associação entre um elemento de árvore e um e
 
 >[!NOTE]
 >
->Os atributos têm um `@` símbolo em seu `bindRef`valor para diferenciá-los dos elementos. Por exemplo, `/config/projectDetails/@duration`.
+>Os atributos têm um símbolo `@` em seu valor `bindRef`para diferenciá-los dos elementos. Por exemplo, `/config/projectDetails/@duration`.
 
 **Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada a partir de qualquer tipo complexo) para subformulários repetitivos (os valores minOccours ou maxOccurs são maiores que 1)?**
 
@@ -316,4 +316,4 @@ Você tem duas opções:
 
 **O que é um bindRef?**
 
-A `bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo do schema. Determina o local em `XPath` que o valor capturado desse componente ou campo está disponível no XML de saída. A também `bindRef`é usada ao pré-preencher um valor de campo a partir do XML pré-preenchido (pré-preenchido).
+Um `bindRef` é a conexão entre um componente de formulário adaptável e um atributo ou elemento de schema. Determina `XPath` onde o valor capturado deste componente ou campo está disponível no XML de saída. Um `bindRef`também é usado ao pré-preencher um valor de campo a partir do XML pré-preenchido (pré-preenchido).
