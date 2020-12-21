@@ -30,7 +30,7 @@ Para uma demonstração simples, um recurso visual, o avatar mostrado pelo usuá
 
 ## Modificar os scripts HBS {#modify-the-hbs-scripts}
 
-Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Usando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Abra [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -64,13 +64,13 @@ Uma maneira de o fazer é
 
    * Selecione **[!UICONTROL Ferramentas > Operações > Replicação]**
    * Selecionar `Activate Tree`
-   * Definir `Start Path`: to `/apps/custom`
+   * Definir `Start Path`: para `/apps/custom`
    * Desmarcar `Only Modified`
    * Botão Selecionar `Activate`
 
-## Página Comentário modificado da Visualização sobre amostra publicada {#view-modified-comment-on-published-sample-page}
+## Comentário modificado da visualização na página de amostra publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuando com a experiência](extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para visualização da modificação para remover o avatar:
+[Continuando a ](extend-sample-page.md#publish-sample-page) experiência na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para visualização da modificação para remover o avatar:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
