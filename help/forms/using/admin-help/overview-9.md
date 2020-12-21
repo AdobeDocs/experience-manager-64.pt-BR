@@ -48,7 +48,7 @@ Em cada página de fluxo de trabalho do Forms no console de administração, é 
    <td><p>fluxo de trabalho de formulários</p></td> 
    <td>
     <ul>
-     <li><p>processos ativos de Visualização</p></li>
+     <li><p>processos ativos de visualização</p></li>
      <li><p>Visualização e trabalho com instâncias de processo, operações e tarefas</p></li>
      <li><p>Suspender, encerrar e repetir instâncias de processo, subprocessos e operações</p></li>
     </ul></td> 
@@ -63,7 +63,7 @@ Em cada página de fluxo de trabalho do Forms no console de administração, é 
    <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Procurando instâncias de processo</a></p></td> 
   </tr> 
   <tr>
-   <td><p>Pesquisa de Tarefa</p></td> 
+   <td><p>Pesquisa de tarefa</p></td> 
    <td>
     <ul>
      <li><p>Procurar tarefas por usuário ou ID de tarefa</p></li>
