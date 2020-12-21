@@ -28,15 +28,15 @@ Os componentes do espaço de trabalho AEM Forms são projetados na arquitetura M
 
 Os ativos de todos os componentes são colocados na estrutura de pastas descrita abaixo. Para acessar os ativos, faça logon no CRXDE Lite e navegue até `/libs/ws/js/runtime/`.
 
-**modelos** contêm modelos de backbone.
+**** ModelosContém modelos de backbone.
 
-**O visualização** contém visualizações de backbone.
+**** viewsContém visualizações de backbone.
 
-**modelos** Contém apenas os modelos HTML para os componentes.
+**** ModelosContém apenas os modelos HTML para os componentes.
 
-**rotas** Contém rotas universais. A pasta Templates dentro de rotas contém o código HTML e as referências aos componentes.
+**** rotasContém rotas universais. A pasta Templates dentro de rotas contém o código HTML e as referências aos componentes.
 
-**services** Contém interface de serviço para chamar APIs de servidor Adobe Experience Manager no terminal REST.
+**** servicesContém a interface de serviço para chamar APIs do servidor Adobe Experience Manager no terminal REST.
 
-**util** Contém utilitários genéricos utilizáveis por vários componentes.
+**** utilContém utilitários genéricos utilizáveis por vários componentes.
 
