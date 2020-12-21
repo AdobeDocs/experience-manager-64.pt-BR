@@ -40,11 +40,11 @@ O Gerenciamento de correspondência expõe as APIs para buscar instâncias de ca
 >LetterInstanceService é um serviço OSGI e sua instância pode ser recuperada usando @Reference no Java\
 >Class ou sling.getService(LetterInstanceService). Classe ) em JSP.
 
-### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
+### Usando getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-A API a seguir encontra as instâncias de carta com base no objeto de query (Enviado e Rascunho). Se o objeto query for nulo, retornará todas as instâncias de letra. Essa API retorna a lista de objetos [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) , que podem ser usados para extrair informações adicionais da instância da carta
+A API a seguir encontra as instâncias de carta com base no objeto de query (Enviado e Rascunho). Se o objeto query for nulo, retornará todas as instâncias de letra. Essa API retorna a lista de [objetos LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que pode ser usada para extrair informações adicionais da instância da carta
 
-**Sintaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
+**Sintaxe**:  `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table> 
  <tbody> 
@@ -54,12 +54,12 @@ A API a seguir encontra as instâncias de carta com base no objeto de query (Env
   </tr> 
   <tr> 
    <td>query</td> 
-   <td>O parâmetro query é usado para localizar/filtrar a instância Carta. Aqui, o query suporta apenas os atributos/propriedades de nível superior do objeto. O Query consiste em declarações e o "attributeName" usado no objeto Statement deve ser o nome da propriedade no objeto de instância Letter.<br /> </td> 
+   <td>O parâmetro query é usado para localizar/filtrar a instância Carta. Aqui, o query suporta apenas os atributos/propriedades de nível superior do objeto. O query consiste em instruções e o "attributeName" usado no objeto Statement deve ser o nome da propriedade no objeto de instância Letter.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Exemplo 1: Buscar todas as instâncias de carta do tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Exemplo 1: Encontre todas as instâncias de letras do tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 O código a seguir retorna a lista de instâncias de carta enviadas. Para obter somente rascunhos, altere `LetterInstanceType.COMPLETE.name()` para `LetterInstanceType.DRAFT.name().`
 
@@ -78,7 +78,7 @@ query.addStatement(statementForInstanceType);
 submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 ```
 
-#### Exemplo 2: todas as instâncias de letra enviadas por um usuário e o tipo de instância de letra é RASCUNHO {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
+#### Exemplo 2: todas as instâncias de letras enviadas por um usuário e o tipo de instância de letra é DRAFT {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
 
 O código a seguir tem várias declarações no mesmo query para obter os resultados filtrados com base em critérios diferentes, como a instância de carta enviada (atributo enviado por) por um usuário e o tipo de letterInstanceType é DRAFT.
 
@@ -105,7 +105,7 @@ query.addStatement(statementForSubmittedBy );
 submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 ```
 
-### Uso de getLetterInstance {#using-nbsp-getletterinstance}
+### Usando getLetterInstance {#using-nbsp-getletterinstance}
 
 Procure a instância da carta identificada pela ID da instância da carta especificada. Retorna &quot;null se a id da instância não for correspondida.
 
@@ -122,7 +122,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 Verificar se existe uma Instância de Carta pelo nome fornecido
 
-**Sintaxe**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**Sintaxe**:  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Parâmetro** | **Descrição** |
 |---|---|
@@ -152,7 +152,7 @@ A interface do usuário CCR suporta o parâmetro cmLetterInstanceId, que pode se
 >
 >Não é necessário especificar cmLetterId ou cmLetterName/State/Version ao recarregar uma correspondência, pois os dados enviados já contêm todos os detalhes sobre a correspondência que é recarregada. AleatórioNão é usado para evitar problemas de cache do navegador, você pode usar o carimbo de data e hora como um número aleatório.
 
-### Abrindo instância da carta enviada {#opening-submitted-letter-instance}
+### Abrindo instância de carta enviada {#opening-submitted-letter-instance}
 
 O PDF enviado pode ser aberto diretamente usando a ID da instância da carta:
 
