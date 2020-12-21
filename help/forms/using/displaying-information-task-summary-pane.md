@@ -24,7 +24,7 @@ Ao abrir uma tarefa na área de trabalho do AEM Forms, um painel Resumo da Taref
 
 A área de trabalho do AEM Forms permite que você exiba uma página da Web de sua escolha no painel Resumo da Tarefa. Um processo pode ser criado para exibir um painel Resumo da Tarefa usando o Workbench.
 
-1. Criar um processo de Tarefa Atribuir no Workbench. Para obter mais detalhes sobre a operação Atribuir Tarefa, consulte o tópico Referência de serviço na Ajuda [do](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/)Workbench.
+1. Criar um processo de Tarefa Atribuir no Workbench. Para obter mais detalhes sobre a operação Atribuir Tarefa, consulte o tópico Referência de serviço em [Ajuda do Workbench](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >
@@ -33,9 +33,9 @@ A área de trabalho do AEM Forms permite que você exiba uma página da Web de s
 1. Configure o campo URL de resumo da Tarefa. Você pode especificar um valor literal, um modelo, uma variável ou uma expressão XPath.
 1. Um exemplo de exibição das informações na página Resumo da Tarefa é mostrado abaixo.
 
-   * Faça logon no CRXDE Lite ambiente em `https://[server]:[port]/lc/crx/de`.
-   * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
-   * `Create a folder`**SampleSummary **em`/apps`. Na Lista de Controle de acesso de`/apps/SampleSummary`, adicione uma entrada para`PERM_WORKSPACE_USER`permitir`jcr:readprivileges`.
+   * Faça logon no ambiente CRXDE Lite em `https://[server]:[port]/lc/crx/de`.
+   * `Create a node`**SampleSummary** ` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
+   * `Create a folder`**** SampleSummaryunder  `/apps`. Na Lista do Controle de acesso de `/apps/SampleSummary`, adicione uma entrada para `PERM_WORKSPACE_USER` permitindo `jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
 
    ```
@@ -52,4 +52,4 @@ A área de trabalho do AEM Forms permite que você exiba uma página da Web de s
    ```
 
    * Defina o valor do url de resumo da tarefa como `/lc/content/SampleSummary.html` na etapa Atribuir Tarefa.
-   * Quando a tarefa associada à etapa Atribuir Tarefa é aberta na área de trabalho do AEM Forms, a  `html.esp` at `/apps/SampleSummary` é renderizada no painel de resumo da tarefa.
+   * Quando a tarefa associada à etapa Atribuir Tarefa é aberta na área de trabalho do AEM Forms, o `html.esp` em `/apps/SampleSummary` é renderizado no painel de resumo da tarefa.
