@@ -24,25 +24,25 @@ Vários procedimentos exigem que você pare ou start a instância do WebSphere o
 
 ## Visualização do status do WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
-1. Em um prompt de comando, vá para o diretório raiz *[/bin do]* appserver.
-1. Digite o seguinte comando, substituindo *server_name* pelo nome do Servidor de aplicativos WebSphere:
+1. Em um prompt de comando, vá para o diretório *[appserver root]*/bin.
+1. Digite o seguinte comando, substituindo *server_name* pelo nome do seu WebSphere Application Server:
 
-   * (Windows) `serverStatus.bat`*server_name *
-   * (Linux, UNIX) ./ nome_ `serverStatus.sh`*do_servidor *
+   * (Windows) `serverStatus.bat`*server_name*
+   * (Linux, UNIX) ./ `serverStatus.sh`*nome_do_servidor*
 
 ## Start WebSphere Application Server {#start-websphere-application-server}
 
-1. Em um prompt de comando, vá para o diretório raiz *[/bin do]* appserver.
-1. Digite o seguinte comando, substituindo *server_name* pelo nome do Servidor de aplicativos WebSphere:
+1. Em um prompt de comando, vá para o diretório *[appserver root]*/bin.
+1. Digite o seguinte comando, substituindo *server_name* pelo nome do seu WebSphere Application Server:
 
-   * (Windows) `startServer.bat`*server_name *
-   * (Linux, UNIX) ./ nome_ `startServer.sh`*do_servidor *
+   * (Windows) `startServer.bat`*server_name*
+   * (Linux, UNIX) ./ `startServer.sh`*nome_do_servidor*
 
 ## Parar o WebSphere Application Server {#stop-websphere-application-server}
 
-1. Em um prompt de comando, vá para o diretório raiz *[/bin do]* appserver.
-1. Digite o seguinte comando, substituindo *server_name* pelo nome do Servidor de aplicativos WebSphere:
+1. Em um prompt de comando, vá para o diretório *[appserver root]*/bin.
+1. Digite o seguinte comando, substituindo *server_name* pelo nome do seu WebSphere Application Server:
 
-   * (Windows) `stopServer.bat`*server_name *
-   * (Linux, UNIX) ./ nome_ `stopServer.sh`*do_servidor *
+   * (Windows) `stopServer.bat`*server_name*
+   * (Linux, UNIX) ./ `stopServer.sh`*nome_do_servidor*
 
