@@ -29,17 +29,18 @@ Para obter mais informações sobre o portal de formulários e seus recursos, co
 
 ## Introdução ao portal de formulários {#getting-started-with-forms-portal}
 
-Navegue até a página do portal de formulários publicados. Para obter mais informações sobre como criar uma página do portal de formulários, consulte [Criar uma página](/help/forms/using/creating-form-portal-page.md)do portal de formulários.
+Navegue até a página do portal de formulários publicados. Para obter mais informações sobre como criar uma página de portal de formulários, consulte [Criar uma página de portal de formulários](/help/forms/using/creating-form-portal-page.md).
 
 O componente de Pesquisa e Lister do portal de roms exibe os formulários disponíveis na instância de Publicação do servidor de AEM. Essa lista inclui todos os formulários ou formulários definidos no filtro no momento da criação da página do portal de formulários. Uma página do portal de formulários é semelhante à exibida na seguinte imagem:
 
-![Uma amostra da página do portal de formulários ](assets/forms-portal-page.png)**Figura:** *Uma página de portal de formulários de amostra*
+![Uma página de portal de formulários de amostra  ](assets/forms-portal-page.png)
+**Figura:** *Uma página de portal de formulários de amostra*
 
 ### Pesquisar e Lister {#search-and-lister}
 
 O componente de Pesquisa e Lister permite que você adicione a seguinte funcionalidade ao seu portal de formulários:
 
-* Formulários de Lista no painel, na placa ou na visualização de grade que estão disponíveis prontamente. Também oferece suporte a modelos personalizadosListe formulários de pastas específicas no Forms Manager.
+* Formulários de lista no painel, na placa ou na visualização de grade que estão disponíveis prontamente. Também oferece suporte a modelos personalizadosListe formulários de pastas específicas no Forms Manager.
 * Especifique como os formulários são renderizados - HTML5, PDF ou ambos.
 * Especifique como os formulários PDF e XFA são renderizados - HTML5, PDF ou ambos. Formulários não XFA como HTML5.
 * Ative a pesquisa de formulários com base em critérios, como propriedades de formulários, metadados e tags.
@@ -54,7 +55,8 @@ Você pode pesquisar formulários na página do Forms Portal usando as seguintes
 
 A pesquisa de texto completo permite que você localize e lista formulários com base nas palavras-chave especificadas.
 
-![Uma caixa de diálogo](assets/search-panel.png)de pesquisa avançada **Figura:** *Uma caixa de diálogo de pesquisa avançada*
+![Uma ](assets/search-panel.png)
+**caixa de diálogo de pesquisa avançadaFigura:** *Uma caixa de diálogo de pesquisa avançada*
 
 A pesquisa avançada permite pesquisar formulários com base em propriedades de formulário especificadas. Isso fornece resultados mais específicos do que pesquisa de texto completo. A pesquisa avançada inclui a pesquisa com base em tags, propriedades (como Autor, Descrição e Título), data de modificação e texto completo.
 
@@ -62,13 +64,14 @@ O Lister exibe formulários com base nos parâmetros de pesquisa. Cada formulár
 
 ### Preenchimento de um formulário {#filling-a-form}
 
-![Um exemplo de formulário](assets/filling_a_form.png)adaptável **Figura:** *Um exemplo de formulário adaptável*
+![Um exemplo de ](assets/filling_a_form.png)
+**formulário adaptávelFigura:** *Um exemplo de formulário adaptável*
 
 Os formulários podem ser acessados a partir do link fornecido junto com o formulário no componente de Pesquisa e Lister da página.
 
 Cada formulário contém informações de ajuda que permitem ao usuário preencher o formulário.
 
-#### Rascunhos e submissão {#drafts-and-submission}
+#### Rascunhos e envio {#drafts-and-submission}
 
 Um usuário tem a opção de salvar um rascunho de um formulário clicando no botão Salvar. Isso permite que o usuário trabalhe em um formulário durante um período de tempo antes de enviar o formulário.
 
@@ -78,15 +81,16 @@ Após o preenchimento do formulário, o usuário envia os formulários clicando 
 
 >[!NOTE]
 >
->Os formulários enviados são exibidos na guia Forms Enviado somente se a ação de envio para o formulário adaptativo estiver configurada como Ação de envio do Forms Portal. Para obter mais informações sobre ações de envio, consulte [Configuração da ação](/help/forms/using/configuring-submit-actions.md)Enviar.
+>Os formulários enviados são exibidos na guia Forms Enviado somente se a ação de envio para o formulário adaptativo estiver configurada como Ação de envio do Forms Portal. Para obter mais informações sobre ações de envio, consulte [Configuração da ação Enviar](/help/forms/using/configuring-submit-actions.md).
 
-![Componentes](assets/draft-submission.png)de rascunhos e envios **Figura:** *Componente Rascunhos e envios*
+![Rascunhos e envios ](assets/draft-submission.png)
+**componenteFigura:** *componente Rascunhos e envios*
 
-## Start a new form using submitted form data {#start-a-new-form-using-submitted-form-data}
+## Start de um novo formulário usando dados de formulário enviados {#start-a-new-form-using-submitted-form-data}
 
 Há determinados formulários que você precisa preencher e enviar com muita frequência. Por exemplo, o formulário para o depósito da declaração de imposto individual é enviado todos os anos. Nesses casos, enquanto algumas informações mudam cada vez que você preenche o formulário, a maioria, como os detalhes pessoais e familiares, não é alterada. No entanto, ainda é necessário preencher o formulário inteiro novamente, do zero.
 
-A AEM Forms pode ajudar a otimizar a experiência de preenchimento do formulário e reduzir significativamente o tempo de preenchimento e envio do formulário novamente. Os usuários finais podem start um novo formulário usando dados de um formulário enviado. Essa funcionalidade é integrada no componente [Rascunhos e Envios](/help/forms/using/draft-submission-component.md). Quando você adiciona rascunhos e componentes de envio à página do portal de formulários e a publica, os usuários finais encontram uma opção nas guias Forms e Forms de rascunho enviados para start de um novo formulário usando dados de um formulário enviado. A imagem a seguir destaca essa opção.
+A AEM Forms pode ajudar a otimizar a experiência de preenchimento do formulário e reduzir significativamente o tempo de preenchimento e envio do formulário novamente. Os usuários finais podem start um novo formulário usando dados de um formulário enviado. Essa funcionalidade é integrada no componente [Rascunhos e envios](/help/forms/using/draft-submission-component.md). Quando você adiciona rascunhos e componentes de envio à página do portal de formulários e a publica, os usuários finais encontram uma opção nas guias Forms e Forms de rascunho enviados para start de um novo formulário usando dados de um formulário enviado. A imagem a seguir destaca essa opção.
 
 ![start-a-novo-formulário](assets/start-a-new-form.png)
 
