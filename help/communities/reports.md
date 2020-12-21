@@ -26,15 +26,15 @@ No AEM Communities, há vários relatórios que podem ser acessados de várias m
 
 Em geral, os vários relatórios são:
 
-* [Relatório](#assignments-report) de Atribuições - para uma comunidade [de](overview.md#enablement-community)ativação, fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada ao implementar o padrão SCORM
-* [Relatório](#views-report) de Visualizações - fornece um gráfico de visualizações de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade
-* [Relatório](#posts-report) de postagens - fornece um gráfico de vários tipos de postagens por membros da comunidade em qualquer site da comunidade
+* [Relatório](#assignments-report)  de Atribuições - para uma comunidade [ de ](overview.md#enablement-community)ativação, fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada ao implementar o padrão SCORM
+* [Relatório](#views-report)  de visualizações - fornece um gráfico de visualizações de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade
+* [Relatório](#posts-report)  de postagens - fornece um gráfico de vários tipos de postagens por membros da comunidade em qualquer site da comunidade
 
-Quando o [Adobe Analytics estiver ativado](sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo
+Quando [Adobe Analytics estiver ativado](sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
-## Consoles do Relatórios {#reporting-consoles}
+## Consoles de relatórios {#reporting-consoles}
 
 ### Relatórios para sites da comunidade {#reports-for-community-sites}
 
@@ -54,7 +54,7 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 * Selecionar um site de comunidade de ativação existente
    * Selecione o ícone **[!UICONTROL Relatório]** para gerar relatórios que abrangem todos os recursos de ativação
    * Selecionar um caminho de aprendizado de ativação
-   * Selecione o ícone **[!UICONTROL Relatório]** para o qual gerar relatórios
+   * Selecione o ícone **[!UICONTROL Relatório]** para gerar relatórios para
       * Os recursos de ativação incluídos
       * Os alunos atribuídos ao caminho de aprendizado
 * Esses relatórios fornecem:
@@ -65,7 +65,7 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
       * Número de comentários feitos
       * Classificação de estrelas fornecida
 
-Para obter mais detalhes, consulte a seção [](resources.md#report) Relatórios do console Recursos.
+Para obter mais detalhes, consulte [seção Relatórios](resources.md#report) do console Recursos.
 
 ## Relatório de atribuições {#assignments-report}
 
@@ -77,11 +77,14 @@ O relatório fornece informações sobre o seu progresso, bem como quaisquer com
 
 Selecione os critérios para o relatório:
 
-* **[!UICONTROL Site]** Selecione um site de comunidade de ativação
+* ****
+SiteSelecione um site de comunidade de ativação
 * **[!UICONTROL Usuário ou grupo]**
    * Selecione Usuário para gerar um relatório para um aluno
-   * Selecione Grupo para gerar um relatório para um grupo de alunosO serviço de túnel acessará membros e grupos de membros do ambiente de publicação
-* **[!UICONTROL Atribuição]** Escolha entre os recursos de ativação atribuídos ao(s) aluno(s) selecionado(s)
+   * Selecione Grupo para gerar um relatório para um grupo de alunos
+O serviço de túnel acessará membros e grupos membros do ambiente publish
+* ****
+AtribuiçãoEscolha entre os recursos de ativação atribuídos ao(s) aluno(s) selecionado(s)
 
 Selecione **[!UICONTROL Gerar]** para criar o relatório:
 
@@ -95,9 +98,12 @@ O console do Visualização permite que os relatórios sejam gerados nas visuali
 
 Selecione os critérios para o relatório:
 
-* **[!UICONTROL Site]** Selecione um site da comunidade
-* **[!UICONTROL Tipo]** de conteúdoPode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site
-* Intervalo de tempoSelecione um dos seguintes:
+* ****
+SiteSelecione um site da comunidade
+* **[!UICONTROL Tipo]**
+de conteúdoPode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site
+* Período
+Selecione um dos seguintes:
    * Últimos 7 dias
    * Últimos 30 dias
    * Últimos 90 dias
@@ -115,9 +121,12 @@ O console Publicações permite que os relatórios sejam gerados em número de p
 
 Selecione os critérios para o relatório:
 
-* **[!UICONTROL Site]** Selecione um site da comunidade
-* **[!UICONTROL Tipo]** de conteúdoPode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site
-* Intervalo de tempoSelecione um dos seguintes:
+* ****
+SiteSelecione um site da comunidade
+* **[!UICONTROL Tipo]**
+de conteúdoPode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site
+* Período
+Selecione um dos seguintes:
    * Últimos 7 dias
    * Últimos 30 dias
    * Últimos 90 dias
@@ -127,7 +136,7 @@ Selecione **[!UICONTROL Gerar]** para criar o relatório:
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 ### Nenhum site da comunidade listado {#no-community-sites-listed}
 
