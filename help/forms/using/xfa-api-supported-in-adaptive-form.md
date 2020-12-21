@@ -16,7 +16,7 @@ ht-degree: 7%
 ---
 
 
-# Suporte XFA em formulários adaptáveis baseados em XDP {#xfa-support-in-xdp-based-adaptive-forms}
+# Suporte XFA em formulários adaptativos baseados em XDP {#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introdução {#introduction}
 
@@ -140,11 +140,11 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade de descrição curta no formulário adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>legenda<em> (todos os tipos de campo)</em></p> </td> 
+   <td><p>caption<em> (todos os tipos de campo)</em></p> </td> 
    <td><p>Mapeado para a propriedade Title no formulário adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>displayFormat<em> (todos os tipos de Campo)</em></p> </td> 
+   <td><p>displayFormat<em> (todos os tipos de campo)</em></p> </td> 
    <td><p>Mapeado para o Padrão de exibição em forma adaptável.</p> </td> 
   </tr>
   <tr>
@@ -152,7 +152,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeada para a propriedade value em Formulário adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>itens<em> (Caixa de Lista, Caixa de seleção)</em></p> </td> 
+   <td><p>items<em> (Caixa de Lista, Caixa de seleção)</em></p> </td> 
    <td><p>Mapeada para a propriedade options em forma adaptável. É possível substituí-lo usando a expressão Opções.</p> </td> 
   </tr>
   <tr>
@@ -185,7 +185,7 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>eventos de script XFA</strong></p> </td> 
+   <td><p><strong>Eventos de script XFA</strong></p> </td> 
    <td><p><strong>Comportamento correspondente em formulários adaptáveis</strong></p> </td> 
   </tr>
   <tr>
@@ -202,7 +202,7 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
   </tr>
   <tr>
    <td><p>validationState </p> </td> 
-   <td><p>Este script é executado em tempo de execução e não pode ser substituído em forma adaptável.<br /> </p> </td> 
+   <td><p>Este script é executado no tempo de execução e não pode ser substituído na forma adaptável.<br /> </p> </td> 
   </tr>
   <tr>
    <td><p>exit </p> </td> 
