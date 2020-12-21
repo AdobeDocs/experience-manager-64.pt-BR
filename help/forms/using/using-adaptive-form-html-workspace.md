@@ -31,19 +31,19 @@ Execute o seguinte procedimento para habilitar formulários adaptáveis a serem 
 * Na folha de propriedades Atribuir Tarefa/Ponto de Start do Workbench, é possível ocultar a barra de ferramentas de nível superior/global de um formulário adaptável.
 * Você pode usar novos perfis de ação para renderizar e enviar ações em formulários adaptáveis.
 
-### Importação e exportação de aplicativos LiveCycles {#livecycle-application-export-and-import}
+### Exportação e importação de aplicativos de LiveCycle {#livecycle-application-export-and-import}
 
 Como os formulários adaptáveis estão no repositório AEM, a exportação do aplicativo LiveCycle contém apenas as referências para formulários adaptáveis usados. Por conseguinte, a exportação e importação de aplicativos LiveCycle é um processo em duas etapas. O aplicativo LiveCycle inclui definições de processo e assim por diante. Um pacote separado contendo formulários adaptáveis é exportado como um arquivo ZIP da AEM. Durante a importação, o aplicativo LiveCycle é importado por meio do Workbench e os formulários adaptáveis são importados por meio do AEM.
 
-## Experiência do usuário em formulários adaptáveis na área de trabalho HTML {#user-experience-of-adaptive-form-in-html-workspace}
+## Experiência do usuário em formulários adaptáveis no espaço de trabalho HTML {#user-experience-of-adaptive-form-in-html-workspace}
 
 O HTML Workspace fornece alguns controles adaptáveis específicos ao formulário, além de controles que estão disponíveis para formulários móveis. Um usuário pode adicionar anexos, salvar, assinar, enviar e navegar pelos formulários adaptáveis no Espaço de trabalho HTML quando o usuário abrir uma Tarefa ou um Ponto de Start. Veja a seguir as especificações:
 
 1. Para **anexar **os arquivos usam anexos de Tarefa, como era o caso no Mobile Forms. Qualquer botão do tipo Anexo de arquivo do formulário adaptável está oculto.
 
-1. Para salvar um formulário adaptável, clique em **Salvar**, como era o caso no Mobile Forms. Qualquer botão Salvar tipo de formulário adaptativo está oculto.
+1. Para salvar um formulário adaptável, clique em **Salvar**, como acontecia no Mobile Forms. Qualquer botão Salvar tipo de formulário adaptativo está oculto.
 
-1. Para enviar um formulário adaptável, use o botão **Enviar** ou as ações de roteiro disponíveis, como foi o caso no Mobile Forms. Qualquer botão de tipo Enviar do formulário adaptável está oculto.
+1. Para enviar um formulário adaptável, use o botão **Enviar** ou as ações de rota disponíveis, como era o caso no Mobile Forms. Qualquer botão de tipo Enviar do formulário adaptável está oculto.
 
 1. **Visibilidade** da barra de ferramentas global do formulário adaptável: Se o designer de processos ocultar a barra de ferramentas global/de nível superior, a barra de ferramentas e os botões não aparecerão nos formulários adaptáveis.
 
@@ -53,7 +53,7 @@ O HTML Workspace fornece alguns controles adaptáveis específicos ao formulári
 
    O documento assinado é coletado do servidor de serviços eSign e o arquivo xml de dados é encaminhado para a próxima etapa do processo.
 
-## Etapas para usar formulários adaptáveis no design de processos {#steps-to-use-adaptive-forms-in-process-design}
+## Etapas para usar formulários adaptáveis no design de processo {#steps-to-use-adaptive-forms-in-process-design}
 
 1. Abra o Adobe Experience Manager Forms Workbench.
 
@@ -66,7 +66,7 @@ O HTML Workspace fornece alguns controles adaptáveis específicos ao formulári
    ![Criar novo processo](assets/create_new_process.png)
 
 1. Crie um ponto de Start ou atribua Tarefa e clique duplo nele.
-1. Na seção **[!UICONTROL Apresentação e dados]** , selecione **[!UICONTROL usar um ativo]** CRX e clique nas elipses antes do ativo.
+1. Na seção **[!UICONTROL Apresentação e dados]**, selecione **[!UICONTROL usar um ativo CRX]** e clique nas elipses antes do ativo.
 
    ![Usar um ativo CRX](assets/use_crx_asset.png)
 
@@ -76,7 +76,7 @@ O HTML Workspace fornece alguns controles adaptáveis específicos ao formulári
 
    >[!NOTE]
    >
-   >Para obter detalhes sobre como criar um formulário adaptável, consulte [Criar um formulário](/help/forms/using/creating-adaptive-form.md)adaptável.
+   >Para obter detalhes sobre como criar um formulário adaptável, consulte [Criar um formulário adaptável](/help/forms/using/creating-adaptive-form.md).
    >
-   >Para obter detalhes sobre como criar um processo, consulte [Criação e gerenciamento de processos](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Para obter detalhes sobre como criar um processo, consulte [Criar e gerenciar processos](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
 
