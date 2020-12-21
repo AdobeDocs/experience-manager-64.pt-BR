@@ -476,7 +476,7 @@ Após salvar o vídeo interativo, ele será aberto imediatamente na Pré-visuali
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e, em seguida, toque em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividindo um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
