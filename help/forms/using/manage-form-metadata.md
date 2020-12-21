@@ -31,7 +31,7 @@ Se você for um desenvolvedor ou proprietário de um site, poderá personalizar 
 
 No AEM Forms, a lista das propriedades de metadados associadas a um ativo depende de seu tipo. Além disso, se você adicionar qualquer propriedade de metadados personalizados, ela será adicionada em todos os ativos do tipo em que os metadados personalizados foram adicionados.
 
-### Asset types  {#asset-types-nbsp}
+### Tipos de ativos  {#asset-types-nbsp}
 
 Os seguintes tipos de ativos são suportados no AEM Forms:
 
@@ -42,7 +42,7 @@ Os seguintes tipos de ativos são suportados no AEM Forms:
 * Recursos
 * XFS
 
-### Grande lista de metadados {#extensive-list-of-metadata-nbsp}
+### Ampla lista de metadados {#extensive-list-of-metadata-nbsp}
 
 Veja a seguir uma lista extensa das propriedades de metadados compatíveis com o AEM Forms:
 
@@ -129,7 +129,7 @@ Veja a seguir uma lista extensa das propriedades de metadados compatíveis com o
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>perfil de renderização HTML</td> 
+   <td>PERFIL de renderização HTML</td> 
    <td>Modelo de formulário</td> 
    <td>O perfil de renderização HTML usado ao renderizar um Modelo de formulário no formato HTML.</td> 
   </tr> 
@@ -163,7 +163,7 @@ Veja a seguir uma lista extensa das propriedades de metadados compatíveis com o
    <td><p>Especifica qual modelo de formulário é usado durante a criação do formulário adaptável. Essa propriedade pode ter os seguintes valores:</p> 
     <ul> 
      <li>Modelo de formulário: Um modelo de formulário é selecionado entre os existentes no repositório. Este valor pode ser atualizado.</li> 
-     <li>schema XML: Um arquivo XSD é carregado. Este valor pode ser atualizado.</li> 
+     <li>SCHEMA XML: Um arquivo XSD é carregado. Este valor pode ser atualizado.</li> 
      <li>Nenhum</li> 
     </ul> 
     <div>
@@ -173,7 +173,7 @@ Veja a seguir uma lista extensa das propriedades de metadados compatíveis com o
  </tbody> 
 </table>
 
-## Metadados do formulário de Visualização {#view-form-metadata-nbsp}
+## Metadados de formulário de visualização {#view-form-metadata-nbsp}
 
 Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo somente leitura. Esses metadados são originários no momento do upload ou da criação do formulário.
 
@@ -194,7 +194,7 @@ Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo
 
    A página de propriedades tem uma barra de ferramentas que contém dois ícones de ação:
 
-   * Editar: ![aem6forms_edit](assets/aem6forms_edit.png) Edite os valores de propriedade de metadados
+   * Editar: ![aem6forms_edit](assets/aem6forms_edit.png) Editar os valores de propriedade de metadados
    * Visualização: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navegue até a página de detalhes do formulário, que abre o formulário no modo de pré-visualização.
 
    A parte do conteúdo é dividida em duas partes:
@@ -203,7 +203,7 @@ Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo
    * O painel direito contém propriedades de metadados no modo somente leitura, distribuídas por várias guias.
 
 
-## Adicionar/atualizar valores de metadados do formulário {#add-update-form-metadata-values-nbsp}
+## Adicionar/atualizar valores de metadados de formulário {#add-update-form-metadata-values-nbsp}
 
 Você pode editar o valor das propriedades de metadados existentes ou adicionar novos valores a um campo de propriedade de metadados existente (por exemplo, quando um campo de metadados está em branco).
 
@@ -253,9 +253,9 @@ A AEM Forms expõe os schemas de metadados dos tipos de formulários suportados 
 
 ### Navegar no editor de schemas de metadados  {#navigate-the-metadata-schema-editor-nbsp}
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Schemas]** de metadados.
+1. Navegue até **[!UICONTROL Ferramentas > Ativos > Schemas de metadados]**.
 
-1. Clique em **[!UICONTROL formulários]** dos formulários de schema listados.
+1. Clique em **[!UICONTROL formulários]** nos formulários de schema listados.
 
 1. Na lista que é aberta, clique no tipo de ativo para o qual deseja adicionar metadados personalizados.
 
@@ -263,9 +263,9 @@ A AEM Forms expõe os schemas de metadados dos tipos de formulários suportados 
    >
    >Esses schemas contêm propriedades de metadados que são fornecidas prontamente e não devem ser alteradas/editadas (marcando a caixa de seleção e clicando em editar na barra de ferramentas) para evitar problemas funcionais.
 
-1. Qualquer tipo de ativo clicado abre uma lista que contém a `extendedmetadata` opção. Edite este schema.
+1. Qualquer tipo de ativo clicado abre uma lista que contém a opção `extendedmetadata`. Edite este schema.
 
-1. Marque a caixa de seleção ao lado `extendedmetadata` e clique no ícone de edição ![aem6forms_edit](assets/aem6forms_edit.png) que aparece na barra de ferramentas.
+1. Marque a caixa de seleção ao lado de `extendedmetadata` e clique no ícone de edição ![aem6forms_edit](assets/aem6forms_edit.png) que aparece na barra de ferramentas.
 
 1. A AEM Forms abre o editor de schemas de metadados/construtor de formulários do tipo de ativo selecionado (neste caso, formulário adaptável).
 
@@ -279,14 +279,14 @@ A AEM Forms expõe os schemas de metadados dos tipos de formulários suportados 
 
    1. Você pode adicionar outras guias, clicando no símbolo +.
 
-   1. É possível adicionar um campo personalizado do tipo desejado arrastando o componente de campo da seção **[!UICONTROL Criar formulário]** para a página do schema.
-   1. As especificações desse campo podem ser fornecidas na seção **[!UICONTROL Configurações]** depois de clicar no campo.
+   1. Você pode adicionar um campo personalizado do tipo desejado arrastando o componente de campo da seção **[!UICONTROL Criar formulário]** para a página do schema.
+   1. As especificações para este campo podem ser fornecidas na seção **[!UICONTROL Settings]** depois de clicar no campo.
 
 ### Adicionar propriedade de metadados personalizados no editor de schemas  {#add-custom-metadata-property-in-schema-editor-nbsp}
 
 1. Navegue até a guia (existente ou nova) na qual deseja adicionar a propriedade personalizada.
 
-1. Arraste um componente do tipo desejado da seção **[!UICONTROL Criar formulário]** para o painel esquerdo e posicione-o em um local conveniente.
+1. Arraste um componente do tipo desejado da seção **[!UICONTROL Criar formulário]** para o painel esquerdo e coloque-o em um local conveniente.
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ A AEM Forms expõe os schemas de metadados dos tipos de formulários suportados 
 1. Clique em um componente que você acabou de arrastar. Na guia Configurações que é aberta no painel direito, preencha as informações dos seguintes campos:
 
    1. Especifique um Rótulo de campo que será usado como um nome de exibição acima do campo colocado no schema (por exemplo: Departamento)
-   1. Em Mapear para o campo de propriedade, você pode ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere o &quot;**padrão**&quot; para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório do crx (por exemplo: &quot;./jcr:content/metadata/Department&#39;)
+   1. Em Mapear para o campo de propriedade, você pode ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere ‘**default**’ para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório do crx (por exemplo: &quot;./jcr:content/metadata/Department&#39;)
 
       >[!NOTE]
       >
@@ -306,10 +306,10 @@ A AEM Forms expõe os schemas de metadados dos tipos de formulários suportados 
 
    1. Preencha outras configurações com base no requisito. Por exemplo: selecione a opção Obrigatório se desejar tornar o campo obrigatório.
 
-   1. Para excluir um campo adicionado, selecione-o e clique no ícone Excluir ![exclusão-1](assets/delete-1.png) .
+   1. Para excluir um campo adicionado, selecione-o e clique no ícone excluir ![delete-1](assets/delete-1.png).
 
 1. Se necessário, siga as etapas de 1 a 3 para adicionar outra propriedade.
-1. Clique em **Concluído** após fazer todas as alterações.
+1. Clique em **Concluído** depois de fazer todas as alterações.
 
    Você adicionou com êxito uma propriedade de metadados personalizada.
 
