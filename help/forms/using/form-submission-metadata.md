@@ -34,12 +34,12 @@ Execute as seguintes etapas para adicionar um elemento nos metadados:
 
    Para abrir o formulário no modo de edição, no Gerenciador de formulários, selecione o formulário e toque em **Abrir**.
 
-1. No modo de edição, selecione um componente, toque em nível ![de](assets/field-level.png) campo > Container **de formulário** adaptável e, em seguida, toque em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente, toque em ![field-level](assets/field-level.png) > **Container de formulário adaptável** e, em seguida, toque em ![cmppr](assets/cmppr.png).
 1. Na barra lateral, clique em **Metadados**.
 1. Na seção Metadados, clique em **Adicionar**.
 1. Use o campo Valor da guia Metadados para adicionar scripts. Os scripts adicionados coletam dados de elementos no formulário e calculam valores que são alimentados para os metadados.
 
-   Por exemplo, **true** é registrado nos metadados se a idade inserida for maior que 21 e **false** é registrado se for menor que 21. Digite o seguinte script na guia Metadados:
+   Por exemplo, **true** é registrado nos metadados se a idade digitada for maior que 21, e **false** é registrado se for menor que 21. Digite o seguinte script na guia Metadados:
 
    `(agebox.value >= 21) ? true : false`
 
@@ -56,11 +56,11 @@ No exemplo acima, os metadados são armazenados no repositório CRX. Os metadado
 
 ![entrada de metadados](assets/metadata-entry.png)
 
-Se você adicionar um elemento de caixa de seleção nos metadados, os valores selecionados serão armazenados como uma sequência separada por vírgulas. Por exemplo, você adiciona um componente de caixa de seleção no formulário e especifica seu nome como `checkbox1`. Nas propriedades do componente da caixa de seleção, adicione os itens Licença de condução, Número de Segurança Social e Passaporte para os valores 0, 1 e 2.
+Se você adicionar um elemento de caixa de seleção nos metadados, os valores selecionados serão armazenados como uma sequência separada por vírgulas. Por exemplo, adicione um componente de caixa de seleção no formulário e especifique seu nome como `checkbox1`. Nas propriedades do componente da caixa de seleção, adicione os itens Licença de condução, Número de Segurança Social e Passaporte para os valores 0, 1 e 2.
 
 ![Armazenamento de vários valores de uma caixa de seleção](assets/checkbox-metadata.png)
 
-Você seleciona um container de formulário adaptável e, nas propriedades do formulário, adiciona uma chave de metadados `cb1` que armazena `checkbox1.value`e publica o formulário. Quando um cliente preenche o formulário, o cliente seleciona as opções de Passaporte e Número do Seguro Social no campo da caixa de seleção. Os valores 1 e 2 são armazenados como 1, 2 no campo cb1 dos metadados de envio.
+Você seleciona um container de formulário adaptável e, nas propriedades do formulário, adiciona uma chave de metadados `cb1` que armazena `checkbox1.value` e publica o formulário. Quando um cliente preenche o formulário, o cliente seleciona as opções de Passaporte e Número do Seguro Social no campo da caixa de seleção. Os valores 1 e 2 são armazenados como 1, 2 no campo cb1 dos metadados de envio.
 
 ![Entrada de metadados para vários valores selecionados em um campo de caixa de seleção](assets/metadata-entry-1.png)
 
