@@ -30,9 +30,9 @@ O serviço Convert PDF converte documentos PDF em PostScript ou arquivos de imag
 
 ## Configurar propriedades do serviço   {#properties}
 
-Você pode usar o serviço **** AEMFD ConvertPDF no Console AEM para configurar as propriedades desse serviço. O URL padrão AEM console é `https://[host]:[port]/system/console/configMgr`.
+Você pode usar o **AEMFD ConvertPDF Service** no Console AEM para configurar as propriedades desse serviço. O URL padrão AEM console é `https://[host]:[port]/system/console/configMgr`.
 
-## Uso do serviço {#using-the-service}
+## Usando o serviço {#using-the-service}
 
 O serviço ConvertPDF fornece as duas APIs a seguir:
 
@@ -40,7 +40,7 @@ O serviço ConvertPDF fornece as duas APIs a seguir:
 
 * **[toImage](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Converte um documento PDF em um arquivo de imagem. Os formatos de imagem suportados são JPEG, JPEG2000, PNG e TIFF.
 
-### Usar a API toPS com JSP ou Servlets {#using-tops-api-with-a-jsp-or-servlets}
+### Usar a API toPS com um JSP ou Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
 ```java
 <%@ page import="java.util.List, java.io.File,
@@ -131,7 +131,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Uso do serviço ConvertPDF com workflows AEM {#using-convertpdf-service-with-aem-workflows}
+### Usando o serviço ConvertPDF com workflows AEM {#using-convertpdf-service-with-aem-workflows}
 
 A execução do serviço ConvertPDF a partir de um fluxo de trabalho é semelhante à execução a partir de JSP/Servlet.
 
