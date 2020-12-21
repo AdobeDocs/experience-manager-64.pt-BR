@@ -24,7 +24,7 @@ O serviço de informação do sistema fornece APIs REST para recuperar informaç
 
 1. Faça logon no console de administração. O URL padrão do console de administração é `https://[hostname]:[port]/adminui.`
 1. Navegue até Serviços > Aplicativos e serviços > Gerenciamento de serviços.
-1. Na página Gerenciamento de serviços, clique no serviço **SystemInfo** .
-1. Na lista da guia Pontos de extremidade, selecione REST e clique em **Adicionar**.
+1. Na página Gerenciamento de serviços, clique no serviço **SystemInfo**.
+1. Na lista da guia Pontos finais, selecione REST e clique em **Adicionar**.
 1. Na tela Adicionar ponto de extremidade REST, clique em **Adicionar**.
 
