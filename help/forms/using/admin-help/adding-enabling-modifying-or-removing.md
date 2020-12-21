@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Adicionar, ativar, modificar ou remover pontos de extremidade {#adding-enabling-modifying-or-removing-endpoints}
+# Adicionar, ativar, modificar ou remover pontos finais {#adding-enabling-modifying-or-removing-endpoints}
 
 ## Adicionar um terminal a um serviço {#add-an-endpoint-to-a-service}
 
@@ -70,7 +70,7 @@ Se você estiver enfrentando problemas com os serviços, desative os pontos de e
 
 Você também pode fazer essa tarefa na página Gerenciamento de serviços selecionando um serviço e, em seguida, clicando na guia Pontos de extremidade.
 
-## Remover um terminal {#remove-an-endpoint}
+## Remover um ponto de extremidade {#remove-an-endpoint}
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de ponto de extremidade.
 1. Na página Gerenciamento de ponto de extremidade, marque a caixa de seleção do ponto de extremidade a ser removido e clique em Remover. O terminal não é mais exibido.
