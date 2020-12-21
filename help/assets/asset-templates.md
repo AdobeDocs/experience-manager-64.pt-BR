@@ -75,7 +75,7 @@ Considere um cenário em que você deseja criar materiais de suporte para impres
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-   Como alternativa, feche a caixa de diálogo e navegue até a pasta na página Modelos que você começou para visualização o folheto que criou. O tipo de garantia aparece na sua miniatura na visualização do cartão. Por exemplo, neste caso, Brochure é exibido na miniatura.
+   Como alternativa, feche a caixa de diálogo e navegue até a pasta na página Modelos que você começou para visualização o folheto que você criou. O tipo de garantia aparece na sua miniatura na visualização do cartão. Por exemplo, neste caso, Brochure é exibido na miniatura.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
