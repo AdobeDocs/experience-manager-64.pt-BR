@@ -24,7 +24,7 @@ Criar grupos de usuários permite que você atribua funções ao grupo em vez de
 
 Dois tipos diferentes de grupos estão disponíveis. Você pode criar manualmente um grupo e adicionar usuários e outros grupos a ele. Você também pode criar grupos dinâmicos que incluem automaticamente todos os usuários que atendem a um conjunto de regras especificado.
 
-Os usuários podem experimentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem profundamente aninhados (por exemplo, 30 níveis). Se você estiver enfrentando esse problema, é possível configurar formulários AEM para obter previamente informações de determinados domínios. (Consulte [Configurar formulários AEM para pré-buscar informações](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)de domínio.)
+Os usuários podem experimentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem profundamente aninhados (por exemplo, 30 níveis). Se você estiver enfrentando esse problema, é possível configurar formulários AEM para obter previamente informações de determinados domínios. (Consulte [Configurar formulários AEM para pré-buscar informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
 
 ## Criar um grupo manualmente {#create-a-group-manually}
 
@@ -64,7 +64,7 @@ Em um grupo dinâmico, você não seleciona individualmente os usuários que per
 
 Use uma destas duas maneiras para criar grupos dinâmicos:
 
-* Ative a criação automática de grupos dinâmicos com base em domínios de email, como @adobe.com. Quando você ativa esse recurso, o Gerenciamento de usuários cria um grupo dinâmico para cada domínio de email exclusivo no banco de dados de formulários AEM. Use uma expressão cron para especificar com que frequência o Gerenciamento de usuários pesquisa o banco de dados de formulários AEM para novos domínios de email. Esses grupos dinâmicos são adicionados ao domínio local DefaultDom e são nomeados como &quot;Todos os usuários com um *domínio[de] email *ID de email&quot;.
+* Ative a criação automática de grupos dinâmicos com base em domínios de email, como @adobe.com. Quando você ativa esse recurso, o Gerenciamento de usuários cria um grupo dinâmico para cada domínio de email exclusivo no banco de dados de formulários AEM. Use uma expressão cron para especificar com que frequência o Gerenciamento de usuários pesquisa o banco de dados de formulários AEM para novos domínios de email. Esses grupos dinâmicos são adicionados ao domínio local DefaultDom e são nomeados como &quot;Todos os usuários com um *[domínio de email] *ID de email&quot;.
 * Crie um grupo dinâmico com base em critérios especificados, incluindo o domínio de email do usuário, a descrição, o nome canônico e o nome do domínio. Para pertencer ao grupo dinâmico, um usuário deve atender a todos os critérios especificados. Para configurar uma condição &quot;ou&quot;, crie dois grupos dinâmicos separados e adicione-os a um grupo local. Por exemplo, use essa abordagem para criar um grupo de usuários que pertençam ao domínio de email @adobe.com ou cujo nome canônico contenha ou=adobe.com. No entanto, os utilizadores não têm necessariamente de satisfazer ambas as condições.
 
 Um grupo dinâmico contém apenas usuários. Não pode conter outros grupos. No entanto, um grupo dinâmico pode pertencer a um grupo pai.
@@ -76,7 +76,7 @@ Um grupo dinâmico contém apenas usuários. Não pode conter outros grupos. No 
 1. Especifique quando o Gerenciador de usuários verifica novos domínios de email. Esse tempo deve ser após o tempo de sincronização do domínio, pois a criação de grupos dinâmicos é lógica somente se a sincronização do domínio estiver concluída.
 
    * Para ativar a sincronização automática diariamente, digite o horário no formato de 24 horas na caixa Ocorre diariamente em. Quando você salva suas configurações, esse valor é convertido em uma expressão cron, exibida na caixa abaixo.
-   * Para programar a sincronização em um dia específico da semana ou mês, ou em um mês específico, selecione digite a expressão de cron apropriada na caixa. O valor padrão é `0 00 4 ? * *`(ou seja, verifique em 4 A.M. todos os dias).
+   * Para programar a sincronização em um dia específico da semana ou mês, ou em um mês específico, selecione digite a expressão de cron apropriada na caixa. O valor padrão é `0 00 4 ? * *` (o que significa verificar em 4 A.M. todos os dias).
 
       O uso da expressão cron é baseado no sistema de programação de trabalhos de código aberto do Quartz, versão 1.4.0.
 
@@ -93,13 +93,13 @@ Um grupo dinâmico contém apenas usuários. Não pode conter outros grupos. No 
    >
    >Os atributos Email, Description e Canonical Name fazem distinção entre maiúsculas e minúsculas ao usar o operador Equals. Eles não fazem distinção entre maiúsculas e minúsculas com os operadores Start Com, Termina com ou Contém.
 
-   **Email:** Domínio de email do usuário, como `@adobe.com`.
+   **Email: domínio de email do** usuário, como  `@adobe.com`.
 
-   **Descrição:** Descrição do usuário, como &quot;Cientista da computação&quot;
+   **Descrição:descrição** do usuário, como &quot;Cientista da computação&quot;
 
-   **Nome Canônico:** O nome canônico do usuário, como `ou=adobe.com`
+   **Nome canônico:nome canônico do** usuário, como  `ou=adobe.com`
 
-   **Nome do domínio:** O nome do domínio ao qual o usuário pertence, como `DefaultDom`. O atributo Nome de domínio faz distinção entre maiúsculas e minúsculas ao usar o operador Contém. Não diferencia maiúsculas de minúsculas com os operadores Start Com, Termina com ou Igual.
+   **Nome do domínio:** o nome do domínio ao qual o usuário pertence, como  `DefaultDom`. O atributo Nome de domínio faz distinção entre maiúsculas e minúsculas ao usar o operador Contém. Não diferencia maiúsculas de minúsculas com os operadores Start Com, Termina com ou Igual.
 
 1. Clique em Testar. Uma página de teste exibe os primeiros 200 usuários que atendem aos critérios definidos. Clique em Fechar.
 1. Se o teste retornou os resultados esperados, clique em Avançar. Caso contrário, edite os critérios de grupo dinâmico e teste novamente.
@@ -113,7 +113,7 @@ Um grupo dinâmico contém apenas usuários. Não pode conter outros grupos. No 
 1. Para atribuir funções ao grupo dinâmico, clique em Localizar funções, marque as caixas de seleção de cada função a ser atribuída ao grupo e clique em OK. Os usuários do grupo herdam funções atribuídas no nível do grupo.
 1. Clique em Concluir.
 
-## Detalhes da Visualização sobre um grupo {#view-details-about-a-group}
+## Detalhes da visualização sobre um grupo {#view-details-about-a-group}
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Usuários e grupos.
 1. Na lista In, selecione Grupo e clique em Localizar. Os resultados da pesquisa são listados na parte inferior da página. É possível classificar a lista clicando em qualquer um dos cabeçalhos da coluna.
