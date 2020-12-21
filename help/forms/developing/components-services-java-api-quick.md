@@ -2,7 +2,7 @@
 title: Start Java APIQuick (SOAP) de componentes e serviços
 seo-title: Start Java APIQuick (SOAP) de componentes e serviços
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -42,7 +42,7 @@ As operações do AEM Forms podem ser executadas usando a API fortemente tipada 
 
 >[!NOTE]
 >
->start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms que está sendo implantado em JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>Start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms que está sendo implantado em JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ As operações do AEM Forms podem ser executadas usando a API fortemente tipada 
 
 ## Start rápido (modo SOAP): Implantação de um componente usando a API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-O exemplo Java a seguir implanta um componente que se baseia em um arquivo JAR chamado *adobe-emailSample-dsc.jar*.
+O exemplo de Java a seguir implanta um componente que se baseia em um arquivo JAR chamado *adobe-emailSample-dsc.jar*.
 
 ```as3
  /* 
