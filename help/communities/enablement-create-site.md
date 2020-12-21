@@ -18,44 +18,44 @@ ht-degree: 2%
 ---
 
 
-# Criar um novo site da comunidade para habilitação {#author-a-new-community-site-for-enablement}
+# Crie um novo site da comunidade para a ativação {#author-a-new-community-site-for-enablement}
 
 ## Criar site da comunidade {#create-community-site}
 
-[A criação](sites-console.md) do site da comunidade emprega um assistente que o orienta pelas etapas da criação de um site da comunidade. É possível avançar para a `Next`etapa ou `Back`para a etapa anterior antes de confirmar o site na etapa final.
+[A ](sites-console.md) criação do site da comunidade emprega um assistente que o orienta pelas etapas da criação de um site da comunidade. É possível ir para a etapa `Next`ou `Back`para a etapa anterior antes de confirmar o site na etapa final.
 
 Para começar a criar um novo site da comunidade:
 
-Uso da instância do [autor](http://localhost:4502/)
+Usando a instância [autor](http://localhost:4502/)
 
 * Fazer logon com privilégios de administrador
 * Navegue até **[!UICONTROL Comunidades > Sites]**
 
 * Selecione **[!UICONTROL Criar]**
 
-### Etapa 1: Modelo de site {#step-site-template}
+### Etapa 1: Modelo do site {#step-site-template}
 
 ![enablementsitetemplate](assets/enablementsitetemplate.png)
 
-Na etapa Modelo **de** site, insira um título, descrição, o nome do URL e selecione um modelo de site da comunidade, por exemplo:
+Na etapa **Modelo de site**, insira um título, uma descrição, o nome do URL e selecione um modelo de site da comunidade, por exemplo:
 
 * **Título do site da comunidade**: `Enablement Tutorial`
 
 * **Descrição do site da comunidade**: `A site for enabling the community to learn.`
 
-* **Raiz** do site da comunidade: (deixe em branco para a raiz padrão `/content/sites`)
+* **Raiz** do site da comunidade: (deixe em branco para a raiz padrão  `/content/sites`)
 
 * **Configurações** da nuvem: (deixe em branco se nenhuma configuração de nuvem for especificada) forneça o caminho para as configurações de nuvem especificadas.
-* **Idioma** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas base dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo as práticas recomendadas descritas em [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
+* **Idioma** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um  *ou* mais idiomas base dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá na mesma pasta do site seguindo a melhor prática descrita em [Traduzindo conteúdo para sites multilíngues](../../help/sites-administering/translation.md). A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
 
 * **[!UICONTROL Nome do site da comunidade]**: `enable`
 
    * o URL inicial será exibido abaixo do Nome do site da comunidade
    * para um URL válido, acrescente um código de idioma base + &quot;.html&quot;
 
-      *por exemplo*, http://localhost:4502/content/sites/ `enable/en.html`
+      *por exemplo*, http://localhost:4502/content/sites/  `enable/en.html`
 
-* **[!UICONTROL Modelo]** de site de referência: menu suspenso para escolher `Reference Structured Learning Site Template`
+* **[!UICONTROL Modelo]** de site de referência: menu suspenso para escolher  `Reference Structured Learning Site Template`
 
 Selecione **[!UICONTROL Próximo]**
 
@@ -63,13 +63,13 @@ Selecione **[!UICONTROL Próximo]**
 
 A etapa de design é apresentada em duas seções para selecionar o tema e o banner de marca:
 
-#### COMMUNITY SITE THEME {#community-site-theme}
+#### TEMA DO SITE DA COMUNIDADE {#community-site-theme}
 
 Selecione o estilo desejado a ser aplicado ao modelo. Quando selecionado, o tema será sobreposto com uma marca de seleção.
 
 ![ativlementsitetema](assets/enablementsitetheme.png)
 
-#### COMMUNITY SITE BRANDING {#community-site-branding}
+#### MARCA DO SITE DA COMUNIDADE {#community-site-branding}
 
 (opcional) Faça upload de uma imagem de banner para ser exibida nas páginas do site. O banner é fixado na borda esquerda do navegador, entre o cabeçalho e o menu do site da comunidade (links de navegação). A altura do banner é cortada em 120 pixels. Não há redimensionamento do banner para ajustar à largura do navegador e à altura de 120 pixels.
 
@@ -79,15 +79,15 @@ Selecione **[!UICONTROL Próximo]**.
 
 ### Etapa 3: Configurações {#step-settings}
 
-Na etapa Configurações, antes de selecionar `Next`, observe que há sete seções que fornecem acesso às configurações que envolvem gerenciamento de usuários, marcação, funções, moderação, análise, tradução e ativação.
+Na etapa Configurações, antes de selecionar `Next`, observe que há sete seções fornecendo acesso às configurações que envolvem gerenciamento de usuários, marcação, funções, moderação, análise, tradução e ativação.
 
-#### USER MANAGEMENT {#user-management}
+#### GERENCIAMENTO DE USUÁRIOS {#user-management}
 
-Recomenda-se que as comunidades [de](overview.md#enablement-community) ativação sejam privadas.
+Recomenda-se que [as comunidades de ativação](overview.md#enablement-community) sejam privadas.
 
 Um site da comunidade é privado quando visitantes anônimos do site têm acesso negado, podem não se inscrever e podem não usar o login social.
 
-Verifique se a maioria das caixas de seleção está desmarcada para Gerenciamento [](sites-console.md#user-management)do usuário:
+Verifique se a maioria das caixas de seleção está desmarcada para [Gerenciamento de usuários](sites-console.md#user-management):
 
 * NÃO permitir que os visitantes do site se registrem automaticamente
 * NÃO permitir que visitantes anônimos do site visualizações
@@ -97,11 +97,11 @@ Verifique se a maioria das caixas de seleção está desmarcada para Gerenciamen
 
 ![chlimage_1-285](assets/chlimage_1-285.png)
 
-#### TAGGING {#tagging}
+#### MARCANDO {#tagging}
 
-As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando AEM namespaces previamente definidas por meio do Console [de](../../help/sites-administering/tags.md#tagging-console) marcação (como a namespace [do](enablement-setup.md#create-tutorial-tags)tutorial).
+As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando AEM namespaces previamente definidas por meio do [Console de marcação](../../help/sites-administering/tags.md#tagging-console) (como [namespace do tutorial](enablement-setup.md#create-tutorial-tags)).
 
-Além disso, selecionar Namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos de ativação. Consulte [Marcação de recursos](tag-resources.md) de ativação para obter informações importantes.
+Além disso, selecionar Namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos de ativação. Consulte [Marcando recursos de ativação](tag-resources.md) para obter informações importantes.
 
 Encontrar namespaces é fácil usando a pesquisa antecipada por tipo. Por exemplo,
 
@@ -112,7 +112,7 @@ Encontrar namespaces é fácil usando a pesquisa antecipada por tipo. Por exempl
 
 ### ROLES {#roles}
 
-[As funções](users.md) de membro da comunidade são atribuídas por meio das configurações na seção Funções.
+[As ](users.md) funções dos membros da comunidade são atribuídas pelas configurações na seção Funções.
 
 Para permitir que um membro da comunidade (ou grupo de membros) experimente o site como o gerente da comunidade, use a pesquisa de tipo antecipada e selecione o nome do membro ou grupo nas opções no menu suspenso.
 
@@ -123,13 +123,13 @@ Por exemplo,
 
 >[!NOTE]
 >
->[O serviço](deploy-communities.md#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes apenas no ambiente publish.
+>[O ](deploy-communities.md#tunnel-service-on-author) serviço de túnel permite a seleção de membros e grupos existentes apenas no ambiente publish.
 
 ![community_role](assets/community_roles.png)
 
-#### MODERATION {#moderation}
+#### MODERAÇÃO {#moderation}
 
-Aceite as configurações globais padrão para [moderar](sites-console.md#moderation) o conteúdo gerado pelo usuário (UGC).
+Aceite as configurações globais padrão para [moderar](sites-console.md#moderation) conteúdo gerado pelo usuário (UGC).
 
 ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -137,30 +137,32 @@ Aceite as configurações globais padrão para [moderar](sites-console.md#modera
 
 No menu suspenso, selecione a estrutura de serviço em nuvem do Analytics configurada para este site da comunidade.
 
-A seleção vista na captura de tela `Communities`é o exemplo de estrutura da documentação de [configuração.](analytics.md#aem-analytics-framework-configuration)
+A seleção vista na captura de tela, `Communities`, é o exemplo de estrutura da documentação de configuração [.](analytics.md#aem-analytics-framework-configuration)
 
 ![chlimage_1-288](assets/chlimage_1-288.png)
 
-#### TRANSLATION {#translation}
+#### TRADUÇÃO {#translation}
 
-As configurações [de](sites-console.md#translation) Tradução especificam se o UGC pode ser traduzido ou não e em qual idioma, se houver.
+As [Configurações de tradução](sites-console.md#translation) especificam se o UGC pode ou não ser traduzido e em qual idioma, se assim for.
 
-* Verifique **[!UICONTROL Permitir tradução automática]**
+* Marque **[!UICONTROL Permitir tradução automática]**
 * Usar as configurações padrão
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-#### ENABLEMENT {#enablement}
+#### ATIVAÇÃO {#enablement}
 
 Para uma comunidade de ativação, é necessário identificar um ou mais Gerentes de habilitação da comunidade.
 
-* **[!UICONTROL Gerentes]** de ativação (obrigatório) Membros do 
+* **[!UICONTROL Gerentes]**
+ de ativação (obrigatório) Membros do 
 `Community Enablement Managers` estão disponíveis para serem selecionados para gerenciar este site da comunidade.
 
    * Digite &quot;s&quot;
    * Selecionar `Sirius Nilson`
 
-* **[!UICONTROL ID]** de organização do Marketing Cloud (opcional) A ID de uma conta Adobe Analytics que é necessária ao incluir o [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) no relatórios de ativação.
+* **[!UICONTROL ID]**
+ de organização do Marketing Cloud (opcional) A ID de uma conta Adobe Analytics que é necessária ao incluir a  [Análise do Video Heartbeat ](analytics.md#video-heartbeat-analytics) no relatórios de ativação.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
@@ -190,17 +192,22 @@ Ao selecionar o ícone de elipses (ícone Mais ações), as opções Exportar si
 
 Da esquerda para a direita estão:
 
-* **Abrir site** Selecione o ícone de lápis para abrir o site da comunidade no modo de edição do autor, para adicionar e/ou configurar componentes da página
+* **Abrir o**
+SiteSelecione o ícone de lápis para abrir o site da comunidade no modo de edição do autor, para adicionar e/ou configurar os componentes da página
 
-* **Editar site** Selecione o ícone de propriedades para abrir o site da comunidade para modificação de propriedades, como o título ou para alterar o tema
+* **Editar**
+siteSelecione o ícone de propriedades para abrir o site da comunidade para modificação de propriedades, como o título ou para alterar o tema
 
-* **Publicar site** Selecione o ícone do mundo para publicar o site da comunidade (para localhost:4503 por padrão)
+* **Publicar**
+siteSelecione o ícone do mundo para publicar o site da comunidade (para localhost:4503 por padrão)
 
-* **Exportar site** Selecione o ícone de exportação para criar um pacote do site da comunidade que esteja armazenado no gerenciador [de](../../help/sites-administering/package-manager.md) pacotes e baixado.
+* **Exportar**
+siteSelecione o ícone de exportação para criar um pacote do site da comunidade que esteja armazenado no  [gerenciador de ](../../help/sites-administering/package-manager.md) pacotes e baixado.
 
    Observe que o UGC não está incluído no pacote do site.
 
-* **Excluir site** Para excluir o site da comunidade, selecione o ícone Excluir site que aparece ao passar o mouse sobre o site no Console do site das Comunidades. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
+* **Excluir**
+sitePara excluir o site da comunidade, selecione o ícone Excluir site exibido ao passar o mouse sobre o site no Console do site das Comunidades. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
 
 ![ativesiteactions](assets/enablesiteactions.png)
 
@@ -218,40 +225,40 @@ Haverá uma indicação de que o site foi publicado.
 
 ### Aviso aos novos grupos de usuários da comunidade {#notice-new-community-user-groups}
 
-Juntamente com o novo site da comunidade, novos grupos de usuários são criados, que têm as permissões apropriadas definidas para várias funções administrativas. Para obter detalhes, visite Grupos de [usuários para sites](users.md#usergroupsforcommunitysites)da comunidade.
+Juntamente com o novo site da comunidade, novos grupos de usuários são criados, que têm as permissões apropriadas definidas para várias funções administrativas. Para obter detalhes, visite [Grupos de usuários para sites da comunidade](users.md#usergroupsforcommunitysites).
 
-Para este novo site da comunidade, dado o nome do site &quot;enable&quot; na Etapa 1, os novos grupos de usuários existentes no ambiente de publicação podem ser vistos no console [Membros e grupos da](members.md#groups-console)comunidade:
+Para este novo site da comunidade, dado o nome do site &quot;enable&quot; na Etapa 1, os novos grupos de usuários que existem no ambiente de publicação podem ser vistos no [console Membros e grupos das Comunidades](members.md#groups-console):
 
 ![chlimage_1-294](assets/chlimage_1-294.png)
 
 ### Atribuir membros ao grupo Habilitar membros da comunidade {#assign-members-to-community-enable-members-group}
 
-Em autor, com o serviço de túnel ativado, é possível atribuir os [usuários criados durante a Configuração](enablement-setup.md#publishcreateenablementmembers) Inicial ao grupo Membros da Comunidade para o site da comunidade recém-criado.
+Em autor, com o serviço de túnel ativado, é possível atribuir [usuários criados durante a Configuração Inicial](enablement-setup.md#publishcreateenablementmembers) ao grupo Membros da Comunidade para o site da comunidade recém-criado.
 
 Usando o console Grupos da comunidade, os membros podem ser adicionados individualmente ou adicionados por meio da associação em um grupo.
 
-Neste exemplo, o grupo `Community Ski Class` é adicionado como membro do grupo `Community Enable Members` e como membro `Quinn Harper`.
+Neste exemplo, o grupo `Community Ski Class` é adicionado como membro do grupo `Community Enable Members`, bem como membro `Quinn Harper`.
 
 * Navegue até o console **[!UICONTROL Comunidades > Grupos]**
-* Selecionar grupo de membros **[!UICONTROL da]** comunidade habilitados
+* Selecione o grupo **[!UICONTROL Membros habilitados da comunidade]**
 * Digite `ski` na caixa de pesquisa **[!UICONTROL Adicionar membros ao grupo]**
-* Selecionar classe **[!UICONTROL de esqui da]** comunidade (grupo de alunos)
+* Selecione **[!UICONTROL Classe de Esqui da Comunidade]** (grupo de alunos)
 * Digite `quinn` na caixa de pesquisa
-* Selecione **[!UICONTROL Quinn Harper]** (contato de recursos de ativação)
+* Selecione **[!UICONTROL Quinn Harper]** (ativação do contato de recursos)
 
 * Selecione **[!UICONTROL Salvar]**
 
 ![chlimage_1-295](assets/chlimage_1-295.png)
 
-## Configurações na publicação {#configurations-on-publish}
+## Configurações em Publicar {#configurations-on-publish}
 
 ### http://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}
 
 ![chlimage_1-296](assets/chlimage_1-296.png)
 
-### Erro ao configurar para autenticação {#configure-for-authentication-error}
+### Configurar para erro de autenticação {#configure-for-authentication-error}
 
-Depois que um site é configurado e enviado para publicação, [configure o mapeamento](sites-console.md#configure-for-authentication-error) de logon ( `Adobe Granite Login Selector Authentication Handler`) na instância de publicação. O benefício é que quando as credenciais de logon não forem inseridas corretamente, o erro de autenticação exibirá novamente a página de logon do site da comunidade com uma mensagem de erro.
+Depois que um site é configurado e enviado para publicação, [configure o mapeamento de logon](sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) na instância de publicação. O benefício é que quando as credenciais de logon não forem inseridas corretamente, o erro de autenticação exibirá novamente a página de logon do site da comunidade com uma mensagem de erro.
 
 Adicionar um `Login Page Mapping` como
 
@@ -261,7 +268,7 @@ Adicionar um `Login Page Mapping` como
 
 Ao trabalhar com o site de publicação para fins de demonstração, pode ser útil alterar o home page padrão para o novo site.
 
-Para fazer isso, é necessário usar o [CRX|DE](http://localhost:4503/crx/de) Lite para editar a tabela de mapeamento [de](../../help/sites-deploying/resource-mapping.md) recursos na publicação.
+Para fazer isso, é necessário usar [CRX|DE](http://localhost:4503/crx/de) Lite para editar a tabela [mapeamento de recursos](../../help/sites-deploying/resource-mapping.md) na publicação.
 
 Para começar
 
@@ -270,29 +277,29 @@ Para começar
    * Por exemplo, navegue até [http://localhost:4503/crx/de](http://localhost:4503/crx/de) e faça logon com `admin/admin`
 
 1. No navegador do projeto, expanda `/etc/map`
-1. Selecione o `http` nó
+1. Selecione o nó `http`
 
-   * Selecionar nó **[!UICONTROL Criar]**
+   * Selecione **[!UICONTROL Criar Nó]**
 
-      * **Nome** localhost.4503
+      * **** Namelocalhost.4503
 
-         ( *Não* utilizar `:`)
+         (Não *utilize* `:`)
 
-      * **Tipo** [sling:Mapeamento](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **** [Digitação:Mapeamento](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. Com o `localhost.4503` nó recém-criado selecionado
+1. Com o nó `localhost.4503` recém-criado selecionado
 
    * Adicionar propriedade
 
-      * **Seleção de nome** :correspondência
-      * **String de tipo**
-      * **Valor** localhost.4503/\$
+      * **** Nomeação:correspondência
+      * **** TypeString
+      * **** Valuelocalhost.4503/\$
 
          (Deve terminar com o caractere &#39;$&#39;)
    * Adicionar propriedade
 
-      * **Nomear** sling:internalRedirect
-      * **String de tipo**
+      * **** Nomeação:internalRedirect
+      * **** TypeString
       * **Valor** /content/sites/enable/en.html
 
 
@@ -304,31 +311,31 @@ Para começar
 
 >[!NOTE]
 >
->Para desativar, basta anexar o valor da `sling:match` propriedade a um &quot;x&quot; - `xlocalhost.4503/$` - e **[!UICONTROL Salvar tudo]**.
+>Para desativar, basta anexar o valor da propriedade `sling:match` a um valor &#39;x&#39; - `xlocalhost.4503/$` - e **[!UICONTROL Salvar tudo]**.
 
 ![chlimage_1-297](assets/chlimage_1-297.png)
 
 #### Solução de problemas: Erro ao salvar mapa {#troubleshooting-error-saving-map}
 
-Se não for possível salvar as alterações, verifique se o nome do nó é `localhost.4503`, com um separador &quot;ponto&quot; e não `localhost:4503` com um separador &quot;dois pontos&quot;, pois não `localhost`é um prefixo de namespace válido.
+Se não for possível salvar as alterações, verifique se o nome do nó é `localhost.4503`, com um separador &#39;dot&#39; e não `localhost:4503` com um separador &#39;colon&#39;, pois `localhost`não é um prefixo de namespace válido.
 
 ![chlimage_1-298](assets/chlimage_1-298.png)
 
 #### Solução de problemas: Falha ao redirecionar {#troubleshooting-fail-to-redirect}
 
-O valor &#39;**$**&#39; no final da `sling:match`string de expressão regular é crucial, de modo que apenas `http://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Dessa forma, quando AEM tentar redirecionar para a página de logon, isso falhará.
+A string &#39;**$**&#39; no final da expressão regular `sling:match`é crucial, de modo que apenas `http://localhost:4503/` seja mapeado, caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Dessa forma, quando AEM tentar redirecionar para a página de logon, isso falhará.
 
-## Modificando o site da comunidade {#modifying-the-community-site}
+## Modificando o Site da Comunidade {#modifying-the-community-site}
 
-Após a criação inicial do site, os autores podem usar o ícone [](sites-console.md#authoring-site-content) Abrir site para executar atividades de criação padrão AEM.
+Após a criação inicial do site, os autores podem usar o [ícone Abrir site](sites-console.md#authoring-site-content) para executar atividades de criação padrão AEM.
 
-Além disso, os administradores podem usar o ícone [](sites-console.md#modifying-site-properties) Editar site para modificar as propriedades do site, como o título.
+Além disso, os administradores podem usar o [ícone Editar site](sites-console.md#modifying-site-properties) para modificar as propriedades do site, como o título.
 
-Após qualquer modificação, lembre-se de **Salvar** e **publicar** o site novamente.
+Depois de qualquer modificação, lembre-se de **Salvar** e recrie **Publicar** o site.
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md) e um [guia rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ### Adicionar um catálogo {#add-a-catalog}
 
@@ -338,7 +345,7 @@ Caso contrário, a função de catálogo pode ser facilmente adicionada. Isso pe
 
 Se a estrutura do site já contiver o recurso de catálogo, seu Título poderá ser alterado.
 
-Para modificar a estrutura do site, navegue até **[!UICONTROL Comunidades, console Sites]** , abra a `enable` pasta e selecione o ícone **Editar site** para acessar as propriedades do `Enablement Tutorial`.
+Para modificar a estrutura do site, navegue até o console **[!UICONTROL Communities, Sites]**, abra a pasta `enable` e selecione o ícone **Editar site** para acessar as propriedades de `Enablement Tutorial`.
 
 Selecione o painel ESTRUTURA para adicionar um catálogo ou modificar um catálogo existente:
 
@@ -357,4 +364,4 @@ Use o ícone Posição para mover a função Catálogo para a segunda posição,
 
 Selecione **[!UICONTROL Salvar]** no canto superior direito para salvar as alterações no site da comunidade.
 
-Em seguida,**publique** o site novamente.
+Em seguida, recrie o site **Publish**.
