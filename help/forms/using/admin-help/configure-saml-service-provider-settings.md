@@ -29,7 +29,7 @@ Para obter uma explicação do SAML, consulte [Security Assertion Markup Languag
 1. Na caixa URL da Base de Provedores de serviço, digite o URL básico para o servidor de formulários (por exemplo, `https://AEMformsserver:8080`).
 1. (Opcional) Para permitir que formulários AEM enviem solicitações de autenticação assinadas ao IDP, execute as seguintes tarefas:
 
-   * Use o Gerenciador de confiança para importar uma credencial no formato PKCS #12 com a Credencial de assinatura de Documento selecionada como o Tipo de armazenamento de confiança. (Consulte [Gerenciamento de credenciais](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials)locais.)
+   * Use o Gerenciador de confiança para importar uma credencial no formato PKCS #12 com a Credencial de assinatura de Documento selecionada como o Tipo de armazenamento de confiança. (Consulte [Gerenciar credenciais locais](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * Na lista Alias da Chave de Credencial do Provedor de serviço, selecione o alias atribuído à credencial no Armazenamento de Confiança.
    * Clique em Exportar para salvar o conteúdo do URL em um arquivo e depois importe esse arquivo para seu IDP.
 
