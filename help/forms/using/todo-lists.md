@@ -18,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# Trabalhar com listas de tarefas {#working-with-to-do-lists}
+# Trabalhar com listas de tarefas pendentes {#working-with-to-do-lists}
 
 Ao visualização de suas listas de tarefas pendentes, você poderá ver tarefas de um processo de negócios atribuído a você, a quaisquer grupos aos quais você pertença ou que sejam tarefas compartilhadas de outros usuários. Você pode abrir, trabalhar e concluir as tarefas conforme necessário, como aprovar ou rejeitar uma solicitação ou adicionar mais informações. Depois que você concluir uma tarefa, ela será enviada para a próxima pessoa no processo comercial,
 
-## Sobre listas a fazer {#about-todo-lists}
+## Sobre listas de tarefas pendentes {#about-todo-lists}
 
 A área de trabalho do AEM Forms tem os três tipos de listas a serem feitas:
 
-* listas individuais, que contêm tarefas atribuídas diretamente a você.
-* listas de grupo, que contêm tarefas atribuídas a um grupo. Qualquer membro do grupo pode abrir e concluir as tarefas. Para abrir uma tarefa, um membro de um grupo deve reivindicar a tarefa primeiro.
-* listas compartilhadas, que contêm tarefas atribuídas a um usuário que compartilhou sua lista de tarefas com você e possivelmente com outros usuários. Qualquer um dos usuários que compartilham uma lista pode reivindicar, abrir e concluir tarefas compartilhadas.
+* Listas individuais, que contêm tarefas atribuídas diretamente a você.
+* Listas de grupo, que contêm tarefas atribuídas a um grupo. Qualquer membro do grupo pode abrir e concluir as tarefas. Para abrir uma tarefa, um membro de um grupo deve reivindicar a tarefa primeiro.
+* Listas compartilhadas, que contêm tarefas atribuídas a um usuário que compartilhou sua lista de tarefas com você e possivelmente com outros usuários. Qualquer um dos usuários que compartilham uma lista pode reivindicar, abrir e concluir tarefas compartilhadas.
 
 É possível realizar algumas ações sem abrir a tarefa clicando nos ícones que aparecem quando você passa o ponteiro do mouse sobre uma tarefa.
 
@@ -36,9 +36,9 @@ A área de trabalho do AEM Forms tem os três tipos de listas a serem feitas:
 >
 >Um ícone de exclamação indica que a tarefa tem prioridade alta.
 
-## tarefas típicas {#typical-tasks}
+## Tarefas típicas {#typical-tasks}
 
-Ao abrir e trabalhar em uma tarefa, as ferramentas disponíveis dependem da tarefa. tarefas diferentes exigem ações diferentes e, por isso, algumas ferramentas podem ou não estar disponíveis para você. As tarefas típicas que você pode receber são descritas abaixo.
+Ao abrir e trabalhar em uma tarefa, as ferramentas disponíveis dependem da tarefa. Tarefas diferentes exigem ações diferentes e, por isso, algumas ferramentas podem ou não estar disponíveis para você. As tarefas típicas que você pode receber são descritas abaixo.
 
 **Fornecer informações**: Você recebe uma tarefa que exige o preenchimento e o envio de um formulário.
 
@@ -60,7 +60,7 @@ As ferramentas adicionais que podem estar disponíveis com qualquer uma das tare
 * Notas
 * Anexos
 
-## Abrindo tarefas {#opening-tasks}
+## Abrindo tarefa {#opening-tasks}
 
 Você pode abrir e bloquear tarefas de sua lista de Tarefas Pendentes ou solicitação e abrir tarefas de um grupo ou de uma lista de Tarefas Pendentes compartilhada. Quando você abre uma tarefa, ela é exibida no painel principal. As outras tarefas são exibidas na lista da tarefa ao lado da lista de tarefas.
 
@@ -70,7 +70,7 @@ Se existir um URL de resumo de Tarefa, a visualização de resumo de Tarefa ser�
 >
 >Quando uma tarefa é aberta, dependendo dos padrões da tarefa, o formulário associado pode ser exibido em visualização total.
 
-### Abra e trave uma tarefa da lista {#open-and-lock-a-task-from-your-list}
+### Abra e bloqueie uma tarefa de sua lista {#open-and-lock-a-task-from-your-list}
 
 Ao abrir uma tarefa da lista de Tarefas Pendentes, se a lista for compartilhada, você poderá bloquear a tarefa para impedir que outro usuário que tenha acesso à lista trabalhe na tarefa.
 
@@ -99,14 +99,14 @@ Quando você abre e reclama uma tarefa de um grupo ou lista compartilhada, a tar
 1. Na página de Tarefas Pendentes, no painel esquerdo, selecione um grupo ou uma lista de Tarefas Pendentes compartilhada. Todas as tarefas são exibidas no painel do meio.
 1. Execute uma destas etapas:
 
-   * Para reivindicar uma tarefa, sem abri-la, a partir de um grupo ou de uma lista compartilhada, clique em **Reivindicação** passando o ponteiro do mouse sobre a tarefa. Como alternativa, quando a tarefa estiver aberta, o botão Reivindicação estará disponível na barra de ação abaixo do painel tarefa. Ao solicitar a solicitação, uma tarefa é movida do grupo ou da lista compartilhada para a sua lista.
-   * Para reivindicar e abrir uma tarefa de um grupo ou de uma lista compartilhada para fazer, clique em **Reivindicação e abra**.
+   * Para reivindicar uma tarefa, sem abri-la, a partir de um grupo ou de uma lista de Ações a Fazer compartilhada, clique em **Reivindicação** passando o ponteiro do mouse sobre a tarefa. Como alternativa, quando a tarefa estiver aberta, o botão Reivindicação estará disponível na barra de ação abaixo do painel tarefa. Ao solicitar a solicitação, uma tarefa é movida do grupo ou da lista compartilhada para a sua lista.
+   * Para reivindicar e abrir uma tarefa de um grupo ou de uma lista de Ações a Fazer compartilhada, clique em **Reivindicação e abra**.
 
-## Working with tasks {#working-with-tasks}
+## Trabalhar com o tarefa {#working-with-tasks}
 
 Depois de abrir uma tarefa, as guias exibidas no painel principal e as ferramentas disponíveis dependem da tarefa. As guias que podem ser vistas estão descritas abaixo:
 
-**Resumo** da Tarefa: Quando uma tarefa é aberta, o painel Resumo da Tarefa permite que você mostre informações sobre a tarefa, se ela existir, usando um URL especificado no processo na etapa Atribuir Tarefa. Usando o Painel Resumo da Tarefa, informações adicionais e relevantes para uma tarefa podem ser exibidas para agregar mais valor ao usuário final da área de trabalho do AEM Forms. Essa guia não estará disponível se o URL de resumo da Tarefa não existir.
+**Resumo** da tarefa: Quando uma tarefa é aberta, o painel Resumo da Tarefa permite que você mostre informações sobre a tarefa, se ela existir, usando um URL especificado no processo na etapa Atribuir Tarefa. Usando o Painel Resumo da Tarefa, informações adicionais e relevantes para uma tarefa podem ser exibidas para agregar mais valor ao usuário final da área de trabalho do AEM Forms. Essa guia não estará disponível se o URL de resumo da Tarefa não existir.
 
 **Detalhes**: Fornece algumas informações sobre a tarefa atual e o processo ao qual ela pertence.
 
@@ -144,7 +144,7 @@ Você pode encaminhar uma tarefa junto com quaisquer observações ou anexos par
 
 ### Retornar uma tarefa {#return-a-task}
 
-1. Em qualquer guia, clique em **Retornar**. A tarefa é retornada à lista de tarefas do usuário que anteriormente encaminhou a tarefa para você, compartilhou ou consultou a tarefa com você.
+1. Em qualquer guia, clique em **Return**. A tarefa é retornada à lista de tarefas do usuário que anteriormente encaminhou a tarefa para você, compartilhou ou consultou a tarefa com você.
 
 ### Tirar uma tarefa offline {#take-a-task-offline}
 
@@ -159,8 +159,8 @@ Você pode ter permissão para adicionar, atualizar, excluir ou salvar quaisquer
 
 **Adicionar um anexo**
 
-1. Na guia **Anexos** , clique em **Procurar** para selecionar o arquivo a ser anexado.
-1. Selecione o nível de **Permissões** para o anexo para outros usuários que participam do processo. Se você selecionar **Ler**, outros usuários poderão salvar o arquivo localmente. Se você selecionar uma das permissões de edição, outros usuários também poderão carregar um novo arquivo para substituir seu anexo.
+1. Na guia **Anexos**, clique em **Procurar** para selecionar o ficheiro a anexar.
+1. Selecione o nível **Permissões** para o anexo para outros usuários que participam do processo. Se você selecionar **Ler**, outros usuários poderão salvar o arquivo localmente. Se você selecionar uma das permissões de edição, outros usuários também poderão carregar um novo arquivo para substituir seu anexo.
 
    >[!NOTE]
    >
@@ -170,7 +170,7 @@ Você pode ter permissão para adicionar, atualizar, excluir ou salvar quaisquer
 
 **Visualização de um anexo**
 
-1. Na guia **Anexos** , clique no nome de arquivo do anexo à visualização.
+1. Na guia **Anexos**, clique no nome de arquivo do anexo à visualização.
 
 **Salvar um anexo localmente**
 
@@ -196,7 +196,7 @@ Você pode ter permissão para adicionar, atualizar, excluir ou salvar quaisquer
    >
    >Você pode configurar o espaço de trabalho para salvar automaticamente periodicamente as informações inseridas por um usuário como rascunho. Se o salvamento automático estiver ativado e um usuário estiver trabalhando em um rascunho, o rascunho será salvo periodicamente. Em caso de salvamento automático, o nome padrão da tarefa é automaticamente obtido.
    >
-   >Para obter mais informações, consulte Salvar rascunho periodicamente em [Gerenciamento de preferências](/help/forms/using/getting-started-livecycle-html-workspace.md).
+   >Para obter mais informações, consulte Salvar rascunho periodicamente em [Gerenciando preferências](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 1. Na caixa de diálogo Salvar como rascunho, especifique um nome exclusivo para a tarefa e toque em **OK**.
 
@@ -216,7 +216,7 @@ Você pode concluir uma tarefa de várias maneiras:
 * Uso das ações criadas no próprio formulário
 * Da sua lista de tarefas pendentes, sem abrir a tarefa
 
-   Observação: Essa opção estará disponível se `isMustOpenToComplete` o campo não estiver selecionado na `Assign Task` etapa do Workbench, durante a criação de um processo.
+   Observação: Essa opção estará disponível se o campo `isMustOpenToComplete` não estiver selecionado na etapa `Assign Task` no Workbench, durante a criação de um processo.
 
 * Por email, se você receber notificações por email
 
@@ -238,14 +238,14 @@ Ao concluir uma tarefa, dependendo da tarefa, uma caixa de diálogo de confirma�
 
 1. Se uma caixa de diálogo Confirmação for exibida, execute uma destas ações:
 
-   * Clique em **OK** se tiver concluído a tarefa e estiver pronto para fazer logoff nela.
+   * Clique em **OK** se você concluiu a tarefa e estiver pronto para fazer logoff nela.
    * Clique em **Cancelar** se desejar retornar à tarefa e não estiver pronto para fazer logoff nela.
 
 >[!NOTE]
 >
 >É possível ver um botão Enviar dentro de formulários HTML quando Propriedades do processo são usadas em um formulário. Esse botão não fica visível quando o mesmo formulário é renderizado como PDF. Para concluir uma tarefa, clique no botão Enviar, disponível na parte inferior da área de trabalho do AEM Forms, fora do formulário e não no botão Enviar, dentro do formulário.
 
-### tarefas de aprovação em massa {#bulk-approve-tasks}
+### Tarefas aprovadas em massa {#bulk-approve-tasks}
 
 Você pode enviar várias tarefas da sua lista de Tarefas. Somente tarefas do mesmo processo, com os mesmos nomes de tarefa e as mesmas opções de rota podem ser enviadas juntas.
 
@@ -254,7 +254,7 @@ Você pode enviar várias tarefas da sua lista de Tarefas. Somente tarefas do me
 >Essa opção estará disponível se o campo isMustOpenToComplete não estiver selecionado na etapa Atribuir Tarefa no Workbench, durante a criação de um processo.
 
 1. Na página Tarefas pendentes, no painel esquerdo, selecione sua lista de Tarefas Pendentes individual. Todas as suas tarefas são exibidas no painel do meio.
-1. Selecione **Ativar modo** em massa. As caixas de seleção são exibidas na frente das tarefas na lista.
+1. Selecione **Ativar modo em massa**. As caixas de seleção são exibidas na frente das tarefas na lista.
 
    >[!NOTE]
    >
@@ -278,7 +278,7 @@ As mensagens de email podem conter um link que abre a tarefa na área de trabalh
 
 >[!NOTE]
 >
->Para configurar o espaço de trabalho para usar os modelos de e-mail apropriados, consulte o Guia [do Administrador do](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms JEE.
+>Para configurar o espaço de trabalho para usar os modelos de e-mail apropriados, consulte o [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 Quando você conclui uma tarefa por email, a tarefa é removida de sua lista de tarefas na área de trabalho do AEM Forms.
 
@@ -293,22 +293,22 @@ Quando você conclui uma tarefa por email, a tarefa é removida de sua lista de 
 ### Receber mensagens de notificação por e-mail {#receive-email-notification-messages}
 
 1. Clique em **Preferências**.
-1. Em **Notificar Eventos de Tarefa por lista de email** , selecione **Sim**.
-1. Para incluir o formulário e os dados com a mensagem de email, em **Anexar Forms na lista de email** , selecione **Sim**.
+1. Na lista **Notificar Eventos de Tarefa por email**, selecione **Yes**.
+1. Para incluir o formulário e os dados com a mensagem de email, na lista **Anexar Forms no Email**, selecione **Yes**.
 
-## Participação no tarefa através de dispositivos móveis {#participating-in-tasks-through-mobile-devices}
+## Participação no tarefa por meio de dispositivos móveis {#participating-in-tasks-through-mobile-devices}
 
 Você pode usar o aplicativo de área de trabalho AEM Forms para participar do tarefa a partir do seu dispositivo móvel. Antes de instalar o aplicativo, verifique com o administrador do sistema se a organização oferece suporte ao uso do aplicativo da área de trabalho AEM Forms.
 
 ## Sobre prazos e lembretes {#about-deadlines-and-reminders}
 
-Um *prazo* determina a data e a hora em que você deve concluir uma tarefa. Quando um prazo expira, o servidor encaminha a tarefa para a próxima etapa do processo (que pode ser a lista de tarefas de outro usuário) e, em seguida, o ícone de prazo aparece na tarefa. O ícone de prazo aparece independentemente das regras associadas ao processo.
+Um *prazo* determina a data e a hora em que deve concluir uma tarefa. Quando um prazo expira, o servidor encaminha a tarefa para a próxima etapa do processo (que pode ser a lista de tarefas de outro usuário) e, em seguida, o ícone de prazo aparece na tarefa. O ícone de prazo aparece independentemente das regras associadas ao processo.
 
 Um *lembrete* notifica você sobre uma tarefa que requer sua atenção. Os lembretes ocorrem em um horário predeterminado e em intervalos regulares até que você conclua a tarefa associada. Quando você recebe um lembrete, o ícone do lembrete aparece na tarefa.
 
 O processo de negócios determina o comportamento e o momento dos prazos e lembretes. Nem todos os processos têm prazos e lembretes. O administrador especifica se notificações por email são enviadas para prazos e lembretes. Você pode definir suas preferências para receber ou não notificações por email.
 
-## Trabalhar com tarefas de filas de grupo e compartilhadas {#working-with-tasks-from-group-and-shared-queues}
+## Trabalhar com tarefas de filas compartilhadas e de grupo {#working-with-tasks-from-group-and-shared-queues}
 
 Todas as tarefas atribuídas a você aparecem na lista de tarefas (fila).
 
@@ -338,7 +338,7 @@ Lembre-se de que para que um usuário veja uma tarefa em uma fila compartilhada,
 
 **Compartilhar sua fila**
 
-1. Na guia **Filas** na guia **Preferências** , clique no ícone &#39;+&#39; para &#39;Usuários que estão compartilhando minha fila no momento&#39;.
+1. Na guia **Filas** na guia **Preferências**, clique no ícone &#39;+&#39; para &#39;Usuários que estão compartilhando minha fila&#39;.
 1. Pesquise e selecione o nome do usuário.
 1. Clique no botão **Compartilhar** para compartilhar sua Fila com o usuário selecionado.
 1. Selecione o nome do usuário e clique em **Compartilhar**.
@@ -357,15 +357,15 @@ Se você receber acesso à lista de tarefas de outro usuário, não será possí
 
 **Acessar outra fila**
 
-1. Na guia **Preferências** , abra a guia **Filas** .
+1. Na guia **Preferências**, abra a guia **Filas**.
 1. Clique em &#39;+&#39; para as &#39;filas de usuário às quais tenho acesso&#39;. Procure o nome do usuário na caixa de diálogo pop-up.
 1. Selecione o nome do usuário e clique em **Solicitar**.
 
    >[!NOTE]
    >
-   >Você pode remover seu acesso a outra lista de Tarefas Pendentes selecionando o nome de usuário nas Filas de usuários que eu tenho acesso à lista e clicando em **X** no final da linha que menciona o nome do usuário. Não é possível remover seu acesso a outra lista de tarefas quando a solicitação para acessar a lista de tarefas ainda está pendente.
+   >Você pode remover seu acesso a outra lista de tarefa selecionando o nome de usuário nas Filas de usuários que tenho acesso à lista e clicando em **X** no final da linha que menciona o nome do usuário. Não é possível remover seu acesso a outra lista de tarefas quando a solicitação para acessar a lista de tarefas ainda está pendente.
 
-## Definição de preferências externas {#setting-out-of-office-preferences}
+## Definição de preferências fora do escritório {#setting-out-of-office-preferences}
 
 Se você planeja estar fora do escritório, você pode especificar o que acontece com as tarefas que lhe são atribuídas para esse período.
 
@@ -379,18 +379,18 @@ Você pode definir uma pessoa padrão para a qual todas as tarefas são enviadas
 
 ### Definir preferências fora do escritório {#set-out-of-office-preferences}
 
-1. Clique em **Preferências** e em **Fora do escritório**.
+1. Clique em **Preferências** e clique em **Fora do Escritório**.
 1. Para especificar quando você está fora do escritório, execute uma destas etapas:
 
-   * Para especificar que você está fora do escritório agora por um período de tempo indefinido, na caixa **Eu estou** lista, selecione **Fora do escritório** , mas não adicione um intervalo de datas.
-   * Para especificar uma data e hora de start fora do escritório e clique em &#39;+&#39; para Agendamento **** Fora do Escritório. Use o calendário e a lista de hora para especificar a data e a hora do start. Se você não especificar uma data e hora de término, você será considerado fora do escritório indefinidamente a partir da data e hora do start até que suas preferências sejam alteradas.
+   * Para especificar que você está fora do escritório agora por um período de tempo indefinido, na lista **Estou atualmente**, selecione **Fora do Office**, mas não adicione um intervalo de datas.
+   * Para especificar uma data e hora de start fora do escritório e clique em &#39;+&#39; para **Esquema Fora do Escritório**. Use o calendário e a lista de hora para especificar a data e a hora do start. Se você não especificar uma data e hora de término, você será considerado fora do escritório indefinidamente a partir da data e hora do start até que suas preferências sejam alteradas.
 
-1. Para especificar como suas tarefas devem ser tratadas por padrão, selecione uma destas opções na opção **Quando estiver fora do escritório: Usuário padrão para lista de tarefas** não Office:
+1. Para especificar como suas tarefas devem ser tratadas por padrão, selecione uma destas opções em **Quando estiver fora do escritório: Usuário padrão para lista fora do Office tarefa**:
 
-   * Selecione **Não atribuir** para manter tarefas na lista de Tarefas Pendentes até que você retorne.
-   * Selecione **Localizar usuário** para procurar um usuário ao qual atribuir suas tarefas. Ao selecionar um usuário, você também pode visualização seu horário de encerramento.
+   * Selecione **Não atribua** para manter as tarefas na lista de Tarefas Pendentes até que volte.
+   * Selecione **Localizar usuário** para procurar um usuário para atribuir suas tarefas. Ao selecionar um usuário, você também pode visualização seu horário de encerramento.
 
-1. Para definir exceções como padrão, clique em + para Exceções **de** Processo, selecione o processo para o qual deseja criar uma exceção e selecione um usuário diferente ou **Não atribua** do **está atribuído** à lista.
+1. Para definir exceções para o padrão, clique em + para **Exceções de Processo**, selecione o processo para o qual deseja criar uma exceção e selecione um usuário diferente ou **Não atribua** da lista **atribuída à**.
 
    >[!NOTE]
    >
