@@ -30,12 +30,12 @@ No AEM Forms, você pode usar o serviço SendToPrinter para enviar um documento 
    Ao enviar um documento para uma impressora, especifique um destes protocolos de impressão:
 
    * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: O serviço de Saída suporta o protocolo de impressão CIFS (Common Internet File System).
 
-## Usando o serviço SendToPrinter {#using-sendtoprinter-service}
+## Usando o Serviço SendToPrinter {#using-sendtoprinter-service}
 
 A tabela abaixo listas:
 
@@ -68,7 +68,7 @@ A autenticação é suportada apenas para impressão CIFS. Para autenticar, forn
 
 1. Vá para https://&lt;servidor>:&lt;porta>/sistema/console.
 
-1. Vá para **[!UICONTROL Principal]** > Suporte **[!UICONTROL a criptografia]**.
+1. Vá para **[!UICONTROL Principal]** > **[!UICONTROL Suporte de criptografia]**.
 
 1. Digite um texto simples e clique em **[!UICONTROL Protect]**.
 
