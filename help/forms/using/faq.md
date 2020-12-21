@@ -26,7 +26,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que os códigos de barras e o campo de assinatura não aparecem no meu formulário?
 
-   Resposta: Os campos de códigos de barras e assinaturas não são relevantes em cenários HTML ou móveis. Esses campos aparecem como uma área não interativa. Entretanto, o AEM Forms Designer fornece um novo campo de assinatura que pode ser usado em vez do campo de assinatura. Também é possível adicionar um widget [](/help/forms/using/custom-widgets.md) personalizado para códigos de barras e integrá-lo.
+   Resposta: Os campos de códigos de barras e assinaturas não são relevantes em cenários HTML ou móveis. Esses campos aparecem como uma área não interativa. Entretanto, o AEM Forms Designer fornece um novo campo de assinatura que pode ser usado em vez do campo de assinatura. Também é possível adicionar um [widget personalizado](/help/forms/using/custom-widgets.md) para códigos de barras e integrá-lo.
 
 1. O Rich Text é compatível com o Campo de texto XFA?
 
@@ -90,7 +90,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que alguns textos estão truncados ou são exibidos incorretamente em HTML5?
 
-   Resposta: Quando um elemento de texto Desenhar ou Legenda não tiver recebido espaço suficiente para exibir o conteúdo, o texto aparecerá truncado na execução do formulário móvel. Esse truncamento também é visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legenda de texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
+   Resposta: Quando um elemento de texto Desenhar ou Legenda não tem espaço suficiente para exibir o conteúdo, o texto aparece truncado na execução do formulário móvel. Esse truncamento também é visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legenda de texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
 
 1. Estou observando problemas de layout relacionados a conteúdo ausente ou sobreposto. Qual é a razão?
 
@@ -135,7 +135,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    * Tabelas aninhadas e subformulários dentro de uma tabela não são suportados.
    * Os cabeçalhos só são suportados para as colunas da linha superior ou esquerda da tabela. Os cabeçalhos não são suportados para elementos de tabela intermediária. É possível aplicar cabeçalhos a vários cabeçalhos de linha e coluna, desde que todas as linhas e colunas sejam acompanhadas da linha superior ou da coluna mais à esquerda da tabela.
-   * `Rowspan`e `colspan`de um local aleatório dentro da tabela não é suportado.
+   * `Rowspan`e  `colspan`de um local aleatório dentro da tabela não é suportado.
    * Não é possível adicionar ou remover dinamicamente a instância de linhas que contêm elementos com valor de expansão de linha maior que 1.
 
 1. Qual é a ordem de leitura da dica de ferramenta e da legenda para leitores de tela?
@@ -168,18 +168,18 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    Resposta:
 
-   * Há suporte limitado para o script xfa.connectionSet. Para connectionSet, somente a invocação do servidor do serviço da Web é suportada. Para obter informações detalhadas, consulte Suporte a [scripts](/help/forms/using/scripting-support.md).
+   * Há suporte limitado para o script xfa.connectionSet. Para connectionSet, somente a invocação do servidor do serviço da Web é suportada. Para obter informações detalhadas, consulte [Suporte a scripts](/help/forms/using/scripting-support.md).
    * Não há suporte para $record e $data nos scripts do cliente. No entanto, se os scripts forem gravados em um bloco formReady, layoutReady, os scripts ainda funcionarão porque esses eventos são executados no servidor.
    * Scripts específicos do elemento XFA Draw, como a alteração do texto Draw (ou do texto da legenda no caso de campos) não são suportados.
 
 1. Há alguma limitação no uso do formCalc?
 
-   Resposta: No momento, apenas um subconjunto dos scripts formCalc é implementado. Para obter informações detalhadas, consulte Suporte a [scripts](/help/forms/using/scripting-support.md).
+   Resposta: No momento, apenas um subconjunto dos scripts formCalc é implementado. Para obter informações detalhadas, consulte [Suporte a scripts](/help/forms/using/scripting-support.md).
 
 1. Há alguma convenção de nomenclatura recomendada e há alguma palavra-chave reservada para evitar?
 
-   * No AEM Forms Designer, é recomendável não iniciar o nome de um objeto (como um subformulário ou um campo de texto) com um sublinhado (_). Para usar o sublinhado no início do nome, adicione um prefixo depois do sublinhado, *_&lt;prefixo>&lt;objectname>. *
-   * Todas as APIs de formulários HTML5 são palavras-chave reservadas. Para APIs/funções personalizadas, use um nome que não seja idêntico às APIs [de formulários](/help/forms/using/scripting-support.md)HTML5.
+   * No AEM Forms Designer, é recomendável não iniciar o nome de um objeto (como um subformulário ou um campo de texto) com um sublinhado (_). Para usar o underscore no início do nome, adicione um prefixo depois do underscore, *_&lt;prefixo>&lt;objectname>. *
+   * Todas as APIs de formulários HTML5 são palavras-chave reservadas. Para APIs/funções personalizadas, use um nome que não seja idêntico a [APIs de formulários HTML5](/help/forms/using/scripting-support.md).
 
 1. Os formulários HTML5 são compatíveis com campos flutuantes?
 
@@ -189,7 +189,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
    >
    >Por padrão, os campos não estão habilitados para flutuação. Você pode usar o Forms Designer para definir a propriedade flutuante dos campos.
 
-   1. Abra o CRXde lite e navegue até o `/content/xfaforms/profiles/default` nó.
+   1. Abra o CRXde lite e navegue até o nó `/content/xfaforms/profiles/default`.
    1. Adicione uma propriedade `mfDataDependentFloatingField` do tipo String e defina o valor da propriedade como `true`**.**
    1. Clique em **Salvar tudo**. Agora os campos flutuantes são ativados para o Forms HTML usando o perfil de renderização atualizado.
 
@@ -205,5 +205,5 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Existem palavras-chave reservadas em formulários HTML5?
 
-   Resposta: Todas as APIs de formulários HTML5 são palavras-chave reservadas. Para APIs/funções personalizadas, use um nome que não seja idêntico às APIs [de formulários](/help/forms/using/scripting-support.md)HTML5. Além das palavras-chave reservadas, se você usar nomes de objetos que comecem com um sublinhado (_), é recomendável adicionar um prefixo exclusivo após o sublinhado. Adicionar um prefixo ajuda a evitar qualquer possível conflito com as APIs internas de formulários HTML5. Por exemplo, `_fpField1`
+   Resposta: Todas as APIs de formulários HTML5 são palavras-chave reservadas. Para APIs/funções personalizadas, use um nome que não seja idêntico a [APIs de formulários HTML5](/help/forms/using/scripting-support.md). Além das palavras-chave reservadas, se você usar nomes de objetos que comecem com um sublinhado (_), é recomendável adicionar um prefixo exclusivo após o sublinhado. Adicionar um prefixo ajuda a evitar qualquer possível conflito com as APIs internas de formulários HTML5. Por exemplo, `_fpField1`
 
