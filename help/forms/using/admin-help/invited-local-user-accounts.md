@@ -1,8 +1,8 @@
 ---
 title: Gerenciamento de contas de usuário convidadas e locais
 seo-title: Gerenciamento de contas de usuário convidadas e locais
-description: Usando a segurança do documento, você pode pesquisar, visualização, editar, bloquear, desbloquear e excluir contas de usuário convidadas e locais.
-seo-description: Usando a segurança do documento, você pode pesquisar, visualização, editar, bloquear, desbloquear e excluir contas de usuário convidadas e locais.
+description: Usando a segurança do documento, você pode procurar, visualização, editar, bloquear, desbloquear e excluir contas de usuário convidadas e locais.
+seo-description: Usando a segurança do documento, você pode procurar, visualização, editar, bloquear, desbloquear e excluir contas de usuário convidadas e locais.
 uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
 contentOwner: admin
 content-type: reference
@@ -23,7 +23,7 @@ ht-degree: 0%
 Use a página Usuários convidados e locais para gerenciar seus usuários convidados e locais. Esta página é exibida somente se os seguintes requisitos forem atendidos:
 
 * Você é um administrador ao qual é atribuída a função Gerenciamento de segurança do documento Convidado e Usuários locais e a função Usuário do console de administração. (Consulte [Criação e configuração de funções](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
-* O registro de usuário convidado está ativado. (Consulte [Configurar o registro](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)de usuário convidado.)
+* O registro de usuário convidado está ativado. (Consulte [Configurar o registro de usuário convidado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 A página Usuários convidados e locais contém duas guias que podem ser usadas para pesquisar, visualização, editar, bloquear, desbloquear e excluir contas de usuários convidados e locais.
 
@@ -40,11 +40,11 @@ Você pode adicionar uma ou mais contas de usuário convidadas à segurança do 
 1. No console de administração, clique em Serviços > Segurança do Documento > Usuários convidados e locais e clique em Convidar novo usuário.
 1. Digite os endereços de email dos usuários que deseja convidar. Insira vários endereços em uma linha, separados por vírgula.
 
-   A mensagem que você criou ao ativar o registro de usuário convidado é enviada aos usuários. (Consulte [Configurar o registro](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)de usuário convidado.)
+   A mensagem que você criou ao ativar o registro de usuário convidado é enviada aos usuários. (Consulte [Configurar o registro de usuário convidado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Clique em OK.
 
-## Informações de Visualização sobre um usuário local {#view-information-about-a-local-user}
+## Informações de visualização sobre um usuário local {#view-information-about-a-local-user}
 
 Você pode visualização informações sobre usuários locais, incluindo nome, endereço de email, organização, status de registro e domínio.
 
@@ -58,20 +58,20 @@ Você pode visualização informações sobre usuários locais, incluindo nome, 
 Quando você adiciona um usuário convidado, a segurança do documento envia automaticamente ao usuário uma solicitação de e-mail de registro. Você também pode gerar manualmente um email de inscrição para enviar a um usuário convidado que ainda não se registrou. Você pode desejar fazer isso, por exemplo, para enviar um novo convite se o email de inscrição de um usuário convidado expirar.
 
 1. No console de administração, clique em Serviços > Segurança do Documento > Usuários convidados e locais.
-1. Na lista do usuário, marque a caixa de seleção para cada usuário para enviar um e-mail de inscrição e clique em Reenviar e-mail de convite.
+1. Na lista do usuário, marque a caixa de seleção para cada usuário para enviar um email de inscrição e clique em Reenviar email de convite.
 1. Revise a lista de usuários selecionados e clique em OK.
 
 ## Redefinir uma senha de usuário local {#reset-a-local-user-password}
 
 Você pode redefinir senhas para usuários convidados ativados que se registraram com segurança de documento, mas esqueceram sua senha. Quando você redefine uma senha, um email é gerado que contém uma nova senha temporária para o usuário.
 
-Quando você ativou o processo de registro do usuário convidado, criou uma mensagem de email que será enviada aos usuários solicitando que redefinam suas senhas. (Consulte [Configurar o registro](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)de usuário convidado.)
+Quando você ativou o processo de registro do usuário convidado, criou uma mensagem de email que será enviada aos usuários solicitando que redefinam suas senhas. (Consulte [Configurar o registro de usuário convidado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. No console de administração, clique em Serviços > Segurança do Documento > Usuários convidados e locais e clique na guia Usuários locais.
 1. Na lista do usuário, selecione o usuário apropriado.
 1. Na página Gerenciar usuário local, clique em Redefinir senha e clique em OK. Um email de redefinição de senha contendo a nova senha é enviado ao usuário.
 
-## Ativar ou desativar uma conta de usuário {#enable-or-disable-a-user-account}
+## Habilitar ou desabilitar uma conta de usuário {#enable-or-disable-a-user-account}
 
 Você pode desativar as contas de usuário locais para restringir temporariamente o logon de um usuário à segurança do documento. Quando você desativa a conta, o usuário não pode usar documentos protegidos por política ou criar ou aplicar políticas.
 
