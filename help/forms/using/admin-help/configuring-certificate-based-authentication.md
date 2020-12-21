@@ -20,17 +20,17 @@ ht-degree: 0%
 
 # Configurando a autenticação baseada em certificado {#configuring-certificate-based-authentication}
 
-O Gerenciamento de usuários geralmente realiza a autenticação usando um nome de usuário e senha. O Gerenciamento de usuários também oferece suporte à autenticação baseada em certificados, que você pode usar para autenticar usuários por meio do Acrobat ou para autenticar usuários de forma programática. Para obter detalhes sobre como autenticar usuários de forma programática, consulte [Programação com formulários](https://www.adobe.com/go/learn_aemforms_programming_63)AEM.
+O Gerenciamento de usuários geralmente realiza a autenticação usando um nome de usuário e senha. O Gerenciamento de usuários também oferece suporte à autenticação baseada em certificados, que você pode usar para autenticar usuários por meio do Acrobat ou para autenticar usuários de forma programática. Para obter detalhes sobre a autenticação programática de usuários, consulte [Programação com formulários AEM](https://www.adobe.com/go/learn_aemforms_programming_63).
 
 Para usar autenticação baseada em certificado, importe um certificado da autoridade de certificação (CA) confiável no armazenamento confiável e crie um mapeamento de certificado.
 
 ## Importar o certificado CA {#import-the-ca-certificate}
 
-Ao importar o certificado, selecione as opções Confiar na autenticação do certificado e Confiar na identidade e quaisquer outras opções necessárias. Para obter detalhes sobre como importar certificados, consulte [Gerenciamento de certificados](/help/forms/using/admin-help/certificates.md#managing-certificates).
+Ao importar o certificado, selecione as opções Confiar na autenticação do certificado e Confiar na identidade e quaisquer outras opções necessárias. Para obter detalhes sobre como importar certificados, consulte [Gerenciar certificados](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
-## Configurar mapeamento de certificado {#configuring-certificate-mapping}
+## Configurando o mapeamento de certificado {#configuring-certificate-mapping}
 
-Para ativar a autenticação baseada em certificados para usuários, crie um mapeamento de certificado. Um mapeamento *de* certificado define um mapa entre os atributos de um certificado e os atributos de usuários em um domínio. É possível mapear mais de um certificado para o mesmo domínio.
+Para ativar a autenticação baseada em certificados para usuários, crie um mapeamento de certificado. Um *mapeamento de certificado* define um mapa entre os atributos de um certificado e os atributos de usuários em um domínio. É possível mapear mais de um certificado para o mesmo domínio.
 
 Ao testar um certificado, o Gerenciamento de usuários carrega as verificações do certificado para garantir que ele atenda aos seguintes requisitos:
 
@@ -49,9 +49,9 @@ Ao testar um certificado, o Gerenciamento de usuários carrega as verificações
 1. Clique em Novo mapeamento de certificado e, na lista Para emissor, selecione o alias de certificado conforme configurado no Gerenciamento de armazenamento de confiança.
 1. Mapeie um dos atributos do certificado para o atributo do usuário. Por exemplo, é possível mapear o nome comum do certificado para a ID de logon do usuário.
 
-   Se o conteúdo do atributo no certificado for diferente do conteúdo no atributo do usuário no banco de dados Gerenciamento de usuários, você poderá usar uma Expressão regular Java (regex) para corresponder aos dois atributos. Por exemplo, se os nomes comuns dos certificados forem nomes como *Alex Pink (Autenticação)* e *Alex Pink (Assinatura)* e o nome comum no banco de dados Gerenciamento de usuários for *Alex Pink*, você usará um regex para extrair a parte necessária do atributo de certificado (neste exemplo, *Alex Pink*). A expressão regular especificada deve estar em conformidade com a especificação regex do Java.
+   Se o conteúdo do atributo no certificado for diferente do conteúdo no atributo do usuário no banco de dados Gerenciamento de usuários, você poderá usar uma Expressão regular Java (regex) para corresponder aos dois atributos. Por exemplo, se os nomes comuns dos certificados forem nomes como *Alex Pink (Autenticação)* e *Alex Pink (Assinatura)* e o nome comum no banco de dados Gerenciamento de usuários for *Alex Pink*, você usará um regex para extrair a parte necessária do atributo de certificado (neste exemplo, *Alex Pink*.) A expressão regular especificada deve estar em conformidade com a especificação regex do Java.
 
-   É possível transformar a expressão especificando a ordem dos grupos na caixa Ordem personalizada. A ordem personalizada é usada com o `java.util.regex.Matcher.replaceAll()` método. O comportamento que é visto corresponderá ao comportamento desse método, e a string de entrada (a ordem personalizada) deve ser especificada de acordo.
+   É possível transformar a expressão especificando a ordem dos grupos na caixa Ordem personalizada. A ordem personalizada é usada com o método `java.util.regex.Matcher.replaceAll()`. O comportamento que é visto corresponderá ao comportamento desse método, e a string de entrada (a ordem personalizada) deve ser especificada de acordo.
 
    Para testar o regex, digite um valor na caixa Parâmetro de teste e clique em Testar.
 
@@ -82,7 +82,7 @@ Ao testar um certificado, o Gerenciamento de usuários carrega as verificações
    * Para extrair &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
       **Regex:** smtp:(.&amp;ast;)
-   Para obter detalhes sobre como usar expressões comuns, consulte o tutorial [Java sobre expressões](https://java.sun.com/docs/books/tutorial/essential/regex/)regulares.
+   Para obter detalhes sobre como usar expressões regulares, consulte [tutorial Java sobre expressões regulares](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
 1. Na lista Para domínio, selecione o domínio do usuário.
 1. Para testar essa configuração, clique em Procurar para fazer upload de um certificado de usuário de amostra, clique em Testar certificado e, se a configuração estiver correta, clique em OK.
