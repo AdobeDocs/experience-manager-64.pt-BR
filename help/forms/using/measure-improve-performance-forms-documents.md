@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Medir e melhorar a eficácia e a conversão dos formulários {#measure-and-improve-effectiveness-and-conversion-of-forms}
+# Meça e aprimore a eficácia e a conversão de formulários {#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## O desafio {#the-challenge-br}
 
@@ -33,18 +33,18 @@ Para maximizar o ROI, as organizações devem monitorar como seus clientes inter
 
 ## A solução {#the-solution}
 
-A AEM Forms integra-se às soluções [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - que podem ajudá-lo a monitorar e analisar o desempenho de seus formulários e permitir que você experimente e identifique a experiência que leva a uma melhor taxa de conversão.
+A AEM Forms integra-se com [soluções Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - que podem ajudá-lo a monitorar e analisar o desempenho de seus formulários e permitir que você experimente e identifique a experiência que leva a uma melhor taxa de conversão.
 
 ## O fluxo de trabalho {#the-workflow}
 
 Vamos detalhar como você pode medir o desempenho e melhorar as taxas de conversão para formulários.
 
-### audiência Público alvo {#target-audience}
+### Audiência do público alvo {#target-audience}
 
 * Usuários e analistas de negócios responsáveis por estratégias e sucesso de marketing
 * Pessoal de TI que cuida da infraestrutura e da configuração e manutenção das soluções
 
-### Componentes e recursos AEM Forms envolvidos {#aem-forms-components-and-features-involved}
+### Os componentes e recursos do AEM Forms envolvidos {#aem-forms-components-and-features-involved}
 
 * Formulários adaptáveis
 * Integração com a Adobe Analytics para coletar, organizar e relatar interações do cliente com seus formulários adaptáveis
@@ -69,19 +69,19 @@ Para obter insights aprofundados sobre as interações de seus clientes com seus
 1. Configurar o serviço de configuração do AEM Forms Analytics no AEM
 1. Habilitar análise no formulário no AEM
 
-Para obter etapas detalhadas, consulte [Configurar análises e relatórios para formulários](/help/forms/using/configure-analytics-forms-documents.md)adaptáveis.
+Para obter etapas detalhadas, consulte [Configurar análises e relatórios para formulários adaptáveis](/help/forms/using/configure-analytics-forms-documents.md).
 
 **Configurar Público alvo**
 
-Para criar e executar testes A/B para seus formulários adaptáveis, configure o Público alvo no AEM Forms conforme descrito em [Configurar e integrar o Público alvo no AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Para criar e executar testes A/B para seus formulários adaptáveis, configure o Público alvo no AEM Forms conforme descrito em [Configure e integre o Público alvo no AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
-#### Etapa 2: Relatório de análise de Visualização {#step-view-analytics-report-br}
+#### Etapa 2: Relatório de análise de visualização {#step-view-analytics-report-br}
 
 À medida que seus clientes acessam e interagem com formulários nos quais você ativou o Analytics, suas interações são capturadas em bancos de dados altamente seguros do Analytics. Os bancos de dados são segmentados por clientes e acessíveis por meio de conexões seguras.
 
 É possível visualização um relatório de dentro do AEM para formulários habilitados para análise e análise de dados. Para visualização do relatório:
 
-1. No servidor AEM, navegue até **Forms > Forms e Documentos**.
+1. No servidor AEM, navegue até **Forms > Forms &amp; Documentos**.
 1. Selecione o formulário para o qual deseja obter o relatório de análise.
 1. Clique no ícone Relatórios do Analytics. O relatório é exibido.
 
@@ -111,7 +111,7 @@ Além disso, você obtém os seguintes detalhes sobre cada painel no formulário
 
 ![Um relatório de análise de amostra para um formulário adaptável](assets/summary-report.png)
 
-Para obter mais detalhes sobre os relatórios de análise de formulários, consulte [Visualização e compreensão dos relatórios](/help/forms/using/view-understand-aem-forms-analytics-reports.md)de análise da AEM Forms.
+Para obter mais detalhes sobre relatórios de análise de formulários, consulte [Visualizar e entender relatórios de análise do AEM Forms](/help/forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Para obter mais detalhes sobre os relatórios de análise de formulários, consu
 
 Nessa etapa, você analisará os pontos de dados no relatório de análise e inferirá o desempenho do formulário. Se ele não atender seus KPIs de sucesso, você construirá hipóteses, com base em dados, e encontrará soluções possíveis para corrigir os problemas. Por exemplo:
 
-* Se o tempo médio de preenchimento do formulário for maior do que a expectativa, é possível que o formulário seja complexo para que os clientes entendam, o formulário não usa terminologias padrão, o formulário é muito longo e assim por diante. Nesse caso, talvez você queira simplificar a estrutura e os campos do formulário, retrabalhar o design do formulário, encurtar o comprimento do formulário ou adicionar descrições de ajuda e exemplos para campos de formulário não padrão.
+* Se o tempo médio de preenchimento do formulário for maior do que a expectativa, é possível que o formulário seja complexo para que os clientes entendam, que o formulário não use terminologias padrão, que o formulário seja muito longo e assim por diante. Nesse caso, talvez você queira simplificar a estrutura e os campos do formulário, retrabalhar o design do formulário, encurtar o comprimento do formulário ou adicionar descrições de ajuda e exemplos para campos de formulário não padrão.
 * Se os dados indicarem que a maioria dos clientes está acessando a ajuda de um painel de formulário, é evidente que os clientes estão intrigados com as informações a serem preenchidas. Você pode usar terminologia alternativa ou adicionar algumas entradas de exemplo e descrição de ajuda para esse painel.
 * Se a taxa de aborto ou abandono de um formulário for maior do que o esperado, isso pode ocorrer devido ao fato de o formulário levar muito tempo para ser renderizado, os clientes estão chegando inadvertidamente no formulário ou é muito complicado. Nesse caso, talvez você queira otimizar a descrição do formulário que aparece nos resultados da pesquisa, simplificar o formulário, otimizar o formulário para um carregamento mais rápido e assim por diante.
 
@@ -135,11 +135,11 @@ Nesta etapa, você validará as alterações feitas no formulário e verificará
 
 A integração do AEM Forms com o Público alvo permite a criação de testes A/B para formulários adaptáveis. Em testes A/B, você apresenta aleatoriamente diferentes experiências de um formulário para seus clientes em tempo real para saber qual experiência funciona melhor ou causa mais conversões. Depois que você tiver dados significativos indicando uma experiência fornecendo uma conversão melhor que a outra, você poderá declarar que as experiências são vencedoras e, no futuro, a experiência padrão se tornará visível a todos os clientes.
 
-Para obter mais informações sobre como criar um teste A/B para um formulário adaptável, consulte Teste [A/B de formulários](/help/forms/using/ab-testing-adaptive-forms.md)adaptáveis.
+Para obter mais informações sobre como criar um teste A/B para um formulário adaptável, consulte [Teste A/B de formulários adaptáveis](/help/forms/using/ab-testing-adaptive-forms.md).
 
 ![Um exemplo de relatório de resumo do teste A/B para um formulário adaptável](assets/ab-test-report-2.png)
 
-## Best practices {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 As práticas recomendadas reais são aquelas que você mesmo identifica ao executar esse fluxo de trabalho. Eles são exclusivos ao seu ambiente e aos seus requisitos. Capture seus aprendizados por meio do fluxo de trabalho e os documento como práticas recomendadas.
 
