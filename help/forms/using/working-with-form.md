@@ -25,12 +25,12 @@ Os formulários são baixados no aplicativo e estão disponíveis offline. Por e
 
 Para sincronizar seu formulário no aplicativo AEM Forms:
 
-1. Na instância do autor, selecione um formulário e clique em Propriedades **da** Visualização.
+1. Na instância do autor, selecione um formulário e clique em **Propriedades da Visualização**.
 
 1. Na página de propriedades, clique em **Avançado.**
-1. Em Avançado, ative a opção: **Sincronize com o aplicativo** AEM Forms e toque em **Salvar**.
+1. Em Avançado, ative a opção: **Sincronize com o aplicativo AEM Forms** e toque em **Salvar**.
 
-Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e toque em **Sincronizar com o aplicativo** AEM Forms. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
+Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e toque em **Sincronizar com o AEM Forms App**. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
 
 >[!NOTE]
 >
