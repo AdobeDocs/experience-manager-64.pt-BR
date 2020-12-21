@@ -26,11 +26,11 @@ Como exemplo, consideremos o Gerenciamento de correspondência como o candidato 
 
 ## Criar ativos do Gerenciamento de correspondência {#create-correspondence-management-assets}
 
-Start criando um modelo de gerenciamento de correspondência de amostra que é renderizado na área de trabalho do AEM Forms. Para obter mais detalhes, consulte [Criar um modelo](/help/forms/using/create-letter.md)de carta.
+Start criando um modelo de gerenciamento de correspondência de amostra que é renderizado na área de trabalho do AEM Forms. Para obter mais detalhes, consulte [Criar um modelo de carta](/help/forms/using/create-letter.md).
 
-Acesse o modelo de Gerenciamento de Correspondência em seu URL para verificar se o modelo de Gerenciamento de Correspondência pode ser renderizado com êxito. O URL tem um padrão semelhante ao `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Acesse o modelo de Gerenciamento de Correspondência em seu URL para verificar se o modelo de Gerenciamento de Correspondência pode ser renderizado com êxito. O URL tem um padrão semelhante a `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-onde `encodedLetterId` é a ID da carta codificada por URL. Especifique a mesma ID de letra ao definir o processo de renderização para a tarefa de espaço de trabalho no Workbench.
+em que `encodedLetterId` é a ID da letra codificada por URL. Especifique a mesma ID de letra ao definir o processo de renderização para a tarefa de espaço de trabalho no Workbench.
 
 ## Criar uma tarefa para renderizar e enviar uma carta AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
@@ -45,7 +45,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
 
 1. Inicie o Workbench. Faça logon no localhost como administrador.
 1. Clique em Arquivo > Novo > Aplicativo. No campo Nome do aplicativo, digite `CMDemoSample` e clique em Concluir.
-1. Selecione `CMDemoSample/1.0` e clique com o botão direito do mouse `NewProcess`. No campo de nome, digite `CMRenderer` e clique em Concluir.
+1. Selecione `CMDemoSample/1.0` e clique com o botão direito do mouse em `NewProcess`. No campo de nome, digite `CMRenderer` e clique em Concluir.
 1. Arraste o seletor de atividade do Ponto de Start e configure-o:
 
    1. Em Dados de apresentação, selecione Usar um ativo CRX.
@@ -56,7 +56,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
 
       ![guia](assets/lettertab.png)
 
-   1. Selecione a carta apropriada e clique em **OK**.
+   1. Selecione a letra apropriada e clique em **OK**.
 
 1. Clique em Gerenciar Perfis de ação. A caixa de diálogo Gerenciar Perfil de ação é exibida. Certifique-se de que o Processo de renderização e o Processo de envio estejam selecionados adequadamente.
 1. Para abrir a carta com um arquivo XML de dados, procure e selecione o arquivo de dados apropriado no Processo de preparação de dados.
@@ -101,9 +101,10 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
    }
    ```
 
-   [Obter DSC de](assets/dscsample.zip)Download de Arquivo: Uma amostra de DSC está disponível no `DSCSample.zip` arquivo anexado acima. Baixe e descompacte o `DSCSample.zip` arquivo. Antes de usar o serviço DSC, é necessário configurá-lo. Para obter informações, consulte [Configurar o serviço](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
+   [Obter DSC ](assets/dscsample.zip)
+FileDownload: Uma amostra de DSC está disponível no  `DSCSample.zip` arquivo anexado acima. Baixe e descompacte o arquivo `DSCSample.zip`. Antes de usar o serviço DSC, é necessário configurá-lo. Para obter informações, consulte [Configurar o serviço DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
-   Na caixa de diálogo Definir Atividade, selecione a atividade apropriada, como getLetterInstanceInfo, e clique em **OK**.
+   Na caixa de diálogo Definir Atividade, selecione a atividade apropriada, como getLetterInstanceInfo e clique em **OK**.
 
 1. Implante o aplicativo. Se solicitado, faça check-in e salve os ativos.
 1. Faça logon na área de trabalho dos formulários AEM em `https://[server]:[port]/lc/content/ws`.
