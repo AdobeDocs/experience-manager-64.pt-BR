@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Configurar serviços de armazenamento para rascunhos e envios {#configuring-storage-services-for-drafts-and-submissions}
+# Configurando serviços de armazenamento para rascunhos e envios {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Visão geral {#overview}
 
@@ -39,9 +39,9 @@ Além da abordagem padrão mencionada acima, uma implementação alternativa tam
 >
 >Para obter mais informações, consulte [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md).
 
-## Configuração de serviços de envio e rascunhos do Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
+## Configurando serviços de envio e rascunhos do Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-Na Configuração do console da Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), clique para abrir a Configuração **de rascunho e envio do** Forms Portal no modo de edição.
+Na Configuração do console da Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), clique para abrir **Configuração de rascunho e envio do Forms Portal no modo de edição.**
 
 Especifique os valores para as propriedades com base em seus requisitos, conforme descrito abaixo:
 
@@ -56,7 +56,7 @@ Os dados são replicados reversivamente para a instância do autor configurada.
    <th>Valor</th> 
   </tr>
   <tr>
-   <td>Forms Portal Draft Data Service(Identifier for draft data service (<strong>draft.data.service</strong>))</td> 
+   <td>Serviço de Dados de Rascunho do Forms Portal(Identificador para serviço de dados de rascunho (<strong>draft.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td> 
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Os dados são replicados reversivamente para a instância do autor configurada.
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Serviço de Dados de Envio do Forms Portal (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td> 
+   <td>Forms Portal Submit Data Service (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td> 
   </tr>
   <tr>
@@ -85,7 +85,7 @@ Os dados são enviados diretamente para a instância remota configurada
    <th>Valor</th> 
   </tr>
   <tr>
-   <td>Forms Portal Draft Data Service(Identifier for draft data service (<strong>draft.data.service</strong>))</td> 
+   <td>Serviço de Dados de Rascunho do Forms Portal(Identificador para serviço de dados de rascunho (<strong>draft.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
@@ -93,7 +93,7 @@ Os dados são enviados diretamente para a instância remota configurada
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Serviço de Dados de Envio do Forms Portal (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td> 
+   <td>Forms Portal Submit Data Service (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
@@ -105,7 +105,7 @@ Os dados são enviados diretamente para a instância remota configurada
 
 Além da configuração especificada acima, forneça informações sobre a instância de processamento remoto configurada.
 
-Na Configuração do console da Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), clique para abrir **AEM Serviço** de configurações do DS no modo de edição. Na caixa de diálogo Serviço de configurações do AEM DS, forneça informações sobre o processamento do URL do servidor, o nome de usuário do servidor de processamento e a senha.
+Na Configuração do console da Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), clique para abrir **AEM Serviço de configurações do DS** no modo de edição. Na caixa de diálogo Serviço de configurações do AEM DS, forneça informações sobre o processamento do URL do servidor, o nome de usuário do servidor de processamento e a senha.
 
 >[!NOTE]
 >
