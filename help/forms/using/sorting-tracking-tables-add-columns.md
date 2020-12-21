@@ -116,9 +116,9 @@ Os atributos restantes no modelo de tarefa disponíveis para exibição na tabel
  </tbody> 
 </table>
 
-Para as seguintes personalizações na tabela tarefa, é necessário fazer alterações semânticas no código-fonte. Consulte [Introdução à personalização da área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) do AEM Forms para saber como fazer alterações semânticas usando o SDK da área de trabalho e criar um pacote minified a partir da fonte alterada.
+Para as seguintes personalizações na tabela tarefa, é necessário fazer alterações semânticas no código-fonte. Consulte [Introdução à Personalização da área de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para saber como você pode fazer alterações semânticas usando o SDK da área de trabalho e criar um pacote minified a partir da fonte alterada.
 
-## Alteração das colunas da tabela e sua ordem {#changing-table-columns-and-their-order}
+## Alteração de colunas de tabela e ordem {#changing-table-columns-and-their-order}
 
 1. Para modificar os atributos de tarefa exibidos na tabela e sua ordem, configure o arquivo /ws/js/runtime/templates/processinstancehistory.html :
 
@@ -158,7 +158,7 @@ Para as seguintes personalizações na tabela tarefa, é necessário fazer alter
 
 Para classificar a tabela de lista de tarefa ao clicar no cabeçalho da coluna:
 
-1. Registre um manipulador de cliques para `.fixedTaskTableHeader th` o no arquivo `js/runtime/views/processinstancehistory.js`.
+1. Registre um manipulador de cliques para `.fixedTaskTableHeader th` no arquivo `js/runtime/views/processinstancehistory.js`.
 
    ```as3
    events: {
@@ -168,7 +168,7 @@ Para classificar a tabela de lista de tarefa ao clicar no cabeçalho da coluna:
    }
    ```
 
-   No manipulador, chame a `onTaskTableHeaderClick` função de `js/runtime/util/history.js`.
+   No manipulador, chame a função `onTaskTableHeaderClick` de `js/runtime/util/history.js`.
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -176,7 +176,7 @@ Para classificar a tabela de lista de tarefa ao clicar no cabeçalho da coluna:
    }
    ```
 
-1. Exponha o `TaskTableHeaderClick` método em `js/runtime/util/history.js`.
+1. Exponha o método `TaskTableHeaderClick` em `js/runtime/util/history.js`.
 
    O método encontra o atributo tarefa do evento click, classifica a lista de tarefas desse atributo e renderiza a tabela tarefa com a lista de tarefas classificada.
 
