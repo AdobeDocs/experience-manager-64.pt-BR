@@ -23,7 +23,7 @@ Use a API TransactionRecorder para registrar ações que não são contabilizada
 
 Você pode usar um código personalizado para enviar um formulário PDF, enviar um URL de pré-visualização da interface do agente para usuários finais para pré-visualização de uma comunicação interativa ou enviar um formulário usando métodos personalizados em vez de usar os métodos de envio fornecidos com a AEM Forms. Todas as ações mencionadas anteriormente e implementações personalizadas de APIs da AEM Forms não são contabilizadas como transações. A AEM Forms fornece uma API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar ações como transações.
 
-Para registrar uma transação, escreva o servlet [](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) sling padrão e chame o servlet de um cliente para registrar uma transação. Você pode chamar o servlet usando AJAX ou qualquer outro método padrão.
+Para gravar uma transação, escreva o [servlet sling padrão](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) e chame o servlet de um cliente para registrar uma transação. Você pode chamar o servlet usando AJAX ou qualquer outro método padrão.
 
 ## Exemplo de código do lado do servidor {#sample-server-sided-code}
 
@@ -75,7 +75,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## Exemplo de código do cliente {#sample-client-side-code}
 
-Você pode usar o código de amostra abaixo para chamar o servlet que tem a `TransactionRecorder`API.
+Você pode usar o código de amostra abaixo para chamar o servlet que tem a API `TransactionRecorder`.
 
 ```
 $.ajax({
