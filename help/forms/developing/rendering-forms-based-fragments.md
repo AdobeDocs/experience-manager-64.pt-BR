@@ -2,7 +2,7 @@
 title: Renderização do Forms com base em fragmentos
 seo-title: Renderização do Forms com base em fragmentos
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
@@ -29,7 +29,7 @@ O uso dos fragmentos simplifica e acelera a criação e manutenção de uma gran
 
 Um fragmento pode incluir vários subformulários vinculados em um conjunto de subformulários de escolha. Os conjuntos de subformulários de escolha controlam a exibição de subformulários com base no fluxo de dados de uma conexão de dados. Instruções condicionais são usadas para determinar qual subformulário do conjunto aparece no formulário apresentado. Por exemplo, cada subformulário em um conjunto pode incluir informações para uma localização geográfica específica e o subformulário exibido pode ser determinado com base na localização do usuário.
 
-A *script fragment* contains reusable JavaScript functions or values that are stored separately from any particular object, such as a date parser or a web service invocation. Esses fragmentos incluem um único objeto de script que aparece como um filho de variáveis na paleta Hierarquia. Os fragmentos não podem ser criados a partir de scripts que são propriedades de outros objetos, por exemplo, scripts de evento, como validar, calcular ou inicializar.
+Um *fragmento de script* contém funções ou valores JavaScript reutilizáveis armazenados separadamente de qualquer objeto específico, como um analisador de datas ou uma chamada de serviço da Web. Esses fragmentos incluem um único objeto de script que aparece como um filho de variáveis na paleta Hierarquia. Os fragmentos não podem ser criados a partir de scripts que são propriedades de outros objetos, por exemplo, scripts de evento, como validar, calcular ou inicializar.
 
 Estas são as vantagens do uso de fragmentos:
 
@@ -41,13 +41,13 @@ Estas são as vantagens do uso de fragmentos:
 
 ### Montagem de um design de formulário montado usando fragmentos {#assembling-a-form-design-assembled-using-fragments}
 
-É possível montar um design de formulário para passar para o serviço Forms com base em vários fragmentos. Para montar vários fragmentos, use o serviço Assembler. Para ver um exemplo de como usar o serviço Montagem para criar um design de formulário usado por outros serviços da Forms (o serviço de Saída), consulte [Criação de Documentos PDF usando fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Em vez de usar o serviço de Saída, você pode executar o mesmo fluxo de trabalho usando o serviço Forms.
+É possível montar um design de formulário para passar para o serviço Forms com base em vários fragmentos. Para montar vários fragmentos, use o serviço Assembler. Para ver um exemplo de uso do serviço Montagem para criar um design de formulário usado por outros serviços da Forms (o serviço de Saída), consulte [Criação de Documentos PDF usando fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Em vez de usar o serviço de Saída, você pode executar o mesmo fluxo de trabalho usando o serviço Forms.
 
 Ao usar o serviço Assembler, você está transmitindo um design de formulário que foi montado usando fragmentos. O design de formulário criado não faz referência a outros fragmentos. Por outro lado, este tópico discute a passagem de um design de formulário que faz referência a outros fragmentos para o serviço Forms. No entanto, o design de formulário não foi montado pelo Assembler. Foi criado no Designer.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Forms, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Ao renderizar um formulário com base em fragmentos, é necessário referenciar 
 
 **Renderizar o formulário**
 
-Um formulário baseado em fragmentos pode ser renderizado da mesma forma que formulários não fragmentados. Ou seja, é possível renderizar o formulário como PDF, HTML ou Guias de formulário (obsoleto). O exemplo nesta seção renderiza um formulário com base em fragmentos como um formulário PDF interativo. (Consulte [Renderização de PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interativos.)
+Um formulário baseado em fragmentos pode ser renderizado da mesma forma que formulários não fragmentados. Ou seja, é possível renderizar o formulário como PDF, HTML ou Guias de formulário (obsoleto). O exemplo nesta seção renderiza um formulário com base em fragmentos como um formulário PDF interativo. (Consulte [Renderizando PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 **Gravar o fluxo de dados do formulário no navegador da Web do cliente**
 
@@ -113,37 +113,37 @@ Renderize um formulário com base em fragmentos usando a API do Forms (Java):
 
 1. Criar um objeto de API do Forms Client
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `FormsServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `FormsServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Especificar valores de URI
 
-   * Crie um `URLSpec` objeto que armazene valores de URI usando seu construtor.
-   * Chame o método do `URLSpec` objeto `setApplicationWebRoot` e passe um valor de string que representa a raiz da Web do aplicativo.
-   * Chame o método do `URLSpec` objeto `setContentRootURI` e transmita um valor de string que especifica o valor do URI raiz do conteúdo. Verifique se o design de formulário e os fragmentos estão localizados no URI raiz do conteúdo. Caso contrário, o serviço Forms lança uma exceção. Para fazer referência ao repositório, especifique `repository://`.
-   * Chame o método do `URLSpec` objeto `setTargetURL` e passe um valor de string que especifique o valor do URL do público alvo para onde os dados do formulário são postados. Se você definir o URL do público alvo no design de formulário, poderá passar uma string vazia. Também é possível especificar o URL para o qual um formulário é enviado para executar cálculos.
+   * Crie um objeto `URLSpec` que armazene valores de URI usando seu construtor.
+   * Chame o método `URLSpec` do objeto `setApplicationWebRoot` e transmita um valor de string que representa a raiz da Web do aplicativo.
+   * Chame o método `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifica o valor do URI raiz do conteúdo. Verifique se o design de formulário e os fragmentos estão localizados no URI raiz do conteúdo. Caso contrário, o serviço Forms lança uma exceção. Para fazer referência ao repositório, especifique `repository://`.
+   * Chame o método `URLSpec` do objeto `setTargetURL` e passe um valor de string que especifica o valor do URL do público alvo para onde os dados do formulário são enviados. Se você definir o URL do público alvo no design de formulário, poderá passar uma string vazia. Também é possível especificar o URL para o qual um formulário é enviado para executar cálculos.
 
 1. Renderizar o formulário
 
-   Chame o método do `FormsServiceClient` objeto `renderPDFForm` e passe os seguintes valores:
+   Chame o método `FormsServiceClient` do objeto `renderPDFForm` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Um `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário. Se você não quiser unir dados, passe um `com.adobe.idp.Document` objeto vazio.
-   * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms para renderizar um formulário com base em fragmentos.
-   * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
+   * Um objeto `com.adobe.idp.Document` que contém dados a serem unidos ao formulário. Se você não quiser unir dados, passe um objeto `com.adobe.idp.Document` vazio.
+   * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução.
+   * Um objeto `URLSpec` que contém valores de URI necessários para o serviço Forms renderizar um formulário com base em fragmentos.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
 
-   O `renderPDFForm` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
+   O método `renderPDFForm` retorna um objeto `FormsResult` que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador da Web do cliente
 
-   * Crie um `com.adobe.idp.Document` objeto chamando o `FormsResult` método do objeto `getOutputContent` .
-   * Obtenha o tipo de conteúdo do `com.adobe.idp.Document` objeto chamando seu `getContentType` método.
-   * Defina o tipo de conteúdo do `javax.servlet.http.HttpServletResponse` objeto chamando seu `setContentType` método e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
-   * Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
-   * Crie um `java.io.InputStream` objeto chamando o `com.adobe.idp.Document` método do `getInputStream` objeto.
-   * Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o `InputStream` método do `read`objeto e transmitindo a matriz de bytes como um argumento.
-   * Chame o método do `javax.servlet.ServletOutputStream` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `com.adobe.idp.Document` chamando o método `FormsResult` object &#39;s `getOutputContent`.
+   * Obtenha o tipo de conteúdo do objeto `com.adobe.idp.Document` chamando seu método `getContentType`.
+   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` chamando seu método `setContentType` e transmitindo o tipo de conteúdo do objeto `com.adobe.idp.Document`.
+   * Crie um objeto `javax.servlet.ServletOutputStream` usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o método `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream`.
+   * Crie um objeto `java.io.InputStream` invocando o método `com.adobe.idp.Document` do objeto `getInputStream`.
+   * Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o método `InputStream` do objeto `read`e transmitindo a matriz de bytes como um argumento.
+   * Chame o método `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o método `write`.
 
 **Consulte também:**
 
@@ -166,40 +166,40 @@ Renderize um formulário com base em fragmentos usando a API do Forms (serviço 
 
 1. Criar um objeto de API do Forms Client
 
-   Crie um `FormsService` objeto e defina valores de autenticação.
+   Crie um objeto `FormsService` e defina os valores de autenticação.
 
 1. Especificar valores de URI
 
-   * Crie um `URLSpec` objeto que armazene valores de URI usando seu construtor.
-   * Chame o método do `URLSpec` objeto `setApplicationWebRoot` e passe um valor de string que representa a raiz da Web do aplicativo.
-   * Chame o método do `URLSpec` objeto `setContentRootURI` e transmita um valor de string que especifica o valor do URI raiz do conteúdo. Verifique se o design de formulário está localizado no URI raiz do conteúdo. Caso contrário, o serviço Forms lança uma exceção. Para fazer referência ao repositório, especifique `repository://`.
-   * Chame o método do `URLSpec` objeto `setTargetURL` e passe um valor de string que especifique o valor do URL do público alvo para onde os dados do formulário são postados. Se você definir o URL do público alvo no design de formulário, poderá passar uma string vazia. Também é possível especificar o URL para o qual um formulário é enviado para executar cálculos.
+   * Crie um objeto `URLSpec` que armazene valores de URI usando seu construtor.
+   * Chame o método `URLSpec` do objeto `setApplicationWebRoot` e transmita um valor de string que representa a raiz da Web do aplicativo.
+   * Chame o método `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifica o valor do URI raiz do conteúdo. Verifique se o design de formulário está localizado no URI raiz do conteúdo. Caso contrário, o serviço Forms lança uma exceção. Para fazer referência ao repositório, especifique `repository://`.
+   * Chame o método `URLSpec` do objeto `setTargetURL` e passe um valor de string que especifica o valor do URL do público alvo para onde os dados do formulário são enviados. Se você definir o URL do público alvo no design de formulário, poderá passar uma string vazia. Também é possível especificar o URL para o qual um formulário é enviado para executar cálculos.
 
 1. Renderizar o formulário
 
-   Chame o método do `FormsService` objeto `renderPDFForm` e passe os seguintes valores:
+   Chame o método `FormsService` do objeto `renderPDFForm` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Um `BLOB` objeto que contém dados para mesclar com o formulário. Se você não deseja unir dados, passe `null`.
-   * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. Observe que a opção PDF marcado não pode ser definida se o documento de entrada for um documento PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF marcado pode ser definida.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
-   * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
-   * Um `com.adobe.idp.services.holders.BLOBHolder` objeto vazio que é preenchido pelo método. Esse parâmetro é usado para armazenar o formulário renderizado.
-   * Um `javax.xml.rpc.holders.LongHolder` objeto vazio que é preenchido pelo método. Esse argumento armazenará o número de páginas no formulário.
-   * Um `javax.xml.rpc.holders.StringHolder` objeto vazio que é preenchido pelo método. Esse argumento armazenará o valor de localidade.
-   * Um `com.adobe.idp.services.holders.FormsResultHolder` objeto vazio que conterá os resultados dessa operação.
+   * Um objeto `BLOB` que contém dados a serem unidos ao formulário. Se você não quiser unir dados, passe `null`.
+   * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução. Observe que a opção PDF marcado não pode ser definida se o documento de entrada for um documento PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF marcado pode ser definida.
+   * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
+   * Um objeto vazio `com.adobe.idp.services.holders.BLOBHolder` que é preenchido pelo método. Esse parâmetro é usado para armazenar o formulário renderizado.
+   * Um objeto vazio `javax.xml.rpc.holders.LongHolder` que é preenchido pelo método. Esse argumento armazenará o número de páginas no formulário.
+   * Um objeto vazio `javax.xml.rpc.holders.StringHolder` que é preenchido pelo método. Esse argumento armazenará o valor de localidade.
+   * Um objeto vazio `com.adobe.idp.services.holders.FormsResultHolder` que conterá os resultados desta operação.
 
-   O `renderPDFForm` método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto passado como o último valor do argumento com um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
+   O método `renderPDFForm` preenche o objeto `com.adobe.idp.services.holders.FormsResultHolder` transmitido como o último valor do argumento com um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador da Web do cliente
 
-   * Crie um `FormResult` objeto obtendo o valor do membro de `com.adobe.idp.services.holders.FormsResultHolder` dados do `value` objeto.
-   * Crie um `BLOB` objeto que contenha dados de formulário chamando o `FormsResult` método do `getOutputContent` objeto.
-   * Obtenha o tipo de conteúdo do `BLOB` objeto chamando seu `getContentType` método.
-   * Defina o tipo de conteúdo do `javax.servlet.http.HttpServletResponse` objeto chamando seu `setContentType` método e transmitindo o tipo de conteúdo do `BLOB` objeto.
-   * Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
-   * Crie uma matriz de bytes e preencha-a chamando o método do `BLOB` objeto `getBinaryData` . Essa tarefa atribui o conteúdo do `FormsResult` objeto à matriz de bytes.
-   * Chame o método do `javax.servlet.http.HttpServletResponse` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `FormResult` obtendo o valor do membro de dados `com.adobe.idp.services.holders.FormsResultHolder` do objeto `value`.
+   * Crie um objeto `BLOB` que contenha dados de formulário chamando o método `FormsResult` do objeto `getOutputContent`.
+   * Obtenha o tipo de conteúdo do objeto `BLOB` chamando seu método `getContentType`.
+   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` chamando seu método `setContentType` e transmitindo o tipo de conteúdo do objeto `BLOB`.
+   * Crie um objeto `javax.servlet.ServletOutputStream` usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o método `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream`.
+   * Crie uma matriz de bytes e preencha-a chamando o método `BLOB` do objeto `getBinaryData`. Essa tarefa atribui o conteúdo do objeto `FormsResult` à matriz de bytes.
+   * Chame o método `javax.servlet.http.HttpServletResponse` do objeto `write` para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o método `write`.
 
 **Consulte também:**
 
