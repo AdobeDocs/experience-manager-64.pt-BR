@@ -17,21 +17,21 @@ ht-degree: 0%
 ---
 
 
-# Personalização da página de detalhes da tarefa {#customizing-the-task-details-page}
+# Personalizar a página de detalhes da tarefa {#customizing-the-task-details-page}
 
 A página de detalhes da tarefa contém informações sobre uma tarefa e seus processos. No entanto, você pode personalizar a página de detalhes da tarefa para adicionar ou excluir informações.
 
 Você pode adicionar as seguintes informações à página de detalhes da tarefa:
 
-* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa na descrição [do objeto JSON do espaço de trabalho](/help/forms/using/html-workspace-json-object-description.md)AEM Forms)
-* Informações disponíveis no objeto JSON de uma instância do processo (seção da instância do processo na Descrição [do objeto JSON do espaço de trabalho](/help/forms/using/html-workspace-json-object-description.md)AEM Forms)
+* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa em [Descrição de objeto JSON do espaço de trabalho AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informações disponíveis no objeto JSON de uma instância do processo (seção da instância do processo em [Descrição do objeto JSON do espaço de trabalho AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
 
 Para personalizar a página de detalhes da tarefa:
 
-1. Siga as etapas [genéricas para personalização da área de trabalho do AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Para mostrar quaisquer informações adicionais, adicione pares de valores chave correspondentes ao `translation.json` arquivo em `todo`bloco > `details`bloco > `app`bloco > [ bloco `required`].
+1. Siga [Etapas genéricas para personalização do espaço de trabalho AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Para mostrar quaisquer informações adicionais, adicione pares de valores chave correspondentes ao arquivo `translation.json` em `todo`block > `details`block > `app`block > [ `required`block].
 
-   O [ bloco `required`] se refere aos blocos disponíveis, como o bloco de tarefa para informações de tarefa, o bloco de processo para informações de processo e o bloco de tarefas atual para informações tarefas pendentes.
+   O [ `required`block] refere-se aos blocos disponíveis, como o bloco de tarefa para informações de tarefa, o bloco de processo para informações de processo e o bloco de tarefas atual para informações tarefas pendentes.
 
    Por exemplo, para adicionar informações sobre a Seleção de rota obrigatória na página de detalhes da tarefa, adicione o seguinte par de valores chave no bloco de tarefa:
 
@@ -58,7 +58,7 @@ Para personalizar a página de detalhes da tarefa:
 
 1. Copie `/libs/ws/js/runtime/templates/taskdetails.html` para `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Adicione as novas informações ao `/apps/ws/js/runtime/templates/taskdetails.html`. Por exemplo:
+   Adicione as novas informações a `/apps/ws/js/runtime/templates/taskdetails.html`. Por exemplo:
 
    ```css
    <div class="detailsContainer">
@@ -85,6 +85,6 @@ Para personalizar a página de detalhes da tarefa:
 
 >[!NOTE]
 >
->Para personalizar a página de detalhes da tarefa com tarefas criadas na **guia Processo do Start **área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Para personalizar a página de detalhes da tarefa com tarefas criadas na **guia Processo de Start **da área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Para adicionar novos estilos para as informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção de alterações *da interface do* usuário em Personalização [da](/help/forms/using/changing-locale-user-interface.md)Workspace.
+>Para adicionar novos estilos para as informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção *Alterações na interface do usuário* em [Personalização da Workspace](/help/forms/using/changing-locale-user-interface.md).
