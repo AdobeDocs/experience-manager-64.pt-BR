@@ -17,13 +17,13 @@ ht-degree: 4%
 ---
 
 
-# Pesquisar formulários e ativos {#searching-for-forms-and-assets}
+# Procurando formulários e ativos {#searching-for-forms-and-assets}
 
-É possível pesquisar por formulários ou ativos de formulário, usando uma string de texto ou uma string de texto junto com curingas. Você também pode restringir sua pesquisa usando os critérios disponíveis em várias categorias no painel Pesquisar.
+Você pode pesquisar seus formulários ou ativos de formulário, usando uma string de texto ou uma string de texto junto com curingas. Você também pode restringir sua pesquisa usando os critérios disponíveis em várias categorias no painel Pesquisar.
 
 Quando você seleciona um ou mais critérios e também especifica uma string de texto, a interseção do texto e dos critérios são retornados como resultados de pesquisa. Os resultados da pesquisa são tão bons quanto o formulário e os metadados do ativo fornecidos.
 
-Clique em ![aem6forms_search](assets/aem6forms_search.png)para mostrar ou ocultar o painel de pesquisa.
+Clique em ![aem6forms_search](assets/aem6forms_search.png) para mostrar ou ocultar o painel de pesquisa.
 
 ## Pesquisa básica {#basic-search}
 
@@ -37,14 +37,14 @@ Observe os seguintes pontos sobre a pesquisa básica:
 
 * A pesquisa é realizada usando as propriedades de metadados do formulário e do ativo.
 * Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo para pesquisa.
-* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, quando você digita `geometrixx`, os ativos com títulos `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` são exibidos nos resultados da pesquisa.
+* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, quando você digita `geometrixx`, ativos com títulos `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx` são exibidos nos resultados da pesquisa.
 
 * Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando strings parciais, use &amp;ast; coringa. Entretanto, se o query de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
-* Espaços extras são respeitados e não são aparados durante a pesquisa. Por exemplo, não `My form` é o mesmo query de pesquisa `My form`.
+* Espaços extras são respeitados e não são aparados durante a pesquisa. Por exemplo, `My form` não é o mesmo query de pesquisa que `My form`.
 
 * Se os valores de dados e exibição dos campos nas propriedades de metadados forem diferentes, não será possível usar os valores de exibição como parâmetros de pesquisa. Por exemplo, não é possível pesquisar com base em um status, como Modificado ou Publicado, pois essas propriedades são armazenadas em um formato diferente.
 
-## Advanced search {#advanced-search}
+## Pesquisa avançada {#advanced-search}
 
 Nos critérios de pesquisa, além do query, você pode especificar alguns parâmetros de pesquisa para tornar a pesquisa básica mais eficiente e focalizada.
 
