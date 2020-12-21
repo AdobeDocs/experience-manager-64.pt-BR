@@ -27,16 +27,16 @@ Este artigo detalha as etapas para adicionar informações a serem exibidas para
 
 ## O que pode ser adicionado {#what-can-be-added}
 
-Você pode adicionar as informações disponíveis no `task.json` envio pelo servidor. As informações podem ser adicionadas como texto sem formatação ou você pode usar estilos para formatar as informações.
+Você pode adicionar as informações disponíveis em `task.json` enviadas pelo servidor. As informações podem ser adicionadas como texto sem formatação ou você pode usar estilos para formatar as informações.
 
-Para obter mais informações sobre a descrição do objeto JSON, consulte [este](/help/forms/using/html-workspace-json-object-description.md) artigo.
+Para obter mais informações sobre a descrição do objeto JSON, consulte o artigo [this](/help/forms/using/html-workspace-json-object-description.md).
 
 ## Exibição de informações em uma tarefa {#displaying-information-on-a-task}
 
-1. Siga as etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
+1. Siga as [etapas genéricas para personalização do espaço de trabalho AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Para exibir informações adicionais de uma tarefa, os pares de valores chave correspondentes devem ser adicionados dentro do bloco de tarefa de `translation.json`.
 
-   Por exemplo, alteração `/apps/ws/locales/en-US/translation.json` para inglês:
+   Por exemplo, altere `/apps/ws/locales/en-US/translation.json` para inglês:
 
    ```
    "task" : {
@@ -135,7 +135,7 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
    }
    ```
 
-## Adicionar entrada no modelo HTML {#adding-entry-in-the-html-template}
+## Adicionando entrada no Modelo HTML {#adding-entry-in-the-html-template}
 
 Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar um, consulte Criar código de espaço de trabalho AEM Forms.
 
@@ -144,7 +144,7 @@ Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade 
    * de: `/libs/ws/js/runtime/templates/`
    * para: `/apps/ws/js/runtime/templates/`
 
-1. Adicione as novas informações ao `/apps/ws/js/runtime/templates/task.html`.
+1. Adicione as novas informações a `/apps/ws/js/runtime/templates/task.html`.
 
    Por exemplo, adicione em `div class="taskProperties"`:
 
