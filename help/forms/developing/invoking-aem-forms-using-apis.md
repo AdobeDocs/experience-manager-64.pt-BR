@@ -2,7 +2,7 @@
 title: Invocar o AEM Forms usando APIs
 seo-title: Invocar o AEM Forms usando APIs
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
