@@ -2,7 +2,7 @@
 title: Como trabalhar com Documentos PDF/A
 seo-title: Como trabalhar com Documentos PDF/A
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference
@@ -18,20 +18,20 @@ ht-degree: 0%
 ---
 
 
-# Como trabalhar com Documentos PDF/A {#working-with-pdf-a-documents}
+# Trabalhar com Documentos PDF/A {#working-with-pdf-a-documents}
 
 **Sobre o Serviço DocConverter**
 
 O serviço DocConverter pode converter documentos PDF em documentos PDA/A. É possível realizar essas tarefas usando este serviço:
 
-* Converta documentos PDF em documentos PDF/A. (Consulte [Converter Documentos em Documentos](pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A.)
-* Determine se documentos PDF são documentos PDF/A. (Consulte Determinando [Programaticamente a conformidade](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)do PDF/A.)
+* Converta documentos PDF em documentos PDF/A. (Consulte [Conversão de Documentos em Documentos PDF/A](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+* Determine se documentos PDF são documentos PDF/A. (Consulte [Determinando Programaticamente a Conformidade do PDF/A](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço DocConverter, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço DocConverter, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Como converter Documentos em Documentos PDF/A {#converting-documents-to-pdf-a-documents}
+## Conversão de Documentos em Documentos PDF/A {#converting-documents-to-pdf-a-documents}
 
 Você pode usar o serviço DocConverter para converter um documento PDF em um documento PDF/A. Como o PDF/A é um formato de arquivamento para a preservação de longo prazo do conteúdo do documento, todas as fontes são incorporadas e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo. Antes de converter um documento PDF em um documento PDF/A, verifique se o documento PDF não é um documento PDF/A.
 
@@ -41,7 +41,7 @@ Embora o PDF/A seja o padrão para arquivamento de documentos PDF, não é obrig
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço DocConverter, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço DocConverter, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -66,11 +66,11 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente DocConvert**
 
-Antes de executar programaticamente uma operação DocConverter, você deve criar um cliente DocConverter. Se você estiver usando a API Java, crie um `DocConverterServiceClient` objeto. Se você estiver usando a API de serviço da Web DocConverter, crie um `DocConverterServiceService` objeto.
+Antes de executar programaticamente uma operação DocConverter, você deve criar um cliente DocConverter. Se você estiver usando a API Java, crie um objeto `DocConverterServiceClient`. Se você estiver usando a API de serviço da Web DocConverter, crie um objeto `DocConverterServiceService`.
 
 **Referência a um documento PDF para converter em um documento PDF/A**
 
@@ -110,33 +110,33 @@ Converta um documento PDF em um documento PDF/A usando a API Java:
 
 1. Criar um cliente DocConvert
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `DocConverterServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `DocConverterServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Referência a um documento PDF para converter em um documento PDF/A
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF a ser convertido usando seu construtor e transmitindo um valor de string que especifica o local do arquivo PDF.
-   * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que representa o documento PDF a ser convertido usando seu construtor e transmitindo um valor de string que especifica o local do arquivo PDF.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Definir informações de rastreamento
 
-   * Crie um `PDFAConversionOptionSpec` objeto usando seu construtor.
-   * Defina o nível de rastreamento de informações chamando o método do `PDFAConversionOptionSpec` objeto `setLogLevel` e transmitindo um valor de string que especifica o nível de rastreamento. For example, pass the value `FINE`. Para obter informações sobre os diferentes valores, consulte o `setLogLevel` método na Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Crie um objeto `PDFAConversionOptionSpec` usando seu construtor.
+   * Defina o nível de rastreamento de informações chamando o método `PDFAConversionOptionSpec` do objeto `setLogLevel` e transmitindo um valor de string que especifica o nível de rastreamento. Por exemplo, passe o valor `FINE`. Para obter informações sobre os diferentes valores, consulte o método `setLogLevel` no [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Converter o documento
 
-   Converta o documento PDF em um documento PDF/A chamando o método do `DocConverterServiceClient` objeto `toPDFA` e transmitindo os seguintes valores:
+   Converta o documento PDF em um documento PDF/A chamando o método `DocConverterServiceClient` do objeto `toPDFA` e transmitindo os seguintes valores:
 
-   * O `com.adobe.idp.Document` objeto que contém o documento PDF a ser convertido
-   * O `PDFAConversionOptionSpec` objeto que especifica informações de rastreamento
+   * O objeto `com.adobe.idp.Document` que contém o documento PDF a ser convertido
+   * O objeto `PDFAConversionOptionSpec` que especifica informações de rastreamento
 
-   O `toPDFA` método retorna um `PDFAConversionResult` objeto que contém o documento PDF/A.
+   O método `toPDFA` retorna um objeto `PDFAConversionResult` que contém o documento PDF/A.
 
 1. Salvar o documento PDF/A
 
-   * Recupere o documento PDF/A chamando o método do `PDFAConversionResult` objeto `getPDFA` . Esse método retorna um `com.adobe.idp.Document` objeto que representa o documento PDF/A.
-   * Crie um `java.io.File` objeto que represente o arquivo PDF/A. Verifique se a extensão do nome do arquivo é .pdf.
-   * Preencha o arquivo com dados PDF/A chamando o método do `com.adobe.idp.Document` objeto `copyToFile` e transmitindo o `java.io.File` objeto.
+   * Recupere o documento PDF/A chamando o método `PDFAConversionResult` do objeto `getPDFA`. Esse método retorna um objeto `com.adobe.idp.Document` que representa o documento PDF/A.
+   * Crie um objeto `java.io.File` que represente o arquivo PDF/A. Verifique se a extensão do nome do arquivo é .pdf.
+   * Preencha o arquivo com dados PDF/A chamando o método `com.adobe.idp.Document` do objeto `copyToFile` e transmitindo o objeto `java.io.File`.
 
 **Consulte também:**
 
@@ -159,38 +159,38 @@ Converta um documento PDF em um documento PDF/A usando a API DocConverter (servi
 
 1. Criar um cliente DocConvert
 
-   * Usando o assembly do cliente Microsoft .NET, crie um `DocConverterServiceService` objeto chamando seu construtor padrão.
-   * Defina o membro `DocConverterServiceService` de dados do `Credentials` objeto com um `System.Net.NetworkCredential` valor que especifique o nome de usuário e o valor da senha.
+   * Usando o assembly do cliente Microsoft .NET, crie um objeto `DocConverterServiceService` chamando seu construtor padrão.
+   * Defina o membro de dados `DocConverterServiceService` do objeto `Credentials` com um valor `System.Net.NetworkCredential` que especifique o valor do nome de usuário e da senha.
 
 1. Referência a um documento PDF para converter em um documento PDF/A
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento PDF convertido em um documento PDF/A.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo para abrir o arquivo.
-   * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
-   * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
-   * Preencha o `BLOB` objeto atribuindo sua `binaryData` propriedade ao conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF convertido em um documento PDF/A.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo para abrir o arquivo.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `System.IO.FileStream` do objeto `Length`.
+   * Preencha a matriz de bytes com dados de fluxo chamando o método `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `binaryData` ao conteúdo da matriz de bytes.
 
 1. Definir informações de rastreamento
 
-   * Crie um `PDFAConversionOptionSpec` objeto usando seu construtor.
-   * Defina o nível de rastreamento de informações atribuindo um valor que especifica o nível de rastreamento ao membro de `PDFAConversionOptionSpec` dados do `logLevel` objeto. Por exemplo, atribua o valor `FINE` a esse membro de dados.
+   * Crie um objeto `PDFAConversionOptionSpec` usando seu construtor.
+   * Defina o nível de rastreamento de informações atribuindo um valor que especifica o nível de rastreamento ao `PDFAConversionOptionSpec` membro de dados `logLevel` do objeto. Por exemplo, atribua o valor `FINE` a esse membro de dados.
 
 1. Converter o documento
 
-   Converta o documento PDF em um documento PDF/A chamando o método do `DocConverterServiceService` objeto `toPDFA` e transmitindo os seguintes valores:
+   Converta o documento PDF em um documento PDF/A chamando o método `DocConverterServiceService` do objeto `toPDFA` e transmitindo os seguintes valores:
 
-   * O `BLOB` objeto que contém o documento PDF a ser convertido
-   * O `PDFAConversionOptionSpec` objeto que especifica informações de rastreamento
+   * O objeto `BLOB` que contém o documento PDF a ser convertido
+   * O objeto `PDFAConversionOptionSpec` que especifica informações de rastreamento
 
-   O `toPDFA` método retorna um `PDFAConversionResult` objeto que contém o documento PDF/A.
+   O método `toPDFA` retorna um objeto `PDFAConversionResult` que contém o documento PDF/A.
 
 1. Salvar o documento PDF/A
 
-   * Crie um `BLOB` objeto que armazene o documento PDF/A obtendo o valor do membro de `PDFAConversionResult` dados do `PDFADocument` objeto.
-   * Crie uma matriz de bytes que armazene o conteúdo do `BLOB` objeto que foi retornado usando o `PDFAConversionResult` objeto. Preencha a matriz de bytes obtendo o valor do membro de `BLOB` dados do `binaryData` objeto.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF/A.
-   * Crie um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método do `System.IO.BinaryWriter` objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `BLOB` que armazene o documento PDF/A obtendo o valor do membro de dados `PDFAConversionResult` do objeto `PDFADocument`.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `BLOB` que foi retornado usando o objeto `PDFAConversionResult`. Preencha a matriz de bytes obtendo o valor do membro de dados `BLOB` do objeto `binaryData`.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF/A.
+   * Crie um objeto `System.IO.BinaryWriter` chamando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
 
 **Consulte também:**
 
@@ -200,13 +200,13 @@ Converta um documento PDF em um documento PDF/A usando a API DocConverter (servi
 
 [Criação de um assembly de cliente .NET que usa a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Determinando programaticamente a conformidade do PDF/A {#programmatically-determining-pdf-a-compliancy}
+## Determinando Programaticamente a Conformidade do PDF/A {#programmatically-determining-pdf-a-compliancy}
 
-Você pode usar o serviço DocConverter para determinar se um documento PDF é compatível com PDF/A. Para obter informações sobre um documento PDF/A e como converter um documento PDF em um documento PDF/A, consulte [Conversão de Documentos em Documentos](pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A.
+Você pode usar o serviço DocConverter para determinar se um documento PDF é compatível com PDF/A. Para obter informações sobre um documento PDF/A e como converter um documento PDF em um documento PDF/A, consulte [Conversão de Documentos em Documentos PDF/A](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço DocConverter, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço DocConverter, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -230,11 +230,11 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente DocConvert**
 
-Antes de executar programaticamente uma operação DocConverter, você deve criar um cliente DocConverter. Se você estiver usando a API Java, crie um `DocConverterServiceClient` objeto. Se você estiver usando a API de serviço da Web DocConverter, crie um `DocConverterServiceService` objeto.
+Antes de executar programaticamente uma operação DocConverter, você deve criar um cliente DocConverter. Se você estiver usando a API Java, crie um objeto `DocConverterServiceClient`. Se você estiver usando a API de serviço da Web DocConverter, crie um objeto `DocConverterServiceService`.
 
 **Referência a um documento PDF usado para determinar a conformidade do PDF/A**
 
@@ -268,28 +268,28 @@ Determine a conformidade do PDF/A usando a API Java:
 
 1. Criar um cliente DocConvert
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `DocConverterServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `DocConverterServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Referência a um documento PDF usado para determinar a conformidade do PDF/A
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF a ser convertido usando seu construtor e transmitindo um valor de string que especifica o local do arquivo PDF.
-   * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que representa o documento PDF a ser convertido usando seu construtor e transmitindo um valor de string que especifica o local do arquivo PDF.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Definir opções de tempo de execução
 
-   * Crie um `PDFAValidationOptionSpec` objeto usando seu construtor.
-   * Defina o nível de conformidade chamando o `PDFAValidationOptionSpec` método do `setCompliance` objeto e transmitindo `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
-   * Defina o nível de rastreamento de informações chamando o método do `PDFAValidationOptionSpec` objeto `setLogLevel` e transmitindo um valor de string que especifica o nível de rastreamento. For example, pass the value `FINE`. Para obter informações sobre os diferentes valores, consulte o `setLogLevel` método na Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Crie um objeto `PDFAValidationOptionSpec` usando seu construtor.
+   * Defina o nível de conformidade chamando o método `PDFAValidationOptionSpec` do objeto `setCompliance` e transmitindo `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
+   * Defina o nível de rastreamento de informações chamando o método `PDFAValidationOptionSpec` do objeto `setLogLevel` e transmitindo um valor de string que especifica o nível de rastreamento. Por exemplo, passe o valor `FINE`. Para obter informações sobre os diferentes valores, consulte o método `setLogLevel` no [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Recuperar informações sobre o documento PDF
 
-   Determine a conformidade do PDF/A chamando o `DocConverterServiceClient` método do objeto `isPDFA` e transmitindo os seguintes valores:
+   Determine a conformidade do PDF/A chamando o método `DocConverterServiceClient` do objeto `isPDFA` e transmitindo os seguintes valores:
 
-   * O `com.adobe.idp.Document` objeto que contém o documento PDF.
-   * O `PDFAValidationOptionSpec` objeto que especifica opções de tempo de execução.
+   * O objeto `com.adobe.idp.Document` que contém o documento PDF.
+   * O objeto `PDFAValidationOptionSpec` que especifica opções de tempo de execução.
 
-   O `isPDFA` método retorna um `PDFAValidationResult` objeto que contém os resultados dessa operação.
+   O método `isPDFA` retorna um objeto `PDFAValidationResult` que contém os resultados desta operação.
 
 **Consulte também:**
 
@@ -312,31 +312,31 @@ Determine a conformidade do PDF/A usando a API de serviço da Web:
 
 1. Criar um cliente DocConvert
 
-   * Usando o assembly do cliente Microsoft .NET, crie um `DocConverterServiceService` objeto chamando seu construtor padrão.
-   * Defina o membro `DocConverterServiceService` de dados do `Credentials` objeto com um `System.Net.NetworkCredential` valor que especifique o nome de usuário e o valor da senha.
+   * Usando o assembly do cliente Microsoft .NET, crie um objeto `DocConverterServiceService` chamando seu construtor padrão.
+   * Defina o membro de dados `DocConverterServiceService` do objeto `Credentials` com um valor `System.Net.NetworkCredential` que especifique o valor do nome de usuário e da senha.
 
 1. Referência a um documento PDF usado para determinar a conformidade do PDF/A
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento PDF convertido em um documento PDF/A.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo para abrir o arquivo.
-   * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
-   * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
-   * Preencha o `BLOB` objeto atribuindo sua `binaryData` propriedade ao conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF convertido em um documento PDF/A.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo para abrir o arquivo.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `System.IO.FileStream` do objeto `Length`.
+   * Preencha a matriz de bytes com dados de fluxo chamando o método `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `binaryData` ao conteúdo da matriz de bytes.
 
 1. Definir opções de tempo de execução
 
-   * Crie um `PDFAValidationOptionSpec` objeto usando seu construtor.
-   * Defina o nível de conformidade atribuindo o membro de `PDFAValidationOptionSpec` dados do `compliance` objeto ao valor `PDFAConversionOptionSpec_Compliance.PDFA_1B`.
-   * Defina o nível de rastreamento de informações atribuindo o membro de `PDFAValidationOptionSpec` dados do `resultLevel` objeto ao valor `PDFAValidationOptionSpec_ResultLevel.DETAILED`.
+   * Crie um objeto `PDFAValidationOptionSpec` usando seu construtor.
+   * Defina o nível de conformidade atribuindo o `PDFAValidationOptionSpec` membro de dados `compliance` do objeto com o valor `PDFAConversionOptionSpec_Compliance.PDFA_1B`.
+   * Defina o nível de rastreamento de informações atribuindo o `PDFAValidationOptionSpec` membro de dados `resultLevel` do objeto com o valor `PDFAValidationOptionSpec_ResultLevel.DETAILED`.
 
 1. Recuperar informações sobre o documento PDF
 
-   Determine a conformidade do PDF/A chamando o `DocConverterServiceService` método do objeto `isPDFA` e transmitindo os seguintes valores:
+   Determine a conformidade do PDF/A chamando o método `DocConverterServiceService` do objeto `isPDFA` e transmitindo os seguintes valores:
 
-   * O `BLOB` objeto que contém o documento PDF.
-   * O `PDFAValidationOptionSpec` objeto que contém opções de tempo de execução.
+   * O objeto `BLOB` que contém o documento PDF.
+   * O objeto `PDFAValidationOptionSpec` que contém opções de tempo de execução.
 
-   O `isPDFA` método retorna um `PDFAValidationResult` objeto que contém os resultados dessa operação.
+   O método `isPDFA` retorna um objeto `PDFAValidationResult` que contém os resultados desta operação.
 
 **Consulte também:**
 
