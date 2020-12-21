@@ -39,17 +39,17 @@ ht-degree: 0%
 
    * Se você estiver carregando um arquivo de configurações, digite seu caminho e nome na caixa ou clique em Procurar para localizar e selecionar o arquivo.
 
-1. (Opcional) Em XMP Arquivo de metadados, digite o caminho e o nome do arquivo XMP ou clique em Procurar para localizar e selecionar o arquivo. Um arquivo XMP pode ser usado para incluir informações de metadados padrão. (Consulte [Sobre arquivos](converting-files-using-pdf-generator.md#about-xmp-files)XMP.)
+1. (Opcional) Em XMP Arquivo de metadados, digite o caminho e o nome do arquivo XMP ou clique em Procurar para localizar e selecionar o arquivo. Um arquivo XMP pode ser usado para incluir informações de metadados padrão. (Consulte [Sobre XMP arquivos](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Clique em Criar. Quando o arquivo é criado, um link para ele é exibido. Se ocorrer um erro durante a conversão, um aviso será exibido. Se você estiver criando um arquivo Postscript, o aviso também conterá um link para o arquivo de log.
 1. Clique no link do arquivo PDF. O arquivo é aberto no Acrobat.
 
-### Sobre arquivos XMP {#about-xmp-files}
+### Sobre XMP arquivos {#about-xmp-files}
 
-documentos PDF criados pelo Gerador de PDF no Acrobat 5.0 ou posterior contêm metadados de documento no formato XML. *Os metadados* incluem informações sobre o documento e seu conteúdo, como nome do autor, palavras-chave e informações de direitos autorais que os utilitários de pesquisa podem usar.
+DOCUMENTOS PDF criados pelo Gerador de PDF no Acrobat 5.0 ou posterior contêm metadados de documento no formato XML. *Os* metadados incluem informações sobre o documento e seu conteúdo, como nome do autor, palavras-chave e informações de direitos autorais que os utilitários de pesquisa podem usar.
 
-Os metadados do documento contêm (mas não se limitam a) informações que também são exibidas na guia Descrição da caixa de diálogo Propriedades do Documento no Acrobat. As alterações feitas na guia Descrição são refletidas nos metadados do documento. Os metadados do Documento podem ser estendidos e modificados usando produtos de terceiros.
+Os metadados do documento contêm (mas não se limitam a) informações que também são exibidas na guia Descrição da caixa de diálogo Propriedades do Documento no Acrobat. As alterações feitas na guia Descrição são refletidas nos metadados do documento. Os metadados do documento podem ser estendidos e modificados usando produtos de terceiros.
 
-A Plataforma de Metadados Extensíveis do Adobe (XMP) fornece aplicativos Adobe com uma estrutura XML comum que padroniza a criação, o processamento e o intercâmbio de metadados de documentos em workflows de publicação. É possível salvar e importar o código de origem XML de metadados do documento no formato XMP, facilitando o compartilhamento de metadados entre vários documentos. Para obter mais informações sobre arquivos XMP, consulte Plataforma de Metadados [Extensível (XMP)](https://www.adobe.com/products/xmp/) e Centro [de Desenvolvedores de](https://www.adobe.com/devnet/xmp.html)Adobe XMP.
+A Plataforma de Metadados Extensíveis do Adobe (XMP) fornece aplicativos Adobe com uma estrutura XML comum que padroniza a criação, o processamento e o intercâmbio de metadados de documentos em workflows de publicação. É possível salvar e importar o código de origem XML de metadados do documento no formato XMP, facilitando o compartilhamento de metadados entre vários documentos. Para obter mais informações sobre arquivos XMP, consulte [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) e [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
 
 Você pode criar arquivos XMP no Acrobat.
 
@@ -90,13 +90,13 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
    * Para usar um arquivo de configurações existente, selecione Carregar arquivo de configurações e clique em Procurar para ir para o local do arquivo.
 
 
-1. Para carregar um arquivo XMP, clique em Procurar e vá para o local do arquivo. Um arquivo XMP pode ser usado para incluir informações de metadados padrão. (Consulte [Sobre arquivos](converting-files-using-pdf-generator.md#about-xmp-files)XMP.)
+1. Para carregar um arquivo XMP, clique em Procurar e vá para o local do arquivo. Um arquivo XMP pode ser usado para incluir informações de metadados padrão. (Consulte [Sobre XMP arquivos](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Clique em Criar. Quando o arquivo é criado, um link para o arquivo PDF é exibido.
 1. Clique no link para visualização do documento PDF no Acrobat.
 
 ## Exportar um arquivo PDF para outro formato de arquivo (somente Windows) {#export-a-pdf-file-to-another-file-format-windows-only}
 
-É possível exportar arquivos PDF para vários formatos de arquivo, conforme descrito no capítulo Gerar serviço PDF de Referência [de](https://www.adobe.com/go/learn_aemforms_services_63)serviços.
+Você pode exportar arquivos PDF para vários formatos de arquivo, conforme descrito no capítulo Gerar serviço PDF de [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. No console de administração, clique em Serviços > Gerador de PDF > Export PDF.
 1. Clique em Procurar para localizar o arquivo PDF a ser exportado.
@@ -105,7 +105,7 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
 
    O Tempo de conversão exibido quando o arquivo é convertido pode ser maior que o valor especificado aqui. O Tempo de conversão inclui o tempo gasto aguardando o thread ou processo, o tempo necessário para converter o arquivo e o tempo gasto pelo conversor de fallback (se aplicável). time. O valor Especificar um tempo limite é apenas o tempo gasto para converter o arquivo.
 
-1. (Opcional) Na opção **Especificar perfil** de comprovação personalizado, clique em Procurar e selecione um perfil [de comprovação](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)personalizado. Os perfis de comprovação só são usados ao converter documentos em formato PDF (PDF/A).
+1. (Opcional) Na opção **Especificar perfil de comprovação personalizado**, clique em Procurar e selecione um [perfil de comprovação personalizado](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Os perfis de comprovação só são usados ao converter documentos em formato PDF (PDF/A).
 1. Clique em Exportar. Quando a conversão for concluída, um link para o arquivo exportado será exibido.
 1. Clique no link para visualização do arquivo convertido.
 
