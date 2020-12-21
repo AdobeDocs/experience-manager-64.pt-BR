@@ -16,26 +16,27 @@ ht-degree: 0%
 ---
 
 
-# Configuração da página de redirecionamento {#configuring-redirect-page}
+# Configurando a página de redirecionamento {#configuring-redirect-page}
 
 Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários do formulário são redirecionados após o envio de um formulário.
 
-1. No modo de edição, selecione um componente, clique em nível ![de](assets/field-level.png) campo > Container **de formulário** adaptável e, em seguida, clique em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente, clique em ![field-level](assets/field-level.png) > **Container de formulário adaptável** e, em seguida, clique em ![cmppr](assets/cmppr.png).
 
-1. Na barra lateral, clique em **Enviar**.
+1. Na barra lateral, clique em **Envio**.
 
 1. Forneça o URL da página de redirecionamento em Página de agradecimento na seção Envio.
 1. Opcionalmente, em Enviar ação, para a ação de ponto de extremidade Enviar para REST, você pode configurar o parâmetro a ser passado para a página de redirecionamento.
 
-![Redirecionar a configuração](assets/thank-you-setting-1.png)da página **Figura:** *Redirecionar configuração da página*
+![Redirecionar a ](assets/thank-you-setting-1.png)
+**configuração da páginaFigura:** *Redirecionar a configuração da página*
 
-Os autores de formulários podem usar os seguintes parâmetros passados para a página de Agradecimentos. Para todas as ações de envio disponíveis, `status` e os `owner` parâmetros são enviados. Além desses dois parâmetros, alguns parâmetros adicionais são passados para as seguintes ações de envio:
+Os autores de formulários podem usar os seguintes parâmetros que são passados para a página de Agradecimentos. Para todas as ações de envio disponíveis, os parâmetros `status` e `owner` são transmitidos. Além desses dois parâmetros, alguns parâmetros adicionais são passados para as seguintes ações de envio:
 
-* **Ação** de armazenamento de conteúdo (obsoleto): `contentPath`— o caminho do nó no repositório onde os dados enviados são armazenados é passado.
+* **Ação**  de armazenamento de conteúdo (obsoleto):  `contentPath`— o caminho do nó no repositório onde os dados enviados são armazenados é passado.
 
-* **Ação** de armazenamento em PDF (obsoleto): `contentPath`— dos dados enviados e do caminho até o nó que armazena o arquivo PDF no repositório — é passado.
+* **Ação**  de armazenamento em PDF (obsoleto):  `contentPath`— dos dados enviados e do caminho até o nó que armazena o arquivo PDF no repositório — é passado.
 
 * **Enviar para o fluxo de trabalho** da Forms: Parâmetros de saída retornados do fluxo de trabalho de formulários são enviados.
 
-* **Enviar para o ponto de extremidade** REST: Parâmetros adicionados para mapeamento de parâmetro em campo são passados. `status` e `owner` os parâmetros não são passados nesta ação de envio. Para obter mais informações, consulte [Configuração da ação](/help/forms/using/configuring-submit-actions.md)de envio do ponto de extremidade Enviar para REST.
+* **Enviar para o ponto de extremidade** REST: Parâmetros adicionados para mapeamento de parâmetro em campo são passados. `status` e  `owner` os parâmetros não são passados nesta ação de envio. Para obter mais informações, consulte [Configurando a ação de envio do ponto de extremidade Submeter ao REST](/help/forms/using/configuring-submit-actions.md).
 
