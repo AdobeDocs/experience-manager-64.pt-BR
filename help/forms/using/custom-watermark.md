@@ -17,26 +17,26 @@ ht-degree: 0%
 ---
 
 
-# Marca d&#39;água personalizada na pré-visualização PDF carta {#custom-watermark-in-letter-pdf-preview}
+# Marca d&#39;água personalizada na pré-visualização PDF letra {#custom-watermark-in-letter-pdf-preview}
 
 ## Visão geral {#overview}
 
-Na interface do usuário Criar correspondência, os usuários agentes pré-visualizações a correspondência na forma final em que é enviada para o processamento de postagens, como para e-mail ou impressão.
+Na interface do usuário Criar correspondência, os usuários agentes pré-visualizações a correspondência na forma final em que é enviada para o processamento de postagens, como para envio por email ou impressão.
 
 Para impedir o uso não autorizado desses dados, as organizações podem impor uma marca d&#39;água no PDF da pré-visualização. A marca d&#39;água padrão é &quot;PRÉ-VISUALIZAÇÃO&quot;, que aparece no PDF.
 
-Para ativar a marca d&#39;água em PDF de pré-visualização, selecione a opção **[!UICONTROL Aplicar marca d&#39;água]** durante a Pré-visualização em Configurações **[!UICONTROL de gerenciamento de]** correspondência em `https://[server]:[port]/system/console/configMgr`.
+Para ativar a marca d&#39;água no PDF da pré-visualização, selecione a opção **[!UICONTROL Aplicar marca d&#39;água]** Durante a Pré-visualização em **[!UICONTROL Configurações de gerenciamento de correspondência]** em `https://[server]:[port]/system/console/configMgr`.
 
 ![marca d&#39;água padrão](assets/default-watermark.png)
 
 Você pode usar as seguintes etapas para personalizar o texto e a aparência da marca d&#39;água:
 
-## Personalizar a marca d&#39;água na pré-visualização PDF na interface Criar correspondência {#customizewatermark-}
+## Personalizar a marca d&#39;água na pré-visualização PDF em Criar interface do usuário de correspondência {#customizewatermark-}
 
 1. Vá para `https://[server]:[port]/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta apps, crie uma pasta chamada **[!UICONTROL pré-marca d&#39;água]** com caminho/estrutura semelhante à pasta de marca d&#39;água da visualização na pasta libs:
+1. Na pasta apps, crie uma pasta chamada **[!UICONTROL previewwatermark]** com caminho/estrutura semelhante à pasta de marca d&#39;água da visualização na pasta libs:
 
-   1. Clique com o botão direito do mouse na pasta **visuewwatermark **no seguinte caminho e selecione **Overlay Node**:
+   1. Clique com o botão direito do mouse na pasta **pré-marca d&#39;água **no seguinte caminho e selecione **Nó de sobreposição**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -46,7 +46,7 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
 
       **Localização da sobreposição:** /apps/
 
-      **Corresponder tipos de nós:** Verificado
+      **Tipos De Nó De Correspondência:** Marcado
 
       >[!NOTE]
       >
@@ -57,7 +57,7 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
       >* Instalar um pacote de recursos
 
 
-   1. Clique em **OK** e em **Salvar tudo**. A pasta de marca d&#39;água **[!UICONTROL da]** visualização é criada no caminho especificado.
+   1. Clique em **OK** e, em seguida, clique em **Salvar tudo**. A pasta **[!UICONTROL previewwatermark]** é criada no caminho especificado.
 
 1. Copie e cole o arquivo dx da pasta &quot;/libs/fd/cm/configFiles/previewwatermark&quot; para a pasta &quot;/apps/fd/cm/configFiles/previewwatermark&quot; e clique em **[!UICONTROL Salvar tudo]**.
 1. Faça as alterações desejadas no arquivo ddx em /apps/fd/cm/configFiles/previewwatermark/.
@@ -77,7 +77,7 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
    </DDX>
    ```
 
-   Para obter informações sobre como personalizar a aparência da marca d&#39;água, o texto e o alinhamento, consulte Adicionar e remover marcas d&#39;água e planos de fundo no [Assembler Service e no documento de referência](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) DDX.
+   Para obter informações sobre como personalizar a aparência da marca d&#39;água, o texto e o alinhamento, consulte Adicionar e remover marcas d&#39;água e planos de fundo no documento [Assembler Service e DDX Reference](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >
