@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Como reconhecer certificados válidos e expirados em documentos PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# Reconhecendo certificados válidos e expirados em documentos PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
 Quando um documento PDF com direitos de uso aplicados pelas extensões de Reader é aberto no Adobe Reader, uma barra de status é exibida descrevendo os direitos de uso específicos ativados no documento PDF.
 
