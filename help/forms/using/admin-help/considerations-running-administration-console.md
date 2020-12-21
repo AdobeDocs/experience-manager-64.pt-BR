@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Considerações ao executar o Console de administração {#considerations-when-running-administrationconsole}
+# Considerações ao executar o Console de Administração {#considerations-when-running-administrationconsole}
 
 Estes são alguns aspectos a serem considerados ao executar o Console de administração:
 
