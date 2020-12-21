@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Noções básicas para o gerenciamento de certificados e credenciais {#basics-of-managing-certificates-and-credentials}
+# Noções básicas sobre o gerenciamento de certificados e credenciais {#basics-of-managing-certificates-and-credentials}
 
-Uma *credencial* contém suas informações de chave privada necessárias para assinar ou identificar documentos. Um *certificado* é uma informação de chave pública configurada para confiança. Os formulários AEM usam certificados e credenciais para vários fins:
+Uma *credencial* contém as informações de chave privada necessárias para assinar ou identificar documentos. Um *certificate* é uma informação de chave pública configurada para fidedignidade. Os formulários AEM usam certificados e credenciais para vários fins:
 
-* As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos PDF. (Consulte [Configurar credenciais para uso com extensões](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)do Acrobat Reader DC.)
-* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)de exibição do Rights Management.) O nome comum (CN) deve constar do certificado.
-* O serviço de assinatura acessa certificados e credenciais. Para obter detalhes sobre o serviço de assinatura, consulte Referência [de](https://www.adobe.com/go/learn_aemforms_services_63)serviços.
+* As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos PDF. (Consulte [Configurar credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações de exibição de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) O nome comum (CN) deve constar do certificado.
+* O serviço de assinatura acessa certificados e credenciais. Para obter detalhes sobre o serviço de assinatura, consulte [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Gerando uma chave de par**
 
