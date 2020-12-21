@@ -31,11 +31,11 @@ O recurso de blog fornece:
 * Criação no lado da publicação de artigos e comentários do blog
 * Edição de texto formatado
 * Imagens embutidas (com suporte para arrastar e soltar)
-* Conteúdo de rede social incorporado (suporte[oEmbed](blog-developer-basics.md#allowing-rich-media))
+* Conteúdo de rede social incorporado ([Suporte a incorporação](blog-developer-basics.md#allowing-rich-media))
 * Modo de rascunho
 * Publicação agendada
-* Compor em nome (um membro [](users.md#privileged-members-group) privilegiado pode criar conteúdo em nome de outro membro da comunidade)
-* [Moderação](moderate-ugc.md) em massa de artigos e comentários do blog no contexto
+* Compor em nome (um [membro privilegiado](users.md#privileged-members-group) pode criar conteúdo em nome de um membro da comunidade diferente)
+* [Moderação em massa e em contexto de artigos e comentários em ](moderate-ugc.md) blog
 
 Esta seção da documentação descreve
 
@@ -57,45 +57,54 @@ Se desejar adicionar um blog a uma página no modo de autor, use o navegador de 
 
 E arraste-os para o lugar em uma página onde o blog deveria aparecer.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](blog-developer-basics.md#essentials-for-client-side) necessárias forem incluídas, o `Blog`componente será exibido desta forma:
+Quando as [bibliotecas obrigatórias do lado do cliente](blog-developer-basics.md#essentials-for-client-side) forem incluídas, será assim que o componente `Blog`aparecerá:
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-E como `Blog Sidebar` aparecerá:
+E como o `Blog Sidebar` aparecerá:
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Configuração do Blog {#configuring-blog}
+### Configurando o Blog {#configuring-blog}
 
-Selecione o componente inserido a ser acessado e selecione o `Blog` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Blog` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![configurar as definições do ícone](assets/chlimage_1-149.png) ![Blog](assets/Blog-configure.png)
+![configurar ](assets/chlimage_1-149.png) ![iconConfigurações do blog](assets/Blog-configure.png)
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do blog:
+Na guia **[!UICONTROL Settings]**, especifique os recursos básicos do blog:
 
-* **[!UICONTROL Permitir miniatura do anexo]** Se marcada, uma miniatura da imagem anexada é criada.
+* **[!UICONTROL Permitir]**
+miniatura do anexoSe marcada, uma miniatura da imagem anexada é criada.
 
-* **[!UICONTROL Tamanho]** máximo da miniatura de anexação (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
+* **[!UICONTROL Tamanho máximo da]**
+miniatura de anexaçãoTamanho máximo (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
 
-* **[!UICONTROL Tamanho mínimo da imagem para miniaturaTamanho]** mínimo (em bytes) da imagem para geração de miniatura para imagens em linha. O valor padrão é 100000 bytes (100 kb).
+* **[!UICONTROL Tamanho mínimo da imagem para]**
+miniaturaTamanho mínimo (em bytes) da imagem para geração de miniatura para imagens em linha. O valor padrão é 100000 bytes (100 kb).
 
-* **[!UICONTROL Tamanho]** máximo da miniatura (em pixels) da imagem em miniatura para imagem em linha. O valor padrão é 800 x 800.
+* **[!UICONTROL Tamanho máx.]**
+da miniaturaTamanho máximo (em pixels) da imagem em miniatura para imagem em linha. O valor padrão é 800 x 800.
 
-* **[!UICONTROL Permitir membros]** privilegiados Se marcada, somente membros privilegiados poderão criar conteúdo.
+* **[!UICONTROL Permitir]**
+membros privilegiadosSe marcada, somente membros privilegiados poderão criar conteúdo.
 
-* **[!UICONTROL Membros]** privilegiados permitidosAdicione os membros privilegiados permitidos para criar conteúdo.
+* **[!UICONTROL Membros]**
+privilegiados permitidosAdicione os membros privilegiados permitidos para criar conteúdo.
 
-* **[!UICONTROL Bloquear conteúdo gerado pelo usuário no modo]** de edição do autor Se ativado, bloqueia o conteúdo gerado pelo usuário durante a edição no modo de autor.
+* **[!UICONTROL Bloquear conteúdo gerado pelo usuário no]**
+modo de edição do autorSe ativado, bloqueia o conteúdo gerado pelo usuário durante a edição no modo de autor.
 
-* **[!UICONTROL Título]** do JournalO título do blog a ser exibido na página.
+* **[!UICONTROL Título]**
+do journalO título do blog a ser exibido na página.
    >Nota:
    >O Título do Journal é usado para criar automaticamente o URL para o blog. No máximo 50 caracteres (com 5 caracteres adicionais para exclusividade) são usados no título do journal que você especificou aqui para criar o URL para o blog.
 
-* **[!UICONTROL Descrição]** do JournalA descrição do blog.
+* **[!UICONTROL Descrição]**
+do journalA descrição do blog.
 
 * **[!UICONTROL Tópicos por página]**
 
@@ -115,7 +124,7 @@ Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do b
 
 * **[!UICONTROL Permitir marcação]**
 
-   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia Campo **[!UICONTROL de]** tag). O padrão está desmarcado.
+   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia **[!UICONTROL Campo de tag]**). O padrão está desmarcado.
 
 * **[!UICONTROL Permitir carregamento de arquivos]**
 
@@ -123,11 +132,11 @@ Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do b
 
 * **[!UICONTROL Tamanho máximo do arquivo]**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+   Relevante somente se `Allow File Uploads` estiver marcado. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **[!UICONTROL Tipos de arquivos permitidos]**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **[!UICONTROL Tamanho máximo do arquivo de imagem a ser anexado]**
 
@@ -143,11 +152,11 @@ Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do b
 
 * **[!UICONTROL Permitir monitoramento]**
 
-   Se marcada, inclua o seguinte recurso para artigos de blog, que permite que os membros sejam [notificados](notifications.md) sobre novas publicações. O padrão está desmarcado.
+   Se marcada, inclua o seguinte recurso para artigos de blog, que permite que os membros sejam [notificados](notifications.md) de novas publicações. O padrão está desmarcado.
 
 * **[!UICONTROL Permitir assinaturas de email]**
 
-   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](email.md)email. O padrão está desmarcado.
+   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](subscriptions.md)). Exige que `Allow Following` seja verificado e [e-mail configurado](email.md). O padrão está desmarcado.
 
 * **[!UICONTROL Permitir votação]**
 
@@ -155,15 +164,15 @@ Na guia **[!UICONTROL Configurações]** , especifique os recursos básicos do b
 
 * **[!UICONTROL Exibir selos]**
 
-   Se marcada, exiba [crachás](implementing-scoring.md) ganhados e atribuídos com a entrada de blog de um membro. O padrão está desmarcado.
+   Se marcada, exiba os [emblemas](implementing-scoring.md) obtidos e atribuídos com a entrada de blog de um membro. O padrão está desmarcado.
 
 * **[!UICONTROL Ativar conteúdo em destaque]**
 
-   se marcada, a ideia pode ser identificada como conteúdo [em](featured.md)destaque. O padrão está desmarcado.
+   se marcada, a ideia pode ser identificada como [conteúdo em destaque](featured.md). O padrão está desmarcado.
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia Moderação **[!UICONTROL do]** usuário, especifique as configurações de moderação:
+Na guia **[!UICONTROL Moderação do usuário]**, especifique as configurações de moderação:
 
 * **[!UICONTROL Negar postagens]**
 
@@ -195,11 +204,11 @@ Na guia Moderação **[!UICONTROL do]** usuário, especifique as configurações
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia **[!UICONTROL Tag field]** (Campo de tag), especifique as tags que podem ser aplicadas se **[!UICONTROL Allow Tagging (Permitir marcação]** ) estiver marcado na guia **[!UICONTROL Settings (Configurações]** ):
+Na guia **[!UICONTROL Campo de tag]**, especifique as tags que podem ser aplicadas se **[!UICONTROL Permitir marcação]** estiver marcado na guia **[!UICONTROL Configurações]**:
 
 * **[!UICONTROL Espaços de nomes permitidos]**
 
-   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Configurações]** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Settings]**. As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **[!UICONTROL Limite sugerido]**
 
@@ -207,9 +216,9 @@ Na guia **[!UICONTROL Tag field]** (Campo de tag), especifique as tags que podem
 
 ### Configuração da barra lateral do blog {#configuring-blog-sidebar}
 
-Ao clicar com o duplo no `Blog Sidebar` componente, uma caixa de diálogo de edição é aberta.
+Ao clicar com o duplo no componente `Blog Sidebar`, uma caixa de diálogo de edição é aberta.
 
-Na guia Configurações **[!UICONTROL da barra lateral do]** Journal, especifique o formato de data para arquivos e que tipo de entradas serão exibidas na barra lateral:
+Na guia **[!UICONTROL Configurações da barra lateral do Journal]**, especifique o formato de data para arquivos e que tipo de entradas serão exibidas na barra lateral:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -243,7 +252,7 @@ Na guia Configurações **[!UICONTROL da barra lateral do]** Journal, especifiqu
 
    O número de artigos do blog a serem exibidos. Um valor de -1 significa sem limite. O padrão é -1.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
 No ambiente publish, o recurso blog exibirá o artigo mais recente do blog seguido de artigos mais antigos em blog em ordem decrescente de criação. As barras laterais do blog permitem que os visitantes do site apliquem filtros para limitar a seleção de artigos do blog exibidos.
 
@@ -265,13 +274,13 @@ Os artigos do blog aparecerão sob a guia apropriada (Publicado, Rascunhos ou Pr
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
-Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar tarefas [de](moderate-ugc.md) moderação (conforme permitido pela configuração do componente) em todos os artigos de blog e comentários publicados em um blog.
+Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar [tarefas de moderação](moderate-ugc.md) (conforme permitido pela configuração do componente) em todos os artigos de blog e comentários publicados em um blog.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 ### Membros {#members}
 
-Quando o usuário conectado é um membro da comunidade ou membro [](users.md#privileged-members-group) privilegiado (dependendo da configuração), ele pode selecionar `New Article` criar e publicar um novo artigo de blog.
+Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](users.md#privileged-members-group) (dependendo da configuração), ele poderá selecionar `New Article` para criar e publicar um novo artigo de blog.
 
 Concretamente, podem:
 
@@ -294,8 +303,8 @@ Os visitantes do site que não estão conectados só podem ler artigos e coment�
 
 Mais informações podem ser encontradas na página [Blog Essentials](blog-developer-basics.md) para desenvolvedores.
 
-Para moderação de entradas e comentários do blog, consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Para moderação de entradas e comentários do blog, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-Para marcar entradas de blog e comentários, consulte [Marcação de conteúdo](tag-ugc.md)gerado pelo usuário.
+Para marcar entradas e comentários no blog, consulte [Marcação de conteúdo gerado pelo usuário](tag-ugc.md).
 
-Para obter a tradução de entradas e comentários do blog, consulte [Traduzindo conteúdo](translate-ugc.md)gerado pelo usuário.
+Para obter a tradução de entradas e comentários do blog, consulte [Traduzindo conteúdo gerado pelo usuário](translate-ugc.md).
