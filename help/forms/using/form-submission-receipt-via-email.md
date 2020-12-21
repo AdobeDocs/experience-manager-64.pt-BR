@@ -19,37 +19,37 @@ ht-degree: 1%
 
 # Envio de uma confirmação de envio de formulário por email {#sending-a-form-submission-acknowledgement-via-email}
 
-## Submissão de dados do formulário adaptável {#adaptive-form-data-submission}
+## Envio de dados do formulário adaptável {#adaptive-form-data-submission}
 
-Os formulários adaptativos fornecem vários workflows de ações [de](/help/forms/using/configuring-submit-actions.md) envio prontos para uso para enviar os dados do formulário para diferentes pontos de extremidade.
+Os formulários adaptativos fornecem vários workflows [enviar ações](/help/forms/using/configuring-submit-actions.md) prontos para uso para enviar os dados do formulário para diferentes pontos de extremidade.
 
-Por exemplo, a ação de envio de ação **de** email envia um email sobre o envio bem-sucedido de um formulário adaptável. Também pode ser configurado para enviar os dados do formulário e o PDF no email.
+Por exemplo, a ação **Enviar por email** envia um email sobre o envio bem-sucedido de um formulário adaptável. Também pode ser configurado para enviar os dados do formulário e o PDF no email.
 
 Este artigo detalha as etapas para habilitar a ação Email em um formulário adaptável e em diferentes configurações fornecidas.
 
 >[!NOTE]
 >
->Também é possível usar a ação **Enviar PDF por** email para enviar o formulário preenchido como um anexo PDF. As opções de configuração disponíveis para esta ação são as mesmas opções disponíveis para a ação Email. A ação PDF por email está disponível somente para formulários adaptáveis baseados em XFA
+>Você também pode usar a ação **Enviar PDF por email** para enviar o formulário preenchido como um anexo PDF. As opções de configuração disponíveis para esta ação são as mesmas opções disponíveis para a ação Email. A ação PDF por email está disponível somente para formulários adaptáveis baseados em XFA
 
-## Email action {#email-action}
+## Ação de email {#email-action}
 
 A ação Email permite que um autor envie emails automaticamente para um ou mais recipient no envio bem-sucedido de um formulário adaptável.
 
 >[!NOTE]
 >
->Para usar a ação Email, é necessário configurar o serviço de email AEM conforme descrito em [Configuração do serviço](/help/sites-administering/notification.md#configuring-the-mail-service)de email.
+>Para usar a ação Email, é necessário configurar o serviço de email AEM conforme descrito em [Configuração do serviço de email](/help/sites-administering/notification.md#configuring-the-mail-service).
 
-### Ativação da ação Email em um formulário adaptável {#enabling-email-action-on-an-adaptive-form}
+### Ativando ação de email em um formulário adaptável {#enabling-email-action-on-an-adaptive-form}
 
 1. Abra um formulário adaptável no modo de edição.
 
-1. Clique em **Editar** ao lado do **Start da barra de ferramentas Formulário** adaptável.
+1. Clique em **Editar** ao lado do Start **de uma barra de ferramentas de Formulário adaptável**.
 
    A caixa de diálogo Editar componente é aberta.
 
    ![Editar a caixa de diálogo do componente para um formulário adaptável](assets/start_of_adp_form.png)
 
-1. Selecione a guia **Enviar ações** e escolha Ação **de** email na lista suspensa Enviar ação.
+1. Selecione a guia **Enviar ações** e escolha **Ação de email** na lista suspensa Enviar ação.
 
    A guia exibe as opções para configurar a ação Email para o formulário atual.
 
@@ -59,13 +59,13 @@ A ação Email permite que um autor envie emails automaticamente para um ou mais
 
    Especifique o assunto e o corpo do email nos campos Assunto e Modelo de email, respectivamente.
 
-   Também é possível especificar espaços reservados variáveis nos campos, caso em que os valores dos campos são processados quando o formulário é enviado com êxito por um usuário final. Para obter mais informações, consulte [Uso de nomes de campos de formulário adaptáveis para criar dinamicamente conteúdo](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p)de email.
+   Também é possível especificar espaços reservados variáveis nos campos, caso em que os valores dos campos são processados quando o formulário é enviado com êxito por um usuário final. Para obter mais informações, consulte [Usar nomes de campos de formulário adaptáveis para criar dinamicamente conteúdo de email](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Selecione Incluir anexos se o formulário incluir anexos de arquivo e você quiser anexar esses arquivos no email.
 
    >[!NOTE]
    >
-   >Se você escolher a ação **Enviar PDF por** email, deverá selecionar a opção Incluir anexos.
+   >Se você escolher a **ação Enviar PDF por email**, deverá selecionar a opção Incluir anexos.
 
 1. Clique em **OK** para salvar as alterações.
 
@@ -77,17 +77,17 @@ Na guia Ação de email, você pode usar espaços reservados que são processado
 
 Para definir um espaço reservado, especifique `${<field name>}` em um campo na guia Enviar ações.
 
-Por exemplo, se o formulário contiver o campo Endereço **de** email, nomeado `email_addr`, para capturar a ID de email de um usuário, você poderá especificar o seguinte nos campos Mailto, CC ou Cco.
+Por exemplo, se o formulário contiver o campo **Endereço de email**, chamado `email_addr`, para capturar a ID de email de um usuário, você poderá especificar o seguinte nos campos Mailto, CC ou Cco.
 
 `${email_addr}`
 
-Quando um usuário envia o formulário, um email é enviado para a ID de email inserida no `email_addr` campo do formulário.
+Quando um usuário envia o formulário, um email é enviado para a ID de email inserida no campo `email_addr` do formulário.
 
 >[!NOTE]
 >
 >Você pode encontrar o nome de um campo na caixa de diálogo **Editar** do campo.
 
-Os espaços reservados para variáveis também podem ser usados nos campos **Assunto** e modelo **de** email.
+Os espaços reservados de variáveis também podem ser usados nos campos **Assunto** e **Modelo de email**.
 
 Por exemplo:
 
