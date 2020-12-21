@@ -33,14 +33,14 @@ Informe os critérios básicos para realizar uma pesquisa geral. Se você inseri
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Pesquisa de processos.
 1. Na página Pesquisa de processos, em Pesquisa geral, forneça os seguintes critérios:
 
-   * **ID do processo:** O número inteiro positivo que identifica cada instância exclusiva do processo.
-   * **Status do processo:** Selecione um status na lista.
-   * **Aplicativo:** Selecione um aplicativo da lista. Somente aplicativos implantados são exibidos.
-   * **Nome do processo - Versão:** Selecione um nome de processo no menu. Somente os processos implantados são exibidos.
+   * **ID do processo:** o número inteiro positivo que identifica cada instância exclusiva do processo.
+   * **Status do processo:** selecione um status na lista.
+   * **Aplicativo:** selecione um aplicativo da lista. Somente aplicativos implantados são exibidos.
+   * **Nome do processo - Versão:** selecione um nome de processo no menu. Somente os processos implantados são exibidos.
 
 1. Clique em Pesquisar. A página Instância do processo é exibida, listando as instâncias encontradas.
 
-## Executar uma pesquisa detalhada por um processo {#perform-a-detailed-search-for-a-process}
+## Execute uma pesquisa detalhada para um processo {#perform-a-detailed-search-for-a-process}
 
 Você pode inserir atributos específicos para realizar uma pesquisa detalhada. Uma pesquisa detalhada é mais apropriada se você tiver muitas instâncias de processo em execução e precisar restringir as localizações possíveis por determinados critérios.
 
@@ -58,7 +58,7 @@ Você pode inserir atributos específicos para realizar uma pesquisa detalhada. 
 
 [Sobre os status da instância do processo](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Executar uma pesquisa combinada para um processo {#perform-a-combined-search-for-a-process}
+## Execute uma pesquisa combinada para um processo {#perform-a-combined-search-for-a-process}
 
 Para criar uma pesquisa com base em uma pesquisa geral e em uma pesquisa detalhada, com um E implícito entre as áreas, informe os critérios de pesquisa nas áreas Pesquisa Geral e Pesquisa Detalhada na página Pesquisa do Processo.
 
