@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Upgrade para o AEM 6.4 Forms{#upgrade-to-aem-forms}
+# Upgrade para AEM 6.4 Forms{#upgrade-to-aem-forms}
 
-AEM 6.4 A Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e aprimoramentos do AEM 6.4 Forms, consulte [Novo documento](/help/forms/using/whats-new.md)de resumo de recursos.
+AEM 6.4 A Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e melhorias do AEM 6.4 Forms, consulte [documento de resumo dos novos recursos](/help/forms/using/whats-new.md).
 
 Você pode atualizar seu LiveCycle existente ou a instalação do AEM Forms para obter novos recursos e aprimoramentos oferecidos no AEM 6.4 Forms e, ao mesmo tempo, reter dados, processos e ativos existentes intactos. Durante a atualização, os metadados e o estado dos processos também são preservados. Você pode escolher um caminho de atualização para começar a atualização.
 
