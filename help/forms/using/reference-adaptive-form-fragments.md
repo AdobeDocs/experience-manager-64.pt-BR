@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Referência a fragmentos de formulário adaptável {#reference-adaptive-form-fragments}
 
-[O fragmento](/help/forms/using/adaptive-form-fragments.md) de formulário adaptável é um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de forma fácil e rápida. É possível arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
+[O formulário adaptável ](/help/forms/using/adaptive-form-fragments.md) fragmenta um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de forma fácil e rápida. É possível arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
 
-Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no pacote AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Inclui os seguintes fragmentos:
+Para autores de formulários adaptáveis, fragmentos de referência são fornecidos no pacote AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
@@ -51,12 +51,12 @@ Inclui campos para capturar o número de telefone e o endereço de email.
 
 [Clique para ampliar](assets/contact-info-1.png)
 
-## Informações sobre cartão de crédito {#credit-card-information}
+## Informações do cartão de crédito {#credit-card-information}
 
 Inclui campos para capturar informações de cartão de crédito que podem ser usadas para processar pagamentos.
 [ ![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
-## Emprego Atual {#current-employment}
+## Emprego atual {#current-employment}
 
 Inclui campos para capturar detalhes atuais de emprego, como status de emprego, campo de emprego, designação, organização e data de adesão.
 ![Fragmento Emprego atual](assets/current-emp.png)
@@ -66,7 +66,7 @@ Inclui campos para capturar detalhes atuais de emprego, como status de emprego, 
 ## Informações de Dependentes {#dependents-information}
 
 Inclui campos para especificar informações sobre um ou mais dependentes, como nome, relacionamento e idade em um formato tabular.
-![Fragmento de informações dependentes](assets/dependents-info.png)
+![Fragmento de informações de dependentes](assets/dependents-info.png)
 
 [Clique para ampliar](assets/dependents-info-1.png)
 
