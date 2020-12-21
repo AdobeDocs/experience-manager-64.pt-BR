@@ -22,15 +22,15 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-FFmpeg é uma solução para conversão e streaming de áudio e vídeo e, quando instalada, é usada para transcodificação adequada de ativos [de](../../help/sites-authoring/default-components-foundation.md#video) vídeo, bem como para o recurso de ativação do AEM Communities.
+FFmpeg é uma solução para conversão e streaming de áudio e vídeo e, quando instalada, é usada para transcodificação adequada de [ativos de vídeo](../../help/sites-authoring/default-components-foundation.md#video), bem como para o recurso de ativação do AEM Communities.
 
 FFmpeg é usado no ambiente do autor para obter metadados para recursos de ativação carregados, bem como para gerar uma miniatura para exibição ao listar o recurso de ativação.
 
 ## Instalar FFmpeg {#installing-ffmpeg}
 
-FFmpeg deve ser instalado nos servidores que hospedam as instâncias do *autor* AEM.
+FFmpeg deve ser instalado nos servidores que hospedam as instâncias AEM *author*.
 
-1. Ir para [https://www.ffmpeg.org](https://www.ffmpeg.org/)
+1. Vá para [https://www.ffmpeg.org](https://www.ffmpeg.org/)
 1. Baixe a versão mais recente do FFmpeg para seu ambiente específico (Macintosh, Windows ou Linux)
 
    * é importante manter o FFmpeg atualizado devido a vulnerabilidades de segurança em versões mais antigas
@@ -41,7 +41,7 @@ FFmpeg deve ser instalado nos servidores que hospedam as instâncias do *autor* 
 
    Você deve ser capaz de executar FFmpeg a partir de qualquer diretório no seu sistema.
 
-   * for example, `ffmpeg -version`
+   * por exemplo, `ffmpeg -version`
 
 ## Configurar o serviço de transcodificação FFmpeg {#configure-ffmpeg-transcoding-service}
 
@@ -53,21 +53,21 @@ Para modificar o fluxo de trabalho Atualizar ativo DAM e, neste exemplo, desativ
 
 * Entre na instância do autor com privilégios administrativos
 * Da navegação global: **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**
-* Localizar ativo de atualização **[!UICONTROL DAM]**
-* Clique com o Duplo para abrir o fluxo de trabalho para edição na interface clássica
+* Localizar **[!UICONTROL Ativo de Atualização DAM]**
+* Clique com o duplo para abrir o fluxo de trabalho para edição na interface clássica
 
    Local resultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Clique com o Duplo na etapa de transcodificação **[!UICONTROL do]** FFmpeg para acessar a caixa de diálogo Propriedades da etapa
-* Na guia **[!UICONTROL Processo]** :
+* Clique com o duplo na etapa **[!UICONTROL FFmpeg transcoding]** para acessar a caixa de diálogo Propriedades da etapa
+* Na guia **[!UICONTROL Processo]**:
 
-   * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão:  `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* Selecione **[!UICONTROL OK]** para fechar a `Step Properties` caixa de diálogo
+* Selecione **[!UICONTROL OK]** para fechar a caixa de diálogo `Step Properties`
 
-* Selecione **[!UICONTROL Salvar]** para salvar o `DAM Update Asset` fluxo de trabalho
+* Selecione **[!UICONTROL Salvar]** para salvar o fluxo de trabalho `DAM Update Asset`
 
    (canto superior esquerdo)
 
