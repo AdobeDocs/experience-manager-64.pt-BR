@@ -34,7 +34,7 @@ O serviço de informação do sistema fornece um conjunto de REST APIs para recu
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[servidor]:[porta]/rest/services/SystemInfo.properties`</p></td> 
-   <td><p>Esta API é um invólucro para a API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> . Ele recupera a configuração do ambiente ativo atual. </p></td> 
+   <td><p>Esta API é um invólucro para <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API Java. Ele recupera a configuração do ambiente ativo atual. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 
