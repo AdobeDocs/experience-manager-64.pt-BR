@@ -24,7 +24,7 @@ A credencial contém informações que descrevem seu uso pretendido e que podem 
 
 1. Abra um navegador da Web e insira este URL:
 
-   http://localhost:*[port]*/ReaderExtensions (onde a *[porta]* é o número da porta do servidor de aplicativos)
+   http://localhost:*[porta]*/ReaderExtensions (em que *[porta]* é o número da porta do servidor de aplicativos)
 
 1. Faça logon usando o nome de usuário e a senha padrão:
 
