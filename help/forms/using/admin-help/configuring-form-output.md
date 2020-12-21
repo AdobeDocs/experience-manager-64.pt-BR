@@ -20,30 +20,30 @@ ht-degree: 1%
 
 # Configurar saída de formulário{#configuring-form-output}
 
-## Especificar o tipo de saída HTML retornado ao navegador da Web {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Especifique o tipo de saída HTML retornado ao navegador da Web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. No console de administração, clique em Serviços > formulários.
 1. Em Saída de formulário, na lista Tipo de saída, selecione uma das seguintes opções:
 
-   **HTML completo:** Para renderizar o formulário com tags HTML completas (uma página HTML completa). Esse valor é o padrão.
+   **HTML completo:** para renderizar o formulário com tags HTML completas (uma página HTML completa). Esse valor é o padrão.
 
-   **Corpo do formulário:** Para renderizar o formulário dentro de `<BODY>` tags (não uma página HTML completa).
+   **Corpo do formulário:** Para renderizar o formulário dentro de  `<BODY>` tags (não uma página HTML completa).
 
 1. Clique em Salvar.
 
-## Especificar o local onde o conteúdo PDF é renderizado {#specify-the-location-where-pdf-content-is-rendered}
+## Especifique o local onde o conteúdo PDF é renderizado {#specify-the-location-where-pdf-content-is-rendered}
 
 1. Em Saída de formulário, na Renderização na lista, selecione uma das seguintes opções:
 
-   **Cliente:** Para renderizar PDF forms no Adobe Acrobat ou Adobe Reader. A renderização no cliente melhora o desempenho de formulários AEM e se aplica somente à transformação PDFForm.
+   **Cliente:** para renderizar PDF forms no Adobe Acrobat ou Adobe Reader. A renderização no cliente melhora o desempenho de formulários AEM e se aplica somente à transformação PDFForm.
 
-   **Servidor:** Para renderizar PDF forms no servidor de aplicativos.
+   **Servidor:** para renderizar PDF forms no servidor de aplicativos.
 
-   **Automático:** Para renderizar o formulário PDF no local especificado pelo valor de `dynamicRender` configuração do arquivo XDP. Esse valor é o padrão.
+   **Automático:** para renderizar o formulário PDF no local especificado pelo valor de  `dynamicRender` configuração do arquivo XDP. Esse valor é o padrão.
 
 1. Clique em Salvar.
 
-## Configurar a invocação de scripts personalizados antes do envio do formulário {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Configurar a invocação de scripts personalizados antes do envio de formulários {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Execute as seguintes etapas para ativar o recurso:
 
