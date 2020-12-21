@@ -22,9 +22,9 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-A partir do [FP1](deploy-communities.md#latestfeaturepack)das Comunidades, os membros da comunidade podem interagir com a comunidade por email usando um recurso chamado subscrição.
+A partir de Communities [FP1](deploy-communities.md#latestfeaturepack), os membros da comunidade podem interagir com a comunidade por email usando um recurso chamado subscrição.
 
-As Subscrições são semelhantes às [notificações](notifications.md) , pois os membros podem se inscrever ao seguir artigos de blog, tópicos do fórum ou perguntas de QnA.
+As subscrições são semelhantes a [notificações](notifications.md), pois os membros podem se inscrever ao seguir artigos de blog, tópicos do fórum ou perguntas de QnA.
 
 O que distingue as subscrições das notificações é:
 
@@ -38,21 +38,21 @@ O que distingue as subscrições das notificações é:
 
 O email deve ser configurado para que as subscrições estejam funcionais e para que os membros respondam por email.
 
-Para obter instruções sobre como configurar e-mail, consulte [Configuração de e-mail](email.md).
+Para obter instruções sobre como configurar o email, consulte [Configuração do Email](email.md).
 
 **Ativar Subscrições e seguir**
 
-Os componentes devem ser configurados para ativar o subscrição *e* os seguintes itens. Os recursos que permitem o subscrição são [blog](blog-feature.md), [fórum](forum.md) e [QnA](working-with-qna.md).
+Os componentes devem ser configurados para habilitar os seguintes componentes do subscrição *e*. Os recursos que permitem o subscrição são [blog](blog-feature.md), [forum](forum.md) e [QnA](working-with-qna.md).
 
-## Subscrições a partir de {#subscriptions-from-following}
+## Subscrições de Seguir {#subscriptions-from-following}
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
-O botão **Seguir** fornece um meio de seguir entradas como atividades, subscrições e/ou notificações. Cada vez que o botão **Seguir** é selecionado, é possível ativar ou desativar uma seleção.
+O botão **Seguir** fornece um meio de seguir as entradas como atividades, subscrições e/ou notificações. Sempre que o botão **Seguir** for selecionado, é possível ativar ou desativar uma seleção.
 
-Se algum método de seguir for selecionado, o texto do botão mudará para **Seguinte**. Para sua conveniência, é possível selecionar `Unfollow All` alternar todos os métodos.
+Se algum método do seguinte for selecionado, o texto do botão mudará para **Seguindo**. Para conveniência, é possível selecionar `Unfollow All` para desativar todos os métodos.
 
-O botão **Seguir** incluirá a `Email Subscriptions` opção somente quando um fórum, QnA ou blog estiver configurado para ativar subscrições por email. Este botão será exibido
+O botão **Seguir** incluirá a opção `Email Subscriptions` apenas quando um fórum, QnA ou blog estiver configurado para ativar subscrições de e-mail. Este botão será exibido
 
 * Na página principal de recursos do fórum habilitado, QnA ou blog
 
@@ -64,13 +64,13 @@ O botão **Seguir** incluirá a `Email Subscriptions` opção somente quando um 
 
 ## Responder por email {#reply-by-email}
 
-Quando o email for [configurado para resposta por email](email.md#configure-polling-importer), o membro que se inscreveu receberá um email com o conteúdo publicado e um link para o conteúdo online.
+Quando o email for [configurado para responder por email](email.md#configure-polling-importer), o membro que se inscreveu receberá um email com o conteúdo publicado e um link para o conteúdo online.
 
 Se eles responderem ao email, o conteúdo digitado na resposta será exibido como conteúdo online.
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-O tempo necessário para uma resposta ser postada é controlado pelo intervalo [de atualização do importador da](email.md#configure-polling-importer)pesquisa.
+O tempo necessário para uma resposta ser postada é controlado pelo [intervalo de atualização do importador de pesquisa](email.md#configure-polling-importer).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
