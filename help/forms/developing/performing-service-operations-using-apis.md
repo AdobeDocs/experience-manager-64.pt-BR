@@ -2,7 +2,7 @@
 title: Execução de operações de serviço usando APIs
 seo-title: Execução de operações de serviço usando APIs
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: a5697c91-d643-4265-973c-18467ca0437a
 contentOwner: admin
 content-type: reference
@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# Execução de operações de serviço usando APIs {#performing-service-operations-using-apis}
+# Realização de operações de serviço usando APIs {#performing-service-operations-using-apis}
 
-Antes de start de desenvolver aplicativos clientes usando as APIs da AEM Forms, é recomendável ler Chamar o AEM Forms pela primeira vez, que descreve as diferentes maneiras de invocar os serviços. (Consulte container [de serviço](/help/forms/developing/service-container.md#service-container).)
+Antes de start de desenvolver aplicativos clientes usando as APIs da AEM Forms, é recomendável que você leia primeiro Chamar o AEM Forms, que descreve as diferentes maneiras de invocar os serviços. (Consulte [container de serviço](/help/forms/developing/service-container.md#service-container).)
 
 Depois de se familiarizar com os diferentes métodos de invocação, você pode aprender a interagir programaticamente com cada serviço. Você pode desenvolver um aplicativo cliente no Adobe Flex® Builder™, em um ambiente de desenvolvimento Java ou em um ambiente como o Microsoft Visual Studio .NET que permite usar o WSDL exposto para consumo em uma pilha SOAP nativa.
 
