@@ -24,19 +24,19 @@ Você pode definir uma mensagem a ser exibida na página de Boas-vindas na inter
 
 Se necessário, você pode usar as tags HTML suportadas pelo Adobe Flash® Player para formatar a aparência do texto:
 
-* &lt;a> Marca âncora
-* &lt;b> Marca em negrito
-* &lt;br> Marca de quebra
-* &lt;font> Marca de fonte
-* Marca &lt;img> Imagem
-* Marca &lt;i> Itálico
-* &lt;li> marca de item de Lista
-* &lt;p> Marca de parágrafo
-* tag &lt;span> Span
-* Marca de formato de texto &lt;textformat>
-* &lt;u> Marca sublinhada
+* &lt;a> Tag âncora&lt;/a>
+* &lt;b> Etiqueta Negrito&lt;/b>
+* &lt;br> Marca Break
+* &lt;font> Marca de fonte&lt;/font>
+* &lt;img> Tag de imagem
+* &lt;i> Tag itálico&lt;/i>
+* &lt;li> Etiqueta de item de lista
+* &lt;p> Tag de parágrafo
+* &lt;span> Tag Span&lt;/span>
+* &lt;textformat> Tag de formato de texto
+* &lt;u> Tag sublinhado&lt;/u>
 
-Para obter mais informações sobre as tags compatíveis, consulte a definição da `htmlText` propriedade para a classe TextField na Referência [de linguagem do](https://www.adobe.com/support/documentation/en/flex/)Flex.
+Para obter mais informações sobre as tags compatíveis, consulte a definição da propriedade `htmlText` para a classe TextField na [Referência de linguagem do Flex](https://www.adobe.com/support/documentation/en/flex/).
 
 ## Definir a mensagem do dia {#set-the-message-of-the-day}
 
