@@ -44,23 +44,23 @@ Esse console exibe os emblemas disponíveis no momento e a partir dos quais novo
 
 ## Criar selo {#create-badge}
 
-Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do crachá é armazenada no repositório em `/etc/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
+Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do selo é armazenada no repositório em `/etc/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
 
-Se o ambiente publish for um farm de editores, será necessário configurar a sincronização [](sync.md)do usuário.
+Se o ambiente publish for um farm de editores, será necessário configurar [sincronização do usuário](sync.md).
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **[!UICONTROL Carregar imagem]**
 
-   (*Obrigatório*) Uma imagem de emblema com um tamanho recomendado de 32 x 32 pixels em 72 dpi no formato JPEG ou PNG.
+   (*Obrigatório*) Uma imagem de emblema com um tamanho recomendado de 32 x 32 pixels a 72 dpi no formato JPEG ou PNG.
 
 * **[!UICONTROL Nome]**
 
-   (*Obrigatório*) O nome do crachá. É o nome padrão `Display Name` e o nome do nó do repositório. Se o nome do nó do repositório não `Name` for válido, ele será modificado.
+   (*Obrigatório*) O nome do crachá. É o `Display Name` padrão, bem como o nome do nó do repositório. Se `Name` não for um nome de nó de repositório válido, ele será modificado.
 
 * **[!UICONTROL Nome para exibição]**
 
-   (*Opcional*) O nome a ser exibido para o crachá na interface do usuário. Padrão é o texto inalterado inserido para o `Name`.
+   (*Opcional*) O nome a ser exibido para o crachá na interface do usuário. O padrão é o texto inalterado inserido para `Name`.
 
 * **[!UICONTROL Descrição]**
 
@@ -68,6 +68,6 @@ Se o ambiente publish for um farm de editores, será necessário configurar a si
 
 ## Informações adicionais {#additional-information}
 
-Para obter detalhes sobre como configurar regras de pontuação e marcação, consulte [Pontuação e Distintos](implementing-scoring.md).
+Para obter detalhes sobre como configurar regras de pontuação e marcação, consulte [Pontuação e Distinções](implementing-scoring.md).
 
-Para gerenciar emblemas para membros, consulte Console [](members.md)Membros.
+Para gerenciar emblemas para membros, consulte [Console Membros](members.md).
