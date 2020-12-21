@@ -20,13 +20,13 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando os serviços configurados em um modelo de dados de formulário a partir de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a `guidelib.dataIntegrationUtils.executeOperation` API no editor de código do editor [de](/help/forms/using/rule-editor.md)regras.
+A AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando os serviços configurados em um modelo de dados de formulário a partir de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` no editor de código do [editor de regras](/help/forms/using/rule-editor.md).
 
-Esse documento se concentra em escrever um JavaScript usando a `guidelib.dataIntegrationUtils.executeOperation` API para chamar um serviço.
+Este documento foca em gravar um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` para chamar um serviço.
 
 ## Uso da API {#using-the-api}
 
-A `guidelib.dataIntegrationUtils.executeOperation` API chama um serviço de dentro de um campo de formulário adaptável. A sintaxe da API é a seguinte:
+A API `guidelib.dataIntegrationUtils.executeOperation` chama um serviço de dentro de um campo de formulário adaptável. A sintaxe da API é a seguinte:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -40,7 +40,7 @@ A API exige os seguintes parâmetros.
 | `inputs` | Estrutura para especificar objetos de formulário cujos valores são inseridos na operação de serviço |
 | `outputs` | Estrutura para especificar objetos de formulário que serão preenchidos com os valores retornados pela operação de serviço |
 
-A estrutura da `guidelib.dataIntegrationUtils.executeOperation` API especifica detalhes sobre a operação do serviço. A sintaxe da estrutura é a seguinte.
+A estrutura da API `guidelib.dataIntegrationUtils.executeOperation` especifica detalhes sobre a operação do serviço. A sintaxe da estrutura é a seguinte.
 
 ```
 var operationInfo = {
@@ -87,9 +87,9 @@ A estrutura da API especifica os seguintes detalhes sobre a operação do servi�
 
 ## Exemplo de script para chamar um serviço {#sample-script-to-invoke-a-service}
 
-O script de amostra a seguir usa a `guidelib.dataIntegrationUtils.executeOperation` API para chamar a operação de `getAccountById` serviço configurada no modelo de dados de `employeeAccount` formulário.
+O script de exemplo a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para chamar a operação de serviço `getAccountById` configurada no modelo de dados de formulário `employeeAccount`.
 
-A `getAccountById` operação usa o valor no campo de `employeeID` formulário como entrada para o `empId` argumento e retorna o nome do funcionário, o número da conta e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor no `name` argumento é preenchido no elemento de `fullName` formulário e no valor do `accountNumber` argumento no elemento de `account` formulário.
+A operação `getAccountById` usa o valor no campo de formulário `employeeID` como entrada para o argumento `empId` e retorna o nome do funcionário, o número da conta e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor no argumento `name` é preenchido no elemento de formulário `fullName` e no valor do argumento `accountNumber` no elemento de formulário `account`.
 
 ```
 var operationInfo = {
