@@ -46,15 +46,15 @@ Para usar a opção Acessibilidade, siga estas etapas:
 
 ![Opções de acessibilidade em componentes de formulário](assets/accessibility-options.png)
 
-**Os autores do formulário de texto** personalizado fornecem o conteúdo na opção de acessibilidade Campo de texto Personalizado. A tecnologia de assistência, como leitores de tela, usa esse texto personalizado. Usar a configuração Título é a melhor opção na maioria dos cenários. Considere a criação de Texto Reader de tela personalizada somente ao usar o Título ou uma breve descrição não é possível.
+**Os autores de** TextForm personalizados fornecem o conteúdo na opção de acessibilidade Campo de texto Personalizado. A tecnologia de assistência, como leitores de tela, usa esse texto personalizado. Usar a configuração Título é a melhor opção na maioria dos cenários. Considere a criação de Texto Reader de tela personalizada somente ao usar o Título ou uma breve descrição não é possível.
 
-**Descrição** curta Para a maioria dos componentes, a descrição curta aparece no tempo de execução quando o usuário posiciona o ponteiro sobre o componente. É possível definir essa opção no campo de descrição curta, em opção de conteúdo de ajuda.
+**Breve** descriçãoPara a maioria dos componentes, a breve descrição aparece no tempo de execução quando o usuário posiciona o ponteiro sobre o componente. É possível definir essa opção no campo de descrição curta, em opção de conteúdo de ajuda.
 
-**Título** Use essa opção para permitir que a AEM Forms use o rótulo visual associado ao campo de formulário como o texto do leitor de tela.
+**** TítuloUse essa opção para permitir que o AEM Forms use o rótulo visual associado ao campo de formulário como o texto do leitor de tela.
 
-**Nome** Você pode especificar um valor no campo Nome da guia Vínculo. O nome não pode conter espaços.
+**** NomeVocê pode especificar um valor no campo Nome da guia Vínculo. O nome não pode conter espaços.
 
-**Nenhum** Selecionar Nenhum faz com que o objeto de formulário não tenha um nome no formulário publicado. Nenhum não é uma configuração recomendada para controles de formulário.
+**** NenhumA seleção de Nenhum faz com que o objeto de formulário não tenha um nome no formulário publicado. Nenhum não é uma configuração recomendada para controles de formulário.
 
 >[!NOTE]
 >
@@ -82,9 +82,9 @@ Os usuários portadores de deficiências visuais dependem de um alto contraste e
 
 É recomendável usar as cores padrão de fonte e plano de fundo — conteúdo em preto em um plano de fundo branco. Se você alterar as cores padrão, escolha uma cor escura do primeiro plano em uma cor clara do plano de fundo ou vice-versa.
 
-Consulte [Criar temas personalizados para formulários](/help/forms/using/creating-custom-adaptive-form-themes.md)adaptáveis para obter mais informações sobre como alterar o contraste e o tema das cores para os formulários adaptáveis.
+Consulte [Criar temas personalizados para formulários adaptáveis](/help/forms/using/creating-custom-adaptive-form-themes.md) para obter mais informações sobre como alterar o contraste de cores e o tema para os formulários adaptáveis.
 
-## Verifique se os controles de formulário são acessíveis ao teclado {#ensure-that-form-controls-are-keyboard-accessible}
+## Verifique se os controles de formulário estão acessíveis ao teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
 Um formulário acessível pode ser preenchido completamente usando apenas o teclado ou um dispositivo de entrada equivalente. Usuários com mobilidade reduzida ou visão deficiente podem não ter escolha senão usar o teclado e muitos usuários que podem usar o mouse preferem a entrada do teclado. Ao permitir os vários métodos de entrada, você não só cria formulários acessíveis, como também cria formulários mais adequados às preferências de todos os usuários.
 
