@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Modificação das configurações de conversão de Exportação de PDF {#modifying-the-pdf-export-conversion-settings}
+# Modificando as configurações de conversão de Exportação de PDF {#modifying-the-pdf-export-conversion-settings}
 
 Use o procedimento abaixo para modificar as configurações de conversão para exportar um PDF, um EPS, um DOC, um TXT, um RTF, um XML ou um arquivo HTML. Por padrão, o arquivo PDF usa as configurações padrão Salvar como definidas no Adobe Acrobat Professional ou Acrobat Standard. Por exemplo, as configurações padrão Salvar como no Acrobat para converter um arquivo PDF em EPS resultarão em apenas uma página do arquivo PDF convertida em EPS.
 
