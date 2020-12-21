@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Importação e exportação do arquivo de configuração {#importing-and-exporting-the-configuration-file}
+# Importando e exportando o arquivo de configuração {#importing-and-exporting-the-configuration-file}
 
 Use a página Configuração manual para baixar uma cópia das configurações no formato XML. As configurações neste arquivo controlam todas as preferências do servidor. Em seguida, você pode editar o arquivo e carregá-lo de volta ao servidor. Você também pode usar o arquivo para configurar outra instância de produto de formulários AEM.
 
