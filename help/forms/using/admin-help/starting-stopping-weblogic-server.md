@@ -51,7 +51,7 @@ Vários procedimentos exigem que você start ou pare a instância do WebLogic Se
 
 >[!NOTE]
 >
->Se você estiver executando o WebLogic Server no Red Hat® Enterprise Linux Advanced Server 4.0, defina a variável `LD_ASSUME_KERNEL` ambiente como 2.4.19 usando o `export LD_ASSUME_KERNEL=2.4.19` comando. Em seguida, execute o WebLogic Server a partir do mesmo shell no qual você definiu essa variável de ambiente.
+>Se você estiver executando o WebLogic Server no Red Hat® Enterprise Linux Advanced Server 4.0, defina a variável de ambiente `LD_ASSUME_KERNEL` como 2.4.19 usando o comando `export LD_ASSUME_KERNEL=2.4.19`. Em seguida, execute o WebLogic Server a partir do mesmo shell no qual você definiu essa variável de ambiente.
 
 ## Start WebLogic Server {#start-weblogic-server}
 
@@ -76,15 +76,15 @@ O console de administração do WebLogic Server não está mais disponível e o 
 
 ## Console de administração do Start WebLogic {#start-weblogic-administration-console}
 
-1. Se o WebLogic Admin Server ainda não estiver em execução, a partir de um prompt de comando, vá para o diretório raiz *[\user_projects\domains\[nome_do_domínio]]do *appserver e digite o seguinte comando:
+1. Se o WebLogic Admin Server ainda não estiver em execução, a partir de um prompt de comando, vá para o diretório *[appserver root]\user_projects\domains\[domainname]* e digite o seguinte comando:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Acesse o console de administração do WebLogic Server digitando `https://*[host name]:`[Porta] na linha de URL de um navegador da Web, onde `/console` Porta *[]* é a porta de escuta não segura. Por padrão, esse valor de porta é 7001.
+1. Acesse o console de administração do WebLogic Server digitando `https://*[host name]:`[Porta] `/console` na linha de URL de um navegador da Web, onde *[Porta]* é a porta de escuta não segura. Por padrão, esse valor de porta é 7001.
 1. Na tela de logon, digite o nome de usuário e a senha do administrador e clique em Login.
 
-## Gerenciador de nó de Start {#start-node-manager}
+## Gerenciador de Nó de start {#start-node-manager}
 
 1. Verifique se o WebLogic Server está em execução.
 1. Em um novo prompt de comando, vá para *[appserver root]*/server/bin.
@@ -93,7 +93,7 @@ O console de administração do WebLogic Server não está mais disponível e o 
    * (Windows) `startNodeManager.cmd`
    * (Linux, UNIX) `./startNodeManager.sh`
 
-## Parar Gerenciador de Nó {#stop-node-manager}
+## Parar o Gerenciador de Nó {#stop-node-manager}
 
 Depois de encerrar o WebLogic Server, você pode fechar o prompt de comando do qual chamou o Node Manager.
 
@@ -104,7 +104,7 @@ Depois de encerrar o WebLogic Server, você pode fechar o prompt de comando do q
 >Essa tarefa só pode ser executada depois que você criar um domínio WebLogic e um servidor gerenciado.
 
 1. Verifique se o WebLogic Server e o Gerenciador de nós estão em execução.
-1. Start do console de administração do WebLogic Server digitando nome `https://`*[do]host:[porta ]*`/console`na linha de URL de um navegador da Web.
+1. Start do console de administração do WebLogic Server digitando `https://`*[nome do host]:[porta ]*`/console` na linha de URL de um navegador da Web.
 1. Em Estrutura do domínio, clique em Ambiente > Servidores.
 1. No painel direito, clique na guia Controle.
 1. Selecione o servidor gerenciado que deseja start.
@@ -112,7 +112,7 @@ Depois de encerrar o WebLogic Server, você pode fechar o prompt de comando do q
 
 ## Parar um servidor gerenciado WebLogic {#stop-a-weblogic-managed-server}
 
-1. Start do console de administração do WebLogic Server digitando nome `https://`*[do]host:[porta ]*`/console`na linha de URL de um navegador da Web.
+1. Start do console de administração do WebLogic Server digitando `https://`*[nome do host]:[porta ]*`/console` na linha de URL de um navegador da Web.
 1. Em Estrutura do domínio, clique em Ambiente > Servidores.
 1. No painel direito, clique na guia Controle.
 1. Selecione o servidor gerenciado que deseja interromper.
