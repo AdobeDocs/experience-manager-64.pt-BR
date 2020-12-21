@@ -16,11 +16,11 @@ ht-degree: 0%
 ---
 
 
-# Apresentação do site de referência de autoatendimento do funcionário {#employee-self-service-reference-site-walkthrough}
+# Passagem do site de referência de autoatendimento do funcionário {#employee-self-service-reference-site-walkthrough}
 
 ## Pré-requisitos {#prerequisite}
 
-Configure os sites de referência conforme descrito em [Configurar e configurar os sites](/help/forms/using/setup-reference-sites.md)de referência da AEM Forms.
+Configure os sites de referência conforme descrito em [Configure e configure os sites de referência da AEM Forms](/help/forms/using/setup-reference-sites.md).
 
 ## Visão geral {#overview}
 
@@ -40,11 +40,13 @@ O departamento de Conformidade da organização de Sarah pediu aos funcionários
 
 ### Sarah submete o questionário Conflict of Interest {#sarah-submits-the-conflict-of-interest-questionnaire}
 
-Sarah vai ao portal de sua organização, faz logon e clica em Funcionário para acessar o painel do funcionário. Ela encontra um questionário Conflict of Interest no painel do funcionário e clica em **[!UICONTROL Apply (Aplicar]**).
+Sarah vai ao portal de sua organização, faz logon e clica em Funcionário para acessar o painel do funcionário. Ela encontra o questionário Conflict of Interest no painel do funcionário e clica **[!UICONTROL Apply]**.
 
-![we-finance-home](assets/we-finance-home.png)**Figura:** *Portal da organização*
+![we-finance-](assets/we-finance-home.png)
+**homeFigura:Portal** *da organização*
 
-![painel](assets/employee-dashboard.png)-funcionário **Figura:** *painel de funcionários*
+![funcionário-](assets/employee-dashboard.png)
+**dashboardFigura:painel** *Funcionário*
 
 Sarah navega o formulário usando o botão Avançar e lê pelas seções Introdução e Definição. Ela responde às perguntas na seção Perguntas. Por último, assina e envia o questionário.
 
@@ -62,13 +64,15 @@ O formulário adaptativo usa regras para mostrar e ocultar informações com bas
 
 Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e faça logon usando `srose/srose` como nome de usuário/senha para Sarah. Clique em **[!UICONTROL Funcionário]** para acessar o painel e clique em **[!UICONTROL Aplicar]** no questionário Conflito de interesses. Revise e envie o questionário.
 
-### Gloria revê e aprova a apresentação do questionário Conflict of Interest {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
+### Gloria revê e aprova a submissão ao questionário Conflict of Interest {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
 
 O questionário Conflict of Interest (Conflito de Interesses) apresentado por Sarah é enviado à Gloria Rios para revisão. Gloria trabalha como oficial de conformidade na organização. Gloria entra na sua caixa de entrada AEM e revisa as tarefas que lhe foram atribuídas. Ela aprova o questionário enviado pela Sarah e completa a tarefa.
 
-![caixa de entrada de conflito](assets/conflict-inbox.png)**Figura:** *Caixa de entrada de Gloria*
+![conflito-](assets/conflict-inbox.png)
+**caixa de entradaFigura:caixa de entrada de** *Gloria*
 
-![aprovada](assets/conflict-approved.png)por conflito **Figura:** *Abrir tarefa*
+![conflito ](assets/conflict-approved.png)
+**aprovadoFigura:tarefa** *aberta*
 
 **Como funciona**
 
@@ -80,19 +84,21 @@ A ação de envio no questionário Conflito de interesses aciona um fluxo de tra
 
 Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça logon usando `grios/password` como nome de usuário/senha para Gloria Rios. Abra a tarefa criada para o questionário Conflito de interesses e aprove-a.
 
-## Passeio pelo aplicativo de cartão corporativo {#corporate-card-application-walkthrough}
+## Passo a passo do aplicativo de cartão corporativo {#corporate-card-application-walkthrough}
 
 Sarah viaja muito por negócios e precisa de um cartão de crédito corporativo para pagar suas contas em movimento. Ela se candidata a um cartão corporativo através do portal de funcionários de sua organização.
 
-### Sarah submete o pedido de Cartão Corporativo {#sarah-submits-the-corporate-card-application}
+### Sarah submete o aplicativo Corporate Card {#sarah-submits-the-corporate-card-application}
 
-Sarah vai ao portal de sua organização, faz logon e clica em **[!UICONTROL Funcionário]** para acessar o painel do funcionário. Ela encontra o aplicativo Cartão corporativo no painel do funcionário e clica em **[!UICONTROL Aplicar]**.
+Sarah vai ao portal, faz login e clica em **[!UICONTROL Funcionário]** para acessar o painel do funcionário. Ela encontra o aplicativo Cartão corporativo no painel do funcionário e clica em **[!UICONTROL Aplicar]**.
 
-![we-finance-home-1](assets/we-finance-home-1.png)**Figura:** *Portal da organização*
+![we-finance-home-1](assets/we-finance-home-1.png)
+**Figura:Portal** *da organização*
 
-![worker-painel-1](assets/employee-dashboard-1.png)**Figura:** *painel de funcionários*
+![painel-funcionário-1](assets/employee-dashboard-1.png)
+**Figura:painel** *do funcionário*
 
-Ela clica em **[!UICONTROL Aplicar]** no aplicativo Cartão corporativo. Um aplicativo de página única é aberto. Ela preenche todos os detalhes e clica em **[!UICONTROL Aplicar]** para enviar a solicitação.
+Ela clica em **[!UICONTROL Aplicar]** no aplicativo Cartão corporativo. Um aplicativo de página única é aberto. Ela preenche todos os detalhes e clica em **[!UICONTROL Aplicar]** para enviar o aplicativo.
 
 ![forma de cartão](assets/card-form.png)
 
@@ -111,9 +117,11 @@ Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-
 
 O pedido de cartão corporativo apresentado por Sarah é atribuído a Gloria Rios para revisão. Gloria entra na sua caixa de entrada AEM e revisa as tarefas que lhe foram atribuídas. Ela aprova o pedido enviado por Sarah e completa a tarefa.
 
-![caixa de entrada](assets/corporate-card-inbox.png)de cartão corporativo **Figura:** *Caixa de entrada de Gloria*
+![Corporate-card-](assets/corporate-card-inbox.png)
+**inboxFigura:Caixa de entrada de** *Gloria*
 
-![aprovado](assets/corporate-card-approved.png)pela placa corporativa **Figura:** *Abrir tarefa*
+![placa corporativa-](assets/corporate-card-approved.png)
+**aprovadaFigura:tarefa** *aberta*
 
 **Como funciona**
 
@@ -129,13 +137,15 @@ Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login
 
 Como Sarah passa durante viagens de negócios, ela precisa submeter relatórios de despesas para aprovação. A opção de autoatendimento em sua organização permite que ela envie o relatório de despesas on-line.
 
-### Sarah submete a aplicação Relatório de Despesas {#sarah-submits-the-expense-report-application}
+### Sarah submete o aplicativo Relatório de Despesas {#sarah-submits-the-expense-report-application}
 
-Sarah vai ao portal de sua organização, faz logon e clica em **[!UICONTROL Funcionário]** para acessar o painel do funcionário. Ela encontra o aplicativo Relatório de despesas no painel do funcionário e clica em **[!UICONTROL Aplicar]**.
+Sarah vai ao portal, faz login e clica em **[!UICONTROL Funcionário]** para acessar o painel do funcionário. Ela encontra o aplicativo Relatório de despesas no painel do funcionário e clica em **[!UICONTROL Aplicar]**.
 
-![we-finance-home-2](assets/we-finance-home-2.png)**Figura:** *Portal da organização*
+![we-finance-home-2](assets/we-finance-home-2.png)
+**Figura:Portal** *da organização*
 
-![worker-painel-2](assets/employee-dashboard-2.png)**Figura:** *painel de funcionários*
+![painel-funcionário-2](assets/employee-dashboard-2.png)
+**Figura:painel** *do funcionário*
 
 Ela clica em **[!UICONTROL Aplicar]** no aplicativo Relatório de despesas. Um formulário de aplicativo é aberto, com duas guias: Nome do relatório e Detalhes do relatório. O ícone **+** na guia Detalhes do relatório permite que ela adicione mais de dispêndios em um relatório.
 
@@ -147,19 +157,21 @@ O portal da organização e os aplicativos são responsivos e compatíveis com d
 
 O portal da organização e o painel do funcionário são páginas do AEM Sites. O painel lista várias opções de autoatendimento, como o aplicativo Relatório de despesas. O botão Aplicar está vinculado a um formulário adaptável.
 
-As guias Nome do relatório e Detalhes do relatório no formulário adaptativo são componentes do Painel. O painel Detalhes do relatório contém o painel Despesas. É um painel repetível que permite adicionar vários dispêndios no relatório. Consulte o formulário adaptável e suas configurações em `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
+As guias Nome do relatório e Detalhes do relatório no formulário adaptativo são componentes do Painel. O painel Detalhes do relatório contém o painel Despesas. É um painel repetível que permite adicionar vários dispêndios no relatório. Revise o formulário adaptável e suas configurações em `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
 
 **Veja você mesmo**
 
-Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e faça logon usando `srose/srose` como nome de usuário/senha para Sarah. Clique em **[!UICONTROL Funcionário]** para acessar o painel e clique em **[!UICONTROL Aplicar]** no aplicativo Relatório de despesas. Preencha os detalhes e envie o pedido.
+Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e faça logon usando `srose/srose` como nome de usuário/senha para Sarah. Clique em **[!UICONTROL Funcionário]** para acessar o painel e clique em **[!UICONTROL Aplicar]** no aplicativo Relatório de Despesas. Preencha os detalhes e envie o pedido.
 
 ### Gloria revisa e aprova o relatório de despesas {#gloria-reviews-and-approves-the-expense-report}
 
 O relatório de despesas enviado por Sarah é atribuído a Gloria Rios para revisão. Gloria entra na sua caixa de entrada AEM e revisa as tarefas que lhe foram atribuídas. Ela aprova o pedido enviado por Sarah e completa a tarefa.
 
-![caixa de entrada](assets/expense-report-inbox.png)de relatório de despesas **Figura:** *Caixa de entrada de Gloria*
+![relatório de despesas-](assets/expense-report-inbox.png)
+**caixa de entradaFigura:caixa de entrada de** *Gloria*
 
-![relatório de despesas aprovado](assets/expense-report-approved.png)**Figura:** *Abrir tarefa*
+![relatório de despesas ](assets/expense-report-approved.png)
+**aprovadoFigura:tarefa** *aberta*
 
 **Como funciona**
 
@@ -175,25 +187,27 @@ Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login
 
 Sarah está planejando umas férias de família no mês que vem e quer se candidatar por uma semana de licença do trabalho.
 
-### Sarah submete o pedido de licença {#sarah-submits-the-leave-application}
+### Sarah submete o aplicativo de licença {#sarah-submits-the-leave-application}
 
-Sarah vai ao portal de sua organização, faz logon e clica em **[!UICONTROL Funcionário]** para acessar o painel do funcionário. Ela encontra o aplicativo de licença no painel do funcionário e clica em **[!UICONTROL Aplicar]**.
+Sarah vai ao portal, faz login e clica em **[!UICONTROL Funcionário]** para acessar o painel do funcionário. Ela encontra o aplicativo de licença no painel do funcionário e clica em **[!UICONTROL Apply]**.
 
-![we-finance-home-3](assets/we-finance-home-3.png)**Figura:** *Portal da organização*
+![we-finance-home-3](assets/we-finance-home-3.png)
+**Figura:Portal** *da organização*
 
-![worker-painel-3](assets/employee-dashboard-3.png)**Figura:** *painel de funcionários*
+![painel-funcionário-3](assets/employee-dashboard-3.png)
+**Figura:painel** *do funcionário*
 
 O aplicativo de sair é aberto com o nome da Sarah e a ID do funcionário pré-preenchidos no formulário. Também mostra seu equilíbrio de licenças e sua história. Ela preenche os detalhes da licença e submete o pedido de aprovação.
 
 O portal da organização e os aplicativos são responsivos e compatíveis com dispositivos móveis. O fluxo de trabalho a seguir mostra como Sarah navega e envia o aplicativo para seu dispositivo móvel.
 
-![forma-livre-móvel](assets/leave-form-on-mobile.png)
+![forma livre em dispositivo móvel](assets/leave-form-on-mobile.png)
 
 **Como funciona**
 
 O portal da organização e o painel do funcionário são páginas do AEM Sites. O painel lista várias opções de autoatendimento, como deixar o aplicativo. O botão Aplicar está vinculado a um formulário adaptável.
 
-O formulário adaptável para o aplicativo de licença baseia-se no Modelo de dados de formulário de Folhas do Funcionário. Na seção Saldo de Deixe, a tabela de saldo de esquerda é preenchida usando o serviço Modelo de Dados de `getLeavesOf` Formulário. Os campos de datas Start e Final usam regras para validar se os valores de data são iguais ou posteriores à data atual. A duração da licença é calculada usando a `calcBusinessDays` função.
+O formulário adaptável para o aplicativo de licença baseia-se no Modelo de dados de formulário de Folhas do Funcionário. Na seção Saldo de Licença, a tabela de saldo de esquerda é preenchida usando o serviço `getLeavesOf` do Modelo de Dados de Formulário. Os campos de datas Start e Final usam regras para validar se os valores de data são iguais ou posteriores à data atual. A duração da licença é calculada usando a função `calcBusinessDays`.
 
 É possível revisar o formulário adaptável e o Modelo de dados de formulário nos seguintes locais:
 
@@ -205,13 +219,15 @@ O formulário adaptável para o aplicativo de licença baseia-se no Modelo de da
 
 Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e faça logon usando `srose/srose` como nome de usuário/senha para Sarah. Clique em **[!UICONTROL Funcionário]** para acessar o painel e clique em **[!UICONTROL Aplicar]** em Sair do aplicativo. Preencha os detalhes e envie o pedido.
 
-### Gloria revisa e aprova o pedido de licença {#gloria-reviews-and-approves-the-leave-application}
+### Gloria revisa e aprova o aplicativo de licença {#gloria-reviews-and-approves-the-leave-application}
 
 O pedido de licença apresentado pela Sarah é entregue à Gloria Rios para revisão. Gloria entra na sua caixa de entrada AEM e revisa as tarefas que lhe foram atribuídas. Ela aprova o pedido enviado por Sarah e completa a tarefa.
 
-![sair da caixa](assets/leave-inbox.png)de entrada **Figura:** *Caixa de entrada de Gloria*
+![left-](assets/leave-inbox.png)
+**inboxFigure:Caixa de entrada de** *Gloria*
 
-![aprovada](assets/leave-approved.png)pela **Festa:** *Abrir tarefa*
+![seta ](assets/leave-approved.png)
+**aprovada pela esquerdaFigura:tarefa** *aberta*
 
 **Como funciona**
 
