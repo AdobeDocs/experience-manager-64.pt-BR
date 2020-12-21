@@ -1,8 +1,8 @@
 ---
 title: Fragmentos do documento
 seo-title: Fragmentos do documento
-description: Fragmentos de Documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
-seo-description: Fragmentos de Documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
+description: Fragmentos de documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
+seo-description: Fragmentos de documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
 uuid: 053a17e5-69a5-463d-af4f-46a86534158f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Fragmentos do documento {#document-fragments}
 
-Os fragmentos de Documento são partes/componentes reutilizáveis de uma correspondência que pode ser usada para compor Comunicações/letras interativas. Os fragmentos de documento são dos seguintes tipos:
+Os fragmentos de documento são partes/componentes reutilizáveis de uma correspondência que pode ser usada para compor Comunicações/letras interativas. Os fragmentos de documento são dos seguintes tipos:
 
 * **Texto**: Um ativo de texto é um conteúdo que consiste em um ou mais parágrafos de texto. Um parágrafo pode ser estático ou dinâmico.
 
