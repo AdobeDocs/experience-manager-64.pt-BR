@@ -1,8 +1,8 @@
 ---
 title: Fragmentos do documento
 seo-title: Fragmentos do documento
-description: Fragmentos de Documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
-seo-description: Fragmentos de Documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
+description: Fragmentos de documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
+seo-description: Fragmentos de documento, como Fragmentos de texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permite que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
 uuid: d1baa9eb-dffe-4e02-af95-394e7ee0d6ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Fragmentos do documento {#document-fragments-1}
 
-Os fragmentos de Documento são partes/componentes reutilizáveis de uma correspondência que pode ser usada para compor letras/correspondência. Os fragmentos de documento são dos seguintes tipos:
+Os fragmentos de documento são partes/componentes reutilizáveis de uma correspondência que pode ser usada para compor letras/correspondência. Os fragmentos de documento são dos seguintes tipos:
 
 * **Texto**: Um ativo de texto é um conteúdo que consiste em um ou mais parágrafos de texto. Um parágrafo pode ser estático ou dinâmico.
 * **Lista**: Lista é um grupo de fragmentos de documento, incluindo texto, listas, condições e imagens. A ordem dos elementos de lista pode ser fixa ou editável. Ao criar uma carta, você pode usar alguns ou todos os elementos da lista para replicar um padrão reutilizável de elementos.
@@ -40,11 +40,11 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 >
 >Os modelos de Gerenciamento de correspondência não o forçam a criar nomes exclusivos ao criar espaços reservados. Se você criar dois espaços reservados com o mesmo nome, como um texto e uma condição, e usá-los em um modelo de carta, os valores do espaço reservado inserido pela última vez serão usados para ambos os espaços reservados. Se dois espaços reservados tiverem o mesmo nome, seus tipos serão comparados. Se os tipos forem diferentes, seu tipo se tornará String. No entanto, em um módulo, não é possível criar vários espaços reservados com o mesmo nome.
 
-### Create text {#create-text}
+### Criar texto {#create-text}
 
-1. Selecione **Forms** > Fragmentos **do** Documento.
+1. Selecione **Forms** > **Fragmentos de Documento**.
 
-1. Toque em **Criar** > **Texto.** Ou selecione um ativo de texto e toque em **Editar**.
+1. Toque em **Criar** > **Texto.** Ou selecione um ativo de texto e toque em  **Editar**.
 1. Especifique as seguintes informações para o texto:
 
    * **Título: (Opcional)** Insira o título do ativo de texto. Os títulos não precisam ser exclusivos e podem ter caracteres especiais e caracteres não ingleses. Os textos são referenciados por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
@@ -53,11 +53,11 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
    * **Dicionário** de dados: Como opção, selecione o dicionário de dados no qual deseja mapear. Esse atributo permite que você adicione referências aos elementos do dicionário de dados no ativo de texto.
    * **Tags**: Como opção, para criar uma tag personalizada insira um valor no campo de texto e pressione Enter. Você pode ver sua tag abaixo do campo de texto das tags. Quando você salva esse texto, as tags recém-adicionadas também são criadas.
 
-1. Toque em **Avançar**. O Gerenciamento de correspondência exibe a página Editor, na qual você pode adicionar parágrafos de texto e elementos de dados ao texto.
+1. Toque em **Next**. O Gerenciamento de correspondência exibe a página Editor, na qual você pode adicionar parágrafos de texto e elementos de dados ao texto.
 
-   O verificador ortográfico padrão em seu navegador verifica a ortografia no Editor de texto. Para gerenciar a ortografia e a verificação gramatical, edite as configurações do verificador ortográfico do seu navegador ou instale plug-ins/suplementos do navegador para verificar a ortografia e a gramática.
+   O verificador ortográfico padrão em seu navegador verifica a ortografia no Editor de texto. Para gerenciar a ortografia e a verificação gramatical, edite as configurações do verificador ortográfico do navegador ou instale plug-ins/suplementos do navegador para verificar a ortografia e a gramática.
 
-   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre atalhos de teclado do Editor [de](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) texto em Atalhos de teclado do Gerenciamento de correspondência.
+   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre os atalhos de teclado do Editor de texto[ em Atalhos de teclado do Gerenciamento de correspondência.](/help/forms/using/keyboard-shortcuts.md#p-formatting-p)
 
 1. Um editor de texto é aberto e insere o texto. Use a barra de ferramentas na parte superior da página para formatar o texto, inserir condições, links e quebras de página.
 
@@ -66,7 +66,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
    **Figura:** *Barra de ferramentas*
 
-   * **Link**: Inserir link de hipertexto no texto. Toque em **[!UICONTROL Link]**, especifique o link no campo **[!UICONTROL URL]** , remova o nome do objeto padrão do campo Texto **** alternativo e toque em ![Salvar](assets/save_icon.svg).
+   * **Link**: Inserir link de hipertexto no texto. Toque em **[!UICONTROL Link]**, especifique o link no campo **[!UICONTROL URL]**, remova o nome do objeto padrão do campo **[!UICONTROL Texto alternativo]** e toque em ![Salvar](assets/save_icon.svg).
    * **Repetir**: Repetir imprime o elemento de coleta no Dicionário de dados usando um delimitador.
    * **Condição**: Toque em para inserir uma condição. Inserir texto com base na condição. Se a condição for verdadeira, o texto estará visível na letra, caso contrário não.
    * **Adicionar descrição**: Adicione uma anotação a um texto. Esses são metadados visíveis para o autor, mas não são parte da carta criada.
@@ -80,15 +80,15 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
    ![Barra de ferramentas Parágrafo](assets/fonteditingtoolbar.png)
 
-   **Figura:** *Barra de ferramentas Parágrafo*
+   **Figura:Barra de ferramentas** *Parágrafo*
 
    ![Barra de ferramentas Alinhamento](assets/paragrapheditingtoolbar.png)
 
-   **Figura:** *Barra de ferramentas Alinhamento*
+   **Figura: Barra de ferramentas** *Alinhamento*
 
    ![Barra de ferramentas Listagem](assets/bulleteditingtoolbar.png)
 
-   **Figura:** *Barra de ferramentas Listagem*
+   **Figura:Barra de ferramentas** *Listagem*
 
 1. Para reutilizar um ou mais parágrafos de texto existentes em outro aplicativo, como em páginas do MS Word ou HTML, copie e cole o texto no editor de texto. A formatação do texto copiado é retida no editor de texto.
 
@@ -112,13 +112,13 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
    ![caracteres especiais](assets/specialcharacters.png)
 
-   O Gerenciamento de correspondência tem suporte integrado para 210 caracteres especiais. O administrador pode [adicionar suporte para caracteres especiais mais/personalizados por personalização](/help/forms/using/custom-special-characters.md).
+   O Gerenciamento de correspondência tem suporte integrado para 210 caracteres especiais. O administrador pode [adicionar suporte para caracteres especiais mais/personalizados ao personalizar](/help/forms/using/custom-special-characters.md).
 
 1. Para realçar\enfatizar partes de texto em um módulo incorporado editável, selecione o texto e toque em Realçar cor.
 
    ![textbackground aplicado](assets/textbackgroundcolorapplied.png)
 
-   Você pode tocar diretamente em uma cor básica **`[A]`** presente na paleta Cores básicas ou tocar em **Selecionar** depois de usar o controle deslizante **`[B]`** para escolher o tom apropriado da cor.
+   Você pode tocar diretamente em uma cor básica **`[A]`** presente na paleta Cores básicas ou tocar em **Selecionar** depois de usar o controle deslizante **`[B]`** para escolher a sombra apropriada da cor.
 
    Opcionalmente, você também pode ir para a guia Avançado para selecionar a Matiz, a Luminosidade e a Saturação apropriadas **`[C]`** para criar a cor precisa e, em seguida, tocar em Selecionar **`[D]`** para aplicar a cor para realçar o texto.
 
@@ -133,13 +133,13 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
    ![Elementos de espaço reservado](assets/placeholder_elements_in_xmldata.png)
 
-   **Figura:** *Elementos de espaço reservado conforme especificado no arquivo de dados de amostra de um Dicionário de dados*
+   **Figura: Elementos de** *espaço reservado conforme especificados no arquivo de dados de amostra de um Dicionário de dados*
 
    ![Elementos de espaço reservado na carta](assets/placeholder_elements_in_text.png)
 
-   **Figura:** *Valores do elemento de espaço reservado na visualização CCR preenchidos a partir das variáveis do Dicionário de dados, conforme especificado no arquivo de dados de amostra*
+   **Figura: Valores de elementos de** *espaço reservado na visualização CCR preenchidos a partir das variáveis do Dicionário de dados, conforme especificado no arquivo de dados de amostra*
 
-1. Você pode usar condições embutidas e repetir para tornar sua carta altamente contextual e bem estruturada. Para obter mais informações sobre a condição em linha e repetir, consulte Condições em [linha e repetir em letras](/help/forms/using/cm-inline-condition.md).
+1. Você pode usar condições embutidas e repetir para tornar sua carta altamente contextual e bem estruturada. Para obter mais informações sobre a condição em linha e repetir, consulte [Condições em linha e repita em letras](/help/forms/using/cm-inline-condition.md).
 1. Toque em **Salvar**.
 
 #### Como pesquisar e substituir texto {#searching-and-replacing-text}
@@ -157,21 +157,21 @@ O recurso Localizar e substituir permite que você procure (e substitua) qualque
 
 1. Para procurar a próxima instância do texto, pressione Localizar novamente.
 
-   Se você continuar pressionando o botão Localizar, a pesquisa continuará para baixo na página. Após a última instância do texto ser encontrada, a mensagem **Alcançado o fim do módulo** indica que não foram encontrados mais resultados de pesquisa.
+   Se você continuar pressionando o botão Localizar, a pesquisa continuará para baixo na página. Após a última instância do texto ser encontrada, a mensagem **Fim alcançado do módulo** indica que não foram encontrados mais resultados de pesquisa.
 
-   No entanto, se nenhuma instância do texto de pesquisa for encontrada no módulo de texto, a mensagem exibida será: **Correspondência não encontrada**.
+   No entanto, se nenhuma instância do texto de pesquisa for encontrada no módulo de texto, a mensagem exibida será: **Correspondência Não Encontrada**.
 
 1. Se você pressionar Localizar novamente, a pesquisa continuará na parte superior da página.
 
 #### Opções de pesquisa {#search-options}
 
-**Caso de correspondência:** A pesquisa retorna os resultados somente com a mesma letra maiúscula.
+**Caso de correspondência:** a pesquisa retorna resultados somente com a mesma letra maiúscula.
 
-**Palavra inteira:** A pesquisa retorna somente palavras inteiras.
+**Palavra inteira:** a pesquisa retorna somente palavras inteiras.
 
 **Observação:** Se você inserir caracteres especiais na caixa de texto Localizar, a opção Palavra inteira será desativada.
 
-**Reg ex:** Pesquise usando expressões regulares. Por exemplo, a expressão regular a seguir procura endereços de email em um módulo de texto:
+**Reg ex:** pesquisa usando expressões regulares. Por exemplo, a expressão regular a seguir procura endereços de email em um módulo de texto:
 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}`
 
@@ -196,14 +196,14 @@ O recurso Localizar e substituir permite que você procure (e substitua) qualque
 * Use o vínculo de dicionário de dados apropriado em módulos de texto.
 * As seguintes regras se aplicam ao usar o Editor de texto ao alterar um ativo de texto:
 
-   * **Adição da variável:** Permitido
-   * **Remoção da variável:** Permitido
-   * **Atualização das propriedades:** Permitido
+   * **Adição de variável:** Permitida
+   * **Remoção da variável:** Permitida
+   * **Atualização de propriedades:** Permitido
    * **Alteração do dicionário de dados:** Permitido até que o elemento do dicionário de dados não seja usado. Não é possível alterar o dicionário de dados ao atualizar.
 
 ## Lista {#list}
 
-Uma lista é um grupo de fragmentos de documento, incluindo texto, (outras) listas, condições e imagens. A ordem dos elementos de lista pode ser fixa ou editável. Ao criar uma carta, você pode usar alguns ou todos os elementos da lista para replicar um padrão reutilizável de elementos. As Listas se comportam basicamente como públicos alvos que podem ser aninhados dentro de outros públicos alvos.
+Uma lista é um grupo de fragmentos de documento, incluindo texto, (outras) listas, condições e imagens. A ordem dos elementos de lista pode ser fixa ou editável. Ao criar uma carta, você pode usar alguns ou todos os elementos da lista para replicar um padrão reutilizável de elementos. As listas se comportam basicamente como públicos alvos que podem ser aninhados dentro de outros públicos alvos.
 
 ### Implementando listas {#implementing-lists}
 
@@ -214,10 +214,10 @@ A implementação de listas consiste em duas etapas:
 
 ### Criar uma lista {#create-a-list}
 
-Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo de carta como uma única unidade. Qualquer tipo de conteúdo pode ser adicionado a uma lista. Listas também podem ser aninhadas. Os módulos de Lista podem ser especificados como:
+Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo de carta como uma única unidade. Qualquer tipo de conteúdo pode ser adicionado a uma lista. Listas também podem ser aninhadas. Os módulos de lista podem ser especificados como:
 
 * **PEDIDO**: A ordem não pode ser alterada no tempo de execução Criar correspondência.
-* **Acesso**&#x200B;à biblioteca: Os usuários podem adicionar módulos à lista. Esse sinalizador especifica se o acesso à biblioteca está ativado. Se ativado (aberto), o usuário pode adicionar módulos à lista ao visualizar a carta.
+* **Acesso** à biblioteca: Os usuários podem adicionar módulos à lista. Esse sinalizador especifica se o acesso à biblioteca está ativado. Se ativado (aberto), o usuário pode adicionar módulos à lista ao visualizar a carta.
 * Ao criar uma lista, você pode especificar um tipo, como:
 * **Simples**: Nenhuma formatação de estilo adicional é aplicada à lista.
 * **Com marcadores**: Uma lista formatada com um marcador simples.
@@ -225,19 +225,19 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 * **Carta**: Uma lista alfabética com a escolha de letras minúsculas (a,b,...) e maiúsculas (A,B,...).
 * **Personalizado**: Você pode criar qualquer tipo numerado/alfabetizado e valores de prefixo e sufixo de sua escolha.
 
-1. Selecione **Forms** > Fragmentos **do** Documento.
+1. Selecione **Forms** > **Fragmentos de Documento**.
 
 1. Selecione **Criar** > **Lista**.
 
 1. Especifique as seguintes informações para a lista:
 
-   * **Título (opcional): Insira** o título da lista. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês. As Listas são referenciadas por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
+   * **Título (opcional):** Insira o título da lista. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês. As listas são referenciadas por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
    * **Nome:** O nome exclusivo da lista. Não podem existir dois ativos (texto, condição ou lista) em qualquer estado com o mesmo nome. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é automaticamente preenchido com o valor no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
    * **Descrição (Opcional)**: Digite uma descrição do ativo.
    * **Dicionário de dados (opcional)**: Como opção, selecione o dicionário de dados ao qual deseja se conectar. Somente ativos que usam o mesmo dicionário de dados que a lista, ou ativos sem dicionário de dados atribuído, podem ser adicionados à lista. Atribuir um dicionário de dados a uma lista facilita que a pessoa que cria um modelo de carta localize a lista apropriada.
    * **Tags (opcional)**: Selecione as tags a serem aplicadas. Você também pode digitar o nome de uma nova tag e criá-la. (A nova tag é criada quando você toca em **Salvar**.)
 
-1. Toque em **Avançar**.
+1. Toque em **Next**.
 1. Toque em **Adicionar ativo**.
 1. Para adicionar ativos à lista, selecione-os na página Selecionar ativos e toque em **Concluído**.
 
@@ -245,28 +245,28 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 
 1. Os ativos são adicionados à página Itens de Lista.
 
-   Para alterar a ordem dos ativos na lista, toque e segure o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de carta na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
+   Para alterar a ordem dos ativos na lista, toque e segure o ícone de setas ( ![dragndrop](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de carta na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
 
    ![Reordenar e configurar ativos em uma lista](assets/listitems.png)
 
 1. Você pode selecionar as seguintes opções para especificar como a lista se comporta na interface do usuário do CCR:
 
-   * **Acesso**&#x200B;à biblioteca: Para habilitar o acesso à biblioteca para adicionar ativos, toque em Acesso à biblioteca. Quando o Acesso à biblioteca está ativado, o ajustador de solicitações pode adicionar mais conteúdo à lista. Caso contrário, o Ajustador de solicitações estará limitado ao conteúdo definido para a lista.
+   * **Acesso** à biblioteca: Para habilitar o acesso à biblioteca para adicionar ativos, toque em Acesso à biblioteca. Quando o Acesso à biblioteca está ativado, o ajustador de solicitações pode adicionar mais conteúdo à lista. Caso contrário, o Ajustador de solicitações estará limitado ao conteúdo definido para a lista.
    * **Bloquear pedido**: Para bloquear a ordem dos ativos na lista de modo que o Ajustador de solicitações não possa alterar a ordem, toque em Bloquear pedido. Se você não selecionar essa opção, o Ajustador de solicitações poderá alterar a ordem dos itens de lista.
    * **Adicionar marcadores**: Use essa opção para aplicar um estilo de marcador ou numeração ao módulo. Você pode usar um estilo de lista pré-projetado ou personalizado. Você também pode especificar o texto a ser exibido antes e depois de cada um dos itens de lista.
-   * **Quebra** de página: Selecione essa opção ( ![quebra](assets/break.png)) para adicionar uma quebra de página entre o conteúdo da lista. Quando essa opção não está selecionada ( ![nobreak](assets/nobreak.png)), se o conteúdo da lista estiver sendo expandido para a próxima página, a lista inteira será deslocada para a próxima página em vez de ser quebrada na página entre a lista.
+   * **Quebra** de página: Selecione essa opção ( ![quebra](assets/break.png)) para adicionar uma quebra de página entre o conteúdo da lista. Quando essa opção não está selecionada ( ![nobreak](assets/nobreak.png)), se o conteúdo da lista estiver sendo expandido para a próxima página, toda a lista será deslocada para a próxima página em vez de ser quebrada na página entre a lista.
    * **Configuração** da atribuição: Use essa opção para especificar o número mínimo e máximo de ativos que podem ser adicionados à lista.
 
 1. Você pode selecionar as seguintes opções para especificar como cada ativo na lista se comporta em tempo de execução:
 
-   * **Editável:** Quando essa opção é selecionada, o conteúdo pode ser editado na interface do usuário Criar correspondência. (Essa opção não está disponível para módulos de Lista e imagem.)
-   * **Obrigatória:** Quando essa opção é selecionada, o conteúdo é necessário na interface do usuário Criar correspondência.
-   * **Selecionado:** Quando essa opção é selecionada, o conteúdo é pré-selecionado na interface do usuário Criar correspondência.
-   * **Ignorar estilo:** Quando essa opção é selecionada, o conteúdo ignora marcadores e numeração na interface do usuário Criar correspondência. (Essa opção não está disponível para módulos de imagem. Além disso, entre Ignorar estilo, Composto e Ignorar estilo de Lista, somente uma das opções pode ser aplicada a um módulo. Uma dessas opções pode ser usada para um módulo quando você seleciona Adicionar marcadores para um módulo.)
-   * **Recuo:** Você pode alterar o nível de recuo de cada módulo/conteúdo selecionado como parte da Lista. O recuo é especificado em termos de Níveis (começando com zero), de forma que cada nível de recuo corresponda a um preenchimento de 36 pontos.
-   * **Composto:** Quando selecionada, a numeração composta é aplicada como uma combinação do estilo de Lista externo (pai) e seu próprio estilo. A numeração composta nessa Lista aninhada é baseada na ordem em que essa Lista aninhada aparece na Lista externa.
+   * **Editável:** quando essa opção é selecionada, o conteúdo pode ser editado na interface do usuário Criar correspondência. (Essa opção não está disponível para módulos de Lista e imagem.)
+   * **Obrigatório:** quando essa opção é selecionada, o conteúdo é necessário na interface do usuário Criar correspondência.
+   * **Selecionado:** quando essa opção é selecionada, o conteúdo é pré-selecionado na interface do usuário Criar correspondência.
+   * **Ignorar estilo:** quando essa opção é selecionada, o conteúdo ignora marcadores e numeração na interface do usuário Criar correspondência. (Essa opção não está disponível para módulos de imagem. Além disso, entre Ignorar estilo, Composto e Ignorar estilo de Lista, somente uma das opções pode ser aplicada a um módulo. Uma dessas opções pode ser usada para um módulo quando você seleciona Adicionar marcadores para um módulo.)
+   * **Recuo:** você pode alterar o nível de recuo de cada módulo/conteúdo selecionado como parte da Lista. O recuo é especificado em termos de Níveis (começando com zero), de forma que cada nível de recuo corresponda a um preenchimento de 36 pontos.
+   * **Composto:** quando selecionado, a numeração composta é aplicada como uma combinação do estilo externo (pai) da Lista e seu próprio estilo. A numeração composta nessa Lista aninhada se baseia na ordem em que essa Lista aninhada aparece na Lista externa.
    * **Ignorar estilo de lista:** Se a opção Numeração composta estiver desmarcada, a opção Ignorar estilo de Lista estará ativada. Essa seleção ignora o estilo próprio da Lista aninhada e a numeração continua a partir da Lista externa. Portanto, os módulos da lista aninhada são tratados como parte da própria lista externa, ignorando quaisquer estilos especificados na Lista aninhada. Se a opção Ignorar estilo de Lista estiver desmarcada para uma Lista aninhada, os módulos que fazem parte dessa Lista aninhada terão seu próprio estilo de numeração.
-   * **Manter com o próximo:** Define a quebra de página para os ativos contidos em uma lista. Se você definir a propriedade Manter com o próximo de um ativo de uma lista como **Ligado**, esse ativo e o próximo ativo permanecerão na mesma página. Isso implica que o conteúdo do ativo selecionado e do ativo seguinte não se dividirão nas páginas.
+   * **Manter com o próximo:** define a quebra de página para os ativos contidos em uma lista. Se você definir a propriedade Manter com o próximo de um ativo de uma lista como **On**, esse ativo e o próximo ativo permanecerão na mesma página. Isso implica que o conteúdo do ativo selecionado e do ativo seguinte não se dividirão nas páginas.
 
 1. Toque em **Salvar**.
 
@@ -277,7 +277,7 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 * As seguintes regras se aplicam ao usar o Editor de Listas para alterar uma lista:
 
    * Atualização das propriedades: Permitido
-   * **Alteração do dicionário de dados:** Permitido até que nenhum item que usa o dicionário de dados esteja associado a ele. Não é possível alterar o dicionário de dados ao atualizar.
+   * **Alteração do dicionário de dados:** Permitido até que nenhum item que usa o dicionário de dados seja associado a ele. Não é possível alterar o dicionário de dados ao atualizar.
 
 ## Condições {#conditions}
 
@@ -285,9 +285,9 @@ As condições permitem que você defina qual conteúdo será incluído na hora 
 
 Com base nas opções escolhidas, somente a primeira expressão que for encontrada como verdadeira, com base na variável de condição atual, será avaliada ou todas as condições. Ao preencher a letra em Criar correspondência (CCR), as condições se comportam como &quot;caixas brancas&quot;. Se uma condição resultar em uma lista, todos os itens obrigatórios e pré-selecionados da lista serão gerados. Se qualquer um desses itens for condições ou listas, seu conteúdo resultante também será exibido, em ordem de cima para baixo e de profundidade como uma lista simples de texto e conteúdo de imagem. Os resultados da condição podem ser de qualquer tipo (texto, lista, condição ou imagem).
 
-### Condições de execução {#implementing-conditions}
+### Condições de implementação {#implementing-conditions}
 
-O Editor de condições vem com uma interface de usuário do Construtor de [Expressões](/help/forms/using/expression-builder.md) que suporta a criação de expressões usando vários espaços reservados e elementos do Dicionário de dados. Você pode usar operandos comuns e funções locais/globais nessas expressões. Cada expressão pode ser associada a algum conteúdo e, opcionalmente, pode haver uma seção padrão se nenhuma das expressões for avaliada como true. Todas as expressões são avaliadas na sequência em que são definidas e as primeiras expressões que retornam true são selecionadas e seu conteúdo associado é retornado por esse módulo condicional.
+O Editor de condições vem com uma [interface do usuário do Construtor de Expressões](/help/forms/using/expression-builder.md) que suporta a criação de expressões usando vários espaços reservados e elementos do Dicionário de dados. Você pode usar operandos comuns e funções locais/globais nessas expressões. Cada expressão pode ser associada a algum conteúdo e, opcionalmente, pode haver uma seção padrão se nenhuma das expressões for avaliada como true. Todas as expressões são avaliadas na sequência em que são definidas e as primeiras expressões que retornam true são selecionadas e seu conteúdo associado é retornado por esse módulo condicional.
 
 Por exemplo, se os termos e condições de uma letra forem diferentes, dependendo do estado em que o cliente está, e o dicionário de dados contiver um elemento chamado &quot;estado&quot;, você poderá adicionar a condição da seguinte maneira:\
 ・ state = NY, selecione T&amp;C_NY parágrafo de texto\
@@ -298,25 +298,25 @@ O Editor de condições permite que você especifique uma condição padrão. Se
 
 ### Criar uma condição {#create-a-condition}
 
-1. Selecione **Forms** > Fragmentos **do** Documento.
+1. Selecione **Forms** > **Fragmentos de Documento**.
 1. Selecione **Criar > Condição**.
 1. Especifique as seguintes informações para a lista:
 
-   * **Título (opcional):** Insira o título da condição. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês. As condições são referenciadas por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
-   * **Nome:** O nome exclusivo da condição. Não podem existir dois ativos (texto, condição ou lista) em qualquer estado com o mesmo nome. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
+   * **Título (Opcional):** insira o título da condição. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês. As condições são referenciadas por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
+   * **Nome:** o nome exclusivo da condição. Não podem existir dois ativos (texto, condição ou lista) em qualquer estado com o mesmo nome. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
    * **Descrição (Opcional)** Digite uma descrição da condição.
    * **Dicionário de dados (opcional)**: Como opção, selecione o dicionário de dados ao qual deseja se conectar. Somente ativos que usam o mesmo dicionário de dados da condição, ou ativos sem dicionário de dados atribuído, podem ser adicionados à lista. Atribuir um dicionário de dados a uma lista facilita que a pessoa que cria um modelo de carta localize a condição apropriada.
    * **Tags (opcional)**: Como opção, selecione as tags a serem aplicadas. Você também pode digitar o nome de uma nova tag e criá-la. (A nova tag é criada quando você toca em **Salvar**.)
 
-1. Toque em **Avançar**.
+1. Toque em **Next**.
 1. Toque em **Adicionar ativo**.
 1. Para adicionar um ativo à Condição, selecione-o na página Selecionar ativos e toque em **Concluído**. Os ativos são adicionados ao painel de Expressão.
 1. Você pode selecionar as seguintes opções para especificar como a condição se comporta no tempo de execução:
 
    * **Desabilitar Avaliação de Vários Resultados\Habilitar Avaliação** de Vários Resultados: Quando essa opção está ativada (aparece como &quot;Ativar várias...&quot;), todas as condições são avaliadas e o resultado é a soma de todas as condições verdadeiras. Se essa opção estiver desabilitada (aparece como &quot;Desabilitar vários...&quot;), somente a primeira condição que for encontrada como verdadeira será avaliada e se tornará a saída da condição.
-   * **Quebra** de página: Selecione essa opção ( ![quebra](assets/break.png)) para adicionar uma quebra de página entre os módulos das condições. Quando essa opção não está selecionada ( ![nobreak](assets/nobreak.png)), se uma condição estiver sobrecarregando para a próxima página, toda a condição será deslocada para a próxima página em vez de quebrar a página entre a condição.
+   * **Quebra** de página: Selecione essa opção ( ![quebra](assets/break.png)) para adicionar uma quebra de página entre os módulos das condições. Quando essa opção não está selecionada ( ![nobreak](assets/nobreak.png)), se uma condição estiver sendo expandida para a próxima página, toda a condição será deslocada para a próxima página em vez de quebrar a página entre a condição.
 
-1. Para alterar a ordem dos ativos dentro da condição, toque e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de carta na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
+1. Para alterar a ordem dos ativos dentro da condição, toque e mantenha pressionado o ícone de setas ( ![dragndrop](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de carta na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
 1. Toque em **Excluir** para excluir a linha. Se você tocar em Excluir para a linha padrão, apaga apenas as informações do ativo.
 1. Toque em **Copiar** para duplicado de uma linha.
 1. Toque em **Editar** para alterar o ativo ou editar a expressão.
@@ -324,7 +324,7 @@ O Editor de condições permite que você especifique uma condição padrão. Se
    Mais:
 
    * Para atualizar o ativo, toque no ícone de pasta na coluna Ativo.
-   * Para abrir o Construtor de Expressões para inserir uma expressão, toque no ícone de pasta na coluna Expressão. Para obter mais informações sobre o Construtor de Expressões, consulte Construtor [de](/help/forms/using/expression-builder.md)Expressões.
+   * Para abrir o Construtor de Expressões para inserir uma expressão, toque no ícone de pasta na coluna Expressão. Para obter mais informações sobre o Construtor de Expressões, consulte [Construtor de Expressões](/help/forms/using/expression-builder.md).
 
 ### Práticas recomendadas/dicas e truques {#best-practices-tips-and-tricks-1}
 
@@ -333,9 +333,9 @@ O Editor de condições permite que você especifique uma condição padrão. Se
 * Usar vínculo de dicionário de dados apropriado
 * As seguintes regras se aplicam ao usar o Editor de condições para editar uma condição:
 
-   * **Adição da variável:** Permitido
-   * **Remoção da variável:** Permitido
-   * **Atualização das propriedades:** Permitido
+   * **Adição de variável:** Permitida
+   * **Remoção da variável:** Permitida
+   * **Atualização de propriedades:** Permitido
    * **Alteração do dicionário de dados:** Permitido até que o elemento do dicionário de dados não seja usado.
 
 ## Fragmentos de layout {#layoutfragments}
@@ -346,7 +346,7 @@ Um ou mais fragmentos de layout podem formar partes de uma letra e definir o lay
 
 Um caso de uso comum é localizar padrões de layout reutilizáveis em Cartas e criar fragmentos de layout para eles. Por exemplo, a saudação, o endereço e a parte do assunto da letra, que aparece na mesma ordem com várias letras. Outro exemplo pode ser um número de linhas e colunas semelhante a uma tabela usado em várias letras.
 
-Você pode criar um fragmento de layout com base em um XDP existente. Um fragmento de layout pode ser composto de campos e áreas de público alvo ou uma ou mais tabelas. As tabelas em um layout podem ser estáticas ou dinâmicas. Um XDP é criado no Designer e [carregado no AEM Forms](/help/forms/using/import-export-forms-templates.md). Um XDP pode formar a estrutura de um fragmento de layout ou de uma letra. Mais informações sobre o design [de layout](/help/forms/using/layout-design-details.md).
+Você pode criar um fragmento de layout com base em um XDP existente. Um fragmento de layout pode ser composto de campos e áreas de público alvo ou uma ou mais tabelas. As tabelas em um layout podem ser estáticas ou dinâmicas. Um XDP é criado no Designer e [carregado no AEM Forms](/help/forms/using/import-export-forms-templates.md). Um XDP pode formar a estrutura de um fragmento de layout ou de uma letra. Mais informações sobre [Design de layout](/help/forms/using/layout-design-details.md).
 
 O uso de fragmentos vinculados a áreas de público alvo permite que a letra seja alterada no momento da criação. O fragmento de layout com diferentes dimensões pode ser criado e o fragmento apropriado pode ser vinculado à área do público alvo. Os fragmentos de layout também permitem personalizar algumas propriedades da tabela:
 
@@ -363,7 +363,7 @@ Considere os seguintes pontos ao projetar tabelas:
 1. Tabelas podem ser personalizadas no momento da criação do fragmento de layout. No entanto, a opção personalizar só é ativada quando o subformulário pai da tabela é continuado.
 1. Para tabelas dinâmicas, todos os campos, linhas e tabelas repetíveis usam o vínculo &quot;use name&quot; para que os dados sejam unidos corretamente.
 1. Para tabelas dinâmicas, todos os DDEs repetitivos vinculados aos campos da tabela fazem parte da mesma hierarquia. Para os DDEs não repetitivos, não existe tal restrição.
-1. No momento em que o fragmento do layout é unido às tabelas da área do público alvo pai é redimensionado de acordo com o espaço disponível, no entanto, o redimensionamento ocorre somente quando o fragmento do layout não contém nenhuma área do público alvo ou campo diretamente no subformulário de nível superior. A área do Público alvo e os campos dentro da tabela são permitidos.
+1. No momento em que o fragmento do layout é unido às tabelas da área do público alvo pai é redimensionado de acordo com o espaço disponível, no entanto, o redimensionamento ocorre somente quando o fragmento do layout não contém nenhuma área do público alvo ou campo diretamente no subformulário de nível superior. A área do público alvo e os campos dentro da tabela são permitidos.
 1. É possível criar tabelas de espaço reservado. As tabelas de espaço reservado têm apenas uma única célula em branco.
 
 * Para tabelas de espaço reservado, você pode personalizar as seguintes propriedades no momento da criação do fragmento.
@@ -387,12 +387,12 @@ Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em 
 
 ### Criação de um fragmento de layout {#creating-a-layout-fragment}
 
-1. Selecione **Criar** > Fragmento **de layout**.
+1. Selecione **Criar** > **Fragmento de layout**.
 1. O Gerenciamento de correspondência exibe os XDPs disponíveis. Selecione o XDP no qual deseja basear o fragmento do layout e toque em **Próximo**.
 1. Especifique as seguintes informações para o layout:
 
-   * **Título (opcional):** Insira o título do fragmento do layout. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês. Os fragmentos de layout são referenciados por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
-   * **Nome:** O nome exclusivo do fragmento de layout. Não podem existir dois ativos (texto, condição ou lista) em qualquer estado com o mesmo nome. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor. Esse nome aparece na lista na interface do usuário Gerenciar ativos.
+   * **Título (Opcional):** insira o título do fragmento de layout. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês. Os fragmentos de layout são referenciados por seus títulos (quando disponíveis), como em miniaturas e propriedades de ativos.
+   * **Nome:** o nome exclusivo do fragmento de layout. Não podem existir dois ativos (texto, condição ou lista) em qualquer estado com o mesmo nome. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor. Esse nome aparece na lista na interface do usuário Gerenciar ativos.
    * **Descrição (Opcional)**: Descrição que aparece na lista na interface do usuário Gerenciar ativos.
    * **Tags (opcional)**: Como opção, selecione as tags a serem aplicadas à condição. Você também pode digitar o nome de uma nova tag e criá-la.
 
@@ -407,7 +407,7 @@ Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em 
    * **Cabeçalho**: texto a ser exibido para o cabeçalho
    * **Rodapé**: texto a ser exibido para o rodapé
    * **Tipo**: tipo de coluna adicional. Área do campo ou do Público alvo. O tipo é ativado para tabelas de espaço reservado estáticas. O tipo pode ser definido no nível da coluna e não no nível da célula. Todas as células em uma coluna estendida seriam do mesmo tipo. Para uma tabela dinâmica, todas as colunas são do tipo Campo. Para tabelas sem espaço reservado, não é possível definir o tipo de colunas adicionais. Neste caso, o tipo de células adicionais na coluna alargada é igual ao tipo da última coluna dessa linha; e o tipo de célula em linha adicional é o mesmo que o tipo da última célula nessa coluna.
-   * **Taxa de largura:** proporção das larguras de coluna da tabela.
+   * **Relação de largura:** relação entre larguras de colunas da tabela.
 
    Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em fragmentos de layout, consulte [Exemplo com arquivos de amostra: usando tabelas estáticas e dinâmicas em uma letra](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
@@ -415,7 +415,7 @@ Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em 
 
 ### Fazer upload de um XDP para o Gerenciamento de correspondência {#upload-an-xdp-to-correspondence-management}
 
-Para obter instruções sobre como carregar/importar um XDP para o Gerenciamento de correspondência, consulte [Importar e exportar ativos para a AEM Forms](/help/forms/using/import-export-forms-templates.md).
+Para obter instruções sobre como carregar/importar um XDP para o Gerenciamento de correspondência, consulte [Importar e exportar ativos para AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 ### Práticas recomendadas/dicas e truques {#best-practices-tips-and-tricks-2}
 
@@ -425,9 +425,9 @@ Ao criar áreas de público alvo no Designer, ajuda a definir o vínculo padrão
 
 Para definir o vínculo padrão:
 
-1. No Designer, toque em **Ferramentas** > **Opções** > Vínculos **** de dados > Vínculo **de subformulário**.
+1. No Designer, toque em **Ferramentas** > **Opções** > **Ligações de dados** > **Ligação de subformulários**.
 
-1. Na lista Vínculo padrão para novos subformulários, selecione **Sem vínculo** de dados.
+1. Na lista Vínculo padrão para novos subformulários, selecione **Sem vínculo de dados**.
 
 Isso garante que os subformulários inseridos usando o comando Inserir > Subformulário ou arrastando e soltando da paleta Objeto tenham um vínculo de &quot;nenhum&quot; por padrão. Isso significa que, por padrão, qualquer novo subformulário é uma área de público alvo, a menos que você adicione conteúdo a ele, altere sua configuração de vínculo ou nomeie o subformulário com um sufixo &quot;_int&quot;.
 
@@ -439,11 +439,11 @@ Se a carta finalizada criada na interface do usuário Criar correspondência for
 * Por padrão, os campos com legendas são compatíveis com 508. O atributo /field/assist/speak@priority do campo é definido como &quot;custom&quot; por padrão, o que significa que, a menos que o texto personalizado do leitor de tela seja fornecido, o leitor de tela lê a legenda do campo.
 * Campos sem legendas especificam uma dica de ferramenta e indicam que os leitores de tela leem a dica de ferramenta ao configurar
 
-`/field/assist/speak@priority="toolTip"` e especificar o texto da dica de ferramenta em `/field/assist/toolTip`.
+`/field/assist/speak@priority="toolTip"` e especificar o texto da dica de ferramenta em  `/field/assist/toolTip`.
 
 #### Formatos de data no Designer e no Asset Configuration Manager {#date-formats-in-designer-and-asset-configuration-manager}
 
-Ao projetar um layout no Designer, verifique se os formatos para campos de data correspondem aos formatos de data especificados em Formatos de exibição de dados nas Propriedades [de configuração do Gerenciamento de](/help/forms/using/cm-configuration-properties.md)correspondência. Para obter mais informações, consulte &quot;Formatação de valores de campo e uso de padrões&quot; na Ajuda do Designer.
+Ao projetar um layout no Designer, verifique se os formatos para campos de data correspondem aos formatos de data especificados em Formatos de exibição de dados em [Propriedades de configuração do Correspondence Management](/help/forms/using/cm-configuration-properties.md). Para obter mais informações, consulte &quot;Formatação de valores de campo e uso de padrões&quot; na Ajuda do Designer.
 
 #### Captura de intervalos de datas {#capturing-date-ranges}
 
@@ -453,7 +453,7 @@ Ao lidar com uma combinação de datas, como startDate - endDate, use um único 
 
 Quando um layout contém vários campos e áreas de público alvo que estão mapeados para elementos XML únicos, use o vínculo no nível do formulário e crie um nó separado para cada elemento. Os campos vinculados no nível do formulário são ignorados ao mapear dados no Gerenciamento de correspondência.
 
-#### Não usar áreas de público alvo de subformulários em uma página principal {#do-not-use-subform-target-areas-in-a-master-page}
+#### Não use áreas de público alvo de subformulário em uma página principal {#do-not-use-subform-target-areas-in-a-master-page}
 
 As áreas de públicos alvos de subformulários em uma página principal não estão visíveis na interface do usuário Gerenciar ativos e os dados não podem ser mapeados para elas.
 
@@ -487,7 +487,7 @@ Este exemplo mostra como você pode criar uma tabela dinâmica e estática, vinc
 
    Em seguida, selecione DD e exporte dados de amostra. O arquivo XML obtido contém dados de Funcionário e três instâncias para Nominee_details (por padrão, 3 instâncias são baixadas). Você pode adicionar ou excluir de acordo com seu requisito). Atualize os valores e importe os dados de teste em DD. O arquivo CMP é o pacote e tem o DD nele. Portanto, importe a DDD para o Gerenciamento de correspondência.
 
-   Para obter mais informações sobre como trabalhar com o Dicionário de dados e os dados de teste, consulte Dicionário [de](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)dados.
+   Para obter mais informações sobre como trabalhar com o Dicionário de dados e os dados de teste, consulte [Dicionário de dados](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
    ![Estrutura do dicionário de dados](assets/dd.jpeg)
 
@@ -500,9 +500,9 @@ Este exemplo mostra como você pode criar uma tabela dinâmica e estática, vinc
 
    Ou use os XDPs estáticos e dinâmicos conectados a essa etapa.
 
-   Para obter mais informações sobre como trabalhar com Fragmentos de layout, consulte Fragmentos [de](#layoutfragments)layout.
+   Para obter mais informações sobre como trabalhar com Fragmentos de layout, consulte [Fragmentos de layout](#layoutfragments).
 
-   Para obter mais informações sobre como criar layouts, consulte a Ajuda [do](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)Designer.
+   Para obter mais informações sobre como criar layouts, consulte [Ajuda do Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
    [Obter arquivo](assets/static.xdp.zip)
 
@@ -525,7 +525,7 @@ Este exemplo mostra como você pode criar uma tabela dinâmica e estática, vinc
 
 1. Crie uma carta usando os dois fragmentos de layout nela. Ao inserir o XDP dinâmico na letra, defina o vínculo de seus campos aos elementos de coleta do Dicionário de dados.
 
-   Para obter mais informações sobre como criar modelos de Letras e Carta, consulte [Criar Carta](/help/forms/using/create-letter.md).
+   Para obter mais informações sobre como criar modelos de Letras e Letras, consulte [Criar Carta](/help/forms/using/create-letter.md).
 
 1. Salve a carta e a pré-visualização. Quando você pré-visualização a letra, os valores do Dicionário de dados são exibidos na letra. Para a tabela dinâmica, há três linhas. Isso ocorre porque os dados de teste têm três registros para essas linhas.
 
@@ -542,7 +542,7 @@ Este exemplo mostra como você pode criar uma tabela dinâmica e estática, vinc
 Para criar rapidamente um fragmento de documento com propriedades e conteúdo semelhantes a um fragmento de documento existente, é possível copiá-lo e colá-lo.
 
 1. Na lista de fragmentos de documento, selecione um ou mais fragmentos de documento. A interface do usuário exibe o ícone Copiar.
-1. Toque em Copiar. A interface do usuário exibe o ícone Colar. Você também pode escolher entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organizar ativos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Toque em Copiar. A interface do usuário exibe o ícone Colar. Você também pode escolher entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e ativos de organização](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Toque em Colar. A caixa de diálogo Colar é exibida. Se você estiver copiando e colando os fragmentos do documento no mesmo local, o sistema atribuirá automaticamente nomes e títulos às novas cópias de letras, mas você poderá editar os títulos e os nomes das letras.
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia do fragmento do documento.
 1. Toque em Colar. A cópia do fragmento do documento é criada.
