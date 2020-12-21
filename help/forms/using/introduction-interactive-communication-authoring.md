@@ -17,16 +17,16 @@ ht-degree: 3%
 ---
 
 
-# Introdução à interface de criação de comunicação interativa {#introduction-to-interactive-communication-authoring-ui}
+# Introdução à interface do usuário de criação de comunicação interativa {#introduction-to-interactive-communication-authoring-ui}
 
 Uma introdução aos vários elementos da interface do usuário que podem ser usados para criar o Interative Communication
 
-A interface do usuário para criação de Comunicação [](/help/forms/using/interactive-communications-overview.md) interativa é intuitiva e fornece o seguinte para criação de canais de impressão e da Web da Comunicação interativa:
+A interface do usuário para criação [Interative Communication](/help/forms/using/interactive-communications-overview.md) é intuitiva e fornece o seguinte para criação de canais de impressão e da Web da Interative Communication:
 
 * Editor de documentos de arrastar e soltar WYSIWYG
 * Repositório integrado para ativos - os ativos carregados e criados no servidor estão disponíveis no navegador Asset da interface de criação Interative Communication
 
-Quando você [cria uma nova Comunicação](/help/forms/using/create-interactive-communication.md)interativa ou edita uma Comunicação interativa existente, usa os seguintes elementos da interface do usuário:
+Ao [criar um novo ou editar uma Comunicação Interativa existente](/help/forms/using/create-interactive-communication.md), você usa os seguintes elementos da interface do usuário:
 
 * [Barra lateral](#sidebar)
 * [Barra de ferramentas da página](#page-toolbar)
@@ -36,7 +36,7 @@ Quando você [cria uma nova Comunicação](/help/forms/using/create-interactive-
 
 ![interface do usuário de criação de comunicação interativa](assets/form-editor.png)
 
-**A.** Barra lateral **B.** Barra de ferramentas da página **C.** Área de conteúdo
+**A.** Barra lateral  **B.Barra de ferramentas** da página  **C.** Área de conteúdo
 
 ## Barra lateral {#sidebar}
 
@@ -44,11 +44,11 @@ Quando você [cria uma nova Comunicação](/help/forms/using/create-interactive-
 
 [Clique para ampliar](assets/sidebar-comps-1.png)
 
-**A.** Navegador de Canais **B.** Navegador de conteúdo **C.** Propriedades navegador **D.** Navegador de ativos **E.** Navegador de componentes **F.** Navegador de Fontes de Dados - Modelo de Dados **G.** Navegador de Fontes de Dados - Conteúdo Principal
+**A.Navegador de** Canais  **B.Navegador de** conteúdo  **C.** Navegador de propriedades  **D.** Navegador de ativos  **E.** Navegador de componentes  ****   **** F.Navegador de fontes de dados - Modelo de dados G.Navegador de fontes de dados - Conteúdo Principal
 
 A barra lateral inclui o seguinte:
 
-* **Navegador de Canais**
+* **Navegador de canais**
 
    O navegador de Canais ajuda a alternar entre os canais de impressão e da Web da Comunicação interativa. Com base no canal selecionado no navegador do canal, os navegadores, como Conteúdo e Componentes, exibem as opções.
 
@@ -60,7 +60,7 @@ A barra lateral inclui o seguinte:
 
    Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do container do documento:
 
-   Selecione um componente, toque em nível ![de](assets/field-level.png) campo > Container **do** Documento e, em seguida, em ![cmppr](assets/cmppr.png).
+   Selecione um componente, toque em ![field-level](assets/field-level.png) > **Container do Documento** e, em seguida, toque em ![cmppr](assets/cmppr.png).
 
 * **Navegador de ativos**
 
@@ -72,13 +72,13 @@ A barra lateral inclui o seguinte:
 
 | **Componente** | **Canal de impressão** | **Canal da Web** | **Funcionalidade** |
 |---|---|---|---|
-| Gráfico | ✓ | ✓ | Adiciona um gráfico que pode ser usado em uma Comunicação Interativa para representação visual de dados bidimensionais recuperados de um item de coleção de modelo de dados de formulário. |
-| Fragmento do documento | ✓ | ✓ | Permite adicionar um componente reutilizável, texto, lista ou condição, a uma Comunicação interativa. O componente reutilizável adicionado a uma Comunicação interativa pode ser baseado em modelo de dados de formulário ou sem um modelo de dados de formulário. |
-| Imagem | ✓ | ✓ | Permite inserir uma imagem. |
-| Painel | - | ✓ | O componente Painel é um espaço reservado para agrupar outros componentes e controla como um grupo de componentes é apresentado em uma Comunicação interativa. Um componente de painel também permite tornar um grupo de componentes repetíveis para o usuário final, como em várias entradas necessárias para o preenchimento de credenciais educacionais. Também é uma boa prática usar um painel cada para uma guia de uma Comunicação interativa com várias guias. |
-| Tabela | &amp;ast; | ✓ | Adiciona uma tabela que permite organizar dados em linhas e colunas. |
-| Área de destino | &amp;ast;&amp;ast; | ✓ | Insere uma área de público alvo em um canal da Web para organizar os componentes específicos do canal da Web. |
-| Texto | - | ✓ | Adiciona texto ao canal da Web de uma Comunicação Interativa. O texto pode usar objetos de modelo de dados de formulário para tornar o conteúdo dinâmico. |
+| Gráfico | Satélite | Satélite | Adiciona um gráfico que pode ser usado em uma Comunicação Interativa para representação visual de dados bidimensionais recuperados de um item de coleção de modelo de dados de formulário. |
+| Fragmento do documento | Satélite | Satélite | Permite adicionar um componente reutilizável, texto, lista ou condição, a uma Comunicação interativa. O componente reutilizável adicionado a uma Comunicação interativa pode ser baseado em modelo de dados de formulário ou sem um modelo de dados de formulário. |
+| Imagem | Satélite | Satélite | Permite inserir uma imagem. |
+| Painel | - | Satélite | O componente Painel é um espaço reservado para agrupar outros componentes e controla como um grupo de componentes é apresentado em uma Comunicação interativa. Um componente de painel também permite tornar um grupo de componentes repetíveis para o usuário final, como em várias entradas necessárias para o preenchimento de credenciais educacionais. Também é uma boa prática usar um painel cada para uma guia de uma Comunicação interativa com várias guias. |
+| Tabela | &amp;ast; | Satélite | Adiciona uma tabela que permite organizar dados em linhas e colunas. |
+| Área de destino | &amp;ast;&amp;ast; | Satélite | Insere uma área de público alvo em um canal da Web para organizar os componentes específicos do canal da Web. |
+| Texto | - | Satélite | Adiciona texto ao canal da Web de uma Comunicação Interativa. O texto pode usar objetos de modelo de dados de formulário para tornar o conteúdo dinâmico. |
 
 &amp;ast; Use Fragmentos de layout no canal Imprimir para adicionar tabelas.
 
@@ -100,7 +100,7 @@ Os pontos principais ao trabalhar com componentes de comunicação interativa s�
    1. Toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
    1. Modifique o título e toque na tecla Return ou toque em qualquer lugar fora do componente para salvar as alterações. Toque na tecla Esc para descartar as alterações.
 
-## Component toolbar {#component-toolbar}
+## Barra de ferramentas do componente {#component-toolbar}
 
 ![](do-not-localize/toolbar.png)
 
@@ -110,13 +110,13 @@ A. **Configurar**: Quando você toca em **Configurar**, as propriedades do compo
 
 B. **Editar regras**: Quando você toca em Editar regras, o Editor de regras é exibido no qual você pode editar e criar regras para o componente selecionado. No Editor de regras, também é possível selecionar outros objetos de formulário (componentes) e editar/criar regras para esses objetos de formulário.
 
-C. **Cópia**: Você pode usar a opção de cópia para copiar um componente e colá-lo em outros locais no Interative Communication.
+C. **Copiar**: Você pode usar a opção de cópia para copiar um componente e colá-lo em outros locais no Interative Communication.
 
 D. **Recortar**: Você pode usar a opção de corte para mover um componente de um local para outro na Comunicação interativa.
 
-E. **Excluir**: Permite que você exclua o componente da Comunicação interativa.
+E. **Eliminar**: Permite que você exclua o componente da Comunicação interativa.
 
-F. **Inserir componente**: Permite inserir um componente acima do componente selecionado.
+F. **Inserir Componente**: Permite inserir um componente acima do componente selecionado.
 
 G. **Colar**: Permite colar o componente que você recortou ou copiou usando as opções descritas acima.
 
@@ -126,7 +126,7 @@ Eu. **Pai**: Permite selecionar o pai de um componente.
 
 J. **Mais**: Fornece mais opções para trabalhar com o componente selecionado.
 
-* Expressão SOM de Visualização (somente para painéis)
+* Expressão SOM de visualização (somente para painéis)
 * Agrupar objetos no painel (somente para painéis)
 * Editar fragmento (somente para fragmentos)
 * Salvar um painel como fragmento (somente para painéis)
@@ -138,9 +138,9 @@ J. **Mais**: Fornece mais opções para trabalhar com o componente selecionado.
 
 A barra de ferramentas Página na parte superior fornece opções que permitem que você pré-visualização a Comunicação interativa e altere suas propriedades. Você pode pré-visualização a Comunicação interativa ao criá-la e fazer alterações de acordo. Na barra de ferramentas da página, você verá:
 
-* Alternar painel lateral ![alternar painel](assets/toggle-side-panel.png): Permite mostrar ou ocultar a barra lateral.
+* Alternar painel lateral ![painel lateral de alternância](assets/toggle-side-panel.png): Permite mostrar ou ocultar a barra lateral.
 * Informações da página ![pageinformationad](assets/pageinformationad.png): Permite visualização das propriedades da página.
-* Régua ![de emulador](assets/ruler.png): Permite que você emule a aparência da sua Comunicação interativa para tamanhos de exibição diferentes, como tablets e telefones.
+* Emulador ![régua](assets/ruler.png): Permite que você emule a aparência da sua Comunicação interativa para tamanhos de exibição diferentes, como tablets e telefones.
 * Editar: Permite selecionar outros modos, como: Editar, Estilo, Desenvolvedor e Design.
 
    * Editar: Permite editar as propriedades da Comunicação interativa e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.
