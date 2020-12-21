@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Tutoriais {#tutorials}
 
-Estes são exemplos para ajudar a aprender e trabalhar com o AEM 6.1 Quadro de componentes [sociais (SCF)](scf.md)das Comunidades.
+Estes são exemplos para ajudar a aprender e trabalhar com AEM 6.1 Communities [social component framework (SCF)](scf.md).
 
 ## Personalização do lado do cliente {#client-side-customization}
 
-Consulte também personalização [do cliente](client-customize.md)SCF.
+Consulte também [Personalização do cliente SCF](client-customize.md).
 
 * [Guia de componentes da comunidade](components-guide.md)
 
@@ -32,11 +32,11 @@ Consulte também personalização [do cliente](client-customize.md)SCF.
 
 * [Componente Estender comentários](extend-comments.md)
 
-## Personalização no servidor {#server-side-customization}
+## Personalização do lado do servidor {#server-side-customization}
 
-Consulte também personalização [do lado do servidor](server-customize.md)SCF.
+Consulte também [Personalização do lado do servidor SCF](server-customize.md).
 
-O código de amostra está disponível no repositório [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) :
+O código de amostra está disponível no repositório [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud):
 
 * [Exemplo de componente SCF personalizado](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -60,13 +60,13 @@ O código de amostra está disponível no repositório [Adobe Marketing Cloud Gi
 
 ## Usuários de demonstração {#demo-users}
 
-O pacote de exemplos de Geometrixx inclui usuários de demonstração. Muitas vezes, há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado) e, desde que os pacotes de amostras do Geometrixx permaneçam instalados, você pode usar esses usuários para simular um estado conectado ao explorar o guia [Componentes da](components-guide.md)comunidade.
+O pacote de exemplos de Geometrixx inclui usuários de demonstração. Muitas vezes, há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado) e, desde que os pacotes de amostras do Geometrixx permaneçam instalados, você pode usar esses usuários para simular um estado conectado ao explorar o [Guia de componentes da comunidade](components-guide.md).
 
-Para obter uma lista completa dos usuários da demonstração, navegue usando o Painel para **[!UICONTROL Ferramentas > Operações > Segurança > Usuários]**. Ou use o console [de](http://localhost:4502/useradmin) segurança da interface clássica para gerenciar usuários e grupos.
+Para obter uma lista completa dos usuários da demonstração, navegue usando o painel até **[!UICONTROL Ferramentas > Operações > Segurança > Usuários]**. Ou use a interface clássica [console de segurança](http://localhost:4502/useradmin) para gerenciar usuários e grupos.
 
-Se um site da [comunidade tiver sido criado](getting-started.md), será possível atribuir usuários de demonstração aos grupos [de usuários da](users.md)comunidade.
+Se um site da comunidade [tiver sido criado](getting-started.md), será possível atribuir usuários de demonstração aos seus [grupos de usuários da comunidade](users.md).
 
-***id *do usuário /*senha:***
+***id* /  *senha do usuário:***
 
 * aaron.mcdonald@mailinator.com / senha
 * emily.andrews@mailinator.com / senha
