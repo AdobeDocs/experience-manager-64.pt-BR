@@ -26,23 +26,23 @@ Agora que os componentes do sistema de comentários personalizado estão no dire
 
 As bibliotecas do cliente necessárias para o estilo e o funcionamento dos Comentários padrão também são necessárias para os Comentários estendidos.
 
-O Guia [de componentes da](components-guide.md) comunidade identifica as bibliotecas de clientes necessárias. Navegue até o Guia do componente e visualização o componente Comentários, por exemplo:
+O [Guia de componentes da comunidade](components-guide.md) identifica as bibliotecas de clientes necessárias. Navegue até o Guia do componente e visualização o componente Comentários, por exemplo:
 
 [http://localhost:4502/content/community-components/en/comments.html](http://localhost:4502/content/community-components/en/comments.html)
 
-Observe as três bibliotecas de cliente necessárias para que os Comentários renderizem e funcionem corretamente. Eles precisarão ser incluídos onde os Comentários estendidos forem referenciados, bem como a biblioteca [do cliente dos Comentários](extend-create-components.md#create-a-client-library-folder) estendidos ( `apps.custom.comments`).
+Observe as três bibliotecas de cliente necessárias para que os Comentários renderizem e funcionem corretamente. Eles precisarão ser incluídos onde os Comentários estendidos forem referenciados, bem como a biblioteca do cliente [Extended Comments](extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
 ## Adicionar comentários personalizados a uma página {#add-custom-comments-to-a-page}
 
-Como pode haver apenas um sistema de Comentários por página, é mais simples criar uma página de amostra, conforme descrito no breve tutorial [Criar uma página](create-sample-page.md) de amostra.
+Como pode haver apenas um sistema de Comentários por página, é mais simples criar uma página de amostra conforme descrito no breve tutorial [Criar uma página de amostra](create-sample-page.md).
 
-Depois de criado, entre no modo Design e disponibilize o grupo de componentes Personalizado para permitir que o `Alt Comments` componente seja adicionado à página.
+Depois de criado, entre no modo Design e disponibilize o grupo de componentes Personalizado para permitir que o componente `Alt Comments` seja adicionado à página.
 
 Para que o Comentário seja exibido e funcione corretamente, as bibliotecas do cliente para Comentários devem ser adicionadas à clientlibslist para a página (consulte [Clientlibs for Communities Components](clientlibs.md)).
 
-### Comentários Clientlibs na página de amostra {#comments-clientlibs-on-sample-page}
+### Comentários Clientlibs na Página de Amostra {#comments-clientlibs-on-sample-page}
 
 ![Comentários Clientlibs na página de amostra](assets/chlimage_1-48.png)
 
@@ -56,13 +56,13 @@ Você pode verificar o resourceType no CRXDE exibindo as propriedades do nó com
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 
-### Página Publicar amostra {#publish-sample-page}
+### Publicar página de amostra {#publish-sample-page}
 
 Depois que o componente personalizado é adicionado à página, também é necessário (re) [publicar a página](sites-console.md#publishing-the-site).
 
 ### Publicar: Comentário alternativo na página de amostra {#publish-alt-comment-on-sample-page}
 
-Depois de publicar o aplicativo personalizado e a página de amostra, deve ser possível inserir um comentário. Quando conectado, seja com um usuário [de](tutorials.md#demo-users) demonstração ou administrador, deve ser possível postar um comentário.
+Depois de publicar o aplicativo personalizado e a página de amostra, deve ser possível inserir um comentário. Quando conectado, com um [usuário de demonstração](tutorials.md#demo-users) ou administrador, deve ser possível postar um comentário.
 
 Aqui está aaron.mcdonald@mailinator.com postando um comentário:
 
