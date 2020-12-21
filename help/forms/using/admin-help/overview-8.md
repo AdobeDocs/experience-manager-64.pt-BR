@@ -24,16 +24,16 @@ A Saída permite unir dados de formulário XML a um design de formulário criado
 
 Você pode usar a página Saída no console de administração para administrar o serviço de Saída. As configurações definidas são usadas em tempo de execução quando as configurações equivalentes não foram especificadas pela API de formulários AEM. A configuração feita por meio do SDK de formulários AEM substitui as configurações definidas por meio do console de administração.
 
-Para obter informações adicionais sobre o serviço de Saída, consulte Referência [de](https://www.adobe.com/go/learn_aemforms_services_61)serviços.
+Para obter informações adicionais sobre o serviço de Saída, consulte [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_61).
 
 Nas páginas de Saída no console de administração, é possível executar várias tarefas:
 
-* Especifique conjuntos de caracteres para internacionalização. (Consulte [Alterar o conjunto](/help/forms/using/admin-help/change-character-set.md#change-the-character-set)de caracteres.)
-* Especifique caminhos absolutos e relativos para URLs, URIs, XCIs e locais de arquivos. (Consulte [Especificar locais de arquivo para Saída](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
-* Configure tamanhos e políticas de cache. (Consulte [Especificação do modo](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) de cache e [Definição das configurações](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings)de cache.)
-* Disponibilize as fontes no servidor de aplicativos. (Consulte [Disponibilizar](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available)fontes.)
-* Especifique as fontes a serem incorporadas. (Consulte [Especificar fontes a serem incorporadas](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
-* Especifique as opções de configuração XCI. (Consulte [Especificar opções](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options)de configuração XCI.)
-* Especifique as configurações de segurança. (Consulte [Especificar configurações](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings)de segurança.)
+* Especifique conjuntos de caracteres para internacionalização. (Consulte [Alterar o conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md#change-the-character-set).)
+* Especifique caminhos absolutos e relativos para URLs, URIs, XCIs e locais de arquivos. (Consulte [Especificar locais de arquivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+* Configure tamanhos e políticas de cache. (Consulte [Especificação do modo de cache](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) e [Definição das definições de cache](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).)
+* Disponibilize as fontes no servidor de aplicativos. (Consulte [Disponibilizar fontes](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available).)
+* Especifique as fontes a serem incorporadas. (Consulte [Especificar fontes para incorporar](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
+* Especifique as opções de configuração XCI. (Consulte [Especificar opções de configuração XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options).)
+* Especifique as configurações de segurança. (Consulte [Especificar configurações de segurança](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).)
 
 Depois de alterar as configurações, clique em Salvar para aplicá-las à Saída. Não é necessário reiniciar o servidor para que as alterações tenham efeito, mas talvez seja necessário reiniciar o serviço de Saída ao configurar as configurações de cache.
