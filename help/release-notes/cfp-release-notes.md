@@ -4,9 +4,9 @@ description: Notas de versão específicas dos Pacotes de correção cumulativos
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4156'
+source-wordcount: '4217'
 ht-degree: 11%
 
 ---
@@ -158,6 +158,9 @@ O Adobe Experience Manager 6.4.8.2 fornece correções para os seguintes problem
 * Você pode suspender o [!DNL Live Copy] de uma página e a herança será quebrada como visto no modo Editor. Entretanto, nas propriedades da Página, o ícone que representa a herança indica incorretamente que a herança existe e não está quebrada (NPR-34096).
 * Problema com a exibição de componentes permitidos na página Editar modelo (CQ-4297295).
 * Depois de atualizar o Chrome e o Firefox, os menus pop-up não funcionam como esperado. Ao carregar as propriedades da página, ele não exibe o painel quando há dados nele (CQ-4292995).
+* Várias instâncias de script entre sites em [!DNL Experience Manager Sites] componentes (NPR-33926).
+* As entradas do usuário não são corretamente codificadas para vários componentes ao enviar informações ao cliente (NPR-33696).
+* Um URL que termina com `childrenlist.html` exibe uma página HTML em vez de uma resposta 404. Tais URLs são vulneráveis a scripts entre sites (NPR-33441).
 
 #### Assets {#assets-6482}
 
@@ -234,6 +237,8 @@ O Adobe Experience Manager 6.4.8.2 fornece correções para os seguintes problem
 * A ação de envio **[!UICONTROL Enviar para o ponto de extremidade REST]** não funciona para um formulário adaptável (NPR-34513).
 
 * Acessibilidade: Quando você tenta enviar um formulário adaptável sem fazer upload de um anexo para um campo obrigatório, o foco não muda automaticamente para o campo de anexo (NPR-34511).
+
+* As entradas do usuário não são corretamente codificadas para [!DNL Forms] componentes ao enviar informações ao cliente (NPR-33611).
 
 **Fluxo de trabalho**
 
@@ -431,9 +436,9 @@ Para determinar a plataforma certificada para execução com esta versão do AEM
 >[!NOTE]
 >Na instalação bem-sucedida do pacote, uma mensagem informativa é exibida indicando que o pacote de conteúdo foi instalado com êxito, como **&quot;Content Package AEM-6.4-Service-Pack-8 instalado com êxito.&quot;**
 
-### Atualizar visualizadores de mídia dinâmica (5.10.1) {#update-dynamic-media-viewers}
+### Atualizar visualizadores do Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.3 contém a nova versão dos visualizadores do Dynamic Media (5.10.1) que permite a verificação dos nomes dos duplicados na página Predefinição de imagem. Os clientes do Dynamic Media são aconselhados a executar o seguinte comando para exibir as predefinições do visualizador de caixa para um estado atualizado.
+AEM 6.4.8.3 contém a nova versão dos visualizadores do Dynamic Media (5.10.1) que ativa a verificação de nomes de duplicados na página Predefinição de imagem. Os clientes da Dynamic Media devem executar o seguinte comando para exibir as predefinições do visualizador de caixa para um estado atualizado.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
