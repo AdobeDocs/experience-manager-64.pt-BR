@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Configurar credenciais para uso com extensões Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+# Configurar credenciais para uso com extensões do Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
 Para aplicar direitos de uso a documentos PDF, configure formulários AEM com uma credencial válida para extensões Acrobat Reader DC. Uma credencial pode ter sido configurada durante a instalação de formulários AEM. Se você não tiver configurado a credencial de extensões do Acrobat Reader DC ao executar o Configuration Manager ou se precisar importar uma credencial nova ou substituta, poderá fazer isso usando as páginas de Gerenciamento de armazenamento confiável.
 
 Se você estiver usando uma credencial de avaliação, substitua-a por uma credencial de produção ao mover-se para o ambiente de produção. Para atualizar uma credencial expirada ou de avaliações, primeiro exclua a credencial de extensões antigas do Acrobat Reader DC.
 
-Para obter informações sobre como obter uma credencial, consulte [Preparação para instalar formulários AEM (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Para obter informações sobre como obter uma credencial, consulte [Preparação para instalar formulários AEM (Servidor único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 O Repositório de confiança pode conter mais de uma credencial de extensões do Acrobat Reader DC. Você deve designar uma dessas credenciais como a credencial padrão de Extensões de Reader. A credencial padrão é usada quando um usuário do Workbench não consegue determinar qual credencial usar durante a criação do processo. Essas regras se aplicam às credenciais padrão:
 
@@ -35,7 +35,7 @@ O Repositório de confiança pode conter mais de uma credencial de extensões do
 
 >[!NOTE]
 >
->Também é possível importar e excluir credenciais de forma programática. (Consulte [Programação com formulários](https://www.adobe.com/go/learn_aemforms_programming_63)AEM.)
+>Também é possível importar e excluir credenciais de forma programática. (Consulte [Programação com formulários AEM](https://www.adobe.com/go/learn_aemforms_programming_63).)
 
 ## Importar uma credencial de extensões do Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 
@@ -57,7 +57,7 @@ O Repositório de confiança pode conter mais de uma credencial de extensões do
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais locais.
 1. Selecione a credencial e clique em Excluir.
 
-## Substituir uma credencial de extensões do Acrobat Reader DC {#replace-a-acrobat-reader-dc-extensions-credential}
+## Substitua uma credencial de extensões do Acrobat Reader DC {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais locais.
 1. Anote o alias da credencial existente e selecione-o e clique em Excluir.
