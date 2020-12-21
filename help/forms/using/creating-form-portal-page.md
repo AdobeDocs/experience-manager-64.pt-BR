@@ -17,42 +17,45 @@ ht-degree: 1%
 ---
 
 
-# Criação de uma página de portal de formulários {#creating-a-forms-portal-page}
+# Criar uma página de portal de formulários {#creating-a-forms-portal-page}
 
 Os componentes do portal da Forms equipam os desenvolvedores da Web com componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM). Para obter uma visão geral rápida do portal de formulários, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
 
 ## Pré-requisitos {#prerequisites}
 
-Por padrão, os componentes do portal do Forms não estão disponíveis para uso. Certifique-se de que as categorias de componentes do portal de formulários a seguir estejam habilitadas, conforme descrito em [Ativar componentes](/help/forms/using/enabling-forms-portal-components.md)do portal de formulários.
+Por padrão, os componentes do portal do Forms não estão disponíveis para uso. Certifique-se de que as seguintes categorias de componentes do portal de formulários estejam ativadas conforme descrito em [Ativando componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md).
 
-**Os Serviços** de Documento incluem os componentes Pesquisa e Lister, Link e Rascunhos e Envio.
+**Documento** ServicesInclui os componentes Pesquisa e Lister, Link e Rascunhos e Envio.
 
-**Os Predicados** de Serviços do Documento incluem os componentes Predicado de data, Predicado de texto completo, Predicado de propriedades e Predicado de tags. Esses componentes são usados para configurar a pesquisa no componente Pesquisar e Lister.
+**Predicados** dos serviços do DocumentoInclui os componentes Predicado de data, Predicado de texto completo, Predicado de propriedades e Predicado de tags. Esses componentes são usados para configurar a pesquisa no componente Pesquisar e Lister.
 
 Depois de ativadas em uma página de sites AEM, essas categorias de componentes estão disponíveis para uso no navegador de componentes.
 
-![Componentes do portal da AEM Forms no navegador](assets/component-categories.png)de componentes **Figura:** *categorias de componentes do portal do Forms*
+![Componentes do portal da AEM Forms no ](assets/component-categories.png)
+**navegador de componentesFigura:categorias de componentes do portal da** *Forms*
 
-## Componente de pesquisa e lister {#search-amp-lister-component}
+## Componente do Search &amp; Lister {#search-amp-lister-component}
 
 O componente de Pesquisa e Lister, disponível em categoria de componentes de Serviços de Documento, é usado para lista de formulários em uma página e para implementar a pesquisa nos formulários listados. O componente inclui dois painéis:
 
-* painel Lista onde os formulários estão listados.
+* painel lista onde os formulários estão listados.
 * Painel de pesquisa no qual você adiciona a funcionalidade de pesquisa.
 
 Você pode arrastar e soltar o componente de Pesquisa e Lister da categoria de componentes Serviços de Documento no navegador de componentes para a página. O componente, quando adicionado, é semelhante ao seguinte.
 
-![Componente de pesquisa e lister em uma página](assets/fp-grid-viw.png)**Figura:** *Componente de pesquisa e lister em uma página com layout de Grade*
+![Componente de pesquisa e lister em uma ](assets/fp-grid-viw.png)
+**páginaFigura:Componente de** *pesquisa e lister em uma página com layout de Grade*
 
-### painel Lista {#list-pane}
+### painel lista {#list-pane}
 
 O painel Lista é uma área em que seus formulários são listados. O componente de Pesquisa e Lister fornece várias opções de configuração que podem ser usadas para controlar a exibição de formulários no painel de Lista.
 
-Para configurar o painel Lista, toque no componente Pesquisar e Lister e, em seguida, toque em ![settings_icon](assets/settings_icon.png). A caixa de diálogo **[!UICONTROL Editar componente]** é aberta.
+Para configurar o painel de Lista, toque no componente Pesquisar e Lister e, em seguida, toque em ![settings_icon](assets/settings_icon.png). A caixa de diálogo **[!UICONTROL Editar componente]** é aberta.
 
-![Painel de Lista no modo](assets/edit-list.png)de edição **Figura:** *Painel de Lista no modo de edição*
+![Painel de lista no ](assets/edit-list.png)
+**modo de ediçãoFigura:painel de** *Lista no modo de edição*
 
-A caixa de diálogo **[!UICONTROL Editar]** inclui várias guias que fornecem opções de configuração descritas na tabela abaixo. Pressione **[!UICONTROL OK]** para salvar a configuração, quando concluído.
+A caixa de diálogo **[!UICONTROL Editar]** inclui várias guias que fornecem as opções de configuração descritas na tabela abaixo. Toque em **[!UICONTROL OK]** para salvar a configuração, quando terminar.
 
 <table> 
  <tbody> 
@@ -94,17 +97,17 @@ A caixa de diálogo **[!UICONTROL Editar]** inclui várias guias que fornecem op
   <tr> 
    <td> </td> 
    <td>Texto de resultados</td> 
-   <td><p>Configura o texto de resultados (por exemplo, 1-12 de 601 <strong>Resultados</strong>). The default value is <strong>Results</strong>.</p> <p>Por exemplo, se você especificar o <strong>Forms </strong>neste campo e houver um total de 601 formulários, o texto resultante mudará para 1-12 de 601 <strong>Forms.</strong></p> </td> 
+   <td><p>Configura o texto dos resultados (por exemplo, 1-12 de 601 <strong>Results</strong>). O valor padrão é <strong>Results</strong>.</p> <p>Por exemplo, se você especificar <strong>Forms </strong>neste campo e houver um total de 601 formulários, o texto resultante mudará para 1-12 de 601 <strong>Forms.</strong></p> </td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td>Texto da página</td> 
-   <td><p>Configura o texto da página (por exemplo, <strong>Página </strong>1 de 51). The default value is <strong>Page</strong>.</p> <p>Por exemplo, se você especificar o Formulário <strong>de aplicativo </strong>neste campo e houver 51 páginas, o texto da página será alterado para Formulário <strong>de aplicativo </strong>1 de 51.</p> </td> 
+   <td><p>Configura o texto da página (por exemplo, <strong>Página </strong>1 de 51). O valor padrão é <strong>Page</strong>.</p> <p>Por exemplo, se você especificar <strong>Formulário de Aplicativo </strong>neste campo e houver 51 páginas, o texto da página será alterado para <strong>Formulário de Aplicativo </strong>1 de 51.</p> </td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td>Do Texto</td> 
-   <td><p>Substitui a palavra <strong>de</strong> pelo texto especificado (Página 1 <strong>de </strong>51). The default value is <strong>of</strong>.</p> <p>Por exemplo, se você especificar <strong>fora </strong>desse campo, o texto mudará para Página 1 <strong>de </strong>51.</p> </td> 
+   <td><p>Substitui a palavra <strong>de</strong> pelo texto especificado (Página 1 <strong>de </strong>51). O valor padrão é <strong>de</strong>.</p> <p>Por exemplo, se você especificar <strong>de </strong>nesse campo, o texto mudará para Página 1 <strong>de </strong>51.</p> </td> 
   </tr> 
   <tr> 
    <td><span class="uicontrol"><strong>Link do formulário</strong></span></td> 
@@ -113,13 +116,13 @@ A caixa de diálogo **[!UICONTROL Editar]** inclui várias guias que fornecem op
   </tr> 
   <tr> 
    <td> </td> 
-   <td>Perfil HTML</td> 
+   <td>PERFIL HTML</td> 
    <td>Configura o perfil HTML a ser usado para renderização. Todos os perfis disponíveis são listados na lista suspensa.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td>Enviar URL</td> 
-   <td><p>Configura um servlet no qual os dados do formulário são enviados.</p> <p><strong>Observação:</strong> <em>O URL de envio de um formulário pode ser especificado em vários locais e sua ordem de precedência é a seguinte:</em></p> 
+   <td><p>Configura um servlet no qual os dados do formulário são enviados.</p> <p><strong>Observação: </strong> <em>Enviar URL para um formulário pode ser especificado em vários locais e sua ordem de precedência é a seguinte:</em></p> 
     <ol> 
      <li><em>O URL de envio incorporado no formulário (no botão Enviar) tem a prioridade mais alta.</em></li> 
      <li><em>O URL de envio mencionado na interface do usuário do AEM Forms tem a segunda prioridade mais alta.</em></li> 
@@ -139,7 +142,7 @@ A caixa de diálogo **[!UICONTROL Editar]** inclui várias guias que fornecem op
   <tr> 
    <td><span class="uicontrol"><strong>Estilo</strong></span></td> 
    <td>Tipo de estilo</td> 
-   <td>Permite que você especifique <strong>Sem estilo, Estilo</strong>padrão ou Estilo <strong>personalizado </strong>para listar os formulários.</td> 
+   <td>Permite que você especifique <strong>Sem estilo, Estilo padrão</strong> ou <strong>Estilo personalizado </strong>para listar os formulários.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -153,9 +156,10 @@ A caixa de diálogo **[!UICONTROL Editar]** inclui várias guias que fornecem op
 
 O painel de pesquisa permite que você adicione os componentes Predicado de data, Predicado de texto completo, Predicado de propriedades e Predicado de tags da categoria Predicados de serviços de Documento no Sidekick AEM. Esses componentes implementam a funcionalidade de pesquisa para que os usuários realizem a pesquisa nos formulários listados.
 
-**Dica:** *É possível controlar a lista de formulários exibidos no portal de formulários com base em critérios predefinidos e ocultar a funcionalidade de pesquisa para usuários finais. Para controlar a lista de formulários, use os componentes Predicar para aplicar filtros de pesquisa. Você também pode especificar os valores de filtro padrão e desativar a pesquisa na guia Exibir da caixa de diálogo Editar componente.*
+**Dica:** *você pode controlar a lista de formulários exibidos no portal de formulários com base em critérios predefinidos e ocultar a funcionalidade de pesquisa para usuários finais. Para controlar a lista de formulários, use os componentes Predicar para aplicar filtros de pesquisa. Você também pode especificar os valores de filtro padrão e desativar a pesquisa na guia Exibir da caixa de diálogo Editar componente.*
 
-![Painel de pesquisa com data, texto completo, propriedades e tags - Predicado](assets/search-with-predicates.png)**Figura:** *Painel de pesquisa com data, texto completo, propriedades e previsão de tags*
+![Painel de pesquisa com data, texto completo, propriedades e tags ](assets/search-with-predicates.png)
+**PredicateFigura:Painel** *de pesquisa com data, texto completo, propriedades e tags Predicado*
 
 #### Predicado de data {#date-predicate}
 
@@ -167,9 +171,9 @@ Para configurar o componente Predicado de data:
 1. Especifique o seguinte:
 
    * **[!UICONTROL Tipo:]** A única opção disponível é Data **[!UICONTROL da]**&#x200B;última modificação.
-   * **[!UICONTROL Texto:]** Rótulo ou legenda para o Componente de previsão de data. O valor padrão é Data **[!UICONTROL da]**&#x200B;última modificação.
-   * **[!UICONTROL Rótulo da data do Start:]** Rótulo ou legenda do campo de data do start.
-   * **[!UICONTROL Rótulo da data final:]** Rótulo ou legenda para o campo de data final.
+   * **[!UICONTROL Texto:]** Rótulo ou legenda para o Componente de previsão de data. O valor padrão é **[!UICONTROL Data da última modificação]**.
+   * **[!UICONTROL Rótulo da data do start:]** Rótulo ou legenda do campo de data do start.
+   * **[!UICONTROL Rótulo da data final:]** Rótulo ou legenda para o campo da data final.
    * **[!UICONTROL Ocultar:]** Para aplicar o filtro de datas padrão a formulários de lista.
 
 1. Toque em **[!UICONTROL OK]**.
@@ -181,8 +185,8 @@ O componente Predicado de texto completo implementa a pesquisa de texto completo
 Para configurar o componente Predicado de texto completo:
 
 1. Toque no componente e toque em ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
-1. Especifique o título no campo Título **** principal.
-1. Toque Em **[!UICONTROL Ok]**.
+1. Especifique o título no campo **[!UICONTROL Título principal]**.
+1. Toque em **[!UICONTROL Ok]**.
 
 #### Predicado de propriedades {#properties-predicate}
 
@@ -191,9 +195,9 @@ O componente Predicado de propriedades implementa a pesquisa de formulários com
 Para configurar o componente Predicado de propriedades:
 
 1. Toque no componente e toque em ![settings_icon](assets/settings_icon.png). A caixa de diálogo **[!UICONTROL Editar]** é aberta.
-1. Na guia **[!UICONTROL Geral]** , especifique o rótulo de pesquisa. The default value is **[!UICONTROL Properties]**.
+1. Na guia **[!UICONTROL Geral]**, especifique o rótulo de pesquisa. O valor padrão é **[!UICONTROL Properties]**.
 
-1. Na guia **[!UICONTROL Opções]** , toque em **[!UICONTROL Adicionar item]**.
+1. Na guia **[!UICONTROL Opções]**, toque em **[!UICONTROL Adicionar Item]**.
 1. Selecione uma propriedade na lista suspensa e especifique um rótulo de pesquisa para ela no campo abaixo da lista suspensa.
 1. Repita a etapa 4 para adicionar mais propriedades. Você também pode especificar um valor de filtro padrão para formulários de lista com base nos critérios especificados e ocultar a propriedade para pesquisa por usuários finais. Marque a caixa de seleção Ocultar para uma propriedade e especifique o valor do filtro padrão.
 
@@ -216,24 +220,25 @@ As tags selecionadas são exibidas no painel Pesquisar junto com as caixas de se
 
 ## Lista de formulários em uma página {#list-forms-on-a-page-br}
 
-Para lista de formulários em uma página, adicione o Componente **[!UICONTROL Pesquisar e Lister]** à página e configure o Painel **[!UICONTROL de]** Lista. Para permitir que os usuários finais pesquisem formulários com data, texto e tags, adicione um componente do Painel **[!UICONTROL de]** pesquisa.
+Para lista de formulários em uma página, adicione o componente **[!UICONTROL Pesquisar e Lister]** à página e configure o **[!UICONTROL Painel de Lista]**. Para permitir que os usuários finais pesquisem formulários com data, texto e tags, adicione um componente **[!UICONTROL Painel de pesquisa]**.
 
 Para vincular um formulário de qualquer lugar na página, use o componente Link. Para obter mais informações sobre o componente de link, consulte [Incorporação do componente de link em uma página](/help/forms/using/embedding-link-component-page.md).
 
-Para lista dos formulários que estão em um estado de rascunho e dos que já foram enviados, use o componente **[!UICONTROL Rascunhos e Envios]** . Para obter mais informações, consulte [Personalizando o componente](/help/forms/using/draft-submission-component.md)Rascunhos e Envios.
+Para lista dos formulários que estão em um estado de rascunho e dos formulários que já foram enviados, use o componente **[!UICONTROL Rascunhos e Envios]**. Para obter mais informações, consulte [Personalizando o componente Rascunhos e Envios](/help/forms/using/draft-submission-component.md).
 
 ## Compatibilidade com dispositivos móveis {#mobile-device-friendliness}
 
-O componente de Pesquisa e Lister do Forms Portal é compatível com dispositivos móveis e se adapta de acordo. Todas as três visualizações padrão: Os relatos de grade, placa e painel de acordo com o dispositivo no qual o site é aberto, são fornecidos com o fato de que a página da Web também se adapta. O fato simples é que o Search &amp; Lister é apenas um componente e não governa o estilo de nível de página.
+O componente de Pesquisa e Lister do Forms Portal é compatível com dispositivos móveis e se adapta de acordo. Todas as três visualizações padrão: Os relaios em grade, placa e painel de acordo com o dispositivo no qual o site é aberto, são fornecidos com o fato de que a página da Web também se adapta. O fato simples é que o Search &amp; Lister é apenas um componente e não governa o estilo de nível de página.
 
 A imagem a seguir mostra o componente de Pesquisa e Lister quando aberto em um dispositivo móvel:
 
-![Captura de tela do componente](assets/search_lister.png)Pesquisa e Lister **Figura:** *Componente de pesquisa e lister*
+![Captura de tela do ](assets/search_lister.png)
+**componente Pesquisar e ListerFigura:componente** *Pesquisar e Lister*
 
 ## Personalizar uma página do portal de formulários {#customizing-a-forms-portal-page-br}
 
-Você pode personalizar uma página do portal de formulários para fornecer uma aparência distinta à página. Você também pode adicionar metadados para melhorar a experiência de pesquisa, alterar o layout da página e adicionar estilos CSS personalizados. Para obter mais informações, consulte [Personalização de modelos para componentes](/help/forms/using/customizing-templates-forms-portal-components.md)do Forms Portal.
+Você pode personalizar uma página do portal de formulários para fornecer uma aparência distinta à página. Você também pode adicionar metadados para melhorar a experiência de pesquisa, alterar o layout da página e adicionar estilos CSS personalizados. Para obter mais informações, consulte [Personalizar modelos para componentes do Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md).
 
-A interface do usuário do AEM Forms permite que você adicione metadados personalizados a formulários. Os metadados personalizados são úteis para fornecer uma experiência de listagem e pesquisa de formulários aos usuários finais. Para obter mais informações sobre metadados personalizados, consulte [Personalização de modelos para componentes](/help/forms/using/customizing-templates-forms-portal-components.md)do Forms Portal.
+A interface do usuário do AEM Forms permite que você adicione metadados personalizados a formulários. Os metadados personalizados são úteis para fornecer uma experiência de listagem e pesquisa de formulários aos usuários finais. Para obter mais informações sobre metadados personalizados, consulte [Personalizar modelos para Componentes do Portal Forms](/help/forms/using/customizing-templates-forms-portal-components.md).
 
 O portal de formulários fornece ações de renderização. Você pode personalizar o portal de formulários para adicionar mais ações. Para obter informações detalhadas, consulte [Adicionar ação personalizada em itens do lister de formulários.](/help/forms/using/add-custom-action-form-lister.md)
