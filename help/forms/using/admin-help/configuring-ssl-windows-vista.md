@@ -32,11 +32,11 @@ Você pode executar keytool usando um único comando que inclui todas as informa
 
 1. Em um prompt de comando, navegue até *[JAVA HOME]*/bin e digite o seguinte comando para criar o certificado e o keystore:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nome *do Host Nome`, OU=`*Nome* da `, O=`*Empresa Nome *da`,L=`*Cidade*****Nome* Código do `, S=`*Estado ** Código do`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`*País&quot;LC Cert&quot;**senhakeystorename* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Nome* `, OU=`*do host* `, O=`*Nome do grupo Empresa* `,L=`*NomeCidade******Nome* Código `, S=`** `, C=`** `" -alias`*do país &quot;LC Cert&quot;* `-keypass` `*key*`*_*** `-keystore`*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
-   >Substitua *[JAVA_HOME]pelo diretório onde o JDK está instalado e substitua o texto em itálico por valores que correspondam ao seu ambiente.*
+   >Substitua *[JAVA_HOME] pelo diretório onde o JDK está instalado e substitua o texto em itálico por valores que correspondam ao seu ambiente.*
 
 1. Digite `changeit` como a senha. Essa senha é o padrão para uma instalação Java e o administrador do sistema pode tê-la alterado.
 
