@@ -18,13 +18,13 @@ ht-degree: 6%
 ---
 
 
-# Princípios básicos do quadro de líderes {#leaderboard-essentials}
+# Essenciais do Quadro de líderes {#leaderboard-essentials}
 
 Esta página fornece as informações essenciais para trabalhar com o recurso de quadro de líderes.
 
-Antes de incluir o componente de quadro de líderes em uma página, é necessário configurar a Pontuação e os Distintos [de](implementing-scoring.md)comunidades. Consulte também [Pontuação e Crachás essenciais](configure-scoring.md).
+Antes de incluir o componente de quadro de líderes em uma página, é necessário configurar [Pontuação e emblemas das comunidades](implementing-scoring.md). Consulte também [Essenciais de Pontuação e Crachás](configure-scoring.md).
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -50,7 +50,7 @@ Antes de incluir o componente de quadro de líderes em uma página, é necessár
   </tr>
   <tr>
    <td><strong> propriedades</strong></td> 
-   <td>Consulte Recurso <a href="enabling-leaderboard.md">do Quadro de líderes</a></td> 
+   <td>Consulte <a href="enabling-leaderboard.md">Recurso do Quadro de líderes</a></td> 
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Antes de incluir o componente de quadro de líderes em uma página, é necessár
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui a função [](functions.md#leaderboard-function)de Quadro de líderes, inclui um `leaderboard` componente configurado.
+Uma estrutura de site da comunidade que inclui a [função de quadro de líderes](functions.md#leaderboard-function), inclui um componente `leaderboard` configurado.
