@@ -34,7 +34,7 @@ A AEM Forms fornece várias APIs para enviar formulários, processar documentos 
 
 As APIs de cobrança não contabilizam o número de páginas, o comprimento de um documento ou formulário ou o formato final do documento renderizado. Um relatório de transações divide as transações em três categorias: Documentos processados, Documentos renderizados e Forms enviado.
 
-* **Forms Submetido:** Quando os dados são enviados de qualquer tipo de formulário criado com a AEM Forms e os dados são enviados para qualquer repositório ou banco de dados do armazenamento de dados é considerado como envio ao formulário. Por exemplo, o envio de um formulário adaptável, formulário HTML5, PDF forms e conjunto de formulários são contabilizados como formulários enviados. Cada formulário em um conjunto de formulários é considerado um envio. Por exemplo, se um conjunto de formulários tiver 5 formulários, quando o conjunto de formulários for submetido, o serviço de relatórios de transação contará como 5 envios.
+* **Forms Submetido:** Quando os dados são enviados de qualquer tipo de formulário criado com a AEM Forms e os dados são enviados para qualquer repositório de armazenamentos de dados ou banco de dados é considerado como envio de formulário. Por exemplo, o envio de um formulário adaptável, formulário HTML5, PDF forms e conjunto de formulários são contabilizados como formulários enviados. Cada formulário em um conjunto de formulários é considerado um envio. Por exemplo, se um conjunto de formulários tiver 5 formulários, quando o conjunto de formulários for submetido, o serviço de relatórios de transação contará como 5 envios.
 * **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando APIs de serviços de documento faturáveis para serviços de documento ou convertendo um documento de um formato para outro são contabilizados como documentos renderizados.
 
 >[!NOTE]
@@ -154,7 +154,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
  </tbody>
 </table>
 
-### Serviço de saída {#output-service}
+### Serviço de Saída {#output-service}
 
 <table> 
  <tbody>
@@ -278,7 +278,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invocar</a></td> 
-   <td>Executa o documento DDX especificado e retorna um objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contendo os documentos resultantes. </td> 
+   <td>Executa o documento DDX especificado e retorna um objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> que contém os documentos resultantes. </td> 
    <td>Documentos processados</td> 
    <td>As seguintes operações não são contabilizadas como transações:
     <ul> 
@@ -288,7 +288,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invocar</a></td> 
-   <td>Executa o documento DDX especificado e retorna um objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> contendo os documentos resultantes. </td> 
+   <td>Executa o documento DDX especificado e retorna um objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> que contém os documentos resultantes. </td> 
    <td>Documentos processados</td> 
    <td>Todos os formatos de arquivo de entrada suportados pelos serviços de Gerador de PDF, Forms e Saída, o serviço Assembler oferece suporte a todos esses formatos como formatos de arquivo de saída. </td> 
   </tr>
@@ -310,7 +310,7 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
 
 
 
-### Serviço de utilitário PDF  {#pdf-utility-service}
+### Serviço de utilitário PDF {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -343,14 +343,14 @@ As APIs de cobrança não contabilizam o número de páginas, o comprimento de u
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
    <td>A API permite proteger seu documento. Você pode usar a API para assinar, certificar, estender o leitor ou criptografar um documento PDF. </td> 
    <td>Documentos processados</td> 
-   <td>Somente a operação de assinar e certificar do <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> é faturada.</td> 
+   <td>Somente a operação de assinatura e certificação de <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> é faturada.</td> 
   </tr>
  </tbody>
 </table>
 
 ## APIs de captura de dados faturáveis {#billable-data-capture-apis}
 
-Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um formulário PDF não é contabilizado como uma transação. Use a API [de relatórios de](record-transaction-custom-implementation.md) transação fornecida para registrar uma submissão de PDF forms como uma transação.
+Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um formulário PDF não é contabilizado como uma transação. Use a API [relatórios de transação](record-transaction-custom-implementation.md) fornecida para registrar uma submissão de PDF forms como uma transação.
 
 ### Formulários adaptáveis {#adaptive-forms}
 
@@ -442,7 +442,7 @@ Atribua etapas de serviços de tarefa e documento a Workflows de AEM centrados e
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### Interative Communication - Canal de impressão {#interactive-communication-print-channel}
 
 <table> 
  <tbody>
@@ -463,7 +463,7 @@ Atribua etapas de serviços de tarefa e documento a Workflows de AEM centrados e
  </tbody>
 </table>
 
-### Workflows de AEM centrados em forma no OSGi  {#form-centric-aem-workflows-on-osgi}
+### Workflows de AEM centrados em forma no OSGi {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>
