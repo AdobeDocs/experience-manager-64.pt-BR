@@ -20,18 +20,18 @@ ht-degree: 0%
 
 # Disponibilizar fontes {#make-fonts-available}
 
-Verifique se as fontes usadas em um formulário estão disponíveis para uso no servidor de aplicativos J2EE que hospeda formulários AEM. For example, consider the following scenario. Um designer de formulário adiciona uma fonte ao diretório de fontes que o Designer usa e cria um formulário que usa essa fonte em um computador separado. Para que o serviço de Saída use a fonte, coloque-a no diretório Fontes do cliente. Se o diretório Fontes do cliente não existir, crie um diretório no servidor de aplicativos J2EE que hospeda formulários AEM.
+Verifique se as fontes usadas em um formulário estão disponíveis para uso no servidor de aplicativos J2EE que hospeda formulários AEM. Por exemplo, considere o seguinte cenário. Um designer de formulário adiciona uma fonte ao diretório de fontes que o Designer usa e cria um formulário que usa essa fonte em um computador separado. Para que o serviço de Saída use a fonte, coloque-a no diretório Fontes do cliente. Se o diretório Fontes do cliente não existir, crie um diretório no servidor de aplicativos J2EE que hospeda formulários AEM.
 
-Para obter informações sobre configurações de fonte adicionais, consulte [Configurar configurações](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)gerais de formulários AEM.
+Para obter informações sobre configurações de fonte adicionais, consulte [Definir configurações gerais de formulários AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
 
 **Especificar o local do diretório de fontes do Cliente**
 
 1. No console de administração, clique em Configurações > Principais configurações de sistemas > Configurações.
-1. Na caixa Local do diretório Fontes do sistema, digite o caminho para o diretório de fontes do cliente. Podem ser adicionados vários diretórios, separados por ponto-e-vírgula **;**
+1. Na caixa Local do diretório Fontes do sistema, digite o caminho para o diretório de fontes do cliente. Vários diretórios podem ser adicionados, separados por ponto-e-vírgula **;**
 1. Clique em OK.
 1. Reinicie o sistema no qual os formulários AEM estão instalados.
 
 >[!NOTE]
 >
->Fonts are picked from the Windows system font cache and a system restart is required to update the cache. Depois de especificar o diretório de fontes do Cliente, reinicie o sistema no qual os formulários AEM estão instalados.
+>As fontes são escolhidas do cache de fontes do sistema do Windows e é necessário reiniciar o sistema para atualizar o cache. Depois de especificar o diretório de fontes do Cliente, reinicie o sistema no qual os formulários AEM estão instalados.
 
