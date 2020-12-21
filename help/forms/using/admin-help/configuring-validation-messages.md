@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Configuração de mensagens de validação {#configuring-validation-messages}
+# Configurando mensagens de validação {#configuring-validation-messages}
 
 Para formulários renderizados como HTML, os erros de validação de formulário que ocorrem são exibidos para o usuário. Você pode personalizar como as mensagens de validação são exibidas. Dependendo de onde as mensagens de validação são exibidas, também é possível controlar o local da mensagem no formulário e o tamanho da borda do quadro.
 
@@ -33,15 +33,15 @@ Para formulários renderizados como HTML, os erros de validação de formulário
 
    **Sem quadro:** Para exibir mensagens de validação na mesma janela. Esse valor é o padrão.
 
-   **Por API (com dados):** Para retornar as mensagens de validação por meio da API (com dados). As mensagens de validação não são exibidas na tela.
+   **Por meio da API (com dados):** Para retornar as mensagens de validação por meio da API (com dados). As mensagens de validação não são exibidas na tela.
 
-   **Por API (com formulário):** Para retornar as mensagens de validação por meio da API (com o formulário). As mensagens de validação não são exibidas na tela.
+   **Por meio da API (com formulário):** Para retornar as mensagens de validação por meio da API (com o formulário). As mensagens de validação não são exibidas na tela.
 
    **Nenhum:** Para não exibir mensagens de validação.
 
 1. Clique em Salvar.
 
-## Especificar o local das mensagens de validação relativas ao formulário retornado no navegador da Web {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## Especifique o local das mensagens de validação relativas ao formulário retornado no navegador da Web {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Quando o Relatórios é definido como Quadro ou Sem quadro, você pode especificar o local das mensagens de validação.
 
@@ -49,7 +49,7 @@ Quando o Relatórios é definido como Quadro ou Sem quadro, você pode especific
 
    **Esquerda:** Para exibir mensagens de validação no lado esquerdo do navegador da Web.
 
-   **Direita:** Para exibir mensagens de validação no lado direito do navegador da Web.
+   **Direita:** para exibir mensagens de validação no lado direito do navegador da Web.
 
    **Parte superior**: Para exibir mensagens de validação na parte superior do navegador da Web. Esse valor é o padrão.
 
