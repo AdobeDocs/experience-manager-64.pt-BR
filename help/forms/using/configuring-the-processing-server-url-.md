@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Definição das configurações AEM DS {#configuring-aem-ds-settings}
 
-Este artigo descreve como configurar o Serviço **de configurações do** AEM DS. Essa configuração pode ser usada em vários cenários, por exemplo:
+Este artigo descreve como configurar **AEM DS Settings Service**. Essa configuração pode ser usada em vários cenários, por exemplo:
 
 * No gerenciamento de correspondência
 
@@ -28,7 +28,7 @@ Este artigo descreve como configurar o Serviço **de configurações do** AEM DS
 
 * Em Formulários adaptáveis para casos em que o formulário adaptativo é enviado da instância de publicação
 
-Veja a seguir as etapas para configurar as Configurações **[!UICONTROL do]** AEM DS:
+Veja a seguir as etapas para configurar **[!UICONTROL AEM Configurações do DS]**:
 
 1. Abra o Configuration Manager na instância de publicação usando o URL:
 
@@ -36,11 +36,11 @@ Veja a seguir as etapas para configurar as Configurações **[!UICONTROL do]** A
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. Na janela Configuração **[!UICONTROL do console da Web do]** Adobe Experience Manager, localize e clique na opção Configurações **[!UICONTROL do]** AEM DS.
+1. Na janela **[!UICONTROL Configuração do Adobe Experience Manager Web Console]**, localize e clique na opção **[!UICONTROL AEM Configurações do DS]**.
 
    ![ds_settings](assets/ds_settings.png)
 
-1. A janela Serviço **[!UICONTROL de configurações do]** AEM DS exibe as configurações comuns para AEM componentes do DS.
+1. A janela **[!UICONTROL AEM DS Settings Service]** exibe as configurações comuns para AEM componentes do DS.
 
    ![ds_settings_1](assets/ds_settings_1.png)
 
@@ -48,7 +48,7 @@ Veja a seguir as etapas para configurar as Configurações **[!UICONTROL do]** A
 
    **[!UICONTROL URL]** do servidor de processamento: O Servidor de processamento é o servidor no qual o fluxo de trabalho do Forms ou do AEM precisa ser acionado. Isso pode ser igual ao URL da instância do autor AEM ou do outro URL do servidor (ou seja, http:// localhost:port/).
 
-   **[!UICONTROL Nome]** de usuário do servidor de processamento: Nome de usuário do usuário do fluxo de trabalho [com base no URL do servidor que está sendo usado]
+   **[!UICONTROL Nome]** de usuário do servidor de processamento: Nome de usuário do usuário do fluxo de trabalho  [com base no URL do servidor que está sendo usado]
 
    **[!UICONTROL Senha]** do servidor de processamento: Senha do usuário do fluxo de trabalho
 
