@@ -33,7 +33,7 @@ O Forms Portal permite que você use metadados personalizados em listagens de fo
 
 Execute as seguintes etapas para criar um modelo personalizado para vários componentes do Forms Portal.
 
-## Creating a custom template {#creating-a-nbsp-custom-template}
+## Criando um modelo personalizado {#creating-a-nbsp-custom-template}
 
 1. Criar um nó sling:Folder em */apps *
 
@@ -82,27 +82,27 @@ Um modelo personalizado para qualquer componente do Forms Portal inclui entradas
 
 O Forms Portal fornece uma sintaxe para que os usuários individuais exibam metadados personalizados/OOTB. Os espaços reservados são preenchidos após a exibição dos resultados de formulários, rascunhos ou envios.
 
-Para incluir uma entrada repetível, configure o valor do atributo com **dados repetitivos** como **verdadeiro**.
+Para incluir uma entrada repetível, configure o valor do atributo **repetitivo de dados** para **true**.
 
-*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. A primeira, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de container para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo de **dados repetíveis** presente no elemento Div tem o valor **true**.
+*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. A primeira, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de container para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo **repetitivo de dados** presente no elemento Div tem o valor **true**.
 
-Cada espaço reservado tem um conjunto exclusivo de metadados OTB. Para exibir metadados personalizados em um local específico no formulário, adicione a propriedade **** $metadata_prop no local.
+Cada espaço reservado tem um conjunto exclusivo de metadados OTB. Para exibir metadados personalizados em um local específico no formulário, adicione a **$metadata_prop propriedade** no local.
 
-*No exemplo, a propriedade metadata é usada em várias instâncias. Por exemplo, ele é usado na **descrição**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**********, pdfStyle, e no caminho prescrito.*
+*No exemplo, a propriedade metadata é usada em várias instâncias. Por exemplo, é usado em **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, e **path**da forma prescrita.*
 
 ## Metadados prontos para uso {#out-of-the-box-metadata}
 
 Vários componentes do Forms Portal fornecem conjuntos exclusivos de metadados OOTB que podem ser usados para listagem.
 
-### Componente de pesquisa e lister {#search-amp-lister-component}
+### Componente do Search &amp; Lister {#search-amp-lister-component}
 
 * **Título:** Título do formulário
 * **name**: Nome do formulário (na maioria, é o mesmo que o título)
 * **descrição**: Descrição do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
 * **pdfUrl**: URL para renderizar o formulário como PDF
-* **assetType**: Tipo do ativo. Os valores válidos incluem **Formulário**, Formulário **** PDF, Formulário **** impresso e Formulário **adaptável**
-* **htmlStyle** e **pdfStyle**: Estilo de exibição para ícones HTML e PDF usados respectivamente para renderização. Os valores válidos são &quot;**__FP_display_none**&quot; ou **em branco**
+* **assetType**: Tipo do ativo. Os valores válidos incluem **Formulário**, **Formulário PDF**, **Formulário impresso** e **Formulário adaptável**
+* **htmlStyle**  e  **pdfStyle**: Estilo de exibição para ícones HTML e PDF usados respectivamente para renderização. Os valores válidos são &quot;**__FP_display_none**&quot; ou **blank**
 
    *Observação: Lembre-se de usar a classe __FP_display_none na sua folha de estilos personalizada*
 
@@ -110,7 +110,7 @@ Vários componentes do Forms Portal fornecem conjuntos exclusivos de metadados O
 
 Suporte para localização, classificação e uso das propriedades de configuração na interface do usuário (somente Search &amp; Lister):
 
-1. **Suporte** a Localizações: Para localizar qualquer texto estático, use o atributo **${localize-***YOUR_TEXT***}** e disponibilize o valor localizado, caso ainda não exista.
+1. **Suporte** a localizações: Para localizar qualquer texto estático, use o atributo  **${localize-***YOUR_TEXT***}** e disponibilize o valor localizado, caso ainda não exista.
 
    *No exemplo discutido, os atributos ${localize-Apply} e ${localize-Download} são usados para localizar o texto Aplicar e Baixar.*
 
@@ -118,13 +118,13 @@ Suporte para localização, classificação e uso das propriedades de configura�
 
    Por exemplo, para o cabeçalho &quot;Título&quot; na visualização de grade, o valor do cabeçalho &quot;data-sortKey&quot; é &quot;título&quot;. Clique no cabeçalho para classificar os valores em uma coluna específica.
 
-1. **Uso das propriedades** de configuração: O componente de Pesquisa e Lister tem várias configurações que podem ser usadas na interface do usuário. Por exemplo, para exibir o texto da Dica de ferramenta HTML salvo pela caixa de diálogo de edição, use o atributo **${config-htmlLinkText}.** Da mesma forma, para o texto da dica de ferramenta do PDF, use o atributo ${config-pdfLinkText}**** .
+1. **Uso das propriedades** de configuração: O componente de Pesquisa e Lister tem várias configurações que podem ser usadas na interface do usuário. Por exemplo, para exibir o texto da Dica de ferramenta HTML salvo pela caixa de diálogo de edição, use o atributo **${config-htmlLinkText}.** Da mesma forma, para o texto da dica de ferramenta do PDF, use o **atributo${config-pdfLinkText}** .
 
-### Componente do link {#link-component}
+### Componente de link {#link-component}
 
 * **Título:** Título do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
-* **público alvo**: Atributo de Público alvo do link. Os valores válidos são &quot;_blank&quot; e &quot;_self.&quot;
+* **público alvo**: Atributo de público alvo do link. Os valores válidos são &quot;_blank&quot; e &quot;_self.&quot;
 * **linkText**: Legenda do link
 
 ### Componente Rascunhos e envios {#drafts-amp-submissions-component}
@@ -145,30 +145,30 @@ Suporte para localização, classificação e uso das propriedades de configura�
 
 *Nota:*
 
-1. Para a opção de exclusão na seção Rascunhos sob o componente Rascunhos e submissões, nomeie a classe CSS &quot;__FP_deleteDraft.&quot; Além disso, inclua o atributo &quot;draftID&quot; com o valor **${draftID}**, que é a id de rascunho do rascunho correspondente.
+1. Para a opção de exclusão na seção Rascunhos sob o componente Rascunhos e submissões, nomeie a classe CSS &quot;__FP_deleteDraft.&quot; Além disso, inclua o atributo &quot;draftID&quot; com o valor **${draftID}**, que é a ID de rascunho do rascunho correspondente.
 
-1. Ao criar links para rascunhos abertos e envios, você pode especificar **$path.html** como o valor do atributo **href** para a tag âncora.
+1. Ao criar links para rascunhos abertos e envios, você pode especificar **$path.html** como o valor do atributo **href** para a tag de âncora.
 
 ![Nó Rascunhos e Envio](assets/raw-image-with-index.png)
 
-**A**. elemento Container
+**A**. elemento container
 
-**B.** Metadados de &quot;caminho&quot; com uma hierarquia fixa para obter a miniatura armazenada para cada formulário.
+**B.**  Metadados de &quot;caminho&quot; com uma hierarquia fixa para obter a miniatura armazenada para cada formulário.
 
-**C.** Atributo repetível de dados usado para a seção do modelo para cada formulário
+**Atributo repetível C.** Data usado para a seção do modelo para cada formulário
 
-**D.** Para localizar a string &quot;Apply&quot;
+**D.** Para localizar a string &quot;Aplicar&quot;
 
-**E.** Uso da propriedade de configuração pdfLinkText
+**E.** Using the configuration property pdfLinkText
 
 **F.** Uso dos metadados &quot;pdfUrl&quot;
 
 ## Dicas, truques e problemas conhecidos {#tips-tricks-and-known-issues}
 
 1. Não use aspas simples (&#39;) em nenhum modelo personalizado.
-1. Para metadados personalizados, armazene essa propriedade somente no nó **jcr:content/metadata** . Se você armazená-lo em qualquer outro lugar, o Forms Portal não poderá exibir os metadados.
+1. Para metadados personalizados, armazene essa propriedade somente no nó **jcr:content/metadata**. Se você armazená-lo em qualquer outro lugar, o Forms Portal não poderá exibir os metadados.
 1. Certifique-se de que o nome de quaisquer metadados personalizados ou existentes não incluam dois pontos (:). Se isso acontecer, você não poderá exibi-lo na interface do usuário.
-1. **a repetição** de dados não tem importância para um componente **Link** . O Adobe recomenda que você evite usar essa propriedade no modelo para um componente de Link.
+1. **data-** repetitiva não tem importância para um componente  **** do Linkcomponent. O Adobe recomenda que você evite usar essa propriedade no modelo para um componente de Link.
 
 ## Artigos relacionados
 
