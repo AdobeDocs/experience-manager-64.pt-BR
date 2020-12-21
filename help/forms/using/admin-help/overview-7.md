@@ -26,8 +26,8 @@ O serviço Forms permite que você crie aplicativos clientes de captura de dados
 * como HTML em vários ambientes de navegador, incluindo uma renderização XHTML 1.0 compatível
 * como guias de formulário em vários ambientes do navegador que suportam o Flash Player Adobe.
 
-Para obter informações adicionais sobre o serviço Forms, consulte Referência [de](https://www.adobe.com/go/learn_aemforms_services_63)serviços.
+Para obter informações adicionais sobre o serviço Forms, consulte [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Usando a página do Forms no console de administração, você pode configurar o comportamento do serviço Forms. Essas configurações se aplicam a todas as invocações do serviço. Todos os parâmetros enviados pelo SDK de formulários AEM substituem as configurações definidas no console de administração; no entanto, afetam apenas essa invocação em particular.
 
-Depois de alterar as configurações do Forms no console de administração, clique em Salvar. Não é necessário reiniciar o servidor para que as alterações entrem em vigor. No entanto, talvez seja necessário parar e reiniciar o serviço Forms ao configurar as configurações do modo de cache. (Consulte [Iniciar e interromper serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+Depois de alterar as configurações do Forms no console de administração, clique em Salvar. Não é necessário reiniciar o servidor para que as alterações entrem em vigor. No entanto, talvez seja necessário parar e reiniciar o serviço Forms ao configurar as configurações do modo de cache. (Consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
