@@ -17,7 +17,7 @@ ht-degree: 11%
 # Guia do usuário do AEM 6.4 Communities {#communities}
 
 + [Visão geral do AEM Communities](home.md)
-+ Introduction to AEM Communities {#introduction}
++ Introdução ao AEM Communities {#introduction}
    + [Sites de comunidades](administer-landing.md)
    + [Visão geral do AEM Communities](overview.md)
    + [Novidades do AEM 6.4 Communities](whats-new-aem-communities.md)
