@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Importar e gerenciar aplicativos{#import-and-manage-applications}
 
-Nos formulários AEM, um *aplicativo* é um container para armazenar ativos necessários para implementar uma solução de formulários AEM. Exemplos de ativos são designs de formulário, fragmentos de formulário, imagens, processos, arquivos DX, guias de formulário, páginas HTML e arquivos SWF. Durante a fase de desenvolvimento de um projeto, os usuários do Workbench podem implantar aplicativos diretamente da visualização Aplicativos no Workbench. Depois de implantados, esses aplicativos são exibidos no console de administração, na guia Aplicativos da página Gerenciamento de aplicativos.
+Em formulários AEM, um *aplicativo* é um container para armazenar ativos necessários para implementar uma solução de formulários AEM. Exemplos de ativos são designs de formulário, fragmentos de formulário, imagens, processos, arquivos DX, guias de formulário, páginas HTML e arquivos SWF. Durante a fase de desenvolvimento de um projeto, os usuários do Workbench podem implantar aplicativos diretamente da visualização Aplicativos no Workbench. Depois de implantados, esses aplicativos são exibidos no console de administração, na guia Aplicativos da página Gerenciamento de aplicativos.
 
-Quando um aplicativo estiver completo e pronto para implantação em um servidor de produção, o usuário do Workbench agrupará o aplicativo em um arquivo *de aplicativo de formulários* AEM (.lca). Em seguida, um administrador usa o console de administração para importar e implantar o arquivo do aplicativo, usando a guia Aplicativos na página Gerenciamento de aplicativos.
+Quando um aplicativo estiver completo e pronto para implantação em um servidor de produção, o usuário do Workbench agrupará o aplicativo em um *AEM arquivo de aplicativo de formulários* (.lca). Em seguida, um administrador usa o console de administração para importar e implantar o arquivo do aplicativo, usando a guia Aplicativos na página Gerenciamento de aplicativos.
 
 Você também pode usar a guia arquivamentos na página Gerenciamento de aplicativos para importar LCAs criados usando o workbench 8.x.
 
