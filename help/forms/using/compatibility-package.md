@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Instalar pacote de compatibilidade {#compatibility-package}
+# Instalar o Pacote de Compatibilidade {#compatibility-package}
 
 A instalação do pacote Compatibilidade no AEM Forms 6.4 permite que você use os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e as páginas e modelos de formulários adaptáveis obsoletos
 
 ## Visão geral {#overview}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.4. Para continuar usando as letras AEM 6.3 Forms e AEM 6.2 Forms, é necessário instalar o pacote [de compatibilidade do](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)AEMFD.
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.4. Para continuar usando as letras do AEM 6.3 Forms e AEM 6.2 Forms, é necessário instalar o [pacote de compatibilidade do AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
 O pacote Compatibilidade do AEMFD permite que você use os seguintes ativos do AEM Forms 6.3 e 6.2 no AEM Forms 6.4:
 
@@ -33,24 +33,24 @@ O pacote Compatibilidade do AEMFD permite que você use os seguintes ativos do A
 * Dicionários de dados
 * Formulários adaptáveis modelos e páginas obsoletos
 
-Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.4 instalando o pacote](/help/forms/using/compatibility-package.md#assetsmadecompatible)Compatibilidade.
+Para obter mais informações, consulte [Ativos tornados compatíveis com o AEM Forms 6.4 instalando o pacote de compatibilidade](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Adicione suporte para ativos AEM Forms 6.3 e 6.2 no AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Após executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.4:
 
-Verifique se você tem [AEM pacote](/help/sites-deploying/backward-compatibility.md) de compatibilidade pré-instalado.
+Certifique-se de que [AEM pacote de compatibilidade](/help/sites-deploying/backward-compatibility.md) esteja pré-instalado.
 
-1. Instale o pacote [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)compatibilidade.
+1. Instale o pacote [Compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
    Para obter mais informações sobre como carregar e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
 1. Depois que os registros estiverem estabilizados, reinicie o servidor.
 1. Use o utilitário de migração para tornar seus ativos compatíveis com a versão 6.4.
 
-   Para obter mais informações, consulte Utilitário [de](/help/forms/using/migration-utility.md)migração.
+   Para obter mais informações, consulte [utilitário de migração](/help/forms/using/migration-utility.md).
 
-## Ativos compatíveis com o AEM Forms 6.4 ao instalar o pacote de compatibilidade {#assetsmadecompatible}
+## Os ativos tornados compatíveis com o AEM Forms 6.4 ao instalar o pacote de compatibilidade {#assetsmadecompatible}
 
 Ao instalar o pacote de compatibilidade, você pode tornar os seguintes ativos e modelos compatíveis com o AEM Forms 6.4:
 
