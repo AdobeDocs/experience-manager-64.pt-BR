@@ -29,17 +29,17 @@ Há dois tipos de serviços que fazem parte de AEM formulários:
 
 AEM módulos de formulários (por exemplo, Forms, Rights Management, Saída) operam como serviços. Às vezes, pode ser necessário interromper ou start os serviços desses módulos de formulários AEM. Por exemplo, você deve parar e reiniciar um serviço de formulários AEM depois de alterar uma configuração para o serviço.
 
-1. No console de administração, clique em **Serviços** > **Aplicativos e serviços** > Gerenciamento **** de serviços.
+1. No console de administração, clique em **Serviços** > **Aplicativos e Serviços** > **Gerenciamento de Serviços**.
 1. Na página Gerenciamento de serviços, marque a caixa de seleção ao lado do serviço a ser parado ou start e clique em Parar ou Start.
 
-## Serviços de Start ou interrupção para o servidor de aplicativos e banco de dados {#start-or-stop-services-for-the-application-server-and-database}
+## Serviços de start ou interrupção para o servidor de aplicativos e banco de dados {#start-or-stop-services-for-the-application-server-and-database}
 
 Uma implementação completa de formulários AEM inclui um servidor de aplicativos e serviços de banco de dados:
 
 * *`[application server]`* para formulários AEM
 * *`[database]`* para formulários AEM
 
-No Windows, esses serviços podem ser acessados por meio de Ferramentas **administrativas > painel** **** Serviços. Por exemplo, se você instalou formulários AEM em JBoss usando o método chave na mão, os seguintes serviços estão disponíveis no sistema:
+No Windows, esses serviços são acessíveis por meio das **Ferramentas administrativas** > **Painel de serviços**. Por exemplo, se você instalou formulários AEM em JBoss usando o método chave na mão, os seguintes serviços estão disponíveis no sistema:
 
 * Formulários JBoss for Adobe Experience Manager
 * Formulários MySQL for Adobe Experience Manager
