@@ -24,19 +24,19 @@ A partir AEM Comunidades 6.1, a maneira mais fácil de criar uma página de amos
 
 Isso incluirá um componente parsys para que você possa [ativar componentes para criação](basics.md#accessing-communities-components).
 
-Outra opção para explorar componentes de amostra é usar os recursos apresentados no Guia [de componentes da](components-guide.md)comunidade.
+Outra opção para explorar componentes de amostra é usar os recursos apresentados no [Guia de componentes da comunidade](components-guide.md).
 
 ## Criar um site da comunidade {#create-a-community-site}
 
 Isso é muito semelhante à criação de um novo site descrito em [Introdução ao AEM Communities](getting-started.md).
 
-A principal diferença é que este tutorial criará um novo modelo de site da comunidade que contém apenas a função [](functions.md#page-function) Página para criar um site simples da comunidade sem outros recursos (que não os recursos pré-conectados básicos para todos os sites da comunidade).
+A principal diferença é que este tutorial criará um novo modelo de site da comunidade que contém apenas a [função de página](functions.md#page-function) para criar um site da comunidade simples sem outros recursos (que não sejam os recursos pré-conectados básicos para todos os sites da comunidade).
 
-### Criar novo modelo de site {#create-new-site-template}
+### Criar Novo Modelo de Site {#create-new-site-template}
 
-Para começar, crie um modelo [de site simples da](sites.md)comunidade.
+Para começar, crie um simples [modelo de site da comunidade](sites.md).
 
-Na navegação global em uma instância do autor, selecione **[!UICONTROL Ferramentas > Comunidades > Modelos]** do site.
+Na navegação global em uma instância do autor, selecione **[!UICONTROL Ferramentas > Comunidades > Modelos do site]**.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -51,7 +51,7 @@ Na navegação global em uma instância do autor, selecione **[!UICONTROL Ferram
 
 * ESTRUTURA
 
-   * Arrastar uma `Page` função para o Construtor de modelos
+   * Arraste uma função `Page` para o Construtor de modelos
    * Para obter detalhes sobre a função de configuração, digite
 
       * `Title`: Página única
@@ -59,8 +59,8 @@ Na navegação global em uma instância do autor, selecione **[!UICONTROL Ferram
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-* Selecionar **`Save`** para a configuração
-* Selecionar **`Save`** para o modelo de site
+* Selecione **`Save`** para a configuração
+* Selecione **`Save`** para o modelo de site
 
 ### Criar novo site da comunidade {#create-new-community-site}
 
@@ -81,7 +81,7 @@ Depois de criar o modelo de site, na navegação global selecione **[!UICONTROL 
    * `Name`: amostra
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`: choice `Single Page Template`
+   * `Template`: choice  `Single Page Template`
 
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
@@ -100,13 +100,13 @@ Depois de criar o modelo de site, na navegação global selecione **[!UICONTROL 
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-## Publicar o site {#publish-the-site}
+## Publicar o Site {#publish-the-site}
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
-No console [de sites da](sites-console.md)comunidade, selecione o ícone de publicação para publicar o site, por padrão, em http://localhost:4503.
+No [console de sites da comunidade](sites-console.md), selecione o ícone de publicação para publicar o site, por padrão, em http://localhost:4503.
 
-## Abrir o site no Autor no Modo de edição {#open-the-site-on-author-in-edit-mode}
+## Abra o Site no Autor no Modo de edição {#open-the-site-on-author-in-edit-mode}
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -118,6 +118,6 @@ O URL será [http://localhost:4502/editor.html/content/sites/sample/en.html](htt
 
 No home page simples é possível ver o que está pré-conectado através das funções e modelos da comunidade, e brincar com a adição e configuração de componentes da comunidade.
 
-## Site de Visualização na publicação {#view-site-on-publish}
+## Site de visualização na publicação {#view-site-on-publish}
 
-Depois de publicar a página, abra a página na instância [de](http://localhost:4503/content/sites/sample/en.html) publicação para experimentar os recursos como um visitante de site anônimo, membro conectado ou administrador. O link Administração visível no ambiente do autor não aparecerá no ambiente de publicação, a menos que um administrador faça logon.
+Depois de publicar a página, abra a página na [instância de publicação](http://localhost:4503/content/sites/sample/en.html) para experimentar os recursos como um visitante de site anônimo, membro conectado ou administrador. O link Administração visível no ambiente do autor não aparecerá no ambiente de publicação, a menos que um administrador faça logon.
