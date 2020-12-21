@@ -18,11 +18,11 @@ ht-degree: 4%
 ---
 
 
-# Ideação básica {#ideation-essentials}
+# Ideação essencial {#ideation-essentials}
 
 Esta página fornece as informações essenciais para trabalhar com o recurso de criação, que é semelhante a um fórum, mas com a capacidade de salvar como um rascunho e uma experiência mais colaborativa.
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -36,7 +36,7 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.vote<br /> cq.social.hbs.curation<br /> cq.social.hbs.ideation</td> 
+   <td>cq.social.hbs.vote<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -48,7 +48,7 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
   </tr>
   <tr>
    <td><strong> propriedades</strong></td> 
-   <td>Consulte Recurso <a href="ideation-feature.md">Ideação</a></td> 
+   <td>Consulte <a href="ideation-feature.md">Recurso de ideia</a></td> 
   </tr>
  </tbody>
 </table>
@@ -57,4 +57,4 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 ### Função de ideação {#ideation-function}
 
-Uma estrutura de site da comunidade que inclui a função [](functions.md#ideation-function)Ideation, inclui um `ideation` componente configurado.
+Uma estrutura de site da comunidade que inclui a [função Ideation](functions.md#ideation-function), inclui um componente `ideation` configurado.
