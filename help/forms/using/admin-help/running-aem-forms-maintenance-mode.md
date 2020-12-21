@@ -31,7 +31,7 @@ Evite invocar qualquer processo enquanto o servidor estiver no modo de manutenç
 
 1. Em um navegador da Web, digite:
 
-   `https://`*[nome do host ]*`:`*[porta]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrador nome de usuário ]*`&password=`*[senha]*
+   `https://`*[]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[hostnameportadministrative ]*`&password=`*[usernamepassword]*
 
    Uma mensagem &quot;agora pausada&quot; é exibida na janela do navegador.
 
@@ -43,7 +43,7 @@ Evite invocar qualquer processo enquanto o servidor estiver no modo de manutenç
 
 1. Em um navegador da Web, digite:
 
-   `https://`*[nome]do host:nome de usuário[do ]*administrador`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[da porta]* `&password=`*[senha ]*
+   `https://`*[nome] do host:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrative]* `&password=`*[usernamepassword ]*
 
    O status é exibido na janela do navegador. Um status &quot;true&quot; indica que o servidor está sendo executado no modo de manutenção e &quot;false&quot; indica que o servidor não está no modo de manutenção.
 
@@ -51,7 +51,7 @@ Evite invocar qualquer processo enquanto o servidor estiver no modo de manutenç
 
 1. Em um navegador da Web, digite:
 
-   `https://`*[nome]do host:nome de usuário[do ]*administrador`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[da porta]* `&password=`*[senha ]*
+   `https://`*[nome] do host:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrative]* `&password=`*[usernamepassword ]*
 
    Uma mensagem &quot;agora em execução&quot; é exibida na janela do navegador.
 
