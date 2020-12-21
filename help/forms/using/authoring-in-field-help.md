@@ -45,11 +45,11 @@ O campo Descrição curta fornece dicas rápidas e curtas sobre como preencher u
 
 >[!NOTE]
 >
->Selecione **Sempre mostrar descrição** curta para exibir permanentemente o texto de ajuda abaixo do campo.
+>Selecione **Sempre mostrar descrição curta** para exibir permanentemente o texto de ajuda abaixo do campo.
 
 ![Ajuda permanente curta no contexto abaixo do campo](assets/short1.png)
 
-### Long description {#long-description}
+### Descrição longa {#long-description}
 
 Você pode usar o campo Descrição longa para especificar texto longo ou incorporar conteúdo de mídia avançada, incluindo vídeos, como ajuda contextual. Por exemplo, a imagem a seguir mostra como você pode incorporar um vídeo como ajuda no contexto.
 
