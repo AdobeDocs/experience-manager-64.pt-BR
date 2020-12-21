@@ -180,7 +180,7 @@ Consulte também [Configurações avançadas](advanced-config-3d.md).
 
    Usando o botão esquerdo do mouse para ajustar a visualização. A iluminação do plano de fundo e do modelo muda para refletir a nova seleção de estágio.
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 ## Configurar suporte para ativos Adobe Dimension {#configuring-support-for-adobe-dimension-assets}
 
