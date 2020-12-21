@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Introdução ao Relatórios do processo {#introduction-to-process-reporting}
+# Introdução ao Relatórios Process {#introduction-to-process-reporting}
 
 ![relatórios de processos](assets/process-reporting.png)
 
@@ -27,7 +27,7 @@ O Process Relatórios fornece um conjunto de relatórios prontos para uso que pe
 
 Além disso, o Relatórios Process fornece uma interface para executar query adhoc e integrar visualizações de relatório personalizadas à interface do usuário do Process Relatórios.
 
-Para obter a lista de navegadores suportados, consulte Plataformas [suportadas pela](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
+Para obter a lista de navegadores suportados, consulte [Plataformas suportadas pela AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 O Relatórios de processo é construído em módulos que:
 
@@ -37,7 +37,7 @@ O Relatórios de processo é construído em módulos que:
 
 ## Principais recursos {#key-capabilities}
 
-### Relatórios sempre ativo {#always-on-reporting}
+### Relatórios sempre ativado {#always-on-reporting}
 
 ![gerenciamento de sites](assets/site-management.png)
 
