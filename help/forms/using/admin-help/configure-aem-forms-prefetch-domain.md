@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Os usuários podem experimentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem profundamente aninhados (por exemplo, 30 níveis). Se você estiver enfrentando esse problema, é possível configurar formulários AEM para buscar informações de determinados domínios.
 
-1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos]** de configuração.
+1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração]**.
 1. Para exportar a configuração atual para um arquivo, clique em **[!UICONTROL Exportar]** e salve o arquivo de configuração em outro local.
 1. Adicione o seguinte nó (marcado em negrito):
 
@@ -43,6 +43,6 @@ Os usuários podem experimentar um tempo de resposta mais lento se pertencerem a
 
    Neste exemplo, vários domínios são configurados para busca prévia. Os nomes de domínio são separados por &quot;/&quot;. Isso é mostrado no exemplo acima com *Domain_Name1*, *Domain_Name2* e *Domain_Name3*.
 
-1. Para importar o arquivo atualizado, em Gerenciamento de usuários, clique em **[!UICONTROL Configuração > Importar e exportar arquivos]** de configuração.
-1. Clique em **[!UICONTROL Procurar]** para localizar o arquivo, clique em Importar e em **[!UICONTROL OK]**.
+1. Para importar o arquivo atualizado, em Gerenciamento de usuários, clique em **[!UICONTROL Configuração > Importar e exportar arquivos de configuração]**.
+1. Clique em **[!UICONTROL Procurar]** para localizar o ficheiro, clique em Importar e, em seguida, clique em **[!UICONTROL OK]**.
 
