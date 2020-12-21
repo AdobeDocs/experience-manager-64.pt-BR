@@ -34,7 +34,7 @@ Ao start do aplicativo AEM Forms, você precisa primeiro fornecer suas credencia
    >* Você pode selecionar um URL de servidor AEM Forms para fazer logon pelo aplicativo.
 
 
-Ao fazer logon no aplicativo, você é direcionado para a tela [**inicial **](/help/forms/using/home-screen.md).
+Ao fazer logon no aplicativo, você é direcionado para a tela [**Início**](/help/forms/using/home-screen.md).
 
 >[!NOTE]
 >
