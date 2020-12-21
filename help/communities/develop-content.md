@@ -18,10 +18,10 @@ ht-degree: 0%
 ---
 
 
-# Desenvolver conteúdo do Sandbox {#develop-sandbox-content}
+# Desenvolver conteúdo da caixa de proteção {#develop-sandbox-content}
 
 **[⇐ Adicionar Clientlibs](add-clientlibs.md)**
 
-Nesse ponto, é possível explorar os recursos da comunidade na caixa de proteção ao mesmo tempo que usa a Comunidade [](../../help/sites-developing/we-retail.md)We-Retail, o Guia [de componentes da](components-guide.md) comunidade e o [recurso essencial](essentials.md) para referência.
+Nesse ponto, é possível explorar os recursos da comunidade na caixa de proteção ao mesmo tempo que usa [We-Retail Community](../../help/sites-developing/we-retail.md), o [Community Components Guide](components-guide.md) e [recursos essenciais](essentials.md) para referência.
 
 **[⇐ Adicionar Clientlibs](add-clientlibs.md)**
