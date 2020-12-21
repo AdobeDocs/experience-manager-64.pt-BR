@@ -21,15 +21,15 @@ ht-degree: 0%
 
 Os formulários HTML5 trazem vários recursos prontos para dispositivos móveis. Ajuda a expandir suas soluções e workflows atuais para tablets ou dispositivos smartphones com navegadores HTML5. Alguns dos recursos incluem:
 
-* **Renderização baseada em HTML5 de modelos de formulário XFA:** Além de PDF forms regulares, agora é possível renderizar formulários existentes baseados em XFA no formato HTML5. Ele ajuda a expandir sua plataforma cliente para dispositivos móveis (iPad da Apple, tablet Android, smartphones e assim por diante) que suportam HTML5 e não suportam Adobe Reader com Forms XFA. Para obter mais informações sobre o recurso de renderização baseado em HTML5, consulte [Introdução aos formulários](/help/forms/using/introduction.md)HTML5.
+* **Renderização baseada em HTML5 de modelos de formulário XFA:** Além de PDF forms regulares, agora é possível renderizar formulários baseados em XFA no formato HTML5. Ele ajuda a expandir sua plataforma cliente para dispositivos móveis (iPad da Apple, tablet Android, smartphones e assim por diante) que suportam HTML5 e não suportam Adobe Reader com Forms XFA. Para obter mais informações sobre o recurso de renderização baseado em HTML5, consulte [Introdução aos formulários HTML5](/help/forms/using/introduction.md).
 
-* **Gerenciamento do Forms:** Além disso, AEM inclui novos recursos para simplificar o processo de organização e gerenciamento de formulários. Você pode ativar, desativar, publicar e pré-visualização formulários. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](/help/forms/using/introduction-managing-forms.md).
+* **Gerenciamento do Forms:** Além disso, o AEM inclui novos recursos para simplificar o processo de organização e gerenciamento de formulários. Você pode ativar, desativar, publicar e pré-visualização formulários. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](/help/forms/using/introduction-managing-forms.md).
 
 ## Instalação de formulários HTML5 {#installing-html-forms}
 
 Após instalar o AEM, execute as seguintes etapas para importar o Mobile Forms para AEM:
 
-* **Configure e implante o pacote complementar AEM Forms:** Instale o pacote suplementar do AEM Forms para ativar o Mobile Forms. Para obter informações sobre como instalar o pacote suplementar do AEM Forms, consulte [Instalação e configuração do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+* **Configure e implante o pacote de complementos AEM Forms:** instale o pacote de complementos AEM Forms para ativar o Mobile Forms. Para obter informações sobre como instalar o pacote suplementar do AEM Forms, consulte [Instalar e configurar o AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-* **Importar Forms móvel:** Importe seus formulários do sistema de arquivos local para o repositório CRX. Para obter informações detalhadas, consulte [Obtendo documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+* **Importar Forms móvel:** importe seus formulários do sistema de arquivos local para o repositório CRX. Para obter informações detalhadas, consulte [Obtendo documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
