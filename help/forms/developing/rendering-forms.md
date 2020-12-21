@@ -2,7 +2,7 @@
 title: Renderizando Forms
 seo-title: Renderizando Forms
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Rendering Forms {#rendering-forms}
+# Renderizando Forms {#rendering-forms}
 
 **Sobre o serviço Forms**
 
@@ -35,27 +35,27 @@ Dependendo do tipo de aplicativo cliente, é possível gravar o formulário em u
 
    >[!NOTE]
    >
-   >Para obter informações sobre como criar um aplicativo da Web que usa servlets java para chamar o serviço Forms, consulte [Criar Aplicações web que renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md).
+   >Para obter informações sobre como criar um aplicativo da Web que usa servlets java para chamar o serviço Forms, consulte [Criação de Aplicações web que renderiza Forms](/help/forms/developing/creating-web-applications-renders-forms.md).
 
    É possível enviar um design de formulário (um arquivo XDP) ou um documento PDF para o serviço Forms de uma das duas maneiras:
 
-* É possível fazer referência ao design de formulário usando um valor de URL. Essa abordagem envolve o uso de um `URLSpec` objeto. A raiz do conteúdo é passada para o serviço Forms usando o `URLSpec` método do `setContentRootURI` objeto. O nome do design de formulário ( `formQuery`) é transmitido como um parâmetro separado. Os dois valores são concatenados para obter a referência absoluta ao design de formulário. (A maioria dos start rápidos localizados na seção *Renderização do Forms* utiliza essa abordagem.)
-* É possível enviar um formulário `com.adobe.idp.Document` que contenha o design de formulário para o serviço Forms. Dois novos métodos nomeados `renderPDFForm2` e `renderHTMLForm2` aceitam um `com.adobe.idp.Document` objeto que contém um design de formulário. (Consulte [Transmissão de Documentos ao serviço Forms](/help/forms/developing/passing-documents-forms-service.md)
+* É possível fazer referência ao design de formulário usando um valor de URL. Essa abordagem envolve o uso de um objeto `URLSpec`. A raiz do conteúdo é passada para o serviço Forms usando o método `URLSpec` do objeto `setContentRootURI`. O nome do design de formulário ( `formQuery`) é transmitido como um parâmetro separado. Os dois valores são concatenados para obter a referência absoluta ao design de formulário. (A maioria dos start rápidos localizados na seção *Renderizar Forms* usam essa abordagem.)
+* Você pode enviar um `com.adobe.idp.Document` que contenha o design de formulário para o serviço Forms. Dois novos métodos chamados `renderPDFForm2` e `renderHTMLForm2` aceitam um objeto `com.adobe.idp.Document` que contém um design de formulário. (Consulte [Passando Documentos para o Forms Service](/help/forms/developing/passing-documents-forms-service.md)
 
 É possível realizar essas tarefas usando o serviço Forms:
 
-* Renderizar PDF forms interativos. (Consulte [Renderização de PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interativos.)
-* Renderize formulários no cliente. (Consulte [Renderização do Forms no Cliente](/help/forms/developing/rendering-forms-client.md).)
-* Renderize formulários com base em fragmentos. (Consulte [Renderização do Forms com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
-* Renderizar formulários habilitados por direitos. (Consulte [Renderização de Forms](/help/forms/developing/rendering-rights-enabled-forms.md)com direitos ativados.)
-* Renderize formulários como HTML. (Consulte [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
-* Renderizando HTML Forms usando arquivos CSS personalizados ([renderizando HTML Forms usando arquivos](/help/forms/developing/rendering-html-forms-using-custom.md)CSS personalizados).
-* Manipule formulários enviados. (Consulte [Manuseio do Forms](/help/forms/developing/handling-submitted-forms.md)enviado.)
-* Criação de Documentos PDF com dados XML enviados. (Consulte [Criação de Documentos PDF com dados](/help/forms/developing/creating-pdf-documents-submitted-xml.md)XML enviados.)
-* Pré-preencher formulários. (Consulte [Pré-preencher o Forms com layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md)flutuantes.)
-* Passando Documentos. (Consulte [Transmissão de Documentos ao serviço Forms](/help/forms/developing/passing-documents-forms-service.md)
-* Calcule os dados do formulário. (Consulte [Calculando dados](/help/forms/developing/calculating-form-data.md)do formulário.)
-* Otimizar um aplicativo. (Consulte [Otimizando o desempenho do serviço](/help/forms/developing/optimizing-performance-forms-service.md)Forms.)
+* Renderizar PDF forms interativos. (Consulte [Renderizando PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Renderize formulários no cliente. (Consulte [Renderizando o Forms no Client](/help/forms/developing/rendering-forms-client.md).)
+* Renderize formulários com base em fragmentos. (Consulte [Renderizando o Forms com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
+* Renderizar formulários habilitados por direitos. (Consulte [Renderizando o Forms](/help/forms/developing/rendering-rights-enabled-forms.md) habilitado para direitos.)
+* Renderize formulários como HTML. (Consulte [Renderizando o Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
+* Renderizando HTML Forms usando arquivos CSS personalizados ([Renderizando HTML Forms usando arquivos CSS personalizados](/help/forms/developing/rendering-html-forms-using-custom.md).)
+* Manipule formulários enviados. (Consulte [Manuseio do Forms](/help/forms/developing/handling-submitted-forms.md) submetido.)
+* Criação de Documentos PDF com dados XML enviados. (Consulte [Criação de Documentos PDF com dados XML enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
+* Pré-preencher formulários. (Consulte [Pré-preencher o Forms com layouts flutuantes](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+* Passando Documentos. (Consulte [Passando Documentos para o Forms Service](/help/forms/developing/passing-documents-forms-service.md)
+* Calcule os dados do formulário. (Consulte [Calculando Dados de Formulário](/help/forms/developing/calculating-form-data.md).)
+* Otimizar um aplicativo. (Consulte [Otimizando o desempenho do serviço Forms](/help/forms/developing/optimizing-performance-forms-service.md).)
 
-   ***Dica **: O site do Adobe Developer contém o seguinte artigo que discute como criar um aplicativo ASP.NET que chama o serviço Forms e renderiza formulários. Consulte[Criação de aplicativos](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET de renderização de formulário.*
+   ***Dica **: O site do Adobe Developer contém o seguinte artigo que discute como criar um aplicativo ASP.NET que chama o serviço Forms e renderiza formulários. Consulte [Criação de aplicativos ASP.NET de renderização de formulário](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*
 
