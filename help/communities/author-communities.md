@@ -32,17 +32,17 @@ Para saber mais sobre como criar um site da comunidade, visite:
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o ambiente de criação, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o ambiente de criação, visualização a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md) e um [guia rápido para as páginas de criação](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes de comunidades disponíveis {#available-communities-components}
 
 A tabela a seguir lista os componentes Comunidades visíveis aos autores quando ativados no navegador de componentes (sidekick).
 
-Consulte também o guia [interativo Componentes da](components-guide.md)comunidade.
+Consulte também o guia interativo [Componentes da comunidade](components-guide.md).
 
 >[!NOTE]
 >
->Leia [Communities Components Basics (Componentes básicos das comunidades)](basics.md) , pois contém as informações necessárias para a criação com componentes das Comunidades).
+>Leia [Communities Components Basics](basics.md), pois contém as informações necessárias para a criação com componentes Communities.
 
 | **Título do componente** | **Recurso** |
 |---|---|
@@ -51,7 +51,7 @@ Consulte também o guia [interativo Componentes da](components-guide.md)comunida
 | Barra lateral do blog | [Blog](blog-feature.md) |
 | Calendário | [Calendário](calendar.md) |
 | Comentários | [Comentários](comments.md) |
-| Lista de atividades da comunidade | [Tendências de Atividade](trends.md) |
+| Lista de atividades da comunidade | [Tendências de atividade](trends.md) |
 | Lista de membros do grupo da comunidade | [Grupos de comunidades](creating-groups.md) |
 | Escrever mensagem | [Mensagens](configure-messaging.md) |
 | Atribuições da ativação | [Atribuições](assignments.md) |
@@ -81,11 +81,11 @@ Consulte também o guia [interativo Componentes da](components-guide.md)comunida
 >
 >O componente de pesquisa não está mais disponível e é suportado no Experience Manager Communities.
 
-## Documentação das Comunidades relacionadas {#related-communities-documentation}
+## Documentação de comunidades relacionadas {#related-communities-documentation}
 
 * Visite [Implantação de comunidades](deploy-communities.md) para saber mais sobre implantações recomendadas.
 
-* Visite [Administrando sites](administer-landing.md) de comunidades para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar o conteúdo da comunidade, gerenciar membros e configurar mensagens.
+* Visite [Administrando sites de comunidades](administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar conteúdo da comunidade, gerenciar membros e configurar mensagens.
 
-* Visite Comunidades [em desenvolvimento](communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e como personalizar componentes e recursos das Comunidades.
+* Visite [Comunidades em desenvolvimento](communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e como personalizar componentes e recursos das Comunidades.
 
