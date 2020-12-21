@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Aprimorando o desempenho do servidor de aplicativos{#enhancing-application-server-performance}
+# Melhorando o desempenho do servidor de aplicativos{#enhancing-application-server-performance}
 
 Este conteúdo descreve as configurações opcionais que você pode configurar para melhorar o desempenho do servidor de aplicativos para formulários AEM.
 
-## Configuração de fontes de dados do servidor de aplicativos {#configuring-application-server-data-sources}
+## Configurando fontes de dados do servidor de aplicativos {#configuring-application-server-data-sources}
 
 AEM formulários usam o repositório de formulários AEM como sua fonte de dados. O repositório de formulários AEM armazena ativos de aplicativos e, em tempo de execução, os serviços podem recuperar ativos do repositório como parte da conclusão de um processo de negócios automatizado.
 
-O acesso à fonte de dados pode ser significativo, dependendo do número de módulos de formulários AEM que você está executando e do número de usuários simultâneos acessando o aplicativo. O acesso à fonte de dados pode ser otimizado usando o pooling de conexão. *Pooling* de conexão é uma técnica usada para evitar a sobrecarga de fazer novas conexões de banco de dados sempre que um objeto de aplicativo ou servidor exigir acesso ao banco de dados. O pooling de conexão é geralmente usado em aplicativos corporativos e baseados na Web e geralmente é manipulado por, mas não limitado a, um servidor de aplicativos.
+O acesso à fonte de dados pode ser significativo, dependendo do número de módulos de formulários AEM que você está executando e do número de usuários simultâneos acessando o aplicativo. O acesso à fonte de dados pode ser otimizado usando o pooling de conexão. *O* pool de conexões é uma técnica usada para evitar a sobrecarga de fazer novas conexões de banco de dados sempre que um objeto de aplicativo ou servidor exigir acesso ao banco de dados. O pooling de conexão é geralmente usado em aplicativos corporativos e baseados na Web e geralmente é manipulado por, mas não limitado a, um servidor de aplicativos.
 
 É importante configurar corretamente os parâmetros do pool de conexões para que você nunca perca as conexões, o que pode causar a deterioração do desempenho do aplicativo.
 
@@ -70,7 +70,7 @@ Quando o administrador do servidor de aplicativos determinar as configurações 
 1. Na tela seguinte, em Propriedades adicionais, clique em Propriedades do pool de conexões e digite um valor na caixa Máximo de conexões e na caixa Mínimo de conexões.
 1. Clique em OK ou Aplicar e, em seguida, clique em Salvar diretamente na configuração Principal.
 
-### Definir configurações do pool de conexões para WebSphere para Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
+### Definir configurações do pool de conexões para o WebSphere para Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. Na árvore de navegação, clique em Recursos > JDBC > Provedores JDBC. No painel direito, clique na fonte de dados Oracle JDBC Driver que você criou.
 1. Em Propriedades adicionais, clique em Fontes de dados e selecione IDP_DS.
@@ -93,7 +93,7 @@ Se você estiver processando documentos de tamanho relativamente pequeno, é pos
 
 O tamanho máximo em linha e os diretórios de armazenamento (o diretório de arquivos temporários para formulários AEM e o diretório GDS) são configurados no console de administração.
 
-### Tamanho do Documento e tamanho máximo em linha {#document-size-and-maximum-inline-size}
+### Tamanho do documento e tamanho máximo em linha {#document-size-and-maximum-inline-size}
 
 Quando um documento enviado para processamento por formulários AEM for menor ou igual ao tamanho em linha máximo do documento padrão, o documento será armazenado no servidor em linha e o documento será serializado como um objeto de Documento de Adobe. Armazenar documentos em linha pode ter benefícios significativos de desempenho. No entanto, se você estiver usando o fluxo de trabalho de formulários, o conteúdo também poderá ser armazenado no banco de dados para fins de rastreamento. Portanto, aumentar o tamanho máximo em linha pode afetar o tamanho do banco de dados.
 
@@ -146,7 +146,7 @@ O tamanho máximo do heap JVM deve ser aumentado em 50 MB para um total de 562 M
 
 A definição do tamanho dos documentos em linha para valores grandes aumenta o risco de um OutOfMemoryError em sistemas que são propensos a hepar a fragmentação. Para armazenar um documento em linha, a memória do heap JVM deve ter espaço contíguo suficiente. Alguns sistemas operacionais, JVMs e algoritmos de coleta de lixo estão sujeitos à fragmentação do heap. A fragmentação diminui a quantidade de espaço de heap contíguo e pode levar a um OutOfMemoryError mesmo quando existe espaço livre total suficiente.
 
-Por exemplo, operações anteriores no servidor de aplicativos deixaram o heap JVM em um estado fragmentado e o coletor de lixo não pode compactar o heap o suficiente para recuperar grandes blocos de espaço livre. Um OutOfMemoryError pode ocorrer mesmo que o tamanho máximo do heap JVM tenha sido ajustado para um aumento no tamanho máximo em linha.
+Por exemplo, operações anteriores no servidor de aplicativos deixaram o heap JVM em um estado fragmentado e o coletor de lixo não pode compactar o heap o suficiente para recuperar grandes blocos de espaço livre. Um OutOfMemoryError pode ocorrer mesmo se o tamanho máximo do heap JVM foi ajustado para um aumento no tamanho máximo em linha.
 
 Para contabilizar a fragmentação do heap, o tamanho do documento em linha não deve ser definido acima de 0,1% do tamanho total do heap. Por exemplo, um tamanho máximo de heap JVM de 512 MB pode suportar um tamanho máximo em linha de 512 MB x 0,001 = 0,512 MB, ou 512 KB.
 
@@ -156,16 +156,16 @@ Esta seção descreve as configurações específicas de um ambiente do WebSpher
 
 ### Aumentando a memória máxima alocada para a JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
-Se você estiver executando o Configuration Manager ou tentando gerar o código de implantação do Enterprise JavaBeans (EJB) usando o utilitário de linha de comando *ejbdeployment* e ocorrer um erro OutOfMemory, aumente a quantidade de memória alocada para a JVM.
+Se você estiver executando o Configuration Manager ou tentando gerar o código de implantação do Enterprise JavaBeans (EJB) usando o utilitário de linha de comando *ejbdeplo* e ocorrer um erro OutOfMemory, aumente a quantidade de memória alocada para a JVM.
 
-1. Edite o script ejbdeploy no diretório raiz *[/deploytool/itp/ do]* appserver:
+1. Edite o script ejbdeploy no diretório *[appserver root]*/deploytool/itp/:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux e UNIX) `ejbdeploy.sh`
 
-1. Localize o `-Xmx256M` parâmetro e altere-o para um valor maior, como `-Xmx1024M`.
+1. Localize o parâmetro `-Xmx256M` e altere-o para um valor maior, como `-Xmx1024M`.
 1. Salve o arquivo.
-1. Execute o `ejbdeploy` comando ou reimplante usando o Configuration Manager.
+1. Execute o comando `ejbdeploy` ou reimplante usando o Configuration Manager.
 
 ## Melhorando o desempenho do Windows Server 2003 com LDAP {#improving-windows-server-2003-performance-with-ldap}
 
@@ -173,10 +173,10 @@ Este conteúdo descreve as configurações específicas de um ambiente do sistem
 
 O uso do pooling de conexão na conexão de pesquisa pode diminuir o número de portas necessárias em até 50%. Isso ocorre porque essa conexão sempre usa as mesmas credenciais para um determinado domínio, e o contexto e os objetos relacionados são fechados explicitamente.
 
-### Configurar o Windows Server para pooling de conexão {#configure-your-windows-server-for-connection-pooling}
+### Configure seu Windows Server para pooling de conexão {#configure-your-windows-server-for-connection-pooling}
 
 1. Clique em Start > Executar para start do editor de registro e, na caixa Abrir, digite `regedit` e clique em OK.
-1. Ir para a chave do Registro `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Vá para a chave do Registro `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. No painel direito do editor do Registro, localize o nome do valor TcpTimedWaitDelay. Se o nome não for exibido, selecione Editar > Novo > Valor DWORD na barra de menus para adicionar o nome.
 1. Na caixa Nome, digite `TcpTimedWaitDelay`
 
@@ -185,10 +185,10 @@ O uso do pooling de conexão na conexão de pesquisa pode diminuir o número de 
    >Se você não vir um cursor piscando e `New Value #` dentro da caixa, clique com o botão direito do mouse dentro do painel direito, selecione Renomear e, na caixa Nome, digite `TcpTimedWaitDelay`*.*
 
 1. Repita a etapa 4 para os nomes MaxUserPort, MaxHashTableSize e MaxFreeTcbs.
-1. Clique com o Duplo no painel direito para definir o valor TcpTimedWaitDelay. Em Base, selecione Decimal e, na caixa Valor, digite `30`.
-1. Clique com o Duplo no painel direito para definir o valor MaxUserPort. Em Base, selecione Decimal e, na caixa Valor, digite `65534`.
-1. Clique com o Duplo no painel direito para definir o valor MaxHashTableSize. Em Base, selecione Decimal e, na caixa Valor, digite `65536`.
-1. Clique com o Duplo no painel direito para definir o valor MaxFreeTcbs. Em Base, selecione Decimal e, na caixa Valor, digite `16000`.
+1. Clique com o duplo no painel direito para definir o valor TcpTimedWaitDelay. Em Base, selecione Decimal e, na caixa Valor, digite `30`.
+1. Clique com o duplo no painel direito para definir o valor MaxUserPort. Em Base, selecione Decimal e, na caixa Valor, digite `65534`.
+1. Clique com o duplo no painel direito para definir o valor MaxHashTableSize. Em Base, selecione Decimal e, na caixa Valor, digite `65536`.
+1. Clique com o duplo no painel direito para definir o valor MaxFreeTcbs. Em Base, selecione Decimal e, na caixa Valor, digite `16000`.
 
 >[!NOTE]
 >
