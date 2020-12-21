@@ -27,7 +27,7 @@ ht-degree: 2%
    + [Introdução à criação de formulários adaptativos](using/introduction-forms-authoring.md)
    + [Introdução às Comunicações Interativas](using/interactive-communications-overview.md)
    + [Introdução ao gerenciamento de formulários](using/introduction-managing-forms.md)
-   + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
+   + Tutorial: Crie seu primeiro formulário adaptável {#create-first-adaptive-form}
       + [Tutorial: Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
       + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
@@ -40,7 +40,7 @@ ht-degree: 2%
       + [Tutorial: Criar fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Criar modelos](using/create-templates-print-web.md)
       + [Tutorial: Criar comunicação interativa](using/create-interactive-communication-tutorial.md)
-   + Materiais de referência da AEM Forms {#aem-forms-reference-collaterals}
+   + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
       + [Configurar e configurar sites de referência da AEM Forms](using/setup-reference-sites.md)
       + [Apresentação do site de referência do We.Finance](using/finance-reference-site-walkthrough.md)
       + [Apresentação do site de referência We.Gov](using/gov-reference-site-walkthrough.md)
@@ -55,13 +55,13 @@ ht-degree: 2%
 + Instalar e configurar o AEM Forms {#install-aem-forms}
    + [Topologias de arquitetura e implantação para AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Como escolher um tipo de persistência para uma instalação do AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
-   + Instalar o AEM Forms no OSGi {#osgi-installation}
+   + Instale o AEM Forms no OSGi {#osgi-installation}
       + [Plataformas suportadas para formulários AEM no OSGi](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [Instalar e configurar os serviços de documento](using/install-configure-document-services.md)
       + [Instalar e configurar os recursos de captura de dados](using/installing-configuring-aem-forms-osgi.md)
       + [Instalar e configurar o fluxo de trabalho centrado na Forms no OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Instalar e configurar o Interative Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)
-   + Install AEM Forms on JEE {#jee-installation}
+   + Instalar o AEM Forms em JEE {#jee-installation}
       + [Plataformas compatíveis para formulários AEM em JEE](using/aem-forms-jee-supported-platforms.md)
       + [Instale e implante o AEM Forms no JEE usando o chave-mão JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [Instalar e configurar somente o servidor de segurança do documento](using/installing-and-configuring-the-document-security-server.md)
@@ -90,7 +90,7 @@ ht-degree: 2%
       + [Atualizar para formulários AEM 6.4 no OSGi](using/upgrade-forms-osgi.md)
       + [Instalar Pacote de Compatibilidade](using/compatibility-package.md)
       + [Migrar ativos e documentos da AEM Forms](using/migration-utility.md)
-   + Atualize o AEM Forms no JEE {#aem-forms-jee-upgrade}
+   + Atualize o AEM Forms em JEE {#aem-forms-jee-upgrade}
       + [Preparar para atualizar o AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
       + [Atualizar lista de verificação e planejamento](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
       + [Atualizar para formulários AEM 6.4 no JEE](using/upgrade-forms-jee.md)
@@ -112,7 +112,7 @@ ht-degree: 2%
    + [Obtendo documentos XDP e PDF no AEM Forms](using/get-xdp-pdf-documents-aem.md)
    + [Importação e exportação de ativos para a AEM Forms](using/import-export-forms-templates.md)
    + [Suporte a novas localidades para localização de formulários adaptáveis](using/supporting-new-language-localization.md)
-   + Manuseio de dados do usuário {#handling-user-data}
+   + Tratamento de dados do usuário {#handling-user-data}
       + [Workflows centrados na Forms no OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Gerenciamento de usuários da Forms](using/user-management-handling-user-data.md)
       + [Workflows Forms JEE](using/forms-workflow-jee-handling-user-data.md)
@@ -120,7 +120,7 @@ ht-degree: 2%
       + [Gerenciamento de correspondência](using/correspondence-management-handling-user-data.md)
       + [Integração com a Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Segurança de documentos](/help/forms/using/document-security-handling-user-data.md)
-   + Ambiente AEM Forms de proteção {#hardening-aem-forms-environment}
+   + Como fortalecer o Ambiente AEM Forms {#hardening-aem-forms-environment}
       + [Proteção e proteção de formulários AEM no ambiente OSGi](using/hardening-securing-aem-forms-environment.md)
       + [Considerações gerais de segurança para AEM Forms no JEE](using/general-security-considerations.md)
       + [Como fortalecer seu AEM Forms no Ambiente JEE](using/hardening-aem-forms-jee-environment.md)
@@ -245,7 +245,7 @@ ht-degree: 2%
    + [Integração da área de trabalho de formulários AEM com o Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Trabalhar com listas de tarefas](using/todo-lists.md)
    + [Diretrizes de solução de problemas para a área de trabalho AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
-+ AEM Forms app {#aem-forms-app}
++ Aplicativo AEM Forms {#aem-forms-app}
    + [Introdução ao aplicativo AEM Forms](using/aem-forms-app.md)
    + [Configurar ambiente para aplicativos AEM Forms](using/setup-environment-mobile-workspace.md)
    + [Configure o projeto Xcode e crie o aplicativo iOS](using/setup-xcode-project-build-installer.md)
@@ -323,13 +323,13 @@ ht-degree: 2%
    + [Condição embutida e repetição em Comunicações interativas e letras](using/cm-inline-condition.md)
    + [Fragmentos do documento](using/lists.md)
    + [Propriedades de configuração do gerenciamento de correspondência](using/cm-configuration-properties.md)
-+ Integrar a AEM Forms às soluções de Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
++ Integrar a AEM Forms às soluções Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Criar experiências direcionadas no AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Medir e melhorar a eficácia e a conversão dos formulários](using/measure-improve-performance-forms-documents.md)
    + [Configuração de análises e relatórios](using/configure-analytics-forms-documents.md)
    + [Visualização e compreensão dos relatórios de análise da AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Criar e gerenciar o teste A/B para formulários adaptáveis](using/ab-testing-adaptive-forms.md)
-+ Publicar e processar o AEM Forms {#publish-process-aem-forms}
++ Publicar e processar AEM Forms {#publish-process-aem-forms}
    + [Introdução à publicação de formulários em um portal](using/introduction-publishing-forms.md)
    + [Amostra para integrar o componente de rascunhos e envios ao banco de dados](using/integrate-draft-submission-database.md)
    + [Configurar serviços de armazenamento para rascunhos e envios](using/configuring-draft-submission-storage.md)
@@ -344,13 +344,13 @@ ht-degree: 2%
    + [Criar ou configurar uma pasta assistida](using/creating-configure-watched-folder.md)
    + [Usar modelos de email personalizados em uma etapa Atribuir Tarefa](using/use-custom-email-template-assign-task-step.md)
    + [Usar metadados em uma notificação por email](using/use-metadata-in-email-notifications.md)
-+ Portal da Forms {#use-forms-portal}
++ Forms Portal {#use-forms-portal}
    + [Personalização de modelos para componentes do portal de formulários](using/customizing-templates-forms-portal-components.md)
    + [Ativação de componentes do portal de formulários](using/enabling-forms-portal-components.md)
    + [Criação de uma página de portal de formulários](using/creating-form-portal-page.md)
    + [APIs para trabalhar com formulários enviados no portal de formulários](using/report-submitted-data-forms.md)
    + [Armazenamento personalizado para componentes de rascunhos e envios](using/adding-custom-storage-provider-forms.md)
-+ Serviços de documentação {#use-document-services}
++ Serviços de documento {#use-document-services}
    + [Visão geral dos serviços AEM Documentos](using/overview-aem-document-services.md)
    + [Serviço do Forms](using/forms-service.md)
    + [Serviço de saída](using/output-service.md)
@@ -394,7 +394,7 @@ ht-degree: 2%
    + [Exibindo e Compreendendo Relatórios de Transação](using/viewing-and-understanding-transaction-reports.md)
    + [Relatórios de transação APIs faturáveis](using/transaction-reports-billable-apis.md)
    + [Registrar uma transação para implementações personalizadas](using/record-transaction-custom-implementation.md)
-+ Ajuda do administrador para AEM Forms no JEE {#administrator-help}
++ Ajuda do administrador para AEM Forms em JEE {#administrator-help}
    + Introdução {#get-started}
       + [Configurações gerais do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Atualizar o tipo de licença para a implantação](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -406,7 +406,7 @@ ht-degree: 2%
       + [Configurar provedores de autenticação](/help/forms/using/admin-help/configuring-authentication-providers.md)
       + [Sincronizando diretórios](/help/forms/using/admin-help/synchronizing-directories.md)
       + [Configuração de diretórios](/help/forms/using/admin-help/configuring-directories.md)
-   + Configuração do gerenciamento de usuários {#configure-user-management}
+   + Configurando o Gerenciamento de Usuário {#configure-user-management}
       + [Alterar a ordem de avaliação para autenticação](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
       + [Configurar a senha de ligação LDAP](/help/forms/using/admin-help/configure-ldap-bind-password.md)
       + [Configurar formulários AEM para pré-buscar informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
@@ -423,7 +423,7 @@ ht-degree: 2%
       + [Criação e configuração de grupos](/help/forms/using/admin-help/creating-configuring-groups.md)
       + [Procurar um usuário ou grupo](/help/forms/using/admin-help/search-user-or-group.md)
       + [Criação e configuração de funções](/help/forms/using/admin-help/creating-configuring-roles.md)
-   + Conexão a um sistema gestão de conteúdo {#connect-content-management-system}
+   + Conectando-se a um sistema gestão de conteúdo {#connect-content-management-system}
       + [Configurando o Connector para EMC Documentum](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
       + [Configurando o Connector para IBM FileNet](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
       + [Configuração do Connector para IBM Content Manager](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
@@ -439,17 +439,17 @@ ht-degree: 2%
       + [Alterar o número de itens exibidos nas páginas Aplicativos e Serviços](/help/forms/using/admin-help/change-number-items-displayed-applications.md)
       + [Importar e gerenciar arquivos](/help/forms/using/admin-help/import-archives.md)
       + [Importar e gerenciar aplicativos](/help/forms/using/admin-help/import-applications.md)
-   + Gerenciamento de serviços {#manage-services}
+   + Gerenciando serviços {#manage-services}
       + [Definir configurações de serviço](/help/forms/using/admin-help/configure-service-settings.md)
       + [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md)
-   + Gerenciamento de pontos de extremidade {#manage-endpoints}
+   + Gerenciando Pontos de Extremidade {#manage-endpoints}
       + [Adicionar, ativar, modificar ou remover pontos de extremidade](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configuração de pontos de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Configurando pontos finais remotos](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuração de pontos finais de pastas monitorados](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configuração dos pontos finais do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Tipos de pontos finais](/help/forms/using/admin-help/types-endpoints.md)
-   + Configuração de extensões Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
+   + Configurando extensões do Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
       + [Tipos de certificado usados por extensões do Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Como reconhecer certificados válidos e expirados em documentos PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configuração de extensões Acrobat Reader DC para captura de dados](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
@@ -470,7 +470,7 @@ ht-degree: 2%
       + [Configurar fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [Modificação das configurações de conversão de Exportação de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Conversão de arquivos usando o Gerador de PDF](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + Configuração do SSL {#configure-ssl}
+   + Configurando o SSL {#configure-ssl}
       + [Visão geral da configuração do SSL](/help/forms/using/admin-help/overview-6.md)
       + [Configuração do SSL para JBoss Application Server](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [Configuração do SSL no Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -487,7 +487,7 @@ ht-degree: 2%
       + [Utilização das páginas Web de segurança do documento](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Criação e gerenciamento de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
       + [Registrando-se como um usuário](/help/forms/using/admin-help/registering-as-a-user.md)
-   + Configuração do Forms {#configure-forms}
+   + Configurando o Forms {#configure-forms}
       + [Noções básicas sobre a configuração de formulários](/help/forms/using/admin-help/overview-7.md)
       + [Configuração de opções de internacionalização](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Configuração do cache para Forms](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -497,7 +497,7 @@ ht-degree: 2%
       + [Configuração de locais para Forms](/help/forms/using/admin-help/configuring-locations-forms.md)
       + [Especificação de configurações de segurança](/help/forms/using/admin-help/specifying-security-settings.md)
       + [Configuração de mensagens de validação](/help/forms/using/admin-help/configuring-validation-messages.md)
-   + Configuração de saída {#configure-output}
+   + Configurando a Saída {#configure-output}
       + [Visão geral do serviço de saída](/help/forms/using/admin-help/overview-8.md)
       + [Alterar o conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md)
       + [Especificar opções de configuração XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md)
@@ -506,7 +506,7 @@ ht-degree: 2%
       + [Disponibilizar fontes](/help/forms/using/admin-help/make-fonts-available.md)
       + [Especificar fontes a serem incorporadas](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Especificar configurações de segurança](/help/forms/using/admin-help/specify-security-settings.md)
-   + Configuração do fluxo de trabalho de formulários{#configure-forms-workflow}
+   + Configuração do fluxo de trabalho dos formulários{#configure-forms-workflow}
       + [Sobre administração e terminologia do processo](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Gerenciamento de processos](/help/forms/using/admin-help/processes.md)
       + [Configurando Calendários Comerciais](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -517,7 +517,7 @@ ht-degree: 2%
       + [Trabalhar com operações e ramificações paralisadas](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [Configuração de filas compartilhadas](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Trabalhar com o tarefa](/help/forms/using/admin-help/tasks.md)
-   + Configuração da Workspace {#configure-workspace}
+   + Configuração do Workspace {#configure-workspace}
       + [Visão geral do espaço de trabalho](/help/forms/using/admin-help/overview-10.md)
       + [Importação e exportação de configurações globais](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Definir a mensagem do dia](/help/forms/using/admin-help/setting-message-day.md)
@@ -537,19 +537,19 @@ ht-degree: 2%
       + [Execução de formulários AEM no modo de manutenção](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
    + Manutenção do banco de dados de formulários AEM {#maintain-aem-forms-database}
       + [Banco de dados DB2: Execução de um processo semanal](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
-      + [Limite máximo de cursores abertos do banco de dados Oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
+      + [Limite máximo de cursores abertos do banco de dados oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [Banco de dados IBM DB2: Execução de comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [Expurgando dados do processo](/help/forms/using/admin-help/purging-process-data.md)
       + [Banco de dados do Microsoft SQL Server: Ajuste da configuração](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
       + [Dicas para minimizar o crescimento do banco de dados](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
-   + Manutenção do servidor de aplicativos {#manage-application-server}
+   + Manutenção do Servidor de Aplicativos {#manage-application-server}
       + [Sites do servidor de aplicativos](/help/forms/using/admin-help/application-server-websites.md)
       + [Diretório global do armazenamento do documento](/help/forms/using/admin-help/global-document-storage-directory.md)
       + [Considerações ao executar o AdministrationConsole](/help/forms/using/admin-help/considerations-running-administration-console.md)
       + [Iniciando e parando o WebLogic Server](/help/forms/using/admin-help/starting-stopping-weblogic-server.md)
       + [Aprimorando o desempenho do servidor de aplicativos](/help/forms/using/admin-help/enhancing-application-server-performance.md)
       + [Iniciando e parando o WebSphere Application Server](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
-   + Backup e recuperação de formulários AEM {#aem-forms-backup-recovery}
+   + AEM formulários Backup and Recovery {#aem-forms-backup-recovery}
       + [Backup e recuperação do repositório EMC Documentum](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
       + [Ativação e desativação do modo de backup seguro](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md)
       + [Como fazer backup dos dados dos formulários AEM](/help/forms/using/admin-help/backing-aem-forms-data.md)
@@ -581,8 +581,8 @@ ht-degree: 2%
    + [Referência da API da biblioteca JavaScript para Forms adaptável](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)
    + [Serviço de Assembler e Referência DDX](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Ajuda do Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64)
-   + Programação com AEM Forms no JEE {#programming-aem-forms-jee}
-      + Introdução à programação com a AEM Forms no JEE {#introduction-programming-aem-forms-jee}
+   + Programação com a AEM Forms em JEE {#programming-aem-forms-jee}
+      + Introdução à programação com a AEM Forms em JEE {#introduction-programming-aem-forms-jee}
          + [Introdução ao Java API QuickStart](developing/introducing-java-api-soap-quick.md)
          + [Invocar o AEM Forms usando APIs](developing/invoking-aem-forms-using-apis.md)
          + [Como entender os processos AEM Forms](developing/aem-forms-processes.md)
@@ -622,7 +622,7 @@ ht-degree: 2%
          + [Invocar o AEM Forms usando os Serviços da Web](developing/invoking-human-centric-long-lived.md)
          + [Invocar o AEM Forms usando a JavaAPI](developing/invoking-aem-forms-using-java.md)
          + [Criação de aplicativos de Flash Builder que executam autenticação SSO usando tokens HTTP](developing/creating-flash-builder-applications-perform.md)
-      + Execução de operações de serviço usando APIs {#performing-service-operations-using-apis}
+      + Realização de operações de serviço usando APIs {#performing-service-operations-using-apis}
          + [Execução de operações de serviço usando APIs](developing/performing-service-operations-using-apis.md)
          + [Renderizando Forms](developing/rendering-forms.md)
          + [Montagem de Documentos PDF](developing/assembling-pdf-documents.md)
