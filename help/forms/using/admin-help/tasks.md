@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Working with tasks {#working-with-tasks}
+# Trabalhar com o tarefa {#working-with-tasks}
 
 Use a página Pesquisa de Tarefa para pesquisar tarefas por nome de usuário ou ID de tarefa. Os resultados da pesquisa são exibidos na página Lista da Tarefa, onde você pode acessar o histórico da tarefa. Você também pode reatribuir uma tarefa se um usuário tiver tarefas demais ou se um usuário tiver recebido uma atribuição de tarefa por engano.
 
@@ -34,7 +34,7 @@ Use a página Pesquisa de Tarefa para pesquisar tarefas por nome de usuário ou 
 1. Por padrão, a pesquisa de tarefa procura tarefas que estão atribuídas ao usuário no momento. Para também procurar tarefas que foram atribuídas anteriormente ao usuário, selecione Mostrar Tarefa não atribuída. Para também procurar tarefas que o usuário tenha concluído, selecione Mostrar Tarefa concluída.
 1. Clique em Pesquisar. A página Lista da Tarefa é exibida, listando o resultado da pesquisa.
 
-## Procurar uma tarefa quando você souber sua ID de tarefa {#search-for-a-task-when-you-know-its-task-id}
+## Procure uma tarefa quando você souber sua ID de tarefa {#search-for-a-task-when-you-know-its-task-id}
 
 1. No console de administração, clique em Serviços > fluxo de trabalho de formulários > Pesquisa de Tarefa.
 1. Em Pesquisar por, selecione ID da Tarefa e digite a ID da tarefa na caixa.
@@ -46,19 +46,19 @@ Os resultados de uma pesquisa de tarefa são exibidos na página de Lista de Tar
 
 As tarefas são exibidas com as seguintes informações:
 
-**ID da Tarefa:** O número inteiro positivo que o fluxo de trabalho dos formulários atribui quando a tarefa é instanciada (iniciada por um usuário). É possível usar esse identificador para rastrear a tarefa durante seu ciclo de vida. Clique em uma ID de Tarefa para obter detalhes sobre o histórico de tarefas ou para reatribuir a tarefa a outro usuário.
+**ID da tarefa:** o número inteiro positivo atribuído pelo fluxo de trabalho dos formulários quando a tarefa é instanciada (iniciada por um usuário). É possível usar esse identificador para rastrear a tarefa durante seu ciclo de vida. Clique em uma ID de Tarefa para obter detalhes sobre o histórico de tarefas ou para reatribuir a tarefa a outro usuário.
 
-**Status:** Atribuída significa que a tarefa está atribuída ao usuário no momento. Não atribuído significa que a tarefa foi atribuída anteriormente ao usuário. O status também pode ser Concluído.
+**Status:** Atribuído significa que a tarefa está atribuída ao usuário no momento. Não atribuído significa que a tarefa foi atribuída anteriormente ao usuário. O status também pode ser Concluído.
 
 **Atividade:** Mostra o formulário e o nome de uma operação inicial ou a operação de processo que gerou a tarefa.
 
-**ID do processo:** Esse número inteiro positivo que é atribuído pelo fluxo de trabalho dos formulários quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automática inicia um processo). É possível usar esse identificador para rastrear a instância do processo por todo o ciclo de vida.
+**ID do processo:** esse número inteiro positivo que é atribuído pelo fluxo de trabalho dos formulários quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automática inicia um processo). É possível usar esse identificador para rastrear a instância do processo por todo o ciclo de vida.
 
-**Nome do processo - Versão:** O nome do processo, conforme definido no Workbench.
+**Nome do Processo - Versão:** O nome do processo, conforme definido no Workbench.
 
-**Aplicativo:** O nome do aplicativo ao qual o processo pertence, conforme definido no Workbench.
+**Aplicativo:** o nome do aplicativo ao qual o processo pertence, conforme definido no Workbench.
 
-**Data de criação:** A data e a hora em que a tarefa foi criada.
+**Data de criação:** a data e a hora em que a tarefa foi criada.
 
 ## Exibindo histórico de tarefas e reatribuindo tarefas {#viewing-task-history-and-reassigning-tasks}
 
@@ -68,27 +68,27 @@ Para cada atribuição de tarefa, a lista mostra as seguintes informações:
 
 **Nome:** O nome do usuário.
 
-**Status:** Atribuída significa que a tarefa está atribuída ao usuário no momento. Não atribuído significa que a tarefa foi atribuída anteriormente ao usuário.
+**Status:** Atribuído significa que a tarefa está atribuída ao usuário no momento. Não atribuído significa que a tarefa foi atribuída anteriormente ao usuário.
 
-**ID da lista de trabalho:** O identificador numérico da fila de usuários à qual a tarefa pertence. Um processo pode ser compartilhado entre vários usuários.
+**ID da lista de trabalho:** o identificador numérico da fila de usuários à qual a tarefa pertence. Um processo pode ser compartilhado entre vários usuários.
 
 **Tipo:** Indica como a tarefa foi atribuída:
 
-**Inicial:** A tarefa foi atribuída originalmente ao usuário.
+**Inicial:** o usuário foi originalmente atribuído à tarefa.
 
-**Avançar:** O proprietário original da tarefa atribuiu a tarefa a outro usuário.
+**Encaminhar:** o proprietário original da tarefa atribuiu a tarefa a outro usuário.
 
-**Rejeitar:** Uma tarefa encaminhada foi rejeitada ou uma tarefa foi devolvida a uma lista de trabalho sem ter sido concluída.
+**Rejeitar:** uma tarefa encaminhada foi rejeitada ou uma tarefa foi devolvida a uma lista de trabalho sem ter sido concluída.
 
-**Reivindicação:** O usuário solicitou a tarefa em uma lista de trabalho compartilhada.
+**Reivindicação:** o usuário reivindicou a tarefa em uma lista de trabalho compartilhada.
 
-**Escalonamento:** Um tempo predeterminado decorrido (conforme definido na ação Usuário no Workbench) sem interação do usuário e outro usuário recebeu a tarefa.
+**Escalonamento:** um tempo predeterminado decorrido (conforme definido na ação Usuário no Workbench) sem interação do usuário e outro usuário recebeu a tarefa.
 
 **Consulta:** O proprietário da tarefa encaminhou essa tarefa para outro usuário para consulta, que pode abrir o formulário, salvar dados, modificar os anexos e observações, mas não pode concluir a etapa. O usuário deve retornar a tarefa ao proprietário da tarefa que consultou o usuário.
 
-**Reatribuição do administrador:** A tarefa foi reatribuída por um administrador.
+**Reatribuição do administrador:** a tarefa foi reatribuída por um administrador.
 
-**Data da atribuição:** A data e a hora em que a tarefa foi atribuída ao usuário.
+**Data da Atribuição:** A data e a hora em que a tarefa foi atribuída ao usuário.
 
 ### Atribuindo um novo usuário a uma tarefa {#assigning-a-new-user-to-a-task}
 
