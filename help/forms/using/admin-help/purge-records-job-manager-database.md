@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Os dados do processo que são gerados quando um processo de longa duração é chamado podem se tornar grandes demais, resultando em menor desempenho de formulários AEM e no uso de espaço em disco desnecessário. É uma boa prática expurgar os dados do processo quando os registros não forem mais necessários.
 
-Você pode usar o console de administração para realizar uma expurgação única de registros obsoletos ou para programar expurgações automáticas regulares. Outros métodos para expurgar registros obsoletos são discutidos em [Expurgando dados](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)do processo.
+Você pode usar o console de administração para realizar uma expurgação única de registros obsoletos ou para programar expurgações automáticas regulares. Outros métodos para expurgar registros obsoletos são discutidos em [Expurgando dados do processo](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **Acessar a página Scheduler de Expurgação da Tarefa**
 
