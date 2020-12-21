@@ -25,9 +25,9 @@ A criação de um formulário adaptável usando um Schema JSON como seu modelo d
 * [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
-## Uso de um Schema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
+## Uso de um Schema JSON como modelo de formulário {#using-a-json-schema-as-form-model}
 
-A AEM Forms suporta a criação de um formulário adaptável usando um Schema JSON existente como modelo de formulário. Este Schema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Schema JSON que você usa deve estar em conformidade com as especificações [](https://json-schema.org/draft-04/schema)v4.
+A AEM Forms suporta a criação de um formulário adaptável usando um Schema JSON existente como modelo de formulário. Este Schema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Schema JSON que você usa deve ser compatível com [especificações v4](https://json-schema.org/draft-04/schema).
 
 Os principais recursos do uso de um Schema JSON são:
 
@@ -67,18 +67,18 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
   </tr> 
   <tr> 
    <td>propriedade number<br /> </td> 
-   <td>Campo numérico com subtipo definido como flutuante<br /> </td> 
+   <td>Campo numérico com subtipo definido como float<br /> </td> 
   </tr> 
   <tr> 
    <td>propriedade integer<br /> </td> 
-   <td>Campo numérico com subtipo definido como inteiro<br /> </td> 
+   <td>Campo numérico com subtipo definido como integer<br /> </td> 
   </tr> 
   <tr> 
    <td>propriedade booleana<br /> </td> 
    <td>Alternar<br /> </td> 
   </tr> 
   <tr> 
-   <td>object property<br /> </td> 
+   <td>propriedade object<br /> </td> 
    <td>Painel<br /> </td> 
   </tr> 
   <tr> 
@@ -317,7 +317,7 @@ As chaves de definição são usadas para identificar schemas reutilizáveis. As
 
 O exemplo acima define um registro de cliente, no qual cada cliente tem um endereço de entrega e de cobrança. A estrutura de ambos os endereços é a mesma - os endereços têm endereço, cidade e estado - então é uma boa ideia não duplicado os endereços. Além disso, facilita a adição e exclusão de campos para qualquer alteração futura.
 
-## Pré-configuração de campos na definição de Schema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Pré-configuração de campos em Definição de Schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
 Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo de Schema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo está listado abaixo:
 
@@ -346,7 +346,7 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> propriedade Schema</strong></p> </td> 
+   <td><p><strong> propriedade schema</strong></p> </td> 
    <td><p><strong>Tipo de dados</strong></p> </td> 
    <td><p><strong>Descrição</strong></p> </td> 
    <td><p><strong>Componente</strong></p> </td> 
@@ -437,12 +437,12 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
  </tbody> 
 </table>
 
-## Construção sem suporte  {#non-supported-constructs}
+## Construção sem suporte {#non-supported-constructs}
 
 Os formulários adaptativos não suportam as seguintes construções de Schema JSON:
 
 * Tipo nulo
-* tipos de Uniões, como qualquer, e
+* tipos de uniões, como qualquer, e
 * OneOf, AnyOf, AllOf e NOT
 * Somente matrizes homogêneas são suportadas. Portanto, a restrição de itens deve ser um objeto e não uma matriz.
 
