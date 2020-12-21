@@ -34,8 +34,8 @@ Um cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a l
 Execute as seguintes etapas para configurar o cache de formulários adaptáveis:
 
 1. Vá para AEM gerenciador de configuração do console da Web em `https://[server]:[port]/system/console/configMgr`.
-1. Clique em Configuração **de Canal da Web de Formulário** Adaptável e Comunicação Interativa para editar seus valores de configuração.
-1. Na caixa de diálogo Editar valores de configuração, especifique o número máximo de formulários ou documentos que uma instância do servidor AEM Forms pode armazenar em cache no campo **Número de adaptáveis Forms** . O valor padrão é 100.
+1. Clique em **Configuração de Canais Web de Formulário Adaptável e Comunicação Interativa** para editar os valores de configuração.
+1. Na caixa de diálogo editar valores de configuração, especifique o número máximo de formulários ou documentos que uma instância do servidor AEM Forms pode armazenar em cache no campo **Número de adaptáveis Forms**. O valor padrão é 100.
 
    >[!NOTE]
    >
@@ -43,5 +43,5 @@ Execute as seguintes etapas para configurar o cache de formulários adaptáveis:
 
    ![Caixa de diálogo Configuração para formulários adaptáveis cache HTML](assets/cache-configuration-edit.png)
 
-1. Click **Save** to save the configuration.
+1. Clique em **Salvar** para salvar a configuração.
 
