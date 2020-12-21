@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Alterar a aparência {#alter-the-appearance}
+# Altere a aparência {#alter-the-appearance}
 
 ## Modificar o script {#modify-the-script}
 
@@ -28,11 +28,11 @@ Para não exibir o avatar ao lado de cada comentário publicado:
 
 1. Copiar `comment.hbs`de `libs`para `apps`
    1. Selecionar `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Selecionar **[!UICONTROL cópia]**
+   1. Selecione **[!UICONTROL Copiar]**
    1. Selecionar `/apps/social/commons/components/hbs/comments/comment`
-   1. Selecionar **[!UICONTROL colar]**
-1. Abrir o sobreposto `comment.hbs`
-   * Duplo- clique no nó `comment.hbs`em `/apps/social/commons/components/hbs/comments/comment folder`
+   1. Selecione **[!UICONTROL Colar]**
+1. Abra o `comment.hbs` sobreposto
+   * Duplo clique no nó `comment.hbs`em `/apps/social/commons/components/hbs/comments/comment folder`
 1. Encontre as seguintes linhas e exclua-as ou comente-as:
 
    ```xml
@@ -54,15 +54,15 @@ Encaminhe o componente de comentários sobrepostos para a instância de publica�
 
 >[!NOTE]
 >
->Uma forma mais robusta de replicação seria criar um pacote no Package Manager e [ativá](../../help/sites-administering/package-manager.md#replicating-packages) -lo. Um pacote pode ser exportado e arquivado.
+>Uma forma mais robusta de replicação seria criar um pacote no Package Manager e [ativá-lo](../../help/sites-administering/package-manager.md#replicating-packages). Um pacote pode ser exportado e arquivado.
 
-Na navegação global, selecione **[!UICONTROL Ferramentas > Implantação > Replicação]** e, em seguida, **[!UICONTROL Ativar árvore]**.
+Na navegação global, selecione **[!UICONTROL Ferramentas > Implantação > Replicação]** e **[!UICONTROL Ativar árvore]**.
 
 Para Caminho do Start, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-## Resultados da Visualização {#view-results}
+## Resultados da visualização {#view-results}
 
 Se você fizer logon na instância de publicação como administrador, por exemplo, http://localhost:4503/crx/de como administrador/administrador, poderá verificar se os componentes sobrepostos estão lá.
 
