@@ -23,7 +23,7 @@ Você pode organizar seus ativos melhor usando pastas. Como a AEM Forms suporta 
 
 O AEM Forms permite alterar o título de uma pasta. O título não é igual ao nome do nó sob o qual a pasta é armazenada no repositório. Em vez disso, o título é mantido como metadados para a pasta. Se você alterar o título de uma pasta, o caminho de qualquer ativo presente na pasta não será afetado.
 
-## Criar uma pasta {#create-a-folder}
+## Crie uma pasta {#create-a-folder}
 
 Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
@@ -37,7 +37,7 @@ Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
 1. Digite os seguintes detalhes:
 
-   * **Título:** Nome de exibição da pasta
+   * **Título:** Exibir nome da pasta
    * **Nome:** *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
 
    >[!NOTE]
@@ -48,12 +48,12 @@ Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
    Uma nova pasta com o título definido é exibida no local atual na lista de ativos.
 
-   Se existir uma pasta com o nome especificado, o envio falhará com um erro. É possível visualização a mensagem de erro passando o mouse sobre o ícone error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece ao lado do campo de nome.
+   Se existir uma pasta com o nome especificado, o envio falhará com um erro. Você pode visualização a mensagem de erro passando o mouse sobre o ícone ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece ao lado do campo de nome.
 
 ### Editar o título da pasta {#edit-the-folder-title-br}
 
 1. Selecione a pasta cujo título você deseja editar.
-1. Clique no ícone edit ![aem6forms_edit](assets/aem6forms_edit.png) na barra de ferramentas.
+1. Clique no ícone editar ![aem6forms_edit](assets/aem6forms_edit.png) na barra de ferramentas.
 1. Insira o novo título. O campo de texto é pré-preenchido com o valor atual do título da pasta. É possível alterá-lo para um novo valor.
 1. Clique em **[!UICONTROL Enviar].**
 
