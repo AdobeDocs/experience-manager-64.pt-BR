@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Solução de problemas do Relatórios do processo {#troubleshooting-process-reporting}
+# Relatórios do Processo de Solução de Problemas {#troubleshooting-process-reporting}
 
-## Problemas ao criar filtros no Internet Explorer 9 no Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
+## Problemas encontrados ao criar filtros no Internet Explorer 9 no Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Se você criar filtros para relatórios predefinidos, os seguintes problemas ocorrem intermitentemente no **Internet Explorer 9** para o ambiente **Microsoft Windows 7** :
+Se você criar filtros para relatórios predefinidos, os seguintes problemas ocorrem intermitentemente no ambiente **Internet Explorer 9** para **Microsoft Windows 7**:
 
 * A lista suspensa no campo Valor exibe identificadores exclusivos em vez dos valores.
 * O controle Calendário no campo Valor exibe caracteres japoneses.
