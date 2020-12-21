@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Considerações gerais de segurança para AEM Forms no JEE {#general-security-considerations-for-aem-forms-on-jee}
+# Considerações gerais de segurança para AEM Forms em JEE {#general-security-considerations-for-aem-forms-on-jee}
 
 Saiba como se preparar para endurecer seu AEM Forms no ambiente JEE.
 
@@ -69,7 +69,7 @@ Para obter informações sobre segurança sobre sistemas operacionais compatíve
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Diretrizes de segurança e proteção</a></p> </td> 
   </tr> 
   <tr> 
-   <td>Oracle Linux® 7 Update 3</td> 
+   <td>Oracle Linux® 7 Atualização 3</td> 
    <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guia de segurança para a versão 7</a><br /> </td> 
   </tr> 
   <tr> 
@@ -103,7 +103,7 @@ Para obter informações de segurança sobre servidores de aplicativos compatív
  <tbody>
   <tr> 
    <td><p>Oracle WebLogic®</p> </td> 
-   <td><p>Procure Compreensão da segurança do WebLogic em <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
+   <td><p>Procure por Understanding WebLogic Security em <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -149,12 +149,12 @@ Para obter informações de segurança sobre bancos de dados compatíveis com a 
   </tr> 
   <tr> 
    <td><p>Oracle® 12c</p> </td> 
-   <td><p>Consulte o capítulo Segurança na documentação do <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g</a></p> </td> 
+   <td><p>Consulte o capítulo Segurança na <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">documentação do Oracle 12g</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Esta tabela descreve as portas padrão que precisam ser abertas durante o processo de configuração do AEM Forms no JEE. Se estiver se conectando por https, ajuste as informações da porta e os endereços IP de acordo. Para obter mais informações sobre a configuração de portas, consulte o documento *Instalando e Implantando o AEM Forms no JEE* para seu servidor de aplicativos.
+Esta tabela descreve as portas padrão que precisam ser abertas durante o processo de configuração do AEM Forms no JEE. Se estiver se conectando por https, ajuste as informações da porta e os endereços IP de acordo. Para obter mais informações sobre a configuração de portas, consulte o documento *Instalação e Implantação do AEM Forms no JEE* para seu servidor de aplicativos.
 
 <table> 
  <thead> 
@@ -211,19 +211,19 @@ Esta tabela descreve as portas padrão que precisam ser abertas durante o proces
  </tbody> 
 </table>
 
-### Configuração de JBoss para usar uma porta HTTP não padrão {#configuring-jboss-to-use-a-non-default-http-port}
+### Configurando JBoss para usar uma porta HTTP não padrão {#configuring-jboss-to-use-a-non-default-http-port}
 
 O JBoss Application Server usa 8080 como a porta HTTP padrão. O JBoss também tem portas pré-configuradas 8180, 8280 e 8380, que são comentadas no arquivo jEFP-service.xml. Se você tiver um aplicativo em seu computador que já usa essa porta, altere a porta que a AEM Forms no JEE usa seguindo estas etapas:
 
 1. Abra o seguinte arquivo para edição:
 
-   Instalação do Single Server: [Raiz]/standalone/configuration/standalone.xml JBoss
+   Instalação do Single Server: [Raiz JBoss]/standalone/configuration/standalone.xml
 
-   Instalações de cluster: [Raiz]/domain/configuration/domain.xml JBoss
+   Instalações de cluster: [Raiz JBoss]/domain/configuration/domain.xml
 
 1. Altere o valor do atributo **port** na tag **&lt;socket-binding>** para um número de porta personalizado. Por exemplo, o seguinte usa a porta 8090:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
 
 1. Salve e feche o arquivo.
 1. Reinicie o servidor de aplicativos JBoss.
@@ -244,14 +244,14 @@ A AEM Forms em JEE usa o banco de dados AEM Forms em JEE para armazenar informa�
 
 O servidor de aplicativos usado para executar o AEM Forms no JEE requer sua própria configuração para acesso ao banco de dados por meio de uma fonte de dados configurada no servidor de aplicativos. Certifique-se de que o servidor de aplicativos não exponha a senha do banco de dados em texto nítido em seu arquivo de configuração da fonte de dados.
 
-O arquivo lc_[database].xml não deve conter senha em formato de texto limpo. Consulte o fornecedor do servidor de aplicativos sobre como criptografar essas senhas para o servidor de aplicativos.
+O arquivo lc_[database].xml não deve conter senha em formato de texto claro. Consulte o fornecedor do servidor de aplicativos sobre como criptografar essas senhas para o servidor de aplicativos.
 
 >[!NOTE]
 >
 >O instalador chave-na-mão JBoss do AEM Forms em JEE criptografa a senha do banco de dados.
 
-O IBM WebSphere Application Server e o Oracle WebLogic Server podem criptografar senhas de fonte de dados por padrão. No entanto, confirme com a documentação do servidor de aplicativos para garantir que isso esteja acontecendo.
+O IBM WebSphere Application Server e o Oracle WebLogic Server podem criptografar senhas de fontes de dados por padrão. No entanto, confirme com a documentação do servidor de aplicativos para garantir que isso esteja acontecendo.
 
-### Proteger a chave privada armazenada no Trust Store {#protecting-the-private-key-stored-in-trust-store}
+### Proteger a chave privada armazenada no Repositório de Confiança {#protecting-the-private-key-stored-in-trust-store}
 
 As chaves privadas ou credenciais importadas no Repositório de Confiança são armazenadas no AEM Forms no banco de dados JEE. Tome as precauções apropriadas para proteger o banco de dados e restringir o acesso somente a administradores designados.
