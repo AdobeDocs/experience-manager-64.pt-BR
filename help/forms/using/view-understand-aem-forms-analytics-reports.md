@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# Visualização e compreensão dos relatórios de análise da AEM Forms {#view-and-understand-aem-forms-analytics-reports}
+# Visualização e compreensão dos relatórios de análise do AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 A Adobe Experience Manager Forms integra-se à Adobe Analytics, que permite capturar e rastrear métricas de desempenho para seus formulários e documentos publicados. O objetivo da análise dessas métricas é tomar decisões informadas com base nos dados sobre as alterações necessárias para tornar os formulários ou o documento mais utilizáveis.
 
-## Configurar análises {#setting-up-analytics}
+## Configuração do analytics {#setting-up-analytics}
 
-O recurso de análise no AEM Forms está disponível como parte do pacote suplementar do AEM Forms. Para obter informações sobre como instalar o pacote suplementar, consulte [Instalação e configuração do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+O recurso de análise no AEM Forms está disponível como parte do pacote suplementar do AEM Forms. Para obter informações sobre como instalar o pacote suplementar, consulte [Instalar e configurar o AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 Além do pacote complementar, você precisa de uma conta Adobe Analytics. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
@@ -55,17 +55,17 @@ Execute as seguintes etapas para relatórios de análise de visualização:
 1. Clique em **Forms > Forms e Documentos**.
 
 1. Selecione o formulário para o qual deseja visualização os relatórios de análise.
-1. Selecione **Mais > Relatórios** do Analytics.
+1. Selecione **Mais > Relatórios do Analytics**.
 
 ![analytics report](assets/analyticsreport.png)
 
-**A.** comando Relatório do Analytics
+**Comando Relatório do A.** Analytics
 
 A AEM Forms exibe relatórios de análise para o formulário e para cada painel no formulário, como mostrado abaixo.
 
 ![Relatório de resumo de um formulário adaptável](assets/analyticsdashboard_callout.png)
 
-**A.** Conversões **B.** Resumo no nível do formulário **C.** Resumo no nível do painel **D.** Navegadores de visitantes - filtro **E.** SO de visitantes - filtro **F.** Idioma dos visitantes - filtro
+**A.** Conversões  **B.** Resumo no nível do formulário  **C.** Resumo no nível do painel  **D.** Navegadores de visitantes - filtrar  **E.** OS de visitantes - filtrar  **** F.Idioma de visitantes - filtrar
 
 Por padrão, o relatório de análise dos últimos sete dias é exibido. Você pode visualização relatórios dos últimos 15 dias, do último mês e assim por diante, ou especificar um intervalo de datas.
 
@@ -95,11 +95,11 @@ A seção de resumo no nível do formulário fornece um insight sobre o desempen
 * **Rascunhos**: Número de vezes que o formulário foi salvo como rascunho
 * **Envios**: Número de vezes que o formulário foi enviado
 * **Abortar**: Número de vezes que os usuários começaram a preencher o formulário e foram deixados sem preencher o formulário
-* **Visitantes**&#x200B;únicos: Número de vezes que o formulário é &quot;renderizado por visitantes únicos&quot;. Para obter mais informações sobre visitantes únicos, consulte Visitantes [únicos, Visitas e comportamento](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)do cliente.
+* **Visitantes** únicos: Número de vezes que o formulário é &quot;renderizado por visitantes únicos&quot;. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Relatório de análise resumida em nível de formulário ampliado](assets/analytics-report.png)
 
-## Panel report {#bottom-summary-report}
+## Relatório do painel {#bottom-summary-report}
 
 A seção de resumo no nível do painel fornece as seguintes informações sobre cada painel no formulário:
 
@@ -119,19 +119,19 @@ O relatório detalhado mostra valores para todos os campos no painel.
 
 O Relatório do painel tem três guias:
 
-* **Relatório** de tempo (padrão): Exibe o tempo, em número de segundos, gasto no preenchimento de cada um dos campos no painel
+* **Relatório**  de tempo (padrão): Exibe o tempo, em número de segundos, gasto no preenchimento de cada um dos campos no painel
 * **Relatório** de erro: Exibe o número de erros encontrados pelos usuários ao preencher os campos
 * **Relatório** de ajuda: Número de vezes que a ajuda para um campo específico foi acessada
 
 É possível navegar entre os painéis, se houver vários painéis disponíveis.
 
-### Filtros: Navegador, SO e idioma {#filters-browser-os-and-language}
+### Filtros: Navegador, SO e Idioma {#filters-browser-os-and-language}
 
 As tabelas de Distribuição do navegador, Distribuição do SO e Distribuição de idiomas exibem as execuções, visitantes e envios de acordo com os navegadores, SO e Idioma dos usuários do formulário. Essas tabelas exibem no máximo cinco entradas, por padrão. Você pode clicar em Mostrar mais para exibir mais entradas e clicar em Mostrar menos para voltar às cinco entradas normais ou menos.
 
 Para filtrar mais os dados de análise, clique em uma entrada em qualquer uma das tabelas. Por exemplo, se você clicar em Google Chrome na tabela de distribuição do navegador, o relatório será renderizado novamente com dados relevantes para o navegador Google Chrome da seguinte forma:
 
-![Filtro aplicado ao relatório do Analytics - Google Chrome ](assets/filter.png)
+![Filtro aplicado ao relatório do Analytics - Google Chrome  ](assets/filter.png)
 
 Se você visualização o relatório do painel depois de aplicar um filtro, os dados do relatório do painel também são exibidos de acordo com o filtro aplicado.
 
@@ -143,8 +143,8 @@ Depois que um filtro é aplicado:
 
 ![Botão Fechar para remover o filtro aplicado](assets/close-filter.png)
 
-## A/B Testing {#a-b-testing}
+## Teste A/B {#a-b-testing}
 
 Se você tiver o teste A/B ativado e configurado para o formulário, a página do relatório terá um menu suspenso que pode ser usado para exibir o relatório de teste A/B. O relatório de teste A/B exibe o desempenho comparativo de duas versões do formulário conforme você configurou.
 
-Para obter mais informações sobre o teste A/B, consulte [Criar e gerenciar o teste A/B para formulários](/help/forms/using/ab-testing-adaptive-forms.md)adaptáveis.
+Para obter mais informações sobre o teste A/B, consulte [Criar e gerenciar o teste A/B para formulários adaptáveis](/help/forms/using/ab-testing-adaptive-forms.md).
