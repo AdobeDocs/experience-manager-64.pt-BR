@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Este tutorial descreve como configurar o [MSRP](msrp.md) para *uma instância de autor* e *uma instância de publicação* .
+Este tutorial descreve como configurar [MSRP](msrp.md) para a instância *um autor* e *uma instância publish*.
 
 Com essa configuração, o conteúdo da comunidade pode ser acessado de ambientes de autor e publicação sem a necessidade de reproduzir ou reverter o conteúdo gerado pelo usuário (UGC).
 
-Essa configuração é adequada para ambientes de *não produção* , como para desenvolvimento e/ou demonstração.
+Essa configuração é adequada para ambientes *que não são de produção*, como para desenvolvimento e/ou demonstração.
 
-**Um ambiente *de produção*deve:**
+**Um ambiente  ** de produção deve:**
 
 * Executar MongoDB com um conjunto de réplicas
 * Usar a SolrCloud
@@ -64,7 +64,7 @@ Essa configuração é adequada para ambientes de *não produção* , como para 
 
 ### Start MongoDB {#start-mongodb}
 
-* &lt;mongo-install>/bin/mondeus —dbpath &lt;mongo-dbpath>
+* &lt;mongo-install>/bin/mondeus —dbpath  &lt;mongo-dbpath>
 
 Isso start um servidor MongoDB usando a porta padrão 27017.
 
@@ -72,7 +72,7 @@ Isso start um servidor MongoDB usando a porta padrão 27017.
 
 >[!NOTE]
 >
->Se o MongoDB for iniciado *após* AEM, **reinicie** todas as instâncias **AEM** para que elas se conectem corretamente ao MongoDB.
+>Se MongoDB for iniciado *depois de* AEM, **reinicie** todas as instâncias **AEM** para que se conectem corretamente ao MongoDB.
 
 ### Opção de produção de demonstração: Configurar Conjunto de Réplicas MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -94,9 +94,9 @@ Os comandos a seguir são um exemplo de como configurar um conjunto de réplicas
 
 ## Solr {#solr}
 
-### Instalar Solr {#install-solr}
+### Instalar o Solr {#install-solr}
 
-* Baixe o Solr do [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
+* Baixe o Solr de [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Adequado para qualquer SO
    * Usar a versão 4.10 ou 5
@@ -113,11 +113,11 @@ Os comandos a seguir são um exemplo de como configurar um conjunto de réplicas
 Para configurar uma coleção Solr para MSRP para demonstração, há duas decisões a serem tomadas (selecione os links para a documentação principal para obter detalhes):
 
 1. Execute o Solr no modo independente ou [SolrCloud](msrp.md#solrcloudmode)
-1. Instalar pesquisa [padrão](msrp.md#installingstandardmls) ou [avançada](msrp.md#installingadvancedmls) multilíngue (MLS)
+1. Instale [standard](msrp.md#installingstandardmls) ou [pesquisa multilingue (MLS) avançada](msrp.md#installingadvancedmls)
 
 ### Solar independente {#standalone-solr}
 
-O método para executar Solr pode diferir dependendo da versão e da maneira de instalação. O guia [de referência](https://archive.apache.org/dist/lucene/solr/ref-guide/) Solr é a documentação autorizada.
+O método para executar Solr pode diferir dependendo da versão e da maneira de instalação. O [guia de referência Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) é a documentação autoritativa.
 
 Para simplificar, usando a versão 4.10 como exemplo, start Solr no modo independente:
 
@@ -139,31 +139,31 @@ Para executar uma configuração muito básica (e não de produção) da solrClo
 
 * java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar
 
-## Identificar MongoDB como armazenamento comum {#identify-mongodb-as-common-store}
+## Identifique MongoDB como Repositório Comum {#identify-mongodb-as-common-store}
 
 Inicie o autor e publique AEM instâncias, se necessário.
 
 Se AEM estava sendo executado antes do MongoDB ser iniciado, as instâncias AEM precisarão ser reiniciadas.
 
-Siga as instruções na página principal da documentação: [MSRP - Loja comum MongoDB](msrp.md)
+Siga as instruções na página principal da documentação: [MSRP - MongoDB Common Store](msrp.md)
 
 ## Testar {#test}
 
 Para testar e verificar a loja comum MongoDB, poste um comentário na instância de publicação e a visualização na instância do autor, bem como a visualização do UGC no MongoDB e no Solr:
 
-1. Na instância de publicação, navegue até a página Guia [dos componentes da](http://localhost:4503/content/community-components/en/comments.html) comunidade e selecione o componente Comentários.
+1. Na instância de publicação, navegue até a página [Guia de componentes da comunidade](http://localhost:4503/content/community-components/en/comments.html) e selecione o componente Comentários.
 1. Faça logon para postar um comentário:
-1. Digite o texto na caixa de entrada de texto do comentário e clique em **[!UICONTROL Postar]**
+1. Digite o texto na caixa de entrada de texto do comentário e clique em **[!UICONTROL Post]**
 
    ![chlimage_1-191](assets/chlimage_1-191.png)
 
-1. Basta visualização o comentário na instância [do](http://localhost:4502/content/community-components/en/comments.html) autor (provavelmente ainda conectado como admin / admin).
+1. Basta visualização o comentário na [instância do autor](http://localhost:4502/content/community-components/en/comments.html) (provavelmente ainda está conectado como admin / admin).
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
    Observação: embora existam nós JCR sob o *asipath* no autor, eles são para a estrutura SCF. O UGC real não está no JCR, está no MongoDB.
 
-1. Visualização do UGC em **[!UICONTROL comunidades mondeus > Coleções > Conteúdo]**
+1. Visualização o UGC em monGodb **[!UICONTROL Communities > Collections > Content]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -176,7 +176,7 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 ### Nenhum UGC é exibido {#no-ugc-appears}
 
@@ -184,14 +184,14 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 
 1. Verifique se o MSRP foi configurado para ser o provedor padrão:
 
-   * Em todas as instâncias de autor e publicação AEM, revisite o console Configuração do [Armazenamento](srp-config.md)
+   * Em todas as instâncias de autor e publicação AEM, revisite o [console de Configuração do Armazenamento](srp-config.md)
 
    ou verifique o repositório AEM:
 
-   * No JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
+   * No JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-      * Não contém um nó [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa que o provedor do armazenamento é JSRP
-      * Se o nó srpc existir e contiver a configuração [padrão](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)do nó, as propriedades da configuração padrão deverão definir o MSRP como o provedor padrão
+      * Não contém um nó [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que o provedor de armazenamentos é JSRP
+      * Se o nó srpc existir e contiver o nó [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), as propriedades da configuração default deverão definir MSRP como o provedor padrão
 
 
 1. Verifique se AEM foi reiniciado após a seleção do MSRP.
