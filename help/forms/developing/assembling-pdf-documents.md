@@ -2,7 +2,7 @@
 title: Montagem de Documentos PDF
 seo-title: Montagem de Documentos PDF
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
 content-type: reference
@@ -29,5 +29,5 @@ A partir do LiveCycle ES 8.0 e posterior, o suporte para pacotes PDF está dispo
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Assembler, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
