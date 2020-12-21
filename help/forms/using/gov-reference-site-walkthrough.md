@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Apresentação do site de referência We.Gov {#we-gov-reference-site-walkthrough}
+# Passagem do site de referência We.Gov {#we-gov-reference-site-walkthrough}
 
 ## Pré-requisito {#pre-requisite}
 
-Configure seu site de referência We.Gov conforme descrito em [Configurar e configurar sites](/help/forms/using/setup-reference-sites.md)de referência da AEM Forms.
+Configure seu site de referência We.Gov conforme descrito em [Configure e configure os sites de referência da AEM Forms](/help/forms/using/setup-reference-sites.md).
 
 ## Cenário do site de referência {#reference-site-scenario}
 
@@ -42,7 +42,7 @@ Uma vez apresentada a candidatura e paga a sua taxa, o requerente recebe um e-ma
 
 A organização We.Gov recebe o aplicativo. A organização recebe a avaliação da solicitação e aprova as solicitações genuínas.
 
-Depois que o aplicativo é aprovado, o requerente recebe um email do site We.Gov. A opção Documento **de** Visualização no e-mail vincula-se a um documento com os detalhes de inscrição do candidato.
+Depois que o aplicativo é aprovado, o requerente recebe um email do site We.Gov. A opção **Documento de Visualização** no email vincula-se a um documento com os detalhes de inscrição do candidato.
 
 O infográfico abaixo mostra o fluxo de trabalho passo a passo do cenário do site de referência We.Gov.
 
@@ -57,9 +57,9 @@ O cenário envolve as seguintes personas:
 
 ## Sarah inicia sua verificação de qualificação {#sarah-initiates-her-eligibility-check}
 
-Um candidato pode verificar a qualificação para solicitar benefícios de suporte-filho. O site permite que os usuários respondam perguntas para permitir que determinem se seu aplicativo é elegível para benefícios. Sarah, uma mãe adotiva, é uma candidata potencial para isso. O formulário de elegibilidade faz parte dos serviços de Pedido de Apoio à Criança do sítio Web We.Gov. Para verificar sua qualificação, Sarah clica em Suporte **** infantil no site We.Gov. Na página Suporte à Criança, Sarah clica em **[!UICONTROL Verificar sua qualificação]**.
+Um candidato pode verificar a qualificação para solicitar benefícios de suporte-filho. O site permite que os usuários respondam perguntas para permitir que determinem se seu aplicativo é elegível para benefícios. Sarah, uma mãe adotiva, é uma candidata potencial para isso. O formulário de elegibilidade faz parte dos serviços de Pedido de Apoio à Criança do sítio Web We.Gov. Para verificar sua qualificação, Sarah clica em **[!UICONTROL Suporte à Criança]** no site We.Gov. Na página Suporte à criança, Sarah clica em **[!UICONTROL Verifique sua qualificação]**.
 
-Além da abordagem acima, Sarah pode clicar em **[!UICONTROL Introdução]** na página inicial. Sarah é navegada até a página Todos os aplicativos, onde ela pode clicar em Aplicar em **[!UICONTROL Aplicativo para Serviços]** de Suporte Filho. Sarah é levada ao cheque de elegibilidade.
+Além da abordagem acima, Sarah pode clicar em **[!UICONTROL Introdução]** na página inicial. Sarah é navegada até a página Todos os aplicativos, onde ela pode clicar em Aplicar em **[!UICONTROL Aplicativo para Serviços de Suporte Filho]**. Sarah é levada ao cheque de elegibilidade.
 
 Na página Verificar qualificação para suporte filho, é pedido a Sarah um conjunto de perguntas para determinar sua qualificação para benefícios de suporte filho. Por meio de um conjunto de perguntas, ela é questionada:
 
@@ -89,15 +89,15 @@ No seu navegador, abra `https://<hostname>:<PublishPort>/content/we-gov/en.html`
 Para ver as regras:
 
 1. Abra o formulário no modo de edição na instância do autor. URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
-1. Select a component and click ![edit-rules](assets/edit-rules.png).
+1. Selecione um componente e clique em ![edit-rules](assets/edit-rules.png).
 
    O Editor de regras é aberto listando todas as regras aplicadas no formulário.
 
-1. No painel do lado esquerdo, clique em regras `passMsg` e `failMsg` para entender como a verificação de qualificação funciona.
+1. No painel esquerdo, clique nas regras `passMsg` e `failMsg` para entender como a verificação de qualificação funciona.
 
-## Sarah start seu pedido de apoio infantil {#sarah-starts-her-application-for-child-support}
+## Sarah start seu aplicativo para suporte a crianças {#sarah-starts-her-application-for-child-support}
 
-Sarah clica em Aplicativo **[!UICONTROL de]** Start depois de ser informada sobre sua qualificação para suporte a crianças.\
+Sarah clica em **[!UICONTROL Aplicativo de Start]** depois de ser informada de sua qualificação para suporte a filhos.\
 Na página Application For Child Support Services, Sarah fornece detalhes nas seguintes seções:
 
 * **[!UICONTROL Sobre o Requerente]**: Deixe Sarah fornecer seus detalhes nesta seção.
@@ -108,19 +108,19 @@ Na página Application For Child Support Services, Sarah fornece detalhes nas se
 
 * **[!UICONTROL Pagamento]** de taxa: Permite que Sarah forneça os detalhes do cartão de crédito para pagar a taxa do pedido.
 
-Por padrão, Sarah é direcionada para a seção **[!UICONTROL Sobre o Requerente]** .
+Por padrão, Sarah é levada para a seção **[!UICONTROL Sobre o Requerente]**.
 
 ![Aplicativo de suporte infantil no desktop](assets/desktop.png)
 
-A qualquer momento, Sarah pode clicar em **[!UICONTROL Voltar mais tarde]** e retomar com seu aplicativo. Quando ela clica em **[!UICONTROL Voltar mais tarde]**, seu progresso é salvo como um rascunho, e ela recebe uma opção para enviar o rascunho por email.
+A qualquer momento, Sarah pode clicar em **[!UICONTROL Volte mais tarde]** e retome com seu aplicativo. Quando ela clica em **[!UICONTROL Volte mais tarde]**, seu progresso é salvo como um rascunho, e ela recebe uma opção para enviar o rascunho por email.
 
-Quando ela clica em **[!UICONTROL Enviar e-mail]**, ela recebe um e-mail com um link para o rascunho de seu formulário.
+Quando ela clica em **[!UICONTROL Enviar email]**, ela recebe um email com um link para o rascunho de seu formulário.
 
 O formulário de suporte para filhos no site We.Gov usa formulários adaptáveis. Ela pode usar o link em seu email e preencher o formulário em seu dispositivo móvel.
 
 >[!NOTE]
 >
->O fluxo de trabalho de retornar do e-mail funciona somente com usuários conectados. No cenário do site de referência, verifique se a usuário Sarah Rose está adicionada. As credenciais de login da Sarah são `srose/password`.
+>O fluxo de trabalho de retornar do e-mail funciona somente com usuários conectados. No cenário do site de referência, verifique se a usuário Sarah Rose está adicionada. As credenciais de logon da Sarah são `srose/password`.
 
 ![mob1](assets/mob1.png)
 
@@ -128,7 +128,7 @@ Sarah pode fornecer detalhes em qualquer seção, mas a taxa do aplicativo é ac
 
 ### <strong>Sarah fornece informações</strong> {#strong-sarah-provides-her-information-strong}
 
-Depois que Sarah clicar em **[!UICONTROL Start Application]**, ela será direcionada para a seção Informações do Candidato da página Application For Child Support Services. Em Informações do Candidato, Sarah navega pelas guias e fornece informações pessoais para o aplicativo. Ela clica em **[!UICONTROL Próximo]** para navegar pelas guias.
+Depois que Sarah clicar em **[!UICONTROL Aplicativo de Start]**, ela será direcionada para a seção Informações do Candidato da página Serviços de Suporte à Criança. Em Informações do Candidato, Sarah navega pelas guias e fornece informações pessoais para o aplicativo. Ela clica em **[!UICONTROL Próximo]** para navegar pelas guias.
 
 Em Informações sobre o Requerente, solicita-se-lhe que forneça informações detalhadas sob as seguintes guias:
 
@@ -144,9 +144,9 @@ Em Basic Information (Informações básicas), Sarah fornece sua prova de identi
 
    Em Additional Information (Informações adicionais), Sarah insere um número de identificação, sua data de nascimento e o endereço atual e o número de telefone.
 
-### Sarah fornece informações sobre filhos {#sarah-provides-child-information}
+### Sarah fornece informações filho {#sarah-provides-child-information}
 
-Depois que Sarah fornecer suas informações pessoais e clicar em **[!UICONTROL Avançar]**, ela será levada para a seção Informações da Criança.
+Depois que Sarah fornecer suas informações pessoais e clicar em **[!UICONTROL Next]**, ela será direcionada para a seção Informações sobre crianças.
 
 Na seção Informações sobre crianças, ela fornece os seguintes detalhes:
 
@@ -158,15 +158,15 @@ Sarah escolhe seu único filho, Joe, e digita seu nome.
 
 ### Sarah fornece informações de pagamento {#sarah-provides-payment-information}
 
-Depois que Sarah fornecer informações sobre a criança (ou filhos) adotada e clicar em **[!UICONTROL Avançar]**, ela será direcionada para a seção Informações **[!UICONTROL de]** Pagamento.
+Depois que Sarah fornecer informações sobre o filho (ou filhos) adotado e clicar em **[!UICONTROL Próximo]**, ela será direcionada para a seção **[!UICONTROL Informações de Pagamento]**.
 
 Na seção Informações sobre Pagamento, fornece os detalhes da conta bancária na qual ela pode receber os benefícios do apoio infantil.\
 Ela digita o número de sua conta bancária de 10 dígitos.
 
-## Sarah paga a taxa de inscrição e assina o formulário {#sarah-pays-the-application-fee-and-signs-the-form}
+## Sarah paga a taxa do aplicativo e assina o formulário {#sarah-pays-the-application-fee-and-signs-the-form}
 
 Depois que Sarah concorda com os termos e condições do aplicativo, ela paga a taxa de inscrição de US$ 25. A taxa de inscrição é necessária para processar o aplicativo.\
-Sarah entra nos detalhes do cartão de crédito e clica em **[!UICONTROL Pagar Agora]**. Depois de pagar as taxas, uma versão em PDF do aplicativo é exibida com um campo de assinatura.
+Sarah insere os detalhes do cartão de crédito e clica em **[!UICONTROL Pagar Agora]**. Depois de pagar as taxas, uma versão em PDF do aplicativo é exibida com um campo de assinatura.
 
 ![sarah-sign-1](assets/sarah-sign-1.png)
 
@@ -187,7 +187,7 @@ O aplicativo de suporte secundário usa uma combinação de layouts de painel, c
 
 O candidato pode se mover entre seções para preencher diferentes componentes do formulário. Quando o requerente preenche o formulário, o envia, concorda com os termos e condições e paga a taxa, é iniciado um fluxo de trabalho personalizado. O fluxo de trabalho personalizado envia um email automatizado ao candidato confirmando o envio do aplicativo. O pedido é transmitido ao serviço competente da organização para verificação e aprovação.
 
-O layout do formulário é especificado no Tema do Serviço de Suporte a Filho do Governador. O estilo inclui estilo de componente, plano de fundo da página, formatação de estado de erro dos componentes e estilos de fonte.
+O layout do formulário é especificado no Tema de Serviço de Suporte a Filho do Governador. O estilo inclui estilo de componente, plano de fundo da página, formatação de estado de erro dos componentes e estilos de fonte.
 
 A verificação de qualificação usa regras especificadas no formulário. Ele usa as verificações de validade especificadas abaixo:
 
@@ -197,7 +197,7 @@ A verificação de qualificação usa regras especificadas no formulário. Ele u
 
 ### Veja você mesmo {#see-it-yourself-1}
 
-Em seu navegador, abra `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` e preencha as informações necessárias. Ao enviar a solicitação depois de preencher as informações necessárias, pagar as taxas e assinar o documento, você receberá o e-mail de confirmação.
+No navegador, abra `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` e preencha as informações necessárias. Ao enviar a solicitação depois de preencher as informações necessárias, pagar as taxas e assinar o documento, você receberá o e-mail de confirmação.
 
 Consulte o Modelo Filho We.Gov aqui: `https://<hostname>:<AuthorPort>/editor.html/conf/we-gov/settings/wcm/templates/we-gov-child-template/structure.html`
 
@@ -209,19 +209,19 @@ Para ver todas as regras, execute as seguintes etapas:
 
    URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`
 
-1. Selecione um componente e toque em ![editar regras](assets/edit-rules.png). Todas as regras são listadas no editor de regras, incluindo as regras listadas acima.
+1. Selecione um componente e toque em ![edit-rules](assets/edit-rules.png). Todas as regras são listadas no editor de regras, incluindo as regras listadas acima.
 
-## Gloria recebe a candidatura {#gloria-receives-the-application}
+## Gloria recebe o aplicativo {#gloria-receives-the-application}
 
 Gloria, chefe de aprovações em We.Gov, pode visualização, aprovar ou rejeitar candidaturas enviadas. AEM Caixa de entrada permite que ela veja todas as solicitações enviadas em um único lugar.
 
 ### Como funciona {#how-it-works-2}
 
-Quando Sarah preenche e envia o aplicativo de suporte filho, um PDF ou Documento de Registro do aplicativo é criado e enviado para a caixa de entrada de Gloria Rios. Gloria pode visualização do pedido apresentado, aceitando-o ou rejeitando-o.
+Quando Sarah preenche e envia o aplicativo de suporte a filho, um PDF ou Documento de Registro do aplicativo é criado e enviado para a caixa de entrada de Gloria Rios. Gloria pode visualização do pedido apresentado, aceitando-o ou rejeitando-o.
 
 ### Veja você mesmo {#see-it-yourself-2}
 
-Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Na página, toque em **[!UICONTROL Fazer logon]**, marque a caixa de seleção **[!UICONTROL Fazer logon como representante]** , faça logon na caixa de entrada AEM usando grios/password como nome de usuário/senha para Gloria Rios. O aplicativo de suporte secundário é exibido. Para obter informações sobre como usar AEM Caixa de entrada para tarefas de fluxo de trabalho centradas em formulários, consulte [Gerenciar aplicativos e tarefas do Forms AEM Caixa de entrada](/help/forms/using/manage-applications-inbox.md).
+Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Na página, toque em **[!UICONTROL Entrar]**, marque a caixa de seleção **[!UICONTROL Logon como representante]**, faça logon na caixa de entrada AEM usando grios/password como nome de usuário/senha para Gloria Rios. O aplicativo de suporte secundário é exibido. Para obter informações sobre como usar AEM Caixa de entrada para tarefas de fluxo de trabalho centradas em formulários, consulte [Gerenciar aplicativos e tarefas Forms em AEM Caixa de entrada](/help/forms/using/manage-applications-inbox.md).
 
 ![Caixa de entrada de Gloria no site We.Gov](assets/gloria-inbox.png)
 
@@ -232,7 +232,7 @@ Gloria pode ver, aprovar ou rejeitar o aplicativo do painel do aplicativo.
 Gloria, chefe de aprovação na We.Gov, abre sua caixa de entrada AEM. Ela vê uma tarefa de revisão em sua lista de tarefas. Ela abre e visualização a tarefa de revisão.
 
 Ela vê um PDF do formulário preenchido com detalhes que Sarah inseriu junto com os documentos que Sarah carregou.\
-Gloria pode aprovar ou rejeitar o pedido. No entanto, Gloria clica em **[!UICONTROL Avaliação Necessária]** para avaliar o aplicativo.
+Gloria pode aprovar ou rejeitar o pedido. No entanto, Gloria clica em **[!UICONTROL Avaliação exigida]** para obter a avaliação do aplicativo.
 
 ![gloria-send-assessment](assets/gloria-sends-assessment.png)
 
@@ -240,18 +240,18 @@ O aplicativo da Sarah é um ponto de partida no fluxo de trabalho da AEM. Ele in
 
 ### Veja você mesmo {#see-it-yourself-3}
 
-Se a configuração for concluída, o fluxo de trabalho AEM será start imediatamente após o formulário ser enviado. Faça logon na caixa de entrada usando as credenciais de Gloria.
+Se a configuração for concluída, o fluxo de trabalho AEM será start imediatamente depois que o formulário for enviado. Faça logon na caixa de entrada usando as credenciais de Gloria.
 
-Acesse a caixa de entrada em https://&lt;nome do ***host***>:&lt;***PublishPort***>/content/we-gov/en.html. Na página, toque em **[!UICONTROL Fazer logon]**, marque a caixa de seleção **[!UICONTROL Fazer logon como representante]** para usar as credenciais padrão de Gloria:
+Acesse a caixa de entrada em https://&lt;***nome do host***>:&lt;***PublishPort***>/content/we-gov/en.html. Na página, toque em **[!UICONTROL Entrar]**, selecione a caixa de seleção **[!UICONTROL Logon como representante]** para usar as credenciais padrão de Gloria:
 
 * Nome de usuário: grios
 * Senha: password
 
-Em sua caixa de entrada AEM, o aplicativo da Sarah é adicionado como uma tarefa de revisão. Selecione a tarefa e clique em **Avaliação necessária** para prosseguir para a próxima etapa.
+Em sua caixa de entrada AEM, o aplicativo da Sarah é adicionado como uma tarefa de revisão. Selecione a tarefa e clique em **Avaliação exigida** para prosseguir para a próxima etapa.
 
-### A placa recebe a tarefa de avaliação {#conard-assessment-task}
+### A placa obtém a tarefa de avaliação {#conard-assessment-task}
 
-Quando Gloria clica em **[!UICONTROL Avaliação obrigatória]**, Conard recebe a tarefa de revisão em sua Caixa de entrada AEM. A tarefa é a próxima etapa do fluxo de trabalho AEM definido no modelo de fluxo de trabalho. Ele vê a tarefa da revisão e a abre.
+Quando Gloria clica em **[!UICONTROL Avaliação exigida]**, o Conard recebe a tarefa de revisão em sua Caixa de entrada AEM. A tarefa é a próxima etapa do fluxo de trabalho AEM definido no modelo de fluxo de trabalho. Ele vê a tarefa da revisão e a abre.
 
 A Conard obtém a tarefa de avaliação do requerente, como mostrado abaixo.
 
@@ -263,7 +263,7 @@ O Conard verifica todos os detalhes que a Sarah forneceu e a Sarah assina a aval
 
 ![submeter a nova avaliação](assets/submit-for-re-evaluation.png)
 
-A placa clica em **[!UICONTROL Enviar para reavaliação]** e o fluxo de trabalho AEM envia a avaliação para a organização We.Gov.
+A placa clica **[!UICONTROL Enviar para reavaliação]** e o fluxo de trabalho AEM submete a avaliação à organização We.Gov.
 
 ### Como funciona {#how-it-works-4}
 
@@ -282,9 +282,9 @@ As credenciais padrão do Conard são:
 
 Você pode ver uma nova tarefa de solicitação de avaliação adicionada à caixa de entrada. Submeter a avaliação concluída e prosseguir para a próxima etapa.
 
-### Gloria revê a avaliação e aprova o pedido {#gloria-reviews-the-assessment-and-approves-the-application}
+### Gloria revê a avaliação e aprova o aplicativo {#gloria-reviews-the-assessment-and-approves-the-application}
 
-Depois que a Conard submete a avaliação, Gloria vê uma tarefa de revisão na sua caixa de entrada. Ela seleciona e abre a **[!UICONTROL Review]**.
+Depois que a Conard submete a avaliação, Gloria vê uma tarefa de revisão na sua caixa de entrada. Ela seleciona e abre **[!UICONTROL Review]**.
 
 ![gloriainbox-1](assets/gloriainbox-1.png)
 
@@ -308,7 +308,7 @@ Abra a tarefa para ver o status da Última ação realizada. Com base na avalia�
 
 Depois que Gloria aprova o pedido, Sarah recebe um e-mail do We.Gov informando que seu pedido foi aprovado.
 
-O botão Documento **[!UICONTROL da]** Visualização no e-mail vincula-se aos detalhes de inscrição. Sarah clica em Documento **[!UICONTROL Visualização.]**
+O botão **[!UICONTROL Documento de Visualização]** no e-mail é vinculado aos detalhes de inscrição. Sarah clica em **[!UICONTROL Documento de Visualização.]**
 
 ![Approval-enrolment-kit-email](assets/approval-enrolment-kit-email.png)
 
@@ -340,26 +340,26 @@ We.Gov, de tempos em tempos, analisa o desempenho de seu aplicativo de serviços
 
 ### Como funciona {#how-it-works-7}
 
-As métricas de desempenho para o formulário de aplicativo de serviços de suporte secundário são rastreadas usando o Adobe Analytics. Para obter mais informações sobre como configurar o Adobe Analytics e exibir relatórios, consulte [Configurar análises para formulários e documentos](/help/forms/using/configure-analytics-forms-documents.md).
+As métricas de desempenho para o formulário de aplicativo de serviços de suporte secundário são rastreadas com o Adobe Analytics. Para obter mais informações sobre como configurar o Adobe Analytics e exibir relatórios, consulte [Configuração de análise para formulários e documentos](/help/forms/using/configure-analytics-forms-documents.md).
 
 ### Veja você mesmo {#see-it-yourself-7}
 
 Para que você possa visualização e explorar o relatório de análise, estamos fornecendo dados semente para o aplicativo de serviços de suporte para crianças no site de referência. Antes de usar dados semente, consulte [Configurar o Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Execute as seguintes etapas na instância do autor para visualização o relatório aos dados semente:
 
-1. Vá para a interface do usuário do **[!UICONTROL Forms &amp; Documentos]** em https://&lt;*nome do host*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Vá para a interface do usuário **[!UICONTROL Forms &amp; Documentos]** em https://&lt;*nome do host*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
-1. Clique para abrir a pasta **We.Gov** .
-1. Selecione o formulário adaptativo **[!UICONTROL Aplicativo para serviços]** de suporte filho e clique em **[!UICONTROL Ativar o Analytics]** na barra de ferramentas.
+1. Clique para abrir a pasta **We.Gov**.
+1. Selecione **[!UICONTROL Aplicativo para serviços de suporte filho]** o formulário adaptativo e clique em **[!UICONTROL Ativar o Analytics]** na barra de ferramentas.
 
-1. Selecione o formulário novamente e clique em Relatório **** do Analytics na barra de ferramentas para gerar o relatório. Você verá um relatório em branco inicialmente.
+1. Selecione o formulário novamente e clique em **[!UICONTROL Relatório do Analytics]** na barra de ferramentas para gerar o relatório. Você verá um relatório em branco inicialmente.
 
 Para gerar um relatório de análise com dados semente:
 
-1. No navegador de endereços da lista CRXDE, digite: **/apps/we-gov/demo-artifacts/analyticsDados de teste/Serviço de suporte ao filhoDados de teste do Analytics**
+1. No navegador de endereços da lista CRXDE, digite: **/apps/we-gov/demo-artifacts/analyticsServiço de suporte a TestData/Child Dados de teste do Analytics**
 1. Os dados semente são selecionados na estrutura do diretório do lado esquerdo.
 1. Duplo clique no arquivo selecionado para abrir seu conteúdo no painel direito.
 1. Copie todo o conteúdo no arquivo de dados de teste.
 1. No CRXDE, navegue até: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
 1. No campo analytics data em Propriedades, cole o conteúdo copiado do arquivo de dados de teste.
-1. Agora, gere o relatório de análise novamente para o **[!UICONTROL Aplicativo para Serviços]** de Suporte Filho. Você pode ver os dados semente no relatório gerado.
+1. Agora, gere o relatório de análise novamente para **[!UICONTROL Aplicativo para Serviços de Suporte Filho]**. Você pode ver os dados semente no relatório gerado.
 
