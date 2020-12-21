@@ -18,12 +18,12 @@ ht-degree: 3%
 ---
 
 
-# Tipos de certificado usados por extensões do Acrobat Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
+# Tipos de certificado usados pelas extensões do Acrobat Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 O Visualizador de certificados fornece as seguintes informações sobre o certificado:
 
 * Nome &quot;amigável&quot; do certificado
-* perfis de certificados
+* Perfis de certificados
 * Período de validade
 * Direitos de uso de extensões do Acrobat Reader DC
 
@@ -35,24 +35,24 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 A string contém os seguintes elementos:
 
-**Tipo de certificado:** Descreve os módulos de formulários AEM que o certificado ativa e o nível de ativação, como ARE 2D Barcode Full (Código de barras 2D cheio). Para obter uma lista dos tipos de certificados disponíveis, consulte a coluna Tipo na tabela na seção perfis de certificados.
+**Tipo de certificado:** descreve os módulos de formulários AEM que o certificado ativa e o nível de ativação, como ARE 2D Barcode Full. Para obter uma lista dos tipos de certificados disponíveis, consulte a coluna Tipo na tabela na seção perfis de certificados.
 
-**Tipo de implantação:** Indica o uso pretendido do certificado, como Produção. O valor pode ser Avaliação ou Produção. Para obter uma lista de tipos de implantação associados a cada tipo de certificado, consulte a coluna Tipo de implantação na tabela da seção perfis de certificado.
+**Tipo de implantação:** indica o uso pretendido do certificado, como Produção. O valor pode ser Avaliação ou Produção. Para obter uma lista de tipos de implantação associados a cada tipo de certificado, consulte a coluna Tipo de implantação na tabela da seção perfis de certificado.
 
-**Versão de direitos de uso:** Descreve a versão do algoritmo de direitos de uso para a qual o certificado pode ser usado, como V6.1. Esta versão não significa a versão das extensões Acrobat ou Acrobat Reader DC.
+**Versão de direitos de uso:** descreve a versão do algoritmo de direitos de uso para a qual o certificado pode ser usado, como V6.1. Esta versão não significa a versão das extensões Acrobat ou Acrobat Reader DC.
 
-**Código do Perfil:** O código do perfil é uma descrição resumida das propriedades completas do certificado, como P8, por exemplo. Para obter uma lista dos códigos de perfil associados a cada tipo de arquivo, consulte a coluna de código de Perfil na tabela da seção Perfis de certificado.
+**Código do perfil:** O código do perfil é uma descrição resumida das propriedades completas do certificado, como P8, por exemplo. Para obter uma lista dos códigos de perfil associados a cada tipo de arquivo, consulte a coluna de código de Perfil na tabela da seção Perfis de certificado.
 
 **Número de série:** Um número de série é atribuído a cada certificado emitido pelo Adobe, como 0002054. O suporte empresarial do Adobe ou um representante de conta empresarial do Adobe pode usar esse número de série para rastrear o certificado em um pedido de produto específico ou em uma relação OEM.
 
-## perfis de certificados {#certificate-profiles}
+## Perfis de certificado {#certificate-profiles}
 
 A tabela a seguir lista os perfis de certificados que você pode encontrar ao analisar certificados de extensões Acrobat Reader DC.
 
 <table> 
  <thead> 
   <tr> 
-   <th><p>Código do Perfil</p></th> 
+   <th><p>Código do perfil</p></th> 
    <th><p>Tipo</p></th> 
    <th><p>Período de validade</p></th> 
    <th><p>Tipo de implantação</p></th> 
@@ -160,7 +160,7 @@ Os certificados de produção são emitidos para clientes que compraram extensõ
 
 Ao examinar o certificado de extensões do Acrobat Reader DC no Visualizador de certificados, você pode selecionar o item de direitos de uso na guia Detalhes (se configurado) para ver uma lista discriminada dos direitos de uso do Adobe Reader que o certificado pode ativar. Os direitos de uso ativados em um determinado documento podem ser um subconjunto daqueles ativados pelo certificado.
 
-Se for necessário fazer comentários on-line em um ambiente não colaborativo, entre em contato com o Suporte à Adobe para obter mais informações. A propriedade Mode corresponde ao tipo de implantação e é *produção* ou *avaliação*.
+Se for necessário fazer comentários on-line em um ambiente não colaborativo, entre em contato com o Suporte à Adobe para obter mais informações. A propriedade Mode corresponde ao tipo de implantação e é *production* ou *assessment*.
 
 Os direitos de uso de extensões permitidos do Acrobat Reader DC consistem em um ou mais elementos específicos. Esses elementos são usados em combinações diferentes para obter variedades de funcionalidade de produtos licenciados.
 
