@@ -240,4 +240,4 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
  </tbody>
 </table>
 
-Além das palavras-chave listadas acima, evite usar nomes semelhantes aos formulários [adaptáveis APIs](https://adobe.com/go/learn_aemforms_javascript_api_63)JavaScript.
+Além das palavras-chave listadas acima, evite usar nomes semelhantes a [formulários adaptáveis APIs JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
