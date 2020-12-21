@@ -25,9 +25,9 @@ A segurança do documento Adobe Experience Manager Forms garante que somente usu
 
 As políticas são armazenadas no servidor Documento Security; aplique as políticas aos documentos por meio do aplicativo cliente. Quando você aplica uma política a um documento, as configurações de confidencialidade especificadas na política protegem as informações que o documento contém. É possível distribuir o documento protegido por política para recipient autorizados pela política.
 
-A segurança do Documento também fornece clientes, visualizadores e indexadores para proteger documentos, documentos protegidos por visualização e documentos protegidos por índice. Para obter informações detalhadas sobre a segurança do documento, consulte [sobre segurança](/help/forms/using/admin-help/document-security.md)do documento.
+A segurança do documento também fornece clientes, visualizadores e indexadores para proteger documentos, documentos protegidos por visualização e documentos protegidos por índice. Para obter informações detalhadas sobre a segurança do documento, consulte [sobre a segurança do documento](/help/forms/using/admin-help/document-security.md).
 
-## Topologia de implantação  {#deployment-topology}
+## Topologia de implantação {#deployment-topology}
 
 O recurso de segurança do documento está disponível somente no AEM Forms em JEE. Você precisa de uma única instância do AEM Forms no JEE. Você também pode criar um cluster ou farm de servidores AEM Forms, se necessário. A topologia a seguir indica a topologia para executar a capacidade de segurança do documento. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação para AEM Forms](aem-forms-architecture-deployment.md).
 
@@ -39,13 +39,13 @@ O diagrama a seguir mostra a arquitetura típica da Segurança do Documento AEM 
 
 ![](do-not-localize/document-security-typical-environment.png)
 
-## Instalação do AEM Forms no JEE {#installing-aem-forms-on-jee}
+## Instalação do AEM Forms em JEE {#installing-aem-forms-on-jee}
 
 Execute as seguintes etapas para instalar e configurar o AEM Forms no JEE:
 
-1. Baixe o instalador do AEM 6.4 Forms em JEE do [Adobe Licensing Website (LWS)](https://licensing.adobe.com/). Você precisa de um contrato válido de manutenção e suporte para baixar o instalador.
-1. Leia o documento [](/help/forms/using/aem-forms-jee-supported-platforms.md) AEM Forms em plataformas suportadas por JEE e verifique se o software, o hardware, os sistemas operacionais, o servidor de aplicativos, os bancos de dados, os JDKs e outras infraestruturas estão prontos para instalar o AEM Forms no JEE.
-1. (Somente instalações de chave não turna) Leia a [Preparação para instalar o AEM Forms single server](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) ou [Preparação para instalar o cluster](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) de servidores AEM Forms e prepare o ambiente para instalar e configurar o AEM Forms no JEE.
+1. Baixe o instalador do Forms 6.4 no JEE do [site de licenciamento do Adobe (LWS)](https://licensing.adobe.com/). Você precisa de um contrato válido de manutenção e suporte para baixar o instalador.
+1. Leia o documento [AEM Forms on JEE Supported Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md) e verifique se o software, o hardware, os sistemas operacionais, o servidor de aplicativos, os bancos de dados, os JDKs e outras infraestruturas estão prontos para instalar o AEM Forms no JEE.
+1. (Somente instalações de chave não-turna) Leia o [Preparando para instalar o AEM Forms single server](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) ou [Preparando para instalar o cluster de servidores AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) e prepare seu ambiente para instalar e configurar o AEM Forms no JEE.
 1. Dependendo do ambiente e do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções para concluir a instalação
 
    * [Instalar e implantar o AEM Forms no JEE usando o chave-mão JBoss](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
