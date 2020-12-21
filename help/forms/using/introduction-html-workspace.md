@@ -31,5 +31,5 @@ A área de trabalho do AEM Forms é compatível com mais dispositivos e fatores 
 * Participe do processo em todos os lugares com PDF forms dinâmicos, interfaces móveis e aplicativos da Web.
 * Integre facilmente os componentes do espaço de trabalho com seus aplicativos da Web. Como o espaço de trabalho AEM Forms é um software baseado em componentes, ele pode ser facilmente personalizado e reutilizado.
 * Estenda os processos de negócios aos funcionários móveis online e offline com o aplicativo de área de trabalho AEM Forms.
-* Relatórios de Visualização para monitorar registros de backlogs, filas de trabalho e indicadores chave de desempenho (KPIs). Você pode usar APIs para extrair dados para análise adicional usando ferramentas de relatórios de terceiros.
+* Relatórios de visualização para monitorar registros de backlogs, filas de trabalho e indicadores chave de desempenho (KPIs). Você pode usar APIs para extrair dados para análise adicional usando ferramentas de relatórios de terceiros.
 
