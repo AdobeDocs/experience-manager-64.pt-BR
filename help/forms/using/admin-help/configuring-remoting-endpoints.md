@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Um terminal remoto permite que um aplicativo criado com a Flex chame o serviço usando (obsoleto para formulários AEM) AEM Remota de formulários. Um terminal remoto é criado automaticamente para cada serviço ativado. É criado um destino Flex com o mesmo nome que o ponto de extremidade, e os clientes Flex podem criar objetos remotos que apontam para esse destino para chamar operações no serviço relevante.
 
-## Configurações de ponto de extremidade remoto {#remoting-endpoint-settings}
+## Remoção das configurações de ponto de extremidade {#remoting-endpoint-settings}
 
-**Método de autenticação de cliente Flex:** Determina o tipo de resposta que o servidor envia para o cliente quando o serviço chamado está habilitado para segurança, a operação invocada não suporta invocações anônimas e o cliente transmite nenhuma credenciais ou inválidas.
+**Método de Autenticação do Cliente Flex:** Determina o tipo de resposta que o servidor envia para o cliente quando o serviço chamado está habilitado para segurança, a operação invocada não suporta invocações anônimas e o cliente transmite nenhuma credenciais ou inválidas.
