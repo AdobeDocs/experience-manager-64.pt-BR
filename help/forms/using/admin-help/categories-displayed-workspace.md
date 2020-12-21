@@ -24,9 +24,9 @@ No Workspace, os processos que um usuário pode start são exibidos no categoria
 
 Ao especificar os nomes das categorias, crie-os para que eles apareçam corretamente no painel de navegação da Workspace. Por padrão, o painel de navegação esquerdo tem uma largura fixa de 210 pixels, que é de aproximadamente 24 caracteres. Se o nome da categoria especificado for muito longo para se ajustar à largura fixa do painel de navegação esquerdo, ele será truncado. O nome completo aparece somente quando o ponteiro do mouse é pausado sobre ele. Tente evitar nomes de categorias que serão truncados. Os exemplos a seguir ilustram os nomes de categorias que se encaixam e os que estão truncados:
 
-**Nome da Categoria que se encaixa:** Participação e saída
+**Nome da categoria que se encaixa:** Participação e saída
 
-**Nome da Categoria truncado:** Participação e licença (Estados Unidos)
+**Nome da categoria truncado:** Participação e Licença (Estados Unidos)
 
 No Workspace, os processos dentro de uma categoria normalmente são exibidos como cartões na página Processo de Start. Em geral, seis cartões podem ser exibidos na tela para uma categoria antes que o usuário seja solicitado a rolar até a visualização dos cartões restantes. Como a rolagem dificulta a localização de um processo, considere limitar cada categoria a seis processos ou, dependendo da sua resolução, limitar o número de processos que podem ser exibidos na tela sem a necessidade de rolagem.
 
