@@ -24,13 +24,13 @@ ht-degree: 3%
 
 No autor, na navegação global
 
-* Selecionar **[!UICONTROL comunidades > Sites]**
-* Selecione a pasta **** de participação para abri-la
-* Selecione o cartão para o site em inglês do Tutorial de **[!UICONTROL Introdução]**
+* Selecione **[!UICONTROL Comunidades > Sites]**
+* Selecione **[!UICONTROL pasta de participação]** para abri-la
+* Selecione o cartão para o **[!UICONTROL Tutorial de introdução]** site inglês
    * Selecione a imagem do cartão
-   * Não *selecionar* um ícone
+   * Selecione *not* um ícone
 
-O resultado é alcançar o console [](groups.md)Grupos:
+O resultado é alcançar o [console Grupos](groups.md):
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -38,17 +38,17 @@ A função groups será exibida como uma pasta na qual as instâncias de grupos 
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-## Criar grupo de artes principais {#create-main-arts-group}
+## Criar grupo Artes Principais {#create-main-arts-group}
 
-Esse grupo pode ser criado porque a estrutura do site para engajamento inclui uma função de grupos. A configuração da função no padrão do site `Reference Template` permite a seleção de qualquer modelo de grupo habilitado. Assim, o modelo escolhido para esse novo grupo será o `Reference Group`.
+Esse grupo pode ser criado porque a estrutura do site para engajamento inclui uma função de grupos. A configuração da função em `Reference Template` do site permite a seleção de qualquer modelo de grupo ativado. Assim, o modelo escolhido para esse novo grupo será `Reference Group`.
 
 Esses consoles são muito semelhantes ao console Sites das Comunidades.
 
-* Selecionar **[!UICONTROL Criar grupo]**
+* Selecione **[!UICONTROL Criar grupo]**
 * `1 Community Group Template`:
    * Título do grupo da comunidade: Artes
    * Descrição do grupo da comunidade: Um grupo pai para vários grupos artísticos.
-   * Raiz do grupo da comunidade: *sair como padrão*
+   * Raiz do grupo da comunidade: *deixar como predefinição*
    * Idioma(s) adicional(is) disponível(is) do grupo da comunidade:use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site da comunidade pai foi criado. Os usuários podem selecionar entre esses idiomas para criar grupos em várias localidades nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites da comunidade.
    * Nome do grupo da comunidade: artes
    * Modelo: puxe para baixo para selecionar `Reference Group`
@@ -65,21 +65,21 @@ Continue pelos outros painéis com estas configurações:
    * **Moderação**
       * Deixar vazio (herdar do site pai)
    * **Associação**
-      * use default `Optional Membership`
+      * usar padrão `Optional Membership`
    * **Miniatura**
       * `optional`
    * Selecionar `Next`
 * Selecione **[!UICONTROL Criar]**
 
-### Aninhamento de grupos no grupo Artes {#nesting-groups-within-arts-group}
+### Aninhando grupos no grupo Arts {#nesting-groups-within-arts-group}
 
-A `groups` pasta agora deve conter dois grupos (pode ser necessário atualizar a página).
+A pasta `groups` agora deve conter dois grupos (pode ser necessário atualizar a página).
 
 ![createcommunitgroup](assets/createcommunitygroup.png)
 
 #### Publicar grupo {#publish-group}
 
-Antes de criar grupos aninhados dentro do `arts`grupo, passe o mouse sobre o `arts` cartão e selecione o ícone de publicação para publicá-lo.
+Antes de criar grupos aninhados dentro do grupo `arts`passe o mouse sobre o cartão `arts` e selecione o ícone de publicação para publicá-lo.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -87,36 +87,39 @@ Aguarde a confirmação de que o grupo foi publicado.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-O `arts` grupo também deve conter uma `groups` pasta, mas que esteja vazia e na qual novos grupos possam ser criados. Navegue até a pasta do grupo artístico e crie 3 grupos aninhados, cada um com uma configuração de associação diferente:
+O grupo `arts` também deve conter uma pasta `groups`, mas que esteja vazia e na qual novos grupos possam ser criados. Navegue até a pasta do grupo artístico e crie 3 grupos aninhados, cada um com uma configuração de associação diferente:
 
 1. Visível
    * Título: `Visual Arts`
    * Nome: `visual`
    * Modelo: `Reference Group`
-   * Associação: selecionar `Optional Membership`Um grupo público, abrir para todos os membros
+   * Associação: selecione `Optional Membership`
+Um grupo público, aberto a todos os membros
 1. Auditoria
    * Título: `Auditory Arts`
    * Nome: `auditory`
    * Modelo: `Reference Group`
-   * Associação: selecionar `Required Membership`Um grupo aberto, disponível para os membros participarem
+   * Associação: selecione `Required Membership`
+Um grupo aberto, disponível para os membros participarem
 
 1. História
 
    * Título: `Art History`
    * Nome: `history`
    * Modelo: `Reference Group`
-   * Associação: selecionar `Restricted Membership`Um grupo secreto, visível somente para membros convidados como exemplo, convidar 
+   * Associação: selecione `Restricted Membership`
+Um grupo secreto, visível somente para membros convidados como exemplo, convidar 
 [usuário de demonstração](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 Atualize a página para ver os três grupos aninhados (subcomunidades).
 
 Se necessário, para navegar até os grupos aninhados no console Sites das Comunidades:
 
-* Selecionar pasta **[!UICONTROL de participação]**
-* Selecione o cartão Tutorial **[!UICONTROL de]** Introdução
-* Selecionar pasta **[!UICONTROL Grupos]**
-* Selecionar cartão **[!UICONTROL artístico]**
-* Selecionar pasta **[!UICONTROL Grupos]**
+* Selecione **[!UICONTROL pasta de participação]**
+* Selecione o cartão **[!UICONTROL Tutorial de Introdução]**
+* Selecionar **[!UICONTROL pasta Grupos]**
+* Selecione **[!UICONTROL cartão de artes]**
+* Selecionar **[!UICONTROL pasta Grupos]**
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -133,9 +136,9 @@ Depois de publicar o site da comunidade principal, é necessário
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
-## Experiência de publicação {#experience-on-publish}
+## Experiência em Publicar {#experience-on-publish}
 
-É possível experimentar os diferentes grupos ao fazer logon, por exemplo, com os usuários [da](tutorials.md#demo-users) demonstração usados para
+É possível experimentar os diferentes grupos ao fazer logon, por exemplo, com os [usuários de demonstração](tutorials.md#demo-users) usados para
 
 * Membro do grupo Arte/Histórico: emily.andrews@mailinator.com/senha
    * O grupo restrito (secreto), artes/história, estará visível
@@ -146,4 +149,4 @@ Depois de publicar o site da comunidade principal, é necessário
    * pode ingressar em grupos restritos (abertos)
    * Não verá grupos restritos (secretos)
 
-Acesse os consoles [](members.md) Membros e Grupos das Comunidades no autor para adicionar outros usuários a vários grupos de membros que correspondam aos grupos da comunidade.
+Acesse os consoles Comunidades [Membros e grupos](members.md) no autor para adicionar outros usuários a vários grupos de membros que correspondam aos grupos da comunidade.
