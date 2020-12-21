@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Configuração do Connector para IBM Content Manager{#configuring-connector-for-ibm-content-manager}
+# Configurando o Connector para IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
-O Connector for IBM Content Manager permite a comunicação entre formulários AEM e o IBM Content Manager. Para obter informações adicionais de plano de fundo, consulte &quot;Conectores para ECM&quot; na Referência [de](https://www.adobe.com/go/learn_aemforms_services_63)serviços.
+O Connector for IBM Content Manager permite a comunicação entre formulários AEM e o IBM Content Manager. Para obter informações adicionais de plano de fundo, consulte &quot;Conectores para ECM&quot; em [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Configurar a conexão do IBM Content Manager {#configure-the-ibm-content-manager-connection}
 
