@@ -26,10 +26,10 @@ Uma revisão é um mecanismo que permite que um ou mais revisores comentem sobre
 ## Configuração de uma revisão {#setting-up-a-review}
 
 1. Navegue até a guia Forms e selecione um formulário.
-1. Se o ativo não tiver uma revisão em andamento, um ícone de Revisão de Start ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) será exibido na barra Ação. Clique no ícone Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Se o ativo não tiver uma revisão em andamento, um ícone Revisão de Start ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) será exibido na barra de Ação. Clique no ícone Revisão do Start ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Digite as seguintes informações:
 
-   * Review name: Mandatory, can contain alphanumeric characters, hyphen, or underscore.
+   * Nome da revisão: Obrigatório, pode conter caracteres alfanuméricos, hífen ou sublinhado.
    * Descrição da análise: Opcional, descrição da finalidade/conteúdo para análise.
    * Prazo de revisão: Opcional, a data em que a revisão termina. Quando ultrapassado o prazo, a tarefa aparece como &quot;Vencida&quot;.
    * Revisores: Um mínimo de um é obrigatório. Use a caixa de combinação para adicionar revisores. Digitar um nome lista todos os nomes correspondentes; selecione um nome e clique em Adicionar.
@@ -44,7 +44,7 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 1. Todos os revisores recebem uma tarefa de revisão. A tarefa é exibida na seção Notificações. Um revisor pode clicar em uma notificação ou ir para a Caixa de entrada para visualização da tarefa. Um revisor pode clicar para abrir a tarefa de revisão, para visualização do formulário e para adicionar comentários ao start.
 
    ![Alerta de notificação do revisor](assets/noti.png)
-   **Figura:** *Alerta de notificação do revisor*
+   **Figura 1: Alerta de notificação** *do revisor*
 
 1. A caixa de comentários está disponível para o iniciador e os revisores do ativo. Outros podem visualização os comentários, mas não podem escrever comentários.
 
@@ -52,15 +52,15 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 
 >[!NOTE]
 >
->Only reviews that are in progress can be modified. As revisões concluídas não podem ser modificadas.
+>Somente as revisões em andamento podem ser modificadas. As revisões concluídas não podem ser modificadas.
 
-1. Navigate to the Forms tab and select a form.
+1. Navegue até a guia Forms e selecione um formulário.
 
-1. Se um ativo tiver uma revisão em andamento e você for o iniciador da revisão, um ícone Gerenciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparecerá na barra Ação. Somente o iniciador de revisão pode gerenciar (atualizar/encerrar) a revisão.
+1. Se um ativo tiver uma revisão em andamento e você for o iniciador da revisão, um ícone Gerenciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) será exibido na barra de Ação. Somente o iniciador de revisão pode gerenciar (atualizar/encerrar) a revisão.
 
-   Clique em Gerenciar ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)comentticon.
+   Clique no ícone Gerenciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
-   For user other than initiator the Manage Review icon is disabled.
+   Para outro usuário que não seja iniciador, o ícone Gerenciar revisão está desativado.
 
 1. Você obtém uma tela que exibe informações:
 
@@ -76,9 +76,9 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 
 1. Para encerrar a revisão, clique em Encerrar.
 
-### Actions that occur when a review is modified {#actions-that-occur-when-a-review-is-modified}
+### Ações que ocorrem quando uma revisão é modificada {#actions-that-occur-when-a-review-is-modified}
 
-This section describes, what happens on Review end / modification:
+Esta seção descreve o que acontece no final/modificação da revisão:
 
 1. Se a descrição de Revisão for modificada, a tarefa correspondente de revisores e o iniciador será atualizada.
 1. Se o prazo de revisão for modificado, a tarefa correspondente para os revisores será atualizada com a nova data.
