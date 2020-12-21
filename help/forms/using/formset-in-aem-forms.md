@@ -35,7 +35,7 @@ Os conjuntos de formulários também são compatíveis com o aplicativo AEM Form
 
 É possível associar vários XDPs ou Modelos de formulário criados usando o Designer em um conjunto de formulários. Os conjuntos de formulários podem ser usados para renderizar seletivamente os XDPs com base nos valores inseridos pelos usuários nos formulários iniciais e seus perfis.
 
-Use a interface [do usuário do](/help/forms/using/introduction-managing-forms.md) AEM Forms para gerenciar todos os formulários, conjuntos de formulários e ativos relacionados.
+Use [interface de usuário do AEM Forms](/help/forms/using/introduction-managing-forms.md) para gerenciar todos os formulários, conjuntos de formulários e ativos relacionados.
 
 ### Criar um conjunto de formulários {#create-a-form-set}
 
@@ -52,7 +52,7 @@ Para criar um conjunto de formulários, faça o seguinte:
    * Enviar URL: Especifica o URL no qual os dados enviados são postados para o caso de renderização independente do conjunto de formulários (caso de uso de aplicativos que não sejam da AEM Forms). Os dados são enviados para este terminal como dados multipart/formdata com o seguinte parâmetro de solicitação:
    * dataXML: Esse parâmetro contém uma representação XML dos dados enviados do conjunto de formulários. Se todos os formulários no conjunto de formulários usarem um schema comum, o XML será gerado de acordo com esse schema. Caso contrário, a tag raiz XML contém uma tag filho para cada formulário preenchido no conjunto de formulários que contém dados para os anexos do formulário.
    * formsetPath: O caminho do conjunto de formulários no CRXDE, que foi enviado.
-   * Perfil de renderização HTML: É possível configurar determinadas opções, como campos flutuantes, anexos e suporte a rascunho (para execução de conjunto de formulários independente) para personalizar a aparência, o comportamento e as interações do conjunto de formulários. Você pode personalizar ou estender o perfil existente para alterar quaisquer configurações de perfil de formulário HTML.
+   * PERFIL de renderização HTML: É possível configurar determinadas opções, como campos flutuantes, anexos e suporte a rascunho (para execução de conjunto de formulários independente) para personalizar a aparência, o comportamento e as interações do conjunto de formulários. Você pode personalizar ou estender o perfil existente para alterar quaisquer configurações de perfil de formulário HTML.
 
    ![Conjunto de formulários: adicionar propriedades](assets/createformset1.png)
 
@@ -66,14 +66,14 @@ Para criar um conjunto de formulários, faça o seguinte:
 
    * Pedido de formulário: Arraste e solte os formulários para reorganizá-los. A ordem do formulário define a ordem na qual os formulários são mostrados ao usuário final no aplicativo AEM Forms e na execução independente.
    * Identificador de formulário: Especifica uma identidade exclusiva para os formulários a serem usados nas expressões de qualificação.
-   * Raiz de dados: Para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH no qual os dados desse formulário específico são posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados ao schema e compartilharem o mesmo schema XML, é possível alterar esse valor. É recomendável que cada campo no formulário tenha um vínculo de dados adequado especificado no XDP. Se dois campos em dois formulários diferentes compartilharem o vínculo de dados comum, o campo no segundo formulário mostrará valores pré-preenchidos do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher XML para conjunto](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p)de formulários.
-   * expressão de qualificação: Especifica uma expressão JavaScript que avalia um valor booliano e indica se um formulário no conjunto de formulários está qualificado para preenchimento. Se falso, o usuário não é solicitado ou nem mesmo exibido para preencher o formulário. Normalmente, a expressão se baseia nos valores dos campos capturados antes deste formulário. O Expressão também contém chamadas para o conjunto de formulários API fs.valueOf para extrair os valores preenchidos pelo usuário em um campo de um formulário do conjunto de formulários:
+   * Raiz de dados: Para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH no qual os dados desse formulário específico são posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados ao schema e compartilharem o mesmo schema XML, é possível alterar esse valor. É recomendável que cada campo no formulário tenha um vínculo de dados adequado especificado no XDP. Se dois campos em dois formulários diferentes compartilharem o vínculo de dados comum, o campo no segundo formulário mostrará valores pré-preenchidos do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher XML para o conjunto de formulários](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Expressão de qualificação: Especifica uma expressão JavaScript que avalia um valor booliano e indica se um formulário no conjunto de formulários está qualificado para preenchimento. Se falso, o usuário não é solicitado ou nem mesmo exibido para preencher o formulário. Normalmente, a expressão se baseia nos valores dos campos capturados antes deste formulário. O Expressão também contém chamadas para o conjunto de formulários API fs.valueOf para extrair os valores preenchidos pelo usuário em um campo de um formulário do conjunto de formulários:
 
-   *fs.valueOf(&lt;Identificador de formulário>, &lt;expressão fieldSom>) > &lt;valor>*
+   *fs.valueOf(&lt;form Identifier=&quot;&quot;>,  &lt;fieldsom expression=&quot;&quot;>) >  &lt;value>*
 
    Por exemplo, se você tiver dois formulários no conjunto de formulários: despesas de negócios e despesas de viagem, você pode adicionar um trecho do JavaScript no campo Expressão Elegibilidade para ambos os formulários para verificar a entrada do usuário quanto ao tipo de despesa em um formulário. Se o usuário escolher Despesa de Negócios, o formulário Despesa de Negócios será renderizado para o usuário final. Ou se o usuário escolher despesas de viagem, um formulário diferente será renderizado para o usuário final. Para obter mais informações, consulte Expressão de qualificação.
 
-   Além disso, o Autor também pode optar por remover um formulário do conjunto de formulários usando o ícone Excluir presente no canto direito de cada linha ou adicionar outro conjunto de formulários usando o ícone &quot;**+**&quot; na barra de ferramentas. Este ícone &#39;**+**&#39; direciona o usuário de volta para a etapa anterior do assistente, que foi usada para &#39;Selecionar formulário(s)&#39;. As seleções existentes são mantidas e qualquer seleção adicional feita deve ser adicionada ao conjunto de formulários usando o ícone Adicionar ao conjunto de formulários nessa página.
+   Além disso, o Autor também pode optar por remover um formulário do conjunto de formulários usando o ícone Excluir presente no canto direito de cada linha ou adicionar outro conjunto de formulários usando o ícone &#39;**+**&#39; na barra de ferramentas. Este ícone &#39;**+**&#39; direciona o usuário de volta para a etapa anterior do assistente, que foi usada para &#39;Selecionar formulários&#39;. As seleções existentes são mantidas e qualquer seleção adicional feita deve ser adicionada ao conjunto de formulários usando o ícone Adicionar ao conjunto de formulários nessa página.
 
    ![Conjunto de formulários: Configurar formulários](assets/createformset2.png)
 
@@ -81,7 +81,7 @@ Para criar um conjunto de formulários, faça o seguinte:
    >
    >Todos os formulários usados no conjunto de formulários são gerenciados pela interface do usuário do AEM Forms.
 
-### Gerenciamento de um conjunto de formulários {#managing-a-form-set}
+### Gerenciar um conjunto de formulários {#managing-a-form-set}
 
 Depois que um conjunto de formulários é criado, é possível executar as seguintes ações nesse conjunto de formulários:
 
@@ -89,11 +89,11 @@ Depois que um conjunto de formulários é criado, é possível executar as segui
 * Editar: Ao clicar em Editar após selecionar um conjunto de formulários, a tela Configurar formulários, que é mostrada acima em Etapas para criar um conjunto de formulários, é aberta. Você pode realizar todas as funcionalidades descritas aqui.
 * Copiar + Colar: Isso permite copiar o conjunto de formulários inteiro de um local e colá-lo ao mesmo tempo ou em qualquer outro local ou pasta.
 * Download: É possível baixar o conjunto de formulários com todas as suas dependências.
-* Revisão de Start/gerenciamento: Depois que o conjunto de formulários é criado, você pode configurar sua revisão clicando em Revisão do Start. Depois que a revisão for iniciada para um conjunto de formulários, a opção Gerenciar revisão será exibida para o usuário. Na tela Gerenciar revisão, você pode atualizar/encerrar a revisão. Para as revisões adicionadas, você pode verificar a revisão e adicionar comentários, se necessário.
+* Revisão de start/gerenciamento: Depois que o conjunto de formulários é criado, você pode configurar sua revisão clicando em Revisão do Start. Depois que a revisão for iniciada para um conjunto de formulários, a opção Gerenciar revisão será exibida para o usuário. Na tela Gerenciar revisão, você pode atualizar/encerrar a revisão. Para as revisões adicionadas, você pode verificar a revisão e adicionar comentários, se necessário.
 * Excluir: Exclui o conjunto de formulários completo. Os formulários no conjunto de formulários excluído permanecem no repositório.
 * Publicar/Cancelar publicação: Isso publica/cancela a publicação do conjunto de formulários juntamente com todos os formulários que ele contém e os ativos relacionados desses formulários.
-* Pré-visualização: A Pré-visualização oferece duas opções: Pré-visualização como HTML (sem dados) e pré-visualização personalizada com dados de amostra.
-* Propriedades de Visualização/edição: É possível visualização/editar as propriedades de metadados de um conjunto de formulários selecionado.
+* Pré-visualização: A pré-visualização oferece duas opções: Pré-visualização como HTML (sem dados) e pré-visualização personalizada com dados de amostra.
+* Propriedades de visualização/edição: É possível visualização/editar as propriedades de metadados de um conjunto de formulários selecionado.
 
 ![createformset3](assets/createformset3.png)
 
@@ -102,23 +102,23 @@ Depois que um conjunto de formulários é criado, é possível executar as segui
 Para editar um conjunto de formulários, faça o seguinte:
 
 1. Selecione Forms > Forms e Documentos.
-1. Localize o conjunto de formulários que deseja editar. Passe o mouse sobre ele e selecione Editar ( ![diticon](assets/editicon.png)).
+1. Localize o conjunto de formulários que deseja editar. Passe o mouse sobre ele e selecione Editar ( ![editicon](assets/editicon.png)).
 1. Na página Configurar formulários, é possível editar o seguinte:
 
    * Pedido de formulário
    * Formulário Identificador
    * Raiz de dados
-   * expressão de qualificação
+   * Expressão de qualificação
 
    Você também pode clicar no ícone Excluir relevante para excluir o formulário do Conjunto de formulários.
 
-## Conjunto de formulários no Process Management {#form-set-in-process-management}
+## Formulário definido no Process Management {#form-set-in-process-management}
 
 Depois de criar um conjunto de formulários usando a interface de usuário do AEM Forms Management, você pode usar o conjunto de formulários em um Ponto de Start ou Atribuir atividade de Tarefa usando o Workbench.
 
-### Uso do conjunto de formulários no ponto de Tarefa ou Start {#using-form-set-in-task-or-start-point}
+### Uso do conjunto de formulários no ponto de Start ou Tarefa {#using-form-set-in-task-or-start-point}
 
-1. Ao projetar um processo, na seção Apresentação e dados de Atribuir Tarefa/Ponto de Start, selecione **usar um ativo** CRX. O navegador CRX Asset é exibido.
+1. Ao projetar um processo, na seção Apresentação e dados de Atribuir ponto de Start/Tarefa, selecione **usar um ativo CRX**. O navegador CRX Asset é exibido.
 
    ![Projete um processo: usar um ativo CRX](assets/formsetinprocessmgmt1.png)
 
@@ -160,7 +160,7 @@ var formUid = "form1";
  var fieldSOM = “xfa.form.form1.subform1.field1"; fs.valueOf(formUid, fieldSOM);
 ```
 
-## Preencher XML para conjunto de formulários {#prefill-xml-for-form-set}
+## Preencher XML para o conjunto de formulários {#prefill-xml-for-form-set}
 
 O conjunto de formulários é uma coleção de vários formulários HTML5 que têm schemas comuns ou diferentes. O conjunto de formulários suporta o pré-preenchimento de campos de formulário usando um arquivo XML. É possível associar um arquivo XML a um conjunto de formulários para que, ao abrir um formulário no conjunto de formulários, alguns dos campos no formulário sejam pré-polulados.
 
@@ -171,9 +171,9 @@ Por exemplo, você tem três formulários (formulário1, formulário2 e formulá
 form1
 
 campo\
-form1field
+formulário1 campo
 
-form2
+formulário2
 
 campo\
 form2field
@@ -248,7 +248,7 @@ Em um conjunto de formulários, o XML definiu um schema XML com a seguinte sinta
 >
 >Se houver dois formulários com raízes de dados sobrepostas, ou a hierarquia de elementos de um formulário se sobrepuser à hierarquia de raiz de dados de outro formulário, no xml de preenchimento prévio, os valores dos elementos sobrepostos serão unidos. O XML de envio tem estrutura semelhante ao XML de preenchimento prévio, mas o XML de envio tem mais tags de invólucro e algumas tags de dados de contexto de conjunto de formulários anexadas no final.
 
-### Preencher descrição dos elementos XML {#prefill-xml-elements-description}
+### Preencher a descrição dos elementos XML {#prefill-xml-elements-description}
 
 Regras de sintaxe para criar um arquivo XML de preenchimento prévio:
 
@@ -316,7 +316,7 @@ Essa tag indica o start de HTML5 Form XML. Isso é adicionado no XML de envio se
 
 `children: xfa:data`
 
-### XFA:DADOS {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 
@@ -352,7 +352,7 @@ Se houver um elemento raiz no XML de preenchimento prévio, o nome desse element
 
 O aplicativo AEM Forms permite que trabalhadores de campo sincronizem seus dispositivos móveis com um servidor AEM Forms e trabalhem em suas tarefas. O aplicativo funciona mesmo quando o dispositivo está offline, salvando dados localmente no dispositivo. Usando recursos de anotação, como fotografias, os trabalhadores de campo podem fornecer informações precisas para integrar-se aos processos comerciais.
 
-Para obter mais informações sobre o aplicativo AEM Forms, consulte Aplicativo [](/help/forms/using/aem-forms-app.md)AEM Forms.
+Para obter mais informações sobre o aplicativo AEM Forms, consulte [AEM Forms app](/help/forms/using/aem-forms-app.md).
 
 ## Limitações conhecidas - padrões sem suporte total no conjunto de formulários {#known-limitations-patterns-not-fully-supported-in-form-set}
 
@@ -366,7 +366,7 @@ Os seguintes padrões de dados não são totalmente suportados no Conjunto de fo
   </tr> 
   <tr> 
    <td>Tamanho de entrada e tamanho de padrão incompatíveis</td> 
-   <td><p>Quando pattern= num{z,zzz}</p> <p>E input=</p> <p>12 345 ou</p> <p>1,23</p> </td> 
+   <td><p>Quando pattern= num{z,zzz}</p> <p>E input=</p> <p>12 345 ou</p> <p>1 23</p> </td> 
   </tr> 
   <tr> 
    <td>Padrões de cláusula de imagem com colchetes "(" ")"</td> 
