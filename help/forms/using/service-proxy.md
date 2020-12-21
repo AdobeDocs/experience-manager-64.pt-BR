@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # proxy do serviço de formulários HTML5 {#html-forms-service-proxy}
 
-O Proxy de Serviço de formulários HTML5 é uma configuração para registrar um proxy para o serviço de envio. Para configurar o Proxy de Serviço, especifique o URL do serviço de envio por meio do parâmetro de solicitação *submitServiceProxy*.
+O Proxy de Serviço de formulários HTML5 é uma configuração para registrar um proxy para o serviço de envio. Para configurar o Proxy de Serviço, especifique o URL do serviço de envio pelo parâmetro de solicitação *submitServiceProxy*.
 
 ## Benefícios do Proxy de Serviço {#benefits-of-service-proxy-br}
 
@@ -55,7 +55,7 @@ Os scripts marcados para execução no servidor são conhecidos como scripts do 
   </tr> 
   <tr> 
    <td><p>activity</p> </td> 
-   <td><p>A Atividade contém os eventos que acionam a solicitação. Como clicar, sair ou alterar</p> </td> 
+   <td><p>A atividade contém os eventos que acionam a solicitação. Como clicar, sair ou alterar</p> </td> 
   </tr> 
   <tr> 
    <td><p>contextSom</p> </td> 
@@ -132,7 +132,7 @@ O proxy de serviço de envio atua como uma passagem se o submiturl não estiver 
 O proxy de serviço de envio seleciona uma topologia se o submiturl estiver presente no parâmetro de solicitação.
 
 * Se os servidores AEM postarem os dados, o serviço proxy atuará como uma passagem. Ele envia a solicitação para o ponto final /bin/xfaforms/submitaction e envia a resposta para o tempo de execução XFA.
-* Se o proxy postar os dados, o serviço proxy passará todos os parâmetros, exceto submitUrl para o ponto final */bin/xfaforms/submitaction* , e receberá bytes xml no fluxo de resposta. Em seguida, o serviço proxy posta os bytes xml de dados no submitUrl para processamento.
+* Se o proxy postar os dados, o serviço proxy passará todos os parâmetros, exceto submitUrl para o ponto final */bin/xfaforms/submitaction* e receberá bytes xml no fluxo de resposta. Em seguida, o serviço proxy posta os bytes xml de dados no submitUrl para processamento.
 
-* Antes de enviar dados (solicitação de POST) para um servidor, os formulários HTML5 verificam a conectividade e a disponibilidade do servidor. Para verificar a conectividade e a disponibilidade, os formulários HTML enviam uma solicitação de cabeçalho vazio ao servidor. Se o servidor estiver disponível, o formulário HTML5 enviará dados (solicitação de POST) ao servidor. Se o servidor não estiver disponível, uma mensagem de erro, *Não foi possível conectar-se ao servidor,* será exibida. A detecção avançada impede que os usuários sejam incomodados de repreencher o formulário. O servlet proxy lida com a solicitação de cabeçalho e não gera exceção.
+* Antes de enviar dados (solicitação de POST) para um servidor, os formulários HTML5 verificam a conectividade e a disponibilidade do servidor. Para verificar a conectividade e a disponibilidade, os formulários HTML enviam uma solicitação de cabeçalho vazio ao servidor. Se o servidor estiver disponível, o formulário HTML5 enviará dados (solicitação de POST) ao servidor. Se o servidor não estiver disponível, será exibida uma mensagem de erro, *Não foi possível conectar-se ao servidor,*. A detecção avançada impede que os usuários sejam incomodados de repreencher o formulário. O servlet proxy lida com a solicitação de cabeçalho e não gera exceção.
 
