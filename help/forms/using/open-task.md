@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Abrir uma tarefa {#opening-a-task}
+# Abrindo uma tarefa {#opening-a-task}
 
-Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. As Tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho AEM. Por exemplo, consulte o [Conard obtém a tarefa de avaliação no site](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)de referência do Geometrixx Gov. É possível fazer alterações em qualquer tarefa atribuída a você no momento. Todas as tarefas estão disponíveis na guia Tarefa. As Tarefas salvas como rascunhos permanecem na guia tarefa.
+Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. As tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho AEM. Por exemplo, consulte [O Quadro obtém a tarefa de avaliação no site de referência do Geometrixx Gov](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). É possível fazer alterações em qualquer tarefa atribuída a você no momento. Todas as tarefas estão disponíveis na guia Tarefa. As tarefas salvas como rascunhos permanecem na guia tarefa.
 
-Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvar um rascunho](/help/forms/using/save-as-draft.md).
+Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvando um rascunho](/help/forms/using/save-as-draft.md).
 
 **Para abrir uma tarefa**
 
@@ -34,11 +34,11 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em Resumo **da** Visualização para visualização de instruções adicionais especificadas no processo do Workbench.
+   Você pode tocar em **Resumo da Visualização** para visualização de instruções adicionais especificadas no processo do Workbench.
 
 **Para abrir um aplicativo**
 
-1. Toque no **aplicativo** na guia **Forms** .
+1. Toque em **application** na guia **Forms**.
 
    Quando você seleciona um aplicativo, a descrição do aplicativo é exibida abaixo do nome do aplicativo. Após a descrição, as ações/ações do usuário associadas ao aplicativo são exibidas.
 
@@ -47,4 +47,4 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em Resumo **da** Visualização para visualização de instruções adicionais especificadas para o aplicativo.
+   Você pode tocar em **Resumo da Visualização** para visualização das instruções adicionais especificadas para o aplicativo.
