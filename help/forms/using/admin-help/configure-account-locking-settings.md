@@ -24,7 +24,7 @@ Ao adicionar um domínio, especifique se deseja ativar o bloqueio de conta. Quan
 
 Use as configurações na página Gerenciamento de domínio para especificar o número máximo de falhas de autenticação e o tempo em que as contas são bloqueadas. Essas configurações se aplicam a todos os domínios que têm bloqueio de conta ativado.
 
-1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de usuário > Gerenciamento]** de domínio.
+1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de usuário > Gerenciamento de domínio]**.
 1. Na caixa Máximo de Falhas de Autenticação Consecutiva, digite o número de vezes consecutivas que um usuário pode tentar fazer logon sem êxito antes que sua conta seja bloqueada. O valor padrão é 20.
 1. Na caixa Desbloquear a conta depois (minutos), digite o número de minutos em que a conta do usuário está bloqueada. Após o número especificado de minutos, o usuário pode tentar fazer logon novamente. O valor padrão é 30.
 1. Clique em **[!UICONTROL Salvar]**.
