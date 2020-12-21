@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Se os usuários da instalação de formulários AEM usarem a funcionalidade de captura de dados do Content Services (obsoleto), é recomendável criar uma função com acesso somente leitura para esses usuários.
 
-***observação **: O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gestão de conteúdo instalado com o LiveCycle. Ela permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte documento do ciclo de vida do produto[Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Para saber mais sobre como configurar o Content Services (obsoleto), consulte[Administração do Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).*
+***observação **: O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gestão de conteúdo instalado com o LiveCycle. Ela permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte [documento do ciclo de vida do produto do Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Para saber mais sobre a configuração do Content Services (obsoleto), consulte [Administração do Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).*
 
 A captura de dados exige que você atribua uma função de usuário para acessar a SampleReaderExtensionsCredential. Você pode atribuir a função de Administrador de Confiança padrão, mas considere que essa função fornece aos usuários gerais e não administrativos privilégios poderosos de administrador que controlam as configurações de Confiança de PKI e gerenciam as Credenciais de PKI, o que pode comprometer a segurança da instalação dos formulários AEM em um ambiente de produção. É recomendável que o administrador do sistema de formulários AEM crie uma função que conceda somente acesso somente leitura ao Repositório de confiança e atribua essa nova função a usuários que não sejam administradores e que usem a captura de dados.
 
@@ -36,7 +36,7 @@ A captura de dados exige que você atribua uma função de usuário para acessar
 ## Atribuir a função de captura de dados {#assign-the-data-capture-role}
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de funções e clique em Localizar.
-1. Clique na função de usuário de captura de dados criada.
+1. Clique na função de usuário de captura de dados que você criou.
 1. Na guia Usuários/grupos da função, clique em Localizar usuários/grupos.
 1. Na tela Localizar usuários e grupos, clique em Localizar, selecione os usuários que exigem a função de usuário de captura de dados e clique em OK.
 1. Na tela Editar função, clique em Salvar.
