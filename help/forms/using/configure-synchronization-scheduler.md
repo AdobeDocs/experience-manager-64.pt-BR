@@ -27,13 +27,13 @@ Execute as seguintes etapas para alterar o intervalo do scheduler de sincroniza�
 
 1. Faça logon no AEM Configuration Manager. O URL do Configuration Manager é `https://[Server]:[Port]/lc/system/console/configMgr`
 
-1. Localize e abra o pacote **FormsManagerConfiguration** .
+1. Localize e abra o pacote **FormsManagerConfiguration**.
 
-1. Especifique um novo valor para a opção Frequência **do Scheduler de** sincronização.
+1. Especifique um novo valor para a opção **Frequência do Scheduler de sincronização**.
 
    A unidade da frequência é minutos. Por exemplo, para configurar o scheduler para ser executado após cada 60 minutos, especifique 60.
 
-## Sincronizar ativos {#synchronizing-assets}
+## Sincronizando ativos {#synchronizing-assets}
 
 Você pode usar a opção **Sincronizar ativos do repositório** para sincronizar manualmente os ativos. Execute as seguintes etapas para sincronizar manualmente os ativos:
 
@@ -41,13 +41,13 @@ Você pode usar a opção **Sincronizar ativos do repositório** para sincroniza
 
    ![Interface do usuário do AEM Forms](assets/aem_forms_ui.png)
 
-   **Figura:** *Interface do usuário do AEM Forms*
+   **Figura: Interface do usuário** *AEM Forms*
 
 1. Clique no ícone ![aem6forms_sync](assets/aem6forms_sync.png) na barra de ferramentas. Se você não tiver nenhum ativo no caminho configurado pela última vez, a caixa de diálogo será exibida abaixo. Clique em **Start** para iniciar a sincronização.
 
    ![Caixa de diálogo Sincronização](assets/migrate-and-syncronize.png)
 
-   **Figura:** *Caixa de diálogo Sincronização*
+   **Figura:caixa de diálogo** *Sincronização*
 
 ## Erro de sincronização de solução de problemas {#troubleshooting-synchronization-error}
 
@@ -59,5 +59,5 @@ Para resolver o conflito, renomeie o aplicativo e sincronize manualmente os ativ
 
 ![Conflitos na caixa de diálogo de sincronização de ativos](assets/sync-conflict.png)
 
-**Figura:** *Conflitos na caixa de diálogo de sincronização de ativos*
+**Figura: Caixa de diálogo** *Conflitos na sincronização de ativos*
 
