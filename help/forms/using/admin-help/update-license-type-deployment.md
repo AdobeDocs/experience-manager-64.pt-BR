@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Atualizar o tipo de licença para a implantação {#update-the-license-type-for-the-deployment}
+# Atualize o tipo de licença para a implantação {#update-the-license-type-for-the-deployment}
 
 Como parte do processo de instalação de formulários AEM, você usou o Configuration Manager para configurar e implantar os módulos de formulários AEM necessários. Por padrão, esses módulos são configurados com uma licença de avaliação de 60 dias. Use a página Alterar licença no console de administração para alterar o tipo de licença da implantação. Os módulos implantados no momento são exibidos na página Alterar licença.
 
@@ -41,11 +41,11 @@ A página Alterar Licença exibe informações sobre sua licença:
 1. Leia o contrato de licença de usuário final para formulários AEM, selecione Aceito se concordar com os termos do contrato e clique em Avançar.
 1. Na página Alterar licença, selecione um tipo de licença:
 
-   * **EVAL:** Licença de avaliação de 60 dias
-   * **DEV:** Licença de desenvolvimento pessoal
-   * **NFR:** Licença de avaliação de 2 anos
-   * **IDEV:** subscrição de 1 ano para o Programa de desenvolvedores do Adobe
-   * **Produção:** Licença perpétua
+   * **EVAL:licença de avaliação de** 60 dias
+   * **DEV:Licença de desenvolvimento** perpétua
+   * **NFR:licença de avaliação de** 2 anos
+   * **IDEV:subscrição de** 1 ano para o Programa de desenvolvedor do Adobe
+   * **Produção:Licença** Perpétua
 
 1. Selecione Sim, a alteração de licença é válida para todos os módulos implantados.
 1. Clique em Confirmar alteração de licença. Será exibida uma mensagem informando que a licença foi atualizada com êxito.
