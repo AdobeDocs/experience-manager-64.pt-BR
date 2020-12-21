@@ -29,29 +29,29 @@ Esta seção da documentação descreve:
 * Adicionar o recurso de calendário a um site AEM
 * Configurações para `Calendar`componentes
 
-## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
+## Adicionar um calendário a uma página {#adding-a-calendar-to-a-page}
 
-Para adicionar um `Calendar` componente a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um componente `Calendar` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Calendar`
 
 e arraste-o para o lugar em uma página, como uma posição relativa ao recurso que os usuários devem revisar.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](calendar-basics-for-developers.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Calendar` componente será exibido.
+Quando as [bibliotecas obrigatórias do lado do cliente](calendar-basics-for-developers.md#essentials-for-client-side) forem incluídas, o componente `Calendar` aparecerá desta forma.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Configuração do calendário {#configuring-calendar}
 
-Selecione o `Calendar`componente inserido a ser acessado e selecione o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Calendar`inserido a ser acessado e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![chlimage_1-113](assets/chlimage_1-113.png) ![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **[!UICONTROL Configurações]** , especifique se as tags devem ou não ser aplicadas às entradas do calendário.
+Na guia **[!UICONTROL Configurações]**, especifique se as tags devem ou não ser aplicadas às entradas do calendário.
 
 * **[!UICONTROL Eventos por página]**
 
@@ -71,7 +71,7 @@ Na guia **[!UICONTROL Configurações]** , especifique se as tags devem ou não 
 
 * **[!UICONTROL Permitir marcação]**
 
-   Se marcada, permita que os membros adicionem etiquetas às eventos que publicaram (consulte a guia Campo **** de etiqueta). O padrão está marcado.
+   Se marcada, permita que os membros adicionem rótulos de tag aos eventos que publicaram (consulte a guia **Campo de tag**). O padrão está marcado.
 
 * **[!UICONTROL Permitir carregamento de arquivos]**
 
@@ -83,11 +83,11 @@ Na guia **[!UICONTROL Configurações]** , especifique se as tags devem ou não 
 
 * **[!UICONTROL Tamanho máximo do arquivo]**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+   Relevante somente se `Allow File Uploads` estiver marcado. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **[!UICONTROL Tipos de arquivos permitidos]**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **[!UICONTROL Tamanho máximo do arquivo de imagem a ser anexado]**
 
@@ -119,9 +119,9 @@ Na guia **[!UICONTROL Configurações]** , especifique se as tags devem ou não 
 
 * **[!UICONTROL Ativar conteúdo em destaque]**
 
-   Se marcada, a ideia pode ser identificada como conteúdo [em](featured.md)destaque. O padrão está desmarcado.
+   Se marcada, a ideia pode ser identificada como [conteúdo em destaque](featured.md). O padrão está desmarcado.
 
-Na guia Moderação **[!UICONTROL do]** usuário, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Na guia **[!UICONTROL Moderação do usuário]**, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
@@ -155,11 +155,11 @@ Na guia Moderação **[!UICONTROL do]** usuário, especifique como os tópicos e
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **[!UICONTROL de]** tag , as tags que podem ser aplicadas, se permitidas na guia **[!UICONTROL Configurações]** , são limitadas de acordo com as namespaces escolhidas.
+Na guia **[!UICONTROL Campo de tag]**, as tags que podem ser aplicadas, se permitidas na guia **[!UICONTROL Settings]**, são limitadas de acordo com as namespaces escolhidas.
 
 * **[!UICONTROL Espaços de nomes permitidos]**
 
-   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Configurações]** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Settings]**. As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **[!UICONTROL Limite sugerido]**
 
@@ -167,17 +167,17 @@ Na guia Campo **[!UICONTROL de]** tag , as tags que podem ser aplicadas, se perm
 
 >[!NOTE]
 >
->Visite [Administrando tags](../../help/sites-administering/tags.md) para saber como adicionar uma nova namespace de tag (taxonomia).
+>Visite [Administração de tags](../../help/sites-administering/tags.md) para saber como adicionar uma nova namespace de tag (taxonomia).
 
 #### Guia Tradução {#translation-tab}
 
-Na guia **[!UICONTROL Tradução]** , se a tradução estiver ativada para o site da comunidade, a tradução pode ser definida para traduzir o thread inteiro (evento e comentários) em vez de postagens específicas.
+Na guia **[!UICONTROL Tradução]**, se a tradução estiver ativada para o site da comunidade, a tradução poderá ser definida para traduzir o thread inteiro (evento e comentários) em vez de postagens específicas.
 
 * **[!UICONTROL Converter tudo]**
 
    Se marcada, o evento e os comentários são traduzidos para o idioma preferencial do usuário. O padrão está marcado.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
 No ambiente de publicação, o recurso de calendário exibirá um campo de pesquisa com um intervalo de datas padrão e qualquer evento de calendário que se enquadre nesse intervalo.
 
@@ -187,13 +187,13 @@ Outras capacidades dependem de o visitante do site ser um moderador, administrad
 
 ### Moderadores e administradores {#moderators-and-administrators}
 
-Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar tarefas [de](moderate-ugc.md) moderação (conforme permitido pela configuração do componente) em todos os eventos de calendário e comentários postados em um evento.
+Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar [tarefas de moderação](moderate-ugc.md) (conforme permitido pela configuração do componente) em todos os eventos de calendário e comentários postados em um evento.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 ### Membros {#members}
 
-Quando o usuário conectado é membro da comunidade ou membro [](users.md#privileged-members-group) privilegiado (dependendo da configuração), ele pode optar por `New Event` criar e publicar um novo evento de calendário.
+Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](users.md#privileged-members-group) (dependendo da configuração), ele poderá selecionar `New Event` para criar e publicar um novo evento de calendário.
 
 Especificamente, podem
 
@@ -215,8 +215,8 @@ Os visitantes do site que não estão conectados só podem ler eventos do calend
 
 Mais informações podem ser encontradas na página [Calendar Essentials](calendar-basics-for-developers.md) para desenvolvedores.
 
-Para moderação de eventos de calendário e comentários, consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Para moderação de eventos de calendário e comentários, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-Para marcar eventos de calendário e comentários, consulte [Marcação de conteúdo](tag-ugc.md)gerado pelo usuário.
+Para marcar eventos de calendário e comentários, consulte [Marcação de conteúdo gerado pelo usuário](tag-ugc.md).
 
-Para obter a tradução de eventos de calendário e comentários, consulte [Traduzindo conteúdo](translate-ugc.md)gerado pelo usuário.
+Para obter a tradução de eventos de calendário e comentários, consulte [Traduzindo conteúdo gerado pelo usuário](translate-ugc.md).
