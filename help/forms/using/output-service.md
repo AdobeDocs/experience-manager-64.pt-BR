@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Serviço de saída {#output-service}
+# Serviço de Saída {#output-service}
 
 ## Visão geral {#overview}
 
@@ -38,13 +38,13 @@ O serviço de saída permite criar aplicativos que permitem:
 
 ![usingoutput_modified](assets/usingoutput_modified.png)
 
-Normalmente, você cria modelos usando o AEM Forms Designer. As `generatePDFOutput` e `generatePrintedOutput` as APIs do serviço de Saída permitem converter esses modelos diretamente em vários formatos, incluindo PDF, PostScript, ZPL e PCL.
+Normalmente, você cria modelos usando o AEM Forms Designer. As `generatePDFOutput` e `generatePrintedOutput` APIs do serviço de Saída permitem converter esses modelos diretamente em vários formatos, incluindo PDF, PostScript, ZPL e PCL.
 
-A `generatePDFOutput` operação gera PDFs, enquanto a `generatePrintedOutput` operação gera formatos PostScript, ZPL e PCL. O primeiro parâmetro de ambas as operações aceita o nome do arquivo de modelo (por exemplo `ExpenseClaim.xdp`) ou um objeto de Documento que contém o modelo. Ao especificar o nome do arquivo de modelo, especifique também a raiz do conteúdo como o caminho para a pasta que contém o modelo. Você pode especificar a raiz do conteúdo usando o parâmetro `PDFOutputOptions` ou o `PrintedOutputOptions` . Consulte Javadoc para obter detalhes sobre outras opções que você pode especificar usando esses parâmetros.
+A operação `generatePDFOutput` gera PDFs, enquanto a operação `generatePrintedOutput` gera formatos PostScript, ZPL e PCL. O primeiro parâmetro de ambas as operações aceita o nome do arquivo de modelo (por exemplo, `ExpenseClaim.xdp`) ou um objeto de Documento que contém o modelo. Ao especificar o nome do arquivo de modelo, especifique também a raiz do conteúdo como o caminho para a pasta que contém o modelo. Você pode especificar a raiz do conteúdo usando o parâmetro `PDFOutputOptions` ou `PrintedOutputOptions`. Consulte Javadoc para obter detalhes sobre outras opções que você pode especificar usando esses parâmetros.
 
 O segundo parâmetro aceita um documento XML que é unido ao modelo ao gerar o documento de saída.
 
-A `generatePDFOutput` operação também pode aceitar um formulário PDF baseado em XFA como entrada e retornar uma versão não interativa do formulário PDF como saída.
+A operação `generatePDFOutput` também pode aceitar um formulário PDF baseado em XFA como entrada e retornar uma versão não interativa do formulário PDF como saída.
 
 ## Geração de documentos de formulário não interativos {#generating-non-interactive-form-documents}
 
@@ -58,10 +58,10 @@ O primeiro parâmetro é um Mapa que contém uma string arbitrária como a chave
 
 O segundo parâmetro é um Mapa diferente cujo valor é um objeto de Documento que contém dados XML. A chave é a mesma especificada para o primeiro parâmetro.
 
-O terceiro parâmetro para `generatePDFOutputBatch` ou `generatePrintedOutputBatch` é do tipo `PDFOutputOptions` ou `PrintedOutputOptions` , respectivamente.
+O terceiro parâmetro para `generatePDFOutputBatch` ou `generatePrintedOutputBatch` é do tipo `PDFOutputOptions` ou `PrintedOutputOptions`, respectivamente.
 
 Os tipos de parâmetro são os mesmos que os tipos de parâmetros para as operações `generatePDFOutput` e `generatePrintedOutput` e têm o mesmo efeito.
 
 O quarto parâmetro é do tipo `BatchOptions`, que você usa para especificar se um arquivo separado pode ser gerado para cada registro. O valor padrão desse parâmetro é falso.
 
-Tanto `generatePrintedOutputBatch` quanto `generatePDFOutputBatch` retornam um valor do tipo `BatchResult`. O valor contém uma lista de documentos gerados. Ele também contém um documento de metadados no formato XML que contém informações relacionadas a cada documento gerado.
+Ambos `generatePrintedOutputBatch` e `generatePDFOutputBatch` retornam um valor do tipo `BatchResult`. O valor contém uma lista de documentos gerados. Ele também contém um documento de metadados no formato XML que contém informações relacionadas a cada documento gerado.
