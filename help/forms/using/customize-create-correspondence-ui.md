@@ -25,17 +25,18 @@ O Gerenciamento de correspondência permite que você reclassifique seu modelo d
 
 Você pode alterar o logotipo na interface do usuário Criar correspondência com o logotipo de sua organização.
 
-![O ícone personalizado na](assets/0_1_introscreenshot.png)**Figura Criar interface de usuário de correspondência:** *O ícone personalizado na interface Criar correspondência*
+![O ícone personalizado em Criar ](assets/0_1_introscreenshot.png)
+**interface de usuário de correspondênciaFigura:** *O ícone personalizado na interface de usuário Criar correspondência*
 
 ### Alteração do logotipo na interface do usuário Criar correspondência {#changing-the-logo-in-the-create-correspondence-ui}
 
 Para configurar uma imagem de logotipo de sua escolha, faça o seguinte:
 
-1. Crie a estrutura de [pastas apropriada no CRX](#creatingfolderstructure).
-1. [Carregue o novo arquivo](#uploadlogo) de logotipo na pasta que você criou no CRX.
+1. Crie a estrutura de pastas apropriada [no CRX](#creatingfolderstructure).
+1. [Carregue o novo ](#uploadlogo) arquivo de logotipo na pasta que você criou no CRX.
 
-1. [Configure o CSS](#createcss) no CRX para se referir ao novo logotipo.
-1. Limpe o histórico do navegador e [atualize a interface de usuário](#refreshccrui)Criar correspondência.
+1. [Configure o ](#createcss) CSSon CRX para se referir ao novo logotipo.
+1. Limpe o histórico do navegador e [atualize a interface de usuário Criar correspondência](#refreshccrui).
 
 ## Criação da estrutura de pastas necessária {#creatingfolderstructure}
 
@@ -52,11 +53,11 @@ A ramificação /apps (estrutura de pastas):
 Use as seguintes etapas para criar a estrutura de pastas necessária na ramificação /apps:
 
 1. Vá para `https://[server]:[port]/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta apps, crie uma pasta nomeada `css` com caminho/estrutura semelhante à pasta css (localizada na pasta ccrui).
+1. Na pasta apps, crie uma pasta chamada `css` com caminho/estrutura semelhante à pasta css (localizada na pasta ccrui).
 
    Etapas para criar a pasta css:
 
-   1. Clique com o botão direito do mouse na pasta **css** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Clique com o botão direito do mouse na pasta **css** no seguinte caminho e selecione **Nó de sobreposição**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Nó Sobreposição](assets/1_overlaynode_css.png)
 
@@ -66,7 +67,7 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
       **Localização da sobreposição:** /apps/
 
-      **Corresponder tipos de nós:** Verificado
+      **Tipos De Nó De Correspondência:** Marcado
 
       ![Caminho do nó da sobreposição](assets/0_1_5ioverlaynodedialog.png)
 
@@ -83,14 +84,14 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
 1. Na pasta apps, crie uma pasta chamada `imgs` com caminho/estrutura semelhante à pasta imgs (localizada na pasta ccrui).
 
-   1. Clique com o botão direito do mouse na pasta **de imagens** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Nó de sobreposição**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
       **Caminho:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
       **Localização da sobreposição:** /apps/
 
-      **Corresponder tipos de nós:** Verificado
+      **Tipos De Nó De Correspondência:** Marcado
 
    1. Clique em **OK**.
 
@@ -100,7 +101,7 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
 1. Clique em **Salvar tudo** para salvar as alterações no servidor.
 
-## Carregar o novo logotipo no CRX {#uploadlogo}
+## Carregue o novo logotipo no CRX {#uploadlogo}
 
 Carregue seu arquivo de logotipo personalizado no CRX. As regras HTML padrão controlam a renderização do logotipo. Os formatos de arquivo de imagem suportados estão de acordo com o navegador que você está usando para acessar o AEM Forms. Todos os navegadores suportam JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem suportados.
 
@@ -111,7 +112,7 @@ Carregue seu arquivo de logotipo personalizado no CRX. As regras HTML padrão co
 Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado para o CRX:
 
 1. Ir para `https://[server]:[port]/[contextpath]/crx/de`. Se necessário, faça logon como Administrador.
-1. No CRXDE, clique com o botão direito do mouse na pasta de **imagens** no seguinte caminho e selecione **Criar > Criar arquivo**:
+1. No CRXDE, clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
 
@@ -131,7 +132,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Clique com o Duplo na propriedade **jcr:data** .
+1. Clique com o duplo na propriedade **jcr:data**.
 
    A caixa de diálogo Editar jcr:data é exibida.
 
@@ -142,11 +143,11 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
    Os formatos de arquivo de imagem suportados estão de acordo com o navegador que você está usando para acessar o AEM Forms. Todos os navegadores suportam JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem suportados.
 
    ![Exemplo de arquivo de logotipo personalizado](assets/geometrixx-outdoors.png)
-   **Figura:** *Exemplo - CustomLogo.png a ser usado como logotipo personalizado*
+   **Figura:** *Exemplo - CustomLogo.png a ser usado como o logotipo personalizado*
 
 1. Clique em **Salvar tudo**.
 
-## Crie o CSS para integrar o logotipo à interface do usuário {#createcss}
+## Crie o CSS para integrar o logotipo à interface {#createcss}
 
 A imagem do logotipo personalizado requer que uma folha de estilos adicional seja carregada no contexto do conteúdo.
 
@@ -160,7 +161,7 @@ Use as seguintes etapas para configurar a folha de estilos para renderizar o log
    Etapas para criar o arquivo customcss.css:
 
    1. Clique com o botão direito do mouse na pasta **css** e selecione **Criar > Criar arquivo**.
-   1. Na caixa de diálogo Novo arquivo, especifique o nome do CSS como `customcss.css`(não é possível usar um nome de arquivo diferente) e clique em **OK**.
+   1. Na caixa de diálogo Novo arquivo, especifique o nome do CSS como `customcss.css` (não é possível usar um nome de arquivo diferente) e clique em **OK**.
    1. Adicione o seguinte código ao arquivo css recém-criado. Em content:url no código, especifique o nome da imagem que você carregou para a pasta de imagens no CRXDE.
 
       ```css
@@ -175,5 +176,6 @@ Use as seguintes etapas para configurar a folha de estilos para renderizar o log
 
 Limpe o cache do navegador e abra a instância Criar interface de usuário de correspondência em seu navegador. Você deve ver seu logotipo personalizado.
 
-![Crie uma interface de usuário de correspondência com o logotipo](assets/0_1_introscreenshot-1.png)personalizado **Figura:** *O ícone personalizado na interface Criar correspondência*
+![Criar interface de usuário de correspondência com o ](assets/0_1_introscreenshot-1.png)
+**logotipo personalizadoFigura:** *O ícone personalizado na interface Criar correspondência*
 
