@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ativação e desativação do modo de backup seguro {#enabling-and-disabling-safe-backup-mode}
+# Ativando e desativando o modo de backup seguro {#enabling-and-disabling-safe-backup-mode}
 
 Na página Configurações de backup, você pode operar formulários AEM no modo de backup seguro para que possa fazer backup confiável do banco de dados e do diretório GDS (Global Documento Armazenamento).
 
@@ -37,7 +37,7 @@ Embora AEM formulários esteja no modo de backup seguro, ele opera normalmente, 
 >
 >Se o sistema já estiver sendo executado no modo de backup seguro, uma nova reserva não será criada quando você clicar em OK.
 
-## Desativar modo de cópia de segurança {#disable-safe-backup-mode}
+## Desativar modo de backup seguro {#disable-safe-backup-mode}
 
 1. No console de administração, clique em Configurações > Principais configurações de sistemas > Configurações de backup.
 1. Na página Configurações de backup, desmarque Operar no modo de backup seguro e clique em OK.
