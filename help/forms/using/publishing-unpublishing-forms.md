@@ -60,7 +60,7 @@ Seu Forms adaptativo pode utilizar algumas configurações, configurações e pe
 
 Um ativo pode ter os seguintes estados:
 
-* **Não publicado:** Um ativo que nunca foi publicado (o estado não publicado é aplicável somente aos ativos Forms. Os ativos do Gerenciamento de correspondência não têm um estado Não publicado.)
+* **Não publicado:** um ativo que nunca foi publicado (o estado não publicado é aplicável somente aos ativos Forms. Os ativos do Gerenciamento de correspondência não têm um estado Não publicado.)
 * **Publicado**: Um ativo que foi publicado e está disponível na instância Publicar
 * **Modificado**: Um ativo modificado após a publicação
 
@@ -72,10 +72,10 @@ Um ativo pode ter os seguintes estados:
    1. Mova o ponteiro sobre um ativo e toque em **[!UICONTROL Publicar]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Execute um dos procedimentos a seguir e toque em Publicar:
 
-      * Se você estiver na visualização do cartão, toque em **[!UICONTROL Inserir seleção]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png)e toque no ativo. O ativo é selecionado.
+      * Se você estiver na visualização do cartão, toque em **[!UICONTROL Inserir seleção]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) e toque no ativo. O ativo é selecionado.
       * Se você estiver na visualização da lista, marque a caixa de seleção de um ativo. O ativo é selecionado.
       * Toque em um ativo para exibir seus detalhes.
-      * Exiba as propriedades de um ativo tocando em Propriedades da Visualização ![visualizando as propriedades](assets/viewproperties.png).
+      * Exiba as propriedades de um ativo tocando em Propriedades da Visualização ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
@@ -100,7 +100,7 @@ Um ativo pode ter os seguintes estados:
 
    Depois de publicar um ativo, você pode usar o Forms Portal para exibir todos os ativos em uma página da Web. Para obter mais informações, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
 
-## Publish all the Correspondence Management Assets {#publish-all-the-correspondence-management-assets}
+## Publicar todos os ativos do Gerenciamento de correspondência {#publish-all-the-correspondence-management-assets}
 
 A AEM Forms permite que você publique todos os ativos de Gerenciamento de correspondência em um servidor de uma só vez. Os ativos publicados incluem todos os ativos do Gerenciamento de Correspondência e dependências relacionadas.
 
@@ -108,8 +108,8 @@ Complete as etapas a seguir para publicar todos os ativos do Gerenciamento de co
 
 1. Faça logon no servidor AEM Forms.
 1. Toque em **Adobe Experience Manager** na barra de navegação global.
-1. Toque em ![tools-1](assets/tools-1.png)e, em seguida, toque em **Forms**.
-1. Tap **Publish Correspondence Management Assets**.
+1. Toque em ![tools-1](assets/tools-1.png) e toque em **Forms**.
+1. Toque em **Publicar ativos de gerenciamento de correspondência**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
@@ -127,30 +127,30 @@ Complete as etapas a seguir para publicar todos os ativos do Gerenciamento de co
 
 ## Automatize a publicação e a despublicação para Forms e Documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-A AEM Forms permite agendar a publicação e a despublicação de ativos para Forms e Documentos. Você pode especificar o agendamento no Editor de metadados. Para obter mais informações sobre como gerenciar metadados de formulário, consulte [Gerenciamento de metadados de formulário.](/help/forms/using/manage-form-metadata.md)
+A AEM Forms permite agendar a publicação e a despublicação de ativos para Forms e Documentos. Você pode especificar o agendamento no Editor de metadados. Para obter mais informações sobre como gerenciar metadados de formulário, consulte [Gerenciar metadados de formulário.](/help/forms/using/manage-form-metadata.md)
 
 Siga estas etapas para agendar a data e a hora de publicar e desfazer a publicação de ativos do Forms e dos Documentos:
 
-1. Selecione um ativo e toque em Propriedades **[!UICONTROL da]** Visualização. A página Propriedades de metadados é aberta.
-1. Na página Propriedades de metadados, toque em **[!UICONTROL Avançado]** e em **[!UICONTROL Editar]** ![ilustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. Nos campos **[!UICONTROL Publicar no horário]** e **[!UICONTROL Publicar no horário]** , selecione a data e a hora.
+1. Selecione um ativo e toque em **[!UICONTROL Propriedades da Visualização]**. A página Propriedades de metadados é aberta.
+1. Na página Propriedades de metadados, toque em **[!UICONTROL Avançado]** e, em seguida, toque em **[!UICONTROL Editar]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Nos campos **[!UICONTROL Publicar no tempo]** e **[!UICONTROL Publicar no tempo]**, selecione a data e a hora.
 
    Toque em **[!UICONTROL Done]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Cancelar a publicação de um ativo {#unpublish-an-asset}
 
-1. Selecione um ativo publicado e toque em **[!UICONTROL Cancelar publicação]** ![cancelar a publicação](assets/unpublish.png).
+1. Selecione um ativo publicado e toque em **[!UICONTROL Cancelar a publicação]** ![cancelar a publicação](assets/unpublish.png).
 1. Use uma das seguintes opções para selecionar e cancelar a publicação de um ativo.
 
-   1. Mova o ponteiro do mouse sobre um ativo e toque em **[!UICONTROL Cancelar publicação]** ![para cancelar a publicação](assets/unpublish.png).
+   1. Mova o ponteiro do mouse sobre um ativo e toque em **[!UICONTROL Cancelar a publicação]** ![cancelar a publicação](assets/unpublish.png).
    1. Execute um dos procedimentos a seguir e toque em Cancelar publicação:
 
-      * Se você estiver na visualização do cartão, toque em **[!UICONTROL Inserir seleção]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png)e toque no ativo. O ativo é selecionado.
-      * Se você estiver na visualização da lista, passe o mouse sobre um ativo e toque em ![seletassetcheckmark](assets/selectassetcheckmark.png) . O ativo é selecionado.
+      * Se você estiver na visualização do cartão, toque em **[!UICONTROL Inserir seleção]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) e toque no ativo. O ativo é selecionado.
+      * Se você estiver na visualização da lista, passe o mouse sobre um ativo e toque em ![select tassetcheckmark](assets/selectassetcheckmark.png) . O ativo é selecionado.
       * Toque em um ativo para exibir seus detalhes.
-      * Exiba as propriedades de um ativo tocando em Propriedades da Visualização ![visualizando as propriedades](assets/viewproperties.png).
+      * Exiba as propriedades de um ativo tocando em Propriedades da Visualização ![viewproperties](assets/viewproperties.png).
 
-1. Quando o processo Cancelar publicação for start, uma caixa de diálogo de confirmação será exibida. Toque em **[!UICONTROL Cancelar publicação]**.
+1. Quando o processo Cancelar publicação for start, uma caixa de diálogo de confirmação será exibida. Toque em **[!UICONTROL Cancelar a publicação]**.
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ Sempre que você publicar um ativo ou uma carta após editá-lo, uma versão do 
 >
 >Não reverta uma carta para um último estado publicado se qualquer ativo dependente usado nessa carta publicada for excluído do sistema.
 
-1. Selecione um ativo e toque em **[!UICONTROL Reverter para versão]** publicada anteriormente ![reverttoversão](assets/reverttopreviouslypublishedversion.png)publicada anteriormente.
+1. Selecione um ativo e toque em **[!UICONTROL Reverter para a versão publicada anteriormente]** ![reverttoprevious publishedversion](assets/reverttopreviouslypublishedversion.png).
 1. Antes de o ativo ser revertido, uma caixa de diálogo de confirmação é exibida. Toque em **[!UICONTROL Reverter]**.
 
    O ativo ou a carta é revertida para sua versão publicada anteriormente.
@@ -175,13 +175,13 @@ Sempre que você publicar um ativo ou uma carta após editá-lo, uma versão do 
 >
 >A exclusão de um ativo o remove da instância de publicação. A exclusão de um ativo também remove seu histórico de versão, exceto a versão base.
 
-1. Selecione um ativo e toque em **[!UICONTROL Excluir]** ![exclusão](assets/delete.png).
+1. Selecione um ativo e toque em **[!UICONTROL Excluir]** ![excluir](assets/delete.png).
 
    >[!NOTE]
    >
-   >A opção Excluir também está disponível quando você exibe os detalhes do ativo tocando em um ativo ou quando exibe as propriedades de um ativo tocando nas propriedades ![de](assets/viewproperties.png)visualização Propriedades da Visualização.
+   >A opção Excluir também está disponível quando você exibe os detalhes do ativo tocando em um ativo ou quando exibe as propriedades de um ativo tocando em Propriedades da Visualização ![viewproperties](assets/viewproperties.png).
 
-1. Antes de o ativo ser excluído, uma caixa de diálogo de confirmação é exibida. Toque em **[!UICONTROL Excluir]**.
+1. Antes de o ativo ser excluído, uma caixa de diálogo de confirmação é exibida. Toque em **[!UICONTROL Delete]**.
 
    >[!NOTE]
    >
