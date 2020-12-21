@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Usar AEM fluxo de trabalho de tradução para localizar formulários adaptáveis e documento de registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Usar AEM fluxo de trabalho de tradução para localizar formulários adaptáveis e documento do registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-Os formulários localizados ajudam você a fornecer uma audiência mais ampla entre as regiões geográficas. O fluxo de trabalho de tradução do Adobe Experience Manager ajuda a localizar formulários adaptáveis e seus documentos de registro. Você pode usar tradução **** automática ou tradutores **** humanos para localizar um formulário adaptável.
+Os formulários localizados ajudam você a fornecer uma audiência mais ampla entre as regiões geográficas. O fluxo de trabalho de tradução do Adobe Experience Manager ajuda a localizar formulários adaptáveis e seus documentos de registro. Você pode usar **tradução automática** ou **tradutores humanos** para localizar um formulário adaptável.
 
 Este artigo explica o processo para usar AEM fluxo de trabalho de tradução com formulários adaptáveis e documentos de registro.
 
@@ -27,15 +27,15 @@ Este artigo explica o processo para usar AEM fluxo de trabalho de tradução com
 
 O serviço de tradução automática imediatamente traduz seu conteúdo em forma adaptável e documento de registro. A AEM Forms está pré-configurada para usar uma versão de avaliação do Microsoft Translator para tradução automática. Execute as seguintes etapas para habilitar a tradução automática para seus formulários adaptáveis e documento de registro:
 
-1. Na interface do usuário do AEM Forms, selecione um formulário e toque na opção **Adicionar dicionário** .
-1. Na tela **Adicionar dicionário ao projeto** de tradução, selecione a opção **Criar um novo projeto** de tradução ou **Adicionar a um projeto** de tradução existente.
-1. No campo Título **do** projeto, especifique o título. Por exemplo, `Government Reference Site - German locale.`
-1. No campo Idiomas **do** Público alvo, especifique uma localidade (por exemplo, `German(de)`) e clique em **Concluído**. É possível especificar várias localidades. O formulário é convertido em todas as localidades especificadas no campo Idiomas **do** Público alvo.
+1. Na interface do usuário do AEM Forms, selecione um formulário e toque na opção **Adicionar dicionário**.
+1. Na tela **Adicionar dicionário ao projeto de tradução**, selecione a opção **Criar um novo projeto de tradução** ou **Adicionar a um projeto de tradução existente**.
+1. No campo **Título do projeto**, especifique o título. Por exemplo, `Government Reference Site - German locale.`
+1. No campo **Idiomas do Público alvo**, especifique uma localidade (por exemplo, `German(de)`) e clique em **Concluído**. É possível especificar várias localidades. O formulário é convertido em todas as localidades especificadas no campo **Idiomas do Público alvo**.
 1. Na caixa de diálogo Dicionário adicionado, clique em **Abrir projetos**. Na tela Projetos, abra o projeto recém-criado.
-1. Clique nas **elipses** na parte inferior do bloco Resumo **da** tradução. A tela Resumo da tradução é aberta.
-1. Clique no ícone **Editar** na parte superior da tela **Resumo** da tradução. Abra a guia **Tradução** e selecione Tradução automática na tela Método **de** tradução. Selecione o Provedor **de** tradução e a Configuração **da** nuvem apropriados. Click the **Done** icon at the top of the screen.
-1. No bloco Trabalho **de** tradução, clique no ícone ![aem62forms_downseta](assets/aem62forms_downarrow.png) e clique em **Start**. O status do bloco muda para Rascunho. Após a conclusão da tradução, o status é alterado para **Pronto para revisão**. Atualize a página após alguns minutos e verifique o status.
-1. Depois que o status for alterado para **Pronto para revisão** no bloco Trabalho **de** tradução, abra o formulário em uma janela do navegador. Uma versão localizada do formulário é exibida.
+1. Clique nas **elipses** na parte inferior do bloco **Resumo da tradução**. A tela Resumo da tradução é aberta.
+1. Clique no ícone **Editar** na parte superior da tela **Resumo da tradução**. Abra a guia **Tradução** e selecione Tradução automática na tela **Método de tradução**. Selecione o **Fornecedor de Tradução** e **Configuração da Nuvem** apropriados. Clique no ícone **Concluído** na parte superior da tela.
+1. No bloco **Trabalho de tradução**, clique no ícone ![aem62forms_downseta](assets/aem62forms_downarrow.png) e clique em **Start**. O status do bloco muda para Rascunho. Após a conclusão da tradução, o status é alterado para **Pronto para revisão**. Atualize a página após alguns minutos e verifique o status.
+1. Depois que o status for alterado para **Pronto para revisão** no bloco **Trabalho de tradução**, abra o formulário em uma janela do navegador. Uma versão localizada do formulário é exibida.
 
    >[!NOTE]
    >
@@ -51,10 +51,10 @@ O serviço de tradução automática imediatamente traduz seu conteúdo em forma
 
    [Documento das configurações de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Personalize as informações de marca do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e verifique se a localidade do navegador está definida para o mesmo idioma no qual você localizou o Formulário adaptativo usando o idioma da máquina. A localidade do navegador ajuda a localizar as informações de marca no documento do registro.
+1. [Personalize as informações de marca do documento do ](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) registro e verifique se a localidade do navegador está definida para o mesmo idioma no qual você localizou o Formulário adaptativo usando o idioma da máquina. A localidade do navegador ajuda a localizar as informações de marca no documento do registro.
 1. Para visualização do documento localizado do registro, toque em Gerar Pré-visualização. O documento de gravar PDF é gerado e aberto em uma nova guia no seu navegador.
 
-## Localização de um formulário adaptável e seu documento de registro usando Tradução Humana {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
+## Localizando um formulário adaptável e seu documento de registro usando a Tradução Humana {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
 Na tradução humana, o conteúdo é enviado a um provedor de tradução e traduzido por tradutores profissionais. Quando concluído, o conteúdo convertido é retornado e importado para o AEM. Quando seu provedor de tradução está integrado ao AEM, o conteúdo é enviado automaticamente entre o AEM e o provedor de tradução.
 
@@ -62,17 +62,17 @@ Para tradução, um dicionário que contém arquivos no formato XLIFF é compart
 
 Execute as seguintes etapas para localizar um formulário e seu documento de registro usando Tradutores humanos:
 
-1. [Conecte AEM com seu provedor de serviço](/help/sites-administering/tc-tic.md) de tradução e [crie configurações](/help/sites-administering/tc-tic.md)de estrutura de integração de tradução.
+1. [Conecte AEM com seu provedor de serviços de tradução e ](/help/sites-administering/tc-tic.md) crie configurações [ ](/help/sites-administering/tc-tic.md) de estrutura de integração de tradução.
 
-1. [Associe as páginas do seu idioma principais](/help/sites-administering/tc-tic.md) às configurações do serviço de tradução e da estrutura.
+1. [Associe as páginas do seu ](/help/sites-administering/tc-tic.md) domínio de idioma ao serviço de tradução e às configurações de estrutura.
 
-1. [Identifique o tipo de conteúdo](/help/sites-administering/tc-rules.md) a ser traduzido.
+1. [Identifique o tipo de ](/help/sites-administering/tc-rules.md) conteúdo a ser traduzido.
 
-1. [Prepare o conteúdo para tradução](/help/sites-administering/tc-prep.md) criando o idioma principal e as páginas raiz das cópias de idioma.
+1. [Prepare o conteúdo para ](/help/sites-administering/tc-prep.md) tradução criando o idioma principal e as páginas raiz das cópias de idioma.
 
-1. [Crie projetos](/help/sites-administering/tc-manage.md) de tradução para coletar o conteúdo para traduzir e preparar o processo de tradução.
+1. [Crie ](/help/sites-administering/tc-manage.md) projetos de tradução para coletar o conteúdo para traduzir e preparar o processo de tradução.
 
-1. Use os projetos de tradução para [gerenciar o processo](/help/sites-administering/tc-manage.md)de tradução de conteúdo.
+1. Use os projetos de tradução para [gerenciar o processo de conversão de conteúdo](/help/sites-administering/tc-manage.md).
 
 >[!NOTE]
 >
