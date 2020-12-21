@@ -27,9 +27,9 @@ Os agentes podem associar e executar workflows de pós-processamento em letras e
 
 Para associar processos de publicação a letras ou comunicações interativas, primeiro é necessário configurar os processos de publicação. Dois tipos de workflows podem ser executados em cartas enviadas:
 
-1. **Forms Workflow:** Estes são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configurar o [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Estes são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configurar [Forms Workflow](#formsworkflow).
 
-1. **Fluxo de trabalho AEM:** AEM workflows também podem ser usados como processos de publicação para cartas enviadas. Instruções para configurar [AEM fluxo de trabalho](/help/forms/using/aem-forms-workflow.md).
+1. **Fluxo de trabalho AEM:** AEM workflows também podem ser usados como processos de publicação para cartas enviadas. Instruções para configurar [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Fluxo de trabalho dos formulários {#formsworkflow}
 
@@ -57,27 +57,27 @@ Para associar processos de publicação a letras ou comunicações interativas, 
 
 1. Para usar o AEM Forms em workflows JEE para pós-processamento, configure os parâmetros e as saídas necessários. Os valores padrão dos parâmetros são indicados abaixo.
 
-   Vá para a página Configurações do Adobe Experience Manager Web Console > Configurações **[!UICONTROL do Gerenciamento de]** Correspondência e configure os seguintes parâmetros:
+   Vá para a página Configurações do Adobe Experience Manager Web Console > **[!UICONTROL Configurações de gerenciamento de correspondência]** e configure os seguintes parâmetros:
 
    1. **inPDFDoc (parâmetro de documento PDF):** Um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetros indicados são configuráveis. Eles podem ser configurados nas configurações do Gerenciamento de correspondência a partir da configuração.
-   1. **inXMLDoc (parâmetro de dados XML):** Um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário na forma de XML.
+   1. **inXMLDoc (parâmetro de dados XML):** um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário na forma de XML.
    1. **inXDPDoc (parâmetro de documento XDP):** Um documento XML como entrada. Esta entrada contém o layout subjacente (XDP).
-   1. **inAttachmentDocs (parâmetro de Documentos Attachment):** Um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
-   1. **redirectURL (Redirecionar saída de URL):** Um tipo de saída que indica o url para o qual redirecionar.
+   1. **inAttachmentDocs (parâmetro Documentos de anexo):** Um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
+   1. **redirectURL (Redirect URL Output):** Um tipo de saída que indica o url para o qual redirecionar.
 
-   Seu fluxo de trabalho de formulários deve ter parâmetro de documento PDF ou parâmetro de dados XML como entrada com o mesmo nome especificado nas Configurações **[!UICONTROL de gerenciamento de]** correspondência. Isso é necessário para que o processo seja listado na lista suspensa Processo de publicação.
+   Seu fluxo de trabalho de formulários deve ter parâmetro de documento PDF ou parâmetro de dados XML como entrada com o mesmo nome especificado em **[!UICONTROL Configurações de gerenciamento de correspondência]**. Isso é necessário para que o processo seja listado na lista suspensa Processo de publicação.
 
 ## Configurações na instância Publicar {#settings-on-the-publish-instance}
 
-1. login em `http://localhost:publishport/aem/forms`.
-1. Navegue até **[!UICONTROL Cartas]** para visualização da carta publicada que está disponível na instância de publicação.
-1. Configure as configurações do AEM DS. Consulte [Configuração AEM configurações](/help/forms/using/configuring-the-processing-server-url-.md)do DS.
+1. faça logon em `http://localhost:publishport/aem/forms`.
+1. Navegue até **[!UICONTROL Cartas]** para visualização da carta publicada disponível na instância de publicação.
+1. Configure as configurações do AEM DS. Consulte [Definição AEM configurações do DS](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
 >Ao usar workflows Forms ou AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Caso contrário, a apresentação do formulário não será efetuada.
 
-## Recuperação de instâncias de carta {#letter-instances-retrieval}
+## Recuperação de Instâncias de Carta {#letter-instances-retrieval}
 
 As instâncias de carta salvas podem ser mais manipuladas, como recuperação de instâncias de carta e exclusão de instâncias de carta, usando as seguintes APIs definidas em LetterInstanceService.
 
@@ -101,7 +101,7 @@ As instâncias de carta salvas podem ser mais manipuladas, como recuperação de
   <tr> 
    <td>Lista getAllLetterInstances(Query) lança ICCException; </td> 
    <td>getAllLetterInstances </td> 
-   <td>Essa API obtém instâncias de carta com base no parâmetro de query de entrada. Para buscar todas as instâncias de letra, o parâmetro de query pode ser passado como nulo.<br /> </td> 
+   <td>Essa API obtém instâncias de carta com base no parâmetro de query de entrada. Para obter todas as instâncias de letra, o parâmetro de query pode ser transmitido como nulo.<br /> </td> 
   </tr> 
   <tr> 
    <td>Letra booleana públicaInstanceExists(String letterInstanceName) lança ICCException; </td> 
@@ -111,11 +111,11 @@ As instâncias de carta salvas podem ser mais manipuladas, como recuperação de
  </tbody> 
 </table>
 
-## Associar um processo de publicação a uma carta {#associating-a-post-process-with-a-letter}
+## Associando um processo de publicação a uma letra {#associating-a-post-process-with-a-letter}
 
 Na interface do usuário do CCR, conclua as seguintes etapas para associar um processo de publicação a uma letra:
 
-1. Passe o mouse sobre uma letra e toque em Propriedades **da** Visualização.
+1. Passe o mouse sobre uma letra e toque em **Propriedades da Visualização**.
 1. Selecione **Editar**.
 1. Nas Propriedades básicas, usando o menu suspenso Processo de publicação, selecione o processo de publicação a ser associado à letra. Os processos de publicação relacionados ao AEM e ao Forms estão listados na lista suspensa.
 1. Toque em **Salvar**.
@@ -131,4 +131,4 @@ Uma instância de carta de rascunho pode ser recarregada na interface do usuári
 
 LetterInstaceID: A ID exclusiva da instância da carta enviada.
 
-Para obter mais informações sobre como salvar uma carta de rascunho, consulte [Salvar rascunhos e enviar instâncias](/help/forms/using/create-correspondence.md#savingdrafts)de carta.
+Para obter mais informações sobre como salvar uma carta de rascunho, consulte [Salvar rascunhos e enviar instâncias de carta](/help/forms/using/create-correspondence.md#savingdrafts).
