@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# Gerenciando listas de revogação de certificados{#managing-certificate-revocationlists}
+# Gerenciando listas de revogação de certificado{#managing-certificate-revocationlists}
 
-Usando o Gerenciamento de Armazenamento de Confiança, você pode importar, editar e excluir listas de revogação de certificados (CRLs). listas de revogação de certificados codificados por Base64 e DER são suportadas.
+Usando o Gerenciamento de Armazenamento de Confiança, você pode importar, editar e excluir listas de revogação de certificados (CRLs). Listas de revogação de certificados codificados por Base64 e DER são suportadas.
 
 ## Importar uma CRL {#import-a-crl}
 
