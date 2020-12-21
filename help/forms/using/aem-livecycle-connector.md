@@ -23,7 +23,7 @@ O conector do LiveCycle Adobe Experience Manager (AEM) permite a invocação con
 
 ## Conectando AEM servidor ao LiveCycle Adobe {#connecting-aem-server-to-adobe-livecycle}
 
-AEM Conector de LiveCycle faz parte do pacote [suplementar do](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms. Depois de instalar o pacote de complementos AEM Forms, execute as seguintes etapas para adicionar detalhes do servidor do LiveCycle AEM Web Console.
+AEM Conector de LiveCycle faz parte do [pacote suplementar AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Depois de instalar o pacote de complementos AEM Forms, execute as seguintes etapas para adicionar detalhes do servidor do LiveCycle AEM Web Console.
 
 1. AEM gerenciador de configuração do console da Web, localize o componente de configuração do SDK do cliente do LiveCycle.
 1. Clique no componente para editar o URL do servidor de configuração, o nome de usuário e a senha.
@@ -31,7 +31,7 @@ AEM Conector de LiveCycle faz parte do pacote [suplementar do](/help/forms/using
 
 Embora as propriedades sejam autoexplicativas, as importantes são as seguintes:
 
-* **URL** do servidor - Especifica o URL para o servidor do LiveCycle. Se você quiser que o LiveCycle e o AEM se comuniquem por https, o start AEM com a seguinte JVM
+* **URL**  do servidor - Especifica o URL para o servidor do LiveCycle. Se você quiser que o LiveCycle e o AEM se comuniquem por https, o start AEM com a seguinte JVM
 
    ```
    argument 
@@ -41,10 +41,10 @@ Embora as propriedades sejam autoexplicativas, as importantes são as seguintes:
    opção.
 
 * **Nome** de usuário - Especifica o nome de usuário da conta que é usada para estabelecer a comunicação entre AEM e LiveCycle. A conta é uma conta de usuário do LiveCycle que tem permissões para os Serviços do Documento do start.
-* **Senha**- Especifica a senha.
-* **Nome** do serviço - Especifica os serviços que começam a usar as credenciais do usuário fornecidas nos campos Nome de usuário e Senha. Por padrão, nenhuma credencial é transmitida ao iniciar os serviços de LiveCycle.
+* **Senha** - Especifica a senha.
+* **Nome**  do serviço - Especifica os serviços que começam a usar as credenciais do usuário fornecidas nos campos Nome de usuário e Senha. Por padrão, nenhuma credencial é transmitida ao iniciar os serviços de LiveCycle.
 
-## Iniciar serviços de documento {#starting-document-services}
+## Iniciando serviços de documento {#starting-document-services}
 
 Os aplicativos clientes podem programaticamente start serviços de LiveCycle usando uma API Java, serviços da Web, comunicação remota e REST. Para clientes Java, o aplicativo pode usar o SDK do LiveCycle. O SDK do LiveCycle fornece uma API Java para iniciar esses serviços remotamente. Por exemplo, para converter um Documento do Microsoft Word em PDF, os start clientes geram PDFService. O fluxo de invocação consiste nas seguintes etapas:
 
@@ -54,11 +54,11 @@ Os aplicativos clientes podem programaticamente start serviços de LiveCycle usa
 
 AEM Conector de LiveCycle simplifica o fluxo ao expor essas instâncias de cliente como serviços OSGi que podem ser acessados usando meios OSGi padrão. O conector do LiveCycle fornece os seguintes recursos:
 
-* Instâncias do cliente como OSGi Service: Os clientes empacotados como pacotes OSGI são listados na seção de lista [de Serviços de](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) Documento. Cada jar de cliente registra a instância do cliente como serviço OSGi no Registro de serviço OSGi.
+* Instâncias do cliente como OSGi Service: Os clientes empacotados como pacotes OSGI estão listados na seção [lista de serviços do Documento](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Cada jar de cliente registra a instância do cliente como serviço OSGi no Registro de serviço OSGi.
 * Propagação de credenciais do usuário: Os detalhes de conexão necessários para conectar-se ao servidor do LiveCycle são gerenciados em um local central.
 * Serviço ServiceClientFactory: Para start dos processos, o aplicativo cliente pode acessar a instância ServiceClientFactory.
 
-### Iniciando por referências de serviço do Registro de serviço OSGi {#starting-via-service-references-from-osgi-service-registry}
+### Iniciando por referências de serviço do OSGi Service Registry {#starting-via-service-references-from-osgi-service-registry}
 
 Para start de um serviço exposto de dentro do AEM, execute as seguintes etapas:
 
@@ -82,7 +82,7 @@ Para start de um serviço exposto de dentro do AEM, execute as seguintes etapas:
    </dependency>
    ```
 
-   Para start de um serviço, adicione a dependência Maven correspondente para o serviço. Para obter informações sobre a lista das dependências, consulte Lista [do serviço de](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)Documento. Por exemplo, para o serviço Gerar PDF, adicione a seguinte dependência:
+   Para start de um serviço, adicione a dependência Maven correspondente para o serviço. Para obter informações sobre a lista de dependências, consulte [Lista de serviço do Documento](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por exemplo, para o serviço Gerar PDF, adicione a seguinte dependência:
 
    ```xml
    <dependency>
@@ -213,9 +213,9 @@ ir.setProperty(InvocationProperties.INVOKER_TYPE,InvocationProperties.INVOKER_TY
 InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir);
 ```
 
-## lista de serviços do Documento {#document-services-list}
+## Lista de serviços do Documento {#document-services-list}
 
-### Pacote de API SDK do cliente do LiveCycle Adobe {#adobe-livecycle-client-sdk-api-bundle}
+### Pacote da API SDK do cliente do LiveCycle Adobe {#adobe-livecycle-client-sdk-api-bundle}
 
 Os seguintes serviços estão disponíveis:
 
@@ -225,7 +225,7 @@ Os seguintes serviços estão disponíveis:
 * com.adobe.idp.dsc.registry.service.ServiceRegistry
 * com.adobe.idp.dsc.registry.component.ComponentRegistry
 
-#### Dependências de maven {#maven-dependencies}
+#### Maven dependencies {#maven-dependencies}
 
 ```xml
 <dependency>
@@ -247,7 +247,7 @@ Os seguintes serviços estão disponíveis:
 * com.adobe.livecycle.dsc.clientsdk.security.RunAsManager
 * com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider
 
-#### Dependências de maven {#maven-dependencies-1}
+#### Maven dependencies {#maven-dependencies-1}
 
 ```xml
 <dependency>
@@ -257,7 +257,7 @@ Os seguintes serviços estão disponíveis:
 </dependency>
 ```
 
-### Pacote de cliente do TaskManager do LiveCycle Adobe {#adobe-livecycle-taskmanager-client-bundle}
+### Pacote de cliente do TaskManager do LiveCycle {#adobe-livecycle-taskmanager-client-bundle}
 
 Os seguintes serviços estão disponíveis:
 
@@ -268,7 +268,7 @@ Os seguintes serviços estão disponíveis:
 * com.adobe.idp.taskmanager.dsc.client.endpoint.TaskManagerEndpointClient
 * com.adobe.idp.taskmanager.dsc.client.userlist.UserlistService
 
-#### Dependências de maven {#maven-dependencies-2}
+#### Maven dependencies {#maven-dependencies-2}
 
 ```xml
 <dependency>
@@ -284,7 +284,7 @@ O seguinte serviço está disponível:
 
 * com.adobe.idp.workflow.client.WorkflowServiceClient
 
-#### Dependências de maven {#maven-dependencies-3}
+#### Maven dependencies {#maven-dependencies-3}
 
 ```xml
 <dependency>
@@ -300,7 +300,7 @@ O seguinte serviço está disponível:
 
 * com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient
 
-#### Dependências de maven {#maven-dependencies-4}
+#### Maven dependencies {#maven-dependencies-4}
 
 ```xml
 <dependency>
@@ -310,7 +310,7 @@ O seguinte serviço está disponível:
 </dependency>
 ```
 
-### Pacote do cliente do Application Manager de LiveCycles Adobe {#adobe-livecycle-application-manager-client-bundle}
+### Pacote de cliente do Application Manager de LiveCycles de Adobe {#adobe-livecycle-application-manager-client-bundle}
 
 Os seguintes serviços estão disponíveis:
 
@@ -318,7 +318,7 @@ Os seguintes serviços estão disponíveis:
 * com.adobe.livecycle.applicationmanager.client.ApplicationManager
 * com.adobe.livecycle.design.service.DesigntimeService
 
-#### Dependências de maven {#maven-dependencies-5}
+#### Maven dependencies {#maven-dependencies-5}
 
 ```xml
 <dependency>
@@ -328,13 +328,13 @@ Os seguintes serviços estão disponíveis:
 </dependency>
 ```
 
-### Pacote de cliente do Assembler do LiveCycle Adobe {#adobe-livecycle-assembler-client-bundle}
+### Pacote do Cliente do Assembler do LiveCycle {#adobe-livecycle-assembler-client-bundle}
 
 O seguinte serviço está disponível:
 
 * com.adobe.livecycle.assembler.client.AssemblerServiceClient
 
-#### Dependências de maven {#maven-dependencies-6}
+#### Maven dependencies {#maven-dependencies-6}
 
 ```xml
 <dependency>
@@ -350,7 +350,7 @@ O seguinte serviço está disponível:
 
 * com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
-#### Dependências de maven {#maven-dependencies-7}
+#### Maven dependencies {#maven-dependencies-7}
 
 ```xml
 <dependency>
@@ -366,7 +366,7 @@ O seguinte serviço está disponível:
 
 * com.adobe.livecycle.formsservice.client.FormsServiceClient
 
-#### Dependências de maven {#maven-dependencies-8}
+#### Maven dependencies {#maven-dependencies-8}
 
 ```xml
 <dependency>
@@ -382,7 +382,7 @@ O seguinte serviço está disponível:
 
 * com.adobe.livecycle.output.client.OutputClient
 
-#### Dependências de maven {#maven-dependencies-9}
+#### Maven dependencies {#maven-dependencies-9}
 
 ```xml
 <dependency>
@@ -398,7 +398,7 @@ O seguinte serviço está disponível:
 
 * com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
 
-#### Dependências de maven {#maven-dependencies-10}
+#### Maven dependencies {#maven-dependencies-10}
 
 ```xml
 <dependency>
@@ -420,7 +420,7 @@ Os seguintes serviços estão disponíveis:
 * com.adobe.livecycle.rightsmanagement.client.PolicyManager
 * com.adobe.livecycle.rightsmanagement.client.AbstractPolicyManager
 
-#### Dependências de maven {#maven-dependencies-11}
+#### Maven dependencies {#maven-dependencies-11}
 
 ```xml
 <dependency>
@@ -436,7 +436,7 @@ O seguinte serviço está disponível:
 
 * com.adobe.livecycle.signatures.client.SignatureServiceClientInterface
 
-#### Dependências de maven {#maven-dependencies-12}
+#### Maven dependencies {#maven-dependencies-12}
 
 ```xml
 <dependency>
@@ -446,7 +446,7 @@ O seguinte serviço está disponível:
 </dependency>
 ```
 
-### Pacote de cliente Truststore do LiveCycle Adobe {#adobe-livecycle-truststore-client-bundle}
+### Pacote do Cliente Truststore do LiveCycle Adobe {#adobe-livecycle-truststore-client-bundle}
 
 Os seguintes serviços estão disponíveis:
 
@@ -455,7 +455,7 @@ Os seguintes serviços estão disponíveis:
 * com.adobe.truststore.dsc.CredentialService
 * com.adobe.truststore.dsc.CertificateService
 
-#### Dependências de maven {#maven-dependencies-13}
+#### Maven dependencies {#maven-dependencies-13}
 
 ```xml
 <dependency>
@@ -472,7 +472,7 @@ Os seguintes serviços estão disponíveis:
 * com.adobe.repository.bindings.ResourceRepository
 * com.adobe.repository.bindings.ResourceSynchronizer
 
-#### Dependências de maven {#maven-dependencies-14}
+#### Maven dependencies {#maven-dependencies-14}
 
 ```xml
 <dependency>
