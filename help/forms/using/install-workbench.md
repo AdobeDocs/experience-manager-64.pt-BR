@@ -65,7 +65,7 @@ Os recursos nesta tabela podem ajudá-lo a saber mais sobre isso e começar a us
 >
 >O Flex Workspace está obsoleto para o AEM Forms. Ele está disponível para a versão AEM Forms.
 
-## Before You Install {#before-you-install}
+## Antes de instalar {#before-you-install}
 
 ### Visão geral da instalação do Workbench {#workbench-installation-overview}
 
@@ -85,8 +85,8 @@ Esta seção descreve os requisitos de hardware e software e as plataformas comp
 
 ### Requisitos mínimos de hardware e software {#minimum-hardware-software-requirements}
 
-**Workbench**Os seguintes requisitos são recomendados como mínimo:
-Espaço em disco para instalação:
+****
+WorkbenchOs seguintes requisitos são recomendados como mínimo: Espaço em disco para instalação:
 * 680 MB apenas para Workbench.
 * 2,15 GB em uma única unidade para uma instalação completa do Workbench, do Designer e do conjunto de amostras.
 * 400 MB para diretórios de instalação temporários - 200 MB no diretório user \temp e 200 MB no diretório temporário do Windows.
@@ -96,8 +96,8 @@ Espaço em disco para instalação:
 >Se todos esses locais residirem em uma única unidade, deve haver 1,5 GB de espaço disponível durante a instalação. Os arquivos copiados nos diretórios temporários são excluídos quando a instalação for concluída.
 
 * Requisitos de hardware: Processador Intel® Pentium® 4 ou equivalente AMD de 1 GHz.
-* Baixe e instale a versão mais recente do Adobe AIR (em <a href="http://www.adobe.com/br/">www.adobe.com</a>) necessária para o Community Help Client, integrada ao Workbench.
-* A atualização 22 do Java™ Runtime Ambiente (JRE) 6.0 ou posterior é atualizada para a versão 6.0 *Novidade para a versão 10*.
+* Baixe e instale a versão mais recente do Adobe AIR (de <a href="http://www.adobe.com/">www.adobe.com</a>) necessária para o Community Help Client, integrada ao Workbench.
+* A atualização 22 do Java™ Runtime Ambiente (JRE) 6.0 ou posterior é atualizada para 6.0 *Novo para 10*.
 * Resolução mínima do monitor de 1024 X 768 pixels ou superior com cor de 16 bits ou superior.
 * Conexão de rede TCP/IPv4 ou TCP/IPv6 ao servidor AEM Forms.
 * Instale o Visual C++ Redistributable Runtime Packages 2012 de 32 bits.
@@ -113,7 +113,7 @@ Espaço em disco para instalação:
 
 ### Plataformas compatíveis {#supported-platforms}
 
-Consulte a lista completa de plataformas compatíveis para Workbench em plataformas [suportadas pela](http://adobe.com/go/learn_aemforms_supportedplatforms_65)AEM Forms.
+Consulte a lista completa das plataformas compatíveis com o Workbench em [Plataformas suportadas pela AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerações sobre a instalação do Designer {#designer-installation-considerations}
 
@@ -142,34 +142,34 @@ Diferentes versões do Designer podem coexistir no mesmo sistema, por exemplo, o
 ### Para desinstalar o Designer (independente) {#uninstall-designer-standalone}
 
 1. Vá para **Painel de controle do Campaign > Programas > Programas e recursos**
-1. Na lista programa Atualmente instalado, selecione **Adobe Designer**.
-1. Clique em **Desinstalar** e em **Sim**.
+1. Na lista programas instalados atualmente, selecione **Adobe Designer**.
+1. Clique em **Desinstalar** e, em seguida, clique em **Yes**.
 
 ### Para desinstalar o Designer (independente) no Windows 10 {#uninstall-designer-standalone-windows10}
 
 1. Vá para **Painel de controle do Campaign > Programas > Programas e recursos**
-1. Na lista programa Atualmente instalado, selecione **Adobe Designer**.
-1. Clique em **Desinstalar** e em **Sim**.
+1. Na lista programas instalados atualmente, selecione **Adobe Designer**.
+1. Clique em **Desinstalar** e, em seguida, clique em **Yes**.
 
 ### Para desinstalar o Designer incluído no Acrobat Pro ou Acrobat Pro Extended {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
 
 1. Vá para **Painel de controle do Campaign > Programas > Programas e recursos**
 1. Na lista programas instalados atualmente, selecione **Adobe Acrobat Pro** ou **Adobe Acrobat Pro Extended**.
-1. Clique em **Alterar** e em **Avançar**.
-1. Selecione **Modificar** e clique em **Avançar**.
-1. Selecione **Adobe Designer**, selecione **Este recurso não estará disponível** e clique em **Avançar**
-1. Click **Update** and then click **Finish**
+1. Clique em **Alterar** e, em seguida, clique em **Próximo**.
+1. Selecione **Modificar** e clique em **Seguinte**.
+1. Selecione **Adobe Designer**, selecione **Este recurso não estará disponível** e clique em **Próximo**
+1. Clique em **Atualizar** e, em seguida, clique em **Concluir**
 
 ### Para desinstalar o Designer incluído no Acrobat Pro ou Acrobat Pro Extended no Windows 10 {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
 
 1. Vá para **Painel de controle do Campaign > Programas > Programas e recursos**
 1. Na lista programas instalados atualmente, selecione **Adobe Acrobat Pro** ou **Adobe Acrobat Pro Extended**.
-1. Clique em **Alterar** e em **Avançar**.
-1. Selecione **Modificar** e clique em **Avançar**.
-1. Selecione **Adobe Designer**, selecione **Este recurso não estará disponível** e clique em **Avançar**
-1. Click **Update** and then click **Finish**
+1. Clique em **Alterar** e, em seguida, clique em **Próximo**.
+1. Selecione **Modificar** e clique em **Seguinte**.
+1. Selecione **Adobe Designer**, selecione **Este recurso não estará disponível** e clique em **Próximo**
+1. Clique em **Atualizar** e, em seguida, clique em **Concluir**
 
-## Instalação do Workbench {#installing-workbench}
+## Instalando o Workbench {#installing-workbench}
 
 Este capítulo descreve como instalar o Workbench.
 
@@ -199,7 +199,7 @@ Antes de instalar o Workbench, é necessário certificar-se de que o ambiente in
    >
    >Você pode continuar usando o Designer instalado com o Acrobat 10, deixando essa opção desmarcada.
 
-1. Aceite o diretório padrão como listado ou clique em Escolher e navegue até o diretório onde você instalará o Workbench e clique em Avançar.
+1. Aceite o diretório padrão como listado ou   clique em Escolher e navegue até o diretório onde você instalará o Workbench e clique em Avançar.
 
    >[!NOTE]
    >
@@ -209,12 +209,12 @@ Antes de instalar o Workbench, é necessário certificar-se de que o ambiente in
 1. Revise o resumo da instalação. Selecione Start AEM Forms Workbench para iniciar o Workbench e clique em Avançar.
 1. Revise as Notas de versão e clique em Concluído.
 1. Os itens a seguir agora estão instalados no computador:
-   * **Bancada**: Para executar o Workbench a partir do menu Start, selecione Todos os Programas > AEM Forms > Workbench, se você escolher armazenar a pasta de atalhos lá. Para obter informações, consulte a documentação Uso do Workbench.
+   * **Bancada**: Para executar o Workbench a partir do menu Start, selecione Todos os Programas > AEM Forms > Workbench, se você escolher armazenar a pasta de atalhos lá. Para informação,   consulte a documentação Uso do Workbench.
    * **Designer**: Você pode acessar o Designer de dentro do Workbench. Para obter informações, consulte o tópico Introdução na Ajuda do Designer.
    * **Plug-in** do Workbench: Siga as instruções em &quot;3.3 Instalação do recurso Workbench Eclipse&quot; na página 6.
-   * **AEM Forms SDK**: Para obter mais informações sobre como usar o SDK, consulte <a href="http://www.adobe.com/go/learn_lc_programming_10">Programação com o AEM Forms</a>.
+   * **AEM Forms SDK**: Para obter mais informações sobre como usar o SDK, consulte  <a href="http://www.adobe.com/go/learn_lc_programming_10">Programação com o AEM Forms</a>.
 
-## Atualização de processos {#upgrading-processes}
+## A atualizar processos {#upgrading-processes}
 
 Os processos AEM Forms Update 1 e LiveCycle ES2 podem ser atualizados para aplicativos AEM Forms usando o Assistente de atualização. Consulte Atualização da documentação de artefatos herdados na Ajuda do Workbench para obter mais informações.
 
@@ -222,9 +222,10 @@ Os processos AEM Forms Update 1 e LiveCycle ES2 podem ser atualizados para aplic
 
 Como opção, você pode adicionar o recurso Bancada ao Eclipse. Você pode adicionar o Workbench depois de instalar o Workbench. Por exemplo, para JBoss, o seguinte local contém o arquivo:
 
-* Workbench_DVD/additional/eclipseBaixe e instale o Eclipse 3.6 de <a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>.
+* Workbench_DVD/adicional/eclipse
+Baixe e instale o Eclipse 3.6 de <a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>.
 
-### Configuração do recurso de atualização do Eclipse para o Workbench {#configuring-eclipse-update-feature-for-workbench}
+### Configurando o recurso de atualização do Eclipse para o Workbench {#configuring-eclipse-update-feature-for-workbench}
 
 O Workbench oferece suporte ao recurso de atualização para garantir que você esteja usando a versão mais atualizada do Eclipse. No entanto, você deve garantir que determinados módulos adicionais sejam incluídos em cada download:
 
@@ -238,18 +239,18 @@ O Workbench oferece suporte ao recurso de atualização para garantir que você 
    <td><p>Eclipse 3.6.x</p> </td> 
    <td><p>
 
-* Estrutura de edição gráfica GEF [org.eclipse.gef.feature.group]: Isso está contido no &#39;Graphical Modeling Framework SDK&#39; [org.eclipse.gmf.sdk.feature.group]
+* Estrutura de edição gráfica GEF [org.eclipse.gef.feature.group]: Isso está contido no &#39;SDK do Graphical Modeling Framework&#39; [org.eclipse.gmf.sdk.feature.group]
 
-* WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: Isso está contido em &#39;Eclipse XML Editors and Tools&#39; [org.eclipse.wst.xml_ui.feature.feature.group]
+* Core XML WST [org.eclipse.wst.xml_core.feature.feature.group]: Isso está contido em &#39;Editores e ferramentas XML do Eclipse&#39; [org.eclipse.wst.xml_ui.feature.group]
 
-* Plug-in &#39;org.apache.commons.lang_2.3.0&#39; [n/a]: Isso está contido em &#39;Lista de Tarefa Mylyn (obrigatório)&#39; [org.eclipse.mylyn_feature.feature.group]
+* Plug-in &#39;org.apache.commons.lang_2.3.0&#39; [n/a]: Isso está contido na &#39;Lista de Tarefa Mylyn (obrigatório)&#39; [org.eclipse.mylyn_feature.group]
 
    </p> </td> 
   </tbody>
   </table>
 
 **Para instalar e implantar o recurso Workbench no Eclipse**:
-1. Eclipse do Start.
+1. Eclipse do start.
 1. Selecione Ajuda > Instalar novo software, clique em Adicionar para abrir a caixa de diálogo Adicionar repositório.
 1. Na caixa de diálogo Adicionar repositório, clique em Local e navegue até o diretório em que a instalação do Workbench salvou o arquivo ZIP do plug-in, selecione workbench-updatesite.zip e clique em Abrir.
 1. Siga as instruções nas telas subsequentes para implantar o recurso Workbench no Eclipse.
@@ -260,7 +261,7 @@ O Workbench oferece suporte ao recurso de atualização para garantir que você 
 
    >[!NOTE]
    >
-   >O Plug-in Adobe AEM Forms Discovery para Flash Builder permite que você crie rapidamente aplicativos Adobe Flex e AIR que chamam um serviço que faz parte da AEM Forms por meio de seus pontos de extremidade remotos. Informações sobre como instalar e atualizar o plug-in estão disponíveis no site do Adobe em **Link obrigatório**.
+   >O Plug-in Adobe AEM Forms Discovery para Flash Builder permite que você crie rapidamente aplicativos Adobe Flex e AIR que chamam um serviço que faz parte da AEM Forms por meio de seus pontos de extremidade remotos. Informações sobre como instalar e atualizar o plug-in estão disponíveis no site do Adobe em **Link Required**.
 
 ### Configuração e registro no servidor {#configuring-and-logging-server}
 
@@ -280,7 +281,7 @@ Para conectar o Workbench a um servidor AEM Forms em HTTPS, é necessário garan
 
 >[!NOTE]
 >
->[Workbench_HOME] representa o diretório em que você instalou o Workbench. O local padrão é C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
+>[Workbench_] HOMErepresenta o diretório em que você instalou o Workbench. O local padrão é C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
 
 Certifique-se de se conectar ao HTTPS usando o nome especificado no certificado. Normalmente, esse nome é o nome de host totalmente qualificado.
 
@@ -289,7 +290,7 @@ Certifique-se de se conectar ao HTTPS usando o nome especificado no certificado.
 
    >[!NOTE]
    >
-   >Para exportar o certificado, abra um navegador da Web e faça logon no console de administração, instale o certificado no navegador e, em seguida, exporte o certificado do navegador para um local de armazenamento temporário (ou diretamente para o diretório [Workbench_HOME]/workbench/jre/lib/security).
+   >Para exportar o certificado, abra um navegador da Web e faça logon no console de administração, instale o certificado no navegador e exporte o certificado do navegador para um local de armazenamento temporário (ou diretamente para o diretório [Workbench_HOME]/workbench/jre/lib/security).
 
 1. Copie o certificado para o diretório [Workbench_HOME]/workbench/jre/lib/security.
 
@@ -350,7 +351,7 @@ Usando o Editor XDC, os administradores de impressoras de rede podem criar e mod
 Antes de o administrador da impressora de rede usar o Editor XDC, localize os arquivos XDC de amostra e consulte Criar perfis de dispositivo usando o Editor XDC.
 
 **Para obter os arquivos** XDC de amostra:
-1. No servidor AEM Forms, localize a pasta XDC na raiz [\sdk\samples\Output\IVS]do AEM Forms.
+1. No servidor AEM Forms, localize a pasta XDC em [raiz AEM Forms]\sdk\samples\Output\IVS.
 1. Copie o conteúdo desta pasta em um diretório que esteja acessível do sistema Workbench ou Eclipse.
 
 **Para obter a Ajuda** do Editor XDC:
