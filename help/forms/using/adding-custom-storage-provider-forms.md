@@ -1,6 +1,6 @@
 ---
-title: armazenamento personalizado para componentes de rascunhos e envios
-seo-title: armazenamento personalizado para componentes de rascunhos e envios
+title: Armazenamento personalizado para componentes de rascunhos e envios
+seo-title: Armazenamento personalizado para componentes de rascunhos e envios
 description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
 seo-description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
@@ -17,24 +17,24 @@ ht-degree: 0%
 ---
 
 
-# armazenamento personalizado para componentes de rascunhos e envios {#custom-storage-for-drafts-and-submissions-component}
+# Armazenamento personalizado para o componente de rascunhos e envios {#custom-storage-for-drafts-and-submissions-component}
 
 ## Visão geral {#overview}
 
 A AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser preenchido e enviado posteriormente de qualquer dispositivo.
 
-Por padrão, a AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no `/content/forms/fp` nó da instância Publicar. Além disso, os componentes do portal da AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
+Por padrão, a AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó `/content/forms/fp` na instância Publicar. Além disso, os componentes do portal da AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
 
 ## Pré-requisitos  {#prerequisites}
 
-* Ativar componentes do portal de [formulários](/help/forms/using/enabling-forms-portal-components.md)
-* Criar uma página do portal de [formulários](/help/forms/using/creating-form-portal-page.md)
-* Ativar formulários [adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
-* Saiba mais sobre detalhes de [implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Ativar [componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
+* Criar uma [página de portal de formulários](/help/forms/using/creating-form-portal-page.md)
+* Habilitar [formulários adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
+* Saiba mais sobre [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## Serviço de rascunho de dados {#draft-data-service}
+## Serviço de dados de rascunho {#draft-data-service}
 
-Para personalizar o armazenamento de dados do usuário para rascunhos, é necessário implementar todos os métodos da `DraftDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento de dados do usuário para rascunhos, é necessário implementar todos os métodos da interface `DraftDataService`. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
@@ -99,7 +99,7 @@ public interface DraftDataService {
 
 ## Serviço de dados de envio {#submission-data-service}
 
-Para personalizar o armazenamento de dados do usuário para envios, é necessário implementar todos os métodos da `SubmitDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento de dados do usuário para envios, é necessário implementar todos os métodos da interface `SubmitDataService`. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
