@@ -1,6 +1,6 @@
 ---
-title: Resolução de Problemas
-seo-title: Resolução de Problemas
+title: Resolução de problemas
+seo-title: Resolução de problemas
 description: Comunidade de solução de problemas incluindo problemas conhecidos
 seo-description: Comunidade de solução de problemas incluindo problemas conhecidos
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Resolução de Problemas{#troubleshooting}
+# Resolução de problemas {#troubleshooting}
 
 Esta seção contém preocupações comuns e problemas conhecidos.
 
 ## Problemas conhecidos {#known-issues}
 
-### Falha na Refetoração do Dispatcher {#dispatcher-refetch-fails}
+### Falha na Busca do Dispatcher {#dispatcher-refetch-fails}
 
 Ao usar o Dispatcher 4.1.5 com uma versão mais recente do JavaScript, uma busca pode resultar em &quot;Não é possível receber resposta do servidor remoto&quot; após aguardar o tempo limite da solicitação.
 
@@ -59,13 +59,13 @@ Consulte a API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.
 
 ## Preocupações comuns {#common-concerns}
 
-### Aviso em registros: Handlebars Obsoleto {#warning-in-logs-handlebars-deprecated}
+### Aviso em registros: Handlebars obsoletos {#warning-in-logs-handlebars-deprecated}
 
 Durante a inicialização (não o 1º, mas todos depois disso), o seguinte aviso pode ser visto nos registros:
 
-* 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars O Auxiliar &#39;i18n&#39; foi substituído por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars O Auxiliar &#39;i18n&#39; foi substituído por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Este aviso pode ser ignorado com segurança como jknack.handlebars.Handlebars, usado pelo [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Ao start para cima, ele é substituído por um auxiliar [i18n específico AEM](handlebars-helpers.md#i-n). Esse aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
+Este aviso pode ser ignorado com segurança como jknack.handlebars.Handlebars, usado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Ao start para cima, ele é substituído por um auxiliar [i18n específico do AEM](handlebars-helpers.md#i-n). Esse aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
 
 ### Aviso em registros: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
