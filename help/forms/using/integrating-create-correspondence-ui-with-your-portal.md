@@ -17,7 +17,7 @@ ht-degree: 3%
 ---
 
 
-# Integração da criação da interface de usuário de correspondência com o portal personalizado {#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integração da interface Criar correspondência com o portal personalizado {#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Visão geral {#overview}
 
@@ -48,7 +48,7 @@ Se o portal tiver o nome do modelo Carta à mão, o URL poderá ser\
 
 Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente acessar o URL em `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, enviando os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação de POST (ocultando-os do usuário final). Isso também significa que agora você pode passar os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData), que não era possível/ideal na abordagem anterior.
 
-### Parâmetros para especificar a carta {#parameters-for-specifying-letter}
+### Parâmetros para especificar a letra {#parameters-for-specifying-letter}
 
 <table> 
  <tbody>
