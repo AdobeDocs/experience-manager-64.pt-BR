@@ -33,13 +33,13 @@ Você pode fazer uma atualização direta do AEM 6.2 Forms ou AEM 6.3 Forms para
       * [Notas de versão do AEM 6.2](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
       * [Notas de versão do AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
       * [Hub de AEM](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)
-   1. Prepare a instância de origem para a atualização. Para obter etapas detalhadas, consulte [Atualização para AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
+   1. Prepare a instância de origem para a atualização. Para obter etapas detalhadas, consulte [Atualizando para AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
    1. Baixe o [AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
    1. **(Somente instalações baseadas em Unix/Linux)** Se você estiver usando UNIX ou Linux como o sistema operacional subjacente, abra a janela do terminal, navegue até a pasta que contém crx-quickstart e execute o seguinte comando:
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Atualize sua instância AEM para AEM 6.3. Para obter instruções passo a passo, consulte [Atualização para AEM 6.4](/help/sites-deploying/upgrade.md).
+   1. Atualize sua instância AEM para AEM 6.3. Para obter instruções passo a passo, consulte [Atualizando para AEM 6.4](/help/sites-deploying/upgrade.md).
 
       Antes de continuar com as próximas etapas, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo &lt;crx-repository>/error.log.
 
@@ -50,20 +50,20 @@ Você pode fazer uma atualização direta do AEM 6.2 Forms ou AEM 6.3 Forms para
 
 1. Instale o pacote suplementar do AEM Forms. As etapas estão listadas abaixo:
 
-   1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de uma Adobe ID para fazer logon na Software Distribution (Distribuição de software).
+   1. Abra [Distribuição de software](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Software Distribution (Distribuição de software).
    1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
-   1. Na seção **[!UICONTROL Filtros]** :
-      1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]** .
+   1. Na seção **[!UICONTROL Filtros]**:
+      1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solution]**.
       1. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
-   1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
-   1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
-   1. Select the package and click **[!UICONTROL Install]**.
+   1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Download]**.
+   1. Abra [Gerenciador de pacotes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
+   1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-      Você também pode baixar o pacote usando o link direto listado no artigo de versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+      Você também pode baixar o pacote usando o link direto listado no artigo [Versões da AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
 
       >[!NOTE]
       >
-      >Depois que o pacote for instalado, você será solicitado a reiniciar a instância AEM. **Não interrompa imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo &lt;crx-repository>/error.log e o log esteja estável. Observe também que alguns pacotes podem permanecer no estado instalado. É possível ignorar com segurança o estado desses pacotes.
+      >Depois que o pacote for instalado, você será solicitado a reiniciar a instância AEM. **Não interrompa imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo  &lt;crx-repository>/error.log e o log esteja estável. Observe também que alguns pacotes podem permanecer no estado instalado. É possível ignorar com segurança o estado desses pacotes.
 
    1. Pare a instância AEM e exclua os seguintes arquivos:
 
@@ -76,9 +76,9 @@ Você pode fazer uma atualização direta do AEM 6.2 Forms ou AEM 6.3 Forms para
 
    * **Executar utilitário de migração**
 
-      O utilitário de migração torna os formulários adaptáveis e os ativos de gerenciamento de correspondência das versões anteriores compatíveis com os formulários AEM 6.4. Você pode fazer o download do utilitário AEM Distribuição de software. Para obter informações detalhadas sobre como configurar e usar o utilitário de migração, consulte o utilitário [de](/help/forms/using/migration-utility.md)migração.
+      O utilitário de migração torna os formulários adaptáveis e os ativos de gerenciamento de correspondência das versões anteriores compatíveis com os formulários AEM 6.4. Você pode fazer o download do utilitário AEM Distribuição de software. Para obter informações detalhadas sobre como configurar e usar o utilitário de migração, consulte [utilitário de migração](/help/forms/using/migration-utility.md).
 
-      Se você estiver usando o [Exemplo para integrar o componente](integrate-draft-submission-database.md) de rascunhos e envios ao banco de dados e atualizar de uma versão anterior, execute os seguintes query SQL após executar a atualização:
+      Se você estiver usando [Amostra para integrar os rascunhos e o componente de submissão](integrate-draft-submission-database.md) ao banco de dados e atualizar de uma versão anterior, execute os seguintes query SQL após executar a atualização:
 
       ```
       UPDATE metadata m, additionalmetadatatable am
@@ -102,17 +102,17 @@ Você pode fazer uma atualização direta do AEM 6.2 Forms ou AEM 6.3 Forms para
 
 1. Verifique se o servidor foi atualizado com êxito, se todos os dados também foram migrados com êxito e se podem funcionar normalmente.
 
-   * **Verifique o status dos pacotes:** Verifique se todos os pacotes estão no estado ativo.
-   * **Verificar replicação e replicação reversa:** Publique, preencha e envie alguns formulários migrados. Verifique também os dados enviados.
-   * **Verifique o acesso às interfaces de usuário do administrador e do desenvolvedor:** Faça logon AEM instância de uma conta de administrador e verifique se você tem acesso aos seguintes URLs:
+   * **Verifique o status dos pacotes:** verifique se todos os pacotes estão no estado ativo.
+   * **Verificar replicação e replicação reversa:** Publicar, preencher e enviar alguns formulários migrados. Verifique também os dados enviados.
+   * **Verifique o acesso às interfaces de usuário do administrador e desenvolvedor:** faça logon AEM instância de uma conta de administrador e verifique se você tem acesso aos seguintes URLs:
 
       * `https://[server]:[port]/crx/packmgr`
       * `https://[server]:[port]/crx/de`
       * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
-   No AEM 6.4 Forms, a estrutura do repositório crx foi alterada. Depois de atualizar para os formulários AEM 6.4, use os caminhos alterados para personalização que você cria novamente. Para obter a lista completa dos caminhos alterados, consulte Reestruturação do repositório [Forms no AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
+   No AEM 6.4 Forms, a estrutura do repositório crx foi alterada. Depois de atualizar para os formulários AEM 6.4, use os caminhos alterados para personalização que você cria novamente. Para obter a lista completa dos caminhos alterados, consulte [Reestruturação do repositório Forms no AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
 ## AEM 6.0 Forms e AEM 6.1 Forms > AEM 6.4 Forms {#upgrade-aem-forms-60-61-to-64}
 
-O caminho de atualização direta do **AEM 6.0 Forms** e **AEM 6.1 Forms** para AEM 6.4 Forms não está disponível. Faça uma [atualização intermediária para AEM Forms](/help/forms/using/upgrade.md) 6.2 ou [atualize para AEM Forms](/help/forms/using/upgrade.md) 6.3 e faça a atualização de AEM 6.2 Forms ou AEM 6.3 Forms para AEM 6.4 Forms.
+O caminho de atualização direto de **AEM 6.0 Forms** e **AEM 6.1 Forms** para AEM 6.4 Forms não está disponível. Execute uma atualização intermediária [para AEM 6.2 Forms](/help/forms/using/upgrade.md) ou [para AEM 6.3 Forms](/help/forms/using/upgrade.md) e atualize de AEM 6.2 Forms ou AEM 6.3 Forms para AEM 6.4 Forms.
