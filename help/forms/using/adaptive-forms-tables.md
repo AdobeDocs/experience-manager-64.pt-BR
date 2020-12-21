@@ -48,7 +48,7 @@ Por exemplo, a primeira linha de corpo na tabela a seguir inclui caixa de texto,
 
 ![tipos de célula de linha](assets/row-cell-types.png)
 
-É possível unir duas ou mais células de corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecionando **Mesclar**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
+Você pode unir duas ou mais células de corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecione **Mesclar**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
 
 ### Adicionar, excluir, mover linhas e colunas {#add-delete-move-rows-and-columns}
 
@@ -80,9 +80,9 @@ Você pode adicionar uma descrição da tabela para explicar como as informaçõ
 
 É possível definir o estilo de uma tabela usando o modo Estilo na barra de ferramentas da página. Execute as seguintes etapas para alternar para o modo de estilo e editar o estilo da tabela
 
-1. Na barra de ferramentas da página, antes da Pré-visualização, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra de ferramentas da página, antes da Pré-visualização, toque ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
 
-1. Na barra lateral, selecione a tabela e toque no botão editar, botão ![editar, botão](assets/edit-button.png).
+1. Na barra lateral, selecione a tabela e toque no botão de edição ![botão de edição](assets/edit-button.png).
 
    É possível ver as propriedades de estilização na barra lateral.
 
@@ -100,7 +100,7 @@ As tabelas fornecem suporte imediato para adicionar ou excluir linhas dinamicame
 1. Na guia Configurações de repetição, especifique as contagens mínima e máxima para limitar o número de linhas na tabela.
 1. Clique em **Concluído**.
 
-No tempo de execução, você verá **`+`** e *`-`* botões para adicionar ou excluir uma linha.
+No tempo de execução, você verá os botões **`+`** e *`-`* para adicionar ou excluir uma linha.
 
 ![add-delete-lines-dinamicamente](assets/add-delete-rows-dynamically.png)
 
@@ -122,13 +122,13 @@ Embora tabelas e linhas suportem apenas expressões de visibilidade para control
 >Se o script XFA change/exit também for aplicado ao mesmo campo, o script XFA change/exit será executado antes do script Value Commit.
 
 * **Calcular expressões**: para calcular automaticamente o valor de um campo.
-* **expressões** de validação: para validar um campo.
-* **expressões** de acesso: para ativar/desativar um campo.
-* **expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
+* **Expressões** de validação: para validar um campo.
+* **Expressões** de acesso: para ativar/desativar um campo.
+* **Expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente Editar. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
-Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptáveis.
+Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
 ## Layouts móveis {#mobile-layouts}
 
@@ -136,13 +136,15 @@ Tabelas em formulários adaptáveis oferecem experiência inigualável em dispos
 
 Você pode configurar um layout móvel para uma tabela na guia Estilo da caixa de diálogo Editar componente para uma tabela.
 
-### Headers on left {#headers-on-left}
+### Cabeçalhos à esquerda {#headers-on-left}
 
 No layout Cabeçalhos à esquerda, o cabeçalho na tabela é transposto à esquerda com apenas uma célula aparecendo em um cabeçalho. Cada linha neste layout aparece como uma seção distinta. As imagens a seguir comparam uma tabela em um desktop com a tabela em um dispositivo móvel.
 
-![desktopview](assets/desktopview.png)**Figura:** *visualização de desktop de uma tabela com cabeçalho no layout esquerdo*
+![](assets/desktopview.png)
+**desktopviewFigura:visualização de** *desktop de uma tabela com cabeçalho no layout esquerdo*
 
-![headersontheleft](assets/headersontheleft.png)**Figura:** *visualização móvel de uma tabela com cabeçalho no layout esquerdo*
+![](assets/headersontheleft.png)
+**headersontheleftFigure:visualização** *móvel de uma tabela com cabeçalho no layout esquerdo*
 
 ### Layout de colunas flexível {#collapsible-columns-layout}
 
@@ -154,9 +156,11 @@ No layout de coluna flexível, as colunas na tabela são recolhidas para mostrar
 
 As imagens a seguir comparam a aparência de uma tabela em um dispositivo com colunas recolhidas e expandidas.
 
-![coluna](assets/collapsed-column.png)recolhida **Figura:** *Colunas recolhidas de uma tabela com apenas duas colunas aparecendo em um dispositivo móvel*
+![colapso-](assets/collapsed-column.png)
+**colunaFigura:Colunas** *recolhidas de uma tabela com apenas duas colunas aparecendo em um dispositivo móvel*
 
-![collapsible_column](assets/collapsible_column.png)**Figura:** *Coluna expandida de uma tabela em um dispositivo móvel*
+![collapsible_](assets/collapsible_column.png)
+**columnFigura:Coluna** *expandida de uma tabela em um dispositivo móvel*
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
@@ -171,7 +175,7 @@ Neste exemplo, a propriedade Nome do elemento para:
 * a linha é **Linha1**
 * a célula de corpo na data da Transação é **tableItem1**
 * a célula de corpo em Descrição é **tableItem2**
-* a célula de corpo em Tipo de transação é **tipo**
+* a célula de corpo em Tipo de transação é **type**
 * a célula de corpo em Amount in USD é **tableItem3**
 
 O arquivo XML que contém dados no seguinte formato:
@@ -232,9 +236,9 @@ O arquivo XML que contém dados no seguinte formato:
 </afData>
 ```
 
-No XML de amostra, os dados de uma linha são definidos pelas `<Row1>` tags, que é o nome do elemento da linha na tabela. Na `<Row1>` tag , os dados de cada célula são definidos dentro da tag para seu nome de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
+No XML de amostra, os dados de uma linha são definidos pelas tags `<Row1>`, que é o nome do elemento da linha na tabela. Na tag `<Row1>`, os dados de cada célula são definidos dentro da tag para o nome do elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>` e `<type>`.
 
-Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *http://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados estiver salvo em *C:/myTransactions/bankSummary.xml*, você pode visualização a tabela com dados no seguinte URL:
+Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *http://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados for salvo em *C:/myTransactions/bankSummary.xml*, você poderá visualização a tabela com dados no seguinte URL:
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
