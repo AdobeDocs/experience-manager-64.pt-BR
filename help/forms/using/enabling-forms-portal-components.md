@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Ativação de componentes do portal de formulários {#enabling-forms-portal-components}
+# Habilitar componentes do portal de formulários {#enabling-forms-portal-components}
 
 Os componentes do portal de formulários não estão disponíveis para uso. Para que os componentes apareçam na lista dos componentes disponíveis AEM sidekick, execute as seguintes etapas:
 
@@ -25,19 +25,19 @@ Os componentes do portal de formulários não estão disponíveis para uso. Para
 
 1. Para as páginas que usam um modelo estático, execute as seguintes etapas:
 
-   1. No cabeçalho da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Design** para abrir a página no modo Design.
-   1. Toque em qualquer componente (com uma borda azul) e, em seguida, toque em nível ![de](assets/field-level.png) campo para selecionar o sistema de parágrafo que contém o componente atual.
-   1. No sistema de parágrafo, toque em ![settings_icon](assets/settings_icon.png) para abrir a caixa de diálogo Editar do sistema de parágrafo.
-   1. Na lista de Componentes **** permitidos, ative as caixas de seleção para os componentes dos Serviços **[!UICONTROL do]** Documento e dos Previsões **[!UICONTROL dos Serviços do]** Documento. Toque em **[!UICONTROL OK]**.
+   1. No cabeçalho da página, toque em ![menu suspenso](assets/canvas-drop-down.png) > **Design** para abrir a página no modo Design.
+   1. Toque em qualquer componente (com uma borda azul) e, em seguida, toque em ![field-level](assets/field-level.png) para selecionar o sistema de parágrafo que contém o componente atual.
+   1. No sistema de parágrafo, toque em ![settings_icon](assets/settings_icon.png) para abrir a caixa de diálogo Editar para o sistema de parágrafo.
+   1. Na lista de **[!UICONTROL Componentes permitidos]**, ative as caixas de seleção para os componentes **[!UICONTROL Documento Services]** e **[!UICONTROL Documento Services Predicates]**. Toque em **[!UICONTROL OK]**.
 
 1. Para as páginas que usam um modelo dinâmico, execute as seguintes etapas:
 
-   1. No cabeçalho da página, toque em ![Propriedades](assets/properties.png) > **Editar modelo** para abrir o modelo da página.
-   1. Toque em Container **de** layout e toque em ![FeedManagement](assets/FeedManagement.png). Na guia Componentes **** permitidos, ative as opções Predicados **de serviços de** Documento e serviços de Documento e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. No cabeçalho da página, toque em ![propriedades](assets/properties.png) > **Editar modelo** para abrir o modelo da página.
+   1. Toque em **Container de layout** e toque em ![FeedManagement](assets/FeedManagement.png). Na guia **Componentes permitidos**, ative as opções **Predicados de serviços de Documento e serviços de Documento** e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >
->Você também pode ativar componentes específicos dessas categorias selecionando os componentes. Para obter mais informações sobre os componentes e seu uso, consulte [Criação de uma página](/help/forms/using/creating-form-portal-page.md) do portal de formulários e [Incorporação de componentes de links em uma página](/help/forms/using/embedding-link-component-page.md).
+>Você também pode ativar componentes específicos dessas categorias selecionando os componentes. Para obter mais informações sobre os componentes e seu uso, consulte [Criação de uma página do portal de formulários](/help/forms/using/creating-form-portal-page.md) e [Incorporação do componente de link em uma página](/help/forms/using/embedding-link-component-page.md).
 
 Agora, os Serviços do Documento e os Previsões de serviços do Documento estão disponíveis no navegador de componentes. Os componentes são ativados para todas as páginas que usam o mesmo modelo.
 
