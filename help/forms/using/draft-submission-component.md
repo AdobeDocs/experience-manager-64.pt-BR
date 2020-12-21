@@ -25,7 +25,7 @@ O componente Rascunhos e envios lista todos os formulários que estão no estado
 
 O componente Rascunhos e envios tem duas guias: Rascunhos e submissões.
 
-Para permitir que o envio de um formulário adaptável apareça na guia envios, defina a ação **** Enviar para Ação **[de envio do](/help/forms/using/configuring-submit-actions.md)Forms Portal.**Como alternativa, ative a opção Enviar do Forms Portal. Sempre que um usuário envia o formulário, ele é adicionado à guia Envios.
+Para permitir que o envio de um formulário adaptável apareça na guia envios, defina **Enviar ação** como **[Ação de envio do Forms Portal](/help/forms/using/configuring-submit-actions.md).** Como alternativa, ative a opção Enviar do Forms Portal. Sempre que um usuário envia o formulário, ele é adicionado à guia Envios.
 
 A funcionalidade de rascunhos é ativada automaticamente. Quando um usuário clica em **Salvar** em um formulário adaptável, o formulário é adicionado à guia rascunhos.
 
@@ -48,47 +48,47 @@ Execute as seguintes etapas para adicionar e configurar um componente Rascunhos 
   <tr>
    <td>Geral</td>
    <td>Resultado total</td>
-   <td>Especifica o número máximo de resultados a serem exibidos. Se a contagem de resultados aumentar o limite Total de resultados, um <strong>link </strong>Mais será exibido na parte inferior do componente. Clicar em <strong>Mais </strong>mostra todos os formulários. </td>
+   <td>Especifica o número máximo de resultados a serem exibidos. Se a contagem de resultados aumentar o limite Total de resultados, um link <strong>Mais </strong>aparecerá na parte inferior do componente. Clicar em <strong>Mais </strong>mostra todos os formulários. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Tipo de estilo</td>
-   <td>Especifica o estilo do componente. Você pode especificar <strong>Sem estilo</strong>, Estilo <strong></strong>padrão ou Estilo <strong></strong> personalizado para listar os formulários. Para Opção de estilo personalizado, você pode especificar o caminho do arquivo CSS personalizado no <strong>campo </strong>Caminho de estilo<strong>personalizado.</strong></td>
+   <td>Especifica o estilo do componente. Você pode especificar <strong>Sem estilo</strong>, <strong>Estilo padrão</strong> ou <strong>Estilo personalizado</strong> para listar os formulários. Para Opção de estilo personalizado, você pode especificar o caminho do arquivo CSS personalizado em <strong>Caminho de estilo personalizado </strong>field<strong>.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Caminho de estilo personalizado</td>
-   <td>Se você escolher a opção Estilo <strong></strong> personalizado no campo Tipo <strong>de</strong> estilo, use o campo Caminho <strong>de estilo</strong> personalizado para especificar o caminho do arquivo CSS personalizado. </td>
+   <td>Se você escolher a opção <strong>Estilo personalizado</strong> no campo <strong>Tipo de estilo</strong>, use o campo <strong>Caminho de estilo personalizado</strong> para especificar o caminho do arquivo CSS personalizado. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Opções de exibição</td>
-   <td><p>Especifica as guias a serem exibidas. É possível optar por exibir formulários de rascunho, formulários enviados ou ambos. </p> <p><strong>Observação</strong>:<em> Para opções <strong>de</strong>exibição, se você selecionar uma opção diferente de <strong>Ambas</strong>, a opção de campo Guia <strong></strong> padrão não será usada.</em></p> </td>
+   <td><p>Especifica as guias a serem exibidas. É possível optar por exibir formulários de rascunho, formulários enviados ou ambos. </p> <p><strong>Observação</strong>:<em> para opções <strong> de </strong>Exibição, se você selecionar uma opção diferente de  <strong>Ambas</strong>, a opção  <strong>Padrão </strong> de campo de tabela não será usada.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Guia Padrão</td>
-   <td>Especifica a guia a ser exibida quando a página do portal de formulários for carregada. Você pode escolher entre a guia <strong></strong> Rascunho do Forms e a guia <strong></strong>Enviado do Forms.</td>
+   <td>Especifica a guia a ser exibida quando a página do portal de formulários for carregada. Você pode escolher entre <strong>Guia Forms Rascunho</strong> e <strong>Guia Forms Submetida</strong>.</td>
   </tr>
   <tr>
    <td>Configuração da guia Rascunho Forms</td>
    <td>Título personalizado</td>
-   <td>Especifica o título da guia <strong>Rascunho Forms</strong> . O valor padrão é <strong>Draft Forms.</strong></td>
+   <td>Especifica o título da guia <strong>Rascunho Forms</strong>. O valor padrão é <strong>Draft Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Modelo de layout</td>
-   <td><p>Especifica o layout a ser usado para a lista do Forms Draft.</p> <p><strong>Observação:</strong> Não use a opção Padrão (obsoleto).<br /> </p> </td>
+   <td><p>Especifica o layout a ser usado para a lista do Forms Draft.</p> <p><strong>Observação: </strong> não use a opção Padrão (obsoleto).<br /> </p> </td>
   </tr>
   <tr>
    <td>Configuração de guia do Forms enviada</td>
    <td>Título personalizado </td>
-   <td>Especifica o título da <strong>guia </strong>Enviado para Forms. O valor padrão é <strong>Submetido à Forms.</strong></td>
+   <td>Especifica o título da guia <strong>Enviado do Forms </strong>. O valor padrão é <strong>Forms Submetido.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Modelo de layout</td>
-   <td>Especifica o layout a ser usado para a<strong> lista Forms </strong>enviada. </td>
+   <td>Especifica o layout a ser usado para a lista Envio Forms<strong> </strong>. </td>
   </tr>
  </tbody>
 </table>
@@ -99,9 +99,9 @@ Quando você usa a ação de envio do Forms Portal ou habilita a opção Armazen
 
 O portal da Forms permite que você armazene dados no repositório AEM local, no repositório AEM remoto ou em um banco de dados. A AEM Forms permite personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Você pode substituir métodos padrão para especificar como os dados de rascunho e envio são armazenados em um armazenamento de sua escolha. Por exemplo, você pode armazenar os dados em um armazenamento de dados implementado atualmente em sua organização.
 
-O portal da Forms fornece serviços prontos para uso (APIs) para armazenar dados no repositório crx de instâncias de publicação locais e remotas do AEM Forms. É possível substituir as implementações padrão, descritas em [Configuração de serviços de armazenamento para rascunhos e artigos de envio](/help/forms/using/configuring-draft-submission-storage.md) , por implementações personalizadas para substituir a funcionalidade padrão. Para obter informações detalhadas sobre os métodos necessários em uma implementação personalizada para armazenar conteúdo em um local seguro, consulte [Personalizar serviços](/help/forms/using/custom-draft-submission-data-services.md) de dados de rascunho e envio e armazenamento [personalizado para componentes de rascunhos e envios.](/help/forms/using/adding-custom-storage-provider-forms.md)
+O portal da Forms fornece serviços prontos para uso (APIs) para armazenar dados no repositório crx de instâncias de publicação locais e remotas do AEM Forms. É possível substituir as implementações padrão, descritas em [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md) artigo, por implementações personalizadas para substituir a funcionalidade padrão. Para obter informações detalhadas sobre os métodos necessários em uma implementação personalizada para armazenar conteúdo em um local seguro, consulte [Personalizando serviços de dados de Rascunho e Envio](/help/forms/using/custom-draft-submission-data-services.md) e [armazenamento personalizado para componentes de rascunhos e envios.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-A documentação da AEM Forms fornece um [exemplo para integrar o componente de rascunhos e envios ao banco de dados](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Você pode usar a implementação de amostra para desenvolver sua própria implementação personalizada.
+A documentação da AEM Forms fornece uma [Amostra para integrar o componente de rascunhos e envios ao banco de dados](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Você pode usar a implementação de amostra para desenvolver sua própria implementação personalizada.
 
 ## Artigos relacionados
 
