@@ -2,7 +2,7 @@
 title: NÃO PUBLICAR interface do usuário com base na Função no Gerenciamento de Correspondência
 seo-title: NÃO PUBLICAR interface do usuário com base na Função no Gerenciamento de Correspondência
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 page-status-flag: de-activated
 uuid: 60808852-f63f-4c0a-badb-b0af93c995a8
 contentOwner: gtalwar
@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# NÃO PUBLICAR interface do usuário com base na Função no Gerenciamento de Correspondência {#do-not-publish-role-based-user-interface-in-correspondence-management}
+# NÃO PUBLICAR interface de usuário com base na Função no Gerenciamento de Correspondência {#do-not-publish-role-based-user-interface-in-correspondence-management}
 
 Em AEM, o administrador pode fornecer acesso baseado em funções a grupos de usuários diferentes e executar várias ações em recursos diferentes. Por exemplo, a funcionalidade para criar ou editar dicionários de dados pode estar disponível somente para usuários em um grupo de usuários específico, enquanto outros usuários podem apenas visualização e usar os dicionários de dados.
 
@@ -25,19 +25,19 @@ A interface AEM exibe as opções, como criar ou editar um tipo de ativo, com ba
 
 Embora o CRX permita que você configure os direitos de acesso para contas de usuários e grupos, este artigo trata-se de direitos de acesso baseados em funções ou grupos de usuários.
 
-Para obter mais informações sobre grupos, permissões, listas de controles de acesso e gerenciamento de usuários e grupos, consulte Administração e segurança [](/help/sites-administering/security.md)do usuário.
+Para obter mais informações sobre grupos, permissões, listas de controles de acesso e gerenciamento de usuários e grupos, consulte [Administração e segurança do usuário](/help/sites-administering/security.md).
 
 ## Gerenciando permissões {#managing-permissions}
 
 1. Certifique-se de que o usuário para o qual você deseja gerenciar as permissões seja adicionado ao grupo de usuários relevante.
 
-   Por exemplo, o usuário John Doe é adicionado aos grupos `agents` e `cm-creditcard`. Para obter mais informações, consulte Adicionar usuários ou grupos a um grupo. Para obter mais informações, consulte [Gerenciamento de usuários e grupos](/help/communities/users.md)de usuários.
+   Por exemplo, o usuário John Doe é adicionado aos grupos `agents` e `cm-creditcard`. Para obter mais informações, consulte Adicionar usuários ou grupos a um grupo. Para obter mais informações, consulte [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
 
    ![]()
 
 1. Crie as pastas adequadas para permitir as permissões desejadas.
 
-   Por exemplo, se uma empresa tiver hipoteca doméstica, cartão de crédito e divisões de seguro, poderá criar pastas nomeadas `HomeMortgage`e `CreditCard,``Insurance` manter os ativos relevantes e dar acesso seletivo aos agentes por ativos relevantes apenas para os seus departamentos.
+   Por exemplo, se uma empresa tiver hipoteca doméstica, cartão de crédito e divisões de seguro, ela poderá criar pastas chamadas `HomeMortgage`, `CreditCard,`e `Insurance` para manter os ativos relevantes e dar acesso seletivo aos agentes por ativos relevantes somente para seus departamentos.
 
 1. Para acessar AEM segurança WCM, execute um dos procedimentos a seguir:
 
@@ -54,7 +54,7 @@ Para obter mais informações sobre grupos, permissões, listas de controles de 
 
    Para localizar o nome do grupo, digite o nome do grupo no espaço fornecido.
 
-1. Na guia Permissões, navegue até o caminho ao qual deseja adicionar permissões. As pastas Gerenciamento de correspondência estão sob a `content/apps/cm/` pasta.
+1. Na guia Permissões, navegue até o caminho ao qual deseja adicionar permissões. As pastas Gerenciamento de correspondência estão na pasta `content/apps/cm/`.
 
    Marque a caixa de seleção na coluna Membro para os membros que você deseja que tenham permissões para esse caminho. Desmarque a caixa de seleção do membro para o qual deseja remover permissões. Um triângulo vermelho aparece na célula à qual você fez alterações.
 
