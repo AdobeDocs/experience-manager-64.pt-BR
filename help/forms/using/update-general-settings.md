@@ -17,21 +17,21 @@ ht-degree: 1%
 ---
 
 
-# Atualização de configurações gerais {#updating-general-settings}
+# Atualizando configurações gerais {#updating-general-settings}
 
 As configurações gerais do aplicativo AEM Forms permitem que você especifique configurações como buscar anexos, modo offline, tela de aterrissagem, categoria padrão e frequência de salvamento automático.
 
-## Atualização das configurações gerais no aplicativo {#working-with-the-form}
+## Atualização das configurações Gerais no aplicativo {#working-with-the-form}
 
 Quando você sincroniza seu aplicativo com o servidor AEM Forms, todos os formulários e tarefas definidas são baixados para seu dispositivo móvel.
 
 A solução de aplicativo AEM Forms predefinida não baixa os anexos associados a cada formulário quando o aplicativo é sincronizado.
 
-Na guia Geral, altere os anexos de download, o modo offline, a tela de aterrissagem, as configurações de gravação automática e sincronização. Você pode alterar a tela [](/help/forms/using/home-screen.md) inicial do seu aplicativo.
+Na guia Geral, altere os anexos de download, o modo offline, a tela de aterrissagem, as configurações de gravação automática e sincronização. Você pode alterar a [tela inicial](/help/forms/using/home-screen.md) do seu aplicativo.
 
 **Navegue até a guia Geral na tela Configurações**
 
-1. Para acessar a tela Configuração, toque no botão Menu no canto superior esquerdo da tela Início e, em seguida, em **Configurações**.
+1. Para ir para a tela Configuração, toque no botão Menu no canto superior esquerdo da tela Início e toque em **Configurações**.
 1. Na tela Configurações, toque na guia Geral.
 
    ![Configurações gerais no aplicativo AEM Forms](assets/gen-settings-2.png)
@@ -46,9 +46,9 @@ Você pode fazer as seguintes alterações nas configurações do aplicativo.
 
 * **Buscar anexos** de tarefa: Para especificar se os anexos associados devem ou não ser baixados quando cada tarefa for baixada no aplicativo.
 
-* **Modo** offline: Para ativar ou desativar o serviço offline para aplicativos AEM Forms. Consulte [Trabalhar no modo](/help/forms/using/work-offline-mode.md) offline para obter detalhes.
+* **Modo** offline: Para ativar ou desativar o serviço offline para aplicativos AEM Forms. Consulte [Trabalhando no modo offline](/help/forms/using/work-offline-mode.md) para obter detalhes.
 
-* **Tela** de aterrissagem: Para definir o local do start (tela[](/help/forms/using/home-screen.md)inicial) do aplicativo.
+* **Tela** de aterrissagem: Para definir o local do start (tela[ ](/help/forms/using/home-screen.md)inicial) do aplicativo.
 
    Opções disponíveis:
 
@@ -56,11 +56,11 @@ Você pode fazer as seguintes alterações nas configurações do aplicativo.
    * Tarefas
    * Favoritos
 
-* **categoria** padrão: Permite que você selecione a categoria de formulários a serem exibidos na tela inicial. Quando você seleciona Todos, pode ver todos os formulários na tela inicial. As Categorias são preenchidas com base nos formulários carregados no aplicativo. O Forms está disponível no aplicativo com base nas configurações de formulário especificadas no servidor AEM Forms.
+* **Categoria** padrão: Permite que você selecione a categoria de formulários a serem exibidos na tela inicial. Quando você seleciona Todos, pode ver todos os formulários na tela inicial. As categorias são preenchidas com base nos formulários carregados no aplicativo. O Forms está disponível no aplicativo com base nas configurações de formulário especificadas no servidor AEM Forms.
 
-* **Frequência** de salvamento automático: Para definir a frequência na qual seu aplicativo [móvel salva os dados](/help/forms/using/autosave-data-app.md) do formulário localmente.
+* **Frequência** de salvamento automático: Para definir a frequência na qual seu aplicativo  [móvel salva os formulários ](/help/forms/using/autosave-data-app.md) localmente.
 
-* **Frequência** de sincronização: Para definir a frequência na qual seu aplicativo [móvel é sincronizado](/help/forms/using/sync-app.md) com o servidor AEM Forms no modo online.
+* **Frequência** de sincronização: Para definir a frequência na qual seu aplicativo  [móvel é ](/help/forms/using/sync-app.md) sincronizado com o servidor AEM Forms no modo online.
 
 **Limpar dados** locais: Limpe o banco de dados, incluindo configurações e dados locais para todos os usuários e armazenamentos de arquivos do dispositivo.
 
