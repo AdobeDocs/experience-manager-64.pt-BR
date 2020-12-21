@@ -18,17 +18,17 @@ ht-degree: 2%
 ---
 
 
-# Configuração do Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
+# Configurando o Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
-Para a AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos sites [da](overview.md#community-sites)comunidade. Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
+Para AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos [sites da comunidade](overview.md#community-sites). Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
 
 Para saber o que é necessário para sua implantação específica e o design do site
 
-* Contact [Customer Care](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
+* Entre em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
-Consulte também a documentação [principal do](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Dispatcher.
+Consulte também a documentação principal [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Cache do Dispatcher {#dispatcher-caching}
 
@@ -52,9 +52,9 @@ Quando configurado para suportar o cache do dispatcher, uma expiração de &quot
 
 ### Configuração {#configuration}
 
-A configuração **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache exibidas em um caminho especificado.
+A configuração do OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache que aparecem em um caminho especificado.
 
-* Do Console [da Web](../../help/sites-deploying/configuring-osgi.md)
+* Do [Web Console](../../help/sites-deploying/configuring-osgi.md)
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -69,15 +69,15 @@ A configuração **ACS AEM Commons - Dispatcher Cache Control Header - Max Age**
 
 * **Idade máxima do controle de cache**
 
-   *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho Cache Controll. O valor deve ser maior que zero (0).
+   *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho de Controle de cache. O valor deve ser maior que zero (0).
 
-## Cabeçalhos do Cliente do Dispatcher {#dispatcher-client-headers}
+## Cabeçalhos do Cliente Dispatcher {#dispatcher-client-headers}
 
-Na seção /clientheaders de `dispatcher.any`, se estiver listando um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o recurso [](enablement.md) Ativação funcione corretamente.
+Na seção /clientheaders de `dispatcher.any`, se estiver listando um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o [recurso de Ativação](enablement.md) funcione corretamente.
 
 ## Filtros do Dispatcher {#dispatcher-filters}
 
-A seção /filter do `dispatcher.any` arquivo está documentada em [Configuração do acesso ao conteúdo - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+A seção /filter do arquivo `dispatcher.any` está documentada em [Configuração do acesso ao conteúdo - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
 Esta seção descreve as entradas que são provavelmente necessárias para o correto funcionamento dos recursos das Comunidades.
 
@@ -92,7 +92,7 @@ Consulte também:
 >[!NOTE]
 >
 >**Exemplos de nome da propriedade**
->Todos os nomes de propriedade mostrados, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um dispatcher existente.any arquivo de configuração.
+>Todos os nomes de propriedade mostrados, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um dispatcher.qualquer arquivo de configuração.
 
 As seguintes entradas devem ser adicionadas ao final da seção /filter, especialmente depois de todas as entradas de negação.
 
@@ -189,7 +189,7 @@ A seção de regras de `dispatcher.any` define quais respostas devem ser armazen
 /0208 { /type "deny" /glob "/content/usergenerated/*" }
 ```
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 Uma fonte importante de problemas é inserir regras de filtro sem prestar atenção ao efeito em regras anteriores, especialmente ao adicionar uma regra para negar acesso.
 
@@ -197,7 +197,7 @@ O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo qu
 
 ## Amostra do dispatcher.any {#sample-dispatcher-any}
 
-A seguir, há um exemplo `dispatcher.any` de arquivo que inclui Comunidades /filtros e /regras.
+A seguir, há um arquivo de amostra `dispatcher.any` que inclui Comunidades /filtros e /regras.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)
