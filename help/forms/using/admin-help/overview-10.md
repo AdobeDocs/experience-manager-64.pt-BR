@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Visão geral do espaço de trabalho {#overview-of-workspace}
+# Visão geral da Workspace {#overview-of-workspace}
 
 O Workspace permite que os usuários façam start, participem e rastreiem processos comerciais.
 
