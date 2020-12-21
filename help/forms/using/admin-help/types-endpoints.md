@@ -28,21 +28,21 @@ Antes que um serviço possa ser usado, você deve configurar e ativar um termina
 
 Os seguintes tipos de endpoints podem ser adicionados aos serviços. Nem todos os serviços suportam todos os pontos de extremidade:
 
-**Email:** Permite que um usuário chame um serviço enviando uma mensagem de email com um ou mais anexos de arquivo para uma conta de email especificada. Antes de configurar um terminal de email, configure as contas de email necessárias. (Consulte Configurar pontos de extremidade de email.)
+**Email:** permite que um usuário chame um serviço enviando uma mensagem de email com um ou mais anexos de arquivo para uma conta de email especificada. Antes de configurar um terminal de email, configure as contas de email necessárias. (Consulte Configurar pontos de extremidade de email.)
 
-**Pasta assistida:** Permite que um usuário chame um serviço colocando um arquivo em uma pasta, que é digitalizada em um intervalo definido. (Consulte Configuração de pontos de extremidade de pasta monitorados.)
+**Pasta assistida:** permite que um usuário chame um serviço colocando um arquivo em uma pasta, que é digitalizada em um intervalo definido. (Consulte Configuração de pontos de extremidade de pasta monitorados.)
 
-**Gerenciador de tarefas:** Permite que um usuário do Workspace chame o serviço.
+**Gerenciador de tarefas:** permite que um usuário do Workspace chame o serviço.
 
-**Remoto:** Permite que um aplicativo criado com a Flex chame o serviço usando (obsoleto para formulários AEM) AEM Remota de formulários. Um terminal remoto é criado automaticamente para cada serviço ativado. É criado um destino Flex com o mesmo nome que o ponto de extremidade, e os clientes Flex podem criar objetos remotos que apontam para esse destino para chamar operações no serviço relevante.
+**Remoção:** permite que um aplicativo criado com a Flex chame o serviço usando (obsoleto para formulários AEM) AEM Remoção de formulários. Um terminal remoto é criado automaticamente para cada serviço ativado. É criado um destino Flex com o mesmo nome que o ponto de extremidade, e os clientes Flex podem criar objetos remotos que apontam para esse destino para chamar operações no serviço relevante.
 
-**SOAP:** Permite que um aplicativo cliente desenvolvido usando as APIs de programação de formulários AEM chame o serviço usando o modo SOAP. Um terminal SOAP é criado automaticamente para cada serviço ativado.
+**SOAP:** permite que um aplicativo cliente desenvolvido usando as APIs de programação de formulários AEM chame o serviço usando o modo SOAP. Um terminal SOAP é criado automaticamente para cada serviço ativado.
 
-**observação**: *A segurança pode ser removida dos documentos de segurança do documento quando o terminal SOAP é usado durante a visualização dos documentos no Adobe Acrobat ou Adobe Reader. Para obter detalhes sobre como desativar os pontos de extremidade SOAP em seus documentos LCRM, consulte[Desativar pontos de extremidade SOAP para documentos de segurança do documento](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**observação**:  *A segurança pode ser removida dos documentos de segurança do documento quando o terminal SOAP é usado durante a visualização dos documentos no Adobe Acrobat ou Adobe Reader. Para obter detalhes sobre como desativar os pontos de extremidade SOAP em seus documentos LCRM, consulte [Desativar pontos de extremidade SOAP para documentos de segurança do documento](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
-**EJB:** Permite que um aplicativo cliente desenvolvido usando as APIs de programação de formulários AEM chame o serviço usando o modo Enterprise JavaBeans (EJB). Um terminal EJB é criado automaticamente para cada serviço ativado.
+**EJB:** permite que um aplicativo cliente desenvolvido usando as APIs de programação de formulários AEM chame o serviço usando o modo Enterprise JavaBeans (EJB). Um terminal EJB é criado automaticamente para cada serviço ativado.
 
-**WSDL:** Permite que um aplicativo cliente desenvolvido usando as APIs de programação de formulários AEM chame o serviço usando a WSDL (Web Service Definition Language). A página Configurações principais contém uma opção para permitir a geração de WSDL para todos os serviços que fazem parte de formulários AEM. (Consulte Configurar configurações gerais AEM formulários.)
+**WSDL:** permite que um aplicativo cliente desenvolvido usando as APIs de programação de formulários AEM chame o serviço usando a WSDL (Web Service Definition Language). A página Configurações principais contém uma opção para permitir a geração de WSDL para todos os serviços que fazem parte de formulários AEM. (Consulte Configurar configurações gerais AEM formulários.)
 
 **REST:** Os processos criados no Workbench podem ser configurados para que você possa invocá-los por meio de solicitações de transferência de estado de representação (REST). As solicitações REST são enviadas de páginas HTML. Ou seja, você pode invocar um processo de formulários AEM diretamente de uma página da Web usando uma solicitação REST.
 
