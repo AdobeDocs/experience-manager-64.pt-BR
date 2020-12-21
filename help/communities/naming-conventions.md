@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Naming Conventions {#naming-conventions}
+# Nomeando Convenções {#naming-conventions}
 
 ## Hífens no nome do pacote Java {#hyphens-in-java-package-name}
 
@@ -30,4 +30,4 @@ A plataforma CRX subjacente deve ser capaz de distinguir entre um sublinhado rea
 
 Por exemplo, se o caminho do repositório for **/apps/my-example/component/info/Info.java**, o nome do pacote deverá ser `java package apps.my_002dexample.component.info;`
 
-Observe que um sublinhado deve ser evitado da mesma forma, tal que `_` se torna `_005f`.
+Observe que um sublinhado deve ser evitado da mesma forma, de modo que `_` se torne `_005f`.
