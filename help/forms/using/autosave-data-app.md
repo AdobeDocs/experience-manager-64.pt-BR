@@ -37,11 +37,11 @@ Você pode especificar os intervalos após os quais o aplicativo salva os dados 
 Execute as seguintes etapas para usar o recurso de gravação automática no aplicativo AEM Forms:
 
 1. Faça logon no aplicativo e navegue até **[!UICONTROL Configurações > Geral]**.
-1. Na tela Geral, use a opção Frequência **[!UICONTROL de]** salvamento automático para selecionar os intervalos nos quais deseja que o aplicativo salve os dados digitados.
+1. Na tela Geral, use a opção **[!UICONTROL Frequência de salvamento automático]** para selecionar os intervalos nos quais você deseja que o aplicativo salve os dados digitados.
    [ ![Configuração da frequência de salvamento automático](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
 1. Ao reiniciar o aplicativo e fazer logon com o mesmo usuário, você será solicitado a restaurar a tarefa com a caixa de diálogo Recuperar Tarefa não salva. Clique em **[!UICONTROL OK]** na caixa de diálogo Recuperar Tarefa não salva para retomar o trabalho com a tarefa salva. Você pode clicar em **[!UICONTROL Cancelar]** para excluir os dados salvos correspondentes ao último salvamento automático e start acionado trabalhando com uma nova tarefa.
 
    Quando você clica em **[!UICONTROL OK]**, a tarefa é restaurada com os dados correspondentes ao salvamento automático mais recente acionado antes que o aplicativo falhe. Inclui os dados do formulário e todos os anexos associados à tarefa.
-   [ ![Recebendo uma tarefa](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**recuperadaA.**Um formulário de trabalho em andamento** B.**O aplicativo fechou com força** C.**O aplicativo foi reiniciado com a caixa de diálogo Recuperar Tarefa não salva** D.**Formulário restaurado com dados originais
+   [ ![Obter uma tarefa ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**recuperadaA.** Um formulário de trabalho em andamento  **B.** App fechado com força  **C.** App reiniciado com a caixa de diálogo Recuperar Tarefa não salva  **D.** Formulário restaurado com dados originais
 
