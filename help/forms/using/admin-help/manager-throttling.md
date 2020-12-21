@@ -26,9 +26,9 @@ AEM formulários (e versões anteriores) usavam filas JMS para executar operaç�
 
 Em formulários AEM, as operações executadas por serviços podem ter vida curta (síncrona) ou longa (assíncrona). Operações de curta duração concluídas sincronicamente no mesmo thread a partir do qual foram chamadas. Essas operações aguardam uma resposta antes de continuar.
 
-Operações de longa duração podem estender-se por sistemas ou até mesmo estender-se além da organização, como quando um cliente precisa preencher e enviar um formulário de solicitação de empréstimo como parte de uma solução maior que integra várias tarefas automáticas e humanas. Essas operações devem prosseguir enquanto se aguarda uma resposta. As operações de longa duração executam o seu trabalho subjacente de forma assíncrona, permitindo que os recursos sejam utilizados de outra forma enquanto aguardam a sua conclusão. Ao contrário de uma operação de duração curta, o Gerente de Trabalho não considera uma operação de duração longa concluída depois de chamada. Um acionador externo, como um sistema que solicita outra operação no mesmo serviço ou um usuário que envia um formulário, deve ocorrer para concluir a operação.
+Operações de longa duração podem estender-se por sistemas ou até mesmo estender-se além da organização, como quando um cliente precisa preencher e enviar um formulário de solicitação de empréstimo como parte de uma solução maior que integra várias tarefas automáticas e humanas. Essas operações devem prosseguir enquanto se aguarda uma resposta. As operações de longa duração executam o seu trabalho subjacente de forma assíncrona, permitindo que os recursos sejam utilizados de outra forma enquanto aguardam a sua conclusão. Ao contrário de uma operação de duração curta, o Gerente de Trabalho não considera uma operação de longa duração concluída depois de chamada. Um acionador externo, como um sistema que solicita outra operação no mesmo serviço ou um usuário que envia um formulário, deve ocorrer para concluir a operação.
 
-## Sobre o Work Manager {#about-work-manager}
+## Sobre o Gerenciador de Trabalho {#about-work-manager}
 
 AEM formulários (e versões anteriores) usavam filas JMS para executar operações de forma assíncrona. AEM formulários usam o Work Manager para programar e executar operações assíncronas por meio de threads gerenciados.
 
@@ -38,9 +38,9 @@ As operações assíncronas são tratadas desta maneira:
 1. O Work Manager armazena o item de trabalho em uma tabela de banco de dados e atribui um identificador exclusivo ao item de trabalho. O registro do banco de dados contém todas as informações necessárias para executar o item de trabalho.
 1. O Gerenciador de trabalho encadea itens de trabalho quando os encadeamentos se tornam gratuitos. Antes de extrair os itens de trabalho, os threads podem verificar se os serviços necessários foram iniciados, se há tamanho de heap suficiente para extrair o próximo item de trabalho e se há ciclos de CPU suficientes para processar o item de trabalho. O Gerenciador de Trabalho também avalia os atributos do item de trabalho (como sua prioridade) ao programar sua execução.
 
-AEM administradores de formulários podem usar o Monitor de integridade para verificar as estatísticas do Gerenciador de trabalho, como o número de itens de trabalho na fila e seus status. Você também pode usar o Monitor de integridade para pausar, retomar, tentar novamente ou excluir itens de trabalho. (Consulte Estatísticas de [Visualização relacionadas ao Gerenciador](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)de trabalho.)
+AEM administradores de formulários podem usar o Monitor de integridade para verificar as estatísticas do Gerenciador de trabalho, como o número de itens de trabalho na fila e seus status. Você também pode usar o Monitor de integridade para pausar, retomar, tentar novamente ou excluir itens de trabalho. (Consulte [Estatísticas de Visualização relacionadas ao Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
-## Configuração das opções de limitação do Gerenciador de Trabalho {#configuring-work-manager-throttling-options}
+## Configuração das opções de limitação do Work Manager {#configuring-work-manager-throttling-options}
 
 Você pode configurar a limitação para o Gerenciador de trabalho, de modo que os itens de trabalho sejam agendados somente quando houver recursos de memória suficientes disponíveis. Você configura a limitação definindo as seguintes opções de JVM no servidor de aplicativos.
 
@@ -58,11 +58,11 @@ Você pode configurar a limitação para o Gerenciador de trabalho, de modo que 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.debug-mode-enabled</code></td> 
-   <td><p>Defina essa opção para ativar <code>true</code> o modo de depuração ou para falso para desativá-lo. </p><p>No modo de depuração, as mensagens referentes a violações da política do Gerenciador de Trabalho e ações de pausa/retomada do Gerenciador de Trabalho são registradas em log. Defina essa opção como true somente ao solucionar problemas.</p></td> 
+   <td><p>Defina essa opção como <code>true</code> para ativar o modo de depuração ou como false para desativá-la. </p><p>No modo de depuração, as mensagens referentes a violações da política do Gerenciador de Trabalho e ações de pausa/retomada do Gerenciador de Trabalho são registradas em log. Defina essa opção como true somente ao solucionar problemas.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.enabled</code></td> 
-   <td><p>Defina essa opção para ativar <code>true</code> a regulagem com base nas configurações de controle de memória descritas abaixo ou para desativar <code>false</code> a regulagem.</p></td> 
+   <td><p>Defina essa opção para <code>true</code> para ativar a limitação com base nas configurações de controle de memória descritas abaixo, ou para <code>false</code> para desativar a limitação.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.high-limit</code></td> 
@@ -82,12 +82,12 @@ Você pode configurar a limitação para o Gerenciador de trabalho, de modo que 
 **Adicionar opções Java a JBoss**
 
 1. Pare o servidor de aplicativos JBoss.
-1. Abra o *[appserver root]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções Java, conforme necessário, no formato `-Dproperty=value`.
+1. Abra o *[appserver root]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções Java conforme necessário, no formato `-Dproperty=value`.
 1. Reinicie o servidor.
 
 **Adicionar opções Java ao WebLogic**
 
-1. Start o Console de administração do WebLogic digitando a `https://`*[porta ]*do nome`:`*[do host]* `/console` em um navegador da Web.
+1. Start o Console de administração do WebLogic digitando `https://`*[nome do host ]*`:`*[porta]* `/console` em um navegador da Web.
 1. Digite o nome de usuário e a senha que você criou para o domínio do WebLogic Server e clique em Registrar em Change Center (Centro de alterações) e clique em Bloquear e editar.
 1. Em Estrutura do domínio, clique em Ambiente > Servidores e, no painel direito, clique no nome do servidor gerenciado.
 1. Na tela seguinte, clique na guia Configuração > guia Start do servidor.
