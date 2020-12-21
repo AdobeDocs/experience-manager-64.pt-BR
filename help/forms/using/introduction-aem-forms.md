@@ -17,9 +17,9 @@ ht-degree: 2%
 ---
 
 
-# Introduction to AEM Forms {#introduction-to-aem-forms}
+# Introdução ao AEM Forms {#introduction-to-aem-forms}
 
-Para obter informações sobre os recursos e melhorias mais recentes no AEM Forms, consulte [Novidades do AEM Forms](/help/forms/using/whats-new.md).
+Para obter informações sobre os recursos e aprimoramentos mais recentes no AEM Forms, consulte [Novidades do AEM Forms](/help/forms/using/whats-new.md).
 
 ## Sobre o AEM Forms {#about-aem-forms}
 
@@ -66,7 +66,7 @@ Formulários baseados em navegador HTML5 podem ser exibidos em dispositivos móv
 
 Os formulários adaptáveis podem se adaptar dinamicamente às respostas do usuário, adicionando ou removendo campos ou seções, conforme necessário. AEM permite reutilizar modelos de formulário XML de Adobe para criar formulários adaptáveis.
 
-### Recursos suportados {#supported-features}
+### Recursos compatíveis {#supported-features}
 
 Todos os tipos de formulário são compatíveis com os seguintes recursos:
 
@@ -90,11 +90,11 @@ A captura de dados offline e a sincronização na próxima vez que você retorna
 **Vantagens do uso do Forms Workspace para coleta de dados offline**
 
 * Aplicativo de espaço de trabalho HTML fácil de usar para atribuição e rastreamento de tarefas
-* ambiente de design de fluxo de trabalho de arrastar e soltar
+* Ambiente de design de fluxo de trabalho de arrastar e soltar
 * Conectores de gestão de conteúdo empresarial (ECM)
 * Suporte a padrões abertos, incluindo XML e SOAP para conectar dados de formulários com sistemas corporativos
 * Os relatórios HTML prontos para uso monitoram os backlogs, as filas de trabalho e os KPIs (Indicadores-chave de desempenho)
-* painéis personalizáveis para informações em tempo real sobre operações comerciais
+* Painéis personalizáveis para informações em tempo real sobre operações comerciais
 * API para conexão com ferramentas de relatórios de terceiros
 
 ![](do-not-localize/3rd-draft.gif)
@@ -105,17 +105,17 @@ Um componente importante de uma experiência digital de autoatendimento eficient
 
 Usando a AEM Forms, os usuários empresariais podem criar experiências de usuário personalizadas interessantes ao personalizar modelos de documentos, incorporar informações de processos back-end e incluir componentes interativos. Uma interface de usuário intuitiva ajuda usuários não técnicos a desenvolver regras de negócios que decidem quando gerar uma comunicação com base em uma pesquisa ou iniciar uma resposta gerada pelo usuário.
 
-documentos personalizados, como recibos, kits de boas-vindas e declarações, podem ser facilmente entregues em vários canais. As organizações podem direcionar o tráfego para portais da Web personalizados, resultando em inscrição ou compra de serviços adicionais.
+Documentos personalizados, como recibos, kits de boas-vindas e declarações, podem ser facilmente entregues em vários canais. As organizações podem direcionar o tráfego para portais da Web personalizados, resultando em inscrição ou compra de serviços adicionais.
 
 **Principais recursos**
 
-* ambiente de criação de correspondência com suporte para modelos, blocos de conteúdo, regras de negócios e muito mais
-* Conversão e montagem de Documentos
+* Ambiente de criação de correspondência com suporte para modelos, blocos de conteúdo, regras de negócios e muito mais
+* Conversão e montagem de documentos
 * Suporte para delivery por demanda ou em lote por meio de vários canais, incluindo Web, email e papel
 * Trilhos de auditoria com histórico de alterações
 * Suporte para assinaturas digitais para validar a integridade do conteúdo e a identidade do assinante
-* Suplemento de segurança do Documento para AEM Forms incluindo criptografia, políticas de uso, rastreamento e auditoria
+* Suplemento de segurança do documento para AEM Forms incluindo criptografia, políticas de uso, rastreamento e auditoria
 
 ![](do-not-localize/layout-02.png)
-**Figura:** *Fluxo de trabalho de comunicação personalizado simplificado*
+**Figura: Fluxo de trabalho de comunicação personalizado** *simplificado*
 
