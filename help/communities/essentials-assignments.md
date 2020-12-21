@@ -18,13 +18,13 @@ ht-degree: 13%
 ---
 
 
-# Essenciais de atribuições {#assignments-essentials}
+# Essenciais de Atribuições {#assignments-essentials}
 
-Esta página fornece as informações essenciais para trabalhar com o recurso de atribuições de [ativação de sites da comunidade](overview.md#enablement-community) .
+Esta página fornece as informações essenciais para trabalhar com o recurso de atribuições dos sites [comunidade de ativação](overview.md#enablement-community).
 
 O recurso de atribuições é a capacidade de atribuir recursos de ativação e caminhos de aprendizado aos membros das comunidades de ativação.
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -50,7 +50,7 @@ O recurso de atribuições é a capacidade de atribuir recursos de ativação e 
   </tr>
   <tr>
    <td><strong> propriedades</strong></td> 
-   <td>Consulte Recurso <a href="assignments.md">Atribuições</a></td> 
+   <td>Consulte <a href="assignments.md">Recurso Atribuições</a></td> 
   </tr>
  </tbody>
 </table>
@@ -81,16 +81,16 @@ As únicas combinações possíveis de Conclusão e Status de sucesso são:
 | Concluir | Aprovado |
 | Concluir | Falha |
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 ### Função das atribuições {#assignments-function}
 
-Uma estrutura de site da comunidade que inclui a função [](functions.md#assignments-function)Atribuições, inclui um ` [assignments](assignments.md)` componente configurado.
+Uma estrutura de site da comunidade que inclui a função [Atribuições](functions.md#assignments-function), inclui um componente ` [assignments](assignments.md)` configurado.
 
 ### APIs de referência {#reference-apis}
 
 * [API de ativação](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API do Relatórios](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API do relatórios](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
 * [API do Relatórios Analytics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
