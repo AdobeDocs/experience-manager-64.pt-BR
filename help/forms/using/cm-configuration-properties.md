@@ -17,9 +17,9 @@ ht-degree: 3%
 ---
 
 
-# Propriedades de configuração do gerenciamento de correspondência {#correspondence-management-configuration-properties}
+# Propriedades de Configuração do Gerenciamento de Correspondência {#correspondence-management-configuration-properties}
 
-Para configurar essas propriedades, abra o seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione Configurações **de gerenciamento de** correspondência.
+Para configurar essas propriedades, abra o seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione **Configurações de gerenciamento de correspondência**.
 
 O Gerenciamento de correspondência tem as seguintes propriedades de configuração:
 
@@ -34,19 +34,19 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr> 
    <td><p>Recuo</p> </td> 
    <td>Recuo em módulos<p> </p> </td> 
-   <td><p>12.7mm</p> </td> 
+   <td><p>12,7 mm</p> </td> 
    <td><p>Qualquer número</p> </td> 
   </tr> 
   <tr> 
    <td>Largura mínima do número</td> 
    <td>Largura mínima a ser aplicada no campo de marcador/número, ao usar Listas numeradas além dos números romanos</td> 
-   <td>8.0mm</td> 
+   <td>8,0 mm</td> 
    <td>Qualquer número</td> 
   </tr> 
   <tr> 
    <td><p>Largura mínima dos números romanos</p> </td> 
    <td><p>Largura mínima a ser aplicada no campo de marcador/número ao usar números romanos</p> </td> 
-   <td><p>12.7mm</p> </td> 
+   <td><p>12,7 mm</p> </td> 
    <td><p>Qualquer número</p> </td> 
   </tr> 
   <tr> 
@@ -62,14 +62,14 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>true / false</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Tipo de realce do Público alvo</p> </td> 
-   <td><p>Tipo de realce do Público alvo no aplicativo Criar correspondência</p> </td> 
+   <td><p>Tipo de realce do público alvo</p> </td> 
+   <td><p>Tipo de realce do público alvo no aplicativo Criar correspondência</p> </td> 
    <td><p>border</p> </td> 
    <td><p>borda / preenchimento / nenhum</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Cor de realce do Público alvo</p> </td> 
-   <td><p>Cor de realce do Público alvo no aplicativo Criar correspondência</p> </td> 
+   <td><p>Cor de realce do público alvo</p> </td> 
+   <td><p>Cor de realce do público alvo no aplicativo Criar correspondência</p> </td> 
    <td><p>90;155;245</p> </td> 
    <td><p>Qualquer cor RGB no formato R;G;B</p> </td> 
   </tr> 
@@ -155,13 +155,13 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>Formatos de Exibição de Dados</p> </td> 
    <td><p>Especifica o formato de exibição específico da localidade para dados</p> </td> 
    <td><p>locale=en_US; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td><p>Formato de edição de dados</p> </td> 
    <td><p>Editar formato para dados. Isso é usado ao gravar dados como String ou analisar dados de String</p> </td> 
    <td><p>locale=en_US; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td>--<p> </p> </td> 
+   <td>—<p> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Gerenciar instâncias de carta na publicação</p> </td> 
@@ -244,18 +244,18 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr> 
    <td><p>Raiz do usuário CM</p> </td> 
    <td><p>URL da pasta que contém todos os ativos de usuário do Gerenciamento de correspondência</p> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
    <td><p>Local válido da pasta</p> </td> 
   </tr> 
   <tr> 
    <td><p>Tamanho do Cache Carta</p> </td> 
-   <td><p>Especifique o número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do <code>in-memory</code> cache.</p> </td> 
+   <td><p>Especifique o número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory</code>.</p> </td> 
    <td><p>100</p> </td> 
    <td><p>Qualquer valor numérico</p> </td> 
   </tr> 
   <tr> 
    <td><p>Ativar Cache Carta</p> </td> 
-   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza do <code>in-memory </code> cache.</p> </td> 
+   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory </code>.</p> </td> 
    <td><p>verdadeiro</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
