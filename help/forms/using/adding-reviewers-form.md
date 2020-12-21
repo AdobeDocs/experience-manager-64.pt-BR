@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Associar revisores de envio a um formulário  {#associating-submission-reviewers-with-a-form}
+# Associando revisores de envio a um formulário {#associating-submission-reviewers-with-a-form}
 
 Ao criar um formulário, você pode especificar usuários que revisam os envios do formulário por meio do portal de formulários e fornecem feedback. Sua organização pode coletar feedback e retrabalhar os formulários enviados.
 
@@ -32,8 +32,8 @@ Para associar um grupo de revisores a um formulário, edite o schema de metadado
 
 Para editar o schema de metadados:
 
-1. No modo de autor, em Experience Manager, clique em **[!UICONTROL Ferramentas > Ativos > Schemas]** de metadados.
-1. Na página Schema Forms, navegue até **[!UICONTROL Forms > Forms Authored in AEM]**.
+1. No modo do autor, em Experience Manager, clique em **[!UICONTROL Ferramentas > Ativos > Schemas de metadados]**.
+1. Na página Forms do Schema, navegue até **[!UICONTROL Forms > Forms Authed in AEM]**.
 
    O url da página é:
 
@@ -43,16 +43,16 @@ Para editar o schema de metadados:
     aem-authored
    ```
 
-1. Selecione Formulário **** adaptável e clique em **[!UICONTROL Editar]**.
+1. Selecione **[!UICONTROL Formulário adaptável]** e clique em **[!UICONTROL Editar]**.
 1. Na página Editar formulário, clique em **[!UICONTROL Avançado]**.
-1. Na guia Avançado, arraste e solte o componente Texto **[!UICONTROL de linha]** única disponível em Formulário de compilação.
+1. Na guia Avançado, arraste e solte o componente **[!UICONTROL Texto de linha única]** disponível em Criar formulário.
 1. Selecione o componente de texto adicionado para ver suas configurações.
 
    Em Configurações, digite `./jcr:content/metadata/form-submission-reviewer-group` no campo Mapa para propriedade.
 
    O campo de grupo do revisor de envio nas propriedades Avançadas do formulário adaptável é ativado com o nome especificado em Rótulo do campo.
 
-## Associar revisores de envio a um formulário {#associating-submission-reviewers-with-a-form-1}
+## Associando revisores de envio a um formulário {#associating-submission-reviewers-with-a-form-1}
 
 Para associar revisores de envio a um formulário adaptável, crie um grupo de revisores e adicione usuários a ele. Adicione o grupo do revisor criado no campo do revisor de envio de formulário nas propriedades avançadas do formulário.\
 Os grupos de usuários permitem associar diferentes conjuntos de revisores de envio a diferentes formulários adaptáveis. Este recurso impede uma revisão de envio de um usuário não autorizado.
@@ -60,15 +60,15 @@ Os grupos de usuários permitem associar diferentes conjuntos de revisores de en
 Antes de executar as etapas a seguir, consulte [Pré-requisito](/help/forms/using/adding-reviewers-form.md#prerequisite).
 
 Para criar um grupo e adicionar membros a ele, navegue até **[!UICONTROL Ferramentas > Operações > Segurança > Grupos]**.\
-Para obter mais informações, consulte Administração [do usuário e Serviços](/help/sites-administering/security.md).\
-Certifique-se de adicionar o grupo criado como membro do grupo de usuários predefinido: **revisores** de envio de formulários. Esse grupo de usuários é enviado com a AEM Forms e garante que os usuários sejam adicionados como revisores de envio.
+Para obter mais informações, consulte [Serviços e Administração do Usuário](/help/sites-administering/security.md).\
+Certifique-se de adicionar o grupo criado como membro do grupo de usuários predefinido: **revisores de submissão de formulários**. Esse grupo de usuários é enviado com a AEM Forms e garante que os usuários sejam adicionados como revisores de envio.
 
 Para associar grupos de usuários a um formulário adaptável:
 
 1. No modo de criação, navegue até **[!UICONTROL Forms > Forms e Documentos]**.
-1. Use a opção **[!UICONTROL Selecionar]** para selecionar um formulário adaptável e clique em Propriedades **[!UICONTROL da]** Visualização.
-1. Na janela Propriedades do formulário, clique em **[!UICONTROL Editar]** e em **[!UICONTROL AVANÇADO]**.
-1. Insira o grupo no campo do grupo do revisor de submissão e clique em **[!UICONTROL Concluído]**.
+1. Use a opção **[!UICONTROL Select]** para selecionar um formulário adaptável e clique em **[!UICONTROL Propriedades da Visualização]**.
+1. Na janela Propriedades do formulário, clique em **[!UICONTROL Editar]** e, em seguida, clique em **[!UICONTROL AVANÇADO]**.
+1. Digite o grupo no campo de grupo do revisor de submissão e clique em **[!UICONTROL Concluído]**.
 
    O campo de grupo do revisor de envio é exibido com o nome especificado no schema de metadados editados dos formulários adaptáveis.
 
