@@ -1,8 +1,8 @@
 ---
 title: Gerar pré-visualização HTML5 de um formulário XDP
 seo-title: Gerar pré-visualização HTML5 de um formulário XDP
-description: A guia HTML de Pré-visualização no LiveCycle Designer pode ser usada para pré-visualização de formulários conforme eles aparecem em um navegador.
-seo-description: A guia HTML de Pré-visualização no LiveCycle Designer pode ser usada para pré-visualização de formulários conforme eles aparecem em um navegador.
+description: A guia HTML de pré-visualização no LiveCycle Designer pode ser usada para pré-visualização de formulários conforme eles aparecem em um navegador.
+seo-description: A guia HTML de pré-visualização no LiveCycle Designer pode ser usada para pré-visualização de formulários conforme eles aparecem em um navegador.
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
@@ -18,9 +18,9 @@ ht-degree: 15%
 
 # Gerar pré-visualização HTML5 de um formulário XDP {#generate-html-preview-of-an-xdp-form}
 
-Ao projetar um formulário no AEM Forms Designer, além de visualizar a execução em PDF de um formulário, também é possível pré-visualização uma execução em HTML5 dele. Você pode usar a guia HTML **de** Pré-visualização para pré-visualização de um formulário como ele apareceria em um navegador.
+Ao projetar um formulário no AEM Forms Designer, além de visualizar a execução em PDF de um formulário, também é possível pré-visualização uma execução em HTML5 dele. Você pode usar a guia **HTML** Pré-visualização para pré-visualização de um formulário como ele apareceria em um navegador.
 
-## Ativar Pré-visualização HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
+## Habilitar Pré-visualização HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
 
 Para permitir que o Designer gere pré-visualizações HTML de formulários XDP, execute as seguintes configurações:
 
@@ -30,13 +30,13 @@ Para permitir que o Designer gere pré-visualizações HTML de formulários XDP,
 
 ### Configurar o serviço de autenticação Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Vá para `https://[server]:[port]/system/console/configMgr` o AEM Forms em execução no OSGi ou
+1. Vá para `https://[server]:[port]/system/console/configMgr` no AEM Forms em execução no OSGi ou
 
    `https://[server]:[port]/lc/system/console/configMgr` no AEM Forms executando em JEE.
 
-1. Localize e clique em **Apache Sling Authentication Service** configuration para abri-la no modo de edição.
+1. Localize e clique na configuração **Apache Sling Authentication Service** para abri-la no modo de edição.
 
-1. Dependendo de se você estiver executando o AEM Forms no OSGi ou no JEE, adicione o seguinte no campo Requisitos **de** autenticação:
+1. Dependendo de você estar executando o AEM Forms em OSGi ou JEE, adicione o seguinte no campo **Requisitos de autenticação**:
 
    * AEM Forms no JEE
 
@@ -51,25 +51,25 @@ Para permitir que o Designer gere pré-visualizações HTML de formulários XDP,
    >
    >Não copie e cole o valor especificado no campo Requisitos de autenticação, pois ele pode corromper os caracteres especiais no valor. Em vez disso, digite o valor especificado no campo.
 
-1. Especifique um nome de usuário e senha nos campos Nome **[!UICONTROL de usuário]** anônimo e Senha **[!UICONTROL de usuário]** anônimo, respectivamente. As credenciais especificadas são usadas para lidar com autenticação anônima e permitir acesso a usuários anônimos.
-1. Click **Save** to save the configuration.
+1. Especifique um nome de usuário e senha nos campos **[!UICONTROL Nome de usuário anônimo]** e **[!UICONTROL Senha de usuário anônima]**, respectivamente. As credenciais especificadas são usadas para lidar com autenticação anônima e permitir acesso a usuários anônimos.
+1. Clique em **Salvar** para salvar a configuração.
 
 ### Desativar modo protegido {#disable-protected-mode}
 
-Por padrão, o modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está ativado. Mantenha-o ativado para os ambientes de produção. Você pode desativá-lo para um ambiente de desenvolvimento para a pré-visualização do Forms HTML5 no Designer. Execute as seguintes etapas para desativá-la:
+O [modo protegido](/help/forms/using/get-xdp-pdf-documents-aem.md) está ativado, por padrão. Mantenha-o ativado para os ambientes de produção. Você pode desativá-lo para um ambiente de desenvolvimento para a pré-visualização do Forms HTML5 no Designer. Execute as seguintes etapas para desativá-la:
 
 1. Efetue login no AEM Web Console como um administrador.
 
    * O URL para AEM Forms no OSGi é `https://[server]:[port]/system/console/configMgr`
    * O URL para AEM Forms no JEE é `https://[server]:[port]/lc/system/console/configMgr`
 
-1. Abra Configurações **[!UICONTROL do Forms]** móvel para edição.
-1. Desmarque a opção Modo **** protegido e clique em **[!UICONTROL Salvar]**.
+1. Abra **[!UICONTROL Configurações do Forms móvel]** para edição.
+1. Desmarque a opção **[!UICONTROL Modo Protegido]** e clique em **[!UICONTROL Salvar]**.
 
 ### Fornecer detalhes do servidor AEM Forms {#provide-details-of-aem-forms-server}
 
 1. No Designer, vá para **Ferramentas** > **Opções**.
-1. Na janela Opções, selecione a página Opções **do** servidor, forneça os detalhes a seguir e clique em **OK**.
+1. Na janela Opções, selecione a página **Opções do Servidor**, forneça os seguintes detalhes e clique em **OK**.
 
    * **URL** do servidor: URL do servidor AEM Forms.
    * **Número** da porta HTTP: AEM porta do servidor. O valor padrão é 4502.
@@ -77,18 +77,18 @@ Por padrão, o modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms em JEE)
-   * **Contexto do Forms Manager:** Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
+   * **Contexto do Forms Manager: caminho** de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
 
       * `/aem/forms` (AEM Forms no OSGi)
       * `/lc/forms` (AEM Forms em JEE)
 
-   **Observação:** *Verifique se o servidor AEM Forms está funcionando. The HTML preview connects to the CRX server to* generate *a preview.*
+   **Observação:** *verifique se o servidor AEM Forms está funcionando. A pré-visualização HTML se conecta ao servidor CRX para* gerar *uma pré-visualização.*
 
-   ![Opções do AEM Forms Designer ](assets/server_options.png)
+   ![Opções do AEM Forms Designer  ](assets/server_options.png)
 
    Opções do AEM Forms Designer
 
-1. Para pré-visualização um formulário em HTML, clique na guia HTML **da** Pré-visualização.
+1. Para pré-visualização um formulário em HTML, clique na guia **HTML de Pré-visualização**.
 
    >[!NOTE]
    >
@@ -106,14 +106,14 @@ Se não houver dados de amostra, o Designer poderá criá-los ou você mesmo pod
 
 Testar seu formulário usando uma fonte de dados de amostra garante que os dados e campos sejam mapeados e que os subformulários repetitivos se repetem conforme o esperado. Você pode criar um layout equilibrado de formulário que proporciona o espaço adequado para que cada objeto apresente os dados unidos.
 
-1. Select **File > Form Properties**.
+1. Selecione **Arquivo > Propriedades do formulário**.
 
-1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. Você também pode usar o botão Procurar para navegar até o arquivo.
+1. Clique na guia **Pré-visualização** e, na caixa Arquivo de dados, digite o caminho completo para o arquivo de dados de teste. Você também pode usar o botão Procurar para navegar até o arquivo.
 
-1. Clique em **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
+1. Clique em **OK**. Na próxima vez que você pré-visualização o formulário na guia **HTML de Pré-visualização**, os valores de dados do arquivo XML de amostra aparecerão nos respectivos objetos.
 
-## Formulários de Pré-visualização localizados em um repositório {#html-preview-of-forms-in-forms-manager}
+## Formulários de pré-visualização localizados em um repositório {#html-preview-of-forms-in-forms-manager}
 
-No AEM Forms, você pode pré-visualização formulários e documentos em um repositório. A Pré-visualização ajuda a saber exatamente como os formulários se parecem e se comportam conforme serão usados pelos usuários finais.
+No AEM Forms, você pode pré-visualização formulários e documentos em um repositório. A pré-visualização ajuda a saber exatamente como os formulários se parecem e se comportam conforme serão usados pelos usuários finais.
 
-[**Entre em contato com o suporte **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Entre em contato com o suporte**](https://www.adobe.com/account/sign-in.supportportal.html)
