@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ Sobreponha o sistema de comentários com uma versão personalizada copiando o n�
 >
 >O conteúdo da pasta /libs nunca é editado porque qualquer reinstalação ou atualização pode excluir ou substituir a pasta /libs enquanto o conteúdo da pasta /apps é deixado inalterado.
 
-Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps, que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
+Usando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
 
 O caminho que está sendo duplicado é
 
@@ -51,33 +51,33 @@ Alguns nós no caminho são pastas e alguns são componentes.
 1. Selecionar `hbs` nó
    * **[!UICONTROL Criar > Criar componente...]**
       * Digite o rótulo: `comments`
-      * Enter Title: `Comments`
-      * Enter Description: `List of comments without showing avatars`
+      * Inserir Título: `Comments`
+      * Digite a descrição: `List of comments without showing avatars`
       * Super Type: `social/commons/components/comments`
       * Inserir grupo: `Communities`
-      * Clique em **[!UICONTROL Avançar]** até **[!UICONTROL OK]**
+      * Clique em **[!UICONTROL Próximo]** até **[!UICONTROL OK]**
 1. Selecionar `comments` nó
 
    * **[!UICONTROL Criar > Criar componente...]**
 
       * Digite o rótulo: `comment`
-      * Enter Title: `Comment`
-      * Enter Description: `A comment instance without avatars`
-      * Super Type: `social/commons/components/comments/comment`
+      * Inserir Título: `Comment`
+      * Digite a descrição: `A comment instance without avatars`
+      * Supertipo: `social/commons/components/comments/comment`
       * Inserir grupo: `.hidden`
-      * Clique em **[!UICONTROL Avançar]** até **[!UICONTROL OK]**
+      * Clique em **[!UICONTROL Próximo]** até **[!UICONTROL OK]**
    * Selecione **[!UICONTROL Salvar tudo]**
 1. Excluir o padrão `comments.jsp`
    * Selecionar nó `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Selecionar **[!UICONTROL Excluir]**
+   * Selecione **[!UICONTROL Eliminar]**
 1. Exclua o arquivo comment.jsp padrão
    * selecionar nó `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Selecionar **[!UICONTROL Excluir]**
+   * Selecione **[!UICONTROL Eliminar]**
    * Selecione **[!UICONTROL Salvar tudo]**
 
 >[!NOTE]
 >
->Para preservar a cadeia de herança, os componentes `Super Type` (propriedade `sling:resourceSuperType`) da sobreposição são definidos com o mesmo valor `Super Type` dos componentes que estão sendo sobrepostos, nesse caso
+>Para preservar a cadeia de herança, `Super Type` (propriedade `sling:resourceSuperType`) dos componentes de sobreposição são definidos com o mesmo valor de `Super Type` dos componentes que estão sendo sobrepostos, nesse caso
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
@@ -91,11 +91,11 @@ A própria sobreposição `Type`(propriedade `sling:resourceType`) deve ser uma 
 * Tipo: `String`
 * Valor: `social/commons/components/hbs/comments`
 
-1. Selecione o verde `[+] Add`
+1. Selecione a cor verde `[+] Add`
    * Nome: `sling:resourceType`
    * Tipo: `String`
    * Valor: `social/commons/components/hbs/comments/comment`
-1. Selecione o verde `[+] Add`
+1. Selecione a cor verde `[+] Add`
    * Selecione **[!UICONTROL Salvar tudo]**
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
