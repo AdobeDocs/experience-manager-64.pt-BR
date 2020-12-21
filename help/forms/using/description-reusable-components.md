@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # Descrição dos componentes reutilizáveis {#description-of-reusable-components}
 
-A área de trabalho do AEM Forms é composta de componentes [reutilizáveis](/help/forms/using/integrating-html-ws-components-web.md) que são organizados em uma estrutura [de](/help/forms/using/folder-structure.md) pasta específica no CRX™. Cada componente tem modelo, visualização e arquivo de modelo no local especificado na estrutura da pasta, dependências JavaScript™ em outros arquivos de componente, eventos ouvidos pelos objetos de componente e JavaScript que acionam esses eventos na área de trabalho do AEM Forms. A lista completa de componentes reutilizáveis com nomes de arquivos e dependências constituintes é fornecida aqui.
+A área de trabalho do AEM Forms é composta de [componentes reutilizáveis](/help/forms/using/integrating-html-ws-components-web.md) que estão organizados em uma estrutura de pastas [específica](/help/forms/using/folder-structure.md) no CRX™. Cada componente tem modelo, visualização e arquivo de modelo no local especificado na estrutura da pasta, dependências JavaScript™ em outros arquivos de componente, eventos ouvidos pelos objetos de componente e JavaScript que acionam esses eventos na área de trabalho do AEM Forms. A lista completa de componentes reutilizáveis com nomes de arquivos e dependências constituintes é fornecida aqui.
 
 ## TaskList {#tasklist}
 
@@ -217,7 +217,7 @@ A área de trabalho do AEM Forms é composta de componentes [reutilizáveis](/he
      <li><p>buscado - modelo da lista de tarefas </p></li> 
      <li><p>remover - modelo da lista de tarefas </p></li> 
      <li><p>updateQueue - modelo da lista de tarefas </p></li> 
-     <li><p>TeamQueuesFetched - modelo de lista de tarefas </p></li> 
+     <li><p>TeamQueuesFetched - modelo da lista de tarefas </p></li> 
     </ul></td> 
   </tr> 
  </tbody> 
@@ -266,7 +266,7 @@ A área de trabalho do AEM Forms é composta de componentes [reutilizáveis](/he
 >
 >TeamFilter obtém o evento indicando qual tarefa foi selecionada do componente TaskList. Embora esses componentes compartilhem a classe model, não há outra dependência.
 
-## DetalhesDaTarefa {#taskdetails}
+## TaskDetails {#taskdetails}
 
 <table> 
  <tbody> 
@@ -737,7 +737,7 @@ A área de trabalho do AEM Forms é composta de componentes [reutilizáveis](/he
 >
 >ProcessInstanceHistory espera um evento de ProcessInstanceList que indica qual histórico de instância de processo deve ser exibido. Além dessa dependência, o componente pode ser usado de forma independente.
 
-## Fora do escritório {#outofoffice}
+## OutOffice {#outofoffice}
 
 <table> 
  <tbody> 
