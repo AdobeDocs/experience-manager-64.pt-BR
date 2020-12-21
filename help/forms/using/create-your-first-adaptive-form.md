@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# Criar seu primeiro formulário adaptável {#do-not-publish-create-your-first-adaptive-form}
+# Crie seu primeiro formulário adaptável {#do-not-publish-create-your-first-adaptive-form}
 
 ![01-create-first-adaptive-form-herói-image](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## Introdução {#introduction}
 
-Você está procurando uma experiência **de** formulários para dispositivos móveis que simplifique as inscrições, aumente o envolvimento e reduza o tempo de resposta, os formulários **** adaptáveis são adequados para você? Formulários adaptáveis oferecem uma experiência móvel, de automação e de formulários compatíveis com a análise. Você pode criar facilmente formulários que sejam responsivos e interativos na natureza, usar processos automatizados para reduzir tarefas administrativas e repetitivas e usar análises de dados para melhorar e personalizar a experiência que os clientes têm com seus formulários.
+Você está procurando uma **experiência com formulários** para dispositivos móveis que simplifique os inscritos, aumente o envolvimento e reduza o tempo de resposta, **formulários adaptativos** é a melhor opção para você. Formulários adaptáveis oferecem uma experiência móvel, de automação e de formulários compatíveis com a análise. Você pode criar facilmente formulários que sejam responsivos e interativos na natureza, usar processos automatizados para reduzir tarefas administrativas e repetitivas e usar a análise de dados para melhorar e personalizar a experiência que os clientes têm com seus formulários.
 
 Este tutorial fornece uma estrutura completa para criar um formulário adaptável. O tutorial é organizado em um caso de uso e em várias guias. Cada guia o ajuda a aprender e adicionar novos recursos ao formulário adaptativo criado neste tutorial. Você tem um formulário adaptativo funcionando depois de cada guia. O guia para criar um formulário adaptável está disponível. Guias subsequentes estarão disponíveis em breve. No final deste tutorial, você poderá:
 
@@ -42,8 +42,8 @@ O site é executado no Adobe Experience Manager (AEM) e usa o AEM Forms para cap
 ### Pré-requisitos {#prerequisite}
 
 * Configure uma instância do autor AEM.
-* Instale o complemento [do](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms na instância do autor.
-* Obtenha o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Os exemplos no tutorial são baseados no banco de dados MySQL e usam o driver [de banco de dados](https://dev.mysql.com/downloads/connector/j/5.1.html)MySQL JDBC da Oracle.
+* Instale [complemento AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor.
+* Obtenha o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Os exemplos no tutorial são baseados no banco de dados MySQL e usam [driver de banco de dados MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) da Oracle.
 
 * Configure um banco de dados contendo dados do cliente com os campos exibidos abaixo. Um banco de dados não é essencial para criar um formulário adaptável. Este tutorial usa um banco de dados para exibir o modelo de dados do formulário e os recursos de persistência do AEM Forms.
 
@@ -53,7 +53,7 @@ O site é executado no Adobe Experience Manager (AEM) e usa o AEM Forms para cap
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
-Os formulários adaptáveis são de nova geração, envolventes, responsivos, dinâmicos e adaptáveis na natureza. Usando formulários adaptáveis, você pode fornecer experiências personalizadas e direcionadas. A AEM Forms fornece um editor WYSIWYG para arrastar e soltar para criar formulários adaptáveis. Para obter mais informações sobre formulários adaptáveis, consulte [Introdução à criação de formulários](/help/forms/using/introduction-forms-authoring.md)adaptáveis.
+Os formulários adaptáveis são de nova geração, envolventes, responsivos, dinâmicos e adaptáveis na natureza. Usando formulários adaptáveis, você pode fornecer experiências personalizadas e direcionadas. A AEM Forms fornece um editor WYSIWYG para arrastar e soltar para criar formulários adaptáveis. Para obter mais informações sobre formulários adaptáveis, consulte [Introdução à criação de formulários adaptáveis](/help/forms/using/introduction-forms-authoring.md).
 
 Objetivos:
 
@@ -64,7 +64,7 @@ Objetivos:
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## Step 2: Create Form Data Model {#step-create-form-data-model}
+## Etapa 2: Criar Modelo de Dados de Formulário {#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -95,7 +95,7 @@ Objetivos:
 
 ![09-Estilo-sua-forma-adaptativa_pequena](assets/09-Style-your-adaptive-form_small.png)
 
-Os formulários adaptativos fornecem temas e um [editor](/help/forms/using/themes.md) para criar temas para os formulários adaptáveis. Um tema contém detalhes de estilização para componentes e painéis, e você pode reutilizar um tema em diferentes formas. Os estilos incluem propriedades como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando o tema é aplicado ao formulário, o estilo especificado é refletido nos componentes correspondentes do formulário. Formulários adaptáveis também suportam estilos em linha para estilos específicos de um formulário.
+Os formulários adaptáveis fornecem temas e um [editor](/help/forms/using/themes.md) para criar temas para os formulários adaptáveis. Um tema contém detalhes de estilização para componentes e painéis, e você pode reutilizar um tema em diferentes formas. Os estilos incluem propriedades como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando o tema é aplicado ao formulário, o estilo especificado é refletido nos componentes correspondentes do formulário. Formulários adaptáveis também suportam estilos em linha para estilos específicos de um formulário.
 
 Objetivos:
 
@@ -116,13 +116,13 @@ Objetivos:
 * Instalar o Calvin SDK
 * Criar conjunto de testes e casos de teste para o formulário de endereço de alteração
 
-Para saber mais sobre o SDK, consulte [Uso de testes automatizados com AEM formulário](/help/forms/using/calvin.md)adaptável.
+Para saber mais sobre o SDK, consulte [Usando testes automatizados com AEM Formulário adaptável](/help/forms/using/calvin.md).
 
-## Etapa 6: Publicar seu formulário adaptativo {#step-publish-your-adaptive-form}
+## Etapa 6: Publicar o formulário adaptativo {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-Você pode publicar formulários adaptáveis como um formulário independente (aplicativo de página única), incluir AEM página [de](/help/forms/using/embed-adaptive-form-aem-sites.md)sites ou lista em um site AEM usando o [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
+Você pode publicar formulários adaptativos como um formulário independente (aplicativo de página única), incluir em AEM [página de sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou lista em um site AEM usando [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
 
 Objetivos:
 
