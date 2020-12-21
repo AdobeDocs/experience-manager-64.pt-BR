@@ -28,7 +28,7 @@ A versão do AEM Forms Feature Pack 1 do Designer permite alterar a mensagem exi
 
 1. Abra o formulário para o qual deseja alterar o conteúdo de Página zero.
 
-1. Click **File > Form Properties**.
+1. Clique em **Arquivo > Propriedades do formulário**.
 
 1. Na caixa de diálogo Propriedades do formulário, clique em ![mais](assets/plus.png) (ícone de Mais) para adicionar uma propriedade personalizada.
 
