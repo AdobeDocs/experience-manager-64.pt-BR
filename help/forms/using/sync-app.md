@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Sincronizar o aplicativo {#synchronizing-the-app}
+# Sincronizando o aplicativo {#synchronizing-the-app}
 
-## Sincronizar o aplicativo {#synchronizing-the-app-1}
+## Sincronizando o aplicativo {#synchronizing-the-app-1}
 
 Os formulários no aplicativo são baixados do servidor AEM Forms. Os formulários são baixados nas guias Tarefa e Forms. Os rascunhos criados a partir de formulários são baixados na guia rascunhos e os rascunhos criados a partir do tarefa são baixados na guia tarefa. Para um formulário independente no servidor OSGi, os formulários e rascunhos são baixados nas guias Forms e Draft, respectivamente.
 
@@ -30,11 +30,11 @@ Quando você está online com o servidor AEM Forms, por padrão, seu aplicativo 
 
 **Para sincronizar o aplicativo manualmente**
 
-Toque no botão Sincronizar aplicativo ![de](assets/sync-app.png) sincronização no canto inferior direito da tela inicial.
+Toque no botão Sincronizar ![sync-app](assets/sync-app.png) no canto inferior direito da tela inicial.
 
 **Alteração da frequência de sincronização**
 
-1. Para acessar a tela Setting (Configuração), toque no botão de menu no canto superior esquerdo da tela Home (Início) e, em seguida, toque em **Settings (Configurações)**.
+1. Para ir para a tela Definição, toque no botão de menu no canto superior esquerdo da tela Início e toque em **Configurações**.
 1. Na tela Configurações, toque na guia Geral.
 
    ![Configuração de frequência de sincronização na janela Configurações gerais](assets/gen-settings-1.png)
