@@ -25,7 +25,7 @@ Geralmente, os desenvolvedores não usam o ambiente de produção para criar e t
 
 Este artigo descreve os métodos para reduzir a superfície geral do ataque por meio das opções de administração fornecidas pela AEM Forms no JEE.
 
-## Desativar acesso remoto não essencial a serviços {#disabling-non-essential-remote-access-to-services}
+## Desabilitando o acesso remoto não essencial aos serviços {#disabling-non-essential-remote-access-to-services}
 
 Depois que o AEM Forms em JEE é instalado e configurado, muitos serviços estão disponíveis para invocação remota em SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, refere-se a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou Action Message Format (AMF) para o servidor de aplicativos.
 
@@ -43,11 +43,11 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 
 1. Clique em **Serviços > Aplicativos e serviços > Preferências**.
 1. Defina Preferências para visualização de até 200 serviços e pontos finais na mesma página.
-1. Clique em **Serviços** > **Aplicativos e serviços** > Gerenciamento **de** ponto de extremidade.
+1. Clique em **Serviços** > **Aplicativos e Serviços** > **Endpoint Management**.
 1. Selecione **EJB** na lista **Provedor** e clique em **Filtro**.
 1. Para desativar todos os pontos de extremidade EJB, marque a caixa de seleção ao lado de cada um na lista e clique em **Desativar**.
-1. Clique em **Avançar** e repita a etapa anterior para todos os pontos finais EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos de extremidade.
-1. Selecione **SOAP** na lista **Provedor** e clique em **Filtro**.
+1. Clique em **Próximo** e repita a etapa anterior para todos os pontos finais EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos de extremidade.
+1. Selecione **SOAP** na lista **Fornecedor** e clique em **Filtro**.
 1. Para remover pontos de extremidade SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remover**. Não remova os seguintes pontos finais:
 
    * AuthenticationManagerService
@@ -66,7 +66,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 
 1. Clique em **Avançar** e repita a etapa anterior para pontos de extremidade SOAP que não estejam na lista acima. Certifique-se de que SOAP esteja listado na coluna Provedor antes de remover pontos de extremidade.
 
-## Desativar o acesso anônimo não essencial aos serviços {#disabling-non-essential-anonymous-access-to-services}
+## Desabilitando o acesso anônimo não essencial aos serviços {#disabling-non-essential-anonymous-access-to-services}
 
 Alguns serviços de servidor de formulários permitem invocação não autenticada (anônima) para algumas operações. Isso significa que uma ou mais operações expostas pelo serviço podem ser chamadas como qualquer usuário autenticado ou como nenhum usuário autenticado.
 
@@ -76,9 +76,9 @@ Alguns serviços de servidor de formulários permitem invocação não autentica
             https://[host name]:[port]/adminui
    ```
 
-1. Clique em **Serviços > Aplicativos e serviços > Gerenciamento** de serviços.
+1. Clique em **Serviços > Aplicativos e serviços > Gerenciamento de serviços**.
 1. Clique no nome do serviço que deseja desativar (por exemplo, AuthenticationManagerService).
-1. Clique na guia **** Segurança, desmarque Acesso **anônimo permitido** e clique em **Salvar**.
+1. Clique na **guia Segurança**, desmarque **Acesso Anônimo Permitido** e clique em **Salvar**.
 1. Complete as etapas 3 e 4 para os seguintes serviços:
 
    * AuthenticationManagerService
@@ -119,7 +119,7 @@ Os usuários finais podem se autenticar na AEM Forms por meio do Workbench, de a
             https://[host name]:[port]/adminui
    ```
 
-1. Clique em **Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos** de configuração.
+1. Clique em **Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração**.
 1. Clique em **Exportar** para produzir um arquivo config.xml com as configurações existentes do AEM Forms.
 1. Abra o arquivo XML em um editor e localize a seguinte entrada:
 
