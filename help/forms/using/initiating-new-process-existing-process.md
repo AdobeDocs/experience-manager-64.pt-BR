@@ -27,7 +27,7 @@ Veja a seguir as etapas para iniciar um novo processo a partir dos dados do proc
 
    * Em Rastreamento, clique na instância do processo cujos dados você deseja usar. Na visualização Histórico de processos no painel direito, clique na linha de tarefa que corresponde ao ponto de start.
    * Em Rastreamento, selecione um modelo de pesquisa para exibir uma lista de instâncias de processo. Selecione a instância cujos dados você deseja usar.
-   * Na guia **[!UICONTROL Tarefas]** , selecione a tarefa. Clique na guia **[!UICONTROL Histórico]** e selecione a tarefa que iniciou a instância do processo.
+   * Na guia **[!UICONTROL Para fazer]**, selecione a tarefa. Clique na guia **[!UICONTROL Histórico]** e selecione a tarefa que iniciou a instância do processo.
 
    ![start3](assets/start3.png) ![start1](assets/start1.png)
 
