@@ -22,7 +22,7 @@ ht-degree: 0%
 Os modelos de formulário XFA ou XDPs são os modelos para:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Imprimir canal](/help/forms/using/web-channel-print-channel.md#printchannel) de Comunicações [Interativas](/help/forms/using/interactive-communications-overview.md)
+* [Imprimir ](/help/forms/using/web-channel-print-channel.md#printchannel) canal de Comunicações  [Interativas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de layout
 
@@ -49,7 +49,7 @@ Siga estas etapas para criar layouts para letras/imprimir canal de Comunicaçõe
    1. Para a seção Residência primária, adicione uma área de público alvo de espaço reservado. Esse espaço reservado está vinculado ao fragmento Residência primária no momento do design de letra/Comunicação interativa.
    1. Carregue o layout (e o fragmento, se houver, que usa o layout) no servidor AEM Forms.
 
-## Uso do schema {#using-schema}
+## Usando o schema {#using-schema}
 
 Você pode usar um schema em um fragmento de layout ou layout, mas ele não é necessário. Se você usar um schema, verifique o seguinte:
 
@@ -127,5 +127,5 @@ Quando elementos como o logotipo e o endereço de sua organização forem exibid
 
 Use o formato de renderização do servidor do layout para Formulário XML dinâmico; caso contrário, as letras/Comunicações interativas baseadas neste layout não poderão ser renderizadas corretamente. Por padrão, o formato de renderização do servidor no Forms Designer é definido como Formulário XML dinâmico. Para garantir que você esteja usando o formato correto:
 
-* No Designer, clique em **[!UICONTROL Arquivo > Propriedades do formulário > Padrão]** e verifique se a configuração Renderizar/Formato PDF está definida como Formulário XML dinâmico.
+* No Designer, clique em **[!UICONTROL Arquivo > Propriedades do formulário > Padrão]** e verifique se a configuração Renderização/Formato do PDF está definida como Formulário XML dinâmico.
 
