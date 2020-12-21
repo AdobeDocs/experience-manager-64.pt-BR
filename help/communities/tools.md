@@ -27,11 +27,11 @@ Em autor, para acessar o console de ferramentas Comunidades:
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Modelos](sites.md) de site - Console para criação e gerenciamento de modelos de site
-* [Modelos](tools-groups.md)de grupo - Console para criação e gerenciamento de modelos de grupo
-* [Funções](functions.md)da comunidade - Console para criação e gerenciamento de funções da comunidade
-* [Configuração](srp-config.md) do Armazenamento - Console para configuração e seleção do SRP [padrão](working-with-srp.md)
+* [Modelos](sites.md)  de site - Console para criação e gerenciamento de modelos de site
+* [Modelos](tools-groups.md) de grupo - Console para criação e gerenciamento de modelos de grupo
+* [Funções](functions.md) da comunidade - Console para criação e gerenciamento de funções da comunidade
+* [Configuração](srp-config.md)  do armazenamento - Console para configuração e seleção do SRP  [padrão](working-with-srp.md)
 
-* [Guia](components-guide.md) de componentes - abre um site interativo que permite a experimentação de como os componentes do SCF funcionam e como eles podem ser configurados ou personalizados.
-* [Crachás](badges.md) - Console a partir do qual os símbolos personalizados podem ser adicionados para uso nas regras de [pontuação e marcação](implementing-scoring.md)
+* [Guia](components-guide.md)  de componentes - abre um site interativo que permite a experimentação de como os componentes do SCF funcionam e como eles podem ser configurados ou personalizados.
+* [Crachás](badges.md)  - Console a partir do qual os símbolos personalizados podem ser adicionados para uso nas regras de  [pontuação e marcação](implementing-scoring.md)
 
