@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Obtendo documentos XDP e PDF no AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
+# Obter documentos XDP e PDF no AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Visão geral {#overview}
 
@@ -27,17 +27,17 @@ ht-degree: 0%
 * PDF forms
 * Documento (documentos PDF simples)
 
-Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode fazer upload de um ativo do tipo `Resource`, somente ao lado de um formulário XFA em um arquivo ZIP.
+Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode carregar um ativo do tipo `Resource`, somente ao lado de um formulário XFA em um arquivo ZIP.
 
 >[!NOTE]
 >
->Certifique-se de que você é um membro do `form-power-users` grupo para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar um membro do grupo.
+>Certifique-se de que você seja um membro do grupo `form-power-users` para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar um membro do grupo.
 
-## Carregar formulários {#uploading-forms}
+## Carregando formulários {#uploading-forms}
 
 1. Faça logon na interface do usuário do AEM Forms acessando `https://[server]:[port]/aem/forms.html`.
 1. Navegue até a pasta onde deseja carregar o formulário ou a pasta que contém os formulários.
-1. Na barra de ferramentas de ações, toque em **Criar > Upload** de arquivo.
+1. Na barra de ferramentas de ações, toque em **Criar > Upload de arquivo**.
 
    ![Arquivos da opção armazenamento local em Criar](assets/step.png)
 
@@ -69,13 +69,13 @@ O modo protegido está ativado, por padrão. Se necessário, você pode desativa
 
 1. Efetue login no AEM Web Console como um administrador. O URL é `https://[server]:[port]/system/console/configMgr`
 1. Abra Configurações de Forms móvel para edição.
-1. Desmarque a opção Modo protegido e clique em **Salvar**. O modo protegido está desativado.
+1. Desmarque a opção Modo Protegido e clique em **Salvar**. O modo protegido está desativado.
 
 ## Atualização de formulários XFA referenciados {#updating-referenced-xfa-forms}
 
 No AEM Forms, um modelo de formulário XFA pode ser referenciado por um formulário adaptável ou outro modelo de formulário XFA. Além disso, um modelo pode fazer referência a um recurso ou outro modelo XFA.
 
-Um formulário adaptável referente a um XFA tem seus campos vinculados aos campos disponíveis no XFA. Ao atualizar um modelo de formulário, o formulário adaptativo associado tenta sincronizar com o XFA. Para obter mais detalhes, consulte [Sincronizar formulários adaptáveis com o XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)associado.
+Um formulário adaptável referente a um XFA tem seus campos vinculados aos campos disponíveis no XFA. Ao atualizar um modelo de formulário, o formulário adaptativo associado tenta sincronizar com o XFA. Para obter mais detalhes, consulte [Sincronizar formulários adaptáveis com o XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md) associado.
 
 Remover um modelo de formulário corrompe o formulário ou modelo de formulário adaptativo dependente. Um formulário tão adaptativo às vezes é chamado informalmente de formulário sujo. Na interface do usuário do AEM Forms, você pode encontrar os formulários sujos das duas maneiras a seguir.
 
@@ -85,7 +85,7 @@ Remover um modelo de formulário corrompe o formulário ou modelo de formulário
 
 ![Aviso para um formulário adaptativo fora de sincronização após atualizar o XFA associado](assets/dirtyaf.png)
 
-Um sinalizador é mantido para indicar se um formulário adaptável está sujo. Essas informações estão disponíveis na página de propriedades do formulário, juntamente com os metadados do formulário. Somente para formulários adaptativos sujos, uma propriedade de metadados `Model Refresh` exibe o `Recommended` valor.
+Um sinalizador é mantido para indicar se um formulário adaptável está sujo. Essas informações estão disponíveis na página de propriedades do formulário, juntamente com os metadados do formulário. Somente para formulários adaptativos sujos, uma propriedade de metadados `Model Refresh` exibe `Recommended` o valor.
 
 ![Indicação de que um formulário adaptativo está dessincronizado com o modelo XFA](assets/model-refresh.png)
 
