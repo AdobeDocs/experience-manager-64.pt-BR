@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Você pode alterar a fonte exibida na área de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário de forma seletiva.
 
-Siga as etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md) do espaço de trabalho AEM Forms e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
+Siga as [etapas genéricas para personalização do espaço de trabalho AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
 
 1. Altere ou adicione a família de fontes em um estilo existente.
 1. Altere ou adicione a família de fontes em linha para o elemento HTML.
@@ -30,7 +30,7 @@ Siga as etapas [genéricas para personalização](/help/forms/using/generic-step
 
 Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação superior para Courier New, siga estas etapas:
 
-1. Efetue login no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Faça logon no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Faça uma das seguintes opções:
 
    1. Para alterar a família de fontes em um estilo existente, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
@@ -41,7 +41,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
       }
       ```
 
-   1. Para adicionar a família de fontes em linha para o elemento HTML, copie o `/libs/ws/js/runtime/templates/appnavigation.html` arquivo para `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Para adicionar a família de fontes em linha para o elemento HTML, copie o arquivo `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
@@ -77,6 +77,8 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
 1. Reinicie o espaço de trabalho e limpe o cache do navegador para que as alterações fiquem visíveis.
 
-![change_font_before](assets/change_font_before.png)**Figura:** *Barra de navegação superior antes da personalização de fontes*
+![change_font_](assets/change_font_before.png)
+**beforeFigure:Barra de navegação** *superior antes da personalização de fontes*
 
-![change_font_after](assets/change_font_after.png)**Figura:** *Barra de navegação superior após personalização da primeira guia*
+![change_font_](assets/change_font_after.png)
+**afterFigure:Barra de navegação** *superior após a personalização da primeira guia*
