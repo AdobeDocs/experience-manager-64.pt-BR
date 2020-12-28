@@ -73,7 +73,7 @@ Existem dois métodos para a ativação de uma página:
 1. No console Sites, selecione a página que deseja ativar.
 1. Selecione **Ativar**, no menu superior ou no suspenso, no item da página selecionada.
 
-   Para ativar o conteúdo da página e todas as suas subpáginas, use o [** console Ferramentas **](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Para ativar o conteúdo da página e todas as suas subpáginas, use o [**console Ferramentas**](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
@@ -83,7 +83,7 @@ Existem dois métodos para a ativação de uma página:
 
 1. Se necessário, o AEM solicita que você ative ou ative novamente quaisquer ativos relacionadas com a página. É possível selecionar ou desmarcar as caixas de seleção para ativar esses ativos.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
 1. O AEM WCM ativa o conteúdo selecionado. A página ou páginas publicadas aparecem no console [Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado em verde) com as informações sobre quem ativou o conteúdo, bem como a data e a hora da ativação.
 
@@ -122,7 +122,7 @@ Para desativar uma página:
 Para agendar a ativação para um momento posterior:
 
 1. No console Sites, vá para o menu **Ativar** e selecione **Ativar mais tarde**.
-1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
+1. Na caixa de diálogo que é aberta, forneça a data e a hora para a ativação e clique em **OK**. Isso cria uma versão da página que é ativada no horário especificado.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -130,13 +130,13 @@ Ao ativar mais tarde, um fluxo de trabalho é iniciado para ativar esta versão 
 
 Caso deseje cancelar essa ativação/desativação, acesse o console [Fluxo de trabalho ](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) para encerrar o fluxo de trabalho correspondente.
 
-### Desativar mais tarde {#deactivate-later}
+### Desativar mais tarde  {#deactivate-later}
 
 Para agendar a desativação para um momento posterior:
 
-1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
+1. No console Sites, vá para o menu **Desativar** e selecione **Desativar mais tarde**.
 
-1. In the dialog that opens you provide the date and time for deactivation and click **OK**.
+1. Na caixa de diálogo que é aberta, forneça a data e a hora para a desativação e clique em **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
@@ -144,7 +144,7 @@ Para agendar a desativação para um momento posterior:
 
 Caso deseje cancelar essa desativação, acesse o console [Fluxo de trabalho ](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) para encerrar o fluxo de trabalho correspondente.
 
-## Ativação/Desativação agendada (Tempo desligado/ligado) {#scheduled-activation-deactivation-on-off-time}
+## Ativação/Desativação agendada (Tempo desligado/ligado)  {#scheduled-activation-deactivation-on-off-time}
 
 Você pode agendar horários para publicar/desfazer a publicação de uma página usando o **Tempo ligado** e **Tempo desligado** que podem ser definidos nas [Propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -152,21 +152,21 @@ Você pode agendar horários para publicar/desfazer a publicação de uma págin
 
 O status pode ser visualizado no [console Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). As cores indicam o status da publicação.
 
-## Ativar uma seção completa (árvore) do seu site {#activating-a-complete-section-tree-of-your-website}
+## Ativar uma seção completa (árvore) do seu site  {#activating-a-complete-section-tree-of-your-website}
 
 Na guia **Sites** é possível ativar as páginas individuais. Ao entrar ou atualizar um número considerável de páginas de conteúdo - todos residentes na mesma página raiz - pode ser mais fácil ativar toda a árvore em uma ação. Também é possível a execução de prática para emular uma ativação e destacar quais as páginas foram ativadas.
 
-1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `http://localhost:4502/etc/replication.html`).
+1. Abra o console **Ferramentas** selecionando-o na página **Bem-vindo** e, em seguida, clique com o duplo **Replicação** para abrir o console ( `http://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. No console **Replicação**, clique na **árvore Activate**.
 
-   The following window ( `http://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
+   A seguinte janela ( `http://localhost:4502/etc/replication/treeactivation.html`) será exibida.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Enter the **Start Path**. This specifies the path to the root of the section you want to activate (publish). This page and all pages underneath are considered for activation (or used in the emulation if a Dry Run is selected).
+1. Insira **Caminho do Start**. Isso especifica o caminho para a raiz da seção que você deseja ativar (publicar). Esta página e todas as páginas abaixo são consideradas para ativação (ou usadas na emulação se uma Execução de prática for selecionada).
 1. Ative os critérios de seleção conforme necessário:
 
    * **Somente modificados**: ativar apenas as páginas que foram modificadas.
@@ -175,6 +175,6 @@ Na guia **Sites** é possível ativar as páginas individuais. Ao entrar ou atua
 
 1. Selecione a ação que deseja executar:
 
-   1. Select **Dry Run** if you want to check which pages *would* be activated. This is only an emulation, no pages will be activated.
-   1. Select **Activate** if you want to activate the pages.
+   1. Selecione **Execução de prática** se quiser verificar quais páginas *iriam* serão ativadas. Isto é apenas uma emulação, nenhuma página será ativada.
+   1. Selecione **Ativar** se quiser ativar as páginas.
 
