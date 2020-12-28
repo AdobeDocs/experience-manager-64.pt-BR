@@ -38,7 +38,7 @@ Todas as funcionalidades são implementadas usando os serviços Web nativos do S
 >
 >O SharePoint Connector também é suportado com o AEM 6.1 service pack 2. O conector não suporta mais a montagem do repositório virtual e, portanto, não pode ser montado. Se você quiser acessar o repositório do Sharepoint usando APIs Java, use a implementação do repositório JCR do conector do Sharepoint no seu projeto.
 >
->As operações de instalação, configuração, gerenciamento e TI do servidor SharePoint e da infraestrutura de TI relacionada estão fora do escopo deste documento. Consulte a documentação do fornecedor no [SharePoint](https://www.microsoft.com/sharepoint) para obter informações sobre esses tópicos. O conector exige que essas partes da infraestrutura sejam instaladas, configuradas e operadas corretamente.
+>As operações de instalação, configuração, gerenciamento e TI do servidor SharePoint e da infraestrutura de TI relacionada estão fora do escopo deste documento. Consulte a documentação do fornecedor em [SharePoint](https://www.microsoft.com/sharepoint) para obter informações sobre esses tópicos. O conector exige que essas partes da infraestrutura sejam instaladas, configuradas e operadas corretamente.
 
 
 ## Introdução {#getting-started}
@@ -47,13 +47,13 @@ Para começar a usar o conector, faça o seguinte:
 
 * Verifique se você tem pelo menos o Java 7 instalado.
 * Baixe o arquivo de distribuição do pacote do conector do Compartilhamento de pacotes.
-* Copie um arquivo *license.properties* válido para o diretório que contém o arquivo *cq-quickstart-6.4.0.jar* .
+* Copie um arquivo *license.properties* válido para o diretório que contém o arquivo *cq-quickstart-6.4.0.jar*.
 
-* Clique/toque no Duplo .jar para AEM de start ou start-o da linha de comando.
+* Clique/toque no duplo .jar para AEM de start ou start-o da linha de comando.
 * Instale o pacote do conector do Gerenciador de pacotes.
 * Configure as opções do conector.
 
-## Instalação do conector do SharePoint {#installing-sharepoint-connector}
+## Instalando o conector do SharePoint {#installing-sharepoint-connector}
 
 O conector é um pacote de conteúdo que facilita a instalação. Instale o pacote usando o Package Manager e defina o URL do servidor SharePoint\
 e outras opções de configuração. O conteúdo do SharePoint está disponível no repositório AEM.
@@ -68,7 +68,7 @@ O conector exige o seguinte:
 * Credenciais e permissões do usuário para repositórios CRX e SharePoint
 * [Plataformas suportadas](#supported-platforms)
 
-O conector do SharePoint está disponível para download a partir do [compartilhamento de pacotes](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+O conector do SharePoint está disponível para download a partir de [packageshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Plataformas compatíveis {#supported-platforms}
 
@@ -87,13 +87,13 @@ O conector suporta o seguinte:
 
 >[!NOTE]
 >
->O conector só suporta configurações oficialmente suportadas pela Microsoft. Consulte os requisitos de sistema [MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) e [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx) .
+>O conector só suporta configurações oficialmente suportadas pela Microsoft. Consulte [Requisitos de sistema do MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) e [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx).
 
 ### Instalação padrão {#standard-installation}
 
-AEM Compartilhamento de pacotes é usado para distribuir recursos de produtos, exemplos e hot fixes. Para obter detalhes, consulte a documentação [Compartilhamento de](/help/sites-administering/package-manager.md#package-share)pacotes.
+AEM Compartilhamento de pacotes é usado para distribuir recursos de produtos, exemplos e hot fixes. Para obter detalhes, consulte a documentação [Compartilhamento de pacotes](/help/sites-administering/package-manager.md#package-share).
 
-Para acessar o Compartilhamento de pacotes na página de boas-vindas AEM, toque/clique em **Ferramentas** e selecione Compartilhamento **de** pacotes. Você precisa de um Adobe ID válido que inclua seu endereço de e-mail de empresa. Além disso, depois de fazer logon em sua conta, solicite acesso ao Compartilhamento de pacotes.
+Para acessar o Compartilhamento de pacotes na página de boas-vindas AEM, toque/clique em **Ferramentas** e selecione **Compartilhamento de pacotes**. Você precisa de um Adobe ID válido que inclua seu endereço de e-mail de empresa. Além disso, depois de fazer logon em sua conta, solicite acesso ao Compartilhamento de pacotes.
 
 #### Integração com AEM {#integrating-with-aem}
 
@@ -102,13 +102,13 @@ Para instalar o pacote de conteúdo do conector.
 1. Abra um ticket de suporte ao Adobe para solicitar o pacote de recursos do conector.
 1. Baixe o pacote quando ele estiver disponível e abra o Package Manager para sua instância de AEM.
 1. Toque/clique em **Instalar** na página de descrição do pacote.
-1. Na caixa de diálogo **Instalar pacote** , toque/clique em **Instalar**.
+1. Na caixa de diálogo **Instalar pacote**, toque/clique em **Instalar**.
 
    **Observação**: Verifique se você está conectado como administrador.
 
 1. Quando o pacote estiver instalado, toque/clique em **Fechar**.
 
-## Configuração do conector do SharePoint {#configuring-sharepoint-connector}
+## Configurando o conector do SharePoint {#configuring-sharepoint-connector}
 
 Depois de instalar o conector SharePoint, configure o aplicativo e as camadas do SharePoint para o conector.
 
@@ -119,10 +119,10 @@ Defina o URL do servidor SharePoint para tornar o repositório do SharePoint com
 Para definir o URL do servidor SharePoint e as opções avançadas, execute estas etapas:
 
 1. Navegue até o Console de Gerenciamento OSGi: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Procure o conjunto **Day JCR Connector for Microsoft Sharepoint** .
+1. Procure pelo pacote **Day JCR Connector for Microsoft Sharepoint**.
 1. Edite os valores de configuração.
-1. Defina o URL do SharePoint Server como o valor de **Espaços de Trabalho**.
-1. Tap/click **Save**.
+1. Defina o URL do SharePoint Server como o valor de **Workspaces**.
+1. Toque/clique em **Salvar**.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -189,7 +189,7 @@ Como opção, você pode configurar o atraso de sincronização entre diferentes
 1. Defina o valor do Período de sincronização (em segundos).
 1. Clique em Salvar.
 
-### Configuração da autenticação {#configuring-authentication}
+### Configurando a autenticação {#configuring-authentication}
 
 O Sharepoint inclui os métodos de autenticação Classic e Claims Based, que são compatíveis com os seguintes tipos de autenticação:
 
@@ -220,10 +220,10 @@ Ir para: [http://localhost:4502/system/console/bundles](http://localhost:4502/sy
 
 **Configuração da autenticação básica (Windows)**
 
-1. [Desative a autenticação](#disable-token-authentication)do token.
+1. [Desative a autenticação](#disable-token-authentication) do token.
 1. Vá para [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Clique em OSGI > Configuração.
-1. Procure **Day JCR Connector for Microsoft Sharepoint**.
+1. Procure **Conector JCR de Dia para Microsoft Sharepoint**.
 1. Clique em `Edit the configuration values`.
 1. Defina o valor de Sharepoint Connection Fatory como `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Clique em **Salvar**.
@@ -248,10 +248,10 @@ Para adicionar o usuário ao grupo de administradores:
 1. Ir para a Administração de grupos
 1. Clique no nó &quot;a&quot;
 1. Clique em &quot;administradores&quot;
-1. Digite a ID do usuário criada acima na caixa de texto antes do botão **Procurar**
+1. Digite a ID de usuário criada acima na caixa de texto antes do botão **Procurar**
 1. Clique no símbolo de marca de verificação verde para adicionar o usuário ao grupo administrativo
 
-### Desativar autenticação de token {#disable-token-authentication}
+### Desativar Autenticação de Token {#disable-token-authentication}
 
 1. Baixe e instale o pacote `basic auth`. `zip` do Compartilhamento de pacotes.
 
@@ -264,14 +264,14 @@ Para adicionar o usuário ao grupo de administradores:
 
 #### Suporte a diferentes métodos de autenticação do servidor SharePoint {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-Na versão padrão, o conector suporta a autenticação padrão do IIS **Windows** (Básica) e a autenticação baseada em Forms (baseada em token). Os [outros métodos](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) de autenticação podem ser suportados pelo mecanismo de extensibilidade.
+Em sua versão padrão, o conector suporta a autenticação padrão IIS **Windows** (Básica) e a autenticação baseada em Forms (baseada em token). Os [outros métodos de autenticação](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) podem ser suportados através do mecanismo de extensibilidade.
 
 As etapas a seguir fornecem orientações sobre a extensão da autenticação padrão para suportar vários métodos de autenticação do servidor SharePoint:
 
-1. Implemente `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` para lidar com o lado do cliente do processo de autenticação específico.
-1. Instale a `SharepointConnectionFactory` implementação como um pacote de fragmentos com o host do fragmento `com.day.crx.spi.crx2sharepoint-bundle`.
+1. Implemente `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` para lidar com o lado do cliente do seu processo de autenticação específico.
+1. Instale a implementação `SharepointConnectionFactory` como um pacote de fragmentos com o host de fragmento `com.day.crx.spi.crx2sharepoint-bundle`.
 
-   Ao usar o Maven, adapte a seguinte configuração do `maven-bundle-plugin` para os requisitos do seu projeto:
+   Ao usar o Maven, adapte a seguinte configuração do `maven-bundle-plugin` aos requisitos do seu projeto:
 
    ```xml
               <plugin>
@@ -292,7 +292,7 @@ As etapas a seguir fornecem orientações sobre a extensão da autenticação pa
               </plugin>
    ```
 
-1. Registre a `SharepointConnectionFactory` implementação na configuração do conector. Na janela de configuração do conector, clique em Opções **** avançadas. No campo For **Sharepoint Connection Fatory** , especifique o nome da implementação `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
+1. Registre a implementação `SharepointConnectionFactory` na configuração do conector. Na janela de configuração do conector, clique em **Opções avançadas**. No campo para **Sharepoint Connection Fatory**, especifique o nome da implementação `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
 
 1. Reinicie o conector.
 
