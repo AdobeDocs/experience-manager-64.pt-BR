@@ -18,7 +18,7 @@ ht-degree: 33%
 ---
 
 
-# Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
+# Usar o Editor de Rich Text para criar conteúdo {#using-the-rich-text-editor-to-author-content}
 
 O Editor de Rich Text (RTE) é um elemento básico fundamental para a criação de texto em AEM páginas. Muitos componentes, como Texto, Texto e Imagem, e Tabela, são baseados no RTE.
 
@@ -28,7 +28,7 @@ O Editor de Rich Text (RTE) é um elemento básico fundamental para a criação 
 
 ## Edição no local {#in-place-editing}
 
-Selecionar um componente baseado em texto com um único toque ou clique revela a barra de ferramentas [do](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)componente.
+Selecionar um componente baseado em texto com um único toque ou clique revela a [barra de ferramentas do componente](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste).
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -58,7 +58,7 @@ Para componentes baseados em texto, selecionar o modo de tela cheia na barra de 
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-O modo de tela inteira mostra todas as opções do editor de Rich Text, que são configuradas pelo administrador. Elas podem variar AEM instâncias, [dependendo da configuração](../sites-administering/rich-text-editor.md) fornecida pelos administradores ou AEM desenvolvedores. Se encontrar uma opção ausente, peça ao administrador para disponibilizá-la.
+O modo de tela inteira mostra todas as opções do editor de Rich Text, que são configuradas pelo administrador. Elas podem variar entre AEM instâncias [dependendo da configuração](../sites-administering/rich-text-editor.md) fornecida pelos administradores ou AEM desenvolvedores. Se encontrar uma opção ausente, peça ao administrador para disponibilizá-la.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
