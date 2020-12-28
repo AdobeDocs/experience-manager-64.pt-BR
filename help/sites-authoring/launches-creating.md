@@ -23,7 +23,7 @@ ht-degree: 93%
 
 Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem:
 
-* The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
+* O título aparece no painel [Referências](/help/sites-authoring/author-environment-tools.md#references), a partir do qual os autores podem acessá-los para trabalhar neles.
 * As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar apenas a página de origem, se desejar.
 * Por padrão, a [Live Copy](/help/sites-administering/msm.md) atualiza automaticamente as páginas de lançamento conforme as páginas de origem são alteradas. Você pode especificar que uma cópia estática seja criada para evitar alterações automáticas.
 
@@ -85,7 +85,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
    * **Título do lançamento**: o nome do lançamento. O nome deve ser significativo para os autores.
    * **com conteúdo existente**: o conteúdo original será usado para criar o lançamento.
    * **usar um novo modelo para substituir a página**: consulte[ Criar lançamento com o novo modelo](#create-launch-with-new-template) para obter mais detalhes.
-   * **Herdar dados online de página fonte:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de lançamento quando as páginas de origem forem alteradas. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Herdar dados online de página fonte:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de lançamento quando as páginas de origem forem alteradas. Essa opção consegue isso fazendo com que a inicialização seja uma [live copy](/help/sites-administering/msm.md).
 
       Por padrão, esta opção é selecionada.
 
@@ -97,8 +97,8 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    Se retornar ao console (com a opção **Concluído**), poderá visualizar (e acessar) seu lançamento:
 
-   * o [****console Lançamentos](/help/sites-authoring/launches.md#the-launches-console)
-   * das [**Referências **no console** Sites **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * o [**** console Lançamentos](/help/sites-authoring/launches.md#the-launches-console)
+   * das [**Referências** no console **Sites** ](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Criar lançamento com o novo modelo {#create-launch-with-new-template}
 
@@ -135,7 +135,7 @@ Criar um lançamento aninhado (um lançamento dentro de outro) permite criar um 
 
 #### Criação de um lançamento aninhado - Console Lançamentos {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+Criar uma inicialização aninhada do console **Inicializações** é basicamente o mesmo que criar qualquer outra forma de inicialização, com a exceção de que você precisa navegar até a ramificação de inicializações `/content/launches`:
 
 1. No console **Lançamentos** selecione **Criar**.
 1. Selecione **Adicionar páginas** e navegue até a ramificação de inicializações especificando `/content/launches` no filtro. Selecione a inicialização necessária e confirme com **Selecionar**:
