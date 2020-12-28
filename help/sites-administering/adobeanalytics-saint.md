@@ -2,7 +2,7 @@
 title: redirecionamento (exportador SAINT)
 seo-title: redirecionamento (exportador SAINT)
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 15f28f78-b411-40c9-9fb5-8129bea27687
 contentOwner: aheimoz
 discoiquuid: 60441aa0-2a45-4282-ada5-351a15bc08a1
@@ -17,5 +17,5 @@ ht-degree: 18%
 ---
 
 
-# redirecionamento (exportador SAINT){#redirect-saint-exporter}
+# redirecionamento (Exportador de SAINT){#redirect-saint-exporter}
 
