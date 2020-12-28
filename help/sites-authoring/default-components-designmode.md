@@ -2,7 +2,7 @@
 title: Configuração dos componentes no Modo de design
 seo-title: Configuração dos componentes no Modo de design
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -36,7 +36,7 @@ Além destes, outros componentes também estarão disponíveis. Você pode usar 
 >
 >O modo de design só está disponível para configurações de design armazenadas como conteúdo em ( `/etc`).
 >
->Starting in AEM 6.4, it is recommended to store designs as configuration data under `/apps` to support continuous deployment scenarios. Designs stored under `/apps` are not editable at runtime and the Design mode will not be available to non-admin users for such templates.
+>A partir do AEM 6.4, é recomendável armazenar designs como dados de configuração em `/apps` para suportar cenários de implantação contínua. Os designs armazenados em `/apps` não são editáveis no tempo de execução e o modo Design não estará disponível para usuários não administradores para esses modelos.
 
 Isso envolve adicionar ou remover os componentes permitidos no sistema de parágrafos da página. O sistema de parágrafo (`parsys`) é um componente composto que contém todos os outros componentes de parágrafo. O sistema de parágrafo permite aos autores adicionar componentes de diferentes tipos em uma página, pois contêm todos os outros componentes de parágrafo. Cada tipo de parágrafo é representado como um componente.
 
@@ -69,7 +69,7 @@ Para ativar ou desativar um componente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. Clique ou toque no ícone **Pai**.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -92,7 +92,7 @@ Para ativar ou desativar um componente:
 
    **Componentes permitidos**
 
-   On the **Allowed Components** tab, you define which components are available for the parsys.
+   Na guia **Componentes permitidos**, você define quais componentes estão disponíveis para o parsys.
 
    * Os componentes são agrupados por seus grupos de componentes, que podem ser expandidos e recolhidos.
    * Para selecionar um grupo inteiro, marque o nome do grupo. Para cancelar a seleção, desmarque.
@@ -110,7 +110,7 @@ Para ativar ou desativar um componente:
 
    Na guia **Configurações**, é possível definir opções adicionais como para desenhar uma âncora para cada componente e definir o preenchimento da célula de cada contêiner.
 
-1. Select **Done** to save your configuration.
+1. Selecione **Done** para salvar sua configuração.
 
 ## Configuração do design de um componente {#configuring-the-design-of-a-component}
 
