@@ -34,7 +34,7 @@ Para promover páginas, realize as etapas a seguir ao editar a página de lança
 1. Na guia **Página** no Sidekick, clique em **Promover lançamento**.
 1. Especifique as páginas que serão promovidas:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
+   * (Padrão) Para promover somente a página atual, selecione **Promover alterações na página para a versão de produção**.
    * Para também promover as páginas-filho da página atual, selecione **Incluir subpáginas**.
    * Para promover todas as páginas do lançamento, selecione **Promover o lançamento completo para a versão de produção**.
 
