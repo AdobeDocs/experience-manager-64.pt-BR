@@ -22,18 +22,18 @@ ht-degree: 7%
 
 Os visitantes individuais do seu site só podem ser identificados quando você fornecer a capacidade para eles fazerem logon. Há várias razões pelas quais você pode desejar fornecer um recurso de logon:
 
-* [AEM](/help/communities/overview.md)CommunitiesOs visitantes do site são solicitados a fazer logon para publicar conteúdo na comunidade.
+* [AEM ](/help/communities/overview.md)CommunitiesOs visitantes do site são solicitados a fazer logon para publicar conteúdo na comunidade.
 * [Grupos de usuários fechados](/help/sites-administering/cug.md)
 
    Talvez seja necessário limitar o acesso ao seu site (ou seções dele) a visitantes específicos.
 
-* [Personalização](/help/sites-administering/personalization.md) Permite que os visitantes configurem certos aspectos de como acessam seu site.
+* [](/help/sites-administering/personalization.md) PersonalizaçãoPermite que os visitantes configurem certos aspectos de como acessam seu site.
 
-A funcionalidade de logon (e saída) é fornecida por uma [conta com um **Perfil **](#profiles-and-user-accounts), que contém informações adicionais sobre o visitante registrado (usuário). Os processos reais de registro e autorização podem diferir:
+A funcionalidade de logon (e saída) é fornecida por uma conta [com um **Perfil**](#profiles-and-user-accounts), que contém informações adicionais sobre o visitante registrado (usuário). Os processos reais de registro e autorização podem diferir:
 
 * Autoinscrição no website
 
-   Um Site [da](/help/communities/sites-console.md) comunidade pode ser configurado para permitir que os visitantes se registrem automaticamente ou façam logon com suas contas do Facebook ou Twitter.
+   Um [Site da comunidade](/help/communities/sites-console.md) pode ser configurado para permitir que os visitantes se registrem automaticamente ou façam logon com suas contas do Facebook ou Twitter.
 
 * Pedido de registro no sítio web
 
@@ -52,7 +52,7 @@ Funcionalidade adicional pode ser configurada ou desenvolvida:
 
 >[!NOTE]
 >
->As informações especificadas no perfil também podem ser usadas para fornecer ao usuário conteúdo direcionado por meio de [Segmentos](/help/sites-administering/campaign-segmentation.md) e [Campanhas](/help/sites-authoring/personalization.md).
+>As informações especificadas no perfil também podem ser usadas para fornecer ao usuário conteúdo direcionado via [Segmentos](/help/sites-administering/campaign-segmentation.md) e [Campanha](/help/sites-authoring/personalization.md).
 
 ## Forms de inscrição {#registration-forms}
 
@@ -67,13 +67,13 @@ Ao enviar a solicitação, a página do perfil é aberta onde o usuário pode fo
 
 ![profilepage](assets/profilepage.png)
 
-A nova conta também está visível no console [](/help/sites-administering/security.md)Usuários.
+A nova conta também está visível no [console Usuários](/help/sites-administering/security.md).
 
 ## Logon {#login}
 
 O componente de logon pode ser usado para coletar as informações de logon e, em seguida, ativar o processo de logon.
 
-Isso fornece ao visitante os campos padrão de Nome de **usuário** e **Senha**, com um botão **Logon** para ativar o processo de logon quando as credenciais forem inseridas.
+Isso fornece ao visitante os campos padrão de **Nome de usuário** e **Senha**, com um botão **Logon** para ativar o processo de logon quando as credenciais forem inseridas.
 
 Por exemplo, os usuários podem fazer logon ou criar uma nova conta usando a opção **Fazer logon** na barra de ferramentas do Geometrixx, que usa a página:
 
@@ -85,7 +85,7 @@ Por exemplo, os usuários podem fazer logon ou criar uma nova conta usando a op�
 
 Como há um mecanismo de logon, também é necessário um mecanismo de logout. Isso está disponível como a opção **Sair** no Geometrixx.
 
-## Exibição e atualização de um Perfil {#viewing-and-updating-a-profile}
+## Exibindo e Atualizando um Perfil {#viewing-and-updating-a-profile}
 
 Dependendo do formulário de inscrição, o visitante pode ter registrado informações no perfil. Devem ser capazes de visualização e/ou de atualizar esta informação numa fase posterior. Isso pode ser feito com uma forma semelhante; por exemplo, em Geometrixx:
 
@@ -93,10 +93,10 @@ Dependendo do formulário de inscrição, o visitante pode ter registrado inform
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Para ver os detalhes do seu perfil, clique em **Meu Perfil** no canto superior direito de qualquer página; por exemplo, com a `admin` conta:\
+Para ver os detalhes do seu perfil, clique em **Meu Perfil** no canto superior direito de qualquer página; por exemplo, com a conta `admin`:\
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-Você pode visualização outro perfil usando o contexto [do](/help/sites-administering/client-context.md) cliente (no ambiente do autor e com privilégios suficientes):
+Você pode visualização outro perfil usando o [contexto do cliente](/help/sites-administering/client-context.md) (no ambiente do autor e com privilégios suficientes):
 
 1. Abrir uma página; por exemplo, a página de Geometrixx:
 
@@ -104,7 +104,7 @@ Você pode visualização outro perfil usando o contexto [do](/help/sites-admini
 
 1. Clique em **Meu Perfil** no canto superior direito. Você verá o perfil da sua conta atual; por exemplo, o administrador.
 1. Pressione **control-alt-C** para abrir o contexto do cliente.
-1. No canto superior esquerdo do contexto do cliente, clique no botão **Carregar um Perfil** .
+1. No canto superior esquerdo do contexto do cliente, clique no botão **Carregar um Perfil**.
 
    ![](do-not-localize/loadprofile.png)
 
@@ -116,23 +116,23 @@ Você pode visualização outro perfil usando o contexto [do](/help/sites-admini
 
 1. Agora você pode usar **Editar Perfil** ou **Alterar senha** para atualizar os detalhes.
 
-## Adicionar campos à definição do Perfil {#adding-fields-to-the-profile-definition}
+## Adicionar campos à definição de Perfil {#adding-fields-to-the-profile-definition}
 
 É possível adicionar campos à definição do perfil. Por exemplo, para adicionar um campo &quot;Cor favorita&quot; ao perfil do Geometrixx:
 
 1. No console Sites, navegue até Geometrixx Outdoors Site > Inglês > Usuário > Meu Perfil.
 
-1. Clique com o Duplo na página **Meu Perfil** para abri-lo para edição.
+1. Clique com o duplo na página **Meu Perfil** para abri-lo para edição.
 
-1. Na guia **Componentes** do sidekick, expanda a seção **Formulário** .
+1. Na guia **Components** do sidekick, expanda a seção **Formulário**.
 
-1. Arraste uma Lista **suspensa do sidekick para o formulário, logo abaixo do campo** Sobre mim **** .
+1. Arraste uma **Lista suspensa** do sidekick para o formulário, logo abaixo do campo **Sobre mim**.
 
-1. Clique com o Duplo no componente de Lista **** suspensa para abrir a caixa de diálogo para configuração e digite:
+1. Clique com o duplo no componente **Lista suspensa** para abrir a caixa de diálogo para configuração e insira:
 
    * **Nome do elemento** - `favoriteColor`
    * **Título** - `Favorite Color`
-   * **Itens** - Adicionar várias cores como itens
+   * **Itens**  - Adicionar várias cores como itens
 
    Clique em **OK** para salvar.
 
@@ -146,9 +146,9 @@ Você pode visualização outro perfil usando o contexto [do](/help/sites-admini
 
    ![aparkercrxdelite](assets/aparkercrxdelite.png)
 
-## Estados Perfis {#profile-states}
+## Estados do perfil {#profile-states}
 
-Há vários casos de uso que exigem saber se um usuário (ou melhor, seu perfil) está em um estado ** específico ou não.
+Há vários casos de uso que exigem saber se um usuário (ou melhor, seu perfil) está em um *estado específico* ou não.
 
 Isso envolve definir uma propriedade apropriada no perfil do usuário de uma forma que:
 
@@ -188,13 +188,13 @@ Os provedores de estado gerenciam uma propriedade de perfil e seus estados.
 
 ## Perfis e contas de usuário {#profiles-and-user-accounts}
 
-Os Perfis são armazenados no Repositório de conteúdo como parte da conta [do](/help/sites-administering/user-group-ac-admin.md)usuário.
+Os perfis são armazenados no Repositório de conteúdo como parte da [conta de usuário](/help/sites-administering/user-group-ac-admin.md).
 
 O perfil pode ser encontrado em `/home/users/geometrixx`:
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
-Em uma instalação padrão (autor ou publicação), todos têm acesso de leitura a todas as informações do perfil de todos os usuários. todos são um &quot;grupo *incorporado&quot; que contém automaticamente todos os usuários e grupos existentes. A lista dos membros não pode ser editada*&quot;.
+Em uma instalação padrão (autor ou publicação), todos têm acesso de leitura a todas as informações do perfil de todos os usuários. todos são um grupo &quot;*incorporado que contém automaticamente todos os usuários e grupos existentes. A lista de membros não pode ser editada*&quot;.
 
 Esses direitos de acesso são definidos pela seguinte ACL curinga:
 
