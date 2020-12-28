@@ -31,14 +31,14 @@ Este documento descreve como criar mapeamentos de formulário personalizados. Qu
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-See [Integrating AEM with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) for more information.
+Consulte [Integração de AEM com o Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) para obter mais informações.
 
 ## Criação de mapeamentos de formulário personalizados {#creating-custom-form-mappings-2}
 
 Para criar mapeamentos de formulário personalizados, é necessário seguir essas etapas de alto nível, descritas detalhadamente nas seguintes seções:
 
 1. Crie uma tabela personalizada.
-1. Estende a tabela **semente** .
+1. Estende a tabela **semente**.
 1. Crie um mapeamento personalizado.
 1. Crie um delivery com base no mapeamento personalizado.
 1. Crie o formulário no AEM, que usará o delivery criado.
@@ -57,15 +57,15 @@ Start criando uma tabela personalizada no Adobe Campaign. Neste exemplo, estamos
 </element>
 ```
 
-Depois de criar a tabela evento, execute o assistente **para** Atualizar estrutura do banco de dados para criar a tabela.
+Depois de criar a tabela de eventos, execute o **Assistente para Atualizar a estrutura do banco de dados** para criar a tabela.
 
-### Extensão da tabela de sementes {#extending-the-seed-table}
+### Extensão da Tabela de Sementes {#extending-the-seed-table}
 
-No Adobe Campaign, toque/clique em **Adicionar** para criar uma nova extensão da tabela **Seeds addresses (nms)** .
+No Adobe Campaign, toque/clique em **Adicionar** para criar uma nova extensão da tabela **Seeds addresses (nms)**.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Agora, use os campos da tabela de **eventos** para estender a tabela de **propagação** :
+Agora, use os campos da tabela **evento** para estender a tabela **semente**:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -76,31 +76,31 @@ Agora, use os campos da tabela de **eventos** para estender a tabela de **propag
  </element>
 ```
 
-Depois disso, execute o assistente **de banco de dados** Update para aplicar as alterações.
+Depois disso, execute **Assistente de atualização de banco de dados** para aplicar as alterações.
 
-### Criando Target mapping personalizado {#creating-custom-target-mapping}
+### Criando Target mapping Personalizado {#creating-custom-target-mapping}
 
-Em **Administração/** Gerenciamento de Campanhas, vá para **Target mapping** e adicione um novo **Target mapping.**
+Em **Gerenciamento de administração/Campanha** t, vá para **Target mapping** e adicione um novo Mapeamento de T **destino.**
 
 >[!NOTE]
 >
->Certifique-se de usar um nome significativo para o nome **** Interno.
+>Certifique-se de usar um nome significativo para **Nome interno**.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-### Criação de um Template do delivery personalizado {#creating-a-custom-delivery-template}
+### Criando um Template do delivery personalizado {#creating-a-custom-delivery-template}
 
-Nesta etapa, você está adicionando um template do delivery que usa o **Target mapping** criado.
+Nesta etapa, você está adicionando um template do delivery que usa o Target mapping **criado**.
 
-Em **Recursos/Modelos**, navegue até o Template do delivery e duplicado do delivery AEM existente. Ao clicar em **Para**, selecione a opção Criar **Target mapping** de evento.
+Em **Resources/Templates**, navegue até o Template do delivery e duplicado o delivery AEM existente. Ao clicar em **To**, selecione o evento create **Target mapping**.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### Criação do formulário no AEM {#building-the-form-in-aem}
+### Criação do formulário em AEM {#building-the-form-in-aem}
 
-Em AEM, verifique se você configurou um Cloud Service em Propriedades **da** página.
+No AEM, certifique-se de ter configurado um Cloud Service em **Propriedades da página**.
 
-Em seguida, na guia **Adobe Campaign** , selecione o delivery que foi criado em [Criação de um Template do delivery](#creating-a-custom-delivery-template)personalizado.
+Em seguida, na guia **Adobe Campaign**, selecione o delivery que foi criado em [Criação de um Template do delivery personalizado](#creating-a-custom-delivery-template).
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -108,7 +108,7 @@ Ao configurar os campos, especifique nomes de elemento exclusivos para os campos
 
 Depois que os campos forem configurados, é necessário alterar manualmente o mapeamento.
 
-No CRXDE-lite, vá para o nó **jcr:content** (da página) e altere o valor **acMapping** para o nome interno do **Target mapping**.
+No CRXDE-lite, vá para o nó **jcr:content** (da página) e altere o valor **acMapping** para o nome interno do Target mapping **a5/>.**
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -116,17 +116,17 @@ Na configuração do formulário, marque a caixa de seleção para criar se não
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-### Envio do formulário {#submitting-the-form}
+### Enviando o formulário {#submitting-the-form}
 
 Agora é possível enviar o formulário e validar no Adobe Campaign se os valores são salvos.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 **&quot;Tipo inválido para o valor &#39;02/02/2015&#39; do elemento &#39;@eventdate&#39; (documento do tipo &#39;Evento ([adb:evento])&#39;)&quot;**
 
-Ao enviar o formulário, esse erro é registrado no **error.log** no AEM.
+Ao enviar o formulário, esse erro é registrado em **error.log** no AEM.
 
-Isso ocorre devido a um formato inválido para o campo de data. A solução alternativa é fornecer **aaaa-mm-dd** como valor.
+Isso ocorre devido a um formato inválido para o campo de data. A solução alternativa é fornecer **aaaa-mm-dd** como o valor.
 
