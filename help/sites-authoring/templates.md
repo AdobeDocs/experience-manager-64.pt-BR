@@ -41,7 +41,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam a
 
 >[!NOTE]
 >
->AEM 6.4.5.0 ou posterior é necessário para usar modelos editáveis com o Editor [](/help/sites-developing/spa-overview.md)SPA.
+>AEM 6.4.5.0 ou posterior é necessário para usar modelos editáveis com o [SPA Editor](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam a
 
 >[!CAUTION]
 >
->Pages and templates created with the **Templates Console** are not meant to be used with the classic UI and such use is not supported.
+>As páginas e modelos criados com o **Console de Modelos** não devem ser usados com a interface clássica, e esse uso não é suportado.
 
 ## Antes de começar {#before-you-start}
 
@@ -96,7 +96,7 @@ Devido à natureza de algumas tarefas, como a criação de uma pasta, um ambient
 
 As tarefas detalhadas neste documento estão listadas com a função responsável por levá-las.
 
-### Modelos editáveis e estáticos {#editable-and-static-templates}
+### Modelos editáveis e estáticos  {#editable-and-static-templates}
 
 O AEM agora oferece dois tipos básicos de modelos:
 
@@ -112,11 +112,11 @@ O AEM agora oferece dois tipos básicos de modelos:
    * Eles são [fornecidos por seus desenvolvedores](/help/sites-developing/page-templates-static.md) e, portanto, não podem ser criados ou editados por autores.
    * Eles são copiados para criar a nova página, mas nenhuma conexão dinâmica existe após essa ação (embora o nome do modelo seja registrado para a informações).
    * Use o [modo Design](/help/sites-authoring/default-components-designmode.md) para continuar com as propriedades de design.
-   * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
+   * Como a edição de modelos estáticos é a tarefa exclusiva de um desenvolvedor, consulte o documento do desenvolvedor [Modelos de página - Estático](/help/sites-developing/page-templates-static.md) para obter mais informações.
 
 Por definição, o console de modelo e o editor de modelo permitem apenas a criação e edição de modelos editáveis. Portanto, este documento foca exclusivamente nos modelos editáveis.
 
-### Usar um modelo para criar uma página {#using-a-template-to-create-a-page}
+### Usar um modelo para criar uma página  {#using-a-template-to-create-a-page}
 
 Ao usar um modelo para [criar uma nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page), não há diferenças visíveis e nenhuma indicação entre os modelos estáticos e editáveis. Para o autor da página, o processo é transparente.
 
@@ -157,7 +157,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools** -> **General**) then navigate to the required folder.
+1. Abra o **Console de Modelos** (via **Ferramentas** -> **Geral**) e navegue até a pasta necessária.
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >
    >Quando um modelo novo for criado, ele será marcado como **Rascunho** no console. Isso indica que ainda não está disponível para uso por autores da página.
 
-### Definir propriedades do modelo - Autor do modelo   {#defining-template-properties-template-author}
+### Definir propriedades do modelo - Autor do modelo    {#defining-template-properties-template-author}
 
 Um modelo pode ter as seguintes propriedades:
 
@@ -229,7 +229,7 @@ Para definir a miniatura do modelo:
 
 1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e fechar**.
 
-### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
+### Ativar e permitir um modelo - Autor do modelo    {#enabling-and-allowing-a-template-template-author}
 
 Para poder usar um modelo ao criar uma página é necessário:
 
@@ -272,7 +272,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
    >
    >Se a lista **Modelos permitidos** de for deixada em branco, a árvore será crescente até que um valor/lista seja encontrado.
    >
-   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >Consulte [Disponibilidade do modelo](/help/sites-developing/templates.md#template-availability) - os princípios para os modelos permitidos permanecem os mesmos.
 
 1. Clique em **Salvar** para salvar as alterações nas propriedades da página.
 
@@ -290,7 +290,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 1. Selecione **Publicar** na barra de ferramentas para concluir a ação.
 
-## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
+## Editar modelos - Autores do modelo    {#editing-templates-template-authors}
 
 Ao criar ou editar um modelo há vários aspectos que podem ser definidos. A edição modelos é semelhante à criação de página.
 
@@ -549,7 +549,7 @@ No modo **Estrutura** do editor de modelo:
       * O conteúdo já inserido é considerado conteúdo inicial e é visível apenas no modo **Conteúdo inicial**.
    * Os pais do componente desbloqueado não podem ser movidos, recortados ou excluídos.
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
    Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando estiverem no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
 
@@ -613,7 +613,7 @@ O design da página, incluindo as bibliotecas do lado do cliente e as políticas
 
 Para acessar a caixa de diálogo **Design da página**:
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
+1. No **Editor de modelos**, selecione **Informações da página** na barra de ferramentas e, em seguida, **Design da página** para abrir a caixa de diálogo.
 1. A caixa de diálogo **Design da página** é aberta e dividida em duas seções:
 
    * A metade esquerda define as [políticas da página](/help/sites-authoring/templates.md#page-policies)
@@ -686,7 +686,7 @@ Usando a opção **Propriedades da página inicial**, é possível definir as [p
 
 1. Confirme suas definições em **Concluído**.
 
-## Práticas recomendadas   {#best-practices}
+## Práticas recomendadas    {#best-practices}
 
 Ao criar modelos você deve considerar:
 
