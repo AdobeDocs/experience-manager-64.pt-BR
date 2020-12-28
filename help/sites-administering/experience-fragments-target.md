@@ -1,8 +1,8 @@
 ---
-title: Integração de Públicos alvos com fragmentos de experiência
-seo-title: Integração de Públicos alvos com fragmentos de experiência
-description: Integração de Públicos alvos com fragmentos de experiência
-seo-description: Integração de Públicos alvos com fragmentos de experiência
+title: Integração de públicos alvos com fragmentos de experiência
+seo-title: Integração de públicos alvos com fragmentos de experiência
+description: Integração de públicos alvos com fragmentos de experiência
+seo-description: Integração de públicos alvos com fragmentos de experiência
 uuid: 621f57d4-3b8d-49ea-b193-8530c8fbd74e
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,27 +18,27 @@ ht-degree: 0%
 ---
 
 
-# Integração de Públicos alvos com fragmentos de experiência{#target-integration-with-experience-fragments}
+# Integração de públicos alvos com fragmentos de experiência{#target-integration-with-experience-fragments}
 
 >[!NOTE]
 >
->Essa funcionalidade exige a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou posterior.
+>Esta funcionalidade requer a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou posterior.
 
-Você pode exportar Fragmentos [de](/help/sites-authoring/experience-fragments.md)experiência criados no Adobe Experience Manager (AEM) para o Adobe Target. Eles podem ser usados como ofertas em atividades Públicos alvos, para testar e personalizar experiências em escala. Isso permite combinar a facilidade de uso e o poder do AEM, com os poderosos recursos de Inteligência automatizada (AI) e Aprendizagem de máquina (ML) no Público alvo.
+Você pode exportar [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md), criados no Adobe Experience Manager (AEM), para o Adobe Target. Eles podem ser usados como ofertas em atividades Públicos alvos, para testar e personalizar experiências em escala. Isso permite combinar a facilidade de uso e o poder do AEM, com os poderosos recursos de Inteligência automatizada (AI) e Aprendizagem de máquina (ML) no Público alvo.
 
 ## Pré-requisitos {#prerequisites}
 
 Várias ações são obrigatórias:
 
-1. Você tem que integrar AEM com o Público alvo. See [Integrating with Adobe Target](/help/sites-administering/target.md) for more information.
-1. Os Fragmentos de experiência são exportados da instância do autor, portanto, é necessário [Configurar o Externalizador](/help/sites-developing/externalizer.md) de links na instância do autor para garantir que todos os links sejam externalizados para a instância de publicação.
+1. Você tem que integrar AEM com o Público alvo. Consulte [Integração com o Adobe Target](/help/sites-administering/target.md) para obter mais informações.
+1. Os Fragmentos de experiência são exportados da instância do autor, portanto, é necessário [Configurar o Externalizador de links](/help/sites-developing/externalizer.md) na instância do autor para garantir que todos os links sejam externalizados para a instância de publicação.
 
 ## Adicionar a configuração da nuvem {#add-the-cloud-configuration}
 
-Antes de exportar um fragmento, é necessário adicionar a Configuração **da** nuvem para **Adobe Target** ao fragmento ou pasta:
+Antes de exportar um fragmento, é necessário adicionar a **Configuração da nuvem** para **Adobe Target** ao fragmento ou pasta:
 
-1. Navigate to the **Experience Fragments** console.
-1. Abra Propriedades **da** página para a pasta ou fragmento apropriado.
+1. Navegue até o console **Fragmentos de experiência**.
+1. Abra **Propriedades da página** para a pasta ou fragmento apropriado.
 
    >[!NOTE]
    >
@@ -46,14 +46,14 @@ Antes de exportar um fragmento, é necessário adicionar a Configuração **da**
    >
    >Se você adicionar a configuração de nuvem ao próprio Fragmento de experiência, a configuração será herdada por todas as variações.
 
-1. Selecione a guia **Cloud Services** .
+1. Selecione a guia **Cloud Services**.
 
-1. Em Configuração **do** Cloud Service, selecione **Adobe Target** na lista suspensa.
+1. Em **Configuração do Cloud Service**, selecione **Adobe Target** na lista suspensa.
 1. Em **Adobe Target**, selecione a configuração apropriada.
 
 1. **Salvar e fechar**.
 
-## Exportação de um fragmento de experiência para o Público alvo {#exporting-an-experience-fragment-to-target}
+## Exportar um fragmento de experiência para o Público alvo {#exporting-an-experience-fragment-to-target}
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Para exportar um fragmento de experiência de AEM para Público alvo (depois de 
    >
    >Se o Fragmento de experiência já tiver sido exportado, selecione **Atualizar no Adobe Target**.
 
-1. Toque/clique em **Exportar sem publicar** ou **Publicar** , conforme necessário.
+1. Toque/clique em **Exportar sem publicar** ou **Publicar** conforme necessário.
 
    >[!NOTE]
    >
@@ -88,11 +88,11 @@ Para exportar um fragmento de experiência de AEM para Público alvo (depois de 
 
 >[!NOTE]
 >
->Como alternativa, você pode executar a exportação do editor de páginas, usando comandos comparáveis no menu Informações [da](/help/sites-authoring/author-environment-tools.md#page-information) página.
+>Como alternativa, você pode executar a exportação do editor de páginas, usando comandos comparáveis no menu [Informações da página](/help/sites-authoring/author-environment-tools.md#page-information).
 
 ## Uso dos fragmentos de experiência no Público alvo {#using-your-experience-fragments-in-target}
 
-Depois de executar as tarefas anteriores, o fragmento de experiência é exibido na página Ofertas no Público alvo. Consulte a documentação [](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) específica do Público alvo para saber mais sobre o que você pode alcançar.
+Depois de executar as tarefas anteriores, o fragmento de experiência é exibido na página Ofertas no Público alvo. Consulte a [documentação específica do Público alvo](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) para saber mais sobre o que você pode alcançar.
 
 ## Excluindo um fragmento de experiência já exportado para o Público alvo {#deleting-an-experience-fragment-already-exported-to-target}
 
