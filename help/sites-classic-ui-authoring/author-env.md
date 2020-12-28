@@ -22,11 +22,11 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->A documentação a seguir foca na interface clássica. For information about authoring in the modern, touch-enabled UI, see the [standard Authoring documentation](/help/assets/assets.md).
+>A documentação a seguir foca na interface clássica. Para obter informações sobre a criação na interface moderna e habilitada para toque, consulte a [documentação de criação padrão](/help/assets/assets.md).
 
 O ambiente de criação permite que você execute as tarefas relacionadas a:
 
-* [Criação](/help/sites-authoring/author.md) (incluindo criação [de](/help/sites-authoring/qg-page-authoring.md) página e [gerenciamento de ativos](/help/assets/assets.md))
+* [Criação](/help/sites-authoring/author.md) (incluindo a  [criação de página ](/help/sites-authoring/qg-page-authoring.md) e o  [gerenciamento de ativos](/help/assets/assets.md))
 
 * [Administração ](/help/sites-administering/administer-best-practices.md) de tarefas necessárias ao gerar e manter o conteúdo no seu site
 
@@ -47,7 +47,7 @@ Duas interfaces gráficas de usuário são fornecidas para isso e elas podem ser
    * Esta é a interface do usuário padrão e moderna do AEM.
    * É predominantemente cinza, com uma interface limpa e plana.
    * Projetada para o uso em dispositivos de toque e de desktop (otimizada para o toque). A aparência é a mesma em todos os dispositivos, embora a [visualização e seleção dos recursos](/help/sites-authoring/basic-handling.md) seja ligeiramente diferentes (toques contra cliques).
-   * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. A documentação a seguir foca na interface clássica.
+   * Consulte a [documentação de criação padrão](/help/sites-authoring/author.md) para obter mais detalhes sobre como criar usando a interface de usuário com base em toque. A documentação a seguir foca na interface clássica.
 
    * Desktop:
 
