@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Remoção dos sites de Geometrixx{#removing-the-geometrixx-sites}
 
-AEM vem com um conjunto de exemplos de sites de Geometrixx. É possível remover esse conteúdo de amostra por meio do Gerenciador **de pacotes**.
+AEM vem com um conjunto de exemplos de sites de Geometrixx. Você pode remover esse conteúdo de amostra pelo **Gerenciador de pacotes**.
 
 Os pacotes relacionados à geometrixx individuais são:
 
