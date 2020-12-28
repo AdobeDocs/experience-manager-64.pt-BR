@@ -18,7 +18,7 @@ ht-degree: 97%
 ---
 
 
-# Visão geral das inicializações{#launches}
+# Inicializa Visão Geral{#launches}
 
 Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura.
 
@@ -101,7 +101,7 @@ Lançamentos permitem que você:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>A criação e edição de inicializações requer direitos de acesso a `/content/launches` - como no grupo padrão `content-authors`.
 >
 >Entre em contato com o administrador do sistema se você tiver algum problema.
 
