@@ -264,7 +264,7 @@ No entanto, há também uma maneira mais simples de gerenciar isso:
 
    Usando o console da Web (por exemplo, localhost:4502/system/console/configMgr), você pode configurar o Sling Resource Resolver:
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Apache Sling Resource Resolver Fatory**
 
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    É recomendável criar os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, definir essas configurações em um nó OsgiConfig, `config.publish`, incluído na sua versão.
