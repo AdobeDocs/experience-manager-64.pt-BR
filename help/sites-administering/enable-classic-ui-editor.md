@@ -24,7 +24,7 @@ Por padrão, a capacidade de alternar para a interface clássica a partir do edi
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-Para reativar a opção **Abrir na interface** clássica no menu Informações **da** página, siga estas etapas.
+Para reativar a opção **Abrir na interface clássica** no menu **Informações da página**, siga estas etapas.
 
 1. Usando o CRXDE Lite, localize o seguinte nó:
 
@@ -34,7 +34,7 @@ Para reativar a opção **Abrir na interface** clássica no menu Informações *
 
    `http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-1. Criar uma sobreposição usando a opção **Sobrepor nó** ; por exemplo:
+1. Crie uma sobreposição usando a opção **Sobrepor nó**; por exemplo:
 
    * **Caminho**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Local de sobreposição**: `/apps/`
@@ -44,7 +44,7 @@ Para reativar a opção **Abrir na interface** clássica no menu Informações *
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. A opção **Abrir na interface clássica** está novamente disponível no menu Informações **da** página ao editar páginas.
+1. A opção **Abrir na interface clássica** está novamente disponível no menu **Informações da página** ao editar páginas.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
