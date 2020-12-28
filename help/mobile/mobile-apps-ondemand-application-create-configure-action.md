@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 ## Criação de um aplicativo sob demanda {#creating-an-on-demand-application}
 
@@ -34,15 +34,15 @@ Os detalhes do aplicativo podem ser exibidos no Painel ou no AEM Mobile Control 
 >
 >O Painel é uma série de blocos úteis que fornecem uma visão geral do conteúdo do aplicativo, dos metadados e do status da conexão sob demanda do AEM Mobile.
 >
->Consulte Painel [do aplicativo](/help/mobile/mobile-apps-ondemand-application-dashboard.md) AEM Mobile para obter detalhes.
+>Consulte [Painel de aplicativos AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obter detalhes.
 
 **Para criar um aplicativo sob demanda:**
 
 1. Selecione **Móvel** no painel lateral.
 1. Selecione **Aplicativos** na Navegação.
 1. Clique em **Criar** e selecione **Aplicativo** no menu suspenso.
-1. Escolha o modelo de aplicativo para dispositivos móveis e clique em **Avançar**.
-1. Insira as propriedades do aplicativo, como **Título**, **Nome** e **Descrição**.
+1. Escolha o modelo do aplicativo móvel e clique em **Próximo**.
+1. Insira as propriedades do aplicativo, como **Title**, **Nome**, **Descrição**.
 1. Clique em **Avançar**.
 1. Se for conhecido, insira os detalhes de configuração da nuvem; caso contrário, clique em **Criar**.
 1. Clique em **Concluído** para visualização seu novo aplicativo AEM Mobile no catálogo.
@@ -66,13 +66,13 @@ Ao criar um novo aplicativo com base no modelo de outro aplicativo, você obter�
 
 Depois de criar um aplicativo sob demanda a partir do painel do aplicativo, a próxima etapa é associar seu aplicativo à configuração em nuvem.
 
-Consulte [Associando seu aplicativo à Configuração](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) da nuvem para obter mais detalhes.
+Consulte [Associando seu aplicativo à Configuração da nuvem](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obter mais detalhes.
 
 ### Aproximando-se {#getting-ahead}
 
-Assim que você estiver familiarizado com a criação de um aplicativo sob demanda e, assim, associar esse aplicativo a uma configuração em nuvem, consulte Ações [de](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)Gestão de conteúdo.
+Assim que você estiver familiarizado com a criação de um aplicativo sob demanda e, portanto, associar esse aplicativo a uma configuração em nuvem, consulte [Ações de Gestão de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**As ações** de Gestão de conteúdo envolvem a criação e o gerenciamento do seguinte conteúdo:
+**As ações de gestão de conteúdo** envolvem a criação e o gerenciamento do seguinte conteúdo:
 
 * [Gerenciamento de artigos](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)
