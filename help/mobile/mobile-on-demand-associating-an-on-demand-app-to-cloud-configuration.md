@@ -22,13 +22,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Associar um aplicativo sob demanda a uma configuração na nuvem permite que a Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado no Mobile On-Demand estabelecendo um link bidirecional. Ao vincular seu aplicativo a um projeto Mobile On-Demand, você poderá realizar a criação de conteúdo, como artigos, banners e coleções no AEM, mas também fornecer esse conteúdo para Mobile On-Demand.
 
 Daí, a publicação, visualização e gerenciamento de conteúdo se torna possível. Também é possível importar conteúdo Mobile On-Demand existente para AEM e realizar a edição de conteúdo.
 
-## Configuração da nuvem de configuração {#setting-up-cloud-configuration}
+## Configuração da nuvem configurada {#setting-up-cloud-configuration}
 
 >[!CAUTION]
 >
@@ -38,9 +38,9 @@ Daí, a publicação, visualização e gerenciamento de conteúdo se torna poss�
 
 Para configurar Cloud Services Mobile On-Demand, clique na engrenagem superior no canto superior direito do bloco **Gerenciar conexão** do painel do aplicativo.
 
-Familiarize-se com o painel do aplicativo e os blocos disponíveis. Consulte Painel [do aplicativo](/help/mobile/mobile-apps-ondemand-application-dashboard.md) AEM Mobile para obter mais detalhes.
+Familiarize-se com o painel do aplicativo e os blocos disponíveis. Consulte [Painel de aplicativos AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obter mais detalhes.
 
-### Configuração do link para a configuração na nuvem {#setting-up-link-to-cloud-configuration}
+### Configuração do link para a configuração da nuvem {#setting-up-link-to-cloud-configuration}
 
 >[!CAUTION]
 >
@@ -50,22 +50,22 @@ Familiarize-se com o painel do aplicativo e os blocos disponíveis. Consulte Pai
 
 As etapas a seguir descrevem como configurar o link para a configuração da nuvem:
 
-1. No **Mobile**, escolha **Aplicativos** e depois seu aplicativo Mobile On-Demand do catálogo.
-1. Clique no ícone de engrenagem no bloco **Gerenciar conexão** .
+1. Em **Dispositivo móvel**, escolha **Aplicativos** e depois seu aplicativo Mobile On-Demand do catálogo.
+1. Clique no ícone de engrenagem no bloco **Gerenciar conexão**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Insira a configuração já existente ou crie uma nova inserindo o Título **** de configuração, a Id **do** dispositivo e o Token **do** dispositivo.
+1. Digite a configuração já existente ou crie uma nova digitando **Título da configuração**, **Id do dispositivo** e **Token do dispositivo**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Depois que a ID **do** dispositivo e o token **do** dispositivo forem verificados, escolha o projeto sob demanda na lista.
+1. Depois que seu **Id do dispositivo** e **Token do dispositivo** forem verificados, escolha seu projeto sob demanda na lista.
 
    Clique em **Enviar**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   O bloco **Gerenciar conexão** mostra a configuração da nuvem.
+   O bloco **Gerenciar conexão** mostra sua configuração na nuvem.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
