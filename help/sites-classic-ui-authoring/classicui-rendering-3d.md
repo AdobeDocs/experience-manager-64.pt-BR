@@ -38,7 +38,7 @@ A renderização de conteúdo 3D consome recursos significativos do servidor, co
 
 O renderizador Rapid Refine normalmente demora vários minutos para renderizar imagens maiores. No entanto, os renderizadores de terceiros costumam demorar muitos minutos, até mesmo horas, quando configurados para proporcionar qualidade máxima.
 
-As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser start.
+As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. A mensagem &quot;Aguardando renderização...&quot; é mostrado nos ativos carregados recentemente na [!UICONTROL Visualização de cartão]. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser start.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
    Consulte [Visualização de ativos 3D](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md).
 
 1. No **Adobe Experience Manager**, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Assets]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Perto do canto superior direito da página, na lista suspensa **[!UICONTROL Visualização]**, toque em **[!UICONTROL Visualização de cartão]**.
 1. Navegue até um objeto 3D que deseja renderizar.
 
 1. Toque no cartão do objeto 3D para abri-lo na página de detalhes do ativo.
@@ -59,7 +59,7 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon (spotlight), then select a stage name with the background and lighting that you want to apply to the 3D object.
+1. Próximo ao canto superior direito da página de detalhes do ativo, toque no ícone **[!UICONTROL Seletor de palco]** (destaque) e selecione um nome de palco com o plano de fundo e a iluminação que deseja aplicar ao objeto 3D.
 
    Consulte [Sobre o uso de palcos no AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
@@ -67,7 +67,7 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
 
    [!UICONTROL Ícone Seletor de palco]
 
-1. On the **[!UICONTROL Render]** drop-down list on the left side of the asset details page, select a renderer.
+1. Na lista suspensa **[!UICONTROL Renderizar]** no lado esquerdo da página de detalhes do ativo, selecione um renderizador.
 
    O renderizador **[!UICONTROL Rapid Refine]** padrão está sempre disponível. Se o estágio selecionado for um formato nativo, o renderizador de terceiros correspondente também será disponibilizado na lista para você selecionar.
 
@@ -75,12 +75,12 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
 
 1. Faça o seguinte:
 
-   * In the **[!UICONTROL Width and Height]** fields, enter the pixel width and height that you want your image rendered.
-   * In the **[!UICONTROL Image Name]** field, enter the name of the rendered image.
-   * In the **[!UICONTROL Export Path]** field, enter the path where you want the rendered image stored. Or, tap the **[!UICONTROL Browse]** icon and navigate to a location.
-   * (Optional) Select or deselect the **[!UICONTROL Overwrite existing image]** check box.
+   * Nos campos **[!UICONTROL Largura e Altura]**, digite a largura e a altura do pixel que deseja que a imagem seja renderizada.
+   * No campo **[!UICONTROL Nome da imagem]**, digite o nome da imagem renderizada.
+   * No campo **[!UICONTROL Exportar caminho]**, digite o caminho onde deseja que a imagem renderizada seja armazenada. Ou toque no ícone **[!UICONTROL Procurar]** e navegue até um local.
+   * (Opcional) Marque ou desmarque a caixa de seleção **[!UICONTROL Substituir imagem existente]**.
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon. Selecione uma exibição de câmera que você queira aplicar à imagem renderizada.
+1. Próximo ao canto superior direito da página de detalhes do ativo, toque no ícone **[!UICONTROL Seletor de câmera]**. Selecione uma exibição de câmera que você queira aplicar à imagem renderizada.
 
    Barras à esquerda e direita ou barras acima e abaixo são um indicador visual de quais partes da exibição serão renderizadas. Quando a câmera é fornecida pelo palco selecionado, você pode selecionar uma câmera predefinida.
 
@@ -90,5 +90,5 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
 
 1. Toque em **[!UICONTROL Iniciar renderizador]** para iniciar o processo de renderização.
 
-   Uma mensagem é exibida temporariamente para indicar que a renderização foi iniciada. For convenience, this message also includes a link to the selected [!UICONTROL Output Folder] so you can navigate to it directly.
+   Uma mensagem é exibida temporariamente para indicar que a renderização foi iniciada. Para conveniência, esta mensagem também inclui um link para a [!UICONTROL Pasta de saída] selecionada, para que você possa navegar até ela diretamente.
 
