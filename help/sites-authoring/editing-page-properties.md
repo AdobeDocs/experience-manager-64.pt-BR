@@ -84,7 +84,7 @@ As propriedades são distribuídas por várias guias.
 
    Permite que você insira uma vanity URL para esta página, o que pode permitir que você tenha um URL menor e/ou mais expressivo.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   Por exemplo, se o URL personalizado estiver definido como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` então h `ttp://example.com/welcome`será o URL personalizado de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -122,7 +122,7 @@ As propriedades são distribuídas por várias guias.
    >
    >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
    >
-   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
+   >Para obter mais detalhes, consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Modelos permitidos**
 
@@ -136,7 +136,7 @@ As propriedades são distribuídas por várias guias.
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)**tab allows editing of CUG configurations based on the presence of the`granite:AuthenticationRequired`mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of cq:cugEnabled property, a warning message will be shown under **Authentication Requirement**and the option will not be editable, nor will the[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)be editable.
+   >A guia **[Permissões](/help/sites-authoring/editing-page-properties.md#permissions)** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade cq:cugEnabled, uma mensagem de aviso será mostrada em **Requisito de autenticação** e a opção não será editável, nem as [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) serão editáveis.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -149,7 +149,7 @@ As propriedades são distribuídas por várias guias.
 
    Especifique uma configuração de exportação.
 
-### Miniatura  {#thumbnail}
+### Miniatura   {#thumbnail}
 
 1. **Miniatura da página**
 
@@ -186,7 +186,7 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-authoring/personalization.md).
 
-### Permissões   {#permissions}
+### Permissões    {#permissions}
 
 * **Permissões**
 
@@ -198,14 +198,14 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    >[!CAUTION]
    >
-   >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown and the CUG permissions will not be editable, nor will the Authentication Requirement on the [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) tab be editable.
+   >A guia **Permissões** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na guia [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) não será editável.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. See the document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de direitos de usuário, grupo e acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
 
 ### Blueprint {#blueprint}
 
@@ -213,13 +213,13 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site  {#site-structure}
+### Estrutura do site   {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -266,7 +266,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecione **Abrir propriedades** e uma caixa de diálogo será aberta permitindo que você edite as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
 
    * **Cancelar**
    * **Salvar e fechar**
@@ -290,7 +290,7 @@ No console **Sites**, é possível selecionar várias páginas e usar **Propried
 
 ![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-After selecting the pages and then clicking or tapping the **Properties** option, the bulk properties will be shown:
+Depois de selecionar as páginas e clicar ou tocar na opção **Propriedades**, as propriedades em massa serão exibidas:
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 
