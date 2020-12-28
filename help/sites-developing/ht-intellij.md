@@ -37,31 +37,31 @@ Cada uma delas é explicada mais detalhadamente no restante deste Como.
 
 ### Instale o IntelliJ IDEA {#install-intellij-idea}
 
-Baixe o IntelliJ IDEA [da página Downloads do JetBrains](https://www.jetbrains.com/idea/download/index.html).
+Baixe o IntelliJ IDEA de [a página Downloads em JetBrains](https://www.jetbrains.com/idea/download/index.html).
 
 Em seguida, siga as instruções de instalação nessa página.
 
-### Configure seu projeto AEM com base no Maven {#set-up-your-aem-project-based-on-maven}
+### Configure seu projeto AEM com base em Maven {#set-up-your-aem-project-based-on-maven}
 
-Em seguida, configure seu projeto usando o Maven, conforme descrito em [Como criar projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Em seguida, configure seu projeto usando o Maven conforme descrito em [Construir projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Para o start de trabalhar com projetos AEM no IntelliJ IDEA, a configuração básica na [Introdução em 5 minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) é suficiente.
+Para o start de trabalhar com projetos AEM no IntelliJ IDEA, a configuração básica em [Introdução em 5 Minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) é suficiente.
 
 ### Preparar suporte JSP para IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
 A IntelliJ IDEA também pode fornecer suporte ao trabalho com a JSP, por exemplo,
 
 * conclusão automática de bibliotecas de tags
-* sensibilização para os objetos definidos por `<cq:defineObjects />` e `<sling:defineObjects />`
+* reconhecimento de objetos definidos por `<cq:defineObjects />` e `<sling:defineObjects />`
 
-Para que isso funcione, siga as instruções em [Como trabalhar com JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) em projetos de criação de [orientações AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Para que isso funcione, siga as instruções em [Como trabalhar com JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) em [Como criar projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Importar o projeto Maven {#import-the-maven-project}
 
-1. Abrir a caixa de diálogo **Importar** no IntelliJ IDEA por
+1. Abra a caixa de diálogo **Importar** no IntelliJ IDEA por
 
    * selecionando **Importar projeto** na tela de boas-vindas se você ainda não tiver um projeto aberto
-   * selecionando **Arquivo -> Importar projeto** no menu principal
+   * selecionando **Arquivo -> Importar Projeto** no menu principal
 
 1. Na caixa de diálogo Importar, selecione o arquivo POM do seu projeto.
 
@@ -71,7 +71,7 @@ Para que isso funcione, siga as instruções em [Como trabalhar com JSPs](/help/
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Continue pelas seguintes caixas de diálogo clicando em **Avançar** e em **Concluir**.
+1. Continue com as seguintes caixas de diálogo clicando em **Next** e **Finish**.
 1. Agora você está configurado para desenvolvimento AEM usando o IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
@@ -85,39 +85,39 @@ As etapas a seguir são necessárias para depurar JSPs com IntelliJ IDEA
 * Configurar um Perfil de depuração
 * Configurar AEM para o modo de depuração
 
-#### Configurar um Web Facet no projeto {#set-up-a-web-facet-in-the-project}
+#### Configure um Web Facet no Project {#set-up-a-web-facet-in-the-project}
 
-O IntelliJ IDEA precisa entender onde encontrar os JSPs para depuração. Como a IDEA não pode interpretar as `content-package-maven-plugin` configurações, isso precisa ser configurado manualmente.
+O IntelliJ IDEA precisa entender onde encontrar os JSPs para depuração. Como o IDEA não pode interpretar as configurações `content-package-maven-plugin`, isso precisa ser configurado manualmente.
 
-1. Ir para **Arquivo -> Estrutura do Projeto**
-1. Selecione o módulo **Conteúdo**
-1. Clique **+** acima da lista dos módulos e selecione **Web**
-1. Como o Diretório de recursos da Web, selecione o `content/src/main/content/jcr_root subdirectory` do seu projeto como mostrado na captura de tela abaixo.
+1. Ir para **Ficheiro -> Estrutura do Projeto**
+1. Selecione o módulo **Content**
+1. Clique em **+** acima da lista dos módulos e selecione **Web**
+1. Como o Diretório de recursos da Web, selecione `content/src/main/content/jcr_root subdirectory` do seu projeto como mostrado na captura de tela abaixo.
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
 #### Instale o plug-in de suporte JSR45 {#install-the-jsr-support-plugin}
 
 1. Vá para o painel **Plug-ins** nas configurações do IntelliJ IDEA
-1. Navegue até o Plug-in **JSR45 Integration** e marque a caixa de seleção ao lado dele
+1. Navegue até o plug-in **Integração JSR45** e marque a caixa de seleção ao lado dele
 1. Clique em **Aplicar**
 1. Reinicie o IntelliJ IDEA quando solicitado
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-#### Configurar um Perfil de depuração {#configure-a-debug-profile}
+#### Configurar um Perfil de Depuração {#configure-a-debug-profile}
 
-1. Ir para **Executar -> Editar configurações**
-1. Pressione as teclas **+** e selecione **JSR45 Remote**
-1. Na caixa de diálogo de configuração, selecione **Configurar** ao lado do Servidor **** de aplicativos e configure um servidor Genérico
+1. Vá para **Executar -> Editar configurações**
+1. Pressione **+** e selecione **JSR45 Remote**
+1. Na caixa de diálogo de configuração, selecione **Configurar** ao lado de **Servidor de Aplicações** e configure um servidor Genérico
 1. Defina a página do start como um URL apropriado se quiser abrir um navegador quando você start a depuração
-1. Remova todas as tarefas **Antes de iniciar** o se você usar a sincronização automática vlt ou configurar as tarefas Maven apropriadas se você não
-1. No painel **Inicialização/Conexão** , ajuste a porta, se necessário
+1. Remova todas as tarefas **Antes de iniciar** se você usar a sincronização automática vlt ou configurar as tarefas Maven apropriadas se você não
+1. No painel **Inicialização/Conexão**, ajuste a porta, se necessário
 1. Copie os argumentos da linha de comando que o IntelliJ IDEA propõe
 
 ![chlimage_1-50](assets/chlimage_1-50.png) ![chlimage_1-51](assets/chlimage_1-51.png)
 
-#### Configurar AEM para o modo de depuração {#configure-aem-for-debug-mode}
+#### Configurar AEM para o Modo de Depuração {#configure-aem-for-debug-mode}
 
 O último passo necessário é o start do AEM com as opções de JVM propostas pela IntelliJ IDEA.
 
@@ -125,7 +125,7 @@ Você pode fazer isso iniciando o arquivo jar AEM diretamente e adicionando essa
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart-5.6.1.jar`
 
-Também é possível adicionar essas opções ao script do start, conforme mostrado `crx-quickstart/bin/start` abaixo.
+Também é possível adicionar essas opções ao script do start em `crx-quickstart/bin/start`, conforme mostrado abaixo.
 
 ```shell
 # ...
@@ -140,7 +140,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 # ...
 ```
 
-#### Depuração de Start {#start-debugging}
+#### Depuração de start {#start-debugging}
 
 Agora, todos os usuários estão configurados para depurar seus JSPs no AEM.
 
@@ -150,6 +150,6 @@ Agora, todos os usuários estão configurados para depurar seus JSPs no AEM.
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### Depuração de pacotes com o IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
+### Depuração de pacotes com IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-O código em pacotes pode ser depurado usando uma conexão de depuração remota genérica padrão. Você pode seguir a documentação do [Jetbrain em depuração](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html)remota.
+O código em pacotes pode ser depurado usando uma conexão de depuração remota genérica padrão. Você pode seguir a documentação [Jetbrain em depuração remota](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html).
