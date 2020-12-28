@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Integração com o Gerenciamento dinâmico de tags do Adobe {#integrating-with-adobe-dynamic-tag-management}
 
-Integre o Gerenciamento [dinâmico de tags do](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) Adobe ao AEM para que você possa usar as propriedades da Web do Gerenciamento dinâmico de tags para rastrear AEM sites. O Gerenciamento dinâmico de tags permite que os profissionais de marketing gerenciem tags para coletar dados e distribuam dados pelos sistemas de marketing digital. Por exemplo, use o Gerenciamento dinâmico de tags para coletar dados de uso para o seu site AEM e distribuir os dados para análise no Adobe Analytics ou Adobe Target.
+Integre [Gerenciamento dinâmico de tags do Adobe](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) ao AEM para que você possa usar as propriedades da Web do Gerenciamento dinâmico de tags para rastrear AEM sites. O Gerenciamento dinâmico de tags permite que os profissionais de marketing gerenciem tags para coletar dados e distribuam dados pelos sistemas de marketing digital. Por exemplo, use o Gerenciamento dinâmico de tags para coletar dados de uso para o seu site AEM e distribuir os dados para análise no Adobe Analytics ou Adobe Target.
 
-Antes de se integrar, é necessário criar a propriedade [da](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) Web do Gerenciamento dinâmico de tags que rastreia o domínio do site AEM. As opções [de](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) hospedagem da propriedade da Web devem ser configuradas para que você possa configurar AEM para acessar as bibliotecas do Gerenciamento dinâmico de tags.
+Antes de se integrar, é necessário criar a propriedade da Web [Gerenciamento dinâmico de tags](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) que rastreia o domínio do site AEM. As [opções de hospedagem](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) da propriedade da Web devem ser configuradas para que você possa configurar AEM para acessar as bibliotecas do Gerenciamento dinâmico de tags.
 
 Depois de configurar a integração, as alterações nas ferramentas e regras de implantação do Gerenciamento dinâmico de tags não exigem que você altere a configuração do Gerenciamento dinâmico de tags no AEM. As alterações estão automaticamente disponíveis para AEM.
 
@@ -30,8 +30,8 @@ Depois de configurar a integração, as alterações nas ferramentas e regras de
 >
 >Se você estiver usando o DTM com uma configuração de proxy personalizada, é necessário configurar ambas as configurações de proxy do Cliente HTTP, já que algumas funcionalidades do AEM estão usando as APIs 3.x e outras as APIs 4.x:
 >
->* 3.x é configurado com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x é configurado com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* O 3.x está configurado com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* O 4.x está configurado com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
 >
 
@@ -48,7 +48,7 @@ AEM suporta o Gerenciamento dinâmico de tags hospedado na nuvem ou hospedado em
 * Hospedado na nuvem: As bibliotecas de javascript do Gerenciamento dinâmico de tags são armazenadas na nuvem e suas páginas AEM fazem referência a elas diretamente.
 * AEM hospedado: O Gerenciamento dinâmico de tags gera bibliotecas de javascript. AEM usa um modelo de fluxo de trabalho para obter e instalar as bibliotecas.
 
-O tipo de hospedagem que sua implementação usa determina algumas das tarefas de configuração e implementação que você executa. Para obter informações sobre as opções de hospedagem, consulte [Hospedagem - guia](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) Incorporar na Ajuda do Gerenciamento dinâmico de tags.
+O tipo de hospedagem que sua implementação usa determina algumas das tarefas de configuração e implementação que você executa. Para obter informações sobre as opções de hospedagem, consulte [Hospedagem - guia incorporada](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) na Ajuda do Gerenciamento dinâmico de tags.
 
 ### Biblioteca de preparo e produção {#staging-and-production-library}
 
@@ -62,18 +62,18 @@ Se desejar, a instância do autor poderá usar as bibliotecas de produção. Est
 
 Quando AEM hospeda as bibliotecas do Gerenciamento dinâmico de tags, você pode usar o serviço de gancho de implantação do Gerenciamento dinâmico de tags para enviar automaticamente as atualizações da biblioteca para AEM. As atualizações da biblioteca são enviadas quando as alterações são feitas nas bibliotecas, como quando as propriedades da Web do Gerenciamento dinâmico de tags são editadas.
 
-Para usar o gancho de implantação, o Gerenciamento dinâmico de tags deve ser capaz de se conectar à instância AEM que hospeda as bibliotecas. Você deve [habilitar o acesso ao AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) para os servidores do Gerenciamento dinâmico de tags.
+Para usar o gancho de implantação, o Gerenciamento dinâmico de tags deve ser capaz de se conectar à instância AEM que hospeda as bibliotecas. Você deve [habilitar o acesso a AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) para os servidores do Gerenciamento dinâmico de tags.
 
 Em algumas circunstâncias, AEM pode ser inacessível, como quando AEM está por trás de um firewall. Nesses casos, você pode usar a opção importador de pesquisa AEM para recuperar periodicamente as bibliotecas. Uma expressão de trabalho cron determina o agendamento para downloads da biblioteca.
 
-## Ativando o Acesso ao Serviço de Gancho de Implantação {#enabling-access-for-the-deployment-hook-service}
+## Habilitando o acesso ao serviço de gancho de implantação {#enabling-access-for-the-deployment-hook-service}
 
 Ative o serviço de gancho de implantação do Gerenciamento dinâmico de tags para acessar AEM para que o serviço possa atualizar as bibliotecas hospedadas AEM. Especifique o endereço IP dos servidores do Gerenciamento dinâmico de tags que atualizam as bibliotecas de preparo e produção, conforme necessário:
 
 * Estágios: `107.21.99.31`
 * Produção: `23.23.225.112` e `204.236.240.48`
 
-Perform the configuration using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) node:
+Execute a configuração usando o [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou um nó [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
 * No Console da Web, use o item Configuração de gancho de implantação do DTM Adobe na página Configuração.
 * Para uma configuração OSGi, o PID do serviço é `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
@@ -85,13 +85,13 @@ A tabela a seguir descreve as propriedades a serem configuradas.
 | Lista técnica de IP do DTM de armazenamento temporário | `dtm.staging.ip.whitelist` | O endereço IP do servidor do Gerenciamento dinâmico de tags que atualiza as bibliotecas de preparo. |
 | Lista técnica de IP do DTM de produção | `dtm.production.ip.whitelist` | O endereço IP do servidor do Gerenciamento dinâmico de tags que atualiza as bibliotecas de produção. |
 
-## Criação da configuração do Gerenciamento dinâmico de tags {#creating-the-dynamic-tag-management-configuration}
+## Criando a Configuração do Gerenciamento dinâmico de tags {#creating-the-dynamic-tag-management-configuration}
 
 Crie uma configuração em nuvem para que a instância AEM possa ser autenticada com o Gerenciamento dinâmico de tags e interagir com sua propriedade da Web.
 
 >[!NOTE]
 >
->Evite a inclusão de dois códigos de rastreamento do Adobe Analytics em suas páginas quando sua propriedade da Web do DTM incluir a ferramenta Adobe Analytics e você também estiver usando o [Content Insight](/help/sites-authoring/content-insights.md). Na configuração [da nuvem do](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)Adobe Analytics, selecione a opção Não incluir código de rastreamento.
+>Evite a inclusão de dois códigos de rastreamento do Adobe Analytics em suas páginas quando sua propriedade da Web do DTM incluir a ferramenta Adobe Analytics e você também estiver usando [Content Insight](/help/sites-authoring/content-insights.md). Em sua [configuração de nuvem do Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), selecione a opção Não incluir código de rastreamento.
 
 ### Configurações gerais {#general-settings}
 
@@ -124,7 +124,7 @@ Crie uma configuração em nuvem para que a instância AEM possa ser autenticada
 
 As seguintes propriedades da configuração do Gerenciamento dinâmico de tags permitem AEM hospedagem das bibliotecas do Gerenciamento dinâmico de tags. As propriedades permitem que AEM baixe e instale as bibliotecas. Como opção, você pode atualizar automaticamente as bibliotecas para garantir que elas reflitam quaisquer alterações feitas no aplicativo de gerenciamento dinâmico de tags.
 
-Algumas propriedades usam valores obtidos na seção Download da biblioteca da guia Incorporar para sua propriedade da Web Gerenciamento dinâmico de tags. Para obter informações, consulte Download [da](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) biblioteca na Ajuda do Gerenciamento dinâmico de tags.
+Algumas propriedades usam valores obtidos na seção Download da biblioteca da guia Incorporar para sua propriedade da Web Gerenciamento dinâmico de tags. Para obter informações, consulte [Download da biblioteca](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) na Ajuda do Gerenciamento dinâmico de tags.
 
 >[!NOTE]
 >
@@ -152,15 +152,15 @@ Ao hospedar as bibliotecas do Gerenciamento dinâmico de tags no AEM, o AEM conf
   </tr> 
   <tr> 
    <td>Dica de domínio</td> 
-   <td><p>(Opcional) O domínio do servidor AEM que está hospedando a biblioteca do Gerenciamento dinâmico de tags. Especifique um valor para substituir o domínio padrão configurado para o serviço <a href="/help/sites-developing/externalizer.md">Externalizador de links do</a>Day CQ.</p> <p>Quando conectado ao Gerenciamento dinâmico de tags, o AEM usa esse valor para configurar o Caminho HTTP de preparo ou o Caminho HTTP de produção das propriedades Download da biblioteca para a propriedade da Web Gerenciamento dinâmico de tags.</p> </td> 
+   <td><p>(Opcional) O domínio do servidor AEM que está hospedando a biblioteca do Gerenciamento dinâmico de tags. Especifique um valor para substituir o domínio padrão configurado para o serviço <a href="/help/sites-developing/externalizer.md">Externalizador de links do Day CQ</a>.</p> <p>Quando conectado ao Gerenciamento dinâmico de tags, o AEM usa esse valor para configurar o Caminho HTTP de preparo ou o Caminho HTTP de produção das propriedades Download da biblioteca para a propriedade da Web Gerenciamento dinâmico de tags.</p> </td> 
   </tr> 
   <tr> 
    <td>Dica do domínio segura</td> 
-   <td><p>(Opcional) O domínio do servidor AEM que está hospedando a biblioteca do Gerenciamento dinâmico de tags em HTTPS. Especifique um valor para substituir o domínio padrão configurado para o serviço <a href="/help/sites-developing/externalizer.md">Externalizador de links do</a>Day CQ.</p> <p>Quando conectado ao Gerenciamento dinâmico de tags, o AEM usa esse valor para configurar o Caminho HTTPS de preparo ou o Caminho HTTPS de produção das propriedades Download da biblioteca para a propriedade da Web Gerenciamento dinâmico de tags.</p> </td> 
+   <td><p>(Opcional) O domínio do servidor AEM que está hospedando a biblioteca do Gerenciamento dinâmico de tags em HTTPS. Especifique um valor para substituir o domínio padrão configurado para o serviço <a href="/help/sites-developing/externalizer.md">Externalizador de links do Day CQ</a>.</p> <p>Quando conectado ao Gerenciamento dinâmico de tags, o AEM usa esse valor para configurar o Caminho HTTPS de preparo ou o Caminho HTTPS de produção das propriedades Download da biblioteca para a propriedade da Web Gerenciamento dinâmico de tags.</p> </td> 
   </tr> 
   <tr> 
    <td>Segredo compartilhado</td> 
-   <td><p>(Opcional) O segredo compartilhado a ser usado para descriptografar o download. Obtenha esse valor do campo Segredo compartilhado da página Download da biblioteca do Gerenciamento dinâmico de tags.</p> <p><strong>Observação:</strong> Você deve ter as bibliotecas <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> instaladas no computador onde o AEM está instalado para que AEM possa descriptografar as bibliotecas baixadas.</p> </td> 
+   <td><p>(Opcional) O segredo compartilhado a ser usado para descriptografar o download. Obtenha esse valor do campo Segredo compartilhado da página Download da biblioteca do Gerenciamento dinâmico de tags.</p> <p><strong>Observação: </strong> você deve ter as bibliotecas  <a href="https://www.openssl.org/docs/apps/openssl.html"></a> OpenSSL instaladas no computador onde o AEM está instalado para que AEM possa descriptografar as bibliotecas baixadas.</p> </td> 
   </tr> 
   <tr> 
    <td>Ativar o importador de pesquisa</td> 
@@ -242,7 +242,7 @@ Baixe manualmente as bibliotecas do Gerenciamento dinâmico de tags para atualiz
 >
 >Os arquivos baixados são armazenados em `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`.
 >
->As informações a seguir são obtidas diretamente da configuração [do](#creating-the-dynamic-tag-management-configuration)DTM.
+>As informações a seguir são obtidas diretamente da sua [configuração do DTM](#creating-the-dynamic-tag-management-configuration).
 >
 >* `myconfig`
 >* `companyID`
