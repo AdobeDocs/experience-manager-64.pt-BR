@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Descarregamento do fluxo de trabalho de ativos{#assets-workflow-offloader}
+# Descarregamento de fluxo de trabalho de ativos{#assets-workflow-offloader}
 
 O carregador de fluxo de trabalho de ativos permite ativar várias instâncias dos ativos Adobe Experience Manager (AEM) para reduzir a carga de processamento na instância principal (líder). A carga de processamento é distribuída entre a instância líder e as várias instâncias de descarregamento (trabalhador) que você adiciona a ela. A distribuição da carga de processamento de ativos aumenta a eficiência e a velocidade com que a AEM Assets processa ativos. Além disso, ajuda a alocar recursos dedicados para processar ativos de um tipo de MIME específico. Por exemplo, você pode alocar um nó específico em sua topologia para processar apenas os ativos do InDesign.
 
@@ -26,20 +26,20 @@ O carregador de fluxo de trabalho de ativos permite ativar várias instâncias d
 
 Use o Configuration Manager para adicionar o URL para a instância líder e os nomes de host de instâncias de offloader para solicitações de conexão na instância líder.
 
-1. Toque/clique no logotipo do AEM e escolha **Ferramentas** > **Operações** > Console **da** Web para abrir o Configuration Manager.
-1. No Console da Web, selecione **Sling** > **Topology Management**.
+1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Operações** > **Console Web** para abrir o Configuration Manager.
+1. No console da Web, selecione **Sling** > **Gerenciamento de topologia**.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. Na página Gerenciamento de topologia, toque/clique no link **Configurar serviço** Discovery.Oak.
+1. Na página Gerenciamento de topologia, toque/clique no link **Configurar o serviço Discovery.Oak**.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-1. Na página Configuração do serviço de descoberta, especifique o URL do conector para a instância líder no campo URLs **do conector de** topologia.
+1. Na página Configuração do serviço de descoberta, especifique o URL do conector para a instância líder no campo **URLs** do conector de topologia.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. No campo Lista de permissões do conector de **topologia** , especifique o endereço IP ou os nomes de host das instâncias do offloader que têm permissão para se conectar com a instância de pontilhado. Tap/click **Save**.
+1. No campo **Topology Connector Whitelist**, especifique o endereço IP ou os nomes de host das instâncias de offloader que têm permissão para se conectar com a instância líder. Toque/clique em **Salvar**.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
@@ -47,7 +47,7 @@ Use o Configuration Manager para adicionar o URL para a instância líder e os n
 
 ## Desabilitar descarregamento {#disable-offloading}
 
-1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Implantação** > **Descarregamento**. A página Navegador **de** descarga exibe tópicos e as instâncias do servidor que podem consumir os tópicos.
+1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Implantação** > **Descarregamento**. A página **Navegador de descarga** exibe tópicos e as instâncias do servidor que podem consumir os tópicos.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -55,42 +55,42 @@ Use o Configuration Manager para adicionar o URL para a instância líder e os n
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-## Configurar inicializadores de fluxo de trabalho na instância líder {#configure-workflow-launchers-on-the-leader-instance}
+## Configurar iniciadores de fluxo de trabalho na instância líder {#configure-workflow-launchers-on-the-leader-instance}
 
-Configure os iniciadores do fluxo de trabalho para usar o fluxo de trabalho de Descarregamento **de ativos de atualização de** DAM na instância líder, em vez do fluxo de trabalho de ativo **de atualização de** DAM.
+Configure os iniciadores do fluxo de trabalho para usar o fluxo de trabalho **DAM Update Asset Offloading** na instância líder em vez do fluxo de trabalho **Dam Update Asset**.
 
-1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Fluxo de trabalho** > **Iniciadores** para abrir o console Iniciadores **de** fluxo de trabalho.
+1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Fluxo de trabalho** > **Iniciadores** para abrir o console **Iniciadores de fluxo de trabalho**.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Localize as duas configurações do Iniciador com o **Nó de tipo de evento Criado** e o **Nó Modificado** , respectivamente, que executam o fluxo de trabalho do Ativo **de atualização do** DAM.
-1. Para cada configuração, marque a caixa de seleção antes dela e toque/clique no ícone Propriedades **da** Visualização na barra de ferramentas para exibir a caixa de diálogo Propriedades **do** Iniciador.
+1. Localize as duas configurações do Iniciador com o tipo de evento **Nó Criado** e **Nó Modificado** respectivamente, que executam o fluxo de trabalho **DAM Update Asset**.
+1. Para cada configuração, marque a caixa de seleção antes dela e toque/clique no ícone **Propriedades da Visualização** na barra de ferramentas para exibir a caixa de diálogo **Propriedades do Iniciador**.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-1. Na lista **Fluxo de trabalho** , escolha **DAM Update Asset Offloading (Descarregamento** de ativo de atualização de DAM) e toque/clique em **Save (Salvar**).
+1. Na lista **Workflow**, escolha **Descarregamento de ativos de atualização do DAM** e toque/clique em **Salvar**.
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Fluxo de trabalho** > **Modelos** para abrir a página Modelos **de** fluxo de trabalho.
+1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Fluxo de trabalho** > **Modelos** para abrir a página **Modelos de fluxo de trabalho**.
 1. Selecione o fluxo de trabalho **DAM Update Asset Offloading** e toque/clique em **Editar** na barra de ferramentas para exibir seus detalhes.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Exiba o menu de contexto da etapa de descarga **do fluxo de trabalho do** DAM e escolha **Editar**. Verifique a entrada no campo Tópico **do** trabalho da guia Argumentos **** genéricos da caixa de diálogo de configuração.
+1. Exiba o menu de contexto da etapa **Descarregamento do fluxo de trabalho DAM** e escolha **Editar**. Verifique a entrada no campo **Tópico do trabalho** da guia **Argumentos genéricos** da caixa de diálogo de configuração.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-## Desabilitar os iniciadores do fluxo de trabalho nas instâncias do offloader {#disable-the-workflow-launchers-on-the-offloader-instances}
+## Desative os inicializadores de fluxo de trabalho nas instâncias do offloader {#disable-the-workflow-launchers-on-the-offloader-instances}
 
-Desative os iniciadores de fluxo de trabalho que executam o fluxo de trabalho do Ativo **de atualização do** DAM na instância líder.
+Desative os iniciadores de fluxo de trabalho que executam o fluxo de trabalho **Ativo de atualização do DAM** na instância líder.
 
-1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Fluxo de trabalho** > **Iniciadores** para abrir o console Iniciadores **de** fluxo de trabalho.
+1. Toque/clique no logotipo AEM e escolha **Ferramentas** > **Fluxo de trabalho** > **Iniciadores** para abrir o console **Iniciadores de fluxo de trabalho**.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-1. Localize as duas configurações do Iniciador com o **Nó de tipo de evento Criado** e o **Nó Modificado** , respectivamente, que executam o fluxo de trabalho do Ativo **de atualização do** DAM.
-1. Para cada configuração, marque a caixa de seleção antes dela e toque/clique no ícone Propriedades **da** Visualização na barra de ferramentas para exibir a caixa de diálogo Propriedades **do** Iniciador.
+1. Localize as duas configurações do Iniciador com o tipo de evento **Nó Criado** e **Nó Modificado** respectivamente, que executam o fluxo de trabalho **DAM Update Asset**.
+1. Para cada configuração, marque a caixa de seleção antes dela e toque/clique no ícone **Propriedades da Visualização** na barra de ferramentas para exibir a caixa de diálogo **Propriedades do Iniciador**.
 
    ![chlimage_1-56](assets/chlimage_1-56.png)
 
