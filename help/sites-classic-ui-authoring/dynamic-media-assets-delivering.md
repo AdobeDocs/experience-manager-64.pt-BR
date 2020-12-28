@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Entrega de ativos do Dynamic Media{#delivering-dynamic-media-assets}
 
-A forma como você pode fornecer seus ativos de Mídia dinâmica - vídeo e imagens - depende de como seu site é implementado.
+A forma como você pode fornecer seus ativos Dynamic Media - vídeo e imagens - depende de como seu site é implementado.
 
 Com a Mídia dinâmica, você tem várias opções:
 
