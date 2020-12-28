@@ -24,7 +24,7 @@ Por padrão, a capacidade de alternar para a interface clássica por meio dos co
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Cada console que tem uma versão de interface clássica em `/libs/cq/core/content/nav` pode ser reativado individualmente para que a opção de interface **clássica** apareça novamente sobre o ícone do console quando o mouse for passado.
+Cada console que tem uma versão de interface clássica em `/libs/cq/core/content/nav` pode ser reativado individualmente para que a opção **Interface clássica** volte a aparecer no ícone do console quando o mouse for passado.
 
 Neste exemplo, estamos reativando a interface clássica para o console Sites.
 
@@ -40,7 +40,7 @@ Neste exemplo, estamos reativando a interface clássica para o console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Criar uma sobreposição usando a opção **Sobrepor nó** ; por exemplo:
+1. Crie uma sobreposição usando a opção **Sobrepor nó**; por exemplo:
 
    * **Caminho**: `/apps/cq/core/content/nav/sites`
    * **Local de sobreposição**: `/apps/`
@@ -50,7 +50,7 @@ Neste exemplo, estamos reativando a interface clássica para o console Sites.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. A opção Interface do usuário **** clássica está disponível novamente como uma opção de entrega no console de administração.
+1. A opção **Interface clássica** está novamente disponível como uma opção de entrega no console de administração.
 
    ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
