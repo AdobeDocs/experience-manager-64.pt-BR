@@ -49,7 +49,7 @@ Você precisa de uma chave privada e um certificado público para as instâncias
 
 Gere uma chave privada e um certificado no formato JKS. A chave privada é armazenada em um arquivo KeyStore e o certificado é armazenado em um arquivo TrustStore. Use [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) para criar ambos.
 
-Execute as seguintes etapas usando o Java `keytool` para criar a chave privada e a credencial:
+Execute as seguintes etapas usando Java `keytool` para criar a chave privada e a credencial:
 
 1. Gerar um par de chave privado-público em um KeyStore.
 1. Crie ou obtenha o certificado:
@@ -80,7 +80,7 @@ Use o procedimento a seguir para criar uma chave privada e um certificado autoas
 
    | Opção | Autor | Publicação |
    |---|---|---|
-   | -alias | author | publicação |
+   | -alias | autor | publicação |
    | -arquivo | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -134,7 +134,7 @@ Gere uma chave privada e um certificado no formato pkcs#12. Use [openSSL](https:
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -em | author.cer | publish.cer |
-   | -name | author | publicação |
+   | -name | autor | publicação |
 
 ## Instale a chave privada e o TrustStore no autor {#install-the-private-key-and-truststore-on-author}
 
@@ -164,11 +164,11 @@ Para executar o procedimento a seguir, você deve estar conectado como um admini
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Instalar o certificado de publicação {#install-the-publish-certificate}
+### Instale o certificado de publicação {#install-the-publish-certificate}
 
 1. Abra a página Gerenciamento de usuários para a instância do autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir as propriedades da sua conta de usuário, clique ou toque no seu nome de usuário.
-1. Se o link Criar TrustStore for exibido na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
+1. Se o link Criar TrustStore aparecer na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar TrustStore.
 1. Clique em Adicionar certificado do arquivo CER.
 
@@ -199,21 +199,21 @@ Para executar o procedimento a seguir, você deve estar conectado como um admini
 1. Insira um alias e a senha para o armazenamento de chaves. Digite o alias e a senha da chave privada e clique em Enviar.
 1. Feche a caixa de diálogo Gerenciamento do KeyStore.
 
-### Instale o certificado do autor {#install-the-author-certificate}
+### Instale o Certificado do Autor {#install-the-author-certificate}
 
 1. Abra a página Gerenciamento de usuários para a instância de publicação. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Localize a conta de usuário que você usa para executar solicitações de replicação e clique ou toque no nome de usuário.
-1. Se o link Criar TrustStore for exibido na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
+1. Se o link Criar TrustStore aparecer na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar TrustStore.
 1. Clique em Adicionar certificado do arquivo CER.
 1. Verifique se a opção Mapear certificado para usuário está selecionada. Clique em Selecionar arquivo de certificado, selecione author.cer e clique em Abrir.
 1. Clique em Enviar e feche a caixa de diálogo Gerenciamento do TrustStore.
 
-## Configurar o serviço HTTP ao publicar {#configure-the-http-service-on-publish}
+## Configurar o serviço HTTP em Publicar {#configure-the-http-service-on-publish}
 
 Configure as propriedades do Apache Felix Jetty Based HTTP Service na instância de publicação para que ele use HTTPS ao acessar o Granite Keystore. O PID do serviço é `org.apache.felix.http`.
 
-A tabela a seguir lista as propriedades OSGi que você precisa configurar se você está usando o Console da Web.
+A tabela a seguir lista as propriedades do OSGi que você precisa configurar se está usando o Console da Web.
 
 | Nome da propriedade no console da Web | Nome da propriedade OSGi | Valor |
 |---|---|---|
@@ -224,7 +224,7 @@ A tabela a seguir lista as propriedades OSGi que você precisa configurar se voc
 
 ## Configurar o Agente de Replicação no Autor {#configure-the-replication-agent-on-author}
 
-Configure o agente de replicação na instância do autor para usar o protocolo HTTPS ao se conectar à instância de publicação. Para obter informações completas sobre a configuração de agentes de replicação, consulte [Configuração dos Agentes](/help/sites-deploying/replication.md#configuring-your-replication-agents)de Replicação.
+Configure o agente de replicação na instância do autor para usar o protocolo HTTPS ao se conectar à instância de publicação. Para obter informações completas sobre a configuração de agentes de replicação, consulte [Configuração dos Agentes de Replicação](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Para ativar o MSSL, configure as propriedades na guia Transporte de acordo com a seguinte tabela:
 
