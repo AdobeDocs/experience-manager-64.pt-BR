@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ferramenta Servidor Proxy (proxy.jar){#proxy-server-tool-proxy-jar}
+# Ferramenta do servidor proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 O servidor proxy atua como um servidor intermediário que transmite solicitações entre um cliente e um servidor. O servidor proxy rastreia todas as interações cliente-servidor e gera um log de toda a comunicação TCP. Isso permite que você monitore exatamente o que está acontecendo, sem precisar acessar o servidor principal.
 
@@ -36,7 +36,7 @@ Você pode usar o servidor proxy para monitorar todas as interações cliente-se
 
 Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; Por exemplo, um navegador da Web e AEM. Isso permite que você monitore exatamente o que acontece quando você solicita uma página AEM.
 
-## Iniciando a ferramenta Servidor proxy {#starting-the-proxy-server-tool}
+## Iniciando a Ferramenta de Servidor Proxy {#starting-the-proxy-server-tool}
 
 A ferramenta pode ser encontrada na pasta /opt/helpers da instalação do AEM. Para start, digite:
 
@@ -48,11 +48,11 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 * **q (modo silencioso)** Não grava as solicitações na janela do console. Use essa opção se não quiser diminuir a velocidade da conexão ou se você registrar a saída em um arquivo (consulte -logfile option).
 * **b (Modo binário)** Se você estiver procurando combinações específicas de bytes no tráfego, ative o modo binário. A saída conterá a saída hexadecimal e de caracteres.
-* **t (entradas de registro de carimbo de data/hora)** Adiciona um carimbo de data/hora a cada saída de registro. O carimbo de data/hora está em segundos, portanto ele pode não ser adequado para verificar solicitações únicas. Use-o para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy em um período de tempo mais longo.
-* **logfile &lt;nome do arquivo> (gravar no arquivo de log)** Grava a conversação cliente-servidor em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
-* **i &lt;numIndentions> (adicionar recuo)** Cada conexão ativa é recuada para melhorar a leitura. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
+* **t (entradas de registro de carimbo de data e hora)** Adiciona um carimbo de data e hora a cada saída de registro. O carimbo de data/hora está em segundos, portanto ele pode não ser adequado para verificar solicitações únicas. Use-o para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy em um período de tempo mais longo.
+* **log file  &lt;filename> (write to log file)** Grava a conversa client-server em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
+* **i  &lt;numindentions> (adicionar recuo)** Cada conexão ativa é recuada para melhor leitura. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
 
-## Usos da ferramenta Servidor proxy {#uses-of-the-proxy-server-tool}
+## Usos da ferramenta Servidor Proxy {#uses-of-the-proxy-server-tool}
 
 Os seguintes cenários ilustram alguns dos objetivos para os quais a Ferramenta de Servidor Proxy pode ser usada:
 
@@ -64,7 +64,7 @@ O exemplo de entrada de registro a seguir mostra todos os cookies e seus valores
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Verificando cabeçalhos e seus valores** O exemplo de entrada de registro a seguir mostra que o servidor é capaz de fazer uma conexão mantida ativa e o cabeçalho de comprimento do conteúdo foi definido corretamente:
+**Verificando Cabeçalhos e seus** ValoresO exemplo de entrada de log a seguir mostra que o servidor é capaz de fazer uma conexão mantida ativa e o cabeçalho de comprimento do conteúdo foi definido corretamente:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -74,7 +74,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Verificando se o Keep-Alive funciona**
 
-**Keep-Alive** significa que um cliente reutiliza a conexão com o servidor para transportar vários arquivos (o código da página, imagens, folhas de estilos e assim por diante). Sem manter vivo, o cliente precisa estabelecer uma nova conexão para cada solicitação.
+**Keep-** Alivemesignifica que um cliente reutiliza a conexão com o servidor para transportar vários arquivos (o código da página, imagens, folhas de estilos e assim por diante). Sem manter vivo, o cliente precisa estabelecer uma nova conexão para cada solicitação.
 
 Para verificar se o keep-alive funciona:
 
@@ -100,7 +100,7 @@ Se você tiver solicitações pendentes de vez em quando:
 1. Aguarde ou grave o log de acesso em um arquivo - com cada entrada com um carimbo de data e hora.
 1. Quando o start de solicitação está travado, você pode ver quantas conexões estão abertas e qual solicitação está causando problemas.
 
-## O formato das mensagens de registro {#the-format-of-log-messages}
+## O formato das Mensagens de Log {#the-format-of-log-messages}
 
 As entradas de log produzidas por proxy.jar têm o seguinte formato:
 
@@ -117,7 +117,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que esta entrada provém do cliente (é uma solicitação para uma página da Web)
 * 0 é o número da conexão (os start do contador de conexão são 0)
 * # 00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
-* [GET &lt;?>] é o conteúdo da solicitação, por exemplo, um dos cabeçalhos HTTP (url).
+* [GET  &lt;?>] é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
 
 Quando uma conexão é fechada, as seguintes informações são registradas:
 
@@ -128,7 +128,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 Mostra o número de bytes transmitidos entre o cliente e o servidor na 6ª conexão e na velocidade média.
 
-## Um exemplo de saída de log {#an-example-of-log-output}
+## Um exemplo de saída de registro {#an-example-of-log-output}
 
 Analisaremos um modelo simples que produz o seguinte código quando solicitado:
 
