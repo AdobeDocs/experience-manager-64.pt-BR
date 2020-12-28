@@ -49,7 +49,7 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 
    Consulte [Sobre o upload e o processamento de ativos 3D no AEM](/help/sites-classic-ui-authoring/classicui-upload-proc-3d.md).
 1. No **[!UICONTROL Adobe Experience Manager]**, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Assets]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Perto do canto superior direito da página, na lista suspensa **[!UICONTROL Visualização]**, toque em **[!UICONTROL Visualização de cartão]**.
 
 1. Navegue até o ativo 3D que deseja visualizar.
 1. Toque no cartão de ativo 3D para abri-lo na página de detalhes do ativo.
@@ -69,17 +69,17 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
       </tr> 
       <tr> 
       <td><p>Zoom</p> <p>ou</p> <p>Persp</p> </td> 
-      <td><p>Toque ou clique para alternar entre os modos Zoom e Perspectiva.</p> <p>Or, press and hold down the <code>ALT/OPTION</code> key during the action to temporarily toggle to Perspective<br /> mode. Solte a tecla para reverter para o modo Zoom.</p> 
+      <td><p>Toque ou clique para alternar entre os modos Zoom e Perspectiva.</p> <p>Ou pressione e mantenha pressionada a tecla <code>ALT/OPTION</code> durante a ação para alternar temporariamente para o modo Perspective<br />. Solte a tecla para reverter para o modo Zoom.</p> 
         <ul> 
-        <li><strong>Comportamento de mais e menos zoom</strong>- Dolly que move a câmera mais perto ou mais longe do ativo<br /> que você está visualizando. O zoom é o comportamento padrão para o botão de rolagem do mouse (se disponível), para os gestos de pinça com dois dedos em dispositivos móveis ou com se mantém a tecla Shift pressionada ao arrastar para cima ou para baixo usando o botão esquerdo do mouse.</li> 
-        <li><strong>Perspectiva</strong>- Altera a duração focal (também conhecida como campo de visualização) da câmera, mantendo o tamanho relativo do ativo na visualização. A perspectiva é o comportamento alternativo para o botão de rolagem (se disponível), para os gestos de pinça com dois dedos em dispositivos móveis ou com se mantém a tecla Shift pressionada ao arrastar para cima ou para baixo usando o botão esquerdo do mouse.</li> 
+        <li><strong>Aproxime e retire o zoom</strong> e diminua o comportamento que move a câmera para perto ou mais longe do <br /> ativo que você está vendo. O zoom é o comportamento padrão para o botão de rolagem do mouse (se disponível), para os gestos de pinça com dois dedos em dispositivos móveis ou com se mantém a tecla Shift pressionada ao arrastar para cima ou para baixo usando o botão esquerdo do mouse.</li> 
+        <li><strong>Perspectiva</strong> - Altera a duração focal (também conhecida como campo de visualização) da câmera, mantendo o tamanho relativo do ativo na visualização. A perspectiva é o comportamento alternativo para o botão de rolagem (se disponível), para os gestos de pinça com dois dedos em dispositivos móveis ou com se mantém a tecla Shift pressionada ao arrastar para cima ou para baixo usando o botão esquerdo do mouse.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Órbita</p> <p>ou</p> <p>Panorâmica</p> </td> 
-      <td><p>Toque ou clique para alternar entre os modos de órbita e Deslocamento.</p> <p>Or, press and hold the <code>ALT/OPTION</code> key during the action to temporarily toggle to Pan mode. Solte a tecla para reverter para o modo Órbita.</p> 
+      <td><p>Toque ou clique para alternar entre os modos de órbita e Deslocamento.</p> <p>Ou pressione e mantenha pressionada a tecla <code>ALT/OPTION</code> durante a ação para alternar temporariamente para o modo Deslocamento. Solte a tecla para reverter para o modo Órbita.</p> 
         <ul> 
-        <li><strong>Órbita</strong>- Move a câmera de visualização em uma esfera centralizada em um ponto de público alvo que está localizado perto do centro do ativo 3D para ser o padrão. Órbita é o comportamento padrão ao arrastar com o botão esquerdo ou com um único toque em dispositivos móveis.</li> 
+        <li><strong>Órbita</strong> - Move a câmera de visualização em uma esfera centralizada em um ponto de público alvo que está localizado próximo ao centro do ativo 3D para ser o padrão. Órbita é o comportamento padrão ao arrastar com o botão esquerdo ou com um único toque em dispositivos móveis.</li> 
         <li><strong>Deslocamento</strong>-Move a câmera no plano de visualização. O ponto de destino é movido de modo correspondente; assim, as ações de órbita subsequentes moverão a câmera ao redor de um novo ponto de destino. Deslocamento é o comportamento alternativo para arrastar com o botão esquerdo e arrastar com um único toque.</li> 
         </ul> </td> 
       </tr> 
@@ -87,18 +87,18 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
       <td><p>Examinar</p> <p>ou</p> <p>Target</p> </td> 
       <td><p>Toque ou clique para alternar entre os modos Examine e Público alvo.</p> 
         <ul> 
-        <li><strong>Pressione a tecla Examine</strong>ou clique para entrar no modo de Público alvo.</li> 
-        <li><strong>Público alvo</strong>- Toque ou clique em um ponto em qualquer lugar do ativo 3D para centralizar a visualização nessa parte do ativo.<br /> As ações de órbita usam o novo ponto de destino.</li> 
+        <li><strong>Pressione a tecla Examine</strong> ou clique para entrar no modo de Público alvo.</li> 
+        <li><strong>Público alvo</strong> - Toque ou clique em um ponto em qualquer lugar do ativo 3D para centralizar a visualização nessa parte do ativo.<br /> As ações de órbita usam o novo ponto de destino.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td>Redefinir</td> 
-      <td>Toque ou clique para restaurar o ponto de público alvo da visualização para o centro do modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Toque ou clique para restaurar o ponto de público alvo da visualização para o centro do modelo. A redefinição também move a câmera<br /> mais perto ou mais longe para mostrar o ativo na totalidade e em um tamanho de visualização razoável.</td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Selecione um nome de palco com o plano de fundo e a iluminação que deseja aplicar ao ativo 3D.
+1. Próximo ao canto superior direito da página de detalhes do ativo, toque no ícone **[!UICONTROL Seletor de estágio]**. Selecione um nome de palco com o plano de fundo e a iluminação que deseja aplicar ao ativo 3D.
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -106,7 +106,7 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 
    Consulte [Sobre o uso de palcos no AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+1. Perto do canto superior direito da página de detalhes do ativo, toque no ícone **[!UICONTROL Seletor de câmera]** e selecione uma visualização de câmera que deseja aplicar ao ativo 3D.
 
    ![](do-not-localize/chlimage_1-3.png)
 
