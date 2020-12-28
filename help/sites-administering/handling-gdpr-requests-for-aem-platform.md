@@ -2,7 +2,7 @@
 title: Tratamento de Solicitações de RGPD para a Fundação AEM
 seo-title: Tratamento de Solicitações de RGPD para a Fundação AEM
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
@@ -15,19 +15,19 @@ ht-degree: 6%
 ---
 
 
-# Tratamento de Solicitações de RGPD para a Fundação AEM{#handling-gdpr-requests-for-the-aem-foundation}
+# Tratamento de solicitações GDPR para o AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
 >O RGPD é utilizado como exemplo nas seções abaixo, mas os detalhes abrangidos são aplicáveis a todas as normas de proteção de dados e privacidade; como o RGPD, o CCPA, etc.
 
-## Suporte a GDPR da AEM {#aem-foundation-gdpr-support}
+## Suporte ao AEM Foundation GDPR {#aem-foundation-gdpr-support}
 
 No nível AEM Foundation, os Dados Pessoais armazenados são o Perfil Usuário. Portanto, as informações neste artigo tratam principalmente de como acessar e excluir perfis de usuários, para atender às solicitações de acesso e exclusão do RGPD, respectivamente.
 
 ## Acessar um Perfil de usuário {#accessing-a-user-profile}
 
-### Etapas manuais {#manual-steps}
+### Etapas Manuais {#manual-steps}
 
 1. Abra o console Administração do usuário, navegando até **[!UICONTROL Configurações - Segurança - Usuários]** ou navegando diretamente para `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
@@ -37,7 +37,7 @@ No nível AEM Foundation, os Dados Pessoais armazenados são o Perfil Usuário. 
 
    ![usersearch](assets/usersearch.png)
 
-1. Por fim, abra o perfil do usuário clicando nele e, em seguida, marque na guia **[!UICONTROL Detalhes]** .
+1. Por fim, abra o perfil do usuário clicando nele e, em seguida, marque a guia **[!UICONTROL Detalhes]**.
 
    ![userprofile_small](assets/userprofile_small.png)
 
@@ -72,9 +72,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Desabilitar um usuário e Excluir os Perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
+## Desabilitando um usuário e excluindo os Perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### Desativar usuário {#disable-user}
+### Desabilitar Usuário {#disable-user}
 
 1. Abra o console Administração do usuário e procure o usuário em questão, conforme descrito acima.
 1. Passe o mouse sobre o usuário e clique no ícone de seleção. O perfil ficará cinza, indicando que está selecionado.
@@ -91,19 +91,19 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![desabilitador](assets/disableduser.png)
 
-### Excluir informações do Perfil do usuário {#delete-user-profile-information}
+### Excluir informações de Perfil do usuário {#delete-user-profile-information}
 
-1. Faça logon no CRXDE Lite e, em seguida, procure o `[!UICONTROL userId]`:
+1. Faça logon no CRXDE Lite e, em seguida, procure `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Abra o nó do usuário localizado abaixo `[!UICONTROL /home/users]` por padrão:
+1. Abra o nó do usuário localizado em `[!UICONTROL /home/users]` por padrão:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. Exclua os nós do perfil e todos os seus filhos. Há dois formatos para os nós de perfil, dependendo da versão AEM:
 
-   1. O perfil privado padrão em `[!UICONTROL /profile]`
+   1. O perfil particular padrão em `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, para novos perfis criados usando o AEM 6.4.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
