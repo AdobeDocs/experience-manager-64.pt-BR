@@ -46,7 +46,7 @@ Há várias guias e ícones disponíveis, incluindo:
 * ClientContext
 * Sites
 
-![chlimage_1-181](assets/chlimage_1-101.png)
+![chlimage_1-101](assets/chlimage_1-101.png)
 
 Fornecem acesso a uma ampla seleção de funcionalidade; incluindo:
 
@@ -86,7 +86,7 @@ Para inserir um novo componente:
 
 1. Insira o componente que deseja na página. Em seguida, clique duas vezes no parágrafo, uma janela é aberta e permite que você configure o parágrafo e adicione conteúdo.
 
-### Inserir um componente usando o localizador de conteúdo {#inserting-a-component-using-the-content-finder}
+### Inserir um componente usando o localizador de conteúdo  {#inserting-a-component-using-the-content-finder}
 
 Você também pode adicionar um novo componente à página, arrastando um ativo do [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Isto criará automaticamente um novo componente do tipo apropriado que contém o ativo.
 
@@ -105,7 +105,7 @@ Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema
 
 Para criar um componente arrastando um dos tipos de ativos acima:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Abra o [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Arraste o ativo para a posição desejada. O [placeholder do componente](#componentplaceholder) mostra onde o componente será posicionado.
 
@@ -113,7 +113,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
 1. [Edite](#editmovecopypastedelete) o componente, se necessário.
 
-## Edição de um componente (conteúdo e propriedades) {#editing-a-component-content-and-properties}
+## Edição de um componente (conteúdo e propriedades)  {#editing-a-component-content-and-properties}
 
 Para editar um parágrafo existente, faça o seguinte:
 
@@ -203,7 +203,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
 
 [As anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitem que outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas   {#previewing-pages}
+## Visualizar páginas    {#previewing-pages}
 
 Há dois ícones na borda inferior do sidekick que são importantes para a visualização das páginas:
 
@@ -223,7 +223,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para a visua
 
 ## Localizar e Substituir {#find-replace}
 
-Para edições de maior escala de uma mesma frase, uma opção de menu **[Encontrar e substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**permite que você procure e substitua várias instâncias de uma sequência em uma seção do site.
+Para edições de maior escala de uma mesma frase, uma opção de menu **[Encontrar e substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite que você procure e substitua várias instâncias de uma sequência em uma seção do site.
 
 ## Bloquear uma página {#locking-a-page}
 
