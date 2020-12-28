@@ -64,7 +64,7 @@ ht-degree: 0%
 * O diretório Datastore não deve ser movido após a migração (GRANITE-10447)
 * Mesclar crx2oak-quickstart-extension com crx2oak (CQ-61847)
 * falha de crx2oak em valores de duplicado no repositório (CQ-61906)
-* start longo AEM após a migração do CQ 5.x (GRANITE-10309)
+* Start longo AEM após a migração do CQ 5.x (GRANITE-10309)
 * Suporte para vários servidores LDAP no crx2oak (GRANITE-9917)
 * Forçar verificação do comprimento máximo do nome do nó (OAK-3111)
 * Suporta S3DataSource como a fonte de migração (OAK-3685)
