@@ -98,7 +98,7 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 
    * reto:
 
-      hold down `ALT` and click the start and end points; finish with a double-click.
+      mantenha pressionada a tecla `ALT` e clique no start e nos pontos finais; termine com um clique de duplo.
 
 * Depois que você sair do modo de rascunho, poderá clicar em uma linha de rascunho para selecionar esse rascunho.
 * Para mover um rascunho, selecione-o e depois arraste-o para a posição desejada.
