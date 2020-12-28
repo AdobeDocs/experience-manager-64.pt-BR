@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -75,23 +75,23 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
   <tr>
    <td>Fluxos de trabalhos</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de Workflows</a></td> 
-   <td><p>Os Workflows permitem que você automatize as atividades Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td> 
+   <td><p>Os workflows permitem que você automatize as atividades Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td> 
   </tr>
  </tbody>
 </table>
 
 ## Communities {#communities}
 
-[A AEM Communities](/help/communities/overview.md) simplifica a criação e o gerenciamento de comunidades locais.
+[AEM ](/help/communities/overview.md) Comunidades simplifica a criação e a gestão de comunidades locais.
 
 Algumas práticas recomendadas para Comunidades são descritas aqui:
 
 |  |  |  |
 |---|---|---|
-| Práticas recomendadas para trabalhar com conteúdo gerado pelo usuário (UGC) | [Diretrizes de codificação](/help/communities/code-guide.md) | Orientações para o desenvolvimento de códigos flexíveis e portáteis para o quadro [de componentes](/help/communities/scf.md) sociais (SCF). |
+| Práticas recomendadas para trabalhar com conteúdo gerado pelo usuário (UGC) | [Diretrizes de codificação](/help/communities/code-guide.md) | Diretrizes para desenvolver código flexível e portátil para a [estrutura de componente social](/help/communities/scf.md) (SCF). |
 | Exemplo de uso de componentes de Comunidades | [Guia de componentes da comunidade](/help/communities/components-guide.md) | Uma ferramenta interativa de desenvolvimento. |
 
-## Ferramenta/HTL {#tooling-htl}
+## Ferramentas/HTL {#tooling-htl}
 
 A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido com AEM 6.0. Substitui o JSP e o ESP como o sistema de modelo preferencial da AEM.
 
@@ -103,5 +103,5 @@ A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido 
 >[!NOTE]
 >
 >O tutorial de várias partes a seguir pode ser de interesse para a prática recomendada de configurar um novo projeto de AEM, detalhando os Componentes principais, Modelos editáveis, Bibliotecas do cliente e desenvolvimento de componentes:\
->[Introdução ao AEM Sites - Tutorial WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Introdução ao AEM Sites - Tutorial do WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
