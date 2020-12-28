@@ -22,9 +22,9 @@ ht-degree: 85%
 
 Os fluxos de trabalho de projeto disponíveis para uso imediato incluem os seguintes:
 
-* **Fluxo de trabalho** de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
-* **Solicitar lançamento** - um fluxo de trabalho que solicita uma inicialização.
-* **Landing page** de solicitação - esse fluxo de trabalho solicita uma landing page.
+* **Fluxo de trabalho**  de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
+* **Solicitar lançamento**  - um fluxo de trabalho que solicita uma inicialização.
+* **Solicitar Landing page**  - esse fluxo de trabalho solicita uma landing page.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
 * **Sessão fotográfica do produto e Sessão fotográfica do produto (Comércio)** - Mapeia ativos com produtos
 * **Criar e traduzir cópia DAM e Criar cópia de idioma DAM** - Cria binários, metadados e tags traduzidos para ativos e pastas.
@@ -45,7 +45,7 @@ Dependendo de qual modelo de projeto você selecionar, certos fluxos de trabalho
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. Consulte [Criação de cópias de idioma para ativos.](/help/sites-administering/tc-manage.md)
+>&amp;ast; Esses workflows não são iniciados a partir do bloco **Workflow** em Projetos. Consulte [Criação de cópias de idioma para ativos.](/help/sites-administering/tc-manage.md)
 
 As etapas para iniciar e concluir fluxos de trabalho são as mesmas, independentemente do fluxo de trabalho escolhido. Apenas as etapas mudam.
 
@@ -76,11 +76,11 @@ Esse fluxo de trabalho permite solicitar um manuscrito de um usuário e depois a
 
 Os fluxos de trabalho Sessão fotográfica do produto (comércio e sem comércio) são abordados em detalhes em [Projeto criativo](/help/sites-authoring/managing-product-information.md).
 
-## Fluxo de trabalho para aprovação do projeto {#project-approval-workflow}
+## Fluxo de trabalho para aprovação do projeto  {#project-approval-workflow}
 
 No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuário e depois revisa e aprova esse conteúdo.
 
-1. In your Simple project, select the ****+** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. Em seu projeto simples, selecione o sinal de ****+** no bloco **Workflows** e selecione **Fluxo de trabalho de aprovação de projeto**.
 1. Insira um título e selecione a quem ele deve ser atribuído na lista Equipe. Se aplicável, insira uma descrição, um caminho de conteúdo, uma prioridade de tarefa e uma data de vencimento.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -98,7 +98,7 @@ Esse fluxo de trabalho permite solicitar um lançamento.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Clique em **Criar**. O fluxo de trabalho é iniciado. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
+1. Clique em **Criar**. O fluxo de trabalho é iniciado. O fluxo de trabalho é exibido na lista **Workflows** (clique em elipses **...** no bloco **Workflows** para acessar esta lista).
 
 ## Fluxo de trabalho Solicitar página de aterrissagem {#request-landing-page-workflow}
 
@@ -111,7 +111,7 @@ Esse fluxo de trabalho permite solicitar uma página de aterrissagem.
 
 1. Clique em **Criar**. O fluxo de trabalho é iniciado. A tarefa é exibida no bloco **Tarefas**.
 
-## Fluxo de trabalho Solicitar email {#request-email-workflow}
+## Fluxo de trabalho Solicitar email  {#request-email-workflow}
 
 Esse fluxo de trabalho permite solicitar um email. É o mesmo fluxo de trabalho que aparece no bloco **Emails**.
 
