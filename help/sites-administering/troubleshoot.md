@@ -30,7 +30,7 @@ A seção a seguir aborda alguns problemas que podem ocorrer ao usar AEM, juntam
 >
 >Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/known-issues.md) para a sua instância (pacotes de versões e serviços).
 
-## Cenários de solução de problemas para administradores {#troubleshooting-scenarios-for-administrators}
+## Solução de problemas para administradores {#troubleshooting-scenarios-for-administrators}
 
 A tabela a seguir fornece uma visão geral dos problemas que os administradores podem precisar resolver:
 
@@ -42,7 +42,7 @@ A tabela a seguir fornece uma visão geral dos problemas que os administradores 
   </tr> 
   <tr> 
    <td>Administrador do sistema</td> 
-   <td><p>Clicar no Duplo do jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivamento)</p> </td> 
+   <td><p>Clicar no duplo do jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivamento)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Administrador do sistema</p> </td> 
@@ -65,7 +65,7 @@ A tabela a seguir fornece uma visão geral dos problemas que os administradores 
 
 ## Problemas de instalação {#installation-issues}
 
-Consulte Problemas [de instalação](/help/sites-deploying/troubleshooting.md#common-installation-issues) comuns para obter informações sobre os seguintes cenários de solução de problemas:
+Consulte [Problemas comuns de instalação](/help/sites-deploying/troubleshooting.md#common-installation-issues) para obter informações sobre os seguintes cenários de solução de problemas:
 
 * Clique duas vezes no ícone de Início rápido não tem nenhum efeito ou o arquivo JAR é iniciado com outro programa (como o gerenciador do arquivos).
 * Os aplicativos em execução em CRX resultam em erros de falta de memória.
@@ -73,15 +73,15 @@ Consulte Problemas [de instalação](/help/sites-deploying/troubleshooting.md#co
 
 ## Métodos para solução de problemas de Análise {#methods-for-troubleshooting-analysis}
 
-### Como fazer um despejo de encadeamento {#making-a-thread-dump}
+### Como fazer um despejo de thread {#making-a-thread-dump}
 
 O despejo de thread é uma lista de todos os threads Java que estão ativos no momento. Se o AEM não responder corretamente, o despejo de encadeamento poderá ajudá-lo a identificar bloqueios ou outros problemas.
 
 ### Usando o Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Abra o console **da Web** AEM; por exemplo em `http://localhost:4502/system/console/`.
+1. Abra o **AEM Web Console**; por exemplo, em `http://localhost:4502/system/console/`.
 
-1. Selecione **Threads** na **guia Status** .
+1. Selecione a guia **Threads** em **Status**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -99,13 +99,13 @@ O despejo de thread é uma lista de todos os threads Java que estão ativos no m
 
 >[!NOTE]
 >
->Você pode anexar os despejos de thread a um arquivo de log usando o redirecionamento de `>>` saída:
+>Você pode anexar os despejos de thread a um arquivo de log usando o redirecionamento de saída `>>`:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte [Como tirar os Thread Dumps de uma documentação JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) para obter mais informações
+Consulte a documentação [Como tirar os Dumps de Thread de uma JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) para obter mais informações
 
-### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
+### Verificando se há sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 
 Quando a funcionalidade é desenvolvida para AEM WCM, as Sessões JCR podem ser abertas (comparável à abertura de uma conexão de banco de dados). Se as sessões abertas nunca forem fechadas, seu sistema poderá apresentar os seguintes sintomas:
 
@@ -113,15 +113,15 @@ Quando a funcionalidade é desenvolvida para AEM WCM, as Sessões JCR podem ser 
 * Você pode ver um monte de CacheManager: redimensionarTodas as entradas no arquivo de log; o número a seguir (size=&lt;x>) mostra o número de caches, cada sessão abre vários caches.
 * De tempos em tempos, o sistema fica sem memória (após algumas horas, dias ou semanas - dependendo da gravidade).
 
-Para analisar sessões não fechadas e descobrir qual código não está fechando uma sessão, consulte o artigo da Base de conhecimento [Analisar sessões](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html)não fechadas.
+Para analisar sessões não fechadas e descobrir qual código não está fechando uma sessão, consulte o artigo da Base de conhecimento [Analisar sessões não fechadas](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html).
 
 ### Usando o Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 
 O estatuto dos pacotes OSGi também pode dar uma indicação precoce de possíveis emissões.
 
-1. Abra o console **da Web** AEM; por exemplo em `http://localhost:4502/system/console/`.
+1. Abra o **AEM Web Console**; por exemplo, em `http://localhost:4502/system/console/`.
 
-1. Selecione **Pacotes** na guia **OSGI** .
+1. Selecione **Pacotes** na guia **OSGI**.
 
 1. Marcar:
 
