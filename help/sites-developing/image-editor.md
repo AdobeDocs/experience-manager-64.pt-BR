@@ -24,15 +24,15 @@ O Editor de imagens é uma peça central de AEM e pode ser aproveitado por compo
 
 >[!CAUTION]
 >
->Para usar os recursos do Editor de imagens descritos neste artigo, o [recurso pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) deve ser instalado.
+>Para usar os recursos do Editor de imagens descritos neste artigo, o [feature pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) deve estar instalado.
 
-## Unidades relativas ao mapa de imagens {#relative-units-for-image-map}
+## Unidades relativas para o Mapa de imagem {#relative-units-for-image-map}
 
 O Editor de imagens persiste nas áreas do mapa de imagem como unidades absolutas e relativas. As unidades relativas são úteis quando fornecidas como atributos de dados para redimensionar dinamicamente um mapa de imagem (relativo ao tamanho da imagem) no lado do cliente em um componente de imagem responsiva.
 
 ### propriedade imageMap {#imagemap-property}
 
-As coordenadas do mapa de imagem são mantidas no JCR como uma `imageMap` propriedade pelo Editor de imagens. Ele tem o seguinte formato:
+As coordenadas do mapa de imagem são mantidas no JCR como uma propriedade `imageMap` pelo Editor de imagens. Ele tem o seguinte formato:
 
 Os armazenamentos de propriedades mapeiam as áreas da seguinte maneira:
 
@@ -57,13 +57,13 @@ O SVG (Scalable Vetor Graphics) é compatível com o Editor de imagens.
 
 Em determinadas situações, as ações de criação devem ser restritas para determinados tipos de MIME, devido à falta de suporte no processamento no servidor. Por exemplo, a edição de imagens SVG pode não ser permitida.
 
-Os plug-ins no Editor de imagens podem ser habilitados seletivamente pelo tipo MIME, configurando uma `supportedMimeTypes` propriedade no nó de configuração do plug-in individual.
+Os plug-ins no Editor de imagens podem ser habilitados seletivamente pelo tipo MIME, definindo uma propriedade `supportedMimeTypes` no nó de configuração do plug-in individual.
 
 ### Exemplo {#example}
 
 Como exemplo, digamos que a capacidade de cortar só deve ser permitida para imagens GIF, JPEG, PNG, WEBP e TIFF.
 
-A `supportedMimeTypes` propriedade deve ser definida como uma string dos tipos MIME permitidos no nó de configuração do plug-in no `cq:editConfig` nó do componente de imagem.
+A propriedade `supportedMimeTypes` deve ser definida como uma string dos tipos MIME permitidos no nó de configuração do plug-in no nó `cq:editConfig` do componente de imagem.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 
