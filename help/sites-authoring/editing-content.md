@@ -106,9 +106,9 @@ Se uma página é parte de um [fluxo de trabalho](/help/sites-authoring/workflow
 
 A notificação lista o fluxo de trabalho que está sendo executado em relação à página. Se o usuário estiver envolvido na etapa atual do fluxo de trabalho, opções para [afetar o status do fluxo de trabalho](/help/sites-authoring/workflows-participating.md) e para obter mais informações sobre o fluxo de trabalho também ficarão disponíveis, como:
 
-* **Concluir** - Abre a caixa de diálogo **Concluir item de trabalho**
+* **Concluir** - Abre a caixa de diálogo  **Concluir** tempo de trabalho
 
-* **Delegar** - abre a caixa de diálogo **Concluir item** de trabalho
+* **Delegar**  - abre a caixa de diálogo  **Concluir** tempo de trabalho
 
 * **Exibir detalhes** - abre a janela **Detalhes** do fluxo de trabalho
 
@@ -136,7 +136,7 @@ O placeholder do componente indica onde um componente será posicionado quando v
 
 É possível adicionar um novo componente, usando o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). O [placeholder do componente](#component-placeholder) mostra onde o componente será posicionado:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Abra o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 1. Arraste o componente para a [posição desejada](#component-placeholder).
 
@@ -150,7 +150,7 @@ O placeholder do componente indica onde um componente será posicionado quando v
 
 É possível adicionar um novo componente, usando a caixa **Arraste componentes aqui**:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Há duas maneiras de selecionar e adicionar um novo componente do sistema de parágrafo:
 
    * Selecione a opção **Inserir componente** (+) na barra de ferramentas de um componente existente ou na caixa **Arrastar componentes aqui**.
@@ -206,7 +206,7 @@ Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema
 
 Para criar um componente arrastando um dos tipos de ativos acima:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Abra o [navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Arraste o ativo para a posição desejada. O [placeholder do componente](#component-placeholder) mostra onde o componente será posicionado.
 
@@ -311,7 +311,7 @@ Existem dois métodos de adição e/ou edição do conteúdo dos componentes:
 * Abra a caixa de diálogo de [componentes para editar](#component-edit-dialog).
 * [Arraste e solte um ativo](#inserting-a-component-using-the-assets-browser) do navegador de ativos para adicionar diretamente o conteúdo.
 
-### Caixa de diálogo de edição de componente   {#component-edit-dialog}
+### Caixa de diálogo de edição de componente    {#component-edit-dialog}
 
 Você pode abrir um componente para editar o conteúdo usando o [ícone Editar (lápis) na barra de ferramentas do componente](#edit-configure-copy-cut-delete-paste).
 
@@ -354,7 +354,7 @@ Para tipos de componentes específicos, você pode arrastar e soltar os ativos d
 | Vídeo | Flash |
 | Fragmento de conteúdo | Fragmento do conteúdo |
 
-## Editar (conteúdo) Modo de tela cheia {#edit-content-full-screen-mode}
+## Editar (conteúdo) Modo de tela cheia  {#edit-content-full-screen-mode}
 
 Para todos os componentes, o modo de tela cheia pode ser acessado com (e fechado de):
 
@@ -447,17 +447,17 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
 
    A caixa de diálogo de configuração. Por exemplo, o Sistema de parágrafo herdado:
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
 ## Editar o modelo da página {#editing-the-page-template}
 
 Se a página for baseada em um [modelo editável](/help/sites-authoring/templates.md#editable-and-static-templates), você pode facilmente alternar para o [editor de modelo](/help/sites-authoring/templates.md#editing-templates-template-authors), selecionando **Editar modelo** no [menu de Informações de página](/help/sites-authoring/author-environment-tools.md#page-information).
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+Se a página for baseada em um [modelo estático](/help/sites-authoring/templates.md#editable-and-static-templates), você poderá alternar para [Modo de design](/help/sites-authoring/default-components-designmode.md) usando o [seletor de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) na barra de ferramentas para habilitar/desabilitar componentes para uso na página.
 
 É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-authoring/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Status da Live Copy   {#live-copy-status}
+## Status da Live Copy    {#live-copy-status}
 
 O modo de página [Status da Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e quais componentes são/não são herdados:
 
@@ -472,7 +472,7 @@ Por exemplo:
 
 As [anotações ](/help/sites-authoring/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas   {#previewing-pages}
+## Visualizar páginas    {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
@@ -504,7 +504,7 @@ Ao editar o conteúdo, você pode visualizar a página usando o [modo](/help/sit
 
 Ao criar, o modo de visualização estará disponível utilizando o ícone no canto superior direito do editor de página:
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![chlimage_1-247](assets/chlimage_1-248.png)
 
 ### Exibir como publicado {#view-as-published}
 
@@ -562,7 +562,7 @@ Os ícones a seguir permitem desfazer ou refazer uma ação. Os seguintes itens 
 >
 >O [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` também pode ser usado para desfazer ações de edições em páginas.
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>O atalho de teclado `Ctrl-Y` também está disponível para refazer ações de edição de página.
 
 >[!NOTE]
 >
