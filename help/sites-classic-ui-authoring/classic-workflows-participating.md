@@ -71,7 +71,7 @@ Depois de realizar a ação indicada, você pode concluir o item de trabalho, pe
 
 1. Clique em **OK** para confirmar a ação.
 
-### Delegação de uma etapa do participante {#delegating-a-participant-step}
+### Delegação de uma etapa do participante  {#delegating-a-participant-step}
 
 Use o procedimento a seguir para delegar um item de trabalho.
 
@@ -82,7 +82,7 @@ Use o procedimento a seguir para delegar um item de trabalho.
 
 1. Clique em **OK** para confirmar a ação.
 
-### Retroceder em uma etapa do participante {#performing-step-back-on-a-participant-step}
+### Retroceder em uma etapa do participante  {#performing-step-back-on-a-participant-step}
 
 Use o procedimento a seguir para retroceder.
 
