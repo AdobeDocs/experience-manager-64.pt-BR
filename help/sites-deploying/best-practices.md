@@ -18,7 +18,7 @@ ht-degree: 15%
 ---
 
 
-# Deploying Best Practices{#deploying-best-practices}
+# Implantação de práticas recomendadas{#deploying-best-practices}
 
 A implantação de práticas recomendadas descreve como implantar ou manter AEM da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 
@@ -39,7 +39,7 @@ Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) é um repositório de conteúdo hierárquico escalável e com desempenho que é a base do AEM.
+[O ](/help/sites-deploying/platform.md) Oakis é um repositório de conteúdo hierárquico escalável e com desempenho que é a base do AEM.
 
 <table> 
  <tbody>
@@ -75,9 +75,9 @@ Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
 A AEM Communities simplifica a criação e o gerenciamento de comunidades locais. As práticas recomendadas para AEM Communities estão descritas aqui:
 
-[Community Content Store](/help/communities/working-with-srp.md) - discute o novo recurso de armazenamento compartilhado para conteúdo gerado pelo usuário (UGC) e as considerações para escolher a [topologia](/help/communities/topologies.md)subjacente.
+[Community Content Store](/help/communities/working-with-srp.md)  - discute o novo recurso de armazenamento compartilhado para conteúdo gerado pelo usuário (UGC) e as considerações para escolher a  [topologia](/help/communities/topologies.md) subjacente.
 
-[Implantações recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - descreve as implantações recomendadas para comunidades. |
+[Implantações recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - descreve as implantações recomendadas para comunidades. |
 
 ## Interface {#ui}
 
@@ -96,7 +96,7 @@ As práticas recomendadas de desempenho estão listadas aqui:
   <tr>
    <td>Práticas recomendadas para garantia de qualidade</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Práticas recomendadas para garantia de qualidade</a></td> 
-   <td>Uma visão geral padronizada dos problemas envolvidos na definição de um conceito de teste especificamente para testes de desempenho no ambiente <em>publicado</em> . Isso interessa principalmente aos engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.</td> 
+   <td>Uma visão geral padronizada dos problemas envolvidos na definição de um conceito de teste especificamente para testes de desempenho em seu ambiente <em>publish</em>. Isso interessa principalmente aos engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.</td> 
   </tr>
   <tr>
    <td>Uso do Dispatcher com um CDN</td> 
