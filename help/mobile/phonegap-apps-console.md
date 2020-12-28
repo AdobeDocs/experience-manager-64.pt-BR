@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Criação e edição de aplicativos usando o console Aplicativos{#creating-and-editing-apps-using-the-apps-console}
+# Criação e edição de aplicativos usando o console de aplicativos{#creating-and-editing-apps-using-the-apps-console}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 O processo de desenvolvimento de aplicativos móveis AEM reconhece que usuários de diferentes especialidades contribuem para o desenvolvimento de aplicativos móveis. O mapa de processos a seguir ilustra a ordem geral na qual os autores de conteúdo e desenvolvedores de aplicativos executam tarefas.
 
@@ -30,7 +30,7 @@ O processo de desenvolvimento de aplicativos móveis AEM reconhece que usuários
 
 As informações sobre como executar as tarefas do profissional de marketing são exibidas nessa página. Para obter informações sobre as tarefas de desenvolvedor, consulte Criação de aplicativos PhoneGap.
 
-## A estrutura dos aplicativos móveis {#the-structure-of-mobile-applications}
+## A estrutura de aplicativos móveis {#the-structure-of-mobile-applications}
 
 A AEM Mobile fornece o plano do aplicativo Phonegap para criar aplicativos móveis. O blueprint define a estrutura dos aplicativos que você cria. As candidaturas consistem nos seguintes elementos:
 
@@ -42,7 +42,7 @@ A AEM Mobile fornece o plano do aplicativo Phonegap para criar aplicativos móve
 
 A página raiz dos aplicativos móveis criados no AEM é exibida no console Aplicativos.
 
-A página raiz é armazenada abaixo da propriedade Caminho de destino do aplicativo que foi especificada ao criar o aplicativo (o caminho padrão é /content/phonegap/apps). O nome da página é a propriedade Name do aplicativo. Por exemplo, o URL padrão da página raiz do site nomeado `myphonegapapp` é `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+A página raiz é armazenada abaixo da propriedade Caminho de destino do aplicativo que foi especificada ao criar o aplicativo (o caminho padrão é /content/phonegap/apps). O nome da página é a propriedade Name do aplicativo. Por exemplo, o URL padrão da página raiz do site chamado `myphonegapapp` é `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -50,7 +50,7 @@ A página raiz é armazenada abaixo da propriedade Caminho de destino do aplicat
 
 As primeiras páginas secundárias da página raiz são as variações de idioma do aplicativo. O nome de cada página é o idioma para o qual o aplicativo é criado. Por exemplo, inglês é o nome da variação em inglês do aplicativo.
 
-**Observação:** O modelo padrão do PhoneGap cria somente um aplicativo em inglês. Seu desenvolvedor pode modificar o blueprint para que possa criar mais variações de idioma.
+**Observação:** o padrão do PhoneGap cria apenas um aplicativo em inglês. Seu desenvolvedor pode modificar o blueprint para que possa criar mais variações de idioma.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -70,17 +70,17 @@ A página Home page ou index.html de uma variação de idioma de um aplicativo �
 Os aplicativos móveis são baseados em um plano que define a estrutura e as propriedades da página. Você pode configurar as seguintes propriedades do aplicativo:
 
 * **Título:** O título do aplicativo.
-* **Caminho de destino:** O local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
-* **Nome:** O valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado no CQ para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
-* **Descrição:** Uma descrição do aplicativo.
-* **URL do servidor:** O URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
+* **Caminho de destino:** o local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
+* **Nome:** O valor padrão é o valor da propriedade Título com caracteres de espaço removidos. O nome é usado no CQ para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
+* **Descrição:** uma descrição do aplicativo.
+* **URL do servidor:** o URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
 
 Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração do PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem é usada apenas como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
 Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
 
 * Compilação: Clique em gerenciar configurações e configure seu serviço de compilação.phonegap.com aqui. Em seguida, na lista suspensa, você poderá selecionar o serviço de nuvem de construção PhoneGap recém-criado.
-* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem SDK [do](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
+* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html). Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Depois de criar o aplicativo móvel, adicione o conteúdo que é usado como a in
 
 1. No painel, clique ou toque em Aplicativos.
 1. Clique ou toque no aplicativo e, em seguida, clique ou toque em inglês.
-1. Edite o Home page ou adicione páginas secundárias conforme necessário.
+1. Edite o Home page ou adicione páginas secundárias, conforme necessário.
 
 ### Mover conteúdo para aplicativos móveis {#moving-content-to-mobile-applications}
 
@@ -211,13 +211,13 @@ Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 >
 >Se você desinstalar o pacote do aplicativo de referência do Geometrixx Outdoors de AEM e criar um aplicativo com base em seu modelo, o aplicativo não funcionará mais. O aplicativo Geometrixx Outdoors pode ser removido, no entanto, o modelo do aplicativo deve permanecer se for usado por outros aplicativos móveis.
 
-## Explorar o aplicativo de exemplos de Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
+## Explorando o aplicativo de exemplo de Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
 
 Geometrixx Outdoors App é um exemplo de aplicativo PhoneGap que demonstra os recursos do padrão do aplicativo PhoneGap e os componentes móveis de amostra.
 
 Para abrir o aplicativo, no painel, clique em Aplicativos móveis e selecione Aplicativo Geometrixx Outdoors.
 
-### Recursos comuns da página - Aplicativo móvel Geometrixx {#common-page-features-geometrixx-mobile-app}
+### Recursos de página comuns - Aplicativo móvel Geometrixx {#common-page-features-geometrixx-mobile-app}
 
 Cada página do aplicativo móvel inclui os seguintes recursos:
 
@@ -231,7 +231,7 @@ Cada página do aplicativo móvel inclui os seguintes recursos:
 
 * O sistema de parágrafo, para adicionar componentes e criar conteúdo.
 
-### O Home page - Aplicativo Geometrixx Mobile {#the-home-page-geometrixx-mobile-app}
+### O Home page - Geometrixx Mobile App {#the-home-page-geometrixx-mobile-app}
 
 O conteúdo do Home page é composto pelas seguintes ferramentas de navegação:
 
@@ -255,7 +255,7 @@ A página Produtos e sua hierarquia de páginas filhas implementam um sistema de
 
 A página Produtos não está disponível para usuários do aplicativo. A página de engrenagens fornece acesso a cada página de produto.
 
-### Página de revisões - Aplicativo móvel Geometrixx {#the-reviews-page-geometrixx-mobile-app}
+### Página Revisões - Aplicativo móvel Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contém um botão Voltar. O sistema de parágrafo permite que você adicione componentes.
 
@@ -267,19 +267,19 @@ Contém um botão Voltar. O sistema de parágrafo permite que você adicione com
 
 Ao usar o aplicativo, a página Notícias está disponível no carrossel da página em inglês.
 
-### A página Sobre nós - Aplicativo móvel Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### A página Sobre nós - Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
 
 A página Sobre nós contém vários componentes de Linha de duas colunas. Cada coluna contém um componente de Imagem ou Texto. Os componentes são editáveis e o sistema de parágrafo permite que você adicione componentes.
 
 Ao usar o aplicativo, a página Sobre nós está disponível no carrossel da página em inglês.
 
-### Página Locais - Aplicativo móvel Geometrixx {#the-locations-page-geometrixx-mobile-app}
+### A página Locais - Aplicativo móvel Geometrixx {#the-locations-page-geometrixx-mobile-app}
 
 A página Locais contém um componente Locais.
 
 Ao usar o aplicativo, a página Locais está disponível na lista de menu na página em inglês.
 
-## Exemplo de componentes móveis {#sample-mobile-components}
+## Amostra de componentes móveis {#sample-mobile-components}
 
 Vários componentes estão imediatamente disponíveis no Sidekick ao criar as páginas de um aplicativo móvel. Os componentes pertencem ao grupo de componentes do PhoneGap.
 
@@ -296,10 +296,10 @@ Observe que as imagens aparecem no carrossel para páginas que estão associadas
 Configure o comportamento do carrossel:
 
 * Velocidade de reprodução: O tempo, em milissegundos, em que cada imagem é exibida antes de mostrar a próxima imagem.
-* Tempo de Transição: A duração em milissegundos da animação para transições de imagem.
+* Tempo de transição: A duração em milissegundos da animação para transições de imagem.
 * Estilo dos controles: O tipo de controles fornecidos para movimentação entre imagens.
 
-**guia Propriedades da Lista**
+**guia Propriedades da lista**
 
 Especifique como a lista de página é gerada:
 
@@ -307,7 +307,7 @@ Especifique como a lista de página é gerada:
 * Ordenar por: Selecione uma propriedade de página a ser usada para classificar a lista de página. Por exemplo, selecione jcr:title para classificar páginas alfabeticamente por título.
 * Limite: O número máximo de páginas a serem incluídas. Essa propriedade é apropriada para métodos de pesquisa de criação da lista de página.
 
-#### Construção da Lista da página {#building-the-page-list}
+#### Construção da Lista de página {#building-the-page-list}
 
 O componente do Carrossel de troca fornece os seguintes valores para a propriedade Criar Lista usando. A caixa de diálogo de edição muda de acordo com o valor selecionado:
 
@@ -334,7 +334,7 @@ Preencha a lista usando os resultados de uma pesquisa de palavra-chave. A pesqui
 
 **Pesquisa avançada**
 
-Preencha a lista usando um query do [Querybuilder](/help/sites-developing/querybuilder-api.md) .
+Preencha a lista usando um query [Querybuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Imagem {#image}
 
