@@ -2,7 +2,7 @@
 title: Publicar páginas
 seo-title: Publicar páginas
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -110,7 +110,7 @@ Para publicar uma página com a Publicação rápida:
 
    ![screen_shot_2018-03-21at153115](assets/screen_shot_2018-03-21at153115.png)
 
-1. In the Quick Publish dialogue, confirm the publication by clicking on **Publish** or cancel by clicking on **Cancel**. Lembre-se de que todas as referências não publicadas também serão publicadas automaticamente.
+1. Na caixa de diálogo Publicação rápida, confirme a publicação clicando em **Publicar** ou cancele clicando em **Cancelar**. Lembre-se de que todas as referências não publicadas também serão publicadas automaticamente.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -120,7 +120,7 @@ Para publicar uma página com a Publicação rápida:
 >
 >A Publicação rápida é uma publicação superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
-#### Gerenciar publicação    {#manage-publication}
+#### Gerenciar publicação     {#manage-publication}
 
 A opção **Gerenciar publicação** oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
@@ -143,7 +143,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    Clique em **Avançar** para continuar.
 
-1. In the next step of the Manage Publication wizard, **Scope**, you can define the scope of the publication/unpublication such as including to include child pages and/or including references.
+1. Na próxima etapa do assistente Gerenciar publicação, **Escopo**, você pode definir o escopo da publicação/despublicação, como incluir páginas filhas e/ou incluir referências.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -177,9 +177,9 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![screen_shot_2018-03-21at153801](assets/screen_shot_2018-03-21at153801.png)
 
-   The **Published References** dialogue displayes the references for the selected content. Por padrão, todas elas são selecionadas e serão publicadas/não publicadas, mas você pode desmarcá-las para desativá-las e evitar que elas sejam incluídas na ação.
+   A caixa de diálogo **Referências publicadas** exibe as referências para o conteúdo selecionado. Por padrão, todas elas são selecionadas e serão publicadas/não publicadas, mas você pode desmarcá-las para desativá-las e evitar que elas sejam incluídas na ação.
 
-   Click **Done** to save your changes or **Cancel** to cancel the selction and return to the wizard.
+   Clique em **Concluído** para salvar suas alterações ou em **Cancelar** para cancelar a seleção e retornar ao assistente.
 
    ![screen_shot_2018-03-21at153824](assets/screen_shot_2018-03-21at153824.png)
 
@@ -197,7 +197,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    >[!NOTE]
    >
-   >A etapa **Fluxos de trabalho** será mostrada com base em quais direitos seu usuário pode ou não possuir. See the [previous note on this page](/help/sites-authoring/publishing-pages.md) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md) for details.
+   >A etapa **Fluxos de trabalho** será mostrada com base em quais direitos seu usuário pode ou não possuir. Consulte a nota [anterior desta página](/help/sites-authoring/publishing-pages.md) sobre privilégios de publicação, bem como [Gerenciando o Acesso a Workflows](/help/sites-administering/workflows-managing.md) e [Aplicando Workflows a Páginas](/help/sites-authoring/workflows-applying.md) para obter detalhes.
 
    Os recursos são agrupados pelos fluxos de trabalho acionados e cada uma das opções especificadas para:
 
@@ -205,7 +205,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
    * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha [suporte para vários recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definir um título do pacote de fluxo de trabalho se a opção para manter esse pacote tiver sido escolhida.
 
-   Click **Publish** or **Publish Later **to complete the publication.
+   Clique em **Publicar** ou **Publicar mais tarde **para concluir a publicação.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -218,11 +218,11 @@ De uma [maneira semelhante à publicação](/help/sites-authoring/publishing-pag
 * [No editor de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Do console de sites](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
+### Desfazer a publicação por meio do editor     {#unpublishing-from-the-editor}
 
 Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
-### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
+### Desfazer a publicação por meio do Console   {#unpublishing-from-the-console}
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](/help/sites-authoring/publishing-pages.md#manage-publication), também pode usá-la para desfazer a publicação.
 
@@ -264,7 +264,7 @@ Você pode usar a opção [Gerenciar publicação](/help/sites-authoring/publish
 
    Lembre-se de que você também pode rever as referências a serem publicadas por meio da opção **Referências publicadas**.
 
-1. [Continue com o assistente Gerenciar publicação como normal](#manage-publication) para concluir a publicação ou o cancelamento da publicação da árvore.
+1. [Continue com o assistente Gerenciar publicação como ](#manage-publication) normal para concluir a publicação ou a despublicação da árvore.
 
 ## Determinação do status de publicação {#determining-publication-status}
 
