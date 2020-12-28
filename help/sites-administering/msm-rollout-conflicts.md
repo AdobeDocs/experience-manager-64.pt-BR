@@ -69,7 +69,7 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criada tanto no
   <tr> 
    <td><code> /bp-level-1</code></td> 
    <td><code> /lc-level-1</code> <br /> (criado manualmente no ramo de live copy)<br /> </td> 
-   <td><code> /lc-level-1</code> <br /> (contém o conteúdo da página<br /> de nível-filho-1 que foi criado manualmente na ramificação de cópia ativa)</td> 
+   <td><code> /lc-level-1</code> <br /> (contém o conteúdo da página<br /> filho-level-1 que foi criado manualmente na ramificação de live copy)</td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criada tanto no
 
 O gerenciador de roll-out permite ativar ou desativar o gerenciamento de conflitos.
 
-Isso é feito usando a configuração [](/help/sites-deploying/configuring-osgi.md) OSGi do **Day CQ WCM Rollout Manager**:
+Isso é feito usando a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) de **Gerente de Rollout do Day CQ WCM**:
 
 * **Lidar com o conflito com páginas** criadas manualmente:
 
@@ -86,7 +86,7 @@ Isso é feito usando a configuração [](/help/sites-deploying/configuring-osgi.
 
    Defina como true se o gerenciador de roll-out deve lidar com conflitos de uma página criada na live copy com um nome que existe no blueprint.
 
-AEM tem comportamento [predefinido quando o gerenciamento de conflitos é desativado](#behavior-when-conflict-handling-deactivated).
+AEM tem [comportamento predefinido quando o gerenciamento de conflitos foi desativado](#behavior-when-conflict-handling-deactivated).
 
 ## Manipuladores de conflito {#conflict-handlers}
 
@@ -94,11 +94,11 @@ AEM usa manipuladores de conflitos para resolver quaisquer conflitos de página 
 
 AEM fornece:
 
-* O manipulador de conflitos [padrão](#default-conflict-handler):
+* O [processador de conflitos padrão](#default-conflict-handler):
 
    * `ResourceNameRolloutConflictHandler`
 
-* A possibilidade de implementar um manipulador [personalizado](#customized-handlers).
+* A possibilidade de implementar um [processador personalizado](#customized-handlers).
 * O mecanismo de classificação de serviço que permite definir a prioridade de cada manipulador individual. O serviço com a classificação mais alta é usado.
 
 ### Manipulador de conflitos padrão {#default-conflict-handler}
@@ -108,9 +108,9 @@ O manipulador de conflitos padrão:
 * É chamado de `ResourceNameRolloutConflictHandler`
 
 * Com esse manipulador, a página de blueprint tem prioridade.
-* A classificação de serviço para este manipulador está definida como baixa ( &quot;ou seja, abaixo do valor padrão para a `service.ranking` propriedade), pois a suposição é que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessário.
+* A classificação de serviço para este manipulador está definida como baixa ( &quot;ou seja, abaixo do valor padrão para a propriedade `service.ranking`), pois presume-se que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessário.
 
-Este manipulador de conflitos dá prioridade ao projeto. A página de live copy `/b` é movida (dentro da ramificação de live copy) para `/b_msm_moved`.
+Este manipulador de conflitos dá prioridade ao projeto. A página live copy `/b` é movida (dentro da ramificação live copy) para `/b_msm_moved`.
 
 * live copy: `/b`
 
@@ -158,9 +158,9 @@ Os manipuladores de conflitos personalizados permitem que você implemente suas 
 
 Os manipuladores de conflitos personalizados podem:
 
-* Seja nomeado de acordo com seus requisitos. ``
+* Seja nomeado de acordo com seus requisitos. &quot;
 * Ser desenvolvido/configurado de acordo com seus requisitos; por exemplo, você pode desenvolver um manipulador para que a página de cópia online tenha prioridade.
-* Pode ser projetado para ser configurado usando a configuração [](/help/sites-deploying/configuring-osgi.md)OSGi; nomeadamente:
+* Pode ser projetado para ser configurado usando a configuração [OSGi](/help/sites-deploying/configuring-osgi.md); nomeadamente:
 
    * **Classificação** do serviço:
 
@@ -170,13 +170,13 @@ Os manipuladores de conflitos personalizados podem:
 
 ### Comportamento ao lidar com conflitos desativado {#behavior-when-conflict-handling-deactivated}
 
-Se você [desativar manualmente a manipulação](#rollout-manager-and-conflict-handling) de conflitos, AEM não executará nenhuma ação em páginas conflitantes (páginas não conflitantes são implantadas conforme esperado).
+Se você desativar manualmente [a manipulação de conflitos](#rollout-manager-and-conflict-handling), AEM não executará nenhuma ação em nenhuma página conflitante (as páginas não conflitantes são implantadas conforme esperado).
 
 >[!CAUTION]
 >
 >AEM não fornece nenhuma indicação de que os conflitos estão sendo ignorados, pois esse comportamento deve ser configurado explicitamente, portanto, presume-se que seja o comportamento necessário.
 
-Nesse caso, a live copy tem prioridade efetiva. A página de blueprint não `/b` é copiada e a página de live copy não `/b` é tocada.
+Nesse caso, a live copy tem prioridade efetiva. A página de blueprint `/b` não é copiada e a página de live copy `/b` fica intocada.
 
 * blueprint: `/b`
 
@@ -211,4 +211,4 @@ Nesse caso, a live copy tem prioridade efetiva. A página de blueprint não `/b`
 
 ### Classificações de serviço {#service-rankings}
 
-A classificação do serviço [OSGi](https://www.osgi.org/) pode ser usada para definir a prioridade de manipuladores de conflitos individuais.
+A classificação de serviço [OSGi](https://www.osgi.org/) pode ser usada para definir a prioridade de manipuladores de conflito individuais.
