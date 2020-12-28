@@ -28,11 +28,11 @@ Ao estender os comportamentos de OOTB, é importante ter em mente as atualizaç�
 
 Isso permitirá que o site mantenha uma aparência mais consistente e simplifique a manutenção do código. Quando um novo modelo for necessário, certifique-se de estender de um modelo base compartilhado para que os requisitos globais, como a inclusão clientlib, possam ser codificados em um local. Quando um novo componente for necessário, procure oportunidades para se estender de um componente existente.
 
-### Designs de modelo de design {#design-template-designs}
+### Design de modelos {#design-template-designs}
 
 Ao definir quais componentes podem ser incluídos em cada parsys na página, a consistência da aparência do site pode ser controlada. Ao restringir o acesso ao design nas páginas, os &quot;superautores&quot; podem ser autorizados a modificar os componentes permitidos por página sem a intervenção do desenvolvedor, garantindo ao mesmo tempo que os outros autores sigam os padrões corporativos.
 
-### Desenvolver uma arquitetura SOLID {#develop-a-solid-architecture}
+### Desenvolver uma arquitetura SÓLIDA {#develop-a-solid-architecture}
 
 SÓLIDO é um acrônimo que descreve cinco princípios arquitetônicos que devem ser respeitados:
 
@@ -44,7 +44,7 @@ SÓLIDO é um acrônimo que descreve cinco princípios arquitetônicos que devem
 
 A procura do cumprimento destes cinco princípios deverá resultar num sistema que tenha uma separação rigorosa das preocupações.
 
-### Siga o princípio da robustez {#follow-the-robustness-principle}
+### Siga o Princípio da Robustez {#follow-the-robustness-principle}
 
 O Princípio da Robusteza diz que devemos ser conservadores no que enviamos, mas ser liberais no que aceitamos. Por outras palavras, ao enviar mensagens a terceiros, devemos estar completamente em conformidade com as especificações, mas ao receber mensagens de terceiros, devemos aceitar mensagens não conformes, desde que o significado da mensagem seja claro.
 
@@ -54,7 +54,7 @@ Os picos e o código de teste são parte integrante de qualquer implementação 
 
 ### Implementar scripts de migração de dados em seu próprio módulo {#implement-data-migration-scripts-in-their-own-module}
 
-Os scripts de migração de dados, enquanto o código de produção, geralmente são executados apenas uma vez na primeira inicialização de um site. Portanto, assim que o site estiver ao vivo, isso se torna um código morto. Para garantir que não criemos um código de implementação que dependa dos scripts de migração, eles devem ser implementados em seu próprio módulo. Isso também permite remover e desativar esse código imediatamente após a inicialização, eliminando o código morto do sistema.
+Os scripts de migração de dados, enquanto o código de produção, geralmente são executados apenas uma vez na primeira inicialização de um site. Portanto, assim que o site estiver ao vivo, isso se torna código morto. Para garantir que não criemos um código de implementação que dependa dos scripts de migração, eles devem ser implementados em seu próprio módulo. Isso também permite remover e desativar esse código imediatamente após a inicialização, eliminando o código morto do sistema.
 
 ### Siga as convenções Maven publicadas em arquivos POM {#follow-published-maven-conventions-in-pom-files}
 
