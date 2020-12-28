@@ -2,7 +2,7 @@
 title: (Redirecionar)Guia de início rápido
 seo-title: (Redirecionar)Guia de início rápido
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 745b98e6-54ba-44e2-8710-3332391d1ea0
 contentOwner: jsyal
 discoiquuid: 5b45b965-6f9f-4b08-bd95-f93fc6ec87ae
@@ -17,5 +17,5 @@ ht-degree: 18%
 ---
 
 
-# (Redirecionar)Guia de início rápido{#redirect-kickstart-guide}
+# (Redirecionar)Guia Kickstart{#redirect-kickstart-guide}
 
