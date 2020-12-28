@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Administração de Workflows{#administering-workflows}
 
-Os Workflows permitem que você automatize as atividades Adobe Experience Manager (AEM). Fluxos de trabalhos:
+Os workflows permitem que você automatize as atividades Adobe Experience Manager (AEM). Fluxos de trabalhos:
 
 * Consiste de uma série de etapas executadas em uma ordem específica.
 
@@ -39,9 +39,9 @@ Os processos de negócios que sua organização estabeleceu podem ser representa
 >
 >Para obter mais informações, consulte:
 >
->* Aplicação e participação em workflows: [Trabalhar com Workflows](/help/sites-authoring/workflows.md).
+>* Aplicação e participação em workflows: [Trabalhando com Workflows](/help/sites-authoring/workflows.md).
 >* Criação de modelos de fluxo de trabalho e extensão da funcionalidade do fluxo de trabalho: [Desenvolvimento e extensão de Workflows](/help/sites-developing/workflows.md).
->* Melhorando o desempenho de workflows que usam recursos significativos do servidor: [Processamento](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)de fluxo de trabalho simultâneo.
+>* Melhorando o desempenho de workflows que usam recursos significativos do servidor: [Processamento de Fluxo de Trabalho Simultâneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
 >
 
@@ -49,7 +49,7 @@ Os processos de negócios que sua organização estabeleceu podem ser representa
 
 ## Modelos e instâncias de fluxo de trabalho {#workflow-models-and-instances}
 
-[Os modelos](/help/sites-developing/workflows.md#model) de fluxo de trabalho em AEM são a representação e implementação de processos de negócios:
+[Os ](/help/sites-developing/workflows.md#model) modelos de fluxo de trabalho em AEM são a representação e implementação de processos de negócios:
 
 * Normalmente, eles agem em páginas ou ativos para obter um resultado específico.
 * Essas páginas e/ou ativos são chamados de carga do fluxo de trabalho.
@@ -109,5 +109,5 @@ Dependendo do status atual, você pode executar ações em executar instâncias 
 
 * **Suspender**: Interrompe temporariamente a execução do fluxo de trabalho. A suspensão é útil em casos excepcionais quando você não deseja que o fluxo de trabalho continue, por exemplo, para manutenção. A suspensão altera o estado do fluxo de trabalho para Suspenso.
 * **Retomar**: Reinicie um fluxo de trabalho suspenso no mesmo ponto de execução em que ele foi suspenso, usando a mesma configuração.
-* **Terminar**: Termina a execução do fluxo de trabalho e altera o estado para **ABORTED**. Uma instância de fluxo de trabalho abortada não pode ser reiniciada.
+* **Terminar**: Termina a execução do fluxo de trabalho e altera o estado para  **ABORTED**. Uma instância de fluxo de trabalho abortada não pode ser reiniciada.
 
