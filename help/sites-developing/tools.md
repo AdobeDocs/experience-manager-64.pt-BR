@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM fornece:
 
-* [uma estrutura para testar a interface do usuário](/help/sites-developing/hobbes.md)do componente.
+* [uma estrutura para testar a interface do usuário](/help/sites-developing/hobbes.md) do componente.
 * [um mecanismo para testar e depurar componentes](/help/sites-developing/developer-mode.md).
 
 Estas são duas ferramentas de teste de fonte aberta:
