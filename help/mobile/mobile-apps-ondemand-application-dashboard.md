@@ -1,6 +1,6 @@
 ---
-title: Painel de aplicativos AEM Mobile
-seo-title: Painel de aplicativos AEM Mobile
+title: painel de aplicativos AEM Mobile
+seo-title: painel de aplicativos AEM Mobile
 description: Você pode gerenciar o conteúdo do aplicativo e do aplicativo móvel do AEM Mobile Application Painel ou do Control Center. Siga esta página para saber mais.
 seo-description: Você pode gerenciar o conteúdo do aplicativo e do aplicativo móvel do AEM Mobile Application Painel ou do Control Center. Siga esta página para saber mais.
 uuid: 0d182989-eb83-4207-a8e0-050edbf98ff9
@@ -18,11 +18,11 @@ ht-degree: 3%
 ---
 
 
-# Painel de aplicativos AEM Mobile {#aem-mobile-application-dashboard}
+# painel de aplicativos AEM Mobile {#aem-mobile-application-dashboard}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Você pode gerenciar o conteúdo do aplicativo e do aplicativo móvel do AEM Mobile Application Painel ou do Control Center.
 
@@ -38,7 +38,7 @@ O gerenciamento de conteúdo do aplicativo requer um esforço coletivo de desenv
 
 Por fim, os administradores publicam estrategicamente o conteúdo atualizado do aplicativo.
 
-## O bloco Gerenciar aplicativo {#the-manage-app-tile}
+## O bloco Gerenciar aplicativos {#the-manage-app-tile}
 
 O bloco **Gerenciar aplicativo** exibe as informações disponíveis do aplicativo:
 
@@ -50,7 +50,7 @@ O bloco **Gerenciar aplicativo** exibe as informações disponíveis do aplicati
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-## O bloco Gerenciar conexão {#the-manage-connection-tile}
+## O mosaico Gerenciar conexão {#the-manage-connection-tile}
 
 O bloco **Gerenciar conexão** exibe as informações de conexão do AEM Mobile On-demand Services:
 
@@ -76,7 +76,7 @@ Esses 3 blocos fornecem uma visão geral do estado do conteúdo de um aplicativo
 
 Cada bloco pode ser expandido para fornecer uma visualização de lista mais detalhada clicando-se nas reticências (...) no canto inferior direito. Essas visualizações de lista fornecem uma maneira alternativa de acessar ações comuns do Mobile On Demand, como excluir, carregar e editar propriedades.
 
-### O bloco Gerenciar banners {#the-manage-banners-tile}
+### O mosaico Gerenciar banners {#the-manage-banners-tile}
 
 O bloco **Gerenciar banners** permite gerenciar o conteúdo de um banner. As seguintes informações são exibidas para um banner:
 
@@ -84,7 +84,7 @@ O bloco **Gerenciar banners** permite gerenciar o conteúdo de um banner. As seg
 * **TÍTULO**: nome do banner
 * **MODIFICADO**: última modificação em AEM
 * **CARREGADO**: último upload do AEM
-* **PUBLICADO**: AEM do formulário de solicitação publicado pela última vez
+* **PUBLICADO**: aem do formulário de solicitação publicado pela última vez
 * **ORIGEM**: origem (local ou remoto AEM Mobile On Demand)
 
 A imagem a seguir mostra o bloco **Gerenciar banners** no Painel de aplicativos AEM Mobile:
@@ -93,7 +93,7 @@ A imagem a seguir mostra o bloco **Gerenciar banners** no Painel de aplicativos 
 
 >[!NOTE]
 >
->Consulte **[Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)**para criar, excluir ou atualizar os banners.
+>Consulte **[Gerenciar banners](/help/mobile/mobile-on-demand-managing-banners.md)** para criar, excluir ou atualizar os banners.
 
 ### O bloco Gerenciar artigos {#the-manage-articles-tile}
 
@@ -103,18 +103,18 @@ O bloco **Gerenciar artigos** permite gerenciar o conteúdo de um artigo. As seg
 * **TÍTULO**: nome do artigo
 * **MODIFICADO**: última modificação em AEM
 * **CARREGADO**: último upload do AEM
-* **PUBLICADO**: AEM do formulário de solicitação publicado pela última vez
+* **PUBLICADO**: aem do formulário de solicitação publicado pela última vez
 * **ORIGEM**: fonte (local ou remoto AEM Mobile On-Demand)
 
-A imagem a seguir mostra o bloco **Gerenciar artigos** no AEM Mobile Application Painel:
+A imagem a seguir mostra o bloco **Gerenciar artigos** no Painel de aplicativos AEM Mobile:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->Consulte [**Gerenciar artigos **](/help/mobile/mobile-on-demand-managing-articles.md)para criar, excluir ou atualizar os artigos.
+>Consulte [**Gerenciar artigos**](/help/mobile/mobile-on-demand-managing-articles.md) para criar, excluir ou atualizar os artigos.
 
-### O bloco Gerenciar coleções {#the-manage-collections-tile}
+### O mosaico Gerenciar coleções {#the-manage-collections-tile}
 
 O bloco **Gerenciar coleções** permite gerenciar o conteúdo de uma coleção. As seguintes informações são exibidas para uma coleção:
 
@@ -122,7 +122,7 @@ O bloco **Gerenciar coleções** permite gerenciar o conteúdo de uma coleção.
 * **TÍTULO**: nome da coleção
 * **MODIFICADO**: última modificação em AEM
 * **CARREGADO**: último upload do AEM
-* **PUBLICADO**: AEM do formulário de solicitação publicado pela última vez
+* **PUBLICADO**: aem do formulário de solicitação publicado pela última vez
 * **ORIGEM**: fonte (local ou remoto AEM Mobile On-Demand)
 
 A imagem a seguir mostra o bloco **Gerenciar coleções** no Painel de aplicativos AEM Mobile:
@@ -131,7 +131,7 @@ A imagem a seguir mostra o bloco **Gerenciar coleções** no Painel de aplicativ
 
 >[!NOTE]
 >
->Consulte **[Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)**para criar, excluir ou atualizar as coleções.
+>Consulte **[Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)** para criar, excluir ou atualizar as coleções.
 
 ### Próximas etapas {#the-next-steps}
 
@@ -139,7 +139,7 @@ Depois de conhecer o painel do aplicativo, consulte os seguintes recursos para c
 
 * [Ações de criação e configuração do aplicativo](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Associando um aplicativo sob demanda a uma configuração na nuvem](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
-* [Ações de Gestão de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
+* [Ações de gestão de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 ### Recursos adicionais {#additional-resources}
 
