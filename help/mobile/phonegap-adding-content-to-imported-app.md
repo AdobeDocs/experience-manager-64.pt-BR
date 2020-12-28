@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Então você importou seu aplicativo Hybrid PhoneGap ou Cordova para AEM, e agora? Provavelmente, você desejará adicionar conteúdo autorável ao seu aplicativo. Para realizar essa tarefa, você precisará de um entendimento geral da estrutura de um aplicativo AEM. Um aplicativo em AEM é comumente dividido em duas partes. O &#39;shell&#39; e o &#39;content&#39;. A &#39;shell&#39; é composta das partes estáticas do seu aplicativo; como os arquivos de configuração do PhoneGap, a estrutura do aplicativo e os controles de navegação. O conteúdo do arquivo importado é armazenado como parte do shell. No contexto desse documento, o shell é todo o conteúdo não AEM criado do aplicativo Hybrid PhoneGap criado pelo desenvolvedor do aplicativo.
 
@@ -35,13 +35,13 @@ Para tornar a explicação mais fácil de seguir, usaremos o Marketing Cloud AEM
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-Neste exemplo, vamos criar a página de boas-vindas do aplicativo. Veja a fonte [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Vemos que o desenvolvedor do aplicativo definiu uma página de boas-vindas e forneceu um modelo para a página que é renderizada pelo aplicativo. É aqui que o desenvolvedor do aplicativo e AEM desenvolvedor precisam coordenar. O caminho para o modelo de página de boas-vindas no Aplicativo de referência híbrido é definido como &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Esse caminho é extremamente importante porque o desenvolvedor AEM criará sua página de boas-vindas no repositório AEM usando o mesmo caminho.
+Neste exemplo, vamos criar a página de boas-vindas do aplicativo. Observando a fonte [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Vemos que o desenvolvedor do aplicativo definiu uma página de boas-vindas e forneceu um modelo para a página que é renderizada pelo aplicativo. É aqui que o desenvolvedor do aplicativo e AEM desenvolvedor precisam coordenar. O caminho para o modelo de página de boas-vindas no Aplicativo de referência híbrido é definido como &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Esse caminho é extremamente importante porque o desenvolvedor AEM criará sua página de boas-vindas no repositório AEM usando o mesmo caminho.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
 É importante que o aplicativo híbrido e o conteúdo AEM criado usem o mesmo caminho, pois dependemos da capacidade de sobrepor o conteúdo usando a Sincronização de conteúdo para adicionar novas páginas ao aplicativo híbrido. Quando o aplicativo híbrido é importado para AEM como parte do processo de importação, as configurações de Sincronização de conteúdo são configuradas.
 
-![chlimage_1-70](assets/chlimage_1-78.png)
+![chlimage_1-78](assets/chlimage_1-78.png)
 
 Quando você &#39;Baixar origem&#39; do painel do aplicativo, esses scripts ContentSync serão executados para montar um arquivo do aplicativo híbrido.
 
