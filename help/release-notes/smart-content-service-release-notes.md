@@ -22,11 +22,11 @@ Visão geral do Serviço de conteúdo inteligente e problemas conhecidos do serv
 
 As organizações exigem que seus ativos digitais sejam marcados com tags com base na taxonomia que os funcionários, parceiros e clientes usam para consultar e pesquisar ativos digitais. Comparados às tags genéricas, os ativos que são marcados com base na taxonomia comercial são mais facilmente identificados e recuperados por pesquisas baseadas em tags.
 
-O Serviço de conteúdo inteligente usa a taxonomia comercial dos AEM Assets para marcar automaticamente os ativos digitais, garantindo que os ativos mais relevantes sejam exibidos nas pesquisas.
+O Serviço de conteúdo inteligente usa a taxonomia de sua empresa da AEM Assets para marcar automaticamente ativos digitais, garantindo que os ativos mais relevantes sejam exibidos em pesquisas.
 
 Você deve treinar o Serviço de conteúdo inteligente em um conjunto organizado de ativos e tags AEM para reconhecer a taxonomia de sua empresa. Depois de treinado, o serviço pode aplicar essas tags em um conjunto de ativos semelhante.
 
-O Serviço de conteúdo inteligente é acionado pela plataforma Adobe Sensei, que permite que você treine o algoritmo de reconhecimento de imagem na taxonomia de sua empresa. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em ativos semelhantes.
+O Smart Content Service é acionado pela plataforma Adobe Sensei, que permite que você treine o algoritmo de reconhecimento de imagem na taxonomia de sua empresa. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em ativos semelhantes.
 
 ## Melhorias importantes {#key-improvements}
 
@@ -94,5 +94,5 @@ Estes sites estão disponíveis somente para clientes. Se você for um cliente e
 
 * [Acesso ao produto](https://login.marketing.adobe.com)
 * [Baixe o produto em licensing.adobe.com](https://licensing.adobe.com/).
-* Atualizações, patches e pacotes de produtos para funcionalidade adicional na Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software.
-* [Suporte ao cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência](https://docs.adobe.com/content/help/en/customer-one/using/home.html)de suporte ao cliente do Adobe.
+* Atualizações, patches e pacotes de produtos para funcionalidade adicional em [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Suporte ao cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de suporte ao cliente do Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
