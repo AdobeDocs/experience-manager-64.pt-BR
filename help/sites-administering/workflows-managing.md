@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Gerenciamento do acesso a Workflows{#managing-access-to-workflows}
+# Gerenciando o acesso a Workflows{#managing-access-to-workflows}
 
 Configure as ACLs de acordo com as contas de usuário para permitir (ou desativar) o início e a participação em workflows.
 
@@ -26,7 +26,7 @@ Configure as ACLs de acordo com as contas de usuário para permitir (ou desativa
 
 As ações relativas aos workflows podem ser realizadas se:
 
-* você está trabalhando com a `admin` conta
+* você está trabalhando com a conta `admin`
 * a conta foi atribuída ao grupo padrão `workflow-users`:
 
    * esse grupo mantém todos os privilégios necessários para que seus usuários executem ações de fluxo de trabalho.
@@ -41,7 +41,7 @@ As ações relativas aos workflows podem ser realizadas se:
 >
 >Estes são os requisitos mínimos. Sua conta também deve ser o participante atribuído ou um membro do grupo atribuído para executar etapas específicas.
 
-## Configuração do acesso a Workflows {#configuring-access-to-workflows}
+## Configurando o acesso a Workflows {#configuring-access-to-workflows}
 
 Os modelos de fluxo de trabalho herdam uma ACL (controle de acesso padrão) para controlar como os usuários podem interagir com workflows. Para personalizar o acesso do usuário para um fluxo de trabalho, modifique a ACL (Lista de Controle de acesso) no repositório para a pasta que contém o nó do modelo de fluxo de trabalho:
 
@@ -50,39 +50,39 @@ Os modelos de fluxo de trabalho herdam uma ACL (controle de acesso padrão) para
 
 >[!NOTE]
 >
->Para obter informações sobre como usar o CRXDE Lite para configurar ACLs, consulte Gerenciamento [de direitos de](/help/sites-administering/user-group-ac-admin.md#access-right-management)acesso.
+>Para obter informações sobre como usar o CRXDE Lite para configurar ACLs, consulte [Gerenciamento de direitos de acesso](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ### Aplicar uma ACL para o modelo de fluxo de trabalho específico a /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Se o modelo de fluxo de trabalho estiver armazenado dentro `/var/workflow/models` , você poderá atribuir uma ACL específica, relevante somente para esse fluxo de trabalho, na pasta:
+Se o modelo de fluxo de trabalho for armazenado em `/var/workflow/models`, você poderá atribuir uma ACL específica, relevante apenas para esse fluxo de trabalho, na pasta:
 
 1. Abra o CRXDE Lite no navegador da Web (por exemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Na árvore de nós, selecione o nó da pasta de modelos de fluxo de trabalho:
 
    `/var/workflow/models`
 
-1. Clique na guia **Controle de acesso** .
-1. Na tabela Políticas **de Controle de acesso** local (Lista **de** Controle de acesso), clique no ícone de adição para **Adicionar entrada**.
-1. Na caixa de diálogo **Adicionar nova entrada** , adicione um novo ACE com as seguintes propriedades:
+1. Clique na guia **Controle de acesso**.
+1. Na tabela **Políticas de Controle de acesso Local** (**Lista de Controle de acesso**), clique no ícone de mais para **Adicionar entrada**.
+1. Na caixa de diálogo **Adicionar nova entrada** adicione uma nova ECA com as seguintes propriedades:
 
-   * **Principal**: `content-authors`
+   * **Principal**:  `content-authors`
    * **Tipo**: `Deny`
-   * **Privilégios**: `jcr:read`
+   * **Privilégios**:  `jcr:read`
    * **rep:global**: referência ao fluxo de trabalho específico
 
    ![wf-108](assets/wf-108.png)
 
-   A tabela Lista **de** Controles de acesso agora inclui a restrição para `content-authors` no modelo de `prototype-wfm-01` fluxo de trabalho.
+   A tabela **Lista do Controle de acesso** agora inclui a restrição para `content-authors` no modelo de fluxo de trabalho `prototype-wfm-01`.
 
    ![wf-109](assets/wf-109.png)
 
 1. Clique em **Salvar tudo**.
 
-   O `prototype-wfm-01` fluxo de trabalho não está mais disponível para os membros do `content-authors` grupo.
+   O fluxo de trabalho `prototype-wfm-01` não está mais disponível para membros do grupo `content-authors`.
 
 ### Crie uma subpasta em /var/workflow/models e aplique a ACL a essa {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Sua equipe [de desenvolvimento pode criar os workflows em uma subpasta](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
+Sua equipe de desenvolvimento [pode criar os workflows em uma subpasta](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
 
 `/var/workflow/models`
 
@@ -97,26 +97,26 @@ Em seguida, é possível adicionar uma ACL à própria pasta.
 
    `/var/workflow/models/prototypes`
 
-1. Clique na guia **Controle de acesso** .
-1. Na tabela Política **de Controles de acesso** aplicável, clique no ícone de mais para **Adicionar** uma entrada.
-1. Na tabela Políticas **de Controle de acesso** local (Lista **de** Controle de acesso), clique no ícone de adição para **Adicionar entrada**.
-1. Na caixa de diálogo **Adicionar nova entrada** , adicione um novo ACE com as seguintes propriedades:
+1. Clique na guia **Controle de acesso**.
+1. Na tabela **Política de Controle de acesso aplicável**, clique no ícone de mais para **Adicionar** uma entrada.
+1. Na tabela **Políticas de Controle de acesso Local** (**Lista de Controle de acesso**), clique no ícone de mais para **Adicionar entrada**.
+1. Na caixa de diálogo **Adicionar nova entrada** adicione uma nova ECA com as seguintes propriedades:
 
-   * **Principal**: `content-authors`
+   * **Principal**:  `content-authors`
    * **Tipo**: `Deny`
-   * **Privilégios**: `jcr:read`
+   * **Privilégios**:  `jcr:read`
 
    >[!NOTE]
    >
-   >Assim como em [Aplicar uma ACL para o modelo de fluxo de trabalho específico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) , você pode incluir uma rep:globo para limitar o acesso a um fluxo de trabalho específico.
+   >Assim como com [Aplique uma ACL para o modelo de fluxo de trabalho específico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), você pode incluir um rep:globo para limitar o acesso a um fluxo de trabalho específico.
 
    ![wf-110](assets/wf-110.png)
 
-   A tabela Lista **de** Controles de acesso agora inclui a restrição para `content-authors` a `prototypes` pasta.
+   A tabela **Lista do Controle de acesso** agora inclui a restrição para `content-authors` na pasta `prototypes`.
 
    ![wf-111](assets/wf-111.png)
 
 1. Clique em **Salvar tudo**.
 
-   Os modelos na `prototypes` pasta não estão mais disponíveis para os membros do `content-authors` grupo.
+   Os modelos na pasta `prototypes` não estão mais disponíveis para membros do grupo `content-authors`.
 
