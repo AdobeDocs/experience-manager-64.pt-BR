@@ -26,5 +26,5 @@ Com o scaffolding, é possível criar um formulário (um scaffold) com os campos
 
 >[!NOTE]
 >
->Although there is a Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) available, the maintenance and creation of scaffolds as well as creating new pages from scaffolds is done in the classic UI. Consulte [Scaffold](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) na documentação de criação da interface clássica para obter detalhes.
+>Embora exista um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) Scaffolding disponível, a manutenção e a criação de andaimes, bem como a criação de novas páginas a partir de andaimes, são feitas na interface clássica. Consulte [Scaffold](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) na documentação de criação da interface clássica para obter detalhes.
 
