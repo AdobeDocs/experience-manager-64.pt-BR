@@ -35,7 +35,7 @@ Para obter informações sobre a interface clássica, consulte [AEM Componentes 
 >Para ajudá-lo a analisar, testar e depurar seus componentes, o AEM fornece:
 >
 >* [Modo de desenvolvedor](/help/sites-developing/developer-mode.md)
->* uma [estrutura para automatizar testes, com base na biblioteca do Hobbes.js](/help/sites-developing/hobbes.md)
+>* uma estrutura [para automação de testes, com base na biblioteca Hobbes.js](/help/sites-developing/hobbes.md)
 
 >
 
@@ -48,11 +48,11 @@ CÓDIGO NO GITHUB
 Você pode encontrar o código desta página no GitHub
 
 * [Abra o projeto aem-authoring-dialog-fields-customization no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
+* Baixe o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
 
 >[!NOTE]
 >
->Esta amostra de código está relacionada à sessão Gems AEM em [Personalizar campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)de diálogo.
+>Este exemplo de código está relacionado à sessão Gems AEM em [Personalizando campos de diálogo](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Recursos relacionados {#related-resources}
 
@@ -60,11 +60,11 @@ Você pode encontrar o código desta página no GitHub
 
 Novas ações podem ser adicionadas às barras de ferramentas do componente usando a camada de edição do editor de página.
 
-Detalhes, juntamente com links para a amostra de código, estão em [Adicionar nova ação a uma barra de ferramentas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar)de componente.
+Detalhes, juntamente com links para a amostra de código, estão em [Adicionar nova ação a uma barra de ferramentas de componente](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
 
 ### Personalização e extensão de fragmentos de conteúdo {#customizing-and-extending-content-fragments}
 
 Você pode desejar estender o componente padrão Fragmento de conteúdo para adicionar recursos.
 
-Detalhes estão em [Personalização e extensão de fragmentos](/help/sites-developing/customizing-content-fragments.md)de conteúdo.
+Os detalhes estão em [Personalização e extensão de fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md).
 
