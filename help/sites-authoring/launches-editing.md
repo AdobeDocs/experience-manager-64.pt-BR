@@ -44,12 +44,12 @@ Você pode fazer alterações da mesma forma como pode editar uma live copy padr
 
 Consulte [Alteração do conteúdo da live copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para obter mais informações.
 
-## Comparação de uma página de lançamento com sua página de origem {#comparing-a-launch-page-to-its-source-page}
+## Comparação de uma página de lançamento com sua página de origem  {#comparing-a-launch-page-to-its-source-page}
 
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
 1. No console **Sites**, [navegue até a página de origem do seu lançamento e selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra o painel **[Referências](/help/sites-authoring/basic-handling.md#references)**e selecione **Lançamentos**.
+1. Abra o painel **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Lançamentos**.
 1. Selecione seu lançamento específico e depois **Comparar com a origem**:
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
@@ -58,7 +58,7 @@ Para rastrear as alterações feitas, é possível exibir a inicialização em *
 
    Para obter informações completas sobre como usar esse recurso, consulte [Diferencial de página](/help/sites-authoring/page-diff.md).
 
-## Alteração nas páginas de origem usadas {#changing-the-source-pages-used}
+## Alteração nas páginas de origem usadas  {#changing-the-source-pages-used}
 
 A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de páginas de origem para um lançamento:
 
@@ -79,7 +79,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
    >
    >Para adicionar páginas a um lançamento, elas devem estar abaixo de uma raiz de linguagem comum, isto é, dentro de um único site.
 
-## Edição de configuração de lançamento {#editing-a-launch-configuration}
+## Edição de configuração de lançamento  {#editing-a-launch-configuration}
 
 A qualquer momento, você pode editar as propriedades de um lançamento:
 
@@ -98,7 +98,7 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
 
    Consulte [Lançamentos - a ordem de eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre o propósito e a interação dos campos **Data de lançamento** e **Pronto para produção**.
 
-## Descoberta do status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
+## Descoberta do status de lançamento de uma página  {#discovering-the-launch-status-of-a-page}
 
 O status é mostrado quando você seleciona um lançamento específico na guia Referências (consulte [Lançamentos em Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
