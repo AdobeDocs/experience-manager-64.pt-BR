@@ -63,7 +63,7 @@ Dependendo da escala do seu sistema, o ambiente de desenvolvimento pode ter inst
 
 ### Controle de qualidade {#quality-assurance}
 
-This environment is used by the quality assurance team to comprehensively [test](/help/sites-developing/test-plan.md) your new system; both design and function. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
+Este ambiente é usado pela equipe de controle de qualidade para [testar](/help/sites-developing/test-plan.md) o novo sistema; design e função. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
 
 ### Estágios {#staging}
 
@@ -141,6 +141,6 @@ O conteúdo de produção deve ser transferido do ambiente de produção ao ambi
 O conteúdo pode ser transferido:
 
 * Entre os diferentes ambientes - exportando e importando pacotes.
-* Between different instances - by directly replicating ([AEM replication](/help/sites-deploying/replication.md)) the content (using a HTTP, or HTTPS, connection).
+* Entre instâncias diferentes - replicando diretamente ([AEM replicação](/help/sites-deploying/replication.md)) o conteúdo (usando uma conexão HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
