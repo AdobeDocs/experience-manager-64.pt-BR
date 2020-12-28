@@ -92,5 +92,5 @@ Para adicionar uma clientlib para um site da comunidade usando [CRXDE Lite](../.
 
 Usando o exemplo [Introdução ao AEM Communities](getting-started.md), onde `site-name` é *engajar*, esta é a forma como a clientliblist aparecerá se o componente de revisão for adicionado:
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![chlimage_1-248](assets/chlimage_1-247.png)
 
