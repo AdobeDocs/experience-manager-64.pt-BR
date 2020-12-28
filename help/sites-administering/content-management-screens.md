@@ -1,6 +1,6 @@
 ---
-title: Gestão de conteúdo para telas
-seo-title: Gestão de conteúdo para telas
+title: gestão de conteúdo para telas
+seo-title: gestão de conteúdo para telas
 description: Saiba mais sobre as noções básicas de Gestão de conteúdo para o Screens.
 seo-description: Saiba mais sobre as noções básicas de Gestão de conteúdo para o Screens.
 uuid: eee0036e-b352-4cde-84d2-04b27d3dfe95
@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# Gestão de conteúdo para telas{#content-management-for-screens}
+# gestão de conteúdo para Screens{#content-management-for-screens}
 
-Um ***Content Manager*** for AEM Screens é um profissional criativo que trabalha em conjunto com o marketing e conhece a campanha, a audiência e o foco desejado. O gerenciador de conteúdo é responsável por criar e orquestrar a experiência do usuário final, desenvolvendo diferentes canais e atribuindo sequências a uma experiência de canal cronometrada.
+Um ***Gerenciador de conteúdo*** para AEM Screens é um profissional criativo que trabalha em conjunto com o marketing e conhece a campanha, a audiência e o foco desejado. O gerenciador de conteúdo é responsável por criar e orquestrar a experiência do usuário final, desenvolvendo diferentes canais e atribuindo sequências a uma experiência de canal cronometrada.
 
 O Content Manager for Screens projeta locais e agendamentos, mantém a integridade do canal, executa análises e relatórios e mantém perfis de vídeo.
 
