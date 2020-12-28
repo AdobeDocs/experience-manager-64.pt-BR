@@ -40,7 +40,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.4 em detalhes:
 
 ### Desenvolvimento de componentes e modelos {#component-amp-template-development}
 
-* Project Archetype 13+, consulte [Github para obter as notas](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases)de versão.
+* Project Archetype 13+, consulte [Github para obter as notas de versão](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
 * HTL versão 1.3.1, consulte o [Github para obter notas de versão](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
 * Componentes principais 2.0.4+, consulte o [Github para obter notas de versão](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Sistema de estilos
@@ -69,7 +69,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.4 em detalhes:
 
 * Aprimoramento da utilização do editor de Fragmento de conteúdo AEM
 
-   * Visão geral da Visualização de todos os elementos
+   * Visão geral da visualização de todos os elementos
    * Edição em tela cheia para elementos únicos
    * Recursos aprimorados de edição de rich text (listas com marcadores, listas numeradas, recuo, hiperlinks, tabelas, localizar e substituir, verificação ortográfica)
 
@@ -102,7 +102,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.4 em detalhes:
 * Os workflows de tradução agora suportam raízes de idiomas agrupados
 * Foi adicionada a capacidade de atribuir nomes arbitrários a raízes de idioma e usar a propriedade JCR para mapear para código ISO
 * As atualizações de tradução inteligente agora reconhecem novas páginas que foram adicionadas a uma ramificação principal de idioma
-* relatórios de status de tradução introduzido na visualização de lista de administração do Sites
+* Relatórios de status de tradução introduzido na visualização de lista de administração do Sites
 
 ### Gerenciamento de vários sites (MSM) {#multi-site-management-msm}
 
@@ -123,12 +123,12 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.4 em detalhes:
 
 * Fragmentos de experiência integrados AEM com o Adobe Target. A sincronização dos Fragmentos de experiência com o Público alvo criará ofertas no Adobe Target que podem ser usadas com o Visual Experience Composer do Público alvo para incorporá-lo a qualquer experiência habilitada pelo Público alvo.
 * Adobe Target mbox.js versão 63 agora incluído. A Adobe recomenda mudar a implementação para at.js.
-* at.js versão 1.2.2 agora incluída. O Adobe recomenda usar o Gerenciamento dinâmico de tags (DTM) ou o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) para provisionar o at.js no site.
+* at.js versão 1.2.2 agora incluída. O Adobe recomenda usar o Gerenciamento dinâmico de tags (DTM) ou [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) para provisionar o at.js no site.
 
 ### AEM &amp; Adobe Analytics {#aem-amp-adobe-analytics}
 
 * s_code.js H.27.5 agora incluído. O Adobe recomenda mudar a implementação para AppMeasurement.js
-* AppMeasurement.js 1.8.0 agora incluído. O Adobe recomenda usar o Gerenciamento dinâmico de tags (DTM) ou o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) para provisionar o AppMeasurement.js no site.
+* AppMeasurement.js 1.8.0 agora incluído. O Adobe recomenda usar o Gerenciamento dinâmico de tags (DTM) ou [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) para provisionar o AppMeasurement.js no site.
 
 ## Complemento do Communities {#communities-add-on}
 
@@ -138,8 +138,8 @@ Consulte a página [Notas de versão do Communities](/help/release-notes/communi
 
 * Adição de suporte para players de telas que se conectam a servidores de publicação AEM para downloads de comando e controle e canais (em vez de diretamente para AEM autor).
 * Adição da capacidade de agrupar atribuições de canais em Programações
-* As atribuições de Canais agora têm start e data de término
+* As atribuições de canais agora têm start e data de término
 * O Painel do dispositivo agora mostra a shell do player e a versão do firmware
 * A lista de Painel do dispositivo mostra o status da conexão do player
-* Adicionado suporte do Google Chrome OS para AEM Screens Player
+* Adição do suporte ao Google Chrome OS para AEM Screens Player
 * Adicionado o Microsoft Windows 10 para AEM Screens Player
