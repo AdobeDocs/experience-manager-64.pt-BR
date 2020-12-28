@@ -31,7 +31,7 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 ...
 ```
 
-## Executar uma verificação de consistência {#perform-a-consistency-check}
+## Execute uma verificação de consistência {#perform-a-consistency-check}
 
 Para executar uma verificação de consistência, navegue até a página de administração do JMX Mbean** com.adobe.granite (Repositório)**. Na tela principal AEM, vá para:
 
