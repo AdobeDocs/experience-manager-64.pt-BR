@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão em funcionamento do AEM implantado. O procedimento foi criado para documento de atualizações executadas de **AEM versão 5.6 para 6.3**.
+Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão em funcionamento do AEM implantado. O procedimento destina-se a documento de atualizações executadas de **AEM versão 5.6 para 6.3**.
 
-1. Primeiro, start JBoss. Na maioria das situações, é possível fazer isso executando o script de `standalone.sh` inicialização executando esse comando do terminal:
+1. Primeiro, start JBoss. Na maioria das situações, é possível fazer isso executando o script de inicialização `standalone.sh`, executando esse comando do terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -70,9 +70,9 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
 
 1. Remova os arquivos e pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
 
-   * A pasta **launch/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
-   * O arquivo **** base.jar: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * O arquivo **** BootstrapCommandFile_timestamp.txt: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * A pasta **launch pad/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * O arquivo **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * O arquivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copie o repositório de segmentos recém-migrado para o local apropriado:
 
@@ -121,7 +121,7 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o `web.xml` arquivo para alterar os modos de execução. Para localizar o local onde estão definidos no XML, procure a `sling.run.modes` string. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definido como autor:
+1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo `web.xml` para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definido como autor:
 
    ```shell
    <param-value >author</param-value>
