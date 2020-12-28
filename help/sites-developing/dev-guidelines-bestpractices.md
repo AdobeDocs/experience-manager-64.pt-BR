@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Desenvolvimento de AEM - diretrizes e práticas recomendadas{#aem-development-guidelines-and-best-practices}
+# Desenvolvimento de AEM - Diretrizes e Práticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Diretrizes para o uso de modelos e componentes {#guidelines-for-using-templates-and-components}
 
@@ -33,7 +33,7 @@ A forma recomendada de abordar este desafio seria:
 * Reutilize um modelo existente para criar um novo tipo de página. O modelo define aproximadamente a estrutura da página (elementos de navegação, painéis e assim por diante), que é aprimorada pelo design (CSS, gráficos).
 * Use o sistema de parágrafo (parsys/iparsys) nas novas páginas.
 * Defina o direito de acesso ao modo Design dos sistemas de parágrafo, para que somente pessoas autorizadas (geralmente o administrador) possam alterá-las.
-* Defina os componentes permitidos no sistema de parágrafo especificado para que os editores possam colocar os componentes necessários na página. Em nosso caso, pode ser um componente de lista, que pode atravessar uma subárvore de páginas e extrair as informações de acordo com regras predefinidas.
+* Defina os componentes permitidos no sistema de parágrafo fornecido para que os editores possam colocar os componentes necessários na página. Em nosso caso, pode ser um componente de lista, que pode atravessar uma subárvore de páginas e extrair as informações de acordo com regras predefinidas.
 * Os editores adicionam e configuram os componentes permitidos, nas páginas pelas quais eles são responsáveis, para fornecer a funcionalidade solicitada (informações) aos negócios.
 
 Isso ilustra como essa abordagem permite que os usuários e administradores do site que contribuem respondam às necessidades dos negócios rapidamente, sem a necessidade do envolvimento das equipes de desenvolvimento. Os métodos alternativos, como a criação de um novo modelo, são geralmente um exercício dispendioso, exigindo um processo de gerenciamento de alterações e envolvimento da equipe de desenvolvimento. Isto torna todo o processo muito mais longo e dispendioso.
@@ -57,7 +57,7 @@ Isso pode ser feito copiando e sobrepondo a definição existente. Em outras pal
 
 >[!NOTE]
 >
->Consulte [Uso de sobreposições](/help/sites-developing/overlays.md) para obter mais detalhes.
+>Consulte [Usando Sobreposições](/help/sites-developing/overlays.md) para obter mais detalhes.
 
 Por exemplo:
 
@@ -65,7 +65,7 @@ Por exemplo:
 
    Isso envolveu sobrepor uma definição de componente:
 
-   * Crie uma nova pasta de componentes `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
+   * Crie uma nova pasta de componentes em `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
 
       * Por exemplo, para personalizar a cópia do componente de Texto:
 
@@ -83,13 +83,13 @@ Por exemplo:
 
 >[!CAUTION]
 >
->Você não **deve** alterar nada no `/libs` caminho.
+>Você **não deve** alterar nada no caminho `/libs`.
 >
->Isso ocorre porque o conteúdo do é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos). `/libs`
+>Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos).
 >
 >Para configurações e outras alterações:
 >
->1. copiar o item em `/libs` para `/apps`
+>1. copie o item em `/libs` para `/apps`
 >1. faça quaisquer alterações em `/apps`
 
 
@@ -112,14 +112,14 @@ Para renderizar conteúdo, use o acesso de navegação à árvore de conteúdo e
 
 >[!NOTE]
 >
->Se você usar o Construtor de [Query](/help/sites-developing/querybuilder-api.md), usará Query JCR, já que o Construtor de Query gera Query JCR sob o capô.
+>Se você usar o [Construtor de Query](/help/sites-developing/querybuilder-api.md), usará Query JCR, já que o Construtor de Query gera Query JCR sob o capô.
 
 
 ## Considerações sobre segurança {#security-considerations}
 
 >[!NOTE]
 >
->Também vale a pena fazer referência à lista [de verificação de](/help/sites-administering/security-checklist.md)segurança.
+>Também vale a pena fazer referência à [lista de verificação de segurança](/help/sites-administering/security-checklist.md).
 
 ### Sessões JCR (Repositório) {#jcr-repository-sessions}
 
@@ -147,7 +147,7 @@ A folha de truques XSSAPI.
 
 [Obter arquivo](assets/xss_cheat_sheet_2016.pdf)
 
-### Proteção da comunicação para informações confidenciais {#securing-communication-for-confidential-information}
+### Protegendo a comunicação para informações confidenciais {#securing-communication-for-confidential-information}
 
 Quanto a qualquer pedido de acesso à Internet, certifique-se de que, ao transportar informações confidenciais,
 
@@ -156,16 +156,16 @@ Quanto a qualquer pedido de acesso à Internet, certifique-se de que, ao transpo
 
 Isso se aplica às informações confidenciais do sistema (como configuração ou acesso administrativo), bem como às informações confidenciais dos usuários (como seus detalhes pessoais)
 
-## Tarefas de desenvolvimento distintas {#distinct-development-tasks}
+## Tarefas de Desenvolvimento Distintas {#distinct-development-tasks}
 
-### Personalização de páginas de erro {#customizing-error-pages}
+### Personalizando páginas de erro {#customizing-error-pages}
 
 As páginas de erro podem ser personalizadas para AEM. Isso é recomendável para que a instância não revele rastreamentos sling em erros internos do servidor.
 
-Consulte [Personalização de páginas de erro mostrada pelo manipulador](/help/sites-developing/customizing-errorhandler-pages.md) de erros para obter detalhes completos.
+Consulte [Personalizando páginas de erro mostradas pelo Manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md) para obter detalhes completos.
 
 ### Abrir arquivos no processo Java {#open-files-in-the-java-process}
 
-Como AEM pode acessar um grande número de arquivos, recomenda-se que o número de arquivos [abertos para um processo](/help/sites-deploying/configuring.md#open-files-in-the-java-process) Java seja configurado explicitamente para AEM.
+Como AEM pode acessar um grande número de arquivos, recomenda-se que o número de [arquivos abertos para um processo Java](/help/sites-deploying/configuring.md#open-files-in-the-java-process) seja configurado explicitamente para AEM.
 
 Para minimizar esse problema, o desenvolvimento deve garantir que todos os arquivos abertos sejam fechados corretamente assim que possível (significativo).
