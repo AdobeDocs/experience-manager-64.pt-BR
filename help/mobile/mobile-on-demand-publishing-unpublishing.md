@@ -18,19 +18,19 @@ ht-degree: 1%
 ---
 
 
-# Publicar conteúdo não publicado{#publish-unpublish-content}
+# Publicar Cancelar publicação de conteúdo{#publish-unpublish-content}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Depois de conhecer as ações de gestão de conteúdo em artigos, banners e coleções, você pode publicar seu conteúdo. Além disso, você pode cancelar a publicação do conteúdo.
 
 >[!NOTE]
 >
->Para saber mais sobre considerações de design para aplicativos AEM Mobile, consulte Considerações de [design para aplicativos](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile na Ajuda online.
+>Para saber mais sobre considerações de design para aplicativos AEM Mobile, consulte [Considerações de design para aplicativos AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda online.
 
-## Publicar/desfazer a publicação do conteúdo {#publishing-unpublishing-the-content}
+## Publicar/Cancelar publicação do conteúdo {#publishing-unpublishing-the-content}
 
 Isso é diferente de um &quot;Publicação de AEM&quot;. Não estamos enviando conteúdo para uma instância do servidor de publicação de AEM para torná-lo visível publicamente. Aqui, informamos o Mobile On-Demand que o conteúdo selecionado deve ser tornado público no aplicativo Mobile On-Demand ativo.
 
