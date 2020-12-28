@@ -39,7 +39,7 @@ Sem um Dd bem definido, é fácil acabar numa situação em que muitas coisas es
 
 Coisas como níveis de recuo e espaço em branco podem não parecer importantes, mas ter um código devidamente formatado vai muito longe para a legibilidade e a manutenibilidade. As convenções devem ser discutidas e acordadas como uma equipe e então seguidas no código.
 
-### Objetivo para a cobertura de testes elevados  {#aim-for-high-test-coverage}
+### Objetivo para a cobertura de teste elevado {#aim-for-high-test-coverage}
 
 À medida que a implementação de um projeto cresce em tamanho, o mesmo acontecerá com o tempo necessário para testá-la. Sem uma boa cobertura de teste, a equipe de teste não poderá ser dimensionada e os desenvolvedores acabarão enterrados em insetos.
 
@@ -55,15 +55,15 @@ O sistema deve estar disponível para demonstração à empresa no final de cada
 
 A implementação de um ambiente de integração contínua permitirá a execução fácil e repetida de testes de unidade e testes de integração. Também dissociará as implantações da equipe de desenvolvimento, permitindo que as outras partes da equipe sejam mais eficientes e permitindo implantações mais estáveis e previsíveis.
 
-### Mantenha o ciclo de desenvolvimento rápido mantendo os tempos de construção baixos {#keep-the-development-cycle-fast-by-keeping-build-times-low}
+### Mantenha o ciclo de desenvolvimento rápido mantendo os tempos de compilação baixos {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
 Se os testes de unidade levarem muito tempo para serem executados, os desenvolvedores evitarão executá-los e perderão seu valor. Se levar muito tempo para criar o código e implantá-lo, as pessoas farão isso com menos frequência. Tornar os tempos de construção curtos uma prioridade garante que o tempo que investimos na nossa cobertura de testes e na infraestrutura de IC continuarão a tornar a equipe mais produtiva.
 
-### Ajuste o Sonar e outras ferramentas de análise de código estático e aja de acordo com seus relatórios {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Ajuste o Sonar e outras ferramentas de análise de código estático e aja em seus relatórios {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
 As ferramentas de análise de código podem ser valiosas, mas somente se seus relatórios levarem à ação da equipe de desenvolvimento. Sem ajustar a análise que essas ferramentas oferecem, as recomendações que geram não serão relevantes e perderão seu valor.
 
-### Siga a regra do Scout {#follow-the-boy-scout-rule}
+### Siga a Regra de Scout de Menino {#follow-the-boy-scout-rule}
 
 Os Scout Boy têm uma regra: &quot;Deixe melhor do que você encontrou.&quot; Desde que todos os membros da equipe de desenvolvimento adiram a esta regra e limpam algo quando eles se deparam com uma bagunça, o código vai melhorar constantemente.
 
