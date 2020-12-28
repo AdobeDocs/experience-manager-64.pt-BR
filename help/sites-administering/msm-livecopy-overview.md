@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Console de Visão Geral do Live Copy{#live-copy-overview-console}
 
-A Visão geral **** da Live Copy permite:
+O **Live Copy Overview** permite que você:
 
 * Visualização/gerenciamento da herança em um site:
 
    * Visualização da árvore de blueprint e da estrutura de live copy correspondente, juntamente com o status de herança
    * Alterar o status da herança; por exemplo, suspender, retomar
-   * Propriedades de blueprint e live copy da Visualização
+   * Propriedades de blueprint e live copy da visualização
 
 * Executar ações de implantação
 
@@ -37,12 +37,12 @@ Você pode abrir a Visão geral da Live Copy em:
 * [Painel de referências laterais de uma página de blueprint (console Sites)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Propriedades de uma página de blueprint](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Abrindo visão geral da Live Copy - Referências para uma página do Blueprint {#opening-live-copy-overview-references-for-a-blueprint-page}
+### Abrindo a visão geral da Live Copy - Referências para uma página do Blueprint {#opening-live-copy-overview-references-for-a-blueprint-page}
 
-A Visão geral **da Live Copy pode ser aberta no painel lateral** Referências **do console** Sites **** :
+O **Live Copy Overview** pode ser aberto a partir do painel lateral **Referências** do console **Sites**:
 
-1. No console **Sites** , [navegue até sua página de blueprint e selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **[References](/help/sites-authoring/basic-handling.md#references)**panel and select **Live Copies**.
+1. No console **Sites**, [navegue até a página de blueprint e selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Abra o painel **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Live Copies**.
 
    ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -50,32 +50,32 @@ A Visão geral **da Live Copy pode ser aberta no painel lateral** Referências *
    >
    >Você também pode abrir Referências primeiro e depois selecionar o blueprint.
 
-1. Selecione Visão geral **** da Live Copy para mostrar e usar a visão geral de todas as cópias online relacionadas ao blueprint selecionado.
-1. Use **Fechar** para sair e retornar ao console **Sites** .
+1. Selecione **Visão geral da Live Copy** para mostrar e usar a visão geral de todas as cópias online relacionadas ao blueprint selecionado.
+1. Use **Close** para sair e retornar ao console **Sites**.
 
-### Abrindo visão geral do Live Copy - Propriedades de uma página do Blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
+### Abrindo a visão geral do Live Copy - Propriedades de uma página do Blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-A Visão geral **** da Live Copy pode ser aberta ao exibir propriedades de uma página do blueprint:
+**Visão geral do Live Copy** pode ser aberta ao exibir propriedades de uma página de blueprint:
 
 1. Abra **Propriedades** para a página de blueprint apropriada.
-1. Abra a guia **Blueprint** - a opção **Live Copy Overview (Visão geral** da Live Copy) será exibida na barra de ferramentas superior:
+1. Abra a guia **Blueprint** - a opção **Visão geral da Live Copy** será exibida na barra de ferramentas superior:
 
    ![chlimage_1-360](assets/chlimage_1-360.png)
 
-1. Selecione Visão geral **** da Live Copy para mostrar e usar a visão geral de todas as cópias online relacionadas ao blueprint atual.
+1. Selecione **Visão geral do Live Copy** para mostrar e usar a visão geral de todas as cópias online relacionadas ao blueprint atual.
 
    >[!NOTE]
    >
-   >Para obter mais detalhes, consulte também a mensagem de status do artigo da Base de conhecimento [Livecopy - Atualizado/Verde/Em sincronia](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Para obter mais detalhes, consulte também o artigo da Base de conhecimento [Mensagem de status do Livecopy - Atualizado/Verde/Em Sincronização](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
-1. Use **Fechar** para sair e retornar ao console **Sites** .
+1. Use **Close** para sair e retornar ao console **Sites**.
 
 ## Uso da visão geral da Live Copy {#using-the-live-copy-overview}
 
-A Visão geral **** da Live Copy também pode ser usada para executar ações na live copy:
+O **Live Copy Overview** também pode ser usado para executar ações na live copy:
 
-1. Open the **Live Copy Overview**.
-1. Selecione a página de blueprint ou live copy necessária - a barra de ferramentas será atualizada para mostrar as ações disponíveis. As [ações](/help/sites-administering/msm.md#terms-used) disponíveis dependem de você selecionar uma página [blueprint](#actions-for-a-blueprint-page) ou [live copy](#actions-for-a-live-copy-page) :
+1. Abra a **Visão geral da Live Copy**.
+1. Selecione a página de blueprint ou live copy necessária - a barra de ferramentas será atualizada para mostrar as ações disponíveis. As [ações](/help/sites-administering/msm.md#terms-used) disponíveis dependem de você selecionar uma página [blueprint](#actions-for-a-blueprint-page) ou [live copy](#actions-for-a-live-copy-page):
 
 ### Ações para uma página do Blueprint {#actions-for-a-blueprint-page}
 
@@ -103,7 +103,7 @@ Quando você seleciona uma página de live copy, as seguintes ações estão dis
 
 * [Status do relacionamento](#relationship-status)
 
-   * Informações de Visualização sobre o status e a herança.
+   * Informações de visualização sobre o status e a herança.
 
 * [Sincronizar](/help/sites-administering/msm.md#rollout-and-synchronize)
 
