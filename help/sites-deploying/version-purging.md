@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Expurgação de versão{#version-purging}
+# Expurgação da Versão{#version-purging}
 
 Em uma instalação padrão, o AEM cria uma nova versão de uma página ou nó quando você ativa uma página depois de atualizar o conteúdo.
 
@@ -32,11 +32,11 @@ Essas versões nunca são expurgadas, portanto, o tamanho do repositório cresce
 
 AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositório:
 
-* o Gerenciador [de versões](#version-manager)
+* o [Gerenciador de versões](#version-manager)
 
    Isso pode ser configurado para expurgar versões antigas quando novas versões forem criadas.
 
-* a ferramenta [Expurgar versões](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* a ferramenta [Expurgar Versões](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
 
    Isso é usado como parte do monitoramento e da manutenção do repositório.
 
@@ -50,7 +50,7 @@ AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositóri
 
       Quando a idade de uma versão exceder esse valor, ele será removido do repositório.
 
-* a tarefa [de manutenção Expurgação da](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)versão. Você pode agendar a tarefa de manutenção Expurgação da versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Expurgação de versão.
+* a tarefa de manutenção [Expurgação da versão](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Você pode agendar a tarefa de manutenção Expurgação da versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Expurgação de versão.
 
 >[!CAUTION]
 >
