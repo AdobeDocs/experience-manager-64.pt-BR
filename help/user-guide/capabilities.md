@@ -1,6 +1,6 @@
 ---
-title: Guia do usuário dos recursos do AEM 6.4
-seo-title: Guia do usuário dos recursos do AEM 6.4
+title: Guia do usuário dos recursos AEM 6.4
+seo-title: Guia do usuário dos recursos AEM 6.4
 description: Uma visão geral dos recursos essenciais do AEM 6.4
 seo-description: Uma visão geral dos recursos essenciais do AEM 6.4
 contentOwner: bohnert
@@ -9,18 +9,18 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 45%
 
 ---
 
 
-# Guias do usuário dos recursos do AEM 6.4 {#aem-64-capabilities-user-guides}
+# AEM 6.4 Guias do Usuário de Recursos {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Saiba mais sobre como instalar, implantar e a arquitetura do Adobe Experience Manager 6.4](/help/sites-deploying/home.md), incluindo nossa implantação em nuvem do Adobe Managed Services.
+[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4](/help/sites-deploying/home.md), incluindo nossa implantação em nuvem dos Serviços gerenciados da Adobe.
 
-[Saiba como gerenciar um projeto](/help/managing/home.md)do AEM.
+[Saiba como gerenciar um projeto do AEM](/help/managing/home.md).
 
 ## AEM Sites {#aem-sites}
 
@@ -32,7 +32,7 @@ ht-degree: 9%
 
 [Crie, gerencie, entregue e otimize ativos digitais.](/help/assets/home.md)
 
-## Formulários AEM {#aem-forms}
+## AEM Forms {#aem-forms}
 
 [Crie, gerencie, publique e atualize formulários digitais.](/help/forms/home.md)
 
@@ -46,7 +46,7 @@ ht-degree: 9%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Compartilhe conteúdo gerado pelo usuário com o AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
+[Compartilhe conteúdo gerado pelo usuário com AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 
