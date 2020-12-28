@@ -22,15 +22,15 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Os aplicativos são representados como *cq:Pages* no AEM.
 
-Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page* , além de outras mostradas abaixo que representam as propriedades de suporte da integração.
+Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page*, além de outras mostradas abaixo que representam as propriedades de suporte da integração.
 
 ## Propriedades do aplicativo {#app-properties}
 
-A tabela a seguir mostra as Propriedades e nós do **aplicativo**.
+A tabela a seguir mostra **Propriedades do aplicativo e nós**.
 
 <table>
  <tbody>
@@ -87,7 +87,7 @@ A tabela a seguir mostra as Propriedades e nós do **aplicativo**.
  </tbody>
 </table>
 
-Você pode usar Propriedades ****** de conteúdo para criar conteúdo. Consulte os seguintes recursos para criar e exportar artigos e recursos compartilhados:
+Você pode usar ***Propriedades do conteúdo*** para criar conteúdo. Consulte os seguintes recursos para criar e exportar artigos e recursos compartilhados:
 
 * [Propriedades do conteúdo](/help/mobile/content-properties.md)
 * [Criando Configuração de Exportação de Artigo](/help/mobile/creating-article-export-configuration.md)
