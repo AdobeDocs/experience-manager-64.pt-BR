@@ -22,13 +22,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-[Os aplicativos](https://en.wikipedia.org/wiki/Single-page_application) de página única (SPA) atingiram massa crítica, amplamente considerada o padrão mais eficaz para criar experiências ininterruptas com a tecnologia da Web. Ao seguir um padrão de SPA, é possível criar um aplicativo que tenha um desempenho idêntico a um aplicativo desktop ou móvel, mas alcance várias plataformas de dispositivos e fatores de forma, devido à sua fundação em padrões da Web abertos.
+[Aplicativos](https://en.wikipedia.org/wiki/Single-page_application)  de página única (SPA) alcançaram massa crítica, amplamente considerada o padrão mais eficaz para criar experiências ininterruptas com a tecnologia da Web. Seguindo um padrão SPA, você pode criar um aplicativo que tenha um desempenho idêntico a um desktop ou aplicativo móvel, mas alcance várias plataformas de dispositivos e fatores de forma, devido à sua fundação em padrões da Web abertos.
 
-De modo geral, as SPAs parecem mais eficientes do que os sites baseados em páginas tradicionais, pois normalmente carregam uma página HTML completa **apenas uma vez** (incluindo CSS, JS e conteúdo de fonte de suporte) e carregam somente o que é necessário sempre que uma mudança de estado ocorre no aplicativo. O que é necessário para essa mudança de estado pode variar com base no conjunto de tecnologias escolhidas, mas geralmente inclui um único fragmento HTML para substituir a &quot;visualização&quot; existente, e a execução de um bloco de código JS para conectar a nova visualização e executar qualquer renderização de modelo do lado do cliente que possa ser necessária. A velocidade dessa alteração de estado pode ser melhorada ainda mais, por meio do suporte a mecanismos de armazenamento de modelo em cache, ou até mesmo acesso offline ao conteúdo do modelo, se o Adobe PhoneGap for usado.
+De modo geral, SPA parecem mais eficientes do que os sites baseados em páginas tradicionais porque eles normalmente carregam uma página HTML completa **apenas uma vez** (incluindo CSS, JS e conteúdo de fonte de suporte) e carregam somente o que é necessário sempre que uma mudança de estado ocorre no aplicativo. O que é necessário para essa mudança de estado pode variar com base no conjunto de tecnologias escolhidas, mas geralmente inclui um único fragmento HTML para substituir a &quot;visualização&quot; existente, e a execução de um bloco de código JS para conectar a nova visualização e executar qualquer renderização de modelo do lado do cliente que possa ser necessária. A velocidade dessa alteração de estado pode ser melhorada ainda mais, por meio do suporte a mecanismos de armazenamento de modelo em cache, ou até mesmo acesso offline ao conteúdo do modelo, se o Adobe PhoneGap for usado.
 
-AEM 6.1 é compatível com a criação e o gerenciamento de SPAs por meio de aplicativos AEM. Este artigo fornecerá uma introdução aos conceitos por trás do SPA e como eles aproveitam o [AngularJS](https://angularjs.org/) para trazer sua marca à App Store e ao Google Play.
+O AEM 6.1 é compatível com a criação e o gerenciamento de SPA por meio de AEM aplicativos. Este artigo fornecerá uma introdução aos conceitos por trás do SPA e como eles aproveitam [AngularJS](https://angularjs.org/) para trazer sua marca para a App Store e o Google Play.
 
 ## SPA em aplicativos AEM {#spa-in-aem-apps}
 
@@ -40,7 +40,7 @@ Os aplicativos AEM lidam com grande parte da configuração AngularJS para você
 
 Parte da inicialização do aplicativo envolve especificar em quais módulos AngularJS o aplicativo depende. A lista de módulos usada pelo aplicativo é especificada por um script localizado em /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp, e pode ser sobreposta pelo componente de página do seu aplicativo para receber qualquer módulo AngularJS adicional que seu aplicativo exija. Por exemplo, compare o script acima com a implementação do Geometrixx (localizado em /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
 
-Para suportar a navegação entre os estados distintos no aplicativo, o script angular-app-module repete por todas as páginas descendentes da página do aplicativo de nível superior para gerar um conjunto de &quot;rotas&quot; e configura cada caminho no serviço $routeProvider da Angular. Para ver um exemplo de como isso ocorre na prática, consulte o script angular-app-module gerado pela amostra de aplicativo Geometrixx Outdoors: (link requer uma instância local) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Para suportar a navegação entre os estados distintos no aplicativo, o script angular-app-module repete por todas as páginas descendentes da página do aplicativo de nível superior para gerar um conjunto de &quot;rotas&quot; e configura cada caminho no serviço $routeProvider da Angular. Para ver um exemplo de como isso ocorre na prática, consulte o script angular-app-module gerado pela amostra de aplicativo Geometrixx Outdoors: (o link requer uma instância local) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Ao acessar o AEMAngularApp gerado, você encontrará uma série de rotas especificadas da seguinte maneira:
 
@@ -58,7 +58,7 @@ O modelo a ser carregado quando essa rota for solicitada é especificado pela pr
 
 ## Controladores de página {#page-controllers}
 
-Nas próprias palavras de Angular, &quot;um Controlador é uma função de construtor JavaScript usada para aumentar o Escopo Angular&quot;. ([origem](https://docs.angularjs.org/guide/controller)) Cada página em um aplicativo AEM é automaticamente conectada a um controlador que pode ser aumentado por qualquer controlador que especifique um `frameworkType` de `angular`. Examine o componente ng-text como um exemplo (/libs/mobileapps/components/angle/ng-text), incluindo o nó cq:template, que garante que cada vez que esse componente for adicionado a uma página ela inclua essa propriedade importante.
+Nas próprias palavras de Angular, &quot;um Controlador é uma função de construtor JavaScript usada para aumentar o Escopo Angular&quot;. ([source](https://docs.angularjs.org/guide/controller)) Cada página em um aplicativo AEM é automaticamente conectada a um controlador que pode ser aumentado por qualquer controlador que especifique um `frameworkType` de `angular`. Examine o componente ng-text como um exemplo (/libs/mobileapps/components/angle/ng-text), incluindo o nó cq:template, que garante que cada vez que esse componente for adicionado a uma página ela inclua essa propriedade importante.
 
 Para obter um exemplo de controlador mais complexo, abra o script ng-template-page controller.jsp (localizado em /apps/geometrixx-outdoors-app/components/angle/ng-template-page). De particular interesse é o código javascript gerado quando executado, que renderiza da seguinte forma:
 
@@ -83,10 +83,10 @@ Para obter um exemplo de controlador mais complexo, abra o script ng-template-pa
 ])
 ```
 
-No exemplo acima, você observará que estamos pegando um parâmetro do `$routeParams` serviço e, em seguida, o colocando na estrutura de diretório em que nossos dados JSON estão armazenados. Ao lidar com o sku `id` dessa maneira, nós somos capazes de fornecer um único modelo de produto que possa renderizar os dados do produto para milhares de produtos potencialmente distintos. Este é um modelo muito mais escalonável que requer uma rota individual para cada item em um (potencialmente) grande banco de dados de produtos.
+No exemplo acima, você observará que estamos pegando um parâmetro do serviço `$routeParams` e, em seguida, o inserindo na estrutura de diretório em que nossos dados JSON estão armazenados. Ao lidar com o sku `id` dessa maneira, podemos fornecer um único modelo de Produto que pode renderizar os dados do produto para milhares de produtos potencialmente distintos. Este é um modelo muito mais escalonável que requer uma rota individual para cada item em um (potencialmente) grande banco de dados de produtos.
 
-Há também dois componentes em funcionamento aqui: ng-product aumenta o escopo com os dados que extrai da `$http` chamada acima. Também há uma ng-image nesta página que, por sua vez, também aumenta o escopo com o valor que recupera da resposta. Em razão do `$http` serviço do Angular, cada componente aguardará pacientemente até que a solicitação seja concluída e a promessa criada seja cumprida.
+Há também dois componentes em funcionamento aqui: ng-product aumenta o escopo com os dados extraídos da chamada `$http` acima. Também há uma ng-image nesta página que, por sua vez, também aumenta o escopo com o valor que recupera da resposta. Em virtude do serviço `$http` do Angular, cada componente aguardará pacientemente até que a solicitação seja concluída e a promessa criada seja cumprida.
 
 ## Próximas etapas {#the-next-steps}
 
-Depois de saber mais sobre os aplicativos de página única, consulte [Desenvolvimento de aplicativos com CLI](/help/mobile/phonegap-apps-pg-cli.md)PhoneGap.
+Depois de saber mais sobre os aplicativos de página única, consulte [Desenvolvimento de aplicativos com o PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md).
