@@ -37,12 +37,12 @@ Quando você cria uma marca usando o console Ofertas, ela também aparece no [co
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. Click or tap **Create** and then **Create Brand**.
+1. Clique ou toque em **Criar** e **Criar marca**.
 1. Selecione o modelo da marca e clique ou toque em **Próximo**.
 1. Digite o título que você deseja atribuir para a exibição da marca nos consoles Ofertas e Atividades. Opcionalmente, digite ou selecione uma ou mais tags para associar à marca.
 1. Clique ou toque em **Criar**.
 
-## Adicionar uma pasta a uma biblioteca de ofertas {#add-a-folder-to-an-offer-library}
+## Adicionar uma pasta a uma biblioteca de ofertas  {#add-a-folder-to-an-offer-library}
 
 Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armazenar ofertas. É possível criar uma pasta abaixo da marca ou abaixo de outras pastas.
 
@@ -58,7 +58,7 @@ Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armaze
 
 1. Clique ou toque em **Criar**.
 
-## Adicionar uma oferta a uma biblioteca de ofertas {#add-an-offer-to-an-offer-library}
+## Adicionar uma oferta a uma biblioteca de ofertas  {#add-an-offer-to-an-offer-library}
 
 Adicione uma oferta à biblioteca de ofertas de uma marca para que ela possa ser adicionada às experiências da marca. Ao adicionar uma oferta, você fornece um título para ela. Também é possível associar a oferta a uma ou mais tags para melhorar a capacidade de pesquisa.
 
@@ -82,7 +82,7 @@ Abra uma oferta e edite o conteúdo como você deseja que ele apareça nas exper
 1. No console Ofertas, toque ou clique no ícone ao lado da oferta e depois clique ou toque em **Editar**.
 1. Adicione componentes à oferta e edite o conteúdo dos componentes como de costume.
 
-## Exclusão de uma oferta {#deleting-an-offer}
+## Exclusão de uma oferta  {#deleting-an-offer}
 
 Exclua uma oferta quando ela não for mais necessária. Quando você tentar excluir uma oferta usada em uma experiência, será necessário confirmar a exclusão. A confirmação exclui a oferta e a remove das experiências.
 
@@ -98,11 +98,11 @@ Você pode excluir uma oferta enquanto visualiza o conteúdo de uma pasta em uma
    * Para excluir a oferta e removê-la das experiências, clique ou toque em **Forçar exclusão**.
    * Para manter a oferta, clique ou toque em **Cancelar**.
 
-## Procurar ofertas {#searching-for-offers}
+## Procurar ofertas  {#searching-for-offers}
 
 Procure ofertas de qualquer marca usando palavras-chave para correspondência do título.
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![chlimage_1-311](assets/chlimage_1-310.png)
 
 Os critérios de pesquisa atuais aparecem ao lado dos resultados da pesquisa. Você também pode classificar os resultados por coluna em ordem crescente ou decrescente. É possível realizar uma pesquisa em qualquer pasta de qualquer biblioteca de ofertas. Os resultados da pesquisa serão os mesmos, independentemente da pasta atual.
 
