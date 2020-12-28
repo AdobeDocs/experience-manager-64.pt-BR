@@ -22,7 +22,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 As definições do aplicativo são uma forma de identificar quais espaços e outras configurações são apropriados para o aplicativo. As definições do aplicativo permitem que o usuário adicione espaço, sem precisar recompilar o aplicativo. A definição do aplicativo é atualizada e incluirá as informações de quaisquer novos espaços.
 
@@ -30,15 +30,15 @@ As definições do aplicativo são uma forma de identificar quais espaços e out
 >
 >As definições do aplicativo estão vinculadas a um aplicativo, portanto, elas exigem a criação de um aplicativo no console do aplicativo AEM Mobile.
 
-## Criação de uma nova definição de aplicativo {#creating-a-new-app-definition}
+## Criar uma nova definição de aplicativo {#creating-a-new-app-definition}
 
-1. Escolha **Móvel** no Console de navegação AEM.
+1. Escolha **Móvel** no Console de Navegação AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Escolha **Aplicativos** do **Mobile** e clique em **Criar.**
+1. Escolha **Aplicativos** de **Móvel** e clique em **Criar.**
 
-   Escolha **Aplicativo** para criar seu novo aplicativo e insira detalhes.
+   Escolha **Aplicativo** e insira detalhes para criar seu novo aplicativo.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
