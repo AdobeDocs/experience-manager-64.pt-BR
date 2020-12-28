@@ -18,11 +18,11 @@ ht-degree: 82%
 ---
 
 
-# Quick Guide to WCAG 2.0{#quick-guide-to-wcag}
+# Guia rápido para WCAG 2.0{#quick-guide-to-wcag}
 
 AEM foi desenvolvido para maximizar a conformidade com as Diretrizes de acessibilidade do conteúdo da Web:
 
-The [Web Content Accessibility Guidelines version 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+As [Diretrizes de acessibilidade de conteúdo da Web versão 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) são um conjunto de diretrizes reconhecidas internacionalmente desenvolvidas pelo [World Wide Web Consortium (W3C)](https://www.w3.org/) sob sua [Iniciativa de acessibilidade da Web (WAI)](https://www.w3.org/WAI/).
 
 A WCAG 2.0 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais. Essas diretrizes fazem aconselhamento aos criadores de conteúdo, designers e desenvolvedores da Web, a fim de garantir que os recursos que produzem sejam o mais acessíveis possível ao maior número de pessoas possível, independentemente de qualquer deficiência que tenham. Por exemplo, deficiência visual, perda auditiva, dificuldades de aprendizado, limitações relacionadas à idade, entre outras.
 
@@ -36,7 +36,7 @@ Portanto, entender os objetivos da WCAG 2.0 e como as diretrizes são estruturad
 
 A intenção da WCAG 2.0 é fornecer diretrizes que:
 
-* São **agnósticos tecnológicos:**
+* São **agnósticos de tecnologia:**
 
    Em outras palavras, orientações que podem ser aplicadas a diversos formatos de conteúdo da Web, não apenas HTML. Assim, a WCAG 2.0 pode abranger o conteúdo gerado ou fornecido em PDF, Flash, JavaScript e outras tecnologias atuais e futuras na Web. O objetivo é resolver uma deficiência reconhecida do WCAG 1.0, na medida em que o foco era no HTML, em detrimento de outros formatos de conteúdo da Web.
 
@@ -91,7 +91,7 @@ Embora a WCAG 2.0 seja um documento estável e não mude, a maioria desses recur
 
 ### Recursos da WCAG 2.0 {#wcag-resources}
 
-* [Um resumo de todos os documentos](https://www.w3.org/WAI/intro/wcag.php)relacionados ao WCAG 2.0;
+* [Um resumo de todos os documentos](https://www.w3.org/WAI/intro/wcag.php) relacionados ao WCAG 2.0;
 * [Explicação da relação entre os diferentes componentes](https://www.w3.org/WAI/intro/wcag20);
 * [Perguntas frequentes sobre a WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
