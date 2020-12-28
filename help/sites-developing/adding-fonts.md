@@ -24,13 +24,13 @@ AEM permite que você gere gráficos que incorporam texto obtido dinamicamente d
 
 Para fazer isso, você também pode carregar e usar suas próprias fontes.
 
-Atualmente, todas as implementações da Plataforma Java oferecem suporte a fontes [TrueType](https://en.wikipedia.org/wiki/Truetype) .
+Atualmente, todas as implementações da Plataforma Java oferecem suporte a [fontes TrueType](https://en.wikipedia.org/wiki/Truetype).
 
 1. Abra o CRXDE Lite e navegue até a pasta do aplicativo do projeto:
 
    `/apps/<your-project>/`
 
-1. Em `/apps/<your-project>/` criar um novo nó:
+1. Em `/apps/<your-project>/` crie um novo nó:
 
    * **Nome**: `fonts`
    * **Tipo**: `sling:Folder`
@@ -43,11 +43,11 @@ Atualmente, todas as implementações da Plataforma Java oferecem suporte a font
    >
    >Os arquivos de fonte no repositório devem ter o sufixo `*.ttf` ou `*.TTF`.
 
-1. Atualize a configuração [do](/help/sites-deploying/configuring-osgi.md) OSGi do [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Adicione o caminho à sua pasta de fontes; ou seja, `/apps/<your-project>/fonts`.
+1. Atualize a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) de [Auxiliar de fonte Day Commons GFX](/help/sites-deploying/osgi-configuration-settings.md). Adicione o caminho à sua pasta de fontes; ou seja, `/apps/<your-project>/fonts`.
 
-1. Volte para CRXDE Lite. Agora você deve ver um `.fontlist` nó na pasta que contém o nome das fontes importadas.
+1. Volte para CRXDE Lite. Agora você deve ver um nó `.fontlist` na sua pasta que contém o nome das fontes importadas.
 
    Essas fontes agora estão prontas para serem usadas na API Java.
 
-Para obter detalhes completos sobre como usar as fontes com a API Java, consulte a [documentação da classe Font da API](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html)Java.
+Para obter detalhes completos sobre como usar as fontes com a API Java, consulte a documentação [para a classe Font da API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
 
