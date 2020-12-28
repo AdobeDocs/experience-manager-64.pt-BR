@@ -22,19 +22,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Este documento é parte do Guia de [introdução ao AEM Mobile](/help/mobile/getting-started-aem-mobile.md) , um ponto de partida recomendado para referência ao AEM Mobile.
+>Este documento faz parte do [Guia de introdução ao AEM Mobile](/help/mobile/getting-started-aem-mobile.md), um ponto de partida recomendado para referência ao AEM Mobile.
 
 Há várias etapas que precisam ser reunidas antes que os autores de conteúdo possam gerar start de conteúdo direcionado para aplicativos móveis: Há o conjunto correto de permissões para usuários e grupos, a criação de serviços em nuvem, a configuração do aplicativo para a atividade e, por fim, a geração do conteúdo.
 
-A suposição a seguir é que o Aplicativo [de referência híbrido da](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) AEM Mobile foi implantado e acessível com êxito por meio do Painel AEM Mobile.
+A suposição a seguir é que o [Aplicativo de Referência Híbrida da AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) foi implantado e acessível com êxito por meio do Painel AEM Mobile.
 
 ## Permissões  {#permissions}
 
-Os usuários que precisam de acesso ao console de personalização precisam fazer parte do `target-activity-authors` grupo. Sugere-se que, como parte da configuração de usuários e grupos, o público alvo-atividade-grupo seja adicionado ao grupo apps-admins. Ao adicionar o grupo públicos alvos-atividades-autores, isso permitirá que os usuários possam ver a entrada do menu de navegação Personalização.
+Os usuários que precisam de acesso ao console de personalização precisam fazer parte do grupo `target-activity-authors`. Sugere-se que, como parte da configuração de usuários e grupos, o público alvo-atividade-grupo seja adicionado ao grupo apps-admins. Ao adicionar o grupo públicos alvos-atividades-autores, isso permitirá que os usuários possam ver a entrada do menu de navegação Personalização.
 
 Esquecer de adicionar os usuários ou grupos aos quais você deseja ter acesso ao console de administração de personalização ao grupo públicos alvos-atividades-autores impedirá que os usuários vejam o console de personalização.
 
@@ -42,7 +42,7 @@ Esquecer de adicionar os usuários ou grupos aos quais você deseja ter acesso a
 
 Para obter conteúdo direcionado trabalhando para aplicativos móveis, há dois serviços que precisam ser configurados: O serviço Adobe Target e o serviço Adobe Mobile Services. O Adobe Target Service fornece o mecanismo para processar solicitações de clientes e retornar o conteúdo personalizado. O serviço Adobe Mobile Services fornece a conexão entre os serviços do Adobe e o aplicativo móvel por meio do arquivo ADBMobileConfig.json, que é consumido pelo plug-in do Cordova do AMS. No Painel AEM Mobile, você pode configurar seu aplicativo adicionando os dois serviços.
 
-## Cloud Service Adobe Target {#adobe-target-cloud-service}
+## Adobe Target Cloud Service {#adobe-target-cloud-service}
 
 No Painel AEM Mobile, localize os Cloud Services Manage e clique no botão +.
 
@@ -72,7 +72,7 @@ Para fazer logon nos serviços AMS, visite [https://mobilemarketing.adobe.com](h
 
 Agora que o código do cliente foi associado ao aplicativo móvel, quando o serviço de nuvem do AMS é configurado por meio do Painel Adobe Mobile, as configurações do serviço serão fornecidas por meio do arquivo ADBMobileConfig.json.
 
-### Serviço Adobe Mobile Service Poderia {#adobe-mobile-service-could-service}
+### Serviço Adobe Mobile Service Poderia Service {#adobe-mobile-service-could-service}
 
 Agora que o AMS foi configurado, é hora de associar o aplicativo móvel ao Painel Adobe Mobile. No Painel AEM Mobile, localize os Cloud Services Manage e clique no botão +.
 
@@ -88,11 +88,11 @@ Retornando ao Painel móvel, o bloco Gerenciar Cloud Services conterá o serviç
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-## Manipuladores de sincronização de conteúdo do Público alvo {#target-content-sync-handlers}
+## Manipuladores de sincronização de conteúdo do público alvo {#target-content-sync-handlers}
 
-Para fornecer conteúdo ao conteúdo do dispositivo do usuário, é gerado renderizando as ofertas criadas por autores de conteúdo AEM. Para lidar com a renderização do público alvo oferta, há um novo manipulador de sincronização de conteúdo que processará o oferta. Usando o aplicativo de referência híbrida como nossa amostra, o pacote de conteúdo en (inglês) contém o ContentSyncConfig com um manipulador [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) . A próxima etapa é crucial para renderizar ofertas ao dispositivo. O manipulador mobileappoffers tem uma propriedade path que identifica o caminho para a atividade de personalização a ser usada para o aplicativo.
+Para fornecer conteúdo ao conteúdo do dispositivo do usuário, é gerado renderizando as ofertas criadas por autores de conteúdo AEM. Para lidar com a renderização do público alvo oferta, há um novo manipulador de sincronização de conteúdo que processará o oferta. Usando o Aplicativo de referência híbrido como nossa amostra, o pacote de conteúdo en (inglês) contém o ContentSyncConfig com um manipulador [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml). A próxima etapa é crucial para renderizar ofertas ao dispositivo. O manipulador mobileappoffers tem uma propriedade path que identifica o caminho para a atividade de personalização a ser usada para o aplicativo.
 
-Por exemplo, se houver uma atividade localizada em */content/campanha/hybridref* , copie esse caminho e cole-o como o valor para a propriedade *path* do manipulador mobileappoffers.
+Por exemplo, se houver uma atividade localizada em */content/campanha/hybridref* copie esse caminho e cole-o como o valor para a propriedade *path* do manipulador mobileappoffers.
 
 Para o Aplicativo de referência híbrido existem dois processadores mobileappoffers, um para o dev e outro para as produções.
 
