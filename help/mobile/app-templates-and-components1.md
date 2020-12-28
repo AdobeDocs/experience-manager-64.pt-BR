@@ -22,22 +22,22 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Um Modelo é usado para criar uma Página e define quais componentes podem ser usados dentro do escopo selecionado. Um modelo é uma hierarquia de nós que tem a mesma estrutura que a página a ser criada, mas sem nenhum conteúdo real.
 
 Cada modelo apresentará uma seleção de componentes disponíveis para uso.
 
-* Os modelos são compostos de [Componentes](/help/sites-developing/components.md);
+* Os modelos são construídos de [Components](/help/sites-developing/components.md);
 * Os componentes usam e permitem acesso a Widgets, e esses são usados para renderizar o Conteúdo.
 
 >[!NOTE]
 >
->Para saber como desenvolver seu aplicativo AEM usando o CRXDE Lite, consulte [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Para saber como desenvolver seu aplicativo AEM usando o CRXDE Lite, consulte [Desenvolvimento com CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Um modelo é a base de uma página.
 
-Para criar uma página, o modelo deve ser copiado (nó-árvore **/aplicativos/&lt;myapp>/models/&lt;mytemplate>**) para a posição correspondente na árvore do site: isso é o que acontece se uma página é criada usando a guia **Sites** .
+Para criar uma página, o modelo deve ser copiado (node-tree **/apps/&lt;myapp>/models/&lt;mytemplate>**) para a posição correspondente na árvore do site: isso é o que acontece se uma página for criada usando a guia **Sites**.
 
 Essa ação de cópia também fornece à página seu conteúdo inicial (normalmente, somente conteúdo de nível superior) e a propriedade sling:resourceType, o caminho para o componente de página que é usado para renderizar a página (tudo no nó filho jcr:content).
 
