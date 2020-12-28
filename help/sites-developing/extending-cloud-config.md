@@ -32,8 +32,8 @@ Os princípios utilizados no desenvolvimento das configurações basearam-se nos
 * As configurações (por exemplo, propriedades/parágrafos) são herdadas dos pais.
 * Referenciado de nó(s) do Analytics por caminho.
 * Facilmente extensível.
-* Tem a flexibilidade de atender a configurações mais complexas, como o [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Suporte para dependências (por exemplo, plug-ins [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) precisam de uma configuração [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Tem a flexibilidade de atender a configurações mais complexas, como [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Suporte para dependências (por exemplo, [Os plug-ins Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) precisam de uma configuração [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Estrutura {#structure}
 
@@ -54,7 +54,7 @@ Para fornecer uma configuração para novos serviços, é necessário:
    * um modelo de configuração
    * um componente de configuração
 
-O modelo e o componente devem herdar o modelo `sling:resourceSuperType` do modelo base:
+O modelo e o componente devem herdar `sling:resourceSuperType` do modelo base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -122,9 +122,9 @@ O modelo de conteúdo é armazenado como `cq:Page` em:
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-As configurações são armazenadas sob o subnó `jcr:content`.
+As configurações são armazenadas no subnó `jcr:content`.
 
-* As propriedades fixas, definidas em uma caixa de diálogo, devem ser armazenadas `jcr:node` diretamente no.
+* As propriedades fixas, definidas em uma caixa de diálogo, devem ser armazenadas diretamente em `jcr:node`.
 * Os elementos dinâmicos (usando `parsys` ou `iparsys`) usam um subnó para armazenar os dados do componente.
 
 ```xml
@@ -142,7 +142,7 @@ Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm
 
 ### Integração AEM {#aem-integration}
 
-Os serviços disponíveis são listados na guia **Cloud Services** da caixa de diálogo Propriedades **da** página (de qualquer página que herda de `foundation/components/page` ou `wcm/mobile/components/page`).
+Os serviços disponíveis são listados na guia **Cloud Services** da caixa de diálogo **Propriedades da página** (de qualquer página herdada de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 A guia também fornece:
 
@@ -153,21 +153,21 @@ A guia também fornece:
 
 Ao armazenar credenciais de usuário para o serviço, todas as senhas devem ser criptografadas.
 
-Para isso, adicione um campo de formulário oculto. Este campo deve ter a anotação `@Encrypted` no nome da propriedade; ou seja, para o `password` campo, o nome deve ser escrito como:
+Para isso, adicione um campo de formulário oculto. Esse campo deve ter a anotação `@Encrypted` no nome da propriedade; Ou seja, para o campo `password`, o nome seria escrito como:
 
 `password@Encrypted`
 
-A propriedade será automaticamente criptografada (usando o `CryptoSupport` serviço) pelo `EncryptionPostProcessor`.
+A propriedade será automaticamente criptografada (usando o serviço `CryptoSupport`) pelo `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->Isso é semelhante às ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` anotações padrão.
+>Isso é semelhante às anotações padrão ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)`.
 
 >[!NOTE]
 >
->Por padrão, `EcryptionPostProcessor` somente criptografa `POST` solicitações feitas para `/etc/cloudservices`.
+>Por padrão, as solicitações `EcryptionPostProcessor` somente criptografam `POST` feitas para `/etc/cloudservices`.
 
-#### Propriedades adicionais para o jcr da página de serviço:nós de conteúdo {#additional-properties-for-service-page-jcr-content-nodes}
+#### Propriedades adicionais do jcr da página de serviço:nós de conteúdo {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table> 
  <tbody> 
@@ -177,7 +177,7 @@ A propriedade será automaticamente criptografada (usando o `CryptoSupport` serv
   </tr> 
   <tr> 
    <td>componentReference</td> 
-   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da <code>body</code> tag).<br /> No caso de o Analytics e o Público alvo usarmos isso para incluir funcionalidades adicionais, como chamadas de JavaScript para rastrear o comportamento do visitante.</td> 
+   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> que está incluído (normalmente antes da  <code>body</code> tag).<br /> No caso de o Analytics e o Público alvo usarmos isso para incluir funcionalidades adicionais, como chamadas de JavaScript para rastrear o comportamento do visitante.</td> 
   </tr> 
   <tr> 
    <td>descrição</td> 
@@ -214,11 +214,11 @@ A propriedade será automaticamente criptografada (usando o `CryptoSupport` serv
  </tbody> 
 </table>
 
-### Use Cases {#use-cases}
+### Casos de uso {#use-cases}
 
 Esses serviços são fornecidos por padrão:
 
-* [Trechos](/help/sites-administering/external-providers.md) do rastreador (Google, WebTrends etc.)
+* [Trechos](/help/sites-administering/external-providers.md)  do rastreador (Google, WebTrends etc.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Pesquisar e promover](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
@@ -226,5 +226,5 @@ Esses serviços são fornecidos por padrão:
 
 >[!NOTE]
 >
->Consulte também [Criação de um Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)personalizado.
+>Consulte também [Criação de um Cloud Service personalizado](/help/sites-developing/extending-cloud-config-custom-cloud.md).
 
