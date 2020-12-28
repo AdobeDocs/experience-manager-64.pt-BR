@@ -26,7 +26,7 @@ Depois de instalado, o filtro bloqueia o acesso a todos os ativos. Por exemplo, 
 
 ## Configurar filtro de descarte de conteúdo {#configure-content-disposition-filter}
 
-Você pode visualização o Filtro de [descarte de conteúdo do Apache Sling no GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Você pode visualização o filtro de [Apache Sling Content Disposition no GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
 
 As opções de Filtro de descarte de conteúdo fornecem a seguinte funcionalidade:
 
