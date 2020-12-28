@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Os detalhes a seguir são ideias e comentários expressos por David Nuescheler.
 
-David foi cofundador e CTO da Day Software AG, um provedor líder de software global de gestão de conteúdo e infraestrutura de conteúdo, que foi adquirido pela Adobe em 2010. Ele agora é sócio e vice-presidente de tecnologia empresarial na Adobe e também lidera o desenvolvimento da JSR-170, a API (application programming interface, interface de programação de aplicativos) do repositório de conteúdo Java (JCR), o padrão de tecnologia para a gestões de conteúdo.
+David foi cofundador e CTO da Day Software AG, um fornecedor líder de software global de gestão de conteúdo e infraestrutura de conteúdo, que foi adquirido pela Adobe em 2010. Ele agora é sócio e vice-presidente de tecnologia empresarial na Adobe e também lidera o desenvolvimento da JSR-170, a API (application programming interface, interface de programação de aplicativos) do repositório de conteúdo Java (JCR), o padrão de tecnologia para a gestões de conteúdo.
 
 Outras atualizações também podem ser vistas em [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
@@ -60,7 +60,7 @@ Outras restrições de dados, como restrições obrigatórias ou de tipo e valor
 
 #### Exemplo {#example-1}
 
-O exemplo acima de usar uma propriedade `lastModified` Date no nó, por exemplo, &quot;postagem no blog&quot;, realmente não significa que haja necessidade de um tipo de nó especial. Definitivamente usaria `nt:unstructured` para meus nós de postagem de blog pelo menos inicialmente. Já que no meu aplicativo de blogue tudo o que vou fazer é mostrar a última data Modificada de qualquer forma (possivelmente &quot;ordene por&quot;) eu mal me importo se é uma Data. Como eu implícita a minha aplicação de blogue para colocar uma &quot;data&quot; lá de qualquer forma, não há necessidade de declarar a presença de uma `lastModified` data na forma de um tipo nodetype.
+O exemplo acima de usar uma propriedade `lastModified` Date em, por exemplo, um nó &quot;postagem de blog&quot;, realmente não significa que haja necessidade de um tipo de nó especial. Definitivamente usaria `nt:unstructured` para meus nós de postagem do blog pelo menos inicialmente. Já que no meu aplicativo de blogue tudo o que vou fazer é mostrar a última data Modificada de qualquer forma (possivelmente &quot;ordene por&quot;) eu mal me importo se é uma Data. Como eu implícita a confiança em meu aplicativo de escrita de blog para colocar uma &quot;data&quot; lá de qualquer forma, não há necessidade de declarar a presença de uma data `lastModified` na forma de um tipo de nó.
 
 ### Regra nº 2: Direcione a hierarquia de conteúdo, não deixe que isso aconteça. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -104,7 +104,7 @@ Usando o modelo de conteúdo acima, posso permitir que o usuário &quot;anônimo
 
 #### Explicação {#explanation-3}
 
-Se você não usar `clone()`, `merge()` ou `update()` métodos em seu aplicativo, um único espaço de trabalho é provavelmente o caminho a seguir.
+Se você não usar os métodos `clone()`, `merge()` ou `update()` no seu aplicativo, um único espaço de trabalho provavelmente será o caminho a seguir.
 
 &quot;Nós correspondentes&quot; é um conceito definido na especificação do JCR. Basicamente, ele se resume a nós que representam o mesmo conteúdo, em diferentes chamados espaços de trabalho.
 
@@ -157,7 +157,7 @@ em vez de
 /content/blog[1]/post[2]
 ```
 
-### Regra nº 5: As referências consideradas prejudiciais. {#rule-references-considered-harmful}
+### Regra nº 5: Referências consideradas prejudiciais. {#rule-references-considered-harmful}
 
 #### Explicação {#explanation-5}
 
@@ -177,13 +177,13 @@ Eu acho que existem casos de uso em que um sistema realmente não pode funcionar
 
 #### Explicação {#explanation-6}
 
-Se um modelo de conteúdo expor algo que até *cheira* remotamente como um arquivo ou uma pasta que tento usar (ou a partir de) `nt:file`, `nt:folder` e `nt:resource`.
+Se um modelo de conteúdo expor algo que até mesmo remotamente *cheira* como um arquivo ou uma pasta que tento usar (ou a partir de) `nt:file`, `nt:folder` e `nt:resource`.
 
 Em minha experiência, muitos aplicativos genéricos permitem a interação com nt:folder e nt:files implicitamente e sabem como manipular e exibir esses eventos se estiverem enriquecidos com metadados adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos como CIFS ou WebDAV sentados sobre o JCR torna-se implícita.
 
-Penso que, como regra geral, poderíamos usar o seguinte: Se você precisar armazenar o nome do arquivo e o tipo MIME, então `nt:file`/ `nt:resource` é uma correspondência muito boa. Se você puder ter vários &quot;arquivos&quot; e nt:folder é um bom local para armazená-los.
+Penso que, como regra geral, poderíamos usar o seguinte: Se você precisar armazenar o nome do arquivo e o tipo MIME, `nt:file`/ `nt:resource` será uma correspondência muito boa. Se você puder ter vários &quot;arquivos&quot; e nt:folder é um bom local para armazená-los.
 
-Se você precisar adicionar informações meta para seu recurso, digamos uma propriedade &quot;autor&quot; ou &quot;descrição&quot;, estenda `nt:resource` não a `nt:file`. Eu raramente estendo nt:file e frequentemente estendo `nt:resource`.
+Se você precisar adicionar informações meta para seu recurso, digamos uma propriedade &quot;autor&quot; ou &quot;descrição&quot;, estenda `nt:resource` não `nt:file`. Eu raramente estendo nt:file e estendo frequentemente `nt:resource`.
 
 #### Exemplo {#example-6}
 
