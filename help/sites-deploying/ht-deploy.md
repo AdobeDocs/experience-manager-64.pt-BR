@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Artigos sobre procedimentos de configuração{#configuration-how-to-articles}
+# Artigos de procedimentos de configuração{#configuration-how-to-articles}
 
 Os tópicos a seguir descrevem como realizar tarefas de implantação AEM específicas:
 
