@@ -38,7 +38,7 @@ Em Projetos, é possível criar um projeto, associar recursos ao projeto e tamb�
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. A maneira mais fácil de fazer isso é fornecer ao grupo **projects-users** acesso de leitura a **/home/users** e **/home/groups**.
+>Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/workflows, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura em **/home/users** e **/home/groups**. A maneira mais fácil de fazer isso é fornecer ao grupo **projects-users** acesso de leitura a **/home/users** e **/home/groups**.
 
 ## Criação de um projeto   {#creating-a-project}
 
@@ -56,13 +56,13 @@ O procedimento de criação de um projeto é o mesmo em todos os projetos. A dif
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
+1. Defina **Title** e **Descrição** e adicione uma imagem **Miniatura**, se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
 
    ![chlimage_1-257](assets/chlimage_1-257.png)
 
 1. Toque/clique em **Criar**. A confirmação pergunta se você deseja abrir o novo projeto ou retornar ao console.
 
-### Associar recursos ao projeto {#associating-resources-with-your-project}
+### Associar recursos ao projeto  {#associating-resources-with-your-project}
 
 Como os projetos permitem agrupar recursos em uma única entidade, você deseja associar os recursos ao projeto. Esses recursos são chamados de **Mosaicos**. Os tipos de recursos que você pode adicionar são descritos nos [Mosaicos do projeto](/help/sites-authoring/projects.md#project-tiles).
 
@@ -103,7 +103,7 @@ Em alguns mosaicos, é possível adicionar mais de um item. Por exemplo, é poss
 
 Para adicionar itens a um mosaico:
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. Em **Projetos**, navegue até o projeto e clique no ícone Adicionar + no bloco ao qual você deseja adicionar um item.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -127,19 +127,19 @@ Para abrir um mosaico para ver ou modificar itens:
 
 ## Exibir as estatísticas do projeto {#viewing-project-statistics}
 
-Para ver as estatísticas do projeto, no console **Projetos**, clique em **Exibir visualização de estatísticas**. O nível de conclusão de cada projeto é exibido. Click **Show Statistics View** again to go to the **Projects** console.
+Para ver as estatísticas do projeto, no console **Projetos**, clique em **Exibir visualização de estatísticas**. O nível de conclusão de cada projeto é exibido. Clique em **Mostrar Visualização de Estatísticas** novamente para ir para o console **Projetos**.
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
 ### Exibir uma linha do tempo do projeto {#viewing-a-project-timeline}
 
-A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. Os ativos são exibidos no painel esquerdo. Click/tap **Timeline** to return to the **Projects** console.
+A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para visualização da linha do tempo do projeto, clique/toque em **Linha do tempo**, insira o modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Clique/toque em **Linha do tempo** para retornar ao console **Projetos**.
 
 ![chlimage_1-264](assets/chlimage_1-264.png)
 
 ### Exibir projetos ativos/inativos {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. Se o ícone tiver uma marca de seleção, estará exibindo os projetos ativos.
+Para alternar entre os projetos ativos e inativos, no console **Projetos**, clique em **Alternar projetos ativos**. Se o ícone tiver uma marca de seleção, estará exibindo os projetos ativos.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
@@ -158,7 +158,7 @@ Para tornar um projeto inativo (ou ativo):
    >[!NOTE]
    Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
 
-1. Tap/click **Edit**.
+1. Toque/clique em **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
 
    ![chlimage_1-267](assets/chlimage_1-267.png)
