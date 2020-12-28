@@ -2,7 +2,7 @@
 title: Solução de problemas de Query lentos
 seo-title: Solução de problemas de Query lentos
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -26,7 +26,7 @@ Há 3 classificações principais de query lentos em AEM, listadas por gravidade
 
 1. **Query sem índice**
 
-   * Query que **não** são resolvidos para um índice e percorrem o conteúdo do JCR para coletar resultados
+   * Query que **não** são resolvidos em um índice e atravessam o conteúdo do JCR para coletar resultados
 
 1. **Query com pouca restrição (ou com escopo)**
 
@@ -36,7 +36,7 @@ Há 3 classificações principais de query lentos em AEM, listadas por gravidade
 
    * Query que retornam números muito grandes de resultados
 
-As primeiras 2 classificações de query (sem índice e com pouca restrição) são lentas, pois forçam o mecanismo de query Oak a inspecionar cada resultado **potencial** (nó de conteúdo ou entrada de índice) para identificar qual pertence ao conjunto de resultados **real** .
+As primeiras 2 classificações de query (sem índice e com pouca restrição) são lentas, pois forçam o mecanismo de query Oak a inspecionar cada resultado **potencial** (nó de conteúdo ou entrada de índice) para identificar qual pertence ao conjunto de resultados **real**.
 
 O ato de inspecionar cada resultado potencial é o que se chama de Navegação.
 
@@ -50,27 +50,27 @@ No AEM 6.3, por padrão, quando uma passagem de 100.000 é atingida, o query fal
 
 #### Durante o desenvolvimento {#during-development}
 
-Explicar **todos** os query e garantir que seus planos de query não contenham o **/&amp;ast; uma explicação transversal** . Exemplo de plano de query de percurso:
+Explique **todos** os query e certifique-se de que seus planos de query não contêm o **/&amp;ast; explicação traverse** neles. Exemplo de plano de query de percurso:
 
 * **PLANO:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
 #### Pós-implantação {#post-deployment}
 
-* Monitore os query transversais `error.log` sem índice:
+* Monitore `error.log` para query transversais sem índice:
 
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Essa mensagem será registrada somente se nenhum índice estiver disponível e se o query potencialmente atravessar muitos nós. As mensagens não são registradas se um índice estiver disponível, mas o valor de passagem é pequeno e, portanto, rápido.
 
-* Visite o console de operações de Desempenho [do](/help/sites-administering/operations-dashboard.md#query-performance) Query AEM e [explique](/help/sites-administering/operations-dashboard.md#explain-query) query lentos que procuram explicações transversais ou sem query de índice.
+* Visite o console de operações AEM [Desempenho do Query](/help/sites-administering/operations-dashboard.md#query-performance) e [Explique](/help/sites-administering/operations-dashboard.md#explain-query) query lentos que procuram explicações transversais ou de query de índice.
 
-### Detecção de Query com restrições erradas {#detecting-poorly-restricted-queries}
+### Detecção de Query com restrições insuficientes {#detecting-poorly-restricted-queries}
 
 #### Durante o desenvolvimento {#during-development-1}
 
 Explique todos os query e verifique se eles foram resolvidos para um índice ajustado para corresponder às restrições de propriedade do query.
 
-* A cobertura do plano de query ideal tem como objetivo todas as restrições de propriedade e, no mínimo, as restrições de propriedade mais rigorosas do query. `indexRules`
-* Query que classificam os resultados devem ser resolvidos para um Índice de propriedades Lucene com regras de índice para as propriedades classificadas por `orderable=true.`
+* A cobertura do plano de query ideal tem `indexRules` para todas as restrições de propriedade e, no mínimo, para as restrições de propriedade mais restritas no query.
+* Query que classificam resultados devem ser resolvidos para um Índice de propriedades Lucene com regras de índice para as propriedades classificadas por `orderable=true.`
 
 #### Por exemplo, o padrão `cqPageLucene` não tem uma regra de índice para `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
 
@@ -92,7 +92,7 @@ Antes de adicionar a regra de índice cq:tags
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-Esse query é resolvido para o `cqPageLucene` índice, mas como não existe uma regra de índice de propriedade para `jcr:content` ou `cq:tags`, quando essa restrição é avaliada, todos os registros no `cqPageLucene` índice são verificados para determinar uma correspondência. Isso significa que, se o índice contiver 1 milhão de `cq:Page` nós, 1 milhão de registros serão verificados para determinar o conjunto de resultados.
+Este query resolve o índice `cqPageLucene`, mas como não existe uma regra de índice de propriedade para `jcr:content` ou `cq:tags`, quando esta restrição é avaliada, todos os registros no índice `cqPageLucene` são verificados para determinar uma correspondência. Isso significa que, se o índice contiver 1 milhão de nós `cq:Page`, 1 milhão de registros serão verificados para determinar o conjunto de resultados.
 
 Após adicionar a regra de índice cq:tags
 
@@ -116,27 +116,27 @@ Após adicionar a regra de índice cq:tags
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-A adição de indexRule para `jcr:content/cq:tags` no `cqPageLucene` índice permite que `cq:tags` os dados sejam armazenados de forma otimizada.
+A adição de indexRule para `jcr:content/cq:tags` no índice `cqPageLucene` permite que os dados `cq:tags` sejam armazenados de forma otimizada.
 
-Quando um query com a restrição é executado, o índice pode procurar os resultados por valor. `jcr:content/cq:tags` Isso significa que se 100 `cq:Page` nós tiverem `myTagNamespace:myTag` como valor, apenas esses 100 resultados serão retornados, e os outros 999.000 serão excluídos das verificações de restrições, melhorando o desempenho em um fator de 10.000.
+Quando um query com a restrição `jcr:content/cq:tags` é executado, o índice pode procurar os resultados por valor. Isso significa que se 100 `cq:Page` nós tiverem `myTagNamespace:myTag` como valor, apenas esses 100 resultados serão retornados e os outros 999.000 serão excluídos das verificações de restrições, melhorando o desempenho em um fator de 10.000.
 
 É claro que novas restrições ao query reduzem os conjuntos de resultados elegíveis e otimizam ainda mais a otimização do query.
 
-Da mesma forma, sem uma regra de índice adicional para a `cq:tags` propriedade, mesmo um query de texto completo com uma restrição em `cq:tags` teria um desempenho ruim, já que os resultados do índice retornariam todas as correspondências de texto completo. A restrição nas tags cq:seria filtrada depois.
+Da mesma forma, sem uma regra de índice adicional para a propriedade `cq:tags`, mesmo um query de texto completo com uma restrição em `cq:tags` teria um desempenho ruim, pois os resultados do índice retornariam todas as correspondências de texto completo. A restrição nas tags cq:seria filtrada depois.
 
-Outra causa da filtragem pós-índice são Listas Controles de acesso que muitas vezes são perdidas durante o desenvolvimento. Tente se certificar de que o query não retorne caminhos que possam estar inacessíveis ao usuário. Isso geralmente pode ser feito por uma estrutura de conteúdo melhor, além de fornecer a restrição de caminho relevante no query.
+Outra causa da filtragem pós-índice são Listas Controles de acesso que muitas vezes se perdem durante o desenvolvimento. Tente se certificar de que o query não retorne caminhos que possam estar inacessíveis ao usuário. Isso geralmente pode ser feito por uma estrutura de conteúdo melhor, além de fornecer a restrição de caminho relevante no query.
 
-Uma maneira útil de identificar se o índice Lucene está retornando muitos resultados para retornar um subconjunto muito pequeno como resultado do query é ativar os registros DEBUG para `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` e ver quantos documentos estão sendo carregados do índice. O número de eventuais resultados versus o número de documentos carregados não deve ser desproporcionado. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
+Uma maneira útil de identificar se o índice Lucene está retornando muitos resultados para retornar um subconjunto muito pequeno como resultado do query é habilitar registros DEBUG para `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` e ver quantos documentos estão sendo carregados do índice. O número de eventuais resultados versus o número de documentos carregados não deve ser desproporcionado. Para obter mais informações, consulte [Registro](/help/sites-deploying/configure-logging.md).
 
 #### Pós-implantação {#post-deployment-1}
 
-* Monitore os query `error.log` transversais:
+* Monitore `error.log` para query transversais:
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* Visite o console de operações de Desempenho [do](/help/sites-administering/operations-dashboard.md#query-performance) Query AEM e [Explique](/help/sites-administering/operations-dashboard.md#explain-query) query lentos que procuram planos de query que não resolvam as restrições de propriedade do query para indexar as regras de propriedade.
+* Visite o console de operações AEM [Desempenho do Query](/help/sites-administering/operations-dashboard.md#query-performance) e [Explique](/help/sites-administering/operations-dashboard.md#explain-query) query lentos que procuram planos de query que não resolvam as restrições de propriedade do query para indexar as regras de propriedade.
 
-### Detecção de Query Grandes de Conjunto de Resultados {#detecting-large-result-set-queries}
+### Detectando Query de Conjunto de Resultados Grandes {#detecting-large-result-set-queries}
 
 #### Durante o desenvolvimento {#during-development-2}
 
@@ -171,9 +171,9 @@ O lema da otimização do desempenho do query no AEM é:
 
 **&quot;Quanto mais restrições, melhor.&quot;**
 
-A seguir, os destaques recomendam os ajustes para garantir o desempenho do query. Primeiro ajuste o query, uma atividade menos intrusiva e, se necessário, ajuste as definições de índice.
+A seguir, são apresentados os ajustes recomendados para garantir o desempenho do query. Primeiro ajuste o query, uma atividade menos intrusiva e, se necessário, ajuste as definições de índice.
 
-### Ajustar a declaração do Query {#adjusting-the-query-statement}
+### Ajustar a instrução do Query {#adjusting-the-query-statement}
 
 AEM suporta os seguintes idiomas de query:
 
@@ -199,9 +199,9 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
        property=jcr:content/contentType 
        property.value=article-page
       ```
-   Query que não têm um tipo de restrição de nodetype AEM assumir o `nt:base` tipo de nó, que cada nó em AEM é um subtipo de nó, resultando efetivamente em nenhuma restrição de tipo de nó.
+   Query sem uma restrição de tipo nodetype AEM assumir o tipo de nó `nt:base`, do qual cada nó no AEM é um subtipo de, resultando efetivamente em nenhuma restrição de tipo de nó.
 
-   A configuração `type=cq:Page` restringe esse query a apenas `cq:Page` nós e resolve o query para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente `cq:Page` nós) no AEM.
+   A configuração `type=cq:Page` restringe esse query a apenas nós `cq:Page` e resolve o query para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente nós `cq:Page`) no AEM.
 
 1. Ajuste a restrição de tipo de query para que o query seja resolvido para um Índice de propriedades Lucene existente.
 
@@ -220,12 +220,12 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       property=jcr:content/contentType
       property.value=article-page
       ```
-   `nt:hierarchyNode` é o tipo de nó pai de `cq:Page`, e supondo que `jcr:content/contentType=article-page` seja aplicado somente a `cq:Page` nós por meio de nosso aplicativo personalizado, esse query retornará apenas `cq:Page` nós onde `jcr:content/contentType=article-page`. No entanto, esta é uma restrição subótima, porque:
+   `nt:hierarchyNode` é o tipo de nó pai de  `cq:Page`e, supondo que  `jcr:content/contentType=article-page` seja aplicado somente a  `cq:Page` nós por meio de nosso aplicativo personalizado, esse query retornará apenas  `cq:Page` nós onde  `jcr:content/contentType=article-page`. No entanto, esta é uma restrição subótima, porque:
 
    * Outro nó herda de `nt:hierarchyNode` (por exemplo, `dam:Asset`) adicionando desnecessariamente ao conjunto de resultados potenciais.
-   * Não existe índice fornecido AEM para `nt:hierarchyNode`, no entanto, como há um índice fornecido para `cq:Page`.
+   * Não existe um índice fornecido AEM para `nt:hierarchyNode`, no entanto, como existe um índice fornecido para `cq:Page`.
 
-   A configuração `type=cq:Page` restringe esse query a apenas `cq:Page` nós e resolve o query para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente nós cq:Page) no AEM.
+   A configuração `type=cq:Page` restringe esse query a apenas nós `cq:Page` e resolve o query para AEM cqPageLucene, limitando os resultados a um subconjunto de nós (somente nós cq:Page) no AEM.
 
 1. Ou ajuste as restrições de propriedade para que o query seja resolvido como um Índice de propriedades existente.
 
@@ -242,11 +242,11 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       property=jcr:content/sling:resourceType
       property.value=my-site/components/structure/article-page
       ```
-   Alterar a restrição de propriedade de `jcr:content/contentType` (um valor personalizado) para a propriedade bem conhecida `sling:resourceType` permite que o query resolva para o índice de propriedade `slingResourceType` que indexa todo o conteúdo por `sling:resourceType`.
+   Alterar a restrição de propriedade de `jcr:content/contentType` (um valor personalizado) para a propriedade conhecida `sling:resourceType` permite que o query resolva para o índice de propriedade `slingResourceType` que indexa todo o conteúdo por `sling:resourceType`.
 
    Os índices de propriedade (ao contrário de Índices de propriedades Lucene) são melhor usados quando o query não é discernido por nodetype e uma única restrição de propriedade domina o conjunto de resultados.
 
-1. Adicione a restrição de caminho mais estrita possível ao query. Por exemplo, preferir `/content/my-site/us/en` sobre `/content/my-site`ou `/content/dam` sobre `/`.
+1. Adicione a restrição de caminho mais estrita possível ao query. Por exemplo, prefira `/content/my-site/us/en` em `/content/my-site` ou `/content/dam` em `/`.
 
    * **Query não otimizado**
 
@@ -269,7 +269,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
    Observe que usar `evaluatePathRestrictions` aumenta o tamanho do índice.
 
-1. Sempre que possível, evite funções/operações do query, tais como: `LIKE` e `fn:XXXX` à medida que os seus custos aumentam com o número de resultados baseados em restrições.
+1. Sempre que possível, evite funções/operações do query, tais como: `LIKE` e `fn:XXXX` à medida que seus custos são dimensionados com o número de resultados baseados em restrições.
 
    * **Query não otimizado**
 
@@ -287,13 +287,13 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       fulltext=article
       fulltext.relPath=jcr:content/contentType
       ```
-   A condição LIKE é lenta para avaliação, pois nenhum índice pode ser usado se o texto start com um curinga (&quot;%...&#39;). A condição jcr:contains permite o uso de um índice de texto completo e, portanto, é preferida. Isso requer que o Índice de propriedades do Lucene resolvido tenha indexRule para `jcr:content/contentType` with `analayzed=true`.
+   A condição LIKE é lenta para avaliação, pois nenhum índice pode ser usado se o texto start com um curinga (&quot;%...&#39;). A condição jcr:contains permite o uso de um índice de texto completo e, portanto, é preferida. Isso requer que o Índice de propriedades de Lucene resolvido tenha indexRule para `jcr:content/contentType` com `analayzed=true`.
 
-   Usar funções de query como `fn:lowercase(..)` pode ser mais difícil de otimizar, pois não há equivalentes mais rápidos (fora das configurações mais complexas e discretas do analisador de índice). É melhor identificar outras restrições de escopo para melhorar o desempenho geral do query, exigindo que as funções funcionem no menor conjunto possível de resultados potenciais.
+   O uso de funções de query como `fn:lowercase(..)` pode ser mais difícil de otimizar, pois não há equivalentes mais rápidos (fora das configurações mais complexas e discretas do analisador de índice). É melhor identificar outras restrições de escopo para melhorar o desempenho geral do query, exigindo que as funções funcionem no menor conjunto possível de resultados potenciais.
 
 1. ***Esse ajuste é específico do Construtor de Query e não se aplica a JCR-SQL2 ou XPath.***
 
-   Use o [supeTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) do Construtor de Query quando o conjunto completo de resultados for **não **necessário imediatamente.
+   Use [palavras-chave do Construtor de Query&#39;, oTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) quando o conjunto completo de resultados for **não **imediatamente necessário.
 
    * **Query não otimizado**
 
@@ -336,7 +336,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
       ```
 
-1. Forneça o XPath (ou JCR-SQL2) para o Gerador [de Definição de Índice de](https://oakutils.appspot.com/generate/index) Oak para gerar a definição otimizada do Índice de Propriedades de Lucene.
+1. Forneça o XPath (ou JCR-SQL2) para [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) gerar a definição otimizada do Índice de Propriedades do Lucene.
 
    **Definição do índice de propriedade do Lucene gerado**
 
@@ -359,7 +359,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
 1. Unir manualmente a definição gerada no Índice de propriedades do Lucene existente de forma aditiva. Tenha cuidado para não remover configurações existentes, pois elas podem ser usadas para satisfazer outros query.
 
-   1. Localize o Índice de propriedades do Lucene existente que abrange cq:Page (usando o Gerenciador de índice). Neste caso, `/oak:index/cqPageLucene`.
+   1. Localize o Índice de propriedades do Lucene existente que abrange cq:Page (usando o Gerenciador de índice). Nesse caso, `/oak:index/cqPageLucene`.
    1. Identifique o delta de configuração entre a definição de índice otimizada (Etapa 4) e o índice existente (/oak:index/cqPageLucene) e adicione as configurações ausentes do Índice otimizado à definição de índice existente.
    1. Por AEM Práticas recomendadas de reindexação, uma atualização ou reindexação está em ordem, com base em se o conteúdo existente será afetado por essa alteração de configuração de índice.
 
@@ -382,7 +382,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
       //element(*, myApp:Page)[@firstName = 'ira']
       ```
 
-1. Forneça o XPath (ou JCR-SQL2) para o Gerador [de Definição de Índice de](https://oakutils.appspot.com/generate/index) Oak para gerar a definição otimizada do Índice de Propriedades de Lucene.
+1. Forneça o XPath (ou JCR-SQL2) para [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) gerar a definição otimizada do Índice de Propriedades do Lucene.
 
    **Definição do índice de propriedade do Lucene gerado**
 
@@ -411,7 +411,7 @@ O exemplo a seguir usa o Construtor de Query como a linguagem de query mais comu
 
 Devido à AEM arquitetura de conteúdo flexível, é difícil prever e garantir que os cruzamentos entre estruturas de conteúdo não evoluam ao longo do tempo para serem inaceitavelmente grandes.
 
-Portanto, certifique-se de que um índice atenda aos query, exceto se a combinação de restrição de caminho e restrição de tipo de nó garantir que **menos de 20 nós sejam atravessados.**
+Portanto, verifique se um índice atende aos query, exceto se a combinação de restrição de caminho e restrição de tipo de nó garantir que **menos de 20 nós já tenham sido atravessados.**
 
 ## Ferramentas de desenvolvimento de query {#query-development-tools}
 
@@ -420,7 +420,7 @@ Portanto, certifique-se de que um índice atenda aos query, exceto se a combina�
 * **Depurador do Construtor de query**
 
    * Uma WebUI para executar query do Construtor de Query e gerar o XPath de suporte (para uso em Explorar Query ou Oak Index Definition Generator).
-   * Localizado em AEM em [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+   * Localizado no AEM em [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE Lite - Ferramenta Query**
 
@@ -439,7 +439,7 @@ Portanto, certifique-se de que um índice atenda aos query, exceto se a combina�
 
    * Uma interface Web do AEM Operations que exibe os índices na instância AEM; facilita a compreensão de quais índices já existem, podem ser direcionados ou aumentados.
 
-* **[Registro](/help/sites-administering/operations-dashboard.md#log-messages)**
+* **[Logs](/help/sites-administering/operations-dashboard.md#log-messages)**
 
    * Registro do Construtor de query
 
@@ -457,7 +457,7 @@ Portanto, certifique-se de que um índice atenda aos query, exceto se a combina�
 * **NodeCounter JMX Mbean**
 
    * O MBean JMX usado para estimar o número de nós nas árvores de conteúdo no AEM.
-   * Localizado no AEM em [/system/console/jmx/org.apache.Jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * Localizado em AEM em [/system/console/jmx/org.apache.Jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Comunidade suportada {#community-supported}
 
@@ -468,5 +468,5 @@ Portanto, certifique-se de que um índice atenda aos query, exceto se a combina�
 * **[Plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
 
    * A extensão do navegador da Web do Google Chrome que expõe dados de log por solicitação, incluindo query executados e seus planos de query, no console de ferramentas dev do navegador.
-   * Requer que o [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) seja instalado e ativado no AEM.
+   * Requer que [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) seja instalado e ativado no AEM.
 
