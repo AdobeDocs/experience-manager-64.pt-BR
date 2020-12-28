@@ -48,7 +48,7 @@ Por exemplo, uma atividade define experiências para dois públicos separados: m
 
 Você define experiências para uma atividade. É possível usar o [console Atividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) ou o [modo Direcionar](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para adicionar experiências a uma atividade.
 
-## Ofertas {#offers}
+## Ofertas  {#offers}
 
 Uma oferta é um conteúdo que aparece em uma localização em uma página para uma experiência. Use ofertas diferentes para experiências diferentes para maximizar a eficácia do conteúdo para os seus públicos.
 
@@ -56,7 +56,7 @@ Por exemplo, a página Mulheres do site de amostra We.Retail pode usar o oferta 
 
 Use o [console Ofertas](/help/sites-authoring/offerlib.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
 
-## Mecanismo de direcionamento {#targeting-engine}
+## Mecanismo de direcionamento  {#targeting-engine}
 
 O mecanismo de direcionamento é o mecanismo que orienta a lógica do conteúdo segmentado. [Atividades](/help/sites-authoring/activitylib.md) são configuradas para usar um dos dois mecanismos de segmentação disponíveis: AEM e Adobe Target.
 
@@ -71,4 +71,4 @@ O mecanismo de direcionamento do Adobe Target faz com que as informações colet
 * Ao usar esse mecanismo de direcionamento, você usa segmentos importados do Adobe Target para definir os públicos das suas experiências.
 * As atividades que usam o mecanismo do Adobe Target são [sincronizadas com o Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).
+Você pode usar esse mecanismo quando tiver [integrado ao Adobe Target](/help/sites-administering/opt-in.md).
