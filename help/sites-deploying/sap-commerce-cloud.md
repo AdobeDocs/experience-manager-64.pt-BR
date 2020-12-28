@@ -1,6 +1,6 @@
 ---
-title: Commerce Cloud SAP
-seo-title: Commerce Cloud SAP
+title: COMMERCE CLOUD SAP
+seo-title: COMMERCE CLOUD SAP
 description: Saiba como implantar o eCommerce com o Commerce Cloud SAP.
 seo-description: Saiba como implantar o eCommerce com o Commerce Cloud SAP.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
@@ -19,13 +19,13 @@ ht-degree: 0%
 ---
 
 
-# Commerce Cloud SAP{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
 >Esta página contém links para o site hybris. Para determinadas páginas, você precisará de uma conta para fazer logon.
 
-## Implantação do eCommerce com o Commerce Cloud SAP {#deploying-ecommerce-with-sap-commerce-cloud}
+## Implantação do eCommerce com o SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -33,32 +33,32 @@ ht-degree: 0%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-A implantação dos pacotes [de eCommerce](#packages-needed-for-ecommerce-with-hybris) necessários proporcionará a funcionalidade completa da estrutura de eCommerce, juntamente com uma implementação de referência da funcionalidade de eCommerce, conforme fornecido com uma implementação de hybris (incluindo um catálogo de demonstração)
+A implantação dos [pacotes necessários de comércio eletrônico](#packages-needed-for-ecommerce-with-hybris) proporcionará a funcionalidade completa da estrutura de comércio eletrônico, juntamente com uma implementação de referência da funcionalidade de comércio eletrônico, conforme fornecida com uma implementação híbrida (incluindo um catálogo de demonstração)
 
-Este documento está disponível na seção ( `/content/geometrixx-outdoors/en_US`) em inglês (EUA) do site do Geometrixx Outdoors:
+Isso está disponível na ramificação Inglês (EUA) ( `/content/geometrixx-outdoors/en_US`) do site do Geometrixx Outdoors:
 
-* [Informações](#productinformationwithcolorvariants) do produto (com variantes de cor, quando apropriado)
+* [Informações](#productinformationwithcolorvariants)  do produto (com variantes de cor, quando apropriado)
 
 * [Visão geral do conteúdo do carrinho de compras](#shoppingcartcontentoverview)
-* [Inscrição](#customersignup) do cliente e logon do [cliente](#customersignin)
+* [Logon do cliente ](#customersignup) e logon do  [cliente](#customersignin)
 
 * [Acesso ao console de gerenciamento de híbridos](#accesstothehybrismanagementconsole)
 
 ### Requisitos técnicos - servidor hybris {#technical-requirements-hybris-server}
 
-A extensão hybris do eCommerce Integration Framework foi atualizada para suportar o Hybris 5 (como padrão), mantendo a compatibilidade retroativa com o [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+A extensão hybris do eCommerce Integration Framework foi atualizada para suportar o Hybris 5 (como padrão), mantendo a compatibilidade retroativa com [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
 >* Suporta até hybris 6.4 com OCC versão 2.
 >* Você precisará do Java 7 para executar o servidor [hybris 5.](https://www.hybris.com/en/architecture-technology)
->* O complemento hybris, o Acelerador [Telco](https://www.hybris.com/en/products/telecommunication), não é suportado pela extensão AEM.
+>* O complemento hybris, o [Acelerador Telco](https://www.hybris.com/en/products/telecommunication), não é suportado pela extensão AEM.
 
 >
 
 
 
-### Pacotes necessários para o comércio eletrônico com hiperligações {#packages-needed-for-ecommerce-with-hybris}
+### Pacotes necessários para comércio eletrônico com hífen {#packages-needed-for-ecommerce-with-hybris}
 
 Para instalar a funcionalidade de comércio eletrônico, é necessário:
 
@@ -71,7 +71,7 @@ Para instalar a funcionalidade de comércio eletrônico, é necessário:
 
    * `cq-geometrixx-all-pkg`
 
-* AEM pacotes de conteúdo de hiperligação:
+* Pacotes de conteúdo de AEM hips:
 
    * `cq-hybris-content-6.3.2`
    * implementação da API específica de hybris
@@ -87,17 +87,17 @@ Para instalar uma configuração completa (usando o catálogo de demonstração,
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Instale os pacotes de conteúdo de demonstração usando o gerenciador de [pacotes](/help/sites-administering/package-manager.md):
+1. Instale os pacotes de conteúdo de demonstração usando o [gerenciador de pacote](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
 
-1. [Baixe e crie seu servidor](#download-and-build-your-hybris-server)hybris.
+1. [Baixe e crie seu servidor](#download-and-build-your-hybris-server) hybris.
 1. Construa seu catálogo em seu mecanismo de comércio eletrônico:
 
-   1. [Configure a Loja](#setup-the-geometrixx-outdoors-store)do Exterior da Geometrixx.
+   1. [Configure a Loja](#setup-the-geometrixx-outdoors-store) do Exterior da Geometrixx.
 
-1. [Crie](/help/sites-authoring/qg-page-authoring.md) quaisquer páginas suplementares que você precisar no AEM.
+1. [](/help/sites-authoring/qg-page-authoring.md) Autorize as páginas suplementares que você precisa no AEM.
 
 >[!CAUTION]
 >
@@ -105,7 +105,7 @@ Para instalar uma configuração completa (usando o catálogo de demonstração,
 
 >[!NOTE]
 >
->A documentação [da](/help/sites-developing/ecommerce.md#api-documentation) API de desenvolvedores também está disponível para download.
+>Para desenvolvedores [A documentação da API](/help/sites-developing/ecommerce.md#api-documentation) também está disponível para download.
 
 ### Baixe e crie seu servidor hybris {#download-and-build-your-hybris-server}
 
@@ -177,19 +177,19 @@ As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também
    >
    >Dependendo do seu sistema, várias dessas etapas podem levar vários minutos para serem concluídas.
 
-1. No seu navegador, navegue até o console **de administração de** hybris em:
+1. No seu navegador, navegue até **console de administração de híbridos** em:
 
    [http://localhost:9002](http://localhost:9002)
 
 1. Clique em **Inicializar** e confirme a ação de inicialização (pois ela excluirá os dados existentes).
 
-   O progresso será mostrado no console, com a `FINISHED` indicação de conclusão.
+   O progresso será mostrado no console, com `FINISHED` indicando a conclusão.
 
    >[!NOTE]
    >
    >Dependendo do seu sistema, isso pode levar vários minutos para ser concluído.
 
-### Configuração da Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
+### Configure a Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
 
 Este procedimento fará upload e configurará a loja de demonstração - Geometrixx Online.
 
@@ -200,12 +200,12 @@ Este procedimento fará upload e configurará a loja de demonstração - Geometr
    sh hybrisserver.sh
    ```
 
-1. No seu navegador, navegue até o console **de gerenciamento de** híbridos em:
+1. No seu navegador, navegue até **console de gerenciamento de híbridos** em:
 
    [http://localhost:9002/hmc/hybris](http://localhost:9002/hmc/hybris)
 
-1. Na barra lateral de navegação, explique **Sistema** e **Ferramentas**. Em seguida, selecione **Importar** para abrir o **Assistente: Janela Importação** CSV.
-1. Na guia **Configuração** , **carregue** o seguinte arquivo **de** importação:
+1. Na barra lateral de navegação, explique **System** e **Tools**. Em seguida, selecione **Importar** para abrir o **Assistente: Janela Importação de CSV**.
+1. Na guia **Configuração**, **Carregue** o seguinte **Importar ficheiro**:
 
    [Obter arquivo](assets/geometrixx-outdoors-export.csv)
 
@@ -213,18 +213,18 @@ Este procedimento fará upload e configurará a loja de demonstração - Geometr
 
    `en_US - English (United States)`
 
-1. Open the **Resources** tab.
-1. **Carregue** o seguinte **Media-Zip**:
+1. Abra a guia **Resources**.
+1. **** Carregue o seguinte  **Media-Zip**:
 
    [Obter arquivo](assets/geometrixx-outdoors-images.zip)
 
 1. Clique em **Start** para importar os arquivos especificados. A guia **Resultado** mostrará quaisquer entradas de log.
 
-1. Clique em **Concluído** para fechar a janela de importação.
+1. Clique em **Done** para fechar a janela de importação.
 
-1. Na barra lateral, selecione **Sistema**, **Ferramentas** e, em seguida, **Importar**.
+1. Na barra lateral, selecione **Sistema**, **Ferramentas** e **Importar**.
 
-1. **Carregue** o seguinte arquivo **** de importação:
+1. **** Carregue o seguinte arquivo **** de importação:
 
    [Obter arquivo](assets/base-store.csv)
 
@@ -238,7 +238,7 @@ Este procedimento fará upload e configurará a loja de demonstração - Geometr
 
 1. Clique em **Start** para importar os arquivos especificados. A guia **Resultado** mostrará quaisquer entradas de log.
 
-1. Clique em **Concluído** para fechar a janela de importação.
+1. Clique em **Done** para fechar a janela de importação.
 
 1. Agora você pode usar o cockpit de produtos para visualização dos catálogos e produtos importados:
 
