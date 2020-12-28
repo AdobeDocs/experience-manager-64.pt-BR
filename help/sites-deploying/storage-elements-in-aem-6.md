@@ -1,6 +1,6 @@
 ---
-title: Elementos do Armazenamento no AEM 6.4
-seo-title: Elementos do Armazenamento no AEM 6.4
+title: Elementos do armazenamento no AEM 6.4
+seo-title: Elementos do armazenamento no AEM 6.4
 description: Saiba mais sobre as implementações de armazenamento de nó disponíveis no AEM 6.4 e como manter o repositório.
 seo-description: Saiba mais sobre as implementações de armazenamento de nó disponíveis no AEM 6.4 e como manter o repositório.
 uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Elementos do Armazenamento no AEM 6.4{#storage-elements-in-aem}
+# Elementos de armazenamento no AEM 6.4{#storage-elements-in-aem}
 
 Neste artigo, cobriremos:
 
@@ -30,9 +30,9 @@ Neste artigo, cobriremos:
 
 Uma das alterações mais importantes no AEM 6 são as inovações a nível do repositório.
 
-Atualmente, há duas implementações de armazenamento de nó disponíveis no AEM6: armazenamento Tar e armazenamento MongoDB.
+Atualmente, há duas implementações de armazenamento de nó disponíveis no AEM6: Armazenamento Tar e armazenamento MongoDB.
 
-### Armazenamento do Tar {#tar-storage}
+### Armazenamento de barra {#tar-storage}
 
 #### Execução de uma instância AEM recém-instalada com o Armazenamento Tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
@@ -69,21 +69,21 @@ AEM 6 pode ser configurado para execução com o armazenamento MongoDB seguindo 
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Verifique se o MongoDB está instalado e se uma instância do `mongod` está em execução. Para obter mais informações, consulte [Instalação do MongoDB](https://docs.mongodb.org/manual/installation/).
+1. Verifique se MongoDB está instalado e se uma instância de `mongod` está em execução. Para obter mais informações, consulte [Instalando MongoDB](https://docs.mongodb.org/manual/installation/).
 1. Crie uma pasta chamada `crx-quickstart\install` no diretório de instalação.
-1. Configure o armazenamento de nós criando um arquivo de configuração com o nome da configuração que você deseja usar no `crx-quickstart\install` diretório.
+1. Configure o armazenamento de nós criando um arquivo de configuração com o nome da configuração que você deseja usar no diretório `crx-quickstart\install`.
 
-   O Documento Node Store (que é a base para AEM implementação do armazenamento MongoDB) usa um arquivo chamado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   O Documento Node Store (que é a base para a implementação AEM armazenamento MongoDB) usa um arquivo chamado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Edite o arquivo e defina suas opções de configuração. As opções disponíveis são as seguintes:
 
-   * `mongouri`: O [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necessário para se conectar ao Banco de Dados Mongo. O padrão é `mongodb://localhost:27017`
-   * `db`: Nome do banco de dados Mongo. Por padrão, as novas instalações AEM 6 usam **aem-author** como nome do banco de dados.
+   * `mongouri`: O  [](https://docs.mongodb.org/manual/reference/connection-string/) MongoURI é necessário para se conectar ao Banco de Dados Mongo. O padrão é `mongodb://localhost:27017`
+   * `db`: Nome do banco de dados Mongo. Por padrão, as novas instalações AEM 6 usam **aem-author** como o nome do banco de dados.
    * `cache`: O tamanho do cache em MB. Isso é distribuído entre vários caches usados no DocumentNodeStore. O padrão é 256.
    * `changesSize`: Tamanho em MB da coleção com limites usada no Mongo para armazenar a saída do diff em cache. O padrão é 256.
    * `customBlobStore`: Valor booliano que indica que um armazenamento de dados personalizado será usado. O padrão é false.
 
-1. Crie um arquivo de configuração com o PID do armazenamento de dados que deseja usar e edite o arquivo para definir as opções de configuração. Para obter mais informações, consulte [Configuração de armazenamento de nós e armazenamento](/help/sites-deploying/data-store-config.md)de dados.
+1. Crie um arquivo de configuração com o PID do armazenamento de dados que deseja usar e edite o arquivo para definir as opções de configuração. Para obter mais informações, consulte [Configuração de armazenamento de nó e armazenamento de dados](/help/sites-deploying/data-store-config.md).
 
 1. Start o jar AEM 6 com um backend de armazenamento MongoDB executando:
 
@@ -91,14 +91,14 @@ AEM 6 pode ser configurado para execução com o armazenamento MongoDB seguindo 
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Onde **`-r`** está o modo de execução de backend. Neste exemplo, ele será start com suporte a MongoDB.
+   Onde **`-r`** é o modo de execução de backend. Neste exemplo, ele será start com suporte a MongoDB.
 
-#### Desabilitando páginas grandes transparentes {#disabling-transparent-huge-pages}
+#### Desabilitando páginas imensas transparentes {#disabling-transparent-huge-pages}
 
 O Red Hat Linux usa um algoritmo de gerenciamento de memória chamado THP (Transparent Huge Pages). Enquanto AEM realiza leituras e gravações de granulação fina, o THP é otimizado para operações grandes. Por isso, é recomendável desativar o THP tanto no armazenamento Tar quanto no Mongo. Para desativar o algoritmo, siga estas etapas:
 
-1. Abra o `/etc/grub.conf` arquivo no editor de texto de sua escolha.
-1. Adicione a seguinte linha ao arquivo **grub.conf** :
+1. Abra o arquivo `/etc/grub.conf` no editor de texto de sua escolha.
+1. Adicione a seguinte linha ao arquivo **grub.conf**:
 
    ```
    transparent_hugepage=never
@@ -129,4 +129,4 @@ O Red Hat Linux usa um algoritmo de gerenciamento de memória chamado THP (Trans
 
 ## Manutenção do repositório {#maintaining-the-repository}
 
-Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização o tamanho do repositório aumenta. Para evitar o crescimento descontrolado do repositório, é necessário limpar revisões antigas para liberar recursos de disco. Esta funcionalidade de manutenção é chamada de Limpeza de revisão. O mecanismo de Limpeza de revisão recuperará o espaço em disco ao remover dados obsoletos do repositório. Para obter mais detalhes sobre a Limpeza de revisão, leia a página [Limpeza de](/help/sites-deploying/revision-cleanup.md)revisão.
+Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização o tamanho do repositório aumenta. Para evitar o crescimento descontrolado do repositório, é necessário limpar revisões antigas para liberar recursos de disco. Esta funcionalidade de manutenção é chamada de Limpeza de revisão. O mecanismo de Limpeza de revisão recuperará o espaço em disco ao remover dados obsoletos do repositório. Para obter mais detalhes sobre a Limpeza de revisão, leia a página [Limpeza de revisão](/help/sites-deploying/revision-cleanup.md).
