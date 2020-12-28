@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Reestruturação do repositório de comércio eletrônico no AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Conforme descrito na página principal [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a solução AEM E-Commerce. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
+Conforme descrito na página principal [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a solução AEM E-Commerce. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
-## Com atualização 6.4 {#with-upgrade}
+## Com a atualização 6.4 {#with-upgrade}
 
 ### Dados de produtos, pedidos, coleções, classificações, métodos de remessa e métodos de pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
@@ -37,7 +37,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Você pode usar uma tarefa de migração <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank"></a> lenta para migrar dados de comércio eletrônico.</p> <p>Ele executa as seguintes etapas:</p> 
+   <td><p>Você pode usar uma tarefa <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migração lenta</a> para migrar dados de comércio eletrônico.</p> <p>Ele executa as seguintes etapas:</p> 
     <ul> 
      <li>ajusta referências ao local antigo para apontar para o novo local</li> 
      <li>move o conteúdo do local antigo para o novo local</li> 
@@ -47,7 +47,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
      <li>/etc/commerce/products</li> 
      <li>/etc/commerce/collections<br /> </li> 
      <li>/etc/commerce/orders<br /> </li> 
-     <li>/etc/commerce/payment methods<br /> </li> 
+     <li>/etc/commerce/payment-methods<br /> </li> 
      <li>/etc/commerce/Shipping-methods<br /> </li> 
     </ul> <p>Para catálogos maiores, é recomendável executar a tarefa de migração de comércio individualmente, transmitindo a seguinte propriedade do sistema Java para AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Após a migração, AEM precisa de uma reinicialização.</p> </td> 
   </tr>
