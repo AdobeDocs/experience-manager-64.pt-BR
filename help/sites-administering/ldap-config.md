@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configuração do LDAP com AEM 6 {#configuring-ldap-with-aem}
 
-O LDAP (o **** Lightweight **** Diretory **** Access **** Protocol) é usado para acessar os serviços de diretório centralizados. Isso ajuda a reduzir o esforço necessário para gerenciar contas de usuário, pois elas podem ser acessadas por vários aplicativos. Um desses servidores LDAP é o Ative Diretory. O LDAP é frequentemente usado para obter o Single Sign On, que permite que o usuário acesse vários aplicativos depois de fazer logon uma vez.
+O LDAP (o diretório **L** Leve **D** A **A** Access **P** Protocolo) é utilizado para aceder aos serviços de diretório centralizados. Isso ajuda a reduzir o esforço necessário para gerenciar contas de usuário, pois elas podem ser acessadas por vários aplicativos. Um desses servidores LDAP é o Ative Diretory. O LDAP é frequentemente usado para obter o Single Sign On, que permite que o usuário acesse vários aplicativos depois de fazer logon uma vez.
 
 As contas de usuário podem ser sincronizadas entre o servidor LDAP e o repositório, com os detalhes da conta LDAP sendo salvos no repositório. Isso permite que as contas sejam atribuídas a grupos de repositório para alocar as permissões e os privilégios necessários.
 
@@ -43,15 +43,15 @@ Para que o LDAP funcione com AEM, é necessário criar três configurações OSG
 
 >[!NOTE]
 >
->Assista ao módulo de logon externo do [Oak: autenticação com LDAP e muito mais](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) para aprofundar os módulos de logon externo.
+>Assista [Módulo de logon externo do Oak - Autenticação com LDAP e Além de](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) para aprofundar os módulos de logon externos.
 >
->Para ler um exemplo de configuração de Experience Manager com Apache DS, consulte [Configuração do Adobe Experience Manager 6.4 para usar o Apache Diretory Service.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
+>Para ler um exemplo de configuração de Experience Manager com Apache DS, consulte [Configurar o Adobe Experience Manager 6.4 para usar o Apache Diretory Service.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
 
-## Configurando o provedor de identidade LDAP {#configuring-the-ldap-identity-provider}
+## Configuração Do Provedor De Identidade LDAP {#configuring-the-ldap-identity-provider}
 
 O Provedor de identidade LDAP é usado para definir como os usuários são recuperados do servidor LDAP.
 
-Ele pode ser encontrado no console de gerenciamento sob o nome do provedor **** de identidade LDAP Apache Jackrabbit Oak.
+Ele pode ser encontrado no console de gerenciamento sob o nome **Apache Jackrabbit Oak LDAP Identity Provider**.
 
 As seguintes opções de configuração estão disponíveis para o provedor de identidade LDAP:
 
@@ -148,7 +148,7 @@ As seguintes opções de configuração estão disponíveis para o provedor de i
  </tbody> 
 </table>
 
-## Configuração Do Manipulador De Sincronização {#configuring-the-synchronization-handler}
+## Configurando O Manipulador De Sincronização {#configuring-the-synchronization-handler}
 
 O manipulador de sincronização definirá como os usuários e grupos do Provedor de identidades serão sincronizados com o repositório.
 
@@ -172,7 +172,7 @@ As seguintes opções de configuração estão disponíveis para o Manipulador d
   </tr> 
   <tr> 
    <td><strong>Mapeamento de propriedades do usuário</strong></td> 
-   <td>Definição de mapeamento de Lista de propriedades locais de propriedades externas.</td> 
+   <td>Definição de mapeamento de lista de propriedades locais de propriedades externas.</td> 
   </tr> 
   <tr> 
    <td><strong>Prefixo do caminho do usuário</strong></td> 
@@ -196,7 +196,7 @@ As seguintes opções de configuração estão disponíveis para o Manipulador d
   </tr> 
   <tr> 
    <td><strong>Mapeamento de propriedades do grupo</strong></td> 
-   <td>Definição de mapeamento de Lista de propriedades locais de propriedades externas.</td> 
+   <td>Definição de mapeamento de lista de propriedades locais de propriedades externas.</td> 
   </tr> 
   <tr> 
    <td><strong>Prefixo do caminho do grupo</strong></td> 
@@ -207,11 +207,11 @@ As seguintes opções de configuração estão disponíveis para o Manipulador d
 
 ## O módulo de logon externo {#the-external-login-module}
 
-O módulo de logon externo está localizado no Módulo **de logon externo do** Apache Jackrabbit Oak sob o console de gerenciamento.
+O módulo de logon externo está localizado em **Apache Jackrabbit Oak External Login Module** no console de gerenciamento.
 
 >[!NOTE]
 >
->O módulo de logon externo do Apache Jackrabbit Oak implementa as especificações do Java Authentication and Authorization Service (JAAS). Consulte o Oracle Java Security Reference Guide [](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) oficial para obter mais informações.
+>O módulo de logon externo do Apache Jackrabbit Oak implementa as especificações do Java Authentication and Authorization Service (JAAS). Consulte o [Guia oficial de Referência de Segurança do Oracle Java](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) para obter mais informações.
 
 Seu trabalho é definir qual provedor de identidade e manipulador de sincronização usar, vinculando efetivamente os dois módulos.
 
@@ -232,7 +232,7 @@ As seguintes opções de configuração estão disponíveis:
 
 AEM 6 pode ser configurado para autenticação com LDAP por SSL seguindo o procedimento abaixo:
 
-1. Marque as caixas de seleção **Usar SSL** ou **Usar TLS** ao configurar o Provedor [de identidade](#configuring-the-ldap-identity-provider)LDAP.
+1. Marque as caixas de seleção **Use SSL** ou **Use TLS** ao configurar o [Provedor de identidade LDAP](#configuring-the-ldap-identity-provider).
 1. Configure o Manipulador de sincronização e o módulo de logon externo de acordo com sua configuração.
 1. Instale os certificados SSL na sua VM Java, se necessário. Isso pode ser feito usando keytool:
 
@@ -240,7 +240,7 @@ AEM 6 pode ser configurado para autenticação com LDAP por SSL seguindo o proce
 
 1. Teste a conexão com o servidor LDAP.
 
-### Criação de certificados SSL {#creating-ssl-certificates}
+### Criando certificados SSL {#creating-ssl-certificates}
 
 Certificados autoassinados podem ser usados ao configurar AEM para autenticação com LDAP via SSL. Abaixo está um exemplo de um procedimento de trabalho para geração de certificados para uso com AEM.
 
@@ -271,7 +271,7 @@ Certificados autoassinados podem ser usados ao configurar AEM para autenticaçã
 
 1. Por fim, adicione o certificado ao armazenamento de chaves Java.
 
-## Ativação do registro de depuração {#enabling-debug-logging}
+## Ativando o registro de depuração {#enabling-debug-logging}
 
 O registro de depuração pode ser ativado tanto para o provedor de identidade LDAP quanto para o módulo de logon externo, a fim de solucionar problemas de conexão.
 
@@ -280,17 +280,17 @@ Para ativar o registro de depuração, é necessário:
 1. Vá para o Console de gerenciamento da Web.
 1. Localize &quot;Apache Sling Logging Logger Configuration&quot; e crie dois loggers com as seguintes opções:
 
-* Log level: Debug
+* Nível de registro: Depuração
 * Arquivo de registro logs/ldap.log
 * Padrão de mensagem: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.Jackrabbit.oak.security.authentication.ldap
 
-* Log level: Debug
+* Nível de registro: Depuração
 * Arquivo de log: logs/external.log
 * Padrão de mensagem: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.Jackrabbit.oak.spi.security.authentication.external
 
-## Uma Palavra sobre Afiliação de Grupo {#a-word-on-group-affiliation}
+## Uma palavra sobre afiliação de grupo {#a-word-on-group-affiliation}
 
 Os usuários sincronizados por meio do LDAP podem fazer parte de grupos diferentes em AEM. Esses grupos podem ser grupos LDAP externos que serão adicionados a AEM como parte do processo de sincronização, mas também podem ser grupos adicionados separadamente e que não fazem parte do esquema de afiliação do grupo LDAP original.
 
@@ -298,9 +298,9 @@ Na maioria dos casos, esses podem ser grupos adicionados por um administrador lo
 
 Se um usuário for removido de um grupo no servidor LDAP, a alteração também será refletida no lado AEM após a sincronização. No entanto, todas as outras afiliações de grupo do usuário que não foram adicionadas pelo LDAP permanecerão em vigor.
 
-AEM detecta e lida com a expurgação de usuários de grupos externos usando a `rep:externalId` propriedade. Essa propriedade é adicionada automaticamente a qualquer usuário ou grupo sincronizado pelo Manipulador de sincronização e contém informações sobre o provedor de identidade de origem.
+AEM detecta e lida com a remoção de usuários de grupos externos usando a propriedade `rep:externalId`. Essa propriedade é adicionada automaticamente a qualquer usuário ou grupo sincronizado pelo Manipulador de sincronização e contém informações sobre o provedor de identidade de origem.
 
-Para obter mais informações, consulte a documentação do Apache Oak sobre Sincronização [de](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html)usuários e grupos.
+Para obter mais informações, consulte a documentação do Apache Oak em [Sincronização de usuários e grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 
 ## Problemas conhecidos {#known-issues}
 
