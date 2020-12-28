@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Trabalhar com registros{#working-with-logs}
+# Trabalhar com Logs{#working-with-logs}
 
 Esta seção inclui informações detalhadas sobre registros disponíveis para ajudá-lo a solucionar problemas.
 
@@ -54,7 +54,7 @@ Os níveis de log são os seguintes:
 | 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O CRX pode ou não funcionar corretamente. |
 | 3 | Info | A ação foi bem sucedida. |
 
-## Opção detalhada usada para solução de problemas {#verbose-option-used-for-troubleshooting}
+## Opção detalhada usada para solucionar problemas {#verbose-option-used-for-troubleshooting}
 
 Ao start do CRX, você pode adicionar a opção -v (verbose) à linha de comando como em: &quot;
 
