@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Gerenciar bloco de aplicativos{#manage-app-tile}
+# Gerenciar mosaico do aplicativo{#manage-app-tile}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O **Gerenciar bloco de aplicativos** no Painel de aplicativos fornece a capacidade de modificar detalhes sobre o aplicativo. Para abrir a página Detalhes, clique no link de detalhes do bloco Gerenciar aplicativo. Na página Gerenciar aplicativo, você pode editar as configurações de Configuração de aplicativo do PhoneGap (config.xml) e preparar seu aplicativo para submissão aos vários armazenamentos de aplicativos.
+O bloco **Gerenciar aplicativo** no Painel do aplicativo fornece a capacidade de modificar detalhes sobre o aplicativo. Para abrir a página Detalhes, clique no link de detalhes do bloco Gerenciar aplicativo. Na página Gerenciar aplicativo, você pode editar as configurações de Configuração de aplicativo do PhoneGap (config.xml) e preparar seu aplicativo para submissão aos vários armazenamentos de aplicativos.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -34,7 +34,7 @@ Você pode detalhar cada bloco no bloco **Gerenciar aplicativo** para visualiza�
 
 ### A guia Básico {#the-basic-tab}
 
-É possível editar o **Nome**, o **Autor**, a Descrição **** curta e a **Descrição** do aplicativo nessa guia.
+Você pode editar **Nome**, **Autor**, **Descrição curta** e **Descrição** para seu aplicativo nesta guia.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -57,7 +57,7 @@ Cada loja de aplicativos de fornecedor, como a Apple App Store ou a Google Play 
 >
 >O aplicativo AEM Verify fornece a capacidade de enviar capturas de tela diretamente para os detalhes do aplicativo no AEM.
 >
->Consulte Início rápido [móvel para verificar](/help/mobile/phonegap-mobile-quickstart.md) AEM para obter mais detalhes.
+>Consulte [Início rápido móvel para AEM Verificar](/help/mobile/phonegap-mobile-quickstart.md) para obter mais detalhes.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -65,7 +65,7 @@ Cada loja de aplicativos de fornecedor, como a Apple App Store ou a Google Play 
 
 >[!NOTE]
 >
->Depois de conhecer o bloco **Gerenciar aplicativo** , consulte [Edição de metadados](/help/mobile/phonegap-editmetadata.md) do aplicativo para visualização e edição dos metadados.
+>Depois de conhecer o bloco **Gerenciar aplicativo**, consulte [Editar metadados do aplicativo](/help/mobile/phonegap-editmetadata.md) para visualização e edição dos metadados.
 
 #### Metadados comuns {#common-metadata}
 
@@ -75,11 +75,11 @@ Há configurações e metadados comuns para todas as plataformas.
 
 Nesta seção, você define o URL do Content Update Server, a landing page para seu aplicativo móvel, a versão do PhoneGap para compilação, a versão do aplicativo, o nome, a descrição e muito mais.
 
-**A versão** do aplicativo é a versão em funcionamento do aplicativo. A prática recomendada comum é usar uma notação de 3 decimais e um start abaixo de 1.0.0 antes da primeira versão.
+**A** versão do aplicativo é a versão em funcionamento do aplicativo. A prática recomendada comum é usar uma notação de 3 decimais e um start abaixo de 1.0.0 antes da primeira versão.
 
-**Versão** do PhoneGap é a versão na qual você deseja compilar seu aplicativo com o PhoneGap. A prática recomendada é acompanhar a versão atual para garantir que você obtenha os melhores e mais recentes recursos e correções de erros.
+**O PhoneGap** Versiones é a versão na qual você deseja compilar seu aplicativo com o PhoneGap. A prática recomendada é acompanhar a versão atual para garantir que você obtenha os melhores e mais recentes recursos e correções de erros.
 
-**O URL** do Content Update Server é o URL que seu aplicativo usará para chamar atualizações do ContentSync. Ele deve ser definido para o URL do despachante ou, se não estiver usando um despachante, para uma de suas instâncias de publicação que será usada para fornecer atualizações do ContentSync ao seu aplicativo.
+**O** URL do Content Update Server é o URL que seu aplicativo usará para chamar atualizações do ContentSync. Ele deve ser definido para o URL do despachante ou, se não estiver usando um despachante, para uma de suas instâncias de publicação que será usada para fornecer atualizações do ContentSync ao seu aplicativo.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -135,23 +135,23 @@ A propriedade Content Update Server URL é o URL que deve apontar para uma inst�
 
 ### A guia Plug-ins {#the-plugins-tab}
 
-A guia **Plug-ins** descreve os plug-ins associados ao seu aplicativo. Essas informações serão usadas para recuperar o plug-in apropriado durante uma compilação.
+A guia **Plugins** descreve os plug-ins associados ao seu aplicativo. Essas informações serão usadas para recuperar o plug-in apropriado durante uma compilação.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### A guia Capturas de tela {#the-screenshots-tab}
 
-A guia Capturas de **tela** exibe as resoluções de captura de tela suportadas em diferentes plataformas.
+A guia **Capturas de tela** exibe as resoluções de captura de tela suportadas em diferentes plataformas.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 >[!NOTE]
 >
->Para adicionar e remover capturas de tela, consulte [Edição de metadados](/help/mobile/phonegap-editmetadata.md)do aplicativo.
+>Para adicionar e remover capturas de tela, consulte [Edição de metadados do aplicativo](/help/mobile/phonegap-editmetadata.md).
 
 ### A guia Autenticação {#the-authentication-tab}
 
-A guia **Autenticação** permite selecionar um cliente OAuth para ser associado ao seu aplicativo e permite que um desenvolvedor utilize a autenticação OAuth Adobe Experience Manager.
+A guia **Authentication** permite selecionar um cliente OAuth para ser associado ao seu aplicativo e permite que um desenvolvedor utilize a autenticação OAuth Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
