@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Reestruturação do repositório de ativos no AEM 6.4{#assets-repository-restructuring-in-aem}
 
-Conforme descrito na página principal [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para a AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a AEM Assets Solution. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
+Conforme descrito na página pai [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a Solução AEM Assets. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
 **Com atualização 6.4**
 
@@ -37,9 +37,9 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
 * [Configurações de transcodificação de vídeo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
 * [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
 
-## Com atualização 6.4 {#with-upgrade}
+## Com a atualização 6.4 {#with-upgrade}
 
-### Misc {#misc}
+### Diversos {#misc}
 
 <table> 
  <tbody> 
@@ -80,13 +80,13 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
    <td><strong>Orientação relativa à reestruturação</strong></td> 
    <td><p>Se os modelos de e-mail foram modificados pelo cliente, execute as seguintes ações para alinhar-se à nova estrutura do repositório:</p> 
     <ol> 
-     <li>O modelo de <code>/libs/settings/dam/notification</code> email deve ser copiado de <strong><code>/etc/notification/email/default</code></strong> para <strong><code>/apps/settings/notification/email/default</code></strong> 
+     <li>O modelo de e-mail <code>/libs/settings/dam/notification</code> deve ser copiado de <strong><code>/etc/notification/email/default</code></strong> para <strong><code>/apps/settings/notification/email/default</code></strong> 
       <ol> 
-       <li>Como o destino está<strong> <code>/apps</code></strong> nessa alteração, deve ser mantido no SCM.</li> 
+       <li>Como o destino está em<strong> <code>/apps</code></strong>, essa alteração deve persistir no SCM.</li> 
       </ol> </li> 
      <li>Remova a pasta: <strong><code>/etc/dam/notification/email/default</code></strong> após os modelos de e-mail dentro dele terem sido movidos.<br /> 
       <ol> 
-       <li>Se nenhuma atualização tiver sido feita no modelo de e-mail em<strong> , a pasta poderá ser removida, pois o modelo de e-mail original existe em <code>/etc/notification/email/default</code></strong><strong><code>/libs/settings/notification/email/default</code></strong> como parte da instalação AEM 6.4.</li> 
+       <li>Se nenhuma atualização tiver sido feita no modelo de email em<strong> <code>/etc/notification/email/default</code></strong>, a pasta poderá ser removida, pois o modelo original de email existe em <strong><code>/libs/settings/notification/email/default</code></strong> como parte da instalação AEM 6.4.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -113,12 +113,12 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
    <td><strong>Orientação relativa à reestruturação</strong></td> 
    <td><p>Para quaisquer Designs gerenciados no SCM e não gravados em tempo de execução por meio das Caixas de diálogo de design, execute as seguintes ações para alinhar ao modelo mais recente:</p> 
     <ol> 
-     <li>Copie os designs do Local anterior para o Novo local em <code>/apps</code>.</li> 
-     <li>Converta qualquer CSS, JavaScript e recursos estáticos no Design em uma Biblioteca <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">do</a> cliente com <code>allowProxy = true</code>.</li> 
-     <li>Atualize as referências ao Local anterior na <code>cq:designPath</code> propriedade por meio de <strong>AEM &gt; Administrador do DAM &gt; Página de compartilhamento de ativos &gt; Propriedades da página &gt; Guia Avançado &gt; Campo</strong>de design.</li> 
+     <li>Copie os designs do Local anterior para o novo local em <code>/apps</code>.</li> 
+     <li>Converta qualquer CSS, JavaScript e recursos estáticos no Design em <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca do cliente</a> com <code>allowProxy = true</code>.</li> 
+     <li>Atualize as referências ao Local anterior na propriedade <code>cq:designPath</code> por <strong>AEM &gt; Administrador do DAM &gt; Página de compartilhamento de ativos &gt; Propriedades da página &gt; Guia Avançado &gt; Campo de design</strong>.</li> 
      <li>Atualize quaisquer Páginas que façam referência ao Local anterior para usar a nova categoria da Biblioteca de clientes. Isso requer a atualização do código de implementação da página.</li> 
-     <li>Atualize as regras do Dispatcher para permitir o serviço de Bibliotecas do Cliente através do servlet <code>/etc.clientlibs/</code> proxy.</li> 
-    </ol> <p>Para quaisquer Designs que não sejam gerenciados no SCM, e tempo de execução modificado por meio das Caixas de diálogo de projeto, não remova os designs autoráveis <code>/etc</code>.</p> </td> 
+     <li>Atualize as regras do Dispatcher para permitir o serviço de Bibliotecas do Cliente por meio do servlet proxy <code>/etc.clientlibs/</code>.</li> 
+    </ol> <p>Para quaisquer Designs que não sejam gerenciados no SCM e tempo de execução modificado por meio de Caixas de diálogo de design, não mova designs autoráveis de <code>/etc</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Notas</strong></td> 
@@ -141,21 +141,21 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
   </tr> 
   <tr> 
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Se os modelos de e-mail (<strong>download asset</strong> ou <strong>transientworkflow concluído</strong>) tiverem sido modificados, siga o procedimento abaixo para alinhar à nova estrutura:</p> 
+   <td><p>Se os modelos de e-mail (<strong>downloadasset</strong> ou <strong>transientworkflow completed</strong>) tiverem sido modificados, siga o procedimento abaixo para alinhar-se à nova estrutura:</p> 
     <ol> 
      <li>O modelo de email atualizado deve ser copiado de <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> para <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong> 
       <ol> 
-       <li>Como o destino está<strong> <code>/apps</code></strong> nessa alteração, deve ser mantido no SCM.</li> 
+       <li>Como o destino está em<strong> <code>/apps</code></strong>, essa alteração deve persistir no SCM.</li> 
       </ol> </li> 
-     <li>Remova a pasta: <code>/etc/dam/workflow/notification/email/downloadasset </code>após os modelos de e-mail dentro dele terem sido movidos.<br /> 
+     <li>Remova a pasta: <code>/etc/dam/workflow/notification/email/downloadasset </code>depois que os modelos de e-mail dentro dele tiverem sido movidos.<br /> 
       <ol> 
-       <li>Se nenhuma atualização tiver sido feita no modelo de e-mail em<strong> , a pasta poderá ser removida, pois o modelo de e-mail original existe em <code>/etc</code></strong><strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> como parte da instalação AEM 6.4.</li> 
+       <li>Se nenhuma atualização tiver sido feita no modelo de email em<strong> <code>/etc</code></strong>, a pasta poderá ser removida, pois o modelo original de email existe em <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> como parte da instalação AEM 6.4.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><strong>Notas</strong></td> 
-   <td>Embora <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> seja tecnicamente compatível com a pesquisa (tem prioridade antes de /aplicativos por meio da pesquisa Sling CAConfig normal, mas depois <code>/etc</code>), o modelo pode ser colocado em <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. No entanto, isso não é recomendado, pois não há interface do usuário do tempo de execução para facilitar a edição do modelo de email.</td> 
+   <td>Embora <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> seja tecnicamente compatível com a pesquisa (tem prioridade antes de /aplicativos por meio da pesquisa Sling CAConfig normal, mas depois de <code>/etc</code>), o modelo pode ser colocado em <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. No entanto, isso não é recomendado, pois não há interface do usuário do tempo de execução para facilitar a edição do modelo de email.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -168,7 +168,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
 | **Orientação relativa à reestruturação** | N/A |
 | **Notas** | N/A |
 
-### Modelo de notificação por email de compartilhamento de links {#link-share-e-mail-notification-template}
+### Modelo de notificação por email de compartilhamento de link {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -186,22 +186,22 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
     <ol> 
      <li>O modelo de email atualizado deve ser copiado de <strong><code>/etc/dam/adhocassetshare</code></strong> para <strong><code>/apps/settings/dam/adhocassetshare</code></strong> 
       <ol> 
-       <li>Como o destino está<strong> <code>/apps</code></strong> nessa alteração, deve ser mantido no SCM.</li> 
+       <li>Como o destino está em<strong> <code>/apps</code></strong>, essa alteração deve persistir no SCM.</li> 
       </ol> </li> 
      <li>Remova a pasta: <strong><code>/etc/dam/adhocassetshare</code></strong> após os modelos de e-mail dentro dele terem sido movidos.<br /> 
       <ol> 
-       <li>Se nenhuma atualização tiver sido feita no modelo de e-mail em<strong> , a pasta poderá ser removida, pois o modelo de e-mail original existe em <code>/etc</code></strong><strong><code>/libs/settings/dam/adhocassetshare</code></strong> como parte da instalação AEM 6.4.</li> 
+       <li>Se nenhuma atualização tiver sido feita no modelo de email em<strong> <code>/etc</code></strong>, a pasta poderá ser removida, pois o modelo original de email existe em <strong><code>/libs/settings/dam/adhocassetshare</code></strong> como parte da instalação AEM 6.4.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><strong>Notas</strong></td> 
-   <td>Embora <code>/conf/global/settings/dam/adhocassetshare</code> seja tecnicamente compatível com a pesquisa (ela tem prioridade antes <code>/apps</code> da pesquisa Sling CAConfig normal, mas depois <code>/etc</code>), o modelo pode ser colocado em <code>/conf/global/settings/dam/adhocassetshare</code>. No entanto, isso não é recomendado, pois não há interface do usuário do tempo de execução para facilitar a edição do modelo de email</td> 
+   <td>Embora <code>/conf/global/settings/dam/adhocassetshare</code> seja tecnicamente compatível com a pesquisa (ela tem precedência antes de <code>/apps</code> por meio da pesquisa Sling CAConfig normal, mas depois de <code>/etc</code>), o modelo pode ser colocado em <code>/conf/global/settings/dam/adhocassetshare</code>. No entanto, isso não é recomendado, pois não há interface do usuário do tempo de execução para facilitar a edição do modelo de email</td> 
   </tr> 
  </tbody> 
 </table>
 
-### Scripts do fluxo de trabalho do InDesign {#indesign-workflow-scripts}
+### Scripts de Fluxo de Trabalho de InDesign {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -219,11 +219,11 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
     <ol> 
      <li>Copiar todos os scripts personalizados ou modificados de <strong><code>/etc/dam/indesign/scripts</code></strong> para <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br /> 
       <ol> 
-       <li>Somente a cópia de scripts novos ou modificados como scripts não modificados fornecidos pelo AEM estará disponível <strong><code>/libs/settings</code></strong> no AEM 6.4</li> 
+       <li>Somente a cópia de scripts novos ou modificados como scripts não modificados fornecidos pelo AEM estará disponível via <strong><code>/libs/settings</code></strong> no AEM 6.4</li> 
       </ol> </li> 
      <li>Localize todos os modelos de fluxo de trabalho que usam a Etapa WF do processo de Extração de mídia e 
       <ol> 
-       <li>Para cada instância da Etapa do fluxo de trabalho, atualize os caminhos na configuração para apontar explicitamente para os scripts apropriados em<strong> ou <code>/apps/settings/dam/indesign/scripts</code></strong> <strong><code>/libs/settings/dam/indesign/scripts</code></strong> , conforme apropriado.</li> 
+       <li>Para cada instância da Etapa do fluxo de trabalho, atualize os caminhos na configuração para apontar explicitamente para os scripts apropriados em<strong> <code>/apps/settings/dam/indesign/scripts</code></strong> ou <strong><code>/libs/settings/dam/indesign/scripts</code></strong>, conforme apropriado.</li> 
       </ol> </li> 
      <li>Remova<strong> <code>/etc/dam/indesign/scripts</code></strong> completamente.</li> 
     </ol> </td> 
@@ -249,7 +249,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
   </tr> 
   <tr> 
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>As personalizações de nível de projeto precisam ser recortadas e coladas em caminhos equivalentes <code>/apps</code> ou <code>/conf</code> , conforme aplicável.</p> <p>Para alinhar com a estrutura do repositório AEM 6.4:</p> 
+   <td><p>As personalizações de nível de projeto precisam ser recortadas e coladas em caminhos equivalentes <code>/apps</code> ou <code>/conf</code>, conforme aplicável.</p> <p>Para alinhar com a estrutura do repositório AEM 6.4:</p> 
     <ol> 
      <li>Copiar quaisquer configurações de vídeo modificadas de <code>/etc/dam/video</code> para <code>/apps/settings/dam/video</code></li> 
      <li>Remover <code>/etc/dam/video</code></li> 
@@ -280,7 +280,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
     <ul> 
      <li>será necessário executar um script de migração para mover o nó de <code>/etc</code> para <code>/conf</code>. O script está localizado em <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>ou você pode editar a configuração e eles serão salvos automaticamente no novo local.</li> 
-    </ul> <p>Observe que não é necessário ajustar o copyURL/código incorporado para apontar para <code>/conf</code>. A solicitação existente para <code>/etc</code> será roteada novamente para o conteúdo correto de <code>/conf</code>.</p> </td> 
+    </ul> <p>Observe que não é necessário ajustar o código copyURL/embed para apontar para <code>/conf</code>. A solicitação existente para <code>/etc</code> será roteada novamente para o conteúdo correto de <code>/conf</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Notas</strong></td> 
@@ -289,7 +289,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
  </tbody> 
 </table>
 
-### Misc {#misc2}
+### Diversos {#misc2}
 
 <table> 
  <tbody> 
@@ -303,7 +303,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
   </tr> 
   <tr> 
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Ajuste quaisquer referências para apontar para os novos recursos em <code>/libs</code> uso do prefixo <code>/etc.clientlibs/</code> allow proxy.</p> <p>Finalmente, limpe removendo as pastas para os clientlibs migrados de <code>/etc/clientlibs/foundation/</code></p> </td> 
+   <td><p>Ajuste quaisquer referências para apontar para os novos recursos em <code>/libs</code> usando o prefixo <code>/etc.clientlibs/</code> allow proxy.</p> <p>Finalmente, limpe removendo as pastas para os clientlibs migrados de <code>/etc/clientlibs/foundation/</code></p> </td> 
   </tr> 
   <tr> 
    <td><strong>Notas</strong></td> 
