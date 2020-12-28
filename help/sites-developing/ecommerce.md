@@ -32,7 +32,7 @@ Para obter mais informações, consulte:
 
 >[!NOTE]
 >
->Como a estrutura de comércio eletrônico pode ser usada com qualquer solução de comércio eletrônico, consulte [Desenvolvimento (genérico)](/help/sites-developing/generic.md) para obter mais informações sobre o desenvolvimento de possibilidades com a Intershop, a Elastic Path ou o IBM Webphere Commerce.
+>Como a estrutura de comércio eletrônico pode ser usada com qualquer solução de comércio eletrônico, consulte [Desenvolvimento (genérico)](/help/sites-developing/generic.md) para obter mais informações sobre o desenvolvimento de possibilidades com o Intershop, a Elastic Path ou o IBM Webphere Commerce.
 
 >[!NOTE]
 >
@@ -46,9 +46,9 @@ A API eCommerce é fornecida pelos pacotes:
 
 `com.adobe.cq.commerce.*`
 
-Consulte a documentação [da](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) API para obter mais informações.
+Consulte a [documentação da API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) para obter mais informações.
 
 >[!NOTE]
 >
->Para obter um artigo completo detalhando todas as etapas para criar um provedor de comércio eletrônico, consulte [Criação de provedores](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)personalizados de comércio eletrônico Adobe Experience Manager 6.2.
+>Para obter um artigo completo detalhando todas as etapas para criar um provedor de comércio eletrônico, consulte [Criação de provedores de comércio eletrônico personalizados Adobe Experience Manager 6.2](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
 
