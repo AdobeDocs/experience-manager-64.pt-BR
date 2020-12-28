@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Extração de strings para tradução{#extracting-strings-for-translating}
+# Extraindo strings para tradução{#extracting-strings-for-translating}
 
 Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai strings para um arquivo XLIFF que você envia para tradução. As strings são extraídas dos seguintes locais:
 
@@ -100,7 +100,7 @@ Quando usado em um padrão, o caractere / indica um subdiretório e o &amp;ast; 
  </tbody> 
 </table>
 
-### Extração das strings  {#extracting-the-strings}
+### Extração das strings {#extracting-the-strings}
 
 sem POM:
 
@@ -137,7 +137,7 @@ mvn xgettext:extract
 ### Arquivos de saída {#output-files}
 
 * `raw.xliff`: strings extraídas
-* `warn.log`: avisos (se houver), se `CQ.I18n.getMessage()` a API for usada incorretamente. Eles sempre precisam de uma correção e depois de uma nova execução.
+* `warn.log`: avisos (se houver), se a  `CQ.I18n.getMessage()` API for usada incorretamente. Eles sempre precisam de uma correção e depois de uma nova execução.
 
 * `parserwarn.log`: avisos do analisador (se houver), por exemplo, problemas com o analisador js
 * `potentials.xliff`: Candidatos &quot;potenciais&quot; que não são extraídos, mas podem ser strings legíveis para humanos que precisam de tradução (podem ser ignorados, ainda produzem uma enorme quantidade de falsos positivos)
