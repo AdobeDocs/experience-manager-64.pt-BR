@@ -36,14 +36,16 @@ Esse documento descreve os vários elementos que compõem as campanhas. Informa�
 
 O gerenciamento de campanhas é composto de vários elementos:
 
-* **Brands**
-In AEM, brands are the top level unit and form a collection of 
+* ****
+MarcasNo AEM, as marcas são a unidade de nível superior e formam uma coleção de 
 **Campanhas**.
 
-* **Campanhas** Uma campanha é uma coleção de indivíduos 
+* ****
+CampanhasUma campanha é uma coleção de 
 **Experiências**.
 
-* **Experiências** O conteúdo focado forma as várias experiências, apresentadas ao visitante em 
+* ****
+ExperiênciasO conteúdo direcionado forma as várias experiências, apresentadas ao visitante em 
 **Pontos de contato**. Existem vários tipos de experiências disponíveis:
 
    * **Teasers**
@@ -58,7 +60,7 @@ In AEM, brands are the top level unit and form a collection of
 
    * **Boletins informativos**
 
-      [As Comunicações](#emailmarketing) por email são usadas para envolver usuários e encorajá-los a visitar seu site. Elas geralmente assumem o formato de um informativo, enviado aos seus **Leads** (que geralmente estão agrupados em **Listas**). **Observação:** a Adobe não planeja aprimorar mais esse recurso. A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+      [As ](#emailmarketing) Comunicações por email são usadas para engajar os usuários e incentivá-los a visitar seu site. Elas geralmente assumem o formato de um informativo, enviado aos seus **Leads** (que geralmente estão agrupados em **Listas**). **Observação:** a Adobe não planeja aprimorar mais esse recurso. A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -91,7 +93,7 @@ In AEM, brands are the top level unit and form a collection of
 
    O Marketing Campaign Manager (MCM) é um console que permite acessar todas as funcionalidades necessárias para criar e controlar campanhas, marcas, experiências, pontos de interação, leads, listas, segmentos e relatórios.
 
-   It can be accessed from various locations (labelled as **Campaigns**), or with, for example, the URL:
+   Ele pode ser acessado de vários locais (rotulado como **Campanha**) ou com, por exemplo, o URL:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
 
