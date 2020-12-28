@@ -58,13 +58,13 @@ As práticas recomendadas referentes ao Assets, incluindo o recurso de mídia di
   </tr>
   <tr>
    <td>Opções predefinidas de imagem</td> 
-   <td>Noções básicas sobre predefinições <a href="/help/assets/managing-image-presets.md#understanding-image-presets">de</a> imagens e práticas recomendadas de predefinição de <a href="/help/assets/managing-image-presets.md#image-preset-options">imagens</a></td> 
-   <td>Como parte da documentação sobre como <a href="/help/assets/managing-image-presets.md">Gerenciar predefinições</a>de imagens, esses tópicos descrevem quais são as predefinições de imagens e as práticas recomendadas para selecionar as opções predefinidas de imagens.</td> 
+   <td>Noções básicas sobre <a href="/help/assets/managing-image-presets.md#understanding-image-presets">predefinições de imagens</a> e <a href="/help/assets/managing-image-presets.md#image-preset-options">práticas recomendadas de predefinições de imagens</a></td> 
+   <td>Como parte da documentação sobre <a href="/help/assets/managing-image-presets.md">Gerenciar predefinições de imagens</a>, esses tópicos descrevem quais são as predefinições de imagens e as práticas recomendadas para selecionar as opções predefinidas de imagens.</td> 
   </tr>
   <tr>
-   <td>Dynamic Media versus integração direta com o Scene7</td> 
+   <td>Dynamic Media versus integração direta com Scene7</td> 
    <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integração Scene7/AEM versus Dynamic Media</a></td> 
-   <td>Descreve quando é melhor usar a solução Dynamic Media, quando integrar o S7 com o AEM ou quando usar ambos.</td> 
+   <td>Descreve quando é melhor usar a solução Dynamic Media, quando integrar o S7 ao AEM ou quando usar ambos.</td> 
   </tr>
  </tbody>
 </table>
@@ -103,7 +103,7 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
   <tr>
    <td>Fluxos de trabalhos</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Práticas recomendadas de fluxo de trabalho - Configuração</a></td> 
-   <td>Os Workflows permitem que você automatize as atividades Adobe Experience Manager (AEM) e podem representar uma grande parte do processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar e configurar as implementações dos workflows com cuidado.</td> 
+   <td>Os workflows permitem que você automatize as atividades Adobe Experience Manager (AEM) e podem representar uma grande parte do processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar e configurar as implementações dos workflows com cuidado.</td> 
   </tr>
  </tbody>
 </table>
