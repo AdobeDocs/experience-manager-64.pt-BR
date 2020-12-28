@@ -2,7 +2,7 @@
 title: Testar aplicativos móveis
 seo-title: Testar aplicativos móveis
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Dada a grande variedade de dispositivos no mercado e dispositivos sendo lançados, testar seus aplicativos se tornou extremamente importante. Essa é uma área em que a funcionalidade e a usabilidade podem ganhar baixas revisões em uma app store, mas um único defeito pode resultar na desinstalação do aplicativo. É necessário prestar especial atenção aos seus planos de testes e à garantia da qualidade. O link a seguir aborda muitos dos tópicos que precisam ser abordados em geral, como identificar seu ambiente, definir casos de teste, tipos de testes, pressuposições, envolvimento do cliente etc. Também são discutidas ferramentas para ajudar no esforço de teste. Ferramentas internas, como o [Hobbes](/help/sites-developing/hobbes.md), podem ajudar com testes de interface baseados na Web. [O Dia](/help/sites-developing/tough-day.md) difícil pode estressar suas instâncias com uma carga simulada. Se seu ambiente de teste já tiver experiência com ferramentas de terceiros, como Selenium, elas também podem ser usadas.
+Dada a grande variedade de dispositivos no mercado e dispositivos sendo lançados, testar seus aplicativos se tornou extremamente importante. Essa é uma área em que a funcionalidade e a usabilidade podem ganhar baixas revisões em uma app store, mas um único defeito pode resultar na desinstalação do aplicativo. É necessário prestar especial atenção aos seus planos de testes e à garantia da qualidade. O link a seguir aborda muitos dos tópicos que precisam ser abordados em geral, como identificar seu ambiente, definir casos de teste, tipos de testes, pressuposições, envolvimento do cliente etc. Também são discutidas ferramentas para ajudar no esforço de teste. Ferramentas internas, como [Hobbes](/help/sites-developing/hobbes.md), podem ajudar com testes de interface de usuário baseados na Web. [Duro ](/help/sites-developing/tough-day.md) Daycan enfatize suas instâncias com uma carga simulada. Se seu ambiente de teste já tiver experiência com ferramentas de terceiros, como Selenium, elas também podem ser usadas.
 
 Ao desenvolver um aplicativo para dispositivos móveis, há muitas preocupações novas específicas aos dispositivos que precisam ser abordadas junto com os de testes tradicionais.
 
@@ -47,7 +47,7 @@ Alguns graus de teste automatizado devem ser executados para abranger a variedad
 
 ## Teste manual {#manual-testing}
 
-Além dos testes automatizados, seu aplicativo deve passar por um ciclo de testes manuais. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui também, você tem muitas opções. Você pode usar uma plataforma, como HóqueiApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não houver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte o site do [PhoneGap](https://phonegap.com/) para obter os recursos e a documentação mais recentes. Seja qual for a abordagem, os ensaios manuais devem ser efetuados;
+Além dos testes automatizados, seu aplicativo deve passar por um ciclo de testes manuais. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui também, você tem muitas opções. Você pode usar uma plataforma, como HóqueiApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não houver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte o site [PhoneGap](https://phonegap.com/) para obter os recursos e a documentação mais recentes. Seja qual for a abordagem, os ensaios manuais devem ser efetuados;
 
 * atingir um grande público alvo de testadores.
 * testar em relação a um grande conjunto de dispositivos (idealmente dispositivos reais, mas simuladores/emuladores se não existirem dispositivos reais),
