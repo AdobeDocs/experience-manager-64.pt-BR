@@ -60,7 +60,7 @@ No momento, o modo de Edição local está habilitado para elementos de página 
 
 ## Recursos do Editor de Rich Text {#features-of-the-rich-text-editor}
 
-The Rich Text Editor provides a range of featues, these [depend on the configuration](/help/sites-administering/rich-text-editor.md) of the individual component. The features are available for both the touch-optimized and classic UI.
+O Editor de Rich Text fornece vários recursos, esses [dependem da configuração](/help/sites-administering/rich-text-editor.md) do componente individual. Os recursos estão disponíveis para a interface otimizada ao toque e clássica.
 
 ### Formatos básicos de caracteres {#basic-character-formats}
 
@@ -184,7 +184,7 @@ Uma caixa de diálogo permitirá que você especifique a URL de destino; e se de
 
 >[!NOTE]
 >
->A URL pode ser anexada a quaisquer protocolos configurados para sua instalação. In a standard installation these are `https://`, `ftp://`, and `mailto:`. Os protocolos não configurados para sua instalação são rejeitados e marcados como inválidos.
+>A URL pode ser anexada a quaisquer protocolos configurados para sua instalação. Em uma instalação padrão, eles são `https://`, `ftp://` e `mailto:`. Os protocolos não configurados para sua instalação são rejeitados e marcados como inválidos.
 
 
 Para quebrar o link, coloque o cursor em qualquer lugar no texto do link e clique no ícone **Desvincular**:
@@ -259,7 +259,7 @@ As tabelas estão disponíveis:
 
    >[!NOTE]
    >
-   >Although tables are available in the RTE, it is recommended to use the **Table** component when creating tables.
+   >Embora as tabelas estejam disponíveis no RTE, recomenda-se usar o componente **Table** ao criar tabelas.
 
 Nos componentes **Texto** e **Tabela** a funcionalidade de tabela está disponível por meio do menu de contexto (normalmente, o botão direito do mouse) clicado na tabela; por exemplo:
 
@@ -303,7 +303,7 @@ As funções específicas da tabela são:
  </tbody> 
 </table>
 
-#### Propriedades da tabela {#table-properties}
+#### Propriedades da tabela  {#table-properties}
 
 ![cq55_rte_tableproperties_icon](assets/cq55_rte_tableproperties_icon.png)
 
@@ -353,9 +353,9 @@ As propriedades de uma célula específica ou a série de células, podem ser co
 
 * **Largura**
 * **Altura**
-* **Alinhamento** horizontal - Esquerda, Centro ou Direita
-* **Alinhamento** vertical - Parte superior, Meio, Parte inferior ou Linha de base
-* **Tipo** de célula - Dados ou cabeçalho
+* **Alinhamento**  horizontal - Esquerda, Centro ou Direita
+* **Alinhamento**  vertical - Parte superior, Meio, Parte inferior ou Linha de base
+* **Tipo**  de célula - Dados ou cabeçalho
 * **Aplicar a:**
    * Célula única
    * Linha inteira
@@ -385,7 +385,7 @@ Seleciona toda a linha ou coluna atual. As ações específicas (por exemplo, me
 
 #### Mesclar células {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Caso tenha selecionado um grupo de células, você pode mesclá-las em uma.
 * Caso tenha apenas uma célula selecionada, então você pode mesclá-la com a célula à direita ou abaixo.
