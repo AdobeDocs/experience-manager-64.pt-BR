@@ -36,7 +36,7 @@ Ao criar a configuração, especifique um título. O título deve ser descritivo
 1. Digite um título para a configuração. Opcionalmente, digite um nome para o nó usado para armazenar a configuração no repositório. Clique em Criar.
 1. Na caixa de diálogo Configuração do BrightEdge Content Otimizer, digite o nome de usuário e a senha da conta BrightEdge e clique em OK.
 
-## Edição de uma configuração do BrightEdge {#editing-a-brightedge-configuration}
+## Editando uma Configuração do BrightEdge {#editing-a-brightedge-configuration}
 
 Modifique o nome de usuário e a senha de uma configuração do BrightEdge, quando necessário. As modificações afetam todas as páginas que usam a configuração.
 
@@ -60,7 +60,7 @@ Associe páginas a uma configuração do BrightEdge para enviar dados de página
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-## Ativando uma configuração do BrightEdge {#activating-a-brightedge-configuration}
+## Ativando uma Configuração do BrightEdge {#activating-a-brightedge-configuration}
 
 Ative uma configuração do BrightEdge para replicá-la na instância de publicação e para permitir que as páginas publicadas interajam com o serviço BrightEdge.
 
