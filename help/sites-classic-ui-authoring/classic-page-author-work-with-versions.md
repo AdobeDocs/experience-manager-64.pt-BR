@@ -36,8 +36,8 @@ Para criar uma nova versão de uma página:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Insira um **Comentário** (opcional).
-1. To set a label to the version (optional), click the **More >>** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. Uma mensagem acinzentada é exibida na página; por exemplo:
+1. Para definir um rótulo para a versão (opcional), clique no botão **Mais >>** e defina o **Rótulo** para nomear a versão. Se o rótulo não estiver definido, a versão será um número incrementado automaticamente.
+1. Clique em **Criar versão**. Uma mensagem acinzentada é exibida na página; por exemplo:
 
    Versão 1.2 criada para: Camisas.
 
@@ -45,7 +45,7 @@ Para criar uma nova versão de uma página:
 >
 >Uma versão é criada automaticamente quando a página é ativada.
 
-## Restaurar uma versão de página do sidekick {#restoring-a-page-version-from-sidekick}
+## Restaurar uma versão de página do sidekick  {#restoring-a-page-version-from-sidekick}
 
 Para restaurar a página para uma versão anterior:
 
@@ -71,7 +71,7 @@ Esse método pode ser usado para restaurar uma versão de página. Também pode 
 
 1. Selecione a versão que você deseja restaurar e clique em **Restaurar**. O AEM restaura as versões (ou árvores) que você selecionar.
 
-### Restaurar uma árvore a partir do console {#restoring-a-tree-from-the-console}
+### Restaurar uma árvore a partir do console  {#restoring-a-tree-from-the-console}
 
 Esse método pode ser usado para restaurar uma versão de página. Também pode ser usado para restaurar páginas que foram excluídas anteriormente:
 
@@ -83,12 +83,12 @@ Esse método pode ser usado para restaurar uma versão de página. Também pode 
 
 1. Clique em **Restaurar**. O AEM restaura a árvore selecionada.
 
-## Comparar com uma versão anterior {#comparing-with-a-previous-version}
+## Comparar com uma versão anterior  {#comparing-with-a-previous-version}
 
 Para comparar a versão atual da página com uma versão anterior:
 
 1. No seu navegador, abra a página com a qual você deseja comparar uma versão anterior.
-1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio** n sub tab.
+1. No Sidekick, selecione a guia **Controle de versão**, em seguida, a subguia **Restaurar versão** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -99,11 +99,11 @@ Para comparar a versão atual da página com uma versão anterior:
    * O texto que foi adicionado é verde e destacado.
    * As imagens que foram adicionadas ou excluídas são contornadas por uma borda verde.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
 1. No Sidekick, selecione a subguia **Restaurar versão** e clique no botão **&lt;&lt;Voltar** para exibir a versão atual.
 
-## Timewarp   {#timewarp}
+## Timewarp    {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado ***publicado*** de uma página em ocasiões específicas no passado.
 
@@ -120,7 +120,7 @@ Para fazer isso:
 >
 >Se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta. Além disso, se os elementos (como código, css, imagens etc) para renderização do website forem alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório.
 
-### Using the Timewarp Calendar {#using-the-timewarp-calendar}
+### Using the Timewarp Calendar  {#using-the-timewarp-calendar}
 
 O Timewarp está disponível no sidekick.
 
@@ -128,7 +128,7 @@ A versão do calendário será usada se você tiver um dia específico a ser exi
 
 1. Abra a guia **Controle de versão** e clique em **Timewarp** (perto da parte inferior do sidekick). A seguinte caixa de diálogo será mostrada:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
 1. Use os seletores de data e hora para especificar a data/hora desejados e clique em **Ir**.
 
@@ -175,7 +175,7 @@ Se você quiser exibir a linha do tempo do documento:
       Quando uma página for ativada, uma nova linha será iniciada. Cada vez que o documento é editado, uma nova cor aparece.
 
       No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial e a linha amarela indica que a página foi editada em algum momento durante a versão vermelha etc.
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+   ![chlimage_1-189](assets/chlimage_1-109.png)
 
 1. Clique em:
 
