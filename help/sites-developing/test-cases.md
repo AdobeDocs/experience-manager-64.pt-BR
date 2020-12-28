@@ -55,13 +55,15 @@ Ao testar AEM alguns detalhes específicos são de especial interesse:
 
 Ambientes de autor e publicação
 
-Embora esteja coberto em [Ambientes](/help/sites-developing/the-basics.md#environments) , vale a pena destacar um fator decisivo de AEM no que diz respeito aos testes.
+Embora esteja coberto em [Ambientes](/help/sites-developing/the-basics.md#environments), vale a pena destacar um fator decisivo de AEM em relação aos testes.
 
 Você deve considerar AEM como duas aplicações:
 
-* ambiente do **autor** Essa instância permite que os autores insiram e publiquem conteúdo.
+* o ambiente **Author**
+Essa instância permite que os autores insiram e publiquem conteúdo.
 Isso tem um conjunto pequeno e previsível de usuários, para os quais a funcionalidade e o desempenho específicos são fundamentais.
-* o ambiente de **publicação** Essa instância apresenta o site em seu formulário publicado para acesso de visitantes.
+* o ambiente **Publicar**
+Esta instância apresenta o site em seu formulário publicado para acesso de visitantes.
 Isso geralmente tem um conjunto maior de usuários, onde o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é crucial - ao responder às solicitações. O armazenamento em cache e o balanceamento de carga também devem ser considerados.
 
 Embora o mesmo software como tal, eles:
@@ -88,9 +90,11 @@ O teste é difícil (o armazenamento em cache ocorre em vários níveis e em vá
 
 * **Precisão**; verifique se as atualizações de conteúdo são vistas pelo visitante do site.
 * **Continuidade**; verifique se o site ainda está disponível quando um servidor é desligado.
-* **Os clusters** são usados para fornecer:
-   * **Failover** Se um servidor falhar, outros servidores no cluster assumirão o processamento.
-   * **O balanceamento de** carga de desempenho com failover completo aumenta o desempenho de um cluster.
+* **Os** ClustersClusters são usados para fornecer:
+   * ****
+FailoverSe um servidor falhar, outros servidores no cluster assumirão o processamento.
+   * **O balanceamento**
+PerformanceLoad com failover completo aumenta o desempenho de um cluster.
 
 Quando usado para um projeto do cliente, o cluster deve ser testado para confirmar a operação correta da configuração.
 
