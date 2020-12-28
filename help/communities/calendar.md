@@ -41,7 +41,7 @@ Para obter as informações necessárias, visite [Informações básicas sobre c
 
 Quando as [bibliotecas obrigatórias do lado do cliente](calendar-basics-for-developers.md#essentials-for-client-side) forem incluídas, o componente `Calendar` aparecerá desta forma.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-192](assets/chlimage_1-112.png)
 
 ### Configuração do calendário {#configuring-calendar}
 
