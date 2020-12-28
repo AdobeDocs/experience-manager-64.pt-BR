@@ -69,10 +69,10 @@ As práticas recomendadas referentes ao Assets, incluindo o recurso de mídia di
 
 O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas recomendadas descritas a seguir:
 
-Criação: [ambiente e ferramentas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) do autor - fornece uma visão geral sobre como criar páginas.
+Criação: [ambiente e ferramentas do autor](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornece uma visão geral sobre como criar páginas.
 
 ## Forms {#forms}
 
-Formulários adaptativos: [Práticas recomendadas para trabalhar com formulários](/help/forms/using/adaptive-forms-best-practices.md) adaptáveis - descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptáveis.
+Formulários adaptativos: [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md) - Descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptativos.
 
-Formulários HTML5: [Práticas recomendadas para a criação de formulários](/help/forms/using/best-practices-for-html5-forms.md) HTML5 - descreve as práticas recomendadas para trabalhar com layout e design de formulários HTML5.
+Formulários HTML5: [Práticas recomendadas para criar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descreve as práticas recomendadas para trabalhar no layout e no design de formulários HTML5.
