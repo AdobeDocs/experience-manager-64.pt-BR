@@ -18,7 +18,7 @@ ht-degree: 79%
 ---
 
 
-# Adding Search&amp;Promote features to your page{#adding-search-promote-features-to-your-page}
+# Adicionar recursos de Search &amp; Promote à sua página{#adding-search-promote-features-to-your-page}
 
 Para integrar recursos do Search&amp;Promote ao seu site, use os componentes do Search&amp;Promote para adicionar os seguintes recursos às suas páginas:
 
@@ -31,5 +31,5 @@ Observe que é possível usar os recursos do Search&amp;Promote somente se o adm
 
 >[!NOTE]
 >
->Os detalhes sobre como adicionar os recursos do Search&amp;Promote à sua página estão disponíveis na documentação de criação da interface clássica. See [Adding Search &amp; Promote features to your page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) for more information.
+>Os detalhes sobre como adicionar os recursos do Search&amp;Promote à sua página estão disponíveis na documentação de criação da interface clássica. Consulte [Adicionar recursos do Search &amp; Promote à sua página](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) para obter mais informações.
 
