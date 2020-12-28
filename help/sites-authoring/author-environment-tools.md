@@ -48,7 +48,7 @@ Você pode editar uma página com o editor de páginas. Por exemplo:
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
-* o seletor [**Informações da página **](/help/sites-authoring/editing-page-properties.md#page-properties); isso mostrará os slides de introdução (como na primeira vez que você acessa o editor).
+* o seletor [**Informações da página**](/help/sites-authoring/editing-page-properties.md#page-properties); isso mostrará os slides de introdução (como na primeira vez que você acessa o editor).
 * a caixa de diálogo [Configuração](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para componentes específicos (usando o ícone ? na barra de ferramentas da caixa de diálogo); isso mostrará a ajuda sensível ao contexto.
 
 Mais [recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-authoring/basic-handling.md#accessing-help).
@@ -269,13 +269,13 @@ As Informações da página (ícone de equalizador) abrem um menu que também fo
 Por exemplo, quando apropriado, **Informações da página** também terá as opções:
 
 * [Promover lançamento](/help/sites-authoring/launches-promoting.md) se a página for um lançamento.
-* [Editar modelo](/help/sites-authoring/templates.md) se a página for baseada em um modelo [editável](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Editar ](/help/sites-authoring/templates.md) modelo se a página for baseada em um modelo  [editável](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [Abrir na interface do usuário](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) clássica se essas opções tiverem sido [ativadas por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir na ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface clássica se essas opções tiverem sido  [ativadas por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Além disso, **Informações da página** pode fornecer acesso ao Analytics e a recomendações, quando apropriado.
 
-## Modos de página   {#page-modes}
+## Modos de página    {#page-modes}
 
 Há vários modos ao editar uma página, o que permite ações diferentes:
 
@@ -315,7 +315,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 
 Ao criar, geralmente é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou ao selecionar uma imagem. Para selecionar um caminho com facilidade, os [campos de caminho](/help/sites-authoring/author-environment-tools.md#path-fields) oferecem o recurso de completar automaticamente, e o [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) permite uma seleção mais robusta.
 
-### Campos de caminho   {#path-fields}
+### Campos de caminho    {#path-fields}
 
 Para ilustração, o exemplo usado aqui é o componente de imagem. Para obter mais informações sobre como usar e editar componentes, consulte [Componentes para criação de página](/help/sites-authoring/default-components.md).
 
