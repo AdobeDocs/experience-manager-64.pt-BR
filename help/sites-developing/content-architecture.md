@@ -26,7 +26,7 @@ O Modelo de David foi escrito por David Nuescheler anos atrás, mas as ideias s�
 
 * Os dados vêm primeiro, depois a estrutura. Talvez.
 * Direcione a hierarquia de conteúdo, não deixe que isso aconteça.
-* Os espaços de trabalho são para `clone()`, `merge()`e `update()`.
+* Os espaços de trabalho são para `clone()`, `merge()` e `update()`.
 * Cuidado com o mesmo nome de irmãos.
 * As referências são consideradas prejudiciais.
 * Arquivos são arquivos.
@@ -38,7 +38,7 @@ O modelo de David pode ser encontrado no wiki do Jackrabbit em [https://wiki.apa
 
 Tudo deve ser armazenado no repositório em vez de depender de fontes de dados de terceiros separadas, como bancos de dados. Isso se aplica ao conteúdo criado, aos dados binários, como imagens, código, configurações etc. Isso nos permite usar um conjunto de APIs para gerenciar todo o conteúdo e gerenciar a promoção desse conteúdo por meio da replicação. Também ganhamos uma única fonte de backup, registro, etc.
 
-### Usar o princípio de design &quot;content model first&quot; {#use-the-content-model-first-design-principle}
+### Use o princípio de design &quot;content model first&quot; {#use-the-content-model-first-design-principle}
 
 Ao criar um novo recurso, sempre faça start ao projetar a estrutura de conteúdo JCR primeiro e, em seguida, procure ler e gravar seu conteúdo usando os servlets Sling padrão. Isso permitirá garantir que sua implementação funcione bem com mecanismos de controle de acesso prontos para uso e permitirá evitar a geração de servlets desnecessários ao estilo CRUD.
 
