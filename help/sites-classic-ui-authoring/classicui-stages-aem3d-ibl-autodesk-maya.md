@@ -26,23 +26,23 @@ ht-degree: 80%
 1. Configure a iluminação baseada em imagem.
 
    1. Em Configurações de renderização, selecione **[!UICONTROL Renderizar usando: mental ray]** e abra a guia Cena.****
-   1. Open the **[!UICONTROL Environment]** accordion, then click **[!UICONTROL Create Image Based Lighting]**.
+   1. Abra a opção **[!UICONTROL Ambiente]** e clique em **[!UICONTROL Criar luz baseada em imagem]**.
    1. Clique no ícone de caixa que tem uma seta para a direita no lado esquerdo da caixa para selecionar o nó IBL `mentalRayIblShape1`[!UICONTROL . Em seguida, saia das Configurações de renderização].
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. No **[!UICONTROL Editor de atributos]**, selecione o nó de transformação `mentalRayIbl1` e, em seguida, renomeie o nó de transformação para `AdobeIbl`.
 
-   1. Set the [!UICONTROL Scale] of the node to make the environment sphere significantly larger than the largest 3D object to be shown with this stage (for example, `10000,10000,10000`).
+   1. Defina [!UICONTROL Escala] do nó para tornar a esfera de ambiente significativamente maior do que o maior objeto 3D a ser exibido com este estágio (por exemplo, `10000,10000,10000`).
    1. Selecione o nó `AdobeIblShape` e configure-o da seguinte maneira:
 
       * **[!UICONTROL Mapeamento]** - Esférico
       * **[!UICONTROL Tipo]** - Arquivo de imagem
       * **[!UICONTROL Emitir luz]** - verdadeiro
-   1. Attach the desired 32-bit TIFF image to the `AdobeIbl` node.
+   1. Anexe a imagem TIFF de 32 bits desejada ao nó `AdobeIbl`.
 
 
 1. Configure o plano base.
 
    * Crie um plano adequado para usar como plano base e dimensione-o para caber razoavelmente dentro da esfera IBL, passando pela origem das coordenadas.
-   * Attach a **[!UICONTROL Use Background]** material to the ground plane and name it `AdobeUseBackground` and attach it to the ground plane object.
+   * Coloque um material **[!UICONTROL Use Background]** no plano de solo e o nomeie `AdobeUseBackground` e conecte-o ao objeto do plano de solo.
 
 1. (Opcional) Crie e configure câmeras.
 
@@ -50,17 +50,17 @@ ht-degree: 80%
 
 1. Configure a renderização com o Mental Ray.
 
-   Configure the [!UICONTROL Render Settings] with the following suggestions.
+   Configure [!UICONTROL Configurações de renderização] com as seguintes sugestões.
 
-   * **[!UICONTROL Guia Comum]**
+   * **[!UICONTROL guia]** Comandos
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Desmarque a caixa de seleção **[!UICONTROL canal alfa (máscara)]** para todas as câmeras renderizáveis.
 
    * **[!UICONTROL Guia Qualidade]**
 
       * **[!UICONTROL Qualidade geral]** `0.5`-   ou menos
-      * **[!UICONTROL Modo]** de Difusão Indireta (GI) - `Final Gather`
-      * **[!UICONTROL Tamanho]** do filtro - `2.0`, `2.0`
+      * **[!UICONTROL Modo]**  de Difusão Indireta (GI) -  `Final Gather`
+      * **[!UICONTROL Tamanho]**  do filtro -  `2.0`,  `2.0`
    * Renderize a cena nos tamanhos de imagem típicos que você espera usar. Se necessário, refine as luzes, ou as Configurações de renderização, ou faça as duas coisas para obter os resultados desejados.
 
       Esteja ciente de que a renderização com o Mental Ray, usando a iluminação baseada em imagem, é muito lenta e exige muita CPU. A Adobe recomenda que você defina as configurações de qualidade mais baixas que ainda sejam capazes de produzir a qualidade de renderização desejada.
