@@ -1,8 +1,8 @@
 ---
 title: Status do recurso da interface de toque
 seo-title: Status do recurso da interface de toque
-description: Notas de versão específicas da interface do usuário para toque do Adobe Experience Manager 6.3.
-seo-description: Notas de versão específicas da interface do usuário para toque do Adobe Experience Manager 6.3.
+description: Notas de versão específicas da interface de usuário para toque Adobe Experience Manager 6.3.
+seo-description: Notas de versão específicas da interface de usuário para toque Adobe Experience Manager 6.3.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 14%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
 
 >[!CAUTION]
 >
->Com a versão 6.4 do AEM, a interface do usuário [clássica está obsoleta](/help/release-notes/deprecated-removed-features.md).  A Adobe não pretende fazer mais aprimoramentos na interface clássica e os usuários são incentivados a aproveitar os novos recursos avançados disponíveis na interface habilitada para toque.
+>Com a versão 6.4 do AEM, a [interface clássica está obsoleta](/help/release-notes/deprecated-removed-features.md). O Adobe não pretende fazer mais aprimoramentos na interface clássica e os usuários são incentivados a aproveitar os novos recursos avançados disponíveis na interface habilitada para toque.
 
-A partir da versão 6.0, o AEM introduziu uma nova interface de usuário chamada de &quot;interface habilitada para toque&quot; (também conhecida como &quot;interface de usuário para toque&quot;) que está alinhada à Adobe Marketing Cloud e às diretrizes gerais da interface de usuário da Adobe. Com a quase partição de recursos atingida, essa interface se tornou a interface padrão no AEM com a interface legada orientada para desktop chamada de &quot;interface clássica&quot;.
+A partir da versão 6.0, AEM introduziu uma nova interface de usuário chamada de &quot;interface habilitada para toque&quot; (também conhecida como &quot;interface de usuário para toque&quot;) que está alinhada ao Adobe Marketing Cloud e às diretrizes gerais da interface de usuário do Adobe. Com a quase partição de recursos atingida, essa interface se tornou a interface padrão em AEM com a interface legada orientada para desktop chamada de &quot;interface clássica&quot;.
 
 Embora a maioria dos recursos esteja presente na interface habilitada para toque, há recursos que ainda não estão completos e serão adicionados em versões futuras.
 
-A lista a seguir mostra o status atual dos recursos conforme implementados no AEM 6.4.
+A lista a seguir mostra o status atual dos recursos conforme implementado no AEM 6.4.
 
-Para obter recomendações para clientes que atualizam para o AEM 6.4, consulte Recomendações da interface [do usuário para clientes](/help/sites-deploying/ui-recommendations.md) para obter detalhes.
+Para obter recomendações para clientes que atualizam para AEM 6.4, consulte [Interface do usuário Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) para obter detalhes.
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ Para obter recomendações para clientes que atualizam para o AEM 6.4, consulte 
 
 >[!NOTE]
 >
->Esta lista procura ser completa, mas não deve ser considerada exaustiva.
+>Essa lista se esforça para ser completa, mas não deve ser considerada exaustiva.
 
 ## Legenda {#legend}
 
@@ -49,7 +52,7 @@ Para obter recomendações para clientes que atualizam para o AEM 6.4, consulte 
 
 ## Status do recurso: Administrador de sites {#feature-status-sites-admin}
 
-Esta é uma lista de recursos que o Administrador do site da interface clássica ( `/siteadmin`) tem e o status na interface habilitada para toque ( `/sites.html`).
+Esta é uma lista de recursos que o administrador do site da interface clássica ( `/siteadmin`) tem e o status na interface habilitada para toque ( `/sites.html`).
 
 <table> 
  <tbody>
@@ -61,7 +64,7 @@ Esta é uma lista de recursos que o Administrador do site da interface clássica
   <tr>
    <td>Navegar pela Hierarquia do Site</td> 
    <td>Concluir<br /> </td> 
-   <td>O AEM 6.4 apresentou uma visualização <a href="/help/sites-authoring/basic-handling.md#content-tree">em árvore de</a>conteúdo.</td> 
+   <td>AEM 6.4 introduziu uma visualização de <a href="/help/sites-authoring/basic-handling.md#content-tree">árvore de conteúdo</a>.</td> 
   </tr>
   <tr>
    <td>Iniciar fluxo de trabalho</td> 
@@ -99,12 +102,12 @@ Esta é uma lista de recursos que o Administrador do site da interface clássica
    <td> </td> 
   </tr>
   <tr>
-   <td>Pesquisar </td> 
+   <td>Pesquisar  </td> 
    <td>Concluir<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Página Copiar/Colar (Duplicar)</td> 
+   <td>Página Copiar/Colar (Duplicado)</td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
@@ -159,7 +162,7 @@ Esta é uma lista de recursos que o Administrador do site da interface clássica
    <td> </td> 
   </tr>
   <tr>
-   <td>Exibir/editar propriedades</td> 
+   <td>Propriedades de visualização/edição</td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
@@ -200,7 +203,7 @@ Esta é uma lista de recursos que o Administrador do site da interface clássica
   </tr>
   <tr>
    <td>Localizar e Substituir</td> 
-   <td>Missing<br /> </td> 
+   <td>Falta<br /> </td> 
    <td>Use a interface clássica.</td> 
   </tr>
   <tr>
@@ -216,7 +219,7 @@ Esta é uma lista de recursos que o Administrador do site da interface clássica
  </tbody>
 </table>
 
-## Status do recurso: Editor de página {#feature-status-page-editor}
+## Status do recurso: Editor de páginas {#feature-status-page-editor}
 
 Esta é uma lista de recursos que o Editor de página da interface clássica ( `/cf#`) tem e o status na interface habilitada para toque ( `/editor.html`).
 
@@ -253,27 +256,27 @@ Esta é uma lista de recursos que o Editor de página da interface clássica ( `
    <td> </td> 
   </tr>
   <tr>
-   <td>Editar formulários</td> 
+   <td>Editar Forms</td> 
    <td>Concluir<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Editar ofertas</td> 
+   <td>Editar Ofertas</td> 
    <td>Concluir<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Editar Modelos de Fluxos de Trabalho<br /> </td> 
+   <td>Editar modelos de Workflows<br /> </td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Código: Editar e visualizar</td> 
+   <td>Código: Editar e Pré-visualização</td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Visualização responsiva<br /> </td> 
+   <td>Pré-visualização responsiva<br /> </td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
@@ -308,7 +311,7 @@ Esta é uma lista de recursos que o Editor de página da interface clássica ( `
    <td> </td> 
   </tr>
   <tr>
-   <td>Iniciar e mostrar fluxo de trabalho</td> 
+   <td>Start e mostrar fluxo de trabalho</td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
@@ -340,7 +343,7 @@ Esta é uma lista de recursos que o Editor de página da interface clássica ( `
   <tr>
    <td>Mover página</td> 
    <td>Removido</td> 
-   <td>Use o Administrador do site para <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">mover páginas</a>.<br /> </td> 
+   <td>Use o Administrador do Site para <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">mover páginas</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Excluir página</td> 
@@ -350,12 +353,12 @@ Esta é uma lista de recursos que o Editor de página da interface clássica ( `
   <tr>
    <td>Mostrar referências</td> 
    <td>Removido</td> 
-   <td>Use o Administrador do site para <a href="/help/sites-authoring/author-environment-tools.md#references">ver a lista</a>de referência detalhada.<br /> </td> 
+   <td>Use o Administrador do site para <a href="/help/sites-authoring/author-environment-tools.md#references">ver a lista de referência detalhada</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Log de auditoria</td> 
    <td>Removido</td> 
-   <td>Use o Administrador do site e <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">abra o painel</a>de atividades.<br /> </td> 
+   <td>Use o Administrador do site e <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">abrir o painel de atividade</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Criar versão</td> 
@@ -370,12 +373,12 @@ Esta é uma lista de recursos que o Editor de página da interface clássica ( `
   <tr>
    <td>Interromper inicializações</td> 
    <td>Removido</td> 
-   <td>Use o Administrador do site para <a href="/help/sites-authoring/launches-promoting.md">alternar entre inicializações</a>.<br /> </td> 
+   <td>Use o Administrador do Site para alternar <a href="/help/sites-authoring/launches-promoting.md">entre inicializações</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Traduzir página</td> 
    <td>Removido</td> 
-   <td>Use o Administrador do site para <a href="/help/sites-administering/tc-manage.md">adicionar página a projetos</a>de tradução.<br /> </td> 
+   <td>Use o Administrador do Site para <a href="/help/sites-administering/tc-manage.md">adicionar página a projetos de tradução</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Timewarp (escolha a data/hora e navegue no site como ele parecia)<br /> </td> 
@@ -390,7 +393,7 @@ Esta é uma lista de recursos que o Editor de página da interface clássica ( `
   <tr>
    <td>Interface do usuário de contexto do cliente<br /> </td> 
    <td>Substituído</td> 
-   <td>Use a interface do usuário do <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> para avançar.</td> 
+   <td>Use a interface do usuário <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> para frente.</td> 
   </tr>
   <tr>
    <td>Localizador de conteúdo para os vários tipos de mídia<br /> </td> 
@@ -398,7 +401,7 @@ Esta é uma lista de recursos que o Editor de página da interface clássica ( `
    <td> </td> 
   </tr>
   <tr>
-   <td>Lista de componentes</td> 
+   <td>Lista do componente</td> 
    <td>Concluir<br /> </td> 
    <td> </td> 
   </tr>
@@ -449,7 +452,7 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
   <tr>
    <td>Ativar/desativar plug-ins RTE</td> 
    <td>Concluir<br /> </td> 
-   <td>Pode ser feito usando o Editor <a href="/help/sites-authoring/templates.md">de modelos</a>.</td> 
+   <td>Pode ser feito usando o <a href="/help/sites-authoring/templates.md">Editor de modelos</a>.</td> 
   </tr>
   <tr>
    <td>Usar RTE para texto sem formatação</td> 
@@ -497,7 +500,7 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
    <td> </td> 
   </tr>
   <tr>
-   <td>Plug-in RTE: Listas (marcadores / números)</td> 
+   <td>Plug-in RTE: Listas (marcadores/números)</td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
@@ -517,7 +520,7 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
    <td>Disponível apenas na caixa de diálogo e em tela cheia.<br /> </td> 
   </tr>
   <tr>
-   <td>Plug-in RTE:Verificador ortográfico</td> 
+   <td>Plug-in RTE: Verificador ortográfico</td> 
    <td>Concluir</td> 
    <td> </td> 
   </tr>
@@ -554,7 +557,7 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
   <tr>
    <td>Ativar/desativar plug-ins IPE</td> 
    <td>Concluir</td> 
-   <td>Agora há uma interface no Editor <a href="/help/sites-authoring/templates.md"></a>de modelos.</td> 
+   <td>Agora há uma interface no <a href="/help/sites-authoring/templates.md">Editor de modelos</a>.</td> 
   </tr>
   <tr>
    <td>Plug-in IPE: Recortar</td> 
@@ -603,7 +606,7 @@ Esta é uma lista de várias ferramentas que a interface clássica tem e o statu
   <tr>
    <td>Gerenciamento de tarefas</td> 
    <td>Substituído</td> 
-   <td>6.0 introduziu <a href="/help/sites-authoring/projects.md">Projetos e tarefas</a>.<br /> </td> 
+   <td>6.0 introduziu <a href="/help/sites-authoring/projects.md">Projetos e Tarefas</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Caixa de entrada do fluxo de trabalho<br /> </td> 
@@ -611,8 +614,8 @@ Esta é uma lista de várias ferramentas que a interface clássica tem e o statu
    <td> </td> 
   </tr>
   <tr>
-   <td>Configuração de fluxo de trabalho para modelo de página (<code>/etc/workflow/wcm/templates.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>Configuração do fluxo de trabalho para modelo de página (<code>/etc/workflow/wcm/templates.html</code>)</td> 
+   <td>Falta<br /> </td> 
    <td>Use a interface clássica.</td> 
   </tr>
   <tr>
@@ -636,8 +639,8 @@ Esta é uma lista de várias ferramentas que a interface clássica tem e o statu
    <td>Use a interface clássica.</td> 
   </tr>
   <tr>
-   <td>Interface do usuário, grupos e permissões<br /> </td> 
-   <td>Mais completo<br /> </td> 
+   <td>UI de usuário, grupos e permissões<br /> </td> 
+   <td>Principalmente completo<br /> </td> 
    <td>Para a edição avançada de permissões, use a interface clássica.<br /> </td> 
   </tr>
   <tr>
@@ -648,11 +651,11 @@ Esta é uma lista de várias ferramentas que a interface clássica tem e o statu
   <tr>
    <td>Verificador de links externos (<code>/etc/linkchecker.html</code>)</td> 
    <td>Ausente</td> 
-   <td>Use a interface clássica.<br /> </td> 
+   <td>Usar interface clássica.<br /> </td> 
   </tr>
   <tr>
    <td>Editor em massa (<code>/etc/importers/bulkeditor.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>Falta<br /> </td> 
    <td>Use a interface clássica.</td> 
   </tr>
  </tbody>
