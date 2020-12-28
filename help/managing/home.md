@@ -1,18 +1,18 @@
 ---
-title: Guia de gerenciamento do usuário do AEM 6.4
-seo-title: Guia de gerenciamento do usuário do AEM 6.4
+title: Guia do usuário de gerenciamento do AEM 6.4
+seo-title: Guia do usuário de gerenciamento do AEM 6.4
 description: 'Este guia aborda como gerenciar um projeto AEM com êxito '
 seo-description: 'Abrange como gerenciar um projeto de AEM com êxito '
 translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 24%
+ht-degree: 32%
 
 ---
 
 
-# Guia de gerenciamento do usuário do AEM 6.4
+# Guia do usuário de gerenciamento do AEM 6.4
 
 Este guia aborda como gerenciar um projeto AEM com êxito
 
@@ -44,10 +44,10 @@ Este guia aborda como gerenciar um projeto AEM com êxito
 ## Principais recursos AEM
 
 * [AEM tutoriais](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)
-* [Guia do usuário HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
-* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html)
+* [Guia do usuário HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
