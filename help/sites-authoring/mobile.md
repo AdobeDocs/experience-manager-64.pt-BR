@@ -26,16 +26,16 @@ Os dispositivos são agrupados nas categorias Recurso, Inteligente e Toque, de a
 
 >[!NOTE]
 >
->Para criar um site móvel com base em um site padrão existente, crie uma live copy do site padrão. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>Para criar um site móvel com base em um site padrão existente, crie uma live copy do site padrão. (Consulte [Criação de uma Live Copy para Canais Diferentes](/help/sites-administering/msm-livecopy.md).)
 >
->Os desenvolvedores do AEM podem criar novos grupos de dispositivos. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
+>Os desenvolvedores do AEM podem criar novos grupos de dispositivos. (Consulte [Criando Filtros de Grupo de Dispositivos](/help/sites-developing/groupfilters.md).)
 
 Use o procedimento a seguir para criar uma página para dispositivos móveis:
 
 1. Na navegação global, abra o console **Sites**.
-1. Open the page **We.Retail** -> **United States** -> **English**.
+1. Abra a página **We.Retail** -> **Estados Unidos** -> **Inglês**.
 
-1. Switch to **Preview** mode.
+1. Alterne para o modo **Pré-visualização**.
 1. Alterne para o emulador desejado, clicando no ícone de dispositivo na parte superior da página.
 1. Arraste e solte componentes do navegador de componentes na página.
 
