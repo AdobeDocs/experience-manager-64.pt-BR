@@ -12,8 +12,8 @@ discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Tarefas também são usadas em projetos para determinar o nível de integridade 
 
 Ambos listam as tarefas do fluxo de trabalho e as tarefas criadas diretamente no Mosaico de **tarefas**.
 
-### Mosaico de tarefas {#task-tile}
+### Mosaico de tarefas  {#task-tile}
 
 Se um projeto estiver relacionado a alguma tarefa, um Mosaico de tarefas será exibido dentro do projeto. O Mosaico de tarefas mostra o status atual do projeto. Isso é baseado nas tarefas existentes dentro do fluxo de trabalho e não inclui tarefas que serão geradas no futuro, conforme o fluxo de trabalho progride. As informações a seguir estão visíveis no mosaico de tarefas:
 
@@ -48,7 +48,7 @@ Se um projeto estiver relacionado a alguma tarefa, um Mosaico de tarefas será e
 
 Além de monitorar o andamento, é possível ver mais informações sobre o projeto ou modificá-lo.
 
-#### Lista de tarefas {#task-list}
+#### Lista de tarefas  {#task-list}
 
 Clique nas reticências (...) no Mosaico de tarefas para exibir a lista de tarefas relacionadas ao projeto. As tarefas são divididas por fluxos de trabalho principais. Os detalhes da tarefa são exibidos, juntamente com os metadados, como prazo, responsável, prioridade e status.
 
@@ -79,7 +79,7 @@ Para adicionar uma tarefa:
 
 1. Toque/clique em **Criar**.
 
-## Trabalhar com tarefas na caixa de entrada {#working-with-tasks-in-the-inbox}
+## Trabalhar com tarefas na caixa de entrada  {#working-with-tasks-in-the-inbox}
 
 Também é possível acessar as tarefas na Caixa de entrada. Na caixa de entrada, é possível abrir o conteúdo para implementar as alterações necessárias. Quando concluído, você define o status da tarefa para Concluído. As tarefas também são exibidas na caixa de entrada quando são atribuídas a um grupo de usuários ao qual você pertence. Neste caso, qualquer membro do grupo de realizar o trabalho e concluir a tarefa.
 
