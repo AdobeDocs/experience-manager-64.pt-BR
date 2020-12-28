@@ -34,7 +34,7 @@ Com o AEM, você pode se integrar aos seguintes produtos que não sejam Adobe:
 * Twitter - redes sociais
 * YouTube - compartilhamento de vídeos
 
-Além disso, é possível integrar AEM com o [Marketing Cloud](/help/sites-administering/marketing-cloud.md) e com o [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+Além disso, você pode integrar AEM com o [Marketing Cloud](/help/sites-administering/marketing-cloud.md) e com o [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Integração com o Salesforce {#integrating-with-salesforce}
 
@@ -62,8 +62,8 @@ Para obter informações sobre como integrar seu site AEM e o ExactTarget, consu
 
 Facebook e Twitter são serviços populares de redes sociais. AEM integração com o Facebook e o Twitter permite que as organizações forneçam uma opção de logon do Facebook ou do Twitter em propriedades digitais próprias e, em seguida, personalizem a experiência do usuário com base nas informações do perfil. Os profissionais de marketing também podem combinar informações do perfil com dados de fontes adicionais, como um sistema de gerenciamento de relacionamento com o cliente ou um perfil do site, para criar uma visualização unificada do cliente.
 
-Consulte Logon [](/help/communities/social-login.md) social para obter mais informações.
+Consulte [Logon social](/help/communities/social-login.md) para obter mais informações.
 
 ## Integração com outros provedores {#integrating-with-other-providers}
 
-AEM permite que você se conecte a outros provedores externos com um trecho do Analytics [genérico.](/help/sites-administering/external-providers.md)
+AEM permite que você se conecte a outros provedores externos com um [Snippet do Analytics genérico.](/help/sites-administering/external-providers.md)
