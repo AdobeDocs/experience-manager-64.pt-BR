@@ -25,7 +25,7 @@ Você pode receber notificações de várias áreas do AEM, como notificações 
 Você recebe essas notificações em duas caixas de entrada, que são separadas pelo tipo de notificações:
 
 * Uma caixa de entrada onde é possível visualizar as notificações recebidas como resultado das assinaturas está descrita na próxima seção.
-* A specialized inbox for workflow items is described in the [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Uma caixa de entrada especializada para itens de fluxo de trabalho está descrita no documento [Participação em Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
@@ -91,7 +91,7 @@ Para assinar notificações:
 1. Defina os caminhos das páginas sobre as quais você será notificado:
 
    * Clique em **Adicionar** para adicionar uma nova linha à tabela.
-   * Click the **Path** table cell and enter the path, e.g. `/content/docs`.
+   * Clique na célula da tabela **Caminho** e insira o caminho, por exemplo, `/content/docs`.
    * Para ser notificado sobre todas as páginas pertencentes à subárvore, defina **Exata?** como **Não**.
 
       Para ser notificado somente sobre ações na página definidas pelo caminho, defina **Exata?** como **Sim**.
