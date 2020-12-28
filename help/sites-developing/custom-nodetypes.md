@@ -80,7 +80,7 @@ Define o tipo de nó de um nó de comentário.
 
 **Descrição**
 
-Define o tipo de nó de um `commentattachment` nó
+Define o tipo de nó de um nó `commentattachment`
 
 **Definição**
 
@@ -166,7 +166,7 @@ Define o nó padrão para o conteúdo da página, com as propriedades mínimas u
 * `@prop jcr:description` - Descrição desta página.
 * `@prop cq:template` - Caminho para o modelo usado para criar a página.
 * `@prop cq:allowedTemplates` - Lista de expressões regulares usadas para determinar os caminhos para o modelo permitido.
-* `@prop pageTitle` - Título geralmente exibido na `<title>` tag .
+* `@prop pageTitle` - Título geralmente exibido na  `<title>` tag .
 * `@prop navTitle` - Título normalmente usado na navegação.
 * `@prop hideInNav` - Especifica se a página deve estar oculta na navegação.
 * `@prop onTime` - Hora em que esta página se torna válida.
@@ -237,18 +237,18 @@ Define um componente CQ.
 * `@prop dialogPath` - Caminho da caixa de diálogo primária (alternativo à caixa de diálogo).
 * `@node design_dialog` - Caixa de diálogo Design.
 * `@prop cq:cellName` - Nome da célula de projeto.
-* `@prop cq:isContainer` - Indica se este é um componente de container. Isso faz com que os nomes das células dos componentes filhos sejam usados em vez de nomes de caminho. Por exemplo, o componente `parsys` é um container. Se esse valor não for definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Se verdadeiro, nenhuma `div` tag de decoração será desenhada ao incluir esse componente.
+* `@prop cq:isContainer` - Indica se este é um componente de container. Isso faz com que os nomes das células dos componentes filhos sejam usados em vez de nomes de caminho. Por exemplo, `parsys` é um componente de container. Se esse valor não estiver definido, a verificação será feita com base na existência de `cq:childEditConfig`.
+* `@prop cq:noDecoration` - Se verdadeiro, nenhuma  `div` tag de decoração será desenhada ao incluir esse componente.
 * `@node cq:editConfig` - A configuração que define os parâmetros da barra de edição.
 * `@node cq:childEditConfig` - A configuração de edição herdada pelos componentes filhos.
-* `@node cq:htmlTag` - Define atributos de tag adicionais que são adicionados à `div` tag &quot;adjacente&quot; quando o componente é incluído.
+* `@node cq:htmlTag` - Define outros atributos de tag adicionados à  `div` tag &quot;adjacente&quot; quando o componente é incluído.
 * `@node icon.png`- Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
 * `@prop allowedParents` - Padrões de expressão regulares para determinar os caminhos dos componentes que são permitidos como componentes principais.
 * `@prop allowedChildren` - Padrões de expressão regulares para determinar os caminhos dos componentes permitidos como componentes filhos.
 * `@node virtual` - Contém subnós que refletem componentes virtuais usados para o componente arrastar e soltar.
 * `@prop componentGroup` - Nome do grupo de componentes, usado para o componente arrastar e soltar.
-* `@node cq:infoProviders` - Contém subnós, cada um com uma propriedade `className` que se refere a um `PageInfoProvider`.
+* `@node cq:infoProviders` - Contém subnós, cada um com uma propriedade  `className` que se refere a um  `PageInfoProvider`.
 
 **Definição**
 
@@ -302,7 +302,7 @@ Define a configuração para a &quot;barra de edição&quot;.
 * `@prop cq:actions`- Lista de ações (botões da barra de edição ou itens de menu).
 * `@node cq:actionConfigs` - Configurações de widget para itens de barra de edição ou menu.
 * `@prop cq:emptyText` - Texto a ser exibido se nenhum conteúdo visual estiver presente.
-* `@node cq:dropTargets` - Coleção de `{@link cq:DropTargetConfig}` nós.
+* `@node cq:dropTargets` - Coleção de  `{@link cq:DropTargetConfig}` nós.
 
 **Definição**
 
@@ -321,7 +321,7 @@ Define a configuração para a &quot;barra de edição&quot;.
 
 Configura um público alvo de queda de um componente. O nome desse nó será usado como uma ID para arrastar e soltar.
 
-* `@prop accept` - Lista de tipos MIME aceites por este público alvo; por exemplo, `["image/*"]`
+* `@prop accept` - Lista de tipos MIME aceites por este público alvo; por exemplo,  `["image/*"]`
 * `@prop groups` - Lista de grupos de arrastar e soltar que aceitam uma fonte.
 * `@prop propertyName` - Nome da propriedade usada para armazenar a referência.
 
@@ -430,20 +430,20 @@ Miniatura para representar um ativo DAM.
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Lista Container Delivery {#delivery-container-list}
+## Lista Container delivery {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
 **Descrição**
 
-Lista do Container.
+Lista do container.
 
 **Definição**
 
 * `[cq:containerList]`
    * `mixin`
 
-## Página do Delivery {#delivery-page}
+## Página do delivery {#delivery-page}
 
 ### cq:Cq4PageAttributes {#cq-cq-pageattributes}
 
@@ -470,7 +470,7 @@ Lista do Container.
 
 O tipo de nó `cq:contentPage` contém as definições de propriedade e nó filho para páginas de conteúdo de ContentBus. Somente quando esse tipo de combinação é adicionado a um nó do tipo `cq:page`, um nó se torna uma página de conteúdo de ContentBus.
 
-Os itens em um `cq:Cq4ContentPage` são:
+Os itens em `cq:Cq4ContentPage` são:
 
 * `@prop cq:csd` - A CDT ContentBus da página.
 * `@node cq:content` - O conteúdo da página. Esse nó filho não existe se o nó de página estiver no estado &quot;Existente sem conteúdo&quot; ou &quot;Excluído&quot;.
@@ -526,12 +526,12 @@ Uma mistura que define uma localização geográfica em graus decimais (DD).
 
 **Definição**
 
-* `[cq:GeoLocation]
+* &#39;[cq:GeoLocation]
    * `mixin`
    * `- latitude (double)`
    * `- longitude (double)`
 
-## Correio {#mailer}
+## Mailer {#mailer}
 
 ### cq:mailerMessage {#cq-mailermessage}
 
@@ -662,7 +662,7 @@ Define a mistura de informações de status de replicação.
 
 **Definição**
 
-* `[cq:ReplicationStatus]
+* &#39;[cq:ReplicationStatus]
    * `mixin`
    * `- cq:lastPublished (date) ignore`
    * `- cq:lastPublishedBy (string) ignore`
@@ -819,7 +819,7 @@ Qualquer site público/usuário pode marcar o conteúdo (estilo Web2.0), usado e
 
 **Descrição**
 
-Adiciona um `cq:userContent` subnó que pode ser modificado pelos usuários. Cada usuário terá seu próprio `cq:userContent/<userid>` subnó, que normalmente tem a combinação `cq:UserTaggable`.
+Adiciona um subnó `cq:userContent` que pode ser modificado pelos usuários. Cada usuário terá seu próprio subnó `cq:userContent/<userid>`, que normalmente tem a combinação `cq:UserTaggable`.
 
 **Definição**
 
@@ -827,7 +827,7 @@ Adiciona um `cq:userContent` subnó que pode ser modificado pelos usuários. Cad
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Variante estendida, definindo mais explicitamente a `cq:userContent` árvore
+Variante estendida, definindo mais explicitamente a árvore `cq:userContent`
 
 * `[cq:AllowsUserContent]`
    * `mixin`
@@ -925,7 +925,7 @@ Painel Guia
 
 **Definição**
 
-* &#39;[cq:TabPanel] > cq:Panel orderable&#39;
+* &#39;[cq:TabPanel] > cq:Panel orderable&quot;
    * `- activeTab (long)`
 
 ### cq:Field {#cq-field}
@@ -1032,7 +1032,7 @@ Item de trabalho.
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:carga {#cq-payload}
+### cq:Payload {#cq-payload}
 
 **Descrição**
 
@@ -1112,7 +1112,7 @@ Nó de fluxo de trabalho
 
 **Descrição**
 
-transição do fluxo de trabalho
+Transição do fluxo de trabalho
 
 **Definição**
 
