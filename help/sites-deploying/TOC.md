@@ -15,7 +15,7 @@ ht-degree: 18%
 ---
 
 
-# AEM 6.4 Deploying User Guide {#deploying}
+# AEM 6.4 Implantação do Guia do Usuário {#deploying}
 
 + [Implantação do Guia do Usuário](home.md)
 + Introdução à plataforma AEM {#introduction}
@@ -39,7 +39,7 @@ ht-degree: 18%
    + [Solução de problemas de índices Oak](troubleshooting-oak-indexes.md)
    + [Optar Pela Coleta De Estatísticas De Uso Agregado](opt-in-aggregated-usage-statistics.md)
    + [Resolução de Problemas](troubleshooting.md)
-+ Configuração de AEM {#configuring}
++ Configurando AEM {#configuring}
    + [Conceitos básicos de configuração](configuring.md)
    + [Logs](configure-logging.md)
    + [Configuração do OSGi](configuring-osgi.md)
@@ -63,7 +63,7 @@ ht-degree: 18%
    + [Artigos sobre procedimentos de configuração](ht-deploy.md)
    + [Remoção dos sites de Geometrixx](removing-the-geometrixx-sites.md)
    + [Configurando o Console da Web](configuring-web-console.md)
-+ Upgrading to AEM 6.4 {#upgrading}
++ Atualização para AEM 6.4 {#upgrading}
    + [Atualização para o AEM 6.4](upgrade.md)
    + [Planejamento da atualização](upgrade-planning.md)
    + [Avaliação da complexidade da atualização com o detector de padrões](pattern-detector.md)
@@ -85,7 +85,7 @@ ht-degree: 18%
    + [Reestruturação comum dos repositórios no AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório Sites no AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório de ativos no AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
-   + [Reestruturação do repositório de Dynamic Media no AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
+   + [Reestruturação do repositório Dynamic Media no AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório Forms no AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório de comércio eletrônico no AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório para AEM Communities no 6.4](communities-repository-restructuring-in-aem-6-4.md)
