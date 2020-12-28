@@ -44,7 +44,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. O usuário deve clicar na barra superior do editor ou voltar para o modo Edição para que o atalho fique disponível novamente.
+>&amp;ast; Quando o usuário start para interagir com a página no Modo de Pré-visualização, o atalho `Ctrl-Shift-m` não estará mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Edição para que o atalho fique disponível novamente.
 
 Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar os [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 
