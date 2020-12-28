@@ -155,7 +155,7 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 1. Faça logon para postar um comentário:
 1. Digite o texto na caixa de entrada de texto do comentário e clique em **[!UICONTROL Post]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![chlimage_1-111](assets/chlimage_1-191.png)
 
 1. Basta visualização o comentário na [instância do autor](http://localhost:4502/content/community-components/en/comments.html) (provavelmente ainda está conectado como admin / admin).
 
