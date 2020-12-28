@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Sites - Prontidão para o RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites - Preparação para o GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -28,25 +28,25 @@ O Regulamento Geral da Proteção de Dados da União sobre os direitos de privac
 
 A AEM Sites está pronta para ajudar os clientes com suas obrigações de conformidade com o RGPD. Esta página orienta os clientes pelos procedimentos para lidar com solicitações do RGPD no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
 
-Para obter mais informações, consulte a página do [RGPD no Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)de privacidade do Adobe.
+Para obter mais informações, consulte a página [RGPD no Centro de Privacidade do Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Consulte [AEM Prontidão](/help/managing/data-protection-and-privacy.md) do RGPD para obter mais detalhes.
+>Consulte [AEM Prontidão do RGPD](/help/managing/data-protection-and-privacy.md) para obter mais detalhes.
 
 ## Servidor do autor {#author-server}
 
-As contas de usuário e o conteúdo UGC no servidor autor são abordados na documentação [do](/help/managing/data-protection-and-privacy.md)Platform GDPR.
+As contas de usuário e o conteúdo UGC no servidor do autor são abordados na [documentação GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
 ## Servidor de publicação {#publish-server}
 
-As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na documentação [do](/help/managing/data-protection-and-privacy.md)Platform GDPR.
+As contas de usuário usadas para autenticar visitantes no site, e o conteúdo UGC no servidor de publicação são abordados na [documentação GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
 Por padrão, os componentes da AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros, ou para a Adobe Campaign, para processamento adicional.
 
-## Inclusão/recusa {#opt-in-opt-out}
+## Inclusão/exclusão {#opt-in-opt-out}
 
-AEM tem um serviço [de opção de não participação de](/help/sites-developing/cookie-optout.md) cookie que pode ser usado para gerenciar a opção de não participação/não participação dos usuários.
+AEM tem um [serviço de opção de não participação de cookie](/help/sites-developing/cookie-optout.md) que pode ser usado para gerenciar a opção de não participação/não participação dos usuários.
 
 ## Insights aprimorados pelo Analytics {#enhanced-insights-by-analytics}
 
@@ -58,11 +58,11 @@ Para obter mais informações sobre como gerenciar solicitações de pessoas com
 
 A AEM Sites inclui uma integração opcional com a Personalização aprimorada por Público alvo que usa funcionalidade no Adobe Target On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas com dados do RGPD relacionadas ao Adobe Target, consulte [Adobe Target - Privacidade e Regulamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)Geral de Proteção de Dados.
+Para obter mais informações sobre como gerenciar solicitações de pessoas com dados do RGPD relacionadas ao Adobe Target, consulte [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
-AEM fornece uma camada de dados opcional com o [ContextHub](/help/sites-developing/contexthub.md). Isso mantém os dados específicos do visitante no navegador, a serem usados para personalização baseada em regras.
+AEM fornece uma camada de dados opcional com [ContextHub](/help/sites-developing/contexthub.md). Isso mantém os dados específicos do visitante no navegador, a serem usados para personalização baseada em regras.
 
 Por padrão, esses dados de visitante não são armazenados em AEM; AEM envia regras para a camada de dados para tomar decisões de personalização no navegador.
 
