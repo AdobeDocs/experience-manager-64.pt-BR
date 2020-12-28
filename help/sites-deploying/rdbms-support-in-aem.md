@@ -24,23 +24,23 @@ ht-degree: 0%
 
 O suporte para a persistência do banco de dados relacional no AEM é implementado usando o Documento Microkernel. O Microkernel do Documento é a base que também é usada para implementar a persistência do MongoDB.
 
-Consiste em uma API Java baseada na API Java Mongo. Uma implementação de uma API BlobStore também é fornecida. Por padrão, os blobs são armazenados no banco de dados.
+Ele consiste em uma API Java baseada na API Java Mongo. Uma implementação de uma API BlobStore também é fornecida. Por padrão, os blobs são armazenados no banco de dados.
 
-Para obter mais informações sobre os detalhes de implementação, consulte a documentação [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) e [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) .
+Para obter mais informações sobre os detalhes de implementação, consulte a documentação [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) e [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
 
 >[!NOTE]
 >
->O suporte ao **PostgreSQL 9.4** também é fornecido, mas somente para fins de demonstração. Ele não estará disponível para ambientes de produção.
+>O suporte para **PostgreSQL 9.4** também é fornecido, mas somente para fins de demonstração. Ele não estará disponível para ambientes de produção.
 
 ## Bancos de dados suportados {#supported-databases}
 
-Para obter mais informações sobre o nível de suporte ao banco de dados relacional no AEM, consulte a página [Requisitos](/help/sites-deploying/technical-requirements.md)técnicos.
+Para obter mais informações sobre o nível de suporte ao banco de dados relacional no AEM, consulte a [página Requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 ## Etapas de configuração {#configuration-steps}
 
 O repositório é criado pela configuração do serviço `DocumentNodeStoreService` OSGi. Foi estendido para suportar a persistência do banco de dados relacional, além do MongoDB.
 
-Para que funcione, uma fonte de dados precisa ser configurada com AEM. Isso é feito pelo `org.apache.sling.datasource.DataSourceFactory.config` arquivo. Os drivers JDBC para o respectivo banco de dados precisam ser fornecidos separadamente, já que os pacotes OSGi estão dentro da configuração local.
+Para que funcione, uma fonte de dados precisa ser configurada com AEM. Isso é feito pelo arquivo `org.apache.sling.datasource.DataSourceFactory.config`. Os drivers JDBC para o respectivo banco de dados precisam ser fornecidos separadamente, já que os pacotes OSGi estão dentro da configuração local.
 
 Para obter etapas sobre como criar pacotes OSGi para drivers JDBC, consulte esta [documentação](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) no site Apache Sling.
 
@@ -55,29 +55,29 @@ Depois que os pacotes estiverem em vigor, siga as etapas abaixo para configurar 
 1. Verifique se o daemon do banco de dados foi iniciado e se você tem um banco de dados ativo para uso com AEM.
 1. Copie o AEM 6.3 jar no diretório de instalação.
 1. Crie uma pasta chamada `crx-quickstart\install` no diretório de instalação.
-1. Configure o armazenamento de nó do documento criando um arquivo de configuração com o seguinte nome no `crx-quickstart\install` diretório:
+1. Configure o armazenamento de nó do documento criando um arquivo de configuração com o seguinte nome no diretório `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
-1. Configure a fonte de dados e os parâmetros JDBC criando outro arquivo de configuração com o seguinte nome na `crx-quickstart\install` pasta:
+1. Configure a fonte de dados e os parâmetros JDBC criando outro arquivo de configuração com o seguinte nome na pasta `crx-quickstart\install`:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
    >
-   >Para obter informações detalhadas sobre a configuração da fonte de dados para cada banco de dados suportado, consulte Opções [de configuração da fonte de](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)dados.
+   >Para obter informações detalhadas sobre a configuração da fonte de dados para cada banco de dados suportado, consulte [Opções de configuração da fonte de dados](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
 1. Em seguida, prepare os pacotes JDBC OSGi a serem usados com AEM:
 
    1. Baixe o arquivo ZIP em https://dev.mysql.com/downloads/connector/j/
       * deve ser >= 5.1.38
-   1. Extrair o `mysql-connector-java-version-bin.jar` (pacote) do arquivo
+   1. Extraia `mysql-connector-java-version-bin.jar` (conjunto) do arquivo
    1. Use o console da Web para instalar e start o pacote:
-      * Ir para *http://serveraddress:serverport/system/console/bundles*
+      * Vá para *http://serveraddress:serverport/system/console/bundles*
       * Selecione **Instalar/Atualizar**
       * Navegue até a seleção do pacote extraído do arquivo ZIP baixado
-      * Verifique se o Driver JDBC da **Oracle Corporation para MySQLcom.mysql.jdbc** está ativo e start-o.
+      * Verifique se **Driver JDBC da Oracle Corporation para MySQLcom.mysql.jdbc** está ativo e start-o.
 
-1. Finalmente, o start AEM com os modos de execução `crx3` e `crx3rdb` :
+1. Finalmente, o start AEM com os modos de execução `crx3` e `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -85,19 +85,19 @@ Depois que os pacotes estiverem em vigor, siga as etapas abaixo para configurar 
 
 ## Opções de configuração da fonte de dados {#data-source-configuration-options}
 
-A configuração do `org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi é usada para configurar os parâmetros necessários para a comunicação entre o AEM e a camada de persistência do banco de dados.
+A configuração `org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi é usada para configurar os parâmetros necessários para a comunicação entre o AEM e a camada de persistência do banco de dados.
 
 As seguintes opções de configuração estão disponíveis:
 
 * `datasource.name:` O nome da fonte de dados. O padrão é `oak`.
 
-* `url:` A string de URL do banco de dados que precisa ser usado com o JDBC. Cada tipo de banco de dados tem seu próprio formato de string de URL. Para obter mais informações, consulte Formatos [de sequência de caracteres de](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) URL abaixo.
+* `url:` A string de URL do banco de dados que precisa ser usado com o JDBC. Cada tipo de banco de dados tem seu próprio formato de string de URL. Para obter mais informações, consulte [Formatos de cadeia de caracteres de URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) abaixo.
 
 * `driverClassName:` O nome da classe do driver JDBC. Isso será diferente dependendo do banco de dados que você deseja usar e, subsequentemente, do driver que é necessário para se conectar a ele. Abaixo estão os nomes de classe para todos os bancos de dados suportados pela AEM:
 
    * `org.postgresql.Driver` PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` DB2;
-   * `oracle.jdbc.OracleDriver` Oracle;
+   * `oracle.jdbc.OracleDriver` para Oracle;
    * `com.mysql.jdbc.Driver` MySQL e MariaDB (experimental);
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` para Microsoft SQL Server (experimental).
 
@@ -112,7 +112,7 @@ Um formato de string de URL diferente é usado na configuração da fonte de dad
 * `jdbc:postgresql:databasename` PostgreSQL;
 
 * `jdbc:db2://localhost:port/databasename` DB2;
-* `jdbc:oracle:thin:localhost:port:SID` Oracle;
+* `jdbc:oracle:thin:localhost:port:SID` para Oracle;
 * `jdbc:mysql://localhost:3306/databasename` MySQL e MariaDB (experimental);
 
 * `jdbc:sqlserver://localhost:1453;databaseName=name` para Microsoft SQL Server (experimental).
