@@ -23,7 +23,7 @@ ht-degree: 95%
 
 Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem:
 
-* The title appears in the **Sidekick**, from where authors can access them to work on them.
+* O título aparece no **Sidekick**, a partir do qual os autores podem acessá-los para trabalhar neles.
 * As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar apenas a página de origem, se desejar.
 * Por padrão, a [Live Copy](/help/sites-administering/msm.md) atualiza automaticamente as páginas de lançamento conforme as páginas de origem são alteradas. Você pode especificar que uma cópia estática seja criada para evitar alterações automáticas.
 
