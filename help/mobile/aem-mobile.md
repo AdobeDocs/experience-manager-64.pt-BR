@@ -18,15 +18,15 @@ ht-degree: 2%
 ---
 
 
-# AEM Mobile sob demanda {#aem-mobile-on-demand}
+# AEM Mobile On-Demand {#aem-mobile-on-demand}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Se você não estiver usando AEM como sua fonte de gestão de conteúdo, consulte a Ajuda [da](https://helpx.adobe.com/digital-publishing-solution/topics.html)AEM Mobile On-demand Services.
+>Se você não estiver usando AEM como sua fonte de gestão de conteúdo, consulte [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Administrador do AEM {#aem-administrator}
 
@@ -34,9 +34,9 @@ ht-degree: 2%
 >
 >**Pré-requisitos:**
 >
->Antes de começar a configurar seu ambiente para AEM Mobile On-demand Services, consulte Painel de aplicativos [AEM Mobile ou Centro](/help/mobile/mobile-apps-ondemand-application-dashboard.md)de controle.
+>Antes de começar a configurar seu ambiente para AEM Mobile On-demand Services, consulte [Painel de aplicativos AEM Mobile ou Centro de controle](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Um administrador ****** AEM é responsável por adicionar um novo aplicativo ao catálogo da AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente. AEM administradores que criam um novo aplicativo usando o assistente *de* criação da AEM Mobile geralmente selecionam um dos modelos de aplicativo desejados em nossos exemplos de referência prontos ou (na maioria dos casos) em um modelo de aplicativo personalizado criado por desenvolvedores de *AEM.*
+Um ***AEM administrador*** é responsável por adicionar um novo aplicativo ao catálogo da AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente. AEM administradores que criam um novo aplicativo usando o *assistente de criação* da AEM Mobile, geralmente selecionam um dos modelos de aplicativo desejados em nossos exemplos de referência predefinidos ou (na maioria dos casos) em um modelo de aplicativo personalizado criado por *AEM desenvolvedores.*
 
 >[!NOTE]
 >
