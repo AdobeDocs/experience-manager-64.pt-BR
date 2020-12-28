@@ -12,8 +12,8 @@ discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -201,13 +201,13 @@ Na caixa de entrada, você pode criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: this will be used to form the URL; if blank it will be based on the **Title**.
+      * **Nome**: isso será usado para formar o URL; se estiver em branco, será baseado no **Title**.
 
    ![wf-87](assets/wf-87.png)
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto   {#creating-a-project}
+## Criação de um projeto    {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
