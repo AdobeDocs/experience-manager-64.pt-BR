@@ -50,7 +50,7 @@ No modo de Design, o sidekick é minimizado e você tem a possibilidade de confi
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. Clique em **Editar** no sistema Parágrafo (**Design de par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -74,7 +74,7 @@ No modo Design, também é possível configurar os atributos para os componentes
 
 1. É possível configurar o design dos componentes.
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   Por exemplo, se você clicar em **Editar** no componente de Imagem (**Design de imagem**), poderá configurar os parâmetros específicos do componente:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
