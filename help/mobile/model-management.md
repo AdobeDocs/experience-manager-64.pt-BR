@@ -2,7 +2,7 @@
 title: Visão geral dos modelos
 seo-title: Visão geral dos modelos
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: e09dac52-9515-43f7-9d3b-6637e2283d59
 contentOwner: Jyotika Syal
 content-type: reference
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 O gerenciamento de modelos envolve a criação e o gerenciamento de modelos com o objetivo de associar a eventuais objetos de dados. Cada modelo incluirá todas as propriedades e definições de campo necessárias para facilitar a criação e renderização de objetos.
 
@@ -29,7 +29,7 @@ O Gerenciamento de modelos envolve a criação de **modelos**, **entidades** e *
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-## O modelo de conteúdo {#the-content-model}
+## O Modelo de conteúdo {#the-content-model}
 
 Um modelo descreve o tipo de conteúdo e indica quais informações estarão disponíveis para o aplicativo nativo. É uma descrição do que constitui um conteúdo. Um modelo de conteúdo são as regras para criar um conteúdo. O modelo de conteúdo inclui quais dados estão disponíveis, quais ativos podem ser usados, a relação entre ativos e dados, a relação com outros modelos de conteúdo e os metadados disponíveis.
 
@@ -52,7 +52,7 @@ Os modelos são usados para determinar como as entidades são criadas. Eles defi
 >Existe um modelo fora de um aplicativo, pois mais de um aplicativo pode usá-lo.
 
 
-Consulte **[Modelos](/help/mobile/administer-mobile-apps.md)**para criar e gerenciar modelos no painel e no repositório.
+Consulte **[Modelos](/help/mobile/administer-mobile-apps.md)** para criar e gerenciar modelos no painel e no repositório.
 
 ### Entidades no Modelo de conteúdo {#entities-in-content-model}
 
@@ -60,16 +60,16 @@ Uma entidade é uma instância de um modelo de conteúdo. Uma entidade é expost
 
 No caso de conteúdo AEM existente, uma entidade é gerada usando um modelo e a fonte de conteúdo AEM. Por exemplo, uma entidade de página é um objeto independente de canal e layout que é gerado de uma página AEM e do modelo de página.
 
-As alterações no conteúdo referenciado de uma entidade resultarão em uma alteração na entidade. Por exemplo, se um *cq:page* for atualizado, quaisquer entidades baseadas nessa página também serão atualizadas.
+As alterações no conteúdo referenciado de uma entidade resultarão em uma alteração na entidade. Por exemplo, se um *cq:page* for atualizado, todas as entidades baseadas nessa página também serão atualizadas.
 
-Consulte **[Trabalhar com entidades](/help/mobile/spaces-and-entities.md)**para criar entidades personalizadas a partir de modelos.
+Consulte **[Trabalhando com Entidades](/help/mobile/spaces-and-entities.md)** para criar entidades personalizadas a partir de modelos.
 
 >[!NOTE]
 >
 >Se o modelo não corresponder a um conteúdo AEM existente, como o cliente criou um novo modelo, haverá uma interface do usuário para que o cliente possa criar uma nova entidade.
 
 
-### Espaços no modelo de conteúdo {#spaces-in-content-model}
+### Espaços no Modelo de conteúdo {#spaces-in-content-model}
 
 Um espaço é usado para organizar entidades para fácil acesso. Um espaço pode conter um ou mais tipos de entidade e pode conter subpastas.
 
@@ -77,7 +77,7 @@ Do lado AEM, um espaço é uma maneira conveniente de gerenciar entidades relaci
 
 *Por exemplo*,
 
-Um usuário tem três classificações gerais de entidades. Um é apenas para uso interno, outro é aprovado para uso público e ainda um terceiro é para entidades comuns que são usadas por muitos aplicativos. Para facilitar o gerenciamento, o usuário cria três espaços: *interno*, *público* (com conteúdo em inglês e francês) e *comum* para gerenciar as entidades apropriadas, conforme mencionado abaixo:
+Um usuário tem três classificações gerais de entidades. Um é apenas para uso interno, outro é aprovado para uso público e ainda um terceiro é para entidades comuns que são usadas por muitos aplicativos. Para facilitar o gerenciamento, o usuário cria três espaços: *internal*, *public* (com conteúdo em inglês e francês) e *common* para gerenciar as entidades apropriadas, conforme mencionado abaixo:
 
 * /content/entity/internal
 * /content/entity/public/en
@@ -86,7 +86,7 @@ Um usuário tem três classificações gerais de entidades. Um é apenas para us
 
 Um ponto final de serviço será fornecido ao espaço para que a biblioteca cliente nativa possa solicitar uma lista do conteúdo de um espaço. Essa &quot;listagem&quot; será retornada como um objeto JSON.
 
-Consulte **[Espaços e Entidades](/help/mobile/spaces-and-entities.md)**para criar e publicar espaços.
+Consulte **[Espaços e Entidades](/help/mobile/spaces-and-entities.md)** para criar e publicar espaços.
 
 >[!NOTE]
 >
@@ -96,4 +96,4 @@ Consulte **[Espaços e Entidades](/help/mobile/spaces-and-entities.md)**para cri
 
 As pastas permitem que os usuários organizem as entidades conforme necessário e facilitam um controle ACL mais refinado. Os espaços podem incluir pastas para ajudar a organizar ainda mais o conteúdo e os ativos do espaço. Um usuário pode criar sua própria hierarquia em um espaço.
 
-Consulte **[Trabalhar com pastas em um espaço](/help/mobile/spaces-and-entities.md)**para criar e gerenciar pastas em um espaço.
+Consulte **[Trabalhar com pastas em um espaço](/help/mobile/spaces-and-entities.md)** para criar e gerenciar pastas em um espaço.
