@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Ativação do CRXDE Lite no AEM{#enabling-crxde-lite-in-aem}
+# Habilitar CRXDE Lite no AEM{#enabling-crxde-lite-in-aem}
 
-Para garantir que AEM instalações sejam o mais seguras possível, a lista de verificação de segurança recomenda a [desativação do WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) em ambientes de produção.
+Para garantir que AEM instalações sejam o mais seguras possível, a lista de verificação de segurança recomenda [desativar WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) em ambientes de produção.
 
-No entanto, o CRXDE Lite depende do `org.apache.sling.jcr.davex` pacote para funcionar corretamente, portanto, a desativação do WebDAV também desativará o CRXDE Lite.
+No entanto, o CRXDE Lite depende do pacote `org.apache.sling.jcr.davex` para funcionar corretamente, de modo que a desativação do WebDAV também desativará o CRXDE Lite.
 
-Quando isso ocorre, a navegação para `https://serveraddress:4502/crx/de/index.jsp` exibirá um nó raiz vazio, e todas as solicitações HTTP para recursos de CRXDE Lite falharão:
+Quando isso acontece, a navegação para `https://serveraddress:4502/crx/de/index.jsp` exibirá um nó raiz vazio e todas as solicitações HTTP para recursos de CRXDE Lite falharão:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -46,7 +46,7 @@ Se estiver desativado, você pode ativar o CRXDE Lite seguindo o procedimento ab
 1. Crie a seguinte configuração:
 
    * **Caminho raiz:** `/crx/server`
-   * Marque a caixa em **Usar URIs** absolutos.
+   * Marque a caixa em **Usar URIs absolutos**.
 
 1. Ao terminar de usar o CRXDE Lite, certifique-se de desativar o WebDAV novamente.
 
@@ -56,7 +56,7 @@ Você também pode ativar o CRXDE Lite via cURL, executando este comando:
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
-## Other Resources {#other-resources}
+## Outros recursos {#other-resources}
 
 Para obter mais informações sobre AEM 6 recursos de segurança, consulte as seguintes páginas:
 
