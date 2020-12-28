@@ -32,7 +32,7 @@ Duas interfaces gráficas de usuário são fornecidas para isso. Elas podem ser 
 
 1. Interface do usuário habilitada para toque
 
-   * This is the modern, default AEM UI.
+   * Esta é a interface de usuário AEM moderna e padrão.
    * É predominantemente cinza, com uma interface limpa e plana.
    * Projetada para uso em dispositivos desktop e habilitados para toque, a aparência e a experiência de uso são iguais em todos os dispositivos, embora [ visualizar e selecionar recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) sejam um pouco diferentes (toques vs cliques).
 
@@ -55,7 +55,7 @@ Duas interfaces gráficas de usuário são fornecidas para isso. Elas podem ser 
 
 ## Alternando UIs
 
-Although the touch-enabled UI is now the standard UI and [feature parity](../release-notes/touch-ui-features-status.md) has been nearly reached with the administration and editing of sites, there may be times when the user wishes to switch to the [classic UI](/help/sites-classic-ui-authoring/classicui.md). Há várias opções para fazer isso.
+Embora a interface habilitada para toque seja agora a interface padrão e [paridade de recursos](../release-notes/touch-ui-features-status.md) tenha sido quase atingida com a administração e edição de sites, pode haver momentos em que o usuário deseja alternar para a [interface clássica](/help/sites-classic-ui-authoring/classicui.md). Há várias opções para fazer isso.
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 Há vários locais em que você pode definir qual interface de usuário deve ser usada:
 
-* [Configuração da interface padrão para sua instância](#configuring-the-default-ui-for-your-instance) - isso definirá a interface padrão a ser exibida no login do usuário, embora o usuário possa substituí-la e selecionar uma interface diferente para sua conta ou sessão atual.
+* [Configuração da interface padrão para sua instância](#configuring-the-default-ui-for-your-instance)  - isso definirá a interface padrão a ser exibida no login do usuário, embora o usuário possa substituí-la e selecionar uma interface diferente para sua conta ou sessão atual.
 
-* [Configuração da criação da interface clássica para sua conta](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) - isso definirá a interface para ser usada como padrão ao editar páginas, embora o usuário possa substituí-la e selecionar uma interface diferente para sua conta ou sessão atual.
+* [Configuração da criação da interface clássica para sua conta](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)  - isso definirá a interface para ser usada como padrão ao editar páginas, embora o usuário possa substituí-la e selecionar uma interface diferente para sua conta ou sessão atual.
 
-* [Alternar para a interface clássica para a sessão](#switching-to-classic-ui-for-the-current-session) atual - Isso alterna para a interface clássica para a sessão atual.
+* [Alternar para a interface clássica para a sessão](#switching-to-classic-ui-for-the-current-session)  atual: essa opção muda para a interface clássica para a sessão atual.
 
 * No caso da [criação de página, o sistema faz certas substituições em relação à interface](#ui-overrides-for-the-editor).
 
@@ -75,13 +75,13 @@ Há vários locais em que você pode definir qual interface de usuário deve ser
 >
 >Várias opções para alternar para a interface do usuário clássica não estão disponíveis imediatamente, elas devem ser configuradas especificamente para sua instância.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>Consulte [Ativando o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
 
 >[!NOTE]
 >
 >As instâncias atualizadas de uma versão anterior manterão a interface clássica para a criação de página.
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). Consulte [Substituições da interface do usuário para o Editor](#ui-overrides-for-the-editor).
+>Após a atualização, a criação de página não será alternada automaticamente para a interface habilitada para toque, mas você pode configurá-la usando a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) do **Serviço de modo de interface de criação do WCM** ( `AuthoringUIMode` serviço). Consulte [Substituições da interface do usuário para o Editor](#ui-overrides-for-the-editor).
 
 ## Configuração da interface de usuário padrão para a sua instância {#configuring-the-default-ui-for-your-instance}
 
@@ -95,7 +95,7 @@ Cada usuário pode acessar suas [preferências de usuário](/help/sites-authorin
 
 Isso pode ser substituído pelas configurações de sessão.
 
-## Alternando para interface clássica para a sessão atual {#switching-to-classic-ui-for-the-current-session}
+## Alternando para interface clássica para a sessão atual  {#switching-to-classic-ui-for-the-current-session}
 
 Usando a interface habilitada para toque, os usuários de desktop podem querer reverter para a interface clássica (somente desktop). Há vários métodos de alternar para a interface de usuário clássica na sessão atual:
 
@@ -106,7 +106,7 @@ Usando a interface habilitada para toque, os usuários de desktop podem querer r
    >Essa opção para alternar para a interface do usuário clássica não estão disponíveis imediatamente, elas devem ser configuradas especificamente para sua instância.
    >
    >
-   >See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+   >Consulte [Ativando o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
 
    Se isso for habilitado, será exibido um ícone (símbolo de monitor) sempre que você passar o mouse sobre um console aplicável. Tocar/clicar nesse link abrirá a localização apropriada na UI clássica.
 
@@ -116,7 +116,7 @@ Usando a interface habilitada para toque, os usuários de desktop podem querer r
 
 * **URL**
 
-   The classic UI can be accessed using the URL for the welcome screen at `welcome.html`. For example:
+   A interface clássica pode ser acessada usando o URL da tela de boas-vindas em `welcome.html`. Por exemplo:
 
    `http://localhost:4502/welcome.html`
 
@@ -133,7 +133,7 @@ Usando a interface habilitada para toque, os usuários de desktop podem querer r
 >
 >Essa opção para alternar para a interface do usuário clássica não estão disponíveis imediatamente, elas devem ser configuradas especificamente para sua instância.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>Consulte [Ativando o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
 
 Se habilitada, a opção **Abrir a interface do usuário clássica** estará disponível na caixa de diálogo **Informações da página**:
 
@@ -145,17 +145,17 @@ As configurações definidas por um usuário ou administrador de sistema podem s
 
 * Durante a criação de páginas:
 
-   * Use of the classic editor is forced when accessing the page using `cf#` in the URL. Por exemplo:
+   * O uso do editor clássico é forçado ao acessar a página usando `cf#` no URL. Por exemplo:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. Por exemplo:
+   * O uso do editor habilitado para toque é forçado ao usar `/editor.html` no URL ou ao usar um dispositivo de toque. Por exemplo:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualquer ação forçada é temporária e válida somente para a sessão do navegador
 
-   * A cookie set will be set dependent on whether touch-enabled ( `editor.html`) or classic ( `cf#`) is used.
+   * Um conjunto de cookies será definido dependendo se o recurso ativado por toque ( `editor.html`) ou clássico ( `cf#`) for usado.
 
 * Ao abrir as páginas com o `siteadmin`, serão feitas verificações relacionadas à existência de:
 
