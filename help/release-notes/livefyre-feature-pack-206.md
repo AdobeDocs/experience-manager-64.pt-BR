@@ -22,28 +22,28 @@ ht-degree: 1%
 
 | Produtos | Livefyre Feature Pack 2.0.6 |
 |--- |--- |
-| Versão | 2.0.6 |
+| Versão | 2,0,6 |
 | Tipo | Versão do recurso |
 | Data | 31 de agosto de 2018 |
 | URL de download | Entre em contato com o administrador |
 | Compatibilidade (*) | AEM 6.4 SP1, 6.4, 6.3 GA e 6.2 SP1 |
 | Descrição | Este pacote permite integrar os recursos de curadoria líderes do setor do Livefyre à sua instância de AEM, permitindo que você publique conteúdo valioso gerado pelo usuário (UGC) das redes sociais para seu site em minutos. |
 
-## Qual a composição de Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack}
+## O que está incluído no Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack}
 
 Este pacote integra os recursos de curadoria líderes do setor do Livefyre à sua instância de AEM, permitindo que você publique conteúdo valioso gerado pelo usuário (UGC) das redes sociais para seu site em minutos. Há três componentes diferentes para este pacote:
 
-**Importar conteúdo UGC para AEM Assets**
+**Importar conteúdo UGC para o AEM Assets**
 
 * Importe o conteúdo gerado pelo usuário (UGC) do Twitter e do Instagram do Livefyre Studio para o AEM Assets usando o Importador UGC.
 * Acesse sua biblioteca do Livefyre.
 * Pesquise em tempo real no Twitter e no Instagram usando o Livefyre Social Search.
 * Gerenciar direitos no UGC.
 
-**Adicionar componentes do Livefyre a AEM Sites ou comunidades**
+**Adicionar componentes do Livefyre ao AEM Sites ou às comunidades**
 
 * Crie e personalize instantaneamente experiências dinâmicas e envolventes usando um conjunto de componentes sociais, incluindo Mapas, Galerias e Muros de Mídia.
-* Publicar UGC em AEM Sites ou comunidades.
+* Publicar UGC no AEM Sites ou nas Comunidades.
 
 **Importar catálogos de produtos para o Livefyre com comércio AEM**
 
@@ -60,10 +60,10 @@ Devido a atualizações que afetam a agregação de conteúdo de contas de usuá
 >
 >O Livefyre Feature Pack 2.0.6 não suporta AEM interface clássica.
 
-#### Novo recurso ou melhoria {#new-feature-or-improvement}
+#### Novo recurso ou aprimoramento {#new-feature-or-improvement}
 
 * Foi adicionada a capacidade de pesquisar UGC antes de configurar direitos para solicitar contas sociais no Livefyre. É necessário configurar contas sociais para solicitar direitos ou substituir a solicitação de direitos se você for o proprietário do conteúdo.
-* O fluxo de trabalho [de solicitação de direitos](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) UGC do Instagram e do Twitter foi atualizado para estar em conformidade com as APIs mais recentes.
+* O fluxo de trabalho de solicitação de direitos do Instagram e do Twitter [UGC](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) foi atualizado para estar em conformidade com as APIs mais recentes.
 * O status dos direitos e as ações apropriadas agora são exibidos na tela de solicitação de direitos.
 
 #### Correções de erros {#bug-fixes}
@@ -72,7 +72,7 @@ Devido a atualizações que afetam a agregação de conteúdo de contas de usuá
 * Correção de um problema em que a contagem de ativos no estúdio Livefyre não correspondia à contagem de ativos na biblioteca UGC AEM.
 * Correção de um problema na biblioteca UGC em que os resultados filtrados eram exibidos após as opções de filtro serem redefinidas.
 * Correção de um problema com Comércio AEM em que os botões de chamada para ação redirecionavam os usuários para o URL incorreto.
-* Correção de um problema em AEM Sites em que arrastar e soltar vários componentes no espaço reservado parsys fazia com que ele desaparecessem.
+* Correção de um problema no AEM Sites em que arrastar e soltar vários componentes no espaço reservado parsys fazia com que ele desaparecessem.
 * Correção de um problema em que as contas sociais desativadas estavam disponíveis para seleção ao enviar uma solicitação de direitos.
 * Correção de um problema em que arrastar e soltar UGC de Ativos em Sites gerava um erro.
 * Correção de um problema em que arrastar e soltar componentes de Bate-papo e Liveblog em Sites não criava o aplicativo.
