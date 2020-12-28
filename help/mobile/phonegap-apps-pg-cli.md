@@ -18,31 +18,31 @@ ht-degree: 0%
 ---
 
 
-# Desenvolvimento de aplicativos com CLI PhoneGap{#developing-apps-with-phonegap-cli}
+# Desenvolvimento de aplicativos com o PhoneGap CLI{#developing-apps-with-phonegap-cli}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 A qualquer momento, como desenvolvedor, você pode executar seu aplicativo em um dispositivo ou em um emulador, desde que tenha configurado seu ambiente de desenvolvimento.
 
 Para executar os seguintes exemplos, você precisará de um sistema que execute o OSx (Mac) com Xcode ou de um sistema Mac/Win/Linux com o Android SDK instalado.
 
-## Bootstrap de seu ambiente de desenvolvimento {#bootstrap-your-development-environment}
+## Bootstrap do ambiente de desenvolvimento {#bootstrap-your-development-environment}
 
 [Configurar CLI do PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
 Para iOS: Para desenvolver para iPhones e iPads, você precisa do Xcode IDE da Apple.
 
-* Descarregue-o gratuitamente [aqui](https://developer.apple.com/xcode/downloads/).
+* Baixe-o gratuitamente [here](https://developer.apple.com/xcode/downloads/).
 * [Guia da plataforma PhoneGap iOS](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
 Para Android: Para desenvolver para iPhones e iPads, você precisa do Android Stuido IDE do Google.
 
-* Descarregue-o gratuitamente [aqui](https://developer.android.com/sdk/index.html).
+* Baixe-o gratuitamente [here](https://developer.android.com/sdk/index.html).
 * [Guia da plataforma PhoneGap Android](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
-## Baixar a fonte {#download-the-source}
+## Baixar a Fonte {#download-the-source}
 
 Depois de inicializar com êxito seu ambiente de desenvolvimento, baixe a fonte do bloco AEM App Build:
 
@@ -70,7 +70,7 @@ A CLI do PhoneGap pode criar um projeto de plataforma, compilar a fonte e implan
 
 >[!NOTE]
 >
->Você pode executar todas essas etapas separadamente, consulte Documentos [CLI do](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/)PhoneGap.
+>Você pode executar todas essas etapas separadamente, consulte [PhoneGap CLI docs](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
 
 1. Verifique se você instalou a CLI PhoneGap, consulte acima.
 1. Em uma janela de console (ou terminal), navegue até o diretório raiz da origem extraída.
@@ -99,7 +99,7 @@ phonegap run ios
 >
 Isso verificará se o ambiente de desenvolvimento PhoneGap CLI está ativo e funcionando corretamente.
 
-## Depurar Javascripts com depuração Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
+## Depurar Javascripts com Safari e IOS debug {#debug-javascripts-with-safari-and-ios-debug}
 
 Você pode depurar JavaScripts de seu aplicativo usando as ferramentas de desenvolvedor do Safari, da mesma forma que faria com um aplicativo da Web.
 
@@ -162,4 +162,4 @@ Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quan
 
 ## Próximas etapas {#the-next-steps}
 
-Depois de saber mais sobre como desenvolver aplicativos com a CLI PhoneGap, consulte [Acessar recursos](/help/mobile/phonegap-access-device-features.md)do dispositivo.
+Depois de saber mais sobre o Desenvolvimento de aplicativos com CLI PhoneGap, consulte [Acessar recursos do dispositivo](/help/mobile/phonegap-access-device-features.md).
