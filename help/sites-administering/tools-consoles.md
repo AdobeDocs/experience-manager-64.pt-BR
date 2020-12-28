@@ -20,37 +20,37 @@ ht-degree: 35%
 
 # Consoles Ferramentas{#tools-consoles}
 
-Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem duas opções do console **Ferramentas** , dependendo da interface do usuário que você está usando:
+Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. No momento, existem dois sabores do console **Ferramentas** dependendo da interface do usuário que você está usando:
 
 * [Ferramentas - IU clássica](#tools-classic-ui)
 * [Ferramentas - IU otimizada ao toque](#tools-touch-optimized-ui)
 
-## Tools - Classic UI {#tools-classic-ui}
+## Ferramentas - Interface clássica {#tools-classic-ui}
 
 <table> 
  <tbody> 
   <tr> 
-   <th>Page or Folder</th> 
+   <th>Página ou pasta</th> 
    <th> </th> 
    <th>Propósito</th> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/msm.md">MSM Control Center</a></td> 
+   <td><a href="/help/sites-administering/msm.md">Centro de controle MSM</a></td> 
    <td> </td> 
    <td>Ponto centralizado para gerenciar seus vários sites.</td> 
   </tr> 
   <tr> 
-   <td>Client Context Configurations<br /> </td> 
+   <td>Configurações de contexto do cliente<br /> </td> 
    <td> </td> 
-   <td>O Contexto <a href="/help/sites-developing/client-context.md">do</a> cliente representa uma coleção de dados do usuário dinamicamente montada. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td> 
+   <td>O <a href="/help/sites-developing/client-context.md">Contexto do cliente</a> representa uma coleção de dados do usuário dinamicamente montada. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td> 
   </tr> 
   <tr> 
    <td>Configurações dos serviços em nuvem<br /> </td> 
    <td> </td> 
-   <td>Mantém configurações relacionadas à <a href="/help/sites-administering/marketing-cloud.md">integração com o Adobe Marketing Cloud</a>.</td> 
+   <td>Mantém configurações relacionadas a <a href="/help/sites-administering/marketing-cloud.md">Integração com o Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/ecommerce.md">Comércio</a></td> 
+   <td><a href="/help/sites-administering/ecommerce.md">Commerce</a></td> 
    <td> </td> 
    <td>Fornece acesso aos importadores e a vários dados do produto.</td> 
   </tr> 
@@ -60,9 +60,9 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Fornece acesso a informações e licenças de direitos digitais.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Health Checker<br /> </td> 
+   <td>DAM - Verificador de integridade<br /> </td> 
    <td> </td> 
-   <td>Compara <code>/var/dam</code> e <code>/content/dam</code> verifica se há<br /> inconsistências. Quaisquer arquivos/pastas listados podem ser sincronizados ou excluídos. Os tipos de nós para comparação de pastas são configuráveis no console da Web.</td> 
+   <td>Compara <code>/var/dam</code> e <code>/content/dam</code> e verifica <br /> se há inconsistências. Quaisquer arquivos/pastas listados podem ser sincronizados ou excluídos. Os tipos de nós para comparação de pastas são configuráveis no console da Web.</td> 
   </tr> 
   <tr> 
    <td>DAM - Indesign Adobe<br /> </td> 
@@ -72,7 +72,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td>DAM - Perfis de vídeo<br /> </td> 
    <td> </td> 
-   <td>perfis configuráveis para transcodificações ffmpeg.</td> 
+   <td>Perfis configuráveis para transcodificações ffmpeg.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">Painéis</a></td> 
@@ -95,7 +95,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Retém a lista de envios de formulário recebidos.</td> 
   </tr> 
   <tr> 
-   <td>Importadores - Editor <a href="/help/sites-administering/bulk-editor.md">em massa</a></td> 
+   <td>Importadores - <a href="/help/sites-administering/bulk-editor.md">Editor em Massa</a></td> 
    <td> </td> 
    <td>Permite que você procure itens e edite-os em massa. Também é possível exportar e importar conteúdo (em massa) para o repositório.</td> 
   </tr>
@@ -130,7 +130,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td> 
   </tr> 
   <tr> 
-   <td>Replicação - Agentes <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">de Replicação</a></td> 
+   <td>Replicação - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Agentes de Replicação</a></td> 
    <td> </td> 
    <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar comentários do usuário do ambiente de publicação para o autor.</td> 
   </tr> 
@@ -150,19 +150,19 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Com o scaffolding, é possível criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar este formulário para criar facilmente as páginas com base nesta estrutura.</td> 
   </tr> 
   <tr> 
-   <td>Segurança - Configuração de <a href="/help/sites-administering/notification.md">autoatendimento </a> </td> 
+   <td>Segurança - <a href="/help/sites-administering/notification.md">Configuração Self-Service </a> </td> 
    <td> </td> 
    <td>Permite que você configure os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirme uma senha que foi redefinida.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentação</a></td> 
    <td> </td> 
-   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td> 
+   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. A segmentação ajuda a alcançar isso ao analisar e caracterizar os detalhes de um visitante.<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Configuração SRP padrão. Consulte Console de configuração <a href="/help/communities/srp-config.md">do</a> Armazenamento.</td> 
+   <td>Configuração SRP padrão. Consulte <a href="/help/communities/srp-config.md">console Configuração do Armazenamento</a>.</td> 
   </tr> 
   <tr> 
    <td>gerenciamento de tarefas</td> 
@@ -175,7 +175,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Nenhuma funcionalidade ativa relacionada a esta entrada.</td> 
   </tr> 
   <tr> 
-   <td>Controle de versão - <a href="/help/sites-deploying/version-purging.md">Expurgar versões</a></td> 
+   <td>Controle de versão - <a href="/help/sites-deploying/version-purging.md">Expurgar Versões</a></td> 
    <td> </td> 
    <td>Permite que você expurgue as versões de página, conforme necessário.</td> 
   </tr> 
@@ -192,12 +192,12 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Fluxo de trabalho</a></td> 
    <td> </td> 
-   <td>Os Workflows controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td> 
+   <td>Os workflows controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Ferramentas - IU otimizada ao toque {#tools-touch-optimized-ui}
+## Ferramentas - Interface otimizada ao toque {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
