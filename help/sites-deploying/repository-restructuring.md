@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Reestruturação dos repositórios no AEM 6.4{#repository-restructuring-in-aem}
+# Reestruturação do repositório no AEM 6.4{#repository-restructuring-in-aem}
 
 ## Introdução {#introduction}
 
@@ -31,7 +31,7 @@ Para esse fim, a partir do AEM 6.4 e para ser continuado em versões futuras, o 
 * AEM código de produto sempre será colocado em /libs, que não deve ser substituído pelo código personalizado
 * O código personalizado deve ser colocado em /apps, /content e /conf
 
-## Impacto nas atualizações 6.4 {#impact-on-upgrades}
+## Impacto nas atualizações do 6.4 {#impact-on-upgrades}
 
 Ao atualizar para o AEM 6.4, um subconjunto grande do conteúdo em /etc será duplicado em outras pastas no repositório. Esses novos locais são os locais preferenciais nos quais o conteúdo é referenciado. No entanto, todas as tentativas foram feitas para que a atualização do AEM 6.4 seja retrocompatível com os locais anteriores na pasta /etc e, portanto, na maioria dos casos, os locais antigos continuarão a ser referenciados pelo código AEM até que as alterações sejam feitas ativamente — e em muitos casos manualmente — no aplicativo de um cliente. Do ponto de vista da linha do tempo, há duas categorias de mudanças:
 
@@ -45,7 +45,7 @@ Ao planejar uma atualização para o AEM 6.4, as seguintes páginas por soluçã
 * [Reestruturação dos repositórios comum a todas as soluções AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Reestruturação do repositório AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
 * [Reestruturação do repositório AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
-* [Reestruturação do repositório do AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
+* [Reestruturação do repositório AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [Reestruturação do repositório AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [Reestruturação do repositório AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [reestruturação do repositório do AEM Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
