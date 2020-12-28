@@ -37,10 +37,10 @@ Estas são algumas recomendações gerais de quando incluir o elemento wrapper q
 
 As seguintes propriedades e nós podem ser aplicados aos componentes para controlar o comportamento de sua tag de decoração:
 
-* **`cq:noDecoration {boolean}`:**Essa propriedade pode ser adicionada a um componente e um valor real força AEM não gerar elementos de invólucro sobre o componente.
-* **`cq:htmlTag`nó :**Esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
-   * **`cq:tagName {String}`:**Isso pode ser usado para especificar uma tag HTML personalizada a ser usada para vincular os componentes em vez do elemento DIV padrão.
-   * **`class {String}`:**Isso pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
+* **`cq:noDecoration {boolean}`:** Essa propriedade pode ser adicionada a um componente e um valor real força AEM não gerar elementos de invólucro sobre o componente.
+* **`cq:htmlTag`node:** Este nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
+   * **`cq:tagName {String}`:** Isso pode ser usado para especificar uma tag HTML personalizada a ser usada para vincular os componentes em vez do elemento DIV padrão.
+   * **`class {String}`:** Isso pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
    * Outros nomes de propriedade serão adicionados como atributos HTML com o mesmo valor String fornecido.
 
 ## Controles de script {#script-controls}
@@ -51,7 +51,7 @@ O comportamento do invólucro difere, no entanto, dependendo se [HTL](/help/site
 
 Em geral, o comportamento do invólucro em HTL pode ser resumido da seguinte forma:
 
-* Nenhum DIV de invólucro é renderizado por padrão (apenas ao fazer `data-sly-resource="foo"`).
+* Nenhum DIV de invólucro é renderizado por padrão (ao fazer apenas `data-sly-resource="foo"`).
 * Todos os modos de wcm (desativados, pré-visualizações, editar no autor e publicar) são renderizados de forma idêntica.
 
 O comportamento do invólucro também pode ser totalmente controlado.
@@ -61,7 +61,7 @@ O comportamento do invólucro também pode ser totalmente controlado.
 
 É possível controlar totalmente o comportamento das tags de wrapper dos scripts HTL e sua lógica associada.
 
-Para obter mais informações sobre o desenvolvimento em HTL, consulte a documentação [](https://helpx.adobe.com/experience-manager/htl/user-guide.html)HTL.
+Para obter mais informações sobre o desenvolvimento em HTL, consulte a documentação [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html).
 
 #### Árvore de decisão {#decision-tree}
 
@@ -69,7 +69,7 @@ Essa árvore decisória resume a lógica que determina o comportamento das tags 
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
-#### Use Cases {#use-cases}
+#### Casos de uso {#use-cases}
 
 Os três casos de uso a seguir fornecem exemplos de como as tags de invólucro são manipuladas e também ilustram como é simples controlar o comportamento desejado das tags de invólucro.
 
@@ -93,9 +93,9 @@ Todos os exemplos a seguir pressupõem a seguinte estrutura de conteúdo e compo
       @class = "component-two"
 ```
 
-#### Caso de uso 1: Incluir um componente para reutilização de código {#use-case-include-a-component-for-code-reuse}
+#### Caso de uso 1: Incluir um componente para a reutilização de código {#use-case-include-a-component-for-code-reuse}
 
-O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização do código. Nesse caso, o componente incluído não é desejado para ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum invólucro é necessário e o componente `cq:htmlTag` será ignorado. Isso pode ser considerado o comportamento padrão.
+O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização do código. Nesse caso, o componente incluído não é desejado para ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum invólucro é necessário e o `cq:htmlTag` do componente será ignorado. Isso pode ser considerado o comportamento padrão.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -109,9 +109,9 @@ Um exemplo seria um componente que inclui um componente de imagem principal para
 
 #### Caso de uso 2: Incluir um componente editável {#use-case-include-an-editable-component}
 
-Outro caso de uso comum é quando os componentes do container incluem componentes filhos editáveis, como um Container de layout. Nesse caso, cada filho incluído precisa imperativamente de um invólucro para que o editor funcione (a menos que explicitamente desabilitado com a `cq:noDecoration` propriedade).
+Outro caso de uso comum é quando os componentes do container incluem componentes filhos editáveis, como um Container de layout. Nesse caso, cada filho incluído precisa imperativamente de um invólucro para que o editor funcione (a menos que explicitamente desabilitado com a propriedade `cq:noDecoration`).
 
-Como o componente incluído é, nesse caso, um componente independente, ele precisa de um elemento de invólucro para que o editor funcione e defina seu layout e estilo para aplicar. Para acionar esse comportamento, há a `decoration=true` opção.
+Como o componente incluído é, nesse caso, um componente independente, ele precisa de um elemento de invólucro para que o editor funcione e defina seu layout e estilo para aplicar. Para acionar esse comportamento, há a opção `decoration=true`.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -132,7 +132,7 @@ Pode haver vários casos complexos, que podem ser facilmente alcançados atravé
 
 `two.html: Hello World!`
 
-Saída resultante `/content/test.html`:
+Resultado `/content/test.html`:
 
 **`<aside class="child">Hello World!</aside>`**
 
@@ -145,7 +145,7 @@ Ao incluir um componente usando `cq:includ`e ou `sling:include`, o comportamento
 
 ### Árvore de decisão {#decision-tree-1}
 
-A árvore decisória a seguir ilustra como `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`e `decorationTagName` afeta o comportamento do invólucro.
+A árvore decisória a seguir ilustra como `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` e `decorationTagName` afetam o comportamento do invólucro.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
