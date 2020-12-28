@@ -57,7 +57,7 @@ Para acessar o console Grupos:
    * A estrutura do site da comunidade deve incluir uma função de grupos
    * Essas capturas de tela são do tutorial Introdução após [criar grupos em publicar](published-site.md)
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-135](assets/chlimage_1-133.png)
 
 Selecione a pasta **[!UICONTROL Grupos]** para abri-la.
 
@@ -110,7 +110,7 @@ Depois que o site da comunidade é publicado, é possível [editar as propriedad
 
 #### MARCA DO GRUPO COMUNITÁRIO {#community-group-branding}
 
-![chlimage_1-133](assets/chlimage_1-135.png)
+![chlimage_1-135](assets/chlimage_1-135.png)
 
 A marca do site da comunidade é uma imagem exibida como um cabeçalho na parte superior de cada página. É possível exibir um banner para o grupo que difere das outras páginas do site.
 
