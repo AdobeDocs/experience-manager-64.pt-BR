@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Reestruturação do repositório Forms no AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Conforme descrito na página principal [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para a AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a AEM Forms Solution. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
+Conforme descrito na página pai [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a Solução AEM Forms. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
 **Com atualização 6.4**
 
@@ -32,9 +32,9 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
 * [Configurações de Cloud Service do Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
 * [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
-## Com atualização 6.4 {#with-upgrade}
+## Com a atualização 6.4 {#with-upgrade}
 
-### Misc {#misc}
+### Diversos {#misc}
 
 | **Localização anterior** | `/etc/clientlibs/fd/fp` |
 |---|---|
@@ -92,12 +92,12 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
 
 ## Antes da atualização do 6.5 {#prior-to-upgrade}
 
-### Configuração do Echosign Cloud Service {#echosign-cloud-service-configuration}
+### Configuração Echosign Cloud Service {#echosign-cloud-service-configuration}
 
 | **Localização anterior** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Orientação relativa à reestruturação** | O utilitário de Migração [de conteúdo](/help/sites-deploying/lazy-content-migration.md) ocioso a ser acionado da interface do usuário de migração da Forms. |
+| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
 | **Notas** | N/A |
 
 ### Configurações do Recaptcha Cloud Service {#recaptcha-cloud-service-configurations}
@@ -105,7 +105,7 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
 | **Localização anterior** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Orientação relativa à reestruturação** | O utilitário de Migração [de conteúdo](/help/sites-deploying/lazy-content-migration.md) ocioso a ser acionado da interface do usuário de migração da Forms. |
+| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
 | **Notas** | N/A |
 
 ### Configurações de Cloud Service do Typekit {#typekit-cloud-service-configurations}
@@ -113,20 +113,20 @@ Conforme descrito na página principal [Reestruturação do repositório AEM 6.4
 | **Localização anterior** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Orientação relativa à reestruturação** | O utilitário de Migração [de conteúdo](/help/sites-deploying/lazy-content-migration.md) ocioso a ser acionado da interface do usuário de migração da Forms. |
+| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
 | **Notas** | N/A |
 
-### Misc {#misc-1}
+### Diversos {#misc-1}
 
 | **Localização anterior** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Orientação relativa à reestruturação** | O utilitário de Migração [de conteúdo](/help/sites-deploying/lazy-content-migration.md) ocioso a ser acionado da interface do usuário de migração da Forms. |
+| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
 | **Notas** | N/A |
 
 | **Localização anterior** | `/etc/designs/fd/fp` |
 |---|---|
 | **Novos locais** | `/libs/fd/fp` |
-| **Orientação relativa à reestruturação** | Todas as referências aos modelos /etc devem ser atualizadas para apontar para suas `/libs` contrapartidas. |
+| **Orientação relativa à reestruturação** | Todas as referências aos modelos /etc devem ser atualizadas para apontar para as respectivas contrapartidas `/libs`. |
 | **Notas** | N/A |
 
