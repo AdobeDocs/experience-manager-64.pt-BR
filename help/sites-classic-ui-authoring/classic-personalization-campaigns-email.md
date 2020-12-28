@@ -23,7 +23,7 @@ ht-degree: 93%
 >[!NOTE]
 >
 >O Adobe não pretende melhorar ainda mais os emails abertos/enviados pelo serviço SMTP AEM.\
->A recomendação é [aproveitar a Adobe Campaign e sua integração](/help/sites-administering/campaign.md)AEM.
+>A recomendação é [aproveitar a Adobe Campaign e sua integração AEM](/help/sites-administering/campaign.md).
 
 O email marketing (por exemplo, informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus leads. No AEM, é possível criar boletins informativos de conteúdo existente do AEM, bem como adicionar novo conteúdo, específico para boletins informativos.
 
@@ -98,7 +98,7 @@ Este documento descreve os fundamentos da criação de informativos no AEM. Para
 
    * **Lista de destinatários padrão**
 
-      lista padrão que deve receber o boletim informativo.
+      Lista padrão que deve receber o boletim informativo.
    As propriedades podem ser atualizadas posteriormente na caixa de diálogo **Propriedades**.
 
 1. Clique em **OK** para salvar.
@@ -146,7 +146,7 @@ Para personalizar um boletim informativo e simular como será sua aparência:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletins informativos, verifique a configuração do OSGi para o Externalizador de links do Day CQ em `http://localhost:4502/system/console/configMgr`.
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta para a execução da instância for alterada.
 
@@ -229,7 +229,7 @@ Você pode enviar um informativo a partir dele mesmo ou da lista. Ambos os proce
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletins informativos, verifique a configuração do OSGi para o Externalizador de links do Day CQ em `http://localhost:4502/system/console/configMgr`.
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta para a execução da instância for alterada.
 
@@ -237,7 +237,7 @@ Você pode enviar um informativo a partir dele mesmo ou da lista. Ambos os proce
 >
 >Se você atualizar provedores de email, fazer um teste de envio ou enviar um informativo, essas operações falharão se o informativo não for publicado primeiro na Instância de publicação ou se a Instância de publicação não estiver disponível. Publique o informativo e verifique se a Instância de publicação está ativa e em execução.
 
-### Envio de informativos a partir de uma campanha {#sending-newsletters-from-a-campaign}
+### Envio de informativos a partir de uma campanha  {#sending-newsletters-from-a-campaign}
 
 Para enviar um informativo a partir da campanha:
 
@@ -293,7 +293,7 @@ Para enviar um informativo de uma lista:
 
 Esta seção descreve como assinar um informativo.
 
-### Assinatura de um informativo {#subscribing-to-a-newsletter-1}
+### Assinatura de um informativo  {#subscribing-to-a-newsletter-1}
 
 Para assinar um boletim informativo (usando o site Geometrixx como um exemplo):
 
