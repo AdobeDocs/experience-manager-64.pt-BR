@@ -22,23 +22,23 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda aproveitar as tecnologias AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
+>Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda aproveitar as tecnologias AEM mais recentes para seus sites, conforme descrito em detalhes no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
 
 Você precisará criar um design para seu site e, no AEM, usará o Designer.
 
 >[!NOTE]
 >
->Para obter mais informações sobre acessibilidade da Web, consulte [AEM e as Diretrizes](/help/managing/web-accessibility.md)de acessibilidade da Web.
+>Para obter mais informações sobre acessibilidade da Web, consulte [AEM e as Diretrizes de acessibilidade da Web](/help/managing/web-accessibility.md).
 
 ## Uso do Designer {#using-the-designer}
 
-Seu design pode ser definido na seção **designs** da guia **Ferramentas** :
+Seu design pode ser definido na seção **designs** da guia **Ferramentas**:
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
 Aqui, você pode criar a estrutura necessária para armazenar o design e, em seguida, fazer upload das folhas de estilos e imagens em cascata necessárias.
 
-Os designs são armazenados em `/etc/designs`. O caminho para o design a ser usado para um site é especificado usando a `cq:designPath` propriedade do `jcr:content` nó.
+Os designs são armazenados em `/etc/designs`. O caminho para o design a ser usado para um site é especificado usando a propriedade `cq:designPath` do nó `jcr:content`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -50,13 +50,13 @@ Os designs são armazenados em `/etc/designs`. O caminho para o design a ser usa
 
 Para realizar seu design, você precisará:
 
-**CSS** - As folhas de estilos em cascata definem os formatos de áreas específicas em suas páginas.
+**CSS**  - As folhas de estilos em cascata definem os formatos de áreas específicas em suas páginas.
 
-**Imagens** - quaisquer imagens que você usa para recursos como planos de fundo e botões.
+**Imagens**  - quaisquer imagens que você usa para recursos como planos de fundo, botões.
 
 ### Considerações ao projetar seu site {#considerations-when-designing-your-website}
 
-Ao desenvolver um site, é altamente recomendável armazenar imagens e arquivos CSS em `/etc/design/<project>` para que você possa fazer referência aos recursos com base no design atual, como descrito pelo seguinte trecho.
+Ao desenvolver um site, é altamente recomendável armazenar imagens e arquivos CSS em `/etc/design/<project>` para que você possa fazer referência a seus recursos com base no design atual, como descrito pelo seguinte trecho.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -67,5 +67,5 @@ O exemplo anterior oferta vários benefícios:
 * Os componentes podem ter uma aparência diferente com base em cada site usando um caminho de design diferente.
 * O redesign do site pode ser feito simplesmente apontando o caminho do design para um nó diferente na raiz do site de `design/v1` para `design/v2.`
 
-* `/etc/designs` e `/content` são os únicos URLs externos que o navegador vê protegendo você de um usuário externo que está curioso sobre o que está abaixo da sua `/apps` árvore. Os benefícios do URL acima também ajudam o administrador do sistema a configurar melhor segurança, pois você está limitando a exposição dos ativos a alguns locais distintos.
+* `/etc/designs` e  `/content` são os únicos URLs externos que o navegador vê protegendo você de um usuário externo que está curioso sobre o que está abaixo da sua  `/apps` árvore. Os benefícios do URL acima também ajudam o administrador do sistema a configurar melhor segurança, pois você está limitando a exposição dos ativos a alguns locais distintos.
 
