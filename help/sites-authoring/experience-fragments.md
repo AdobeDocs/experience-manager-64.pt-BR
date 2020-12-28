@@ -2,7 +2,7 @@
 title: Fragmentos de experiência
 seo-title: Fragmentos de experiência
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -108,7 +108,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 
 >[!NOTE]
 >
->It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
+>Também é possível configurar os [Modelos permitidos para sua instância](#configure-allowed-templates-instance), mas esse método é **não** recomendado, pois os valores podem ser substituídos após a atualização.
 
 ### Configurar os Modelos permitidos para sua Pasta {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 
 >[!CAUTION]
 >
->It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
+>Não é recomendável alterar **[!UICONTROL Modelos permitidos]** por este método, uma vez que os modelos especificados podem ser substituídos após a atualização.
 >
 >Use esta caixa de diálogo apenas para fins informativos.
 
@@ -185,7 +185,7 @@ O Editor de fragmento de experiência oferece recursos semelhantes ao Editor de 
 
 O exemplo de procedimento a seguir ilustra como criar um teaser para um produto:
 
-1. Drag and drop a **[!UICONTROL Category Teaser]** from the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Arraste e solte um **[!UICONTROL Teaser de Categoria]** do [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,15 +289,15 @@ Arraste o bloco de construção para o sistema de parágrafo de qualquer fragmen
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
+Usando o seletor `.plain.` no URL, você pode acessar a execução HTML simples.
 
 Isso está disponível no navegador, mas seu objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL.
 
 A execução HTML simples adiciona o protocolo, o host e o caminho de contexto aos caminhos que são:
 
-* do tipo: `src`, `href`ou `action`
+* do tipo: `src`, `href` ou `action`
 
-* ou terminar com: `-src`ou `-href`
+* ou terminar com: `-src`, ou `-href`
 
 Por exemplo:
 
@@ -309,7 +309,7 @@ Por exemplo:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportar fragmentos de experiência   {#exporting-experience-fragments}
+## Exportar fragmentos de experiência    {#exporting-experience-fragments}
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 
