@@ -18,7 +18,7 @@ ht-degree: 24%
 ---
 
 
-# Integração com a Adobe Campaign{#integrating-with-adobe-campaign}
+# Integração com o Adobe Campaign{#integrating-with-adobe-campaign}
 
 O Adobe Campaign é um conjunto de soluções que permite a você personalizar e entregar campanhas em todos os seus canais online e offline.
 
@@ -36,5 +36,5 @@ Esta documentação descreve como integrar AEM com a Adobe Campaign. Dependendo 
 
 >[!NOTE]
 >
->Para revisar um artigo relacionado AEM Comunidade, consulte: [Integração entre Adobe Experience Manager e Adobe Campaign Standard para criar Newletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
+>Para revisar um artigo relacionado AEM Comunidade, consulte: [Integrando o Adobe Experience Manager e o Adobe Campaign Standard para criar Newletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
 
