@@ -56,14 +56,14 @@ O arquivo `export.csv` resultante pode ser aberto no Excel ou qualquer outro apl
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-The create **CSV Export** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+A opção criar **CSV Export** está disponível ao navegar pelo console **Sites** (na visualização da Lista): é uma opção do menu suspenso **Criar**:
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 Para criar uma exportação de arquivos CSV:
 
 1. Abra o console **Sites** e navegue até o local desejado, se necessário.
-1. From the toolbar, select **Create** then **CSV Export** to open the wizard:
+1. Na barra de ferramentas, selecione **Criar** e **Exportação CSV** para abrir o assistente:
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
