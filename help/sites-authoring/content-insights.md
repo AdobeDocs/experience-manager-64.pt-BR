@@ -22,7 +22,7 @@ ht-degree: 96%
 
 O Content Insight fornece informações sobre o desempenho de páginas usando análises da web e recomendações de SEO. Use o Content Insight para tomar decisões sobre como modificar páginas ou para saber como alterações anteriores modificaram o desempenho. Para cada página criada, você pode abrir o Content Insight para analisá-la.
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![chlimage_1-310](assets/chlimage_1-311.png)
 
 O layout da página do Content Insight muda de acordo com as dimensões da tela e a orientação do dispositivo usado.
 
@@ -51,7 +51,7 @@ Consulte [Alteração do período de relatório](/help/sites-authoring/ci-analyz
 
 >[!NOTE]
 >
->Os relatórios do Content Insight exigem que o administrador integre o AEM com o SiteCatalyst, o Target e o BrightEdge. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>Os relatórios do Content Insight exigem que o administrador integre o AEM com o SiteCatalyst, o Target e o BrightEdge. Consulte [Integração com o SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integração com o Adobe Target](/help/sites-administering/target.md) e [Integração com o BrightEdge](/help/sites-administering/brightedge.md).
 
 ## O Relatório de exibições {#the-views-report}
 
