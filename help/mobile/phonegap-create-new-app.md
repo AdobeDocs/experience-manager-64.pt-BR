@@ -22,23 +22,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Os aplicativos AEM Mobile são baseados em um plano que define uma estrutura de página e propriedades. Você pode configurar as seguintes propriedades do aplicativo:
 
 * **Título:** O título do aplicativo.
-* **Caminho de destino:** O local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
+* **Caminho de destino:** o local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
 
-* **Nome:** O valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado dentro do AEM para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
-* **Descrição:** Uma descrição do aplicativo.
-* **URL do servidor:** O URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
+* **Nome:** O valor padrão é o valor da propriedade Título com caracteres de espaço removidos. O nome é usado dentro do AEM para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
+* **Descrição:** uma descrição do aplicativo.
+* **URL do servidor:** o URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
 
 Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração do PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem é usada apenas como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
 Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
 
 * Compilação: Clique em gerenciar configurações e configure seu serviço de compilação.phonegap.com aqui. Em seguida, na lista suspensa, você poderá selecionar o serviço de nuvem de construção PhoneGap recém-criado.
-* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem SDK [do](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
+* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html). Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
 
 ## Uso de modelos de aplicativo {#using-app-templates}
 
@@ -54,15 +54,15 @@ O pacote de amostras mais recente AEM aplicativos inclui uma versão atualizada 
 Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 
 1. Navegue até o catálogo de aplicativos AEM Mobile: &lt;*server-url*>aem/apps.html/content/mobileapps
-1. Selecione **Criar** e escolha **Aplicativo** como mostrado abaixo
+1. Selecione **Criar** e escolha **Aplicativo** conforme mostrado abaixo
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-Selecione um modelo de aplicativo disponibilizado para você por um desenvolvedor AEM. Consulte [Estrutura de um aplicativo](/help/mobile/phonegap-structure-an-app.md) AEM Mobile para obter ajuda para desenvolvedores.
+Selecione um modelo de aplicativo disponibilizado para você por um desenvolvedor AEM. Consulte [Estrutura de um aplicativo AEM Mobile](/help/mobile/phonegap-structure-an-app.md) para obter ajuda para o desenvolvedor.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
-Preencha os detalhes do novo aplicativo conforme necessário, incluindo a alteração opcional da imagem em miniatura. Esses valores podem ser editados posteriormente no bloco **Gerenciar aplicativo** .
+Preencha os detalhes do novo aplicativo conforme necessário, incluindo a alteração opcional da imagem em miniatura. Esses valores podem ser editados posteriormente no bloco **Gerenciar aplicativo**.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
