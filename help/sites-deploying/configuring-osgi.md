@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# Configuração do OSGi{#configuring-osgi}
+# Configurando o OSGi{#configuring-osgi}
 
-[O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologias da Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos de AEM e sua configuração.
+[O ](https://www.osgi.org/) OSG é um elemento fundamental na pilha de tecnologias da Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos de AEM e sua configuração.
 
 O OSGi &quot;*fornece as primitivas padronizadas que permitem que os aplicativos sejam construídos a partir de componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados*&quot;.
 
-Isso permite o gerenciamento fácil de pacotes, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são tratadas automaticamente. Cada componente OSGi (consulte a Especificação [](https://www.osgi.org/Specifications/HomePage)OSGi) está contido em um dos vários pacotes.
+Isso permite o gerenciamento fácil de pacotes, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são tratadas automaticamente. Cada componente OSGi (consulte a [Especificação OSGi](https://www.osgi.org/Specifications/HomePage)) está contido em um dos vários pacotes.
 
 Você pode gerenciar as configurações desses pacotes:
 
-* usando o console da Web do [Adobe CQ](#osgi-configuration-with-the-web-console)
-* usando arquivos [de configuração](#osgi-configuration-with-configuration-files)
-* configuração de nós de [conteúdo ( `sling:OsgiConfig`) no repositório](#osgi-configuration-in-the-repository)
+* usando o [Adobe CQ Web Console](#osgi-configuration-with-the-web-console)
+* usando [arquivos de configuração](#osgi-configuration-with-configuration-files)
+* configurar [nós-conteúdo ( `sling:OsgiConfig`) no repositório](#osgi-configuration-in-the-repository)
 
-Qualquer um dos métodos pode ser usado embora haja diferenças sutis, principalmente em relação aos Modos de [execução](/help/sites-deploying/configure-runmodes.md):
+Qualquer um dos métodos pode ser usado embora haja diferenças sutis, principalmente em relação aos [Modos de execução](/help/sites-deploying/configure-runmodes.md):
 
 * [Adobe CQ Web Console](#osgi-configuration-with-the-web-console)
 
@@ -50,7 +50,7 @@ Qualquer um dos métodos pode ser usado embora haja diferenças sutis, principal
 * [nós de conteúdo (sling:osgiConfig) no repositório](#osgi-configuration-in-the-repository)
 
    * Isso requer configuração manual usando o CRXDE Lite.
-   * Devido às convenções de nomenclatura dos `sling:OsgiConfig` nós, é possível vincular a configuração a um modo [de](/help/sites-deploying/configure-runmodes.md)execução específico. Você pode até mesmo salvar configurações para mais de um modo de execução no mesmo repositório.
+   * Devido às convenções de nomenclatura dos nós `sling:OsgiConfig`, é possível vincular a configuração a um [modo de execução](/help/sites-deploying/configure-runmodes.md) específico. Você pode até mesmo salvar configurações para mais de um modo de execução no mesmo repositório.
    * Todas as configurações apropriadas são aplicadas imediatamente (dependendo do modo de execução).
 
 Qualquer que seja o método utilizado, todos estes métodos de configuração:
@@ -62,17 +62,17 @@ Qualquer que seja o método utilizado, todos estes métodos de configuração:
 
 >[!NOTE]
 >
->Detalhes de determinadas configurações importantes estão listados em Configurações de [OSGi.](/help/sites-deploying/osgi-configuration-settings.md)
+>Detalhes de determinadas configurações importantes estão listados em [Configurações do OSGi.](/help/sites-deploying/osgi-configuration-settings.md)
 
-## Configuração do OSGi com o Console da Web {#osgi-configuration-with-the-web-console}
+## Configuração do OSGi com o Console Web {#osgi-configuration-with-the-web-console}
 
-O console [da](/help/sites-deploying/web-console.md) Web em AEM fornece uma interface padronizada para configurar os pacotes. A guia **Configuração** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema.
+O [console Web](/help/sites-deploying/web-console.md) no AEM fornece uma interface padronizada para configurar os pacotes. A guia **Configuration** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema.
 
 Quaisquer alterações feitas são imediatamente aplicadas à configuração OSGi relevante, não é necessário reiniciar.
 
 >[!NOTE]
 >
->As alterações feitas no console da Web são salvas no repositório como arquivos [](#osgi-configuration-with-configuration-files)de configuração. Eles podem ser incluídos em pacotes de conteúdo para reutilização em outras instalações.
+>As alterações feitas no console da Web são salvas no repositório como [arquivos de configuração](#osgi-configuration-with-configuration-files). Eles podem ser incluídos em pacotes de conteúdo para reutilização em outras instalações.
 
 >[!NOTE]
 >
@@ -82,9 +82,9 @@ Quaisquer alterações feitas são imediatamente aplicadas à configuração OSG
 
 Para atualizar uma configuração com o console da Web:
 
-1. Acesse a guia **Configuração** do Console da Web:
+1. Acesse a guia **Configuration** do Console da Web:
 
-   * Abrindo o console da Web a partir do link no menu **Ferramenta -> Operações** . Depois de fazer logon no console, você pode usar o menu suspenso de:
+   * Abrindo o console da Web a partir do link no menu **Ferramenta -> Operações**. Depois de fazer logon no console, você pode usar o menu suspenso de:
 
       **OSGi >**
 
@@ -95,16 +95,16 @@ Para atualizar uma configuração com o console da Web:
 
 1. Selecione o pacote que deseja configurar:
 
-   * clique no ícone **Editar** desse pacote
-   * clique no **Nome** do pacote
+   * clicando no ícone **Editar** desse pacote
+   * clicando em **Nome** do conjunto
 
-1. Uma caixa de diálogo abrirá. Aqui você pode editar conforme necessário; por exemplo, defina o Nível **do** log como `INFO`:
+1. Uma caixa de diálogo abrirá. Aqui você pode editar conforme necessário; por exemplo, defina **Nível de registro** como `INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    >[!NOTE]
    >
-   >As atualizações são salvas no repositório como arquivos [de](#osgi-configuration-with-configuration-files)configuração. Para localizá-los posteriormente (por exemplo, para incluir em um pacote de conteúdo para uso em outra instância), anote a identidade persistente ( `PID`).
+   >As atualizações são salvas no repositório como [arquivos de configuração](#osgi-configuration-with-configuration-files). Para localizá-los posteriormente (por exemplo, para incluir em um pacote de conteúdo para uso em outra instância), anote a identidade persistente ( `PID`).
 
 1. Clique em **Salvar**.
 
@@ -112,7 +112,7 @@ Para atualizar uma configuração com o console da Web:
 
    >[!NOTE]
    >
-   >Agora é possível localizar os arquivos [de configuração relacionados](#osgi-configuration-with-configuration-files); por exemplo, para incluir em um pacote de conteúdo para uso em outra instância.
+   >Agora você pode localizar os arquivos de configuração [relacionados](#osgi-configuration-with-configuration-files); por exemplo, para incluir em um pacote de conteúdo para uso em outra instância.
 
 ## Configuração do OSGi com arquivos de configuração {#osgi-configuration-with-configuration-files}
 
@@ -124,18 +124,18 @@ Eles podem ser incluídos em pacotes de conteúdo e reutilizados em outras inst�
 
 >[!NOTE]
 >
->O formato dos arquivos de configuração é muito específico - consulte a documentação [do](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) Sling Apache para obter detalhes completos.
+>O formato dos arquivos de configuração é muito específico - consulte a [documentação do Sling Apache](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) para obter detalhes completos.
 >
 >Por isso, é recomendável criar e manter o arquivo de configuração fazendo alterações reais no console da Web.
 
 O Console da Web não mostra nenhuma indicação de onde as alterações foram salvas no repositório, mas elas podem ser facilmente localizadas:
 
-1. Crie o arquivo de configuração [fazendo uma alteração inicial no console](#osgi-configuration-with-the-web-console)da Web.
+1. Crie o arquivo de configuração fazendo uma alteração inicial no console da Web[.](#osgi-configuration-with-the-web-console)
 1. Abra o CRXDE Lite.
-1. In the **Tools** menu select **Query ...** .
-1. Envie um query do **Tipo** `SQL` para procurar o PID da configuração que você atualizou.
+1. No menu **Ferramentas** selecione **Query ...** .
+1. Envie um query de **Type** `SQL` para procurar o PID da configuração que você atualizou.
 
-   Por exemplo, o Console **de gerenciamento do** Apache Felix OSGi tem a identidade persistente (PID) de:
+   Por exemplo, **Apache Felix OSGi Management Console** tem a identidade persistente (PID) de:
 
    `org.apache.felix.webconsole.internal.servlet.OsgiManager`
 
@@ -157,23 +157,23 @@ O Console da Web não mostra nenhuma indicação de onde as alterações foram s
 
 1. Agora você pode criar um pacote de conteúdo, contendo esse nó, e usá-lo conforme necessário em outras instâncias.
 
-## Configuração do OSGi no repositório {#osgi-configuration-in-the-repository}
+## Configuração do OSGi no Repositório {#osgi-configuration-in-the-repository}
 
 Além de usar o console da Web, você também pode definir detalhes de configuração no repositório. Isso permite que você configure facilmente seus diferentes modos de execução.
 
-Essas configurações são feitas através da criação de `sling:OsgiConfig` nós no repositório para referência do sistema. Esses nós espelham as configurações OSGi e formam uma interface do usuário para eles. Para atualizar os dados de configuração, atualize as propriedades do nó.
+Essas configurações são feitas criando nós `sling:OsgiConfig` no repositório para referência do sistema. Esses nós espelham as configurações OSGi e formam uma interface do usuário para eles. Para atualizar os dados de configuração, atualize as propriedades do nó.
 
 Se você modificar os dados de configuração no repositório, as alterações serão imediatamente aplicadas à configuração OSGi relevante como se as alterações tivessem sido feitas usando o console da Web, com as verificações de validação e consistência apropriadas. Isso também se aplica à ação de copiar uma configuração de `/libs/` para `/apps/`.
 
 Como o mesmo parâmetro de configuração pode ser localizado em vários locais, o sistema:
 
-* pesquisa por todos os nós do tipo `sling:OsgiConfig`
+* pesquisa todos os nós do tipo `sling:OsgiConfig`
 * filtros de acordo com o nome do serviço
 * filtros de acordo com o modo de execução
 
 >[!NOTE]
 >
->Leia também [como definir uma configuração baseada em repositório somente](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html)para uma instância específica.
+>Leia também [como definir uma configuração baseada em repositório apenas para uma instância específica](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html).
 
 ### Adicionando uma nova configuração ao repositório {#adding-a-new-configuration-to-the-repository}
 
@@ -181,28 +181,28 @@ Como o mesmo parâmetro de configuração pode ser localizado em vários locais,
 
 Para adicionar uma nova configuração ao repositório, é necessário saber o seguinte:
 
-1. A identidade **** persistente (PID) do serviço.
+1. A **Identidade Persistente** (PID) do serviço.
 
-   Consulte o campo **Configurações** no console da Web. O nome é mostrado entre parênteses após o nome do pacote (ou nas Informações **de** configuração na parte inferior da página).
+   Consulte o campo **Configurações** no console da Web. O nome é mostrado entre parênteses após o nome do pacote (ou nas **Informações de configuração** na parte inferior da página).
 
-   Por exemplo, crie um nó `com.day.cq.wcm.core.impl.VersionManagerImpl.` para configurar **AEM Gerenciador** de versões do WCM.
+   Por exemplo, crie um nó `com.day.cq.wcm.core.impl.VersionManagerImpl.` para configurar **AEM Gerenciador de versão do WCM**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Se um modo [de](/help/sites-deploying/configure-runmodes.md) execução específico é necessário. Crie a pasta:
+1. Se um [modo de execução](/help/sites-deploying/configure-runmodes.md) específico é necessário. Crie a pasta:
 
    * `config` - para todos os modos de execução
    * `config.author` - pelo ambiente do autor
    * `config.publish` - para o ambiente publish
    * `config.<run-mode>` - se for caso disso
 
-1. Se uma configuração **de configuração** ou configuração de **fábrica** é necessária.
+1. Se **Configuração** ou **Configuração de Fábrica** é necessário.
 1. Os parâmetros individuais a configurar; incluindo qualquer definição de parâmetro existente que precise ser recriada.
 
    Consulte o campo de parâmetro individual no console da Web. O nome é mostrado entre parênteses para cada parâmetro.
 
    Por exemplo, crie uma propriedade
-   `versionmanager.createVersionOnActivation` para configurar **Criar versão na Ativação**.
+   `versionmanager.createVersionOnActivation` para configurar  **Criar versão na Ativação**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -210,7 +210,7 @@ Para adicionar uma nova configuração ao repositório, é necessário saber o s
 
    `select * from sling:OsgiConfig`
 
-   Em caso afirmativo, essa configuração pode ser copiada para ` /apps/<yourProject>/`, em seguida, personalizada no novo local.
+   Em caso afirmativo, essa configuração pode ser copiada para ` /apps/<yourProject>/` e, em seguida, personalizada no novo local.
 
 #### Criação da configuração no repositório {#creating-the-configuration-in-the-repository}
 
@@ -220,7 +220,7 @@ Para adicionar a nova configuração ao repositório:
 
    ` /apps/<yourProject>`
 
-1. Se ainda não existir, crie a `config` pasta ( `sling:Folder`):
+1. Se ainda não existir, crie a pasta `config` ( `sling:Folder`):
 
    * `config` - aplicável a todos os modos de funcionamento
    * `config.<run-mode>` - específico de um modo de funcionamento específico
@@ -230,20 +230,20 @@ Para adicionar a nova configuração ao repositório:
    * Tipo: `sling:OsgiConfig`
    * Nome: a identidade persistente (PID);
 
-      por exemplo, para uso do AEM WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      por exemplo, para AEM o WCM Version Manager use `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
    >Ao fazer uma configuração de fábrica, acrescente `-<identifier>` ao nome.
    >
    >Como em: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >Onde `<identifier>` é substituído pelo texto livre que você (deve) deve digitar para identificar a instância (não é possível omitir essas informações); por exemplo:
+   >Em que `<identifier>` é substituído pelo texto livre que você (deve) deve digitar para identificar a instância (não é possível omitir essas informações); por exemplo:
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. Para cada parâmetro que você deseja configurar, crie uma propriedade neste nó:
 
-   * Nome: o nome do parâmetro, conforme mostrado no console da Web; o nome é mostrado entre parênteses no final da descrição do campo. Por exemplo, para `Create Version on Activation` uso `versionmanager.createVersionOnActivation`
+   * Nome: o nome do parâmetro, conforme mostrado no console da Web; o nome é mostrado entre parênteses no final da descrição do campo. Por exemplo, para `Create Version on Activation` use `versionmanager.createVersionOnActivation`
    * Tipo: conforme apropriado.
    * Valor: conforme necessário.
 
@@ -255,7 +255,7 @@ Para adicionar a nova configuração ao repositório:
 
 >[!CAUTION]
 >
->Você não deve alterar nada no `/libs` caminho.
+>Você não deve alterar nada no caminho `/libs`.
 
 >[!CAUTION]
 >
@@ -267,13 +267,13 @@ Para adicionar a nova configuração ao repositório:
 
 A seguinte ordem de precedência é usada:
 
-1. Nós do repositório em `/apps/*/config...`.com arquivos de tipo `sling:OsgiConfig` ou de propriedade.
+1. Nós do repositório em `/apps/*/config...`.com tipo `sling:OsgiConfig` ou arquivos de propriedade.
 
-1. Nós do repositório com tipo `sling:OsgiConfig` em `/libs/*/config...`. (definições inovadoras).
+1. Nós do repositório com o tipo `sling:OsgiConfig` em `/libs/*/config...`. (definições inovadoras).
 
-1. Qualquer `.config` arquivo de `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. no sistema de arquivos local.
+1. Qualquer arquivo `.config` de `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. no sistema de arquivos local.
 
-Isso significa que uma configuração genérica no `/libs` pode ser mascarada por uma configuração específica do projeto em `/apps`.
+Isso significa que uma configuração genérica em `/libs` pode ser mascarada por uma configuração específica do projeto em `/apps`.
 
 ### Ordem de resolução em tempo de execução {#resolution-order-at-runtime}
 
@@ -282,7 +282,7 @@ As alterações de configuração feitas enquanto o sistema está em execução 
 Em seguida, a seguinte ordem de precedência se aplica:
 
 1. Modificar uma configuração no console da Web terá efeito imediato, pois tem prioridade no tempo de execução.
-1. A modificação de uma configuração no `/apps` terá efeito imediato.
+1. A modificação de uma configuração em `/apps` terá efeito imediato.
 1. A modificação de uma configuração em `/libs` terá efeito imediato, a menos que seja mascarada por uma configuração em `/apps`.
 
 ### Resolução de vários modos de execução {#resolution-of-multiple-run-modes}
@@ -293,15 +293,15 @@ Para configurações específicas do modo de execução, é possível combinar v
 
 As configurações nessas pastas serão aplicadas se todos os modos de execução corresponderem a um modo de execução definido na inicialização.
 
-Por exemplo, se uma instância foi iniciada com os modos de execução `author,dev,emea`, nós de configuração em `/apps/*/config.emea`, `/apps/*/config.author.dev/` e `/apps/*/config.author.emea.dev/` serão aplicados, enquanto nós de configuração em `/apps/*/config.author.asean/` e não `/config/author.dev.emea.noldap/` serão aplicados.
+Por exemplo, se uma instância foi iniciada com os modos de execução `author,dev,emea`, os nós de configuração em `/apps/*/config.emea`, `/apps/*/config.author.dev/` e `/apps/*/config.author.emea.dev/` serão aplicados, enquanto os nós de configuração em `/apps/*/config.author.asean/` e `/config/author.dev.emea.noldap/` não serão aplicados.
 
 Se várias configurações para o mesmo PID forem aplicáveis, a configuração com o maior número de modos de execução correspondentes será aplicada.
 
-Por exemplo, se uma instância foi iniciada com os modos de execução `author,dev,emea`, e ambas `/apps/*/config.author/` e `/apps/*/config.emea.author/` definem uma configuração para\
-`com.day.cq.wcm.core.impl.VersionManagerImpl`, a configuração em `/apps/*/config.emea.author/` será aplicada.
+Por exemplo, se uma instância foi iniciada com os modos de execução `author,dev,emea` e `/apps/*/config.author/` e `/apps/*/config.emea.author/` definir uma configuração para\
+`com.day.cq.wcm.core.impl.VersionManagerImpl`, a configuração em  `/apps/*/config.emea.author/` será aplicada.
 
 A granularidade desta regra está em um nível PID.\
-Não é possível definir algumas propriedades para o mesmo PID em `/apps/*/config.author/` e mais específicas em `/apps/*/config.emea.author/` para o mesmo PID.\
+Não é possível definir algumas propriedades para o mesmo PID em `/apps/*/config.author/` e outras mais específicas em `/apps/*/config.emea.author/` para o mesmo PID.\
 A configuração com o maior número de modos de execução correspondentes será efetiva para todo o PID.
 
 ### Configurações padrão {#standard-configurations}
@@ -322,19 +322,19 @@ A lista a seguir mostra uma pequena seleção das configurações disponíveis (
 
 >[!NOTE]
 >
->Como essas configurações residem em, não `/libs` devem ser editadas diretamente, mas copiadas para a área do aplicativo ( `/apps`) antes da personalização.
+>Como essas configurações residem em `/libs`, elas não devem ser editadas diretamente, mas copiadas para a área do aplicativo ( `/apps`) antes da personalização.
 
-Para lista de todos os nós de configuração em sua instância, use a funcionalidade do **Query** no CRXDE Lite para enviar o seguinte query SQL:
+Para lista de todos os nós de configuração em sua instância, use a funcionalidade **Query** no CRXDE Lite para enviar o seguinte query SQL:
 
 `select * from sling:OsgiConfig`
 
-### Persistência da configuração {#configuration-persistence}
+### Persistência de configuração {#configuration-persistence}
 
 * Se você alterar uma configuração por meio do console da Web, ela será (normalmente) gravada no repositório em:
 
    `/apps/{somewhere}`
 
-   * Por padrão, `{somewhere}` `system/config` a configuração é gravada em
+   * Por padrão, `{somewhere}` é `system/config`, portanto, a configuração é gravada em
 
       `/apps/system/config`
 
@@ -346,13 +346,13 @@ Para lista de todos os nós de configuração em sua instância, use a funcional
 
       `/apps/foo/config/someconfig`
 
-* As configurações alteradas por `admin` são salvas em `*.config` arquivos em:
+* As configurações alteradas por `admin` são salvas nos arquivos `*.config` em:
 
    ```
       /crx-quickstart/launchpad/config
    ```
 
-   * Esta é a área de dados privados do administrador de configuração do OSGi e contém todos os detalhes de configuração especificados por `admin`, independentemente de como eles entraram no sistema.
+   * Esta é a área de dados privados do administrador de configuração OSGi e contém todos os detalhes de configuração especificados por `admin`, independentemente de como eles entraram no sistema.
    * Este é um detalhe de implementação e você nunca deve editar este diretório diretamente.
    * No entanto, é útil saber a localização desses arquivos de configuração para que as cópias possam ser feitas para backup e/ou instalação múltipla:
 
@@ -366,7 +366,7 @@ Para lista de todos os nós de configuração em sua instância, use a funcional
 
 >[!CAUTION]
 >
->Você ***nunca*** deve editar as pastas ou os arquivos em:
+>Você deve ***nunca*** editar as pastas ou arquivos em:
 >
 >`/crx-quickstart/launchpad/config`
 
