@@ -2,7 +2,7 @@
 title: AEM Mobile - Prontidão para o RGPD
 seo-title: AEM Mobile - Prontidão para o RGPD
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# AEM Mobile - Prontidão para o RGPD {#aem-mobile-gdpr-readiness}
+# AEM Mobile - Disponibilidade do GDPR {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ Para garantir que você não esteja confundindo a AEM Mobile com o produto mais 
 
 [https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
-### Início de um pedido RGPD {#initiating-a-gdpr-request}
+### Iniciando uma solicitação do RGPD {#initiating-a-gdpr-request}
 
 Entre em contato com o Atendimento ao cliente da Adobe para iniciar uma solicitação de RGPD para a Digital Publishing Suite.
 
@@ -51,7 +51,7 @@ Forneça pelo menos um dos seguintes:
 * Para usuários de aplicativos do Windows, a ID da App Store do usuário final: *dpsc-windowsAppStoreId*
 * O endereço de email que o usuário final usou para interagir com o aplicativo DPS: *email*
 
-### Perguntas frequentes {#frequently-asked-questions-faq}
+### Perguntas frequentes (FAQ) {#frequently-asked-questions-faq}
 
 **A Adobe excluirá minhas compras da App Store ao iniciar uma solicitação de DELETE?**
 
