@@ -28,7 +28,7 @@ Para a praticidade dos usuários de criação, a interface do usuário habilitad
 >
 >As instâncias atualizadas de uma versão anterior manterão a interface clássica para a criação de página.
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). Consulte [Substituições da interface do usuário para o Editor](#uioverridesfortheeditor).
+>Após a atualização, a criação de página não será alternada automaticamente para a interface habilitada para toque, mas você pode configurá-la usando a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) do **Serviço de modo de interface de criação do WCM** ( `AuthoringUIMode` serviço). Consulte [Substituições da interface do usuário para o Editor](#uioverridesfortheeditor).
 
 ## Configuração da interface de usuário padrão para a sua instância {#configuring-the-default-ui-for-your-instance}
 
