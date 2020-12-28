@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# WebDAV Access{#webdav-access}
+# Acesso WebDAV{#webdav-access}
 
 Para conectar-se a AEM via WebDAV com o KDE:
 
@@ -26,7 +26,7 @@ AEM suporte ao oferta WebDAV que permite exibir e editar o conteúdo do reposit�
 
 ## Geral {#general}
 
-[Instruções detalhadas por sistema](/help/sites-administering/webdav-access.md#connecting-via-webdav) operacional estão incluídas neste documento, mas o principal para conectar-se ao seu repositório usando o protocolo WebDAV é apontar seu cliente WebDAV para o seguinte local:
+[Instruções detalhadas por ](/help/sites-administering/webdav-access.md#connecting-via-webdav) sistema operacional estão incluídas neste documento, mas o principal para conectar-se ao seu repositório usando o protocolo WebDAV é apontar seu cliente WebDAV para o seguinte local:
 
 ```xml
 http://localhost:4502
@@ -34,19 +34,19 @@ http://localhost:4502
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-Este URL, quando conectado a partir do nível do sistema operacional, fornece acesso WebDAV ao espaço de trabalho padrão ( `crx.default`). Embora seja mais simples para o usuário, isso não oferece a ele a flexibilidade adicional de especificar nomes de espaço de trabalho, que podem ser obtidos usando URLs [](/help/sites-administering/webdav-access.md#webdav-urls)WebDAV adicionais.
+Este URL, quando conectado a partir do nível do sistema operacional, fornece acesso WebDAV ao espaço de trabalho padrão ( `crx.default`). Embora seja mais simples para o usuário, não oferece a ele a flexibilidade adicional de especificar nomes de espaço de trabalho, que podem ser obtidos usando [URLs WebDAV](/help/sites-administering/webdav-access.md#webdav-urls) adicionais.
 
 AEM exibe o conteúdo do repositório da seguinte maneira:
 
-* Um nó do tipo `nt:folder` é exibido como uma pasta. Os nós abaixo do `nt:folder` nó são exibidos como o conteúdo da pasta.
+* Um nó do tipo `nt:folder` é exibido como uma pasta. Os nós abaixo do nó `nt:folder` são exibidos como o conteúdo da pasta.
 
-* Um nó do tipo `nt:file` é exibido como um arquivo. Os nós abaixo do `nt:file` nó não são exibidos, mas formam o conteúdo do arquivo.
+* Um nó do tipo `nt:file` é exibido como um arquivo. Os nós abaixo do nó `nt:file` não são exibidos, mas formam o conteúdo do arquivo.
 
-Quando você usa o WebDAV para criar e editar pastas e arquivos, AEM cria e edita os nós necessários `nt:folder` e `nt:file` . Se você planeja usar o WebDAV para importar e exportar conteúdo, tente trabalhar com tipos de `nt:file` e `nt:folder` nós o máximo possível.
+Quando você usa o WebDAV para criar e editar pastas e arquivos, AEM cria e edita os nós `nt:folder` e `nt:file` necessários. Se você planeja usar o WebDAV para importar e exportar conteúdo, tente trabalhar com os tipos de nó `nt:file` e `nt:folder` o máximo possível.
 
 >[!NOTE]
 >
->Antes de configurar o WebDAV, verifique os requisitos [](/help/sites-deploying/technical-requirements.md#webdav-clients)técnicos.
+>Antes de configurar o WebDAV, verifique os [Requisitos técnicos](/help/sites-deploying/technical-requirements.md#webdav-clients).
 
 ## URLs WebDAV {#webdav-urls}
 
@@ -113,7 +113,7 @@ Para conectar com êxito um sistema do Microsoft Windows 7 (e superior) a uma in
 
 Depois que o registro é atualizado, a instância AEM pode ser mapeada como uma unidade.
 
-#### Configuração do Windows 7 e superior {#windows-and-greater-configuration}
+#### Windows 7 e configuração superior {#windows-and-greater-configuration}
 
 Para atualizar o registro para permitir a autenticação básica em uma rede não segura:
 
@@ -123,15 +123,15 @@ Para atualizar o registro para permitir a autenticação básica em uma rede nã
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
    ```
 
-1. Defina a subchave de entrada do `BasicAuthLevel` registro como um valor `2` ou maior.
+1. Defina a subchave de entrada do registro `BasicAuthLevel` como um valor `2` ou superior.
 
    Se ele não estiver presente, adicione a subchave.
 
 1. É necessário reiniciar o sistema para que a alteração do registro tenha efeito.
 
-Consulte a Base de conhecimento 841215 [do suporte da](https://support.microsoft.com/default.aspx/kb/841215) Microsoft para obter mais informações sobre esta alteração no registro.
+Consulte [Base de conhecimento do suporte da Microsoft 841215](https://support.microsoft.com/default.aspx/kb/841215) para obter mais informações sobre esta alteração no registro.
 
-Consulte a Base de conhecimento de suporte da [Microsoft 2445570](https://support.microsoft.com/kb/2445570) para obter informações sobre como melhorar a capacidade de resposta do cliente WebDav no Windows.
+Consulte [KB de suporte da Microsoft 2445570](https://support.microsoft.com/kb/2445570) para obter informações sobre como melhorar a capacidade de resposta do cliente WebDav no Windows.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Consulte a Base de conhecimento de suporte da [Microsoft 2445570](https://suppor
 
 No Windows 8, também é necessário alterar a entrada do registro [conforme descrito para o Windows 7 e posterior](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). No entanto, antes que você possa fazer isso, a Experiência de desktop deve estar ativada para que a entrada do registro seja exibida.
 
-Para ativar a Experiência de desktop, abra o Gerenciador **de** servidores, **Recursos**, **Adicionar recursos** e Experiência **de** desktop.
+Para habilitar a Experiência de desktop, abra **Gerenciador de servidores**, **Recursos**, **Adicionar recursos** e, em seguida, **Experiência de desktop**.
 
 Depois de reiniciar a entrada do registro descrita para o Windows 7 e posterior está disponível. Modifique-o conforme descrito para o Windows 7 e posterior.
 
@@ -149,16 +149,16 @@ Depois de reiniciar a entrada do registro descrita para o Windows 7 e posterior 
 
 Para conectar-se a AEM via WebDAV em um ambiente do Windows:
 
-1. Abra o **Windows Explorer** ou o **File Explorer** e clique em **Computador** ou **Este PC**.
+1. Abra **Windows Explorer** ou **Explorador de Ficheiros** e clique em **Computador** ou **Este PC**.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
-1. Clique em **Mapear unidade** de rede para start do assistente.
+1. Clique em **Mapear unidade de rede** para start do assistente.
 1. Insira os detalhes do mapeamento:
 
    * **Unidade**: Escolha qualquer carta disponível
-   * **Pasta**: `http://localhost:4502`
-   * Verificar o **Connect usando credenciais diferentes**
+   * **Pasta**:  `http://localhost:4502`
+   * Verificar **Ligar utilizando credenciais diferentes**
 
    Clique em Concluir
 
@@ -166,7 +166,7 @@ Para conectar-se a AEM via WebDAV em um ambiente do Windows:
 
    >[!NOTE]
    >
-   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo nome do servidor ou endereço IP respectivos.
+   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo respectivo nome de servidor ou endereço IP.
 
 1. Digite o nome de usuário `admin` e a senha `admin`. O Adobe recomenda que você use a conta de administrador pré-configurada para teste.
 
@@ -174,7 +174,7 @@ Para conectar-se a AEM via WebDAV em um ambiente do Windows:
 
 1. O assistente é fechado e a unidade recém-mapeada é aberta em uma janela do Windows Explorer ou do Explorador de Arquivos.
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![chlimage_1-114](assets/chlimage_1-115.png)
 
 O Windows agora mapeou AEM como uma unidade via WebDAV e você pode usá-la como qualquer outra unidade.
 
@@ -182,13 +182,13 @@ O Windows agora mapeou AEM como uma unidade via WebDAV e você pode usá-la como
 
 Não há etapas de configuração necessárias para a conexão via WebDAV no MacOS. Basta conectar-se ao servidor WebDAV.
 
-1. Navegue até qualquer janela **do Finder** e clique em **Ir** e **Conectar ao servidor**, ou pressione **Command+k**.
-1. Na janela **Conectar-se ao servidor** , digite o local AEM:
+1. Navegue até qualquer janela **Localizador** e clique em **Ir** e **Ligar ao Servidor**, ou prima **Command+k**.
+1. Na janela **Ligar ao Servidor**, introduza o local AEM:
 
    * `http://localhost:4502`
    >[!NOTE]
    >
-   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo nome do servidor ou endereço IP respectivo.
+   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo respectivo nome de servidor ou endereço IP.
 
 1. Quando for solicitada a autenticação, digite o nome de usuário `admin` e a senha `admin`. O Adobe recomenda que você use a conta de administrador pré-configurada para teste.
 
@@ -198,24 +198,24 @@ o MacOS agora se conectou ao AEM via WebDAV e você pode usá-lo como qualquer o
 
 A conexão via WebDAV no Linux não requer nenhuma configuração, mas envolve algumas etapas para fazer a conexão que variam dependendo do seu ambiente para desktop.
 
-#### NOME {#gnome}
+#### GNOME {#gnome}
 
 Para conectar-se a AEM via WebDAV com GNOME:
 
-1. No Nautilus (explorador de arquivos), selecione **Locais** e selecione **Conectar ao servidor**.
-1. Na janela **Conectar ao servidor** , selecione WebDAV (HTTP) em Tipo de serviço.
+1. No Nautilus (explorador de arquivos), selecione **Locais** e selecione **Ligar ao Servidor**.
+1. Na janela **Ligar ao Servidor**, selecione WebDAV (HTTP) em Tipo de Serviço.
 
-1. No **servidor**, digite `http://localhost:4502/crx/repository/crx.default`
+1. Em **Servidor**, introduza `http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
    >
-   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo nome do servidor ou endereço IP respectivos.
+   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo respectivo nome de servidor ou endereço IP.
 
 1. Em **Pasta**, digite `/dav`
-1. Insira o nome de usuário `admin`. O Adobe recomenda que você use a conta de administrador pré-configurada para teste.
+1. Digite o nome de usuário `admin`. O Adobe recomenda que você use a conta de administrador pré-configurada para teste.
 1. Deixe a porta em branco e insira qualquer nome para sua conexão.
-1. Clique em **Conectar**. AEM solicita sua senha.
-1. Digite a senha `admin` e clique em **Connect (Conectar**).
+1. Clique em **Connect**. AEM solicita sua senha.
+1. Digite a senha `admin` e clique em **Connect**.
 
 O GNOME agora montou AEM como um volume e você pode usá-lo como qualquer outro volume.
 
@@ -223,17 +223,17 @@ O GNOME agora montou AEM como um volume e você pode usá-lo como qualquer outro
 
 1. Abra o assistente de pasta de rede.
 1. Selecione **WebFolder**(webdav) e clique em Avançar.
-1. Em **Nome**, digite um nome de conexão.
-1. Em **Usuário**, insira o `admin.` Adobe recomenda que você use a conta de administrador pré-configurada.
-1. No **servidor**, digite `http://localhost:4502/crx/repository/crx.default`
+1. Em **Name**, digite um nome de conexão.
+1. Em **User**, insira `admin.` Adobe recomenda que você use a conta de administrador pré-configurada.
+1. Em **Servidor**, introduza `http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
    >
-   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo nome do servidor ou endereço IP respectivos
+   >Se AEM estiver localizado em outra porta, use esse número de porta em vez de 4502. Além disso, se você não estiver executando o repositório de conteúdo em sua máquina local, substitua `localhost` pelo nome do servidor ou endereço IP respectivo
 
 1. Em **Pasta**, digite `dav`
 
-1. Click **Save and Connect**.
-1. Quando for solicitada sua senha, digite a senha `admin` e clique em **Connect (Conectar**).
+1. Clique em **Salvar e Conectar**.
+1. Quando for solicitada sua senha, digite a senha `admin` e clique em **Connect**.
 
 O KDE agora montou AEM como um volume e você pode usá-lo como qualquer outro volume.
