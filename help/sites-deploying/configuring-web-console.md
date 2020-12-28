@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Console da Web{#web-console}
 
-O console da Web no AEM é baseado no console [de gerenciamento da Web do](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)Apache Felix. O Apache Felix é um esforço comunitário para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
+O console da Web no AEM é baseado no [Console de gerenciamento da Web do Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço comunitário para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
 
 >[!NOTE]
 >
@@ -41,11 +41,11 @@ O console pode ser acessado de `../system/console`; por exemplo:
 
 ## Configuração {#configuration}
 
-A guia **Configuração** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema.
+A guia **Configuration** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema.
 
 >[!NOTE]
 >
->Consulte Configuração do [OSGi com o Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) da Web para obter mais detalhes.
+>Consulte [Configuração OSGi com o Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obter mais detalhes.
 
 A guia **Configuração** pode ser acessada por:
 
@@ -124,7 +124,7 @@ Usando essa guia, é possível:
 
 * **Instalar ou atualizar**
 
-   Você pode **Procurar** para localizar o arquivo que contém seu pacote e especificar se ele deve ser **Start** imediatamente e em que nível **de** Start.
+   Você pode **Procurar** para localizar o arquivo que contém seu pacote e especificar se ele deve **Start** imediatamente e em que **Nível de Start**.
 
 * **Recarregar**
 
@@ -154,11 +154,11 @@ Usando essa guia, é possível:
 
 >[!NOTE]
 >
->Após a **atualização** , é recomendável executar uma **atualização de pacotes**.
+>Depois de **Atualizar**, é recomendável executar **Atualizar Pacotes**.
 
 ## Componentes {#components}
 
-A guia **Componentes** permite ativar e/ou desativar os vários componentes. Ele pode ser acessado por:
+A guia **Components** permite ativar e/ou desativar os vários componentes. Ele pode ser acessado por:
 
 * O menu suspenso:
 
