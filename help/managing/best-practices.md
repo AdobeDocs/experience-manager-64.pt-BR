@@ -24,28 +24,28 @@ O gerenciamento de um projeto para implementar a Adobe Experience Manager (AEM) 
 
 Para ajudá-lo, as práticas recomendadas consistem em:
 
-* Uma lista [de verificação](/help/managing/best-practices-checklist.md) interativa que permite rastrear e monitorar seu progresso com essas práticas recomendadas.
+* Uma [lista de verificação interativa](/help/managing/best-practices-checklist.md) que permite rastrear e monitorar seu progresso com essas práticas recomendadas.
 
    * Define entradas e resultados de acordo com fase, marco e persona.
    * Fornece visões gerais automatizadas (qualidade, integridade e integridade) para indicar progresso e integridade do projeto.
 
-* Documentação, baseada diretamente na [lista](/help/managing/best-practices-checklist.md)de verificação, que detalha:
+* A documentação, baseada diretamente na [checklist](/help/managing/best-practices-checklist.md), detalha o seguinte:
 
-   * [Análise do Heartbeat](#project-heartbeat-dashboard) do Project.
-   * [Visão geral de status por função](#status-by-role) .
+   * [Análise do ](#project-heartbeat-dashboard) Heartbeatanalysis do Project.
+   * [Status por ](#status-by-role) Roleoverview.
    * [Fases e marcos](#phases-and-milestones).
-   * [Pessoa-chave](#persona) e a sua participação em todas as fases (relevantes).
-   * Um [Glossário](/help/managing/best-practices-glossary.md) dos Documentos [obrigatórios e materiais de entrega](#required-documents-and-deliverables).
+   * [Principais ](#persona) personalidades e o seu envolvimento em todas as fases (relevantes).
+   * Um [Glossário](/help/managing/best-practices-glossary.md) dos [Documentos e materiais de entrega necessários](#required-documents-and-deliverables).
 
-* [Material de referência](/help/managing/best-practices-further-reference.md) adicional para fornecer mais detalhes sobre áreas específicas.
+* [Outros ](/help/managing/best-practices-further-reference.md) referenciadores para fornecer mais detalhes sobre áreas específicas.
 
-## Painel do Heartbeat do Project {#project-heartbeat-dashboard}
+## Painel do Project Heartbeat {#project-heartbeat-dashboard}
 
-A planilha do **Project Heartbeat** fornece uma visão geral gráfica das métricas críticas para o seu projeto:
+A planilha **Project Heartbeat** fornece uma visão geral gráfica das métricas críticas para o seu projeto:
 
 * **Qualidade da fase**
 
-   * Indica a qualidade dos Documentos [obrigatórios e dos materiais de entrega](#required-documents-and-deliverables) no projeto.
+   * Indica a qualidade de [Documentos obrigatórios e materiais de entrega](#required-documents-and-deliverables) no projeto.
 
 * **Fase de saúde**
 
@@ -57,13 +57,13 @@ A planilha do **Project Heartbeat** fornece uma visão geral gráfica das métri
 
 ## Status por função {#status-by-role}
 
-A planilha **Status por Função** mostra o detalhamento detalhado de **[Saúde, Qualidade e Completidade](#project-heartbeat-dashboard)** por **[Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
+A planilha **Status por Função** mostra o detalhamento de **[Integridade, Qualidade e Completidade](#project-heartbeat-dashboard)** por **[Fase](#phases-and-milestones)** e **[Persona](#persona)**.
 
 ## Fases e marcos {#phases-and-milestones}
 
 O plano de projeto é dividido em fases distintas (de alto nível).
 
-Cada fase contém seus próprios marcos. Para cada [pessoa](#persona) (ou função), os marcos relevantes são listados, juntamente com os documentos necessários para produzir os resultados definidos.
+Cada fase contém seus próprios marcos. Para cada [persona](#persona) (ou função), os marcos relevantes são listados, juntamente com os documentos necessários para produzir os resultados definidos.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Os Quatro Fatores:
 
 ![project_fases_quatro fases](assets/projectphases_fourphases.png)
 
-#### Milestones {#milestones}
+#### Marcos {#milestones}
 
 * **Validação**
 
@@ -121,7 +121,7 @@ Os Quatro Fatores:
 
 O planejamento do projeto consolida a preparação. Neste caso, é necessário start a conversão das metas e expectativas num roteiro bem definido, que consiste em tarefas concretas, vinculadas por uma comunicação clara, com revisões rigorosas para medir o progresso.
 
-#### Milestones {#milestones-1}
+#### Marcos {#milestones-1}
 
 * **Entrega**
 
@@ -154,11 +154,11 @@ O planejamento do projeto consolida a preparação. Neste caso, é necessário s
    * Assumir o compromisso de todos os que irão participar - isso terá de ser conseguido.
       * Ao envolver os principais jogadores (incluindo os futuros autores) no próprio start do projeto, você aumenta suas chances de se comprometerem com o projeto.
 
-### Preparação do desenvolvimento {#development-preparation}
+### Preparação para desenvolvimento {#development-preparation}
 
 O planejamento do desenvolvimento é fundamental para garantir que seu projeto seja construído com base em um design sólido por uma equipe que tenha o conhecimento necessário.
 
-#### Milestones {#milestones-2}
+#### Marcos {#milestones-2}
 
 * **Equipe de desenvolvimento com pessoal e treinamento**
 
@@ -178,15 +178,15 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
    A arquitetura do sistema define a visualização conceitual do seu sistema; incluindo (entre outras informações):
 
-   * [Estrutura](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) do sistema para todos os ambientes necessários
+   * [Estrutura ](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) do sistema para todos os ambientes necessários
    * Subsistemas
    * Sistemas de terceiros
    * Interfaces; hardware, software e interação humana
-   * Servidores para cada ambiente; consulte os requisitos [](/help/sites-deploying/technical-requirements.md) técnicos e as Diretrizes de dimensionamento de [hardware](/help/managing/hardware-sizing-guidelines.md)
+   * Servidores para cada ambiente; consulte [Requisitos técnicos](/help/sites-deploying/technical-requirements.md) e [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
    * Processos para cada ambiente; por exemplo, requisitos de implantação e manutenção
    * Atividades de manutenção (armazenamento de dados GC, otimização TarPM etc.)
    * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Armazenamento em cache do Dispatcher
-   * [Publicação/Authorshare de cluster](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
+   * [](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) ClusteringPublish/Authorshare
    * Desempenho para o cliente (minify JS, concat, sprites css, número total de solicitações http e outras)
 
 * **Arquitetura de aplicativos**
@@ -212,12 +212,12 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
    A integração do sistema exige que você planeje (em seguida, implemente):
 
-   * Como todos os sub-sistemas e integrações [de](/help/sites-administering/integration.md) soluções serão reunidos para funcionar como um sistema coerente
+   * Como todos os sub-sistemas e [integrações de solução](/help/sites-administering/integration.md) serão reunidos para operar como um sistema coerente
    * Como serão integrados quaisquer sistemas de terceiros; juntamente com quaisquer considerações especiais, como offline/online, gerenciamento no lado do cliente/navegador ou falha quando um sistema de terceiros está inativo
 
 * **Conceito de teste**
 
-   Antes de iniciar o desenvolvimento, você deve elaborar um conceito abrangente e detalhado de todos os requisitos de [teste](/help/sites-developing/planning.md) do seu projeto.
+   Antes de iniciar o desenvolvimento, você deve elaborar um conceito abrangente e detalhado de todos os [requisitos de teste](/help/sites-developing/planning.md) do seu projeto.
 
    Isso deve incluir (entre outros):
 
@@ -237,13 +237,13 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
    Antes do desenvolvimento, todos os processos de suporte, necessários para implantar, liberar, testar e relatar problemas, devem ser definidos.
 
-   Consulte também o Portal [de suporte do](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)Adobe.
+   Consulte também o [Portal de suporte do Adobe](https://helpx.adobe.com/br/marketing-cloud/contact-support.html).
 
-### Planeamento de Operações e Operações {#operations-planning-and-operations}
+### Operações e Planejamento {#operations-planning-and-operations}
 
 Da mesma forma, as operações devem ser adequadamente planejadas para garantir que você tenha os ambientes necessários - para todas as etapas do ciclo de vida do projeto. Você também precisa dos processos apropriados para mantê-los.
 
-#### Milestones {#milestones-3}
+#### Marcos {#milestones-3}
 
 * **Permissões**
 
@@ -251,12 +251,12 @@ Da mesma forma, as operações devem ser adequadamente planejadas para garantir 
 
    Por exemplo:
 
-   * Uma lista de funções (ou seja, grupos) com definições `read`/ `write` acesso para cada
+   * Uma lista de funções (ou seja, grupos) com `read`/ `write` definições de acesso para cada
    * Definição do uso de privilégios que afetam o ambiente de publicação; por exemplo, `replicate`
    * Para usuários com privilégios mínimos, os workflows devem ser definidos
-   * Os utilizadores do `editor` grupo não devem ter `admin` direitos nem fazer parte do `administrators` grupo
+   * Os usuários do grupo `editor` não devem ter `admin` direitos nem fazer parte do grupo `administrators`
 
-   For more information, see [User Administration and Security](/help/sites-administering/security.md).
+   Para obter mais informações, consulte [Administração e segurança do usuário](/help/sites-administering/security.md).
 
 * **Monitoramento e manutenção**
 
@@ -279,7 +279,7 @@ Da mesma forma, as operações devem ser adequadamente planejadas para garantir 
 
 O desenvolvimento é uma fase crucial que requer mais do que apenas codificação.
 
-#### Milestones {#milestones-4}
+#### Marcos {#milestones-4}
 
 * **Ambiente de desenvolvimento**
 
@@ -316,16 +316,16 @@ O desenvolvimento é uma fase crucial que requer mais do que apenas codificaçã
    * Carência de implantação
    * Integração/dependências de software de terceiros
    * Configuração de segurança
-   * Desempenho da linha de base verificado com a execução dos testes [do Dia](/help/sites-developing/tough-day.md) difícil na configuração da produção
-   * Requisitos aplicáveis aos ensaios de desempenho; consulte Práticas [recomendadas para controle de qualidade](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * Desempenho da linha de base verificado com a execução de [Testes de Dia Difícil](/help/sites-developing/tough-day.md) na configuração de produção
+   * Requisitos aplicáveis aos ensaios de desempenho; consulte [Práticas recomendadas para o controle de qualidade](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integração**
 
-   Planeje, documento e teste todos os aspectos da integração [do sistema e da](/help/sites-administering/integration.md)solução, incluindo:
+   Planeje, documento e teste todos os aspectos do sistema e [integração da solução](/help/sites-administering/integration.md), incluindo:
 
    * Uma estratégia de teste automatizado
-   * Processos automatizados para [mover aplicativos do desenvolvimento para o teste e, em seguida, da produção](/help/managing/enterprise-devops.md#code-movement)
-   * Processos automatizados para [mover o conteúdo da produção para teste e desenvolvimento](/help/managing/enterprise-devops.md#content-movement)
+   * Processos automatizados para [mover aplicativos do desenvolvimento para o teste e, em seguida, produção](/help/managing/enterprise-devops.md#code-movement)
+   * Processos automatizados para [mover conteúdo da produção para teste e desenvolvimento](/help/managing/enterprise-devops.md#content-movement)
 
 * **Migração**
 
@@ -356,11 +356,11 @@ Quando o novo aplicativo estiver disponível, ele precisará passar por testes r
 >
 >Cabe ao gestor do projeto avaliar as implicações dos resultados e decidir as medidas adequadas.
 
-#### Milestones {#milestones-5}
+#### Marcos {#milestones-5}
 
 * **Teste de aceitação do usuário final**
 
-   [O teste](/help/sites-developing/acceptance-signoff.md) de aceitação do usuário (UAT) é crucial para garantir que:
+   [O teste](/help/sites-developing/acceptance-signoff.md)  de aceitação do usuário (UAT) é crucial para garantir que:
 
    * A solução atende aos requisitos do usuário/cliente
    * O cliente/usuários aceitam a solução (função, design e desempenho)
@@ -385,7 +385,7 @@ Quando o novo aplicativo estiver disponível, ele precisará passar por testes r
 
 A implantação do novo aplicativo precisa de planejamento cuidadoso para garantir um Go Live suave. Isso inclui confirmar um alto nível de segurança, treinar todos os possíveis usuários e fazer várias passagens a seco para confirmar que todas as questões foram tratadas.
 
-#### Milestones {#milestones-6}
+#### Marcos {#milestones-6}
 
 * **Preparação**
 
@@ -421,13 +421,13 @@ A implantação do novo aplicativo precisa de planejamento cuidadoso para garant
 
    Para garantir a segurança da sua solução, execute testes de penetração específicos, juntamente com uma grande variedade de testes de segurança.
 
-   Consulte a Lista de verificação [de](/help/sites-administering/security-checklist.md) segurança para obter mais detalhes.
+   Consulte a [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais detalhes.
 
 ### Go Live {#go-live}
 
 Você quer que seu Go Live seja o mais suave possível. Novamente, as etapas finais precisam de planejamento para execução limpa.
 
-#### Milestones {#milestones-7}
+#### Marcos {#milestones-7}
 
 * **Preparação**
 
@@ -457,7 +457,7 @@ Você quer que seu Go Live seja o mais suave possível. Novamente, as etapas fin
 
 As listas de verificação são projetadas por pessoas. Estes são os papéis com um envolvimento significativo no ciclo de vida do projeto.
 
-Há também algumas [outras pessoas](#other-persona) envolvidas em tarefas específicas.
+Há também algumas [outras personas](#other-persona) envolvidas em tarefas específicas.
 
 ### Patrocinador do projeto {#project-sponsor}
 
@@ -499,7 +499,7 @@ O analista de negócios:
    * Os critérios para o sucesso.
    * KPIs (baseados em negócios e desempenho).
 
-### Líder de desenvolvimento {#development-lead}
+### Lead de desenvolvimento {#development-lead}
 
 O líder em desenvolvimento:
 
@@ -519,7 +519,7 @@ O líder de qualidade:
 * Define as métricas de qualidade, alinhadas com todos os participantes, elabora os planos de teste e garante que eles sejam executados.
 * Cria e entrega relatórios aos participantes do projeto.
 
-### Engenheiro de sistemas {#system-engineer}
+### Engenheiro de sistema {#system-engineer}
 
 O engenheiro de sistemas:
 
@@ -530,14 +530,14 @@ O engenheiro de sistemas:
 
 * Fornece recomendações de hardware, monitora as várias implementações e fornece suporte às operações antes e depois de entrar em funcionamento.
 
-### Cliente de segurança {#security-lead}
+### líder de segurança {#security-lead}
 
 O líder em segurança:
 
 * É responsável pelo conceito geral de segurança da solução, garantindo que ela esteja alinhada a quaisquer requisitos e políticas do cliente.
 * Oferece um conceito de segurança, operações de segurança e recomendações para quaisquer conceitos de segurança baseados em hardware; como zonas e firewalls.
 
-### Outras pessoas {#other-persona}
+### Outra Pessoa {#other-persona}
 
 * Partes interessadas
    * Pessoas (muitas vezes da empresa) que têm interesse (participação) no sucesso do projeto. Elas contribuem muitas vezes para o orçamento.
@@ -556,31 +556,31 @@ O líder em segurança:
 * Autores e usuários finais
    * As pessoas que usarão o sistema para criar e manter o conteúdo de seu site.
 
-## Documentos e materiais de entrega necessários {#required-documents-and-deliverables}
+## Documentos obrigatórios e materiais de entrega {#required-documents-and-deliverables}
 
-As listas de verificação abrangem os Documentos **** obrigatórios e **materiais** de entrega para cada marco.
+As listas de verificação abrangem os **Documentos obrigatórios** e **Materiais de entrega** para cada marco.
 
 * Não existe relação 1:1 entre estes. por exemplo, um grupo de documentos obrigatórios pode resultar em um único material para distribuição.
 * Uma entrega de uma pessoa pode ser um documento obrigatório para outra pessoa durante o mesmo marco.
 
 ### Documentos obrigatórios {#required-documents}
 
-Os Documentos **** obrigatórios são necessários para a pessoa adequada ao produzir seus resultados.
+Os **Documentos obrigatórios** são necessários para a pessoa apropriada ao produzir seus resultados.
 
-Para cada Documento **** obrigatório, a pessoa deve indicar:
+Para cada **Documento obrigatório** a pessoa deve indicar:
 
 * **S/N**: se foi recebido.
 * **1-3**: Uma indicação da qualidade do documento recebido.
 
-### Resultados {#deliverables}
+### Produtos {#deliverables}
 
 Para cada marco, a pessoa adequada é responsável por fornecer documentos específicos e, portanto, assumir suas responsabilidades por um marco específico.
 
-Para cada **Material a Entregar** , a pessoa deve indicar:
+Para cada **Material a Entregar** a pessoa deve indicar:
 
 * **S/N**: se foi concluído.
 
-Os materiais entregues são frequentemente usados como Documentos **** obrigatórios para o marco atual ou posterior.
+Os resultados são frequentemente usados como **Documentos obrigatórios** para o marco atual ou posterior.
 
 ## Práticas recomendadas relacionadas {#related-best-practices}
 
