@@ -29,7 +29,7 @@ Geralmente, ao implementar um projeto, você tem um código personalizado no AEM
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-See [Integrating AEM with Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) for more information.
+Consulte [Integração de AEM com o Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) para obter mais informações.
 
 ## Exemplo 1: AEM para Adobe Campaign {#example-aem-to-adobe-campaign}
 
@@ -43,11 +43,11 @@ A integração padrão entre AEM e Campanha é baseada em JSON e JSSP (JavaScrip
 
 Neste exemplo, criamos um novo arquivo JSSP personalizado e o chamamos do lado AEM para recuperar o resultado. Isso pode ser usado, por exemplo, para recuperar dados da Adobe Campaign ou para salvar dados no Adobe Campaign.
 
-1. No Adobe Campaign, para criar um novo arquivo JSSP, clique no ícone **Novo** .
+1. No Adobe Campaign, para criar um novo arquivo JSSP, clique no ícone **Novo**.
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. Insira o nome desse arquivo JSSP. Neste exemplo, usamos **cus:custom.jssp** (o que significa que estará na namespace **cus** ).
+1. Insira o nome desse arquivo JSSP. Neste exemplo, usamos **cus:custom.jssp** (o que significa que estará na namespace **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -181,7 +181,7 @@ a API é:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-O final do URL **.1.json** pode ser substituído por **.2.json**, **.3.json**, de acordo com o número de subníveis que você está interessado em obter Para obter todos eles, a palavra-chave **infinity** pode ser usada:
+O fim do URL **.1.json** pode ser substituído por **.2.json**, **.3.json**, de acordo com o número de subníveis que você está interessado em obter todos eles, a palavra-chave **infinity** pode ser usada:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
