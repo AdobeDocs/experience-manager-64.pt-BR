@@ -42,8 +42,8 @@ Para verificar isso, acesse /etc/replication/agents.author.html e clique nos age
 
 **Se uma fila de agente ou algumas filas de agente estiverem travadas:**
 
-1. A fila mostra o status **bloqueado** ? Em caso afirmativo, a instância de publicação não está em execução ou não está totalmente responsiva? Verifique a instância de publicação para ver o que há de errado com ela (ou seja, verifique os registros e veja se há um erro OutOfMemory ou algum outro problema). Então, se for apenas lento, pegue os despejos de thread e analise-os.
-1. O status da fila mostra que a **Fila está ativa - # pendente**? Basicamente, o trabalho de replicação pode estar preso em uma leitura de soquete aguardando a resposta da instância pública ou do dispatcher. Isso pode significar que a instância de publicação ou o dispatcher está com carga alta ou preso em um bloqueio. Tire lixeiras do autor e publique neste caso.
+1. A fila mostra o status **bloqueado**? Em caso afirmativo, a instância de publicação não está em execução ou não está totalmente responsiva? Verifique a instância de publicação para ver o que há de errado com ela (ou seja, verifique os registros e veja se há um erro OutOfMemory ou algum outro problema). Então, se for apenas lento, pegue os despejos de thread e analise-os.
+1. O status da fila mostra **A fila está ativa - # pendente**? Basicamente, o trabalho de replicação pode estar preso em uma leitura de soquete aguardando a resposta da instância pública ou do dispatcher. Isso pode significar que a instância de publicação ou o dispatcher está com carga alta ou preso em um bloqueio. Tire lixeiras do autor e publique neste caso.
 
    * Abra os despejos de thread do autor em um analisador de despejo de thread, verifique se ele mostra que o trabalho de evento de sling do agente de replicação está preso em um soqueteRead.
    * Abra os despejos de thread da publicação em um analisador de despejo de thread, analise o que pode estar fazendo com que a instância de publicação não responda. Você deve ver um thread com POST /bin/receive em seu nome, que é o thread que recebe a replicação do autor.
@@ -84,7 +84,7 @@ Para verificar isso, acesse /etc/replication/agents.author.html e clique nos age
 
 1. Se você suspeitar que o problema esteja relacionado ao envio de eventos/trabalhos de qualquer forma, você também poderá adicionar esse pacote java em categoria:org.apache.sling.evento
 
-### Pausando Fila do Agente de Replicação  {#pausing-replication-agent-queue}
+### Pausando Fila do Agente de Replicação {#pausing-replication-agent-queue}
 
 Às vezes, pode ser adequado pausar a fila de replicação para reduzir a carga no sistema do autor, sem desativá-la. Atualmente, isso só é possível por meio de uma hack de configuração temporária de uma porta inválida. A partir da versão 5.4, você pode ver o botão de pausa na fila do agente de replicação, ele tem algumas limitações
 
@@ -97,19 +97,19 @@ As permissões de página não são replicadas porque são armazenadas nos nós 
 
 Em geral, as permissões de página não devem ser replicadas do autor para publicação e não são, por padrão. Isso porque os direitos de acesso devem ser diferentes nesses dois ambientes. Portanto, é recomendável configurar ACLs na publicação separadamente do autor.
 
-### Fila de replicação bloqueada ao replicar informações de namespace do Autor para publicação {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+### Fila de replicação bloqueada ao replicar informações de namespace do Autor para Publicar {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
 Em alguns casos, a fila de replicação é bloqueada ao tentar replicar informações de namespace da instância do autor para a instância de publicação. Isso ocorre porque o usuário de replicação não tem `jcr:namespaceManagement` privilégio. Para evitar esse problema, verifique se:
 
-* O usuário de replicação (conforme configurado na guia [Transporte](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) >Usuário) também existe na instância Publicar.
+* O usuário de replicação (conforme configurado na guia [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)>User) também existe na instância Publicar.
 * O usuário tem privilégios de leitura e gravação no caminho em que o conteúdo está instalado.
-* O usuário tem `jcr:namespaceManagement` privilégios no nível do repositório. Você pode conceder o privilégio da seguinte maneira:
+* O usuário tem `jcr:namespaceManagement` privilégio no nível do repositório. Você pode conceder o privilégio da seguinte maneira:
 
 1. Faça logon no CRX/DE ( `http://localhost:4502/crx/de/index.jsp`) como administrador.
-1. Clique na guia **Controle de acesso** .
+1. Clique na guia **Controle de acesso**.
 1. Selecione **Repositório**.
 1. Clique em **Adicionar entrada** (o ícone de adição).
 1. Insira o nome do usuário.
-1. Select `jcr:namespaceManagement` from the privileges list.
+1. Selecione `jcr:namespaceManagement` na lista de privilégios.
 1. Clique em OK.
 
