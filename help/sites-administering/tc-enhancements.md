@@ -21,15 +21,15 @@ ht-degree: 0%
 
 Esta página apresenta aprimoramentos e aprimoramentos incrementais para AEM recursos de gerenciamento de tradução.
 
-## Automação de projetos de tradução {#translation-project-automation}
+## Automação do projeto de tradução {#translation-project-automation}
 
 Foram adicionadas opções para melhorar a produtividade trabalhando com projetos de tradução, como a promoção e exclusão automáticas de inicializações de tradução e a programação da execução recorrente de um projeto de tradução.
 
-1. No projeto de tradução, clique ou toque nas reticências na parte inferior do bloco Resumo **da** tradução.
+1. No projeto de tradução, clique ou toque nas reticências na parte inferior do bloco **Resumo da tradução**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Alterne para a guia **Avançado** . Na parte inferior, você pode selecionar Promover **automaticamente inicializações** de tradução.
+1. Alterne para a guia **Avançado**. Na parte inferior, você pode selecionar **Promover automaticamente inicializações de tradução**.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -41,19 +41,19 @@ Foram adicionadas opções para melhorar a produtividade trabalhando com projeto
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
-## Projetos de tradução multilíngue {#multilingual-translation-projects}
+## Projetos de tradução multilíngues {#multilingual-translation-projects}
 
 É possível configurar vários idiomas de público alvo em um projeto de tradução, para reduzir o número total de projetos de tradução criados.
 
-1. No projeto de tradução, clique ou toque nos pontos na parte inferior do bloco Resumo **da** tradução.
+1. No projeto de tradução, clique ou toque nos pontos na parte inferior do bloco **Resumo da tradução**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Alterne para a guia **Avançado** . Você pode adicionar vários idiomas em Idioma **do** Público alvo.
+1. Alterne para a guia **Avançado**. Você pode adicionar vários idiomas em **Idioma do Público alvo**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
-1. Como alternativa, se você estiver iniciando a tradução por meio do painel de referências em Sites, adicione os idiomas e selecione **Criar projeto** de tradução de vários idiomas.
+1. Como alternativa, se você estiver iniciando a tradução por meio do painel de referências no Sites, adicione os idiomas e selecione **Criar projeto de tradução de vários idiomas**.
 
    ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
@@ -61,11 +61,11 @@ Foram adicionadas opções para melhorar a produtividade trabalhando com projeto
 
    ![screen_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
 
-## Atualizações da memória de tradução {#translation-memory-updates}
+## Atualizações de memória de tradução {#translation-memory-updates}
 
 As edições manuais de conteúdo traduzido podem ser sincronizadas de volta ao TMS (Translation Management System) para treinar sua memória de tradução.
 
-1. No console Sites, depois de atualizar o conteúdo de texto em uma página traduzida, selecione **Atualizar memória** de tradução.
+1. No console Sites, depois de atualizar o conteúdo de texto em uma página traduzida, selecione **Atualizar memória de tradução**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
@@ -92,7 +92,7 @@ As raízes de idioma agora podem ser agrupadas em nós, por exemplo, por região
 
 >
 >
-Essa cópia de `es` idioma não será detectada, pois está a dois níveis (Américas/América Central) do `en` nó.
+Essa cópia de idioma `es` não será detectada, pois está a 2 níveis (Américas/América Central) longe do nó `en`.
 
 >[!NOTE]
 >
@@ -102,11 +102,11 @@ Essa cópia de `es` idioma não será detectada, pois está a dois níveis (Amé
 
 Uma propriedade agora pode ser selecionada na visualização lista Sites que mostra se uma página foi traduzida, está na tradução ou ainda não foi traduzida. Para exibi-lo:
 
-1. Em Sites, alterne para a Visualização da **Lista.**
+1. Em Sites, alterne para **Visualização de Lista.**
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Clique ou toque em Configurações **de** Visualização.
+1. Clique ou toque em **Configurações de Visualização**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
@@ -114,7 +114,7 @@ Uma propriedade agora pode ser selecionada na visualização lista Sites que mos
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
-Agora você pode ver uma coluna **traduzida** que mostra o status de conversão das páginas.
+Agora você pode ver uma coluna **Traduzida** que mostra o status de conversão das páginas.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
 
