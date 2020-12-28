@@ -20,26 +20,26 @@ ht-degree: 2%
 
 # Materiais de referência SPA {#spa-reference-materials}
 
-## Referências da API Javascript do SPA{#spa-javascript-api-references}
+## Referências de API Javascript SPA{#spa-javascript-api-references}
 
-Veja a seguir as referências da API JavaScript disponíveis dos módulos NPM para a estrutura SDK do Editor SPA AEM.
+Veja a seguir as referências da API JavaScript disponíveis dos módulos NPM para a estrutura do SDK do Editor SPA AEM.
 
 >[!NOTE]
->O recurso Editor de aplicativo de página única (SPA) requer [AEM 6.4 service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) ou mais recente.
+>O recurso Editor de aplicativos de página única (SPA) requer [AEM Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) ou mais recente do 6.4.
 >
->O Editor SPA é a solução recomendada para projetos que exigem renderização do lado do cliente baseada em estrutura SPA (por exemplo, Reagir ou Angular).
+>O Editor de SPA é a solução recomendada para projetos que exigem renderização do cliente baseada em SPA estrutura (por exemplo, Reagir ou Angular).
 
 * [Mapeamento de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gerenciador de modelo de página](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Reagir componentes editáveis](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Componentes editáveis angulares](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## Repositórios GitHub de origem aberta {#github-repositories}
+## Repositórios de código aberto do GitHub {#github-repositories}
 
-A seguir estão os repositórios de código aberto no GitHub para as bibliotecas SPA.
+A seguir estão os repositórios de código aberto no GitHub para as bibliotecas de SPA.
 
 * [Mapeamento de componentes](https://github.com/adobe/aem-spa-component-mapping)
 * [Gerenciador de modelo de página](https://github.com/adobe/aem-spa-page-model-manager)
 * [Reagir componentes editáveis](https://github.com/adobe/aem-react-editable-components)
 * [Componentes editáveis angulares](https://github.com/adobe/aem-angular-editable-components)
-* [Núcleo do projeto SPA](https://github.com/adobe/aem-spa-project-core)
+* [SPA principal do projeto](https://github.com/adobe/aem-spa-project-core)
