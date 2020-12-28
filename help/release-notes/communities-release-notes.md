@@ -20,9 +20,9 @@ ht-degree: 12%
 
 # AEM Communities Notas de versão {#aem-communities-release-notes}
 
-Esta seção fornece informações sobre as melhorias para AEM Communities desde a versão 6.3. Para saber mais detalhes sobre os novos recursos, consulte [Novidades no AEM 6.4 Comunidades](/help/communities/whats-new-aem-communities.md).
+Esta seção fornece informações sobre as melhorias no AEM Communities desde a versão 6.3. Para saber mais detalhes sobre os novos recursos, consulte [Novidades do AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
 
-To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
+Para obter a versão mais recente, consulte a seção [Implantação de comunidades](/help/communities/deploy-communities.md#latest-releases) da documentação.
 
 ## Melhorias principais {#main-improvements}
 
@@ -65,13 +65,13 @@ Observação: todos esses recursos também estão disponíveis para a AEM 6.3. V
 
 ## Problemas conhecidos {#known-issues}
 
-* **Moderação** - Não é possível excluir a publicação-pai como uma única operação de exclusão da interface do usuário de moderação em massa (CQ-4236797)
-* **Console** - o link Esqueceu o nome de usuário ou a senha está sendo redirecionado para a Página de logon em vez do formulário de recuperação de senha correspondente (CQ-4237682)
+* **Moderação**  - Não é possível excluir a publicação-pai como uma única operação de exclusão da interface do usuário de moderação em massa (CQ-4236797)
+* **Console**  - o link Esqueci o nome de usuário ou a senha está sendo redirecionado para a Página de logon em vez do formulário de recuperação de senha correspondente (CQ-4237682)
 
 ## Selecionar recursos {#select-features}
 
-A Expert Scoring (*Powered by Sensei*) é usada para habilitar a gamificação, que é uma maneira eficaz de encorajar e recompensar um comportamento valioso da comunidade. Também pode ser usado para identificar especialistas para fins de recomendação ou marketing.
+A Expert Scoring (*Powered by Sensei*) é usada para habilitar a gamificação, que é uma maneira eficaz de incentivar e recompensar um comportamento valioso da comunidade. Também pode ser usado para identificar especialistas para fins de recomendação ou marketing.
 
 ## Demonstrações {#demonstrations}
 
-Todos esses recursos podem ser demonstrados usando a Máquina [de demonstração de](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) AEM disponível publicamente no GitHub.com ao usar o cenário de demonstração de AEM Communities e também dentro da nova implementação de referência We.Retail.
+Todos esses recursos podem ser demonstrados usando a [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponível publicamente em GitHub.com ao usar o cenário de demonstração AEM Communities e também dentro da nova implementação de referência We.Retail.
