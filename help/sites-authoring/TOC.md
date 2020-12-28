@@ -18,7 +18,7 @@ ht-degree: 92%
 # Guia do usuário de criação do AEM 6.4 {#authoring}
 
 + [Visão geral do Guia do usuário de criação](home.md)
-+ Tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
++ Tarefas essenciais, ferramentas e conceitos para criação de AEM {#essentials}
    + [Primeiros passos para autores](first-steps.md)
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
    + [Conceito de criação](author.md)
