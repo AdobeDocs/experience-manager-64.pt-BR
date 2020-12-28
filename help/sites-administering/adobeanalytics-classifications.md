@@ -18,14 +18,14 @@ ht-degree: 6%
 ---
 
 
-# Adobe Classifications{#adobe-classifications}
+# Classificações de Adobe{#adobe-classifications}
 
-Classificações de Adobe exportam dados de classificações para a [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de maneira programada. O exportador é uma implementação de um **com.adobe.cq.scheduled.export.Exporter**.
+Classificações de Adobe exportam dados de classificações para [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de maneira programada. O exportador é uma implementação de **com.adobe.cq.scheduled.export.Exporter**.
 
 Para configurar isso:
 
-1. Navegue pelas **Ferramentas, Serviços** da Nuvem até a seção **Adobe Analytics** .
-1. Adicione uma nova configuração. Você verá que o modelo Configuração de classificações **** Adobe Analytics é exibido abaixo da configuração do **Adobe Analytics Framework** . Forneça um **Título** e um **Nome** , conforme necessário:
+1. Navegue por **Ferramentas, Cloudservices** até a seção **Adobe Analytics**.
+1. Adicione uma nova configuração. Você verá que o modelo de Configuração **Classificações Adobe Analytics** é exibido abaixo da configuração **Adobe Analytics Framework**. Forneça um **Título** e **Nome**, conforme necessário:
 
    ![aa-25](assets/aa-25.png)
 
@@ -37,9 +37,9 @@ Para configurar isso:
 
    | **Texto** | **Descrição** |
    |---|---|
-   | Ativado | Selecione **Sim** para ativar as configurações de Classificações de Adobe. |
-   | Substituir quando houver conflito | Selecione **Sim** para substituir qualquer colisão de dados. Por padrão, isso é definido como **Não**. |
-   | Exclusão processada | Se estiver definido como **Sim**, excluirá os nós processados após serem exportados. O padrão é **Falso**. |
+   | Ativado | Selecione **Yes** para ativar as definições de Classificações de Adobe. |
+   | Substituir quando houver conflito | Selecione **Yes** para substituir qualquer colisão de dados. Por padrão, isso está definido como **No**. |
+   | Exclusão processada | Se estiver definido como **Yes**, excluirá os nós processados após serem exportados. O padrão é **False**. |
    | Exportar descrição da tarefa | Informe uma descrição para o trabalho Classificações de Adobe. |
    | Email de notificação | Digite um endereço de email para a notificação de Classificações de Adobe. |
    | Conjunto de relatórios | Informe o Conjunto de relatórios para o qual executar a tarefa de importação. |
@@ -48,7 +48,7 @@ Para configurar isso:
    | Fonte de Dados | Navegue até o caminho para o container de dados. |
    | Exportar programação | Selecione o agendamento para a exportação. O padrão é a cada 30 minutos. |
 
-1. Click **OK** to save your settings.
+1. Clique em **OK** para salvar suas configurações.
 
 ## Modificando o tamanho da página {#modifying-page-size}
 
@@ -58,11 +58,11 @@ Uma página pode ter tamanho máximo de 25000, por definição em Classificaçõ
 
 Para alterar o tamanho da página:
 
-1. Navegue até o console OSGI em **https://&lt;host>:&lt;porta>/system/console/configMgr** e selecione **Adobe AEM Exportador** de classificações.
+1. Navegue até o console OSGI em **https://&lt;host>:&lt;porta>/system/console/configMgr** e selecione **Adobe AEM Classificações Exportador**.
 
-   ![aa-25](assets/aa-26.png)
+   ![aa-26](assets/aa-26.png)
 
-1. Atualize o Tamanho **da página de** exportação, conforme necessário, e clique em **Salvar**.
+1. Atualize **Exportar tamanho da página** conforme necessário e clique em **Salvar**.
 
 ## SAINTDefaultTransformer {#saintdefaulttransformer}
 
@@ -70,9 +70,9 @@ Para alterar o tamanho da página:
 >
 >Classificações de Adobe eram anteriormente conhecidas como Exportador de SAINT.
 
-Um exportador pode utilizar um Transformador para transformar os dados de exportação para um formato específico. Para Classificações de Adobe, foi fornecida uma subinterface `SAINTTransformer<String[]>` que implementa a interface Transformer. Essa interface é usada para restringir o tipo de dados ao `String[]` qual a API de SAINT é usada e para ter uma interface de marcador para localizar tais serviços para seleção.
+Um exportador pode utilizar um Transformador para transformar os dados de exportação para um formato específico. Para Classificações de Adobe, foi fornecida uma subinterface `SAINTTransformer<String[]>` que implementa a interface de Transformer. Essa interface é usada para restringir o tipo de dados a `String[]`, que é usada pela API SAINT e para ter uma interface de marcador para localizar tais serviços para seleção.
 
-Na implementação padrão SAINTDefaultTransformer, os recursos filho da origem do exportador são tratados como registros com nomes de propriedade como chaves e valores de propriedade como valores. A coluna **Chave** é adicionada automaticamente como primeira coluna - seu valor será o nome do nó. As propriedades de namespaced (contendo :) não são consideradas.
+Na implementação padrão SAINTDefaultTransformer, os recursos filho da origem do exportador são tratados como registros com nomes de propriedade como chaves e valores de propriedade como valores. A coluna **Key** é adicionada automaticamente como primeira coluna - seu valor será o nome do nó. As propriedades de namespaced (contendo :) não são consideradas.
 
 *Estrutura do nó:*
 
@@ -90,7 +90,7 @@ Na implementação padrão SAINTDefaultTransformer, os recursos filho da origem 
 
 | **Chave** | **Produto** | **Preço** | **Tamanho** | **Cor** | **Cor^Código** |
 |---|---|---|---|---|---|
-| 1 | Meu nome do produto | 120.90 | M | black | 101 |
+| 1 | Meu nome do produto | 120,90 | M | black | 101 |
 
 As propriedades incluem:
 
@@ -122,19 +122,19 @@ As propriedades incluem:
   </tr> 
   <tr> 
    <td>substituir</td> 
-   <td>Sinalizador para substituir colisões de dados. O padrão é <strong>falso</strong>.</td> 
+   <td>Sinalizador para substituir colisões de dados. O padrão é <strong>false</strong>.</td> 
   </tr> 
   <tr> 
    <td>divisões de verificação</td> 
-   <td>Sinalize para verificar a compatibilidade dos conjuntos de relatórios. Default is <strong>true</strong>.</td> 
+   <td>Sinalize para verificar a compatibilidade dos conjuntos de relatórios. O padrão é <strong>true</strong>.</td> 
   </tr> 
   <tr> 
    <td>deletprocessado</td> 
-   <td>Sinalizador para excluir os nós processados após a exportação. O padrão é <strong>falso</strong>.</td> 
+   <td>Sinalizador para excluir os nós processados após a exportação. O padrão é <strong>false</strong>.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Automatizando a exportação de classificações de Adobe {#automating-adobe-classifications-export}
+## Automatizando a exportação de classificações Adobe {#automating-adobe-classifications-export}
 
 Você pode criar seu próprio fluxo de trabalho, de modo que qualquer nova importação inicie o fluxo de trabalho para criar os dados apropriados e estruturados corretamente em **/var/export/** para que possa ser exportado para Classificações de Adobe.
