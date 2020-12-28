@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Configurar usuários e grupos de usuários {#configure-your-users-and-user-groups}
+# Configure seus usuários e grupos de usuários {#configure-your-users-and-user-groups}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Este capítulo descreve as funções do usuário e como configurar seus usuários e grupos para suportar a criação e o gerenciamento de seus aplicativos móveis.
 
@@ -32,7 +32,7 @@ Este capítulo descreve as funções do usuário e como configurar seus usuário
 
 Os membros do grupo de autores do aplicativo são responsáveis pela criação AEM conteúdo do aplicativo móvel, incluindo páginas, texto, imagens e vídeos.
 
-#### Configuração de grupo - app-autores {#group-configuration-app-authors}
+#### Configuração de grupo - app-author {#group-configuration-app-authors}
 
 1. Crie um novo grupo de usuários chamado &quot;app-autores&quot;:
 
@@ -46,7 +46,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação A
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros individuais da equipe a esse novo grupo por meio do console [Administrador de](http://localhost:4502/libs/granite/security/content/useradmin.md)usuários.
+1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros individuais a esse novo grupo por meio do [Console de administração do usuário](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -61,7 +61,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação A
 
 ### AEM Mobile Application Administrators Group (grupo de administradores de aplicativos) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Os membros do grupo app-admins podem criar conteúdo do aplicativo com as mesmas permissões incluídas com os autores do aplicativo **E** , além disso, são responsáveis por:
+Os membros do grupo app-admins podem criar conteúdo do aplicativo com as mesmas permissões incluídas com os app-autores **AND** além disso, também são responsáveis por:
 
 * Preparação, publicação e limpeza de atualizações do ContentSync OTA do aplicativo
 
@@ -85,7 +85,7 @@ Os membros do grupo app-admins podem criar conteúdo do aplicativo com as mesmas
    >
    >os usuários do fluxo de trabalho são obrigados a criar remotamente com o serviço de PhoneGap Build
 
-1. Navegue até o console [](http://localhost:4502/useradmin) Permissões e adicione permissões para administrar serviços em nuvem
+1. Navegue até o [console de permissões](http://localhost:4502/useradmin) e adicione permissões para administrar serviços em nuvem
 
    * (Ler, Modificar, Criar, Excluir, Replicar) em /etc/cloudservices/mobileservices
 
