@@ -18,7 +18,7 @@ ht-degree: 20%
 ---
 
 
-# Habilitando o acesso à interface clássica{#enabling-access-to-classic-ui}
+# Habilitar acesso à interface clássica{#enabling-access-to-classic-ui}
 
 Com a funcionalidade habilitada para toque alcançando a paridade com e, de fato, excedendo a da interface clássica em muitas áreas de AEM, o acesso à interface clássica por meio da interface habilitada para toque agora é desativado por padrão. As páginas a seguir explicam como reativar esse acesso, se necessário.
 
