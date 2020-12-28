@@ -1,8 +1,8 @@
 ---
 title: Assistente de cópia de idioma
 seo-title: Assistente de cópia de idioma
-description: Saiba mais sobre como usar o Assistente para Cópia de Idioma no AEM.
-seo-description: Saiba mais sobre como usar o Assistente para Cópia de Idioma no AEM.
+description: Saiba mais sobre como usar o Assistente de Cópia de Idioma no AEM.
+seo-description: Saiba mais sobre como usar o Assistente de Cópia de Idioma no AEM.
 uuid: 4a664568-30cf-42d2-b07e-68d5f451328e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -40,15 +40,15 @@ Para acessar este assistente:
 
    ![chlimage_1-50](assets/chlimage_1-50.jpeg)
 
-1. O botão **Avançar** leva você para a etapa **Configurar** do assistente. Aqui você pode adicionar/remover idiomas e selecionar o método de tradução.
+1. O botão **Next** traz você para a etapa **Configure** do assistente. Aqui você pode adicionar/remover idiomas e selecionar o método de tradução.
 
    ![chlimage_1-51](assets/chlimage_1-51.jpeg)
 
    >[!NOTE]
    >
-   >Por padrão, há apenas uma configuração de conversão. Para poder selecionar outras configurações, primeiro é necessário configurar a nuvem. Consulte [Configuração da estrutura](/help/sites-administering/tc-tic.md)de integração de tradução.
+   >Por padrão, há apenas uma configuração de conversão. Para poder selecionar outras configurações, primeiro é necessário configurar a nuvem. Consulte [Configurando a estrutura de integração de tradução](/help/sites-administering/tc-tic.md).
 
-1. O botão **Avançar** leva você para a etapa **Traduzir** do assistente. Aqui você pode escolher entre criar a estrutura apenas, criar um novo projeto de tradução ou adicionar a um projeto de tradução existente.
+1. O botão **Next** traz você para a etapa **Traduzir** do assistente. Aqui você pode escolher entre criar a estrutura apenas, criar um novo projeto de tradução ou adicionar a um projeto de tradução existente.
 
    >[!NOTE]
    >
