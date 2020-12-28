@@ -27,7 +27,7 @@ O Apache Jackrabbit Oak é um esforço para implementar um repositório de conte
 
 É o sucessor do Jackrabbit 2 e é usado pelo AEM 6 como o backend padrão para seu repositório de conteúdo, o CRX.
 
-## Princípios e objetivos de concepção {#design-principles-and-goals}
+## Princípios e objetivos do projeto {#design-principles-and-goals}
 
 O Oak implementa a especificação [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0). Os seus principais objetivos de concepção são:
 
@@ -48,7 +48,7 @@ A finalidade da camada de Armazenamento é:
 * Tornar o armazenamento plugado
 * Fornecer um mecanismo de agrupamento
 
-### Núcleo de carvalho {#oak-core}
+### Oak Core {#oak-core}
 
 O Oak Core adiciona várias camadas à camada do armazenamento:
 
@@ -65,15 +65,15 @@ O principal objetivo do JCR Oak é transformar a semântica do JCR em operaçõe
 
 Além disso, implementações não Java agora são possíveis e fazem parte do conceito JCR Oak.
 
-## Visão geral do Armazenamento {#storage-overview}
+## Visão geral do armazenamento {#storage-overview}
 
 A camada de armazenamento Oak fornece uma camada de abstração para o armazenamento real do conteúdo.
 
-Atualmente, existem duas implementações de armazenamento disponíveis no AEM6: **Armazenamento** Tar e Armazenamento **** MongoDB.
+Atualmente, existem duas implementações de armazenamento disponíveis no AEM6: **Armazenamento Tar** e **Armazenamento MongoDB**.
 
-### Armazenamento do Tar {#tar-storage}
+### Armazenamento de barra {#tar-storage}
 
-O armazenamento Tar usa arquivos tar. Ele armazena o conteúdo como vários tipos de registros em segmentos maiores. Os Journais são usados para rastrear o estado mais recente do repositório.
+O armazenamento Tar usa arquivos tar. Ele armazena o conteúdo como vários tipos de registros em segmentos maiores. Os journais são usados para rastrear o estado mais recente do repositório.
 
 Existem vários princípios básicos de design que foram construídos em torno:
 
@@ -109,7 +109,7 @@ Para cada atualização (confirmação) do conteúdo, uma nova revisão é criad
 
 Há suporte para ramificações, o que permite que o cliente registre várias alterações e as torne visíveis com uma única chamada de mesclagem.
 
-* documentos anteriores
+* Documentos anteriores
 
 O armazenamento MongoDB adiciona dados a um documento com todas as modificações. No entanto, isso só exclui dados se uma limpeza for explicitamente acionada. Os dados antigos são movidos quando um determinado limite é atingido. Os documentos anteriores contêm apenas dados imutáveis, o que significa que contêm apenas revisões confirmadas e unidas.
 
@@ -135,6 +135,6 @@ Para obter mais informações sobre a plataforma AEM, consulte também os artigo
 
 * [Configuração de armazenamento de nós e armazenamento de dados no AEM 6](/help/sites-deploying/data-store-config.md)
 * [Query Oak e indexação](/help/sites-deploying/queries-and-indexing.md)
-* [Elementos do Armazenamento no AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementos do armazenamento no AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM com MongoDB](/help/sites-deploying/aem-with-mongodb.md)
 
