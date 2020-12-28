@@ -27,13 +27,13 @@ Várias configurações prontas para uso estão disponíveis para integração c
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Você também pode configurar sua própria instância dos Trechos **do Analytics** Genérico para definir novas configurações de serviço.
+Você também pode configurar sua própria instância dos **Trechos Genéricos do Analytics** para definir novas configurações de serviço.
 
 As informações são então coletadas por meio de pequenos trechos de código que são adicionados às páginas da Web. Por exemplo:
 
 >[!CAUTION]
 >
->Os scripts não devem estar entre `script` tags.
+>Os scripts não devem estar entre as tags `script`.
 
 ```
 var _gaq = _gaq || [];
@@ -56,10 +56,10 @@ Esses trechos permitem coletar dados e gerar relatórios. Os dados reais coletad
 
 >[!CAUTION]
 >
->O site de demonstração Geometrixx-Outdoors é configurado de forma que os atributos fornecidos nas Propriedades da página sejam anexados ao código fonte html (logo acima da `</html>` tag de extremidade) no `js` script correspondente.
+>O site de demonstração Geometrixx-Outdoors está configurado de forma que os atributos fornecidos nas Propriedades da página sejam anexados ao código fonte html (logo acima da tag `</html>` endtag) no script `js` correspondente.
 >
 >
->Se `/apps` não herdar do componente de página padrão ( `/libs/foundation/components/page`), você (ou seus desenvolvedores) precisará verificar se os `js` scripts correspondentes foram incluídos, por exemplo, incluindo `cq/cloudserviceconfigs/components/servicescomponents`, ou usando um mecanismo semelhante.
+>Se seu próprio `/apps` não herdar do componente de página padrão ( `/libs/foundation/components/page`), você (ou seus desenvolvedores) deverá verificar se os scripts `js` correspondentes foram incluídos, por exemplo, incluindo `cq/cloudserviceconfigs/components/servicescomponents` ou usando um mecanismo semelhante.
 >
 >
 >Sem isso, nenhum dos serviços (Genérico, Analytics, Público alvo etc.) funcionará.
@@ -68,11 +68,11 @@ Esses trechos permitem coletar dados e gerar relatórios. Os dados reais coletad
 
 Para a configuração básica:
 
-1. Open the **Tools** console.
+1. Abra o console **Ferramentas**.
 
-1. No painel esquerdo, expanda Configurações de **Cloud Services**.
+1. No painel esquerdo, expanda **Configurações de Cloud Services**.
 
-1. Clique com o Duplo no trecho **** Genérico do Analytics para abrir a página:
+1. Clique com o duplo em **Snippet do Genic Analytics** para abrir a página:
 
    ![analytics_genericoverview](assets/analytics_genericoverview.png)
 
@@ -86,21 +86,21 @@ Para a configuração básica:
 
 1. Clique em **OK** para salvar.
 
-## Usando seu novo serviço em páginas {#using-your-new-service-on-pages}
+## Usando seu novo serviço nas páginas {#using-your-new-service-on-pages}
 
 Depois de criar a configuração de serviço, agora é necessário configurar as páginas necessárias para usá-la:
 
 1. Navegue até a página.
 
-1. Abra as Propriedades **da** página no sidekick e, em seguida, na guia **Cloud Services** .
+1. Abra o **Propriedades da página** do sidekick e, em seguida, a guia **Cloud Services**.
 
-1. Clique em **Adicionar serviço** e selecione o serviço necessário; por exemplo, o trecho **Genérico do Analytics**:
+1. Clique em **Adicionar Serviço** e selecione o serviço necessário; por exemplo, o **Trecho do Analytics genérico**:
 
    ![analytics_selectservice](assets/analytics_selectservice.png)
 
 1. Clique em **OK** para salvar.
 
-1. Você será redirecionado para a guia **Cloud Services** . O trecho **do Analytics** genérico agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica; por exemplo google-analytics:
+1. Você será redirecionado para a guia **Cloud Services**. O **Trecho do Analytics genérico** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica; por exemplo google-analytics:
 
    ![analytics_select_specific service](assets/analytics_selectspecificservice.png)
 
