@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Integração com a Adobe Campaign Standard{#integrating-with-adobe-campaign-standard}
+# Integração com o Adobe Campaign Standard{#integrating-with-adobe-campaign-standard}
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Para usar as duas soluções juntas ao mesmo tempo, primeiro configure-as para s
 
 Trabalhar com a Adobe Campaign no AEM inclui a capacidade de enviar emails e formulários via Adobe Campaign e está descrita em [Trabalhar com a Adobe Campaign](/help/sites-authoring/campaign.md).
 
-Além disso, os seguintes tópicos podem ser de interesse ao integrar AEM com o [Adobe Campaign](https://docs.campaign.adobe.com/doc/standard/en/home.html):
+Além disso, os seguintes tópicos podem ser de interesse ao integrar AEM com [Adobe Campaign](https://docs.campaign.adobe.com/doc/standard/en/home.html):
 
 * [Práticas recomendadas para modelos de e-mail](/help/sites-administering/best-practices-for-email-templates.md)
 * [Solução de problemas da integração com o Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
@@ -40,18 +40,18 @@ Se você estiver estendendo sua integração com o Adobe Campaign, talvez deseje
 * [Criação de extensões personalizadas](/help/sites-developing/extending-campaign-extensions.md)
 * [Criação de mapeamentos de formulário personalizados](/help/sites-developing/extending-campaign-form-mapping.md)
 
-## Configuração do Adobe Campaign {#configuring-adobe-campaign}
+## Configurando o Adobe Campaign {#configuring-adobe-campaign}
 
 A configuração do Adobe Campaign envolve o seguinte:
 
-1. Configuração do usuário **aemserver** .
+1. Configurando o usuário **aemserver**.
 1. Criando uma conta externa dedicada.
 1. Verificação da opção AEMResourceTypeFilter.
 1. Criando um template do delivery dedicado.
 
 >[!NOTE]
 >
->Para executar essas operações, é necessário ter a função de **administração** no Adobe Campaign.
+>Para executar essas operações, você deve ter a função **administration** no Adobe Campaign.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -63,13 +63,13 @@ Verifique se você tem os seguintes elementos antecipadamente:
 
 >[!CAUTION]
 >
->As operações detalhadas nas seções [Configuração do Adobe Campaign](#configuring-adobe-campaign) e [Configuração do Adobe Experience Manager](#configuring-adobe-experience-manager) são necessárias para que as funcionalidades de integração entre o AEM e o Adobe Campaign funcionem corretamente.
+>As operações detalhadas nas seções [Configurar o Adobe Campaign](#configuring-adobe-campaign) e [Configurar o Adobe Experience Manager](#configuring-adobe-experience-manager) são necessárias para que as funcionalidades de integração entre o AEM e o Adobe Campaign funcionem corretamente.
 
 ### Configuração do usuário aemserver {#configuring-the-aemserver-user}
 
 O usuário **aemserver** deve estar configurado no Adobe Campaign. O **aemserver** é um usuário técnico que será usado para conectar o servidor AEM à Adobe Campaign.
 
-Vá até **Administração** > **Usuários e segurança** > **Usuários** e selecione o usuário **aemserver** . Clique nele para abrir as configurações do usuário.
+Vá para **Administração** > **Utilizadores e Segurança** > **Utilizadores** e selecione o utilizador **aemserver**. Clique nele para abrir as configurações do usuário.
 
 * É necessário definir uma senha para este usuário. Isso não pode ser feito por meio da interface do usuário. Essa configuração deve ser feita em REST por um administrador técnico.
 * Você pode atribuir funções específicas a esse usuário, como **deliveryPrepare**, que permite que o usuário crie e edite delivery.
@@ -84,18 +84,18 @@ Você deve configurar uma conta externa que permita conectar o Adobe Campaign à
 
 Para configurar uma conta externa AEM:
 
-1. Vá até **Administração** > Configurações **** do aplicativo > **Conta externa**.
+1. Vá para **Administração** > **Definições da aplicação** > **Conta externa**.
 
    ![chlimage_1-124](assets/chlimage_1-124.png)
 
-1. Selecione a conta externa **aemInstance** padrão ou crie uma nova clicando no botão **Criar** .
-1. Selecione **Adobe Experience** Manager no campo **Tipo** e insira os parâmetros de acesso usados para sua instância de criação de AEM: endereço do servidor, nome da conta e senha.
+1. Selecione a conta externa padrão **aemInstance** ou crie uma nova clicando no botão **Criar**.
+1. Selecione **Adobe Experience Manager** i no campo **Type** e introduza os parâmetros de acesso utilizados para a instância de criação AEM: endereço do servidor, nome da conta e senha.
 
    >[!NOTE]
    >
-   >Certifique-se de que não adicione uma barra final **/** no final do URL ou a conexão não funcionará.
+   >Certifique-se de que não adicione uma barra **/** final ao final do URL ou a conexão não funcionará.
 
-1. Verifique se a caixa de seleção **Ativado** está selecionada e clique em **Salvar** para salvar suas modificações.
+1. Verifique se a caixa de seleção **Enabled** está selecionada e clique em **Salvar** para salvar suas modificações.
 
 ### Verificação da opção AEMResourceTypeFilter {#verifying-the-aemresourcetypefilter-option}
 
@@ -105,30 +105,30 @@ Essa opção vem pré-configurada; no entanto, se você alterar essa opção, el
 
 Para verificar se a opção **AEMResourceTypeFilter** está configurada:
 
-1. Vá até **Administração** > Configurações **** do aplicativo > **Opções**.
+1. Vá para **Administração** > **Definições da aplicação** > **Opções**.
 1. Na lista, você pode garantir que a opção **AEMResourceTypeFilter** esteja listada e que os caminhos estejam corretos.
 
-### Criação de um template do delivery de email específico para AEM {#creating-an-aem-specific-email-delivery-template}
+### Criando um template do delivery de email específico para AEM {#creating-an-aem-specific-email-delivery-template}
 
 Por padrão, o recurso AEM não está ativado nos modelos de e-mail da Adobe Campaign. Você pode configurar um novo template do delivery de email que será usado para criar emails com conteúdo AEM.
 
 Para criar um template do delivery de email específico para AEM:
 
-1. Vá para **Recursos** > **Modelos** > **Templates do delivery**.
-1. **Ative a seleção** clicando na marca de seleção na barra de ações e selecionando o modelo padrão de e-mail **padrão (e-mail)** existente, em seguida, duplicado-o clicando no ícone **Copiar** e clicando em **Confirmar**.
-1. Desative o modo de seleção clicando no **x** e abra o modelo recém-criado **Copiar do padrão de e-mail (e-mail)** , em seguida, selecione **Editar propriedades** na barra de ação do painel de modelo.
+1. Vá para **Resources** > **Modelos** > **Templates do delivery**.
+1. **Ative a** seleção clicando na marca de seleção na barra de ações e selecionando o modelo  **padrão de e-mail (e-mail)** padrão existente, em seguida, duplicado-o clicando no  **** ícone Copiar e clicando em  **Confirmar**.
+1. Desative o modo de seleção clicando no **x** e abra o modelo recém-criado **Cópia do e-mail padrão (mail)**, em seguida, selecione **Editar propriedades** na barra de ação do painel de modelo.
 
-   Você pode modificar o **Rótulo** do modelo.
+   Você pode modificar o **Label** do modelo.
 
-1. Na seção Propriedades **de conteúdo** , altere a fonte **** de conteúdo para **Adobe Experience Manager**. Em seguida, selecione a conta externa criada anteriormente e clique em **Confirmar**.
+1. Na seção Propriedades **Conteúdo**, altere **Origem do conteúdo** para **Adobe Experience Manager**. Em seguida, selecione a conta externa criada anteriormente e clique em **Confirmar**.
 
-   Salve as modificações clicando em **Confirmar** e em **Salvar.**
+   Salve suas modificações clicando em **Confirmar** e clicando em **Salvar.**
 
    Os delivery de e-mail criados a partir deste modelo terão o recurso de conteúdo AEM ativado.
 
    ![chlimage_1-125](assets/chlimage_1-125.png)
 
-## Configuring Adobe Experience Manager {#configuring-adobe-experience-manager}
+## Configurando o Adobe Experience Manager {#configuring-adobe-experience-manager}
 
 Para configurar o AEM, faça o seguinte:
 
@@ -136,70 +136,70 @@ Para configurar o AEM, faça o seguinte:
 * Conecte AEM ao Adobe Campaign.
 * Configure o externalizador.
 
-### Configuração da replicação entre instâncias AEM {#configuring-replication-between-aem-instances}
+### Configurando a replicação entre instâncias AEM {#configuring-replication-between-aem-instances}
 
 O conteúdo criado da instância de criação de AEM é enviado primeiro para a instância de publicação. Essa instância de publicação transfere o conteúdo para a Adobe Campaign. O agente de replicação deve, portanto, ser configurado para replicar da instância de criação AEM para a instância de publicação AEM.
 
 >[!NOTE]
 >
->Se você não quiser usar o URL de replicação, mas usar o URL voltado para o público, poderá definir o URL **** público na seguinte configuração no OSGi (**Ferramentas** > Console **da** Web > Configuração **OSGi > Integração de Campanha AEM - Configuração**):
+>Se você não quiser usar o URL de replicação, mas em vez disso usar o URL voltado para o público, poderá definir o **URL Público** na seguinte configuração no OSGi (**Ferramentas** > **Console da Web** > **Configuração do OSGi > Integração de Campanhas AEM - Configuração**):
 **URL público:** com.day.cq.mcm.campanha.impl.IntegrationConfigImpl#aem.mcm.campanha.publicUrl
 
 Essa etapa também é necessária para replicar determinadas configurações de instância de criação na instância de publicação.
 
 Para configurar a replicação entre instâncias AEM:
 
-1. Na instância de criação, selecione **AEM logotipo**> **Ferramentas **ícone > **Implantação** > **Replicação** > **Agentes do autor** e clique em Agente **** padrão.
+1. Na instância de criação, selecione **logotipo AEM**> **Ferramentas **ícone > **Implantação** > **Replicação** > **Agentes no autor** e clique em **Agente Padrão**.
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
    >[!NOTE]
    Evite usar localhost (ou seja, uma cópia local de AEM) ao configurar sua integração com o Adobe Campaign, a menos que as instâncias de publicação e autor estejam ambas no mesmo computador.
 
-1. Clique em **Editar** e selecione a guia **Transporte** .
+1. Clique em **Editar** e selecione a guia **Transporte**.
 1. Configure o URI substituindo **localhost** pelo endereço IP ou pelo endereço da instância de publicação AEM.
 
-   ![chlimage_1-129](assets/chlimage_1-127.png)
+   ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### Conectando AEM ao Adobe Campaign {#connecting-aem-to-adobe-campaign}
 
 Antes de poder usar o AEM e o Adobe Campaign juntos, você deve estabelecer o link entre as duas soluções para que elas possam se comunicar.
 
 1. Conecte-se à sua instância de criação de AEM.
-1. Selecione **Ferramentas** > **Operações** > **Nuvem** > **Cloud Services**, em seguida, **Configurar agora** na seção Adobe Campaign.
+1. Selecione **Ferramentas** > **Operações** > **Nuvem** > **Cloud Services** e **Configure now** na seção Adobe Campaign.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
 1. Crie uma nova configuração inserindo um **Título** e clique em **Criar**, ou escolha a configuração existente que deseja vincular à sua instância do Adobe Campaign.
 1. Edite a configuração para que ela corresponda aos parâmetros da sua instância do Adobe Campaign.
 
-   * **Nome de usuário**: **aemserver**, o operador do pacote de Integração de AEM da Adobe Campaign usado para estabelecer o link entre as duas soluções.
+   * **Nome de usuário**:  **aemserver**, o operador do pacote de Integração de AEM da Adobe Campaign usado para estabelecer o link entre as duas soluções.
    * **Senha**: Senha do operador do servidor Adobe Campaign. Talvez seja necessário especificar novamente a senha desse operador diretamente no Adobe Campaign.
    * **Ponto** final da API: URL da instância do Adobe Campaign.
 
-1. Selecione **Conectar-se ao Adobe Campaign** e clique em **OK**.
+1. Selecione **Ligar ao Adobe Campaign** e clique em **OK**.
 
-   ![chlimage_1-127](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-129.png)
 
    >[!NOTE]
-   Depois de [criar seu email e publicá](/help/sites-authoring/campaign.md)-lo, você precisa publicar novamente a configuração na instância de publicação.
+   Depois de [criar seu email e publicá-lo](/help/sites-authoring/campaign.md), você precisa publicar novamente a configuração na instância de publicação.
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
 >[!NOTE]
 Se a conexão falhar, verifique o seguinte:
 * Você pode encontrar um problema de certificado ao usar uma conexão segura com uma instância do Adobe Campaign (https). Será necessário adicionar o certificado de instância do Adobe Campaign ao arquivo **cacerts **do seu JDK.
-* Além disso, consulte [Solução de problemas da integração](/help/sites-administering/troubleshooting-campaignintegration.md)AEM/Adobe Campaign.
+* Além disso, consulte [Resolução de problemas da sua integração AEM/Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md).
 
 
 
 ### Configuração do externalizador {#configuring-the-externalizer}
 
-É necessário [configurar o externalizador](/help/sites-developing/externalizer.md) em AEM na instância do autor. O Externalizador é um serviço OSGi que permite transformar um caminho de recurso em um URL externo e absoluto. Este serviço fornece um local central para configurar esses URLs externos e criá-los.
+É necessário [configurar o externalizador](/help/sites-developing/externalizer.md) no AEM na instância do autor. O Externalizador é um serviço OSGi que permite transformar um caminho de recurso em um URL externo e absoluto. Este serviço fornece um local central para configurar esses URLs externos e criá-los.
 
-Consulte [Configurar o externalizador](/help/sites-developing/externalizer.md) para obter instruções gerais. Para a integração com o Adobe Campaign, certifique-se de configurar o servidor de publicação `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl` não apontar para `localhost:4503` , mas para um servidor que possa ser acessado pelo console do Adobe Campaign.
+Consulte [Configure o externalizador](/help/sites-developing/externalizer.md) para obter instruções gerais. Para a integração com o Adobe Campaign, certifique-se de configurar o servidor de publicação em `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl` não apontar para `localhost:4503`, mas para um servidor que possa ser acessado pelo console do Adobe Campaign.
 
-Se ele apontar para `localhost:4503` ou para outro servidor que a Adobe Campaign não pode acessar, suas imagens não aparecerão no console do Adobe Campaign.
+Se ele apontar para `localhost:4503` ou outro servidor que a Adobe Campaign não pode acessar, suas imagens não aparecerão no console do Adobe Campaign.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
