@@ -40,7 +40,7 @@ ht-degree: 12%
    + [Bibliotecas de tags](taglib.md)
    + Modelos{#templates}
       + [Modelos](templates.md)
-      + [Modelos de página - Editável ](page-templates-editable.md)
+      + [Modelos de página - Editável  ](page-templates-editable.md)
       + [Modelos de página - Estáticos](page-templates-static.md)
       + [Modelos de fragmento de conteúdo](content-fragment-templates.md)
       + [Renderização de modelo adaptável](templates-adaptive-rendering.md)
@@ -88,7 +88,7 @@ ht-degree: 12%
    + [Testando sua interface de usuário](hobbes.md)
    + [Componentes para fragmentos de conteúdo](components-content-fragments.md)
    + [Obter informações da página no formato JSON](pageinfo.md)
-   + internacionalização{#internationalization}
+   + Internacionalização{#internationalization}
       + [Internacionalização de componentes](i18n.md)
       + [Internacionalização de strings de interface](i18n-dev.md)
       + [Uso do tradutor para gerenciar dicionários](i18n-translator.md)
@@ -201,7 +201,7 @@ ht-degree: 12%
    + [Práticas recomendadas de desenvolvimento](development-practices.md)
    + [Arquitetura de conteúdo](content-architecture.md)
    + [Arquitetura de software](software-architecture.md)
-   + Implementação de referência do We.Retail{#we-retail}
+   + Implementação de referência We.Retail{#we-retail}
       + [Implementação de referência do We.Retail](we-retail.md)
       + [Experimentar fragmentos de conteúdo no We.Retail](we-retail-content-fragments.md)
       + [Experimente os componentes principais no We.Retail](we-retail-core-components.md)
