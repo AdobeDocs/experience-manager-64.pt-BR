@@ -52,19 +52,24 @@ Os fatores básicos a serem considerados são (nesta ordem):
 
 ## Arquitetura {#architecture}
 
-Uma configuração de AEM típica consiste em um autor e um ambiente de publicação. Esses ambientes têm requisitos diferentes em relação ao tamanho do hardware subjacente e à configuração do sistema. As considerações detalhadas para ambos os ambientes são descritas nas seções ambiente [do](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) autor e [ambiente](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) de publicação.
+Uma configuração de AEM típica consiste em um autor e um ambiente de publicação. Esses ambientes têm requisitos diferentes em relação ao tamanho do hardware subjacente e à configuração do sistema. As considerações detalhadas para ambos os ambientes estão descritas nas seções [ambiente do autor](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) e [ambiente de publicação](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations).
 
 Em uma configuração de projeto típica, você tem vários ambientes para preparar fases de projeto:
 
-* **ambiente** de desenvolvimento Para desenvolver novos recursos ou fazer mudanças significativas. A prática recomendada é trabalhar usando um ambiente de desenvolvimento por desenvolvedor (geralmente instalações locais em seus sistemas pessoais).
+* **Desenvolvimento**
+ambienteDesenvolver novos recursos ou fazer mudanças significativas. A prática recomendada é trabalhar usando um ambiente de desenvolvimento por desenvolvedor (geralmente instalações locais em seus sistemas pessoais).
 
-* **ambiente** de teste do autor Para verificar as alterações. O número de ambientes de teste pode variar de acordo com os requisitos do projeto (por exemplo, separado para controle de qualidade, teste de integração ou teste de aceitação do usuário).
+* **Criação**
+de ambiente de testePara verificar as alterações. O número de ambientes de teste pode variar de acordo com os requisitos do projeto (por exemplo, separado para controle de qualidade, teste de integração ou teste de aceitação do usuário).
 
-* **Publique o ambiente** de teste principalmente para testar casos de uso de colaboração social e/ou a interação entre o autor e várias instâncias de publicação.
+* **Publicar**
+ambiente de testePrincipalmente para testar casos de uso de colaboração social e/ou a interação entre o autor e várias instâncias de publicação.
 
-* **ambiente** de produção do autor Para os autores editarem o conteúdo.
+* **Ambiente**
+de produção do autorPara os autores editarem o conteúdo.
 
-* **Publicar ambiente** de produção para servir conteúdo publicado.
+* **Publicar**
+ambiente de produçãoPara servir conteúdo publicado.
 
 Além disso, os ambientes podem variar, desde um sistema de servidor único executando AEM e um servidor de aplicativos até um conjunto altamente dimensionado de instâncias agrupadas de várias CPUs e vários servidores. Recomendamos que você use um computador separado para cada sistema de produção e que não execute outros aplicativos nesses computadores.
 
@@ -72,7 +77,7 @@ Além disso, os ambientes podem variar, desde um sistema de servidor único exec
 
 As seções a seguir fornecem orientações sobre como calcular os requisitos de hardware, levando em consideração várias considerações. Para sistemas grandes, sugerimos que você execute um conjunto simples de testes de benchmark internos em uma configuração de referência.
 
-A otimização do desempenho é uma tarefa fundamental que precisa ser realizada antes que qualquer análise comparativa de um projeto específico possa ser feita. Certifique-se de aplicar as recomendações fornecidas na documentação [de Otimização de](/help/sites-deploying/configuring-performance.md) Desempenho antes de executar qualquer teste de benchmark e usar seus resultados para qualquer cálculo de dimensionamento de hardware.
+A otimização do desempenho é uma tarefa fundamental que precisa ser realizada antes que qualquer benchmarking para um projeto específico possa ser feito. Certifique-se de aplicar as recomendações fornecidas na [documentação de Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) antes de executar qualquer teste de benchmark e usar seus resultados para qualquer cálculo de dimensionamento de hardware.
 
 Os requisitos de dimensionamento de hardware para casos de uso avançado precisam ser baseados em uma avaliação detalhada do desempenho do projeto. As características dos casos de uso avançado que exigem recursos de hardware excepcionais incluem combinações de:
 
@@ -80,7 +85,7 @@ Os requisitos de dimensionamento de hardware para casos de uso avançado precisa
 * uso extensivo de código personalizado, workflows personalizados ou bibliotecas de software de terceiros
 * integração com sistemas externos não suportados
 
-### Espaço em disco/disco rígido {#disk-space-hard-drive}
+### Espaço em disco/ Disco rígido {#disk-space-hard-drive}
 
 O espaço em disco necessário depende muito do volume e do tipo do aplicativo da Web. Os cálculos devem ter em conta:
 
@@ -109,12 +114,12 @@ Um site seguro contra falhas é implantado em pelo menos dois sistemas separados
 
 #### Escalabilidade dos recursos do sistema {#system-resources-scalability}
 
-Enquanto todos os sistemas estão em execução, um desempenho computacional aumentado está disponível. Que o desempenho adicional não é necessariamente linear com o número de nós do cluster, uma vez que a relação é altamente dependente do ambiente técnico; consulte a documentação [do](/help/sites-deploying/recommended-deploys.md) Cluster para obter mais informações.
+Enquanto todos os sistemas estão em execução, um desempenho computacional aumentado está disponível. Que o desempenho adicional não é necessariamente linear com o número de nós do cluster, uma vez que a relação é altamente dependente do ambiente técnico; consulte a [Documentação do cluster](/help/sites-deploying/recommended-deploys.md) para obter mais informações.
 
 A estimativa de quantos nós de cluster são necessários baseia-se nos requisitos básicos e nos casos de utilização específicos do projeto Web específico:
 
-* Do ponto de vista da segurança contra falhas, é necessário determinar, para todos os ambientes, o quão crítica é a falha e o tempo de compensação da falha com base no tempo necessário para que um nó de cluster se recupere.
-* Para o aspecto da escalabilidade, o número de operações de gravação é basicamente o fator mais importante; consulte [Autores trabalhando em paralelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) para o ambiente do autor e Colaboração [](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) social para o ambiente de publicação. Pode ser estabelecido um equilíbrio de carga para operações que tenham acesso ao sistema exclusivamente para processar operações de leitura; consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) para obter detalhes.
+* Do ponto de vista da segurança contra falhas, é necessário determinar, para todos os ambientes, o quão crítica é a falha e o tempo de compensação da falha com base no tempo necessário para a recuperação de um nó de cluster.
+* Para o aspecto da escalabilidade, o número de operações de gravação é basicamente o fator mais importante; consulte [Autores trabalhando em paralelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) para o ambiente do autor e [Colaboração social](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) para o ambiente de publicação. O equilíbrio de carga pode ser estabelecido para operações que acessam a rede exclusivamente para processar operações de leitura; consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) para obter detalhes.
 
 ## Cálculos específicos do ambiente do autor {#author-environment-specific-calculations}
 
@@ -134,7 +139,7 @@ Para fins de benchmarking, a Adobe desenvolveu alguns testes de benchmark para i
 
    * **Resultado**
 
-      A taxa de transferência máxima para um cenário de operação combinada deste tipo foi de 3252 transações por hora.
+      A taxa de transferência máxima para esse cenário de operação combinada foi de 3252 transações por hora.
 
 >[!NOTE]
 >
@@ -182,7 +187,7 @@ Você pode calcular o número de computadores (ou CPUs) necessários para o ambi
 
 Essa fórmula pode servir como uma diretriz geral para o dimensionamento de CPUs quando os autores executam operações básicas com AEM. Ele presume que o sistema e o aplicativo estejam otimizados. No entanto, a fórmula não será verdadeira para recursos avançados, como MSM ou Assets (consulte as seções abaixo).
 
-Consulte também os comentários adicionais sobre [Paralelização](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) e Otimização [de Desempenho](/help/sites-deploying/configuring-performance.md).
+Consulte também os comentários adicionais sobre [Paralelização](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) e [Otimização de Desempenho](/help/sites-deploying/configuring-performance.md).
 
 ### Hardware Recommendations {#hardware-recommendations}
 
@@ -201,7 +206,7 @@ AEM instâncias estavam sendo executadas com um tamanho mínimo de heap de 256M,
 
 ## Publicar cálculos específicos do ambiente {#publish-environment-specific-calculations}
 
-### Eficiência de cache e tráfego {#caching-efficiency-and-traffic}
+### Eficiência de armazenamento em cache e tráfego {#caching-efficiency-and-traffic}
 
 A eficiência do cache é crucial para a velocidade do site. A tabela a seguir mostra quantas páginas por segundo um sistema de AEM otimizado pode lidar usando um proxy reverso, como o dispatcher:
 
@@ -286,15 +291,15 @@ Se você tiver um site mais complexo, também precisará de servidores da Web ma
 >
 >&amp;ast; Reserve RAM suficiente para seu sistema operacional, além da memória necessária para sua JVM.
 
-## Cálculos adicionais específicos do caso de utilização {#additional-use-case-specific-calculations}
+## Cálculos adicionais específicos de caso de uso {#additional-use-case-specific-calculations}
 
 Além do cálculo para um aplicativo da Web padrão, talvez seja necessário considerar fatores específicos para os seguintes casos de uso. Os valores calculados devem ser adicionados ao cálculo padrão.
 
-### Considerações específicas dos ativos {#assets-specific-considerations}
+### Considerações específicas de ativos {#assets-specific-considerations}
 
 O processamento abrangente de ativos digitais requer recursos de hardware otimizados, os fatores mais relevantes são o tamanho da imagem e o pico de throughput das imagens processadas.
 
-Aloque pelo menos 16 GB de heap e configure o fluxo de trabalho do Ativo de atualização do DAM para usar o pacote [](/help/assets/camera-raw.md) Camera Raw para a ingestão de imagens brutas.
+Aloque pelo menos 16 GB de heap e configure o fluxo de trabalho do Ativo de atualização do DAM para usar o [pacote Camera Raw](/help/assets/camera-raw.md) para a ingestão de imagens brutas.
 
 >[!NOTE]
 >
@@ -304,7 +309,7 @@ Aloque pelo menos 16 GB de heap e configure o fluxo de trabalho do Ativo de atua
 
 >[!NOTE]
 >
->Consulte também o Guia [de desempenho dos](/help/sites-deploying/assets-performance-sizing.md)ativos.
+>Consulte também o [Guia de desempenho do Assets](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Gerenciador de vários sites {#multi-site-manager}
 
