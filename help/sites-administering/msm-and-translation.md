@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -24,21 +24,21 @@ As seguintes ferramentas de administração estão disponíveis para gerenciar s
 
 * O Multi Site Manager (MSM) permite que você use o mesmo conteúdo do site em vários locais, ao mesmo tempo que permite variações:
 
-   * [Reutilizando conteúdo: Multi Site Manager e Live Copy](/help/sites-administering/msm.md)
+   * [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-administering/msm.md)
 
 * A tradução permite que você automatize a tradução de conteúdo da página, ativos e conteúdo gerado pelo usuário para criar e manter sites multilíngues:
 
    * [Traduzindo conteúdo para sites multilíngues](/help/sites-administering/translation.md)
 
-* Esses dois recursos podem ser combinados para atender a sites [multinacionais e multilíngues](#multinational-and-multilingual-sites).
+* Esses dois recursos podem ser combinados para atender a sites que são [Multinacionais e Multilingues](#multinational-and-multilingual-sites).
 
 ## Sites multinacionais e multilíngues {#multinational-and-multilingual-sites}
 
 Você pode criar conteúdo para sites multinacionais e multilíngues com eficiência usando o Multi Site Manager e o fluxo de trabalho de tradução. Crie um site principal em um idioma, para um país específico, em seguida, use esse conteúdo como base para outros sites, usando a tradução quando necessário:
 
-* [Traduza](/help/sites-administering/translation.md) o site principal em diferentes idiomas.
+* [](/help/sites-administering/translation.md) Traduza o site principal em diferentes idiomas.
 
-* Usar o [Multi Site Manager](/help/sites-administering/msm.md) para:
+* Use [Multi Site Manager](/help/sites-administering/msm.md) para:
 
    * Reutilize o conteúdo do site principal e as traduções para criar sites para outros países e culturas.
    * Certifique-se de limitar o uso do Multi Site Manager ao conteúdo em um idioma, por exemplo, inglês principal -> ramificações de idioma inglês em sites de países, francês principal -> ramificações de idioma francês em sites de países.
@@ -52,8 +52,8 @@ O diagrama a seguir ilustra como os conceitos principais se cruzam (mas não mos
 >
 >Nesse cenário, e em situações comparáveis, o MSM não gerencia as diferentes versões de idioma como tal.
 >
->* [O MSM](/help/sites-administering/msm.md) gerencia a implantação de conteúdo traduzido de um blueprint (por exemplo, um principal global) para as cópias ao vivo (por exemplo, os sites locais), dentro dos limites de um idioma.
->* As capacidades de integração de [tradução](/help/sites-administering/translation.md) do AEM, juntamente com os serviços de gerenciamento de tradução de terceiros, gerenciam os idiomas e traduzem o conteúdo para esses diferentes idiomas.
+>* [O ](/help/sites-administering/msm.md) MSMgerencia a implantação de conteúdo traduzido de um blueprint (por exemplo, um principal global) para as cópias ao vivo (por exemplo, os sites locais), dentro dos limites de um idioma.
+>* Os recursos de integração [Translation](/help/sites-administering/translation.md) do AEM, juntamente com serviços de gerenciamento de tradução de terceiros, gerenciam os idiomas e traduzem o conteúdo para esses idiomas diferentes.
 
 >
 >
