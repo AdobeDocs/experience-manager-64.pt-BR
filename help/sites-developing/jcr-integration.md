@@ -30,8 +30,8 @@ A Sling API funciona em um nível mais alto e mais abstrato que a JCR API. Isso 
 
 ## Restringir o escopo da observação do JCR {#restrict-the-scope-of-jcr-observation}
 
-Ao acompanhar eventos no repositório, é importante restringir o escopo o máximo possível. Por exemplo, é muito melhor ouvir um evento em `/etc/mycompany` vez de escutar `/etc`. Nunca escute eventos na raiz do repositório. Além disso, certifique-se de que os métodos de retorno de chamada sejam executados o mais rápido possível quando não houver nada para eles fazerem.
+Ao acompanhar eventos no repositório, é importante restringir o escopo o máximo possível. Por exemplo, é muito melhor ouvir um evento em `/etc/mycompany` do que ouvir em `/etc`. Nunca escute eventos na raiz do repositório. Além disso, certifique-se de que os métodos de retorno de chamada sejam executados o mais rápido possível quando não houver nada para eles fazerem.
 
-## Eliminar o uso do acesso do administrador JCR {#eliminate-use-of-jcr-admin-access}
+## Eliminar o uso do acesso de administrador JCR {#eliminate-use-of-jcr-admin-access}
 
 A partir do AEM 6, o logon administrativo foi descontinuado, pois recebeu uma sessão administrativa do ResourceResolverFactory. Em vez disso, devem ser criadas contas de serviço para as operações de back office que exigiriam esse tipo de acesso e o ResourceResolverFactory pode ser usado para obter um ResourceResolver para essa conta.
