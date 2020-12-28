@@ -2,7 +2,7 @@
 title: Tentando modelos editáveis em We.Retail
 seo-title: Tentando modelos editáveis em We.Retail
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,7 +18,7 @@ ht-degree: 12%
 ---
 
 
-# Tentando modelos editáveis em We.Retail{#trying-out-editable-templates-in-we-retail}
+# Tentando Modelos Editáveis em We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Com os modelos editáveis, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, que é chamado de autor de modelo, agora pode criar modelos. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o autor do modelo terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
@@ -31,7 +31,7 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
    http://localhost:4502/editor.html/content/we-retail/language-masters/pt/equipment.html
 
 1. Observe que o seletor de modo não oferta mais em um modo Design. Todas as páginas para We.Retail são baseadas em modelos editáveis e para alterar o design de modelos editáveis, eles devem ser editados no editor de modelos.
-1. No menu Informações **da** página, selecione **Editar modelo**.
+1. No menu **Informações da página**, selecione **Editar modelo**.
 1. Agora você está editando o modelo Página principal.
 
    O modo de estrutura da página permite modificar a estrutura do modelo. Isso inclui, por exemplo, os componentes permitidos no container de layout.
@@ -68,13 +68,13 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. De volta ao editor de modelos, você pode usar o seletor de modo para alterar para o modo Conteúdo **** inicial para definir qual conteúdo é necessário na página.
+1. De volta ao editor de modelos, você pode usar o seletor de modo para alterar para o modo **Conteúdo inicial** para definir qual conteúdo é necessário na página.
 
-   **O modo Layout** pode ser usado como está em uma página normal para definir o layout do modelo.
+   **O modo** Layout pode ser usado como está em uma página normal para definir o layout do modelo.
 
 ## Mais informações {#more-information}
 
-Para obter mais informações, consulte o documento de criação [Criar modelos](/help/sites-authoring/templates.md) de página ou os [modelos de página do documento do desenvolvedor - Editável](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
+Para obter mais informações, consulte o documento de criação [Criação de modelos de página](/help/sites-authoring/templates.md) ou a Página de documentos do desenvolvedor [Modelos - Editável](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
 
-Você também pode investigar os componentes [](/help/sites-developing/we-retail-core-components.md)principais. Consulte os Componentes [principais do documento de criação para obter uma visão geral dos recursos dos componentes principais e do documento de desenvolvedor Componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais para [](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) desenvolvimento de  para obter uma visão geral técnica.
+Você também pode investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) para obter uma visão geral dos recursos dos componentes principais e do documento de desenvolvedor [Desenvolvimento dos componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.
 
