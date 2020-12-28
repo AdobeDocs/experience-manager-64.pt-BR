@@ -54,7 +54,7 @@ Sempre que um usuário acessa um console pela primeira vez, um tutorial de naveg
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Click or tap **Got it!** para ir até a próxima página da visão geral. Click or tap **Close** or click or tap outside of the overview dialogue to close.
+Clique ou toque em **Entendi!** para ir até a próxima página da visão geral. Clique ou toque em **Fechar** ou clique ou toque fora da caixa de diálogo de visão geral para fechar.
 
 A visão geral será reiniciada na próxima vez que você acessar um console, a menos que marque a opção **Não mostrar esta mensagem novamente**.
 
@@ -98,7 +98,7 @@ As opções disponíveis nesses painéis estão descritas abaixo.
    <td>Este console permite criar e gerenciar os <a href="/help/communities/sites-console.md">sites da comunidade</a> para a <a href="/help/communities/overview.md#engagement-community">participação</a> e <a href="/help/communities/overview.md#enablement-community">capacitação</a>.</td> 
   </tr>
   <tr>
-   <td>Comércio</td> 
+   <td>Commerce</td> 
    <td>Permite gerenciar produtos, catálogos de produtos e pedidos relacionados ao seus sites de <a href="/help/sites-administering/ecommerce.md">Comércio</a>. </td> 
   </tr>
   <tr>
@@ -190,7 +190,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Isso está disponível somente na exibição de lista. See [list view](#list-view) for more information.
+   Isso está disponível somente na exibição de lista. Consulte [visualização de lista](#list-view) para obter mais informações.
 
 * Botão **Criar**
 
@@ -228,7 +228,7 @@ Há vários recursos de ajuda disponíveis:
 
    Navegue por essa visão geral como faria com a [visão geral de navegação do produto](/help/sites-authoring/basic-handling.md#product-navigation) ao acessar qualquer console pela primeira vez.
 
-   No menu [**Informações da página,**é possível selecionar** Ajuda **](/help/sites-authoring/author-environment-tools.md#accessing-help)para exibir isso novamente, a qualquer momento.
+   No menu [**Informações da página,** é possível selecionar **Ajuda**](/help/sites-authoring/author-environment-tools.md#accessing-help) para exibir isso novamente, a qualquer momento.
 
 * **Console Ferramentas**
 
@@ -269,7 +269,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas {#quick-actions}
+## Ações rápidas  {#quick-actions}
 
 Na [Exibição de cartão](#quick-actions), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -292,7 +292,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos   {#selecting-resources}
+### Seleção de recursos    {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -320,13 +320,13 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>Exibição de cartão<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
+     <li>Área de trabalho:<br /> Passar o mouse sobre o mouse e, em seguida, usar a ação rápida de marca de seleção</li> 
      <li>Dispositivo móvel:<br /> Tocar e segurar o cartão</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Click the card</li> 
-     <li>Mobile device:<br /> Tap the card</li> 
+     <li>Área de trabalho:<br /> Clique no cartão</li> 
+     <li>Dispositivo móvel:<br /> Toque no cartão</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -363,7 +363,7 @@ Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pr
 
 1. Após selecionar um recurso, o cabeçalho superior é coberto pela [barra de ferramentas das ações](#actions-toolbar), que fornece acesso às ações atualmente aplicáveis ao recurso selecionado.
 
-   To exit selection mode select the **X** to the top-right.
+   Para sair do modo de seleção, selecione **X** no canto superior direito.
 
 ### Exibição de coluna {#column-view}
 
@@ -421,7 +421,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#the-header).
 
-### Exibição de lista   {#list-view}
+### Exibição de lista    {#list-view}
 
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 
