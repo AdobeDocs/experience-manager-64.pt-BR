@@ -22,13 +22,13 @@ ht-degree: 1%
 
 ## Download {#download}
 
-Esse script é feito para facilitar a análise dos `access.log` arquivos que produzem um relatório legível para processamento posterior.
+Esse script é feito para facilitar a análise dos arquivos `access.log` que produzem um relatório legível para processamento posterior.
 
 [Obter arquivo](assets/analyse-access.sh)
 
 ## Descrição {#description}
 
-Esse script é feito para facilitar a análise dos `access.log` arquivos que produzem um relatório legível para processamento posterior.
+Esse script é feito para facilitar a análise dos arquivos `access.log` que produzem um relatório legível para processamento posterior.
 
 Produz o número geral de solicitações, GET vs POST, distribuição de solicitações ao longo do tempo e muito mais.
 
