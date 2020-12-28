@@ -20,7 +20,7 @@ ht-degree: 58%
 
 * [](page-templates-static.md)Modelos estáticos em modelos editáveis[](page-templates-editable.md)
 * [](page-templates-static.md)Configurações de design em políticas[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Componentes básicos em componentes principais[](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+* [](/help/sites-authoring/default-components-foundation.md)Componentes básicos em componentes principais[](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [](website.md)IU Clássica em IU ativada por toque[](touch-ui-concepts.md)
 
 Para obter mais informações sobre o uso dessas ferramentas, [consulte a documentação](http://opensource.adobe.com/aem-modernize-tools/).
