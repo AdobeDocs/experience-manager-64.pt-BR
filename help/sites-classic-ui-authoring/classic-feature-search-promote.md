@@ -1,8 +1,8 @@
 ---
 title: Adicionar o Search&amp;Promover recursos à sua página
 seo-title: Adicionar o Search&amp;Promover recursos à sua página
-description: Integrando os recursos do Search&amp;Promote em seu site, você pode usar os componentes do Search&amp;Promote para adicionar recursos às suas páginas, como pesquisa por palavra-chave, refinamento de pesquisa por página de resultados de pesquisa e banners.
-seo-description: Integrando os recursos do Search&amp;Promote em seu site, você pode usar os componentes do Search&amp;Promote para adicionar recursos às suas páginas, como pesquisa por palavra-chave, refinamento de pesquisa por página de resultados de pesquisa e banners.
+description: Integrando os recursos do Search&amp;Promote no seu site, você pode usar os componentes do Search&amp;Promote para adicionar recursos às suas páginas, como pesquisa por palavra-chave, refinamento de pesquisa por página de resultados de pesquisa e banners.
+seo-description: Integrando os recursos do Search&amp;Promote no seu site, você pode usar os componentes do Search&amp;Promote para adicionar recursos às suas páginas, como pesquisa por palavra-chave, refinamento de pesquisa por página de resultados de pesquisa e banners.
 uuid: 8831aa56-9d7f-44ca-9d32-5901bf762154
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 57%
 ---
 
 
-# Adding Search&amp;Promote features to your page {#adding-search-promote-features-to-your-page}
+# Adicionar recursos de Search &amp; Promote à sua página {#adding-search-promote-features-to-your-page}
 
-To integrate Search&amp;Promote capabilities in your web site, use the [!UICONTROL Search&amp;Promote] components to add the following features to your pages:
+Para integrar os recursos do Search &amp; Promote em seu site, use os componentes [!UICONTROL Search &amp; Promote] para adicionar os seguintes recursos às suas páginas:
 
 * Pesquisa por palavra-chave
 * Página de resultados da pesquisa
@@ -39,7 +39,7 @@ Facetas são configuradas no servidor Search&amp;Promote, assim como as informa�
   </tr> 
   <tr> 
    <td>Banners</td> 
-   <td>Exibe anúncios em banners. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td> 
+   <td>Exibe anúncios em banners. Os banners são selecionados com base nos dados coletados pelo Search &amp; Promote.<br /> </td> 
   </tr> 
   <tr> 
    <td>Navegações estruturais</td> 
@@ -84,20 +84,20 @@ O componente **[!UICONTROL Paginação]** permite que os usuários naveguem em v
 
 ![spaginação](assets/srchpagination.png)
 
-You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
+Você pode configurar as seguintes propriedades de componentes no modo [!UICONTROL Editar] para controlar o comportamento do tempo de execução:
 
-* **[!UICONTROL Ocultar página]** de resultado único - Selecione essa opção para ocultar os controles de navegação da página quando a pesquisa retornar uma única página de resultados.
+* **[!UICONTROL Ocultar página]**  de resultado único - Selecione essa opção para ocultar os controles de navegação da página quando a pesquisa retornar uma única página de resultados.
 * **[!UICONTROL Ocultar primeiro/último]** : selecione essa opção para impedir que os usuários pulem para a primeira ou a última página de resultados.
-* **[!UICONTROL Ocultar anterior/próximo]** - Determina se os usuários podem navegar pelas páginas de resultados em relação à página atual.
-* **[!UICONTROL Ocultar visualização para todos]** - Determina se o usuário pode consolidar todos os resultados da pesquisa em uma única página. Normalmente, fornecer dados paginados usa de maneira mais eficiente os recursos do servidor. Selecione essa opção para impedir a transferência de grandes conjuntos de dados em uma única mensagem de resposta.
+* **[!UICONTROL Ocultar anterior/próximo]**  - Determina se os usuários podem navegar pelas páginas de resultados em relação à página atual.
+* **[!UICONTROL Ocultar todos]**  os resultados da visualização - Determina se o usuário pode consolidar todos os resultados da pesquisa em uma única página. Normalmente, fornecer dados paginados usa de maneira mais eficiente os recursos do servidor. Selecione essa opção para impedir a transferência de grandes conjuntos de dados em uma única mensagem de resposta.
 
 ## Ativação da filtragem de resultados por facetas {#enabling-the-filtering-of-results-by-facets}
 
-Você pode permitir que os usuários filtrem os resultados da pesquisa por facetas. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Ao usar esses componentes, você também deve incluir o componente **[!UICONTROL Caminhos de navegação]**. Caminhos de navegação indicam os filtros atuais que são usados.
+Você pode permitir que os usuários filtrem os resultados da pesquisa por facetas. Os componentes **[!UICONTROL Faceta de Lista da caixa de seleção]**, **[!UICONTROL Faceta suspensa]** e **[!UICONTROL Faceta de Lista de link]** permitem que os usuários selecionem uma ou mais facetas para filtragem. Ao usar esses componentes, você também deve incluir o componente **[!UICONTROL Caminhos de navegação]**. Caminhos de navegação indicam os filtros atuais que são usados.
 
-The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+Os componentes **[!UICONTROL Faceta de Lista da caixa de seleção]**, **[!UICONTROL Faceta suspensa]** e **[!UICONTROL Faceta de Lista de link]** têm as seguintes propriedades que você configura no modo **[!UICONTROL Editar]**:
 
-* **[!UICONTROL Nome]** da faceta - o nome da faceta usada para filtros.
+* **[!UICONTROL Nome]**  da faceta - o nome da faceta usada para filtros.
 
 O componente **[!UICONTROL Face da lista da caixa de seleção]** exibe uma lista de facetas com uma caixa de seleção acompanhante. Use uma **[!UICONTROL Face da lista da caixa de seleção]** para que os usuários possam visualizar um subconjunto de resultados que incluem itens de várias facetas. Por exemplo, a facetaMarca é apropriada porque várias marcas fornecem o mesmo tipo de produto.
 
@@ -117,7 +117,7 @@ Os membros da faceta aparecem como uma lista de links. O texto de cada link é o
 
 ![sandplinklistcomp](assets/sandplinklistcomp.png)
 
-The links in the list also changes when a filter is applied from a different type of [!UICONTROL Search&amp;Promote] component. O uso de vários tipos de componentes de filtro pode fornecer combinações de filtros eficazes.
+Os links na lista também são alterados quando um filtro é aplicado a partir de um tipo diferente de componente [!UICONTROL Search &amp; Promote]. O uso de vários tipos de componentes de filtro pode fornecer combinações de filtros eficazes.
 
 O componente **[!UICONTROL Caminhos de navegação]** permite que os clientes vejam os filtros atualmente aplicados aos resultados da pesquisa, na ordem em que foram aplicados. Os clientes podem clicar nos itens no caminho de navegação para reverter para essa combinação de filtros.
 
@@ -125,29 +125,29 @@ O componente **[!UICONTROL Caminhos de navegação]** permite que os clientes ve
 
 Você pode configurar as seguintes propriedades para Caminhos de navegação no modo de Edição, para personalizar a aparência do componente:
 
-* **[!UICONTROL Delimitador]** - Defina o caractere ou a sequência de caracteres para agir como um delimitador entre cada navegação estrutural. O campo Delimitador aceita qualquer string de caractere como entrada. A configuração padrão é: &quot;>&quot; (sem as aspas)
-* **[!UICONTROL Delimitador]** de Trailing - Defina um caractere ou uma string de caractere a ser exibida no final das Trilhas de navegação. O campo Delimitador de Trailing aceita qualquer string de caractere como entrada. A configuração padrão para isso é &quot;em branco&quot; (ou seja, nada é exibido no final da linha de navegação estrutural)
+* **[!UICONTROL Delimitador]**  - Defina o caractere ou a sequência de caracteres para agir como um delimitador entre cada navegação estrutural. O campo Delimitador aceita qualquer string de caractere como entrada. A configuração padrão é: &quot;>&quot; (sem as aspas)
+* **[!UICONTROL Delimitador]**  de Trailing - Defina um caractere ou uma string de caractere a ser exibida no final das navegações estruturais. O campo Delimitador de Trailing aceita qualquer string de caractere como entrada. A configuração padrão para isso é &quot;em branco&quot; (ou seja, nada é exibido no final da linha de navegação estrutural)
 
 ## Adição de caixas de pesquisa {#adding-search-boxes}
 
-The **[!UICONTROL Search]** component enables customers to perform keyword searches. Adicione componentes Pesquisa a cada página na qual você deseja fornecer acesso para pesquisa.
+O componente **[!UICONTROL Search]** permite que os clientes realizem pesquisas de palavras-chave. Adicione componentes Pesquisa a cada página na qual você deseja fornecer acesso para pesquisa.
 
-Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
+Configure as seguintes propriedades no modo **[!UICONTROL Edit]** para controlar o comportamento do tempo de execução:
 
-* **[!UICONTROL Caminho]** da página de resultado - o caminho para a página que exibe os resultados da pesquisa.
-* **[!UICONTROL Ativar Completar]** automaticamente - Selecione para fazer com que as palavras-chave de pesquisa sugeridas apareçam quando o cliente começar a digitar na caixa de pesquisa.
+* **[!UICONTROL Caminho]**  da página de resultado - o caminho para a página que exibe os resultados da pesquisa.
+* **[!UICONTROL Habilitar Completar]**  Automaticamente - Selecione para fazer com que as palavras-chave de pesquisa sugeridas apareçam quando o cliente começar a digitar na caixa de pesquisa.
 
 ![sandpsearch comp](assets/sandpsearchcomp.png)
 
 ## Adição de banners {#adding-banners}
 
-The **[!UICONTROL Banners]** component displays banner advertisements according to the customer&#39;s Search&amp;Promote searches. A lógica no servidor Search&amp;Promote determina o banner a ser exibido. Por exemplo, uma pesquisa por jeans pode fazer com que um banner de moda apareça. Filtrar no departamento masculino pode refinar ainda mais a escolha do banner.
+O componente **[!UICONTROL Banners]** exibe anúncios de banner de acordo com as pesquisas de Search &amp; Promote do cliente. A lógica no servidor Search&amp;Promote determina o banner a ser exibido. Por exemplo, uma pesquisa por jeans pode fazer com que um banner de moda apareça. Filtrar no departamento masculino pode refinar ainda mais a escolha do banner.
 
-The **[!UICONTROL Banners]** component provides one configurable property named **[!UICONTROL Banner Area]**. In **[!UICONTROL Edit]** mode, select one of the property values to specify how the banner appears. O serviço Search&amp;Promote determina a lista de valores que você pode selecionar.
+O componente **[!UICONTROL Banners]** fornece uma propriedade configurável chamada **[!UICONTROL Área do banner]**. No modo **[!UICONTROL Editar]**, selecione um dos valores de propriedade para especificar como o banner será exibido. O serviço Search&amp;Promote determina a lista de valores que você pode selecionar.
 
 ## Exemplo de página de pesquisa do Search&amp;Promote {#example-search-promote-search-page}
 
 Este diagrama mostra os componentes que são adicionados a uma página para criar a página de resultados do Search&amp;Promote totalmente funcional abaixo.
 
-![1328213789109](assets/1328213789109.png) exemplo de ![sandppageexample](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)
 
