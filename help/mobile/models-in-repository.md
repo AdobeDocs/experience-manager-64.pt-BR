@@ -2,7 +2,7 @@
 title: Modelos no repositório
 seo-title: Modelos no repositório
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 54f81180-4178-4e33-a6f0-e9e6ea50798e
 contentOwner: User
 content-type: reference
@@ -22,25 +22,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Um modelo contém um conjunto de tipos de dados que definem as propriedades que serão renderizadas pelos serviços de conteúdo. Um modelo também define as relações entre outros modelos para impor a integridade dos dados.
 
 Como desenvolvedor, você deve se familiarizar com a estrutura Modelo no repositório. Você pode criar seus próprios modelos e entidades de acordo com suas necessidades de aplicativo.
 
-## Criação de tipos de modelo {#creating-model-types}
+## Criando Tipos de Modelo {#creating-model-types}
 
-Há dois tipos de modelo fornecidos pelo sistema em */libs/settings/mobileapps/model-types*. Se você quiser substituir os tipos de modelo do sistema, um nó *mobileapps/model-types* precisará ser criado no nó de configuração no qual você deseja que a substituição ocorra.
+Há dois tipos de modelo fornecidos pelo sistema em */libs/settings/mobileapps/model-types*. Se desejar substituir os tipos de modelo do sistema, será necessário criar um nó *mobileapps/model-types* no nó de configuração no qual deseja que a substituição ocorra.
 
-Por exemplo, se você criou configurações em */conf/myconf1* e */conf/myconf2* e deseja substituir os tipos de modelo do sistema somente em *conf1* , você criaria um nó *mobileapps/model-types* nas configurações de *conf1*.
+Por exemplo, se você criou configurações em */conf/myconf1* e */conf/myconf2* e deseja substituir os tipos de modelo do sistema somente em *conf1*, você criaria um nó *mobileapps/model-types* sob as configurações de *conf1*.
 
-Se você quiser permitir que os tipos de dados sejam adicionados a um modelo, o tipo de modelo deverá ter um nó filho chamado &#39;scaffolding&#39; do tipo &#39;cq:Page&#39; e um tipo de recurso de *wcm/scaffolding/components/scaffolding*.
+Se você deseja permitir que os tipos de dados sejam adicionados a um modelo, o tipo de modelo deve ter um nó filho chamado &#39;scaffolding&#39; do tipo &#39;cq:Page&#39; e um tipo de recurso de *wcm/scaffolding/components/scaffolding*.
 
 A página de andaime também deve incluir uma propriedade *dataTypesConfig* no nó PageContent que indica que os modelos de tipos de dados criados a partir desse tipo poderão ser usados.
 
 >[!NOTE]
 >
->Um **Andaime** é uma página que define os tipos de dados que podem ser editados por uma entidade com base no modelo. Cada tipo de dados também pode ser configurado para definir como o campo será apresentado na interface do usuário, bem como como como o valor de dados será persistente.
+>Uma **Andaime** é uma página que define os tipos de dados que podem ser editados por uma entidade com base no modelo. Cada tipo de dados também pode ser configurado para definir como o campo será apresentado na interface do usuário, bem como como como o valor de dados será persistente.
 
 ### Configuração de tipos de dados {#data-types-config}
 
@@ -50,7 +50,7 @@ O nó de configuração de tipos de dados contém uma lista de itens de tipo de 
 |---|---|
 | fieldIcon | classe do ícone CoralUI para representar o tipo de dados |
 | fieldPropResourceType | componente que renderizará todas as propriedades para configurar o tipo de dados |
-| fieldProperties | lista de vários valores dos componentes de propriedade que são usados quando fieldPropResourceType é *mobileapps/caas/gui/components/models/editor/datatypes/field* |
+| fieldProperties | lista de vários valores dos componentes de propriedade que são usados quando fieldPropResourceType é *mobileapps/caas/gui/components/editor/datatypes/field* |
 | fieldResourceType | resourceType do nó persistente para o tipo de dados (ou seja, o componente que renderizará a propriedade no editor de entidades) |
 | fieldViewResourceType | componente a ser usado para renderizar o tipo de dados na visualização do editor de modelo (fieldResourceType será usado se essa propriedade for omitida) |
 | fieldTitle | nome do tipo de dados que será exibido no editor de modelo |
@@ -79,15 +79,15 @@ Todos os tipos de dados primitivos usam componentes de formulário Granite exist
 
 Qualquer tipo de dados personalizado pode ser adicionado a uma configuração de tipo de dados para uso pelo editor de modelo.
 
-## Criação de modelos {#creating-models}
+## Criando Modelos {#creating-models}
 
 É possível criar modelos com start depois que todos os tipos de modelo e tipos de dados desejados forem desenvolvidos. Os autores acabarão usando modelos para criar entidades a partir das quais os serviços de conteúdo usam para renderizar seus dados.
 
 A criação de um modelo consiste em escolher um tipo de modelo permitido com base na configuração atual e, em seguida, fornecer um título e uma descrição.
 
-Para saber mais sobre como criar e gerenciar um modelo a partir do painel, consulte [Criação de um modelo](/help/mobile/administer-mobile-apps.md) na seção Criação para aplicativos móveis.
+Para saber mais sobre como criar e gerenciar um modelo a partir do painel, consulte [Criação de um Modelo](/help/mobile/administer-mobile-apps.md) na seção de criação para aplicativos móveis.
 
-### Propriedades de um modelo {#properties-of-a-model}
+### Propriedades de um Modelo {#properties-of-a-model}
 
 A tabela a seguir mostra as propriedades definidas para um modelo:
 
@@ -102,11 +102,11 @@ A tabela a seguir mostra as propriedades definidas para um modelo:
 
 >[!NOTE]
 >
->As propriedades filhas *e pais* *permitidas* seguem as mesmas regras que os modelos de Página. Para obter mais informações, consulte Modelos [de](/help/sites-developing/page-templates-static.md)página.
+>As propriedades *filhos permitidos* e *pais permitidos* seguem as mesmas regras que os modelos de Página. Para obter mais informações, consulte [Modelos de página](/help/sites-developing/page-templates-static.md).
 >
->Em referência à propriedade Tipo *de* modelo, todos os modelos devem ter um supertipo de *mobileapps/caas/components/data/entity* , mas podem ter um subtipo que permite que o delivery de conteúdo seja personalizado. Garantir que todos os tipos de modelo sejam exclusivos também pode ajudar clientes de serviços de conteúdo a distinguir entre objetos nos dados.
+>Em referência à propriedade *Model Type*, todos os modelos devem ter um supertipo de *mobileapps/caas/components/data/entity*, mas podem ter um subtipo que permite que o delivery de conteúdo seja personalizado. Garantir que todos os tipos de modelo sejam exclusivos também pode ajudar clientes de serviços de conteúdo a distinguir entre objetos nos dados.
 
-### Edição de um modelo {#editing-a-model}
+### Editando um Modelo {#editing-a-model}
 
 A edição de um modelo envolve a abertura do formulário de diálogo de andaime associado a um modelo para edição. Geralmente, o andaime é um nó filho do modelo, mas pode ser localizado fora do modelo, se desejado, especificando seu caminho usando a propriedade &#39;cq:scaffolding&#39;. Isso é útil se você quiser compartilhar o mesmo andaime entre vários modelos que precisam ter propriedades diferentes.
 
@@ -114,7 +114,7 @@ Quando o andaime do modelo estiver localizado, o editor de modelo renderizará o
 
 >[!NOTE]
 >
->Todos os modelos são Modelos, portanto, eles seguem todas as regras de Modelos AEM. Isso permite o uso de propriedades como ** allowParenters e propriedades *allowChildren* . Elas são eficazes ao criar novas Entidades com base em um modelo. As regras do modelo garantirão que as entidades só possam se basear em determinados modelos, dependendo de sua hierarquia.
+>Todos os modelos são Modelos, portanto, eles seguem todas as regras de Modelos AEM. Isso permite o uso de propriedades como *allowParents* e *allowChildren* propriedades. Elas são eficazes ao criar novas Entidades com base em um modelo. As regras do modelo garantirão que as entidades só possam se basear em determinados modelos, dependendo de sua hierarquia.
 >
 >Para saber mais sobre como editar um modelo a partir do painel, consulte [Criar um modelo](/help/mobile/administer-mobile-apps.md) na seção de criação para aplicativos móveis.
 
@@ -122,13 +122,13 @@ Quando o andaime do modelo estiver localizado, o editor de modelo renderizará o
 
 Dois tipos de modelos de sistema predefinidos são fornecidos para reutilização de conteúdo simples. Esses modelos não podem ser editados.
 
-**Modelo** de páginas O modelo de páginas fornece um método rápido para reutilizar o conteúdo existente dos sites para delivery pelos serviços de conteúdo.
+**Modelo** de páginasO modelo de páginas fornece um método rápido para reutilizar o conteúdo existente de sites para delivery por serviços de conteúdo.
 
 O resourceType das entidades com base no modelo Páginas é: mobileapps/caas/components/data/pages
 
 Caminho: Caminho para uma página Sites. O conteúdo desse caminho (e seus filhos) será renderizado pelos manipuladores de serviço de conteúdo.
 
-**Modelo** de ativos O modelo de ativos fornece um método rápido para reutilizar o conteúdo existente dos ativos para delivery por serviços de conteúdo.
+**Assets** ModelO modelo Ativos fornece um método rápido para reutilizar o conteúdo existente dos Ativos para delivery por serviços de conteúdo.
 
 O resourceType das entidades com base no modelo Páginas é: *mobileapps/caas/components/data/assets.*
 
@@ -136,4 +136,4 @@ Lista do ativo: Lista de caminhos de Ativos. Cada ativo será adicionado como um
 
 >[!NOTE]
 >
->Para saber mais sobre como usar esses modelos para criar modelos a partir do painel, consulte [Criação de um modelo](/help/mobile/administer-mobile-apps.md) na seção Criação para aplicativos móveis.
+>Para saber mais sobre como usar esses modelos para criar modelos a partir do painel, consulte [Criar um modelo](/help/mobile/administer-mobile-apps.md) na seção de criação para aplicativos móveis.
