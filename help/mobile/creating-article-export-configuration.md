@@ -22,13 +22,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
 >**Pré-requisitos**:
 >
->Antes de aprender sobre como criar e modificar recursos compartilhados, consulte [Sincronização](/help/mobile/mobile-ondemand-contentsync.md) de conteúdo para entender os conceitos básicos.
+>Antes de saber mais sobre como criar e modificar recursos compartilhados, consulte [Sincronização de conteúdo](/help/mobile/mobile-ondemand-contentsync.md) para entender os conceitos básicos.
 
 Os usuários do AEM Mobile usam o Content Sync para exportar conteúdo ao vivo para conteúdo estático para uso em aplicativos móveis e essa exportação ocorre quando o conteúdo é carregado nos Mobile On-Demand Services da AEM Mobile.
 
@@ -38,9 +38,9 @@ Os recursos a seguir descrevem como exportar conteúdo do Adobe Experience Manag
 
 Os artigos têm conteúdo que precisa ser exportado e carregado. Alguns desse conteúdo podem ser compartilhados entre Artigos.
 
-Use o [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para coletar o conteúdo e criar um pacote de Recursos ****** compartilhados.
+Use [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para coletar o conteúdo e criar um pacote ***Recursos compartilhados***.
 
-A configuração ContentSync encontrada em **&lt;dps-exportTemplate>/dps-article>** deve ser configurada para exportar todo o conteúdo que um artigo requer para renderização estática de propriedade no dispositivo.
+A configuração ContentSync encontrada em **&lt;dps-exportTemplate>/dps-article>** deve ser configurada para exportar todo o conteúdo necessário para a renderização estática de propriedade no dispositivo.
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ A configuração ContentSync encontrada em **&lt;dps-exportTemplate>/dps-article
 Para visualização de um recurso compartilhado de amostra, consulte as etapas abaixo:
 
 1. Abra o CRXDE Lite no servidor AEM.
-1. Navegue até esse caminho [/etc/contentsync/models/dps-we-ilimitado-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article)para visualização dos recursos compartilhados de amostra.
+1. Navegue até esse caminho [/etc/contentsync/models/dps-we-ilimitado-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) para visualização dos recursos compartilhados de amostra.
 
    Você pode visualização todas as propriedades necessárias para criar seus recursos compartilhados, conforme mostrado na figura abaixo:
 
