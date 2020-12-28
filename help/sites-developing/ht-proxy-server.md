@@ -35,7 +35,7 @@ Você pode usar o servidor proxy para monitorar todas as interações cliente-se
 
 Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; Por exemplo, um navegador da Web e AEM. Isso permite que você monitore exatamente o que acontece quando você solicita uma página do CQ.
 
-## Iniciando a ferramenta Servidor proxy {#starting-the-proxy-server-tool}
+## Iniciando a Ferramenta de Servidor Proxy {#starting-the-proxy-server-tool}
 
 Start o servidor na linha de comando:
 
@@ -49,7 +49,7 @@ Este é o endereço de host da instância do CRX à qual você deseja se conecta
 
 `<remoteport>`
 
-Esta é a porta host da instância CRX do público alvo. Por exemplo, o padrão de uma instalação AEM recém-instalada é **`4502`** e o padrão para uma instância AEM do autor recém-instalada é `4502`.
+Esta é a porta host da instância CRX do público alvo. Por exemplo, o padrão de uma instalação de AEM recém-instalada é **`4502`** e o padrão para uma instância de autor de AEM recém-instalada é `4502`.
 
 `<localport>`
 
@@ -129,11 +129,11 @@ O conteúdo de `test.html` é:
 </html>
 ```
 
-Supondo que a instância AEM esteja sendo executada em `localhost:4502` nós start o proxy desta forma:
+Supondo que a instância AEM esteja em execução em `localhost:4502`, o proxy será start desta forma:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-A instância do CQ/CRX agora pode ser acessada pelo proxy em `localhost:4444` e toda a comunicação via essa porta está conectada `test.log`.
+A instância do CQ/CRX agora pode ser acessada pelo proxy em `localhost:4444` e toda a comunicação por essa porta é registrada em `test.log`.
 
 Se agora observarmos a saída do proxy, veremos a interação entre o navegador e a instância AEM.
 
@@ -148,7 +148,7 @@ Em seguida, abrimos um navegador e acessamos a página de teste:
 
 `http://localhost:4444/content/test.html`
 
-e vemos o navegador fazer uma `GET` solicitação para a página:
+e vemos o navegador fazer uma solicitação `GET` para a página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -187,7 +187,7 @@ S-0-#000311 -> [</body>]
 S-0-#000319 -> [</html>]
 ```
 
-### Usos do servidor proxy {#uses-of-the-proxy-server}
+### Usos do Servidor Proxy {#uses-of-the-proxy-server}
 
 Os seguintes cenários ilustram alguns dos objetivos para os quais o Servidor Proxy pode ser usado:
 
