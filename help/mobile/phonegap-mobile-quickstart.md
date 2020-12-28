@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Mobile Quickstart {#mobile-quickstart}
+# Início rápido móvel {#mobile-quickstart}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 ## AEM Verificar aplicativo {#aem-verify-app}
 
