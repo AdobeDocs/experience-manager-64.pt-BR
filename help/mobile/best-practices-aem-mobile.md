@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 A criação de um aplicativo AEM Mobile On-demand Services é diferente da criação de um aplicativo que é executado diretamente no shell do Cordova (ou PhoneGap). Os desenvolvedores devem estar familiarizados com:
 
@@ -51,8 +51,8 @@ As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites, que
 
 * Preferir vários arquivos de script de componente em um único monolítico
 
-   * São fornecidos vários pontos de extensão vazios, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem ao desenvolvedor alterar o modelo de página ao duplicar o menor código principal possível
-   * Os modelos podem ser estendidos e personalizados por meio do mecanismo Sling: *resourceSuperType* do Sling
+   * São fornecidos vários pontos de extensão vazios, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem que o desenvolvedor altere o modelo de página ao duplicar o menor código principal possível
+   * Os modelos podem ser estendidos e personalizados por meio do mecanismo *sling:resourceSuperType* do Sling
 
 * Preferir Sightly/HTL sobre JSP como a linguagem de modelo
 
@@ -66,7 +66,7 @@ As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites, que
 
 >[!NOTE]
 >
->Você pode saber mais detalhadamente sobre scripts externos de bloqueio de renderização [aqui](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Você pode aprender mais detalhes sobre scripts externos de bloqueio de renderização [aqui](https://developers.google.com/speed/docs/insights/BlockingJS).
 
 **Preferir bibliotecas JS e CSS do cliente específicas do aplicativo em relação a bibliotecas específicas da Web**
 
@@ -80,8 +80,8 @@ As diretrizes a seguir ajudarão desenvolvedores AEM experientes para sites, que
 **Preferir microbibliotecas em relação à pilha completa**
 
 * O tempo necessário para colocar o conteúdo no vidro do dispositivo será reduzido em cada biblioteca de que seus artigos dependem. Essa desaceleração é agravada quando uma nova visualização da Web é usada para renderizar cada artigo, portanto, cada biblioteca deve ser inicializada novamente do zero
-* Se seus artigos não forem criados como SPAs (aplicativos de página única), provavelmente não será necessário incluir uma biblioteca de pilha completa, como Angular
-* Preferir bibliotecas menores e de propósito único para ajudar a adicionar a interatividade que sua página exige, como o [Fastclick](https://github.com/ftlabs/fastclick) ou o [Velocity.js](https://velocityjs.org)
+* Se os artigos não forem criados como SPA (aplicativos de página única), provavelmente não será necessário incluir uma biblioteca de pilha completa, como o Angular
+* Preferir bibliotecas menores e de uso único para ajudar a adicionar a interatividade que sua página exige, como [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
 
 **Minimizar o tamanho da carga do artigo**
 
