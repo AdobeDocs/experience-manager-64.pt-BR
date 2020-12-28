@@ -82,7 +82,7 @@ As propriedades são distribuídas por várias guias:
 
    Permite inserir uma URL personalizada para esta página. Permite que você tenha uma URL mais curta e mais expressiva.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   Por exemplo, se o URL personalizado estiver definido como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` então h `ttp://example.com/welcome`será o URL personalizado de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -134,7 +134,7 @@ As propriedades são distribuídas por várias guias:
 
    Especifique uma configuração de exportação.
 
-### Miniatura  {#thumbnail}
+### Miniatura   {#thumbnail}
 
 * **Miniatura da página**
 
@@ -160,7 +160,7 @@ As propriedades são distribuídas por várias guias:
 
    Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permissões   {#permissions}
+### Permissões    {#permissions}
 
 * **Permissões** (interface otimizada para toque)
 
@@ -172,13 +172,13 @@ As propriedades são distribuídas por várias guias:
 
    Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site  {#site-structure}
+### Estrutura do site   {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
