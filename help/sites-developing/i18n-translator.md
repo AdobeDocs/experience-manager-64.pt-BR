@@ -26,11 +26,11 @@ AEM fornece um console para gerenciar as várias traduções de textos usados na
 
 Use a ferramenta tradutor para gerenciar strings em inglês e suas traduções. Os dicionários são criados no repositório, por exemplo /apps/myproject/i18n.
 
-Observe que a ferramenta Tradutor e os dicionários que você gerencia são para apresentar a interface do usuário do componente em diferentes idiomas. Se desejar traduzir a página ou o conteúdo gerado pelo usuário, consulte [Traduzir conteúdo para sites](/help/sites-administering/translation.md) multilíngues e [Tradução de conteúdo](/help/communities/translate-ugc.md)gerado pelo usuário.
+Observe que a ferramenta Tradutor e os dicionários que você gerencia são para apresentar a interface do usuário do componente em diferentes idiomas. Se desejar traduzir o conteúdo gerado pela página ou pelo usuário, consulte [Traduzindo conteúdo para sites multilíngues](/help/sites-administering/translation.md) e [Tradução de conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
->Edite apenas os dicionários criados para o seu projeto e que residem em `/apps`.
+>Edite apenas os dicionários criados para seu projeto e que residem em `/apps`.
 >
 >AEM dicionários do sistema também estão disponíveis nesta ferramenta. Não altere os dicionários do sistema AEM, pois isso pode causar problemas na interface do usuário AEM. Além disso, as alterações podem ser perdidas após a atualização. AEM dicionários do sistema estão localizados em `/libs`.
 
@@ -60,7 +60,7 @@ Também é possível adicionar os dicionários i18n a um projeto de tradução d
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre projetos de tradução, leia [Gerenciar projetos](/help/sites-administering/tc-manage.md)de tradução.
+   >Para obter mais informações sobre projetos de tradução, leia [Gerenciar projetos de tradução](/help/sites-administering/tc-manage.md).
 
 ## Criação de um dicionário {#creating-a-dictionary}
 
@@ -84,7 +84,7 @@ Crie um dicionário para gerenciar suas strings de interface de usuário localiz
 
    >[!NOTE]
    >
-   >Esta é a estrutura do módulo [](https://sling.apache.org/site/internationalization-support.html)Sling i18n.
+   >Esta é a estrutura do módulo [Sling i18n](https://sling.apache.org/site/internationalization-support.html).
 
 1. Recarregue o tradutor e o caminho do dicionário (por exemplo, `/apps/myProject/i18n`) estará disponível no seletor suspenso na barra de ferramentas. Selecione essa opção para adicionar strings e suas traduções ao start.
 
@@ -94,13 +94,13 @@ Crie um dicionário para gerenciar suas strings de interface de usuário localiz
    >
    >Verifique se eles correspondem aos idiomas mostrados na grade.
 
-## Gerenciamento de strings de dicionário {#managing-dictionary-strings}
+## Gerenciando strings de dicionário {#managing-dictionary-strings}
 
 Use a ferramenta Tradução para gerenciar as sequências de caracteres em seus dicionários. Você pode adicionar, modificar e remover strings em inglês e também fornecer strings traduzidas.
 
 >[!CAUTION]
 >
->Edite apenas os dicionários criados para o seu projeto e que residem em `/apps`.
+>Edite apenas os dicionários criados para seu projeto e que residem em `/apps`.
 >
 >Não altere os dicionários do sistema AEM, pois isso pode causar problemas na interface do usuário AEM. Além disso, as alterações podem ser perdidas após a atualização. AEM dicionários do sistema estão localizados em `/libs`.
 
@@ -122,7 +122,7 @@ Inclua variáveis na string localizada para criar significado contextual em uma 
 
 Para incluir variáveis na string localizada, posicione os índices entre colchetes no local das variáveis no primeiro argumento do método get. Use a dica de localização para descrever os valores. O tradutor deve entender o significado das variáveis porque diferentes idiomas usam estruturas de frases diferentes.
 
-Observe que [o código que solicita a string](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) traduzida fornece valores para as variáveis indexadas de acordo com o contexto.
+Observe que [o código que solicita a string traduzida](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) fornece valores para as variáveis indexadas de acordo com o contexto.
 
 Por exemplo, a seguinte string é exibida quando um usuário faz logon em um site e é incluída no dicionário:
 
@@ -152,7 +152,7 @@ Use o procedimento a seguir para adicionar uma string.
 Use o procedimento a seguir para alterar uma string em um dicionário.
 
 1. No menu suspenso Dicionários, selecione o dicionário que contém a string a ser alterada.
-1. Clique com o Duplo na string a ser alterada.
+1. Clique com o duplo na string a ser alterada.
 1. Na caixa de diálogo Editar string, selecione Modificar string ou comentário (Cria uma cópia).
 
    ![chlimage_1-211](assets/chlimage_1-211.png)
@@ -173,7 +173,7 @@ Use o procedimento a seguir para remover uma string de um dicionário.
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 
-### Pesquisando strings {#searching-for-strings}
+### Procurando por strings {#searching-for-strings}
 
 A barra de pesquisa na parte inferior da ferramenta Tradutor fornece opções de seleção de sequência:
 
@@ -187,7 +187,7 @@ A barra de pesquisa na parte inferior da ferramenta Tradutor fornece opções de
    * Várias seleções: Mostrar itens com todas as propriedades selecionadas.
 
 * **Tem Comentário**: Mostrar itens que têm comentários para tradutores.
-* **Traduções ausentes:** Mostrar itens em que pelo menos um idioma não tenha uma tradução.
+* **Traduções ausentes:** mostra itens em que pelo menos um idioma não tem uma tradução.
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -199,23 +199,23 @@ A barra de pesquisa na parte inferior da ferramenta Tradutor fornece opções de
 
 Depois de adicionar a string em inglês a um dicionário, você pode adicionar traduções da string. Você também pode [exportar o dicionário](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) para que ele seja traduzido por terceiros.
 
-1. Selecione [seu dicionário](#creating-a-dictionary) específico do projeto, pois ele especifica o caminho no repositório que contém as traduções. Por exemplo, selecione **Dicionários** como:
+1. Selecione [o dicionário específico do projeto](#creating-a-dictionary), pois especifica o caminho no repositório que contém as traduções. Por exemplo, selecione **Dicionários** como:
 
    `/apps/myProject/i18n`
 
    >[!CAUTION]
    >
-   >Edite apenas os dicionários criados para o seu projeto e que residem em `/apps`.
+   >Edite apenas os dicionários criados para seu projeto e que residem em `/apps`.
    >
    >AEM dicionários do sistema também estão disponíveis nesta ferramenta. Não altere os dicionários do sistema AEM, pois isso pode causar problemas na interface do usuário AEM. Além disso, as alterações podem ser perdidas após a atualização. AEM dicionários do sistema estão localizados em `/libs`.
 
 1. Para editar os textos traduzidos de uma das strings, é possível:
 
-   * Clique no Duplo no idioma apropriado para a string necessária para editar o texto único:
+   * Clique no duplo no idioma apropriado para a string necessária para editar o texto único:
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-   * Clique no Duplo nos campos **String** ou **Comment** para obter a string desejada para abrir a caixa de diálogo **Editar sequência** , editar as traduções conforme necessário e clique em **OK** para fechar a caixa de diálogo:
+   * Clique nos campos **String** ou **Comentário** da cadeia de caracteres necessária para abrir a caixa de diálogo **Editar cadeia de caracteres**, edite as traduções conforme necessário e clique em **OK** para fechar a caixa de diálogo:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -225,24 +225,24 @@ Depois de adicionar a string em inglês a um dicionário, você pode adicionar t
    >
    >Clicar em **Redefinir e atualizar** (em vez de **Salvar**) reverte quaisquer alterações nos textos anteriores.
 
-## Uso de tradutores de terceiros {#using-third-party-translators}
+## Usando tradutores de terceiros {#using-third-party-translators}
 
 Para suportar o uso de serviços de tradução de terceiros, a ferramenta Tradução permite exportar e importar dicionários.
 
-### Exportar um dicionário {#exporting-a-dictionary}
+### Exportando um dicionário {#exporting-a-dictionary}
 
 Exporte um dicionário para um arquivo XLIFF para que um serviço de terceiros possa traduzir as strings de dicionário.
 
 * Exporte um dicionário e inclua o inglês e os termos traduzidos para um idioma.
 * Exporte algumas ou todas apenas as strings inglesas.
 
-Ao exportar um arquivo XLIFF e incluir um idioma, a estrutura de nó do dicionário no repositório deve incluir esse idioma. Se o idioma não estiver incluído, ocorrerão erros. Por exemplo, para exportar o arquivo XLIFF francês, a pasta do dicionário deve incluir o nó `mix:language` filho chamado `fr`. (Consulte [Criação de um dicionário](/help/sites-developing/i18n-translator.md#creating-a-dictionary).)
+Ao exportar um arquivo XLIFF e incluir um idioma, a estrutura de nó do dicionário no repositório deve incluir esse idioma. Se o idioma não estiver incluído, ocorrerão erros. Por exemplo, para exportar o arquivo XLIFF francês, a pasta do dicionário deve incluir o nó filho `mix:language` chamado `fr`. (Consulte [Criação de um dicionário](/help/sites-developing/i18n-translator.md#creating-a-dictionary).)
 
 Use o procedimento a seguir para exportar um arquivo XLIFF para um idioma específico.
 
-1. Abrir a ferramenta Tradução `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Abrir a ferramenta de Tradução `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Use o menu suspenso Dicionários para selecionar o dicionário a ser exportado.
-1. Clique em Exportar > Exportar opções completas de *XX* Xliff, onde *XX* é o código de idioma de duas letras, como DE ou FR.
+1. Clique em Exportar > Exportar opções completas *XX* do Xliff, onde *XX* é o código de idioma de duas letras, como DE ou FR.
 
    O arquivo XLIFF é aberto em uma nova guia ou janela.
 
@@ -256,19 +256,19 @@ Use o procedimento a seguir para exportar todas ou algumas das strings em inglê
 1. Clique em Exportar > Exportar seleção como Xliff (somente sequências de caracteres).
 1. Na caixa de diálogo que é exibida, copie o texto e cole-o em um arquivo de texto.
 
-### Importação de um dicionário {#importing-a-dictionary}
+### Importando um dicionário {#importing-a-dictionary}
 
 Importe um arquivo XLIFF em um dicionário para preencher o dicionário. Quando o dicionário inclui uma tradução para uma string em inglês e o arquivo XLIFF contém uma tradução diferente para a mesma string, a tradução do dicionário é substituída.
 
-1. Abrir a ferramenta Tradução `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Abrir a ferramenta de Tradução `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Clique em Importar > Traduções XLIFF.
 1. Selecione o arquivo a ser importado e clique em OK.
 
-## Gerenciamento de idiomas suportados {#managing-supported-lanuages}
+## Gerenciando Idiomas Suportados {#managing-supported-lanuages}
 
 Adicione ou remova idiomas compatíveis com a ferramenta de tradução e que sejam fornecidos aos usuários de suas páginas da Web.
 
-### Alteração de idiomas listados na tabela de dicionários {#changing-languages-listed-in-the-dictionary-table}
+### Alteração de idiomas listados na Tabela de dicionários {#changing-languages-listed-in-the-dictionary-table}
 
 A ferramenta Tradutor inclui os seguintes idiomas na tabela do dicionário:
 
@@ -305,15 +305,15 @@ Use o procedimento a seguir para adicionar ou remover idiomas.
 
    >[!NOTE]
    >
-   >O tradutor só salvará traduções para idiomas que estejam realmente [presentes no dicionário](#creating-a-dictionary) (isto é, abaixo do caminho do dicionário, como `/apps/myProject/i18n`).
+   >O tradutor salvará apenas traduções para idiomas que estejam [presentes no dicionário](#creating-a-dictionary) (isto é, abaixo do caminho do dicionário, como `/apps/myProject/i18n`).
    >
    >Verifique se eles correspondem aos idiomas mostrados na grade.
 
-### Disponibilização de idiomas para autores {#making-languages-available-to-authors}
+### Disponibilização de Idiomas para Autores {#making-languages-available-to-authors}
 
-Depois de definir um dicionário para um idioma novo para sua instância AEM, é necessário disponibilizá-lo para seleção pelos autores (por exemplo, para uso em **Preferências**):
+Depois de definir um dicionário para um idioma novo para a instância AEM, é necessário disponibilizá-lo para seleção pelos autores (por exemplo, para uso em **Preferências**):
 
-1. Para alterar a lista de idiomas disponíveis em **Preferências** do console **Segurança** :
+1. Para alterar a lista dos idiomas disponíveis em **Preferências** do console **Security**:
 
    1. Crie uma sobreposição no código do seu aplicativo para:
 
@@ -322,7 +322,7 @@ Depois de definir um dicionário para um idioma novo para sua instância AEM, é
        and update as required.
       ```
 
-1. Para disponibilizar o idioma em **Preferências** no console **Sites** , é necessário fazer as seguintes alterações no aplicativo:
+1. Para disponibilizar o idioma no console **Preferences** do **Websites**, é necessário fazer as seguintes alterações no aplicativo:
 
    1. Crie uma sobreposição para a estrutura em:
 
@@ -336,13 +336,13 @@ Depois de definir um dicionário para um idioma novo para sua instância AEM, é
 
 ### Alteração de nomes de idiomas e países padrão {#changing-language-names-and-default-countries}
 
-Vários países utilizam a mesma língua, por exemplo, os EUA, o Reino Unido e a Austrália todos usam o inglês. Isso é indicado por um código que indica a língua e o país, como `en_US`, `en_GB` e `en_AU`.
+Vários países utilizam a mesma língua, por exemplo, os EUA, o Reino Unido e a Austrália todos usam o inglês. Isso é indicado por um código que indica o idioma e o país, como `en_US`, `en_GB` e `en_AU`.
 
 Os países padrão são usados ao exibir sinalizadores (por exemplo, na caixa de diálogo de cópia de idioma), eles são usados para resolver o país para um código de idioma.
 
 >[!NOTE]
 >
->Para localizações gerenciadas pelo tradutor acima, somente o idioma exato funciona. Se o menu suspenso de preferência de idioma usar `en_uk`, deverá haver um `en_uk` dicionário no repositório.
+>Para localizações gerenciadas pelo tradutor acima, somente o idioma exato funciona. Se o menu suspenso de preferência de idioma usar `en_uk`, deverá haver um dicionário `en_uk` no repositório.
 
 Para alterar as definições padrão:
 
@@ -354,11 +354,11 @@ Para alterar as definições padrão:
 
    `/apps/wcm/core/resources/languages`
 
-   Então, mudando ou estendendo a lista lá. A propriedade `defaultCountry` em um nó de idioma (por exemplo, `ja`) deve conter o código completo, como `ja_jp`, que seria definido `jp` como o país padrão para o idioma `ja`.
+   Então, mudando ou estendendo a lista lá. A propriedade `defaultCountry` em um nó de idioma (por exemplo, `ja`) deve conter o código completo, como `ja_jp`, que definiria `jp` como o país padrão para o idioma `ja`.
 
-1. Atualize o Gerenciador **de Idiomas do** CQ WCM.
+1. Atualize o **Gestor de Idiomas WCM do CQ**.
 
-   * **lista** de idioma:
+   * **Lista** de idioma:
 
       O caminho para a lista de idioma no repositório. Defina para o local usado para sobrepor:
 
@@ -371,7 +371,7 @@ Para alterar as definições padrão:
    https://<hostname>:<port-number>/system/console/configMgr/com.day.cq.wcm.core.impl.LanguageManagerImpl 
    ```
 
-## Publicar dicionários {#publishing-dictionaries}
+## Dicionários de publicação {#publishing-dictionaries}
 
 Incorpore seus dicionários ao processo de gerenciamento de versões de seus aplicativos AEM. Por exemplo, inclua o dicionário no pacote de conteúdo do aplicativo para implantação na instância de publicação. Essa estratégia oferece os seguintes benefícios:
 
@@ -386,5 +386,5 @@ Da mesma forma, o teste de strings de dicionário deve ser executado como parte 
 
 >[!NOTE]
 >
->Ao usar o Dispatcher, é necessário [invalidar as páginas](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) em cache para incluir novas strings de dicionário nas strings de componentes renderizados.
+>Ao usar o Dispatcher, é necessário [invalidar páginas em cache](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) para incluir novas strings de dicotagem em strings de componentes renderizados.
 
