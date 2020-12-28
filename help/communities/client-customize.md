@@ -154,7 +154,7 @@ As tags de script nos scripts SCF não devem ser removidas ao substituir ou subs
 
 O uso de [bibliotecas do lado do cliente](../../help/sites-developing/clientlibs.md) (clientlibs) fornece um meio de organizar e otimizar o Javascript e o CSS usados para renderizar conteúdo no cliente.
 
-As clientlibs para SCF seguem um padrão de nomenclatura muito específico para duas variantes, que variam apenas pela presença de &#39;autor&#39; no nome da categoria:
+As clientlibs para SCF seguem um padrão de nomeação muito específico para duas variantes, que variam apenas pela presença de &#39;autor&#39; no nome da categoria:
 
 | Variante Clientlib | Padrão para a propriedade Categoria |
 |--- |--- |
