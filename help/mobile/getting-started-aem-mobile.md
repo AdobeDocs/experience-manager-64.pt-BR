@@ -22,11 +22,11 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
->Os clientes existentes de aplicativos AEM Mobile que migram do AEM 6.2 ou 6.3 para o AEM 6.4 podem continuar usando os aplicativos AEM Mobile baixando um [pacote do PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). No entanto, novas instalações do AEM 6.4 não oferecerão suporte à funcionalidade Aplicativos AEM Mobile.
+>Os clientes existentes de aplicativos AEM Mobile que migram do AEM 6.2 ou 6.3 para o AEM 6.4 podem continuar usando os aplicativos AEM Mobile baixando um pacote [do PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). No entanto, novas instalações do AEM 6.4 não oferecerão suporte à funcionalidade Aplicativos AEM Mobile.
 
 O Adobe Experience Manager (AEM) Mobile é parte da plataforma digital de vários canais da Adobe Experience Manager que também utiliza AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. A AEM Mobile oferta uma flexibilidade de implantação notável, permitindo que as empresas usem várias fontes de conteúdo.
 
@@ -38,4 +38,4 @@ O AEM Mobile oferta vários métodos para criar aplicativos. As três maneiras d
 
 >[!NOTE]
 >
->Se você é novo na Adobe Experience Manager, talvez queira percorrer a [Introdução ao AEM](/help/sites-deploying/deploy.md).
+>Se você é novo no Adobe Experience Manager, talvez queira percorrer [Introdução ao AEM](/help/sites-deploying/deploy.md).
