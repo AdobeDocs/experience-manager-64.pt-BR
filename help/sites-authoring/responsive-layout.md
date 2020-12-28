@@ -22,7 +22,7 @@ ht-degree: 93%
 
 O AEM permite ter um layout responsivo em suas páginas usando o componente **Contêiner de layout.**
 
-Este componente fornece um sistema de parágrafo que permite posicionar os componentes dentro de uma grade responsiva. Esta grade pode reorganizar o layout de acordo com o dispositivo/tamanho e formato da janela. O componente é utilizado em conjunto com o modo de [**Layout **,](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)que permite criar e editar o seu layout responsivo dependendo do dispositivo.
+Este componente fornece um sistema de parágrafo que permite posicionar os componentes dentro de uma grade responsiva. Esta grade pode reorganizar o layout de acordo com o dispositivo/tamanho e formato da janela. O componente é utilizado em conjunto com o modo de [**Layout**,](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) que permite criar e editar o seu layout responsivo dependendo do dispositivo.
 
 O contêiner de layout:
 
@@ -41,15 +41,16 @@ O usuário pode então ver como o conteúdo será processado para dispositivos e
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
-* Componente [**Contêiner de layout **](#adding-a-layout-container-and-its-content-edit-mode)
+* Componente [**Contêiner de layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Este componente está disponível no [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) e fornece um sistema de parágrafo de grade para que você possa adicionar e posicionar componentes em uma grade responsiva. Ele também pode ser definido como o sistema de parágrafos padrão na sua página.
 
-* [**Modo de layout **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**Modo de layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
    Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
 
-* [**Emulador **](#selecting-a-device-to-emulate)Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
+* [**Emulador**](#selecting-a-device-to-emulate)
+Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
 
 Com estes mecanismos de grade responsivos você pode:
 
@@ -67,7 +68,7 @@ Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de p
 
 >[!NOTE]
 >
->O uso dos mecanismos acima é habilitado pela configuração no modelo. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>O uso dos mecanismos acima é habilitado pela configuração no modelo. Consulte [Configurando o layout responsivo](/help/sites-administering/configuring-responsive-layout.md) para obter mais informações.
 
 ## Definições de layout, emulação de dispositivo e pontos de interrupção {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -153,7 +154,7 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 
 >[!NOTE]
 >
->Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado [explicitamente em um sistema/página de parágrafos](/help/sites-administering/configuring-responsive-layout.md) (por exemplo, quando você usar [**o modo **Design](/help/sites-authoring/default-components-designmode.md)).
+>Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado [explicitamente em um sistema/página de parágrafos](/help/sites-administering/configuring-responsive-layout.md) (por exemplo, quando você usar [**o modo** Design](/help/sites-authoring/default-components-designmode.md)).
 
 1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde verá o espaço reservado **Arrastar componentes aqui**.
 1. Em seguida, você pode adicionar componentes ao contêiner de layout. Esses componentes contêm o conteúdo real:
@@ -263,8 +264,9 @@ No modo de layout, é possível executar várias ações em uma grade:
    >
    >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Mostrar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com o 
-**Mostrar opção de componentes** ocultos. Neste exemplo, dois componentes estão ocultos.
+   * **Mostrar**
+componentesSelecione os componentes principais para mostrar a barra de ferramentas de ação com o 
+**Mostrar** opção de componentes ocultos. Neste exemplo, dois componentes estão ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
