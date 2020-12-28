@@ -38,9 +38,9 @@ Para auxiliar você durante a criação de páginas, o ambiente de criação for
 
 * **Edição no local** Os componentes de Texto e Imagem podem ser editados diretamente na página da Web, sem abrir uma caixa de diálogo ou uma ação de salvar explícita.
 
-* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**Uma janela de “inspetor” flutuante que aparece na página editável. Desse ponto, novos componentes podem ser arrastados para a página e ações específicas de página podem ser executadas.
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)** Uma janela de “inspetor” flutuante que aparece na página editável. Desse ponto, novos componentes podem ser arrastados para a página e ações específicas de página podem ser executadas.
 
-* **[Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**No lado esquerdo de cada página que pode ser criada, o localizador de conteúdo fornece acesso rápido a uma variedade de ativos, inclusive os ativos digitais (como outras imagens, elementos Flash e documentos), outras páginas e parágrafos. Esses itens podem ser arrastados para a página; por exemplo, para posicionar ativos ou criar links para outras páginas.
+* **[Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** No lado esquerdo de cada página que pode ser criada, o localizador de conteúdo fornece acesso rápido a uma variedade de ativos, inclusive os ativos digitais (como outras imagens, elementos Flash e documentos), outras páginas e parágrafos. Esses itens podem ser arrastados para a página; por exemplo, para posicionar ativos ou criar links para outras páginas.
 
 * **Menu de contexto** Clicar com o botão direito do mouse na maioria dos elementos na tela (por exemplo, parágrafos na página) ativa um menu de contexto com as opções de ação apropriadas.
 
