@@ -18,15 +18,15 @@ ht-degree: 1%
 ---
 
 
-# How to Work With Packages{#how-to-work-with-packages}
+# Como trabalhar com pacotes{#how-to-work-with-packages}
 
 Os pacotes permitem a importação e exportação de conteúdo do repositório. Por exemplo, você pode usar pacotes para instalar uma nova funcionalidade, transferir conteúdo entre instâncias e fazer backup do conteúdo do repositório.
 
 Os pacotes podem ser acessados e/ou mantidos nas seguintes páginas:
 
-* [Gerenciador](#package-manager)de pacotes, que você usa para gerenciar os pacotes na instância de AEM local.
+* [Gerenciador](#package-manager) de pacotes, que você usa para gerenciar os pacotes na instância de AEM local.
 
-* [Compartilhamento](#package-share)de pacotes, um servidor centralizado com pacotes disponíveis publicamente e privados para sua empresa. Os pacotes públicos podem conter hotfixes, nova funcionalidade, documentação etc.
+* [Compartilhamento](#package-share) de pacotes, um servidor centralizado com pacotes disponíveis publicamente e privados para sua empresa. Os pacotes públicos podem conter hotfixes, nova funcionalidade, documentação etc.
 
 Você pode transferir pacotes entre o Gerenciador de pacotes, o Compartilhamento de pacotes e seu sistema de arquivos.
 
@@ -45,10 +45,10 @@ Um pacote também contém informações meta do cofre, incluindo as definições
 É possível executar as seguintes ações em ou com pacotes:
 
 * Criar novos pacotes; definição das configurações e filtros do pacote, conforme necessário
-* Conteúdo do pacote de Pré-visualização (antes da compilação)
+* Conteúdo do pacote de pré-visualização (antes da compilação)
 * Criar pacotes
-* Informações do pacote de Visualização
-* Conteúdo do pacote de Visualização (após a criação)
+* Informações do pacote de visualização
+* Conteúdo do pacote de visualização (após a criação)
 * Modificar a definição de pacotes existentes
 * Reconstruir pacotes existentes
 * Reembrulhar pacotes
@@ -74,7 +74,7 @@ Uma definição de pacote é composta de vários tipos de informações:
 
 Você pode editar várias Configurações do pacote para definir aspectos como a descrição do pacote, bugs relacionados, dependências e informações do provedor.
 
-A caixa de diálogo Configurações **do** pacote está disponível por meio do botão **Editar** ao [criar](#creating-a-new-package) ou [editar](#viewing-and-editing-package-information) um pacote e fornece três guias para configuração. Depois de fazer qualquer alteração, clique em **OK** para salvá-las.
+A caixa de diálogo **Configurações do pacote** está disponível através do botão **Editar** quando [criar](#creating-a-new-package) ou [editar](#viewing-and-editing-package-information) um pacote e fornece três guias para configuração. Depois de fazer qualquer alteração, clique em **OK** para salvá-las.
 
 ![packagesedit](assets/packagesedit.png)
 
@@ -128,14 +128,14 @@ A caixa de diálogo Configurações **do** pacote está disponível por meio do 
      <li><strong>Mesclar</strong></li> 
      <li><strong>Limpar</strong></li> 
      <li><strong>MergePreserve</strong></li> 
-    </ul> <p>The default value is <strong>Ignore</strong>.</p> </td> 
+    </ul> <p>O valor padrão é <strong>Ignorar</strong>.</p> </td> 
    <td> 
     <ul> 
-     <li><strong>Ignorar</strong> - preservar ACLs no repositório</li> 
-     <li><strong>Substituir</strong> - substituir ACLs no repositório</li> 
-     <li><strong>Mesclar</strong> - mesclar ambos os conjuntos de ACLs</li> 
-     <li><strong>Limpar</strong> - limpar ACLs</li> 
-     <li><strong>MergePreserve</strong> - mescla o controle de acesso no conteúdo com o fornecido com o pacote adicionando as entradas de controle de acesso de principais não presentes no conteúdo</li> 
+     <li><strong>Ignorar</strong>  - preservar ACLs no repositório</li> 
+     <li><strong>Substituir</strong>  - substituir ACLs no repositório</li> 
+     <li><strong>Mesclar</strong>  - mesclar ambos os conjuntos de ACLs</li> 
+     <li><strong>Limpar</strong>  - limpar ACLs</li> 
+     <li><strong>MergePreserve</strong>  - mescla o controle de acesso no conteúdo com o fornecido com o pacote adicionando as entradas de controle de acesso de principais não presentes no conteúdo</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -145,17 +145,17 @@ A caixa de diálogo Configurações **do** pacote está disponível por meio do 
 
 | **Texto** | **Descrição** | **Formato/Exemplo** |
 |---|---|---|
-| Testado com | O nome e a versão do produto para os quais este pacote está direcionado ou é compatível. | *AEM6* |
-| Erros/problemas corrigidos | Um campo de texto que permite a lista de detalhes de erros corrigidos com este pacote. lista cada bug em uma linha separada. | resumo bug-nr |
+| Testado com | O nome e a versão do produto para os quais este pacote está direcionado ou é compatível. | *AEM 6* |
+| Erros/problemas corrigidos | Um campo de texto que permite a lista de detalhes de erros corrigidos com este pacote. Lista cada bug em uma linha separada. | resumo bug-nr |
 | Depende de | Lista informações de dependência que precisam ser respeitadas sempre que outros pacotes forem necessários para permitir que o pacote atual seja executado conforme esperado. Esse campo é importante ao usar hotfixes. | groupId:name:version |
 | Substitui | Uma lista de pacotes obsoletos que este pacote substitui. Antes de instalar, verifique se este pacote inclui todo o conteúdo necessário dos pacotes obsoletos para que nenhum conteúdo seja substituído. | groupId:name:version |
 
 ### Filtros do pacote {#package-filters}
 
-Os Filtros identificam os nós do repositório a serem incluídos no pacote. Uma Definição **de** filtro especifica as seguintes informações:
+Os filtros identificam os nós do repositório a serem incluídos no pacote. Uma **Definição de filtro** especifica as seguintes informações:
 
-* O Caminho **** raiz do conteúdo a ser incluído.
-* **Regras** que incluem ou excluem nós específicos abaixo do caminho raiz.
+* O **Caminho raiz** do conteúdo a ser incluído.
+* **** Regras que incluem ou excluem nós específicos abaixo do caminho raiz.
 
 Filtros podem incluir zero ou mais regras. Quando nenhuma regra é definida, o pacote contém todo o conteúdo abaixo do caminho raiz.
 
@@ -176,14 +176,14 @@ A tabela a seguir descreve essas regras e fornece exemplos:
    <td> incluir</td> 
    <td>Você pode definir um caminho ou usar uma expressão regular para especificar todos os nós que deseja incluir.<br /> <br /> A inclusão de um diretório: 
     <ul> 
-     <li>incluir esse diretório <i>e todos os arquivos</i> e pastas desse diretório (ou seja, toda a subárvore)</li> 
-     <li><strong>não</strong> incluir outros arquivos ou pastas no caminho raiz especificado</li> 
+     <li>incluir esse diretório <i>e</i> todos os arquivos e pastas desse diretório (ou seja, toda a subárvore)</li> 
+     <li><strong></strong> não incluir outros arquivos ou pastas no caminho raiz especificado</li> 
     </ul> </td> 
    <td>/libs/sling/install(/.*)? </td> 
   </tr> 
   <tr> 
    <td> excluir</td> 
-   <td>Você pode especificar um caminho ou usar uma expressão regular para especificar todos os nós que deseja excluir.<br /> <br /> A exclusão de um diretório excluirá esse diretório <i>e todos os arquivos</i> e pastas desse diretório (ou seja, toda a subárvore).<br /> </td> 
+   <td>Você pode especificar um caminho ou usar uma expressão regular para especificar todos os nós que deseja excluir.<br /> <br /> A exclusão de um diretório excluirá esse diretório  <i></i> e todos os arquivos e pastas desse diretório (ou seja, toda a subárvore).<br /> </td> 
    <td>/libs/wcm/fundação/componentes(/.*)?</td> 
   </tr> 
  </tbody> 
@@ -193,7 +193,7 @@ A tabela a seguir descreve essas regras e fornece exemplos:
 >
 >Um pacote pode conter várias definições de filtro, de modo que nós de diferentes locais possam ser facilmente combinados em um único pacote.
 
-Os filtros do pacote são definidos com mais frequência quando você [cria o pacote](#creating-a-new-package)pela primeira vez, mas também podem ser editados posteriormente (após o que o pacote deve ser recriado).
+Os filtros do pacote são definidos com mais frequência quando você [cria o pacote](#creating-a-new-package), mas também podem ser editados posteriormente (após o que o pacote deve ser reconstruído).
 
 ### Capturas de tela do pacote {#package-screenshots}
 
@@ -221,7 +221,7 @@ Pacotes de recursos oficiais:
 
 ## Gerenciador de pacotes {#package-manager}
 
-O Gerenciador de pacotes gerencia os pacotes em sua instalação AEM local. Depois de [atribuir as permissões](#permissions-needed-for-using-the-package-manager) necessárias, você pode usar o Gerenciador de pacotes para várias ações, incluindo configuração, criação, download e instalação dos pacotes. Os principais elementos a serem configurados são:
+O Gerenciador de pacotes gerencia os pacotes em sua instalação AEM local. Depois que você [atribuir as permissões necessárias](#permissions-needed-for-using-the-package-manager), poderá usar o Gerenciador de pacotes para várias ações, incluindo configuração, criação, download e instalação dos pacotes. Os principais elementos a serem configurados são:
 
 * [Configurações do pacote](#package-settings)
 * [Filtros do pacote](#package-filters)
@@ -233,15 +233,15 @@ Para conceder aos usuários o direito de criar, modificar, carregar e instalar p
 * **/etc/packages** (direitos totais excluindo exclusão)
 * o nó que contém o conteúdo do pacote
 
-Consulte [Configuração de permissões](/help/sites-administering/security.md) para obter instruções sobre como alterar permissões.
+Consulte [Definindo permissões](/help/sites-administering/security.md) para obter instruções sobre como alterar permissões.
 
-### Creating a New Package {#creating-a-new-package}
+### Criando um Novo Pacote {#creating-a-new-package}
 
 Para criar uma nova definição de pacote:
 
-1. Na tela AEM Welcome (Bem-vindo), clique em **Packages** (ou, no console **Ferramentas** , clique em **Tools** console duplo emPackages).
+1. Na tela AEM Welcome (Bem-vindo), clique em **Packages** (ou no duplo do console **Ferramentas**, clique em **Packages**).
 
-1. Em seguida, selecione **Gerenciador** de pacotes.
+1. Em seguida, selecione **Gerenciador de pacotes**.
 1. Clique em **Criar pacote**.
 
    >[!NOTE]
@@ -281,36 +281,38 @@ Para criar uma nova definição de pacote:
    >
    >Você pode retornar a esta página em um estágio posterior, se necessário.
 
-1. Clique em **Editar** para editar as configurações [](#package-settings)do pacote.
+1. Clique em **Editar** para editar as [configurações do pacote](#package-settings).
 
-   Aqui, você pode adicionar informações e/ou definir certas configurações; por exemplo, eles incluem uma descrição, o [ícone](#package-icons), erros relacionados e detalhes do provedor.
+   Aqui, você pode adicionar informações e/ou definir certas configurações; por exemplo, eles incluem uma descrição, o [ícone](#package-icons), bugs relacionados e adicionar detalhes do provedor.
 
-   Clique em **OK** após terminar de editar as configurações.
+   Clique em **OK** depois de terminar de editar as configurações.
 
-1. Adicione **[capturas de tela](#package-screenshots)**ao pacote, conforme necessário. Uma instância está disponível quando o pacote é criado, adicione mais, se necessário, usando o **Package Screenshot**do sidekick.
+1. Adicione **[Capturas de tela](#package-screenshots)** ao pacote, conforme necessário. Uma instância está disponível quando o pacote é criado, adicione mais, se necessário, usando **Captura de tela do pacote** do sidekick.
 
-   Adicione a imagem real clicando com o duplo no componente de imagem na área **Capturas de tela** , adicionando uma imagem e clicando em **OK**.
+   Adicione a imagem real clicando com o duplo no componente de imagem na área **Capturas de tela**, adicionando uma imagem e clicando em **OK**.
 
-1. Defina os Filtros **[do](#package-filters)**pacote arrastando instâncias da Definição **de**filtro do sidekick e clicando no duplo para abrir para edição:
+1. Defina **[Filtros de pacote](#package-filters)** arrastando instâncias de **Definição de filtro** do sidekick e, em seguida, clicando no duplo para abrir para edição:
 
    ![packagesfilter](assets/packagesfilter.png)
 
    Especifique:
 
-   * **Caminho raiz** O conteúdo a ser embalado; essa pode ser a raiz de uma subárvore.
-   * **As regras** são opcionais; para definições simples de pacote, não é necessário especificar regras de inclusão ou exclusão.
+   * **Caminho**
+raizO conteúdo a ser embalado; essa pode ser a raiz de uma subárvore.
+   * **As**
+Regras são opcionais; para definições simples de pacote, não é necessário especificar regras de inclusão ou exclusão.
 
-      Se necessário, é possível definir as regras [**Incluir **ou** Excluir **para](#package-filters)definir exatamente o conteúdo do pacote.
+      Se necessário, você pode definir [**Incluir** ou **Excluir** regras](#package-filters) para definir exatamente o conteúdo do pacote.
 
-      Adicione regras usando o símbolo **+** e, como alternativa, remova regras usando o símbolo **-** . As regras são aplicadas de acordo com sua ordem para posicioná-las conforme necessário usando os botões **Para** cima e **Para baixo** .
+      Adicione regras usando o símbolo **+**, como alternativa, remova regras usando o símbolo **-**. As regras são aplicadas de acordo com sua ordem para posicioná-las conforme necessário usando os botões **Up** e **Down**.
    Em seguida, clique em **OK** para salvar o filtro.
 
    >[!NOTE]
    >
-   >Você pode usar tantas definições de filtro quantas forem necessárias, embora seja necessário tomar cuidado para garantir que elas não entrem em conflito. Use a **Pré-visualização** para confirmar o conteúdo do pacote.
+   >Você pode usar tantas definições de filtro quantas forem necessárias, embora seja necessário tomar cuidado para garantir que elas não entrem em conflito. Use **Pré-visualização** para confirmar qual será o conteúdo do pacote.
 
-1. Para confirmar qual pacote contém, você pode usar a **Pré-visualização**. Isso executa uma execução seca do processo de construção e lista tudo o que será adicionado ao pacote quando ele for realmente construído.
-1. Agora você pode [criar](#building-a-package) seu pacote.
+1. Para confirmar qual pacote contém, você pode usar **Pré-visualização**. Isso executa uma execução seca do processo de construção e lista tudo o que será adicionado ao pacote quando ele for realmente construído.
+1. Agora você pode [Criar](#building-a-package) seu pacote.
 
    >[!NOTE]
    >
@@ -318,15 +320,15 @@ Para criar uma nova definição de pacote:
 
 ### Criação de um pacote {#building-a-package}
 
-Geralmente, um pacote é criado ao mesmo tempo que você [cria a definição](#creating-a-new-package)do pacote, mas é possível retornar posteriormente para criar ou recriar o pacote. Isso pode ser útil se o conteúdo no repositório tiver sido alterado.
+Geralmente, um pacote é criado ao mesmo tempo que você [cria a definição do pacote](#creating-a-new-package), mas você pode retornar posteriormente para criar ou recriar o pacote. Isso pode ser útil se o conteúdo no repositório tiver sido alterado.
 
 >[!NOTE]
 >
 >Antes de criar o pacote, pode ser útil pré-visualização no conteúdo do pacote. Para fazer isso, clique em **Pré-visualização**.
 
-1. Abra a definição do pacote no Gerenciador **de** pacotes (clique no ícone ou no nome do pacote).
+1. Abra a definição do pacote de **Gerenciador de pacotes** (clique no ícone ou nome do pacote).
 
-1. Clique em **Criar**. Uma caixa de diálogo solicita a confirmação de que você deseja criar o pacote.
+1. Clique em **Build**. Uma caixa de diálogo solicita a confirmação de que você deseja criar o pacote.
 
    >[!NOTE]
    >
@@ -334,17 +336,17 @@ Geralmente, um pacote é criado ao mesmo tempo que você [cria a definição](#c
 
 1. Clique em **OK**. AEM criará o pacote, listando todo o conteúdo adicionado ao pacote conforme ele for criado. Quando concluído, o AEM exibe uma confirmação de que o pacote foi criado e (ao fechar a caixa de diálogo) atualiza as informações de lista do pacote.
 
-### Reenvolvimento de um pacote {#rewrapping-a-package}
+### Reenvolvimento de um Pacote {#rewrapping-a-package}
 
 Depois que um pacote é criado, ele pode ser reencapsulado, se necessário.
 
-Revincular altera as informações do pacote - *sem* alterar o conteúdo do pacote. As informações do pacote são a miniatura, a descrição etc., ou seja, tudo o que você pode editar com a caixa de diálogo Configurações **do** pacote (para abrir, clique em **Editar**).
+Revincular altera as informações do pacote - *sem* alterar o conteúdo do pacote. As informações do pacote são a miniatura, a descrição etc., ou seja, tudo o que você pode editar com a caixa de diálogo **Configurações do pacote** (para abrir, clique em **Editar**).
 
 Um caso de uso importante para reenvolvimento é ao preparar um pacote para o compartilhamento do pacote. Por exemplo, você pode ter um pacote existente e decidir compartilhá-lo com outras pessoas. Para isso, adicione uma miniatura e uma descrição. Em vez de recriar o pacote inteiro com toda a sua funcionalidade (o que pode levar algum tempo e acarretar o risco de o pacote não ser mais idêntico ao original), você pode reembalá-lo e adicionar a miniatura e a descrição.
 
-1. Abra a definição do pacote no Gerenciador **de** pacotes (clique no ícone ou no nome do pacote).
+1. Abra a definição do pacote de **Gerenciador de pacotes** (clique no ícone ou nome do pacote).
 
-1. Clique em **Editar** e atualize as Configurações **[](#package-settings)**do pacote, conforme necessário. Clique em **OK**para salvar.
+1. Clique em **Editar** e atualize as **[Configurações do pacote](#package-settings)** conforme necessário. Clique em **OK** para salvar.
 
 1. Clique em **Reenvolver**, uma caixa de diálogo solicitará confirmação.
 
@@ -365,7 +367,7 @@ Para visualização ou edição de informações sobre uma definição de pacote
 
 1. Se o pacote já tiver sido criado, clique em **Conteúdo**, uma janela abrirá e lista todo o conteúdo do pacote:
 
-### Exibição do conteúdo do pacote e teste da instalação {#viewing-package-contents-and-testing-installation}
+### Visualizando conteúdo do pacote e testando a instalação {#viewing-package-contents-and-testing-installation}
 
 Depois que um pacote for criado, você poderá visualização o conteúdo:
 
@@ -376,31 +378,31 @@ Depois que um pacote for criado, você poderá visualização o conteúdo:
 
    ![conteúdo dos pacotes](assets/packgescontents.png)
 
-1. Para executar uma execução seca da instalação, clique em **Testar instalação**. Depois de confirmar a ação, uma janela abrirá e lista os resultados como se a instalação tivesse sido executada:
+1. Para executar uma execução a seco da instalação, clique em **Testar instalação**. Depois de confirmar a ação, uma janela abrirá e lista os resultados como se a instalação tivesse sido executada:
 
    ![packagestestinstall](assets/packagestestinstall.png)
 
 ### Download de pacotes no seu sistema de arquivos {#downloading-packages-to-your-file-system}
 
-Esta seção descreve como baixar um pacote do AEM para seu sistema de arquivos usando o **Package Manager**.
+Esta seção descreve como baixar um pacote do AEM para seu sistema de arquivos usando **Gerenciador de pacotes**.
 
 >[!NOTE]
 >
->Consulte Compartilhamento [de](#package-share) pacotes para obter informações sobre como baixar hotfixes, pacotes de recursos e pacotes da área pública e da área interna de compartilhamento de pacotes do empresa.
+>Consulte [Compartilhamento de pacotes](#package-share) para obter informações sobre como baixar hotfixes, pacotes de recursos e pacotes da área pública e da área interna de compartilhamento de pacotes do empresa.
 >
 >Em Compartilhamento de pacotes, você pode:
 >
->* baixe os pacotes do Compartilhamento de [pacotes diretamente na instância](#downloading-and-installing-packages-from-package-share)AEM local.\
-   >  Após o download, o pacote é importado para o repositório, depois disso, você pode instalá-lo imediatamente em sua instância local usando o Gerenciador de **pacotes**. Esses pacotes incluem hotfixes e outros pacotes compartilhados.
+>* faça download de pacotes de [Compartilhamento de pacotes diretamente na instância de AEM local](#downloading-and-installing-packages-from-package-share).\
+   >  Após o download, o pacote é importado para o repositório, depois disso, você pode instalá-lo imediatamente em sua instância local usando o **Gerenciador de pacotes**. Esses pacotes incluem hotfixes e outros pacotes compartilhados.
    >
    >
-* baixe os pacotes do Compartilhamento de [pacotes no seu sistema](#downloading-packages-to-your-file-system-from-package-share)de arquivos.
+* baixe pacotes de [Compartilhamento de pacotes no seu sistema de arquivos](#downloading-packages-to-your-file-system-from-package-share).
 
 >
 
 
 
-1. Na tela AEM Welcome (Bem-vindo), clique em **Packages (Pacotes**) e selecione **Package Manager (Gerenciador** de pacotes).
+1. Na tela de boas-vindas AEM, clique em **Pacotes** e selecione **Gerenciador de pacotes**.
 1. Navegue até o pacote que deseja baixar.
 
    ![download de pacotes](assets/packagesdownload.png)
@@ -415,11 +417,11 @@ O upload de um pacote permite que você carregue um pacote de seu sistema de arq
 
 >[!NOTE]
 >
->Consulte [Fazer upload de pacotes para o Compartilhamento](#uploading-a-package) de pacotes interno da empresa para fazer upload de um pacote para a área privada do Compartilhamento de pacotes do empresa.
+>Consulte [Carregar pacotes para o Compartilhamento de pacotes interno da empresa](#uploading-a-package) para fazer upload de um pacote para a área privada do empresa de Compartilhamento de pacotes.
 
 Para carregar um pacote:
 
-1. Navegue até o Gerenciador **de pacotes**. Em seguida, para a pasta do grupo na qual você deseja que o pacote seja carregado.
+1. Navegue até **Gerenciador de pacotes**. Em seguida, para a pasta do grupo na qual você deseja que o pacote seja carregado.
 
    ![packagesuploadbutton](assets/packagesuploadbutton.png)
 
@@ -429,7 +431,7 @@ Para carregar um pacote:
 
    * **Arquivo**
 
-      Você pode digitar o nome do arquivo diretamente ou usar a opção **Procurar...** para selecionar o pacote necessário do sistema de arquivos local (após a seleção, clique em **OK**).
+      Você pode digitar o nome do arquivo diretamente ou usar o **Procurar...caixa de diálogo** para selecionar o pacote necessário do sistema de arquivos local (após a seleção, clique em **OK**).
 
    * **Forçar atualização**
 
@@ -438,9 +440,9 @@ Para carregar um pacote:
 
    >[!NOTE]
    >
-   >Para disponibilizar o conteúdo para AEM, [instale o pacote](#installing-packages).
+   >Para disponibilizar o conteúdo para o AEM, certifique-se de [instalar o pacote](#installing-packages).
 
-### Validação de pacotes {#validating-packages}
+### Validando pacotes {#validating-packages}
 
 Antes de instalar um pacote, verifique seu conteúdo. Como os pacotes podem modificar arquivos sobrepostos em `/apps` e/ou adicionar, modificar e remover ACLs, geralmente é útil validar essas alterações antes da instalação.
 
@@ -458,11 +460,11 @@ Essas opções estão detalhadas abaixo.
 
    **O que está marcado**
 
-   Essa validação inspeciona o pacote para todos os arquivos JAR (pacotes OSGi), extrai suas dependências `manifest.xml` (que contêm as dependências com versão nas quais o pacote OSGi depende) e verifica as exportações da instância AEM, ditas dependências, com as versões corretas.
+   Essa validação inspeciona o pacote para todos os arquivos JAR (pacotes OSGi), extrai `manifest.xml` (que contém as dependências versionadas nas quais o pacote OSGi depende) e verifica as exportações da instância AEM referidas dependências com as versões corretas.
 
    **Como é reportado**
 
-   Todas as dependências com versão que não possam ser atendidas pela instância AEM estão listadas no Log **de** Atividades do Gerenciador de pacotes.
+   Todas as dependências com versão que não possam ser atendidas pela instância AEM estão listadas em **Log de Atividades** do Gerenciador de pacotes.
 
    **Estados de erro**
 
@@ -482,7 +484,7 @@ Essas opções estão detalhadas abaixo.
 
    **Como é reportado**
 
-   Essas sobreposições são descritas no Log **de** Atividades do Gerenciador de pacotes.
+   Essas sobreposições são descritas em **Log de Atividades** do Gerenciador de pacotes.
 
    **Estados de erro**
 
@@ -490,7 +492,7 @@ Essas opções estão detalhadas abaixo.
 
    **Resolução de erro**
 
-   Para resolver esse problema, o responsável principal do arquivo de sobreposição em `/apps` deve revisar as alterações no arquivo sobreposto em `/libs` e incorporar as alterações conforme necessário na sobreposição ( `/apps`) e reimplantar o arquivo sobreposto.
+   Para resolver esse problema, o responsável principal do arquivo de sobreposição em `/apps` deve revisar as alterações no arquivo sobreposto em `/libs`, incorporar as alterações conforme necessário na sobreposição ( `/apps`) e reimplantar o arquivo sobreposto.
 
    >[!NOTE]
    >
@@ -504,7 +506,7 @@ Essas opções estão detalhadas abaixo.
 
    **Como é reportado**
 
-   As permissões são descritas no Log **de** Atividades do Gerenciador de pacotes.
+   As permissões são descritas em **Log de Atividades** do Gerenciador de pacotes.
 
    **Estados de erro**
 
@@ -532,7 +534,7 @@ A validação dos pacotes pode ser efetuada de duas formas diferentes:
 **Validação do pacote por meio do Gerenciador de pacotes**
 
 1. Abra o Gerenciador de pacotes em `https://<server>:<port>/crx/packmgr`
-1. Selecione o pacote na lista e, em seguida, selecione **Mais** suspensa no cabeçalho e, em seguida, **Validar** no menu suspenso.
+1. Selecione o pacote na lista e, em seguida, selecione **Mais** no menu suspenso e, em seguida, **Validar** no menu suspenso.
 
    >[!NOTE]
    >
@@ -552,7 +554,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >[!NOTE]
 >
->O `type` parâmetro pode ser qualquer lista não ordenada separada por vírgulas que consista em:
+>O parâmetro `type` pode ser qualquer lista não ordenada separada por vírgulas que consista em:
 >
 >* `osgiPackageImports`
 >* `overlays`
@@ -560,7 +562,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >
 >
-O valor padrão de `type` é `osgiPackageImports` se não for passado.
+O valor de `type` assumirá `osgiPackageImports` como padrão se não for passado.
 
 A seguir está um exemplo de uso de cURL para executar uma validação de pacote.
 
@@ -580,7 +582,7 @@ A seguir está um exemplo de uso de cURL para executar uma validação de pacote
 
 Após carregar um pacote, é necessário instalar o conteúdo. Para ter o conteúdo do pacote instalado e funcional, ele precisa ser:
 
-* carregado no AEM ( [carregado do sistema de arquivos](#uploading-packages-from-your-file-system) ou [baixado do compartilhamento](#downloading-and-installing-packages-from-package-share)de pacote)
+* carregado no AEM ([carregado do sistema de arquivos](#uploading-packages-from-your-file-system) ou [baixado do compartilhamento de pacotes](#downloading-and-installing-packages-from-package-share))
 
 * instalados
 
@@ -622,27 +624,27 @@ Desativar o WorkflowLauncher garante que a estrutura do importador de Ativos nã
 
 1. No Gerenciador de pacotes, navegue até o pacote que deseja instalar.
 
-   Um botão **Install (Instalar** ) é exibido na lateral de Packages que ainda não foram instalados.
+   Um botão **Install** é exibido na lateral de Packages que ainda não foram instalados.
 
    >[!NOTE]
    >
-   >Como alternativa, você pode abrir o pacote clicando em seu ícone para acessar o botão **Instalar** .
+   >Como alternativa, você pode abrir o pacote clicando em seu ícone para acessar o botão **Instalar** ali.
 
 1. Clique em **Instalar** para start da instalação. Uma caixa de diálogo solicitará a confirmação e a lista de todas as alterações feitas. Quando terminar, clique em **Fechar** na caixa de diálogo.
 
-   A palavra **Instalado** é exibida ao lado do pacote depois que ele é instalado.
+   A palavra **Instalado** aparece ao lado do pacote depois que ele é instalado.
 
 ### Upload e instalação baseados no sistema de arquivos {#file-system-based-upload-and-installation}
 
-Há uma maneira alternativa de carregar e instalar pacotes na sua instância. Em seu sistema de arquivos, você tem uma `crx-quicksart` pasta junto com seu jar e `license.properties` arquivo. É necessário criar uma pasta com o nome `install` em `crx-quickstart`. Você terá algo assim: `<aem_home>/crx-quickstart/install`
+Há uma maneira alternativa de carregar e instalar pacotes na sua instância. No sistema de arquivos, você tem uma pasta `crx-quicksart` junto com seu arquivo jar e `license.properties`. É necessário criar uma pasta chamada `install` em `crx-quickstart`. Você terá algo assim: `<aem_home>/crx-quickstart/install`
 
 Nesta instalação, pasta, você pode adicionar diretamente seus pacotes. Eles serão carregados e instalados automaticamente em sua instância. Quando terminar, você poderá ver os pacotes no Gerenciador de pacotes.
 
-Se sua instância estiver sendo executada, a adição de um pacote à `install` pasta iniciará diretamente o upload e a instalação na instância. Se sua instância não estiver em execução, os pacotes que você colocar na `install` pasta serão instalados na inicialização, na ordem alfabética.
+Se sua instância estiver sendo executada, a adição de um pacote à pasta `install` iniciará diretamente o upload e a instalação na instância. Se sua instância não estiver em execução, os pacotes que você colocar na pasta `install` serão instalados na inicialização, na ordem alfabética.
 
 >[!NOTE]
 >
->Você também pode fazer isso antes mesmo de iniciar a instância pela primeira vez. Para fazer isso, é necessário criar a `crx-quickstart` pasta manualmente, criar a `install` pasta abaixo dela e colocar os pacotes lá. Em seguida, quando você iniciar sua instância pela primeira vez, os pacotes serão instalados em ordem alfabética.
+>Você também pode fazer isso antes mesmo de iniciar a instância pela primeira vez. Para fazer isso, é necessário criar a pasta `crx-quickstart` manualmente, criar a pasta `install` sob ela e colocar os pacotes lá. Em seguida, quando você iniciar sua instância pela primeira vez, os pacotes serão instalados em ordem alfabética.
 
 ### Desinstalação de pacotes {#uninstalling-packages}
 
@@ -664,9 +666,9 @@ Para excluir um pacote das listas do Gerenciador de pacotes:
 
 >[!NOTE]
 >
->Os arquivos/nós instalados do pacote **não** são excluídos.
+>Os arquivos/nós instalados do pacote são **e não** excluídos.
 
-1. No console **Ferramentas** , expanda a pasta **Pacotes** para mostrar seu pacote no painel direito.
+1. No console **Ferramentas**, expanda a pasta **Pacotes** para mostrar seu pacote no painel direito.
 
 1. Clique no pacote que deseja excluir para realçá-lo e, em seguida, em:
 
@@ -675,17 +677,17 @@ Para excluir um pacote das listas do Gerenciador de pacotes:
 
    ![packagesdelete](assets/packagesdelete.png)
 
-1. AEM solicita a confirmação de que você deseja excluir o pacote. Click **OK** to confirm the deletion.
+1. AEM solicita a confirmação de que você deseja excluir o pacote. Clique em **OK** para confirmar a exclusão.
 
 >[!CAUTION]
 >
->Se este pacote já tiver sido instalado, o conteúdo *instalado* **não** será excluído.
+>Se este pacote já tiver sido instalado, o conteúdo *instalado* será **não** excluído.
 
 ### Replicação de pacotes {#replicating-packages}
 
 Replicar o conteúdo de um pacote para instalá-lo na instância de publicação:
 
-1. No Gerenciador **de pacotes**, navegue até o pacote que você deseja replicar.
+1. No **Gerenciador de pacotes**, navegue até o pacote que você deseja replicar.
 
 1. Clique no ícone ou no nome do pacote que deseja replicar para expandi-lo.
 1. No menu suspenso **Mais** na barra de ferramentas, selecione **Replicar**.
@@ -706,33 +708,33 @@ O acesso ao Compartilhamento de pacotes está disponível para nossos parceiros 
 
 Para obter acesso ao Compartilhamento de pacotes:
 
-* Usar a página [Entrar](#signing-in-to-package-share)
+* Use a [página de logon](#signing-in-to-package-share)
 * Na primeira vez que você usar a página de logon, será necessário:
 
-   * [Registre-se em um Adobe ID](#registering-for-package-share) e/ou [valide seu Adobe ID existente](#validating-your-adobe-id)
-   * para que sua conta [de compartilhamento de](#package-share-account) pacotes possa ser criada
+   * [Registre-se para obter uma ](#registering-for-package-share) ID de Adobe e/ou  [valide seu Adobe ID existente](#validating-your-adobe-id)
+   * para que sua [Conta de Compartilhamento de Pacotes](#package-share-account) possa ser criada
 
 >[!NOTE]
 >
 >Qualquer usuário de Compartilhamento de pacotes que não tenha sido atribuído a um cliente deve ingressar em uma comunidade para ver esses recursos clicando em **Ingressar** ao lado do logon de compartilhamento de pacotes.
 
-#### Fazer logon no compartilhamento de pacotes {#signing-in-to-package-share}
+#### Fazer logon no Compartilhamento de pacotes {#signing-in-to-package-share}
 
 1. Na tela de boas-vindas do AEM, clique em **Ferramentas** -> **Implantação**
-1. Em seguida, selecione Compartilhamento **de pacotes**. Você deverá:
+1. Em seguida, selecione **Compartilhamento de pacotes**. Você deverá:
 
    * faça logon com seu Adobe ID
    * [Criar um Adobe ID](#registering-for-package-share)
 
    >[!NOTE]
    >
-   >Na primeira vez que você fizer logon com seu Adobe ID, deverá concluir a [validação do seu endereço](#validating-your-adobe-id)de email.
+   >Na primeira vez que você fizer logon com seu Adobe ID, deverá concluir a [validação do seu endereço de email](#validating-your-adobe-id).
 
    >[!NOTE]
    >
-   >Se você tiver esquecido sua senha, use o **Problema ao fazer logon?** na caixa de diálogo de logon.
+   >Se você esqueceu sua senha, use o **Problema ao fazer logon?** na caixa de diálogo de logon.
 
-#### Validação do Adobe ID {#validating-your-adobe-id}
+#### Validando seu Adobe ID {#validating-your-adobe-id}
 
 Na primeira vez que você entrar no Compartilhamento de pacotes com seu Adobe ID, seu endereço de email será validado.
 
@@ -749,13 +751,13 @@ Na primeira vez que você entrar no Compartilhamento de pacotes com seu Adobe ID
 1. Uma página da Web será aberta. A ação de abrir esta página da Web é executada como validação.
 1. O logon continuará.
 
-#### Registrando-se no Compartilhamento de pacotes {#registering-for-package-share}
+#### Registrando para o Compartilhamento de pacotes {#registering-for-package-share}
 
 Se você precisar acessar o Compartilhamento de pacotes, será necessário se registrar em um Adobe ID:
 
-* A página [de logon do Compartilhamento de](#signing-in-to-package-share) pacotes oferta um link para o registro de um Adobe ID.
+* A [página de logon do Compartilhamento de pacotes](#signing-in-to-package-share) oferta um link para o registro de um Adobe ID.
 * Você pode se registrar em um Adobe ID a partir de determinados softwares para desktop de Adobe.
-* Como alternativa, você pode se registrar on-line na página [do](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1)Adobe Sign In.
+* Como alternativa, você pode se registrar on-line na [página do Adobe Sign In](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1).
 
 Um Adobe ID pode ser criado fornecendo:
 
@@ -763,7 +765,7 @@ Um Adobe ID pode ser criado fornecendo:
 * uma senha de sua escolha
 * algumas informações adicionais, como o seu nome e o país de residência
 
-#### Conta de compartilhamento de pacotes {#package-share-account}
+#### Conta de Compartilhamento de Pacotes {#package-share-account}
 
 A validade do seu aplicativo será verificada antes de:
 
@@ -788,7 +790,7 @@ Para evitar esse problema, você pode acessar o Compartilhamento de pacotes de u
 
 O Compartilhamento de pacotes não está disponível no momento se sua empresa executa um proxy http que requer autenticação.
 
-O Compartilhamento de pacotes só está disponível quando o servidor de AEM tem acesso à Internet sem necessidade de autenticação. Para configurar o proxy para todos os serviços que usam o cliente http (incluindo o compartilhamento de pacote), use a configuração [OSGi do pacote](/help/sites-deploying/osgi-configuration-settings.md)Day Commons HTTP Client 3.1.
+O Compartilhamento de pacotes só está disponível quando o servidor de AEM tem acesso à Internet sem necessidade de autenticação. Para configurar o proxy para todos os serviços que usam o cliente http (incluindo o compartilhamento de pacote), use a configuração [OSGi do pacote Day Commons HTTP Client 3.1](/help/sites-deploying/osgi-configuration-settings.md).
 
 ### Compartilhamento de pacotes internos {#inside-package-share}
 
@@ -800,7 +802,7 @@ Em pacotes de Compartilhamento de pacotes estão organizados em subárvores de t
 
 ![chlimage_1-346](assets/chlimage_1-346.png)
 
-### Como pesquisar e filtrar pacotes {#searching-and-filtering-packages}
+### Pesquisando e filtrando pacotes {#searching-and-filtering-packages}
 
 Compartilhamento de pacotes oferta uma barra de pesquisa que você pode usar para pesquisar palavras-chave ou tags específicas. As palavras-chave e tags são compatíveis com vários valores.
 
@@ -813,46 +815,46 @@ Você também pode alterar o operador condicional de OU para E, no lado direito 
 
 Para baixar pacotes do Compartilhamento de pacotes e instalá-los em sua instância local, é mais fácil acessar o Compartilhamento de pacotes da instância AEM. Isso fará o download do pacote e o registrará imediatamente no Gerenciador de pacotes, de onde ele pode ser instalado.
 
-1. Na tela de boas-vindas AEM, clique em **Ferramentas** e selecione Compartilhamento **de** pacotes para abrir a página Compartilhamento de pacotes.
+1. Na tela de boas-vindas AEM, clique em **Ferramentas** e selecione **Compartilhamento de pacotes** para abrir a página Compartilhamento de pacotes.
 1. Usando os detalhes de sua conta, faça logon no Compartilhamento de pacotes. A landing page é mostrada, listando a pasta Adobe, a pasta Compartilhada e uma pasta específica para a sua empresa.
 
    >[!NOTE]
    >
-   >Antes de começar a baixar pacotes do Compartilhamento de pacotes, verifique se você tem o acesso [](#access-to-package-share)necessário.
+   >Antes de começar a baixar pacotes do Compartilhamento de pacotes, verifique se você tem o [acesso necessário](#access-to-package-share).
 
 1. Navegue até o pacote que deseja baixar e clique em **Download**.
 
-1. Retorne ou navegue até o **Gerenciador** de pacotes em sua instância AEM. Em seguida, navegue até o pacote que você acabou de baixar.
+1. Volte ou navegue até **Gerenciador de pacotes** na sua instância AEM. Em seguida, navegue até o pacote que você acabou de baixar.
 
    >[!NOTE]
    >
    >Para localizar o pacote baixado, siga o mesmo caminho do Compartilhamento de pacotes. Por exemplo, se você baixou um pacote do seguinte caminho no Compartilhamento de pacotes:
    >
-   >**Pacotes** > **Público** > **Hotfixes**
+   >**Pacotes** >  **Público** >  **Hotfixes**
    Em seguida, no Package Manager em sua instância local, o pacote também será exibido em:
-   **Pacotes** > **Público** > **Hotfixes**
+   **Pacotes** >  **Público** >  **Hotfixes**
 
-1. Clique em **Install (Instalar** ) para instalar o pacote na instalação AEM local.
+1. Clique em **Instalar** para instalar o pacote na instalação AEM local.
 
    >[!NOTE]
-   Se o pacote já tiver sido instalado em sua instância, o indicador **Instalado** será exibido ao lado do pacote em vez do botão **Instalar** .
+   Se o pacote já tiver sido instalado em sua instância, o indicador **Instalado** aparecerá ao lado do pacote em vez do botão **Instalar**.
 
    >[!CAUTION]
-   A instalação de um pacote pode substituir o conteúdo existente no repositório. Portanto, recomendamos que você execute uma instalação **de** teste primeiro. Isso permite que você verifique se o conteúdo do pacote está em conflito com o conteúdo existente.
+   A instalação de um pacote pode substituir o conteúdo existente no repositório. Portanto, recomendamos que você execute **Test Install** primeiro. Isso permite que você verifique se o conteúdo do pacote está em conflito com o conteúdo existente.
 
-### Download de pacotes para seu sistema de arquivos a partir do Compartilhamento de pacotes {#downloading-packages-to-your-file-system-from-package-share}
+### Baixando pacotes no seu sistema de arquivos do Compartilhamento de pacotes {#downloading-packages-to-your-file-system-from-package-share}
 
-[Baixar e instalar](#downloading-and-installing-packages-from-package-share) é muito conveniente, mas, se necessário, você também pode baixar o pacote e salvá-lo no sistema de arquivos local:
+[Baixar e ](#downloading-and-installing-packages-from-package-share) instalar é muito conveniente, mas, se necessário, você também pode baixar o pacote e salvá-lo em seu sistema de arquivos local:
 
 1. Em Compartilhamento de pacotes, clique no ícone ou nome do pacote.
-1. Click the **Assets** tab.
+1. Clique na guia **Ativos**.
 1. Clique em **Baixar no disco**.
 
-### Carregar um pacote {#uploading-a-package}
+### Carregando um pacote {#uploading-a-package}
 
 Com o Compartilhamento de pacotes, você pode fazer upload de pacotes para sua área interna de empresa do compartilhamento de pacotes. Isso os torna disponíveis para compartilhamento em sua empresa.
 
-Esses pacotes *não* estão disponíveis para a comunidade AEM geral, mas estão disponíveis para todos os usuários registrados em sua empresa.
+Esses pacotes estão *não* disponíveis para a comunidade AEM geral, mas estão disponíveis para todos os usuários registrados em sua empresa.
 
 Para fazer upload dos pacotes, faça o compartilhamento de pacotes interno da empresa:
 
@@ -860,19 +862,19 @@ Para fazer upload dos pacotes, faça o compartilhamento de pacotes interno da em
 Para carregar um pacote no Compartilhamento de pacotes, primeiro é necessário criar uma pasta de grupo nomeada após sua empresa no Gerenciador de pacotes local. Por exemplo, geometrixx. Todos os pacotes a serem carregados para compartilhamento devem ser colocados nesta pasta de grupo.
 Os pacotes na lista inicial do Gerenciador de pacotes ou em outras pastas não podem ser compartilhados.
 
-1. Abra o Gerenciador **de pacotes** e navegue até o pacote que deseja carregar.
+1. Abra o **Gerenciador de pacotes** e navegue até o pacote que deseja carregar.
 
 1. Clique no ícone do pacote para abri-lo.
-1. Clique em **Compartilhar** para abrir a caixa de diálogo para fazer upload do pacote no Compartilhamento de pacotes.
+1. Clique em **Compartilhar** para abrir a caixa de diálogo para carregar o pacote no Compartilhamento de pacotes.
 1. Se ainda não estiver conectado ao Compartilhamento de pacotes, será necessário inserir suas credenciais de logon.
 
    Quando você estiver conectado, AEM exibirá detalhes sobre o pacote a ser carregado:
 
-   ![chlimage_1-348](assets/chlimage_1-347.png)
+   ![chlimage_1-347](assets/chlimage_1-347.png)
 
 1. Clique em **Compartilhar** para carregar o pacote no Compartilhamento de pacotes interno do empresa.
 
-   AEM exibe o status e indica quando o pacote terminou de ser carregado, depois disso você pode clicar no **x** (canto superior direito) para sair da janela **Compartilhar pacote** .
+   AEM exibe o status e indica quando o pacote terminou de ser carregado, depois disso você pode clicar na janela **x** (canto superior direito) para sair da janela **Compartilhar pacote**.
 
 1. Depois que o upload for concluído, você poderá navegar até a pasta interna do empresa para ver o pacote que acabou de compartilhar.
 
@@ -891,7 +893,7 @@ Você só pode excluir os pacotes que carregou por meio do procedimento a seguir
 
 1. Clique em **Excluir** para confirmar que deseja excluir o pacote.
 
-### Como tornar os pacotes semisprivados {#making-packages-semi-private}
+### Tornando pacotes semisprivados {#making-packages-semi-private}
 
 Você pode compartilhar pacotes fora da sua organização, mas não publicamente. Estes pacotes seriam considerados semisprivados. Para compartilhar esses pacotes semiprivados, você precisará de ajuda do Suporte ao Adobe. Para fazer isso, abra um ticket com Suporte ao Adobe solicitando que um pacote seja disponibilizado fora da organização. Eles solicitarão uma lista da Adobe ID que você deseja conceder acesso aos seus pacotes.
 
