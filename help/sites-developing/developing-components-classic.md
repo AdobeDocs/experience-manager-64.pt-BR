@@ -19,23 +19,23 @@ ht-degree: 0%
 ---
 
 
-# Desenvolvimento de componentes AEM (IU clássica){#developing-aem-components-classic-ui}
+# Desenvolvimento de componentes AEM (Interface clássica){#developing-aem-components-classic-ui}
 
-A interface clássica usa o ExtJS para criar widgets que fornecem a aparência dos componentes. Devido à natureza desses widgets, há algumas diferenças entre a forma como os componentes interagem com a interface clássica e a interface habilitada para [toque](/help/sites-developing/developing-components.md).
+A interface clássica usa o ExtJS para criar widgets que fornecem a aparência dos componentes. Devido à natureza desses widgets, há algumas diferenças entre a forma como os componentes interagem com a interface clássica e a [interface habilitada para toque](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
->Muitos aspectos do desenvolvimento de componentes são comuns à interface clássica e à interface habilitada para toque, portanto, **você deve ler[AEM Componentes - Noções básicas](/help/sites-developing/components-basics.md)antes** de usar esta página, que lê as especificações da interface clássica.
+>Muitos aspectos do desenvolvimento de componentes são comuns à interface clássica e à interface habilitada para toque, portanto **você deve ler [AEM Componentes - Informações básicas](/help/sites-developing/components-basics.md) antes de** usar esta página, que lê as especificações da interface clássica.
 
 >[!NOTE]
 >
 >Embora a Linguagem de modelo HTML (HTL) e o JSP possam ser usados para desenvolver componentes para a interface clássica, esta página ilustra o desenvolvimento com o JSP. Isso se deve exclusivamente ao histórico de uso do JSP na interface clássica.
 >
->HTL agora é a linguagem de script recomendada para AEM. Consulte [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) e [Desenvolvimento AEM componentes](/help/sites-developing/developing-components.md) para comparar métodos.
+>HTL agora é a linguagem de script recomendada para AEM. Consulte [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) e [Desenvolvimento de componentes AEM](/help/sites-developing/developing-components.md) para comparar métodos.
 
 ## Estrutura {#structure}
 
-A estrutura básica de um componente é abordada na página [AEM Componentes - Noções básicas](/help/sites-developing/components-basics.md#structure), que aplica as interfaces de toque e clássica. Mesmo se você não precisar usar as configurações para a interface habilitada para toque em seu novo componente, pode ajudar a conhecê-las ao herdar dos componentes existentes.
+A estrutura básica de um componente é abordada na página [AEM Componentes - Informações básicas](/help/sites-developing/components-basics.md#structure), que aplica as interfaces de toque e clássica. Mesmo se você não precisar usar as configurações para a interface habilitada para toque em seu novo componente, pode ajudar a conhecê-las ao herdar dos componentes existentes.
 
 ## Scripts JSP {#jsp-scripts}
 
@@ -59,24 +59,24 @@ O local padrão `global.jsp` é:
 
 ### Função de global.jsp, APIs usadas e Taglibs {#function-of-global-jsp-used-apis-and-taglibs}
 
-A seguir, são listas os objetos mais importantes fornecidos a partir do padrão `global.jsp`:
+A seguir, são listas os objetos mais importantes fornecidos pelo padrão `global.jsp`:
 
 Resumo:
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` - O objeto de solicitação encapsulado ( `SlingHttpServletRequest`).
-   * `slingResponse` - O objeto de resposta encapsulado ( `SlingHttpServletResponse`).
-   * `resource` - O Objeto De Recurso Sling ( `slingRequest.getResource();`).
-   * `resourceResolver` - O Objeto Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
+   * `slingRequest` - O objeto de solicitação encapsulado (  `SlingHttpServletRequest`).
+   * `slingResponse` - O objeto de resposta encapsulado (  `SlingHttpServletResponse`).
+   * `resource` - O Objeto De Recurso Sling (  `slingRequest.getResource();`).
+   * `resourceResolver` - O Objeto Sling Resource Resolver (  `slingRequest.getResoucreResolver();`).
    * `currentNode` - O nó JCR resolvido para a solicitação.
    * `log` - O registrador padrão ().
    * `sling` - O auxiliar de script Sling.
-   * `properties` - As propriedades do recurso endereçado ( `resource.adaptTo(ValueMap.class);`).
+   * `properties` - As propriedades do recurso endereçado (  `resource.adaptTo(ValueMap.class);`).
    * `pageProperties` - As propriedades da página do recurso endereçado.
-   * `pageManager` - O gerenciador de páginas para acessar AEM páginas de conteúdo ( `resourceResolver.adaptTo(PageManager.class);`).
+   * `pageManager` - O gerenciador de páginas para acessar AEM páginas de conteúdo (  `resourceResolver.adaptTo(PageManager.class);`).
    * `component` - O objeto componente do componente AEM atual.
-   * `designer` - O objeto designer para recuperar informações de design ( `resourceResolver.adaptTo(Designer.class);`).
+   * `designer` - O objeto designer para recuperar informações de design (  `resourceResolver.adaptTo(Designer.class);`).
    * `currentDesign` - A concepção do recurso endereçado.
    * `currentStyle` - O estilo do recurso endereçado.
 
@@ -92,15 +92,15 @@ Existem três métodos para acessar o conteúdo AEM WCM:
 
    Exemplo: `String paragraphTitle = properties.get("jcr:title", "no title");` usado no script de renderização de um componente de parágrafo padrão.
 
-* Através do `currentPage` objeto introduzido em `global.jsp`:
+* Pelo objeto `currentPage` introduzido em `global.jsp`:
 
-   O `currentPage` objeto é uma instância de uma página (consulte [AEM API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). A classe page fornece alguns métodos para acessar o conteúdo.
+   O objeto `currentPage` é uma instância de uma página (consulte [AEM API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). A classe page fornece alguns métodos para acessar o conteúdo.
 
    Exemplo: `String pageTitle = currentPage.getTitle();`
 
-* Por `currentNode` objeto introduzido em `global.jsp`:
+* Via `currentNode` objeto introduzido em `global.jsp`:
 
-   O `currentNode` objeto é uma instância de um nó (consulte API [](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)JCR). As propriedades de um nó podem ser acessadas pelo `getProperty()` método.
+   O objeto `currentNode` é uma instância de um nó (consulte [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). As propriedades de um nó podem ser acessadas pelo método `getProperty()`.
 
    Exemplo: `String pageTitle = currentNode.getProperty("jcr:title");`
 
@@ -108,35 +108,35 @@ Existem três métodos para acessar o conteúdo AEM WCM:
 
 As bibliotecas de tags CQ e Sling fornecem acesso a funções específicas para uso no script JSP dos seus modelos e componentes.
 
-Para obter mais informações, consulte as Bibliotecas [de](/help/sites-developing/taglib.md)tags de documentos.
+Para obter mais informações, consulte o documento [Bibliotecas de tags](/help/sites-developing/taglib.md).
 
 ## Usando bibliotecas HTML do lado do cliente {#using-client-side-html-libraries}
 
 Sites modernos dependem muito do processamento no cliente, conduzido por códigos complexos de JavaScript e CSS. Organizar e otimizar a entrega desse código pode ser um problema complicado.
 
-Para ajudar a lidar com esse problema, o AEM fornece pastas **de biblioteca do lado do** cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página da Web final para carregar o código correto.
+Para ajudar a lidar com esse problema, AEM fornece **Pastas de biblioteca do lado do cliente**, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página da Web final para carregar o código correto.
 
-Consulte o documento [Usando bibliotecas](/help/sites-developing/clientlibs.md) HTML do lado do cliente para obter mais informações.
+Consulte o documento [Usando bibliotecas HTML do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
 
 ## Caixa de diálogo {#dialog}
 
 Seu componente precisará de uma caixa de diálogo para que os autores adicionem e configurem o conteúdo.
 
-Consulte Componentes [AEM - Informações básicas](/help/sites-developing/components-basics.md#dialogs) para obter mais detalhes.
+Consulte [AEM Componentes - Informações básicas](/help/sites-developing/components-basics.md#dialogs) para obter mais detalhes.
 
 ## Configuração do comportamento de edição {#configuring-the-edit-behavior}
 
 Você pode configurar o comportamento de edição de um componente. Isso inclui atributos como ações disponíveis para o componente, características do editor local e ouvintes relacionados a eventos no componente. A configuração é comum às interfaces de usuário habilitadas para toque e clássica, embora com certas diferenças específicas.
 
-O comportamento de [edição de um componente é configurado](/help/sites-developing/components-basics.md#edit-behavior) adicionando um `cq:editConfig` nó do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades específicas e nós secundários.
+O comportamento [editar de um componente é configurado](/help/sites-developing/components-basics.md#edit-behavior) adicionando um nó `cq:editConfig` do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades e nós secundários específicos.
 
 ## Uso e extensão de widgets ExtJS {#using-and-extending-extjs-widgets}
 
-Consulte [Uso e extensão de widgets](/help/sites-developing/widgets.md) ExtJS para obter mais detalhes.
+Consulte [Usar e estender widgets ExtJS](/help/sites-developing/widgets.md) para obter mais detalhes.
 
 ## Uso de xtypes para widgets ExtJS {#using-xtypes-for-extjs-widgets}
 
-Consulte [Uso de xtypes](/help/sites-developing/xtypes.md) para obter mais detalhes.
+Consulte [Usando xtypes](/help/sites-developing/xtypes.md) para obter mais detalhes.
 
 ## Desenvolvimento de novos componentes {#developing-new-components}
 
@@ -144,11 +144,11 @@ Esta seção descreve como criar seus próprios componentes e adicioná-los ao s
 
 Uma maneira rápida de começar é copiar um componente existente e fazer as alterações desejadas.
 
-Um exemplo de como desenvolver um componente é descrito detalhadamente em [Extensão do componente de texto e imagem - Um exemplo.](#extending-the-text-and-image-component-an-example)
+Um exemplo de como desenvolver um componente é descrito detalhadamente em [Extensão do Componente de Texto e Imagem - Um Exemplo.](#extending-the-text-and-image-component-an-example)
 
-### Desenvolver um novo componente (adaptar componente existente) {#develop-a-new-component-adapt-existing-component}
+### Desenvolver um novo componente (Adaptar componente existente) {#develop-a-new-component-adapt-existing-component}
 
-Para desenvolver novos componentes para AEM com base no componente existente, você pode copiar o componente, criar um arquivo javascript para o novo componente e armazená-lo em um local acessível para AEM (consulte também [Personalizar componentes e outros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
+Para desenvolver novos componentes para AEM com base no componente existente, você pode copiar o componente, criar um arquivo javascript para o novo componente e armazená-lo em um local acessível para AEM (consulte também [Personalizando componentes e outros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
 
 1. Usando o CRXDE Lite, crie uma nova pasta de componentes em:
 
@@ -159,26 +159,26 @@ Para desenvolver novos componentes para AEM com base no componente existente, vo
    * de `/libs/foundation/components/text`
    * para `/apps/myProject/components/text`
 
-1. Modifique o para refletir `jcr:title` seu novo nome.
+1. Modifique `jcr:title` para refletir seu novo nome.
 1. Abra a nova pasta de componentes e faça as alterações necessárias. Além disso, exclua quaisquer informações estranhas na pasta.
 
    É possível fazer alterações como:
 
-   * adicionar um novo campo na caixa de diálogo
+   * adição de um novo campo na caixa de diálogo
 
       * `cq:dialog` - caixa de diálogo para a interface habilitada para toque
       * `dialog` - caixa de diálogo para a interface clássica
-   * substituição do `.jsp` arquivo (nomeie-o depois do novo componente)
+   * substituição do arquivo `.jsp` (nomeie-o após seu novo componente)
    * ou retrabalhar completamente o componente inteiro se desejar
 
-   Por exemplo, se você pega uma cópia do componente Texto padrão, pode adicionar um campo adicional à caixa de diálogo e, em seguida, atualizar o formulário para processar `.jsp` a entrada feita.
+   Por exemplo, se você pegar uma cópia do componente Texto padrão, poderá adicionar um campo adicional à caixa de diálogo e, em seguida, atualizar o `.jsp` para processar a entrada feita lá.
 
    >[!NOTE]
    >
    >Um componente para:
    >
    >* A interface habilitada para toque usa componentes [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-   >* A interface clássica usa widgets [ExtJS](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
+   >* A interface clássica usa [widgets ExtJS](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
 
 
    >[!NOTE]
@@ -253,13 +253,13 @@ As seguintes técnicas são descritas neste exercício:
 
 >[!NOTE]
 >
->Este exemplo é baseado no conteúdo de amostra do Geometrixx, que não é mais fornecido com AEM, tendo sido substituído por We.Retail. Consulte a Implementação [de referência do documento](/help/sites-developing/we-retail.md#we-retail-geometrixx) We.Retail para saber como baixar e instalar o Geometrixx.
+>Este exemplo é baseado no conteúdo de amostra do Geometrixx, que não é mais fornecido com AEM, tendo sido substituído por We.Retail. Consulte o documento [Implementação de referência We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para obter mais informações sobre como baixar e instalar o Geometrixx.
 
 #### Extensão do componente de tempo de textura existente {#extending-the-existing-textimage-component}
 
 Para criar o novo componente, usamos o componente de textura padrão como base e o modificamos. Armazenamos o novo componente no aplicativo de exemplo AEM WCM do Geometrixx.
 
-1. Copie o componente de tempo de textura padrão de `/libs/foundation/components/textimage` para a pasta do componente do Geometrixx, `/apps/geometrixx/components`usando a data e hora da textura como o nome do nó do público alvo. (Copie o componente navegando até o componente, clicando com o botão direito do mouse e selecionando Copiar e navegando até o diretório do público alvo.)
+1. Copie o componente de mensagem de texto padrão de `/libs/foundation/components/textimage` para a pasta do componente do Geometrixx, `/apps/geometrixx/components`, usando a mensagem de tempo como o nome do nó do público alvo. (Copie o componente navegando até o componente, clicando com o botão direito do mouse e selecionando Copiar e navegando até o diretório do público alvo.)
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -273,7 +273,7 @@ Para criar o novo componente, usamos o componente de textura padrão como base e
    >
    >A definição da caixa de diálogo depende da interface do usuário:
    >
-   >* Touch-enabled UI: `textimage/cq:dialog`
+   >* Interface habilitada para toque: `textimage/cq:dialog`
    >* Interface clássica: `textimage/dialog`
 
 
@@ -281,28 +281,28 @@ Para criar o novo componente, usamos o componente de textura padrão como base e
 
    * Nome do componente
 
-      * Definir `jcr:description` como `Text Image Component (Extended)`
-      * Definir `jcr:title` como `Text Image (Extended)`
+      * Defina `jcr:description` como `Text Image Component (Extended)`
+      * Defina `jcr:title` como `Text Image (Extended)`
    * Grupo, onde o componente está listado no sidekick (deixe como está)
 
       * Deixe `componentGroup` definido como `General`
    * Componente pai do novo componente (o componente de tempo de textura padrão)
 
-      * Definir `sling:resourceSuperType` como `foundation/components/textimage`
+      * Defina `sling:resourceSuperType` como `foundation/components/textimage`
 
    Após esta etapa, o nó do componente terá a seguinte aparência:
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. Altere a `sling:resourceType` propriedade do nó de configuração de edição da imagem (propriedade: `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) a `geometrixx/components/textimage.`
+1. Altere a propriedade `sling:resourceType` do nó de configuração de edição da imagem (propriedade: `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) para `geometrixx/components/textimage.`
 
-   Dessa forma, quando uma imagem é solta no componente na página, a `sling:resourceType` propriedade do componente de tempo de textura estendida é definida como: `geometrixx/components/textimage.`
+   Dessa forma, quando uma imagem é solta no componente na página, a propriedade `sling:resourceType` do componente de tempo de textura estendida é definida como: `geometrixx/components/textimage.`
 
-1. Modifique a caixa de diálogo do componente para incluir a nova opção. O novo componente herda as partes da caixa de diálogo que são as mesmas do original. A única adição que fazemos é estender a guia **Avançado** , adicionando uma lista suspensa Posição **da** imagem, com as opções **Esquerda** e **Direita**:
+1. Modifique a caixa de diálogo do componente para incluir a nova opção. O novo componente herda as partes da caixa de diálogo que são as mesmas do original. A única adição que fazemos é estender a guia **Avançado**, adicionando uma lista suspensa **Posição da imagem**, com as opções **Esquerda** e **Direita**:
 
-   * Deixe as `textimage/dialog`propriedades inalteradas.
+   * Deixe as propriedades `textimage/dialog`inalteradas.
 
-   Observe como `textimage/dialog/items` há quatro subnós, tab1 a tab4, representando as quatro guias da caixa de diálogo de tempo de texto.
+   Observe como `textimage/dialog/items` tem quatro subnós, tab1 a tab4, representando as quatro guias da caixa de diálogo de tempo de texto.
 
    * Para as duas primeiras guias (guia1 e guia2):
 
@@ -312,23 +312,23 @@ Para criar o novo componente, usamos o componente de textura padrão como base e
    * Para a guia3:
 
       * Deixe as propriedades e os subnós sem alterações
-      * Adicionar uma nova definição de campo ao tipo `tab3/items`, posição do nó `cq:Widget`
-      * Defina as seguintes propriedades (do tipo String) para o novo `tab3/items/position`nó:
+      * Adicionar uma nova definição de campo a `tab3/items`, posição do nó do tipo `cq:Widget`
+      * Defina as seguintes propriedades (do tipo String) para o novo nó `tab3/items/position`:
 
          * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+         * `xtype`:  `selection`
+         * `fieldLabel`:  `Image Position`
+         * `type`:  `select`
       * Adicione o subnó `position/options` do tipo `cq:WidgetCollection` para representar as duas opções de posicionamento de imagem e, sob ele, crie dois nós, o1 e o2 do tipo `nt:unstructured`.
-      * Para o nó, `position/options/o1` defina as propriedades: `text` para `Left` e `value` para `left.`
-      * Para o nó, `position/options/o2` defina as propriedades: `text` para `Right` e `value` para `right`.
+      * Para o nó `position/options/o1` defina as propriedades: `text` para `Left` e `value` para `left.`
+      * Para o nó `position/options/o2` defina as propriedades: `text` para `Right` e `value` para `right`.
    * Excluir guia4.
 
-   A posição da imagem é mantida no conteúdo como a `imagePosition`propriedade do nó que representa o `textimage` parágrafo. Após essas etapas, a caixa de diálogo do componente terá a seguinte aparência:
+   A posição da imagem é persistente no conteúdo como a propriedade `imagePosition`do nó que representa o parágrafo `textimage`. Após essas etapas, a caixa de diálogo do componente terá a seguinte aparência:
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. Estenda o script de componente `textimage.jsp`, com o manuseio extra do novo parâmetro:
+1. Amplie o script de componente, `textimage.jsp`, com a manipulação extra do novo parâmetro:
 
    ```xml
    Image image = new Image(resource, "image");
@@ -370,20 +370,20 @@ O componente armazena seu conteúdo em um parágrafo na página Empresa.
 
 Para desativar esse recurso, usamos o componente de imagem padrão como base e o modificamos. Armazenamos o novo componente no aplicativo de exemplo de Geometrixx.
 
-1. Copie o componente de imagem padrão de `/libs/foundation/components/image` na pasta do componente do Geometrixx, `/apps/geometrixx/components`, usando a imagem como o nome do nó do público alvo.
+1. Copie o componente de imagem padrão de `/libs/foundation/components/image` para a pasta do componente do Geometrixx, `/apps/geometrixx/components`, usando a imagem como o nome do nó do público alvo.
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
 1. Edite os metadados do componente:
 
-   * Definir **jcr:title** como `Image (Extended)`
+   * Defina **jcr:title** como `Image (Extended)`
 
 1. Vá até `/apps/geometrixx/components/image/dialog/items/image`.
 1. Adicionar uma nova propriedade:
 
    * **Nome**: `allowUpload`
    * **Tipo**: `String`
-   * **Valor**: `false`
+   * **Valor**:  `false`
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
