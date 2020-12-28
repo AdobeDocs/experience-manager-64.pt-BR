@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # Ferramenta AEM Repo{#aem-repo-tool}
 
-A ferramenta AEM Repo é uma solução simples para transferir o conteúdo do JCR entre o sistema de arquivos local e o servidor AEM pela linha de comando comparável ao FTP. A ferramenta AEM Repo é semelhante à ferramenta [](/help/sites-developing/ht-vlttool.md)Jackrabbit FileVault, mas é mais rápida, tem dependências mínimas e é um script bash simples.
+A ferramenta AEM Repo é uma solução simples para transferir o conteúdo do JCR entre o sistema de arquivos local e o servidor AEM pela linha de comando comparável ao FTP. A ferramenta AEM Repo é semelhante à [ferramenta Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mas é mais rápida, tem dependências mínimas e é um script bash simples.
 
 Essa ferramenta simplifica a transferência de arquivos para o desenvolvedor e também pode ser integrada ao IntelliJ e ao Eclipse para tornar o desenvolvimento ainda mais eficiente.
 
 ## Visão geral {#overview}
 
-Para um determinado caminho dentro de uma estrutura de `jcr_root` filevault no sistema de arquivos, AEM ferramenta Repo cria um pacote com um único filtro para toda a subárvore e empurra-o para o servidor (semelhante ao FTP `put`), o obtém do servidor ( `get`) ou compara as diferenças ( `status` e `diff`).
+Para um determinado caminho dentro de uma estrutura de arquivo `jcr_root` no sistema de arquivos, AEM ferramenta Repo cria um pacote com um único filtro para toda a subárvore e o empurra para o servidor (similar ao FTP `put`), o obtém do servidor ( `get`) ou compara as diferenças ( `status` e `diff`).
 
-A ferramenta não oferece suporte a vários caminhos de filtro ou ao FileVault `filter.xml`.
+A ferramenta não suporta vários caminhos de filtro ou `filter.xml` do FileVault.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ A ferramenta não oferece suporte a vários caminhos de filtro ou ao FileVault `
 
 ## Download e documentação {#download-and-documentation}
 
-A ferramenta [AEM Repo está disponível no GitHub por meio deste link](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) , juntamente com instruções detalhadas de instalação e uso.
+A [AEM Ferramenta de acordo de recompra está disponível no GitHub por meio deste link](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) junto com instruções detalhadas de instalação e uso.
 
 Se desejar baixar a fonte da ferramenta AEM Repo, consulte o projeto GitHub vinculado abaixo.
 
@@ -45,5 +45,5 @@ CÓDIGO NO GITHUB
 Você pode encontrar o código desta página no GitHub
 
 * [Abrir projeto de ferramentas no GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
-* Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)
+* Baixe o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)
 
