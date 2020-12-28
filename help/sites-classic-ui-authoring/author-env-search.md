@@ -81,7 +81,7 @@ No console **Sites** uma opção de menu **Localizar e substituir** permite que 
    * indica se a pesquisa deve diferenciar maiúsculas e minúsculas
    * indica se apenas palavras inteiras devem ser encontradas (caso contrário, subsequências também serão encontradas)
 
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+   Clicar em **Pré-visualização** lista onde o termo foi encontrado. Você pode selecionar/apagar instâncias específicas a serem substituídas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,7 +94,7 @@ O escopo padrão do servlet localizar e substituir abrange as seguintes propried
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `http://localhost:4502/system/console/configMgr`). Selecione `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
+O escopo pode ser alterado usando o Console de gerenciamento da Web Apache Felix (por exemplo, em `http://localhost:4502/system/console/configMgr`). Selecione `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
 
 >[!NOTE]
 >
