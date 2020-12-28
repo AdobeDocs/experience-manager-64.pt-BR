@@ -32,7 +32,7 @@ Para criar uma página de aterrissagem de informativo eficaz, você precisa faze
 >[!NOTE]
 >
 >O Adobe não pretende melhorar ainda mais essa capacidade (Gerenciando Clientes Potenciais e Listas).\
->A recomendação é aproveitar a [Adobe Campaign e sua integração](/help/sites-administering/campaign.md)AEM.
+>A recomendação é aproveitar [Adobe Campaign e sua integração AEM](/help/sites-administering/campaign.md).
 
 ## Criação de uma lista para o informativo {#creating-a-list-for-the-newsletter}
 
