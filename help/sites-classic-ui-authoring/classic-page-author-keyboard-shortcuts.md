@@ -24,7 +24,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->In the following tables, for the key combinations in the **Shortcut** column, both Ctrl and Command keys work on macOS.
+>Nas tabelas a seguir, para as combinações de teclas na coluna **Atalho**, as teclas Ctrl e Command funcionam no macOS.
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Vários atalhos de teclado estão disponíveis para os desenvolvedores de deskto
   </tr> 
   <tr> 
    <td>Modo de Edição</td> 
-   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Defina o sufixo a seguir no URL:<br /> <code>?debugClientLibs=true</code><br /> Em seguida, use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Para visualizar as estatísticas de tempo para o carregamento da página.</td> 
   </tr> 
  </tbody> 
