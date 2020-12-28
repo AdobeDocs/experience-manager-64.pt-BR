@@ -189,7 +189,7 @@ A forma de selecionar uma página dependerá da exibição usada no console:
    >
    >Para navegar usando os links no conteúdo, você deve usar o [Modo de visualização](/help/sites-authoring/editing-content.md#preview-mode).
 
-## Editar as propriedades da página   {#editing-the-page-properties}
+## Editar as propriedades da página    {#editing-the-page-properties}
 
 Existem dois métodos (principais) [para editar as propriedades da página](/help/sites-authoring/editing-page-properties.md):
 
@@ -241,7 +241,7 @@ Existem dois métodos principais [para publicar a sua página](/help/sites-autho
 
    Consulte [Publicação de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obter mais informações.
 
-## Mover, copiar e colar ou excluir sua página   {#move-copy-and-paste-or-delete-your-page}
+## Mover, copiar e colar ou excluir sua página    {#move-copy-and-paste-or-delete-your-page}
 
 1. [Navegue até a página](#finding-your-page) que deseja mover, copiar e colar ou excluir.
 1. Selecione o ícone copiar (e colar), mover ou excluir, conforme necessário, usando:
@@ -288,9 +288,9 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 1. Toque/clique no tipo de referência desejado para mostrar mais detalhes e (conforme o caso) realizar novas ações.
 
-## Criar uma versão da sua página   {#creating-a-version-of-your-page}
+## Criar uma versão da sua página    {#creating-a-version-of-your-page}
 
-1. Para abrir o painel Linha do tempo, selecione **[Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)**usando o ícone da barra de ferramentas (antes ou depois de[selecionar a página](#selecting-your-page-for-further-action)):
+1. Para abrir o painel Linha do tempo, selecione **[Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -304,7 +304,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua página:
 
-1. Selecione a **[Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)**usando o ícone da barra de ferramentas (antes ou depois de[selecionar a página](#selecting-your-page-for-further-action)):
+1. Selecione a **[Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
