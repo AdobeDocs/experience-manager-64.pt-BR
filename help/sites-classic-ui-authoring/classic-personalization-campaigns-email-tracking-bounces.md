@@ -24,7 +24,7 @@ ht-degree: 67%
 >
 >O Adobe não pretende melhorar ainda mais o rastreamento de emails abertos/enviados por AEM serviço SMTP.
 >
->A recomendação é [aproveitar a Adobe Campaign e sua integração](/help/sites-administering/campaign.md)AEM.
+>A recomendação é [aproveitar a Adobe Campaign e sua integração AEM](/help/sites-administering/campaign.md).
 
 Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços é devolvido. O AEM é capaz de gerenciar esses saltos e pode parar de enviar informativos para esses endereços depois que o contador de saltos configurado for excedido. Por padrão, a taxa de saltos é definida como 3, mas pode ser configurada.
 
@@ -68,7 +68,7 @@ Para configurar o importador de feeds para rastrear emails devolvidos:
 
    `imap.flag.SEEN`:Definir false para mensagem nova/não vista, true para mensagens já lidas
 
-   See [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) for the full list of flags.
+   Consulte [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) para obter a lista completa de sinalizadores.
 
    **Exemplos de IMAP:**
 
@@ -85,7 +85,7 @@ Depois de configurar o importador de feeds, você precisa configurar o endereço
 
 Para configurar o serviço de informativo:
 
-1. In the OSGi console at `<host>:<port>/system/console/configMgr` and navigate to **MCM Newsletter**.
+1. No console OSGi em `<host>:<port>/system/console/configMgr` e navegue até **Newsletter MCM**.
 
 1. Configure o serviço e salve as alterações quando terminar.
 
