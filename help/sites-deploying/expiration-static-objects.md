@@ -27,7 +27,7 @@ Isso tem o seguinte impacto:
 * Descarrega solicitações da infraestrutura do servidor.
 * Aumenta o desempenho do carregamento da página, à medida que o navegador armazena objetos em cache no cache do navegador.
 
-As expirações são especificadas pelo padrão HTTP referente à &quot;expiração&quot; dos arquivos (consulte, por exemplo, o capítulo 14.21 da [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol - HTTP 1.1&quot;). Esse padrão usa o cabeçalho para permitir que os clientes armazenem objetos em cache até que sejam considerados obsoletos; esses objetos são armazenados em cache pelo tempo especificado, sem que seja feita nenhuma verificação de status no servidor de origem.
+As expirações são especificadas pelo padrão HTTP referente à &quot;expiração&quot; dos arquivos (consulte, por exemplo, o capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Esse padrão usa o cabeçalho para permitir que os clientes armazenem objetos em cache até que sejam considerados obsoletos; esses objetos são armazenados em cache pelo tempo especificado, sem que seja feita nenhuma verificação de status no servidor de origem.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam ao longo do tempo, 
    </Location>
    ```
 
-   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, Javascript, PNG e GIF por até um dia nos caches do cliente. Embora este exemplo ilustre as configurações globais para tudo abaixo `/content` e `/etc/designs`, você deve torná-lo mais granular.
+   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, Javascript, PNG e GIF por até um dia nos caches do cliente. Embora este exemplo ilustre as configurações globais para tudo o que está abaixo de `/content` e `/etc/designs`, você deve torná-lo mais granular.
 
    Dependendo da frequência com que seu site é atualizado, você também pode considerar armazenar páginas HTML em cache. Um período razoável seria de 1 hora:
 
@@ -85,4 +85,4 @@ Todos os arquivos, que não são dinâmicos e que não mudam ao longo do tempo, 
    </Location>
    ```
 
-Depois de configurar os objetos estáticos, verifique `request.log`, ao selecionar as páginas que contêm esses objetos, para confirmar que nenhuma solicitação (desnecessária) está sendo feita para objetos estáticos.
+Depois de configurar os objetos estáticos, faça a varredura `request.log`, ao selecionar as páginas que contêm esses objetos, para confirmar que nenhuma solicitação (desnecessária) está sendo feita para objetos estáticos.
