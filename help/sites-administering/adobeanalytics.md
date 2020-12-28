@@ -39,18 +39,18 @@ As páginas a seguir ajudam a configurar a integração:
 * [Mapeamento de dados de componente com propriedades do Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
 * [Configuração do rastreamento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
-Você também pode usar o assistente [de](/help/sites-administering/opt-in.md) aceitação para executar facilmente a integração.
+Você também pode usar o [Assistente de aceitação](/help/sites-administering/opt-in.md) para executar facilmente a integração.
 
 >[!NOTE]
 >
->Consulte também o artigo de instruções: [Integração de AEM com Adobe Target e Adobe Analytics usando o DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Consulte também o artigo de instruções: [Integrar AEM com Adobe Target e Adobe Analytics usando o DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Informações adicionais {#further-information}
 
 Consulte:
 
-* [Estendendo a integração](/help/sites-developing/extending-analytics.md) Adobe Analytics para obter informações sobre o desenvolvimento de componentes que coletam dados de usuários e personalizam a estrutura do Adobe Analytics.
-* O artigo da base de conhecimento, Integração com o [Adobe Analytics - solução de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obter informações sobre como solucionar problemas da integração com o Adobe Analytics.
+* [Estendendo a ](/help/sites-developing/extending-analytics.md) integração do Adobe Analytics para obter informações sobre o desenvolvimento de componentes que coletam dados de usuários e personalizam a estrutura do Adobe Analytics.
+* O artigo da base de conhecimento, [Integração com o Adobe Analytics - solução de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obter informações sobre como solucionar problemas da integração com o Adobe Analytics.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Consulte:
    >  por exemplo, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configuração** de proxy de componentes HTTP do Apache para configurar a API 4.x;
+* **Configuração de proxy de componentes HTTP do Apache** para configurar a API 4.x;
 >
 >  
 por exemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
