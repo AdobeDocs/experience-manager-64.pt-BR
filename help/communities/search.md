@@ -50,7 +50,7 @@ Selecione o componente `Search` inserido para acessar e selecione o ícone `Conf
 
 Na guia **[!UICONTROL Configurações de pesquisa]**, especifique como os caminhos são pesquisa quando um query é inserido por um visitante.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![chlimage_1-376](assets/chlimage_1-375.png)
 
 * **[!UICONTROL Procurar]**
 caminhosAo adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada. Como exemplo, para limitar a pesquisa a um fórum específico, selecione um componente de fórum inserido em uma página:
@@ -77,7 +77,7 @@ Para obter as informações necessárias, visite [Informações básicas sobre c
 
 Quando a biblioteca do lado do cliente, `cq.social.hbs.search`, for incluída, o componente `Search Result` aparecerá desta forma:
 
-![chlimage_1-375](assets/chlimage_1-376.png)
+![chlimage_1-376](assets/chlimage_1-376.png)
 
 ### Configurar o resultado de pesquisa adicionado {#configure-the-added-search-result}
 
