@@ -26,13 +26,13 @@ Os aplicativos Adobe Experience Manager fornecem a capacidade de atualizar o con
 
 Para configurar o serviço de filtro de quem indicou:
 
-* Abra o console Apache Felix (**Configurações**) em:
+* Abra o console do Apache Felix (**Configurações**) em:
 * https://&lt;servidor>:&lt;número_porta>/system/console/configMgr
 * Faça logon como administrador.
-* No menu **Configurações** , selecione: *Filtro de Quem indicou Apache Sling*
+* No menu **Configurações**, selecione: *Filtro de Quem indicou Sling do Apache*
 * Marque o campo Permitir vazio para permitir cabeçalhos de quem indicou vazios/ausentes.
-* Click **Save** to save your changes.
+* Clique em **Salvar** para salvar as alterações.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-Consulte as Configurações [de](/help/sites-deploying/osgi-configuration-settings.md) OSGI e a Lista de verificação de [segurança - Problemas com a falsificação](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de solicitação entre sites para obter mais detalhes.
+Consulte [Configurações de OSGI](/help/sites-deploying/osgi-configuration-settings.md) e [Lista de verificação de segurança - Problemas com a falsificação de solicitação entre sites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) para obter mais detalhes.
