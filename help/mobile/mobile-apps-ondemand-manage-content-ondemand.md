@@ -1,8 +1,8 @@
 ---
 title: Gerenciamento de conteúdo
 seo-title: Gerenciamento de conteúdo
-description: As ações de Gestão de conteúdo são os blocos de construção que ajudam a criar e gerenciar conteúdo em um aplicativo. Siga esta página para saber mais.
-seo-description: As ações de Gestão de conteúdo são os blocos de construção que ajudam a criar e gerenciar conteúdo em um aplicativo. Siga esta página para saber mais.
+description: As ações de gestão de conteúdo são os blocos de construção que ajudam a criar e gerenciar conteúdo em um aplicativo. Siga esta página para saber mais.
+seo-description: As ações de gestão de conteúdo são os blocos de construção que ajudam a criar e gerenciar conteúdo em um aplicativo. Siga esta página para saber mais.
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -22,25 +22,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-As ações de Gestão de conteúdo são os blocos de construção que ajudam a criar e gerenciar conteúdo em um aplicativo. As ações a seguir são executadas no conteúdo do aplicativo.
+As ações de gestão de conteúdo são os blocos de construção que ajudam a criar e gerenciar conteúdo em um aplicativo. As ações a seguir são executadas no conteúdo do aplicativo.
 
 ## Visão geral do conteúdo {#content-overview}
 
 Se você pensar em uma revista online, o conteúdo principal inclui artigos, anúncios e capas. Três tipos principais de conteúdo Mobile On-Demand podem ser criados em AEM:
 
 * **Artigos**: texto com base na arte para transmitir informações
-* **Banners:** links promocionais tipicamente gráficos
-* **Coleções:** representa um *bucket* bem definido preenchido com conteúdo, como artigos ou banners, que se encaixa no tema da capa
+* **Banners:links promocionais gráficos** tipicamente
+* **Coleções:** representam um  ** registro bem definido preenchido com conteúdo, como artigos ou banners, que se encaixa no tema da capa
 
 * **Recursos compartilhados:** permite a reutilização ou o compartilhamento de partes comuns em artigos
 
 >[!NOTE]
 >
->Para saber mais sobre considerações de design para aplicativos AEM Mobile, consulte Considerações de [design para aplicativos](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile na Ajuda online.
+>Para saber mais sobre considerações de design para aplicativos AEM Mobile, consulte [Considerações de design para aplicativos AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda online.
 
-## Creating and Managing Content {#creating-and-managing-content}
+## Criação e gerenciamento de conteúdo {#creating-and-managing-content}
 
 Os tópicos a seguir descrevem a criação e o gerenciamento de conteúdo, nomeadamente artigos, banners e coleções. Depois de aprender a criar e gerenciar o conteúdo, você poderá ver tópicos adicionais, como upload de recursos compartilhados, publicação/despublicação de conteúdo e visualização com o Preflight.
 
@@ -52,7 +52,7 @@ Os tópicos a seguir descrevem a criação e o gerenciamento de conteúdo, nomea
 
 >[!NOTE]
 >
->Geralmente, você deve Comprovar antes de publicar conteúdo. Consulte [Visualização com comprovação](/help/mobile/aem-mobile-manage-ondemand-services.md) para obter mais detalhes.
+>Geralmente, você deve Comprovar antes de publicar conteúdo. Consulte [Visualização com Comprovação](/help/mobile/aem-mobile-manage-ondemand-services.md) para obter mais detalhes.
 
 ### Recursos adicionais {#additional-resources}
 
