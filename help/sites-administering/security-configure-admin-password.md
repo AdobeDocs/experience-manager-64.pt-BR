@@ -30,7 +30,7 @@ Este recurso adiciona a facilidade de definir uma nova senha de administrador pa
 
 >[!CAUTION]
 >
->Observe que o recurso não abrange o Console do Felix, para o qual a senha precisa ser alterada manualmente. Para obter mais informações, consulte a seção [Lista de verificação de](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts)segurança relevante.
+>Observe que o recurso não abrange o Console do Felix, para o qual a senha precisa ser alterada manualmente. Para obter mais informações, consulte a seção relevante [Lista de verificação de segurança](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
 
 ## Como Usá-Lo? {#how-do-i-use-it}
 
@@ -52,7 +52,7 @@ Ao executar a instância a partir da linha de comando, você terá a opção de 
 
 ## Usando o sinalizador -nointerativo {#using-the-nointeractive-flag}
 
-Você também pode especificar a senha de um arquivo de propriedades. Isso é feito usando o `-nointeractive` sinalizador combinado com a propriedade do `-Dadmin.password.file` sistema.
+Você também pode especificar a senha de um arquivo de propriedades. Isso é feito usando o sinalizador `-nointeractive` combinado com a propriedade do sistema `-Dadmin.password.file`.
 
 Veja abaixo um exemplo:
 
@@ -60,7 +60,7 @@ Veja abaixo um exemplo:
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-A senha dentro do `passwordfile.properties` arquivo precisa ter o formato abaixo:
+A senha no arquivo `passwordfile.properties` precisa ter o formato abaixo:
 
 ```xml
 admin.password = 12345678
@@ -68,5 +68,5 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Se você simplesmente usar o `-nointeractive` parâmetro sem a propriedade `-Dadmin.password.file` system, AEM usará a senha de administrador padrão sem solicitar que você a altere, essencialmente replicando o comportamento de versões anteriores. Esse modo não interativo pode ser usado para instalações automatizadas usando a linha de comando em um script de instalação.
+>Se você simplesmente usar o parâmetro `-nointeractive` sem a propriedade `-Dadmin.password.file` do sistema, AEM usará a senha de administrador padrão sem solicitar que você a altere, essencialmente replicando o comportamento de versões anteriores. Esse modo não interativo pode ser usado para instalações automatizadas usando a linha de comando em um script de instalação.
 
