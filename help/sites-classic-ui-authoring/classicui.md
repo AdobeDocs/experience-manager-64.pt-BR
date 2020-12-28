@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Criação na interface do usuário clássica{#authoring-in-the-classic-ui}
 
-## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
+## Interface clássica e interface habilitada para toque {#classic-ui-and-touch-enabled-ui}
 
 A interface clássica é a interface do usuário orientada para desktop que estava disponível desde o CQ5 (o predecessório para AEM). A documentação a seguir sobre criação está focada na interface do usuário.
 
