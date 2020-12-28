@@ -222,7 +222,7 @@ Os visitantes do site que não estão conectados só podem ler revisões publica
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [Analisar Essentials](reviews-basics.md) para desenvolvedores.
+Mais informações podem ser encontradas na página [Revisar Essentials](reviews-basics.md) para desenvolvedores.
 
 Para moderação de comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
