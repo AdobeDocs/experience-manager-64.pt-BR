@@ -22,7 +22,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação de [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
 Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments.md).
 
@@ -32,7 +32,7 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 
 >[!NOTE]
 >
->**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)**são recursos diferentes no AEM:
+>**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)** são recursos diferentes no AEM:
 >
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
@@ -136,7 +136,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
 * **[!UICONTROL Tratar cabeçalhos como seus próprios parágrafos]**
 
-## Conexão rápida no editor de fragmentos    {#quick-connection-to-fragment-editor}
+## Conexão rápida no editor de fragmentos     {#quick-connection-to-fragment-editor}
 
 É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **[!UICONTROL Editar]** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments.md).
 
@@ -144,7 +144,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 >
 >Como sempre, editar a origem do fragmento afetará todas as páginas que fazem referência a esse fragmento de conteúdo.
 
-## Adicionar conteúdo intermediário     {#adding-in-between-content}
+## Adicionar conteúdo intermediário      {#adding-in-between-content}
 
 Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **[!UICONTROL Arrastar os componentes aqui]** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
@@ -182,7 +182,7 @@ Para conteúdo intermediário, você pode:
 
 
 
-## Usar conteúdo associado     {#using-associated-content}
+## Usar conteúdo associado      {#using-associated-content}
 
 Se você tiver [conteúdo associado ](/help/assets/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
 
