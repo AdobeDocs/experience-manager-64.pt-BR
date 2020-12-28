@@ -30,13 +30,13 @@ Para desenvolver seus aplicativos JCR, Apache Sling ou AEM, os seguintes conjunt
 
    Esta configuração permite integrar totalmente seu aplicativo (conteúdo, código, configuração) em qualquer ambiente e processo de desenvolvimento. O link entre os diferentes elementos é a representação do sistema de arquivos do repositório pelo FileVault, já que todas as ferramentas de desenvolvimento mencionadas anteriormente podem funcionar com arquivos.
 
-## Extensões para Ambientes de desenvolvimento integrado {#extensions-for-integrated-development-environments}
+## Extensões para Ambientes de desenvolvimento integrados {#extensions-for-integrated-development-environments}
 
 O Adobe lançou as seguintes extensões:
 
 * [AEM Extensão Eclipse](/help/sites-developing/aem-eclipse.md)
 * [Extensão dos colchetes AEM](/help/sites-developing/aem-brackets.md)
-* [AEM extensão](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) IntelliJ (de cabo)
+* [AEM extensão](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)  IntelliJ (de cabo)
 
 ### Outras ferramentas {#other-tools}
 
@@ -55,7 +55,7 @@ AEM navios com outras ferramentas que facilitem o desenvolvimento:
 
 Ferramentas que facilitam a criação de novos projetos:
 
-* [AEM Project Archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
+* [Arquétipo de projeto do AEM](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
 * [Modelos AEM Lazybones](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]
