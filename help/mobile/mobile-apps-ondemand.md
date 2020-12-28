@@ -22,11 +22,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gestão de conteúdo, consulte a Ajuda [do](https://helpx.adobe.com/digital-publishing-solution/topics.html)AEM Mobile On-demand Services.
+>Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gestão de conteúdo, consulte [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
@@ -36,18 +36,18 @@ ht-degree: 5%
 
 ## Autor do AEM Mobile {#aem-mobile-author}
 
-Um autor ***do *AEM (ou*profissional de marketing *)**usa modelos e componentes personalizados ou prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). AEM editor de conteúdo incorporado é usado pelos autores*do *AEM para criar experiências avançadas e relevantes no aplicativo, incluindo a integração com o restante do Adobe Marketing Cloud.
+Um ***Autor do AEM* (ou *Marketer*)**usa modelos e componentes personalizados ou predefinidos para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). AEM editor de conteúdo incorporado é usado por *Autores do AEM* para criar experiências avançadas e relevantes no aplicativo, incluindo integração com o restante do Adobe Marketing Cloud.
 
 Um autor de AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On Demand Services.
 
-**A criação AEM conteúdo para aplicativos** AEM Mobile On-demand Services envolve as seguintes ações:
+**A criação AEM conteúdo para aplicativos AEM Mobile On-demand Services** envolve as seguintes ações:
 
-* [Painel de aplicativos AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
+* [painel de aplicativos AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Ações de criação e configuração do aplicativo](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Configuração na nuvem](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Gerenciamento de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Para saber mais sobre o **Content Services**, consulte Visão geral [do](/help/mobile/develop-content-as-a-service.md) Content Services para começar.
+Para saber mais sobre **Serviços de conteúdo**, consulte [Visão geral dos serviços de conteúdo](/help/mobile/develop-content-as-a-service.md) para começar.
 
 >[!NOTE]
 >
