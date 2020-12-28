@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Instalação independente personalizada{#custom-standalone-install}
 
-Esta seção descreve as opções disponíveis ao instalar uma instância AEM independente. Você também pode ler Elementos [de](/help/sites-deploying/storage-elements-in-aem-6.md) Armazenamento para obter mais informações sobre como escolher o tipo de armazenamento de backend depois de instalar o AEM 6 recentemente.
+Esta seção descreve as opções disponíveis ao instalar uma instância AEM independente. Você também pode ler [Elementos de Armazenamento](/help/sites-deploying/storage-elements-in-aem-6.md) para obter mais informações sobre como escolher o tipo de armazenamento de backend depois de instalar o AEM 6 recentemente.
 
 ## Alteração do número da porta renomeando o arquivo {#changing-the-port-number-by-renaming-the-file}
 
@@ -30,9 +30,9 @@ Você também pode definir o número da porta renomeando o arquivo jar quickstar
 
 Há várias regras a serem seguidas ao renomear o arquivo jar quickstart:
 
-* Ao renomear o arquivo, ele deve ser start `cq;` como em `cq5-publish-p4503.jar`.
+* Ao renomear o arquivo, ele deve ter o start `cq;` como em `cq5-publish-p4503.jar`.
 
-* É recomendável que você *sempre* prefixe o número da porta com -p; como em cq5-publish-p4503.jar ou cq5-author-p6754.jar.
+* É recomendável que você *always* prefixe o número da porta com -p; como em cq5-publish-p4503.jar ou cq5-author-p6754.jar.
 
 >[!NOTE]
 >
@@ -49,15 +49,15 @@ Há várias regras a serem seguidas ao renomear o arquivo jar quickstart:
 
 >[!NOTE]
 >
->Você também pode alterar o número da porta usando a `-port` opção no comando start.
+>Você também pode alterar o número da porta usando a opção `-port` no comando start.
 
 ## Modos de execução {#run-modes}
 
-**Os modos** de execução permitem ajustar sua instância de AEM para uma finalidade específica; por exemplo, autor ou publicação, teste, desenvolvimento, intranet etc. Esses modos também permitem controlar o uso de conteúdo de amostra. Esse conteúdo de amostra é definido antes da criação da inicialização rápida e pode incluir pacotes, configurações etc. Isso pode ser especialmente útil para instalações prontas para produção quando você deseja manter sua instalação limpa e sem conteúdo de amostra. Para obter mais informações, consulte:
+**Executar** modelo que permite ajustar sua instância AEM para uma finalidade específica; por exemplo, autor ou publicação, teste, desenvolvimento, intranet etc. Esses modos também permitem controlar o uso de conteúdo de amostra. Esse conteúdo de amostra é definido antes da criação da inicialização rápida e pode incluir pacotes, configurações etc. Isso pode ser especialmente útil para instalações prontas para produção quando você deseja manter sua instalação limpa e sem conteúdo de amostra. Para obter mais informações, consulte:
 
 * [Modos de execução](/help/sites-deploying/configure-runmodes.md)
 
-## Adicionando um provedor de instalação de arquivo {#adding-a-file-install-provider}
+## Adicionando um Provedor de Instalação de Arquivo {#adding-a-file-install-provider}
 
 Por padrão, a pasta `crx-quickstart/install` é monitorada em busca de arquivos.\
 Essa pasta não existe, mas simplesmente pode ser criada em tempo de execução.
@@ -69,19 +69,19 @@ Isso é especialmente interessante para vários casos de uso:
 
 * Durante o desenvolvimento, pode ser mais fácil colocar algo no sistema de arquivos.
 * Se algo der errado, o console da Web e o repositório não poderão ser acessados. Com isso, você pode colocar pacotes adicionais neste diretório e eles devem ser instalados.
-* A `crx-quickstart/install` pasta pode ser criada antes do início rápido e pacotes adicionais podem ser colocados lá.
+* A pasta `crx-quickstart/install` pode ser criada antes do início rápido ser iniciado e pacotes adicionais podem ser colocados lá.
 
 >[!NOTE]
 >
->Consulte também [Como instalar pacotes CRX automaticamente na inicialização](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) do servidor para obter exemplos.
+>Consulte também [Como instalar pacotes CRX automaticamente na inicialização do servidor](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) para obter exemplos.
 
 ## Instalação e inicialização do Adobe Experience Manager como um serviço do Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
 >
->Certifique-se de executar o procedimento a seguir enquanto estiver conectado como Administrador ou start/executar essas etapas usando a seleção do menu de contexto **Executar como Administrador** .
+>Certifique-se de executar o procedimento a seguir enquanto estiver conectado como Administrador ou start/execute essas etapas usando a seleção do menu de contexto **Executar como Administrador**.
 >
->Fazer logon como um usuário com privilégios de administrador é **insuficiente**. Se você não estiver conectado como Administrador ao concluir essas etapas, você receberá erros de **Acesso negado** .
+>Fazer logon como um usuário com privilégios de administrador é **insuficiente**. Se você não estiver conectado como Administrador ao concluir essas etapas, você receberá erros de **Acesso negado**.
 
 Para instalar e start AEM como um serviço do Windows:
 
@@ -93,7 +93,7 @@ Para instalar e start AEM como um serviço do Windows:
 
    Este comando chama o script apropriado que start o daemon de serviço do Windows em Java de 64 bits em vez de Java de 32 bits.
 
-1. Para evitar que o processo seja direcionado para mais de um processo, aumente o tamanho máximo do heap e os parâmetros JVM PermGen. Localize o `set jvm_options` comando e defina o valor da seguinte forma:
+1. Para evitar que o processo seja direcionado para mais de um processo, aumente o tamanho máximo do heap e os parâmetros JVM PermGen. Localize o comando `set jvm_options` e defina o valor da seguinte forma:
 
    `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
 
@@ -101,7 +101,7 @@ Para instalar e start AEM como um serviço do Windows:
 
    `instsrv.bat cq5`
 
-   Para verificar se o serviço foi criado, abra Serviços no painel de controle Ferramentas administrativas ou digite `start services.msc` em Prompt de comando. O serviço cq5 é exibido na lista.
+   Para verificar se o serviço foi criado, abra Serviços no painel de controle Ferramentas administrativas ou digite `start services.msc` no prompt de comando. O serviço cq5 é exibido na lista.
 
 1. Start o serviço executando um dos procedimentos a seguir:
 
@@ -123,15 +123,15 @@ Para instalar e start AEM como um serviço do Windows:
 
 >[!NOTE]
 >
->Ao instalar AEM como serviço, você deve fornecer o caminho absoluto para o diretório de registros no `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` do Configuration Manager.
+>Ao instalar AEM como serviço, você deve fornecer o caminho absoluto para o diretório de registros em `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` do Configuration Manager.
 
 Para desinstalar o serviço, clique em **Parar** no painel de controle **Serviços** ou na linha de comando, navegue até a pasta e digite `instsrv.bat -uninstall cq5`. O serviço é removido da lista no painel de controle **Serviços** ou da lista na linha de comando quando você digita `net start`.
 
-## Redefinição do local do diretório de trabalho temporário {#redefining-the-location-of-the-temporary-work-directory}
+## Redefinindo o local do diretório de trabalho temporário {#redefining-the-location-of-the-temporary-work-directory}
 
 O local padrão da pasta temporária da máquina java é `/tmp`. AEM também usa essa pasta, por exemplo, ao criar pacotes.
 
-Se você quiser alterar o local da pasta temporária (por exemplo, se precisar de um diretório com mais espaço livre), defina um local `<new-tmp-path>` adicionando o parâmetro JVM:
+Se você quiser alterar o local da pasta temporária (por exemplo, se precisar de um diretório com mais espaço livre), defina um `<new-tmp-path>` adicionando o parâmetro JVM:
 
 `-Djava.io.tmpdir="/<new-tmp-path>"`
 
@@ -231,9 +231,9 @@ Log files
 --------------------------------------------------------------------------------
 ```
 
-## Instalação do AEM no ambiente Amazon EC2 {#installing-aem-in-the-amazon-ec-environment}
+## Instalando AEM no ambiente Amazon EC2 {#installing-aem-in-the-amazon-ec-environment}
 
-Ao instalar o AEM em uma instância da Amazon Elastic Compute Cloud (EC2), se você instalar o autor e publicar na instância EC2, a instância Autor será instalada corretamente seguindo o procedimento sobre como [instalar uma instância da AEM](/help/sites-deploying/custom-standalone-install.md); no entanto, a instância Publicar se torna Autor.
+Ao instalar o AEM em uma instância da Amazon Elastic Compute Cloud (EC2), se você instalar o autor e publicar na instância EC2, a instância Autor será instalada corretamente seguindo o procedimento sobre como [instalar uma instância de AEM](/help/sites-deploying/custom-standalone-install.md); no entanto, a instância Publicar se torna Autor.
 
 Antes de instalar a instância Publicar no ambiente EC2, faça o seguinte:
 
@@ -245,7 +245,7 @@ Antes de instalar a instância Publicar no ambiente EC2, faça o seguinte:
 
    >[!NOTE]
    >
-   >Se você alterar o modo **após** iniciar a instância pela primeira vez, não poderá alterar o modo de execução.
+   >Se você alterar o modo **depois de** iniciando a instância pela primeira vez, não será possível alterar o modo de execução.
 
 1. Start a instância executando:
 
@@ -257,7 +257,7 @@ Antes de instalar a instância Publicar no ambiente EC2, faça o seguinte:
    >
    >Certifique-se de executar a instância primeiro após descompactá-la executando o comando acima. Caso contrário, o preenchimento quickstart.properties não será gerado. Sem esse arquivo, qualquer atualização futura de AEM falhará.
 
-1. Na pasta **bin** , abra o script do **start** e verifique a seguinte seção:
+1. Na pasta **bin**, abra o script **start** e verifique a seguinte seção:
 
    ```xml
    # runmode(s)
@@ -266,7 +266,7 @@ Antes de instalar a instância Publicar no ambiente EC2, faça o seguinte:
    fi
    ```
 
-1. Altere o modo de execução para **publicar** e salvar o arquivo.
+1. Altere o modo de execução para **publish** e salve o arquivo.
 
    ```xml
    # runmode(s)
@@ -275,7 +275,7 @@ Antes de instalar a instância Publicar no ambiente EC2, faça o seguinte:
    fi
    ```
 
-1. Pare a instância e reinicie-a executando o script do **start** .
+1. Pare a instância e reinicie-a executando o script **start**.
 
 ## Verificando a instalação {#verifying-the-installation}
 
@@ -293,17 +293,17 @@ Os links a seguir podem ser usados para verificar se a instalação está operac
 
 Embora haja muitas possibilidades de configurar AEM WCM, determinadas ações devem ser tomadas ou, pelo menos, revistas imediatamente após a instalação:
 
-* Consulte a Lista de verificação [de](/help/sites-administering/security-checklist.md) segurança para obter as tarefas necessárias para garantir que seu sistema permaneça seguro.
-* Analise a lista de usuários e grupos padrão instalados com AEM WCM. Verifique se você deseja executar ações em qualquer outra conta - consulte [Segurança e Administração](/help/sites-administering/security.md) do usuário para obter mais detalhes.
+* Consulte a [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter as tarefas necessárias para garantir que seu sistema permaneça seguro.
+* Analise a lista de usuários e grupos padrão instalados com AEM WCM. Verifique se você deseja executar ações em qualquer outra conta - consulte [Segurança e Administração do usuário](/help/sites-administering/security.md) para obter mais detalhes.
 
 ## Acesso ao CRXDE Lite e ao Console da Web {#accessing-crxde-lite-and-the-web-console}
 
 Depois que AEM WCM tiver sido iniciado, você também poderá acessar:
 
 * [CRXDE Lite](#accessing-crxde-lite) - usado para acessar e gerenciar o repositório
-* [Console](#accessing-the-web-console) da Web - usado para gerenciar ou configurar os pacotes OSGi (também conhecido como console OSGi)
+* [Console](#accessing-the-web-console)  da Web - usado para gerenciar ou configurar os pacotes OSGi (também conhecido como console OSGi)
 
-### Acesso ao CRXDE Lite {#accessing-crxde-lite}
+### Acessar CRXDE Lite {#accessing-crxde-lite}
 
 Para abrir o CRXDE Lite, você pode selecionar **CRXDE Lite** na tela de boas-vindas ou usar o navegador para navegar até
 
@@ -316,9 +316,9 @@ Por exemplo:\
 
 ![installcq_crxdelite](assets/installcq_crxdelite.png)
 
-### Acessar o Console da Web {#accessing-the-web-console}
+### Acessar o console da Web {#accessing-the-web-console}
 
-Para acessar o console da Web do Adobe CQ, você pode selecionar o Console **do** OSGi na tela de boas-vindas ou usar o navegador para navegar até
+Para acessar o console da Web do Adobe CQ, você pode selecionar **Console OSGi** na tela de boas-vindas ou usar seu navegador para navegar até
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/system/console
@@ -331,15 +331,15 @@ ou para a página Pacotes\
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
-Consulte Configuração do [OSGi com o Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) da Web para obter mais detalhes.
+Consulte [Configuração OSGi com o Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obter mais detalhes.
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 Para obter informações sobre como lidar com problemas que podem surgir durante a instalação, consulte:
 
 * [Resolução de Problemas](/help/sites-deploying/troubleshooting.md)
 
-## Uninstalling Adobe Experience Manager {#uninstalling-adobe-experience-manager}
+## Desinstalação do Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
 Como AEM é instalado em um único diretório, não há necessidade de um utilitário de desinstalação. A desinstalação pode ser tão simples quanto excluir o diretório de instalação inteiro, embora a maneira como você desinstala o AEM dependa do que você deseja obter e do armazenamento persistente que você usa.
 
