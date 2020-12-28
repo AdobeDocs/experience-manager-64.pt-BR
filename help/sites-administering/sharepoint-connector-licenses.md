@@ -18,11 +18,11 @@ ht-degree: 10%
 ---
 
 
-# Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licenças do SharePoint Connector, Avisos de Direitos Autorais e Isenções de Responsabilidade{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 Esta seção lista todas as licenças, avisos de direitos autorais e avisos de isenção de responsabilidade que devem ser explicitamente mencionados em conexão com o Day JCR Connector for MS SharePoint.
 
-## Visão geral das bibliotecas de terceiros do conector {#overview-of-connector-rd-party-libraries}
+## Visão geral das bibliotecas de terceiros do Connector {#overview-of-connector-rd-party-libraries}
 
 A tabela a seguir lista bibliotecas de terceiros usadas nas bibliotecas principais do SharePoint Connector, juntamente com as licenças, avisos de direitos autorais ou avisos de isenção de responsabilidade pelos quais são abordados:
 
@@ -41,11 +41,11 @@ A tabela a seguir lista bibliotecas de terceiros usadas nas bibliotecas principa
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| simultâneo | [Concorrente](#concurrent) (Domínio público) |
+| simultâneo | [Concurrent](#concurrent)  (domínio público) |
 | geronimo-ativação_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
-| jackrabbit-jcr2spi | [Apache](#apache) |
+| Jackrabbit-jcr2spi | [Apache](#apache) |
 | Jackrabbit-jcr-commons | [Apache](#apache) |
 | Jackrabbit-spi-commons | [Apache](#apache) |
 | blyrabbit-spi | [Apache](#apache) |
@@ -426,7 +426,7 @@ A tabela a seguir listas bibliotecas de terceiros usadas no Mecanismo de Servlet
      limitations under the License.
 ```
 
-## Concorrente {#concurrent}
+## Simultâneo {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -966,7 +966,7 @@ A tabela a seguir listas bibliotecas de terceiros usadas no Mecanismo de Servlet
      (LFI#134403/Form ID#011801)
 ```
 
-## Servlet Sun {#sun-servlet}
+## Sun Servlet {#sun-servlet}
 
 ```xml
      Java(TM) Servlet API Specification ("Specification") 
