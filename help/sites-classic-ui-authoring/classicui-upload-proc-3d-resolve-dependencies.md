@@ -20,13 +20,13 @@ ht-degree: 61%
 
 # Resolver dependências de arquivo{#resolving-file-dependencies}
 
-As dependências do arquivo de modelo 3D principal, como os arquivos de mapa de textura, são resolvidas automaticamente sempre que possível. Essa funcionalidade é obtida fazendo o AEM pesquisar nas pastas de Ativos próximas por arquivos com os mesmos nomes encontrados no arquivo 3D. If one or more dependencies are unresolvable during the Creating preview processing stage, the asset&#39;s card displays the following red banner message in the [!UICONTROL Card View]:
+As dependências do arquivo de modelo 3D principal, como os arquivos de mapa de textura, são resolvidas automaticamente sempre que possível. Essa funcionalidade é obtida fazendo o AEM pesquisar nas pastas de Ativos próximas por arquivos com os mesmos nomes encontrados no arquivo 3D. Se uma ou mais dependências não puderem ser resolvidas durante a fase de processamento Criando pré-visualização, o cartão do ativo exibirá a seguinte mensagem de banner vermelho em [!UICONTROL Visualização de cartão]:
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
 **Para resolver dependências de arquivo**:
 
-1. In the **[!UICONTROL Card View]**, hover the pointer over the **[!UICONTROL Unresolved Dependencies]** banner message on the card, then tap the exclamation point icon.
+1. Na mensagem do banner **[!UICONTROL Visualização do cartão]**, passe o ponteiro do mouse sobre **[!UICONTROL Dependências não resolvidas]** no cartão e, em seguida, toque no ícone do ponto de exclamação.
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
@@ -38,23 +38,23 @@ As dependências do arquivo de modelo 3D principal, como os arquivos de mapa de 
 
    * **[!UICONTROL Procure e selecione as dependências]**. (Essa opção pressupõe que você já fez upload dos arquivos de dependência.)
 
-      1. Tap the **[!UICONTROL File Browse]** icon to the left of the red path.
-      1. On the **[!UICONTROL Select Content]** page, navigate to the missing file, then tap on the file&#39;s card to select it.
-      1. In the upper-left corner of the **[!UICONTROL Select Content]** page, tap **[!UICONTROL Close]** (X icon) to return to the **[!UICONTROL View Properties]** page.
+      1. Toque no ícone **[!UICONTROL Navegação de arquivos]** à esquerda do caminho vermelho.
+      1. Na página **[!UICONTROL Selecionar conteúdo]**, navegue até o arquivo ausente e toque no cartão do arquivo para selecioná-lo.
+      1. No canto superior esquerdo da página **[!UICONTROL Selecionar conteúdo]**, toque em **[!UICONTROL Fechar]** (ícone X) para voltar à página **[!UICONTROL Propriedades da Visualização]**.
    * **[!UICONTROL Faça upload das dependências]**. (Essa opção pressupõe que você ainda não fez upload dos arquivos ausentes.)
 
       1. Observe os caminhos e nomes de arquivos ausentes.
       1. Próximo do canto superior direito da página de propriedades, toque em **[!UICONTROL Fechar]**.
 
-   After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. O ativo recém enviado por upload listado corretamente como um ativo referenciado.
+   Depois que os arquivos forem carregados, volte para a página **[!UICONTROL Propriedades da Visualização > Dependências]**. O ativo recém enviado por upload listado corretamente como um ativo referenciado.
 
    * **[!UICONTROL Ignorar as dependências]**.
 
-      If a missing dependency is no longer needed, under the **[!UICONTROL Referenced Asset]** column, in the text field to the left of the missing file, type `n/a` so that AEM 3D ignores the file.
+      Se uma dependência ausente não for mais necessária, na coluna **[!UICONTROL Ativo referenciado]**, no campo de texto à esquerda do arquivo ausente, digite `n/a` para que AEM 3D ignore o arquivo.
 
 
 
-1. Near the upper-right corner of the **[!UICONTROL View Properties]** page, tap **[!UICONTROL Save]**.
+1. Perto do canto superior direito da página **[!UICONTROL Propriedades da Visualização]**, toque em **[!UICONTROL Salvar]**.
 1. Toque em **[!UICONTROL Fechar]****[!UICONTROL para voltar à exibição do cartão]**.
 
    O ativo é reprocessado automaticamente com as dependências recém resolvidas.
