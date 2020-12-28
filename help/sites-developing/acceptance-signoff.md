@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aceitação e logoff{#acceptance-and-sign-off}
 
-Como mencionado, os testes [de](/help/sites-developing/planning.md) aceitação são uma categoria especial de teste usada para verificar se:
+Conforme mencionado, [Ensaios de aceitação](/help/sites-developing/planning.md) são uma categoria especial de teste usada para verificar se:
 
 * O projeto atende aos requisitos do cliente.
 * O cliente aceita o projeto.
