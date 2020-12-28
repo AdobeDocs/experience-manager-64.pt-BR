@@ -24,11 +24,11 @@ ht-degree: 1%
 >
 >Este documento descreve como personalizar consoles na interface moderna e habilitada para toque e não se aplica à interface clássica.
 
-AEM fornece vários mecanismos para permitir a personalização dos consoles (e a funcionalidade [de criação de](/help/sites-developing/customizing-page-authoring-touch.md)página) da sua instância de criação.
+AEM fornece vários mecanismos para permitir que você personalize os consoles (e a [funcionalidade de criação de página](/help/sites-developing/customizing-page-authoring-touch.md)) da sua instância de criação.
 
 * Clientlibs
 
-   Clientlibs permitem estender a implementação padrão para obter novas funcionalidades, reutilizando funções, objetos e métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` Por exemplo, ele pode manter o código necessário para seu componente personalizado.
+   Clientlibs permitem estender a implementação padrão para obter novas funcionalidades, reutilizando funções, objetos e métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` Por exemplo, ela pode conter o código necessário para seu componente personalizado.
 
 * Sobreposições
 
@@ -41,22 +41,22 @@ Eles podem ser usados de várias maneiras para estender seus consoles de AEM. Um
 >Para obter mais informações, consulte:
 >
 >* Usar e criar [clientlibs](/help/sites-developing/clientlibs.md).
->* Uso e criação de [sobreposições](/help/sites-developing/overlays.md).
+>* Usar e criar [sobreposições](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >
 >
-Este tópico também é abordado na sessão [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - personalização da interface [do usuário para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Este tópico também é abordado na sessão [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - [Personalização da interface do usuário para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
->Você não ***deve*** alterar nada no `/libs` caminho.
+>Você ***deve*** não alterar nada no caminho `/libs`.
 >
->Isso ocorre porque o conteúdo do é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos). `/libs`
+>Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos).
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recriar o item desejado (isto é, como ele existe em `/libs`) em `/apps`
+>1. Recrie o item necessário (isto é, como ele existe em `/libs`) em `/apps`
    >
    >
 1. Faça quaisquer alterações em `/apps`
@@ -65,7 +65,7 @@ Este tópico também é abordado na sessão [AEM Gems](https://docs.adobe.com/co
 
 
 
-Por exemplo, os seguintes locais na `/libs` estrutura podem ser sobrepostos:
+Por exemplo, os seguintes locais na estrutura `/libs` podem ser sobrepostos:
 
 * consoles (quaisquer consoles com base nas páginas da interface do usuário do Granite); por exemplo:
 
@@ -98,7 +98,7 @@ Por exemplo, os seguintes locais na `/libs` estrutura podem ser sobrepostos:
 -->
 >[!NOTE]
 >
->Consulte o artigo da Base de conhecimento, [Solução de problemas AEM problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)da interface do usuário, para obter mais dicas e ferramentas.
+>Consulte o artigo da Base de conhecimento, [Resolução de problemas AEM problemas da interface do usuário do toque](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -211,7 +211,7 @@ Você pode personalizar a visualização padrão (coluna, cartão, lista) para u
 
    * **Nome**: `sling:orderBefore`
    * **Tipo**: `String`
-   * **Valor**: `column`
+   * **Valor**:  `column`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -295,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Usando as propriedades neste nó, é possível definir o `groups` permitido para executar a ação específica; por exemplo, `administrators`
+   Usando as propriedades neste nó, é possível definir `groups` permitido para executar a ação específica; por exemplo, `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -368,7 +368,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->Esse recurso é otimizado para colunas de campos de texto; para outros tipos de dados é possível sobrepor `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` em `/apps`.
+>Esse recurso é otimizado para colunas de campos de texto; para outros tipos de dados, é possível sobrepor `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` em `/apps`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -389,7 +389,7 @@ Para personalizar as colunas na visualização da lista:
       `/apps/wcm/core/content/common/availablecolumns`
 
    * Adicione suas novas colunas ou remova as existentes.
-   Consulte [Usando sobreposições (e a Fusão de recursos Sling)](/help/sites-developing/overlays.md) para obter mais informações.
+   Consulte [Usando Sobreposições (e a Fusão de Recursos Sling)](/help/sites-developing/overlays.md) para obter mais informações.
 
 1. Opcionalmente:
 
