@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Campanhas{#campaigns}
 
-A Gestão de campanha oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e criar experiências dedicadas para visitantes.
+A gestão de campanha oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e criar experiências dedicadas para visitantes.
 
 Se estiver a administrar campanhas (incluindo o landing page) poderá ter de fazer o seguinte:
 
-* **Definir segmentos** - é necessário definir segmentos e estratégias para o conteúdo direcionado.
-* **Preparar HTML para landing page** - o Landing page permite que os autores importem design e conteúdo diretamente para uma página AEM de forma rápida e fácil. É necessário preparar o HTML para que os ativos possam ser importados corretamente. As Landings page são úteis ao criar landings page de marketing que estão ativas apenas por um tempo limitado e precisam ser criadas rapidamente.
-* **Integrar ao SiteCatalyst** - Você pode integrar landings page ao SiteCatalyst.
+* **Definir segmentos**  - é necessário definir segmentos e estratégias para o conteúdo direcionado.
+* **Preparar HTML para landing page**  - o Landing page permite que os autores importem design e conteúdo diretamente para uma página AEM de forma rápida e fácil. É necessário preparar o HTML para que os ativos possam ser importados corretamente. As landings page são úteis ao criar landings page de marketing que estão ativas apenas por um tempo limitado e precisam ser criadas rapidamente.
+* **Integrar-se ao SiteCatalyst**  - você pode integrar landings page ao SiteCatalyst.
 
 Consulte as seguintes páginas:
 
