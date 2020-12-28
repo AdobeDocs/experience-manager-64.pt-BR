@@ -45,7 +45,7 @@ Vários papéis podem ser envolvidos em testes e em várias etapas do desenvolvi
     <ul> 
      <li><p>Fornece ao cliente a experiência do projeto que está sendo desenvolvido.</p> </li> 
      <li><p>Fornece feedback antecipado do cliente.</p> </li> 
-     <li><p>Os utilizadores exprimem frequentemente as suas necessidades em termos de experiência passada; a participação dos clientes nos testes o mais cedo possível aumenta a sua experiência com o novo projeto em termos de <i>experiência prática</i> .</p> </li> 
+     <li><p>Os utilizadores exprimem frequentemente as suas necessidades em termos de experiência passada; a participação dos clientes nos testes o mais cedo possível aumenta a experiência do novo projeto em termos de <i>experiência prática</i>.</p> </li> 
     </ul> </td> 
    <td><p>Uma vez mais, o envolvimento antecipado é bom, embora qualquer lançamento que os clientes usem deva ser estável, com funcionalidade razoável.</p> <p>As primeiras impressões são sempre importantes.</p> </td> 
   </tr> 
