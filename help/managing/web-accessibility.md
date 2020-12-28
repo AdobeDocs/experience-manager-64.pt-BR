@@ -41,7 +41,7 @@ As páginas e a seção a seguir fornecem informações e diretrizes:
 
 * [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
-   As Diretrizes do WCAG 2.0 fornecem uma lista de critérios de sucesso para os níveis de conformidade dos Níveis A e AA. Esta página detalha os critérios de sucesso abordados pelo AEM, juntamente com como atendê-los ao gerar conteúdo.
+   As Diretrizes do WCAG 2.0 fornecem uma lista de critérios de sucesso para os níveis de conformidade dos Níveis A e AA. Esta página detalha os critérios de sucesso abordados pelo AEM, juntamente com como os cumprir ao gerar conteúdo.
 
 * [Guia rápido para WCAG 2.0](/help/managing/qg-wcag.md)
 
@@ -53,11 +53,11 @@ As páginas e a seção a seguir fornecem informações e diretrizes:
 
 ## World Wide Web Consortium e WCAG 2.0 {#world-wide-web-consortium-and-wcag}
 
-O [World Wide Web Consortium (W3C)](https://www.w3.org/) é uma comunidade internacional dedicada ao desenvolvimento de padrões na Web. Para ajudar designers e desenvolvedores da Web a produzirem sites acessíveis, a Iniciativa de acessibilidade da [Web (WAI)](https://www.w3.org/WAI/) publicou a versão 2.0 [das Diretrizes de acessibilidade do conteúdo da](https://www.w3.org/TR/WCAG20/) Web (WCAG) em dezembro de 2008 (atualizando a versão original publicada em 1999).
+O [World Wide Web Consortium (W3C)](https://www.w3.org/) é uma comunidade internacional dedicada ao desenvolvimento de padrões na Web. Para ajudar designers e desenvolvedores da Web a produzirem sites acessíveis, a [Iniciativa de acessibilidade da Web (WAI)](https://www.w3.org/WAI/) publicou as [Diretrizes de acessibilidade de conteúdo da Web (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) em dezembro de 2008 (atualizando a versão original publicada em 1999).
 
 >[!NOTE]
 >
->An [updated version of the guidelines](https://www.w3.org/TR/WCAG21/) is currently in development, but will not be considered for this version of AEM.
+>Uma versão [atualizada das diretrizes](https://www.w3.org/TR/WCAG21/) está atualmente em desenvolvimento, mas não será considerada para esta versão de AEM.
 
 Usando o Adobe Experience Manager, autores de conteúdo e/ou proprietários de sites podem criar conteúdo da Web que atenda aos critérios de sucesso do Nível A e do Nível AA do WCAG 2.0.
 
@@ -65,9 +65,9 @@ Aspectos específicos da WCAG 2.0 são destacados em nosso [guia rápido da WCAG
 
 ### Níveis de conformidade de acessibilidade WCAG 2.0 {#wcag-accessibility-conformance-levels}
 
-O WCAG 2.0 fornece [diretrizes (com critérios de sucesso relacionados) que abrangem os níveis](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)de acessibilidade.
+O WCAG 2.0 fornece [diretrizes (com critérios de sucesso relacionados) que abrangem os níveis de acessibilidade](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
-Estes, como estão relacionados a AEM, estão cobertos em Conformidade [](/help/sites-authoring/creating-accessible-content.md)de Nível A e AA. Ao criar o seu site, é necessário determinar o nível global com o qual você gostaria que ele estivesse em conformidade.
+Eles, como estão relacionados ao AEM, são cobertos em [Nível A e Conformidade AA](/help/sites-authoring/creating-accessible-content.md). Ao criar o seu site, é necessário determinar o nível global com o qual você gostaria que ele estivesse em conformidade.
 
 >[!NOTE]
 >
