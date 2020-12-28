@@ -2,7 +2,7 @@
 title: Delivery de conteúdo
 seo-title: Delivery de conteúdo
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Os aplicativos móveis devem ser capazes de usar todo e qualquer conteúdo no AEM, conforme necessário, para oferecer a experiência do aplicativo direcionado.
 
@@ -29,13 +29,13 @@ Isso inclui o uso de ativos, conteúdo do site, conteúdo de CaaS (over-the-air)
 
 >[!NOTE]
 >
->**O conteúdo** Over-the-Air pode vir de qualquer um dos itens acima por meio de manipuladores ContentSync. Ele pode ser usado para fazer o lote do pacote e do delivery via zips, além de manter atualizações ou pacotes.
+>**O Over-the-Air** Contentare pode vir de qualquer um dos itens acima por meio de manipuladores ContentSync. Ele pode ser usado para fazer o lote do pacote e do delivery via zips, além de manter atualizações ou pacotes.
 
 Há três tipos principais de material que os Serviços de conteúdo fornecem:
 
 1. **Assets**
 1. **Conteúdo HTML empacotado (HTML/CSS/JS)**
-1. **conteúdo independente do Canal**
+1. **conteúdo independente do canal**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -65,7 +65,7 @@ O fluxo de trabalho do ativo é o seguinte:
    1. Selecionar ativo ou coleção de ativos
    1. Personalizar renderização JSON
 
-O diagrama a seguir mostra o fluxo de trabalho **de referência de** ativos:
+O diagrama a seguir mostra o **Fluxo de trabalho de referência de ativos**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -85,7 +85,7 @@ Atualmente, esses valores são distribuídos no repositório Ativos. Os arquivos
 * /content/dam/geometrixx-outdoors/brand/icons/app/cart.png
 * /content/dam/geometrixx-outdoors/brand/icons/app/home.png
 
-#### Acessar entidades de ativos do CS {#accessing-cs-asset-entities}
+#### Acessar Entidades de Ativos do CS {#accessing-cs-asset-entities}
 
 Vamos deixar de lado as etapas de como a página é disponibilizada por meio da API por enquanto (ela será coberta pela descrição da interface do usuário AEM) e assumir que foi feita. As entidades de ativos foram criadas e adicionadas ao espaço &quot;appImages&quot;. Pastas adicionais foram criadas no espaço para fins de organização. Portanto, as entidades do ativo são armazenadas no JCR AEM como:
 
@@ -117,18 +117,18 @@ AEM Content Services poderá fornecer conteúdo HTML para o aplicativo móvel po
 
 As seguintes opções são consideradas:
 
-* **Arquivo Zip:** Para ter a melhor chance de exibir corretamente no dispositivo, todo o material referenciado da página - css, JavaScript, ativos etc. - será incluído em um único arquivo compactado com a resposta. As referências na página HTML serão ajustadas para usar um caminho relativo para esses arquivos.
-* **Streaming:** Obtendo um manifesto dos arquivos necessários do AEM. Em seguida, use esse manifesto para solicitar todos os arquivos (HTML, CSS, JS etc.) com solicitações subsequentes.
+* **Arquivo Zip:** para ter a melhor chance de exibir corretamente no dispositivo, todo o material referenciado da página - css, JavaScript, ativos etc. - será incluído em um único arquivo compactado com a resposta. As referências na página HTML serão ajustadas para usar um caminho relativo para esses arquivos.
+* **Streaming:** obter um manifesto dos arquivos necessários da AEM. Em seguida, use esse manifesto para solicitar todos os arquivos (HTML, CSS, JS etc.) com solicitações subsequentes.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-## Conteúdo independente do Canal {#channel-independent-content}
+## Conteúdo independente do canal {#channel-independent-content}
 
-O conteúdo independente do Canal é uma forma de expor construções de conteúdo AEM - como páginas - sem se preocupar com layout, componentes ou outras informações específicas do canal.
+O conteúdo independente do canal é uma forma de expor construções de conteúdo AEM - como páginas - sem se preocupar com layout, componentes ou outras informações específicas do canal.
 
 Essas entidades de conteúdo são geradas usando um modelo de conteúdo para traduzir as estruturas AEM em um formato JSON. Os dados JSON resultantes contêm informações sobre os dados do conteúdo, que são dissociados do repositório AEM. Isso inclui o retorno de metadados e links de referência AEM para ativos, bem como as relações entre estruturas de conteúdo - incluindo hierarquia de entidades.
 
-### Gerenciamento de conteúdo independente do Canal {#managing-channel-independent-content}
+### Gerenciando conteúdo independente do Canal {#managing-channel-independent-content}
 
 O conteúdo pode acessar o aplicativo de várias maneiras.
 
