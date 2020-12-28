@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Conceitos da interface de usuário habilitada para toque AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-Com AEM 5.6 o Adobe introduziu uma nova interface habilitada para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para o ambiente do autor. Isso difere consideravelmente da interface clássica original, pois foi projetada para operar em dispositivos de toque e desktop.
+Com o AEM 5.6 Adobe introduziu uma nova interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente do autor. Isso difere consideravelmente da interface clássica original, pois foi projetada para operar em dispositivos de toque e desktop.
 
 Essa interface habilitada para toque agora é a interface padrão para AEM, substituindo a interface clássica.
 
@@ -47,8 +47,8 @@ A interface habilitada para toque inclui:
    * Indica qual console você está usando no momento e/ou seu local dentro desse console
    * Seleção do painel esquerdo
    * Navegações estruturais
-   * Acesso às ações **Criar** apropriadas
-   * Seleções de Visualização
+   * Acesso às ações **Create** apropriadas
+   * Seleções de visualização
 
 * A área de conteúdo que:
 
@@ -61,12 +61,12 @@ A interface habilitada para toque inclui:
 
 >[!NOTE]
 >
->Quase toda a funcionalidade AEM foi portada para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverterá para a interface clássica. Consulte Status [do recurso da interface de](/help/release-notes/touch-ui-features-status.md) toque para obter mais informações.
+>Quase toda a funcionalidade AEM foi portada para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverterá para a interface clássica. Consulte [Touch UI Feature Status](/help/release-notes/touch-ui-features-status.md) para obter mais informações.
 
 A interface do usuário habilitada para toque foi projetada pela Adobe para fornecer consistência na experiência do usuário em vários produtos. Baseia-se em:
 
-* **UI** Coral (CUI) uma implementação do estilo visual do Adobe para a interface habilitada para toque. A interface do usuário do Coral fornece tudo o que seu produto / projeto / aplicativo da Web precisa para adotar o estilo visual da interface do usuário.
-* **Os componentes da interface do usuário** Granite são criados com a interface do usuário Coral.
+* **A interface do usuário**  do Coral (CUI) é uma implementação do estilo visual do Adobe para a interface do usuário habilitada para toque. A interface do usuário do Coral fornece tudo o que seu produto / projeto / aplicativo da Web precisa para adotar o estilo visual da interface do usuário.
+* **Os** componentes da interface do usuário Granite são criados com a interface do usuário Coral.
 
 Os princípios básicos da interface habilitada para toque são:
 
@@ -102,7 +102,7 @@ Granite é uma pilha de componentes Open Web que oferece:
 >
 >Granite é executado como um projeto de desenvolvimento aberto dentro do Adobe: as contribuições para o código, discussões e questões são feitas em toda a empresa.
 >
->No entanto, Granite **não** é um projeto de código aberto. Ele é fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit e Lucene em particular), mas o Adobe traça uma linha clara entre o que é público e o que é interno.
+>No entanto, Granite é **e não** um projeto de código aberto. Ele é fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit e Lucene em particular), mas o Adobe traça uma linha clara entre o que é público e o que é interno.
 
 ## Interface do usuário Granite {#granite-ui}
 
@@ -138,7 +138,7 @@ A interface do usuário do Granite:
 
 * [Componentes de administração da interface do usuário Granite](#granite-ui-administration-components)
 
-### Lado do cliente vs lado do servidor {#client-side-vs-server-side}
+### Lado do cliente vs Lado do servidor {#client-side-vs-server-side}
 
 A comunicação cliente-servidor na interface de usuário Granite consiste em hipertexto, não objetos, portanto não há necessidade de o cliente entender a lógica comercial
 
@@ -147,15 +147,15 @@ A comunicação cliente-servidor na interface de usuário Granite consiste em hi
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
-#### Client-Side {#client-side}
+#### Cliente {#client-side}
 
-Isso usa uma extensão do vocabulário HTML, desde que o autor possa expressar sua intenção de criar um aplicativo Web interativo. Esta é uma abordagem semelhante à [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e aos [microformatos](http://microformats.org/).
+Isso usa uma extensão do vocabulário HTML, desde que o autor possa expressar sua intenção de criar um aplicativo Web interativo. Esta é uma abordagem semelhante para [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e [microformatos](http://microformats.org/).
 
 Consiste principalmente em uma coleção de padrões de interação (por exemplo, enviar um formulário de forma assíncrona) interpretados por códigos JS e CSS, executados no cliente. O papel do cliente é aprimorar a marcação (dada como o preço da hipermídia pelo servidor) para a interatividade.
 
 O cliente é independente de qualquer tecnologia de servidor. Desde que o servidor forneça a marcação apropriada, o lado do cliente pode cumprir sua função.
 
-Atualmente, os códigos JS e CSS são entregues como [clientlibs](/help/sites-developing/clientlibs.md) Granite na categoria:
+Atualmente, os códigos JS e CSS são fornecidos como Granite [clientlibs](/help/sites-developing/clientlibs.md) na categoria:
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -163,9 +163,9 @@ Eles são entregues como parte do pacote de conteúdo:
 
 `granite.ui.content`
 
-#### Servidor {#server-side}
+#### Lado do servidor {#server-side}
 
-Isso é formado por uma coleção de componentes de sling que permitem que o autor *componha* rapidamente um aplicativo da Web. O desenvolvedor desenvolve componentes, o autor monta os componentes para serem um aplicativo da Web. A função do servidor é fornecer o preço da hipermídia (marcação) ao cliente.
+Isso é formado por uma coleção de componentes de sling que permitem ao autor *compor* um aplicativo da Web rapidamente. O desenvolvedor desenvolve componentes, o autor monta os componentes para serem um aplicativo da Web. A função do servidor é fornecer o preço da hipermídia (marcação) ao cliente.
 
 Atualmente, os componentes estão localizados no repositório Granite em:
 
@@ -199,7 +199,7 @@ As diferenças entre a interface do usuário do Granite e o ExtJS (usado para a 
   </tr> 
   <tr> 
    <td>"Cliente Gordo"</td> 
-   <td>"Cliente fino"</td> 
+   <td>"Thin client"</td> 
   </tr> 
   <tr> 
    <td>Bibliotecas especializadas de clientes</td> 
@@ -210,7 +210,7 @@ As diferenças entre a interface do usuário do Granite e o ExtJS (usado para a 
 
 ### Componentes básicos da interface do usuário Granite {#granite-ui-foundation-components}
 
-Os componentes [básicos da interface do usuário](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) Granite fornecem os blocos básicos necessários para a construção de qualquer interface do usuário. Incluem, entre outros:
+Os [componentes básicos da interface do usuário Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fornecem os blocos básicos necessários para a construção de qualquer interface do usuário. Incluem, entre outros:
 
 * Botão
 * Hiperlink
@@ -236,7 +236,7 @@ Implementação:
 
 Essa biblioteca de componentes da base pode ser usada ou estendida por outras bibliotecas.
 
-### Componentes do ExtJS e da interface do usuário Granite correspondente {#extjs-and-corresponding-granite-ui-components}
+### Componentes do ExtJS e da IU Granite Correspondente {#extjs-and-corresponding-granite-ui-components}
 
 Ao atualizar o código ExtJS para usar a interface do usuário Granite, a lista a seguir fornece uma visão geral conveniente dos tipos xtypes e nós ExtJS com seus tipos de recursos equivalentes da interface do usuário Granite.
 
@@ -265,9 +265,9 @@ Ao atualizar o código ExtJS para usar a interface do usuário Granite, a lista 
 | `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
-### Componentes de administração da interface do usuário Granite {#granite-ui-administration-components}
+### Componentes de Administração da Interface do Usuário Granite {#granite-ui-administration-components}
 
-Os componentes [de administração da interface do usuário](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) Granite são desenvolvidos nos componentes básicos para fornecer blocos componentes genéricos que qualquer aplicativo administrativo pode implementar. Estes incluem, entre outros:
+Os [componentes de administração da interface de usuário Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) baseiam-se nos componentes básicos para fornecer blocos componentes genéricos que qualquer aplicativo de administração pode implementar. Estes incluem, entre outros:
 
 * Barra de navegação global
 * Painel (esqueleto)
@@ -283,7 +283,7 @@ Implementação:
 * Componentes predefinidos usando os componentes básicos
 * Os componentes podem ser personalizados
 
-## Interface do usuário do Coral {#coral-ui}
+## Interface do usuário Coral {#coral-ui}
 
 A interface do usuário Coral (UI) é uma implementação de estilo visual CUI habilitado para toque para a interface do usuário, que foi projetada para fornecer consistência na experiência do usuário em vários produtos. A interface do usuário do Coral fornece tudo o que você precisa para adotar o estilo visual usado no ambiente de criação.
 
@@ -304,7 +304,7 @@ A interface do usuário Coral (UI) é uma implementação de estilo visual CUI h
 A utilização da interface do coral deve ser evitada em:
 >
 >* Documentos e outros itens não relacionados ao Adobe.
->* ambientes de criação de conteúdo (onde os itens anteriores podem ser gerados por outros).
+>* Ambientes de criação de conteúdo (onde os itens anteriores podem ser gerados por outros).
 >* Aplicativos/componentes/páginas da Web que não estão claramente conectados ao Adobe.
 
 >
@@ -325,7 +325,7 @@ Os elementos HTML fornecem uma aparência comum para todos os elementos básicos
 
 No nível mais básico, um elemento HTML é uma tag HTML com um nome de classe dedicado. Elementos mais complexos podem ser compostos de várias tags, aninhadas entre si (de uma maneira específica).
 
-O CSS é usado para fornecer a aparência real. Para facilitar a personalização da aparência (por exemplo, no caso da marca), os valores de estilo reais são declarados como variáveis que são expandidas pelo pré-processador [MENOS](https://lesscss.org/) durante o tempo de execução.
+O CSS é usado para fornecer a aparência real. Para facilitar a personalização da aparência (por exemplo, no caso da marca), os valores de estilo reais são declarados como variáveis que são expandidas pelo pré-processador [LESS](https://lesscss.org/) durante o tempo de execução.
 
 Propósito:
 
@@ -334,7 +334,7 @@ Propósito:
 
 Implementação:
 
-* Tags HTML com estilos inspirados pelo [bootstrap](https://twitter.github.com/bootstrap/)
+* Tags HTML com estilos inspirados por [bootstrap](https://twitter.github.com/bootstrap/)
 * As classes são definidas em arquivos MENOS
 * Os ícones são definidos como sprites de fonte
 
@@ -347,7 +347,7 @@ Por exemplo, a marcação:
 
 É exibido como:
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 A aparência é definida em LESS, vinculada a um elemento por nome de classe dedicado (o seguinte extrato foi encurtado por uma questão de brevidade):
 
@@ -375,20 +375,20 @@ Muitos dos elementos HTML precisarão exibir algum tipo de comportamento dinâmi
 
 Um plug-in é:
 
-* Projetado para operar em um elemento DOM específico. Por exemplo, um plug-in de diálogo espera encontrar `DIV class=dialog`
-* Genérico na natureza. Por exemplo, um gerenciador de layout fornece layout para qualquer lista de `DIV` elementos ou `LI`
+* Projetado para operar em um elemento DOM específico. Por exemplo, um plug-in de diálogo espera localizar `DIV class=dialog`
+* Genérico na natureza. Por exemplo, um gerenciador de layout fornece layout para qualquer lista de elementos `DIV` ou `LI`
 
 O comportamento do plug-in pode ser personalizado com parâmetros, por meio de:
 
 * Passar os parâmetros por meio de uma chamada javascript
-* Uso de atributos dedicados `data-*` vinculados à marcação HTML
+* Uso de atributos dedicados `data-*` ligados à marcação HTML
 
 Embora o desenvolvedor possa selecionar a melhor abordagem para qualquer plug-in, a regra é usar:
 
 * `data-*` para opções relacionadas ao layout HTML. Por exemplo, para especificar o número de colunas
 * Opções/classes da API para funcionalidade relacionada aos dados. Por exemplo, construir a lista de itens a serem exibidos
 
-O mesmo conceito é usado para implementar a validação do formulário. Para um elemento que você deseja validar, você deve especificar o formulário de entrada necessário como um `data-*` atributo personalizado. Esse atributo é usado como uma opção para um plug-in de validação.
+O mesmo conceito é usado para implementar a validação do formulário. Para um elemento que você deseja validar, especifique o formulário de entrada necessário como um atributo `data-*` personalizado. Esse atributo é usado como uma opção para um plug-in de validação.
 
 >[!NOTE]
 >
@@ -404,7 +404,7 @@ Propósito:
 Implementação:
 
 * Plug-in jQuery, vinculado a elementos DOM específicos
-* Usar `data-*` atributos para personalizar o comportamento
+* Usar atributos `data-*` para personalizar o comportamento
 
 Um extrato de marcação de exemplo (observe as opções especificadas como data-&amp;ast; atributos):
 
@@ -440,7 +440,7 @@ Isso mostrará como:
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
-O `cardLayout` plug-in apresenta os `UL` elementos delimitados com base em suas respectivas alturas e também considerando a largura do pai.
+O plug-in `cardLayout` apresenta os elementos `UL` delimitados com base em suas respectivas alturas e também leva em consideração a largura do pai.
 
 ### Widgets de elementos HTML {#html-elements-widgets}
 
@@ -489,7 +489,7 @@ O plug-in emite marcação HTML (esta marcação usa elementos básicos, que pod
 
 Isso mostrará como:
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 ### Biblioteca de utilitários {#utility-library}
 
@@ -505,7 +505,7 @@ Embora os plug-ins e os widgets do elemento HTML possam depender da funcionalida
 Propósito:
 
 * Fornecer funcionalidade comum
-* Implementação do barramento do Evento
+* Implementação do barramento do evento
 * Modelos do cliente
 * XSS
 
