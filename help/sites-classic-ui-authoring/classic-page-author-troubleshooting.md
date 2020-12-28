@@ -71,7 +71,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Problema:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Ao usar a opção **Localizar e substituir**, pode acontecer que nem todas as instâncias do termo `find` sejam substituídas em uma página.
 
 * **Motivo**:
 
