@@ -105,13 +105,13 @@ Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja e
 
 #### Nova conexão de comunidades {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ## Configuração do banco de dados {#database-setup}
 
 Abra a conexão Comunidades para instalar o banco de dados.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### Obter o script SQL {#obtain-the-sql-script}
 
