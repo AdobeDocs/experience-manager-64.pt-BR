@@ -71,7 +71,7 @@ O painel esquerdo pode ser aberto/oculto, conforme necessário, para mostrar:
 * **Referências**
 * **Filtro**
 
-O padrão é Somente **** conteúdo (painel oculto).
+O padrão é **Somente conteúdo** (painel oculto).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -91,7 +91,7 @@ O quadro de conteúdo está na seção à direita da janela, abaixo da barra de 
 
 O quadro do editor detecta os recursos de edição.
 
-O quadro do editor é um container (abstrato) para todos os elementos *de criação da* página. Ele fica sobre o quadro de conteúdo e inclui:
+O quadro do editor é um container (abstrato) para todos os *elementos de criação de página*. Ele fica sobre o quadro de conteúdo e inclui:
 
 * a barra de ferramentas superior
 * painel lateral
@@ -149,7 +149,7 @@ AEM vem com várias camadas já implementadas para a criação de páginas; incl
 >
 >As camadas são um conceito poderoso que afeta a visualização do usuário e a interação com o conteúdo da página. Ao desenvolver suas próprias camadas, é necessário garantir que a camada seja limpa quando ela for fechada.
 
-### Comutador de camada {#layer-switcher}
+### Comutador de Camada {#layer-switcher}
 
 O alternador de camadas permite que você escolha a camada que deseja usar. Quando fechada, indica a camada que está sendo usada no momento.
 
@@ -167,7 +167,7 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 ## Informações adicionais {#further-information}
 
-Para obter mais detalhes sobre os conceitos em torno da interface de usuário habilitada para toque, continue com o artigo [Conceitos da interface de usuário](/help/sites-developing/touch-ui-concepts.md)habilitada para toque AEM.
+Para obter mais detalhes sobre os conceitos em torno da interface de usuário habilitada para toque, continue com o artigo [Conceitos da interface de usuário habilitada para toque AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obter mais informações técnicas, consulte a documentação [JS definida](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.
+Para obter mais informações técnicas, consulte o [conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.
 
