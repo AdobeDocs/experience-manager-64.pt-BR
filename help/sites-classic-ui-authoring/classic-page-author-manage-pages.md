@@ -39,9 +39,9 @@ Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar
 
 A estrutura de um site pode ser considerada como uma *estrutura em árvore* que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, ao passo que o título é mostrado quando o conteúdo da página é visualizado.
 
-The following shows an extract from the Geometrixx site; where, for example, the `Triangle` page will be accessed:
+A seguir, é apresentado um extrato do local do Geometrixx; onde, por exemplo, a página `Triangle` será acessada:
 
-* ambiente do autor
+* Ambiente do autor
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -49,7 +49,7 @@ The following shows an extract from the Geometrixx site; where, for example, the
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+   Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente publish.
 
 ```xml
   /content
@@ -71,7 +71,7 @@ The following shows an extract from the Geometrixx site; where, for example, the
     /...
 ```
 
-This structure can be viewed from the Websites console, which you can use to [navigate through the tree structure](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Essa estrutura pode ser visualizada no console Sites, que você pode usar para [navegar pela estrutura em árvore](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,7 +89,7 @@ Ao criar uma nova página, existem dois campos principais:
    * Usado para gerar o URI.
    * A entrada do usuário para este campo é opcional. Se não for especificado, o nome é derivado do título.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+Ao criar uma nova página, AEM irá [validar o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pela AEM e JCR.
 
 A implementação e a lista de caracteres permitidos diferem ligeiramente de acordo com a interface do usuário (é mais extensa para a interface habilitada para toque), mas o mínimo permitido é:
 
@@ -114,10 +114,10 @@ Caso forneça apenas um **Título** de página ao criar uma nova página, o AEM 
 
 Se você fornecer um **Nome**[ de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR.](/help/sites-developing/naming-conventions.md)
 
-In the Classic UI you **cannot enter invalid characters** in the **Name** field.
+Na interface clássica, você **não pode inserir caracteres inválidos** no campo **Nome**.
 
 >[!NOTE]
->In the touch-enabled UI you **cannot submit invalid characters** in the **Name** field. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+>Na interface habilitada para toque, você **não pode enviar caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível a
 * Vídeo
 * e muito mais
 
-Once you have created and opened a page you can [add content using the components](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), available from the [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Depois de criar e abrir uma página, você pode [adicionar conteúdo usando os componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponíveis no [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Gerenciamento de páginas {#managing-pages}
 
@@ -195,7 +195,7 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
 
    >[!NOTE]
    >
-   >Você também pode criar uma página quando estiver editando uma página existente. Using **Create Child Page **from the **Page** tab of the sidekick, will create a new page directly under the page being edited.
+   >Você também pode criar uma página quando estiver editando uma página existente. Usar **Criar página secundária **da guia **Página** do sidekick, criará uma nova página diretamente sob a página que está sendo editada.
 
 ### Abrir uma página para edição {#opening-a-page-for-editing}
 
@@ -283,7 +283,7 @@ Para mover ou renomear uma página:
 
    * **Ajustar**
 
-      Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tem links para a página B, AEM os links na página A caso você mova a página B.
+      Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tiver links para a página B, AEM os links na página A caso você mova a página B.
 
       Isso pode ser selecionado/desmarcado para cada página de referência individual.
 
