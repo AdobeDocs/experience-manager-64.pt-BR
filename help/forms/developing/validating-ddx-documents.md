@@ -1,8 +1,8 @@
 ---
 title: Validação de Documentos DDX
 seo-title: Validação de Documentos DDX
-description: 'null'
-seo-description: nulo
+description: Valide um documento DX de forma programática usando a API Java e a API de serviço da Web.
+seo-description: Valide um documento DX de forma programática usando a API Java e a API de serviço da Web.
 uuid: da668170-d2e9-4fff-aef5-432a856bd0bd
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
