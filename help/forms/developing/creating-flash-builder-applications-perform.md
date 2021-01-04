@@ -1,8 +1,8 @@
 ---
 title: Criação de aplicativos de Flash Builder que executam autenticação SSO usando tokens HTTP
 seo-title: Criação de aplicativos de Flash Builder que executam autenticação SSO usando tokens HTTP
-description: 'null'
-seo-description: nulo
+description: Crie um aplicativo cliente usando um Flash Builder que execute autenticação de logon único (SSO) usando tokens HTTP. Autentique um usuário para uma operação uma vez e use essa autenticação para executar várias operações do AEM Forms.
+seo-description: Crie um aplicativo cliente usando um Flash Builder que execute autenticação de logon único (SSO) usando tokens HTTP. Autentique um usuário para uma operação uma vez e use essa autenticação para executar várias operações do AEM Forms.
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
