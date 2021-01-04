@@ -1,8 +1,8 @@
 ---
 title: Invocar o AEM Forms usando a JavaAPI
 seo-title: Invocar o AEM Forms usando a JavaAPI
-description: 'null'
-seo-description: nulo
+description: Use a API do AEM Forms Java para protocolo de transporte RMI para invocação remota, transporte da VM para invocação local, SOAP para invocação remota, autenticação diferente, como nome de usuário e senha, e solicitações de invocação síncronas e assíncronas.
+seo-description: Use a API do AEM Forms Java para protocolo de transporte RMI para invocação remota, transporte da VM para invocação local, SOAP para invocação remota, autenticação diferente, como nome de usuário e senha, e solicitações de invocação síncronas e assíncronas.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5479'
 ht-degree: 0%
 
 ---
