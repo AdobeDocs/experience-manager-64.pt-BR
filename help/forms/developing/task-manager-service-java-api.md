@@ -1,8 +1,8 @@
 ---
 title: QuickStart(SOAP) da API Java do serviço do Tarefa Manager
 seo-title: QuickStart(SOAP) da API Java do serviço do Tarefa Manager
-description: 'null'
-seo-description: nulo
+description: Use o serviço Gerenciador de Tarefas para atribuir tarefas, bloquear tarefas, recuperar tarefas atribuídas a usuários, recuperar dados de formulário do tarefa, modificar dados de formulário, recuperar anexos de arquivo e recuperar informações de tarefa.
+seo-description: Use o serviço Gerenciador de Tarefas para atribuir tarefas, bloquear tarefas, recuperar tarefas atribuídas a usuários, recuperar dados de formulário do tarefa, modificar dados de formulário, recuperar anexos de arquivo e recuperar informações de tarefa.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
