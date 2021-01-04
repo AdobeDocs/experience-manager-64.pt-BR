@@ -1,8 +1,8 @@
 ---
 title: Montagem de Documentos PDF
 seo-title: Montagem de Documentos PDF
-description: 'null'
-seo-description: nulo
+description: Use o serviço Assembler para reunir vários documentos PDF em um único documento PDF ou desmonte um documento PDF em vários documentos PDF.
+seo-description: Use o serviço Assembler para reunir vários documentos PDF em um único documento PDF ou desmonte um documento PDF em vários documentos PDF.
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
