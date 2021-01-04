@@ -1,8 +1,8 @@
 ---
 title: 'Criando fluxos de saída de Documento '
 seo-title: 'Criando fluxos de saída de Documento '
-description: 'null'
-seo-description: nulo
+description: Use o serviço de Saída para converter documentos como formatos PDF (incluindo documentos PDF/A), PostScript, PCL (Printer Control Language) e Zebra - ZPL, Intermec - IPL, Datamax - DPL, e TecToshiba - TPCL.
+seo-description: Use o serviço de Saída para converter documentos como formatos PDF (incluindo documentos PDF/A), PostScript, PCL (Printer Control Language) e Zebra - ZPL, Intermec - IPL, Datamax - DPL, e TecToshiba - TPCL.
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '18972'
+source-wordcount: '19030'
 ht-degree: 0%
 
 ---
@@ -611,7 +611,7 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF/A chamando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >Você também pode criar um documento PDF /A invocando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Recupere os resultados da operação.
 
