@@ -1,8 +1,8 @@
 ---
 title: Invocando processos de vida longa centrados em humanos
 seo-title: Invocando processos de vida longa centrados em humanos
-description: 'null'
-seo-description: nulo
+description: Chame de forma programática os processos de longa duração centrados em humanos criados no Workbench usando um aplicativo cliente baseado na Web Java que usa a API de chamada, um aplicativo ASP.NET que usa serviços da Web e um aplicativo cliente criado com a Flex que usa o Remoting.
+seo-description: Chame de forma programática os processos de longa duração centrados em humanos criados no Workbench usando um aplicativo cliente baseado na Web Java que usa a API de chamada, um aplicativo ASP.NET que usa serviços da Web e um aplicativo cliente criado com a Flex que usa o Remoting.
 uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3752'
 ht-degree: 0%
 
 ---
