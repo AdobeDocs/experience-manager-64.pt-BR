@@ -1,8 +1,8 @@
 ---
 title: Como trabalhar com Documentos PDF/A
 seo-title: Como trabalhar com Documentos PDF/A
-description: 'null'
-seo-description: nulo
+description: Use o serviço DocConverter para determinar se um documento PDF é um documento PDF/A e converter documentos PDF em documentos PDF/A.
+seo-description: Use o serviço DocConverter para determinar se um documento PDF é um documento PDF/A e converter documentos PDF em documentos PDF/A.
 uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2386'
 ht-degree: 0%
 
 ---
