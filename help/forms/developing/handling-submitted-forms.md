@@ -1,8 +1,8 @@
 ---
 title: Manuseio de Forms enviado
 seo-title: Manuseio de Forms enviado
-description: 'null'
-seo-description: nulo
+description: Use o serviço Forms para recuperar os dados enviados inseridos em um formulário interativo. O usuário pode enviar os dados do formulário nos formatos XML, PDF e URL UTF-16.
+seo-description: Use o serviço Forms para recuperar os dados enviados inseridos em um formulário interativo. O usuário pode enviar os dados do formulário nos formatos XML, PDF e URL UTF-16.
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ A tabela a seguir descreve as etapas neste diagrama.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Uma página da Web contém um link que acessa um Servlet Java que chama o serviço Forms.</p></td>
   </tr>
   <tr>
