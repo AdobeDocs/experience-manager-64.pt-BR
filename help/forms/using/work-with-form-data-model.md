@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: 0fe74ef5483cf1f577be51c200ab2820d7ed64e5
 workflow-type: tm+mt
 source-wordcount: '3150'
 ht-degree: 0%
@@ -22,7 +22,7 @@ A integração de dados fornece o editor de modelo de dados de formulário para 
 
 ![](do-not-localize/data-integeration.png)
 
-O editor de modelo de dados de formulário fornece uma interface de usuário intuitiva e ferramentas para editar e configurar um modelo de dados de formulário. Usando o editor, é possível adicionar e configurar objetos, propriedades e serviços do modelo de dados de fontes de dados associadas no modelo de dados de formulário. Além disso, permite criar objetos e propriedades de modelo de dados sem fontes de dados e vinculá-los posteriormente aos respectivos objetos e propriedades de modelo de dados. Você também pode gerar e editar dados de amostra para propriedades de objetos de modelo de dados que podem ser usados para preencher previamente formulários adaptáveis e comunicações interativas ao visualizar. É possível testar objetos e serviços de modelo de dados configurados em um modelo de dados de formulário para garantir que eles sejam integrados corretamente às fontes de dados.
+O editor de modelo de dados de formulário fornece uma interface de usuário intuitiva e ferramentas para editar e configurar um modelo de dados de formulário. Usando o editor, você pode adicionar e configurar objetos, propriedades e serviços do modelo de dados de fontes de dados associadas no modelo de dados de formulário. Além disso, permite criar objetos e propriedades de modelo de dados sem fontes de dados e vinculá-los posteriormente aos respectivos objetos e propriedades de modelo de dados. Você também pode gerar e editar dados de amostra para propriedades de objetos de modelo de dados que podem ser usados para preencher previamente formulários adaptáveis e comunicações interativas ao visualizar. É possível testar objetos e serviços de modelo de dados configurados em um modelo de dados de formulário para garantir que eles sejam integrados corretamente às fontes de dados.
 
 Se você for novo na integração de dados da Forms e não tiver configurado uma fonte de dados ou criado um modelo de dados de formulário, consulte os seguintes tópicos:
 
@@ -64,7 +64,7 @@ Para adicionar objetos e serviços de modelo de dados:
 
    >[!NOTE]
    >
-   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#navigation-properties-odata).
+   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#work-with-navigation-properties-of-odata-services).
 
 1. Toque em **[!UICONTROL Salvar]** para salvar o objeto de modelo de formulário.
 
@@ -140,7 +140,7 @@ Para ler e gravar dados de um objeto de modelo de dados, faça o seguinte para c
    >
    >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. Quando você adiciona uma fonte de dados de serviço OData a um Modelo de dados de formulário, há um serviço disponível no Modelo de dados de formulário para todas as propriedades de navegação em um objeto de modelo de dados. Você pode usar esse serviço para ler as propriedades de navegação do objeto de modelo de dados correspondente.
    >
-   >Para obter mais informações sobre como usar o serviço, consulte [Trabalhar com propriedades de navegação dos serviços OData](#navigation-properties-odata).
+   >Para obter mais informações sobre como usar o serviço, consulte [Trabalhar com propriedades de navegação dos serviços OData](#work-with-navigation-properties-of-odata-services).
 
 1. Alterne **[!UICONTROL Objeto de nível superior]** para especificar se o objeto de modelo de dados é um objeto de modelo de nível superior.
 
@@ -182,7 +182,7 @@ Para adicionar uma associação:
 
    >[!NOTE]
    >
-   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. É possível usar essas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#navigation-properties-odata).
+   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. É possível usar essas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#work-with-navigation-properties-of-odata-services).
 
    A caixa de diálogo Adicionar associação é aberta.
 
