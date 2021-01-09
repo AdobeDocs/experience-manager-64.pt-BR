@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ O menu suspenso da linha também fornece a operação Editar para editar proprie
 >[!NOTE]
 >
 >Embora seja possível adicionar qualquer número de linhas em uma tabela, o número máximo de colunas que você pode adicionar é seis. Além disso, não é possível excluir a linha de cabeçalho da tabela.
+
+### Definir a largura da coluna para uma tabela {#set-column-width}
+
+Execute as seguintes etapas para definir a largura da coluna de uma tabela:
+
+1. Na guia **[!UICONTROL Conteúdo]**, toque no componente **[!UICONTROL Tabela]** e toque no ícone Configurar (![Configurar](assets/configure-icon.svg)).
+
+1. Digite a lista de valores separada por vírgulas no campo **[!UICONTROL Largura da coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificar 2,4,6 como o valor no campo **[!UICONTROL Largura da coluna]** resulta na definição da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 dado que a largura da primeira coluna se refere a um sexto da largura da tabela. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela e 6/12 define a largura da terceira coluna como metade da largura da tabela.
 
 ### Adicionar descrição da tabela {#add-table-description}
 
