@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '435'
 ht-degree: 8%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 8%
 O [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) permite que você coloque um elemento de vídeo OOTB (out-of-the-box) predefinido na sua página.
 
 Para que ocorra a transcodificação correta, o administrador deve [Instalar FFmpeg e configurar AEM](#install-ffmpeg) separadamente. Eles também podem [Configurar os perfis de vídeo](#configure-video-profiles) para uso com elementos de HTML5.
+
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
 
 ## Configurar perfis de vídeo {#configure-video-profiles}
 
