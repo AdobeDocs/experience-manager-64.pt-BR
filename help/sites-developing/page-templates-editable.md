@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
-source-wordcount: '3231'
+source-wordcount: '3298'
 ht-degree: 8%
 
 ---
@@ -133,6 +133,16 @@ Ao criar um novo modelo editável:
 
    Para obter detalhes técnicos sobre como criar páginas com modelos editáveis, consulte [Páginas de conteúdo resultante](/help/sites-developing/page-templates-editable.md#resultant-content-pages) neste documento.
 
+>[!TIP]
+>
+>Nunca insira qualquer informação que precise ser internacionalizada em um modelo. Para fins de internalização, os recursos de [localização dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) são recomendados.
+
+>[!NOTE]
+>
+>Os modelos são ferramentas poderosas para simplificar o fluxo de trabalho de criação de página. No entanto, muitos modelos podem sobrecarregar os autores e tornar a criação da página confusa. Uma boa regra é manter o número de modelos abaixo de 100.
+>
+>O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
+
 >[!NOTE]
 >
 >A biblioteca do cliente do editor assume a presença da namespace `cq.shared` nas páginas de conteúdo e, se ela não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
@@ -141,10 +151,6 @@ Ao criar um novo modelo editável:
 >
 >Consulte [Usando bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
 
->[!CAUTION]
->
->Nunca insira qualquer informação que precise ser [internacionalizada](/help/sites-developing/i18n.md) em um modelo.
-
 ## Pastas de Modelo {#template-folders}
 
 Para organizar seus modelos, você pode usar as seguintes pastas:
@@ -152,7 +158,7 @@ Para organizar seus modelos, você pode usar as seguintes pastas:
 * **global**
 * Específico do site
 
-   As pastas específicas do site que você cria para organizar seus modelos são criadas com uma conta com privilégios de administrador.
+   As pastas específicas do site que você cria para organizar seus modelos são criadas com uma conta que possui privilégios de administrador.
 
 >[!NOTE]
 >
@@ -217,7 +223,7 @@ Para criar uma nova pasta, você pode:
 
 1. Vá para **Navegação Global** -> **Ferramentas** > **Navegador de Configuração**.
 
-   As pastas existentes são listadas à esquerda, incluindo a pasta **globa** l.
+   As pastas existentes são listadas à esquerda, incluindo a pasta **global**.
 
 1. Clique em **Criar**.
 1. Na caixa de diálogo **Criar configuração**, os seguintes campos precisam ser configurados:
