@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 0959d86c28ee6de7347922af706338f83fe400ef
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 1%
@@ -244,7 +244,7 @@ O ícone ou abreviação do componente é definido pelas propriedades do JCR do 
    * A cor recomendada é rgb(112, 112, 112) > #707070
    * O plano de fundo dos ícones de componentes padrão é transparente.
    * Somente os arquivos `.png` e `.svg` são suportados.
-   * Se importar do sistema de arquivos por meio do plug-in do Eclipse, os nomes de arquivo precisam ser salvos como `_cq_icon.png` ou `_cq_icon.svg`, por exemplo.
+   * Se importar do sistema de arquivos por meio do plug-in do Eclipse, os nomes de arquivo precisam ser escapados como `_cq_icon.png` ou `_cq_icon.svg`, por exemplo.
    * `.png` tem precedência sobre  `.svg` se ambos estiverem presentes
 
 
