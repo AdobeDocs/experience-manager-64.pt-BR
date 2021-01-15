@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1567'
 ht-degree: 15%
 
 ---
@@ -31,7 +31,7 @@ Depois que uma tag é treinada e pronta, o serviço pode aplicar essas tags em a
 
 Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura do AI da Adobe Sensei para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-O Serviço de conteúdo inteligente é um serviço em nuvem hospedado no Adobe I/O. Para usá-la no Adobe Experience Manager (AEM), o administrador do sistema deve integrar a instância AEM com Adobe IO.
+O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em [!DNL Adobe I/O]. Para usá-la no Adobe Experience Manager (AEM), o administrador do sistema deve integrar a instância AEM com [!DNL Adobe I/O].
 
 Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligente:
 
@@ -44,14 +44,14 @@ Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligen
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração no Adobe I/O:
+Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração em [!DNL Adobe I/O]:
 
 * Existência de uma Adobe ID com privilégios de administrador para a organização.
 * O serviço Smart Content Service está habilitado para sua organização.
 
 ## Integração {#onboarding}
 
-O Serviço de conteúdo inteligente está disponível para compra como um complemento para AEM. Após a compra, um email é enviado ao administrador da sua organização com um link para Adobe IO.
+O Serviço de conteúdo inteligente está disponível para compra como um complemento para AEM. Após a compra, um email é enviado ao administrador da sua organização com um link para [!DNL Adobe I/O].
 
 O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente ao AEM. Para integrar o serviço ao AEM Assets, consulte [Configurar Tags Inteligentes](config-smart-tagging.md).
 
