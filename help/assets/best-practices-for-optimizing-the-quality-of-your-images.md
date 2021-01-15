@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: fa8e2d0612e6c7aaddb821352534bd9f6fc31076
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 5%
+source-wordcount: '1493'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ Como prática recomendada para dimensionamento de imagem, use `&wid=<value>&hei=
 
 O ajuste da nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site e onde muitos erros são cometidos. Aproveite o tempo para saber mais sobre como a nitidez e a máscara de nitidez funcionam na AEM, consultando os seguintes recursos úteis:
 
-A publicação técnica de práticas recomendadas [Apagar imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/assets/s7_sharpening_images.pdf) também se aplica ao AEM.
+A publicação técnica de práticas recomendadas [Apagar imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/assets/sharpening_images.pdf) também se aplica ao AEM.
 
 Consulte também [Ajustar a nitidez de uma imagem com uma máscara nítida](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,19 +64,18 @@ Existem dois métodos de nitidez de imagem que você pode usar:
       * **[!UICONTROL amount]** (0-5, intensidade do efeito.)
       * **[!UICONTROL radius]** (0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
 
-         Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo aumenta a nitidez apenas dos pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
+             Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo aumenta a nitidez apenas dos pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
+         * **[!UICONTROL limiar]** (0-255, sensibilidade do efeito.)
 
-      * **[!UICONTROL limiar]** (0-255, sensibilidade do efeito.)
+             Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
+         
+         Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
-         Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limit]** ajuda a evitar a sobreposição de nitidez de áreas com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
-      Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
+         AEM tópico da Ajuda sobre como aumentar a nitidez de uma imagem.
 
-      AEM tópico da Ajuda sobre como aumentar a nitidez de uma imagem.
+         White paper sobre práticas recomendadas [Como aumentar a nitidez das imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/assets/sharpening_images.pdf).
 
-      White paper sobre práticas recomendadas [Como aumentar a nitidez das imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/assets/s7_sharpening_images.pdf).
-
-   * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
-
+      * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
 Como prática recomendada, start com o parâmetro de raio de máscara de nitidez. As configurações de Raio que você pode start são as seguintes:
 
@@ -125,7 +124,6 @@ Se os resultados da nitidez ainda não forem satisfatórios, aumente o raio em i
 
 Durante o experimento, você também pode achar as seguintes sugestões gerais úteis para otimizar seu fluxo de trabalho:
 
-* Tente testar diferentes parâmetros em tempo real, seja diretamente em um URL ou usando a funcionalidade de ajuste de imagem do Scene7 Publishing System, que fornece pré-visualizações em tempo real para operações de ajuste.
+* Tente testar diferentes parâmetros em tempo real, diretamente em um URL.
 * Como prática recomendada, lembre-se de que é possível agrupar comandos do Dynamic Media Image Server em uma predefinição de imagem. Uma predefinição de imagem é basicamente macros de comando de URL com nomes predefinidos personalizados, como `$thumb_low$` e `&product_high$`. O nome predefinido personalizado em um caminho de URL faz uma chamada para essas predefinições. Essa funcionalidade ajuda a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens em seu site e reduz a duração geral dos URLs.
 * AEM também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar imagens mais nítidas na ingestão. Para casos de uso avançado em que essa pode ser uma opção para ajustar e otimizar ainda mais os resultados da renderização, o [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) pode ajudá-lo com insight personalizado e práticas recomendadas.
-
