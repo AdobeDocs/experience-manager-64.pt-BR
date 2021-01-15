@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 32%
@@ -240,7 +240,7 @@ O componente Imagem clássica do Dynamic Media permite que você adicione a func
 
 **[!UICONTROL Formato]**  de saída - Selecione o formato de saída da imagem, por exemplo jpeg. Dependendo do formato de saída selecionado, você pode ter opções de configuração adicionais. Consulte [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Nitidez]**  - Selecione como deseja tornar a imagem nítida. A nitidez é explicada em detalhes em [*Qualidade de imagem clássica do Adobe Dynamic Media e Práticas recomendadas de nitidez*](/help/assets/assets/s7_sharpening_images.pdf).
+**[!UICONTROL Nitidez]**  - Selecione como deseja tornar a imagem nítida. A nitidez é explicada em detalhes em [*Qualidade de imagem clássica do Adobe Dynamic Media e Práticas recomendadas de nitidez*](/help/assets/assets/sharpening_images.pdf).
 
 **[!UICONTROL Modificadores]**  de URL - é possível alterar os efeitos de imagem fornecendo comandos adicionais de imagem do Dynamic Media Classic. Estes estão descritos em [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md) e [Referência de comando](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
