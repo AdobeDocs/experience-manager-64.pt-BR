@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3850'
 ht-degree: 8%
 
 ---
@@ -394,7 +394,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     </ul> 
     <div>
       A nitidez está descrita em 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">Apagar imagens</a>. 
+     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Apagar imagens</a>. 
     </div> </td> 
   </tr> 
   <tr> 
@@ -477,7 +477,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
    opac=50
    ```
 
-   ![chlimage_1-505](assets/chlimage_1-503.png)
+   ![chlimage_1-503](assets/chlimage_1-503.png)
 
 ## Editar predefinições de imagens {#modifying-image-presets}
 
