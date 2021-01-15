@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '327'
 ht-degree: 11%
 
 ---
@@ -55,5 +55,5 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
    >
    >Se o ativo *e* a predefinição de imagem ainda não forem publicados, o botão **[!UICONTROL URL]** (ou os botões **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se aplicável) não estarão disponíveis.
    >
-   >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor Dynamic Media S7.
+   >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor Dynamic Media.
 
