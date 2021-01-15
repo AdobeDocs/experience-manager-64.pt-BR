@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
-source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 # Configurar a integração do AEM Assets com Experience Cloud e Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Se você for um cliente da Adobe Experience Cloud, poderá sincronizar seus ativos dentro do Adobe Experience Manager (AEM) Assets com a Adobe Creative Cloud e vice-versa. Você também pode sincronizar seus ativos com o Experience Cloud e vice-versa. Você pode configurar essa sincronização por meio do Adobe I/O.
+Se você for um cliente da Adobe Experience Cloud, poderá sincronizar seus ativos dentro do Adobe Experience Manager (AEM) Assets com a Adobe Creative Cloud e vice-versa. Você também pode sincronizar seus ativos com o Experience Cloud e vice-versa. Você pode configurar essa sincronização por meio de [!DNL Adobe I/O].
 
 O fluxo de trabalho para configurar essa integração é:
 
-1. Crie uma autenticação no Adobe I/O usando um gateway público e obtenha um ID da aplicação.
-1. Crie um perfil em sua instância do AEM Assets usando a ID do aplicativo.
+1. Crie uma autenticação em [!DNL Adobe I/O] usando um gateway público e obtenha um ID da aplicação.
+1. Crie um perfil em sua instância do AEM Assets usando o ID da aplicação.
 1. Use essa configuração para sincronizar seus ativos no AEM Assets com o Creative Cloud.
 
 No backend, o servidor AEM autentica seu perfil com o gateway e sincroniza os dados entre o AEM Assets e o Experience Cloud.
