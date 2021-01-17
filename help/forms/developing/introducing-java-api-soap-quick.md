@@ -1,8 +1,8 @@
 ---
 title: Introdução ao Java API QuickStart
 seo-title: Introdução ao Java API QuickStart
-description: 'null'
-seo-description: nulo
+description: Programas de Start rápido da API Java ajudam você a acelerar o desenvolvimento de programas que interagem com os serviços AEM Forms. Você pode usar os programas de Start rápido da API Java em seu projeto como ponto de partida e personalizá-los.
+seo-description: Programas de Start rápido da API Java ajudam você a acelerar o desenvolvimento de programas que interagem com os serviços AEM Forms. Você pode usar os programas de Start rápido da API Java em seu projeto como ponto de partida e personalizá-los.
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ A listagem de arquivos JAR está localizada em uma seção de comentários local
 
 ## Start Rápido de Vários Serviços {#multiple-services-quick-start}
 
-A maioria dos Start rápidos localizados em *Programação com AEM Forms *Chame um serviço específico para executar uma operação. Entretanto, alguns Start rápidos chamam vários serviços da AEM Forms para executar um determinado fluxo de trabalho. A lista a seguir fornece start rápidos do Java que chamam mais de um serviço AEM Forms:
+A maioria dos Start rápidos localizados em *Programação com AEM Forms* chama um serviço específico para executar uma operação. Entretanto, alguns Start rápidos chamam vários serviços da AEM Forms para executar um determinado fluxo de trabalho. A lista a seguir fornece start rápidos do Java que chamam mais de um serviço AEM Forms:
 
 [Start rápido (modo SOAP): Transmissão de um documento localizado no Repositório AEM Forms para o serviço de Saída usando a API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)  Java (chama o serviço Repositório e Saída)
 
