@@ -1,8 +1,8 @@
 ---
 title: Serviço de criptografia API Java QuickStart (SOAP)
 seo-title: Serviço de criptografia API Java QuickStart (SOAP)
-description: 'null'
-seo-description: nulo
+description: Use a API Java do serviço de criptografia para criptografar um documento PDF, remover a criptografia baseada em senha, criptografar um documento PDF com um certificado, remover a criptografia baseada em certificado, desbloquear um documento PDF criptografado e determinar o tipo de criptografia.
+seo-description: Use a API Java do serviço de criptografia para criptografar um documento PDF, remover a criptografia baseada em senha, criptografar um documento PDF com um certificado, remover a criptografia baseada em certificado, desbloquear um documento PDF criptografado e determinar o tipo de criptografia.
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
