@@ -1,8 +1,8 @@
 ---
 title: AEM aplicativo de desktop para AEM Forms
 seo-title: AEM aplicativo de desktop para AEM Forms
-description: 'null'
-seo-description: nulo
+description: AEM aplicativo desktop permite mapear o repositório do Adobe Experience Manager (AEM) Assets e os arquivos binários do AEM Forms para um diretório de rede no sistema. Saiba mais sobre os ativos compatíveis com AEM aplicativo de desktop e como habilitar o AEM Forms para AEM aplicativo de desktop.
+seo-description: AEM aplicativo desktop permite mapear o repositório do Adobe Experience Manager (AEM) Assets e os arquivos binários do AEM Forms para um diretório de rede no sistema. Saiba mais sobre os ativos compatíveis com AEM aplicativo de desktop e como habilitar o AEM Forms para AEM aplicativo de desktop.
 uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,9 +10,9 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3995381542c86694bad6ff6d3f726b1e24bf7ddc
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
