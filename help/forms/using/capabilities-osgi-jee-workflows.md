@@ -1,17 +1,17 @@
 ---
 title: 'Ações e recursos de Workflows de AEM centrados em forma em workflows OSGi e AEM Forms JEE '
 seo-title: 'Ações e recursos de Workflows de AEM centrados em forma em workflows OSGi e AEM Forms JEE '
-description: 'null'
-seo-description: nulo
+description: Saiba mais sobre as diferenças nas ações compatíveis com AEM Caixa de entrada e Espaço de trabalho HTML, as diferenças nos recursos compatíveis com Workflows AEM centrados em forma nos Workflows OSGi e AEM Forms JEE e as diferenças entre AEM Caixa de entrada e os recursos do aplicativo AEM Forms.
+seo-description: Saiba mais sobre as diferenças nas ações compatíveis com AEM Caixa de entrada e Espaço de trabalho HTML, as diferenças nos recursos compatíveis com Workflows AEM centrados em forma nos Workflows OSGi e AEM Forms JEE e as diferenças entre AEM Caixa de entrada e os recursos do aplicativo AEM Forms.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 20%
+source-wordcount: '931'
+ht-degree: 18%
 
 ---
 
