@@ -1,8 +1,8 @@
 ---
 title: Start rápido JavaAPI (SOAP) do Serviço de segurança do documento
 seo-title: Start rápido JavaAPI (SOAP) do Serviço de segurança do documento
-description: 'null'
-seo-description: nulo
+description: 'Use a API Java do serviço de gerenciamento de direitos para criar uma política, modificar uma política, excluir uma política, aplicar uma política a um documento PDF, remover uma política de um documento PDF, revogar um documento, reinstalar o acesso a um documento revogado, inspecionar documentos PDF protegidos por política, criar uma marca d''água, modificar uma marca d''água, procurar eventos e remover uma política de um documento do Word. '
+seo-description: Use a API Java do serviço de gerenciamento de direitos para criar uma política, modificar uma política, excluir uma política, aplicar uma política a um documento PDF, remover uma política de um documento PDF, revogar um documento, reinstalar o acesso a um documento revogado, inspecionar documentos PDF protegidos por política, criar uma marca d'água, modificar uma marca d'água, procurar eventos e remover uma política de um documento do Word.
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
