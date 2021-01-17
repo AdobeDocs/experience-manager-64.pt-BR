@@ -1,8 +1,8 @@
 ---
 title: Converter o QuickStart (SOAP) da API Java do serviço PDF
 seo-title: Converter o QuickStart (SOAP) da API Java do serviço PDF
-description: 'null'
-seo-description: nulo
+description: Use a API Java do serviço Convert PDF para converter um documento PDF em arquivos PostScript e JPEG.
+seo-description: Use a API Java do serviço Convert PDF para converter um documento PDF em arquivos PostScript e JPEG.
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
