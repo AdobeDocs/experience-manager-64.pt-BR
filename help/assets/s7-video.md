@@ -10,10 +10,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 55%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -137,7 +137,7 @@ A tabela a seguir fornece uma comparação avançada dos recursos suportados ent
 | Abordagem | Abordagem de HTML5 primeiro. O Flash é usado somente para o fallback não-HTML5. | Flash na maioria dos computadores. O HTML5 é usado para dispositivos móveis e tablets. |
 | Entrega | Progressiva | Transmissão adaptável |
 | Acompanhamento | Sim | Sim |
-| Extensibilidade | Sim | Sim (com o SDK do visualizador do Scene7) |
+| Extensibilidade | Sim | Sim (com [Documentação da API do SDK do Visualizador HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Vídeo móvel | Sim | Sim |
 
 ### Configuração  {#setting-up}
