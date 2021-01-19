@@ -1,19 +1,15 @@
 ---
 title: Práticas recomendadas para otimização da qualidade de imagens
-seo-title: Práticas recomendadas para otimização da qualidade de imagens
 description: Saiba mais sobre as práticas recomendadas para otimizar a qualidade da imagem em mídia dinâmica
-seo-description: Saiba mais sobre as práticas recomendadas para otimizar a qualidade da imagem em mídia dinâmica
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -46,9 +42,7 @@ Como prática recomendada para dimensionamento de imagem, use `&wid=<value>&hei=
 
 ## Práticas recomendadas para a nitidez da imagem {#best-practices-for-image-sharpening}
 
-O ajuste da nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site e onde muitos erros são cometidos. Aproveite o tempo para saber mais sobre como a nitidez e a máscara de nitidez funcionam na AEM, consultando os seguintes recursos úteis:
-
-A publicação técnica de práticas recomendadas [Apagar imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/assets/sharpening_images.pdf) também se aplica ao AEM.
+<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
 
 Consulte também [Ajustar a nitidez de uma imagem com uma máscara nítida](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,17 +59,14 @@ Existem dois métodos de nitidez de imagem que você pode usar:
       * **[!UICONTROL radius]** (0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
 
              Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo aumenta a nitidez apenas dos pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
-         * **[!UICONTROL limiar]** (0-255, sensibilidade do efeito.)
+         
+      * **[!UICONTROL limiar]** (0-255, sensibilidade do efeito.)
 
              Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
          
-         Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
+         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+   * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
-         AEM tópico da Ajuda sobre como aumentar a nitidez de uma imagem.
-
-         White paper sobre práticas recomendadas [Como aumentar a nitidez das imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/assets/sharpening_images.pdf).
-
-      * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
 Como prática recomendada, start com o parâmetro de raio de máscara de nitidez. As configurações de Raio que você pode start são as seguintes:
 
