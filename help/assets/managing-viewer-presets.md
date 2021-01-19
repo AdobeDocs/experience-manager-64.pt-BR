@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4248'
 ht-degree: 11%
 
 ---
@@ -23,12 +23,12 @@ ht-degree: 11%
 
 Uma predefinição do visualizador do Dynamic Media é uma coleção de configurações que determinam como os usuários visualizações ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Se você for um administrador, poderá criar Predefinições do visualizador. As configurações estão disponíveis para uma matriz de opções de configuração do visualizador. Por exemplo, você pode alterar o tamanho de exibição ou o comportamento de zoom do visualizador.
 
-Para obter instruções sobre como criar e personalizar suas próprias predefinições do visualizador HTML5, consulte o *Adobe Scene7 HTML5 Viewer SDK*. O SDK está disponível no servidor de publicação IS incorporado ao próprio SDK. Cada versão da biblioteca tem sua própria documentação do SDK incluída.
+Para obter instruções sobre como criar e personalizar suas próprias predefinições do visualizador HTML5, consulte a Adobe Dynamic Media *Documentação da API do Visualizador HTML5*. O SDK está disponível no servidor de publicação IS incorporado ao próprio SDK. Cada versão da biblioteca tem sua própria documentação do SDK incluída.
 
 Caminho: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-Por exemplo, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
+Por exemplo, SDK 3.10: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte também o [Guia de referência de visualizadores do Adobe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consulte também o [Guia de referência de visualizadores do Dynamic Media para Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Esta seção descreve como criar, editar e gerenciar predefinições do visualizador. Você pode aplicar uma predefinição do visualizador a um ativo sempre que o pré-visualização. Consulte [Aplicar predefinições do visualizador](viewer-presets.md).
 
@@ -40,7 +40,7 @@ Esta seção descreve como criar, editar e gerenciar predefinições do visualiz
 
 Todos os visualizadores prontos para uso suportam a acessibilidade do teclado.
 
-Consulte também [Acesso ao teclado e navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
+Consulte também [Acesso ao teclado e navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
 ## Gerenciar predefinições do visualizador do Dynamic Media {#managing-presets}
 
