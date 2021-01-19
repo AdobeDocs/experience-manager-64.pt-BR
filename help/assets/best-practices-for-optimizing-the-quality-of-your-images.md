@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
+source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1463'
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,7 @@ Como prática recomendada para dimensionamento de imagem, use `&wid=<value>&hei=
 
 ## Práticas recomendadas para a nitidez da imagem {#best-practices-for-image-sharpening}
 
-<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
+O ajuste da nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site, e onde muitos erros são cometidos. Aproveite o tempo para saber mais sobre como a nitidez e a máscara de nitidez funcionam em AEM, consultando o guia [Adobe Dynamic Media Classic Image Quality e Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) que também se aplica a AEM.
 
 Consulte também [Ajustar a nitidez de uma imagem com uma máscara nítida](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,7 +64,7 @@ Existem dois métodos de nitidez de imagem que você pode usar:
 
              Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
          
-         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+         Para obter mais informações sobre como você define esses três parâmetros, incluindo práticas recomendadas para usar com o filtro, consulte o guia [Qualidade de imagem clássica do Adobe Dynamic Media Classic e Práticas recomendadas de nitidez](/help/assets/assets/sharpening_images.pdf) (também se aplica ao Dynamic Media no AEM).
    * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
 
