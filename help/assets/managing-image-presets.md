@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
 workflow-type: tm+mt
-source-wordcount: '3841'
+source-wordcount: '3849'
 ht-degree: 8%
 
 ---
@@ -391,7 +391,8 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <li><strong>Aplicar a</strong>  - Determina se a nitidez não se aplica a cada cor ou brilho.</li>
     </ul>
     <div>
-      O ajuste de nitidez é descrito em * Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>.
+      A nitidez está descrita em  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Qualidade de imagem clássica do Adobe Dynamic Media e práticas recomendadas de nitidez</a>.
     </div> </td>
   </tr>
   <tr>
@@ -474,7 +475,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
    opac=50
    ```
 
-   ![chlimage_1-505](assets/chlimage_1-503.png)
+   ![chlimage_1-503](assets/chlimage_1-503.png)
 
 ## Editar predefinições de imagens {#modifying-image-presets}
 
