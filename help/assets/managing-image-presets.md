@@ -1,17 +1,15 @@
 ---
 title: Gerenciamento de predefinições de imagens do Dynamic Media
 description: Entenda as predefinições de imagens do Dynamic Media e saiba como criar, modificar e gerenciar predefinições de imagens
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3850'
+source-wordcount: '3841'
 ht-degree: 8%
 
 ---
@@ -106,31 +104,31 @@ Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!U
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Argumento do processo</strong></td> 
-   <td><strong>Configuração padrão</strong></td> 
-   <td><strong>Descrição</strong></td> 
+   <td><strong>Argumento do processo</strong></td>
+   <td><strong>Configuração padrão</strong></td>
+   <td><strong>Descrição</strong></td>
   </tr> 
   <tr> 
-   <td>Tipos de mime</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>Lista de tipos MIME de documentos considerados documentos PDF ou Illustrator.<br /> </td> 
+   <td>Tipos de mime</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br/> </p> </td>
+   <td>Lista de tipos MIME de documentos considerados documentos PDF ou Illustrator.<br/> </td>
   </tr> 
   <tr> 
-   <td>Largura máxima</td> 
-   <td>2048</td> 
-   <td>Largura máxima da representação de pré-visualização gerada, em pixels.<br /> </td> 
+   <td>Largura máxima</td>
+   <td>2048</td>
+   <td>Largura máxima da representação de pré-visualização gerada, em pixels.<br/> </td>
   </tr> 
   <tr> 
-   <td>Altura máxima</td> 
-   <td>2048</td> 
-   <td>Altura máxima da representação de pré-visualização gerada, em pixels.<br /> </td> 
+   <td>Altura máxima</td>
+   <td>2048</td>
+   <td>Altura máxima da representação de pré-visualização gerada, em pixels.<br/> </td>
   </tr> 
   <tr> 
-   <td>Resolução</td> 
-   <td>72</td> 
-   <td>Resolução para rasterizar a primeira página, em ppi (pixels por polegada).</td> 
-  </tr> 
- </tbody> 
+   <td>Resolução</td>
+   <td>72</td>
+   <td>Resolução para rasterizar a primeira página, em ppi (pixels por polegada).</td>
+  </tr>
+ </tbody>
 </table>
 
 Usando os argumentos de processo padrão, a primeira página de um documento PDF/AI é rasterizada em 72 ppi e a imagem de pré-visualização gerada é dimensionada em 2048 x 2048 pixels. Para uma implantação típica, você pode aumentar a resolução para um mínimo de 150 ppi ou mais. Por exemplo, um documento tamanho carta dos EUA a 300 ppi requer uma largura e altura máximas de 2550 x 3300 pixels, respectivamente.
@@ -158,24 +156,24 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Estender nome do script</strong></td> 
-   <td><strong>Padrão</strong></td> 
-   <td><strong>Descrição</strong></td> 
+   <td><strong>Estender nome do script</strong></td>
+   <td><strong>Padrão</strong></td>
+   <td><strong>Descrição</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>Sim</td> 
-   <td>Gera uma execução de 300 ppi <code>thumbnail.jpg</code> que é otimizada e transformada em uma execução PTIFF pelo componente de processo <code>Dynamic Media Process Image Assets</code>.<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>Sim</td>
+   <td>Gera uma execução de 300 ppi <code>thumbnail.jpg</code> que é otimizada e transformada em uma execução PTIFF pelo componente de processo <code>Dynamic Media Process Image Assets</code>.<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Sim</td> 
-   <td>Gera um subativo JPEG de 300 ppi para cada página. O subativo JPEG é um ativo real armazenado no ativo do InDesign. Ele também é otimizado e transformado em um PTIFF pelo fluxo de trabalho <code>DAM Update Asset</code>.<br /> </td> 
+   <td>Gera um subativo JPEG de 300 ppi para cada página. O subativo JPEG é um ativo real armazenado no ativo do InDesign. Ele também é otimizado e transformado em um PTIFF pelo fluxo de trabalho <code>DAM Update Asset</code>.<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>Não</td> 
-   <td>Gera um subativo PDF para cada página. O subativo PDF é processado conforme descrito anteriormente. Como o PDF contém apenas uma única página, nenhum subativo é gerado.<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>Não</td>
+   <td>Gera um subativo PDF para cada página. O subativo PDF é processado conforme descrito anteriormente. Como o PDF contém apenas uma única página, nenhum subativo é gerado.<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,136 +295,135 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Texto</strong></td> 
-   <td><strong>Descrição</strong></td> 
+   <td><strong>Texto</strong></td>
+   <td><strong>Descrição</strong></td>
   </tr> 
   <tr> 
-   <td><strong>Nome</strong></td> 
-   <td>Digite um nome descritivo sem espaços em branco. Inclua a especificação do tamanho da imagem no nome para ajudar os usuários a identificarem esta predefinição de imagem.</td> 
+   <td><strong>Nome</strong></td>
+   <td>Digite um nome descritivo sem espaços em branco. Inclua a especificação do tamanho da imagem no nome para ajudar os usuários a identificarem esta predefinição de imagem.</td>
+  </tr>
+  <tr> 
+   <td><strong>Largura e altura</strong></td>
+   <td>Insira em pixels o tamanho no qual a imagem é entregue. A largura e a altura devem ser maiores que 0 pixels. Se qualquer um dos valores for 0, nenhuma predefinição será criada. Se ambos os valores estiverem em branco, uma predefinição de imagem responsiva será criada.</td>
   </tr> 
   <tr> 
-   <td><strong>Largura e altura</strong></td> 
-   <td>Insira em pixels o tamanho no qual a imagem é entregue. A largura e a altura devem ser maiores que 0 pixels. Se qualquer um dos valores for 0, nenhuma predefinição será criada. Se ambos os valores estiverem em branco, uma predefinição de imagem responsiva será criada.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Formato</strong></td> 
-   <td><p>Escolha um formato no menu.</p> <p>Escolher <strong>JPEG</strong> oferta as seguintes opções adicionais:</p> 
+   <td><strong>Formato</strong></td>
+   <td><p>Escolha um formato no menu.</p> <p>Escolher <strong>JPEG</strong> oferta as seguintes opções adicionais:</p>
     <ul> 
      <li><strong>Qualidade</strong>  - Controla o nível de compactação JPEG. Essa configuração afeta o tamanho do arquivo e a qualidade da imagem. A escala de qualidade JPEG é 1-100. A escala é visível quando você arrasta o controle deslizante.</li> 
-     <li><strong>Ativar a Redução</strong>  da Crominância JPG - Como o olho é menos sensível às informações de cores de alta frequência do que a luminância de alta frequência, as imagens JPEG dividem as informações da imagem em luminância e componentes de cor. Quando uma imagem JPEG é compactada, o componente de luminância é deixado em resolução completa, enquanto os componentes de cor têm resolução reduzida, fazendo a média em grupos de pixels. A diminuição da resolução reduz o volume de dados em metade ou um terço, com quase nenhum impacto na qualidade percebida. A redução da resolução não se aplica a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).</li> 
+     <li><strong>Ativar a Redução</strong>  da Crominância JPG - Como o olho é menos sensível às informações de cores de alta frequência do que a luminância de alta frequência, as imagens JPEG dividem as informações da imagem em luminância e componentes de cor. Quando uma imagem JPEG é compactada, o componente de luminância é deixado em resolução completa, enquanto os componentes de cor têm resolução reduzida, fazendo a média em grupos de pixels. A diminuição da resolução reduz o volume de dados em metade ou um terço, com quase nenhum impacto na qualidade percebida. A redução da resolução não se aplica a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).</li>
+    </ul>
+    <div>
+      Escolhendo
+     <strong>GIF</strong> ou
+     <strong>O GIF com alfa</strong> fornece estes
+     <strong>Opções de quantificação de cores GIF</strong>:
+    </div>
+    <ul> 
+     <li><strong>Tipo  </strong>- Selecione  <strong>Adaptável</strong>  (o padrão),  <strong>Web</strong> ou  <strong>Macintosh</strong>. Se você selecionar <strong>GIF com Alpha</strong>, a opção Macintosh não estará disponível.</li>
+     <li><strong>Pontilhamento</strong>  - Selecione  <strong></strong> Diferenciar ou  <strong>Desligar</strong>.</li>
+     <li><strong>Número de cores  </strong>- insira um número entre 2 e 256.</li>
+     <li><strong>Lista</strong>  colorida: insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite 000000,888888,ffff.</li>
     </ul> 
     <div>
-      Escolhendo 
-     <strong>GIF</strong> ou 
-     <strong>O GIF com alfa</strong> fornece estes 
-     <strong>Opções de quantificação de cores GIF</strong>: 
-    </div> 
-    <ul> 
-     <li><strong>Tipo  </strong>- Selecione  <strong>Adaptável</strong>  (o padrão),  <strong>Web</strong> ou  <strong>Macintosh</strong>. Se você selecionar <strong>GIF com Alpha</strong>, a opção Macintosh não estará disponível.</li> 
-     <li><strong>Pontilhamento</strong>  - Selecione  <strong></strong> Diferenciar ou  <strong>Desligar</strong>.</li> 
-     <li><strong>Número de cores  </strong>- insira um número entre 2 e 256.</li> 
-     <li><strong>Lista</strong>  colorida: insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite 000000,888888,ffff.</li> 
-    </ul> 
-    <div>
-      Escolhendo 
-     <strong>PDF</strong>, 
-     <strong>TIFF</strong>, ou 
-     <strong>TIFF com alfa</strong> fornece esta opção adicional: 
-    </div> 
-    <ul> 
-     <li><strong>Compactação</strong>  - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; para TIFF são <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e para TIFF com Alpha são <strong>None</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li> 
-    </ul> <p>Escolher <strong>PNG</strong>, <strong>PNG com Alpha,</strong> ou <strong>EPS</strong> não fornece opções adicionais.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Nitidez</strong></td> 
-   <td>Selecione a opção <strong>Ativar a Nitidez Simples</strong> para aplicar um filtro básico de nitidez à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar o desfoque que pode resultar na exibição de uma imagem em um tamanho diferente. </td> 
-  </tr> 
- </tbody> 
+      Escolhendo
+     <strong>PDF</strong>,
+     <strong>TIFF</strong>, ou
+     <strong>TIFF com alfa</strong> fornece esta opção adicional:
+    </div>
+    <ul>
+     <li><strong>Compactação</strong>  - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; para TIFF são <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e para TIFF com Alpha são <strong>None</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li>
+    </ul> <p>Escolher <strong>PNG</strong>, <strong>PNG com Alpha,</strong> ou <strong>EPS</strong> não fornece opções adicionais.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Nitidez</strong></td>
+   <td>Selecione a opção <strong>Ativar a Nitidez Simples</strong> para aplicar um filtro básico de nitidez à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar o desfoque que pode resultar na exibição de uma imagem em um tamanho diferente. </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Opções avançadas de guia {#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Texto</strong></td> 
-   <td><strong>Descrição</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Espaço de cor</strong></td> 
-   <td>Selecione <strong>RGB, CMYK,</strong> ou <strong>Escala de cinza</strong> para o espaço de cor.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Perfil de cor</strong></td> 
-   <td>Selecione o perfil de espaço de cor de saída para o qual o ativo deve ser convertido se for diferente do perfil em funcionamento.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Renderizar recuo</strong></td> 
-   <td>Você pode substituir o propósito de renderização padrão. Os propósitos de renderização determinam o que acontece com as cores que não podem ser reproduzidas no perfil de cores do público alvo (fora do gamut). O propósito de renderização será ignorado se não for compatível com o perfil ICC. 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Texto</strong></td>
+   <td><strong>Descrição</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Espaço de cor</strong></td>
+   <td>Selecione <strong>RGB, CMYK,</strong> ou <strong>Escala de cinza</strong> para o espaço de cor.</td>
+  </tr>
+  <tr>
+   <td><strong>Perfil de cor</strong></td>
+   <td>Selecione o perfil de espaço de cor de saída para o qual o ativo deve ser convertido se for diferente do perfil em funcionamento.</td>
+  </tr>
+  <tr>
+   <td><strong>Renderizar recuo</strong></td>
+   <td>Você pode substituir o propósito de renderização padrão. Os propósitos de renderização determinam o que acontece com as cores que não podem ser reproduzidas no perfil de cores do público alvo (fora do gamut). O propósito de renderização será ignorado se não for compatível com o perfil ICC.
     <ul> 
-     <li>Selecione <strong>Perceptual</strong> para compactar a gama total de um espaço de cor para outro espaço de cor quando uma ou mais cores na imagem original estiverem fora da gama do espaço de cor de destino.</li> 
-     <li>Selecione <strong>Colorimétrico Relativo</strong> quando uma cor no espaço de cores atual estiver fora do gamut no espaço de cores do público alvo e você quiser mapeá-la para a cor mais próxima possível dentro do gamut do espaço de cores do público alvo sem afetar outras cores. </li> 
-     <li>Selecione <strong>Saturação</strong> para reproduzir a saturação de cor da imagem original ao converter no espaço de cor do público alvo. </li> 
-     <li>Selecione <strong>Colorimétrico absoluto</strong> para corresponder as cores exatamente sem nenhum ajuste do ponto branco ou do ponto preto que alteraria o brilho da imagem.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Compensação de pontos pretos</strong></td> 
-   <td>Selecione essa opção se o perfil de saída suportar esse recurso. A compensação do ponto de interrupção será ignorada se não for compatível com o perfil ICC especificado.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Pontilhamento</strong></td> 
-   <td>Selecione essa opção para possivelmente evitar ou reduzir artefatos de faixas de cores. </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Tipo de nitidez</strong></td> 
-   <td><p>Selecione <strong>Nenhum</strong>, <strong>Nitidez</strong> ou <strong>Máscara de Nitidez</strong>. </p> 
+     <li>Selecione <strong>Perceptual</strong> para compactar a gama total de um espaço de cor para outro espaço de cor quando uma ou mais cores na imagem original estiverem fora da gama do espaço de cor de destino.</li>
+     <li>Selecione <strong>Colorimétrico Relativo</strong> quando uma cor no espaço de cores atual estiver fora do gamut no espaço de cores do público alvo e você quiser mapeá-la para a cor mais próxima possível dentro do gamut do espaço de cores do público alvo sem afetar outras cores. </li>
+     <li>Selecione <strong>Saturação</strong> para reproduzir a saturação de cor da imagem original ao converter no espaço de cor do público alvo. </li>
+     <li>Selecione <strong>Colorimétrico absoluto</strong> para corresponder as cores exatamente sem nenhum ajuste do ponto branco ou do ponto preto que alteraria o brilho da imagem.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Compensação de pontos pretos</strong></td>
+   <td>Selecione essa opção se o perfil de saída suportar esse recurso. A compensação do ponto de interrupção será ignorada se não for compatível com o perfil ICC especificado.</td>
+  </tr>
+  <tr>
+   <td><strong>Pontilhamento</strong></td>
+   <td>Selecione essa opção para possivelmente evitar ou reduzir artefatos de faixas de cores. </td>
+  </tr>
+  <tr>
+   <td><strong>Tipo de nitidez</strong></td>
+   <td><p>Selecione <strong>Nenhum</strong>, <strong>Nitidez</strong> ou <strong>Máscara de Nitidez</strong>. </p>
+    <ul>
+     <li>Selecione <strong>Nenhum</strong> para desativar a nitidez.</li>
+     <li>Selecione <strong>Nitidez </strong>para aplicar um filtro básico de nitidez à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar o desfoque que pode resultar na exibição de uma imagem em um tamanho diferente. </li>
+     <li>Selecione<strong> Desmarcar máscara</strong> para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. É possível controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que será ignorado. Esse efeito usa as mesmas opções do filtro "Tirar nitidez da máscara" do Photoshop.</li>
+    </ul> <p>Em <strong>Máscara de nitidez</strong>, você tem as seguintes opções:</p>
     <ul> 
-     <li>Selecione <strong>Nenhum</strong> para desativar a nitidez.</li> 
-     <li>Selecione <strong>Nitidez </strong>para aplicar um filtro básico de nitidez à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar o desfoque que pode resultar na exibição de uma imagem em um tamanho diferente. </li> 
-     <li>Selecione<strong> Desmarcar máscara</strong> para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. É possível controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que será ignorado. Esse efeito usa as mesmas opções do filtro "Tirar nitidez da máscara" do Photoshop.</li> 
-    </ul> <p>Em <strong>Máscara de nitidez</strong>, você tem as seguintes opções:</p> 
-    <ul> 
-     <li><strong>Quantia</strong>  - Controla a quantidade de contraste aplicada aos pixels da borda. O valor padrão do número real é 1,0. Para imagens de alta resolução, é possível aumentá-las para até 5.0. Pense em Amount como uma medida da intensidade do filtro.</li> 
-     <li><strong>Raio</strong>  - Determina o número de pixels em torno dos pixels da borda que afetam a nitidez. Para imagens de alta resolução, digite um número real de 1 a 2. Um valor baixo torna nítido apenas os pixels da borda; um valor alto aumenta a nitidez de uma faixa maior de pixels. O valor correto depende do tamanho da imagem.</li> 
-     <li><strong>Limiar</strong>  - Determina o intervalo de contraste a ser ignorado quando o filtro de máscara de nitidez é aplicado. Em outras palavras, essa opção determina o quão diferentes os pixels com nitidez devem ser da área ao redor antes que sejam considerados pixels de borda e sejam apontados. Para evitar a introdução de ruídos, experimente valores inteiros entre 2 e 20. </li> 
-     <li><strong>Aplicar a</strong>  - Determina se a nitidez não se aplica a cada cor ou brilho.</li> 
-    </ul> 
+     <li><strong>Quantia</strong>  - Controla a quantidade de contraste aplicada aos pixels da borda. O valor padrão do número real é 1,0. Para imagens de alta resolução, é possível aumentá-las para até 5.0. Pense em Amount como uma medida da intensidade do filtro.</li>
+     <li><strong>Raio</strong>  - Determina o número de pixels em torno dos pixels da borda que afetam a nitidez. Para imagens de alta resolução, digite um número real de 1 a 2. Um valor baixo torna nítido apenas os pixels da borda; um valor alto aumenta a nitidez de uma faixa maior de pixels. O valor correto depende do tamanho da imagem.</li>
+     <li><strong>Limiar</strong>  - Determina o intervalo de contraste a ser ignorado quando o filtro de máscara de nitidez é aplicado. Em outras palavras, essa opção determina o quão diferentes os pixels com nitidez devem ser da área ao redor antes que sejam considerados pixels de borda e sejam apontados. Para evitar a introdução de ruídos, experimente valores inteiros entre 2 e 20. </li>
+     <li><strong>Aplicar a</strong>  - Determina se a nitidez não se aplica a cada cor ou brilho.</li>
+    </ul>
     <div>
-      A nitidez está descrita em 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Apagar imagens</a>. 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modo de nova amostra</strong></td> 
-   <td>Selecione uma opção <strong>Modo de reamostragem</strong>. Essas opções tornam a imagem nítida quando tem resolução reduzida: 
-    <ul> 
-     <li><strong>Bi-Linear</strong>  - o método de reamostragem mais rápido. Alguns artefatos de aliasing são perceptíveis.</li> 
-     <li><strong>Bi-Cubic</strong>  - aumenta o uso da CPU, mas produz imagens mais nítidas com artefatos de aliasing menos visíveis.</li> 
-     <li><strong>Sharp2</strong> - Pode produzir resultados ligeiramente mais nítidos que o Bi-Cubic, mas a um custo de CPU ainda maior.</li> 
-     <li><strong>Bi-Sharp</strong>  - Seleciona o resamplador padrão Photoshop para reduzir o tamanho da imagem, que é chamado de  <strong>Sharperin </strong> bicúbicono Adobe Photoshop.</li> 
-     <li><strong>Cada </strong> cor e  <strong>brilho</strong>  - cada método pode ser baseado na cor ou no brilho. Por padrão, <strong>Cada Cor</strong> está selecionado.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Resolução de impressão</strong></td> 
-   <td>Selecione uma resolução para imprimir esta imagem; 72 pixels é o padrão.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modificador de imagem</strong></td> 
-   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, a Dynamic Media oferece suporte a inúmeras modificações avançadas de imagem que você pode especificar no campo <strong>Modificadores de imagem</strong>. Esses parâmetros são definidos na <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">referência de comando do Image Server Protocol</a>.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p> 
-    <ul> 
-     <li>Comandos básicos de formatação e renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li> 
-     <li>Comandos de localização: <code>locale=</code> e <code>req=xlate</code></li> 
-     <li><code>req=set</code> não está disponível para uso geral.</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>Serviços Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      O ajuste de nitidez é descrito em * Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>.
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>Modo de nova amostra</strong></td>
+   <td>Selecione uma opção <strong>Modo de reamostragem</strong>. Essas opções tornam a imagem nítida quando tem resolução reduzida:
+    <ul>
+     <li><strong>Bi-Linear</strong>  - o método de reamostragem mais rápido. Alguns artefatos de aliasing são perceptíveis.</li>
+     <li><strong>Bi-Cubic</strong>  - aumenta o uso da CPU, mas produz imagens mais nítidas com artefatos de aliasing menos visíveis.</li>
+     <li><strong>Sharp2</strong> - Pode produzir resultados ligeiramente mais nítidos que o Bi-Cubic, mas a um custo de CPU ainda maior.</li>
+     <li><strong>Bi-Sharp</strong>  - Seleciona o resamplador padrão Photoshop para reduzir o tamanho da imagem, que é chamado de  <strong>Sharperin </strong> bicúbicono Adobe Photoshop.</li>
+     <li><strong>Cada </strong> cor e  <strong>brilho</strong>  - cada método pode ser baseado na cor ou no brilho. Por padrão, <strong>Cada Cor</strong> está selecionado.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Resolução de impressão</strong></td>
+   <td>Selecione uma resolução para imprimir esta imagem; 72 pixels é o padrão.</td>
+  </tr>
+  <tr>
+   <td><strong>Modificador de imagem</strong></td>
+   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, a Dynamic Media oferece suporte a inúmeras modificações avançadas de imagem que você pode especificar no campo <strong>Modificadores de imagem</strong>. Esses parâmetros são definidos na <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">referência de comando do Image Server Protocol</a>.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
+    <ul>
+     <li>Comandos básicos de formatação e renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
+     <li>Comandos de localização: <code>locale=</code> e <code>req=xlate</code></li>
+     <li><code>req=set</code> não está disponível para uso geral.</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>Serviços Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Definindo opções de predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
@@ -477,7 +474,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
    opac=50
    ```
 
-   ![chlimage_1-503](assets/chlimage_1-503.png)
+   ![chlimage_1-505](assets/chlimage_1-503.png)
 
 ## Editar predefinições de imagens {#modifying-image-presets}
 
@@ -504,13 +501,10 @@ Se você estiver executando o Dynamic Media - modo Scene7, as predefinições de
 1. Selecione a predefinição de imagem ou várias predefinições de imagem na lista das predefinições de imagem e toque em **[!UICONTROL Publicar]**.
 1. Depois que a predefinição de imagem é publicada, o status muda de não publicado para publicado.
 
-   ![chlimage_1-505](assets/chlimage_1-505.png)
+   ![chlimage_1-503](assets/chlimage_1-505.png)
 
 ## Excluindo predefinições de imagens do Dynamic Media {#deleting-image-presets}
-
-**Para excluir predefinições** de imagens do Dynamic Media:
 
 1. Em AEM, toque no logotipo AEM para acessar o console de navegação global.
 1. Toque no ícone **[!UICONTROL Ferramentas]** e navegue até **[!UICONTROL Ativos > Predefinições de imagem]**.
 1. Selecione uma predefinição e toque em **[!UICONTROL Excluir]**. A Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Delete]**.
-
