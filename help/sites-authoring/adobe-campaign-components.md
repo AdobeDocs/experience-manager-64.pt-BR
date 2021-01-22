@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 73%
 
 ---
@@ -31,7 +31,7 @@ Ao abrir um informativo/email configurado para integração com o Adobe Campaign
 * Cabeçalho (Campaign)
 * Imagem (Campaign)
 * Link (Campaign)
-* Modelo de imagem do Scene7 (Campaign)
+* Modelo de imagem Dynamic Media (Campanha)
 * Referência direcionada (Campaign)
 * Texto e imagem (Campaign)
 * Texto e personalização (Campaign)
@@ -40,7 +40,7 @@ Uma descrição desses componentes encontra-se na seção a seguir.
 
 Os componentes aparecem da seguinte maneira:
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### Cabeçalho (Campaign) {#heading-campaign}
 
@@ -142,7 +142,7 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
 O exemplo a seguir mostra um componente Imagem (Campaign) sendo exibido.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 ### Link (Campaign) {#link-campaign}
 
@@ -181,13 +181,13 @@ O exemplo a seguir mostra um componente Link (Campaign) sendo exibido.
 
 [Os ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Modelos de imagem Scene7 são em camadas de arquivos de imagem, onde o conteúdo e as propriedades podem ser parametrizados para a variabilidade. O componente **Modelo de imagem** permite usar modelos do Scene7 em informativos e alterar os valores dos parâmetros de modelo. Além disso, você pode usar variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 Clique em **Editar** para configurar o componente. Você pode definir as configurações descritas nesta seção. Este modelo de Imagem do Scene7 é descrito detalhadamente em [componente de Modelo de Imagem do Scene7](/help/assets/scene7.md#image-template).
 
 Além disso, o painel de parâmetros lista todos os parâmetros de modelo que foram definidos para o modelo no Scene7. Para cada um desses parâmetros, você pode adaptar o valor, inserir variáveis ou redefini-las para seus valores padrão.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Referência direcionada (Campaign) {#targeted-reference-campaign}
 
@@ -266,7 +266,7 @@ O componente Texto e personalização (Campanha) permite que você insira um blo
 
 A seleção de ícones permite que você formate o texto, incluindo características de fontes, alinhamento, links, listas e recuo. A funcionalidade é basicamente a mesma em [ambas as interfaces](/help/sites-authoring/editing-content.md), embora a aparência seja diferente:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 No editor local, você pode adicionar texto, alterar a justificação, adicionar e remover links, adicionar campos de contexto ou blocos de personalização e entrar no modo de tela inteira. Quando terminar de adicionar texto/personalização, clique na marca de seleção para salvar suas alterações (ou clique no X para cancelar). Consulte [Edição no local](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para obter mais informações.
 
