@@ -4,9 +4,9 @@ description: Notas de versão específicas dos Pacotes de correção cumulativos
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4217'
+source-wordcount: '4219'
 ht-degree: 11%
 
 ---
@@ -65,7 +65,7 @@ O Adobe Experience Manager 6.4.8.3 fornece correções para os seguintes problem
 
 * Nas configurações da predefinição de imagem, quando a opção [!UICONTROL Ativar a redução da resolução do crominância JPG] estiver desmarcada em [!DNL Experience Manager], a alteração não será sincronizada com [!DNL Dynamic Media] (NPR-34284).
 * No [!UICONTROL Editor de predefinições do visualizador], ao editar a predefinição [!UICONTROL PanorâmicaImage/PanorâmicaImage_VR], no componente `PanoramicView`, a etiqueta do modificador `PANORAMICVIEW_AUTOROTATE` não está disponível (CQ-4302043).
-* Desfazer a publicação de um vídeo de [!DNL Experience Manager] não cancela a publicação do Conjunto de vídeos adaptativos no Scene7 configurado. (CQ-4304405).
+* Desfazer a publicação de um vídeo de [!DNL Experience Manager] não cancela a publicação do Conjunto de vídeos adaptáveis no Dynamic Media Classic configurado. (CQ-4304405).
 
 ### Plataforma {#platform-6483}
 
@@ -187,7 +187,7 @@ O Adobe Experience Manager 6.4.8.2 fornece correções para os seguintes problem
 
 * A funcionalidade Recorte inteligente falha com erro quando o perfil de imagem é adicionado a uma pasta com várias (por exemplo, 11) proporções (NPR-34083).
 
-* As alterações nas predefinições de imagens em [!UICONTROL Adobe Experience Manager] não são sincronizadas com o Scene7 Publishing System (NPR-34284, CQ-4299713).
+* As alterações nas predefinições de imagens em [!UICONTROL Adobe Experience Manager] não são sincronizadas com o Dynamic Media Classic (NPR-34284, CQ-4299713).
 
 * O rótulo do modificador [!UICONTROL PANORAMICVIEW_AUTOROTATE] está ausente na guia [!UICONTROL Comportamento] na página [!UICONTROL Editor de predefinições do visualizador] (CQ-4302043).
 
