@@ -1,18 +1,14 @@
 ---
 title: Configuração de formulários de pesquisa
-seo-title: Configuração de formulários de pesquisa
 description: Saiba como configurar o Search Forms.
-seo-description: Saiba como configurar o Search Forms.
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2062'
 ht-degree: 12%
 
 ---
@@ -64,9 +60,9 @@ As configurações padrão disponíveis são:
 
    Essa configuração define as opções disponíveis ao procurar produtos no navegador de ativos (ao editar uma página).
 
-* **Editor de páginas (pesquisa do Scene7)**:
+* **Editor de páginas (Dynamic Media Classic  [antigo Scene7] search)**:
 
-   Essa configuração define as opções disponíveis ao pesquisar recursos do Scene7 no navegador de ativos (ao editar uma página).
+   Essa configuração define as opções disponíveis ao pesquisar recursos do Dynamic Media Classic no navegador de ativos (ao editar uma página).
 
 * **Trilho de pesquisa do administrador de sites**:
 
