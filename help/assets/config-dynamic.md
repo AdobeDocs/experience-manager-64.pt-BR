@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '7833'
+source-wordcount: '7831'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Você pode optar por implementar o Dynamic Media somente para geração de image
 
 Ao habilitar o Dynamic Media, os recursos de mídia dinâmica estarão disponíveis na interface do usuário e todos os ativos de imagem carregados receberão uma representação `cqdam.pyramid.tiff` que é usada para o delivery rápido de representações de imagem dinâmicas. Esses PTIFFs têm vantagens significativas, incluindo (1) a capacidade de gerenciar apenas uma única imagem principal e gerar representações infinitas dinamicamente sem nenhum armazenamento adicional e (2) a capacidade de usar visualização interativa, como zoom, panorama, rotação e assim por diante.
 
-Se você quiser usar o Dynamic Media Classic (Scene7) no AEM, não ative o Dynamic Media a menos que esteja usando um [cenário específico](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). O Dynamic Media é desativado a menos que você ative a mídia dinâmica por meio do modo de execução.
+Se você quiser usar o Dynamic Media Classic no AEM, não ative o Dynamic Media, a menos que esteja usando um [cenário específico](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). O Dynamic Media é desativado a menos que você ative o Dynamic Media por meio do modo de execução.
 
 Para habilitar a mídia dinâmica, você deve habilitar o modo de execução de mídia dinâmica na linha de comando ou a partir do nome do arquivo de início rápido.
 
@@ -676,7 +676,7 @@ Se você estiver usando o Dynamic Media para 1) geração de imagens na produç�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Integração com o Dynamic Media Classic (Scene7)</td> 
+   <td>Integração com o Dynamic Media Classic</td> 
    <td><p>filtro-imagens</p> <p>conjuntos de filtros</p> <p>filter-video</p> </td> 
    <td><p>Start com <strong>image/</strong></p> <p>Contém <strong>application/</strong> e termina com <strong>set</strong>.</p> <p>Start com <strong>video/</strong></p> </td> 
    <td><p>Você configura o URI de transporte para apontar para o servidor de publicação AEM em vez do URL do serviço de replicação da Dynamic Media Cloud. A configuração desse filtro permitirá que o Dynamic Media Classic entregue ativos em vez da instância de publicação AEM.</p> <p>Os "filtros-imagens" prontos para uso, "filtros-conjuntos" e "filtro-vídeo" irão:</p> 
