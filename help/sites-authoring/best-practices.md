@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
-source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 89%
+source-wordcount: '300'
+ht-degree: 78%
 
 ---
 
@@ -55,7 +55,7 @@ As práticas recomendadas referentes ao Assets, incluindo o recurso de mídia di
   <tr>
    <td>Imagem dinâmica</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Práticas recomendadas de imagem dinâmica</a></td> 
-   <td><p>Descreve como ajustar a nitidez de uma imagem para obter os melhores resultados e a melhor maneira de otimizar a qualidade das imagens quando você estiver usando a funcionalidade Dynamic Media ou estiver integrando com o Scene7. </p> </td> 
+   <td><p>Descreve como aumentar a nitidez de uma imagem para obter melhores resultados e a melhor maneira de otimizar a qualidade de suas imagens se você estiver usando a funcionalidade do Dynamic Media ou estiver fazendo uma integração com o Dynamic Media.</p> </td> 
   </tr>
   <tr>
    <td>Ativos multilíngues</td> 
