@@ -1,18 +1,14 @@
 ---
 title: Perfis para processamento de metadados, imagens e vídeos
-seo-title: Perfis para processamento de metadados, imagens e vídeos
 description: Um perfil de um conjunto de regras sobre as opções a serem aplicadas aos ativos carregados em uma pasta. Especifique o perfil de metadados e o perfil de codificação de vídeo a serem aplicados aos ativos de vídeo que você carrega. Para ativos de imagem, também é possível especificar qual perfil de imagem aplicar aos ativos de imagem para que eles sejam cortados corretamente.
-seo-description: Um perfil de um conjunto de regras sobre as opções a serem aplicadas aos ativos carregados em uma pasta. Especifique o perfil de metadados e o perfil de codificação de vídeo a serem aplicados aos ativos de vídeo que você carrega. Para ativos de imagem, também é possível especificar qual perfil de imagem aplicar aos ativos de imagem para que eles sejam cortados corretamente.
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -106,7 +102,7 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
 
    ![Componente Scene7 Batch Upload](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Na caixa de diálogo **[!UICONTROL Carregamento em lote para o Scene7—Step Properties]**, defina o seguinte:
+1. Na caixa de diálogo **[!UICONTROL Carregamento em lote para propriedades da etapa Scene7]**, defina o seguinte:
    * Nos campos de texto **[!UICONTROL Título]** e **[!UICONTROL Descrição]**, digite um novo título e descrição para o trabalho, se desejado.
    * Selecione **[!UICONTROL Handler Advance]** se o seu manipulador avançar para a próxima etapa.
    * No campo **[!UICONTROL Tempo limite]**, digite o tempo limite do processo externo (segundos).
@@ -116,7 +112,7 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
 
    ![Caixa de diálogo Propriedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregamento em lote para Scene7 - Propriedades da etapa]**, toque em **[!UICONTROL Concluído]**.
+1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregar em lote para propriedades da etapa Scene7]**, toque em **[!UICONTROL Concluído]**.
 
 1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho do Assets, toque em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado e pronto para reprocessar o ativo em uma pasta.
 
