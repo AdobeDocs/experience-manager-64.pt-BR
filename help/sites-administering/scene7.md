@@ -1,26 +1,22 @@
 ---
-title: Integração com o Dynamic Media Classic (Scene7)
-seo-title: Integração com o Dynamic Media Classic (Scene7)
+title: Integração com o Dynamic Media Classic
 description: Saiba como integrar AEM com o Dynamic Media Classic.
-seo-description: Saiba como integrar AEM com o Dynamic Media Classic.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5491'
+source-wordcount: '5456'
 ht-degree: 1%
 
 ---
 
 
-# Integração com o Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Integração com o Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[O Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classic é uma solução hospedada para gerenciar, aprimorar, publicar e fornecer ativos de mídia avançada para Web, dispositivos móveis, email e telas e impressão conectadas à Internet.
+O Adobe Dynamic Media Classic é uma solução hospedada para gerenciar, aprimorar, publicar e fornecer ativos de mídia avançada para Web, dispositivos móveis, email e telas e impressão conectadas à Internet.
 
 Para usar o Dynamic Media Classic, é necessário configurar a configuração de nuvem para que o Dynamic Media Classic e o AEM Assets possam interagir entre si. Este documento descreve como configurar o AEM e o Dynamic Media Classic.
 
@@ -363,7 +359,7 @@ Para ativá-lo:
 
 ### Adicionando tempo limite configurável ao fluxo de trabalho do Dynamic Media Classic Upload {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Quando uma instância AEM é configurada para lidar com a codificação de vídeo por meio do Dynamic Media Classic (Scene7), por padrão, há um tempo limite de 35 minutos em qualquer trabalho de upload. Para acomodar trabalhos de codificação de vídeo potencialmente mais longos, é possível configurar esta configuração:
+Quando uma instância AEM é configurada para lidar com a codificação de vídeo pelo Dynamic Media Classic, por padrão, há um tempo limite de 35 minutos em qualquer tarefa de upload. Para acomodar trabalhos de codificação de vídeo potencialmente mais longos, é possível configurar esta configuração:
 
 1. Navegue até **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
