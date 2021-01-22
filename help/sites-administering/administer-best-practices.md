@@ -1,18 +1,14 @@
 ---
 title: 'Práticas recomendadas    '
-seo-title: 'Práticas recomendadas    '
-description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia de Adobe e consultoria para ajudar os administradores a se estabelecerem e funcionarem.
-seo-description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia de Adobe e consultoria para ajudar os administradores a se estabelecerem e funcionarem.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: Saiba mais sobre as práticas recomendadas da Adobe Experience Manager compiladas pelas equipes de engenharia e consultoria de Adobe para ajudar os administradores a se estabelecerem e funcionarem.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '537'
 ht-degree: 13%
 
 ---
@@ -52,8 +48,8 @@ As práticas recomendadas sobre o Assets, incluindo o recurso Dynamic Media e a 
    <td>Muitos perfis de processamento são pastas baseadas em vídeo, metadados e processamento de imagem sempre são aplicados a pastas. Este documento de práticas recomendadas descreve como definir e configurar sua hierarquia de pastas, uma vez que a hierarquia tem um impacto significativo no modo como o conteúdo é processado. </td> 
   </tr>
   <tr>
-   <td>Integração entre Scene7 e AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Práticas recomendadas para a integração da Scene7 com a AEM</a></td> 
+   <td>Integração do Dynamic Media Classic e AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Práticas recomendadas para a integração do Dynamic Media Classic com o AEM</a></td> 
    <td><p>Descreve quando ativar o importador de pesquisas, como testar sua integração e quando usar o navegador de conteúdo em vez de um upload direto para os Ativos.</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ As práticas recomendadas sobre o Assets, incluindo o recurso Dynamic Media e a 
    <td>Como parte da documentação sobre <a href="/help/assets/managing-image-presets.md">Gerenciar predefinições de imagens</a>, esses tópicos descrevem quais são as predefinições de imagens e as práticas recomendadas para selecionar as opções predefinidas de imagens.</td> 
   </tr>
   <tr>
-   <td>Dynamic Media versus integração direta com Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integração Scene7/AEM versus Dynamic Media</a></td> 
+   <td>Dynamic Media versus integração direta com o Dynamic Media Classic</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integração Dynamic Media Classic/AEM versus Dynamic Media</a></td> 
    <td>Descreve quando é melhor usar a solução Dynamic Media, quando integrar o S7 ao AEM ou quando usar ambos.</td> 
   </tr>
  </tbody>
