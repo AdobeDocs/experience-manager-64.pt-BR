@@ -1,18 +1,14 @@
 ---
 title: Conjuntos de rotação
-seo-title: Conjuntos de rotação
-description: Saiba como trabalhar com conjuntos de rotação em mídia dinâmica
-seo-description: Saiba como trabalhar com conjuntos de rotação em mídia dinâmica
-uuid: a80a0491-6500-463a-83c4-ff4b90a88182
+description: Saiba como trabalhar com Conjuntos de rotação no Dynamic Media. Um Conjunto de rotação simula o ato real de girar um objeto para examiná-lo a partir de qualquer ângulo.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1843'
 ht-degree: 6%
 
 ---
