@@ -3,9 +3,9 @@ title: Migrar ativos para o Adobe Experience Manager Assets em massa
 description: Como trazer ativos para AEM, aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ Quando os ativos não são transmitidos através de uma rede, o desempenho geral
 
 ### Processar representações {#process-renditions}
 
-Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo do DAM para extrair metadados e gerar execuções. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo de atualização do DAM para atender às suas necessidades. Algumas etapas no fluxo de trabalho padrão podem não ser necessárias para você, como a geração do Scene7 PTIFF ou a integração do servidor do InDesign.
+Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo do DAM para extrair metadados e gerar execuções. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo de atualização do DAM para atender às suas necessidades. Algumas etapas no fluxo de trabalho padrão podem não ser necessárias para você, como a geração do Dynamic Media Classic PTIFF ou a integração do servidor do InDesign.
 
 Depois de configurar o fluxo de trabalho de acordo com suas necessidades, você tem duas opções para executá-lo:
 
