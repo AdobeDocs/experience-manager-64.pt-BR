@@ -1,18 +1,14 @@
 ---
 title: Uso de conjuntos de regras para transformar URLs
-seo-title: Uso de conjuntos de regras para transformar URLs
 description: 'Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. '
-seo-description: 'Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. '
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -25,11 +21,11 @@ Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs.
 * Adicionando um sufixo de tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` a um URL.
 * Criando um caminho de pasta para o URL para fins de SEO (Search Engine Otimization).
 
-   Consulte [Como o Adobe Scene7 Publishing System suporta SEO](/help/assets/assets/s7_seo.pdf).
+   Consulte [Como o Adobe Dynamic Media Classic suporta SEO](/help/assets/assets/s7_seo.pdf).
 
 * Adicionar metadados ao URL para fins de SEO (Search Engine Otimization).
 
-   Consulte [Como o Adobe Scene7 Publishing System suporta SEO](/help/assets/assets/s7_seo.pdf).
+   Consulte [Como o Adobe Dynamic Media Classic suporta SEO](/help/assets/assets/s7_seo.pdf).
 
 * Definir a disposição do conteúdo para acionar um download.
 * Simplificar o serviço de imagens modelando URLs para personalização. Por exemplo, transforme `rgb{XX,YY,ZZ}` em RTF-ready `\redXX\greenYY\blueZZ`
@@ -53,19 +49,19 @@ Consulte também [Resolução de problemas de conjuntos de regras](https://helpx
 Além disso, primeiro teste seu conjunto de regras em um ambiente temporário que não afete seu ambiente de produção em tempo real.\
 Ambientes de produção e ambientes de preparo geralmente exigem logons diferentes.
 
-* **Página de logon do** ambiente de preparo para NA:  [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Página de logon do** ambiente de preparo EMEA:  [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **Página de logon do** ambiente de preparo JAPAC:  [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Consulte o aplicativo de desktop Dynamic Media Classic [Adobe para obter informações de logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um conjunto de regras](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
 **Para implantar conjuntos de regras XML:**
 
-1. Faça logon em sua conta do Dynamic Media Classic:
+1. Faça logon no [aplicativo de desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
 
 1. Carregue seu arquivo de conjunto de regras fazendo o seguinte:
 
