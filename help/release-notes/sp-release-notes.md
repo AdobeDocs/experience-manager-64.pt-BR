@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '21618'
+source-wordcount: '21617'
 ht-degree: 24%
 
 ---
@@ -71,7 +71,7 @@ Alguns destaques principais desta versão do Service pack:
 
 ### Assets {#assets}
 
-* Uma pasta sem nome é criada no SPS (Scene7 Publishing System) ao mover um ativo de uma pasta para outra no Experience Manager com a configuração Dynamic Media Scene7 (NPR-32440).
+* Uma pasta sem nome é criada no Dynamic Media Classic ao mover um ativo de uma pasta para outra no Experience Manager com a configuração do Dynamic Media Classic (NPR-32440).
 
 * A página de detalhes de ativos de arquivos PDF não mostra os botões de ação no Experience Manager em execução no modo Dynamic Media Scene7 (NPR-32316).
 
