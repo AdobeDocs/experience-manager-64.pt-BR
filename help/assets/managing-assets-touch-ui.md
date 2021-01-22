@@ -4,9 +4,9 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c86c84efeb25673490373273a9f4720381e46454
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10031'
+source-wordcount: '10030'
 ht-degree: 2%
 
 ---
@@ -161,7 +161,7 @@ A Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 
    >[!NOTE]
    >
-   >Quando você carrega ativos por meio do FTP, as opções de trabalho de upload definidas no Dynamic Media Classic (Scene7) têm prioridade sobre os parâmetros de processamento de ativos definidos no AEM.
+   >Quando você carrega ativos por meio do FTP, as opções de trabalho de upload definidas no Dynamic Media Classic têm prioridade aos parâmetros de processamento de ativos definidos no AEM.
 
 1. No canto inferior direito da caixa de diálogo **[!UICONTROL Carregar opções de trabalho]**, toque em **[!UICONTROL Salvar]**.
 1. No canto inferior direito da página **[!UICONTROL Carregar]**, toque em **[!UICONTROL Enviar carregamento]**.
@@ -584,7 +584,7 @@ Para obter mais informações específicas ao Dynamic Media, consulte [Publicar 
 1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas ou não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. Toque em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
