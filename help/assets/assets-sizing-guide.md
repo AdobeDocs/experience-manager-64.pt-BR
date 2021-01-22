@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Considerando esses fatores, você precisa de uma metodologia para calcular um es
 1. Determine o tamanho e o número de ativos que serão carregados no sistema.
 1. Obtenha uma amostra representativa dos ativos a serem carregados no AEM. Por exemplo, se você planeja carregar arquivos PSD, JPG, AI e PDF no sistema, é necessário várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades das imagens.
 1. Defina as representações a serem usadas.
-1. Crie as execuções no AEM usando os aplicativos ImageMagick ou Adobe. Além das representações que os usuários especificam, crie execuções prontas para uso. Para usuários que implementam o Scene7, você pode usar o binário IC para gerar as execuções PTIFF a serem armazenadas no AEM.
+1. Crie as execuções no AEM usando os aplicativos ImageMagick ou Adobe. Além das representações que os usuários especificam, crie execuções prontas para uso. Para usuários que implementam o Dynamic Media Classic, você pode usar o binário IC para gerar as execuções PTIFF a serem armazenadas no AEM.
 1. Se você planeja usar subativos, gere-os para os tipos de arquivo apropriados. Consulte a documentação on-line sobre como gerar páginas de subativos de arquivos de InDesign ou arquivos PNG/PDF de camadas do Illustrator.
 1. Compare o tamanho das imagens de saída, representações e subativos com as imagens originais. Ele permite gerar um fator de crescimento esperado quando o sistema é carregado. Por exemplo, se você gerar representações e subativos com um tamanho combinado de 3 GB após o processamento de 1 GB de ativos, o fator de crescimento da representação será 3.
 1. Determine o tempo máximo durante o qual as versões de ativos devem ser mantidas no sistema.
