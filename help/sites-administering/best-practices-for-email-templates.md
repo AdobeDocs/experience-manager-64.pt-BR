@@ -1,18 +1,14 @@
 ---
 title: Práticas recomendadas para modelos de e-mail
-seo-title: Práticas recomendadas para modelos de e-mail
-description: Encontre as práticas recomendadas para a criação de modelos de e-mail no AEM.
-seo-description: Encontre as práticas recomendadas para a criação de modelos de e-mail no AEM.
-uuid: 714090bd-a742-4004-a968-aebd8fd03e04
+description: Encontre as práticas recomendadas sobre o design de e-mail que resulta em um template de campanha de e-mail bem desenvolvido no Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
-discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1053'
 ht-degree: 1%
 
 ---
@@ -150,7 +146,7 @@ Atualmente, há [sete componentes disponíveis para uso em templates de campanha
 | Texto e personalização | /libs/mcm/campanha/componentes/personalização |
 | Textimage | /libs/mcm/campanha/componentes/textimage |
 | Link | /libs/mcm/campanha/componentes/referência |
-| Modelo de imagem do Scene7 | /libs/mcm/campanha/s7image |
+| Modelo de imagem Dynamic Media Classic (antigo Scene7) | /libs/mcm/campanha/s7image |
 | Referência direcionada | /libs/mcm/campanha/componentes/referência |
 
 >[!NOTE]
