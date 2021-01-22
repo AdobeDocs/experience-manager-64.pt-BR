@@ -4,9 +4,9 @@ description: Saiba mais sobre várias tarefas de gerenciamento e edição de ati
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '10030'
+source-wordcount: '10039'
 ht-degree: 2%
 
 ---
@@ -151,8 +151,8 @@ A Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 **Para fazer upload de ativos usando FTP**
 
 1. Usando sua escolha de cliente FTP, faça logon no servidor FTP usando o nome de usuário e a senha FTP recebidos do email de provisionamento. No cliente FTP, carregue arquivos ou pastas no servidor FTP.
-1. [Faça logon no Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicusando as credenciais recebidas do email de provisionamento. Na barra de navegação global, toque em **[!UICONTROL Carregar]**.
-
+1. Abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon na sua conta usando as credenciais recebidas do email de provisionamento.
+1. Na barra de navegação global, toque em **[!UICONTROL Carregar]**.
 1. Na página **[!UICONTROL Carregar]**, perto do canto superior esquerdo, toque na guia **[!UICONTROL Via FTP]**.
 1. No lado esquerdo da página, escolha uma pasta FTP da qual fazer upload de arquivos; no lado direito da página, escolha uma pasta de destino.
 1. Perto do canto inferior direito da página, toque em **[!UICONTROL Opções de trabalho]** e defina as opções desejadas com base nos ativos na pasta selecionada.
@@ -584,7 +584,7 @@ Para obter mais informações específicas ao Dynamic Media, consulte [Publicar 
 1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas ou não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Toque em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
