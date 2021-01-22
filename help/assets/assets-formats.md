@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados no AEM Assets
 description: Lista de formatos de arquivos e tipos MIME suportados pela AEM Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1708'
 ht-degree: 9%
 
 ---
@@ -147,7 +147,7 @@ Os formatos de documento suportados para os recursos do Dynamic Media são os se
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Satélite | Satélite | Satélite | Satélite | Satélite |
 | HTML |  |  |  |  |  |
-| TTF |  |  |  |  |  |
+| RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -307,6 +307,6 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/glo
 
 >[!MORELIKETHIS]
 >
->* [Habilite o suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) ao parâmetro de trabalho de upload de ativos/Scene7 baseados em tipos MIME.
+>* [Habilite o suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) ao parâmetro de trabalho de upload do tipo MIME Assets/Dynamic Media Classic.
 >* [Configure o tipo de MIME baseado no suporte](config-dynamic.md) de parâmetros de trabalho de upload.
 
