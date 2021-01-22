@@ -7,9 +7,9 @@ user-guide-title: Guia do usuário de administração do AEM 6.4
 breadcrumb-title: Guia de administração
 user-guide-description: Saiba mais sobre como administrar o AEM.
 translation-type: tm+mt
-source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 17%
 
 ---
@@ -135,7 +135,7 @@ ht-degree: 17%
    + [Integração com o Gerenciamento dinâmico de tags do Adobe](dtm.md)
    + [Optar pelo Adobe Analytics e Adobe Target](opt-in.md)
    + [Portais e portlets AEM](aem-as-portal.md)
-   + [Integração com o Dynamic Media Classic (Scene7)](scene7.md)
+   + [Integração com o Dynamic Media Classic](scene7.md)
    + [Receitas AEM Livefyre](aem-livefyre-recipes.md)
    + [Solução de problemas de integração](troubleshooting-integration-issues.md)
    + [Integração com o BrightEdge Content Otimizer](brightedge.md)
