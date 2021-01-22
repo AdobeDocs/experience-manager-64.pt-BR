@@ -7,9 +7,9 @@ user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '723'
 ht-degree: 46%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 46%
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adicionar recursos do Scene7 à sua página](scene7.md)
+   + [Adicionar recursos do Dynamic Media Classic à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entrega de ativos de mídia dinâmica](delivering-dynamic-media-assets.md)
    + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
