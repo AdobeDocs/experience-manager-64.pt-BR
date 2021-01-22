@@ -7,10 +7,10 @@ user-guide-title: Guia do usuário de criação da interface clássica AEM 6.4
 breadcrumb-title: Guia de criação da interface clássica
 user-guide-description: Este guia aborda os conceitos de criação em AEM na interface clássica do usuário.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 85%
+source-wordcount: '319'
+ht-degree: 83%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 85%
    + [Entrega de ativos de Mídia dinâmica](dynamic-media-assets-delivering.md)
    + [Configuração de um estágio padrão com o Autodesk Maya e o Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Adição de ativos de Mídia dinâmica a páginas](dynamic-media-assets-adding-to-page.md)
-   + [Adicionar recursos do Scene7 à sua página](manage-assets-classic-s7.md)
+   + [Adicionar recursos do Dynamic Media Classic (Scene7) à sua página](manage-assets-classic-s7.md)
    + [Trabalhar com o Dynamic Media](dynamic-media-assets.md)
    + [Trabalhar com ativos 3D](classicui-3dassets.md)
    + [Vídeo](manage-assets-classic-s7-video.md)
