@@ -3,9 +3,9 @@ title: Guia de ajuste de desempenho de ativos
 description: Principais áreas de foco em torno AEM configuração, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho do AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3206'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ A partir do AEM 6.2 e com um pacote de recursos para o AEM 6.1, você pode fazer
 
 ### Configuração do ativo de atualização do DAM {#dam-update-asset-configuration}
 
-O fluxo de trabalho do Ativo de atualização do DAM contém um conjunto completo de etapas configuradas para tarefa, como geração do Scene7 PTIFF e integração do InDesign Server. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. O Adobe recomenda que você crie uma cópia personalizada do modelo de fluxo de trabalho Atualizar ativo DAM e remova quaisquer etapas desnecessárias. Nesse caso, atualize os iniciadores do Ativo de atualização do DAM para apontar para o novo modelo.
+O fluxo de trabalho do Ativo de atualização do DAM contém um conjunto completo de etapas configuradas para tarefa, como geração do Dynamic Media Classic PTIFF e integração do InDesign Server. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. O Adobe recomenda que você crie uma cópia personalizada do modelo de fluxo de trabalho Atualizar ativo DAM e remova quaisquer etapas desnecessárias. Nesse caso, atualize os iniciadores do Ativo de atualização do DAM para apontar para o novo modelo.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Os clientes usam imagens de vários tamanhos e formatos em seu site ou para dist
 
 Muitos clientes do Sites implementam um servlet de imagem que redimensiona e corta imagens no momento em que são solicitadas, o que impõe carga adicional na instância de publicação. Entretanto, enquanto essas imagens puderem ser armazenadas em cache, o desafio poderá ser atenuado.
 
-Uma abordagem alternativa é usar a tecnologia Scene7 para entregar a manipulação da imagem totalmente. Além disso, você pode implantar o Brand Portal, que não somente assume as responsabilidades de geração de execução da infraestrutura AEM, mas também toda a camada de publicação.
+Uma abordagem alternativa é usar a tecnologia Dynamic Media Classic para entregar totalmente a manipulação de imagens. Além disso, você pode implantar o Brand Portal, que não somente assume as responsabilidades de geração de execução da infraestrutura AEM, mas também toda a camada de publicação.
 
 #### ImageMagick {#imagemagick}
 
