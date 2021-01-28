@@ -7,10 +7,10 @@ user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 1c853b441845997fbb3086ca93d7020ed02d88c4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 46%
+source-wordcount: '731'
+ht-degree: 45%
 
 ---
 
@@ -167,7 +167,7 @@ ht-degree: 46%
    + [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
    + [Execuções de vídeo](video-renditions.md)
 + Ativos 3D {#three-d}
-   + [Notas de versão AEM 3D](../release-notes/aem3d-release-notes.md)
+   + [Notas de versão AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/assets/three-d/assets-3d.html)
    + [Trabalhar com ativos 3D](assets-3d.md)
    + [Instalação e configuração AEM 3D](install-config-3d.md)
    + [Configurações avançadas](advanced-config-3d.md)
