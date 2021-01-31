@@ -1,16 +1,16 @@
 ---
 title: NÃO PUBLICAR Crie seu primeiro documento adaptável
 seo-title: NÃO PUBLICAR Crie seu primeiro documento adaptável
-description: 'null'
-seo-description: nulo
+description: NÃO PUBLICAR
+seo-description: NÃO PUBLICAR
 page-status-flag: de-activated
 uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 1%
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +71,7 @@ Objetivos:
 
 A Comunicação do cliente centraliza e gerencia a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, cartas, documentos, declarações, avisos de benefícios, prospetos de gerenciamento de riquezas, emails de marketing, contas e kits de boas-vindas.
 
-Usando documentos adaptáveis, você pode criar comunicações de clientes que são envolventes, responsivas, dinâmicas e adaptáveis por natureza. A AEM Forms fornece um editor WYSIWYG para criar documentos adaptáveis.
+Usando documentos adaptáveis, você pode criar comunicações de clientes que são envolventes, responsivas, dinâmicas e adaptáveis por natureza. A AEM Forms fornece um editor WYSIWYG para arrastar e soltar para criar documentos adaptáveis.
 
 <!--`For more information about adaptive documents, see [Introduction to authoring adaptive documents](/forms/using/introduction-ad-authoring.md).`-->
 
