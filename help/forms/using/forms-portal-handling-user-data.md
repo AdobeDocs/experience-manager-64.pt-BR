@@ -1,18 +1,18 @@
 ---
 title: Portal da Forms | Tratamento de dados de utilizadores
 seo-title: Portal da Forms | Tratamento de dados de utilizadores
-description: 'null'
-seo-description: nulo
+description: O portal da AEM Forms fornece componentes que você pode usar para lista de formulários adaptáveis, formulários HTML5 e outros ativos da Forms na página do AEM Sites. Saiba como o portal da Forms armazena dados para formulários rascunhos e enviados. Saiba mais sobre como acessar dados de formulários rascunhos e enviados para usuários conectados e anônimos nos armazenamentos de dados configurados e, se necessário, exclua-os.
+seo-description: O portal da AEM Forms fornece componentes que você pode usar para lista de formulários adaptáveis, formulários HTML5 e outros ativos da Forms na página do AEM Sites. Saiba como o portal da Forms armazena dados para formulários rascunhos e enviados. Saiba mais sobre como acessar dados de formulários rascunhos e enviados para usuários conectados e anônimos nos armazenamentos de dados configurados e, se necessário, exclua-os.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 1%
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
