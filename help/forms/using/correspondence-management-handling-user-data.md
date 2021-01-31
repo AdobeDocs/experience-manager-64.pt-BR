@@ -1,17 +1,17 @@
 ---
 title: Gerenciamento de correspondência | Tratamento de dados de utilizadores
 seo-title: Gerenciamento de correspondência | Tratamento de dados de utilizadores
-description: 'null'
-seo-description: nulo
+description: O AEM Forms Correspondence Management permite que você crie, gerencie e dinamize correspondências seguras e personalizadas do cliente. Saiba como configurar o armazenamento de dados para rascunhos e letras enviadas no repositório AEM, acessar dados armazenados e excluir dados armazenados.
+seo-description: O AEM Forms Correspondence Management permite que você crie, gerencie e dinamize correspondências seguras e personalizadas do cliente. Saiba como configurar o armazenamento de dados para rascunhos e letras enviadas no repositório AEM, acessar dados armazenados e excluir dados armazenados.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
