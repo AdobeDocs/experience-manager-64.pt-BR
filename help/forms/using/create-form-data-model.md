@@ -1,18 +1,18 @@
 ---
 title: '"Tutorial: Criar modelo de dados de formulário "'
 seo-title: Tutorial Criar modelo de dados de formulário
-description: 'null'
-seo-description: nulo
+description: O módulo de integração de dados da AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de backend, como AEM perfil do usuário, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. Saiba como configurar o banco de dados MySQL como fonte de dados, criar, configurar e testar um modelo de dados de formulário.
+seo-description: O módulo de integração de dados da AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de backend, como AEM perfil do usuário, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. Saiba como configurar o banco de dados MySQL como fonte de dados, criar, configurar e testar um modelo de dados de formulário.
 page-status-flag: de-activated
 uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 1%
+source-wordcount: '1544'
+ht-degree: 0%
 
 ---
 
