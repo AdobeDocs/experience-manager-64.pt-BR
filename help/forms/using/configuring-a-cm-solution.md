@@ -1,18 +1,18 @@
 ---
 title: Configuração de uma solução de Gerenciamento de correspondência
 seo-title: Configuração de uma solução de Gerenciamento de correspondência
-description: 'null'
-seo-description: nulo
+description: Saiba como definir um URL de instância do autor para a restauração da versão da instância do autor e definir o URL da instância de publicação para o gerenciador de ativações da instância pública.
+seo-description: Saiba como definir um URL de instância do autor para a restauração da versão da instância do autor e definir o URL da instância de publicação para o gerenciador de ativações da instância pública.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 2%
+source-wordcount: '341'
+ht-degree: 1%
 
 ---
 
