@@ -1,8 +1,8 @@
 ---
 title: Invocar o AEM Forms usando APIs
 seo-title: Invocar o AEM Forms usando APIs
-description: 'null'
-seo-description: nulo
+description: 'A Adobe Experience Manager Forms é um software corporativo baseado no J2EE que consiste em serviços que operam dentro de uma infraestrutura compartilhada. Saiba como usar aplicativos clientes para chamar a AEM Forms de forma programática usando uma API Java, serviços da Web, Remoting e REST API. '
+seo-description: A Adobe Experience Manager Forms é um software corporativo baseado no J2EE que consiste em serviços que operam dentro de uma infraestrutura compartilhada. Saiba como usar aplicativos clientes para chamar a AEM Forms de forma programática usando uma API Java, serviços da Web, Remoting e REST API.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
