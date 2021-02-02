@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ No contexto da Dynamic Media, os sites que usam um sistema baseado em XML para g
 >Tenha cuidado ao usar conjuntos de regras; eles podem impedir que o conteúdo do Dynamic Media seja exibido em seu site.
 
 Existem conjuntos de regras de amostra disponíveis que podem ajudar a criar seu próprio conjunto de regras.\
-Consulte [Referência do conjunto de regras](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
+Consulte [Referência do conjunto de regras](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Como ocorre com a criação de todo o conjunto de regras, verifique se o arquivo XML é válido antes de carregá-lo usando um programa validador XML, como xmlvalid.\
 Consulte também [Resolução de problemas de conjuntos de regras](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
