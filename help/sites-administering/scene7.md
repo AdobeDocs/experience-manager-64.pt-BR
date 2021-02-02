@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5456'
+source-wordcount: '5454'
 ht-degree: 1%
 
 ---
@@ -567,7 +567,7 @@ Especificamente, você configura o formato de arquivo aceito por tipo MIME na á
 
    Por exemplo, `psprocess="rasterize"&psresolution=120` .
 
-   Consulte a [Adobe Dynamic Media Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) para obter os parâmetros adicionais de trabalho de upload que você pode usar.
+   Consulte a [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) para obter os parâmetros adicionais de trabalho de upload que você pode usar.
 
    >[!NOTE]
    >
