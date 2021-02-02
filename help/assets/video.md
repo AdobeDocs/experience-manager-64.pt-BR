@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '10396'
+source-wordcount: '10392'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Para gerenciar um único vídeo e Conjuntos de vídeos adaptáveis, há suporte 
 * Organize, navegue e pesquise vídeos com suporte total a metadados para o gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeo adaptáveis para a Web, desktops e dispositivos móveis, incluindo iPhone, iPad, Android, Blackberry e telefone Windows.
 
-O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte o [Guia de referência de visualizadores do Adobe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte o [Guia de referência de visualizadores do Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 A Dynamic Media oferece suporte à reprodução de vídeo móvel para vídeo MP4 H.264. Você pode encontrar dispositivos Blackberry compatíveis com este formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -160,7 +160,7 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulte também [Sobre Visualizadores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) no Guia de Referência do Adobe Dynamic Media Viewers.
+Consulte também [Sobre Visualizadores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) no Guia de Referência de Visualizadores do Adobe Dynamic Media.
 
 ## Melhores práticas: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -172,7 +172,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente a capacidad
 
 Ao combinar em um único player a capacidade de projetar os componentes de reprodução usando HTML5 e CSS, ter reprodução integrada e usar streaming adaptável e progressivo dependendo da capacidade do navegador, você estende o alcance do conteúdo de mídia avançada para usuários de desktop e móveis e garante uma experiência de vídeo otimizada.
 
-Consulte também [Sobre Visualizadores HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de Referência de Visualizadores de Adobe.
+Consulte também [Sobre Visualizadores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de Referência de Visualizadores de Adobe.
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -422,7 +422,7 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir
    <td><p>Codificado</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificado</p> </td> 
