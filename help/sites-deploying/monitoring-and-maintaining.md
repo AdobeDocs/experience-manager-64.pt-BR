@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5893'
+source-wordcount: '5889'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ Vários arquivos de log são mantidos no servidor de arquivos onde você instalo
 
       Mensagens de erro (de níveis variados de gravidade) são registradas aqui.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       Esse log só será usado se a mídia dinâmica estiver ativada. Fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
 
@@ -208,7 +208,7 @@ Vários arquivos de log são mantidos no servidor de arquivos onde você instalo
 
       Cada solicitação de acesso é registrada aqui junto com a resposta.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
       Esse log só será usado se a mídia dinâmica estiver ativada. O registro s7access registra cada solicitação feita à Dynamic Media por meio de `/is/image` e `/is/content`.
 
