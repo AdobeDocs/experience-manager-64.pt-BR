@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2825'
 ht-degree: 34%
 
 ---
@@ -171,7 +171,7 @@ alturaInsira o valor em pixels se desejar que a imagem tenha um tamanho fixo. De
 
 Use o componente Dynamic Media para adicionar vídeo dinâmico às suas páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição de visualizador de vídeo predefinida para reproduzir o vídeo na página.
 
-![chlimage_1-540](assets/chlimage_1-540.png)
+![chlimage_1-541](assets/chlimage_1-540.png)
 
 Você deve editar as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Editar]** no componente.
 
@@ -187,8 +187,8 @@ Um exemplo de um modificador do visualizador é post-erimage=img.jpg&amp;caption
 
    Com modificadores do visualizador, por exemplo, você pode fazer o seguinte:
 
-   * Associe um arquivo de legenda a uma legenda [de vídeo.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associe um arquivo de navegação a um vídeo [navigation.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associe um arquivo de legenda a uma legenda [de vídeo.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associe um arquivo de navegação a um vídeo [navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 Você pode editar as seguintes [!UICONTROL Configurações avançadas] clicando em **[!UICONTROL Editar]** no componente.
 
