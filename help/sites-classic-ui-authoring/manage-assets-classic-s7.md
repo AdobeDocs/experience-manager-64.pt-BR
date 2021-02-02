@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3426'
+ht-degree: 32%
 
 ---
 
@@ -242,7 +242,7 @@ O componente Imagem clássica do Dynamic Media permite que você adicione a func
 
 **[!UICONTROL Nitidez]**  - Selecione como deseja tornar a imagem nítida. A nitidez é explicada em detalhes em [*Qualidade de imagem clássica do Adobe Dynamic Media e Práticas recomendadas de nitidez*](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificadores]**  de URL - é possível alterar os efeitos de imagem fornecendo comandos adicionais de imagem do Dynamic Media Classic. Estes estão descritos em [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md) e [Referência de comando](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificadores]**  de URL - é possível alterar os efeitos de imagem fornecendo comandos adicionais de imagem do Dynamic Media Classic. Estes estão descritos em [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md) e [Referência de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Pontos de interrupção]**  - se o site estiver respondendo, você deseja ajustar os pontos de interrupção. Os pontos de interrupção devem ser separados por vírgulas `,`.
 
