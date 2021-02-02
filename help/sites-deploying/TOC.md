@@ -7,10 +7,10 @@ user-guide-title: Guia de implementação do AEM 6.4
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4, incluindo a implantação do Adobe Managed Services na nuvem.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 18%
+source-wordcount: '356'
+ht-degree: 17%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 18%
    + [Descarregamento de tarefas](offloading.md)
    + [Logon único](single-sign-on.md)
    + [Mapeamento de recursos](resource-mapping.md)
-   + [Habilitando HTTP por SSL](/help/sites-administering/ssl-by-default.md)
+   + [Habilitando HTTP por SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
    + [Verificações de consistência e transversal](consistency-check.md)
    + [Diretrizes de desempenho](performance-guidelines.md)
    + [Otimização do desempenho](configuring-performance.md)
