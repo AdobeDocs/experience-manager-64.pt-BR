@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1679'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM 3D no AEM 6.4 não é mais suportado. O Adobe recomenda usar o recurso de ativos 3D em [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 3D no AEM 6.4 não é mais suportado. O Adobe recomenda usar o recurso de ativos 3D em [AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou superior.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 A instalação e configuração do AEM 3D (versão 3.0) envolve o seguinte:
 
@@ -174,7 +174,7 @@ Consulte também [Configurações avançadas](advanced-config-3d.md).
 
    Perto do canto superior direito da página logo-sfera.fbx, clique no ícone de Destaque do Palco para expandir o menu suspenso e selecione `stage-spotlights.fbx`.
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. Na lista suspensa **[!UICONTROL Destaque do palco]**, selecione `stage-helipad.fbx`.
 
