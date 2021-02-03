@@ -1,18 +1,14 @@
 ---
 title: Exibir ativos 3D
-seo-title: Exibir ativos 3D
 description: Saiba mais sobre o visualizador 3D interativo disponível na página de detalhes do ativo em AEM e como usá-lo para visualização de ativos 3D.
-seo-description: Saiba mais sobre o visualizador 3D interativo disponível na página de detalhes do ativo em AEM e como usá-lo para visualização de ativos 3D.
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1778'
 ht-degree: 35%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 35%
 
 >[!IMPORTANT]
 >
->AEM 3D no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) para visualização de ativos 3D.
+>AEM 3D no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou superior.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) para visualização de ativos 3D.
 
 Este documento descreve como visualização ativos 3D em detalhes de ativos e como visualização ativos que estão no componente 3D em sites.
 
