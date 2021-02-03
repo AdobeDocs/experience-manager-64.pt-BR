@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5440'
 ht-degree: 1%
 
 ---
@@ -422,7 +422,7 @@ No entanto, se você não quiser que os ativos enviados para o Dynamic Media Cla
 Antes de poder enviar ativos para o Dynamic Media Classic sem publicá-los, você deve configurar o seguinte:
 
 1. [Use a Admin Console para criar um caso de suporte.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) No caso de suporte, solicite que a pré-visualização segura seja ativada para sua conta Dynamic Media Classic.
-1. Siga as instruções para [configurar a pré-visualização segura para sua conta do Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. Siga as instruções para [configurar a pré-visualização segura para sua conta do Dynamic Media Classic.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
 Estas são as mesmas etapas que você seguiria para criar qualquer configuração de teste segura no Dynamic Media Classic.
 
@@ -452,7 +452,7 @@ Para definir o estado dos ativos enviados para o Dynamic Media Classic como não
 1. Toque no ícone AEM e navegue até **[!UICONTROL Implantação > Cloud Services]**, toque **[!UICONTROL Dynamic Media Classic]** e selecione sua configuração no Dynamic Media Classic.
 1. Toque na guia **[!UICONTROL Advanced]**. No menu suspenso **[!UICONTROL Ativar Visualização segura]**, selecione **[!UICONTROL Na Ativação de publicação do AEM]** para enviar ativos para o Dynamic Media Classic sem publicação. (Por padrão, esse valor é definido como **[!UICONTROL Imediatamente]**, onde os ativos do Dynamic Media Classic são publicados imediatamente.)
 
-   Consulte [Documentação do Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) para obter mais informações sobre como testar ativos antes de torná-los públicos.
+   Consulte [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish) para obter mais informações sobre como testar ativos antes de torná-los públicos.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
