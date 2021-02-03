@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 2%
@@ -171,7 +171,7 @@ Depois que um usuário autorizado, um membro do grupo de usuários **`administra
    * acesse o [Web Console](/help/sites-deploying/configuring-osgi.md)
 
       * por exemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-   * localizar `Adobe Granite Distribution - Encrypted Password Transport Secret Provider`
+   * localizar `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * selecione a configuração existente para abrir para edição (ícone de lápis)
 
       Verificar `property name` : **`socialpubsync-publishUser`**
@@ -503,7 +503,7 @@ Veja a seguir visualizações de como as configurações padrão editadas devem 
 
 #### (publicar) Um agente de distribuição Apache Sling - Fábrica de agentes de fila {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### (publish) One Adobe Granite Distribution - Diff Observer Fatory {#publish-one-adobe-granite-distribution-diff-observer-factory}
 
