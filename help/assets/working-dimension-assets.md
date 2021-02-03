@@ -1,18 +1,14 @@
 ---
 title: Trabalhar com ativos da Adobe Dimension
-seo-title: Trabalhar com ativos da Adobe Dimension
 description: Trabalhar com ativos da Adobe Dimension em AEM 3D.
-seo-description: Trabalhar com ativos da Adobe Dimension em AEM 3D.
-uuid: 476e6758-b3a1-42ba-a18d-bfc407c6a72e
 contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->O pacote de recursos 3D AEM no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) ou [AEM 6.5.3 ou superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) ao trabalhar com ativos da Adobe Dimension.
+>O pacote de recursos 3D AEM no AEM 6.4 não é mais suportado. O Adobe recomenda que você use o recurso de ativos 3D em [AEM como um Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) ou [AEM 6.5.3 ou superior.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) ao trabalhar com ativos da Adobe Dimension.
 
 O pacote de recursos AEM 3D oferece suporte para ativos Adobe Dimension (`.dn` arquivos) no AEM Assets, AEM Sites e AEM Screens.
 
