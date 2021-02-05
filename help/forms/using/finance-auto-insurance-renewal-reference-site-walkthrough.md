@@ -1,16 +1,16 @@
 ---
 title: Apresentação do site de referência de Renovação de Seguro Automático do We.Finance
 seo-title: Apresentação do site de referência de Renovação de Seguro Automático do We.Finance
-description: 'null'
-seo-description: nulo
+description: Leia a apresentação detalhada do site de referência do caso de uso do We.Finance Auto Insurance que mostra como os formulários AEM e sua integração com o Microsoft Dynamics ajudam a personalizar a experiência do cliente em uma empresa de serviço financeiro.
+seo-description: Leia a apresentação detalhada do site de referência do caso de uso do We.Finance Auto Insurance que mostra como os formulários AEM e sua integração com o Microsoft Dynamics ajudam a personalizar a experiência do cliente em uma empresa de serviço financeiro.
 uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ We.Finance site é um site de serviços financeiros projetado para ajudá-lo a c
 
 Leia a apresentação detalhada do caso de uso do We.Finance Auto Insurance que mostra como os formulários AEM e sua integração com o Microsoft Dynamics ajudam a personalizar a experiência do cliente em uma empresa de serviço financeiro. A apresentação interativa foi projetada para facilitar a implementação de transações digitais complexas e a comunicação do cliente em uma empresa financeira.
 
-**A viagem start com o caso de utilização:**
+**A jornada start com o caso de uso:**
 
 Sarah Rose é uma cliente existente da We.Finance e comprou uma apólice de seguro de automóveis. Agora é a hora do ano para renovar sua apólice de seguro. Gloria Rios, Agente de Seguros, We.Finance envia um lembrete para Sarah sobre sua renovação de apólice. Sarah segue as instruções fornecidas no email e conclui com êxito o processo.
 
