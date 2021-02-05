@@ -1,16 +1,16 @@
 ---
 title: Gerenciamento de usuários da Forms | Tratamento de dados de utilizadores
 seo-title: Gerenciamento de usuários da Forms | Tratamento de dados de utilizadores
-description: 'null'
-seo-description: nulo
+description: O gerenciamento de usuários é um componente AEM Forms JEE que permite criar, gerenciar e autorizar usuários do AEM Forms a acessar o AEM Forms. Saiba mais sobre os dados do usuário e os armazenamentos de dados. Saiba como acessar e excluir dados do usuário.
+seo-description: O gerenciamento de usuários é um componente AEM Forms JEE que permite criar, gerenciar e autorizar usuários do AEM Forms a acessar o AEM Forms. Saiba mais sobre os dados do usuário e os armazenamentos de dados. Saiba como acessar e excluir dados do usuário.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
