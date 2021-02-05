@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
+source-git-commit: 12d64aebbe769c0b3fa7c721e7fbac547d320f67
 workflow-type: tm+mt
-source-wordcount: '3569'
+source-wordcount: '3592'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ A integração do Adobe Sign com o AEM Forms suporta:
 * Assinar formulários como um usuário anônimo ou conectado
 * Processos de assinatura dinâmica (integração com o fluxo de trabalho da AEM Forms)
 * Autenticação por meio de uma base de conhecimento, telefone e perfis sociais
+
+Saiba mais sobre as [práticas recomendadas de usar o Adobe Sign com formulários adaptáveis](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) para criar experiências de assinatura melhores.
 
 ## Pré-requisitos {#prerequisites}
 
