@@ -1,16 +1,16 @@
 ---
 title: Workflows Forms JEE | Tratamento de dados de utilizadores
 seo-title: Workflows Forms JEE | Tratamento de dados de utilizadores
-description: 'null'
-seo-description: nulo
+description: Os workflows AEM Forms JEE fornecem ferramentas para projetar, criar e gerenciar processos comerciais. Saiba mais sobre como acessar e excluir dados do usuário, identificar IDs de instância do processo quando o iniciador ou participante do fluxo de trabalho for conhecido, identificar IDs de instância do processo quando os dados do usuário forem armazenados em variáveis primitivas, expurgar dados do usuário de instâncias do fluxo de trabalho com base em IDs de instância do processo e trabalhar com tarefas órfãs.
+seo-description: Os workflows AEM Forms JEE fornecem ferramentas para projetar, criar e gerenciar processos comerciais. Saiba mais sobre como acessar e excluir dados do usuário, identificar IDs de instância do processo quando o iniciador ou participante do fluxo de trabalho for conhecido, identificar IDs de instância do processo quando os dados do usuário forem armazenados em variáveis primitivas, expurgar dados do usuário de instâncias do fluxo de trabalho com base em IDs de instância do processo e trabalhar com tarefas órfãs.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
