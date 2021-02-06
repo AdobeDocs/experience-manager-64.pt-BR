@@ -92,7 +92,7 @@ Quando você seleciona uma opção, a pesquisa é executada com base na propried
 
 Por exemplo, se você selecionar &quot;Imagens&quot; para tipos de arquivos, a consulta de pesquisa dos ativos será criada ao combinar a propriedade `value` usando uma operação OR. Por exemplo, a consulta de pesquisa de imagens é construída combinando os resultados correspondentes de *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* e *image/tiff* da propriedade `jcr:content/metadata/dc:format` usando uma operação OR.
 
-![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem](assets/chlimage_1-418.png)
+![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para que query de pesquisa funcionem](assets/chlimage_1-418.png)
 
 A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem
 
