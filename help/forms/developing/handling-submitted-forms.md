@@ -96,7 +96,7 @@ A tabela a seguir descreve as etapas neste diagrama.
    <td><p>O serviço Forms renderiza um formulário PDF interativo para o navegador da Web do cliente.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>O usuário preenche um formulário interativo e clica em um botão Enviar. O formulário é enviado de volta ao serviço Forms como dados PDF. Essa opção está definida no Designer.</p></td>
   </tr>
   <tr>
