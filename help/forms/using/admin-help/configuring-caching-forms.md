@@ -59,7 +59,7 @@ Esse modo de cache garante que os recursos mais recentes sejam usados. No entant
 
 ### Usar o ponto de verificação de cache {#use-the-cache-check-point}
 
-Nesse modo, o serviço Forms verifica apenas as versões mais recentes dos recursos do repositório quando o carimbo de data e hora do recurso em cache é mais antigo do que o tempo do ponto de verificação do cache. A última hora do ponto de verificação do cache é exibida na página do Forms no Console de administração.
+Nesse modo, o serviço Forms verifica apenas as versões mais recentes dos recursos do repositório quando o carimbo de data e hora do recurso em cache é mais antigo do que o horário do ponto de verificação do cache. A última hora do ponto de verificação do cache é exibida na página do Forms no Console de administração.
 
 Use esse modo de cache em ambientes de produção de alto desempenho onde o desempenho é uma preocupação e as alterações nos recursos são raras. Você pode redefinir o tempo do ponto de verificação do cache quando quiser implantar quaisquer alterações feitas nos recursos do repositório.
 
