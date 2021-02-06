@@ -41,7 +41,7 @@ Para obter as informações necessárias, visite [Informações básicas sobre c
 
 Quando as [bibliotecas obrigatórias do lado do cliente](calendar-basics-for-developers.md#essentials-for-client-side) forem incluídas, o componente `Calendar` aparecerá desta forma.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Configuração do calendário {#configuring-calendar}
 
@@ -189,7 +189,7 @@ Outras capacidades dependem de o visitante do site ser um moderador, administrad
 
 Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar [tarefas de moderação](moderate-ugc.md) (conforme permitido pela configuração do componente) em todos os eventos de calendário e comentários postados em um evento.
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### Membros {#members}
 
