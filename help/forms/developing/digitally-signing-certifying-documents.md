@@ -1481,7 +1481,7 @@ Verifique uma assinatura digital usando a Signature Service API (serviço da Web
 1. Definir opções de tempo de execução de PKI
 
    * Crie um objeto `PKIOptions` usando seu construtor.
-   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto &lt;a0/> um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.`verificationTime`
+   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto `verificationTime` um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.
    * Defina a opção de verificação de revogação atribuindo ao membro de dados `PKIOptions` do objeto `revocationCheckStyle` um valor de lista discriminada `RevocationCheckStyle` que especifica se a verificação de revogação deve ser executada.
 
 1. Verificar a assinatura digital
@@ -1696,7 +1696,7 @@ Verifique várias assinaturas digitais usando a Signature Service API (serviço 
 1. Definir opções de tempo de execução de PKI
 
    * Crie um objeto `PKIOptions` usando seu construtor.
-   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto &lt;a0/> um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.`verificationTime`
+   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto `verificationTime` um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.
    * Defina a opção de verificação de revogação atribuindo ao membro de dados `PKIOptions` do objeto `revocationCheckStyle` um valor de lista discriminada `RevocationCheckStyle` que especifica se a verificação de revogação deve ser executada.
 
 1. Recuperar todas as assinaturas digitais
