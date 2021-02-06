@@ -93,7 +93,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
    <td>DESLIGADO<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>FATAL<br type="_moz" /> </td> 
   </tr> 
   <tr> 
@@ -101,7 +101,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
    <td>ERRO<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>AVISO<br type="_moz" /> </td> 
   </tr> 
   <tr> 
