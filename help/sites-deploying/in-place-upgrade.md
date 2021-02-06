@@ -54,7 +54,7 @@ A migração real é realizada usando o arquivo jar AEM quickstart padrão, exec
 
 >[!NOTE]
 >
->Se você estiver executando a migração de conteúdo do repositório TarMK usando a extensão de Início Rápido CRX2Oak, você pode remover o **modo de execução &lt;a0/>dele, adicionando o seguinte à linha de comando de migração:**
+>Se você estiver executando a migração de conteúdo do repositório TarMK usando a extensão de Início Rápido CRX2Oak, você pode remover o **modo de execução** dele, adicionando o seguinte à linha de comando de migração:
 >
 >* `--promote-runmode nosamplecontent`
 
