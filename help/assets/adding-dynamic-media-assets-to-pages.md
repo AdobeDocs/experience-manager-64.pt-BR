@@ -171,7 +171,7 @@ alturaInsira o valor em pixels se desejar que a imagem tenha um tamanho fixo. De
 
 Use o componente Dynamic Media para adicionar vídeo dinâmico às suas páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição de visualizador de vídeo predefinida para reproduzir o vídeo na página.
 
-![chlimage_1-541](assets/chlimage_1-540.png)
+![chlimage_1-540](assets/chlimage_1-540.png)
 
 Você deve editar as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Editar]** no componente.
 
