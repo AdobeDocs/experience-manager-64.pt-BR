@@ -42,7 +42,7 @@ Quando o JobManager cria um job, a estrutura de Descarregamento seleciona um clu
 
 Consulte [Configurando o Consumo de Tópico](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obter informações sobre como refinar a distribuição de tarefas.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 Quando a estrutura de Descarregamento seleciona um cluster para executar um job e o cliente é composto de várias instâncias, a Distribuição de Sling determina qual instância no cluster executa o job.
 
@@ -86,7 +86,7 @@ Para cada instância do cluster, é possível ver várias propriedades relaciona
 
    Os clusters que estão participando da topologia são exibidos.
 
-   ![chlimage_1-191](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 1. Clique em um cluster para ver uma lista das instâncias no cluster e sua ID, status atual e status de pontilhado.
 1. Clique em uma ID de instância para ver as propriedades mais detalhadas.
@@ -193,7 +193,7 @@ Os trabalhos são instâncias distribuídas de quantidade que têm o tópico ass
 1. Para desativar o consumo de um tópico para uma instância, abaixo do nome do tópico, clique em Desativar ao lado da instância.
 1. Para configurar todo o consumo de tópico de uma instância, clique no identificador de instância abaixo de qualquer tópico.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Clique em um dos seguintes botões ao lado de um tópico para configurar o comportamento de consumo da instância e clique em Salvar:
 
@@ -238,7 +238,7 @@ A estrutura de descarga usa replicação para transportar recursos entre o autor
 
 Crie os agentes de replicação que transportam cargas de trabalho entre instâncias para descarregamento. A ilustração a seguir mostra os agentes que devem ser descarregados do autor para uma instância de trabalho. O autor tem uma Sling ID de 1 e a instância do trabalhador tem uma Sling ID de 2:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 Essa configuração exige os três agentes a seguir:
 
