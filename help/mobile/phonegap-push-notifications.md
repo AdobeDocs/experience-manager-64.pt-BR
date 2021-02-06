@@ -337,7 +337,7 @@ Crie a notificação, adicione um texto de botão e um caminho de link para o de
 
 1. Selecione **Ligação Pushwoosh**. Clique em **Avançar**.
 
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. Insira os detalhes das propriedades e clique em **Enviar**.
 
@@ -345,7 +345,7 @@ Crie a notificação, adicione um texto de botão e um caminho de link para o de
 
    Quando você enviar sua configuração, o bloco **Notificações por push** será exibido no painel.
 
-   ![chlimage_1-191](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 ### Criar assistente de notificação {#create-notification-wizard}
 
@@ -369,13 +369,13 @@ Quando o bloco **Notificações por push** for exibido no seu painel, use o assi
 
 1. Digite **Detalhes do Texto** no **Assistente para Criar Notificação** e clique em **Criar**.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
    Abra os detalhes clicando na notificação por push que você criou no bloco **Notificações por push**.
 
    É possível editar propriedades, enviar notificações ou excluir a notificação.
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 >[!NOTE]
 >
