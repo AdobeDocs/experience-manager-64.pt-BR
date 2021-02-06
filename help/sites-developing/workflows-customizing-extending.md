@@ -858,7 +858,7 @@ Uma maneira fácil de start para criar sua própria etapa personalizada é copia
 
 1. Agora é possível abrir um modelo de fluxo de trabalho para edição. Nas etapas do navegador, você pode filtrar para ver **Minha etapa personalizada**:
 
-   ![wf-34](assets/wf-36.png)
+   ![wf-36](assets/wf-36.png)
 
    Arrastar **Minha Etapa Personalizada** para o modelo exibe o cartão:
 
