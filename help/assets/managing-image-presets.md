@@ -475,7 +475,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
    opac=50
    ```
 
-   ![chlimage_1-505](assets/chlimage_1-503.png)
+   ![chlimage_1-503](assets/chlimage_1-503.png)
 
 ## Editar predefinições de imagens {#modifying-image-presets}
 
