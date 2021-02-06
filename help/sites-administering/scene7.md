@@ -49,7 +49,7 @@ Use os seguintes critérios para determinar qual solução escolher:
 Ao trabalhar com ativos nesta solução, execute um dos procedimentos a seguir:
 
 * Carregue ativos diretamente no Dynamic Media Classic e acesse por meio do navegador de conteúdo **Dynamic Media Classic** para criação de página ou
-* Faça upload no AEM Assets e ative a publicação automática no Dynamic Media Classic; você acessa o navegador de conteúdo **Assets** para criação de página
+* Faça upload para o AEM Assets e ative a publicação automática para o Dynamic Media Classic; você acessa o navegador de conteúdo **Assets** para criação de página
 
 Os componentes que você usa para essa integração são encontrados na área do componente **Dynamic Media Classic** no [modo Design.](/help/sites-authoring/author-environment-tools.md#page-modes)
 
