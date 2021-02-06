@@ -65,7 +65,7 @@ Os componentes Gerais são os componentes básicos usados na criação de conte�
 
 Você pode definir um link com título e descrição.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 ### Imagem adaptativa {#adaptive-image}
 
