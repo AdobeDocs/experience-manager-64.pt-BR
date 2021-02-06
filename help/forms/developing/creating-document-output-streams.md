@@ -525,7 +525,7 @@ Crie um documento PDF/A usando a API de saída (Java):
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF /A invocando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >Você também pode criar um documento PDF/A chamando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Recupere os resultados da operação.
 
