@@ -702,7 +702,7 @@ O Painel **Visão geral do sistema** exibe uma visão geral de alto nível da co
 
 >[!NOTE]
 >
->Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/21340?captions=por_br) para obter uma introdução ao Painel Visão geral do sistema.
+>Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/21340) para obter uma introdução ao Painel Visão geral do sistema.
 
 ### Como acessar {#how-to-access}
 
