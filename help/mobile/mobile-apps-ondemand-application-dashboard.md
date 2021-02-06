@@ -46,7 +46,7 @@ O bloco **Gerenciar aplicativo** exibe as informações disponíveis do aplicati
 * Descrição
 * Ícone
 * Última modificação
-* Última modificação por
+* Última modificação feita por
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
