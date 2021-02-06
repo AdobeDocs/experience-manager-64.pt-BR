@@ -42,11 +42,11 @@ A análise start na etapa 0. O objetivo é determinar qual entidade (dispatcher,
 
 ### Seção 3 {#section-2}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### Seção 4 {#section-3}
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### Seção 5 {#section-4}
 
