@@ -584,7 +584,7 @@ Para obter mais informações específicas ao Dynamic Media, consulte [Publicar 
 1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas ou não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. Toque em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
