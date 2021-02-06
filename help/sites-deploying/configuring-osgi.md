@@ -130,7 +130,7 @@ Eles podem ser incluídos em pacotes de conteúdo e reutilizados em outras inst�
 
 O Console da Web não mostra nenhuma indicação de onde as alterações foram salvas no repositório, mas elas podem ser facilmente localizadas:
 
-1. Crie o arquivo de configuração fazendo uma alteração inicial no console da Web[.](#osgi-configuration-with-the-web-console)
+1. Crie o arquivo de configuração fazendo uma alteração inicial no console da Web](#osgi-configuration-with-the-web-console).[
 1. Abra o CRXDE Lite.
 1. No menu **Ferramentas** selecione **Query ...** .
 1. Envie um query de **Type** `SQL` para procurar o PID da configuração que você atualizou.
