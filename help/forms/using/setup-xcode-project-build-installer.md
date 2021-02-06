@@ -128,7 +128,7 @@ Para obter informações detalhadas sobre a assinatura de código e a adição d
    >
    >Esta etapa é necessária somente se o aplicativo AEM Forms precisar se conectar a um servidor que não siga os requisitos de segurança do App Transport.
 
-1. Em **PROJECT**, selecione **AEM Forms** e certifique-se de que a assinatura apropriada está selecionada para **Identidade de assinatura de código**, **Depurar**, **Versão** e **Qualquer SDK do iOS&lt;a1111111/>.**
+1. Em **PROJECT**, selecione **AEM Forms** e certifique-se de que a assinatura apropriada está selecionada para **Identidade de assinatura de código**, **Depurar**, **Versão** e **Qualquer SDK do iOS**.
 1. Conecte um iPad provisionado a uma máquina Mac.
 1. Selecione o dispositivo provisionado para o projeto **AEM Forms**.
 
