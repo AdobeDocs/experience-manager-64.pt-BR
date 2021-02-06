@@ -489,7 +489,7 @@ O plug-in emite marcação HTML (esta marcação usa elementos básicos, que pod
 
 Isso mostrará como:
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 ### Biblioteca de utilitários {#utility-library}
 
