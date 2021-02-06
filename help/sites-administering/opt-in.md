@@ -63,7 +63,7 @@ Ao participar da integração, AEM executa as seguintes tarefas:
 
 Para aceitar a tarefa pré-carregada e pronta para uso:
 
-1. Na caixa de entrada, selecione e [Abra **a tarefa Configurar o Analytics e a definição de metas**.](/help/sites-authoring/inbox.md#taking-action-on-an-item)
+1. Na caixa de entrada, selecione e **Abra** a tarefa Configurar o Analytics e a definição de metas](/help/sites-authoring/inbox.md#taking-action-on-an-item).[
 
    ![optin-01](assets/optin-01.png)
 
@@ -98,7 +98,7 @@ Opt out a integração com o Analytics e o Público alvo quando você:
 
 Para opt out, é necessário concluir a tarefa pré-carregada:
 
-* Na caixa de entrada, selecione e [Conclua **a tarefa Configurar o Analytics e a definição de metas**.](/help/sites-authoring/inbox.md#taking-action-on-an-item)
+* Na caixa de entrada, selecione e **Conclua** a tarefa Configurar o Analytics e a definição de metas](/help/sites-authoring/inbox.md#taking-action-on-an-item).[
 
 ## Fornecimento de informações de conta usando um arquivo de propriedades {#providing-account-information-using-a-properties-file}
 
