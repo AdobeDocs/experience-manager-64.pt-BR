@@ -100,7 +100,7 @@ LogMessages.js
 
 ### Adicionar suporte de localidade para o dicionário {#add-locale-support-for-the-dictionary-br}
 
-Execute esta etapa somente se `<locale>` que você está adicionando não estiver entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, &lt;a9/>, `ko-kr`.
+Execute esta etapa somente se `<locale>` que você está adicionando não estiver entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, , `ko-kr`.
 
 1. Crie um nó `nt:unstructured` `languages` em `etc`, se ainda não estiver presente.
 
