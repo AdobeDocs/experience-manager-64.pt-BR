@@ -447,7 +447,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
 
    A caixa de diálogo de configuração. Por exemplo, o Sistema de parágrafo herdado:
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
 ## Editar o modelo da página {#editing-the-page-template}
 
