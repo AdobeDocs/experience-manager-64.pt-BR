@@ -132,7 +132,7 @@ Para selecionar a tag para operações e para fazer várias seleções, selecion
 
 Quando uma namespace ou outra tag é selecionada, selecionar o ícone **`View Properties`** resulta na exibição de informações sobre `name`, a hora da última edição e o número de referências. Se publicada, a hora em que foi publicada pela última vez e a ID do editor são mostradas. Essas informações aparecerão em uma coluna à esquerda das colunas da tag.
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 ### Mostrando referências de tag {#showing-tag-references}
 
@@ -142,7 +142,7 @@ Quando uma namespace ou outra tag é selecionada, selecionar o ícone **`Referen
 
 A exibição inicial é uma contagem de tags aplicadas.
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 Ao selecionar a seta à direita da contagem, os nomes de referência são listados.
 
