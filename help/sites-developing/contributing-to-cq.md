@@ -58,7 +58,7 @@ O conteúdo inclui não apenas todos os dados que o aplicativo da Web persiste. 
 
 ### Modelo de David {#david-s-model}
 
-A forma como o conteúdo deve ser modelado em um repositório de conteúdo Java requer uma forma de pensar totalmente diferente da prática comum no setor de software para modelagem de dados no mundo relacional. A leitura essencial para qualquer recém-chegado para gestão de conteúdo do caminho do JCR é [Modelo de David: Um guia para modelagem de conteúdo](https://wiki.apache.org/jackrabbit/DavidsModel).
+A forma como o conteúdo deve ser modelado em um repositório de conteúdo Java requer uma maneira de pensar totalmente diferente da prática comum no setor de software para modelagem de dados no mundo relacional. A leitura essencial para qualquer recém-chegado para gestão de conteúdo do caminho do JCR é [Modelo de David: Um guia para modelagem de conteúdo](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### RESThance {#restfulness}
 
@@ -66,7 +66,7 @@ A abordagem REST está profundamente enraizada no que fazemos. Isso significa, e
 
 REST (REpresentational State Transfer) refere-se ao estilo arquitetônico de software no qual se baseia a World Wide Web. Descreve os principais elementos que fazem com que a Web funcione, e assim fornece um conjunto de princípios para como o software baseado na Web deve ser projetado. Ao projetar uma API para ser usada na Web, faz sentido seguir essas &quot;práticas recomendadas&quot;.
 
-Como REST fornece a filosofia orientadora por trás de tanto do que fazemos, você deve considerar essencial se tornar versado nos princípios do design RESTful. Um bom lugar para start é com a dissertação de Roy Fielding[.](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
+Como REST fornece a filosofia orientadora por trás de tanto do que fazemos, você deve considerar essencial se tornar versado nos princípios do design RESTful. Um bom lugar para start é com a dissertação de Roy Fielding](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).[
 
 ### Resolução de solicitação Sling {#sling-request-resolution}
 
