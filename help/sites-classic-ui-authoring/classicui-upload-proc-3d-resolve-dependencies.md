@@ -22,7 +22,7 @@ ht-degree: 61%
 
 As dependências do arquivo de modelo 3D principal, como os arquivos de mapa de textura, são resolvidas automaticamente sempre que possível. Essa funcionalidade é obtida fazendo o AEM pesquisar nas pastas de Ativos próximas por arquivos com os mesmos nomes encontrados no arquivo 3D. Se uma ou mais dependências não puderem ser resolvidas durante a fase de processamento Criando pré-visualização, o cartão do ativo exibirá a seguinte mensagem de banner vermelho em [!UICONTROL Visualização de cartão]:
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 **Para resolver dependências de arquivo**:
 
