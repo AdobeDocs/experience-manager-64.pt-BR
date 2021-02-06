@@ -27,7 +27,7 @@ AEM conteúdo pode ser facilmente renderizado por [Servlets padrão Sling](https
 
 Essas renderizações predefinidas normalmente caminham pelo repositório e retornam o conteúdo como está.
 
-AEM, via Sling, também oferece suporte ao desenvolvimento e implantação de renderizadores personalizados de sling para ter total controle do schema e do conteúdo renderizados.
+AEM, via Sling, também oferece suporte ao desenvolvimento e implantação de renderizadores personalizados de sling para ter total controle do schema e conteúdo renderizados.
 
 Os renderizadores padrão dos serviços de conteúdo preenchem a lacuna entre os Sling Defaults predefinidos e o Custom Development que permite a personalização e o controle de muitos aspectos do conteúdo renderizado sem desenvolvimento.
 
@@ -37,7 +37,7 @@ O diagrama a seguir mostra a renderização dos serviços de conteúdo.
 
 ## Solicitando JSON {#requesting-json}
 
-Use **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto solicita JSON.**
+Use **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto solicita JSON.]
 
 <table>
  <tbody>
