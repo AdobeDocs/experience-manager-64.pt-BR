@@ -38,7 +38,7 @@ Ao abrir um informativo/email configurado para integração com o Adobe Campaign
 
 Uma descrição desses componentes encontra-se na seção a seguir.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Cabeçalho (Campaign) {#heading-campaign}
 
@@ -59,7 +59,7 @@ A edição do componente **Cabeçalho (Campaign)** é feita diretamente. Deixe e
 
 O exemplo a seguir mostra um componente Cabeçalho (Campaign) sendo exibido.
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### Imagem (Campaign) {#image-campaign}
 
@@ -69,7 +69,7 @@ Você pode fazer upload de uma imagem e depois editá-la e manipulá-la (por exe
 
 Você pode fazer upload de uma imagem e depois editá-la e manipulá-la (por exemplo, recortar, girar, adicionar link/título/texto). Você pode arrastar e soltar uma imagem do [Localizador de conteúdo](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) diretamente no componente ou na caixa de diálogo Editar. Você também pode clicar duas vezes na área central da caixa de diálogo Editar para navegar pelo seu sistema de arquivos local e fazer upload de uma imagem. As duas guias da caixa de diálogo Editar também controla todas as definições e manipulações da imagem:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 Quando uma imagem é carregada, você pode configurar o seguinte:
 
