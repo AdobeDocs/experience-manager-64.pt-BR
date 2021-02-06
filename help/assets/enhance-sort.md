@@ -87,5 +87,5 @@ O AEM Assets permite que você classifique cronologicamente as entradas da linha
 
 1. Clique/toque no ícone **[!UICONTROL Classificar]** ao lado do rótulo **[!UICONTROL Data]**. Com base na sua seleção, as anotações são listadas na ordem cronológica/reversa em que foram adicionadas ao ativo.
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
+   ![chlimage_1-401](assets/chlimage_1-401.png)
 
