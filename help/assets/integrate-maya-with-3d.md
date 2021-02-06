@@ -51,7 +51,7 @@ Consulte também [Integrar AEM 3D com o AutoDesk 3ds Max](integrating-aem-3d-wit
 
 1. Adicione o caminho para a pasta executável Maya à variável de ambiente do Windows PATH.
 
-   Por exemplo, no Windows Server 2012, toque em **[!UICONTROL Start] > [!UICONTROL Painel de controle do Campaign] > [!UICONTROL Sistema e Segurança] > [!UICONTROL Sistema] > [!UICONTROL Definições Avançadas do Sistema] > [!UICONTROL Variáveis de Ambiente&lt;a111/>.]** Anexe o caminho completo à pasta `Maya2016\bin` à variável `Path`do sistema.
+   Por exemplo, no Windows Server 2012, toque em **[!UICONTROL Start] > [!UICONTROL Painel de controle do Campaign] > [!UICONTROL Sistema e Segurança] > [!UICONTROL Sistema] > [!UICONTROL Definições Avançadas do Sistema] > [!UICONTROL Variáveis de Ambiente]**. Anexe o caminho completo à pasta `Maya2016\bin` à variável `Path`do sistema.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
