@@ -65,7 +65,7 @@ AtivadoUma opção de alternância que controla se o modelo é referenciável
 
 ### Estrutura {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-29](assets/chlimage_1-21.png)
 
 Para adicionar funções de comunidade, arraste do lado direito para a esquerda na ordem em que os links de menu do site devem aparecer. Os estilos serão aplicados ao modelo durante a criação do site.
 
