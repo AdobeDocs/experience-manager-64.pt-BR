@@ -58,7 +58,7 @@ Você pode visualização informações sobre usuários locais, incluindo nome, 
 Quando você adiciona um usuário convidado, a segurança do documento envia automaticamente ao usuário uma solicitação de e-mail de registro. Você também pode gerar manualmente um email de inscrição para enviar a um usuário convidado que ainda não se registrou. Você pode desejar fazer isso, por exemplo, para enviar um novo convite se o email de inscrição de um usuário convidado expirar.
 
 1. No console de administração, clique em Serviços > Segurança do Documento > Usuários convidados e locais.
-1. Na lista do usuário, marque a caixa de seleção para cada usuário para enviar um email de inscrição e clique em Reenviar email de convite.
+1. Na lista do usuário, marque a caixa de seleção para cada usuário para enviar um e-mail de inscrição e clique em Reenviar e-mail de convite.
 1. Revise a lista de usuários selecionados e clique em OK.
 
 ## Redefinir uma senha de usuário local {#reset-a-local-user-password}
