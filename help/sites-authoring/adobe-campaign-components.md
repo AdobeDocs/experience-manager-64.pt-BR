@@ -51,7 +51,7 @@ O componente de cabeçalho pode:
 
 A edição do componente **Cabeçalho (Campaign)** é feita diretamente. Deixe em branco para utilizar o título da página.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 É possível configurar os seguintes itens:
 
@@ -266,7 +266,7 @@ O componente Texto e personalização (Campanha) permite que você insira um blo
 
 A seleção de ícones permite que você formate o texto, incluindo características de fontes, alinhamento, links, listas e recuo. A funcionalidade é basicamente a mesma em [ambas as interfaces](/help/sites-authoring/editing-content.md), embora a aparência seja diferente:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 No editor local, você pode adicionar texto, alterar a justificação, adicionar e remover links, adicionar campos de contexto ou blocos de personalização e entrar no modo de tela inteira. Quando terminar de adicionar texto/personalização, clique na marca de seleção para salvar suas alterações (ou clique no X para cancelar). Consulte [Edição no local](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para obter mais informações.
 
