@@ -744,7 +744,7 @@ A tabela a seguir descreve as etapas neste diagrama
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>O usuário acessa um site e especifica um nome de usuário e senha. Essas informações são enviadas a um servidor de aplicativos J2EE que hospeda a AEM Forms.</p></td> 
   </tr> 
   <tr> 
@@ -752,7 +752,7 @@ A tabela a seguir descreve as etapas neste diagrama
    <td><p>As credenciais do usuário são autenticadas com o serviço Gerenciador de autenticação. Se as credenciais do usuário forem válidas, o fluxo de trabalho continuará para a etapa 3. Caso contrário, uma mensagem será enviada ao usuário informando que ele não é um usuário autorizado.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>As informações do usuário e um design de formulário são recuperados de um banco de dados corporativo protegido. </p></td> 
   </tr> 
   <tr> 
