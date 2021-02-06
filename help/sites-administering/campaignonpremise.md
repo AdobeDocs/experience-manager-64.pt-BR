@@ -132,7 +132,7 @@ Você deve instalar o pacote **AEM Integration** no Adobe Campaign. Para fazer i
 
 1. Clique em **Instalar um pacote padrão** e selecione o pacote **AEM Integration**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Clique em **Próximo** e em **Start**.
 
