@@ -57,7 +57,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
    O verificador ortográfico padrão em seu navegador verifica a ortografia no Editor de texto. Para gerenciar a ortografia e a verificação gramatical, edite as configurações do verificador ortográfico do navegador ou instale plug-ins/suplementos do navegador para verificar a ortografia e a gramática.
 
-   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre os atalhos de teclado do Editor de texto[ em Atalhos de teclado do Gerenciamento de correspondência.](/help/forms/using/keyboard-shortcuts.md#p-formatting-p)
+   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre os atalhos de teclado do Editor de texto](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) em Atalhos de teclado do Gerenciamento de correspondência.[
 
 1. Um editor de texto é aberto e insere o texto. Use a barra de ferramentas na parte superior da página para formatar o texto, inserir condições, links e quebras de página.
 
