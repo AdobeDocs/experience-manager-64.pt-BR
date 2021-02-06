@@ -36,7 +36,7 @@ Clientlibs são necessários para o funcionamento correto (JavaScript) e o estil
 
 Quando houver uma [função da comunidade](functions.md) para um recurso, todos os componentes e configurações necessários, incluindo os clientlibs necessários, estarão presentes no site da comunidade. Somente se componentes adicionais estiverem disponíveis para os autores precisariam ser adicionados clientlibs adicionais.
 
-Quando faltam os clientlibs necessários, a adição de um componente Comunidades a uma página[ pode resultar em erros de javascript, bem como em uma aparência inesperada.](author-communities.md)
+Quando faltam os clientlibs necessários, a adição de um componente Comunidades a uma página](author-communities.md) pode resultar em erros de javascript, bem como em uma aparência inesperada.[
 
 ### Exemplo: Revisões feitas sem Clientlibs {#example-placed-reviews-without-clientlibs}
 
@@ -92,5 +92,5 @@ Para adicionar uma clientlib para um site da comunidade usando [CRXDE Lite](../.
 
 Usando o exemplo [Introdução ao AEM Communities](getting-started.md), onde `site-name` é *engajar*, esta é a forma como a clientliblist aparecerá se o componente de revisão for adicionado:
 
-![chlimage_1-248](assets/chlimage_1-247.png)
+![chlimage_1-247](assets/chlimage_1-247.png)
 
