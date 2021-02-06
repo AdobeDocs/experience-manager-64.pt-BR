@@ -166,7 +166,7 @@ Você pode adicionar páginas, ativos, tags ou dicionários i18n ao trabalho de 
 
 1. Clique ou toque em Adicionar e Páginas/Ativos.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
 1. Selecione o item na extremidade superior da ramificação que deseja adicionar e clique ou toque no ícone de marca de seleção. É possível selecionar várias vezes.
 
