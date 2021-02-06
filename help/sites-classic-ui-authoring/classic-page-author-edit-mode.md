@@ -482,7 +482,7 @@ O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá ex
 
 Fornece os campos Nome de usuário e Senha.
 
-![chlimage_1-21](assets/chlimage_1-29.png)
+![chlimage_1-29](assets/chlimage_1-29.png)
 
 É possível configurar:
 
