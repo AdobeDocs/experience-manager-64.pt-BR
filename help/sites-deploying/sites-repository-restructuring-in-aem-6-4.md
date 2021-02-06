@@ -392,7 +392,7 @@ Conforme descrito na página pai [Reestruturação do repositório AEM 6.4](/hel
    <td><strong>Orientação relativa à reestruturação</strong></td> 
    <td><p>Qualquer uso personalizado dessas Bibliotecas de clientes deve fazer referência à Biblioteca de clientes por categoria e não por caminho.</p> 
     <ol> 
-     <li>Todas as referências à Biblioteca de clientes por caminho no Local anterior devem ser atualizadas para usar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM estrutura de referência da Biblioteca de clientes</a>.</li> 
+     <li>Quaisquer referências à Biblioteca de clientes por caminho no Local anterior devem ser atualizadas para usar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM estrutura de referência da Biblioteca de clientes</a>.</li> 
      <li>Se AEM estrutura de referência da Biblioteca do cliente não puder ser usada, o caminho absoluto das Bibliotecas do cliente poderá ser referenciado pelo servlet AEM Proxy da Biblioteca do cliente:</li> 
     </ol> 
     <ul> 
@@ -470,7 +470,7 @@ Conforme descrito na página pai [Reestruturação do repositório AEM 6.4](/hel
    <td><strong>Orientação relativa à reestruturação</strong></td> 
    <td><p>Qualquer uso personalizado dessas Bibliotecas de clientes deve fazer referência à Biblioteca de clientes por categoria e não por caminho.</p> 
     <ol> 
-     <li>Quaisquer referências à Biblioteca de clientes por caminho no Local anterior devem ser atualizadas para usar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM estrutura de referência da Biblioteca de clientes</a>.</li> 
+     <li>Todas as referências à Biblioteca de clientes por caminho no Local anterior devem ser atualizadas para usar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM estrutura de referência da Biblioteca de clientes</a>.</li> 
      <li>Se AEM estrutura de referência da Biblioteca de clientes não puder ser usada, o caminho absoluto das Bibliotecas de clientes poderá ser referenciado pelo servlet AEM Proxy da Biblioteca de clientes.</li> 
     </ol> 
     <ul> 
