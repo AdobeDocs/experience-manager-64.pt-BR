@@ -154,7 +154,7 @@ Na janela do Workbench para o arquivo aberto na Etapa 1, selecione `lightening (
 
 Na imagem a seguir, o arquivo `init_schema.sql` está pronto para ser executado:
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 #### Atualizar {#refresh}
 
