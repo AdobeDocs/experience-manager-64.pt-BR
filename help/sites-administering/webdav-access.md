@@ -151,7 +151,7 @@ Para conectar-se a AEM via WebDAV em um ambiente do Windows:
 
 1. Abra **Windows Explorer** ou **Explorador de Ficheiros** e clique em **Computador** ou **Este PC**.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. Clique em **Mapear unidade de rede** para start do assistente.
 1. Insira os detalhes do mapeamento:
@@ -170,7 +170,7 @@ Para conectar-se a AEM via WebDAV em um ambiente do Windows:
 
 1. Digite o nome de usuário `admin` e a senha `admin`. O Adobe recomenda que você use a conta de administrador pré-configurada para teste.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. O assistente é fechado e a unidade recém-mapeada é aberta em uma janela do Windows Explorer ou do Explorador de Arquivos.
 
