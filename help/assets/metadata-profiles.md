@@ -24,7 +24,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 1. Clique em um componente e configure suas propriedades na guia **[!UICONTROL Configurações]**. Por exemplo, clique no componente **[!UICONTROL Description]** e edite suas propriedades.
 
-   ![chlimage_1-481](assets/chlimage_1-481.png)
+   ![chlimage_1-401](assets/chlimage_1-481.png)
 
    Edite as seguintes propriedades para o componente **[!UICONTROL Description]**:
 
