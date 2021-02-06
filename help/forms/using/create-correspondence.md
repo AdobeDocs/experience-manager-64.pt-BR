@@ -96,7 +96,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    O verificador ortográfico padrão em seu navegador verifica a ortografia no Editor de texto. Para gerenciar a ortografia e a verificação gramatical, edite as configurações do verificador ortográfico do navegador ou instale plug-ins/suplementos do navegador para verificar a ortografia e a gramática.
 
-   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre os atalhos de teclado do Editor de texto[ em Atalhos de teclado do Gerenciamento de correspondência.](/help/forms/using/keyboard-shortcuts.md#correspondence-management)
+   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre os atalhos de teclado do Editor de texto](/help/forms/using/keyboard-shortcuts.md#correspondence-management) em Atalhos de teclado do Gerenciamento de correspondência.[
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
