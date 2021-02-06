@@ -221,7 +221,7 @@ Você pode usar o arquivo de configuração com as seguintes opções:
 * maxCachedBinarySize: Os binários com tamanho menor ou igual a esse tamanho serão armazenados no cache de memória. O tamanho está em bytes. O padrão é **17408 **(17 KB).
 
 * cacheSize: O tamanho do cache. O valor é especificado em bytes. O padrão é **64GB**.
-* secret: Somente para ser usado se estiver usando replicação sem binários para configuração compartilhada de armazenamento de dados.
+* secret: Somente para ser usado se estiver usando replicação sem binários para configuração de armazenamento de dados compartilhado.
 * stagingSplitPercentage: A porcentagem do tamanho do cache configurada para ser usada para fazer uploads assíncronos. O valor padrão é **10**.
 * uploadThreads: O número de threads de uploads usados para uploads assíncronos. O valor padrão é **10**.
 * stagingPurgeInterval: O intervalo, em segundos, para expurgar os carregamentos concluídos do cache de preparo. O valor padrão é **300** segundos (5 minutos).
