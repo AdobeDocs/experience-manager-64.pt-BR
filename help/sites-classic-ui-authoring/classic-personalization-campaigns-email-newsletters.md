@@ -168,7 +168,7 @@ Emails/informativos podem ser publicados no seu Serviço de email seguindo estas
 
 ### Atualização de um email publicado {#updating-a-published-e-mail}
 
-O botão **Atualizar** na caixa de diálogo Publicar permite atualizar um boletim informativo já publicado em um Provedor de serviço de email. Caso o informativo ainda não tenha sido publicado, e você clicar no botão **Atualizar**, a mensagem **O informativo não está publicado** será exibida.
+O botão **Atualizar** na caixa de diálogo Publicar permite atualizar um boletim informativo já publicado em um Provedor de serviço de E-mail. Caso o informativo ainda não tenha sido publicado, e você clicar no botão **Atualizar**, a mensagem **O informativo não está publicado** será exibida.
 
 Para atualizar um email publicado:
 
