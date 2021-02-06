@@ -105,7 +105,7 @@ Usando o exemplo do [Tutorial de ativação](getting-started-enablement.md):
 
 * Publicar novamente o site da comunidade
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 #### TagIDs de pré-filtro {#pre-filter-tagids}
 
