@@ -134,7 +134,7 @@ Para definir seu novo segmento:
 
 1. Depois de [acessar os segmentos](/help/sites-administering/segmentation.md#accessing-segments), clique ou toque no botão Criar e selecione **Criar segmento do ContextHub**.
 
-   ![chlimage_1-311](assets/chlimage_1-311.png)
+   ![chlimage_1-310](assets/chlimage_1-311.png)
 
 1. No **Novo segmento ContextHub**, insira um título para o segmento, bem como um valor de aumento, se necessário, e toque ou clique em **Criar**.
 
