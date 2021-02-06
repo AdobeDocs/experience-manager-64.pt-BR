@@ -169,7 +169,7 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 1. Estilo do texto do hiperlink para exibi-lo como um botão na Comunicação interativa usando as seguintes etapas:
 
    1. Toque no componente de texto e selecione ![edit](assets/edit.png) (Editar).
-   1. Na seção **Borda**, especifique **1.5px** como **Largura da Borda**, selecione **Sólido** como **Estilo da Borda** e especifique **46px&lt;a11111/> como &lt;a 12/>Raio da borda**.****
+   1. Na seção **Borda**, especifique **1.5px** como **Largura da Borda**, selecione **Sólido** como **Estilo da Borda** e especifique **46px** como &lt;a 12/>Raio da borda **.**
    1. Selecione Vermelho como a cor de plano de fundo do botão na seção **Plano de fundo**.
    1. No campo **Margin** para a seção **Dimension e Posição**, toque no ícone **Editar simultaneamente** e defina a margem **Right** como **450px**. Os campos Superior, Inferior e Esquerdo são definidos como vazios.
 
