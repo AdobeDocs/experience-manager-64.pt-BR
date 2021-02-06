@@ -175,7 +175,7 @@ Se você quiser exibir a linha do tempo do documento:
       Quando uma página for ativada, uma nova linha será iniciada. Cada vez que o documento é editado, uma nova cor aparece.
 
       No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial e a linha amarela indica que a página foi editada em algum momento durante a versão vermelha etc.
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. Clique em:
 
