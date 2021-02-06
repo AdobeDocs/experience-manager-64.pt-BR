@@ -102,7 +102,7 @@ Você pode excluir uma oferta enquanto visualiza o conteúdo de uma pasta em uma
 
 Procure ofertas de qualquer marca usando palavras-chave para correspondência do título.
 
-![chlimage_1-311](assets/chlimage_1-310.png)
+![chlimage_1-310](assets/chlimage_1-310.png)
 
 Os critérios de pesquisa atuais aparecem ao lado dos resultados da pesquisa. Você também pode classificar os resultados por coluna em ordem crescente ou decrescente. É possível realizar uma pesquisa em qualquer pasta de qualquer biblioteca de ofertas. Os resultados da pesquisa serão os mesmos, independentemente da pasta atual.
 
