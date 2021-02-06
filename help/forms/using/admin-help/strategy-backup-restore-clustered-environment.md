@@ -165,7 +165,7 @@ Se o cluster inteiro falhar devido a falhas como falhas no banco de dados, é ne
    1. Exclua o arquivo clusterNode/revision.log em todos os nós de cluster.
    1. Exclua o .lock em todos os nós do cluster, se houver.
    1. Exclua repository/system.id todos os nós de cluster, se houver.
-   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties em todos os nós de cluster, se houver.
+   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties em todos os nós do cluster, se houver.
    1. Restaure repository/cluster_node.id para nós de cluster individuais.
 
 >[!NOTE]
