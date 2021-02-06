@@ -50,7 +50,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 * **b (Modo binário)** Se você estiver procurando combinações específicas de bytes no tráfego, ative o modo binário. A saída conterá a saída hexadecimal e de caracteres.
 * **t (entradas de registro de carimbo de data e hora)** Adiciona um carimbo de data e hora a cada saída de registro. O carimbo de data/hora está em segundos, portanto ele pode não ser adequado para verificar solicitações únicas. Use-o para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy em um período de tempo mais longo.
 * **log file  &lt;filename> (write to log file)** Grava a conversa client-server em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
-* **i  &lt;numindentions> (adicionar recuo)** Cada conexão ativa é recuada para melhor leitura. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
+* **i  &lt;numindentions> (adicionar recuo)** Cada conexão ativa é recuada para melhorar a legibilidade. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
 
 ## Usos da ferramenta Servidor Proxy {#uses-of-the-proxy-server-tool}
 
