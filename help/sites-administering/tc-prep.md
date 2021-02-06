@@ -69,7 +69,7 @@ O procedimento a seguir usa a interface otimizada ao toque para criar uma cópia
 
 1. Clique ou toque em Criar e, em seguida, clique ou toque em Criar página.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Selecione o modelo de página e clique ou toque em Avançar.
 1. No campo Nome, digite o código do país no formato `<language-code>` ou `<language-code>_<country-code>`, por exemplo `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
