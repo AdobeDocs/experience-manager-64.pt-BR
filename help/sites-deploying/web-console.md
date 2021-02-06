@@ -77,7 +77,7 @@ Permite criar uma instância do objeto de funcionalidade necessário.
 
 Selecionar qualquer entrada do lista exibirá os parâmetros relacionados a essa configuração:
 
-![chlimage_1-29](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 Em seguida, você pode atualizar os parâmetros conforme necessário e:
 
