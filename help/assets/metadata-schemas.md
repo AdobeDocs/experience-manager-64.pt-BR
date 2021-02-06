@@ -222,7 +222,7 @@ A AEM Assets mapeia os seguintes tipos MIME e formulários de schema:
 
 ## Conceder acesso a schemas de metadados {#granting-access-to-metadata-schemas}
 
-O recurso de schema de metadados está disponível somente para administradores. No entanto, os administradores podem fornecer acesso a usuários que não sejam administradores, fornecendo **[!UICONTROL as permissões &lt;a0/>Create]**, **[!UICONTROL Modify]** e **[!UICONTROL Delete]** na pasta `/conf`.
+O recurso de schema de metadados está disponível somente para administradores. No entanto, os administradores podem fornecer acesso a usuários que não sejam administradores, fornecendo **[!UICONTROL as permissões Create]**, **[!UICONTROL Modify]** e **[!UICONTROL Delete]** na pasta `/conf`.
 
 ## Aplicar metadados específicos da pasta {#applying-folder-specific-metadata}
 
@@ -273,7 +273,7 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve-o como `my_default`.
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo **Categoria** e torne o campo obrigatório.
 
@@ -283,7 +283,7 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 
 1. Navegue até a pasta e carregue alguns ativos com metadados ausentes para o campo obrigatório adicionado ao formulário personalizado. A visualização de cartão para os ativos exibe uma mensagem para os metadados ausentes do campo obrigatório.
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 1. (Opcional) Acesse `http://[server]:[port]/system/console/components/`. Configure e ative o componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está desativado por padrão. Defina uma frequência na qual o AEM verifica a validade dos metadados nos ativos.
 Essa configuração adiciona uma propriedade `hasValidMetadata` ao jcr:content de ativos. Usando essa propriedade, AEM pode filtrar os resultados em uma pesquisa.
