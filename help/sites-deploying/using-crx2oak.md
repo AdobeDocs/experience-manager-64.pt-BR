@@ -43,7 +43,7 @@ A ferramenta pode ser usada para:
 * Copiando dados entre vários repositórios Oak
 * Conversão de dados entre diferentes implementações do Oak MicroKernel.
 
-O suporte para migrar repositórios usando armazenamentos Blob externos (comumente conhecidos como armazenamentos de dados) é fornecido em combinações diferentes. Um caminho de migração possível é de um repositório CRX2 que está usando um `FileDataStore` externo para um repositório Oak usando um `S3DataStore`.
+O suporte para migrar repositórios usando armazenamentos de blob externos (comumente conhecidos como armazenamentos de dados) é fornecido em combinações diferentes. Um caminho de migração possível é de um repositório CRX2 que está usando um `FileDataStore` externo para um repositório Oak usando um `S3DataStore`.
 
 O diagrama a seguir ilustra todas as possíveis combinações de migração suportadas pelo CRX2Oak:
 
