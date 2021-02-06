@@ -49,7 +49,7 @@ Siga estas etapas para fazer upload de seus recursos compartilhados para um arti
 1. Selecione o artigo no bloco **Gerenciar artigos**.
 1. Clique em **Carregar recursos compartilhados** para fazer upload dos recursos HTML compartilhados.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 ### A próxima etapa {#the-next-step}
 
