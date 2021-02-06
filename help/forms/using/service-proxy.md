@@ -27,7 +27,7 @@ O proxy de serviço elimina o seguinte:
 
 * O fluxo de trabalho de formulários HTML5 requer a abertura do serviço de envio &quot;/content/xfaforms/submit/default&quot; para os usuários de formulários HTML5. Expõe servidores AEM a uma audiência não intencional mais ampla.
 * O URL do serviço é incorporado no modelo de tempo de execução do formulário. Não é possível alterar o caminho do URL do serviço.
-* O envio é um processo em duas etapas. Para enviar os dados do formulário, o envio requer pelo menos duas viagens ao servidor. Assim, aumenta a carga no servidor.
+* O envio é um processo em duas etapas. Para enviar os dados do formulário, o envio requer pelo menos duas jornadas ao servidor. Assim, aumenta a carga no servidor.
 * Formulários HTML5 enviam dados na solicitação de POST em vez da solicitação de PDF. Para fluxo de trabalho que envolve formulários PDF e HTML5, são necessários dois métodos diferentes de processamento de envios.
 
 ## Topologias {#topologies-br}
