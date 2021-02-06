@@ -220,7 +220,7 @@ Nesta seção, você cria as seguintes páginas que usam o modelo de página de 
 
 1. Na página de boas-vindas do AEM ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), clique em Sites.
 
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. Na árvore de pastas, selecione a pasta **[!UICONTROL Sites]** e clique em **[!UICONTROL Novo > Nova página]**.
 1. Na janela **[!UICONTROL Criar página]**, digite o seguinte:
@@ -266,7 +266,7 @@ Nesta seção, você cria as seguintes páginas que usam o modelo de página de 
    * **[!UICONTROL Tipo]**: String
    * **[!UICONTROL Valor]**: /etc/designs/mywebsite
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. Em uma nova guia ou janela do navegador da Web, abra [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) para ver a página Produtos:
 
@@ -411,7 +411,7 @@ Na primeira versão do componente de navegação superior (topnav), os itens de 
 
 Sua navegação superior terá a seguinte aparência:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 #### Criação do componente de navegação superior {#creating-the-top-navigation-component-1}
 
@@ -1498,7 +1498,7 @@ Nesta seção, você adiciona seu componente de pesquisa ao sistema de parágraf
 1. No Sidekick, clique no triângulo para retornar ao modo **[!UICONTROL Editar]**.
 1. Arraste o componente **[!UICONTROL My Search]** do Sidekick para o quadro parsys. A sua aparência é a seguinte:
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Navegue até a página **[!UICONTROL Produtos]**. Procure os clientes na caixa de entrada e pressione **[!UICONTROL Enter]**. Você é redirecionado para a página **[!UICONTROL Pesquisar]**. Mude para o modo **[!UICONTROL Pré-visualização]**: a saída está em um formato semelhante ao seguinte:
 
