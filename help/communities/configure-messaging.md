@@ -133,7 +133,7 @@ Quando a configuração for concluída, será necessário restaurar a herança s
 
 Depois que a herança for cancelada, será possível selecionar o ícone `configure` para abrir a caixa de diálogo de configuração.
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### Guia Básica {#basic-tab-1}
 
