@@ -40,5 +40,5 @@ ht-degree: 0%
 1. Na guia **[!UICONTROL Build Settings]**, clique em **[!UICONTROL Todos]** e em **[!UICONTROL Combinado]**.
 1. Na lista **[!UICONTROL Settings]**, expanda **[!UICONTROL Assinatura de código]**.
 1. Para **[!UICONTROL Identidade de assinatura de código]**, selecione a assinatura apropriada. Certifique-se de que a mesma assinatura esteja selecionada para **[!UICONTROL Depurar]**, **[!UICONTROL Versão]** e **[!UICONTROL Qualquer SDK do iOS]**.
-1. Em **[!UICONTROL PROJECT]**, selecione **[!UICONTROL AEM Forms]** e certifique-se de que a assinatura apropriada está selecionada para **[!UICONTROL Identidade de assinatura de código]**, **[!UICONTROL Depurar]**, **[!UICONTROL Versão]** e **[!UICONTROL Qualquer SDK do iOS&lt;a1111111/>.]**
+1. Em **[!UICONTROL PROJECT]**, selecione **[!UICONTROL AEM Forms]** e certifique-se de que a assinatura apropriada está selecionada para **[!UICONTROL Identidade de assinatura de código]**, **[!UICONTROL Depurar]**, **[!UICONTROL Versão]** e **[!UICONTROL Qualquer SDK do iOS]**.
 1. Crie e distribua aplicativos AEM Forms. Para obter instruções detalhadas sobre como criar e distribuir aplicativos AEM Forms, consulte [Criar o instalador para aplicativos AEM Forms](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app).
