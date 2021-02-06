@@ -41,7 +41,7 @@ As páginas e a seção a seguir fornecem informações e diretrizes:
 
 * [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
-   As Diretrizes do WCAG 2.0 fornecem uma lista de critérios de sucesso para os níveis de conformidade dos Níveis A e AA. Esta página detalha os critérios de sucesso abordados pelo AEM, juntamente com como os cumprir ao gerar conteúdo.
+   As Diretrizes do WCAG 2.0 fornecem uma lista de critérios de sucesso para os níveis de conformidade dos Níveis A e AA. Esta página detalha os critérios de sucesso abordados pelo AEM, juntamente com como atendê-los ao gerar conteúdo.
 
 * [Guia rápido para WCAG 2.0](/help/managing/qg-wcag.md)
 
