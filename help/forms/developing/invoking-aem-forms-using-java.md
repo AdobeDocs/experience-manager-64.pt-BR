@@ -89,107 +89,107 @@ A tabela a seguir lista os arquivos JAR necessários para chamar os serviços AE
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>Deve ser sempre incluído no caminho de classe de um aplicativo cliente Java.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>Deve ser sempre incluído no caminho de classe de um aplicativo cliente Java.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
    <td><p>Deve ser sempre incluído no caminho de classe de um aplicativo cliente Java.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk//client-libs/&lt;app server=""&gt;</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk//client-libs/&lt;app server=""&gt;<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Obrigatório para chamar o serviço Application Manager.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Necessário para chamar o serviço Assembler. </p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>Necessário para chamar a API de serviço de Backup e Restauração.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Obrigatório para chamar o serviço de formulários com códigos de barras. </p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>Necessário para chamar o serviço Converter PDF. </p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Obrigatório para chamar o serviço Distiller.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>Necessário para chamar o serviço DocConverter.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Necessário para chamar o serviço de Gerenciamento de Documentos.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Necessário para chamar o serviço de Criptografia.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>Obrigatório para chamar o serviço Forms.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>Necessário para chamar o serviço de Integração de dados de formulário.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>Necessário para chamar o serviço Gerar PDF.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>Necessário para chamar o serviço Gerar PDF 3D.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>Necessário para chamar o serviço Gerenciador de Jobs. </p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>Necessário para chamar o serviço de Saída.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>Necessário para chamar o serviço Utilitários PDF ou Utilitários XMP.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>Necessário para chamar o serviço de extensões do Acrobat Reader DC.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>Obrigatório para chamar o serviço Repositório.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs\thirdparty</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs\thirdparty<i></i></p></td>
   </tr>
   <tr>
    <td>
@@ -204,22 +204,22 @@ A tabela a seguir lista os arquivos JAR necessários para chamar os serviços AE
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>Necessário para chamar o serviço de Rights Management.</p><p>Se a AEM Forms estiver implantada em JBoss, inclua todos esses arquivos. </p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p><p>Diretório lib específico do JBoss</p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p><p>Diretório lib específico do JBoss</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>Obrigatório para chamar o serviço de assinatura.</p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>Necessário para chamar o serviço Gerenciador de Tarefas. </p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>Necessário para chamar o serviço de Armazenamento de Confiança. </p></td>
-   <td><p>&lt;&gt;diretório<i> de instalação&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;diretório</i> de instalação&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
  </tbody>
 </table>
@@ -261,7 +261,7 @@ A tabela a seguir lista os arquivos JAR que dependem do modo de conexão e do se
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>se o AEM Forms for chamado usando o modo SOAP, inclua esses arquivos JAR.</p> </td>
-   <td><p>&lt;&gt;diretório<em> de instalação&gt;/sdk/client-libs/thirdparty</em></p> </td>
+   <td><p>&lt;&gt;diretório</em> de instalação&gt;/sdk/client-libs/thirdparty<em></em></p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
