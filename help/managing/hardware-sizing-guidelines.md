@@ -77,7 +77,7 @@ Além disso, os ambientes podem variar, desde um sistema de servidor único exec
 
 As seções a seguir fornecem orientações sobre como calcular os requisitos de hardware, levando em consideração várias considerações. Para sistemas grandes, sugerimos que você execute um conjunto simples de testes de benchmark internos em uma configuração de referência.
 
-A otimização do desempenho é uma tarefa fundamental que precisa ser realizada antes que qualquer benchmarking para um projeto específico possa ser feito. Certifique-se de aplicar as recomendações fornecidas na [documentação de Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) antes de executar qualquer teste de benchmark e usar seus resultados para qualquer cálculo de dimensionamento de hardware.
+A otimização do desempenho é uma tarefa fundamental que precisa ser realizada antes que qualquer análise comparativa de um projeto específico possa ser feita. Certifique-se de aplicar as recomendações fornecidas na [documentação de Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) antes de executar qualquer teste de benchmark e usar seus resultados para qualquer cálculo de dimensionamento de hardware.
 
 Os requisitos de dimensionamento de hardware para casos de uso avançado precisam ser baseados em uma avaliação detalhada do desempenho do projeto. As características dos casos de uso avançado que exigem recursos de hardware excepcionais incluem combinações de:
 
