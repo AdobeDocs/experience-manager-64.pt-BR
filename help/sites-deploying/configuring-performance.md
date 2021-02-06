@@ -387,10 +387,10 @@ Em ambos os casos, você pode definir o número esperado de transações por seg
 
 | Componente | Tipo de teste | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Página inicial - Usuário único | Média | 1 | 3 |  |  |
-|  | Pico | 3 | 3 |  |  |
+| Página inicial - Usuário único | Média | 1 | 1 |  |  |
+|  | Pico | 1 | 3 |  |  |
 | Usuários da página inicial 100 | Média | 100 | 3 |  |  |
-|  | Pico | 100 | 1 |  |
+|  | Pico | 100 | 3 |  |
 
 #### Testes de componentes combinados {#combined-component-tests}
 
@@ -434,7 +434,7 @@ Ao elaborar esses testes, lembre-se de que nem todos os cenários ocorrerão reg
 |---|---|---|---|---|---|
 | Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
 |  | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de parada. |
-|  | Sequência vazia | 10 | 3 |  | Procurando uma string vazia. |
+|  | Sequência vazia | 10 | 1 |  | Procurando uma string vazia. |
 |  | Caracteres especiais | 10 | 3 |  | Procurando caracteres especiais. |
 
 #### Testes de resistência {#endurance-tests}
@@ -447,7 +447,7 @@ Determinados problemas só serão encontrados depois que o sistema estiver em ex
 |  | Pesquisar   | 10 | 1 |  |  |
 |  | Notícias | 20 | 2 |  |  |
 |  | Eventos | 10 | 1 |  |  |
-|  | Ativações | 1 | 3 |  | Simulação do comportamento do autor. |
+|  | Ativações | 1 | 1 |  | Simulação do comportamento do autor. |
 
 ### Otimização {#optimization}
 
