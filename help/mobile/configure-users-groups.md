@@ -126,5 +126,5 @@ No momento, o bloco não tem ações que exijam permissões, no entanto, a pági
 
 A imagem abaixo mostra as opções de Download e Edição para um aplicativo:
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-29](assets/chlimage_1-21.png)
 
