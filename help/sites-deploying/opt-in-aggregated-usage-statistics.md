@@ -30,7 +30,7 @@ Você pode optar pela coleta de estatísticas de uso usando a interface de usuá
 >
 >Existem várias normas relativas à proteção de dados e à privacidade; incluindo, por exemplo, o RGPD e o CCPA. A AEM Sites está pronta para ajudar os clientes com suas obrigações de proteção de dados e conformidade com a privacidade. Esta página orienta os clientes pelos procedimentos para aceitar (ou recusar) a Coleta de Estatísticas de Uso Agregado.
 >
->Para obter mais informações, consulte também o Centro de Privacidade do Adobe[.](https://www.adobe.com/privacy.html)
+>Para obter mais informações, consulte também o Centro de Privacidade do Adobe](https://www.adobe.com/privacy.html).[
 
 >[!NOTE]
 >
