@@ -171,7 +171,7 @@ Considere as seguintes práticas recomendadas para solucionar problemas de desem
 * O XML de dados de preenchimento prévio deve ser compatível com o schema do modelo de formulário associado ao formulário adaptável.
 * Inclua as seções `afBoundedData` e `afUnBoundedData` no XML de pré-preenchimento para preencher os campos vinculados e não vinculados em um formulário adaptável.
 
-* Para formulários adaptáveis baseados no modelo de dados de formulário, a AEM Forms fornece serviço de preenchimento prévio do modelo de dados de formulário pronto para uso. O serviço de preenchimento prévio query fontes de dados para objetos de modelo de dados no formulário adaptável e preenche previamente os valores de campo ao renderizar o formulário.
+* Para formulários adaptáveis com base no modelo de dados de formulário, a AEM Forms fornece serviço de preenchimento rápido do modelo de dados de formulário. O serviço de preenchimento prévio query fontes de dados para objetos de modelo de dados no formulário adaptável e preenche previamente os valores de campo ao renderizar o formulário.
 * Você também pode usar os protocolos de arquivo, crx, service ou http para preencher formulários adaptáveis.
 * A AEM Forms oferece suporte a serviços de preenchimento prévio personalizados que podem ser conectados como um serviço OSGi para preencher previamente formulários adaptáveis.
 
