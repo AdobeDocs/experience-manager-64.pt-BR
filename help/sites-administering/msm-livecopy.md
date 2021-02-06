@@ -88,7 +88,7 @@ Você pode editar ou excluir uma configuração de blueprint existente:
 Você pode criar uma cópia ao vivo de qualquer página ou ramificação. Ao criar a live copy, você pode especificar as configurações de implantação a serem usadas para sincronizar o conteúdo:
 
 * As configurações de roll-out selecionadas se aplicam à página de live copy e às páginas secundárias.
-* Se você não especificar nenhuma configuração de implantação, o MSM determinará quais configurações de implantação usar. Consulte [Especificando a Configuração de Rollout a Ser Usada](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
+* Se você não especificar nenhuma configuração de implantação, o MSM determinará quais configurações de implantação usar. Consulte [Especificação da Configuração de Rollout a Ser Usada](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
 
 Você pode criar uma cópia ao vivo de qualquer página:
 
