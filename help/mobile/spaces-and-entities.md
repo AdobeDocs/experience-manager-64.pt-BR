@@ -243,7 +243,7 @@ Você tem a opção de escolher **Publicar árvore** ou **Publicação rápida**
 
 1. Selecione uma entidade na lista do console de espaço e clique em **Árvore de publicação **para publicar essa entidade e seus filhos.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
    **Ou**,
 
