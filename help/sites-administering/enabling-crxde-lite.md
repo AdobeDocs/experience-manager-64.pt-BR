@@ -30,7 +30,7 @@ Quando isso acontece, a navegação para `https://serveraddress:4502/crx/de/inde
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Embora essa recomendação tenha como objetivo reduzir ao máximo as superfícies de ataque, os administradores de sistema às vezes podem precisar de acesso ao CRXDE Lite para navegar pelo conteúdo ou depurar problemas nas instâncias de produção.
+Embora essa recomendação tenha como objetivo reduzir ao máximo as superfícies de ataque, os administradores de sistema às vezes podem precisar de acesso ao CRXDE Lite para navegar pelo conteúdo ou depurar problemas em instâncias de produção.
 
 Se estiver desativado, você pode ativar o CRXDE Lite seguindo o procedimento abaixo:
 
