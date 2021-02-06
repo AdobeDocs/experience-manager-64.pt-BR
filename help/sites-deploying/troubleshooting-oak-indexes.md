@@ -102,7 +102,7 @@ A reindexação pode ser considerada como &quot;completamente emperrada&quot; so
 
    * Por exemplo, se não houver mensagens durante uma hora, ou se o progresso for tão lento que levará uma semana ou mais para ser concluído.
 
-* A reindexação fica presa em um loop sem fim se exceções repetidas forem exibidas nos arquivos de log (por exemplo, `OutOfMemoryException`) no thread de indexação. A repetição das mesmas exceções no registro indica que Oak tenta indexar a mesma coisa repetidamente, mas falha no mesmo problema.
+* A reindexação é travada em um loop sem fim se exceções repetidas forem exibidas nos arquivos de log (por exemplo, `OutOfMemoryException`) no thread de indexação. A repetição das mesmas exceções no registro indica que Oak tenta indexar a mesma coisa repetidamente, mas falha no mesmo problema.
 
 Para identificar e corrigir um processo de reindexação travado, faça o seguinte:
 
