@@ -70,7 +70,7 @@ Você pode arrastar ativos da interface do usuário Ativos para uma coleção. V
 
    Como alternativa, toque/clique no ícone **[!UICONTROL Para coleção]** na barra de ferramentas.
 
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. Na página **[!UICONTROL Adicionar à coleção]**, toque/clique no ícone **[!UICONTROL Criar coleção]** na barra de ferramentas.
 
@@ -110,7 +110,7 @@ Para criar uma coleção inteligente, siga as etapas:
 
    O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, toque/clique no botão **[!UICONTROL Editar seleção inteligente]**.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ## Adicionar ativos a uma coleção {#adding-assets-to-a-collection}
 
@@ -132,7 +132,7 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 
 1. Na interface do usuário do Assets, toque/clique no ícone de pesquisa na barra de ferramentas.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
 
