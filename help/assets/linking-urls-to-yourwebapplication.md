@@ -191,7 +191,7 @@ A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
 1. Combine todas as partes copiadas anteriormente para criar uma string na seguinte ordem:
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    Por exemplo, usando as informações copiadas dos exemplos nessas etapas, a string apareceria da seguinte maneira:
 
