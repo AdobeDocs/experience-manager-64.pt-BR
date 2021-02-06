@@ -237,11 +237,11 @@ Execute as seguintes etapas para criar um modelo para o canal da Web na pasta **
    | Nome | Título | Número de colunas |
    |---|---|---|
    | detalhes do cliente | Detalhes do cliente | 1 |
-   | cédula | Resumo da Lista | 3 |
+   | cédula | Resumo da Lista | 1 |
    | despesas sumariadas | Resumo das taxas | 2 |
    | chamadas itemisedec | Chamadas discriminadas | 1 |
    | pagamento | Pagar Agora | 2 |
-   | tela | Serviços de valor agregado | 1 |
+   | tela | Serviços de valor agregado | 3 |
 
    A imagem a seguir descreve a árvore de conteúdo depois de adicionar todos os painéis ao modelo:
 
