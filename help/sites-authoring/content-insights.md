@@ -22,7 +22,7 @@ ht-degree: 96%
 
 O Content Insight fornece informações sobre o desempenho de páginas usando análises da web e recomendações de SEO. Use o Content Insight para tomar decisões sobre como modificar páginas ou para saber como alterações anteriores modificaram o desempenho. Para cada página criada, você pode abrir o Content Insight para analisá-la.
 
-![chlimage_1-310](assets/chlimage_1-311.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 O layout da página do Content Insight muda de acordo com as dimensões da tela e a orientação do dispositivo usado.
 
