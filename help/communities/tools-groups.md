@@ -95,6 +95,6 @@ Depois que todas as funções desejadas forem soltas na área do construtor de m
 
 Ao exibir grupos de comunidade no console [Modelos de grupo ](#group-templates-console) principal, é possível selecionar um modelo de grupo existente para edição.
 
-Editar um modelo de grupo não afetará os sites da comunidade já criados a partir do modelo. Em vez disso, é possível editar diretamente a estrutura de um site da comunidade[.](sites-console.md#modify-structure)
+Editar um modelo de grupo não afetará os sites da comunidade já criados a partir do modelo. Em vez disso, é possível editar diretamente a estrutura de um site da comunidade](sites-console.md#modify-structure).[
 
 Esse processo fornece os mesmos painéis que [criar um modelo de grupo](#create-goup-template).
