@@ -54,7 +54,7 @@ O modelo inclui os seguintes fluxos de trabalho:
 
 1. Na página **Criar projeto**, selecione o modelo de projeto de sessão fotográfica e toque/clique em **Próximo**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Insira os detalhes do projeto, incluindo o título, a descrição e o prazo. Adicione usuários e atribua funções variadas a eles. Também é possível adicionar uma miniatura para o projeto.
 
