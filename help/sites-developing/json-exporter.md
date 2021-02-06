@@ -50,7 +50,7 @@ Dentro AEM delivery é obtido usando as extensões `model` e `.json` do seletor.
 
 1. Fornecerá conteúdo como:
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 Como alternativa, é possível fornecer o conteúdo de um fragmento de conteúdo estruturado, direcionando-o especificamente.
 
