@@ -43,7 +43,7 @@ Se você for um usuário convidado e receber uma mensagem de registro por email 
 1. Abra o e-mail de registro de segurança do documento. O URL que a mensagem contém é um link para a página Registro de usuários externos na segurança do documento.
 1. Clique no URL ou copie-o e cole-o no navegador. A página Registro de usuários externos é exibida.
 1. Digite seu nome, número de telefone, endereço, organização e senha nas caixas apropriadas e digite novamente sua senha na caixa Confirmar senha. Sua senha pode ser qualquer combinação de oito caracteres.
-1. Clique em Salvar. Uma mensagem de agradecimento é exibida informando que você deve verificar seu email em busca de uma mensagem de ativação. Agora você deve ativar sua conta para concluir o processo de registro.
+1. Clique em Salvar. Uma mensagem de agradecimento é exibida informando que você deve verificar seu e-mail em busca de uma mensagem de e-mail de ativação. Agora você deve ativar sua conta para concluir o processo de registro.
 
 ## Ativar sua conta de usuário convidada {#activate-your-invited-user-account}
 
