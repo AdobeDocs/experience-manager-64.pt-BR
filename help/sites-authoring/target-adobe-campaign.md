@@ -95,7 +95,7 @@ Para criar um informativo com conteúdo direcionado:
 
 1. Clique em **Padrão** e depois no componente Texto e personalização adicionado. Você verá a mira com uma seta nela. Clique no ícone para direcionar esse componente.
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. Navegue até outro segmento (Masculino), clique em **Adicionar oferta** e clique no ícone de adição +. Em seguida, edite a oferta.
 1. Navegue até outro segmento (Feminino), clique em **Adicionar oferta** e no ícone de adição +. Em seguida, edite essa oferta.
