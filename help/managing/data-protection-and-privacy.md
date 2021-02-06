@@ -38,7 +38,7 @@ A Adobe está fornecendo documentação e procedimentos (com APIs quando dispon�
 >
 >Os dados de outro Serviço sob demanda do Adobe, juntamente com quaisquer solicitações de privacidade relacionadas, exigirão ações nesse serviço.
 >
->Para obter mais informações, consulte o Centro de Privacidade do Adobe[.](https://www.adobe.com/privacy.html)
+>Para obter mais informações, consulte o Centro de Privacidade do Adobe](https://www.adobe.com/privacy.html).[
 
 ## Introdução {#introduction}
 
