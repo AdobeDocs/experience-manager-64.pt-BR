@@ -35,7 +35,7 @@ A Adobe recomenda que você passe pela [integração AEM-Adobe Analytics existen
 
 No AEM, os componentes **Call to Action** - **ClickThroughLink** e **GraphicalLink** - exibidos aqui no sidekick, podem ser mapeados para variáveis do Adobe Analytics.
 
-![chlimage_1-21](assets/chlimage_1-21.jpeg)
+![chlimage_1-29](assets/chlimage_1-21.jpeg)
 
 ### Mapeamento de componentes de Landing page para o Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
