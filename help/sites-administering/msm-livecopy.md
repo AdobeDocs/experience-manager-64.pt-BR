@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: 11710b19c373b014862f892640d1bd4e90c6f411
+source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
 workflow-type: tm+mt
-source-wordcount: '3963'
+source-wordcount: '4019'
 ht-degree: 1%
 
 ---
@@ -175,7 +175,7 @@ Para criar uma cópia ao vivo de um site a partir de uma configuração do bluep
 
 ### Criando uma Live Copy dentro de uma Live Copy (Configuração do Blueprint) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
-Ao criar uma live copy dentro da live copy existente (criada usando uma configuração de blueprint), você pode inserir qualquer cópia de idioma ou capítulos que não foram incluídos quando a live copy foi criada originalmente.
+Ao criar uma cópia ao vivo dentro da live copy existente (criada usando uma configuração de blueprint), você pode inserir qualquer cópia de idioma ou capítulos que não foram incluídos quando a live copy foi criada originalmente.
 
 ## Monitorando sua Live Copy {#monitoring-your-live-copy}
 
@@ -337,6 +337,10 @@ Você pode suspender a herança da live copy para uma página de live copy para 
 >
 >Você também pode [desanexar uma live copy](#detaching-a-live-copy) de seu blueprint para remover todas as conexões. A ação Detach é permanente e não reversível.
 
+>[!NOTE]
+>
+>Se o componente estiver marcado como um container, as ações de cancelamento e suspensão não se aplicam aos componentes filhos. Consulte também [Práticas recomendadas MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter mais informações.
+
 #### Suspender herança das propriedades da página {#suspending-inheritance-from-page-properties}
 
 Para suspender a herança em uma página:
@@ -440,6 +444,10 @@ Para especificar ou alterar a profundidade:
 ### Cancelando herança para um componente {#cancelling-inheritance-for-a-component}
 
 Cancele a herança de cópia ativa de um componente para que ele não seja mais sincronizado com o componente de origem. Você pode ativar a herança posteriormente, se necessário.
+
+>[!NOTE]
+>
+>Se o componente estiver marcado como um container, as ações de cancelamento e suspensão não se aplicam aos componentes filhos. Consulte também [Práticas recomendadas MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter mais informações.
 
 >[!NOTE]
 >
