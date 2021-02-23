@@ -3,9 +3,9 @@ title: Gerenciar [!DNL Adobe Stock] ativos em [!DNL Adobe Experience Manager Ass
 description: Pesquise, busque, licencie e gerencie [!DNL Adobe Stock] ativos de dentro de [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 798fe016f1a1e27cdbb9737709d1f5ea9ef722c9
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1114'
 ht-degree: 13%
 
 ---
@@ -122,7 +122,7 @@ Os usuários podem ver as propriedades dos ativos licenciados e não licenciados
 
 >[!MORELIKETHIS]
 >
->* [Tutorial em vídeo sobre como usar ativos Adobe Stock com ativos Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
->* [Ajuda do plano corporativo Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Tutorial em vídeo sobre como usar ativos Adobe Stock com ativos Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Ajuda do plano corporativo Adobe Stock](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
 >* [Perguntas frequentes sobre a Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
