@@ -3,9 +3,9 @@ title: Compartilhar pastas do AEM Assets com o Creative Cloud
 description: Configuração e práticas recomendadas para permitir que usuários do Adobe Experience Manager Assets troquem pastas de ativos com usuários do Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->O recurso AEM para compartilhamento de pasta do Creative Cloud está obsoleto. O Adobe recomenda usar recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [AEM aplicativo desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Saiba mais sobre as práticas recomendadas de [integração AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>O recurso AEM para compartilhamento de pasta do Creative Cloud está obsoleto. O Adobe recomenda usar recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) ou [AEM aplicativo desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Saiba mais sobre as práticas recomendadas de [integração AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 O Adobe Experience Manager (AEM) pode ser configurado para permitir que os usuários do AEM Assets compartilhem pastas com usuários do Creative Cloud, de modo que eles estejam disponíveis como pastas compartilhadas no serviço Creative Cloud Assets. O recurso pode ser usado para trocar arquivos entre equipes de criação e usuários do AEM Assets, especialmente quando os usuários criativos não têm acesso à instância do AEM Assets (eles não estão na rede corporativa).
 
