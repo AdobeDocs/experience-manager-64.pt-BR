@@ -3,9 +3,9 @@ title: Práticas recomendadas de integração de AEM e Creative Cloud
 description: Práticas recomendadas para integrar uma implantação AEM com a Adobe Creative Cloud, a fim de simplificar os workflows de transferência de ativos e atingir a máxima eficiência
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3572'
 ht-degree: 16%
 
 ---
@@ -200,7 +200,7 @@ Nesses casos, você pode aproveitar a integração AEM/Creative Cloud para melho
 
 Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
-* Para fornecer acesso a um grande número de ativos: Use [o Portal de Marcas da AEM Assets](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), ou a implementação pelo cliente de [Compartilhamento de Ativos](assets-finder-editor.md) AEM infraestrutura de publicação
+* Para fornecer acesso a um grande número de ativos: Use [o Portal de Marcas da AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en), ou a implementação pelo cliente de [Compartilhamento de Ativos](assets-finder-editor.md) AEM infraestrutura de publicação
 
 * Para fornecer acesso a alguns ativos: AEM compartilhamento de pastas com a Adobe Creative Cloud pode ser usado além do AEM Assets Brand Portal ou do Asset Share. Observe que há certas limitações relacionadas a essa integração, abordadas com mais detalhes neste artigo.
 
@@ -296,7 +296,7 @@ Para planejar e executar migrações de ativos do sistema existente para um novo
 
 >[!MORELIKETHIS]
 >
->* [Link de ativo do Adobe](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
+>* [Link de ativo do Adobe](https://helpx.adobe.com/in/enterprise/admin-guide.html/in/enterprise/using/adobe-asset-link.ug.html)
 >* [Práticas recomendadas do aplicativo para desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integração AEM e Adobe Stock](aem-assets-adobe-stock.md)
