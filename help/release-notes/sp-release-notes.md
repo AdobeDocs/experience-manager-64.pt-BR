@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21617'
+source-wordcount: '21579'
 ht-degree: 24%
 
 ---
@@ -87,7 +87,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Exceção de falta de memória observada quando um arquivo ZIP grande é carregado no Experience Manager DAM (NPR-32155).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
 
 * Cancelar a publicação do Brand Portal, na página Gerenciar publicação, falha em subpastas de uma pasta publicada (NPR-31835).
 
@@ -361,7 +361,7 @@ Se você estiver usando o pacote `com.day.cq.dam.handler.standard.msoffice` em s
 
 #### AEM 6.4.6.0 {#experience-manager-6460}
 
-AEM 6.4.6.0 é uma atualização importante que inclui correções e melhorias de desempenho, estabilidade, segurança e essenciais para o cliente lançadas desde a disponibilidade geral do AEM 6.4 em **abril de 2018.**
+AEM 6.4.6.0 é uma atualização importante que inclui correções e melhorias de desempenho, estabilidade, segurança e essenciais para o cliente lançadas desde a disponibilização geral do AEM 6.4 em **abril de 2018.**
 
 Também é cumulativo, o que significa que a versão 6.4.6.0 inclui todos os pacotes de serviço AEM 6.4 lançados antes dela.
 
@@ -585,7 +585,7 @@ Alguns dos principais destaques da AEM 6.4.5.0 são:
 * Página em branco com erros de Javascript no editor depois de instalar a versão mais recente do snapshot 6.4.5. NPR-29475: Hotfix do CQ-4266196
 * Ao adicionar um componente a um parsys, a propriedade de lista do componente de design não é respeitada e é resolvida para um nome de nó de modelo diferente com uma estrutura parsys semelhante. NPR-29509: Hotfix do CQ-4269044
 * a zona cq:dropTargets cobre todo o componente em vez do tamanho da imagem, dificultando a definição de metas com componentes incorporados. NPR-29738: Hotfix do CQ-4268912
-* O componente de imagem não chama o ouvinte &quot;pós-edição&quot; depois que a imagem no editor é usada. Hotfix NPR-29616 para CQ-4268065
+* O componente de imagem não chama o ouvinte &quot;pós-edição&quot; depois que a imagem é usada no editor local. Hotfix NPR-29616 para CQ-4268065
 * Um problema na configuração da postagem social no Facebook. NPR-29212: Hotfix do CQ-4266630
 * Ao promover inicializações de páginas modificadas, as modificações nas ramificações de origem e de inicialização são consideradas. NPR-29308: Hotfix do CQ-4266746
 * A miniatura renderizada no Fragmento do conteúdo mostra a representação interna do calendário do campo Data e hora. NPR-29531: Hotfix do CQ-4269362
@@ -772,7 +772,7 @@ Alguns dos principais destaques da AEM 6.4.4.0 são:
 
 * Migrar integração de ACP e Stock para AEM 6.4.4.0 NPR-27632
 * Publicar mais tarde pasta de ativos vazios com subpastas faz com que as subpastas desapareçam. NPR-27558: Hotfix do CQ-4254701
-* A adição de uma única propriedade String não namespaced\[\] causa XMP write-back incompleto. NPR-26805: Hotfix do CQ-4254142
+* A adição de uma única propriedade String não namespaced\[\] causa um write-back XMP incompleto. NPR-26805: Hotfix do CQ-4254142
 * Depois de rasterizar o pdf de entrada, a saída produzida possui imagens ausentes. NPR-27929: Hotfix do CTG-4150481
 * O Assistente para mover ativos está mostrando uma contagem incorreta de páginas de referência para páginas publicadas. NPR-27833: Hotfix do CQ-4258014
 * O AssetPicker pesquisa apenas a primeira tag para filtrar o resultado ao filtrar com tags. NPR-27778: Hotfix do CQ-4257705
@@ -932,7 +932,7 @@ Alguns dos principais destaques da AEM 6.4.4.0 são:
 
 **Fluxo de trabalho**
 
-* Quando abrimos a caixa de diálogo de item de trabalho completo na notificação do fluxo de trabalho que tem um campo de Tag, clicar em uma marca cruzada adiciona uma propriedade de Tag a ela. NPR-28304: Hotfix do CQ-4261321
+* Quando abrimos a caixa de diálogo de item de trabalho completo na notificação do fluxo de trabalho que tem um campo de tag , clicar em uma marca cruzada adiciona uma propriedade de tag a ela. NPR-28304: Hotfix do CQ-4261321
 * O botão Alternar seleção de usuário na caixa de diálogo Reatribuir Tarefa não está funcionando. NPR-28963: Hotfix do CQ-4264206
 
 **Forms**
@@ -1141,7 +1141,7 @@ Não é possível editar tags por meio de marcação. NPR-26957: Hotfix do CQ-42
 * Somente 10 grupos são listados na página de recursos de ativação, mesmo se a paginação estiver ativada para a listagem de grupos. NPR-26934: Hotfix do CQ-4252985
 * A opção para habilitar/desabilitar a pesquisa para o componente Publicação agendada no journal é fornecida no ConfigMgr, e o trabalho SearchScheduledPosts é otimizado. NPR-26923: Hotfix do CQ-4250463
 * A pesquisa por palavras-chave no endereço não funciona na página do componente de calendário quando AEM comunidade está definida para trabalhar com DSRP. NPR-26737: Hotfix do CQ-4258493
-* Foi implementado um link direto para o comentário em vez da publicação principal nos detalhes do comentário, para a interface do usuário de moderação e recursos de ativação. NPR-26704: Hotfix do CQ-4251381
+* Foi implementado um link direto para o comentário, em vez da publicação principal nos detalhes do comentário, para a interface do usuário de moderação e recursos de ativação. NPR-26704: Hotfix do CQ-4251381
 * O conteúdo moderado por meio da seleção múltipla no console de moderação não aparece no Fluxo de Atividades. NPR-26695: Hotfix do CQ-4253244
 * A pesquisa com nome e sobrenome no campo Mensagens de comunidades em Para não retorna o resultado esperado. NPR-26385: Hotfix do CQ-4248673
 * Erro observado ao carregar um anexo diferente de imagem (por exemplo, .pdf) no Fórum. NPR-27360: Hotfix do CQ-4257753
@@ -1292,7 +1292,7 @@ Alguns dos principais destaques da AEM 6.4.2.0 são:
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.8.7.
 * Adicionado suporte para recursos da Especificação 1.4 da Linguagem de Modelo HTML (HTL)
 * Adição de suporte ao MongoDB Enterprise 3.6.
-* O Editor de páginas de sites adiciona suporte para edição e composição no contexto com componentes do cliente criados em React ou Angular em combinação com <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>.
+* O Editor de páginas de sites adiciona suporte para edição e composição no contexto com componentes do lado do cliente criados em Reagir ou Angular em combinação com <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>.
 * Aprimoramentos de fragmentos de conteúdo: foi adicionada a capacidade de anotar em campos de texto e comparações lado a lado de versões.
 * Foi adicionada [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md) para que os usuários possam pesquisar, pré-visualização, salvar e licenciar ativos do Adobe Stock diretamente AEM interface do usuário. Para obter informações mais detalhadas, consulte [Uso de ativos Adobe Stock com AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Os ativos adicionaram suporte para metasesquema condicional dinâmico e a capacidade de definir um schema de metadados para pastas de ativos.
@@ -1486,7 +1486,7 @@ Alguns dos principais destaques da AEM 6.4.2.0 são:
 
 **Gerenciamento de fragmentos de conteúdo**
 
-* Anotações de Fragmentos de conteúdo e comparação lado a lado das versões de Fragmento de conteúdo. Hotfix do CQ-4247148
+* Anotações de Fragmentos de conteúdo e comparação lado a lado de versões de Fragmentos de conteúdo. Hotfix do CQ-4247148
 
 **DAM - Geral**
 
@@ -2236,15 +2236,10 @@ Esta seção lista os recursos e funcionalidades removidos ou descontinuados do 
 
 * Os seguintes erros e avisos podem ser exibidos durante a instalação:
 
-   * Erros ao criar instância de componente e o Service Fatory retornado nulo ocorrem devido à reinicialização do repositório:
-
-      * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\] Não é possível criar a instância do componente devido a uma falha ao vincular reference profileManager
-      * org.apache.sling.commons.FrameworkEvent ERROR (org.osgi.framework.ServiceException: A fábrica de serviços retornou nulo. (Componente: com.day.cq.tagging.impl.TagGarbageCollector (1687))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tempo limite aguardando a conclusão do registro da alteração reg.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` Nenhuma janela de manutenção encontrada no granito/operações/manutenção
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`: O método unbindEmenda lançou uma exceção (java.lang.IllegalStateException: Serviço já não registrado).
 Esses erros não exigem nenhuma ação, pois não afetam a instância AEM.
-
 
 ### Problemas resolvidos {#resolved-issues}
 
