@@ -1,17 +1,19 @@
 ---
 title: Suporte a novas localidades para localização de formulários adaptáveis
 seo-title: Suporte a novas localidades para localização de formulários adaptáveis
-description: A AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
-seo-description: A AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
+description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
+seo-description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
 uuid: d4cee51b-c555-4544-9ae9-4aa8d38b2b17
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
+feature: Formulários adaptáveis
+role: Administrador
 translation-type: tm+mt
-source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -23,17 +25,17 @@ ht-degree: 0%
 
 A localização de formulários adaptáveis depende de dois tipos de dicionários de localidade:
 
-**Dicionário específico do formulárioContém strings usadas em formulários adaptáveis.** Por exemplo, rótulos, nomes de campos, mensagens de erro, descrições de ajuda e assim por diante. Ele é gerenciado como um conjunto de arquivos XLIFF para cada localidade e você pode acessá-lo em https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
+**** Dicionário específico do formulárioContém strings usadas em formulários adaptáveis. Por exemplo, rótulos, nomes de campo, mensagens de erro, descrições de ajuda e assim por diante. Ele é gerenciado como um conjunto de arquivos XLIFF para cada localidade e você pode acessá-lo em https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
 
-**** Dicionários globaisHá dois dicionários globais, gerenciados como objetos JSON, AEM biblioteca de clientes. Esses dicionários contêm mensagens de erro padrão, nomes de mês, símbolos de moeda, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários no CRXDe Lite em /libs/fd/xfaforms/clientlibs/I18N. Esses locais contêm pastas separadas para cada localidade. Como os dicionários globais geralmente não são atualizados com frequência, a manutenção de arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar formulários adaptáveis diferentes no mesmo servidor.
+**** Dicionários globaisHá dois dicionários globais, gerenciados como objetos JSON, em AEM biblioteca do cliente. Esses dicionários contêm mensagens de erro padrão, nomes de mês, símbolos de moeda, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários no CRXDe Lite em /libs/fd/xfaforms/clientlibs/I18N. Essas localizações contêm pastas separadas para cada localidade. Como os dicionários globais geralmente não são atualizados com frequência, manter arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar diferentes formulários adaptáveis no mesmo servidor.
 
 ### Como a localização do formulário adaptável funciona {#how-localization-of-adaptive-form-works}
 
-Quando um formulário adaptável é renderizado, ele identifica a localidade solicitada, observando os seguintes parâmetros na ordem especificada:
+Quando um formulário adaptável é renderizado, ele identifica o local solicitado observando os seguintes parâmetros na ordem especificada:
 
 * Parâmetro de solicitação `afAcceptLang`
 
-   Para substituir a localidade do navegador dos usuários, você pode passar o parâmetro de solicitação `afAcceptLang` para forçar a localidade. Por exemplo, o URL a seguir forçará a renderização do formulário na localidade japonesa:
+   Para substituir o local do navegador dos usuários, você pode passar o parâmetro de solicitação `afAcceptLang` para forçar o local. Por exemplo, o seguinte URL forçará a renderização do formulário no idioma japonês:
 
    `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 
@@ -41,37 +43,37 @@ Quando um formulário adaptável é renderizado, ele identifica a localidade sol
 
 * Configuração de idioma do usuário especificado em AEM.
 
-Depois que a localidade é identificada, os formulários adaptativos escolhem o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário inglês (en).
+Depois que a localidade é identificada, os formulários adaptáveis escolhem o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário Inglês (en) .
 
-Se uma biblioteca do cliente para a localidade solicitada não existir, ela verificará se há uma biblioteca do cliente para o código de idioma presente na localidade. Por exemplo, se a localidade solicitada for `en_ZA` (inglês sul-africano) e a biblioteca do cliente para `en_ZA` não existir, o formulário adaptável usará a biblioteca do cliente para `en` (inglês) idioma, se existir. No entanto, se nenhum deles existir, o formulário adaptativo usará o dicionário para `en` localidade.
+Se uma biblioteca do cliente para o local solicitado não existir, ela verificará se há uma biblioteca do cliente para o código de idioma presente no local. Por exemplo, se a localidade solicitada for `en_ZA` (inglês do sul da África) e a biblioteca do cliente para `en_ZA` não existir, o formulário adaptável usará a biblioteca do cliente para `en` (inglês) idioma, se existir. No entanto, se nenhum deles existir, o formulário adaptável usará o dicionário para a localidade `en`.
 
-## Adicionar suporte de localização para localidades sem suporte {#add-localization-support-for-non-supported-locales}
+## Adicionar suporte de localização para localidades não suportadas {#add-localization-support-for-non-supported-locales}
 
-Atualmente, a AEM Forms suporta localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR, chinês - (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
+Atualmente, o AEM Forms suporta a localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR, chinês - (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
-Para adicionar suporte para uma nova localidade em tempo de execução de formulários adaptáveis:
+Para adicionar suporte para um novo local no tempo de execução dos formulários adaptáveis:
 
 1. [Adicionar uma localidade ao serviço GuideLocalizationService](/help/forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
 
 1. [Adicionar biblioteca de cliente XFA para uma localidade](/help/forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
 
-1. [Adicionar biblioteca de cliente de formulário adaptável para uma localidade](/help/forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [Adicionar suporte de localidade para o dicionário](/help/forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
+1. [Adicionar biblioteca de cliente de formulário adaptável para um local](/help/forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
+1. [Adicionar suporte de local ao dicionário](/help/forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Reinicie o servidor](/help/forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Adicionar uma localidade ao serviço de Localização do Guia {#add-a-locale-to-the-guide-localization-service-br}
+### Adicione um local ao serviço de localização do guia {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ir para `https://[server]:[port]/system/console/configMgr`.
-1. Clique para editar o componente **Serviço de Localização do Guia**.
-1. Adicione a localidade que deseja adicionar à lista de localidades compatíveis.
+1. Clique em para editar o componente **Serviço de localização do guia**.
+1. Adicione a localidade que deseja adicionar à lista de localidades suportadas.
 
 ![GuideLocalizationService](assets/configservice.png)
 
-### Adicionar biblioteca de cliente XFA para uma localidade {#add-xfa-client-library-for-a-locale-br}
+### Adicionar biblioteca de cliente XFA para um local {#add-xfa-client-library-for-a-locale-br}
 
 Crie um nó do tipo `cq:ClientLibraryFolder` em `etc/<folderHierarchy>`, com a categoria `xfaforms.I18N.<locale>`, e adicione os seguintes arquivos à biblioteca do cliente:
 
-* **I18N.** jsdefinindo  `xfalib.locale.Strings` para o  `<locale>` conforme definido em  `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* **I18N.** js  `xfalib.locale.Strings` para o  `<locale>` conforme definido em  `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 
 * **js.** txtcontendo o seguinte:
 
@@ -81,15 +83,15 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### Adicionar biblioteca de cliente de formulário adaptável para uma localidade {#add-adaptive-form-client-library-for-a-locale-br}
+### Adicionar biblioteca de cliente de formulário adaptável para um local {#add-adaptive-form-client-library-for-a-locale-br}
 
-Crie um nó do tipo `cq:ClientLibraryFolder` em `etc/<folderHierarchy>`, com categoria como `guides.I18N.<locale>` e dependências como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
+Crie um nó do tipo `cq:ClientLibraryFolder` em `etc/<folderHierarchy>`, com a categoria como `guides.I18N.<locale>` e as dependências como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
 
 Adicione os seguintes arquivos à biblioteca do cliente:
 
-* **i18n.** jsdefinindo  `guidelib.i18n`, tendo padrões de &quot;calendárioSímbolos&quot;,  `datePatterns`,  `timePatterns`,  `dateTimeSymbols`,  `numberPatterns`,  `numberSymbols`,  `currencySymbols`para as especificações XFA  `typefaces`   `<locale>`   [ ](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)conforme descrito em Especificação deLocale Set. Você também pode ver como ele é definido para outras localidades compatíveis em `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **i18n.** jsdefining  `guidelib.i18n`, tendo padrões de &quot;calendarSymbols&quot;,  `datePatterns`,  `timePatterns`,  `dateTimeSymbols`,  `numberPatterns`,  `numberSymbols`,  `currencySymbols`,  `typefaces` para o  `<locale>` conforme as especificações XFA descritas em  [Especificação do conjunto de localidades](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). Você também pode ver como ele é definido para outras localidades compatíveis em `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 
-* **LogMessages.** jsdefinindo  `guidelib.i18n.strings` e  `guidelib.i18n.LogMessages` para o  `<locale>` conforme definido em  `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
+* **LogMessages.** js  `guidelib.i18n.strings` e  `guidelib.i18n.LogMessages` para o  `<locale>` conforme definido em  `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 
 * **js.** txtcontendo o seguinte:
 
@@ -98,25 +100,25 @@ i18n.js
 LogMessages.js
 ```
 
-### Adicionar suporte de localidade para o dicionário {#add-locale-support-for-the-dictionary-br}
+### Adicionar suporte de local ao dicionário {#add-locale-support-for-the-dictionary-br}
 
-Execute esta etapa somente se `<locale>` que você está adicionando não estiver entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, , `ko-kr`.
+Execute esta etapa somente se o `<locale>` que você está adicionando não estiver entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
 1. Crie um nó `nt:unstructured` `languages` em `etc`, se ainda não estiver presente.
 
-1. Adicione uma propriedade de string de vários valores `languages` ao nó, se já não estiver presente.
+1. Adicione uma propriedade de string com vários valores `languages` ao nó, se ainda não estiver presente.
 1. Adicione os `<locale>` valores de localidade padrão `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, se ainda não estiverem presentes.
 
-1. Adicione `<locale>` aos valores da propriedade `languages` de `/etc/languages`.
+1. Adicione o `<locale>` aos valores da propriedade `languages` de `/etc/languages`.
 
-O `<locale>` será exibido em `https://[server]:[port]/libs/cq/i18n/translator.html`.
+O `<locale>` aparecerá em `https://[server]:[port]/libs/cq/i18n/translator.html`.
 
 ### Reinicie o servidor {#restart-the-server}
 
-Reinicie o servidor AEM para que a localidade adicionada entre em vigor.
+Reinicie o servidor de AEM para que a localidade adicionada entre em vigor.
 
 ## Exemplos de bibliotecas para adicionar suporte para espanhol {#sample-libraries-for-adding-support-for-spanish}
 
-Amostra de bibliotecas de clientes para adicionar suporte para espanhol
+Exemplos de bibliotecas de clientes para adicionar suporte ao espanhol
 
 [Obter arquivo](assets/sample.zip)
