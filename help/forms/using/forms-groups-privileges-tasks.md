@@ -1,30 +1,31 @@
 ---
 title: AEM Forms em grupos e privilégios OSGi
 seo-title: AEM Forms em grupos e privilégios OSGi
-description: Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
-seo-description: Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
+description: Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
+seo-description: Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
+role: Administrador
 translation-type: tm+mt
-source-git-commit: f02fde7583da87d48bf72bf569762e9d604d25ce
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '273'
+ht-degree: 2%
 
 ---
 
 
 # AEM Forms em grupos e privilégios OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
-Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
+Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
 
-Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos no AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
+Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos em AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
 
-Depois que você instalar [pacote de complementos do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como usuário de formulários e usuário avançado de formulários, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições do grupo:
+Depois de instalar [Pacote do complemento AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como forms-user e forms-power-user, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições de grupo:
 
 <table> 
  <tbody>
@@ -33,12 +34,12 @@ Depois que você instalar [pacote de complementos do AEM Forms](/help/forms/usin
    <td>Tarefas</td> 
   </tr>
   <tr>
-   <td>usuário de formulários <sup>[1]</sup></td> 
+   <td>forms-user <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
-     <li>Criar, pré-visualização e publicar comunicações interativas e fragmentos de documento</li> 
-     <li>Fazer upload de ativos para uma instância AEM</li> 
+     <li>Criar, visualizar, publicar e enviar formulários adaptáveis</li> 
+     <li>Criar, visualizar e publicar comunicações interativas e fragmentos de documento</li> 
+     <li>Fazer upload de ativos para uma instância de AEM</li> 
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
@@ -46,31 +47,31 @@ Depois que você instalar [pacote de complementos do AEM Forms](/help/forms/usin
    <td>usuários avançados de formulários</td> 
    <td>
     <ul> 
-     <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
-     <li>Criar, pré-visualização e publicar comunicações interativas e fragmentos de documento</li> 
+     <li>Criar, visualizar, publicar e enviar formulários adaptáveis</li> 
+     <li>Criar, visualizar e publicar comunicações interativas e fragmentos de documento</li> 
      <li>Criar scripts para formulários adaptáveis usando o editor de código</li> 
      <li>Fazer upload de ativos incluindo scripts</li> 
      <li>Criar temas</li> 
-     <li>Importar pacotes que contêm XDP</li> 
+     <li>Importar pacotes contendo XDP</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>formulários-submissão-revisores</td> 
+   <td>forms-submit-revisores</td> 
    <td>
     <ul> 
-     <li>Reexame de envios</li> 
-     <li>Aprovar ou rejeitar submissões</li> 
+     <li>Envio de revisão</li> 
+     <li>Aprovar ou rejeitar envios</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-author <sup>[2]</sup></td> 
+   <td>autores de modelo <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Criar e pré-visualização formulários adaptáveis ou modelos de comunicação interativa</li> 
+     <li>Criar e visualizar formulários adaptáveis ou modelos de comunicações interativas</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td><p>fdm-autores</p> </td> 
+   <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
      <li>Criar e modificar um modelo de dados de formulário</li> 
@@ -80,7 +81,7 @@ Depois que você instalar [pacote de complementos do AEM Forms](/help/forms/usin
    <td>cm-user-agent</td> 
    <td>
     <ul> 
-     <li>Acesse cartas de gerenciamento de correspondência ou comunicações interativas usando a interface do usuário do agente</li> 
+     <li>Acessar cartas de gerenciamento de correspondência ou comunicações interativas usando a interface do usuário do agente</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -92,15 +93,15 @@ Depois que você instalar [pacote de complementos do AEM Forms](/help/forms/usin
     </ul> </td> 
   </tr>
   <tr>
-   <td>usuário do fluxo de trabalho</td> 
+   <td>workflow-user</td> 
    <td>
     <ul> 
-     <li>Usar aplicativos AEM caixa de entrada</li> 
+     <li>Usar AEM aplicativos da caixa de entrada</li> 
      <li>Gerenciar instâncias de fluxo de trabalho</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>administradores de fd</td> 
+   <td>fd-administrators</td> 
    <td>
     <ul> 
      <li>Configurar o gerador de PDF</li> 
