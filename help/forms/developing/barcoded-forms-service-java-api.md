@@ -1,38 +1,39 @@
 ---
-title: Start Java APIQuick do serviço Forms com código de barras (SOAP)
-seo-title: Start Java APIQuick do serviço Forms com código de barras (SOAP)
-description: Use o serviço Forms com códigos de barras para decodificar dados de formulário com códigos de barras usando o Start rápido da API Java.
-seo-description: Use o serviço Forms com códigos de barras para decodificar dados de formulário com códigos de barras usando o Start rápido da API Java.
+title: Início rápido (SOAP) do Java do serviço Forms com código de barras
+seo-title: Início rápido (SOAP) do Java do serviço Forms com código de barras
+description: Use o serviço Forms com código de barras para decodificar dados de formulário com código de barras usando o Início rápido da API Java.
+seo-description: Use o serviço Forms com código de barras para decodificar dados de formulário com código de barras usando o Início rápido da API Java.
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
+role: Desenvolvedor
 translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
 
 
-# Start rápido (SOAP) da API Java do serviço Forms com códigos de barras {#barcoded-forms-service-java-apiquick-start-soap}
+# Início rápido da API Java (SOAP) do serviço Forms com código de barras {#barcoded-forms-service-java-apiquick-start-soap}
 
-O SOAP (Java API Quick Start) está disponível para o serviço Forms com código de barras:
+O Java API Quick Start (SOAP) está disponível para o serviço Forms com códigos de barras:
 
-[Start rápido (modo SOAP): Decodificação de dados de formulário com código de barras usando a API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Início rápido (modo SOAP): Decodificação de dados de formulário com código de barras usando a API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API altamente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os Start rápidos localizados em Programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Os Inícios Rápidos localizados em Programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Start rápido (modo SOAP): Decodificação de dados de formulário com código de barras usando a API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Início rápido (modo SOAP): Decodificação de dados de formulário com código de barras usando a API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-O código Java a seguir decodifica os dados do formulário localizados em um formulário PDF salvo como Loan.pdf. Os dados decodificados são salvos como um arquivo XML chamado extractData.xml. Este exemplo de código converte um objeto `org.w3c.dom.Document` em um objeto `com.adobe.idp.Document`. (Consulte [Decodificando Dados de Formulário com Códigos de Barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+O código Java a seguir decodifica dados de formulário localizados em um formulário PDF salvo como Loan.pdf. Os dados decodificados são salvos como um arquivo XML chamado extratedData.xml. Este exemplo de código converte um objeto `org.w3c.dom.Document` em um objeto `com.adobe.idp.Document`. (Consulte [Decodificando dados de formulário com código de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```as3
  /* 
