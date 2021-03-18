@@ -10,11 +10,12 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 47%
+source-wordcount: '166'
+ht-degree: 48%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 47%
 
 O Designer está disponível como um instalador independente e também é fornecido com o WorkBench. Se você estiver usando um instalador independente para o Designer, siga estas etapas:
 
-1. Entre em contato com o suporte ao Adobe para baixar o instalador do Designer.
+1. Entre em contato com o Suporte do Adobe para baixar o instalador do Designer.
 
    >[!NOTE]
    >
