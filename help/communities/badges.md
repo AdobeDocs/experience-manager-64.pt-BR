@@ -1,42 +1,43 @@
 ---
-title: Console de símbolos
-seo-title: Console de símbolos
-description: O console Caracteres das comunidades permite que você adicione emblemas personalizados que podem ser exibidos para membros quando ganhados (premiados) ou quando assumem uma função específica na comunidade (atribuídos)
-seo-description: O console Caracteres das comunidades permite que você adicione emblemas personalizados que podem ser exibidos para membros quando ganhados (premiados) ou quando assumem uma função específica na comunidade (atribuídos)
+title: Console de emblemas
+seo-title: Console de emblemas
+description: O console Símbolos de Comunidades permite que você adicione emblemas personalizados que podem ser exibidos para membros quando ganhados (atribuídos) ou quando assumem uma função específica na comunidade (atribuídos)
+seo-description: O console Símbolos de Comunidades permite que você adicione emblemas personalizados que podem ser exibidos para membros quando ganhados (atribuídos) ou quando assumem uma função específica na comunidade (atribuídos)
 uuid: 9eeba240-f0d4-4937-baba-8bac0e0b2a36
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 4%
 
 ---
 
 
-# Console de símbolos {#badges-console}
+# Console de emblemas {#badges-console}
 
 ## Sobre os emblemas {#about-badges}
 
-O console Distintos de comunidades fornece a capacidade de adicionar emblemas personalizados que podem ser exibidos para um membro quando obtidos (concedidos) ou quando assumem uma função específica na comunidade (atribuídos).
+O console Símbolos de Comunidades oferece a capacidade de adicionar emblemas personalizados que podem ser exibidos para um membro quando ganhados (atribuídos) ou quando assumem uma função específica na comunidade (atribuídos).
 
 ### Visibilidade do selo {#badge-visibility}
 
-Atualmente, os emblemas que um membro da comunidade recebe ou está atribuído serão exibidos junto com seu nome e avatar nos seguintes locais:
+Atualmente, os emblemas que um membro da comunidade recebe ou é atribuído serão exibidos junto com seu nome e avatar nos seguintes locais:
 
 * Perfis
 * [Fóruns](forum.md)
 * [Perguntas e respostas](working-with-qna.md)
-* [Quadros de líderes](enabling-leaderboard.md)
+* [Painéis de líderes](enabling-leaderboard.md)
 * [Ideação](ideation-feature.md)
 
-No ambiente do autor, para acessar o console Badges
+No ambiente de criação, para acessar o console Selo
 
-* Da navegação global: **[!UICONTROL Ferramentas > Comunidades > Crachás]**
+* Na navegação global: **[!UICONTROL Ferramentas > Comunidades > Símbolos]**
 
 Esse console exibe os emblemas disponíveis no momento e a partir dos quais novos emblemas podem ser adicionados.
 
@@ -44,30 +45,30 @@ Esse console exibe os emblemas disponíveis no momento e a partir dos quais novo
 
 ## Criar selo {#create-badge}
 
-Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do selo é armazenada no repositório em `/etc/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
+Um selo é criado fazendo o upload de uma imagem suficientemente pequena (72dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do selo é armazenada no repositório em `/etc/community/badging/images` e é replicada automaticamente no ambiente de publicação.
 
-Se o ambiente publish for um farm de editores, será necessário configurar [sincronização do usuário](sync.md).
+Se o ambiente de publicação for um farm de editores, é necessário configurar [user sync](sync.md).
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **[!UICONTROL Carregar imagem]**
 
-   (*Obrigatório*) Uma imagem de emblema com um tamanho recomendado de 32 x 32 pixels a 72 dpi no formato JPEG ou PNG.
+   (*Obrigatório*) Uma imagem de selo com um tamanho recomendado de 32 x 32 pixels a 72dpi no formato JPEG ou PNG.
 
 * **[!UICONTROL Nome]**
 
-   (*Obrigatório*) O nome do crachá. É o `Display Name` padrão, bem como o nome do nó do repositório. Se `Name` não for um nome de nó de repositório válido, ele será modificado.
+   (*Obrigatório*) O nome do símbolo. É o `Display Name` padrão, bem como o nome do nó do repositório. Se `Name` não for um nome de nó de repositório válido, ele será modificado.
 
 * **[!UICONTROL Nome para exibição]**
 
-   (*Opcional*) O nome a ser exibido para o crachá na interface do usuário. O padrão é o texto inalterado inserido para `Name`.
+   (*Opcional*) O nome a ser exibido para o símbolo na interface do usuário. O padrão é o texto inalterado inserido para `Name`.
 
 * **[!UICONTROL Descrição]**
 
-   (*Opcional*) Uma descrição para o crachá.
+   (*Opcional*) Uma descrição para o símbolo.
 
 ## Informações adicionais {#additional-information}
 
-Para obter detalhes sobre como configurar regras de pontuação e marcação, consulte [Pontuação e Distinções](implementing-scoring.md).
+Para obter detalhes sobre como configurar as regras de pontuação e marcação, consulte [Pontuação e Aviso no ícone](implementing-scoring.md).
 
 Para gerenciar emblemas para membros, consulte [Console Membros](members.md).
