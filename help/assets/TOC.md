@@ -6,11 +6,12 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: c3eeb3d4fc4b6ce7548c6385c21c6e4ed7b2f0e6
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 45%
+ht-degree: 49%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 45%
 + [Sobre o DAM](assets.md)
 + [Melhorias na experiência do usuário](ux-improvements.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
-+ Usar o AEM Assets {#using}
++ Usar AEM Assets {#using}
    + [Experiência da página inicial do AEM Assets](assets-home-page.md)
    + [Pesquisar ativos no AEM](search-assets.md)
    + [Pesquisa de texto completo do GQL](gql-search.md)
@@ -37,7 +38,7 @@ ht-degree: 45%
    + [Informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
    + [Configuração do Dynamic Media](administering-dynamic-media.md)
    + [Trabalhar com o Dynamic Media](dynamic-media.md)
-   + [Configuração do Dynamic Media - Modo Scene7](config-dms7.md)
+   + [Configuração do modo Dynamic Media - Scene7](config-dms7.md)
    + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
    + [Gerenciamento de ativos do Dynamic Media](managing-assets.md)
@@ -77,7 +78,7 @@ ht-degree: 45%
    + [Personalização e extensão de ativos](extending-assets.md)
    + [Processamento de ativos usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
    + [Extensão da pesquisa de ativos](searchx.md)
-   + [Instale e configure o ImageMagick para trabalhar com o AEM Assets](best-practices-for-imagemagick.md)
+   + [Instale e configure o ImageMagick para funcionar com o AEM Assets](best-practices-for-imagemagick.md)
    + [Integração de ativos ao fluxo de atividade](extending-activity-stream.md)
    + [Extensão do Editor de ativos](asseteditorx.md)
    + [API HTTP de ativos](mac-api-assets.md)
@@ -104,10 +105,10 @@ ht-degree: 45%
    + [AEM Assets vs. AEM MediaLibrary](medialibrary.md)
    + [Uso do rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configuração das restrições de upload de ativos](configuring-asset-upload-restrictions.md)
-   + [Práticas recomendadas de integração do AEM e da Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integração do AEM Assets com o servidor do InDesign](indesign.md)
+   + [Práticas recomendadas de integração de AEM e Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Integração do AEM Assets com o servidor InDesign](indesign.md)
    + [Perfis de metadados](metadata-profiles.md)
-   + [Gerenciamento de direitos digitais no Assets](drm.md)
+   + [Digital Rights Management em ativos](drm.md)
    + [Uso do pacote de demonstração do Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
    + [Práticas recomendadas de descarregamento de ativos](assets-offloading-best-practices.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
@@ -121,7 +122,7 @@ ht-degree: 45%
    + [Aplicação de marca d&#39;água](watermarking.md)
    + [Importação e exportação de metadados em massa](metadata-import-export.md)
    + [Modelos de ativos](asset-templates.md)
-   + [Práticas recomendadas de compartilhamento de pastas do AEM para a Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Práticas recomendadas de compartilhamento de pasta do AEM para Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Esquema de metadados de pasta](folder-metadata-schema.md)
    + [Gerenciamento de tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
@@ -171,7 +172,7 @@ ht-degree: 45%
    + [Trabalhar com ativos 3D](assets-3d.md)
    + [Instalação e configuração do AEM 3D](install-config-3d.md)
    + [Configurações avançadas](advanced-config-3d.md)
-   + [Trabalhar com ativos do Adobe Dimension](working-dimension-assets.md)
+   + [Trabalhar com ativos da Adobe Dimension](working-dimension-assets.md)
    + [Sobre o upload e o processamento de ativos 3D no AEM](upload-processing-3d-assets.md)
    + [Resolver dependências de arquivo](resolve-file-dependencies.md)
    + [Exibir ativos 3D](viewing-3d-assets.md)
@@ -179,7 +180,7 @@ ht-degree: 45%
    + [Sobre o uso de palcos no AEM 3D](about-the-use-of-stages-in-aem-3d.md)
    + [Configuração de um estágio padrão com o Autodesk Maya e o Mental Ray](setting-up-stage-with-ad-mr.md)
    + [Trabalhar com o componente Sites 3D](using-the-3d-sites-component.md)
-   + [Integração do AEM 3D com o Autodesk Maya](integrate-maya-with-3d.md)
+   + [Integração AEM 3D com o Autodesk Maya](integrate-maya-with-3d.md)
    + [Sobre o trabalho com palcos IBL](working-with-ibl-stages.md)
-   + [Integração do AEM 3D com o Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
+   + [Integração AEM 3D com o Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
    + [Configuração de um palco IBL com o Autodesk Maya e o Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
