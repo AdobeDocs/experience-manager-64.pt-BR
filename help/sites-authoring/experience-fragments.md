@@ -1,8 +1,8 @@
 ---
 title: Fragmentos de experiência
 seo-title: Fragmentos de experiência
-description: 'null'
-seo-description: nulo
+description: Fragmentos de experiência
+seo-description: 'null'
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1312'
 ht-degree: 83%
 
 ---
@@ -94,7 +94,7 @@ O exemplo a seguir mostra Fragmentos de experiência estruturados de acordo com 
 
 >[!CAUTION]
 >
->A seguinte captura de tela foi tirada do site da WKND usando o Adobe Experience Manager como Cloud Service.
+>A seguinte captura de tela foi tirada do site WKND usando o Adobe Experience Manager como um Cloud Service.
 
 ![Pastas para Fragmentos de experiência](assets/xf-folders.png)
 
@@ -108,7 +108,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 
 >[!NOTE]
 >
->Também é possível configurar os [Modelos permitidos para sua instância](#configure-allowed-templates-instance), mas esse método é **não** recomendado, pois os valores podem ser substituídos após a atualização.
+>Também é possível configurar os [Modelos permitidos para sua instância](#configure-allowed-templates-instance), mas esse método é **not** recomendado, pois os valores podem ser substituídos na atualização.
 
 ### Configurar os Modelos permitidos para sua Pasta {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 
 >[!CAUTION]
 >
->Não é recomendável alterar **[!UICONTROL Modelos permitidos]** por este método, uma vez que os modelos especificados podem ser substituídos após a atualização.
+>Não é recomendável alterar o **[!UICONTROL Modelos permitidos]** por esse método, pois os modelos especificados podem ser substituídos na atualização.
 >
 >Use esta caixa de diálogo apenas para fins informativos.
 
@@ -155,7 +155,7 @@ Para criar um fragmento de experiência:
 
 1. Selecione **[!UICONTROL Fragmentos de experiência]** na Navegação global.
 
-   ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
+   ![screen_shot_2018-04-05at9221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
 1. Navegue até a pasta desejada e selecione **[!UICONTROL Criar]**.
 
@@ -185,7 +185,7 @@ O Editor de fragmento de experiência oferece recursos semelhantes ao Editor de 
 
 O exemplo de procedimento a seguir ilustra como criar um teaser para um produto:
 
-1. Arraste e solte um **[!UICONTROL Teaser de Categoria]** do [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Arraste e solte um **[!UICONTROL Teaser da categoria]** do [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,11 +289,11 @@ Arraste o bloco de construção para o sistema de parágrafo de qualquer fragmen
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Usando o seletor `.plain.` no URL, você pode acessar a execução HTML simples.
+Usando o seletor `.plain.` no URL, você pode acessar a representação HTML simples.
 
-Isso está disponível no navegador, mas seu objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL.
+Isso está disponível no navegador, mas o objetivo principal é permitir outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) para acessar o conteúdo do Fragmento de experiência diretamente, usando apenas o URL.
 
-A execução HTML simples adiciona o protocolo, o host e o caminho de contexto aos caminhos que são:
+A representação HTML simples adiciona o protocolo, o host e o caminho de contexto aos caminhos que são:
 
 * do tipo: `src`, `href` ou `action`
 
@@ -313,5 +313,5 @@ Por exemplo:
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 
-Para exportação para o Adobe Target, o HTML é usado. Consulte [Integração do Target com os fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.
+Para exportar para o Adobe Target, o HTML é usado. Consulte [Integração do Target com os fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.
 
