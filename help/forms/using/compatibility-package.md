@@ -1,80 +1,81 @@
 ---
-title: Pacote de compatibilidade
-seo-title: Pacote de compatibilidade
-description: 'A instalação do pacote Compatibilidade no AEM Forms 6.4 permite que você use os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e as páginas e modelos de formulários adaptáveis obsoletos '
-seo-description: A instalação do pacote Compatibilidade no AEM Forms 6.4 permite que você use os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e as páginas e modelos de formulários adaptáveis obsoletos
+title: Pacote de Compatibilidade
+seo-title: Pacote de Compatibilidade
+description: 'A instalação do pacote Compatibilidade no AEM Forms 6.4 permite usar os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e modelos e páginas de formulários adaptáveis obsoletos '
+seo-description: A instalação do pacote Compatibilidade no AEM Forms 6.4 permite usar os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e modelos e páginas de formulários adaptáveis obsoletos
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
+role: Administrador
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 1%
+source-wordcount: '388'
+ht-degree: 9%
 
 ---
 
 
-# Instalar o Pacote de Compatibilidade {#compatibility-package}
+# Instalar Pacote de Compatibilidade {#compatibility-package}
 
-A instalação do pacote Compatibilidade no AEM Forms 6.4 permite que você use os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e as páginas e modelos de formulários adaptáveis obsoletos
+A instalação do pacote Compatibilidade no AEM Forms 6.4 permite usar os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e modelos e páginas de formulários adaptáveis obsoletos
 
 ## Visão geral {#overview}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.4. Para continuar usando as letras do AEM 6.3 Forms e AEM 6.2 Forms, é necessário instalar o [pacote de compatibilidade do AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes no AEM Forms 6.4. Para continuar usando as cartas do AEM 6.3 Forms e do AEM 6.2 Forms, é necessário instalar o [Pacote de compatibilidade do AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
-O pacote Compatibilidade do AEMFD permite que você use os seguintes ativos do AEM Forms 6.3 e 6.2 no AEM Forms 6.4:
+O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM Forms 6.3 e 6.2 no AEM Forms 6.4:
 
 * Fragmentos de documento criados no AEM Forms 6.3 e 6.2
 * Cartas
 * Dicionários de dados
-* Formulários adaptáveis modelos e páginas obsoletos
+* Modelos e páginas obsoletas de formulários adaptáveis
 
-Para obter mais informações, consulte [Ativos tornados compatíveis com o AEM Forms 6.4 instalando o pacote de compatibilidade](/help/forms/using/compatibility-package.md#assetsmadecompatible).
+Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.4 instalando o pacote Compatibilidade](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Adicione suporte para ativos AEM Forms 6.3 e 6.2 no AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Adicionar suporte para os ativos AEM Forms 6.3 e 6.2 no AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
-Após executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.4:
+Depois de executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.4:
 
-Certifique-se de que [AEM pacote de compatibilidade](/help/sites-deploying/backward-compatibility.md) esteja pré-instalado.
+Certifique-se de ter [AEM pacote de compatibilidade](/help/sites-deploying/backward-compatibility.md) pré-instalado.
 
-1. Instale o pacote [Compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+1. Instale o [Pacote de Compatibilidade](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
-   Para obter mais informações sobre como carregar e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
+   Para obter mais informações sobre como fazer upload e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
-1. Depois que os registros estiverem estabilizados, reinicie o servidor.
-1. Use o utilitário de migração para tornar seus ativos compatíveis com a versão 6.4.
+1. Depois que os logs forem estabilizados, reinicie o servidor.
+1. Use o utilitário de migração para tornar seus ativos compatíveis com a 6.4.
 
    Para obter mais informações, consulte [utilitário de migração](/help/forms/using/migration-utility.md).
 
-## Os ativos tornados compatíveis com o AEM Forms 6.4 ao instalar o pacote de compatibilidade {#assetsmadecompatible}
+## Ativos compatíveis com o AEM Forms 6.4 ao instalar o pacote de Compatibilidade {#assetsmadecompatible}
 
-Ao instalar o pacote de compatibilidade, você pode tornar os seguintes ativos e modelos compatíveis com o AEM Forms 6.4:
+Ao instalar o pacote de Compatibilidade, você pode tornar os seguintes ativos e modelos compatíveis com o AEM Forms 6.4:
 
-* Ativos do AEM 6.3 e anteriores do Correspondent Management
+* Ativos de gerenciamento de correspondência da AEM 6.3 e anteriores
 
    * [Cartas](/help/forms/using/create-letter.md)
    * [Dicionários de dados](/help/forms/using/data-dictionary.md)
    * Fragmentos do documento
 
-* Modelos de formulário adaptável obsoletos
+* Modelos adaptáveis obsoletos de formulário
 
-   * /libs/fd/af/models/blankTemplate2
-   * /libs/fd/af/models/simpleEnrollmentTemplate
-   * /libs/fd/af/models/simpleEnrollmentTemplate2
-   * /libs/fd/af/models/surveyTemplate
-   * /libs/fd/af/models/surveyTemplate2
-   * /libs/fd/af/models/tabbedEnrollmentTemplate
-   * /libs/fd/af/models/tabbedEnrollmentTemplate2
-   * /libs/fd/afaddon/models/advancedEnrollmentTemplate
-   * /libs/fd/afaddon/models/advancedEnrollmentTemplate2
+   * /libs/fd/af/templates/blankTemplate2
+   * /libs/fd/af/templates/simpleEnrollmentTemplate
+   * /libs/fd/af/templates/simpleEnrollmentTemplate2
+   * /libs/fd/af/templates/surveyTemplate
+   * /libs/fd/af/templates/surveyTemplate2
+   * /libs/fd/af/templates/tabbedEnrollmentTemplate
+   * /libs/fd/af/templates/tabbedEnrollmentTemplate2
+   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
+   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
-* Páginas obsoletas para formulários adaptativos:
+* Páginas obsoletas para formulários adaptáveis:
 
-   * /libs/fd/af/components/page/pesquisa
+   * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedenrollment
 
