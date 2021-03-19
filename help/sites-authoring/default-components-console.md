@@ -1,8 +1,8 @@
 ---
 title: Console de componentes
 seo-title: Console de componentes
-description: 'null'
-seo-description: nulo
+description: Console de componentes
+seo-description: 'null'
 uuid: 308b7fa1-9525-43f3-8c15-1076485b3f8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 93%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 O console Componentes permite navegar em todos os componentes definidos para a sua instância e exibir as principais informações de cada componente. 
 
-Ele pode ser acessado de **Ferramentas** -> **Geral** -> **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
+Ele pode ser acessado em **Tools** -> **General** -> **Components**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
