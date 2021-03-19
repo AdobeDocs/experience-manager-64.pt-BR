@@ -1,43 +1,44 @@
 ---
 title: Propriedades de configuração do Interative Communications
-seo-title: Propriedades de configuração do Interative Communication
-description: Editar propriedades de configuração padrão para o Interative Communications
-seo-description: Editar propriedades de configuração padrão para o Interative Communications
+seo-title: Propriedades de configuração de comunicação interativa
+description: Editar propriedades de configuração padrão para Comunicações interativas
+seo-description: Editar propriedades de configuração padrão para Comunicações interativas
 uuid: 793da9c0-7e8b-464c-b41d-559a72fac9eb
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
+feature: Comunicação interativa
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 7%
+source-wordcount: '544'
+ht-degree: 8%
 
 ---
 
 
-# Propriedades de configuração do Interative Communications {#interactive-communications-configuration-properties}
+# Propriedades de configuração de Comunicações interativas {#interactive-communications-configuration-properties}
 
-Editar propriedades de configuração padrão para o Interative Communications
+Editar propriedades de configuração padrão para Comunicações interativas
 
-O Interative Communications inclui propriedades que são configuradas automaticamente após a instalação do pacote de complementos [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Os autores do Interative Communication podem editar essas propriedades de configuração padrão usando a página **Configuração do Adobe Experience Manager Web Console**.
+As Comunicações interativas incluem propriedades que são configuradas automaticamente após a instalação do pacote do complemento [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Os autores do Interative Communication podem editar essas propriedades de configuração padrão usando a página **Adobe Experience Manager Web Console Configuration**.
 
-Abra a página **Configuração do Adobe Experience Manager Web Console** usando o seguinte URL:
+Abra a página **Configuração do Console da Web do Adobe Experience Manager** usando o seguinte URL:
 
-https://&lt;servidor>:&lt;porta>/&lt;contextPath>/system/console/configMgr
+https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 
 As propriedades de configuração incluem:
 
 * [Configuração de fragmentos de documento](#document-fragments-configuration)
 * [Criar configuração de correspondência](#create-correspondence-configuration)
-* [Configuração de formulário adaptável e de Canal da Web de comunicação interativa](#adaptive-form-and-interactive-communication-web-channel-configuration)
-* [Configuração do tema do Canal da Web de formulário adaptável e comunicação interativa](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
+* [Configuração do canal Web de comunicação interativa e formulário adaptável](#adaptive-form-and-interactive-communication-web-channel-configuration)
+* [Configuração de Tema de Canal da Web de Comunicação Adaptável e Interativa](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
 
-## Configuração de fragmentos de documento {#document-fragments-configuration}
+## Configuração de Fragmentos de Documento {#document-fragments-configuration}
 
-Toque em **Configuração de fragmentos de Documento** na página **Configuração do Adobe Experience Manager Web Console** para visualização as propriedades de configuração dos fragmentos de documento.
+Toque em **Configuração de fragmentos de documento** na página **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos fragmentos de documento.
 
 <table> 
  <tbody> 
@@ -48,8 +49,8 @@ Toque em **Configuração de fragmentos de Documento** na página **Configuraç�
    <td>Valores aceitáveis</td> 
   </tr> 
   <tr> 
-   <td>Formatos de Exibição de Dados</td> 
-   <td>O formato de exibição específico da localidade para campos, variáveis e elementos de modelo de dados de formulário está disponível ao criar uma Comunicação Interativa para canais da Web e Impressos.</td> 
+   <td>Formatos de exibição de dados</td> 
+   <td>Formato de exibição específico de localidade para campos, variáveis e elementos de modelo de dados de formulário disponíveis ao criar uma Comunicação interativa para canais de impressão e da Web.</td> 
    <td> 
     <ul> 
      <li>locale = en_US, de_DE, fr_FR e ja_JP</li> 
@@ -62,7 +63,7 @@ Toque em **Configuração de fragmentos de Documento** na página **Configuraç�
   </tr> 
   <tr> 
    <td>Recuo</td> 
-   <td>A largura de uma unidade de recuo aplicada ao texto em fragmentos de documento de lista.</td> 
+   <td>A largura de uma única unidade de recuo aplicada ao texto em fragmentos de documento de lista.</td> 
    <td>12,7 mm</td> 
    <td>Número</td> 
   </tr> 
@@ -81,28 +82,28 @@ Toque em **Configuração de fragmentos de Documento** na página **Configuraç�
  </tbody> 
 </table>
 
-## Criar Configuração de Correspondência {#create-correspondence-configuration}
+## Criar configuração de correspondência {#create-correspondence-configuration}
 
-Toque em **Criar configuração de correspondência** na página **Configuração do Adobe Experience Manager Web Console** para visualização das propriedades de configuração da interface do agente.
+Toque em **Criar configuração de correspondência** na página **Configuração do console da Web Adobe Experience Manager** para exibir as propriedades de configuração da interface do usuário do agente.
 
 | Propriedade | Descrição | Padrão | Valores aceitáveis |
 |---|---|---|---|
 | Mostrar conteúdo resolvido para edição | Marque a caixa de seleção para mostrar o conteúdo resolvido (valores reais em vez de espaços reservados) enquanto edita o módulo de texto na interface do agente. | Não selecionado | Não aplicável |
-| Aplicar marca d&#39;água durante a pré-visualização | Marque a caixa de seleção para aplicar a marca d&#39;água ao Imprimir canal de comunicação interativa no modo de Pré-visualização. | Não selecionado | Não aplicável |
+| Aplicar marca d&#39;água durante a visualização | Marque a caixa de seleção para aplicar marca d&#39;água ao Canal de impressão de comunicação interativa no modo de Visualização. | Não selecionado | Não aplicável |
 
-## Configuração de Canal da Web de Formulário Adaptável e Comunicação Interativa {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Configuração do canal Web de comunicação interativa e formulário adaptável {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Toque em **Configuração do Canal Web de Formulário Adaptável e Comunicação Interativa** na página **Configuração do Console Web Adobe Experience Manager** para visualização das propriedades de configuração do canal Web Adaptive Forms e Interative Communications. A tabela a seguir descreve as propriedades relacionadas ao Interative Communications:
+Toque em **Adaptive Form and Interative Communication Web Channel Configuration** na página **Adobe Experience Manager Web Console Configuration** para exibir as propriedades de configuração do canal Web Adaptive Forms e Interative Communications. A tabela a seguir descreve as propriedades relacionadas às Comunicações interativas:
 
 | Propriedade | Descrição | Padrão | Valores aceitáveis |
 |---|---|---|---|
 | Mostrar espaço reservado | Marque a caixa de seleção para ativar a exibição de espaços reservados para campos incluídos em formulários adaptáveis e Comunicações interativas. | Selecionado | Não aplicável |
-| Máximo de entradas de cache | Defina o número máximo de formulários adaptáveis e de Comunicações interativas que podem ser recuperados usando a memória cache. | 100 | Número |
-| Tornar o nome do arquivo único | Marque a caixa de seleção para ter nomes exclusivos para arquivos incluídos como anexos no Adaptive Forms e no Interative Communications. | Não selecionado | Não aplicável |
+| Máximo de entradas de cache | Defina o número máximo de formulários adaptáveis e Comunicações interativas que podem ser recuperadas usando a memória cache. | 100 | Número |
+| Tornar o nome do arquivo exclusivo | Marque a caixa de seleção para ter nomes exclusivos para arquivos incluídos como anexos no Adaptive Forms e nas Comunicações interativas. | Não selecionado | Não aplicável |
 
-## Configuração do Tema de Formulário Adaptável e Comunicação Interativa de Canais da Web {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configuração de Tema do Canal Web de Comunicação Ativa e Interativa {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Toque em **Configuração do Tema de Canal da Web de Formulário Adaptável e Comunicação Interativa** na página **Configuração do Console da Web da Adobe Experience Manager** para visualização das propriedades de configuração dos temas de canal da Web Adaptive Forms e Interative Communications.
+Toque em **Adaptive Form and Interative Communication Web Channel Theme Configuration** na página **Adobe Experience Manager Web Console Configuration** para exibir as propriedades de configuração de temas de canal Web Adaptive Forms e Interative Communications.
 
 <table> 
  <tbody> 
@@ -113,10 +114,10 @@ Toque em **Configuração do Tema de Canal da Web de Formulário Adaptável e Co
    <td>Valores aceitáveis</td> 
   </tr> 
   <tr> 
-   <td>Nome da Lista da fonte</td> 
-   <td>Lista de fontes disponíveis para uso ao criar o Forms adaptativo e o Interative Communications.</td> 
+   <td>Nome da lista de fontes</td> 
+   <td>Lista de fontes disponíveis para uso ao criar o Adaptive Forms e o Interative Communications.</td> 
    <td><p>Geórgia</p> <p>Livro Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impacto</p> <p>Linotipo de Palatino</p> </td> 
-   <td>Todas as fontes válidas do servidor de Adobe</td> 
+   <td>Todas as fontes válidas do servidor Adobe</td> 
   </tr> 
  </tbody> 
 </table>
