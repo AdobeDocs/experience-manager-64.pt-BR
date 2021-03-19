@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: Guia do usuário do AEM 6.4 Communities
 breadcrumb-title: Guia do Communities
 user-guide-description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.
+feature-set: Experience Manager
+feature: Communities
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 11%
+source-wordcount: '509'
+ht-degree: 12%
 
 ---
 
@@ -19,8 +22,8 @@ ht-degree: 11%
 + [Visão geral do AEM Communities](home.md)
 + Introdução ao AEM Communities {#introduction}
    + [Sites das comunidades](administer-landing.md)
-   + [Visão geral do AEM Communities](overview.md)
-   + [Novidades do AEM 6.4 Communities](whats-new-aem-communities.md)
+   + [Visão geral da AEM Communities](overview.md)
+   + [Novidades AEM Comunidades 6.4](whats-new-aem-communities.md)
    + [Notas de versão do AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [Introdução ao AEM Communities](getting-started.md)
    + [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
@@ -38,7 +41,7 @@ ht-degree: 11%
    + [Topologias recomendadas para comunidades](topologies.md)
    + [Configuração do Dispatcher para Comunidades](dispatcher.md)
 + Administração {#administer}
-   + [Serviço de gerenciamento de usuários e UGC em Comunidades AEM](user-ugc-management-service.md)
+   + [Serviço de gerenciamento de usuários e UGC no AEM Communities](user-ugc-management-service.md)
    + [Sites das comunidades](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [Consoles de comunidades](consoles.md)
    + [Configuração do Analytics para recursos das Comunidades](analytics.md)
@@ -47,7 +50,7 @@ ht-degree: 11%
    + [Moderação de conteúdo da comunidade](moderate-ugc.md)
    + [Configuração de email](email.md)
    + [Notificações de comunidades](notifications.md)
-   + [Assinaturas de comunidades](subscriptions.md)
+   + [Assinaturas das Comunidades](subscriptions.md)
    + [Pontuação e emblemas de comunidades](implementing-scoring.md)
    + [Gerenciar usuários e grupos de usuários](users.md)
    + [Console de grupos da comunidade](groups.md)
@@ -68,7 +71,7 @@ ht-degree: 11%
    + [FFmpeg para comunidades](ffmpeg.md)
    + [Moderação no contexto](in-context.md)
    + [Pontuação avançada e emblemas](advanced.md)
-   + [ASRP - Provedor de Recursos de Armazenamento da Adobe](asrp.md)
+   + [ASRP - Provedor de Recursos de Armazenamento Adobe](asrp.md)
    + [MSRP - Provedor de recursos de armazenamento MongoDB](msrp.md)
    + [Como configurar o MongoDB para demonstração](demo-mongo.md)
    + [DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional](dsrp.md)
