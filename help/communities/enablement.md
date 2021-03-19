@@ -1,54 +1,55 @@
 ---
 title: Configuração dos recursos de ativação
 seo-title: Configuração dos recursos de ativação
-description: Configurar recursos de ativação nas Comunidades
-seo-description: Configurar recursos de ativação nas Comunidades
+description: Configurar recursos de ativação em Comunidades
+seo-description: Configurar recursos de ativação em Comunidades
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
 
-# Configurando os recursos de ativação {#configuring-enablement-features}
+# Configurar recursos de ativação {#configuring-enablement-features}
 
 ## Visão geral {#overview}
 
 Os recursos de ativação fornecem a capacidade de criar [comunidades de ativação](overview.md#enablement-community).
 
-* Este recurso requer licenciamento adicional para uso em um ambiente de produção.
+* Esse recurso requer licenciamento adicional para uso em um ambiente de produção.
 
 O uso dos recursos de ativação exige o seguinte:
 
 Instalação de:
 
-* **O**
+* ****
 SCORMSharable Content Object Reference Model (SCORM) é uma coleção de padrões e especificações para e-learning. O SCORM também define como o conteúdo pode ser empacotado em um arquivo ZIP transferível.
 
-* **O**
-MySQLMySQL é um banco de dados relacional usado principalmente para rastreamento SCORM e dados de relatórios para Ativação, bem como tabelas para rastrear o progresso do vídeo. O SCORM para o pacote de recursos de ativação requer o driver JDBC MySQL.
+* ****
+MySQLMySQL é um banco de dados relacional usado principalmente para rastreamento e relatórios de dados SCORM para Ativação, bem como tabelas para rastrear o progresso do vídeo. O pacote de recursos SCORM for enablement requer o driver JDBC do MySQL.
 
-* **O**
-FFmpegFFmpeg é uma solução para conversão e transmissão de áudio e vídeo e, quando instalada, é usada para transcodificação adequada dos ativos [ de ](../../help/sites-authoring/default-components-foundation.md#video)vídeo. Para comunidades de ativação, é usado no ambiente do autor para obter metadados para recursos carregados, bem como para gerar uma miniatura para exibição ao listar o recurso.
+* ****
+FFmpeg é uma solução para conversão e transmissão de áudio e vídeo e, quando instalada, é usada para a transcodificação adequada dos Ativos de  [vídeo](../../help/sites-authoring/default-components-foundation.md#video). Para comunidades de ativação, ele é usado no ambiente de criação para obter metadados para recursos carregados, bem como gerar uma miniatura para exibição ao listar o recurso.
 
 Configuração de:
 
 * **Gerentes**
-da comunidadePara comunidades de ativação, somente os membros do 
+da comunidadePara comunidades de ativação, somente membros do 
 `Community Enablement Managers` o grupo de usuários pode receber a função de  `*Community Site* Enablement Manager`, cujas permissões podem incluir criação de conteúdo, atribuições e gerenciamento de membros no ambiente de publicação.
 
 Configuração opcional de:
 
-* **A integração do Adobe**
-Analytics com a Adobe Analytics adiciona recursos abrangentes do relatórios e oferece suporte à adição do Video Heartbeat ao Analytics.
+* **Adobe**
+AnalyticsIntegration with Adobe Analytics adiciona recursos abrangentes de relatório e oferece suporte à adição do Video Heartbeat ao Analytics.
 
 * **Dispatcher**
 
@@ -60,12 +61,12 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 **Em todas as instâncias de autor/publicação:**
 
-1. **[instale o driver JDBC para o](deploy-communities.md#jdbc-driver-for-mysql)**
+1. **[instale o driver JDBC para](deploy-communities.md#jdbc-driver-for-mysql)**
 MySQLUse Web Console (pacotes): Instale  *http://localhost:4502/system/console/*
-bundlesInstale  ** antes de instalar o pacote SCORM
+pacotesInstalar  ** antes de instalar o pacote SCORM
 
 1. **[instale o](deploy-communities.md#scorm-package)**
-pacote SCORMuse o Gerenciador de pacotes: 
+pacote SCORMuse o Gerenciador de Pacotes: 
 *http://localhost:4502/crx/packmgr/*
 
 **Em qualquer servidor:**
@@ -84,38 +85,38 @@ bancos de dados MySQLExecutar scripts SQL baixados da instância do autor
 **Em todas as instâncias de autor/publicação:**
 
 1. **[configurar o](mysql.md#configure-jdbc-connections)**
-pool de Conexões JDBCuse o Console da Web (configMgr): 
+pool de Conexões JDBCUse o Console da Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[configure o](mysql.md#aem-communities-scormengine-service)**
-serviço de mecanismo SCORMUse o Console da Web (configMgr): 
+1. **[configurar o](mysql.md#aem-communities-scormengine-service)**
+serviço de mecanismo SCORMusar Console da Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
 1. **[configurar](mysql.md#adobe-granite-csrf-filter)**
-filtros CSRFusar o Console da Web (configMgr): 
+filtros CSRFuse o Console da Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
 **Na instância do autor:**
 
-1. (*opcional*) **[configurar o serviço do Analytics](analytics.md)**
+1. (*opcional*) **[configurar o serviço Analytics](analytics.md)**
 Use Ferramentas, Implantação, console Cloud Services: 
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[configurar o console Fluxo de Trabalho/Modelos](ffmpeg.md#configure-ffmpeg-transcoding-service)**
-FFmpegUse
+1. **[configurar o console](ffmpeg.md#configure-ffmpeg-transcoding-service)**
+FFmpegUse Fluxo de trabalho/Modelos
 
-1. **[habilitar o](deploy-communities.md#tunnel-service-on-author)**
-serviço de túnelUse o console da Web (configMgr): 
+1. **[habilite o Tunnel](deploy-communities.md#tunnel-service-on-author)**
+ServiceUse Web Console (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[criar](users.md#creating-community-members)** administradores de comunidadePara o ambiente do autor, use o console de segurança clássica-IU:  *http://localhost:4502/*
-usreadmincreate usuário(s) com caminho = /home/users/community
+1. **[criar](users.md#creating-community-members)** administradores de comunidadePara o ambiente de criação, use o console de segurança da interface clássica:  *http://localhost:4502/*
+usuário_usuário_usuário_criar com caminho = /home/usuários/comunidade
 
    * Adicione membros aos seguintes grupos:
 
-      * Gerentes de habilitação da comunidade
-      * Administradores de comunidades
+      * Gerentes de ativação da comunidade
+      * Administradores das Comunidades
 
 ## Dispatcher {#dispatcher}
 
-Quando a implantação inclui [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que os recursos de ativação funcionem corretamente, as seções `clientheader`e `filter`precisam de modificação. Consulte [Configurando o Dispatcher para Comunidades](dispatcher.md#enablement).
+Quando a implantação inclui [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que os recursos de ativação funcionem corretamente, as seções `clientheader`e `filter`precisam de modificação. Consulte [Configuração do Dispatcher para Comunidades](dispatcher.md#enablement).
