@@ -1,17 +1,18 @@
 ---
 title: Reestruturação do repositório Forms no AEM 6.4
 seo-title: Reestruturação do repositório Forms no AEM 6.4
-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura do repositório no AEM 6.4 para Forms.
-seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura do repositório no AEM 6.4 para Forms.
+description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 para Forms.
+seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 para Forms.
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
+feature: Atualização
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '555'
 ht-degree: 7%
 
 ---
@@ -19,17 +20,17 @@ ht-degree: 7%
 
 # Reestruturação do repositório Forms no AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Conforme descrito na página pai [Reestruturação do repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a Solução AEM Forms. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
+Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações do repositório que afetam a solução da AEM Forms. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
-**Com atualização 6.4**
+**Com a atualização 6.4**
 
 * [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
 **Antes da atualização do 6.5**
 
 * [Configuração do Echosign Cloud Service](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
-* [Configurações do Recaptcha Cloud Service](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
-* [Configurações de Cloud Service do Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
+* [Configurações de Cloud Service Recaptcha](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
+* [Configurações do Cloud Service do Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
 * [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
 ## Com a atualização 6.4 {#with-upgrade}
@@ -38,95 +39,95 @@ Conforme descrito na página pai [Reestruturação do repositório AEM 6.4](/hel
 
 | **Localização anterior** | `/etc/clientlibs/fd/fp` |
 |---|---|
-| **Novos locais** | `/libs/fd/fp/components` |
-| **Orientação relativa à reestruturação** | Quaisquer referências explícitas no código personalizado ao local Herdado devem ser atualizadas para o novo local. |
-| **Notas** | Essas bibliotecas de cliente não devem ser modificadas ou estendidas. |
+| **Novas localizações** | `/libs/fd/fp/components` |
+| **Orientação relativa à reestruturação** | Quaisquer referências explícitas no código personalizado ao local Herdado devem ser atualizadas para o Novo local. |
+| **Notas** | Essas bibliotecas de clientes não devem ser modificadas ou estendidas. |
 
 | **Localização anterior** | `/etc/clientlibs/fd/rte` |
 |---|---|
-| **Novos locais** | `/libs/fd/rte` |
-| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas do cliente que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em ativos frescos. |
+| **Novas localizações** | `/libs/fd/rte` |
+| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
 | **Notas** | N/A |
 
 | **Localização anterior** | `/etc/clientlibs/fd/af` |
 |---|---|
-| **Novos locais** | `/libs/fd/af/authoring/clientlibs` |
-| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas do cliente que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em ativos frescos. |
-| **Notas** | N/A |
+| **Novas localizações** | `/libs/fd/af/authoring/clientlibs` |
+| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
+| **Notas** | N/D |
 
 | **Localização anterior** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
-| **Novos locais** | `/libs/fd/xfaforms/clientlibs/` |
-| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas do cliente que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em ativos frescos. |
-| **Notas** | N/A |
+| **Novas localizações** | `/libs/fd/xfaforms/clientlibs/` |
+| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
+| **Notas** | N/D |
 
 | **Localização anterior** | `/etc/clientlibs/fd/af` |
 |---|---|
-| **Novos locais** | `/libs/fd/af/runtime/clientlibs` |
-| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas do cliente que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em ativos frescos. |
-| **Notas** | N/A |
+| **Novas localizações** | `/libs/fd/af/runtime/clientlibs` |
+| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
+| **Notas** | N/D |
 
 | **Localização anterior** | `/etc/clientlibs/fd/af` |
 |---|---|
-| **Novos locais** | `/libs/fd/af/runtime/clientlibs` |
-| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas do cliente que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em ativos frescos. |
-| **Notas** | N/A |
+| **Novas localizações** | `/libs/fd/af/runtime/clientlibs` |
+| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
+| **Notas** | N/D |
 
 | **Localização anterior** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
-| **Novos locais** | `/libs/fd/expeditor/clientlibs` |
-| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas do cliente que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em ativos frescos. |
-| **Notas** | N/A |
+| **Novas localizações** | `/libs/fd/expeditor/clientlibs` |
+| **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
+| **Notas** | N/D |
 
 | **Localização anterior** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
-| **Novos locais** | `/libs/fd/fmaddon` |
-| **Orientação relativa à reestruturação** | A alteração dessas clientlibs nunca foi recomendada ou suportada. Se as modificações tiverem sido feitas nesses clientlibs, elas deverão ser revertidas para usar o código fornecido pelo AEM. |
-| **Notas** | N/A |
+| **Novas localizações** | `/libs/fd/fmaddon` |
+| **Orientação relativa à reestruturação** | A alteração dessas clientlibs nunca foi recomendada ou suportada. Se as modificações tiverem sido feitas nessas clientlibs, elas deverão ser revertidas para usar o código fornecido pelo AEM. |
+| **Notas** | N/D |
 
 | **Localização anterior** | `/etc/aep` |
 |---|---|
-| **Novos locais** | `/var/fd/content/annotations` |
-| **Orientação relativa à reestruturação** | A alteração dessas clientlibs nunca foi recomendada ou suportada. Se as modificações tiverem sido feitas nesses clientlibs, elas deverão ser revertidas para usar o código fornecido pelo AEM. |
-| **Notas** | N/A |
+| **Novas localizações** | `/var/fd/content/annotations` |
+| **Orientação relativa à reestruturação** | A alteração dessas clientlibs nunca foi recomendada ou suportada. Se as modificações tiverem sido feitas nessas clientlibs, elas deverão ser revertidas para usar o código fornecido pelo AEM. |
+| **Notas** | N/D |
 
 ## Antes da atualização do 6.5 {#prior-to-upgrade}
 
-### Configuração Echosign Cloud Service {#echosign-cloud-service-configuration}
+### Echosign Cloud Service Configuration {#echosign-cloud-service-configuration}
 
 | **Localização anterior** | `/etc/cloudservices/echosign` |
 |---|---|
-| **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
-| **Notas** | N/A |
+| **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
+| **Orientação relativa à reestruturação** | O utilitário [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) a ser acionado da interface do usuário de migração do Forms. |
+| **Notas** | N/D |
 
-### Configurações do Recaptcha Cloud Service {#recaptcha-cloud-service-configurations}
+### Configurações de Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Localização anterior** | `/etc/cloudservices/recaptcha` |
 |---|---|
-| **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
-| **Notas** | N/A |
+| **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
+| **Orientação relativa à reestruturação** | O utilitário [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) a ser acionado da interface do usuário de migração do Forms. |
+| **Notas** | N/D |
 
-### Configurações de Cloud Service do Typekit {#typekit-cloud-service-configurations}
+### Configurações do Cloud Service do Typekit {#typekit-cloud-service-configurations}
 
 | **Localização anterior** | `/etc/cloudservices/typekit` |
 |---|---|
-| **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
-| **Notas** | N/A |
+| **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
+| **Orientação relativa à reestruturação** | O utilitário [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) a ser acionado da interface do usuário de migração do Forms. |
+| **Notas** | N/D |
 
 ### Diversos {#misc-1}
 
 | **Localização anterior** | `/etc/cloudservices/fdm` |
 |---|---|
-| **Novos locais** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Orientação relativa à reestruturação** | O utilitário [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md) a ser disparado da interface do usuário de migração da Forms. |
-| **Notas** | N/A |
+| **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
+| **Orientação relativa à reestruturação** | O utilitário [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) a ser acionado da interface do usuário de migração do Forms. |
+| **Notas** | N/D |
 
 | **Localização anterior** | `/etc/designs/fd/fp` |
 |---|---|
-| **Novos locais** | `/libs/fd/fp` |
-| **Orientação relativa à reestruturação** | Todas as referências aos modelos /etc devem ser atualizadas para apontar para as respectivas contrapartidas `/libs`. |
-| **Notas** | N/A |
+| **Novas localizações** | `/libs/fd/fp` |
+| **Orientação relativa à reestruturação** | Quaisquer referências aos modelos /etc devem eventualmente ser atualizadas para apontar para suas contrapartes `/libs`. |
+| **Notas** | N/D |
 
