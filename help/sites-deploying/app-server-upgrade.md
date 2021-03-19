@@ -1,18 +1,19 @@
 ---
 title: Etapas de atualização para instalações do servidor de aplicativos
 seo-title: Etapas de atualização para instalações do servidor de aplicativos
-description: Saiba como atualizar instâncias de AEM implantadas pelos Servidores de aplicativos.
-seo-description: Saiba como atualizar instâncias de AEM implantadas pelos Servidores de aplicativos.
+description: Saiba como atualizar instâncias de AEM que são implantadas pelos Servidores de Aplicativos.
+seo-description: Saiba como atualizar instâncias de AEM que são implantadas pelos Servidores de Aplicativos.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
+feature: Atualização
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -22,9 +23,9 @@ ht-degree: 0%
 
 Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão em funcionamento do AEM implantado. O procedimento destina-se a documento de atualizações executadas de **AEM versão 5.6 para 6.3**.
+Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos e implicam que você tenha uma versão funcional do AEM já implantada. O procedimento destina-se a documentar atualizações realizadas de **AEM versão 5.6 para 6.3**.
 
-1. Primeiro, start JBoss. Na maioria das situações, é possível fazer isso executando o script de inicialização `standalone.sh`, executando esse comando do terminal:
+1. Primeiro, inicie o JBoss. Na maioria das situações, é possível fazer isso executando o script de inicialização `standalone.sh` executando esse comando a partir do terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -42,7 +43,7 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    rm jboss-install-folder/standalone/deployments/cq.war
    ```
 
-1. Pare com o JBoss.
+1. Pare o JBoss.
 
 1. Agora, migre o repositório usando a ferramenta de migração crx2oak:
 
@@ -52,7 +53,7 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
 
    >[!NOTE]
    >
-   >Neste exemplo, o repositório de carvalho é o diretório temporário no qual o repositório recém-convertido residirá. Antes de executar esta etapa, verifique se você tem a versão mais recente do crx2oak.jar.
+   >Neste exemplo, oak-repository é o diretório temporário onde o repositório recém-convertido residirá. Antes de executar esta etapa, verifique se você tem a versão mais recente do crx2oak.jar.
 
 1. Exclua as propriedades necessárias no arquivo sling.properties fazendo o seguinte:
 
@@ -70,11 +71,11 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
 
 1. Remova os arquivos e pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
 
-   * A pasta **launch pad/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * A pasta **launchpad/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
    * O arquivo **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
    * O arquivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-1. Copie o repositório de segmentos recém-migrado para o local apropriado:
+1. Copie o armazenamento de segmentos recém-migrado para o local adequado:
 
    ```shell
    mv crx-quickstart/oak-repository/segmentstore crx-quickstart/repository/segmentstore
@@ -98,11 +99,11 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
 
 1. Edite os arquivos de configuração para prepará-los para uso. Mais especificamente:
 
-   * Adicione a seguinte linha a **org.apache.Jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * Adicione a seguinte linha em **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 
-   * Em seguida, adicione as seguintes linhas a **org.apache.Jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+   * Em seguida, adicione as seguintes linhas em **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
 
       ```
       path=./crx-quickstart/repository/datastore
@@ -115,19 +116,19 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. Agora é necessário alterar os modos de execução no arquivo de guerra AEM 6.3. Para fazer isso, primeiro crie uma pasta temporária que estará hospedando a guerra AEM 6.3. O nome da pasta neste exemplo será **temp**. Depois que o arquivo de guerra tiver sido copiado, extraia seu conteúdo executando de dentro da pasta temporária:
+1. Agora é necessário alterar os modos de execução no arquivo war AEM 6.3. Para fazer isso, primeiro crie uma pasta temporária que estará hospedando a guerra AEM 6.3. O nome da pasta neste exemplo será **temp**. Depois que o arquivo war for copiado, extraia seu conteúdo executando de dentro da pasta temporária:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo `web.xml` para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definido como autor:
+1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo `web.xml` para alterar os modos de execução. Para localizar o local onde estão definidos no XML, procure pela string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha de código, que por padrão é definida como author:
 
    ```shell
    <param-value >author</param-value>
    ```
 
-1. Altere o valor do autor acima e defina os modos de execução como: author,crx3,crx3tar O bloco final de código deve ter a seguinte aparência:
+1. Altere o valor do autor acima e defina os modos de execução como: author,crx3,crx3tar O bloco final de código deve ter esta aparência:
 
    ```
    <init-param>
@@ -138,13 +139,13 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    </servlet>
    ```
 
-1. Recrie o frasco com o conteúdo modificado:
+1. Recrie o jar com o conteúdo modificado:
 
    ```shell
    jar cvf aem62.war
    ```
 
-1. Finalmente, implante o novo arquivo de guerra:
+1. Finalmente, implante o novo arquivo war:
 
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
