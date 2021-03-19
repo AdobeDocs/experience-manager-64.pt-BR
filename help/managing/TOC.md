@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: Guia do usuário de gerenciamento do AEM 6.4
 breadcrumb-title: Guia de gerenciamento
 user-guide-description: Saiba como gerenciar um projeto do AEM.
+feature-set: Experience Manager Sites
+feature: Implantação
+role: Profissional
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 62%
+source-wordcount: '75'
+ht-degree: 60%
 
 ---
 
