@@ -1,42 +1,43 @@
 ---
-title: Criação de formulários adaptáveis usando o Schema XML
-seo-title: Criação de formulários adaptáveis usando o Schema XML
-description: Formulários adaptáveis podem usar o schema XML como modelo de formulário, permitindo que você aproveite os modelos XSD existentes para criar formulários adaptáveis. Você pode arrastar e soltar elementos do schema do XSD para o formulário adaptável.
-seo-description: Formulários adaptáveis podem usar o schema XML como modelo de formulário, permitindo que você aproveite os modelos XSD existentes para criar formulários adaptáveis. Você pode arrastar e soltar elementos do schema do XSD para o formulário adaptável.
+title: Criação de formulários adaptáveis usando o Esquema XML
+seo-title: Criação de formulários adaptáveis usando o Esquema XML
+description: Os formulários adaptáveis podem usar o esquema XML como modelo de formulário, permitindo que você aproveite os modelos XSD existentes para criar formulários adaptáveis. Você pode arrastar e soltar elementos de esquema do XSD para o formulário adaptável.
+seo-description: Os formulários adaptáveis podem usar o esquema XML como modelo de formulário, permitindo que você aproveite os modelos XSD existentes para criar formulários adaptáveis. Você pode arrastar e soltar elementos de esquema do XSD para o formulário adaptável.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 5%
+source-wordcount: '1083'
+ht-degree: 6%
 
 ---
 
 
-# Criação de formulários adaptáveis usando o Schema XML {#creating-adaptive-forms-using-xml-schema}
+# Criar formulários adaptáveis usando o Esquema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Pré-requisitos {#prerequisites}
 
-A criação de um formulário adaptável usando um schema XML como seu modelo de formulário requer uma compreensão básica dos schemas XML. Além disso, é recomendável ler o seguinte conteúdo antes deste artigo.
+A criação de um formulário adaptável usando um esquema XML como seu modelo de formulário requer compreensão básica de esquemas XML. Além disso, é recomendável ler o conteúdo a seguir antes deste artigo.
 
 * [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md)
-* [SCHEMA XML](https://www.w3.org/TR/xmlschema-2/)
+* [Esquema XML](https://www.w3.org/TR/xmlschema-2/)
 
-## Uso de um schema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
+## Uso de um esquema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
 
-A AEM Forms suporta a criação de um formulário adaptável usando um schema XML existente como modelo de formulário. Este schema XML representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
+O AEM Forms suporta a criação de um formulário adaptável usando um esquema XML existente como o modelo de formulário. Esse esquema XML representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na organização.
 
-Os principais recursos do uso de um schema XML são:
+Os principais recursos do uso de um esquema XML são:
 
-* A estrutura do XSD é exibida como uma árvore na guia Localizador de conteúdo no modo de criação de um formulário adaptável. Você pode arrastar e adicionar elementos da hierarquia XSD ao formulário adaptável.
-* É possível pré-preencher o formulário usando XML compatível com o schema associado.
-* No envio, os dados inseridos pelo usuário são enviados como XML que se alinha ao schema associado.
+* A estrutura do XSD é exibida como uma árvore na guia Localizador de conteúdo no modo de criação de um formulário adaptável. Você pode arrastar e adicionar elemento da hierarquia XSD ao formulário adaptável.
+* É possível preencher previamente o formulário usando XML compatível com o schema associado.
+* Ao enviar, os dados inseridos pelo usuário são enviados como XML que se alinha ao schema associado.
 
-Um schema XML consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um formulário adaptável, eles são mapeados automaticamente para o componente de formulário adaptável correspondente.
+Um esquema XML consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um formulário adaptável, eles são mapeados automaticamente para o componente de formulário adaptável correspondente.
 
 Esse mapeamento de elementos XML com componentes de formulário adaptáveis é o seguinte:
 
@@ -75,15 +76,15 @@ Esse mapeamento de elementos XML com componentes de formulário adaptáveis é o
    <td>Lista suspensa</td> 
   </tr> 
   <tr> 
-   <td>Qualquer elemento de tipo complexo</td> 
+   <td>Qualquer elemento do tipo complexo</td> 
    <td>Painel</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Schema XML de exemplo {#sample-xml-schema}
+## Exemplo de esquema XML {#sample-xml-schema}
 
-Aqui está um exemplo de um schema XML.
+Aqui está um exemplo de esquema XML.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -127,17 +128,17 @@ Aqui está um exemplo de um schema XML.
 
 >[!NOTE]
 >
->Certifique-se de que seu schema XML tenha apenas um elemento raiz. Não há suporte para um schema XML com mais de um elemento raiz.
+>Certifique-se de que o esquema XML tenha apenas um elemento raiz. Não há suporte para um esquema XML com mais de um elemento raiz.
 
-## Adicionar propriedades especiais a campos usando o schema XML {#adding-special-properties-to-fields-using-xml-schema}
+## Adicionar propriedades especiais a campos usando esquema XML {#adding-special-properties-to-fields-using-xml-schema}
 
-É possível adicionar os seguintes atributos aos elementos do Schema XML para adicionar propriedades especiais aos campos do formulário adaptável associado.
+Você pode adicionar os seguintes atributos aos elementos do Esquema XML para adicionar propriedades especiais aos campos do formulário adaptável associado.
 
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>propriedade schema</strong></th> 
-   <th><strong>Usar em forma adaptável</strong></th> 
+   <th><strong>Propriedade do esquema</strong></th> 
+   <th><strong>Uso em forma adaptável</strong></th> 
    <th><strong>Suportado em </strong></th> 
   </tr> 
   <tr> 
@@ -152,13 +153,13 @@ Aqui está um exemplo de um schema XML.
   </tr> 
   <tr> 
    <td><code>minOccurs="3"</code></td> 
-   <td><p>Especifica ocorrências mínimas</p> <p>(Para subformulários repetíveis (tipos complexos))</p> </td> 
+   <td><p>Especifica ocorrências mínimas</p> <p>(Para subformulários repetíveis (tipos complexos)</p> </td> 
    <td>Elemento (tipo complexo)</td> 
   </tr> 
   <tr> 
    <td><code class="code">maxOccurs="10"
       </code></td> 
-   <td><p>Especifica o máximo de ocorrências</p> <p>(Para subformulários repetíveis (tipos complexos))</p> </td> 
+   <td><p>Especifica o máximo de ocorrências</p> <p>(Para subformulários repetíveis (tipos complexos)</p> </td> 
    <td>Elemento (tipo complexo)</td> 
   </tr> 
  </tbody> 
@@ -166,23 +167,23 @@ Aqui está um exemplo de um schema XML.
 
 >[!NOTE]
 >
->Ao arrastar um elemento de schema para um formulário adaptável, uma legenda padrão é gerada por:
+>Ao arrastar um elemento de esquema para um formulário adaptável, uma legenda padrão é gerada por:
 >
->* Colocar o primeiro caractere do nome do elemento em maiúsculas
->* Inserindo espaço em branco nos limites do Camel Case.
+>* Capitalizar o primeiro caractere do nome do elemento
+>* Inserindo espaço em branco nos limites da Camel Case.
 
 >
 >
-Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda gerada no formulário adaptável será `User First Name`.
+Por exemplo, se você adicionar o elemento de esquema `userFirstName`, a legenda gerada no formulário adaptável será `User First Name`.
 
 ## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
-É possível adicionar as seguintes restrições aos elementos do schema XML para limitar os valores aceitáveis para um componente de formulário adaptável:
+É possível adicionar as seguintes restrições aos elementos do esquema XML para limitar os valores aceitáveis para um componente de formulário adaptável:
 
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> propriedade schema</strong></p> </td> 
+   <td><p><strong> Propriedade do esquema</strong></p> </td> 
    <td><p><strong>Tipo de dados</strong></p> </td> 
    <td><p><strong>Descrição</strong></p> </td> 
    <td><p><strong>Componente</strong></p> </td> 
@@ -222,7 +223,7 @@ Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
    <td><p>Booleano</p> </td> 
-   <td><p>Se verdadeiro, o valor numérico ou a data especificada no componente do formulário deve ser menor que o valor numérico ou a data especificada para a propriedade máxima.</p> <p>Se falso, o valor numérico ou a data especificada no componente do formulário deve ser menor ou igual ao valor numérico ou à data especificada para a propriedade máxima.</p> </td> 
+   <td><p>Se verdadeiro, o valor numérico ou a data especificada no componente do formulário deve ser menor que o valor numérico ou a data especificada para a propriedade máxima.</p> <p>Se falso, o valor numérico ou a data especificada no componente do formulário deve ser menor ou igual ao valor numérico ou à data especificada para a propriedade maximum .</p> </td> 
    <td> 
     <ul> 
      <li>Caixa numérica</li> 
@@ -262,7 +263,7 @@ Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda 
   <tr> 
    <td><p><code>length</code></p> </td> 
    <td><p>Sequência de caracteres</p> </td> 
-   <td><p>Especifica o número exato de caracteres permitidos em um componente. O comprimento deve ser igual ou maior que zero.</p> </td> 
+   <td><p>Especifica o número exato de caracteres permitidos em um componente. O comprimento deve ser igual ou superior a zero.</p> </td> 
    <td> 
     <ul> 
      <li>Caixa de texto</li> 
@@ -271,7 +272,7 @@ Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda 
   <tr> 
    <td><p><code>fractionDigits</code></p> </td> 
    <td><p>Sequência de caracteres</p> </td> 
-   <td><p>Especifica o número máximo de casas decimais permitidas em um componente. fractionDigits deve ser igual ou maior que zero.</p> </td> 
+   <td><p>Especifica o número máximo de casas decimais permitidas em um componente. O fractionDigits deve ser igual ou maior que zero.</p> </td> 
    <td> 
     <ul> 
      <li> Caixa numérica com tipo de dados flutuante ou decimal</li> 
@@ -280,10 +281,10 @@ Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda 
   <tr> 
    <td><p><code>pattern</code></p> </td> 
    <td><p>Sequência de caracteres</p> </td> 
-   <td><p>Especifica a sequência dos caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade pattern mapeia para o padrão de validação do componente de formulário adaptável correspondente.</p> </td> 
+   <td><p>Especifica a sequência de caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade pattern mapeia para o padrão de validação do componente de formulário adaptável correspondente.</p> </td> 
    <td> 
     <ul> 
-     <li>Todos os componentes de formulários adaptáveis que estão mapeados para um schema XSD </li> 
+     <li>Todos os componentes de formulários adaptáveis que estão mapeados para um esquema XSD </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -291,11 +292,11 @@ Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda 
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
-**Como faço para saber qual elemento na árvore está associado a qual elemento XML?**
+**Como sei qual elemento na árvore está associado a qual elemento XML?**
 
-Ao clicar com o duplo em um elemento no Localizador de conteúdo, um pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no schema.
+Ao clicar duas vezes em um elemento no Localizador de conteúdo, um pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no esquema.
 
-![Um campo bindref de um elemento de schema XML](assets/dblclick.png)
+![Um campo bindref de um elemento de esquema XML](assets/dblclick.png)
 
 O campo bindRef</code> mostra a associação entre um elemento de árvore e um elemento ou atributo em um schema.
 
@@ -303,17 +304,17 @@ O campo bindRef</code> mostra a associação entre um elemento de árvore e um e
 >
 >Os atributos têm um símbolo `@` em seu valor `bindRef`para diferenciá-los dos elementos. Por exemplo, `/config/projectDetails/@duration`.
 
-**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada a partir de qualquer tipo complexo) para subformulários repetitivos (os valores minOccours ou maxOccurs são maiores que 1)?**
+**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (os valores minOccours ou maxOccurs são maiores que 1)?**
 
-Em um subformulário repetível, é necessário usar o subformulário completo. Se você quiser apenas campos seletivos, use a estrutura inteira e exclua os não desejados.
+Em um subformulário repetível, é necessário usar o subformulário completo. Se quiser apenas campos seletivos, use toda a estrutura e exclua os não desejados.
 
-**Tenho uma estrutura longa e complexa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
+**Tenho uma estrutura complexa longa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
 
 Você tem duas opções:
 
-* Percorrer a estrutura em árvore
+* Rolar pela estrutura de árvore
 * Use a caixa Pesquisar para localizar um elemento
 
 **O que é um bindRef?**
 
-Um `bindRef` é a conexão entre um componente de formulário adaptável e um atributo ou elemento de schema. Determina `XPath` onde o valor capturado deste componente ou campo está disponível no XML de saída. Um `bindRef`também é usado ao pré-preencher um valor de campo a partir do XML pré-preenchido (pré-preenchido).
+Um `bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo de esquema. Determina o `XPath` onde o valor capturado desse componente ou campo está disponível no XML de saída. Um `bindRef`também é usado ao pré-preencher um valor de campo a partir de XML pré-preenchido (pré-preenchido).
