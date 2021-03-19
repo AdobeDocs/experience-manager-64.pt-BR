@@ -1,6 +1,6 @@
 ---
-title: COMMERCE CLOUD SAP
-seo-title: COMMERCE CLOUD SAP
+title: Commerce Cloud SAP
+seo-title: Commerce Cloud SAP
 description: Saiba como usar o AEM com o SAP Commerce Cloud.
 seo-description: Saiba como usar o AEM com o SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
@@ -10,10 +10,11 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
+feature: Estrutura de integração de comércio
 translation-type: tm+mt
-source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -24,65 +25,65 @@ ht-degree: 1%
 Após a instalação, você pode configurar sua instância:
 
 1. [Configure a Pesquisa Facetada para Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors).
-1. [Configure a versão](#configure-the-catalog-version) do catálogo.
-1. [Configure a estrutura](#configure-the-import-structure) de importação.
-1. [Configure os atributos do produto para carregar](#configure-the-product-attributes-to-load).
-1. [Importando os dados](#importing-the-product-data) do produto.
-1. [Configure o Importador](#configure-the-catalog-importer) de Catálogo.
+1. [Configure a versão do catálogo](#configure-the-catalog-version).
+1. [Configure a estrutura de importação](#configure-the-import-structure).
+1. [Configure os atributos do produto para serem carregados](#configure-the-product-attributes-to-load).
+1. [Importação dos dados do produto](#importing-the-product-data).
+1. [Configure o Importador de Catálogo](#configure-the-catalog-importer).
 1. Use o importador [para importar o catálogo](#catalog-import) para um local específico no AEM.
 
-## Configurar a pesquisa direcionada por Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Configurar a pesquisa por Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors} Facetada
 
 >[!NOTE]
 >
 >Isso não é necessário para os híbridos 5.3.0.1 e posteriores.
 
-1. No seu navegador, navegue até **console de gerenciamento de híbridos** em:
+1. No navegador, navegue até o **console de gerenciamento de híbridos** em:
 
    [http://localhost:9001/hmc/hybris](http://localhost:9001/hmc/hybris)
 
-1. Na barra lateral, selecione **Sistema**, **Pesquisa de facetas** e **Configuração de pesquisa de facetas**.
-1. **Abra o** Editor para a  **Amostra de configuração do Solr para catálogo** de roupas.
+1. Na barra lateral, selecione **System**, em seguida **Facet search**, em seguida **Facet Search Config**.
+1. **Abra o** Editor para a Configuração de Solr de  **Amostra para o catálogo de clothescatalog**.
 
-1. Em **Versões de catálogo** use **Adicionar versão de catálogo** para adicionar `outdoors-Staged` e `outdoors-Online` à lista.
+1. Em **Versões do catálogo** use **Adicionar versão do catálogo** para adicionar `outdoors-Staged` e `outdoors-Online` à lista.
 1. **Salve a configuração.**
 1. Abra **Tipos de Item SOLR** para adicionar **Classificações SOLR** a `ClothesVariantProduct`:
 
    * relevância (&quot;Relevância&quot;, pontuação)
    * name-asc (&quot;Nome (crescente)&quot;, nome)
-   * name-desc (&quot;Nome (decrescente)&quot;, nome)
+   * name-desc (&quot;Name (descending)&quot;, name)
    * price-asc (&quot;Price (crescente)&quot;, priceValue)
    * price-desc (&quot;Price (decrescente)&quot;, priceValue)
 
    >[!NOTE]
    >
-   >Use o menu de contexto (normalmente, clique com o botão direito do mouse) para selecionar `Create Solr sort`.
+   >Use o menu de contexto (geralmente, clique com o botão direito do mouse) para selecionar `Create Solr sort`.
    >
-   >Para Hybris 5.0.0, abra a guia `Indexed Types`, clique com o duplo em `ClothesVariantProduct` e depois na guia `SOLR Sort`.
+   >Para Hybris 5.0.0, abra a guia `Indexed Types`, clique duas vezes em `ClothesVariantProduct` e, em seguida, na guia `SOLR Sort`.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-1. Na guia **Tipos indexados** defina **Tipo composto** como:
+1. Na guia **Tipos indexados**, defina o **Tipo composto** para:
 
    `Product - Product`
 
-1. Na guia **Tipos indexados** ajuste **query do indexador** para `full`:
+1. Na guia **Tipos indexados** ajuste o **Indexador de consultas** para `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. Na guia **Tipos indexados** ajuste **query do indexador** para `incremental`:
+1. Na guia **Tipos indexados** ajuste o **Indexador de consultas** para `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. Na guia **Tipos indexados** ajuste a faceta `category`. Clique com o duplo na última entrada da lista da categoria para abrir a guia **Propriedade indexada**:
+1. Na guia **Tipos indexados** ajuste a faceta `category`. Clique duas vezes na última entrada na lista de categorias para abrir a guia **Indexed property**:
 
    >[!NOTE]
    >
-   >Para os híbridos 5.2, verifique se o atributo `Facet` na tabela Propriedades está selecionado de acordo com a captura de tela abaixo:
+   >Para híbridos 5.2, verifique se o atributo `Facet` na tabela Propriedades está selecionado de acordo com a captura de tela abaixo:
 
    ![chlimage_1-37](assets/chlimage_1-37.png) ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -91,7 +92,7 @@ Após a instalação, você pode configurar sua instância:
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
 1. **Salve as alterações.**
-1. Novamente em **Tipos de Item SOLR**, ajuste a faceta `price` de acordo com as seguintes capturas de tela. Assim como com `category`, clique com o duplo em `price` para abrir a guia **Propriedade indexada**:
+1. Novamente em **Tipos de item SOLR**, ajuste a faceta `price` de acordo com as capturas de tela a seguir. Assim como com `category`, clique duas vezes em `price` para abrir a guia **Propriedade indexada**:
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
@@ -100,29 +101,29 @@ Após a instalação, você pode configurar sua instância:
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
 1. **Salve as alterações.**
-1. Abra **Sistema**, **Pesquisa de facetas**, em seguida **Assistente de operação de indexador**. Start cronjob:
+1. Abra **System**, **Facet search**, em seguida **Assistente de operação do indexador**. Inicie um cronjob:
 
    * **Operação** do indexador:  `full`
-   * **Configuração** Solr:  `Sample Solr Config for Clothes`
+   * **Configuração** de Solr:  `Sample Solr Config for Clothes`
 
 ## Configurar a versão do catálogo {#configure-the-catalog-version}
 
-O **Versão do catálogo** ( `hybris.catalog.version`) importado pode ser configurado para o serviço OSGi:
+A **Versão do catálogo** ( `hybris.catalog.version`) importada pode ser configurada para o serviço OSGi:
 
-**Configuração**
- de Hybris de Comércio do CQ Dia(  `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
+**Configuração de resumo do comércio do CQ do dia**
+ (  `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Geralmente, a** versão do catálogo é definida como  `Online` ou  `Staged` (o padrão).
+**A** versão do catálogo geralmente é definida como  `Online` ou  `Staged` (o padrão).
 
 >[!NOTE]
 >
->Ao trabalhar com AEM existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configurando o OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
+>Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
 
 A saída do log fornece feedback sobre as páginas e os componentes criados e relata possíveis erros.
 
 ## Configurar a estrutura de importação {#configure-the-import-structure}
 
-A listagem a seguir mostra uma estrutura de amostra (de ativos, páginas e componentes) criada por padrão:
+A listagem a seguir mostra uma estrutura de exemplo (de ativos, páginas e componentes) que é criada por padrão:
 
 ```shell
 + /content/dam/path/to/images
@@ -157,7 +158,7 @@ A listagem a seguir mostra uma estrutura de amostra (de ativos, páginas e compo
               + ...
 ```
 
-Essa estrutura é criada pelo serviço OSGi `DefaultImportHandler` que implementa a interface `ImportHandler`. Um manipulador de importação é chamado pelo importador real para criar produtos, variações de produtos, categorias, ativos, etc.
+Essa estrutura é criada pelo serviço OSGi `DefaultImportHandler` que implementa a interface `ImportHandler`. Um manipulador de importação é chamado pelo importador real para criar produtos, variações de produto, categorias, ativos, etc.
 
 >[!NOTE]
 >
@@ -165,39 +166,39 @@ Essa estrutura é criada pelo serviço OSGi `DefaultImportHandler` que implement
 
 A estrutura a ser gerada ao importar pode ser configurada para:
 
-&quot;**Manipulador de Importação Padrão de Híbris de Comércio do Day CQ**
+&quot;**Manipulador de Importação Padrão do Day CQ Commerce Hybris**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
-Ao trabalhar com AEM existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configurando o OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
+Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
 
 ## Configure os atributos do produto para carregar {#configure-the-product-attributes-to-load}
 
-O analisador de resposta pode ser configurado para definir as propriedades e os atributos a serem carregados para produtos (variantes):
+O analisador de resposta pode ser configurado para definir as propriedades e os atributos a serem carregados para produtos (variante):
 
 1. Configure o pacote OSGi:
 
-   **Analisador**
- de Resposta Padrão de Híbris de Comércio do CQ de Dia(`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
+   **Analisador de resposta padrão de híbrido do comércio CQ do dia**
+ (`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
 
    Aqui você pode definir várias opções e atributos necessários para carregar e mapear.
 
    >[!NOTE]
    >
-   >Ao trabalhar com AEM existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configurando o OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
+   >Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
 
-## Importando os dados do produto {#importing-the-product-data}
+## Importação dos dados do produto {#importing-the-product-data}
 
-Há várias maneiras de importar os dados do produto. Os dados do produto podem ser importados ao configurar inicialmente o ambiente, ou após alterações nos dados de suborno:
+Há várias maneiras de importar os dados do produto. Os dados do produto podem ser importados ao configurar inicialmente o ambiente ou após alterações serem feitas nos dados de híbridos:
 
 * [Importação completa](#full-import)
 * [Importação incremental](#incremental-import)
-* [Atualização Express](#express-update)
+* [Atualização expressa](#express-update)
 
-As informações reais sobre produtos importados de híbridos são mantidas no repositório sob:
+As informações reais do produto importadas de híbridos são mantidas no repositório em:
 
 `/etc/commerce/products`
 
-As seguintes propriedades indicam o link com os híbridos:
+As seguintes propriedades indicam o link com híbridos:
 
 * `commerceProvider`
 * `cq:hybrisCatalogId`
@@ -207,7 +208,7 @@ As seguintes propriedades indicam o link com os híbridos:
 >
 >A implementação de híbridos (ou seja, `geometrixx-outdoors/en_US`) armazena somente IDs de produtos e outras informações básicas em `/etc/commerce`.
 >
->O servidor hybris é referenciado toda vez que informações sobre um produto são solicitadas.
+>O servidor hybris é referenciado sempre que as informações sobre um produto são solicitadas.
 
 ### Importação completa {#full-import}
 
@@ -221,8 +222,8 @@ As seguintes propriedades indicam o link com os híbridos:
 
       [`http://localhost:4502/crx/de/index.jsp#/etc/commerce/products`](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-   1. Exclua o nó que armazena os dados do produto; por exemplo, `outdoors`.
-   1. **Salvar** tudo para persistir a alteração.
+   1. Exclua o nó que retém os dados do produto; por exemplo, `outdoors`.
+   1. **Salvar** tudo para continuar a alteração.
 
 1. Abra o importador de híbridos em AEM:
 
@@ -236,29 +237,29 @@ As seguintes propriedades indicam o link com os híbridos:
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
-1. Clique em **Importar catálogo** para start da importação.
+1. Clique em **Importar catálogo** para iniciar a importação.
 
-   Quando concluído, você pode verificar os dados importados em:
+   Ao concluir, é possível verificar os dados importados em:
 
    ```
        /etc/commerce/products/outdoors
    ```
 
-   Você pode abrir isto no CRXDE Lite. por exemplo:
+   Você pode abrir isso no CRXDE Lite; por exemplo:
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
 ### Importação incremental {#incremental-import}
 
-1. Verificar as informações contidas no AEM relativas ao(s) produto(s) em causa, na subárvore adequada sob:
+1. Verificar, na subárvore adequada, as informações constantes AEM para o(s) produto(s) em causa:
 
    `/etc/commerce/products`
 
-   Você pode abrir isto no CRXDE Lite. por exemplo:
+   Você pode abrir isso no CRXDE Lite; por exemplo:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Em hipbris, atualize a informação mantida sobre o(s) produto(s) revelador(es).
+1. Em híbridos, atualizar a informação contida no(s) produto(s) revelador(es).
 
 1. Abra o importador de híbridos em AEM:
 
@@ -269,9 +270,9 @@ As seguintes propriedades indicam o link com os híbridos:
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
 1. Selecione a caixa de clique **Importação incremental**.
-1. Clique em **Importar catálogo** para start da importação.
+1. Clique em **Importar catálogo** para iniciar a importação.
 
-   Quando concluído, você pode verificar os dados atualizados em AEM em:
+   Ao concluir, você pode verificar os dados atualizados em AEM em:
 
    ```
        /etc/commerce/products
@@ -280,19 +281,19 @@ As seguintes propriedades indicam o link com os híbridos:
 
 ### Atualização expressa {#express-update}
 
-O processo de importação pode levar muito tempo, de modo que, como uma extensão da Sincronização de produtos, você pode selecionar áreas específicas do catálogo para uma atualização expressa que é acionada manualmente. Isso usa o feed de exportação junto com a configuração de atributos padrão.
+O processo de importação pode demorar muito tempo, portanto, como uma extensão da Sincronização de produto, você pode selecionar áreas específicas do catálogo para uma atualização expressa que é acionada manualmente. Isso usa o feed de exportação junto com a configuração de atributos padrão.
 
-1. Verificar as informações contidas no AEM relativas ao(s) produto(s) em causa, na subárvore adequada sob:
+1. Verificar, na subárvore adequada, as informações constantes AEM para o(s) produto(s) em causa:
 
    `/etc/commerce/products`
 
-   Você pode abrir isto no CRXDE Lite. por exemplo:
+   Você pode abrir isso no CRXDE Lite; por exemplo:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Em hipbris, atualize a informação mantida sobre o(s) produto(s) revelador(es).
+1. Em híbridos, atualizar a informação contida no(s) produto(s) revelador(es).
 
-1. Em hipbris, adicione o(s) produto(s) à fila expressa; por exemplo:
+1. Em hybris, adicione o(s) produto(s) à fila expressa; por exemplo:
 
    ![chlimage_1-43](assets/chlimage_1-43.png)
 
@@ -305,9 +306,9 @@ O processo de importação pode levar muito tempo, de modo que, como uma extens�
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
 1. Selecione a caixa de clique **Atualização expressa**.
-1. Clique em **Importar catálogo** para start da importação.
+1. Clique em **Importar catálogo** para iniciar a importação.
 
-   Quando concluído, você pode verificar os dados atualizados em AEM em:
+   Ao concluir, você pode verificar os dados atualizados em AEM em:
 
    ```
        /etc/commerce/products
@@ -317,18 +318,18 @@ O processo de importação pode levar muito tempo, de modo que, como uma extens�
 
 ## Configurar o Importador de Catálogo {#configure-the-catalog-importer}
 
-O catálogo de híbridos pode ser importado para AEM, usando o importador de lote para catálogos de híbridos, categorias e produtos.
+O catálogo de híbridos pode ser importado para o AEM, usando o importador de lote para catálogos de híbridos, categorias e produtos.
 
 Os parâmetros usados pelo importador podem ser configurados para:
 
 **Importador**
- do Catálogo de Híbris do Comércio do Day CQ(  `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
+ de Catálogo de Híbridos do Day CQ Commerce (  `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
-Ao trabalhar com AEM existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configurando o OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
+Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
 
 ## Importação de catálogo {#catalog-import}
 
-O pacote hybris vem com um importador de catálogo para configurar a estrutura da página inicial.
+O pacote de híbridos vem com um importador de catálogo para configurar a estrutura da página inicial.
 
 Isso está disponível em:
 
@@ -338,29 +339,29 @@ Isso está disponível em:
 
 Devem ser fornecidas as seguintes informações:
 
-* **Armazenamento**
-baseO identificador do armazenamento base configurado em híbridos.
+* **Base**
+storeO identificador do armazenamento base configurado em híbridos.
 
 * ****
 CatálogoO identificador do catálogo a ser importado.
 
-* **Caminho raizO caminho para o qual o catálogo deve ser importado.**
-
+* ****
+Caminho raizO caminho para o qual o catálogo deve ser importado.
 
 ## Removendo um produto do catálogo {#removing-a-product-from-the-catalog}
 
 Para remover um ou mais produtos do catálogo:
 
-1. [Configure o Importador](/help/sites-deploying/configuring-osgi.md) **do Catálogo de Híbris do Comércio CQ para OSGi** serviceDay CQ; consulte também  [Configurar o Importador](#configure-the-catalog-importer) de Catálogo.
+1. [Configure o para o Importador](/help/sites-deploying/configuring-osgi.md) **de Catálogo de Híbris do Comércio do** ServiceDay CQ do OSGi; consulte também  [Configurar o importador de catálogo](#configure-the-catalog-importer).
 
    Ative as seguintes propriedades:
 
-   * **Ativar remoção de produto**
-   * **Ativar remoção de ativos de produtos**
+   * **Habilitar remoção de produto**
+   * **Habilitar remoção de ativos de produtos**
 
    >[!NOTE]
    >
-   >Ao trabalhar com AEM existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configurando o OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
+   >Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
 
 1. Inicialize o importador executando duas atualizações incrementais (consulte [Importação de Catálogo](#catalog-import)):
 
@@ -369,7 +370,7 @@ Para remover um ou mais produtos do catálogo:
 
    >[!NOTE]
    >
-   >A primeira importação é inicializar as informações do produto. A segunda importação verifica se tudo funcionou e se o conjunto de produtos está pronto.
+   >A primeira importação é inicializar as informações do produto. A segunda importação verifica se tudo funcionou e o conjunto de produtos está pronto.
 
 1. Verifique a página de categoria que contém o produto que deseja remover. Os detalhes do produto devem ser visíveis.
 
@@ -377,7 +378,7 @@ Para remover um ou mais produtos do catálogo:
 
    [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-1. Remova o produto no console hybris. Use a opção **Alterar status de aprovação** para definir o status como `unapproved`. O produto será removido do feed vivo.
+1. Remova o produto no console hybris. Use a opção **Change approval status** para definir o status como `unapproved`. O produto será removido do feed ao vivo.
 
    Por exemplo:
 
@@ -386,8 +387,8 @@ Para remover um ou mais produtos do catálogo:
    * Pesquisar `Cajamara`
    * Selecione este produto e altere o status de aprovação para `unapproved`
 
-1. Execute outra atualização incremental (consulte [Importação de Catálogo](#catalog-import)). O registro irá lista do produto excluído.
-1. [](/help/sites-administering/generic.md#rolling-out-a-catalog) Implantar o catálogo apropriado. A página do produto e do produto será removida do AEM.
+1. Execute outra atualização incremental (consulte [Importação de Catálogo](#catalog-import)). O log listará o produto excluído.
+1. [](/help/sites-administering/generic.md#rolling-out-a-catalog) Implemente o catálogo apropriado. A página do produto e do produto será removida do AEM.
 
    Por exemplo:
 
@@ -400,28 +401,28 @@ Para remover um ou mais produtos do catálogo:
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * O produto `Cajamara` será removido da categoria `Bike`
+   * O produto `Cajamara` terá sido removido da categoria `Bike`
 
 1. Para reinstalar o produto:
 
-   1. Em subtítulo, redefina o status de aprovação para **aprovado**
+   1. Em híbridos, defina o status de aprovação novamente para **approved**
    1. No AEM:
 
       1. executar uma atualização incremental
-      1. executar novamente o catálogo apropriado
+      1. implementar o catálogo apropriado novamente
       1. atualizar a página de categoria apropriada
 
 ## Adicionar a característica do histórico de pedidos ao contexto do cliente {#add-order-history-trait-to-the-client-context}
 
-Para adicionar o histórico de pedidos ao [contexto do cliente](/help/sites-developing/client-context.md):
+Para adicionar o histórico de pedidos ao [contexto de cliente](/help/sites-developing/client-context.md):
 
-1. Abra a [página de design de contexto do cliente](/help/sites-administering/client-context.md), por:
+1. Abra a [página de design do contexto do cliente](/help/sites-administering/client-context.md), seguindo um destes procedimentos:
 
-   * Abra uma página para edição e abra o contexto do cliente usando **Ctrl-Alt-c** (windows) ou **control-option-c** (Mac). Use o ícone de lápis no canto superior esquerdo do contexto do cliente para **Abrir a página de design do ClientContext**.
+   * Abra uma página para edição e, em seguida, abra o contexto do cliente usando **Ctrl-Alt-c** (windows) ou **control-option-c** (Mac). Use o ícone de lápis no canto superior esquerdo do contexto do cliente para **Abrir a página de design do ClientContext**.
    * Navegue diretamente para [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
-1. [Adicione o componente  **Order** ](/help/sites-administering/client-context.md#adding-a-property-component) Historyao componente  **Shopping** Cart do contexto do cliente.
-1. Você pode confirmar que o contexto do cliente está mostrando detalhes do histórico do seu pedido. Por exemplo:
+1. [Adicione o componente  **Histórico do** ](/help/sites-administering/client-context.md#adding-a-property-component) pedido ao componente  **Carrinho** de compras do contexto do cliente.
+1. Você pode confirmar que o contexto do cliente está mostrando detalhes do histórico do pedido. Por exemplo:
 
    1. Abra o [contexto do cliente](/help/sites-administering/client-context.md).
    1. Adicione um item ao carrinho.
@@ -444,5 +445,5 @@ Para adicionar o histórico de pedidos ao [contexto do cliente](/help/sites-deve
    >* Clique no segmento ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
       >
       >
-   * O segmento é criado usando a característica **Histórico de pedidos**.
+   * O segmento é criado usando a característica **Order History Property**.
 
