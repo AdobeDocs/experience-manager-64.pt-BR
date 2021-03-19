@@ -1,8 +1,8 @@
 ---
 title: Componentes fundamentais
 seo-title: Componentes fundamentais
-description: 'null'
-seo-description: nulo
+description: Componentes fundamentais
+seo-description: 'null'
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,9 +12,9 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6670'
+source-wordcount: '6671'
 ht-degree: 79%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Esta seção aborda os componentes fundamentais, que estão disponíveis com o AEM para várias versões e estão disponíveis prontamente em uma configuração padrão do AEM. No entanto, vários componentes básicos foram descontinuados com AEM 6.4.
+>Esta seção aborda os componentes fundamentais, que estão disponíveis com o AEM para várias versões e estão disponíveis prontamente em uma configuração padrão do AEM. No entanto, vários componentes fundamentais foram descontinuados com o AEM 6.4.
 >
->A Adobe recomenda aproveitar os componentes principais [mais modernos e extensíveis](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). Eles fazem parte do [conteúdo de amostra We.Retail](/help/sites-developing/we-retail.md) e também podem ser [instalados separadamente e usados para desenvolvimento](https://helpx.adobe.com/experience-manager/core-components/using/using.html) pelo administrador.
+>O Adobe recomenda o aproveitamento dos [componentes principais mais modernos e extensíveis](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). Eles fazem parte do [conteúdo de amostra We.Retail](/help/sites-developing/we-retail.md) e também podem ser [instalado separadamente e usado para desenvolvimento](https://helpx.adobe.com/experience-manager/core-components/using/using.html) pelo seu administrador.
 
 Os componentes fundamentais foram projetados para uso ao criar conteúdo autoral em uma página da Web padrão. Eles formam um subconjunto de componentes disponíveis out-of-the-box em uma instalação padrão do AEM.
 
-Alguns estão imediatamente disponíveis por meio do navegador de componentes, vários outros também estão disponíveis usando [modo de design](/help/sites-authoring/default-components-designmode.md) (se a página for baseada em um modelo estático) ou [editando o modelo](/help/sites-authoring/templates.md) (se a página for baseada em um modelo editável).
+Alguns estão imediatamente disponíveis por meio do navegador de componentes, vários outros também estão disponíveis usando o [modo de design](/help/sites-authoring/default-components-designmode.md) (se a página for baseada em um modelo estático) ou ao [editar o modelo](/help/sites-authoring/templates.md) (se a página for baseada em um modelo editável).
 
-O uso de componentes de fundação é suportado, mas eles foram substituídos por componentes principais que ofertas mais extensibilidade e flexibilidade.
+O uso de componentes fundamentais é suportado, mas eles foram substituídos por componentes principais que oferecem mais extensibilidade e flexibilidade.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Você pode definir um link com título e descrição.
 ### Imagem adaptativa {#adaptive-image}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda aproveitar o [Componente principal de imagem dos componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html).
+>Este componente fundamental foi descontinuado. O Adobe recomenda o aproveitamento do [Componente de imagem dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) em vez disso.
 
 O componente de base da Imagem adaptativa gera imagens que são dimensionadas para caber na janela na qual a página da Web está aberta. Para usar o componente, você fornece um recurso de imagem do sistema de arquivos ou DAM. Quando a página da Web está aberta, o navegador baixa uma cópia da imagem que foi redimensionada para que seja adequada à janela atual.
 
@@ -92,7 +92,7 @@ Você pode usar os arquivos de imagem das seguintes extensões de nome de arquiv
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; Arquivos .gif animados não são suportados em AEM para execuções adaptáveis.
+>&amp;ast;&amp;ast; Arquivos .gif animados não são aceitos no AEM para representações adaptáveis.
 
 #### Tamanhos e qualidade de imagens {#images-sizes-and-quality}
 
@@ -172,7 +172,7 @@ Estão disponíveis em duas guias:
 
 * **Carrossel**
 
-   Aqui, você especifica como o carrossel opera:
+   Aqui você especifica como o carrossel opera:
 
    * Reproduzir velocidade
 
@@ -184,15 +184,15 @@ Estão disponíveis em duas guias:
 
    * Estilo dos controles
 
-      Várias opções estão disponíveis em um menu suspenso; por exemplo, os botões Anterior / Próximo, Comutadores Superior Direito.
+      Várias opções estão disponíveis em um menu suspenso; por exemplo, os botões Anterior/Próximo, os comutadores Superior direito.
 
 * **Lista**
 
-   Aqui, você especifica como as páginas são incluídas no carrossel:
+   Aqui você especifica como as páginas são incluídas no carrossel:
 
    * **Criar uso da lista**
 
-      Há várias maneiras de criar uma lista de página - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa avançada (todas descritas abaixo).
+      Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa Avançada (todas descritas abaixo).
 
       Observe que não importa qual o método escolhido, cada página que você incluir na sua lista deve ter uma imagem associada à página. É esta imagem que será exibida no carrossel. Caso não haja imagens para uma determinada página na opção Propriedades da página, você deve associar uma imagem à página antes de começar, caso contrário, o carrossel exibirá uma página em branco (ou na maior parte em branco). Consulte [Editar as propriedades da página](/help/sites-authoring/editing-page-properties.md).
 
@@ -214,12 +214,12 @@ PáginasSelecione uma lista de páginas. Use
 
          * **Pesquisar consulta**
 
-            Você pode inserir um query de pesquisa de texto simples.
+            Você pode inserir uma consulta de pesquisa de texto simples.
       * **Opções de pesquisa avançada**
 
          * **Notação do predicativo do Querybuilder**
 
-            Você pode inserir um query de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
+            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
 
             Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
    * **Ordenar por**
@@ -308,7 +308,7 @@ O componente externo de integração do aplicativo (**Externo**) permite que voc
 
    * **Aplicativo de destino**
 
-      Especifique o URL do aplicativo da Web a ser integrado; por exemplo:
+      Especifique o URL da aplicação Web a ser integrada; por exemplo:
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
@@ -316,13 +316,13 @@ O componente externo de integração do aplicativo (**Externo**) permite que voc
 
    * **Enviar parâmetros**
 
-      Marque a caixa para ver se os parâmetros são passados para o aplicativo, quando necessário.
+      Marque a caixa com parâmetros a serem enviados para o aplicativo, quando necessário.
 
    * **Largura e altura**
 
       Define o tamanho do iframe
 
-A aplicação externa é integrada no sistema de parágrafo da página AEM; por exemplo, ao usar um aplicativo de Público alvo de `https://en.wikipedia.org/wiki/Main_Page`:
+O aplicativo externo é integrado ao sistema de parágrafo da página de AEM; por exemplo, ao usar um aplicativo Target de `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -337,7 +337,7 @@ A aplicação externa é integrada no sistema de parágrafo da página AEM; por 
 
 >[!CAUTION]
 >
->Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+>Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
 O componente Flash permite que você carregue um filme em Flash. Você pode arrastar um ativo em Flash do localizador de conteúdo para o componente ou usar a caixa de diálogo:
 
@@ -407,7 +407,7 @@ Várias opções adicionais estão disponíveis no modo de edição de tela chei
 >
 >Os usuários do Internet Explorer precisam fazer upload da imagem e clique em **Ok** e abra novamente a imagem para ver o arquivo carregado na visualização e para poder realizar as modificações (isto é, cortar).
 >
->Consulte a seção [Plataformas suportadas](/help/release-notes/release-notes.md#supported-platforms) para obter mais informações sobre os recursos HTML5 usados pelo AEM.
+>Consulte a seção [Plataformas compatíveis](/help/release-notes/release-notes.md#supported-platforms) para obter mais informações sobre os recursos de HTML5 usados pelo AEM.
 
 Quando uma imagem é carregada, você pode configurar o seguinte:
 
@@ -433,11 +433,11 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
 * **Texto alternativo**
 
-   Um texto alternativo para usar ao criar conteúdo acessível.
+   Um texto alternativo para usar na criação de conteúdo acessível.
 
 * **Vincular ao**
 
-   Crie um link para ativos ou outras páginas em seu site.
+   Crie um link para ativos ou outras páginas no seu site.
 
 * **Descrição**
 
@@ -495,12 +495,12 @@ O componente de Lista permite que você configure os critérios de pesquisa para
 
          * **Pesquisar consulta**
 
-            Você pode inserir um query de pesquisa de texto simples.
+            Você pode inserir uma consulta de pesquisa de texto simples.
       * **Opções de pesquisa avançada**
 
          * **Notação do predicativo do Querybuilder**
 
-            Você pode inserir um query de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
+            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
 
             Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
       * **Tags**
@@ -533,7 +533,7 @@ O componente de Lista permite que você configure os critérios de pesquisa para
 
 O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá exibir uma lista de páginas filhas (o design é controlado pelas definições CSS personalizadas do site).
 
-![dc_lista_use](assets/dc_list_use.png)
+![dc_list_use](assets/dc_list_use.png)
 
 ### Logon {#login}
 
@@ -542,7 +542,7 @@ O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá ex
 
 >[!CAUTION]
 >
->Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+>Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
 Fornece os campos Nome de usuário e Senha.
 
@@ -554,7 +554,7 @@ Fornece os campos Nome de usuário e Senha.
 
    * Rótulo da seção
 
-      Texto principal para os campos de entrada.
+      Texto de lead para os campos de entrada.
 
    * Rótulo do nome de usuário
 
@@ -582,7 +582,7 @@ Fornece os campos Nome de usuário e Senha.
 
 >[!CAUTION]
 >
->Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+>Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
 * **Título**
 
@@ -596,7 +596,7 @@ Fornece os campos Nome de usuário e Senha.
 
    * **Tipo / Tamanho**
 
-      Selecione na seleção fornecida.
+      Selecione a partir da seleção fornecida.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -643,11 +643,11 @@ O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
    * **Tipos de nós**
 
-      Se a pesquisa for restrita a um nó específico, digite lista aqui; por exemplo, `cq:Page`.
+      Se a pesquisa for restrita ao tipo de nó específico, liste-os aqui; por exemplo, `cq:Page`.
 
    * **Caminho para pesquisar em**
 
-      Especifique a página raiz do ramo que deseja pesquisar.
+      Especifique a página raiz da ramificação que deseja pesquisar.
 
    * **Texto do botão de pesquisa**
 
@@ -702,7 +702,7 @@ O exemplo a seguir mostra um termo de pesquisa escrito incorretamente e não est
 ### Mapa do site {#sitemap}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. O Adobe recomenda aproveitar os [Navigation](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/navigation.html), [Navegação de Idioma](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/language-navigation.html) e [Componentes Principais da Trilha de Navegação](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/breadcrumb.html).
+>Este componente fundamental foi descontinuado. O Adobe recomenda o aproveitamento do [Navigation](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/language-navigation.html) e [Breadcrumb Core Components](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/breadcrumb.html) em vez disso.
 
 Uma lista de mapa do site automático, que (com as configurações padrão) lista todas as páginas (como links ativos) no site atual. Por exemplo, uma extração mostra:
 
@@ -723,7 +723,7 @@ Se necessário, é possível configurar:
 
 >[!CAUTION]
 >
->Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+>Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
 Este componente permite que você carregue uma série de imagens a serem exibidas como um slideshow em sua página. Você pode adicionar ou remover imagens e atribuí-las um título. Em Avançado, também é possível especificar o tamanho da área de exibição.
 
@@ -733,7 +733,7 @@ Este componente permite que você carregue uma série de imagens a serem exibida
 
    * **Novo slide**
 
-      Você pode especificar uma seleção de slides usando os botões **Adicionar** (e **Remover**).
+      Você pode especificar uma seleção de slides usando os botões **Add** (e **Remove**).
 
    * **Título**
 
@@ -791,7 +791,7 @@ Ao configurar o componente de Nuvem de tags, você pode especificar:
 
 * **Página**
 
-   Selecione a página a ser referenciada.
+   Selecione a página que será referenciada.
 
 * **Não há links nas tags**
 
@@ -811,7 +811,7 @@ O componente de Texto permite que você insira um bloco de texto usando um edito
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Ao abrir a caixa de diálogo **Configurar**, também é possível definir:
+Ao abrir a caixa de diálogo **Configurar**, você também pode definir:
 
 * **Espaçador**
 * **Estilo de texto**
@@ -834,29 +834,29 @@ O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você ta
 
 É possível configurar:
 
-* **Estilos**  de componente (**Estilos**)
+* **Estilos de componentes**  (**Estilos**)
 
    Aqui, você pode alinhar à esquerda ou à direita da imagem. O padrão é alinhamento à **Esquerda,** com a imagem à esquerda.
 
-* **Propriedades**  da imagem (Propriedades **** avançadas da imagem)
+* **Propriedades da imagem**  (**Propriedades avançadas de imagem**)
 
    Permite que você especifique o seguinte:
 
    * **Ativos da imagem**
 
-      Carregue a imagem necessária.
+      Carregue a imagem desejada.
 
    * **Título**
 
-      O título do bloco; serão mostrados ao passar o mouse.
+      O título do bloco; será exibido ao passar o mouse.
 
    * **Texto alternativo**
 
-      O texto alternativo a ser exibido se a imagem não puder ser exibida. Caso deixado em branco, o título será usado.
+      Texto alternativo a ser exibido se a imagem não puder ser exibida. Caso deixado em branco, o título será usado.
 
    * **Vincular para**
 
-      Especifique um caminho de público alvo.
+      Especifique um caminho de destino.
 
    * **Descrição**
 
@@ -894,11 +894,11 @@ O exemplo a seguir mostra um componente de **Título** sendo exibido; o design �
 
 >[!CAUTION]
 >
->Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+>Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
 O componente de **Vídeo** permite que você coloque um elemento “out-of-the-box” de vídeo predefinido em uma página.
 
-Consulte também [Configure o componente de Vídeo](/help/sites-administering/config-video.md) para uso com elementos HTML5.
+Consulte também [Configurar o componente de Vídeo](/help/sites-administering/config-video.md) para usar com elementos HTML5.
 
 Depois de adicionar uma instância de componente em sua página, você pode configurar:
 
@@ -906,7 +906,7 @@ Depois de adicionar uma instância de componente em sua página, você pode conf
 
    * **Ativo de vídeo**
 
-   Carregue ou solte seu ativo de vídeo.
+   Faça upload ou solte o ativo de vídeo.
 
    * **Tamanho**
 
@@ -919,7 +919,7 @@ Depois de adicionar uma instância de componente em sua página, você pode conf
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (vídeo do Flash)
+>* `FLV` (Vídeo do Flash)
 
 >
 
@@ -931,7 +931,7 @@ As colunas são um mecanismo para controlar o layout de conteúdo no AEM. Em uma
 
 O exemplo a seguir mostra o componente de 2 colunas em uso. É possível usar os espaços reservados para os novos componentes:
 
-![dc_columncontroluse](assets/dc_columncontroluse.png)
+![dc_columncontroverse](assets/dc_columncontroluse.png)
 
 ### 2 Colunas {#columns-1}
 
@@ -971,7 +971,7 @@ Os formulários são criados de vários componentes diferentes:
 
 * **Componentes de perfil**
 
-   Os componentes do perfil se relacionam aos perfis do visitante usados para a colaboração social e outras áreas onde a personalização do visitante é necessária.
+   Os componentes de perfil estão relacionados aos perfis de visitantes usados para a colaboração social e outras áreas onde é necessária a personalização do visitante.
 
 A seguir, há um formulário de exemplo. Ele contém o componente do **Formulário** (início e fim) com dois campos de **texto de formulário** usados para inserir, um campo de **texto geral** usado para o texto principal e um botão **Enviar.**
 
@@ -989,15 +989,15 @@ Ao configurar qualquer um dos componentes do formulário, as seguintes guias est
 
 * **Título e texto**
 
-   Aqui, é necessário especificar as informações básicas, como o título do formulário e qualquer texto que o acompanha. Se for o caso, também é possível definir outras informações importantes, como se o campo é de seleção múltipla e se os itens estão disponíveis para seleção.
+   Aqui é necessário especificar informações básicas, como o título do formulário e qualquer texto que o acompanha. Se for o caso, também é possível definir outras informações importantes, como se o campo é de seleção múltipla e se os itens estão disponíveis para seleção.
 
 * **Valores iniciais**
 
-   Permite que você especifique um valor padrão.
+   Permite especificar um valor padrão.
 
 * **Restrições**
 
-   Aqui, você pode especificar se um campo é obrigatório e se as restrições de local estão nesse campo (por exemplo, deve ser numérico e assim por diante).
+   Aqui, é possível especificar se um campo é obrigatório e se as restrições de local estão no campo (por exemplo, deve ser numérico e assim por diante).
 
 * **Estilo**
 
@@ -1029,7 +1029,7 @@ Essas guias fornecem os parâmetros necessários; estes dependem do tipo de comp
 
    * **Exibir / Ocultar**
 
-      Determina quando o campo está visível.
+      Determina quando o campo é visível.
 
 
 * **Valores iniciais**
@@ -1042,7 +1042,7 @@ Essas guias fornecem os parâmetros necessários; estes dependem do tipo de comp
 
    * **Obrigatório**
 
-      Isso depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo, ou determinadas partes desse campo, é/são necessários.
+      Depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo, ou determinadas partes dele, é/são necessários.
 
    * **Mensagem obrigatória**
 
@@ -1095,7 +1095,7 @@ Esse componente é necessário para definir o início de um novo formulário em 
 * **Avançado**
 
    * **Tipo**
-de açãoUm formulário precisa de uma ação. A ação define a operação que é acionada para execução com os dados enviados pelo usuário (semelhante a action= in HTML). Alguns precisam de um correspondente 
+de açãoUm formulário precisa de uma ação. A ação define a operação acionada para execução com os dados enviados pelo usuário (semelhante a action= in HTML). Alguns precisam de um 
 **Configurações de ação**.
 
       Uma seleção de tipos de ação está incluída em uma instalação padrão do AEM:
@@ -1129,7 +1129,7 @@ de açãoUm formulário precisa de uma ação. A ação define a operação que 
 
    * **Carregar caminho**
 
-      O caminho para as propriedades do nó usado para carregar valores predefinidos nos campos do formulário.
+      O caminho para as propriedades do nó usadas para carregar valores predefinidos nos campos do formulário.
 
       Isso é um campo opcional que especifica o caminho para um nó no repositório. Quando este nó tem propriedades que correspondem aos nomes do campo, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Caso não exista nenhuma correspondência, o campo vai conter o valor padrão.
 
@@ -1152,7 +1152,7 @@ de açãoUm formulário precisa de uma ação. A ação define a operação que 
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Configurações de ação**
 
-      As opções disponíveis em **Action Configuration** dependem de **Action Type** selecionado:
+      As opções disponíveis em **Configuração de Ação** dependem do **Tipo de Ação** selecionado:
 
       * **Solicitação de conta**
 
@@ -1181,23 +1181,23 @@ de açãoUm formulário precisa de uma ação. A ação define a operação que 
 
          * **Tipo de recurso**
 
-            Se definido, isso será adicionado a cada comentário como `sling:resourceType`
+            Se definido, isso é adicionado a cada comentário como `sling:resourceType`
 
          * **Exibir seletor**
       * **Criar lead**
 
          * **O cliente em potencial  será adicionado a esta lista**
 
-            Especifique a lista de cliente potencial necessária.
+            Especifique a lista de lead necessária.
       * **Criar e atualizar a conta**
 
          * **Grupo inicial**
 
-            Grupo ao qual atribuir novo usuário.
+            Grupo para atribuir um novo usuário.
 
          * **Início**
 
-            Página a ser exibida após o login bem-sucedido.
+            Página a ser exibida após o logon bem-sucedido.
 
          * **Caminho**
 
@@ -1205,12 +1205,12 @@ de açãoUm formulário precisa de uma ação. A ação define a operação que 
 
          * **Exibir dados...**
 
-            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. Aqui, você pode exportar as informações para um arquivo `.tsv` (separado por tabulações) (para uso, por exemplo, em uma planilha do Excel).
+            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. A partir daqui, você pode exportar as informações para um arquivo `.tsv` (separado por tabulações) (para ser usado, por exemplo, em uma planilha do Excel).
       * **Email**
 
          * **De**
 
-            Digite o endereço de e-mail de onde o e-mail deve vir.
+            Insira o endereço de email para origem do email.
 
          * **Mailto**
 
@@ -1251,7 +1251,7 @@ de açãoUm formulário precisa de uma ação. A ação define a operação que 
 
          * **O cliente em potencial será excluído da lista**
 
-            Especifique a lista de cliente potencial necessária.
+            Especifique a lista de lead necessária.
 
 
 
@@ -1274,11 +1274,11 @@ Isso marca o fim do formulário. É possível configurar:
 
    * **Enviar nome**
 
-      Um identificador se você estiver usando vários botões Enviar em um formulário.
+      Um identificador se estiver usando vários botões Enviar em um formulário.
 
    * **Enviar título**
 
-      O nome que aparece no botão, como Enviar ou Enviar.
+      O nome que aparece no botão, como Enviar.
 
    * **Mostrar botão de redefinição**
 
@@ -1302,7 +1302,7 @@ Isso permite que você insira um nome de conta:
 
 Isso permite que você adicione um campo de endereço internacional, com o seguinte formato:
 
-![dc_form_enderesfield](assets/dc_form_addressfield.png)
+![dc_form_address](assets/dc_form_addressfield.png)
 
 O componente está configurado para uso imediato, mas é possível alterar a configuração, se necessário. Por exemplo, as restrições podem ser adicionadas para os elementos individuais do endereço. As configurações padrão serão usadas caso haja campos vazios.
 
@@ -1313,7 +1313,7 @@ O componente está configurado para uso imediato, mas é possível alterar a con
 
 >[!CAUTION]
 >
->Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+>Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
 O componente Captcha exige que o usuário digite uma sequência alfanumérica como exibido na tela. A sequência muda a cada atualização.
 
@@ -1471,7 +1471,7 @@ O campo de texto padrão pode ser configurado no tamanho necessário e com o seu
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Botões de envio de fluxo de trabalho {#workflow-submit-button-s}
+### Botão(s) de envio de fluxo de trabalho {#workflow-submit-button-s}
 
 Esse componente permite que você crie um botão de envio para usar em um fluxo de trabalho.
 
