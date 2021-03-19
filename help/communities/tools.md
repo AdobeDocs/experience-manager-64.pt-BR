@@ -1,8 +1,8 @@
 ---
-title: Ferramentas das comunidades
-seo-title: Ferramentas das comunidades
-description: Como acessar o console Ferramentas das Comunidades
-seo-description: Como acessar o console Ferramentas das Comunidades
+title: Ferramentas do Communities
+seo-title: Ferramentas do Communities
+description: Como acessar o console Ferramentas do Communities
+seo-description: Como acessar o console Ferramentas do Communities
 uuid: 3172fe00-7132-4cee-9fd1-b6f96eb43200
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -21,17 +22,17 @@ ht-degree: 0%
 
 # Ferramentas das comunidades {#communities-tools}
 
-Em autor, para acessar o console de ferramentas Comunidades:
+No autor, para acessar o console de ferramentas das Comunidades:
 
-* Da navegação global: **[!UICONTROL Ferramentas > Comunidades]**
+* Na navegação global: **[!UICONTROL Ferramentas > Comunidades]**
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Modelos](sites.md)  de site - Console para criação e gerenciamento de modelos de site
-* [Modelos](tools-groups.md) de grupo - Console para criação e gerenciamento de modelos de grupo
-* [Funções](functions.md) da comunidade - Console para criação e gerenciamento de funções da comunidade
-* [Configuração](srp-config.md)  do armazenamento - Console para configuração e seleção do SRP  [padrão](working-with-srp.md)
+* [Modelos de site](sites.md)  - Console para criação e gerenciamento de modelos de site
+* [Modelos de grupo](tools-groups.md) - Console para criação e gerenciamento de modelos de grupo
+* [Funções da comunidade](functions.md) - Console para criação e gerenciamento de funções da comunidade
+* [Configuração de armazenamento](srp-config.md)  - Console para configuração e seleção do SRP  [padrão](working-with-srp.md)
 
-* [Guia](components-guide.md)  de componentes - abre um site interativo que permite a experimentação de como os componentes do SCF funcionam e como eles podem ser configurados ou personalizados.
-* [Crachás](badges.md)  - Console a partir do qual os símbolos personalizados podem ser adicionados para uso nas regras de  [pontuação e marcação](implementing-scoring.md)
+* [Guia de componentes](components-guide.md)  - abre um site interativo que permite a experimentação com o funcionamento dos componentes do SCF e como eles podem ser configurados ou personalizados.
+* [Símbolos](badges.md)  - Console onde os rótulos personalizados podem ser adicionados para uso nas regras de  [pontuação e marcação](implementing-scoring.md)
 
