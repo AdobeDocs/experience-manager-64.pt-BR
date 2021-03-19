@@ -6,11 +6,14 @@ audience: end-user
 user-guide-title: Guia do usuário de criação do AEM 6.4
 breadcrumb-title: Guia de criação
 user-guide-description: Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM.
+feature-set: Experience Manager Sites
+feature: 'Criação  '
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 88%
+source-wordcount: '295'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +21,7 @@ ht-degree: 88%
 # Guia do usuário de criação do AEM 6.4 {#authoring}
 
 + [Visão geral do Guia do usuário de criação](home.md)
-+ Tarefas essenciais, ferramentas e conceitos para a criação do AEM {#essentials}
++ Tarefas essenciais, ferramentas e conceitos para criação de AEM {#essentials}
    + [Primeiros passos para autores](first-steps.md)
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
    + [Conceito de criação](author.md)
@@ -70,8 +73,8 @@ ht-degree: 88%
    + [Promoção de lançamentos](launches-promoting.md)
 + Fluxos de trabalhos {#workflows}
    + [Trabalhar com fluxos de trabalho](workflows.md)
-   + [Aplicação de fluxos de trabalho às páginas](workflows-applying.md)
-   + [Participação em fluxos de trabalho](workflows-participating.md)
+   + [Aplicação de fluxos de trabalho a páginas](workflows-applying.md)
+   + [Participar de fluxos de trabalho](workflows-participating.md)
    + [Trabalhar com fluxos de trabalho de projeto](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + Desempenho da página {#page-performance}
    + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
