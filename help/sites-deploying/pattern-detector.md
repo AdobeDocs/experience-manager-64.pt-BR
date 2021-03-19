@@ -1,19 +1,20 @@
 ---
-title: Avaliação da complexidade da atualização com o detector de padrões
-seo-title: Avaliação da complexidade da atualização com o detector de padrões
-description: Saiba como usar o Detector de padrão para avaliar a complexidade da atualização.
-seo-description: Saiba como usar o Detector de padrão para avaliar a complexidade da atualização.
+title: Avaliação da complexidade da atualização com o Detector de padrões
+seo-title: Avaliação da complexidade da atualização com o Detector de padrões
+description: Saiba como usar o Detector de padrões para avaliar a complexidade de sua atualização.
+seo-description: Saiba como usar o Detector de padrões para avaliar a complexidade de sua atualização.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
+feature: Atualização
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 1%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
@@ -22,44 +23,44 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-Este recurso permite verificar as instâncias AEM existentes quanto à sua capacidade de atualização, detectando padrões em uso que:
+Esse recurso permite verificar instâncias de AEM existentes para sua capacidade de atualização, detectando padrões em uso que:
 
 1. Violar certas regras e são feitas em áreas que serão afetadas ou substituídas pela atualização
-1. Use um recurso AEM 6.x ou uma API que não seja compatível com versões anteriores no AEM 6.4 e que possa ser interrompida após a atualização.
+1. Use um recurso AEM 6.x ou uma API que não seja compatível com versões anteriores do AEM 6.4 e possa ser interrompida após a atualização.
 
-Tal poderia servir de avaliação do esforço de desenvolvimento que está envolvido na atualização para a AEM 6.4.
+Tal poderia servir de avaliação do esforço de desenvolvimento que está envolvido na modernização para o AEM 6.4.
 
 ## Como configurar {#how-to-set-up}
 
-O Detector de padrão é lançado separadamente como um [um pacote](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) trabalhando em qualquer versão de AEM de origem da versão 6.1 para a 6.5, visando AEM atualização 6.5. Ele pode ser instalado usando o [Gerenciador de pacotes](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+O Detector de padrões é lançado separadamente como um [um pacote](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) funcionando em qualquer versão de AEM de origem de 6.1 para 6.5, direcionando AEM atualização 6.5. Ele pode ser instalado usando o [Gerenciador de Pacotes](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Como usar {#how-to-use}
 
 >[!NOTE]
 >
->O Detector de padrão pode ser executado em qualquer ambiente, incluindo instâncias de desenvolvimento local. No entanto, para:
+>O Detector de padrões pode ser executado em qualquer ambiente, incluindo instâncias de desenvolvimento local. No entanto, para:
 >
 >* aumentar a taxa de detecção
 >* evitar qualquer lentidão em instâncias críticas para os negócios\
-   >ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximos possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
+   >ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximo possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
 
 
-Você pode usar vários métodos para verificar a saída do Detector de padrão:
+Você pode usar vários métodos para verificar a saída do Detector de padrões:
 
-* **Através do console Inventário Felix:**
+* **Através do console Felix Inventory:**
 
-1. Vá para o Console da Web AEM navegando até: https://<i></i>endereço_do_servidor:serverport/system/console/configMgr
-1. Selecione **Status - Pattern Detector** como mostrado na imagem abaixo:
+1. Vá para o Console da Web AEM navegando até: https://<i></i>serveraddress:serverport/system/console/configMgr
+1. Selecione **Status - Pattern Detector** conforme mostrado na imagem abaixo:
 
-   ![screenshot-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
+   ![captura de tela-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Por meio de uma interface JSON comum ou baseada em texto reativo**
+* **Por meio de um texto reativo com base em uma interface JSON regular**
 
 * **Por meio de uma interface** de linhas JSON reativa, que gera um documento JSON separado em cada linha.
 
 Ambos os métodos estão detalhados abaixo:
 
-## Interface Reativa {#reactive-interface}
+## Interface reativa {#reactive-interface}
 
 A interface reativa permite o processamento do relatório de violação assim que uma suspeita é detectada.
 
@@ -68,9 +69,9 @@ A saída está disponível atualmente em 2 URLs:
 1. Interface de texto sem formatação
 1. Interface JSON
 
-## Manuseio da interface de texto simples {#handling-the-plain-text-interface}
+## Manipular a interface de texto simples {#handling-the-plain-text-interface}
 
-As informações na saída são formatadas como uma série de entradas de evento. Há dois canais - um para violações de publicação e o segundo para publicar o progresso atual.
+As informações na saída são formatadas como uma série de entradas de evento. Há dois canais: um para violações de publicação e outro para a publicação do progresso atual.
 
 Eles podem ser obtidos usando os seguintes comandos:
 
@@ -78,7 +79,7 @@ Eles podem ser obtidos usando os seguintes comandos:
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
 ```
 
-A saída será parecida com esta:
+A saída terá esta aparência:
 
 ```
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
@@ -98,7 +99,7 @@ O que resulta na seguinte saída:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Manuseio da interface JSON {#handling-the-json-interface}
+## Manipular a interface JSON {#handling-the-json-interface}
 
 Da mesma forma, o JSON pode ser processado usando a ferramenta [jq](https://stedolan.github.io/jq/) assim que for publicado.
 
@@ -210,15 +211,15 @@ Com a saída:
 
 >[!NOTE]
 >
->A abordagem recomendada é salvar toda a saída do ondulado no arquivo e processá-la por `jq` ou `grep` para filtrar o tipo de informação.
+>A abordagem recomendada é salvar toda a saída do curl no arquivo e processá-la por meio de `jq` ou `grep` para filtrar o tipo de informação.
 
 ## Escopo de detecção {#scope}
 
-Atualmente, o Detector de padrão permite verificar:
+Atualmente, o Detector de padrões permite verificar:
 
-* Incompatibilidade entre exportações e importações de pacotes OSGi
-* Como soltar tipos de recursos e supertipos (com sobreposições de conteúdo de caminho de pesquisa)
+* Incompatibilidade de exportações e importações de pacotes OSGi
+* Tipos de recursos Sling e supertipos (com sobreposições de conteúdo de caminho de pesquisa)
 * definições de índices Oak (compatibilidade)
-* Embalagens VLT (utilização excessiva)
-* rep:compatibilidade de nós do usuário (no contexto da configuração OAuth)
+* Pacotes VLT (utilização excessiva)
+* rep:Compatibilidade de nós do usuário (no contexto da configuração OAuth)
 
