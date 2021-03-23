@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 1%
 
 ---
@@ -817,7 +817,7 @@ Uma maneira fácil de começar a criar sua própria etapa personalizada é copia
 
    Este é o resultado do nosso exemplo de etapa personalizada:
 
-   ![wf-34](assets/wf-34.png)
+   ![wf-36](assets/wf-34.png)
 
    >[!CAUTION]
    >
@@ -1039,7 +1039,7 @@ A amostra `_cq_dialog/.content.xml` usada neste exemplo:
 >
 >As caixas de diálogo do editor de modelo da interface clássica ainda funcionarão com o editor de interface de usuário padrão habilitado para toque.
 >
->Embora o AEM tenha uma ferramenta de [conversão de diálogo](/help/sites-developing/dialog-conversion.md) se você quiser atualizar suas caixas de diálogo da etapa da interface clássica para caixas de diálogo padrão da interface do usuário. Após a conversão, ainda há algumas melhorias manuais que podem ser feitas no diálogo em determinados casos.
+>AEM tem [ferramentas de modernização](/help/sites-developing/modernization-tools.md) se desejar atualizar as caixas de diálogo da etapa da interface clássica para caixas de diálogo padrão da interface do usuário. Após a conversão, ainda há algumas melhorias manuais que podem ser feitas no diálogo em determinados casos.
 >
 >* Nos casos em que uma caixa de diálogo atualizada está vazia, você pode consultar caixas de diálogo em `/libs` que tenham funcionalidade semelhante a exemplos de como fornecer uma solução. Por exemplo:
    >
