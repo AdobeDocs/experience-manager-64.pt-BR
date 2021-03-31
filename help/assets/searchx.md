@@ -1,29 +1,31 @@
 ---
-title: Estendendo a pesquisa de ativos
-description: Estenda os recursos de pesquisa do AEM Assets para além das pesquisas prontas para uso de ativos por strings.
+title: Extensão da pesquisa de ativos
+description: Estenda os recursos de pesquisa do AEM Assets além das pesquisas prontas para uso de ativos por strings.
 contentOwner: AG
+feature: 'Pesquisar  '
+role: Desenvolvedor
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 15%
 
 ---
 
 
-# Estendendo a pesquisa de ativos {#extending-assets-search}
+# Extensão da pesquisa de ativos {#extending-assets-search}
 
-Você pode estender os recursos de pesquisa do Adobe Experience Manager (AEM) Assets. A AEM Assets procura ativos por strings imediatamente.
+Você pode estender os recursos de pesquisa do Adobe Experience Manager (AEM) Assets. Imediatamente, o AEM Assets pesquisa ativos por strings.
 
-A pesquisa é feita pela interface do QueryBuilder para que a pesquisa possa ser personalizada com vários predicados. Você pode sobrepor o conjunto padrão de predicados no seguinte diretório: `/apps/dam/content/search/searchpanel/facets`.
+A pesquisa é feita por meio da interface do QueryBuilder para que a pesquisa possa ser personalizada com vários predicados. Você pode sobrepor o conjunto padrão de predicados no seguinte diretório: `/apps/dam/content/search/searchpanel/facets`.
 
-Você também pode adicionar outras guias ao painel de administração do AEM Assets.
+Também é possível adicionar outras guias ao painel de administração do AEM Assets.
 
 >[!CAUTION]
 >
->A partir do AEM 6.4, a interface clássica está obsoleta. Para o anúncio, consulte [Recursos removidos e obsoletos](../release-notes/deprecated-removed-features.md). É recomendável usar a interface habilitada para toque. Para personalizações, consulte [Pesquisar aspectos](search-facets.md).
+>A partir do AEM 6.4, a interface do usuário clássica está obsoleta. Para anúncio, consulte [Recursos obsoletos e removidos](../release-notes/deprecated-removed-features.md). É recomendável usar a interface habilitada para toque. Para personalizações, consulte [Pesquisar aspectos](search-facets.md).
 
-## Sobreposição {#overlaying}
+## Sobreposição de {#overlaying}
 
 Para sobrepor os predicados pré-configurados, copie o nó `facets` de `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outra propriedade `facetURL` na configuração do painel de pesquisa (o padrão é `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
@@ -31,27 +33,27 @@ Para sobrepor os predicados pré-configurados, copie o nó `facets` de `/libs/da
 
 >[!NOTE]
 >
->Por padrão, a estrutura de diretório em / `apps` não existe e precisa ser criada. Certifique-se de que os tipos de nó correspondem aos de / `libs`.
+>Por padrão, a estrutura de diretório em / `apps` não existe e precisa ser criada. Certifique-se de que os tipos de nó correspondam àqueles em / `libs`.
 
 
-## Adicionar guias {#adding-tabs}
+## Adição de guias {#adding-tabs}
 
-É possível adicionar guias de pesquisa adicionais configurando-as no AEM Assets Admin. Para criar guias adicionais:
+É possível adicionar outras guias de Pesquisa, configurando-as no Administrador do AEM Assets. Para criar guias adicionais:
 
 1. Crie a estrutura de pastas `/apps/wcm/core/content/damadmin/tabs,`se ela ainda não existir, e copie o nó `tabs` de `/libs/wcm/core/content/damadmin` e cole-o.
 1. Crie e configure a segunda guia, conforme desejado.
 
    >[!NOTE]
    >
-   >Ao criar um segundo painel siteadminsearch, certifique-se de definir uma propriedade `id` para evitar conflitos de formulário.
+   >Ao criar um segundo siteadminsearchpanel, certifique-se de definir uma propriedade `id` para evitar conflitos de formulário.
 
-## Criando Predicados Personalizados {#creating-custom-predicates}
+## Criação de predicados personalizados {#creating-custom-predicates}
 
-A AEM Assets vem com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+O AEM Assets vem com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Além de usar predicados preexistentes, os desenvolvedores AEM também podem criar seus próprios predicados usando a [API do Construtor de Query](/help/sites-developing/querybuilder-api.md).
+Além de usar predicados pré-existentes, os desenvolvedores de AEM também podem criar seus próprios predicados usando a [API do Construtor de consultas](/help/sites-developing/querybuilder-api.md).
 
-A criação de predicados personalizados requer conhecimento básico sobre a [estrutura de widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
+Criar predicados personalizados requer conhecimento básico sobre a [estrutura de widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
 A prática recomendada é copiar um predicado existente e ajustá-lo. Os predicados de amostra estão localizados em `/libs/cq/search/components/predicates`.
 
@@ -143,13 +145,13 @@ Para criar um predicado de propriedade:
    ```
 
 1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó `cq:editConfig` do tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor **DELETE**.
-1. Navegue até o navegador e, na página de amostra (por exemplo, `press.html`), alterne para o modo de design e ative o novo componente para o sistema de parágrafo do predicado (por exemplo, **left**).
+1. Navegue até o navegador e, na página de exemplo (por exemplo, `press.html`), alterne para o modo de design e ative o novo componente para o sistema de predicado de parágrafo (por exemplo, **left**).
 
-1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamond** e clique na lupa para start da pesquisa.
+1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicates** e digite uma palavra de pesquisa, por exemplo, **Diamond** e clique na lupa para iniciar a pesquisa.
 
    >[!NOTE]
    >
-   >Ao pesquisar, digite exatamente o termo, incluindo as letras maiúsculas e minúsculas corretas.
+   >Ao pesquisar, digite o termo exatamente, incluindo as letras maiúsculas e minúsculas corretas.
 
 ### Exemplo: Criar um predicado de grupo simples {#example-build-a-simple-group-predicate}
 
@@ -250,12 +252,12 @@ Para criar um predicado de grupo:
    ```
 
 1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó `cq:editConfig` do tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor `DELETE`.
-1. Navegue até o navegador e, na página de amostra (por exemplo, `press.html`), alterne para o modo de design e ative o novo componente para o sistema de parágrafo do predicado (por exemplo, **left**).
-1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicados**.
+1. Navegue até o navegador e, na página de exemplo (por exemplo, `press.html`), alterne para o modo de design e ative o novo componente para o sistema de predicado de parágrafo (por exemplo, **left**).
+1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicates**.
 
-### Widgets previstos instalados {#installed-predicate-widgets}
+### Widgets de predicado instalados {#installed-predicate-widgets}
 
-Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados.
+Os predicados a seguir estão disponíveis como widgets ExtJS pré-configurados.
 
 ### Predicado de texto completo {#fulltextpredicate}
 
@@ -279,7 +281,7 @@ Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados
 | predicateName | Sequência de caracteres | Nome do predicado. O padrão é `path` |
 | rootPath | Sequência de caracteres | Caminho raiz do predicado. O padrão é `/content/dam` |
 | pathFieldPredicateName | Sequência de caracteres | O padrão é `folder` |
-| showFlatOption | Booleano | Sinalizador para mostrar a caixa de seleção `search in subfolders`. O padrão é true. |
+| showFlatOption | Booleano | Sinalizador para mostrar a Caixa de seleção `search in subfolders`. O padrão é true. |
 
 ### DatePredicate {#datepredicate}
 
@@ -289,20 +291,20 @@ Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados
 | propertyname | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:content/jcr:lastModified` |
 | defaultValue | Sequência de caracteres | Valor padrão pré-preenchido |
 
-### OpçõesPredicar {#optionspredicate}
+### OptionsPredicate {#optionspredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
 | título | Sequência de caracteres | Adiciona um título superior adicional |
 | predicateName | Sequência de caracteres | Nome do predicado. O padrão é `daterange` |
 | propertyname | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:content/metadata/cq:tags` |
-| colapso | Sequência de caracteres | Reduzir nível. O padrão é `level1` |
-| triggerSearch | Booleano | Sinalizador para acionar a pesquisa na verificação. O padrão é false |
+| colapso | Sequência de caracteres | Recolher nível. O padrão é `level1` |
+| triggerSearch | Booleano | Sinalizador para acionar a pesquisa ao verificar. O padrão é false |
 | searchCallback | Função | Retorno de chamada para acionar a pesquisa. O padrão é `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | Número | Tempo limite antes de o searchCallback ser disparado. O padrão é 800 ms |
+| searchTimeoutTime | Número | Tempo limite antes do acionamento de searchCallback. O padrão é 800 ms |
 
-## Personalização dos resultados da pesquisa {#customizing-search-results}
+## Personalizando resultados de pesquisa {#customizing-search-results}
 
-A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. A AEM Assets vem com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. O AEM Assets vem com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Além de usar lentes pré-existentes, AEM desenvolvedores também podem criar suas próprias lentes.
+Além de usar lentes pré-existentes, os desenvolvedores de AEM também podem criar suas próprias lentes.
