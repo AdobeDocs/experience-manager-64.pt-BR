@@ -1,23 +1,25 @@
 ---
-title: Uso do rastreador de páginas e do código incorporado em páginas da Web
-description: Saiba como incluir o rastreador de páginas e incorporar códigos JavaScript no código do seu site para permitir que a Adobe Analytics capture dados de uso em torno dos ativos.
+title: Usar o rastreador de página e incorporar código em páginas da Web
+description: Saiba como incluir o Rastreador de página e incorporar códigos JavaScript no código do site para permitir que o Adobe Analytics capture dados de uso em ativos.
 contentOwner: AG
+feature: Relatórios dos ativos
+role: Arquiteto,Administrador
 translation-type: tm+mt
-source-git-commit: 0644e47e5c35ee093d8676eb492a43057fff267b
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
 
 
-# Uso do rastreador de páginas e do código incorporado em páginas da Web {#using-page-tracker-and-embed-code-in-web-pages}
+# Uso do rastreador de página e do código incorporado nas páginas da Web {#using-page-tracker-and-embed-code-in-web-pages}
 
-O rastreador de páginas é um código JavaScript que você inclui no código de sites de terceiros para permitir que a Adobe Analytics capture dados de uso em torno de ativos da Adobe Experience Manager (AEM) nesses sites.
+O Rastreador de página é uma parte do código JavaScript que você inclui no código de sites de terceiros para permitir que o Adobe Analytics capture dados de uso em ativos do Adobe Experience Manager (AEM) nesses sites.
 
-Para capturar eventos, como cliques e assim por diante, específicos dos ativos, você também inclui o código Incorporado no código de sites de terceiros.
+Para capturar eventos, como cliques e assim por diante, específicos dos ativos, você também inclui o código Incorporar no código de sites de terceiros.
 
-O código de amostra a seguir mostra como uma página da Web que contém o código do rastreador de página e o código Incorporado se parece:
+O código de exemplo a seguir mostra como uma página da Web que contém o código do Rastreador de página e do Código de inserção se parece com:
 
 ```
 <!DOCTYPE html>
@@ -59,9 +61,9 @@ O código de amostra a seguir mostra como uma página da Web que contém o códi
 </html>
 ```
 
-## Adicionando o código do rastreador de páginas {#adding-page-tracker-code}
+## Adicionar código do rastreador de página {#adding-page-tracker-code}
 
-Você adiciona o código do rastreador de página na seção de cabeçalho do código do site. O trecho de código a seguir exibe o código do rastreador de página incluído em uma página da Web de amostra:
+Você adiciona o código do rastreador de página na seção de cabeçalho do código do site. O trecho de código a seguir exibe o código do Rastreador de página incluído em uma página da Web de exemplo:
 
 ```xml
  <head>
@@ -78,9 +80,9 @@ Você adiciona o código do rastreador de página na seção de cabeçalho do c�
  </head>
 ```
 
-## Adicionando código incorporado {#adding-embed-code}
+## Adicionar código incorporado {#adding-embed-code}
 
-Você adiciona o código incorporado dentro do corpo do código do site. O trecho de código a seguir exibe o código Incorporado incluído em uma página da Web de amostra:
+Você adiciona o código incorporado no corpo do código do site. O trecho de código a seguir exibe o código Incorporado incluído em uma página da Web de amostra:
 
 ```xml
 <body>
