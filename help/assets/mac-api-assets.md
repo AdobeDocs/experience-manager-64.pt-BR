@@ -2,10 +2,12 @@
 title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+feature: APIs,API HTTP de ativos,Ferramentas do desenvolvedor
+role: Desenvolvedor
 translation-type: tm+mt
-source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -13,28 +15,28 @@ ht-degree: 1%
 
 # API HTTP de ativos {#assets-http-api}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando [!DNL Experience Manager] Fragmentos de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API.
+A API HTTP do Assets permite criar-ler-atualizar-excluir (CRUD) operações em ativos digitais, incluindo em metadados, em representações e em comentários, juntamente com conteúdo estruturado usando [!DNL Experience Manager] Fragmentos de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API.
 
 Para acessar a API:
 
-1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
-1. Siga o link de serviço Ativos que leva a `https://[hostname]:[server]/api/assets.json`.
+1. Abra o documento do serviço de API em `https://[hostname]:[port]/api.json`.
+1. Siga o link do Serviço de ativos que leva a `https://[hostname]:[server]/api/assets.json`.
 
-A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
+A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para mais análises ou ações.
 
-Depois do [!UICONTROL Tempo desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web [!DNL Assets] e por meio da API HTTP. A API retornará uma mensagem de erro 404 se [!UICONTROL On Time] estiver no futuro ou [!UICONTROL Off Time] estiver no passado.
+Após o [!UICONTROL Tempo desligado], um ativo e suas representações não estarão disponíveis por meio da interface da Web [!DNL Assets] e por meio da API HTTP. A API retornará uma mensagem de erro 404 se o [!UICONTROL Tempo ligado] estiver no futuro ou [!UICONTROL Tempo desligado] estiver no passado.
 
 >[!CAUTION]
 >
->[A API HTTP atualiza as ](#update-asset-metadata) propriedades de metadados na  `jcr` namespace. No entanto, a interface do usuário do Experience Manager atualiza as propriedades de metadados na namespace `dc`.
+>[A API HTTP atualiza as ](#update-asset-metadata) propriedades dos metadados no  `jcr` namespace. No entanto, a interface do usuário do Experience Manager atualiza as propriedades dos metadados no namespace `dc`.
 
 ## Modelo de dados {#data-model}
 
-A API HTTP Assets expõe dois elementos principais, pastas e ativos (para ativos padrão).
+A API HTTP de ativos expõe dois elementos principais, pastas e ativos (para ativos padrão).
 
 ### Pastas {#folders}
 
-As pastas são como diretórios em sistemas de arquivos tradicionais. São container para outras pastas ou asserções. As pastas têm os seguintes componentes:
+Pastas são como diretórios em sistemas de arquivos tradicionais. São contêineres para outras pastas ou asserções. As pastas têm os seguintes componentes:
 
 **Entidades**: As entidades de uma pasta são seus elementos filho, que podem ser pastas e ativos.
 
@@ -45,20 +47,20 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 
 >[!NOTE]
 >
->Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente. O prefixo `jcr` de `jcr:title`, `jcr:description` e `jcr:language` são substituídos pelo prefixo `dc`. Assim, no JSON retornado, `dc:title` e `dc:description` contêm os valores de `jcr:title` e `jcr:description`, respectivamente.
+>Algumas propriedades de pasta ou ativo são mapeadas para um prefixo diferente. O prefixo `jcr` de `jcr:title`, `jcr:description` e `jcr:language` são substituídos pelo prefixo `dc`. Portanto, no JSON retornado, `dc:title` e `dc:description` contêm os valores de `jcr:title` e `jcr:description`, respectivamente.
 
 **** LinksFolders expõe três links:
 
-* `self`: Vincule-se a si mesmo.
-* `parent`: Link para a pasta pai.
-* `thumbnail`: (Opcional) link para uma imagem em miniatura da pasta.
+* `self`: Vincular a si mesmo.
+* `parent`: Link para a pasta principal.
+* `thumbnail`: (Opcional) link para uma imagem em miniatura de pasta.
 
 ### Assets {#assets}
 
 No Experience Manager, um ativo contém os seguintes elementos:
 
 * As propriedades e os metadados do ativo.
-* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
+* Várias representações, como a representação original (que é o ativo originalmente carregado), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
 * Comentários opcionais.
 
 Em [!DNL Experience Manager] uma pasta tem os seguintes componentes:
@@ -67,29 +69,29 @@ Em [!DNL Experience Manager] uma pasta tem os seguintes componentes:
 * Propriedades.
 * Links.
 
-A API HTTP Assets inclui os seguintes recursos:
+A API HTTP de ativos inclui os seguintes recursos:
 
-* [Recuperar uma lista](#retrieve-a-folder-listing) de pastas.
+* [Recupere uma lista de pastas](#retrieve-a-folder-listing).
 * [Criar uma pasta](#create-a-folder).
 * [Criar um ativo](#create-an-asset).
-* [Atualize o binário](#update-asset-binary) do ativo.
-* [Atualize os metadados](#update-asset-metadata) do ativo.
-* [Crie uma representação](#create-an-asset-rendition) de ativo.
-* [Atualizar uma representação](#update-an-asset-rendition) de ativo.
+* [Atualizar binário de ativo](#update-asset-binary).
+* [Atualizar metadados](#update-asset-metadata) do ativo.
+* [Criar uma representação de ativo](#create-an-asset-rendition).
+* [Atualizar uma representação de ativo](#update-an-asset-rendition).
 * [Crie um comentário](#create-an-asset-comment) de ativo.
 * [Copie uma pasta ou um ativo](#copy-a-folder-or-asset).
 * [Mova uma pasta ou um ativo](#move-a-folder-or-asset).
-* [Exclua uma pasta, ativo ou representação](#delete-a-folder-asset-or-rendition).
+* [Excluir uma pasta, ativo ou representação](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com [Resty](https://github.com/micha/resty), que é um invólucro de script para `cURL`.
+>Para facilitar a legibilidade, os exemplos a seguir omitem a notação completa de cURL. Na verdade, a notação está correlacionada com [Resty](https://github.com/micha/resty) que é um wrapper de scripts para `cURL`.
 
 **Pré-requisitos**
 
 * Acesso `https://[aem_server]:[port]/system/console/configMgr`.
-* Navegue até **[!UICONTROL Filtro CSRF de Adobe Granite]**.
-* Verifique se a propriedade **[!UICONTROL Métodos de Filtro]** inclui: `POST`, `PUT`, `DELETE`.
+* Navegue até **[!UICONTROL Filtro CSRF do Adobe Granite]**.
+* Verifique se a propriedade **[!UICONTROL Métodos de filtro]** inclui: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar uma lista de pastas {#retrieve-a-folder-listing}
 
@@ -100,16 +102,16 @@ Recupera uma representação Siren de uma pasta existente e de suas entidades fi
 **Códigos** de resposta: Os códigos de resposta são:
 
 * 200 - OK - sucesso.
-* 404 - NOT FOUND - a pasta não existe ou não está acessível.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 404 - NÃO ENCONTRADO - a pasta não existe ou não está acessível.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
-**Resposta**: A classe da entidade retornada é um ativo ou uma pasta. As propriedades de entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
+**Resposta**: A classe da entidade retornada é um ativo ou uma pasta. As propriedades das entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
 ## Crie uma pasta {#create-a-folder}
 
-Cria um novo `sling`: `OrderedFolder` no caminho especificado. Se um `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação Siren da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
+Cria um novo `sling`: `OrderedFolder` no caminho especificado. Se um `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome do nó. Aceito como dados de solicitação é uma representação Siren da nova pasta ou um conjunto de pares de nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de consulta de URL.
 
-Uma chamada de API falha com um código de resposta `500` se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
+Uma chamada de API falha com um código de resposta `500` se o nó pai do caminho fornecido não existir. Uma chamada retorna um código de resposta `409` se a pasta já existir.
 
 **Parâmetros**:  `name` é o nome da pasta.
 
@@ -120,10 +122,10 @@ Uma chamada de API falha com um código de resposta `500` se o nó pai do caminh
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 201 - CRIADO - sobre criação bem sucedida.
+* 201 - CRIADO - na criação bem-sucedida.
 * 409 - CONFLICT - se a pasta já existir.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
 ## Criar um ativo {#create-an-asset}
 
@@ -139,39 +141,39 @@ Coloque o arquivo fornecido no caminho fornecido para criar um ativo no reposit�
 **Códigos** de resposta: Os códigos de resposta são:
 
 * 201 - CRIADO - se o Ativo tiver sido criado com êxito.
-* 409 - CONFLITO - se o Ativo já existir.
+* 409 - CONFLITO - se o ativo já existir.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
 ## Atualizar um binário de ativo {#update-asset-binary}
 
-Atualiza o binário de um ativo (execução com o nome original). Uma atualização aciona o fluxo de trabalho de processamento de ativos padrão para ser executado, se estiver configurado.
+Atualiza o binário de um ativo (representação com o nome original). Uma atualização aciona o fluxo de trabalho de processamento de ativos padrão para execução, se estiver configurado.
 
 **Solicitação**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 200 - OK - se Asset (Ativo) tiver sido atualizado com êxito.
+* 200 - OK - se Ativo tiver sido atualizado com êxito.
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
-## Atualizar metadados do ativo {#update-asset-metadata}
+## Atualizar metadados de ativos {#update-asset-metadata}
 
-Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na namespace `dc:`, a API atualizará a mesma propriedade na namespace `jcr`. A API não sincroniza as propriedades nas duas namespaces.
+Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade no namespace `dc:`, a API atualizará a mesma propriedade no namespace `jcr`. A API não sincroniza as propriedades nos dois namespaces.
 
 **Solicitação**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 200 - OK - se Asset (Ativo) tiver sido atualizado com êxito.
+* 200 - OK - se Ativo tiver sido atualizado com êxito.
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
-### Sincronizar atualização de metadados entre a namespace `dc` e `jcr` {#sync-metadata-between-namespaces}
+### Sincronizar atualização de metadados entre `dc` e `jcr` namespace {#sync-metadata-between-namespaces}
 
-O método da API atualiza as propriedades de metadados na namespace `jcr`. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na namespace `dc`. Para sincronizar os valores de metadados entre as namespaces `dc` e `jcr`, é possível criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho após a edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
+O método da API atualiza as propriedades dos metadados no namespace `jcr`. As atualizações feitas usando a interface sensível ao toque alteram as propriedades dos metadados no namespace `dc`. Para sincronizar os valores de metadados entre `dc` e `jcr` namespace, você pode criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição de ativos. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -192,7 +194,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 ## Criar uma representação de ativo {#create-an-asset-rendition}
 
-Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de solicitação não for fornecido, o nome do arquivo será usado como nome de execução.
+Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro da solicitação não for fornecido, o nome do arquivo será usado como nome da representação.
 
 **Parâmetros**: Os parâmetros são  `name` para o nome da representação e  `file` como uma referência de arquivo.
 
@@ -203,23 +205,23 @@ Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 201 - CREATED - se a Renderização tiver sido criada com êxito.
+* 201 - CREATED - se a Representação tiver sido criada com êxito.
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
 ## Atualizar uma representação de ativo {#update-an-asset-rendition}
 
-As atualizações substituem respectivamente uma representação de ativo pelos novos dados binários.
+As atualizações substituem, respectivamente, uma representação de ativo pelos novos dados binários.
 
 **Solicitação**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 200 - OK - se Renderização tiver sido atualizada com êxito.
+* 200 - OK - se a Representação tiver sido atualizada com êxito.
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
 ## Adicionar um comentário em um ativo {#create-an-asset-comment}
 
@@ -231,48 +233,48 @@ Cria um novo comentário de ativo.
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 201 - CRIADO - se Comentário tiver sido criado com êxito.
+* 201 - CRIADO - se o Comentário tiver sido criado com êxito.
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
 ## Copiar uma pasta ou um ativo {#copy-a-folder-or-asset}
 
 Copia uma pasta ou ativo disponível no caminho fornecido para um novo destino.
 
-**Cabeçalhos** de solicitação: Os parâmetros são:
+**Cabeçalhos** da solicitação: Os parâmetros são:
 
-* `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
-* `X-Depth` - quer  `infinity` quer  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
-* `X-Overwrite` - Use  `F` para evitar a substituição de um ativo no destino existente.
+* `X-Destination` - um novo URI de destino no escopo da solução de API para copiar o recurso.
+* `X-Depth` -  `infinity` ou  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
+* `X-Overwrite` - Use  `F` para impedir a substituição de um ativo no destino existente.
 
 **Solicitação**:  `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 201 - CRIADO - se a pasta/ativo tiver sido copiado para um destino não existente.
-* 204 - SEM CONTEÚDO - se a pasta/ativo tiver sido copiado para um destino existente.
+* 201 - CREATED - se a pasta/ativo tiver sido copiada para um destino não existente.
+* 204 - NO CONTENT - se a pasta/ativo tiver sido copiada para um destino existente.
 * 412 - PRECONDITION FAILED - se um cabeçalho de solicitação estiver ausente.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
 ## Mover uma pasta ou um ativo {#move-a-folder-or-asset}
 
-Move uma pasta ou um ativo no caminho fornecido para um novo destino.
+Move uma pasta ou um ativo no caminho especificado para um novo destino.
 
-**Cabeçalhos** de solicitação: Os parâmetros são:
+**Cabeçalhos** da solicitação: Os parâmetros são:
 
-* `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
-* `X-Depth` - quer  `infinity` quer  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
+* `X-Destination` - um novo URI de destino no escopo da solução de API para copiar o recurso.
+* `X-Depth` -  `infinity` ou  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
 * `X-Overwrite` - Use  `T` para forçar a exclusão de um recurso existente ou  `F` para evitar a substituição de um recurso existente.
 
 **Solicitação**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
-* 201 - CRIADO - se a pasta/ativo tiver sido copiado para um destino não existente.
-* 204 - SEM CONTEÚDO - se a pasta/ativo tiver sido copiado para um destino existente.
+* 201 - CREATED - se a pasta/ativo tiver sido copiada para um destino não existente.
+* 204 - NO CONTENT - se a pasta/ativo tiver sido copiada para um destino existente.
 * 412 - PRECONDITION FAILED - se um cabeçalho de solicitação estiver ausente.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
 
 ## Excluir uma pasta, um ativo ou uma representação {#delete-a-folder-asset-or-rendition}
 
@@ -288,4 +290,4 @@ Exclui um recurso (-tree) no caminho fornecido.
 
 * 200 - OK - se a pasta tiver sido excluída com êxito.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
-* 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+* 500 - INTERNAL SERVER ERROR - se algo der errado.
