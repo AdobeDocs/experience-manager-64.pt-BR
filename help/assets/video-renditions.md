@@ -1,29 +1,31 @@
 ---
-title: Execuções de vídeo
-description: Execuções de vídeo
+title: Representações de vídeo
+description: Representações de vídeo
 contentOwner: AG
+feature: Vídeo,Representações
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
 
 
-# Execuções de vídeo {#video-renditions}
+# Representações de vídeo {#video-renditions}
 
-O Adobe Experience Manager (AEM) Assets gera renderizações de vídeo para ativos de vídeo de vários formatos, incluindo OGG, FLV e assim por diante.
+O Adobe Experience Manager (AEM) Assets gera representações de vídeo para ativos de vídeo de vários formatos, incluindo OGG, FLV e assim por diante.
 
-A AEM Assets oferece suporte a representações estáticas e dinâmicas (execuções codificadas por DM) para ativos de mídia.
+O AEM Assets suporta representações estáticas e dinâmicas (representações codificadas por DM) para ativos de mídia.
 
-As execuções estáticas são geradas nativamente usando FFMPEG (instalado e disponível no caminho do sistema) e armazenadas no repositório de conteúdo.
+As representações estáticas são geradas nativamente usando FFMPEG (instalado e disponível no caminho do sistema) e armazenadas no repositório de conteúdo.
 
-As renderizações codificadas por DM são armazenadas no servidor proxy e servidas no tempo de execução.
+As representações codificadas em DM são armazenadas no servidor proxy e servidas no tempo de execução.
 
-Os ativos AEM fornecem suporte de reprodução para essas execuções no lado do cliente.
+AEM ativos fornecem suporte de reprodução para essas execuções no lado do cliente.
 
-Para visualização das representações de um ativo de vídeo específico, abra sua página de ativo e toque no ícone Navegação global. Em seguida, escolha **[!UICONTROL Representações]** na lista.
+Para exibir as representações de um ativo de vídeo específico, abra a página de ativos e toque no ícone Navegação global . Em seguida, escolha **[!UICONTROL Representações]** na lista.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
@@ -31,14 +33,14 @@ A lista de representações de vídeo é exibida no painel **[!UICONTROL Represe
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Para configurar o servidor proxy para renderizações codificadas por DM, [configure os serviços da Dynamic Media Cloud.](config-dynamic.md)
+Para configurar o servidor proxy para representações codificadas em DM, [configure os serviços da Dynamic Media Cloud.](config-dynamic.md)
 
 Para gerar representações de vídeo com os parâmetros desejados, [crie um perfil de vídeo correspondente](video-profiles.md).
 
-Depois de configurar o servidor proxy e criar perfis de vídeo, é possível incluir essa predefinição de vídeo em um perfil de processamento e aplicar o perfil de processamento a uma pasta.
+Após configurar o servidor proxy e criar perfis de vídeo, é possível incluir essa predefinição de vídeo em um perfil de processamento e aplicar o perfil de processamento a uma pasta.
 
 >[!NOTE]
 >
->A reprodução de áudio não funciona para arquivos OGG e WAV no Internet Explorer 11. Um erro &quot;Origem inválida &quot; é exibido na página de detalhes do ativo para ativos com extensão OGG ou WAV.
+>A reprodução de áudio não funciona para arquivos OGG e WAV no Internet Explorer 11. Um erro &quot;Origem inválida&quot; é exibido na página de detalhes do ativo para ativos com extensão OGG ou WAV.
 >
->No MS Edge e iPad, os arquivos OGG não são reproduzidos e geram um erro de formato não suportado.
+>No MS Edge e no iPad , os arquivos OGG não são reproduzidos e geram um erro de formato Não suportado.
