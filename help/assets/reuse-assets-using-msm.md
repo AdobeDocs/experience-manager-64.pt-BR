@@ -3,10 +3,12 @@ title: Reutilizar ativos usando o MSM
 description: Use ativos em várias páginas/pastas que são derivadas de e vinculadas a ativos principais. Os ativos permanecem sincronizados com uma cópia principal e, com alguns cliques, recebem as atualizações dos ativos principais.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Gerenciamento de ativos, Gerenciador de vários sites
+role: Profissional de negócios,Administrador,Arquiteto
 translation-type: tm+mt
-source-git-commit: d2372ebabf92fd83cff31d4f0b37c020756f03c1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3167'
+source-wordcount: '3176'
 ht-degree: 9%
 
 ---
@@ -63,7 +65,7 @@ O MSM mantém um relacionamento dinâmico entre o ativo de origem e suas cópias
 Para criar uma live copy a partir de um ou mais ativos ou pastas de origem, siga um destes procedimentos:
 
 * **Método 1**: Selecione os ativos de origem e clique em  **[!UICONTROL Criar]**  >  **[!UICONTROL Live]** Copy na barra de ferramentas na parte superior.
-* **Método 2**: Na interface do usuário do AEM, clique em  **[!UICONTROL Criar > Live]** Copy no canto superior direito da interface.
+* **Método 2**: Em AEM interface do usuário, clique em  **[!UICONTROL Criar > Live]** Copy no canto superior direito da interface.
 
 Você pode criar cópias ativas de um ativo ou uma pasta, uma de cada vez. Você pode criar cópias ativas derivadas de um ativo ou de uma pasta que seja uma live copy propriamente dita.
 
@@ -72,15 +74,15 @@ Fragmentos de conteúdo (CFs) não são compatíveis com o caso de uso. Ao tenta
 Para criar cópias ativas usando o primeiro método, siga estas etapas:
 
 1. Selecione ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Criar > Live Copy]**.
-   ![Criar Live Copy da interface do AEM](assets/lc_create1.png)
+   ![Criar Live Copy AEM interface](assets/lc_create1.png)
 1. Selecione o ativo ou a pasta de origem. Clique em **[!UICONTROL Avançar]**.
 1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma live copy de pastas, você pode optar por incluir ou excluir filhos.
 1. Selecione uma configuração de implementação. Clique em **[!UICONTROL Criar]**.
 
 Para criar cópias ativas usando o segundo método, siga estas etapas:
 
-1. Na interface do AEM, no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
-   ![Criar Live Copy da interface do AEM](assets/lc_create2.png)
+1. Em AEM interface, no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
+   ![Criar Live Copy AEM interface](assets/lc_create2.png)
 1. Selecione o ativo ou a pasta de origem. Clique em **[!UICONTROL Avançar]**.
 1. Selecione a pasta de destino. Clique em **[!UICONTROL Avançar]**.
 1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma live copy de pastas, você pode optar por incluir ou excluir filhos.
@@ -181,7 +183,7 @@ Como alternativa, você pode iniciar uma ação de implantação no painel [!UIC
 
 Uma ação de sincronização extrai as modificações de uma fonte somente para a live copy selecionada. A ação de sincronização respeita e mantém as modificações locais feitas após cancelar a herança. As modificações locais não são substituídas e a herança cancelada não é restabelecida. Você pode iniciar uma ação de sincronização de três maneiras.
 
-| Onde na interface [!DNL Experience Manager] | Quando e por que usar | Como utilizar |
+| Onde na interface [!DNL Experience Manager] | Quando e por que usar | Como usar |
 |---|---|---|
 |  Painel de referência | Sincronize rapidamente quando já tiver a origem selecionada. | Consulte [Ações rápidas do painel Referências para origem](#quick-actions-from-references-rail-for-source) |
 | Barra de ferramentas na página [!UICONTROL Propriedades] | Inicie uma sincronização quando já tiver as propriedades da live copy abertas. | Consulte [Sincronizar uma live copy](#synchronize-live-copy) |
@@ -219,7 +221,7 @@ Você pode desfazer todas as modificações locais e reverter o ativo para o est
 
 ## Remover relacionamento dinâmico {#remove-live-relationship}
 
-Você pode remover completamente a relação entre uma origem e uma live copy usando a ação Desanexar . A live copy se torna um ativo ou pasta independente após ser desanexada. Ele é exibido como um novo ativo na interface do AEM, imediatamente após a desconexão. Para desconectar uma live copy da origem, siga essas etapas.
+Você pode remover completamente a relação entre uma origem e uma live copy usando a ação Desanexar . A live copy se torna um ativo ou pasta independente após ser desanexada. Ele é exibido como um novo ativo na interface AEM, imediatamente após a desconexão. Para desconectar uma live copy da origem, siga essas etapas.
 
 1. Selecione um ativo ou uma pasta de live copy. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Live Copy]**. Clique em **[!UICONTROL Desanexar]** na barra de ferramentas. Clique em **[!UICONTROL Desanexar]** da caixa de diálogo apresentada.
