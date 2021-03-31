@@ -2,10 +2,12 @@
 title: Metadados em cascata
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
+feature: Metadados
+role: Profissional de negócios,Administrador
 translation-type: tm+mt
-source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '984'
 ht-degree: 13%
 
 ---
@@ -19,22 +21,22 @@ Este artigo descreve como definir metadados em cascata para ativos.
 >
 >Metadados em cascata não são compatíveis com Fragmentos de conteúdo.
 
-Ao capturar as informações de metadados de um ativo, os usuários fornecem informações nos vários campos disponíveis. É possível exibir campos de metadados específicos ou valores de campos que dependem das opções selecionadas nos outros campos. Essa exibição condicional de metadados é chamada de metadados em cascata. Em outras palavras, é possível criar uma dependência entre um campo/valor de metadados específico e um ou mais campos e/ou seus valores.
+Ao capturar as informações de metadados de um ativo, os usuários fornecem informações nos vários campos disponíveis. É possível exibir campos de metadados específicos ou valores de campo que dependem das opções selecionadas nos outros campos. Essa exibição condicional de metadados é chamada de metadados em cascata. Em outras palavras, é possível criar uma dependência entre um campo/valor de metadados específico e um ou mais campos e/ou seus valores.
 
-Use schemas de metadados para definir regras para exibir metadados em cascata. Por exemplo, se o schema de metadados incluir um campo de tipo de ativo, você pode definir um conjunto pertinente de campos a serem exibidos com base no tipo de ativo selecionado pelo usuário.
+Use esquemas de metadados para definir regras para exibir metadados em cascata. Por exemplo, se o esquema de metadados incluir um campo de tipo de ativo, você poderá definir um conjunto pertinente de campos a serem exibidos com base no tipo de ativo selecionado pelo usuário.
 
 Estes são alguns casos de uso para os quais você pode definir metadados em cascata:
 
-* Quando a localização do usuário for obrigatória, exiba os nomes relevantes da cidade com base na escolha do país e estado pelo usuário.
-* Carregue nomes de marcas pertinentes em uma lista com base na escolha do usuário para a categoria do produto.
-* Alterna a visibilidade de um campo específico com base no valor especificado em outro campo. Por exemplo, exiba campos de endereço de entrega separados se o usuário desejar que a entrega seja entregue em um endereço diferente.
-* Designar um campo como obrigatório com base no valor especificado em outro campo.
-* Opções de alteração exibidas para um campo específico com base no valor especificado em outro campo.
-* Defina o valor de metadados padrão em um campo específico com base no valor especificado em outro campo.
+* Sempre que a localização do usuário for necessária, exiba nomes de cidades relevantes com base na escolha do país e do estado pelo usuário.
+* Carregue nomes de marcas pertinentes em uma lista com base na escolha de categoria de produto pelo usuário.
+* Alternar a visibilidade de um campo específico com base no valor especificado em outro campo. Por exemplo, exiba campos de endereço de entrega separados se o usuário desejar que a entrega seja entregue em um endereço diferente.
+* Atribua um campo como obrigatório com base no valor especificado em outro campo.
+* Altere as opções exibidas para um campo específico com base no valor especificado em outro campo.
+* Defina o valor dos metadados padrão em um campo específico com base no valor especificado em outro campo.
 
 ## Configurar metadados em cascata em AEM {#configure-cascading-metadata-in-aem}
 
-Considere um cenário em que você deseja exibir metadados em cascata com base no tipo de ativo selecionado. Alguns exemplos
+Considere um cenário em que deseja exibir metadados em cascata com base no tipo de ativo selecionado. Alguns exemplos
 
 * Para um vídeo, exiba campos aplicáveis, como formato, codec, duração e assim por diante.
 * Para um documento do Word ou PDF, exiba campos, como contagem de páginas, autor e assim por diante.
@@ -46,40 +48,40 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    ![select_form](assets/select_form.png)
 
-1. (Opcional) No editor de schemas de metadados, crie um novo campo para condicionalizar. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**.
+1. (Opcional) No editor de esquema de metadados, crie um novo campo para condicionar. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**.
 
    Para criar uma nova guia, toque/clique em **[!UICONTROL +]** para adicionar uma guia e, em seguida, adicione um campo de metadados.
 
    ![add_tab](assets/add_tab.png)
 
-1. Adicionar um campo Suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**. Adicione uma descrição opcional.
+1. Adicione um campo suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**. Adicione uma descrição opcional.
 
    ![asset_type_field](assets/asset_type_field.png)
 
-1. Os pares de valores-chave são as opções fornecidas a um usuário de formulário. Você pode fornecer os pares de valor chave manualmente ou de um arquivo JSON.
+1. Os pares de valores-chave são as opções fornecidas a um usuário do formulário. Você pode fornecer os pares de valores chave manualmente ou de um arquivo JSON.
 
-   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar Manualmente]** e toque/clique em **[!UICONTROL Adicionar Escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
-   * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho JSON]** e forneça o caminho do arquivo JSON. AEM os pares de valores chave em tempo real quando o formulário é apresentado ao usuário.
+   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar Manualmente]** e toque/clique em **[!UICONTROL Adicionar Escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique tipos de ativos de Vídeo, PDF, Word e Imagem.
+   * Para buscar os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar por meio do caminho JSON]** e forneça o caminho do arquivo JSON. AEM busca os pares de valores chave em tempo real, quando o formulário é apresentado ao usuário.
 
-   Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editá-las manualmente.
+   Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editar manualmente.
 
    ![add_choice](assets/add_choice.png)
 
    >[!NOTE]
    >
-   >Quando você adiciona um arquivo JSON, os pares de valor chave não são exibidos no editor de schemas de metadados, mas estão disponíveis no formulário publicado.
+   >Ao adicionar um arquivo JSON, os pares de valor chave não são exibidos no editor de esquema de metadados, mas estão disponíveis no formulário publicado.
 
    >[!NOTE]
    >
-   >Ao adicionar opções, se você clicar no campo Suspenso, a interface fica distorcida e o ícone Excluir das opções para de funcionar. Ao adicionar as opções à lista suspensa, não clique em voltar à lista suspensa até salvar as alterações. Se você enfrentar esse problema, salve o schema e abra-o novamente para continuar a edição.
+   >Ao adicionar opções, se você clicar no campo Suspenso , a interface fica distorcida e o ícone de exclusão das opções para de funcionar. Ao adicionar as opções à lista suspensa, não clique novamente na lista suspensa até salvar as alterações. Se você enfrentar esse problema, salve o schema e abra-o novamente para continuar a edição.
 
-1. (Opcional) Adicione os outros campos obrigatórios. Por exemplo, formato, codec e duração do tipo de ativo de vídeo.
+1. (Opcional) Adicione os outros campos obrigatórios. Por exemplo, formato, codec e duração do vídeo de tipo de ativo.
 
-   Da mesma forma, adicione campos dependentes para outros tipos de ativos. Por exemplo, adicione campos de contagem de páginas e autor para ativos de documento, como arquivos PDF e do Word.
+   Da mesma forma, adicione campos dependentes para outros tipos de ativos. Por exemplo, adicione campos contagem de páginas e criação para ativos de documento, como arquivos PDF e Word.
 
-   ![video_dependence_fields](assets/video_dependent_fields.png)
+   ![campos_dependentes_do_vídeo](assets/video_dependent_fields.png)
 
-1. Para criar uma dependência entre o campo de tipo de ativo e outros campos, escolha o campo dependente e abra a guia **[!UICONTROL Regras]**.
+1. Para criar uma dependência entre o campo do tipo de ativo e outros campos, escolha o campo dependente e abra a guia **[!UICONTROL Rules]**.
 
    ![select_depenentfield](assets/select_dependentfield.png)
 
@@ -106,16 +108,16 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    >
    >É possível aplicar as condições de **[!UICONTROL Requisito]** e **[!UICONTROL Visibilidade]** independentemente umas das outras.
 
-1. Da mesma forma, crie uma dependência entre o valor Vídeo no campo Tipo de ativo e outros campos, como Codec e Duração.
-1. Repita as etapas para criar dependência entre os ativos do documento (PDF e Word) no campo **[!UICONTROL Tipo de ativo]** e campos como Contagem de página e Autor.
-1. Clique em **[!UICONTROL Salvar]**. Aplique o Schema Metadados a uma pasta.
+1. Similar, crie uma dependência entre o valor Vídeo no campo Tipo de ativo e outros campos, como Codec e Duração.
+1. Repita as etapas para criar dependência entre ativos de documento (PDF e Word) no campo **[!UICONTROL Tipo de ativo]** e campos como Contagem de página e Autor.
+1. Clique em **[!UICONTROL Salvar]**. Aplique o Esquema de metadados a uma pasta.
 
-1. Navegue até a pasta na qual você aplicou o Schema Metadados e abra a página de propriedades de um ativo. Dependendo de sua escolha no campo Tipo de ativo, os campos de metadados em cascata pertinentes são exibidos.
+1. Navegue até a pasta na qual você aplicou o Esquema de metadados e abra a página de propriedades de um ativo. Dependendo de sua escolha no campo Tipo de ativo , os campos de metadados em cascata pertinentes são exibidos.
 
-   ![Metadados em cascata para o ativo Vídeo](assets/video_asset.png)
+   ![Metadados em cascata para o ativo de Vídeo](assets/video_asset.png)
 
-   *Figura: Metadados em cascata para o ativo Vídeo*
+   *Figura: Metadados em cascata para o ativo de Vídeo*
 
-   ![Metadados em cascata para ativos de documento](assets/doc_type_fields.png)
+   ![Metadados em cascata para o ativo de documento](assets/doc_type_fields.png)
 
-   *Figura: Metadados em cascata para ativos de documento*
+   *Figura: Metadados em cascata para o ativo de documento*
