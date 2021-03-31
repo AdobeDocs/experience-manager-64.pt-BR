@@ -2,11 +2,13 @@
 title: Write-back de XMP a execuções
 description: Saiba como o recurso de write-back de XMP propaga as alterações de metadados de um ativo para todas as representações ou representações específicas do ativo.
 contentOwner: AG
+feature: Metadados
+role: Profissional de negócios,Administrador
 translation-type: tm+mt
-source-git-commit: debf372e6a0b8f00bbfce16325908a5806c062d5
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '782'
+ht-degree: 4%
 
 ---
 
