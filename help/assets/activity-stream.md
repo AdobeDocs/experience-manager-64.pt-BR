@@ -1,25 +1,27 @@
 ---
-title: Atividade na linha do tempo
+title: Fluxo de atividades na linha do tempo
 description: 'Este artigo descreve como exibir registros de atividades para ativos na linha do tempo. '
 contentOwner: AG
+feature: Gerenciamento de ativos
+role: Profissional de negócios,Administrador
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 34%
+source-wordcount: '221'
+ht-degree: 33%
 
 ---
 
 
-# Atividade na linha do tempo {#activity-stream-in-timeline}
+# Fluxo de atividade na linha do tempo {#activity-stream-in-timeline}
 
-Este recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos no Adobe Experience Manager (AEM) Assets, o recurso de fluxo de Atividade atualizará a linha do tempo para refletir a atividade.
+Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos no Adobe Experience Manager (AEM) Assets, o recurso de fluxo de Atividade atualizará a linha do tempo para refletir a atividade.
 
 As seguintes operações são registradas no fluxo de atividade:
 
 * Criar
 * Excluir
-* Download (incluindo execuções)
+* Download (incluindo representações)
 * Publicação
 * Desfazer publicação
 * Aprovar
@@ -32,15 +34,15 @@ Além disso, a atividade da linha do tempo é registrada quando novos ativos sã
 
 >[!NOTE]
 >
->Workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
+>Fluxos de trabalho transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses fluxos de trabalho.
 
-Para visualização do fluxo de atividade, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNav.
+Para exibir o fluxo de atividades, execute uma ou mais das operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNavigation.
 
-![linha do tempo 3](assets/timeline-3.png)
+![linha do tempo-3](assets/timeline-3.png)
 
-A linha do tempo exibe o fluxo de atividade para as operações que você executa nos ativos.
+A linha do tempo exibe o fluxo de atividades para as operações que você executa nos ativos.
 
-![atividade_stream](assets/activity_stream.png)
+![activity_stream](assets/activity_stream.png)
 
 >[!NOTE]
 >
