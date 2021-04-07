@@ -9,48 +9,50 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
+exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
+feature: Fragmentos de conteúdo
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '470'
 ht-degree: 12%
 
 ---
-
 
 # Fragmentos de conteúdo - excluir considerações {#content-fragments-delete-considerations}
 
 >[!CAUTION]
 >
->Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação de [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
-## Permissões - Excluir ou Não Excluir {#permissions-delete-or-not-delete}
+## Permissões - excluir ou não excluir {#permissions-delete-or-not-delete}
 
-A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar como esses privilégios são distribuídos.
+A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar a distribuição desses privilégios.
 
-No que se refere a excluir permissões, os Fragmentos de conteúdo devem ser considerados em dois níveis:
+Com relação às permissões de exclusão, os Fragmentos de conteúdo devem ser considerados em dois níveis:
 
 1. **O Fragmento do conteúdo como uma única entidade.**
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo  **e excluir um fragmento** inteiro.
-   * **Permissões**: A permissão  [](/help/sites-administering/security.md#actions) Excluir pode ser  [atribuída por meio do Gerenciamento](/help/sites-administering/security.md#managing-permissions) de usuários e/ou grupos.
+   * **Permissões**: A permissão  [](/help/sites-administering/security.md#actions) Excluir pode ser  [atribuída por meio do Gerenciamento de usuários e/ou grupos](/help/sites-administering/security.md#managing-permissions).
 
 1. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
 
    A operação básica do editor de fragmentos de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo -  **sem ter permissão para excluir um fragmento** inteiro.
-   * **Permissões**: Consulte  [Permissões necessárias somente](content-fragments-delete.md#permissions-required-for-editor-functionality-only) para a funcionalidade do editor.
+   * **Permissões**: Consulte  [Permissões necessárias somente para a funcionalidade do editor](content-fragments-delete.md#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->Quando um usuário não tem nenhuma permissão [Excluir](/help/sites-administering/security.md#actions), o editor de Fragmento de conteúdo opera no modo *somente leitura*.
+>Quando um usuário não tem nenhuma permissão [Delete](/help/sites-administering/security.md#actions), o editor de Fragmento de conteúdo opera no modo *somente leitura*.
 
 >[!NOTE]
 >
 >Consulte também [Como auditar operações de gerenciamento de usuários em AEM](/help/sites-administering/audit-user-management-operations.md).
 
-## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
+## Permissões necessárias para a funcionalidade do editor somente {#permissions-required-for-editor-functionality-only}
 
 Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que elementos transitórios secundários possam ser excluídos.
 
@@ -58,9 +60,9 @@ Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar 
 
 >[!NOTE]
 >
->As permissões de exclusão, necessárias para editar/atualizar um Fragmento de conteúdo, estão incluídas na permissão Excluir [atribuída por meio do Gerenciamento de usuários e/ou grupos](/help/sites-administering/security.md#managing-permissions).
+>As permissões de exclusão, necessárias para editar/atualizar um Fragmento de conteúdo, estão incluídas na permissão de exclusão [atribuída por meio de Gerenciamento de usuários e/ou grupos](/help/sites-administering/security.md#managing-permissions).
 
-As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó pai apropriado (em qualquer nível em `/content/dam`). Quando atribuídas a esse nó pai, as permissões serão aplicadas a todos os nós dentro desse ramo.
+As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó pai apropriado (em qualquer nível em `/content/dam`). Quando atribuídas a esse nó pai, as permissões serão aplicadas a todos os nós dentro dessa ramificação.
 
 Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 
@@ -90,11 +92,10 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
    * `jcr:addChildNodes`,  `jcr:modifyProperties` e  `jcr:removeChildNodes`,  `jcr:removeNode`
 
-Esses privilégios `remove` devem ser [administrados usando Listas Controles de acesso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Esses privilégios `remove` devem ser [administrados usando Listas de Controle de Acesso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Os privilégios `add` e `modify` também podem ser administrados no CRXDE Lite ou usando o console de Gerenciamento de usuários.
+Os privilégios `add` e `modify` também podem ser administrados no CRXDE Lite, ou usando o console de Gerenciamento de Usuário.
 
 Por exemplo, a definição dos privilégios `remove` para um grupo `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
-
