@@ -9,46 +9,48 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
+exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
+feature: Gerenciamento de ativos
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 23%
+source-wordcount: '332'
+ht-degree: 25%
 
 ---
 
-
 # Entrega de ativos de Mídia dinâmica {#delivering-dynamic-media-assets}
 
-A forma como você pode fornecer seus ativos de mídia dinâmica - vídeo e imagens - depende de como seu site é implementado.
+A maneira de fornecer ativos de mídia dinâmica (vídeo e imagens) depende de como o site está implementado.
 
 Com a Mídia dinâmica, você tem várias opções:
 
 * Se o seu site estiver hospedado no AEM, convém adicionar os ativos de mídia dinâmica diretamente à sua página.
-* Se o site não estiver no AEM, você terá a opção de:
+* Se o seu site não estiver no AEM, você terá a opção de:
 
-   * Incorporar seu vídeo ou imagem em seu site.
-   * Vincule URLs ao seu aplicativo da Web. Use a vinculação quando quiser fornecer um player de vídeo como uma janela pop-up ou modal.
-   * Se o site estiver respondendo, você poderá [fornecer imagens otimizadas.](responsive-site.md)
+   * Incorporação do vídeo ou imagem ao seu site.
+   * Vincule URLs ao aplicativo da Web. Use a vinculação quando desejar fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
+   * Se seu site for responsivo, você poderá [fornecer imagens otimizadas.](responsive-site.md)
 
 >[!NOTE]
 >
->A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagens inteligentes](imaging-faq.md) para obter mais informações.
+>A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagem inteligente](imaging-faq.md) para obter mais informações.
 
 Para obter mais informações, consulte os seguintes tópicos:
 
-* [Adicionar ativos Dynamic Media a páginas da Web](adding-dynamic-media-assets-to-pages.md)
+* [Adicionar ativos Dynamic Media às páginas da Web](adding-dynamic-media-assets-to-pages.md)
 * [Incorporação do visualizador de vídeo ou imagem em uma página da Web](embed-code.md)
-* [Ativação da proteção de hotlink no Dynamic Media](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
-* Integração da marca d&#39;água digital não visível (Digimarc) com a Dynamic Media (em breve)
+* [Ativação da proteção de hotlink no Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/hotlink-protection.html?lang=pt-BR#dynamic)
+* Integração de marcas d&#39;água digitais invisíveis (Digimarc) com o Dynamic Media (em breve)
 * [Vincular URLs ao aplicativo da Web.](linking-urls-to-yourwebapplication.md)
 * [Entrega de imagens otimizadas para um site responsivo](responsive-site.md)
 * [Entrega de conteúdo HTTP2](http2.md)
 * [Invalidação do conteúdo em cache do CDN](invalidate-cdn-cached-content.md)
 * [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
 
-## DELIVERY HTTP/2 de ativos Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## Entrega HTTP/2 de ativos do Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM agora suporta o delivery de todo o conteúdo do Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos Dynamic Media.
+O AEM agora é compatível com a entrega de todo o conteúdo do Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou código incorporado para a imagem ou vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Esse método de entrega melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos do Dynamic Media.
 
-Consulte [Delivery HTTP/2 de Perguntas frequentes sobre conteúdo](/help/sites-administering/scene7-http2faq.md) para saber mais.
+Consulte [Perguntas frequentes sobre entrega de conteúdo HTTP/2](/help/sites-administering/scene7-http2faq.md) para saber mais.
