@@ -1,31 +1,32 @@
 ---
 title: Sobre o gerenciamento de ativos da Dynamic Media
-description: Saiba como trabalhar com ativos da Dynamic Media
+description: Saiba como trabalhar com ativos Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: a87c7562-0d61-403e-9e8e-e706cac9b7c5
+feature: Gerenciamento de ativos
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '120'
 ht-degree: 13%
 
 ---
 
+# Sobre o gerenciamento de ativos do Dynamic Media {#managing-assets}
 
-# Sobre o gerenciamento de ativos da Dynamic Media {#managing-assets}
-
-O gerenciamento de ativos da Dynamic Media - imagens, vídeos e ativos interativos - depois que eles são carregados - envolve muitas tarefas, incluindo a visualização, o download ou a publicação deles.
+O gerenciamento de ativos da Dynamic Media, imagens, vídeos e ativos interativos, após o upload, envolve muitas tarefas, incluindo a visualização, o download ou a publicação de ativos.
 
 Ao visualizar, você também pode aplicar predefinições de imagens (somente para imagens) ou predefinições do visualizador (para vídeo e imagens). Não é possível aplicar ambos a um ativo. Consulte [Aplicar predefinições do visualizador](viewer-presets.md) e [Aplicar predefinições de imagens](image-presets.md).
 
-Informações gerais sobre o gerenciamento de ativos estão disponíveis em [Gerenciar ativos com a interface de usuário de toque](managing-assets-touch-ui.md).
+Informações gerais sobre o gerenciamento de ativos estão disponíveis em [Gerenciamento de ativos com a interface de toque](managing-assets-touch-ui.md).
 
-Os tópicos a seguir descrevem o que você precisa fazer para gerenciar ativos da Dynamic Media:
+Os tópicos a seguir descrevem o que é necessário fazer para gerenciar os ativos do Dynamic Media:
 
 * [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Visualização de ativos do Dynamic Media](previewing-assets.md)
 * [Publicação de ativos Dynamic Media](publishing-dynamicmedia-assets.md)
 * [Trabalho com seletores](working-with-selectors.md)
-
