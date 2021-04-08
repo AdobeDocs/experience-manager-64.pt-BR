@@ -1,22 +1,24 @@
 ---
 title: Configuração de um estágio padrão com o Autodesk Maya e o Mental Ray
 seo-title: Configuração de um estágio padrão com o Autodesk Maya e o Mental Ray
-description: Como configurar um estágio padrão com Autodesk Maya e Mental Ray
-seo-description: Como configurar um estágio padrão com Autodesk Maya e Mental Ray
+description: Como configurar um estágio padrão com o Autodesk Maya e o Mental Ray
+seo-description: Como configurar um estágio padrão com o Autodesk Maya e o Mental Ray
 uuid: 3895fda6-29ae-46f5-b2bc-abc989808648
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
+exl-id: facd0411-8a3c-4b1a-af9d-0d59e0399b2c
+feature: Ativos 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 77%
 
 ---
-
 
 # Configuração de um estágio padrão com o Autodesk Maya e o Mental Ray {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
@@ -29,11 +31,11 @@ ht-degree: 77%
    * Luzes de refletor
    * Luzes de ponto
 
-   Outros tipos de luzes são ignorados ou convertidos em um dos tipos acima com suporte quando o estágio é carregado no AEM 3D. Os tipos convertidos são usados quando você visualiza o ativo e renderiza usando o renderizador Rapid Refine integrado. Os tipos de luz originais são usados ao renderizar com Maya.
+   Outros tipos de luzes são ignorados ou convertidos em um dos tipos acima com suporte quando o estágio é carregado no AEM 3D. Os tipos convertidos são usados quando você visualiza o ativo e renderiza usando o renderizador Rapid Refine integrado. Os tipos de luz originais são usados ao renderizar com o Maya.
 
 1. Crie um plano base, se necessário, e aplique um material adequado.
 
-   A Adobe recomenda que você configure um plano base como unilateral. Isso garante que você possa visualização o ativo de baixo em AEM 3D sem que o plano de fundo oculte o ativo.
+   A Adobe recomenda que você configure um plano base como unilateral. Isso garante que você possa visualizar o ativo de baixo em AEM 3D sem que o plano base o oculte.
 
 1. (Opcional) Crie e configure câmeras.
 
@@ -43,14 +45,14 @@ ht-degree: 77%
 
    Defina as configurações de renderização com as seguintes sugestões:
 
-   * **[!UICONTROL guia]** Comandos
+   * **** Guia Commontab
 
-      Desmarque a caixa de seleção **[!UICONTROL canal alfa (máscara)]** para todas as câmeras renderizáveis.
+      Desmarque a caixa de seleção **[!UICONTROL Alpha channel (mask)]** para todas as câmeras renderizáveis.
 
    * **[!UICONTROL Guia Qualidade]**
 
-      * **[!UICONTROL Qualidade geral ou]** `- 0.5` menor
-      * **[!UICONTROL Modo]**  de Difusão Indireta (GI) -  `Final Gather`
+      * **[!UICONTROL Qualidade geral]** `- 0.5` ou menos
+      * **[!UICONTROL Modo difuso indireto (GI)]**  -  `Final Gather`
       * **[!UICONTROL Tamanho]**  do filtro -  `2.0`,  `2.0`
    * Renderize a cena nos tamanhos de imagem típicos que você espera usar. Se necessário, refine as luzes ou as Configurações de renderização, ou faça as duas coisas para obter os resultados desejados.
 
@@ -66,6 +68,5 @@ ht-degree: 77%
 
    Se o Autodesk® Maya® não estiver configurado no servidor do AEM, exporte um FBX do Maya e faça o upload para o AEM.
 
-1. Abra as Propriedades do ativo no AEM. Defina **[!UICONTROL Title]** para uma sequência de caracteres adequada que aparecerá na lista suspensa **[!UICONTROL Seletor de Palco]**. Verifique se a **[!UICONTROL Classe]** está definida como **[!UICONTROL Estágio 3D]**. Salve e saia.
+1. Abra as Propriedades do ativo no AEM. Defina **[!UICONTROL Title]** para uma string adequada que aparecerá na lista suspensa **[!UICONTROL Seletor de preparo]**. Verifique se a **[!UICONTROL Classe]** está definida como **[!UICONTROL Estágio 3D]**. Salve e saia.
 1. Abra um ativo 3D, selecione o novo estágio e verifique se ele é visualizado e renderizado como esperado.
-
