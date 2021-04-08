@@ -1,22 +1,24 @@
 ---
 title: Renderização de ativos 3D
 seo-title: Renderização de ativos 3D
-description: Saiba como renderizar ativos 3D manipulados e salvos em AEM para criar imagens 2D para suas páginas da Web.
-seo-description: Saiba como renderizar ativos 3D manipulados e salvos em AEM para criar imagens 2D para suas páginas da Web.
+description: Saiba como renderizar ativos 3D que você manipulou e salvou no AEM para criar imagens 2D para suas páginas da Web.
+seo-description: Saiba como renderizar ativos 3D que você manipulou e salvou no AEM para criar imagens 2D para suas páginas da Web.
 uuid: ee4d669c-72b1-4f7a-9a68-a7c6d59c7856
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
+exl-id: 3eecec53-0b39-4783-8730-f08705183941
+feature: Ativos 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 66%
+source-wordcount: '702'
+ht-degree: 65%
 
 ---
-
 
 # Renderização de ativos 3D {#rendering-d-assets}
 
@@ -38,7 +40,7 @@ A renderização de conteúdo 3D consome recursos significativos do servidor, co
 
 O renderizador Rapid Refine normalmente demora vários minutos para renderizar imagens maiores. No entanto, os renderizadores de terceiros costumam demorar muitos minutos, até mesmo horas, quando configurados para proporcionar qualidade máxima.
 
-As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. A mensagem “Aguardando renderização...” é mostrada em ativos recém-carregados na Visualização de cartão. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser start.
+As tarefas de conversão, processamento e renderização são enfileiradas no servidor conforme necessário para evitar a sobrecarga do servidor. A mensagem “Aguardando renderização...” é mostrada em ativos recém-carregados na Visualização de cartão. Esse status indica que outros trabalhos de processamento ou renderização devem ser concluídos antes que o trabalho de renderização atual possa ser iniciado.
 
 >[!NOTE]
 >
@@ -51,8 +53,8 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
    Consulte [Visualização de ativos 3D](viewing-3d-assets.md).
 
 1. No Adobe Experience Manager, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Assets]**.
-1. Perto do canto superior direito da página, na lista suspensa **[!UICONTROL Visualização]**, toque em **[!UICONTROL Visualização de cartão]**.
-1. Navegue até um objeto 3D que deseja renderizar.
+1. Próximo ao canto superior direito da página, na lista suspensa **[!UICONTROL Exibir]**, toque em **[!UICONTROL Exibição de cartão]**.
+1. Navegue até um objeto 3D que você deseja renderizar.
 1. Toque no cartão do objeto 3D para abri-lo na página de detalhes do ativo.
 1. Perto do canto superior esquerdo da página, toque na lista suspensa e selecione **[!UICONTROL Renderizar]**.
 
@@ -74,9 +76,9 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
 
 1. Faça o seguinte:
 
-   * Nos campos **[!UICONTROL Largura]** e **[!UICONTROL Altura]**, digite a largura e a altura do pixel que deseja que a imagem seja renderizada.
-   * No campo **[!UICONTROL Nome da imagem]**, digite o nome da imagem renderizada.
-   * No campo **[!UICONTROL Exportar caminho]**, digite o caminho onde deseja que a imagem renderizada seja armazenada. Ou toque no ícone **[!UICONTROL Procurar]** e navegue até um local.
+   * Nos campos **[!UICONTROL Width]** e **[!UICONTROL Height]**, insira a largura e a altura do pixel que você deseja que a imagem renderize.
+   * No campo **[!UICONTROL Image Name]**, digite o nome da imagem renderizada.
+   * No campo **[!UICONTROL Export Path]**, insira o caminho onde deseja armazenar a imagem renderizada. Ou toque no ícone **[!UICONTROL Procurar]** e navegue até um local.
    * (Opcional) Marque ou desmarque a caixa de seleção **[!UICONTROL Substituir imagem existente]e**.
 
 1. Próximo ao canto superior direito da página de detalhes do ativo, toque no ícone **[!UICONTROL Seletor de câmera]**. Selecione uma exibição de câmera que você queira aplicar à imagem renderizada.
@@ -89,5 +91,4 @@ As tarefas de conversão, processamento e renderização são enfileiradas no se
 
 1. Toque em **[!UICONTROL Iniciar renderizador]** para iniciar o processo de renderização.
 
-   Uma mensagem é exibida temporariamente para indicar que a renderização foi iniciada. Para sua conveniência, esta mensagem também inclui um link para a pasta de saída selecionada para que você possa navegar até ela diretamente.
-
+   Uma mensagem é exibida temporariamente para indicar que a renderização foi iniciada. Para maior comodidade, essa mensagem também inclui um link para a Pasta de saída selecionada, para que você possa navegar diretamente até ela.
