@@ -2,8 +2,8 @@
 title: Extensão da pesquisa de ativos
 description: Estenda os recursos de pesquisa do AEM Assets além das pesquisas prontas para uso de ativos por strings.
 contentOwner: AG
-feature: 'Pesquisar  '
-role: Desenvolvedor
+feature: Search
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

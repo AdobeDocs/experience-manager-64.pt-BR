@@ -2,8 +2,8 @@
 title: Configure a marcação de ativos usando o Serviço de conteúdo inteligente.
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
-feature: Tags inteligentes,Marcação
-role: Administrador
+feature: Smart Tags,Tagging
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

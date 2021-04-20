@@ -2,8 +2,8 @@
 title: Como editar ou adicionar metadados
 description: Saiba mais sobre metadados de ativos no AEM Assets e de várias maneiras pelas quais você pode editar metadados de ativos.
 contentOwner: AG
-feature: Metadados
-role: Profissional de negócios,Administrador
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

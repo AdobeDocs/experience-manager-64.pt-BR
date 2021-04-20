@@ -2,8 +2,8 @@
 title: Migrar ativos para o Adobe Experience Manager Assets em massa
 description: Como trazer ativos para o AEM, aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
-feature: Migração,Representações,Gerenciamento de Ativos
-role: Arquiteto,Administrador
+feature: Migration,Renditions,Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

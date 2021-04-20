@@ -2,8 +2,8 @@
 title: Fluxo de atividades na linha do tempo
 description: 'Este artigo descreve como exibir registros de atividades para ativos na linha do tempo. '
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Profissional de negócios,Administrador
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Suporte para metadados IPTC
 description: Saiba como o Adobe Experience Manager (AEM) Assets suporta metadados IPTC, classificações criativas e palavras-chave adicionadas a ativos por meio do Adobe Bridge e de outros aplicativos criativos.
 contentOwner: AG
-feature: Metadados
-role: Praticante da empresa,Administrador,Líder
+feature: Metadata
+role: Business Practitioner,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

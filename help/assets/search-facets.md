@@ -2,8 +2,8 @@
 title: Pesquisar aspectos
 description: Este artigo descreve como criar, modificar e usar facetas de pesquisa no AEM.
 contentOwner: AG
-feature: 'Pesquisar  '
-role: Administrador,Desenvolvedor
+feature: Search
+role: Administrator,Developer
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

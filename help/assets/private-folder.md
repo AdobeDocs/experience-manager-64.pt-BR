@@ -2,8 +2,8 @@
 title: Compartilhamento de pasta privada
 description: Saiba como criar uma pasta privada nos Ativos da Adobe Experience Manager (AEM) e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
-feature: Colaboração
-role: Profissional
+feature: Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

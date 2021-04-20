@@ -2,8 +2,8 @@
 title: Considerações sobre a rede de ativos
 description: Discute considerações de rede ao projetar uma implantação do AEM Assets.
 contentOwner: AG
-feature: Ferramentas do desenvolvedor
-role: Arquiteto,Administrador
+feature: Developer Tools
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

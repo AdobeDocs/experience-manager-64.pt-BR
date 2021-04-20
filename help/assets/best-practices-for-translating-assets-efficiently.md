@@ -2,8 +2,8 @@
 title: Práticas recomendadas para a tradução eficiente de ativos
 description: Práticas recomendadas para o gerenciamento eficiente de ativos para sincronizar várias versões traduzidas e simplificar os fluxos de trabalho de tradução.
 contentOwner: AG
-feature: Tradução
-role: Profissional de negócios,Administrador
+feature: Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

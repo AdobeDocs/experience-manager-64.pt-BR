@@ -2,7 +2,7 @@
 title: Manutenção do registro de auditoria no AEM 6
 seo-title: Manutenção do registro de auditoria no AEM 6
 description: Saiba mais sobre a manutenção do log de auditoria no AEM.
-feature: Operações
+feature: Operations
 seo-description: Saiba mais sobre a manutenção do log de auditoria no AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

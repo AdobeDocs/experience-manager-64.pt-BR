@@ -7,8 +7,8 @@ user-guide-title: Guia do usuário de criação da interface clássica do AEM 6.
 breadcrumb-title: Guia de criação da interface clássica
 user-guide-description: Este guia aborda os conceitos de criação no AEM na interface do usuário clássica.
 feature-set: Experience Manager Sites
-feature: 'Criação  '
-role: Profissional
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

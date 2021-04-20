@@ -2,8 +2,8 @@
 title: Classificação aprimorada de ativos no AEM
 description: Saiba como o AEM Assets implanta a classificação do lado do servidor para classificar ativos de pasta ou uma consulta de pesquisa de uma só vez, em vez de classificá-los em lotes no lado do cliente.
 contentOwner: AG
-feature: 'Pesquisar  '
-role: Profissional
+feature: Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

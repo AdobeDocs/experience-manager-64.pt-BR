@@ -2,7 +2,7 @@
 title: Como auditar operações de gerenciamento de usuários no AEM
 seo-title: Como auditar operações de gerenciamento de usuários no AEM
 description: Saiba como auditar Operações de gerenciamento de usuários no AEM.
-feature: Operações
+feature: Operations
 seo-description: Saiba como auditar Operações de gerenciamento de usuários no AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User

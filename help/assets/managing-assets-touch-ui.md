@@ -3,7 +3,7 @@ title: Gerenciar seus ativos digitais usando o AEM Assets
 description: Saiba mais sobre várias tarefas de gerenciamento e edição de ativos que você pode realizar usando a interface otimizada para toque do AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gerenciamento de ativos, Pesquisa, Representações, Colaboração
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

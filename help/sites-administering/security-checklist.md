@@ -2,7 +2,7 @@
 title: Lista de verificação de segurança
 seo-title: Lista de verificação de segurança
 description: Saiba mais sobre as várias considerações de segurança ao configurar e implantar AEM.
-feature: Segurança
+feature: Security
 seo-description: Saiba mais sobre as várias considerações de segurança ao configurar e implantar AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service

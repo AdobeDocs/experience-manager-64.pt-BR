@@ -2,8 +2,8 @@
 title: Pesquisar ativos de vídeo
 description: Use palavras-chave, propriedades de arquivo como tipo Mime, tamanho ou carimbo de data e hora modificado recentemente para localizar rapidamente seu arquivo no AEM Assets.
 contentOwner: AG
-feature: Vídeo, Pesquisar
-role: Profissional
+feature: Video,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Painel de operações
 seo-title: Painel de operações
 description: Saiba como usar o Painel de operações.
-feature: Operações
+feature: Operations
 seo-description: Saiba como usar o Painel de operações.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

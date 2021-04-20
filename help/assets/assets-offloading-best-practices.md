@@ -2,8 +2,8 @@
 title: Práticas recomendadas de descarregamento de ativos
 description: Casos de uso recomendados e práticas recomendadas para descarregar a assimilação de ativos e workflows de replicação no AEM Assets.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Profissional de negócios,Administrador
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

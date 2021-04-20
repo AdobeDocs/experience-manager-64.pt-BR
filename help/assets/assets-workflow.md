@@ -2,8 +2,8 @@
 title: Processar ativos para realizar processos de negócios, realizar auditorias, alcançar conformidade e manter a conformidade básica
 description: Processamento de ativos para converter formatos, criar representações, gerenciar ativos, validar ativos e executar fluxos de trabalho.
 contentOwner: AG
-feature: Fluxo De Trabalho,Representações
-role: Profissional de negócios,Administrador
+feature: Workflow,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

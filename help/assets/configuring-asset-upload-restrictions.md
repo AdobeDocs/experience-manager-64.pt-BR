@@ -2,7 +2,7 @@
 title: Configurar restrições de upload de ativos
 description: Saiba como configurar os ativos Adobe Experience Manager (AEM) para restringir o tipo de ativos (arquivos) que os usuários podem fazer upload.
 contentOwner: AG
-feature: Upload,Assimilação de ativo,Gerenciamento de ativos
+feature: Upload,Asset Ingestion,Asset Management
 role: Administrator,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
 translation-type: tm+mt

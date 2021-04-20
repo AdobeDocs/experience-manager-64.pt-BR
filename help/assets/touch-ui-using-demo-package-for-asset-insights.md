@@ -2,8 +2,8 @@
 title: Uso do pacote de demonstração do Asset Insights
 description: Use o pacote de demonstração para permitir que o Adobe Asset Insights capture dados de e gere insights para uma página da Web.
 contentOwner: AG
-feature: Insights de ativos,Relatórios de ativos
-role: Profissional de negócios,Administrador
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

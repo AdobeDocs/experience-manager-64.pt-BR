@@ -2,8 +2,8 @@
 title: Gerencie ativos compostos e gere subativos.
 description: Saiba como criar referências a ativos AEM a partir de arquivos do InDesign, Adobe Illustrator e Photoshop. Saiba também como usar o recurso Visualizador de página para exibir páginas individuais de arquivos de várias páginas, incluindo arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Profissional de negócios,Administrador
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Seletor de ativos
 description: Saiba como usar o seletor de ativos para pesquisar, filtrar, navegar e buscar metadados para ativos no Adobe Experience Manager (AEM) Assets. Saiba também como personalizar a interface do seletor de ativos.
 contentOwner: AG
-feature: Gerenciamento de ativos, Metadados, Pesquisar
-role: Profissional
+feature: Asset Management,Metadata,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

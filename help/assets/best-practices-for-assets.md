@@ -2,8 +2,8 @@
 title: Práticas recomendadas para gerenciar ativos usando AEM
 description: Identifique e siga as práticas recomendadas que aprimoram a estabilidade e o desempenho do sistema sob carga, dependendo da implantação do AEM Assets e dos recursos usados para assimilar e processar ativos.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Arquiteto,Administrador
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

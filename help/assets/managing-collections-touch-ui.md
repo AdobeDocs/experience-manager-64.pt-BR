@@ -3,8 +3,8 @@ title: Gerenciar coleções de ativos
 description: Saiba mais sobre as tarefas para gerenciar Coleções de ativos, como criar, exibir, excluir, editar e baixar coleções.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Coleções
-role: Profissional
+feature: Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

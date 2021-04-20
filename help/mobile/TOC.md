@@ -6,8 +6,8 @@ user-guide-title: Guia do usuário do AEM 6.4 Mobile
 breadcrumb-title: Guia do Mobile
 user-guide-description: Crie e gerencie conteúdo para aplicativos móveis.
 feature-set: Experience Manager Sites
-feature: Móvel
-role: Profissional
+feature: Mobile
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Lightbox
 description: Saiba mais sobre o Lightbox no AEM Assets.
 contentOwner: AG
-feature: Ferramentas de Desenvolvedor,Representações
-role: Profissional de negócios,Administrador
+feature: Developer Tools,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

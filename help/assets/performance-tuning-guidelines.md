@@ -2,8 +2,8 @@
 title: Guia de ajuste de desempenho de ativos
 description: Áreas-chave de foco sobre AEM configuração, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho do AEM Assets.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Arquiteto,Administrador
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

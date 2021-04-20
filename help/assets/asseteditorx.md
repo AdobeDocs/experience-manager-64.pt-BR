@@ -2,8 +2,8 @@
 title: Estender editor de ativos
 description: Saiba como estender os recursos do Editor de ativos usando componentes personalizados.
 contentOwner: AG
-feature: Ferramentas do desenvolvedor
-role: Profissional de negócios,Administrador
+feature: Developer Tools
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

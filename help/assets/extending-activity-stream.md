@@ -2,8 +2,8 @@
 title: Integração de ativos ao fluxo de atividade
 description: Descreve os recursos de gravação do AEM e como configurar o AEM para gravar eventos específicos.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Desenvolvedor
+feature: Asset Management
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

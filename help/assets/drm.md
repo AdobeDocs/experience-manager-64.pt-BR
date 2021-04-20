@@ -2,8 +2,8 @@
 title: Digital Rights Management em [!DNL Adobe Experience Manager Assets].
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
-feature: DRM,Gerenciamento de ativos
-role: Profissional de negócios,Administrador
+feature: DRM,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

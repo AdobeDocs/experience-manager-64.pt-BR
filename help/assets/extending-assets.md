@@ -2,8 +2,8 @@
 title: Personalização e extensão de ativos
 description: Saiba como personalizar e estender o Compartilhamento de ativos e o Editor de ativos, que apresenta aos usuários uma interface e um conjunto de funcionalidades especificamente personalizados.
 contentOwner: AG
-feature: Ferramentas do desenvolvedor
-role: Desenvolvedor
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Metadados de edição em massa de vários ativos e coleções
 description: Saiba como editar os metadados de muitos ativos e coleções simultaneamente para propagar rapidamente alterações de metadados comuns.
 contentOwner: AG
-feature: Gerenciamento de ativos,Metadados,Coleções
-role: Profissional
+feature: Asset Management,Metadata,Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

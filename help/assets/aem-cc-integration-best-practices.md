@@ -2,7 +2,7 @@
 title: Práticas recomendadas de integração de AEM e Creative Cloud
 description: Práticas recomendadas para integrar uma implantação de AEM com o Adobe Creative Cloud, a fim de simplificar os fluxos de trabalho de transferência de ativos e obter o máximo de eficiência
 contentOwner: AG
-feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Business Practitioner,Administrator
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt

@@ -2,8 +2,8 @@
 title: Práticas recomendadas de monitoramento de ativos
 description: Práticas recomendadas para monitorar o ambiente e o desempenho da instância de AEM após a implantação.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Administrador,Arquiteto
+feature: Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
