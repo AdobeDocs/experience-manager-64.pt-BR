@@ -6,13 +6,12 @@ audience: end-user
 user-guide-title: Guia de implementação do AEM 6.4
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4, incluindo a implantação do Adobe Managed Services na nuvem.
-feature-set: Experience Manager Sites
-feature: Deploying
+feature: Implantação
 role: Architect
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '357'
 ht-degree: 18%
 
 ---
