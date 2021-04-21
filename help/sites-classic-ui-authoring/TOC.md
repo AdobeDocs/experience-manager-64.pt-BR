@@ -9,10 +9,10 @@ user-guide-description: Este guia aborda os conceitos de criação no AEM na int
 feature: 'Criação  '
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 83%
+source-wordcount: '273'
+ht-degree: 80%
 
 ---
 
@@ -82,17 +82,9 @@ ht-degree: 83%
    + [Direcionar seu Adobe Campaign](classic-personalization-ac-target.md)
 + Criação de ativos na interface clássica {#assets}
    + [Trabalhar com ativos](classicui-assets.md)
-   + [Sobre o trabalho com palcos IBL](classicui-stages-aem3d-ibl.md)
-   + [Renderização de ativos 3D](classicui-rendering-3d.md)
-   + [Exibir ativos 3D](classicui-view-3d-assets.md)
    + [Entrega de ativos de Mídia dinâmica](dynamic-media-assets-delivering.md)
-   + [Configuração de um estágio padrão com o Autodesk Maya e o Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Adição de ativos de Mídia dinâmica a páginas](dynamic-media-assets-adding-to-page.md)
    + [Adicionar recursos do Dynamic Media Classic (Scene7) à sua página](manage-assets-classic-s7.md)
    + [Trabalhar com o Dynamic Media](dynamic-media-assets.md)
-   + [Trabalhar com ativos 3D](classicui-3dassets.md)
    + [Vídeo](manage-assets-classic-s7-video.md)
    + [Convenções de nomenclatura para testes de ativos](asset-naming-conventions.md)
-   + [Sobre o upload e o processamento de ativos 3D no AEM](classicui-upload-proc-3d.md)
-   + [Sobre o uso de palcos no AEM 3D](classicui-stages-aem3d.md)
-   + [Resolver dependências de arquivo](classicui-upload-proc-3d-resolve-dependencies.md)
