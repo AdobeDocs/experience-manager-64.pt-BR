@@ -7,10 +7,10 @@ user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 49%
+source-wordcount: '627'
+ht-degree: 47%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 49%
    + [Compartilhamento de pasta privada](private-folder.md)
    + [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
    + [Representações de vídeo](video-renditions.md)
-+ Ativos 3D {#three-d}
-   + [Notas de versão do AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Trabalhar com ativos 3D](assets-3d.md)
-   + [Instalação e configuração do AEM 3D](install-config-3d.md)
-   + [Configurações avançadas](advanced-config-3d.md)
-   + [Trabalhar com ativos da Adobe Dimension](working-dimension-assets.md)
-   + [Sobre o upload e o processamento de ativos 3D no AEM](upload-processing-3d-assets.md)
-   + [Resolver dependências de arquivo](resolve-file-dependencies.md)
-   + [Exibir ativos 3D](viewing-3d-assets.md)
-   + [Renderização de ativos 3D](rendering-3d-assets.md)
-   + [Sobre o uso de palcos no AEM 3D](about-the-use-of-stages-in-aem-3d.md)
-   + [Configuração de um estágio padrão com o Autodesk Maya e o Mental Ray](setting-up-stage-with-ad-mr.md)
-   + [Trabalhar com o componente Sites 3D](using-the-3d-sites-component.md)
-   + [Integração AEM 3D com o Autodesk Maya](integrate-maya-with-3d.md)
-   + [Sobre o trabalho com palcos IBL](working-with-ibl-stages.md)
-   + [Integração AEM 3D com o Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [Configuração de um palco IBL com o Autodesk Maya e o Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
