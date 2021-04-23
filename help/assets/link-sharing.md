@@ -2,16 +2,16 @@
 title: Compartilhar ativos usando um link
 description: Compartilhe ativos, pastas e coleções como um URL.
 contentOwner: AG
-feature: Link Sharing,Asset Management
+feature: Compartilhamento de link,Gerenciamento de ativos
 role: Business Practitioner
+exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 340061de4dc6d99e9d960613202a869ba50ed6a5
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1024'
 ht-degree: 5%
 
 ---
-
 
 # Compartilhar ativo por meio de um link {#asset-link-sharing}
 
@@ -28,26 +28,11 @@ ht-degree: 5%
 Para gerar o URL para ativos que você deseja compartilhar com usuários, use a caixa de diálogo Compartilhamento de links . Os usuários com privilégios de administrador ou com permissões de leitura no local `/var/dam/share` podem visualizar os links compartilhados com eles.
 
 1. Na interface do usuário [!DNL Assets], selecione o ativo a ser compartilhado como um link.
-1. Na barra de ferramentas, clique no ícone **[!UICONTROL Compartilhar link]** ![compartilhar ativos](assets/assets_share.png).
-
-   O link que será criado após clicar em [!UICONTROL Compartilhar] é exibido antecipadamente no campo [!UICONTROL Compartilhar link]. O tempo de expiração padrão do link é de um dia.
+1. Na barra de ferramentas, clique no ícone **[!UICONTROL Compartilhar link]** ![compartilhar ativos](assets/assets_share.png). O link que será criado após clicar em **[!UICONTROL Compartilhar]** é exibido antecipadamente no campo [!UICONTROL Compartilhar link]. O link ainda não foi criado até você clicar em **[!UICONTROL Enviar]**.
 
    ![Caixa de diálogo com o compartilhamento de links](assets/chlimage_1-542.png)
 
    *Figura: A caixa de diálogo para compartilhar ativos como um link.*
-
-   >[!NOTE]
-   >
-   >Se quiser compartilhar links da implantação do [!DNL Experience Manager] Autor em entidades externas, certifique-se de expor apenas os seguintes URLs (que são usados para compartilhamento de link) somente para solicitações `GET`. Bloquear outros URLs por motivos de segurança.
-   >
-   >* `http://[aem_server]:[port]/linkshare.html`
-   >* `http://[aem_server]:[port]/linksharepreview.html`
-   >* `http://[aem_server]:[port]/linkexpired.html`
-
-
-1. Na interface [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-
-1. Abra a configuração do **[!UICONTROL Day CQ Link Externalizer]** e modifique as seguintes propriedades no campo **[!UICONTROL Domains]** com os valores mencionados em `local`, `author` e `publish`. Para as propriedades `local` e `author` , forneça o URL para as instâncias local e autor, respectivamente. As propriedades `local` e `author` têm o mesmo valor se você executar uma única instância do autor [!DNL Experience Manager]. Para Instâncias de publicação, forneça o URL da instância de publicação [!DNL Experience Manager].
 
 1. Na caixa de endereço de email da caixa de diálogo **[!UICONTROL Compartilhamento de links]**, digite a ID de email do usuário com o qual deseja compartilhar o link. Você pode adicionar um ou mais usuários.
 
@@ -62,7 +47,7 @@ Para gerar o URL para ativos que você deseja compartilhar com usuários, use a 
 1. Na caixa **[!UICONTROL Subject]**, insira um assunto para o ativo que deseja compartilhar.
 1. Na caixa **[!UICONTROL Message]**, digite uma mensagem opcional.
 
-1. No campo **[!UICONTROL Expiration]**, especifique uma data e hora de expiração para o link parar de funcionar. Por padrão, a data de expiração é definida para uma semana a partir da data em que você compartilha o link.
+1. No campo **[!UICONTROL Expiration]**, especifique uma data e hora de expiração para o link parar de funcionar. O tempo de expiração padrão do link é de um dia.
 
    ![Definir a data de expiração do link compartilhado](assets/chlimage_1-544.png)
 
@@ -70,11 +55,7 @@ Para gerar o URL para ativos que você deseja compartilhar com usuários, use a 
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários por meio de um email.
 
-1. Para exibir o ativo compartilhado, clique no link do email enviado ao usuário. O ativo compartilhado é exibido na página [!UICONTROL Adobe Marketing Cloud].
-
-   ![Os ativos compartilhados estão disponíveis na Adobe Marketing Cloud](assets/chlimage_1-545.png)
-
-1. Para gerar uma pré-visualização do ativo, clique no ativo compartilhado. Para fechar a visualização e retornar à página **[!UICONTROL Marketing Cloud]**, clique em **[!UICONTROL Voltar]** na barra de ferramentas. Se tiver compartilhado uma pasta, clique em **[!UICONTROL Pasta pai]** para retornar à pasta pai.
+1. Para exibir o ativo compartilhado, clique no link do email enviado ao usuário. Para gerar uma pré-visualização do ativo, clique no ativo compartilhado. Para fechar a visualização, clique em **[!UICONTROL Voltar]**. Se tiver compartilhado uma pasta, clique em **[!UICONTROL Pasta pai]** para retornar à pasta pai.
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
@@ -103,7 +84,7 @@ Para gerar o URL para ativos que você deseja compartilhar com usuários, use a 
 
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
-1. Clique/toque em **[!UICONTROL Salvar]**.
+1. Clique em **[!UICONTROL Salvar]**.
 
 ## Configurar o tamanho máximo dos dados {#configure-maximum-data-size}
 
@@ -124,3 +105,10 @@ Ao baixar ativos do link compartilhado usando o recurso Compartilhamento de link
 * Se não for possível enviar emails com links para ativos compartilhados ou se os outros usuários não puderem receber seu email, verifique com o administrador [!DNL Experience Manager] se o [serviço de email](#configure-day-cq-mail-service) está configurado ou não.
 * Se não for possível compartilhar ativos usando a funcionalidade de compartilhamento de link, verifique se você tem as permissões apropriadas. Consulte [compartilhar ativos](#share-assets).
 * Se um ativo compartilhado for movido para um local diferente, seu link para de funcionar. Recrie o link e compartilhe-o com os usuários.
+
+* Se quiser compartilhar links da implantação do [!DNL Experience Manager] Autor em entidades externas, certifique-se de expor apenas os seguintes URLs usados para compartilhamento de link, somente para solicitações de `GET`. Bloquear outros URLs por motivos de segurança.
+
+   * `http://[aem_server]:[port]/linkshare.html`
+   * `http://[aem_server]:[port]/linksharepreview.html`
+   * `http://[aem_server]:[port]/linkexpired.html`
+   Na interface [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**. Abra a configuração do **[!UICONTROL Day CQ Link Externalizer]** e modifique as seguintes propriedades no campo **[!UICONTROL Domains]** com os valores mencionados em `local`, `author` e `publish`. Para as propriedades `local` e `author`, forneça o URL para as instâncias locais e de Autor, respectivamente. Se você executar uma única instância [!DNL Experience Manager] do Autor, use o mesmo valor para as propriedades `local` e `author`. Para Instâncias de publicação, forneça o URL da instância de publicação [!DNL Experience Manager].
