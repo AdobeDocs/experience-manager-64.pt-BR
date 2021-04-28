@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
-feature: Multi Site Manager
+feature: Gerenciamento de vários sites
+exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1552'
 ht-degree: 1%
 
 ---
-
 
 # Práticas recomendadas do MSM{#msm-best-practices}
 
@@ -67,6 +67,10 @@ Os benefícios adicionais do uso de uma configuração do blueprint são:
 No caso de uma configuração do blueprint não ser referenciada, as implantações só poderão ser iniciadas a partir das próprias cópias ativas, obtendo essencialmente conteúdo da origem.
 
 Ao criar um novo site com live copy, é vantajoso criar configurações de blueprint para garantir a disponibilidade do conjunto completo de recursos do MSM.
+
+>[!NOTE]
+>
+>Os grupos CUG não podem ser distribuídos para Live Copies de Blueprints. Planeje isso ao configurar a Live Copy.
 
 ## Sincronização de componentes e contêineres {#components-and-container-synchronization}
 
@@ -206,4 +210,3 @@ Esta e as seguintes páginas abordam os problemas relacionados:
 * [Console de Visão Geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md)
 * [Configurar a sincronização da Live Copy](/help/sites-administering/msm-sync.md)
 * [Conflitos de implementação do MSM](/help/sites-administering/msm-rollout-conflicts.md)
-
