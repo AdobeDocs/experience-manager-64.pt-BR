@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Configuração
+exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
+source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
-
 
 # Como executar AEM com o TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
@@ -276,7 +275,7 @@ As seguintes configurações OSGi estão disponíveis para o serviço Cold Stand
 
 * **Intervalos de IP permitidos (`primary.allowed-client-ip-ranges`):**  - os intervalos de IP dos quais o principal permitirá conexões.
 * **Seguro (`secure`):** ative a criptografia SSL. Para usar essa configuração, ela deve estar ativada em todas as instâncias.
-* **Tempo limite de leitura em standby (`standby.readtimeout`):** Tempo limite para solicitações emitidas da instância de standby em milissegundos. **A configuração de tempo limite recomendada é 43200000. Geralmente, recomenda-se definir o tempo limite para um valor de pelo menos 12 horas.**
+* **Tempo limite de leitura em standby (`standby.readtimeout`):** Tempo limite para solicitações emitidas da instância de standby em milissegundos. O valor padrão usado é 60000 (um minuto).
 * **Limpeza automática em espera (`standby.autoclean`):** chame o método de limpeza se o tamanho da loja aumentar em um ciclo de sincronização.
 
 >[!NOTE]
@@ -400,4 +399,3 @@ Como alternativa, o repositório principal pode ser copiado para o standby manua
    >[!NOTE]
    >
    >Caso não esteja usando um armazenamento de dados compartilhado, a coleta de lixo terá que ser executada primeiro no primário e depois no standby.
-
