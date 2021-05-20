@@ -3,11 +3,10 @@ title: Gerenciar seus ativos digitais usando o AEM Assets
 description: Saiba mais sobre várias tarefas de gerenciamento e edição de ativos que você pode realizar usando a interface otimizada para toque do AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: Gerenciamento de ativos, Pesquisa, Representações, Colaboração
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 2%
@@ -368,7 +367,7 @@ Algumas limitações do recurso são:
 
 1. No campo **[!UICONTROL Tags]**, selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione **[!UICONTROL Enter]**. A nova tag é salva em AEM.
 
-   O YouTube requer tags para publicar e ter um link para o YouTube (se um link adequado puder ser encontrado).
+   O YouTube requer tags para publicação e um link para o YouTube (se um link adequado puder ser encontrado).
 Para criar tags, você precisa de permissão de gravação para `/content/cq:tags/default` no repositório CRX.
 
 1. Para fornecer uma classificação ao ativo, toque na guia **[!UICONTROL Avançado]** e toque na estrela na posição apropriada para atribuir a classificação desejada.
@@ -385,7 +384,7 @@ Para criar tags, você precisa de permissão de gravação para `/content/cq:tag
    * Canais/dispositivos pelos quais o ativo foi usado.
    * Soluções criativas nas quais o ativo foi usado recentemente.
 
-   Para obter mais detalhes, consulte [Asset Insights](touch-ui-asset-insights.md).
+   Para obter mais detalhes, consulte [Insights do Assets](touch-ui-asset-insights.md).
 
 1. Toque em **[!UICONTROL Salvar e fechar]**.
 1. Navegue até a interface do usuário do Assets. As propriedades de metadados editados, incluindo título, descrição, classificações etc., são exibidas no cartão de ativo na exibição de cartão e em colunas relevantes na exibição de lista.
@@ -710,7 +709,7 @@ Também é possível adicionar mapas de imagem usando o editor de imagens. Para 
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## Use a linha do tempo {#timeline}
+## Usar a linha do tempo {#timeline}
 
 A **[!UICONTROL Linha do tempo]** permite visualizar vários eventos de um item selecionado, como fluxos de trabalho ativos de um ativo, comentários, anotações, logs de atividades e versões.
 
