@@ -1,29 +1,28 @@
 ---
-title: Usar o recurso Asset Insights para rastrear o uso de suas imagens
-description: O recurso Asset Insights permite que você acompanhe as estatísticas de usuário e uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas de classificações do Adobe.
+title: Use o recurso do Assets Insights para rastrear o uso de suas imagens
+description: O recurso do Assets Insights permite que você acompanhe as estatísticas de usuário e uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas de classificações do Adobe.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Insights de ativos,Relatórios de ativos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 8%
+source-wordcount: '794'
+ht-degree: 7%
 
 ---
 
+# Insights do Assets {#asset-insights}
 
-# Informações de ativos {#asset-insights}
+Saiba como o recurso Insights do Assets permite que você acompanhe as classificações de usuários e as estatísticas de uso de ativos usados em sites de terceiros, campanhas de marketing e soluções criativas do Adobe.
 
-Saiba como o recurso Asset Insights permite rastrear as classificações de usuários e as estatísticas de uso de ativos usados em sites de terceiros, campanhas de marketing e soluções criativas do Adobe.
-
-O Asset Insights permite que você acompanhe as estatísticas de classificação e uso de ativos usados em campanhas de marketing de terceiros e nas soluções criativas de recursos do Adobe para obter insights sobre seu desempenho e popularidade.
+O Assets Insights permite que você acompanhe as estatísticas de classificação e uso de ativos usados em campanhas de marketing de terceiros e nas soluções criativas de sites do Adobe para obter insights sobre o desempenho e a popularidade.
 
 O Assets Insights captura detalhes da atividade do usuário, como o número de vezes que um ativo é avaliado, clicado e impressões (número de vezes que o ativo é carregado no site). Ela atribui pontuações a ativos com base nessas estatísticas. Você pode usar as pontuações e as estatísticas de desempenho para selecionar os ativos mais populares para inclusão em catálogos, campanhas de marketing e assim por diante. Você pode até mesmo formular políticas de renovação de arquivos e licenças para ativos com base nessas estatísticas.
 
 Para que o Assets Insights capture as estatísticas de uso de ativos de um site, você deve incluir o código incorporado do ativo no código do site.
 
-Para permitir que o Asset Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatório de [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar Asset Insights](touch-ui-configuring-asset-insights.md).
+Para permitir que o Assets Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatório de [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar o Assets Insights](touch-ui-configuring-asset-insights.md). Para usar esse recurso, compre a licença [!DNL Adobe Analytics] separadamente. Os clientes em [!DNL Managed Services] recebem [!DNL Analytics] licença fornecida com [!DNL Experience Manager]. Consulte [Descrição do produto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Para permitir que o Asset Insights exiba estatísticas de uso de ativos, primeir
 
 ## Exibir estatísticas de um ativo {#viewing-statistics-for-an-asset}
 
-Você pode exibir as pontuações do Asset Insights da página de metadados.
+Você pode exibir as pontuações do Assets Insights da página de metadados.
 
 1. Na interface do usuário do Assets (UI), selecione o ativo e toque/clique no ícone **[!UICONTROL Propriedades]** na barra de ferramentas.
 1. Na página Propriedades, toque/clique na guia **[!UICONTROL Insights]**.
@@ -52,7 +51,7 @@ Você pode exibir as pontuações do Asset Insights da página de metadados.
 
    >[!NOTE]
    >
-   >Como o recurso Asset Insights normalmente busca os dados de Soluções da Adobe Analytics de maneira periódica, a seção Soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende do agendamento da operação de busca executada pelo Asset Insights para recuperar dados do Analytics.
+   >O recurso do Assets Insights busca os dados das soluções de [!DNL Adobe Analytics] de maneira periódica, a seção de soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende do agendamento da operação de busca que o Assets Insights executa para recuperar dados [!DNL Analytics].
 
 1. Para exibir estatísticas de desempenho do ativo graficamente durante um período de tempo, selecione o período na seção **[!UICONTROL Estatísticas de desempenho]**. Detalhes, incluindo cliques e impressões, são exibidos como linhas de tendência de um gráfico.
 
@@ -60,9 +59,9 @@ Você pode exibir as pontuações do Asset Insights da página de metadados.
 
    >[!NOTE]
    >
-   >Ao contrário dos dados na seção Soluções , a seção Estatísticas de desempenho exibe os dados mais recentes.
+   >Ao contrário dos dados na seção soluções , a seção estatísticas de desempenho exibe os dados mais recentes.
 
-1. Para obter o código incorporado do ativo que você inclui nos sites para obter dados de desempenho, toque/clique em **[!UICONTROL Obter código incorporado]** abaixo da miniatura do ativo. Para obter mais informações sobre como incluir o código Incorporado em páginas da Web de terceiros, consulte [Usar o rastreador de páginas e Incorporar código em páginas da Web](touch-ui-using-page-tracker.md).
+1. Para obter o código incorporado do ativo que você inclui nos sites para obter dados de desempenho, clique em **[!UICONTROL Obter código incorporado]** abaixo da miniatura do ativo. Para obter mais informações sobre como incluir o código Incorporado em páginas da Web de terceiros, consulte [Usar o rastreador de páginas e Incorporar código em páginas da Web](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
@@ -76,7 +75,7 @@ Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!
 
 ## Agendar tarefa em segundo plano {#scheduling-background-job}
 
-O Asset Insights busca dados de uso de ativos dos conjuntos de relatórios do Adobe Analytics de maneira periódica. Por padrão, o Asset Insights executa um trabalho em segundo plano a cada 24 horas às 2:00 AM para buscar dados. No entanto, você pode modificar a frequência e o tempo configurando o serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** do console da Web.
+O Assets Insights busca dados de uso de ativos dos conjuntos de relatórios do Adobe Analytics de maneira periódica. Por padrão, o Assets Insights executa um trabalho em segundo plano a cada 24 horas às 2:00 AM para buscar dados. No entanto, você pode modificar a frequência e o tempo configurando o serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** do console da Web.
 
 1. Toque no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
 1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
