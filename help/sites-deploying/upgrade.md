@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Atualização
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 3%
 
 ---
-
 
 # Atualização para AEM 6.4{#upgrading-to-aem}
 
@@ -51,7 +50,7 @@ Veja a seguir as principais mudanças observadas nas últimas versões do AEM:
 
 AEM 6.0 apresentou o novo repositório Jackrabbit Oak. Os Managers de persistência foram substituídos por [Micro Kernels](/help/sites-deploying/recommended-deploys.md). A partir da versão 6.1, o CRX2 não é mais suportado. Uma ferramenta de migração chamada crx2oak precisa ser executada para migrar repositórios CRX2 de instâncias 5.6.1. Para obter mais informações, consulte [Uso da ferramenta de migração CRX2OAK](/help/sites-deploying/using-crx2oak.md).
 
-Se o Asset Insights for usado e você estiver atualizando de uma versão anterior à AEM 6.2, os ativos deverão ser migrados e ter IDs geradas por um Bean JMX. Em nossos testes internos, 125 mil ativos em um ambiente TarMK foram migrados em uma hora, mas seus resultados podem variar.
+Se o Assets Insights for usado e você estiver atualizando de uma versão anterior à AEM 6.2, os ativos deverão ser migrados e ter IDs geradas por meio de um Bean JMX. Em nossos testes internos, 125 mil ativos em um ambiente TarMK foram migrados em uma hora, mas seus resultados podem variar.
 
 O AEM 6.3 introduziu um novo formato para o `SegmentNodeStore`, que é a base da implementação do TarMK. Se estiver atualizando de uma versão anterior à AEM 6.3, isso exigirá uma migração de repositório como parte da atualização, envolvendo tempo de inatividade do sistema.
 
@@ -90,4 +89,3 @@ Havia um grande foco no 6.4 para manter todos os novos recursos compatíveis com
 Finalmente, em seu ciclo de desenvolvimento 6.4, os recursos introduzidos em Atualizações sustentáveis (consulte [Atualizações sustentáveis](/help/sites-deploying/sustainable-upgrades.md)) ajudam a seguir as práticas recomendadas para tornar as atualizações futuras ainda mais eficientes e ininterruptas.
 
 ![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
