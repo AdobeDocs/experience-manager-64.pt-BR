@@ -1,32 +1,31 @@
 ---
-title: Ativar o Asset Insights por meio do DTM
-description: Saiba como usar o Adobe Dynamic Tag Management (DTM) para ativar o Asset Insights.
+title: Ativar insights de ativos por meio do DTM
+description: Saiba como usar o Adobe Dynamic Tag Management (DTM) para ativar o Assets Insights.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Insights de ativos,Relatórios de ativos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
 
+# Ativar o Assets Insights por meio do DTM {#enabling-asset-insights-through-dtm}
 
-# Ativar o Asset Insights por meio do DTM {#enabling-asset-insights-through-dtm}
-
-O Adobe Dynamic Tag Management é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para os clientes da Adobe Analytics. Você pode personalizar o código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights ou usar o DTM para inserir tags do Asset Insights. Os insights são suportados e fornecidos apenas para imagens.
+O Adobe Dynamic Tag Management é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para os clientes da Adobe Analytics. Você pode personalizar o código de rastreamento para permitir que soluções de CMS de terceiros usem o Assets Insights ou usar o DTM para inserir tags do Assets Insights. Os insights são suportados e fornecidos apenas para imagens.
 
 >[!CAUTION]
 >
 >O Adobe DTM está obsoleto em favor do Adobe Experience Platform Launch e logo chegará ao [fim da vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). O Adobe recomenda que você [use o Launch para insights de ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-Execute estas etapas para ativar o Asset Insights por meio do DTM:
+Execute as etapas a seguir para ativar o Assets Insights por meio do DTM:
 
 1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Ativos > Configuração do Insights]**.
 1. [Configurar AEM instância com o Cloud Service do DTM](../sites-administering/dtm.md)
 
-   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar **[!UICONTROL Configurações da conta]** no ícone Perfil . Essa etapa não é necessária do ponto de vista do Asset Insights, pois a integração do AEM Sites com o Asset Insights ainda está em andamento.
+   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar **[!UICONTROL Configurações da conta]** no ícone Perfil . Essa etapa não é necessária do ponto de vista do Assets Insights, pois a integração do AEM Sites com o Assets Insights ainda está em andamento.
 
 1. Faça logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e selecione uma Empresa, conforme apropriado.
 1. Criar/abrir uma propriedade da Web existente
@@ -51,7 +50,7 @@ Execute estas etapas para ativar o Asset Insights por meio do DTM:
    >
    >* `AppMeasurement.js` foi removida. Ela deve estar disponível por meio da ferramenta Adobe Analytics do DTM.
    >* A chamada para `assetAnalytics.dispatcher.init()` é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar o carregamento.
-   >* Dependendo de onde o Rastreador de página do Asset Insights está hospedado (por exemplo, AEM, CDN e assim por diante), a origem da origem do script pode exigir alterações.
+   >* Dependendo de onde o Rastreador de página do Assets Insights está hospedado (por exemplo, AEM, CDN e assim por diante), a origem da origem do script pode exigir alterações.
    >* Para o Rastreador de página hospedado AEM, a origem deve apontar para uma instância de publicação usando o nome do host da instância do dispatcher.
 
 
