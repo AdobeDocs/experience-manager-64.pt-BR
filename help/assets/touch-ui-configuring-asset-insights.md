@@ -1,21 +1,20 @@
 ---
-title: Configuração do Asset Insights
-description: Saiba como configurar o Asset Insights no AEM Assets.
+title: Configuração do Assets Insights
+description: Saiba como configurar o Assets Insights no AEM Assets.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Insights de ativos,Relatórios de ativos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '241'
 ht-degree: 10%
 
 ---
 
+# Configuração do Assets Insights {#configuring-asset-insights}
 
-# Configuração do Asset Insights {#configuring-asset-insights}
-
-O Adobe Experience Manager (AEM) Assets busca dados de uso AEM ativos usados por sites de terceiros do Adobe Analytics. Para permitir que o Asset Insights recupere esses dados e gere insights, primeiro configure o recurso para se integrar ao Adobe Analytics.
+O Adobe Experience Manager (AEM) Assets busca dados de uso AEM ativos usados por sites de terceiros do Adobe Analytics. Para permitir que o Assets Insights recupere esses dados e gere insights, primeiro configure o recurso para se integrar ao Adobe Analytics.
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ O Adobe Experience Manager (AEM) Assets busca dados de uso AEM ativos usados por
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Clique/toque em **[!UICONTROL Autenticar]**.
-1. Depois de AEM autenticar suas credenciais, na lista **[!UICONTROL Report Suite]**, escolha um conjunto de relatórios do Adobe Analytics no qual deseja que o Asset Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
+1. Depois AEM autenticar suas credenciais, na lista do **[!UICONTROL Report Suite]**, escolha um conjunto de relatórios do Adobe Analytics no qual deseja que o Assets Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
 1. Depois de AEM configurar seu conjunto de relatórios, clique/toque em **[!UICONTROL Concluído]**.
 
 ## Rastreador de página {#page-tracker}
