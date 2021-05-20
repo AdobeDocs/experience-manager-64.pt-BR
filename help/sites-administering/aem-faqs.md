@@ -1,19 +1,18 @@
 ---
-title: AEM perguntas frequentes
+title: Perguntas frequentes sobre AEM
 seo-title: AEM 6.4 perguntas frequentes
-description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas de workflows ou problemas comuns em AEM.
-seo-description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas de workflows ou problemas comuns em AEM.
+description: Use essas perguntas frequentes para entender, configurar e solucionar problemas comuns de fluxos de trabalho ou problemas no AEM.
+seo-description: Use essas perguntas frequentes para entender, configurar e solucionar problemas comuns de fluxos de trabalho ou problemas no AEM.
 uuid: af197bcc-2c61-4c64-b781-f24d83c27c82
 contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
-translation-type: tm+mt
-source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
+exl-id: 76110cf4-0fd8-4203-b256-c0818a1b64d2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 0%
 
 ---
-
 
 # AEM perguntas frequentes{#aem-faqs}
 
@@ -21,22 +20,22 @@ Siga esta página para obter respostas para alguns problemas AEM de solução de
 
 ## Sites {#sites}
 
-### Como configurar a distribuição sem binários? {#how-do-i-configure-binary-less-distribution}
+### Como configurar a distribuição sem código binário? {#how-do-i-configure-binary-less-distribution}
 
-A distribuição sem binários é suportada para implantações em um armazenamento de dados compartilhado e envolve agentes que aproveitam o exportador de pacotes de Distribuição baseado em Cofre (PID de fábrica: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) do construtor de pacotes.
+A distribuição sem binários é compatível com implantações em um armazenamento de dados compartilhado e envolve agentes que aproveitam o exportador de pacotes de distribuição baseado em Vault (PID de fábrica: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) construtor de pacotes.
 
-Com o modo sem binários ativado, os pacotes de conteúdo distribuídos contêm referências a binários em vez dos binários reais.
+Com o modo sem binário ativado, os pacotes de conteúdo distribuídos contêm referências a binários em vez dos binários reais.
 
-### Como ativar a distribuição sem binários? {#how-do-i-enable-binary-less-distribution}
+### Como ativar a distribuição sem código binário? {#how-do-i-enable-binary-less-distribution}
 
-Para ativar a distribuição sem binários, implante com um armazenamento de blob compartilhado.\
-Verifique a propriedade `useBinaryReferences` na configuração do OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
+Para ativar a distribuição sem binário, implante com um repositório de blobs compartilhado.\
+Verifique a propriedade `useBinaryReferences` na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
 
-### Como posso personalizar as mensagens de erro ao navegar pela hierarquia de páginas no console de sites AEM? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
+### Como posso personalizar as mensagens de erro ao navegar pela hierarquia de página AEM console de sites? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
-Verifique o painel Rede (do navegador Chrome) onde uma configuração pessoal (JS não foi minimizada).
+Verifique o painel Rede (do navegador Chrome), onde uma configuração pessoal (JS não foi minimizado).
 
-Visualização a coluna `Initiator` para determinar qual foi o iniciador de uma solicitação. Fornece os arquivos e os números de linha de onde as chamadas de AJAX são feitas. Posteriormente, você pode rastrear a função de tratamento de erros e alterar a mensagem de erro de acordo com suas necessidades.
+Visualize a coluna `Initiator` para determinar o que foi o iniciador de uma solicitação. Ele fornece os arquivos e os números de linha de onde as chamadas de AJAX são feitas. Posteriormente, é possível rastrear a função de tratamento de erros e alterar a mensagem de erro de acordo com seu requisito.
 
 ### Como ativar permissões ao criar uma Cópia de idioma para autores de conteúdo no AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
@@ -49,123 +48,123 @@ Se for necessário que os autores gerenciem projetos também, a solução altern
 Crie uma raiz de idioma e uma cópia de idioma dentro da raiz, antes de criar um projeto de tradução.
 
 Por exemplo,\
-Crie uma raiz de idioma em `/content/geometrixx` com o nome `fr_LU` (e o título como francês (Luxemburgo)). Subsequentemente, crie uma cópia de idioma da página no painel de referências e navegue até a opção `Create structure only` em `Create & Translate`. Finalmente, crie um projeto de tradução e adicione a cópia de idioma ao trabalho de tradução.
+Crie uma raiz de idioma em `/content/geometrixx` com o nome `fr_LU` (e o título como francês (Luxemburgo)). Posteriormente, crie uma cópia de idioma da página no painel de referências e navegue até a opção `Create structure only` em `Create & Translate`. Por fim, crie um projeto de tradução e adicione a cópia de idioma ao trabalho de tradução.
 
 Para obter detalhes, consulte os recursos adicionais abaixo:
 
-* [Preparação de conteúdo para tradução](/help/sites-administering/tc-prep.md)
+* [Preparação do conteúdo para tradução](/help/sites-administering/tc-prep.md)
 * [Gerenciamento de projetos de tradução](/help/sites-administering/tc-manage.md)
 
-### Como auditar recursos AEM como tentativas de login e ACL ou alterações de permissão? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
+### Como auditar AEM recursos como, tentativas de logon e alterações de ACL ou permissão? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM introduziu a capacidade de registrar alterações administrativas para obter uma melhor solução de problemas e auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado.\
+AEM introduziu a capacidade de registrar alterações administrativas para obter uma melhor solução de problemas e auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que ele seja redirecionado para um arquivo de log separado.\
 Para redirecionar a saída para um arquivo de log separado, consulte [Como auditar operações de gerenciamento de usuários em AEM](/help/sites-administering/audit-user-management-operations.md).
 
-### Como ativar o SSL por padrão? {#how-to-enable-ssl-by-default}
+### Como habilitar o SSL por padrão? {#how-to-enable-ssl-by-default}
 
-A Adobe Experience Manager (AEM) 6.4 é fornecida com o assistente SSL e oferta uma interface de usuário para configurar o suporte a Jetty e Granite Jetty SSL.
+O Adobe Experience Manager (AEM) 6.4 é fornecido com o assistente SSL e oferece uma interface de usuário para configurar o suporte a Jetty e Granite Jetty SSL.
 
 Para ativar o SSL por padrão, consulte [SSL por padrão](/help/sites-administering/ssl-by-default.md).
 
-### Qual é a arquitetura recomendada ao usar o Content Services da AEM em um aplicativo móvel, idealmente Reagir nativo? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+### Qual é a arquitetura recomendada ao usar os Serviços de conteúdo da AEM de um aplicativo móvel, idealmente React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
-Os Serviços de conteúdo são baseados nos Modelos Sling e os desenvolvedores AEM devem fornecer um pojo Sling Model para cada componente exportado.
+Os Serviços de conteúdo são baseados nos Modelos do Sling e os desenvolvedores de AEM devem fornecer um trabalho de Modelo do Sling para cada componente que é exportado.
 
-Para entender como consumir AEM serviços de conteúdo de um aplicativo React, consulte o tutorial [Introdução ao AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Para entender como consumir AEM serviços de conteúdo de um aplicativo React, consulte o tutorial [Introdução aos AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) .
 
-Além disso, se os desenvolvedores quiserem exportar uma árvore de componentes, eles também poderão implementar as interfaces `ComponentExporter` e `ContainerExporter`, bem como usar o `ModelFactory` para repetir os componentes filhos e retornar sua representação de modelo. Consulte os recursos abaixo:
+Além disso, se os desenvolvedores quiserem exportar uma árvore de componentes, também poderão implementar as interfaces `ComponentExporter` e `ContainerExporter`, bem como usar `ModelFactory` para iterar os componentes filhos e retornar sua representação de modelo. Consulte os recursos abaixo:
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling : Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling: Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
 
-### Como desativar AEM pop-up de pesquisa 6.4? {#how-to-disable-aem-survey-pop-up}
+### Como desativar o pop-up de pesquisa do AEM 6.4? {#how-to-disable-aem-survey-pop-up}
 
-Você pode optar pela coleta de estatísticas de uso usando a interface de usuário de toque ou o console da Web. Para obter instruções detalhadas, consulte [Optar pela coleta de estatísticas de uso agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Você pode aderir à coleção de estatísticas de uso usando a interface do usuário de toque ou o console da Web. Para obter instruções detalhadas, consulte [Aceitação na coleta de estatísticas de uso agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
-### Há um bom recurso que destaca os principais recursos para atualizar para o AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
+### Existe um bom recurso que destaca os principais recursos para atualizar para o AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Consulte [Entendendo os motivos para a atualização AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) que descrevem o detalhamento de alto nível dos principais recursos para clientes que consideram atualizar para a versão mais recente do Adobe Experience Manager.
+Consulte [Entendendo os motivos para atualizar o AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) que descreve o detalhamento de alto nível dos principais recursos para clientes que consideram atualizar para a versão mais recente do Adobe Experience Manager.
 
 ### Como configurar uma instância AEM para usar o filtro PorterStem? {#how-to-configure-an-aem-instance-to-use-the-porterstem-filter}
 
-O filtro PorterStem aplica o Porter Stemming Algorithm para inglês. Os resultados são semelhantes ao uso do Snowball Porter Stemmer com o argumento *language=&quot;English&quot;*. Mas esse mecanismo é codificado diretamente em Java e não se baseia em Snowball. Ele não aceita uma lista de palavras protegidas e é apropriado apenas para o texto em inglês.
+O filtro PorterStem aplica o Algoritmo de Emissão de Porter para inglês. Os resultados são semelhantes ao uso do Snowball Porter Stemmer com o argumento *language=&quot;English&quot;*. Mas esse provedor é codificado diretamente em Java e não se baseia no Snowball. Não aceita uma lista de palavras protegidas e só é adequada para o texto em inglês.
 
-O Oak expõe um conjunto de elementos de configuração do analisador que fornecem luceno para uso em AEM. Para saber como usar filtros, consulte **Analisadores de Oak do Apache** em [Guia de implementação de pesquisa simples](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
+O Oak expõe um conjunto de elementos de configuração do lucene-fornece o analisador para uso no AEM. Para saber como usar filtros, consulte **Apache Oak Analyzers** em [Guia de implementação de pesquisa simples](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
 
 ### Como executar uma reindexação completa? {#how-to-perform-a-full-re-indexing}
 
-A reindexação deve ser sempre abordada com a devida consideração sobre o seu impacto no desempenho AEM geral e executada durante períodos de baixas atividades ou janelas de manutenção.
+A reindexação deve ser sempre abordada com a devida consideração sobre o seu impacto no desempenho AEM geral e executada durante períodos de baixa atividade ou janelas de manutenção.
 
-Consulte [Práticas recomendadas para Query e Indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md) para entender os motivos para a reindexação.
+Consulte as [Práticas recomendadas para consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md) para entender os motivos para reindexação.
 
-### Suportamos libs de JS minified no Importador de design? {#do-we-support-minified-js-libs-in-design-importer}
+### Oferecemos suporte a libs JS minificadas no Importador de design? {#do-we-support-minified-js-libs-in-design-importer}
 
-É necessário alterar a propriedade de configuração padrão do processador JS do Gerenciador de biblioteca HTML de Adobe Granite para ***min:gcc***. Para importar o Pacote de design com êxito, é recomendável incluir bibliotecas de terceiros pré-minimizadas nas Bibliotecas do lado do cliente.
+Você precisa alterar a propriedade de configurações padrão do processador JS do Gerenciador de biblioteca HTML do Adobe Granite para ***min:gcc***. Para importar o pacote de design com sucesso, é recomendável incluir bibliotecas de terceiros pré-minificadas em nossas bibliotecas do lado do cliente.
 
-## Assets {#assets}
+## Ativos {#assets}
 
 ### Por que o fluxo de trabalho de Ativos se repete ao fazer upload de arquivos MP4 (por exemplo, usando o método arrastar e soltar)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
-Se o usuário fizer upload dos arquivos de filme não tiver permissões de exclusão no nó do ativo, os nós de exclusão de bloco falharão e o upload será reiniciado.
+Se o usuário fizer upload dos arquivos de filme não tiver permissões de exclusão no nó do ativo, os nós de exclusão de segmento falharão e o upload será reiniciado.
 
 ### Qual é o número máximo de ativos digitais que podem ser operados com AEM 6.4 de cada vez? {#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
 
-No momento, o Adobe Experience Manager (AEM) 6.4 permite fazer upload de até 2 GB de ativos por vez.
+O Adobe Experience Manager (AEM) 6.4 atualmente permite fazer upload de até 2 GB de ativos de cada vez.
 
-Para obter informações adicionais sobre o número máximo de ativos que podem ser operados com AEM 6.4, consulte [Guia de dimensionamento de ativos](/help/assets/assets-sizing-guide.md).
+Para obter informações adicionais sobre o número máximo de ativos que podem ser operados com o AEM 6.4, consulte [Guia de dimensionamento de ativos](/help/assets/assets-sizing-guide.md).
 
-### Quais são as configurações padrão para configurações OOTB ao criar a Cópia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+### Quais são as configurações padrão para configurações OTB ao criar a Cópia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Ao criar cópias de idioma por meio da interface clássica, os ativos não são movidos para a hierarquia do novo idioma, mas sim para o idioma principal.
+Ao criar cópias de idioma por meio da interface clássica, os Ativos não são movidos para a hierarquia de novos idiomas, mas usados a partir do idioma principal.
 
-Enquanto que, ao criar uma cópia de idioma por meio da interface de usuário de toque (**Referências** -> **Atualizar cópia de idioma**), uma nova pasta DAM é criada no novo idioma e os ativos são referenciados a partir daí.
+Enquanto que, ao criar uma cópia de idioma por meio da interface de toque (**Referências** -> **Atualizar cópia de idioma**), uma nova pasta DAM é criada no novo idioma e os ativos são referenciados a partir daí.
 
-Esta é a configuração padrão para configurações OOTB. Você pode definir **Traduzir ativos de página** = **Não traduzir** nas configurações de Tradução.\
-Para AEM 6.4, **Ferramentas** > **Cloud Services** > **Serviços da Translation Cloud**.
+Essa é a configuração padrão para configurações OTB. Você pode definir **Traduzir ativos da página** = **Não traduzir** nas configurações de Tradução.\
+Para AEM 6.4, **Ferramentas** > **Cloud Services** > **Serviços da Nuvem de Tradução**.
 
-### Como desativar um componente AEM causando crescimento exponencial para o AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
+### Como desabilitar um componente de AEM que causa crescimento exponencial para o AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
-Você pode desativar o OSGi Component Disabler. Para usar esse serviço, consulte [Desabilitador de Componentes OSGi](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
+Você pode desativar o Desativador do Componente OSGi. Para usar este serviço, consulte [Desabilitador de Componente OSGi](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
 
 Como solução alternativa, você também pode desativar manualmente o componente por meio da interface do usuário ou por meio de um comando `curl` (exemplo abaixo), após cada reinicialização AEM.
 
 `curl -u admin:$(pass CQ_Admin) 'http://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
 
-### Como configurar o Asset Insights com a instância AEM 6.4? {#how-to-configure-asset-insights-with-aem-instance}
+### Como configurar o Assets Insights com a instância AEM 6.4? {#how-to-configure-asset-insights-with-aem-instance}
 
-Para configurar e configurar o Asset Insights para o Experience Manager implantado via Adobe Ativação (DTM), consulte [Configurar o Asset Insights com o AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+Para configurar e configurar o Assets Insights para o Experience Manager implantado via Adobe Ativation (DTM), consulte [Configurar o Assets Insights com o AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
 
 ### Como personalizar consoles de administração? {#how-to-customize-admin-consoles}
 
-AEM fornece vários mecanismos para permitir que você personalize os consoles e a funcionalidade de criação de página da sua instância de criação.
-Para saber como criar um console personalizado e personalizar uma visualização padrão para um console, consulte [Personalizar os consoles](/help/sites-developing/customizing-consoles-touch.md).
+O AEM fornece vários mecanismos para permitir a personalização dos consoles e a funcionalidade de criação de página da sua instância de criação.
+Para saber como criar um console personalizado e personalizar uma visualização padrão para um console, consulte [Personalização dos Consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 ### Qual é a diferença entre os componentes baseados em CoralUI 2 e CoralUI 3? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Um novo conjunto de componentes Sling da Granite UI Foundation é criado para Coral3 e está localizado em [/libs/granite/ui/components/coral/Foundation.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Há um conjunto para componentes baseados em CoralUI 2 e um conjunto para componentes baseados em CoralUI 3. O novo conjunto não será apenas uma cópia colada do conjunto antigo, mas será limpo (por exemplo, simplificação, remoção de recurso obsoleto). Portanto, recomenda-se que uma página use somente o conjunto baseado em CoralUI 3 ou CoralUI 2.
+Um novo conjunto de componentes Sling da Fundação de interface do usuário do Granite é criado para o Coral3 e está localizado em [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Há um conjunto para componentes baseados em CoralUI 2 e um conjunto para componentes baseados em CoralUI 3. O novo conjunto não será apenas uma cópia e uma colagem do conjunto antigo, mas será limpo (por exemplo, simplificação, remoção de recurso obsoleto). Portanto, é recomendável que uma página use somente o conjunto com base em CoralUI 3 ou CoralUI 2.
 
-Para saber mais detalhadamente, consulte [Guia de Migração do CoralUI 3-based](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Para saber mais detalhes, consulte o [Guia de migração para CoralUI baseado em 3](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 ### Como personalizar o componente de pesquisa no AEM Assets? {#how-to-customize-the-search-component-in-aem-assets}
 
-Para saber mais sobre informações sobre otimização/classificação de pesquisa e implementação adicional, consulte [Guia de implementação de pesquisa simples.](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)
+Para saber mais sobre informações de reforço/classificação de pesquisa e implementação adicional, consulte [Guia de implementação de pesquisa simples.](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)
 
-A implementação de pesquisa Simples são os materiais do laboratório Summit 2017 AEM Pesquisa Desmistificada.
+A implementação Simple search são os materiais do laboratório 2017 Summit AEM Search Demystified.
 
-### Se um cliente comprar somente a licença do Sites no AEM, ele ainda terá acesso aos Ativos? {#if-a-customer-buys-only-sites-license-in-aem-do-they-still-have-access-to-assets}
+### Se um cliente comprar apenas a licença do Sites no AEM, ele ainda terá acesso ao Assets? {#if-a-customer-buys-only-sites-license-in-aem-do-they-still-have-access-to-assets}
 
-Não, o cliente não pode acessar os Ativos (ou qualquer outra coisa além dos Sites). Mesmo que todos os componentes da Adobe Experience Manager (AEM) no local estejam incluídos no JAR, o cliente é autorizado a acessar apenas os componentes no JAR para os quais eles estão licenciados em seus contratos. Se quiserem explorar outros componentes, eles poderão usar o programa de avaliação AEM por até 45 dias ou assinar uma Ordem de Venda de US$ 0 que os autorize a avaliar (sem uso de produção) componentes nomeados, como o Assets.
+Não, o cliente não pode acessar Ativos (ou qualquer outra coisa diferente de Sites). Embora todos os Adobe Experience Manager (AEM) no local estejam incluídos no JAR, o cliente está autorizado a acessar apenas os componentes no JAR para os quais está licenciado em seu contrato. Se quiser explorar outros componentes, eles poderão usar o programa de avaliação de AEM por até 45 dias ou assinar uma Ordem de vendas de US$ 0 que os autoriza a avaliar (nenhum uso de produção) componentes nomeados, como Ativos.
 
-Consulte os seguintes recursos para saber mais sobre AEM software local e serviços gerenciados da Adobe:
+Consulte os seguintes recursos para saber mais sobre AEM software no local e Adobe Managed Services:
 
-* [Software local Adobe Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+* [Software no local da Adobe Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
 
 * [Adobe Experience Manager Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 
 ### Como um cliente pode estender as propriedades padrão de uma página ou de um ativo? {#how-to-extend-default-properties-page-or-asset}
 
-Para saber mais sobre como estender as propriedades padrão de uma página ou de um ativo, consulte os recursos abaixo:
+Para saber mais sobre a extensão das propriedades padrão de uma página ou ativo, consulte os recursos abaixo:
 
-* [Schemas de metadados em ativos](/help/assets/metadata-schemas.md)
-* [Personalização de Visualizações de propriedades da página](/help/sites-developing/page-properties-views.md)
+* [Esquemas de metadados em ativos](/help/assets/metadata-schemas.md)
+* [Personalização de exibições das propriedades da página](/help/sites-developing/page-properties-views.md)
