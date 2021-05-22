@@ -2,13 +2,12 @@
 title: Práticas recomendadas de integração de AEM e Creative Cloud
 description: Práticas recomendadas para integrar uma implantação de AEM com o Adobe Creative Cloud, a fim de simplificar os fluxos de trabalho de transferência de ativos e obter o máximo de eficiência
 contentOwner: AG
-feature: Collaboration,Adobe Asset Link,Desktop App
+feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
 role: Business Practitioner,Administrator
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-translation-type: tm+mt
-source-git-commit: 257355371068cdb47f75a0a17ea4831e10dc6a69
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '3578'
+source-wordcount: '3576'
 ht-degree: 16%
 
 ---
@@ -151,7 +150,7 @@ Para projetar um fluxo de trabalho eficiente entre equipes de criação e de mar
 
 Armazenar ativos no DAM os torna facilmente acessíveis e acessíveis. Ela garante que os ativos possam ser aproveitados por vários usuários na organização ou no ecossistema, o que inclui parceiros, clientes e assim por diante.
 
-A maioria das organizações opta por armazenar apenas ativos relevantes para os processos de marketing/LOB de downstream (publicação em canais como canal da Web pelo AEM Sites ou outros canais fornecidos pelo Adobe Experience Cloud - Marketing Cloud, Advertising Cloud e medidos pelo Analytics Cloud, fornecendo a usuários/parceiros e assim por diante). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem aproveitados e evita o armazenamento de ativos inativos.
+A maioria das organizações opta por armazenar apenas ativos relevantes para os processos de marketing/LOB de downstream (publicação em canais como canal da Web pelo AEM Sites ou outros canais fornecidos pelo Adobe Experience Cloud, Advertising Cloud e medidos pelo Analytics Cloud, fornecendo a usuários/parceiros e assim por diante). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem aproveitados e evita o armazenamento de ativos inativos.
 
 O armazenamento de ativos também está sujeito a considerações técnicas e de utilização de recursos. O DAM fornece serviços adicionais sobre ativos armazenados, incluindo extração de metadados, controle de versão, geração de visualizações/transcodificação, gerenciamento de referências e adição de informações de controle de acesso. Esses serviços consomem mais tempo e recursos de infraestrutura.
 
@@ -202,9 +201,9 @@ Nesses casos, você pode aproveitar a integração AEM/Creative Cloud para melho
 
 Use as seguintes estratégias para fornecer acesso a ativos finais/aprovados:
 
-* Para fornecer acesso a um grande número de ativos: Use [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) ou a implementação do cliente de [Compartilhamento de ativos](assets-finder-editor.md) em AEM infraestrutura de publicação
+* Para fornecer acesso a um grande número de ativos: Use [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) ou a implementação do cliente de [Compartilhamento de Ativos](assets-finder-editor.md) na infraestrutura de publicação AEM
 
-* Para fornecer acesso a alguns ativos: AEM compartilhamento de pastas com o Adobe Creative Cloud pode ser usado além do AEM Assets Brand Portal ou do Asset Share. Observe que há certas limitações relacionadas a essa integração, abordadas com mais detalhes neste artigo.
+* Para fornecer acesso a alguns ativos: AEM compartilhamento de pastas com a Adobe Creative Cloud pode ser usado além da AEM Assets Brand Portal ou do Compartilhamento de ativos. Observe que há certas limitações relacionadas a essa integração, abordadas com mais detalhes neste artigo.
 
 ### Casos de uso {#use-cases}
 
