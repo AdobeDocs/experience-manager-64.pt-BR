@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Insights de ativos,Relatórios de ativos
 role: Business Practitioner,Administrator
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '798'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ O Assets Insights captura detalhes da atividade do usuário, como o número de v
 
 Para que o Assets Insights capture as estatísticas de uso de ativos de um site, você deve incluir o código incorporado do ativo no código do site.
 
-Para permitir que o Assets Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatório de [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar o Assets Insights](touch-ui-configuring-asset-insights.md). Para usar esse recurso, compre a licença [!DNL Adobe Analytics] separadamente. Os clientes em [!DNL Managed Services] recebem [!DNL Analytics] licença fornecida com [!DNL Experience Manager]. Consulte [Descrição do produto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Para permitir que o Assets Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatório de [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar o Assets Insights](touch-ui-configuring-asset-insights.md). Para usar esse recurso em uma instalação local, compre a licença [!DNL Adobe Analytics] separadamente. Os clientes em [!DNL Managed Services] recebem [!DNL Analytics] licença fornecida com [!DNL Experience Manager]. Consulte [Descrição do produto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
