@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuração,Modo Scene7
 role: Administrator,Business Practitioner,Developer
-source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
+source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
 workflow-type: tm+mt
 source-wordcount: '5596'
 ht-degree: 3%
@@ -33,11 +33,11 @@ Com a nova arquitetura, o Experience Manager é responsável por ativos e sincro
 
 ## Ativação do Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[As mídias dinâmicas são desativadas por padrão. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aproveitar os recursos de mídia dinâmica, você deve habilitá-los.
+[As mídias dinâmicas são desativadas por padrão. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aproveitar os recursos do Dynamic Media, você deve habilitá-lo.
 
->[!NOTE]
+>[!WARNING]
 >
->Dynamic Media - O modo Scene7 é somente para a instância do autor do Experience Manager. Dessa forma, você deve configurar `runmode=dynamicmedia_scene7`na instância Experience Manager Author, não na instância Experience Manager Publish.
+>Dynamic Media - O modo Scene7 é somente para a instância *Experience Manager Author somente*. Dessa forma, você deve configurar `runmode=dynamicmedia_scene7`na instância Experience Manager Author, *not* na instância Experience Manager Publish.
 
 Para habilitar o Dynamic Media, você deve inicializar o Experience Manager usando o modo de execução `dynamicmedia_scene7` da linha de comando inserindo o seguinte em uma janela de terminal (a porta de exemplo usada é 4502):
 
@@ -77,7 +77,7 @@ Altere a senha antes de configurar o Dynamic Media Cloud Services. Depois de rec
 
 **Para configurar o Dynamic Media Cloud Services:**
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque no ícone Ferramentas e, em seguida, toque em **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
+1. Na instância Autor do Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque no ícone Ferramentas e, em seguida, toque em **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, toque em **[!UICONTROL global]** e em **[!UICONTROL Criar]**. Não toque ou selecione o ícone de pasta à esquerda de [!UICONTROL global].
 1. Na página [!UICONTROL Criar configuração do Dynamic Media], insira um título, o endereço de email da conta do Dynamic Media e a senha. Selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Atendimento ao cliente do Adobe se não tiver recebido o email.
 
@@ -266,7 +266,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 1. Digite `DWG=image/vnd.dwg` no campo de texto vazio que acabou de adicionar.
 
-   O exemplo `DWG=image/vnd.dwg` é somente para fins ilustrativos. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
+   O exemplo `DWG=image/vnd.dwg` é somente para fins de demonstração. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
 
    ![Exemplo de adição de tipo MIME](assets/2019-08-02_16-36-36.png)
 
@@ -306,7 +306,7 @@ Ao carregar arquivos, o Dynamic Media cria automaticamente um conjunto com todos
 
 **Configuração da nomenclatura padrão**
 
-Crie uma convenção de nomenclatura padrão que seja usada em qualquer fórmula predefinida de conjunto de lotes. A convenção de nomenclatura padrão selecionada na definição predefinida do conjunto de lotes provavelmente é tudo que sua empresa precisa para gerar conjuntos em lote. Uma predefinição de conjunto de lotes é criada para usar a convenção de nomenclatura padrão que você define. Você pode criar quantas predefinições do Conjunto de Lotes tiverem as convenções de nomenclatura alternativas e personalizadas necessárias para um conjunto específico de conteúdo, em casos em que há uma exceção na nomenclatura padrão definida pela empresa.
+Crie uma convenção de nomenclatura padrão que seja usada em qualquer fórmula predefinida de conjunto de lotes. A convenção de nomenclatura padrão selecionada na definição predefinida do conjunto de lotes provavelmente é tudo que sua empresa precisa para gerar conjuntos de lotes. Uma predefinição de conjunto de lotes é criada para usar a convenção de nomenclatura padrão que você define. Você pode criar quantas predefinições do Conjunto de Lotes tiverem as convenções de nomenclatura alternativas e personalizadas necessárias para um conjunto específico de conteúdo, em casos em que há uma exceção na nomenclatura padrão definida pela empresa.
 
 Embora a configuração de uma convenção de nomenclatura padrão não seja necessária para usar a funcionalidade predefinida do conjunto de lotes, você pode usá-la para definir quantos elementos da convenção de nomenclatura você deseja agrupar em um conjunto. Isso ajuda a simplificar a criação de conjuntos em lotes.
 
@@ -444,7 +444,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativa o nome da f
 
    `\w+-\w+-C(\d+)`
 
-   Lembre-se de que essas expressões são exemplos somente para fins de ilustração. Você pode criar sua expressão regular da maneira que quiser, de acordo com suas necessidades.
+   Lembre-se de que essas expressões são exemplos somente para fins de demonstração. Você pode criar sua expressão regular da maneira que quiser, de acordo com suas necessidades.
 
    >[!NOTE]
    >
