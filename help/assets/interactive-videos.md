@@ -8,12 +8,11 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
-feature: Interactive Videos,Video
+feature: Vídeos interativos, Vídeo
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '6011'
+source-wordcount: '5975'
 ht-degree: 4%
 
 ---
@@ -34,7 +33,7 @@ Para ver um vídeo interativo e que pode ser comprado, clique em [Demonstraçõe
 
 * Clique na miniatura para pausar o vídeo e abrir a visualização rápida do produto. Por exemplo, clique na imagem em miniatura de KitchenAid no vídeo para visualizar um giro de 360 graus do mixer ou amplie o zoom para ver os detalhes do mixer.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Um quadro de um ](assets/chlimage_1-126.png) *vídeo interativo e que pode ser compradoUma captura de quadro de vídeo de um vídeo interativo e que pode ser comprado.*
 
@@ -49,10 +48,10 @@ Assista a uma apresentação de 7 minutos e 30 segundos sobre [como os vídeos i
 
 ## Webinar de sucesso do cliente do Adobe {#adobe-customer-success-webinar}
 
-O webinário &quot;Usar vídeo interativo, compartilhamento de links e compartilhamento de YouTube no AEM Assets&quot; ensina como usar o vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing de vídeo.
+O webinário &quot;Usar vídeo interativo, compartilhamento de link e compartilhamento de YouTube no AEM Assets&quot; ensina como usar o vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing por vídeo.
 
 >[!NOTE]
-[Uso de vídeo interativo, compartilhamento de link e compartilhamento de YouTube no AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+[Usar vídeo interativo, compartilhamento de link e compartilhamento de YouTube no AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Início rápido: Vídeos interativos {#quick-start-interactive-videos}
 
@@ -60,13 +59,13 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudar
 
 Procure o cabeçalho **Exemplo** em algumas das tarefas de Início rápido. Ele contém um breve tutorial baseado nesta página da Web de demonstração inicial que *não* tem interatividade adicionada a ele ainda:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Os **Exemplos** ajudam a ilustrar as etapas da integração de vídeos interativos em seu próprio site.
 
 Quando você conclui o tutorial na última seção de Exemplo, a página da Web de demonstração final com o vídeo interativo totalmente integrado é semelhante ao seguinte:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 **Fluxo de trabalho** de vídeo interativo:
 
@@ -193,7 +192,7 @@ Considere os seguintes exemplos de URLs do Quickview e suas variáveis de miniat
 
 Quando a abordagem acima é aplicada ao nosso site de exemplo, temos uma página da Web com várias miniaturas de produto, cada uma com um botão **[!UICONTROL VER MAIS]**:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Após ativar todas as visualizações rápidas de produtos disponíveis na página, você obtém a seguinte lista de solicitações do Quickview feitas ao back-end:
 
@@ -537,7 +536,7 @@ No entanto, se você tiver adicionado qualquer interatividade para acionar uma e
 
 Usando o site de demonstração como exemplo:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Observe que ele é o código de inserção de vídeo padrão:
 
@@ -568,7 +567,7 @@ Observe que ele é o código de inserção de vídeo padrão:
 
 A integração é tão simples como remover o código de inserção do vídeo e substituí-lo pelo código de inserção do vídeo interativo do AEM. Você pode ver o resultado no seguinte URL. Embora ele mostre um Vídeo interativo presente na página, ele ainda não está integrado ao Quickviews existente:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integração de um vídeo interativo com um Quickview {#integrating-an-interactive-video-with-an-existing-quickview} existente
 
@@ -771,7 +770,7 @@ O código-fonte completo é o seguinte:
 
 O site de demonstração final com o vídeo interativo totalmente integrado tem a seguinte aparência:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Uso do Quickviews para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
 
