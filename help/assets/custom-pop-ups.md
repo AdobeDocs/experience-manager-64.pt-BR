@@ -1,5 +1,5 @@
 ---
-title: Uso do Quickviews para criar pop-ups personalizados
+title: Criação de pop-ups personalizados usando o Quickviews
 seo-title: Uso do Quickviews para criar pop-ups personalizados
 description: O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
 seo-description: O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
@@ -10,17 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
-feature: Configuration
+feature: Configuração
 role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 2%
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
-# Uso do Quickviews para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
+# Criar pop-ups personalizados usando o Quickviews {#using-quickviews-to-create-custom-pop-ups}
 
 O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador usado, essa funcionalidade permite que os usuários cliquem em um ponto de acesso ou em uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
 
@@ -32,7 +31,7 @@ As visualizações rápidas são compatíveis com os seguintes visualizadores no
 
 Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma exibição rápida é o mesmo em todos os três visualizadores compatíveis.
 
-**Para usar o Quickviews para criar pop-ups personalizados,**
+**Para criar pop-ups personalizados usando o Quickviews:**
 
 1. Crie uma Exibição rápida para um ativo carregado.
 
