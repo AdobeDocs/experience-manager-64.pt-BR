@@ -2,16 +2,15 @@
 title: Práticas recomendadas de monitoramento de ativos
 description: Práticas recomendadas para monitorar o ambiente e o desempenho da instância de AEM após a implantação.
 contentOwner: AG
-feature: Asset Management
+feature: Gerenciamento de ativos
 role: Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1766'
 ht-degree: 1%
 
 ---
-
 
 # Práticas recomendadas de monitoramento de ativos {#assets-monitoring-best-practices}
 
@@ -140,7 +139,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 
 * Verificações do sistema
 
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=systemchecking,type=HealthCheck*
    * Instâncias: Um autor, todos servidores de publicação
    * Limiar de alarme: Quando o status não estiver OK
@@ -148,7 +147,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 
 * Fila de replicação
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=replicationQueue,type=HealthCheck*
    * Instâncias: Um autor, todos servidores de publicação
    * Limiar de alarme: Quando o status não estiver OK
@@ -156,7 +155,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 
 * Desempenho da resposta
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=requestsStatus,type=HealthCheck*
    * Instâncias: Todos os servidores
    * Duração do alarme: Quando o status não estiver OK
@@ -164,7 +163,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 
 * Desempenho da consulta
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name= queriesStatus,type=HealthCheck*
    * Instâncias: Um autor, todos servidores de publicação
    * Limiar de alarme: Quando o status não estiver OK
@@ -172,7 +171,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 
 * Grupos ativos
 
-   * MBean: org.apache.sling.health check:name=inativeBundles,type=HealthCheck 
+   * MBean: org.apache.sling.health check:name=inativeBundles,type=HealthCheck
    * URL: */system/console/jmx/org.apache.sling.health check:name=inativeBundles,type=HealthCheck*
    * Instâncias: Todos os servidores
    * Limiar de alarme: Quando o status não estiver OK
@@ -180,7 +179,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 
 * Erros de log
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=logErrorHealthCheck,type=HealthCheck*
    * Instâncias: Todos os servidores
    * Limiar de alarme: Quando o status não estiver OK
