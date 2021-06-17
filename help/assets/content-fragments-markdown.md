@@ -10,12 +10,11 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: Content Fragments
+feature: Fragmentos de conteúdo
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '556'
 ht-degree: 4%
 
 ---
@@ -178,7 +177,7 @@ Você pode negrito como segue:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar uma extensão de código, vincule-a com aspas de backtick (`). Ao contrário de um bloco de código pré-formatado, uma extensão de código indica código dentro de um parágrafo normal.
+Para indicar uma extensão de código, vincule-a com aspas invertidas (&amp;grave;). Ao contrário de um bloco de código pré-formatado, uma extensão de código indica código dentro de um parágrafo normal.
 
 Por exemplo:
 
