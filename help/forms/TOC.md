@@ -2,14 +2,13 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: formulários
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.4
 audience: end-user
 user-guide-title: Guia do Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 4%
@@ -48,7 +47,7 @@ ht-degree: 4%
       + [Apresentação do site de referência We.Gov](using/gov-reference-site-walkthrough.md)
       + [Apresentação do site de referência de autoatendimento do funcionário](/help/forms/using/employee-self-service-reference-site.md)
       + [Apresentação do site de referência de recrutamento de funcionários](/help/forms/using/employee-recruitment-reference-site.md)
-      + [Site de referência da renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
+      + [Site de referência de renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [Apresentação do site de referência do We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
       + [Referência de fragmentos de formulário adaptáveis](using/reference-adaptive-form-fragments.md)
       + [Temas de Referência](using/reference-themes.md)
@@ -304,7 +303,7 @@ ht-degree: 4%
 + Cartas e correspondências {#letters-correspondences}
    + [Visão geral do gerenciamento de correspondência](using/cm-overview.md)
    + [Design de layout](using/layout-design-details.md)
-   + [Dicionário de dados](using/data-dictionary.md)
+   + [Dicionários de dados](using/data-dictionary.md)
    + [Fragmentos do documento](using/document-fragments.md)
    + [Criar carta](using/create-letter.md)
    + [Criar correspondência](using/create-correspondence.md)
@@ -565,7 +564,7 @@ ht-degree: 4%
    + Serviço de informação do sistema {#system-information-service}
       + [Configurar o serviço de informação do sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [APIs do Serviço de informações do sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Relatório de processo  {#process-reporting}
++ Relatório de processo {#process-reporting}
    + [Introdução ao Relatório de Processos](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introdução ao Relatório de processos](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Como a geração de relatórios do processo funciona](/help/forms/using/process-reporting/process-reporting-architecture.md)
