@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Gerenciamento de ativos, Pesquisa, Representações, Colaboração
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 04f14a57fcdc5890fe78118536cc52988a2124c3
 workflow-type: tm+mt
-source-wordcount: '10083'
+source-wordcount: '10131'
 ht-degree: 2%
 
 ---
@@ -216,7 +216,7 @@ Ao carregar arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode rea
 |  | Método de preenchimento | Obrigatório.<br> Controla a transparência de pixels do local Canto que você definiu.<br> Você pode escolher entre os seguintes métodos de preenchimento: <ul><li>**Preenchimento do Flood**  - torna todos os pixels transparentes que correspondem ao Canto especificado e conectado a ele.</li><li>**Corresponder pixel**  - torna todos os pixels correspondentes transparentes, independentemente de sua localização na imagem.</li></ul> |
 |  | Tolerância | Opcional.<br> Controla a quantidade permitida de variação na correspondência de cores de pixels com base na localização Canto que você definiu.<br> Use um valor de 0,0 para corresponder exatamente às cores dos pixels ou use um valor de 1,0 para permitir a maior variação. |
 
-#### Definir as opções de upload do PostScript e do Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Definir opções de upload do PostScript e do Illustrator {#setting-postscript-and-illustrator-upload-options}
 
 Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cores. As opções para formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo Upload Job Options em Opções de PostScript e Opções do Illustrator.
 
@@ -255,7 +255,7 @@ Use as **[!UICONTROL Opções de recorte]** e as **[!UICONTROL Opções do perfi
 |  | Photoshop e Nome da Camada | Nomes das imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada é usado se os nomes da camada no arquivo PSD forem nomes padrão da camada do Photoshop. Por exemplo, uma camada chamada Tag de preço em um arquivo PSD chamado SpringAd é chamada Tag Ad_Price Primavera. Uma camada com o nome padrão Camada 2 é chamada de Anúncio de primavera_2. |
 | Âncora |  | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. Imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se o aplicativo exigir as imagens de substituição para preencher o espaço alocado no modelo. |
 
-#### Definir as opções de upload de PDF {#setting-pdf-upload-options}
+#### Definir opções de upload de PDF {#setting-pdf-upload-options}
 
 Ao carregar um arquivo PDF, você pode formatá-lo de várias maneiras. Você recorta suas páginas, extrai palavras de pesquisa, digita uma resolução de pixels por polegada e escolhe um espaço de cores. Os arquivos PDF geralmente contêm uma margem de corte, marcas de corte, marcas de registro e outras marcas de impressora. É possível recortar essas marcas das laterais das páginas ao carregar um arquivo PDF.
 
@@ -290,13 +290,13 @@ Você pode transcodificar um arquivo de vídeo escolhendo entre várias predefin
 |  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 |  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 
-#### Defina as predefinições do conjunto de lotes em {#setting-batch-set-presets-at-upload}
+#### Definir predefinições do conjunto de lotes no upload {#setting-batch-set-presets-at-upload}
 
 Para criar automaticamente um Conjunto de imagens ou Conjunto de rotação a partir de imagens carregadas, clique na coluna **[!UICONTROL Ativo]** para a predefinição que deseja usar. Você pode selecionar mais de uma predefinição.
 
 Consulte [Configurando predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre como criar predefinições de conjunto de lotes.
 
-### Uploads sequenciados {#streamed-uploads}
+### Uploads continuados {#streamed-uploads}
 
 Se você fizer upload de vários ativos, as chamadas de E/S para o servidor de AEM aumentarão drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que o recurso atinja o tempo limite. O AEM Assets suporta o upload simplificado de ativos. O upload em fluxo reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo para fazer upload de ativos grandes e a possibilidade de tempos limite são reduzidos. O upload sequenciado é ativado por padrão no AEM Assets.
 
@@ -570,7 +570,7 @@ Você precisa de permissões de exclusão no dam/asset para excluir um ativo. Se
 
 Consulte [Baixar ativos de AEM](download-assets-from-aem.md)
 
-## Publicar e cancelar a publicação de ativos {#publish-assets}
+## Publicar e desfazer a publicação de ativos {#publish-assets}
 
 Após fazer upload, processar ou editar seus ativos no autor de [!DNL Experience Manager], publique o ativo no servidor de publicação. A publicação torna o ativo disponível publicamente. A ação de desfazer a publicação removeu o ativo do servidor de publicação, mas não do servidor de criação.
 
@@ -630,14 +630,14 @@ Para ativos carregados recentemente, seus metadados (incluindo títulos, tags e 
 
 Isso ocorre porque o AEM Assets aguarda até o fim de um período de tempo limite (1 hora por padrão) antes de executar um trabalho em segundo plano para indexar os metadados de todos os ativos recém-carregados/atualizados e adicioná-los à lista de sugestões.
 
-## Use as Ações rápidas {#quick-actions}
+## Usar ações rápidas {#quick-actions}
 
 Os ícones de ação rápida estão disponíveis para um único ativo por vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
 * Dispositivos de toque: Toque e segure. Por exemplo, em um iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
 * Dispositivos sem toque: Ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
 
-### Navegue até os ativos e selecione-os {#navigating-and-selecting-assets}
+### Navegar para selecionar ativos {#navigating-and-selecting-assets}
 
 É possível visualizar, navegar e selecionar ativos com qualquer uma das exibições disponíveis (cartão, coluna, lista) usando o ícone **[!UICONTROL Selecionar]**. **** A opção Selecionar é exibida como uma ação rápida na exibição de cartão.
 
@@ -781,6 +781,14 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
 
 ### Exibir anotações salvas {#viewing-saved-annotations}
 
+É possível exibir apenas uma anotação por vez.
+
+>[!NOTE]
+>
+>Se estiver selecionando várias anotações, a anotação mais recente ficará visível na interface do usuário.
+>
+>A seleção múltipla é suportada apenas para imprimir o ativo anotado como PDF.
+
 1. Para exibir anotações salvas de um ativo, navegue até o local do ativo e abra a página do ativo.
 
 1. Toque no ícone **[!UICONTROL Navegação global]** e toque em **[!UICONTROL Linha do tempo]** na lista.
@@ -802,6 +810,10 @@ Também é possível adicionar anotações a uma coleção. No entanto, se uma c
 Se um ativo tiver anotações ou tiver sido sujeito a um fluxo de trabalho de revisão, é possível imprimir o ativo junto com anotações e revisar o status como um arquivo PDF para revisão offline.
 
 Você também pode optar por imprimir somente as anotações ou o status da revisão.
+
+>[!NOTE]
+>
+>É possível selecionar várias anotações ao imprimir o ativo anotado como PDF.
 
 Anotações lentas podem não ser renderizadas adequadamente no arquivo PDF. Para renderização ideal, o Adobe recomenda que você limite as anotações a 50 palavras.
 
@@ -876,7 +888,7 @@ Este é um exemplo de como você configura AEM para imprimir anotações em CJK 
 1. Configure o arquivo PDF de anotação definindo o parâmetro fonte-família como `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Essa configuração está disponível por padrão e funciona para todos os idiomas europeus e CJK.
 1. Se o idioma escolhido for diferente dos idiomas mencionados na etapa 2, anexe uma entrada apropriada (separada por vírgulas) à família de fontes padrão.
 
-## Criar controle de versão de ativos {#asset-versioning}
+## Criar versão de ativo {#asset-versioning}
 
 O controle de versão cria um instantâneo de ativos digitais em um ponto específico do tempo. O controle de versão ajuda a restaurar ativos para um estado anterior posteriormente. Por exemplo, se você deseja desfazer uma alteração feita em um ativo, restaure a versão não editada do ativo.
 
