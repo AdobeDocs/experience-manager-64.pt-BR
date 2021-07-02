@@ -2,16 +2,15 @@
 title: Introdução à [!DNL Adobe Experience Manager Assets]
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Asset Management
+feature: Gerenciamento de ativos
 role: Leader,Architect,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '863'
 ht-degree: 39%
 
 ---
-
 
 # Sobre [!DNL Adobe Experience Manager Assets] como uma solução DAM {#about-assets}
 
@@ -53,13 +52,13 @@ Ao determinar se uma imagem deve ser colocada no repositório DAM ou usar um com
 
 Um ativo é um documento digital, imagem, vídeo ou áudio (ou parte dele) que pode ter várias representações e subativos (por exemplo, camadas em um arquivo do Photoshop, slides em um arquivo do PowerPoint, páginas em um pdf, arquivos em um ZIP).
 
-Um ativo é essencialmente um binário com metadados, além de representações e subativos. Consulte o [Guia de desempenho de DAM](/help/sites-deploying/assets-performance-sizing.md) para obter informações detalhadas.
+Um ativo é essencialmente um binário com metadados, além de representações e subativos. Consulte o [Guia de desempenho de DAM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html) para obter informações detalhadas.
 
 >[!CAUTION]
 >
 >Fazer upload e/ou editar um grande volume de ativos (especialmente imagens) pode afetar o desempenho da sua implantação [!DNL Experience Manager].
 
-### [!DNL Experience Manager Assets] terminologia  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminologia {#aem-assets-terminology}
 
 Ao trabalhar com ativos digitais em [!DNL Experience Manager], é necessário entender a seguinte terminologia:
 
@@ -92,9 +91,9 @@ As tarefas que você pode executar com esses workflows pré-configurados:
 
 E claro, é possível aplicar fluxos de trabalho manualmente. Consulte [Manipuladores de mídia do Assets](media-handlers.md) para obter uma lista de fluxos de trabalho padrão.
 
-## [!DNL Experience Manager Assets] e  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] e [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Assets and Media Library](medialibrary.md) para obter informações sobre as diferenças.
+Consulte [Ativos e Media Library](medialibrary.md) para obter informações sobre as diferenças.
 
 >[!MORELIKETHIS]
 >
