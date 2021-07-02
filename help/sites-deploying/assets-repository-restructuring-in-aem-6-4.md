@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Atualização
+exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1139'
+ht-degree: 2%
 
 ---
-
 
 # Reestruturação do repositório de ativos no AEM 6.4{#assets-repository-restructuring-in-aem}
 
@@ -24,23 +23,23 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
 
 **Com a atualização 6.4**
 
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **Antes da atualização do 6.5**
 
-* [Modelo de Notificação por E-mail de Evento de Ativo/Coleta](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Designs clássicos de compartilhamento de ativos](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [Baixar modelo de notificação por email de ativos](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Exemplo de licenças DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [Modelo de Notificação por E-mail de Evento de Ativo/Coleta](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Designs clássicos de compartilhamento de ativos](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Baixar modelo de notificação por email de ativos](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Exemplo de licenças DRM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [Modelo de Notificação por Correio Eletrônico de Partilha de Ligações](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [Scripts de fluxo de trabalho do InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Configurações de transcodificação de vídeo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [Modelo de Notificação por Correio Eletrônico de Partilha de Ligações](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Scripts de fluxo de trabalho do InDesign](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Configurações de transcodificação de vídeo](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 ## Com a atualização 6.4 {#with-upgrade}
 
-### Diversos {#misc}
+### Misc {#misc}
 
 <table> 
  <tbody> 
@@ -65,7 +64,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
 
 ## Antes da atualização do 6.5 {#prior-to-upgrade}
 
-### Modelo de Notificação de Evento de Ativo/Coleta {#asset-collection-event-e-mail-notification-template}
+### Modelo de Notificação por E-mail de Evento de Ativo/Coleta {#asset-collection-event-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -128,7 +127,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
  </tbody> 
 </table>
 
-### Baixar modelo de notificação de e-mail de ativo {#download-asset-e-mail-notification-template}
+### Baixar modelo de notificação por email de ativos {#download-asset-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -161,7 +160,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
  </tbody> 
 </table>
 
-### Exemplo de licenças de DRM {#example-drm-licenses}
+### Exemplo de licenças DRM {#example-drm-licenses}
 
 | **Localização anterior** | `/etc/dam/drm/licenses/` |
 |---|---|
@@ -169,7 +168,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
 | **Orientação relativa à reestruturação** | N/D |
 | **Notas** | N/D |
 
-### Modelo de Notificação por Correio Eletrônico de Partilha de Ligação {#link-share-e-mail-notification-template}
+### Modelo de Notificação por Correio Eletrônico de Partilha de Ligações {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -202,7 +201,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
  </tbody> 
 </table>
 
-### Scripts de Fluxo de Trabalho do InDesign {#indesign-workflow-scripts}
+### Scripts de fluxo de trabalho do InDesign {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -263,7 +262,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
  </tbody> 
 </table>
 
-### Configurações de predefinição do visualizador {#viewer-preset-configurations}
+### Configurações predefinidas do visualizador {#viewer-preset-configurations}
 
 <table> 
  <tbody> 
@@ -290,7 +289,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
  </tbody> 
 </table>
 
-### Diversos {#misc2}
+### Misc {#misc2}
 
 <table> 
  <tbody> 
@@ -312,4 +311,3 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
   </tr> 
  </tbody> 
 </table>
-
