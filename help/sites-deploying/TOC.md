@@ -8,10 +8,10 @@ breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4, incluindo a implantação do Adobe Managed Services na nuvem.
 feature: Implantação
 role: Architect
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 18%
+source-wordcount: '373'
+ht-degree: 17%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 18%
    + [Verificações de consistência e passagem](consistency-check.md)
    + [Diretrizes de desempenho](performance-guidelines.md)
    + [Otimização de desempenho](configuring-performance.md)
-   + [Guia de desempenho de ativos](assets-performance-sizing.md)
+   + [Guia de desempenho de ativos](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
    + [Artigos explicativos de configuração](ht-deploy.md)
    + [Remover os sites do Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuração do Console da Web](configuring-web-console.md)
@@ -85,7 +85,7 @@ ht-degree: 18%
    + [Reestruturação do repositório no AEM 6.4](repository-restructuring.md)
    + [Reestruturação comum de repositório no AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Restruturação do repositório de sites no AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Reestruturação do repositório de ativos no AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
+   + [Reestruturação do repositório de ativos no AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
    + [Reestruturação do repositório Dynamic Media no AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório Forms no AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório de comércio eletrônico no AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
