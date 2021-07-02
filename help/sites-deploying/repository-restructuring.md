@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Atualização
+exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
-
 
 # Reestruturação do repositório no AEM 6.4{#repository-restructuring-in-aem}
 
@@ -39,13 +38,13 @@ Ao atualizar para o AEM 6.4, um grande subconjunto do conteúdo em /etc será du
 * Com a atualização 6.4 - algumas das alterações de reestruturação /etc não são compatíveis com versões anteriores e, portanto, as modificações devem ser planejadas e implementadas como parte da atualização AEM 6.4.
 * Antes da atualização 6.5 - a grande maioria das alterações na reestruturação /etc pode ser adiada até algum tempo no futuro pós-atualização. Como mencionado anteriormente, o código AEM 6.4 continuará referenciando os locais antigos até que as modificações sejam implementadas como parte de uma versão do cliente. Embora não haja uma linha do tempo forçada para a qual as alterações devem ser feitas, recomenda-se que elas sejam feitas antes da atualização 6.5, já que os recursos futuros podem depender dos novos locais que estão sendo referenciados. Além disso, a documentação de um determinado recurso fará referência por convenção aos novos locais e, portanto, pode ser confuso se os locais antigos ainda estiverem sendo usados.
 
-### Orientação sobre a reestruturação {#restructuring-guidance}
+### Orientação relativa à reestruturação {#restructuring-guidance}
 
 Ao planejar uma atualização para o AEM 6.4, as seguintes páginas por solução devem ser referenciadas para avaliar o esforço de trabalho:
 
 * [Restruturação do repositório comum a todas as soluções AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [reestruturação de repositório AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [reestruturação de repositório AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [reestruturação de repositório AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 * [Reestruturação de repositório AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [reestruturação de repositório AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [reestruturação de repositório AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
