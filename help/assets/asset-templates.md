@@ -5,16 +5,15 @@ uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Asset Management,Developer Tools
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+role: User
+exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
-
 
 # Modelos de ativos {#asset-templates}
 
@@ -75,7 +74,7 @@ Considere um cenário em que você deseja criar materiais de apoio para impress�
 
 1. Clique em **[!UICONTROL Criar]**. Uma caixa de diálogo confirma que uma nova brochura foi criada. Clique/toque em **[!UICONTROL Abrir]** para abrir o folheto no modo de edição.
 
-   ![chlimage_1-310](assets/chlimage_1-311.png)
+   ![chlimage_1-311](assets/chlimage_1-311.png)
 
    Como alternativa, feche a caixa de diálogo e navegue até a pasta na página Modelos que você começou a usar para exibir o folheto que você criou. O tipo de material de apoio aparece na miniatura na exibição de cartão. Por exemplo, neste caso, Brochura é exibida na miniatura.
 
@@ -210,4 +209,3 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
    >[!NOTE]
    >
    >Não é possível editar posteriormente uma garantia resultante da fusão ou usá-la para criar outra garantia.
-
