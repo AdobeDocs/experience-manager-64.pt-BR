@@ -3,9 +3,9 @@ title: Práticas recomendadas de integração de AEM e Creative Cloud
 description: Práticas recomendadas para integrar uma implantação de AEM com o Adobe Creative Cloud, a fim de simplificar os fluxos de trabalho de transferência de ativos e obter o máximo de eficiência
 contentOwner: AG
 feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 16%
@@ -27,7 +27,7 @@ Leia para saber quais integrações devem ser escolhidas entre o desktop e o DAM
 >
 >AEM o compartilhamento de pastas do Creative Cloud está obsoleto e não é mais coberto por este guia. O Adobe recomenda usar recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [AEM aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) para fornecer ao usuário criativo acesso aos ativos gerenciados no AEM.
 
-## Necessidades de colaboração de criadores, profissionais de marketing e usuários de DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
+## Necessidades de colaboração de criadores, profissionais de marketing e usuários do DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | Requisitos | Caso de uso | Superfícies envolvidas |
 |---|---|---|
@@ -110,7 +110,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 * **Usuário criativo**: um profissional criativo, que cria ativos digitais usando aplicativos e serviços da Creative Cloud. Em alguns casos, um usuário criativo pode ser membro de uma equipe criativa que pode usar a Creative Cloud, mas não cria ativos digitais (como um diretor criativo ou gerente de equipe criativa).
 * **Usuário do DAM:** um usuário típico de um sistema DAM. Dependendo da organização, um usuário do DAM pode ser um usuário de marketing ou não, por exemplo, um usuário de Linha de Negócios (LOB), um bibliotecário, um vendedor e assim por diante.
 
-### Considerações ao usar AEM e Creative Cloud integration {#considerations-when-using-aem-and-creative-cloud-integration}
+### Considerações ao usar a integração AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 * Consulte [práticas recomendadas do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Consulte [Integração do Adobe Stock](aem-assets-adobe-stock.md)
@@ -125,7 +125,7 @@ Este é um breve resumo das práticas recomendadas para integração de Experien
 * **Entenda o ciclo de vida do ativo:** saiba como os ativos são manipulados em sua organização por equipes diferentes
 * **Lidar com salvamentos frequentes em ativos com cuidado:** o Adobe Asset Link cuida disso para você com PS, AI, ID. Em outros aplicativos, não realize tarefas em andamento na pasta mapeada/compartilhada, a menos que precise de todas as alterações no DAM
 
-### Acesso aos ativos do Adobe Stock do AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
+### Acesso aos ativos do Adobe Stock da AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
 [A ](/help/assets/aem-assets-adobe-stock.md) integração do AEM e do Adobe Stock fornece AEM usuários a capacidade de pesquisar, visualizar, licenciar e salvar ativos do Adobe Stock no AEM. Os ativos licenciados e salvos do Adobe Stock selecionaram metadados de Estoque, que podem ser usados para pesquisá-los com filtros extras.
 
