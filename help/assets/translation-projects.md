@@ -2,18 +2,17 @@
 title: Criação de projetos de tradução
 description: Saiba como criar projetos de tradução no AEM.
 contentOwner: AG
-feature: Translation
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Tradução
+role: Architect,Admin
+exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1935'
 ht-degree: 23%
 
 ---
 
-
-# Criar projetos de tradução {#creating-translation-projects}
+# Criação de projetos de tradução {#creating-translation-projects}
 
 Para criar uma cópia de idioma, acione um dos seguintes fluxos de trabalho de cópia de idioma disponíveis no painel Referências na interface do usuário do Assets:
 
