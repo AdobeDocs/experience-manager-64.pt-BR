@@ -2,16 +2,15 @@
 title: Processar ativos usando manipuladores de mídia e fluxos de trabalho
 description: Saiba mais sobre vários manipuladores de mídia e como usá-los em fluxos de trabalho para executar tarefas em ativos.
 contentOwner: AG
-feature: Workflow,Renditions
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Fluxo De Trabalho,Representações
+role: User
+exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2232'
-ht-degree: 4%
+source-wordcount: '2230'
+ht-degree: 3%
 
 ---
-
 
 # Processar ativos usando manipuladores de mídia e fluxos de trabalho {#processing-assets-using-media-handlers-and-workflows}
 
@@ -61,7 +60,7 @@ Todos os manipuladores executam as seguintes tarefas:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Use manipuladores de mídia em fluxos de trabalho para executar tarefas em Ativos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Usar manipuladores de mídia em fluxos de trabalho para executar tarefas em Ativos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Os manipuladores de mídia são serviços usados com fluxos de trabalho.
 
@@ -439,7 +438,7 @@ Após executar o procedimento a seguir, ao fazer upload de um arquivo de texto n
 1. Copie o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazene-o em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo no Experience Manager.
 1. No seu navegador, abra o Console de Gerenciamento da Web Apache Felix. Selecione a guia Componentes e desative o manipulador de texto padrão `com.day.cq.dam.core.impl.handler.TextHandler`.
 
-## Manipulador de mídia baseado na linha de comando {#command-line-based-media-handler}
+## Manipulador de mídia baseado em linha de comando {#command-line-based-media-handler}
 
 O Experience Manager permite executar qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como o ImageMagick) e adicionar a nova representação ao ativo. Instale a ferramenta de linha de comando no disco que hospeda o servidor do Experience Manager e adicione e configure uma etapa do processo para o fluxo de trabalho. O processo invocado, chamado `CommandLineProcess`, filtra de acordo com tipos MIME específicos e cria várias miniaturas com base na nova representação.
 
@@ -464,7 +463,7 @@ O processo `CommandLineProcess` executa as seguintes operações na ordem em que
 * Exclui o diretório temporário.
 * Cria miniaturas com base nessas representações, se especificado. O número e as dimensões das miniaturas são definidos pelos argumentos da etapa.
 
-### Um exemplo usando ImageMagick {#an-example-using-imagemagick}
+### Um exemplo usando o ImageMagick {#an-example-using-imagemagick}
 
 O exemplo a seguir mostra como configurar a etapa do processo da linha de comando. Toda vez que um ativo com o tipo MIME gif ou tiff é adicionado a `/content/dam` no servidor do Experience Manager, uma imagem invertida do original é criada junto com mais três miniaturas (140x100, 48x48 e 10x250).
 
@@ -500,7 +499,7 @@ Para testar o fluxo de trabalho modificado, adicione um ativo a `/content/dam`.
 1. Vá para o console **[!UICONTROL CQ5 DAM]**, por exemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra o ativo `myImage.tiff` e verifique se a imagem invertida e as três miniaturas foram criadas.
 
-#### Configure a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
+#### Configurar a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
 Esta seção descreve como definir os **[!UICONTROL Argumentos de processo]** do `CommandLineProcess`. Separe os valores de [!UICONTROL Process Arguments] usando uma vírgula e não inicie um valor com um espaço em branco.
 
