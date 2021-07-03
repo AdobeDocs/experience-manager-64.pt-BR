@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
-feature: Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Vídeo
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 29%
@@ -28,7 +27,7 @@ Você pode incluir conjuntos de vídeos adaptáveis em vez de somente ativos de 
 
 Consulte a [documentação do Dynamic Media Classic sobre conjuntos de vídeos adaptáveis para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/video-profiles.html#dynamicmedia).
 
-## Sobre FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
+## Sobre o FFMPEG e o Dynamic Media Classic {#about-ffmpeg-and-scene}
 
 O processo de codificação de vídeo padrão se baseia no uso da integração em FFMPEG com perfis de vídeo. Portanto, o fluxo de trabalho de assimilação de DAM pronto para uso contém as duas etapas de fluxo de trabalho baseadas em ffmpeg a seguir:
 
@@ -94,7 +93,7 @@ Para configurar predefinições universais:
 
 1. Os perfis de codificação selecionados são aplicados automaticamente a todos os vídeos enviados por upload para a pasta de destino DAM CQ configurada para essa configuração de nuvem do Scene7. É possível configurar várias configurações de nuvem do Scene7 com diferentes pastas de destino para aplicar diversos perfis de codificação, conforme necessário.
 
-## Atualizar as predefinições de codificação e do visualizador  {#updating-viewer-and-encoding-presets}
+## Atualizar as predefinições de codificação e do visualizador {#updating-viewer-and-encoding-presets}
 
 É necessário atualizar as predefinições de codificação e do visualizador de vídeo no Experience Manager se as predefinições foram atualizadas no Scene7. Nesses casos, navegue até a configuração do Scene7 na configuração da nuvem e clique em **[!UICONTROL Update the viewer and encoding presets]**.
 
@@ -141,7 +140,7 @@ A tabela a seguir fornece uma comparação de alto nível dos recursos suportado
 | Extensibilidade | Sim | Sim (com [Documentação da API do SDK do Visualizador HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Vídeo móvel | Sim | Sim |
 
-### Configuração  {#setting-up}
+### Configuração {#setting-up}
 
 #### Criação de perfis de vídeo {#creating-video-profiles}
 
