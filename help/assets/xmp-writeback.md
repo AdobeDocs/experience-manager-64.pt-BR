@@ -2,16 +2,15 @@
 title: Write-back de XMP a execuções
 description: Saiba como o recurso de write-back de XMP propaga as alterações de metadados de um ativo para todas as representações ou representações específicas do ativo.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadados
+role: User,Admin
+exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '779'
 ht-degree: 4%
 
 ---
-
 
 # Write-back de XMP a execuções {#xmp-writeback-to-renditions}
 
@@ -29,7 +28,7 @@ Nesse caso, o AEM Assets salva as alterações na propriedade **[!UICONTROL Titl
 
 No entanto, [!DNL Experience Manager Assets] não propaga automaticamente quaisquer alterações de metadados nas representações de um ativo. Consulte [como ativar XMP write-back](#enabling-xmp-writeback).
 
-## Habilitar XMP write-back {#enabling-xmp-writeback}
+## Ativar XMP write-back {#enabling-xmp-writeback}
 
 Para permitir que as alterações de metadados sejam propagadas para as representações do ativo ao carregá-lo, modifique a configuração **Adobe CQ DAM Rendition Maker** no Configuration Manager.
 
@@ -39,7 +38,7 @@ Para permitir que as alterações de metadados sejam propagadas para as represen
 
    ![chlimage_1-346](assets/chlimage_1-346.png)
 
-## Habilite XMP write-back para representações específicas {#enabling-xmp-writeback-for-specific-renditions}
+## Habilitar XMP write-back para representações específicas {#enabling-xmp-writeback-for-specific-renditions}
 
 Para permitir que o recurso Writeback de XMP propague alterações de metadados para selecionar representações, especifique essas representações na etapa de fluxo de trabalho Processo de Writeback de XMP do fluxo de trabalho WriteBack de Metadados de DAM . Por padrão, essa etapa é configurada com a representação original.
 
@@ -64,7 +63,7 @@ As alterações de metadados são propagadas para as representações `thumbnail
 >
 >Para obter mais informações sobre plataformas compatíveis, consulte [XMP pré-requisitos de gravação de metadados](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
-## Filtrar metadados de XMP {#filtering-xmp-metadata}
+## Filtrar metadados XMP {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] O suporta a filtragem de lista de bloqueios e lista de permissões de propriedades/nós para metadados de XMP que são lidos de binários de ativos e armazenados no JCR quando os ativos são assimilados.
 
