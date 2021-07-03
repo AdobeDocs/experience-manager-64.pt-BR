@@ -2,16 +2,15 @@
 title: Como editar ou adicionar metadados
 description: Saiba mais sobre metadados de ativos no AEM Assets e de várias maneiras pelas quais você pode editar metadados de ativos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadados
+role: User,Admin
+exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '484'
 ht-degree: 8%
 
 ---
-
 
 # Como editar ou adicionar metadados {#how-to-edit-or-add-metadata}
 
@@ -47,7 +46,7 @@ XMP gravação é suportada e ativada para as plataformas e formatos de arquivo 
 
 Para obter detalhes sobre como editar o esquema de metadados, consulte [Edição de formulários de esquema de metadados](metadata-schemas.md#editing-metadata-schema-forms).
 
-## Registrando um namespace personalizado em AEM {#registering-a-custom-namespace-within-aem}
+## Registro de um namespace personalizado no AEM {#registering-a-custom-namespace-within-aem}
 
 Você pode adicionar seus próprios namespaces no AEM. Assim como há namespaces predefinidos, como cq, jcr e sling, você pode ter um namespace para os metadados do repositório e o processamento xml.
 
@@ -64,3 +63,4 @@ Você pode adicionar seus próprios namespaces no AEM. Assim como há namespaces
 >[!MORELIKETHIS]
 >
 >* [Sobre metadados e sua necessidade no Assets](metadata.md)
+
