@@ -5,16 +5,15 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
-feature: Smart Tags,Tagging,Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Tags inteligentes, Marcação, Pesquisa
+role: User
+exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 3%
+source-wordcount: '462'
+ht-degree: 2%
 
 ---
-
 
 # Gerenciamento de tags inteligentes {#managing-smart-tags}
 
