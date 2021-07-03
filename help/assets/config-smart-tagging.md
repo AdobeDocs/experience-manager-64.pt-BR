@@ -2,18 +2,17 @@
 title: Configure a marcação de ativos usando o Serviço de conteúdo inteligente.
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Tags inteligentes,Marcação
+role: Admin
+exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 34%
 
 ---
 
-
-# Configurar marcação de ativos usando o Serviço de conteúdo inteligente {#configure-asset-tagging-using-the-smart-content-service}
+# Configurar a marcação de ativos usando o Serviço de conteúdo inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
 Você pode integrar [!DNL Adobe Experience Manager] ao Serviço de conteúdo inteligente usando [!DNL Adobe Developer Console]. Use essa configuração para acessar o Serviço de conteúdo inteligente de dentro de [!DNL Experience Manager].
 
@@ -93,7 +92,7 @@ Depois que um certificado expira, ele não é mais confiável. Não é possível
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io) e navegue até os Serviços de conteúdo inteligente existentes na página **[!UICONTROL Integrações]**. Faça upload do novo certificado. Para obter mais informações, consulte as instruções em [Criar integração do Console do Desenvolvedor do Adobe](#create-adobe-i-o-integration).
 
-## Criar integração do Console do Desenvolvedor do Adobe {#create-adobe-i-o-integration}
+## Criar integração com o Console do desenvolvedor do Adobe {#create-adobe-i-o-integration}
 
 Para usar APIs do Serviço de conteúdo inteligente, crie uma integração no Console do desenvolvedor do Adobe para obter [!UICONTROL Chave da API] (gerada no campo [!UICONTROL ID do CLIENTE] da integração do Console do desenvolvedor do Adobe), [!UICONTROL ID DA CONTA TÉCNICA], [!UICONTROL ID DA ORGANIZAÇÃO] e [!UICONTROL CLIENT T] para [!UICONTROL Configurações do serviço de marcação inteligente de ativos] da configuração de nuvem em [!DNL Experience Manager].
 
@@ -150,7 +149,7 @@ Após concluir a configuração, use um MBean JMX para validar a configuração.
 
    Os resultados da validação são exibidos na mesma caixa de diálogo.
 
-## Habilitar marcação inteligente no fluxo de trabalho do Ativo de atualização DAM (Opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+## Habilitar marcação inteligente no fluxo de trabalho Ativo de atualização DAM (opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. Em [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 
@@ -190,6 +189,6 @@ Após concluir a configuração, use um MBean JMX para validar a configuração.
 >[!MORELIKETHIS]
 >
 >* [Gerenciar tags inteligentes](managing-smart-tags.md)
->* [Visão geral e como treinar tags inteligentes](enhanced-smart-tags.md)
->* [Diretrizes e regras para treinar o Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
+* [Visão geral e como treinar tags inteligentes](enhanced-smart-tags.md)
+* [Diretrizes e regras para treinar o Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
 
