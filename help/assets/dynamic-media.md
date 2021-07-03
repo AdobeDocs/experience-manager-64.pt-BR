@@ -10,10 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
-feature: Asset Management,Renditions
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Gerenciamento de ativos,Representações
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 26%
@@ -83,7 +82,7 @@ Os ativos habilitados para mídia dinâmica incluem `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Alteração de exibições de ativos {#asset-views-change}
+### Alteração nas exibições de ativos {#asset-views-change}
 
 Com o Dynamic Media ativado, é possível ampliar e diminuir o zoom clicando nos botões `+` e `-`. Também é possível clicar/tocar para ampliar determinadas áreas. Reverter o traz para a versão original e você pode fazer a imagem em tela cheia clicando nas setas diagonais. O Dynamic Media ativado tem esta aparência:
 
