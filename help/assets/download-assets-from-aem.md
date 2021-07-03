@@ -2,16 +2,15 @@
 title: Baixe ativos digitais de [!DNL Adobe Experience Manager].
 description: Saiba como baixar ativos do  [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
-feature: Asset Management,Asset Distribution
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos,Distribuição de ativos
+role: User
+exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 3%
 
 ---
-
 
 # Baixar ativos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
