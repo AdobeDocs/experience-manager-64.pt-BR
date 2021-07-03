@@ -2,16 +2,15 @@
 title: Desenvolvimento de proxy de ativos
 description: 'Um proxy é uma instância AEM que usa trabalhadores proxy para processar trabalhos. Saiba como configurar um proxy AEM, operações suportadas, componentes de proxy e como desenvolver um trabalhador proxy personalizado. '
 contentOwner: AG
-feature: Asset Processing
-role: Administrator, Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Processamento do ativo
+role: Admin, Architect
+exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
-
 
 # Desenvolvimento de proxy de ativos {#assets-proxy-development}
 
