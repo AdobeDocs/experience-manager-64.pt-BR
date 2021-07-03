@@ -6,17 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
-feature: Viewer Presets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Predefinições do visualizador
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 25%
 
 ---
 
-# Aplicar predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
+# Aplicação de predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
 
 Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Você pode aplicar predefinições do visualizador criadas pelo administrador a um ativo.
 
