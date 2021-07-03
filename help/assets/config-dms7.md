@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuração,Modo Scene7
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5594'
 ht-degree: 3%
@@ -45,7 +45,7 @@ Para habilitar o Dynamic Media, você deve inicializar o Experience Manager usan
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## (Opcional) Migração de predefinições e configurações do Dynamic Media de 6.3 para 6.4 Zero Down {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Opcional) Migração de predefinições e configurações do Dynamic Media da versão 6.3 para a 6.4 do Zero Down {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Se você atualizar o Experience Manager Dynamic Media de 6.3 para 6.4 (que inclui a capacidade de zero implantações de tempo de inatividade), execute o seguinte comando curl para migrar todas as suas predefinições e configurações de `/etc` para `/conf` no CRXDE Lite.
 
@@ -61,7 +61,7 @@ Para todas as atualizações, com ou sem o pacote de compatibilidade, você pode
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-## (Opcional) Instalação do pacote de recursos 18912 para migração de ativos em massa {#installing-feature-pack}
+## (Opcional) Instalando o feature pack 18912 para a migração de ativos em massa {#installing-feature-pack}
 
 O Feature pack 18912 permite assimilar ativos em massa por meio de FTP ou migrar ativos do Dynamic Media - Modo híbrido ou Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Ele está disponível na Adobe Professional Services.
 
@@ -141,7 +141,7 @@ As tarefas de configuração e configuração são:
 * [Adição de tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats)
 * [Criando predefinições de conjuntos de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Configuração de publicação para o Servidor de imagem {#publishing-setup-for-image-server}
+#### Configuração de publicação para o servidor de imagem {#publishing-setup-for-image-server}
 
 As configurações de Configuração de publicação determinam como os ativos são entregues por padrão no Dynamic Media. Se nenhuma configuração for especificada, o Dynamic Media fornece um ativo de acordo com as configurações padrão definidas na Configuração de publicação. Por exemplo, uma solicitação para fornecer uma imagem que não inclua um atributo de resolução gera uma imagem com a configuração Resolução de objeto padrão .
 
@@ -209,7 +209,7 @@ Isso faria o seguinte:
 * As representações dinâmicas que retornam a saída RGB, a retornam no espaço de cores `sRGB`.
 * As representações dinâmicas que retornam a saída CMYK, a retornam no espaço de cores `WebCoated`.
 
-#### Editar tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
+#### Edição de tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
 
 Você pode definir quais tipos de ativos são processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
@@ -242,7 +242,7 @@ Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 
 1. No canto superior esquerdo da página, toque em **[!UICONTROL CRXDE Lite]** para retornar ao Experience Manager.
 
-#### Adicionar tipos MIME personalizados para formatos não suportados {#adding-custom-mime-types-for-unsupported-formats}
+#### Adição de tipos MIME personalizados para formatos não compatíveis {#adding-custom-mime-types-for-unsupported-formats}
 
 Você pode adicionar tipos MIME personalizados para formatos não compatíveis no Experience Manager Assets. Para garantir que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo Experience Manager, mova o tipo MIME antes de **[!UICONTROL image_]** e seu valor ativado seja definido como **[!UICONTROL false]**.
 
@@ -494,7 +494,7 @@ O Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot
 
 Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o parâmetro de trabalho de upload do tipo MIME Assets/Dynamic Media Classic com suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
-#### Atualização da fila do Fluxo de trabalho transitório do Granite {#updating-the-granite-transient-workflow-queue}
+#### Atualização da fila de Fluxo de trabalho transitório do Granite {#updating-the-granite-transient-workflow-queue}
 
 A fila Fluxo de trabalho de trânsito do Granite é usada para o fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**. No Dynamic Media, é usado para assimilação e processamento de imagens.
 
