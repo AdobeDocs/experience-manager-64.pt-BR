@@ -2,16 +2,15 @@
 title: Migrar ativos para o Adobe Experience Manager Assets em massa
 description: Como trazer ativos para o AEM, aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
-feature: Migration,Renditions,Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Migração,Representações,Gerenciamento de Ativos
+role: Architect,Admin
+exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 11%
 
 ---
-
 
 # Guia de migração de ativos {#assets-migration-guide}
 
@@ -48,7 +47,7 @@ A migração de ativos para AEM requer várias etapas e deve ser exibida como um
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Desative workflows {#disable-workflows}
+### Desativar workflows {#disable-workflows}
 
 Antes de iniciar uma migração, desative os iniciadores do fluxo de trabalho `DAM Update Asset`. É melhor assimilar todos os ativos no sistema e, em seguida, executar os workflows em lotes. Se você já estiver ao vivo enquanto a migração estiver ocorrendo, poderá agendar essas atividades para serem executadas fora do horário.
 
@@ -62,7 +61,7 @@ O desempenho e a estabilidade são questões importantes ao assimilar ativos no 
 
 Há duas abordagens para carregar os ativos no sistema: uma abordagem por push usando HTTP ou uma abordagem por pull usando as APIs do JCR.
 
-#### Push por HTTP {#push-through-http}
+#### Enviar por HTTP {#push-through-http}
 
 A equipe do Managed Services do Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório em outro diretório em uma instância do AEM. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
 
@@ -73,7 +72,7 @@ Há duas desvantagens principais ao usar a abordagem de passar por https:
 
 A outra abordagem para assimilar ativos é obter ativos do sistema de arquivos local. No entanto, se não for possível obter uma unidade externa ou compartilhamento de rede montado no servidor para executar uma abordagem baseada em pull, publicar os ativos por HTTP é a melhor opção.
 
-#### Puxe do sistema de arquivos local {#pull-from-the-local-file-system}
+#### Retirar do sistema de arquivos local {#pull-from-the-local-file-system}
 
 O [Importador de ativos CSV das Ferramentas de AEM ACS](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do AEM Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivo de rede ou por uma unidade externa.
 
@@ -114,11 +113,11 @@ Depois que os ativos tiverem sido ativados, você poderá clonar sua instância 
 1. Inicie o ambiente.
 1. Atualize a configuração de qualquer agente de replicação no(s) autor(es) para apontar para as instâncias de publicação corretas ou os agentes de liberação do dispatcher na nova instância para apontar para os dispatchers corretos para o novo ambiente.
 
-### Habilitar workflows {#enable-workflows}
+### Ativar workflows {#enable-workflows}
 
 Depois de concluir a migração, os iniciadores dos fluxos de trabalho do Ativo de atualização do DAM devem ser reativados para oferecer suporte à geração de representação e extração de metadados para o uso diário do sistema.
 
-## Migrar ativos entre implantações de AEM {#migrate-between-aem-instances}
+## Migrar ativos entre implantações AEM {#migrate-between-aem-instances}
 
 Embora não seja quase tão comum, às vezes é necessário migrar grandes quantidades de dados de uma instância de AEM para outra; por exemplo, ao executar uma atualização de AEM, atualize seu hardware ou migre para um novo data center, como com uma migração do AMS.
 
