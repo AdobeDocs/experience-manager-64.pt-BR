@@ -2,16 +2,15 @@
 title: Pesquisar ativos no AEM
 description: Saiba como encontrar os ativos necessários no AEM usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Pesquisar,Metadados
+role: User
+exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 3%
+source-wordcount: '554'
+ht-degree: 2%
 
 ---
-
 
 # Pesquisar ativos no AEM {#search-assets-in-aem}
 
