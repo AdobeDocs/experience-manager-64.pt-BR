@@ -2,16 +2,15 @@
 title: Lightbox
 description: Saiba mais sobre o Lightbox no AEM Assets.
 contentOwner: AG
-feature: Developer Tools,Renditions
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Ferramentas de Desenvolvedor,Representações
+role: User,Admin
+exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
-
 
 # Lightbox {#lightbox}
 
@@ -42,4 +41,3 @@ Se você for um usuário do Adobe Experience Manager (AEM) Assets, o Lightbox se
 1. Selecione os ativos que deseja remover.
 1. Na barra de ferramentas, toque/clique em **[!UICONTROL Remover]**.
 1. Na caixa de diálogo, toque/clique em **[!UICONTROL Remover]** para confirmar a ação de exclusão. Os ativos são excluídos do Lightbox.
-
