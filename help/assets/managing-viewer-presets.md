@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: Viewer Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Predefinições do visualizador
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 12%
@@ -54,7 +53,7 @@ Adicione, edite, exclua, publique, cancele a publicação e visualize predefini�
 >
 >Por padrão, o sistema mostra 15 predefinições do visualizador ao selecionar Visualizadores na exibição detalhada de um ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições do visualizador exibidas](#increasing-the-number-of-viewer-presets-that-display).
 
-## Suporte ao visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
+## Suporte de visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
 
 Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador de HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador de HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser *responsivo* e exibido de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
 
@@ -65,7 +64,7 @@ Consulte [Biblioteca de imagens responsivas](https://experienceleague.adobe.com/
 >Observe que você deve publicar todos os visualizadores prontos para uso antes de usá-los pela primeira vez.\
 >Consulte [Predefinições do Visualizador de Publicação.](#publishing-viewer-presets)
 
-## Compatibilidade do sistema predefinido do visualizador {#viewer-preset-system-compatibility}
+## Compatibilidade do sistema predefinido do visualizador  {#viewer-preset-system-compatibility}
 
 Todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media são totalmente compatíveis com os seguintes sistemas:
 
@@ -146,7 +145,7 @@ Consulte *Notas de versão dos visualizadores* no índice do [Guia de referênci
 | ZoomVertical_escuro | Zoom Vertical | html5_zoomverticalviewer_dark.css |
 | ZoomVertical_Light | Zoom Vertical | html5_zoomverticalviewer_light.css |
 
-### Matriz de gestos de visualizadores móveis compatível {#supported-mobile-viewers-gestures-matrix}
+### Matriz de gestos de visualizadores móveis compatíveis {#supported-mobile-viewers-gestures-matrix}
 
 A tabela a seguir identifica os gestos do visualizador móvel que são compatíveis com dispositivos iOS, Android 2.x e Android 3.x.
 
@@ -160,7 +159,7 @@ A tabela a seguir identifica os gestos do visualizador móvel que são compatív
 | **Deslizar** | Rola a barra de amostra | Rolar imagens | Rotação |
 | **Cintilação** | Rola a barra de amostra | Rolar imagens | Rotação |
 
-## Aumentar o número de predefinições do visualizador do Dynamic Media que exibem {#increasing-the-number-of-viewer-presets-that-display}
+## Aumentar o número de predefinições do visualizador do Dynamic Media exibidas {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM mostra uma grande variedade de predefinições do visualizador ao visualizar ativos de **[!UICONTROL Exibição de detalhes > Visualizadores]**. Você pode aumentar ou diminuir o número de visualizadores exibidos.
 
@@ -179,7 +178,7 @@ AEM mostra uma grande variedade de predefinições do visualizador ao visualizar
 1. Na propriedade **[!UICONTROL limit]**, altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Toque em **[!UICONTROL Salvar tudo]**.
 
-## Criar uma nova predefinição do visualizador do Dynamic Media {#creating-a-new-viewer-preset}
+## Criação de uma nova predefinição do visualizador do Dynamic Media {#creating-a-new-viewer-preset}
 
 A criação de predefinições do visualizador permite aplicar várias configurações para visualizar e interagir com ativos. No entanto, não é necessário criar novas predefinições do visualizador. Se preferir, você pode usar as predefinições padrão do visualizador pronto para uso que já vêm com o AEM Assets.
 
@@ -297,7 +296,7 @@ A lógica que o visualizador usa para quantas miniaturas são exibidas no painel
 
    Usando o exemplo na tabela acima, 30 segundos / 3 subsegmentos de vídeo = 10 segundos de exibição de cada subsegmento de vídeo.
 
-### Considerações especiais para criar uma predefinição do visualizador do banner do carrossel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+### Considerações especiais para criar uma predefinição do visualizador de banner do carrossel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 Ao criar predefinições do visualizador de banner do carrossel, a alteração do estilo dos pontos de acesso pode ser acessada da seguinte maneira:
 
@@ -305,7 +304,7 @@ Ao criar predefinições do visualizador de banner do carrossel, a alteração d
 |---|---|---|
 | **Ícone do ponto de acesso** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na guia **[!UICONTROL Aparência]**, em **[!UICONTROL Componente selecionado]**, toque em **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Plano de fundo]** e, no campo **[!UICONTROL Imagem]**, navegue até a imagem de plano de fundo desejada. |
 
-## Ativar ou desativar as predefinições do visualizador do Dynamic Media {#activating-or-deactivating-viewer-presets}
+## Ativação ou desativação das predefinições do visualizador do Dynamic Media {#activating-or-deactivating-viewer-presets}
 
 As Predefinições do visualizador disponíveis na interface do usuário dependem de quais estão ativas no modo Autor. Por padrão, uma predefinição do visualizador é *On* depois de criá-la. Se você desativar a predefinição, ela não será exibida no modo Autor. Se a predefinição for publicada. ele sempre será publicado independentemente de estar ligado ou desligado. Talvez você queira desativar as predefinições do visualizador se a lista se tornar muito difícil ou se não quiser que uma predefinição do visualizador seja disponibilizada para uso.
 
@@ -332,7 +331,7 @@ Consulte também [Visualização de ativos](previewing-assets.md).
 1. Selecione uma ou mais predefinições do visualizador que você deseja publicar.
 1. Na barra de ferramentas, toque no ícone **[!UICONTROL Publish]**.
 
-## Classificação das predefinições do visualizador do Dynamic Media {#sorting-viewer-presets}
+## Classificação de predefinições do visualizador do Dynamic Media {#sorting-viewer-presets}
 
 **Para classificar as predefinições** do visualizador do Dynamic Media:
 
@@ -354,7 +353,7 @@ Observe que a edição de qualquer *predefinições predefinidas e predefinidas 
    * Toque em **[!UICONTROL Salvar]** para salvar suas alterações e retornar à página **[!UICONTROL Predefinição do visualizador]**.
    * Toque em **[!UICONTROL Cancelar]** para evitar alterações feitas e retornar à página **[!UICONTROL Predefinição do visualizador]**.
 
-## Excluindo predefinições personalizadas do visualizador do Dynamic Media {#deleting-custom-viewer-presets}
+## Exclusão de predefinições personalizadas do visualizador do Dynamic Media {#deleting-custom-viewer-presets}
 
 É possível excluir as Predefinições do visualizador que você criou e adicionou ao Dynamic Media.
 
@@ -380,7 +379,7 @@ Se já tiver publicado o ativo e o visualizador selecionado, os botões **[!UICO
 
    Você pode [copiar o URL para compartilhar](linking-urls-to-yourwebapplication.md) com outros usuários.
 
-## Fornecer ativos com predefinições do visualizador do Dynamic Media {#delivering-assets-with-viewer-presets}
+## Entrega de ativos com predefinições do visualizador do Dynamic Media {#delivering-assets-with-viewer-presets}
 
 Para obter os URLs das Predefinições do visualizador, consulte [Vincular URLs à sua aplicação web](linking-urls-to-yourwebapplication.md). Consulte também [Incorporação do visualizador de vídeo em uma página da Web](embed-code.md).
 
