@@ -7,9 +7,8 @@ content-type: reference
 topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 27%
@@ -287,7 +286,7 @@ Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração
    >   * Vídeo F4V único
 
 
-### Navegar pelo conteúdo na interface otimizada para toque {#browsing-content-in-the-touch-optimized-ui}
+### Navegação de conteúdo na interface otimizada para toque {#browsing-content-in-the-touch-optimized-ui}
 
 Você pode acessar o navegador de conteúdo na interface otimizada para toque ou clássica. Atualmente, a interface otimizada para toque tem a seguinte limitação:
 
