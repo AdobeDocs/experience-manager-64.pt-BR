@@ -2,16 +2,15 @@
 title: Suporte para metadados IPTC
 description: Saiba como o Adobe Experience Manager (AEM) Assets suporta metadados IPTC, classificações criativas e palavras-chave adicionadas a ativos por meio do Adobe Bridge e de outros aplicativos criativos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator,Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadados
+role: User,Admin,Leader
+exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '370'
 ht-degree: 7%
 
 ---
-
 
 # Suporte para metadados IPTC {#support-for-iptc-metadata}
 
@@ -34,7 +33,7 @@ A página Propriedades dos ativos agora inclui guias separadas para exibir os me
 1. Edite as propriedades de metadados da Extensão ITPC , conforme necessário.
 1. Toque/clique em **[!UICONTROL Salvar e fechar]** para salvar as alterações.
 
-## Suporte para Classificação Criativa {#creative-rating-support}
+## Suporte para Classificação criativa {#creative-rating-support}
 
 Além de exibir classificações de usuários individuais e classificações agregadas, a página Propriedades agora exibe as classificações atribuídas aos ativos por meio do Adobe Bridge e de outros aplicativos de criação
 
@@ -44,9 +43,8 @@ Essa classificação é uma propriedade somente leitura e varia entre 1 e 5. Voc
 
 No entanto, essa propriedade não está indexada no momento para evitar qualquer conflito com as alterações personalizadas feitas pelos usuários.
 
-## Suporte a palavras-chave {#keyword-support}
+## Suporte a palavra-chave {#keyword-support}
 
 A guia **[!UICONTROL IPTC]** da página Propriedades também exibe as palavras-chave adicionadas aos ativos por meio do Adobe Bridge e de outros aplicativos criativos. Também é possível editar essas palavras-chave e adicionar mais palavras-chave na guia **[!UICONTROL IPTC]**.
 
 ![keywords](assets/keywords.png)
-
