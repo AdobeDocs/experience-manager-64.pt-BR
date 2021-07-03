@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
-feature: Mix Media Sets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Misturar conjuntos de mídia
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 18%
@@ -28,7 +27,7 @@ Os Conjuntos de mídias mistas são designados por um banner com a palavra **[!U
 >
 >Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciar ativos com a interface de toque](managing-assets-touch-ui.md).
 
-## Início rápido: Conjuntos de mídias mistas {#quick-start-mixed-media-sets}
+## Início rápido: Conjuntos de mídia mista {#quick-start-mixed-media-sets}
 
 Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas etapas:
 
