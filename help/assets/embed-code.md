@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Components
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Componentes
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 20%
@@ -58,7 +57,7 @@ Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.
 1. Na caixa de diálogo **[!UICONTROL Incorporar código]**, copie o código inteiro para a área de transferência e toque em **[!UICONTROL Fechar]**.
 1. Cole o código incorporado nas páginas da Web.
 
-## Usar HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Usar HTTP/2 para fornecer ativos da Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media agora pode ser feita via HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
