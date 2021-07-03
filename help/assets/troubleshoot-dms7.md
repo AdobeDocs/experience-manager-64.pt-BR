@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Troubleshooting
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Resolução de problemas
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -20,7 +19,7 @@ ht-degree: 1%
 
 O documento a seguir descreve a solução de problemas para o Dynamic Media que executa o modo de execução **dynamicmedia_scene7**.
 
-## Configuração {#setup-and-configuration}
+## Configuração e configuração {#setup-and-configuration}
 
 Certifique-se de que o Dynamic Media foi configurado corretamente fazendo o seguinte:
 
