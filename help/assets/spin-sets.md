@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
-feature: Spin Sets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Conjuntos de rotação
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1845'
 ht-degree: 6%
@@ -86,7 +85,7 @@ No mínimo, você precisa de 8 a 12 capturas de um item para um Conjunto de rota
 
 Você pode fazer upload de imagens para os Conjuntos de rotação da mesma maneira que faria [carregar qualquer outro ativo no AEM Assets](managing-assets-touch-ui.md).
 
-### Diretrizes para fotografar imagens do conjunto de rotação {#guidelines-for-shooting-spin-set-images}
+### Diretrizes para fotografar imagens do Conjunto de rotação {#guidelines-for-shooting-spin-set-images}
 
 Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito giratório da imagem. No entanto, incluir muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. AEM recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
 
@@ -96,7 +95,7 @@ Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotaç
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
 * Use imagens de rotação para roupas de moda com um manequim ou modelo. Frequentemente, o manequim é completamente mascarado (utilizando um manequim de vidro) ou na imagem aparece um manequim/moldura estilizada. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com uma fita no chão para guiar o modelo para pisar e olhe na direção de cada tomada.
 
-## Criando Conjuntos de Rotação {#creating-spin-sets}
+## Criação de conjuntos de rotação {#creating-spin-sets}
 
 A ordem em que as imagens aparecem em um conjunto de rotação é importante. Certifique-se de ordená-los para que o giro seja uma exibição suave de 360 graus.
 
@@ -144,7 +143,7 @@ A ordem em que as imagens aparecem em um conjunto de rotação é importante. Ce
 
 1. Toque em **[!UICONTROL Salvar]**. Seu Conjunto de rotação recém-criado aparece na pasta em que você o criou.
 
-## Exibindo Conjuntos de rotação {#viewing-spin-sets}
+## Visualização de conjuntos de rotação {#viewing-spin-sets}
 
 Você pode criar conjuntos de rotação na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). No entanto, os conjuntos criados usando predefinições de conjunto de lotes, do *not* aparecem na interface do usuário. Você pode acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você criou os Conjuntos de rotação na interface do usuário).
 
