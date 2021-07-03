@@ -4,16 +4,15 @@ description: Este artigo descreve como criar um esquema de metadados para pastas
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadados
+role: User,Admin
+exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1086'
 ht-degree: 10%
 
 ---
-
 
 # Esquema de metadados de pasta {#folder-metadata-schema}
 
@@ -33,7 +32,7 @@ Use o editor do Forms do Esquema de metadados da pasta para criar e editar esque
 1. Na página Forms do esquema de metadados da pasta , toque/clique em **[!UICONTROL Criar]**.
 1. Especifique um nome para o formulário e toque/clique em **[!UICONTROL Criar]**. O novo formulário de esquema é listado na página Forms do Esquema.
 
-## Editar formulários de esquema de metadados da pasta {#edit-folder-metadata-schema-forms}
+## Editar formulários de esquema de metadados de pastas {#edit-folder-metadata-schema-forms}
 
 É possível editar um formulário de esquema de metadados recém-adicionado ou existente, incluindo o seguinte:
 
@@ -78,7 +77,7 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 | [!UICONTROL Tags padrão] | Adicionar uma tag. |
 | [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
 
-### Editar itens de formulário {#editing-form-items}
+### Edição de itens de formulário {#editing-form-items}
 
 Para editar as propriedades dos itens de formulário, toque/clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**.
 
@@ -116,7 +115,7 @@ Você pode atribuir um esquema de metadados de pasta a uma pasta na página Form
 
 Se um esquema de metadados for configurado para uma pasta, o caminho para o formulário de esquema será armazenado na propriedade `folderMetadataSchema` do nó da pasta em .*/jcr:content*.
 
-### Atribua a um schema a partir da página Esquema de Metadados da Pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+### Atribuir a um schema a partir da página Esquema de metadados da pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Na página Forms do Esquema de metadados da pasta , selecione o formulário de esquema que deseja aplicar a uma pasta.
@@ -131,7 +130,7 @@ Se um esquema de metadados for configurado para uma pasta, o caminho para o form
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-### Atribua um esquema ao criar uma pasta {#assign-a-schema-when-creating-a-folder}
+### Atribuir um schema ao criar uma pasta {#assign-a-schema-when-creating-a-folder}
 
 Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo menos um esquema de metadados de pasta existir no sistema, uma lista extra será exibida na caixa de diálogo **[!UICONTROL Criar pasta]**. Você pode selecionar o schema desejado. Por padrão, nenhum esquema é selecionado.
 
@@ -144,7 +143,7 @@ Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo
 1. Abra as propriedades dos metadados da pasta na qual você aplicou o esquema de metadados.
 1. Para exibir os campos de metadados da pasta, toque/clique na guia **[!UICONTROL Metadados da pasta]**.
 
-## Use o esquema de metadados da pasta {#use-the-folder-metadata-schema}
+## Usar o esquema de metadados da pasta {#use-the-folder-metadata-schema}
 
 Abra as propriedades de uma pasta configurada com um esquema de metadados de pasta. Uma guia **[!UICONTROL Metadados da pasta]** é exibida na página Propriedades da pasta. Para exibir o formulário de esquema de metadados da pasta, selecione essa guia.
 
