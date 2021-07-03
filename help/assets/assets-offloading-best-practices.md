@@ -2,16 +2,15 @@
 title: Práticas recomendadas de descarregamento de ativos
 description: Casos de uso recomendados e práticas recomendadas para descarregar a assimilação de ativos e workflows de replicação no AEM Assets.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos
+role: User,Admin
+exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1820'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de descarregamento de ativos {#assets-offloading-best-practices}
 
@@ -27,7 +26,7 @@ Descarregar essas tarefas em instâncias dedicadas de trabalho pode reduzir os c
 
 O AEM Assets implementa uma extensão de fluxo de trabalho específica de ativo nativo para descarregamento. Ele se baseia na extensão de fluxo de trabalho genérica fornecida pela estrutura de descarregamento, mas inclui recursos adicionais específicos de ativos na implementação. O objetivo da descarga de Ativos é executar com eficiência o fluxo de trabalho do Ativo de atualização DAM em um ativo carregado. O descarregamento de ativos permite obter mais controle dos workflows de assimilação.
 
-## Componentes de descarga do AEM Assets {#aem-assets-offloading-components}
+## Componentes de descarregamento do AEM Assets {#aem-assets-offloading-components}
 
 O diagrama a seguir descreve os componentes principais no processo de descarregamento de ativos:
 
@@ -37,7 +36,7 @@ O diagrama a seguir descreve os componentes principais no processo de descarrega
 
 O fluxo de trabalho DAM Update Asset Offloading é executado no servidor principal (autor) no qual o usuário faz upload dos ativos. Esse workflow é acionado por um iniciador regular do workflow. Em vez de processar o ativo carregado, esse workflow de descarregamento cria um novo trabalho, usando o tópico *com/adobe/granite/workflow/offloading*. O workflow de descarregamento adiciona o nome do workflow de destino - o fluxo de trabalho do Ativo de atualização DAM , neste caso, e o caminho do ativo para a carga da tarefa. Depois de criar o trabalho de descarregamento, o workflow de descarregamento na instância primária aguarda até que o trabalho de descarregamento tenha sido executado.
 
-### Gerente de tarefas {#job-manager}
+### Gerente de emprego {#job-manager}
 
 O gerenciador de tarefas distribui novos trabalhos para instâncias de trabalho. Ao projetar o mecanismo de distribuição, é importante levar a ativação do tópico em consideração. As tarefas só podem ser atribuídas a instâncias em que o tópico da tarefa está ativado. Desative o tópico `com/adobe/granite/workflow/offloading` no principal e ative-o no trabalhador para garantir que o trabalho seja atribuído ao trabalhador.
 
@@ -45,7 +44,7 @@ O gerenciador de tarefas distribui novos trabalhos para instâncias de trabalho.
 
 A estrutura de descarregamento identifica tarefas de descarregamento de workflow atribuídas a instâncias de trabalhador e usa replicação para transportá-las fisicamente, incluindo sua carga útil (por exemplo, imagens a serem assimiladas), para trabalhadores.
 
-### Descarga de trabalho consumidor de trabalho {#workflow-offloading-job-consumer}
+### Descarga de trabalho consumidor {#workflow-offloading-job-consumer}
 
 Depois que um trabalho é gravado no trabalhador, o gerenciador de trabalhos chama o consumidor do trabalho responsável pelo tópico *com/adobe/granite/workflow/offloading*. O consumidor de trabalho executa então o fluxo de trabalho Ativo de atualização do DAM no ativo.
 
@@ -117,18 +116,18 @@ Por padrão, o descarregamento do transporte usa a replicação reversa para ret
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
-### Uso do armazenamento de dados compartilhado e da replicação sem binários entre autor e trabalhadores {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+### Uso do armazenamento de dados compartilhado e da replicação sem binários entre autor e trabalhadores  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
 Recomenda-se o uso de replicação sem binários para reduzir a sobrecarga de transporte para descarregamento de ativos. Para saber como configurar a replicação sem binários para um armazenamento de dados compartilhado, consulte [Configuração de armazenamentos de nó e armazenamento de dados em AEM](/help/sites-deploying/data-store-config.md). O procedimento não é diferente para descarregamento de Ativos, exceto que envolve outros agentes de replicação. Como a replicação sem binário só funciona com agentes de replicação de encaminhamento, você também deve usar a replicação de encaminhamento para todos os agentes de descarregamento.
 
-### Desativar pacotes de transporte {#turning-off-transport-packages}
+### Desativação de pacotes de transporte {#turning-off-transport-packages}
 
 Por padrão, a descarga cria um pacote de conteúdo que contém o trabalho de descarregamento e a carga útil do trabalho (o ativo original) e transporta esse único pacote de descarregamento usando uma única solicitação de replicação. A criação desses pacotes de descarregamento é contraproducente ao usar a replicação sem binário, pois os binários são serializados no pacote novamente ao criar o pacote. O uso desses pacotes de transporte pode ser desativado, o que faz com que o trabalho de descarregamento e a carga sejam transportados em várias solicitações de replicação, uma para cada entrada de carga. Dessa forma, os benefícios da replicação sem binário podem ser utilizados.
 
 1. Abra a configuração do componente *OffloadingDefaultTransporter* em [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
 1. Desative a propriedade *Pacote de Replicação (default.transport.contentpackage)*.
 
-### Desativar o transporte do modelo de workflow {#disabling-the-transport-of-workflow-model}
+### Desabilitação do modelo de transporte de workflow {#disabling-the-transport-of-workflow-model}
 
 Por padrão, o workflow de descarregamento *DAM Update Asset Offloading* adiciona o modelo de fluxo de trabalho para chamar o trabalhador no payload do trabalho. Como esse workflow segue o modelo pronto para uso *Ativo de atualização do DAM* por padrão, essa carga adicional pode ser removida.
 
@@ -161,4 +160,3 @@ Este documento foca na descarga de ativos. Esta é uma documentação adicional 
 
 * [Descarregamento de Tarefas](/help/sites-deploying/offloading.md)
 * [Descarregamento do fluxo de trabalho de ativos](/help/sites-administering/workflow-offloader.md)
-
