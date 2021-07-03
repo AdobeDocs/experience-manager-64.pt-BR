@@ -2,16 +2,15 @@
 title: Classificação aprimorada de ativos no AEM
 description: Saiba como o AEM Assets implanta a classificação do lado do servidor para classificar ativos de pasta ou uma consulta de pesquisa de uma só vez, em vez de classificá-los em lotes no lado do cliente.
 contentOwner: AG
-feature: Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: 'Pesquisar  '
+role: User
+exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
-
 
 # Classificação aprimorada de ativos no AEM {#enhanced-sorting-of-assets-in-aem}
 
@@ -54,7 +53,7 @@ O AEM Assets permite classificar ativos de pasta com base nos seguintes campos:
 >
 >Para classificar os valores nas colunas `Name` ou `Title`, sobreponha `/libs/dam/gui/content/commons/availablecolumns` e altere o valor de `sortable` para `True`.
 
-## Classificação de ativos nos resultados de pesquisa {#sorting-assets-in-search-results}
+## Classificação de ativos em resultados de pesquisa {#sorting-assets-in-search-results}
 
 Você pode classificar os resultados da pesquisa com base nos seguintes campos:
 
@@ -89,5 +88,4 @@ O AEM Assets permite classificar cronologicamente as entradas da linha do tempo,
 
 1. Clique/toque no ícone **[!UICONTROL Sort]** ao lado do rótulo **[!UICONTROL Date]**. Com base em sua seleção, as anotações são listadas na ordem cronológica/inversa em que foram adicionadas ao ativo.
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
-
+   ![chlimage_1-401](assets/chlimage_1-401.png)
