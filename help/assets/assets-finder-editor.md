@@ -2,16 +2,15 @@
 title: Criar e configurar as páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
-feature: Developer Tools,Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Ferramentas para desenvolvedores, Gerenciamento de ativos
+role: User,Admin
+exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3318'
 ht-degree: 2%
 
 ---
-
 
 # Criar e configurar as páginas do Editor de ativos {#creating-and-configuring-asset-editor-pages}
 
@@ -197,7 +196,7 @@ Personalize o editor de ativos para determinar como os usuários podem visualiza
 >
 >Se quiser adicionar campos personalizados ao editor de ativos do DAM, adicione novos nós cq:Widget a `/apps/dam/content/asseteditors.`
 
-### Crie a página Editor de ativos {#creating-the-asset-editor-page}
+### Criar a página Editor de ativos {#creating-the-asset-editor-page}
 
 Ao criar a página Editor de ativos , uma boa prática é criar a página logo abaixo da página Compartilhamento de ativos .
 
