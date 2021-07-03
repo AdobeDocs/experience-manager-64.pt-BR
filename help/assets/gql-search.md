@@ -2,16 +2,15 @@
 title: Pesquisa de texto completo GQL
 description: Explore o recurso de pesquisa de texto completo do GQL no AEM Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Pesquisar,Metadados
+role: User
+exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '879'
 ht-degree: 2%
 
 ---
-
 
 # Pesquisa de texto completo GQL {#gql-full-text-search}
 
@@ -64,10 +63,10 @@ O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base
 | [!UICONTROL Proprietário de direitos autorais] | copyrights towner: &quot;Adobe Systems&quot; |
 | [!UICONTROL Contribuinte] | colaborador:John |
 | [!UICONTROL Termos de Uso ] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Criado] | criado:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Expira Data] | expira:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Criado] | criado:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Expira Data] | expira:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL No horário] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Hora de desligar] | offtime:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Hora de desligar] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Intervalo de tempo]  (expira o dateontime, offtime) | campo de faceta: limite inferior..upperbound |
 | [!UICONTROL Caminho] | /content/dam/&lt;nome da pasta> |
 | [!UICONTROL Título do PDF] | pdftitle:&quot;Documento do Adobe&quot; |
