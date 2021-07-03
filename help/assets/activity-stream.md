@@ -2,18 +2,17 @@
 title: Fluxo de atividades na linha do tempo
 description: 'Este artigo descreve como exibir registros de atividades para ativos na linha do tempo. '
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos
+role: User,Admin
+exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '218'
 ht-degree: 33%
 
 ---
 
-
-# Fluxo de atividade na linha do tempo {#activity-stream-in-timeline}
+# Fluxo de atividades na linha do tempo {#activity-stream-in-timeline}
 
 Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos no Adobe Experience Manager (AEM) Assets, o recurso de fluxo de Atividade atualizará a linha do tempo para refletir a atividade.
 
