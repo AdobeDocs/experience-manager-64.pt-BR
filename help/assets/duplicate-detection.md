@@ -2,18 +2,17 @@
 title: Ativar a detecção de duplicatas
 description: Saiba como habilitar a detecção de ativos duplicados no AEM.
 contentOwner: AG
-feature: Asset Management,Asset Reports
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos,Relatórios de ativos
+role: User,Admin
+exl-id: 138cf649-9e21-415e-9861-b07caacc85db
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-
-# Ativando a Detecção de Duplicatas {#enabling-duplicate-detection}
+# Ativar a detecção de duplicatas {#enabling-duplicate-detection}
 
 Se você tentar fazer upload de um ativo que existe no Adobe Experience Manager (AEM) Assets, o recurso de detecção de duplicatas o identificará como duplicado. A detecção de duplicados está desabilitada por padrão. Para ativar o recurso, execute as seguintes etapas:
 
