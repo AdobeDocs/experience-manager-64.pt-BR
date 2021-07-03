@@ -7,10 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 exl-id: 36bb526c-a6d9-4296-8318-97ac72d6b3ba
-feature: Publishing
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Publicação
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 12%
@@ -50,7 +49,7 @@ Consulte também [Vincular URLs ao seu Aplicativo Web.](linking-urls-to-yourweba
 1. Na caixa de diálogo **[!UICONTROL Incorporar imagem responsiva]**, selecione e copie o texto do código responsivo e o cole no site para acessar o ativo responsivo.
 1. Edite os pontos de interrupção padrão no código incorporado para corresponder aos do site responsivo diretamente no código. Além disso, teste as diferentes resoluções de imagem que estão sendo veiculadas em diferentes pontos de interrupção da página.
 
-## Usar HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
+## Usar HTTP/2 para fornecer ativos da Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media é compatível com o uso do HTTP/2, o que oferece melhor resposta e tempos de carregamento.
 
