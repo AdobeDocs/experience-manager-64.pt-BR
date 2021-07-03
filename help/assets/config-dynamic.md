@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Configuração,Modo Híbrido
-role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 1%
@@ -132,7 +131,7 @@ Você pode optar por implementar o Dynamic Media somente para geração de image
  </tbody> 
 </table>
 
-## Ativar o Dynamic Media {#enabling-dynamic-media}
+## Ativação do Dynamic Media {#enabling-dynamic-media}
 
 [As ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) mídias dinâmicas são desativadas por padrão. Para aproveitar os recursos do Dynamic Media, é necessário ativar a mídia dinâmica usando o modo de execução **[!UICONTROL dynamicmedia]** como você faria, por exemplo, com o modo de execução **[!UICONTROL publish]**. Antes de habilitar, verifique os [requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
@@ -176,7 +175,7 @@ Para habilitar a mídia dinâmica, você deve habilitar o modo de execução da 
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - O log s7access registra cada solicitação feita ao Dynamic Media por meio de `/is/image` e `/is/content`.
    Esses logs são usados somente quando o Dynamic Media está ativado. Eles não estão incluídos no pacote **Download Full** gerado a partir da página **[!UICONTROL system/console/status-Bundlelist]**; ao chamar o Suporte ao cliente em caso de problema com a Dynamic Media, anexe esses dois registros ao problema.
 
-### Se você instalou AEM em uma porta ou um caminho de contexto diferente ... {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Se você instalou AEM em uma porta ou um caminho de contexto diferente... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 Se estiver implantando [AEM em um servidor de aplicativos](/help/sites-deploying/application-server-install.md) e tiver o Dynamic Media ativado, será necessário configurar o domínio **self** no externalizador. Caso contrário, a geração de miniaturas de ativos não funcionará corretamente para ativos de mídia dinâmica.
 
@@ -194,7 +193,7 @@ Em uma implantação AEM do QuickStart WAR, o número da porta e o caminho do co
 >[!NOTE]
 Em uma implantação independente [AEM do Quickstart](/help/sites-deploying/deploy.md), um domínio **self** geralmente não precisa ser configurado, pois o número da porta e o caminho do contexto podem ser configurados automaticamente. No entanto, se todas as interfaces de rede estiverem desativadas, será necessário configurar o domínio **self**.
 
-## Desabilitação do Dynamic Media {#disabling-dynamic-media}
+## Desabilitação do Dynamic Media  {#disabling-dynamic-media}
 
 A mídia dinâmica não está habilitada por padrão. No entanto, se a mídia dinâmica foi ativada anteriormente, convém desativá-la posteriormente.
 
@@ -216,7 +215,7 @@ Para desativar a mídia dinâmica depois de habilitá-la, remova o sinalizador d
    Depois que o modo de execução Dynamic Media é desativado, a etapa do fluxo de trabalho que gera a representação `qdam.pyramid.tiff` é ignorada automaticamente. Isso também desativa o suporte de representação dinâmica e outros recursos do Dynamic Media.
    Observe também que, quando o modo de execução Dynamic Media é desativado após a configuração do servidor de AEM, todos os ativos que foram carregados nesse modo de execução agora são inválidos.
 
-## (Opcional) Migração de predefinições e configurações do Dynamic Media de 6.3 para 6.4, tempo de inatividade zero {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Opcional) Migração de predefinições e configurações do Dynamic Media de 6.3 para 6.4 sem tempo de inatividade {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Se você estiver atualizando AEM Dynamic Media de 6.3 para 6.4 - o que agora inclui a capacidade de zero implantações de tempo de inatividade (também conhecidas como &quot;Opt-in&quot;) - é necessário executar o seguinte comando curl para migrar todas as predefinições e configurações de `/etc` para `/conf` no CRXDE Lite.
 
@@ -249,7 +248,7 @@ O limite de memória é configurável e deve se ajustar à disponibilidade de re
 Uma imagem que requer mais do que o limite máximo de memória será rejeitada.
 Para alterar o limite de memória para a criação de PTIFF, navegue até **[!UICONTROL Tools > Operations > Web Console > Adobe CQ Scene7 PTiffManager]** e altere o valor `maxMemory`.
 
-### Configuração da autenticação {#setting-up-authentication}
+### Configurar autenticação {#setting-up-authentication}
 
 Você precisa configurar a autenticação de replicação no autor para replicar imagens no serviço de entrega de imagens da Dynamic Media. Faça isso obtendo um KeyStore e salvando-o no usuário **[!UICONTROL dynamic-media-replication]** e configurando-o. O administrador da empresa deve ter recebido um email de boas-vindas com o arquivo KeyStore e as credenciais necessárias durante o processo de provisionamento. Caso não tenha recebido essa mensagem, entre em contato com o Atendimento ao cliente.
 
@@ -396,7 +395,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 
 **Solução**: Certifique-se de que o processo java no autor do AEM tenha a propriedade do sistema  **-Djavax.net.ssl.trustStore=** definida como um truststore válido.
 
-#### Problema: O KeyStore não está configurado ou não foi inicializado {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### Problema: O KeyStore não está configurado ou não está inicializado {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 Esse problema pode ser causado por um hotfix ou um pacote de recursos que substitui o nó **[!UICONTROL dynamic-media-user]** ou **[!UICONTROL keystore]**.
 
@@ -506,7 +505,7 @@ Antes de configurar o Dynamic Media Cloud Services, certifique-se de configurar 
 1. Toque em **[!UICONTROL Salvar]** para retornar à página Navegador de configuração do Dynamic Media.
 1. Toque no logotipo do AEM para acessar o console de navegação global.
 
-## Configuração do relatório de vídeo {#configuring-video-reporting}
+## Configuração de relatórios de vídeo {#configuring-video-reporting}
 
 Você pode configurar relatórios de vídeo em várias instalações de AEM usando o Dynamic Media - Modo híbrido.
 
@@ -519,7 +518,7 @@ Você pode configurar relatórios de vídeo em várias instalações de AEM usan
 
 1. Verifique e depure a instalação do pacote.
 
-### Criação de um pacote predefinido [!DNL Video Analytics] após configurar o primeiro nó Autor {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
+### Criar um pacote predefinido [!DNL Video Analytics] após configurar o primeiro nó Autor {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 Quando terminar esta tarefa, você terá um arquivo de pacote que contém as predefinições [!DNL Video Analytics]. Essas predefinições contêm um conjunto de relatórios, o servidor de rastreamento, o namespace de rastreamento e a ID da organização do Marketing Cloud, se disponível.
 
@@ -590,7 +589,7 @@ JCRTpara verificar a  [!DNL Video Analytics] predefinição por meio do JCR, voc
 
    Esse erro também será exibido se o Relatório de vídeo for executado antes que você configure os serviços de **[!UICONTROL Configuração do Dynamic Media (Pré 6.3)]**.
 
-### Resolução de problemas na configuração de relatório de vídeo {#troubleshooting-the-video-reporting-configuration}
+### Solução de problemas de configuração de relatório de vídeo {#troubleshooting-the-video-reporting-configuration}
 
 * Durante a instalação, às vezes, as conexões com o servidor da API do Analytics expiram. A instalação repete a conexão 20 vezes, mas ainda falha. Quando essa situação ocorre, o arquivo de log registra vários erros. Pesquisar `SiteCatalystReportService`.
 * Não instalar o pacote predefinido [!DNL Video Analytics] primeiro pode causar a criação de um novo conjunto de relatórios.
@@ -624,7 +623,7 @@ Você deve publicar suas próprias configurações de catálogo padrão como par
 1. Toque na guia **[!UICONTROL Replication]** .
 1. Toque em **[!UICONTROL Replicar]**.
 
-## Replicando predefinições do visualizador {#replicating-viewer-presets}
+## Replicação de predefinições do visualizador {#replicating-viewer-presets}
 
 Para fornecer um ativo com uma predefinição do visualizador, você deve replicar/publicar a predefinição do visualizador. (Todas as predefinições do visualizador devem ser ativadas _e_ replicadas para obter o URL ou código incorporado de um ativo.) Consulte [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets) para obter mais informações.
 
@@ -949,7 +948,7 @@ Tabela de configurações de Manifesto e seus valores padrão:
  </tbody> 
 </table>
 
-## Configuração do gerenciamento de cores da Dynamic Media {#configuring-dynamic-media-color-management}
+## Configuração do gerenciamento de cores Dynamic Media {#configuring-dynamic-media-color-management}
 
 O gerenciamento dinâmico de cores da mídia permite que você corrija os ativos para visualização.
 
