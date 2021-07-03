@@ -2,16 +2,15 @@
 title: Práticas recomendadas para a tradução eficiente de ativos
 description: Práticas recomendadas para o gerenciamento eficiente de ativos para sincronizar várias versões traduzidas e simplificar os fluxos de trabalho de tradução.
 contentOwner: AG
-feature: Translation
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Tradução
+role: User,Admin
+exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '502'
 ht-degree: 1%
 
 ---
-
 
 # Práticas recomendadas para converter ativos com eficiência {#best-practices-for-translating-assets-efficiently}
 
@@ -48,4 +47,3 @@ Você também pode fazer algumas alterações na configuração de alguns fluxos
 
 1. [Configure a ](/help/sites-administering/tc-tic.md) estrutura de integração de tradução para parar a tradução de binários de ativos. Desmarque a opção &quot;Traduzir ativos&quot; na guia Ativos para interromper a tradução dos binários do ativo.
 1. Traduza metadados/tags de ativos usando [Fluxos de trabalho de ativos multilíngues](multilingual-assets.md).
-
