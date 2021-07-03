@@ -3,16 +3,16 @@ title: Práticas recomendadas de monitoramento de ativos
 description: Práticas recomendadas para monitorar o ambiente e o desempenho da instância de AEM após a implantação.
 contentOwner: AG
 feature: Gerenciamento de ativos
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
 
 ---
 
-# Práticas recomendadas de monitoramento de ativos {#assets-monitoring-best-practices}
+# Práticas recomendadas de monitoramento do Assets {#assets-monitoring-best-practices}
 
 Do ponto de vista do Adobe Experience Manager (AEM) Assets, o monitoramento deve incluir a observação e os relatórios sobre os seguintes processos e tecnologias:
 
@@ -57,7 +57,7 @@ Normalmente, você usa essas ferramentas em conjunto para obter uma ideia abrang
 
 O monitoramento de longo prazo de uma instância de AEM envolve o monitoramento por um longo período das mesmas partes que são monitoradas ao vivo. Também inclui definir alertas específicos para o seu ambiente.
 
-### Agregação de log e relatórios {#log-aggregation-and-reporting}
+### Agregação de logs e relatórios {#log-aggregation-and-reporting}
 
 Há várias ferramentas disponíveis para agregar logs, por exemplo Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Para avaliar o tempo de atividade da sua instância de AEM, é importante que você entenda os eventos de log específicos ao seu sistema e crie alertas com base neles. Um bom conhecimento das práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar o processo de agregação de log para gerar alertas críticos.
 
@@ -185,7 +185,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
    * Limiar de alarme: Quando o status não estiver OK
    * Definição do alarme: Há erros nos arquivos de log. Verifique o atributo log para obter mais informações sobre a causa do problema.
 
-## Problemas e resoluções comuns {#common-issues-and-resolutions}
+## Problemas e resoluções comuns  {#common-issues-and-resolutions}
 
 No processo de monitoramento, se você encontrar problemas, veja a seguir algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com instâncias de AEM:
 
