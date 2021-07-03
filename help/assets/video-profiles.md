@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
-feature: Video Profiles,Video
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Perfis de vídeo, Vídeo
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 18%
@@ -155,7 +154,7 @@ Um indicador de processamento (ou barra de progresso) é exibido para que você 
 
 Você também pode visualizar o arquivo `error.log` para monitorar o progresso de um trabalho de codificação, ver se a codificação foi concluída ou ver quaisquer erros de trabalho. O `error.log` é encontrado na pasta `logs` onde sua instância do AEM está instalada.
 
-## Criar um perfil de codificação de vídeo Dynamic Media para transmissão progressiva {#creating-a-video-encoding-profile-for-progressive-streaming}
+## Criar um perfil de codificação de vídeo Dynamic Media para streaming progressivo {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 Se você optar por não usar a opção **[!UICONTROL Codificar para transmissão adaptável]**, lembre-se de que todas as predefinições de codificação adicionadas ao perfil são tratadas como representações de vídeo individuais para transmissão de streaming com taxa de bits única ou entrega de vídeo progressiva. Além disso, não há validação para garantir que todas as representações de vídeo tenham a mesma proporção.
 
@@ -264,7 +263,7 @@ Quando terminar de criar o perfil de vídeo, aplique-o a uma ou várias pastas.
 
 1. No canto superior esquerdo da página **[!UICONTROL CRXDE Lite]**, toque no ícone **[!UICONTROL Voltar ao início]** para retornar ao AEM.
 
-### Editar um perfil de codificação de vídeo do Dynamic Media {#editing-a-video-encoding-profile}
+### Edição de um perfil de codificação de vídeo do Dynamic Media {#editing-a-video-encoding-profile}
 
 Você pode editar qualquer perfil de codificação de vídeo criado para adicionar, editar ou excluir predefinições de vídeo nesse perfil.
 
@@ -290,7 +289,7 @@ Para definir parâmetros de processamento avançados para outros tipos de ativos
 
 1. No canto superior direito da página, toque **[!UICONTROL Salvar]**.
 
-### Copiando um perfil de codificação de vídeo do Dynamic Media {#copying-a-video-encoding-profile}
+### Copiar um perfil de codificação de vídeo do Dynamic Media {#copying-a-video-encoding-profile}
 
 1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de vídeo]**.
 1. Na página **[!UICONTROL Video Profiles]**, verifique o nome de um perfil de vídeo.
@@ -305,7 +304,7 @@ Para definir parâmetros de processamento avançados para outros tipos de ativos
 
 1. No canto superior direito da página, toque **[!UICONTROL Salvar]**.
 
-### Excluindo um perfil de codificação de vídeo do Dynamic Media {#deleting-a-video-encoding-profile}
+### Exclusão de um perfil de codificação de vídeo do Dynamic Media {#deleting-a-video-encoding-profile}
 
 1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de vídeo]**.
 1. Na página **[!UICONTROL Video Profiles]**, verifique um ou mais nomes de perfil de vídeo.
@@ -324,19 +323,19 @@ As pastas que têm um perfil atribuído a elas são indicadas na interface do us
 
 Você pode aplicar perfis de vídeo a pastas específicas ou globalmente a todos os ativos.
 
-### Aplicar perfis de vídeo a pastas específicas {#applying-video-profiles-to-specific-folders}
+### Aplicação de perfis de vídeo a pastas específicas {#applying-video-profiles-to-specific-folders}
 
 Aplique um perfil de vídeo a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**. Esta seção descreve como aplicar perfis de vídeo a pastas de ambas as maneiras.
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-#### Aplicar perfis de vídeo do Dynamic Media a pastas da interface do usuário de Perfis {#applying-video-profiles-to-folders-from-profiles-user-interface}
+#### Aplicar perfis de vídeo do Dynamic Media a pastas da interface do usuário Perfis {#applying-video-profiles-to-folders-from-profiles-user-interface}
 
 1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de vídeo]**.
 1. Selecione o perfil de vídeo que deseja aplicar a uma ou várias pastas.
 1. Toque em **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e toque em **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-#### Aplicar perfis de vídeo do Dynamic Media a pastas das Propriedades {#applying-video-profiles-to-folders-from-properties}
+#### Aplicar perfis de vídeo do Dynamic Media a pastas de Propriedades {#applying-video-profiles-to-folders-from-properties}
 
 1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta à qual deseja aplicar um perfil de vídeo.
 1. Na pasta , toque na marca de seleção para selecioná-la e toque em **[!UICONTROL Propriedades]**.
@@ -370,7 +369,7 @@ Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 
    Você pode confirmar que o perfil de vídeo não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
-### Remoção de perfis de vídeo do Dynamic Media de pastas por meio das Propriedades {#removing-video-profiles-from-folders-via-properties}
+### Remover perfis de vídeo do Dynamic Media de pastas por meio de Propriedades {#removing-video-profiles-from-folders-via-properties}
 
 1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um perfil de vídeo.
 1. Na pasta , toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
