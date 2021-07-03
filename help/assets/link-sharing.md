@@ -3,9 +3,9 @@ title: Compartilhar ativos usando um link
 description: Compartilhe ativos, pastas e coleções como um URL.
 contentOwner: AG
 feature: Compartilhamento de link,Gerenciamento de ativos
-role: Business Practitioner
+role: User
 exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 5%
