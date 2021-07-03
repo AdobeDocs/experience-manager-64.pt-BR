@@ -2,18 +2,17 @@
 title: Aprimoramentos na experiência do usuário em ativos
 description: Este artigo descreve as melhorias na experiência do usuário no AEM 6.4 Assets.
 contentOwner: AG
-feature: Release Information
-role: Leader,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Informações da versão
+role: Leader,User
+exl-id: 65029113-987e-46eb-86eb-8028233031f9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
 
-
-# Melhorias na experiência do usuário no Assets {#user-experience-enhancements-in-assets}
+# Aprimoramentos na experiência do usuário em ativos {#user-experience-enhancements-in-assets}
 
 O AEM 6.4 Assets inclui várias melhorias de usabilidade que proporcionam uma experiência contínua do usuário e melhora a produtividade. O aumento na velocidade com que você pode criar/gerenciar seu conteúdo do mercado melhora a velocidade do conteúdo da empresa.
 
@@ -27,7 +26,7 @@ Quando você navega/pesquisa por ativos no AEM 6.4 Assets, até 200 ativos são 
 
 Se você tocar/clicar em um ativo para revisar sua página de detalhes, é possível retornar à página de resultados simplesmente tocando/clicando no botão Voltar na barra de ferramentas.
 
-## Aprimoramentos na exibição de cartão {#card-view-improvements}
+## Melhorias na exibição de cartão {#card-view-improvements}
 
 Dependendo do dispositivo usado e da quantidade de detalhes necessários, é possível redimensionar as miniaturas de ativos na exibição de Cartão. Dessa forma, você pode personalizar sua visualização e controlar o número de miniaturas exibidas.
 
@@ -77,7 +76,7 @@ Na hierarquia de conteúdo, navegue até o ativo desejado.
 
 ![navegar_contenttree](assets/navigate_contenttree.png)
 
-## Navegar pelos detalhes do ativo {#navigating-asset-details}
+## Navegação nos detalhes do ativo {#navigating-asset-details}
 
 A página de detalhes do ativo agora inclui os botões Anterior e Próximo na barra de ferramentas para que você possa exibir todas as imagens em uma pasta em sucessão.
 
