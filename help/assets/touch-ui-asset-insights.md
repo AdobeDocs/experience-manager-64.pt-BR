@@ -3,16 +3,16 @@ title: Use o recurso do Assets Insights para rastrear o uso de suas imagens
 description: O recurso do Assets Insights permite que você acompanhe as estatísticas de usuário e uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas de classificações do Adobe.
 contentOwner: AG
 feature: Insights de ativos,Relatórios de ativos
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 7%
 
 ---
 
-# Insights do Assets {#asset-insights}
+# Insights de ativos {#asset-insights}
 
 Saiba como o recurso Insights do Assets permite que você acompanhe as classificações de usuários e as estatísticas de uso de ativos usados em sites de terceiros, campanhas de marketing e soluções criativas do Adobe.
 
