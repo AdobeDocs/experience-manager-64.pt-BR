@@ -2,18 +2,17 @@
 title: Considerações sobre a rede de ativos
 description: Discute considerações de rede ao projetar uma implantação do AEM Assets.
 contentOwner: AG
-feature: Developer Tools
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Ferramentas do desenvolvedor
+role: Architect,Admin
+exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
 
-
-# Considerações de rede de ativos {#assets-network-considerations}
+# Considerações sobre a rede de ativos {#assets-network-considerations}
 
 Entender sua rede é tão importante quanto entender os ativos da Adobe Experience Manager (AEM). A rede pode afetar as experiências de upload, download e usuário. Diagramando sua topologia de rede, você pode identificar pontos de estrangulamento e áreas subotimizadas na rede que você deve corrigir para melhorar o desempenho da rede e a experiência do usuário.
 
@@ -26,7 +25,7 @@ Certifique-se de incluir o seguinte no diagrama de rede:
 * Definir consumidores simultâneos da interface de rede AEM
 * Fluxos de trabalho definidos da instância de AEM
 
-## Conectividade do dispositivo cliente para a rede corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
+## Conectividade do dispositivo cliente à rede corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
 Comece diagramando a conectividade entre os dispositivos clientes individuais e a rede corporativa. Neste estágio, identifique recursos compartilhados, como conexões WiFi, em que vários usuários acessam o mesmo ponto ou switch ethernet para fazer upload e download de ativos.
 
@@ -48,7 +47,7 @@ O computador exibido à direita tem um upstream limitado à rede corporativa por
 
 O diagrama exibe velocidades de uplink mais altas dentro da rede corporativa do que o geralmente usado. Essas tubulações são recursos compartilhados. Se for esperado que o switch compartilhado manipule 50 clientes, ele poderá ser um ponto de estrangulamento. No diagrama inicial, apenas dois computadores compartilham a conexão específica.
 
-## Faça upload para a Internet a partir da rede corporativa e do ambiente de AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Faça upload para a Internet a partir da rede corporativa e do ambiente AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -101,4 +100,3 @@ Estes são alguns itens a serem considerados:
 Este é um exemplo de cliente para a definição de um fluxo de trabalho de ativo.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
