@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: Vídeos interativos, Vídeo
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5975'
 ht-degree: 4%
@@ -230,7 +230,7 @@ Com base nessa análise, você conclui que pode usar as duas variáveis a seguir
 
 Agora você está pronto para fazer upload de um vídeo e seus ativos de miniatura associados.
 
-## (Opcional) Criação de uma predefinição do visualizador de Vídeo interativo {#optional-creating-an-interactive-video-viewer-preset}
+## (Opcional) Criação de uma predefinição do visualizador de vídeo interativo {#optional-creating-an-interactive-video-viewer-preset}
 
 Ignore esta tarefa e prossiga para a próxima se pretender utilizar qualquer um dos tipos predefinidos predefinidos do Visualizador de Vídeo Interativo predefinido e predefinido `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
@@ -477,7 +477,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Divisão de um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
@@ -503,7 +503,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 
    Depois de adicionar segmentos de linha do tempo e publicar o vídeo interativo, você estará pronto para adicioná-lo à página de aterrissagem do site. Consulte [Integração de um vídeo interativo com seu site.](#integrating-an-interactive-video-with-your-website)
 
-## Publicar ativos de vídeo interativos {#publishing-interactive-video-assets}
+## Publicação de ativos interativos de vídeo {#publishing-interactive-video-assets}
 
 Consulte [Publicação de ativos](publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de vídeo interativos.
 
@@ -569,7 +569,7 @@ A integração é tão simples como remover o código de inserção do vídeo e 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Integração de um vídeo interativo com um Quickview {#integrating-an-interactive-video-with-an-existing-quickview} existente
+## Integração de um vídeo interativo com um Quickview existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 Essa tarefa só se aplica se você for um cliente independente do AEM Assets.
