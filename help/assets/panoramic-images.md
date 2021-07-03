@@ -7,9 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
 feature: Imagens panorâmicas
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 489a4b42bdd5895186ba885b9a1dc33b49427e8d
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 4%
@@ -24,7 +23,7 @@ Consulte também [Gerenciar predefinições do visualizador](managing-viewer-pre
 
 ![panorâmica-imagem2](assets/panoramic-image2.png)
 
-## Fazer upload de ativos para uso com o Visualizador de imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Fazer upload de ativos para uso com o visualizador de Imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Para que um ativo carregado seja qualificado como uma imagem panorâmica esférica que você pretende usar com o visualizador de Imagem panorâmica, o ativo deve ter um ou ambos os itens a seguir:
 
@@ -69,7 +68,7 @@ Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é n
 
 1. No canto inferior direito, toque em **[!UICONTROL Fechar]**.
 
-### Solução de problemas do componente de Mídia panorâmica {#troubleshooting-the-panoramic-media-wcm-component}
+### Solução de problemas do componente Mídia panorâmica {#troubleshooting-the-panoramic-media-wcm-component}
 
 Se você soltou uma imagem no componente **[!UICONTROL Panorâmica Media]** em seu WCM e o placeholder do componente foi recolhido, talvez queira solucionar os seguintes problemas:
 
@@ -83,6 +82,6 @@ Se você soltou uma imagem no componente **[!UICONTROL Panorâmica Media]** em s
 
 Consulte [Visualização de ativos](previewing-assets.md).
 
-## Publicar imagens panorâmicas {#publishing-panoramic-images}
+## Publicação de imagens panorâmicas {#publishing-panoramic-images}
 
 Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
