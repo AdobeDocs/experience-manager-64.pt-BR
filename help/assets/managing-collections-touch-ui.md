@@ -3,16 +3,15 @@ title: Gerenciar coleções de ativos
 description: Saiba mais sobre as tarefas para gerenciar Coleções de ativos, como criar, exibir, excluir, editar e baixar coleções.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Coleções
+role: User
+exl-id: cadfc569-5725-4012-9f73-864243ba7743
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2329'
 ht-degree: 16%
 
 ---
-
 
 # Gerenciar coleções {#managing-collections}
 
@@ -27,7 +26,7 @@ As coleções são dos seguintes tipos, com base na maneira como coletam ativos:
 * Uma coleção que contém uma lista de referência estática de ativos, pastas e outras coleções.
 * Uma coleção inteligente que inclui dinamicamente ativos com base em critérios de pesquisa.
 
-## Acesse o console de coleções {#navigating-the-collections-console}
+## Acesse o console Coleções {#navigating-the-collections-console}
 
 Para abrir o **[!UICONTROL Collections]**, toque ou clique no logotipo do Experience Manager. Na página de navegação, vá para **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
@@ -112,7 +111,7 @@ Para criar uma coleção inteligente, siga as etapas:
 
    O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, toque/clique no botão **[!UICONTROL Editar seleção inteligente]**.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ## Adicionar ativos a uma coleção {#adding-assets-to-a-collection}
 
@@ -134,7 +133,7 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 
 1. Na interface do usuário do Assets, toque/clique no ícone de pesquisa na barra de ferramentas.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
 
@@ -200,7 +199,7 @@ Você pode pesquisar coleções no console Coleções. Ao pesquisar com palavras
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas nas coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pasta), todos os ativos, pastas e coleções relevantes são retornados.
 
-## Pesquisar nas coleções {#searching-within-collections}
+## Pesquisar em coleções {#searching-within-collections}
 
 No console Coleções , toque/clique em uma coleção para abri-la.
 
@@ -306,5 +305,5 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 >[!MORELIKETHIS]
 >
 >* [Configurar notificações por email do Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
->* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
+* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
 
