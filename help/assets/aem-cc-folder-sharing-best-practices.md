@@ -2,16 +2,15 @@
 title: Compartilhar pastas do AEM Assets com o Creative Cloud
 description: Configuração e práticas recomendadas para permitir que os usuários do Adobe Experience Manager Assets troquem pastas de ativos com usuários do Adobe Creative Cloud.
 contentOwner: AG
-feature: Collaboration
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Colaboração
+role: User,Admin
+exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
-
 
 # AEM as práticas recomendadas de compartilhamento de pastas do Creative Cloud {#aem-to-creative-cloud-folder-sharing-best-practices}
 
