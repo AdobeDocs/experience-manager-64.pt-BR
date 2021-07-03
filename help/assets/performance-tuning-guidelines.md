@@ -2,16 +2,15 @@
 title: Guia de ajuste de desempenho de ativos
 description: Áreas-chave de foco sobre AEM configuração, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho do AEM Assets.
 contentOwner: AG
-feature: Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos
+role: Architect,Admin
+exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3208'
 ht-degree: 0%
 
 ---
-
 
 # Guia de ajuste de desempenho de ativos {#assets-performance-tuning-guide}
 
@@ -48,7 +47,7 @@ Quando o volume temporário de alto desempenho estiver pronto, defina o parâmet
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
-## Configuração Java {#java-configuration}
+## Configuração do Java {#java-configuration}
 
 ### Versão do Java {#java-version}
 
@@ -70,7 +69,7 @@ Você deve definir os seguintes parâmetros da JVM:
 
 Recomenda-se separar o armazenamento de dados do armazenamento de segmentos para todos os usuários do AEM Assets. Além disso, configurar os parâmetros `maxCachedBinarySize` e `cacheSizeInMB` pode ajudar a maximizar o desempenho. Defina `maxCachedBinarySize` para o menor tamanho de arquivo que pode ser mantido no cache. Especifique o tamanho do cache na memória a ser usado para o armazenamento de dados em `cacheSizeInMB`. O Adobe recomenda que você defina esse valor entre 2 e 10% do tamanho total do heap. No entanto, o teste de carga/desempenho pode ajudar a determinar a configuração ideal.
 
-### Configure o tamanho máximo do cache de imagem em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configurar o tamanho máximo do cache de imagem em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Ao fazer upload de grandes quantidades de ativos no Adobe Experience Manager, para permitir picos inesperados no consumo de memória e para evitar que a JVM falhe com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap máximo (- `Xmx`param) de 5 GB, um conjunto Oak BlobCache de 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache em buffer levaria no máximo 1,25 GB e a memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
 
@@ -179,13 +178,13 @@ O fluxo de trabalho do Ativo de atualização DAM contém um conjunto completo d
 >
 >Se você tiver um espaço em disco limitado e executar os workflows do Ativo de atualização do DAM intensamente, considere agendar a tarefa de coleta de lixo com mais frequência.
 
-#### Geração de representação em tempo de execução {#runtime-rendition-generation}
+#### Geração de renderização em tempo de execução {#runtime-rendition-generation}
 
 Os clientes usam imagens de vários tamanhos e formatos em seu site ou para distribuição a parceiros comerciais. Como cada representação adiciona ao espaço do ativo no repositório, o Adobe recomenda usar esse recurso criteriosamente. Para reduzir a quantidade de recursos necessários para processar e armazenar imagens, você pode gerar essas imagens em tempo de execução em vez de como representações durante a assimilação.
 
 Muitos clientes do Sites implementam um servlet de imagem que redimensiona e recorta imagens no momento em que são solicitadas, o que impõe carga adicional na instância de publicação. No entanto, enquanto essas imagens puderem ser armazenadas em cache, o desafio poderá ser atenuado.
 
-Uma abordagem alternativa é usar a tecnologia Dynamic Media Classic para facilitar totalmente a manipulação de imagens. Além disso, você pode implantar o Brand Portal, que não somente assume as responsabilidades de geração de representação da infraestrutura de AEM, como também todo o nível de publicação.
+Uma abordagem alternativa é usar a tecnologia Dynamic Media Classic para facilitar totalmente a manipulação de imagens. Além disso, é possível implantar o Brand Portal, que não somente assume as responsabilidades de geração de representação da infraestrutura de AEM, como também todo o nível de publicação.
 
 #### ImageMagick {#imagemagick}
 
@@ -274,7 +273,7 @@ To disable Page Extraction:
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
-### XMP write-back {#xmp-writeback}
+### Writeback XMP {#xmp-writeback}
 
 XMP write-back atualiza o ativo original sempre que os metadados são modificados no AEM, o que resulta no seguinte:
 
@@ -373,7 +372,7 @@ Se os usuários não precisarem pesquisar o conteúdo dos ativos, por exemplo, p
 
 [Obter arquivo](assets/disable_indexingbinarytextextraction-10.zip)
 
-### Adivinhe o total {#guess-total}
+### Adivinhe total {#guess-total}
 
 Ao criar queries que geram grandes conjuntos de resultados, use o parâmetro `guessTotal` para evitar a utilização de memória pesada ao executá-los.
 
