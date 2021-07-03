@@ -2,18 +2,17 @@
 title: Referência de esquemas de metadados
 description: 'Saiba mais sobre as convenções padrão para descrever metadados de ativos, incluindo Dublin Core, IPTC e outros esquemas de metadados. '
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadados
+role: User,Admin
+exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '395'
 ht-degree: 3%
 
 ---
 
-
-# Referência de metadados {#metadata-schemata-reference}
+# Referência de esquemas de metadados {#metadata-schemata-reference}
 
 A referência a seguir inclui informações sobre um esquema de metadados específico (em ordem alfabética), bem como uma lista de propriedades e suas definições.
 
