@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: Configuração
-role: Administrator,Business Practitioner,Developer
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
