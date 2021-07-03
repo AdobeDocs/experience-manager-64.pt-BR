@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
-feature: Image Sets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Conjuntos de imagem
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 12%
@@ -95,7 +94,7 @@ Comece carregando as imagens dos seus Conjuntos de imagens. Como os usuários po
 
 Você pode fazer upload de imagens para Conjuntos de imagens da mesma maneira que faria [upload de qualquer outro ativo no Assets](managing-assets-touch-ui.md#uploading-assets).
 
-### Preparando ativos do Conjunto de imagens para carregar {#preparing-image-set-assets-for-upload}
+### Preparação de ativos do Conjunto de imagens para upload {#preparing-image-set-assets-for-upload}
 
 Antes de criar Conjuntos de imagens, verifique se as imagens têm o tamanho e o formato corretos.
 
@@ -116,7 +115,7 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 
 
 
-## Criando Conjuntos de Imagens {#creating-image-sets}
+## Criação de conjuntos de imagens {#creating-image-sets}
 
 Você pode criar Conjuntos de imagens por meio da interface do usuário ou da API. Esta seção descreve como criar Conjuntos de imagens na interface do usuário.
 
@@ -174,7 +173,7 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 1. Toque em **[!UICONTROL Salvar]**. O Conjunto de imagens recém-criado é exibido na pasta em que você o criou.
 
-## Visualizando conjuntos de imagens {#viewing-image-sets}
+## Visualização de conjuntos de imagens {#viewing-image-sets}
 
 Você pode criar conjuntos de imagens na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -242,6 +241,6 @@ Você pode executar várias tarefas de edição em Conjuntos de imagens, como as
 
 Consulte [Visualização de ativos](previewing-assets.md).
 
-## Publicando conjuntos de imagens {#publishing-image-sets}
+## Publicar conjuntos de imagens {#publishing-image-sets}
 
 Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
