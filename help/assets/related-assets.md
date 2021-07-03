@@ -2,16 +2,15 @@
 title: Ativos relacionados
 description: Saiba como relacionar ativos que compartilham determinados atributos comuns. Também é possível usar o recurso para criar relacionamentos de origem/derivados entre ativos.
 contentOwner: AG
-feature: Asset Management,Collaboration
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos,Colaboração
+role: User
+exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
-
 
 # Ativos relacionados {#related-assets}
 
