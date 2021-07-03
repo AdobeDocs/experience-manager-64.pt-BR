@@ -2,11 +2,10 @@
 title: Gerencie  [!DNL Adobe Stock] ativos em [!DNL Adobe Experience Manager Assets].
 description: Pesquise, busque, licencie e gerencie [!DNL Adobe Stock] ativos de dentro de [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
-feature: Search,Adobe Stock
-role: Business Practitioner,Administrator
+feature: Pesquisar, Adobe Stock
+role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-translation-type: tm+mt
-source-git-commit: 6025d91dfaaf51f42a9594987a62d23507e1e8a9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 13%
@@ -56,7 +55,7 @@ Para permitir a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stoc
 >
 >Se houver várias configurações [!DNL Adobe Stock], selecione a configuração desejada no painel Preferências de usuário (**[!UICONTROL AEM]** > **[!UICONTROL Ícone de usuário]** > **[!UICONTROL Preferências de usuário]** > **[!UICONTROL Configuração de estoque]**).
 
-## Use e gerencie [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
+## Usar e gerenciar [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
 
 Usando esse recurso, as organizações podem permitir que seus usuários trabalhem usando [!DNL Adobe Stock] ativos em [!DNL Experience Manager Assets]. Na interface do usuário [!DNL Experience Manager], os usuários podem pesquisar [!DNL Adobe Stock] ativos e licenciar os ativos necessários.
 
@@ -86,7 +85,7 @@ Como alternativa, comece a digitar `Location: Adobe Stock` na barra de pesquisa 
 
 *Figura: Pesquise filtros em  [!DNL Experience Manager] e  [!DNL Adobe Stock] ativos destacados nos resultados de pesquisa.*
 
-### Salve e exiba os ativos necessários {#saveassets}
+### Salvar e exibir os ativos necessários {#saveassets}
 
 Selecione um ativo que deseja salvar em [!DNL Experience Manager]. Clique em [!UICONTROL Save] na barra de ferramentas na parte superior e forneça o nome e o local do ativo. Os ativos não licenciados são salvos localmente com uma marca d&#39;água.
 
