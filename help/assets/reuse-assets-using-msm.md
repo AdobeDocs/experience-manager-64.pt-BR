@@ -3,18 +3,17 @@ title: Reutilizar ativos usando o MSM
 description: Use ativos em várias páginas/pastas que são derivadas de e vinculadas a ativos principais. Os ativos permanecem sincronizados com uma cópia principal e, com alguns cliques, recebem as atualizações dos ativos principais.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Multi Site Manager
-role: Business Practitioner,Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos, Gerenciador de vários sites
+role: User,Admin,Architect
+exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3172'
 ht-degree: 9%
 
 ---
 
-
-# Reutilizar ativos usando MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
+# Reutilizar ativos usando o MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 A funcionalidade MSM (Multi Site Manager) em [!DNL Adobe Experience Manager] permite que os usuários reutilizem conteúdo criado uma vez e reutilizado em vários locais da Web. O mesmo está disponível para ativos digitais que o MSM para a funcionalidade [!DNL Assets]. Usando o MSM para [!DNL Assets], você pode:
 
@@ -26,7 +25,7 @@ A funcionalidade MSM (Multi Site Manager) em [!DNL Adobe Experience Manager] per
 
 Para usar o MSM para [!DNL Assets], instale pelo menos [!DNL Experience Manager] 6.4 Service Pack 5. Para obter mais informações, consulte [as notas de versão do service pack mais recente](/help/release-notes/sp-release-notes.md).
 
-## Entenda os benefícios e os conceitos {#understand-benefits-concepts}
+## Entender os benefícios e os conceitos {#understand-benefits-concepts}
 
 ### Como funciona e os benefícios {#how-it-works-the-benefits}
 
@@ -92,7 +91,7 @@ Para criar cópias ativas usando o segundo método, siga estas etapas:
 >
 >Quando uma origem ou uma live copy é movida, os relacionamentos são retidos. Quando uma live copy é excluída, os relacionamentos são removidos.
 
-## Exibir várias propriedades e status de origem e Live Copy {#view-properties-statuses-source-and-lc}
+## Exibir várias propriedades e status de cópia ativa e de origem {#view-properties-statuses-source-and-lc}
 
 Você pode exibir as informações e os status relacionados ao MSM da live copy, como relacionamento, sincronização, implantações e muito mais, das várias áreas da interface do usuário do AEM. Os dois métodos a seguir funcionam para ativos e pastas:
 
@@ -113,7 +112,7 @@ Para verificar as informações e os status de um ativo de live copy ou de uma p
 1. Você pode ativar ou desativar se os ativos filho pegarem a configuração da live copy emprestada.
 1. Você pode escolher a opção da live copy para herdar a configuração de implementação do pai ou alterar a configuração.
 
-### Informações e status de todas as cópias ativas de uma pasta {#information-status-of-all-lcs-of-folder}
+### Informações e status de todas as live copies de uma pasta {#information-status-of-all-lcs-of-folder}
 
 [!DNL Experience Manager] O fornece um console para verificar as estátuas de todas as live copies de uma pasta de origem. Esse console exibe o status de todos os ativos secundários.
 
@@ -127,7 +126,7 @@ Para verificar as informações e os status de um ativo de live copy ou de uma p
 >
 >Você pode ver rapidamente os status de cópias ativas de outras pastas sem precisar navegar muito. Altere a pasta da parte média superior da interface **[!UICONTROL Visão geral da Live Copy]**.
 
-### Ações rápidas do painel Referências para a origem {#quick-actions-from-references-rail-for-source}
+### Ações rápidas do painel Referências para origem {#quick-actions-from-references-rail-for-source}
 
 Para um ativo ou pasta de origem, você pode ver as seguintes informações e realizar as seguintes ações diretamente do painel Referências :
 
@@ -145,7 +144,7 @@ Para uma live copy específica, clique em **[!UICONTROL Editar Live Copy]** para
 
 ![Para uma live copy específica, a opção de suspender a relação ou alterar a configuração de implantação é acessível no painel Referências quando o ativo de origem é selecionado](assets/lc_edit_referencerail.png)
 
-### Ações rápidas do painel Referências para a live copy {#quick-actions-from-references-rail-for-live-copy}
+### Ações rápidas do painel Referências para live copy {#quick-actions-from-references-rail-for-live-copy}
 
 Para um ativo ou pasta de live copy, você pode ver as seguintes informações e realizar as seguintes ações diretamente do painel Referências :
 
@@ -201,7 +200,7 @@ Para ver os status e as informações relacionadas a uma ação de sincronizaç�
 >
 >Se a relação for suspensa, a ação de sincronização não estará disponível na barra de ferramentas. Embora a ação de sincronização esteja disponível no painel [!UICONTROL Referências], as modificações não são propagadas mesmo após uma implantação bem-sucedida.
 
-## Suspender e retomar a relação {#suspend-and-resume-relationship}
+## Suspender e retomar relacionamento {#suspend-and-resume-relationship}
 
 Você pode suspender temporariamente o relacionamento para impedir que uma live copy receba modificações feitas no ativo ou na pasta de origem. A relação também pode ser retomada para que a live copy comece a receber as modificações da origem.
 
@@ -209,7 +208,7 @@ Para suspender ou retomar, abra a página **[!UICONTROL Propriedades]** de uma l
 
 Como alternativa, você pode suspender ou retomar rapidamente os relacionamentos de vários ativos em uma pasta de live copy a partir do console **[!UICONTROL Visão geral da Live Copy]**. Consulte [Realizar ações em muitos ativos nas pastas de live copy](#take-actions-on-many-assets-in-lcfolder).
 
-## Faça modificações locais em uma live copy {#make-local-modifications-to-live-copy}
+## Fazer modificações locais em uma live copy {#make-local-modifications-to-live-copy}
 
 Uma live copy é uma réplica da origem original quando ela é criada. Os valores de metadados de uma live copy são herdados da origem. Os campos de metadados mantêm individualmente a herança com os respectivos campos do ativo de origem.
 
@@ -242,7 +241,7 @@ Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada
 1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Edit]**, **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspender]** e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer número de pastas de live copy que estejam em um relacionamento dinâmico com a pasta de origem selecionada.
    ![Atualize facilmente muitos ativos nas pastas de live copy do console Visão geral da Live Copy](assets/lc_console_update_assets.png)
 
-## Estender MSM para Assets {#extend-msm-for-assets}
+## Estender o MSM para ativos {#extend-msm-for-assets}
 
 O AEM permite estender a funcionalidade usando as APIs Java do MSM. Para o Assets, a extensão funciona exatamente da mesma forma que com o MSM para o Site. Para obter detalhes, consulte [Extensão do MSM](../sites-developing/extending-msm.md) e as seguintes seções para obter informações sobre tarefas específicas:
 
@@ -258,7 +257,7 @@ O AEM permite estender a funcionalidade usando as APIs Java do MSM. Para o Asset
 >* A configuração de bloqueios MSM nas propriedades da página (interface habilitada para toque) não é compatível com o MSM para Assets.
 
 
-## Impacto das tarefas de gerenciamento de ativos em cópias ativas {#impact-of-asset-management-tasks-on-live-copies}
+## Impacto das tarefas de gerenciamento de ativos em cópias dinâmicas {#impact-of-asset-management-tasks-on-live-copies}
 
 As cópias em tempo real e as fontes são ativos ou pastas que podem ser gerenciados, de certa forma, como ativos digitais. Algumas tarefas de gerenciamento de ativos no AEM têm um impacto específico nas cópias ativas.
 
@@ -269,7 +268,7 @@ As cópias em tempo real e as fontes são ativos ou pastas que podem ser gerenci
 * Para a pasta de origem, a opção para criar tarefas de revisão está disponível.
 * Ao visualizar a lista de ativos na exibição de lista e na exibição de coluna, um ativo ou pasta de live copy exibe &quot;live copy&quot; em relação a ele. Isso ajuda você a identificar facilmente as cópias dinâmicas em uma pasta.
 
-## Comparar MSM para Ativos e Sites {#compare-msm-for-assets-and-sites}
+## Comparar o MSM para ativos e sites {#compare-msm-for-assets-and-sites}
 
 Em mais cenários, o MSM para Assets corresponde ao comportamento da funcionalidade MSM para Sites . Algumas diferenças principais a serem observadas são:
 
@@ -279,7 +278,7 @@ Em mais cenários, o MSM para Assets corresponde ao comportamento da funcionalid
 * A configuração de bloqueios MSM nas propriedades da página (interface habilitada para toque) não é compatível com o MSM para Assets.
 * Para MSM for Assets, use apenas a configuração de implementação Padrão. As outras configurações de implementação não estão disponíveis para o MSM for Assets.
 
-## Limitações do MSM para Ativos {#limitations-of-msm-for-assets}
+## Limitações do MSM para Assets {#limitations-of-msm-for-assets}
 
 A seguir, a limitação com MSM para Assets.
 
