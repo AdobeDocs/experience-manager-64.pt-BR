@@ -5,16 +5,15 @@ uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos
+role: Architect,Admin
+exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
-
 
 # Guia de dimensionamento de ativos {#assets-sizing-guide}
 
@@ -82,7 +81,7 @@ Os armazenamentos de dados compartilhados também aumentam a complexidade das op
 
 Para operações AWS, a implementação de um único local central (via S3), em vez de construir uma matriz RAID de volumes EBS, pode compensar significativamente a complexidade e os riscos operacionais no sistema.
 
-#### Preocupações de desempenho {#performance-concerns}
+#### Problemas de desempenho {#performance-concerns}
 
 Um armazenamento de dados compartilhado requer que os binários sejam armazenados em uma unidade montada em rede compartilhada entre todas as instâncias. Como esses binários são acessados em uma rede, o desempenho do sistema é afetado negativamente. Você pode reduzir parcialmente o impacto usando uma conexão de rede rápida a um array de discos mais rápido. Mas essa é uma proposta cara. No caso de operações AWS, todos os discos são remotos e exigem conectividade de rede. Volumes efêmeros perdem dados quando a instância é iniciada ou interrompida.
 
