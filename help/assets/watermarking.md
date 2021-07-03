@@ -2,18 +2,17 @@
 title: Adicionar marca d'água aos ativos digitais
 description: Saiba como usar o recurso Marca d'água para adicionar uma marca d'água digital aos ativos.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos
+role: User,Admin
+exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '325'
 ht-degree: 3%
 
 ---
 
-
-# Marque seus ativos digitais {#watermarking}
+# Marque com água seus ativos digitais {#watermarking}
 
 [!DNL Adobe Experience Manager Assets] O permite adicionar uma marca d&#39;água digital aos ativos, o que ajuda os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. [!DNL Experience Manager Assets] suporta texto a ser usado como uma marca d&#39;água em arquivos PNG e JPEG.
 
