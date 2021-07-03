@@ -2,16 +2,15 @@
 title: Estender editor de ativos
 description: Saiba como estender os recursos do Editor de ativos usando componentes personalizados.
 contentOwner: AG
-feature: Developer Tools
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Ferramentas do desenvolvedor
+role: User,Admin
+exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '703'
 ht-degree: 13%
 
 ---
-
 
 # Estender editor de ativos {#extending-asset-editor}
 
@@ -29,7 +28,7 @@ As seguintes páginas de exemplo estão incluídas no geometrixx:
 * Exemplo de modelo: `/apps/geometrixx/templates/asseteditor`
 * Exemplo de componente de página: `/apps/geometrixx/components/asseteditor`
 
-### Configurando Clientlib {#configuring-clientlib}
+### Configuração da Clientlib {#configuring-clientlib}
 
 Os componentes do AEM Assets usam uma extensão da biblioteca de edição de clientlib do WCM. As clientlibs geralmente são carregadas em `init.jsp`.
 
@@ -41,7 +40,7 @@ Comparado ao carregamento padrão da clientlib (no núcleo `init.jsp`), um templ
 
 Na maioria dos casos, copiar a amostra existente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) deve atender a essas necessidades.
 
-### Configurar ações JS {#configuring-js-actions}
+### Configuração de ações JS {#configuring-js-actions}
 
 Alguns dos componentes do AEM Assets exigem funções JS definidas em `component.js`. Copie esse arquivo para o diretório do seu componente e vincule-o.
 
