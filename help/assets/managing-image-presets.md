@@ -7,12 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
-feature: Image Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Predefinições de imagem
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3838'
 ht-degree: 8%
 
 ---
@@ -31,7 +30,7 @@ Esta seção descreve como criar, modificar e gerenciar predefinições de image
 >
 >A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagem inteligente](imaging-faq.md) para obter mais informações.
 
-## Como entender as predefinições de imagens do Dynamic Media {#understanding-image-presets}
+## Noções básicas sobre predefinições de imagens do Dynamic Media {#understanding-image-presets}
 
 Como uma macro de software, uma Predefinição de imagem é uma coleção predefinida de comandos de dimensionamento e formatação salvos em um nome. Para entender como as Predefinições de imagem funcionam, suponha que o site exija que cada imagem do produto apareça em tamanhos diferentes, formatos diferentes e taxas de compactação para entrega de desktop e dispositivo móvel.
 
@@ -86,7 +85,7 @@ Para usar o Dynamic Media para visualizar e gerar representações dinâmicas pa
 >
 >No workflow **[!UICONTROL Ativo de atualização DAM]**, a etapa **[!UICONTROL Miniaturas EPS]** gera miniaturas para arquivos EPS.
 
-### Propriedades de metadados de ativos PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
+### Propriedades de metadados de ativos de PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriedade de metadados** | **Descrição** |
 |---|---|
@@ -139,7 +138,7 @@ Usando os argumentos padrão do processo, a primeira página de um documento PDF
 
 O componente de processo **[!UICONTROL Rasterizar PDF/Representação de visualização de imagem AI]** tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
 
-### Formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
+### Formato de arquivo INDD (InDesign) {#indesign-indd-file-format}
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, convém revisar as seguintes informações antes de criar predefinições de imagem.
 
@@ -233,7 +232,7 @@ As predefinições de imagens criadas estão disponíveis como representações 
 1. Na propriedade limit , altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Toque em **[!UICONTROL Salvar tudo]**.
 
-### Criar predefinições de imagens do Dynamic Media {#creating-image-presets}
+### Criação de predefinições de imagens do Dynamic Media {#creating-image-presets}
 
 Criar uma predefinição de imagem do Dynamic Media permite aplicar essas configurações a qualquer imagem ao visualizar ou publicar.
 
@@ -344,7 +343,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
  </tbody>
 </table>
 
-#### Opções avançadas da guia {#advanced-tab-options}
+#### Opções avançadas de guia {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -479,7 +478,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
    ![chlimage_1-503](assets/chlimage_1-503.png)
 
-## Editar predefinições de imagem {#modifying-image-presets}
+## Editar predefinições da imagem {#modifying-image-presets}
 
 **Para editar predefinições** de imagens:
 
