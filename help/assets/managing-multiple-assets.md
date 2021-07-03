@@ -2,16 +2,15 @@
 title: Metadados de edição em massa de vários ativos e coleções
 description: Saiba como editar os metadados de muitos ativos e coleções simultaneamente para propagar rapidamente alterações de metadados comuns.
 contentOwner: AG
-feature: Asset Management,Metadata,Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos,Metadados,Coleções
+role: User
+exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 14%
+source-wordcount: '440'
+ht-degree: 13%
 
 ---
-
 
 # Gerenciar vários ativos e coleções {#managing-multiple-assets-and-collections}
 
@@ -57,3 +56,4 @@ Para alterar o limite, acesse **[!UICONTROL Ferramentas > Operações > Console 
 >[!MORELIKETHIS]
 >
 >* [Editar metadados de várias coleções em massa](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
