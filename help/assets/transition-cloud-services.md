@@ -2,18 +2,17 @@
 title: Aplicação de serviços da nuvem de tradução a pastas
 description: Aplicação de serviços da nuvem de tradução a pastas
 contentOwner: AG
-feature: Translation
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Tradução
+role: Admin
+exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 55%
 
 ---
 
-
-# Aplicação de serviços de nuvem de tradução a pastas {#applying-translation-cloud-services-to-folders}
+# Aplicação de serviços da nuvem de tradução a pastas {#applying-translation-cloud-services-to-folders}
 
 O Adobe Experience Manager (AEM) permite que você utilize os serviços de tradução em nuvem do provedor de tradução de sua escolha para garantir que os ativos sejam traduzidos de acordo com suas necessidades.
 
@@ -39,7 +38,7 @@ A aplicação de serviços da nuvem de tradução diretamente à sua pasta de at
 
 1. Na barra de ferramentas, clique/toque em **[!UICONTROL Salvar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo. O serviço de tradução é aplicado à pasta.
 
-## Aplicação do conector de tradução personalizado {#applying-custom-translation-connector}
+## Aplicação do conector de tradução personalizado  {#applying-custom-translation-connector}
 
 Se quiser aplicar um conector personalizado para os serviços de tradução que deseja usar nos fluxos de trabalho de tradução. Para aplicar um conector personalizado, primeiro instale o conector do Gerenciador de pacotes. Em seguida, configure o conector do console Serviços da nuvem. Após configurar o conector, ele estará disponível na lista de conectores na guia Serviços da nuvem descrita em [Aplicar serviços de tradução](transition-cloud-services.md#applying-the-translation-services). Depois de aplicar o conector personalizado e executar os fluxos de trabalho de tradução, o bloco **[!UICONTROL Resumo da tradução]** do projeto de tradução exibe os detalhes do conector nos cabeçalhos **[!UICONTROL Provedor]** e **[!UICONTROL Método]**.
 
