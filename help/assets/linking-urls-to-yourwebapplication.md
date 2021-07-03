@@ -10,17 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 exl-id: e076349d-8b1a-487f-b982-9440d7de13b9
-feature: Configuration
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Configuração
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 10%
 
 ---
 
-# Vincular URLs à sua aplicação web {#linking-urls-to-your-web-application}
+# Vincular URLs ao seu aplicativo web {#linking-urls-to-your-web-application}
 
 Seus sites e aplicativos acessam os serviços da Dynamic Media por meio de chamadas de URL. Após publicar um ativo, o Dynamic Media ativa uma string de URL que faz referência a ele. Você pode colar esses URLs em um navegador da Web para testes.
 
@@ -34,7 +33,7 @@ Para colocar essas cadeias de caracteres de URL em suas páginas da Web e aplica
 
 Consulte também [Incorporando o Visualizador de Vídeo ou Imagem em uma Página da Web.](embed-code.md)
 
-Consulte também [Vincular URLs do YouTube ao seu Aplicativo Web.](video.md)
+Consulte também [Vincular URLs do YouTube à sua aplicação web.](video.md)
 
 Consulte também [Fornecer imagens otimizadas para um site responsivo.](responsive-site.md)
 
@@ -203,7 +202,7 @@ O Dynamic Media oferece suporte à entrega de ativos estáticos, que são ativos
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Usar HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Usar HTTP/2 para fornecer ativos da Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media agora pode ser feita via HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
