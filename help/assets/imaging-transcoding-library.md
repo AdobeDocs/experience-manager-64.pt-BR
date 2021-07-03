@@ -2,16 +2,15 @@
 title: Biblioteca de transcodificação de imagens
 description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens Adobe Imaging, uma solução que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
-feature: Renditions,Developer Tools,Asset Processing
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Representações,Ferramentas do desenvolvedor,Processamento de ativos
+role: Admin
+exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
-
 
 # Biblioteca de transcodificação de imagens {#imaging-transcoding-library}
 
@@ -106,7 +105,7 @@ Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas 
 
 1. Para garantir que o valor do caminho esteja definido como `.`, use o comando `echo $LD_LIBRARY_PATH`. A saída deve ser apenas `.`. Se o valor não estiver definido como `.`, reinicie a sessão.
 
-### Configurar o fluxo de trabalho do Ativo de atualização do DAM {#configure-dam-asset-update-workflow}
+### Configurar o fluxo de trabalho do ativo de atualização do DAM {#configure-dam-asset-update-workflow}
 
 Atualize o workflow [!UICONTROL Ativo de atualização do DAM] para usar a biblioteca para processar imagens.
 
