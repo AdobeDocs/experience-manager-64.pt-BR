@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
-feature: Selectors
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Seletores
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 20%
@@ -34,7 +33,7 @@ Por exemplo, neste Banner de carrossel, você usa o seletor de produto se estive
 
 Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O seletor de site só funcionará se você for um cliente do AEM Sites. O seletor de produto também requer AEM Commerce.
 
-## Selecionar produtos {#selecting-products}
+## Seleção de produtos {#selecting-products}
 
 Use o seletor de produto para escolher um produto quando quiser um ponto de acesso ou mapa de imagem para fornecer uma exibição rápida a um produto específico em seu catálogo de produtos.
 
@@ -72,7 +71,7 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selecionar Sites {#selecting-sites}
+## Seleção de sites {#selecting-sites}
 
 Use o seletor de site para escolher uma página da Web quando quiser um ponto de acesso ou mapa de imagem para vincular a uma página da Web que seja gerenciada em AEM sites.
 
