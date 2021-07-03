@@ -8,17 +8,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 exl-id: dd43de7b-8556-4e3f-9d90-14f0f5bd13e7
-feature: Configuration
-role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Configuração
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 9%
 
 ---
 
-# Configurando o Dynamic Media {#setting-up-dynamic-media}
+# Configuração do Dynamic Media {#setting-up-dynamic-media}
 
 [O Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media ajuda você a gerenciar ativos fornecendo ativos de marketing e merchandising visual por demanda, automaticamente dimensionados para o consumo na Web, em dispositivos móveis e sites sociais. Usando um conjunto de ativos principais, o Dynamic Media gera e oferece diversas variações de conteúdo atraente em tempo real na rede global, dimensionável e otimizada para desempenho.
 
