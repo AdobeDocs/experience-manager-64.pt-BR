@@ -2,16 +2,15 @@
 title: Formatos de arquivo compatíveis com o AEM Assets
 description: Lista de formatos de arquivo e tipos MIME compatíveis com o AEM Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos,Representações
+role: User,Admin
+exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1651'
 ht-degree: 10%
 
 ---
-
 
 # Formatos de arquivos compatíveis com o AEM Assets {#assets-supported-formats}
 
@@ -92,7 +91,7 @@ Consulte também [Detectar formatos de arquivo não suportados para Dynamic Medi
 * Arquivos TIFF com dados de ponto flutuante.
 * Arquivos TIFF com espaço de cor Lab.
 
-## Biblioteca rasterizadora de PDF {#supported-pdf-rasterizer-library}
+## Biblioteca de rasterizadores de PDF {#supported-pdf-rasterizer-library}
 
 A biblioteca Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos PDF e Adobe Illustrator grandes e com uso intenso de conteúdo. O Adobe recomenda usar a biblioteca Rasterizer de PDF para o seguinte:
 
@@ -149,7 +148,7 @@ Os formatos de documento compatíveis com os recursos do Dynamic Media são os s
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | HTML |  |  |  |  |  |
-| RTF |  |  |  |  |  |
+| TTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -193,7 +192,7 @@ Além da funcionalidade acima, considere o seguinte:
 | WMV | Instantâneo | Instantâneo |  | * | * |
 | SWF | Instantâneo | Instantâneo |  |  |  |
 
-## Formatos de vídeo de entrada para Transcodificação Dynamic Media {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Formatos de vídeo de entrada para transcodificação Dynamic Media {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extensão de arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
@@ -243,7 +242,7 @@ A aplicabilidade de workflows comuns do DAM para alguns outros formatos de arqui
 
 **#** Os outros formatos são compatíveis no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
 
-## Tipos MIME compatíveis {#supported-mime-types}
+## Tipos MIME suportados {#supported-mime-types}
 
 Por padrão, o AEM detecta o tipo de arquivo usando a extensão de arquivo . AEM pode detectá-lo do conteúdo dos arquivos. Para o último, selecione a opção [!UICONTROL Detectar MIME do conteúdo] em [!UICONTROL Day CQ DAM Mime Type Service] no Console da Web AEM.
 
@@ -297,7 +296,7 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/glo
 | TAR | application/x-tar |  |  |
 | TIF / TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | vídeo/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
