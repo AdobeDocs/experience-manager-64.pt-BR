@@ -2,16 +2,15 @@
 title: Pesquisar aspectos
 description: Este artigo descreve como criar, modificar e usar facetas de pesquisa no AEM.
 contentOwner: AG
-feature: Search
-role: Administrator,Developer
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: 'Pesquisar  '
+role: Admin,Developer
+exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2538'
 ht-degree: 22%
 
 ---
-
 
 # Pesquisar aspectos {#search-facets}
 
@@ -82,7 +81,7 @@ Para pesquisas de texto completo, adicione o predicado Texto completo ao formul�
 1. Navegue até o painel Pesquisar na interface do usuário do Assets. O predicado Propriedade é adicionado ao painel.
 1. Insira uma descrição para o ativo a ser pesquisado na caixa de texto. Por exemplo, digite &quot;Adobe&quot;. Ao realizar uma pesquisa, os ativos com uma descrição correspondente ao &quot;Adobe&quot; são listados nos resultados da pesquisa.
 
-## Adicionar um predicado Opções {#adding-an-options-predicate}
+## Adicionar um predicado de opções {#adding-an-options-predicate}
 
 O predicado Opções permite adicionar várias opções de pesquisa no painel Filtros . Você pode selecionar uma ou mais dessas opções no painel Filtros para procurar ativos. Por exemplo, para pesquisar ativos com base no tipo de arquivo, configure opções, como Imagens, Multimídia, Documentos e Arquivos no formulário de pesquisa. Após configurar essas opções, a pesquisa é executada em ativos do tipo GIF, JPEG, PNG e assim por diante, ao selecionar a opção Imagens no painel Filtros .
 
@@ -195,7 +194,7 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
 | [!UICONTROL Status da expiração] | Pesquisar predicado para procurar ativos com base em seu status de expiração | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Oculto] | Procura predicado que define uma propriedade de campo oculto para procurar ativos | <ul><li>Nome da propriedade</li><li>Valor da propriedade</li><li>Descrição</li></ul> |
 
-## Restaurar aspectos de pesquisa padrão {#restoring-default-search-facets}
+## Restauração de aspectos de pesquisa padrão {#restoring-default-search-facets}
 
 Por padrão, um ícone Bloquear é exibido antes de **[!UICONTROL Painel de pesquisa do administrador de ativos]** na página **[!UICONTROL Pesquisar Forms]**. O ícone Bloquear desaparece se você adicionar facetas de pesquisa ao formulário, indicando que o formulário padrão foi modificado.
 
@@ -224,6 +223,6 @@ Se você não tiver uma função de administrador, esta é uma lista de permiss�
 >[!MORELIKETHIS]
 >
 >* [Estender pesquisa do Assets](searchx.md)
->* [Pesquisar ativos](search-assets.md)
->* [Pesquisar ativos de vídeo](search-video-assets.md)
+* [Pesquisar ativos](search-assets.md)
+* [Pesquisar ativos de vídeo](search-video-assets.md)
 
