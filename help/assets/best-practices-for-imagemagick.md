@@ -2,16 +2,15 @@
 title: Instale e configure o ImageMagick para funcionar com o AEM Assets
 description: Saiba mais sobre o software ImageMagick, como instalá-lo, configurar a etapa do processo da linha de comando e usá-lo para editar, compor e gerar miniaturas de imagens.
 contentOwner: AG
-feature: Renditions,Developer Tools
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Representações,Ferramentas do desenvolvedor
+role: Admin
+exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
-
 
 # Instale e configure o ImageMagick para funcionar com o AEM Assets {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
@@ -35,7 +34,7 @@ Várias versões dos arquivos de instalação do ImageMagic estão disponíveis 
 1. Defina a variável de caminho Ambiente para o diretório de instalação do ImageMagic.
 1. Para verificar se a instalação foi bem-sucedida, execute o comando `identify -version`.
 
-## Configure a etapa do processo da linha de comando {#set-up-the-command-line-process-step}
+## Configurar a etapa do processo da linha de comando {#set-up-the-command-line-process-step}
 
 Você pode configurar a etapa do processo da linha de comando para o caso de uso específico. Execute estas etapas para gerar uma imagem invertida e miniaturas (140x100, 48x48, 319x319 e 1280x1280) sempre que adicionar um arquivo de imagem JPEG a `/content/dam` no servidor de AEM:
 
@@ -90,9 +89,9 @@ Se você usar o ImageMagick ou uma biblioteca afetada, o Adobe recomenda atenuar
 >[!MORELIKETHIS]
 >
 >* [Práticas recomendadas para processar vários formatos de arquivo usando o AEM Assets](assets-file-format-best-practices.md)
->* [Opções de linha de comando para ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
->* [Exemplos básicos e avançados de uso do ImageMagick](https://www.imagemagick.org/Usage/)
->* [Ajuste de desempenho de ativos para o ImageMagick](performance-tuning-guidelines.md)
->* [Lista completa de formatos de arquivo compatíveis com o AEM Assets](assets-formats.md)
->* [Entender os formatos de arquivo e o custo de memória das imagens](https://www.scantips.com/basics1d.html)
+* [Opções de linha de comando para ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
+* [Exemplos básicos e avançados de uso do ImageMagick](https://www.imagemagick.org/Usage/)
+* [Ajuste de desempenho de ativos para o ImageMagick](performance-tuning-guidelines.md)
+* [Lista completa de formatos de arquivo compatíveis com o AEM Assets](assets-formats.md)
+* [Entender os formatos de arquivo e o custo de memória das imagens](https://www.scantips.com/basics1d.html)
 
