@@ -2,22 +2,21 @@
 title: Processar ativos para realizar processos de negócios, realizar auditorias, alcançar conformidade e manter a conformidade básica
 description: Processamento de ativos para converter formatos, criar representações, gerenciar ativos, validar ativos e executar fluxos de trabalho.
 contentOwner: AG
-feature: Workflow,Renditions
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Fluxo De Trabalho,Representações
+role: User,Admin
+exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
-
 
 # Processar ativos digitais {#process-assets}
 
 [!DNL Adobe Experience Manager Assets] O permite trabalhar com os ativos digitais de várias maneiras para permitir um processamento de ativos robusto. Você pode usar os métodos de processamento disponíveis ou estender os métodos para garantir a conclusão completa do processo de negócios usando, auditorias e conformidade, detecção e distribuição de e a integridade básica de seus ativos digitais. Você pode fazer tudo isso, além de atingir a escala e a personalização necessárias.
 
-## Entender os workflows {#understand-workflows}
+## Entender workflows {#understand-workflows}
 
 Para processamento de ativos, [!DNL Experience Manager] usa workflows. Os fluxos de trabalho ajudam a automatizar a lógica ou as atividades de negócios. Etapas granulares para realizar tarefas específicas são fornecidas por padrão e os desenvolvedores podem criar suas próprias etapas personalizadas. Essas etapas podem ser combinadas em uma ordem lógica para criar workflows. Por exemplo, um fluxo de trabalho pode aplicar automaticamente uma marca d&#39;água em imagens carregadas com base em critérios específicos, como metadados incorporados na imagem, pasta na qual é carregado, resolução da imagem e assim por diante. Outro exemplo é um fluxo de trabalho configurado para marcar imagens de maneira semelhante e, ao mesmo tempo, endereçar várias necessidades de gerenciamento de ativos, como adicionar metadados, criar representações, adicionar tags inteligentes para descoberta de ativos, publicar em um armazenamento de dados, definir permissões para acesso do usuário e assim por diante.
 
@@ -112,8 +111,8 @@ Para um modelo de fluxo de trabalho, os usuários podem criar um iniciador de fl
 >[!MORELIKETHIS]
 >
 >* [Aplicar e participar de fluxos de trabalho](/help/sites-authoring/workflows.md)
->* [Criar modelos de fluxo de trabalho e estender a funcionalidade do fluxo de trabalho](/help/sites-developing/workflows.md)
->* [Métodos para executar workflows](/help/sites-administering/workflows-starting.md)
->* [Práticas recomendadas para workflows](/help/sites-developing/workflows-best-practices.md)
->* [Artigo da comunidade sobre modificação de ativos usando fluxo de trabalho](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+* [Criar modelos de fluxo de trabalho e estender a funcionalidade do fluxo de trabalho](/help/sites-developing/workflows.md)
+* [Métodos para executar workflows](/help/sites-administering/workflows-starting.md)
+* [Práticas recomendadas para workflows](/help/sites-developing/workflows-best-practices.md)
+* [Artigo da comunidade sobre modificação de ativos usando fluxo de trabalho](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
