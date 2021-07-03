@@ -2,16 +2,15 @@
 title: Metadados de XMP
 description: Saiba mais sobre o padrão de metadados de XMP (Plataforma de metadados extensível) usado pelo AEM Assets para gerenciamento de metadados. O XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadados
+role: User,Admin
+exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '816'
 ht-degree: 19%
 
 ---
-
 
 # Metadados XMP {#xmp-metadata}
 
