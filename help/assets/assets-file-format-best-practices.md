@@ -2,16 +2,15 @@
 title: Práticas recomendadas de formato de arquivo de ativos
 description: Práticas recomendadas para o suporte a arquivos no AEM Assets.
 contentOwner: AG
-feature: Asset Management,Developer Tools
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+role: Admin
+exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de formato de arquivo de ativos {#assets-file-format-best-practices}
 
@@ -30,7 +29,7 @@ A biblioteca Adobe Camera Raw oferece suporte ao perfil de cores CMYK como entra
 
 Para obter mais informações, consulte [Suporte Camera Raw](camera-raw.md) no AEM Assets.
 
-## Biblioteca do Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
+## Biblioteca Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
 Para obter melhores resultados, o Adobe recomenda usar a biblioteca Adobe PDF Rasterizer para os seguintes arquivos:
 
