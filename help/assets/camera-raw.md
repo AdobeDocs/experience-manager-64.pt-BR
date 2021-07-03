@@ -2,18 +2,17 @@
 title: Suporte Camera Raw
 description: Saiba como ativar o suporte Camera Raw no Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Developer Tools
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Ferramentas do desenvolvedor
+role: Admin
+exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 2%
 
 ---
 
-
-# Use Camera Raw para processar imagens {#camera-raw-support}
+# Usar o Camera Raw para processar imagens {#camera-raw-support}
 
 Você pode ativar o suporte Camera Raw para processar formatos de arquivo brutos, como CR2, NEF e RAF, e renderizar as imagens no formato JPEG. A funcionalidade é compatível com o Adobe Experience Manager Assets usando o [pacote Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponível na Distribuição de software.
 
