@@ -2,16 +2,15 @@
 title: Preparação de ativos para tradução
 description: Crie pastas raiz de idioma para preparar a tradução de ativos multilíngues.
 contentOwner: AG
-feature: Projects,Translation
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Projetos,Tradução
+role: User,Admin
+exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
-
 
 # Preparação de ativos para tradução {#preparing-assets-for-translation}
 
@@ -44,7 +43,7 @@ Execute as seguintes etapas para preparar os ativos para tradução:
 1. Adicione ativos ao idioma principal.
 1. Crie a raiz de idioma de cada idioma de destino para o qual você precisa de uma cópia de idioma.
 
-## Criação de uma Raiz de Idioma {#creating-a-language-root}
+## Criar uma raiz de idioma {#creating-a-language-root}
 
 Para criar a raiz de idioma, crie uma pasta e use um código de idioma ISO como o valor da propriedade Name. Depois de criar a raiz do idioma, você pode criar uma cópia de idioma em qualquer nível na raiz do idioma.
 
@@ -72,4 +71,3 @@ A interface otimizada para toque fornece um painel Referências que mostra uma l
 1. No painel Referências , clique ou toque em **[!UICONTROL Cópias de idioma]**. O painel Cópias de idioma mostra as cópias de idioma dos ativos.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
-
