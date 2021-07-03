@@ -2,16 +2,15 @@
 title: Integrar o AEM Assets ao Adobe InDesign Server
 description: Saiba como integrar o AEM Assets ao InDesign Server.
 contentOwner: AG
-feature: Publishing
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Publicação
+role: Admin
+exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1703'
 ht-degree: 4%
 
 ---
-
 
 # Integrar o AEM Assets ao Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
@@ -77,7 +76,7 @@ O InDesign Server pode ser integrado ao AEM Assets para que os arquivos criados 
    * O texto e os arquivos extraídos são armazenados no AEM Assets.
    * Todas as representações são armazenadas no AEM Assets, no próprio ativo.
 
-## Integração do InDesign Server com AEM {#integrating-the-indesign-server-with-aem}
+## Integração do InDesign Server com o AEM {#integrating-the-indesign-server-with-aem}
 
 Para integrar o InDesign Server para uso com o AEM Assets e depois de configurar seu proxy, é necessário:
 
@@ -88,7 +87,7 @@ Para integrar o InDesign Server para uso com o AEM Assets e depois de configurar
 
 1. Configure um trabalhador proxy [para o InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Instalar o InDesign Server {#installing-the-indesign-server}
+### Instalação do InDesign Server {#installing-the-indesign-server}
 
 Para instalar e iniciar o InDesign Server para uso com o AEM:
 
@@ -112,7 +111,7 @@ Para instalar e iniciar o InDesign Server para uso com o AEM:
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### Configurar o fluxo de trabalho do AEM Assets {#configuring-the-aem-assets-workflow}
+### Configuração do fluxo de trabalho do AEM Assets {#configuring-the-aem-assets-workflow}
 
 O AEM Assets tem um fluxo de trabalho pré-configurado **Ativo de atualização DAM**, que tem várias etapas de processo especificamente para o InDesign:
 
@@ -195,7 +194,7 @@ Se o InDesign Server e o AEM estiverem em hosts diferentes ou se um ou ambos os 
 
    ![Configurações do externalizador de links](assets/link-externalizer-config.png)
 
-### Ativando o processamento de trabalho paralelo para InDesigns Server {#enabling-parallel-job-processing-for-indesign-server}
+### Ativação do processamento de trabalho paralelo para InDesigns Server {#enabling-parallel-job-processing-for-indesign-server}
 
 Agora é possível habilitar o processamento paralelo de tarefas para IDS.
 
@@ -238,7 +237,7 @@ Para configurar o número de trabalhos paralelos do IDS:
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## Habilite o suporte para o Adobe InDesign Server 10.0 ou posterior {#enabling-support-for-indesign-server-or-higher}
+## Ativar o suporte para o Adobe InDesign Server 10.0 ou posterior {#enabling-support-for-indesign-server-or-higher}
 
 Para o servidor InDesign 10.0 ou superior, execute as seguintes etapas para ativar o suporte a várias sessões.
 
