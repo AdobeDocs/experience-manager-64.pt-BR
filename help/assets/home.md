@@ -2,16 +2,15 @@
 title: Guia do Assets
 description: Este guia aborda todas as tarefas do AEM Assets, como criar, gerenciar, entregar e otimizar ativos digitais.
 user-guide-title: Guia do Assets
-feature: Asset Management
-role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gerenciamento de ativos
+role: User,Architect,Admin
+exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '319'
 ht-degree: 25%
 
 ---
-
 
 # Guia do Assets
 
