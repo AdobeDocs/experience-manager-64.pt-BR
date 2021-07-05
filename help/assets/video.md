@@ -71,7 +71,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
          [Exibição de representações de vídeo](video-renditions.md)
 
-[Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
+         [Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gerenciar predefinições do visualizador](managing-viewer-presets.md)
       * [Publicação de ativos](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
       * Edite as propriedades do vídeo, como título, descrição e tags, e os campos de metadados personalizados:
 
-[Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
+         [Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gerenciamento de metadados para ativos digitais](metadata.md)
       * [Esquemas de metadados](metadata-schemas.md)
