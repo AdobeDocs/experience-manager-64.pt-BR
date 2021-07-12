@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
 
-
-# Atualizar para AEM 6.4 Forms no JEE {#upgrade-to-aem-forms-jee}
+# Atualizar para o AEM 6.4 Forms no JEE {#upgrade-to-aem-forms-jee}
 
 Use um dos seguintes caminhos de atualização, conforme apropriado para seu ambiente.
 
@@ -37,7 +36,7 @@ Execute o seguinte procedimento para atualizar o AEM 6.2 Forms existente no JEE 
    * [Atualização do AEM 6.2 ou AEM 6.3 Forms para AEM 6.4 Forms para WebSphere](assets/upgrade-websphere.pdf)
    * [Atualização do AEM 6.2 ou AEM 6.3 Forms para AEM 6.4 Forms para JBoss Turnkey](assets/upgrade-turnkey.pdf)
 
-## AEM 6.0 Forms no JEE > AEM 6.3 Forms no JEE {#aem-forms-jee-60-to-63}
+## AEM 6.0 Forms em JEE > AEM 6.3 Forms no JEE {#aem-forms-jee-60-to-63}
 
 A atualização direta do LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms para AEM 6.4 Forms não está disponível. Você pode executar uma atualização intermediária para uma ou mais versões do LiveCycle ou AEM Forms e, em seguida, atualizar do AEM 6.4 Forms. Para obter a lista de versões intermediárias e as instruções de atualização correspondentes, consulte [Escolher um caminho de atualização](upgrade.md).
 
