@@ -6,9 +6,8 @@ user-guide-title: Guia do usuário do AEM 6.4 Communities
 breadcrumb-title: Guia do Communities
 user-guide-description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.
 feature: Communities
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 12%
@@ -88,7 +87,7 @@ ht-degree: 12%
    + [Guia de componentes da comunidade](components-guide.md)
    + [Componentes, funções e recursos essenciais](essentials.md)
    + [Tutoriais](tutorials.md)
-   + [Resolução de Problemas](troubleshooting.md)
+   + [Resolução de problemas](troubleshooting.md)
    + [Diretrizes de codificação](code-guide.md)
    + [Personalização do lado do servidor](server-customize.md)
    + [Personalização do lado do cliente](client-customize.md)
@@ -144,7 +143,7 @@ ht-degree: 12%
    + [Convenções de nomenclatura](naming-conventions.md)
    + [Refatoração do SocialUtils](socialutils.md)
 + Criação {#authoring}
-   + [Componentes das comunidades](author-communities.md) 
+   + [Componentes do Communities](author-communities.md)
    + [Noções básicas sobre componentes do Communities](basics.md)
    + [Recurso Fluxos de atividade](activities.md)
    + [Recurso Atribuições](assignments.md)
