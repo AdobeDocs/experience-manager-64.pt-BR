@@ -7,17 +7,16 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 8cbace00-c354-4f37-a781-04cadd441419
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
 
-
-# Fluxos de trabalho Forms JEE | Tratamento de dados do usuário {#forms-jee-workflows-handling-user-data}
+# Fluxos de trabalho Forms JEE | Tratamento de dados de utilizadores {#forms-jee-workflows-handling-user-data}
 
 Os fluxos de trabalho do AEM Forms JEE fornecem ferramentas para projetar, criar e gerenciar processos comerciais. Um processo de workflow consiste em uma série de etapas executadas em uma ordem especificada. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Um processo pode interagir com ativos, contas de usuário e serviços e pode ser acionado por meio de qualquer um dos seguintes métodos:
 
@@ -29,7 +28,7 @@ Os fluxos de trabalho do AEM Forms JEE fornecem ferramentas para projetar, criar
 
 Para obter mais informações sobre como criar o processo de workflow do AEM Forms JEE, consulte [Ajuda do Workbench](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf).
 
-## Os dados e armazenamentos de dados do usuário {#user-data-and-data-stores}
+## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
 Quando um processo é acionado e avança, ele captura dados sobre os participantes do processo, dados inseridos pelos participantes no formulário associado ao processo e anexos adicionados ao formulário. Os dados são armazenados no banco de dados do servidor AEM Forms JEE e, se configurados, alguns dados como anexos são armazenados no diretório Global Document Storage (GDS). O diretório GDS pode ser configurado em um sistema de arquivos compartilhado ou em um banco de dados.
 
@@ -43,7 +42,7 @@ No entanto, não é possível identificar a ID da instância do processo para um
 * **Processo iniciado a partir da instância** de publicação AEM: Todas as instâncias de processo acionadas AEM instância de publicação não capturam informações sobre o iniciador. No entanto, os dados do usuário podem ser capturados no formulário associado ao processo, que é armazenado nas variáveis do workflow.
 * **Processo iniciado por email**: A ID do email do remetente é capturada como uma propriedade em uma coluna blob opaca da tabela do  `tb_job_instance` banco de dados, que não pode ser consultada diretamente.
 
-### Identifique as IDs da instância do processo quando o iniciador ou o participante do fluxo de trabalho for conhecido {#initiator-participant}
+### Identifique as IDs de instância do processo quando o iniciador ou o participante do fluxo de trabalho for conhecido {#initiator-participant}
 
 Execute as seguintes etapas para identificar as IDs de instância do processo de um iniciador de fluxo de trabalho ou de um participante:
 
@@ -80,7 +79,7 @@ Execute as seguintes etapas para identificar as IDs de instância do processo de
 
 1. Siga as instruções na seção [Purge user data from workflow instances based on process instance IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) para excluir dados de usuário para IDs de instância de processo identificadas.
 
-### Identifique as IDs de instância do processo quando os dados do usuário são armazenados em variáveis primitivas {#primitive}
+### Identificar as IDs de instância do processo quando os dados do usuário são armazenados em variáveis primitivas {#primitive}
 
 Um workflow pode ser projetado de modo que os dados do usuário sejam capturados em uma variável que é armazenada como um blob no banco de dados. Nesses casos, você pode consultar os dados do usuário somente se estiverem armazenados em uma das seguintes variáveis primitivas:
 
@@ -197,4 +196,3 @@ Depois de ter as IDs da tarefa, faça o seguinte para limpar os arquivos e dados
    delete from tb_assignment where task_id=<task_id>
    delete from tb_task where id=<task_id>
    ```
-
