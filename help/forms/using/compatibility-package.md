@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '387'
 ht-degree: 9%
 
 ---
 
-
-# Instalar Pacote de Compatibilidade {#compatibility-package}
+# Instalar pacote de compatibilidade {#compatibility-package}
 
 A instalação do pacote Compatibilidade no AEM Forms 6.4 permite usar os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e modelos e páginas de formulários adaptáveis obsoletos
 
@@ -51,7 +50,7 @@ Certifique-se de ter [AEM pacote de compatibilidade](/help/sites-deploying/backw
 
    Para obter mais informações, consulte [utilitário de migração](/help/forms/using/migration-utility.md).
 
-## Ativos compatíveis com o AEM Forms 6.4 ao instalar o pacote de Compatibilidade {#assetsmadecompatible}
+## Ativos compatíveis com o AEM Forms 6.4 ao instalar o pacote Compatibilidade {#assetsmadecompatible}
 
 Ao instalar o pacote de Compatibilidade, você pode tornar os seguintes ativos e modelos compatíveis com o AEM Forms 6.4:
 
@@ -78,4 +77,3 @@ Ao instalar o pacote de Compatibilidade, você pode tornar os seguintes ativos e
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedenrollment
-
