@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1643'
-ht-degree: 2%
+source-wordcount: '1642'
+ht-degree: 1%
 
 ---
-
 
 # Console de grupos da comunidade {#community-groups-console}
 
@@ -58,7 +57,7 @@ Para acessar o console Grupos :
    * A estrutura do site da comunidade deve incluir uma função de grupos
    * Essas capturas de tela são do tutorial Introdução após [criar grupos na publicação](published-site.md)
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 Selecione a pasta **[!UICONTROL Groups]** para abri-la.
 
@@ -101,7 +100,7 @@ Nesse console Grupos é possível criar novos grupos.
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-A estrutura usa [Bootstrap do Twitter](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
+A estrutura usa [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de seleção azul opaca.
 
@@ -109,7 +108,7 @@ Quando selecionado, o tema será sobreposto com uma marca de seleção azul opac
 
 Depois que o site da comunidade é publicado, é possível [editar as propriedades](#modifying-group-properties) e selecionar um tema diferente.
 
-#### MARCA DO GRUPO DA COMUNIDADE {#community-group-branding}
+#### MARCA DO GRUPO COMUNITÁRIO {#community-group-branding}
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
@@ -189,7 +188,7 @@ Quando o processo é concluído, o cartão do novo site da subcomunidade (grupo)
 
 O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas que qualquer outra página AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
 
-## Modificando Propriedades do Grupo {#modifying-group-properties}
+## Modificando propriedades do grupo {#modifying-group-properties}
 
 As propriedades de um site de subcomunidade existente, especificadas durante o processo de criação do grupo da comunidade, podem ser modificadas ao selecionar o ícone Editar site, que aparece ao passar o mouse sobre o cartão de grupo:
 
@@ -247,7 +246,7 @@ O painel ESTRUTURA permite a modificação da estrutura inicialmente criada a pa
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
-### Modificar Design {#modify-design}
+### Modificar design {#modify-design}
 
 O painel DESIGN permite a modificação do tema:
 
@@ -284,7 +283,7 @@ Depois que o grupo for publicado com êxito, uma mensagem será exibida:
 >
 >O site da comunidade e os grupos aninhados devem ser publicados de cima para baixo.
 
-## Excluindo o Grupo {#deleting-the-group}
+## Excluindo o grupo {#deleting-the-group}
 
 ![deleteicon](assets/deleteicon.png)
 
