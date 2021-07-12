@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: cde40670-ce9d-4b96-92d3-9e56cb15bdce
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1111'
 ht-degree: 1%
 
 ---
-
 
 # Considerações gerais de segurança para AEM Forms no JEE {#general-security-considerations-for-aem-forms-on-jee}
 
@@ -241,7 +240,7 @@ As credenciais de email armazenadas pelos aplicativos não são criptografadas a
 
 O AEM Forms no JEE usa o banco de dados AEM Forms no JEE para armazenar informações confidenciais da chave de documento e outro material criptográfico usado para documentos de política. Proteger o banco de dados contra invasão ajuda a proteger essas informações confidenciais.
 
-### Senha no formulário de texto claro {#password-in-clear-text-format-in-adobe-ds-xml}
+### Senha no formulário de texto limpo {#password-in-clear-text-format-in-adobe-ds-xml}
 
 O servidor de aplicativos usado para executar o AEM Forms no JEE requer sua própria configuração para acessar seu banco de dados por meio de uma fonte de dados configurada no servidor de aplicativos. Certifique-se de que o servidor de aplicativos não exponha a senha do banco de dados em texto nítido em seu arquivo de configuração da fonte de dados.
 
@@ -253,6 +252,6 @@ O arquivo lc_[database].xml não deve conter senha no formato de texto limpo. Co
 
 O IBM WebSphere Application Server e o Oracle WebLogic Server podem criptografar senhas de fonte de dados por padrão. No entanto, confirme com a documentação do servidor de aplicativos para garantir que isso aconteça.
 
-### Protegendo a chave privada armazenada no Armazenamento de Confiança {#protecting-the-private-key-stored-in-trust-store}
+### Proteção da chave privada armazenada no Armazenamento de confiança {#protecting-the-private-key-stored-in-trust-store}
 
 As chaves privadas ou credenciais importadas no Armazenamento de Confiança são armazenadas no AEM Forms no banco de dados JEE. Tome as precauções apropriadas para proteger o banco de dados e restringir o acesso somente a administradores designados.
