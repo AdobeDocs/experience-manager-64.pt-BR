@@ -7,23 +7,22 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
 
-
-# Segurança de documento | Tratamento de dados do usuário {#document-security-handling-user-data}
+# Segurança de documento | Tratamento de dados de utilizadores {#document-security-handling-user-data}
 
 A segurança do documento AEM Forms permite criar, armazenar e aplicar configurações de segurança predefinidas a seus documentos. Ela garante que somente usuários autorizados possam usar os documentos. Você pode proteger documentos usando políticas. Uma política é uma coleção de informações que inclui configurações de segurança e uma lista de usuários autorizados. Você pode aplicar uma política a um ou mais documentos e autorizar usuários adicionados ao gerenciamento de usuários do AEM Forms JEE.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
-## Os dados e armazenamentos de dados do usuário {#user-data-and-data-stores}
+## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
 A segurança de documentos armazena políticas e dados relacionados a documentos protegidos, incluindo dados de usuários em um banco de dados, como My Sql, Oracle, MS SQL Server e IBM DB2. Além disso, os dados para usuários autorizados em uma política em armazenamento no gerenciamento de usuários. Para obter informações sobre dados armazenados no gerenciamento de usuários, consulte [Gerenciamento de usuários do Forms: Manipular dados do usuário](/help/forms/using/user-management-handling-user-data.md).
 
@@ -214,4 +213,3 @@ Faça o seguinte para excluir dados de segurança do documento para uma ID princ
 
 1. Exclua os dados da ID principal do banco de dados de gerenciamento de usuários. Para obter etapas detalhadas, consulte [Gerenciamento de usuários do Forms | Manipulação de dados do usuário](/help/forms/using/user-management-handling-user-data.md).
 1. Inicie o servidor do AEM Forms.
-
