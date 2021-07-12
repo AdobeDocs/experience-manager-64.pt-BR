@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1995'
 ht-degree: 1%
 
 ---
-
 
 # Gerenciar metadados do formulário {#manage-form-metadata}
 
@@ -43,7 +42,7 @@ Os seguintes tipos de ativos são compatíveis com o AEM Forms:
 * Recursos
 * XFS
 
-### Lista extensa de metadados {#extensive-list-of-metadata-nbsp}
+### Lista abrangente de metadados {#extensive-list-of-metadata-nbsp}
 
 Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o AEM Forms:
 
@@ -272,7 +271,7 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários suportados
 
    ![Editor de esquema de metadados para o tipo de formulário adaptável](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
-   [Clique para ampliar](assets/metadata-schema-editor-for-adaptive-form-type.png)
+[Clique para ampliar](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
    1. O painel esquerdo contém seções com guias onde os campos são colocados e o painel direito exibe todos os componentes da interface do usuário disponíveis e as propriedades do campo selecionado no painel esquerdo.
 
