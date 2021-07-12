@@ -8,21 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 260e405e-f59c-4aea-b83f-53ee103df94e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
-
-# Configurar o AEM Forms para enviar dados de formulário para uma AEM Forms no processo JEE {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
+# Configuração do AEM Forms para enviar dados de formulário a uma AEM Forms no processo JEE {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
 Os formulários adaptáveis são compatíveis com o envio de dados para um processo AEM Forms no JEE para processamento adicional. Ela permite acionar um AEM Forms no processo JEE com os dados disponíveis do formulário enviado. Execute as seguintes etapas para habilitar a instância do AEM Forms a enviar um formulário adaptável para o AEM Forms no processo JEE:
 
-## Configurar o servidor AEM Forms {#configure-your-aem-forms-server}
+## Configurar o servidor do AEM Forms {#configure-your-aem-forms-server}
 
 Execute as seguintes etapas para permitir que o servidor de formulários de AEM envie dados para uma AEM Forms no servidor JEE:
 
