@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
-
 
 # Configurar o agendador de sincronização {#configuring-the-synchronization-scheduler}
 
@@ -34,7 +33,7 @@ Execute as seguintes etapas para alterar o intervalo do agendador de sincroniza�
 
    A unidade da frequência é minutos. Por exemplo, para configurar o scheduler para ser executado após cada 60 minutos, especifique 60.
 
-## Sincronizar ativos {#synchronizing-assets}
+## Sincronização de ativos {#synchronizing-assets}
 
 Você pode usar a opção **Sincronizar ativos do repositório** para sincronizar manualmente os ativos. Execute as seguintes etapas para sincronizar manualmente os ativos:
 
@@ -50,7 +49,7 @@ Você pode usar a opção **Sincronizar ativos do repositório** para sincroniza
 
    **Figura: Caixa de diálogo** *Sincronização*
 
-## Resolução de problemas do erro de sincronização {#troubleshooting-synchronization-error}
+## Resolução de problemas de erro de sincronização {#troubleshooting-synchronization-error}
 
 Você pode criar novos aplicativos no designer de workflow (LiveCycle Workbench).
 
@@ -61,4 +60,3 @@ Para resolver o conflito, renomeie o aplicativo e sincronize manualmente os ativ
 ![Conflitos na caixa de diálogo sincronização de ativos](assets/sync-conflict.png)
 
 **Figura:** *Conflitos na caixa de diálogo de sincronização de ativos*
-
