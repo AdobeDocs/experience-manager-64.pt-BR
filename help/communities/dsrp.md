@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 3%
 
 ---
 
-
-# DSRP - Provedor de Recursos de Armazenamento do Banco de Dados Relacional {#dsrp-relational-database-storage-resource-provider}
+# DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional {#dsrp-relational-database-storage-resource-provider}
 
 ## Sobre o DSRP {#about-dsrp}
 
@@ -135,14 +134,14 @@ No autor:
 * Certifique-se de que `Only Modified` não esteja selecionado.
 * Selecione **[!UICONTROL Ativar]**
 
-## Gerenciando dados do usuário {#managing-user-data}
+## Gerenciar dados do usuário {#managing-user-data}
 
 Para obter informações sobre *usuários*, *perfis de usuário* e *grupos de usuários*, normalmente inseridos no ambiente de publicação, visite
 
 * [Sincronização de usuários](sync.md)
 * [Gerenciar usuários e grupos de usuários](users.md)
 
-## Reindexando Solr para DSRP {#reindexing-solr-for-dsrp}
+## Solr de reindexação para DSRP {#reindexing-solr-for-dsrp}
 
 Para reindexar o DSRP Solr, siga a documentação para [reindexando o MSRP](msrp.md#msrp-reindex-tool). No entanto, ao reindexar para DSRP, use este URL: **/services/social/datastore/rdb/reindex**
 
