@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 26cd0851-cadf-4a8f-b3bf-59f77671f584
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
-
 
 # AEM aplicativo de desktop para AEM Forms {#aem-desktop-app-for-aem-forms}
 
@@ -45,4 +44,3 @@ AEM aplicativo de desktop usa o protocolo WebDAV no Microsoft Windows e SMB1 no 
 1. Abra o aplicativo e conecte-se ao servidor do AEM Forms.
 
    Ao se conectar com êxito, o aplicativo preenche as pastas `content/dam` e `content/dam/formsanddocuments`. Juntamente com a movimentação de arquivos das pastas acima para pastas locais e vice-versa, é possível usar o aplicativo para mover o conteúdo entre pastas preenchidas automaticamente.
-
