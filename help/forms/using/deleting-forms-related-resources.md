@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 94a66d83-b359-4be6-b668-4b4ba024b1e7
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
-
 
 # Exclusão de formulários e recursos relacionados {#deleting-forms-and-related-resources}
 
