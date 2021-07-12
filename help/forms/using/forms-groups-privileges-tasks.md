@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 2%
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
-
 
 # AEM Forms em grupos e privilégios OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
@@ -114,4 +113,3 @@ Depois de instalar [Pacote do complemento AEM Forms](/help/forms/using/installin
 
 1. O usuário com privilégios de grupo de usuários de formulários não pode gravar scripts para formulários adaptáveis.
 1. O usuário com privilégios de grupo de autores de modelo não pode gravar scripts para modelos.
-
