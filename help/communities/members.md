@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '956'
 ht-degree: 3%
 
 ---
-
 
 # Consoles de gerenciamento de membros e grupos {#members-groups-management-consoles}
 
@@ -25,11 +24,11 @@ ht-degree: 3%
 
 Os recursos do AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participar de uma comunidade no ambiente de publicação. Seu registro de usuário só precisa existir no ambiente de publicação e eles são comumente chamados de *membros* para diferenciá-los de *usuários* registrados no ambiente de criação.
 
-### Membros (usuários) em Publicar {#members-users-on-publish}
+### Membros (usuários) na publicação {#members-users-on-publish}
 
 Usando os consoles Membros e Grupos do Communities, membros e grupos de membros registrados no ambiente *publish* podem ser criados e gerenciados no ambiente *author*. Isso só é possível quando o [túnel service](deploy-communities.md#tunnel-service-on-author) está ativado.
 
-### Usuários no Autor {#users-on-author}
+### Usuários no autor {#users-on-author}
 
 Para gerenciar usuários e grupos registrados no ambiente *author*, é necessário usar o console de segurança da plataforma:
 
@@ -40,7 +39,7 @@ Para gerenciar usuários e grupos registrados no ambiente *author*, é necessár
 >
 >Com o conteúdo de amostra implantado e ativado, muitos usuários de amostra existem nos ambientes de autor e publicação. Esses usuários não estarão presentes ao executar com [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
-## Console de Membros {#members-console}
+## Console de membros {#members-console}
 
 No ambiente de criação, para acessar o console Membros para gerenciar membros registrados no ambiente de publicação:
 
@@ -52,7 +51,7 @@ No ambiente de criação, para acessar o console Membros para gerenciar membros 
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
-### Pesquisar {#search-features}
+### Pesquisar   {#search-features}
 
 Selecione o ícone do painel lateral no lado esquerdo do cabeçalho `Members` para alternar e abrir o painel lateral de pesquisa.
 
@@ -141,7 +140,7 @@ Para fornecer um avatar para o membro, comece selecionando **[!UICONTROL Fazer u
 
 O membro pode ser adicionado a um ou mais grupos de membros do site da comunidade. Comece inserindo texto na caixa de texto.
 
-### GERAL - Adicionar Membro aos Grupos {#general-add-member-to-groups}
+### GERAL - Adicionar Membro a Grupos {#general-add-member-to-groups}
 
 O membro pode ser acrescentado a um ou mais grupos de membros. Comece inserindo texto na caixa de texto.
 
@@ -159,7 +158,7 @@ Consulte também [Pontuação e emblema](implementing-scoring.md).
 * **[!UICONTROL Remover emblemas]**
    * Selecione o ícone da lixeira ao lado de um selo para removê-lo
 
-## Console de grupos {#groups-console}
+## Console Grupos {#groups-console}
 
 O console Grupos , disponível no ambiente de criação, permite a criação e o gerenciamento de grupos de membros registrados no ambiente de publicação. É particularmente útil para:
 * [Grupos de membros privilegiados](users.md#privilegedmembersgroups)
