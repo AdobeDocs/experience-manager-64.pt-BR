@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3316'
 ht-degree: 1%
 
 ---
-
 
 # Plataformas compatíveis com AEM Forms no JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -69,7 +68,7 @@ O Adobe recomenda essas configurações e oferece suporte total ou restrito como
 | E: Espera-se que funcione | Espera-se que a configuração funcione, e não há relatórios em contrário. |
 | Z: Não suportado | A configuração não é suportada. O Adobe não faz declarações sobre se a configuração funciona e não oferece suporte a ela. |
 
-### Java Virtual Machines (JVM) {#java-virtual-machines-jvm}
+### Máquinas Virtuais Java (JVM) {#java-virtual-machines-jvm}
 
 A Adobe Experience Manager Forms requer uma máquina virtual Java para execução, fornecida pela distribuição do Java Development Kit (JDK). A Adobe Experience Manager opera com as seguintes versões das máquinas virtuais Java:
 
@@ -104,7 +103,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 
 ### Bancos de dados e persistência de CRX {#databases-and-crx-persistence}
 
-#### Suporte a persistência de AEM {#aem-persistence-support}
+#### Suporte à persistência de AEM {#aem-persistence-support}
 
 <table> 
  <tbody> 
@@ -252,7 +251,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 >
 >Os clusters IBM® WebSphere® são suportados apenas nas edições de implantação de rede.
 
-### Sistemas operacionais do servidor {#server-operating-systems}
+### Sistemas operacionais para servidores {#server-operating-systems}
 
 #### Ambientes de produção {#production-environments}
 
@@ -340,7 +339,7 @@ Você pode executar o AEM Forms no JEE em uma máquina física ou em um ambiente
 
 
 
-### Exceções às plataformas de servidor compatíveis {#exceptions-to-supported-server-platforms}
+### Exceções às plataformas de servidor suportadas {#exceptions-to-supported-server-platforms}
 
 Considere as seguintes exceções ao escolher uma plataforma para configurar seu AEM Forms no servidor JEE.
 
@@ -664,7 +663,7 @@ Para obter requisitos adicionais, consulte:
 
 ### Navegadores {#browsers}
 
-#### Áreas de trabalho {#desktops}
+#### Desktops {#desktops}
 
 <table> 
  <tbody> 
@@ -789,7 +788,7 @@ O Microsoft® Windows® 2012 não é suportado para todos os softwares especific
 
 Além disso, o AEM Forms no JEE oferece suporte a atualizações, correções e pacotes de correções além da versão principal e secundária especificada do software suportado. No entanto, a atualização para a próxima versão principal ou secundária não é suportada, a menos que especificado.
 
-## Política de suporte a patch de terceiros {#third-party-patch-support-policy}
+## Política de suporte de patch de terceiros {#third-party-patch-support-policy}
 
 Os requisitos de software de terceiros para o AEM Forms no JEE estão documentados na seção &quot;Requisitos do sistema&quot; de seus respectivos documentos de produto. Toda a documentação pode ser acessada em [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64) .
 
