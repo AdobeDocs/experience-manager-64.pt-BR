@@ -9,10 +9,9 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Fragmentos de conteúdo
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 13%
@@ -38,7 +37,7 @@ Para ativar os modelos de fragmento de conteúdo, é necessário:
 * Ativar o uso de modelos de fragmento de conteúdo no gerenciador de configuração
 * Aplicar a configuração à sua pasta Ativos
 
-### Ativar modelos de fragmento de conteúdo no Configuration Manager {#enable-content-fragment-models-in-configuration-manager}
+### Ativar modelos de fragmentos de conteúdo no Configuration Manager {#enable-content-fragment-models-in-configuration-manager}
 
 Para [criar um novo Modelo de Fragmento de Conteúdo](#creating-a-content-fragment-model) você **deve** primeiro ativá-los usando o Gerenciador de Configuração:
 
@@ -54,7 +53,7 @@ Para [criar um novo Modelo de Fragmento de Conteúdo](#creating-a-content-fragme
 
 1. Selecione **[!UICONTROL Create]** para salvar a definição.
 
-### Aplique a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
+### Aplicar a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
 
 Quando a configuração **[!UICONTROL global]** está ativada para modelos de fragmento de conteúdo, quaisquer modelos criados pelos usuários podem ser usados em qualquer pasta do Assets.
 
@@ -76,7 +75,7 @@ Para usar outras configurações (ou seja, excluindo globais) com uma pasta do A
 
 1. Use **[!UICONTROL Create]** para salvar o modelo vazio. Uma mensagem indicará o sucesso da ação, você poderá selecionar **[!UICONTROL Abrir]** para editar imediatamente o modelo ou **[!UICONTROL Concluído]** para retornar ao console.
 
-## Definição do modelo do fragmento de conteúdo {#defining-your-content-fragment-model}
+## Definição do modelo de fragmento de conteúdo {#defining-your-content-fragment-model}
 
 O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmentos de conteúdo resultantes. Usando o editor de modelo, você pode adicionar e configurar os campos obrigatórios:
 
@@ -120,7 +119,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
-## Excluindo um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
+## Exclusão de um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
@@ -137,7 +136,7 @@ Para excluir um modelo de fragmento de conteúdo:
    >
    >Se o modelo for referenciado, um aviso será dado. Agir adequadamente.
 
-## Publicar um modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
+## Publicação de um modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
 
 Os modelos de fragmento de conteúdo precisam ser publicados quando/antes de qualquer fragmento de conteúdo dependente ser publicado.
 
