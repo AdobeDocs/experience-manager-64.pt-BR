@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 9ed54ee3-3509-4a43-a710-90f4543ccaf3
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
-
-# FFmpeg para Comunidades {#ffmpeg-for-communities}
+# FFmpeg para comunidades {#ffmpeg-for-communities}
 
 ## Visão geral {#overview}
 
@@ -71,4 +70,3 @@ Para modificar o fluxo de trabalho do Ativo de atualização do DAM e, neste exe
 * Selecione **[!UICONTROL Salvar]** para salvar o workflow `DAM Update Asset`
 
    (canto superior esquerdo)
-
