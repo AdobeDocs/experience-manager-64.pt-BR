@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1855'
 ht-degree: 3%
 
 ---
-
 
 # Console de moderação {#moderation-console}
 
@@ -108,7 +107,7 @@ A área de conteúdo contém informações para o UGC publicado:
 >
 >A área de conteúdo apresenta uma *rolagem infinita*, o que significa que permitirá que você continue a rolagem até atingir o fim do conteúdo. A barra de ferramentas permanece em uma posição fixa e visível acima da área de conteúdo, mesmo durante a rolagem.
 
-### Filtrar Trilho {#filter-rail}
+### Filtrar painel {#filter-rail}
 
 ![chlimage_1-472](assets/chlimage_1-472.png)
 
@@ -291,7 +290,7 @@ Ao trabalhar com uma única publicação, um ícone de Resposta será exibido se
 
 Ao trabalhar com uma única publicação, o ícone Permitir será exibido quando a publicação tiver sido sinalizada ou negada. Se estiver sinalizado, selecionar Permitir apagará todos os sinalizadores.
 
-#### Negar {#deny}
+#### Negar  {#deny}
 
 ![chlimage_1-482](assets/chlimage_1-482.png)
 
@@ -303,7 +302,7 @@ O conteúdo moderado insere inicialmente um estado Pendente e pode ser modificad
 
 O conteúdo que deixa o estado pendente nunca pode retornar a um estado pendente. O conteúdo marcado como aprovado ou negado pode ser alterado para um estado diferente a qualquer momento.
 
-#### Exclua {#delete}
+#### Excluir {#delete}
 
 ![chlimage_1-483](assets/chlimage_1-483.png)
 
@@ -340,4 +339,3 @@ Para retornar à exibição da área de conteúdo de várias publicações UGC, 
 Por exemplo:
 
 ![chlimage_1-488](assets/chlimage_1-488.png)
-
