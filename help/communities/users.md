@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 54109f64-eb30-47cc-bf7a-756843d2da02
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
 
-
-# Gerenciando usuários e grupos de usuários {#managing-users-and-user-groups}
+# Gerenciar usuários e grupos de usuários {#managing-users-and-user-groups}
 
 ## Visão geral {#overview}
 
@@ -93,7 +92,7 @@ Certifique-se de seguir a [Lista de Verificação de Segurança](../../help/site
 
 ## Ambiente de publicação {#publish-environment}
 
-### Tornando-se um Membro {#becoming-a-member}
+### Tornar-se membro {#becoming-a-member}
 
 No ambiente de publicação, dependendo das [configurações](sites-console.md#user-management) do site da comunidade, um visitante do site pode se tornar um membro da comunidade
 
@@ -103,7 +102,7 @@ No ambiente de publicação, dependendo das [configurações](sites-console.md#u
 
 * Quando o site da comunidade for público (aberto):
    * Por autoregistro
-   * Por logon social com o Facebook e o Twitter
+   * Por logon social com a Facebook e a Twitter
 
 >[!NOTE]
 >
@@ -151,7 +150,7 @@ Quando uma função da comunidade não é protegida (nenhum grupo de membros pri
 
 ## Criação de membros da comunidade {#creating-community-members}
 
-### Localização do Repositório {#repository-location}
+### Local do Repositório {#repository-location}
 
 Para que determinados recursos funcionem corretamente, é necessário criar usuários e grupos de usuários com os privilégios apropriados.
 
