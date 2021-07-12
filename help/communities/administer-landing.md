@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '478'
 ht-degree: 5%
 
 ---
-
 
 # Sites das comunidades {#communities-sites}
 
@@ -73,7 +72,7 @@ Um recurso importante do AEM Communities é a geração de conteúdo gerado pelo
 * [Serviço](deploy-communities.md#tunnel-service-on-author) de túnel: permite que membros do lado da publicação e grupos de membros sejam acessados a partir do ambiente do autor
 * [consoles](members.md) Membros e Grupos: permite que membros do lado da publicação e grupos de membros sejam criados e gerenciados a partir do ambiente de criação
 * [Sincronização](sync.md) de usuários: para sincronizar membros e grupos de membros em várias instâncias de publicação
-* [Logon do Social com Facebook e Twitter](social-login.md): capacidade de os visitantes do site se tornarem membros da comunidade usando suas credenciais do Facebook ou do Twitter
+* [Logon no Social com Facebook e Twitter](social-login.md): capacidade de os visitantes do site se tornarem membros da comunidade usando suas credenciais do Facebook ou Twitter
 * [Pontuação e emblemas](implementing-scoring.md): capacidade de atribuição de cartões para identificar funções de um membro e para os membros ganharem emblemas através da sua participação na comunidade
 * [Notificações](notifications.md): capacidade de os membros serem notificados da atividade que seguem
 * [Assinaturas](subscriptions.md): capacidade de os membros interagirem com a comunidade usando email externo
