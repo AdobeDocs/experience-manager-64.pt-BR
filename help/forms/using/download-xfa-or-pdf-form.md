@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 68d881c6-7507-4018-b40e-205604221d0c
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
-
 
 # Baixar um XFA ou um modelo de formulário PDF {#download-an-xfa-or-a-pdf-form-template}
 
@@ -32,7 +31,7 @@ O AEM Forms suporta o download desses tipos de formulário individualmente ou em
 
 Além desses ativos, você pode baixar o tipo `Resource` de ativo se ele estiver presente em uma pasta. Essa funcionalidade é fornecida para permitir o download do recurso mencionado por um formulário XFA junto com o formulário.
 
-## Baixe um ou mais formulários {#download-one-or-more-forms}
+## Baixar um ou mais formulários {#download-one-or-more-forms}
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
 
@@ -57,4 +56,3 @@ Além desses ativos, você pode baixar o tipo `Resource` de ativo se ele estiver
 * Você pode fazer upload do arquivo ZIP para qualquer outro local no mesmo repositório ou em outro
 * A hierarquia dos ativos em uma pasta é retida durante a operação de upload
 * Quaisquer alterações de metadados feitas nos ativos baixados antes do download são refletidas no upload
-
