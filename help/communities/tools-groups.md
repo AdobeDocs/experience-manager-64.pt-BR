@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '542'
 ht-degree: 2%
 
 ---
-
 
 # Modelos de grupo {#group-templates}
 
@@ -43,7 +42,7 @@ Esse console exibe os modelos a partir dos quais um [site da comunidade](sites-c
 
 ![groupstemplate](assets/groupstemplate.png)
 
-## Criar Modelo de Grupo {#create-goup-template}
+## Criar modelo de grupo {#create-goup-template}
 
 Para começar a criar um novo modelo de grupo, selecione **[!UICONTROL Criar]**
 
