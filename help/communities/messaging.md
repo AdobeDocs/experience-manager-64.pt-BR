@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 0e906f67-b908-4c41-b243-e4f90100ce5d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
-
 
 # Configuração de mensagens {#configuring-messaging}
 
@@ -31,7 +30,7 @@ Nesta página estão informações sobre a configuração padrão e possíveis a
 
 Para obter informações adicionais para desenvolvedores, consulte [Messaging Essentials](essentials-messaging.md).
 
-## Serviço de operações de mensagens {#messaging-operations-service}
+## Serviço de Operações de Mensagens {#messaging-operations-service}
 
 O [AEM Communities Messaging Operations Service](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica o ponto de extremidade que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens puderem incluir anexos de arquivo, quais tipos de arquivo são permitidos.
 
