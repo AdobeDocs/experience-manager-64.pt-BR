@@ -8,20 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
-feature: Adaptive Forms
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulários adaptáveis
+role: Admin
+exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
-
 # Suporte a novas localidades para localização de formulários adaptáveis {#supporting-new-locales-for-adaptive-forms-localization}
 
-## Sobre dicionários de localidade {#about-locale-dictionaries}
+## Sobre dicionários de localidades {#about-locale-dictionaries}
 
 A localização de formulários adaptáveis depende de dois tipos de dicionários de localidade:
 
@@ -61,7 +60,7 @@ Para adicionar suporte para um novo local no tempo de execução dos formulário
 1. [Adicionar suporte de local ao dicionário](/help/forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Reinicie o servidor](/help/forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Adicione um local ao serviço de localização do guia {#add-a-locale-to-the-guide-localization-service-br}
+### Adicionar uma localidade ao serviço de localização do Guia {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ir para `https://[server]:[port]/system/console/configMgr`.
 1. Clique em para editar o componente **Serviço de localização do guia**.
@@ -69,7 +68,7 @@ Para adicionar suporte para um novo local no tempo de execução dos formulário
 
 ![GuideLocalizationService](assets/configservice.png)
 
-### Adicionar biblioteca de cliente XFA para um local {#add-xfa-client-library-for-a-locale-br}
+### Adicionar biblioteca de cliente XFA para uma localidade {#add-xfa-client-library-for-a-locale-br}
 
 Crie um nó do tipo `cq:ClientLibraryFolder` em `etc/<folderHierarchy>`, com a categoria `xfaforms.I18N.<locale>`, e adicione os seguintes arquivos à biblioteca do cliente:
 
@@ -117,7 +116,7 @@ O `<locale>` aparecerá em `https://[server]:[port]/libs/cq/i18n/translator.html
 
 Reinicie o servidor de AEM para que a localidade adicionada entre em vigor.
 
-## Exemplos de bibliotecas para adicionar suporte para espanhol {#sample-libraries-for-adding-support-for-spanish}
+## Exemplos de bibliotecas para adicionar suporte ao espanhol {#sample-libraries-for-adding-support-for-spanish}
 
 Exemplos de bibliotecas de clientes para adicionar suporte ao espanhol
 
