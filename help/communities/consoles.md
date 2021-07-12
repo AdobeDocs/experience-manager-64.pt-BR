@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f31072dc-ad2d-4f2d-b222-05d7fb19e471
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 2%
+source-wordcount: '346'
+ht-degree: 1%
 
 ---
-
 
 # Consoles de comunidades {#communities-consoles}
 
@@ -39,7 +38,7 @@ No ambiente de criação, depois de fazer logon com privilégios de administrado
 >
 >No ambiente de publicação, um [site da comunidade](sites-console.md) exibirá um item de menu `Administration`quando o membro conectado tiver privilégios adequados.
 
-## Painel de navegação global {#global-navigation-panel}
+## Painel Navegação global {#global-navigation-panel}
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
