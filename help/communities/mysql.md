@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 1dfb55c2-41cb-445f-9bf8-f12ab6b8e9d8
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
-
 
 # Configuração do MySQL para Recursos de Ativação {#mysql-configuration-for-enablement-features}
 
@@ -64,13 +63,13 @@ Altere o banco de dados MySQL para UTF8:
 * Na seção `[mysqld]` , adicione a seguinte linha:
    `character-set-server=utf8`
 
-## Instalando o MySQL Workbench {#installing-mysql-workbench}
+## Instalar o MySQL Workbench {#installing-mysql-workbench}
 
 O MySQL Workbench fornece uma interface para executar scripts SQL que instalam o esquema e os dados iniciais.
 
 O MySQL Workbench deve ser baixado e instalado seguindo as instruções para o SO de destino.
 
-## Ativar conexão {#enablement-connection}
+## Habilitar conexão {#enablement-connection}
 
 Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja em uso para outros fins, ele ainda não mostrará conexões:
 
@@ -101,7 +100,7 @@ Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja e
 
 ![chlimage_1-329](assets/chlimage_1-329.png)
 
-## Configuração do Banco de Dados {#database-setup}
+## Configuração do banco de dados {#database-setup}
 
 Ao abrir a nova conexão de Ativação, observe que há um esquema de teste e contas de usuário padrão.
 
@@ -143,9 +142,7 @@ Certifique-se de instalar o esquema antes de instalar os dados.
 >Se o nome do banco de dados for alterado, especifique-o corretamente em
 >
 >* [Configuração JDBC](#configure-jdbc-connections)
->* [Configuração do SCORM](#configure-scorm)
-
->
+* [Configuração do SCORM](#configure-scorm)
 
 
 
@@ -249,4 +246,3 @@ Para garantir que os cursos de ativação funcionem corretamente em todos os nav
 * Selecione o ícone `[+]` para adicionar um Agente de Usuário Seguro
 * Insira `Mozilla/*`
 * Selecione **[!UICONTROL Salvar]**
-
