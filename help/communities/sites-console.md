@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f1408709-5402-4f55-bd37-9943fe828af0
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3241'
 ht-degree: 3%
 
 ---
-
 
 # Console de sites das comunidades {#communities-sites-console}
 
@@ -51,7 +50,7 @@ A prática recomendada, para garantir que o site esteja preparado para oferecer 
 * Identificar [Administradores da Comunidade](users.md#creating-community-members)
 * [Ativar o ](social-login.md#adobe-granite-oauth-authentication-handler) manipulador OAuth para logon social
 
-## Acessar o console Sites das Comunidades {#accessing-communities-sites-console}
+## Acesso ao console Sites das comunidades {#accessing-communities-sites-console}
 
 No ambiente de criação, para acessar o console Sites das Comunidades:
 
@@ -67,7 +66,7 @@ Por exemplo, a imagem a seguir mostra o console Sites das Comunidades principais
 
 ![chlimage_1-448](assets/chlimage_1-448.png)
 
-## Criação de site {#site-creation}
+## Criação do site {#site-creation}
 
 O console de criação de site fornece uma abordagem passo a passo para reunir recursos do site com base em um [modelo de site da comunidade](sites.md) e configurações selecionadas.
 
@@ -117,7 +116,7 @@ O painel Design contém dois subpainéis para selecionar o tema e o banner de ma
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
-A estrutura usa [Bootstrap do Twitter](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de site da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
+A estrutura usa [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de site da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de seleção azul opaca.
 
@@ -202,7 +201,7 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
 * **[!UICONTROL Permitir logons sociais: Facebook]**
 
-   Se marcada, permita que os visitantes do site façam logon com suas credenciais de conta do Facebook. O [configuração de nuvem do Facebook](social-login.md#create-a-facebook-connect-cloud-service) selecionado deve ser configurado para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
+   Se marcada, permita que os visitantes do site façam logon com suas credenciais de conta da Facebook. O [Facebook cloud configuration](social-login.md#create-a-facebook-connect-cloud-service) selecionado deve ser configurado para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
 
    Se estiver desmarcado, nenhum logon do Facebook será apresentado.
 
@@ -210,7 +209,7 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
 * **[!UICONTROL Permitir logons sociais: Twitter]**
 
-   Se marcada, permita que os visitantes do site façam logon com suas credenciais de conta do Twitter. O [Configuração de nuvem do Twitter](social-login.md#create-a-twitter-connect-cloud-service) selecionado deve ser configurado para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
+   Se marcada, permita que os visitantes do site façam logon com suas credenciais de conta da Twitter. O [Twitter cloud configuration](social-login.md#create-a-twitter-connect-cloud-service) selecionado deve ser configurado para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
 
    Se estiver desmarcado, nenhum logon do Twitter será apresentado.
 
@@ -220,7 +219,7 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 >
 >**[!UICONTROL Permitir logons sociais]**
 >
->Embora as configurações de exemplo do Facebook e do Twitter possam existir e ser selecionáveis, para um [ambiente de produção](../../help/sites-administering/production-ready.md), é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte [Logon social com Facebook e Twitter](social-login.md).
+>Embora as configurações Facebook e Twitter de amostra possam existir e ser selecionáveis, para um [ambiente de produção](../../help/sites-administering/production-ready.md), é necessário criar aplicativos personalizados Facebook e Twitter. Consulte [Logon social com Facebook e Twitter](social-login.md).
 
 #### MARCAÇÃO {#tagging}
 
@@ -399,7 +398,7 @@ O conteúdo de um site pode ser criado com as mesmas ferramentas que qualquer ou
 >
 >Se não estiver familiarizado com AEM, visualize a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md) e um [guia rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 
-## Modificando Propriedades do Site {#modifying-site-properties}
+## Modificação das propriedades do site {#modifying-site-properties}
 
 ![chlimage_1-462](assets/chlimage_1-462.png)
 
@@ -463,7 +462,7 @@ O painel ESTRUTURA permite a modificação da estrutura inicialmente criada a pa
 
 ![chlimage_1-464](assets/chlimage_1-464.png)
 
-### Modificar Design {#modify-design}
+### Modificar design {#modify-design}
 
 O painel DESIGN permite que um novo tema seja aplicado:
 
@@ -486,7 +485,7 @@ O painel CONFIGURAÇÕES permite acesso à maioria das configurações nos subpa
 
 O painel MINIATURA permite que uma imagem seja carregada para representar o site no console Sites das Comunidades.
 
-### Modificar Ativação {#modify-enablement}
+### Modificar ativação {#modify-enablement}
 
 O painel ATIVAÇÃO permite o acesso às configurações fornecidas durante a criação do site da comunidade.
 
@@ -513,7 +512,7 @@ Depois de publicar um site da comunidade, é necessário publicar individualment
 Selecione o ícone de exportação, ao passar o mouse sobre o site, para criar um pacote do site da comunidade que está armazenado em [gerenciador de pacotes](../../help/sites-administering/package-manager.md) e baixado.\
 Observe que o UGC não está incluído no pacote do site.
 
-## Excluindo o Site {#deleting-the-site}
+## Excluir o site {#deleting-the-site}
 
 ![deleteicon-1](assets/deleteicon-1.png)
 
@@ -536,11 +535,11 @@ Para obter detalhes, consulte [Gerenciar usuários e grupos de usuários](users.
 
 >[!NOTE]
 >
->Se [Permitir logon social: O Facebook](#user-management) é ativado assim que o grupo de usuários
+>Se [Permitir logon social: O facebook](#user-management) é ativado assim que o grupo de usuários
 >
 >* comunidade-*&lt;nome do site>*-*&lt;uid>* membros
 
-for criado, o [serviço de nuvem do Facebook aplicado](social-login.md#createafacebookcloudservice) deve ser configurado para adicionar usuários a esse grupo.
+for criado, o [Facebook cloud service](social-login.md#createafacebookcloudservice) aplicado deverá ser configurado para adicionar usuários a esse grupo.
 
 ## Configurar para Erro de Autenticação {#configure-for-authentication-error}
 
@@ -581,11 +580,10 @@ Na mesma instância de publicação de AEM configurada com um mapeamento de pág
 
 ![chlimage_1-469](assets/chlimage_1-469.png)
 
-## Acesso aos sites da comunidade a partir do console de sites principais {#accessing-community-sites-from-main-sites-console}
+## Acesso aos sites da comunidade do console Sites principais {#accessing-community-sites-from-main-sites-console}
 
 No console Sites de navegação global, os sites da comunidade estão localizados na pasta `Community Sites` .
 
 Embora seja possível acessar um site da comunidade dessa maneira, para tarefas administrativas, o site da comunidade deve ser acessado do console Sites das Comunidades.
 
 ![chlimage_1-470](assets/chlimage_1-470.png)
-
