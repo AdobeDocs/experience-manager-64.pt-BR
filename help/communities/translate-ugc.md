@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: b8cbc429-b0c3-4f6e-a15f-4aef54733c8e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 1%
+source-wordcount: '1117'
+ht-degree: 0%
 
 ---
 
-
-# Traduzindo conteúdo gerado pelo usuário {#translating-user-generated-content}
+# Tradução de conteúdo gerado pelo usuário {#translating-user-generated-content}
 
 O recurso de tradução do AEM Communities estende o conceito de [tradução do conteúdo da página](../../help/sites-administering/translation.md) para o conteúdo gerado pelo usuário (UGC) publicado em sites da comunidade usando [componentes de estrutura de componente social (SCF)](scf.md).
 
@@ -41,7 +40,7 @@ Quando um provedor de serviços de tradução é associado ao site, cada cópia 
 
 Quando uma estrutura de integração de tradução é configurada além do provedor de serviços de tradução, é possível que cada cópia de idioma do site compartilhe um único thread do UGC, fornecendo comunicação global entre cópias de idioma. Em vez de um thread de discussão segregado por idioma, o [armazenamento compartilhado global](#global-translation-of-ugc) configurado permite que todo o thread fique visível, independentemente da cópia de idioma que está sendo visualizada. Além disso, várias configurações de integração de tradução podem ser configuradas especificando diferentes lojas compartilhadas globais para um agrupamento lógico de participantes globais, como por regiões.
 
-## O Serviço de Tradução Padrão {#the-default-translation-service}
+## O serviço de tradução padrão {#the-default-translation-service}
 
 O AEM Communities inclui uma [licença de avaliação](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) para um [serviço de tradução padrão](../../help/sites-administering/tc-msconf.md) habilitado para vários idiomas.
 
@@ -91,7 +90,7 @@ Para criar uma nova Integração de tradução, que integra um conector do Servi
 
 * Selecione o ícone `[+]` ao lado de **[!UICONTROL Configurações disponíveis]** para criar uma nova configuração
 
-#### Criar caixa de diálogo de configuração {#create-configuration-dialog}
+#### Caixa de diálogo Criar configuração {#create-configuration-dialog}
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -107,7 +106,7 @@ Para criar uma nova Integração de tradução, que integra um conector do Servi
 
 * Selecione **[!UICONTROL Criar]**
 
-#### Caixa de diálogo de configuração de tradução {#translation-config-dialog}
+#### Caixa de diálogo Configuração de tradução {#translation-config-dialog}
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -133,7 +132,7 @@ Categoria de conteúdoSelecione uma categoria que descreve o conteúdo que está
 
 O novo serviço de nuvem de integração de tradução precisará ser ativado para o ambiente de publicação. Quando associado a um site, se ainda não estiver ativado, o fluxo de trabalho de ativação solicitará a publicação dessa configuração de serviço de nuvem quando a página à qual está associado for publicada.
 
-## Gerenciando configurações de tradução {#managing-translation-settings}
+## Gerenciamento de configurações de tradução {#managing-translation-settings}
 
 >[!NOTE]
 >
