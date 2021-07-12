@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
 
-
-# Moderação do conteúdo da comunidade {#moderating-community-content}
+# Moderação de conteúdo da comunidade {#moderating-community-content}
 
 ## Visão geral {#overview}
 
@@ -151,7 +150,7 @@ No outro local, quando o conteúdo está presente na área de transferência, um
 
 ![chlimage_1-218](assets/chlimage_1-218.png) ![chlimage_1-219](assets/chlimage_1-219.png)
 
-### Negar {#deny}
+### Negar  {#deny}
 
 Um moderador pode impedir que o UGC permaneça visível no site publicado. Para administradores e moderadores da comunidade, a publicação ainda está disponível e é anotada como spam.
 
@@ -165,7 +164,7 @@ Para executar qualquer operação, o tópico ou comentário deve ser Reaberto.
 
 A ação Fechar/Reabrir pode ser executada pelos administradores ou moderadores da comunidade.
 
-### Sinalizar / Cancelar sinalização {#flag-unflag}
+### Sinalizar / Dessinalizar {#flag-unflag}
 
 Sinalizar é um meio para qualquer membro conectado, exceto pelo criador do conteúdo, para indicar que há um problema com o conteúdo de uma publicação. Depois de sinalizado, um ícone de cancelamento de sinalizador será exibido, permitindo que o mesmo membro desmarque o conteúdo.
 
@@ -237,7 +236,7 @@ Depois de analisado, o sentimento é armazenado com o UGC.
 
 No [console de moderação em massa](moderation.md), é possível filtrar e exibir o UGC com base no fato do sentimento ser negativo, neutro ou positivo.
 
-#### Palavras de observação {#watchwords}
+#### Palavras de vigia {#watchwords}
 
 AEM comunidades fornece um *analisador de palavra de observação *como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de ordem é devido a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
 
@@ -286,4 +285,3 @@ As seguintes permissões, quando atribuídas ao mesmo recurso, são coletivament
 * `Create`
 * `Delete`
 * `Replicate`
-
