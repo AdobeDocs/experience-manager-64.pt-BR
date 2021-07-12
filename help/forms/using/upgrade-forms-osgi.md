@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 9%
 
 ---
 
-
-# Atualize para o AEM 6.4 Forms no OSGi {#upgrade-to-aem-forms-osgi}
+# Atualizar para AEM 6.4 Forms no OSGi {#upgrade-to-aem-forms-osgi}
 
 Use um dos seguintes caminhos de atualização, conforme apropriado para seu ambiente.
 
