@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2507'
 ht-degree: 0%
 
 ---
-
 
 # Sincronização de usuários das comunidades {#communities-user-synchronization}
 
@@ -31,7 +30,7 @@ No AEM Communities, no ambiente de publicação (dependendo das permissões conf
 
 Para obter mais informações sobre os dados do usuário, visite [Gerenciar usuários e grupos de usuários](users.md).
 
-## Sincronizando usuários em um farm de publicação {#synchronizing-users-across-a-publish-farm}
+## Sincronização de usuários em um farm de publicação {#synchronizing-users-across-a-publish-farm}
 
 Por design, os dados do usuário criados no ambiente de publicação não aparecem no ambiente de criação.
 
@@ -47,7 +46,7 @@ Para obter instruções detalhadas, passo a passo, sobre como habilitar a sincro
 
 * [Sincronização de usuários](../../help/sites-administering/sync.md)
 
-## Sincronização do usuário em segundo plano {#user-sync-in-the-background}
+## Sincronização do usuário em segundo plano  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -67,7 +66,7 @@ Por design, os usuários e perfis criados no ambiente de publicação (como por 
 
 Quando a topologia é um [publish farm](topologies.md) e a sincronização do usuário foi configurada corretamente, o *user* e *user profile* são sincronizados no farm de publicação usando a distribuição do Sling.
 
-### Novo grupo da comunidade é criado em Publicar {#new-community-group-is-created-on-publish}
+### Novo grupo da comunidade é criado na publicação {#new-community-group-is-created-on-publish}
 
 Embora tenha sido iniciado a partir de uma instância de publicação, a criação do grupo da comunidade, que resulta em novas páginas do site e em um novo grupo de usuários, ocorre na instância do autor.
 
@@ -97,12 +96,12 @@ A sincronização de usuários depende do ambiente do autor para gerenciar as di
 
 1. Verifique se o código mais recente foi instalado:
 
-   * [Atualizações da plataforma AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR)
+   * [Atualizações da plataforma AEM](https://helpx.adobe.com/br/experience-manager/kb/aem62-available-hotfixes.html)
    * [Atualizações do AEM Communities](deploy-communities.md#latestfeaturepack)
 
 As seguintes configurações são necessárias para habilitar a sincronização de usuários no AEM Communities. Certifique-se de que essas configurações estejam corretas para impedir que a distribuição de conteúdo do sling falhe.
 
-### Apache Sling Distribution Agent - Sync Agents Fatory {#apache-sling-distribution-agent-sync-agents-factory}
+### Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
 
 Essa configuração busca o conteúdo a ser sincronizado entre os editores. A configuração é na instância do autor. O autor deve acompanhar todos os editores que estão lá e onde sincronizar todas as informações.
 
@@ -161,7 +160,7 @@ Na instância AEM autor:
 
    ![granite-pasword-trans](assets/granite-paswrd-trans.png)
 
-### Apache Sling Distribution Agent - Fábrica de Agentes da Fila {#apache-sling-distribution-agent-queue-agents-factory}
+### Apache Sling Distribution Agent - Fábrica de agentes da fila {#apache-sling-distribution-agent-queue-agents-factory}
 
 Essa configuração é usada para configurar os dados que você deseja sincronizar entre editores. Quando os dados são criados/atualizados em caminhos especificados em **[!UICONTROL Raízes permitidas]**, &quot;var/community/distribution/diff&quot; é ativado e o replicador criado obtém os dados de um editor e os instala em outros editores.
 
@@ -209,7 +208,7 @@ Em cada instância de publicação de AEM:
 
    ![diff-obs](assets/diff-obs.png)
 
-### Acionador de distribuição do Apache Sling - Acionadores agendados de fábrica {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Acionador de distribuição do Apache Sling - Fábrica de acionadores agendados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 Essa configuração permite que você configure o intervalo de pesquisa (após o qual os editores são colocados em ping e as alterações são obtidas pelo autor) para sincronizar as alterações nos editores.
 
@@ -350,7 +349,7 @@ Em cada instância de publicação de AEM:
 
 ![vault-package-builder-fatory](assets/vault-package-builder-factory.png)
 
-## Solucionar problemas de distribuição do Sling no AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
+## Solução de problemas de distribuição do Sling no AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
 
 Se a distribuição do Sling falhar, tente as seguintes etapas de depuração:
 
@@ -403,5 +402,3 @@ Se a distribuição do Sling falhar, tente as seguintes etapas de depuração:
    1. No editor, altere os endpoints do exportador ou importador no **[!UICONTROL Apache Sling Distribution Agent - Sync Agents Fatory]**.
 
       Podemos baixar e extrair dados do pacote para verificar quais propriedades são enviadas para outros editores e quais dados são perdidos.
-
-
