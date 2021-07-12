@@ -7,9 +7,8 @@ user-guide-title: Guia do usuário de criação do AEM 6.4
 breadcrumb-title: Guia de criação
 user-guide-description: Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM.
 feature: 'Criação  '
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 88%
@@ -25,10 +24,10 @@ ht-degree: 88%
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
    + [Conceito de criação](author.md)
    + [Manuseio básico](basic-handling.md)
-   + [Pesquisar](search.md)
+   + [Pesquisar  ](search.md)
    + [Configurar o ambiente da sua conta](user-properties.md)
-   + [Sua Caixa de entrada](inbox.md)
-   + [Atalhos de teclado para Consoles](keyboard-shortcuts.md)
+   + [Sua caixa de entrada](inbox.md)
+   + [Atalhos de teclado para Consoles  ](keyboard-shortcuts.md)
    + [Selecionar sua interface do usuário](select-ui.md)
 + Criação {#authoring}
    + [Ambiente e ferramentas de criação](author-environment-tools.md)
@@ -40,22 +39,22 @@ ht-degree: 88%
    + [Publicar páginas](publishing-pages.md)
    + [Criação de página com fragmentos de conteúdo](content-fragments.md)
    + [Fragmentos de experiência](experience-fragments.md)
-   + [Exportar para CSV](csv-export.md)
+   + [Exportar para CSV  ](csv-export.md)
    + [Componentes](default-components.md)
-   + [Criação de uma página para dispositivos móveis   ](mobile.md)
+   + [Criação de uma página para dispositivos móveis  ](mobile.md)
    + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
    + [Atalhos de teclado ao editar as páginas](page-authoring-keyboard-shortcuts.md)
    + [Práticas recomendadas    ](best-practices.md)
 + Recursos de site e página {#siteandpage}
-   + [Uso de tags](tags.md)
+   + [Uso de tags  ](tags.md)
    + [Criação de modelos de páginas  ](templates.md)
    + [Sistema de estilos](style-system.md)
    + [Trabalhar com versões de páginas](working-with-page-versions.md)
-   + [Diferencial de páginas](page-diff.md)
+   + [Diferencial de páginas  ](page-diff.md)
    + [Console de componentes](default-components-console.md)
-   + [Layout responsivo](responsive-layout.md)
+   + [Layout responsivo  ](responsive-layout.md)
    + [Content Insight](content-insights.md)
-   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](creating-accessible-content.md)
+   + [Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  ](creating-accessible-content.md)
    + [Andaime](scaffolding.md)
    + [Configuração dos componentes no Modo de design](default-components-designmode.md)
    + [Componentes fundamentais](default-components-foundation.md)
@@ -83,7 +82,7 @@ ht-degree: 88%
 + Personalização {#personalization}
    + [Personalização](personalization.md)
    + [Visualização de páginas usando dados do ContextHub](ch-previewing.md)
-   + [Criar conteúdo direcionado usando o modo de direcionamento](content-targeting-touch.md)
+   + [Criação de conteúdo direcionado usando o modo Direcionar](content-targeting-touch.md)
    + [Trabalhar com conteúdo direcionado em vários sites](multisite-support-targeted-content.md)
    + [Como o gerenciamento multisite para conteúdo direcionado está estruturado](technical-multisite-targeted.md)
    + [Gerenciamento de atividades](activitylib.md)
@@ -93,6 +92,6 @@ ht-degree: 88%
 + AEM e Adobe Campaign {#aem-adobe-campaign}
    + [Trabalhar com o Adobe Campaign](adobe-campaign.md)
    + [Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard](campaign.md)
-   + [Direcionar seu Adobe Campaign](target-adobe-campaign.md)
+   + [Direcionamento sua campanha do Adobe Campaign](target-adobe-campaign.md)
    + [Criação de formulários do Adobe Campaign no AEM](adobe-campaign-forms.md)
    + [Componentes do Adobe Campaign](adobe-campaign-components.md)
