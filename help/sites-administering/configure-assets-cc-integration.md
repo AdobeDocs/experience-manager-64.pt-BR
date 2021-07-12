@@ -1,16 +1,15 @@
 ---
 title: Configurar a integração do AEM Assets com o Experience Cloud
 description: Saiba como configurar a integração do AEM Assets com o Experience Cloud.
-feature: Asset Management
-role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: bf48918e9a549cb35dcbb32afa82ff1dd686402a
+feature: Gerenciamento de ativos
+role: User, Architect, Admin
+exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
-
 
 # Configurar a integração do AEM Assets com o Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
@@ -91,7 +90,7 @@ No back-end, o servidor do AEM autentica seu perfil no gateway e, em seguida, si
 
 1. Na página de configuração, clique em **[!UICONTROL Exibir chave pública]** para exibir a chave pública gerada para sua instância. Como alternativa, clique em **[!UICONTROL Baixar chave pública para o Gateway OAuth]** para baixar o arquivo que contém a chave pública. Em seguida, abra o arquivo para exibir a chave pública.
 
-## Habilitar sincronização {#enable-synchronization}
+## Ativar sincronização {#enable-synchronization}
 
 1. Exiba a chave pública usando um dos métodos a seguir mencionados na última etapa do procedimento [adicionar uma nova configuração a Experience Cloud](#add-a-new-configuration). Clique em **[!UICONTROL Exibir chave pública]**.
 
@@ -165,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Práticas recomendadas de integração de ativos e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
->* [Práticas recomendadas de compartilhamento de ativos para a pasta do Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
+* [Práticas recomendadas de compartilhamento de ativos para a pasta do Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 
