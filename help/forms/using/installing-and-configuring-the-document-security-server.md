@@ -6,15 +6,14 @@ seo-description: 'Use a segurança do documento para distribuir com segurança t
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 9ce5e89b-76c9-464d-9caf-26a387c698fa
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
-
 
 # Instalar e configurar o servidor de segurança de documentos {#installing-and-configuring-the-document-security-server}
 
@@ -28,7 +27,7 @@ As políticas são armazenadas no servidor de segurança de documentos; aplique 
 
 A segurança de documentos também fornece clientes, visualizadores e indexadores para proteger documentos, visualizar documentos protegidos e documentos protegidos por índice. Para obter informações detalhadas sobre a segurança do documento, consulte [sobre a segurança do documento](/help/forms/using/admin-help/document-security.md).
 
-## Topologia de implantação {#deployment-topology}
+## Topologia de implantação  {#deployment-topology}
 
 O recurso de segurança de documento está disponível somente no AEM Forms no JEE. Você precisa de uma única instância do AEM Forms no JEE. Você também pode criar um cluster ou farm de servidores da AEM Forms, se necessário. A topologia a seguir é uma topologia indicativa para executar a capacidade de segurança do documento. Para obter informações detalhadas sobre a topologia, consulte [Topologias de arquitetura e implantação para AEM Forms](aem-forms-architecture-deployment.md).
 
