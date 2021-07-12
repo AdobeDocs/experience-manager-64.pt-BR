@@ -10,10 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Fragmentos de conteúdo
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 12%
@@ -26,7 +25,7 @@ ht-degree: 12%
 >
 >Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
-## Permissões - excluir ou não excluir {#permissions-delete-or-not-delete}
+## Permissões - Excluir ou não excluir {#permissions-delete-or-not-delete}
 
 A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar a distribuição desses privilégios.
 
@@ -52,7 +51,7 @@ Com relação às permissões de exclusão, os Fragmentos de conteúdo devem ser
 >
 >Consulte também [Como auditar operações de gerenciamento de usuários em AEM](/help/sites-administering/audit-user-management-operations.md).
 
-## Permissões necessárias para a funcionalidade do editor somente {#permissions-required-for-editor-functionality-only}
+## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
 
 Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que elementos transitórios secundários possam ser excluídos.
 
