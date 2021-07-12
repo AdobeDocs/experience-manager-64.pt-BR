@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 4ff530ae-c676-4259-86f2-a3881843b642
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
-
 
 # SRP - Armazenamento de conteúdo da comunidade {#srp-community-content-storage}
 
@@ -41,7 +40,7 @@ Para obter detalhes sobre o uso do SRP para UGC, consulte [Visão Geral do Prove
 >
 >Quando a implantação não inclui um armazenamento comum, como a topologia padrão [JSRP](topologies.md#jsrp), o UGC estará visível somente na instância de publicação ou autor do AEM em que foi inserido. Somente se a topologia incluir um cluster de publicação, o UGC estará visível em qualquer instância de publicação.
 
-## Características das opções do SRP {#characteristics-of-srp-options}
+## Características das opções de SRP {#characteristics-of-srp-options}
 
 [ASRP - Provedor de Recursos de Armazenamento Adobe](asrp.md)\
 Com essa opção, o UGC é mantido remotamente em um serviço de nuvem hospedado e gerenciado pelo Adobe. Exige uma licença adicional e trabalha com um representante de conta para fornecer a conta dessa licença específica.
@@ -110,7 +109,7 @@ A partir do AEM Communities 6.1, a necessidade de replicação do UGC foi elimin
 
 Embora o conteúdo do site seja replicado, o UGC nunca é replicado.
 
-### Gerenciando dados do usuário {#managing-user-data}
+### Gerenciar dados do usuário {#managing-user-data}
 
 Além disso, de interesse para Comunidades são [*usuários*, *grupos de usuários* e *perfis de usuário*](users.md). Esses dados relacionados ao usuário, quando criados e atualizados no ambiente de publicação, precisam ser disponibilizados para outras instâncias de publicação quando a topologia for um [farm de publicação](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
