@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 4%
 
 ---
-
 
 # Migrar ativos e documentos do AEM Forms {#migrate-aem-forms-assets-and-documents}
 
@@ -66,9 +65,9 @@ Para ativos de Gerenciamento de correspondência:
 * As configurações do compositor de ativos são alteradas nas configurações de Gerenciamento de correspondência.
 * Os ativos são movidos em pastas com nomes como Texto existente e Lista existente.
 
-## Uso do utilitário de migração {#using-the-migration-utility}
+## Uso do utilitário de Migração {#using-the-migration-utility}
 
-### Executando o utilitário de migração {#runningmigrationutility}
+### Execução do utilitário de migração {#runningmigrationutility}
 
 Execute o Migration Utility antes de fazer alterações nos ativos ou criar ativos. Recomendamos que você não execute o utilitário após fazer qualquer alteração ou criar ativos. Certifique-se de que a interface do usuário do Correspondence Management ou do Adaptive Forms Assets não esteja aberta enquanto o processo de migração estiver em execução.
 
@@ -165,7 +164,7 @@ Ao executar o Utilitário de migração pela primeira vez, um log é criado com 
 
 1. Depois que o utilitário de migração terminar de ser executado, continue com as [tarefas de manutenção](#housekeepingtasks).
 
-### Tarefas de casa após executar o utilitário de migração {#housekeepingtasks}
+### Tarefas da família após executar o utilitário de migração {#housekeepingtasks}
 
 Depois de executar o utilitário de Migração, siga as seguintes tarefas de manutenção:
 
@@ -178,4 +177,3 @@ Depois de executar o utilitário de Migração, siga as seguintes tarefas de man
 
 1. Publique todos os ativos que foram publicados no sistema anterior antes da migração. O utilitário de migração atualiza os ativos somente na instância do autor e para atualizar os ativos na (s) instância (s) de publicação, é necessário publicar os ativos.
 1. No AEM Forms 6.4, alguns dos direitos dos grupos de usuários de formulários são alterados. Se você quiser que qualquer um dos seus usuários possa fazer upload de XDPs e Adaptive Forms contendo scripts ou usar o editor de código, será necessário adicioná-los ao grupo de usuários avançados de formulários. Da mesma forma, os autores de modelo não podem mais usar o editor de código no Editor de regras. Para que os usuários possam usar o editor de código, adicione-os ao grupo af-template-script-writer. Para obter instruções sobre como adicionar usuários a grupos, consulte [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
-
