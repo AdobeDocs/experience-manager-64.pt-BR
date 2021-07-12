@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 2%
+source-wordcount: '739'
+ht-degree: 1%
 
 ---
-
 
 # Configuração do MySQL para DSRP {#mysql-configuration-for-dsrp}
 
@@ -71,7 +70,7 @@ Altere o banco de dados MySQL para UTF8:
 
    `character-set-server=utf8`
 
-## Instalando o MySQL Workbench {#installing-mysql-workbench}
+## Instalar o MySQL Workbench {#installing-mysql-workbench}
 
 O MySQL Workbench fornece uma interface para executar scripts SQL que instalam o esquema e os dados iniciais.
 
@@ -108,7 +107,7 @@ Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja e
 
 ![chlimage_1-105](assets/chlimage_1-105.png)
 
-## Configuração do Banco de Dados {#database-setup}
+## Configuração do banco de dados {#database-setup}
 
 Abra a conexão Comunidades para instalar o banco de dados.
 
@@ -180,7 +179,7 @@ Quando o MySQL é executado em um servidor diferente de AEM, o nome do host do s
 * Localize o `Day Commons JDBC Connections Pool`
 * Selecione o ícone `+` para criar uma nova configuração de conexão
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 * Insira os seguintes valores:
 
@@ -203,4 +202,3 @@ Quando o MySQL é executado em um servidor diferente de AEM, o nome do host do s
    * **[!UICONTROL Nome]** da fonte de dados: nome inserido para a conexão  [MySQL](#new-connection-settings), por exemplo, &quot;communities&quot;
 
 * Selecione **[!UICONTROL Salvar]**
-
