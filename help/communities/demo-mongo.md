@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: e32fc619-6226-48c6-bbd7-1910963d1036
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
-
-# Como configurar o MongoDB para Demo {#how-to-setup-mongodb-for-demo}
+# Como configurar o MongoDB para demonstração {#how-to-setup-mongodb-for-demo}
 
 ## Introdução {#introduction}
 
@@ -63,7 +62,7 @@ Essa configuração é adequada para ambientes *não relacionados à produção*
 
 * O MongoDB pode ser executado no mesmo host que o AEM ou executado remotamente
 
-### Inicie o MongoDB {#start-mongodb}
+### Iniciar MongoDB {#start-mongodb}
 
 * &lt;mongo-install>/bin/mongod —dbpath  &lt;mongo-dbpath>
 
@@ -109,7 +108,7 @@ Os seguintes comandos são um exemplo de configuração de um conjunto de répli
    * Nenhum serviço é necessário
    * A pasta Solr instalada será chamada de &lt;solr-install>
 
-### Configurar Solr para AEM Communities {#configure-solr-for-aem-communities}
+### Configurar o Solr para AEM Communities {#configure-solr-for-aem-communities}
 
 Para configurar uma coleção Solr para MSRP para demonstração, há duas decisões a serem tomadas (selecione os links para a documentação principal para obter detalhes):
 
@@ -140,7 +139,7 @@ Para executar uma configuração básica (não de produção) da solrCloud, come
 
 * java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar
 
-## Identifique o MongoDB como Repositório Comum {#identify-mongodb-as-common-store}
+## Identifique o MongoDB como armazenamento comum {#identify-mongodb-as-common-store}
 
 Inicie o autor e publique as instâncias de AEM, se necessário.
 
@@ -156,7 +155,7 @@ Para testar e verificar o armazenamento comum do MongoDB, poste um comentário n
 1. Faça logon para postar um comentário:
 1. Insira o texto na caixa de entrada de texto do comentário e clique em **[!UICONTROL Postar]**
 
-   ![chlimage_1-111](assets/chlimage_1-191.png)
+   ![chlimage_1-191](assets/chlimage_1-191.png)
 
 1. Basta exibir o comentário na [instância do autor](http://localhost:4502/content/community-components/en/comments.html) (provavelmente ainda está conectado como administrador / administrador).
 
