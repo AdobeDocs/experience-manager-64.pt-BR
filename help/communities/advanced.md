@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
-
 
 # Pontuação avançada e emblemas {#advanced-scoring-and-badges}
 
@@ -107,7 +106,7 @@ Consulte [Subregras de pontuação](implementing-scoring.md#scoring-sub-rules).
 
 ![chlimage_1-261](assets/chlimage_1-261.png)
 
-### Palavras de interrupção {#stopwords}
+### Palavras-limite {#stopwords}
 
 O pacote de pontuação avançado instala uma pasta de configuração que contém um arquivo de palavras de interrupção:
 
