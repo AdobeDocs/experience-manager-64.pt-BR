@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '900'
 ht-degree: 2%
 
 ---
-
 
 # Ajuste de desempenho do servidor do AEM Forms {#performance-tuning-of-aem-forms-server}
 
@@ -141,7 +140,7 @@ O Apache pode se comunicar com o CRX usando o protocolo HTTP. As configurações
 
    Para acessar o servidor crx, use `https://[server]:80`, onde `server` é o nome do servidor no qual o servidor Apache está sendo executado.
 
-## Usar um antivírus no servidor que executa o AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
+## Uso de um antivírus em um servidor que executa o AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
 Você pode experimentar um desempenho lento nos servidores que executam um software antivírus. Um software antivírus sempre ativo (varredura ao acessar) verifica todos os arquivos de um sistema. Ele pode retardar o servidor e o desempenho da AEM Forms é afetado.
 
@@ -175,6 +174,5 @@ Para melhorar o desempenho, você pode direcionar o software antivírus para exc
 >* Se você estiver usando um local diferente para GDS e diretório temporário, abra a Interface do usuário do administrador em `https://[server]:[port]/adminui)`, navegue até **Início > Configurações > Configurações do sistema principal > Configurações principais** para confirmar o local em uso.
 
 * Se o servidor do AEM Forms tiver um desempenho lento mesmo depois de excluir os diretórios sugeridos, exclua também o arquivo executável Java (java.exe).
-
 
 
