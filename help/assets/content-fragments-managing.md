@@ -10,10 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Fragmentos de conteúdo
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 11%
@@ -165,7 +164,7 @@ Para abrir o fragmento para edição:
    >
    >Tanto **[!UICONTROL Salvar]** quanto **[!UICONTROL Cancelar]** sairão do editor - consulte [Salvar, cancelar e versões](#save-cancel-and-versions) para obter informações completas sobre como ambas as opções operam para fragmentos de conteúdo.
 
-## Salvar, Cancelar e Versões {#save-cancel-and-versions}
+## Salvar, cancelar e versões {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -216,11 +215,11 @@ Ao editar o fragmento de conteúdo, o AEM cria automaticamente versões para gar
 1. Se o usuário selecionar para **[!UICONTROL Cancelar]** a edição, a versão criada no início da sessão de edição será restaurada e o token será removido para encerrar a sessão de edição.
 1. Se o usuário selecionar para **[!UICONTROL Salvar]** as edições, os elementos/variações atualizados serão mantidos e o token será removido para encerrar a sessão de edição.
 
-## Editar o conteúdo do fragmento {#editing-the-content-of-your-fragment}
+## Edição do conteúdo do fragmento {#editing-the-content-of-your-fragment}
 
 Após abrir o fragmento, você pode usar a guia [Variations](content-fragments-variations.md) para criar o conteúdo.
 
-## Criação e gerenciamento de variações no fragmento {#creating-and-managing-variations-within-your-fragment}
+## Criação e gerenciamento de variações dentro do fragmento {#creating-and-managing-variations-within-your-fragment}
 
 Depois de criar o conteúdo Principal, você pode criar e gerenciar [Variations](content-fragments-variations.md) desse conteúdo.
 
@@ -232,7 +231,7 @@ Você também pode [associar o conteúdo](content-fragments-assoc-content.md) a 
 
 É possível exibir e editar as propriedades de um fragmento usando a guia [[!UICONTROL Metadados]](content-fragments-metadata.md).
 
-## Linha do tempo para Fragmentos de conteúdo {#timeline-for-content-fragments}
+## Linha do tempo dos fragmentos de conteúdo {#timeline-for-content-fragments}
 
 Além das opções padrão, [Linha do tempo](managing-assets-touch-ui.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
@@ -268,7 +267,7 @@ Por exemplo:
 
 ![cfm-6420-19](assets/cfm-6420-19.png)
 
-## Comparação das versões do fragmento {#comparing-fragment-versions}
+## Comparação de versões do fragmento {#comparing-fragment-versions}
 
 A ação **[!UICONTROL Comparar a Atual]** está disponível na [[!UICONTROL Linha do tempo]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) após selecionar uma versão específica.
 
@@ -296,7 +295,7 @@ Elas serão mostradas lado a lado, onde:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Reverter para uma versão {#reverting-to-a-version}
+## Reverter para uma versão  {#reverting-to-a-version}
 
 Você pode reverter para uma versão específica do fragmento:
 
