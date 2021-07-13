@@ -3,9 +3,9 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
+source-git-commit: 9d1d6357c79e864e1fef89f713534dd074cf20ab
 workflow-type: tm+mt
-source-wordcount: '4216'
+source-wordcount: '4210'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ Depois de ativar um plug-in, siga estas diretrizes para configurar a propriedade
   <tr> 
    <td><strong>Tipo</strong></td> 
    <td>Sequência de caracteres</td> 
-   <td>String[] (multi-string; defina Tipo como String e clique em Multi in CRXDE Lite)</td> 
+   <td>Sequência de caracteres (várias sequências; defina Tipo como String e clique em Multi in CRXDE Lite)</td> 
    <td>Sequência de caracteres</td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ Depois de ativar um plug-in, siga estas diretrizes para configurar a propriedade
  </tbody> 
 </table>
 
-## Entender o plug-in findreplace {#understand--findreplace-plugin}
+## Entender o plug-in findreplace {#understand-findreplace-plugin}
 
 O plug-in `findreplace` não precisa de configuração. Funciona imediatamente.
 
@@ -96,7 +96,7 @@ Ao usar a funcionalidade de substituição, a string de substituição a ser sub
 
 A caixa de diálogo localizar e substituir se torna transparente quando a localização é clicada e se torna opaca ao clicar em substituir. Isso permite que o autor revise o texto que será substituído. Se os usuários clicarem em substituir tudo, a caixa de diálogo será fechada e exibirá o número de substituições feitas.
 
-## Configurar os modos de colagem {#pastemodes}
+## Configurar os modos de colagem {#paste-modes}
 
 Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir:
 
@@ -106,7 +106,7 @@ Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir
 
 * **Modo** MS Word: Cole o texto, incluindo tabelas, com formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou MS Excel, e manter apenas a formatação parcial.
 
-### Configurar as opções de Colar disponíveis na barra de ferramentas do RTE  {#configure-paste-options-available-on-the-rte-toolbar}
+### Configurar as opções de Colar disponíveis na barra de ferramentas do RTE  {#configure-paste-options-toolbar}
 
 É possível fornecer alguns, todos ou nenhum desses três ícones aos autores na barra de ferramentas do RTE:
 
@@ -122,7 +122,7 @@ Para configurar o RTE para exibir os ícones necessários, siga essas etapas.
 1. Navegue até o nó `rtePlugins/edit`. Consulte [ativar um plug-in](#activateplugin) se o nó não existir.
 1. Crie a propriedade `features` no nó `edit` e adicione um ou mais recursos. Salve todas as alterações.
 
-### Configure o comportamento do ícone e do atalho Colar (Ctrl+V) {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Configure o comportamento do ícone e do atalho Colar (Ctrl+V) {#configure-paste-icon-shortcut}
 
 Você pode pré-configurar o comportamento do ícone **[!UICONTROL Colar (Ctrl+V)]**, usando as etapas a seguir. Essa configuração também define o comportamento do atalho de teclado Ctrl+V que os Autores usam para colar o conteúdo.
 
@@ -141,14 +141,14 @@ A configuração permite os três tipos de casos de uso a seguir:
    * **Tipo** `String`
    * **** Valor: um dos modos de colagem necessários  `browser`,  `plaintext`ou  `wordhtml`.
 
-### Configurar os formatos permitidos ao colar o conteúdo {#pasteformats}
+### Configurar os formatos permitidos ao colar o conteúdo {#paste-formats}
 
 O modo colar como Microsoft-Word (`paste-wordhtml`) pode ser configurado mais detalhadamente para que você possa definir explicitamente quais estilos são permitidos ao colar em AEM de outro programa, como o Microsoft Word.
 
 Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar em AEM, você poderá filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
 
-* [Texto](#pastemodes)
-* [Links](#linkstyles)
+* [Texto](#paste-modes)
+* [Links](#link-styles)
 
 Para links, também é possível definir os protocolos que são aceitos automaticamente.
 
@@ -212,7 +212,7 @@ Um exemplo de uma estrutura `htmlPasteRules` válida está abaixo.
 }
 ```
 
-## Configurar estilos de texto {#textstyles}
+## Configurar estilos de texto {#text-styles}
 
 Os autores podem aplicar Estilos para alterar a aparência de uma parte do texto. Os estilos são baseados em classes CSS predefinidas na folha de estilos CSS. O conteúdo estilizado é inserido nas tags `span` usando o atributo `class` para fazer referência à classe CSS. Por exemplo, `<span class=monospaced>Monospaced Text Here</span>`.
 
@@ -226,9 +226,9 @@ Para configurações posteriores, digamos para adicionar mais estilos, siga apen
 
 >[!NOTE]
 >
->Você pode definir Estilos para [tabelas ou células de tabela](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Essas configurações exigem procedimentos separados.
+>Você pode definir Estilos para [tabelas ou células de tabela](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles). Essas configurações exigem procedimentos separados.
 
-### Ativar a lista suspensa Seletor de estilo {#styleselectorlist}
+### Ativar a lista suspensa Seletor de estilo {#style-selector-list}
 
 Isso é feito ativando o plug-in de estilos.
 
@@ -245,7 +245,7 @@ Isso é feito ativando o plug-in de estilos.
 >
 >Quando o plug-in Estilos estiver ativado, a lista suspensa Estilo será exibida na caixa de diálogo de edição. No entanto, a lista está vazia, pois nenhum Estilo está configurado.
 
-### Especificar a localização da folha de estilos {#locationofstylesheet}
+### Especificar a localização da folha de estilos {#location-stylesheet}
 
 Em seguida, especifique a(s) localização(ões) da(s) folha(s) de estilos que deseja referenciar:
 
@@ -262,21 +262,19 @@ Em seguida, especifique a(s) localização(ões) da(s) folha(s) de estilos que d
 
 1. Salve todas as alterações.
 
->[!NOTE]
->
->Ao usar o RTE em uma caixa de diálogo (interface clássica), talvez você queira especificar folhas de estilos otimizadas para a edição de rich text. Devido a restrições técnicas, o contexto de CSS é perdido no editor, portanto, você pode querer emular esse contexto para melhorar a experiência de WYSIWYG.
->
->O Editor de Rich Text usa um elemento DOM de contêiner com uma ID `CQrte` que pode ser usada para fornecer estilos diferentes para visualização e edição:
->
->`#CQ td {`
->` // defines the style for viewing }`
->
->`#CQrte td {`
->` // defines the style for editing }`
+Ao usar o RTE em uma caixa de diálogo (interface clássica), é possível especificar folhas de estilos otimizadas para a edição de rich text. Devido a restrições técnicas, o contexto de CSS é perdido no editor, para que você possa emular esse contexto para melhorar a experiência de WYSIWYG. O Editor de Rich Text usa um elemento DOM de contêiner com uma ID `CQrte` que pode ser usada para fornecer estilos diferentes para visualização e edição:
 
-### Especificar os Estilos disponíveis na lista pop-up {#stylesindropdown}
+```TXT
+#CQ td {
+// defines the style for viewing }
 
-1. Na definição do componente, navegue até o nó `<rtePlugins-node>/styles`, conforme criado em [Ativando o seletor suspenso de estilo](#styleselectorlist).
+#CQrte td {
+// defines the style for editing }
+```
+
+### Especificar os Estilos disponíveis na lista pop-up {#styles-popup-list}
+
+1. Na definição do componente, navegue até o nó `<rtePlugins-node>/styles`, conforme criado em [Ativando o seletor suspenso de estilo](#style-selector-list).
 1. No nó `styles`, crie um novo nó (também chamado `styles`) para manter a lista sendo disponibilizada:
 
    * **Nome** `styles`
@@ -303,7 +301,7 @@ Em seguida, especifique a(s) localização(ões) da(s) folha(s) de estilos que d
 
    Repita as etapas acima para cada estilo necessário.
 
-## Configurar os formatos de parágrafo {#paraformats}
+## Configurar os formatos de parágrafo {#para-formats}
 
 Qualquer texto criado no RTE é colocado em uma tag de bloco, sendo o padrão `<p>`. Ao ativar o plug-in `paraformat`, você especifica tags de bloco adicionais que podem ser atribuídas a parágrafos, usando uma lista suspensa de seleção. Os formatos de parágrafo determinam o tipo de parágrafo atribuindo a tag de bloco correta. O autor pode selecioná-los e atribuí-los usando o seletor de Formato. As tags de bloco de exemplo incluem, entre outras, o parágrafo padrão &lt;p> e os cabeçalhos &lt;h1>, &lt;h2>, e assim por diante.
 
@@ -322,9 +320,9 @@ Quando o plug-in Formatos de parágrafo é ativado pela primeira vez, nenhum For
 
 Para configurações (re)posteriores, digamos para adicionar mais formatos, siga apenas a parte relevante das instruções.
 
-### Ativar o seletor suspenso Formato {#formatselectorlist}
+### Ativar o seletor suspenso Formato {#format-selector-list}
 
-Primeiro habilite o plug-in paraformat:
+Primeiro habilite o plug-in `paraformat`:
 
 1. No componente , navegue até o nó `<rtePlugins-node>/paraformat`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. Crie a propriedade `features` no nó `paraformat`:
@@ -345,11 +343,11 @@ Se o plug-in não for configurado mais, os seguintes formatos padrão serão ati
 >[!CAUTION]
 Ao configurar os formatos de parágrafo do RTE, não remova a tag de parágrafo &lt;p> como uma opção de formatação. Se a tag &lt;p> for removida, o autor de conteúdo não poderá selecionar a opção **Formatos de parágrafo** mesmo se houver formatos adicionais configurados.
 
-### Especificar os Formatos de Parágrafo disponíveis {#paraformatsindropdown}
+### Especificar os Formatos de Parágrafo disponíveis {#para-formats-popup}
 
 Os formatos de parágrafo podem ser disponibilizados para seleção através de:
 
-1. Na definição do componente, navegue até o nó `<rtePlugins-node>/paraformat`, conforme criado em [Ativando o seletor suspenso de formato](#styleselectorlist).
+1. Na definição do componente, navegue até o nó `<rtePlugins-node>/paraformat`, conforme criado em [Ativando o seletor suspenso de formato](#style-selector-list).
 1. No nó `paraformat` , crie um novo nó para manter a lista de formatos:
 
    * **Nome** `formats`
@@ -381,7 +379,7 @@ Os formatos de parágrafo podem ser disponibilizados para seleção através de:
 >[!CAUTION]
 Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>` e `<h3>`) serão removidos. Recrie o formato `<p>`, pois ele é o formato padrão.
 
-## Configurar caracteres especiais {#spchar}
+## Configurar caracteres especiais {#special-char}
 
 Em uma instalação padrão do AEM, quando o plug-in `misctools` é ativado para caracteres especiais (`specialchars`), uma seleção padrão fica imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e de marcas registradas.
 
@@ -390,7 +388,7 @@ Você pode configurar o RTE para disponibilizar sua própria seleção de caract
 >[!CAUTION]
 Adicionar seus próprios caracteres especiais substitui a seleção padrão. Se necessário, (re)defina esses caracteres em sua própria seleção.
 
-### Definir um caractere único {#definesinglechar}
+### Definir um caractere único {#define-single-char}
 
 1. No componente , navegue até o nó `<rtePlugins-node>/misctools`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. Crie a propriedade `features` no nó `misctools`:
@@ -430,9 +428,9 @@ Depois que a propriedade é salva, o caractere representado é exibido no CRXDE.
 
 
 
-### Definir um intervalo de caracteres {#definerangechar}
+### Definir um intervalo de caracteres {#define-range-char}
 
-1. Use as etapas de 1 a 3 a partir de [Definição de um caractere único](#definesinglechar).
+1. Use as etapas de 1 a 3 a partir de [Definição de um caractere único](#define-single-char).
 1. Em `chars` adicione um novo nó para manter a definição do intervalo de caracteres:
 
    * **** Nome: é possível especificar o nome, mas ele deve refletir o intervalo de caracteres; por exemplo, lápis.
@@ -462,7 +460,7 @@ Depois que a propriedade é salva, o caractere representado é exibido no CRXDE.
 
          *Os caracteres especiais disponíveis no RTE são exibidos para os autores em uma janela pop-up*
 
-## Configurar estilos de tabela {#tablestyles}
+## Configurar estilos de tabela {#table-styles}
 
 Os estilos normalmente são aplicados no texto, mas um conjunto separado de Estilos também pode ser aplicado em uma tabela ou em algumas células da tabela. Esses Estilos estão disponíveis para os autores na caixa do seletor Estilo na caixa de diálogo Propriedades da célula ou Propriedades da tabela . Os estilos estão disponíveis ao editar uma tabela em um componente de Texto (ou derivado) e não no componente de Tabela padrão.
 
@@ -488,12 +486,12 @@ Copiar e colar tabelas no componente RTE ou dele depende do navegador. Não é c
       * `cellprops` para permitir a edição de propriedades da célula, incluindo os estilos.
 
 
-1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificar o local da folha de estilos](#locationofstylesheet), pois ele é o mesmo que definir [estilos para texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
+1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificar o local da folha de estilos](#location-stylesheet), pois ele é o mesmo que definir [estilos para texto](#text-styles). O local pode ser definido se você tiver definido outros estilos.
 1. No nó `table`, crie os seguintes novos nós (conforme necessário):
 
    * Para definir estilos para a tabela inteira (disponível em **Propriedades da tabela**):
 
-      * **Nome** `tableStyles`
+      * **Nome** `table-styles`
       * **Tipo** `cq:WidgetCollection`
    * Para definir estilos para as células individuais (disponível em **Cell properties**):
 
@@ -501,7 +499,7 @@ Copiar e colar tabelas no componente RTE ou dele depende do navegador. Não é c
       * **Tipo** `cq:WidgetCollection`
 
 
-1. Crie um novo nó (no nó `tableStyles` ou `cellStyles` conforme apropriado) para representar um estilo individual:
+1. Crie um novo nó (no nó `table-styles` ou `cellStyles` conforme apropriado) para representar um estilo individual:
 
    * **** Nome: você pode especificar o nome, mas ele deve refletir o estilo.
    * **Tipo** `nt:unstructured`
@@ -524,25 +522,25 @@ Copiar e colar tabelas no componente RTE ou dele depende do navegador. Não é c
 
 Repita as etapas acima para cada estilo necessário.
 
-### Configurar cabeçalhos ocultos em tabelas para acessibilidade {#hiddenheader}
+### Configurar cabeçalhos ocultos em tabelas para acessibilidade {#hidden-header}
 
 Às vezes, é possível criar tabelas de dados sem texto visual em um cabeçalho de coluna, supondo que a finalidade do cabeçalho seja implícita pelo relacionamento visual da coluna com outras colunas. Nesse caso, é necessário fornecer texto interno oculto na célula do cabeçalho para permitir que leitores de tela e outras tecnologias de assistência ajudem os leitores com várias necessidades a entender a finalidade da coluna.
 
 Para aprimorar a acessibilidade em tais cenários, o RTE suporta células de cabeçalho ocultas. Além disso, ele fornece configurações relacionadas a cabeçalhos ocultos em tabelas. Essas configurações permitem aplicar estilos de CSS em cabeçalhos ocultos nos modos de edição e visualização. Para ajudar os autores a identificar cabeçalhos ocultos no modo de edição, inclua os seguintes parâmetros no código:
 
-* `hiddenHeaderEditingCSS`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta, quando o RTE é editado.
-* `hiddenHeaderEditingStyle`: Especifica uma sequência de estilo que é aplicada na célula de cabeçalho oculta quando o RTE é editado.
+* `hidden-headerEditingCSS`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta, quando o RTE é editado.
+* `hidden-headerEditingStyle`: Especifica uma sequência de estilo que é aplicada na célula de cabeçalho oculta quando o RTE é editado.
 
 Se você especificar o CSS e a sequência de estilo no código, a classe CSS terá prioridade sobre a sequência de estilo e poderá substituir qualquer alteração de configuração feita pela sequência de estilo.
 
 Para ajudar os autores a aplicar o CSS em cabeçalhos ocultos no modo de visualização, é possível incluir os seguintes parâmetros no código:
 
-* `hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula do cabeçalho oculta no modo de visualização.
-* `hiddenHeaderStyle`: Especifica uma sequência de estilo que é aplicada na célula do cabeçalho oculto no modo de visualização.
+* `hidden-headerClassName`: Especifica o nome da classe CSS aplicada na célula do cabeçalho oculta no modo de visualização.
+* `hidden-headerStyle`: Especifica uma sequência de estilo que é aplicada na célula do cabeçalho oculto no modo de visualização.
 
 Se você especificar o CSS e a sequência de estilo no código, a classe CSS terá prioridade sobre a sequência de estilo e poderá substituir qualquer alteração de configuração feita pela sequência de estilo.
 
-## Adicionar dicionários para o verificador de ortografia {#adddict}
+## Adicionar dicionários para o verificador de ortografia {#add-dict}
 
 Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a ramificação `/en/` é marcada como inglesa, a ramificação `/de/` como alemã.
 
@@ -570,7 +568,7 @@ Uma instalação de AEM padrão inclui os dicionários para inglês americano (`
 O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você começa a digitar o texto. Para executar o verificador ortográfico, clique em [!UICONTROL Verificador ortográfico] na barra de ferramentas. O RTE verifica a ortografia das palavras e destaca as palavras com erro ortográfico.
 Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro ortográfico não serão mais destacadas. Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico novamente.
 
-## Configure o tamanho do histórico para ações de desfazer e refazer {#undohistory}
+## Configure o tamanho do histórico para ações de desfazer e refazer {#undo-history}
 
 O RTE permite que os autores desfaçam ou refaçam algumas últimas edições. Por padrão, 50 edições são armazenadas no histórico. Você pode configurar esse valor conforme necessário.
 
@@ -586,20 +584,20 @@ O RTE permite que os autores desfaçam ou refaçam algumas últimas edições. P
 
 1. Salve as alterações.
 
-## Configurar o tamanho da guia {#tabsize}
+## Configurar o tamanho da guia {#tab-size}
 
 Quando o caractere de tabulação é pressionado dentro de qualquer texto, um número predefinido de espaços é inserido; por padrão, há três espaços sem quebra e um espaço. Para definir o tamanho da guia:
 
 1. No componente , navegue até o nó `<rtePlugins-node>/keys`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. No nó `keys`, crie a propriedade:
 
-   * **Nome** `tabSize`
+   * **Nome** `tab-size`
    * **Tipo** `String`
    * **** Avalie o número de caracteres de espaço a serem usados para o tabulador
 
 1. Salve as alterações.
 
-## Definir margem de recuo {#indentmargin}
+## Definir margem de recuo {#indent-margin}
 
 Quando o recuo estiver ativado (padrão), é possível definir o tamanho do recuo:
 
@@ -613,7 +611,7 @@ O tamanho do travessão é aplicado somente aos parágrafos (blocos) do texto; n
    * **Tipo**: `Long`
    * **Valor**: número de pixels necessários para a margem de recuo
 
-## Configurar a altura do espaço editável {#editablespace}
+## Configurar a altura do espaço editável {#editable-space}
 
 É possível definir a altura do espaço editável mostrado na caixa de diálogo do componente:
 
@@ -631,7 +629,7 @@ O tamanho do travessão é aplicado somente aos parágrafos (blocos) do texto; n
 >[!NOTE]
 Isso só é aplicável ao usar o RTE em uma caixa de diálogo (não na edição no local na interface clássica).
 
-## Configurar estilos e protocolos para links {#linkstyles}
+## Configurar estilos e protocolos para links {#link-styles}
 
 Ao adicionar links em AEM, você pode definir:
 
