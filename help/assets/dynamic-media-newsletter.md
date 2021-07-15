@@ -3,12 +3,12 @@ description: 'O informativo do Dynamic Media por Experience League é um informa
 keywords: dynamic media, boletim informativo, atualizações de produtos, dicas e truques, eventos, sucesso do cliente, blog, blogs, imagens, vídeos, recursos, recursos
 seo-description: Os recursos de criação de conhecimento estão disponíveis neste boletim informativo de balcão único, incluindo vídeos, visões gerais de soluções e introduções para alguns dos principais recursos e características como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
 seo-title: 'Informativo do Adobe Dynamic Media '
-solution: Dynamic Media Classic
+solution: Experience Manager, Dynamic Media Classic
 title: Informativo do Dynamic Media
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: Colaboração, Dynamic Media Classic
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
