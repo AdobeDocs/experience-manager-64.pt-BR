@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: Gerenciamento de ativos,Representações
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1464'
 ht-degree: 6%
 
 ---
@@ -45,7 +45,7 @@ Como prática recomendada para o dimensionamento de imagem, use `&wid=<value>&he
 
 A nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site, e onde muitos erros são cometidos. Reserve tempo para saber mais sobre como a nitidez e o mascaramento em nitidez funcionam no AEM, referindo-se ao guia [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) que também se aplica ao AEM.
 
-Consulte também [Nitidez de uma imagem com máscara nítida](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+Consulte também [Nitidez de uma imagem com máscara nítida](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
 
 Com AEM, você pode ajustar a nitidez das imagens na assimilação, na entrega ou em ambas. Na maioria dos casos, no entanto, você deve ajustar a nitidez das imagens usando apenas um método ou o outro, mas não ambos. A nitidez de imagens na entrega, em um URL, normalmente fornece os melhores resultados.
 
@@ -112,7 +112,7 @@ Essa combinação de configurações de produtos é um excelente resultado na ma
 
 Se a imagem exigir mais otimização, ajuste gradualmente os parâmetros de nitidez (mascaramento com nitidez), começando com um raio definido como 0,2 ou 0,3. Em seguida, aumente gradualmente a quantidade de 1,75 para um máximo de 4 (equivalente a 400% no Photoshop). Verifique se o resultado desejado foi atingido.
 
-Se os resultados de nitidez ainda não forem satisfatórios, aumente o raio em incrementos decimais. Para cada incremento decimal, reinicie o valor em 1,75 e aumente-o gradualmente para 4. Repita esse processo até atingir o resultado desejado. Embora os valores acima sejam uma abordagem que os estúdios criativos validaram, lembre-se de que você pode começar com outros valores e seguir outras estratégias. Se os resultados são ou não satisfatórios para si é uma questão subjetiva, por isso a experimentação estruturada é fundamental.
+Se os resultados de nitidez ainda não forem satisfatórios, aumente o raio em incrementos decimais. Para cada incremento decimal, reinicie o valor em 1,75 e aumente-o gradualmente para 4. Repita esse processo até atingir o resultado desejado. Embora os valores acima sejam uma abordagem que os estúdios criativos validaram, lembre-se de que é possível começar com outros valores e seguir outras estratégias. Se os resultados são ou não satisfatórios para si é uma questão subjetiva, por isso a experimentação estruturada é fundamental.
 
 À medida que você experimenta, as seguintes sugestões gerais também podem ser úteis para otimizar seu fluxo de trabalho:
 
