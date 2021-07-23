@@ -2,18 +2,17 @@
 title: Gerencie metadados de seus ativos digitais em [!DNL Adobe Experience Manager].
 description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] possibilita organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
-feature: Tagging, Metadata
+feature: Marcação, metadados
 role: Architect, Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-
-# Gerenciar metadados de seus ativos digitais {#managing-metadata-for-digital-assets}
+# Gerenciar metadados dos ativos digitais {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Ela facilita a categorização e a organização de ativos e ajuda as pessoas que estão procurando por um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para [!DNL Experience Manager Assets], o gerenciamento de metadados integra-se ao fluxo de trabalho criativo. Com a capacidade de manter e gerenciar metadados com seus ativos, você pode organizar e processar ativos automaticamente com base em seus metadados.
 
@@ -138,7 +137,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Digital Rights Management metadados {#digital-rights-management-metadata}
+### Metadados de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -158,7 +157,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 ### Metadados específicos para impressão {#print-specific-metadata}
 
 * PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
-* PRISM - [Requisitos de publicação para metadados padrão do setor](https://www.prismstandard.org).
+* PRISM - [Requisitos de publicação para metadados padrão do setor](http://www.prismstandard.org/specifications/).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadados para texto paginado.
 
