@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Fluxo De Trabalho,Representações
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2227'
 ht-degree: 3%
 
 ---
@@ -442,7 +442,7 @@ Após executar o procedimento a seguir, ao fazer upload de um arquivo de texto n
 
 O Experience Manager permite executar qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como o ImageMagick) e adicionar a nova representação ao ativo. Instale a ferramenta de linha de comando no disco que hospeda o servidor do Experience Manager e adicione e configure uma etapa do processo para o fluxo de trabalho. O processo invocado, chamado `CommandLineProcess`, filtra de acordo com tipos MIME específicos e cria várias miniaturas com base na nova representação.
 
-As seguintes conversões podem ser executadas e armazenadas automaticamente no Experience Manager Assets:
+As seguintes conversões podem ser executadas e armazenadas automaticamente em [!DNL Experience Manager Assets]:
 
 * Transformação de EPS e AI usando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/)
 * Transcodificação de vídeo FLV usando [FFmpeg](https://ffmpeg.org/)
