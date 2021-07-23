@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Insights de ativos,Relatórios de ativos
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -115,4 +115,4 @@ Execute as etapas a seguir para ativar o Assets Insights por meio do DTM:
    * O objeto AppMeasurement é recuperado consultando `satelliteLib` para todos os mecanismos de SiteCatalyst disponíveis. Se várias tags estiverem configuradas, altere o índice do seletor de matriz apropriadamente. As entradas no array são solicitadas de acordo com as ferramentas do SiteCatalyst disponíveis na interface do DTM.
 
 1. Salve e feche a janela Editor de código e salve as alterações na configuração da Ferramenta.
-1. Na guia **[!UICONTROL Approvals]** , aprove as duas aprovações pendentes. A tag do DTM está pronta para inserção na página da Web. Para obter detalhes sobre como inserir tags do DTM em páginas da Web, consulte [Integração do DTM em modelos de página personalizados](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
+1. Na guia **[!UICONTROL Approvals]** , aprove as duas aprovações pendentes. A tag do DTM está pronta para inserção na página da Web. Para obter detalhes sobre como inserir tags do DTM em páginas da Web, consulte a página arquivada sobre a [integração do DTM em modelos de página personalizados](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).
