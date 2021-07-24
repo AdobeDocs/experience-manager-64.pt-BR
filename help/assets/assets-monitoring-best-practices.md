@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Gerenciamento de ativos
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 4048c4c76a892e3bb32dbbeef140b5dc9ebffad3
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Você deve executar o monitoramento ao vivo durante a fase de teste de desempenh
 * [Parte superior](https://man7.org/linux/man-pages/man1/top.1.html): Top é um comando Linux que abre um painel, que exibe estatísticas de uso, incluindo CPU, memória e uso de E/S. Ele fornece uma visão geral de alto nível do que está acontecendo em uma instância.
 * [Cabeça](https://hisham.hm/htop/): O Htop é um visualizador de processo interativo. Ele fornece uso detalhado da CPU e da memória, além do que o Top pode fornecer. O htop pode ser instalado na maioria dos sistemas Linux usando `yum install htop` ou `apt-get install htop`.
 
-* [Iotop](http://guichaz.free.fr/iotop/): Iotop é um painel detalhado para uso de E/S de disco. Ele exibe barras e medidores que representam os processos que usam E/S de disco e a quantidade que eles usam. O Iotop pode ser instalado na maioria dos sistemas Linux usando `yum install iotop` ou `apt-get install iotop`.
+* [Iotop](https://guichaz.free.fr/iotop/): Iotop é um painel detalhado para uso de E/S de disco. Ele exibe barras e medidores que representam os processos que usam E/S de disco e a quantidade que eles usam. O Iotop pode ser instalado na maioria dos sistemas Linux usando `yum install iotop` ou `apt-get install iotop`.
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): O Iftop exibe informações detalhadas sobre o uso da rede/Ethernet. O ftop exibe as estatísticas por canal de comunicação nas entidades que usam ethernet e a quantidade de largura de banda que usam. O Iftop pode ser instalado na maioria dos sistemas Linux usando `yum install iftop` ou `apt-get install iftop`.
 
