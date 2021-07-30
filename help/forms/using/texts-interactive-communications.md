@@ -7,15 +7,14 @@ uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Comunicação interativa
+exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 0%
 
 ---
-
 
 # Textos em Comunicações interativas {#texts-in-interactive-communications}
 
@@ -77,7 +76,7 @@ O fragmento de documento de texto em Comunicação interativa é compatível com
 1. Faça as alterações necessárias. Para obter mais informações sobre opções no texto, consulte [Criar texto](#createtext).
 1. Toque em **[!UICONTROL Salvar]** e toque em **[!UICONTROL Fechar]**.
 
-## Personalização de um fragmento de documento de texto usando as propriedades do modelo de dados de formulário {#formdatamodel}
+## Personalização de um fragmento de documento de texto usando propriedades de modelo de dados de formulário {#formdatamodel}
 
 É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo propriedades de modelo de dados de formulário no texto, você pode buscar e preencher dados específicos do recipient da fonte de dados associada, enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
@@ -89,11 +88,9 @@ Se você tiver especificado um modelo de dados de formulário ao criar um texto,
 
 * Para permitir que os agentes editem o valor de uma propriedade do FDM na interface do agente enquanto [Prepare and send Interative Communication](/help/forms/using/prepare-send-interactive-communication.md) usando a interface do agente, toque no ícone de bloqueio **`[D]`** dessa propriedade e verifique se ela está em um estado desbloqueado. O estado padrão da propriedade é bloqueado e um agente não pode editar a propriedade na interface do agente.
 
-* 
-
 Também é possível usar as propriedades do modelo de dados de formulário para criar regras para exibir ou ocultar partes do conteúdo. Para obter mais informações, consulte [Criar regras em texto](#rules).
 
-## Criação e uso de variáveis em um fragmento de documento de texto {#variables}
+## Como criar e usar variáveis em um fragmento de documento de texto {#variables}
 
 As variáveis são marcadores de posição que podem ser vinculados ao criar uma Comunicação interativa. As variáveis podem ser vinculadas a uma propriedade de modelo de dados de formulário ou a um fragmento de texto. As variáveis também podem ser deixadas para o agente preencher.
 
@@ -192,7 +189,7 @@ Usando o editor de regras em um texto, você pode criar regras para exibir ou oc
 
    Ao clicar no identificador esquerdo da regra aplicada, você obtém as opções para editar ou remover a regra.
 
-## Formatação de texto {#formatting}
+## Como formatar o texto {#formatting}
 
 Ao criar ou editar texto, a barra de ferramentas é alterada dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
 
