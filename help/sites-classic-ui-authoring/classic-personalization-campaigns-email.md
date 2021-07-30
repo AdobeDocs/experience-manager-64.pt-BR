@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 93%
 
 ---
 
-
 # Email Marketing{#e-mail-marketing}
 
 >[!NOTE]
 >
->O Adobe não pretende melhorar ainda mais os emails abertos/enviados pelo serviço SMTP AEM.\
->A recomendação é [aproveitar a Adobe Campaign e sua integração AEM](/help/sites-administering/campaign.md).
+>O Adobe não planeja aprimorar ainda mais os emails abertos/retornados enviados pelo serviço SMTP AEM.\
+>A recomendação é [aproveitar o Adobe Campaign e sua integração AEM](/help/sites-administering/campaign.md).
 
 O email marketing (por exemplo, informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus leads. No AEM, é possível criar boletins informativos de conteúdo existente do AEM, bem como adicionar novo conteúdo, específico para boletins informativos.
 
@@ -38,9 +37,9 @@ Além disso, o AEM permite administrar a funcionalidade de boletim informativo, 
 Este documento descreve os fundamentos da criação de informativos no AEM. Para obter informações mais detalhadas sobre como trabalhar com email marketing, consulte os seguintes documentos:
 
 * [Criação de uma página de aterrissagem de informativo eficaz](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
-* [Gerenciar assinaturas](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
+* [Gerenciamento de assinaturas](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 * [Publicar um email em provedores de serviços de email](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-* [Monitoramento de emails retornados](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
+* [Rastreamento de emails retornados](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
@@ -94,7 +93,7 @@ Este documento descreve os fundamentos da criação de informativos no AEM. Para
 
    * **Hora de ligar**
 
-      A hora de enviar o boletim.
+      A hora para enviar o boletim informativo.
 
    * **Lista de destinatários padrão**
 
@@ -146,7 +145,7 @@ Para personalizar um boletim informativo e simular como será sua aparência:
 
 >[!NOTE]
 >
->Antes de enviar boletins informativos, verifique a configuração do OSGi para o Externalizador de links do Day CQ em `http://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletins informativos, verifique a configuração OSGi do Day CQ Link Externalizer em `http://localhost:4502/system/console/configMgr`.
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta para a execução da instância for alterada.
 
@@ -190,8 +189,6 @@ Para personalizar as configurações do boletim informativo:
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
 
-1. 
-
    1. Insira o endereço de email de **Remetente**
    1. Modifique o **Assunto** do email, se necessário.
    1. Selecione uma **Lista de destinatários padrão** a partir da lista suspensa.
@@ -229,7 +226,7 @@ Você pode enviar um informativo a partir dele mesmo ou da lista. Ambos os proce
 
 >[!NOTE]
 >
->Antes de enviar boletins informativos, verifique a configuração do OSGi para o Externalizador de links do Day CQ em `http://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletins informativos, verifique a configuração OSGi do Day CQ Link Externalizer em `http://localhost:4502/system/console/configMgr`.
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta para a execução da instância for alterada.
 
@@ -237,7 +234,7 @@ Você pode enviar um informativo a partir dele mesmo ou da lista. Ambos os proce
 >
 >Se você atualizar provedores de email, fazer um teste de envio ou enviar um informativo, essas operações falharão se o informativo não for publicado primeiro na Instância de publicação ou se a Instância de publicação não estiver disponível. Publique o informativo e verifique se a Instância de publicação está ativa e em execução.
 
-### Envio de informativos a partir de uma campanha  {#sending-newsletters-from-a-campaign}
+### Envio de informativos a partir de uma campanha {#sending-newsletters-from-a-campaign}
 
 Para enviar um informativo a partir da campanha:
 
@@ -285,7 +282,7 @@ Para enviar um informativo de uma lista:
 
 1. A conclusão da configuração é confirmada. Clique em **Enviar** para enviar o boletim informativo selecionado à lista especificada de clientes potenciais.
 
-   ![mcm_newslettersenddialog_confirm](assets/mcm_newslettersenddialog_confirmation.png)
+   ![mcm_newslettersenddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
 
    Seu boletim informativo é enviado para os destinatários selecionados.
 
@@ -293,7 +290,7 @@ Para enviar um informativo de uma lista:
 
 Esta seção descreve como assinar um informativo.
 
-### Assinatura de um informativo  {#subscribing-to-a-newsletter-1}
+### Assinatura de um informativo {#subscribing-to-a-newsletter-1}
 
 Para assinar um boletim informativo (usando o site Geometrixx como um exemplo):
 
@@ -302,4 +299,3 @@ Para assinar um boletim informativo (usando o site Geometrixx como um exemplo):
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. No campo **Cadastrar-se** do boletim informativo do Geometrixx, digite o endereço de email e clique em **Cadastrar-se**. Você foi cadastrado no boletim informativo.
-
