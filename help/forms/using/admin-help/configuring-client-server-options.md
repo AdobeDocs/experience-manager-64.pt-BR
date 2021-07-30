@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Segurança de documentos
+exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 0%
 
 ---
-
 
 # Configurar o servidor de segurança de documentos {#configure-the-document-security-server}
 
@@ -71,9 +70,9 @@ Altura: Mínimo = 450; máximo = 800
 
 **Ativar o Cache de Credenciais do Cliente:** Selecione esta opção para permitir que os usuários armazenem em cache suas credenciais (nome de usuário e senha). Quando as credenciais dos usuários são armazenadas em cache, eles não precisam digitar as credenciais toda vez que abrirem um documento ou quando clicarem no botão Atualizar na página Gerenciar políticas de segurança no Adobe Acrobat. Você pode especificar o número de dias antes de os usuários deverem fornecer suas credenciais novamente. Definir o número de dias como 0 permite que as credenciais sejam armazenadas em cache indefinidamente.
 
-## Configurar usuários e administradores de segurança de documento {#configuring-document-security-users-and-administrators}
+## Configuração de usuários e administradores da segurança de documentos {#configuring-document-security-users-and-administrators}
 
-### Atribuindo funções de segurança de documento a administradores {#assigning-document-security-roles-to-administrators}
+### Atribuição de funções de segurança de documento a administradores {#assigning-document-security-roles-to-administrators}
 
 Seu ambiente de formulários AEM contém um ou mais usuários administradores que têm os privilégios apropriados para criar usuários e grupos. Se sua organização estiver usando a segurança de documentos, pelo menos um administrador também deverá ter o privilégio de gerenciar usuários convidados e locais.
 
@@ -187,7 +186,7 @@ As chaves principais devem ser submetidas a rollover duas vezes antes de as chav
 1. Clique em Chaves de rolagem agora e em OK.
 1. Aguarde aproximadamente 10 minutos.
 
-## Configuração das configurações de privacidade e auditoria de eventos {#configuring-event-auditing-and-privacy-settings}
+## Definição das configurações de auditoria e privacidade de eventos {#configuring-event-auditing-and-privacy-settings}
 
 A segurança de documentos pode auditar e registrar informações sobre eventos relacionados à interação com documentos, políticas, administradores e o servidor protegidos por políticas. Você pode configurar a auditoria de eventos e especificar os tipos de eventos a serem auditados. Para auditar eventos de um documento específico, a opção de auditoria da política também deve estar habilitada.
 
@@ -248,7 +247,7 @@ Se você estiver usando um aplicativo habilitado para segurança de documento qu
 1. A importação substitui os tipos de evento de auditoria personalizados existentes no servidor, caso sejam encontradas combinações idênticas de código de evento e namespace.
 1. Clique em OK.
 
-### Excluir um tipo de evento de auditoria personalizada {#delete-a-custom-audit-event-type}
+### Excluir um tipo de evento de auditoria personalizado {#delete-a-custom-audit-event-type}
 
 1. No console de administração, clique em Serviços > segurança do documento > Configuração > Gerenciamento de eventos.
 1. Marque a caixa de seleção ao lado do tipo de evento de auditoria personalizada a ser excluído e clique em Excluir.
@@ -536,7 +535,7 @@ Ao excluir uma marca d&#39;água dinâmica, ela não estará mais disponível pa
 1. Marque a caixa de seleção ao lado da marca d&#39;água apropriada e clique em Excluir.
 1. Clique em OK.
 
-## Configurar o registro de usuário convidado {#configuring-invited-user-registration}
+## Configuração do registro de usuário convidado {#configuring-invited-user-registration}
 
 Os usuários externos à sua organização podem se registrar na segurança do documento. Os usuários convidados que se registram e ativam suas contas podem fazer logon na segurança do documento usando seu endereço de email e a senha que criam quando se registram. Os usuários convidados registrados podem usar documentos protegidos por políticas para os quais tenham permissões.
 
@@ -686,7 +685,7 @@ A página Configuração tem um link para a página Minhas políticas , onde voc
 
 Antes de conceder aos usuários permissão para criar políticas personalizadas, considere o acesso ou o controle que você deseja que usuários individuais tenham. Além disso, considere como você deseja que seus usuários e grupos fiquem expostos ao torná-los visíveis para pesquisas.
 
-### Especifique usuários e grupos que podem criar políticas {#specify-users-and-groups-who-can-create-policies}
+### Especificar usuários e grupos que podem criar políticas {#specify-users-and-groups-who-can-create-policies}
 
 Como administrador, especifique quais usuários e grupos podem criar políticas personalizadas. Essa permissão pode ser definida no nível do usuário e do grupo. A funcionalidade de pesquisa pesquisa pesquisa usuários e grupos no banco de dados do Gerenciamento de usuários.
 
@@ -702,7 +701,7 @@ Como administrador, especifique quais usuários e grupos podem criar políticas 
 
 Seus usuários e grupos selecionados agora têm permissão para criar políticas personalizadas.
 
-### Remova a permissão de criação de políticas personalizadas de um usuário ou grupo {#remove-the-create-custom-policies-permission-from-a-user-or-group}
+### Remova a permissão de criar políticas personalizadas de um usuário ou grupo {#remove-the-create-custom-policies-permission-from-a-user-or-group}
 
 1. Na página de segurança do documento, clique em Configuração > Minhas políticas.
 1. Na página Minhas políticas , clique na guia Criar políticas . Usuários e grupos com permissões para criar políticas personalizadas são exibidos.
@@ -750,11 +749,6 @@ Você pode fazer as seguintes alterações usando o arquivo de configuração:
 1. Clique em Procurar para ir para o arquivo de configuração e clique em Importar. Não é possível digitar o caminho diretamente na caixa Nome do arquivo.
 1. Clique em OK.
 
-1. 
-1. 
-1. 
-1. 
-
 ### Especificar um período de tempo limite para sincronização offline {#specify-a-timeout-period-for-offline-synchronization}
 
 A segurança de documentos permite que os usuários abram e usem documentos protegidos quando não estiverem conectados ao servidor de segurança de documentos. O aplicativo cliente do usuário deve sincronizar regularmente com o servidor para manter os documentos válidos para uso offline. Na primeira vez que os usuários abrem um documento protegido, eles são solicitados a saber se o computador deve ser autorizado a executar a sincronização periódica do cliente.
@@ -773,7 +767,7 @@ No arquivo de configuração de segurança do documento, você pode especificar 
 
 1. Importe o arquivo de configuração. (Consulte [Editar manualmente o arquivo de configuração de segurança do documento](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Negando serviços de segurança de documento para aplicativos específicos {#denying-document-security-services-for-specific-applications}
+### Negar serviços de segurança de documentos para aplicações específicas {#denying-document-security-services-for-specific-applications}
 
 Você pode configurar a segurança de documentos para negar serviços a aplicativos que atendem a critérios específicos. Os critérios podem especificar um único atributo, como um nome de plataforma ou podem especificar vários conjuntos de atributos. Este recurso pode ajudá-lo a controlar as solicitações que a segurança do documento deve tratar. Estes são alguns aplicativos deste recurso:
 
@@ -988,7 +982,7 @@ As seguintes alterações no config.xml desabilitam todos os links externos das 
 
 1. Importe o arquivo de configuração. (Consulte [Editar manualmente o arquivo de configuração de segurança do documento](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Configuração para habilitar o SMTP para TLS {#configuration-to-enable-smtp-for-transport-layer-security-tls}
+### Configuração para habilitar o SMTP para TLS (Transport Layer Security) {#configuration-to-enable-smtp-for-transport-layer-security-tls}
 
 As seguintes alterações no config.xml habilitam o suporte TLS para o recurso Registro de usuário convidado .
 
@@ -1005,7 +999,7 @@ As seguintes alterações no config.xml habilitam o suporte TLS para o recurso R
 1. Salve o `config.xml`.
 1. Importe o arquivo de configuração. (Consulte [Editar manualmente o arquivo de configuração de segurança do documento](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Desative pontos de extremidade SOAP para documentos de segurança de documento {#disable-soap-endpoints-for-document-security-documents}
+### Desativar pontos de extremidade SOAP para documentos de Segurança de Documentos {#disable-soap-endpoints-for-document-security-documents}
 
 As alterações a seguir no config.xml para desabilitar pontos de extremidade SOAP para documentos de segurança de documentos.
 
@@ -1052,4 +1046,3 @@ Você pode aumentar a escalabilidade do servidor de segurança de documentos lim
    >Por padrão, o valor da chave `DisableGlobalOfflineSynchronizationData`está definido como `false`.
 
 1. Salve e importe o arquivo de configuração. (Consulte [Editar manualmente o arquivo de configuração de segurança do documento](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-
