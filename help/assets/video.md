@@ -1,5 +1,5 @@
 ---
-title: Vídeo
+title: Vídeo no Dynamic Media
 description: Saiba como trabalhar com vídeo no Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Vídeo
 role: User
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: d5b4f559b20c8671bd648d240b54cb65f73fd222
 workflow-type: tm+mt
-source-wordcount: '10335'
+source-wordcount: '10377'
 ht-degree: 4%
 
 ---
@@ -45,8 +45,10 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
       * [Aplicar um perfil de vídeo a pastas](video-profiles.md#applying-a-video-profile-to-folders).
       * Saiba mais sobre as [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](organize-assets.md#organize-using-folders).
       * Saiba mais sobre [Organização de ativos digitais](organize-assets.md).
-   * Carregue seus vídeos principais nas pastas. Você pode fazer upload de arquivos de vídeo com até 15 GB cada. Ao adicionar vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
+   * Faça upload dos vídeos de origem primária para as pastas. Ao adicionar vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
+      * O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+      * Você pode fazer upload de arquivos de vídeo com até 15 GB cada.
       * [Carregue seus vídeos](managing-video-assets.md#uploading-and-previewing-video-assets).
       * Saiba mais sobre [Formatos de arquivo de entrada compatíveis](assets-formats.md#supported-multimedia-formats).
    * Monitore como a [codificação de vídeo está progredindo](#monitoring-video-encoding-and-youtube-publishing-progress) a partir do ativo ou da visualização de fluxo de trabalho.
@@ -71,7 +73,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
          [Exibição de representações de vídeo](video-renditions.md)
 
-         [Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
+[Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gerenciar predefinições do visualizador](managing-viewer-presets.md)
       * [Publicação de ativos](publishing-dynamicmedia-assets.md)
@@ -83,7 +85,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
       * Edite as propriedades do vídeo, como título, descrição e tags, e os campos de metadados personalizados:
 
-         [Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
+[Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gerenciamento de metadados para ativos digitais](metadata.md)
       * [Esquemas de metadados](metadata-schemas.md)
@@ -283,9 +285,12 @@ For advice about video encoding, see the following:
 * Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
 * Video: *Video Encoding Basics:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
-### Arquivos de vídeo de origem {#source-video-files}
+### Arquivos de vídeo de origem primária {#source-video-files}
 
 Ao codificar um arquivo de vídeo, use um arquivo de vídeo de origem com a maior qualidade possível. Evite usar arquivos de vídeo previamente codificados, pois esses arquivos já estão compactados, e uma codificação adicional criará um vídeo de qualidade inferior.
+
+* O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+* Você pode fazer upload de arquivos de vídeo de origem primária com até 15 GB cada.
 
 A tabela a seguir descreve o tamanho recomendado, a proporção e a taxa mínima de bits que seus arquivos de vídeo de origem devem ter antes de codificá-los:
 
@@ -448,19 +453,19 @@ A publicação no YouTube ignora o sistema de perfil de processamento no AEM e, 
 
 A publicação de ativos de vídeo em servidores da YouTube envolve a conclusão das seguintes tarefas para garantir a autenticação segura de servidor para servidor com o YouTube:
 
-1. [Definição das configurações da Google Cloud](#configuring-google-cloud-settings)
-1. [Criação de um canal YouTube](#creating-a-youtube-channel)
-1. [Adição de tags para publicação](#adding-tags-for-publishing)
-1. [Ativação do agente de Replicação de Publicação do YouTube](#enabling-the-youtube-publish-replication-agent)
-1. [Configuração do YouTube no AEM](#setting-up-youtube-in-aem)
-1. [(Opcional) Automatização da configuração das propriedades padrão do YouTube para os vídeos enviados por upload](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [Definir as configurações da Google Cloud](#configuring-google-cloud-settings)
+1. [Criar um canal YouTube](#creating-a-youtube-channel)
+1. [Adicionar tags para publicação](#adding-tags-for-publishing)
+1. [Ativar o agente YouTube Publish Replication](#enabling-the-youtube-publish-replication-agent)
+1. [Configurar o YouTube no AEM](#setting-up-youtube-in-aem)
+1. [(Opcional) Automatize a configuração das propriedades padrão do YouTube para seus vídeos carregados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Publicar vídeos no seu canal do YouTube](#publishing-videos-to-your-youtube-channel)
-1. [(Opcional) Verificação do vídeo publicado no YouTube](video.md#optional-verifying-the-published-video-on-youtube)
-1. [Vincular URLs do YouTube ao seu aplicativo web](#linking-youtube-urls-to-your-web-application)
+1. [(Opcional) Verificar o vídeo publicado no YouTube](video.md#optional-verifying-the-published-video-on-youtube)
+1. [Vincular URLs do YouTube à sua aplicação web](#linking-youtube-urls-to-your-web-application)
 
 Você também pode [cancelar a publicação de vídeos para removê-los do YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Definição das configurações do Google Cloud {#configuring-google-cloud-settings}
+### Definir configurações do Google Cloud {#configuring-google-cloud-settings}
 
 Para publicar no YouTube, você precisa de uma conta do Google. Se você tiver uma conta GMAIL, então já terá uma conta do Google. Se você não tiver uma conta do Google, poderá criar uma facilmente. Você precisa da conta, pois precisa de credenciais para publicar ativos de vídeo no YouTube. Se você tiver uma conta já criada, ignore esta tarefa e prossiga para [Criação de um canal YouTube](#creating-a-youtube-channel).
 
@@ -468,7 +473,7 @@ Para publicar no YouTube, você precisa de uma conta do Google. Se você tiver u
 >
 >As etapas a seguir foram precisas no momento da escrita. No entanto, o Google atualiza periodicamente seus sites sem aviso prévio. Como tal, essas etapas podem ser um pouco diferentes.
 
-**Para definir as configurações** da Google Cloud:
+**Para definir as configurações da Google Cloud:**
 
 1. Crie uma nova conta do Google.
 
@@ -533,7 +538,7 @@ A publicação de vídeos no YouTube requer um ou mais canais. Se você já crio
 >
 >Certifique-se de que você já configurou um ou mais canais no YouTube &amp;ast;before&amp;ast; você adiciona canais em Configurações do YouTube em AEM (consulte [Configuração do YouTube em AEM](#setting-up-youtube-in-aem) abaixo). Se você não conseguir fazer isso, não receberá nenhum aviso de nenhum canal existente. No entanto, a autenticação do Google ainda ocorre ao adicionar um canal, mas não há uma opção para escolher qual canal o vídeo será enviado.
 
-**Para criar um canal** YouTube:
+**Para criar um canal YouTube:**
 
 1. Vá para [https://www.youtube.com](https://www.youtube.com/) e faça logon usando suas credenciais de conta do Google.
 1. No canto superior direito da página do YouTube, toque na imagem do perfil (também pode aparecer como uma letra dentro de um círculo colorido sólido) e toque em **[!UICONTROL YouTube settings]** (ícone de engrenagem redonda).
@@ -547,13 +552,13 @@ A publicação de vídeos no YouTube requer um ou mais canais. Se você já crio
 
    Agora, você adicionará tags para publicação.
 
-### Adição de tags para publicação {#adding-tags-for-publishing}
+### Adicionar tags para publicação {#adding-tags-for-publishing}
 
 Para publicar seus vídeos no YouTube, AEM associa as tags a um ou mais canais do YouTube. Para adicionar tags para publicação, consulte [Administração de tags](/help/sites-administering/tags.md).
 
 Ou, se você pretende usar as tags padrão no AEM, ignore esta tarefa e vá para [Ativando o agente de replicação YouTube Publish](#enabling-the-youtube-publish-replication-agent).
 
-### Ativação do agente de replicação YouTube Publish {#enabling-the-youtube-publish-replication-agent}
+### Ativar o agente de replicação do YouTube Publish {#enabling-the-youtube-publish-replication-agent}
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Tools > Deployment > Replication > Agents on Author]**.
 1. Na página **[!UICONTROL Agents of Author]**, toque em **[!UICONTROL YouTube Publish (youtube)]**.
@@ -563,7 +568,7 @@ Ou, se você pretende usar as tags padrão no AEM, ignore esta tarefa e vá para
 
    Agora, você configurará o YouTube no AEM.
 
-### Configuração do YouTube no AEM {#setting-up-youtube-in-aem}
+### Configurar o YouTube no AEM {#setting-up-youtube-in-aem}
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. No cabeçalho **[!UICONTROL Serviços de terceiros]**, em YouTube, toque em **[!UICONTROL Configurar agora]**.
@@ -608,13 +613,13 @@ Ou, se você pretende usar as tags padrão no AEM, ignore esta tarefa e vá para
 
    Agora você publica vídeos no seu canal do YouTube.
 
-### (Opcional) Automatização da configuração das propriedades padrão do YouTube para os vídeos enviados por upload {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (Opcional) Automatize a configuração das propriedades padrão do YouTube para seus vídeos carregados {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 Você pode automatizar a configuração das propriedades do YouTube ao fazer upload dos vídeos. Para isso, crie um perfil de processamento de metadados no AEM.
 
 Para criar o perfil de processamento de metadados, você primeiro copiará valores dos campos **[!UICONTROL Rótulo do campo]**, **[!UICONTROL Mapear para a propriedade]** e **[!UICONTROL Opções]**, todos encontrados nos Esquemas de metadados do vídeo. Em seguida, você criará seu perfil de processamento de metadados de vídeo do YouTube, adicionando esses valores a ele.
 
-**Como opção, para automatizar a configuração das propriedades padrão do YouTube para os vídeos** carregados:
+**Como opção, para automatizar a configuração das propriedades padrão do YouTube para os vídeos carregados:**
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**.
 1. Toque em **[!UICONTROL padrão]**. (Não adicione uma marca de seleção à caixa de seleção à esquerda de &quot;padrão&quot;.)
@@ -687,7 +692,7 @@ Agora, associe as tags adicionadas anteriormente aos ativos de vídeo. Esse proc
 Para publicar conteúdo do YouTube, o AEM usa o fluxo de trabalho **[!UICONTROL Publicar no YouTube]**, que permite monitorar o progresso e exibir quaisquer informações de falha.
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-**Para publicar vídeos no seu canal** do YouTube:
+**Para publicar vídeos no seu canal do YouTube:**
 
 1. Em AEM, navegue até um ativo de vídeo que deseja publicar no canal do YouTube.
 1. Selecione o ativo de vídeo.
@@ -703,7 +708,7 @@ Consulte [Monitorar o progresso da codificação de vídeo e da publicação no 
 
    Opcionalmente, é possível verificar o vídeo publicado no canal do YouTube.
 
-### (Opcional) Verificação do vídeo publicado no YouTube {#optional-verifying-the-published-video-on-youtube}
+### (Opcional) Verificar o vídeo publicado no YouTube {#optional-verifying-the-published-video-on-youtube}
 
 Você pode monitorar o progresso da publicação do YouTube (ou desfazer a publicação).
 
@@ -713,13 +718,13 @@ Os tempos de publicação podem variar bastante, dependendo de vários fatores q
 
 Após oito horas, se você ainda vir uma mensagem de status que diz **[!UICONTROL Uploaded (processing, por favor aguarde)]**, tente remover o vídeo de nosso site e carregá-lo novamente.
 
-### Vincular URLs do YouTube ao seu aplicativo web {#linking-youtube-urls-to-your-web-application}
+### Vincular URLs do YouTube à sua aplicação web {#linking-youtube-urls-to-your-web-application}
 
 Você pode obter uma string de URL do YouTube gerada pelo Dynamic Media após publicar o vídeo. Ao copiar o URL do YouTube, ele chega à Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
 
 O URL do YouTube não está disponível para cópia até que você tenha publicado o ativo de vídeo no YouTube.
 
-**Para vincular URLs do YouTube ao aplicativo** da Web:
+**Para vincular URLs do YouTube ao seu aplicativo da Web:**
 
 1. Navegue até o ativo de vídeo *published* do YouTube cujo URL você deseja copiar e selecione-o.
 
@@ -729,7 +734,7 @@ O URL do YouTube não está disponível para cópia até que você tenha publica
 1. Toque na guia **[!UICONTROL Avançado]**.
 1. No cabeçalho **[!UICONTROL YouTube Publishing]**, na Lista **[!UICONTROL YouTube URL]**, selecione e copie o texto do URL para o navegador da Web para visualizar o ativo ou para adicioná-lo à página de conteúdo da Web.
 
-### Desfazer a publicação de vídeos para removê-los do YouTube {#unpublishing-videos-to-remove-them-from-youtube}
+### Cancelar a publicação de vídeos para removê-los do YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
 Ao cancelar a publicação de um ativo de vídeo no AEM, o vídeo é removido do YouTube.
 
@@ -740,12 +745,12 @@ Ao cancelar a publicação de um ativo de vídeo no AEM, o vídeo é removido do
 Para remover o conteúdo do YouTube, o AEM usa o workflow **[!UICONTROL Cancelar publicação do YouTube]**, que permite monitorar o progresso e exibir quaisquer informações de falha.
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-**Para cancelar a publicação de vídeos para removê-los do YouTube**:
+**Para cancelar a publicação de vídeos para removê-los do YouTube:**
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos]**.
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**.
 1. Navegue até os ativos de vídeo que você deseja cancelar a publicação por meio do canal do YouTube.
 1. Em um modo de seleção de ativo, selecione um ou mais ativos de vídeo publicados.
-1. Na barra de ferramentas, toque em **[!UICONTROL Cancelar publicação > Cancelar publicação]**.
+1. Na barra de ferramentas, toque em **[!UICONTROL Cancelar publicação]** > **[!UICONTROL Cancelar publicação]**.
 
 ## Monitorar o progresso da codificação de vídeo e da publicação no YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -828,7 +833,7 @@ Para monitorar o progresso (incluindo codificação com falha/publicação do Yo
 1. Você pode receber notificações por email sobre trabalhos de fluxo de trabalho abortados ou com falha. Essas notificações por email podem ser configuradas por um administrador.
 Consulte [Configuração de notificações por email](#configuring-e-mail-notifications).
 
-#### Configuração de notificações por email {#configuring-e-mail-notifications}
+#### Configurar notificações por email {#configuring-e-mail-notifications}
 
 Talvez seja necessário direitos administrativos para acessar o menu **[!UICONTROL Tools]**.
 
@@ -838,7 +843,7 @@ A forma como você configura a notificação depende se você deseja notificaç�
 
 * Para trabalhos de publicação do YouTube, faça o seguinte:
 
-1. Em AEM, selecione **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Em AEM, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. Selecione o workflow **[!UICONTROL Publish to YouTube]** e toque em **[!UICONTROL Edit]**.
 1. Clique com o botão direito do mouse na etapa do fluxo de trabalho **[!UICONTROL YouTube Upload]** e toque em **[!UICONTROL Editar]**.
 1. Toque na guia **[!UICONTROL Argumento]s**.
@@ -854,7 +859,7 @@ A forma como você configura a notificação depende se você deseja notificaç�
    >
    >Esses emails são específicos do YouTube e, além das notificações por email de workflow genéricas. Como resultado, você pode receber dois conjuntos de notificações por email - a notificação genérica disponível no **Day CQ Workflow Email Notification Service** e uma específica para o YouTube, dependendo das configurações.
 
-## Exibição de relatórios de vídeo {#viewing-video-reports}
+## Exibir relatórios de vídeo {#viewing-video-reports}
 
 Os relatórios de vídeo estão disponíveis ao executar o Dynamic Media - Modo híbrido; os relatórios não estão disponíveis quando você executa o modo Dynamic Media - Scene7.
 
@@ -882,9 +887,9 @@ Por padrão, na primeira vez que você insere Relatórios de vídeo, o relatóri
 
 Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de relatórios é criada automaticamente quando o Dynamic Media Cloud Services é configurado. Ao mesmo tempo, a ID do conjunto de relatórios é enviada para o servidor de publicação, para que fique disponível para o recurso Copiar URL ao visualizar ativos. No entanto, isso requer que o servidor de publicação já esteja configurado. Se o servidor de Publicação não estiver configurado, você ainda poderá publicar para ver o relatório de vídeo. No entanto, será necessário retornar à Configuração da Dynamic Media Cloud e tocar em **OK**.
 
-**Para exibir relatórios** de vídeo:
+**Para exibir relatórios de vídeo:**
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Relatórios de vídeo]**.
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios de vídeo]**.
 1. Na página Relatórios de vídeo , execute um dos seguintes procedimentos:
 
    * Próximo ao canto superior direito, toque no ícone **[!UICONTROL Atualizar relatório de vídeo]**.
@@ -898,7 +903,7 @@ Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de 
 
 1. Na tabela que lista os vídeos publicados principais, toque no nome de um vídeo para reproduzir o vídeo e também veja o relatório de retenção de público-alvo (drop-off) do vídeo.
 
-### Exibição de relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador HTML5 do Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Exibir relatórios de vídeo com base em um visualizador de vídeo criado por meio do SDK do visualizador HTML5 do Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Se você estiver usando um visualizador de vídeo pronto para uso fornecido pelo Dynamic Media ou se tiver criado uma predefinição de visualizador personalizada com base em um visualizador de vídeo pronto para uso, nenhuma etapa adicional será necessária para exibir relatórios de vídeo. No entanto, se você criou seu próprio visualizador de vídeo com base na API do SDK do visualizador de HTML5, use as seguintes etapas para garantir que o visualizador de vídeo esteja enviando eventos de rastreamento para os Relatórios de vídeo do Dynamic Media.
 
@@ -961,7 +966,7 @@ Para exibir os Relatórios de vídeo com base em um visualizador de vídeo criad
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## Adição de legendas ao vídeo {#adding-captions-to-video}
+## Adicionar legendas ao vídeo {#adding-captions-to-video}
 
 Você pode estender o alcance de seus vídeos para os mercados globais adicionando legendas a vídeos individuais ou aos Conjuntos de vídeos adaptáveis. Ao adicionar legendas, você evita a necessidade de dublar o áudio ou a necessidade de usar alto-falantes nativos para regravar o áudio para cada idioma diferente. O vídeo é reproduzido no idioma em que foi gravado. As legendas em idioma estrangeiro são exibidas para que pessoas de idiomas diferentes ainda possam entender a parte de áudio.
 
@@ -975,7 +980,7 @@ O Dynamic Media tem a capacidade de converter arquivos de legenda para o formato
 
 Consulte [Serving static (non-image) content](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) na *Ajuda da API de disponibilização e renderização de imagens do Dynamic Media* para obter mais informações sobre o uso da função JSON em um URL.
 
-**Para adicionar legendas ou legendas ao vídeo**:
+**Para adicionar legendas ou legendas ao vídeo:**
 
 1. Use um aplicativo ou serviço de terceiros para criar sua legenda/arquivo de subtítulo de vídeo.
 
@@ -1135,7 +1140,7 @@ Se preferir, você pode optar por fazer upload de uma miniatura personalizada pa
 
    Consulte [Configurar o intervalo de tempo padrão em que as miniaturas de vídeo são geradas](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
-#### Configuração do intervalo de tempo padrão em que as miniaturas de vídeo são geradas {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### Configure o intervalo de tempo padrão em que as miniaturas de vídeo são geradas {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 Ao configurar e salvar o novo intervalo padrão, a alteração se aplica automaticamente somente aos vídeos que você fizer upload no futuro. Ele não aplica automaticamente o novo padrão aos vídeos que você carregou anteriormente. Para vídeos existentes, você deve gerar novamente as miniaturas.
 
@@ -1143,7 +1148,7 @@ Consulte [Adicionar uma miniatura de vídeo](#adding-a-video-thumbnail).
 
 Para configurar o intervalo de tempo padrão em que as miniaturas de vídeo são geradas,
 
-1. No AEM, toque em **[!UICONTROL Ferramentas > Geral > CRXDE Lite]**.
+1. No AEM, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 
 1. Na página CRXDE Lite, no painel de diretório à esquerda, navegue até `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
