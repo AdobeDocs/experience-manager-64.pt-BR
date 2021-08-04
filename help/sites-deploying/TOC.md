@@ -8,9 +8,9 @@ breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4, incluindo a implantação do Adobe Managed Services na nuvem.
 feature: Implantação
 role: Architect
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 17%
 
 ---
@@ -56,11 +56,11 @@ ht-degree: 17%
    + [Descarregamento de Tarefas](offloading.md)
    + [Logon único](single-sign-on.md)
    + [Mapeamento de recursos](resource-mapping.md)
-   + [Habilitar HTTP por SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
+   + [Habilitar HTTP por SSL](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)
    + [Verificações de consistência e passagem](consistency-check.md)
    + [Diretrizes de desempenho](performance-guidelines.md)
    + [Otimização de desempenho](configuring-performance.md)
-   + [Guia de desempenho de ativos](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
+   + [Guia de desempenho de ativos](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html)
    + [Artigos explicativos de configuração](ht-deploy.md)
    + [Remover os sites do Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuração do Console da Web](configuring-web-console.md)
