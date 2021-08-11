@@ -1,12 +1,12 @@
 ---
+title: Arquivo de informativo do Dynamic Media
 description: 'O informativo arquivado do Dynamic Media por Experience League foi um informativo mensal. Ele foi projetado para ajudar você a usar o Dynamic Media e o Dynamic Media Classic de forma a obter valor imediatamente. Os boletins informativos arquivados contêm recursos valiosos para a criação de conhecimento que estavam disponíveis neste boletim informativo de balcão único que foi descontinuado. Os boletins informativos arquivados incluem vídeos práticos e visões gerais da solução. Há também introduções para recursos e características principais, como predefinições de imagens, predefinições do visualizador e perfis de vídeo.  '
 keywords: dynamic media, boletim informativo, atualizações de produtos, dicas e truques, eventos, sucesso do cliente, blog, blogs, imagens, vídeos, recursos, recursos
 solution: Experience Manager, Dynamic Media Classic
-title: Arquivo de informativo do Dynamic Media
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: Colaboração, Dynamic Media Classic
 role: Admin,User
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 77d312235854e85b2a486365092fbe8a802faccf
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 0%
@@ -54,10 +54,6 @@ Neste boletim informativo arquivado de balcão único, você pode encontrar recu
    * Exiba as sessões do Dynamic Media do Online Adobe Summit 2020.
    * Saiba mais sobre as auditorias gratuitas do Dynamic Media Classic.
    * Conheça John Monroe, Gerente Sênior de Programa para Serviços de Sucesso do Cliente.
-
-<!--     >[!IMPORTANT]
-    >
-    >We want to make sure we are only sending the Dynamic Media newsletter to those who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[Fevereiro de 2020, Edição 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
