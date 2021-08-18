@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2187'
 ht-degree: 2%
 
 ---
@@ -147,21 +147,21 @@ O Shareable Content Object Reference Model (SCORM) é uma coleção de padrões 
 
 O mecanismo AEM Communities SCORM é necessário para o recurso [enablement](overview.md#enablement-community). Os pacotes de pontuação compatíveis com a versão do AEM Communities 6.4 são:
 
-* **[cq -social- scorm -package, versão 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Este pacote SCORM é suportado por todas as versões AEM 6.4 Communities.
+* **[cq -social- scorm -package, versão 1.2.11](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-pkg)**. Este pacote SCORM é suportado por todas as versões AEM 6.4 Communities.
 
-* **[cq -social- scorm -package, versão 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** inclui o mecanismo  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) . Este pacote SCORM é suportado AEM Comunidades 6.4.2.x em diante.
+* **[cq -social- scorm -package, versão 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)** inclui o mecanismo  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) . Este pacote SCORM é suportado AEM Comunidades 6.4.2.x em diante.
 
-Para uma nova instalação do mecanismo SCORM, o pacote contendo [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (que é [ cq -social-scorm -package, versão 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)) deve ser usado. Para que você possa reproduzir recursos de aprendizagem apoiados pelo SCORM 2017.
+Para uma nova instalação do mecanismo SCORM, o pacote contendo [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (que é [ cq -social-scorm -package, versão 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)) deve ser usado. Para que você possa reproduzir recursos de aprendizagem apoiados pelo SCORM 2017.
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
 ### Para instalar um pacote SCORM pela primeira vez
 
-1. Instale o **[cq-social-scorm-package, versão 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
+1. Instale o **[cq-social-scorm-package, versão 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).**
 1. Baixe **`/libs/social/config/scorm/database_scormengine_data.sql`** da instância do cq e execute-a no servidor mysql para criar um esquema scormEngineDB atualizado.
 1. Adicione `/content/communities/scorm/RecordResults` na propriedade Caminhos excluídos no filtro CSRF de `https://<hostname>;:<port>/system/console/configMgr` em editores.
 
-As instalações existentes do SCORM podem ser atualizadas para [**cq-social-scorm-package, versão 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (que usa [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se o conteúdo do curso criado exigir o SCORM 2017.1.
+As instalações existentes do SCORM podem ser atualizadas para [**cq-social-scorm-package, versão 2.2.2**](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) (que usa [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se o conteúdo do curso criado exigir o SCORM 2017.1.
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ As instalações existentes do SCORM podem ser atualizadas para [**cq-social-sco
 ### Para atualizar a versão do seu mecanismo SCORM
 
 1. Faça um backup do esquema ScormEngineDB.
-1. Instale o **[cq-social-scorm-package, versão 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
+1. Instale o **[cq-social-scorm-package, versão 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).**
 1. Baixe o pacote de `/libs/social/config/scorm/ScormEngine.zip` e extraia o mesmo.
 1. Vá para a pasta **Instalador** do diretório extraído.
 1. Atualize `SystemDatabaseConnectionString` com seu `scorm db connection url` no arquivo **[!UICONTROL EngineInstall.xml]**.
@@ -197,7 +197,8 @@ Para que a coleção SRP (MSRP ou DSRP) ofereça suporte a pesquisa multilíngue
 O download MLS avançado (também conhecido como &quot;phasetwo&quot;) está disponível no repositório do Adobe:
 
 * AEM-SOLR-MLS-phasetwo
-Para obter o pacote MLS avançado, consulte [AEM MLS avançado](deploy-communities.md#aem-advanced-mls) na seção de implantação da documentação.
+
+   Para obter o pacote MLS avançado, consulte [AEM MLS avançado](deploy-communities.md#aem-advanced-mls) na seção de implantação da documentação.
 
    * Versão 1.2.40, 6 de abril de 2016
    * Baixar AEM-SOLR-MLS-phasetwo-1.2.40.zip
