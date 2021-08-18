@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Visite [Personalizações do lado do servidor](server-customize.md) para obter i
 
 ## Linguagem de modelo JS do Handlebars {#handlebars-js-templating-language}
 
-Uma das alterações mais notáveis na nova estrutura é o uso da `Handlebars JS` linguagem de modelo (HBS), uma tecnologia popular de código aberto para renderização de cliente-servidor.
+Uma das alterações mais notáveis na nova estrutura é o uso da linguagem de modelo [Handlebars JS](https://handlebarsjs.com/) (HBS), uma tecnologia popular de código aberto para renderização de cliente-servidor.
 
 Os scripts HBS são simples, sem lógica, compilados no servidor e no cliente, são fáceis de sobrepor e personalizar e são naturalmente vinculados ao UX do cliente porque o HBS suporta renderização do lado do cliente.
 
