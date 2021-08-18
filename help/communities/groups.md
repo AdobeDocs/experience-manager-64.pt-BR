@@ -12,9 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1638'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ Nesse console Grupos é possível criar novos grupos.
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-A estrutura usa [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
+A estrutura usa `Twitter Bootstrap` para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de seleção azul opaca.
 
@@ -110,7 +110,7 @@ Depois que o site da comunidade é publicado, é possível [editar as propriedad
 
 #### MARCA DO GRUPO COMUNITÁRIO {#community-group-branding}
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+![chlimage_1-133](assets/chlimage_1-135.png)
 
 A marca do site da comunidade é uma imagem exibida como um cabeçalho na parte superior de cada página. É possível exibir um banner para o grupo que difere de outras páginas do site.
 
