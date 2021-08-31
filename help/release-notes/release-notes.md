@@ -1,8 +1,8 @@
 ---
 title: Notas de versão gerais do Adobe Experience Manager 6.4
-seo-title: Notas de versão
+seo-title: Release Notes
 description: 'Notas do Adobe Experience Manager 6.4 descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações. '
-seo-description: 'Notas do Adobe Experience Manager 6.4 descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações. '
+seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,11 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-translation-type: tm+mt
-source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2813'
-ht-degree: 29%
+source-wordcount: '2754'
+ht-degree: 27%
 
 ---
 
@@ -132,7 +131,7 @@ Várias melhorias no Sling Model Exporter e nos Componentes principais são incl
 
 AEM 6.4 conclui a transformação para o modelo de componente da próxima geração. O conceito dos Componentes principais introduzido no AEM 6.3 e agora associado pelo Sistema de estilos fornece uma maneira eficiente de criar sites novos e estender sites existentes.
 
-Tutorial recomendado para saber como aproveitar melhor o novo modelo de componente: [Introdução ao AEM Sites - Tutorial WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Tutorial recomendado para saber como aproveitar melhor o novo modelo de componente: [Introdução ao AEM Sites - Tutorial WKND](https://docs.adobe.com/content/help/pt-BR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### Complemento do Screens {#screens-add-on}
 
@@ -144,7 +143,7 @@ Para obter mais informações sobre as atualizações do Screens, consulte [Guia
 
 O AEM 6.4 adiciona muitos novos recursos e melhorias às Comunidades. A lista completa de alterações está disponível em [AEM Communities](communities-release-notes.md). Os destaques desta versão são:
 
-#### Aprimoramentos na moderação {#enhancements-to-moderation}
+#### Melhorias na moderação {#enhancements-to-moderation}
 
 **Detecção automática de spam**
 
@@ -176,7 +175,7 @@ A capacidade de criar grupos multilíngues em uma única operação foi fornecid
 
 O ícone Excluir agora está disponível nos respectivos sites e grupos, enquanto navega a partir da navegação global. Usar esse ícone exclui todos os itens e conteúdo associados ao site ou grupo e remove todas as associações de usuários. Para saber mais sobre essa funcionalidade, consulte [gerenciar sites da comunidade](/help/communities/create-site.md#main-pars-text-fe17) e [gerenciar grupos da comunidade](/help/communities/groups.md#main-pars-text-5e8c).
 
-#### Aprimoramentos na ativação {#enhancements-to-enablement}
+#### Melhorias na ativação {#enhancements-to-enablement}
 
 As funções Atribuição e Catálogo agora estão disponíveis nos grupos. Isso permite que o conteúdo de aprendizagem seja criado, gerenciado e publicado para um conjunto específico de membros da comunidade direcionados. Para saber mais sobre como habilitar grupos da comunidade, consulte [gerenciamento de recursos de ativação](/help/communities/resource.md).
 
@@ -313,11 +312,11 @@ Esse processo de priorização gerou a correção de mais de 500 alterações fo
 
 * Pacotes para recursos do AEM Forms:
 
-   * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-   * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-   * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-   * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-   * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 ## Idiomas {#languages}
 
@@ -356,7 +355,7 @@ A Adobe avalia constantemente as funcionalidades do produto e planeja substituí
 
 Para o Adobe Experience Manager 6.4, [leia a lista de recursos obsoletos e funcionalidades removidas](deprecated-removed-features.md). A página também contém o anúncio prévio das alterações em 2019 e um aviso importante para os clientes que atualizam de versões anteriores.
 
-## Listas de Alterações Detalhadas {#detailed-changes-lists}
+## Listas de alterações detalhadas {#detailed-changes-lists}
 
 [AEM Sites](sites.md)
 
@@ -372,7 +371,7 @@ Para o Adobe Experience Manager 6.4, [leia a lista de recursos obsoletos e funci
 
 [Lista de problemas conhecidos](known-issues.md)
 
-### Download e suporte ao produto (sites restritos)  {#product-download-and-support-restricted-sites}
+### Download e suporte ao produto (sites restritos) {#product-download-and-support-restricted-sites}
 
 Estes sites estão disponíveis somente para clientes. Se você for um cliente e precisar de acesso, entre em contato com o gerente de contas da Adobe.
 

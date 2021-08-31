@@ -1,8 +1,8 @@
 ---
 title: Renderizar Forms por valor
-seo-title: Renderizar Forms por valor
+seo-title: Rendering Forms By Value
 description: Use a API do Forms (Java) para renderizar um formulário por valor usando a API do Java e a API do serviço da Web.
-seo-description: Use a API do Forms (Java) para renderizar um formulário por valor usando a API do Java e a API do serviço da Web.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 50c34781-45e3-4255-a997-44f694527c92
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
-
 
 # Renderizar Forms por valor {#rendering-forms-by-value}
 
@@ -78,7 +77,7 @@ Para renderizar um formulário por valor, passe uma instância `com.adobe.idp.Do
 
 >[!NOTE]
 >
->Se você quiser exibir dados dentro do formulário, os dados devem ser especificados dentro do elemento `xfa:datasets` . Para obter informações sobre a arquitetura XFA, acesse [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Se você quiser exibir dados dentro do formulário, os dados devem ser especificados dentro do elemento `xfa:datasets` . Para obter informações sobre a arquitetura XFA, acesse [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **Gravar o fluxo de dados do formulário no navegador da Web cliente**
 

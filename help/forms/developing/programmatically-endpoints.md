@@ -1,8 +1,8 @@
 ---
 title: Gerenciar endpoints de forma programática
-seo-title: Gerenciar endpoints de forma programática
+seo-title: Programmatically Managing Endpoints
 description: Use o serviço Endpoint Registry para adicionar pontos de extremidade EJB, adicionar pontos de extremidade SOAP, adicionar pontos de extremidade de Pasta assistida, adicionar pontos de extremidade de email, adicionar pontos de extremidade Remoting, adicionar pontos de extremidade do Gerenciador de tarefas, modificar pontos de extremidade, remover pontos de extremidade e recuperar informações do conector do ponto de extremidade.
-seo-description: Use o serviço Endpoint Registry para adicionar pontos de extremidade EJB, adicionar pontos de extremidade SOAP, adicionar pontos de extremidade de Pasta assistida, adicionar pontos de extremidade de email, adicionar pontos de extremidade Remoting, adicionar pontos de extremidade do Gerenciador de tarefas, modificar pontos de extremidade, remover pontos de extremidade e recuperar informações do conector do ponto de extremidade.
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10850'
+source-wordcount: '10791'
 ht-degree: 1%
 
 ---
 
-
-# Gerenciando Programaticamente Endpoints {#programmatically-managing-endpoints}
+# Gerenciar endpoints de forma programática {#programmatically-managing-endpoints}
 
 **Sobre o serviço de registro do Endpoint**
 
@@ -157,7 +156,7 @@ Adicione um ponto de extremidade EJB usando a API do Java:
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionar pontos de extremidade SOAP {#adding-soap-endpoints}
+## Adicionar endpoints SOAP {#adding-soap-endpoints}
 
 Você pode adicionar um terminal SOAP a um serviço por programação usando a API do AEM Forms Java. Ao adicionar um ponto de extremidade SOAP, você permite que um aplicativo cliente chame o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, você pode selecionar o modo SOAP.
 
@@ -222,7 +221,7 @@ Depois de criar um novo terminal, você deve habilitá-lo. Quando o endpoint est
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicione um terminal SOAP usando a API Java {#add-a-soap-endpoint-using-the-java-api}
+### Adicionar um terminal SOAP usando a API Java {#add-a-soap-endpoint-using-the-java-api}
 
 Adicione um terminal SOAP a um serviço usando a API do Java:
 
@@ -262,7 +261,7 @@ Adicione um terminal SOAP a um serviço usando a API do Java:
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionar pontos de extremidade de pasta assistida {#adding-watched-folder-endpoints}
+## Adicionar pontos de extremidade de pasta monitorada {#adding-watched-folder-endpoints}
 
 Você pode adicionar programaticamente um endpoint de Pasta assistida a um serviço usando a API Java do AEM Forms. Ao adicionar um endpoint de Pasta assistida, os usuários podem colocar um arquivo (como um arquivo PDF) em uma pasta. Quando o arquivo é colocado na pasta, o serviço configurado é chamado e manipula o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada. Uma pasta assistida é configurada para ser digitalizada em um intervalo de taxa fixa ou com um cronograma de medição, como todas as segundas, quartas e sextas-feiras ao meio-dia.
 
@@ -324,7 +323,7 @@ A lista a seguir especifica os valores de configuração que são definidos ao a
 
 * **url**: Especifica o local da pasta monitorada. Em um ambiente em cluster, esse valor deve apontar para uma pasta de rede compartilhada acessível de cada computador no cluster.
 * **assíncrono**: Identifica o tipo de invocação como assíncrona ou síncrona. Processos transitórios e síncronos só podem ser invocados de forma síncrona. O valor padrão é true. Recomenda-se assíncrono.
-* **cronExpression**: Usado por quartzo para agendar a pesquisa do diretório de entrada. Para obter detalhes sobre como configurar a expressão cron, consulte [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
+* **cronExpression**: Usado por quartzo para agendar a pesquisa do diretório de entrada.
 * **purgeDuration**: Este é um atributo obrigatório. Os arquivos e pastas na pasta de resultados são removidos quando são mais antigos que esse valor. Esse valor é medido em dias. Esse atributo é útil para garantir que a pasta de resultados não fique cheia. Um valor de -1 dias indica que nunca excluir a pasta de resultados. O valor padrão é -1.
 * **repeatInterval**: O intervalo, em segundos, para verificar a entrada da Pasta assistida. A menos que a limitação esteja ativada, esse valor deve ser maior que o tempo para processar um trabalho médio; caso contrário, o sistema poderá ficar sobrecarregado. O valor padrão é 5.
 * **repeatCount**: O número de vezes que uma Pasta assistida verifica a pasta ou o diretório. Um valor de -1 indica varredura indefinida. O valor padrão é -1.
@@ -390,7 +389,7 @@ Depois de criar um endpoint de Pasta assistida, você deve ativá-lo. Quando o e
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicione um endpoint de pasta assistida usando a API Java {#add-a-watched-folder-endpoint-using-the-java-api}
+### Adicionar um endpoint de pasta assistida usando a API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
 Adicione um endpoint de Pasta assistida usando a API do Java do AEM Forms:
 
@@ -462,7 +461,7 @@ Adicione um endpoint de Pasta assistida usando a API do Java do AEM Forms:
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Arquivos constantes de valores de configuração de pasta monitorados {#watched-folder-configuration-values-constant-file}
+### Arquivo constante de valores de configuração de pasta monitorados {#watched-folder-configuration-values-constant-file}
 
 O [Início Rápido: A adição de um endpoint de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) usa um arquivo constante que deve fazer parte do seu projeto Java para compilar o início rápido. Esse arquivo constante representa valores de configuração que devem ser definidos ao adicionar um ponto de extremidade de Pasta assistida. O código Java a seguir representa o arquivo constante.
 
@@ -635,7 +634,7 @@ Depois de criar um ponto de extremidade de email, você deve habilitá-lo. Quand
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicione um endpoint de email usando a API do Java {#add-an-email-endpoint-using-the-java-api}
+### Adicionar um endpoint de email usando a API do Java {#add-an-email-endpoint-using-the-java-api}
 
 Adicione um endpoint de email usando a API do Java:
 
@@ -820,7 +819,7 @@ Depois de criar um novo terminal, você deve habilitá-lo. Quando um terminal Re
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicione um terminal Remoting usando a API Java {#add-a-remoting-endpoint-using-the-java-api}
+### Adicionar um terminal Remoting usando a API Java {#add-a-remoting-endpoint-using-the-java-api}
 
 Adicione um terminal Remoting usando a API Java:
 
@@ -860,7 +859,7 @@ Adicione um terminal Remoting usando a API Java:
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionar pontos de extremidade do TaskManager {#adding-taskmanager-endpoints}
+## Adicionar pontos de extremidade do Gerenciador de Tarefas {#adding-taskmanager-endpoints}
 
 Você pode adicionar programaticamente um terminal TaskManager a um serviço usando a API Java do AEM Forms. Ao adicionar um ponto de extremidade do TaskManager a um serviço, você permite que um usuário do Workspace chame o serviço. Ou seja, um usuário que trabalha no Workspace pode chamar um processo que tem um ponto de extremidade do TaskManager correspondente.
 
@@ -931,7 +930,7 @@ Depois de criar um novo terminal, você deve habilitá-lo. Quando o endpoint est
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicionar um ponto de extremidade do TaskManager usando a API Java {#add-a-taskmanager-endpoint-using-the-java-api}
+### Adicionar um ponto de extremidade do TaskManager usando a API do Java {#add-a-taskmanager-endpoint-using-the-java-api}
 
 Adicione um ponto de extremidade do TaskManager usando a API do Java:
 
@@ -981,7 +980,7 @@ Adicione um ponto de extremidade do TaskManager usando a API do Java:
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Modificando Endpoints {#modifying-endpoints}
+## Modificação de Endpoints {#modifying-endpoints}
 
 Você pode modificar programaticamente um terminal existente usando a API do AEM Forms Java. Ao modificar um endpoint, é possível alterar o comportamento do endpoint. Considere, por exemplo, um endpoint de Pasta assistida que especifica uma pasta que é usada como a pasta assistida. Você pode modificar programaticamente os valores de configuração que pertencem ao endpoint Pasta assistida, resultando em outra pasta funcionando como a pasta assistida. Para obter informações sobre os valores de configuração que pertencem a um endpoint de Pasta assistida, consulte [Adicionar endpoints de pasta monitorada](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
@@ -1043,7 +1042,7 @@ Ao modificar um ponto de extremidade, especifique novos valores de configuraçã
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Modificação de um terminal usando a API Java {#modifying-an-endpoint-using-the-java-api}
+### Modificação de um terminal usando a API do Java {#modifying-an-endpoint-using-the-java-api}
 
 Modifique um terminal usando a API do Java:
 
@@ -1083,7 +1082,7 @@ Modifique um terminal usando a API do Java:
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Removendo pontos de extremidade {#removing-endpoints}
+## Remoção de pontos finais {#removing-endpoints}
 
 Você pode remover programaticamente um terminal de um serviço usando a API Java do AEM Forms. Após remover um ponto de extremidade, o serviço não poderá ser chamado usando o método de invocação que o ponto de extremidade ativou. Por exemplo, se você remover um terminal SOAP de um serviço, não poderá chamar o serviço usando o modo SOAP.
 
@@ -1137,7 +1136,7 @@ Depois de criar um novo terminal, você deve habilitá-lo. Quando o endpoint est
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Remoção de um endpoint usando a API Java {#removing-an-endpoint-using-the-java-api}
+### Remoção de um terminal usando a API do Java {#removing-an-endpoint-using-the-java-api}
 
 Remova um terminal usando a API do Java:
 
@@ -1171,7 +1170,7 @@ Remova um terminal usando a API do Java:
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Recuperando informações do conector de terminal {#retrieving-endpoint-connector-information}
+## Recuperando informações do conector de ponto de extremidade {#retrieving-endpoint-connector-information}
 
 Você pode recuperar programaticamente informações sobre conectores de ponto de extremidade usando a API do AEM Forms. Um conector permite que um endpoint chame um serviço usando vários métodos de invocação. Por exemplo, um conector de Pasta assistida permite que um terminal chame um serviço usando pastas assistidas. Ao recuperar programaticamente informações sobre conectores de ponto de extremidade, é possível recuperar valores de configuração associados a um conector, como quais valores de configuração são necessários e quais são opcionais.
 
@@ -1234,7 +1233,7 @@ Depois de especificar o tipo de conector, é possível recuperar informações s
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Recupere informações do conector do ponto de extremidade usando a API Java {#retrieve-endpoint-connector-information-using-the-java-api}
+### Recuperar informações do conector do ponto de extremidade usando a API Java {#retrieve-endpoint-connector-information-using-the-java-api}
 
 Recupere informações do conector do ponto de extremidade usando a API Java:
 

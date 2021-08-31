@@ -1,8 +1,8 @@
 ---
 title: Otimizar sua AEM Forms no ambiente JEE
-seo-title: Otimizar sua AEM Forms no ambiente JEE
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: Saiba mais sobre uma variedade de configurações de proteção de segurança para melhorar a segurança do AEM Forms no JEE em execução em uma intranet corporativa.
-seo-description: Saiba mais sobre uma variedade de configurações de proteção de segurança para melhorar a segurança do AEM Forms no JEE em execução em uma intranet corporativa.
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 1%
 
 ---
@@ -632,7 +632,7 @@ Determinados URLs são destacados como aplicativos da Web voltados para o usuár
 
 Um ataque CSRF (Cross-Site Request Forgery) explora a confiança que um site tem para o usuário, para transmitir comandos que são não autorizados e não intencionais pelo usuário. O ataque é configurado ao incluir um link ou script em uma página da Web ou um URL em uma mensagem de email para acessar outro site no qual o usuário já foi autenticado.
 
-Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente em outro site. Uma das páginas da Web pode incluir uma tag de imagem HTML com um atributo `src` que direciona um script do lado do servidor no site da vítima. Ao utilizar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site de ataque pode enviar solicitações mal-intencionadas para esse script do lado do servidor da vítima, mascarando-o como o usuário legítimo. Para obter mais exemplos, consulte [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples).
+Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente em outro site. Uma das páginas da Web pode incluir uma tag de imagem HTML com um atributo `src` que direciona um script do lado do servidor no site da vítima. Ao utilizar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site de ataque pode enviar solicitações mal-intencionadas para esse script do lado do servidor da vítima, mascarando-o como o usuário legítimo.
 
 As seguintes características são comuns ao CSRF:
 
@@ -697,7 +697,7 @@ O AEM Forms no JEE fornece APIs para gerenciar a lista Exceção de referenciado
 
 Consulte o* AEM Forms on JEE API Reference* para obter mais informações sobre as APIs.
 
-Use a lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para Exceções de Referenciador Permitidas no nível global, ou seja, para definir exceções aplicáveis a todos os aplicativos. Esta lista contém somente URIs com um caminho absoluto (por exemplo, `/index.html`) ou um caminho relativo (por exemplo, `/sample/`). Também é possível anexar uma expressão regular ao final de um URI relativo, por exemplo `/sample/(.)*`.
+Use a lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para Exceções de Referenciador Permitidas no nível global, ou seja, para definir exceções aplicáveis a todos os aplicativos. Esta lista contém apenas URIs com um caminho absoluto (Por exemplo, `/index.html`) ou um caminho relativo (Por exemplo, `/sample/`). Você também pode anexar uma expressão regular ao final de um URI relativo, por exemplo, `/sample/(.)*`.
 
 A ID da lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** é definida como uma constante na classe `UMConstants` do namespace `com.adobe.idp.um.api`, encontrada em `adobe-usermanager-client.jar`. Você pode usar as APIs do AEM Forms para criar, modificar ou editar essa lista. Por exemplo, para criar a lista Exceções de referenciador global permitidas use:
 

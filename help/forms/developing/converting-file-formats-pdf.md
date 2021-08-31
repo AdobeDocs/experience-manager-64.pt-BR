@@ -1,8 +1,8 @@
 ---
 title: Conversão entre formatos de arquivo e PDF
-seo-title: Conversão entre formatos de arquivo e PDF
+seo-title: Converting Between File Formatsand PDF
 description: Use o serviço Gerar PDF para converter formatos de arquivo nativos em PDF. Gerar serviço PDF também converte PDF em outros formatos de arquivo e otimiza o tamanho dos documentos PDF.
-seo-description: Use o serviço Gerar PDF para converter formatos de arquivo nativos em PDF. Gerar serviço PDF também converte PDF em outros formatos de arquivo e otimiza o tamanho dos documentos PDF.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 79091a75-2669-453f-9560-e58bfffa3487
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7933'
+source-wordcount: '7872'
 ht-degree: 0%
 
 ---
-
 
 # Conversão entre formatos de arquivo e PDF {#converting-between-file-formatsand-pdf}
 
@@ -258,7 +257,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
 [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Convertendo documentos HTML em documentos PDF {#converting-html-documents-to-pdf-documents}
+## Conversão de documentos HTML em documentos PDF {#converting-html-documents-to-pdf-documents}
 
 Esta seção descreve como você pode usar a API Gerar PDF para converter documentos HTML de forma programática em documentos PDF.
 
@@ -408,7 +407,7 @@ Converta conteúdo HTML em um documento PDF usando a API Gerar PDF (serviço da 
 
 [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Converter documentos PDF em formatos não-imagens {#converting-pdf-documents-to-non-image-formats}
+## Conversão de documentos PDF em formatos não relacionados à imagem {#converting-pdf-documents-to-non-image-formats}
 
 Esta seção descreve como você pode usar a API Generate PDF Java e a API do serviço da Web para converter programaticamente um documento PDF em um arquivo RTF, que é um exemplo de formato não-imagem. Outros formatos que não sejam imagens incluem HTML, texto, DOC e EPS. Ao converter um documento PDF em RTF, verifique se o documento PDF não contém elementos de formulário, como um botão Enviar. Os elementos de formulário não são convertidos.
 
@@ -458,7 +457,7 @@ Salve o arquivo convertido. Por exemplo, se você converter um documento PDF em 
 
 [Gerar início rápido da API do serviço de PDF](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Converter um documento PDF em um arquivo RTF usando a API Java {#convert-a-pdf-document-to-a-rtf-file-using-the-java-api}
+### Converter um documento PDF em um arquivo RTF usando a API do Java {#convert-a-pdf-document-to-a-rtf-file-using-the-java-api}
 
 Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (Java):
 
@@ -645,7 +644,7 @@ Arquivos XML de script direcionam o serviço Gerar PDF para navegar pelas caixas
 
 Por outro lado, os arquivos XML de diálogo respondem simplesmente às caixas de diálogo com os mesmos tipos de ações usadas em arquivos XML de script.
 
-#### Terminologia da caixa de diálogo e do elemento da janela {#dialog-box-and-window-element-terminology}
+#### Caixa de diálogo e terminologia do elemento da janela {#dialog-box-and-window-element-terminology}
 
 Esta seção e a próxima seção usam terminologia diferente para caixas de diálogo e os componentes que contêm, dependendo da perspectiva que está sendo descrita. Os componentes da caixa de diálogo são itens como botões, campos e caixas de combinação.
 
@@ -677,7 +676,7 @@ Além das etapas que estão sendo sequenciais, as instruções em uma etapa tamb
 
 Cada etapa em um arquivo XML de script identifica o elemento da janela que deve aparecer se as instruções da etapa forem executadas com êxito. Se uma caixa de diálogo inesperada for exibida durante a execução de uma etapa de script, o serviço Gerar PDF pesquisará os arquivos XML da caixa de diálogo, conforme descrito na próxima seção.
 
-#### Arquivos XML de diálogo {#dialog-xml-files}
+#### Arquivos XML da caixa de diálogo {#dialog-xml-files}
 
 A execução de aplicativos nativos exibe caixas de diálogo diferentes, que são exibidas independentemente de os aplicativos nativos estarem em um modo visível ou invisível. As caixas de diálogo podem ser geradas pelo sistema operacional ou pelo próprio aplicativo. Quando os aplicativos nativos estão sendo executados sob controle do serviço Gerar PDF, as caixas de diálogo do sistema e do aplicativo nativo são exibidas em uma janela invisível.
 
@@ -766,13 +765,13 @@ Usando o aplicativo nativo, determine os elementos da janela que você deve nave
 1. Especifique as propriedades necessárias para a impressora.
 1. Selecione Imprimir e aguarde até que a caixa de diálogo Salvar como seja exibida. A caixa de diálogo Salvar como é necessária para o serviço Gerar PDF especificar o destino do arquivo PDF.
 
-#### Identificação das caixas de diálogo especificadas nos atributos de legenda {#identifying-the-dialogs-specified-in-caption-attributes}
+#### Identificação das caixas de diálogo especificadas em atributos de legenda {#identifying-the-dialogs-specified-in-caption-attributes}
 
 Use o Microsoft Spy++ para obter as identidades das propriedades do elemento de janela no aplicativo nativo. É necessário ter essas identidades para gravar scripts.
 
 #### Uso de expressões regulares em atributos de legenda {#using-regular-expressions-in-caption-attributes}
 
-É possível usar expressões regulares nas especificações de legenda. O serviço Gerar PDF usa a classe `java.util.regex.Matcher` para suportar expressões regulares. Esse utilitário suporta as expressões regulares descritas em `java.util.regex.Pattern`. (Vá para o site do Java em [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
+É possível usar expressões regulares nas especificações de legenda. O serviço Gerar PDF usa a classe `java.util.regex.Matcher` para suportar expressões regulares. Esse utilitário suporta as expressões regulares descritas em `java.util.regex.Pattern`.
 
 **Expressão regular que acomoda o nome de arquivo anexado ao Banner Bloco de notas**
 
@@ -794,7 +793,7 @@ Use o Microsoft Spy++ para obter as identidades das propriedades do elemento de 
  </windowList>
 ```
 
-#### Ordenando elementos window e windowList {#ordering-the-window-and-windowlist-elements}
+#### Solicitação dos elementos window e windowList {#ordering-the-window-and-windowlist-elements}
 
 Você deve ordenar os elementos `window` e `windowList` da seguinte maneira:
 
@@ -866,11 +865,11 @@ O nome do arquivo XML da caixa de diálogo adicional deve usar o formato appmon.
 
 Você deve ordenar os elementos `windowList` que aparecem como filhos em um elemento `window`. (Consulte [Ordering the window and windowList elements](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
-### Modificando o arquivo XML da caixa de diálogo geral {#modifying-the-general-dialog-xml-file}
+### Modificação do arquivo XML da caixa de diálogo geral {#modifying-the-general-dialog-xml-file}
 
 Você pode modificar o arquivo XML da caixa de diálogo geral para responder às caixas de diálogo geradas pelo sistema ou para responder às caixas de diálogo comuns a vários aplicativos.
 
-#### Adicionando uma entrada do tipo de arquivo no arquivo de configuração XML {#adding-a-filetype-entry-in-the-xml-configuration-file}
+#### Adição de uma entrada do tipo de arquivo no arquivo de configuração XML {#adding-a-filetype-entry-in-the-xml-configuration-file}
 
 Este procedimento explica como atualizar o arquivo de configuração Gerar serviço PDF para associar tipos de arquivo a aplicativos nativos. Para atualizar esse arquivo de configuração, você deve usar o console de administração para exportar os dados de configuração para um arquivo. O nome de arquivo padrão para os dados de configuração é native2pdfconfig.xml.
 
@@ -909,7 +908,7 @@ Neste exemplo, os dados de configuração padrão fornecidos com o serviço Gera
      </filetype-settings>
 ```
 
-#### Criando uma variável de ambiente para localizar o aplicativo nativo {#creating-an-environment-variable-to-locate-the-native-application}
+#### Criação de uma variável de ambiente para localizar o aplicativo nativo {#creating-an-environment-variable-to-locate-the-native-application}
 
 Crie uma variável de ambiente que especifique a localização do executável do aplicativo nativo. A variável deve usar o formato *[application name]*_PATH, onde *application name* deve corresponder exatamente ao nome do aplicativo usado no arquivo de configuração XML e no script, e onde o caminho contém o caminho para o executável entre aspas duplas. Um exemplo dessa variável de ambiente é `Photoshop_PATH`.
 
@@ -1144,4 +1143,3 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
     <abortMessage msg="15078"/> 
 </application>
 ```
-

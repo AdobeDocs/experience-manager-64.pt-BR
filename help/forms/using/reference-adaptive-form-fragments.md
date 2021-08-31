@@ -1,26 +1,25 @@
 ---
-title: Referência a fragmentos de formulário adaptável
-seo-title: Referência a fragmentos de formulário adaptável
-description: 'A AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
-seo-description: 'A AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
+title: Referência de fragmentos de formulário adaptáveis
+seo-title: Reference adaptive form fragments
+description: 'O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
+seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
-translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '414'
 ht-degree: 1%
 
 ---
 
+# Referência de fragmentos de formulário adaptáveis {#reference-adaptive-form-fragments}
 
-# Referência a fragmentos de formulário adaptável {#reference-adaptive-form-fragments}
+[Os ](/help/forms/using/adaptive-form-fragments.md) fragmentos de formulário adaptável são um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e pode editá-lo no editor de formulário.
 
-[O formulário adaptável ](/help/forms/using/adaptive-form-fragments.md) fragmenta um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de forma fácil e rápida. É possível arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
-
-Para autores de formulários adaptáveis, fragmentos de referência são fornecidos no pacote AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Inclui os seguintes fragmentos:
+Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [Pacote do complemento AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
@@ -31,9 +30,9 @@ Para autores de formulários adaptáveis, fragmentos de referência são forneci
 * Receitas e despesas
 * Nome
 * Termos e condições
-* Termos e condições com script
+* Termos e condições com rabisco
 
-Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e Documentos. Para instalar um pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
+Ao instalar o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada no Forms &amp; Documents. Para instalar um pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
 ![Todos os fragmentos listados](assets/ootb-frags.png)
 
@@ -56,16 +55,16 @@ Inclui campos para capturar o número de telefone e o endereço de email.
 Inclui campos para capturar informações de cartão de crédito que podem ser usadas para processar pagamentos.
 [ ![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
-## Emprego atual {#current-employment}
+## Emprego Atual {#current-employment}
 
-Inclui campos para capturar detalhes atuais de emprego, como status de emprego, campo de emprego, designação, organização e data de adesão.
-![Fragmento Emprego atual](assets/current-emp.png)
+Inclui campos para capturar detalhes atuais do emprego, como status do emprego, campo de emprego, designação, organização e data de associação.
+![Fragmento de emprego atual](assets/current-emp.png)
 
 [Clique para ampliar](assets/current-emp-1.png)
 
 ## Informações de Dependentes {#dependents-information}
 
-Inclui campos para especificar informações sobre um ou mais dependentes, como nome, relacionamento e idade em um formato tabular.
+Inclui campos para especificar informações sobre um ou mais dependentes, como seu nome, relacionamento e idade em um formato tabular.
 ![Fragmento de informações de dependentes](assets/dependents-info.png)
 
 [Clique para ampliar](assets/dependents-info-1.png)
@@ -79,8 +78,8 @@ Inclui campos para capturar o histórico de emprego. Permite adicionar várias o
 
 ## Receitas e despesas {#income-expenditure}
 
-Inclui campos para capturar fluxos de caixa e despesas mensais. A Forms que exige que os usuários forneçam detalhes financeiros pode usar esse fragmento para capturar receita e dispêndio.
-![Fragmento Receitas e Despesas](assets/income.png)
+Inclui campos para capturar o fluxo de caixa e as despesas mensais. A Forms que requer que os usuários forneçam detalhes financeiros pode usar esse fragmento para capturar receita e dispêndio.
+![Frasco de receitas e despesas](assets/income.png)
 
 [Clique para ampliar](assets/income-1.png)
 
@@ -98,9 +97,9 @@ Especifica os termos e condições que os usuários devem aceitar antes de envia
 
 [Clique para ampliar](assets/tnc-1.png)
 
-## Termos e condições com script {#terms-conditions-with-scribble}
+## Termos e condições com rabisco {#terms-conditions-with-scribble}
 
 Especifica os termos e condições que os usuários devem aceitar e assinar antes de enviar um formulário.
-![Termos e condições com script](assets/tnc-scribble.png)
+![Termos e condições com rabisco](assets/tnc-scribble.png)
 
 [Clique para ampliar](assets/tnc-scribble-1.png)

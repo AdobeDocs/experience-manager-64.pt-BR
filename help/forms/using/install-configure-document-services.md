@@ -1,16 +1,16 @@
 ---
 title: Instalar e configurar serviços de documento
-seo-title: Instalar e configurar serviços de documento
+seo-title: Installing and configuring document services
 description: Instale os serviços de documento da AEM Forms para criar, montar, distribuir, arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos e decodificar formulários com códigos de barras.
-seo-description: Instale os serviços de documento da AEM Forms para criar, montar, distribuir, arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos e decodificar formulários com códigos de barras.
+seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4251'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,6 @@ Antes de começar a instalar e configurar os serviços de documento da AEM Forms
 >* Em sistemas operacionais baseados em UNIX, o PDF Generator oferece suporte a rotas de conversão WebKit e PhantomJS para converter arquivos HTML em documentos PDF.
 
 >
-
 
 
 ### Requisitos adicionais para o sistema operacional baseado em UNIX {#extrarequirements}
@@ -208,7 +207,6 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >
 
 
-
 Depois de instalar o Acrobat, abra o Microsoft Word. Na guia **Acrobat**, clique em **Criar PDF** e converta um arquivo .doc ou .docx disponível em sua máquina em um Documento PDF. Se a conversão for bem-sucedida, o AEM Forms estará pronto para usar o Acrobat com o serviço Gerador de PDF.
 
 ### Configurar variáveis de ambiente {#setup-environment-variables}
@@ -260,8 +258,7 @@ Defina variáveis de ambiente para o Java Development Kit de 32 e 64 bits, aplic
 >* Se você estiver usando o OpenOffice em uma plataforma baseada em UNIX, execute o seguinte comando para definir a variável de caminho:
 
 >
->  
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (Somente para IBM WebSphere) Configurar provedor de soquete IBM SSL {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -387,7 +384,6 @@ Copie a fonte Unicode em qualquer um dos seguintes diretórios, conforme apropri
 >
 
 
-
 ## Instalar o pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
 
 O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote contém os Serviços de documento da AEM Forms e outros recursos da AEM Forms. Execute as seguintes etapas para instalar o pacote:
@@ -440,7 +436,7 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
 
 ### Configurar uma conta de usuário local para executar o serviço Gerador de PDF  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-Uma conta de usuário local é necessária para executar o serviço Gerador de PDF. Para obter etapas para criar um usuário local, consulte [Criar uma conta de usuário no Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) ou [criar uma conta de usuário em plataformas baseadas em UNIX](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
+Uma conta de usuário local é necessária para executar o serviço Gerador de PDF. Para obter etapas para criar um usuário local, consulte [Criar uma conta de usuário no Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) ou criar uma conta de usuário em plataformas baseadas em UNIX.
 
 1. Abra a página [Configuração do gerador de PDF do AEM Forms](http://localhost:4502/libs/fd/pdfg/config/ui.html) .
 

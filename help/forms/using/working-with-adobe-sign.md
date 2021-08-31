@@ -1,8 +1,8 @@
 ---
 title: Uso do Adobe Sign em um formulário adaptável
-seo-title: Uso do Adobe Sign em um formulário adaptável
+seo-title: Using Adobe Sign in an adaptive form
 description: 'Habilite fluxos de trabalho de assinatura eletrônica (Adobe Sign) para um formulário adaptável para automatizar fluxos de trabalho de assinatura, simplificar processos de assinatura única e múltipla e assinar eletronicamente formulários de dispositivos móveis. '
-seo-description: Habilite fluxos de trabalho de assinatura eletrônica (Adobe Sign) para um formulário adaptável para automatizar fluxos de trabalho de assinatura, simplificar processos de assinatura única e múltipla e assinar eletronicamente formulários de dispositivos móveis.
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,13 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Adobe Sign
-translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3562'
 ht-degree: 0%
 
 ---
-
 
 # Uso do Adobe Sign em um formulário adaptável {#using-adobe-sign-in-an-adaptive-form}
 
@@ -70,7 +69,7 @@ Configure as propriedades de formulário adaptável para o Adobe Sign para um fo
 
 [Crie um formulário adaptável para Adobe ](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) Signal descreve as etapas para criar um formulário adaptável básico. Consulte [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md) para obter outras opções disponíveis ao criar um formulário adaptável.
 
-#### Criar um formulário adaptável para Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
+#### Criar um formulário adaptável para o Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
 Execute as seguintes etapas para criar um formulário adaptável para o Adobe Sign:
 
@@ -138,14 +137,14 @@ Execute as etapas a seguir para adicionar campos a um formulário adaptável e p
 
    É obrigatório fornecer um nome exclusivo para um campo. Também é possível selecionar a opção obrigatória para marcar um campo como obrigatório. Além da opção **Name** e **Required**, alguns campos do Adobe Sign têm mais opções. Por exemplo, máscara e várias linhas. Além disso, especifique um nome exclusivo para cada campo do Adobe Sign se os campos residem no mesmo ou em blocos Adobe Sign diferentes.
 
-### Habilitar o Adobe Sign para um formulário adaptável {#enableadobsignforanadaptiveform}
+### Ativar o Adobe Sign para um formulário adaptável {#enableadobsignforanadaptiveform}
 
 Pronto para uso, o Adobe Sign não está habilitado para um formulário adaptável. Execute as seguintes etapas para habilitá-lo:
 
 1. No navegador Conteúdo, toque em **Contêiner de formulário** e toque no ícone **Configurar** ![configurar](assets/configure.png). Ele abre o navegador de propriedades e exibe as propriedades do contêiner do Formulário adaptável.
 1. No navegador de propriedades, expanda a opção **Assinatura eletrônica** e selecione a opção **Ativar Adobe Sign**. Ela habilita o Adobe Sign para um formulário adaptável.
 
-### Selecione Adobe Sign Cloud Service e ordem de assinatura {#selectadobesigncloudserviceforanadaptiveform}
+### Selecionar o Cloud Service Adobe Sign e a ordem de assinatura {#selectadobesigncloudserviceforanadaptiveform}
 
 Você pode configurar vários serviços da Adobe Sign para uma instância do AEM Forms. É aconselhável ter um conjunto separado de serviços para cada função (Recursos Humanos, Finanças e muito mais). Isso facilita o rastreamento e o relatório de documentos assinados. Por exemplo, um banco tem vários departamentos. Você pode ter uma configuração separada para cada departamento para melhorar o rastreamento dos documentos.
 
@@ -189,7 +188,7 @@ Você pode ter apenas um ou vários signatários para um formulário adaptável.
 
    >[!NOTE]
    >
-   >* Por padrão, a autenticação baseada em identidade social fornece uma opção para autenticação usando o Facebook, o Google e o LinkedIn. Você pode entrar em contato com o suporte da Adobe Sign para ativar outros provedores de autenticação social.
+   >* Por padrão, a autenticação baseada em identidade social fornece uma opção para autenticação usando Facebook, Google e LinkedIn. Você pode entrar em contato com o suporte da Adobe Sign para ativar outros provedores de autenticação social.
 
 
    * **Campos Adobe Sign para preencher ou assinar:** selecione campos Adobe Sign para o assinante. Um formulário adaptável pode ter vários campos Adobe Sign. Você pode optar por ativar campos específicos para um assinante. O campo exibe todos os Blocos do Adobe Sign disponíveis. Ao selecionar um bloco, todos os campos do bloco são selecionados. Você pode usar o ícone X para desmarcar um campo.
@@ -212,7 +211,7 @@ Além disso, um formulário adaptável habilitado para Adobe Sign é enviado som
 
 Sua experiência de assinatura de formulário está pronta. É possível visualizar o formulário para verificar a experiência de assinatura. No formulário publicado, os campos Adobe Sign Block são exibidos quando um assinante recebe o formulário para assinatura por meio de um email. Essa experiência também é conhecida como experiência de assinatura fora de formulário. Você também pode configurar uma experiência de assinatura no formulário para o primeiro assinante, para etapas detalhadas, consulte [Criar experiência de assinatura no formulário](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
-## Configurar assinaturas da nuvem para um formulário adaptável {#configure-cloud-signatures-for-an-adaptive-form}
+## Configurar assinaturas em nuvem para um formulário adaptável {#configure-cloud-signatures-for-an-adaptive-form}
 
 Assinaturas digitais baseadas em nuvem ou assinaturas remotas são uma nova geração de assinaturas digitais que funcionam em computadores, dispositivos móveis e na Web — e atendem aos mais altos níveis de conformidade e garantia para autenticação de assinante. Você pode assinar um formulário adaptável com assinaturas digitais baseadas em nuvem.
 
@@ -258,7 +257,7 @@ Um usuário também pode assinar um formulário adaptável durante o preenchimen
 
 ![experiência de assinatura no formulário](assets/in-form-signing-experience.png)
 
-### Adicione e configure o componente Etapa de assinatura {#add-and-configure-the-signature-step-component}
+### Adicionar e configurar o componente Etapa de assinatura {#add-and-configure-the-signature-step-component}
 
 Use o componente Etapa de assinatura para fornecer uma área para assinar eletronicamente o formulário preenchido. Quando a seção que contém o componente Etapa de assinatura é renderizada, ela exibe uma versão PDF assinável do formulário preenchido. O componente Etapa de assinatura ocupa a largura total disponível para o formulário. É recomendável não ter nenhum outro componente na seção que contenha o componente Etapa de assinatura.
 
@@ -302,7 +301,7 @@ Agora, a experiência de assinatura no formulário está pronta. É possível vi
 
 **P: Posso usar tags de texto Adobe Sign em um componente de texto estático de um formulário adaptável?**
 
-**Ans:** Sim, você pode usar tags de texto em um componente de texto para adicionar campos do Adobe Sign a um formulário adaptável habilitado para  [Documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (Somente no documento gerado automaticamente da opção de registro). Para saber mais sobre o procedimento e as regras para criar uma tag de texto, consulte [Documentação do Adobe Sign](https://helpx.adobe.com/sign/help/text-tags.html). Além disso, observe que os formulários adaptáveis têm suporte limitado para tags de texto. Você pode usar as tags de texto para criar apenas os campos compatíveis com o Adobe Sign Block.
+**Ans:** Sim, você pode usar tags de texto em um componente de texto para adicionar campos do Adobe Sign a um formulário adaptável habilitado para  [Documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (Somente no documento gerado automaticamente da opção de registro). Para saber mais sobre o procedimento e as regras para criar uma tag de texto, consulte [Documentação do Adobe Sign](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html). Além disso, observe que os formulários adaptáveis têm suporte limitado para tags de texto. Você pode usar as tags de texto para criar apenas os campos compatíveis com o Adobe Sign Block.
 
 **P: O AEM Forms fornece componentes de etapa de bloqueio e assinatura do Adobe Sign. Eles podem ser usados simultaneamente em um formulário adaptável?**
 
@@ -311,4 +310,3 @@ Agora, a experiência de assinatura no formulário está pronta. É possível vi
 **Bloco Adobe Sign:** você pode usar o Bloco Adobe Sign para adicionar campos Adobe Sign em qualquer lugar do formulário adaptável. Também ajuda a atribuir campos específicos aos signatários. Por padrão, quando um formulário adaptável é visualizado ou publicado, o Bloco do Adobe Sign não fica visível. Esses blocos são ativados somente no documento de assinatura. No documento de assinatura, somente os campos atribuídos a um assinante são ativados. O bloco Adobe Sign pode ser usado com assinantes originais e subsequentes.
 
 **Componente etapa de assinatura:** você pode usar o componente etapa de assinatura para criar uma experiência de assinatura no formulário. Ele permite que somente o primeiro assinante assine enquanto o formulário está sendo preenchido. Quando a seção que contém o componente Etapa de assinatura é renderizada, ela exibe uma versão PDF assinável do formulário. Geralmente, é a última ou penúltima seção seguida pelo componente de resumo de um formulário.
-

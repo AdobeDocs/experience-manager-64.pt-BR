@@ -1,21 +1,20 @@
 ---
 title: Práticas recomendadas para trabalhar com formulários adaptáveis
-seo-title: Práticas recomendadas para trabalhar com formulários adaptáveis
+seo-title: Best practices for working with adaptive forms
 description: Explica as práticas recomendadas para configurar um projeto do AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema AEM Forms.
-seo-description: Explica as práticas recomendadas para configurar um projeto do AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema AEM Forms.
+seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4148'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas para trabalhar com formulários adaptáveis {#best-practices-for-working-with-adaptive-forms}
 
@@ -260,7 +259,7 @@ Você pode configurar uma instância adicional do servidor AEM Forms que fica at
 * **Processamento** em lote: trabalhos que são recorrentes ou programados em lotes com carga pesada. Por exemplo, impressão de declarações, geração de correspondências e uso de serviços de documento como Gerador de PDF, Saída e Assembler.
 * **Armazenamento de dados** de PII: Salve os dados de PII no servidor de processamento. Não é necessário se você já estiver usando um provedor de armazenamento personalizado para armazenar dados PII.
 
-### Mover o projeto para outro ambiente {#moving-project-to-another-environment}
+### Transferência do projeto para outro ambiente {#moving-project-to-another-environment}
 
 Geralmente, é necessário mover seus projetos de AEM de um ambiente para outro. Algumas das coisas-chave a lembrar ao mover-se são as seguintes:
 
@@ -270,11 +269,11 @@ Geralmente, é necessário mover seus projetos de AEM de um ambiente para outro.
 * (*AEM Forms somente no JEE*) Implante LCAs e DSCs manualmente no servidor Forms Workflow.
 * Use a funcionalidade [Exportar-Importar](/help/forms/using/import-export-forms-templates.md) para mover ativos para o novo ambiente. Você também pode configurar o agente de replicação e publicar os ativos.
 
-### Configurar AEM {#configuring-aem}
+### Configuração de AEM {#configuring-aem}
 
 Algumas práticas recomendadas para configurar o AEM para melhorar o desempenho geral são as seguintes:
 
-* Ative a compactação da biblioteca do cliente HTML para JavaScript e CSS do Felix Console. Consulte [Clientlibs explicado por exemplo](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
+* Ative a compactação da biblioteca do cliente HTML para JavaScript e CSS do Felix Console.
 * Armazene em cache todas as bibliotecas de clientes em `/etc.clientlibs/fd` e quaisquer bibliotecas de clientes personalizadas adicionais no AEM dispatcher para aumentar a capacidade de resposta e a segurança dos formulários publicados. Para obter mais informações, consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Não armazene em cache os caminhos `/content/forms/af/` e `/content/dam/formsanddocuments/*`. para obter informações detalhadas sobre como configurar o armazenamento de formulários adaptáveis em cache, consulte [Armazenamento de formulários adaptáveis](/help/forms/using/configure-adaptive-forms-cache.md).
@@ -301,10 +300,9 @@ Em um ambiente de produção, é recomendável não armazenar os dados de formul
 
    Você também pode gravar uma ação de envio personalizada que armazena dados e anexos de formulário em armazenamento seguro. Consulte [Escrevendo ação de envio personalizado para formulários adaptáveis](/help/forms/using/custom-submit-action-form.md) para obter mais informações.
 
-### Manipular informações de identificação pessoal {#handling-personally-identifiable-information}
+### Tratamento de informações pessoais identificáveis {#handling-personally-identifiable-information}
 
 Um dos principais desafios para as organizações é como lidar com dados de identificação pessoal (PII). Algumas práticas recomendadas que ajudarão você a lidar com esses dados são as seguintes:
 
 * Use um armazenamento externo seguro, como banco de dados, para armazenar dados de rascunhos e formulários enviados. Consulte [Configuração do armazenamento externo para rascunhos e dados de formulários enviados](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Use o componente de formulário Termos e condições para obter consentimento explícito do usuário antes de ativar o salvamento automático. Nesse caso, ative o salvamento automático somente quando o usuário concordar com as condições no componente Termos e condições .
-

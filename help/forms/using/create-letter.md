@@ -1,21 +1,20 @@
 ---
 title: Criar carta
-seo-title: Criar carta
+seo-title: Create Letter
 description: 'Este tópico fornece as etapas para criar uma carta, adicionar módulos de dados e anexos a ela e visualizá-la no Gerenciamento de correspondência. '
-seo-description: 'Este tópico fornece as etapas para criar uma carta, adicionar módulos de dados e anexos a ela e visualizá-la no Gerenciamento de correspondência. '
+seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8fa14b30-013c-4a23-bebf-2262e8212461
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3989'
 ht-degree: 2%
 
 ---
-
 
 # Criar carta {#create-letter}
 
@@ -28,7 +27,7 @@ O fluxo de trabalho do Gerenciamento de correspondência consiste em quatro fase
 1. Criação de cartas
 1. Pós-processamento
 
-### Criação do modelo {#template-creation}
+### Criação do template {#template-creation}
 
 O gráfico a seguir mostra um fluxo de trabalho típico para criar um template de correspondência.
 
@@ -72,17 +71,17 @@ As condições permitem definir qual conteúdo é incluído no momento da criaç
 
 Um fragmento de layout é um layout que pode ser usado em uma ou mais letras. Um fragmento de layout é usado para criar padrões repetíveis, especialmente tabelas dinâmicas. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Também contém subformulários vazios que indicam áreas de destino. Os layouts (XDPs) são criados no Designer e, em seguida, são [carregados no Forms e em Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
-### Criação da carta {#letter-creation}
+### Criação de cartas {#letter-creation}
 
 Há duas maneiras de gerar a correspondência enviada aos clientes: orientada pelo usuário e pelo sistema.
 
-#### {#user-driven} orientado pelo usuário
+#### Orientado pelo usuário {#user-driven}
 
 Os funcionários voltados para o cliente, como os ajustadores de solicitações ou os funcionários de caso, podem criar correspondência personalizada. Usando uma interface de preenchimento de cartas simples e intuitiva, os usuários empresariais podem adicionar texto opcional à correspondência, personalizar conteúdo editável ao visualizar a correspondência em tempo real. Em seguida, eles podem enviar a correspondência personalizada para um processo de back-end.
 
 ![Correspondência personalizada e orientada pelo usuário](assets/02.png)
 
-#### {#system-driven} orientado pelo sistema
+#### Orientado pelo sistema {#system-driven}
 
 A geração da correspondência é automatizada, impulsionada por acionadores de eventos. Por exemplo, um aviso de lembrete enviado a um cidadão solicitando o depósito prévio de imposto é gerado pela fusão do modelo predefinido com dados do cidadão. A carta final pode ser enviada por email, impressa, enviada por fax ou arquivada.
 
@@ -104,7 +103,7 @@ O gráfico a seguir fornece uma visão geral de uma arquitetura de exemplo da So
 
 ![Arquitetura da solução alfabética](assets/us_cm_architecture_es3.png)
 
-## Desconstruindo uma letra {#deconstructing-a-letter}
+## Desconstrução de uma carta {#deconstructing-a-letter}
 
 Este documento de Aviso de Cancelamento é um exemplo de uma correspondência típica:
 
@@ -165,7 +164,7 @@ Analise cada carta para descobrir as várias partes que compõem a carta. O Appl
 * Os cenários também fornecem:os conjuntos de habilidades e as ferramentas necessárias para o seu projeto.
 * Práticas recomendadas para planejar sua implementação. &quot;Visão geral da implementação de alto nível.
 
-## Benefícios da execução da análise {#benefits-of-performing-the-analysis}
+## Benefícios da realização da análise {#benefits-of-performing-the-analysis}
 
 **** Reutilização de conteúdoVocê tem uma lista consolidada de novo conteúdo necessário para gerar correspondência. Grande parte do conteúdo, como cabeçalhos, rodapés, isenções de responsabilidade e introduções, é comum a muitas letras e pode ser reutilizada em várias letras. Todo esse conteúdo comum pode ser criado e aprovado por especialistas uma vez e depois reutilizado em muitas peças de correspondência.
 
@@ -175,7 +174,7 @@ Analise cada carta para descobrir as várias partes que compõem a carta. O Appl
 
 **Estimativa da complexidade das** cartasÉ importante determinar a complexidade de criar uma determinada correspondência. Essa análise ajuda a determinar a quantidade de tempo e conjuntos de habilidades que serão necessários para criar os modelos de carta. Isso, por sua vez, ajudará na estimativa de recursos e custos da implementação da solução Cartas.
 
-## Complexidade de correspondência {#correspondence-complexity}
+## Complexidade da correspondência {#correspondence-complexity}
 
 A complexidade da correspondência pode ser determinada pela análise dos seguintes parâmetros:
 
@@ -232,7 +231,7 @@ Primeiro, você precisa do seguinte em vigor para criar uma correspondência:
 * [Pacote de Compatibilidade](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Instale o Pacote de Compatibilidade para visualizar a opção **Cartas** na página **Forms**.
 
 * A letra XDP ([layout](/help/forms/using/document-fragments.md)).
-* Outros XDPs ([fragmentos de layout](/help/forms/using/document-fragments.md)) que formam partes da letra. Os XDPs\Layouts são criados no [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* Outros XDPs ([fragmentos de layout](/help/forms/using/document-fragments.md)) que formam partes da letra. Os XDPs\Layouts são criados no [Designer](http://www.adobe.com/go/learn_aemforms_designer_64).
 
 * O [dicionário de dados](/help/forms/using/data-dictionary.md) relevante (Opcional).
 * Os [módulos de dados](/help/forms/using/document-fragments.md) que você deseja usar na correspondência.
@@ -269,7 +268,7 @@ Primeiro, você precisa do seguinte em vigor para criar uma correspondência:
 
    **Próximo**: Ao tocar em  **Abrir**, o Gerenciamento de correspondência exibe uma representação do layout com todos os componentes no layout (XDP) listado. Prossiga com a inserção dos [Módulos de dados e Fragmentos de layout e sua configuração](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
-### Insira módulos de dados e fragmentos de layout em uma carta e configure-os {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
+### Inserir módulos de dados e fragmentos de layout em uma carta e configurá-los {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
 Depois de criar uma correspondência, toque em Abrir, o Gerenciamento de correspondência exibe uma representação do layout com todos os subformulários/áreas de destino no layout (XDP) listado. Em cada uma das áreas de destino, você pode optar por inserir um Módulo de dados ou um Fragmento de layout (e, em seguida, módulos de dados no fragmento de layout).
 
@@ -480,4 +479,3 @@ Você pode usar um modelo de carta existente para criar rapidamente um modelo de
 1. Toque em Colar. A caixa de diálogo Colar é exibida. Se você estiver copiando e colando as letras no mesmo lugar, o sistema atribui automaticamente nomes e títulos às novas cópias de letras, mas você poderá editar os títulos e nomes das letras.
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia da carta.
 1. Toque em Colar. A cópia da carta é criada. Agora você pode fazer as alterações necessárias na carta recém-criada.
-

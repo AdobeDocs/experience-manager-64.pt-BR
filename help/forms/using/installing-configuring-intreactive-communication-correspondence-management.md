@@ -1,17 +1,17 @@
 ---
 title: Instalar e configurar Comunicações interativas
-seo-title: Instalar e configurar Comunicações interativas
+seo-title: Install and configure Interactive Communications
 description: 'Instale e configure as Comunicações interativas do AEM Forms para criar correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. '
-seo-description: 'Instale e configure as Comunicações interativas do AEM Forms para criar correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. '
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 6%
+source-wordcount: '1386'
+ht-degree: 5%
 
 ---
 
@@ -146,7 +146,7 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 
 #### Instalar Pacote de Compatibilidade {#install-compatibility-package}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes no AEM 6.4 Forms. Se você atualizou ou migrou de uma versão anterior e planeja continuar usando cartas (Gerenciamento de correspondência), instale o [Pacote de compatibilidade do AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes no AEM 6.4 Forms. Se você atualizou ou migrou de uma versão anterior e planeja continuar usando cartas (Gerenciamento de correspondência), instale o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.3 Forms e AEM 6.2 Forms no AEM 6.4 Forms:
 

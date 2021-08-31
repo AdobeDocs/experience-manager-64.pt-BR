@@ -1,45 +1,44 @@
 ---
-title: Temas de referência
-seo-title: Temas de referência
-description: 'A AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
-seo-description: 'A AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário. '
+title: Temas de Referência
+seo-title: Reference Themes
+description: 'O AEM Forms fornece temas de formulários adaptáveis que podem ser obtidos da Distribuição de software e usados para criar um estilo em um formulário. '
+seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
-translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
+# Temas de Referência {#reference-themes}
 
-# Temas de referência {#reference-themes}
-
-[O ](/help/forms/using/themes.md) tema permite estilizar seus formulários sem o conhecimento profundo do CSS. Além do tema padrão, você pode obter os seguintes temas instalando o pacote [AEM-FORMS-6.3-REFERENCE-TEMAS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES):
+[](/help/forms/using/themes.md) Os temas permitem estilizar seus formulários sem o conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o pacote complementar[AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * Beril
 * Exec
 * Exec-Light
 * Liberdade
 * Ultramarina
-* Urbana
-* Padrões de Web Design dos EUA
+* Urbane
+* Padrões de web design dos EUA
 * Tranquilo
 
-Cada tema contém um estilo exclusivo e elegante que você pode usar para criar formulários adaptativos deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. As estilos nesses temas são baseadas em requisitos. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite que você alcance esse olhar.
+Cada tema contém um estilo exclusivo e elegante que pode ser usado para criar formulários adaptáveis encantadores para os usuários. Ele contém um estilo exclusivo para seletores como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. As estilos nesses temas baseiam-se em requisitos. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite-nos alcançar esse aspecto.
 
-![Temas de referência](assets/ref-themes.png)
+![Temas de Referência](assets/ref-themes.png)
 
-Os temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para telas móveis e de desktop. A maioria dos navegadores modernos em vários dispositivos pode renderizar formulários aplicados com um desses temas sem problemas.
+Os temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para exibições móveis e para desktop. A maioria dos navegadores modernos em vários dispositivos pode renderizar formulários aplicados com um desses temas sem complicações.
 
 Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
-## Beryl {#beryl}
+## Beril {#beryl}
 
-O tema Beryl é usado por [Formulário adaptável We.Gov](/help/forms/using/gov-reference-site-walkthrough.md), e enfatiza o uso de imagem de plano de fundo, transparência e ícones grandes e planos. Na captura de tela abaixo, você pode ver a aparência do tema Beryl e como ele pode melhorar o estilo do formulário.
+O tema Beryl é usado pelo [Formulário adaptável We.Gov](/help/forms/using/gov-reference-site-walkthrough.md), e enfatiza o uso de imagem de fundo, transparência e ícones grandes e planos. Na captura de tela abaixo, você pode ver a aparência do tema Beryl e como ele pode melhorar o estilo de seu formulário.
 ![Beryl ](assets/beryl.png)
 [themeClique para ampliar](assets/beryl-1.png)
 
@@ -50,42 +49,42 @@ O tema Exec evita preenchimentos sólidos em segundo plano para enfatizar os com
 
 [Clique para ampliar](assets/exec-1.png)
 
-## Exec Light {#exec-light}
+## Execução de luz {#exec-light}
 
-O tema Exec Light usa espaço em branco para criar uma experiência contínua. Os botões Próximo e Enviar obtêm um preenchimento sólido e uma sombra 3D. As guias selecionadas à esquerda recebem uma seta em vez de marcas de seleção de duplo.
-![Tema de luz executiva](assets/exec-light.png)
+O tema Exec Light usa espaço em branco para criar uma experiência contínua. Os botões Next e Submit obtêm um preenchimento sólido e uma sombra 3D. As guias selecionadas à esquerda recebem uma seta em vez de marcas de verificação duplas.
+![Tema de luz executivo](assets/exec-light.png)
 
 [Clique para ampliar](assets/exec-light-1.png)
 
-## Liberty {#liberty}
+## Liberdade {#liberty}
 
-O tema da liberdade usa uma abordagem minimalista para destacar a importância. Por exemplo, a cor da fonte da guia visitada muda para verde. É possível visualizar apenas o contorno inferior da caixa de texto que emula a aparência de um formulário baseado em papel com linhas. A caixa de texto ativa tem um contorno inferior preto, enquanto outros ficam cinza claro no contorno inferior.
+O tema da liberdade usa uma abordagem minimalista para destacar o importante. Por exemplo, a cor da fonte da guia visitada muda para verde. Você só pode ver o contorno inferior da caixa de texto que emula a aparência de um formulário baseado em papel com linhas. A caixa de texto ativa tem um contorno inferior preto, enquanto outros ficam com o contorno inferior cinza claro.
 ![Tema da liberdade](assets/liberty.png)
 
 [Clique para ampliar](assets/liberty-1.png)
 
 ## Tranquilo {#tranquil}
 
-O tema Tranquilo fornece tons claros e escuros do Esquema de cores Tranquilo para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias recebem uma cor verde diferente.
-![Tema tranquilo](assets/tranquil.png)
+O tema tranquilo fornece tons claros e escuros do esquema de cor Tranquilo para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias recebem um tom diferente de verde.
+![Tema do tranquilo](assets/tranquil.png)
 
 [Clique para ampliar](assets/tranquil-1.png)
 
-## Ultramarine {#ultramarine}
+## Ultramarina {#ultramarine}
 
 O tema ultramarine usa tons azuis profundos para realçar componentes como guias, painéis, caixas de texto e botões.
 ![Tema ultramarino](assets/ultramarine.png)
 
 ## Urbane {#urbane}
 
-O tema Urbane enfatiza uma aparência minimalista e funcional para seu formulário. Ao aplicar o tema Urbane ao formulário, é possível ver que os componentes são planos. Os painéis têm contornos finos para criar uma aparência moderna.
-![Tema Urbane](assets/urbane.png)
+O tema Urbane enfatiza uma aparência minimalista e funcional para seu formulário. Ao aplicar o tema Urbane ao seu formulário, você pode ver que os componentes são planos. Os painéis obtêm contornos finos para criar uma aparência moderna.
+![Tema de Urbana](assets/urbane.png)
 
 [Clique para ampliar](assets/urbane-1.png)
 
-## Padrões de Web Design nos EUA {#u-s-web-design-standards}
+## Padrões de web design dos EUA {#u-s-web-design-standards}
 
-O tema Padrões de Web Design dos Estados Unidos, como o nome sugere, usa fontes e estilos descritos no site Padrões de Web Design nos Estados Unidos. O padrão web é usado por organizações federais para criar experiências web consistentes em sites governamentais federais.
-![Tema dos Padrões de Web Design dos EUA](assets/us-web-standards.png)
+O tema Padrões de web design dos EUA, como o nome sugere, usa as fontes e os estilos descritos no site Padrões de web dos EUA em rascunho. O padrão da Web é usado por organizações federais para criar experiências consistentes na Web em sites do governo federal.
+![Tema dos Padrões de Design da Web dos Estados Unidos](assets/us-web-standards.png)
 
 [Clique para ampliar](assets/usgov.png)

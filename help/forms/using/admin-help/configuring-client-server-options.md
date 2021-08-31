@@ -1,19 +1,19 @@
 ---
 title: Configuração das opções do cliente e do servidor
-seo-title: Configuração das opções de cliente e servidor
+seo-title: Configuring client and server optionsn
 description: Saiba como configurar as várias opções de cliente e servidor, como configurações de servidor, funções de segurança de documento e auditoria de evento.
-seo-description: Saiba como configurar as várias opções de cliente e servidor, como configurações de servidor, funções de segurança de documento e auditoria de evento.
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: Segurança de documentos
+feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ A segurança do documento gera automaticamente um email de convite de registro q
 
 O email de registro contém um link para uma página Registro e informações sobre como se registrar. Depois que o usuário convidado se registra, a segurança do documento emite um email de ativação com um link para uma página de Ativação. Quando ativada, a conta permanece válida até que você a desative ou exclua.
 
-Se você habilitar o registro integrado, especifique seu servidor SMTP, detalhes do email de registro, recursos de acesso e redefinir informações do email de senha apenas uma vez. Antes de habilitar o registro interno, verifique se você criou um domínio local no Gerenciamento de usuários atribuiu a função &quot;Usuário do convidado de segurança de documentos&quot; aos usuários e grupos apropriados em sua organização. (Consulte [Adicionar um domínio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Criar e configurar funções](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se você não usar o registro integrado, deverá ter seu próprio sistema de registro do usuário criado usando o SDK dos formulários AEM. Consulte a ajuda em &quot;Desenvolvimento de SPIs para formulários AEM&quot; em [Programação com formulários AEM](https://www.adobe.com/go/learn-aemforms-programming-63). Se você não usar a opção Registro integrado , é recomendável configurar uma mensagem no email de ativação e na tela de logon do cliente para notificar os usuários sobre como entrar em contato com o administrador para obter uma nova senha ou outras informações.
+Se você habilitar o registro integrado, especifique seu servidor SMTP, detalhes do email de registro, recursos de acesso e redefinir informações do email de senha apenas uma vez. Antes de habilitar o registro interno, verifique se você criou um domínio local no Gerenciamento de usuários atribuiu a função &quot;Usuário do convidado de segurança de documentos&quot; aos usuários e grupos apropriados em sua organização. (Consulte [Adicionar um domínio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Criar e configurar funções](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se você não usar o registro integrado, deverá ter seu próprio sistema de registro do usuário criado usando o SDK dos formulários AEM. Consulte a ajuda em &quot;Desenvolvimento de SPIs para formulários AEM&quot; em [Programação com formulários AEM](/help/forms/developing/introducing-java-api-soap-quick.md). Se você não usar a opção Registro integrado , é recomendável configurar uma mensagem no email de ativação e na tela de logon do cliente para notificar os usuários sobre como entrar em contato com o administrador para obter uma nova senha ou outras informações.
 
 **Habilitar e configurar o registro de usuário convidado**
 

@@ -1,8 +1,8 @@
 ---
 title: Renderização do Forms
-seo-title: Renderização do Forms
+seo-title: Rendering Forms
 description: Use o serviço Forms para criar aplicativos clientes interativos de captura de dados que validam, processam, transformam e entregam formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um design de formulário único que o serviço Forms renderiza em PDF, SWF ou HTML em vários ambientes de navegador.
-seo-description: Use o serviço Forms para criar aplicativos clientes interativos de captura de dados que validam, processam, transformam e entregam formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um design de formulário único que o serviço Forms renderiza em PDF, SWF ou HTML em vários ambientes de navegador.
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -11,16 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-
-# Renderizar Forms {#rendering-forms}
+# Renderização do Forms {#rendering-forms}
 
 **Sobre o serviço Forms**
 
@@ -57,6 +56,4 @@ Você pode realizar essas tarefas usando o serviço Forms:
 * Enviar documentos. (Consulte [Passar documentos para o serviço do Forms](/help/forms/developing/passing-documents-forms-service.md)
 * Calcule os dados do formulário. (Consulte [Cálculo dos dados do formulário](/help/forms/developing/calculating-form-data.md).)
 * Otimizar um aplicativo. (Consulte [Otimizar o desempenho do serviço Forms](/help/forms/developing/optimizing-performance-forms-service.md).)
-
-   ***Dica **: O site do Adobe Developer contém o seguinte artigo que discute como criar um aplicativo ASP.NET que chame o serviço Forms e renderize formulários. Consulte [Criação de aplicativos ASP.NET de renderização de formulário](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*
 

@@ -1,8 +1,8 @@
 ---
 title: Chamar o AEM Forms usando serviços da Web
-seo-title: Chamar o AEM Forms usando serviços da Web
+seo-title: Invoking AEM Forms using Web Services
 description: Chame processos da AEM Forms usando serviços da Web com suporte total para geração de WSDL.
-seo-description: Chame processos da AEM Forms usando serviços da Web com suporte total para geração de WSDL.
+seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: cd4b5e40-afd5-422d-ae2e-cfde0f4d6b1a
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10009'
+source-wordcount: '9928'
 ht-degree: 0%
 
 ---
-
 
 # Chamar o AEM Forms usando serviços da Web {#invoking-aem-forms-using-web-services}
 
@@ -36,7 +35,7 @@ O AEM Forms oferece suporte aos seguintes padrões de serviço da Web:
 * **MTOM**: Representa uma maneira de codificar anexos com solicitações SOAP. (Consulte [Chamar o AEM Forms usando MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: Representa outra maneira de codificar anexos com solicitações SOAP. (Consulte [Chamar o AEM Forms usando SwaRef](#invoking-aem-forms-using-swaref).)
 * **SOAP com anexos**: Suporta MIME e DIME (Direct Internet Message Encapsulation). Esses protocolos são formas padrão de enviar anexos por SOAP. Os aplicativos do Microsoft Visual Studio .NET usam DIME. (Consulte [Chamar AEM Forms usando a codificação Base64](#invoking-aem-forms-using-base64-encoding).)
-* **WS-Security**: Suporta um perfil de token de senha de nome de usuário, que é uma maneira padrão de enviar nomes de usuário e senhas como parte do cabeçalho SOAP WS Security. O AEM Forms também oferece suporte à autenticação básica HTTP. (Consulte [Passando credenciais usando cabeçalhos WS-Security](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html).)
+* **WS-Security**: Suporta um perfil de token de senha de nome de usuário, que é uma maneira padrão de enviar nomes de usuário e senhas como parte do cabeçalho SOAP WS Security. O AEM Forms também oferece suporte à autenticação básica HTTP.
 
 Para chamar os serviços da AEM Forms usando um serviço da Web, normalmente você cria uma biblioteca de proxy que consome o serviço WSDL. A seção *Invocar AEM Forms usando serviços da Web* usa JAX-WS para criar classes proxy Java para invocar serviços. (Consulte [Criação de classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -265,7 +264,7 @@ Além do objeto `BLOB`, o protocolo MTOM suporta qualquer parâmetro de matriz d
 
 Os serviços da AEM Forms que retornam uma grande quantidade de dados binários usam o tipo Documento/BLOB em vez do tipo de matriz de bytes. O tipo de documento é muito mais eficiente para transmitir grandes quantidades de dados.
 
-## Tipos de dados de serviço da Web {#web-service-data-types}
+## Tipos de dados do serviço da Web {#web-service-data-types}
 
 A tabela a seguir lista os tipos de dados Java e mostra o tipo de dados do serviço da Web correspondente.
 
@@ -347,14 +346,6 @@ A tabela a seguir lista os tipos de dados Java e mostra o tipo de dados do servi
   </tr> 
  </tbody> 
 </table>
-
-**Site do desenvolvedor do Adobe**
-
-O site do Desenvolvedor do Adobe contém o seguinte artigo que discute a chamada de serviços da AEM Forms usando a API do serviço da Web:
-
-[Criação de formulários de renderização de aplicativos ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
-
-[Chamar serviços da Web usando componentes personalizados](https://www.adobe.com/devnet/livecycle/articles/extend_webservices.html)
 
 >[!NOTE]
 >
@@ -486,7 +477,7 @@ Você pode gerar arquivos de biblioteca Java do Axis executando as seguintes eta
    * Adicione o diretório bin ao caminho da classe.
    * Defina a variável de ambiente `ANT_HOME` no diretório em que instalou o Ant.
 
-1. Instale o Apache Axis 1.4 no computador cliente. Está disponível em [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md).
+1. Instale o Apache Axis 1.4 no computador cliente. Está disponível em [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
 1. Configure o caminho de classe para usar os arquivos JAR do Axis no cliente do serviço da Web, conforme descrito nas instruções de instalação do Axis em [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Use a ferramenta Apache WSDL2Java no Axis para gerar classes proxy Java. Crie um script de criação Ant para realizar essa tarefa. O script a seguir é um exemplo de script de compilação Ant chamado build.xml:
 
@@ -701,7 +692,7 @@ Você pode chamar um serviço da AEM Forms usando classes proxy Java e Base64. P
    * Atribua o usuário dos formulários AEM ao campo `javax.xml.ws.BindingProvider` do objeto `USERNAME_PROPERTY`.
    * Atribua o valor da senha correspondente ao campo `javax.xml.ws.BindingProvider` `PASSWORD_PROPERTY` do objeto.
 
-   O código de exemplo a seguir mostra essa lógica do aplicativo:
+   O exemplo de código a seguir mostra essa lógica do aplicativo:
 
    ```as3
     //Set connection values required to invoke AEM Forms 
@@ -753,7 +744,7 @@ Quando esse processo é chamado, ele executa as seguintes ações:
 
 A discussão aqui é sobre o uso do MTOM dentro de um projeto do Microsoft .NET para chamar os serviços do AEM Forms. O .NET Framework usado é 3.5, e o ambiente de desenvolvimento é Visual Studio 2008. Se você tiver o WSE (Web Service Enhancements, Melhorias de serviço da Web) instalado no computador de desenvolvimento, remova-o. O .NET 3.5 Framework suporta uma estrutura SOAP chamada Windows Communication Foundation (WCF). Ao invocar o AEM Forms usando o MTOM, somente o WCF (não WSE) é compatível.
 
-### Criando um projeto .NET que chama um serviço usando MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom}
+### Criando um projeto .NET que chame um serviço usando MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom}
 
 Você pode criar um projeto do Microsoft .NET que possa chamar um serviço do AEM Forms usando serviços da Web. Primeiro, crie um projeto do Microsoft .NET usando o Visual Studio 2008. Para chamar um serviço do AEM Forms, crie uma Referência de serviço para o serviço do AEM Forms que você deseja chamar em seu projeto. Ao criar uma Referência de serviço, especifique um URL para o serviço AEM Forms:
 
@@ -927,7 +918,7 @@ Para invocar o processo `MyApplication/EncryptDocument` usando arquivos proxy Ja
 
 [Início rápido: Chamar um serviço usando SwaRef em um projeto Java](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-swaref-in-a-java-project)
 
-## Chamar o AEM Forms usando dados BLOB sobre HTTP {#invoking-aem-forms-using-blob-data-over-http}
+## Chamada de AEM Forms usando dados BLOB sobre HTTP {#invoking-aem-forms-using-blob-data-over-http}
 
 Você pode chamar os serviços da AEM Forms usando serviços da Web e transmitir dados BLOB via HTTP. Passar dados BLOB por HTTP é uma técnica alternativa em vez de usar codificação base64, DIME ou MIME. Por exemplo, você pode passar dados via HTTP em um projeto do Microsoft .NET que usa o aprimoramento do serviço da Web 3.0, que não é compatível com DIME ou MIME. Ao usar dados BLOB em HTTP, os dados de entrada são carregados antes que o serviço AEM Forms seja chamado.
 
@@ -986,7 +977,7 @@ Você pode chamar o serviço `MyApplication/EncryptDocument` (que foi criado no 
 1. Crie um objeto `System.IO.BinaryWriter` chamando seu construtor e passando o objeto `System.IO.FileStream`.
 1. Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
 
-### Chamar um serviço usando classes proxy Java e dados BLOB por HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
+### Chamada de serviço usando classes proxy Java e dados BLOB por HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
 
 Você pode chamar um serviço da AEM Forms usando classes proxy Java e dados BLOB via HTTP. Para chamar o serviço `MyApplication/EncryptDocument` usando classes proxy Java, execute as seguintes etapas:
 
@@ -1174,7 +1165,7 @@ Para chamar o serviço `MyApplication/EncryptDocument` (que foi criado no Workbe
 
 [Início rápido: Chamar um serviço usando DIME em um projeto Java](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-dime-in-a-java-project)
 
-## Usar a autenticação baseada em SAML {#using-saml-based-authentication}
+## Usar autenticação baseada em SAML {#using-saml-based-authentication}
 
 O AEM Forms oferece suporte a vários modos de autenticação de serviço da Web ao chamar serviços. Um modo de autenticação está especificando um nome de usuário e um valor de senha usando um cabeçalho de autorização básico na chamada de serviço da Web. O AEM Forms também oferece suporte à autenticação baseada em asserção SAML. Quando um aplicativo cliente chama um serviço da AEM Forms usando um serviço da Web, o aplicativo cliente pode fornecer informações de autenticação de uma das seguintes maneiras:
 
@@ -1461,7 +1452,7 @@ O exemplo de código C# a seguir chama um serviço Forms usando a autenticação
 
 Às vezes, ocorrem problemas ao invocar determinadas operações dos serviços da AEM Forms usando serviços da Web. O objetivo desta discussão é identificar essas questões e fornecer uma solução, se disponível.
 
-### Chamada assíncrona de operações de serviço {#invoking-service-operations-asynchronously}
+### Chamada de operações de serviço de forma assíncrona {#invoking-service-operations-asynchronously}
 
 Se você tentar invocar de forma assíncrona uma operação de serviço do AEM Forms, como a operação `htmlToPDF` do Gerar PDF, um `SoapFaultException` ocorrerá. Para resolver esse problema, crie um arquivo XML de vínculo personalizado que mapeie o elemento `ExportPDF_Result` e outros elementos em classes diferentes. O XML a seguir representa um arquivo de vínculo personalizado.
 
@@ -1749,7 +1740,6 @@ O exemplo de código C# a seguir assina um formulário interativo renderizado pe
  
 ```
 
-### Serviços que começam com a letra I produzem arquivos proxy inválidos {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
+### Os serviços que começam com a letra I produzem arquivos proxy inválidos {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
 O nome de algumas classes proxy geradas pelo AEM Forms está incorreto ao usar o Microsoft .Net 3.5 e o WCF. Esse problema ocorre quando as classes proxy são criadas para IBMFilenetContentRepositoryConnector, IDPSchedulerService ou qualquer outro serviço cujo nome começa com a letra I. Por exemplo, o nome do cliente gerado no caso de IBMFileNetContentRepositoryConnector é `BMFileNetContentRepositoryConnectorClient`. A letra I está ausente na classe de proxy gerada.
-

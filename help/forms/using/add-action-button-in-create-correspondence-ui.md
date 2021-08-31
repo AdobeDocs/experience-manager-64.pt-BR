@@ -1,22 +1,21 @@
 ---
 title: Adicionar ação/botão personalizado na interface do usuário Criar correspondência
-seo-title: Adicionar ação/botão personalizado na interface do usuário Criar correspondência
+seo-title: Add custom action/button in Create Correspondence UI
 description: Saiba como adicionar ação/botão personalizado na interface do usuário Criar correspondência
-seo-description: Saiba como adicionar ação/botão personalizado na interface do usuário Criar correspondência
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: e3609371-caaa-4efe-8f63-4d982cd456ab
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1855'
 ht-degree: 1%
 
 ---
-
 
 # Adicionar ação/botão personalizado na interface do usuário Criar correspondência {#add-custom-action-button-in-create-correspondence-ui}
 
@@ -33,7 +32,7 @@ Para concluir esse cenário, você precisa do seguinte:
 * Conhecimento do CRX e do JavaScript
 * Servidor LiveCycle
 
-## Cenário: Crie o botão na Interface do usuário Criar correspondência para enviar uma carta para revisão {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Cenário: Crie o botão na interface do usuário Criar correspondência para enviar uma carta para revisão {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 Adicionar um botão com uma ação (aqui, enviar carta para revisão) à interface do usuário Criar correspondência inclui:
 
@@ -124,7 +123,7 @@ Adicionar um botão com uma ação (aqui, enviar carta para revisão) à interfa
 
 1. Clique em **[!UICONTROL Salvar tudo]**.
 
-#### Crie uma pasta de localidade com arquivo de propriedades na ramificação /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Crie uma pasta de localidade com o arquivo de propriedades na ramificação /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 O arquivo ACMExtensionsMessages.properties inclui rótulos e mensagens de dica de ferramenta de vários campos na interface do usuário Criar correspondência . Para que as ações/botões personalizados funcionem, faça uma cópia desse arquivo na ramificação /apps.
 
@@ -162,7 +161,7 @@ O arquivo ACMExtensionsMessages.properties inclui rótulos e mensagens de dica d
 
 1. Clique em **[!UICONTROL Salvar tudo]**.
 
-#### Reinicie o pacote Bloco de construção do Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Reinicie o pacote de blocos de construção do Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Depois de fazer cada alteração no lado do servidor, reinicie o pacote Adobe Asset Composer Building Block. Neste cenário, os arquivos acmExtensionsConfig.xml e ACMExtensionsMessages.properties no lado do servidor são editados e, portanto, o pacote Adobe Asset Composer Building Block requer uma reinicialização.
 
@@ -323,7 +322,7 @@ Lidar com a ação/botão ao clicar em ação/botão inclui lógica para:
       '</div>';
       ```
 
-### Adicione o processo de LiveCycle para habilitar a ação <span class="acrolinxCursorMarker"></span>manuseando {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Adicione o processo de LiveCycle para ativar a ação <span class="acrolinxCursorMarker"></span>manuseio {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Nesse cenário, ative os seguintes componentes, que fazem parte do arquivo components.zip anexado:
 
@@ -381,7 +380,7 @@ O processo LiveCycle necessário que habilita o processo de serviço de email.
 
 1. Clique em **[!UICONTROL Importar]**.
 
-#### Adicionar ServiceName à lista de Serviço Incluir na lista de permissões {#adding-servicename-to-the-allowlisted-service-list}
+#### Adicionar ServiceName à lista Serviço Incluir na lista de permissões {#adding-servicename-to-the-allowlisted-service-list}
 
 Mencione no servidor de AEM os serviços do LiveCycle que você deseja acessar o servidor de AEM.
 
@@ -425,11 +424,11 @@ Para obter mais informações, consulte [Conectando o AEM Forms com o Adobe Live
 
    >[!NOTE]
    >
-   >Toda vez que fizer alterações no lado do servidor, reinicie o LiveCycle Server. Para obter informações sobre como criar seu próprio componente LiveCycle, consulte [Extensão do software LiveCycle ES por meio de desenvolvimento DSC personalizado](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+   >Toda vez que você fizer alterações no lado do servidor, reinicie o Servidor.
 
    O arquivo `DSCSample.jar` usa a API `renderLetter`. Para obter mais informações sobre a API renderLetter, consulte [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
-#### Importar DSC para o LiveCycle {#import-dsc-to-livecyle}
+#### Importar DSC para o AEM Forms no JEE {#import-dsc-to-livecyle}
 
 `DSCSample.jar` O arquivo usa a  `renderLetter` API para renderizar a carta como bytes em PDF a partir de dados XML fornecidos por C como entrada. Para obter mais informações sobre o renderLetter e outras APIs, consulte [Serviço de Renderização de Carta](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 

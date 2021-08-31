@@ -1,8 +1,8 @@
 ---
 title: Chamar a AEM Forms usando a JavaAPI
-seo-title: Chamar a AEM Forms usando a JavaAPI
+seo-title: Invoking AEM Forms using the JavaAPI
 description: Use a API Java do AEM Forms para protocolo de transporte RMI para invocação remota, transporte de VM para invocação local, SOAP para invocação remota, autenticação diferente, como nome de usuário e senha e solicitações de invocação síncrona e assíncrona.
-seo-description: Use a API Java do AEM Forms para protocolo de transporte RMI para invocação remota, transporte de VM para invocação local, SOAP para invocação remota, autenticação diferente, como nome de usuário e senha e solicitações de invocação síncrona e assíncrona.
+seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1c239c05-e221-442a-a748-0c28704ee032
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '5480'
+source-wordcount: '5385'
 ht-degree: 0%
 
 ---
 
-
-# Chamar o AEM Forms usando a API Java {#invoking-aem-forms-using-the-javaapi}
+# Chamar o AEM Forms usando a API do Java {#invoking-aem-forms-using-the-javaapi}
 
 O AEM Forms pode ser chamado usando a API do AEM Forms Java. Ao usar a API Java do AEM Forms, você pode usar a API de chamada ou as bibliotecas de clientes Java. As bibliotecas de clientes Java estão disponíveis para serviços como o serviço Rights Management. Essas APIs altamente digitadas permitem desenvolver aplicativos Java que chamam o AEM Forms.
 
@@ -35,13 +34,6 @@ A API Java é compatível com os seguintes recursos:
 * Autenticação diferente, como nome de usuário e senha
 * Solicitações de invocação síncrona e assíncrona
 
-**Site do desenvolvedor do Adobe**
-
-O site Adobe Developer contém os seguintes artigos que discutem a chamada de serviços da AEM Forms usando a API do Java:
-
-[Usar servlets Java para invocar processos AEM Forms](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[Chamar a API do AEM Forms Distiller a partir do Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **Consulte também:**
 
@@ -61,7 +53,7 @@ O site Adobe Developer contém os seguintes artigos que discutem a chamada de se
 
 [Criação de uma aplicação Web Java que chama um processo de vida longa centrado em humanos](/help/forms/developing/invoking-human-centric-long-lived.md)
 
-## Inclusão de arquivos da biblioteca Java AEM Forms {#including-aem-forms-java-library-files}
+## Inclusão de arquivos da biblioteca Java do AEM Forms {#including-aem-forms-java-library-files}
 
 Para invocar programaticamente um serviço da AEM Forms usando a API do Java, inclua os arquivos de biblioteca necessários (arquivos JAR) no classpath do seu projeto Java. Os arquivos JAR incluídos no classpath do aplicativo cliente dependem de vários fatores:
 
@@ -696,7 +688,7 @@ O exemplo a seguir mostra o conteúdo de um arquivo jndi.properties usado para s
 
 [Chamar um serviço usando uma biblioteca do cliente Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Passar dados para serviços da AEM Forms usando a API Java {#passing-data-to-aem-forms-services-using-the-java-api}
+## Passar dados para serviços da AEM Forms usando a API do Java {#passing-data-to-aem-forms-services-using-the-java-api}
 
 As operações do serviço AEM Forms normalmente consomem ou produzem documentos PDF. Ao invocar um serviço, às vezes é necessário passar um documento PDF (ou outros tipos de documento, como dados XML) para o serviço. Da mesma forma, às vezes é necessário manipular um documento PDF que é retornado do serviço. A classe Java que permite transmitir dados de e para os serviços da AEM Forms é `com.adobe.idp.Document`.
 
@@ -781,7 +773,7 @@ O exemplo de código a seguir cria um objeto `com.adobe.idp.Document` baseado em
  Document myPDFDocument = new Document(myByteArray);
 ```
 
-#### Criar um documento com base em outro documento {#creating-a-document-based-on-another-document}
+#### Criação de um documento com base em outro documento {#creating-a-document-based-on-another-document}
 
 O exemplo de código a seguir cria um objeto `com.adobe.idp.Document` baseado em outro objeto `com.adobe.idp.Document`.
 
@@ -802,7 +794,7 @@ O exemplo de código a seguir cria um objeto `com.adobe.idp.Document` baseado em
  Document anotherDocument = new Document(myPDFDocument);
 ```
 
-#### Criar um documento com base em um arquivo {#creating-a-document-based-on-a-file}
+#### Criação de um documento com base em um arquivo {#creating-a-document-based-on-a-file}
 
 O exemplo de código a seguir cria um objeto `com.adobe.idp.Document` baseado em um arquivo PDF chamado *map.pdf*. Esse arquivo está localizado na raiz do disco rígido C. Esse construtor tenta definir o tipo de conteúdo MIME do objeto `com.adobe.idp.Document` usando a extensão do nome de arquivo.
 
@@ -830,7 +822,7 @@ O exemplo de código Java a seguir cria um objeto `com.adobe.idp.Document` basea
  Document myPDFDocument = new Document(is);
 ```
 
-#### Criar um documento com base em conteúdo acessível a partir de um URL {#creating-a-document-based-on-content-accessible-from-an-url}
+#### Criar um documento com base em conteúdo acessível de um URL {#creating-a-document-based-on-content-accessible-from-an-url}
 
 O exemplo de código Java a seguir cria um objeto `com.adobe.idp.Document` baseado em um arquivo PDF chamado *map.pdf*. Este arquivo está localizado em um aplicativo da Web chamado `WebApp` que está sendo executado em `localhost`. Este construtor tenta definir o tipo de conteúdo MIME do objeto `com.adobe.idp.Document` usando o tipo de conteúdo retornado com o protocolo URL.
 
@@ -858,7 +850,7 @@ O arquivo c:/temp/input.pdf deve estar localizado no computador cliente (não no
 
 [Configuração das propriedades de conexão](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Manipular documentos retornados {#handling-returned-documents}
+### Manuseio de documentos retornados {#handling-returned-documents}
 
 As operações de serviço que retornam um documento PDF (ou outros tipos de dados, como dados XML) como um valor de saída retornam um objeto `com.adobe.idp.Document`. Depois de receber um objeto `com.adobe.idp.Document`, é possível convertê-lo nos seguintes formatos:
 
@@ -1017,7 +1009,7 @@ Você pode chamar o serviço Repositório usando uma biblioteca do cliente Java 
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-## Chamar um processo de duração curta usando a API de chamada {#invoking-a-short-lived-process-using-the-invocation-api}
+## Chamada de um processo de duração curta usando a API de chamada {#invoking-a-short-lived-process-using-the-invocation-api}
 
 Você pode invocar um processo de duração curta usando a API de chamada do Java. Ao invocar um processo de duração curta usando a API de invocação, é possível transmitir os valores de parâmetro necessários usando um objeto `java.util.HashMap`. Para cada parâmetro ser transmitido a um serviço, chame o método `java.util.HashMap` do objeto e especifique o par nome-valor necessário para o serviço executar a operação especificada. `put` Especifique o nome exato dos parâmetros que pertencem ao processo de curta duração.
 

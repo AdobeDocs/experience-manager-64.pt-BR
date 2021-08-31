@@ -1,21 +1,20 @@
 ---
 title: Configuração do Microsoft Dynamics OData
-seo-title: Configuração do Microsoft Dynamics ODtata
+seo-title: Microsoft Dynamics ODtata configuration
 description: Aproveite, integre e trabalhe com serviços do Microsoft Dynamics online e local por meio de um modelo de dados de formulário.
-seo-description: Saiba como aproveitar a integração e o trabalho com serviços do Microsoft Dynamics online e local por meio de um modelo de dados de formulário.
+seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
 feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
-
 
 # Configuração do Microsoft Dynamics OData {#microsoft-dynamics-odata-configuration}
 
@@ -36,7 +35,7 @@ Quando o pacote é instalado, as seguintes entidades e serviços estão disponí
 * MS Dynamics OData Cloud Service (Serviço OData)
 * Modelo de dados de formulário com entidades e serviços pré-configurados do Microsoft Dynamics.
 
-O Cloud Service OData e o modelo de dados de formulário com entidades e serviços pré-configurados do Microsoft Dynamics só estarão disponíveis em sua instância do AEM Forms se o modo de execução da instância de AEM estiver definido como `samplecontent`(padrão). Para obter mais informações sobre como configurar modos de execução para uma instância de AEM, consulte [Executar modos](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
+O Cloud Service OData e o modelo de dados de formulário com entidades e serviços pré-configurados do Microsoft Dynamics só estarão disponíveis em sua instância do AEM Forms se o modo de execução da instância de AEM estiver definido como `samplecontent`(padrão). Para obter mais informações sobre como configurar modos de execução para uma instância de AEM, consulte [Executar modos](/help/sites-deploying/configure-runmodes.md).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -86,7 +85,7 @@ O Microsoft Dynamics usa autenticação baseada em afirmações para fornecer ac
 
    Consulte [Registro do aplicativo para CRM no local (IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd) para obter detalhes.
 
-## Configurar o cliente OAuth na máquina AD FS {#configure-oauth-client-on-ad-fs-machine}
+## Configurar o cliente OAuth no computador AD FS {#configure-oauth-client-on-ad-fs-machine}
 
 Faça o seguinte para registrar um cliente OAuth na máquina do Ative Diretory Federation Services (AD FS) e conceder acesso à máquina do AD FS:
 
@@ -117,7 +116,7 @@ Faça o seguinte para registrar um cliente OAuth na máquina do Ative Diretory F
 
 1. O Microsoft Dynamics usa o protocolo HTTPS. Para chamar pontos de extremidade do AD FS do servidor do Forms, instale o certificado do site do Microsoft Dynamics no armazenamento de certificados Java usando o comando `keytool` no computador que executa o AEM Forms.
 
-## Configurar o serviço em nuvem para o serviço do Microsoft Dynamics {#configure-cloud-service-for-your-microsoft-dynamics-service}
+## Configurar o serviço em nuvem para o serviço Microsoft Dynamics {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
 A configuração **MS Dynamics OData Cloud Service (OData Service)** vem com a configuração padrão de OData. Para configurá-lo para se conectar ao serviço do Microsoft Dynamics, faça o seguinte:
 

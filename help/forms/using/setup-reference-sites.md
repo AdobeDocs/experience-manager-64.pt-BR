@@ -1,17 +1,17 @@
 ---
 title: Configurar e configurar sites de referência do AEM Forms
-seo-title: Configurar e configurar sites de referência do AEM Forms
+seo-title: Set up and configure AEM Forms reference sites
 description: Os sites de referência da AEM Forms mostram como você pode usar o AEM Forms para implementar um fluxo de trabalho completo em uma organização.
-seo-description: Os sites de referência da AEM Forms mostram como você pode usar o AEM Forms para implementar um fluxo de trabalho completo em uma organização.
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
@@ -153,7 +153,7 @@ A configuração SSL é necessária para comunicação com os servidores da Adob
 
 ## Configurar o Day CQ Link Externalizer {#externalizer}
 
-No AEM, o **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, /path/to/my/page) em um URL externo e absoluto (por exemplo, https://www.mycompany.com/path/to/my/page) ao prefixar o caminho com um DNS pré-configurado. Consulte [Exteriorização de URLs](/help/sites-developing/externalizer.md).
+Em AEM, o **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, /path/to/my/page) em um URL externo e absoluto (por exemplo, https://www.mycompany.com/path/to/my/page) ao prefixar o caminho com um DNS pré-configurado. Consulte [Exteriorização de URLs](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -289,7 +289,7 @@ Faça o seguinte em instâncias de autor e publicação:
 
 1. Toque em **[!UICONTROL Salvar]**.
 
-## Configurar o serviço de nuvem Adobe Sign do site de referência {#sign-service}
+## Configurar o site de referência do serviço em nuvem Adobe Sign {#sign-service}
 
 Faça o seguinte em instâncias de autor e publicação:
 
@@ -322,7 +322,7 @@ Faça o seguinte em instâncias de autor e publicação:
 1. Salve as configurações.
 1. (**Instância de autor somente**) Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Fontes de Dados]** > **[!UICONTROL global]**. Selecione **[!UICONTROL roi-rest]** e toque em **[!UICONTROL Propriedades]**. Toque em **[!UICONTROL Configurações de autenticação]** e defina **[!UICONTROL Tipo de autenticação]** para **[!UICONTROL Autenticação básica]**. Especifique `admin`/ `admin`como o nome de usuário/senha para acessar o serviço. Toque em **[!UICONTROL Salvar e fechar]**.
 
-## Integrar com o Marketing Cloud {#integrate-with-marketing-cloud}
+## Integrar ao Marketing Cloud {#integrate-with-marketing-cloud}
 
 É possível integrar a AEM Forms com a Adobe Analytics e a Adobe Target. Embora o Adobe Analytics ajude você a gerar relatórios e analisar o desempenho de formulários adaptáveis, o Adobe Target ajuda você a fornecer experiências personalizadas e a realizar testes A/B para formulários adaptáveis.
 

@@ -1,8 +1,8 @@
 ---
 title: Início rápido da API do Forms Service
-seo-title: Início rápido da API do Forms Service
+seo-title: Forms Service API Quick Starts
 description: Use os Primeiros passos para a API do serviço do Forms.
-seo-description: Use os Primeiros passos para a API do serviço do Forms.
+seo-description: Use the Quick Starts for the Forms Service API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
-
 
 # Início rápido da API do Forms Service {#forms-service-api-quick-starts}
 
@@ -59,7 +58,6 @@ A lógica do aplicativo que usa a API do serviço da Forms é implementada como 
 >
 >Os inícios rápidos localizados em Programação com v são baseados no servidor de formulários no qual você está usando outro sistema operacional, como o Unix, para substituir caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-**Dica**: O site do Adobe Developer contém o seguinte artigo que discute como criar um aplicativo ASP.NET que chame o serviço Forms e renderize formulários. Consulte [Criação de aplicativos ASP.NET de renderização de formulário](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Início rápido (modo SOAP): Renderização de um formulário PDF interativo usando a API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -336,7 +334,7 @@ O exemplo de código a seguir renderiza um formulário chamado *Loan.xdp *no cli
  
 ```
 
-## Início rápido (modo SOAP): Renderização de um Guia (obsoleto) usando a API Java {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
+## Início rápido (modo SOAP): Renderização de um guia (obsoleto) usando a API do Java {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
 
 O exemplo de código a seguir renderiza um Guia (obsoleto) chamado *TLALifeClaim.xdp* em um navegador da Web cliente.
 
@@ -903,7 +901,7 @@ O código de exemplo a seguir renderiza um formulário HTML usando a API Java do
  
 ```
 
-## Início rápido (modo SOAP): Renderização de um formulário HTML que usa um arquivo CSS usando a API Java {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
+## Início rápido (modo SOAP): Renderização de um formulário HTML que usa um arquivo CSS usando a API do Java {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
 
 O código de exemplo a seguir renderiza um formulário HTML usando a API do cliente de serviço do Forms. O nome do arquivo CSS personalizado referenciado é *custom.css*. (Consulte [Renderizar Forms HTML usando arquivos CSS personalizados](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
@@ -1058,7 +1056,7 @@ O código de exemplo a seguir renderiza um formulário HTML usando a API do clie
  }
 ```
 
-## Início rápido (modo SOAP): Renderizar um formulário HTML com uma barra de ferramentas personalizada usando a API Java {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
+## Início rápido (modo SOAP): Renderização de um formulário HTML com uma barra de ferramentas personalizada usando a API do Java {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
 O código de exemplo a seguir renderiza um formulário HTML com uma barra de ferramentas exibida em francês. O local do fscmenu.xml é C:\Adobe (essa pasta deve estar no servidor que hospeda o AEM Forms). Observe que o valor da localidade é `fr_FR`. A seção que discute como renderizar um formulário HTML com uma barra de ferramentas personalizada mostra a sintaxe do arquivo fscmenu.xml usado nessa inicialização rápida. (Consulte [Renderizar Forms HTML com Barras de Ferramentas Personalizadas](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
@@ -1383,7 +1381,7 @@ O código de exemplo a seguir trata um formulário enviado como XML. O valor do 
 >
 >Ao usar um objeto `com.adobe.idp.Document` e um `org.w3c.dom.Document` no mesmo aplicativo, qualifique totalmente `org.w3c.dom.Document`.
 
-## Início rápido (modo SOAP): Manuseio de PDF forms enviados como PDF usando a API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Início rápido (modo SOAP): Manuseio de PDF forms enviados como PDF usando a API do Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 O código de exemplo a seguir trata um formulário enviado como dados PDF. O valor do tipo de conteúdo passado para o método `processFormSubmission` é `CONTENT_TYPE=application/pdf`. O formulário enviado é salvo como um arquivo PDF chamado *tempPDF.pdf*. Além disso, como o formulário é enviado como PDF, os anexos de arquivo podem ser recuperados. Todos os anexos de arquivo são salvos como arquivos JPEG. (Consulte [Manuseio de Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms) Enviado.)
 
@@ -2770,4 +2768,3 @@ O seguinte início rápido do Java recupera o arquivo Loan.xdp dos Content Servi
  } 
  
 ```
-

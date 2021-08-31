@@ -1,8 +1,8 @@
 ---
 title: Migrar ativos e documentos do AEM Forms
-seo-title: Migrar ativos e documentos do AEM Forms
+seo-title: Migrate AEM Forms assets and documents
 description: O Utilitário de migração permite migrar ativos e documentos do AEM Forms do AEM 6.3 Forms ou de versões anteriores para o AEM 6.4 Forms.
-seo-description: O Utilitário de migração permite migrar ativos e documentos do AEM Forms do AEM 6.3 Forms ou de versões anteriores para o AEM 6.4 Forms.
+seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -12,10 +12,10 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 4%
+source-wordcount: '1829'
+ht-degree: 2%
 
 ---
 
@@ -38,13 +38,13 @@ Você pode [atualizar](/help/forms/using/upgrade.md) para a versão mais recente
 
 **No caso de atualização no local**
 
-Se você tiver realizado uma atualização no local, a instância atualizada já terá os ativos e documentos. No entanto, antes de usar os ativos e documentos, será necessário instalar o [Pacote de compatibilidade do AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclui o pacote de compatibilidade do Correspondence Management)
+Se você tiver realizado uma atualização no local, a instância atualizada já terá os ativos e documentos. No entanto, antes de usar os ativos e documentos, será necessário instalar o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclui o pacote de compatibilidade do Correspondence Management)
 
 Em seguida, é necessário atualizar os ativos e documentos [executando o utilitário de Migração](#runningmigrationutility).
 
 **Em caso de instalação fora do local**
 
-Se for uma instalação fora do local (nova), antes de poder usar os ativos e documentos, será necessário instalar o [Pacote de compatibilidade do AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclui o pacote de Compatibilidade do Correspondence Management).
+Se for uma instalação fora do local (nova), antes de poder usar os ativos e documentos, será necessário instalar o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclui o pacote de Compatibilidade do Correspondence Management).
 
 Em seguida, é necessário importar o pacote de ativos (zip ou cmp) na nova configuração e, em seguida, atualizar os ativos e documentos [executando o Migration Utility](#runningmigrationutility). Devido a alterações [relacionadas à compatibilidade com versões anteriores](/help/sites-deploying/backward-compatibility.md), os locais de algumas pastas no repositório crx são alterados. Exportar e importar dependências manualmente (bibliotecas e ativos personalizados) da configuração anterior para um novo ambiente.
 
@@ -107,15 +107,12 @@ Ao executar o Utilitário de migração pela primeira vez, um log é criado com 
    >Esses componentes podem ser migrados abrindo-os no Editor de regras no editor adaptável do Forms.
    >
    >* Para migrar regras e scripts (não é necessário se estiver atualizando da versão 6.3) em componentes personalizados, toque em Migração de componentes personalizados do Adaptive Forms e, na próxima tela, toque em Iniciar migração. Os itens a seguir são migrados:
-      >
-      >  
-   * Regras e scripts criados com o editor de regras (6.1 FP1 e posterior)
+   >
+   >  * Regras e scripts criados com o editor de regras (6.1 FP1 e posterior)
    >  * Scripts criados usando a guia Script na interface do usuário da versão 6.1 e anterior
    >* Para migrar modelos (não é necessário se estiver atualizando da versão 6.3), toque em Migração de modelo do Adaptive Forms e, na próxima tela, toque em Iniciar migração. Os itens a seguir são migrados:
-
-      >
-      >  
-   * Modelos antigos - os modelos de formulários adaptáveis criados em /apps usando o AEM 6.1 Forms ou anterior. Isso inclui os scripts que foram definidos nos componentes do modelo.
+   >
+   >  * Modelos antigos - os modelos de formulários adaptáveis criados em /apps usando o AEM 6.1 Forms ou anterior. Isso inclui os scripts que foram definidos nos componentes do modelo.
    >  * Novos modelos - Modelos de formulários adaptáveis criados usando o editor de modelos em /conf. Isso inclui a migração de regras e scripts criados com o editor de regras.
 
 
