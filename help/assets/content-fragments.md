@@ -1,8 +1,8 @@
 ---
 title: Trabalho com fragmentos de conteúdo
-seo-title: Trabalho com fragmentos de conteúdo
+seo-title: Working with Content Fragments
 description: Saiba como os Fragmentos de conteúdo permitem projetar, criar, preparar e usar conteúdo independente da página.
-seo-description: Saiba como os Fragmentos de conteúdo permitem projetar, criar, preparar e usar conteúdo independente da página.
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Fragmentos de conteúdo
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1984'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 7%
 >
 >Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
-Os Fragmentos de conteúdo do Adobe Experience Manager (AEM) permitem que você crie, crie, prepare e [publique conteúdo independente da página](/help/sites-authoring/content-fragments.md). Eles permitem que você prepare conteúdo pronto para uso em vários locais/em vários canais.
+Os Fragmentos de conteúdo do Adobe Experience Manager (AEM) permitem que você crie, crie, prepare e publique conteúdo independente de página](/help/sites-authoring/content-fragments.md). [ Eles permitem que você prepare conteúdo pronto para uso em vários locais/em vários canais.
 
 Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando os recursos de exportação do Modelo do Sling (JSON) AEM componentes principais. Esta forma de delivery:
 
@@ -91,8 +91,7 @@ Juntamente com os recursos de exportação JSON de AEM componentes principais, e
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 
 >
->
-Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
+>Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
 >Para obter mais informações, consulte também [Entendendo fragmentos de conteúdo e fragmentos de experiência em AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
