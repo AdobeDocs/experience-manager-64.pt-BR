@@ -2,12 +2,12 @@
 title: Gerencie ativos compostos e gere subativos.
 description: Saiba como criar referências a ativos AEM a partir de arquivos do InDesign, Adobe Illustrator e Photoshop. Saiba também como usar o recurso Visualizador de página para exibir páginas individuais de arquivos de várias páginas, incluindo arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Para o InDesign, você pode extrair páginas usando o servidor do InDesign. Se a
 
 As seguintes opções estão disponíveis na barra de ferramentas, no painel à esquerda e nos controles do Visualizador de páginas:
 
-* **[!UICONTROL As]** ações da área de trabalho para abrir ou revelar um subativo específico usando AEM aplicativo da área de trabalho. Consulte como [configurar as Ações da Área de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) se estiver usando AEM aplicativo de área de trabalho.
+* **[!UICONTROL As]** ações da área de trabalho para abrir ou revelar um subativo específico usando AEM aplicativo da área de trabalho. Consulte como [configurar as Ações da Área de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se estiver usando AEM aplicativo de área de trabalho.
 
 * **** A opção Propriedades abre a   página Propriedades do subativo específico.
 

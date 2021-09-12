@@ -2,12 +2,12 @@
 title: Introdução à [!DNL Adobe Experience Manager Assets]
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '861'
 ht-degree: 39%
 
 ---
@@ -52,7 +52,7 @@ Ao determinar se uma imagem deve ser colocada no repositório DAM ou usar um com
 
 Um ativo é um documento digital, imagem, vídeo ou áudio (ou parte dele) que pode ter várias representações e subativos (por exemplo, camadas em um arquivo do Photoshop, slides em um arquivo do PowerPoint, páginas em um pdf, arquivos em um ZIP).
 
-Um ativo é essencialmente um binário com metadados, além de representações e subativos. Consulte o [Guia de desempenho de DAM](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en) para obter informações detalhadas.
+Um ativo é essencialmente um binário com metadados, além de representações e subativos. Consulte o [Guia de desempenho de DAM](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html) para obter informações detalhadas.
 
 >[!CAUTION]
 >

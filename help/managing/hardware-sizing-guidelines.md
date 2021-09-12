@@ -1,8 +1,8 @@
 ---
 title: 'Diretrizes de dimensionamento do hardware '
-seo-title: 'Diretrizes de dimensionamento do hardware '
+seo-title: Hardware Sizing Guidelines
 description: Essas diretrizes de dimensionamento oferecem uma aproximação dos recursos de hardware necessários para implantar um projeto de AEM.
-seo-description: Essas diretrizes de dimensionamento oferecem uma aproximação dos recursos de hardware necessários para implantar um projeto de AEM.
+seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
 uuid: 83f928e3-986b-461b-8b3e-8faacd11172e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,9 +10,9 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2831'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ A otimização de desempenho é uma tarefa fundamental que precisa ser executada
 
 Os requisitos de dimensionamento de hardware para casos de uso avançado devem basear-se em uma avaliação detalhada do desempenho do projeto. As características de casos de uso avançado que exigem recursos de hardware excepcionais incluem combinações de:
 
-* carga / taxa de transferência de alto conteúdo
+* alta carga/taxa de transferência de conteúdo
 * uso extensivo de código personalizado, fluxos de trabalho personalizados ou bibliotecas de software de terceiros
 * integração com sistemas externos não compatíveis
 
@@ -308,7 +308,7 @@ Aloque pelo menos 16 GB de heap e configure o fluxo de trabalho do Ativo de atua
 
 >[!NOTE]
 >
->Consulte também o [Guia de desempenho do Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html?lang=en).
+>Consulte também o [Guia de desempenho do Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html).
 
 ### Gerenciador de vários sites {#multi-site-manager}
 

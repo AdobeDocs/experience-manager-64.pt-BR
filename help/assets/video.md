@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
-feature: Vídeo
+feature: Video
 role: User
-source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '10387'
+source-wordcount: '10384'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,6 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 >* Consulte [Configuração do Dynamic Media - Modo Scene7](config-dms7.md) e [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
 
 >
-
 
 
 1. **Faça o upload de seus** vídeos do Dynamic Media fazendo o seguinte:
@@ -73,7 +72,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
          [Exibição de representações de vídeo](video-renditions.md)
 
-         [Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
+[Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gerenciar predefinições do visualizador](managing-viewer-presets.md)
       * [Publicação de ativos](publishing-dynamicmedia-assets.md)
@@ -85,7 +84,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
       * Edite as propriedades do vídeo, como título, descrição e tags, e os campos de metadados personalizados:
 
-         [Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
+[Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gerenciamento de metadados para ativos digitais](metadata.md)
       * [Esquemas de metadados](metadata-schemas.md)
@@ -163,7 +162,7 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulte também [Sobre visualizadores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) no Adobe Dynamic Media Viewers Reference Guide.
+Consulte também [Sobre visualizadores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no Adobe Dynamic Media Viewers Reference Guide.
 
 ## Prática recomendada: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 

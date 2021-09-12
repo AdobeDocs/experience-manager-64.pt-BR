@@ -2,12 +2,12 @@
 title: Baixe ativos digitais de [!DNL Adobe Experience Manager].
 description: Saiba como baixar ativos do  [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
-feature: Gerenciamento de ativos,Distribuição de ativos
+feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '807'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
 
 O `Asset Download Servlet` pode ser desativado em [!DNL Experience Manager] Instâncias de publicação atualizando a configuração do dispatcher para bloquear qualquer solicitação de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
 
-1. Para bloquear solicitações de download de ativos por meio de uma configuração de dispatcher, edite a configuração `dispatcher.any` e adicione uma regra à seção de filtro [a2/>. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)
+1. Para bloquear solicitações de download de ativos por meio de uma configuração de dispatcher, edite a configuração `dispatcher.any` e adicione uma regra à seção de filtro [a2/>. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter)
 
 1. Para desativar o componente OSGi em uma instância de publicação, acesse o console OSGi em `http://[aem_server]:[port]/system/console/components`. Localize `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e clique em **[!UICONTROL Desativar]**.
 

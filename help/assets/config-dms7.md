@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
-feature: Configuração,Modo Scene7
+feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '5594'
+source-wordcount: '5589'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Consulte [Instalando o feature pack 18912 para migração de ativos em massa](bu
 
 ## Configuração do Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-Altere a senha antes de configurar o Dynamic Media Cloud Services. Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) no aplicativo de desktop do Dynamic Media Classic para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
+Altere a senha antes de configurar o Dynamic Media Cloud Services. Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) no aplicativo de desktop do Dynamic Media Classic para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
 >[!NOTE]
 >
@@ -637,7 +637,7 @@ Se você estiver usando o Dynamic Media para geração de imagens, ou vídeo, ou
     </tr> 
     <tr> 
     <td>*</td> 
-    <td>Caracteres válidos<br /> </td> 
+    <td>Caracteres curingas<br /> </td> 
     </tr> 
     <tr> 
     <td>+</td> 
