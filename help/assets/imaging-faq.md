@@ -1,17 +1,17 @@
 ---
 title: Imagem inteligente
-description: A geração de imagens inteligentes aproveita as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento.
+description: A geração de imagens inteligentes aplica as características de exibição exclusivas de cada usuário para veicular automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
-feature: Serviços inteligentes
+feature: Smart Services
 role: User
-source-git-commit: e43e25fa1d0df2c2b5b72e49c5a54ca88c000ad2
+source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2561'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ As imagens constituem a maior parte do tempo de carregamento da página. Dessa f
 
 Aprimoramentos na versão mais recente do Smart Imaging:
 
-* Melhoria na classificação de SEO do Google para páginas da Web que utilizam a Imagem inteligente mais recente.
+* Melhoria na classificação de SEO do Google para páginas da Web que usam o Smart Imaging mais recente.
 * Atua conteúdo otimizado imediatamente (no tempo de execução).
 * Usa a tecnologia Adobe Sensei para converter de acordo com a qualidade (qlt) especificada na solicitação de imagem.
 * A Imagem inteligente pode ser desativada usando o parâmetro de URL &quot;bfc&quot;.
@@ -193,7 +193,7 @@ Por padrão, o DPR de Smart Imaging e a otimização de rede estão desativadas 
 | Europe, Middle East, Africa | 13 Aug 2021 |
 | Asia-Pacific | 22 Jul 2021 | -->
 
-1. [Use o Admin Console para criar um caso de suporte.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Use o Admin Console para criar um caso de suporte.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 1. Forneça as seguintes informações no caso de suporte:
 
    1. Nome do contato principal, email, telefone.
@@ -237,7 +237,7 @@ Não há risco para uma página da Web do cliente. No entanto, a transição par
 
 Durante a transição inicial, as imagens não armazenadas em cache acessam diretamente os servidores de origem do Adobe até que o cache seja recriado. Como resultado, o Adobe planeja lidar com algumas transições de clientes de uma vez para que o desempenho aceitável seja mantido ao obter solicitações da origem do Adobe. Para a maioria dos clientes, o cache é totalmente criado novamente na CDN dentro de 1 a 2 dias.
 
-## Como posso verificar se a geração inteligente de imagens está funcionando como esperado?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## Como posso verificar se a geração inteligente de imagens está funcionando como esperado? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Depois que sua conta for configurada com geração inteligente de imagens, carregue um URL de imagem do Dynamic Media Classic/Dynamic Media no navegador.
 1. Abra o painel do desenvolvedor do Chrome clicando em **[!UICONTROL Exibir]** > **[!UICONTROL Desenvolvedor]** > **[!UICONTROL Ferramentas do desenvolvedor]** no navegador. Ou escolha qualquer ferramenta de desenvolvedor de navegador de sua escolha.
@@ -281,3 +281,9 @@ O Smart Imaging determina se a conversão é benéfica ou não. Ele retorna a no
 * Os Componentes principais dos sites do Experience Manager são configurados por padrão para otimização do DPR. Para evitar imagens com tamanho excessivo devido à otimização do DPR de imagem inteligente do lado do servidor, `dpr=off` é sempre adicionado às imagens Dynamic Media dos Componentes principais do Experience Manager Sites .
 * Dado que o Dynamic Media Foundation Component é configurado por padrão para otimização de DPR, para evitar imagens com tamanho excessivo devido à otimização de DPR de imagem inteligente do lado do servidor, `dpr=off` é sempre adicionado às imagens do Dynamic Media Foundation Component. Mesmo que o cliente desmarque a otimização do DPR no Componente de base do DM, o DPR de imagem inteligente do lado do servidor não inicia. Em resumo, no Componente de base do DM, a otimização do DPR entra em vigor com base apenas na configuração de nível do Componente de base do DM.
 * Qualquer otimização de DPR do lado do visualizador funciona em conjunto com a otimização de DPR de imagem inteligente do lado do servidor e não resulta em imagens muito grandes. Em outras palavras, sempre que o DPR for manipulado pelo visualizador, como a exibição principal somente em um visualizador habilitado para zoom, os valores do DPR de imagem inteligente do lado do servidor não serão acionados. Da mesma forma, sempre que elementos do visualizador, como amostras e miniaturas, não tiverem tratamento com DPR, o valor do DPR de Smart Imaging do lado do servidor será acionado.
+
+>[!MORELIKETHIS]
+>
+>* [Otimização de imagem com formatos de imagem da próxima geração, WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
