@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do usuário para desenvolvimento no AEM 6.4
 breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
-feature: Desenvolvimento
+feature: Developing
 role: Developer
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 16%
@@ -100,7 +100,7 @@ ht-degree: 16%
       + [Uso de xtypes (interface clássica)](xtypes.md)
       + [Desenvolvimento do Forms (interface clássica)](developing-forms.md)
 + Gerenciamento de experiência headless{#headless}
-   + [Sem cabeçalho e híbrido com AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Sem cabeçalho e híbrido com AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Ativando a exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Aplicativos de página única{#spas}
       + [Introdução SPA e Apresentação](spa-walkthrough.md)
