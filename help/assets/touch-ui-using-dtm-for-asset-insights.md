@@ -2,12 +2,12 @@
 title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Adobe Dynamic Tag Management (DTM) para ativar o Assets Insights.
 contentOwner: AG
-feature: Insights de ativos,Relatórios de ativos
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ O Adobe Dynamic Tag Management é uma ferramenta que ativa suas ferramentas de m
 
 >[!CAUTION]
 >
->O Adobe DTM está obsoleto em favor do Adobe Experience Platform Launch e logo chegará ao [fim da vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). O Adobe recomenda que você [use o Launch para insights de ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>O DTM do Adobe está obsoleto em favor de [!DNL Adobe Experience Platform] e em breve chegará ao [fim da vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). O Adobe recomenda [usar [!DNL Adobe Experience Platform] para insights de ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Execute as etapas a seguir para ativar o Assets Insights por meio do DTM:
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Ativos > Configuração do Insights]**.
+1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Configuração do Insights]**.
 1. [Configurar AEM instância com o Cloud Service do DTM](../sites-administering/dtm.md)
 
    O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar **[!UICONTROL Configurações da conta]** no ícone Perfil . Essa etapa não é necessária do ponto de vista do Assets Insights, pois a integração do AEM Sites com o Assets Insights ainda está em andamento.
