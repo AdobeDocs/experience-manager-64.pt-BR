@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Marcação,Metadados,Tags inteligentes
+feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 12%
 
 ---
@@ -31,7 +31,7 @@ Por exemplo, não é uma boa ideia marcar todas essas imagens como *my-party* (p
 
 ![Imagens ilustrativas para exemplificar as diretrizes de treinamento](assets/do-not-localize/coherence.png)
 
-**Cobertura**: As imagens da formação devem ser suficientemente variadas. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que AEM aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
+**Cobertura**: As imagens da formação devem ser suficientemente variadas. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que [!DNL Experience Manager] aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
 
 Por exemplo, para a tag *model-down*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
 
@@ -53,7 +53,7 @@ As tags inteligentes aprimoradas são baseadas no aprendizado de modelos de imag
 
 * Incapacidade de reconhecer sutis diferenças em imagens. Por exemplo, camisas finas versus camisas fixas regulares.
 * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em T-shirts.
-* A marcação é compatível com as localidades nas quais o AEM é compatível. Para obter uma lista de idiomas, consulte as [Notas de versão dos Serviços de Conteúdo Inteligente](/help/release-notes/smart-content-service-release-notes.md).
+* A marcação é suportada nas localidades nas quais [!DNL Experience Manager] é suportado. Para obter uma lista de idiomas, consulte as [Notas de versão dos Serviços de Conteúdo Inteligente](/help/release-notes/smart-content-service-release-notes.md).
 
 Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use a Pesquisa Omni de ativos (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 

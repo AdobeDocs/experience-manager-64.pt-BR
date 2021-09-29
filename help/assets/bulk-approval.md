@@ -2,12 +2,12 @@
 title: Revisar ativos e coleções de pastas
 description: Configure fluxos de trabalho de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para buscar feedback.
 contentOwner: AG
-feature: Colaboração, Coleções
+feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '811'
 ht-degree: 24%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 24%
 
 Configure fluxos de trabalho de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para buscar feedback.
 
-Os ativos Adobe Experience Manager (AEM) permitem configurar um fluxo de trabalho de revisão ad hoc para ativos em uma pasta ou coleção e compartilhá-lo com revisores ou parceiros criativos para buscar feedback.
+Os ativos Adobe Experience Manager permitem configurar um fluxo de trabalho de revisão ad hoc para ativos em uma pasta ou coleção e compartilhá-lo com revisores ou parceiros criativos para buscar feedback.
 
 Você pode associar o fluxo de trabalho de revisão a um projeto ou criar uma tarefa de revisão independente.
 
@@ -52,7 +52,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![nome_da_revisão](assets/review_name.png)
 
 1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon no AEM Assets como Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, clique/toque no ícone **[!UICONTROL Notifications]** e selecione a tarefa de revisão na lista.
+1. Faça logon em [!DNL Experience Manager] Ativos como Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, clique/toque no ícone **[!UICONTROL Notifications]** e selecione a tarefa de revisão na lista.
 
    ![notificação](assets/notification.png)
 
@@ -96,7 +96,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon no AEM Assets como Aprovador e navegue até o console Ativos . Para aprovar ativos, toque/clique no ícone **[!UICONTROL Notifications]** e selecione a tarefa de revisão na lista.
+1. Faça logon em [!DNL Experience Manager] Ativos como Aprovador e navegue até o console Ativos . Para aprovar ativos, toque/clique no ícone **[!UICONTROL Notifications]** e selecione a tarefa de revisão na lista.
 1. Na página **[!UICONTROL Tarefa de revisão]**, examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
 1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e toque/clique no ícone **[!UICONTROL Approve/Reject]** para aprovar ou rejeitar ativos, conforme apropriado.
 

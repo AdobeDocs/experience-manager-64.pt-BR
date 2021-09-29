@@ -8,20 +8,20 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 8%
 
 ---
 
 # Gerenciar ativos de vídeo {#managing-video-assets}
 
-Saiba como gerenciar e editar os ativos de vídeo nos ativos Adobe Experience Manager (AEM). Além disso, se você tiver licença para usar o Dynamic Media, consulte a [documentação do Dynamic Media Video](video.md).
+Saiba como gerenciar e editar os ativos de vídeo nos Ativos da Adobe Experience Manager. Além disso, se você tiver licença para usar o Dynamic Media, consulte a [documentação do Dynamic Media Video](video.md).
 
 ## Fazer upload e visualizar ativos de vídeo {#uploading-and-previewing-video-assets}
 
-O AEM Assets gera visualizações para ativos de vídeo com a extensão MP4. Se o formato do ativo não for MP4, instale o FFmpeg pack para gerar uma pré-visualização. FFmpeg cria representações de vídeo do tipo OGG e MP4. Você pode visualizar essas representações na interface do usuário do AEM Assets.
+[!DNL Experience Manager] Os ativos geram visualizações para ativos de vídeo com a extensão MP4. Se o formato do ativo não for MP4, instale o FFmpeg pack para gerar uma pré-visualização. FFmpeg cria representações de vídeo do tipo OGG e MP4. Você pode visualizar essas representações na interface do usuário do [!DNL Experience Manager] Assets.
 
 1. Na pasta ou nas subpastas Ativos digitais, navegue até o local onde deseja adicionar ativos digitais.
 1. Para fazer upload do ativo, clique ou toque em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. Como alternativa, solte-o diretamente na área de ativos. Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets) para obter detalhes sobre a operação de upload.
@@ -39,16 +39,16 @@ O AEM Assets gera visualizações para ativos de vídeo com a extensão MP4. Se 
 
 ## Configuração para fazer upload de ativos com mais de 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-Por padrão, a AEM Assets não permite fazer upload de ativos com mais de 2 GB por causa de um limite de tamanho de arquivo. No entanto, é possível substituir esse limite indo até o CRXDE Lite e criando um nó no diretório `/apps`. O nó deve ter o mesmo nome de nó, estrutura de diretório e propriedades de nó comparáveis da ordem.
+Por padrão, os [!DNL Experience Manager] Ativos não permitem fazer upload de ativos com mais de 2 GB por causa de um limite de tamanho de arquivo. No entanto, é possível substituir esse limite indo até o CRXDE Lite e criando um nó no diretório `/apps`. O nó deve ter o mesmo nome de nó, estrutura de diretório e propriedades de nó comparáveis da ordem.
 
-Além da configuração do AEM Assets, altere as seguintes configurações para fazer upload de ativos grandes:
+Além da configuração [!DNL Experience Manager] do Assets, altere as seguintes configurações para fazer upload de ativos grandes:
 
 * Aumente o tempo de expiração do token. Consulte [!UICONTROL Servlet CSRF do Adobe Granite] no Console da Web em `https://[aem_server]:[port]/system/console/configMgr`. Para obter mais informações, consulte [Proteção CSRF](/help/sites-developing/csrf-protection.md).
 * Aumente o `receiveTimeout` na configuração do Dispatcher. Para obter mais informações, consulte [Configuração do Dispatcher do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
->A interface do usuário do AEM Classic não tem uma restrição de limite de tamanho de arquivo de dois gigabytes. Além disso, o fluxo de trabalho completo para vídeo grande não é totalmente compatível.
+>A interface de usuário [!DNL Experience Manager] clássica não tem uma restrição de limite de tamanho de arquivo de dois gigabytes. Além disso, o fluxo de trabalho completo para vídeo grande não é totalmente compatível.
 
 Para configurar um limite de tamanho de arquivo mais alto, execute as seguintes etapas no diretório `/apps`.
 

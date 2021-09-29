@@ -5,26 +5,26 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 36%
+source-wordcount: '403'
+ht-degree: 30%
 
 ---
 
 # Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
 
-Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar ativos na instância do AEM Assets Brand Portal (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve configurar o AEM Assets com o Brand Portal. Para obter detalhes, consulte [Configurar o AEM Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md).
+Como administrador do Adobe Experience Manager Assets, você pode publicar ativos na instância [!DNL Experience Manager Assets Brand Portal] (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve configurar [!DNL Assets] com [!DNL Brand Portal]. Para obter detalhes, consulte [Configurar [!DNL Assets] com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md).
 
 Após publicar um ativo, ele fica disponível para os usuários no Brand Portal.
 
-Se você fizer modificações subsequentes no ativo original no AEM Assets, as alterações não serão refletidas no Brand Portal até que você publique o ativo novamente. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
+Se você fizer modificações subsequentes no ativo original em [!DNL Assets], as alterações não serão refletidas no Brand Portal até que você publique o ativo novamente. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
 
-Depois que a replicação for bem-sucedida, você poderá publicar ativos, pastas e coleções no Brand Portal. Para publicar ativos no Brand Portal, siga estas etapas:
+Depois que a replicação for bem-sucedida, você poderá publicar ativos, pastas e coleções em [!DNL Brand Portal]. Para publicar ativos no Brand Portal, siga estas etapas:
 
 >[!NOTE]
 >
->A Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
+>O Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor [!DNL Experience Manager] não ocupe recursos excessivos.
 
 1. No console Assets, passe o mouse sobre os ativos desejados e selecione a opção **[!UICONTROL Publish]** nas ações rápidas.
 

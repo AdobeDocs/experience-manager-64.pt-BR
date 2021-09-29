@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
-feature: Tags inteligentes, Marcação, Pesquisa
+feature: Smart Tags,Tagging,Search
 role: User
 exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,9 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 1. Clique/toque em **[!UICONTROL Salvar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo Êxito.
 1. Navegue até a página de propriedades da imagem. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
 
-## Entender AEM resultados de pesquisa com tags inteligentes {#understand-search-results-with-smart-tags}
+## Entender os resultados da pesquisa [!DNL Experience Manager] com tags inteligentes {#understand-search-results-with-smart-tags}
 
-Por padrão, AEM pesquisa combina os termos de pesquisa com uma cláusula `AND`. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma cláusula `OR` adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes de aplicação. Por exemplo, considere pesquisar por `woman running`. Os ativos com apenas `woman` ou apenas `running` palavra-chave nos metadados não aparecem nos resultados da pesquisa por padrão. No entanto, um ativo marcado com `woman` ou `running` usando tags inteligentes aparece em tal query de pesquisa. Então os resultados da pesquisa são uma combinação de...
+Por padrão, a pesquisa [!DNL Experience Manager] combina os termos de pesquisa com uma cláusula `AND`. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma cláusula `OR` adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes de aplicação. Por exemplo, considere pesquisar por `woman running`. Os ativos com apenas `woman` ou apenas `running` palavra-chave nos metadados não aparecem nos resultados da pesquisa por padrão. No entanto, um ativo marcado com `woman` ou `running` usando tags inteligentes aparece em tal query de pesquisa. Então os resultados da pesquisa são uma combinação de...
 
 * ativos com ambas as palavras-chave, `woman` e `running` nos metadados.
 * ativos marcados com tags inteligentes com uma das palavras-chave.

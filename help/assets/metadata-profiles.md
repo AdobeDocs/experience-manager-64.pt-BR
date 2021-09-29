@@ -2,12 +2,12 @@
 title: Usar perfis de metadados para aplicar metadados padrão a todos os ativos em uma pasta
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos de pastas.
 contentOwner: AG
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1226'
 ht-degree: 16%
 
 ---
@@ -18,14 +18,14 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 ## Adicionar um perfil de metadados {#adding-a-metadata-profile}
 
-1. Toque ou clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]** e toque em **[!UICONTROL Criar]**.
+1. Toque ou clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]** e toque em **[!UICONTROL Criar]**.
 1. Insira um título para o Perfil de metadados, por exemplo, Metadados de amostra, e clique em **[!UICONTROL Enviar]**. O **[!UICONTROL Editar formulário]** para o Perfil de metadados é exibido.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
 1. Clique em um componente e configure suas propriedades na guia **[!UICONTROL Settings]**. Por exemplo, clique no componente **[!UICONTROL Description]** e edite suas propriedades.
 
-   ![chlimage_1-401](assets/chlimage_1-481.png)
+   ![chlimage_1-481](assets/chlimage_1-481.png)
 
    Edite as seguintes propriedades para o componente **[!UICONTROL Description]**:
 
@@ -34,7 +34,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   O valor especificado para **[!UICONTROL Mapear para propriedade]** é armazenado como uma propriedade no nó de metadados do ativo. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome do  **[!UICONTROL Mapear para propriedade]**, o AEM Assets armazena o valor  `dc:desc` no nó de metadados do ativo.
+   O valor especificado para **[!UICONTROL Mapear para propriedade]** é armazenado como uma propriedade no nó de metadados do ativo. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome do  **[!UICONTROL Mapear para propriedade]**, o  [!DNL Experience Manager] Assets armazena o valor  `dc:desc` no nó de metadados do ativo.
 
    * **[!UICONTROL Valor]** padrão: Use essa propriedade para adicionar um valor padrão para o componente de metadados. Por exemplo, se você especificar &quot;Minha descrição&quot;, esse valor será atribuído à propriedade `dc:desc` no nó de metadados do ativo.
 
@@ -102,7 +102,7 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 #### Aplicar perfis de metadados a pastas da interface do usuário Perfis {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
+1. Toque no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja aplicar a uma ou várias pastas.
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -122,7 +122,7 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 ### Aplicar um perfil de metadados globalmente {#applying-a-metadata-profile-globally}
 
-Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado AEM ativos em qualquer pasta tenha o perfil selecionado aplicado. Para aplicar um perfil de metadados globalmente, siga estas etapas:
+Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado nos ativos [!DNL Experience Manager] em qualquer pasta tenha o perfil selecionado aplicado. Para aplicar um perfil de metadados globalmente, siga estas etapas:
 
 1. Faça uma das seguintes opções:
 
@@ -144,7 +144,7 @@ Remova um perfil de metadados a uma pasta do menu **[!UICONTROL Ferramentas]** o
 
 Para remover um perfil de metadados de pastas por meio da interface do usuário de Perfis, siga estas etapas:
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
+1. Toque no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja remover de uma pasta ou de várias pastas.
 1. Toque em **[!UICONTROL Remover perfil de metadados da(s) pasta(s)]** e selecione uma ou várias pastas que deseja usar para remover um perfil, em seguida, toque em **[!UICONTROL Concluído]**.
 
@@ -152,7 +152,7 @@ Para remover um perfil de metadados de pastas por meio da interface do usuário 
 
 ### Remover perfis de metadados das pastas por meio de Propriedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
+1. Toque no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
 1. Na pasta , toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Metadata Profiles]** e selecione **[!UICONTROL None]** no menu suspenso. Toque em **[!UICONTROL Salvar]**.
 

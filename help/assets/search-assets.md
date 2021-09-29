@@ -1,20 +1,20 @@
 ---
 title: Pesquisar ativos no AEM
-description: Saiba como encontrar os ativos necessários no AEM usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
+description: Saiba como localizar os ativos necessários em [!DNL Experience Manager] usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
 contentOwner: AG
-feature: Pesquisar,Metadados
+feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '549'
 ht-degree: 2%
 
 ---
 
-# Pesquisar ativos no AEM {#search-assets-in-aem}
+# Pesquisar ativos em [!DNL Experience Manager] {#search-assets-in-aem}
 
-Saiba como encontrar os ativos necessários no AEM usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
+Saiba como encontrar os ativos necessários em [!DNL Experience Manager] usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 
 Use o painel Filtros para pesquisar ativos, pastas, tags e metadados. Você pode pesquisar partes de uma string usando o asterisco curinga.
 

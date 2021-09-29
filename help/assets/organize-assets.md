@@ -2,12 +2,12 @@
 title: Organize seus ativos digitais
 description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
-feature: Gerenciamento de ativos,Pesquisar
+feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e podem ser pesquisados. A pesquisa permite uma filtragem sofisticada em ativos e respeita totalmente as permissões apropriadas. Os metadados são abordados detalhadamente em metadados no Gerenciamento de ativos digitais.
 
-O AEM Assets é compatível com várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e ad hoc, usando, por exemplo, tags . Os usuários podem editar tags no Editor de ativos DAM, onde os ativos secundários, as representações e os metadados são exibidos.
+[!DNL Experience Manager] O Assets é compatível com várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e ad hoc, usando, por exemplo, tags . Os usuários podem editar tags no Editor de ativos DAM, onde os ativos secundários, as representações e os metadados são exibidos.
 
 ## Organizar ativos em pastas {#organize-using-folders}
 
@@ -36,7 +36,7 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
    * **Pastas baseadas em data**  - contém ativos digitais com base em uma data de criação ou em uma data da última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue a funcionar. Por exemplo, os perfis de processamento atribuídos continuam a funcionar.
-* Se um ativo já estiver publicado, você usa AEM para movê-lo para outra pasta e publicar novamente de seu novo local, o local do ativo publicado original ainda estará disponível, juntamente com o ativo recém-republicado. O ativo publicado original, no entanto, é *lost* para AEM e não pode ter a publicação desfeita. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois o mova para uma pasta diferente.
+* Se um ativo já estiver publicado, você usará [!DNL Experience Manager] para mover o ativo para outra pasta e republicar de seu novo local, o local do ativo publicado original ainda estará disponível, juntamente com o ativo recém-republicado. O ativo publicado original, no entanto, é *lost* para [!DNL Experience Manager] e não pode ter a publicação cancelada. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois o mova para uma pasta diferente.
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 

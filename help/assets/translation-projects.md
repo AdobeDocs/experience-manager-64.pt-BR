@@ -2,12 +2,12 @@
 title: Criação de projetos de tradução
 description: Saiba como criar projetos de tradução no AEM.
 contentOwner: AG
-feature: Tradução
+feature: Translation
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1939'
 ht-degree: 23%
 
 ---
@@ -282,9 +282,9 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
 ## Criação de cópias temporárias de idioma {#creating-temporary-language-copies}
 
-Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com as versões editadas dos ativos originais, a cópia de idioma existente é preservada até que você aprove o(s) ativo(s) traduzido(s). O AEM Assets armazena o(s) ativo(s) recém-traduzido(s) em um local temporário e atualiza a cópia de idioma existente após você aprovar explicitamente o(s) ativo(s). Se você rejeitar o(s) ativo(s), a cópia de idioma permanecerá inalterada.
+Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com as versões editadas dos ativos originais, a cópia de idioma existente é preservada até que você aprove o(s) ativo(s) traduzido(s). [!DNL Experience Manager] Os ativos armazenam o(s) ativo(s) recém-traduzido(s) em um local temporário e atualizam a cópia de idioma existente após você aprovar explicitamente o(s) ativo(s). Se você rejeitar o(s) ativo(s), a cópia de idioma permanecerá inalterada.
 
-1. Clique/toque na pasta raiz de origem, em **[!UICONTROL Cópias de idioma]**, para as quais você já criou uma cópia de idioma e clique/toque em **[!UICONTROL Revelar no Assets]** para abrir a pasta nos AEM Assets.
+1. Clique/toque na pasta raiz de origem, em **[!UICONTROL Cópias de idioma]**, para as quais você já criou uma cópia de idioma e clique/toque em **[!UICONTROL Revelar no Assets]** para abrir a pasta nos Assets.[!DNL Experience Manager]
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 

@@ -1,26 +1,26 @@
 ---
-title: Experiência da página inicial do AEM Assets
-description: Personalize a página inicial do AEM Assets para obter uma experiência rica em tela de boas-vindas, incluindo um instantâneo das atividades recentes em torno dos ativos.
+title: '[!DNL Experience Manager Assets] Experiência da página inicial'
+description: Personalize a Página inicial do Assets para obter uma experiência rica em tela de boas-vindas, incluindo um instantâneo das atividades recentes em torno dos ativos.
 contentOwner: AG
-feature: Ferramentas para desenvolvedores, Gerenciamento de ativos
+feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
 
-# Experiência da página inicial do AEM Assets {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Experiência da página inicial {#aem-assets-home-page-experience}
 
-Personalize a página inicial do AEM Assets para obter uma experiência rica em tela de boas-vindas, incluindo um instantâneo das atividades recentes em torno dos ativos.
+Personalize a [!DNL Experience Manager Assets] página inicial para obter uma experiência rica em tela de boas-vindas, incluindo um instantâneo das atividades recentes em torno dos ativos.
 
-A página inicial dos Ativos da Adobe Experience Manager (AEM) fornece uma experiência de tela de boas-vindas rica e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram visualizados ou carregados recentemente.
+A página inicial [!DNL Adobe Experience Manager Assets] fornece uma experiência de tela de boas-vindas rica e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram visualizados ou carregados recentemente.
 
 A Página inicial dos Ativos está desativada por padrão. Para habilitá-lo, execute as seguintes etapas:
 
-1. Para acessar AEM Configuration Manager, clique em **[!UICONTROL Tools > Operation > Web Console]**.
+1. Para acessar o [!DNL Experience Manager] Configuration Manager, clique em **[!UICONTROL Tools > Operation > Web Console]**.
 1. Abra o serviço **Day CQ DAM Event Recorder**.
 1. Selecione **[!UICONTROL Ativar este serviço]** para ativar a gravação de atividades.
 
@@ -70,7 +70,7 @@ Esta seção aparece abaixo da seção de Boas-vindas e exibe os widgets prontos
 
 **Recente**: O widget  **Recentemente** exibido nesta seção exibe entidades acessadas recentemente pelo usuário conectado, incluindo pastas, coleções e projetos.
 
-**Discover**: O  **** Newwidget nesta seção exibe os ativos e as representações carregados recentemente na instância do AEM Assets.
+**Discover**: O  **** Newwidget nesta seção exibe os ativos e as representações carregados recentemente na  [!DNL Assets] instância.
 
 Para habilitar a limpeza dos dados de atividade do usuário, habilite o **DAM Event Purge Service** no Configuration Manager. Após habilitar esse serviço, as atividades do usuário conectado que excedem um número especificado são excluídas pelo sistema.
 
@@ -78,7 +78,7 @@ A tela de Boas-vindas fornece recursos de navegação fáceis, por exemplo, íco
 
 >[!NOTE]
 >
->Habilitar o Day CQ DAM Event Recorder e os serviços de limpeza de eventos DAM aumenta as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no servidor de AEM. A carga adicional no servidor AEM pode afetar seu desempenho.
+>Ativar o Day CQ DAM Event Recorder e os serviços de limpeza de eventos DAM aumentam as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no servidor [!DNL Experience Manager]. A carga adicional no servidor [!DNL Experience Manager] pode afetar seu desempenho.
 
 >[!CAUTION]
 >

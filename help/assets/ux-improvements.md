@@ -1,28 +1,28 @@
 ---
 title: Aprimoramentos na experiência do usuário em ativos
-description: Este artigo descreve as melhorias na experiência do usuário no AEM 6.4 Assets.
+description: Este artigo descreve as melhorias na experiência do usuário nos ativos  [!DNL Experience Manager] 6.4.
 contentOwner: AG
-feature: Informações da versão
+feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
 
 # Aprimoramentos na experiência do usuário em ativos {#user-experience-enhancements-in-assets}
 
-O AEM 6.4 Assets inclui várias melhorias de usabilidade que proporcionam uma experiência contínua do usuário e melhora a produtividade. O aumento na velocidade com que você pode criar/gerenciar seu conteúdo do mercado melhora a velocidade do conteúdo da empresa.
+[!DNL Experience Manager] 6.4 Os ativos incluem várias melhorias de usabilidade que proporcionam uma experiência contínua do usuário e melhoram a produtividade. O aumento na velocidade com que você pode criar/gerenciar seu conteúdo do mercado melhora a velocidade do conteúdo da empresa.
 
 A interface é mais ágil, o que ajuda a gerenciar com eficiência um grande portfólio de ativos. Você pode pesquisar, exibir, classificar e rolar rapidamente por uma longa lista de itens.
 
-É possível personalizar as várias exibições - Cartão, Lista e Coluna. Por exemplo, você pode configurar o tamanho das miniaturas que deseja exibir na exibição de Cartão. Para a exibição em Lista, é possível configurar o nível de detalhes que deseja exibir para os ativos na lista. O AEM 6.4 Assets inclui uma nova visualização em árvore que permite navegar convenientemente pelo repositório de Ativos e localizar seus ativos.
+É possível personalizar as várias exibições - Cartão, Lista e Coluna. Por exemplo, você pode configurar o tamanho das miniaturas que deseja exibir na exibição de Cartão. Para a exibição em Lista, é possível configurar o nível de detalhes que deseja exibir para os ativos na lista. [!DNL Experience Manager] 6.4 Os ativos incluem uma nova visualização em árvore que permite navegar convenientemente pelo repositório de Ativos e localizar seus ativos.
 
 ## Carregamento lento {#lazy-loading}
 
-Quando você navega/pesquisa por ativos no AEM 6.4 Assets, até 200 ativos são exibidos de cada vez. Você pode rolar os resultados mais rapidamente, o que é especialmente útil ao navegar por uma longa lista de resultados. Como um número significativo de ativos é carregado de cada vez, a experiência de navegação é tranquila.
+Ao procurar/procurar ativos em [!DNL Experience Manager] 6.4 Assets, até 200 ativos são exibidos de cada vez. Você pode rolar os resultados mais rapidamente, o que é especialmente útil ao navegar por uma longa lista de resultados. Como um número significativo de ativos é carregado de cada vez, a experiência de navegação é tranquila.
 
 Se você tocar/clicar em um ativo para revisar sua página de detalhes, é possível retornar à página de resultados simplesmente tocando/clicando no botão Voltar na barra de ferramentas.
 
@@ -66,7 +66,7 @@ Além das exibições Cartão e Lista, agora é possível navegar até a página
 
 ## Exibição em árvore {#tree-view}
 
-AEM 6.4 Os ativos incluem uma visualização em árvore que permite navegar convenientemente pela hierarquia de ativos e navegar até o ativo ou a pasta desejada.
+[!DNL Experience Manager] 6.4 Os ativos incluem uma visualização em Árvore que permite navegar convenientemente pela hierarquia de ativos e navegar até o ativo ou a pasta desejada.
 
 Para abrir a exibição em Árvore, toque/clique no ícone Navegação global no `Assets UI` e escolha **[!UICONTROL Árvore de conteúdo]** no menu.
 

@@ -2,12 +2,12 @@
 title: Preparação de ativos para tradução
 description: Crie pastas raiz de idioma para preparar a tradução de ativos multilíngues.
 contentOwner: AG
-feature: Projetos,Tradução
+feature: Projects,Translation
 role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '448'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Ativos multilíngues significa ativos com binários, metadados e tags em vários idiomas. Geralmente, os binários, metadados e tags de ativos existem em um idioma, que é traduzido para outros idiomas para uso em projetos multilíngues.
 
-Nos ativos Adobe Experience Manager (AEM), os ativos multilíngues são incluídos nas pastas, onde cada pasta contém os ativos em um idioma diferente.
+No Adobe Experience Manager Assets, os ativos multilíngues são incluídos nas pastas, onde cada pasta contém os ativos em um idioma diferente.
 
 Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, */content/dam/it* é a raiz do idioma italiano para a cópia de idioma italiano. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](preparing-assets-for-translation.md#creating-a-language-root) para que o idioma correto seja direcionado quando as traduções de ativos de origem forem executadas.
 
@@ -61,7 +61,7 @@ Por exemplo, a página raiz da cópia de idioma italiano da hierarquia de amostr
 
 ## Exibindo Raízes de Idioma {#viewing-language-roots}
 
-A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas no AEM Assets.
+A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas no [!DNL Experience Manager] Assets.
 
 1. No console Assets, selecione o idioma principal para o qual deseja criar cópias de idioma.
 1. Clique ou toque no ícone de Navegação global e escolha **[!UICONTROL Referências]** para abrir o painel Referência.

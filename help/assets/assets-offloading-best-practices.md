@@ -1,13 +1,13 @@
 ---
 title: Práticas recomendadas de descarregamento de ativos
-description: Casos de uso recomendados e práticas recomendadas para descarregar a assimilação de ativos e workflows de replicação no AEM Assets.
+description: Casos de uso recomendados e práticas recomendadas para descarregar a assimilação de ativos e workflows de replicação no  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Esse recurso foi descontinuado AEM 6.4 e é removido no AEM 6.5. Planeje de acordo.
+>Este recurso está obsoleto [!DNL Experience Manager] 6.4 em diante e é removido em [!DNL Experience Manager] 6.5. Planeje de acordo.
 
-Lidar com arquivos grandes e executar fluxos de trabalho nos ativos Adobe Experience Manager (AEM) pode consumir recursos consideráveis de CPU, memória e E/S. Especificamente, o tamanho dos ativos, os fluxos de trabalho, o número de usuários e a frequência da assimilação de ativos podem afetar o desempenho geral do sistema. As operações com mais recursos incluem a assimilação de ativos AEM e os workflows de replicação. O uso intenso desses workflows em uma única instância de criação de AEM pode afetar negativamente a eficiência da criação.
+O manuseio de arquivos grandes e a execução de fluxos de trabalho no Adobe Experience Manager Assets podem consumir recursos consideráveis de CPU, memória e E/S. Especificamente, o tamanho dos ativos, os fluxos de trabalho, o número de usuários e a frequência da assimilação de ativos podem afetar o desempenho geral do sistema. As operações com mais recursos incluem a assimilação de ativos e os workflows de replicação. O uso intenso desses workflows em uma única instância de criação pode afetar negativamente a eficiência da criação.
 
 Descarregar essas tarefas em instâncias dedicadas de trabalho pode reduzir os custos indiretos de CPU, memória e E/S. Em geral, a ideia por trás da descarga é distribuir tarefas que consomem recursos intensivos de CPU/Memória/E para instâncias de trabalho dedicadas. As seções a seguir incluem casos de uso recomendados para descarregamento de Ativos.
 
-## Descarregamento do AEM Assets {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] Descarregamento {#aem-assets-offloading}
 
-O AEM Assets implementa uma extensão de fluxo de trabalho específica de ativo nativo para descarregamento. Ele se baseia na extensão de fluxo de trabalho genérica fornecida pela estrutura de descarregamento, mas inclui recursos adicionais específicos de ativos na implementação. O objetivo da descarga de Ativos é executar com eficiência o fluxo de trabalho do Ativo de atualização DAM em um ativo carregado. O descarregamento de ativos permite obter mais controle dos workflows de assimilação.
+[!DNL Experience Manager] Os ativos implementam uma extensão de fluxo de trabalho específica de ativo nativo para descarregamento. Ele se baseia na extensão de fluxo de trabalho genérica fornecida pela estrutura de descarregamento, mas inclui recursos adicionais específicos de ativos na implementação. O objetivo da descarga de Ativos é executar com eficiência o fluxo de trabalho do Ativo de atualização DAM em um ativo carregado. O descarregamento de ativos permite obter mais controle dos workflows de assimilação.
 
-## Componentes de descarregamento do AEM Assets {#aem-assets-offloading-components}
+## [!DNL Experience Manager] Componentes de descarregamento de ativos {#aem-assets-offloading-components}
 
 O diagrama a seguir descreve os componentes principais no processo de descarregamento de ativos:
 
@@ -40,7 +40,7 @@ O fluxo de trabalho DAM Update Asset Offloading é executado no servidor princip
 
 O gerenciador de tarefas distribui novos trabalhos para instâncias de trabalho. Ao projetar o mecanismo de distribuição, é importante levar a ativação do tópico em consideração. As tarefas só podem ser atribuídas a instâncias em que o tópico da tarefa está ativado. Desative o tópico `com/adobe/granite/workflow/offloading` no principal e ative-o no trabalhador para garantir que o trabalho seja atribuído ao trabalhador.
 
-### Descarga de AEM {#aem-offloading}
+### [!DNL Experience Manager] descarregamento {#aem-offloading}
 
 A estrutura de descarregamento identifica tarefas de descarregamento de workflow atribuídas a instâncias de trabalhador e usa replicação para transportá-las fisicamente, incluindo sua carga útil (por exemplo, imagens a serem assimiladas), para trabalhadores.
 
@@ -50,7 +50,7 @@ Depois que um trabalho é gravado no trabalhador, o gerenciador de trabalhos cha
 
 ## Topologia do Sling {#sling-topology}
 
-A topologia do Sling agrupa instâncias AEM e permite que elas estejam cientes umas das outras, independentemente da persistência subjacente. Essa característica da topologia Sling permite criar topologias para cenários não clusterizados, clusterizados e mistos. Uma instância pode expor propriedades à topologia inteira. A estrutura fornece retornos de chamada para acompanhar as alterações na topologia (instâncias e propriedades). A topologia Sling fornece a base para trabalhos distribuídos Sling.
+A topologia Sling agrupa [!DNL Experience Manager] instâncias e permite que elas estejam cientes umas das outras, independentemente da persistência subjacente. Essa característica da topologia Sling permite criar topologias para cenários não clusterizados, clusterizados e mistos. Uma instância pode expor propriedades à topologia inteira. A estrutura fornece retornos de chamada para acompanhar as alterações na topologia (instâncias e propriedades). A topologia Sling fornece a base para trabalhos distribuídos Sling.
 
 ### Sling trabalhos distribuídos {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Se você concluir que a descarga de ativos é uma abordagem apropriada para voc�
 
 ### Implantação recomendada de descarregamento de ativos {#recommended-assets-offloading-deployment}
 
-Com o AEM e o Oak, há vários cenários de implantação possíveis. Para descarregamento de Ativos, recomenda-se uma implantação baseada em TarMK com um armazenamento de dados compartilhado. O diagrama a seguir descreve a implantação recomendada:
+Com [!DNL Experience Manager] e Oak, há vários cenários de implantação possíveis. Para descarregamento de Ativos, recomenda-se uma implantação baseada em TarMK com um armazenamento de dados compartilhado. O diagrama a seguir descreve a implantação recomendada:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

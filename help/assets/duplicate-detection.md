@@ -2,19 +2,19 @@
 title: Ativar a detecção de duplicatas
 description: Saiba como habilitar a detecção de ativos duplicados no AEM.
 contentOwner: AG
-feature: Gerenciamento de ativos,Relatórios de ativos
+feature: Asset Management,Asset Reports
 role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
 # Ativar a detecção de duplicatas {#enabling-duplicate-detection}
 
-Se você tentar fazer upload de um ativo que existe no Adobe Experience Manager (AEM) Assets, o recurso de detecção de duplicatas o identificará como duplicado. A detecção de duplicados está desabilitada por padrão. Para ativar o recurso, execute as seguintes etapas:
+Se você tentar fazer upload de um ativo que existe no Adobe Experience Manager Assets, o recurso de detecção de duplicatas o identificará como duplicado. A detecção de duplicados está desabilitada por padrão. Para ativar o recurso, execute as seguintes etapas:
 
 1. Abra a página **[!UICONTROL Configuração do Adobe Experience Manager Web Console]** em `https://[server]:[port]/system/console/configMgr`.
 1. Edite a configuração do servlet **[!UICONTROL Day CQ DAM Create Asset]**.
@@ -22,7 +22,7 @@ Se você tentar fazer upload de um ativo que existe no Adobe Experience Manager 
 
    ![Selecione a opção detectar duplicata no servlet](assets/chlimage_1-377.png)
 
-O recurso detectar duplicata agora está ativado no AEM Assets. Quando um usuário tenta fazer upload de um ativo que existe no AEM, o sistema verifica se há conflito e o indica. Os ativos são identificados usando o hash SHA-1 armazenado em `jcr:content/metadata/dam:sha1`, o que significa que os ativos duplicados são detectados independentemente dos nomes de arquivo.
+O recurso detectar duplicata agora está ativado nos [!DNL Experience Manager] Ativos. Quando um usuário tenta fazer upload de um ativo que existe no AEM, o sistema verifica se há conflito e o indica. Os ativos são identificados usando o hash SHA-1 armazenado em `jcr:content/metadata/dam:sha1`, o que significa que os ativos duplicados são detectados independentemente dos nomes de arquivo.
 
 >[!MORELIKETHIS]
 >

@@ -1,25 +1,24 @@
 ---
 title: Integração de ativos ao fluxo de atividade
-description: Descreve os recursos de gravação do AEM e como configurar o AEM para gravar eventos específicos.
+description: Descreve os recursos de gravação de [!DNL Experience Manager] and how to configure [!DNL Experience Manager] para registrar eventos específicos.
 contentOwner: AG
 feature: Asset Management
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 1%
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
+# Integração de ativos ao fluxo de atividade {#integrating-assets-with-activity-stream}
 
-# Integração de ativos com o fluxo de atividade {#integrating-assets-with-activity-stream}
-
-Os usuários do Adobe Experience Manager (AEM) Assets executam várias ações, como criar, carregar e excluir Ativos. Essas ações podem ser registradas para que você possa fornecer um histórico do que foi feito por um usuário. Esta seção descreve os recursos de gravação do AEM e como configurar o AEM para gravar eventos específicos.
+Os usuários do Adobe Experience Manager Assets executam várias ações, como criar, carregar e excluir Ativos. Essas ações podem ser registradas para que você possa fornecer um histórico do que foi feito por um usuário. Esta seção descreve os recursos de gravação de [!DNL Experience Manager] e como configurar [!DNL Experience Manager] para registrar eventos específicos.
 
 ## Considerações de desempenho e comportamento padrão {#performance-considerations-and-default-behavior}
 
-Essa integração pode consumir CPU e espaço em disco, por exemplo, ao fazer importação em massa. Por esses motivos, a integração do AEM Assets com o fluxo de atividade é desativada por padrão.
+Essa integração pode consumir CPU e espaço em disco, por exemplo, ao fazer importação em massa. Por esses motivos, a integração do [!DNL Experience Manager] Assets com o Fluxo de atividade é desabilitada por padrão.
 
 ## Eventos de ação suportados {#supported-action-events}
 
@@ -41,9 +40,9 @@ Os seguintes eventos podem ser configurados para serem registrados:
 * Subativo atualizado (SUBASSET_UPDATED)
 * Subativo removido (SUBASSET_REMOVED)
 
-## Configuração da Gravação de Eventos do AEM Assets {#configuring-aem-assets-events-recording}
+## Configurar o registro de eventos [!DNL Assets] {#configuring-aem-assets-events-recording}
 
-O [Console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso ao ajuste do Gravador de Eventos do AEM Assets. Para configurar o Gravador de eventos do AEM Assets, proceda da seguinte maneira:
+O [console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso ao ajuste [!DNL Assets] do Gravador de Eventos. Para configurar o Gravador de Eventos [!DNL Assets], proceda da seguinte maneira:
 
 1. Navegue até **[!UICONTROL Console da Web]**
 

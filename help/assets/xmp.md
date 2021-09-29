@@ -1,30 +1,30 @@
 ---
 title: Metadados de XMP
-description: Saiba mais sobre o padrão de metadados de XMP (Plataforma de metadados extensível) usado pelo AEM Assets para gerenciamento de metadados. O XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
+description: Saiba mais sobre o padrão de metadados de XMP (Plataforma de metadados extensível) usado por [!DNL Experience Manager] Ativos para gerenciamento de metadados. O XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
 contentOwner: AG
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '810'
 ht-degree: 19%
 
 ---
 
 # Metadados XMP {#xmp-metadata}
 
-XMP (Plataforma de metadados extensível) é o padrão de metadados usado pelo AEM Assets para todo o gerenciamento de metadados. O XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
+XMP (Plataforma de metadados extensível) é o padrão de metadados usado pelos [!DNL Experience Manager] Ativos para todo o gerenciamento de metadados. O XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
 
-Além de oferecer a codificação de metadados universais que pode ser incorporada a todos os formatos de arquivo, o XMP fornece um [modelo de conteúdo avançado](xmp.md#xmp-core-concepts) e é [suportado pelo Adobe](xmp.md#advantages-of-xmp) e por outras empresas, para que os usuários de XMP em combinação com o AEM Assets tenham uma plataforma poderosa para desenvolver.
+Além de oferecer a codificação de metadados universais que pode ser incorporada a todos os formatos de arquivo, o XMP fornece um [modelo de conteúdo avançado](xmp.md#xmp-core-concepts) e é [suportado pelo Adobe](xmp.md#advantages-of-xmp) e por outras empresas, para que os usuários de XMP em combinação com [!DNL Experience Manager] Ativos tenham uma plataforma poderosa para desenvolver.
 
 A [XMP especificação](https://www.adobe.com/devnet/xmp.html) está disponível no Adobe.
 
 ## O que é XMP? {#what-is-xmp}
 
-A AEM Assets oferece suporte nativo ao XMP - a Plataforma de metadados extensível liderada pelo Adobe. XMP é um padrão para processar e armazenar metadados padronizados e proprietários em ativos digitais. O XMP foi projetado para ser o padrão comum que permite que vários aplicativos funcionem com metadados de maneira eficaz.
+[!DNL Experience Manager] Os ativos oferecem suporte nativo ao XMP - a Plataforma de metadados extensível liderada pelo Adobe. XMP é um padrão para processar e armazenar metadados padronizados e proprietários em ativos digitais. O XMP foi projetado para ser o padrão comum que permite que vários aplicativos funcionem com metadados de maneira eficaz.
 
-Os profissionais de produção, por exemplo, usam o suporte XMP integrado nos aplicativos Adobe para transmitir informações em vários formatos de arquivo. O repositório AEM Assets extrai os metadados XMP e os usa para gerenciar o ciclo de vida do conteúdo e oferece a capacidade de criar fluxos de trabalho de automação.
+Os profissionais de produção, por exemplo, usam o suporte XMP integrado nos aplicativos Adobe para transmitir informações em vários formatos de arquivo. O repositório [!DNL Experience Manager] Assets extrai os metadados XMP e os usa para gerenciar o ciclo de vida do conteúdo e oferece a capacidade de criar workflows de automação.
 
 XMP padroniza como os metadados são definidos, criados e processados fornecendo um modelo de dados, um modelo de armazenamento e esquemas. Todos esses conceitos são abordados nesta seção.
 

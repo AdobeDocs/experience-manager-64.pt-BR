@@ -2,12 +2,12 @@
 title: Metadados de edição em massa de vários ativos e coleções
 description: Saiba como editar os metadados de muitos ativos e coleções simultaneamente para propagar rapidamente alterações de metadados comuns.
 contentOwner: AG
-feature: Gerenciamento de ativos,Metadados,Coleções
+feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '433'
 ht-degree: 13%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 13%
 
 Saiba como editar os metadados de vários ativos e coleções simultaneamente para propagar rapidamente alterações de metadados comuns.
 
-Os ativos Adobe Enterprise Manager (AEM) permitem editar os metadados de vários ativos simultaneamente, para que você possa propagar rapidamente alterações de metadados comuns a ativos em massa. Também é possível editar os metadados de várias coleções em massa.
+Os Ativos do Adobe Enterprise Manager permitem editar os metadados de vários ativos simultaneamente, para que você possa propagar rapidamente alterações de metadados comuns a ativos em massa. Também é possível editar os metadados de várias coleções em massa.
 
 Use a página de propriedades para executar alterações de metadados em vários ativos ou coleções:
 
@@ -47,7 +47,7 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
 
 ## Configurar limite para atualização de metadados em massa {#configure-limit-for-bulk-metadata-update}
 
-Para evitar uma situação semelhante ao DOS, o AEM limita o número de parâmetros suportados em uma solicitação do Sling. Ao atualizar metadados de muitos ativos de uma só vez, você pode atingir o limite e os metadados não são atualizados para mais ativos. AEM gera o seguinte aviso nos logs:
+Para evitar uma situação semelhante ao DOS, [!DNL Experience Manager] limita o número de parâmetros suportados em uma solicitação do Sling. Ao atualizar metadados de muitos ativos de uma só vez, você pode atingir o limite e os metadados não são atualizados para mais ativos. [!DNL Experience Manager] gera o seguinte aviso nos logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 

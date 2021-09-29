@@ -1,20 +1,20 @@
 ---
 title: Práticas recomendadas de formato de arquivo de ativos
-description: Práticas recomendadas para o suporte a arquivos no AEM Assets.
+description: Práticas recomendadas para suporte a arquivos no  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas de formato de arquivo de ativos {#assets-file-format-best-practices}
 
-A AEM Assets oferece suporte a várias bibliotecas de formatos de arquivo proprietárias e de terceiros para atender a diversos requisitos de suporte de arquivos dos usuários. As bibliotecas Adobe compatíveis incluem Adobe Camera Raw, Gibson, Adobe PDF Rasterizer e Adobe InDesign Server. Além disso, o AEM Assets oferece suporte a bibliotecas de terceiros, incluindo o ImageMagick, o TDozeMonkeys e assim por diante.
+[!DNL Experience Manager Assets] O suporta muitas bibliotecas de formatos de arquivo proprietárias e de terceiros para atender a diversos requisitos de suporte de arquivos dos usuários. As bibliotecas Adobe compatíveis incluem Adobe Camera Raw, Gibson, Adobe PDF Rasterizer e Adobe InDesign Server. Além disso, [!DNL Assets] suporta bibliotecas de terceiros, incluindo ImageMagick, TwelveMonkeys e assim por diante.
 
 Para os formatos de arquivo compatíveis, consulte [Formatos compatíveis com ativos](assets-formats.md).
 
@@ -27,7 +27,7 @@ Para obter o melhor desempenho, o Adobe recomenda o uso da biblioteca Adobe Came
 
 A biblioteca Adobe Camera Raw oferece suporte ao perfil de cores CMYK como entrada. No entanto, ele gera a saída no espaço de cores RGB e suporta a saída somente no formato JPEG. Ele não retém o espaço de cores do arquivo de origem (por exemplo, CMYK) nas miniaturas.
 
-Para obter mais informações, consulte [Suporte Camera Raw](camera-raw.md) no AEM Assets.
+Para obter mais informações, consulte [Suporte Camera Raw](camera-raw.md) em [!DNL Assets].
 
 ## Biblioteca Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -41,7 +41,7 @@ Miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qualida
 
 ## Servidor Adobe InDesign {#adobe-indesign-cc-server}
 
-O Adobe recomenda usar o servidor Adobe InDesign para extrair representações específicas do Adobe InDesign, como IDML e HTML. Para obter mais informações, consulte [Adicionar ativos AEM como referências no Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+O Adobe recomenda usar o servidor Adobe InDesign para extrair representações específicas do Adobe InDesign, como IDML e HTML. Para obter mais informações, consulte [Adicionar [!DNL Experience Manager] ativos como referências no Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -58,7 +58,7 @@ O Adobe recomenda usar a biblioteca ImageMagick nos seguintes cenários:
 * Preservação da transparência
 * Para processar arquivos PSD e PSB
 
-Para saber como configurar a biblioteca ImageMagic no AEM, consulte [Usando o ImageMagick](media-handlers.md#an-example-using-imagemagick). Para obter um uso ideal, consulte [Práticas recomendadas para configurar o ImageMagick](best-practices-for-imagemagick.md).
+Para saber como configurar a biblioteca ImageMagic em [!DNL Experience Manager], consulte [Usando o ImageMagick](media-handlers.md#an-example-using-imagemagick). Para obter um uso ideal, consulte [Práticas recomendadas para configurar o ImageMagick](best-practices-for-imagemagick.md).
 
 ## Biblioteca de transcodificação de imagem {#image-transcoding-library}
 

@@ -1,20 +1,20 @@
 ---
 title: Pesquisa de texto completo GQL
-description: Explore o recurso de pesquisa de texto completo do GQL no AEM Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
+description: Explore o recurso de pesquisa de texto completo do GQL no  [!DNL Experience Manager] Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 contentOwner: AG
-feature: Pesquisar,Metadados
+feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
 
 # Pesquisa de texto completo GQL {#gql-full-text-search}
 
-Explore o recurso de pesquisa de texto completo do GQL no AEM Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
+Explore o recurso de pesquisa de texto completo do GQL no [!DNL Experience Manager] Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 
 O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base em metadados específicos, como título, descrição, autor e assim por diante.
 
@@ -38,7 +38,7 @@ Por exemplo, para procurar ativos com o título &quot;Target&quot;, execute esta
 
    ![gql_search](assets/gql_search.png)
 
-1. Pressione **[!UICONTROL Enter]**. A interface do usuário do AEM Assets exibe apenas os ativos cujo título corresponde exatamente ao &quot;Target&quot;.
+1. Pressione **[!UICONTROL Enter]**. A interface do usuário [!DNL Assets] exibe apenas os ativos cujo título corresponde exatamente a &quot;Target&quot;.
 
 O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base no seguinte:
 
@@ -112,7 +112,6 @@ Título: &quot;Reunião&quot;;
 >O caminho, limite, tamanho e ordem das propriedades não podem ser OUed com qualquer outra propriedade.
 >
 >A palavra-chave de uma propriedade gerada pelo usuário é seu rótulo de campo no editor de propriedades em minúsculas, com espaços removidos.
-
 
 >[!NOTE]
 >

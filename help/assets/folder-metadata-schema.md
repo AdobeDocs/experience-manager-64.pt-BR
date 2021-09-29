@@ -1,34 +1,34 @@
 ---
 title: Esquema de metadados de pasta
-description: Este artigo descreve como criar um esquema de metadados para pastas de ativos no AEM Assets
+description: Este artigo descreve como criar um esquema de metadados para pastas de ativos em [!DNL Experience Manager] Assets
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 10%
+source-wordcount: '1076'
+ht-degree: 7%
 
 ---
 
 # Esquema de metadados de pasta {#folder-metadata-schema}
 
-Este artigo descreve como criar um esquema de metadados para pastas de ativos no AEM Assets.
+Este artigo descreve como criar um esquema de metadados para pastas de ativos no [!DNL Experience Manager] Assets.
 
-Os ativos Adobe Experience Manager (AEM) permitem criar esquemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta.
+Os Ativos Adobe Experience Manager permitem criar esquemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta.
 
 >[!NOTE]
 >
->Essa funcionalidade exige o AEM 6.4 com pelo menos o Service Pack 2 implantado. Para obter AEM detalhes do service pack 6.4, consulte estas [notas de versão](/help/release-notes/sp-release-notes.md).
+>Essa funcionalidade exige [!DNL Experience Manager] 6.4 com pelo menos o Service Pack 2 implantado. Para obter [!DNL Experience Manager] os detalhes do service pack 6.4, consulte estas [notas de versão](/help/release-notes/sp-release-notes.md).
 
 ## Adicionar um formulário de esquema de metadados de pasta {#add-a-folder-metadata-schema-form}
 
 Use o editor do Forms do Esquema de metadados da pasta para criar e editar esquemas de metadados para pastas.
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**> **[!UICONTROL Esquemas de metadados de pasta]**.
+1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**> **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Na página Forms do esquema de metadados da pasta , toque/clique em **[!UICONTROL Criar]**.
 1. Especifique um nome para o formulário e toque/clique em **[!UICONTROL Criar]**. O novo formulário de esquema é listado na página Forms do Esquema.
 
@@ -117,7 +117,7 @@ Se um esquema de metadados for configurado para uma pasta, o caminho para o form
 
 ### Atribuir a um schema a partir da página Esquema de metadados da pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados de pasta]**.
+1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Na página Forms do Esquema de metadados da pasta , selecione o formulário de esquema que deseja aplicar a uma pasta.
 1. Na barra de ferramentas, toque/clique em **[!UICONTROL Aplicar à(s) pasta(s)]**.
 
@@ -134,7 +134,7 @@ Se um esquema de metadados for configurado para uma pasta, o caminho para o form
 
 Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo menos um esquema de metadados de pasta existir no sistema, uma lista extra será exibida na caixa de diálogo **[!UICONTROL Criar pasta]**. Você pode selecionar o schema desejado. Por padrão, nenhum esquema é selecionado.
 
-1. Na interface do usuário do AEM Assets, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. Na interface do usuário [!DNL Assets], toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Especifique um título e nome para a pasta.
 1. Na lista Esquema de metadados da pasta, selecione o esquema desejado. Em seguida, toque/clique em **[!UICONTROL Criar]**.
 

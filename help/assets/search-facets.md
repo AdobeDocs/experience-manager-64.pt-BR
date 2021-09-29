@@ -2,13 +2,13 @@
 title: Pesquisar aspectos
 description: Este artigo descreve como criar, modificar e usar facetas de pesquisa no AEM.
 contentOwner: AG
-feature: 'Pesquisar  '
+feature: Search
 role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '2538'
-ht-degree: 22%
+source-wordcount: '2530'
+ht-degree: 21%
 
 ---
 
@@ -30,7 +30,7 @@ Os aspectos de pesquisa exibidos no painel Filtros são definidos no formulário
 
 Para pesquisas de texto completo, adicione o predicado Texto completo ao formulário. Use o predicado Propriedade para procurar ativos que correspondam a uma única propriedade especificada. Use o predicado Opções para pesquisar ativos que correspondam a um ou mais valores para uma propriedade específica. Adicione o predicado Intervalo de datas para pesquisar ativos criados em um intervalo de datas especificado.
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar formulários]**.
+1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
 1. Na página Pesquisar Forms , selecione **[!UICONTROL Painel de pesquisa do administrador de ativos]** e toque em **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Localize e selecione o Painel de pesquisa do administrador de ativos](assets/assets_admin_searchrail.png)
@@ -39,7 +39,7 @@ Para pesquisas de texto completo, adicione o predicado Texto completo ao formul�
 
    >[!NOTE]
    >
-   >Para usar a funcionalidade de pesquisa de pastas do **Painel de pesquisa do administrador de ativos** pré-configurado de uma versão de AEM anterior, execute estas etapas:
+   >Para usar a funcionalidade de pesquisa de pastas do **Painel de pesquisa do administrador de ativos** pré-configurado de uma versão anterior [!DNL Experience Manager], execute estas etapas:
    > 
    >1. Navegue até */conf/global/settings/dam/search/facets/assets/jcr:content/items* no CRX-DE.
    >1. Exclua o nó **type**.
@@ -117,7 +117,7 @@ Se quiser usar um nó existente, especifique-o usando a caixa de diálogo de sel
 >
 >O predicado Opções é um wrapper personalizado que inclui predicados de propriedade para demonstrar o comportamento descrito. No momento, não há ponto de extremidade REST disponível para oferecer suporte à funcionalidade nativamente.
 
-1. Toque no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Geral > Pesquisar Forms]**.
+1. Toque no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas > Geral > Pesquisar Forms]**.
 1. Na página **[!UICONTROL Pesquisar formulários]**, selecione **[!UICONTROL Painel de pesquisa do administrador de ativos]** e toque no ícone Editar.
 1. Na página **[!UICONTROL Editar formulário de pesquisa]**, arraste o **[!UICONTROL Predicado de opções]** da guia **[!UICONTROL Selecionar predicado]** até o painel principal.
 1. Na guia **[!UICONTROL Configurações]**, digite um rótulo e um nome para a propriedade. Por exemplo, para pesquisar ativos com base no formato, especifique um nome amigável para o rótulo, por exemplo, **[!UICONTROL Tipo de arquivo]**. Especifique a propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo `jcr:content/metadata/dc:format.`
@@ -137,9 +137,9 @@ Se quiser usar um nó existente, especifique-o usando a caixa de diálogo de sel
 
 ## Adicionar um predicado de propriedade de vários valores {#adding-a-multi-value-property-predicate}
 
-O predicado Propriedade de vários valores permite pesquisar ativos por vários valores. Considere um cenário em que você tem imagens de vários produtos no AEM Assets e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar este predicado para procurar imagens de produtos com base em vários números de SKU.
+O predicado Propriedade de vários valores permite pesquisar ativos por vários valores. Considere um cenário em que você tem imagens de vários produtos em [!DNL Experience Manager] Ativos e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar este predicado para procurar imagens de produtos com base em vários números de SKU.
 
-1. Clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar formulários]**.
+1. Clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
 1. Na página Pesquisar Forms , selecione **[!UICONTROL Painel de pesquisa do administrador de ativos]**, toque em **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa, arraste um **[!UICONTROL Predicado de propriedades de vários valores]** da guia **[!UICONTROL Selecionar predicado]** para o painel principal.
 1. Na guia **[!UICONTROL Settings]**, insira um rótulo e um texto de espaço reservado para o predicado. Especifique o nome da propriedade com base no qual a pesquisa deve ser realizada no campo de propriedade, por exemplo `jcr:content/metadata/dc:value`. Também é possível usar a caixa de diálogo de seleção para selecionar um nó.
@@ -150,9 +150,9 @@ O predicado Propriedade de vários valores permite pesquisar ativos por vários 
 
 ## Adicionar um predicado de Tags {#adding-a-tags-predicate}
 
-O predicado de tag permite que você realize pesquisas baseadas em tag para ativos. Por padrão, o AEM Assets pesquisa ativos por uma ou mais tags correspondentes com base nas tags que você especificar. Em outras palavras, a consulta de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para procurar ativos que incluem todas as tags especificadas.
+O predicado de tag permite que você realize pesquisas baseadas em tag para ativos. Por padrão, [!DNL Experience Manager] o Assets pesquisa ativos por uma ou mais tags correspondentes com base nas tags especificadas. Em outras palavras, a consulta de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para procurar ativos que incluem todas as tags especificadas.
 
-1. Clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar formulários]**.
+1. Clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
 1. Na página Pesquisar Forms , selecione **[!UICONTROL Painel de pesquisa do administrador de ativos]** e toque em **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa , arraste **[!UICONTROL Predicado de tags]** da guia Selecionar predicado para o painel principal.
 1. Na guia Configurações , insira um texto de espaço reservado para o predicado. Especifique o nome da propriedade com base no qual a pesquisa deve ser realizada no campo de propriedade, por exemplo *jcr:content/metadata/cq:tags*. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
@@ -223,6 +223,6 @@ Se você não tiver uma função de administrador, esta é uma lista de permiss�
 >[!MORELIKETHIS]
 >
 >* [Estender pesquisa do Assets](searchx.md)
-* [Pesquisar ativos](search-assets.md)
-* [Pesquisar ativos de vídeo](search-video-assets.md)
+>* [Pesquisar ativos](search-assets.md)
+>* [Pesquisar ativos de vídeo](search-video-assets.md)
 

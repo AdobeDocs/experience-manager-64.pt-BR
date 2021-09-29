@@ -5,12 +5,12 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-feature: Fluxo De Trabalho,Gerenciamento De Ativos,Representações
+feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1374'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Você deve ter direitos de Administrador para criar, editar e excluir metadados,
 
 Após criar seus metadados, imagem ou perfil de vídeo, atribua-os a uma ou mais pastas que usa como destino para os ativos recém-carregados.
 
-Um conceito importante sobre o uso de perfis no AEM Assets é que eles são atribuídos a pastas. Em um perfil estão as configurações no formato de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como organiza subpastas e como manipula os arquivos nessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil. Ao usar estratégias consistentes e apropriadas de nomeação de arquivos e pastas, juntamente com uma boa prática de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil correto. Para obter um exemplo, consulte [organizar ativos usando pastas](organize-assets.md#organize-using-folders).
+Um conceito importante sobre o uso de perfis em [!DNL Experience Manager] Assets é que eles são atribuídos a pastas. Em um perfil estão as configurações no formato de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como organiza subpastas e como manipula os arquivos nessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil. Ao usar estratégias consistentes e apropriadas de nomeação de arquivos e pastas, juntamente com uma boa prática de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil correto. Para obter um exemplo, consulte [organizar ativos usando pastas](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Um conceito importante sobre o uso de perfis no AEM Assets é que eles são atri
 
 >[!NOTE]
 >
->Aplica-se a *Dynamic Media - Modo Scene7* somente no AEM 6.4.7.0 ou posterior.
+>Aplica-se a *Dynamic Media - Modo Scene7* somente em [!DNL Experience Manager] 6.4.7.0 ou posterior.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de processamento existente que você alterou posteriormente.
 
@@ -84,11 +84,11 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
 
 1. Clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Confirmar]**.
 
-   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página AEM console principal, clique em **[!UICONTROL Tools > Workflow]**. Na página Instâncias de fluxo de trabalho , selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir Histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho .
+   Para monitorar o workflow ou verificar seu progresso, na página principal do console [!DNL Experience Manager], clique em **[!UICONTROL Tools > Workflow]**. Na página Instâncias de fluxo de trabalho , selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir Histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho .
 
 ### Ajustar o tamanho do lote do workflow de reprocessamento {#adjusting-load}
 
-(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é regulado pelo tamanho médio do ativo e pelos tipos MIME de ativos em que o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Assim, o banner de processamento permanece AEM ativos por um tempo maior. No entanto, se o tamanho médio do arquivo for de 1 MB ou menos Adobe, a recomenda que você aumente o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe, recomenda-se reduzir o tamanho do lote para até 10.
+(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é regulado pelo tamanho médio do ativo e pelos tipos MIME de ativos em que o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Assim, o banner de processamento permanece em [!DNL Experience Manager] ativos por um tempo maior. No entanto, se o tamanho médio do arquivo for de 1 MB ou menos Adobe, a recomenda que você aumente o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe, recomenda-se reduzir o tamanho do lote para até 10.
 
 **Como opção, ajuste o tamanho do lote do workflow de reprocessamento**
 
@@ -138,5 +138,5 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main [!DNL Experience Manager] console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model. -->

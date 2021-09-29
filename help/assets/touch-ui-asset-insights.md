@@ -2,13 +2,13 @@
 title: Use o recurso do Assets Insights para rastrear o uso de suas imagens
 description: O recurso do Assets Insights permite que você acompanhe as estatísticas de usuário e uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas de classificações do Adobe.
 contentOwner: AG
-feature: Insights de ativos,Relatórios de ativos
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 7%
+source-wordcount: '793'
+ht-degree: 6%
 
 ---
 
@@ -77,7 +77,7 @@ Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!
 
 O Assets Insights busca dados de uso de ativos dos conjuntos de relatórios do Adobe Analytics de maneira periódica. Por padrão, o Assets Insights executa um trabalho em segundo plano a cada 24 horas às 2:00 AM para buscar dados. No entanto, você pode modificar a frequência e o tempo configurando o serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** do console da Web.
 
-1. Toque no logotipo do AEM e acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
+1. Toque no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
 1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
 
    ![chlimage_1-304](assets/chlimage_1-304.png)

@@ -1,16 +1,16 @@
 ---
 title: Modelos de ativos
-description: Saiba mais sobre os modelos de Ativos no AEM Assets e como usar os Modelos de ativos para criar materiais de apoio de marketing.
+description: Saiba mais sobre os modelos de Ativos em [!DNL Experience Manager] Ativos e como usar os modelos de Ativos para criar materiais de apoio de marketing.
 uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+feature: Asset Management,Developer Tools
 role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ A seção de mensagens fixas pode conter conteúdo proprietário, como logotipo 
 
 A flexibilidade para fazer edições limitadas e, ao mesmo tempo, proteger assinaturas globais torna os modelos de ativos blocos fundamentais ideais para adaptação e distribuição rápidas de conteúdo como artefatos de conteúdo para várias funções. Redefinir conteúdo ajuda a reduzir o custo de gerenciamento de canais digitais e de impressão, além de proporcionar experiências holísticas e consistentes nesses canais.
 
-Como comerciante, você pode armazenar e gerenciar modelos no AEM Assets e usar um único modelo básico para criar várias experiências de impressão personalizadas com facilidade. Você pode criar vários tipos de materiais de apoio de marketing, incluindo folhetos, cartões postais, cartões comerciais e assim por diante, para transmitir de forma lúdica sua mensagem de marketing aos clientes. Também é possível reunir saídas de impressão de várias páginas de saídas de impressão existentes ou novas. Acima de tudo, você pode oferecer simultaneamente experiências digitais e de impressão com facilidade para fornecer uma experiência consistente e integrada para os usuários.
+Como comerciante, você pode armazenar e gerenciar modelos no [!DNL Experience Manager] Assets e usar um único modelo básico para criar várias experiências de impressão personalizadas com facilidade. Você pode criar vários tipos de materiais de apoio de marketing, incluindo folhetos, cartões postais, cartões comerciais e assim por diante, para transmitir de forma lúdica sua mensagem de marketing aos clientes. Também é possível reunir saídas de impressão de várias páginas de saídas de impressão existentes ou novas. Acima de tudo, você pode oferecer simultaneamente experiências digitais e de impressão com facilidade para fornecer uma experiência consistente e integrada para os usuários.
 
-Embora os modelos de ativos sejam principalmente arquivos InDesign, a proficiência no InDesign não é uma barreira para criar artefatos estelares. Não é necessário mapear os campos do modelo de InDesign com os campos de produto que, de outra forma, seriam necessários ao criar catálogos. Você pode editar os modelos no modo WYSIWYG diretamente na interface da Web. No entanto, para que o InDesign processe suas alterações de edição, primeiro você deve configurar o AEM Assets para se integrar ao servidor do InDesign.
+Embora os modelos de ativos sejam principalmente arquivos InDesign, a proficiência no InDesign não é uma barreira para criar artefatos estelares. Não é necessário mapear os campos do modelo de InDesign com os campos de produto que, de outra forma, seriam necessários ao criar catálogos. Você pode editar os modelos no modo WYSIWYG diretamente na interface da Web. No entanto, para que o InDesign processe suas alterações de edição, primeiro você deve configurar [!DNL Experience Manager] os Ativos para integrar com o servidor do InDesign.
 
 A capacidade de editar modelos de InDesigns na interface da Web ajuda a promover maior colaboração entre a equipe de Creative e Marketing, além de reduzir o tempo de comercialização para iniciativas promocionais locais.
 
@@ -37,7 +37,7 @@ Você pode fazer o seguinte com modelos de ativos:
 * Visualizar edições do modelo
 * Mesclar vários arquivos de modelo para criar um artefato de várias páginas
 
-Quando você escolhe um modelo para sua garantia, o AEM Assets cria uma cópia do modelo que você pode editar. O modelo original é preservado, o que garante que sua assinatura global permaneça intacta e possa ser reutilizada para reforçar a consistência da marca.
+Quando você escolhe um modelo para sua garantia, [!DNL Assets] cria uma cópia do modelo que você pode editar. O modelo original é preservado, o que garante que sua assinatura global permaneça intacta e possa ser reutilizada para reforçar a consistência da marca.
 
 Você pode exportar o arquivo atualizado dentro da pasta pai nos seguintes formatos:
 
@@ -49,9 +49,9 @@ Também é possível baixar a saída nesses formatos para o sistema local.
 
 ## Criar um material de apoio {#creating-a-collateral}
 
-Considere um cenário em que você deseja criar materiais de apoio para impressão digitais, como folhetos, panfletos e anúncios para uma campanha futura e compartilhar com lojas de varejo globalmente. Criar ativos de garantia com base em um modelo ajuda a fornecer uma experiência unificada do cliente em todos os canais. Os designers podem criar os modelos de campanha (página única ou várias páginas) usando uma solução criativa, como o InDesign, e fazer upload dos modelos para a AEM Assets, para você. Antes de criar um material adicional, faça upload de um ou mais modelos INDD para e disponibilize-os antecipadamente no Experience Manager.
+Considere um cenário em que você deseja criar materiais de apoio para impressão digitais, como folhetos, panfletos e anúncios para uma campanha futura e compartilhar com lojas de varejo globalmente. Criar ativos de garantia com base em um modelo ajuda a fornecer uma experiência unificada do cliente em todos os canais. Os designers podem criar os modelos de campanha (página única ou várias páginas) usando uma solução criativa, como o InDesign, e fazer upload dos modelos para [!DNL Assets] para você. Antes de criar um material adicional, faça upload de um ou mais modelos INDD para e disponibilize-os antecipadamente no Experience Manager.
 
-1. Clique ou toque no logotipo do AEM e em **[!UICONTROL Assets]** na página Navegação.
+1. Clique no logotipo [!DNL Experience Manager] e, em seguida, clique em **[!UICONTROL Ativos]** na página Navegação.
 1. Nas opções, escolha **[!UICONTROL Templates]**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
@@ -97,17 +97,17 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
    Você pode usar o editor de texto para modificar o texto que deseja exibir no campo de texto. Você pode modificar o tamanho, estilo, cor e tipo da fonte no nível da tag.
 
-   Usando o localizador de ativos, você pode procurar ou procurar imagens no AEM Assets e substituir as imagens editáveis no modelo por imagens de sua escolha.
+   Usando o localizador de ativos, você pode procurar ou procurar imagens em [!DNL Assets] e substituir as imagens editáveis no modelo por imagens de sua escolha.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-   Os editáveis são exibidos à direita. Para que um campo possa ser editado no AEM Assets, o campo correspondente no modelo deve ser marcado no InDesign. Em outras palavras, eles devem ser marcados como editáveis no InDesign.
+   Os editáveis são exibidos à direita. Para que um campo possa ser editado em [!DNL Assets], o campo correspondente no modelo deve ser marcado no InDesign. Em outras palavras, eles devem ser marcados como editáveis no InDesign.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >Certifique-se de que a instância do AEM esteja integrada a um servidor do InDesign para permitir que o AEM Assets extraia dados do template do InDesign e disponibilize-os para edição. Para obter detalhes, consulte [Integração do AEM Assets com o InDesign Server](indesign.md).
+   >Certifique-se de que a instância [!DNL Experience Manager] esteja integrada a um servidor do InDesign para permitir que [!DNL Assets] extraia dados do modelo do InDesign e disponibilize-a para edição. Para obter detalhes, consulte [Integração [!DNL Assets] com o InDesign Server](indesign.md).
 
 1. Para modificar o texto em um campo editável, clique/toque no campo de texto da lista de campos editáveis e edite o texto no campo.
 
@@ -127,7 +127,7 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   Também é possível pesquisar por imagens usando palavras-chave, tags e com base em seu status de publicação. Você pode navegar pelo repositório do AEM Assets e navegar até o local da imagem desejada.
+   Também é possível pesquisar por imagens usando palavras-chave, tags e com base em seu status de publicação. Você pode navegar pelo repositório [!DNL Assets] e navegar até o local da imagem desejada.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -143,19 +143,19 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
    >[!NOTE]
    >
-   >Os ícones Visualizar e Concluído são ativados somente quando os campos de imagem editáveis na garantia não têm ícones ausentes. Se houver ícones ausentes em seu material de apoio, é porque o AEM não consegue resolver as imagens no modelo do InDesign. Normalmente, o AEM não consegue resolver imagens nos seguintes casos:
+   >Os ícones Visualizar e Concluído são ativados somente quando os campos de imagem editáveis na garantia não têm ícones ausentes. Se houver ícones ausentes em seu material de apoio, isso ocorre porque [!DNL Experience Manager] não consegue resolver as imagens no modelo do InDesign. Geralmente, [!DNL Experience Manager] não consegue resolver imagens nos seguintes casos:
    >
    >* As imagens não são incorporadas no modelo de InDesign subjacente
    >* As imagens são vinculadas do sistema de arquivos local
 
    >
-   >Para permitir que AEM resolvam imagens, faça o seguinte:
+   >Para habilitar [!DNL Experience Manager] para resolver imagens, faça o seguinte:
    >
    >* Incorpore imagens ao criar modelos de InDesign (Consulte [Sobre links e gráficos incorporados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >* Monte AEM no seu sistema de arquivos local e mapeie ícones ausentes com ativos de AEM existentes.
+   >* Monte [!DNL Experience Manager] em seu sistema de arquivos local e mapeie ícones ausentes com ativos [!DNL Experience Manager] existentes.
 
    >
-   >Para obter mais informações sobre como trabalhar com documentos do InDesign, consulte [Práticas recomendadas para trabalhar com documentos do InDesign em AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Para obter mais informações sobre como trabalhar com documentos do InDesign, consulte [Práticas recomendadas para trabalhar com documentos do InDesign em [!DNL Experience Manager]](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para gerar uma representação PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
 1. O material adicional é criado na pasta com a qual você começou. Para visualizar as representações, abra o material de apoio e escolha **[!UICONTROL Representações]** na lista GlobalNavigation.
@@ -187,7 +187,7 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Você pode navegar pelo repositório ou coleções do AEM Assets, navegar até o local dos modelos desejados e, em seguida, selecioná-los para mesclar.
+   Você pode navegar pelo repositório ou coleções [!DNL Assets], navegar até o local dos modelos desejados e, em seguida, selecioná-los para mesclar.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 

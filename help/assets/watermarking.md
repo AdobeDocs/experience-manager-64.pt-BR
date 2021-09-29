@@ -2,12 +2,12 @@
 title: Adicionar marca d'água aos ativos digitais
 description: Saiba como usar o recurso Marca d'água para adicionar uma marca d'água digital aos ativos.
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '319'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] O permite adicionar uma marca d&#39;água digital aos ativos, o que ajuda os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. [!DNL Experience Manager Assets] suporta texto a ser usado como uma marca d&#39;água em arquivos PNG e JPEG.
 
-Os ativos Adobe Experience Manager (AEM) permitem adicionar uma marca d&#39;água digital a imagens que ajudam os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. O AEM Assets suporta texto a ser usado como marca d&#39;água em arquivos PNG e JPEG.
+O Adobe Experience Manager Assets permite adicionar uma marca d&#39;água digital a imagens que ajuda os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. [!DNL Experience Manager] Os ativos oferecem suporte para texto a ser usado como marca d&#39;água em arquivos PNG e JPEG.
 
 Para poder aplicar marca d&#39;água em ativos, adicione a etapa marca d&#39;água no fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] .
 
@@ -37,9 +37,9 @@ Para poder aplicar marca d&#39;água em ativos, adicione a etapa marca d&#39;ág
    ![Forneça os argumentos na etapa adicionar marca d&#39;água no Assets](assets/arguments_add_watermark_aem_assets.png)
 
 1. Salve o fluxo de trabalho do **[!UICONTROL Ativo de atualização do DAM]** com a etapa Marca d&#39;água.
-1. Na interface do usuário do AEM, faça upload de um ativo de amostra. A marca d&#39;água aparece com o tamanho da fonte, cor e assim por diante, na posição configurada nas etapas acima.
+1. Na interface do usuário [!DNL Experience Manager], faça upload de um ativo de amostra. A marca d&#39;água aparece com o tamanho da fonte, cor e assim por diante, na posição configurada nas etapas acima.
 
-Para marcar documentos PDF de forma programática ou com informações dinâmicas, considere usar a oferta [AEM Document Services](/help/forms/using/overview-aem-document-services.md).
+Para marcar documentos PDF de forma programática ou com informações dinâmicas, considere usar a oferta [[!DNL Experience Manager] Serviços de documento](/help/forms/using/overview-aem-document-services.md).
 
 ## Dicas e limitações {#tips-limitations}
 

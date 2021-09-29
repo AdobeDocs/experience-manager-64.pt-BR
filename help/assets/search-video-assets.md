@@ -1,13 +1,13 @@
 ---
 title: Pesquisar ativos de vídeo
-description: Use palavras-chave, propriedades de arquivo como tipo Mime, tamanho ou carimbo de data e hora modificado recentemente para localizar rapidamente seu arquivo no AEM Assets.
+description: Use palavras-chave, propriedades de arquivo, como tipo Mime, tamanho ou carimbo de data e hora modificado recentemente para localizar rapidamente seu arquivo em  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Vídeo, Pesquisar
+feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 4%
 
 ---

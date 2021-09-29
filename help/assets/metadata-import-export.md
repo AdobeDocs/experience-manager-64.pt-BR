@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 9%
 
 ---
 
 # Importação e exportação de metadados em massa {#bulk-metadata-import-and-export}
 
-O AEM Assets permite importar metadados de ativos em massa usando um arquivo CSV. É possível fazer atualizações em massa dos ativos recém-carregados ou dos ativos existentes ao importar um arquivo CSV. Também é possível assimilar metadados de ativos em massa de sistemas de terceiros no formato CSV.
+[!DNL Experience Manager] Os ativos permitem importar metadados de ativos em massa usando um arquivo CSV. É possível fazer atualizações em massa dos ativos recém-carregados ou dos ativos existentes ao importar um arquivo CSV. Também é possível assimilar metadados de ativos em massa de sistemas de terceiros no formato CSV.
 
 ## Importar metadados {#import-metadata}
 
@@ -56,7 +56,7 @@ Alguns casos de uso para exportar metadados em massa são:
 * Teste ou faça auditoria dos metadados para fins de conformidade.
 * Externalize os metadados para localização separada.
 
-Você pode exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, AEM percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
+Você pode exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, [!DNL Experience Manager] atravessa as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
 
 Para exportar metadados de vários ativos em massa, siga estas etapas:
 

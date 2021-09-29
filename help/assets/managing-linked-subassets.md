@@ -1,35 +1,35 @@
 ---
 title: Gerencie ativos compostos e gere subativos.
-description: Saiba como criar referências a ativos AEM a partir de arquivos do InDesign, Adobe Illustrator e Photoshop. Saiba também como usar o recurso Visualizador de página para exibir páginas individuais de arquivos de várias páginas, incluindo arquivos PDF, INDD, PPT, PPTX e AI.
+description: Saiba como criar referências a  [!DNL Experience Manager] ativos a partir de arquivos do InDesign, Adobe Illustrator e Photoshop. Saiba também como usar o recurso Visualizador de página para exibir páginas individuais de arquivos de várias páginas.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
 
 # Gerenciar ativos compostos com subativos {#managing-compound-assets}
 
-Os ativos Adobe Experience Manager (AEM) podem identificar se um arquivo carregado contém referências a ativos que já existem no repositório. Esse recurso está disponível somente para formatos de arquivo compatíveis. Se o ativo carregado contiver referências a ativos AEM, um link bidirecional será criado entre os ativos carregados e referenciados.
+Os ativos Adobe Experience Manager podem identificar se um arquivo carregado contém referências a ativos que já existem no repositório. Esse recurso está disponível somente para formatos de arquivo compatíveis. Se o ativo carregado contiver qualquer referência a [!DNL Experience Manager] ativos, um link bidirecional será criado entre os ativos carregados e referenciados.
 
-Além de eliminar a redundância, a referência a ativos AEM em aplicativos Adobe Creative Cloud aumenta a colaboração e a eficiência e produtividade dos usuários.
+Além de eliminar a redundância, referenciar [!DNL Experience Manager] ativos em aplicativos Adobe Creative Cloud melhora a colaboração e aumenta a eficiência e produtividade dos usuários.
 
-O AEM Assets suporta **referência bidirecional**. Você pode encontrar ativos referenciados na página de detalhes do ativo do arquivo carregado. Além disso, é possível exibir os arquivos de referência para AEM ativos na página de detalhes do ativo do ativo referenciado.
+[!DNL Experience Manager] Os ativos oferecem suporte para referência  **bidirecional**. Você pode encontrar ativos referenciados na página de detalhes do ativo do arquivo carregado. Além disso, você pode exibir os arquivos de referência para [!DNL Experience Manager] ativos na página Detalhes do ativo do ativo referenciado.
 
 As referências são resolvidas com base no caminho, na ID do documento e na ID da instância dos ativos referenciados.
 
 ## Adobe Illustrator: Adicionar ativos como referências {#refai}
 
-Você pode fazer referência a ativos AEM existentes em um arquivo Adobe Illustrator.
+Você pode fazer referência a ativos [!DNL Experience Manager] existentes em um arquivo do Adobe Illustrator.
 
-1. Usando [AEM aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR), monte o repositório AEM Assets como uma unidade em sua máquina local. Na unidade montada, navegue até o local do ativo que deseja referenciar.
+1. Usando [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR), monte [!DNL Experience Manager] o repositório Assets como uma unidade em sua máquina local. Na unidade montada, navegue até o local do ativo que deseja referenciar.
 1. Arraste o ativo da unidade montada para o arquivo Illustrator.
-1. Salve o arquivo Illustrator na unidade montada ou [upload](managing-assets-touch-ui.md#uploading-assets) no repositório AEM.
-1. Depois que o fluxo de trabalho for concluído, acesse a página de detalhes do ativo. As referências a ativos AEM existentes são listadas em **[!UICONTROL Dependências]** na coluna **[!UICONTROL Referências]**.
+1. Salve o arquivo Illustrator na unidade montada ou [upload](managing-assets-touch-ui.md#uploading-assets) no repositório [!DNL Experience Manager].
+1. Depois que o fluxo de trabalho for concluído, acesse a página de detalhes do ativo. As referências aos ativos [!DNL Experience Manager] existentes são listadas em **[!UICONTROL Dependências]** na coluna **[!UICONTROL Referências]**.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -43,9 +43,9 @@ Você pode fazer referência a ativos AEM existentes em um arquivo Adobe Illustr
 
 ## Adobe InDesign: Adicionar ativos como referências {#add-aem-assets-as-references-in-adobe-indesign}
 
-Para fazer referência AEM ativos de um arquivo de InDesign, arraste AEM ativos para o arquivo de InDesign ou exporte o arquivo de InDesign como um arquivo ZIP.
+Para fazer referência a [!DNL Experience Manager] ativos de um arquivo de InDesign, arraste [!DNL Experience Manager] os ativos para o arquivo de InDesign ou exporte o arquivo de InDesign como um arquivo ZIP.
 
-Os ativos referenciados já existem no AEM Assets. Você pode extrair subativos usando [configurar o servidor do InDesign](indesign.md). Os ativos incorporados em um arquivo do InDesign são extraídos como subativos.
+Os ativos referenciados já existem em [!DNL Experience Manager] Assets. Você pode extrair subativos usando [configurar o servidor do InDesign](indesign.md). Os ativos incorporados em um arquivo do InDesign são extraídos como subativos.
 
 >[!NOTE]
 >
@@ -61,19 +61,19 @@ Este procedimento é semelhante a [Adicionar ativos como referências no Adobe I
 
 1. Execute as etapas em [Criação de modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md) para criar um novo fluxo de trabalho.
 1. Use o recurso [Pacote do Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) para exportar o documento. A Adobe InDesign pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta `Links` que contém subativos no arquivo de InDesign. A pasta `Links` está presente na mesma pasta que o arquivo INDD.
-1. Crie um arquivo ZIP e faça upload dele para o repositório AEM.
+1. Crie um arquivo ZIP e faça upload dele para o repositório [!DNL Experience Manager].
 1. Inicie o fluxo de trabalho do Unarchiver .
 1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente referenciadas como subativos. Para exibir uma lista dos ativos referenciados, navegue até a página de detalhes do ativo do InDesign e feche o [Trilho](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adobe Photoshop: Adicionar ativos como referências {#refps}
 
-1. Usando um cliente WebDav, monte o AEM Assets como uma unidade.
-1. Para criar referências a ativos AEM em um arquivo Photoshop, navegue até os ativos correspondentes na unidade montada usando a funcionalidade Colocar vinculado no Photoshop.
+1. Usando um cliente WebDav, monte [!DNL Experience Manager] Ativos como uma unidade.
+1. Para criar referências aos ativos [!DNL Experience Manager] em um arquivo Photoshop, navegue até os ativos correspondentes na unidade montada usando a funcionalidade Colocar vinculado no Photoshop.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Salve o arquivo Photoshop na unidade montada ou [upload](managing-assets-touch-ui.md#uploading-assets) no repositório AEM.
-1. Após a conclusão do fluxo de trabalho, as referências aos ativos AEM existentes são listadas na página de detalhes do ativo.
+1. Salve o arquivo Photoshop na unidade montada ou [upload](managing-assets-touch-ui.md#uploading-assets) no repositório [!DNL Experience Manager].
+1. Após a conclusão do fluxo de trabalho, as referências aos ativos [!DNL Experience Manager] existentes são listadas na página de detalhes do ativo.
 
    Para exibir os ativos referenciados, feche o [Trilho](/help/sites-authoring/basic-handling.md#rail-selector) na página de detalhes do ativo.
 
@@ -85,7 +85,7 @@ Este procedimento é semelhante a [Adicionar ativos como referências no Adobe I
 
 ## Criar subativos {#generate-subassets}
 
-Para os ativos suportados com formatos de várias páginas — arquivos PDF, arquivos AI, arquivos Microsoft PowerPoint e Apple Keynote e arquivos Adobe InDesign — AEM podem gerar subativos que correspondem a cada página individual do ativo original. Esses subativos estão vinculados ao ativo *principal* e facilitam a visualização de várias páginas. Para todos os outros fins, os ativos secundários são tratados como ativos normais em AEM.
+Para os ativos suportados com formatos de várias páginas — arquivos PDF, arquivos AI, arquivos Microsoft PowerPoint e Apple Keynote e arquivos Adobe InDesign — [!DNL Experience Manager] pode gerar subativos que correspondem a cada página individual do ativo original. Esses subativos estão vinculados ao ativo *principal* e facilitam a visualização de várias páginas. Para todos os outros fins, os ativos secundários são tratados como ativos normais em AEM.
 
 A geração de subconjunto é desabilitada por padrão. Para ativar a geração de subativos, siga estas etapas:
 
@@ -111,7 +111,7 @@ Os subativos são exibidos somente se os subativos forem gerados e estiverem dis
 
 ## Exibir páginas de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
 
-É possível visualizar um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e arquivo AI, usando o recurso Visualizador de página do AEM Assets. Abra um ativo de várias páginas e clique em **[!UICONTROL Exibir páginas]** no canto superior esquerdo da página. O Visualizador de página que é aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom a cada página.
+Você pode visualizar um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e arquivo AI, usando o recurso Visualizador de página dos [!DNL Experience Manager] Ativos. Abra um ativo de várias páginas e clique em **[!UICONTROL Exibir páginas]** no canto superior esquerdo da página. O Visualizador de página que é aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom a cada página.
 
 ![Exibir e ver páginas de um ativo de várias páginas](assets/view_multipage_asset_fmr.gif)
 
@@ -119,7 +119,7 @@ Para o InDesign, você pode extrair páginas usando o servidor do InDesign. Se a
 
 As seguintes opções estão disponíveis na barra de ferramentas, no painel à esquerda e nos controles do Visualizador de páginas:
 
-* **[!UICONTROL As]** ações da área de trabalho para abrir ou revelar um subativo específico usando AEM aplicativo da área de trabalho. Consulte como [configurar as Ações da Área de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se estiver usando AEM aplicativo de área de trabalho.
+* **[!UICONTROL As]** ações da área de trabalho para abrir ou revelar um subativo específico usando o aplicativo da  [!DNL Experience Manager] área de trabalho. Consulte como [configurar as Ações da Área de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se estiver usando o [!DNL Experience Manager] aplicativo de área de trabalho.
 
 * **** A opção Propriedades abre a   página Propriedades do subativo específico.
 

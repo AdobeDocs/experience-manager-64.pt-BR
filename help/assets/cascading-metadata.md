@@ -2,13 +2,13 @@
 title: Metadados em cascata
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 13%
+source-wordcount: '977'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ Estes são alguns casos de uso para os quais você pode definir metadados em cas
 * Altere as opções exibidas para um campo específico com base no valor especificado em outro campo.
 * Defina o valor dos metadados padrão em um campo específico com base no valor especificado em outro campo.
 
-## Configurar metadados em cascata em AEM {#configure-cascading-metadata-in-aem}
+## Configurar metadados em cascata em [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Considere um cenário em que deseja exibir metadados em cascata com base no tipo de ativo selecionado. Alguns exemplos
 
@@ -42,7 +42,7 @@ Considere um cenário em que deseja exibir metadados em cascata com base no tipo
 
 Independentemente do tipo de ativo escolhido, exiba as informações de direitos autorais como um campo obrigatório.
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**.
+1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**.
 1. Na página **[!UICONTROL Formulários de esquema]**, selecione um formulário de esquema e toque/clique em **[!UICONTROL Editar]** na barra de ferramentas para editar o esquema.
 
    ![select_form](assets/select_form.png)
@@ -60,7 +60,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 1. Os pares de valores-chave são as opções fornecidas a um usuário do formulário. Você pode fornecer os pares de valores chave manualmente ou de um arquivo JSON.
 
    * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar Manualmente]** e toque/clique em **[!UICONTROL Adicionar Escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique tipos de ativos de Vídeo, PDF, Word e Imagem.
-   * Para buscar os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar por meio do caminho JSON]** e forneça o caminho do arquivo JSON. AEM busca os pares de valores chave em tempo real, quando o formulário é apresentado ao usuário.
+   * Para buscar os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar por meio do caminho JSON]** e forneça o caminho do arquivo JSON. [!DNL Experience Manager] busca os pares de valor chave em tempo real, quando o formulário é apresentado ao usuário.
 
    Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editar manualmente.
 

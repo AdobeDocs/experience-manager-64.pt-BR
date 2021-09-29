@@ -1,31 +1,30 @@
 ---
 title: Extensão da pesquisa de ativos
-description: Estenda os recursos de pesquisa do AEM Assets além das pesquisas prontas para uso de ativos por strings.
+description: Estenda os recursos de pesquisa do  [!DNL Experience Manager] Assets além das pesquisas prontas para uso de ativos por strings.
 contentOwner: AG
 feature: Search
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '820'
 ht-degree: 15%
 
 ---
 
-
 # Extensão da pesquisa de ativos {#extending-assets-search}
 
-Você pode estender os recursos de pesquisa do Adobe Experience Manager (AEM) Assets. Imediatamente, o AEM Assets pesquisa ativos por strings.
+Você pode estender os recursos de pesquisa do Adobe Experience Manager Assets. Imediatamente, [!DNL Experience Manager] o Assets pesquisa por ativos por strings.
 
 A pesquisa é feita por meio da interface do QueryBuilder para que a pesquisa possa ser personalizada com vários predicados. Você pode sobrepor o conjunto padrão de predicados no seguinte diretório: `/apps/dam/content/search/searchpanel/facets`.
 
-Também é possível adicionar outras guias ao painel de administração do AEM Assets.
+Também é possível adicionar outras guias ao painel de administração [!DNL Experience Manager] do Assets.
 
 >[!CAUTION]
 >
->A partir do AEM 6.4, a interface do usuário clássica está obsoleta. Para anúncio, consulte [Recursos obsoletos e removidos](../release-notes/deprecated-removed-features.md). É recomendável usar a interface habilitada para toque. Para personalizações, consulte [Pesquisar aspectos](search-facets.md).
+>A partir de [!DNL Experience Manager] 6.4, a interface do usuário clássica está obsoleta. Para anúncio, consulte [Recursos obsoletos e removidos](../release-notes/deprecated-removed-features.md). É recomendável usar a interface habilitada para toque. Para personalizações, consulte [Pesquisar aspectos](search-facets.md).
 
-## Sobreposição de {#overlaying}
+## Sobreposição {#overlaying}
 
 Para sobrepor os predicados pré-configurados, copie o nó `facets` de `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outra propriedade `facetURL` na configuração do painel de pesquisa (o padrão é `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
@@ -35,10 +34,9 @@ Para sobrepor os predicados pré-configurados, copie o nó `facets` de `/libs/da
 >
 >Por padrão, a estrutura de diretório em / `apps` não existe e precisa ser criada. Certifique-se de que os tipos de nó correspondam àqueles em / `libs`.
 
-
 ## Adição de guias {#adding-tabs}
 
-É possível adicionar outras guias de Pesquisa, configurando-as no Administrador do AEM Assets. Para criar guias adicionais:
+É possível adicionar outras guias de Pesquisa, configurando-as no [!DNL Experience Manager] Administrador de ativos. Para criar guias adicionais:
 
 1. Crie a estrutura de pastas `/apps/wcm/core/content/damadmin/tabs,`se ela ainda não existir, e copie o nó `tabs` de `/libs/wcm/core/content/damadmin` e cole-o.
 1. Crie e configure a segunda guia, conforme desejado.
@@ -49,9 +47,9 @@ Para sobrepor os predicados pré-configurados, copie o nó `facets` de `/libs/da
 
 ## Criação de predicados personalizados {#creating-custom-predicates}
 
-O AEM Assets vem com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Experience Manager] Os ativos vêm com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Além de usar predicados pré-existentes, os desenvolvedores de AEM também podem criar seus próprios predicados usando a [API do Construtor de consultas](/help/sites-developing/querybuilder-api.md).
+Além de usar predicados pré-existentes, os desenvolvedores [!DNL Experience Manager] também podem criar seus próprios predicados usando a [API do Construtor de consultas](/help/sites-developing/querybuilder-api.md).
 
 Criar predicados personalizados requer conhecimento básico sobre a [estrutura de widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -303,8 +301,8 @@ Os predicados a seguir estão disponíveis como widgets ExtJS pré-configurados.
 | searchCallback | Função | Retorno de chamada para acionar a pesquisa. O padrão é `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Número | Tempo limite antes do acionamento de searchCallback. O padrão é 800 ms |
 
-## Personalizando resultados de pesquisa {#customizing-search-results}
+## Personalização dos resultados da pesquisa {#customizing-search-results}
 
-A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. O AEM Assets vem com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. [!DNL Experience Manager] Os ativos vêm com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Além de usar lentes pré-existentes, os desenvolvedores de AEM também podem criar suas próprias lentes.
+Além de usar lentes pré-existentes, os desenvolvedores [!DNL Experience Manager] também podem criar suas próprias lentes.

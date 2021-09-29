@@ -2,12 +2,12 @@
 title: Estender editor de ativos
 description: Saiba como estender os recursos do Editor de ativos usando componentes personalizados.
 contentOwner: AG
-feature: Ferramentas do desenvolvedor
+feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 13%
 
 ---
@@ -18,7 +18,7 @@ O Editor de ativos é a página que é aberta quando um ativo encontrado por mei
 
 A configuração do editor usando os componentes de edição predefinidos é abordada em [Criação e configuração de uma página do editor de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-Além de usar componentes de editor pré-existentes, os desenvolvedores do Adobe Experience Manager (AEM) também podem criar seus próprios componentes.
+Além de usar componentes de editor pré-existentes, os desenvolvedores do Adobe Experience Manager também podem criar seus próprios componentes.
 
 ## Criação de um modelo do editor de ativos {#creating-an-asset-editor-template}
 
@@ -30,9 +30,9 @@ As seguintes páginas de exemplo estão incluídas no geometrixx:
 
 ### Configuração da Clientlib {#configuring-clientlib}
 
-Os componentes do AEM Assets usam uma extensão da biblioteca de edição de clientlib do WCM. As clientlibs geralmente são carregadas em `init.jsp`.
+[!DNL Experience Manager Assets] os componentes usam uma extensão da biblioteca de edição de clientlib do WCM. As clientlibs geralmente são carregadas em `init.jsp`.
 
-Comparado ao carregamento padrão da clientlib (no núcleo `init.jsp`), um template AEM Assets deve ter o seguinte:
+Comparado ao carregamento padrão da clientlib (em `init.jsp` do núcleo), um modelo [!DNL Assets] deve ter o seguinte:
 
 * O modelo deve incluir a clientlib `cq.dam.edit` (em vez de `cq.wcm.edit`).
 
@@ -42,7 +42,7 @@ Na maioria dos casos, copiar a amostra existente `init.jsp` (`/apps/geometrixx/c
 
 ### Configuração de ações JS {#configuring-js-actions}
 
-Alguns dos componentes do AEM Assets exigem funções JS definidas em `component.js`. Copie esse arquivo para o diretório do seu componente e vincule-o.
+Alguns dos componentes [!DNL Assets] exigem funções JS definidas em `component.js`. Copie esse arquivo para o diretório do seu componente e vincule-o.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -52,7 +52,7 @@ A amostra carrega essa fonte do JavaScript em `head.jsp`(`/apps/geometrixx/compo
 
 ### Folhas de estilos adicionais {#additional-style-sheets}
 
-Alguns componentes do AEM Assets usam a biblioteca de widgets de AEM. Para ser renderizada corretamente no contexto de conteúdo, uma folha de estilos adicional deve ser carregada. O componente de ação de tag requer mais um.
+Alguns dos componentes [!DNL Assets] usam a biblioteca de widgets [!DNL Experience Manager]. Para ser renderizada corretamente no contexto de conteúdo, uma folha de estilos adicional deve ser carregada. O componente de ação de tag requer mais um.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

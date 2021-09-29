@@ -2,19 +2,19 @@
 title: Fluxo de atividades na linha do tempo
 description: 'Este artigo descreve como exibir registros de atividades para ativos na linha do tempo. '
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User,Admin
 exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 33%
+source-wordcount: '211'
+ht-degree: 21%
 
 ---
 
 # Fluxo de atividades na linha do tempo {#activity-stream-in-timeline}
 
-Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos no Adobe Experience Manager (AEM) Assets, o recurso de fluxo de Atividade atualizará a linha do tempo para refletir a atividade.
+Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos em [!DNL Adobe Experience Manager Assets], o recurso de fluxo de Atividade atualizará a linha do tempo para refletir a atividade.
 
 As seguintes operações são registradas no fluxo de atividade:
 
@@ -29,7 +29,7 @@ As seguintes operações são registradas no fluxo de atividade:
 
 Os registros de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de registro são armazenados.
 
-Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou os existentes são modificados e verificados no AEM por meio do [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou do [aplicativo de desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou os existentes são modificados e verificados no Experience Manager por [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 
 >[!NOTE]
 >

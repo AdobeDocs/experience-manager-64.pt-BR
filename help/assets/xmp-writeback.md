@@ -2,12 +2,12 @@
 title: Write-back de XMP a execuções
 description: Saiba como o recurso de write-back de XMP propaga as alterações de metadados de um ativo para todas as representações ou representações específicas do ativo.
 contentOwner: AG
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '775'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Considere um cenário em que você modifica a propriedade [!UICONTROL Title] do 
 
 ![metadados](assets/metadata.png)
 
-Nesse caso, o AEM Assets salva as alterações na propriedade **[!UICONTROL Title]** no parâmetro `dc:title` para os metadados de ativos armazenados na hierarquia de ativos.
+Nesse caso, os Ativos [!DNL Experience Manager] salvam as alterações na propriedade **[!UICONTROL Title]** no parâmetro `dc:title` para os metadados de ativos armazenados na hierarquia de ativos.
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -67,13 +67,13 @@ As alterações de metadados são propagadas para as representações `thumbnail
 
 [!DNL Experience Manager Assets] O suporta a filtragem de lista de bloqueios e lista de permissões de propriedades/nós para metadados de XMP que são lidos de binários de ativos e armazenados no JCR quando os ativos são assimilados.
 
-Filtrar usando uma lista de bloqueios permite importar todas as propriedades de metadados XMP, exceto as propriedades especificadas para exclusão. No entanto, para tipos de ativos como arquivos INDD que têm grandes quantidades de metadados de XMP (por exemplo, 1000 nós com 10.000 propriedades), os nomes de nós a serem filtrados nem sempre são conhecidos antecipadamente. Se a filtragem com uma lista de bloqueios permitir a importação de um grande número de ativos com vários metadados de XMP, a instância de AEM ou cluster poderá encontrar problemas de estabilidade, por exemplo, filas de observação obstruídas.
+Filtrar usando uma lista de bloqueios permite importar todas as propriedades de metadados XMP, exceto as propriedades especificadas para exclusão. No entanto, para tipos de ativos como arquivos INDD que têm grandes quantidades de metadados de XMP (por exemplo, 1000 nós com 10.000 propriedades), os nomes de nós a serem filtrados nem sempre são conhecidos antecipadamente. Se a filtragem usando uma lista de bloqueios permitir a importação de um grande número de ativos com vários metadados de XMP, a instância [!DNL Experience Manager] ou cluster poderá encontrar problemas de estabilidade, por exemplo, filas de observação obstruídas.
 
 A filtragem de metadados de XMP por meio do lista de permissões resolve esse problema permitindo definir as propriedades de XMP a serem importadas. Dessa forma, quaisquer propriedades de XMP outras ou desconhecidas são ignoradas. Para ter compatibilidade com versões anteriores, você pode adicionar algumas dessas propriedades ao filtro que usa uma lista de bloqueios.
 
 >[!NOTE]
 >
->A filtragem funciona somente nas propriedades derivadas de fontes de XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada na propriedade chamada `CreateDate` em EXIF TIFF. AEM armazena esse valor no campo de metadados chamado `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
+>A filtragem funciona somente nas propriedades derivadas de fontes de XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada na propriedade chamada `CreateDate` em EXIF TIFF. [!DNL Experience Manager] armazena esse valor no campo de metadados chamado  `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
 
 1. Abra o Configuration Manager a partir de `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração **[!UICONTROL Adobe CQ DAM XmpFilter]**.

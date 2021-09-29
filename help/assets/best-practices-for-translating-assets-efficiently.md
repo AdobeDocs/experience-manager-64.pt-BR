@@ -2,19 +2,19 @@
 title: Práticas recomendadas para a tradução eficiente de ativos
 description: Práticas recomendadas para o gerenciamento eficiente de ativos para sincronizar várias versões traduzidas e simplificar os fluxos de trabalho de tradução.
 contentOwner: AG
-feature: Tradução
+feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Práticas recomendadas para converter ativos com eficiência {#best-practices-for-translating-assets-efficiently}
 
-O Adobe Experience Manager (AEM) Assets oferece suporte a fluxos de trabalho multilíngues para traduzir binários, metadados e tags de ativos digitais em vários locais e gerenciar os ativos traduzidos. Para obter detalhes, consulte [Ativos multilíngues](multilingual-assets.md).
+O Adobe Experience Manager Assets oferece suporte a fluxos de trabalho multilíngues para traduzir binários, metadados e tags de ativos digitais em várias localidades e gerenciar os ativos traduzidos. Para obter detalhes, consulte [Ativos multilíngues](multilingual-assets.md).
 
 Para o gerenciamento eficiente de ativos para garantir que diferentes versões traduzidas permaneçam sincronizadas, crie [cópias de idioma](preparing-assets-for-translation.md) de ativos antes de executar fluxos de trabalho de tradução.
 
@@ -43,7 +43,7 @@ Você também pode fazer algumas alterações na configuração de alguns fluxos
 
 1. Habilite o workflow *Definir data da última modificação*.
 
-   O workflow *DAM MetaData Writeback* configura a data da última modificação para um ativo. Como você desativa esse fluxo de trabalho na etapa 2, a AEM Assets não é mais capaz de manter a data da última modificação dos ativos atualizada. Portanto, ative o workflow *Definir data da última modificação* para garantir que as datas da última modificação dos ativos estejam atualizadas. Os ativos com datas da última modificação desatualizadas podem causar erros.
+   O workflow *DAM MetaData Writeback* configura a data da última modificação para um ativo. Como você desativa esse fluxo de trabalho na etapa 2, [!DNL Experience Manager Assets] não é mais capaz de manter a data da última modificação dos ativos atualizada. Portanto, ative o workflow *Definir data da última modificação* para garantir que as datas da última modificação dos ativos estejam atualizadas. Os ativos com datas da última modificação desatualizadas podem causar erros.
 
 1. [Configure a ](/help/sites-administering/tc-tic.md) estrutura de integração de tradução para parar a tradução de binários de ativos. Desmarque a opção &quot;Traduzir ativos&quot; na guia Ativos para interromper a tradução dos binários do ativo.
 1. Traduza metadados/tags de ativos usando [Fluxos de trabalho de ativos multilíngues](multilingual-assets.md).

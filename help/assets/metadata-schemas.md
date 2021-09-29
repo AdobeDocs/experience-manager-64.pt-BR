@@ -2,13 +2,13 @@
 title: Esquemas de metadados
 description: 'O esquema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar esquema de metadados personalizado, editar esquema de metadados e aplicar esquema de metadados a ativos.  '
 contentOwner: AG
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 12%
+source-wordcount: '2524'
+ht-degree: 11%
 
 ---
 
@@ -174,7 +174,7 @@ Clique em `+` para adicionar uma nova guia em um formulário de esquema. Por pad
 
 ## Excluir formulários de esquema de metadados {#deleting-metadata-schema-forms}
 
-AEM permite excluir somente formulários de esquema personalizados. Ela não permite excluir os formulários/modelos de esquema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
+[!DNL Experience Manager] permite excluir somente formulários de esquema personalizados. Ela não permite excluir os formulários/modelos de esquema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
 
 Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Delete]**.
 
@@ -184,11 +184,11 @@ Para excluir um formulário, selecione-o e clique no ícone **[!UICONTROL Delete
 
 >[!NOTE]
 >
->Não é possível excluir os formulários de esquema de metadados prontos para uso no AEM Assets.
+>Não é possível excluir os formulários de esquema de metadados prontos para uso no [!DNL Experience Manager] Assets.
 
 ## Formulários de esquema para tipos MIME {#schema-forms-for-mime-types}
 
-O AEM Assets fornece formulários padrão para vários tipos MIME prontos para uso. No entanto, é possível adicionar formulários personalizados a ativos de vários tipos MIME.
+[!DNL Experience Manager] Os ativos fornecem formulários padrão para vários tipos MIME prontos para uso. No entanto, é possível adicionar formulários personalizados a ativos de vários tipos MIME.
 
 ### Adicionar novos formulários para tipos MIME {#adding-new-forms-for-mime-types}
 
@@ -205,7 +205,7 @@ Nesse caso, crie um novo nó em `/etc/dam/metadataeditor/mimetypemappings` no re
 | `exposedmimetype` | Nome do formulário existente a ser mapeado | `String` | `image/jpeg` |
 | `mimetypes` | Lista de tipos MIME que usam o formulário definido no atributo `exposedmimetype` | `String` | `image/png` |
 
-O AEM Assets mapeia os seguintes tipos MIME e formulários de esquema:
+[!DNL Experience Manager] Os ativos mapeiam os seguintes tipos MIME e formulários de esquema:
 
 | Formulário de esquema | Tipos MIME |
 |---|---|
@@ -227,7 +227,7 @@ O recurso de esquema de metadados está disponível somente para administradores
 
 ## Aplicar metadados específicos da pasta {#applying-folder-specific-metadata}
 
-O AEM Assets permite definir uma variante de um esquema de metadados e aplicá-la a uma pasta específica.
+[!DNL Experience Manager] Os ativos permitem definir uma variante de um esquema de metadados e aplicá-la a uma pasta específica.
 
 Por exemplo, você pode definir uma variante do esquema de metadados padrão e aplicá-la a uma pasta. Ao aplicar o schema modificado, ele substitui o schema de metadados padrão original aplicado aos ativos na pasta.
 
@@ -239,7 +239,7 @@ A herança de metadados por ativos é baseada no esquema aplicado à pasta de pr
 
 Se a pasta tiver uma subpasta, os ativos na subpasta herdarão os metadados do esquema aplicado no nível da subpasta se um esquema diferente for aplicado no nível da subpasta. No entanto, se nenhum esquema ou o mesmo schema for aplicado no nível da subpasta, os ativos da subpasta herdarão os metadados do schema aplicado no nível da pasta pai.
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
+1. Clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Marque a caixa de seleção ao lado de um formulário, por exemplo, o formulário de metadados padrão, clique ou toque no ícone **[!UICONTROL Copiar]** e salve-o como um formulário personalizado. Especifique um nome personalizado para o formulário, por exemplo `my_default`. Como alternativa, é possível criar um formulário personalizado.
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -269,12 +269,12 @@ Você pode definir campos obrigatórios em um nível de pasta, que é empregado 
 
 >[!NOTE]
 >
->Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na exibição Cartões, AEM não exibe a mensagem de aviso sobre a falta de metadados para esses campos de metadados obrigatórios.
+>Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na exibição Cartões, [!DNL Experience Manager] não exibe a mensagem de aviso sobre a falta de metadados para esses campos de metadados obrigatórios.
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
+1. Clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve-o como `my_default`.
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo **Category** e torne o campo obrigatório.
 
@@ -286,8 +286,8 @@ Você pode definir campos obrigatórios em um nível de pasta, que é empregado 
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. (Opcional) Acesse `http://[server]:[port]/system/console/components/`. Configure e habilite o componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está desabilitado por padrão. Defina uma frequência na qual o AEM verifica a validade dos metadados nos ativos.
-Essa configuração adiciona uma propriedade `hasValidMetadata` ao jcr:content de ativos. Usando essa propriedade, AEM pode filtrar resultados em uma pesquisa.
+1. (Opcional) Acesse `http://[server]:[port]/system/console/components/`. Configure e habilite o componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está desabilitado por padrão. Defina uma frequência em que [!DNL Experience Manager] verifique a validade dos metadados nos ativos.
+Essa configuração adiciona uma propriedade `hasValidMetadata` ao jcr:content de ativos. Usando essa propriedade, [!DNL Experience Manager] pode filtrar resultados em uma pesquisa.
 
 >[!NOTE]
 >
@@ -295,4 +295,4 @@ Essa configuração adiciona uma propriedade `hasValidMetadata` ao jcr:content d
 
 >[!CAUTION]
 >
->As verificações de validação de metadados consomem muitos recursos e podem afetar o desempenho do sistema. Agendar as verificações em conformidade. Se a implantação de AEM tiver problemas de desempenho, tente desativar esse trabalho.
+>As verificações de validação de metadados consomem muitos recursos e podem afetar o desempenho do sistema. Agendar as verificações em conformidade. Se a implantação [!DNL Experience Manager] tiver problemas de desempenho, tente desabilitar esse trabalho.

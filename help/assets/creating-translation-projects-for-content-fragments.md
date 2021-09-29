@@ -1,8 +1,8 @@
 ---
 title: Criação de projetos de tradução para fragmentos de conteúdo
-seo-title: Criação de projetos de tradução para fragmentos de conteúdo
+seo-title: Creating Translation Projects for Content Fragments
 description: Saiba como traduzir fragmentos de conteúdo.
-seo-description: Saiba como traduzir fragmentos de conteúdo.
+seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: Fragmentos de conteúdo
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,13 @@ Também é possível criar cópias de idioma temporárias para fragmentos, de fo
 
 ## Tradução de fragmentos de mídia mista {#translating-mixed-media-fragments}
 
-AEM permite traduzir fragmentos de conteúdo que incluem vários tipos de ativos de mídia e coleções. Se você traduzir um fragmento de conteúdo que inclui ativos em linha, as cópias traduzidas desses ativos serão armazenadas na raiz do idioma de destino.
+[!DNL Experience Manager] permite traduzir fragmentos de conteúdo que incluem vários tipos de ativos de mídia e coleções. Se você traduzir um fragmento de conteúdo que inclui ativos em linha, as cópias traduzidas desses ativos serão armazenadas na raiz do idioma de destino.
 
 Se o fragmento de conteúdo incluir uma coleção, os ativos dentro da coleção serão traduzidos junto com o fragmento de conteúdo. As cópias traduzidas dos ativos são armazenadas na raiz apropriada do idioma de destino em um local que corresponda ao local físico dos ativos de origem na raiz do idioma de origem.
 
 Para traduzir fragmentos de conteúdo que incluem mídia mista, primeiro edite a estrutura de tradução padrão para permitir a tradução de ativos em linha e coleções associadas aos fragmentos de conteúdo.
 
-1. Clique/toque no logotipo do AEM e navegue até **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Clique/toque no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas > Implantação > Cloud Services]**.
 1. Localize **[!UICONTROL Integração de tradução]** em **[!UICONTROL Adobe Marketing Cloud]** e clique/toque em **[!UICONTROL Mostrar configurações]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

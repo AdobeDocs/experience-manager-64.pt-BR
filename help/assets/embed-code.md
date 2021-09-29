@@ -1,8 +1,8 @@
 ---
 title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
-seo-title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Saiba como incorporar vídeos ou imagens do Dynamic Media em uma página da Web
-seo-description: Saiba como incorporar vídeos ou imagens do Dynamic Media em uma página da Web
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Componentes
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 20%
+source-wordcount: '367'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 20%
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
-Você incorpora URLs somente se estiver _não_ usando AEM como WCM. Se estiver usando AEM como WCM, [você adiciona os ativos diretamente na página.](adding-dynamic-media-assets-to-pages.md)
+Você incorpora URLs somente se for _não_ usando [!DNL Experience Manager] como o WCM. Se estiver usando [!DNL Experience Manager] como WCM, [você adiciona os ativos diretamente na página.](adding-dynamic-media-assets-to-pages.md)
 
 Consulte [Vincular URLs ao seu Aplicativo Web.](linking-urls-to-yourwebapplication.md)
 

@@ -2,12 +2,12 @@
 title: Criar e configurar as páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
-feature: Ferramentas para desenvolvedores, Gerenciamento de ativos
+feature: Developer Tools,Asset Management
 role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3300'
 ht-degree: 2%
 
 ---
@@ -26,13 +26,13 @@ Este documento descreve o seguinte:
 
 ## Por que criar e configurar páginas do editor de ativos? {#why-create-and-configure-asset-editor-pages}
 
-O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao migrar de uma solução de pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários empresariais, autores de WCM, jornalistas e assim por diante - a poderosa interface de usuário do Adobe Experience Manager (AEM) Assets para usuários profissionais pode fornecer muitas informações e as partes interessadas começam a solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais que são relevantes para eles.
+O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao migrar de uma solução de pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários empresariais, autores de WCM, jornalistas e assim por diante - a poderosa interface do usuário [!DNL Adobe Experience Manager Assets] para usuários profissionais pode fornecer muitas informações e as partes interessadas começam a solicitar interfaces do usuário ou aplicativos específicos para acessar os ativos digitais que são relevantes para eles.
 
 Esses aplicativos centrados em ativos podem ser simples galerias de fotos em uma intranet onde os funcionários podem fazer upload de fotos de visitas comerciais ou de um centro de imprensa em um site aberto ao público, como o exemplo fornecido com o Geometrixx. Os aplicativos centrados em ativos também podem se estender para soluções completas, incluindo carrinhos de compras, processos de check-out e verificação.
 
-A criação de um aplicativo centrado em ativos se torna, em grande medida, um processo de configuração que não requer codificação, somente conhecimento dos grupos de usuários e suas necessidades, bem como conhecimento dos metadados que estão sendo usados. Os aplicativos centrados em ativos criados com o AEM Assets são extensíveis: com o esforço moderado de codificação, os componentes reutilizáveis para pesquisar, visualizar e modificar ativos podem ser criados.
+A criação de um aplicativo centrado em ativos se torna, em grande medida, um processo de configuração que não requer codificação, somente conhecimento dos grupos de usuários e suas necessidades, bem como conhecimento dos metadados que estão sendo usados. Os aplicativos centrados em ativos criados com [!DNL Assets] são extensíveis: com o esforço moderado de codificação, os componentes reutilizáveis para pesquisar, visualizar e modificar ativos podem ser criados.
 
-Um aplicativo centrado em ativos no AEM consiste em uma página do Editor de ativos, que pode ser usada para obter uma exibição detalhada de um ativo específico. Uma página Editor de ativos também permite a edição de metadados, desde que o usuário que acessar o ativo tenha as permissões necessárias.
+Um aplicativo centrado em ativos em [!DNL Experience Manager] consiste em uma página do Editor de ativos, que pode ser usada para obter uma exibição detalhada de um ativo específico. Uma página Editor de ativos também permite a edição de metadados, desde que o usuário que acessar o ativo tenha as permissões necessárias.
 
 ## Criar e configurar uma página de Compartilhamento de ativos {#creating-and-configuring-an-asset-share-page}
 
@@ -161,7 +161,7 @@ Para personalizar o construtor de consultas:
 
 #### Adicionar predicados {#adding-predicates}
 
-O AEM Assets inclui vários predicados que você pode adicionar à página Compartilhamento de ativos. Isso permite que seus usuários restrinjam ainda mais as pesquisas. Em alguns casos, eles podem substituir um parâmetro do construtor de consultas (por exemplo, o parâmetro Caminho ).
+[!DNL Experience Manager Assets] O inclui vários predicados que podem ser adicionados à página Compartilhamento de ativos. Isso permite que seus usuários restrinjam ainda mais as pesquisas. Em alguns casos, eles podem substituir um parâmetro do construtor de consultas (por exemplo, o parâmetro Caminho ).
 
 Para adicionar predicados:
 
@@ -279,7 +279,7 @@ O Formulário de metadados é um formulário que inclui uma ação de início e 
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   Consulte [Personalização e extensão do AEM Assets](extending-assets.md) para obter informações sobre como modificar os namespaces disponíveis no formulário de metadados.
+   Consulte [Personalização e extensão [!DNL Assets]](extending-assets.md) para obter informações sobre como modificar os namespaces disponíveis no formulário de metadados.
 
 1. Clique na guia **[!UICONTROL Restrições]**. Aqui, é possível selecionar se um campo é obrigatório e, se necessário, adicionar restrições.
 
@@ -392,7 +392,7 @@ Para adicionar ações à página Editor de ativos:
 
 ## Editar vários ativos com a página Editor de ativos {#multi-editing-assets-with-the-asset-editor-page}
 
-Com o AEM Assets, é possível fazer alterações em vários ativos ao mesmo tempo. Depois de ter selecionado ativos, é possível alterar simultaneamente seus itens:
+Com [!DNL Assets] você pode fazer alterações em vários ativos de uma só vez. Depois de ter selecionado ativos, é possível alterar simultaneamente seus itens:
 
 * Tags
 * Metadados

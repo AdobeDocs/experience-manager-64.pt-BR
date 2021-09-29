@@ -2,19 +2,19 @@
 title: Ativos relacionados
 description: Saiba como relacionar ativos que compartilham determinados atributos comuns. Também é possível usar o recurso para criar relacionamentos de origem/derivados entre ativos.
 contentOwner: AG
-feature: Gerenciamento de ativos,Colaboração
+feature: Asset Management,Collaboration
 role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
 
 # Ativos relacionados {#related-assets}
 
-Os ativos Adobe Experience Manager (AEM) permitem relacionar manualmente os ativos com base nas necessidades de sua organização usando o recurso Ativos relacionados . Por exemplo, você pode relacionar um arquivo de licença com um ativo ou uma imagem/vídeo em um tópico semelhante. Você pode relacionar ativos que compartilham determinados atributos comuns. Também é possível usar o recurso para criar relacionamentos de origem/derivados entre ativos. Por exemplo, se você tiver um arquivo PDF gerado a partir de um arquivo INDD, poderá relacionar o arquivo PDF ao seu arquivo INDD de origem.
+O Adobe Experience Manager Assets permite relacionar ativos manualmente com base nas necessidades de sua organização usando o recurso Ativos relacionados . Por exemplo, você pode relacionar um arquivo de licença com um ativo ou uma imagem/vídeo em um tópico semelhante. Você pode relacionar ativos que compartilham determinados atributos comuns. Também é possível usar o recurso para criar relacionamentos de origem/derivados entre ativos. Por exemplo, se você tiver um arquivo PDF gerado a partir de um arquivo INDD, poderá relacionar o arquivo PDF ao seu arquivo INDD de origem.
 
 Dessa forma, você tem a flexibilidade de compartilhar um arquivo de baixa resolução (por exemplo, PDF/JPG) para fornecedores/agências e disponibilizar o arquivo de alta resolução (por exemplo, INDD) somente mediante solicitação.
 
@@ -65,11 +65,11 @@ Dessa forma, você tem a flexibilidade de compartilhar um arquivo de baixa resol
 
 ## Tradução de ativos relacionados {#translating-related-assets}
 
-Criar relacionamentos de origem/derivados entre ativos usando o recurso Ativos relacionados também é útil em fluxos de trabalho de tradução. Quando você executa um fluxo de trabalho de tradução em um ativo derivado, o AEM Assets busca automaticamente qualquer ativo que o arquivo de origem faça referência e o inclui para tradução. Dessa forma, o ativo referenciado pelo ativo de origem é convertido junto com a fonte e os ativos derivados. Por exemplo, considere um cenário em que a cópia em inglês inclua um ativo derivado e o arquivo de origem, como mostrado.
+Criar relacionamentos de origem/derivados entre ativos usando o recurso Ativos relacionados também é útil em fluxos de trabalho de tradução. Quando você executa um fluxo de trabalho de tradução em um ativo derivado, [!DNL Experience Manager] o Assets busca automaticamente qualquer ativo que o arquivo de origem faça referência e o inclui para tradução. Dessa forma, o ativo referenciado pelo ativo de origem é convertido junto com a fonte e os ativos derivados. Por exemplo, considere um cenário em que a cópia em inglês inclua um ativo derivado e o arquivo de origem, como mostrado.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se o arquivo de origem estiver relacionado a outro ativo, o AEM Assets buscará o ativo referenciado e o incluirá na tradução.
+Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manager] o Assets buscará o ativo referenciado e o incluirá na tradução.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

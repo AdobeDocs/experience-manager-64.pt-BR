@@ -2,12 +2,12 @@
 title: Processar ativos para realizar processos de negócios, realizar auditorias, alcançar conformidade e manter a conformidade básica
 description: Processamento de ativos para converter formatos, criar representações, gerenciar ativos, validar ativos e executar fluxos de trabalho.
 contentOwner: AG
-feature: Fluxo De Trabalho,Representações
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Use fluxos de trabalho em ativos digitais para ativar o ativo ou criar marcas d&
 >
 >Se um fluxo de trabalho disponível na interface clássica não estiver disponível na interface habilitada para toque, como [!UICONTROL Solicitação para ativar] e [!UICONTROL Solicitação para desativar], consulte [criar modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
 
-## Aplicar um fluxo de trabalho a um ativo AEM {#apply-a-workflow-to-an-aem-asset}
+## Aplicar um fluxo de trabalho a um ativo [!DNL Experience Manager] {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ Para um modelo de fluxo de trabalho, os usuários podem criar um iniciador de fl
 >[!MORELIKETHIS]
 >
 >* [Aplicar e participar de fluxos de trabalho](/help/sites-authoring/workflows.md)
-* [Criar modelos de fluxo de trabalho e estender a funcionalidade do fluxo de trabalho](/help/sites-developing/workflows.md)
-* [Métodos para executar workflows](/help/sites-administering/workflows-starting.md)
-* [Práticas recomendadas para workflows](/help/sites-developing/workflows-best-practices.md)
+>* [Criar modelos de fluxo de trabalho e estender a funcionalidade do fluxo de trabalho](/help/sites-developing/workflows.md)
+>* [Métodos para executar workflows](/help/sites-administering/workflows-starting.md)
+>* [Práticas recomendadas para workflows](/help/sites-developing/workflows-best-practices.md)
 

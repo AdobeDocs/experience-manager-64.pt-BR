@@ -3,12 +3,12 @@ title: Gerenciar coleções de ativos
 description: Saiba mais sobre as tarefas para gerenciar Coleções de ativos, como criar, exibir, excluir, editar e baixar coleções.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Coleções
+feature: Collections
 role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2326'
 ht-degree: 16%
 
 ---
@@ -111,7 +111,7 @@ Para criar uma coleção inteligente, siga as etapas:
 
    O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, toque/clique no botão **[!UICONTROL Editar seleção inteligente]**.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ## Adicionar ativos a uma coleção {#adding-assets-to-a-collection}
 
@@ -133,7 +133,7 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 
 1. Na interface do usuário do Assets, toque/clique no ícone de pesquisa na barra de ferramentas.
 
-   ![chlimage_1-115](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
 
@@ -195,7 +195,7 @@ Para personalizar a página de metadados [!UICONTROL Propriedades], incluindo ad
 
 ## Pesquisar coleções {#searching-collections}
 
-Você pode pesquisar coleções no console Coleções. Ao pesquisar com palavras-chave na caixa Omnisearch, o AEM Assets pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
+Você pode pesquisar coleções no console Coleções. Ao pesquisar com palavras-chave na caixa Omnisearch, [!DNL Experience Manager] o Assets pesquisa por nomes de coleção, metadados e as tags adicionadas às coleções.
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas nas coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pasta), todos os ativos, pastas e coleções relevantes são retornados.
 
@@ -203,7 +203,7 @@ Se você pesquisar por coleções do nível superior, somente coleções individ
 
 No console Coleções , toque/clique em uma coleção para abri-la.
 
-Em uma coleção, AEM pesquisa de Ativos é restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Ao pesquisar em uma pasta, todos os ativos e pastas filhas correspondentes na pasta atual são retornados. Ao pesquisar em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
+Em uma coleção, a pesquisa é restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Ao pesquisar em uma pasta, todos os ativos e pastas filhas correspondentes na pasta atual são retornados. Ao pesquisar em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
 
 ## Editar configurações de coleção {#editing-collection-settings}
 
@@ -305,5 +305,5 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 >[!MORELIKETHIS]
 >
 >* [Configurar notificações por email do Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
-* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
+>* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
 

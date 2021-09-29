@@ -5,24 +5,24 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 28%
+source-wordcount: '552'
+ht-degree: 27%
 
 ---
 
 # Publicar pastas no Brand Portal {#publish-folders-to-brand-portal}
 
-Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar ativos e pastas na instância do AEM Assets Brand Portal (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve integrar o AEM Assets com o Brand Portal. Para obter detalhes, consulte [Configurar o AEM Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md).
+Como administrador do Adobe Experience Manager Assets, você pode publicar ativos e pastas na instância [!DNL Experience Manager Assets Brand Portal] (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve integrar [!DNL Experience Manager Assets] com [!DNL Brand Portal]. Para obter detalhes, consulte [Configurar [!DNL Experience Manager Assets] com Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Após publicar um ativo ou uma pasta, ele fica disponível para os usuários no Brand Portal.
 
-Se você fizer modificações subsequentes no ativo ou pasta original no AEM Assets, as alterações não serão refletidas no Brand Portal até que você publique novamente o ativo ou a pasta. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
+Se fizer modificações subsequentes no ativo ou pasta original em [!DNL Assets], as alterações não serão refletidas no Brand Portal até que publique novamente o ativo ou a pasta. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
 
 ## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Na interface do AEM Assets, passe o mouse sobre a pasta desejada e selecione a opção **[!UICONTROL Publish]** nas ações rápidas.
+1. Na interface [!DNL Assets], passe o mouse sobre a pasta desejada e selecione a opção **[!UICONTROL Publicar]** nas ações rápidas.
 
    Como alternativa, selecione a pasta desejada e siga as etapas adicionais.
 
@@ -57,11 +57,11 @@ Se você fizer modificações subsequentes no ativo ou pasta original no AEM Ass
 
 ## Cancelar publicação de pastas do Brand Portal {#unpublish-folders-from-brand-portal}
 
-Você pode remover qualquer pasta de ativos publicada no Brand Portal ao cancelar a publicação da instância do autor do AEM. Após cancelar a publicação da pasta original, a cópia não estará mais disponível para os usuários do Brand Portal.
+Você pode remover qualquer pasta de ativos publicada no Brand Portal ao cancelar a publicação da instância do autor [!DNL Experience Manager]. Após cancelar a publicação da pasta original, a cópia não estará mais disponível para os usuários do Brand Portal.
 
 Você tem a opção de cancelar a publicação de pastas do Brand Portal rapidamente ou agendá-las para uma data e hora posteriores. Para cancelar a publicação de pastas de ativos do Brand Portal:
 
-1. Na interface do AEM Assets na instância do AEM Author, selecione a pasta que deseja cancelar a publicação.
+1. Na interface [!DNL Assets] na instância [!DNL Experience Manager] do autor, selecione a pasta que deseja cancelar a publicação.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

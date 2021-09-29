@@ -3,12 +3,12 @@ title: Reutilizar ativos usando o MSM
 description: Use ativos em várias páginas/pastas que são derivadas de e vinculadas a ativos principais. Os ativos permanecem sincronizados com uma cópia principal e, com alguns cliques, recebem as atualizações dos ativos principais.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gerenciamento de ativos, Gerenciador de vários sites
+feature: Asset Management,Multi Site Manager
 role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3159'
 ht-degree: 9%
 
 ---
@@ -64,7 +64,7 @@ O MSM mantém um relacionamento dinâmico entre o ativo de origem e suas cópias
 Para criar uma live copy a partir de um ou mais ativos ou pastas de origem, siga um destes procedimentos:
 
 * **Método 1**: Selecione os ativos de origem e clique em  **[!UICONTROL Criar]**  >  **[!UICONTROL Live]** Copy na barra de ferramentas na parte superior.
-* **Método 2**: Em AEM interface do usuário, clique em  **[!UICONTROL Criar > Live]** Copy no canto superior direito da interface.
+* **Método 2**: Na interface  [!DNL Experience Manager] do usuário, clique em  **[!UICONTROL Criar > Live]** Copy no canto superior direito da interface.
 
 Você pode criar cópias ativas de um ativo ou uma pasta, uma de cada vez. Você pode criar cópias ativas derivadas de um ativo ou de uma pasta que seja uma live copy propriamente dita.
 
@@ -73,15 +73,15 @@ Fragmentos de conteúdo (CFs) não são compatíveis com o caso de uso. Ao tenta
 Para criar cópias ativas usando o primeiro método, siga estas etapas:
 
 1. Selecione ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Criar > Live Copy]**.
-   ![Criar Live Copy AEM interface](assets/lc_create1.png)
+   ![Criar Live Copy na  [!DNL Experience Manager] interface](assets/lc_create1.png)
 1. Selecione o ativo ou a pasta de origem. Clique em **[!UICONTROL Avançar]**.
 1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma live copy de pastas, você pode optar por incluir ou excluir filhos.
 1. Selecione uma configuração de implementação. Clique em **[!UICONTROL Criar]**.
 
 Para criar cópias ativas usando o segundo método, siga estas etapas:
 
-1. Em AEM interface, no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
-   ![Criar Live Copy AEM interface](assets/lc_create2.png)
+1. Na interface [!DNL Experience Manager], no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
+   ![Criar Live Copy na  [!DNL Experience Manager] interface](assets/lc_create2.png)
 1. Selecione o ativo ou a pasta de origem. Clique em **[!UICONTROL Avançar]**.
 1. Selecione a pasta de destino. Clique em **[!UICONTROL Avançar]**.
 1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma live copy de pastas, você pode optar por incluir ou excluir filhos.
@@ -93,7 +93,7 @@ Para criar cópias ativas usando o segundo método, siga estas etapas:
 
 ## Exibir várias propriedades e status de cópia ativa e de origem {#view-properties-statuses-source-and-lc}
 
-Você pode exibir as informações e os status relacionados ao MSM da live copy, como relacionamento, sincronização, implantações e muito mais, das várias áreas da interface do usuário do AEM. Os dois métodos a seguir funcionam para ativos e pastas:
+Você pode exibir as informações e os status relacionados ao MSM da live copy, como relacionamento, sincronização, implantações e muito mais, das várias áreas da interface do usuário [!DNL Experience Manager]. Os dois métodos a seguir funcionam para ativos e pastas:
 
 * Selecione o ativo de live copy e localize as informações na página **[!UICONTROL Propriedades]**.
 * Selecione a pasta de origem e localize as informações detalhadas de cada live copy a partir do **[!UICONTROL Console da Live Copy]**.
@@ -220,7 +220,7 @@ Você pode desfazer todas as modificações locais e reverter o ativo para o est
 
 ## Remover relacionamento dinâmico {#remove-live-relationship}
 
-Você pode remover completamente a relação entre uma origem e uma live copy usando a ação Desanexar . A live copy se torna um ativo ou pasta independente após ser desanexada. Ele é exibido como um novo ativo na interface AEM, imediatamente após a desconexão. Para desconectar uma live copy da origem, siga essas etapas.
+Você pode remover completamente a relação entre uma origem e uma live copy usando a ação Desanexar . A live copy se torna um ativo ou pasta independente após ser desanexada. Ele é exibido como um novo ativo na interface [!DNL Experience Manager], imediatamente após a desconexão. Para desconectar uma live copy da origem, siga essas etapas.
 
 1. Selecione um ativo ou uma pasta de live copy. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Live Copy]**. Clique em **[!UICONTROL Desanexar]** na barra de ferramentas. Clique em **[!UICONTROL Desanexar]** da caixa de diálogo apresentada.
@@ -243,7 +243,7 @@ Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada
 
 ## Estender o MSM para ativos {#extend-msm-for-assets}
 
-O AEM permite estender a funcionalidade usando as APIs Java do MSM. Para o Assets, a extensão funciona exatamente da mesma forma que com o MSM para o Site. Para obter detalhes, consulte [Extensão do MSM](../sites-developing/extending-msm.md) e as seguintes seções para obter informações sobre tarefas específicas:
+[!DNL Experience Manager] O permite estender a funcionalidade usando as APIs Java do MSM. Para o Assets, a extensão funciona exatamente da mesma forma que com o MSM para o Site. Para obter detalhes, consulte [Extensão do MSM](../sites-developing/extending-msm.md) e as seguintes seções para obter informações sobre tarefas específicas:
 
 * [Visão geral das APIs](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Criar uma nova ação de sincronização](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -259,7 +259,7 @@ O AEM permite estender a funcionalidade usando as APIs Java do MSM. Para o Asset
 
 ## Impacto das tarefas de gerenciamento de ativos em cópias dinâmicas {#impact-of-asset-management-tasks-on-live-copies}
 
-As cópias em tempo real e as fontes são ativos ou pastas que podem ser gerenciados, de certa forma, como ativos digitais. Algumas tarefas de gerenciamento de ativos no AEM têm um impacto específico nas cópias ativas.
+As cópias em tempo real e as fontes são ativos ou pastas que podem ser gerenciados, de certa forma, como ativos digitais. Algumas tarefas de gerenciamento de ativos em [!DNL Experience Manager] têm um impacto específico nas cópias ativas.
 
 * Copiar uma live copy cria um ativo de live copy com a mesma origem da primeira live copy.
 * Quando você move uma origem ou sua live copy, o relacionamento dinâmico é mantido.

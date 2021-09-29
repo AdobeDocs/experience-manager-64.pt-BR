@@ -1,22 +1,22 @@
 ---
-title: Formatos de arquivo compatíveis com o AEM Assets
-description: Lista de formatos de arquivo e tipos MIME compatíveis com o AEM Assets e os recursos compatíveis com cada formato.
+title: Formatos de arquivo compatíveis com o  [!DNL Experience Manager] Assets
+description: Lista de formatos de arquivo e tipos MIME compatíveis com o Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
-feature: Gerenciamento de ativos,Representações
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1635'
 ht-degree: 10%
 
 ---
 
-# Formatos de arquivos compatíveis com o AEM Assets {#assets-supported-formats}
+# Formatos de arquivos suportados em [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-O AEM Assets é compatível com uma grande variedade de formatos de arquivo e cada funcionalidade tem suporte variado para diferentes tipos MIME.
+[!DNL Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada funcionalidade tem suporte variado para diferentes tipos MIME.
 
-Para integrar o AEM Assets com outros softwares de gerenciamento de ativos digitais (DAM) compatíveis com padrões e usar a Plataforma de metadados extensível Adobe (XMP).
+Para integrar [!DNL Assets] a outras soluções de gerenciamento de ativos digitais (DAM) compatíveis com os padrões e software de desktop, use a Plataforma de metadados extensível Adobe (XMP).
 
 Use a legenda para entender o nível de suporte.
 
@@ -111,7 +111,7 @@ Consulte [Biblioteca de transcodificação de imagem](imaging-transcoding-librar
 
 ## Camera Raw {#supported-camera-raw}
 
-A biblioteca Adobe Camera Raw permite que o AEM Assets assimile imagens brutas. Consulte [Suporte Camera Raw](camera-raw.md).
+A biblioteca Adobe Camera Raw permite [!DNL Assets] assimilar imagens brutas. Consulte [Suporte Camera Raw](camera-raw.md).
 
 ## Formatos de documento {#supported-document-formats}
 
@@ -194,7 +194,7 @@ Além da funcionalidade acima, considere o seguinte:
 
 ## Formatos de vídeo de entrada para transcodificação Dynamic Media {#supported-input-video-formats-for-dynamic-media-transcoding}
 
-| Extensão de arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
+| Extensão de arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) |  |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação da Apple |
@@ -244,7 +244,7 @@ A aplicabilidade de workflows comuns do DAM para alguns outros formatos de arqui
 
 ## Tipos MIME suportados {#supported-mime-types}
 
-Por padrão, o AEM detecta o tipo de arquivo usando a extensão de arquivo . AEM pode detectá-lo do conteúdo dos arquivos. Para o último, selecione a opção [!UICONTROL Detectar MIME do conteúdo] em [!UICONTROL Day CQ DAM Mime Type Service] no Console da Web AEM.
+Por padrão, [!DNL Experience Manager] detecta o tipo de arquivo usando a extensão de arquivo. [!DNL Experience Manager] O pode detectá-lo do conteúdo dos arquivos. Para o último, selecione a opção [!UICONTROL Detectar MIME do conteúdo] em [!UICONTROL Day CQ DAM Mime Type Service] no [!DNL Experience Manager] Console da Web.
 
 Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
