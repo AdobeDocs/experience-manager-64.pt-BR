@@ -1,8 +1,8 @@
 ---
 title: Atualização para o AEM 6.4 Communities
-seo-title: Atualização para o AEM 6.4 Communities
+seo-title: Upgrading to AEM 6.4 Communities
 description: Como atualizar de uma versão anterior para AEM Comunidades 6.4
-seo-description: Como atualizar de uma versão anterior para AEM Comunidades 6.4
+seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '664'
+ht-degree: 1%
 
 ---
 
@@ -51,17 +51,17 @@ Se o site atualizado foi configurado para usar o armazenamento na nuvem do Adobe
 
 Portanto, há a capacidade de instruir o ASRP a usar `AEM 6.0 compatability-mode` para acessar o UGC.
 
-Para todas as instâncias de autor e publicação do AEM 6.3
+Para todas as instâncias de autor e publicação do AEM 6.3:
 
-1. Fazer logon com privilégios de administrador
-2. Configurar [ASRP](asrp.md)
-3. Siga estas etapas para tornar o UGC pré-existente visível:
-i. Navegue até o console da Web, por exemplo
-   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMgrii. Localize a configuração **[!UICONTROL AEM Communities Utilities]**
-iii. Selecione para expandir o painel de configuração
-   * *Desmarcar* **`Cloud Storage`**
-   * Selecione **[!UICONTROL Salvar]**
+1. Faça logon com privilégios de administrador e configure [ASRP](asrp.md).
+1. Siga estas etapas para tornar o UGC existente visível:
+
+   i. Navegue até o console da Web. O URL padrão é
+   `https://localhost:4502/system/console/configMgr`.
+
+   ii. Localize a configuração **[!UICONTROL AEM Communities Utilities]** e selecione para expandir o painel de configuração.
+
+   iii. Desmarque **[!UICONTROL Cloud Storage]** e clique em **[!UICONTROL Salvar]**.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
