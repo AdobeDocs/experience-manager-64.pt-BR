@@ -1,22 +1,21 @@
 ---
 title: Editar as propriedades da página
-seo-title: Editar as propriedades da página
+seo-title: Editing Page Properties
 description: Defina as propriedades desejadas para uma página
-seo-description: Defina as propriedades desejadas para uma página
+seo-description: Define the required properties for a page
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
-translation-type: tm+mt
-source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
+exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 82%
+source-wordcount: '1789'
+ht-degree: 78%
 
 ---
-
 
 # Editar as propriedades da página{#editing-page-properties}
 
@@ -54,12 +53,12 @@ As propriedades são distribuídas por várias guias.
 
 * **Marcas**
 
-   Aplique uma identidade de marca consistente em todas as páginas, anexando um espaçador de marca a cada título de página. Esta funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   Aplique uma identidade de marca consistente em todas as páginas, anexando um arquivo de marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 
-   * **Substituir**  - Marque para definir o espaçador da marca nesta página.
-      * O valor será herdado por qualquer página secundária, a menos que os valores **Override** também estejam definidos.
-   * **Valor**  de substituição - O texto do espaçador da marca a ser anexado ao título da página.
-      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Ciclismo da Toscana | Sempre pronto para a WKND&quot;
+   * **Override**  - Marque a opção para definir o rastreamento da marca nesta página.
+      * O valor será herdado por qualquer página secundária, a menos que também tenha seus valores **Override** definidos.
+   * **Sobrepor valor**  - O texto do traçado da marca a ser anexado ao título da página.
+      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Toscânia cíclica | Sempre pronto para a WKND&quot;
 
 * **Título da página**
 
@@ -93,7 +92,7 @@ As propriedades são distribuídas por várias guias.
 
    Permite que você insira uma vanity URL para esta página, o que pode permitir que você tenha um URL menor e/ou mais expressivo.
 
-   Por exemplo, se o URL personalizado estiver definido como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` então h `ttp://example.com/welcome`será o URL personalizado de h `ttp://example.com/content/v1.0/startpage`
+   Por exemplo, se a URL personalizada estiver definida como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,`, h `ttp://example.com/welcome`será a URL personalizada de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -125,13 +124,10 @@ As propriedades são distribuídas por várias guias.
 
    Especifique um alias a ser usado com esta página.
 
-   >[!NOTE]
-   >
-   > O alias ajusta a propriedade `sling:alias` para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
-   >
-   >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
-   >
-   >Para obter mais detalhes, consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/managing/seo-and-url-management.md#localized-page-names)
+   * Por exemplo, se você definir um alias de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página também poderá ser acessada por `/content/wknd/us/en/magazine/private`.
+   * A criação de um alias define a propriedade `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
+   * As páginas acessadas por aliases no editor não podem ser publicadas. [As opções ](/help/sites-authoring/publishing-pages.md) de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+   * Para obter mais detalhes, consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Modelos permitidos**
 
@@ -145,7 +141,7 @@ As propriedades são distribuídas por várias guias.
 
    >[!CAUTION]
    >
-   >A guia **[Permissões](/help/sites-authoring/editing-page-properties.md#permissions)** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade cq:cugEnabled, uma mensagem de aviso será mostrada em **Requisito de autenticação** e a opção não será editável, nem as [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) serão editáveis.
+   >A guia **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** permite a edição de configurações de CUG com base na presença do mixin `granite:AuthenticationRequired`. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade cq:cugEnabled , uma mensagem de aviso será exibida em **Requisito de autenticação** e a opção não será editável, nem as [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) serão editáveis.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -158,7 +154,7 @@ As propriedades são distribuídas por várias guias.
 
    Especifique uma configuração de exportação.
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 1. **Miniatura da página**
 
@@ -195,7 +191,7 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-authoring/personalization.md).
 
-### Permissões    {#permissions}
+### Permissões   {#permissions}
 
 * **Permissões**
 
@@ -207,14 +203,14 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    >[!CAUTION]
    >
-   >A guia **Permissões** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na guia [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) não será editável.
+   >A guia **Permissions** permite a edição de configurações de CUG com base na presença do mixin `granite:AuthenticationRequired`. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled` , uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na guia [Avançado](/help/sites-authoring/editing-page-properties.md#advanced) não será editável.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de direitos de usuário, grupo e acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
+   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de usuário, grupo e direitos de acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
 
 ### Blueprint {#blueprint}
 
@@ -222,13 +218,13 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site   {#site-structure}
+### Estrutura do site  {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -347,4 +343,3 @@ Depois de entrar na edição de itens em massa é possível:
 >[!NOTE]
 >
 >O componente da página pode ser configurado para especificar os campos disponíveis para edição de itens em massa. Consulte [Configurar sua página para a edição de itens em massa das propriedades da página](/help/sites-developing/bulk-editing.md).
-

@@ -1,19 +1,18 @@
 ---
 title: Publicar páginas
-seo-title: Publicar páginas
+seo-title: Publishing Pages
 description: Publicar páginas
-seo-description: 'null'
+seo-description: null
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 87%
+source-wordcount: '1680'
+ht-degree: 84%
 
 ---
 
@@ -32,16 +31,13 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >* **Publicar/Desfazer a publicação**
    >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
-   >
-   >
-* **Ativar / Desativar**
+>
+>* **Ativar / Desativar**
    >  Estes termos são sinônimos de publicar/desfazer a publicação.
-   >
-   >
-* **Replicar / Replicação**
+>
+>* **Replicar / Replicação**
    >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 >
-
 
 
 >[!NOTE]
@@ -53,7 +49,6 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >* Uma mensagem será exibida brevemente para notificar que o fluxo de trabalho foi disparado.
 
 >
-
 
 
 ## Publicar páginas {#publishing-pages-2}
@@ -93,12 +88,16 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 >
 >A publicação por meio do Editor é um processo superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
+>[!NOTE]
+>
+>As páginas acessadas por [aliases](/help/sites-authoring/editing-page-properties.md#advanced) no editor não podem ser publicadas. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+
 ### Publicação por meio do Console {#publishing-from-the-console}
 
 No console de sites, existem duas opções para publicação:
 
-* [Publicação rápida](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Gerenciar publicação](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Publicação rápida   ](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Gerenciar publicação   ](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Publicação rápida    {#quick-publish}
 
@@ -120,7 +119,7 @@ Para publicar uma página com a Publicação rápida:
 >
 >A Publicação rápida é uma publicação superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
-#### Gerenciar publicação     {#manage-publication}
+#### Gerenciar publicação    {#manage-publication}
 
 A opção **Gerenciar publicação** oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
@@ -218,11 +217,15 @@ De uma [maneira semelhante à publicação](/help/sites-authoring/publishing-pag
 * [No editor de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Do console de sites](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Desfazer a publicação por meio do editor     {#unpublishing-from-the-editor}
+### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
 
 Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
-### Desfazer a publicação por meio do Console   {#unpublishing-from-the-console}
+>[!NOTE]
+>
+>As páginas acessadas por [aliases](/help/sites-authoring/editing-page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+
+### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](/help/sites-authoring/publishing-pages.md#manage-publication), também pode usá-la para desfazer a publicação.
 
