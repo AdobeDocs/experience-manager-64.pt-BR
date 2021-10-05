@@ -1,10 +1,10 @@
 ---
 title: Configurar a integração do AEM Assets com o Experience Cloud
 description: Saiba como configurar a integração do AEM Assets com o Experience Cloud.
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 1%
@@ -54,7 +54,7 @@ No back-end, o servidor do AEM autentica seu perfil no gateway e, em seguida, si
 1. Na lista **[!UICONTROL Scope]**, selecione **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** e **[!UICONTROL cc-share]**.
 1. Clique em **[!UICONTROL Criar]**. Uma mensagem notifica que o aplicativo foi criado.
 
-   ![Notificação da criação bem-sucedida do aplicativo para integrar o AEM Assets com o Adobe CC](assets/chlimage_1-289.png)
+   ![Notificação da criação bem-sucedida do aplicativo para integrar o AEM Assets com o Adobe Creative Cloud](assets/chlimage_1-289.png)
 
 1. Copie o **[!UICONTROL ID do aplicativo]** que é gerado para o novo aplicativo.
 
@@ -74,7 +74,7 @@ No back-end, o servidor do AEM autentica seu perfil no gateway e, em seguida, si
 
 1. Na caixa de diálogo **[!UICONTROL Criar configuração]**, especifique um título e nome para a nova configuração e clique em **[!UICONTROL Criar]**.
 
-   ![Nomeie uma nova configuração para integrar o AEM Assets e o CC](assets/cloudservices_configure_mc.png)
+   ![Nomeie uma nova configuração para integrar o AEM Assets e o Creative Cloud](assets/cloudservices_configure_mc.png)
 
 1. No campo **[!UICONTROL URL do locatário]**, especifique o URL do AEM Assets. No passado, se o URL foi definido como `https://<tenant_id>.marketing.adobe.com`, altere-o para `https://<tenant_id>.experiencecloud.adobe.com`.
 
@@ -164,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Práticas recomendadas de integração de ativos e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
-* [Práticas recomendadas de compartilhamento de ativos para a pasta do Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>* [Práticas recomendadas de compartilhamento de ativos para a pasta do Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

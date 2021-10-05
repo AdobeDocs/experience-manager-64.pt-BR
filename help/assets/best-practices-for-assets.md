@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,4 @@ O manuseio de arquivos grandes e a execução de fluxos de trabalho em [!DNL Exp
 * [[!DNL Experience Manager] e ](aem-cc-integration-best-practices.md)
 práticas recomendadas de integração do Creative CloudÉ possível integrar sua  [!DNL Experience Manager] implantação com o Creative Cloud de várias maneiras. Seguir algumas práticas recomendadas para simplificar sua integração e os fluxos de trabalho de transferência de ativos ajuda a obter o máximo de eficiência. Este guia inclui práticas recomendadas para a integração de [!DNL Experience Manager] ativos com o Adobe Creative Cloud.
 * (Obsoleto) [[!DNL Experience Manager] para a pasta Creative Cloud que compartilha práticas recomendadas](aem-cc-folder-sharing-best-practices.md)
-Você pode configurar [!DNL Experience Manager] para permitir que os usuários no DAM compartilhem pastas com usuários do Creative Cloud (CC), de modo que eles estejam disponíveis como pastas compartilhadas no serviço Creative Cloud Assets. O recurso pode ser usado para trocar arquivos entre equipes criativas e usuários do DAM. Este guia explica as práticas recomendadas para o uso do [!DNL Experience Manager] no recurso de compartilhamento de pastas do Creative Cloud.
+Você pode configurar [!DNL Experience Manager] para permitir que os usuários no DAM compartilhem pastas com usuários do Creative Cloud, para que eles estejam disponíveis como pastas compartilhadas no serviço Creative Cloud Assets. O recurso pode ser usado para trocar arquivos entre equipes criativas e usuários do DAM. Este guia explica as práticas recomendadas para o uso do [!DNL Experience Manager] no recurso de compartilhamento de pastas do Creative Cloud.

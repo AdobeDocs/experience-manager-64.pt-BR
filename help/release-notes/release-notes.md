@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2751'
 ht-degree: 27%
 
 ---
@@ -117,7 +117,7 @@ A introdução de Experiências fluídas no início de 2017, apoiada por Fragmen
 
 **[Fragmentos de conteúdo](/help/assets/content-fragments.md)**
 
-As novidades na versão 6.4 são um editor visual [content model](/help/assets/content-fragments-models.md) e um novo [componente configurável](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html) para fornecer saída HTML flexível e JSON para incluir nos Serviços de conteúdo.
+As novidades na versão 6.4 são um editor visual [modelo de conteúdo](/help/assets/content-fragments-models.md) e um novo [componente configurável](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html) para fornecer saída HTML flexível e JSON para incluir nos Serviços de conteúdo.
 
 **Fragmentos de experiência**
 
@@ -187,7 +187,7 @@ O AEM 6.4 traz vários novos recursos e melhorias para os Ativos, incluindo a in
 
 **Adobe Asset Link**
 
-O Adobe Asset Link no Creative Cloud for enterprise simplifica a colaboração entre criadores e profissionais de marketing no processo de criação de conteúdo. É um novo recurso nativo no Creative Cloud para empresas que conecta o Photoshop CC, o Illustrator CC e o InDesign CC à AEM — sem que os criativos tenham que deixar suas ferramentas de escolha.
+O Adobe Asset Link no Creative Cloud for enterprise simplifica a colaboração entre criadores e profissionais de marketing no processo de criação de conteúdo. É um novo recurso nativo no Creative Cloud para empresas que conecta o Photoshop, o Illustrator e o InDesign à AEM — sem que os criadores tenham que deixar suas ferramentas de escolha.
 
 Para saber mais sobre esse recurso, os pré-requisitos e como acessá-lo, consulte [Adobe Asset Link](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html).
 
@@ -300,11 +300,11 @@ Esse processo de priorização gerou a correção de mais de 500 alterações fo
 
 * [AEM ](/help/sites-developing/modernization-tools.md) Ferramentas de Modernização para migrar componentes da interface clássica para o Coral 3
 
-**Assets**
+**Ativos**
 
 * Aplicativo de desktop do Adobe Experience Manager ([leia mais](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) e [download](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
-* Pacote para adicionar PDF avançado Rasterizer ([leia mais](/help/assets/aem-pdf-rasterizer.md) e [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Pacote para adicionar PDF Rasterizer aprimorado ([leia mais](/help/assets/aem-pdf-rasterizer.md) e [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * Pacote para adicionar suporte de imagem RAW estendido ([leia mais](/help/assets/camera-raw.md))
 
@@ -376,5 +376,5 @@ Para o Adobe Experience Manager 6.4, [leia a lista de recursos obsoletos e funci
 Estes sites estão disponíveis somente para clientes. Se você for um cliente e precisar de acesso, entre em contato com o gerente de contas da Adobe.
 
 * [Baixe o produto em licensing.adobe.com](https://licensing.adobe.com/).
-* Atualizações, patches e pacotes de produtos para funcionalidade adicional em [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Atualizações, patches e pacotes de produtos para funcionalidade adicional em [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html).
 * [Suporte ao cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de Suporte ao Cliente do Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
