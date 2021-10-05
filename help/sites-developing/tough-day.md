@@ -1,8 +1,8 @@
 ---
 title: Dia difícil
-seo-title: Dia difícil
+seo-title: Tough Day
 description: O teste Tough Day simula a carga diária de cerca de 1000 autores em um cenário pior, com todas as operações acontecendo ao mesmo tempo.
-seo-description: O teste Tough Day simula a carga diária de cerca de 1000 autores em um cenário pior, com todas as operações acontecendo ao mesmo tempo.
+seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,23 +10,22 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-translation-type: tm+mt
-source-git-commit: 204b28653c8771fead77c484aec40d6ec6629b6c
+source-git-commit: 119023a24d5f21fd003439992fe5a520f48b6861
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
 
 # Dia difícil{#tough-day}
 
-## O que é o Dia 2 difícil {#what-is-tough-day}
+## O que é o Dia difícil 2 {#what-is-tough-day}
 
 O Dia 2 difícil é um aplicativo que permite testar os limites da sua instância do AEM. Ele pode ser executado imediatamente com o conjunto de teste padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir a [esta gravação](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) para uma apresentação do aplicativo.
 
 ## Como executar o Dia 2 difícil {#how-to-run-tough-day}
 
-Baixe a versão mais recente do Tough Day 2 no [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Depois de baixar o aplicativo, você pode executá-lo imediatamente fornecendo o parâmetro `host`. No exemplo a seguir, a instância AEM é executada localmente para que o valor `localhost` seja usado:
+Baixe a versão mais recente do Tough Day 2 no [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Depois de baixar o aplicativo, você pode executá-lo imediatamente fornecendo o parâmetro `host`. No exemplo a seguir, a instância AEM é executada localmente para que o valor `localhost` seja usado:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -53,7 +52,6 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >[!NOTE]
 >
 >Embora o Dia 2 não tenha um passo de limpeza. Como resultado, é recomendável executar o Dia 2 difícil em uma instância de armazenamento temporário clonada e não na instância de produção principal. A instância de preparo deve ser removida após os testes.
-
 
 ### Obter ajuda {#getting-help}
 
@@ -166,7 +164,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Adicionar várias instâncias do mesmo teste {#adding-multiple-instances-of-the-same-test}
+### Adicionar várias instâncias do mesmo teste  {#adding-multiple-instances-of-the-same-test}
 
 Você também pode adicionar e executar várias instâncias do mesmo teste, mas cada instância deve ter um nome exclusivo. Os exemplos abaixo mostram como adicionar duas instâncias do mesmo teste usando parâmetros de linha de comando ou um arquivo de configuração de exemplo.
 
@@ -190,7 +188,7 @@ tests:
       name : SecondAssetTree
 ```
 
-### Alterar as propriedades de teste {#changing-the-test-properties}
+### Alterar as propriedades do teste {#changing-the-test-properties}
 
 Caso precise alterar uma ou mais propriedades de teste, é possível adicionar essa propriedade à linha de comando ou ao arquivo de configuração de código. Para ver todas as propriedades de teste disponíveis, adicione o parâmetro `--help <TestClass/PublisherClass>` à linha de comando, por exemplo:
 
@@ -357,7 +355,7 @@ O Dia 2 difícil atualmente relata 9 métricas de teste que você pode avaliar. 
 | Aprovado | Número de execuções bem-sucedidas. |
 | Falhou | Número de execuções com falha. |
 | Min&amp;ast; | Duração mais baixa da execução do teste. |
-| Máx.;&amp;ast; | Maior duração de execução de teste. |
+| Máx&amp;ast; | Maior duração de execução de teste. |
 | Median&amp;ast; | Duração mediana calculada de todas as execuções de teste. |
 | Méd&amp;ast; | Duração média calculada de todas as execuções de teste. |
 | StdDev&amp;ast; | O desvio padrão. |
