@@ -1,29 +1,26 @@
 ---
 title: Plug-in Adobe Content Package Maven
 description: Use o plug-in Content Package Maven para implantar aplicativos AEM
-translation-type: tm+mt
-source-git-commit: 5bc6f63922f7f63d60f0048b167a08e4190a8f92
+exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '161'
 ht-degree: 11%
 
 ---
 
-
 # Plug-in Adobe Content Package Maven {#adobe-content-package-maven-plugin}
 
-Use o plug-in Adobe Content Package Maven para integrar tarefas de gerenciamento e implantação de pacotes aos projetos Maven.
+Use o plug-in Adobe Content Package Maven para integrar tarefas de implantação e gerenciamento de pacotes aos seus projetos Maven.
 
-A implantação dos pacotes construídos para AEM é realizada pelo plug-in Adobe Content Package Maven e permite a automação do tarefa normalmente executado usando AEM Package Manager.
+A implantação dos pacotes construídos no AEM é realizada pelo plug-in Adobe Content Package Maven e permite a automação de tarefas normalmente executadas usando AEM Gerenciador de Pacotes.
 
 >[!TIP]
 >
 >Para obter mais detalhes, consulte:
 >
->* O artigo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) no AEM como uma documentação Cloud Service para saber como implantar aplicativos AEM.
->* O artigo [AEM Estrutura do projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) no AEM como uma documentação Cloud Service para estruturar projetos modernos de AEM.
->* A documentação [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) para saber como start um novo projeto AEM usando o arquétipo.
-
+>* O artigo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) na documentação as a Cloud Service AEM sobre como implantar aplicativos AEM.
+>* O artigo [AEM Estrutura do projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) na documentação as a Cloud Service AEM para saber como estruturar projetos AEM modernos.
+>* A documentação do [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) para saber como iniciar um novo projeto AEM usando o arquétipo.
 >
->
-Todos os três documentos se aplicam ao AEM 6.4.
+>Os três documentos são aplicáveis ao AEM 6.4.

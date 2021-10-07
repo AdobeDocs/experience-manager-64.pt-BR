@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: Guia de implementação do AEM 6.4
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4, incluindo a implantação do Adobe Managed Services na nuvem.
-feature: Implantação
+feature: Deploying
 role: Architect
-source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 17%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 17%
    + [Reestruturação do repositório no AEM 6.4](repository-restructuring.md)
    + [Reestruturação comum de repositório no AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Restruturação do repositório de sites no AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Reestruturação do repositório de ativos no AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+   + [Reestruturação do repositório de ativos no AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
    + [Reestruturação do repositório Dynamic Media no AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório Forms no AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório de comércio eletrônico no AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
