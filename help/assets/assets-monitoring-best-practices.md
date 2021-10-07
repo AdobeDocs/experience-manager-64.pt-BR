@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 1%
@@ -195,5 +195,5 @@ No processo de monitoramento, se encontrar problemas, veja a seguir algumas tare
 * Use o console do workflow para verificar se os workflows funcionam como esperado. Se possível, condensar vários workflows em um único workflow.
 * Revise o monitoramento ao vivo e procure por gargalos adicionais ou grandes consumidores de recursos específicos.
 * Investigue os pontos de saída da rede do cliente e a entrada aponta para a rede de instâncias [!DNL Experience Manager], incluindo o dispatcher. Frequentemente, essas são áreas de gargalo. Para obter mais informações, consulte [Considerações de rede do Assets](assets-network-considerations.md).
-* Atualize seu servidor [!DNL Experience Manager]. Você pode ter um tamanho inadequado para sua instância [!DNL Experience Manager]. O Atendimento ao cliente do Adobe pode ajudá-lo a identificar se o servidor está abaixo do tamanho.
+* Atualize seu servidor [!DNL Experience Manager]. Você pode ter um tamanho inadequado para sua instância [!DNL Experience Manager]. O Suporte ao cliente do Adobe pode ajudar você a identificar se o servidor está com menos tamanho.
 * Examine os arquivos `access.log` e `error.log` para entradas no momento em que algo deu errado. Procure padrões que podem indicar anomalias de código personalizado. Adicione-os à lista de eventos que você monitorar.

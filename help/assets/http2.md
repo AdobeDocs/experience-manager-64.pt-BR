@@ -1,8 +1,8 @@
 ---
 title: Entrega de conteúdo HTTP2
-seo-title: Entrega de conteúdo HTTP2
+seo-title: HTTP2 Delivery of Content
 description: HTTP/2 melhora a forma como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e reduzindo a quantidade de poder de processamento necessário.
-seo-description: HTTP/2 melhora a forma como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e reduzindo a quantidade de poder de processamento necessário.
+seo-description: HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of needed processing power.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '705'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 Você deve iniciar a solicitação para mudar para HTTP/2; isso não é feito automaticamente para você.
 
-1. Inicie uma solicitação do Suporte Técnico para mudar para HTTP2. Consulte [Acessar o portal de suporte AEM](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Inicie uma solicitação do Suporte Técnico para mudar para HTTP2. Consulte [Acessando o Portal de Suporte ao Cliente](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Forneça as seguintes informações em sua solicitação de suporte:
 

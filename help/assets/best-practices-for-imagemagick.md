@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Para processar arquivos grandes usando o ImageMagick, considere requisitos de me
 
 >[!NOTE]
 >
->Se estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente do Adobe se planeja processar muitos arquivos grandes de PSD ou PSB. O Experience Manager pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
+>Se você estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe caso planeje processar muitos arquivos grandes do PSD ou PSB. O Experience Manager pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 ## Instalar o ImageMagick {#installing-imagemagick}
 
@@ -39,7 +39,7 @@ Várias versões dos arquivos de instalação do ImageMagic estão disponíveis 
 Você pode configurar a etapa do processo da linha de comando para o caso de uso específico. Execute estas etapas para gerar uma imagem invertida e miniaturas (140x100, 48x48, 319x319 e 1280x1280) sempre que adicionar um arquivo de imagem JPEG a `/content/dam` no servidor [!DNL Experience Manager]:
 
 1. No servidor [!DNL Experience Manager], vá para o console Fluxo de trabalho (`https://[aem_server]:[Port]/workflow`) e abra o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**.
-1. No modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**, abra a etapa **[!UICONTROL Miniaturas do EPS (alimentado pelo ImageMagick)]**.
+1. No modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**, abra a etapa **[!UICONTROL Miniaturas do EPS (viabilizadas pelo ImageMagick)]**.
 1. Na guia **[!UICONTROL Argumentos]**, adicione `image/jpeg` à lista **[!UICONTROL Tipos MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)

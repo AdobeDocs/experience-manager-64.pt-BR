@@ -2,10 +2,10 @@
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas de recursos obsoletos e removidos do Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -151,16 +151,16 @@ obsoleto.
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integração com [!DNL Experience Cloud] | Você poderia sincronizar seus ativos com [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] era anteriormente chamada de  [!DNL Adobe Marketing Cloud]. | Se você tiver qualquer query, entre em contato com [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support). |
+| Integração com [!DNL Experience Cloud] | Você poderia sincronizar seus ativos com [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] era anteriormente chamada de  [!DNL Adobe Marketing Cloud]. | Se você tiver qualquer query, entre em contato com o [Suporte ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Analytics Activity Map | A versão do Activity Map está inclusa no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. O plug-in [ActivityMap fornecido pelo Adobe Analytics](https://docs.adobe.com/content/help/br/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) agora deve ser usado. |
-| Componentes-Forms | Captcha de formulário (foundation/components/form/captcha) | Em vez disso, use o ReCaptcha pelo componente Google |
+| Componentes-Forms | Captcha de formulário (foundation/components/form/captcha) | Em vez disso, use o ReCaptcha do componente Google |
 | Componentes | Apresentação de slides (foundation/components/slideshow) | Nenhuma substituição |
 | Componentes | Flash (foundation/components/flash) | Nenhuma substituição |
-| Componentes | Remoção do suporte para a reprodução de arquivos SWF no componente de vídeo (foundation/components/video) | Use formatos de vídeo sem flash. |
+| Componentes | Remoção do suporte para arquivos SWF de reprodução no componente de vídeo (foundation/components/video) | Use formatos de vídeo sem flash. |
 | Componentes | Tabela de produtos (comércio/componentes/product_table) | Nenhuma substituição |
 | Gerenciamento de tarefas | Gerenciamento de tarefas da interface clássica (/libs/cq/taskmanagement/content/taskmanager.html) | Obsoleto desde a versão 6.0. Use o novo gerenciamento de tarefas combinado com a interface do usuário do workflow. |
 | Fluxo de trabalho | Interface de notificação usada entre 5.6 e 6.2 (/libs/cq/workflow/content/notifications.html) | Caixa de entrada do fluxo de trabalho /aem/inbox |
-| Forms | O formato Export PDF para PDF/E-1 usando o Gerador de PDF foi removido. | O PDF Generator continua a ser compatível com a exportação de PDF para PDF/A-1a/b, PDF/A-2a/b e PDF/A-3a/b. |
+| Forms | O formato Export PDF para PDF/E-1 usando PDF-Generator foi removido. | O PDF Generator continua a ser compatível com a exportação de formatos PDF para PDF/A-1a/b, PDF/A-2a/b e PDF/A-3a/b. |
 | Forms | O suporte para imagens dentro de fragmentos de documento foi removido. | As comunicações interativas fornecem a capacidade de usar imagens diretamente em canais de impressão e da Web. |
 | Forms | Atualização de local | O suporte para executar a atualização fora do local não está disponível |
 | Forms | Integrado do TarMK para migrações do DocumentMK | Você pode exportar os dados de um sistema mais antigo e depois importá-los em um sistema de configuração recente. Para obter instruções detalhadas, consulte AEM Forms nas documentações de atualização do JEE |
@@ -168,9 +168,9 @@ obsoleto.
 | Forms | Remoção do suporte para uso de imagens DAM no Componente de fragmento do documento. | Você pode usar o componente Imagem e Gráfico no canal de impressão da comunicação interativa. Se você estiver usando o componente de fragmento do documento adaptável em formulários adaptáveis, ele deixará de funcionar após a atualização para AEM 6.4 Forms. |
 | Forms | Remoção do recurso Documentos adaptativos | Você pode usar o recurso de comunicações interativas para criar comunicações impressas e baseadas na Web. Se você usar Documentos adaptativos, instale o pacote de compatibilidade para continuar usando os documentos adaptáveis existentes |
 | Forms | Remoção do AEM Forms na página de aterrissagem específica do JEE. | O AEM Forms na página de aterrissagem JEE é substituído por AEM página de aterrissagem (/aem/start.html) |
-| Forms | Remoção do suporte para Captcha padrão | Use o serviço reCAPTCHA do Google. |
+| Forms | Remoção do suporte para Captcha padrão | Use o serviço reCAPTCHA da Google. |
 | Forms | Remoção do suporte para campos flash no AEM Designer. AEM Designer não permite editar campos flash usados em um formulário. | Você pode usar AEM Designer lançado em uma versão anterior para editar esses formulários. |
-| Communities | O suporte para verificação de Captcha foi removido. | Use a integração de captcha personalizada (como reCAPTCHA do Google) para verificação. |
+| Communities | O suporte para verificação de Captcha foi removido. | Use a integração de captcha personalizada (como reCAPTCHA da Google) para verificação. |
 
 ## Anúncio prévio da próxima versão {#pre-announcement-for-next-release}
 

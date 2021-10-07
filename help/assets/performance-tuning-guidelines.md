@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 0%
@@ -166,7 +166,7 @@ A partir de [!DNL Experience Manager] 6.2 e com um pacote de recursos para [!DNL
 
 ### Configuração do Ativo de atualização DAM {#dam-update-asset-configuration}
 
-O fluxo de trabalho do Ativo de atualização DAM contém um conjunto completo de etapas configuradas para tarefas, como a geração do PTIFF Dynamic Media Classic e a integração do InDesign Server. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. O Adobe recomenda criar uma cópia personalizada do modelo de fluxo de trabalho Ativo de atualização DAM e remover todas as etapas desnecessárias. Nesse caso, atualize os inicializadores do Ativo de atualização do DAM para apontar para o novo modelo.
+O fluxo de trabalho do Ativo de atualização DAM contém um conjunto completo de etapas configuradas para tarefas, como a geração do Dynamic Media Classic PTIFF e a integração do InDesign Server. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. O Adobe recomenda criar uma cópia personalizada do modelo de fluxo de trabalho Ativo de atualização DAM e remover todas as etapas desnecessárias. Nesse caso, atualize os inicializadores do Ativo de atualização do DAM para apontar para o novo modelo.
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo *co
 >
 >Os arquivos ImageMagick `policy.xml` e `configure.xml` podem ser encontrados em `/usr/lib64/ImageMagick-*/config/` em vez de `/etc/ImageMagick/`. Consulte a [documentação do ImageMagick](https://www.imagemagick.org/script/resources.php) para obter detalhes sobre os locais do arquivo de configuração.
 
-Se estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente do Adobe se planeja processar muitos arquivos grandes de PSD ou PSB. O Experience Manager pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
+Se você estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe caso planeje processar muitos arquivos grandes do PSD ou PSB. O Experience Manager pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 <!-- 
 
@@ -365,7 +365,7 @@ Atualize as configurações de índice para melhorar o tempo de reindexação:
 
 Desative a extração de texto do Lucene:
 
-Se os usuários não precisarem pesquisar o conteúdo dos ativos, por exemplo, pesquisar o texto contido em documentos PDF, é possível melhorar o desempenho do índice ao desabilitar esse recurso.
+Se os usuários não precisarem pesquisar o conteúdo dos ativos, por exemplo, pesquisar o texto contido nos documentos do PDF, você poderá melhorar o desempenho do índice ao desabilitar esse recurso.
 
 1. Vá para o gerenciador de pacotes [!DNL Experience Manager] /crx/packmgr/index.jsp
 1. Carregue e instale o pacote abaixo
@@ -418,6 +418,6 @@ Para minimizar a latência e alcançar alta taxa de transferência por meio de u
 * Remova etapas desnecessárias do fluxo de trabalho Ativo de atualização do DAM .
 * Configure a limpeza de fluxo de trabalho e versão.
 * Otimize a configuração do índice Lucene.
-* Otimize índices com os service packs e hotfixes mais recentes. Consulte o Atendimento ao cliente do Adobe para obter outras otimizações de índice que possam estar disponíveis.
+* Otimize índices com os service packs e hotfixes mais recentes. Consulte o Suporte ao cliente do Adobe para obter outras otimizações de índice que possam estar disponíveis.
 * Use `guessTotal` para otimizar o desempenho da consulta.
 * Se você configurar [!DNL Experience Manager] para detectar tipos de arquivos a partir do conteúdo dos arquivos (configurando [!UICONTROL Day CQ DAM Mime Type Service] no [!UICONTROL [!DNL Experience Manager] Web Console]), faça upload de muitos arquivos em massa durante horas que não sejam de pico, pois a operação consome muitos recursos.

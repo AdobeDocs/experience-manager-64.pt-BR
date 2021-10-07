@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 41%
@@ -67,7 +67,7 @@ Para obter instruções detalhadas, consulte
 
 * [Notas de versão do AEM 6.4 Service Pack ](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Entre em contato com o** Atendimento ao cliente se não conseguir encontrar o pacote de AEM ou o Service Pack mais recente.
+**Entre em contato com o** Suporte ao cliente se não conseguir encontrar o pacote de AEM ou o Service Pack mais recente.
 
 ## Criar configuração {#configure-new-integration-64}
 
@@ -315,7 +315,7 @@ Certifique-se de que nenhum trabalho de publicação esteja em execução na ins
 Você deve executar a seguinte lista de verificação ao excluir a configuração existente.
 * Excluir todos os quatro agentes de replicação
 * Excluir serviço em nuvem
-* Excluir usuário MAC
+* Excluir usuário do MAC
 
 Execute as seguintes etapas para excluir a configuração existente:
 
@@ -331,7 +331,7 @@ Execute as seguintes etapas para excluir a configuração existente:
 
    ![](assets/delete-cloud-service.png)
 
-1. Navegue até `/home/users/mac` e exclua o **usuário MAC** do seu locatário do Brand Portal.
+1. Navegue até `/home/users/mac` e exclua o **usuário do MAC** do seu locatário do Brand Portal.
 
    ![](assets/delete-mac-user.png)
 

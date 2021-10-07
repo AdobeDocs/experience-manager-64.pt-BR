@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5589'
 ht-degree: 3%
@@ -69,7 +69,7 @@ Consulte [Instalando o feature pack 18912 para migração de ativos em massa](bu
 
 ## Configuração do Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-Altere a senha antes de configurar o Dynamic Media Cloud Services. Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) no aplicativo de desktop do Dynamic Media Classic para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
+Altere a senha antes de configurar o Dynamic Media Cloud Services. Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) no aplicativo de desktop do Dynamic Media Classic para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
 >[!NOTE]
 >
@@ -79,13 +79,13 @@ Altere a senha antes de configurar o Dynamic Media Cloud Services. Depois de rec
 
 1. Na instância Autor do Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque no ícone Ferramentas e, em seguida, toque em **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, toque em **[!UICONTROL global]** e em **[!UICONTROL Criar]**. Não toque ou selecione o ícone de pasta à esquerda de [!UICONTROL global].
-1. Na página [!UICONTROL Criar configuração do Dynamic Media], insira um título, o endereço de email da conta do Dynamic Media e a senha. Selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Atendimento ao cliente do Adobe se não tiver recebido o email.
+1. Na página [!UICONTROL Criar configuração do Dynamic Media], insira um título, o endereço de email da conta do Dynamic Media e a senha. Selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Suporte ao cliente do Adobe se não tiver recebido o email.
 
    Toque em **[!UICONTROL Conectar-se ao Dynamic Media]**.
 
    >[!NOTE]
    >
-   >Depois de receber seu email de provisionamento com credenciais do Dynamic Media, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon na conta da empresa para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Cloud Service Dynamic Media seja configurado com as credenciais corretas.
+   >Depois de receber seu email de provisionamento com credenciais do Dynamic Media, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta de empresa para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Cloud Service Dynamic Media seja configurado com as credenciais corretas.
 
 1. Se a conexão for bem-sucedida, você também poderá definir o seguinte:
 
@@ -182,7 +182,7 @@ Para abrir a página [!UICONTROL Configurações Gerais do Aplicativo], na barra
 
 #### Configuração do gerenciamento de cores {#configuring-color-management}
 
-O gerenciamento dinâmico de cores da mídia permite que você corrija os ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando saída CMYK, RGB ou Cinza. Consulte [Configuração de predefinições de imagem](managing-image-presets.md).
+O gerenciamento dinâmico de cores da mídia permite que você corrija os ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando CMYK, RGB ou saída Cinza. Consulte [Configuração de predefinições de imagem](managing-image-presets.md).
 
 **Para configurar as propriedades de cores padrão para ativar a correção de cores ao solicitar imagens:**
 
@@ -194,7 +194,7 @@ O gerenciamento dinâmico de cores da mídia permite que você corrija os ativos
 
    * [!UICONTROL Espaço]  de cores padrão CMYK - Nome do perfil de cores CMYK padrão
    * [!UICONTROL Espaço]  de cor padrão em escala de cinza - Nome do perfil de cor cinza padrão
-   * [!UICONTROL Espaço]  de cores padrão RGB - Nome do perfil de cores RGB padrão
+   * [!UICONTROL Espaço]  de cores padrão do RGB - Nome do perfil de cores padrão do RGB
    * [!UICONTROL Propósito de renderização da conversão de cor]  - Especifica o propósito de renderização. Os valores aceitáveis são `perceptual`, `relative` `colometric`, `saturation` e `absolute colometric`. O Adobe recomenda `relative` como padrão.
 
 1. Toque em **[!UICONTROL Salvar]**.
@@ -203,10 +203,10 @@ Por exemplo, você pode definir o **[!UICONTROL Espaço de cor padrão RGB]** co
 
 Isso faria o seguinte:
 
-* Permite a correção de cores para imagens RGB e CMYK.
+* Habilita a correção de cores para imagens RGB e CMYK.
 * Imagens RGB que não têm um perfil de cor são consideradas como estando no espaço de cores `sRGB`.
 * Imagens CMYK que não têm um perfil de cor são consideradas como estando no espaço de cores `WebCoated`.
-* As representações dinâmicas que retornam a saída RGB, a retornam no espaço de cores `sRGB`.
+* As representações dinâmicas que retornam a saída do RGB, a retornam no espaço de cores `sRGB`.
 * As representações dinâmicas que retornam a saída CMYK, a retornam no espaço de cores `WebCoated`.
 
 #### Edição de tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
@@ -542,7 +542,7 @@ A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transi
 
 #### Atualização da conexão de upload do Scene7 {#updating-the-scene-upload-connection}
 
-A configuração Scene7 Upload Connection sincroniza Ativos do Experience Manager com os servidores do Dynamic Media Classic.
+A configuração Scene7 Upload Connection sincroniza o Experience Manager Assets com os servidores da Dynamic Media Classic.
 
 **Para atualizar a conexão de upload do Scene7:**
 
@@ -623,7 +623,7 @@ Se você estiver usando o Dynamic Media para geração de imagens, ou vídeo, ou
 
    Para que esse filtro se aplique a todas as imagens, independentemente do formato, defina o valor como `image/*`, onde `*` é uma expressão regular aplicada a todas as imagens de qualquer formato.
 
-   Para que o filtro seja aplicado somente às imagens do tipo JPEG, insira um valor `image/jpeg`.
+   Para que o filtro seja aplicado somente às imagens do JPEG de tipo, insira um valor de `image/jpeg`.
 
 1. Defina quais representações deseja incluir ou excluir da replicação.
 

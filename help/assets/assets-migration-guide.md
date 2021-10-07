@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 8%
@@ -22,7 +22,7 @@ Antes de executar qualquer uma das etapas descritas abaixo, revise e implemente 
 
 >[!NOTE]
 >
->As seguintes ferramentas de migração de ativos não fazem parte do Adobe Experience Manager. O Atendimento ao cliente do Adobe não é compatível com essas ferramentas.
+>As seguintes ferramentas de migração de ativos não fazem parte do Adobe Experience Manager. O Suporte ao cliente do Adobe não oferece suporte a essas ferramentas.
 >
 >* Criador de tags de ferramentas ACS [!DNL Experience Manager]
 >* Importador de ativos CSV das ferramentas ACS [!DNL Experience Manager]
@@ -52,7 +52,7 @@ Antes de iniciar uma migração, desative os iniciadores do fluxo de trabalho `D
 
 ### Carregar tags {#load-tags}
 
-É possível que você já tenha uma taxonomia de tags em vigor que esteja aplicando às imagens. Ferramentas como o Importador de ativos CSV e a funcionalidade de perfis de metadados podem ajudar a automatizar a aplicação de tags em ativos. Antes disso, adicione as tags no Experience Manager. O recurso [ACS [!DNL Experience Manager] Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite preencher tags usando uma planilha do Microsoft Excel carregada no sistema.
+É possível que você já tenha uma taxonomia de tags em vigor que esteja aplicando às imagens. Ferramentas como o Importador de ativos CSV e a funcionalidade de perfis de metadados podem ajudar a automatizar a aplicação de tags em ativos. Antes disso, adicione as tags no Experience Manager. O recurso [ACS [!DNL Experience Manager] Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite preencher tags usando uma planilha do Excel do Microsoft carregada no sistema.
 
 ### Assimilar ativos {#ingest-assets}
 
@@ -79,7 +79,7 @@ Quando os ativos não são transmitidos através de uma rede, o desempenho geral
 
 ### Processar representações {#process-renditions}
 
-Após carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Ativo de atualização do DAM para extrair metadados e gerar representações. Antes de executar essa etapa, você precisa duplicar e modificar o fluxo de trabalho do Ativo de atualização do DAM para atender às suas necessidades. Algumas etapas no fluxo de trabalho padrão podem não ser necessárias para você, como a geração do PTIFF Dynamic Media Classic ou a integração do servidor InDesign.
+Após carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Ativo de atualização do DAM para extrair metadados e gerar representações. Antes de executar essa etapa, você precisa duplicar e modificar o fluxo de trabalho do Ativo de atualização do DAM para atender às suas necessidades. Algumas etapas no fluxo de trabalho padrão podem não ser necessárias para você, como a geração do Dynamic Media Classic PTIFF ou a integração do servidor InDesign.
 
 Depois de configurar o workflow de acordo com suas necessidades, você tem duas opções para executá-lo:
 
@@ -129,7 +129,7 @@ Nesse caso, seus ativos já estão preenchidos com metadados e as representaçõ
 1. Migrar ativos: Há duas ferramentas recomendadas para mover ativos de uma instância [!DNL Experience Manager] para outra:
 
    * **O Vault Remote Copy**, ou  `vlt rcp`, permite que você use vlt em uma rede. Você pode especificar um diretório de origem e de destino e o vlt baixa todos os dados do repositório de uma instância e os carrega na outra. O rcp vlt está documentado em [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **** Captura uma ferramenta de sincronização de conteúdo de código aberto, desenvolvida pelo Time Warner Cable para sua  [!DNL Experience Manager] implementação. Como usa fluxos de dados contínuos, em comparação ao vlt rcp, ele tem uma latência mais baixa e alega uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também suporta a sincronização somente do conteúdo delta, o que permite sincronizar as alterações depois que uma passagem de migração inicial for concluída.
+   * **** Capaz uma ferramenta de sincronização de conteúdo de código aberto, desenvolvida pelo Time Warner Cable para sua  [!DNL Experience Manager] implementação. Como usa fluxos de dados contínuos, em comparação ao vlt rcp, ele tem uma latência mais baixa e alega uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também suporta a sincronização somente do conteúdo delta, o que permite sincronizar as alterações depois que uma passagem de migração inicial for concluída.
 
 1. Ativar ativos: Siga as instruções para [ativar ativos](#activate-assets) documentadas para a migração inicial para AEM.
 
