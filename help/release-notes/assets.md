@@ -2,7 +2,7 @@
 title: Notas de versão do AEM Assets
 seo-title: AEM Assets
 description: Notas de versão específicas dos ativos Adobe Experience Manager 6.4.
-seo-description: Notas de versão específicas dos ativos Adobe Experience Manager 6.4.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,10 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-translation-type: tm+mt
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 3%
 
 ---
@@ -61,7 +60,7 @@ Melhorias na pesquisa
 
 * Novo botão Pesquisar de volta com a capacidade de navegar para um item de pesquisa e voltar à mesma posição nos resultados da pesquisa sem executar a consulta de pesquisa novamente.
 * Novos resultados da pesquisa contam para exibir o número de resultados da pesquisa.
-* Filtro de pesquisa do tipo de arquivo aprimorado com capacidade de filtrar resultados de pesquisa com base em tipos MIME refinados, como JPG, PNG e PSD, em comparação às opções anteriores de imagem, documento e multimídia.
+* Filtro de pesquisa do tipo de arquivo aprimorado com capacidade de filtrar resultados de pesquisa com base em tipos MIME refinados, como JPG, PNG e PSD, em comparação às opções anteriores de imagem, documento, multimídia.
 * Filtros de pesquisa aprimorados com carimbos de data e hora precisos em vez da funcionalidade de controle deslizante de hora anterior.
 
 Aprimoramentos de ativos de várias páginas
@@ -90,19 +89,19 @@ O AEM 6.4 inclui vários recursos avançados de gerenciamento de metadados para 
 O AEM 6.4 oferece aprimoramentos significativos no relatório de Ativos:
 
 * Nova estrutura de relatórios escalável e de nível empresarial (para repositórios grandes) que aplica trabalhos do Sling para processar solicitações de relatório de forma assíncrona. Você pode programar um relatório em uma data e hora específicas. Você também pode adicionar colunas personalizadas a um relatório.
-* Novos relatórios OOTB mais comumente solicitados por clientes, como Uso de disco, Arquivos, Compartilhamentos de link, Publicar no Brand Portal e Treinamento em Tags inteligentes.
+* Novos relatórios OOTB mais comumente solicitados pelos clientes, como Uso de disco, Arquivos, Compartilhamentos de link, Publicar no Brand Portal e Treinamento em Tags inteligentes.
 * Nova interface de criação e gerenciamento de relatórios com opções otimizadas, capacidade de acessar relatórios arquivados, consulte o status de execução do relatório (sucesso, falha, enfileiramento e assim por diante).
 
 ## Brand Portal {#brand-portal}
 
-* **6.3 Atualização** da plataforma: O Brand Portal foi atualizado de AEM 6.0 para AEM 6.3, com novos recursos e melhorias de desempenho.
+* **6.3 Atualização** da plataforma: O Brand Portal foi atualizado do AEM 6.0 para o AEM 6.3, com novos recursos e melhorias de desempenho.
 * **Publicação** paralela: Até replicações podem ocorrer entre o AEM Assets e o Brand Portal (anteriormente 1), o que melhora significativamente o desempenho da publicação
 * **Publicação** do esquema e da faceta de pesquisa: Capacidade de publicar esquemas de metadados e aspectos de pesquisa personalizados no Brand Portal, o que elimina a duplicação de esforços.
 * **Publicação** de tags em massa: Capacidade de publicar taxonomia (junto com hierarquia) no Brand Portal, o que elimina a duplicação de esforços.
 * **Autoassinatura ou Solicitar acesso**: Fluxo de trabalho para usuários não registrados no Brand Portal.
 * **Notificação** de manutenção no aplicativo (na tela): As notificações são exibidas com bastante antecedência para evitar interrupção nos negócios.
 * **Melhorias** nos relatórios: Três relatórios OOTB estão disponíveis: downloads, publicação e compartilhamentos de link.
-* **Restrições** baseadas em DRM: Depois que um ativo licenciado expira, ele não está mais disponível para download no Brand Portal.
+* **Restrições** baseadas em DRM: Depois que um ativo licenciado expira, ele não está mais disponível para download na Brand Portal.
 
 ## Aplicativo de desktop do AEM {#aem-desktop-app}
 
@@ -135,15 +134,15 @@ Para obter uma visão geral das plataformas compatíveis, consulte a [Documenta�
 * No AEM 6.4, Closed User Group ou CUG fornece uma maneira de restringir o acesso à pasta na instância de publicação, é uma opção da interface do usuário de toque adicionar entidades por meio da página de propriedades da pasta no nível da pasta e são aplicadas a todas as pastas e subpastas/ativos dentro dela.
 * No modo de publicação, se um CUG estiver configurado e a autorização estiver ativada em uma pasta, os usuários serão redirecionados para uma página de logon quando tentarem acessar a pasta. Portanto, os usuários autorizados podem acessar a pasta e seus ativos somente após o logon bem-sucedido. Portanto, o CUG restringe o acesso de leitura a uma determinada árvore no repositório de conteúdo para todos, exceto entidades selecionadas.
 
-## Complemento Dynamic Media {#dynamic-media-add-on}
+## Complemento do Dynamic Media {#dynamic-media-add-on}
 
 O Dynamic Media na 6.4 é compatível com um novo modo - onde o ativo principal é carregado e gerenciado com a interface do usuário da Web do AEM Assets, e as representações dinâmicas e outros recursos de mídia dinâmica são manipuladas em segundo plano pelo serviço de entrega da nuvem do Dynamic Media.
 
-Nesse modo (introduzido primeiro com o lançamento de [AEM 6.3 Feature Packs 14410 e 18912](https://helpx.adobe.com/br/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), os usuários se beneficiam do gerenciamento completo de ativos e dos recursos de mídia dinâmica usando a interface moderna da Web do AEM Assets e ainda aproveitam os serviços de delivery que são compatíveis com o Dynamic Media Classic (Scene7) — incluindo URLs de entrega, que não foram alterados.
+Nesse modo (introduzido primeiro com o lançamento de [AEM 6.3 Feature Packs 14410 e 18912](https://helpx.adobe.com/br/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), os usuários se beneficiam do gerenciamento completo de ativos e dos recursos de mídia dinâmica usando a interface moderna da Web do AEM Assets e ainda aproveitam os serviços de delivery que são compatíveis com o Dynamic Media Classic (Scene7), incluindo URLs de entrega, que não foram alterados.
 
 Além disso, o AEM 6.4 apresenta novos recursos fornecidos pelo Adobe Sensei, melhorias para mídia emergente, como VR e 3D, visualizadores Dynamic Media e suporte para Fragmentos de experiência em imagens interativas e banners de carrossel.
 
-### Recorte inteligente (fornecido pelo Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
+### Recorte inteligente (fornecido pela Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
 
 * O Recorte inteligente fornece automaticamente recortes não destrutivos de imagens para preservar o ponto de interesse para um design responsivo. Você pode visualizar sugestões cortadas e ajustá-las manualmente, se necessário.
 * Esse recurso também permite a geração automatizada de amostras para imagens de produtos. A geração automatizada de amostras ajuda a adicionar amostras de cores, amostras de padrões ou ambas a imagens de produtos automaticamente.
@@ -160,7 +159,7 @@ Consulte também a documentação [Adicionar ativos Dynamic Media às páginas](
 
 Consulte a documentação [Imagem inteligente](../assets/imaging-faq.md) para saber mais.
 
-### Aprimoramentos de mídia e visualizador emergentes {#emerging-media-amp-viewer-enhancements}
+### Melhorias emergentes de mídia e visualizador {#emerging-media-amp-viewer-enhancements}
 
 * Novos visualizadores são compatíveis, fornecendo experiências melhores e imersivas para o usuário.
 * O Visualizador de panorâmica ajuda a envolver o usuário e a oferecer a capacidade de experimentar melhor as cenas, propriedades, locais e paisagens da sala. Consulte a documentação [Imagens panorâmicas](../assets/panoramic-images.md) para saber mais.
