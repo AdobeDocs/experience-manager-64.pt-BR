@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '10384'
 ht-degree: 4%
@@ -72,7 +72,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
          [Exibição de representações de vídeo](video-renditions.md)
 
-         [Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
+[Gerenciamento de representações de vídeo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gerenciar predefinições do visualizador](managing-viewer-presets.md)
       * [Publicação de ativos](publishing-dynamicmedia-assets.md)
@@ -84,7 +84,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
       * Edite as propriedades do vídeo, como título, descrição e tags, e os campos de metadados personalizados:
 
-         [Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
+[Edição de propriedades do vídeo](managing-assets-touch-ui.md#editing-properties)
 
       * [Gerenciamento de metadados para ativos digitais](metadata.md)
       * [Esquemas de metadados](metadata-schemas.md)
@@ -142,11 +142,11 @@ Para gerenciar vídeos únicos e conjuntos de vídeos adaptáveis, o seguinte é
    * Quando um conjunto de vídeo adaptável é gerado, ele inclui vídeos MP4.
    * **Observação**: Vídeos principais/de origem não são adicionados a um Conjunto de vídeos adaptáveis.
 
-* Legenda de vídeo em todos os visualizadores de vídeo HTML5.
+* Legenda de vídeo em todos os visualizadores de vídeo do HTML5.
 * Organize, navegue e pesquise vídeos com suporte completo a metadados para o gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de Vídeos Adaptativos para a Web, bem como para desktops e dispositivos móveis, incluindo iPhone, iPad, Android, Blackberry e Windows phone.
 
-O streaming de vídeo adaptável é compatível com diversas plataformas iOS. Consulte o [Guia de Referência de Visualizadores do Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+O streaming de vídeo adaptável é compatível com diversas plataformas iOS. Consulte o [Guia de Referência de Visualizadores do Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 O Dynamic Media oferece suporte para reprodução de vídeo móvel para vídeo MP4 H.264. Você pode encontrar dispositivos Blackberry que suportam esse formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,19 +162,19 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulte também [Sobre visualizadores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no Adobe Dynamic Media Viewers Reference Guide.
+Consulte também [Sobre visualizadores do HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no Adobe Dynamic Media Viewers Reference Guide.
 
-## Prática recomendada: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
+## Prática recomendada: Uso do visualizador de vídeo do HTML5 {#best-practice-using-the-html-video-viewer}
 
-As predefinições do visualizador de vídeo HTML5 do Dynamic Media são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo HTML5 e problemas associados a dispositivos móveis, como falta de entrega de transmissão adaptável e alcance limitado do navegador do desktop.
+As predefinições do visualizador de vídeo do Dynamic Media HTML5 são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo do HTML5 e problemas associados a dispositivos móveis, como a falta de entrega de transmissão adaptável e o alcance limitado do navegador do desktop.
 
-No lado do design do reprodutor, é possível projetar toda a funcionalidade do reprodutor de vídeo usando ferramentas de desenvolvimento da Web padrão. Por exemplo, você pode projetar os botões, controles e o plano de fundo personalizado da imagem de pôster usando HTML5 e CSS para ajudar você a alcançar seus clientes com uma aparência personalizada.
+No lado do design do reprodutor, é possível projetar toda a funcionalidade do reprodutor de vídeo usando ferramentas de desenvolvimento da Web padrão. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
 
-No lado da reprodução do visualizador, ele detecta automaticamente o recurso de vídeo do navegador. Ele então serve o vídeo usando o streaming de HLS (streaming de vídeo adaptável). Ou, se esses métodos de delivery não estiverem presentes, o HTML5 progressivo será usado.
+No lado da reprodução do visualizador, ele detecta automaticamente o recurso de vídeo do navegador. Ele então serve o vídeo usando o streaming de HLS (streaming de vídeo adaptável). Ou, se esses métodos de entrega não estiverem presentes, então HTML5 progressivo será usado.
 
-Ao combinar em um único reprodutor a capacidade de projetar os componentes de reprodução usando HTML5 e CSS, ter reprodução incorporada e usar streaming adaptável e progressivo, dependendo da capacidade do navegador, você estende o alcance do conteúdo de mídia avançada para usuários de desktop e móveis e garante uma experiência de vídeo simplificada.
+Ao combinar em um único reprodutor a capacidade de projetar os componentes de reprodução usando HTML5 e CSS, ter reprodução incorporada e usar transmissão adaptável e progressiva, dependendo da capacidade do navegador, você estende o alcance do conteúdo de mídia avançada para usuários de desktop e móveis e garante uma experiência de vídeo simplificada.
 
-Consulte também [Sobre visualizadores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de referência de visualizadores do Adobe.
+Consulte também [Sobre visualizadores do HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de referência de visualizadores do Adobe.
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -187,7 +187,7 @@ No entanto, no AEM 6.3 e mais, os vídeos agora são transmitidos por HTTPS (ou 
 * Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming estará bom.
 * Se você tiver um site HTTP com streaming de vídeo HTTPS, o streaming estará correto e não haverá problemas de conteúdo misto no navegador da Web.
 
-O HLS (HTTP Live Streaming) é um padrão da Apple para streaming de vídeo adaptável que ajusta automaticamente a reprodução com base na capacidade da largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; em qualquer ponto do vídeo, sem precisar aguardar o download do restante do vídeo (consulte também HTTP Live Streaming).
+O HLS (HTTP Live Streaming) é um padrão Apple para streaming de vídeo adaptável que ajusta automaticamente a reprodução com base na capacidade da largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; em qualquer ponto do vídeo, sem precisar aguardar o download do restante do vídeo (consulte também HTTP Live Streaming).
 
 O vídeo progressivo é fornecido pelo download e armazenamento local do vídeo na tela de desktop de um usuário ou no dispositivo móvel.
 
@@ -427,7 +427,7 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir
    <td><p>Codificado</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificado</p> </td> 
@@ -464,9 +464,9 @@ A publicação de ativos de vídeo em servidores da YouTube envolve a conclusão
 
 Você também pode [cancelar a publicação de vídeos para removê-los do YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Definir configurações do Google Cloud {#configuring-google-cloud-settings}
+### Definir as configurações da Google Cloud {#configuring-google-cloud-settings}
 
-Para publicar no YouTube, você precisa de uma conta do Google. Se você tiver uma conta GMAIL, então já terá uma conta do Google. Se você não tiver uma conta do Google, poderá criar uma facilmente. Você precisa da conta, pois precisa de credenciais para publicar ativos de vídeo no YouTube. Se você tiver uma conta já criada, ignore esta tarefa e prossiga para [Criação de um canal YouTube](#creating-a-youtube-channel).
+Para publicar no YouTube, você precisa de uma conta do Google. Se você tiver uma conta GMAIL, já terá uma conta Google. Caso não tenha uma conta Google, crie uma facilmente. Você precisa da conta, pois precisa de credenciais para publicar ativos de vídeo no YouTube. Se você tiver uma conta já criada, ignore esta tarefa e prossiga para [Criação de um canal YouTube](#creating-a-youtube-channel).
 
 >[!NOTE]
 >
@@ -481,7 +481,7 @@ Para publicar no YouTube, você precisa de uma conta do Google. Se você tiver u
    Se você já tiver uma conta do Google, pule para a próxima etapa.
 
 1. Vá para [https://cloud.google.com/](https://cloud.google.com/).
-1. Na página Plataforma do Google Cloud, próximo à parte superior, toque em **[!UICONTROL Console]**. Talvez seja necessário **Fazer logon** usando suas credenciais de conta do Google.
+1. Na página Plataforma da Google Cloud, próximo à parte superior, toque em **[!UICONTROL Console]**. Talvez seja necessário **Fazer logon** usando suas credenciais de conta do Google.
 1. Na página **[!UICONTROL Dashboard]**, toque em **[!UICONTROL Criar projeto]**.
 1. Na caixa de diálogo **[!UICONTROL Novo projeto]**, digite um nome de projeto.
 
@@ -535,7 +535,7 @@ A publicação de vídeos no YouTube requer um ou mais canais. Se você já crio
 
 >[!CAUTION]
 >
->Certifique-se de que você já configurou um ou mais canais no YouTube &amp;ast;before&amp;ast; você adiciona canais em Configurações do YouTube em AEM (consulte [Configuração do YouTube em AEM](#setting-up-youtube-in-aem) abaixo). Se você não conseguir fazer isso, não receberá nenhum aviso de nenhum canal existente. No entanto, a autenticação do Google ainda ocorre ao adicionar um canal, mas não há uma opção para escolher qual canal o vídeo será enviado.
+>Certifique-se de que você já configurou um ou mais canais no YouTube &amp;ast;before&amp;ast; você adiciona canais em Configurações do YouTube em AEM (consulte [Configuração do YouTube em AEM](#setting-up-youtube-in-aem) abaixo). Se você não conseguir fazer isso, não receberá nenhum aviso de nenhum canal existente. No entanto, a autenticação da Google ainda ocorre ao adicionar um canal, mas não há uma opção para escolher qual canal o vídeo será enviado.
 
 **Para criar um canal YouTube:**
 
@@ -579,7 +579,7 @@ Ou, se você pretende usar as tags padrão no AEM, ignore esta tarefa e vá para
 
    Deixe a caixa de diálogo **[!UICONTROL Configuração da conta do YouTube]** aberta; você retornará a ele em um momento.
 
-1. Usando um editor de texto simples, abra o arquivo JSON que você baixou e salvou anteriormente na tarefa Definir configurações do Google Cloud.
+1. Usando um editor de texto simples, abra o arquivo JSON que você baixou e salvou anteriormente na tarefa Configuração das configurações da Google Cloud.
 1. Selecione e copie o texto JSON inteiro.
 1. Retorne à caixa de diálogo **[!UICONTROL Configurações da conta do YouTube]**. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
 1. Toque em **[!UICONTROL OK]**.
@@ -592,9 +592,9 @@ Ou, se você pretende usar as tags padrão no AEM, ignore esta tarefa e vá para
    Opcionalmente, é possível adicionar uma descrição, se desejar.
 
 1. Toque em **[!UICONTROL OK]**.
-1. Autenticação YouTube/Google é exibida. Se você ainda não estiver conectado à conta do Google Cloud, ignore esta etapa.
+1. Autenticação YouTube/Google é exibida. Se você ainda não estiver conectado à conta da Google Cloud, ignore esta etapa.
 
-   * Digite o nome de usuário e a senha do Google associados à ID do projeto do Google e o texto JSON acima.
+   * Insira o nome de usuário e a senha do Google associados à ID do projeto do Google e o texto JSON acima.
    * Dependendo de quantos canais sua conta tem para ver dois ou mais itens. Selecione um canal. Não selecione o endereço de email.
    * Na próxima página, toque em **[!UICONTROL Accept]** para permitir o acesso a este canal.
 
@@ -902,13 +902,13 @@ Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de 
 
 1. Na tabela que lista os vídeos publicados principais, toque no nome de um vídeo para reproduzir o vídeo e também veja o relatório de retenção de público-alvo (drop-off) do vídeo.
 
-### Exibir relatórios de vídeo com base em um visualizador de vídeo criado por meio do SDK do visualizador HTML5 do Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Exibir relatórios de vídeo com base em um visualizador de vídeo criado por meio do SDK do visualizador do Dynamic Media HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Se você estiver usando um visualizador de vídeo pronto para uso fornecido pelo Dynamic Media ou se tiver criado uma predefinição de visualizador personalizada com base em um visualizador de vídeo pronto para uso, nenhuma etapa adicional será necessária para exibir relatórios de vídeo. No entanto, se você criou seu próprio visualizador de vídeo com base na API do SDK do visualizador de HTML5, use as seguintes etapas para garantir que o visualizador de vídeo esteja enviando eventos de rastreamento para os Relatórios de vídeo do Dynamic Media.
+Se você estiver usando um visualizador de vídeo pronto para uso fornecido pelo Dynamic Media ou se tiver criado uma predefinição de visualizador personalizada com base em um visualizador de vídeo pronto para uso, nenhuma etapa adicional será necessária para exibir relatórios de vídeo. No entanto, se você criou seu próprio visualizador de vídeo com base na API do SDK do visualizador do HTML5, use as seguintes etapas para garantir que o visualizador de vídeo esteja enviando eventos de rastreamento para os Relatórios de vídeo do Dynamic Media.
 
-Use o [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) e a [API HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para criar seus próprios visualizadores de vídeo.
+Use o [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) e a [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para criar seus próprios visualizadores de vídeo.
 
-Para exibir os Relatórios de vídeo com base em um visualizador de vídeo criado usando a API do SDK do Visualizador de HTML5:
+Para exibir os Relatórios de vídeo com base em um visualizador de vídeo criado usando a API do SDK do visualizador do HTML5:
 
 1. Navegue até qualquer ativo de vídeo publicado.
 1. Próximo ao canto superior esquerdo da página do ativo, na lista suspensa, selecione **[!UICONTROL Visualizadores]**.
@@ -917,7 +917,7 @@ Para exibir os Relatórios de vídeo com base em um visualizador de vídeo criad
 
    `videoViewer.setParam("config2", "<value>");`
 
-   O parâmetro `config2` permite o rastreamento em Visualizadores HTML5. Também é uma predefinição específica da empresa que contém as informações de configuração dos Relatórios de vídeo e das configurações específicas do Adobe Analytics para o cliente.
+   O parâmetro `config2` permite o rastreamento em visualizadores do HTML5. Também é uma predefinição específica da empresa que contém as informações de configuração dos Relatórios de vídeo e das configurações específicas do Adobe Analytics para o cliente.
 
    O valor correto do parâmetro config2 é encontrado tanto no **[!UICONTROL Código incorporado]** quanto na função de cópia **[!UICONTROL URL]**. No URL do comando de cópia **[!UICONTROL URL]**, procure pelo parâmetro `&config2=<value>`. O valor é quase sempre `companypreset`, mas em algumas instâncias também pode ser `companypreset-1`, `companypreset-2` e assim por diante.
 
@@ -1032,7 +1032,7 @@ Você pode tornar seus vídeos de formulário longos mais fáceis de assistir e 
 >
 >O reprodutor de vídeo usado deve suportar o uso de marcadores de capítulo. Os players de vídeo do Dynamic Media são compatíveis com marcadores de capítulo, mas o uso de players de vídeo de terceiros não é compatível.
 
-Se desejar, você pode criar e marcar seu próprio visualizador de vídeo personalizado com capítulos em vez de usar uma predefinição do visualizador de vídeo. Para obter instruções sobre como criar seu próprio visualizador HTML5 com navegação de capítulo, na API do SDK do visualizador HTML5 do Adobe, consulte o cabeçalho &quot;Personalizando o comportamento usando modificadores&quot; nas classes `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulte a documentação do [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
+Se desejar, você pode criar e marcar seu próprio visualizador de vídeo personalizado com capítulos em vez de usar uma predefinição do visualizador de vídeo. Para obter instruções sobre como criar seu próprio visualizador do HTML5 com navegação de capítulo, na API do SDK do visualizador do Adobe HTML5, consulte o cabeçalho &quot;Personalização do comportamento usando modificadores&quot; nas classes `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulte a documentação do [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
 Você cria uma lista de capítulo para o vídeo da mesma forma que cria legendas. Ou seja, você cria um arquivo WebVTT. Observe, no entanto, que esse arquivo deve ser separado de qualquer arquivo de legenda WebVTT que você também possa estar usando; não é possível combinar legendas e capítulos em um arquivo WebVTT.
 

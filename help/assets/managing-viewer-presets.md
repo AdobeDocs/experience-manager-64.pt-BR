@@ -1,8 +1,8 @@
 ---
 title: Gerenciar predefinições do visualizador do Dynamic Media
-seo-title: Gerenciar predefinições do visualizador do Dynamic Media
+seo-title: Managing Dynamic Media viewer presets
 description: Como criar e gerenciar predefinições do visualizador do Dynamic Media
-seo-description: Como criar e gerenciar predefinições do visualizador do Dynamic Media
+seo-description: How to create and manage Dynamic Media viewer presets
 uuid: 31ef7a4e-2053-43b5-ac6c-cdc4b30c3914
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: Predefinições do visualizador
+feature: Viewer Presets
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
-source-wordcount: '4236'
+source-wordcount: '4220'
 ht-degree: 12%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 12%
 
 Uma predefinição do visualizador do Dynamic Media é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Se você for um administrador, poderá criar Predefinições do visualizador. As configurações estão disponíveis para uma matriz de opções de configuração do visualizador. Por exemplo, você pode alterar o tamanho de exibição do visualizador ou o comportamento de zoom.
 
-Para obter instruções sobre como criar e personalizar suas próprias predefinições do visualizador de HTML5, consulte a Documentação da API do SDK do visualizador de HTML5 do Adobe Dynamic Media *HTML5.* O SDK está disponível no servidor de publicação do IS incorporado no próprio SDK. Cada versão da biblioteca tem sua própria documentação do SDK incluída.
+Para obter instruções sobre como criar e personalizar suas próprias predefinições do visualizador do HTML5, consulte a Documentação da API do SDK do visualizador do HTML *5 do Adobe Dynamic Media.* O SDK está disponível no servidor de publicação do IS incorporado no próprio SDK. Cada versão da biblioteca tem sua própria documentação do SDK incluída.
 
 Caminho: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Por exemplo, 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte também o [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulte também o [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 Esta seção descreve como criar, editar e gerenciar predefinições do visualizador. Você pode aplicar uma predefinição do visualizador a um ativo a qualquer momento que o visualizar. Consulte [Aplicação de predefinições do visualizador](viewer-presets.md).
 
@@ -55,7 +55,7 @@ Adicione, edite, exclua, publique, cancele a publicação e visualize predefini�
 
 ## Suporte de visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
 
-Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador de HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador de HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser *responsivo* e exibido de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
+Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador do HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador do HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser *responsivo* e exibido de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
 
 Consulte [Biblioteca de imagens responsivas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) na *Ajuda da API de disponibilização de imagens* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
 
@@ -84,7 +84,7 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
 | **Conjunto do Carousel** | Pontos de acesso, mapas de imagem ou ambos são adicionados a uma série de duas ou mais imagens. Um cliente pode deslocar as imagens para a esquerda ou para a direita e clicar em um ponto de acesso em uma imagem para obter detalhes adicionais ou para comprar diretamente da categoria, da página inicial ou da página de aterrissagem de um site. |
 | **Flyout Zoom** | Exibe uma segunda imagem da área com zoom ao lado da imagem original. Não há controles a serem usados; os usuários movem a seleção para a área que desejam visualizar. |
 |  | Ao determinar o uso total da largura de banda para esse visualizador, considere que a imagem principal e a imagem flyout são servidas no visualizador. O tamanho da imagem principal (Largura e Altura do Palco) e o Fator de Zoom determinam o tamanho da imagem do flyout. Para impedir que o tamanho do arquivo flyout se torne muito grande, equilibre esses dois valores: se você tiver um tamanho de imagem principal grande, abaixe o valor de Fator de Zoom. (A Largura do Flyout e a Altura do Flyout determinam o tamanho da janela do flyout, mas não o tamanho da imagem do flyout que é servida no visualizador.) |
-|  | Por exemplo, se o tamanho da imagem principal for 350 por 350 pixels, com um Fator de Zoom de 3, a imagem de flyout resultante será de 1050 por 1050 pixels. Se o tamanho da imagem principal for 300 por 300 pixels, com um Fator de Zoom de 4, a imagem de flyout será de 1200 por 1200 pixels. Dependendo da configuração de qualidade JPEG (as configurações recomendadas estão entre 80 e 90), você pode diminuir o tamanho do arquivo significativamente. Os fatores de zoom recomendados são de 2,5 a 4, dependendo do tamanho da imagem principal. |
+|  | Por exemplo, se o tamanho da imagem principal for 350 por 350 pixels, com um Fator de Zoom de 3, a imagem de flyout resultante será de 1050 por 1050 pixels. Se o tamanho da imagem principal for 300 por 300 pixels, com um Fator de Zoom de 4, a imagem de flyout será de 1200 por 1200 pixels. Dependendo da configuração de qualidade do JPEG (as configurações recomendadas estão entre 80 e 90), é possível diminuir o tamanho do arquivo significativamente. Os fatores de zoom recomendados são de 2,5 a 4, dependendo do tamanho da imagem principal. |
 | **Zoom em linha** | Exibe uma imagem da área com zoom no visualizador original. Não há controles para usar. Ou seja, os usuários movem a seleção para a área que desejam visualizar. |
 | **Definição de imagem** | No visualizador de Conjunto de imagens, os usuários podem ver diferentes exibições ou variações de cor de um item clicando em uma imagem em miniatura. Esse visualizador também oferece ferramentas de zoom para examinar imagens de perto. |
 | **Imagem interativa** | Os pontos de acesso são adicionados a partes de uma imagem em que um cliente pode clicar para obter detalhes adicionais ou para comprar diretamente de uma categoria de site, página inicial ou página inicial. |
@@ -107,7 +107,7 @@ Consulte também [Demonstrações em tempo real](https://landing.adobe.com/en/na
 
 Para obter informações sobre versões compatíveis de navegadores da Web e sistemas operacionais para visualizadores, consulte as Notas de versão dos visualizadores.
 
-Consulte *Notas de versão dos visualizadores* no índice do [Guia de referência dos visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulte *Notas de versão dos visualizadores* no índice do [Guia de referência dos visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 >[!NOTE]
 >
@@ -212,7 +212,7 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
 
       O editor visual permite ver qual efeito uma determinada propriedade tem em um estilo. Basta definir ou ajustar qualquer propriedade para ver instantaneamente qual efeito ela tem no visualizador usando a amostra à esquerda do editor.
 
-      As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas no tópico de Ajuda &quot;Personalizando *&lt;nome_do_visualizador>* visualizador&quot; no [Guia de referência do visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+      As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas no tópico de Ajuda &quot;Personalizando *&lt;nome_do_visualizador>* visualizador&quot; no [Guia de referência do visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
       Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizando visualizador de mídia mista](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obter uma lista e uma descrição de cada propriedade.
 
@@ -220,7 +220,7 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
 
       Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores do visualizador corretos. Por exemplo, se você estiver criando um visualizador de Zoom, todas as regras de CSS importadas devem ser definidas usando o nome da classe do visualizador `.s7mixedmediaviewer` definido em um elemento do visualizador pai.
 
-      Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores de CSS para um determinado visualizador. (Os marcadores CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando *&lt;nome do visualizador>* visualizador&quot; no [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalizando Visualizador de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) No entanto, é possível que o editor visual não entenda alguns valores de CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
+      Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores de CSS para um determinado visualizador. (Os marcadores CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando *&lt;nome do visualizador>* visualizador&quot; no [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalizando Visualizador de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) No entanto, é possível que o editor visual não entenda alguns valores de CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
    >[!NOTE]
    >
    >Se preferir editar o CSS diretamente em sua forma bruta, toque em **[!UICONTROL Mostrar/Ocultar CSS]** abaixo do menu suspenso Tipo selecionado (talvez seja necessário rolar o editor visual para cima para vê-lo).****
