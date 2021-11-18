@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 46%
+source-wordcount: '636'
+ht-degree: 45%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 46%
 + [Sobre o DAM](assets.md)
 + [Melhorias na experiência do usuário](ux-improvements.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
-+ Usar AEM Assets {#using}
++ Usar o AEM Assets {#using}
    + [Experiência da página inicial do AEM Assets](assets-home-page.md)
    + [Pesquisar ativos no AEM](search-assets.md)
    + [Pesquisa de texto completo do GQL](gql-search.md)
@@ -101,7 +101,7 @@ ht-degree: 46%
    + [Metadados XMP](xmp.md)
    + [Considerações sobre a rede de ativos](assets-network-considerations.md)
    + [AEM Assets vs. AEM MediaLibrary](medialibrary.md)
-   + [Uso do rasterizador de PDF](aem-pdf-rasterizer.md)
+   + [Uso de PDF rasterizador](aem-pdf-rasterizer.md)
    + [Configuração das restrições de upload de ativos](configuring-asset-upload-restrictions.md)
    + [Práticas recomendadas de integração de AEM e Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integração do AEM Assets com o servidor InDesign](indesign.md)
@@ -165,3 +165,7 @@ ht-degree: 46%
    + [Compartilhamento de pasta privada](private-folder.md)
    + [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
    + [Representações de vídeo](video-renditions.md)
++ Integração com outras soluções {#integrations}
+   + [Integrações com [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Instalar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-configure.md)
