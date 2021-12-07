@@ -4,8 +4,7 @@ description: Configure o Experience Manager Assets para uso com a extensão Adob
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-exl-id: null
-source-git-commit: 5228db46ddbf08905477ddbab721f2b1ef7279ed
+source-git-commit: 227b929c7eecb4fa65f5c50fffc5d9ed802411e1
 workflow-type: tm+mt
 source-wordcount: '3135'
 ht-degree: 1%
@@ -197,7 +196,7 @@ Para cada grupo de Experience Manager sincronizado com um grupo do Adobe IMS (us
 1. Feche o Adobe Asset Link e reinicie o aplicativo Creative Cloud.
 1. Para verificar se o usuário tem o acesso esperado, abra novamente o Adobe Asset Link.
 
-Depois que essas etapas são executadas, outros usuários no mesmo grupo podem se conectar ao Experience Manager com o Adobe Asset Link na primeira tentativa. Eles têm automaticamente as mesmas permissões que os outros usuários do grupo.
+Depois que essas etapas forem executadas, outros usuários no mesmo grupo poderão se conectar ao Experience Manager com o Adobe Asset Link na primeira tentativa. Eles têm automaticamente as mesmas permissões que os outros usuários do grupo.
 
 ## Gerenciar usuários do Experience Manager para o Adobe Asset Link {#manage-users}
 
