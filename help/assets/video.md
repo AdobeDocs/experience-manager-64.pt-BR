@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 7f4e44eb75ccae4a9ab1d95171b95a5e9fe48f64
+source-git-commit: 18ab491812b1bcc8ceee14e311bd15c0c8dd32fa
 workflow-type: tm+mt
-source-wordcount: '10383'
+source-wordcount: '10401'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
       * Saiba mais sobre [Organizar ativos digitais](organize-assets.md).
    * Faça upload dos vídeos de origem primária para as pastas. Ao adicionar vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
-      * O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+      * O Dynamic Media oferece suporte principalmente a vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 50 x 50.
       * Você pode fazer upload de arquivos de vídeo com até 15 GB cada.
       * [Fazer upload de seus vídeos](managing-video-assets.md#uploading-and-previewing-video-assets).
       * Saiba mais sobre [Formatos de arquivo de entrada suportados](assets-formats.md#supported-multimedia-formats).
@@ -288,7 +288,7 @@ For advice about video encoding, see the following:
 
 Ao codificar um arquivo de vídeo, use um arquivo de vídeo de origem com a maior qualidade possível. Evite usar arquivos de vídeo previamente codificados, pois esses arquivos já estão compactados, e uma codificação adicional criará um vídeo de qualidade inferior.
 
-* O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+* O Dynamic Media oferece suporte principalmente a vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 50 x 50.
 * Você pode fazer upload de arquivos de vídeo de origem primária com até 15 GB cada.
 
 A tabela a seguir descreve o tamanho recomendado, a proporção e a taxa mínima de bits que seus arquivos de vídeo de origem devem ter antes de codificá-los:
