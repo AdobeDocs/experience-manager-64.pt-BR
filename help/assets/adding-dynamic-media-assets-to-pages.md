@@ -1,8 +1,6 @@
 ---
-title: Adição de ativos de Mídia dinâmica a páginas
-seo-title: Adição de ativos de Mídia dinâmica a páginas
-description: Como adicionar componentes do Dynamic Media a uma página no AEM
-seo-description: Como adicionar componentes do Dynamic Media a uma página no AEM
+title: Adicionar ativos Dynamic Media às páginas
+description: Como adicionar componentes do Dynamic Media a páginas no Adobe Experience Manager
 uuid: 77abcb87-2df7-449b-be52-540d749890b6
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,24 +8,24 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
-feature: Componentes
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2809'
 ht-degree: 34%
 
 ---
 
-# Adição de ativos do Dynamic Media a páginas {#adding-dynamic-media-assets-to-pages}
+# Adicionar ativos Dynamic Media às páginas {#adding-dynamic-media-assets-to-pages}
 
-Para adicionar a funcionalidade de mídia dinâmica aos ativos que você usa nos sites, é possível adicionar o componente **Dynamic Media** ou **Mídia interativa** diretamente na página. Para isso, entre no modo Layout e ative os componentes de mídia dinâmica. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. A mídia dinâmica e os componentes de mídia interativa são inteligentes: eles sabem se você está adicionando uma imagem ou um vídeo, e as opções disponíveis mudam de acordo.
+Para adicionar a funcionalidade de mídia dinâmica aos ativos que você usa em seus sites, é possível adicionar o **Dynamic Media** ou **Mídia interativa** diretamente na página. Para isso, entre no modo Layout e ative os componentes de mídia dinâmica. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. A mídia dinâmica e os componentes de mídia interativa são inteligentes: eles sabem se você está adicionando uma imagem ou um vídeo, e as opções disponíveis mudam de acordo.
 
-Você adiciona ativos de mídia dinâmica diretamente à página se estiver usando o AEM como WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](linking-urls-to-yourwebapplication.md) ou [incorpore](embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.md).
+Você adiciona ativos de mídia dinâmica diretamente à página se estiver usando o AEM como o WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](linking-urls-to-yourwebapplication.md) ou [incorpore](embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.md).
 
 >[!NOTE]
 >
->Você deve publicar ativos antes de adicioná-los às páginas no AEM. Consulte [Publicar ativos do Dynamic Media](publishing-dynamicmedia-assets.md).
+>Você deve publicar ativos antes de adicioná-los às páginas no AEM. Consulte [Publicação de ativos Dynamic Media](publishing-dynamicmedia-assets.md).
 
 ## Adicionar um componente Dynamic Media a uma página {#adding-a-dynamic-media-component-to-a-page}
 
@@ -40,14 +38,14 @@ Adicionar um componente do Dynamic Media a uma página é o mesmo que adicionar 
 >Para evitar esse problema, verifique se os usuários do AEM Sites têm as permissões necessárias para acessar os ativos.
 
 1. No AEM, abra a página à qual você deseja adicionar o componente Mídia dinâmica.
-1. No painel no lado esquerdo da página (talvez seja necessário alternar a exibição do painel lateral), clique no ícone **[!UICONTROL Components]**.
-1. No cabeçalho **[!UICONTROL Components]**, na lista suspensa, selecione **[!UICONTROL Dynamic Media]**. Se nenhuma lista de componentes do Dynamic Media estiver disponível, você provavelmente precisará ativar os componentes do Dynamic Media que deseja usar. Consulte [Ativar componentes do Dynamic Media](#enabling-dynamic-media-components).
+1. No painel no lado esquerdo da página (talvez seja necessário alternar a exibição do painel lateral), clique no botão **[!UICONTROL Componentes]** ícone .
+1. Em **[!UICONTROL Componentes]** , na lista suspensa, selecione **[!UICONTROL Dynamic Media]**. Se nenhuma lista de componentes do Dynamic Media estiver disponível, você provavelmente precisará ativar os componentes do Dynamic Media que deseja usar. Consulte [Ativar componentes do Dynamic Media](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Arraste um componente Dynamic Media que você deseja usar para a página no local desejado.
-1. Passe o ponteiro do mouse sobre o componente. Quando o componente estiver rodeado por uma caixa azul, toque uma vez para exibir a barra de ferramentas do componente. Toque no ícone **[!UICONTROL Configuração]** (chave) .
-1. [Edite os ](#dynamic-media-components) componentes conforme necessário e clique na marca de seleção para salvar as alterações.
+1. Passe o ponteiro do mouse sobre o componente. Quando o componente estiver rodeado por uma caixa azul, toque uma vez para exibir a barra de ferramentas do componente. Toque no **[!UICONTROL Configuração]** ícone (chave).
+1. [Editar os componentes](#dynamic-media-components) conforme necessário e clique na marca de seleção para salvar as alterações.
 
 ### Ativar componentes do Dynamic Media {#enabling-dynamic-media-components}
 
@@ -58,12 +56,12 @@ Se nenhum componente do Dynamic Media estiver disponível para ser adicionado a 
 
    ![editar modelo](/help/assets/assets-dm/edit-template.png)
 
-1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Estrutura]**.
+1. No lado direito da barra de ferramentas, perto da parte superior da página, na lista suspensa, toque em **[!UICONTROL Estrutura]**.
 
    ![Política](/help/assets/assets-dm/structure-mode.png)
 
-1. Próximo à parte inferior da página, toque em **[!UICONTROL Contêiner de layout]** para abrir a barra de ferramentas e toque no ícone Política .
-1. Na página **[!UICONTROL Contêiner de layout]**, no cabeçalho **[!UICONTROL Propriedades]**, verifique se a guia **[!UICONTROL Componentes permitidos]** está selecionada.
+1. Próximo à parte inferior da página, toque em **[!UICONTROL Contêiner de layout]** para abrir a barra de ferramentas, toque no ícone Política .
+1. No **[!UICONTROL Contêiner de layout]** na página **[!UICONTROL Propriedades]** verifique se o **[!UICONTROL Componentes permitidos]** é selecionada.
 
    ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
 
@@ -72,9 +70,9 @@ Se nenhum componente do Dynamic Media estiver disponível para ser adicionado a 
 
    ![Lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
-1. Próximo ao canto superior direito da página **[!UICONTROL Contêiner de layout]**, toque no ícone Concluído (marca de seleção).
+1. Próximo ao canto superior direito do **[!UICONTROL Contêiner de layout]** toque no ícone Concluído (marca de seleção) .
 
-1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Conteúdo inicial]**, em seguida em [adicionar um componente Dynamic Media a uma página](#adding-a-dynamic-media-component-to-a-page), como de costume.
+1. No lado direito da barra de ferramentas, perto da parte superior da página, na lista suspensa, toque em **[!UICONTROL Conteúdo inicial]**, em seguida [adicionar um componente Dynamic Media a uma página](#adding-a-dynamic-media-component-to-a-page) como de costume.
 
 ## Localização dos componentes do Dynamic Media {#localizing-dynamic-media-components}
 
@@ -84,19 +82,19 @@ Você pode localizar componentes do Dynamic Media de uma das duas maneiras:
 
    ![chlimage_1-538](assets/chlimage_1-538.png)
 
-* No seletor do site, selecione a página ou grupo de páginas desejado. Toque em **[!UICONTROL Propriedades]** e selecione a guia **[!UICONTROL Avançado]**. Selecione o idioma desejado para localização.
+* No seletor do site, selecione a página ou grupo de páginas desejado. Toque **[!UICONTROL Propriedades]** e selecione o **[!UICONTROL Avançado]** guia . Selecione o idioma desejado para localização.
 
    >[!NOTE]
    >
-   >Observe que nem todos os idiomas disponíveis no menu **[!UICONTROL Language]** têm tokens atribuídos no momento.
+   >Observe que nem todos os idiomas disponíveis no **[!UICONTROL Idioma]** no momento, têm tokens atribuídos.
 
 ## Componentes do Dynamic Media {#dynamic-media-components}
 
-O Dynamic Media e o Interative Media estão disponíveis na guia [!UICONTROL Dynamic Media] em [!UICONTROL Components]. Você usa o componente [!UICONTROL Mídia interativa] para quaisquer ativos interativos, como vídeo interativo, imagens interativas ou conjuntos de carrossel. Para todos os outros componentes de mídia dinâmica, use o componente Mídia dinâmica.
+O Dynamic Media e a Mídia interativa estão disponíveis na variável [!UICONTROL Dynamic Media] em [!UICONTROL Componentes]. Você usa o componente [!UICONTROL Mídia interativa] para quaisquer ativos interativos, como vídeo interativo, imagens interativas ou conjuntos de carrossel. Para todos os outros componentes de mídia dinâmica, use o componente Mídia dinâmica.
 
 >[!NOTE]
 >
->Esses componentes não estão disponíveis por padrão e precisam ser disponibilizados por meio do editor de modelos antes de usar o . [Depois que eles forem disponibilizados ](/help/sites-authoring/templates.md#editing-templates-template-authors) no editor de modelo, você poderá adicionar os componentes à sua página como faria com qualquer outro componente AEM.
+>Esses componentes não estão disponíveis por padrão e precisam ser disponibilizados por meio do editor de modelos antes de usar o . [Após a sua disponibilização](/help/sites-authoring/templates.md#editing-templates-template-authors) no editor de modelos, é possível adicionar os componentes à sua página como você faria com qualquer outro componente AEM.
 
 ![chlimage_1-539](assets/chlimage_1-539.png)
 
@@ -120,54 +118,53 @@ O componente Dynamic Media é inteligente — dependendo de você adicionar uma 
 >
 
 
-
 #### Ao trabalhar com imagens {#when-working-with-images}
 
 O componente Mídia dinâmica permite adicionar imagens dinâmicas, incluindo conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista. Você pode ampliar, reduzir e, se aplicável, transformar uma imagem em um conjunto de giro ou selecionar uma imagem de outro tipo de conjunto.
 
 Você também pode configurar a predefinição do visualizador, a predefinição da imagem ou o formato da imagem diretamente no componente. Para tornar uma imagem responsiva, você pode definir os pontos de interrupção ou aplicar uma predefinição de imagem responsiva.
 
-Você deve editar as seguintes configurações do Dynamic Media clicando no ícone **[!UICONTROL Editar]** no componente e depois em **[!UICONTROL Configurações do Dynamic Media]**.
+Você deve editar as seguintes configurações do Dynamic Media clicando no botão **[!UICONTROL Editar]** no componente e, em seguida, **[!UICONTROL Configurações do Dynamic Media]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Por padrão, o componente de imagem do Dynamic Media é adaptável. Se quiser torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com as configurações de **[!UICONTROL Largura]** e **[!UICONTROL Altura]**.
+>Por padrão, o componente de imagem do Dynamic Media é adaptável. Se quiser torná-lo de um tamanho fixo, defina-o no componente no **[!UICONTROL Avançado]** com a guia **[!UICONTROL Largura]** e **[!UICONTROL Altura]** configurações.
 
-* **[!UICONTROL Predefinição do visualizadorSelecione uma predefinição do visualizador existente no menu suspenso.]**
-Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
+* **[!UICONTROL Predefinição do visualizador]**
+Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 Essa será a única opção disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia. As predefinições do visualizador exibidas também são inteligentes: apenas as predefinições relevantes do visualizador são exibidas.
 
-* **[!UICONTROL Modificadores de visualizador]**
-Os modificadores de visualizador assumem a forma de par name=value com um &amp; delimiter e permitem alterar os visualizadores, conforme descrito no Guia de referência de visualizadores. Um exemplo de um modificador de visualizador é posterimage=img.jpg&amp;caption=text.vtt,1 que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legenda/subtítulo fechado ao vídeo.
+* **[!UICONTROL Modificadores do visualizador]**
+Os modificadores do visualizador assumem a forma de par name=value com um delimitador &amp; e permitem alterar os visualizadores, conforme descrito no Guia de referência de visualizadores. Um exemplo de um modificador de visualizador é posterimage=img.jpg&amp;caption=text.vtt,1 que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legenda/subtítulo fechado ao vídeo.
 
 * **[!UICONTROL Predefinição de imagem]**
 Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições de imagens. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL Modificadores]**
-de imagemVocê pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
+* **[!UICONTROL Modificadores de imagem]**
+Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* ****
-Pontos de interrupçãoSe estiver usando esse ativo em um site responsivo, será necessário adicionar os pontos de interrupção da imagem. Os pontos de interrupção da imagem precisam ser separados por vírgulas (,). Essa opção funciona quando não há altura ou largura definida em uma predefinição de imagem.
+* **[!UICONTROL Pontos de interrupção]**
+Se você estiver usando esse ativo em um site responsivo, precisará adicionar os pontos de interrupção da imagem. Os pontos de interrupção da imagem precisam ser separados por vírgulas (,). Essa opção funciona quando não há altura ou largura definida em uma predefinição de imagem.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
-Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
+Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente .
 
-* ****
-TítuloAltere o título da imagem.
+* **[!UICONTROL Título]**
+Altere o título da imagem.
 
-* **[!UICONTROL Alternar]**
-textoAdicione um título à imagem para os usuários que têm gráficos desativados.
-Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
-
-* **[!UICONTROL URL, Abrir]**
-noÉ possível definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
+* **[!UICONTROL Texto alternativo]**
+Adicione um título à imagem para os usuários que tenham os gráficos desativados.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **** Largura e  ****
-alturaInsira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esses valores em branco torna o recurso adaptável.
+* **[!UICONTROL URL, Abrir em]**
+É possível definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
+Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
+
+* **[!UICONTROL Largura]** e **[!UICONTROL Altura]**
+Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esses valores em branco torna o recurso adaptável.
 
 #### Ao trabalhar com vídeo {#when-working-with-video}
 
@@ -175,30 +172,30 @@ Use o componente Dynamic Media para adicionar vídeo dinâmico às suas páginas
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
-Você deve editar as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Editar]** no componente.
+Você deve editar as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Editar]** no componente .
 
 >[!NOTE]
 >
->Por padrão, o componente de vídeo Mídia dinâmica é adaptável. Se quiser torná-lo de um tamanho fixo, defina-o no componente com a **[!UICONTROL Largura]** e **[!UICONTROL Altura]** na guia [!UICONTROL Avançado].
+>Por padrão, o componente de vídeo Mídia dinâmica é adaptável. Se quiser torná-lo de um tamanho fixo, defina-o no componente com a variável **[!UICONTROL Largura]** e **[!UICONTROL Altura]** no [!UICONTROL Avançado] guia .
 
-* **[!UICONTROL Predefinição do visualizadorSelecione uma predefinição do visualizador de vídeo existente no menu suspenso.]**
-Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador.
+* **[!UICONTROL Predefinição do visualizador]**
+Selecione uma predefinição de visualizador de vídeo existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador.
 
-* **[!UICONTROL Modificadores de visualizador]**
-Os modificadores de visualizador assumem a forma de par name=value com um &amp; delimiter e permitem alterar os visualizadores, conforme descrito no Guia de referência de visualizadores do Adobe. Um exemplo de um modificador de visualizador é posterimage=img.jpg&amp;caption=text.vtt,1
+* **[!UICONTROL Modificadores do visualizador]**
+Os modificadores do visualizador assumem a forma de par name=value com um delimitador &amp; e permitem alterar os visualizadores, conforme descrito no Guia de referência de visualizadores do Adobe. Um exemplo de um modificador de visualizador é posterimage=img.jpg&amp;caption=text.vtt,1
 
    Com modificadores do visualizador, por exemplo, você pode fazer o seguinte:
 
-   * Associe um arquivo de legenda a um vídeo [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associe um arquivo de navegação a um vídeo [navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associar um arquivo de legenda a um vídeo [legenda.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associar um arquivo de navegação a um vídeo [navegação.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-Você pode editar as seguintes [!UICONTROL Configurações avançadas] clicando em **[!UICONTROL Editar]** no componente.
+Você pode editar o seguinte [!UICONTROL Configurações avançadas] clicando em **[!UICONTROL Editar]** no componente .
 
-* ****
-Título: altere o título do vídeo.
+* **[!UICONTROL Título]**
+Altere o título do vídeo.
 
-* **** Largura e  ****
-alturaInsira o valor em pixels se desejar que o vídeo tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
+* **[!UICONTROL Largura]** e **[!UICONTROL Altura]**
+Insira o valor em pixels se desejar que o vídeo tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
 
 #### Ao trabalhar com o Recorte inteligente {#when-working-with-smart-crop}
 
@@ -208,31 +205,31 @@ Consulte também [Perfis de imagem](image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-Você pode editar as seguintes [!UICONTROL Configurações do Dynamic Media] clicando em **[!UICONTROL Editar]** no componente.
+Você pode editar o seguinte [!UICONTROL Configurações do Dynamic Media] clicando em **[!UICONTROL Editar]** no componente .
 
 >[!NOTE]
 >
 >Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia [!UICONTROL Avançado] com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura]**.
 
-* **[!UICONTROL Modificadores]**
-de imagemVocê pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
+* **[!UICONTROL Modificadores de imagem]**
+Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-Você pode editar as seguintes configurações **[!UICONTROL Avançado]** clicando em **[!UICONTROL Editar]** no componente.
+Você pode editar o seguinte **[!UICONTROL Avançado]** clicando em **[!UICONTROL Editar]** no componente .
 
-* ****
-TítuloAlterar o título da imagem de Recorte inteligente.
+* **[!UICONTROL Título]**
+Altere o título da imagem de Recorte inteligente.
 
-* **[!UICONTROL Alternar]**
-textoAdicione um título à imagem de recorte inteligente para os usuários que têm gráficos desativados.
+* **[!UICONTROL Texto alternativo]**
+Adicione um título à imagem de recorte inteligente para os usuários que têm gráficos desativados.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL URL, Abrir]**
-noÉ possível definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
+* **[!UICONTROL URL, Abrir em]**
+É possível definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
 Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **** Altura e  ****
-LarguraInsira o valor em pixels se desejar que a imagem de recorte inteligente tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
+* **[!UICONTROL Altura]** e **[!UICONTROL Largura]**
+Insira o valor em pixels se desejar que a imagem de recorte inteligente tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
 
 ### Componente Mídia interativa {#interactive-media-component}
 
@@ -250,25 +247,25 @@ O componente Mídia interativa é inteligente — dependendo de você adicionar 
 
 É possível editar as seguintes configurações **[!UICONTROL Gerais]** clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Predefinição do visualizadorSelecione uma predefinição do visualizador existente no menu suspenso.]**
-Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. As Predefinições do visualizador devem ser publicadas para poderem ser usadas. Consulte Gerenciar predefinições do visualizador.
+* **[!UICONTROL Predefinição do visualizador]**
+Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. As Predefinições do visualizador devem ser publicadas para poderem ser usadas. Consulte Gerenciar predefinições do visualizador.
 
-* ****
-Título: altere o título do vídeo.
+* **[!UICONTROL Título]**
+Altere o título do vídeo.
 
-* **** Largura e  ****
-alturaInsira o valor em pixels se desejar que o vídeo tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
+* **[!UICONTROL Largura]** e **[!UICONTROL Altura]**
+Insira o valor em pixels se desejar que o vídeo tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
 
 É possível editar as seguintes configurações de **[!UICONTROL Adicionar ao carrinho]** clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Mostrar]**
-ativo do produto Por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o ativo do produto.
+* **[!UICONTROL Mostrar ativo do produto]**
+Por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o ativo do produto.
 
-* **[!UICONTROL Mostrar]**
-preço do produto. Por padrão, esse valor é selecionado. O preço do produto mostra o preço do item, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o preço do produto.
+* **[!UICONTROL Mostrar preço do produto]**
+Por padrão, esse valor é selecionado. O preço do produto mostra o preço do item, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o preço do produto.
 
-* **[!UICONTROL Mostrar]**
-formulário do produto Por padrão, esse valor não está selecionado. O Formulário de produto inclui quaisquer variantes de produto, como tamanho e cor. Limpe a marca de seleção para não mostrar as variantes do produto.
+* **[!UICONTROL Mostrar formulário do produto]**
+Por padrão, esse valor não está selecionado. O Formulário de produto inclui quaisquer variantes de produto, como tamanho e cor. Limpe a marca de seleção para não mostrar as variantes do produto.
 
 ### Componente de mídia panorâmica {#panoramic-media-component}
 
@@ -281,10 +278,10 @@ Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos 
 
 ![panorâmica-media-viewer-preset](assets/panoramic-media-viewer-preset.png)
 
-Você pode editar a seguinte configuração ao tocar em **[!UICONTROL Configurar]** no componente.
+Você pode editar a seguinte configuração ao tocar em **[!UICONTROL Configurar]** no componente .
 
-* **[!UICONTROL Predefinição]**
-do visualizadorSelecione um visualizador existente no menu suspenso Predefinição do visualizador.
+* **[!UICONTROL Predefinição do visualizador]**
+Selecione um visualizador existente no menu suspenso Predefinição do visualizador .
 
 Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. Você deve publicar as predefinições do visualizador antes de usá-las. Consulte [Gerenciar predefinições do visualizador](managing-viewer-presets.md).
 
@@ -292,7 +289,7 @@ Se a predefinição do visualizador que você está procurando não estiver vis�
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media agora pode ser feita via HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte [HTTP2 Delivery of Content](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
+Consulte [Entrega de conteúdo HTTP2](http2.md) para obter detalhes completos sobre a introdução ao HTTP/2 com sua conta do Dynamic Media.
 
 >[!MORELIKETHIS]
 >

@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 45%
+source-wordcount: '639'
+ht-degree: 48%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 45%
    + [Adição de mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando o MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Arquivo de informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
+   + [Arquivo de informativos do Dynamic Media, da Experience League](dynamic-media-newsletter.md)
    + [Configuração do Dynamic Media](administering-dynamic-media.md)
    + [Trabalhar com o Dynamic Media](dynamic-media.md)
    + [Configuração do modo Dynamic Media - Scene7](config-dms7.md)
@@ -49,7 +49,6 @@ ht-degree: 45%
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adicionar recursos do Dynamic Media Classic à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entrega de ativos do Dynamic Media](delivering-dynamic-media-assets.md)
    + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 45%
    + [Entrega de imagens otimizadas para um site responsivo](responsive-site.md)
    + [Visualização de ativos do Dynamic Media](previewing-assets.md)
    + [Adição de ativos do Dynamic Media a páginas](adding-dynamic-media-assets-to-pages.md)
+   + [Adicionar componentes do Dynamic Media Classic às páginas](scene7.md)
    + [Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web](embed-code.md)
    + [Vincular URLs ao aplicativo da Web.](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
@@ -168,5 +168,5 @@ ht-degree: 45%
    + [Representações de vídeo](video-renditions.md)
 + Integração com outras soluções {#integrations}
    + [Integrações com [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Instalar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-install.md)
-   + [Configurar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-configure.md)
+   + [Instalar o [!DNL enhanced connector] para o [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurar o [!DNL enhanced connector] para o [!DNL Workfront]](workfront-connector-configure.md)
