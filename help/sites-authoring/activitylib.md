@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
-source-git-commit: b926143f7b5eb6b40796bf41d1fb94f56c7f77a7
+source-git-commit: 1c9da35f65b6b9edacc3d5529ee80e7be94495d2
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 85%
+source-wordcount: '2001'
+ht-degree: 84%
 
 ---
 
@@ -96,7 +96,7 @@ Adicione uma atividade ou edite uma atividade existente para concentrar seus esf
 
 Para adicionar uma atividade:
 
-1. Clique ou toque na marca para a qual você está criando a atividade e clique ou toque em **Criar** e em **Criar atividade**. Se estiver editando, selecione a atividade e clique ou toque em **Editar**.
+1. Clique ou toque na marca para a qual você está criando a atividade, clique ou toque em **Criar** e depois **Criar atividade**. Se estiver editando, selecione a atividade e clique ou toque em **Editar**.
 1. Forneça as informações a seguir e clique ou toque em **Próximo**:
 
    * Um nome para a atividade.
