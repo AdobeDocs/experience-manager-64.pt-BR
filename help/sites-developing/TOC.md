@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guia do usuário para desenvolvimento no AEM 6.4
 breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Developing
 role: Developer
-source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 16%
+ht-degree: 26%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 16%
       + [API do Construtor de consulta](querybuilder-api.md)
    + Marcação com tags{#tagging}
       + [Marcação com tags](tags.md)
-      + [Estrutura de marcação de AEM](framework.md)
+      + [Estrutura de marcação do AEM](framework.md)
       + [Criação de tags em um aplicativo AEM](building.md)
    + [Personalização de páginas mostradas pelo Manipulador de erros](customizing-errorhandler-pages.md)
    + [Tipos de nó personalizados](custom-nodetypes.md)
@@ -80,10 +80,10 @@ ht-degree: 16%
    + [Desenvolvimento de componentes de AEM](developing-components.md)
    + [Desenvolvimento de componentes de AEM - Amostras de código](developing-components-samples.md)
    + [Exportador JSON para serviços de conteúdo](json-exporter.md)
-   + [Ativando a exportação JSON para um componente](json-exporter-components.md)
+   + [Ativação de exportação em JSON para um componente](json-exporter-components.md)
    + [Editor de imagem ](image-editor.md)
    + [Tag de decoração](decoration-tag.md)
-   + [Usar Ocultar condições](hide-conditions.md)
+   + [Uso de condições de ocultação](hide-conditions.md)
    + [Configuração de vários editores no local](multiple-inplace-editors.md)
    + [Modo de desenvolvedor](developer-mode.md)
    + [Testar sua interface do usuário](hobbes.md)
@@ -101,18 +101,18 @@ ht-degree: 16%
       + [Desenvolvimento do Forms (interface clássica)](developing-forms.md)
 + Gerenciamento de experiência headless{#headless}
    + [Sem cabeçalho e híbrido com AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [Ativando a exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [Ativação da exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Aplicativos de página única{#spas}
-      + [Introdução SPA e Apresentação](spa-walkthrough.md)
+      + [Introdução e passo a passo do SPA](spa-walkthrough.md)
       + [Tutorial WKND do SPA](spa-wknd.md)
       + [Introdução ao SPA no AEM - React](spa-getting-started-react.md)
       + [Introdução ao SPA no AEM - Angular](spa-getting-started-angular.md)
       + [Implementação de um componente de reação para SPA](spa-implementing-react-component.md)
-      + [SPA Deep Dives](spa-deep-dives.md)
+      + [Aprofundamentos de SPA](spa-deep-dives.md)
       + [Visão geral do editor de SPA](spa-overview.md)
-      + [Desenvolvimento de SPA para AEM](spa-architecture.md)
-      + [SPA Blueprint](spa-blueprint.md)
-      + [Componente Página SPA](spa-page-component.md)
+      + [Desenvolvimento de SPAs para o AEM](spa-architecture.md)
+      + [Blueprint do SPA](spa-blueprint.md)
+      + [Componente de página SPA](spa-page-component.md)
       + [Modelo dinâmico para mapeamento de componentes para SPA](spa-dynamic-model-to-component-mapping.md)
       + [Roteamento do Modelo de SPA](spa-routing.md)
       + [Integração do SPA e Adobe Experience Platform Launch](spa-launch.md)
@@ -198,7 +198,7 @@ ht-degree: 16%
    + [Testar sua interface do usuário](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
 + Práticas recomendadas    {#bestpractices}
    + [Visão geral das práticas recomendadas](best-practices.md)
-   + [Diretrizes de desenvolvimento de AEM e práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html)
+   + [Diretrizes de desenvolvimento de AEM e práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html?lang=pt-BR)
    + [Práticas recomendadas de desenvolvimento](development-practices.md)
    + [Arquitetura de conteúdo](content-architecture.md)
    + [Arquitetura de software](software-architecture.md)
@@ -220,5 +220,5 @@ ht-degree: 16%
    + [Web móvel](mobile-web.md)
    + [Criando Filtros de Grupo de Dispositivos](groupfilters.md)
    + [Design responsivo para páginas da Web](responsive.md)
-   + [Criação de sites para dispositivos móveis](mobile.md)
+   + [Criação de sites para dispositivos Mobile](mobile.md)
    + [Emuladores](emulators.md)

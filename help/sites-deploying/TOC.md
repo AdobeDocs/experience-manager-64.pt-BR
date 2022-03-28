@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guia de implementação do AEM 6.4
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4, incluindo a implantação do Adobe Managed Services na nuvem.
 feature: Deploying
 role: Architect
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 17%
+ht-degree: 21%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 17%
    + [Solução de problemas de índices do Oak](troubleshooting-oak-indexes.md)
    + [Aceitação Em Coleta De Estatísticas De Uso Agregado](opt-in-aggregated-usage-statistics.md)
    + [Resolução de problemas](troubleshooting.md)
-+ Configurar AEM {#configuring}
++ Configuração de AEM {#configuring}
    + [Conceitos básicos de configuração](configuring.md)
    + [Logs](configure-logging.md)
    + [Configuração do OSGi](configuring-osgi.md)
@@ -64,7 +64,7 @@ ht-degree: 17%
    + [Artigos explicativos de configuração](ht-deploy.md)
    + [Remover os sites do Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuração do Console da Web](configuring-web-console.md)
-+ Atualização para AEM 6.4 {#upgrading}
++ Atualização para o AEM 6.4 {#upgrading}
    + [Atualização para o AEM 6.4](upgrade.md)
    + [Planejamento da atualização](upgrade-planning.md)
    + [Avaliação da complexidade da atualização com o Detector de padrões](pattern-detector.md)
@@ -81,11 +81,11 @@ ht-degree: 17%
    + [Atualização de código e personalizações](upgrading-code-and-customizations.md)
    + [Etapas de atualização para instalações do servidor de aplicativos](app-server-upgrade.md)
    + [Lista de pacotes obsoletos desinstalados após a atualização](obsolete-bundles.md)
-+ Reestruturação do Repositório {#restructuring}
++ Reestruturação do repositório {#restructuring}
    + [Reestruturação do repositório no AEM 6.4](repository-restructuring.md)
    + [Reestruturação comum de repositório no AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Restruturação do repositório de sites no AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Reestruturação do repositório de ativos no AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
+   + [Reestruturação do repositório de ativos no AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
    + [Reestruturação do repositório Dynamic Media no AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório Forms no AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Reestruturação do repositório de comércio eletrônico no AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)

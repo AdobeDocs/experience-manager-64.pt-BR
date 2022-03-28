@@ -1,16 +1,16 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-sub-product: formulários
-solution: Experience Manager, Experience Manager Forms, Experience Manager 6.4
+sub-product: forms
+solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Guia do Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3729'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
    + [Introdução à criação de formulários adaptáveis](using/introduction-forms-authoring.md)
    + [Introdução às Comunicações interativas](using/interactive-communications-overview.md)
    + [Introdução ao gerenciamento de formulários](using/introduction-managing-forms.md)
-   + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
+   + Tutorial: Criar o primeiro formulário adaptável {#create-first-adaptive-form}
       + [Tutorial: Criar o primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
       + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
@@ -47,17 +47,17 @@ ht-degree: 4%
       + [Apresentação do site de referência We.Gov](using/gov-reference-site-walkthrough.md)
       + [Apresentação do site de referência de autoatendimento do funcionário](/help/forms/using/employee-self-service-reference-site.md)
       + [Apresentação do site de referência de recrutamento de funcionários](/help/forms/using/employee-recruitment-reference-site.md)
-      + [Site de referência de renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
+      + [Site de referência da renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [Apresentação do site de referência do We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
       + [Referência de fragmentos de formulário adaptáveis](using/reference-adaptive-form-fragments.md)
       + [Temas de Referência](using/reference-themes.md)
       + [Modelos de carta de referência](using/reference-cm-layout-templates.md)
-      + [Configurar o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca do site de referência We.Finance](using/ms-dynamics-configuration-home-mortgage.md)
+      + [Configurar o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca residencial do site de referência We.Finance](using/ms-dynamics-configuration-home-mortgage.md)
 + Instalar e configurar o AEM Forms {#install-aem-forms}
    + [Topologias de arquitetura e implantação do AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Como escolher um tipo de persistência para uma instalação do AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
    + Instalar o AEM Forms no OSGi {#osgi-installation}
-      + [Plataformas compatíveis para formulários de AEM no OSGi](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
+      + [Plataformas compatíveis para formulários de AEM no OSGi](https://helpx.adobe.com/br/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [Instalar e configurar serviços de documento](using/install-configure-document-services.md)
       + [Instalar e configurar recursos de captura de dados](using/installing-configuring-aem-forms-osgi.md)
       + [Instalar e configurar fluxos de trabalho centrados no Forms no OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
@@ -81,9 +81,9 @@ ht-degree: 4%
       + [Configurar o cache de formulários adaptáveis](using/configure-adaptive-forms-cache.md)
       + [Definir configurações AEM DS](using/configuring-the-processing-server-url-.md)
       + [Configurar o agendador de sincronização](using/configure-synchronization-scheduler.md)
-      + [Configurar o Conector para Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
+      + [Configuração do conector para o Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Conectar o AEM Forms com o LiveCycle Adobe](using/aem-livecycle-connector.md)
-      + [Configuração do AEM Forms para enviar dados de formulário a uma AEM Forms no processo JEE](using/submit-form-data-livecycle-process.md)
+      + [Configuração do AEM Forms para enviar dados de formulário para uma AEM Forms no processo JEE](using/submit-form-data-livecycle-process.md)
       + [AEM aplicativo de desktop para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Atualizar o AEM Forms {#upgrade-aem-forms}
    + [Caminhos de atualização disponíveis](using/upgrade.md)
@@ -103,17 +103,17 @@ ht-degree: 4%
       + [Atualização do LiveCycle ES4 SP1 para Adobe Experience Manager Forms no JEE para WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
       + [Atualização para o Adobe Experience Manager Forms no JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
       + [Atualização do LiveCycle ES4 SP1 para Adobe Experience Manager Forms no JEE para WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
-+ Gerenciar AEM Forms {#manage-administer-aem-forms}
++ Gerenciar o AEM Forms {#manage-administer-aem-forms}
    + [AEM Forms em grupos e privilégios OSGi](using/forms-groups-privileges-tasks.md)
    + [Criar novas pastas para categorizar formulários](using/creating-new-folders-categorize-forms.md)
    + [Pesquisar formulários e ativos](using/searching-forms-or-assets.md)
    + [Gerenciar metadados do formulário](using/manage-form-metadata.md)
-   + [Baixar um XFA ou um modelo de formulário PDF](using/download-xfa-or-pdf-form.md)
+   + [Baixar um modelo de formulário XFA ou PDF](using/download-xfa-or-pdf-form.md)
    + [Exclusão de formulários e recursos relacionados](using/deleting-forms-related-resources.md)
    + [Obter documentos XDP e PDF no AEM Forms](using/get-xdp-pdf-documents-aem.md)
    + [Importação e exportação de ativos para o AEM Forms](using/import-export-forms-templates.md)
    + [Suporte a novas localidades para localização de formulários adaptáveis](using/supporting-new-language-localization.md)
-   + Manipular dados do usuário {#handling-user-data}
+   + Tratamento de dados do usuário {#handling-user-data}
       + [Fluxos de trabalho centrados na Forms no OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Gerenciamento de usuários do Forms](using/user-management-handling-user-data.md)
       + [Fluxos de trabalho Forms JEE](using/forms-workflow-jee-handling-user-data.md)
@@ -158,7 +158,7 @@ ht-degree: 4%
    + [Atalhos de teclado do AEM Forms](using/keyboard-shortcuts.md)
    + [Associar revisores de envio a um formulário](using/adding-reviewers-form.md)
    + [Criação de ajuda no contexto para campos de formulário](using/authoring-in-field-help.md)
-+ Forms adaptável - Criação avançada {#adaptive-forms-advanced-authoring}
++ Adaptive Forms - Criação avançada {#adaptive-forms-advanced-authoring}
    + [Criação de formulários adaptáveis usando o esquema JSON](using/adaptive-form-json-schema-form-model.md)
    + [Criação de formulários adaptáveis usando o Esquema XML](using/adaptive-form-xml-schema-form-model.md)
    + [Uso do Adobe Sign em um formulário adaptável](using/working-with-adobe-sign.md)
@@ -170,7 +170,7 @@ ht-degree: 4%
    + [Modelos de formulário adaptável](using/template-editor.md)
    + [Expressões de formulário adaptável](using/adaptive-form-expressions.md)
    + [Gerar documento de registro para formulários adaptáveis](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [Melhore o desempenho de formulários grandes com carregamento lento](using/lazy-loading-adaptive-forms.md)
+   + [Melhorar o desempenho de formulários grandes com carregamento lento](using/lazy-loading-adaptive-forms.md)
    + [Preencher previamente campos de formulário adaptáveis](using/prepopulate-adaptive-form-fields.md)
    + [Uso de expressões SOM em formulários adaptáveis](using/using-som-expressions-adaptive-forms.md)
    + [Adicionar informações dos dados do usuário aos metadados de envio de formulário](using/form-submission-metadata.md)
@@ -193,13 +193,13 @@ ht-degree: 4%
    + [Preparar e enviar comunicação interativa usando a interface do usuário do agente](using/prepare-send-interactive-communication.md)
    + [Canal de impressão e canal da Web](using/web-channel-print-channel.md)
    + [Propriedades de configuração do Interative Communications](using/interactive-communication-configuration-properties.md)
-+ Fluxos de trabalhos {#workflows}
++ Fluxos de trabalho {#workflows}
    + [Fluxo de trabalho centrado no Forms no OSGi](using/aem-forms-workflow.md)
    + [Fluxo de trabalho centrado na Forms no OSGi - Referência em etapas](using/aem-forms-workflow-step-reference.md)
    + [Selecione dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Ações e recursos de fluxos de trabalho de AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE](using/capabilities-osgi-jee-workflows.md)
    + [Iniciar APIs de serviços de documento AEM fluxo de trabalho](using/initiating-document-services-apis-aem.md)
-+ Espaço de trabalho do AEM Forms {#use-aem-forms-workspace}
++ AEM Forms Workspace {#use-aem-forms-workspace}
    + [Introdução à área de trabalho do AEM Forms](using/introduction-html-workspace.md)
    + [Trabalhar com a área de trabalho do AEM Forms](using/html-workspace-overview.md)
    + [Arquitetura do AEM Forms Workspace](using/html-workspace-architecture.md)
@@ -242,7 +242,7 @@ ht-degree: 4%
    + [Iniciando processos](using/starting-processes.md)
    + [Processos de rastreamento](using/tracking-processes.md)
    + [Manipuladores de logon único e tempo limite](using/single-sign-timeout-handlers.md)
-   + [Uso de um formulário adaptável no Espaço de trabalho HTML](using/using-adaptive-form-html-workspace.md)
+   + [Uso de um formulário adaptável no HTML Workspace](using/using-adaptive-form-html-workspace.md)
    + [Integrando AEM espaço de trabalho de formulários com o Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Trabalhar com listas de tarefas](using/todo-lists.md)
    + [Diretrizes para solução de problemas do espaço de trabalho do AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
@@ -272,31 +272,31 @@ ht-degree: 4%
    + [Atualização das configurações gerais](using/update-general-settings.md)
    + [Solução de problemas do aplicativo AEM Forms](using/issues-aem-forms-app.md)
 + Formulários HTML5 {#html5-forms}
-   + [Introdução a formulários HTML5](using/introduction.md)
+   + [Introdução aos formulários HTML5](using/introduction.md)
    + [Introdução aos formulários HTML5](using/get-started.md)
-   + [Arquitetura de formulários HTML5](using/html5-forms-architecture.md)
+   + [Arquitetura dos formulários HTML5](using/html5-forms-architecture.md)
    + [Diferenciação de recursos entre formulários HTML5 e PDF forms](using/feature-differentiation-html5-forms-pdf-forms.md)
-   + [Perguntas frequentes para formulários HTML5](using/faq.md)
+   + [Perguntas frequentes sobre formulários HTML5](using/faq.md)
    + [Criação de modelos de formulário para formulários HTML5](using/designing-form-template.md)
    + [Práticas recomendadas para formulários HTML5](using/best-practices-for-html5-forms.md)
    + [Criação de formulários HTML5 acessíveis](using/design-accessible-html5-forms.md)
-   + [Gerar visualização HTML5 de um formulário XDP](using/preview-xdp-forms-html.md)
+   + [Gerar visualização de HTML5 de um formulário XDP](using/preview-xdp-forms-html.md)
    + [Modelo de formulário de renderização para formulários HTML5](using/rendering-form-template.md)
    + [Ativação de anexos para um formulário HTML5](using/enabling-attachments-html5-form.md)
-   + [Proxy do serviço de formulários HTML5](using/service-proxy.md)
+   + [Proxy de serviço de formulários do HTML5](using/service-proxy.md)
    + [Otimização de formulários HTML5](using/optimize-html5-forms.md)
    + [Leitores de tela para formulários HTML5](using/screen-readers.md)
    + [Criação de um perfil personalizado para formulários HTML5](using/custom-profile.md)
    + [Idiomas da direita para a esquerda em formulários HTML5](using/right-left-languages.md)
    + [Integração do Form Bridge ao portal personalizado para formulários HTML5](using/integrate-form-bridge-forms-portal.md)
    + [Criar aparências personalizadas em formulários HTML5](using/custom-widgets.md)
-   + [Alteração de estilos padrão de formulários HTML5](using/changing-default-styles.md)
+   + [Alteração dos estilos padrão de formulários HTML5](using/changing-default-styles.md)
    + [Suporte a cláusula de imagem para formulários HTML5](using/picture-clause-support.md)
    + [Criar tabelas complexas acessíveis em formulários HTML5](using/accessible-tables.md)
    + [Criação de estilos CSS para formulários HTML5](using/css-styles.md)
    + [Personalização de mensagens de erro para formulários HTML5](using/customzing-errors-html5-forms.md)
-   + [Salvar um formulário HTML5 como rascunho](using/saving-html5-form-draft.md)
-   + [Habilitar registro para formulários HTML5](using/enable-logs.md)
+   + [Como salvar um formulário HTML5 como rascunho](using/saving-html5-form-draft.md)
+   + [Ativar o registro para formulários HTML5](using/enable-logs.md)
    + [Depuração de formulários HTML5](using/debug.md)
    + [Suporte a scripts para formulários HTML5](using/scripting-support.md)
    + [Conjunto de formulários no AEM Forms](using/formset-in-aem-forms.md)
@@ -319,7 +319,7 @@ ht-degree: 4%
    + [APIs para acessar instâncias de cartas](using/cm-apis-to-access-letter-instances.md)
    + [Integração da interface Criar correspondência com o portal personalizado](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Caracteres especiais personalizados no Gerenciamento de correspondência](using/custom-special-characters.md)
-   + [Marca d&#39;água personalizada na visualização de PDF carta](using/custom-watermark.md)
+   + [Marca d&#39;água personalizada na visualização de PDF de letra](using/custom-watermark.md)
    + [Configuração de uma solução de gerenciamento de correspondência](using/configuring-a-cm-solution.md)
    + [Condição em linha e repetição em Comunicações interativas e cartas](using/cm-inline-condition.md)
    + [Fragmentos do documento](using/lists.md)
@@ -363,9 +363,9 @@ ht-degree: 4%
    + [Uso da API sendToPrinter](using/using-sendtoprinter-api.md)
 + Segurança de documentos {#use-document-security}
    + [Ofertas de segurança de documentos](using/document-security-offerings.md)
-   + [Permitir que AEM pesquise documentos PDF protegidos pela segurança do documento](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
-   + [Reader estendendo documentos PDF protegidos por políticas usando a Biblioteca de Proteção Portátil](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
-   + [Permitir que AEM pesquise documentos protegidos pela segurança do documento PDF e documentos do Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
+   + [Habilitar AEM pesquisar documentos de PDF protegido de segurança de documentos](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
+   + [Reader estendendo documentos PDF protegidos por política usando a Biblioteca Portable Protection](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
+   + [Habilitar AEM para pesquisar documentos com segurança protegida PDF e documentos do Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect um documento em nome de outro usuário](using/protect-document-on-behalf-of-another-user.md)
 + Designer do Forms {#use-forms-designer}
    + [Uso do Designer](http://www.adobe.com/go/learn_aemforms_designer_64)
@@ -375,7 +375,7 @@ ht-degree: 4%
    + [Referência de scripts do Designer ](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
    + [Referência do FormCalc do Designer ](http://www.adobe.com/go/learn_aemforms_formCalc_64)
    + [Uso de assinaturas do Scribble em formulários HTML5](using/scribble-signature.md)
-+ Personalizar AEM Forms {#customize-aem-forms}
++ Personalizar o AEM Forms {#customize-aem-forms}
    + [Estrutura de aparência para formulários adaptáveis e HTML5](using/introduction-widgets.md)
    + [Criação de um modelo de formulário adaptável personalizado](using/custom-adaptive-forms-templates.md)
    + [Criação de componentes de layout personalizados para formulários adaptáveis](using/custom-layout-components-forms.md)
@@ -385,7 +385,7 @@ ht-degree: 4%
    + [Personalização do rastreamento de eventos de formulário](using/customizing-form-event-tracking.md)
    + [Criar aparências personalizadas para campos de formulário adaptáveis](using/custom-appearance-widget-adaptive-form.md)
    + [Personalização de serviços de dados de rascunho e envio](using/custom-draft-submission-data-services.md)
-   + [Preenchimento dinâmico de listas suspensas](using/dynamically-populate-dropdowns.md)
+   + [Preencher dinamicamente listas suspensas](using/dynamically-populate-dropdowns.md)
    + [Gravação da ação de Enviar personalizado para formulários adaptáveis](using/custom-submit-action-form.md)
    + [Criação de layout personalizado da barra de ferramentas](using/creating-custom-toolbar-layout.md)
    + [Exibição de componentes com base no modelo usado](using/displaying-components-based-on-template.md)
@@ -407,7 +407,7 @@ ht-degree: 4%
       + [Configuração de provedores de autenticação](/help/forms/using/admin-help/configuring-authentication-providers.md)
       + [Sincronização de diretórios](/help/forms/using/admin-help/synchronizing-directories.md)
       + [Configuração de diretórios](/help/forms/using/admin-help/configuring-directories.md)
-   + Configurando o Gerenciamento de Usuário {#configure-user-management}
+   + Configuração do gerenciamento de usuários {#configure-user-management}
       + [Alterar a ordem da avaliação para autenticação](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
       + [Configurar a senha de vinculação LDAP](/help/forms/using/admin-help/configure-ldap-bind-password.md)
       + [Configurar formulários AEM para buscar previamente informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
@@ -427,9 +427,9 @@ ht-degree: 4%
    + Conexão com um sistema de gerenciamento de conteúdo {#connect-content-management-system}
       + [Configurando o Connector para EMC Documentum](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
       + [Configurando o Conector para IBM FileNet](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
-      + [Configurando o Connector para IBM Content Manager](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
-      + [Configuração do Conector para Microsoft SharePoint](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
-   + Gerenciar certificados e credenciais {#manage-certificates-credentials}
+      + [Configuração do conector para o IBM Content Manager](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
+      + [Configuração do conector para Microsoft SharePoint](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
+   + Gerenciamento de certificados e credenciais {#manage-certificates-credentials}
       + [Adicionar e remover credenciais de nome de usuário e senha](/help/forms/using/admin-help/adding-removing-user-name-password.md)
       + [Gerenciar listas de revogação de certificado](/help/forms/using/admin-help/certificate-revocation-lists.md)
       + [Noções básicas para o gerenciamento de certificados e credenciais](/help/forms/using/admin-help/overview-2.md)
@@ -443,35 +443,35 @@ ht-degree: 4%
    + Gerenciamento de serviços {#manage-services}
       + [Definir configurações de serviço](/help/forms/using/admin-help/configure-service-settings.md)
       + [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md)
-   + Gerenciando Endpoints {#manage-endpoints}
+   + Gerenciamento de endpoints {#manage-endpoints}
       + [Adicionar, ativar, modificar ou remover pontos de extremidade](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configuração de pontos de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Configuração de endpoints remotos](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuração de endpoints de pasta observados](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configurando endpoints do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Tipos de endpoints](/help/forms/using/admin-help/types-endpoints.md)
-   + Configurar extensões do Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
+   + Configuração das extensões do Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
       + [Tipos de certificado usados pelas extensões do Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Reconhecimento de certificados válidos e expirados em documentos PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configuração das extensões do Acrobat Reader DC para captura de dados](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
       + [Revisar informações de uso de credenciais](/help/forms/using/admin-help/review-credential-information.md)
       + [Configurar credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
-      + [Revisar os direitos de uso de um arquivo PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
+      + [Revise os direitos de uso de um arquivo PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Ativar comentários online para o plug-in do navegador da Web Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
       + [Configuração de valores de tempo limite para uso com as extensões do Acrobat Reader DC](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
-   + Trabalhar com o Gerador de PDF {#work-with-pdf-generator}
-      + [Introdução ao trabalho com o Gerador de PDF](/help/forms/using/admin-help/overview-5.md)
+   + Trabalhar com o PDF Gerator {#work-with-pdf-generator}
+      + [Introdução ao trabalho com o PDFGenerator](/help/forms/using/admin-help/overview-5.md)
       + [Ativar conversões de arquivos de vários segmentos](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
       + [Definição das configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Definição das configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Definição das configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [Importação e exportação de arquivos de configuração do Gerador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
-      + [Ativar suporte para PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
+      + [Importação e exportação de arquivos de configuração do PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Habilitar o suporte ao PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configurando uma impressora de rede PDFG (somente Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configuração de fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
-      + [Modificação das configurações de conversão da exportação de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
+      + [Modificação das configurações de conversão de Exportação de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Conversão de arquivos usando o Gerador de PDF](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + Configurar SSL {#configure-ssl}
+   + Configuração de SSL {#configure-ssl}
       + [Visão geral da configuração do SSL](/help/forms/using/admin-help/overview-6.md)
       + [Configuração do SSL para o Servidor de Aplicativos JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [Configuração do SSL no Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -507,7 +507,7 @@ ht-degree: 4%
       + [Disponibilizar fontes](/help/forms/using/admin-help/make-fonts-available.md)
       + [Especificar fontes a serem incorporadas](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Especificar configurações de segurança](/help/forms/using/admin-help/specify-security-settings.md)
-   + Configurar o fluxo de trabalho de formulários{#configure-forms-workflow}
+   + Configuração do fluxo de trabalho de formulários{#configure-forms-workflow}
       + [Sobre a administração e a terminologia do processo](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Gerenciamento de processos](/help/forms/using/admin-help/processes.md)
       + [Configurando Calendários Comerciais](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -536,7 +536,7 @@ ht-degree: 4%
       + [Monitoramento AEM implantações de formulários](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [Gerenciador de trabalho e limitação](/help/forms/using/admin-help/manager-throttling.md)
       + [Execução de formulários AEM no modo de manutenção](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
-   + Manter o Banco de Dados de formulários AEM {#maintain-aem-forms-database}
+   + Manutenção do banco de dados de formulários de AEM {#maintain-aem-forms-database}
       + [Banco de dados DB2: Execução de um processo semanal](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
       + [Limite máximo de cursores abertos do banco de dados do Oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [Banco de dados IBM DB2: Executando comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
@@ -556,25 +556,25 @@ ht-degree: 4%
       + [Backup dos dados dos formulários AEM](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md)
       + [Estratégia de backup e recuperação para formulários AEM](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [Limitações de backup do Gerador de PDF](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [Limitações de backup do PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Estratégias de backup para pastas monitoradas](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [Recuperação dos dados de formulários de AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Estratégia de backup para o Connector para usuários da EMC Documentum](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
       + [Estratégia para backup e restauração em um ambiente em cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md)
-   + Serviço de informação do sistema {#system-information-service}
+   + Serviço de informações do sistema {#system-information-service}
       + [Configurar o serviço de informação do sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [APIs do Serviço de informações do sistema](/help/forms/using/admin-help/system-information-service-apis.md)
 + Relatório de processo {#process-reporting}
    + [Introdução ao Relatório de Processos](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introdução ao Relatório de processos](/help/forms/using/process-reporting/install-start-process-reporting.md)
-   + [Como a geração de relatórios do processo funciona](/help/forms/using/process-reporting/process-reporting-architecture.md)
+   + [Como a geração de relatórios de processo funciona](/help/forms/using/process-reporting/process-reporting-architecture.md)
    + [Relatórios predefinidos em Relatório de Processo](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)
    + [Relatórios Personalizados no Processo](/help/forms/using/process-reporting/process-reporting-custom-reports.md)
    + [Consultas ad-hoc em relatórios de processo](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Resolução de problemas do relatório de processos](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referência do desenvolvedor {#developer-reference}
    + [Noções básicas para desenvolvedor](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [Linguagem de modelo HTML](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+   + [Linguagem de modelo HTML ](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
    + [AEM plug-in para depurar formulários adaptáveis](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referência da API Java do AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [Referência da API do AEM Forms no JEE Java](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
@@ -596,7 +596,7 @@ ht-degree: 4%
          + [Serviço de Backup e Restauração APIQuick inicia](developing/backup-restore-service-api-quick.md)
          + [Início rápido (SOAP) do Java do serviço Forms com código de barras](developing/barcoded-forms-service-java-api.md)
          + [Início rápido do Java APIQ de componentes e serviços (SOAP)](developing/components-services-java-api-quick.md)
-         + [Converter o QuickStart (SOAP) da API Java do serviço em PDF](developing/convert-pdf-service-java-api.md)
+         + [Converter o PDF Service Java API QuickStart (SOAP)](developing/convert-pdf-service-java-api.md)
          + [Início rápido da API Java do Serviço de Credenciais (SOAP)](developing/credential-service-java-api-quick.md)
          + [Início rápido da API Java do Distiller Service (SOAP)](developing/distiller-service-java-api-quick.md)
          + [Início rápido da API Java do Serviço DocConverter (SOAP)](developing/docconverter-service-java-api-quick.md)
@@ -606,11 +606,11 @@ ht-degree: 4%
          + [Início rápido da API Java do Registro do Endpoint (SOAP)](developing/endpoint-registry-java-api-quick.md)
          + [Início rápido (SOAP) do JavaAPI do Serviço de integração de dados de formulário](developing/form-data-integration-service-java.md)
          + [Início rápido da API do Forms Service](developing/forms-service-api-quick-starts.md)
-         + [Gerar o QuickStart (SOAP) da API Java do serviço em PDF](developing/generate-pdf-service-java-api.md)
+         + [Gerar o PDF Service Java API QuickStart (SOAP)](developing/generate-pdf-service-java-api.md)
          + [Início rápido da API de invocação](developing/invocation-api-quick-starts.md)
          + [Início rápido da API Java do LiveCycleProcess (SOAP)](developing/livecycleprocess-java-api-soap-quick.md)
          + [Início rápido da API Java do Serviço de Saída (SOAP)](developing/output-service-java-api-quick.md)
-         + [Serviço de utilitários PDF Início rápido do Java (SOAP)](developing/pdf-utilities-service-java-api.md)
+         + [PDF Utilities Service Java APIQuick Start (SOAP)](developing/pdf-utilities-service-java-api.md)
          + [Início rápido da API do Serviço de Repositório](developing/repository-service-api-quick-starts.md)
          + [Início rápido da API Java do Serviço de assinatura (SOAP)](developing/signature-service-java-api-quick.md)
          + [Início rápido da API Java do Serviço do Gerenciador de tarefas (SOAP)](developing/task-manager-service-java-api.md)
@@ -626,21 +626,21 @@ ht-degree: 4%
       + Execução de operações de serviço usando APIs {#performing-service-operations-using-apis}
          + [Execução de operações de serviço usando APIs](developing/performing-service-operations-using-apis.md)
          + [Renderização do Forms](developing/rendering-forms.md)
-         + [Montagem de documentos PDF](developing/assembling-pdf-documents.md)
-         + [Montagem programática de documentos PDF](developing/programmatically-assembling-pdf-documents.md)
-         + [Conversão entre formatos de arquivo e PDF](developing/converting-file-formats-pdf.md)
-         + [Desmontagem programática de documentos PDF](developing/programmatically-disassembling-pdf-documents.md)
+         + [Montando Documentos do PDF](developing/assembling-pdf-documents.md)
+         + [Montagem programática de documentos do PDF](developing/programmatically-assembling-pdf-documents.md)
+         + [Conversão Entre Formatos De Arquivo E PDF](developing/converting-file-formats-pdf.md)
+         + [Desmontando documentos do PDF de maneira programática](developing/programmatically-disassembling-pdf-documents.md)
          + [Montagem de documentos PDF criptografados](developing/assembling-encrypted-pdf-documents.md)
          + [Montagem de vários fragmentos XDP](developing/assembling-multiple-xdp-fragments.md)
          + [Montando Documentos Usando a Numeração de Bates](developing/assembling-documents-using-bates-numbering.md)
-         + [Montagem de documentos PDF não interativos](developing/assembling-non-interactive-pdf-documents.md)
-         + [Montagem de documentos PDF com marcadores](developing/assembling-pdf-documents-bookmarks.md)
+         + [Montagem de Documentos de PDF não interativos](developing/assembling-non-interactive-pdf-documents.md)
+         + [Montagem de documentos do PDF com marcadores](developing/assembling-pdf-documents-bookmarks.md)
          + [Atribuição de direitos de uso](developing/assigning-usage-rights.md)
-         + [Montagem de Portfolio de PDF](developing/assembling-pdf-portfolios.md)
+         + [Montagem de Portfolio PDF](developing/assembling-pdf-portfolios.md)
          + [Cálculo dos dados de formulário](developing/calculating-form-data.md)
          + [Criando Aplicações Web que Renderiza Forms](developing/creating-web-applications-renders-forms.md)
-         + [Criação de documentos PDF com dados XML enviados](developing/creating-pdf-documents-submitted-xml.md)
-         + [Desmontar um documento PDF usando a API do serviço da Web](developing/disassemble-pdf-document-using-web.md)
+         + [Criação de documentos PDF com dados enviados XML](developing/creating-pdf-documents-submitted-xml.md)
+         + [Desmontar um documento do PDF usando a API do serviço da Web](developing/disassemble-pdf-document-using-web.md)
          + [Determinar se os documentos são compatíveis com PDF/A](developing/determining-whether-documents-pdf-a.md)
          + [Criação dinâmica de documentos DDX](developing/dynamically-creating-ddx-documents.md)
          + [Manuseio de Forms Enviado](developing/handling-submitted-forms.md)
@@ -649,25 +649,25 @@ ht-degree: 4%
          + [Pré-preenchimento do Forms com layouts flutuantes](developing/prepopulating-forms-flowable-layouts.md)
          + [Renderização do Forms com base em fragmentos](developing/rendering-forms-based-fragments.md)
          + [Renderizar Forms por valor](developing/rendering-forms-value.md)
-         + [Renderização do Forms como HTML](developing/rendering-forms-html.md)
+         + [Renderizar o Forms como HTML](developing/rendering-forms-html.md)
          + [Renderização do Forms no cliente](developing/rendering-forms-client.md)
          + [Renderização do HTML Forms usando arquivos CSS personalizados](developing/rendering-html-forms-using-custom.md)
          + [Renderização do HTML Forms com CustomToolbars](developing/rendering-html-forms-custom-toolbars.md)
          + [Renderização de PDF forms interativos](developing/rendering-interactive-pdf-forms.md)
          + [Forms com direitos de renderização ativados](developing/rendering-rights-enabled-forms.md)
          + [Validação de documentos DDX](developing/validating-ddx-documents.md)
-         + [Conversão de PDF em arquivos Postscript e Imagem](developing/converting-pdf-postscript-image-files.md)
+         + [Conversão do PDF para Postscript e arquivos de imagem](developing/converting-pdf-postscript-image-files.md)
          + [Conversão de Postscript em documentos PDF](developing/converting-postscript-pdf-documents.md)
          + [Criando Fluxos de Saída de Documento](developing/creating-document-output-streams.md)
          + [Assinar e certificar documentos digitalmente](developing/digitally-signing-certifying-documents.md)
-         + [Criptografar e descriptografar documentos PDF](developing/encrypting-decrypting-pdf-documents.md)
+         + [Criptografar e descriptografar documentos do PDF](developing/encrypting-decrypting-pdf-documents.md)
          + [Importação e exportação de dados](developing/importing-exporting-data.md)
          + [Gerenciar usuários](developing/users.md)
          + [Trabalhar com o repositório do AEM Forms](developing/aem-forms-repository.md)
          + [Trabalho com formulários com códigos de barras](developing/barcoded-forms.md)
          + [Trabalhando com credenciais](developing/credentials.md)
-         + [Como trabalhar com documentos PDF/A](developing/pdf-a-documents.md)
-         + [Trabalhar com utilitários de PDF](developing/pdf-utilities.md)
+         + [Trabalhar com documentos do PDF/A](developing/pdf-a-documents.md)
+         + [Trabalhar com utilitários PDF](developing/pdf-utilities.md)
          + [Trabalhar com utilitários XMP](developing/xmp-utilities.md)
          + [Preparando o AEM Forms para backup](developing/preparing-aem-forms-backup.md)
          + [Gerenciar endpoints de forma programática](developing/programmatically-endpoints.md)
