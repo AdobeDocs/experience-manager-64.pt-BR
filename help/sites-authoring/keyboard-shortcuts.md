@@ -1,22 +1,21 @@
 ---
-title: 'Atalhos de teclado para Consoles  '
-seo-title: Atalhos de teclado para Consoles
+title: Atalhos de teclado para Consoles
+seo-title: Keyboard Shortcuts for Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
-seo-description: Poupe tempo durante a criação usando estes atalhos de teclado
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
-translation-type: tm+mt
-source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
+source-git-commit: beb6e3ccc5cbef044f8b91d327c0361c881ccd72
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
-
 
 # Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
 
@@ -42,7 +41,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Commerce, Scree
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alternar para a opção de [seletor do painel](/help/sites-authoring/basic-handling.md#rail-selector) que deseja exibir |
-|  | &grave; | Ocultar painel |
+|  | ``` ` ``` | Ocultar painel |
 |  | `e` | Editar |
 |  | `p` | Propriedades |
 |  | `m` | Mover |
@@ -96,4 +95,3 @@ Para os usuários que não usam atalhos de teclado ou que têm certos requisitos
 >[!NOTE]
 >
 >As teclas de atalho de navegação para a exibição de coluna e árvore de conteúdo ficam sempre ativas.
-
