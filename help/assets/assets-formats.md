@@ -1,13 +1,13 @@
 ---
-title: Formatos de arquivo compatíveis com o  [!DNL Experience Manager] Assets
+title: Formatos de arquivo suportados em [!DNL Experience Manager] Ativos
 description: Lista de formatos de arquivo e tipos MIME compatíveis com o Assets e os recursos compatíveis com cada formato.
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: cc47644419f7b7f4f1f00bb848050aa4a98efa09
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1645'
 ht-degree: 10%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 10%
 
 [!DNL Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada funcionalidade tem suporte variado para diferentes tipos MIME.
 
-Para integrar [!DNL Assets] a outras soluções de gerenciamento de ativos digitais (DAM) compatíveis com os padrões e software de desktop, use a Plataforma de metadados extensível Adobe (XMP).
+Para integrar [!DNL Assets] com outros softwares DAM (Digital Asset Management, gerenciamento de ativos digitais) compatíveis com os padrões, use a Plataforma de Metadados Extensíveis Adobe (XMP).
 
-Use a legenda para entender o nível de suporte.
+Use a legenda para entender o nível de compatibilidade.
 
-| Nível de suporte | Descrição |
+| Nível de compatibilidade | Descrição |
 |:---:|---|
-| Instantâneo | Compatível |
-| * | Suportado com recursos complementares |
-| - | Não aplicável |
+| ✓ | Compatível |
+| &#42; | Suportado com recursos complementares |
+| − | Não aplicável |
 
 ## Formatos de imagem raster {#supported-raster-image-formats}
 
@@ -32,123 +32,123 @@ Os formatos de imagem raster compatíveis com os recursos de gerenciamento de at
 
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Edição interativa | Write-back de metadados | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  | Instantâneo |
-| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  | Instantâneo | Instantâneo |
-| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| BMP | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  | Instantâneo |
-| PNM | Instantâneo | Instantâneo |  |  |  |  | Instantâneo |
-| PGM | Instantâneo | Instantâneo |  |  |  |  | Instantâneo |
-| PBM | Instantâneo | Instantâneo |  |  |  |  | Instantâneo |
-| PPM | Instantâneo | Instantâneo |  |  |  |  | Instantâneo |
-| PSD **‡** | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |  | Instantâneo |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  | Instantâneo |  |
-| PICT |  |  |  |  |  |  | Instantâneo |
-| PSB | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |  |  |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| PNM | ✓ | ✓ |  |  |  |  | ✓ |
+| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PBM | ✓ | ✓ |  |  |  |  | ✓ |
+| PPM | ✓ | ✓ |  |  |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
+| PICT |  |  |  |  |  |  | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**‡** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pela Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+**‡** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Formatos de imagem raster compatíveis com os recursos do Dynamic Media são os seguintes:
 
-| Formato | Upload<br> (Formato de entrada) | Criar<br> imagem<br> predefinição<br> (Formato de saída) | Visualizar<br> representação dinâmica<br> | Entregar<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Upload<br> (Formato de entrada) | Criar<br> imagem<br> predefinição<br> (Formato de saída) | Visualizar<br> dinâmico<br> representação | Delivery<br> dinâmico<br> representação | Baixar<br> dinâmico<br> representação |
 |---|:---:|:---:|:---:|:---:|:---:|
-| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| BMP | Instantâneo |  |  |  |  |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **‡** | Instantâneo |  |  |  |  |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PICT | Instantâneo |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**‡** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pela Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+**‡** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Além das informações acima, considere o seguinte:
 
-* O suporte para arquivos EPS se aplica somente a imagens raster. Por exemplo, a geração de miniaturas para imagens vetoriais EPS não é compatível por padrão. Para adicionar suporte, [configure ImageMagick](best-practices-for-imagemagick.md). Para integrar ferramentas de terceiros para ativar recursos adicionais, consulte [Manipulador de mídia baseado na linha de comando](media-handlers.md#command-line-based-media-handler).
+* O suporte para arquivos EPS se aplica somente a imagens raster. Por exemplo, a geração de miniaturas de imagens vetoriais do EPS não é compatível por padrão. Para adicionar suporte, [configurar o ImageMagick](best-practices-for-imagemagick.md). Para integrar ferramentas de terceiros e ativar recursos adicionais, consulte [Manipulador de mídia baseado em linha de comando](media-handlers.md#command-line-based-media-handler).
 
-* O write-back de metadados funciona para o formato de arquivo PSB quando é adicionado ao manipulador `NComm`.
+* O write-back de metadados funciona para o formato de arquivo PSB quando é adicionado ao `NComm` manipulador.
 
-* Para usar o Dynamic Media para visualizar e gerar representações dinâmicas para arquivos EPS, consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar o Dynamic Media para visualizar e gerar representações dinâmicas para arquivos EPS, consulte [Formatos de arquivo Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de Estrutura de Documentos PostScript (PS-Adobe).
 
 ## Formatos de imagem rasterizada não aceitos no Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-A lista a seguir descreve os subtipos de formatos de arquivo de imagem rasterizada que são *not* suportados no Dynamic Media.
+A lista a seguir descreve os subtipos de formatos de arquivo de imagem rasterizada que são *not* compatível com o Dynamic Media.
 
-Consulte também [Detectar formatos de arquivo não suportados para Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Consulte também [Detectar formatos de arquivo não suportados para o Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * Arquivos PNG com um tamanho de bloco IDAT superior a 100 MB.
 * Arquivos PSB.
-* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
-* Arquivos PSD com uma profundidade de bits superior a 16.
+* Arquivos PSD com um espaço de cores diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
+* Arquivos PSD com profundidade de bits superior a 16.
 * Arquivos TIFF com dados de ponto flutuante.
-* Arquivos TIFF com espaço de cor Lab.
+* Arquivos TIFF com espaço de cores Lab.
 
-## Biblioteca de rasterizadores de PDF {#supported-pdf-rasterizer-library}
+## Biblioteca PDF Rasterizer {#supported-pdf-rasterizer-library}
 
-A biblioteca Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos PDF e Adobe Illustrator grandes e com uso intenso de conteúdo. O Adobe recomenda usar a biblioteca Rasterizer de PDF para o seguinte:
+A biblioteca Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos Adobe Illustrator e PDF grandes e com uso intenso de conteúdo. O Adobe recomenda usar a biblioteca PDF Rasterizer para o seguinte:
 
-* Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
+* Arquivos IA/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
 * Arquivos AI/PDF, para os quais as miniaturas não são geradas por padrão.
-* Arquivos AI com cores Pantone Matching System (PMS).
+* Arquivos AI com cores do Pantone Matching System (PMS).
 
-Consulte [Usando o PDF Rasterizer](aem-pdf-rasterizer.md).
+Consulte [Usando PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Biblioteca de transcodificação de imagem {#supported-image-transcoding-library}
 
 A Adobe Imaging Transcoding Library é uma solução de processamento de imagens que executa funções essenciais de manipulação de imagens, como codificação, transcodificação, reamostragem e redimensionamento.
 
-A Biblioteca de transcodificação de imagens oferece suporte a JPG/JPEG, PNG (8 bits e 16 bits), GIF, BMP, TIFF/Compressed TIFF (exceto arquivos TIFF de 32 bits e arquivos PTIFF), ICO e ICN MIME.
+A Biblioteca de transcodificação de imagens oferece suporte a JPG/JPEG, PNG (8 bits e 16 bits), GIF, BMP, TIFF/TIFF compactado (além dos arquivos TIFF de 32 bits e PTIFF), ICO e ICN MIME.
 
-Consulte [Biblioteca de transcodificação de imagem](imaging-transcoding-library.md).
+Consulte [Biblioteca de transcodificação de imagens](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-A biblioteca Adobe Camera Raw permite [!DNL Assets] assimilar imagens brutas. Consulte [Suporte Camera Raw](camera-raw.md).
+A biblioteca Adobe Camera Raw ativa [!DNL Assets] para assimilar imagens brutas. Consulte [Suporte Camera Raw](camera-raw.md).
 
 ## Formatos de documento {#supported-document-formats}
 
 Os formatos de documento compatíveis com os recursos de gerenciamento de ativos são os seguintes:
 
-| Formato | Armazenamento | Gerenciamento de metadados<br> | Extração de texto completo<br> | Extração de metadados<br> | Geração de miniatura<br> | Extração de subconjunto<br> | Writeback de metadados<br> |
+| Formato | Armazenamento | Metadados<br> gerenciamento | Texto completo<br> extração | Metadados<br> extração | Miniatura<br> geração | Subconjunto<br> extração | Metadados<br> writeback |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo |  | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| DOC | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |  |  |
-| DOCX | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |  |  |
-| ODT | Instantâneo | Instantâneo | Instantâneo |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| HTML | Instantâneo | Instantâneo | Instantâneo |  |  |  |  |
-| RTF | Instantâneo | Instantâneo | Instantâneo |  |  |  |  |
-| TXT | Instantâneo | Instantâneo | Instantâneo |  |  |  |  |
-| XLS | Instantâneo | Instantâneo | Instantâneo |  |  |  |  |
-| XLSX | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |  |  |
-| ODS | Instantâneo | Instantâneo | Instantâneo |  |  |  |  |
-| PPT | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| PPTX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| ODP | Instantâneo | Instantâneo | Instantâneo |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | Instantâneo | Instantâneo |  | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PS | Instantâneo | Instantâneo |  |  |  |  |  |
-| QXP | Instantâneo | Instantâneo |  |  |  |  |  |
-| EPUB | Instantâneo | Instantâneo |  | Instantâneo | Instantâneo |  |  |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
+| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| ODT | ✓ | ✓ | ✓ |  |  |  |  |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |  |  |  |  |
+| RTF | ✓ | ✓ | ✓ |  |  |  |  |
+| TXT | ✓ | ✓ | ✓ |  |  |  |  |
+| XLS | ✓ | ✓ | ✓ |  |  |  |  |
+| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| ODS | ✓ | ✓ | ✓ |  |  |  |  |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| ODP | ✓ | ✓ | ✓ |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
+| PS | ✓ | ✓ |  |  |  |  |  |
+| QXP | ✓ | ✓ |  |  |  |  |  |
+| ePub | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
 Os formatos de documento compatíveis com os recursos do Dynamic Media são os seguintes:
 
-| Formato | Upload<br> (Formato de entrada) | Criar<br> imagem<br> predefinição<br> (Formato de saída) | Visualizar<br> representação dinâmica<br> | Entregar<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Upload<br> (Formato de entrada) | Criar<br> imagem<br> predefinição<br> (Formato de saída) | Visualizar<br> dinâmico<br> representação | Delivery<br> dinâmico<br> representação | Baixar<br> dinâmico<br> representação |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo |  |  |  |  |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | DOC |  |  |  |  |  |
 | DOCX |  |  |  |  |  |
 | ODT |  |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Consulte a Observação abaixo) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML |  |  |  |  |  |
-| TTF |  |  |  |  |  |
+| RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -156,50 +156,54 @@ Os formatos de documento compatíveis com os recursos do Dynamic Media são os s
 | PPT |  |  |  |  |  |
 | PPTX |  |  |  |  |  |
 | ODP |  |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | Instantâneo |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ |  |  |  |  |
 | PS |  |  |  |  |  |
 | QXP |  |  |  |  |  |
-| EPUB |  |  |  |  |  |
+| ePub |  |  |  |  |  |
+
+>[!NOTE]
+>
+>Para PDF seguros, somente Upload é suportado.
 
 Além da funcionalidade acima, considere o seguinte:
 
-* Para usar o Dynamic Media para gerar representações dinâmicas para arquivos PDF, consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar o Dynamic Media para gerar representações dinâmicas para arquivos PDF, consulte [Formatos de arquivo Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para usar o Dynamic Media para visualizar e gerar representações dinâmicas para arquivos AI, consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar o Dynamic Media para visualizar e gerar representações dinâmicas para arquivos AI, consulte [Formatos de arquivo Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para usar o Dynamic Media para gerar representações dinâmicas para arquivos INDD, consulte [InDesign (INDD) file format](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Para usar o Dynamic Media para gerar representações dinâmicas para arquivos INDD, consulte [Formato de arquivo INDD (InDesign)](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## Formatos de multimídia {#supported-multimedia-formats}
 
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Transcodificação FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | Instantâneo | Instantâneo |  | - | * |
-| MIDI | Instantâneo | Instantâneo |  | - | * |
-| 3GP | Instantâneo | Instantâneo |  | - | * |
-| MP3 | Instantâneo | Instantâneo | Instantâneo | - | * |
-| MPG | Instantâneo | Instantâneo |  | - | * |
-| OGA | Instantâneo | Instantâneo |  | - | * |
-| OGG | Instantâneo | Instantâneo |  | - | * |
-| ARM | Instantâneo | Instantâneo |  | - | * |
-| WAV | Instantâneo | Instantâneo |  | - | * |
-| WMA | Instantâneo | Instantâneo |  | - | * |
-| DVI | Instantâneo | Instantâneo |  | * | * |
-| FLV | Instantâneo | Instantâneo |  | * | * |
-| M4V | Instantâneo | Instantâneo |  | * | * |
-| MPEG | Instantâneo | Instantâneo |  | * | * |
-| OGV | Instantâneo | Instantâneo |  | * | * |
-| MOV | Instantâneo | Instantâneo |  | * | * |
-| WMV | Instantâneo | Instantâneo |  | * | * |
-| SWF | Instantâneo | Instantâneo |  |  |  |
+| AAC | ✓ | ✓ |  | - | &#42; |
+| MIDI | ✓ | ✓ |  | - | &#42; |
+| 3GP | ✓ | ✓ |  | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ |  | - | &#42; |
+| OGA | ✓ | ✓ |  | - | &#42; |
+| OGG | ✓ | ✓ |  | - | &#42; |
+| ARM | ✓ | ✓ |  | - | &#42; |
+| WAV | ✓ | ✓ |  | - | &#42; |
+| WMA | ✓ | ✓ |  | - | &#42; |
+| DVI | ✓ | ✓ |  | &#42; | &#42; |
+| FLV | ✓ | ✓ |  | &#42; | &#42; |
+| M4V | ✓ | ✓ |  | &#42; | &#42; |
+| MPEG | ✓ | ✓ |  | &#42; | &#42; |
+| OGV | ✓ | ✓ |  | &#42; | &#42; |
+| MOV | ✓ | ✓ |  | &#42; | &#42; |
+| WMV | ✓ | ✓ |  | &#42; | &#42; |
+| SWF | ✓ | ✓ |  |  |  |
 
 ## Formatos de vídeo de entrada para transcodificação Dynamic Media {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extensão de arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) |  |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação da Apple |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação do Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela do Microsoft (MSS2), História de fotos do Microsoft (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
 | M4V | Apple iTunes | H264/AVC |  |
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
@@ -211,7 +215,7 @@ Além da funcionalidade acima, considere o seguinte:
 | R3D, RM | Vídeo vermelho bruto | MJPEG 2000 |  |
 | RAM, RM | RealVideo | Não suportado | G2 real (RV20), Real 8 (RV30), Real 10 (RV40) |
 | FLAC | Flac nativo | Codec de áudio sem perdas gratuito |  |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 |  |
+| MJ2 | JPEG 2000 | JPEG de movimento 2000 codec |  |
 
 ## Formatos de arquivamento {#supported-archive-formats}
 
@@ -219,13 +223,13 @@ Os formatos de arquivamento compatíveis e a aplicabilidade dos workflows comuns
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| JAR | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| RAR | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| TAR | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| ZIP **†** | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**†** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pela Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real. Os arquivos ZIP criados usando o algoritmo `Deflate64` têm suporte limitado no AEM. Não há suporte para operações de arquivamento e desarquivamento. No entanto, operações como upload, navegação e download são compatíveis.
+**†** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real. Os arquivos ZIP criados com `Deflate64` O algoritmo tem suporte limitado no AEM. Não há suporte para operações de arquivamento e desarquivamento. No entanto, operações como upload, navegação e download são compatíveis.
 
 ## Outros formatos compatíveis {#other-supported-formats}
 
@@ -233,20 +237,20 @@ A aplicabilidade de workflows comuns do DAM para alguns outros formatos de arqui
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **#** | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| SVG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |  |
-| CSS | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| VTT | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| XML | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| JavaScript (quando configurado com o próprio domínio de delivery) |  |  |  |  |  | Instantâneo |
+| **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JavaScript (quando configurado com o próprio domínio de delivery) |  |  |  |  |  | ✓ |
 
 **#** Os outros formatos são compatíveis no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
 
 ## Tipos MIME suportados {#supported-mime-types}
 
-Por padrão, [!DNL Experience Manager] detecta o tipo de arquivo usando a extensão de arquivo. [!DNL Experience Manager] O pode detectá-lo do conteúdo dos arquivos. Para o último, selecione a opção [!UICONTROL Detectar MIME do conteúdo] em [!UICONTROL Day CQ DAM Mime Type Service] no [!DNL Experience Manager] Console da Web.
+Por padrão, [!DNL Experience Manager] O detecta o tipo de arquivo usando a extensão de arquivo . [!DNL Experience Manager] O pode detectá-lo do conteúdo dos arquivos. Para o último, selecione [!UICONTROL Detectar MIME do conteúdo] em [!UICONTROL Serviço de Tipo Mime Day CQ DAM] no [!DNL Experience Manager] Console da Web.
 
-Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Uma lista de tipos MIME suportados está disponível no CRXDE Lite no `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Extensão de arquivo | Tipo MIME/tipo de mídia da Internet | Valor padrão de jobParam | Valor jobParam permitido |
 |---|---|---|---|
@@ -308,6 +312,6 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/glo
 
 >[!MORELIKETHIS]
 >
->* [Habilite o suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) ao parâmetro de trabalho de upload do Assets/Dynamic Media Classic baseado em MIME.
->* [Configure o tipo MIME baseado no suporte para carregar parâmetros de trabalho](config-dynamic.md).
+>* [Habilitar o suporte ao parâmetro de trabalho de upload de ativos/Dynamic Media Classic baseado em tipo MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [Configurar o tipo MIME baseado no suporte para carregar parâmetros de trabalho](config-dynamic.md).
 
