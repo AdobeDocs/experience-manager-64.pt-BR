@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
-feature: Conjuntos de rotação
+feature: Spin Sets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '1845'
+source-wordcount: '1923'
 ht-degree: 6%
 
 ---
@@ -21,13 +21,21 @@ Um Conjunto de rotação simula o ato real de girar um objeto para examiná-lo. 
 
 Um Conjunto de rotação simula uma experiência de visualização de 360 graus. O Dynamic Media oferece Conjuntos de rotação de eixo único em que os visualizadores podem girar um item. Além disso, os usuários podem &quot;formar livremente&quot; o zoom e deslocar qualquer uma das exibições com apenas alguns cliques do mouse. Dessa forma, os usuários podem examinar um item mais detalhadamente de um ponto de vista específico.
 
-Os Conjuntos de rotação são designados por um banner com a palavra **[!UICONTROL SPINSET]**. Além disso, se o Conjunto de rotação for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner junto com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]**.
+Os conjuntos de rotação são designados por um banner com a palavra **[!UICONTROL SPINSET]**. Além disso, se o Conjunto de rotação for publicado, então a data de publicação, indicada pela variável **[!UICONTROL World]** estiver no banner junto com a última data de modificação, indicada pela variável **[!UICONTROL Lápis]** será exibido.
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
 >[!NOTE]
 >
->Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciar ativos com a interface de toque](managing-assets-touch-ui.md).
+>Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciamento de ativos com a interface de toque](managing-assets-touch-ui.md).
+
+Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
+
+| Tipo de limite | Prática recomendada | Limite implementado |
+| --- | --- | --- |
+| Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
+
+Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 ## Início rápido: Conjuntos de rotação {#quick-start-spin-sets}
 
@@ -45,13 +53,13 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga este fluxo d
 
    >[!NOTE]
    >
-   >Você também pode criar Conjuntos de rotação automaticamente por meio de [predefinições de conjunto de lote](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   >Você também pode criar Conjuntos de rotação automaticamente por meio de [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
    >
-   >*Os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos e estão disponíveis apenas no modo* Dynamic Media - Scene7.
+   >*Os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos e estão disponíveis apenas no modo Dynamic Media - Scene7*.
 
-1. Configure [Predefinições do Visualizador do Conjunto de rotação](managing-viewer-presets.md), conforme necessário.
+1. Configurar [Predefinições do visualizador de conjunto de rotação](managing-viewer-presets.md), conforme necessário.
 
-   Os administradores podem criar ou modificar as predefinições do Visualizador do conjunto de rotação. Para ver seu Conjunto de rotação com uma predefinição do Visualizador, selecione o Conjunto de rotação e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
+   Os administradores podem criar ou modificar as predefinições do Visualizador do conjunto de rotação. Para ver seu Conjunto de rotação com uma predefinição do visualizador, selecione o Conjunto de rotação e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
    Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]** para criar ou editar predefinições do visualizador.
 
@@ -59,17 +67,17 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga este fluxo d
 
 1. [Visualização de conjuntos de rotação](#viewing-spin-sets).
 
-   Você pode exibir e acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Conjuntos criados usando predefinições de conjunto de lotes, faça com que *not* apareça na interface do usuário.)
+   Você pode exibir e acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Conjuntos criados usando predefinições de conjunto de lotes, *not* aparecem na interface do usuário.)
 
 1. [Visualizar conjuntos de rotação.](previewing-assets.md)
 
-   Selecione o Conjunto de rotação e você pode visualizá-lo. Gire o conjunto de rotação. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel à esquerda.
+   Selecione o Conjunto de rotação e você pode visualizá-lo. Gire o conjunto de rotação. Você pode escolher visualizadores diferentes do **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel à esquerda.
 
 1. [Publicar Conjuntos De Rotação.](publishing-dynamicmedia-assets.md)
 
-   A publicação de um Conjunto de rotação ativa a ordem em que as imagens aparecem em um conjunto de rotação. Certifique-se de ordená-los para que o giro seja uma exibição suave de 360 graus.**** URLe  **** Incorporar string. Além disso, você deve [publicar a predefinição do visualizador](managing-viewer-presets.md).
+   A publicação de um Conjunto de rotação ativa a ordem em que as imagens aparecem em um conjunto de rotação. Certifique-se de ordená-los para que o giro seja uma exibição suave de 360 graus.**[!UICONTROL URL]** e **[!UICONTROL Incorporar]** string. Além disso, você deve [publicar a predefinição do visualizador](managing-viewer-presets.md).
 
-1. [Vincule URLs ao seu ](linking-urls-to-yourwebapplication.md) aplicativo web ou  [Incorpore o visualizador](embed-code.md) de vídeo ou imagem.
+1. [Vincular URLs ao seu aplicativo web](linking-urls-to-yourwebapplication.md) ou [Incorporar o visualizador de vídeo ou imagem](embed-code.md).
 
    O AEM Assets cria chamadas de URL para Conjuntos de rotação e as ativa depois que você publica os Conjuntos de rotação. Você pode copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
 
@@ -77,20 +85,20 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga este fluxo d
 
    Consulte [Vincular um conjunto de rotação a uma página da Web](linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](embed-code.md).
 
-Se precisar, você pode [editar Conjuntos de rotação](#editing-spin-sets). Além disso, você pode visualizar e editar [Propriedades do conjunto de rotação](managing-assets-touch-ui.md#editing-properties).
+Se precisar, você pode [editar Conjuntos de rotação](#editing-spin-sets). Além disso, é possível visualizar e editar [Propriedades do conjunto de rotação](managing-assets-touch-ui.md#editing-properties).
 
 ## Fazer upload de ativos para conjuntos de rotação {#uploading-assets-for-spin-sets}
 
 No mínimo, você precisa de 8 a 12 capturas de um item para um Conjunto de rotação unidimensional e 16 a 24 para um Conjunto de rotação bidimensional. As fotos devem ser tiradas regularmente para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 capturas, gire o item 30 graus (360/12) para cada disparo.
 
-Você pode fazer upload de imagens para os Conjuntos de rotação da mesma maneira que faria [carregar qualquer outro ativo no AEM Assets](managing-assets-touch-ui.md).
+Você pode fazer upload de imagens para os Conjuntos de rotação como faria [fazer upload de qualquer outro ativo no AEM Assets](managing-assets-touch-ui.md).
 
 ### Diretrizes para fotografar imagens do Conjunto de rotação {#guidelines-for-shooting-spin-set-images}
 
 Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito giratório da imagem. No entanto, incluir muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. AEM recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
 
 * No mínimo, use 8 a 12 imagens em um conjunto de rotação unidimensional e 16 a 24 imagens em um conjunto de rotação bidimensional. É necessário um mínimo de 8 imagens para rodar 360 graus. Os Conjuntos de rotação unidimensionais são mais comuns, pois a criação de Conjuntos de rotação bidimensionais exige muito trabalho.
-* Usar um formato sem perdas; Recomenda-se TIFF e PNG.
+* Usar um formato sem perdas; TIFF e PNG são recomendadas.
 * Mascarar todas as imagens para que o item apareça em um plano de fundo branco ou de alto contraste. Como opção, adicione sombras.
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
 * Use imagens de rotação para roupas de moda com um manequim ou modelo. Frequentemente, o manequim é completamente mascarado (utilizando um manequim de vidro) ou na imagem aparece um manequim/moldura estilizada. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com uma fita no chão para guiar o modelo para pisar e olhe na direção de cada tomada.
@@ -105,7 +113,15 @@ A ordem em que as imagens aparecem em um conjunto de rotação é importante. Ce
 >
 >Os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos e estão disponíveis apenas no modo Dynamic Media - Scene7.
 >
->Consulte &quot;Criando predefinições de conjuntos de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação&quot; em [Configurando o Dynamic Media - Modo Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Consulte &quot;Criando predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação&quot; em [Configuração do Dynamic Media - Modo Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+
+Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
+
+| Tipo de limite | Prática recomendada | Limite implementado |
+| --- | --- | --- |
+| Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
+
+Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 **Para criar Conjuntos de rotação:**
 
@@ -113,55 +129,55 @@ A ordem em que as imagens aparecem em um conjunto de rotação é importante. Ce
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-1. Na página **[!UICONTROL Editor de conjunto de rotação]**, no campo **[!UICONTROL Título]**, digite um nome para o conjunto de rotação. O nome aparece no banner através do Conjunto de rotação. Opcionalmente, informe uma descrição.
+1. No **[!UICONTROL Editor de conjunto de rotação]** na página **[!UICONTROL Título]** digite um nome para o Conjunto de rotação. O nome aparece no banner através do Conjunto de rotação. Opcionalmente, informe uma descrição.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-   Ao criar o conjunto de rotação, você pode alterar a miniatura do conjunto de rotação ou permitir que AEM selecione a miniatura automaticamente com base nos ativos no conjunto de rotação. Para selecionar uma miniatura, toque em **[!UICONTROL Alterar miniatura]**. Selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja AEM gerar uma a partir do conjunto de rotação, selecione **[!UICONTROL Alternar para miniatura automática]**.
+   Ao criar o conjunto de rotação, você pode alterar a miniatura do conjunto de rotação ou permitir que AEM selecione a miniatura automaticamente com base nos ativos no conjunto de rotação. Para selecionar uma miniatura, toque em **[!UICONTROL Alterar miniatura]**. Selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja AEM gerar uma a partir do conjunto de rotação, selecione **[!UICONTROL Alterar para Miniatura Automática]**.
 
 1. Siga um destes procedimentos:
 
-   * Próximo ao canto superior esquerdo da página **[!UICONTROL Editor do conjunto de rotação]**, toque em **[!UICONTROL Adicionar ativo]**.
-   * Próximo ao meio da página **[!UICONTROL Editor de conjunto de rotação]**, toque em **[!UICONTROL Toque para abrir o Seletor de ativo]**.
+   * Próximo ao canto superior esquerdo do **[!UICONTROL Editor de conjunto de rotação]** página, toque em **[!UICONTROL Adicionar ativo]**.
+   * Próximo do meio da **[!UICONTROL Editor de conjunto de rotação]** página, toque em **[!UICONTROL Toque para abrir o Seletor de ativos]**.
 
    Toque para selecionar ativos que deseja incluir no seu Conjunto de rotação. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Selecionar]**.
 
-   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Para alterar a exibição, próximo ao canto superior direito da página, toque no ícone **[!UICONTROL Exibir]** e toque em **[!UICONTROL Exibição de coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição de lista]**.
+   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Para alterar a exibição, próximo ao canto superior direito da página, toque no **[!UICONTROL Exibir]** ícone e toque em **[!UICONTROL Exibição de coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição de lista]**.
 
    Consulte [Trabalhar com seletores](working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reordenar ou classificar ativos manualmente depois de adicioná-los. Se necessário, arraste o ícone **[!UICONTROL Reordenar]** de um ativo à direita do nome de arquivo do ativo para reordenar as imagens para cima ou para baixo na lista definida.
+1. Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reordenar ou classificar ativos manualmente depois de adicioná-los. Se necessário, arraste o **[!UICONTROL Reordenar]** ícone à direita do nome do arquivo do ativo para reordenar as imagens para cima ou para baixo na lista definida.
 
    ![spin_set_assets6-4](assets/spin_set_assets6-4.png)
 
 1. (Opcional) Siga um destes procedimentos:
 
    * Para excluir uma imagem, selecione-a e toque em **[!UICONTROL Excluir ativo]**.
-   * Para aplicar uma predefinição, próximo ao canto superior direito da página, toque em **[!UICONTROL Predefinição]** e selecione uma predefinição para aplicar a todos os ativos ao mesmo tempo.
+   * Para aplicar uma predefinição, próximo ao canto superior direito da página, toque em **[!UICONTROL Predefinição]** e, em seguida, selecione uma predefinição para aplicar a todos os ativos ao mesmo tempo.
 
-1. Toque em **[!UICONTROL Salvar]**. Seu Conjunto de rotação recém-criado aparece na pasta em que você o criou.
+1. Toque **[!UICONTROL Salvar]**. Seu Conjunto de rotação recém-criado aparece na pasta em que você o criou.
 
 ## Visualização de conjuntos de rotação {#viewing-spin-sets}
 
-Você pode criar conjuntos de rotação na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). No entanto, os conjuntos criados usando predefinições de conjunto de lotes, do *not* aparecem na interface do usuário. Você pode acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você criou os Conjuntos de rotação na interface do usuário).
+Você pode criar conjuntos de rotação na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). No entanto, os conjuntos criados usando predefinições de conjunto de lotes, *not* forem exibidos na interface do usuário do . Você pode acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você criou os Conjuntos de rotação na interface do usuário).
 
-Também é possível visualizar conjuntos por meio da interface do usuário, conforme descrito em [Editar conjuntos de rotação](#editing-spin-sets).
+Você também pode visualizar conjuntos por meio da interface do usuário, conforme descrito em [Editar conjuntos de rotação](#editing-spin-sets).
 
 **Para exibir Conjuntos de rotação:**
 
-1. Ao abrir as propriedades de um ativo individual. As propriedades indicam o que define o ativo selecionado como membro (em **[!UICONTROL Membro de Conjuntos]**). Toque no nome do conjunto para ver todo o conjunto.
+1. Ao abrir as propriedades de um ativo individual. As propriedades indicam quais conjuntos o ativo selecionado é um membro de (em **[!UICONTROL Membro dos Conjuntos]**). Toque no nome do conjunto para ver todo o conjunto.
 
    ![chlimage_1-384](assets/chlimage_1-384.png)
 
-1. A partir de uma imagem de membro de qualquer conjunto. Selecione o menu **[!UICONTROL Conjuntos]** para exibir os conjuntos dos quais o ativo é membro.
+1. A partir de uma imagem de membro de qualquer conjunto. Selecione o **[!UICONTROL Conjuntos]** para exibir os conjuntos dos quais o ativo é membro.
 
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
-1. Na pesquisa, você pode selecionar **[!UICONTROL Filtros]**, expandir **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos]**.
+1. Na pesquisa, você pode selecionar **[!UICONTROL Filtros]**, em seguida expanda **[!UICONTROL Dynamic Media]** e selecione **[!UICONTROL Conjuntos]**.
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos em lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando **[!UICONTROL Inicia com]** critérios de pesquisa diferentes AEM pesquisa baseada no uso de **[!UICONTROL Contém]** critérios de pesquisa. Definir o filtro para **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos em lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando **[!UICONTROL Começa com]** critérios de pesquisa diferentes da pesquisa de AEM baseada no uso de **[!UICONTROL Contém]** critérios de pesquisa. Definição do filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
    ![chlimage_1-386](assets/chlimage_1-386.png)
 
@@ -180,7 +196,7 @@ Você pode executar várias tarefas de edição em Conjuntos de rotação, como 
 1. Siga um destes procedimentos:
 
    * Passe o mouse sobre um ativo Conjunto de rotação, em seguida toque em **[!UICONTROL Editar]** (ícone de lápis).
-   * Passe o mouse sobre um ativo Conjunto de rotação, toque em **[!UICONTROL Selecione]** (ícone de marca de seleção) e toque em **[!UICONTROL Editar]** na barra de ferramentas.
+   * Passe o mouse sobre um ativo Conjunto de rotação, toque em **[!UICONTROL Selecionar]** (ícone de marca de seleção) e toque em **[!UICONTROL Editar]** na barra de ferramentas.
    * Toque em um ativo Conjunto de rotação e toque em **[!UICONTROL Editar]** (ícone de lápis) na barra de ferramentas.
 
 1. Para editar o Conjunto de rotação, siga um destes procedimentos:
@@ -190,11 +206,11 @@ Você pode executar várias tarefas de edição em Conjuntos de rotação, como 
    * Para adicionar um ativo ou atualizar um ativo existente, toque em **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e toque em **[!UICONTROL Selecionar]** próximo ao canto superior direito.
 Se você excluir a imagem que AEM usa para a miniatura ao substituí-la por outra imagem, o ativo original ainda será exibido.
    * Para excluir um ativo, selecione-o e toque em **[!UICONTROL Excluir ativo]**.
-   * Para aplicar uma predefinição, toque no ícone **[!UICONTROL Predefinição]** e selecione uma predefinição.
+   * Para aplicar uma predefinição, toque no **[!UICONTROL Predefinição]** e selecione uma predefinição.
    * Para excluir um Conjunto de rotação inteiro, navegue até o Conjunto de rotação, selecione-o e selecione **[!UICONTROL Excluir]**
 
       >[!NOTE]
-      >* Edite as imagens em um Conjunto de imagens ao navegar até o conjunto, tocar em **[!UICONTROL Definir membros]** no painel à esquerda e tocar em **[!UICONTROL Editar]** (ícone de lápis) em um ativo individual para abrir a janela de edição.
+      >* Você pode editar as imagens em um Conjunto de rotação navegando até o conjunto e tocando em **[!UICONTROL Definir membros]** no painel à esquerda e toque no **[!UICONTROL Editar]** (ícone de lápis) em um ativo individual para abrir a janela de edição.
 
 
 1. Clique em **[!UICONTROL Salvar]** ao concluir a edição.
