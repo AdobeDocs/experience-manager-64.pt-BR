@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: Guia do usuário do AEM 6.4 Mobile
 breadcrumb-title: Guia do Mobile
 user-guide-description: Crie e gerencie conteúdo para aplicativos móveis.
-feature: Móvel
+feature: Mobile
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 12%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - Preparação para o GDPR](aem-mobile-gdpr-compliance.md)
    + [Desenvolver aplicativos móveis](develop-mobile-apps.md)
-+ Criação de aplicativos de serviços sob demanda {#authoring}
++ Criação no aplicativo de serviços sob demanda {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gerenciamento de conteúdo](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Publicar Cancelar publicação de conteúdo](mobile-on-demand-publishing-unpublishing.md)
@@ -58,7 +58,7 @@ ht-degree: 12%
    + [Visão geral dos modelos](model-management.md)
    + [Espaços e entidades](spaces-and-entities.md)
    + [Gerenciando Coleções](mobile-on-demand-managing-collections.md)
-+ Criação do Adobe PhoneGap Enterprise {#author-phonegap}
++ Criação no Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [Edição de metadados do aplicativo](phonegap-editmetadata.md)
    + [Definições do aplicativo](phonegap-app-definitions.md)
@@ -67,7 +67,7 @@ ht-degree: 12%
    + [Criação de aplicativos móveis](phonegap-authoring-apps.md)
    + [Gerenciar mosaico do aplicativo](phonegap-app-details-tile.md)
    + [Personalização de conteúdo do AEM Mobile](phonegap-aem-mobile-content-personalization.md)
-+ Desenvolvimento do Adobe PhoneGap Enterprise {#developphonegap}
++ Desenvolvimento da Adobe PhoneGap Enterprise {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
    + [Criação de aplicativos móveis](building-app-mobile-phonegap.md)
    + [Notificações push](phonegap-push-notifications.md)

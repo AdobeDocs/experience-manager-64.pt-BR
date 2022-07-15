@@ -6,12 +6,12 @@ audience: admin-user
 user-guide-title: Guia do usuário de administração do AEM 6.4
 breadcrumb-title: Guia de administração
 user-guide-description: Saiba mais sobre como administrar o AEM.
-feature: Administração
+feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,19 +22,19 @@ ht-degree: 20%
 + Recursos de sites {#introduction}
    + [Administração do site](msm-and-translation.md)
    + [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](msm.md)
-   + [Console de Visão Geral da Live Copy](msm-livecopy-overview.md)
+   + [Visão geral do console da Live Copy](msm-livecopy-overview.md)
    + [Configurar a sincronização da Live Copy](msm-sync.md)
-   + [Criação e sincronização de cópias em tempo real](msm-livecopy.md)
-   + [Conflitos de implementação do MSM](msm-rollout-conflicts.md)
+   + [Criação e sincronização de Live Copies](msm-livecopy.md)
+   + [Conflitos de implantação do MSM](msm-rollout-conflicts.md)
    + [Práticas recomendadas do MSM](msm-best-practices.md)
    + [Tradução de conteúdo para sites multilíngues](translation.md)
    + [Gerenciamento de projetos de tradução](tc-manage.md)
    + [Identificação de conteúdo a ser traduzido](tc-rules.md)
    + [Preparação de conteúdo para tradução](tc-prep.md)
    + [Criar uma raiz de idioma usando a interface clássica](tc-lroot-classic.md)
-   + [Conexão com o Microsoft Translator](tc-msconf.md)
+   + [Conectar ao Microsoft Translator](tc-msconf.md)
    + [Configuração da estrutura de integração de tradução](tc-tic.md)
-   + [Assistente de Cópia de Idioma](tc-wizard.md)
+   + [Assistente de cópia de Idioma](tc-wizard.md)
    + [Aprimoramentos de tradução](tc-enhancements.md)
    + [Práticas recomendadas de tradução](tc-bp.md)
    + [Configurações e o navegador de configuração](configurations.md)
@@ -60,7 +60,7 @@ ht-degree: 20%
    + [Configuração de desfazer para edição de página](config-undo.md)
    + [Ferramenta do servidor proxy (proxy.jar)](proxy-jar.md)
    + [Configuração para aplicativos AEM](config-apps.md)
-   + [Administração de workflows](workflows.md)
+   + [Administração de fluxos de trabalho](workflows.md)
    + [Configuração de formulários de pesquisa](search-forms.md)
    + [Consoles Ferramentas](tools-consoles.md)
    + [Relatório](reporting.md)
@@ -77,12 +77,12 @@ ht-degree: 20%
    + [OWASP Top 10](owasp-top10.md)
    + [Executando AEM no modo Pronto para produção](production-ready.md)
    + [Gerenciamento de identidade](identity-management.md)
-   + [Autenticação Adobe IMS e suporte Admin Console para AEM Managed Services](ims-config-and-admin-console.md)
+   + [Autenticação do Adobe IMS e suporte do Admin Console para AEM Managed Services](ims-config-and-admin-console.md)
    + [Criando um grupo de usuários fechado](cug.md)
    + [Atenuando problemas de serialização no AEM](mitigating-serialization-issues.md)
    + [Sincronização de usuários](sync.md)
    + [Suporte a token encapsulado](encapsulated-token.md)
-   + [Logon único](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
+   + [Logon único](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html?lang=pt-BR)
    + [Como auditar operações de gerenciamento de usuários no AEM](audit-user-management-operations.md)
    + [SSL por padrão](ssl-by-default.md)
    + [Manipulador de autenticação SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -119,13 +119,13 @@ ht-degree: 20%
    + [Integração com o Livefyre](livefyre.md)
    + [Integração ao Adobe Analytics](adobeanalytics.md)
    + [Conectar ao Adobe Analytics e Criar Frameworks](adobeanalytics-connect.md)
-   + [Configuração do rastreamento de link para o Adobe Analytics](adobeanalytics-link.md)
+   + [Configuração do rastreamento de links para o Adobe Analytics](adobeanalytics-link.md)
    + [Mapeamento de dados do componente com propriedades do Adobe Analytics](adobeanalytics-mapping.md)
-   + [Configuração do rastreamento de vídeo para Adobe Analytics](adobeanalytics-video.md)
+   + [Configuração do rastreamento de vídeo para o Adobe Analytics](adobeanalytics-video.md)
    + [Perguntas frequentes sobre entrega de conteúdo HTTP2](scene7-http2faq.md)
    + [Solução de problemas da integração do Adobe Campaign](troubleshooting-campaignintegration.md)
-   + [Licenças do SharePoint Connector, Avisos de Direitos Autorais e Isenção de Responsabilidade](sharepoint-connector-licenses.md)
-   + [Conector do SharePoint](sharepoint-connector.md)
+   + [Licenças do conector SharePoint, avisos de direitos autorais e isenções de responsabilidade](sharepoint-connector-licenses.md)
+   + [Conector SharePoint](sharepoint-connector.md)
    + [Perguntas frequentes sobre fim de vida útil de visualizadores DHTML ](dhtml-viewer-endoflifefaqs.md)
    + [Integração com o Adobe Campaign Classic](campaignonpremise.md)
    + [Artigos relacionados da comunidade](related-community-articles.md)
@@ -149,7 +149,7 @@ ht-degree: 20%
    + [Integração com a Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuração manual da integração com o Adobe Target](target-configuring.md)
    + [Pré-requisitos para integração com o Adobe Target](target-requirements.md)
-   + [Classificações Adobe](adobeanalytics-classifications.md)
+   + [Classificações do Adobe](adobeanalytics-classifications.md)
    + [Integração com o Adobe Search &amp; Promote](search-and-promote.md)
    + [Integração de soluções](integration.md)
    + [Integração do Target com fragmentos de experiência](experience-fragments-target.md)
