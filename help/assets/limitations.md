@@ -1,16 +1,17 @@
 ---
 title: Limitações do Dynamic Media
-description: 'Saiba mais sobre as práticas recomendadas e os limites impostos ao criar um Conjunto de imagens ou um Conjunto de rotação ou carregar um PDF. Saiba também sobre navegador da Web e combinações de sistema operacional não compatíveis com visualizadores do Dynamic Media. '
+description: Saiba mais sobre as práticas recomendadas e os limites impostos ao criar um Conjunto de imagens ou um Conjunto de rotação ou carregar um PDF. Saiba também sobre navegador da Web e combinações de sistema operacional não compatíveis com visualizadores do Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
+source-git-commit: efe93bcf60e0b71fded10ccb77da38c789e08ef9
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 6%
+source-wordcount: '254'
+ht-degree: 4%
 
 ---
 
@@ -20,11 +21,10 @@ As seções a seguir descrevem as limitações no Dynamic Media.
 
 Este tópico inclui as seguintes seções:
 
-* Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos
+* [Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos](#best-practice-enforced-limits)
+* [Navegador da Web não suportado e combinações de sistema operacional para Visualizadores do Dynamic Media](#unsupported-browser-os)
 
-<!-- * Unsupported web browser and operating system combinations for Dynamic Media Viewers -->
-
-## Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos
+## Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos {#best-practice-enforced-limits}
 
 Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upload de PDF para extração de página, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
@@ -36,21 +36,18 @@ Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upl
 | **Conjunto de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 | Não aplicável |
 | **PDF** - Número máximo de páginas para um PDF a ser considerado para extração |  | 5000 (para novos uploads) | 100 (para todos os PDF) |
 
-<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
+## Navegador da Web não suportado e combinações de sistema operacional para Visualizadores do Dynamic Media {#unsupported-browser-os}
 
-
-<!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
-
-Dynamic Media Viewers do not support following combinations of web browser and operating system.
+Os visualizadores do Dynamic Media não são compatíveis com as seguintes combinações de navegador da Web e sistema operacional.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Internet Explorer 11 + Windows Phone 8.1 Update
+* Atualização do Internet Explorer 11 + Windows Phone 8.1
 * Safari 6 + iOS 6.0.1
 * Safari 7 + iOS 7.1
-* Safari 7 + macOS X 10.9 Mavericks
+* Safari 7 + OS X 10.9 Mavericks
 * Safari 8 + iOS 8.4
-* Safari 8 + macOS X 10.10 Yosemite -->
+* Safari 8 + OS X 10.10 Yosemite
