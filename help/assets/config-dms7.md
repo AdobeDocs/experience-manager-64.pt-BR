@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
+source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
 workflow-type: tm+mt
-source-wordcount: '5614'
+source-wordcount: '5619'
 ht-degree: 3%
 
 ---
@@ -93,8 +93,8 @@ Altere a senha antes de configurar o Dynamic Media Cloud Services. Depois de rec
 
       >[!IMPORTANT]
       >
-      >Somente uma configuração Dynamic Media no Cloud Services é compatível em uma instância do Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _not_ suportado ou recomendado pelo Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
-   * **[!UICONTROL Caminho da pasta raiz da empresa]**
+      >Somente uma configuração Dynamic Media no Cloud Services é compatível em uma instância do Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são *not* suportado ou recomendado pelo Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Caminho da Pasta Raiz da Empresa]** - O caminho da pasta raiz da sua empresa.
    * **[!UICONTROL Publicar ativos]** - a opção **[!UICONTROL Imediatamente]** significa que, quando os ativos são carregados, o sistema assimila os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos. A opção **[!UICONTROL Após ativação]** significa que você deve publicar explicitamente o ativo primeiro antes de um link URL/Incorporar ser fornecido.
    * **[!UICONTROL Servidor de visualização segura]** - permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o Experience Manager pode acessar com segurança e visualizar as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância do Experience Manager).
 
