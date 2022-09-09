@@ -8,9 +8,9 @@ breadcrumb-title: Guia de criação
 user-guide-description: Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '285'
 ht-degree: 87%
 
 ---
@@ -78,7 +78,6 @@ ht-degree: 87%
    + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Análise do desempenho das páginas](ci-analyze.md)
    + [Visualizar dados de análise de página](pa-using.md)
-   + [Adicionar recursos Search&amp;Promote à sua página](search-and-promote.md)
 + Personalização {#personalization}
    + [Personalização](personalization.md)
    + [Visualização de páginas usando dados do ContextHub](ch-previewing.md)
