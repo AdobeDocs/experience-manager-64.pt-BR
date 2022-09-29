@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
+source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,6 @@ Vários parâmetros podem ser definidos, incluindo:
 * **Usuário do script** - essa propriedade opcional pode especificar a conta de usuário do repositório usada para ler os scripts. Se nenhuma conta for especificada, a variável `admin` O usuário é usado por padrão.
 
 * **Extensões padrão** A lista de extensões para as quais o comportamento padrão será usado. Isso significa que o último segmento de caminho do tipo de recurso pode ser usado como o nome do script.
-
-**Day Commons GFX Font Helper** Ao renderizar gráficos, você pode usar DrawText para incorporar o texto. Para isso, você também pode instalar suas próprias fontes:
 
 * Defina as **Caminho da fonte** a ser pesquisado por fontes específicas do projeto.
 
