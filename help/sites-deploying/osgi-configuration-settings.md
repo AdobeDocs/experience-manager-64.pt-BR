@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
+source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3461'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ Ao criar uma nova configuração, não faça alterações na configuração de f
 
 >[!CAUTION]
 >
->Ao alterar a configuração de **Minimizar** ou **Gzip** também será necessário excluir o conteúdo de `/var/clientlibs`. Esta é uma versão em cache das clientlibs e será recriada quando a próxima solicitação for feita.
+>Ao alterar a configuração de **Minimizar** ou **Gzip** também será necessário excluir o conteúdo do cache clientlibs. Consulte esta [Artigo da Base de conhecimento](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) para obter detalhes.
 
 >[!NOTE]
 >
