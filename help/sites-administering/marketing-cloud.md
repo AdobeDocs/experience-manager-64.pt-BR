@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '888'
 ht-degree: 4%
 
 ---
@@ -105,6 +105,6 @@ Para obter informações sobre como o Adobe Experience Manager se integra ao Ado
 
 Saiba mais sobre o Adobe Experience Manager e o Livefyre:
 
-* [Introdução ao Livefyre](https://answers.livefyre.com/developers/getting-started)
+* [Introdução ao Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
-* [Livefyre e Adobe Experience Manager](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
+* [Livefyre e Adobe Experience Manager](/help/sites-administering/livefyre.md)

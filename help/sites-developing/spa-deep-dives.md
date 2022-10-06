@@ -1,30 +1,22 @@
 ---
-title: SPA Deep Dives
+title: Aprofundamentos de SPA
 seo-title: SPA Deep Dives
-description: O AEM SPA Editor SDK foi apresentado em uma série de sessões AEM Gems. Hospedada pelos engenheiros da Adobe, essa série pode servir como um excelente guia para obter um entendimento mais profundo do SDK do editor SPA AEM em um nível baixo, hospedado pelos engenheiros da Adobe.
-seo-description: O AEM SPA Editor SDK foi apresentado em uma série de sessões AEM Gems. Hospedada pelos engenheiros da Adobe, essa série pode servir como um excelente guia para obter um entendimento mais profundo do SDK do editor SPA AEM em um nível baixo, hospedado pelos engenheiros da Adobe.
-uuid: 326ac431-79d4-48ed-aa48-0c9bfdbd23d0
-contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: spa
-content-type: reference
-discoiquuid: 48ab972b-ca26-40d1-b89e-86124ceb173b
-translation-type: tm+mt
-source-git-commit: 4e1c453e6a8a521b0ae0f0eddfcf80b882d99342
+description: O SDK do Editor de SPA AEM foi apresentado em uma série de sessões AEM Gems. Hospedada pelos engenheiros de Adobe, essa série pode servir como um excelente guia para obter uma compreensão mais profunda do SDK do Editor de SPA AEM em um nível baixo, hospedado pelos engenheiros de Adobe.
+seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
+exl-id: 4724e321-1c1b-4f2f-b867-5d9f7e8b2cfa
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 2%
 
 ---
 
+# Aprofundamentos de SPA{#spa-deep-dives}
 
-# SPA Deep Dives{#spa-deep-dives}
+O SDK do Editor de SPA AEM foi apresentado em uma série de sessões AEM Gems. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de aprofundamentos técnicos fornecidos por especialistas em Adobe. Hospedada pelos engenheiros de Adobe, essa série pode servir como um excelente guia para obter uma compreensão mais profunda do SDK do Editor de SPA AEM em um nível baixo.
 
-O AEM SPA Editor SDK foi apresentado em uma série de sessões AEM Gems. [A Adobe Experience Manager ](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) Gemsis apresenta uma série de soluções técnicas oferecidas por especialistas em Adobe. Hospedada pelos engenheiros da Adobe, essa série pode servir como um excelente guia para obter uma compreensão mais profunda do SDK do editor SPA AEM em um nível baixo.
+## Sessões Do Gem {#gem-sessions}
 
-## Sessões Gem {#gem-sessions}
-
-* **[AEM SPA Editor](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html) [](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)**  - uma visão geral do EditorSPA para iniciantes. Se começarmos com SPA em AEM, start aqui.
-* **[SPA Editor SDK Deep Dive - Parte 1 - Reagir](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)**  - Um aprofundamento no desenvolvimento de aplicativos de página única que podem ser criados usando o Editor de página AEM. Abrangendo considerações e recomendações sobre a estrutura de projetos, revisão de todas as camadas que compõem a arquitetura de um projeto, a função dos componentes AEM e SPA, estrutura e campos-chave JSON do objeto modelo e muito mais!
-* **[SPA Editor SDK Deep Dive - Parte 2 - Angular](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)**  - Um aprofundamento no desenvolvimento de Aplicativos de Página Única que podem ser criados usando o Editor de Página AEM. Abrangendo considerações e recomendações sobre a estrutura de projetos, revisão de todas as camadas que compõem a arquitetura de um projeto, a função dos componentes AEM e SPA, estrutura e campos-chave JSON do objeto modelo e muito mais!
-
+* **[Editor de SPA AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2018/aem-spa-editor.html)** - Visão geral do Editor de SPA. Se estiver apenas começando com SPA em AEM, comece aqui.
+* **[Aprofundamento do SDK do Editor do SPA - Parte 1 - React](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2018/spa-editor-sdk-deep-dive-react.html)** - Um aprofundamento sobre o desenvolvimento de Aplicativos de página única que podem ser criados com o Editor de páginas AEM. Abrangendo considerações e recomendações sobre a estrutura dos projetos, revise todas as camadas que compõem a arquitetura de um projeto, a função dos componentes de AEM e SPA, a estrutura e os campos JSON-chave do objeto de modelo e muito mais!
+* **[Aprofundamento do SDK do Editor do SPA - Parte 2 - Angular](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2018/spa-editor-sdk-deep-dive-angular.html)** - Um aprofundamento sobre o desenvolvimento de Aplicativos de página única que podem ser criados com o Editor de páginas AEM. Abrangendo considerações e recomendações sobre a estrutura dos projetos, revise todas as camadas que compõem a arquitetura de um projeto, a função dos componentes de AEM e SPA, a estrutura e os campos JSON-chave do objeto de modelo e muito mais!
