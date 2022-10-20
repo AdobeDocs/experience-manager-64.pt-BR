@@ -9,7 +9,7 @@ user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 47%
+ht-degree: 49%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 47%
    + [Perfis de vídeo do Dynamic Media](video-profiles.md)
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
-   + [Imagem inteligente com relação de pixels do dispositivo no lado do cliente](client-side-dpr.md)
+   + [Imagem inteligente com proporção de pixels do dispositivo no lado do cliente](client-side-dpr.md)
    + [Vídeo](s7-video.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entrega de ativos do Dynamic Media](delivering-dynamic-media-assets.md)
