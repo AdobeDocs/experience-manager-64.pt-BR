@@ -1,60 +1,59 @@
 ---
-title: Selecionar dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms
-seo-title: Selecionar dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms
-description: 'Saiba como selecionar um usuário ou grupo para um fluxo de trabalho do AEM Forms no tempo de execução. '
-seo-description: 'Saiba como selecionar um usuário ou grupo para um fluxo de trabalho do AEM Forms no tempo de execução. '
+title: Selecione dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms
+seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
+description: Saiba como selecionar um usuário ou grupo para um fluxo de trabalho do AEM Forms no tempo de execução.
+seo-description: Learn how to select a user or group for an AEM Forms workflow at the runtime.
 uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
-translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
 
-
-# Selecione dinamicamente um usuário ou grupo para as etapas do fluxo de trabalho centradas no AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Selecione dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Saiba como selecionar um usuário ou grupo para um fluxo de trabalho do AEM Forms no tempo de execução.
 
-Em organizações grandes, há requisitos para selecionar dinamicamente usuários para um processo. Por exemplo, selecionar um agente de campo para servir um cliente com base na proximidade do agente com o cliente. Nesse cenário, o agente é selecionado dinamicamente.
+Em grandes organizações, há requisitos para selecionar dinamicamente usuários para um processo. Por exemplo, selecionar um agente de campo para servir um cliente com base na proximidade do agente com o cliente. Nesse cenário, o agente é selecionado dinamicamente.
 
-Atribua etapas de tarefa e Adobe Sign de [workflows centrados na Forms em OSGi](/help/forms/using/aem-forms-workflow.md) fornece opções para selecionar dinamicamente um usuário. Você pode usar pacotes ECMAScript ou OSGi para selecionar dinamicamente um destinatário para a etapa Atribuir Tarefa ou para selecionar signatários para a etapa Assinar Documento.
+Atribua etapas da tarefa e do Acrobat Sign de [Fluxos de trabalho centrados na Forms no OSGi](/help/forms/using/aem-forms-workflow.md) fornecer opções para selecionar dinamicamente um usuário. Você pode usar pacotes ECMAScript ou OSGi para selecionar dinamicamente um destinatário para a etapa Atribuir tarefa ou para selecionar signatários para a etapa Assinar documento.
 
 ## Use o ECMAScript para selecionar dinamicamente um usuário ou grupo {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-O ECMAScript é uma linguagem de script. É usado para aplicativos de servidor e scripts do cliente. Execute as seguintes etapas para selecionar dinamicamente um usuário ou grupo usando o ECMAScript:
+O ECMAScript é uma linguagem de script. Ele é usado para aplicativos de servidor e scripts do lado do cliente. Execute as seguintes etapas para selecionar dinamicamente um usuário ou grupo usando o ECMAScript:
 
 1. Abra o CRXDE Lite. O URL é `https://[server]:[port]/crx/de/index.jsp`
-1. Crie um arquivo com extensão .ecma no seguinte caminho. Se o caminho (estrutura de nó) não existir, crie-o:
+1. Crie um arquivo com a extensão .ecma no seguinte caminho. Se o caminho (estrutura do nó) não existir, crie-o:
 
-   * (Caminho para a etapa Atribuir Tarefa) `/apps/fd/dashboard/scripts/participantChooser`
+   * (Etapa Caminho para atribuição de tarefa) `/apps/fd/dashboard/scripts/participantChooser`
    * (Etapa Caminho para assinatura) `/apps/fd/workflow/scripts/adobesign`
 
 1. Adicione o ECMAScript, que tem a lógica de selecionar dinamicamente um usuário, ao arquivo .ecma. Clique em **[!UICONTROL Salvar tudo]**.
 
-   Para obter exemplos de scripts, consulte [Exemplos de ECMAScripts para selecionar dinamicamente um usuário ou um grupo](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
+   Para obter exemplos de scripts, consulte [Exemplos de ECMAScripts para selecionar dinamicamente um usuário ou grupo](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
 1. Adicione o nome de exibição do script. Esse nome é exibido nas etapas do fluxo de trabalho. Para especificar o nome:
 
-   1. Expanda o nó de script, clique com o botão direito do mouse no nó **[!UICONTROL jcr:content]** e clique em **[!UICONTROL Mixins]**.
-   1. Adicione a propriedade `mix:title` na caixa de diálogo Editar misturas e clique em **OK**.
+   1. Expanda o nó do script, clique com o botão direito do mouse no nó **[!UICONTROL jcr:content]** e clique em **[!UICONTROL Misturas]**.
+   1. Adicione o `mix:title` na caixa de diálogo Editar misturas e clique em **OK**.
    1. Adicione a seguinte propriedade ao nó jcr:content do script:
 
       | Nome | Tipo | Valor |
       |--- |--- |--- |
-      | jcr:title | Sequência de caracteres | Especifique o nome do script. Por exemplo, escolha o agente de campo mais próximo. Esse nome é exibido nas etapas Atribuir Tarefa e Assinar Documento. |
+      | jcr:title | Sequência de caracteres | Especifique o nome do script. Por exemplo, escolha o agente de campo mais próximo. Esse nome é exibido nas etapas Atribuir tarefa e Assinar documento . |
 
-   1. Clique em **Salvar tudo**. O script fica disponível para seleção nos componentes do Fluxo de trabalho AEM.
+   1. Clique em **Salvar tudo**. O script fica disponível para seleção nos componentes AEM fluxo de trabalho.
 
       ![script](assets/script.png)
 
-### Amostra de ECMAScripts para escolher dinamicamente um usuário ou um grupo {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
+### Exemplos de ECMAScripts para escolher dinamicamente um usuário ou grupo {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
-A amostra a seguir do ECMAScript seleciona dinamicamente um destinatário para a etapa Atribuir Tarefa. Neste script, um usuário é selecionado com base no caminho da carga. Antes de usar esse script, verifique se todos os usuários mencionados no script existem no AEM. Se os usuários mencionados no script não existirem no AEM, o processo relacionado poderá falhar.
+A amostra de ECMAScript a seguir seleciona dinamicamente um destinatário para a etapa Atribuir tarefa . Neste script, um usuário é selecionado com base no caminho da carga útil. Antes de usar esse script, verifique se todos os usuários mencionados no script existem no AEM. Se os usuários mencionados no script não existirem no AEM, o processo relacionado poderá falhar.
 
 ```
 function getParticipant() {
@@ -74,11 +73,11 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-A amostra a seguir do ECMAScript seleciona dinamicamente um destinatário para a etapa Adobe Sign. Antes de usar o script abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no script estão corretas. Se as informações do usuário mencionadas no script estiverem incorretas, o processo relacionado poderá falhar.
+A amostra de ECMAScript a seguir seleciona dinamicamente um destinatário para a etapa do Acrobat Sign. Antes de usar o script abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no script estão corretas. Se as informações do usuário mencionadas no script estiverem incorretas, o processo relacionado poderá falhar.
 
 >[!NOTE]
 >
->Ao usar o ECMAScript para Adobe Sign, o script deve estar localizado no repositório crx em /apps/fd/workflow/scripts/adobesign/, e deve ter uma função chamada getAdobeSignRecipients para retornar uma lista dos usuários.
+>Ao usar o ECMAScript para Acrobat Sign, o script deve estar localizado em crx-repository em /apps/fd/workflow/scripts/adobesign/, e deve ter uma função chamada getAdobeSignRecipients para retornar uma lista dos usuários.
 
 ```
 function getAdobeSignRecipients() {
@@ -115,15 +114,15 @@ function getAdobeSignRecipients() {
 }
 ```
 
-## Use a interface Java para escolher dinamicamente um usuário ou grupo {#use-java-interface-to-dynamically-choose-a-user-or-group}
+## Usar interface Java para escolher dinamicamente um usuário ou grupo {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Você pode usar a interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou grupo para as etapas de Tarefa Adobe Sign e Atribuir. Você pode criar um pacote OSGi que usou a interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implantá-la no servidor AEM Forms. Ela disponibiliza a opção para seleção nos componentes Atribuir Tarefa e Adobe Sign do Fluxo de trabalho AEM.
+Você pode usar o [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java para escolher dinamicamente um usuário ou grupo para as etapas do Acrobat Sign e Atribuir tarefa. Você pode criar um pacote OSGi que usou o [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java e implante-a no servidor da AEM Forms. Ela disponibiliza a opção para seleção nos componentes Atribuir tarefa e Acrobat Sign do Fluxo de trabalho AEM.
 
-Você precisa de [SDK do AEM Forms Client](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) arquivos jar e [arquivos jar granite](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto de pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
+Você precisa [SDK do cliente da AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) jar e [jarro de granito](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) arquivos para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
-1. Abra o Eclipse IDE. Navegue até **[!UICONTROL Arquivo]**> **[!UICONTROL Novo projeto]**.
-1. Na tela Selecionar um assistente, selecione **[!UICONTROL Projeto Maven]** e clique em **[!UICONTROL Próximo]**.
-1. No projeto New Maven, mantenha os padrões e clique em **[!UICONTROL Next]**. Selecione um arquétipo e clique em **[!UICONTROL Próximo]**. Por exemplo, maven-archetype-quickstart. Especifique **[!UICONTROL Id do Grupo]**, **[!UICONTROL Id do Artefato]**, **[!UICONTROL version]** e **[!UICONTROL package]** para o projeto e clique em **[!UICONTROL Concluir]**. O projeto é criado.
+1. Abra o Eclipse IDE. Navegar para **[!UICONTROL Arquivo]**> **[!UICONTROL Novo projeto]**.
+1. Na tela Selecionar um assistente , selecione **[!UICONTROL Projeto Maven]** e clique em **[!UICONTROL Próximo]**.
+1. No projeto Novo Maven, mantenha os padrões e clique em **[!UICONTROL Próximo]**. Selecione um arquétipo e clique em **[!UICONTROL Próximo]**. Por exemplo, maven-archetype-quickstart. Especificar **[!UICONTROL ID do Grupo]**, **[!UICONTROL Id Do Artefato]**, **[!UICONTROL version]** e **[!UICONTROL pacote]** para o projeto e clique em **[!UICONTROL Concluir]**. O projeto é criado.
 1. Abra o arquivo pom.xml para edição e substitua todo o conteúdo do arquivo pelo seguinte:
 
    ```xml
@@ -226,18 +225,18 @@ Você precisa de [SDK do AEM Forms Client](https://helpx.adobe.com/br/aem-forms/
    </project>
    ```
 
-1. Adicione o código fonte que usa a interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou grupo para a etapa Atribuir tarefa. Para obter exemplos de código, consulte [Exemplo para escolher dinamicamente um usuário ou grupo usando a interface Java](#-sample-scripts-for).
+1. Adicionar código-fonte que usa [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java para escolher dinamicamente um usuário ou grupo para a etapa Atribuir tarefa . Para obter o código de amostra, consulte [Exemplo para escolher dinamicamente um usuário ou grupo usando a interface Java](#-sample-scripts-for).
 1. Abra um prompt de comando e navegue até o diretório que contém o projeto do pacote OSGi. Use o seguinte comando para criar o pacote OSGi:
 
    `mvn clean install`
 
-1. Carregue o pacote em um servidor AEM Forms. Você pode usar AEM Gerenciador de pacotes para importar o pacote para o servidor AEM Forms.
+1. Faça upload do pacote para um servidor AEM Forms. Você pode usar AEM Gerenciador de pacotes para importar o pacote para o servidor AEM Forms.
 
-Depois que o pacote é importado, a opção de escolher a interface Java para selecionar dinamicamente um usuário ou grupo fica disponível para as etapas de Tarefa do Adobe Sign e Atribuir.
+Depois que o pacote é importado, a opção para escolher a interface Java para selecionar dinamicamente um usuário ou um grupo fica disponível nas etapas de Acrobat Sign e Atribuir tarefa.
 
-### Amostra do código Java para escolher dinamicamente um usuário ou um grupo {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
+### Exemplo de código Java para escolher dinamicamente um usuário ou grupo {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-O código de amostra a seguir escolhe dinamicamente um destinatário para a etapa Adobe Sign. Use o código em um pacote OSGi. Antes de usar o código listado abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no código estão corretas. Se as informações do usuário mencionadas no código estiverem incorretas, o processo relacionado poderá falhar.
+O código de amostra a seguir escolhe dinamicamente um destinatário para a etapa do Acrobat Sign. Você usa o código em um pacote OSGi. Antes de usar o código listado abaixo, verifique se as informações do usuário (endereços de email e números de telefone) mencionadas no código estão corretas. Se as informações do usuário mencionadas no código estiverem incorretas, o processo relacionado poderá falhar.
 
 ```java
 /*************************************************************************
@@ -350,4 +349,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-

@@ -8,7 +8,7 @@ user-guide-title: Guia do Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 4%
@@ -119,7 +119,7 @@ ht-degree: 4%
       + [Fluxos de trabalho Forms JEE](using/forms-workflow-jee-handling-user-data.md)
       + [Portal do Forms](using/forms-portal-handling-user-data.md)
       + [Gerenciamento de correspondência](using/correspondence-management-handling-user-data.md)
-      + [Integração com o Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+      + [Integração com o Acrobat Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Segurança de documentos](/help/forms/using/document-security-handling-user-data.md)
    + Otimizar o ambiente AEM Forms {#hardening-aem-forms-environment}
       + [Otimização e proteção de formulários AEM no ambiente OSGi](using/hardening-securing-aem-forms-environment.md)
@@ -161,7 +161,7 @@ ht-degree: 4%
 + Adaptive Forms - Criação avançada {#adaptive-forms-advanced-authoring}
    + [Criação de formulários adaptáveis usando o esquema JSON](using/adaptive-form-json-schema-form-model.md)
    + [Criação de formulários adaptáveis usando o Esquema XML](using/adaptive-form-xml-schema-form-model.md)
-   + [Uso do Adobe Sign em um formulário adaptável](using/working-with-adobe-sign.md)
+   + [Uso do Acrobat Sign em um formulário adaptável](using/working-with-adobe-sign.md)
    + [Criação e uso de temas](using/themes.md)
    + [Editor de regras de formulários adaptáveis](using/rule-editor.md)
    + [API para chamar o serviço de modelo de dados de formulário a partir de formulários adaptáveis](using/invoke-form-data-model-services.md)
@@ -181,7 +181,7 @@ ht-degree: 4%
    + [Automatizar o teste de formulários adaptáveis](using/calvin.md)
    + [Construção de estilo para formulários adaptáveis](using/styling-constructs-adaptive-forms.md)
    + [Sincronização do Adaptive Forms com modelos de formulário XFA](using/synchronizing-adaptive-forms-xfa.md)
-   + [Integrar o Adobe Sign ao AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
+   + [Integrar o Acrobat Sign ao AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Criar e gerenciar revisões de ativos nos formulários](using/create-reviews-forms.md)
    + [Mensagens de erro de validação padrão para formulários adaptáveis](using/standard-validation-error-messages-adaptive-forms.md)
 + Comunicações interativas {#interactive-communications}

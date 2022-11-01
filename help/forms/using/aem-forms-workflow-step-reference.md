@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Etapas do Forms Workflow {#forms-workflow-steps}
 
-As etapas do fluxo de trabalho do Forms executam operações específicas do AEM Forms em um fluxo de trabalho AEM. Essas etapas permitem que você crie rapidamente formulários adaptáveis com base no fluxo de trabalho centrado no Forms no OSGi. Esses fluxos de trabalho podem ser usados para desenvolver fluxos de trabalho básicos de revisão e aprovação, internos e outros processos de negócios por firewall. Você também pode usar as etapas do Forms Workflow para iniciar serviços de documento, integrar com o fluxo de trabalho de assinatura do Adobe Sign e executar outras operações do AEM Forms. Você precisa [Complemento do AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) para usar essas etapas em um workflow.
+As etapas do fluxo de trabalho do Forms executam operações específicas do AEM Forms em um fluxo de trabalho AEM. Essas etapas permitem que você crie rapidamente formulários adaptáveis com base no fluxo de trabalho centrado no Forms no OSGi. Esses fluxos de trabalho podem ser usados para desenvolver fluxos de trabalho básicos de revisão e aprovação, internos e outros processos de negócios por firewall. Você também pode usar as etapas do Forms Workflow para iniciar serviços de documento, integrar com o fluxo de trabalho de assinatura do Acrobat Sign e executar outras operações do AEM Forms. Você precisa [Complemento do AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) para usar essas etapas em um workflow.
 
 ## Atribuir etapa da tarefa {#assign-task-step}
 
@@ -214,11 +214,11 @@ A etapa Invocar serviço de modelo de dados de formulário tem os campos listado
 
 ## Etapa Assinar documento {#sign-document-step}
 
-A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A etapa Assinar documento tem as seguintes propriedades:
+A etapa Assinar documento permite usar o Acrobat Sign para assinar documentos. A etapa Assinar documento tem as seguintes propriedades:
 
 * **Nome do Contrato:** Especifique o título do contrato. O nome do contrato se torna parte do assunto e do texto do corpo do email enviado aos signatários.
 * **Localidade:** Especifique o idioma para as opções de email e verificação.
-* **Configuração da Adobe Sign Cloud**: Escolha uma Configuração da Adobe Sign Cloud. Se você não tiver configurado o Adobe Sign para AEM Forms, consulte [Integrar o Adobe Sign ao AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Configuração da Acrobat Sign Cloud**: Escolha uma Configuração da Acrobat Sign Cloud. Se você não tiver configurado o Acrobat Sign para AEM Forms, consulte [Integrar o Acrobat Sign ao AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Documento a assinar:** Você pode escolher um documento de um local relativo à carga, usar carga como documento ou especificar um caminho absoluto do documento.
 * **Caminho do anexo de entrada:** Selecione um anexo. Esses anexos estão incluídos no Documento de assinatura. Você pode manter os anexos em um local relativo à carga ou especificar um caminho absoluto dos anexos.
@@ -234,8 +234,8 @@ A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A e
 * **Selecionar Assinantes:** Especifique o método para escolher os signatários do documento. Você pode atribuir dinamicamente o fluxo de trabalho a um usuário ou grupo ou adicionar manualmente detalhes de um assinante.
 * **Script ou serviço para selecionar signatários:** A opção estará disponível somente se a opção Dinamicamente estiver selecionada no campo Selecionar signatários . Você pode especificar um ECMAScript ou um serviço para escolher assinantes e opções de verificação para um documento.
 
-* **Detalhes do assinante:** A opção só estará disponível se a opção Manualmente estiver selecionada no campo Selecionar signatários . Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação de duas etapas, verifique se a opção de verificação correspondente está habilitada para a conta do Adobe Sign configurada.
-* **Variável de status:** Um documento habilitado para Adobe Sign armazena o status de assinatura do documento em uma variável. Especifique o nome da variável de status (adobeSignStatus). Uma variável de status de uma instância está disponível no CRXDE em /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contém o status de uma variável.
+* **Detalhes do assinante:** A opção só estará disponível se a opção Manualmente estiver selecionada no campo Selecionar signatários . Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação de duas etapas, verifique se a opção de verificação correspondente está habilitada para a conta do Acrobat Sign configurada.
+* **Variável de status:** Um documento habilitado para Acrobat Sign armazena o status de assinatura do documento em uma variável. Especifique o nome da variável de status (adobeSignStatus). Uma variável de status de uma instância está disponível no CRXDE em /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contém o status de uma variável.
 * **Caminho do Documento Assinado:** Especifique o local para manter documentos assinados. Você pode optar por substituir o arquivo de carga útil ou colocar o documento assinado em um local dentro do diretório de carga útil.
 
 ## Etapas dos Serviços de documento {#document-services-steps}
