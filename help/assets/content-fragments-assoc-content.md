@@ -1,21 +1,21 @@
 ---
 title: Conteúdo associado
-seo-title: Conteúdo associado
+seo-title: Associated Content
 description: O conteúdo associado fornece a conexão para que os ativos possam ser (opcionalmente) usados com o fragmento quando ele for adicionado a uma página de conteúdo.
-seo-description: O conteúdo associado fornece a conexão para que os ativos possam ser (opcionalmente) usados com o fragmento quando ele for adicionado a uma página de conteúdo.
+seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 uuid: 1bc1eefa-7a7c-43be-a8a8-0d153d60c5c4
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
-feature: Fragmentos de conteúdo
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 21%
+source-wordcount: '229'
+ht-degree: 54%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 21%
 
 >[!CAUTION]
 >
->Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação do [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
+>Algumas funcionalidades do Fragmento de conteúdo exigem a aplicação de [AEM 6.4 Service Pack 2 (6.4.2.0) ou posterior](/help/release-notes/sp-release-notes.md).
 
-O conteúdo associado fornece a conexão para que os ativos (ou seja,) possam ser usados (opcionalmente) com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade [fornecendo um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
+O conteúdo associado fornece a conexão para que os ativos (ou seja,) possam ser usados (opcionalmente) com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade ao [fornecer um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 
@@ -33,9 +33,9 @@ O conteúdo associado fornece a conexão para que os ativos (ou seja,) possam se
 >
 >Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
-Para fazer a associação, primeiro é necessário [adicionar o(s) ativo(s) de mídia a uma coleção](managing-collections-touch-ui.md#adding-assets-to-a-collection). Feito isso, você pode:
+Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](managing-collections-touch-ui.md#adding-assets-to-a-collection). Feito isso, você pode:
 
-1. Abra o fragmento e selecione **[!UICONTROL Conteúdo associado]** no painel lateral.
+1. Abrir o fragmento e selecionar **[!UICONTROL Conteúdo associado]** no painel lateral.
 
    ![chlimage_1-207](assets/chlimage_1-207.png)
 
@@ -54,7 +54,7 @@ Para fazer a associação, primeiro é necessário [adicionar o(s) ativo(s) de m
 
 Depois de associar uma coleção, você pode:
 
-* **** Remova a associação.
-* **Adicione** Ativos à coleção.
-* Selecione um ativo para ação adicional.
-* Edite o ativo.
+* **Remover** a associação.
+* **Adicionar ativos** à coleção.
+* Selecionar um ativo para realizar mais ações.
+* Editar o ativo.
