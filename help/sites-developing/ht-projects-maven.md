@@ -2,10 +2,10 @@
 title: Como criar projetos AEM usando o Apache Maven
 description: Este documento descreve como configurar um projeto de AEM com base no Apache Maven
 exl-id: 6ae0e387-468b-4cea-9e3f-0816d67b7621
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 12%
+source-wordcount: '147'
+ht-degree: 10%
 
 ---
 
@@ -17,8 +17,8 @@ O AEM 6.4 segue as práticas recomendadas mais recentes para o gerenciamento de 
 >
 >Para obter mais detalhes, consulte:
 >
->* O artigo [AEM Estrutura do projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) na documentação as a Cloud Service AEM para saber como estruturar projetos AEM modernos.
->* A documentação do [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) para saber como iniciar um novo projeto AEM usando o arquétipo.
->* O artigo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) na documentação as a Cloud Service AEM sobre como implantar aplicativos AEM.
+>* O [Estrutura do projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) artigo na documentação AEM as a Cloud Service sobre como estruturar projetos AEM modernos.
+>* O [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) documentação sobre como iniciar um novo projeto de AEM usando o arquétipo.
+>* O [Plug-in Adobe Content Package Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) artigo na documentação AEM as a Cloud Service sobre como implantar aplicativos AEM.
 >
 >Os três documentos são aplicáveis ao AEM 6.4.

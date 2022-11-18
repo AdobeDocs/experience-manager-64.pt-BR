@@ -1,24 +1,23 @@
 ---
-title: Guia do usuário dos recursos AEM 6.4
-seo-title: Guia do usuário dos recursos AEM 6.4
+title: Guia do usuário dos recursos do AEM 6.4
+seo-title: AEM 6.4 Capabilities User Guide
 description: Uma visão geral dos recursos essenciais do AEM 6.4
-seo-description: Uma visão geral dos recursos essenciais do AEM 6.4
+seo-description: An overview of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 45%
+source-wordcount: '123'
+ht-degree: 60%
 
 ---
 
-
-# AEM 6.4 Guias do Usuário de Recursos {#aem-64-capabilities-user-guides}
+# AEM 6.4 Guias do usuário de recursos {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4](/help/sites-deploying/home.md), incluindo nossa implantação em nuvem dos Serviços gerenciados da Adobe.
+[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.4](/help/sites-deploying/home.md), incluindo a implantação da nuvem do Adobe Managed Services.
 
 [Saiba como gerenciar um projeto do AEM](/help/managing/home.md).
 
@@ -28,7 +27,7 @@ ht-degree: 45%
 
 [Saiba mais sobre como administrar o AEM](/help/sites-administering/home.md).
 
-## Ativos AEM {#aem-assets}
+## AEM Assets {#aem-assets}
 
 [Crie, gerencie, entregue e otimize ativos digitais.](/help/assets/home.md)
 
@@ -38,15 +37,11 @@ ht-degree: 45%
 
 ## AEM Screens {#aem-screens}
 
-[Saiba mais sobre a solução de sinalização digital para publicar experiências dinâmicas e interativas.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Saiba mais sobre a solução de sinalização digital para publicar experiências dinâmicas e interativas.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR)
 
 ## AEM Communities {#aem-communities}
 
 [Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.](/help/communities/home.md)
-
-## AEM Livefyre {#aem-livefyre}
-
-[Compartilhe conteúdo gerado pelo usuário com AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 

@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 exl-id: 46ad04b1-a660-4cdd-8649-5cdb00dbcae3
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 58%
+source-wordcount: '923'
+ht-degree: 60%
 
 ---
 
@@ -114,9 +114,9 @@ Consulte [AEM Mobile - Disponibilidade para proteção e privacidade de dados](/
 Essas integrações do Adobe Experience Manager estão com serviços prontos para proteção e privacidade de dados (por exemplo, GDPR ou CCPA). Nenhum dado pessoal do Adobe Target ou Adobe Analytics é armazenado no AEM em relação às integrações.
 Para obter mais informações, consulte:
 
-* [Adobe Target - Visão geral sobre a privacidade](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target - Visão geral sobre a privacidade](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html?lang=pt-BR)
 
-* [Fluxo de trabalho da Privacidade de dados do Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
+* [Fluxo de trabalho da Privacidade de dados do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=pt-BR)
 
 ## AEM Communities {#aem-communities}
 

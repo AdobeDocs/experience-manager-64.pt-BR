@@ -1,8 +1,8 @@
 ---
 title: Serviço de gerenciamento de usuários e UGC no AEM Communities
-seo-title: Serviço de gerenciamento de usuários e UGC no AEM Communities
-description: 'Use APIs para excluir e exportar em massa conteúdo gerado pelo usuário e desative a conta do usuário. '
-seo-description: 'Use APIs para excluir e exportar em massa conteúdo gerado pelo usuário e desative a conta do usuário. '
+seo-title: User and UGC Management Service in AEM Communities
+description: Use APIs para excluir e exportar em massa conteúdo gerado pelo usuário e desative a conta do usuário.
+seo-description: Use APIs to bulk delete and bulk export user generated content, and disable user account.
 uuid: f4663825-eac8-4ef5-8253-46875e0cd71d
 contentOwner: mgulati
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 0%
 >
 >O GDPR é usado como exemplo nas seções abaixo, mas os detalhes cobertos são aplicáveis a todas as regulamentações de proteção e privacidade de dados; como GDPR, CCPA etc.
 
-O AEM Communities expõe as APIs prontas para uso para gerenciar perfis de usuários e conteúdo gerado por usuários (UGC) em massa. Depois de habilitado, o serviço **UserUgcManagement** permite que usuários privilegiados (administradores de comunidade e moderadores) desabilitem perfis de usuário e excluam ou exportem em massa o UGC para usuários específicos. Essas APIs também permitem que controladores e processadores de dados do cliente cumpram os Regulamentos Gerais de Proteção de Dados (GDPR) da União Europeia e outras regras de privacidade inspiradas no GDPR.
+O AEM Communities expõe as APIs prontas para uso para gerenciar perfis de usuários e conteúdo gerado por usuários (UGC) em massa. Depois de habilitado, a variável **UserUgcManagement** permite que usuários privilegiados (administradores de comunidade e moderadores) desabilitem perfis de usuário e excluam em massa ou exportem em massa o UGC para usuários específicos. Essas APIs também permitem que controladores e processadores de dados do cliente cumpram os Regulamentos Gerais de Proteção de Dados (GDPR) da União Europeia e outras regras de privacidade inspiradas no GDPR.
 
-Para obter mais informações, consulte a página [GDPR no Centro de privacidade do Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obter mais informações, consulte o [Página do GDPR no Centro de privacidade do Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Se você configurou [Adobe Analytics no site AEM Communities](analytics.md), os dados do usuário capturados são enviados para o servidor Adobe Analytics. O Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do usuário, além de estar em conformidade com o GDPR. Para obter mais informações, consulte [Enviar solicitações de acesso e exclusão](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>Se você tiver configurado [Adobe Analytics no AEM Communities](analytics.md) no site, os dados do usuário capturados são enviados para o servidor do Adobe Analytics. O Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do usuário, além de estar em conformidade com o GDPR. Para obter mais informações, consulte [Enviar solicitações de acesso e de exclusão](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
-Para colocar essas APIs em uso, é necessário ativar o endpoint `/services/social/ugcmanagement` ativando o serviço UserUgcManagement. Para ativar esse serviço, instale o [servlet de amostra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponível em [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Em seguida, pressione o endpoint na instância de publicação do site das comunidades com parâmetros apropriados usando uma solicitação http, semelhante ao seguinte:
+Para usar essas APIs, é necessário ativar a variável `/services/social/ugcmanagement` endpoint ativando o serviço UserUgcManagement. Para ativar esse serviço, instale o [servlet de amostra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponível em [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Em seguida, pressione o endpoint na instância de publicação do site das comunidades com parâmetros apropriados usando uma solicitação http, semelhante ao seguinte:
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
@@ -53,7 +53,7 @@ Por exemplo, para exportar o UGC de um usuário chamado Weston McCall, que usa w
 
 ## Excluir o UGC de um usuário {#delete-the-ugc-of-a-user}
 
-**deleteUserUgc(ResourceResolver resourceResolver, usuário String)** ajuda a excluir todo o UGC de um usuário do sistema.
+**deleteUserUgc(ResourceResolver resourceResolver, String user)** ajuda a excluir todo o UGC de um usuário do sistema.
 
 * **usuário**: ID autorizável do usuário.
 

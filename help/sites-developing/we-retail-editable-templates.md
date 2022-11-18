@@ -1,22 +1,21 @@
 ---
 title: Tentando modelos editáveis no We.Retail
-seo-title: Tentando modelos editáveis no We.Retail
+seo-title: Trying out Editable Templates in We.Retail
 description: Tentando modelos editáveis no We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 268edb9b-0f52-44c4-a75c-d9dfe39e7d17
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 12%
+source-wordcount: '481'
+ht-degree: 11%
 
 ---
-
 
 # Tentando modelos editáveis no We.Retail{#trying-out-editable-templates-in-we-retail}
 
@@ -24,14 +23,14 @@ Com os modelos editáveis, criar e manter modelos não é mais uma tarefa soment
 
 Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo que não desenvolvedores adaptem e personalizem os modelos.
 
-## Tentando sair {#trying-it-out}
+## Tentando {#trying-it-out}
 
 1. Edite a página Equipamento da ramificação de idioma principal.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/pt/equipment.html
 
 1. Observe que o seletor de modo não oferece mais um modo Design. Todas as páginas do We.Retail são baseadas em modelos editáveis e, para alterar o design de modelos editáveis, elas devem ser editadas no editor de modelos.
-1. No menu **Page information** selecione **Edit Template**.
+1. No **Informações da página** selecionar menu **Editar modelo**.
 1. Agora você está editando o modelo Página inicial .
 
    O modo de estrutura da página permite modificar a estrutura do modelo. Isso inclui, por exemplo, os componentes permitidos no contêiner de layout.
@@ -68,13 +67,12 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. De volta ao editor de modelo, você pode usar o seletor de modo para alterar para o modo **Conteúdo inicial** para definir qual conteúdo é necessário na página.
+1. De volta ao editor de modelos, você pode usar o seletor de modo para alterar para **Conteúdo inicial** para definir qual conteúdo é necessário na página.
 
-   **** O modo Layout pode ser usado como em uma página normal para definir o layout do modelo.
+   **Layout** pode ser usado como em uma página normal para definir o layout do modelo.
 
 ## Mais informações {#more-information}
 
-Para obter mais informações, consulte o documento de criação [Criação de modelos de página](/help/sites-authoring/templates.md) ou o documento do desenvolvedor Página [Modelos - Editável](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
+Para obter mais informações, consulte o documento de criação [Criação de modelos de página](/help/sites-authoring/templates.md) ou a página do documento do desenvolvedor [Modelos - Editáveis](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
 
-Você também pode querer investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvimento de componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.
-
+Você também pode querer investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvimento dos componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.

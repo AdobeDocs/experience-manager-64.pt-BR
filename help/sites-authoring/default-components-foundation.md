@@ -1,8 +1,8 @@
 ---
 title: Componentes fundamentais
-seo-title: Componentes fundamentais
+seo-title: Foundation Components
 description: Componentes fundamentais
-seo-description: 'null'
+seo-description: null
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c85e442a-eb24-4eda-a49b-089e5988150d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '6671'
-ht-degree: 79%
+source-wordcount: '6642'
+ht-degree: 78%
 
 ---
-
 
 # Componentes fundamentais{#foundation-components}
 
@@ -26,11 +25,11 @@ ht-degree: 79%
 >
 >Esta seção aborda os componentes fundamentais, que estão disponíveis com o AEM para várias versões e estão disponíveis prontamente em uma configuração padrão do AEM. No entanto, vários componentes fundamentais foram descontinuados com o AEM 6.4.
 >
->O Adobe recomenda o aproveitamento dos [componentes principais mais modernos e extensíveis](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). Eles fazem parte do [conteúdo de amostra We.Retail](/help/sites-developing/we-retail.md) e também podem ser [instalado separadamente e usado para desenvolvimento](https://helpx.adobe.com/experience-manager/core-components/using/using.html) pelo seu administrador.
+>A Adobe recomenda o aproveitamento dos recursos mais modernos e extensíveis [componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). Eles fazem parte do [Conteúdo de amostra We.Retail](/help/sites-developing/we-retail.md) e também pode [instalados separadamente e utilizados para o desenvolvimento](https://helpx.adobe.com/experience-manager/core-components/using/using.html) pelo administrador.
 
 Os componentes fundamentais foram projetados para uso ao criar conteúdo autoral em uma página da Web padrão. Eles formam um subconjunto de componentes disponíveis out-of-the-box em uma instalação padrão do AEM.
 
-Alguns estão imediatamente disponíveis por meio do navegador de componentes, vários outros também estão disponíveis usando o [modo de design](/help/sites-authoring/default-components-designmode.md) (se a página for baseada em um modelo estático) ou ao [editar o modelo](/help/sites-authoring/templates.md) (se a página for baseada em um modelo editável).
+Alguns estão imediatamente disponíveis por meio do navegador de componentes, vários outros também estão disponíveis usando [modo de design](/help/sites-authoring/default-components-designmode.md) (se a página for baseada em um modelo estático) ou [editar o modelo](/help/sites-authoring/templates.md) (se a página for baseada em um modelo editável).
 
 O uso de componentes fundamentais é suportado, mas eles foram substituídos por componentes principais que oferecem mais extensibilidade e flexibilidade.
 
@@ -61,16 +60,16 @@ Os componentes Gerais são os componentes básicos usados na criação de conte�
 ### Item de conta {#account-item}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em vez disso.
 
 Você pode definir um link com título e descrição.
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 ### Imagem adaptativa {#adaptive-image}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. O Adobe recomenda o aproveitamento do [Componente de imagem dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componente de imagem dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) em vez disso.
 
 O componente de base da Imagem adaptativa gera imagens que são dimensionadas para caber na janela na qual a página da Web está aberta. Para usar o componente, você fornece um recurso de imagem do sistema de arquivos ou DAM. Quando a página da Web está aberta, o navegador baixa uma cópia da imagem que foi redimensionada para que seja adequada à janela atual.
 
@@ -203,8 +202,8 @@ Estão disponíveis em duas guias:
          * **Página principal** Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
       * **Opções para a lista fixa**
 
-         * ****
-PáginasSelecione uma lista de páginas. Use 
+         * **Páginas**
+Selecione uma lista de páginas. Use 
 `+` para adicionar mais entradas e os botões Para cima/Para baixo para ajustar a ordem.
       * **Opções de pesquisa**
 
@@ -224,7 +223,7 @@ PáginasSelecione uma lista de páginas. Use
             Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
    * **Ordenar por**
 
-      Selecione `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` no menu suspenso.
+      Selecionar `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` no menu suspenso.
 
    * **Limite**
 
@@ -238,7 +237,7 @@ PáginasSelecione uma lista de páginas. Use
 >
 >Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe os ativos digitais localizados no DAM AEM. Para obter informações, consulte [Criação de componentes personalizados do carrossel para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
-### Gráfico  {#chart}
+### Gráfico {#chart}
 
 O componente Gráfico permite que você adicione um gráfico de barras, de linhas o de pizza. O AEM cria um gráfico a partir dos dados fornecidos. Você fornece os dados, digitando diretamente na guia de Dados ou copiando e colando em uma planilha.
 
@@ -330,10 +329,10 @@ O aplicativo externo é integrado ao sistema de parágrafo da página de AEM; po
 >
 >Dependendo do caso de uso, outras opções estão disponíveis para integração de aplicativos externos, por exemplo, a [Integração de portlets](/help/sites-administering/aem-as-portal.md).
 
-### Flash  {#flash}
+### Flash {#flash}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -407,7 +406,7 @@ Várias opções adicionais estão disponíveis no modo de edição de tela chei
 >
 >Os usuários do Internet Explorer precisam fazer upload da imagem e clique em **Ok** e abra novamente a imagem para ver o arquivo carregado na visualização e para poder realizar as modificações (isto é, cortar).
 >
->Consulte a seção [Plataformas compatíveis](/help/release-notes/release-notes.md#supported-platforms) para obter mais informações sobre os recursos de HTML5 usados pelo AEM.
+>Consulte a [Plataformas compatíveis](/help/release-notes/release-notes.md#supported-platforms) para obter mais informações sobre os recursos do HTML5 usados pelo AEM.
 
 Quando uma imagem é carregada, você pode configurar o seguinte:
 
@@ -479,7 +478,7 @@ O componente de Lista permite que você configure os critérios de pesquisa para
 
       * **Opções de páginas filhas**
 
-         * **Filhos de**  (Página principal)
+         * **Filhos de** (Página principal)
 
             Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
       * **Opções para a lista fixa**
@@ -538,7 +537,7 @@ O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá ex
 ### Logon {#login}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -633,13 +632,13 @@ Uma vez configurado, o conteúdo será exibido exatamente como na página de ori
 ### Pesquisar {#search-features}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de pesquisa rápida](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/quick-search.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de pesquisa rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html) em vez disso.
 
 O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
 É possível configurar:
 
-* Pesquisar  
+* Pesquisar
 
    * **Tipos de nós**
 
@@ -702,7 +701,7 @@ O exemplo a seguir mostra um termo de pesquisa escrito incorretamente e não est
 ### Mapa do site {#sitemap}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. O Adobe recomenda o aproveitamento do [Navigation](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/language-navigation.html) e [Breadcrumb Core Components](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/breadcrumb.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html), [Navegação de idiomas](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/language-navigation.html)e [Componentes principais da navegação estrutural](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/breadcrumb.html) em vez disso.
 
 Uma lista de mapa do site automático, que (com as configurações padrão) lista todas as páginas (como links ativos) no site atual. Por exemplo, uma extração mostra:
 
@@ -719,7 +718,7 @@ Se necessário, é possível configurar:
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/carousel.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -733,7 +732,7 @@ Este componente permite que você carregue uma série de imagens a serem exibida
 
    * **Novo slide**
 
-      Você pode especificar uma seleção de slides usando os botões **Add** (e **Remove**).
+      Você pode especificar uma seleção de slides usando o **Adicionar** e **Remover**).
 
    * **Título**
 
@@ -749,10 +748,10 @@ O componente de slideshow exibe repetidamente em cada sequência, durante um cur
 
 ![dc_slideshow_use](assets/dc_slideshow_use.png)
 
-### Table {#table}
+### Tabela {#table}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de Texto](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) em vez disso.
 
 >[!NOTE]
 >
@@ -811,7 +810,7 @@ O componente de Texto permite que você insira um bloco de texto usando um edito
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Ao abrir a caixa de diálogo **Configurar**, você também pode definir:
+Ao abrir o **Configurar** você também pode definir:
 
 * **Espaçador**
 * **Estilo de texto**
@@ -834,11 +833,11 @@ O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você ta
 
 É possível configurar:
 
-* **Estilos de componentes**  (**Estilos**)
+* **Estilos de componentes** (**Estilos**)
 
    Aqui, você pode alinhar à esquerda ou à direita da imagem. O padrão é alinhamento à **Esquerda,** com a imagem à esquerda.
 
-* **Propriedades da imagem**  (**Propriedades avançadas de imagem**)
+* **Propriedades da imagem** (**Propriedades avançadas de imagem**)
 
    Permite que você especifique o seguinte:
 
@@ -898,7 +897,7 @@ O exemplo a seguir mostra um componente de **Título** sendo exibido; o design �
 
 O componente de **Vídeo** permite que você coloque um elemento “out-of-the-box” de vídeo predefinido em uma página.
 
-Consulte também [Configurar o componente de Vídeo](/help/sites-administering/config-video.md) para usar com elementos HTML5.
+Consulte também [Configurar o componente de Vídeo](/help/sites-administering/config-video.md) para uso com elementos HTML5.
 
 Depois de adicionar uma instância de componente em sua página, você pode configurar:
 
@@ -920,12 +919,10 @@ Depois de adicionar uma instância de componente em sua página, você pode conf
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (Vídeo do Flash)
-
 >
 
 
-
-## Columns {#columns}
+## Colunas {#columns}
 
 As colunas são um mecanismo para controlar o layout de conteúdo no AEM. Em uma instalação padrão, são fornecidos componentes para a criação de duas e/ou três colunas.
 
@@ -933,11 +930,11 @@ O exemplo a seguir mostra o componente de 2 colunas em uso. É possível usar os
 
 ![dc_columncontroverse](assets/dc_columncontroluse.png)
 
-### 2 Colunas {#columns-1}
+### 2 colunas {#columns-1}
 
 Um componente de controle de coluna que padroniza 2 colunas iguais.
 
-### 3 colunas  {#columns-2}
+### 3 colunas {#columns-2}
 
 Um componente de controle de coluna que padroniza 3 colunas iguais.
 
@@ -951,9 +948,9 @@ O componente de Controle de coluna permite que os usuários escolham como dividi
 
       Selecione o número de colunas que deseja apresentar. Depois da criação, cada coluna tem seu próprio link para arrastar componentes ou ativos aqui ao adicionar conteúdo.
 
-## Formulário  {#form}
+## Formulário {#form}
 
-Os componentes do formulário são usados &#x200B;&#x200B;para criar formulários para os visitantes enviarem informações. Os formulários e os componentes do formulário podem ser usado para coletar informações, incluindo o feedback do usuário (por exemplo, um questionário de satisfação do cliente) e as informações do usuário (por exemplo, o registro do usuário).
+Os componentes do formulário são usados para criar formulários para os visitantes enviarem informações. Os formulários e os componentes do formulário podem ser usado para coletar informações, incluindo o feedback do usuário (por exemplo, um questionário de satisfação do cliente) e as informações do usuário (por exemplo, o registro do usuário).
 
 >[!NOTE]
 >
@@ -1068,7 +1065,7 @@ Essas guias fornecem os parâmetros necessários; estes dependem do tipo de comp
 
    * **CSS**
 
-### Formulário (componente)  {#form-component}
+### Formulário (componente) {#form-component}
 
 O componente Formulário define o início e o final de um formulário usando os elementos **Início do formulário** e **Fim do formulário**. São sempre pareados para garantir que o formulário esteja definido corretamente.
 
@@ -1078,7 +1075,7 @@ Entre o início e o fim de um formulário, você pode adicionar componentes do f
 
 >[!NOTE]
 >
->O componente de formulário dos componentes fundamentais suporta somente o uso de outros componentes de formulário dos componente fundamentais (botão, texto, oculto etc.). Não há suporte para o uso de componentes de formulário dos [componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em um formulário de componente fundamental (e vice-versa).
+>O componente de formulário dos componentes fundamentais suporta somente o uso de outros componentes de formulário dos componente fundamentais (botão, texto, oculto etc.). Não há suporte para o uso de componentes de formulário dos [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em um formulário de componente fundamental (e vice-versa).
 
 #### Início do formulário {#start-of-form}
 
@@ -1094,8 +1091,8 @@ Esse componente é necessário para definir o início de um novo formulário em 
 
 * **Avançado**
 
-   * **Tipo**
-de açãoUm formulário precisa de uma ação. A ação define a operação acionada para execução com os dados enviados pelo usuário (semelhante a action= in HTML). Alguns precisam de um 
+   * **Tipo de ação**
+Um formulário precisa de uma ação. A ação define a operação acionada para execução com os dados enviados pelo usuário (semelhante a action= in HTML). Alguns precisam de um 
 **Configurações de ação**.
 
       Uma seleção de tipos de ação está incluída em uma instalação padrão do AEM:
@@ -1120,9 +1117,9 @@ de açãoUm formulário precisa de uma ação. A ação define a operação acio
          Esse é o tipo de ação padrão.
 
       * **Armazenar conteúdo com os uploads**
-      * **Enviar pedido**
+      * **Enviar Ordem**
       * **Cancelar assinatura do assinante**
-      * **Atualizar pedido**
+      * **Atualizar a ordem**
    * **Identificador de formulário**
 
       O identificador de formulário identifica-o. Use o identificador de formulário caso tenha vários formulários em uma única página; verifique se eles têm identificadores diferentes.
@@ -1152,7 +1149,7 @@ de açãoUm formulário precisa de uma ação. A ação define a operação acio
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Configurações de ação**
 
-      As opções disponíveis em **Configuração de Ação** dependem do **Tipo de Ação** selecionado:
+      As opções disponíveis em **Configuração de ação** dependem do **Tipo de ação** selecionado:
 
       * **Solicitação de conta**
 
@@ -1181,7 +1178,7 @@ de açãoUm formulário precisa de uma ação. A ação define a operação acio
 
          * **Tipo de recurso**
 
-            Se definido, isso é adicionado a cada comentário como `sling:resourceType`
+            Se definido, isso será adicionado a cada comentário como `sling:resourceType`
 
          * **Exibir seletor**
       * **Criar lead**
@@ -1205,7 +1202,7 @@ de açãoUm formulário precisa de uma ação. A ação define a operação acio
 
          * **Exibir dados...**
 
-            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. A partir daqui, você pode exportar as informações para um arquivo `.tsv` (separado por tabulações) (para ser usado, por exemplo, em uma planilha do Excel).
+            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. A partir daqui, você pode exportar as informações para um `.tsv` (separado por tabulações) (para uso, por exemplo, em uma planilha do Excel).
       * **Email**
 
          * **De**
@@ -1245,7 +1242,7 @@ de açãoUm formulário precisa de uma ação. A ação define a operação acio
             Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. Aqui, você pode exportar as informações para um arquivo .tsv (separado por tabulações) (para ser usado, por exemplo, em uma planilha do Excel).
       * **Armazenar conteúdo com os uploads**
 
-         Isso tem as mesmas opções de **Armazenar conteúdo**.
+         Isso tem as mesmas opções que **Armazenar conteúdo**.
 
       * **Cancelar assinatura do assinante**
 
@@ -1306,10 +1303,10 @@ Isso permite que você adicione um campo de endereço internacional, com o segui
 
 O componente está configurado para uso imediato, mas é possível alterar a configuração, se necessário. Por exemplo, as restrições podem ser adicionadas para os elementos individuais do endereço. As configurações padrão serão usadas caso haja campos vazios.
 
-### Captcha  {#captcha}
+### Captcha {#captcha}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -1321,7 +1318,7 @@ O componente Captcha exige que o usuário digite uma sequência alfanumérica co
 
 Você pode configurar vários parâmetros para este componente, incluindo uma mensagem a ser exibida quando a sequência captcha for inválida.
 
-### Grupos de caixa de seleção  {#checkbox-group}
+### Grupos de caixa de seleção {#checkbox-group}
 
 Uma caixa de seleção permite que você crie uma lista de uma ou mais caixas de seleção, algumas das quais, podem ser selecionadas ao mesmo tempo.
 
@@ -1338,7 +1335,7 @@ Uma caixa de seleção permite que você crie uma lista de uma ou mais caixas de
 ### Detalhes do cartão de crédito {#credit-card-details}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Isso permite fornecer os campos necessários para inserir os detalhes do cartão de crédito. Você pode configurá-lo para especificar os tipos de cartão aceitos e as informações necessárias (por exemplo, código de segurança).
 
@@ -1368,7 +1365,7 @@ O componente de upload de arquivos fornece ao usuário um mecanismo para selecio
 >
 >Você pode criar um componente de upload personalizado para fazer o upload de arquivos para um Sling Servlet. Para obter informações, consulte [Upload de arquivos no Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
-### Campo oculto  {#hidden-field}
+### Campo oculto {#hidden-field}
 
 Esse componente permite a criação de um campo oculto. Estes podem ser utilizados para diversos fins; por exemplo, quando você precisa executar uma ação após enviar o formulário ou quando dados ocultos são necessários no processamento posterior. 
 
@@ -1380,7 +1377,7 @@ Esse componente permite a criação de um campo oculto. Estes podem ser utilizad
 >
 >Consulte [Mostrar e ocultar componentes de formulário](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Botão de imagem  {#image-button}
+### Botão de imagem {#image-button}
 
 Um botão de imagem permite que você crie um botão com seu próprio texto e imagem:
 
@@ -1471,9 +1468,8 @@ O campo de texto padrão pode ser configurado no tamanho necessário e com o seu
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Botão(s) de envio de fluxo de trabalho {#workflow-submit-button-s}
+### Botões de envio do fluxo de trabalho {#workflow-submit-button-s}
 
 Esse componente permite que você crie um botão de envio para usar em um fluxo de trabalho.
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
-

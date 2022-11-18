@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 3%
+source-wordcount: '1641'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Os principais recursos, destaques e aprimoramentos feitos no AEM 6.4 Assets são
 
 O Adobe Asset Link no Creative Cloud for enterprise simplifica a colaboração entre criadores e profissionais de marketing no processo de criação de conteúdo. É um novo recurso nativo no Creative Cloud para empresas, que fornece uma conexão com o AEM Assets diretamente da Adobe Photoshop, Adobe Illustrator ou Adobe InDesign, sem deixar essas ferramentas.
 
-Para saber mais sobre o recurso, os pré-requisitos e como acessá-lo, consulte a página [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
+Para saber mais sobre o recurso, os pré-requisitos e como acessá-lo, consulte o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) página.
 
 ## Tags inteligentes aprimoradas (viabilizadas pelo Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -34,7 +34,7 @@ O AEM 6.4 apresenta o recurso de Tags inteligentes aprimoradas com base em intel
 * O Serviço de conteúdo inteligente aprende a taxonomia comercial do cliente e a usa para marcar ativos digitais automaticamente com tags relevantes do cliente, além de tags genéricas. Melhora significativamente a capacidade de descoberta de ativos e reduz o tempo de comercialização.
 * O Adobe Sensei capacita o Serviço de conteúdo inteligente, que permite que você treine o algoritmo de reconhecimento de imagem em sua taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em ativos semelhantes.
 
-Para usar as Tags inteligentes aprimoradas do AEM Assets, instale o [service pack mais recente do AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR).
+Para usar as Tags inteligentes aprimoradas do AEM Assets, instale o [service pack mais recente do AEM 6.4](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html).
 
 ## Pesquisa de tradução inteligente (fornecida pelo Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
@@ -94,18 +94,18 @@ O AEM 6.4 oferece aprimoramentos significativos no relatório de Ativos:
 
 ## Brand Portal {#brand-portal}
 
-* **6.3 Atualização** da plataforma: O Brand Portal foi atualizado do AEM 6.0 para o AEM 6.3, com novos recursos e melhorias de desempenho.
-* **Publicação** paralela: Até replicações podem ocorrer entre o AEM Assets e o Brand Portal (anteriormente 1), o que melhora significativamente o desempenho da publicação
-* **Publicação** do esquema e da faceta de pesquisa: Capacidade de publicar esquemas de metadados e aspectos de pesquisa personalizados no Brand Portal, o que elimina a duplicação de esforços.
-* **Publicação** de tags em massa: Capacidade de publicar taxonomia (junto com hierarquia) no Brand Portal, o que elimina a duplicação de esforços.
+* **Atualização da plataforma 6.3**: O Brand Portal foi atualizado do AEM 6.0 para o AEM 6.3, com novos recursos e melhorias de desempenho.
+* **Publicação paralela**: Até replicações podem ocorrer entre o AEM Assets e o Brand Portal (anteriormente 1), o que melhora significativamente o desempenho da publicação
+* **Publicação de Aspecto de Esquema e Pesquisa**: Capacidade de publicar esquemas de metadados e aspectos de pesquisa personalizados no Brand Portal, o que elimina a duplicação de esforços.
+* **Publicação de tags em massa**: Capacidade de publicar taxonomia (junto com hierarquia) no Brand Portal, o que elimina a duplicação de esforços.
 * **Autoassinatura ou Solicitar acesso**: Fluxo de trabalho para usuários não registrados no Brand Portal.
-* **Notificação** de manutenção no aplicativo (na tela): As notificações são exibidas com bastante antecedência para evitar interrupção nos negócios.
-* **Melhorias** nos relatórios: Três relatórios OOTB estão disponíveis: downloads, publicação e compartilhamentos de link.
-* **Restrições** baseadas em DRM: Depois que um ativo licenciado expira, ele não está mais disponível para download na Brand Portal.
+* **Notificação de manutenção no aplicativo (na tela)**: As notificações são exibidas com bastante antecedência para evitar interrupção nos negócios.
+* **Melhorias nos relatórios**: Três relatórios OOTB estão disponíveis: downloads, publicação e compartilhamentos de link.
+* **Restrições baseadas em DRM**: Depois que um ativo licenciado expira, ele não está mais disponível para download na Brand Portal.
 
 ## Aplicativo de desktop do AEM {#aem-desktop-app}
 
-AEM aplicativo de desktop é atualizado para a versão 1.8, que é compatível com AEM 6.4. A lista completa de alterações para AEM aplicativo de desktop é fornecida em um documento [AEM notas de versão do aplicativo de desktop](https://docs.adobe.com/content/help/pt-BR/experience-manager-desktop-app/using/release-notes.html) dedicado.\
+AEM aplicativo de desktop é atualizado para a versão 1.8, que é compatível com a AEM 6.4. A lista completa de alterações para AEM aplicativo de desktop é fornecida em um aplicativo dedicado [Notas de versão do aplicativo de desktop do AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) documento.\
 Esta é uma lista de AEM destaques do aplicativo de desktop desde o lançamento do AEM 6.3:
 
 * Capacidade de fazer upload de pastas hierárquicas em segundo plano.
@@ -117,8 +117,8 @@ Esta é uma lista de AEM destaques do aplicativo de desktop desde o lançamento 
 
 Para facilitar o acesso à documentação e às práticas recomendadas, a seguinte documentação está disponível:
 
-* [Guia](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) do usuário, destinado aos usuários finais que trabalham com o aplicativo.
-* [Guia](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html) de instalação, destinado aos administradores que configuram AEM e AEM aplicativo de desktop para trabalhar em conjunto
+* [Guia do usuário](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), destinado aos usuários finais que trabalham com o aplicativo.
+* [Guia de instalação](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/install-upgrade.html)destinado aos administradores que configuram AEM e AEM aplicativo de desktop para trabalhar em conjunto
 
 ## Armazenamento hierárquico {#tiered-storage}
 
@@ -127,7 +127,7 @@ O AEM 6.4 inclui um conjunto de recursos que oferecem suporte a várias preferê
 * A capacidade de os usuários selecionarem e alterarem posteriormente a classe de armazenamento à vontade e definirem regras para o armazenamento de ativos de uma classe para outra ou gerenciarem o ciclo de vida de seus ativos.
 * A capacidade de os usuários reduzirem seus custos de armazenamento selecionando um AWS ou Azure diferente.
 
-Para obter uma visão geral das plataformas compatíveis, consulte a [Documentação de requisitos técnicos](../sites-deploying/technical-requirements.md).
+Para obter uma visão geral das plataformas compatíveis, consulte a seção [Documentação de requisitos técnicos](../sites-deploying/technical-requirements.md).
 
 ## Grupo de usuário fechado {#closed-user-group}
 
@@ -138,7 +138,7 @@ Para obter uma visão geral das plataformas compatíveis, consulte a [Documenta�
 
 O Dynamic Media na 6.4 é compatível com um novo modo - onde o ativo principal é carregado e gerenciado com a interface do usuário da Web do AEM Assets, e as representações dinâmicas e outros recursos de mídia dinâmica são manipuladas em segundo plano pelo serviço de entrega da nuvem do Dynamic Media.
 
-Nesse modo (introduzido primeiro com o lançamento de [AEM 6.3 Feature Packs 14410 e 18912](https://helpx.adobe.com/br/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), os usuários se beneficiam do gerenciamento completo de ativos e dos recursos de mídia dinâmica usando a interface moderna da Web do AEM Assets e ainda aproveitam os serviços de delivery que são compatíveis com o Dynamic Media Classic (Scene7), incluindo URLs de entrega, que não foram alterados.
+Nesse modo (introduzido primeiro com o lançamento de [AEM 6.3 Pacotes de recursos 14410 e 18912](https://helpx.adobe.com/br/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), os usuários se beneficiam do gerenciamento completo de ativos e dos recursos de mídia dinâmica usando a interface moderna da Web do AEM Assets e ainda aproveitam os serviços de delivery que são compatíveis com o Dynamic Media Classic (Scene7), incluindo URLs de entrega, que permanecem inalterados.
 
 Além disso, o AEM 6.4 apresenta novos recursos fornecidos pelo Adobe Sensei, melhorias para mídia emergente, como VR e 3D, visualizadores Dynamic Media e suporte para Fragmentos de experiência em imagens interativas e banners de carrossel.
 
@@ -147,9 +147,9 @@ Além disso, o AEM 6.4 apresenta novos recursos fornecidos pelo Adobe Sensei, me
 * O Recorte inteligente fornece automaticamente recortes não destrutivos de imagens para preservar o ponto de interesse para um design responsivo. Você pode visualizar sugestões cortadas e ajustá-las manualmente, se necessário.
 * Esse recurso também permite a geração automatizada de amostras para imagens de produtos. A geração automatizada de amostras ajuda a adicionar amostras de cores, amostras de padrões ou ambas a imagens de produtos automaticamente.
 
-Consulte a documentação [Perfis de imagem](../assets/image-profiles.md) para saber mais.
+Consulte [Perfis de imagem](../assets/image-profiles.md) documentação para saber mais.
 
-Consulte também a documentação [Adicionar ativos Dynamic Media às páginas](../assets/adding-dynamic-media-assets-to-pages.md) para saber mais sobre como usar o Recorte inteligente com o componente Dynamic Media.
+Consulte também [Adicionar ativos Dynamic Media às páginas](../assets/adding-dynamic-media-assets-to-pages.md) documentação para saber mais sobre como usar o Recorte inteligente com o componente do Dynamic Media.
 
 ### Imagem inteligente {#smart-imaging}
 
@@ -157,12 +157,12 @@ Consulte também a documentação [Adicionar ativos Dynamic Media às páginas](
 * As imagens são convertidas automaticamente em diferentes formatos com base nos recursos do navegador.
 * As configurações de qualidade da imagem são determinadas no navegador e aplicadas respectivamente. Essa inteligência mantém o desempenho de carregamento de imagem aceitável para largura de banda limitada e velocidades de conexão lentas.
 
-Consulte a documentação [Imagem inteligente](../assets/imaging-faq.md) para saber mais.
+Consulte [Imagem inteligente](../assets/imaging-faq.md) documentação para saber mais.
 
 ### Melhorias emergentes de mídia e visualizador {#emerging-media-amp-viewer-enhancements}
 
 * Novos visualizadores são compatíveis, fornecendo experiências melhores e imersivas para o usuário.
-* O Visualizador de panorâmica ajuda a envolver o usuário e a oferecer a capacidade de experimentar melhor as cenas, propriedades, locais e paisagens da sala. Consulte a documentação [Imagens panorâmicas](../assets/panoramic-images.md) para saber mais.
+* O Visualizador de panorâmica ajuda a envolver o usuário e a oferecer a capacidade de experimentar melhor as cenas, propriedades, locais e paisagens da sala. Consulte [Imagens panorâmicas](../assets/panoramic-images.md) documentação para aprender.
 
 * O Visualizador VR fornece experiência imersiva para propriedades, locais e paisagens.
 * Visualizador de imagem vertical otimizado para imagens de produto.

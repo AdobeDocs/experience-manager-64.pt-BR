@@ -8,9 +8,9 @@ breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Developing
 role: Developer
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '884'
 ht-degree: 26%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 26%
       + [Desenvolvimento (genérico)](generic.md)
       + [Desenvolvimento com o SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componentes{#components}
-   + [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+   + [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
    + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Visão geral dos componentes](components.md)
    + [Componentes AEM - Noções básicas](components-basics.md)

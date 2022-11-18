@@ -8,9 +8,9 @@ user-guide-title: Guia do Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3721'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 4%
 
 + [Guia do Forms do AEM 6.4](home.md)
 + Notas de versão {#release-notes-new-features}
-   + [Notas de versão](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
+   + [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [Resumo dos novos recursos](using/whats-new.md)
-   + [Recursos obsoletos](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [Recursos obsoletos](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Introdução {#getting-started}
    + [Introdução ao AEM Forms](using/introduction-aem-forms.md)
    + [Introdução à criação de formulários adaptáveis](using/introduction-forms-authoring.md)
@@ -573,8 +573,8 @@ ht-degree: 4%
    + [Consultas ad-hoc em relatórios de processo](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Resolução de problemas do relatório de processos](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referência do desenvolvedor {#developer-reference}
-   + [Noções básicas para desenvolvedor](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [Linguagem de modelo HTML ](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+   + [Noções básicas para desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [Linguagem de modelo HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
    + [AEM plug-in para depurar formulários adaptáveis](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referência da API Java do AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [Referência da API do AEM Forms no JEE Java](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)

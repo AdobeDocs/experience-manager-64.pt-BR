@@ -1,22 +1,21 @@
 ---
 title: Visualizar dados de análise de página
-seo-title: Visualizar dados de análise de página
+seo-title: Seeing Page Analytics Data
 description: Use dados de análise de página para avaliar a eficácia do conteúdo da página
-seo-description: Use dados de análise de página para avaliar a eficácia do conteúdo da página
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '439'
 ht-degree: 93%
 
 ---
-
 
 # Visualizar dados de análise de página{#seeing-page-analytics-data}
 
@@ -76,17 +75,17 @@ Os membros do grupo de usuários análise-administradores podem configurar o con
 
 ### Abrir Content Insight do Sites {#opening-content-insights-from-sites}
 
-Abra [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar a eficácia da página.
+Abrir [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar ainda mais a eficácia da página.
 
 1. No console Sites, selecione a página para da qual você deseja ver os Content Insights.
 1. Na barra de ferramentas, clique no ícone Analytics e Recomendações.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Análise visível do Editor de página (Mapa de atividades)  {#analytics-visible-from-the-page-editor-activity-map}
+## Análise visível do Editor de página (Mapa de atividades) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
->O plug-in [ActivityMap fornecido pela Adobe Analytics](https://docs.adobe.com/content/help/br/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) agora deve ser usado.
+>O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) deve ser usada.

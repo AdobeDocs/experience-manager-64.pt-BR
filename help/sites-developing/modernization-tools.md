@@ -1,18 +1,17 @@
 ---
 title: Ferramentas de Modernização do AEM
-seo-title: Ferramentas de Modernização do AEM
-description: Ferramentas de Modernização do AEM ajuda a converter seus recursos AEM legados para a tecnologia mais recente
-seo-description: As ferramentas de modernização AEM ajudam você a converter facilmente seus recursos AEM legados para a tecnologia mais recente
+seo-title: AEM Modernization Tools
+description: AEM Ferramentas de Modernização ajudam a converter seus recursos AEM herdados para a tecnologia mais recente
+seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 55bd3036bd793a5e3b468b8b6ad595a857311865
+exl-id: cfa9fcd0-8d57-4352-9646-12a4fcf5f695
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 58%
+source-wordcount: '87'
+ht-degree: 83%
 
 ---
-
 
 # Ferramentas de Modernização do AEM {#modernization-tools}
 
@@ -20,10 +19,10 @@ ht-degree: 58%
 
 * [](page-templates-static.md)Modelos estáticos em modelos editáveis[](page-templates-editable.md)
 * [](page-templates-static.md)Configurações de design em políticas[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Componentes básicos em componentes principais[](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [](/help/sites-authoring/default-components-foundation.md)Componentes de base para Componentes principais[](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [](website.md)IU Clássica em IU ativada por toque[](touch-ui-concepts.md)
 
-Para obter mais informações sobre o uso dessas ferramentas, [consulte a documentação](http://opensource.adobe.com/aem-modernize-tools/).
+Para mais informações sobre o uso dessas ferramentas, [consulte a documentação](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >

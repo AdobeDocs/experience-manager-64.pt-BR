@@ -2,10 +2,10 @@
 title: Plug-in Adobe Content Package Maven
 description: Use o plug-in Content Package Maven para implantar aplicativos AEM
 exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 11%
+source-wordcount: '157'
+ht-degree: 9%
 
 ---
 
@@ -19,8 +19,8 @@ A implantação dos pacotes construídos no AEM é realizada pelo plug-in Adobe 
 >
 >Para obter mais detalhes, consulte:
 >
->* O artigo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) na documentação as a Cloud Service AEM sobre como implantar aplicativos AEM.
->* O artigo [AEM Estrutura do projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) na documentação as a Cloud Service AEM para saber como estruturar projetos AEM modernos.
->* A documentação do [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) para saber como iniciar um novo projeto AEM usando o arquétipo.
+>* O [Plug-in Adobe Content Package Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) artigo na documentação AEM as a Cloud Service sobre como implantar aplicativos AEM.
+>* O [Estrutura do projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) artigo na documentação AEM as a Cloud Service sobre como estruturar projetos AEM modernos.
+>* O [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) documentação sobre como iniciar um novo projeto de AEM usando o arquétipo.
 >
 >Os três documentos são aplicáveis ao AEM 6.4.
