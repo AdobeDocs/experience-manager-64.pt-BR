@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -142,7 +142,7 @@ ht-degree: 35%
    + [Práticas recomendadas para modelos de email](best-practices-for-email-templates.md)
    + [Produtor do Catálogo](catalog-producer.md)
    + [Integração com o Silverpop Engage](silverpop.md)
-   + [Integração com o Adobe Campaign](campaign.md)
+   + [Integração ao Adobe Campaign](campaign.md)
    + [Integração com o ExactTarget](exacttarget.md)
    + [Analytics com provedores externos](external-providers.md)
    + [Integração com a Adobe Marketing Cloud](marketing-cloud.md)
