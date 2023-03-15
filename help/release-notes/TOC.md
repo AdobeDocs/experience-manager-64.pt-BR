@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: Notas de versão do Adobe Experience Manager 6.4
 breadcrumb-title: Notas de versão
 user-guide-description: Saiba mais sobre os novos recursos mais recentes da AEM 6.4 nas notas de versão.
-feature: Informações da versão
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 39%
+source-wordcount: '87'
+ht-degree: 37%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 39%
 + [Visão geral do AEM 6.4](home.md)
 + [Notas de versão gerais](release-notes.md)
 + [Notas de versão do Service Pack](sp-release-notes.md)
-+ [Notas de versão do Cumulative Fix Pack](cfp-release-notes.md)
++ [Notas de versão do Cumulative Fix Pack ](cfp-release-notes.md)
 + [Notas de versão do AEM Sites](sites.md)
 + [Notas de versão do AEM Assets](assets.md)
 + [Notas de versão do AEM Forms](forms.md)
