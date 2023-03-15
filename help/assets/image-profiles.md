@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: c413f31498cdccf8ceea4afc225c570a40ba1819
+source-git-commit: 1bda0ff04752dec663f251d28a4274599fd0e17d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2885'
+ht-degree: 8%
 
 ---
 
@@ -51,14 +51,14 @@ Cada geração de Corte inteligente que você cria requer processamento extra. P
 **Diretrizes para definir o Recorte inteligente em um perfil de imagem**
 Para manter o uso do Smart Crop sob controle e otimizar o tempo de processamento e o armazenamento de colheitas, o Adobe recomenda as seguintes diretrizes e dicas:
 
-* Os ativos de imagem que terão um recorte inteligente aplicado a eles devem ter no mínimo 50 x 50 pixels ou mais. &lt;!— CQDOC-20087>
-* Não é permitido um Perfil de imagem que contenha dimensões de recorte inteligente duplicadas. &lt;!— CQDOC-20087>
-* Não são permitidos perfis de imagem com nome duplicado que tenham opções de recorte inteligente definidas. &lt;!— CQDOC-20087>
+* Os ativos de imagem que terão um recorte inteligente aplicado a eles devem ter no mínimo 50 x 50 pixels ou mais. <!-- CQDOC-20087 -->
+* Não é permitido um Perfil de imagem que contenha dimensões de recorte inteligente duplicadas. <!-- CQDOC-20087 -->
+* Não são permitidos perfis de imagem com nome duplicado que tenham opções de recorte inteligente definidas. <!-- CQDOC-20087 -->
 * Crie Perfis de imagem em toda a página/no tipo de ativo para pastas e subpastas específicas, em vez de um perfil de recorte inteligente comum que é aplicado a todas as pastas ou a todos os ativos.
 * Um Perfil de imagem aplicado às subpastas substitui um Perfil de imagem que é aplicado à pasta.
 * Idealmente, tenha 10 a 15 recortes inteligentes por imagem para otimizar as taxas de tela e o tempo de processamento.
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
 Você tem duas opções de recorte de imagem para escolher. Você também pode optar por automatizar a criação de amostras de cores e imagens ou preservar o conteúdo de corte nas resoluções do target.
 
