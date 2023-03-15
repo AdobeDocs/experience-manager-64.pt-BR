@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 1%
+source-wordcount: '1771'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ As seções a seguir detalham como o Adobe I/O Runtime pode ser usado para imple
 
 >[!NOTE]
 >
->O Adobe recomenda um espaço de trabalho Adobe I/O Runtime separado por ambiente (estágio, produção, teste etc.). Isso permite padrões típicos de ciclo de vida de desenvolvimento de sistemas (SDLC) com diferentes versões de um único aplicativo implantado em diferentes ambientes. Consulte o documento [CI/CD para projetos de aplicativos Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) para obter mais informações.
+>O Adobe recomenda um espaço de trabalho Adobe I/O Runtime separado por ambiente (estágio, produção, teste etc.). Isso permite padrões típicos de ciclo de vida de desenvolvimento de sistemas (SDLC) com diferentes versões de um único aplicativo implantado em diferentes ambientes. Consulte o documento [CI/CD para aplicativos do Project App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) para obter mais informações.
 >
 >Um espaço de trabalho separado não é necessário por instância (autor, publicação), a menos que haja diferenças na implementação de tempo de execução por tipo de instância.
 
@@ -145,7 +145,7 @@ Para obter um exemplo simplista, consulte o [Aplicativo de diário We.Retail](ht
 >O [Aplicativo de diário We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) O é somente para fins de demonstração e, portanto, usa o Node.js como um exemplo simples, em vez da Adobe I/O Runtime recomendada. Este exemplo não deve ser usado para qualquer trabalho de projeto.
 
 >[!NOTE]
->Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+>Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
 
 ## Uso de Node.js {#using-node-js}
 
@@ -190,7 +190,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 A configuração do manipulador padrão deve ser configurada conforme descrito na seção [Configuração do renderizador de conteúdo remoto](#remote-content-renderer-configuration).
 
-###  Uso do renderizador de conteúdo remoto {#usage}
+### Uso do Renderizador de Conteúdo Remoto {#usage}
 
 Para ter uma busca de servlet e retornar algum conteúdo que possa ser inserido na página:
 
