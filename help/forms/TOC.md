@@ -369,11 +369,11 @@ ht-degree: 4%
    + [Protect um documento em nome de outro usuário](using/protect-document-on-behalf-of-another-user.md)
 + Designer do Forms {#use-forms-designer}
    + [Uso do Designer](http://www.adobe.com/go/learn_aemforms_designer_64)
-   + [Tutoriais de início rápido do Designer ](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
-   + [Amostras do Designer ](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
-   + [Informações básicas sobre script do Designer ](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)
-   + [Referência de scripts do Designer ](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
-   + [Referência do FormCalc do Designer ](http://www.adobe.com/go/learn_aemforms_formCalc_64)
+   + [Tutorials de início rápido do Designer](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
+   + [Amostras do Designer](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
+   + [Informações básicas sobre script do Designer](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)
+   + [Referência de scripts do Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
+   + [Referência do FormCalc do Designer](http://www.adobe.com/go/learn_aemforms_formCalc_64)
    + [Uso de assinaturas do Scribble em formulários HTML5](using/scribble-signature.md)
 + Personalizar o AEM Forms {#customize-aem-forms}
    + [Estrutura de aparência para formulários adaptáveis e HTML5](using/introduction-widgets.md)

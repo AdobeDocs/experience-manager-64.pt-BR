@@ -9,7 +9,7 @@ user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 49%
+ht-degree: 44%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 49%
    + [Formatos compatíveis com os ativos](assets-formats.md)
    + [Pesquisar aspectos](search-facets.md)
    + [Gerenciamento de metadados para ativos](metadata.md)
-   + [Write-back de XMP a execuções](xmp-writeback.md)
+   + [XMP gravação em representações](xmp-writeback.md)
    + [Compartilhamento de link de ativos](link-sharing.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
@@ -114,13 +114,13 @@ ht-degree: 49%
    + [Práticas recomendadas de descarregamento de ativos](assets-offloading-best-practices.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
    + [Práticas recomendadas de monitoramento de ativos](assets-monitoring-best-practices.md)
-   + [Suporte a Camera Raw](camera-raw.md)
-   + [Detectar o tipo MIME dos ativos usando o Apache Tika](detect-asset-mime-type-with-tika.md)
+   + [Suporte Camera Raw](camera-raw.md)
+   + [Detecção do tipo MIME de ativos usando o Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificação de imagens](imaging-transcoding-library.md)
    + [Suporte para metadados IPTC](iptc-support.md)
    + [Esquemas de metadados](metadata-schemas.md)
    + [Multilocação para coleções, trechos e modelos de trecho](multi-tenancy.md)
-   + [Aplicação de marca d&#39;água](watermarking.md)
+   + [Marca d&#39;água](watermarking.md)
    + [Importação e exportação de metadados em massa](metadata-import-export.md)
    + [Modelos de ativos](asset-templates.md)
    + [Práticas recomendadas de compartilhamento de pasta do AEM para Creative Cloud](aem-cc-folder-sharing-best-practices.md)
@@ -132,8 +132,8 @@ ht-degree: 49%
    + [Publicar coleções no Brand Portal](brand-portal-publish-collection.md)
    + [Publicar pastas no Brand Portal](brand-portal-publish-folder.md)
 + Fragmentos de conteúdo {#fragments}
-   + [Trabalho com fragmentos de conteúdo](content-fragments.md)
-   + [Gerenciamento dos fragmentos de conteúdo](content-fragments-managing.md)
+   + [Trabalho com Fragmentos de conteúdo](content-fragments.md)
+   + [Gerenciamento dos Fragmentos de conteúdo](content-fragments-managing.md)
    + [Modelos de fragmentos do conteúdo](content-fragments-models.md)
    + [Variações - Criação dos fragmentos de conteúdo](content-fragments-variations.md)
    + [Conteúdo associado aos fragmentos de conteúdo](content-fragments-assoc-content.md)
@@ -142,7 +142,7 @@ ht-degree: 49%
    + [Fragmentos de conteúdo - Marcação](content-fragments-markdown.md)
    + [Criação de projetos de tradução para Fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md)
 + Gerenciar ativos {#managing}
-   + [Gerenciar ativos com a interface otimizada para toque](managing-assets-touch-ui.md)
+   + [Gerenciamento de ativos com a interface otimizada para toque](managing-assets-touch-ui.md)
    + [Gerenciamento de vários ativos e coleções](managing-multiple-assets.md)
    + [Seletor de ativos](asset-selector.md)
    + [Gerenciando Coleções](managing-collections-touch-ui.md)

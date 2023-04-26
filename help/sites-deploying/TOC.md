@@ -11,7 +11,7 @@ role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 21%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 21%
    + [Requisitos técnicos](technical-requirements.md)
    + [Elementos de armazenamento no AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM com MongoDB](aem-with-mongodb.md)
-+ Implantar AEM {#deploying}
++ Implantação de AEM {#deploying}
    + [Implantação e manutenção](deploy.md)
    + [Implantações recomendadas](recommended-deploys.md)
    + [Instalação do servidor de aplicativos](application-server-install.md)
