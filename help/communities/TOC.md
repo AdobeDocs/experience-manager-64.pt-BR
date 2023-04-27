@@ -10,7 +10,7 @@ role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 12%
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 12%
    + [Sites das comunidades](administer-landing.md)
    + [Visão geral da AEM Communities](overview.md)
    + [Novidades AEM Comunidades 6.4](whats-new-aem-communities.md)
-   + [Notas de versão do AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
+   + [Notas de versão da AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [Introdução ao AEM Communities](getting-started.md)
    + [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
    + [Configuração inicial](setup.md)
@@ -35,7 +35,7 @@ ht-degree: 12%
    + [Experimente o site de ativação publicado](enablement-published-site.md)
 + Implantação {#deploy}
    + [Implantação de comunidades](deploy-communities.md)
-   + [Atualização para o AEM 6.4 Communities](upgrade.md)
+   + [Atualização para AEM Comunidades 6.4](upgrade.md)
    + [Topologias recomendadas para comunidades](topologies.md)
    + [Configuração do Dispatcher para Comunidades](dispatcher.md)
 + Administração {#administer}
@@ -143,7 +143,7 @@ ht-degree: 12%
    + [Convenções de nomenclatura](naming-conventions.md)
    + [Refatoração do SocialUtils](socialutils.md)
 + Criação {#authoring}
-   + [Componentes do Communities](author-communities.md)
+   + [Componentes das comunidades](author-communities.md)
    + [Noções básicas sobre componentes do Communities](basics.md)
    + [Recurso Fluxos de atividade](activities.md)
    + [Recurso Atribuições](assignments.md)
