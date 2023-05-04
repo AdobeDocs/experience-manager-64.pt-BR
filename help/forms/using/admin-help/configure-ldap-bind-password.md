@@ -1,30 +1,33 @@
 ---
-title: Configurar a senha de ligação LDAP
-seo-title: Configurar a senha de ligação LDAP
-description: 'Saiba como configurar o campo de senha de associação antes de importar o arquivo de configuração para outro sistema. '
-seo-description: 'Saiba como configurar o campo de senha de associação antes de importar o arquivo de configuração para outro sistema. '
+title: Configurar a senha de vinculação LDAP
+seo-title: Configure the LDAP bind password
+description: Saiba como configurar o campo de senha de vinculação antes de importar o arquivo de configuração para outro sistema.
+seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
 uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
-translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+exl-id: eaa2c889-d116-4209-9063-0c0b32dd8849
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '219'
 ht-degree: 3%
 
 ---
 
+# Configurar a senha de vinculação LDAP{#configure-the-ldap-bind-password}
 
-# Configurar a senha de ligação LDAP{#configure-the-ldap-bind-password}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Para evitar riscos de segurança, o campo de senha de ligação no arquivo de configuração exportado (config.xml) não está configurado. Antes de importar o arquivo de configuração para outro sistema, certifique-se de configurar essa senha. Essa senha substitui uma senha existente armazenada no banco de dados. Uma senha nula não substitui um valor de senha não nulo existente.
+Para evitar riscos de segurança, o campo de senha de vinculação no arquivo de configuração exportado (config.xml) não está configurado. Antes de importar o arquivo de configuração para outro sistema, configure essa senha. Essa senha substitui uma senha existente armazenada no banco de dados. Uma senha nula não substitui um valor de senha não nula existente.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração.
 1. Para exportar a configuração atual para um arquivo, clique em Exportar e salve o arquivo de configuração em outro local.
-1. No arquivo, localize o nó `Domains` > *[Seu nome de domínio]* > `DirectoryConfigs` > `LDAPGroupConfig`. Exemplo:
+1. No arquivo , localize a variável `Domains` > *[Seu nome de domínio]* > `DirectoryConfigs` > `LDAPGroupConfig` nó . Veja um exemplo:
 
    ```as3
     <node name="LDAPGroupConfig"> 
@@ -39,7 +42,7 @@ Para evitar riscos de segurança, o campo de senha de ligação no arquivo de co
 
    Digite um valor para `bindpassword` e salve as alterações.
 
-1. No arquivo, localize o nó `Domains` > *[Seu nome de domínio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Exemplo:
+1. No arquivo , localize a variável `Domains` > *[Seu nome de domínio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nó . Veja um exemplo:
 
    ```as3
     <node name="LDAPUserConfig"> 
@@ -56,4 +59,3 @@ Para evitar riscos de segurança, o campo de senha de ligação no arquivo de co
 
 1. Para importar o arquivo atualizado, em Gerenciamento de usuários, clique em Configuração > Importar e exportar arquivos de configuração.
 1. Clique em Procurar para localizar o arquivo, clique em Importar e em OK.
-

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 exl-id: 516c1561-5c13-4301-8009-9b021087cec7
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '968'
 ht-degree: 5%
 
 ---
 
 # Componentes para fragmentos de conteúdo{#components-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -32,7 +36,7 @@ ht-degree: 5%
 
 Consulte a [API de gerenciamento de fragmentos de conteúdo - Lado do cliente](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
-## Componentes da autoria de página {#components-for-page-authoring}
+## Componentes para criação de página {#components-for-page-authoring}
 
 >[!CAUTION]
 >

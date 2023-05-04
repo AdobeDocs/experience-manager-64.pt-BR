@@ -1,8 +1,8 @@
 ---
 title: Administração de tags
-seo-title: Administração de tags
+seo-title: Administering Tags
 description: Saiba como administrar Tags no AEM.
-seo-description: Saiba como administrar Tags no AEM.
+seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,26 +10,30 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1791'
 ht-degree: 1%
 
 ---
 
 # Administração de tags{#administering-tags}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 Tags são um método rápido e fácil de classificar o conteúdo em um site. Eles podem ser considerados palavras-chave ou rótulos (metadados) que permitem que o conteúdo seja encontrado mais rapidamente como resultado de uma pesquisa.
 
 No Adobe Experience Manager (AEM), uma tag pode ser uma propriedade de
 
-* um nó de conteúdo para uma página (consulte [Usar tags](/help/sites-authoring/tags.md))
+* um nó de conteúdo para uma página (consulte [Uso de tags](/help/sites-authoring/tags.md))
 
-* um nó de metadados para um ativo (consulte [Gerenciar metadados para ativos digitais](/help/assets/metadata.md))
+* um nó de metadados para um ativo (consulte [Gerenciamento de metadados para ativos digitais](/help/assets/metadata.md))
 
 Além de páginas e ativos, tags são usadas para recursos do AEM Communities
 
-* conteúdo gerado pelo usuário (consulte [Marcação de UGC)](/help/communities/tag-ugc.md)
+* conteúdo gerado pelo usuário (consulte [Marcando UGC)](/help/communities/tag-ugc.md)
 
 * Recursos de ativação (consulte [Marcar recursos de ativação](/help/communities/functions.md#catalog-function))
 
@@ -51,12 +55,12 @@ Alguns dos recursos das tags no AEM incluem:
    * Uma tag que não é uma tag de container é chamada de tag de folha
    * Um namespace de tag é uma tag de folha ou uma tag de container
 
-* As tags são usadas pelo [Componente de pesquisa](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) para facilitar a localização de conteúdo.
-* As tags são usadas pelo [Teaser component](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), que monitora a nuvem de tags de um usuário para fornecer conteúdo direcionado.
+* As tags são usadas pelo [Componente de pesquisa](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) para facilitar a descoberta de conteúdo.
+* As tags são usadas pelo [Componente Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), que monitora a nuvem de tags de um usuário para fornecer conteúdo direcionado.
 * Se a marcação for um aspecto importante do seu conteúdo
 
    * certifique-se de empacotar tags com as páginas que as usam
-   * verifique se [as permissões de tag](#setting-tag-permissions) habilitam o acesso de leitura
+   * certifique-se [permissões de tag](#setting-tag-permissions) habilitar acesso de leitura
 
 ## Console de marcação {#tagging-console}
 
@@ -71,21 +75,21 @@ Para acessar o console Marcação :
 * da navegação global
 
    * select **`Tools`**
-   * selecione **`General`**
-   * selecione **`Tagging`**
+   * select **`General`**
+   * select **`Tagging`**
 
 ![managing_tags_usingthetagasministationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ### Criação de um namespace {#creating-a-namespace}
 
-Para criar um novo namespace, selecione o ícone **`Create Namespace`**.
+Para criar um novo namespace, selecione a variável **`Create Namespace`** ícone .
 
-O namespace é, em si, uma tag e não precisa conter nenhuma subtag. No entanto, para continuar criando uma taxonomia, [crie subtags](#creating-tags), que por sua vez podem ser tags de folha ou de contêiner.
+O namespace é, em si, uma tag e não precisa conter nenhuma subtag. No entanto, para continuar criando uma taxonomia, [criar subtags](#creating-tags), que, por sua vez, pode ser tags de folha ou tags de container.
 
 ![chlimage_1-183](assets/chlimage_1-183.png) ![create_tags_andnamespaces](assets/creating_tags_andnamespaces.png)
 
 * **Título**
-* (obrigatório) *Um título de exibição para o namespace.
+*(obrigatório) *Um título de exibição para o namespace.
 
 * **Nome**
 *(opcional) *Um nome para o namespace. Se não especificado, um nome de nó válido é criado a partir do Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
@@ -95,7 +99,7 @@ O namespace é, em si, uma tag e não precisa conter nenhuma subtag. No entanto,
 
 Uma vez inseridas as informações necessárias
 
-* selecione **Criar**
+* select **Criar**
 
 ### Operações em tags {#operations-on-tags}
 
@@ -113,7 +117,7 @@ Selecionar um namespace ou outra tag torna disponíveis as seguintes operações
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Quando a janela do navegador não é larga o suficiente para exibir todos os ícones, os ícones mais à direita são agrupados em um ícone **`... More`**, que exibirá uma lista suspensa dos ícones de operação oculta quando selecionados.
+Quando a janela do navegador não for larga o suficiente para exibir todos os ícones, os ícones mais à direita serão agrupados em um **`... More`** , que exibirá uma lista suspensa dos ícones de operação oculta quando selecionados.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -129,15 +133,15 @@ Para selecionar a tag para operações e fazer várias seleções, selecione som
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Quando um namespace ou outra tag é selecionada, selecionar o ícone **`View Properties`** resulta na exibição de informações sobre o `name`, a hora da última edição e o número de referências. Se publicado, é exibida a hora em que foi publicado pela última vez e a ID do editor. Essas informações aparecerão em uma coluna à esquerda das colunas de tag.
+Quando um namespace ou outra tag for selecionada, selecione a variável **`View Properties`** O ícone resulta na exibição de informações sobre o `name`, hora da última edição e número de referências. Se publicado, é exibida a hora em que foi publicado pela última vez e a ID do editor. Essas informações aparecerão em uma coluna à esquerda das colunas de tag.
 
-![chlimage_1-109](assets/chlimage_1-189.png)
+![chlimage_1-189](assets/chlimage_1-189.png)
 
 ### Referências de tag exibidas {#showing-tag-references}
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
-Quando um namespace ou outra tag for selecionada, selecionar o ícone **`References`**identificará o conteúdo ao qual a tag foi aplicada.
+Quando um namespace ou outra tag for selecionada, selecione **`References`**ícone identificará o conteúdo ao qual a tag foi aplicada.
 
 A exibição inicial é uma contagem de tags aplicadas.
 
@@ -153,12 +157,12 @@ O caminho para a referência é exibido como uma dica de ferramenta ao passar o 
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-Quando um namespace ou outra tag é selecionada (selecionando o ícone ao lado do título), uma tag filho pode ser criada para a tag atual selecionando o ícone **`Create Tag`**.
+Quando um namespace ou outra tag é selecionada (selecionando o ícone ao lado do título), uma tag filho pode ser criada para a tag atual selecionando o **`Create Tag`** ícone .
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
 * **Título**
-* (obrigatório) *Um título de exibição para a tag.
+*(obrigatório) *Um título de exibição para a tag.
 
 * **Nome**
 *(opcional) *Um nome para a tag. Se não especificado, um nome de nó válido é criado a partir do Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
@@ -168,17 +172,17 @@ Quando um namespace ou outra tag é selecionada (selecionando o ícone ao lado d
 
 Uma vez inseridas as informações necessárias
 
-* selecione **Criar**
+* select **Criar**
 
 ### Edição de tags {#editing-tags}
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-Quando um namespace ou outra tag é selecionada, é possível alterar o Título, a Descrição e fornecer as localizações do Título ao selecionar o ícone **`Edit`**.
+Quando um namespace ou outra tag é selecionada, é possível alterar o Título, a Descrição e fornecer as localizações do Título selecionando o **`Edit`**ícone.
 
-Depois que as edições forem feitas, selecione **Save**.
+Depois que as edições forem feitas, selecione **Salvar**.
 
-Para obter detalhes sobre como adicionar traduções de idioma, consulte a seção em [Gerenciar tags em diferentes idiomas](#managing-tags-in-different-languages).
+Para obter detalhes sobre como adicionar traduções de idioma, consulte a seção em [Gerenciamento de tags em diferentes idiomas](#managing-tags-in-different-languages).
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -186,11 +190,11 @@ Para obter detalhes sobre como adicionar traduções de idioma, consulte a seç�
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-Quando um namespace ou outra tag for selecionada, selecionar o ícone **`Move`** permitirá que os administradores e desenvolvedores de tags limpem a taxonomia movendo a tag para um novo local ou renomeando-a. Quando a tag selecionada é uma tag container, mover a tag também moverá todas as tags filho.
+Quando um namespace ou outra tag for selecionada, selecione a variável **`Move`** Esse ícone permitirá que os administradores e desenvolvedores de tags limpem a taxonomia movendo a tag para um novo local ou renomeando-a. Quando a tag selecionada é uma tag container, mover a tag também moverá todas as tags filho.
 
 >[!NOTE]
 >
->Recomenda-se que os Autores só tenham permissão para [editar](#editing-tags) o `title` da tag, não para mover ou renomear tags.
+>Recomenda-se que os Autores só tenham permissão para [editar](#editing-tags) da tag `title`, não para mover ou renomear tags.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -198,14 +202,14 @@ Quando um namespace ou outra tag for selecionada, selecionar o ícone **`Move`**
 
    *(somente leitura)* O caminho atual para a tag selecionada.
 
-* **Mover**
-paraNavegar até o novo caminho sob o qual mover a tag.
+* **Mover para**
+Navegue até o novo caminho sob o qual deseja mover a tag.
 
-* **Renomear**
-paraExibe inicialmente o 
-`name`da tag . Um novo `name`pode ser inserido.
+* **Renomear para**
+Exibe inicialmente o 
+`name`da tag . Um novo `name`podem ser inseridas.
 
-* selecione **Salvar**
+* select **Salvar**
 
 ### Mesclar tags {#merging-tags}
 
@@ -213,16 +217,16 @@ paraExibe inicialmente o
 
 A mesclagem de tags pode ser usada quando uma taxonomia tem duplicatas. Quando a tag A é unida à tag B, todas as páginas marcadas com a tag A serão marcadas com a tag B e a tag A não estará mais disponível para os autores.
 
-Quando um namespace ou outra tag for selecionada, selecionar o ícone **`Merge`**abrirá um painel onde o caminho para mesclar pode ser selecionado.
+Quando um namespace ou outra tag for selecionada, selecione **`Merge`**ícone abrirá um painel onde o caminho para mesclar pode ser selecionado.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Caminho**
 
-   *(somente leitura)* O caminho da tag selecionada a ser unida em outra tag.
+   *(somente leitura)* O caminho da tag selecionada a ser mesclada com outra tag.
 
-* **Mesclar**
-noNavegador para selecionar o caminho da tag para a qual será mesclada.
+* **Mesclar em**
+Navegue para selecionar o caminho da tag para mesclar.
 
 >[!NOTE]
 >
@@ -234,21 +238,21 @@ noNavegador para selecionar o caminho da tag para a qual será mesclada.
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Quando um namespace ou outra tag for selecionada, selecione o ícone **`Publish`**para ativar a tag no ambiente de publicação. Semelhante ao conteúdo da página, somente a tag selecionada é publicada, independentemente de ser ou não uma tag container.
+Quando um namespace ou outra tag for selecionada, selecione **`Publish`**ícone para ativar a tag no ambiente de publicação. Semelhante ao conteúdo da página, somente a tag selecionada é publicada, independentemente de ser ou não uma tag container.
 
-Para publicar uma taxonomia (um namespace e subtags), a prática recomendada é criar um [package](/help/sites-administering/package-manager.md) do namespace (consulte [Taxonomy Root Node](/help/sites-developing/framework.md#taxonomy-root-node)). Certifique-se de [aplicar permissões](#setting-tag-permissions) ao namespace antes de criar o pacote.
+Para publicar uma taxonomia (um namespace e subtags), a prática recomendada é criar um [pacote](/help/sites-administering/package-manager.md) do namespace (consulte [Nó raiz da taxonomia](/help/sites-developing/framework.md#taxonomy-root-node)). Certifique-se de [aplicar permissões](#setting-tag-permissions) para o namespace antes de criar o pacote.
 
 ### Desfazer a publicação de tags {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-Quando um namespace ou outra tag for selecionada, selecionar o ícone **`Unpublish`**desativará a tag no ambiente de criação e a removerá do ambiente de publicação. Semelhante à operação `Delete`, se a tag selecionada for uma tag de container, todas as tags filho serão desativadas no ambiente de criação e removidas do ambiente de publicação.
+Quando um namespace ou outra tag for selecionada, selecione **`Unpublish`**ícone desativará a tag no ambiente de criação e a removerá do ambiente de publicação. Semelhante ao `Delete`, se a tag selecionada for uma tag container , todas as tags filho serão desativadas no ambiente de criação e removidas do ambiente de publicação.
 
 ### Exclusão de tags {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-Quando um namespace ou outra tag for selecionada, selecionar o ícone **`Delete`**removerá permanentemente a tag do ambiente do autor. Se a tag foi publicada, ela também é removida do ambiente de publicação. Se a tag selecionada for uma tag container, todas as tags filho também serão removidas.
+Quando um namespace ou outra tag for selecionada, selecione **`Delete`**ícone removerá permanentemente a tag do ambiente de criação. Se a tag foi publicada, ela também é removida do ambiente de publicação. Se a tag selecionada for uma tag container, todas as tags filho também serão removidas.
 
 ## Definir permissões de tag {#setting-tag-permissions}
 
@@ -257,15 +261,15 @@ As permissões de tag são [&#39;secure (por padrão)&#39;](/help/sites-administ
 * na instância do autor
 
    * fazer logon com privilégios administrativos
-   * acesse o [Console de Segurança](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+   * acesse o [Console de segurança](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * por exemplo, navegue até http://localhost:4502/useradmin
-   * no painel esquerdo, selecione o grupo (ou usuário) para o qual [permissão de leitura](/help/sites-administering/security.md#permissions) deve ser concedida
+   * no painel esquerdo, selecione o grupo (ou usuário) para o qual [permissão de leitura](/help/sites-administering/security.md#permissions) é concedida
    * no painel direito, localize o **Caminho **para o namespace da tag
 
       * por exemplo, `/content/cq:tags/mycommunity`
-   * selecione o `checkbox`na coluna **Read**
-   * selecione **Salvar**
+   * selecione o `checkbox`no **Ler** column
+   * select **Salvar**
 
 
 
@@ -273,23 +277,23 @@ As permissões de tag são [&#39;secure (por padrão)&#39;](/help/sites-administ
 
 * verifique se todas as instâncias de publicação têm as mesmas permissões
 
-   * uma abordagem é criar [um pacote](/help/sites-administering/package-manager.md#package-manager) do namespace no autor
+   * uma abordagem é [criar um pacote](/help/sites-administering/package-manager.md#package-manager) do namespace no autor
 
-      * na guia `Advanced`, para `AC Handling` selecione `Overwrite`
+      * on `Advanced` guia , para `AC Handling` select `Overwrite`
    * replicar o pacote
 
-      * escolha `Replicate` no gerenciador de pacotes
+      * Choose `Replicate` do gerenciador de pacotes
 
 
 ## Gerenciamento de tags em diferentes idiomas {#managing-tags-in-different-languages}
 
-A propriedade `title`de uma tag pode ser traduzida para vários idiomas. Depois de traduzida, a tag apropriada `title`pode ser exibida de acordo com o idioma do usuário ou com o idioma da página.
+O `title`a propriedade de uma tag pode ser traduzida para vários idiomas. Depois de traduzido, a tag apropriada `title`pode ser exibido de acordo com o idioma do usuário ou com o idioma da página.
 
 ### Definição de títulos de tag em vários idiomas {#defining-tag-titles-in-multiple-languages}
 
-A seguir, descreve como traduzir o `title`da tag **Animais** do inglês para o alemão e o francês.
+A seguir, você descreve como traduzir a variável `title`da tag **Animais** do inglês para o alemão e o francês.
 
-Comece selecionando a tag no namespace **Stock Photography** e selecionando o ícone **`Edit`**(consulte a seção [Edição de tags](#editing-tags)).
+Comece selecionando a tag no **Fotografia de bancos de dados** namespace e seleção de **`Edit`**ícone (consulte [Edição de tags](#editing-tags) seção).
 
 O painel Editar tag apresenta a capacidade de escolher idiomas nos quais o título da tag deve ser localizado.
 
@@ -299,7 +303,7 @@ Depois que todas as traduções forem inseridas, selecione **Save **to exit mode
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando o [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou em caixas de diálogo), o idioma da tag depende do contexto.
+Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando a variável [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) é usada em outros casos (por exemplo, em formulários ou em caixas de diálogo), o idioma da tag depende do contexto.
 
 Em vez de usar a configuração de idioma da página, o console Marcação usa a configuração de idioma do usuário. No console Marcação , para a tag &quot;Animais&quot;, &quot;Animaux&quot; seria exibido para um usuário que define o idioma para francês em suas propriedades do usuário.
 

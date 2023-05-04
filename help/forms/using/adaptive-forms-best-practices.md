@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4144'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas para trabalhar com formulários adaptáveis {#best-practices-for-working-with-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
@@ -37,7 +41,7 @@ Além disso, veja algumas leituras recomendadas para práticas recomendadas gera
 
 Uma estrutura de projeto simplificada e padronizada pode reduzir significativamente os esforços de desenvolvimento e manutenção. O Apache Maven é uma ferramenta de código aberto recomendada para criar projetos AEM.
 
-* Usar o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura para AEM projeto. Ele cria a estrutura e os modelos recomendados para o seu projeto de AEM. Além disso, ele fornece sistemas de automação de compilação e controle de alterações para ajudar a gerenciar o projeto.
+* Usar o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura para AEM projeto. Ele cria a estrutura e os modelos recomendados para o projeto do AEM. Além disso, ele fornece sistemas de automação de compilação e controle de alterações para ajudar a gerenciar o projeto.
 
    * Use o maven `archetype:generate` para gerar a estrutura inicial.
    * Use maven `eclipse:eclipse` para gerar os arquivos de projeto do eclipse e importar o projeto para o eclipse.

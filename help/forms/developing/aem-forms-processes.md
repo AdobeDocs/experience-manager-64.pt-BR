@@ -1,8 +1,8 @@
 ---
 title: Noções básicas sobre os processos do AEM Forms
-seo-title: Noções básicas sobre os processos do AEM Forms
+seo-title: Understanding AEM Forms Processes
 description: Saiba como usar processos comerciais da AEM Forms para automatizar operações. Ative os processos para criar um serviço para que você possa chamá-lo como outros serviços. Os processos podem ter vida curta ou longa.
-seo-description: Saiba como usar processos comerciais da AEM Forms para automatizar operações. Ative os processos para criar um serviço para que você possa chamá-lo como outros serviços. Os processos podem ter vida curta ou longa.
+seo-description: Learn how to use AEM Forms business processes to automate operations. Activate the processes to create a service so that you can invoke it like other services. Processes can be short-lived or long-lived.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0ae0ddbf-ded6-4494-bf94-bf6cf7f1fd46
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-
 # Noções básicas sobre os processos do AEM Forms {#understanding-aem-forms-processes}
 
-Um caso de uso comum é um conjunto de serviços da AEM Forms operarem em um único documento. Você pode enviar uma solicitação para o contêiner de serviço criando um processo usando o Workbench. Um processo representa um processo de negócios que você está automatizando. Para obter informações sobre como criar processos, consulte [Usar Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Um caso de uso comum é um conjunto de serviços da AEM Forms operarem em um único documento. Você pode enviar uma solicitação para o contêiner de serviço criando um processo usando o Workbench. Um processo representa um processo de negócios que você está automatizando. Para obter informações sobre como criar processos, consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Quando um processo é ativado, ele se torna um serviço e pode ser chamado como outros serviços. Uma diferença entre um serviço padrão, como o Serviço de criptografia e um serviço originado de um processo, é que o último tem uma operação que executa muitas ações. Por outro lado, um serviço padrão tem muitas operações. Cada operação normalmente executa uma ação, como aplicar uma política a um documento ou criptografar um documento.
 
@@ -43,42 +46,41 @@ Usando o valor do identificador de invocação , você pode rastrear o status do
 
 **Exemplo de processo de duração curta**
 
-A ilustração a seguir é um exemplo de um processo de duração curta chamado *MyApplication/EncryptDocument*.
+A ilustração a seguir é um exemplo de um processo de curta duração chamado *MyApplication/EncryptDocument*.
 
 >[!NOTE]
 >
->Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com os exemplos de código que discutem como invocar esse processo, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Usando Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com os exemplos de código que discutem como invocar este processo, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando esse processo de duração curta é chamado, ele executa as seguintes ações:
 
 1. Obtém o documento PDF não seguro passado para o processo como um valor de entrada.
-1. Criptografa o documento PDF com uma senha. O nome do parâmetro de entrada para esse processo é `inDoc` e o tipo de dados é document.
-1. Salva o documento PDF criptografado por senha como um arquivo PDF no sistema de arquivos local. Esse processo retorna o documento PDF criptografado como um valor de saída. O nome do parâmetro de saída para esse processo é `outDoc` e o tipo de dados é document.
+1. Criptografa o documento PDF com uma senha. O nome do parâmetro de entrada para este processo é `inDoc` e o tipo de dados é documento.
+1. Salva o documento PDF criptografado por senha como um arquivo PDF para o sistema de arquivos local. Esse processo retorna o documento PDF criptografado como um valor de saída. O nome do parâmetro de saída para este processo é `outDoc` e o tipo de dados é documento.
 
-   Esse processo é concluído de forma síncrona no mesmo thread de execução do qual foi chamado. O nome desse processo de duração curta é `MyApplication/EncryptDocument`e sua operação é `invoke`.
+   Esse processo é concluído de forma síncrona no mesmo thread de execução do qual foi chamado. O nome desse processo de curta duração é `MyApplication/EncryptDocument`e o seu funcionamento `invoke`.
 
    >[!NOTE]
    >
-   >Normalmente, um processo de duração curta consiste em mais de três ações. Você cria um processo usando o Workbench. (Consulte [Usando Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >Normalmente, um processo de duração curta consiste em mais de três ações. Você cria um processo usando o Workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *A programação com formulários AEM* descreve as seguintes maneiras nas quais você pode invocar programaticamente esse processo de curta duração:
+   *Programação com formulários AEM* descreve as seguintes maneiras pelas quais você pode invocar programaticamente esse processo de curta duração:
 
-   * [Chamar um processo de duração curta transmitindo um documento inseguro usando o AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  (usando um aplicativo Flex)
-   * [Chamada de um processo de duração curta usando a API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)  de chamada (API de chamada de Java)
-   * [Chamar o AEM Forms usando a codificação](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  Base64 (exemplo de serviço da Web)
-   * [Chamar o AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  (exemplo de serviço da Web)
-   * [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)  (exemplo de serviço da Web)
-   * [Chamar o AEM Forms usando dados BLOB sobre HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  (exemplo de serviço da Web)
-   * [Chamada de AEM Forms usando DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)  (exemplo de serviço da Web)
+   * [Chamar um processo de duração curta transmitindo um documento inseguro usando o AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Usando um aplicativo Flex)
+   * [Chamada de um processo de duração curta usando a API de chamada](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API Java Invocation)
+   * [Chamada de AEM Forms usando codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (exemplo de serviço da Web)
+   * [Chamar o AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemplo de serviço da Web)
+   * [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemplo de serviço da Web)
+   * [Chamada de AEM Forms usando dados BLOB sobre HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (exemplo de serviço da Web)
+   * [Chamar o AEM Forms usando DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (exemplo de serviço da Web)
    * [Chamar o processo MyApplication/EncryptDocument usando REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Exemplo de processo de duração longa**
 
 A ilustração a seguir é um exemplo de um processo de longa duração.
 
-Este processo é invocado quando um candidato submete um formulário de empréstimo. O processo não está completo até que um agente de empréstimo aprove ou rejeite o pedido de empréstimo. O nome desse processo de longa duração é * FirstAppSolution/PreLoanProcess *e sua operação é `invoke_Async`. Esse processo deve ser chamado de forma assíncrona. Para obter informações sobre invocar programaticamente esse processo de longa duração, consulte [Invocando processos de longa vida centrados em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+Este processo é invocado quando um candidato submete um formulário de empréstimo. O processo não está completo até que um agente de empréstimo aprove ou rejeite o pedido de empréstimo. O nome deste processo de longa duração é * FirstAppSolution/PreLoanProcess *e sua operação é `invoke_Async`. Esse processo deve ser chamado de forma assíncrona. Para obter informações sobre invocar programaticamente esse processo de longa duração, consulte [Invocando processos de longa vida centrados em seres humanos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >
 >Esse processo pode ser criado seguindo o tutorial especificado em [Criar seu primeiro aplicativo AEM Forms](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
-

@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 feature: Adaptive Forms
 exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 0%
+source-wordcount: '534'
+ht-degree: 1%
 
 ---
 
 # Aplicar assinaturas eletrônicas a um formulário usando assinaturas do scribble {#apply-electronic-signatures-to-a-form-using-scribble-signatures}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Você pode usar o **Assinatura do Scribble** componente e **Etapa de assinatura** componente para desenhar (Scribble) assinatura em um formulário adaptável. O componente Etapa de assinatura exibe uma versão PDF do formulário adaptável. É necessário ativar uma opção Documento de registro ou formulários adaptáveis baseados em modelo de formulário para usar o componente Etapa de assinatura.
 

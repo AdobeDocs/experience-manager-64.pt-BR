@@ -1,57 +1,61 @@
 ---
 title: Extensão da pesquisa de ativos
-description: Estenda os recursos de pesquisa do  [!DNL Experience Manager] Assets além das pesquisas prontas para uso de ativos por strings.
+description: Amplie os recursos de pesquisa do [!DNL Experience Manager] Os ativos além da caixa pesquisam ativos por cadeias de caracteres.
 contentOwner: AG
 feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '856'
 ht-degree: 15%
 
 ---
 
 # Extensão da pesquisa de ativos {#extending-assets-search}
 
-Você pode estender os recursos de pesquisa do Adobe Experience Manager Assets. Imediatamente, [!DNL Experience Manager] o Assets pesquisa por ativos por strings.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Você pode estender os recursos de pesquisa do Adobe Experience Manager Assets. Pronto para uso, [!DNL Experience Manager] Os ativos pesquisam ativos por cadeias de caracteres.
 
 A pesquisa é feita por meio da interface do QueryBuilder para que a pesquisa possa ser personalizada com vários predicados. Você pode sobrepor o conjunto padrão de predicados no seguinte diretório: `/apps/dam/content/search/searchpanel/facets`.
 
-Também é possível adicionar outras guias ao painel de administração [!DNL Experience Manager] do Assets.
+Também é possível adicionar outras guias à [!DNL Experience Manager] Painel administrativo do Assets.
 
 >[!CAUTION]
 >
->A partir de [!DNL Experience Manager] 6.4, a interface do usuário clássica está obsoleta. Para anúncio, consulte [Recursos obsoletos e removidos](../release-notes/deprecated-removed-features.md). É recomendável usar a interface habilitada para toque. Para personalizações, consulte [Pesquisar aspectos](search-facets.md).
+>Em [!DNL Experience Manager] 6.4, a interface do usuário clássica está obsoleta. Para o anúncio, consulte [Recursos obsoletos e removidos](../release-notes/deprecated-removed-features.md). É recomendável usar a interface habilitada para toque. Para obter as personalizações, consulte [Aspectos de pesquisa](search-facets.md).
 
 ## Sobreposição {#overlaying}
 
-Para sobrepor os predicados pré-configurados, copie o nó `facets` de `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outra propriedade `facetURL` na configuração do painel de pesquisa (o padrão é `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Para sobrepor os predicados pré-configurados, copie a variável `facets` nó a partir de `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outro `facetURL` na configuração do painel de pesquisa (o padrão é `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->Por padrão, a estrutura de diretório em / `apps` não existe e precisa ser criada. Certifique-se de que os tipos de nó correspondam àqueles em / `libs`.
+>Por padrão, a estrutura do diretório em / `apps` não existe e precisa ser criado. Certifique-se de que os tipos de nó correspondam aos valores de / `libs`.
 
 ## Adição de guias {#adding-tabs}
 
-É possível adicionar outras guias de Pesquisa, configurando-as no [!DNL Experience Manager] Administrador de ativos. Para criar guias adicionais:
+É possível adicionar outras guias de Pesquisa, configurando-as no [!DNL Experience Manager] Administrador de ativos Para criar guias adicionais:
 
-1. Crie a estrutura de pastas `/apps/wcm/core/content/damadmin/tabs,`se ela ainda não existir, e copie o nó `tabs` de `/libs/wcm/core/content/damadmin` e cole-o.
+1. Criar a estrutura de pastas `/apps/wcm/core/content/damadmin/tabs,`se ainda não existir, e copie a variável `tabs` nó a partir de `/libs/wcm/core/content/damadmin` e cole-o.
 1. Crie e configure a segunda guia, conforme desejado.
 
    >[!NOTE]
    >
-   >Ao criar um segundo siteadminsearchpanel, certifique-se de definir uma propriedade `id` para evitar conflitos de formulário.
+   >Ao criar um segundo siteadminsearchpanel, certifique-se de definir um `id` para evitar conflitos de formulário.
 
 ## Criação de predicados personalizados {#creating-custom-predicates}
 
-[!DNL Experience Manager] Os ativos vêm com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Experience Manager] Os ativos vêm com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de Compartilhamento de ativos. A personalização de um Compartilhamento de ativos dessa forma é abordada em [Criação e configuração de uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Além de usar predicados pré-existentes, os desenvolvedores [!DNL Experience Manager] também podem criar seus próprios predicados usando a [API do Construtor de consultas](/help/sites-developing/querybuilder-api.md).
+Além de usar predicados pré-existentes, [!DNL Experience Manager] os desenvolvedores também podem criar seus próprios predicados usando o [API do Query Builder](/help/sites-developing/querybuilder-api.md).
 
-Criar predicados personalizados requer conhecimento básico sobre a [estrutura de widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
+Criar predicados personalizados requer conhecimento básico sobre o [Estrutura de widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
 A prática recomendada é copiar um predicado existente e ajustá-lo. Os predicados de amostra estão localizados em `/libs/cq/search/components/predicates`.
 
@@ -142,10 +146,10 @@ Para criar um predicado de propriedade:
    </script>
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó `cq:editConfig` do tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor **DELETE**.
-1. Navegue até o navegador e, na página de exemplo (por exemplo, `press.html`), alterne para o modo de design e ative o novo componente para o sistema de predicado de parágrafo (por exemplo, **left**).
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó `cq:editConfig` de tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor **DELETE**.
+1. Navegue até o navegador e, na página de exemplo (por exemplo, `press.html`) alternar para o modo de design e ativar seu novo componente para o sistema de parágrafo do predicado (por exemplo, **left**).
 
-1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicates** e digite uma palavra de pesquisa, por exemplo, **Diamond** e clique na lupa para iniciar a pesquisa.
+1. Em **Editar** , o novo componente agora está disponível no sidekick (encontrado no **Pesquisar** grupo). Insira o componente no **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamante** e clique na lupa para iniciar a pesquisa.
 
    >[!NOTE]
    >
@@ -249,9 +253,9 @@ Para criar um predicado de grupo:
        });
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó `cq:editConfig` do tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor `DELETE`.
-1. Navegue até o navegador e, na página de exemplo (por exemplo, `press.html`), alterne para o modo de design e ative o novo componente para o sistema de predicado de parágrafo (por exemplo, **left**).
-1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicates**.
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó `cq:editConfig` de tipo primário `cq:EditConfig`. Para que possa remover parágrafos, adicione uma propriedade de vários valores `cq:actions` com um único valor `DELETE`.
+1. Navegue até o navegador e, na página de exemplo (por exemplo, `press.html`) alternar para o modo de design e ativar seu novo componente para o sistema de parágrafo do predicado (por exemplo, **left**).
+1. Em **Editar** , o novo componente agora está disponível no sidekick (encontrado no **Pesquisar** grupo). Insira o componente no **Predicados** coluna.
 
 ### Widgets de predicado instalados {#installed-predicate-widgets}
 
@@ -261,48 +265,48 @@ Os predicados a seguir estão disponíveis como widgets ExtJS pré-configurados.
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `fulltext` |
+| predicateName | String | Nome do predicado. O padrão é `fulltext` |
 | searchCallback | Função | Retorno de chamada para acionar a pesquisa no evento `keyup`. O padrão é `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `property` |
-| propertyName | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:title` |
-| defaultValue | Sequência de caracteres | Valor padrão pré-preenchido. |
+| predicateName | String | Nome do predicado. O padrão é `property` |
+| propertyName | String | Nome da propriedade JCR. O padrão é `jcr:title` |
+| defaultValue | String | Valor padrão pré-preenchido. |
 
 ### PathPredicate {#pathpredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `path` |
-| rootPath | Sequência de caracteres | Caminho raiz do predicado. O padrão é `/content/dam` |
-| pathFieldPredicateName | Sequência de caracteres | O padrão é `folder` |
-| showFlatOption | Booleano | Sinalizador para mostrar a Caixa de seleção `search in subfolders`. O padrão é true. |
+| predicateName | String | Nome do predicado. O padrão é `path` |
+| rootPath | String | Caminho raiz do predicado. O padrão é `/content/dam` |
+| pathFieldPredicateName | String | O padrão é `folder` |
+| showFlatOption | Booleano | Sinalizador para mostrar caixa de seleção `search in subfolders`. O padrão é true. |
 
 ### DatePredicate {#datepredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `daterange` |
-| propertyname | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:content/jcr:lastModified` |
-| defaultValue | Sequência de caracteres | Valor padrão pré-preenchido |
+| predicateName | String | Nome do predicado. O padrão é `daterange` |
+| propertyname | String | Nome da propriedade JCR. O padrão é `jcr:content/jcr:lastModified` |
+| defaultValue | String | Valor padrão pré-preenchido |
 
 ### OptionsPredicate {#optionspredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| título | Sequência de caracteres | Adiciona um título superior adicional |
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `daterange` |
-| propertyname | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:content/metadata/cq:tags` |
-| colapso | Sequência de caracteres | Recolher nível. O padrão é `level1` |
+| título | String | Adiciona um título superior adicional |
+| predicateName | String | Nome do predicado. O padrão é `daterange` |
+| propertyname | String | Nome da propriedade JCR. O padrão é `jcr:content/metadata/cq:tags` |
+| colapso | String | Recolher nível. O padrão é `level1` |
 | triggerSearch | Booleano | Sinalizador para acionar a pesquisa ao verificar. O padrão é false |
 | searchCallback | Função | Retorno de chamada para acionar a pesquisa. O padrão é `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Número | Tempo limite antes do acionamento de searchCallback. O padrão é 800 ms |
 
 ## Personalização dos resultados da pesquisa {#customizing-search-results}
 
-A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. [!DNL Experience Manager] Os ativos vêm com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de Compartilhamento de ativos. Personalizar um Compartilhamento de ativos dessa maneira é abordado em [Criar e configurar uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. [!DNL Experience Manager] Os ativos vêm com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de Compartilhamento de ativos. A personalização de um Compartilhamento de ativos dessa forma é abordada em [Criação e configuração de uma página de compartilhamento de ativos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Além de usar lentes pré-existentes, os desenvolvedores [!DNL Experience Manager] também podem criar suas próprias lentes.
+Além de usar lentes pré-existentes, [!DNL Experience Manager] os desenvolvedores também podem criar suas próprias lentes.

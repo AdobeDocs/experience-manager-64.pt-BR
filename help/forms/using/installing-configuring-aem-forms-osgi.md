@@ -9,14 +9,18 @@ topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 4%
+source-wordcount: '1833'
+ht-degree: 6%
 
 ---
 
 # Instalar e configurar recursos de captura de dados {#install-and-configure-data-capture-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Instale e configure formulários adaptáveis, PDF forms e HTML5 Forms. Configure o Adobe Analytics e o Adobe Target para formulários adaptáveis para analisar o uso de formulários e direcionar usuários com base em seus perfis.
 
@@ -100,7 +104,7 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
 1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) artigo 10. o
+   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artigo 10. o
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie imediatamente o servidor.** Antes de parar o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log é estável.
 1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
@@ -157,7 +161,7 @@ O Dispatcher está armazenando em cache e na ferramenta de balanceamento de carg
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Salve e feche o arquivo. Para obter informações detalhadas sobre filtros, consulte [Documentação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Salve e feche o arquivo. Para obter informações detalhadas sobre filtros, consulte [Documentação do Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configure o serviço de filtro do referenciador:
 
@@ -167,7 +171,7 @@ O Dispatcher está armazenando em cache e na ferramenta de balanceamento de carg
 
 O armazenamento em cache é um mecanismo para reduzir o tempo de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (I/O). O cache de formulários adaptáveis armazena somente o conteúdo de HTML e a estrutura JSON de um formulário adaptável sem salvar dados pré-preenchidos. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável.
 
-* Ao usar o cache de formulários adaptáveis, use o [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) para armazenar em cache bibliotecas de clientes (CSS e JavaScript) de um formulário adaptável.
+* Ao usar o cache de formulários adaptáveis, use o [AEM Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html) para armazenar em cache bibliotecas de clientes (CSS e JavaScript) de um formulário adaptável.
 * Ao desenvolver componentes personalizados, mantenha o cache de formulários adaptáveis desativado no servidor usado para desenvolvimento.
 
 Execute as seguintes etapas para configurar o cache de formulários adaptáveis:

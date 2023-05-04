@@ -1,24 +1,28 @@
 ---
 title: Pasta assistida no AEM Forms
-seo-title: Pasta assistida no AEM Forms
+seo-title: Watched folder in AEM Forms
 description: Um administrador pode colocar uma pasta em observação e iniciar uma operação de fluxo de trabalho, serviço ou script quando um arquivo é colocado na pasta que está sendo observada.
-seo-description: Um administrador pode colocar uma pasta em observação e iniciar uma operação de fluxo de trabalho, serviço ou script quando um arquivo é colocado na pasta que está sendo observada.
+seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
 uuid: a525fb20-7b36-48b8-8663-afd640f75017
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 exl-id: b9d2c63c-1777-4c13-a39f-6891f0ff52b2
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '7662'
+source-wordcount: '7667'
 ht-degree: 0%
 
 ---
 
 # Pasta assistida no AEM Forms {#watched-folder-in-aem-forms}
 
-Um administrador pode configurar uma pasta de rede, conhecida como Pasta assistida, de modo que, quando um usuário colocar um arquivo (como um arquivo PDF) na Pasta assistida, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre workflow, serviço e script, consulte [Vários métodos para processar arquivos](#variousmethodsforprocessingfiles).
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Um administrador pode configurar uma pasta de rede, conhecida como Pasta assistida, de modo que, quando um usuário colocar um arquivo (como um arquivo PDF) na Pasta assistida, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre workflow, serviço e script, consulte [Vários métodos de processamento de arquivos](#variousmethodsforprocessingfiles).
 
 ## Criar uma pasta assistida {#create-a-watched-folder}
 
@@ -26,7 +30,7 @@ Você pode usar um dos seguintes métodos para criar uma Pasta assistida no sist
 
 * Ao configurar as propriedades de um nó de configuração de Pasta assistida, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta assistida a ser criada, conforme mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`
 
-   A pasta `MyWatchedFolder`não existe, o AEM Forms tenta criar a pasta no caminho especificado.
+   O `MyWatchedFolder`não existe, o AEM Forms tenta criar a pasta no caminho especificado.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um endpoint de Pasta assistida e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte [Propriedades da pasta assistida](#watchedfolderproperties).
 
@@ -40,7 +44,7 @@ Para configurar uma Pasta assistida, crie um nó de configuração de Pasta assi
 
 1. Faça logon no CRX-DE lite como administrador e navegue até a pasta /etc/fd/watchfolder/config.
 
-1. Crie um nó do tipo `nt:unstructured`. Por exemplo, watchedfolder
+1. Criar um nó do tipo `nt:unstructured`. Por exemplo, watchedfolder
 
    >[!NOTE]
    >
@@ -55,7 +59,7 @@ Para configurar uma Pasta assistida, crie um nó de configuração de Pasta assi
 
    Para obter uma lista completa das propriedades compatíveis, consulte [Propriedades da pasta assistida](#watchedfolderproperties).
 
-1. Clique em **Salvar tudo**. Depois que o nó é criado e as propriedades são salvas. As pastas `input`, `result`, `failure`, `preserve` e `stage`são criadas no caminho especificado na propriedade `folderPath`.
+1. Clique em **Salvar tudo**. Depois que o nó é criado e as propriedades são salvas. O `input`, `result`, `failure`, `preserve`e `stage`As pastas são criadas no caminho especificado na `folderPath` propriedade.
 
    O trabalho de digitalização começa a digitalizar a Pasta assistida em um intervalo de tempo definido.
 
@@ -73,7 +77,7 @@ Você pode configurar as seguintes propriedades para uma Pasta assistida.
 
 * **runModes (String)**: Uma lista separada por vírgulas de run-modes permitidos para execução de workflows. Alguns exemplos:
 
-   * author
+   * autor
 
    * publicação
 
@@ -84,16 +88,16 @@ Você pode configurar as seguintes propriedades para uma Pasta assistida.
    >
    >Se o servidor que hospeda a Pasta assistida não tiver um dos modos de execução especificados, a Pasta assistida sempre será ativada independentemente dos modos de execução no servidor.
 
-* **outputFilePattern (String)**: Padrão do arquivo de saída. Você pode especificar um padrão de pasta ou arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito em padrão de arquivo. [O ](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) padrão File and folder também pode especificar uma estrutura de diretório para os arquivos de saída. É uma propriedade obrigatória.
+* **outputFilePattern (String)**: Padrão do arquivo de saída. Você pode especificar um padrão de pasta ou arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito em padrão de arquivo. [Padrão de arquivo e pasta](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) também pode especificar uma estrutura de diretório para os arquivos de saída. É uma propriedade obrigatória.
 
 * **stageFileExpirationDuration (Long, padrão -1)**: O número de segundos a aguardar antes de um arquivo/pasta de entrada que já foi selecionado para processamento deve ser tratado como tendo o tempo limite expirado e marcado como uma falha. Esse mecanismo de expiração só é ativado quando o valor dessa propriedade é um número positivo.
 
-   **Observação:** *mesmo quando uma entrada é marcada como tendo o tempo limite expirado usando esse mecanismo, ela ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada tiver sido consumido antes do início do mecanismo de tempo limite, o processamento poderá até prosseguir para a conclusão mais tarde e a saída será despejada para a pasta de resultados. Se o conteúdo não tiver sido consumido antes do tempo limite, é muito provável que o processamento ocorra um erro posteriormente ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha da mesma entrada. Por outro lado, se o processamento da entrada nunca tiver sido ativado devido a um erro intermitente de trabalho/workflow (que é o cenário que o mecanismo de expiração pretende abordar), é claro que nenhuma dessas duas ocorrências ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um período significativo, marcando como falha!&quot;) no log de falha), é aconselhável verificar a pasta de resultados (e também a própria pasta de falha para outra entrada para a mesma entrada) para verificar se qualquer um dos eventos descritos anteriormente ocorreu.*
+   **Observação:** *Mesmo quando uma entrada é marcada como tendo o tempo limite expirado usando esse mecanismo, ela ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada tiver sido consumido antes do início do mecanismo de tempo limite, o processamento poderá até prosseguir para a conclusão mais tarde e a saída será despejada para a pasta de resultados. Se o conteúdo não tiver sido consumido antes do tempo limite, é muito provável que o processamento ocorra um erro posteriormente ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha da mesma entrada. Por outro lado, se o processamento da entrada nunca tiver sido ativado devido a um erro intermitente de trabalho/workflow (que é o cenário que o mecanismo de expiração pretende abordar), é claro que nenhuma dessas duas ocorrências ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um período significativo, marcando como falha!&quot;) no log de falha), é aconselhável verificar a pasta de resultados (e também a própria pasta de falha para outra entrada para a mesma entrada) para verificar se qualquer um dos eventos descritos anteriormente ocorreu realmente.*
 
-* **deleteExpirouStageFileOnlyWhenThrottled (Boolean, padrão verdadeiro):** Se o mecanismo de expiração deve ativar somente quando a pasta de observação for acelerada. O mecanismo é mais relevante para pastas de relógio limitadas, pois um pequeno número de arquivos que permanecem em um estado não processado (devido a falhas intermitentes de trabalho/fluxo de trabalho) tem o potencial de sufocar o processamento para todo o lote quando a limitação está habilitada. Se essa propriedade for mantida como true (o padrão), o mecanismo de expiração não será ativado para pastas de observação que não são limitadas. Se a propriedade for mantida como falsa, o mecanismo sempre será ativado, desde que a propriedade stageFileExpirationDuration seja um número positivo.
+* **deleteExpirouStageFileOnlyWhenThrottled (Booleano, padrão verdadeiro):** Se o mecanismo de expiração deve ser ativado somente quando a pasta monitorada é restrita. O mecanismo é mais relevante para pastas de relógio limitadas, pois um pequeno número de arquivos que permanecem em um estado não processado (devido a falhas intermitentes de trabalho/fluxo de trabalho) tem o potencial de sufocar o processamento para todo o lote quando a limitação está habilitada. Se essa propriedade for mantida como true (o padrão), o mecanismo de expiração não será ativado para pastas de observação que não são limitadas. Se a propriedade for mantida como falsa, o mecanismo sempre será ativado, desde que a propriedade stageFileExpirationDuration seja um número positivo.
 
 * **pollInterval (Longo)**: O intervalo em segundos para verificar a entrada da Pasta assistida. A menos que a configuração Throttle esteja ativada, o Intervalo de pesquisa deve ser maior que o tempo para processar um trabalho médio; caso contrário, o sistema poderá ficar sobrecarregado. O valor padrão é 5. Consulte a descrição do Tamanho do Lote para obter mais informações. O valor do intervalo de pesquisa deve ser maior ou igual a um.
-* **excludeFilePattern (String)**: Um ponto e vírgula  **; lista** delimitada de padrões que uma Pasta assistida usa para determinar quais arquivos e pastas digitalizar e coletar. Qualquer arquivo ou pasta com esse padrão não é verificado para processamento. Essa configuração é útil quando a entrada é uma pasta com vários arquivos. O conteúdo da pasta pode ser copiado para uma pasta com um nome que é selecionado pela Pasta assistida. Isso impede que a Pasta assistida escolha uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. O valor padrão é nulo.
+* **excludeFilePattern (String)**: Um ponto e vírgula **;** lista delimitada de padrões que uma Pasta assistida usa para determinar quais arquivos e pastas digitalizar e coletar. Qualquer arquivo ou pasta com esse padrão não é verificado para processamento. Essa configuração é útil quando a entrada é uma pasta com vários arquivos. O conteúdo da pasta pode ser copiado para uma pasta com um nome que é selecionado pela Pasta assistida. Isso impede que a Pasta assistida escolha uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. O valor padrão é nulo.
 
    Você pode usar [padrões de arquivo](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) para excluir:
 
@@ -101,20 +105,20 @@ Você pode configurar as seguintes propriedades para uma Pasta assistida.
    * Arquivos com nomes específicos; por exemplo, data&amp;ast; excluiriam arquivos e pastas nomeados como data1, data2 e assim por diante.
    * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-      * Data[0-9][0-9][0-9].[dD][aA][tT]
+      * Dados[0-9][0-9][0-9].[dD][aA][tT]
       * &amp;ast;.[dD][Aa][Tt]
       * &amp;ast;.[Xx][Mm][Ll]
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (String)**: Um ponto e vírgula  **; lista** delimitada de padrões que a Pasta assistida usa para determinar quais pastas e arquivos digitalizar e coletar. Por exemplo, se IncludeFilePattern for input&amp;ast;, todos os arquivos e pastas que correspondam a input&amp;ast; são selecionadas. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante. O valor padrão é &amp;ast; e indica todos os arquivos e pastas. Você pode usar padrões de arquivo para incluir:
+* **includeFilePattern (String)**: Um ponto e vírgula **;** lista delimitada de padrões que a Pasta assistida usa para determinar quais pastas e arquivos digitalizar e coletar. Por exemplo, se IncludeFilePattern for input&amp;ast;, todos os arquivos e pastas que correspondam a input&amp;ast; são selecionadas. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante. O valor padrão é &amp;ast; e indica todos os arquivos e pastas. Você pode usar padrões de arquivo para incluir:
 
    * Arquivos com extensões de nome de arquivo específicas; por exemplo, &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
    * Arquivos com nomes específicos; por exemplo, dados .&amp;ast; incluiria arquivos e pastas chamados data1, data2 e assim por diante.
 
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
+   * Dados[0-9][0-9][0-9].[dD][aA][tT]
 
       * &amp;ast;.[dD][Aa][Tt]
       * &amp;ast;.[Xx][Mm][Ll]
@@ -123,7 +127,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 
 * **waitTime (Longo)**: O tempo, em milissegundos, para aguardar antes de digitalizar uma pasta ou arquivo depois que ele for criado. Por exemplo, se o tempo de espera for de 3.600.000 milissegundos (uma hora) e o arquivo tiver sido criado um minuto atrás, esse arquivo será selecionado após 59 ou mais minutos terem passado. O valor padrão é 0. Essa configuração é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o arquivo levar dez minutos para ser baixado, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Isso impede que a Pasta assistida verifique o arquivo se ele não tiver dez minutos.
 * **purgeDuration (Longo)**: Os arquivos e pastas na pasta de resultados são removidos quando são mais antigos que esse valor. Esse valor é medido em dias. Essa configuração é útil para garantir que a pasta de resultados não fique cheia. Um valor de -1 dias indica que nunca excluir a pasta de resultados. O valor padrão é -1.
-* **resultFolderName (String)**: A pasta onde os resultados salvos são armazenados. Se os resultados não forem exibidos nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e são salvos na pasta de falha. Esse valor pode ser um caminho absoluto ou relativo com os seguintes padrões de arquivo:
+* **resultFolderName (Cadeia de caracteres)**: A pasta onde os resultados salvos são armazenados. Se os resultados não forem exibidos nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e são salvos na pasta de falha. Esse valor pode ser um caminho absoluto ou relativo com os seguintes padrões de arquivo:
 
    * %F = prefixo do nome do arquivo
    * %E = extensão de nome de arquivo
@@ -149,8 +153,8 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 >Quanto menor for o tamanho das pastas de resultados, melhor será o desempenho da Pasta assistida. Por exemplo, se a carga estimada para a Pasta Assistida for de 1000 arquivos a cada hora, tente um padrão como resultado/%Y%M%D%H para que uma nova subpasta seja criada a cada hora. Se a carga for menor (por exemplo, 1000 arquivos por dia), você poderá usar um padrão como resultado/%Y%M%D.
 
 * **failureFolderName (String)**: A pasta onde os arquivos de falha são salvos. Esse local é sempre relativo à Pasta assistida. Você pode usar padrões de arquivo, conforme descrito para Pasta de resultados. Arquivos somente leitura não são processados e são salvos na pasta de falha. O valor padrão é falha/%Y/%M/%D/.
-* **preserveFolderName (String):** o local onde os arquivos são armazenados após o processamento bem-sucedido. O caminho pode ser absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito para Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
-* **batchSize (Long)**: O número de arquivos ou pastas a serem coletados por varredura. Utilização para evitar sobrecarga no sistema; a varredura de muitos arquivos de uma vez pode causar uma falha. O valor padrão é 2.
+* **preserveFolderName (String):** O local onde os arquivos são armazenados após o processamento bem-sucedido. O caminho pode ser absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito para Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
+* **batchSize (Long)**: O número de arquivos ou pastas a serem selecionados por varredura. Utilização para evitar sobrecarga no sistema; a varredura de muitos arquivos de uma vez pode causar uma falha. O valor padrão é 2.
 
    As configurações Intervalo de pesquisa e Tamanho do lote determinam quantos arquivos a Pasta assistida recebe em cada verificação. A Pasta assistida usa um conjunto de encadeamentos do Quartz para digitalizar a pasta de entrada. O conjunto de threads é compartilhado com outros serviços. Se o intervalo de varredura for pequeno, os threads verificarão a pasta de entrada com frequência. Se os arquivos forem soltos com frequência na Pasta assistida, mantenha o intervalo de verificação pequeno. Se os arquivos forem descartados com pouca frequência, use um intervalo de varredura maior para que os outros serviços possam usar os threads.
 
@@ -158,7 +162,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 
    Quando os arquivos são soltos na Pasta assistida, ela lista os arquivos na entrada, o que pode reduzir o desempenho se a varredura estiver acontecendo a cada segundo. Aumentar o intervalo de varredura pode melhorar o desempenho. Se o volume de arquivos que está sendo descartado for pequeno, ajuste o Tamanho do lote e o Intervalo de pesquisa de acordo. Por exemplo, se 10 arquivos forem descartados a cada segundo, tente definir o pollInterval como 1 segundo e o Tamanho do lote como 10
 
-* **throttleOn (Booleano)**: Quando essa opção é selecionada, ela limita o número de trabalhos de Pasta assistida que o AEM Forms processa em um determinado momento. O número máximo de tarefas é determinado pelo valor Tamanho do Lote. O valor padrão é true. (Consulte [Sobre a limitação](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Booleano)**: Quando essa opção é selecionada, ela limita o número de trabalhos de Pasta assistida que o AEM Forms processa em um determinado momento. O número máximo de tarefas é determinado pelo valor Tamanho do Lote. O valor padrão é true. (Consulte [Sobre limitação](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Booleano)**: Quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como Falso, os arquivos e pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
 * **preserveOnFailure (Booleano)**: Preservar arquivos de entrada em caso de falha na execução da operação em um serviço. O valor padrão é true.
@@ -170,10 +174,10 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 >Por design, os fluxos de trabalho são assíncronos. Mesmo que você defina o valor como false, os workflows serão iniciados no modo assíncrono.
 
 * **ativado (booleano)**: Desativa e ativa a verificação de uma Pasta assistida. Defina ativado como verdadeiro, para começar a digitalizar a Pasta assistida. O valor padrão é true.
-* **payloadMapperFilter**: Quando uma pasta é configurada como pasta assistida, uma estrutura de pasta é criada na pasta assistida. A estrutura tem pastas para fornecer entradas, receber saídas (resultados), salvar dados para falhas, preservar dados para processos de longa duração e salvar dados para vários estágios. A estrutura de pastas de uma Pasta assistida pode servir como uma carga de fluxos de trabalho centrados no Forms. Um mapeador de carga permite definir a estrutura de uma carga que usa uma Pasta assistida para entrada, saída e processamento. Por exemplo, se você usar o mapeador padrão, ele mapeará o conteúdo da Pasta assistida com a pasta [payload]\input e a pasta [payload]\output. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma implementação pronta para uso:
+* **payloadMapperFilter**: Quando uma pasta é configurada como pasta assistida, uma estrutura de pasta é criada na pasta assistida. A estrutura tem pastas para fornecer entradas, receber saídas (resultados), salvar dados para falhas, preservar dados para processos de longa duração e salvar dados para vários estágios. A estrutura de pastas de uma Pasta assistida pode servir como uma carga de fluxos de trabalho centrados no Forms. Um mapeador de carga permite definir a estrutura de uma carga que usa uma Pasta assistida para entrada, saída e processamento. Por exemplo, se você usar o mapeador padrão, ele mapeará o conteúdo da Pasta assistida com [carga]\input e [carga]\saída pasta. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma implementação pronta para uso:
 
-   * **Mapeador padrão:** use o mapeador de carga padrão para manter o conteúdo de entrada e saída das pastas assistidas em pastas separadas de entrada e saída no payload. Além disso, no caminho de carga de um workflow, use [payload]/input/ e [payload]/output paths para recuperar e salvar o conteúdo.
-   * **Mapeador de carga baseado em arquivo simples:** use o mapeador de carga útil baseado em arquivo simples para manter o conteúdo de entrada e saída diretamente na pasta de carga útil. Ela não cria nenhuma hierarquia extra, como o mapeador padrão.
+   * **Mapeador padrão:** Use o mapeador de carga padrão para manter o conteúdo de entrada e saída das pastas assistidas em pastas separadas de entrada e saída no payload. Além disso, no caminho de carga de um fluxo de trabalho, use [carga]/input/ and [carga]/output caminhos para recuperar e salvar conteúdo.
+   * **Mapeador de carga baseado em arquivo simples:** Use o mapeador de carga baseado em arquivo simples para manter o conteúdo de entrada e saída diretamente na pasta de carga útil. Ela não cria nenhuma hierarquia extra, como o mapeador padrão.
 
 ### Parâmetros de configuração personalizada {#custom-configuration-parameters}
 
@@ -182,9 +186,9 @@ Juntamente com as propriedades de configuração da Pasta assistida listadas aci
 1. Faça logon no CRXDE-Lite e navegue até o nó de configuração da Pasta assistida.
 1. Adicione um parâmetro de propriedade.&lt;property_name> para o nó de configuração Pasta assistida. O tipo da propriedade só pode ser Booliano, Date, Decimal, Double, Long e String. É possível especificar propriedades de valor único e múltiplo.
 
-**Observação:** *se o tipo de dados da propriedade for Double, especifique um ponto decimal no valor dessas propriedades. Para todas as propriedades, onde o tipo de dados é Double e nenhum ponto decimal é especificado no valor, o tipo é convertido em Long. *
+**Observação:** *Se o tipo de dados da propriedade for Double, especifique um ponto decimal no valor dessas propriedades. Para todas as propriedades, onde o tipo de dados é Double e nenhum ponto decimal é especificado no valor, o tipo é convertido em Long. *
 
-Essas propriedades são passadas como um mapa imutável do tipo Map&lt;String, Object> para o código de processamento. O código de processamento pode ser um ECMAScript, Workflow ou um Serviço. Os valores fornecidos para as propriedades estão disponíveis como pares de valores chave no mapa. Chave é o nome da propriedade e valor é o valor da propriedade. Para obter mais informações sobre parâmetros de configuração personalizados, consulte a seguinte imagem:
+Essas propriedades são passadas como um mapa imutável do tipo Mapa&lt;string object=&quot;&quot;> ao código de processamento. O código de processamento pode ser um ECMAScript, Workflow ou um Serviço. Os valores fornecidos para as propriedades estão disponíveis como pares de valores chave no mapa. Chave é o nome da propriedade e valor é o valor da propriedade. Para obter mais informações sobre parâmetros de configuração personalizados, consulte a seguinte imagem:
 
 ![Um exemplo de nó de configuração de pasta de observação com propriedades obrigatórias, algumas propriedades opcionais, alguns parâmetros de configuração](assets/custom-configuration-parameters.png)
 
@@ -216,12 +220,11 @@ Você pode iniciar um fluxo de trabalho, serviço ou script para processar os lo
 
 ### Usar um serviço para processar arquivos de uma pasta assistida   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
-Um Serviço é uma implementação personalizada da interface `com.adobe.aemfd.watchfolder.service.api.ContentProcessor`. Ele é registrado no OSGi junto com algumas propriedades personalizadas. As propriedades personalizadas da implementação a tornam exclusiva e ajudam a identificar a implementação.
+Um Serviço é uma implementação personalizada da variável `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interface. Ele é registrado no OSGi junto com algumas propriedades personalizadas. As propriedades personalizadas da implementação a tornam exclusiva e ajudam a identificar a implementação.
 
 #### Implementação personalizada da interface ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-A implementação personalizada aceita um contexto de processamento (um objeto do tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lê documentos de entrada e parâmetros de configuração do contexto, processa as entradas e adiciona a saída de volta ao
-contexto. O ProcessorContext tem as seguintes APIs:
+A implementação personalizada aceita um contexto de processamento (um objeto do tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lê documentos de entrada e parâmetros de configuração do contexto, processa as entradas e adiciona a saída ao contexto. O ProcessorContext tem as seguintes APIs:
 
 * **getWatchFolderId**: Retorna a ID da pasta assistida.
 * **getInputMap**: Retorna um mapa do tipo Mapa. As chaves do mapa são o nome do arquivo de entrada e um objeto de documento contendo o conteúdo do arquivo. Use a API getinputMap para ler os arquivos de entrada.
@@ -237,9 +240,9 @@ Por exemplo, o código a seguir é uma implementação personalizada da interfac
 public class OutputWriter implements ContentProcessor {
 ```
 
-Ao [configurar uma Pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), se você especificar a propriedade inputProcessorId como (foo=bar) e a propriedade inputProcessorType como Serviço, o Serviço mencionado acima (implementação personalizada) será usado para processar os arquivos de entrada da Pasta assistida.
+Ao [configurar uma pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), se você especificar a propriedade inputProcessorId como (foo=bar) e a propriedade inputProcessorType como Service, o Serviço mencionado acima (implementação personalizada) será usado para processar os arquivos de entrada da Pasta assistida.
 
-O exemplo a seguir também é uma implementação personalizada da interface ContentProcessor . No exemplo, o Serviço aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto de documento é salvo na pasta de resultados. O caminho físico da pasta de resultados é configurado no [nó de configuração da Pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+O exemplo a seguir também é uma implementação personalizada da interface ContentProcessor . No exemplo, o Serviço aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto de documento é salvo na pasta de resultados. O caminho físico da pasta de resultados é configurado na variável [Nó de configuração de pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 ```java
 @Component(immediate = true)
@@ -266,7 +269,7 @@ Scripts são o código personalizado de reclamação do ECMAScript gravado em pr
 * **getConfigParameters**: Retorna um mapa imutável do tipo Mapa. O mapa contém os parâmetros de configuração de uma Pasta assistida.
 * **setResult**: A implementação ContentProcessor usa a API para gravar o documento de saída na pasta de resultados. Você pode fornecer um nome para o arquivo de saída para a API setResult. A API pode optar por usar ou ignorar o arquivo fornecido, dependendo da pasta de saída/padrão de arquivo especificado. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito em padrão de arquivo.
 
-O código a seguir é um exemplo de ECMAScript. Ele aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto de documento é salvo na pasta de resultados. O caminho físico da pasta de resultados é configurado no [nó de configuração da Pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+O código a seguir é um exemplo de ECMAScript. Ele aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto de documento é salvo na pasta de resultados. O caminho físico da pasta de resultados é configurado na variável [Nó de configuração de pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 >[!NOTE]
 >
@@ -287,7 +290,7 @@ Por padrão, uma pasta de contêiner (/etc/fd/watchfolder/scripts) é fornecida,
 
 Se você planeja colocar seus scripts em um local personalizado, é provável que o usuário do serviço padrão não tenha permissões de leitura sobre o local personalizado. Para esse cenário, execute as seguintes etapas para fornecer as permissões necessárias para o local personalizado:
 
-1. Crie um usuário do sistema programaticamente ou por meio do console `https://[server]:[port]/crx/explorer`. Você também pode usar um usuário do sistema existente. É importante trabalhar com os usuários do sistema aqui, em vez dos usuários normais.
+1. Criar um usuário do sistema de forma programática ou por meio do console `https://[server]:[port]/crx/explorer`. Você também pode usar um usuário do sistema existente. É importante trabalhar com os usuários do sistema aqui, em vez dos usuários normais.
 1. Forneça permissões de leitura ao usuário do sistema recém-criado ou existente no local personalizado onde os scripts são armazenados. Você pode ter vários locais personalizados. Forneça ao menos permissões de leitura para todos os locais personalizados.
 1. No console de configuração do Felix (/system/console/configMgr), localize o mapeamento do usuário do serviço para as pastas de observação. Esse mapeamento se parece com &#39;Mapeamento: adobe-aemds-core-watch-folder=..&#39;.
 1. Clique no mapeamento. Para a entrada &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39;, altere fd-service para a ID do usuário do sistema personalizado. Clique em Salvar.
@@ -307,7 +310,7 @@ Os workflows permitem automatizar as atividades do Experience Manager. Os workfl
 
 Execute as seguintes etapas para processar arquivos usando workflows:
 
-1. Crie uma implementação da interface `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor`. É semelhante à implementação criada para um Serviço.
+1. Crie uma implementação do `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor` interface. É semelhante à implementação criada para um Serviço.
 
    >[!NOTE]
    >
@@ -331,13 +334,13 @@ O argumento para processWorkflowContext() é um objeto do tipo com.adobe.aemfd.w
 * getMetadata: Retorna o valor da variável Metadados . As variáveis são passadas para o método WorkflowContextService.execute() .
 * getCommitedVariables: Retorna um mapa de objetos somente leitura que representa variáveis definidas pelas etapas anteriores. Se uma variável não for modificada em nenhuma das etapas anteriores, o valor padrão especificado durante a configuração da Pasta assistida será retornado.
 * getCommitedResults: Retorna um Mapa de documentos somente leitura. O mapa representa os arquivos de saída gerados pelas etapas anteriores.
-* setVariable: A implementação WorkflowContextProcessor usa a variável para manipular as variáveis que representam os dados dinâmicos personalizados que fluem entre as etapas. O nome e o tipo das variáveis são idênticos ao nome das variáveis especificadas durante [configurar a Pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Para alterar o valor de uma variável, chame a API setVariable com um valor não nulo. Para remover uma variável, chame setVariable() com um valor nulo.
+* setVariable: A implementação WorkflowContextProcessor usa a variável para manipular as variáveis que representam os dados dinâmicos personalizados que fluem entre as etapas. O nome e o tipo das variáveis são idênticos ao nome das variáveis especificadas durante [configuração da pasta assistida](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Para alterar o valor de uma variável, chame a API setVariable com um valor não nulo. Para remover uma variável, chame setVariable() com um valor nulo.
 
 As seguintes APIs ProcessorContext também estão disponíveis:
 
 * getWatchFolderId: Retorna a ID da pasta assistida.
-* getInputMap: Retorna um mapa do tipo Mapa&lt;Cadeia de caracteres, Documento>. As chaves do mapa são o nome do arquivo de entrada e um objeto de documento contendo o conteúdo do arquivo. Use a API getinputMap para ler os arquivos de entrada.
-* getConfigParameters: Retorna um mapa imutável do tipo Map&lt;String, Object>. O mapa contém os parâmetros de configuração de uma Pasta assistida.
+* getInputMap: Retorna um mapa do tipo Mapa&lt;string document=&quot;&quot;>. As chaves do mapa são o nome do arquivo de entrada e um objeto de documento contendo o conteúdo do arquivo. Use a API getinputMap para ler os arquivos de entrada.
+* getConfigParameters: Retorna um mapa imutável do tipo Mapa&lt;string object=&quot;&quot;>. O mapa contém os parâmetros de configuração de uma Pasta assistida.
 * setResult: A implementação ContentProcessor usa a API para gravar o documento de saída na pasta de resultados. Você pode fornecer um nome para o arquivo de saída para a API setResult. A API pode optar por usar ou ignorar o arquivo fornecido, dependendo da pasta de saída/padrão de arquivo especificado. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito no padrão de arquivo
 
 Consideração para a API setResult, quando usada em workflows:
@@ -397,11 +400,11 @@ Se a estrutura de uma carga for diferente da estrutura da pasta assistida, você
 
 #### Criação de um filtro personalizado de mapeador de carga {#creating-a-custom-payload-mapper-filter}
 
-1. Baixe [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
+1. Baixar [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
 1. Configure o SDK do cliente no caminho de compilação do projeto baseado em maven. Para começar, você pode baixar e abrir o seguinte projeto baseado em maven no IDE de sua escolha.
 1. Edite o código de filtro do mapeador de carga disponível no conjunto de amostras para atender aos seus requisitos.
 1. Use maven para criar um pacote do Filtro personalizado do Mapeador de Carga.
-1. Use [AEM console de pacotes](http://localhost:4502/system/console/bundles) para instalar o pacote.
+1. Use [console AEM bundles](http://localhost:4502/system/console/bundles) para instalar o pacote.
 
    Agora, o Filtro personalizado do Mapeador de Carga está listado AEM interface do usuário da pasta assistida. Você pode usá-lo com seu fluxo de trabalho.
 
@@ -510,8 +513,8 @@ A Pasta assistida verifica a pasta de entrada em cada pollInterval, seleciona o 
 A limitação impede que a pasta assistida chame novos trabalhos quando os trabalhos anteriores não estiverem concluídos. A Pasta assistida detecta trabalhos em andamento e processa novos trabalhos com base no tamanho do lote menos os trabalhos em andamento. Por exemplo, na segunda invocação , se o número de trabalhos concluídos for apenas três e uma tarefa ainda estiver em andamento, a Pasta assistida chamará apenas mais três trabalhos.
 
 * A Pasta assistida depende do número de arquivos presentes na pasta de estágio para descobrir quantas tarefas estão em andamento. Se os arquivos permanecerem não processados na pasta de preparo, a Pasta assistida não chamará mais tarefas. Por exemplo, se o tamanho do lote for quatro e três trabalhos estiverem paralisados, a Pasta assistida chamará apenas um trabalho em invocações subsequentes. Há vários cenários que podem fazer com que os arquivos permaneçam não processados na pasta de preparo. Quando as tarefas são paralisadas, o administrador pode encerrar o processo na página de administração do Process Management para que a Pasta assistida mova os arquivos para fora da pasta de preparo.
-* Se o servidor do AEM Forms ficar inativo antes que a Pasta assistida chame as tarefas, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Se o servidor do AEM Forms estiver em execução, mas a Pasta assistida não estiver em execução quando o serviço do Gerenciador de trabalhos retornar, o que ocorre quando os serviços não iniciam na sequência ordenada, o administrador pode mover os arquivos para fora da pasta de palco. Para obter informações, consulte [Pontos de falha e recuperação](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se o servidor do AEM Forms ficar inativo antes que a Pasta assistida chame as tarefas, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter mais informações, consulte [Pontos de falha e recuperação](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se o servidor do AEM Forms estiver em execução, mas a Pasta assistida não estiver em execução quando o serviço do Gerenciador de trabalhos retornar, o que ocorre quando os serviços não iniciam na sequência ordenada, o administrador pode mover os arquivos para fora da pasta de palco. Para obter mais informações, consulte [Pontos de falha e recuperação](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### Pontos de falha e recuperaçãoPontos de falha e recuperação {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -551,9 +554,9 @@ Quando a Pasta assistida não puder processar os arquivos de origem na pasta de 
 
 ### Pastas assistidas em cadeia juntas {#chain-watched-folders-together}
 
-Pastas vigiadas podem ser encadeadas juntas para que um documento de resultado de uma Pasta assistida seja o documento de entrada da próxima Pasta assistida. Cada pasta assistida pode chamar um serviço diferente. Ao configurar Pastas vigiadas dessa maneira, vários serviços podem ser chamados. Por exemplo, uma Pasta assistida poderia converter arquivos PDF em Adobe PostScript® e uma segunda Pasta assistida poderia converter os arquivos PostScript em formato PDF/A. Para fazer isso, basta definir a pasta de resultados da Pasta assistida definida pelo primeiro endpoint para apontar para a pasta de entrada da Pasta assistida definida pelo segundo endpoint.
+Pastas vigiadas podem ser encadeadas juntas para que um documento de resultado de uma Pasta assistida seja o documento de entrada da próxima Pasta assistida. Cada pasta assistida pode chamar um serviço diferente. Ao configurar Pastas vigiadas dessa maneira, vários serviços podem ser chamados. Por exemplo, uma Pasta assistida poderia converter arquivos PDF para Adobe PostScript® e uma segunda Pasta assistida poderia converter os arquivos PostScript para o formato PDF/A. Para fazer isso, basta definir a pasta de resultados da Pasta assistida definida pelo primeiro endpoint para apontar para a pasta de entrada da Pasta assistida definida pelo segundo endpoint.
 
-A saída da primeira conversão seria para \path\result. A entrada para a segunda conversão seria \path\result, e a saída da segunda conversão seria para \path\result\result  (ou o diretório que você definiu na caixa Pasta de resultados para a segunda conversão).
+A saída da primeira conversão seria para \path\result. A entrada para a segunda conversão seria \path\result, e a saída da segunda conversão seria para \path\result\result (ou o diretório que você definiu na caixa Pasta de resultados para a segunda conversão).
 
 ### Padrões de arquivo e pasta {#file-and-folder-patterns}
 
@@ -563,7 +566,7 @@ Os administradores podem especificar o tipo de arquivo que pode chamar um servi�
 * Arquivos com nomes específicos; por exemplo, dados .&amp;ast;
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
+   * Dados[0-9][0-9][0-9].[dD][aA][tT]
    * &amp;ast;.[dD][Aa][Tt]
    * &amp;ast;.[Xx][Mm][Ll]
 
@@ -588,11 +591,11 @@ Os mapeamentos de parâmetros de saída também podem especificar padrões adici
 
 Se o padrão de mapeamento do parâmetro de saída terminar com &quot;File.separator&quot; (que é o separador de caminho), uma pasta será criada e o conteúdo será copiado para essa pasta. Se o padrão não terminar com &quot;File.separator&quot;, o conteúdo (arquivo de resultado ou pasta) será criado com esse nome.
 
-## Uso do gerador de PDF com uma pasta assistida {#using-pdf-generator-with-a-watched-folder}
+## Uso do PDF Generator com uma pasta assistida {#using-pdf-generator-with-a-watched-folder}
 
 Você pode configurar uma Pasta assistida para iniciar um fluxo de trabalho, serviço ou script para processar os arquivos de entrada. Na seção a seguir, vamos configurar uma Pasta assistida para iniciar um ECMAScript. O ECMAScript usaria o PDF Generator para converter documentos do Microsoft Word (.docx) em documentos PDF.
 
-Execute as seguintes etapas para configurar uma Pasta assistida com o Gerador de PDF:
+Execute as seguintes etapas para configurar uma Pasta assistida com PDF Generator:
 
 1. [Criar um ECMAScript](/help/forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [Criar um workflow](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
@@ -600,7 +603,7 @@ Execute as seguintes etapas para configurar uma Pasta assistida com o Gerador de
 
 ### Criar um ECMAScript {#create-an-ecmascript}
 
-O ECMAScript usaria a API createPDF do PDF Generator para converter documentos do Microsoft Word (.docx) em documentos PDF. Execute as seguintes etapas para criar o script:
+O ECMAScript usaria a API createPDF do PDF Generator para converter documentos Microsoft Word (.docx) em documentos PDF. Execute as seguintes etapas para criar o script:
 
 1. Abra o CRXDE lite em uma janela do navegador. O URL é `https://[server]:[port]/crx/de`.
 
@@ -643,7 +646,7 @@ O ECMAScript usaria a API createPDF do PDF Generator para converter documentos d
 
    ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
-1. Selecione o workflow recém-criado e clique em **Edit**. O workflow é aberto em uma nova janela.
+1. Selecione o workflow recém-criado e clique em **Editar**. O workflow é aberto em uma nova janela.
 
 1. Exclua a etapa padrão do fluxo de trabalho. Arraste e solte a Etapa do processo do Sidekick para o Fluxo de trabalho.
 
@@ -651,7 +654,7 @@ O ECMAScript usaria a API createPDF do PDF Generator para converter documentos d
 
 1. Clique com o botão direito do mouse na Etapa do processo e selecione **Editar**. A janela Propriedades da etapa é exibida.
 
-1. Na guia Process , selecione o ECMAScript. Por exemplo, o script pdfg-openOffice-sample.ecma criado em [Create an ECMAScript](#p-create-an-ecmascript-p). Ative a opção **Handler Advance** e clique em **OK**.
+1. Na guia Process , selecione o ECMAScript. Por exemplo, o script pdfg-openOffice-sample.ecma criado em [Criar um ECMAScript](#p-create-an-ecmascript-p). Ative o **Avanço do Manipulador** e clique em **OK**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
@@ -672,13 +675,13 @@ O ECMAScript usaria a API createPDF do PDF Generator para converter documentos d
    * inputProcessorId (String): O comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. Neste exemplo, o valor da propriedade inputProcessorType é workflow. Assim, para a propriedade inputProcessorId , especifique o seguinte caminho do fluxo de trabalho PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Padrão do arquivo de saída. Você pode especificar um padrão de pasta ou arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito em padrão de arquivo.
-   Além das propriedades obrigatórias mencionadas acima, as Pastas vigiadas também oferecem suporte para algumas propriedades opcionais. Para obter a lista completa e a descrição das propriedades opcionais, consulte [Propriedades da pasta assistida](#watchedfolderproperties).
+   Além das propriedades obrigatórias mencionadas acima, as Pastas vigiadas também oferecem suporte para algumas propriedades opcionais. Para obter uma lista completa e a descrição das propriedades opcionais, consulte [Propriedades da pasta assistida](#watchedfolderproperties).
 
 ## Uso da Central Migration Bridge (obsoleta) com uma pasta assistida {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
 Você pode configurar uma Pasta assistida para iniciar um fluxo de trabalho, serviço ou script para processar os arquivos de entrada. Na seção a seguir, vamos configurar uma Pasta assistida para iniciar um ECMAScript. O ECMAScript usaria a funcionalidade OutputCentralService e sendToPrinter do SendToPrinterService.
 
-Execute as seguintes etapas para configurar uma Pasta assistida com o Gerador de PDF:
+Execute as seguintes etapas para configurar uma Pasta assistida com PDF Generator:
 
 1. [Criar um ECMAScript](/help/forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [Criar um workflow](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
@@ -686,7 +689,7 @@ Execute as seguintes etapas para configurar uma Pasta assistida com o Gerador de
 
 ### Criar um ECMAScript {#create-an-ecmascript-1}
 
-O ECMAScript usaria a API createPDF do PDF Generator para converter documentos do Microsoft Word (.docx) em documentos PDF. Execute as seguintes etapas para criar o script:
+O ECMAScript usaria a API createPDF do PDF Generator para converter documentos Microsoft Word (.docx) em documentos PDF. Execute as seguintes etapas para criar o script:
 
 1. Abra o CRXDE lite em uma janela do navegador. O URL é `https://[server]:[port]/crx/de`.
 
@@ -729,13 +732,13 @@ O ECMAScript usaria a API createPDF do PDF Generator para converter documentos d
 1. Abra AEM interface do usuário do fluxo de trabalho em uma janela do navegador. `https://[server]:[port]/workflow`
 
 1. Na exibição Modelos, clique em **Novo**. Na caixa de diálogo Novo fluxo de trabalho , especifique **Título** e clique em **OK**.
-1. Selecione o workflow recém-criado e clique em **Edit**. O workflow é aberto em uma nova janela.
+1. Selecione o workflow recém-criado e clique em **Editar**. O workflow é aberto em uma nova janela.
 1. Exclua a etapa padrão do fluxo de trabalho. Arraste e solte a Etapa do processo do Sidekick para o Fluxo de trabalho.
 
    ![create-a-workflow-cmb](assets/create-a-workflow-cmb.png)
 
 1. Clique com o botão direito do mouse na Etapa do processo e selecione **Editar**. A janela Propriedades da etapa é exibida.
-1. Na guia Process , selecione o ECMAScript. Por exemplo, o cmb-mergeandprint-sample.ecma ECMAScript criado na seção [Create a Workflow](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p). Ative a opção **Handler Advance** e clique em **OK**.
+1. Na guia Process , selecione o ECMAScript. Por exemplo, o cmb-mergeandprint-sample.ecma ECMAScript criado em [Criar um workflow](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p) seção. Ative o **Avanço do Manipulador** e clique em **OK**.
 
 ### Configurar a pasta assistida {#configure-the-watched-folder-1}
 

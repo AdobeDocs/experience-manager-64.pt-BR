@@ -5,14 +5,18 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 41%
+source-wordcount: '1678'
+ht-degree: 40%
 
 ---
 
 # Configurar o AEM Assets com o Brand Portal {#configure-integration-64}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Adobe Experience Manager Assets é configurado com o Brand Portal por meio de [!DNL Adobe I/O], que obtém um token IMS para autorização do locatário do Brand Portal.
 
@@ -65,7 +69,7 @@ Depois de baixar o AEM, para obter instruções sobre como configurar uma instâ
 
 Para obter instruções detalhadas, consulte
 
-* [Notas de versão do AEM 6.4 Service Pack ](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [Notas de versão do AEM 6.4 Service Pack](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 **Entre em contato com o Suporte ao cliente** caso não consiga encontrar o pacote AEM ou o Service Pack mais recente.
 

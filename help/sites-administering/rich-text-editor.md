@@ -3,14 +3,18 @@ title: Configurar o editor de rich text
 description: Saiba como configurar o Editor de Rich Text do AEM.
 contentOwner: AG
 exl-id: 2d5e9ada-1567-43dc-ab19-6891e20e1d0b
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
 
 # Configurar o editor de rich text {#configure-the-rich-text-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Editor de Rich Text (RTE) fornece aos autores uma ampla variedade de funcionalidades para editar seu conteúdo de texto. Os ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto WYSIWYG.
 
@@ -44,12 +48,12 @@ A interface de usuário habilitada para toque é a interface de usuário padrão
 
 Os autores podem criar e editar conteúdo textual no AEM usando os diferentes modos de componentes. As opções da barra de ferramentas para criação e formatação de conteúdo e a experiência do usuário de componentes habilitados para RTE em diferentes modos de edição variam com base nas configurações de RTE.
 
-| Modo de edição | Área de edição | Recursos recomendados a serem ativados | Interface de toque | Interface do usuário clássica |
+| Modo de edição | Área de edição | Recursos recomendados a serem ativados | Interface de toque | IU Clássica |
 |--- |--- |--- |--- |--- |
-| Inline | Edição no local para edições rápidas e secundárias; Formatar sem abrir uma caixa de diálogo | Recursos mínimos do RTE | S | S |
-| Tela cheia do RTE | Capa a página inteira | Todos os recursos RTE necessários | S | N |
-| Caixa de diálogo | Caixa de diálogo na parte superior do conteúdo da página, mas não cobre a página inteira | Todos os recursos de RTE necessários na interface clássica; Habilite criteriosamente os recursos na interface do usuário de toque | S | S |
-| Tela cheia da caixa de diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários | S | N |
+| Inline | Edição no local para edições rápidas e secundárias; Formatar sem abrir uma caixa de diálogo | Recursos mínimos do RTE | Y | Y |
+| Tela cheia do RTE | Capa a página inteira | Todos os recursos RTE necessários | Y | N |
+| Caixa de diálogo | Caixa de diálogo na parte superior do conteúdo da página, mas não cobre a página inteira | Todos os recursos de RTE necessários na interface clássica; Habilite criteriosamente os recursos na interface do usuário de toque | Y | Y |
+| Tela cheia da caixa de diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários | Y | N |
 
 >[!NOTE]
 >

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: cc47644419f7b7f4f1f00bb848050aa4a98efa09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 10%
+source-wordcount: '1681'
+ht-degree: 11%
 
 ---
 
 # Formatos de arquivos suportados em [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada funcionalidade tem suporte variado para diferentes tipos MIME.
 
@@ -177,16 +181,16 @@ Além da funcionalidade acima, considere o seguinte:
 
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Transcodificação FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | &#42; |
-| MIDI | ✓ | ✓ |  | - | &#42; |
-| 3GP | ✓ | ✓ |  | - | &#42; |
-| MP3 | ✓ | ✓ | ✓ | - | &#42; |
-| MPG | ✓ | ✓ |  | - | &#42; |
-| OGA | ✓ | ✓ |  | - | &#42; |
-| OGG | ✓ | ✓ |  | - | &#42; |
-| ARM | ✓ | ✓ |  | - | &#42; |
-| WAV | ✓ | ✓ |  | - | &#42; |
-| WMA | ✓ | ✓ |  | - | &#42; |
+| AAC | ✓ | ✓ |  | − | &#42; |
+| MIDI | ✓ | ✓ |  | − | &#42; |
+| 3GP | ✓ | ✓ |  | − | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ |  | − | &#42; |
+| OGA | ✓ | ✓ |  | − | &#42; |
+| OGG | ✓ | ✓ |  | − | &#42; |
+| ARM | ✓ | ✓ |  | − | &#42; |
+| WAV | ✓ | ✓ |  | − | &#42; |
+| WMA | ✓ | ✓ |  | − | &#42; |
 | DVI | ✓ | ✓ |  | &#42; | &#42; |
 | FLV | ✓ | ✓ |  | &#42; | &#42; |
 | M4V | ✓ | ✓ |  | &#42; | &#42; |
@@ -281,8 +285,8 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite no `/conf/glo
 | MOV | video/quicktime |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | MP3 | audio/mpeg |  |  |
 | MP4 | video/mp4 |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
-| MPEG | vídeo/mpeg |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
-| MPG | vídeo/mpeg |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
+| MPEG | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
+| MPG | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | MTS | model/vnd.mts |  |  |
 | OGV | video/ogg |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | OTF | application/x-font-otf |  |  |

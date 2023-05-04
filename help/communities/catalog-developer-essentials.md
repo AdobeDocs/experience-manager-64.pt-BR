@@ -1,8 +1,8 @@
 ---
 title: Fundamentos do catálogo
-seo-title: Fundamentos do catálogo
+seo-title: Catalog Essentials
 description: Visão geral do catálogo
-seo-description: Visão geral do catálogo
+seo-description: Catalog overview
 uuid: 788512bb-fa38-48fb-a769-1eaae6bb95a1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,22 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 exl-id: 1e0a7cab-39b9-4c90-810c-c93fb76c3869
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 3%
+source-wordcount: '394'
+ht-degree: 5%
 
 ---
 
 # Fundamentos do catálogo {#catalog-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 Esta página fornece as informações essenciais para trabalhar com o recurso de catálogo dos sites da comunidade de ativação.
 
 O recurso de catálogo, quando incluído em um site da comunidade, permite que os membros da comunidade naveguem e selecionem recursos de capacitação listados em um catálogo.
 
-O [ `enablement catalog` componente](catalog.md) permite que os membros da comunidade acessem um catálogo de [recursos de ativação](resources.md). O uso de tags de AEM é uma parte importante do gerenciamento da aparência dos recursos de ativação em um catálogo.
+O [ `enablement catalog` componente](catalog.md) permite que membros da comunidade acessem um catálogo de [recursos de habilitação](resources.md). O uso de tags de AEM é uma parte importante do gerenciamento da aparência dos recursos de ativação em um catálogo.
 
-Consulte [Marcando recursos de ativação](tag-resources.md).
+Consulte [Marcar recursos de ativação](tag-resources.md).
 
 ## Fundamentos para o lado do cliente {#essentials-for-client-side}
 
@@ -44,7 +48,7 @@ Consulte [Marcando recursos de ativação](tag-resources.md).
    <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td> 
   </tr> 
   <tr> 
-   <td> <strong>templates</strong></td> 
+   <td> <strong>modelos</strong></td> 
    <td> /libs/social/enablement/components/hbs/catalog/catalog.hbs<br /> </td> 
   </tr> 
   <tr> 
@@ -62,18 +66,18 @@ Consulte [Marcando recursos de ativação](tag-resources.md).
 
 ### Função do catálogo {#catalog-function}
 
-Uma estrutura de site da comunidade que inclui a [função de Catálogo](functions.md#catalog-function), inclui um componente `enablement catalog` configurado.
+Uma estrutura de site da comunidade que inclui a variável [Função de catálogo](functions.md#catalog-function), inclui um `enablement catalog` componente.
 
 ### Pré-filtros {#pre-filters}
 
 Quando uma função de Catálogo é adicionada a um site da comunidade, é possível restringir os recursos de ativação e os caminhos de aprendizado que aparecem no catálogo especificando um pré-filtro. Isso é feito definindo propriedades na instância do recurso de catálogo do site.
 
-Usando o exemplo do [Tutorial de ativação](getting-started-enablement.md):
+O uso do exemplo da variável [Tutorial de ativação](getting-started-enablement.md):
 
 * Sobre o autor
 * Usando [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   * Como [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
+   * Tal como [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 
 * Navegue até o recurso de catálogo na página de catálogo
 
@@ -81,26 +85,26 @@ Usando o exemplo do [Tutorial de ativação](getting-started-enablement.md):
 
 * Adicionar um nó de filtros filho
 
-   * Selecione o nó `catalog`
-   * Selecione **[!UICONTROL Criar Nó]**
+   * Selecione o `catalog`nó
+   * Selecionar **[!UICONTROL Criar nó]**
 
       * Nome: `filters`
       * Tipo: `nt:unstructured`
-   * Selecione **[!UICONTROL Salvar tudo]**
+   * Selecionar **[!UICONTROL Salvar tudo]**
 
 
-* Adicione a propriedade `se_resource-tags` ao nó `filters`
+* Adicionar `se_resource-tags` para a `filters` nó
 
-   * Selecione o nó `filters`
+   * Selecione o `filters` nó
    * Adicionar uma multipropriedade
 
       * Nome: `se_resource-tags`
       * Tipo: String
-      * Valor: *&lt;insira um [TagID](#pre-filter-tagids)>*
-      * Selecione **[!UICONTROL Multi]**
-      * Selecione **[!UICONTROL Adicionar]**
+      * Valor: *&lt;enter a=&quot;&quot; span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />TagID](#pre-filter-tagids)>*[
+      * Selecionar **[!UICONTROL Multi]**
+      * Selecionar **[!UICONTROL Adicionar]**
 
-         * Na caixa de diálogo de pop-up, selecione `+` para adicionar TagIDs de pré-filtro adicionais
+         * Na caixa de diálogo pop-up, selecione `+` para adicionar outras TagIDs de pré-filtro
 
 * Publicar novamente o site da comunidade
 
@@ -108,7 +112,7 @@ Usando o exemplo do [Tutorial de ativação](getting-started-enablement.md):
 
 #### TagIDs pré-filtradas {#pre-filter-tagids}
 
-O pré-filtro [TagIDs](../../help/sites-developing/framework.md#tagid) deve corresponder exatamente às tags aplicadas aos recursos de ativação. Eles estão visíveis na pasta `resources` do site como os valores da propriedade `se_resource-tags`.
+O pré-filtro [TagIDs](../../help/sites-developing/framework.md#tagid) deve corresponder exatamente às tags aplicadas aos recursos de ativação. Elas estão visíveis na variável `resources` pasta do site como os valores da propriedade `se_resource-tags`.
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 

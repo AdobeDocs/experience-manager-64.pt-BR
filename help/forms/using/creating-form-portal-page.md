@@ -10,14 +10,18 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 feature: Forms Portal
 exl-id: 4d66ab64-a132-4f2a-89ca-3fbd8dc56ce2
-source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1682'
+ht-degree: 2%
 
 ---
 
 # Criação de uma página de portal de formulários {#creating-a-forms-portal-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os componentes do portal do Forms equipam os desenvolvedores da Web com componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM). Para obter uma visão geral rápida do portal de formulários, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
 
@@ -161,7 +165,7 @@ O painel Pesquisar permite adicionar os componentes Predicado de data, Predicado
 ![Painel de pesquisa com o Predicado de data, texto completo, propriedades e tags](assets/search-with-predicates.png)
 **Figura:** *Painel de pesquisa com o Predicado de data, texto completo, propriedades e tags*
 
-#### Predicado de data {#date-predicate}
+#### Predicado da data {#date-predicate}
 
 O componente Predicado de data, quando adicionado, ativa a pesquisa nos formulários listados que foram modificados durante uma duração especificada.
 

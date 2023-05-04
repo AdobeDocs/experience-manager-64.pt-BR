@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2898'
 ht-degree: 7%
 
 ---
 
 # Relatório {#reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Para ajudar você a monitorar e analisar o estado da sua instância, o AEM fornece uma seleção de relatórios padrão, que podem ser configurados para seus requisitos individuais:
 

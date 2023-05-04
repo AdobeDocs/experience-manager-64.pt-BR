@@ -1,24 +1,27 @@
 ---
-title: Configurar ambiente para aplicativos AEM Forms
-seo-title: Configurar ambiente para aplicativos AEM Forms
+title: Configurar ambiente para o aplicativo AEM Forms
+seo-title: Set up environment for AEM Forms app
 description: Hardware, software e licenças para criar e implantar o aplicativo AEM Forms.
-seo-description: Hardware, software e licenças para criar e implantar o aplicativo AEM Forms.
+seo-description: Hardware, software, and licenses to build and deploy the AEM Forms app.
 uuid: 0c8f5259-8e9f-45ce-ade4-e14f1a41c0de
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 5c60d1a6-a4a2-4131-81e6-e39a5ab07dcf
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 3%
 
 ---
 
+# Configurar ambiente para o aplicativo AEM Forms {#set-up-environment-for-aem-forms-app}
 
-# Configurar ambiente para aplicativos AEM Forms {#set-up-environment-for-aem-forms-app}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Você precisa do seguinte hardware, software e licenças para criar e implantar o aplicativo AEM Forms:
 
@@ -30,19 +33,19 @@ Você precisa do seguinte hardware, software e licenças para criar e implantar 
 
 ## Para dispositivos iOS {#for-ios-devices}
 
-* Apple Mac baseado em Intel executando Mac OS X 10.9.5 ou superior
+* Apple Mac baseado na Intel executando o Mac OS X 10.9.5 ou superior
 * iOS SDK 8.4 ou superior
 * Versão Xcode: Xcode 6.4 para OS X ou superior
-* Associação ao programa corporativo para desenvolvedores iOS
+* Associação ao programa iOS Developer Enterprise
 * Certificado empresarial para distribuição de aplicativos iOS internos
 * Apple iPad com iOS 8.4 ou posterior
 
 ## Para dispositivos Android {#for-android-devices}
 
-* Android Development Toolkit (conjunto ADT) que pode ser baixado de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
+* Kit de ferramentas de desenvolvimento do Android (pacote ADT) que pode ser baixado de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Se o ambiente estiver configurado em um sistema MAC, o ADT deverá ser instalado na pasta Aplicativos.
-* Se o ADT estiver instalado em qualquer outro local no MAC, ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT precisa ser atualizado no arquivo `local.properties` que está disponível na pasta `src\android` no arquivo de origem extraído `mobileworkspace-src.zip`. Neste arquivo, aponte a variável `sdk.dir` para o local do ADT SDK em sua área de trabalho.
+* Se o ADT estiver instalado em qualquer outro local no MAC, ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT precisará ser atualizado em `local.properties` arquivo disponível em `src\android` pasta no arquivo de origem extraído `mobileworkspace-src.zip`. Nesse arquivo, aponte a variável `sdk.dir` para o local do SDK do ADT no desktop.
 
 >[!NOTE]
 >
->O adobe-lc-mobileworkspace-src.zip contém o PhoneGap SDK 5.0. Certifique-se de que o SDK do PhoneGap não esteja pré-instalado.
+>O adobe-lc-mobileworkspace-src.zip contém PhoneGap SDK 5.0. Certifique-se de que o PhoneGap SDK não esteja pré-instalado.

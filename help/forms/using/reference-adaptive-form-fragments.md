@@ -1,23 +1,27 @@
 ---
 title: Referência de fragmentos de formulário adaptáveis
 seo-title: Reference adaptive form fragments
-description: 'O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
+description: O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 # Referência de fragmentos de formulário adaptáveis {#reference-adaptive-form-fragments}
 
-[Os ](/help/forms/using/adaptive-form-fragments.md) fragmentos de formulário adaptável são um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e pode editá-lo no editor de formulário.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+[Fragmento de formulário adaptável](/help/forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e pode editá-lo no editor de formulário.
 
 Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [Pacote do complemento AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Inclui os seguintes fragmentos:
 

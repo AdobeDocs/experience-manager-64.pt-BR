@@ -1,7 +1,7 @@
 ---
 title: Pacote de Compatibilidade
 seo-title: Compatibility Package
-description: 'A instalação do pacote Compatibilidade no AEM Forms 6.4 permite usar os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e modelos e páginas de formulários adaptáveis obsoletos '
+description: A instalação do pacote Compatibilidade no AEM Forms 6.4 permite usar os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e modelos e páginas de formulários adaptáveis obsoletos
 seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.3 and deprecated adaptive forms templates and pages
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
@@ -11,20 +11,24 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 2%
+source-wordcount: '380'
+ht-degree: 3%
 
 ---
 
 # Instalar pacote de compatibilidade {#compatibility-package}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 A instalação do pacote Compatibilidade no AEM Forms 6.4 permite usar os ativos de Gerenciamento de correspondência do AEM Forms 6.3 e modelos e páginas de formulários adaptáveis obsoletos
 
 ## Visão geral {#overview}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes no AEM Forms 6.4. Para continuar usando as cartas do AEM 6.3 Forms e do AEM 6.2 Forms, é necessário instalar o [Pacote de compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes no AEM Forms 6.4. Para continuar usando as cartas do AEM 6.3 Forms e do AEM 6.2 Forms, é necessário instalar o [Pacote de compatibilidade AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM Forms 6.3 e 6.2 no AEM Forms 6.4:
 
@@ -33,15 +37,15 @@ O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM For
 * Dicionários de dados
 * Modelos e páginas obsoletas de formulários adaptáveis
 
-Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.4 instalando o pacote Compatibilidade](/help/forms/using/compatibility-package.md#assetsmadecompatible).
+Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.4 ao instalar o pacote Compatibilidade](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Adicionar suporte para os ativos AEM Forms 6.3 e 6.2 no AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Depois de executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.4:
 
-Certifique-se de ter [AEM pacote de compatibilidade](/help/sites-deploying/backward-compatibility.md) pré-instalado.
+Certifique-se de que [Pacote de compatibilidade AEM](/help/sites-deploying/backward-compatibility.md) pré-instalado.
 
-1. Instale o [Pacote de Compatibilidade](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. Instale o [Pacote de compatibilidade](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
    Para obter mais informações sobre como fazer upload e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 

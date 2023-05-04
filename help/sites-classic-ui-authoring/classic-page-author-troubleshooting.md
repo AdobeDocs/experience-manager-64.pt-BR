@@ -1,49 +1,52 @@
 ---
-title: 'Solucionar problemas do AEM durante a criação  '
-seo-title: 'Solucionar problemas do AEM durante a criação  '
+title: Solucionar problemas do AEM durante a criação
+seo-title: Troubleshooting AEM when Authoring
 description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
-seo-description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 09409631-c579-4b1f-9193-1348896f6a09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 95%
+source-wordcount: '466'
+ht-degree: 29%
 
 ---
 
-
 # Solucionar problemas do AEM durante a criação  {#troubleshooting-aem-when-authoring}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 
 >[!NOTE]
 >
->Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/known-issues.md) para a sua instância (pacotes de versões e serviços).
+>Ao enfrentar problemas, também vale a pena verificar a lista de [Problemas conhecidos](/help/release-notes/known-issues.md) para sua instância (pacotes de versões e serviços).
 
 >[!NOTE]
 >
->Os usuários que tiverem privilégios de administrador e quiserem resolver os problemas com o AEM, poderão utilizar os métodos de resolução de problemas descritos em [Resolução de problemas do AEM (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema sobre como resolver os problemas do AEM.
+>Os usuários que tiverem privilégios de administrador e quiserem resolver problemas com o AEM, poderão utilizar os métodos de resolução de problemas descritos em [AEM de solução de problemas (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema sobre AEM de solução de problemas.
 
 ## A versão antiga da página ainda está no site publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Você fez alterações em uma página e a replicou para o site de publicação, mas a *versão antiga* da página está sendo mostrada no site de publicação.
+   * Você fez alterações em uma página e replicou a página para o site de publicação, mas a variável *old* A versão da página ainda está sendo exibida no site de publicação.
 
 * **Motivo**:
 
-   * Isso pode ter várias causas, a mais frequente é o cache (o navegador local ou o Dispatcher), embora, às vezes, possa haver um problema com a fila de replicação.
+   * Isso pode ter várias causas, na maioria das vezes o cache (seu navegador local ou o Dispatcher), embora, às vezes, possa ser um problema com a fila de replicação.
 
 * **Soluções**:
 
    * Há várias possibilidades aqui:
-   * Confirmar se a página foi replicada corretamente. Verificar o status da página e, se necessário, o estado da fila de replicação.
+   * Confirme se a página foi replicada corretamente. Verifique o status da página e, se necessário, o estado da fila de replicação.
    * Limpar o cache no seu navegador local e acessar a página novamente.
    * Adicionar `?` ao final do URL da página. Por exemplo:
 
@@ -57,25 +60,25 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Problema**:
 
-   * O sidekick não está visível durante a edição de uma página de conteúdo no ambiente de criação.
+   * O Sidekick não está visível ao editar uma página de conteúdo no ambiente do autor.
 
 * **Motivo**:
 
-   * Em casos raros, pode ser que você tenha posicionado o cabeçalho do sidekick fora do escopo da janela atual. Isso significa que não é possível reposicioná-lo novamente.
+   * Em casos raros, você pode ter posicionado o cabeçalho do sidekick fora do escopo da janela atual. Isso significa que não é possível reposicioná-lo novamente.
 
 * **Solução**:
 
-   * Faça logout da sessão atual e logon novamente. O sidekick retornará para a posição padrão.
+   * Faça logout da sessão atual e login novamente. O sidekick retornará à posição padrão.
 
 ## Localizar e substituir - nem todas as instâncias são substituídas {#find-replace-not-all-instances-are-replaced}
 
 * **Problema:**
 
-   * Ao usar a opção **Localizar e substituir**, pode acontecer que nem todas as instâncias do termo `find` sejam substituídas em uma página.
+   * Ao usar a variável **Localizar e Substituir** pode acontecer que nem todas as instâncias do `find` são substituídos em uma página.
 
 * **Motivo**:
 
-   * A capacidade de **Localizar e substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, o texto de um blog é armazenado na propriedade `jcr:text` , que não está configurada para ser pesquisada. O escopo padrão do servlet localizar e substituir abrange as seguintes propriedades:
+   * A capacidade de **Localizar e Substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, um texto de blog é armazenado em `jcr:text` propriedade que não está configurada para ser pesquisada. O escopo padrão do servlet localizar e substituir abrange as seguintes propriedades:
 
       * `jcr:title`
       * `jcr:description`
@@ -84,7 +87,6 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Solução**:
 
-   * Essas definições podem ser alteradas com a configuração do **Servlet Localizar e substituir do Day CQ WCM** usando o **Console da Web**; por exemplo, em
+   * Essas definições podem ser alteradas com a configuração de **Servlet Localizar e substituir do Day CQ WCM** usando o **Console da Web**; por exemplo, em
 
       `http://localhost:4502/system/console/configMgr`
-

@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 exl-id: 24dd0d05-6327-47e2-a3d1-6ed40af06783
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1789'
 ht-degree: 2%
 
 ---
 
 # Configuração do rastreamento de vídeo para o Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Há vários métodos disponíveis para rastrear eventos de vídeo, 2 dos quais são opções herdadas para versões mais antigas do Adobe Analytics. Essas opções herdadas são: Marcos herdados e segundos herdados.
 
@@ -320,7 +324,7 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
    **Exemplos de chamadas** para o Adobe Analytics usando o exemplo fornecido deve ser semelhante a este quando exibido com o DigitalPulse Debugger:
 
-   ![marcos1](assets/lmilestones1.png)
+   ![lmilestones1](assets/lmilestones1.png)
 
    *O **pev3**enviada na chamada contém as seguintes informações:*
 
@@ -329,7 +333,7 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
    * *Nome do reprodutor* - O reprodutor de vídeo utilizado para reproduzir o ficheiro de vídeo (*Vídeo HTML5*)
    * *Total de segundos reproduzidos* - O número total de segundos de reprodução do vídeo (*25.*)
    * *Iniciar carimbo de data e hora* - Carimbo de data e hora que identifica quando a reprodução do vídeo foi iniciada (*1331035567*)
-   * *Reproduzir sessão* - Os detalhes da sessão de reprodução. Este campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como onde eles começaram a reproduzir o vídeo, se eles usaram o controle deslizante do vídeo para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - vídeo parado em s. 25 da seção L10, em seguida, ignoradas. 48º*)
+   * *Reproduzir sessão* - Os detalhes da sessão de reprodução. Este campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como onde eles começaram a reproduzir o vídeo, se eles usaram o controle deslizante do vídeo para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - vídeo parado em s. 25 da seção L10, em seguida, ignoradas. 48*)
 
 ## Segundos herdados {#legacy-seconds}
 

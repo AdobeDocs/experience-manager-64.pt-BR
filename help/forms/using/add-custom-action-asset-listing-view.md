@@ -1,24 +1,27 @@
 ---
 title: Adicionar ação personalizada à exibição de Listagem de ativos
-seo-title: Adicionar ação personalizada à exibição de Listagem de ativos
+seo-title: Add custom action to the Asset Listing view
 description: Este artigo ensina como adicionar ação personalizada à exibição de Listagem de ativos
-seo-description: Este artigo ensina como adicionar ação personalizada à exibição de Listagem de ativos
+seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 72ce6c24-2758-4888-b797-1b134acc54d2
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 00b3efc5-ef1c-4b9d-957d-2eda01c0b985
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 2%
+source-wordcount: '1396'
+ht-degree: 3%
 
 ---
 
+# Adicionar ação personalizada à exibição de Listagem de ativos {#add-custom-action-to-the-asset-listing-view}
 
-# Adicionar ação personalizada à exibição de Listagem de Ativos {#add-custom-action-to-the-asset-listing-view}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
@@ -29,7 +32,7 @@ Você pode adicionar uma ação personalizada à exibição de Listagem de ativo
 * Um ou mais tipos de ativos ou letras
 * Execução (ação/comando torna-se ativo) na seleção de ativos/letras únicos ou diversos, ou sem seleção
 
-Essa personalização é demonstrada com o cenário que adiciona um comando &quot;Baixar PDF Simples&quot; à exibição da Lista de Ativos para Cartas. Esse cenário de personalização permite que os usuários baixem um PDF simples de uma única carta selecionada.
+Essa personalização é demonstrada com o cenário que adiciona um comando &quot;Baixar PDF simples&quot; à exibição de Lista de ativos para cartas. Esse cenário de personalização permite que os usuários baixem PDF simples de uma única carta selecionada.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -39,17 +42,17 @@ Para concluir o seguinte cenário ou semelhante, você precisa de conhecimento d
 * JavaScript
 * Java
 
-## Cenário: Adicione um comando à interface do usuário da lista de letras para baixar a versão PDF simples de uma letra {#addcommandtoletters}
+## Cenário: Adicione um comando à interface do usuário da lista de letras para baixar a versão de PDF simples de uma letra {#addcommandtoletters}
 
-As etapas abaixo adicionam um comando &quot;Baixar PDF plano&quot; à exibição de Lista de ativos para Cartas e permitem que os usuários baixem PDF simples da carta selecionada. Usando essas etapas com o código e os parâmetros apropriados, é possível adicionar alguma outra funcionalidade a um ativo diferente, como dicionários de dados ou textos.
+As etapas abaixo adicionam um comando &quot;Baixar PDF simples&quot; à exibição Lista de ativos para Cartas e permitem que os usuários baixem o PDF simples da carta selecionada. Usando essas etapas com o código e os parâmetros apropriados, é possível adicionar alguma outra funcionalidade a um ativo diferente, como dicionários de dados ou textos.
 
-Para personalizar o Gerenciamento de correspondência para permitir que os usuários baixem um PDF simples de letras, execute as seguintes etapas:
+Para personalizar o Gerenciamento de correspondência para permitir que os usuários baixem um PDF de cartas simples, execute as seguintes etapas:
 
-1. Vá para `https://[server]:[port]/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Ir para `https://[server]:[port]/[ContextPath]/crx/de` e faça logon como Administrador.
 
 1. Na pasta apps , crie uma pasta nomeada items com caminho/estrutura semelhante à pasta items localizada na pasta de seleção usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta **[!UICONTROL items]** no seguinte caminho e selecione **[!UICONTROL Sobrepor nó]**:
+   1. Clique com o botão direito do mouse no **[!UICONTROL items]** no caminho a seguir e selecione **[!UICONTROL Nó de sobreposição]**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -68,7 +71,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
       **[!UICONTROL Localização:]** /apps/
 
-      **[!UICONTROL Corresponder Tipos de Nó:]** Selecionado
+      **[!UICONTROL Corresponder tipos de nó:]** Selecionado
 
       ![Nó de sobreposição](assets/2_createnodedownloadflatpdf.png)
 
@@ -78,11 +81,11 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
 1. Na pasta de itens recém-criados, adicione um nó para o botão/ação personalizada em um ativo específico (Exemplo: downloadFlatPDF) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta **[!UICONTROL items]** e selecione **[!UICONTROL Create]** > **[!UICONTROL Create Node]**.
+   1. Clique com o botão direito do mouse no **[!UICONTROL items]** e selecione **[!UICONTROL Criar]** > **[!UICONTROL Criar nó]**.
 
    1. Certifique-se de que a caixa de diálogo Criar nó tenha os seguintes valores e clique em **[!UICONTROL OK]**:
 
-      **[!UICONTROL Nome:]** downloadFlatPDF (ou o nome que você deseja dar a essa propriedade)
+      **[!UICONTROL Nome:]** downloadFlatPDF (ou o nome que deseja dar a essa propriedade)
 
       **[!UICONTROL Tipo:]** nt:unstructured
 
@@ -98,18 +101,18 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
     </tr> 
     <tr> 
     <td>Classe </td> 
-    <td>Sequência de caracteres</td> 
+    <td>String</td> 
     <td>foundation-collection-action</td> 
     </tr> 
     <tr> 
     <td>foundation-collection-action</td> 
-    <td>Sequência de caracteres</td> 
-    <td><p>{"target": ".cq-manageasset-admin-children", "ativeSelectionCount": "single", "type": "LETTER"}<br /> <br /> <br /> <strong>ativeSelectionCount</strong> pode ser única ou múltipla para permitir seleções de um ou vários ativos em que a ação personalizada é executada.</p> <p><strong></strong> pode ser uma ou mais (entradas múltiplas separadas por vírgula) das seguintes opções: LETRA,TEXTO,LISTA,CONDIÇÃO,DATADICIONÁRIO</p> </td> 
+    <td>String</td> 
+    <td><p>{"target": ".cq-manageasset-admin-children", "ativeSelectionCount": "single", "type": "LETRA"}<br /> <br /> <br /> <strong>ativeSelectionCount</strong> pode ser única ou múltipla para permitir seleções de um ou vários ativos nos quais a ação personalizada é executada.</p> <p><strong>type</strong> pode ser uma ou mais (vírgulas separadas por várias entradas) das seguintes opções: LETRA,TEXTO,LISTA,CONDIÇÃO,DATADICIONÁRIO</p> </td> 
     </tr> 
     <tr> 
     <td>ícone</td> 
-    <td>Sequência de caracteres</td> 
-    <td>icon-download<br /> <br /> O ícone que o Gerenciamento de correspondência exibe à esquerda do seu comando/menu. Para obter ícones e configurações diferentes disponíveis, consulte a documentação <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">Ícones do CoralUI</a>.<br /> </td> 
+    <td>String</td> 
+    <td>icon-download<br /> <br /> O ícone que o Gerenciamento de correspondência exibe no lado esquerdo do seu comando/menu. Para obter diferentes ícones e configurações disponíveis, consulte <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">Documentação de Ícones do CoralUI</a>.<br /> </td> 
     </tr> 
     <tr> 
     <td>jcr:primaryType</td> 
@@ -118,30 +121,30 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
     </tr> 
     <tr> 
     <td>rel</td> 
-    <td>Sequência de caracteres</td> 
+    <td>String</td> 
     <td>botão download-simples-pdf</td> 
     </tr> 
     <tr> 
     <td>sling:resourceType</td> 
-    <td>Sequência de caracteres</td> 
+    <td>String</td> 
     <td>granite/ui/components/endor/actionbar/button</td> 
     </tr> 
     <tr> 
-    <td>texto</td> 
-    <td>Sequência de caracteres</td> 
-    <td>Baixar PDF simples (ou qualquer outro rótulo)<br /> <br /> O comando que aparece na interface de Listagem de ativos</td> 
+    <td>text</td> 
+    <td>String</td> 
+    <td>Baixe o Flat PDF (ou qualquer outra etiqueta)<br /> <br /> O comando que aparece na interface da Listagem de ativos</td> 
     </tr> 
     <tr> 
     <td>título</td> 
-    <td>Sequência de caracteres</td> 
-    <td>Baixar um PDF simples da carta selecionada (ou qualquer outro rótulo/texto alternativo)<br /> <br /> O título é o texto alternativo que o Gerenciamento de correspondência exibe quando o usuário passa o mouse sobre o comando personalizado.</td> 
+    <td>String</td> 
+    <td>Baixar uma PDF simples da letra selecionada (ou qualquer outro rótulo/texto alternativo)<br /> <br /> O título é o texto alternativo que o Gerenciamento de correspondência exibe quando o usuário passa o mouse sobre o comando personalizado.</td> 
     </tr> 
     </tbody> 
     </table>
 
 1. Na pasta apps , crie uma pasta chamada js com caminho/estrutura semelhante à pasta de itens localizada na pasta admin usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta **[!UICONTROL js]** no seguinte caminho e selecione **[!UICONTROL Sobrepor nó]**: &quot;
+   1. Clique com o botão direito do mouse no **[!UICONTROL js]** no caminho a seguir e selecione **[!UICONTROL Nó de sobreposição]**: &quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -151,13 +154,13 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
       **[!UICONTROL Localização:]** /apps/
 
-      **[!UICONTROL Corresponder Tipos de Nó:]** Selecionado
+      **[!UICONTROL Corresponder tipos de nó:]** Selecionado
 
    1. Clique em **[!UICONTROL OK]**. A estrutura de pastas é criada na pasta de aplicativos. Clique em **[!UICONTROL Salvar tudo]**.
 
 1. Na pasta js , crie um arquivo chamado formaction.js com o código para a manipulação de ação do botão usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta **[!UICONTROL js]** no seguinte caminho e selecione **[!UICONTROL Criar > Criar arquivo]**:
+   1. Clique com o botão direito do mouse no **[!UICONTROL js]** no caminho a seguir e selecione **[!UICONTROL Criar > Criar arquivo]**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -231,7 +234,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
 1. Na pasta apps , crie uma pasta nomeada items com caminho/estrutura semelhante à pasta items localizada na pasta actionhandlers usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta **[!UICONTROL items]** no seguinte caminho e selecione **[!UICONTROL Sobrepor nó]**:
+   1. Clique com o botão direito do mouse no **[!UICONTROL items]** no caminho a seguir e selecione **[!UICONTROL Nó de sobreposição]**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -241,7 +244,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
       **[!UICONTROL Localização:]** /apps/
 
-      **[!UICONTROL Corresponder Tipos de Nó:]** Selecionado
+      **[!UICONTROL Corresponder tipos de nó:]** Selecionado
 
    1. Clique em **[!UICONTROL OK]**. A estrutura de pastas é criada na pasta de aplicativos.
 
@@ -249,11 +252,11 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
 1. No nó itens recém-criados , adicione um nó para o botão/ação personalizado em um ativo específico (Exemplo: letterpdfdownloader) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta de itens e selecione **[!UICONTROL Create > Create Node]**.
+   1. Clique com o botão direito do mouse na pasta de itens e selecione **[!UICONTROL Criar > Criar nó]**.
 
    1. Certifique-se de que a caixa de diálogo Criar nó tenha os seguintes valores e clique em **[!UICONTROL OK]**:
 
-      **[!UICONTROL Nome:]** letterpdfdownloader (ou o nome que você deseja dar a essa propriedade - deve ser exclusivo. Se você usar um nome diferente aqui, também especifique o mesmo na variável ACTION_URL do arquivo formaction.js.)
+      **[!UICONTROL Nome:]** letterpdfdownloader (Ou o nome que você deseja dar a essa propriedade - deve ser exclusivo. Se você usar um nome diferente aqui, também especifique o mesmo na variável ACTION_URL do arquivo formaction.js.)
 
       **[!UICONTROL Tipo:]** nt:unstructured
 
@@ -263,24 +266,24 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
       | **Nome** | **Tipo** | **Valor** |
       |---|---|---|
-      | sling:resourceType | Sequência de caracteres | fd/cm/ma/gui/components/admin/clientlibs/admin |
+      | sling:resourceType | String | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
 1. Crie um arquivo chamado POST.jsp com o código para a manipulação de ação do comando no seguinte local:
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Clique com o botão direito do mouse na pasta **[!UICONTROL admin]** no seguinte caminho e selecione **[!UICONTROL Criar > Criar arquivo]**:
+   1. Clique com o botão direito do mouse no **[!UICONTROL administrador]** no caminho a seguir e selecione **[!UICONTROL Criar > Criar arquivo]**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       Nomeie o arquivo como POST.jsp. (O nome do arquivo precisa ser somente POST.jsp.)
 
-   1. Clique duas vezes no arquivo **[!UICONTROL POST.jsp]** para abri-lo no CRX.
+   1. Clique duas vezes no botão **[!UICONTROL POST.jsp]** para abri-lo no CRX.
    1. Adicione o seguinte código ao arquivo POST.jsp e clique em **[!UICONTROL Salvar tudo]**:
 
       Esse código é específico para o serviço de renderização de letras. Para qualquer outro ativo, adicione as bibliotecas java desse ativo a este código. Para obter mais informações sobre APIs do AEM Forms, consulte [API do AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
-      Para obter mais informações sobre AEM bibliotecas, consulte AEM [Components](/help/sites-developing/components.md).
+      Para obter mais informações sobre AEM bibliotecas, consulte AEM [Componentes](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
@@ -347,27 +350,26 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
       %>
       ```
 
-## Baixe um PDF simples de uma carta usando a funcionalidade personalizada {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## Baixe o PDF de uma carta usando a funcionalidade personalizada {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Depois de ter adicionado a funcionalidade personalizada para baixar PDF simples de suas cartas, você pode usar as seguintes etapas para baixar a versão PDF simples da carta selecionada:
+Depois de ter adicionado a funcionalidade personalizada para baixar o PDF simples de suas cartas, você pode usar as seguintes etapas para baixar a versão simples do PDF da carta selecionada:
 
-1. Vá para `https://[server]:[port]/[ContextPath]/projects.html` e faça logon.
+1. Ir para `https://[server]:[port]/[ContextPath]/projects.html` e faça logon.
 
-1. Selecione **[!UICONTROL Forms > Letters]**. O Gerenciamento de correspondência lista as cartas disponíveis no sistema.
-1. Clique em **[!UICONTROL Selecione]** e clique em uma letra para selecioná-la.
-1. Selecione **[!UICONTROL Mais]** > &lt;Baixar PDF simples> (A funcionalidade personalizada criada seguindo as instruções deste artigo). A caixa de diálogo Baixar carta como PDF é exibida.
+1. Selecionar **[!UICONTROL Forms > Cartas]**. O Gerenciamento de correspondência lista as cartas disponíveis no sistema.
+1. Clique em **[!UICONTROL Selecionar]** e clique em uma carta para selecioná-la.
+1. Selecionar **[!UICONTROL Mais]** > &lt;download flat=&quot;&quot; pdf=&quot;&quot;> (A funcionalidade personalizada criada com as instruções deste artigo). A caixa de diálogo Baixar carta como PDF é exibida.
 
-   O nome do item de menu, a funcionalidade e o texto alternativo estão de acordo com a personalização criada em [Cenário: Adicione um comando à interface do usuário da lista de letras para baixar a versão PDF simples de uma letra.](#addcommandtoletters)
+   O nome do item de menu, a funcionalidade e o texto alternativo estão de acordo com a personalização criada em [Cenário: Adicione um comando à interface do usuário da lista de letras para baixar a versão de PDF simples de uma letra.](#addcommandtoletters)
 
-   ![Funcionalidade personalizada: Baixar PDF simples](assets/5_downloadflatpdf.png)
+   ![Funcionalidade personalizada: Baixar o Flat PDF](assets/5_downloadflatpdf.png)
 
 1. Na caixa de diálogo Baixar carta como PDF, selecione o XML relevante a partir do qual deseja preencher os dados no PDF.
 
    >[!NOTE]
    >
-   >Antes de baixar a carta como um PDF simples, é possível criar o arquivo XML com os dados na carta usando a opção **[!UICONTROL Criar relatório]**.
+   >Antes de baixar a carta como um PDF simples, é possível criar o arquivo XML com os dados da carta usando a **[!UICONTROL Criar relatório]** opção.
 
    ![Baixar carta como PDF](assets/6_downloadflatpdf.png)
 
    A carta é baixada no computador como um PDF simples.
-

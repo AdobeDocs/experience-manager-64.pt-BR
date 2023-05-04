@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 11%
+source-wordcount: '785'
+ht-degree: 8%
 
 ---
 
 # Implementação de referência We.Retail{#we-retail-reference-implementation}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -31,7 +35,7 @@ Embora ilustre um negócio de varejo, a maneira como o site é configurado pode 
 
 Como AEM implementação de referência padrão, o We.Retail exibe alguns dos recursos mais avançados do AEM.
 
-| **Recurso** | **Descrição** | **Está interessado?** |
+| **Destaque** | **Descrição** | **Está interessado?** |
 |---|---|---|
 | [Estrutura de site globalizada](/help/sites-administering/tc-bp.md) | We.Retail inclui matrizes de idioma que são copiadas em tempo real em sites específicos do país. | [Experimente!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Layout responsivo](/help/sites-authoring/responsive-layout.md) | Todas as páginas apresentam layout responsivo para se adaptarem dinamicamente à tela e ao tamanho do dispositivo. | [Experimente!](/help/sites-developing/we-retail-responsive-layout.md) |
@@ -41,7 +45,7 @@ Como AEM implementação de referência padrão, o We.Retail exibe alguns dos re
 | [Sites das comunidades](/help/communities/overview.md) | Permitindo que visitantes se juntem a discussões da comunidade, leiam blogs e muito mais |  |
 | [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) | Todos os componentes se baseiam nos novos componentes principais e são mais utilizáveis e configuráveis pelo usuário, prontos para uso | [Experimente!](/help/sites-developing/we-retail-core-components.md) |
 | [Fragmentos de conteúdo](/help/assets/content-fragments.md) | A seção Experiências We.Retail mostra o poder da reutilização do conteúdo por meio de fragmentos de conteúdo. | [Experimente-os!](/help/sites-developing/we-retail-content-fragments.md) |
-| [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md) | Um Fragmento de experiência é um grupo de um ou mais componentes, incluindo o conteúdo e o layout que podem ser referenciados nas páginas. | [Experimente-os!](/help/sites-developing/we-retail-experience-fragments.md) |
+| [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md) | Um Fragmento de experiência é um grupo de um ou mais componentes, incluindo conteúdo e layout que podem ser referenciados nas páginas. | [Experimente-os!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Introdução {#getting-started}
 
@@ -79,7 +83,7 @@ A tabela a seguir fornece uma visão geral dos principais recursos disponíveis 
 * **Disponível** significa que exemplos do recurso são encontrados no conteúdo de amostra.
 * **Não disponível** significa que exemplos do recurso não estão disponíveis no conteúdo de amostra, mas não significa que o recurso em si não esteja disponível.
 
-| **Recurso** | **We.Retail** | **Geometrixx** |
+| **Destaque** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | Estrutura de site globalizada | Mestres de idioma copiados em tempo real em sites específicos de país | Não disponível |
 | Fragmentos de conteúdo | Disponível | Não disponível |

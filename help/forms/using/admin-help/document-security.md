@@ -1,8 +1,8 @@
 ---
-title: 'Sobre a segurança do documento '
-seo-title: 'Sobre a segurança do documento '
+title: Sobre a segurança do documento
+seo-title: About document security
 description: Saiba como criar, armazenar e aplicar configurações de confidencialidade predefinidas e distribuir suas informações com segurança usando a segurança do documento.
-seo-description: Saiba como criar, armazenar e aplicar configurações de confidencialidade predefinidas e distribuir suas informações com segurança usando a segurança do documento.
+seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
 uuid: 31b0c24f-a588-44f7-a9ba-e9780e82c066
 contentOwner: admin
 content-type: reference
@@ -10,23 +10,26 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: fa62a521-1a0b-4856-acc6-71c51ad9e527
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 0%
+source-wordcount: '2560'
+ht-degree: 1%
 
 ---
 
-
 # Sobre a segurança do documento {#about-document-security}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A segurança de documentos garante que somente usuários autorizados possam usar seus documentos. Usando a segurança de documentos, você pode distribuir com segurança todas as informações salvas em um formato compatível. Os formatos de arquivo compatíveis incluem:
 
 * Arquivos Adobe PDF
 * Arquivos do Microsoft® Word, Excel e PowerPoint
 
-Para obter mais informações sobre como as políticas protegem os tipos de arquivos suportados, consulte [Informações adicionais sobre segurança de documentos](https://www.adobe.com/go/learn_aemforms_doc_security_63).
+Para obter mais informações sobre como as políticas protegem os tipos de arquivos suportados, consulte [Informações adicionais de segurança do documento](https://www.adobe.com/go/learn_aemforms_doc_security_63).
 
 Usando a segurança de documentos, você pode criar, armazenar e aplicar facilmente configurações de confidencialidade predefinidas a seus documentos. Para evitar que as informações se espalhem além do seu alcance, você também pode monitorar e controlar como os recipients usam seus documentos depois de distribuí-los.
 
@@ -34,7 +37,7 @@ Você pode proteger documentos usando políticas. Uma *política* é uma coleç�
 
 Os usuários de segurança de documentos criam políticas por meio das páginas da Web do usuário final. Os administradores usam as páginas da Web de segurança de documentos para criar conjuntos de políticas que contêm políticas compartilhadas disponíveis para todos os usuários autorizados.
 
-Embora as políticas sejam armazenadas na segurança do documento, você as aplica a documentos por meio do aplicativo cliente. Como aplicar políticas a documentos PDF é descrito detalhadamente em *Ajuda do Acrobat*. A aplicação de políticas usando outros aplicativos, como o Microsoft Office, está documentada na *Ajuda de extensões do Acrobat Reader DC* para o aplicativo.
+Embora as políticas sejam armazenadas na segurança do documento, você as aplica a documentos por meio do aplicativo cliente. Como aplicar políticas a documentos do PDF é descrito detalhadamente em *Ajuda do Acrobat*. A aplicação de políticas usando outros aplicativos, como o Microsoft Office, está documentada na *Ajuda das extensões do Acrobat Reader DC* para o aplicativo.
 
 Quando você aplica uma política a um documento, as configurações de confidencialidade especificadas na política protegem as informações que o documento contém. As configurações de confidencialidade também protegem quaisquer arquivos (texto, áudio ou vídeo) dentro de um documento PDF. Você pode distribuir o documento protegido por política para recipients autorizados pela política.
 
@@ -48,9 +51,9 @@ Por meio da segurança do documento, é possível monitorar documentos protegido
 
 A segurança do documento consiste em um servidor e interface do usuário:
 
-**Servidor:** o componente central pelo qual a segurança de documentos executa transações, como autenticação de usuário, gerenciamento em tempo real de políticas e aplicação de confidencialidade. O servidor também fornece um repositório central para políticas, registros de auditoria e outras informações relacionadas.
+**Servidor:** O componente central através do qual a segurança de documentos realiza transações, como autenticação de usuários, gerenciamento em tempo real de políticas e aplicação de confidencialidade. O servidor também fornece um repositório central para políticas, registros de auditoria e outras informações relacionadas.
 
-**Páginas da Web:** a interface em que você cria políticas, gerencia documentos protegidos por políticas e monitora eventos associados a documentos protegidos por políticas. Os administradores também podem configurar opções globais, como autenticação de usuários, auditoria e mensagens para usuários convidados, e gerenciar contas de usuários convidados.
+**Páginas da Web:** A interface onde você cria políticas, gerencia documentos protegidos por políticas e monitora eventos associados a documentos protegidos por políticas. Os administradores também podem configurar opções globais, como autenticação de usuários, auditoria e mensagens para usuários convidados, e gerenciar contas de usuários convidados.
 
 ![rm_psworkflow](assets/rm_psworkflow.png)
 
@@ -149,9 +152,9 @@ Os administradores de segurança de documentos podem criar funções personaliza
 
 ## Políticas e documentos protegidos por políticas {#policies-and-policy-protected-documents}
 
-Uma *policy* define um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Uma política também permite que as permissões em um documento sejam alteradas dinamicamente. Fornece à pessoa que protege o documento permissão para alterar as configurações de confidencialidade para revogar o acesso ao documento ou para alterar a política.
+A *política* define um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Uma política também permite que as permissões em um documento sejam alteradas dinamicamente. Fornece à pessoa que protege o documento permissão para alterar as configurações de confidencialidade para revogar o acesso ao documento ou para alterar a política.
 
-A proteção de política pode ser aplicada a um documento PDF usando o Adobe Acrobat® Pro e o Acrobat Standard. A proteção de políticas pode ser aplicada a outros tipos de arquivos, como arquivos do Microsoft Word, Excel e PowerPoint, usando o aplicativo cliente com as extensões adequadas do Acrobat Reader DC instaladas.
+A proteção de política pode ser aplicada a um documento PDF usando o Adobe Acrobat® Pro e o Acrobat Standard. A proteção da política pode ser aplicada a outros tipos de arquivos, como arquivos do Microsoft Word, Excel e PowerPoint, usando o aplicativo cliente com as extensões Acrobat Reader DC apropriadas instaladas.
 
 ### Como as políticas funcionam {#how-policies-work}
 
@@ -161,7 +164,7 @@ As configurações de confidencialidade em uma política determinam como os dest
 
 >[!NOTE]
 >
->As configurações de confidencialidade aplicadas por meio de uma política substituem quaisquer configurações que possam ter sido aplicadas a um documento PDF no Acrobat usando as opções de segurança de senha ou certificado. (Consulte a Ajuda do Acrobat para obter mais informações.)
+>As configurações de confidencialidade aplicadas por meio de uma política substituem quaisquer configurações que possam ter sido aplicadas a um documento do PDF no Acrobat usando as opções de segurança de senha ou certificado. (Consulte a Ajuda do Acrobat para obter mais informações.)
 
 Usuários e administradores criam políticas por meio das páginas da Web de segurança de documentos. Somente uma política de cada vez pode ser aplicada a um documento. É possível aplicar uma política usando um destes métodos:
 
@@ -178,13 +181,13 @@ As etapas no diagrama são as seguintes:
 1. A segurança de documentos cria uma licença de documento e chaves de documento e criptografa a política. A licença do documento, a política criptografada e a chave do documento são retornadas ao aplicativo cliente.
 1. O documento é criptografado com a chave do documento e a chave do documento é descartada. O documento agora incorpora a licença e a política. Essas tarefas são executadas no aplicativo cliente suportado.
 
-Quando você aplica uma política a um documento, as informações que o documento contém, incluindo quaisquer arquivos contidos (texto, áudio ou vídeo) em documentos PDF, são protegidas pelas configurações de confidencialidade especificadas na política. A segurança do documento gera uma licença e informações de criptografia incorporadas ao documento. Ao distribuir o documento, a segurança do documento pode autenticar os recipients que tentarem abrir o documento e autorizar o acesso de acordo com os privilégios especificados na política.
+Quando você aplica uma política a um documento, as informações que o documento contém, incluindo quaisquer arquivos contidos (texto, áudio ou vídeo) em documentos do PDF, são protegidas pelas configurações de confidencialidade especificadas na política. A segurança do documento gera uma licença e informações de criptografia incorporadas ao documento. Ao distribuir o documento, a segurança do documento pode autenticar os recipients que tentarem abrir o documento e autorizar o acesso de acordo com os privilégios especificados na política.
 
 Se o uso offline estiver ativado, os recipients também poderão usar documentos protegidos por política offline (sem uma conexão ativa de Internet ou de rede) pelo período especificado na política.
 
-### Como os documentos protegidos por política funcionam {#how-policy-protected-documents-work}
+### Como funcionam os documentos protegidos por políticas {#how-policy-protected-documents-work}
 
-Para abrir e usar documentos protegidos por políticas, a política deve incluir seu nome como destinatário e você deve ter uma conta de segurança de documento válida. Para documentos PDF, você precisa do Acrobat ou Adobe Reader®. Para outros tipos de arquivos, você precisa do aplicativo apropriado para o arquivo com as extensões do Acrobat Reader DC instaladas.
+Para abrir e usar documentos protegidos por políticas, a política deve incluir seu nome como destinatário e você deve ter uma conta de segurança de documento válida. Para documentos do PDF, você precisa do Acrobat ou Adobe Reader®. Para outros tipos de arquivos, você precisa do aplicativo apropriado para o arquivo com as extensões do Acrobat Reader DC instaladas.
 
 Ao tentar abrir um documento protegido por política, o Acrobat, o Adobe Reader ou as extensões do Acrobat Reader DC conectam-se à segurança do documento para autenticá-lo. Em seguida, você pode continuar a fazer logon. Se o uso do documento estiver sendo auditado, uma mensagem de notificação será exibida. Depois que a segurança do documento determina quais permissões de documento conceder, ele gerencia a descriptografia do documento. Você pode então usar o documento de acordo com as configurações de confidencialidade da política.
 
@@ -203,15 +206,15 @@ Você pode continuar usando um documento sob estas condições:
 
 Também é possível usar documentos protegidos por políticas offline (sem uma conexão de Internet ou de rede) se a política permitir acesso offline. Primeiro, você deve fazer logon na segurança do documento para sincronizar o documento. Você pode então usar o documento pela duração do período de concessão offline especificado na política.
 
-Quando o período de concessão offline terminar, você deverá sincronizar o documento com a segurança do documento novamente, entrando online e abrindo um documento protegido por política ou usando um comando no aplicativo cliente. (Consulte *Ajuda do Acrobat* ou a *Ajuda do Acrobat Reader DC Extensions* apropriada para obter detalhes.)
+Quando o período de concessão offline terminar, você deverá sincronizar o documento com a segurança do documento novamente, entrando online e abrindo um documento protegido por política ou usando um comando no aplicativo cliente. (Consulte *Ajuda do Acrobat* ou *Ajuda das extensões do Acrobat Reader DC* para obter detalhes.)
 
 Se você salvar uma cópia de um documento protegido por política usando o comando de menu Salvar ou Salvar como, a política será automaticamente aplicada e aplicada ao novo documento. Eventos como tentativas de abrir o novo documento também são auditados e registrados para o documento original.
 
 ## Conjuntos de políticas {#policy-sets}
 
-*Os* conjuntos de políticas são utilizados para agrupar um conjunto de políticas que têm um objetivo comercial comum. Esses conjuntos de políticas são então disponibilizados a um subconjunto de usuários no sistema.
+*Conjuntos de políticas* são utilizadas para agrupar um conjunto de políticas com um objetivo comercial comum. Esses conjuntos de políticas são então disponibilizados a um subconjunto de usuários no sistema.
 
-Cada conjunto de políticas pode ter um ou mais coordenadores de conjunto de políticas associados. O coordenador do conjunto de políticas é um administrador ou usuário com permissões adicionais. O *coordenador do conjunto de políticas* normalmente é um especialista na organização que pode criar melhor as políticas em um conjunto de políticas específico.
+Cada conjunto de políticas pode ter um ou mais coordenadores de conjunto de políticas associados. O coordenador do conjunto de políticas é um administrador ou usuário com permissões adicionais. O *coordenador do conjunto de políticas* O geralmente é um especialista na organização que pode criar melhor as políticas em um conjunto de políticas específico.
 
 Os coordenadores do conjunto de políticas podem executar estas tarefas:
 
@@ -227,4 +230,4 @@ Os conjuntos de políticas são criados e excluídos nas páginas da Web da admi
 
 Os conjuntos de políticas geralmente são disponibilizados a um número limitado de usuários, especificando quais usuários ou grupos em um domínio podem usar as políticas do conjunto de políticas para proteger documentos.
 
-Quando a segurança do documento é instalada, um conjunto de políticas padrão é criado chamado *Conjunto de Políticas Global*. O administrador que instalou o software gerencia esse conjunto de políticas.
+Quando a segurança do documento é instalada, um conjunto de políticas padrão é criado chamado *Conjunto de políticas global*. O administrador que instalou o software gerencia esse conjunto de políticas.

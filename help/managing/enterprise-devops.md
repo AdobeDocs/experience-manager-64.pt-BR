@@ -1,24 +1,27 @@
 ---
 title: DevOps empresarial
-seo-title: DevOps empresarial
+seo-title: Enterprise DevOps
 description: Saiba mais sobre os processos, os métodos e a comunicação necessários para facilitar a implantação e simplificar a colaboração.
-seo-description: Saiba mais sobre os processos, os métodos e a comunicação necessários para facilitar a implantação e simplificar a colaboração.
+seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 93%
+source-wordcount: '1025'
+ht-degree: 91%
 
 ---
 
+# DevOps empresarial {#enterprise-devops}
 
-# DevOps empresarial{#enterprise-devops}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O DevOps abrange os processos, os métodos e a comunicação necessários para:
 
@@ -33,7 +36,7 @@ O DevOps tem como objetivo evitar problemas como:
 
 ## Ambientes {#environments}
 
-Uma implantação do Adobe Experience Manager (AEM) geralmente consiste em vários ambientes, usados para propósitos diferentes em níveis diferentes:
+Uma implantação do Adobe Experience Manager (AEM) geralmente consiste em vários ambientes, usados para diferentes propósitos em diferentes níveis:
 
 * [Desenvolvimento](#development)
 * [Controle de qualidade](#quality-assurance)
@@ -63,7 +66,7 @@ Dependendo da escala do seu sistema, o ambiente de desenvolvimento pode ter inst
 
 ### Controle de qualidade {#quality-assurance}
 
-Este ambiente é usado pela equipe de controle de qualidade para [testar](/help/sites-developing/test-plan.md) o novo sistema; design e função. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
+Este ambiente é usado pela equipe de controle de qualidade para obter uma visão completa [teste](/help/sites-developing/test-plan.md) seu novo sistema; design e função. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
 
 ### Estágios {#staging}
 
@@ -119,7 +122,7 @@ O código deve sempre ser propagado de baixo para cima:
 
 O código (por exemplo, modelos de design e funcionalidade de aplicativos Web personalizados) é geralmente transferido por meio da exportação e da importação de pacotes entre os diferentes repositórios de conteúdo. Quando significativo, essa replicação pode ser configurada como um processo automático.
 
-AEM projetos geralmente acionam a implantação do código:
+AEM projetos geralmente acionam a implantação de código:
 
 * Automaticamente: para transferência aos ambientes de desenvolvimento e controle de qualidade.
 * Manualmente: as implantações nos ambientes de preparação e produção são feitas de maneira mais controlada, geralmente manual, embora uma automação seja possível, se necessário.
@@ -141,6 +144,6 @@ O conteúdo de produção deve ser transferido do ambiente de produção ao ambi
 O conteúdo pode ser transferido:
 
 * Entre os diferentes ambientes - exportando e importando pacotes.
-* Entre instâncias diferentes - replicando diretamente ([AEM replicação](/help/sites-deploying/replication.md)) o conteúdo (usando uma conexão HTTP ou HTTPS).
+* Entre instâncias diferentes - por replicação direta ([Replicação de AEM](/help/sites-deploying/replication.md)) o conteúdo (usando uma conexão HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

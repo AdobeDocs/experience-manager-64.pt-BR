@@ -1,5 +1,5 @@
 ---
-title: Notas de versão do AEM Assets
+title: Notas de versão da AEM Assets
 seo-title: AEM Assets
 description: Notas de versão específicas dos ativos Adobe Experience Manager 6.4.
 seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
 
-# Notas de versão do AEM Assets {#aem-assets-release-notes}
+# Notas de versão da AEM Assets {#aem-assets-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os principais recursos, destaques e aprimoramentos feitos no AEM 6.4 Assets são abordados nas notas de versão. Para obter informações detalhadas, siga os links fornecidos.
 
@@ -103,7 +107,7 @@ O AEM 6.4 oferece aprimoramentos significativos no relatório de Ativos:
 * **Melhorias nos relatórios**: Três relatórios OOTB estão disponíveis: downloads, publicação e compartilhamentos de link.
 * **Restrições baseadas em DRM**: Depois que um ativo licenciado expira, ele não está mais disponível para download na Brand Portal.
 
-## Aplicativo de desktop do AEM {#aem-desktop-app}
+## AEM aplicativo de desktop {#aem-desktop-app}
 
 AEM aplicativo de desktop é atualizado para a versão 1.8, que é compatível com a AEM 6.4. A lista completa de alterações para AEM aplicativo de desktop é fornecida em um aplicativo dedicado [Notas de versão do aplicativo de desktop do AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) documento.\
 Esta é uma lista de AEM destaques do aplicativo de desktop desde o lançamento do AEM 6.3:

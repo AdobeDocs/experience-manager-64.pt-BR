@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 exl-id: 6ec7f037-3582-49ce-9297-6acd01283949
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 17%
+source-wordcount: '175'
+ht-degree: 18%
 
 ---
 
 # Tutorial WKND do SPA{#spa-wknd-tutorial}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Mergulhe no desenvolvimento SPA com este tutorial em várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento front-end e roteamento de aplicativos para implementar sua própria SPA.
 

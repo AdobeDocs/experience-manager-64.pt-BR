@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 feature: Adaptive Forms
 exl-id: 7cd73bdf-6717-4923-91ca-e8b6d44429ca
-source-git-commit: 9cb2e3d361503e296b985c5d08bbafd5dd60e194
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6328'
+source-wordcount: '6364'
 ht-degree: 0%
 
 ---
 
 # Editor de regras de formulários adaptáveis {#adaptive-forms-rule-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
@@ -174,7 +178,7 @@ Defina o valor do Objeto A como:
 (propriedade de objeto X do objeto C) OU\
 (valor de uma função) OR\
 (valor de uma expressão matemática) OR\
-(valor de saída de um serviço de modelo de dados ou serviço Web);
+(valor de saída de um serviço de modelo de dados ou de um serviço Web);
 
 Quando (opcional):
 
@@ -531,7 +535,7 @@ Suportado `jsdoc` tags:
 
    `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
-   1. sequência de caracteres
+   1. string
    1. número
    1. booleano
 
@@ -547,10 +551,10 @@ Suportado `jsdoc` tags:
 
    {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
-   1. sequência de caracteres
+   1. string
    1. número
    1. booleano
-   1. date
+   1. data
    1. array
 
    Todos os outros tipos de retorno são classificados em um dos acima. Nenhum é suportado. Certifique-se de selecionar um dos tipos acima. Os tipos de retorno não distinguem maiúsculas de minúsculas.

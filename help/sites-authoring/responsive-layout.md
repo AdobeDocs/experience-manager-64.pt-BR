@@ -1,43 +1,46 @@
 ---
-title: 'Layout responsivo  '
-seo-title: 'Layout responsivo  '
-description: O AEM permite que você crie um layout responsivo para suas páginas
-seo-description: O AEM permite que você crie um layout responsivo para suas páginas
+title: Layout responsivo
+seo-title: Responsive Layout
+description: AEM permite que você realize um layout responsivo para suas páginas
+seo-description: AEM allows you to realize a responsive layout for your pages
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 788bb439-fb8a-4ab9-b367-cea6a17c0c43
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 93%
+source-wordcount: '1821'
+ht-degree: 55%
 
 ---
 
-
 # Layout responsivo  {#responsive-layout}
-
-O AEM permite ter um layout responsivo em suas páginas usando o componente **Contêiner de layout.**
-
-Este componente fornece um sistema de parágrafo que permite posicionar os componentes dentro de uma grade responsiva. Esta grade pode reorganizar o layout de acordo com o dispositivo/tamanho e formato da janela. O componente é utilizado em conjunto com o modo de [**Layout**,](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) que permite criar e editar o seu layout responsivo dependendo do dispositivo.
-
-O contêiner de layout:
-
-* Fornece encaixe horizontal na grade, em conjunto com a capacidade de posicionar os componentes lado a lado na grade e definir quando devem se recolher/refluir.
-* Usa pontos de interrupção predefinidos (por exemplo para smartphone, tablet etc.) para permitir que você defina o comportamento obrigatório do conteúdo para dispositivos/orientações relacionados.
-
-   * Por exemplo, você pode personalizar o tamanho do componente ou se o componente pode ser visto em dispositivos específicos.
-
-* Podem ser aninhados para permitir o controle da coluna.
-
-O usuário pode então ver como o conteúdo será processado para dispositivos específicos, usando o emulador.
 
 >[!CAUTION]
 >
->Embora o componente do contêiner de layout esteja disponível na interface do usuário clássica, as suas funcionalidades estão disponíveis apenas na interface do usuário habilitada para toque.
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+AEM permite ter um layout responsivo para suas páginas usando o **Contêiner de layout** componente.
+
+Ele fornece um sistema de parágrafo que permite posicionar os componentes dentro de uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o dispositivo/tamanho e formato da janela. O componente é utilizado em conjunto com o modo de [**Layout**,](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) que permite criar e editar o seu layout responsivo dependendo do dispositivo.
+
+O contêiner de layout:
+
+* Fornece alinhamento horizontal à grade, juntamente com a capacidade de colocar componentes lado a lado na grade e definir quando devem ser recolhidos/refluir.
+* Usa pontos de interrupção predefinidos (por exemplo, para telefone, tablet etc.) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientações relacionados.
+
+   * Por exemplo, você pode personalizar o tamanho do componente ou se o componente pode ser visto em dispositivos específicos.
+
+* Pode ser aninhado para permitir o controle da coluna.
+
+O usuário pode então ver como o conteúdo será renderizado para dispositivos específicos usando o emulador.
+
+>[!CAUTION]
+>
+>Embora o componente Contêiner de layout esteja disponível na interface clássica, as suas funcionalidades estão disponíveis apenas na interface habilitada para toque.
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
@@ -52,9 +55,9 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 * [**Emulador**](#selecting-a-device-to-emulate)
 Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
 
-Com estes mecanismos de grade responsivos você pode:
+Com esses mecanismos de grade responsivos você pode:
 
-* Usar pontos de interrupção para definir layouts de conteúdo diferentes com base na largura do dispositivo (relacionado ao tipo e à orientação do dispositivo).
+* Use pontos de interrupção para definir diferentes layouts de conteúdo com base na largura do dispositivo (relacionado ao tipo e à orientação do dispositivo).
 * Usar os mesmos pontos de interrupção e layouts de conteúdo para certificar-se de que o conteúdo responde ao tamanho da janela do navegador no desktop.
 * Usar o alinhamento com a grade para permitir colocar componentes na grade, redimensionar como necessário e definir quando devem ser recolhidos/refluir para ficarem lado a lado ou acima/abaixo.
 * Ocultar componentes de layouts específicos de dispositivos.
@@ -68,13 +71,13 @@ Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de p
 
 >[!NOTE]
 >
->O uso dos mecanismos acima é habilitado pela configuração no modelo. Consulte [Configurando o layout responsivo](/help/sites-administering/configuring-responsive-layout.md) para obter mais informações.
+>O uso dos mecanismos acima é habilitado pela configuração no modelo. Consulte [Configuração de layout responsivo](/help/sites-administering/configuring-responsive-layout.md) para obter mais informações.
 
 ## Definições de layout, emulação de dispositivo e pontos de interrupção {#layout-definitions-device-emulation-and-breakpoints}
 
 Ao criar o conteúdo do seu site, você quer garantir que o conteúdo seja exibido apropriadamente no dispositivo usado para exibi-lo.
 
-O AEM permite que você defina layouts dependendo da largura do dispositivo:
+AEM permite definir layouts dependendo da largura do dispositivo:
 
 * O emulador permite que você emule esses layouts em vários dispositivos. Além do tipo de dispositivo, a orientação, selecionada pela opção **Girar dispositivo**, pode afetar o ponto de interrupção selecionado à medida que a largura muda.
 * Os pontos de interrupção são pontos que separam as definições de layout.
@@ -90,9 +93,9 @@ O dispositivo **Desktop** sem uma largura específica e que está relacionado ao
 >
 >Seria possível definir pontos de interrupção para cada dispositivo individual, mas isso aumentaria consideravelmente o trabalho necessário para a definição e a manutenção do layout.
 
-Ao usar o emulador, é possível selecionar um dispositivo específico para emulação e definição de layout, sendo que o ponto de interrupção também será selecionado. Quaisquer alterações de layout efetuadas serão aplicáveis a outros dispositivos em que o ponto de interrupção se aplica, isto é, quaisquer dispositivos posicionados à esquerda do marcador do ponto de interrupção ativo, mas antes do próximo marcador do ponto de interrupção.
+Ao usar o emulador, você seleciona um dispositivo específico para emulação e definição de layout, e o ponto de interrupção relacionado também será realçado. Quaisquer alterações de layout efetuadas serão aplicáveis a outros dispositivos em que o ponto de interrupção se aplica, isto é, quaisquer dispositivos posicionados à esquerda do marcador do ponto de interrupção ativo, mas antes do próximo marcador do ponto de interrupção.
 
-Por exemplo, com a seleção do dispositivo **iPhone 6 Plus** (definido com largura de 540 pixels) para emulação e layout, o ponto de interrupção **Celular** (definido como 768 pixels) também será ativado. Quaisquer mudanças de layout efetuadas para o **iPhone 6** serão aplicáveis a outros dispositivos no ponto de interrupção **Celulares**, como o **iPhone 5** (definido como 320 pixels).
+Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma largura de 540 pixels) para emulação e layout, o ponto de interrupção **Telefone** (definido como 768 pixels) também será ativado. Qualquer alteração no layout feita para a **iPhone 6** será aplicável a outros dispositivos da **Telefones** ponto de interrupção, como **iPhone 5** (definido como 320 pixels).
 
 ![screen_shot_2018-03-23at084058](assets/screen_shot_2018-03-23at084058.png)
 
@@ -112,7 +115,7 @@ Por exemplo, com a seleção do dispositivo **iPhone 6 Plus** (definido com larg
 
    A barra de ferramentas do emulador exibe opções adicionais de layout:
 
-   * **Girar dispositivo** - permite que você gire um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
+   * **Girar dispositivo** - Permite que você gire um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
 
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -120,7 +123,7 @@ Por exemplo, com a seleção do dispositivo **iPhone 6 Plus** (definido com larg
 
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
-1. Para selecionar um dispositivo específico a fim de emulá-lo, é possível:
+1. Para selecionar um dispositivo específico para emular, você pode:
 
    * Use o ícone Selecionar dispositivo e selecione em um seletor suspenso.
    * Toque/clique no indicador do dispositivo na barra de ferramentas do emulador.
@@ -134,12 +137,12 @@ Por exemplo, com a seleção do dispositivo **iPhone 6 Plus** (definido com larg
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * A linha pontilhada azul representa a *dobra* referente ao dispositivo selecionado (aqui, um **iPhone 6**).
+   * A linha pontilhada azul representa a variável *dobra* para o dispositivo selecionado (aqui, um **iPhone 6**).
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
-   * A dobra também pode ser considerada a linha de quebra de página (não confundir com [pontos de interrupção ](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) para o conteúdo. Isso é exibido para praticidade em mostrar que parte do conteúdo será vista pelo usuário no dispositivo antes da rolagem de página.
-   * A linha para a dobra não será exibida se a altura do dispositivo que está sendo emulado for maior do que o tamanho da tela.
+   * A dobra também pode ser considerada a quebra de linha da página (não confundir com a [pontos de interrupção](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) para o conteúdo. Isso é exibido para conveniência de mostrar qual parte do conteúdo será vista pelo usuário no dispositivo antes da rolagem.
+   * A linha para a dobra não será mostrada se a altura do dispositivo que está sendo emulado for maior que o tamanho da tela.
    * A dobra é mostrada para a conveniência do autor e não é mostrada na página publicada.
 
 
@@ -154,10 +157,10 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 
 >[!NOTE]
 >
->Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado [explicitamente em um sistema/página de parágrafos](/help/sites-administering/configuring-responsive-layout.md) (por exemplo, quando você usar [**o modo** Design](/help/sites-authoring/default-components-designmode.md)).
+>Se ainda não estiver disponível, a variável **Contêiner de layout** deve ser explicitamente [ativado para um sistema/página de parágrafo](/help/sites-administering/configuring-responsive-layout.md) (por exemplo, usando [**Design** modo](/help/sites-authoring/default-components-designmode.md)).
 
 1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde verá o espaço reservado **Arrastar componentes aqui**.
-1. Em seguida, você pode adicionar componentes ao contêiner de layout. Esses componentes contêm o conteúdo real:
+1. Em seguida, é possível adicionar componentes ao contêiner de layout. Esses componentes terão o conteúdo real:
 
    ![screen_shot_2018-03-23at085500](assets/screen_shot_2018-03-23at085500.png)
 
@@ -167,9 +170,9 @@ Assim como em outros componentes, você pode selecionar e executar ações (reco
 
 >[!CAUTION]
 >
->Como o contêiner de layout é um sistema de parágrafos, com a exclusão do componente a grade do layout e todos os componentes (e seu conteúdo) no contêiner são excluídos.
+>Como um contêiner de layout é um sistema de parágrafo, a exclusão do componente excluirá a grade de layout e todos os componentes (e seu conteúdo) mantidos no contêiner.
 
-1. Se você tocar ou passar o mouse sobre o espaço reservado da grade, o menu de ação será exibido.
+1. Se você passar o mouse sobre ou tocar no espaço reservado da grade, o menu de ação será exibido.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -177,12 +180,12 @@ Assim como em outros componentes, você pode selecionar e executar ações (reco
 
    ![](do-not-localize/screen_shot_2018-03-23at085417.png)
 
-1. Se o componente de layout estiver aninhado, selecionar a opção **Pai** apresenta uma seleção suspensa, que permite que você selecione o contêiner aninhado do layout ou seus pais.
+1. Se o componente de layout estiver aninhado, selecione o **Pai** apresenta uma seleção suspensa, permitindo selecionar o contêiner aninhado do layout ou seus pais.
 
-   Quando você passa o mouse sobre os nomes de contêiner na lista suspensa, os contornos correspondentes serão exibidos na página.
+   Ao passar o mouse sobre os nomes de contêiner na lista suspensa, seus contornos serão exibidos na página.
 
    * O menor contêiner aninhado do layout será contornado em preto.
-   * O segundo menor contêiner aninhado do layout estará em um cinza escuro.
+   * O próximo menor contêiner aninhado do layout estará em um cinza escuro.
    * Cada contêiner sucessivo será destacado por uma sombra mais clara de cinza.
 
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
@@ -206,14 +209,14 @@ O modo **Layout** pode ser iniciado de duas maneiras.
    * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Segmentação**.
    * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
 
-* Ao [editar um componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* When [editar um componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Ao usar a opção **Layout** no menu de ações rápidas do componente, é possível alternar para o modo **Layout**.
-   * O modo **Layout** é mantido ao editar o componente e é revertido para o modo de **Edição** quando o foco muda para outro componente.
+   * Ao usar a variável **Layout** no menu de ação rápida do componente, você pode alternar para **Layout** modo.
+   * **Layout** O modo persiste ao editar o componente e reverte para **Editar** assim que o foco mudar para outro componente.
 
 No modo de layout, é possível executar várias ações em uma grade:
 
-* Redimensione os componentes do conteúdo usando os pontos azuis. O redimensionamento sempre se ajusta à grade. A grade do fundo será exibida quando você redimensionar para auxiliar no alinhamento:
+* Redimensione os componentes do conteúdo usando os pontos azuis. O redimensionamento sempre se ajusta à grade. Ao redimensionar a grade de fundo, ela será exibida para auxiliar no alinhamento:
 
    ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
@@ -225,7 +228,7 @@ No modo de layout, é possível executar várias ações em uma grade:
 
    * **Pai**
 
-      Permite que você selecione o componente de container de layout inteiro para executar ações em todo o processo.
+      Permite que você selecione o componente do contêiner de layout inteiro para executar uma ação em tudo.
 
    * **Flutuar até a nova linha**
 
@@ -233,12 +236,12 @@ No modo de layout, é possível executar várias ações em uma grade:
 
    * **Ocultar componente**
 
-      O componente ficará invisível (pode ser restaurado da barra de ferramentas do container de layout).
+      O componente ficará invisível (ele pode ser restaurado na barra de ferramentas do contêiner de layout).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * No modo **Layout**, você pode tocar/clicar em **Arrastar componentes aqui** para selecionar o componente inteiro. Isso mostrará a barra de ferramentas para este modo.
 
-   A barra de ferramentas tem opções diferentes, dependendo do status do componente de layout e componentes que pertencem a ela. Por exemplo:
+   A barra de ferramentas terá opções diferentes, dependendo do estado do componente de layout e dos componentes que pertencem a ela. Por exemplo:
 
    * **Pai** - seleciona o componente do pai.
 
@@ -264,9 +267,8 @@ No modo de layout, é possível executar várias ações em uma grade:
    >
    >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Mostrar**
-componentesSelecione os componentes principais para mostrar a barra de ferramentas de ação com o 
-**Mostrar** opção de componentes ocultos. Neste exemplo, dois componentes estão ocultos.
+   * **Revelar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com a 
+opção **Mostrar componentes ocultos**. Neste exemplo, dois componentes estão ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
@@ -274,4 +276,3 @@ componentesSelecione os componentes principais para mostrar a barra de ferrament
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    Selecionar **Restaurar tudo** revelará todos os componentes ocultos.
-

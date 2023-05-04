@@ -9,14 +9,18 @@ topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 exl-id: fa39a4e8-ae22-4356-8935-44fdf1f4f609
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2902'
 ht-degree: 2%
 
 ---
 
 # Fluxo de trabalho centrado no Forms no OSGi {#forms-centric-workflow-on-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ![](do-not-localize/header.png)
 
@@ -163,7 +167,7 @@ O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando 
    <td>A descrição é visível AEM Caixa de entrada. Forneça informações detalhadas sobre o aplicativo nos campos de descrição. Por exemplo, Finalidade do aplicativo.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Formulário adaptativo</td> 
+   <td>Formulário adaptável</td> 
    <td><p>Especifique o caminho de um formulário adaptável. Quando um usuário inicia um aplicativo, o formulário adaptável especificado é exibido.</p> <p><strong>Observação</strong>: Os aplicativos de fluxo de trabalho não suportam formulários e documentos PDF que sejam maiores que uma página ou que exijam rolagem no Apple iPad. Quando um aplicativo é aberto no Apple iPad e o formulário adaptável ou o documento PDF é maior que uma página, os campos do formulário e o conteúdo da segunda página são perdidos.</p> </td> 
   </tr> 
   <tr> 

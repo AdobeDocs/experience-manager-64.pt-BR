@@ -1,8 +1,8 @@
 ---
 title: Suporte a cláusula de imagem para formulários HTML5
-seo-title: Suporte a cláusula de imagem para formulários HTML5
-description: Os formulários HTML5 oferecem suporte à cláusula de imagem XFA para o valor de exibição e o valor formatado para símbolos de data, texto e numéricos.
-seo-description: Os formulários HTML5 oferecem suporte à cláusula de imagem XFA para o valor de exibição e o valor formatado para símbolos de data, texto e numéricos.
+seo-title: Picture clause support for HTML5 forms
+description: Os formulários HTML5 oferecem suporte à cláusula de imagem XFA para valores de exibição e valores formatados para data, texto e símbolos numéricos.
+seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: b63758f1-b375-4c05-bd53-69e0346733c6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 5%
+source-wordcount: '648'
+ht-degree: 2%
 
 ---
 
-
 # Suporte a cláusula de imagem para formulários HTML5 {#picture-clause-support-for-html-forms}
 
-Os formulários HTML5 oferecem suporte à cláusula de imagem XFA para o valor de exibição e o valor formatado para símbolos de data, texto e numéricos. As seguintes Expressões de cláusula de imagem são suportadas:
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Os formulários HTML5 oferecem suporte à cláusula de imagem XFA para valores de exibição e valores formatados para data, texto e símbolos numéricos. As seguintes Expressões de cláusula de imagem são suportadas:
 
 * category(locale){picture-cláusula} | category(locale){picture-cláusula} | category(locale){picture-cláusula}
 * category.subcategory{}
@@ -89,26 +92,26 @@ Expressão suportada para a cláusula de imagem de data:
   </tr>
   <tr>
    <td>YYYY</td> 
-   <td>Ano de 4 dígitos<br /> </td> 
+   <td>Ano com 4 dígitos<br /> </td> 
   </tr>
  </tbody>
 </table>
 
-## Cláusula de imagem numérica {#numeric-picture-clause}
+## Cláusula de Imagem Numérica {#numeric-picture-clause}
 
-Os formulários HTML5 são compatíveis com símbolos de Imagem numérica. No entanto, há uma diferença no suporte entre PDF forms e HTML Forms.
+Os formulários HTML5 são compatíveis com símbolos de Imagem numérica. No entanto, há uma diferença no suporte entre o PDF forms e o HTML Forms.
 
 Em **PDF forms**, um número é formatado independentemente do número de símbolos na cláusula Picture
 
-Em **HTML Forms**, um número é formatado somente se o número tiver dígitos menor que o número de símbolos na cláusula Picture.
+Em **HTML Forms**, um número é formatado somente se o número tiver dígitos inferiores ao número de símbolos na cláusula Picture.
 
 **Exemplo**: Considere uma cláusula de imagem: num{zzz,zzz,zz9}.
 
-O número **10000** é formatado como **10.000** tanto em HTML como em PDF forms.
+O número **10000** é formatado como **10.000** em HTML e PDF forms.
 
-O número 100000 é formatado como 1.000.000 em PDF forms. No entanto, em HTML Forms, o número permanece não formatado como 1000000.
+O número 100000 é formatado como 1.000.000 em PDF forms. No entanto, no HTML Forms, o número permanece não formatado como 1000000.
 
-Expressões compatíveis para a cláusula de Imagem Numérica em **HTML Forms** são:
+Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** são:
 
 * num.integer{}
 * num.decimal{}
@@ -125,22 +128,22 @@ Expressões compatíveis para a cláusula de Imagem Numérica em **HTML Forms** 
   </tr>
   <tr>
    <td>9</td> 
-   <td><strong>Formatação</strong> de saída: um único dígito. Ou para o dígito zero se os dados de entrada estiverem vazios ou um espaço na posição correspondente.<br /> </td> 
+   <td><strong>Formatação de saída</strong>: um único dígito. Ou para o dígito zero se os dados de entrada estiverem vazios ou um espaço na posição correspondente.<br /> </td> 
    <td>Um único dígito</td> 
   </tr>
   <tr>
    <td>Z</td> 
-   <td><strong>Formatação</strong> de saída: um único dígito. Ou para um espaço se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td> 
+   <td><strong>Formatação de saída</strong>: um único dígito. Ou para um espaço se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td> 
    <td>Um único dígito ou espaço</td> 
   </tr>
   <tr>
    <td>z</td> 
-   <td><strong>Formatação</strong> de saída: um único dígito. Ou para nada se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td> 
+   <td><strong>Formatação de saída</strong>: um único dígito. Ou para nada se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td> 
    <td>Um único dígito ou nada</td> 
   </tr>
   <tr>
    <td>E</td> 
-   <td><strong>Formatação</strong> de saída: A parte exponente de um número de ponto flutuante que consiste no símbolo exponencial (E). Seguido por um sinal opcional de mais ou menos. Seguido pelo valor do expoente.<br /> </td> 
+   <td><strong>Formatação de saída</strong>: A parte exponente de um número de ponto flutuante que consiste no símbolo exponencial (E). Seguido por um sinal opcional de mais ou menos. Seguido pelo valor do expoente.<br /> </td> 
    <td>Igual à formatação de saída</td> 
   </tr>
   <tr>
@@ -203,15 +206,14 @@ Expressões compatíveis para a cláusula de Imagem Numérica em **HTML Forms** 
 
 ## Cláusula de Imagem de Texto {#text-picture-clause}
 
-Os formulários HTML5 são compatíveis com as seguintes expressões de cláusula de imagem de texto:
+Os formulários HTML5 oferecem suporte para as seguintes expressões de cláusula de figura de texto:
 
 * text{text Símbolos de cláusula de imagem}
 
 | **Símbolo** | **Interpretação** |
 |---|---|
-| A | Um caractere alfabético único. |
-| X | Um caractere único. |
-| O | Um caractere alfanumérico único. |
-| 0 (zero) | Um caractere alfanumérico único. |
+| A | Caractere alfabético único. |
+| X | Caractere único. |
+| O | Caractere alfanumérico único. |
+| 0 (zero) | Caractere alfanumérico único. |
 | 9 | Um único dígito. |
-

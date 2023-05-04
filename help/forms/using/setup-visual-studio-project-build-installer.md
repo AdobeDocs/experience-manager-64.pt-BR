@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 exl-id: ae0463de-271f-47c0-b947-f6d149ded8ab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 5%
+source-wordcount: '945'
+ht-degree: 6%
 
 ---
 
 # Configurar o projeto do Visual Studio e criar o aplicativo do Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O AEM Forms fornece o código fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo de espaço de trabalho personalizado. O arquivo de código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip`faz parte do `adobe-aemfd-forms-app-src-pkg-<version>.zip` na Distribuição de software.
 

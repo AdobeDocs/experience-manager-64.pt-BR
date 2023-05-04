@@ -8,15 +8,19 @@ uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
 contentOwner: AEM Docs
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 0%
+source-wordcount: '622'
+ht-degree: 1%
 
 ---
 
 
 # NÃO PUBLICAR, MAS NÃO DELETE Personalizar modelos de fragmentos de conteúdo{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O editor do Modelo de fragmento de conteúdo é um assistente baseado em `Formbuilder`, herdada de:
 
@@ -83,12 +87,12 @@ O assistente criará uma entrada com esta estrutura:
 
 O **Editor do modelo de fragmento de conteúdo** tem duas partes:
 
-* O painel de visualização, ou exibição, à esquerda, onde é possível soltar itens. Isso:
+* O painel de visualização, ou exibição, à esquerda, onde é possível soltar itens. Isto:
 
    * Mostra uma pré-visualização do **Tipo de dados** isso é instanciado.
    * Permite a ordenação dentro do Editor de modelo.
 
-* O **Tipos de dados**/**Propriedades** no painel no lado direito. Isso:
+* O **Tipos de dados**/**Propriedades** no painel no lado direito. Isto:
 
    * Mostra uma lista de tipos de dados que podem ser arrastados e instanciados.
    * Para o editor de modelo pronto para uso, a lista está presente em:

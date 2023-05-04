@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Developer Tools
 role: Developer
 exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 0%
+source-wordcount: '293'
+ht-degree: 2%
 
 ---
 
 # Personalização e extensão de ativos {#customizing-and-extending-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 O Editor de ativos é o principal ponto de acesso que os usuários de um site do Adobe Enterprise Manager usarão para localizar, exibir e manipular os ativos digitais em seu repositório.
 
-Como desenvolvedor [!DNL Experience Manager], você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface especificamente personalizada e um conjunto de funcionalidades.
+Como um [!DNL Experience Manager] desenvolvedor, você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface especificamente personalizada e um conjunto de funcionalidades.
 
 Os seguintes aspectos da funcionalidade podem ser personalizados ou aprimorados:
 
@@ -33,10 +37,10 @@ Os seguintes aspectos da aparência do Editor de ativos são personalizáveis:
 
 * Logotipo: Você pode adicionar o logotipo de sua própria organização à interface.
 * Cores e fontes: Você pode alterar as cores e as fontes usadas na interface.
-* Código HTML: Para uma personalização mais completa, você pode alterar o código HTML subjacente que define as interfaces.
+* Código HTML: Para uma personalização mais completa, você pode alterar o código de HTML subjacente que define as interfaces.
 
 ## Personalização de representações {#customizing-renditions}
 
-Na terminologia [!DNL Experience Manager Assets], uma representação é a forma na qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, imagens de cores completas podem ter uma representação em seu tamanho original, outra em um tamanho reduzido e outra que é dimensionada para baixo e convertida em escala de cinza.
+Em [!DNL Experience Manager Assets] terminologia de uma representação é a forma na qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, imagens de cores completas podem ter uma representação em seu tamanho original, outra em um tamanho reduzido e outra que é dimensionada para baixo e convertida em escala de cinza.
 
 As representações em que um ativo específico está disponível podem ser personalizadas e novas representações podem ser criadas.

@@ -4,14 +4,18 @@ description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 967391db-e7ba-4cf8-af9e-28c28d2d96d5
-source-git-commit: 6f9a682f441c1087558f86da65e092e549f75a17
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '526'
+ht-degree: 3%
 
 ---
 
 # Instalar [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Um usuário com acesso de administrador em [!DNL Adobe Experience Manager] instala o conector aprimorado. Antes de instalar, revise o suporte à plataforma e outros [pré-requisitos para o conector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 

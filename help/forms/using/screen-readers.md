@@ -10,14 +10,18 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '373'
+ht-degree: 2%
 
 ---
 
 # Leitores de tela para formulários HTML5 {#screen-readers-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os componentes de formulários HTML5 renderizam o modelo de formulário XFA em um formato HTML5. Todos os navegadores padrão compatíveis com o HTML5 podem renderizar esses formulários. Para oferecer suporte a experiências de captura de dados semelhantes em formulários PDF e HTML5, o layout do PDF forms é retido em formulários HTML5.
 

@@ -12,14 +12,18 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 2%
+source-wordcount: '1865'
+ht-degree: 1%
 
 ---
 
 # Migrar ativos e documentos do AEM Forms {#migrate-aem-forms-assets-and-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O utilitário de Migração converte o [Ativos adaptáveis do Forms](/help/forms/using/introduction-forms-authoring.md), [configurações de nuvem](/help/sites-developing/extending-cloud-config.md)e [Ativos de gerenciamento de correspondência](/help/forms/using/cm-overview.md) do formato usado nas versões anteriores ao formato usado no AEM 6.4 Forms. Quando você executa o utilitário de migração, as seguintes etapas são migradas:
 
@@ -173,4 +177,4 @@ Depois de executar o utilitário de Migração, siga as seguintes tarefas de man
    1. Faça upload do XFA na interface do usuário do Forms.
 
 1. Publique todos os ativos que foram publicados no sistema anterior antes da migração. O utilitário de migração atualiza os ativos somente na instância do autor e para atualizar os ativos na (s) instância (s) de publicação, é necessário publicar os ativos.
-1. No AEM Forms 6.4, alguns dos direitos dos grupos de usuários de formulários são alterados. Se você quiser que qualquer um dos seus usuários possa fazer upload de XDPs e Adaptive Forms contendo scripts ou usar o editor de código, será necessário adicioná-los ao grupo de usuários avançados de formulários. Da mesma forma, os autores de modelo não podem mais usar o editor de código no Editor de regras. Para que os usuários possam usar o editor de código, adicione-os ao grupo af-template-script-writer. Para obter instruções sobre como adicionar usuários a grupos, consulte [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
+1. No AEM Forms 6.4, alguns dos direitos dos grupos de usuários de formulários são alterados. Se você quiser que qualquer um dos seus usuários possa fazer upload de XDPs e Adaptive Forms contendo scripts ou usar o editor de código, será necessário adicioná-los ao grupo de usuários avançados de formulários. Da mesma forma, os autores de modelo não podem mais usar o editor de código no Editor de regras. Para que os usuários possam usar o editor de código, adicione-os ao grupo af-template-script-writers. Para obter instruções sobre como adicionar usuários a grupos, consulte [Gerenciar usuários e grupos de usuários](/help/communities/users.md).

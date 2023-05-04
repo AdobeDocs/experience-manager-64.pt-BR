@@ -9,14 +9,18 @@ discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1550'
 ht-degree: 14%
 
 ---
 
 # Tags inteligentes aprimoradas {#enhanced-smart-tags}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral das tags inteligentes aprimoradas {#overview-of-enhanced-smart-tags}
 
@@ -32,7 +36,7 @@ Depois que uma tag é treinada e pronta, o serviço agora pode aplicar essas tag
 
 Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura de IA do Adobe Sensei para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em [!DNL Adobe I/O]. Para usá-lo no Adobe Experience Manager, o administrador do sistema deve integrar a instância [!DNL Experience Manager] com [!DNL Adobe I/O].
+O Serviço de Conteúdo Inteligente é um serviço em nuvem hospedado em [!DNL Adobe I/O]. Para usá-lo no Adobe Experience Manager, o administrador do sistema deve integrar o [!DNL Experience Manager] instância com [!DNL Adobe I/O].
 
 Em resumo, estas são as principais etapas para usar o Serviço de conteúdo inteligente:
 
@@ -54,22 +58,22 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para cri
 
 O Serviço de conteúdo inteligente está disponível para compra como um complemento para [!DNL Experience Manager] . Após a compra, um email é enviado ao administrador da organização com um link para [!DNL Adobe I/O].
 
-O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente com [!DNL Experience Manager] . Para integrar o serviço aos ativos [!DNL Experience Manager], consulte [Configurar tags inteligentes](config-smart-tagging.md).
+O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente com o [!DNL Experience Manager] . Para integrar o serviço ao [!DNL Experience Manager] Ativos, consulte [Configurar tags inteligentes](config-smart-tagging.md).
 
-O processo de integração é concluído quando o administrador configura o serviço e adiciona usuários em [!DNL Experience Manager] .
+O processo de integração é concluído quando o administrador configura o serviço e adiciona usuários no [!DNL Experience Manager] .
 
 ## Revisão de ativos e tags {#reviewing-assets-and-tags}
 
 Depois que estiver integrado, a primeira coisa que você deseja fazer é identificar um conjunto de tags que descreva melhor essas imagens no contexto de sua empresa.
 
-Em seguida, revise as imagens para identificar um conjunto de imagens que melhor representam seu produto para um requisito específico de negócios. Certifique-se de que os ativos em seu conjunto preparado estejam em conformidade com [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md).
+Em seguida, revise as imagens para identificar um conjunto de imagens que melhor representam seu produto para um requisito específico de negócios. Certifique-se de que os ativos em seu conjunto preparado estejam em conformidade com o [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md).
 
 Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de propriedades. Em seguida, execute o workflow de treinamento nesta pasta. O conjunto preparado de ativos permite que o Serviço de conteúdo inteligente treine efetivamente mais ativos usando suas definições de taxonomia.
 
 >[!NOTE]
 >
 >1. A formação é um processo irrevogável. O Adobe recomenda que você analise as tags no conjunto de ativos preparado bem antes de treinar o Serviço de conteúdo inteligente nas tags.
->1. Leia [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md) antes de iniciar o treinamento para qualquer tag.
+>1. Por favor, leia [Diretrizes de treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md) antes de iniciar o treinamento para qualquer tag.
 >1. Ao treinar o Serviço de conteúdo inteligente pela primeira vez, o Adobe recomenda treiná-lo em pelo menos duas tags distintas.
 
 >
@@ -89,19 +93,19 @@ Você pode treinar o Serviço de conteúdo inteligente periodicamente ou de acor
 
 ### Formação contínua {#periodic-training}
 
-Você pode habilitar o Serviço de conteúdo inteligente para treinar periodicamente nos ativos e tags associadas em uma pasta. Abra a página de propriedades da pasta de ativos, selecione **[!UICONTROL Ativar tags inteligentes]** na guia **[!UICONTROL Detalhes]** e salve as alterações.
+Você pode habilitar o Serviço de conteúdo inteligente para treinar periodicamente nos ativos e tags associadas em uma pasta. Abra a página de propriedades da pasta de ativos, selecione **[!UICONTROL Ativar Tags inteligentes]** nos termos do **[!UICONTROL Detalhes]** e salve as alterações.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Depois que essa opção é selecionada para uma pasta, [!DNL Experience Manager] executa um fluxo de trabalho de treinamento automaticamente para treinar o Serviço de conteúdo inteligente nos ativos da pasta e suas tags. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12h30 dos sábados.
+Depois que essa opção é selecionada para uma pasta, [!DNL Experience Manager] O executa um fluxo de trabalho de treinamento automaticamente para treinar o Serviço de conteúdo inteligente nos ativos da pasta e suas tags. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12h30 dos sábados.
 
 ### Treinamento sob demanda {#on-demand-training}
 
 Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no console Fluxo de trabalho.
 
-1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Toque/clique no botão [!DNL Experience Manager] logotipo e acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o fluxo de trabalho **[!UICONTROL Treinamento de tags inteligentes]** e toque/clique em **[!UICONTROL Iniciar fluxo de trabalho]** na barra de ferramentas.
-1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]**, navegue até a pasta de carga que inclui os ativos marcados para treinar o serviço.
+1. No **[!UICONTROL Executar fluxo de trabalho]** navegue até a pasta de carga que inclui os ativos marcados para treinar o serviço.
 1. Especifique um título para o fluxo de trabalho e adicione um comentário. Em seguida, toque/clique em **[!UICONTROL Executar]**. Os ativos e tags são enviados para treinamento.
 
    ![workflow_dialog](assets/workflow_dialog.png)
@@ -114,7 +118,7 @@ Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no
 
 Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags no conjunto de ativos de treinamento, analise o relatório do fluxo de trabalho de treinamento no console Relatórios .
 
-1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas > Ativos > Relatórios]**.
+1. Toque/clique no botão [!DNL Experience Manager] logotipo e acesse **[!UICONTROL Ferramentas > Ativos > Relatórios]**.
 1. Na página **[!UICONTROL Relatórios de ativos]**, toque/clique em **[!UICONTROL Criar]**.
 1. Selecione o relatório **[!UICONTROL Treinamento de tags inteligentes]** e toque/clique em **[!UICONTROL Avançar]** na barra de ferramentas.
 1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Em seguida, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
@@ -125,7 +129,7 @@ Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags n
 
    Se você não vir suas tags neste relatório, execute o fluxo de trabalho de treinamento novamente para essas tags.
 
-1. Para baixar o relatório, selecione-o na lista e toque/clique no ícone **[!UICONTROL Download]** na barra de ferramentas. O relatório é baixado como um arquivo Excel.
+1. Para baixar o relatório, selecione-o na lista e toque/clique no link **[!UICONTROL Baixar]** ícone na barra de ferramentas. O relatório é baixado como um arquivo Excel.
 
 ## Marcar ativos automaticamente {#tagging-assets-automatically}
 
@@ -139,7 +143,7 @@ Você pode executar o fluxo de trabalho de marcação periodicamente ou sempre q
 
 ### Marcação periódica {#periodic-tagging}
 
-Você pode permitir que o Serviço de conteúdo inteligente marque periodicamente ativos em uma pasta. Abra a página de propriedades da pasta de ativos, selecione **[!UICONTROL Ativar tags inteligentes]** na guia **[!UICONTROL Detalhes]** e salve as alterações.
+Você pode permitir que o Serviço de conteúdo inteligente marque periodicamente ativos em uma pasta. Abra a página de propriedades da pasta de ativos, selecione **[!UICONTROL Ativar Tags inteligentes]** nos termos do **[!UICONTROL Detalhes]** e salve as alterações.
 
 Quando essa opção é selecionada para uma pasta, o Serviço de conteúdo inteligente insere tags automaticamente nos ativos da pasta. Por padrão, o fluxo de trabalho de marcação é executado todos os dias às 12:00 AM.
 
@@ -156,12 +160,12 @@ Você pode acionar o fluxo de trabalho de marcação a partir dos itens a seguir
 
 #### Marcar ativos no console Fluxo de trabalho {#tagging-assets-from-the-workflow-console}
 
-1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Toque/clique no botão [!DNL Experience Manager] logotipo e acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 1. Na página **[!UICONTROL Modelos de fluxo]** de trabalho, selecione o fluxo de trabalho **[!UICONTROL Ativos de tags inteligentes do DAM]** e toque/clique em **[!UICONTROL Iniciar fluxo de trabalho]** na barra de ferramentas.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]**, navegue até a pasta de carga que contém ativos nos quais você deseja aplicar suas tags automaticamente.
+1. No **[!UICONTROL Executar fluxo de trabalho]** navegue até a pasta de payload que contém ativos nos quais deseja aplicar as tags automaticamente.
 1. Especifique um título para o fluxo de trabalho e um comentário opcional. Em seguida, toque/clique em **[!UICONTROL Executar]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
@@ -176,8 +180,8 @@ Você pode acionar o fluxo de trabalho de marcação a partir dos itens a seguir
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Selecione o fluxo de trabalho **[!UICONTROL Ativos de tags inteligentes do DAM]** e especifique um título para o fluxo de trabalho.
-1. Toque/clique em **[!UICONTROL Iniciar]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e revise as tags para verificar se o Serviço de conteúdo inteligente marcou seus ativos corretamente. Para obter detalhes, consulte [Gerenciamento de tags inteligentes](managing-smart-tags.md).
+1. Selecione o **[!UICONTROL Ativos de tag inteligente DAM]** e especifique um título para o fluxo de trabalho.
+1. Toque/clique **[!UICONTROL Iniciar]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e revise as tags para verificar se o Serviço de conteúdo inteligente marcou seus ativos corretamente. Para obter detalhes, consulte [Gerenciamento de tags inteligentes](managing-smart-tags.md).
 
 >[!NOTE]
 >

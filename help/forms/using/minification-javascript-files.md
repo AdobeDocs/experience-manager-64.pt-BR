@@ -1,38 +1,41 @@
 ---
 title: Minificação dos arquivos JavaScript
-seo-title: Minificação dos arquivos JavaScript
-description: Instruções para gerar código minified após personalizações de espaço de trabalho AEM Forms para otimizar os arquivos JS para a Web.
-seo-description: Instruções para gerar código minified após personalizações de espaço de trabalho AEM Forms para otimizar os arquivos JS para a Web.
+seo-title: Minification of the JavaScript files
+description: Instruções para gerar código minificado após as personalizações do espaço de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
+seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 8394151e-e9cf-4f68-97a3-ba1d1dd6a2d2
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 3%
 
 ---
 
-
 # Minificação dos arquivos JavaScript {#minification-of-the-javascript-files}
 
-A Minificação remove do código-fonte os caracteres redundantes, como espaço em branco, nova linha e comentários. Isso melhora o desempenho, reduzindo o tamanho do código. Embora a minimização não afete a funcionalidade, ela reduz a legibilidade do código.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Para gerar um código minified para alterações semânticas, siga estas etapas.
+A minificação remove do código-fonte os caracteres redundantes, como espaço em branco, nova linha e comentários. Isso melhora o desempenho ao reduzir o tamanho do código. Embora a minificação não afete a funcionalidade, ela reduz a legibilidade do código.
 
-1. Copie `client-html/src/main/webapp/js` de src-package no sistema de arquivos.
+Para gerar código minificado para alterações semânticas, siga essas etapas.
+
+1. Copiar `client-html/src/main/webapp/js` do src-package no sistema de arquivos.
 
    >[!NOTE]
    >
-   >Consulte [Introdução à personalização da área de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para obter mais detalhes sobre os pacotes.
+   >Consulte [Introdução à Personalização do espaço de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para obter mais detalhes sobre os pacotes.
 
-1. Atualize os caminhos em `main.js`, localizados em client-html/src/main/webapp/js, para modelos/visualizações adicionados/atualizados.
+1. Atualizar caminhos em `main.js` localizado em client-html/src/main/webapp/js, para modelos/visualizações adicionados/atualizados.
 
-   Por exemplo, adição de um novo modelo do Sharequeue, digamos mySharequeue, alterar:
+   Por exemplo, a adição de um novo modelo do Sharequue, digamos mySharequue, muda:
 
    ```
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
@@ -42,9 +45,9 @@ Para gerar um código minified para alterações semânticas, siga estas etapas.
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Atualize `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` caso haja alteração/adição de alias em `main.js`.
+1. Atualizar `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` em caso de alteração/adição de alias em `main.js`.
 
-   Por exemplo, adição de um novo modelo do Sharequeue, digamos mySharequeue, alterar:
+   Por exemplo, a adição de um novo modelo do Sharequue, digamos mySharequue, muda:
 
    ```xml
    <sharequeue
@@ -60,18 +63,18 @@ Para gerar um código minified para alterações semânticas, siga estas etapas.
                service="service"/>
    ```
 
-1. No client-html/src/main/webapp/js/minifier, execute o comando:
+1. Em client-html/src/main/webapp/js/minifier, execute o comando:
 
    ```shell
    mvn clean install
    ```
 
-   Ele gera uma pasta em minified-files, em client-html/src/main/webapp/js com minified main.js e registry.js.
+   Ele gera uma pasta arquivos minificados, em client-html/src/main/webapp/js com minificações main.js e registry.js.
 
 >[!NOTE]
 >
->A Minificação só funcionará com JVM de 64 bits.
+>A minificação só funcionará na JVM de 64 bits.
 
 >[!NOTE]
 >
->Se você minimizar, a atualização será afetada.
+>Se você diminuir, a atualização será afetada.

@@ -4,14 +4,18 @@ seo-title: Developing AEM Components
 description: AEM componentes são usados para manter, formatar e renderizar o conteúdo disponibilizado nas suas páginas da Web.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3511'
 ht-degree: 2%
 
 ---
 
 # Desenvolvimento de componentes de AEM{#developing-aem-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 AEM componentes são usados para manter, formatar e renderizar o conteúdo disponibilizado nas suas páginas da Web.
 
@@ -91,7 +95,7 @@ O mecanismo para separar a lógica da aparência ajuda a esclarecer o que é cha
 
 [A API de uso do Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
 
-### Como usar o JavaScript {#using-javascript}
+### Uso do JavaScript {#using-javascript}
 
 [A API de uso do JavaScript do HTL permite que um arquivo HTL acesse o código de ajuda gravado em JavaScript](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
 
@@ -135,7 +139,7 @@ Para obter detalhes completos, consulte:
 
    * Fornece uma interface do usuário consistente em todas as soluções de nuvem
    * [Conceitos da interface de usuário habilitada para toque do AEM - Interface do usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guia da interface do usuário do Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guia de Coral UI](https://helpx.adobe.com/br/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Interface do usuário do Granite
 
@@ -263,7 +267,7 @@ Para inserir lógica em seu campo, você deve:
 1. Tenha seu campo marcado com uma determinada classe CSS (a variável *gancho*).
 1. Defina, na biblioteca do cliente, um ouvinte JS vinculado ao nome da classe CSS (isso garante que a lógica personalizada tenha escopo somente para o campo e não afete outros campos do mesmo tipo).
 
-Para isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. Consulte a [Documentação da interface do usuário do Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) para identificar a qual evento você deseja reagir. Isso é muito semelhante ao processo que você tinha que executar com ExtJS no passado: encontre a página de documentação de um determinado widget e verifique os detalhes de sua API de evento.
+Para isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. Consulte a [Documentação da interface do usuário do Coral](https://helpx.adobe.com/br/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) para identificar a qual evento você deseja reagir. Isso é muito semelhante ao processo que você tinha que executar com ExtJS no passado: encontre a página de documentação de um determinado widget e verifique os detalhes de sua API de evento.
 
 Para ver um exemplo, consulte:
 

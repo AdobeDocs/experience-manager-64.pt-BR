@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools,Asset Management
 role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3336'
 ht-degree: 2%
 
 ---
 
 # Criar e configurar as páginas do Editor de ativos {#creating-and-configuring-asset-editor-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Este documento descreve o seguinte:
 
@@ -22,17 +26,17 @@ Este documento descreve o seguinte:
 
 >[!NOTE]
 >
->O Compartilhamento de ativos está disponível como uma implementação de referência de código aberto. Consulte [Compartilhamento de Ativos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) . Não é suportado oficialmente.
+>O Compartilhamento de ativos está disponível como uma implementação de referência de código aberto. Consulte [Compartilhamento de ativos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) . Não é suportado oficialmente.
 
 ## Por que criar e configurar páginas do editor de ativos? {#why-create-and-configure-asset-editor-pages}
 
-O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao migrar de uma solução de pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários empresariais, autores de WCM, jornalistas e assim por diante - a poderosa interface do usuário [!DNL Adobe Experience Manager Assets] para usuários profissionais pode fornecer muitas informações e as partes interessadas começam a solicitar interfaces do usuário ou aplicativos específicos para acessar os ativos digitais que são relevantes para eles.
+O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao mudar de uma solução de pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários empresariais, autores de WCM, jornalistas e assim por diante - a poderosa interface do usuário de [!DNL Adobe Experience Manager Assets] para usuários profissionais, é possível fornecer informações demais e as partes interessadas começam a solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais relevantes para eles.
 
 Esses aplicativos centrados em ativos podem ser simples galerias de fotos em uma intranet onde os funcionários podem fazer upload de fotos de visitas comerciais ou de um centro de imprensa em um site aberto ao público, como o exemplo fornecido com o Geometrixx. Os aplicativos centrados em ativos também podem se estender para soluções completas, incluindo carrinhos de compras, processos de check-out e verificação.
 
-A criação de um aplicativo centrado em ativos se torna, em grande medida, um processo de configuração que não requer codificação, somente conhecimento dos grupos de usuários e suas necessidades, bem como conhecimento dos metadados que estão sendo usados. Os aplicativos centrados em ativos criados com [!DNL Assets] são extensíveis: com o esforço moderado de codificação, os componentes reutilizáveis para pesquisar, visualizar e modificar ativos podem ser criados.
+A criação de um aplicativo centrado em ativos se torna, em grande medida, um processo de configuração que não requer codificação, somente conhecimento dos grupos de usuários e suas necessidades, bem como conhecimento dos metadados que estão sendo usados. Aplicativos centrados em ativos criados com [!DNL Assets] são extensíveis: com o esforço moderado de codificação, os componentes reutilizáveis para pesquisar, visualizar e modificar ativos podem ser criados.
 
-Um aplicativo centrado em ativos em [!DNL Experience Manager] consiste em uma página do Editor de ativos, que pode ser usada para obter uma exibição detalhada de um ativo específico. Uma página Editor de ativos também permite a edição de metadados, desde que o usuário que acessar o ativo tenha as permissões necessárias.
+Um aplicativo centrado em ativos no [!DNL Experience Manager] O consiste em uma página Editor de ativos, que pode ser usada para obter uma exibição detalhada de um ativo específico. Uma página Editor de ativos também permite a edição de metadados, desde que o usuário que acessar o ativo tenha as permissões necessárias.
 
 ## Criar e configurar uma página de Compartilhamento de ativos {#creating-and-configuring-an-asset-share-page}
 
@@ -51,13 +55,13 @@ Para criar uma nova página de Compartilhamento de ativos, você pode criá-la q
 
 >[!NOTE]
 >
->Por padrão, ao criar uma página de Compartilhamento de ativos a partir de **Novo** no gerenciador de ativos digitais, um visualizador de ativos e um editor de ativos são criados automaticamente para você.
+>Por padrão, ao criar uma página de Compartilhamento de ativos do **Novo** no digital asset manager, um visualizador de Ativos e um editor de Ativos são criados automaticamente para você.
 
-Para criar uma nova página de Compartilhamento de ativos no console **Sites**:
+Para criar uma nova página de Compartilhamento de ativos na **Sites** console:
 
-1. Na guia **[!UICONTROL Sites]**, navegue até o local em que deseja criar uma página de compartilhamento de ativos e clique em **[!UICONTROL Novo]**.
+1. No **[!UICONTROL Sites]** , navegue até o local em que deseja criar uma página de compartilhamento de ativos e clique em **[!UICONTROL Novo]**.
 
-1. Selecione a página **[!UICONTROL Compartilhamento de Ativos]** e clique em **[!UICONTROL Criar]**. A nova página é criada e a página de compartilhamento de ativos é listada na guia **[!UICONTROL Sites]**.
+1. Selecione o **[!UICONTROL Compartilhamento de ativos]** e clique em **[!UICONTROL Criar]**. A nova página é criada e a página de compartilhamento de ativos é listada na variável **[!UICONTROL Sites]** guia .
 
 ![dam8](assets/dam8.png)
 
@@ -65,14 +69,14 @@ A página básica criada usando o modelo de Compartilhamento de ativos do Geomet
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-Para personalizar a página Compartilhamento de ativos, use elementos do sidekick e também edite as propriedades do construtor de consultas. A página **[!UICONTROL Geometrixx Press Center]** é uma versão personalizada de uma página com base neste modelo:
+Para personalizar a página Compartilhamento de ativos, use elementos do sidekick e também edite as propriedades do construtor de consultas. A página **[!UICONTROL Geometrixx Press Center]** O é uma versão personalizada de uma página com base neste modelo:
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
 Para criar uma nova página de compartilhamento de ativos por meio do gerenciador de ativos digitais:
 
 1. No gerenciador de ativos digitais, em **[!UICONTROL Novo]**, selecione **[!UICONTROL Novo compartilhamento de ativos]**.
-1. No **[!UICONTROL Title]**, digite o nome da página de compartilhamento de ativos. Se desejar, insira um nome para o URL.
+1. No **[!UICONTROL Título]**, insira o nome da página de compartilhamento de ativos. Se desejar, insira um nome para o URL.
 
    ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
 
@@ -80,7 +84,7 @@ Para criar uma nova página de compartilhamento de ativos por meio do gerenciado
 
    ![screen_shot_2012-04-19at24114pm](assets/screen_shot_2012-04-19at24114pm.png)
 
-   Por padrão, ao criar uma página de Compartilhamento de ativos a partir de **[!UICONTROL Novo]**, um visualizador de Ativos e o editor de Ativos são criados automaticamente para você.
+   Por padrão, ao criar uma página de Compartilhamento de ativos do **[!UICONTROL Novo]**, um visualizador de Ativos e um editor de Ativos são criados automaticamente para você.
 
 #### Personalizar ações {#customizing-actions}
 
@@ -95,14 +99,14 @@ Para adicionar ações à página Compartilhamento de ativos:
 
 | Ação | Descrição |
 |---|---|
-| [!UICONTROL Ação de exclusão] | Os usuários podem excluir os ativos selecionados. |
+| [!UICONTROL Excluir ação] | Os usuários podem excluir os ativos selecionados. |
 | [!UICONTROL Ação de download] | Permite que os usuários baixem ativos selecionados em seus computadores. |
-| [!UICONTROL Ação do Lightbox] | Salva ativos em um &quot;lightbox&quot;   onde você pode executar outras ações. Isso é útil ao trabalhar   com ativos em várias páginas. O lightbox também pode ser usado como um   carrinho de compras para ativos. |
-| [!UICONTROL Ação de mover] | Os usuários podem mover o ativo para outro   localização |
-| [!UICONTROL Ação de tags] | Permite que os usuários adicionem tags aos ativos selecionados |
-| [!UICONTROL Exibir ação de ativo] | Abre o ativo no editor de Ativos para   manipulação do usuário. |
+| [!UICONTROL Ação Lightbox] | Salva os ativos em um &quot;lightbox&quot;, onde você pode executar outras ações neles. Isso é útil ao trabalhar com ativos em várias páginas. O lightbox também pode ser usado como um carrinho de compras para ativos. |
+| [!UICONTROL Ação Mover] | Os usuários podem mover o ativo para outro local |
+| [!UICONTROL Ações de tags] | Permite que os usuários adicionem tags aos ativos selecionados |
+| [!UICONTROL Exibir ação de ativo] | Abre o ativo no editor de Ativos para manipulação do usuário. |
 
-1. Arraste a ação apropriada para a área **Actions** na página. Isso cria um botão usado para executar essa ação.
+1. Arraste a ação apropriada para a **Ações** na página. Isso cria um botão usado para executar essa ação.
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
@@ -139,23 +143,23 @@ O construtor de consultas permite inserir termos de pesquisa e criar conteúdo p
 
 Para personalizar o construtor de consultas:
 
-1. Na página Compartilhamento de ativos que você deseja personalizar, clique em **[!UICONTROL Editar]** no Construtor de consultas. Por padrão, a guia **[!UICONTROL General]** é aberta.
+1. Na página Compartilhamento de ativos que você deseja personalizar, clique em **[!UICONTROL Editar]** no Construtor de consultas. Por padrão, a variável **[!UICONTROL Geral]** será aberta.
 
 1. Selecione o número de resultados por página, o caminho do editor de ativos (se você tiver um editor de ativos personalizado) e o título Ações.
 
    ![screen_shot_2012-04-23at15055pm](assets/screen_shot_2012-04-23at15055pm.png)
 
-1. Clique na guia **[!UICONTROL Caminhos]**. Insira um caminho ou vários caminhos que a pesquisa executará. Esses caminhos serão substituídos se o usuário usar o predicado Caminhos .
+1. Clique no botão **[!UICONTROL Caminhos]** guia . Insira um caminho ou vários caminhos que a pesquisa executará. Esses caminhos serão substituídos se o usuário usar o predicado Caminhos .
 
    ![screen_shot_2012-04-23at15150pm](assets/screen_shot_2012-04-23at15150pm.png)
 
 1. Insira outro tipo de nó, se desejar.
 
-1. No campo **[!UICONTROL URL do construtor de consultas]**, você pode substituir ou quebrar o construtor de consultas e inserir os novos URLs do servlet com o componente do construtor de consultas existente. No campo **[!UICONTROL URL do feed]**, você também pode substituir o URL do feed.
+1. No **[!UICONTROL URL do construtor de consultas]** , você pode substituir ou envolver o construtor de consultas e inserir os novos URLs de servlet com o componente existente do construtor de consultas. No **[!UICONTROL URL do feed]** , você também pode substituir o URL do feed.
 
    ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
-1. No campo **[!UICONTROL Text]**, insira o texto que deseja que apareça para os resultados e os números de página dos resultados. Clique em **[!UICONTROL OK]** quando terminar de fazer alterações.
+1. No **[!UICONTROL Texto]** , insira o texto que deseja exibir para os resultados e números de página de resultados. Clique em **[!UICONTROL OK]** quando terminar de fazer alterações.
 
    ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
@@ -167,22 +171,22 @@ Para adicionar predicados:
 
 1. Na página Compartilhamento de ativos que você deseja personalizar, clique em **[!UICONTROL Pesquisar]**.
 
-   ![compartilhamento de ativos3](assets/assetshare3.bmp)
+   ![assetshare3](assets/assetshare3.bmp)
 
 1. Arraste os predicados apropriados para a página Compartilhamento de ativos abaixo do construtor de consultas. Isso cria os campos apropriados.
 
-   ![compartilhamento de ativos4](assets/assetshare4.bmp)
+   ![assetshare4](assets/assetshare4.bmp)
 
    Os seguintes predicados estão disponíveis:
 
 | Predicado | Descrição |
 |---|---|
-| **[!UICONTROL Predicado de data]** | Permite que os usuários pesquisem ativos que foram modificados antes e depois de determinadas datas. |
+| **[!UICONTROL Predicado da data]** | Permite que os usuários pesquisem ativos que foram modificados antes e depois de determinadas datas. |
 | **[!UICONTROL Predicado de opções]** | O proprietário do site pode especificar uma propriedade para pesquisa (como no predicado da propriedade, por exemplo cq:tags) e uma árvore de conteúdo a partir da qual as opções serão preenchidas (por exemplo, a árvore de tags). Isso gera uma lista de opções em que os usuários podem selecionar os valores (tags) que a propriedade selecionada (propriedade tag) deve ter. Esse predicado permite criar controles de lista como a lista de tags, tipos de arquivo, orientações de imagem e assim por diante. É ótimo para um conjunto fixo de opções. |
-| **[!UICONTROL Predicados de caminho]** | Permite que os usuários definam o caminho e as subpastas, se desejado. |
+| **[!UICONTROL Predicado do caminho]** | Permite que os usuários definam o caminho e as subpastas, se desejado. |
 | **[!UICONTROL Predicado da propriedade]** | O proprietário do site especifica uma propriedade a ser pesquisada, por exemplo, tiff:ImageLength e o usuário pode inserir um valor, por exemplo, 800. Isso retorna todas as imagens que têm 800 pixels de altura. Dever se sua propriedade pode ter valores arbitrários é útil. |
 
-Para obter mais informações, consulte o [predicado javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+Para obter mais informações, consulte o [predicar javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. Para configurar o predicado ainda mais, clique duas vezes nele. Por exemplo, ao abrir o Predicado de caminho, é necessário atribuir o caminho raiz.
 
@@ -202,9 +206,9 @@ Ao criar a página Editor de ativos , uma boa prática é criar a página logo a
 
 Para criar uma página do Editor de ativos:
 
-1. Na guia **[!UICONTROL Sites]**, navegue até o local em que deseja criar uma página de editor de ativos e clique em **[!UICONTROL Novo]**.
+1. No **[!UICONTROL Sites]** , navegue até o local em que deseja criar uma página do editor de ativos e clique em **[!UICONTROL Novo]**.
 
-1. Selecione **[!UICONTROL Geometrixx Asset Editor]** e clique em **[!UICONTROL Criar]**. A nova página é criada e é listada na guia **[!UICONTROL Sites]**.
+1. Selecionar **[!UICONTROL Editor de ativos do Geometrixx]** e clique em **[!UICONTROL Criar]**. A nova página é criada e listada na variável **[!UICONTROL Sites]** guia .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
@@ -212,7 +216,7 @@ A página básica criada usando o modelo do Editor de ativos do Geometrixx tem a
 
 ![assetshare5](assets/assetshare5.bmp)
 
-Para personalizar a página Editor de ativos, use elementos do sidekick. A página Editor de ativos acessada do **[!UICONTROL Geometrixx Press Center]** é uma versão personalizada de uma página baseada neste modelo:
+Para personalizar a página Editor de ativos, use elementos do sidekick. A página Editor de ativos que é acessada na **[!UICONTROL Geometrixx Press Center]** O é uma versão personalizada de uma página com base neste modelo:
 
 ![assetshare6](assets/assetshare6.bmp)
 
@@ -226,9 +230,9 @@ Para definir a página Editor de ativos:
 
    ![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
-1. Clique na guia **[!UICONTROL General]** se ela ainda não estiver selecionada.
+1. Clique no botão **[!UICONTROL Geral]** se ainda não estiver selecionada.
 
-1. No campo **[!UICONTROL Caminho do Editor de ativos]**, insira o caminho para o editor de ativos no qual deseja que a página Compartilhamento de ativos abra ativos e clique em **[!UICONTROL OK]**.
+1. No **[!UICONTROL Caminho do Editor de ativos]** , insira o caminho para o editor de ativos no qual deseja que a página Compartilhamento de ativos abra os ativos e clique em **[!UICONTROL OK]**.
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
@@ -238,7 +242,7 @@ Você determina qual funcionalidade um editor de ativos tem, adicionando compone
 
 Para adicionar componentes do editor de ativos:
 
-1. Na página Editor de ativos que você deseja personalizar, selecione **[!UICONTROL Editor de ativos]** no sidekick. Todos os componentes disponíveis do editor de ativos são exibidos.
+1. Na página Editor de ativos que deseja personalizar, selecione **[!UICONTROL Editor de ativos]** no sidekick. Todos os componentes disponíveis do editor de ativos são exibidos.
 
    >[!NOTE]
    >
@@ -252,8 +256,8 @@ Para adicionar componentes do editor de ativos:
 
    | Componente | Descrição |
    |---|---|
-   | **[!UICONTROL Campo de texto ] de metadados e  [!UICONTROL formulário de metadados]** | Permite adicionar metadados adicionais a um ativo e executar uma ação, como enviar, nesse ativo. |
-   | **[!UICONTROL Subativos]** | Permite personalizar subativos. |
+   | **[!UICONTROL Formulário de metadados] e [!UICONTROL Campo de texto de metadados]** | Permite adicionar metadados adicionais a um ativo e executar uma ação, como enviar, nesse ativo. |
+   | **[!UICONTROL Sub-ativos]** | Permite personalizar subativos. |
    | **Tags** | Permite que os usuários selecionem e adicionem tags a um ativo. |
    | **[!UICONTROL Miniatura]** | Mostra uma miniatura do ativo, seu nome de arquivo e permite adicionar um texto alternativo. Também é possível adicionar ações do editor de ativos aqui. |
    | **[!UICONTROL Título]** | Exibe o título do ativo, que pode ser personalizado. |
@@ -262,30 +266,30 @@ Para adicionar componentes do editor de ativos:
 
 #### Formulário de metadados e campo de texto - Configuração do componente Exibir metadados {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-O Formulário de metadados é um formulário que inclui uma ação de início e fim. No meio, você insere campos **[!UICONTROL Text]**. Consulte [Forms](../sites-authoring/default-components.md) para obter mais informações sobre como trabalhar com formulários.
+O Formulário de metadados é um formulário que inclui uma ação de início e fim. No meio, você insere **[!UICONTROL Texto]** campos. Consulte [Forms](../sites-authoring/default-components.md) para obter mais informações sobre como trabalhar com formulários.
 
-1. Crie uma ação de início clicando em **[!UICONTROL Edit]** na área Iniciar do formulário. Você pode inserir um título de Caixa, se desejar. Por padrão, o título da Caixa é **[!UICONTROL Metadados]**. Marque a caixa de seleção Validação do cliente se desejar que o código de cliente do script java para validação seja gerado.
+1. Criar uma ação de início clicando em **[!UICONTROL Editar]** na área Iniciar do formulário. Você pode inserir um título de Caixa, se desejar. Por padrão, o título da Caixa é **[!UICONTROL Metadados]**. Marque a caixa de seleção Validação do cliente se desejar que o código de cliente do script java para validação seja gerado.
 
    ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Crie uma ação End clicando em **[!UICONTROL Edit]** na área End do formulário. Por exemplo, você pode criar um botão **[!UICONTROL Submit]** para permitir que os usuários enviem suas alterações de metadados. Como opção, você pode adicionar um botão **[!UICONTROL Reset]** que redefine os metadados para seu estado original.
+1. Crie uma ação End clicando em **[!UICONTROL Editar]** na área Fim do formulário. Por exemplo, talvez você queira criar um **[!UICONTROL Enviar]** para permitir que os usuários enviem suas alterações de metadados. Opcionalmente, é possível adicionar uma **[!UICONTROL Redefinir]** botão que redefine os metadados para seu estado original.
 
    ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
-1. Entre o **[!UICONTROL Início do formulário]** e o **Fim do formulário**, arraste os Campos de texto de metadados para o formulário. Os usuários preenchem metadados nesses campos de texto, nos quais podem enviar ou concluir outra ação.
+1. Entre as **[!UICONTROL Início do formulário]** e **Fim do formulário**, arraste Campos de texto de metadados para o formulário. Os usuários preenchem metadados nesses campos de texto, nos quais podem enviar ou concluir outra ação.
 
-1. Clique duas vezes no nome do campo, por exemplo, **Title** para abrir o campo de metadados e fazer alterações. Na guia **[!UICONTROL General]** da janela [!UICONTROL Editar componente], defina o namespace e o rótulo do campo, bem como o tipo, por exemplo, `dc:title`.
+1. Clique duas vezes no nome do campo, por exemplo, **Título** para abrir o campo de metadados e fazer alterações. No **[!UICONTROL Geral]** da guia [!UICONTROL Editar componente] , você define o namespace e o rótulo do campo, bem como o tipo, por exemplo, `dc:title`.
 
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
    Consulte [Personalização e extensão [!DNL Assets]](extending-assets.md) para obter informações sobre como modificar os namespaces disponíveis no formulário de metadados.
 
-1. Clique na guia **[!UICONTROL Restrições]**. Aqui, é possível selecionar se um campo é obrigatório e, se necessário, adicionar restrições.
+1. Clique no botão **[!UICONTROL Restrições]** guia . Aqui, é possível selecionar se um campo é obrigatório e, se necessário, adicionar restrições.
 
    ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Clique na guia **[!UICONTROL Display]**. Aqui, é possível inserir uma nova largura e número de linhas para o campo de metadados. Marque a caixa de seleção **Field is read only** para permitir que os usuários editem os metadados.
+1. Clique no botão **[!UICONTROL Exibir]** guia . Aqui, é possível inserir uma nova largura e número de linhas para o campo de metadados. Selecione o **Campo somente leitura** caixa de seleção para permitir que os usuários editem os metadados.
 
    ![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
@@ -295,9 +299,9 @@ O Formulário de metadados é um formulário que inclui uma ação de início e 
 
 Na página Editor de ativos, os usuários podem inserir valores nos campos de metadados (se forem editáveis) e executar a ação final (por exemplo, enviar as alterações).
 
-#### Subativos {#sub-assets}
+#### Sub-ativos {#sub-assets}
 
-O componente Subativos é onde você pode exibir e selecionar subativos. Você pode determinar quais nomes aparecem no [ativo principal](assets.md#what-are-digital-assets) e subativos.
+O componente Subativos é onde você pode exibir e selecionar subativos. Você pode determinar quais nomes aparecem sob a variável [ativo principal](assets.md#what-are-digital-assets) e subativos.
 
 ![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
@@ -319,7 +323,7 @@ O componente Tags é um componente onde os usuários podem atribuir tags existen
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Clique duas vezes no componente Tags para abrir a caixa de diálogo tags, onde é possível alterar o título de Tags, se desejado, e onde é possível selecionar os namespaces alocados. Para tornar esse campo editável, desmarque a caixa de seleção **Ocultar botão Editar**. Por padrão, as tags são editáveis.
+Clique duas vezes no componente Tags para abrir a caixa de diálogo tags, onde é possível alterar o título de Tags, se desejado, e onde é possível selecionar os namespaces alocados. Para tornar esse campo editável, desmarque a opção **Ocultar edição** caixa de seleção do botão. Por padrão, as tags são editáveis.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -333,11 +337,11 @@ A seguir, um componente de Tags preenchido:
 
 #### Miniatura  {#thumbnail}
 
-O componente Miniatura é onde o ativo exibe a miniatura selecionada (para muitos dos formatos, a miniatura é extraída automaticamente). Além disso, o componente exibe o nome do arquivo e as ações [que você pode modificar](assets-finder-editor.md#adding-asset-editor-actions).
+O componente Miniatura é onde o ativo exibe a miniatura selecionada (para muitos dos formatos, a miniatura é extraída automaticamente). Além disso, o componente exibe o nome do arquivo e [ações que você pode modificar](assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Clique duas vezes no componente de miniatura para abrir a caixa de diálogo de miniatura, onde é possível alterar o texto alternativo. Por padrão, o texto alternativo em miniatura assume o padrão **[!UICONTROL Clique para baixar]** o ativo.
+Clique duas vezes no componente de miniatura para abrir a caixa de diálogo de miniatura, onde é possível alterar o texto alternativo. Por padrão, o texto alternativo da miniatura assume como padrão **[!UICONTROL Clique para baixar]** ativo.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -351,13 +355,13 @@ O componente Título exibe o título do ativo e uma descrição.
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
-Por padrão, ele está no modo somente leitura, portanto, os usuários não podem editá-lo. Para torná-lo editável, clique duas vezes no componente e desmarque a caixa de seleção **Ocultar botão de edição**. Além disso, insira um título para vários ativos.
+Por padrão, ele está no modo somente leitura, portanto, os usuários não podem editá-lo. Para torná-lo editável, clique duas vezes no componente e desmarque o **Ocultar botão de edição** caixa de seleção. Além disso, insira um título para vários ativos.
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
-Se o Título puder ser editado, você poderá adicionar um título e uma descrição clicando no Lápis para abrir a janela **Propriedades do ativo**. Além disso, é possível ativar e desativar o ativo selecionando a data e a hora.
+Se o Título puder ser editado, você poderá adicionar um título e uma descrição clicando no Lápis para abrir o **Propriedades do ativo** janela. Além disso, é possível ativar e desativar o ativo selecionando a data e a hora.
 
-Quando os usuários editam o Título clicando no ícone Lápis, eles podem alterar o **Título**, **Descrição**, e inserir **Em** e **Desligado** para ativar e desativar o ativo.
+Quando os usuários editam o Título clicando no ícone Lápis , eles podem alterar a variável **Título**, **Descrição** e insira **Ligado** e **Hora de desligar** para ativar e desativar o ativo.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -379,55 +383,55 @@ Para adicionar ações à página Editor de ativos:
 
    | Ação | Descrição |
    |---|---|
-   | [!UICONTROL Download] | Permite que os usuários baixem as   ativos para seus computadores. |
-   | [!UICONTROL Editores] | Permite que os usuários editem uma imagem   (edição interativa) |
-   | [!UICONTROL Lightbox] | Salva ativos em um   &quot;lightbox&quot; onde você pode executar outras ações. Isso vem   útil ao trabalhar com ativos em várias páginas. |
-   | [!UICONTROL Bloqueio] | Permite que os usuários bloqueiem um ativo. Essa   não está ativada por padrão e precisa ser ativada na lista   de componentes. |
-   | [!UICONTROL Referências] | Clique para mostrar em quais páginas   o ativo está sendo usado. |
-   | [!UICONTROL Versões] | Permite criar e restaurar   versões de um ativo. |
+   | [!UICONTROL Download] | Permite que os usuários baixem ativos selecionados em seus computadores. |
+   | [!UICONTROL Editores] | Permite que os usuários editem uma imagem (edição interativa) |
+   | [!UICONTROL Lightbox] | Salva os ativos em um &quot;lightbox&quot;, onde você pode executar outras ações neles. Isso é útil ao trabalhar com ativos em várias páginas. |
+   | [!UICONTROL Bloqueio] | Permite que os usuários bloqueiem um ativo. Essa funcionalidade não é ativada por padrão e precisa ser ativada na lista de componentes. |
+   | [!UICONTROL Referências] | Clique para mostrar em quais páginas o ativo está sendo usado. |
+   | [!UICONTROL Versões] | Permite criar e restaurar versões de um ativo. |
 
-1. Arraste a ação apropriada para a área **Actions** na página. Isso cria um botão usado para executar essa ação.
+1. Arraste a ação apropriada para a **Ações** na página. Isso cria um botão usado para executar essa ação.
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
 ## Editar vários ativos com a página Editor de ativos {#multi-editing-assets-with-the-asset-editor-page}
 
-Com [!DNL Assets] você pode fazer alterações em vários ativos de uma só vez. Depois de ter selecionado ativos, é possível alterar simultaneamente seus itens:
+Com [!DNL Assets] é possível fazer alterações em vários ativos ao mesmo tempo. Depois de ter selecionado ativos, é possível alterar simultaneamente seus itens:
 
 * Tags
 * Metadados
 
 Para fazer várias edições de ativos com a página Editor de ativos:
 
-1. Abra a página do Geometrixx **[!UICONTROL Pressione Center]** em `http://localhost:4502/content/geometrixx/en/company/press.html`.
+1. Abra o Geometrixx **[!UICONTROL Press Center]** página em `http://localhost:4502/content/geometrixx/en/company/press.html`.
 1. Selecione os ativos:
 
    * no Windows: `Ctrl + click` cada ativo.
    * no Mac: `Cmd + click` cada ativo.
 
-   Para selecionar um intervalo de ativos: clique no primeiro ativo e em `Shift + click` no último ativo.
+   Para selecionar um intervalo de ativos: clique no primeiro ativo e, em seguida, `Shift + click` o último ativo.
 
-1. Clique em **[!UICONTROL Editar metadados]** no campo **Ações** (parte esquerda da página).
+1. Clique em **[!UICONTROL Editar metadados]** no **Ações** (parte esquerda da página).
 
-1. A página Geometrixx **[!UICONTROL Press Center Asset Editor]** é aberta em uma nova guia. Os metadados dos ativos são exibidos da seguinte maneira:
+1. O Geometrixx **[!UICONTROL Press Center Asset Editor]** será aberta em uma nova guia. Os metadados dos ativos são exibidos da seguinte maneira:
 
    * Uma tag , que não se aplica a todos os ativos, mas somente a alguns, é exibida em itálico.
    * Uma tag que se aplica a todos os ativos é exibida com uma fonte normal.
    * Metadados diferentes das tags: o valor do campo será exibido somente se for o mesmo para todos os ativos selecionados.
 
 1. Clique em **[!UICONTROL Baixar]** para baixar um arquivo ZIP contendo as representações originais dos ativos.
-1. Clique no ícone de lápis ao lado do campo **[!UICONTROL Tags]** para editar as tags:
+1. Clique no ícone de lápis ao lado do **[!UICONTROL Tags]** para editar as tags:
 
    * Uma tag que não se aplica a todos os ativos, mas somente a alguns tem um fundo cinza.
    * Uma tag que se aplica a todos os ativos tem um fundo branco.
 
    É possível:
 
-   * Clique no ícone `x` para remover a tag de todos os ativos.
-   * Clique no ícone `+` para adicionar a tag a todos os ativos.
-   * Clique em `arrow` e selecione uma tag para adicionar uma nova tag a todos os ativos.
+   * Clique no botão `x` ícone para remover a tag de todos os ativos.
+   * Clique no botão `+` ícone para adicionar a tag a todos os ativos.
+   * Clique no botão `arrow` e selecione uma tag para adicionar uma nova tag a todos os ativos.
 
-   Clique em **[!UICONTROL OK]** para gravar as alterações no formulário. A caixa ao lado do campo **Tags** é automaticamente marcada.
+   Clique em **[!UICONTROL OK]** para gravar as alterações no formulário. A caixa ao lado do **Tags** é automaticamente marcado.
 
 1. Edite o campo Description . Por exemplo, defina-o como: `This is a common description`. Quando um campo é editado, seu valor substitui os valores existentes dos ativos selecionados quando o formulário é enviado. A caixa ao lado do campo é automaticamente marcada quando o campo é editado.
 
@@ -437,4 +441,4 @@ Para fazer várias edições de ativos com a página Editor de ativos:
 
    Observação: a caixa ao lado do campo é automaticamente marcada quando o campo é editado.
 
-1. Clique em **[!UICONTROL Atualizar metadados]** para enviar o formulário e salvar as alterações para todos os ativos. Somente os metadados verificados são modificados.
+1. Clique em **[!UICONTROL Atualizar metadados]** para enviar o formulário e salvar as alterações de todos os ativos. Somente os metadados verificados são modificados.

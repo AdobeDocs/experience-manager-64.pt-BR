@@ -10,21 +10,25 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
-source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 1%
+source-wordcount: '1170'
+ht-degree: 2%
 
 ---
 
 # Configuração de notificação por email{#configuring-email-notification}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 O AEM envia notificações por email para usuários que:
 
-* Inscreveram-se em eventos de página, por exemplo, modificação ou replicação. A seção [Caixa de entrada de notificações](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) descreve como assinar esses eventos.
+* Inscreveram-se em eventos de página, por exemplo, modificação ou replicação. O [Caixa de entrada de notificações](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) descreve como assinar esses eventos.
 
 * Inscreveram-se nos eventos do fórum.
-* É necessário executar uma etapa em um fluxo de trabalho. A seção [Etapa do participante](/help/sites-developing/workflows-step-ref.md#participant-step) descreve como acionar a notificação por email em um workflow.
+* É necessário executar uma etapa em um fluxo de trabalho. O [Etapa do participante](/help/sites-developing/workflows-step-ref.md#participant-step) descreve como acionar a notificação por email em um workflow.
 
 Pré-requisitos:
 
@@ -35,20 +39,20 @@ Quando um usuário é notificado, ele recebe um email no idioma definido em seu 
 
 >[!NOTE]
 >
->Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+>Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; see [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 ## Configuração do serviço de email {#configuring-the-mail-service}
 
-Para que o AEM possa enviar emails, o **Day CQ Mail Service** precisa ser configurado corretamente. Você pode exibir a configuração no console da Web. Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Para que o AEM possa enviar emails, a variável **Day CQ Mail Service** precisa ser configurado corretamente. Você pode exibir a configuração no console da Web. Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; see [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 As seguintes restrições se aplicam:
 
-* A **porta do servidor SMTP** deve ser 25 ou superior.
+* O **Porta do servidor SMTP** deve ser 25 ou superior.
 
-* O **nome do host do servidor SMTP** não deve estar em branco.
-* O endereço **&quot;From&quot;** não deve estar em branco.
+* O **Nome do host do servidor SMTP** não deve ficar em branco.
+* O **Endereço &quot;De&quot;** não deve ficar em branco.
 
-Para ajudar você a depurar um problema com o **Day CQ Mail Service**, você pode assistir aos logs do serviço:
+Para ajudar você a depurar um problema com o **Day CQ Mail Service**, você pode assistir aos registros do serviço:
 
 `com.day.cq.mailer.DefaultMailService`
 
@@ -58,33 +62,33 @@ A configuração é a seguinte no console da Web:
 
 ## Configuração do canal de notificação por email {#configuring-the-email-notification-channel}
 
-Ao assinar notificações de eventos de página ou de fórum, o endereço de email de formulário é definido como `no-reply@acme.com` por padrão. Você pode alterar esse valor configurando o serviço **Canal de email de notificação** no Console da Web.
+Ao assinar notificações de eventos de página ou de fórum, o endereço de email de formulário é definido como `no-reply@acme.com` por padrão. Você pode alterar esse valor configurando a variável **Canal de email de notificação** no Console da Web.
 
-Para configurar o endereço de e-mail from, adicione um nó `sling:OsgiConfig` ao repositório. Use o procedimento a seguir para adicionar o nó diretamente usando o CRXDE Lite:
+Para configurar o endereço de e-mail do , adicione um `sling:OsgiConfig` para o repositório. Use o procedimento a seguir para adicionar o nó diretamente usando o CRXDE Lite:
 
 1. No CRXDE Lite, adicione uma pasta chamada `config` abaixo da pasta do aplicativo.
 1. Na pasta de configuração, adicione um nó chamado:
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` de tipo  `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` de tipo `sling:OsgiConfig`
 
-1. Adicione uma propriedade `String` ao nó chamado `email.from`. Para o valor , especifique o endereço de email que deseja usar.
+1. Adicione um `String` propriedade do nó nomeado `email.from`. Para o valor , especifique o endereço de email que deseja usar.
 
 1. Clique em **Salvar tudo**.
 
 Use o procedimento a seguir para definir o nó nas pastas de origem do pacote de conteúdo:
 
-1. Em `jcr_root/apps/*app_name*/config folder`, crie um arquivo chamado `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. Em seu `jcr_root/apps/*app_name*/config folder`, crie um arquivo chamado `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Adicione o seguinte XML para representar o nó:
 
    `<?xml version="1.0" encoding="UTF-8"?> <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig" email.from="name@server.com"/>`
-1. Substitua o valor do atributo `email.from` ( `name@server.com`) pelo seu endereço de email.
+1. Substitua o valor da variável `email.from` atributo ( `name@server.com`) com seu endereço de email.
 
 1. Salve o arquivo.
 
 ## Configuração do serviço de notificação por email do fluxo de trabalho {#configuring-the-workflow-email-notification-service}
 
-Quando você recebe notificações por email do workflow, o endereço de email de e o prefixo do URL de host são definidos como valores padrão. Você pode alterar esses valores configurando o **Day CQ Workflow Email Notification Service** no Console da Web. Se isso for feito, é recomendável manter a alteração no repositório.
+Quando você recebe notificações por email do workflow, o endereço de email de e o prefixo do URL de host são definidos como valores padrão. Você pode alterar esses valores configurando a variável **Serviço de Notificação por Email do Workflow CQ Dia** no Console da Web. Se isso for feito, é recomendável manter a alteração no repositório.
 
 A configuração padrão é a seguinte no Console da Web:
 
@@ -96,7 +100,7 @@ Os modelos de email para notificações de página estão localizados abaixo:
 
 `/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
-O modelo inglês padrão ( `en.txt`) é definido da seguinte maneira:
+O modelo padrão em inglês ( `en.txt`) é definido da seguinte forma:
 
 ```xml
 subject=[CQ Page Event Notification]: Page Event
@@ -144,7 +148,7 @@ Onde &lt;text_x> pode ser uma combinação de texto estático e variáveis de se
 * `${userId}`, a ID do usuário que acionou o evento.
 * `${modifications}`, descreve o tipo do evento de página e o caminho da página no formato :
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
+   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
    Por exemplo:
 
@@ -156,7 +160,7 @@ Os modelos de email para notificações de fórum estão localizados em:
 
 `/etc/notification/email/default/com.day.cq.collab.forum`
 
-O modelo inglês padrão ( `en.txt`) é definido da seguinte maneira:
+O modelo padrão em inglês ( `en.txt`) é definido da seguinte forma:
 
 ```xml
 subject=[CQ Forum Notification]
@@ -250,11 +254,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Onde `<text_x>` pode ser uma combinação de texto estático e variáveis de sequência dinâmica. Cada linha de um item `<text_x>` precisa ser finalizada com uma barra invertida ( `\`), exceto para a última instância, quando a ausência da barra invertida indicar o fim da variável da string `<text_x>`.
+>Onde `<text_x>` pode ser uma combinação de texto estático e variáveis de sequência dinâmica. Cada linha de um `<text_x>` item precisa ser encerrado com uma barra invertida ( `\`), exceto para a última instância, quando a ausência da barra invertida indicar o fim do `<text_x>` variável da string.
 >
->Mais informações sobre o formato do modelo podem ser encontradas no [javadocs do método Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
+>Mais informações sobre o formato do modelo podem ser encontradas na seção [javadocs de Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) método .
 
-O método `${payload.path.open}` revela o caminho para a carga do item de trabalho. Por exemplo, para uma página em Sites , então `payload.path.open` seria semelhante a `/bin/wcmcommand?cmd=open&path=…`.; isso é sem o nome do servidor, e é por isso que o modelo prepara isso com `${host.prefix}`.
+O método `${payload.path.open}` revela o caminho para a carga do item de trabalho. Por exemplo, para uma página em Sites , em seguida `payload.path.open` seria semelhante a `/bin/wcmcommand?cmd=open&path=…`.; isso é sem o nome do servidor, por isso o modelo prepara com `${host.prefix}`.
 
 As variáveis a seguir podem ser usadas no modelo de email:
 
@@ -301,12 +305,12 @@ Para adicionar um modelo para um novo idioma:
 
 >[!NOTE]
 >
->O `<language-code>` usado como o nome do arquivo para o modelo de email precisa ser um código de idioma em letras minúsculas com duas letras reconhecido pelo AEM. Para códigos de idioma, o AEM depende do ISO-639-1.
+>O `<language-code>` usado como o nome de arquivo do modelo de email precisa ser um código de idioma em letras minúsculas que seja reconhecido pela AEM. Para códigos de idioma, o AEM depende do ISO-639-1.
 
 ## Configuração de notificações de email do AEM Assets {#assetsconfig}
 
 Quando as coleções no AEM Assets são compartilhadas ou não, os usuários podem receber notificações por email do AEM. Para configurar notificações por email, siga estas etapas.
 
 1. Configure o serviço de email, conforme descrito acima em [Configuração do serviço de email](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. Faça logon no AEM como administrador. Clique em **Ferramentas** > **Operações** > **Console da Web** para abrir a Configuração do Console da Web.
-1. Edite **Day CQ DAM Resource Collection Servlet**. Selecione **enviar email**. Clique em **Salvar**.
+1. Faça logon no AEM como administrador. Clique em **Ferramentas** >  **Operações** >  **Console da Web** para abrir a Configuração do Console da Web.
+1. Editar **Servlet de coleta de recursos Day CQ DAM**. Selecionar **enviar email**. Clique em **Salvar**.

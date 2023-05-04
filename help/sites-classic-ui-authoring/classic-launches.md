@@ -1,7 +1,7 @@
 ---
 title: Lançamentos
 seo-title: Launches
-description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
+description: Crie um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
 seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: AEM Docs
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 exl-id: e1e5dc83-2f9c-4c8d-a031-5ded3f1316a1
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 70%
+source-wordcount: '219'
+ht-degree: 28%
 
 ---
 
 # Lançamentos{#launches}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura.
 
@@ -31,6 +35,6 @@ Um lançamento é criado para permitir que você faça modificações prontas pa
 
 >[!CAUTION]
 >
->Não é possível ter várias ramificações de origem para um lançamento na interface clássica.
+>Várias ramificações de origem para um lançamento não são possíveis na interface clássica.
 
 O console Lançamentos pode ser acessado diretamente com [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

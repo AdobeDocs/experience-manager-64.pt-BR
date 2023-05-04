@@ -1,8 +1,8 @@
 ---
 title: Notificações de comunidades
-seo-title: Notificações de comunidades
+seo-title: Communities Notifications
 description: A AEM Communities tem notificações que exibem eventos de interesse para o membro da comunidade que fez logon
-seo-description: A AEM Communities tem notificações que exibem eventos de interesse para o membro da comunidade que fez logon
+seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
 uuid: d6ef12f1-7367-49a5-b891-56800a38b2ab
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,20 +11,24 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 role: Admin
 exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
 # Notificações de comunidades {#communities-notifications}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 ## Visão geral {#overview}
 
 O AEM Communities fornece uma seção de notificações que exibe eventos de interesse para o membro da comunidade com logon assinado.
 
-As notificações são semelhantes a [atividades](essentials-activities.md) e [assinaturas](subscriptions.md), pois podem resultar de
+As notificações são semelhantes a [atividades](essentials-activities.md) e [assinaturas](subscriptions.md) , na medida em que possam resultar de
 
 * O conteúdo de publicação do membro
 * O membro que escolheu seguir outro membro
@@ -33,15 +37,15 @@ As notificações são semelhantes a [atividades](essentials-activities.md) e [a
 O que distingue notificações de atividades e subscrições é
 
 * Um link para a seção de notificações está sempre presente no cabeçalho de um site da comunidade
-   * As atividades exigem que a [função de fluxo de atividades](functions.md#activity-stream-function) seja incluída na estrutura do site da comunidade
-   * As assinaturas exigem [configuração de email](email.md)
+   * As atividades exigem [função de fluxo de atividades](functions.md#activity-stream-function) a ser incluído na estrutura do site da comunidade
+   * As assinaturas exigem [configuração do email](email.md)
 * A implementação de notificações é por meio de canais escaláveis e conectáveis
    * As atividades só estão disponíveis na Web
    * As assinaturas só estão disponíveis por email
 
-A partir de Comunidades [FP1](deploy-communities.md#latestfeaturepack), os canais de notificação disponíveis são
+Comunidades [FP1](deploy-communities.md#latestfeaturepack), os canais de notificação disponíveis são
 
-* O canal da Web, acessado usando o link `Notifications`
+* O canal da Web, acessado por meio do `Notifications` link
 * O canal de email, disponível quando o email está configurado corretamente
 
 Os canais futuros são dispositivos móveis e desktop.
@@ -52,15 +56,15 @@ Os canais futuros são dispositivos móveis e desktop.
 
 O email deve ser configurado para que o canal de email das notificações funcione.
 
-Para obter instruções sobre como configurar o email, consulte [Configuração do email](analytics.md).
+Para obter instruções sobre como configurar o email, consulte [Configuração de email](analytics.md).
 
 **Habilitar Seguir**
 
-Os componentes devem ser configurados para ativar o seguinte. Os recursos que permitem o seguinte são [blog](blog-feature.md), [fórum](forum.md), [QnA](working-with-qna.md), [calendário](calendar.md), [biblioteca de arquivos](file-library.md) e [comentários](comments.md).
+Os componentes devem ser configurados para ativar o seguinte. Os recursos que permitem o seguinte são [blog](blog-feature.md), [fórum](forum.md), [QnA](working-with-qna.md), [calendário](calendar.md), [filelibrary](file-library.md)e [comentários](comments.md).
 
 Observe que
 
-* Os componentes usados na comunidade [modelos de site](sites.md) e [modelos de grupo](tools-groups.md) já podem ser configurados para permitir o seguinte
+* Componentes usados na comunidade [modelos de site](sites.md) e [modelos de grupo](tools-groups.md) pode já estar configurado para permitir que:
 
 * Os perfis de membro já estão configurados para permitir que outros membros sigam
 
@@ -68,11 +72,11 @@ Observe que
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
-O botão **Follow** fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Sempre que o botão **Follow** é selecionado, é possível ativar ou desativar uma seleção. A seleção `Email Subscriptions` só está presente quando configurada.
+O **Seguir** fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Sempre que a variável **Seguir** for selecionado, é possível ativar ou desativar uma seleção. O `Email Subscriptions` A seleção só está presente quando configurada.
 
-Se qualquer método do seguinte for selecionado, o texto do botão será alterado para **Seguindo**. Para maior comodidade, é possível selecionar `Unfollow All` para desligar todos os métodos.
+Se qualquer método de seguir for selecionado, o texto do botão será alterado para **Seguindo**. Para maior comodidade, é possível selecionar `Unfollow All` para desativar todos os métodos.
 
-O botão **Follow** será exibido
+O **Seguir** o botão será exibido
 
 * Ao visualizar o perfil de outro membro
 * Em uma página principal do recurso, como fóruns, QnA e blogs
@@ -88,7 +92,7 @@ O canal da Web é sempre ativado.
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
-O canal de email, que depende da [configuração adequada do email](email.md), fornece as mesmas configurações do canal da Web.
+O canal de email, que depende do [configuração do email](email.md), fornece as mesmas configurações do canal da Web.
 
 O canal de email está desativado por padrão.
 
@@ -102,9 +106,9 @@ Ele pode ser ativado por um membro, mas ainda depende da configuração do email
 
 ### Notificações da Web {#web-notifications}
 
-Um [assistente criado no site da comunidade](sites-console.md) agora inclui um link para o recurso `Notifications` na barra de cabeçalho do site acima do banner. Ao contrário das mensagens, as notificações são criadas para cada site da comunidade, enquanto as mensagens devem ser ativadas durante o processo de criação do site.
+A [site de comunidade criado pelo assistente](sites-console.md) O agora inclui um link para a `Notifications` na barra de cabeçalho do site acima do banner. Ao contrário das mensagens, as notificações são criadas para cada site da comunidade, enquanto as mensagens devem ser ativadas durante o processo de criação do site.
 
-Ao visitar o site publicado, selecionar o link `Notifications` exibirá todas as notificações do membro.
+Ao visitar o site publicado, selecione o `Notifications` exibirá todas as notificações do membro.
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 

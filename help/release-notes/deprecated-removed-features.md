@@ -1,22 +1,26 @@
 ---
 title: Recursos obsoletos e removidos
-description: Notas de versão específicas de recursos obsoletos e removidos do Adobe Experience Manager 6.4.
+description: Notas de versão específicas para recursos obsoletos e removidos do Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 26%
+source-wordcount: '1344'
+ht-degree: 14%
 
 ---
 
 # Recursos obsoletos e removidos {#deprecated-and-removed-features}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor do cliente em geral, sempre sob considerações cuidadosas de compatibilidade com versões anteriores.
 
-As seguintes regras se aplicam para comunicar a remoção/substituição iminente das funcionalidades do AEM:
+Para comunicar a remoção/substituição iminente de recursos de AEM, as seguintes regras se aplicam:
 
 1. O anúncio sobre a descontinuidade é oferecido primeiro. Embora obsoletos, os recursos ainda estão disponíveis, mas não serão aprimorados.
-1. A remoção de funcionalidades obsoletas ocorrerá assim que possível na versão principal seguinte. A data definida para a remoção será anunciada.
+1. A remoção de recursos obsoletos ocorrerá na seguinte versão principal, o mais tardar. A data de destino real para remoção será anunciada.
 
 Esse processo oferece ao usuário ao menos um ciclo de versão para adaptar sua implementação a uma nova versão ou sucessor de uma funcionalidade descontinuada, antes da remoção.
 
@@ -28,14 +32,14 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 <!-- TBD: This MD table is a replacement of the HTML table below. However, it generates validation error hence commenting and replacing with inline text. Restore if required. -->
 
-| Área | Recurso | Substituição |
+| Área | Destaque | Substituição |
 |---|---|---|
-| Interface | A Adobe não planeja fazer aprimoramentos adicionais à interface do usuário clássica. O AEM 6.4 tem a interface do usuário clássica incluída, e os clientes que atualizam de versões anteriores podem continuar a usando da mesma forma. Observe que a interface do usuário clássica permanece completamente compatível mesmo enquanto obsoluta. <ul> <li>`/libs/cq/core/content/welcome.html` </li> <li> `/siteadmin` </li> <li> `/damadmin` </li> <li> `/mcmadmin` </li> <li> `/inbox` </li> <li> `/tagging` </li> <li> `/cf#` (Editor de página) </li><li> `/libs/launches/content/admin.html` </li> <li> `/libs/cq/workflow/content/console.html` </li> </ul> | Recomenda-se que os clientes alternem para usar a nova interface do usuário do AEM. |
-| Componentes | O Adobe não planeja fazer aprimoramentos adicionais aos componentes de base listados abaixo. O AEM 6.4 tem os componentes de base incluídos e os clientes que atualizam de versões anteriores podem continuar a usá-los como estão. Observe que os componentes de base permanecem compatíveis ainda que obsoletos. <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirmation </li> <li> foundation/components/adaptiveimage </li> <li> foundation/components/assetssharepage </li> <li> foundation/components/breadcrumb </li> <li> fundação/componentes/formulário/cartão de crédito </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> fundação/componentes/logotipo </li> <li> foundation/components/mobilefoter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> fundação/componentes/tabela </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | Recomenda-se que os clientes usem os componentes principais para projetos futuros. Os sites existentes não precisam ser alterados. |
+| Interface | O Adobe não planeja fazer aprimoramentos adicionais à interface clássica. O AEM 6.4 tem a interface do usuário clássica incluída e os clientes que atualizam de versões anteriores podem continuar a usá-la como estão. Observe que a interface do usuário clássica permanece totalmente compatível enquanto está obsoleta. <ul> <li>`/libs/cq/core/content/welcome.html` </li> <li> `/siteadmin` </li> <li> `/damadmin` </li> <li> `/mcmadmin` </li> <li> `/inbox` </li> <li> `/tagging` </li> <li> `/cf#` (Editor de página) </li><li> `/libs/launches/content/admin.html` </li> <li> `/libs/cq/workflow/content/console.html` </li> </ul> | Recomenda-se que os clientes alternem para usar a nova interface do usuário do AEM. |
+| Componentes | O Adobe não planeja fazer aprimoramentos adicionais aos componentes de base listados abaixo. O AEM 6.4 tem os componentes de base incluídos e os clientes que atualizam de versões anteriores podem continuar a usá-los como estão. Observe que os componentes de base permanecem compatíveis ainda que obsoletos. <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirmation </li> <li> foundation/components/adaptiveimage </li> <li> foundation/components/assetssharepage </li> <li> foundation/components/breadcrumb </li> <li> fundação/componentes/formulário/cartão de crédito </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> fundação/componentes/logotipo </li> <li> foundation/components/mobilefoter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> fundação/componentes/tabela </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | Recomenda-se que os clientes usem os Componentes principais para projetos futuros. Os sites existentes não precisam ser alterados. |
 | Componentes | O Adobe não planeja fazer aprimoramentos adicionais aos componentes de base listados abaixo. O AEM 6.4 tem os componentes de base incluídos e os clientes que atualizam de versões anteriores podem continuar a usá-los como estão. Observe que os componentes de base permanecem compatíveis ainda que obsoletos. <ul><li>fundação/componentes/tempo</li></ul> | O Adobe não planeja fornecer uma substituição. |
 | Portal Director | O Portal Director é um conjunto de recursos que permite a hospedagem de conteúdo AEM via Portlet em servidores de terceiros. O Adobe não planeja fazer aprimoramentos adicionais ao recurso Director do Portal no local listado abaixo. AEM 6.4 tem o Portal Director incluído, e os clientes que atualizam de versões anteriores podem continuar usando como estão. Observe que o Portal Direct permanece totalmente compatível enquanto está obsoleto. <ul><li>/libs/portal/diretor</li></ul> | O Adobe não planeja fornecer uma substituição. |
 | Componente portlet | Componentes do portlet em /foundation/components/portlet habilita a hospedagem de portlets JSR no AEM como componentes. O Adobe não planeja fazer aprimoramentos adicionais ao recurso Componente de portlet. AEM 6.4 inclui o Portlet Component e os clientes que atualizam de versões anteriores podem continuar usando como estão. Observe que o Portlet Component permanece totalmente compatível enquanto está obsoleto. | O Adobe não planeja fornecer uma substituição. |
-| Forms | O suporte para o serviço Adobe Central Migration Bridge foi preterido, pois o produto Adobe Central não é mais compatível. | Nenhuma substituição |
+| Forms | O suporte para o serviço Adobe Central Migration Bridge foi preterido, pois o produto Adobe Central não é mais compatível. | Sem substituição |
 | Forms | Uso obsoleto de JSONObject em Query e OperationOptions. As seguintes APIs estão obsoletas: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Use o `IValueMap` API |
 | Forms | Serviço Central Migration Bridge obsoleto. | Nenhuma substituição é oferecida. |
 | Assets | A descarregamento de ativos foi descontinuada a partir do AEM 6.4. |  |
@@ -148,15 +152,15 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 A tabela abaixo lista os recursos e funcionalidades removidos do AEM 6.4. As versões anteriores tiveram esses recursos marcados como obsoletos.
 
-| Área | Recurso | Substituição |
+| Área | Destaque | Substituição |
 |---|---|---|
 | Integração com o [!DNL Experience Cloud] | Você pode sincronizar ativos com [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] era anteriormente chamado [!DNL Adobe Marketing Cloud]. | Se você tiver consultas, entre em contato com [Suporte ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=pt-BR#support). |
-| Analytics Activity Map | A versão do Activity Map está inclusa no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) deve ser usada. |
+| Activity Map do Analytics | A versão do Activity Map incluída no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) deve ser usada. |
 | Componentes-Forms | Captcha de formulário (foundation/components/form/captcha) | Em vez disso, use o ReCaptcha do componente Google |
-| Componentes | Apresentação de slides (foundation/components/slideshow) | Nenhuma substituição |
-| Componentes | Flash (foundation/components/flash) | Nenhuma substituição |
+| Componentes | Apresentação de slides (foundation/components/slideshow) | Sem substituição |
+| Componentes | Flash (foundation/components/flash) | Sem substituição |
 | Componentes | Remoção do suporte para arquivos SWF de reprodução no componente de vídeo (foundation/components/video) | Use formatos de vídeo sem flash. |
-| Componentes | Tabela de produtos (comércio/componentes/product_table) | Nenhuma substituição |
+| Componentes | Tabela de produtos (comércio/componentes/product_table) | Sem substituição |
 | Gerenciamento de tarefas | Gerenciamento de tarefas da interface clássica (/libs/cq/taskmanagement/content/taskmanager.html) | Obsoleto desde a versão 6.0. Use o novo gerenciamento de tarefas combinado com a interface do usuário do workflow. |
 | Fluxo de trabalho | Interface de notificação usada entre 5.6 e 6.2 (/libs/cq/workflow/content/notifications.html) | Caixa de entrada do fluxo de trabalho /aem/inbox |
 | Forms | O formato Export PDF para PDF/E-1 usando PDF-Generator foi removido. | O PDF Generator continua a ser compatível com a exportação de formatos PDF para PDF/A-1a/b, PDF/A-2a/b e PDF/A-3a/b. |
@@ -171,11 +175,11 @@ A tabela abaixo lista os recursos e funcionalidades removidos do AEM 6.4. As ver
 | Forms | Remoção do suporte para campos flash no AEM Designer. AEM Designer não permite editar campos flash usados em um formulário. | Você pode usar AEM Designer lançado em uma versão anterior para editar esses formulários. |
 | Communities | O suporte para verificação de Captcha foi removido. | Use a integração de captcha personalizada (como reCAPTCHA da Google) para verificação. |
 
-## Anúncio prévio da próxima versão {#pre-announcement-for-next-release}
+## Pré-anúncio para a próxima versão {#pre-announcement-for-next-release}
 
-A tabela abaixo fornece uma lista de alterações para a versão futura, que não estão obsoletas, mas podem afetar os clientes. Elas são fornecidas para propósito de planejamento.
+A tabela abaixo fornece uma lista de alterações para a versão futura, que não estão obsoletas, mas podem afetar os clientes. Elas são fornecidas para fins de planejamento.
 
-| Área | Recurso | Anúncio |
+| Área | Destaque | Anúncio |
 |---|---|---|
 | Suporte para navegador | Microsoft Internet Explorer | AEM 6.4 é a última versão que oferece suporte ao Microsoft Internet Explorer 11. |
 | Foundation | Estrutura da interface do usuário | O Adobe descontinuará os componentes da interface Coral 2 em 2019. O AEM 6.4 é completamente baseado na interface do usuário Coral 3 (introduzida com o AEM 6.2). O Adobe recomenda que seus clientes e parceiros que criaram interfaces de usuário personalizadas com o Coral 2 as refatorem para o Coral 3. O Adobe oferece uma ferramenta para converter caixas de diálogo do Coral 2 para o Coral 3 - [Leia mais.](/help/sites-developing/modernization-tools.md) |

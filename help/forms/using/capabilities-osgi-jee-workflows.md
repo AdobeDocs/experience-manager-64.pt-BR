@@ -8,14 +8,18 @@ contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '914'
 ht-degree: 20%
 
 ---
 
 # Ações e recursos de fluxos de trabalho de AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE  {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Caixa de entrada e espaço de trabalho do AEM {#aem-inbox-and-html-workspace}
 
@@ -108,7 +112,7 @@ Fluxos de trabalho de AEM centrados em formulários em OSGi e fluxos de trabalho
    <td>Fluxos de trabalho AEM Forms JEE</td> 
   </tr>
   <tr>
-   <td>Formulários adaptáveis</td> 
+   <td>Adaptive Forms</td> 
    <td>Compatível</td> 
    <td>Compatível<br /> </td> 
   </tr>

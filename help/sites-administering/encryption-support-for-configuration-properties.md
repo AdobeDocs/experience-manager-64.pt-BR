@@ -1,24 +1,27 @@
 ---
 title: Suporte a criptografia para propriedades de configuração
-seo-title: Suporte a criptografia para propriedades de configuração
+seo-title: Encryption Support for Configuration Properties
 description: Suporte a criptografia para propriedades de configuração
-seo-description: 'null'
+seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 077a940d-19de-4d19-ad99-61f465e68205
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 0%
+source-wordcount: '315'
+ht-degree: 2%
 
 ---
 
-
 # Suporte a criptografia para propriedades de configuração{#encryption-support-for-configuration-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
@@ -30,7 +33,7 @@ O suporte ao plug-in de configuração OSGi foi adicionado para descriptografar 
 >
 >Os serviços que esperam um valor criptografado precisam usar a verificação IsProtected para ver se o valor está criptografado antes de tentar descriptografá-lo, pois ele já pode ter sido descriptografado.
 
-## Ativação do suporte a criptografia {#enabling-encryption-support}
+## Ativação do suporte à criptografia {#enabling-encryption-support}
 
 Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Você pode concluir essas etapas para uma propriedade OSGI que deseja criptografar.
 
@@ -39,16 +42,16 @@ Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Vo
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. A página **Adobe Experience Manager Web Console Crypto Support** é exibida.
+1. O **Suporte de criptografia do console da Web Adobe Experience Manager** será exibida.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. No campo **Plain Text**, insira o texto dos dados confidenciais que deseja proteger.
-1. Selecione **Protect**. O texto protegido é exibido como texto criptografado.
+1. No **Texto sem formatação** , insira o texto dos dados confidenciais que deseja proteger.
+1. Selecionar **Protect**. O texto protegido é exibido como texto criptografado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copie o texto protegido da etapa 5 e cole-o no valor do formulário OSGI. Neste exemplo, a **senha SMTP criptografada** é adicionada ao *Day CQ Mail Service*.
+1. Copie o texto protegido da etapa 5 e cole-o no valor do formulário OSGI. Neste exemplo, o arquivo **Senha SMTP** é adicionado ao *Day CQ Mail Service*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 

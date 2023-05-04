@@ -8,10 +8,11 @@ breadcrumb-title: Guia de criação
 user-guide-description: Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM.
 feature: Authoring
 role: User
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 87%
+ht-degree: 65%
 
 ---
 
@@ -43,7 +44,7 @@ ht-degree: 87%
    + [Componentes](default-components.md)
    + [Criação de uma página para dispositivos móveis  ](mobile.md)
    + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
-   + [Atalhos de teclado ao editar as páginas](page-authoring-keyboard-shortcuts.md)
+   + [Atalhos de teclado ao editar páginas](page-authoring-keyboard-shortcuts.md)
    + [Práticas recomendadas    ](best-practices.md)
 + Recursos de site e página {#siteandpage}
    + [Uso de tags](tags.md)
@@ -56,13 +57,13 @@ ht-degree: 87%
    + [Content Insight](content-insights.md)
    + [Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  ](creating-accessible-content.md)
    + [Andaime](scaffolding.md)
-   + [Configuração dos componentes no Modo de design](default-components-designmode.md)
-   + [Componentes fundamentais](default-components-foundation.md)
+   + [Configuração de componentes no modo de design](default-components-designmode.md)
+   + [Componentes básicos](default-components-foundation.md)
 + Projetos {#projects}
    + [Projetos](projects.md)
    + [Gerenciamento de projetos](touch-ui-managing-projects.md)
    + [Trabalhar com tarefas](task-content.md)
-   + [Integração com o Creative Project e o PIM](managing-product-information.md)
+   + [Integração do Creative Project e do PIM](managing-product-information.md)
    + [Trabalhar com fluxos de trabalho de projeto](projects-with-workflows.md)
 + Inicializações {#launches}
    + [Lançamentos](launches.md)
@@ -76,8 +77,8 @@ ht-degree: 87%
    + [Trabalhar com fluxos de trabalho de projeto](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + Desempenho da página {#page-performance}
    + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
-   + [Análise do desempenho das páginas](ci-analyze.md)
-   + [Visualizar dados de análise de página](pa-using.md)
+   + [Analisar o desempenho da página](ci-analyze.md)
+   + [Visualizar dados de análise da página](pa-using.md)
 + Personalização {#personalization}
    + [Personalização](personalization.md)
    + [Visualização de páginas usando dados do ContextHub](ch-previewing.md)
@@ -91,6 +92,6 @@ ht-degree: 87%
 + AEM e Adobe Campaign {#aem-adobe-campaign}
    + [Trabalhar com o Adobe Campaign](adobe-campaign.md)
    + [Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
-   + [Direcionamento sua campanha do Adobe Campaign](target-adobe-campaign.md)
-   + [Criação de formulários do Adobe Campaign no AEM](adobe-campaign-forms.md)
+   + [Direcionamento da sua Adobe Campaign](target-adobe-campaign.md)
+   + [Criação do Adobe Campaign Forms no AEM](adobe-campaign-forms.md)
    + [Componentes do Adobe Campaign](adobe-campaign-components.md)

@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
 
 # Definição das configurações do servidor {#configuring-server-settings}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 A página Configurações do servidor fornece acesso a várias configurações para o fluxo de trabalho de formulários:
 
-* **Configurações de email** que ativam mensagens de email de saída, juntamente com as configurações do servidor de email usadas para essas mensagens. (Consulte [Definição das configurações de email](configuring-server-settings.md#configuring-email-settings).)
-* **Configurações de notificação de tarefa** que ativam, desativam ou modificam as mensagens enviadas em notificações por email para usuários finais e grupos em relação às suas tarefas. (Consulte [Configuração de notificações para usuários e grupos](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **Configurações de notificação do administrador** que habilitam, desabilitam ou modificam as mensagens enviadas em notificações por email para tarefas administrativas. (Consulte [Configuração de notificações para administradores](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* **Configurações de email** que permitem mensagens de email de saída, juntamente com as configurações do servidor de email usadas para essas mensagens. (Consulte [Definição das configurações de email](configuring-server-settings.md#configuring-email-settings).)
+* **Configurações de notificação de tarefa** que ativa, desativa ou modifica as mensagens enviadas em notificações por email para usuários finais e grupos em relação a suas tarefas. (Consulte [Configurar notificações para usuários e grupos](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **Configurações de notificação do administrador** que ative, desative ou modifique as mensagens enviadas em notificações por email para tarefas administrativas. (Consulte [Configuração de notificações para administradores](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## Definição das configurações de email {#configuring-email-settings}
 
@@ -45,7 +49,7 @@ Se os processos forem projetados e implementados sem exigir email, não será ne
 
    >[!NOTE]
    >
-   >Se você estiver usando o Microsoft Exchange Server e o Endereço de email for um endereço de email inválido, o servidor do Microsoft Exchange não enviará um email para Listas de distribuição. Para resolver o problema, selecione a opção **Enable External Communication** separadamente para cada Lista de Distribuição no servidor Microsoft Exchange.
+   >Se você estiver usando o Microsoft Exchange Server e o Endereço de email for um endereço de email inválido, o servidor Microsoft Exchange não enviará um email para Listas de distribuição. Para resolver o problema, selecione o **Ativar comunicação externa** separadamente para cada lista de distribuição no servidor do Microsoft Exchange.
 
 1. Clique em Salvar.
 
@@ -59,7 +63,7 @@ Se os processos forem projetados e implementados sem exigir email, não será ne
 >
 >O espaço de trabalho do Flex foi descontinuado para AEM versão dos formulários.
 
-Por padrão, os emails enviados por AEM formulários contêm links para (obsoleto para AEM formulários no JEE) Flex Workspace. Você pode configurar AEM formulários para enviar emails com links para o AEM Forms Workspace. Para saber mais sobre os benefícios do AEM Forms Workspace sobre (obsoleto para formulários AEM no JEE) Flex Workspace, consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artigo.
+Por padrão, os emails enviados por AEM formulários contêm links para (obsoleto para AEM formulários no JEE) Flex Workspace. Você pode configurar AEM formulários para enviar emails com links para o AEM Forms Workspace. Para saber mais sobre os benefícios do AEM Forms Workspace sobre (obsoleto para formulários AEM no JEE) Flex Workspace, consulte [this](/help/forms/using/features-html-workspace-available-flex.md) artigo 10. o
 
 1. No console de administração, clique em Início > Serviços > fluxo de trabalho de formulários > Configurações do servidor > Notificações de tarefa.
 1. Abrir modelo de atribuição de tarefa.
@@ -93,8 +97,8 @@ Você pode enviar notificações de lembrete para o usuário ou grupo atribuído
 1. Em Tipo de notificação, clique em Lembrete (para usuários) ou em Grupo - Lembrete (para grupos).
 1. Selecione Ativar Lembrete ou Ativar Grupo - Lembrete.
 1. (Somente notificações do usuário) Para incluir um anexo do formulário e seus dados com a mensagem de email de lembrete, selecione Incluir dados do formulário.
-1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na lista Formato de mensagem, selecione o formato no qual a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email , selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
@@ -107,8 +111,8 @@ Você pode enviar notificações de atribuição de tarefa a um usuário ou grup
 1. Em Tipo de Notificação, clique em Atribuição de Tarefa para usuários ou Grupo - Atribuição de Tarefa para grupos.
 1. Selecione Habilitar Atribuição de Tarefa para usuários ou Habilitar Grupo - Atribuição de Tarefa para grupos.
 1. (Somente notificações do usuário) Para incluir um anexo do formulário e seus dados com a mensagem de email de atribuição de tarefa, selecione Incluir dados do formulário.
-1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na lista Formato de mensagem, selecione o formato no qual a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email , selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
@@ -120,8 +124,8 @@ Você pode enviar notificações de prazo para usuários e grupos quando o prazo
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Configurações do servidor > Notificações de tarefa.
 1. Em Tipo de notificação, clique em Prazo (para usuários) ou Grupo - Prazo (para grupos).
 1. Selecione Habilitar prazo ou Habilitar grupo - prazo.
-1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na lista Formato de mensagem, selecione o formato no qual a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email , selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
@@ -147,8 +151,8 @@ Se uma ramificação for interrompida (para de continuar deliberadamente ou por 
 1. Em Tipo de notificação, clique em Ramificação paralisada.
 1. Selecione Habilitar Ramificação Paralisada.
 1. Na caixa Endereço de email, digite os endereços dos usuários para notificar quando uma ramificação for interrompida. Use o formato user@domain.com e separe cada endereço com uma vírgula. Normalmente, esse endereço de email é para um administrador.
-1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na lista Formato de mensagem, selecione o formato no qual a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email , selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usa. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
@@ -161,8 +165,8 @@ Se uma operação for interrompida (para de continuar deliberadamente ou por cau
 1. Em Tipo de notificação, clique em Operação paralisada.
 1. Selecione Enable Stalled Operation (Ativar operação paralisada).
 1. Na caixa Endereços de email, digite os endereços dos usuários a serem notificados quando uma operação for interrompida. Use o formato user@domain.com e separe cada endereço com uma vírgula. Normalmente, esse endereço de email é para um administrador.
-1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar este campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications)
-1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalizar o conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Na caixa Assunto, digite o texto para a linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications)
+1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre a personalização deste campo, consulte [Personalização do conteúdo das notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Clique em Salvar.
 
 ## Personalização do conteúdo das notificações {#customizing-the-content-of-notifications}
@@ -193,17 +197,17 @@ Somente para Notificações de Tarefa, o fluxo de trabalho do Forms inclui duas 
 >
 >O Flex Workspace está obsoleto para a versão AEM formulários.
 
-Se a solução for implantada em um ambiente em cluster, substitua `@@notification-host@@` pelo endereço do cluster.
+Se a solução for implantada em um ambiente em cluster, substitua `@@notification-host@@` com o endereço do cluster.
 
-`<`** `>` PORTé o número da porta do ouvinte HTTP para o servidor de aplicativos. A porta de ouvinte HTTP padrão para os servidores de aplicativos compatíveis é a seguinte:
+`<`*PORTA* `>` é o número da porta do ouvinte HTTP do servidor de aplicativos. A porta de ouvinte HTTP padrão para os servidores de aplicativos compatíveis é a seguinte:
 
 **JBoss:** 8080
 
-**Oracle WebLogic Server:** 7001
+**Servidor WebLogic do Oracle:** 7001
 
 **IBM WebSphere:** 9080
 
-Para que esses URLs funcionem corretamente, substitua `<`*PORT* `>` pelo número da porta apropriado para seu ambiente.
+Para que esses URLs funcionem corretamente, substitua `<`*PORTA* `>` com o número da porta apropriado para seu ambiente.
 
 >[!NOTE]
 >
@@ -211,27 +215,27 @@ Para que esses URLs funcionem corretamente, substitua `<`*PORT* `>` pelo número
 
 ### Seletor de variável {#variable-picker}
 
-A lista Seletor de variável fornece variáveis úteis que você pode arrastar e soltar nas caixas Assunto ou Modelo de notificação. Quando você solta uma variável nas caixas Assunto ou Modelo de notificação, ela muda para o nome da variável do fluxo de trabalho de formulários real com dois símbolos @ em ambos os lados, por exemplo, `@@taskid@@`.
+A lista Seletor de variável fornece variáveis úteis que você pode arrastar e soltar nas caixas Assunto ou Modelo de notificação. Quando você solta uma variável nas caixas Assunto ou Modelo de notificação, ela muda para o nome da variável do fluxo de trabalho de formulários real com dois símbolos @ em qualquer lado, por exemplo, `@@taskid@@`.
 
 Para lembretes, atribuições de tarefa e prazos para usuários e grupos, você pode usar as seguintes variáveis nas caixas Assunto e Modelo de notificação :
 
-**** descriçãoO conteúdo da propriedade Descrição, conforme definido na etapa do usuário (ponto inicial, operação Atribuir tarefa ou operação Atribuir várias tarefas) do processo no Workbench.
+**descrição** O conteúdo da propriedade Description, conforme definido na etapa do usuário (ponto inicial, operação Assign Task ou operação Assign Multiple Tasks) do processo no Workbench.
 
-**** instruçõesO conteúdo da propriedade Instruções da Tarefa, conforme definido na etapa do usuário do processo no Workbench.
+**instruções** O conteúdo da propriedade Instruções da Tarefa, conforme definido na etapa do usuário do processo no Workbench.
 
-**notification-** hostO nome do host do servidor de aplicativos AEM forms .
+**host de notificação** O nome de host do servidor de aplicativos do AEM forms .
 
-**process-** nameO nome do processo.
+**nome do processo** O nome do processo.
 
-**operation-** nameO nome da etapa.
+**nome da operação** O nome da etapa.
 
-**** tasboyO identificador exclusivo da tarefa atual.
+**brincalhão** O identificador exclusivo da tarefa atual.
 
-**** actionsProduz uma lista numerada de rotas válidas (por exemplo, Approve, Reject) que o recipient pode clicar.
+**ações** Produz uma lista numerada de rotas válidas (por exemplo, Aprovar, Rejeitar) em que o recipient pode clicar.
 
 Além disso, para lembretes de grupo, atribuições de tarefa de grupo e prazos de grupo, você também pode usar:
 
-**group-** nameO nome do grupo ao qual foi atribuído o item de trabalho.
+**group-name** O nome do grupo ao qual foi atribuído o item de trabalho.
 
 >[!NOTE]
 >
@@ -239,21 +243,21 @@ Além disso, para lembretes de grupo, atribuições de tarefa de grupo e prazos 
 
 Para ramificações paralisadas, você pode usar as seguintes variáveis nas caixas Assunto e Modelo de notificação :
 
-**branch-** idO identificador da ramificação.
+**branch-id** O identificador da ramificação.
 
-**process-** idO identificador de instância do processo.
+**process-id** O identificador da instância do processo.
 
-**notification-** hostO nome do host do servidor de aplicativos AEM forms .
+**host de notificação** O nome de host do servidor de aplicativos do AEM forms .
 
 Para operações paralisadas, você pode usar as seguintes variáveis nas caixas Assunto e Modelo de notificação :
 
-**action-** idO identificador de operação.
+**action-id** O identificador da operação.
 
-**branch-** idO identificador da ramificação.
+**branch-id** O identificador da ramificação.
 
-**process-** idO identificador de instância do processo.
+**process-id** O identificador da instância do processo.
 
-**notification-** hostO nome do host do servidor de aplicativos AEM forms .
+**host de notificação** O nome de host do servidor de aplicativos do AEM forms .
 
 ### Uso de uma variável na caixa Assunto {#using-a-variable-in-the-subject-box}
 
@@ -283,7 +287,7 @@ Na página Configurações do BAM, defina as conexões com o servidor que execut
 
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Configurações do servidor > Configurações do BAM.
 1. Na caixa Host BAM, digite o nome do servidor que executa o BAM. O padrão é localhost.
-1. Na caixa Porta BAM, digite a porta a ser usada para se conectar ao servidor que executa o BAM. A porta BAM padrão para JBoss é 8080, WebLogic é 7001 e WebSphere é 9080.
+1. Na caixa Porta BAM, digite a porta a ser usada para se conectar ao servidor que executa BAM. A porta BAM padrão para JBoss é 8080, WebLogic é 7001 e WebSphere é 9080.
 1. Na caixa Host do servidor, digite o nome ou o endereço IP do servidor de formulários do host. O valor padrão é localhost.
 1. Na caixa Porta do servidor, digite o número da porta usada pelo servidor de formulários.
 1. Nas caixas Nome de usuário e Senha, digite o ID de usuário e a senha apropriados para acessar o Servidor BAM. O nome de usuário padrão é CognosNowAdmin e a senha padrão é Gerente.

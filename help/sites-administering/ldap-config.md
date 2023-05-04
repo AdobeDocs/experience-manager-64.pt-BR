@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 1e329725-538a-4058-8832-4eba036f7972
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1684'
 ht-degree: 0%
 
 ---
 
 # Configuração do LDAP com AEM 6 {#configuring-ldap-with-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 LDAP (o **L** leve **D** Diretório **A** acesso **P** rotocol) é usado para acessar serviços de diretório centralizados. Isso ajuda a reduzir o esforço necessário para gerenciar contas de usuário, pois elas podem ser acessadas por vários aplicativos. Um desses servidores LDAP é o Ative Diretory. O LDAP é frequentemente usado para alcançar o Logon único , o que permite que um usuário acesse vários aplicativos após fazer logon uma vez.
 

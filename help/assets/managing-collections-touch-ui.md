@@ -6,14 +6,18 @@ mini-toc-levels: 1
 feature: Collections
 role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 16%
+source-wordcount: '2362'
+ht-degree: 18%
 
 ---
 
 # Gerenciar coleções {#managing-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Uma coleção é um conjunto de ativos no Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou dinâmica baseada em resultados de pesquisa.
 
@@ -28,31 +32,31 @@ As coleções são dos seguintes tipos, com base na maneira como coletam ativos:
 
 ## Acesse o console Coleções {#navigating-the-collections-console}
 
-Para abrir o **[!UICONTROL Collections]**, toque ou clique no logotipo do Experience Manager. Na página de navegação, vá para **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Para abrir o **[!UICONTROL Coleções]**, toque ou clique no logotipo do Experience Manager. Na página de navegação, vá para **[!UICONTROL Ativos]** > **[!UICONTROL Coleções]**.
 
 ## Criar uma coleção {#creating-a-collection}
 
-Você pode criar uma coleção com [referências estáticas](#creating-a-collection-with-static-references) ou com base em um [filtro baseado em critérios de pesquisa](#creating-a-smart-collection). Você também pode criar uma coleção de um lightbox.
+Você pode criar uma coleção com [referências estáticas](#creating-a-collection-with-static-references) ou com base em [filtro baseado em critérios de pesquisa](#creating-a-smart-collection). Você também pode criar uma coleção de um lightbox.
 
 ### Criar uma coleção com referências estáticas {#creating-a-collection-with-static-references}
 
 Você pode criar uma coleção com referências estáticas, por exemplo, uma coleção com referências a ativos, pastas, coleções, conjuntos de rotação e conjuntos de imagens.
 
-1. Navegue até o console **[!UICONTROL Coleções]**.
-1. Na barra de ferramentas, toque/clique em **[!UICONTROL Criar]**.
-1. Na página **[!UICONTROL Criar coleção]**, insira um título e uma descrição opcional para a coleção.
+1. Navegue até o **[!UICONTROL Coleções]** console.
+1. Na barra de ferramentas, toque/clique **[!UICONTROL Criar]**.
+1. No **[!UICONTROL Criar coleção]** , insira um título e uma descrição opcional para a coleção.
 1. Adicione membros à coleção e atribua as permissões apropriadas. Como alternativa, selecione **[!UICONTROL Coleção pública]** para permitir que todos os usuários acessem a coleção.
 
    >[!NOTE]
    >
-   >Para permitir que os membros compartilhem coleções com outros usuários, forneça as permissões de leitura do grupo `dam-users` no caminho `home/users`. Conceda permissão aos usuários no local `/content/dam/collections` para permitir que eles visualizem as Coleções em listas pop-up. Como alternativa, faça do usuário uma parte do grupo `dam-users`.
+   >Para permitir que os membros compartilhem coleções com outros usuários, forneça a variável `dam-users` permissões de leitura de grupo no caminho `home/users`. Conceder permissão aos usuários em `/content/dam/collections` local para permitir que os usuários visualizem as Coleções em listas pop-up. Como alternativa, faça do usuário parte de `dam-users` grupo.
 
 1. (Opcional) Adicione uma imagem em miniatura para a coleção.
 1. Toque/clique em **[!UICONTROL Criar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo. Uma coleção com o título e as propriedades especificadas é aberta no console Coleções.
 
    >[!NOTE]
    >
-   >Os Ativos do Experience Manager permitem criar tarefas de revisão para uma coleção semelhante à forma como você cria tarefas de revisão para uma pasta de ativos.
+   >O Experience Manager Assets permite criar tarefas de revisão para uma coleção semelhante à forma como você cria tarefas de revisão para uma pasta de ativos.
 
    Para adicionar ativos à coleção, navegue até a interface do usuário Ativos . Para obter detalhes, consulte [Adicionar ativos a uma coleção](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
@@ -61,15 +65,15 @@ Você pode criar uma coleção com referências estáticas, por exemplo, uma col
 Você pode arrastar ativos da interface do usuário do Assets para uma coleção. Você também pode criar uma cópia de uma coleção e arrastar os ativos para lá.
 
 1. Na interface do usuário do Assets, selecione os ativos que deseja adicionar a uma coleção.
-1. Arraste os ativos para a zona **[!UICONTROL Soltar na coleção]**.
+1. Arraste os ativos para a **[!UICONTROL Quebra na coleção]** zona.
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-   Solte o botão do mouse quando o Dropzone se tornar ativo e seu rótulo for alterado para **[!UICONTROL Drop to Add]**.
+   Solte o botão do mouse quando o Dropzone se tornar ativo e seu rótulo se alterar para **[!UICONTROL Soltar para adicionar]**.
 
    ![drop_to_add](assets/drop_to_add.png)
 
-   Como alternativa, toque/clique no ícone **[!UICONTROL To Collection]** na barra de ferramentas.
+   Como alternativa, toque/clique no botão **[!UICONTROL Para Coleção]** ícone na barra de ferramentas.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -78,7 +82,7 @@ Você pode arrastar ativos da interface do usuário do Assets para uma coleção
    Se desejar adicionar os ativos a uma coleção existente, selecione-a na página e toque/clique em **[!UICONTROL Adicionar]**. Por padrão, a coleção atualizada mais recentemente é selecionada.
 
 1. Na caixa de diálogo **[!UICONTROL Criar nova coleção]**, especifique o nome da coleção. Se quiser que a coleção seja acessível a todos os usuários, selecione **[!UICONTROL Coleção pública]**.
-1. Toque/clique em **[!UICONTROL Continuar]** para criar a coleção.
+1. Toque/clique **[!UICONTROL Continuar]** para criar a coleção.
 
 ### Criar uma coleção inteligente {#creating-a-smart-collection}
 
@@ -90,18 +94,18 @@ Para criar uma coleção inteligente, siga as etapas:
 
 1. Digite a palavra-chave de pesquisa na caixa Omnisearch e pressione Enter. Abra o painel Filtros e aplique um filtro de pesquisa.
 
-1. Na lista **[!UICONTROL Arquivos e pastas]**, selecione **[!UICONTROL Arquivos]**.
+1. No **[!UICONTROL Arquivos e pastas]** lista, selecione **[!UICONTROL Arquivos]**.
 
    ![files_option](assets/files_option.png)
 
-1. Toque/clique em **[!UICONTROL Salvar coleção inteligente]**.
-1. Especifique um nome para a coleção. Selecione **[!UICONTROL Public]** para adicionar o grupo Usuários do DAM com a função Visualizador à coleção inteligente.
+1. Toque/clique **[!UICONTROL Salvar coleção inteligente]**.
+1. Especifique um nome para a coleção. Selecionar **[!UICONTROL Público]** para adicionar o grupo Usuários de DAM com a função Visualizador à coleção inteligente.
 
    ![save_collection](assets/save_collection.png)
 
    >[!NOTE]
    >
-   >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função de proprietário depois de criá-la. Se você desmarcar a opção **[!UICONTROL Public]**, o grupo de usuários do DAM não será mais associado à coleção inteligente.
+   >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função de proprietário depois de criá-la. Se você desmarcar a **[!UICONTROL Público]** , o grupo de usuários do DAM não está mais associado à coleção inteligente.
 
 1. Toque/clique em **[!UICONTROL Salvar]** para criar a coleção inteligente e feche a caixa de mensagem para concluir o processo.
 
@@ -111,25 +115,25 @@ Para criar uma coleção inteligente, siga as etapas:
 
    O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, toque/clique no botão **[!UICONTROL Editar seleção inteligente]**.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ## Adicionar ativos a uma coleção {#adding-assets-to-a-collection}
 
 Você pode adicionar ativos a uma coleção que contém uma lista de ativos ou pastas referenciados. As coleções inteligentes usam um query de pesquisa para preencher ativos. Portanto, referências estáticas a ativos e pastas não se aplicam a elas.
 
-1. Na interface do usuário do Assets, selecione o ativo e toque/clique no ícone **[!UICONTROL To Collection]** na barra de ferramentas.
+1. Na interface do usuário do Assets, selecione o ativo e toque/clique no **[!UICONTROL Para Coleção]** ícone na barra de ferramentas.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-   Como alternativa, você pode arrastar o ativo para a área **[!UICONTROL Soltar na coleção]** na interface. Adicione os ativos quando o rótulo da região mudar para **[!UICONTROL Soltar para Adicionar]**.
+   Como alternativa, você pode arrastar o ativo para a **[!UICONTROL Quebra na coleção]** na interface. Adicione os ativos quando o rótulo da região for alterado para **[!UICONTROL Soltar para adicionar]**.
 
-1. Na página **[!UICONTROL Adicionar à coleção]**, selecione a coleção à qual deseja adicionar o ativo.
+1. No **[!UICONTROL Adicionar à coleção]** selecione a coleção à qual deseja adicionar o ativo.
 
-1. Toque/clique em **[!UICONTROL Adicionar]** e feche a mensagem de confirmação. O ativo é adicionado à coleção.
+1. Toque/clique **[!UICONTROL Adicionar]** e então feche a mensagem de confirmação. O ativo é adicionado à coleção.
 
 ## Editar uma coleção inteligente {#editing-a-smart-collection}
 
-As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa de [pesquisa salva](#editing-saved-searches).
+As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa do [pesquisa salva](#editing-saved-searches).
 
 1. Na interface do usuário do Assets, toque/clique no ícone de pesquisa na barra de ferramentas.
 
@@ -143,17 +147,17 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
-1. Na lista **[!UICONTROL Arquivos e pastas]**, selecione **[!UICONTROL Arquivos]**.
+1. No **[!UICONTROL Arquivos e pastas]** lista, selecione **[!UICONTROL Arquivos]**.
 
-1. Modifique um ou mais filtros, conforme necessário. Toque/clique em **[!UICONTROL Editar coleção inteligente]**.
+1. Modifique um ou mais filtros, conforme necessário. Toque/clique **[!UICONTROL Editar coleção inteligente]**.
 
    Também é possível editar o nome da coleção inteligente.
 
    ![caixa de diálogo edit_smart_collection](assets/edit_smart_collectiondialog.png)
 
-1. Toque/clique em **[!UICONTROL Salvar]**. A caixa de diálogo **[!UICONTROL Editar coleção inteligente]** é exibida.
+1. Toque/clique **[!UICONTROL Salvar]**. O **[!UICONTROL Editar coleção inteligente]** será exibida.
 
-1. Toque/clique em **[!UICONTROL Substituir]** para substituir a coleção inteligente original pela coleção editada. Como alternativa, selecione **[!UICONTROL Salvar como]** para salvar a coleção editada separadamente.
+1. Toque/clique **[!UICONTROL Substituir]** para substituir a coleção inteligente original pela coleção editada. Como alternativa, selecione **[!UICONTROL Salvar como]** para salvar a coleção editada separadamente.
 
 1. Na caixa de diálogo de confirmação, toque/clique em **[!UICONTROL Salvar]** para concluir o processo.
 
@@ -161,33 +165,33 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 
 Os metadados da coleção incluem dados sobre a coleção, incluindo quaisquer tags adicionadas.
 
-1. No console Coleções , selecione uma coleção e toque/clique no ícone **[!UICONTROL Propriedades]** na barra de ferramentas.
+1. No console Coleções , selecione uma coleção e toque/clique no link **[!UICONTROL Propriedades]** ícone na barra de ferramentas.
 1. Na página **[!UICONTROL Metadados da coleção]**, visualize os metadados da coleção nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]**.
-1. Modifique os metadados, conforme necessário, e toque/clique em **[!UICONTROL Salvar e fechar]** na barra de ferramentas para salvar as alterações.
+1. Modifique os metadados, conforme necessário, e toque/clique **[!UICONTROL Salvar e fechar]** na barra de ferramentas para salvar as alterações.
 
 ### Editar metadados de várias coleções em massa {#editing-collection-metadata-in-bulk}
 
 Você pode editar os metadados de várias coleções simultaneamente. Essa funcionalidade ajuda você a replicar rapidamente metadados comuns em várias coleções.
 
 1. No console Coleções , selecione duas ou mais coleções para as quais deseja editar metadados.
-1. Na barra de ferramentas, toque/clique em **[!UICONTROL Propriedades]**.
+1. Na barra de ferramentas, toque/clique **[!UICONTROL Propriedades]**.
 1. Na página **[!UICONTROL Metadados da coleção]**, edite os metadados nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]**, conforme necessário.
 1. Para exibir as propriedades de metadados de uma coleção específica, desmarque as coleções restantes na lista de coleções. Os campos do editor de metadados são preenchidos com os metadados para a coleção específica.
 
    >[!NOTE]
    >
    >* Na página de propriedades da coleção, é possível remover coleções da lista de coleções ao desmarcá-las. A lista de coleções tem todas as coleções selecionadas por padrão. Os metadados das coleções que você remover não são atualizados.
-   >* Na parte superior da lista, marque a caixa de seleção ao lado de **[!UICONTROL Title]** para alternar entre selecionar as coleções e limpar a lista.
+   >* Na parte superior da lista, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre selecionar as coleções e limpar a lista.
 
 
-1. Toque/clique em **[!UICONTROL Salvar e fechar]** na barra de ferramentas e feche a caixa de diálogo de confirmação para concluir o processo.
+1. Toque/clique **[!UICONTROL Salvar e fechar]** na barra de ferramentas e feche a caixa de diálogo de confirmação para concluir o processo.
 1. Para anexar os novos metadados aos existentes, selecione **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Toque/clique em **[!UICONTROL Enviar]**.
 
    >[!NOTE]
    >
-   >Os metadados adicionados às coleções selecionadas substituem os metadados anteriores para essas coleções. Use o [!UICONTROL Modo anexar] para adicionar novos valores aos metadados existentes nos campos que podem conter vários valores. Os campos de valor único são sempre substituídos. Quaisquer tags adicionadas no campo [!UICONTROL Tags] são anexadas à lista existente de tags nos metadados.
+   >Os metadados adicionados às coleções selecionadas substituem os metadados anteriores para essas coleções. Use o [!UICONTROL Modo anexar] para adicionar novos valores aos metadados existentes nos campos que podem conter vários valores. Os campos de valor único são sempre substituídos. Qualquer tag adicionada na [!UICONTROL Tags] , são anexadas à lista existente de tags nos metadados.
 
-Para personalizar a página de metadados [!UICONTROL Propriedades], incluindo adicionar, modificar, excluir propriedades de metadados, use o editor de Esquema.
+Como personalizar os metadados [!UICONTROL Propriedades] , incluindo adicionar, modificar, excluir propriedades de metadados, use o editor de Esquema .
 
 >[!TIP]
 >
@@ -195,7 +199,7 @@ Para personalizar a página de metadados [!UICONTROL Propriedades], incluindo ad
 
 ## Pesquisar coleções {#searching-collections}
 
-Você pode pesquisar coleções no console Coleções. Ao pesquisar com palavras-chave na caixa Omnisearch, [!DNL Experience Manager] o Assets pesquisa por nomes de coleção, metadados e as tags adicionadas às coleções.
+Você pode pesquisar coleções no console Coleções. Ao pesquisar com palavras-chave na caixa Omnisearch, [!DNL Experience Manager] O Assets pesquisa por nomes de coleção, metadados e as tags adicionadas às coleções.
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas nas coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pasta), todos os ativos, pastas e coleções relevantes são retornados.
 
@@ -209,7 +213,7 @@ Em uma coleção, a pesquisa é restrita aos ativos (e suas tags e metadados) de
 
 É possível editar configurações da coleção, como título e descrição, ou adicionar membros a uma coleção.
 
-1. Selecione uma coleção e toque/clique no ícone **[!UICONTROL Configurações]** na barra de ferramentas. Como alternativa, use a ação rápida **[!UICONTROL Settings]** da miniatura da coleção.
+1. Selecione uma coleção e toque/clique no botão **[!UICONTROL Configurações]** na barra de ferramentas. Como alternativa, use o **[!UICONTROL Configurações]** ação rápida da miniatura da coleção.
 1. Modifique as configurações da coleção na página **[!UICONTROL Configurações da coleção]**. Por exemplo, modifique o título da coleção, as descrições, os membros e as permissões, conforme discutido em [Adicionar coleções](#creating-a-collection).
 
 1. Para salvar as alterações, toque/clique em **[!UICONTROL Salvar]**.
@@ -222,7 +226,7 @@ Em uma coleção, a pesquisa é restrita aos ativos (e suas tags e metadados) de
 
    >[!NOTE]
    >
-   >Também é possível excluir coleções inteligentes ao [excluir pesquisas salvas](#deleting-saved-searches).
+   >Também é possível excluir coleções inteligentes por [excluindo pesquisas salvas](#deleting-saved-searches).
 
 ## Baixar uma coleção {#downloading-a-collection}
 
@@ -230,25 +234,25 @@ Ao baixar uma coleção, toda a hierarquia de ativos na coleção é baixada, in
 
 1. No console Coleções , selecione uma ou mais coleções para baixar.
 1. Na barra de ferramentas, toque/clique no ícone de download.
-1. Na caixa de diálogo **[!UICONTROL Download]**, toque/clique em **[!UICONTROL Download]**. Se desejar baixar as representações dos ativos na coleção, selecione **[!UICONTROL Representações]**. Selecione a opção **[!UICONTROL Email]** para enviar uma notificação por email ao proprietário da coleção.
+1. No **[!UICONTROL Baixar]** , toque/clique **[!UICONTROL Baixar]**. Se desejar baixar as representações dos ativos na coleção, selecione **[!UICONTROL Representações]**. Selecione o **[!UICONTROL Email]** para enviar uma notificação por email ao proprietário da coleção.
 
-   Ao selecionar uma coleção para baixar, a hierarquia completa da pasta na coleção é baixada. Para incluir cada coleção que você baixar (incluindo ativos em coleções secundárias aninhadas sob a coleção pai) em uma pasta individual, selecione **[!UICONTROL Criar pasta separada para cada ativo]**.
+   Ao selecionar uma coleção para baixar, a hierarquia completa da pasta na coleção é baixada. Para incluir cada coleção que você baixar (incluindo ativos em coleções secundárias aninhadas sob a coleção pai) em uma pasta individual, selecione **[!UICONTROL Criar uma pasta separada para cada ativo]**.
 
 ## Criar coleções aninhadas {#creating-nested-collections}
 
 Você pode adicionar uma coleção a outra coleção, criando uma coleção aninhada.
 
-1. No console Coleções , selecione a coleção ou o grupo de coleções desejado e toque ou clique no ícone **[!UICONTROL Coleção]** na barra de ferramentas.
+1. No console Coleções , selecione a coleção ou o grupo de coleções desejado e toque ou clique no botão **[!UICONTROL Para Coleção]** na barra de ferramentas.
 
    ![chlimage_1-117](assets/chlimage_1-117.png)
 
-1. Na página **[!UICONTROL Adicionar à coleção]**, selecione a coleção na qual deseja adicionar a coleção.
+1. No **[!UICONTROL Adicionar à coleção]** selecione a coleção na qual deseja adicionar a coleção.
 
    >[!NOTE]
    >
-   >A coleção atualizada mais recentemente é selecionada por padrão na página **[!UICONTROL Adicionar à coleção]**.
+   >A coleção atualizada mais recentemente é selecionada por padrão no **[!UICONTROL Adicionar à coleção]** página.
 
-1. Toque/clique em **[!UICONTROL Adicionar]**. Uma mensagem confirma que a coleção é adicionada à coleção de destino na página **[!UICONTROL Selecionar destino]** . Feche a mensagem para concluir o processo.
+1. Toque/clique **[!UICONTROL Adicionar]**. Uma mensagem confirma que a coleção é adicionada à coleção de público-alvo na **[!UICONTROL Selecionar destino]** página. Feche a mensagem para concluir o processo.
 
 >[!NOTE]
 >
@@ -262,7 +266,7 @@ Na interface do usuário do Assets, pesquise ou filtre ativos com base em determ
 
 ### Criar pesquisas salvas {#creating-saved-searches}
 
-Pesquisas salvas são criadas quando você cria uma coleção inteligente. As coleções inteligentes são adicionadas automaticamente à lista **[!UICONTROL Pesquisas salvas]**. A consulta Pesquisas salvas da coleção é salva na propriedade `dam:query` em crxde no local relativo `/content/dam/collections/`. Não há limites para as pesquisas que você pode salvar e nas pesquisas salvas exibidas na lista.
+Pesquisas salvas são criadas quando você cria uma coleção inteligente. As coleções inteligentes são adicionadas automaticamente à lista **[!UICONTROL Pesquisas salvas]**. A consulta Pesquisas salvas da coleção é salva no `dam:query` propriedade no crxde no local relativo `/content/dam/collections/`. Não há limites para as pesquisas que você pode salvar e nas pesquisas salvas exibidas na lista.
 
 >[!NOTE]
 >
@@ -282,7 +286,7 @@ Editar pesquisas salvas é o mesmo que editar coleções inteligentes. Para obte
 
 1. Clique ou toque no ícone de Navegação global para exibir o painel Filtros .
 
-1. Na lista **[!UICONTROL Pesquisas salvas]**, toque/clique no ícone excluir ao lado da coleção inteligente que deseja excluir.
+1. No **[!UICONTROL Pesquisas salvas]** toque/clique no ícone excluir ao lado da coleção inteligente que deseja excluir.
 
    ![select_smart_collection-1](assets/select_smart_collection-1.png)
 
@@ -299,8 +303,8 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
 1. Na seção **[!UICONTROL Iniciar fluxo de trabalho]**, selecione um modelo de fluxo de trabalho da lista. Por exemplo, selecione o modelo **[!UICONTROL Atualizar ativo DAM]**.
-1. Insira um título para o workflow e toque/clique em **[!UICONTROL Start]**.
-1. Na caixa de diálogo, toque/clique em **[!UICONTROL Continuar]**. O fluxo de trabalho é executado em todos os ativos na coleção.
+1. Insira um título para o fluxo de trabalho e toque/clique em **[!UICONTROL Iniciar]**.
+1. Na caixa de diálogo, toque/clique em **[!UICONTROL Continue]**. O fluxo de trabalho é executado em todos os ativos na coleção.
 
 >[!MORELIKETHIS]
 >

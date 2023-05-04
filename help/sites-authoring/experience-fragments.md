@@ -1,41 +1,44 @@
 ---
 title: Fragmentos de experiência
-seo-title: Fragmentos de experiência
+seo-title: Experience Fragments
 description: Fragmentos de experiência
-seo-description: 'null'
+seo-description: null
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 83%
+source-wordcount: '1345'
+ht-degree: 48%
 
 ---
 
-
 # Fragmentos de experiência{#experience-fragments}
 
-Um Fragmento de experiência é um grupo de um ou mais componentes, incluindo o conteúdo e o layout que podem ser referenciados nas páginas. Podem conter qualquer componente.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Um Fragmento de experiência é um grupo de um ou mais componentes, incluindo conteúdo e layout que podem ser referenciados nas páginas. Eles podem conter qualquer componente.
 
 Um fragmento de experiência:
 
-* É parte de uma experiência (página).
+* Faz parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
-* É composto por um ou mais componentes, com layout, em um sistema de parágrafos.
+* É composto de um ou mais componentes, com layout, em um sistema de parágrafos.
 * Pode conter outros fragmentos de experiência.
 * Pode ser combinado com outros componentes (incluindo outros Fragmentos de experiência) para formar uma página completa (experiência).
-* Pode apresentar variações diferentes e pode compartilhar conteúdo e/ou componentes.
+* Pode ter variações diferentes, que podem compartilhar conteúdo e/ou componentes.
 * Pode ser dividida em blocos de construção que poderão ser usados em várias variações do fragmento.
 
 Use os Fragmentos de experiência:
 
-* Se um criador quiser reutilizar partes (um fragmento de uma experiência) de uma página, terá de copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário. Os fragmentos de experiência eliminam a necessidade de copiar/colar.
+* Se um autor quiser reutilizar partes (um fragmento de uma experiência) de uma página, precisará copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário. Os fragmentos de experiência eliminam a necessidade de copiar/colar.
 * Para dar suporte ao caso de uso de CMS sem periféricos. Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
 
 >[!NOTE]
@@ -44,25 +47,25 @@ Use os Fragmentos de experiência:
 >
 >`experience-fragments-editors`
 >
->Entre em contato com o administrador do sistema se você tiver problemas.
+>Entre em contato com o administrador do sistema em caso de problemas.
 
 ## Quando você deve usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
 
-Os fragmentos de experiência devem ser usados:
+Fragmentos de experiência devem ser usados:
 
-* Sempre que você quiser reutilizar experiências.
+* Sempre que quiser reutilizar experiências.
 
    * Experiências que serão reutilizadas com o mesmo conteúdo ou com conteúdo semelhante
 
-* Ao usar o AEM como uma plataforma de distribuição de conteúdo para terceiros.
+* Ao usar o AEM como uma plataforma de entrega de conteúdo para terceiros.
 
-   * Qualquer solução que desejar usar o AEM como a plataforma de distribuição de conteúdo
+   * Qualquer solução que deseje usar o AEM como a plataforma de entrega de conteúdo
    * Ao incorporar conteúdo em pontos de contato de terceiros
 
-* Se você tiver uma Experiência com variações ou execuções diferentes.
+* Se você tiver uma Experiência com variações ou representações diferentes.
 
-   * Canal ou variações específicas ao contexto
-   * Experiências que façam sentido para agrupar (por exemplo, uma campanha com diferentes experiências entre canais)
+   * Canal ou variações específicas do contexto
+   * Experiências que fazem sentido agrupar (por exemplo, uma campanha com experiências diferentes em canais)
 
 * Quando você usar o Comércio omnichannel.
 
@@ -94,7 +97,7 @@ O exemplo a seguir mostra Fragmentos de experiência estruturados de acordo com 
 
 >[!CAUTION]
 >
->A seguinte captura de tela foi tirada do site WKND usando o Adobe Experience Manager como um Cloud Service.
+>A seguinte captura de tela foi tirada do site WKND usando o Adobe Experience Manager as a Cloud Service.
 
 ![Pastas para Fragmentos de experiência](assets/xf-folders.png)
 
@@ -108,7 +111,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 
 >[!NOTE]
 >
->Também é possível configurar os [Modelos permitidos para sua instância](#configure-allowed-templates-instance), mas esse método é **not** recomendado, pois os valores podem ser substituídos na atualização.
+>Também é possível configurar a variável [Modelos permitidos para sua instância](#configure-allowed-templates-instance), mas este método é **not** recomendado, pois os valores podem ser substituídos na atualização.
 
 ### Configurar os Modelos permitidos para sua Pasta {#configure-allowed-templates-folder}
 
@@ -133,7 +136,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 
 >[!CAUTION]
 >
->Não é recomendável alterar o **[!UICONTROL Modelos permitidos]** por esse método, pois os modelos especificados podem ser substituídos na atualização.
+>Não é recomendável alterar a variável **[!UICONTROL Modelos permitidos]** por esse método, pois os modelos especificados podem ser substituídos na atualização.
 >
 >Use esta caixa de diálogo apenas para fins informativos.
 
@@ -168,7 +171,7 @@ Para criar um fragmento de experiência:
 
 1. Insira as **[!UICONTROL Propriedades]** do Fragmento de experiência.
 
-   É obrigatório ter um **[!UICONTROL título]**. Se o **[!UICONTROL Nome]** for deixado em branco, ele será derivado do **[!UICONTROL Título]**.
+   É obrigatório ter um **[!UICONTROL título]**. Se a variável **[!UICONTROL Nome]** for deixado em branco, ele será derivado do **[!UICONTROL Título]**.
 
    ![xf-authoring-03](assets/xf-authoring-03.png)
 
@@ -181,29 +184,29 @@ Para criar um fragmento de experiência:
 
 ## Edição de seu fragmento de experiência {#editing-your-experience-fragment}
 
-O Editor de fragmento de experiência oferece recursos semelhantes ao Editor de páginas normal. Consulte [Edição de conteúdo de página](/help/sites-authoring/editing-content.md) para obter mais informações sobre como usá-lo.
+O Editor de fragmento de experiência oferece recursos semelhantes ao Editor de páginas normal. Consulte [Editar conteúdo da página](/help/sites-authoring/editing-content.md) para obter mais informações sobre como usá-lo.
 
-O exemplo de procedimento a seguir ilustra como criar um teaser para um produto:
+O seguinte procedimento de exemplo ilustra como criar um teaser para um produto:
 
-1. Arraste e solte um **[!UICONTROL Teaser da categoria]** do [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Arraste e solte uma **[!UICONTROL Teaser da categoria]** do [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. Selecione **[[!UICONTROL Configurar]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** na barra de ferramentas do componente.
+1. Selecionar **[[!UICONTROL Configurar]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** na barra de ferramentas do componente.
 1. Adicione o **[!UICONTROL Ativo]** e defina as **[!UICONTROL Propriedades]** conforme necessário.
 1. Confirme as definições com **[!UICONTROL Concluído]** (ícone de marca de verificação).
 1. Adicione mais componentes conforme necessário.
 
 ## Criação de uma variação de Fragmento de experiência {#creating-an-experience-fragment-variation}
 
-Você pode criar variações de seu fragmento de experiência, de acordo com suas necessidades:
+Você pode criar variações do Fragmento de experiência, dependendo das suas necessidades:
 
 1. Abra o fragmento para [edição](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Abra a guia **[!UICONTROL Variações]**.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Criar** permite criar:
+1. **Criar** O permite criar:
 
    * **[!UICONTROL Variação]**
    * **[!UICONTROL Variação como Live Copy]**.
@@ -212,32 +215,32 @@ Você pode criar variações de seu fragmento de experiência, de acordo com sua
 
    * **[!UICONTROL Modelo]**
    * **[!UICONTROL Título]**
-   * **[!UICONTROL Nome]**; se deixado em branco, ele será derivado do título
+   * **[!UICONTROL Nome]**; se deixado em branco, ele será derivado do Título
    * **[!UICONTROL Descrição]**
    * **[!UICONTROL Tags de variação]**
 
    ![xf-authoring-07](assets/xf-authoring-07.png)
 
-1. Confirme com **[!UICONTROL Concluído]** (ícone de marca de verificação) e a nova variação será mostrada no painel:
+1. Confirme com **[!UICONTROL Concluído]** (ícone de marca de verificação), a nova variação será mostrada no painel:
 
    ![xf-authoring-08](assets/xf-authoring-08.png)
 
 ## Usar seu fragmento de experiência {#using-your-experience-fragment}
 
-Agora você pode usar o Fragmento de experiência ao criar suas páginas:
+Agora é possível usar o Fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
 
-   Por exemplo: [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/br/products/men.html)
+   Por exemplo: [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
-1. Crie uma instância do componente do fragmento de experiência arrastando o componente do navegador Componentes até o sistema de parágrafos da página:
+1. Crie uma instância do componente Fragmento de experiência arrastando o componente do navegador Componentes para o sistema de parágrafos da página:
 
    ![xf-authoring-09](assets/xf-authoring-09.png)
 
 1. Adicione o Fragmento de experiência real à ocorrência de componente:
 
    * Arraste o fragmento necessário do Navegador de Ativos e solte no componente
-   * Selecione **[!UICONTROL Configurar]** na barra de ferramentas do componente e especifique o fragmento a ser usado, confirme com **Concluído** (marca de seleção)
+   * Selecionar **[!UICONTROL Configurar]** na barra de ferramentas do componente e especifique o fragmento a ser usado, confirme com **Concluído** (marca de verificação)
 
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
@@ -275,10 +278,10 @@ Para criar um novo Bloco de construção:
 
 ### Gerenciar um bloco de construção {#managing-a-building-block}
 
-O bloco de construção está visível na guia **[!UICONTROL Blocos de construção]**. As seguintes ações estão disponíveis para cada bloco:
+O bloco de construção está visível na guia **[!UICONTROL Blocos de construção]**. Para cada bloco, as seguintes ações estão disponíveis:
 
 * Acesse o mestre: abra a variação mestre em uma nova guia
-* Renomeie
+* Renomear
 * Excluir
 
 ![xf-authoring-16](assets/xf-authoring-16.png)
@@ -289,15 +292,15 @@ Arraste o bloco de construção para o sistema de parágrafo de qualquer fragmen
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Usando o seletor `.plain.` no URL, você pode acessar a representação HTML simples.
+Usar o `.plain.` no URL, você pode acessar a representação de HTML simples.
 
 Isso está disponível no navegador, mas o objetivo principal é permitir outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) para acessar o conteúdo do Fragmento de experiência diretamente, usando apenas o URL.
 
-A representação HTML simples adiciona o protocolo, o host e o caminho de contexto aos caminhos que são:
+A representação de HTML simples adiciona o protocolo, host e caminho de contexto aos caminhos que são:
 
-* do tipo: `src`, `href` ou `action`
+* do tipo: `src`, `href`ou `action`
 
-* ou terminar com: `-src`, ou `-href`
+* ou terminar com: `-src`ou `-href`
 
 Por exemplo:
 
@@ -309,9 +312,8 @@ Por exemplo:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportar fragmentos de experiência    {#exporting-experience-fragments}
+## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
-Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
+Por padrão, os Fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais de AEM e de terceiros.
 
-Para exportar para o Adobe Target, o HTML é usado. Consulte [Integração do Target com os fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.
-
+Para exportação para o Adobe Target, é usado o HTML. Consulte [Integração do Target com fragmentos de experiência](/help/sites-administering/experience-fragments-target.md) para obter informações completas.

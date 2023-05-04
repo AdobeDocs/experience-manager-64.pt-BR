@@ -1,36 +1,39 @@
 ---
 title: Incorporar formulário adaptável na página externa da Web
-seo-title: Incorporar formulário adaptável na página externa da Web
+seo-title: Embed adaptive form in external web page
 description: Saiba como incorporar um formulário adaptável em uma página da Web externa
-seo-description: Saiba como incorporar um formulário adaptável em uma página da Web HTML externa
+seo-description: Learn how to embed an adaptive form in an external HTML web page
 uuid: c612ca3b-62f7-4021-939b-e0c05dbbf0d7
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 84a46197-9933-4b94-a8e3-e7baf9c644b1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
 
-
 # Incorporar formulário adaptável na página externa da Web{#embed-adaptive-form-in-external-web-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Saiba como incorporar um formulário adaptável em uma página da Web externa
 
-Você pode [Incorporar formulário adaptável na página AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou em uma página da Web hospedada fora do AEM. O formulário adaptável incorporado é totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário.
+Você pode [Incorporar formulários adaptáveis ao AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou uma página da Web hospedada fora do AEM. O formulário adaptável incorporado é totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário.
 
 ## Pré-requisitos {#prerequisites}
 
 Execute as seguintes etapas antes de incorporar um formulário adaptável a um site externo:
 
 * Publique o formulário adaptável na instância de publicação do AEM.
-* Crie ou identifique uma página da Web no seu site para hospedar o formulário adaptável. Certifique-se de que a página da Web possa [ler arquivos jQuery de um CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) ou tenha uma cópia local do jQuery incorporada. jQuery é necessário para renderizar um formulário adaptável.
-* Quando AEM servidor e a página da Web estiverem em domínios diferentes, execute as etapas listadas na seção [ative o AEM Forms para veicular formulários adaptáveis em um site entre domínios](#cross-domain-sites).
-* [Configure o ](#reveseproxy) proxy reverso para ativar a comunicação entre a página externa e o servidor do AEM Forms.
+* Crie ou identifique uma página da Web no seu site para hospedar o formulário adaptável. Certifique-se de que a página da Web possa [ler arquivos jQuery de um CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) ou tem uma cópia local do jQuery incorporada. jQuery é necessário para renderizar um formulário adaptável.
+* Quando AEM servidor e a página da Web estiverem em domínios diferentes, execute as etapas listadas na seção , [permitir que o AEM Forms forneça formulários adaptáveis a um site de domínio cruzado](#cross-domain-sites).
+* [Configurar proxy reverso](#reveseproxy) para permitir a comunicação entre a página externa e o servidor do AEM Forms.
 
 ## Incorporar formulário adaptável {#embed-adaptive-form}
 
@@ -100,9 +103,9 @@ Execute as seguintes etapas antes de incorporar um formulário adaptável a um s
 
 1. No código incorporado:
 
-   * Altere o valor da variável `options.path` com o caminho do URL de publicação do formulário adaptável. Se o servidor AEM estiver em execução em um caminho de contexto, verifique se o URL inclui o caminho de contexto. Por exemplo, o código acima e adaptável do residem no mesmo servidor do aem forms, de modo que o exemplo usa o caminho de contexto do formulário adaptável /content/forms/af/locbasic.html.
-   * Substitua `options.dataRef` por atributos para passar com o URL. Você pode usar a variável dataref para [preencher previamente um formulário adaptável](/help/forms/using/prepopulate-adaptive-form-fields.md).
-   * Substitua `options.themePath` pelo caminho para um tema diferente do tema configurado no formulário adaptável. Como alternativa, você pode especificar o caminho do tema usando o atributo de solicitação.
+   * Alterar valor da variável `options.path` com o caminho da URL de publicação do formulário adaptável. Se o servidor AEM estiver em execução em um caminho de contexto, verifique se o URL inclui o caminho de contexto. Por exemplo, o código acima e adaptável do residem no mesmo servidor do aem forms, de modo que o exemplo usa o caminho de contexto do formulário adaptável /content/forms/af/locbasic.html.
+   * Substituir `options.dataRef` com atributos a serem enviados com o URL. Você pode usar a variável dataref para [preencher previamente um formulário adaptável](/help/forms/using/prepopulate-adaptive-form-fields.md).
+   * Substituir `options.themePath` com o caminho para um tema diferente do configurado na forma adaptável. Como alternativa, você pode especificar o caminho do tema usando o atributo de solicitação.
    * `CSS_Selector` é o seletor de CSS do contêiner de formulário no qual o formulário adaptável está incorporado. Por exemplo, a classe css .customafsection é o seletor de CSS no exemplo acima.
 
 O formulário adaptável é incorporado na página da Web. Observe o seguinte na forma adaptável incorporada:
@@ -114,27 +117,27 @@ O formulário adaptável é incorporado na página da Web. Observe o seguinte na
 * O direcionamento de experiência e os testes A/B configurados no formulário adaptável original não funcionam no formulário incorporado.
 * Se o Adobe Analytics estiver configurado no formulário original, os dados de análise serão capturados no servidor do Adobe Analytics. No entanto, não está disponível no relatório de análise do Forms.
 
-## Configurar Proxy Reverso {#reveseproxy}
+## Proxy reverso da configuração  {#reveseproxy}
 
 A página da Web externa que incorpora o formulário adaptável envia solicitações ao servidor de AEM, que normalmente fica atrás do firewall em uma rede privada. Para garantir que as solicitações sejam direcionadas com segurança para o servidor AEM, é recomendável configurar um servidor proxy reverso.
 
-Vamos ver um exemplo de como você pode configurar um servidor proxy reverso do Apache 2.4 sem o dispatcher. Neste exemplo, você hospedará o servidor de AEM com o caminho de contexto `/forms` e mapeará `/forms` para o proxy reverso. Ela garante que qualquer solicitação de `/forms` no servidor Apache seja direcionada para a instância do AEM. Essa topologia ajuda a reduzir o número de regras na camada do dispatcher, pois todas as solicitações com prefixo `/forms` roteiam para o servidor de AEM.
+Vamos ver um exemplo de como você pode configurar um servidor proxy reverso do Apache 2.4 sem o dispatcher. Neste exemplo, você hospedará o servidor AEM com `/forms` caminho e mapa de contexto `/forms` para o proxy reverso. Assegura que qualquer pedido de `/forms` no servidor Apache são direcionados para a instância do AEM. Essa topologia ajuda a reduzir o número de regras na camada do dispatcher, pois todas as solicitações têm o prefixo `/forms` para o servidor AEM.
 
-1. Abra o arquivo de configuração `httpd.conf` e exclua as seguintes linhas de código. Como alternativa, você pode adicionar essas linhas de código no arquivo .
+1. Abra o `httpd.conf` arquivo de configuração e exclua o comentário das seguintes linhas de código. Como alternativa, você pode adicionar essas linhas de código no arquivo .
 
    ```
    LoadModule proxy_html_module modules/mod_proxy_html.so 
     LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
-1. Configure regras de proxy adicionando as seguintes linhas de código no arquivo de configuração `httpd-proxy.conf`.
+1. Configure regras de proxy adicionando as seguintes linhas de código no `httpd-proxy.conf` arquivo de configuração.
 
    ```
    ProxyPass /forms https://[AEM_Instance]/forms 
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Substitua `[AEM_Instance]` pelo URL de publicação do servidor AEM nas regras.
+   Substituir `[AEM_Instance]` com o URL de publicação do servidor AEM nas regras.
 
 Se você não montar o servidor AEM em um caminho de contexto, as regras de proxy na camada Apache serão as seguintes:
 
@@ -143,11 +146,19 @@ ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # CSRF Filter
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 ProxyPass /libs/granite/csrf/token.json https://<AEM_Instance>/libs/granite/csrf/token.json
   
 ProxyPassReverse /etc https://<AEM_Instance>/etc
 ProxyPassReverse /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # written for thank you page and other URL present in AF during redirect
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 ProxyPassReverse /content https://<AEM_Instance>/content
 ```
 
@@ -161,12 +172,12 @@ Ao incorporar um formulário adaptável em uma página da Web, considere as segu
 
 * Verifique se as regras de estilo definidas no CSS da página da Web não estão em conflito com o CSS do objeto de formulário. Para evitar conflitos, é possível reutilizar o CSS da página da Web no tema do formulário adaptável usando AEM biblioteca do cliente. Para obter informações sobre como usar a biblioteca do cliente em temas de forma adaptável, consulte [Temas no AEM Forms](/help/forms/using/themes.md).
 * Faça com que o contêiner de formulário na página da Web use toda a largura da janela. Isso garante que as regras de CSS configuradas para dispositivos móveis funcionem sem alterações. Se o contêiner de formulário não tiver a largura total da janela, será necessário gravar CSS personalizado para adaptar o formulário a diferentes dispositivos móveis.
-* Use a API [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) para obter a representação XML ou JSON dos dados do formulário no cliente.
-* Use a API [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) para descarregar o formulário adaptável do DOM HTML.
+* Use  [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API para obter a representação XML ou JSON dos dados de formulário no cliente.
+* Use [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API para descarregar o formulário adaptável do HTML DOM.
 * Configure o cabeçalho access-control-origin ao enviar resposta de AEM servidor.
 
-## Permitir que o AEM Forms sirva formulários adaptáveis para um site de domínio cruzado {#cross-domain-sites}
+## Permitir que o AEM Forms forneça formulários adaptáveis a um site de domínio cruzado  {#cross-domain-sites}
 
 1. Em AEM instância de publicação, vá para AEM Web Console Configuration Manager em `http://[server]:[port]/system/console/configMgr`.
-1. Localize e abra a configuração do filtro **Apache Sling Referrer** .
-1. No campo **Hosts permitidos** , especifique o domínio em que a página da Web reside. Ela permite que o host faça solicitações do POST para o servidor AEM. Também é possível usar a expressão regular para especificar uma série de domínios externos de aplicativos.
+1. Localize e abra o **Referenciador do Apache Sling** Configuração do filtro.
+1. No **Hosts permitidos** , especifique o domínio em que a página da Web está. Ela permite que o host faça solicitações do POST para o servidor AEM. Também é possível usar a expressão regular para especificar uma série de domínios externos de aplicativos.

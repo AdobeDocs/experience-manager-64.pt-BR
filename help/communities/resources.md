@@ -1,8 +1,8 @@
 ---
 title: Console de recursos de ativação
-seo-title: Console de recursos de ativação
+seo-title: Enablement Resources Console
 description: O console Recursos é onde os Gerentes de Ativação criam, gerenciam e atribuem recursos aos membros de um site da comunidade de ativação
-seo-description: O console Recursos é onde os Gerentes de Ativação criam, gerenciam e atribuem recursos aos membros de um site da comunidade de ativação
+seo-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
 uuid: 52445b39-c339-4b39-8004-eb36de99bced
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,16 +11,20 @@ content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2993'
 ht-degree: 5%
 
 ---
 
 # Console de recursos de ativação {#enablement-resources-console}
 
-Para o AEM Communities, o console Recursos é onde os [Gerentes de Ativação](users.md) criam, gerenciam e atribuem recursos aos membros de um site da comunidade de ativação.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+No AEM Communities, o console Recursos é onde [Gerentes de ativação](users.md) crie, gerencie e atribua recursos aos membros de um site da comunidade de ativação.
 
 ## Requisitos {#requirements}
 
@@ -29,7 +33,7 @@ Antes de adicionar recursos de ativação para um site da comunidade, as instân
 * SCORM
 * FFmpeg
 
-Para obter detalhes, consulte [Configuração da ativação](enablement.md).
+Para obter detalhes, consulte [Configurar habilitação](enablement.md).
 
 >[!CAUTION]
 >
@@ -37,13 +41,13 @@ Para obter detalhes, consulte [Configuração da ativação](enablement.md).
 
 >[!NOTE]
 >
->Com o lançamento do [AEM 6.3](deploy-communities.md#latestfeaturepack) e os pacotes de recursos equivalentes das Comunidades [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), o recurso de ativação não requer mais um [banco de dados MySQL](mysql.md).
+>Com o lançamento do [AEM 6.3](deploy-communities.md#latestfeaturepack) e os pacotes de recursos equivalentes das Comunidades [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), o recurso de ativação não requer mais um [Banco de dados MySQL](mysql.md).
 
 ## Terminologia {#terminology}
 
 ### Recurso {#resource}
 
-Os recursos são essenciais para uma [comunidade de ativação](overview.md#enablement-community). São os materiais atribuídos aos membros que lhes permitem melhorar as suas competências.
+Os recursos são essenciais para uma [comunidade de capacitação](overview.md#enablement-community). São os materiais atribuídos aos membros que lhes permitem melhorar as suas competências.
 
 Características de um Recurso:
 
@@ -61,13 +65,13 @@ Um caminho de aprendizagem é um conjunto lógico de recursos de ativação agru
 
 ### Grupo de membros {#members-group}
 
-Quando um site da comunidade é criado, o nome dado ao site para o URL é usado na criação dos [grupos de usuários específicos do site](users.md) configurados com várias permissões para várias funções. Todos esses grupos criados automaticamente recebem o prefixo `Community *<site-name>*`.
+Quando um site da comunidade é criado, o nome dado ao site para o URL é usado na criação do [grupos de usuários específicos do site](users.md) configurado com várias permissões para várias funções. Todos esses grupos criados automaticamente recebem o prefixo `Community *<site-name>*`.
 
-Um desses grupos de usuários é o grupo `Community *<site-name>* Members`, que identifica usuários registrados no ambiente de publicação como membros da comunidade. Consulte o tutorial [Introdução ao AEM Communities para Ativação](getting-started-enablement.md) para obter um exemplo.
+Um desses grupos de usuários é `Community *<site-name>* Members` , que identifica usuários registrados no ambiente de publicação como membros da comunidade. Consulte o tutorial [Introdução ao AEM Communities para ativação](getting-started-enablement.md) para obter um exemplo.
 
-Para [comunidades de engajamento](overview.md#egagementcommunity), é razoável permitir que os visitantes do site se registrem automaticamente ou usem logon social, ponto em que são adicionados automaticamente ao grupo de membros.
+Para [comunidades de engajamento](overview.md#egagementcommunity), é razoável permitir que os visitantes do site se registrem automaticamente ou usem logon social, e nesse momento eles são adicionados automaticamente ao grupo de membros.
 
-Para [comunidades de ativação](overview.md#enablement-community), é recomendável tornar o site privado, o que requer que um administrador adicione usuários ao grupo de membros.
+Para [comunidades de capacitação](overview.md#enablement-community), é recomendável tornar o site privado, o que requer que um administrador adicione usuários ao grupo de membros.
 
 ## Acessar os recursos de ativação de um site da comunidade {#accessing-a-community-site-s-enablement-resources}
 
@@ -89,7 +93,7 @@ Depois que um site específico da comunidade é selecionado, todos os recursos d
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
-#### Pesquisar   {#search-features}
+#### Pesquisar {#search-features}
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -109,7 +113,7 @@ Para selecionar vários recursos de ativação, selecione o primeiro ao passar o
 
 Para adicionar um novo recurso de ativação ao site da comunidade
 
-* Selecione o ícone `Create`
+* Selecione o `Create` ícone
 * No submenu exibido, selecione `Resource`
 
 Isso inicia um processo passo a passo de
@@ -128,13 +132,13 @@ Quando o recurso faz parte de um curso, de um caminho de aprendizagem, os membro
 
 * **[!UICONTROL Adicionar]**
 
-   (*opcional*) Uma imagem a ser exibida no cartão para o recurso de ativação na página de atribuições do membro, bem como no console Recursos. A imagem é selecionada no sistema de arquivos local do servidor. Se uma imagem não for fornecida, uma miniatura será gerada para o recurso carregado.
+   (*opcional*) Uma imagem a ser exibida no cartão para o recurso de ativação na página de atribuições do membro, bem como no console Recursos . A imagem é selecionada no sistema de arquivos local do servidor. Se uma imagem não for fornecida, uma miniatura será gerada para o recurso carregado.
 
    ***Observação***: o tamanho de imagem recomendado não é apenas 480 x 480 pixels. Devido ao design responsivo dos cartões em várias dimensões do navegador, o tamanho da exibição varia de 220 X 165 pixels a 400 x 165 pixels.
 
 * **[!UICONTROL Nome do site]**
 
-   (*readonly*) O site da comunidade ao qual o recurso está sendo adicionado.
+   (*somente leitura*) O site da comunidade ao qual o recurso está sendo adicionado.
 
 * **[!UICONTROL Nome do Recurso &amp;;]**
 
@@ -142,11 +146,11 @@ Quando o recurso faz parte de um curso, de um caminho de aprendizagem, os membro
 
 * **[!UICONTROL Tags]**
 
-   (*opcional*) É possível escolher uma ou mais tags que associam o recurso de ativação a um ou mais catálogos. Consulte [Marcando recursos de ativação](tag-resources.md).
+   (*opcional*) Uma ou mais tags podem ser escolhidas para associar o recurso de ativação a um ou mais catálogos. Consulte [Marcar recursos de ativação](tag-resources.md).
 
 * **[!UICONTROL Mostrar no catálogo]**
 
-   Quando desmarcado, o recurso de ativação não aparecerá em nenhum catálogo. Se marcada, o recurso de ativação aparecerá em todos os catálogos, a menos que [pré-filtrado](catalog-developer-essentials.md#pre-filters) ou o membro filtre da interface do usuário. O padrão está desmarcado.
+   Quando desmarcado, o recurso de ativação não aparecerá em nenhum catálogo. Se marcada, o recurso de ativação aparecerá em todos os catálogos, a menos que [pré-filtrado](catalog-developer-essentials.md#pre-filters) ou o membro filtra da interface do usuário. O padrão está desmarcado.
 
 * **[!UICONTROL Descrição]**
 
@@ -172,15 +176,15 @@ Quando o recurso faz parte de um curso, de um caminho de aprendizagem, os membro
 
 Embora pareça que vários recursos de capacitação podem ser selecionados, somente um é permitido.
 
-Selecione `'+' icon`, no canto superior direito, para iniciar o processo de escolha do recurso identificando a fonte.
+Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de escolha do recurso identificando a fonte.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
-* **[!UICONTROL Fazer upload de meus]**
-arquivos locaisFazer upload do sistema de arquivos local usará o navegador de arquivos nativo para selecionar e fazer upload de um arquivo. Os tipos de arquivos suportados são SCORM.zip (HTML5 ou SWF), vídeo MP4, SWF, PDF e tipos de imagem (JPG, PNG, GIF, BMP). O nome do arquivo se torna o nome do ativo, que é adicionado à biblioteca de ativos.
+* **[!UICONTROL Fazer upload de meus arquivos locais]**
+O upload do sistema de arquivos local usará o navegador de arquivos nativo para selecionar e carregar um arquivo. Os tipos de arquivos suportados são SCORM.zip (HTML5 ou SWF), MP4 video, SWF, PDF e tipos de imagem (JPG, PNG, GIF, BMP). O nome do arquivo se torna o nome do ativo, que é adicionado à biblioteca de ativos.
 
-* **[!UICONTROL Procurar]**
-Biblioteca de AtivosSelecione na Biblioteca de Ativos. A seleção é limitada àqueles que estão visíveis no site da comunidade.
+* **[!UICONTROL Procurar biblioteca de ativos]**
+Selecione na Biblioteca de ativos. A seleção é limitada àqueles que estão visíveis no site da comunidade.
 
 * **[!UICONTROL Adicione um URL externo]**
 
@@ -230,7 +234,7 @@ Biblioteca de AtivosSelecione na Biblioteca de Ativos. A seleção é limitada �
 
 * **[!UICONTROL Imagem de capa do recurso]**
 
-   A imagem de capa é uma imagem a ser exibida quando o recurso de ativação for visualizado pela primeira vez. Por exemplo, a imagem de capa é exibida quando um recurso de vídeo ainda não está sendo reproduzido. Se uma imagem personalizada não for carregada, uma imagem padrão será exibida. Para recursos de vídeo, pode ser possível [gerar uma miniatura](enablement.md#ffmpeg), mas somente quando carregado e não quando o vídeo é referenciado como um URL. Para recursos de localização, a imagem pode ser usada para fornecer informações adicionais.
+   A imagem de capa é uma imagem a ser exibida quando o recurso de ativação for visualizado pela primeira vez. Por exemplo, a imagem de capa é exibida quando um recurso de vídeo ainda não está sendo reproduzido. Se uma imagem personalizada não for carregada, uma imagem padrão será exibida. Para recursos de vídeo, talvez seja possível [gerar uma miniatura](enablement.md#ffmpeg), mas somente quando carregado e não quando o vídeo é referenciado como URL. Para recursos de localização, a imagem pode ser usada para fornecer informações adicionais.
 
    O tamanho recomendado para a imagem de capa é 640 x 360 px.
 
@@ -248,7 +252,7 @@ Biblioteca de AtivosSelecione na Biblioteca de Ativos. A seleção é limitada �
 
 * **[!UICONTROL Configurações sociais]**
 
-   Essas configurações controlam se os alunos podem ou não fornecer informações sobre o recurso de ativação. As [configurações de moderação](sites-console.md#moderation) são as do site da comunidade pai.
+   Essas configurações controlam se os alunos podem ou não fornecer informações sobre o recurso de ativação. O [configurações de moderação](sites-console.md#moderation) são do site da comunidade principal.
 
    * **[!UICONTROL Permitir comentários]**
 
@@ -264,13 +268,13 @@ Biblioteca de AtivosSelecione na Biblioteca de Ativos. A seleção é limitada �
 
 * **[!UICONTROL Data de vencimento]**
 
-   *(Opcional)* Pode ser selecionada uma data até a qual a atribuição deve ser concluída.
+   *(Opcional)* Pode ser selecionada uma data até à qual a atribuição deve ser concluída.
 
 * **[!UICONTROL Autor do recurso]**
    *(Opcional)* O autor do recurso de ativação. Use o menu suspenso para selecionar entre os usuários que são membros do [grupo de membros](#members-group).
 
 * **[!UICONTROL Contato do Recurso &amp;;]**
-   *(Obrigatório)* Uma pessoa em que o membro pode entrar em contato com relação ao recurso de ativação. Use o menu suspenso para selecionar entre os usuários que são membros do [grupo de membros](#members-group).
+   *(Obrigatório)* Uma pessoa que o membro pode entrar em contato com relação ao recurso de ativação. Use o menu suspenso para selecionar entre os usuários que são membros do [grupo de membros](#members-group).
 
 * **[!UICONTROL Especialista de recurso]**
    *(Opcional)* Uma pessoa que o membro pode entrar em contato e que tem conhecimento sobre o recurso de ativação. Use o menu suspenso para selecionar entre usuários que são membros do [grupo de membros](#members-group).
@@ -279,14 +283,14 @@ Biblioteca de AtivosSelecione na Biblioteca de Ativos. A seleção é limitada �
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-* **[!UICONTROL Adicionar]**
-destinatáriosUse o menu suspenso para selecionar entre  [membros](#members-group)  - os usuários e grupos de usuários (listados em negrito) - que devem ser inscritos como aprendentes. Quando os membros entram no site da comunidade, os recursos de ativação (e caminhos de aprendizado) em que estão inscritos aparecerão em sua página [Atribuições](functions.md#assignments-function).
+* **[!UICONTROL Adicionar destinatários]**
+Use o menu suspenso para selecionar [membros](#members-group) - os usuários e grupos de usuários (listados em negrito) - que serão inscritos como aprendentes. Quando os membros entram no site da comunidade, os recursos de ativação (e caminhos de aprendizado) nos quais estão inscritos aparecerão em seus [Atribuições](functions.md#assignments-function) página.
 
-* selecione **[!UICONTROL Criar]**
+* select **[!UICONTROL Criar]**
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
-A criação bem-sucedida do recurso de ativação retorna ao console Recursos com o recurso recém-criado selecionado. Desse console, é possível [gerenciar o recurso](#managing-a-resource).
+A criação bem-sucedida do recurso de ativação retorna ao console Recursos com o recurso recém-criado selecionado. Nesse console, é possível [gerenciar o recurso](#managing-a-resource).
 
 ## Criar um caminho de aprendizado {#create-a-learning-path}
 
@@ -294,7 +298,7 @@ A criação bem-sucedida do recurso de ativação retorna ao console Recursos co
 
 Para adicionar um novo caminho de aprendizagem ao site da comunidade
 
-* Selecione o ícone `Create`
+* Selecione o `Create` ícone
 * No submenu exibido, selecione `Learning Path`
 
 Isso inicia um processo passo a passo de
@@ -315,25 +319,25 @@ Para recursos de capacitação incluídos em um caminho de aprendizado, as atrib
 
 * **[!UICONTROL Adicionar]**
 
-   (*opcional*) Uma imagem a ser exibida no cartão para o caminho de aprendizado na página de atribuições do membro, bem como no console Recursos. A imagem é selecionada no sistema de arquivos local do servidor. Se uma imagem não for fornecida, uma miniatura será gerada para o recurso carregado.
+   (*opcional*) Uma imagem a ser exibida no cartão do caminho de aprendizado na página de atribuições do membro, bem como no console Recursos . A imagem é selecionada no sistema de arquivos local do servidor. Se uma imagem não for fornecida, uma miniatura será gerada para o recurso carregado.
 
    ***Observação***: o tamanho de imagem recomendado não é mais apenas 480 x 480 pixels. Devido ao design responsivo dos cartões em várias dimensões do navegador, o tamanho da exibição varia de 220 X 165 pixels a 400 x 165 pixels.
 
 * **[!UICONTROL Nome do site]**
 
-   (*readonly*) O site da comunidade ao qual o recurso está sendo adicionado.
+   (*somente leitura*) O site da comunidade ao qual o recurso está sendo adicionado.
 
 * **[!UICONTROL Nome do Caminho de aprendizagem]**
 
-   (*required*) O nome de exibição do caminho de aprendizado. Um nome de nó válido é criado a partir do nome de exibição.
+   (*obrigatório*) O nome de exibição do caminho de aprendizagem. Um nome de nó válido é criado a partir do nome de exibição.
 
 * **[!UICONTROL Tags]**
 
-   (*opcional*) Uma ou mais tags podem ser escolhidas que associam o caminho de aprendizado a um ou mais catálogos. Consulte [Marcando recursos de ativação](tag-resources.md).
+   (*opcional*) Uma ou mais tags podem ser escolhidas para associar o caminho de aprendizado a um ou mais catálogos. Consulte [Marcar recursos de ativação](tag-resources.md).
 
 * **[!UICONTROL Mostrar no catálogo]**
 
-   Quando desmarcado, o caminho de aprendizagem não aparecerá em nenhum catálogo. Se marcada, o caminho de aprendizado aparecerá em todos os catálogos, a menos que [pré-filtrado](catalog-developer-essentials.md#pre-filters) ou o membro filtre da interface do usuário. Mostrar o caminho de aprendizagem em um catálogo irá conceder indiretamente acesso READ a todos os seus recursos contidos. O padrão está desmarcado.
+   Quando desmarcado, o caminho de aprendizagem não aparecerá em nenhum catálogo. Se marcada, o caminho de aprendizado aparecerá em todos os catálogos, a menos que [pré-filtrado](catalog-developer-essentials.md#pre-filters) ou o membro filtra da interface do usuário. Mostrar o caminho de aprendizagem em um catálogo irá conceder indiretamente acesso READ a todos os seus recursos contidos. O padrão está desmarcado.
 
 * **[!UICONTROL Descrição]**
 
@@ -359,7 +363,7 @@ Para recursos de capacitação incluídos em um caminho de aprendizado, as atrib
 
 * **[!UICONTROL Pré-requisito dos Caminhos de aprendizagem]**
 (
-*opcional*) Quando outros caminhos de aprendizagem publicados são selecionados, eles devem ser concluídos antes que um aluno possa selecionar esse caminho de aprendizagem.
+*opcional*) Quando outros caminhos de aprendizado publicados são selecionados, eles devem ser concluídos antes que um aluno possa selecionar esse caminho de aprendizado.
 
 * Selecione **[!UICONTROL Próximo]**
 
@@ -369,7 +373,7 @@ Para recursos de capacitação incluídos em um caminho de aprendizado, as atrib
 
 * **[!UICONTROL Impor ordem no Caminho de aprendizagem]**
 
-   (*opcional*) se definido como Ativado, a ordem na qual os recursos de ativação são adicionados é a ordem na qual os alunos são solicitados a prosseguir pelo caminho de aprendizado. O padrão é Desativado.
+   (*opcional*) se definida como Ativado, a ordem na qual os recursos de ativação são adicionados é a ordem na qual os alunos devem prosseguir pelo caminho de aprendizado. O padrão é Desativado.
 
 * **[!UICONTROL Recursos]**
 
@@ -387,11 +391,11 @@ Para recursos de capacitação incluídos em um caminho de aprendizado, as atrib
 
 * **[!UICONTROL Adicionar inscrições]**
 
-   Use o menu suspenso para selecionar entre os membros e grupos de membros (listados em negrito) que são membros do [grupo de membros](#members-group) do site da comunidade. Não é necessário adicionar atribuições ao criar o caminho de aprendizado pela primeira vez. As propriedades do caminho de aprendizagem podem ser modificadas para adicionar alunos posteriormente.
+   Use o menu suspenso para selecionar os membros e grupos de membros (listados em negrito) que são membros do site da comunidade [grupo de membros](#members-group). Não é necessário adicionar atribuições ao criar o caminho de aprendizado pela primeira vez. As propriedades do caminho de aprendizagem podem ser modificadas para adicionar alunos posteriormente.
 
 * **[!UICONTROL Contato do Caminho de Aprendizagem &amp;;]**
 
-   *(Obrigatório)* Uma pessoa em que o membro pode entrar em contato com relação ao caminho de aprendizado. Use o menu suspenso para selecionar entre os usuários que são membros do [grupo de membros do site da comunidade](#members-group).
+   *(Obrigatório)* Uma pessoa que o membro pode contatar em relação ao caminho de aprendizado. Use o menu suspenso para selecionar entre os usuários que são membros do site da comunidade [grupo de membros](#members-group).
 
 * Selecione **[!UICONTROL Criar]**
 
@@ -431,7 +435,7 @@ Se a única alteração for modificar atribuições na etapa Configurações , s
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-Ao selecionar o ícone da lixeira, o recurso de ativação será `Delete`d após a confirmação.
+Ao selecionar o ícone da lixeira, o recurso de ativação será `Delete`d após confirmação.
 
 ### Publicação {#publish}
 
@@ -440,8 +444,8 @@ Ao selecionar o ícone da lixeira, o recurso de ativação será `Delete`d após
 Antes que os alunos possam ver um recurso de ativação atribuído, ele deve ser publicado:
 
 * Selecione o ícone do mundo para `Publish`
-* Na caixa de diálogo que aparece, selecione **[!UICONTROL Publicar]** novamente
-* Selecione **[!UICONTROL Fechar]**
+* Na caixa de diálogo que aparece, selecione **[!UICONTROL Publicar]** again
+* Selecionar **[!UICONTROL Fechar]**
 
 Embora o diálogo afirme que a ação está na fila, geralmente é publicada imediatamente.
 
@@ -449,7 +453,7 @@ Embora o diálogo afirme que a ação está na fila, geralmente é publicada ime
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Para tornar temporariamente os recursos de ativação inacessíveis aos membros no ambiente de publicação sem excluí-lo, use o ícone do mundo para `Unpublish`o recurso.
+Para tornar temporariamente os recursos de ativação inacessíveis aos membros no ambiente de publicação sem excluí-lo, use o ícone do mundo para `Unpublish`o recurso .
 
 ### Relatório {#report}
 
@@ -457,13 +461,13 @@ Para tornar temporariamente os recursos de ativação inacessíveis aos membros 
 
 O ícone Relatório fornece acesso aos relatórios gerados quando os alunos interagem com os recursos de ativação atribuídos no ambiente de publicação. O relatório varia dependendo do tipo de recurso.
 
-Para todos os caminhos de aprendizagem, é possível visualizar um relatório com base em recursos ou aprendentes ( `User Report`).
+Em todos os caminhos de aprendizado, é possível visualizar um relatório com base em recursos ou aprendentes ( `User Report`).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
-Este relatório é especificamente para o recurso de ativação atual ou o caminho de aprendizado. A profundidade do relatório fornecido depende de [Adobe Analytics](analytics.md) estar licenciado e habilitado para o site da comunidade. Os relatórios [Linha do tempo](#timeline), [Envolvimento do visualizador](#viewer-engagement) e [Envolvimento do dispositivo](#engagement-by-device) são importados do Adobe Analytics com base no [intervalo de sondagem](analytics.md#report-importer).
+Este relatório é especificamente para o recurso de ativação atual ou o caminho de aprendizado. A profundidade do relatório fornecido depende do fato de [Adobe Analytics](analytics.md) O está licenciado e ativado para o site da comunidade. O [Linha do tempo](#timeline), [Envolvimento do visualizador](#viewer-engagement)e [Envolvimento por dispositivo](#engagement-by-device) são importados do Adobe Analytics com base na variável [intervalo de sondagem](analytics.md#report-importer).
 
-Para todos os recursos de ativação, independentemente de o Adobe Analytics estar ou não habilitado, há relatórios em [Status do destinatário](#assignee-status) e [Classificações](#ratings), bem como uma tabela [Resumo do relatório](#report-summary).
+Para todos os recursos de ativação, independentemente de o Adobe Analytics estar ou não habilitado, há relatórios sobre [Status do Destinatário](#assignee-status) e [Classificações](#ratings) bem como [Resumo do relatório](#report-summary) tabela.
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
@@ -491,7 +495,7 @@ O eixo vertical é o número de eventos.
 
 O eixo horizontal é a hora do calendário.
 
-[Adobe Analytics necessário](sites-console.md#analytics).
+[Adobe Analytics obrigatório](sites-console.md#analytics).
 
 #### Envolvimento do visualizador {#viewer-engagement}
 
@@ -549,13 +553,13 @@ Para um Relatório do usuário de caminho de aprendizagem, o Resumo do relatóri
    * Número de recursos concluídos
    * Seu status
 
-É possível ajustar a exibição da tabela selecionando colunas usando o seletor `Show / hide columns`.
+É possível ajustar a exibição da tabela selecionando colunas usando o `Show / hide columns` seletor.
 
 #### Baixar relatório como CSV {#download-report-as-csv}
 
 A tabela Resumo dos relatórios pode ser baixada no formato CSV usando um botão na parte superior do console.
 
-* para um recurso de ativação: Botão `Download Resource Report as CSV`
-* para um caminho de aprendizagem: Botão `Download Learning Path Report as CSV`
+* para um recurso de ativação: `Download Resource Report as CSV` botão
+* para um caminho de aprendizagem: `Download Learning Path Report as CSV` botão
 
 O Resumo completo dos relatórios é baixado independentemente das colunas escolhidas para exibição.

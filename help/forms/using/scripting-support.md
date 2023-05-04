@@ -11,14 +11,18 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
-source-git-commit: aa70ce1b05353e0d6f234c59df673486c8fa5082
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3894'
-ht-degree: 36%
+source-wordcount: '3930'
+ht-degree: 7%
 
 ---
 
 # Suporte a scripts para formulários HTML5 {#scripting-support-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 As propriedades do JavaScript, FormCalc e os métodos suportados em formulários HTML5 são os listados abaixo:
 
@@ -33,7 +37,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td><code>prevText</code></td> 
-   <td>Especifica o conteúdo do campo antes de sua alteração em resposta a ações de um usuário. Esse valor pode ser retomado, de modo semelhante a um recurso desfazer.</td> 
+   <td>Especifica o conteúdo do campo antes de ser alterado em resposta às ações de um usuário. Esse valor pode ser retomado, de modo semelhante a um recurso desfazer.</td> 
    <td><p>Não funciona em caixas suspensas e de listagem. <code>PrevText </code>não funciona corretamente nos seguintes casos:</p> 
     <ul> 
      <li>Ao digitar algumas chaves de caractere especiais (por exemplo $, (,), &amp;, @ e muito mais) em campos numéricos na iPad, e </li> 
@@ -47,7 +51,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td><code>newtext</code></td> 
-   <td>Especifica o conteúdo do campo após a sua alteração em resposta a ações de usuários.</td> 
+   <td>Especifica o conteúdo do campo depois que ele é alterado em resposta às ações do usuário.</td> 
    <td><p>O <code>newText</code> não funciona corretamente nos seguintes casos:</p> 
     <ul> 
      <li>Sobre a seleção dos textos substitutos</li> 
@@ -61,8 +65,8 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
     </div> </td> 
   </tr> 
   <tr> 
-   <td>change</td> 
-   <td>Especifica o valor que um usuário insere ou cola em um campo imediatamente após executar a ação. </td> 
+   <td>alterar</td> 
+   <td>Especifica o valor que um usuário digita ou cola em um campo imediatamente após executar a ação. </td> 
    <td><p>A propriedade change não funciona corretamente nos seguintes casos:</p> 
     <ul> 
      <li>Sobre a seleção dos textos substitutos</li> 
@@ -74,7 +78,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>keydown</td> 
-   <td>Determina se um usuário está pressionando uma tecla de seta para fazer uma seleção. Essa propriedade apenas está disponível em caixas de listagem e listas suspensas.</td> 
+   <td>Determina se um usuário está pressionando uma tecla de seta para fazer uma seleção. Essa propriedade está disponível somente para caixas de listagem e listas suspensas.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -97,7 +101,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   <tr> 
    <td><code>apptype</code></td> 
    <td>Retorna o tipo de aplicativo do host. Disponível somente para aplicativos clientes.</td> 
-   <td>Retorna <code>HTML 5</code>.</td> 
+   <td>Devoluções <code>HTML 5</code>.</td> 
   </tr> 
   <tr> 
    <td><code>name</code></td> 
@@ -116,7 +120,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td><code>title</code></td> 
-   <td>Especifica o título do documento. Apenas está disponível para aplicativos clientes.</td> 
+   <td>Especifica o título do documento. Ele está disponível somente para aplicativos clientes.</td> 
    <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como no caso de PDF forms.</td> 
   </tr> 
   <tr> 
@@ -146,22 +150,22 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td><code>setFocus</code></td> 
-   <td>Define o foco do teclado para o campo especificado. O campo é especificado como um objeto ou pela expressão SOM do campo. Apenas está disponível para aplicativos clientes.</td> 
+   <td>Define o foco do teclado para o campo especificado. O campo é especificado como um objeto ou pela expressão SOM do campo. Ele está disponível somente para aplicativos clientes.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td><code>resetdata</code></td> 
-   <td>Redefine os campos com seus valores padrão em um documento.</td> 
+   <td>Redefine os campos para seus valores padrão em um documento.</td> 
    <td>Apaga todos os dados em um formulário com dados unidos, em vez de restaurá-los aos valores padrão.</td> 
   </tr> 
   <tr> 
    <td><code>messageBox</code></td> 
-   <td>Exibe uma caixa de diálogo na tela. Apenas está disponível para aplicativos clientes</td> 
+   <td>Exibe uma caixa de diálogo na tela. Está disponível somente para aplicativos clientes</td> 
    <td>Caixa de mensagem do tipo Sim/Não é convertida em OK/Cancelar. Não há suporte para a caixa de mensagem com três botões.</td> 
   </tr> 
   <tr> 
    <td>currentPage</td> 
-   <td><p>Define a página atualmente ativa de um documento no tempo de execução.</p> <p>Os valores de páginas usam 0 como base e, portanto, a primeira página de um documento retorna um valor 0.</p> <p>A propriedade currentPage está disponível quando a propriedade layout:ready é executada em um cliente. Entretanto, não está disponível quando a propriedade layout:ready é executada no servidor porque essa propriedade só será executada quando o layout do formulário for executado.</p> </td> 
+   <td><p>Define a página atualmente ativa de um documento no tempo de execução.</p> <p>Os valores de páginas usam 0 como base e, portanto, a primeira página de um documento retorna um valor 0.</p> <p>A propriedade currentPage está disponível quando a propriedade layout:ready é executada em um cliente. No entanto, não está disponível quando layout:ready é executado no servidor porque a propriedade não será executada até que o layout do formulário seja executado.</p> </td> 
    <td>Nenhum</td> 
   </tr> 
  </tbody> 
@@ -223,22 +227,22 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td><code>border</code></td> 
-   <td>O objeto border descreve as bordas que circundam um objeto.</td> 
+   <td>O objeto border descreve a borda que circunda um objeto.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td><code>ui</code></td> 
-   <td>O objeto ui object engloba a descrição da interface do usuário de um objeto de formulário.</td> 
+   <td>O objeto ui engloba a descrição da interface do usuário de um objeto de formulário.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td><code>mandatory</code></td> 
-   <td>Especifica o valor de nullTest do campo.</td> 
+   <td>Especifica o valor nullTest do campo.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td><code>borderColor</code></td> 
-   <td>Especifica o valor de cor da borda desse campo. É necessário definir a propriedade border.edge.presence como visível separadamente.</td> 
+   <td>Especifica o valor de cor da borda para este campo. É necessário definir a propriedade border.edge.presence como visível separadamente.</td> 
    <td>Ele não retorna corretamente a cor da borda padrão do campo.</td> 
   </tr> 
   <tr> 
@@ -278,22 +282,22 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td><code>getItemState</code></td> 
-   <td>Retorna o estado da seleção do item especificado</td> 
+   <td>Retorna o estado de seleção do item especificado</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td><code>setItemState</code></td> 
-   <td>Define o estado da seleção do item especificado.</td> 
+   <td>Define o estado de seleção do item especificado.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td><code>getDisplayItem</code></td> 
-   <td>Recupera o texto de exibição do item para o índice de itens especificado.</td> 
+   <td>Recupera o texto de exibição do item para o índice de item especificado.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td><code>getSaveItem</code></td> 
-   <td>Recupera o valor de dados para o índice de itens especificado.</td> 
+   <td>Recupera o valor dos dados para o índice de item especificado.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -308,12 +312,12 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>h</td> 
-   <td>Uma medida da altura para o layout.</td> 
+   <td>Uma medida da altura do layout.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>w</td> 
-   <td>Uma medida que especifica a largura para o layout.</td> 
+   <td>Uma medida que especifica a largura do layout.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -342,7 +346,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
    <td>Sempre retorna o subformulário pai em vez de retornar primeiro subformulário pai que não tem escopo.<br /> </td> 
   </tr> 
   <tr> 
-   <td>selectedIndex</td> 
+   <td>seletedIndex</td> 
    <td>O índice do primeiro item selecionado.</td> 
    <td>Nenhum</td> 
   </tr> 
@@ -394,7 +398,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
 | getAttribute | Obtém um valor de propriedade especificado. | Nenhum |
 | setAttribute | Define o valor de uma propriedade especificada. | Nenhum |
 
-## model {#model}
+## modelo {#model}
 
 | Propriedade | Descrição | Exceção |
 |---|---|---|
@@ -426,22 +430,22 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>border</td> 
-   <td>O objeto border descreve as bordas que circundam um objeto.</td> 
+   <td>O objeto border descreve a borda que circunda um objeto.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>borderColor</td> 
-   <td>Especifica o valor de cor da borda desse campo. É necessário definir a propriedade border.edge.presence como visível separadamente.</td> 
+   <td>Especifica o valor de cor da borda para este campo. É necessário definir a propriedade border.edge.presence como visível separadamente.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>h</td> 
-   <td>Uma medida da altura para o layout.</td> 
+   <td>Uma medida da altura do layout.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>w</td> 
-   <td>Uma medida que especifica a largura para o layout.</td> 
+   <td>Uma medida que especifica a largura do layout.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -471,23 +475,23 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>access</td> 
-   <td>Controla o acesso de usuários ao conteúdo de um contêiner como um subformulário.</td> 
+   <td>Controla o acesso do usuário ao conteúdo de um objeto de contêiner, como um subformulário.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>execValidate</td> 
-   <td>Calcula o índice de um subformulário ou de um conjunto de subformulários com base no local em que está localizado em relação a outras instâncias do mesmo objeto de formulário.</td> 
+   <td>Calcula o índice de um subformulário ou de um conjunto de subformulários com base em onde ele está localizado em relação a outras instâncias do mesmo objeto de formulário.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>instanceManager</td> 
-   <td>O objeto instanceManager gerencia a criação, remoção e movimentação de instâncias de objetos de modelos de formulários.<br /> </td> 
+   <td>O objeto instanceManager gerencia a criação, a remoção e a movimentação de instâncias de objetos de modelo de formulário.<br /> </td> 
    <td>Nenhum</td> 
   </tr> 
  </tbody> 
 </table>
 
-### submit {#submit}
+### enviar {#submit}
 
 | Propriedade | Descrição |
 |---|---|
@@ -504,7 +508,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>nodes</td> 
-   <td>Retorna uma lista de todos os objetos filho do objeto atual.</td> 
+   <td>Retorna uma lista de todos os objetos filhos do objeto atual.</td> 
    <td> 
     <ul> 
      <li>Não suportado para xfa.nodes, desc</li> 
@@ -522,7 +526,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
    <td>Nenhum</td> 
   </tr> 
   <tr> 
-   <td>index</td> 
+   <td>Índice</td> 
    <td>Retorna a posição desse nó em sua coleção de nós de relacionamento semelhantes, no escopo e como filho.</td> 
    <td>Nenhum</td> 
   </tr> 
@@ -548,7 +552,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
 
 | Propriedade | Descrição | Exceção |
 |---|---|---|
-| instanceManager | O objeto instanceManager gerencia a criação, remoção e movimentação de instâncias de objetos de modelos de formulários. | Nenhum |
+| instanceManager | O objeto instanceManager gerencia a criação, a remoção e a movimentação de instâncias de objetos de modelo de formulário. | Nenhum |
 
 ## content {#content}
 
@@ -642,7 +646,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
  </tbody> 
 </table>
 
-## pattern {#pattern}
+## padrão {#pattern}
 
 <table> 
  <tbody> 
@@ -716,7 +720,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>ui</td> 
-   <td>O objeto ui object engloba a descrição da interface do usuário de um objeto de formulário.<br /> </td> 
+   <td>O objeto ui engloba a descrição da interface do usuário de um objeto de formulário.<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -736,7 +740,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>valor</td> 
-   <td>O objeto valor abrange uma unidade única de conteúdo de dados.<br /> </td> 
+   <td>O objeto value engloba uma única unidade de conteúdo de dados.<br /> </td> 
    <td> </td> 
   </tr> 
  </tbody> 
@@ -835,7 +839,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
 
 | **Propriedade** | **Descrição** | **Exceção** |
 |---|---|---|
-| border | O objeto border descreve as bordas que circundam um objeto. | nenhum |
+| border | O objeto border descreve a borda que circunda um objeto. | nenhuma |
 
 ## objeto {#object}
 
@@ -849,12 +853,12 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   <tr> 
    <td>className</td> 
    <td>Determina o nome da classe desse objeto.<br /> </td> 
-   <td>nenhum</td> 
+   <td>nenhuma</td> 
   </tr> 
  </tbody> 
 </table>
 
-## rectangle {#rectangle}
+## retângulo {#rectangle}
 
 <table> 
  <tbody> 
@@ -882,7 +886,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>border</td> 
-   <td>O objeto border descreve as bordas que circundam um objeto.<br /> </td> 
+   <td>O objeto border descreve a borda que circunda um objeto.<br /> </td> 
    <td>Nenhum</td> 
   </tr> 
  </tbody> 
@@ -909,7 +913,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>mandatory</td> 
-   <td>Especifica o valor de nullTest do campo.</td> 
+   <td>Especifica o valor nullTest do campo.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -924,17 +928,17 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>h</td> 
-   <td>Uma medida da altura para o layout.</td> 
+   <td>Uma medida da altura do layout.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>transient</td> 
-   <td>Especifica se o aplicativo de processamento deve salvar o valor do grupo de exclusão como parte de uma submissão de formulário ou de uma operação de gravação.</td> 
+   <td>Especifica se o aplicativo de processamento deve salvar o valor do grupo de exclusão como parte de um envio de formulário ou de uma operação de salvamento.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
    <td>w</td> 
-   <td>Uma medida que especifica a largura para o layout.</td> 
+   <td>Uma medida que especifica a largura do layout.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -959,7 +963,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>dataNode</td> 
-   <td>Obtém o nó de dados para qual um nó de formulário é vinculado após a fusão.</td> 
+   <td>Obtém o nó de dados ao qual um nó de formulário é vinculado após a mesclagem.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -969,7 +973,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>access</td> 
-   <td>Controla o acesso de usuários ao conteúdo de um contêiner como um subformulário.</td> 
+   <td>Controla o acesso do usuário ao conteúdo de um objeto de contêiner, como um subformulário.</td> 
    <td>Para itens individuais no exclgrp, ele sempre retorna aberto. </td> 
   </tr> 
   <tr> 
@@ -983,7 +987,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
    <td>Nenhum</td> 
   </tr> 
   <tr> 
-   <td>selectedMember</td> 
+   <td>seletedMember</td> 
    <td>Retorna o membro selecionado de um grupo de exclusão.</td> 
    <td>Nenhum</td> 
   </tr> 
@@ -994,13 +998,13 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>calculate</td> 
-   <td>O objeto calculate controla o cálculo do valor do campo.<br /> </td> 
+   <td>O objeto calculate controla o cálculo do valor de um campo.<br /> </td> 
    <td>Nenhum</td> 
   </tr> 
  </tbody> 
 </table>
 
-## arc {#arc}
+## arco {#arc}
 
 <table> 
  <tbody> 
@@ -1063,7 +1067,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>x</td> 
-   <td>Determina a coordenada x de um determinado objeto de design de formulário em relação ao objeto pai.</td> 
+   <td>Determina a coordenada X de um determinado objeto de design de formulário em relação ao objeto pai.</td> 
    <td> 
     <ul> 
      <li>A propriedade coordenada x (x) não é compatível com área de página e área de conteúdo. </li> 
@@ -1090,7 +1094,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
   </tr> 
   <tr> 
    <td>pagecontent</td> 
-   <td>Recupera tipos de objetos de design de formulário de determinada página de formulário.</td> 
+   <td>Recupera tipos de objetos de design de formulário de uma página especificada de um formulário.</td> 
    <td>Nenhum</td> 
   </tr> 
   <tr> 
@@ -1105,7 +1109,7 @@ As propriedades do JavaScript, FormCalc e os métodos suportados em formulários
  </tbody> 
 </table>
 
-## items {#items}
+## itens {#items}
 
 | **Propriedade** | **Descrição** | **Exceção** |
 |---|---|---|
@@ -1183,7 +1187,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
    1. Contagem()
    1. Floor()
    1. Max()
-   1. Mínimo()
+   1. Mín()
    1. Mod()
    1. Round()
    1. Soma()
@@ -1207,7 +1211,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
 
 1. **Funções financeiras**
 
-   1. Apr()
+   1. Abr()
    1. Cterm()
    1. Fv()
    1. Ipmt()
@@ -1223,20 +1227,20 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
    1. Choose()
    1. If()
    1. Oneof()
-   1. Within()
+   1. Dentro()
 
 1. **Funções de string**
 
    1. Em()
    1. Concat()
-   1. À esquerda()
+   1. Esquerda()
    1. Len()
    1. Lower()
    1. Ltrim()
    1. Substituir()
-   1. Direito()
+   1. Direita()
    1. Rtrim()
-   1. Space()
+   1. Espaço()
    1. Stuff()
    1. Substr()
    1. Upper()
@@ -1267,7 +1271,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
   </tr> 
   <tr> 
    <td>app.beep()</td> 
-   <td>Faz com que o sistema emita um som.</td> 
+   <td>Faz com que o sistema reproduza um som.</td> 
    <td>Nenhuma ação é executada.</td> 
   </tr> 
   <tr> 

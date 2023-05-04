@@ -7,7 +7,8 @@ breadcrumb-title: Guia do Communities
 user-guide-description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.
 feature: Communities
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 9%
@@ -16,6 +17,7 @@ ht-degree: 9%
 
 
 # Guia do usuário do AEM 6.4 Communities {#communities}
+
 
 + [Visão geral do AEM Communities](home.md)
 + Introdução ao AEM Communities {#introduction}

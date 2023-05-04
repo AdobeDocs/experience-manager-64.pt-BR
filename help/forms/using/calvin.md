@@ -1,30 +1,33 @@
 ---
 title: Automatizar o teste de formulários adaptáveis
-seo-title: Automatizar o teste de formulários adaptáveis
+seo-title: Automate testing of adaptive forms
 description: Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes de interface diretamente no navegador da Web para testar completamente seus formulários adaptáveis.
-seo-description: Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes de interface diretamente no navegador da Web para testar completamente seus formulários adaptáveis.
+seo-description: Using Calvin you can create test cases in CRXDE and run UI tests directly in the web browser to thoroughly test your adaptive forms.
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 1%
+source-wordcount: '1289'
+ht-degree: 2%
 
 ---
 
-
 # Automatizar o teste de formulários adaptáveis {#automate-testing-of-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
 Os formulários adaptáveis são parte integrante das interações do cliente. É importante testar seus formulários adaptáveis com todas as alterações feitas neles, por exemplo, ao rolar um novo pacote de correções ou alterar uma regra no formulário. Entretanto, o teste funcional de formulários adaptáveis e cada campo neles pode ser entediante.
 
-O Calvin permite automatizar o teste de seus formulários adaptáveis no navegador da Web. Calvin utiliza a interface do usuário do [Hobbes](/help/sites-developing/hobbes.md) para executar os testes e fornece as seguintes ferramentas:
+O Calvin permite automatizar o teste de seus formulários adaptáveis no navegador da Web. Calvin usa [Hobbes](/help/sites-developing/hobbes.md)A interface do usuário do para executar os testes e fornece as seguintes ferramentas:
 
 * Uma API JavaScript para criar testes.
 * Uma interface de usuário para executar testes.
@@ -58,7 +61,7 @@ Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes da i
    <td><p>Regras de expressão</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>As expressões estão associadas a objetos de formulário, como calculate, visível, executam scripts depois de sair de um campo, sendo executadas após executar as operações relevantes da interface do usuário?<br /> </li> 
+     <li>As expressões estão associadas a objetos de formulário, como calculate, visível, executam scripts depois de sair de um campo, sendo executadas após a execução das operações relevantes da interface do usuário?<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -72,7 +75,7 @@ Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes da i
    <td><p>Carregamento lento</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>Ao clicar em guias (ou em qualquer item de navegação de um painel), o HTML está sendo buscado no servidor de acordo com a configuração de carregamento lento?</li> 
+     <li>Ao clicar em guias (ou em qualquer item de navegação de um painel), o HTML está sendo obtido do servidor como configuração de carregamento lento?</li> 
     </ul></td> 
   </tr> 
   <tr> 
@@ -93,16 +96,16 @@ Antes de usar este artigo para criar seus casos de teste, você precisa saber o 
 * [APIs JavaScript do Hobbes](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [APIs do JavaScript do Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## Exemplo: Crie um conjunto de testes para um formulário adaptável usando Hobbes como estrutura de teste {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## Exemplo: Criar um conjunto de testes para um formulário adaptável usando Hobbes como estrutura de teste {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 O exemplo a seguir mostra a criação de um conjunto de testes para testar vários formulários adaptáveis. É necessário criar um caso de teste separado para cada formulário que deve ser testado. Ao seguir etapas semelhantes às seguintes e modificar o código JavaScript na etapa 11, você pode criar seu próprio conjunto de testes para testar seus formulários adaptáveis.
 
 1. Vá para o CRXDE Lite no navegador da Web: `https://[server]:[port]/crx/de`.
-1. Clique com o botão direito do mouse na subpasta /etc/clientlibs e clique em **[!UICONTROL Create > Create Node]**. Insira um nome (aqui afTestRegistration), especifique o tipo de nó como cq:ClientLibraryFolder e clique em **[!UICONTROL OK]**.
+1. Clique com o botão direito do mouse na subpasta /etc/clientlibs e clique em **[!UICONTROL Criar > Criar nó]**. Insira um nome (aqui afTestRegistration), especifique o tipo de nó como cq:ClientLibraryFolder e clique em **[!UICONTROL OK]**.
 
    A pasta clientlibs contém o aspecto de registro do seu aplicativo (JS e Init). É recomendável registrar todos os objetos dos conjuntos de teste Hobbes específicos a um formulário na pasta clientlibs.
 
-1. Especifique os seguintes valores de propriedade no nó recém-criado (aqui afTestRegistration) e clique em **[!UICONTROL Salvar Tudo]**. Essas propriedades ajudam o Hobbes a reconhecer a pasta como um teste. Para reutilizar essa biblioteca do cliente como uma dependência em outras bibliotecas do cliente, nomeie-a como granite.testing.calvin.tests.
+1. Especifique os seguintes valores de propriedade no nó recém-criado (aqui afTestRegistration) e clique em **[!UICONTROL Salvar tudo]**. Essas propriedades ajudam o Hobbes a reconhecer a pasta como um teste. Para reutilizar essa biblioteca do cliente como uma dependência em outras bibliotecas do cliente, nomeie-a como granite.testing.calvin.tests.
 
 <table> 
  <tbody> 
@@ -113,12 +116,12 @@ O exemplo a seguir mostra a criação de um conjunto de testes para testar vári
   </tr> 
   <tr> 
    <td><p>categorias</p> </td> 
-   <td><p>Sequência de caracteres[]</p> </td> 
+   <td><p>String[]</p> </td> 
    <td><p>granite.testing.hobbes.tests, granite.testing.calvin.tests</p> </td> 
   </tr> 
   <tr> 
    <td><p>dependências</p> </td> 
-   <td><p>Sequência de caracteres[]</p> </td> 
+   <td><p>String[]</p> </td> 
    <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td> 
   </tr> 
  </tbody> 
@@ -130,7 +133,7 @@ O exemplo a seguir mostra a criação de um conjunto de testes para testar vári
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e depois clique em **[!UICONTROL Create > Create File]**. Nomeie o arquivo js.txt e clique em **[!UICONTROL OK]**.
+1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e, em seguida, clique em **[!UICONTROL Criar > Criar arquivo]**. Nomeie o arquivo js.txt e clique em **[!UICONTROL OK]**.
 1. No arquivo js.txt, adicione o seguinte texto:
 
    ```
@@ -138,9 +141,9 @@ O exemplo a seguir mostra a criação de um conjunto de testes para testar vári
    js.txt
    ```
 
-1. Clique em **[!UICONTROL Salvar tudo]** e feche o arquivo js.txt.
-1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e clique em **[!UICONTROL Create > Create File]**. Nomeie o arquivo init.js e clique em **[!UICONTROL OK]**.
-1. Copie o seguinte código para o arquivo init.js e clique em **[!UICONTROL Salvar tudo]**:
+1. Clique em **[!UICONTROL Salvar tudo]** e então feche o arquivo js.txt.
+1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e clique em **[!UICONTROL Criar > Criar arquivo]**. Dê um nome ao arquivo init.js e clique em **[!UICONTROL OK]**.
+1. Copie o código a seguir para o arquivo init.js e clique em **[!UICONTROL Salvar tudo]**:
 
    ```
    (function(window, hobs) {
@@ -156,9 +159,9 @@ O exemplo a seguir mostra a criação de um conjunto de testes para testar vári
    }(window, window.hobs));
    ```
 
-   O código acima cria um conjunto de testes chamado **Adaptive Form - Demo Test**. Para criar um conjunto de teste com um nome diferente, altere o nome de acordo.
+   O código acima cria um conjunto de testes chamado **Formulário adaptável - Teste de demonstração**. Para criar um conjunto de teste com um nome diferente, altere o nome de acordo.
 
-1. Clique em **[!UICONTROL Criar]** > **Criar nó** para criar um nó na pasta clientlib para cada formulário que você deseja testar. Este exemplo usa um nó chamado **testForm** para testar um formulário adaptável chamado **testForm** `.`Especifique as seguintes propriedades e clique em **[!UICONTROL OK]**:
+1. Clique em **[!UICONTROL Criar]** > **Criar nó** para criar um nó na pasta clientlib para cada formulário que deseja testar. Esse exemplo usa um nó chamado **testForm** para testar um formulário adaptável chamado **testForm** `.`Especifique as seguintes propriedades e clique em **[!UICONTROL OK]**:
 
    * Nome: testForm (nome do formulário)
    * Tipo: cq:ClientLibraryFolder
@@ -167,8 +170,8 @@ O exemplo a seguir mostra a criação de um conjunto de testes para testar vári
 
    | **Propriedade** | **Tipo** | **Valor** |
    |---|---|---|
-   | categorias | Sequência de caracteres[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
-   | dependências | Sequência de caracteres[] | granite.testing.calvin.tests |
+   | categorias | String[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | dependências | String[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -176,9 +179,9 @@ O exemplo a seguir mostra a criação de um conjunto de testes para testar vári
 
    ![propriedades 2_testform](assets/2_testformproperties.png)
 
-1. Clique com o botão direito do mouse na pasta que você criou para o formulário de teste (aqui testForm) e selecione **[!UICONTROL Create > Create File]**. Nomeie o arquivo scriptingTest.js e adicione o seguinte código ao arquivo e clique em **[!UICONTROL Salvar tudo.]**
+1. Clique com o botão direito do mouse na pasta que você criou para o formulário de teste (aqui testForm) e selecione **[!UICONTROL Criar > Criar arquivo]**. Nomeie o arquivo scriptingTest.js, adicione o seguinte código ao arquivo e clique em **[!UICONTROL Salvar tudo.]**
 
-   Para usar o código a seguir para testar outro formulário adaptável, altere o caminho e o nome do formulário em **navigateTo** (linhas 11, 36 e 62) e os respectivos casos de teste. Para obter mais informações sobre APIs para testar diferentes aspectos de formulários e objetos de formulário, consulte [APIs Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Para usar o seguinte código para testar outro formulário adaptável, altere o caminho e o nome do formulário em **navigateTo** (linhas 11, 36 e 62) e os respectivos casos de teste. Para obter mais informações sobre APIs para testar diferentes aspectos de formulários e objetos de formulário, consulte [APIs do Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -272,7 +275,7 @@ O exemplo a seguir mostra a criação de um conjunto de testes para testar vári
     }(window, window.hobs));
    ```
 
-   O caso de teste é criado. Continue a executar o caso de teste para testar formulários adaptáveis por meio de Hobbes. Para obter etapas para executar os casos de teste, consulte [Executando testes em Testar sua interface do usuário usando testes automatizados](/help/sites-developing/hobbes.md).
+   O caso de teste é criado. Continue a executar o caso de teste para testar formulários adaptáveis por meio de Hobbes. Para obter as etapas para executar os casos de teste, consulte [Execução de testes em Testes da interface do usuário com testes automatizados](/help/sites-developing/hobbes.md).
 
 Você também pode instalar o pacote no arquivo anexado SampleTestPackage.zip para obter os mesmos resultados das etapas explicadas em Exemplo: Crie um conjunto de testes para um formulário adaptável usando Hobbes como estrutura de teste.
 
@@ -280,13 +283,13 @@ Você também pode instalar o pacote no arquivo anexado SampleTestPackage.zip pa
 
 ## Testes da interface de usuário com testes automatizados {#testing-your-ui-using-automated-tests}
 
-### Executando um único Test Suite {#running-a-single-test-suite}
+### Executando um único conjunto de testes {#running-a-single-test-suite}
 
 Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página é alterada à medida que os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
 
 Um ícone de marca de verificação indica um teste aprovado: ![marca de seleção](assets/checkmark.png)
 
-Um ícone &quot;X&quot; indica um teste com falha: ![cruz](assets/cross.png)
+Um ícone &quot;X&quot; indica um teste com falha: ![cross](assets/cross.png)
 
 Para executar um Test Suite:
 
@@ -337,4 +340,3 @@ As etapas para testar seus formulários adaptáveis de AEM são semelhantes às 
   </tr> 
  </tbody> 
 </table>
-

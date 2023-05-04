@@ -8,7 +8,8 @@ user-guide-title: Guia do Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '3721'
 ht-degree: 4%

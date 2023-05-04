@@ -4,14 +4,18 @@ seo-title: Developing AEM Components (Classic UI)
 description: A interface clássica usa o ExtJS para criar widgets que fornecem a aparência dos componentes. HTL não é a linguagem de script recomendada para o AEM.
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
 exl-id: 725e4f82-7019-4365-9c01-b5d95ea2a8fa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2427'
 ht-degree: 1%
 
 ---
 
 # Desenvolvimento de componentes AEM (interface clássica){#developing-aem-components-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A interface clássica usa o ExtJS para criar widgets que fornecem a aparência dos componentes. Devido à natureza desses widgets, há algumas diferenças entre a forma como os componentes interagem com a interface do usuário clássica e a [interface habilitada para toque](/help/sites-developing/developing-components.md).
 
@@ -266,7 +270,7 @@ Para criar o novo componente, usamos o componente de tempo de texto padrão como
    >A definição da caixa de diálogo depende da interface do usuário do :
    >
    >* Interface habilitada para toque: `textimage/cq:dialog`
-   >* Interface clássica: `textimage/dialog`
+   >* IU Clássica: `textimage/dialog`
 
 
 1. Edite os metadados do componente:

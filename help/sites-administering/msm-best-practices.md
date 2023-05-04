@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 feature: Multi Site Manager
 exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 43%
+source-wordcount: '1558'
+ht-degree: 42%
 
 ---
 
 # Práticas recomendadas do MSM{#msm-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Geral {#general}
 

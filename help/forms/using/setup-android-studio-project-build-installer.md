@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 7%
+source-wordcount: '626'
+ht-degree: 8%
 
 ---
 
 # Configure o projeto de estúdio do Android e crie o aplicativo Android {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Este artigo é para criar o aplicativo AEM Forms 6.3.1.1 e versões posteriores. Para criar um aplicativo a partir do código-fonte do código-fonte do AEM Forms App 6.3, consulte [Configure o projeto Eclipse e crie o aplicativo Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 

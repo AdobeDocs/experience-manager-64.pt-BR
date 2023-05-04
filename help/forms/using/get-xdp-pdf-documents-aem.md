@@ -1,8 +1,8 @@
 ---
 title: Obter documentos XDP e PDF no AEM Forms
-seo-title: Obter documentos XDP e PDF no AEM Forms
+seo-title: Getting XDP and PDF documents in AEM Forms
 description: O AEM Forms permite carregar formulários e ativos suportados para usar com formulários adaptáveis. Também é possível fazer o upload em massa de formulários e recursos relacionados como um ZIP.
-seo-description: O AEM Forms permite carregar formulários e ativos suportados para usar com formulários adaptáveis. Também é possível fazer o upload em massa de formulários e recursos relacionados como um ZIP.
+seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 0%
+source-wordcount: '703'
+ht-degree: 1%
 
 ---
 
 # Obter documentos XDP e PDF no AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
@@ -25,13 +29,13 @@ ht-degree: 0%
 
 * Modelos de formulário (formulários XFA)
 * PDF forms
-* Documento (documentos PDF simples)
+* Documento (documentos de PDF simples)
 
-Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode fazer upload de um ativo do tipo `Resource`, somente ao lado de um formulário XFA em um arquivo ZIP.
+Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode fazer upload de um ativo do tipo `Resource`, somente com um formulário XFA em um arquivo ZIP.
 
 >[!NOTE]
 >
->Certifique-se de que você seja um membro do grupo `form-power-users` para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar membro do grupo.
+>Certifique-se de que você é um membro do `form-power-users` para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar membro do grupo.
 
 ## Upload de formulários {#uploading-forms}
 
@@ -75,7 +79,7 @@ Por padrão, o modo protegido está ativado. Se necessário, você pode desativa
 
 No AEM Forms, um template de formulário XFA pode ser referenciado por um formulário adaptável ou outro template de formulário XFA. Além disso, um template pode se referir a um recurso ou outro template XFA.
 
-Um formulário adaptável que se refere a um XFA tem seus campos vinculados aos campos disponíveis no XFA. Ao atualizar um modelo de formulário, o formulário adaptável associado tenta sincronizar com o XFA. Para obter mais detalhes, consulte [Sincronizar formulários adaptáveis com o XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md) associado.
+Um formulário adaptável que se refere a um XFA tem seus campos vinculados aos campos disponíveis no XFA. Ao atualizar um modelo de formulário, o formulário adaptável associado tenta sincronizar com o XFA. Para obter mais detalhes, consulte [Sincronização de formulários adaptáveis com o XFA associado](/help/forms/using/synchronizing-adaptive-forms-xfa.md).
 
 Remover um modelo de formulário corrompe o formulário adaptável dependente ou o modelo de formulário. Esse formulário adaptável às vezes é chamado informalmente de formulário sujo. Na interface do usuário do AEM Forms, você pode encontrar os formulários sujos das duas maneiras a seguir.
 
@@ -85,6 +89,6 @@ Remover um modelo de formulário corrompe o formulário adaptável dependente ou
 
 ![Aviso para um formulário adaptável fora de sincronia após atualizar o XFA associado](assets/dirtyaf.png)
 
-Um sinalizador é mantido para indicar se um formulário adaptável está sujo. Essas informações estão disponíveis na página de propriedades do formulário, juntamente com os metadados do formulário. Somente para formulários adaptáveis sujos, uma propriedade de metadados `Model Refresh` exibe `Recommended` valor.
+Um sinalizador é mantido para indicar se um formulário adaptável está sujo. Essas informações estão disponíveis na página de propriedades do formulário, juntamente com os metadados do formulário. Apenas para formulários adaptáveis sujos, uma propriedade de metadados `Model Refresh` exibições `Recommended` valor.
 
 ![Indicação de um formulário adaptável que está fora de sincronia com o modelo XFA](assets/model-refresh.png)

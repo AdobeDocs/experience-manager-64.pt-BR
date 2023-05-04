@@ -1,24 +1,27 @@
 ---
 title: Integração da interface Criar correspondência com o portal personalizado
-seo-title: Integração da interface Criar correspondência com o portal personalizado
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Saiba como integrar criar interface de usuário de correspondência com seu portal personalizado
-seo-description: Saiba como integrar criar interface de usuário de correspondência com seu portal personalizado
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 4ae9c5fb-bb9d-46d8-be84-455f386ab443
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 4%
+source-wordcount: '514'
+ht-degree: 5%
 
 ---
 
-
 # Integração da interface Criar correspondência com o portal personalizado {#integrating-create-correspondence-ui-with-your-custom-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
@@ -45,11 +48,11 @@ Se o portal tiver o nome do modelo Carta em mãos, o URL poderá ser\
 >
 >Antes de chamar o aplicativo Criar correspondência , salve e faça upload dos dados para chamar a interface do usuário Criar correspondência no dataURL fornecido. Isso pode ser feito pelo próprio portal personalizado ou por outro processo back-end.
 
-## Invocação baseada em dados em linha {#inline-data-based-invocation}
+## Invocação embutida baseada em dados {#inline-data-based-invocation}
 
-Outra (e uma maneira mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente pressionar o URL em `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, enquanto envia os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora é possível transmitir os dados XML para o aplicativo Create Correspondence em linha (como parte da mesma solicitação, usando o parâmetro cmData ), que não era possível/ideal na abordagem anterior.
+Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente pressionar o URL em `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, ao enviar os parâmetros e dados para chamar o aplicativo Create Correspondence como uma solicitação do POST (ocultando-os do usuário final). Isso também significa que agora é possível transmitir os dados XML para o aplicativo Create Correspondence em linha (como parte da mesma solicitação, usando o parâmetro cmData ), que não era possível/ideal na abordagem anterior.
 
-### Parâmetros para especificar a letra {#parameters-for-specifying-letter}
+### Parâmetros para especificação de carta {#parameters-for-specifying-letter}
 
 <table> 
  <tbody>
@@ -60,17 +63,17 @@ Outra (e uma maneira mais segura) de chamar o aplicativo Criar correspondência 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
-   <td>Sequência de caracteres</td> 
+   <td>String</td> 
    <td>O identificador da instância da carta.</td> 
   </tr>
   <tr>
    <td>cmLetterName</td> 
-   <td>Sequência de caracteres</td> 
+   <td>String</td> 
    <td><p>O identificador do modelo de carta. </p> <p>Se houver várias letras CM com o mesmo nome em um servidor, o uso do parâmetro cmLetterName no URL acionará um erro "Existem várias letras com o nome". Nesse caso, use o parâmetro cmLetterId no URL em vez de cmLetterName.</p> </td> 
   </tr>
   <tr>
    <td>cmLetterId</td> 
-   <td>Sequência de caracteres</td> 
+   <td>String</td> 
    <td>O nome do modelo Carta.</td> 
   </tr>
  </tbody>
@@ -94,7 +97,7 @@ A ordem dos parâmetros na tabela especifica a preferência dos parâmetros usad
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
-   <td>Sequência de caracteres</td> 
+   <td>String</td> 
    <td>Uso de dados xml disponíveis em Instância de Carta.</td> 
   </tr>
   <tr>

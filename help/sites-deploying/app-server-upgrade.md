@@ -1,8 +1,8 @@
 ---
 title: Etapas de atualização para instalações do servidor de aplicativos
-seo-title: Etapas de atualização para instalações do servidor de aplicativos
+seo-title: Upgrade Steps for Application Server Installations
 description: Saiba como atualizar instâncias de AEM que são implantadas pelos Servidores de Aplicativos.
-seo-description: Saiba como atualizar instâncias de AEM que são implantadas pelos Servidores de Aplicativos.
+seo-description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 1%
 
 ---
 
-
 # Etapas de atualização para instalações do servidor de aplicativos{#upgrade-steps-for-application-server-installations}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos e implicam que você tenha uma versão funcional do AEM já implantada. O procedimento destina-se a documentar atualizações realizadas de **AEM versão 5.6 para 6.3**.
+Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos e implicam que você tenha uma versão funcional do AEM já implantada. O procedimento destina-se a documentar as atualizações realizadas a partir de **AEM versão 5.6 para 6.3**.
 
-1. Primeiro, inicie o JBoss. Na maioria das situações, é possível fazer isso executando o script de inicialização `standalone.sh` executando esse comando a partir do terminal:
+1. Primeiro, inicie o JBoss. Na maioria das situações, é possível fazer isso executando o `standalone.sh` script de inicialização, executando este comando a partir do terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -71,9 +74,9 @@ Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos
 
 1. Remova os arquivos e pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
 
-   * A pasta **launchpad/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
-   * O arquivo **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * O arquivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * O **pasta de inicialização/inicialização**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * O **arquivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * O **Arquivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copie o armazenamento de segmentos recém-migrado para o local adequado:
 
@@ -87,7 +90,7 @@ Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. Em seguida, é necessário criar a pasta que conterá as configurações OSGi que serão usadas com a nova instância atualizada. Mais especificamente, uma pasta chamada install precisa ser criada em **crx-quickstart**.
+1. Em seguida, é necessário criar a pasta que conterá as configurações do OSGi que serão usadas com a nova instância atualizada. Mais especificamente, uma pasta chamada install precisa ser criada em **crx-quickstart**.
 
 1. Agora, crie o armazenamento de nó e o armazenamento de dados que serão usados com o AEM 6.3. Você pode fazer isso criando dois arquivos com os seguintes nomes em **crx-quickstart\install**:
 
@@ -103,7 +106,7 @@ Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos
 
       `customBlobStore=true`
 
-   * Em seguida, adicione as seguintes linhas em **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+   * Em seguida, adicione as seguintes linhas a **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
 
       ```
       path=./crx-quickstart/repository/datastore
@@ -122,7 +125,7 @@ Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo `web.xml` para alterar os modos de execução. Para localizar o local onde estão definidos no XML, procure pela string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha de código, que por padrão é definida como author:
+1. Depois que o conteúdo tiver sido extraído, vá para a variável **WEB-INF** e edite a `web.xml` para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a variável `sling.run.modes` string. Depois de encontrá-lo, altere os modos de execução na próxima linha de código, que por padrão é definida como author:
 
    ```shell
    <param-value >author</param-value>
@@ -150,4 +153,3 @@ Todos os exemplos neste procedimento usam o JBoss como o Servidor de Aplicativos
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
    ```
-

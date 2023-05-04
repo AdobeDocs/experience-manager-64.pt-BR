@@ -1,20 +1,24 @@
 ---
 title: Pesquisar ativos no AEM
-description: Saiba como localizar os ativos necessários em [!DNL Experience Manager] usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
+description: Saiba como encontrar os ativos necessários no [!DNL Experience Manager] usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '585'
+ht-degree: 3%
 
 ---
 
-# Pesquisar ativos em [!DNL Experience Manager] {#search-assets-in-aem}
+# Pesquisar ativos no [!DNL Experience Manager] {#search-assets-in-aem}
 
-Saiba como encontrar os ativos necessários em [!DNL Experience Manager] usando o painel Filtros e como usar os ativos exibidos na pesquisa.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Saiba como encontrar os ativos necessários no [!DNL Experience Manager] usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 
 Use o painel Filtros para pesquisar ativos, pastas, tags e metadados. Você pode pesquisar partes de uma string usando o asterisco curinga.
 
@@ -23,7 +27,7 @@ O painel Filtros fornece várias opções para procurar ativos e pastas de vári
 Você pode pesquisar com base nas seguintes opções (predicados):
 
 * Tipo de arquivo
-* Tamanho de arquivo
+* Tamanho do arquivo
 * Nome do campo
 * Última modificação
 * Status
@@ -33,9 +37,9 @@ Você pode pesquisar com base nas seguintes opções (predicados):
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-Você pode personalizar o painel Filtros e adicionar/remover predicados de pesquisa usando [facetas de pesquisa](search-facets.md). Para exibir o painel Filtros, execute estas etapas:
+Você pode personalizar o painel Filtros e adicionar/remover predicados de pesquisa usando [aspectos de pesquisa](search-facets.md). Para exibir o painel Filtros, execute estas etapas:
 
-1. Na interface do usuário do Assets, toque/clique em ![search_icon](assets/search_icon.png) na barra de ferramentas para exibir a caixa Omnisearch.
+1. Na interface do usuário do Assets, toque/clique ![search_icon](assets/search_icon.png) na barra de ferramentas para exibir a caixa Omnisearch .
 1. Insira o termo de pesquisa e pressione Enter. Como alternativa, basta pressionar Enter sem inserir qualquer termo de pesquisa. Não insira espaços à esquerda; caso contrário, a pesquisa não funcionará.
 
 1. Toque/clique no ícone de Navegação global. O painel Filtros é exibido.
@@ -50,7 +54,7 @@ Você pode personalizar o painel Filtros e adicionar/remover predicados de pesqu
 
 O painel Filtros ajuda a adicionar mais granularidade à sua experiência de pesquisa e torna a funcionalidade de pesquisa mais versátil. Você pode detalhar facilmente até o nível de detalhes desejado.
 
-Por exemplo, se estiver procurando uma imagem, use o predicado **[!UICONTROL Tipo de arquivo]** para escolher se deseja uma imagem de bitmap ou uma imagem vetorial.
+Por exemplo, se você estiver procurando uma imagem, use a variável **[!UICONTROL Tipo de arquivo]** predicado para escolher se deseja uma imagem de bitmap ou uma imagem vetorial.
 
 ![image_type](assets/image_type.png)
 
@@ -58,13 +62,13 @@ Você pode limitar ainda mais o escopo da pesquisa especificando o tipo MIME da 
 
 ![mime_type](assets/mime_type.png)
 
-Da mesma forma, ao pesquisar documentos, é possível especificar o formato, por exemplo PDF ou MS Word.
+Da mesma forma, ao pesquisar documentos, você pode especificar o formato, por exemplo, PDF ou MS Word.
 
 ![documentos](assets/documents.png)
 
 ## Pesquisar com base no tamanho do arquivo {#search-based-on-file-size}
 
-Use o predicado **Tamanho do arquivo** para procurar ativos com base em seu tamanho. Você pode especificar os limites inferiores e superiores para o intervalo de tamanho para restringir sua pesquisa. Você também pode especificar a unidade de medida, por exemplo Kilobytes, Megabytes e assim por diante.
+Use o **Tamanho do arquivo** predicado para procurar ativos com base em seu tamanho. Você pode especificar os limites inferiores e superiores para o intervalo de tamanho para restringir sua pesquisa. Você também pode especificar a unidade de medida, por exemplo Kilobytes, Megabytes e assim por diante.
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
@@ -80,13 +84,13 @@ Você também pode usar as seguintes opções para alcançar um nível mais alto
 
 ## Pesquisar com base no status {#search-based-on-status}
 
-Use o predicado **Status** para pesquisar ativos com base em vários tipos de status, como Publicar, Aprovação, Check-out e Expiração.
+Use o **Status** predicado para pesquisar ativos com base em vários tipos de status, como Publicar, Aprovação, Check-out e Expiração.
 
 ![status](assets/status.png)
 
 Por exemplo, ao monitorar a publicação de ativos, você pode usar a opção apropriada para pesquisar por quais ativos são publicados.
 
-![Publicar](assets/publish.png)
+![publicação](assets/publish.png)
 
 Ao monitorar o status de revisão de ativos, use a opção apropriada para descobrir quais ativos estão aprovados ou quais ativos estão pendentes de aprovação.
 
@@ -94,7 +98,7 @@ Ao monitorar o status de revisão de ativos, use a opção apropriada para desco
 
 ## Pesquisar com base nos dados de insights {#search-based-on-insights-data}
 
-Use o predicado **Insights** para pesquisar ativos com base em suas estatísticas de uso obtidas de vários aplicativos Creative. Os dados de uso são agrupados nas seguintes categorias:
+Use o **Insights** predicado para pesquisar ativos com base em suas estatísticas de uso obtidas de vários aplicativos Creative. Os dados de uso são agrupados nas seguintes categorias:
 
 * Pontuação de uso
 * Impressões

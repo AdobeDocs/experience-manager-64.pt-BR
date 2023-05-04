@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 exl-id: da0e076b-afb7-4ebe-8e5e-48c00750e453
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 6%
+source-wordcount: '594'
+ht-degree: 12%
 
 ---
 
 # Implementação de um componente de reação para SPA{#implementing-a-react-component-for-spa}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar com facilidade o conteúdo no AEM para um site criado usando estruturas SPA.
 
@@ -37,9 +41,9 @@ Este artigo ilustra o exemplo do componente meteorológico no SPA de amostra do 
 Familiarize-se com o [estrutura de um pedido SPA para AEM](/help/sites-developing/spa-getting-started-react.md) antes de ler este artigo.
 
 >[!CAUTION]
->Este documento usa o [Aplicativo de diário We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) apenas para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
+>Este documento usa o [Aplicativo de diário We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) apenas para fins de demonstração. Ele não deve ser utilizado ao trabalhar em projetos.
 >
->Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+>Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
 
 ## O Componente Tempo {#the-weather-component}
 

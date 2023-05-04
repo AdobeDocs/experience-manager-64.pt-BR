@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3496'
 ht-degree: 0%
 
 ---
 
 # Configurações do OSGi{#osgi-configuration-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 [OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia de AEM. É usado para controlar os pacotes compostos de AEM e sua configuração.
 

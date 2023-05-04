@@ -1,23 +1,26 @@
 ---
 title: Tabelas em formulários adaptáveis
-seo-title: Tabelas em formulários adaptáveis
-description: 'O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que são responsivos a layouts móveis e também permitem o uso de componentes de tabela XDP. '
-seo-description: 'O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que são responsivos a layouts móveis e também permitem o uso de componentes de tabela XDP. '
+seo-title: Tables in adaptive forms
+description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que são responsivos a layouts móveis e também permitem o uso de componentes de tabela XDP.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 3269aab9-ac39-4adc-9a6b-9fe9f4276b29
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2176'
 ht-degree: 0%
 
 ---
 
-
 # Tabelas em formulários adaptáveis {#tables-in-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O uso de tabelas é uma maneira eficiente, simplificada e organizada de apresentar dados complexos. Ajuda os usuários a identificar informações facilmente e fornecer entradas em uma disposição ordenada de linhas e colunas. A maioria das formas de serviços financeiros e organizações governamentais requer grandes tabelas de dados para colocar números e realizar cálculos.
 
@@ -33,7 +36,7 @@ O AEM Forms fornece um componente de Tabela no navegador de componentes na barra
 * Suporte para adicionar linhas ou células usando elementos de tipo complexo XSD
 * Mesclar dados de um arquivo XML
 
-## Crie uma tabela {#create-a-table}
+## Criar uma tabela {#create-a-table}
 
 Para criar uma tabela, arraste e solte o componente Tabela do navegador de componentes no sidekick no formulário adaptável. Por padrão, a tabela contém duas colunas e três linhas, incluindo a linha de cabeçalho.
 
@@ -41,7 +44,7 @@ Para criar uma tabela, arraste e solte o componente Tabela do navegador de compo
 
 ### Sobre células de cabeçalho e corpo {#about-header-and-body-cells}
 
-As células de cabeçalho são campos de texto. Para alterar o rótulo de um cabeçalho, clique com o botão direito do mouse na célula de cabeçalho e clique em **Edit**. Na caixa de diálogo Editar, atualize o rótulo no campo **Value** e clique em **OK**.
+As células de cabeçalho são campos de texto. Para alterar o rótulo de um cabeçalho, clique com o botão direito do mouse na célula de cabeçalho e clique em **Editar**. Na caixa de diálogo Editar, atualize o rótulo na **Valor** e clique em **OK**.
 
 Por padrão, as células de corpo são caixas de texto. Você pode substituir uma célula de corpo por qualquer outro componente de formulários adaptáveis disponível no sidekick, como uma caixa numérica, um seletor de data ou uma lista suspensa.
 
@@ -49,7 +52,7 @@ Por exemplo, a primeira linha de corpo na tabela a seguir inclui a caixa de text
 
 ![tipos de célula de linha](assets/row-cell-types.png)
 
-Você pode unir duas ou mais células de corpo selecionando as células que deseja mesclar, clique com o botão direito do mouse e selecione **Merge**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse e selecionando **Dividir células**.
+Você pode unir duas ou mais células de corpo selecionando as células que deseja mesclar, clique com o botão direito do mouse e selecione **Mesclar**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse e selecionando **Dividir células**.
 
 ### Adicionar, excluir, mover linhas e colunas {#add-delete-move-rows-and-columns}
 
@@ -73,9 +76,9 @@ O menu suspenso da linha também fornece a operação Editar para editar proprie
 
 Execute as seguintes etapas para definir a largura da coluna de uma tabela:
 
-1. Na guia **[!UICONTROL Content]**, toque no componente **[!UICONTROL Table]** e toque no ícone Configurar (![Configurar](assets/configure-icon.svg)).
+1. No **[!UICONTROL Conteúdo]** toque na guia **[!UICONTROL Tabela]** e toque em Configurar (![Configurar](assets/configure-icon.svg))ícone.
 
-1. Insira a lista de valores separada por vírgulas no campo **[!UICONTROL Largura da Coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificar 2,4,6 como o valor no campo **[!UICONTROL Largura da coluna]**, resulta na configuração da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 dado que a largura da primeira coluna corresponde a um sexto da largura da tabela. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela e 6/12 define a largura da terceira coluna como metade da largura da tabela.
+1. Insira a lista de valores separada por vírgulas no **[!UICONTROL Largura da coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificando 2,4,6 como o valor na variável **[!UICONTROL Largura da coluna]** O campo resulta na configuração da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 dado que a largura da primeira coluna corresponde a um sexto da largura da tabela. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela e 6/12 define a largura da terceira coluna como metade da largura da tabela.
 
 ### Adicionar descrição da tabela {#add-table-description}
 
@@ -89,9 +92,9 @@ Você pode adicionar uma descrição da tabela para explicar como as informaçõ
 
 Você pode definir o estilo de uma tabela usando o modo Estilo na barra de ferramentas da página. Execute as seguintes etapas para alternar para o modo de estilo e editar o estilo da tabela
 
-1. Na barra de ferramentas da página, antes de Visualizar, toque em ![lista suspensa da tela](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra de ferramentas da página, antes de Visualizar, toque em ![lista suspensa de tela](assets/canvas-drop-down.png) > **Estilo**.
 
-1. Na barra lateral, selecione a tabela e toque no botão de edição ![edit-button](assets/edit-button.png).
+1. Na barra lateral, selecione a tabela e toque no botão Editar ![botão editar](assets/edit-button.png).
 
    Você pode ver as propriedades de estilo na barra lateral.
 
@@ -109,7 +112,7 @@ As tabelas fornecem suporte pronto para uso para adicionar ou excluir dinamicame
 1. Na guia Repetir configurações , especifique as contagens mínima e máxima para limitar o número de linhas na tabela.
 1. Clique em **Concluído**.
 
-No tempo de execução, você verá os botões **`+`** e *`-`* para adicionar ou excluir uma linha.
+No tempo de execução, você verá **`+`** e *`-`* botões para adicionar ou excluir uma linha.
 
 ![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
 
@@ -131,15 +134,15 @@ Embora as tabelas e as linhas sejam compatíveis apenas com expressões de visib
 >Se o script XFA change/exit também for aplicado ao mesmo campo, o script XFA change/exit será executado antes do script Value Commit.
 
 * **Calcular expressões**: para calcular automaticamente o valor de um campo.
-* **Expressões** de validação: para validar um campo.
-* **Expressões** de acesso: para ativar/desativar um campo.
-* **Expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
+* **Expressões de validação**: para validar um campo.
+* **Expressões de acesso**: para ativar/desativar um campo.
+* **Expressão de visibilidade**: para controlar a visibilidade de um campo e painel.
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente de edição. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente .
 
 Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
-## Layouts móveis {#mobile-layouts}
+## Layouts para dispositivos móveis {#mobile-layouts}
 
 Tabelas em formulários adaptáveis fornecem experiência inigualável em dispositivos móveis devido a seus layouts fluidos e responsivos. O AEM Forms oferece dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colapsíveis.
 
@@ -149,13 +152,13 @@ Tabelas em formulários adaptáveis fornecem experiência inigualável em dispos
 
 No layout Cabeçalhos à esquerda, o cabeçalho na tabela é transposto à esquerda com apenas uma célula aparecendo em relação a um cabeçalho. Cada linha neste layout aparece como uma seção distinta. As imagens a seguir comparam uma tabela em um desktop com aquela em um dispositivo móvel.
 
-![](assets/desktopview.png)
-**desktopviewFigure:** *Exibição de desktop de uma tabela com Cabeçalho no layout esquerdo*
+![desktopview](assets/desktopview.png)
+**Figura:** *Exibição de desktop de uma tabela com Cabeçalho no layout esquerdo*
 
-![](assets/headersontheleft.png)
-**headersontheleftFigure:** *Exibição móvel de uma tabela com Cabeçalho no layout esquerdo*
+![headersontheleft](assets/headersontheleft.png)
+**Figura:** *Exibição móvel de uma tabela com Cabeçalho no layout esquerdo*
 
-### Layout de colunas recolhível {#collapsible-columns-layout}
+### Layout de colunas recolhidas {#collapsible-columns-layout}
 
 No layout Collapsible column , as colunas na tabela são recolhidas para mostrar uma ou duas colunas, dependendo do tamanho do dispositivo, enquanto outras colunas são recolhidas. Você pode clicar no ícone recolher/expandir para exibir outras colunas na tabela.
 
@@ -165,11 +168,11 @@ No layout Collapsible column , as colunas na tabela são recolhidas para mostrar
 
 As imagens a seguir comparam a aparência de uma tabela em um dispositivo com colunas recolhidas e expandidas.
 
-![colapsed-](assets/collapsed-column.png)
-**columnFigure:** *Colapsas colunas de uma tabela com apenas duas colunas exibidas em um dispositivo móvel*
+![coluna recolhida](assets/collapsed-column.png)
+**Figura:** *Colunas recolhidas de uma tabela com apenas duas colunas exibidas em um dispositivo móvel*
 
-![collapsible_](assets/collapsible_column.png)
-**columnFigure:** *coluna expandida de uma tabela em um dispositivo móvel*
+![coluna_recolhível](assets/collapsible_column.png)
+**Figura:** *Coluna expandida de uma tabela em um dispositivo móvel*
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
@@ -182,10 +185,10 @@ Vamos ver o exemplo da seguinte tabela de resumo de transação bancária que qu
 Neste exemplo, a propriedade Element name para:
 
 * a linha é **Linha1**
-* a célula de corpo em Transaction date é **tableItem1**
-* a célula de corpo sob Descrição é **tableItem2**
-* a célula de corpo sob Tipo de transação é **type**
-* a célula de corpo sob Quantia em USD é **tableItem3**
+* a célula de corpo em Data de transação é **tableItem1**
+* a célula de corpo em Descrição é **tableItem2**
+* a célula de corpo em Tipo de transação é **type**
+* a célula do corpo em Quantia em USD é **tableItem3**
 
 O arquivo XML que contém dados no seguinte formato:
 
@@ -245,9 +248,9 @@ O arquivo XML que contém dados no seguinte formato:
 </afData>
 ```
 
-No XML de amostra, os dados de uma linha são definidos pelas tags `<Row1>` , que é o nome do elemento para a linha na tabela. Na tag `<Row1>` , os dados de cada célula são definidos na tag para o nome do elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>` e `<type>`.
+No XML de amostra, os dados de uma linha são definidos pela variável `<Row1>` tags , que é o nome do elemento para a linha na tabela. No `<Row1>` , os dados de cada célula são definidos dentro da tag para o nome do elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
 
-Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o formulário adaptável contendo a tabela para o local XML absoluto com wcmmode desabilitado. Por exemplo, se o formulário adaptável estiver em *http://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados for salvo em *C:/myTransactions/bankSummary.xml*, você poderá exibir a tabela com dados no seguinte URL:
+Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o formulário adaptável contendo a tabela para o local XML absoluto com wcmmode desabilitado. Por exemplo, se o formulário adaptável estiver em *http://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados é salvo em *C:/myTransactions/bankSummary.xml*, é possível exibir a tabela com dados no seguinte URL:
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
@@ -279,4 +282,3 @@ Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo
 * Cada célula de corpo em uma tabela padrão tem um nome de elemento predefinido associado a ela. Se outra tabela for adicionada no formulário adaptável, as células de corpo padrão na nova tabela terão o mesmo nome de elemento que na primeira tabela. Nesse cenário, os dados gerados ao enviar o formulário incluirão dados nas células de corpo padrão de apenas uma das tabelas. Portanto, renomeie os nomes de elemento das células de corpo padrão para mantê-las exclusivas nas tabelas e evitar perda de dados.
 
    Observe que isso se aplica somente às células de corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, o gerará automaticamente nomes de elemento exclusivos para células de corpo não padrão.
-

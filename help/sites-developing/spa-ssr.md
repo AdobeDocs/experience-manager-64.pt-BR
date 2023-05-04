@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1807'
 ht-degree: 2%
 
 ---
 
 # Renderização de SPA e do servidor{#spa-and-server-side-rendering}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >O recurso Editor de aplicativo de página única (SPA) requer [AEM 6.4 service pack 2](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/sp-release-notes.html) ou mais recente.

@@ -1,20 +1,24 @@
 ---
 title: Classificação aprimorada de ativos no AEM
-description: Saiba como o  [!DNL Experience Manager] Assets implanta a classificação no lado do servidor para classificar ativos de pastas ou uma consulta de pesquisa de uma só vez, em vez de classificá-los em lotes no lado do cliente.
+description: Saiba como [!DNL Experience Manager] Os ativos implantam a classificação do lado do servidor para classificar os ativos da pasta ou uma consulta de pesquisa de uma só vez, em vez de classificá-los em lotes no lado do cliente.
 contentOwner: AG
 feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '469'
+ht-degree: 4%
 
 ---
 
 # Classificação aprimorada de ativos em [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Saiba como o [!DNL Experience Manager] Assets implanta a classificação do lado do servidor para classificar ativos de pasta ou uma consulta de pesquisa de uma só vez, em vez de classificá-los em lotes no lado do cliente.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Saiba como [!DNL Experience Manager] Os ativos implantam a classificação do lado do servidor para classificar os ativos da pasta ou uma consulta de pesquisa de uma só vez, em vez de classificá-los em lotes no lado do cliente.
 
 O recurso de pesquisa do Adobe Experience Manager Assets é aprimorado para classificar com eficiência um grande número de ativos na exibição em lista de pastas e nas páginas de resultados da pesquisa. Também é possível classificar as entradas da linha do tempo.
 
@@ -28,7 +32,7 @@ O recurso de pesquisa do Adobe Experience Manager Assets é aprimorado para clas
 * Status
 * Tipo
 * Tamanho
-* Classificação
+* Avaliação
 * Data de modificação
 * Data de publicação
 * Uso
@@ -51,7 +55,7 @@ O recurso de pesquisa do Adobe Experience Manager Assets é aprimorado para clas
 
 >[!NOTE]
 >
->Para classificar os valores nas colunas `Name` ou `Title`, sobreponha `/libs/dam/gui/content/commons/availablecolumns` e altere o valor de `sortable` para `True`.
+>Para classificar os valores na variável `Name` ou `Title`colunas, sobreposição `/libs/dam/gui/content/commons/availablecolumns` e alterar o valor de `sortable` para `True`.
 
 ## Classificação de ativos em resultados de pesquisa {#sorting-assets-in-search-results}
 
@@ -86,6 +90,6 @@ Você pode classificar os resultados da pesquisa com base nos seguintes campos:
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Clique/toque no ícone **[!UICONTROL Sort]** ao lado do rótulo **[!UICONTROL Date]**. Com base em sua seleção, as anotações são listadas na ordem cronológica/inversa em que foram adicionadas ao ativo.
+1. Clique/toque no **[!UICONTROL Classificar]** ícone ao lado do **[!UICONTROL Data]** rótulo. Com base em sua seleção, as anotações são listadas na ordem cronológica/inversa em que foram adicionadas ao ativo.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)

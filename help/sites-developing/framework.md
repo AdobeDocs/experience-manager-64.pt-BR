@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 feature: Tagging
 exl-id: bae592db-dc36-409f-b841-0582c464c3f6
-source-git-commit: 381e760d1634dec6c6cdb933fd4da6b4652e6ff7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 0%
+source-wordcount: '1800'
+ht-degree: 1%
 
 ---
 
 # Estrutura de marcação do AEM{#aem-tagging-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Para marcar o conteúdo e aproveitar a infraestrutura de marcação de AEM :
 

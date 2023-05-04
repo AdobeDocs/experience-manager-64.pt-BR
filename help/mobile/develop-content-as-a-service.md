@@ -1,23 +1,26 @@
 ---
 title: Entrega de conteúdo
-seo-title: Entrega de conteúdo
+seo-title: Content Delivery
 description: Entrega de conteúdo
-seo-description: 'null'
+seo-description: null
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 16fa0371-6bf5-449a-872a-914840640efa
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 0%
+source-wordcount: '1004'
+ht-degree: 1%
 
 ---
 
-
 # Entrega de conteúdo{#content-delivery}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -29,12 +32,12 @@ Isso inclui o uso de ativos, conteúdo do site, conteúdo de CaaS (over-the-air)
 
 >[!NOTE]
 >
->**O** conteúdo ao ar pode vir de qualquer um dos acima por meio dos manipuladores do ContentSync. Ele pode ser usado para fazer o pacote em lote e o delivery via zips, bem como para manter atualizações ou esses pacotes.
+>**Conteúdo ao ar** pode vir de qualquer um dos itens acima por meio de manipuladores do ContentSync . Ele pode ser usado para fazer o pacote em lote e o delivery via zips, bem como para manter atualizações ou esses pacotes.
 
 Existem três tipos principais de material que os Serviços de conteúdo fornecem:
 
 1. **Assets**
-1. **Conteúdo HTML empacotado (HTML/CSS/JS)**
+1. **Conteúdo de HTML empacotado (HTML/CSS/JS)**
 1. **Conteúdo independente de canal**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -69,7 +72,7 @@ O diagrama a seguir mostra o **Fluxo de trabalho de referência do Assets**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Gerenciar ativos {#managing-assets}
+### Gerenciamento de ativos {#managing-assets}
 
 Os Serviços de conteúdo fornecem acesso a AEM ativos gerenciados que podem não ser referenciados por meio de outro conteúdo AEM.
 
@@ -109,20 +112,20 @@ O JSON fornece um URL para cada imagem, gerada pelos Serviços de conteúdo para
 
 Para obter o binário da imagem do &quot;carrinho&quot;, a biblioteca do cliente é usada mais uma vez.
 
-## Conteúdo HTML empacotado {#packaged-html-content}
+## Conteúdo de HTML empacotado {#packaged-html-content}
 
-O conteúdo HTML é necessário para os clientes que precisam manter o layout do conteúdo. Isso é útil para aplicativos nativos que estão usando um contêiner da Web, como uma webview do Cordova, para exibir o conteúdo.
+O conteúdo do HTML é necessário para os clientes que precisam manter o layout do conteúdo. Isso é útil para aplicativos nativos que estão usando um contêiner da Web, como uma webview do Cordova, para exibir o conteúdo.
 
-Os AEM Content Services poderão fornecer conteúdo HTML ao aplicativo móvel por meio da API. Os clientes que desejam expor AEM conteúdo como HTML criarão uma entidade de página HTML que aponte para a fonte de conteúdo AEM.
+AEM Os Content Services poderão fornecer conteúdo HTML para o aplicativo móvel por meio da API. Os clientes que desejam expor AEM conteúdo como HTML criam uma entidade de HTML page que aponta para a fonte de conteúdo AEM.
 
 As seguintes opções são consideradas:
 
-* **Arquivo zip:** para ter a melhor chance de ser exibido corretamente no dispositivo, todo o material referenciado da página - css, JavaScript, ativos etc. - será incluído em um único arquivo compactado com a resposta. As referências na página HTML serão ajustadas para usar um caminho relativo para esses arquivos.
-* **Streaming:** obter um manifesto dos arquivos necessários do AEM. Em seguida, use esse manifesto para solicitar todos os arquivos (HTML, CSS, JS etc.) com solicitações subsequentes.
+* **Arquivo Zip:** Para ter a melhor chance de exibir corretamente no dispositivo, todo o material referenciado da página - css, JavaScript, ativos etc. - será incluído em um único arquivo compactado com a resposta. As referências na página HTML serão ajustadas para usar um caminho relativo para esses arquivos.
+* **Streaming:** Obter um manifesto dos arquivos necessários do AEM. Em seguida, use esse manifesto para solicitar todos os arquivos (HTML, CSS, JS etc.) com solicitações subsequentes.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-## Conteúdo independente de canal {#channel-independent-content}
+## Conteúdo independente do canal {#channel-independent-content}
 
 O conteúdo independente do canal é uma maneira de expor construções de conteúdo AEM - como páginas - sem se preocupar com layout, componentes ou outras informações específicas do canal.
 
@@ -145,4 +148,3 @@ O conteúdo pode acessar o aplicativo de várias maneiras.
    * Renderizadores de sling padrão integrados
    * Renderizadores de conteúdo do AEM Mobile/Content Services
    * Renderizações personalizadas
-

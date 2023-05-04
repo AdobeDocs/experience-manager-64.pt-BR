@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: 268edb9b-0f52-44c4-a75c-d9dfe39e7d17
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 11%
+source-wordcount: '517'
+ht-degree: 10%
 
 ---
 
 # Tentando modelos editáveis no We.Retail{#trying-out-editable-templates-in-we-retail}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Com os modelos editáveis, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de autor de modelo, agora pode criar modelos. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o autor do modelo terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
@@ -27,7 +31,7 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
 1. Edite a página Equipamento da ramificação de idioma principal.
 
-   http://localhost:4502/editor.html/content/we-retail/language-masters/pt/equipment.html
+   http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Observe que o seletor de modo não oferece mais um modo Design. Todas as páginas do We.Retail são baseadas em modelos editáveis e, para alterar o design de modelos editáveis, elas devem ser editadas no editor de modelos.
 1. No **Informações da página** selecionar menu **Editar modelo**.

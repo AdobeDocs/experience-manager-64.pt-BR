@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1895'
 ht-degree: 7%
 
 ---
 
 # APIs faturáveis dos relatórios de transação {#transaction-reports-billable-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Lista de todas as APIs que são contabilizadas como transações
 
@@ -304,7 +308,6 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
 >
 >* A API invoke do serviço de montagem pode chamar internamente uma API faturável de outro serviço, dependendo da entrada. Portanto, a API de chamada pode ser contabilizada como nenhuma, única ou várias transações. O número de transações contadas depende da entrada e das APIs internas chamadas.
 >* Um único documento de PDF produzido usando o serviço de montagem pode ser contabilizado como nenhuma, única ou várias transações. O número de transações contadas depende do código DDX fornecido.
-
 >
 
 
@@ -350,7 +353,7 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
 
 Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um Formulário PDF não é contabilizado como uma transação. Use o [API de relatórios de transação](record-transaction-custom-implementation.md) para registrar um envio de PDF forms como uma transação.
 
-### Formulários adaptáveis {#adaptive-forms}
+### Adaptive Forms {#adaptive-forms}
 
 <table> 
  <tbody>

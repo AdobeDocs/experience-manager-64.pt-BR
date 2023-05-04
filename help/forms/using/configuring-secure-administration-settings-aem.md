@@ -1,8 +1,8 @@
 ---
 title: Definição das configurações de administração segura para AEM Forms no JEE
-seo-title: Definição das configurações de administração segura para AEM Forms no JEE
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: Saiba como administrar contas de usuário e serviços que, embora necessários em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção do AEM Forms no JEE.
-seo-description: Saiba como administrar contas de usuário e serviços que, embora necessários em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção do AEM Forms no JEE.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 980d420c-a768-4634-9b8c-3f1d7327285d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 0%
+source-wordcount: '883'
+ht-degree: 1%
 
 ---
 
 # Definição das configurações de administração segura para AEM Forms no JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Saiba como administrar contas de usuário e serviços que, embora necessários em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção do AEM Forms no JEE.
 
@@ -41,14 +45,14 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
             https://[host name]:[port]/adminui
    ```
 
-1. Clique em **Services > Applications and Services > Preferences**.
+1. Clique em **Serviços > Aplicativos e Serviços > Preferências**.
 1. Defina as Preferências para exibir até 200 serviços e endpoints na mesma página.
-1. Clique em **Services** > **Applications and Services** > **Endpoint Management**.
-1. Selecione **EJB** na lista **Provedor** e clique em **Filtro**.
+1. Clique em **Serviços** > **Aplicativos e serviços** > **Gerenciamento de pontos de extremidade**.
+1. Selecionar **EJB** do **Provedor** e clique em **Filtro**.
 1. Para desativar todos os pontos de extremidade EJB, marque a caixa de seleção ao lado de cada um na lista e clique em **Desativar**.
-1. Clique em **Next** e repita a etapa anterior para todos os pontos de extremidade EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos de extremidade.
-1. Selecione **SOAP** na lista **Provedor** e clique em **Filtro**.
-1. Para remover pontos de extremidade SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remove**. Não remova os seguintes endpoints:
+1. Clique em **Próximo** e repita a etapa anterior para todos os pontos de extremidade EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos de extremidade.
+1. Selecionar **SOAP** do **Provedor** e clique em **Filtro**.
+1. Para remover pontos de extremidade SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remover**. Não remova os seguintes endpoints:
 
    * AuthenticationManagerService
    * DiretoryManagerService
@@ -64,7 +68,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Clique em **Next** e repita a etapa anterior para pontos de extremidade SOAP que não estão na lista acima. Certifique-se de que o SOAP esteja listado na coluna Provedor antes de remover pontos de extremidade.
+1. Clique em **Próximo** e repita a etapa anterior para pontos de extremidade SOAP que não estão na lista acima. Certifique-se de que o SOAP esteja listado na coluna Provedor antes de remover pontos de extremidade.
 
 ## Desabilitação do acesso anônimo não essencial a serviços {#disabling-non-essential-anonymous-access-to-services}
 
@@ -76,14 +80,14 @@ Alguns serviços do servidor de formulários permitem a invocação não autenti
             https://[host name]:[port]/adminui
    ```
 
-1. Clique em **Services > Applications and Services > Service Management**.
+1. Clique em **Serviços > Aplicativos e Serviços > Gerenciamento de Serviços**.
 1. Clique no nome do serviço que deseja desativar (por exemplo, AuthenticationManagerService).
-1. Clique na **guia Segurança**, desmarque **Acesso Anônimo Permitido** e clique em **Salvar**.
+1. Clique no botão **Guia Segurança**, desmarcar **Acesso Anônimo Permitido** e clique em **Salvar**.
 1. Complete as etapas 3 e 4 para os seguintes serviços:
 
    * AuthenticationManagerService
    * EJB
-   * E-mail
+   * Email
    * JobManager
    * WatchedFolder
    * UsermanagerUtilService
@@ -119,7 +123,7 @@ Os usuários finais podem autenticar para o AEM Forms por meio do Workbench, de 
             https://[host name]:[port]/adminui
    ```
 
-1. Clique em **Settings > User Management > Configuration > Import And Export Configuration Files**.
+1. Clique em **Configurações > Gerenciamento De Usuário > Configuração > Importar E Exportar Arquivos De Configuração**.
 1. Clique em **Exportar** para produzir um arquivo config.xml com as configurações existentes do AEM Forms.
 1. Abra o arquivo XML em um editor e localize a seguinte entrada:
 
@@ -128,4 +132,4 @@ Os usuários finais podem autenticar para o AEM Forms por meio do Workbench, de 
 1. Altere o valor para qualquer número maior que 5 (em minutos) e salve o arquivo.
 1. No console de administração, navegue até a página Importar e exportar arquivos de configuração .
 1. Insira o caminho para o arquivo config.xml modificado ou clique em Procurar para navegar até ele.
-1. Clique em **Importar** para carregar o arquivo config.xml modificado e clique em **OK**.
+1. Clique em **Importar** para fazer upload do arquivo config.xml modificado e, em seguida, clique em **OK**.

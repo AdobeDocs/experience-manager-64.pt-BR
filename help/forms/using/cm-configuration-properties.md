@@ -1,24 +1,27 @@
 ---
 title: Propriedades de configuração do gerenciamento de correspondência
-seo-title: Propriedades de configuração do gerenciamento de correspondência
+seo-title: Correspondence Management Configuration Properties
 description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que podem ser editadas, com sua descrição, valores padrão e valores aceitáveis.
-seo-description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que podem ser editadas, com sua descrição, valores padrão e valores aceitáveis.
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 102e4f39-192e-4cc1-a249-4b6bc641919d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '881'
 ht-degree: 4%
 
 ---
 
-
 # Propriedades de configuração do gerenciamento de correspondência {#correspondence-management-configuration-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Para configurar essas propriedades, abra o seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione **Configurações de gerenciamento de correspondência**.
 
@@ -35,30 +38,30 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr> 
    <td><p>Recuo</p> </td> 
    <td>Recuo em módulos<p> </p> </td> 
-   <td><p>12,7 mm</p> </td> 
+   <td><p>12.7mm</p> </td> 
    <td><p>Qualquer número</p> </td> 
   </tr> 
   <tr> 
    <td>Largura mínima do número</td> 
    <td>Largura mínima a ser aplicada no campo marcador/número, ao usar Listas numeradas além de números romanos</td> 
-   <td>8,0 mm</td> 
+   <td>8.0mm</td> 
    <td>Qualquer número</td> 
   </tr> 
   <tr> 
    <td><p>Largura mínima dos números romanos</p> </td> 
    <td><p>Largura mínima a ser aplicada no campo marcador/número, ao usar números romanos</p> </td> 
-   <td><p>12,7 mm</p> </td> 
+   <td><p>12.7mm</p> </td> 
    <td><p>Qualquer número</p> </td> 
   </tr> 
   <tr> 
    <td>Tipo de representação</td> 
    <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a visualização da carta. </td> 
-   <td>Representação HTML</td> 
-   <td>Representação HTML / Representação PDF</td> 
+   <td>HTML Rendition</td> 
+   <td>Representação de HTML / Representação de PDF</td> 
   </tr> 
   <tr> 
-   <td><p>Ativar o destaque do PDF CCR</p> </td> 
-   <td><p>Habilita o destaque em PDF no aplicativo Criar correspondência</p> </td> 
+   <td><p>Ativar o realce PDF CCR</p> </td> 
+   <td><p>Habilita o destaque no PDF no aplicativo Criar correspondência</p> </td> 
    <td><p>verdadeiro</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -131,7 +134,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr> 
    <td><p>Tipo de envio de PDF</p> </td> 
    <td><p>Tipo de envio de PDF (tipo de PDF gerado ao enviar a partir do aplicativo Criar correspondência)</p> </td> 
-   <td><p>nonInteractive</p> </td> 
+   <td><p>nonInterative</p> </td> 
    <td><p>interativo/não interativo</p> </td> 
   </tr> 
   <tr> 
@@ -162,7 +165,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>Formato de edição de dados</p> </td> 
    <td><p>Editar formato para dados. Isso é usado ao gravar dados como String ou analisar dados de String</p> </td> 
    <td><p>locale=en_US; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td>—<p> </p> </td> 
+   <td>--<p> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Gerenciar instâncias de carta na publicação</p> </td> 
@@ -245,18 +248,18 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr> 
    <td><p>Raiz do usuário do CM</p> </td> 
    <td><p>URL da pasta que contém todos os ativos de usuário do Gerenciamento de correspondência</p> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
    <td><p>Local de pasta válido</p> </td> 
   </tr> 
   <tr> 
    <td><p>Tamanho do Cache de Carta</p> </td> 
-   <td><p>Especifique o Número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory</code>.</p> </td> 
+   <td><p>Especifique o Número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza de <code>in-memory</code> cache.</p> </td> 
    <td><p>100</p> </td> 
    <td><p>Qualquer valor numérico</p> </td> 
   </tr> 
   <tr> 
    <td><p>Ativar Cache de Carta</p> </td> 
-   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory </code>.</p> </td> 
+   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza de <code>in-memory </code> cache.</p> </td> 
    <td><p>verdadeiro</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -292,7 +295,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr> 
   <tr> 
    <td><p>Diretório de depuração </p> <p> </p> </td> 
-   <td>Local da pasta do sistema de arquivos para depuração. Se o diretório não <code>exists</code>, nenhum despejo de depuração será gerado.</td> 
+   <td>Local da pasta do sistema de arquivos para depuração. Se o diretório não <code>exists</code>, nenhum dumps de depuração será gerado.</td> 
    <td>acm.debugDirectory</td> 
    <td> </td> 
   </tr> 

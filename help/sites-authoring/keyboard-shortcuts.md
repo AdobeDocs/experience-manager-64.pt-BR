@@ -1,7 +1,7 @@
 ---
 title: Atalhos de teclado para Consoles
 seo-title: Keyboard Shortcuts for Consoles
-description: Poupe tempo durante a criação usando estes atalhos de teclado
+description: Economize tempo durante a criação usando esses atalhos de teclado
 seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
-source-git-commit: beb6e3ccc5cbef044f8b91d327c0361c881ccd72
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '414'
+ht-degree: 51%
 
 ---
 
 # Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -27,7 +31,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
 
 ## Atalhos de teclado {#keyboard-shortcuts}
 
-Os seguintes atalhos estão disponíveis para os consoles Sites, Commerce, Screens, Assets, Usuários, Grupos, Projetos e Fragmentos de experiência.
+Os seguintes atalhos estão disponíveis para os consoles Sites, Comércio, Telas, Ativos, Usuários, Grupos, Projetos e Fragmentos de experiência.
 
 | Local | Atalho | Descrição |
 |---|---|---|
@@ -52,7 +56,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Commerce, Scree
 
 As combinações de teclas são listadas com as [teclas modificadoras](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) do Windows.
 
-Vários atalhos de teclado também estão disponíveis para usuários de desktops ao usar o [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para criar páginas.
+Vários atalhos de teclado também estão disponíveis para os usuários da área de trabalho ao usar a variável [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para criar páginas.
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 
@@ -65,19 +69,19 @@ As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o
 
 ## Atalhos de teclado e dos navegadores {#browsers-and-keyboard-shortcuts}
 
-O AEM evita os atalhos comuns usados pelos navegadores mais populares, no entanto, o comportamento padrão do navegador não é substituído por atalhos do AEM.
+AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por AEM atalhos.
 
 Além disso, os atalhos de teclado são os mesmos para todas as localidades e layouts de teclado.
 
 >[!NOTE]
 >
->Os atalhos do AEM não substituem o comportamento padrão do navegador.
+>AEM atalhos não substituem o comportamento padrão do navegador.
 >
->Caso ocorram conflitos entre os atalhos do AEM e do navegador, os atalhos do AEM não funcionarão, mantendo a funcionalidade do navegador.
+>Caso ocorra conflitos entre AEM e atalhos do navegador, AEM atalhos não funcionarão, resultando na funcionalidade do navegador.
 
 >[!CAUTION]
 >
->Os atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
+>AEM atalhos de teclado podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
 >A Adobe recomenda [desabilitar os atalhos de teclado do AEM](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 
@@ -85,7 +89,7 @@ Além disso, os atalhos de teclado são os mesmos para todas as localidades e la
 
 O AEM fornece atalhos de teclado para alguns dos recursos de uso geral (editar, propriedades, copiar/colar, mostrar vários menus do painel lateral etc.).
 
-Para os usuários que não usam atalhos de teclado ou que têm certos requisitos de acessibilidade, todos os atalhos de teclado podem ser desabilitados.
+Para usuários que não usam atalhos de teclado ou que têm determinados requisitos de acessibilidade, todos os atalhos de teclado podem ser desativados.
 
 É possível desativar os atalhos de teclado em dois locais:
 

@@ -1,6 +1,6 @@
 ---
 title: Guia de dimensionamento de ativos
-description: 'Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar  [!DNL Experience Manager] Ativos. '
+description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar [!DNL Experience Manager] Ativos.
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,14 +8,18 @@ discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 0%
+source-wordcount: '1876'
+ht-degree: 1%
 
 ---
 
 # Guia de dimensionamento de ativos {#assets-sizing-guide}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Ao dimensionar o ambiente para uma implementação do Adobe Experience Manager Assets, é importante garantir que haja recursos suficientes disponíveis em termos de disco, CPU, memória, E/S e throughput da rede. Dimensionar muitos desses recursos requer uma compreensão de quantos ativos estão sendo carregados no sistema. Se uma métrica melhor não estiver disponível, você pode dividir o tamanho da biblioteca existente pela idade da biblioteca para encontrar a taxa na qual os ativos são criados.
 
@@ -23,7 +27,7 @@ Ao dimensionar o ambiente para uma implementação do Adobe Experience Manager A
 
 ### DataStore {#datastore}
 
-Um erro comum cometido ao dimensionar o espaço em disco necessário para uma implementação do Assets é basear os cálculos no tamanho das imagens brutas que serão assimiladas no sistema. Por padrão, [!DNL Experience Manager] cria três representações além da imagem original para uso na renderização dos elementos da interface do usuário [!DNL Experience Manager]. Em implementações anteriores, essas representações foram observadas para assumir o dobro do tamanho dos ativos que são assimilados.
+Um erro comum cometido ao dimensionar o espaço em disco necessário para uma implementação do Assets é basear os cálculos no tamanho das imagens brutas que serão assimiladas no sistema. Por padrão, [!DNL Experience Manager] cria três representações além da imagem original para uso na renderização da variável [!DNL Experience Manager] Elementos da interface do usuário. Em implementações anteriores, essas representações foram observadas para assumir o dobro do tamanho dos ativos que são assimilados.
 
 A maioria dos usuários define representações personalizadas, além de representações predefinidas. Além das representações, os Ativos permitem extrair subativos de tipos de arquivos comuns, como InDesign e Illustrator.
 
@@ -34,11 +38,11 @@ Considerando esses fatores, você precisa de uma metodologia para calcular um es
 1. Determine o tamanho e o número de ativos que serão carregados no sistema.
 1. Obtenha uma amostra representativa dos ativos que serão carregados no AEM. Por exemplo, se você planeja carregar arquivos PSD, JPG, AI e PDF no sistema, você precisa de várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades de imagens.
 1. Defina as representações a serem usadas.
-1. Crie as representações em [!DNL Experience Manager] usando os aplicativos Creative Cloud do ImageMagick ou do Adobe. Além das representações que os usuários especificam, crie representações prontas para uso. Para usuários que implementam o Dynamic Media Classic, você pode usar o binário IC para gerar as representações PTIFF a serem armazenadas no AEM.
+1. Crie as representações em [!DNL Experience Manager] usando os aplicativos Creative Cloud do ImageMagick ou do Adobe. Além das representações que os usuários especificam, crie representações prontas para uso. Para usuários que implementam o Dynamic Media Classic, você pode usar o binário IC para gerar as renderizações PTIFF a serem armazenadas no AEM.
 1. Se você planeja usar subativos, gere-os para os tipos de arquivo apropriados. Consulte a documentação online sobre como gerar páginas de subativos a partir de arquivos InDesign ou arquivos PNG/PDF a partir de camadas do Illustrator.
 1. Compare o tamanho das imagens de saída, representações e subativos com as imagens originais. Ele permite gerar um fator de crescimento esperado quando o sistema é carregado. Por exemplo, se você gerar representações e subativos com um tamanho combinado de 3 GB após o processamento de 1 GB de ativos, o fator de crescimento da representação será 3.
 1. Determine o tempo máximo durante o qual as versões de ativos devem ser mantidas no sistema.
-1. Determine a frequência com que os ativos existentes são modificados no sistema. Se [!DNL Experience Manager] for usado como um hub de colaboração em workflows criativos, a quantidade de alterações será alta. Se apenas os ativos finalizados forem carregados no sistema, esse número será muito menor.
+1. Determine a frequência com que os ativos existentes são modificados no sistema. If [!DNL Experience Manager] é usado como um hub de colaboração em workflows criativos, a quantidade de alterações é alta. Se apenas os ativos finalizados forem carregados no sistema, esse número será muito menor.
 1. Determine quantos ativos são carregados no sistema a cada mês. Se não tiver certeza, verifique o número de ativos disponíveis no momento e divida o número por idade do ativo mais antigo para calcular um número aproximado.
 
 A execução das etapas 1 a 9 ajuda a determinar o seguinte:
@@ -51,7 +55,7 @@ A execução das etapas 1 a 9 ajuda a determinar o seguinte:
 * Número de novos ativos carregados mensalmente
 * Anos de crescimento para alocar espaço para
 
-É possível especificar esses números na planilha de Dimensionamento de Rede para determinar o espaço total necessário para o armazenamento de dados. Também é uma ferramenta útil para determinar o impacto da manutenção de versões de ativos ou da modificação de ativos em [!DNL Experience Manager] no crescimento do disco.
+É possível especificar esses números na planilha de Dimensionamento de Rede para determinar o espaço total necessário para o armazenamento de dados. Também é uma ferramenta útil para determinar o impacto da manutenção de versões de ativos ou da modificação de ativos no [!DNL Experience Manager] no crescimento do disco.
 
 O exemplo de dados preenchido na ferramenta demonstra a importância de executar as etapas mencionadas. Se você dimensionar o armazenamento de dados exclusivamente com base nas imagens brutas que estão sendo carregadas (1 TB), talvez tenha subestimado o tamanho do repositório em um fator de 15.
 
@@ -106,11 +110,11 @@ Para o repositório, use SSDs ou discos com um nível de IOPS superior a 3000. P
 
 ## Rede {#network}
 
-[!DNL Assets] O tem vários casos de uso que tornam o desempenho da rede mais importante do que em muitos de nossos  [!DNL Experience Manager] projetos. Um cliente pode ter um servidor rápido, mas se a conexão de rede não for grande o suficiente para suportar a carga dos usuários que estão carregando e baixando ativos do sistema, ele ainda parecerá estar lento. Há uma boa metodologia para determinar o ponto de estrangulamento na conexão de rede de um usuário para [!DNL Experience Manager] em [[!DNL Experience Manager]  Considerações de ativos para experiência de usuário, dimensionamento de instância, avaliação de fluxo de trabalho e topologia de rede](assets-network-considerations.md).
+[!DNL Assets] O tem vários casos de uso que tornam o desempenho da rede mais importante do que em muitos de nossos [!DNL Experience Manager] projetos. Um cliente pode ter um servidor rápido, mas se a conexão de rede não for grande o suficiente para suportar a carga dos usuários que estão carregando e baixando ativos do sistema, ele ainda parecerá estar lento. Há uma boa metodologia para determinar o ponto de estrangulamento na conexão de rede de um usuário para [!DNL Experience Manager] at [[!DNL Experience Manager]  Considerações de ativos para experiência do usuário, dimensionamento de instâncias, avaliação de fluxos de trabalho e topologia de rede](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
-Se você adicionar o [!DNL Experience Manager] aplicativo de desktop à combinação, os problemas de rede se tornam mais graves devido a ineficiências no protocolo WebDAV.
+Se você adicionar o [!DNL Experience Manager] para o aplicativo de desktop da combinação, os problemas de rede se tornam mais graves devido a ineficiências no protocolo WebDAV.
 
 Para ilustrar essas ineficiências, o Adobe testou o desempenho do sistema usando o WebDAV no OS X. Um arquivo de InDesign de 3,5 MB foi aberto, editado e as alterações foram salvas. Foram feitas as seguintes observações:
 
@@ -122,15 +126,15 @@ Para ilustrar essas ineficiências, o Adobe testou o desempenho do sistema usand
 
 Ao analisar o tempo médio de economia para arquivos no WebDAV, descobriu-se que o desempenho aumenta drasticamente à medida que a largura de banda aumenta até o nível de 5 a 10 Mbps. Portanto, a Adobe recomenda que cada usuário que acessar o sistema simultaneamente tenha pelo menos 10 Mbps de velocidade de upload e 5-10 Mbps de largura de banda.
 
-Para obter mais informações, consulte [Resolução de problemas [!DNL Experience Manager] aplicativo de desktop](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
+Para obter mais informações, consulte [Solução de problemas [!DNL Experience Manager] aplicativo de desktop](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 Ao dimensionar uma implementação, é importante manter as limitações do sistema em mente. Se a implementação proposta exceder essas limitações, utilize estratégias criativas, como a divisão dos ativos em várias implementações do Assets.
 
 O tamanho do arquivo não é o único fator que contribui para problemas de falta de memória (OOM). Também depende das dimensões da imagem. Você pode evitar problemas de OOM fornecendo um tamanho de heap mais alto ao iniciar o AEM.
 
-Além disso, você pode editar a propriedade de tamanho limite do componente `com.day.cq.dam.commons.handler.StandardImageHandler` no Configuration Manager para usar um arquivo temporário intermediário maior que zero.
+Além disso, é possível editar a propriedade threshold size do `com.day.cq.dam.commons.handler.StandardImageHandler` no Configuration Manager para usar um arquivo temporário intermediário maior que zero.
 
 ## Número máximo de ativos {#maximum-number-of-assets}
 
@@ -142,8 +146,8 @@ O limite para o número de arquivos que podem existir em um armazenamento de dad
 
 Se as renderizações forem geradas incorretamente, use a biblioteca Camera Raw. No entanto, nesse caso, o lado mais longo da imagem não deve ser maior que 65.000 pixels. Além disso, a imagem não deve conter mais de 512 MP (512 &amp;ast; 1024 &amp;ast; 1024 pixels)&#39;. *A dimensão do ativo é inconsequente*.
 
-É difícil estimar com precisão o tamanho do arquivo TIFF compatível pronto para uso (OOTB) com um heap específico para [!DNL Experience Manager] porque fatores adicionais, como o tamanho do pixel, influenciam o processamento. É possível que [!DNL Experience Manager] possa processar um arquivo de 255 MB OTB, mas não pode processar um tamanho de arquivo de 18 MB porque o último consiste de um número invulgarmente maior de pixels em comparação ao primeiro.
+É difícil estimar com precisão o tamanho do arquivo TIFF compatível pronto para uso (OOTB) com um heap específico para [!DNL Experience Manager] porque fatores adicionais, como tamanho de pixel, influenciam o processamento. É possível que [!DNL Experience Manager] O pode processar um arquivo de tamanho de 255 MB OTB, mas não pode processar um tamanho de arquivo de 18 MB, pois o último consiste de um número invulgarmente maior de pixels em comparação ao primeiro.
 
 ## Tamanho dos ativos {#size-of-assets}
 
-Por padrão, [!DNL Experience Manager] permite carregar ativos de até 2 GBs. Para fazer upload de ativos muito grandes no AEM, consulte [Configuração para fazer upload de ativos muito grandes](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
+Por padrão, [!DNL Experience Manager] O permite carregar ativos de até 2 GBs. Para fazer upload de ativos muito grandes no AEM, consulte [Configuração para fazer upload de ativos muito grandes](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).

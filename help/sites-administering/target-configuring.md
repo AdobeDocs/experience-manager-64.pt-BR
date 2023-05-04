@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 6abadd53-dab1-4e3b-84d8-10374e8a305c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 44%
+source-wordcount: '2215'
+ht-degree: 40%
 
 ---
 
 # Configuração manual da integração com o Adobe Target {#manually-configuring-the-integration-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Você pode modificar as configurações do assistente de aceitação que você fez ao usar o assistente ou pode fazer a integração manualmente com o Adobe Target sem usar o assistente.
 
@@ -204,10 +208,10 @@ Associe seu [Atividades AEM](/help/sites-authoring/activitylib.md) com a configu
 
 >[!NOTE]
 Os tipos de atividades disponíveis são determinados pelo seguinte:
-* Se a opção **xt_only** estiver ativada no inquilino do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target, você poderá criar **apenas** atividades XT no AEM.
-* Se a opção **xt_only** **não** estiver ativada no inquilino do Adobe Target (clientcode), você poderá criar **** atividades XT e A/B no AEM.
+* Se a variável **xt_only** estiver ativada no locatário do Adobe Target (clientcode) usado no AEM para se conectar ao Adobe Target, você poderá criar **only** Atividades XT no AEM.
+* Se a variável **xt_only** opções é **not** habilitado no locatário do Adobe Target (clientcode), você poderá criar **both** Atividades XT e A/B no AEM.
 >
-**Observação adicional:** a opção **xt_only** é uma configuração aplicada em um determinado inquilino do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
+**Nota adicional:** **xt_only** é uma configuração aplicada em um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
 
 ### Associar a estrutura do Target ao seu site {#associating-the-target-framework-with-your-site}
 

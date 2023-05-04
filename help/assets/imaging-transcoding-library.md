@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Renditions,Developer Tools,Asset Processing
 role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 0%
+source-wordcount: '994'
+ht-degree: 1%
 
 ---
 
 # Biblioteca de transcodificação de imagens {#imaging-transcoding-library}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A Biblioteca de transcodificação de imagens proprietária é uma solução de processamento de imagens que pode executar funções principais de manipulação de imagens:
 
@@ -27,10 +31,10 @@ A Biblioteca de transcodificação de imagens oferece suporte a CMYK e suporte c
 
 Além de oferecer suporte a uma grande variedade de formatos de arquivo e perfis, a Biblioteca de transcodificação de imagens tem vantagens significativas em relação a outras soluções de terceiros em termos de desempenho, escalabilidade e qualidade. Estes são alguns dos principais benefícios do uso da Biblioteca de transcodificação de imagens:
 
-* **Dimensiona com o aumento do tamanho ou da resolução** do arquivo: O dimensionamento é obtido principalmente pela capacidade patenteada da Biblioteca de transcodificação de imagens de redimensionar ao decodificar arquivos. Essa capacidade garante que o uso da memória em tempo de execução seja sempre ideal e não seja uma função quadrática de aumentar o tamanho do arquivo ou a resolução dos megapixels. A Biblioteca de transcodificação de imagens pode processar arquivos maiores e de alta resolução (contendo megapixels mais altos). Ferramentas de terceiros, como o ImageMagick, não conseguem lidar com arquivos grandes e falhas ao processar esses arquivos.
-* **Algoritmos** de compactação e redimensionamento de qualidade do Photoshop: Coerência com o padrão da indústria em termos de qualidade da amostragem reduzida (bicúbica lisa, afiada e automática) e qualidade de compressão. A Biblioteca de transcodificação de imagens avalia ainda mais o fator de qualidade da imagem de entrada e usa de forma inteligente tabelas e configurações de qualidade ideais para a imagem de saída. Essa capacidade produz arquivos de tamanho ideal sem comprometer a qualidade visual.
-* **Taxa de transferência alta:** o tempo de resposta é menor e a taxa de transferência é consistentemente maior do que o ImageMagick. Portanto, a Biblioteca de transcodificação de imagens deve diminuir o tempo de espera dos usuários e o custo da hospedagem.
-* **Dimensione melhor com a carga simultânea:** a Biblioteca de transcodificação de imagem tem desempenho ideal em condições de carregamento simultâneas. Ele fornece alta throughput com desempenho otimizado da CPU, uso da memória e baixo tempo de resposta, o que ajuda a reduzir o custo da hospedagem.
+* **Dimensiona com o aumento do tamanho ou da resolução do arquivo**: O dimensionamento é obtido principalmente pela capacidade patenteada da Biblioteca de transcodificação de imagens de redimensionar ao decodificar arquivos. Essa capacidade garante que o uso da memória em tempo de execução seja sempre ideal e não seja uma função quadrática de aumentar o tamanho do arquivo ou a resolução dos megapixels. A Biblioteca de transcodificação de imagens pode processar arquivos maiores e de alta resolução (contendo megapixels mais altos). Ferramentas de terceiros, como o ImageMagick, não conseguem lidar com arquivos grandes e falhas ao processar esses arquivos.
+* **Algoritmos de compactação e redimensionamento de qualidade do Photoshop**: Coerência com o padrão da indústria em termos de qualidade da amostragem reduzida (bicúbica lisa, afiada e automática) e qualidade de compressão. A Biblioteca de transcodificação de imagens avalia ainda mais o fator de qualidade da imagem de entrada e usa de forma inteligente tabelas e configurações de qualidade ideais para a imagem de saída. Essa capacidade produz arquivos de tamanho ideal sem comprometer a qualidade visual.
+* **Taxa de transferência elevada:** O tempo de resposta é menor e a taxa de transferência é consistentemente maior do que o ImageMagick. Portanto, a Biblioteca de transcodificação de imagens deve diminuir o tempo de espera dos usuários e o custo da hospedagem.
+* **Dimensione melhor com carga simultânea:** A Biblioteca de transcodificação de imagens tem desempenho ideal em condições de carregamento simultâneas. Ele fornece alta throughput com desempenho otimizado da CPU, uso da memória e baixo tempo de resposta, o que ajuda a reduzir o custo da hospedagem.
 
 ## Plataformas compatíveis {#supported-platforms}
 
@@ -38,7 +42,7 @@ A Biblioteca de transcodificação de imagem está disponível somente para dist
 
 >[!NOTE]
 >
->Mac OS e outras distribuições *nix (por exemplo, Debian e Ubuntu) não são compatíveis.
+>O Mac OS e outras distribuições *nix (por exemplo, Debian e Ubuntu) não são compatíveis.
 
 ## Uso {#usage}
 
@@ -54,15 +58,15 @@ Os argumentos da linha de comando para a Biblioteca de transcodificação de ima
  -resize
 ```
 
-Você pode configurar as seguintes opções para o parâmetro `-resize`:
+Você pode configurar as seguintes opções para a variável `-resize` parâmetro:
 
 * `X`: `Works similar to AEM. For example -resize 319.`
 
-* `WxH`:  `Aspect Ratio will not be maintained, For example -resize 319X319.`
+* `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
 
-* `Wx`:  `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
+* `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
 
-* `xH`:  `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
+* `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -78,13 +82,13 @@ Para configurar o processamento de ITL, crie um arquivo de configuração e atua
 
 Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas usando as etapas a seguir. Você precisa de permissões de administrador ou raiz.
 
-1. Baixe o pacote [Imaging Transcoding Library (Biblioteca de transcodificação de imagem) da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e instale-o usando o Gerenciador de pacotes. O pacote é compatível com [!DNL Experience Manager] 6.5.
+1. Baixe o [Pacote da biblioteca de transcodificação de imagens da distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e instale-o usando o Gerenciador de pacotes. O pacote é compatível com [!DNL Experience Manager] 6.5.
 
-1. Para saber um ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no Console da Web e toque em **[!UICONTROL OSGi > Pacotes]**. Como alternativa, para abrir o console de pacotes, acesse o URL `https://[aem_server:[port]/system/console/bundles/`. Localize o pacote `com.day.cq.dam.cq-dam-switchengine` e sua ID.
+1. Para conhecer uma ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no Console da Web e toque em **[!UICONTROL OSGi > Pacotes]**. Como alternativa, para abrir o console pacotes, acesse `https://[aem_server:[port]/system/console/bundles/` URL. Localizar `com.day.cq.dam.cq-dam-switchengine` e sua ID.
 
-1. Certifique-se de que todas as bibliotecas necessárias sejam extraídas, verificando a pasta usando o comando `ls -la /aem64/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, onde o nome da pasta é construído usando a ID do pacote. Por exemplo, o comando é `ls -la /aem64/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` se o ID do pacote for `588`.
+1. Certifique-se de que todas as bibliotecas necessárias sejam extraídas, verificando a pasta usando o comando `ls -la /aem64/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, em que o nome da pasta é construído usando a ID do pacote. Por exemplo, o comando é `ls -la /aem64/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` se a id do pacote for `588`.
 
-1. Crie o arquivo `SWitchEngineLibs.conf` para vincular à biblioteca.
+1. Criar `SWitchEngineLibs.conf` para vincular à biblioteca.
 
    ```shell
    cd `/etc/ld.so.conf.d`
@@ -92,39 +96,39 @@ Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas 
    vi SWitchEngineLibs.conf
    ```
 
-1. Adicione o caminho `/aem64/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` ao arquivo conf usando o comando `cat SWitchEngineLibs.conf`.
+1. Adicionar `/aem64/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` caminho para o arquivo conf usando `cat SWitchEngineLibs.conf` comando.
 
-1. Execute o comando `ldconfig` para criar os links e o cache necessários.
+1. Executar `ldconfig` para criar os links e o cache necessários.
 
-1. Na conta usada para iniciar o AEM, edite o arquivo `.bash_profile`. Adicione `LD_LIBRARY_PATH` adicionando o seguinte.
+1. Na conta usada para iniciar o AEM, edite `.bash_profile` arquivo. Adicionar `LD_LIBRARY_PATH` adicionando o seguinte.
 
    ```shell
    LD_LIBRARY_PATH=.
    export LD_LIBRARY_PATH
    ```
 
-1. Para garantir que o valor do caminho esteja definido como `.`, use o comando `echo $LD_LIBRARY_PATH`. A saída deve ser apenas `.`. Se o valor não estiver definido como `.`, reinicie a sessão.
+1. Para garantir que o valor do caminho seja definido como `.`, use `echo $LD_LIBRARY_PATH` comando. A saída deve ser apenas `.`. Se o valor não estiver definido como `.`, reinicie a sessão.
 
 ### Configurar o fluxo de trabalho do ativo de atualização do DAM {#configure-dam-asset-update-workflow}
 
-Atualize o workflow [!UICONTROL Ativo de atualização do DAM] para usar a biblioteca para processar imagens.
+Atualize o [!UICONTROL Ativo de atualização DAM] fluxo de trabalho para usar a biblioteca para processar imagens.
 
-1. Toque/clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Toque/clique no botão [!DNL Experience Manager] logotipo e acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 
-1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, abra o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]** no modo de edição.
+1. No **[!UICONTROL Modelos de fluxo de trabalho]** , abra o **[!UICONTROL Ativo de atualização DAM]** modelo de fluxo de trabalho no modo de edição.
 
-1. Abra a etapa do processo de fluxo de trabalho **[!UICONTROL Processar miniaturas]** . Na guia **[!UICONTROL Thumbnails]** , adicione os tipos MIME para os quais deseja ignorar o processo de geração de miniaturas padrão na lista **[!UICONTROL Ignorar tipos MIME]**.
-Por exemplo, se você deseja criar miniaturas para uma imagem TIFF usando a Biblioteca de transcodificação de imagem, especifique `image/tiff` no campo **[!UICONTROL Ignorar tipos MIME]**.
+1. Abra o **[!UICONTROL Processar miniaturas]** etapa do processo do fluxo de trabalho. No **[!UICONTROL Miniaturas]** , adicione os tipos MIME para os quais deseja ignorar o processo de geração de miniaturas padrão no **[!UICONTROL Ignorar Tipos Mime]** lista.
+Por exemplo, se você deseja criar miniaturas para uma imagem TIFF usando a Biblioteca de transcodificação de imagem, especifique `image/tiff` no **[!UICONTROL Ignorar Tipos Mime]** campo.
 
-1. Na guia **[!UICONTROL Imagem ativada pela Web]**, adicione os tipos MIME para os quais deseja ignorar o processo de geração de renderização da Web padrão em **[!UICONTROL Ignorar lista]**. Por exemplo, se você ignorou o tipo MIME `image/tiff` na etapa acima, adicione `image/tiff` à lista de ignorados.
+1. No **[!UICONTROL Imagem ativada na Web]** , adicione os tipos MIME para os quais deseja ignorar o processo de geração de renderização da Web padrão em **[!UICONTROL Ignorar Lista]**. Por exemplo, se você ignorou o tipo MIME `image/tiff` na etapa acima, adicione `image/tiff` para a lista de ignorados.
 
-1. Abra a etapa **[!UICONTROL EPS thumbnails (viabilizadas pelo ImageMagick)]** e navegue até a guia **[!UICONTROL Argumentos]**. Na lista **[!UICONTROL Mime Types]**, adicione os tipos MIME que você deseja que a Biblioteca de transcodificação de imagens processe. Por exemplo, se você ignorou o tipo MIME `image/tiff` na etapa acima, adicione `image/jpeg` à lista **[!UICONTROL Tipos MIME]**.
+1. Abra o **[!UICONTROL Miniaturas do EPS (fornecidas pelo ImageMagick)]** , navegue até o **[!UICONTROL Argumentos]** guia . No **[!UICONTROL Tipos Mime]** adicione os tipos MIME que a Biblioteca de transcodificação de imagens deve processar. Por exemplo, se você ignorou o tipo MIME `image/tiff` na etapa acima, adicione `image/jpeg` para **[!UICONTROL Tipos Mime]** lista.
 
 1. Remova os comandos padrão, se houver.
 
-1. Alterne o painel lateral e, na lista de etapas, adicione **[!UICONTROL Manipulador do SWitchEngine]**.
+1. Alterne o painel lateral e, na lista de etapas, adicione **[!UICONTROL Manipulador SWitchEngine]**.
 
-1. Adicione comandos ao [!UICONTROL SwitchEngine Handler] com base em seus requisitos personalizados. Ajuste os parâmetros dos comandos especificados para atender aos seus requisitos. Por exemplo, se você quiser preservar o perfil de cor da imagem JPEG, adicione os seguintes comandos à lista **[!UICONTROL Comandos]**:
+1. Adicione comandos ao [!UICONTROL Manipulador SwitchEngine] com base em seus requisitos personalizados. Ajuste os parâmetros dos comandos especificados para atender aos seus requisitos. Por exemplo, se você quiser preservar o perfil de cor da imagem do JPEG, adicione os seguintes comandos à **[!UICONTROL Comandos]** lista:
 
    * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
@@ -137,11 +141,11 @@ Por exemplo, se você deseja criar miniaturas para uma imagem TIFF usando a Bibl
 
    ![calúnia](assets/chlimage_1-200.png)
 
-1. Para gerar representações da Web, configure os parâmetros na guia **[!UICONTROL Imagem ativada pela Web]**.
+1. Para gerar renderizações da Web, configure os parâmetros no **[!UICONTROL Imagem ativada na Web]** guia .
 
-1. Sincronize o modelo de fluxo de trabalho atualizado [!UICONTROL Ativo de atualização DAM] . Salve o workflow.
+1. Sincronizar o atualizado [!UICONTROL Ativo de atualização DAM] modelo de fluxo de trabalho. Salve o workflow.
 
-Verifique a configuração, faça o upload de uma imagem TIFF e monitore o arquivo error.log. Você notará `INFO` mensagens com menções de `SwitchEngineHandlingProcess execute: executing command line`. Os logs mencionam as representações geradas. Depois que o fluxo de trabalho for concluído, você poderá exibir as novas representações em AEM.
+Verifique a configuração, carregue uma imagem de TIFF e monitore o arquivo error.log. Você notará `INFO` mensagens com menções de `SwitchEngineHandlingProcess execute: executing command line`. Os logs mencionam as representações geradas. Depois que o fluxo de trabalho for concluído, você poderá exibir as novas representações em AEM.
 
 >[!MORELIKETHIS]
 >

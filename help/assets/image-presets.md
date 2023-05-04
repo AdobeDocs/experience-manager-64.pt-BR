@@ -1,8 +1,8 @@
 ---
 title: Aplicação de predefinições de imagens do Dynamic Media
-seo-title: Aplicação de predefinições de imagens do Dynamic Media
+seo-title: Applying Dynamic Media image presets
 description: Saiba como aplicar predefinições de imagens no Dynamic Media
-seo-description: Saiba como aplicar predefinições de imagens no Dynamic Media
+seo-description: Learn how to apply image presets in Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,22 +10,26 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
-feature: Predefinições de imagem
+feature: Image Presets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '349'
 ht-degree: 11%
 
 ---
 
 # Aplicação de predefinições de imagens do Dynamic Media {#applying-image-presets}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 As predefinições de imagens permitem que os ativos forneçam dinamicamente imagens de tamanhos diferentes, em formatos diferentes ou com outras propriedades de imagens que foram geradas dinamicamente. Você pode escolher uma predefinição ao exportar imagens, o que também reformata as imagens para as especificações especificadas pelo administrador.
 
-Além disso, você pode escolher uma predefinição de imagem responsiva (designada pelo botão **[!UICONTROL RESS]** após selecioná-la).
+Além disso, é possível escolher uma predefinição de imagem responsiva (designada pela variável **[!UICONTROL RESS]** depois de selecioná-lo).
 
-Esta seção descreve como usar predefinições de imagens. [Os administradores podem criar e configurar predefinições](managing-image-presets.md) de imagens.
+Esta seção descreve como usar predefinições de imagens. [Os administradores podem criar e configurar predefinições de imagens](managing-image-presets.md).
 
 >[!NOTE]
 >
@@ -33,16 +37,15 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
 
 Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualizá-la.
 
-**Para aplicar predefinições** de imagens do Dynamic Media:
+**Para aplicar predefinições de imagens do Dynamic Media**:
 
 1. Abra o ativo e, no painel à esquerda, toque no menu suspenso e toque em **[!UICONTROL Representações]**.
 
    >[!NOTE]
    >
-   >* As representações estáticas são exibidas na metade superior do painel. As representações dinâmicas aparecem na metade inferior. Com representações dinâmicas somente, você pode usar o URL para exibir a imagem. O botão **[!UICONTROL URL]** aparece somente se você selecionar uma representação dinâmica. O botão **[!UICONTROL RESS]** só aparece se você selecionar uma predefinição de imagem responsiva.
-      >
-      >
-   * O sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** na exibição Detalhes de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumentar o número de predefinições de imagens exibidas](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >* As representações estáticas são exibidas na metade superior do painel. As representações dinâmicas aparecem na metade inferior. Com representações dinâmicas somente, você pode usar o URL para exibir a imagem. O **[!UICONTROL URL]** somente será exibido se você selecionar uma representação dinâmica. O **[!UICONTROL RESS]** só será exibido se você selecionar uma predefinição de imagem responsiva.
+   >
+   >* O sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** na exibição Detalhes de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumento do número de predefinições de imagens exibidas](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
@@ -50,7 +53,7 @@ Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualiz
 1. Siga um destes procedimentos:
 
    * Selecione uma representação dinâmica para visualizar a predefinição de imagem.
-   * Toque em **[!UICONTROL URL]**, **[!UICONTROL Incorporar]** ou **[!UICONTROL RESS]** para exibir o pop-up.
+   * Toque **[!UICONTROL URL]**, **[!UICONTROL Incorporar]** ou **[!UICONTROL RESS]** para exibir o pop-up.
 
    >[!NOTE]
    >

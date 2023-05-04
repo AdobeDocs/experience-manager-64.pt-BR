@@ -1,44 +1,47 @@
 ---
 title: Personalização de serviços de dados de rascunho e envio
-seo-title: Personalização de serviços de dados de rascunho e envio
-description: Por padrão, a AEM Forms armazena formulários adaptativos de rascunho e enviados em um nó padrão na instância Publicar. No entanto, você pode configurar os serviços de dados de rascunho e envio da AEM Forms para personalizar o armazenamento de formulários adaptativos de rascunho e enviados.
-seo-description: Por padrão, a AEM Forms armazena formulários adaptativos de rascunho e enviados em um nó padrão na instância Publicar. No entanto, você pode configurar os serviços de dados de rascunho e envio da AEM Forms para personalizar o armazenamento de formulários adaptativos de rascunho e enviados.
+seo-title: Customizing Draft and Submission data services
+description: Por padrão, o AEM Forms armazena formulários adaptáveis de rascunho e enviados em um nó padrão na instância de publicação. No entanto, é possível configurar os serviços de dados de rascunho e envio da AEM Forms para personalizar o armazenamento de formulários adaptáveis de rascunho e enviados.
+seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
-translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+exl-id: c6243a1f-8f8f-48dc-af3b-b165f451ce73
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 3%
 
 ---
 
+# Personalização de serviços de dados de rascunho e envio {#customizing-draft-and-submission-data-services}
 
-# Personalizar serviços de dados de rascunho e envio {#customizing-draft-and-submission-data-services}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
 O AEM Forms permite que os usuários salvem um formulário adaptável como rascunho. A funcionalidade de rascunho fornece aos usuários a opção de manter um formulário de trabalho em andamento. Em seguida, um usuário pode preencher e enviar o formulário a qualquer momento a partir de qualquer dispositivo.
 
-Por padrão, a AEM Forms armazena os dados do usuário associados ao rascunho e ao envio na instância Publicar no nó `/content/forms/fp`.
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio na instância de Publicação no `/content/forms/fp` nó .
 
-No entanto, os componentes do portal da AEM Forms fornecem serviços de dados que permitem personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar os dados em um armazenamento de dados implementado atualmente em sua organização.
+No entanto, os componentes do portal do AEM Forms fornecem serviços de dados que permitem personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar os dados em um armazenamento de dados implementado atualmente em sua organização.
 
-Para personalizar o armazenamento dos dados do usuário, é necessário implementar os serviços [Rascunho de dados](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Enviar dados](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Para personalizar o armazenamento de dados do usuário, é necessário implementar o [Dados de rascunho](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Dados de envio](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) serviços.
 
 ## Pré-requisitos {#prerequisites}
 
-* Habilitar [componentes do portal do Forms](/help/forms/using/enabling-forms-portal-components.md)
-* Criar uma [página de portal de formulários](/help/forms/using/creating-form-portal-page.md)
+* Habilitar [Componentes do portal do Forms](/help/forms/using/enabling-forms-portal-components.md)
+* Crie um [página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
 * Habilitar [formulários adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
-* Saiba mais sobre [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Saiba mais [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## Serviço de dados de rascunho {#draft-data-service}
+## Serviço de rascunho de dados {#draft-data-service}
 
-Para personalizar o armazenamento dos dados de rascunho do usuário, é necessário fornecer a implementação de todos os métodos da interface `DraftAFDataService`.
+Para personalizar o armazenamento de dados de rascunho do usuário, é necessário fornecer a implementação de todos os métodos do `DraftAFDataService` interface.
 
 Uma descrição dos métodos e seus argumentos é fornecida na seguinte amostra de código da interface:
 
@@ -85,7 +88,7 @@ public interface DraftAFDataService {
 
 ## Serviço de dados de envio {#submission-data-service}
 
-Para personalizar o armazenamento dos dados de envio do usuário, é necessário fornecer a implementação de todos os métodos da interface `SubmittedAFDataService`.
+Para personalizar o armazenamento dos dados de envio do usuário, é necessário fornecer a implementação de todos os métodos do `SubmittedAFDataService` interface.
 
 Uma descrição dos métodos e seus argumentos é fornecida na seguinte amostra de código da interface:
 
@@ -131,4 +134,3 @@ public interface SubmittedAFDataService {
 
 }
 ```
-

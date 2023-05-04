@@ -8,14 +8,18 @@ discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 12%
+source-wordcount: '491'
+ht-degree: 13%
 
 ---
 
 # Diretrizes de treinamento do Serviço de conteúdo inteligente {#smart-content-service-training-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Para marcar as imagens de sua marca com eficácia, o Serviço de conteúdo inteligente exige que as imagens de treinamento estejam em conformidade com determinadas diretrizes.
 
@@ -27,19 +31,19 @@ Para obter melhores resultados, as imagens em seu conjunto de treinamento devem 
 
 **Coerência**: As imagens de uma tag devem ser visualmente semelhantes.
 
-Por exemplo, não é uma boa ideia marcar todas essas imagens como *my-party* (para treinamento) porque elas não são visualmente semelhantes.
+Por exemplo, não é uma boa ideia marcar todas essas imagens como *meu partido* (para treinamento) porque não são visualmente semelhantes.
 
 ![Imagens ilustrativas para exemplificar as diretrizes de treinamento](assets/do-not-localize/coherence.png)
 
-**Cobertura**: As imagens da formação devem ser suficientemente variadas. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que [!DNL Experience Manager] aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
+**Cobertura**: As imagens da formação devem ser suficientemente variadas. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que [!DNL Experience Manager] aprende a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
 
-Por exemplo, para a tag *model-down*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
+Por exemplo, para a tag *model-down-pose*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
 
 ![Imagens ilustrativas para exemplificar as diretrizes de treinamento](assets/do-not-localize/coverage_1.png)
 
 **Desvio/obstrução**: O serviço se concentra melhor em imagens com menos distração (planos de fundo proeminentes, acompanhamento não relacionado, como objetos/pessoas com o assunto principal).
 
-Por exemplo, para a tag *casual-shoe*, a segunda imagem não é um bom candidato a treinamento.
+Por exemplo, para a tag *sapato casual*, a segunda imagem não é um bom candidato à formação.
 
 ![Imagens ilustrativas para exemplificar as diretrizes de treinamento](assets/do-not-localize/distraction.png)
 
@@ -47,13 +51,13 @@ Por exemplo, para a tag *casual-shoe*, a segunda imagem não é um bom candidato
 
 ![Imagens ilustrativas para exemplificar as diretrizes de treinamento](assets/do-not-localize/completeness.png)
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 As tags inteligentes aprimoradas são baseadas no aprendizado de modelos de imagens de marca e suas tags. Esses modelos nem sempre são perfeitos na identificação de tags. A versão atual do Serviço de conteúdo inteligente tem as seguintes limitações:
 
 * Incapacidade de reconhecer sutis diferenças em imagens. Por exemplo, camisas finas versus camisas fixas regulares.
 * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em T-shirts.
-* A marcação é suportada nas localidades nas quais [!DNL Experience Manager] é suportado. Para obter uma lista de idiomas, consulte as [Notas de versão dos Serviços de Conteúdo Inteligente](/help/release-notes/smart-content-service-release-notes.md).
+* A marcação é compatível com as localidades que [!DNL Experience Manager] O é compatível com o . Para obter uma lista de idiomas, consulte [Notas de versão dos Serviços de conteúdo inteligente](/help/release-notes/smart-content-service-release-notes.md).
 
 Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use a Pesquisa Omni de ativos (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 

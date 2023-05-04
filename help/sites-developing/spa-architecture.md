@@ -10,16 +10,20 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 exl-id: 7b9f21eb-22f6-42f7-8dc7-770601ef51fc
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 2%
+source-wordcount: '2185'
+ht-degree: 5%
 
 ---
 
 # Desenvolvimento de SPAs para o AEM{#developing-spas-for-aem}
 
-Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo com facilidade no AEM para um site criado usando essas estruturas.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas de SPA, e os autores desejam editar o conteúdo de um site criado usando essas estruturas diretamente no AEM.
 
 Este artigo apresenta questões importantes a serem consideradas ao envolver um desenvolvedor de front-end para desenvolver uma SPA para AEM e fornece uma visão geral da arquitetura de AEM em relação à implantação de SPA no AEM.
 
@@ -31,11 +35,11 @@ Este artigo apresenta questões importantes a serem consideradas ao envolver um 
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
 
 ## Princípios de desenvolvimento SPA para AEM {#spa-development-principles-for-aem}
 
-O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor front-end cumpre as práticas recomendadas padrão ao criar um SPA. Se, como desenvolvedor front-end, você seguir essas práticas recomendadas gerais, bem como alguns princípios específicos de AEM, seu SPA funcionará com [AEM e seus recursos de criação de conteúdo](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
+O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Se, como desenvolvedor front-end, você seguir essas práticas recomendadas gerais, bem como alguns princípios específicos de AEM, seu SPA funcionará com [AEM e seus recursos de criação de conteúdo](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[Portabilidade](/help/sites-developing/spa-architecture.md#portability) -** Assim como em qualquer componente, os componentes devem ser construídos para serem tão portáteis quanto possível. A SPA deve ser criada com componentes portáveis e reutilizáveis, evitando caminhos estáticos que se referem à estrutura do conteúdo.
 * **[AEM unidades Estrutura do Site](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - O desenvolvedor de front-end cria componentes e é proprietário de sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.

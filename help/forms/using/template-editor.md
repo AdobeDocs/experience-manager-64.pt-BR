@@ -1,26 +1,29 @@
 ---
 title: Modelos de formulário adaptável
-seo-title: Modelos de formulário adaptável
+seo-title: Adaptive Form Templates
 description: Crie modelos de formulário adaptáveis definindo a estrutura básica e o conteúdo do formulário inicial usando o Editor de modelos.
-seo-description: Crie modelos de formulário adaptáveis definindo a estrutura básica e o conteúdo do formulário inicial usando o Editor de modelos.
+seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
 uuid: d011bf78-931d-4865-bce5-4328c39402b2
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8bb350f2-a160-4943-bd6a-00f87f4e6cbc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1985'
-ht-degree: 0%
+source-wordcount: '1999'
+ht-degree: 1%
 
 ---
 
+# Modelos de formulário adaptável {#adaptive-form-templates}
 
-# Modelos de formulário adaptáveis {#adaptive-form-templates}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Ao criar um formulário, você adiciona campos e componentes para definir a estrutura, o conteúdo e as ações do formulário no editor. Você adiciona campos e componentes no `guideRootPanel` do contêiner de formulário. Com o Editor de modelo, é possível criar um modelo que contenha a estrutura básica e o conteúdo inicial que os autores podem usar para criar formulários.
+Ao criar um formulário, você adiciona campos e componentes para definir a estrutura, o conteúdo e as ações do formulário no editor. Você adiciona campos e componentes na `guideRootPanel` do contêiner de formulário. Com o Editor de modelo, é possível criar um modelo que contenha a estrutura básica e o conteúdo inicial que os autores podem usar para criar formulários.
 
 Por exemplo, você deseja que todos os autores de formulários tenham determinadas caixas de texto, botões de navegação e um botão Enviar em um formulário de inscrição. É possível criar um modelo com os componentes que os autores podem usar para criar um formulário consistente com outros formulários de inscrição. Quando os autores usam o modelo para criar um formulário adaptável, o novo formulário herda a estrutura e os componentes especificados no modelo. O Editor de modelos permite:
 
@@ -38,37 +41,37 @@ Depois de tocar em para abrir uma pasta, você encontrará um botão Criar que p
 
 Depois de criar uma pasta, abra-a e execute as seguintes etapas para criar um template:
 
-1. No console Modelo , toque em **[!UICONTROL Criar]** dentro da pasta que você criou.
-1. Na seção Selecionar um tipo de modelo , selecione **[!UICONTROL Modelo de formulário adaptável]** e toque em **[!UICONTROL Próximo]**.
+1. No console Modelo , toque em **[!UICONTROL Criar]** na pasta que você criou.
+1. Na seção Selecionar um tipo de modelo , selecione **[!UICONTROL Modelo de formulário adaptável]** e tocar **[!UICONTROL Próximo]**.
 1. Na seção Detalhes do modelo , forneça um Título de modelo e toque em **[!UICONTROL Criar]**.
 
    Você pode fornecer uma descrição e uma miniatura que podem ser exibidas quando é possível selecionar o modelo criado no momento da criação do formulário.
 
-1. Toque em **[!UICONTROL Concluído]** para retornar ao console ou toque em **[!UICONTROL Abrir]** para abrir o modelo no editor.
+1. Toque **[!UICONTROL Concluído]** para retornar ao console ou toque em **[!UICONTROL Abrir]** para abrir o template no editor.
 
 ### Interface do usuário do editor de modelos {#template-editor-ui}
 
 Ao abrir um modelo para edição, você pode ver os seguintes componentes do Editor de AEM:
 
-* **Barra de**
-ferramentas da páginaContém as seguintes opções:
+* **Barra de ferramentas da página**
+Contém as seguintes opções:
 
-   * **Alternar painel** lateral: Permite mostrar ou ocultar a barra lateral.
-   * **Informações** da página: Permite que você especifique informações como o tempo de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política de página e biblioteca do lado do cliente de design de página.
+   * **Alternar painel lateral**: Permite mostrar ou ocultar a barra lateral.
+   * **Informações da página**: Permite que você especifique informações como o tempo de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política de página e biblioteca do lado do cliente de design de página.
    * **Emulador**: Permite simular e personalizar a busca de dispositivos diferentes.
-   * **Seletor de camada:** permite alterar a camada.
+   * **Seletor de camada:** Permite alterar a camada.
 
-      Você pode escolher a camada **Estrutura** ou **Conteúdo inicial**. A camada Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
+      Você pode escolher **Estrutura** camada ou **Conteúdo inicial** camada. A camada Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
 
-   * **Visualização:** permite visualizar a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar os modos de edição e visualização.
+   * **Visualizar:** Permite que você visualize a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar os modos de edição e visualização.
 
-* **Barra lateral:** fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
-* **Barra de ferramentas Componente:** ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.
+* **Barra lateral:** Fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
+* **Barra de ferramentas do componente:** Ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.
 * **Página**: A área onde você adiciona conteúdo para criar o modelo.
 
 Consulte [Introdução à criação de formulários adaptáveis](/help/forms/using/introduction-forms-authoring.md) para entender o editor da interface de toque.
 
-### Editar um modelo {#editing-a-template}
+### Edição de um modelo {#editing-a-template}
 
 Um modelo de formulário adaptável é criado usando duas camadas:
 
@@ -85,7 +88,7 @@ Ao selecionar a camada de estrutura no Editor de modelo, é possível ver os con
 
 **Figura:** *Contêineres de layout na camada de estrutura*
 
-**A.** Contêiner de layout para o componente Cabeçalho  **B.** Contêiner de layout para o componente Rodapé
+**A.** Contêiner de layout para o componente Cabeçalho **B.** Contêiner de layout para o componente Rodapé
 
 Arraste e solte o componente Cabeçalho do formulário adaptável no contêiner de layout acima do Contêiner do formulário adaptável. Após adicionar o componente, é possível especificar suas propriedades que permitem adicionar um logotipo e fornecer seu título.
 
@@ -109,7 +112,7 @@ Por exemplo, você adiciona o componente de cabeçalho no modelo. Ao selecionar 
 
 Quando a opção Conteúdo inicial é selecionada, o Contêiner de formulário adaptável do modelo é aberto como um formulário adaptável para edição. Assim como a criação de um formulário adaptável, você pode especificar as configurações iniciais, como selecionar um tema e enviar ações.
 
-Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png)**[!UICONTROL > Conteúdo inicial ]**.
+Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, toque em ![lista suspensa de tela](assets/canvas-drop-down.png)**[!UICONTROL > Conteúdo inicial ]**.
 
 ![Camada Conteúdo inicial no Editor de modelos](assets/initial-content-layer.png)
 
@@ -134,62 +137,62 @@ Você adicionou um logotipo, forneceu um título e adicionou um rodapé na camad
 
 Altere a camada de Estrutura para Conteúdo inicial e comece a adicionar conteúdo ao formulário. Para criar uma estrutura com guias, adicione um Painel filho no guia Painel raiz do contêiner de Formulário adaptável. Para adicionar um painel:
 
-* Você pode adicionar um painel tocando no botão **+** ao selecionar a opção **Arrastar componentes aqui**.
+* Você pode adicionar um painel tocando no botão **+** ao selecionar o botão **Arraste componentes aqui** opção.
 
 * Você pode arrastar e soltar o componente do painel do navegador de componentes na barra lateral.
-* Você pode adicionar o painel filho do `guideRootPanel` na barra de ferramentas do componente.
+* Você pode adicionar o painel filho da `guideRootPanel` na barra de ferramentas do componente.
 
-Para criar as guias Informações gerais e Informações profissionais , adicione dois painéis no painel filho do `guideRootPanel`. Selecione os painéis e toque em ![cmppr](assets/cmppr.png) para abrir as propriedades na barra lateral. Altere os nomes do elemento como `general-info` e `professional-info` e os títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, toque em conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário , selecione `guideRootPanel`. No editor, o guideRootPanel é selecionado. Toque em ![cmppr](assets/cmppr.png) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel , selecione **Guias no topo** e toque em **Concluído**. A estrutura do modelo com guias é aplicada.
+Para criar as guias Informações gerais e Informações profissionais , adicione dois painéis no painel filho da `guideRootPanel`. Selecione os painéis e toque em ![cmppr](assets/cmppr.png) para abrir as propriedades na barra lateral. Altere os nomes dos elementos como `general-info` e `professional-info`e títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, toque em conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário , selecione `guideRootPanel`. No editor, o guideRootPanel é selecionado. Toque ![cmppr](assets/cmppr.png) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel , selecione **Guias em cima** e tocar **Concluído**. A estrutura do modelo com guias é aplicada.
 
-#### Adicionar conteúdo em guias {#adding-content-in-tabs}
+#### Adição de conteúdo em guias {#adding-content-in-tabs}
 
 ![Adição de campos no modelo de formulário adaptável](assets/template-edit-initial-content.png)
 
 Adição de campos no template
 
-Depois de adicionar painéis e estruturá-los como guias, é possível adicionar campos dentro das guias. Ao selecionar uma guia no editor, é possível ver a opção **[!UICONTROL Arrastar componentes aqui]**. Você pode arrastar e soltar componentes como caixas de texto, itens de lista e botões. Você pode arrastar e soltar componentes do navegador de componentes na barra lateral.
+Depois de adicionar painéis e estruturá-los como guias, é possível adicionar campos dentro das guias. Ao selecionar uma guia no editor, é possível ver a variável **[!UICONTROL Arraste componentes aqui]** opção. Você pode arrastar e soltar componentes como caixas de texto, itens de lista e botões. Você pode arrastar e soltar componentes do navegador de componentes na barra lateral.
 
-Cada componente tem propriedades que aprimoram a captura e a manipulação de dados. Por exemplo, você pode ativar a propriedade **[!UICONTROL Required field]** de um componente. Seus autores podem especificar uma mensagem que seus clientes veem ao ignorar o preenchimento de um campo obrigatório. Especifique a mensagem na propriedade **[!UICONTROL Mensagem de campo obrigatória]**.
+Cada componente tem propriedades que aprimoram a captura e a manipulação de dados. Por exemplo, é possível ativar a variável **[!UICONTROL Campo obrigatório]** de um componente. Seus autores podem especificar uma mensagem que seus clientes veem ao ignorar o preenchimento de um campo obrigatório. Especifique a mensagem em **[!UICONTROL Mensagem de campo necessária]** propriedade.
 
 No modelo de exemplo, os campos Nome, Número de telefone e Data de nascimento são adicionados na guia Informações gerais . Na guia Informações profissionais , são adicionados o tipo de emprego atualmente empregado, os campos de qualificação educacional .
 
 Depois de adicionar campos, é possível adicionar botões, como Enviar e Redefinir.
 
-### Ativar o modelo {#enabling-the-template}
+### Ativação do template {#enabling-the-template}
 
 Ao criar um modelo, ele é adicionado como rascunho. Ative o modelo para usá-lo na criação de formulários adaptáveis. Para ativar um template:
 
-1. Navegue até **[!UICONTROL Adobe Experience Manager > Ferramentas > Modelos]** e abra a pasta na qual você criou o modelo.
+1. Navegar para **[!UICONTROL Adobe Experience Manager > Ferramentas > Modelos]** e abra a pasta na qual você criou o template.
 
 1. O modelo criado é marcado como Rascunho.
-1. Selecione o modelo e toque em **[!UICONTROL Ativar]** na barra de ferramentas.
+1. Selecione o modelo e toque em **[!UICONTROL Habilitar]** na barra de ferramentas.
 
    Ao criar um formulário adaptável, você pode ver o modelo listado quando for solicitado a escolher um modelo.
 
-## Importação ou exportação de um modelo {#importing-or-exporting-a-template}
+## Importação ou exportação de um template {#importing-or-exporting-a-template}
 
-Um formulário funciona com seu modelo. Quando você baixa um formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Ao importar o formulário em uma instância diferente do AEM Forms, ele é importado sem o modelo. Se um formulário for importado, mas seu modelo não estiver disponível, o formulário não será renderizado. Você pode empacotar o modelo personalizado do nó `/conf` em `https://<server>:<port>/crx/packmgr` e porta-o na instância do AEM Forms onde deseja fazer upload do formulário.
+Um formulário funciona com seu modelo. Quando você baixa um formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Ao importar o formulário em uma instância diferente do AEM Forms, ele é importado sem o modelo. Se um formulário for importado, mas seu modelo não estiver disponível, o formulário não será renderizado. Você pode empacotar o modelo personalizado de `/conf` nó no `https://<server>:<port>/crx/packmgr`e a porta na instância do AEM Forms onde deseja fazer upload do formulário.
 
-## Criar um formulário adaptável usando o modelo {#creating-an-adaptive-form-using-the-template}
+## Criação de um formulário adaptável usando o modelo {#creating-an-adaptive-form-using-the-template}
 
 Depois de criar e ativar um modelo, ele fica disponível no Gerenciador de formulários quando você cria um formulário adaptável. Para usar um modelo e criar um formulário adaptável, consulte [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md).
 
-## Alterar a opção de exibição dos modelos predefinidos {#change-display-option-of-out-of-the-box-templates}
+## Alterar a opção de exibição dos modelos predefinidos  {#change-display-option-of-out-of-the-box-templates}
 
 Você pode criar modelos personalizados para formulários adaptáveis para definir a estrutura básica e o conteúdo inicial. O AEM Forms também fornece um conjunto de modelos prontos para uso para formulários adaptáveis. Você pode optar por mostrar ou ocultar os modelos.
 
 Execute as seguintes etapas para mostrar e ocultar modelos:
 
-1. Faça logon na instância do autor do AEM Forms e navegue até **[!UICONTROL Tools > Operations > Web Console]**.
+1. Faça logon na instância do autor do AEM Forms e navegue até **[!UICONTROL Ferramentas > Operações > Console da Web]**.
 
    >[!NOTE]
    >
    >O URL AEM console da Web é `https://[server]:[port]/system/console/configMgr`
 
-1. Localize e abra as configurações do **[!UICONTROL FormsManager Configuration]**:
+1. Localize e abra o **[!UICONTROL Configuração do FormsManager]** configurações:
 
-   * Para mostrar ou ocultar modelos de formulários adaptáveis prontos para uso, marque ou desmarque a opção **Incluir AF pronto para uso e Modelos AD**.
-   * Para mostrar ou ocultar modelos de formulário adaptáveis prontos para uso que foram adicionados AEM versões do Forms 6.0 ou AEM 6.1 Forms, mas agora estão obsoletas, marque ou desmarque a opção **Incluir AEM 6.0 Modelos AF**. Se esta opção estiver marcada, para entrar em vigor, ela exige que a configuração **[!UICONTROL Incluir Fora da Caixa AF e Modelos AD]** esteja habilitada.
+   * Para mostrar ou ocultar modelos de formulários adaptáveis prontos para uso, marque ou desmarque a opção **Incluir modelos AF e AD prontos para uso** opção.
+   * Para mostrar ou ocultar modelos de formulário adaptáveis prontos para uso que foram adicionados nas versões AEM 6.0 Forms ou AEM 6.1 Forms, mas agora estão obsoletas, marque ou desmarque a opção **Incluir modelos AEM 6.0 AF** opção. Se essa opção estiver marcada, para entrar em vigor, ela exigirá que a variável **[!UICONTROL Incluir modelos AF e AD prontos para uso]** configuração a ser ativada.
 
 1. Clique em **[!UICONTROL Salvar]**. As opções de exibição para os templates prontos para uso são alteradas.
 
@@ -199,4 +202,3 @@ Execute as seguintes etapas para mostrar e ocultar modelos:
 * Se quiser adicionar um ponto de interrupção, crie-o ao criar um modelo de formulário adaptável.
 
    Para obter mais informações sobre pontos de interrupção, consulte [Layout responsivo](/help/sites-authoring/responsive-layout.md).
-

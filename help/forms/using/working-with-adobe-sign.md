@@ -11,14 +11,18 @@ discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3562'
+source-wordcount: '3598'
 ht-degree: 0%
 
 ---
 
 # Uso do Acrobat Sign em um formulário adaptável {#using-adobe-sign-in-an-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Habilite fluxos de trabalho de assinatura eletrônica (Acrobat Sign) para um formulário adaptável para automatizar fluxos de trabalho de assinatura, simplificar processos de assinatura única e múltipla e assinar eletronicamente formulários de dispositivos móveis.
 

@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 4%
+source-wordcount: '1109'
+ht-degree: 2%
 
 ---
 
 # Problemas conhecidos {#known-issues}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Esta página mantém uma lista de problemas conhecidos lançados pelo Adobe Experience Manager 6.4 em abril de 2018. Para obter mais informações sobre problemas conhecidos, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR).
 
@@ -46,7 +50,7 @@ Se estiver usando o Microsoft Edge como navegador:
 * Selecionar **[!UICONTROL Sempre desligado]**.
 * Reinicie o navegador.
 
-## Plataforma {#platform}
+## Platform {#platform}
 
 * **Painel de operações:** A barra de progresso não é mostrada quando a extensão .zip do arquivo de backup está ausente. (GRANITE-10713)
 * **HTL:** O objeto Java Use com espaço em branco à direita na declaração do pacote congela o SightlyJavaCompilerService (GRANITE-20836)
@@ -141,6 +145,6 @@ Se estiver usando o Microsoft Edge como navegador:
 
 * O componente Gráfico em formulários adaptáveis ocupa mais espaço do que normalmente.
 * Uma exceção é retornada ao salvar propriedades para formulários adaptáveis, fragmentos de formulário adaptáveis ou comunicações interativas na interface do usuário do Forms Manager.
-* O número máximo de caracteres especificado para uma caixa de texto de formulário adaptável não é respeitado em dispositivos Android 6.0 Samsung. (Ref# CQ-4235205)
+* O número máximo especificado de caracteres para uma caixa de texto de formulário adaptável não é atendido em dispositivos Android 6.0 Samsung. (Ref# CQ-4235205)
 * Às vezes, ao enviar um formulário contendo um campo de carregamento HTML padrão de um dispositivo Apple iOS, o conteúdo do arquivo não é enviado e um arquivo de 0 bytes é recebido na outra extremidade. O Apple iOS 15.1 fornece uma correção para o problema.
 

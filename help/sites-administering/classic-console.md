@@ -1,30 +1,33 @@
 ---
 title: Console de marcação da interface clássica
-seo-title: Console de marcação da interface clássica
-description: Saiba mais sobre o console de marcação da interface clássica.
-seo-description: Saiba mais sobre o console de marcação da interface clássica.
+seo-title: Classic UI Tagging Console
+description: Saiba mais sobre o Console de marcação da interface clássica.
+seo-description: Learn about the Classic UI Tagging Console.
 uuid: c3080c82-0b34-4922-a263-1674a9522649
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 0c989965-c6cc-4ec7-a90f-6c52e8362485
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
 
-
 # Console de marcação da interface clássica{#classic-ui-tagging-console}
 
-Esta seção é para o console de marcação da interface clássica.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-O console de marcação da interface otimizada ao toque é [here](/help/sites-administering/tags.md#tagging-console).
+Esta seção é para o Console de marcação da interface clássica.
 
-Para acessar o console Marcação de interface clássica:
+O console de Marcação da interface otimizada para toque é [here](/help/sites-administering/tags.md#tagging-console).
+
+Para acessar o console Marcação da interface clássica :
 
 * sobre o autor
 * fazer logon com privilégios administrativos
@@ -34,25 +37,25 @@ Para acessar o console Marcação de interface clássica:
 
 ![managing_tags_usingthetagasministationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
-## Criar tags e Namespaces {#creating-tags-and-namespaces}
+## Criação de tags e namespaces {#creating-tags-and-namespaces}
 
-1. Dependendo do nível a partir do qual você está começando, é possível criar uma tag ou uma namespace usando **New**:
+1. Dependendo do nível a partir do qual você está começando, é possível criar uma tag ou um namespace usando **Novo**:
 
-   Se você selecionar **Tags**, poderá criar uma namespace:
+   Se você selecionar **Tags** você pode criar um namespace:
 
    ![creating_tags_andnamespaces-1](assets/creating_tags_andnamespaces-1.png)
 
-   Se você selecionar uma namespace (por exemplo **Demonstração**), poderá criar uma tag dentro dessa namespace:
+   Se você selecionar um namespace (por exemplo, **Demonstração**) você pode criar uma tag dentro desse namespace:
 
    ![creating_tags_andnamespacesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
 
-1. Em ambos os casos, informe
+1. Em ambos os casos, insira
 
    * **Título**
 (
 *Obrigatório*) O título de exibição da tag. Enquanto qualquer caractere pode ser inserido,
 
-      recomenda-se não usar esses caracteres especiais:
+      é recomendável não usar esses caracteres especiais :
 
       * `colon (:)` - delimitador de namespace
       * `forward slash (/)` - delimitador de subtags
@@ -65,93 +68,93 @@ Para acessar o console Marcação de interface clássica:
 
    * **Descrição**
 
-      (*Opcional*) Uma descrição para a tag .
+      (*Opcional*) Uma descrição da tag.
 
-   * selecione **Criar**
+   * select **Criar**
 
 
 ## Edição de tags {#editing-tags}
 
 1. No painel direito, selecione a tag que deseja editar.
 1. Clique em **Editar**.
-1. Você pode modificar **Title** e **Descrição**.
+1. Você pode modificar o **Título** e **Descrição**.
 1. Clique em **Salvar** para fechar a caixa de diálogo.
 
-## Excluindo tags {#deleting-tags}
+## Exclusão de tags {#deleting-tags}
 
 1. No painel direito, selecione a tag que deseja excluir.
 1. Clique em **Excluir**.
-1. Clique em **Yes** para fechar a caixa de diálogo.
+1. Clique em **Sim** para fechar a caixa de diálogo.
 
    A tag não deve mais ser listada.
 
-## Ativando e desativando tags {#activating-and-deactivating-tags}
+## Ativação e desativação de tags {#activating-and-deactivating-tags}
 
-1. No painel direito, selecione a namespace ou tag que deseja ativar (publicar) ou desativar (cancelar publicação).
+1. No painel direito, selecione o namespace ou tag que deseja ativar (publicar) ou desativar (cancelar publicação).
 1. Clique em **Ativar** ou **Desativar** conforme necessário.
 
-## Lista - mostrando onde as tags são referenciadas {#list-showing-where-tags-are-referenced}
+## Lista - mostrar onde as tags são referenciadas {#list-showing-where-tags-are-referenced}
 
-**A** lista abre uma nova janela mostrando os caminhos de todas as páginas usando a tag realçada:
+**Lista** abre uma nova janela mostrando os caminhos de todas as páginas usando a tag realçada:
 
-![lista_show_wheretagsarereferenciado](assets/list_showing_wheretagsarereferenced.png)
+![list_show_wheretagsarereferenced](assets/list_showing_wheretagsarereferenced.png)
 
 ## Mover tags {#moving-tags}
 
-Para ajudar os administradores e desenvolvedores de tags a limpar a taxonomia ou renomear uma ID de tag, é possível mover uma tag para um novo local:
+Para ajudar os administradores de tags e desenvolvedores a limpar a taxonomia ou renomear uma ID de tag, é possível mover uma tag para um novo local :
 
-1. Abra o console **Marcação**.
+1. Abra o **Marcação** console.
 1. Selecione a tag e clique em **Mover...** na barra de ferramentas superior (ou no menu de contexto).
-1. Na caixa de diálogo **Mover tag**, defina:
+1. No **Mover tag** , defina:
 
    * **para**, o nó de destino.
-   * **Renomeie para**, o novo nome do nó.
+   * **Renomear para**, o novo nome do nó.
 
 1. Clique em **Mover**.
 
-A caixa de diálogo **Mover tag** tem a seguinte aparência:
+O **Mover tag** Essa caixa de diálogo tem a seguinte aparência:
 
 ![move_tag](assets/move_tag.png)
 
 >[!NOTE]
 >
->Os autores não devem mover tags nem renomear uma ID de tag. Quando necessário, os Autores devem apenas [alterar os títulos das tags](#editing-tags).
+>Os autores não devem mover tags ou renomear uma ID de tag. Quando necessário, os Autores deverão apenas [alterar os títulos das tags](#editing-tags).
 
 ## Mesclar tags {#merging-tags}
 
-A mesclagem de tags pode ser usada quando uma taxonomia tem duplicados. Quando a tag A é unida à tag B, todas as páginas marcadas com a tag A serão marcadas com a tag B e a tag A não estará mais disponível para os autores.
+A mesclagem de tags pode ser usada quando uma taxonomia tem duplicatas. Quando a tag A é unida na tag B, todas as páginas marcadas com a tag A serão marcadas com a tag B e a tag A não estará mais disponível para os autores.
 
-Para unir uma tag a outra:
+Para mesclar uma tag em outra:
 
-1. Abra o console **Marcação**.
+1. Abra o **Marcação** console.
 1. Selecione a tag e clique em **Mesclar...** na barra de ferramentas superior (ou no menu de contexto).
-1. Na caixa de diálogo **Mesclar tag**, defina:
+1. No **Mesclar Tag** , defina:
 
-   * **dentro**, o nó de destino.
+   * **em**, o nó de destino.
 
 1. Clique em **Mesclar**.
 
-A caixa de diálogo **Mesclar tag** tem a seguinte aparência:
+O **Mesclar Tag** Essa caixa de diálogo tem a seguinte aparência:
 
 ![mergetag](assets/mergetag.png)
 
-## Contagem de uso de tags {#counting-usage-of-tags}
+## Uso de contagem de tags {#counting-usage-of-tags}
 
 Para ver quantas vezes uma tag está sendo usada:
 
-1. Abra o console **Marcação**.
-1. Clique em **Contar uso** na barra de ferramentas superior: a contagem de colunas exibe o resultado.
+1. Abra o **Marcação** console.
+1. Clique em **Uso de contagem** na barra de ferramentas superior: a coluna Contagem exibe o resultado.
 
-## Gerenciando tags em diferentes idiomas {#managing-tags-in-different-languages}
+## Gerenciamento de tags em diferentes idiomas {#managing-tags-in-different-languages}
 
-A propriedade opcional `title`de uma tag pode ser traduzida para vários idiomas. A tag `titles` pode ser exibida de acordo com o idioma do usuário ou com o idioma da página.
+O `title`a propriedade de uma tag pode ser traduzida para vários idiomas. Tag `titles` pode ser exibido de acordo com o idioma do usuário ou com o idioma da página.
 
 ### Definição de títulos de tag em vários idiomas {#defining-tag-titles-in-multiple-languages}
 
-O procedimento a seguir mostra como traduzir `title`da tag **Animais** para inglês, alemão e francês:
+O procedimento a seguir mostra como traduzir a variável `title`da tag **Animais** em inglês, alemão e francês:
 
-1. Vá para o console **Marcação**.
-1. Edite a tag **Animais** abaixo de **Tags** > **Fotografia de estoque**.
+1. Vá para o **Marcação** console.
+1. Editar a tag **Animais** below **Tags** > **Fotografia de bancos de dados**.
 1. Adicione as traduções nos seguintes idiomas:
 
    * **Inglês**: Animais
@@ -164,28 +167,27 @@ A caixa de diálogo tem a seguinte aparência:
 
 ![edit_tag](assets/edit_tag.png)
 
-O console Marcação usa a configuração de idioma do usuário, portanto, para a tag Animal, &quot;Animaux&quot; é exibido para um usuário que define o idioma como francês nas propriedades do usuário.
+O console Marcação usa a configuração do idioma do usuário, portanto, para a tag Animal, &quot;Animaux&quot; é exibido para um usuário que define o idioma como francês nas propriedades do usuário.
 
-Para adicionar um novo idioma à caixa de diálogo, consulte a seção [Adicionar um novo idioma à caixa de diálogo Editar tag](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) na seção **Marcação para desenvolvedores**.
+Para adicionar um novo idioma à caixa de diálogo, consulte a seção [Adicionar um novo idioma à caixa de diálogo Editar tag](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) no **Marcação para desenvolvedores** seção.
 
-### Exibição de títulos de tag nas propriedades da página em um idioma especificado {#displaying-tag-titles-in-page-properties-in-a-specified-language}
+### Exibição dos títulos de tag nas propriedades da página em um idioma especificado {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-Por padrão, a tag `titles`nas propriedades da página é exibida no idioma da página. A caixa de diálogo da tag nas propriedades da página tem um campo de idioma que permite a exibição da tag `titles`em um idioma diferente. O procedimento a seguir descreve como exibir a tag `titles`em francês:
+Por padrão, a tag `titles`nas propriedades da página são exibidas no idioma da página. A caixa de diálogo da tag nas propriedades da página tem um campo de idioma que permite a exibição da tag `titles`em um idioma diferente. O procedimento a seguir descreve como exibir a tag `titles`em francês:
 
-1. Consulte a seção anterior para adicionar a tradução em francês ao **Animais** abaixo de **Tags** > **Fotografia de estoque**.
-1. Abra as propriedades de página da página **Products** na ramificação em inglês do site **Geometrixx**.
-1. Abra a caixa de diálogo **Tags/Palavras-chave** (selecionando o menu suspenso à direita da área de exibição Tags/Palavras-chave) e selecione o idioma **Francês** no menu suspenso no canto inferior direito.
-1. Role usando as setas para a esquerda e para a direita até selecionar a guia **Stock Photography**
+1. Consulte a seção anterior para adicionar a tradução em francês ao **Animais** below **Tags** > **Fotografia de bancos de dados**.
+1. Abra as propriedades da página do **Produtos** na ramificação inglesa do **Geometrixx** site.
+1. Abra o **Tags/Palavras-chave** (selecionando o menu suspenso à direita da área de exibição Tags/Palavras-chave) e selecione o **Francês** no menu suspenso, no canto inferior direito.
+1. Role usando as setas para a esquerda e para a direita até selecionar a variável **Fotografia de bancos de dados** guia
 
-   Selecione a tag **Animais** (**Animaux**) e selecione fora da caixa de diálogo para fechá-la e adicionar a tag às propriedades da página.
+   Selecione o **Animais** (**Animaux**) e selecione fora da caixa de diálogo para fechá-la e adicionar a tag às propriedades da página.
 
    ![french_tag](assets/french_tag.png)
 
 Por padrão, a caixa de diálogo Propriedades da página exibe a tag `titles`de acordo com o idioma da página.
 
-Em geral, o idioma da tag será retirado do idioma da página se o idioma da página estiver disponível. Quando o [widget de tags](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), a linguagem da tag depende do contexto.
+Em geral, o idioma da tag é retirado do idioma da página se o idioma estiver disponível. Quando a variável [widget de tags](/help/sites-developing/building.md#tagging-on-the-client-side) é usada em outros casos (por exemplo, em formulários ou em caixas de diálogo), o idioma da tag depende do contexto.
 
 >[!NOTE]
 >
->A nuvem de tags e as palavras-chave meta no componente de página padrão usam a tag localizada `titles`com base no idioma da página, se disponível.
-
+>A nuvem de tags e as meta palavras-chave no componente de página padrão usam a tag localizada `titles`com base no idioma da página, se disponível.

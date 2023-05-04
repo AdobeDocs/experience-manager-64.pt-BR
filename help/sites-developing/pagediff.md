@@ -1,30 +1,33 @@
 ---
 title: Desenvolvimento e diff de página
-seo-title: Desenvolvimento e diff de página
+seo-title: Developing and Page Diff
 description: Desenvolvimento e diff de página
-seo-description: 'null'
+seo-description: null
 uuid: 48bbeca3-fe16-48ef-bb4d-ac605fe0ca76
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 8%
+source-wordcount: '515'
+ht-degree: 2%
 
 ---
 
-
 # Desenvolvimento e diff de página{#developing-and-page-diff}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral dos recursos {#feature-overview}
 
-A criação de conteúdo é um processo iterativo. Criar com eficiência exige poder ver o que mudou de uma iteração para outra. Visualizar uma versão da página e, em seguida, a outra é um processo ineficiente e propenso a erros. Um autor deseja poder comparar a página atual com uma versão anterior lado a lado com as diferenças destacadas.
+A criação de conteúdo é um processo iterativo. A criação com eficiência requer a capacidade de ver o que mudou de uma iteração para outra. Visualizar uma versão de página e depois a outra é ineficiente e propenso a erros. Um autor deseja poder comparar a página atual com uma versão anterior lado a lado com as diferenças destacadas.
 
-O diferencial de páginas permite que um usuário compare a página atual com inicializações, versões anteriores etc. Para obter detalhes sobre esse recurso do usuário, consulte [Diff de página](/help/sites-authoring/page-diff.md).
+O diferencial de páginas permite que um usuário compare a página atual com inicializações, versões anteriores etc. Para obter detalhes sobre este recurso do usuário, consulte [Diff da página](/help/sites-authoring/page-diff.md).
 
 ## Detalhes da Operação {#operation-details}
 
@@ -44,9 +47,9 @@ Como ao usar o mecanismo diff da página, AEM recria a versão anterior da pági
 
 >[!CAUTION]
 >
->Para usar o recurso de diferencial de página, o usuário precisa ter a permissão **Modificar/Criar/Excluir** no nó `/content/versionhistory`.
+>Para usar o recurso de diferencial de página, o usuário precisa ter a variável **Modificar/Criar/Excluir** permissão no nó `/content/versionhistory`.
 
-### A partir AEM 6.4.3 {#as-of-aem}
+### A partir do AEM 6.4.3 {#as-of-aem}
 
 Quando o conteúdo é comparado, a árvore inteira até a página a ser comparada é recriada no seguinte local:
 
@@ -58,7 +61,7 @@ Uma tarefa de limpeza é executada automaticamente para limpar esse conteúdo te
 
 ## Limitações do desenvolvedor {#developer-limitations}
 
-Anteriormente, na interface do usuário clássica, era necessário considerar o desenvolvimento especial para facilitar a diferenciação AEM (como usar `cq:text` tag lib ou integrar o serviço `DiffService` OSGi em componentes). Isso não é mais necessário para o novo recurso de diferencial, pois o recurso de diferencial ocorre no lado do cliente por meio da comparação de DOM.
+Anteriormente, na interface do usuário clássica, era necessário considerar o desenvolvimento especial para facilitar a diferenciação AEM (como usar `cq:text` biblioteca de tags ou integração personalizada do `DiffService` Serviço OSGi em componentes). Isso não é mais necessário para o novo recurso de diferencial, pois o recurso de diferencial ocorre no lado do cliente por meio da comparação de DOM.
 
 No entanto, há várias limitações que precisam ser consideradas pelo desenvolvedor.
 
@@ -76,4 +79,3 @@ No entanto, há várias limitações que precisam ser consideradas pelo desenvol
    * Componentes que usam AJAX para incluir conteúdo
    * Aplicativos de página única
    * Componentes baseados em JavaScript que manipulam o DOM na interação do usuário.
-

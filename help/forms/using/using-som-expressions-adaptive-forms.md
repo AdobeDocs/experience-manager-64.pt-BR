@@ -1,23 +1,26 @@
 ---
 title: Uso de expressões SOM em formulários adaptáveis
-seo-title: Uso de expressões SOM em formulários adaptáveis
+seo-title: Using SOM expressions in adaptive forms
 description: Saiba como extrair expressões SOM de um painel de um formulário adaptável.
-seo-description: Saiba como extrair expressões SOM de um painel de um formulário adaptável.
+seo-description: Learn how to extract SOM expressions of a panel of an adaptive form.
 uuid: 4bc80e2a-3563-48a3-996d-021b701bc2ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e4680ede-6a02-4b8b-8a6f-9599a05da8e7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
-
 # Uso de expressões SOM em formulários adaptáveis {#using-som-expressions-in-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os formulários adaptáveis são modelados como Página AEM, que é representada como estrutura de conteúdo JCR em AEM repositório. O elemento principal da estrutura de conteúdo é o nó guideContainer . Abaixo guideContainer, há um rootPanel que pode conter campos e painel aninhados.
 
@@ -39,5 +42,4 @@ Em painéis, você pode acessar o recurso na barra de ferramentas do painel. O r
 
 ![Extraindo expressões SOM usando a barra de ferramentas do painel](assets/som-expression.png)
 
-Algumas APIs listadas em [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.md) usam a expressão SOM de um elemento. Por exemplo, para trazer o foco para um campo específico em um formulário adaptável, passe a expressão SOM correspondente para a API `getFocus`em `guideBridge`.
-
+Algumas APIs listadas em [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.md) use a expressão SOM de um elemento. Por exemplo, para trazer o foco para um campo específico em um formulário adaptável, passe a expressão SOM correspondente para a variável `getFocus`API em `guideBridge`.

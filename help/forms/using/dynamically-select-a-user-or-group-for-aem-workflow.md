@@ -8,14 +8,18 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '956'
 ht-degree: 1%
 
 ---
 
 # Selecione dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Saiba como selecionar um usuário ou grupo para um fluxo de trabalho do AEM Forms no tempo de execução.
 
@@ -45,7 +49,7 @@ O ECMAScript é uma linguagem de script. Ele é usado para aplicativos de servid
 
       | Nome | Tipo | Valor |
       |--- |--- |--- |
-      | jcr:title | Sequência de caracteres | Especifique o nome do script. Por exemplo, escolha o agente de campo mais próximo. Esse nome é exibido nas etapas Atribuir tarefa e Assinar documento . |
+      | jcr:title | String | Especifique o nome do script. Por exemplo, escolha o agente de campo mais próximo. Esse nome é exibido nas etapas Atribuir tarefa e Assinar documento . |
 
    1. Clique em **Salvar tudo**. O script fica disponível para seleção nos componentes AEM fluxo de trabalho.
 
@@ -118,7 +122,7 @@ function getAdobeSignRecipients() {
 
 Você pode usar o [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java para escolher dinamicamente um usuário ou grupo para as etapas do Acrobat Sign e Atribuir tarefa. Você pode criar um pacote OSGi que usou o [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java e implante-a no servidor da AEM Forms. Ela disponibiliza a opção para seleção nos componentes Atribuir tarefa e Acrobat Sign do Fluxo de trabalho AEM.
 
-Você precisa [SDK do cliente da AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) jar e [jarro de granito](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) arquivos para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
+Você precisa [SDK do cliente da AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar e [jarro de granito](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) arquivos para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
 1. Abra o Eclipse IDE. Navegar para **[!UICONTROL Arquivo]**> **[!UICONTROL Novo projeto]**.
 1. Na tela Selecionar um assistente , selecione **[!UICONTROL Projeto Maven]** e clique em **[!UICONTROL Próximo]**.

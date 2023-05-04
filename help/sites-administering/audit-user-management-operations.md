@@ -1,9 +1,9 @@
 ---
 title: Como auditar operações de gerenciamento de usuários no AEM
-seo-title: Como auditar operações de gerenciamento de usuários no AEM
+seo-title: How to Audit User Management Operations in AEM
 description: Saiba como auditar Operações de gerenciamento de usuários no AEM.
 feature: Operations
-seo-description: Saiba como auditar Operações de gerenciamento de usuários no AEM.
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-translation-type: tm+mt
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 3%
 
 ---
 
 # Como auditar operações de gerenciamento de usuários no AEM{#how-to-audit-user-management-operations-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -31,22 +34,22 @@ O aprimoramento permite as ações de auditoria CRUD (Criar, Ler, Atualizar, Exc
 * Um usuário sendo adicionado a um grupo
 * Alterações de permissão de um usuário ou grupo existente
 
-Por padrão, as entradas serão gravadas no arquivo `error.log` . Para facilitar o monitoramento, é recomendável que ele seja redirecionado para um arquivo de log separado. Mais informações sobre como fazer isso no parágrafo abaixo.
+Por padrão, as entradas serão gravadas no `error.log` arquivo. Para facilitar o monitoramento, é recomendável que ele seja redirecionado para um arquivo de log separado. Mais informações sobre como fazer isso no parágrafo abaixo.
 
 ## Redirecionando a saída para um arquivo de log separado {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirecionar a saída do registro para um arquivo de registro separado, será necessário criar uma nova configuração **Apache Sling Logging Logger** . Usaremos `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
+Para redirecionar a saída de log para um arquivo de log separado, será necessário criar um novo **Log de log do Apache Sling** configuração. Usaremos `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
 
 1. Vá para o Console da Web navegando até `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. Procure por **Apache Sling Logging Logger Configuration**. Em seguida, pressione o &quot;+&quot; no lado direito da entrada para criar uma nova configuração de fábrica.
+1. Procurar por **Configuração do Apache Sling Logging Logger**. Em seguida, pressione o &quot;+&quot; no lado direito da entrada para criar uma nova configuração de fábrica.
 1. Crie a seguinte configuração:
 
-   * **Nível de registro:** informações
+   * **Nível de registro:** Informações
    * **Arquivo de log:** logs/useraudit.log
-   * **Padrão de mensagem:padrão de nível** 
-   * **Agente de log:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+   * **Padrão da mensagem:** padrão de nível
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para inserir ambos os loggers no campo **Logger**, é necessário inserir o nome do primeiro e criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo logger.
+   Para inserir os dois loggers no **Logger** , é necessário inserir o nome do primeiro, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo registrador.
 
 ## Exemplo de saída {#example-output}
 
@@ -82,7 +85,7 @@ Se configurado corretamente, a saída deverá ter esta aparência:
 19.05.2017 15:44:10.405 *INFO* [0:0:0:0:0:0:0:1 [1495197850401] POST /home/users/3/35XVpVtLRx4a5J9gKrVG.rw.userprops.html HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction Password for User 'john' was changed
 ```
 
-## Interface do usuário clássica
+## IU Clássica
 
 Na interface clássica, as informações sobre operações de CRUD registradas no log de auditoria relacionadas à adição e exclusão de usuários estão limitadas à ID do usuário afetado e quando a alteração ocorreu.
 

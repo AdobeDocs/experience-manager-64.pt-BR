@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 19%
+source-wordcount: '498'
+ht-degree: 13%
 
 ---
 
 # Práticas recomendadas    {#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
 
@@ -42,7 +46,7 @@ As seguintes áreas têm documentação disponível específica para o desenvolv
 * [Communities](/help/sites-developing/best-practices.md#communities)
 * [Ferramentas/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-Documentos específicos estão descritos e vinculados nas tabelas a seguir.
+Documentos específicos são descritos e vinculados nas tabelas a seguir.
 
 Para obter as práticas recomendadas de administração, implantação e manutenção ou criação, consulte um dos seguintes:
 
@@ -52,7 +56,7 @@ Para obter as práticas recomendadas de administração, implantação e manuten
 
 ## Sites {#sites}
 
-O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas recomendadas descritas a seguir:
+O gerenciamento e a criação do conteúdo do seu site têm algumas práticas recomendadas descritas a seguir:
 
 <table> 
  <tbody>
@@ -79,7 +83,7 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
  </tbody>
 </table>
 
-## Comunidades {#communities}
+## Communities {#communities}
 
 [AEM Communities](/help/communities/overview.md) simplifica a criação e o gerenciamento de comunidades locais.
 

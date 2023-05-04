@@ -1,8 +1,8 @@
 ---
 title: Console da Web
-seo-title: Console da Web
+seo-title: Web Console
 description: Saiba como usar o console da Web AEM.
-seo-description: Saiba como usar o console da Web AEM.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,18 +10,21 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a8a3267d-2af5-4cca-b76d-66de62d93f69
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 2%
+source-wordcount: '754'
+ht-degree: 3%
 
 ---
 
-
 # Console da Web{#web-console}
 
-O console da Web no AEM é baseado no [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de Serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+O console da Web no AEM é baseado no [Console de Gerenciamento da Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de Serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
 
 >[!NOTE]
 >
@@ -43,13 +46,13 @@ O console pode ser acessado de `../system/console`; por exemplo:
 
 ## Configuração {#configuration}
 
-A guia **Configuration** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema.
+O **Configuração** A guia é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema.
 
 >[!NOTE]
 >
->Consulte [Configuração OSGi com o Console da Web](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes.
+>Consulte [Configuração do OSGi com o console da Web](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes.
 
-A guia **Configuration** pode ser acessada por:
+O **Configuração** Essa guia pode ser acessada por:
 
 * O menu suspenso:
 
@@ -65,14 +68,14 @@ Uma lista de configurações será exibida:
 
 Há dois tipos de configurações disponíveis nas listas suspensas nesta tela:
 
-* ****
-ConfiguraçõesPermite atualizar as configurações existentes. Eles têm uma Identidade Persistente (PID) e podem ser:
+* **Configurações**
+Permite atualizar as configurações existentes. Eles têm uma Identidade Persistente (PID) e podem ser:
 
    * Norma e integral em AEM; são obrigatórios, se excluídos, os valores retornam às configurações padrão.
    * instâncias criadas a partir de configurações de fábrica; essas instâncias são criadas pelo usuário, a exclusão remove a instância .
 
-* **Fatory**
-ConfigurationsPermite criar uma instância do objeto de funcionalidade necessário.
+* **Configurações de fábrica**
+Permite criar uma instância do objeto de funcionalidade necessário.
 
    Isso receberá uma Identidade Persistente, listada na lista suspensa Configurações .
 
@@ -106,7 +109,7 @@ Em seguida, você pode atualizar os parâmetros conforme necessário e:
 
 ## Pacotes {#bundles}
 
-A guia **Bundles** é o mecanismo para instalar os pacotes OSGi necessários para o AEM. A guia pode ser acessada por um dos métodos a seguir:
+O **Pacotes** é o mecanismo para instalar os pacotes OSGi necessários para o AEM. A guia pode ser acessada por um dos métodos a seguir:
 
 * O menu suspenso:
 
@@ -154,11 +157,11 @@ Com essa guia, é possível:
 
 >[!NOTE]
 >
->Após **Atualizar**, é recomendável executar **Atualizar Pacotes**.
+>Depois **Atualizar** é recomendável executar uma **Atualizar pacotes**.
 
 ## Componentes {#components}
 
-A guia **Components** permite habilitar e/ou desabilitar os vários componentes. Ele pode ser acessado por:
+O **Componentes** permite ativar e/ou desativar os vários componentes. Ele pode ser acessado por:
 
 * O menu suspenso:
 
@@ -181,4 +184,3 @@ Clicar no nome de um componente específico exibirá mais informações sobre se
 >Habilitar ou desabilitar um componente só será aplicado até que AEM/CRX seja reiniciado.
 >
 >O estado inicial é definido no descritor do componente, que é gerado durante o desenvolvimento e armazenado no pacote no momento da criação do pacote.
-

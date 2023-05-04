@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 7%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
 # Configurar sua página para a edição de itens em massa das propriedades da página {#configuring-your-page-for-bulk-editing-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 [Edição em massa das propriedades da página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) O permite editar as propriedades de várias páginas de uma só vez.
 
@@ -40,7 +44,7 @@ Devido à possibilidade de valores diferentes, as propriedades da página não s
 
 >[!NOTE]
 >
->A edição em massa também está disponível para Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/managing-multiple-assets.md) para obter as informações completas. Você pode personalizar os campos no editor de Metadados em massa do Assets usando o [Editor de esquema](/help/assets/metadata-schemas.md).
+>A edição em massa também está disponível para Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/managing-multiple-assets.md) para obter informações completas. Você pode personalizar os campos no editor de Metadados em massa do Assets usando o [Editor de esquema](/help/assets/metadata-schemas.md).
 
 ## Ativar um campo {#enabling-a-field}
 

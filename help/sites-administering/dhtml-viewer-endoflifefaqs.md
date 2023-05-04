@@ -1,5 +1,5 @@
 ---
-title: 'Perguntas frequentes sobre fim de vida útil de visualizadores DHTML '
+title: Perguntas frequentes sobre fim de vida útil de visualizadores DHTML
 description: A partir de 31 de janeiro de 2014, a plataforma do visualizador DHTML será encerrada oficialmente.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -7,18 +7,22 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
-source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 9%
+source-wordcount: '78'
+ht-degree: 15%
 
 ---
 
 # Fim da vida útil do visualizador DHTML {#dhtml-viewer-end-of-life-}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 A partir de 31 de janeiro de 2014, a plataforma do visualizador DHTML será oficialmente encerrada.
 
-Consulte o [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para obter os visualizadores mais recentes compatíveis.
+Consulte a [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para os visualizadores compatíveis mais recentes.
 
 <!-- **What is the change?**
 

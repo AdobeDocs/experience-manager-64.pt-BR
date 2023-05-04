@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 exl-id: dbeed62e-eff1-47bc-b6da-cad543295170
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 6%
+source-wordcount: '751'
+ht-degree: 7%
 
 ---
 
 # Criar o aplicativo AEM Forms Android {#build-the-aem-forms-android-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Execute as etapas a seguir na sequência recomendada para criar o aplicativo Android para AEM Forms.
 

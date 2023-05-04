@@ -1,25 +1,28 @@
 ---
 title: Consoles Ferramentas
-description: Saiba mais sobre os diferentes consoles de ferramentas no Adobe Experience Manager.
+description: Saiba mais sobre os diferentes consoles Ferramentas em todo o Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 34%
+source-wordcount: '911'
+ht-degree: 20%
 
 ---
 
-
 # Consoles Ferramentas{#tools-consoles}
 
-Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. No momento, existem dois sabores do console **Ferramentas** dependendo da interface do usuário que você está usando:
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-* [Ferramentas - IU clássica](#tools-classic-ui)
-* [Ferramentas - IU otimizada ao toque](#tools-touch-optimized-ui)
+Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem dois sabores do **Ferramentas** console dependente da interface do usuário usada:
+
+* [Ferramentas - Interface clássica](#tools-classic-ui)
+* [Ferramentas - Interface otimizada para toque](#tools-touch-optimized-ui)
 
 ## Ferramentas - Interface clássica {#tools-classic-ui}
 
@@ -33,17 +36,17 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td><a href="/help/sites-administering/msm.md">Centro de controle MSM</a></td> 
    <td> </td> 
-   <td>Ponto centralizado para gerenciar seus vários sites.</td> 
+   <td>Ponto centralizado para gerenciar vários sites.</td> 
   </tr> 
   <tr> 
    <td>Configurações de contexto do cliente<br /> </td> 
    <td> </td> 
-   <td>O <a href="/help/sites-developing/client-context.md">Contexto do cliente</a> representa uma coleção de dados do usuário dinamicamente montada. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td> 
+   <td>O <a href="/help/sites-developing/client-context.md">Contexto do cliente</a> representa uma coleção dinâmica de dados do usuário. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td> 
   </tr> 
   <tr> 
    <td>Configurações dos serviços em nuvem<br /> </td> 
    <td> </td> 
-   <td>Mantém configurações relacionadas a <a href="/help/sites-administering/marketing-cloud.md">Integração com o Adobe Marketing Cloud</a>.</td> 
+   <td>Mantém configurações relacionadas a <a href="/help/sites-administering/marketing-cloud.md">Integração com a Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Commerce</a></td> 
@@ -53,17 +56,17 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td>DAM - Digital Rights Management<br /> </td> 
    <td> </td> 
-   <td>Fornece acesso a informações e licenças de direitos digitais.</td> 
+   <td>Fornece acesso a informações e licenças sobre direitos digitais.</td> 
   </tr> 
   <tr> 
    <td>DAM - Verificador de integridade<br /> </td> 
    <td> </td> 
-   <td>Compara <code>/var/dam</code> e <code>/content/dam</code> e verifica <br /> se há inconsistências. Quaisquer arquivos/pastas listados podem ser sincronizados ou excluídos. Os tipos de nós para comparação de pastas são configuráveis no console da Web.</td> 
+   <td>Compara <code>/var/dam</code> e <code>/content/dam</code> e controlos<br /> quaisquer inconsistências. Todos os arquivos/pastas listados podem ser sincronizados ou excluídos. Os tipos de nó para comparação de pastas são configuráveis no console da Web.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Indesign Adobe<br /> </td> 
+   <td>DAM - Indesign do Adobe<br /> </td> 
    <td> </td> 
-   <td>Scripts para uso em conjunto com o Adobe Indesign.</td> 
+   <td>Scripts para uso em conjunto com Adobe Indesign.</td> 
   </tr> 
   <tr> 
    <td>DAM - Perfis de vídeo<br /> </td> 
@@ -78,32 +81,32 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td><a href="/help/sites-developing/designer.md">Designs</a></td> 
    <td> </td> 
-   <td>Mantém a lista de designs definidos, incluindo os arquivos gráficos e css a serem usados.</td> 
+   <td>Contém a lista de designs definidos, incluindo os gráficos e os arquivos css a serem usados.</td> 
   </tr> 
   <tr> 
    <td>Documentação personalizada</td> 
    <td> </td> 
-   <td>Usado ao estender a documentação e a ajuda online.</td> 
+   <td>Usada ao estender a documentação e a ajuda online.</td> 
   </tr> 
   <tr> 
    <td>Envio de formulário</td> 
    <td> </td> 
-   <td>Retém a lista de envios de formulário recebidos.</td> 
+   <td>Contém a lista de envios de formulário recebidos.</td> 
   </tr> 
   <tr> 
-   <td>Importadores - <a href="/help/sites-administering/bulk-editor.md">Editor em Massa</a></td> 
+   <td>Importadores - <a href="/help/sites-administering/bulk-editor.md">Editor em massa</a></td> 
    <td> </td> 
    <td>Permite que você procure itens e edite-os em massa. Também é possível exportar e importar conteúdo (em massa) para o repositório.</td> 
   </tr>
   <tr> 
    <td>Importador - Importador de feed</td> 
    <td> </td> 
-   <td><p>O importador de feed é uma estrutura para importar repetidamente conteúdo de fontes externas para o repositório. A ideia do importador de feed é fazer uma pesquisa em um recurso remoto em um intervalo especificado, analisá-lo e criar nós no repositório de conteúdo que representem o conteúdo do recurso remoto.</p> </td> 
+   <td><p>O importador de feed é uma estrutura para importar conteúdo de fontes externas repetidamente para o seu repositório. A ideia do importador de feed é pesquisar um recurso remoto em um intervalo especificado, analisá-lo e criar nós no repositório de conteúdo que representem o conteúdo do recurso remoto.</p> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">Linkchecker externo</a></td> 
    <td> </td> 
-   <td>Verifica todas as páginas de conteúdo dentro da instância do AEM e verifica todos os links externos. Uma lista de links válidos e inválidos é exibida.</td> 
+   <td>Analisa todas as páginas de conteúdo na instância de AEM e verifica todos os links externos. Uma lista de links válidos e inválidos é exibida.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">Móvel</a></td> 
@@ -113,12 +116,12 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM</a></td> 
    <td> </td> 
-   <td>Lida com conteúdo multilíngue e multinacional, ajudando a equilibrar a marca centralizada com conteúdo localizado.</td> 
+   <td>Lida com conteúdo multilíngue multinacional, ajudando a equilibrar a marca centralizada com o conteúdo localizado.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/notification.md">Notificação</a></td> 
    <td> </td> 
-   <td>Modelos de notificação.</td> 
+   <td>Templates de notificação.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">Pacotes</a></td> 
@@ -126,39 +129,39 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td> 
   </tr> 
   <tr> 
-   <td>Replicação - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Agentes de Replicação</a></td> 
+   <td>Replicação - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Agentes de replicação</a></td> 
    <td> </td> 
-   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar comentários do usuário do ambiente de publicação para o autor.</td> 
+   <td>Usado para replicar dados do autor para publicar ao publicar páginas ou com replicação inversa para retornar comentários do usuário do ambiente de publicação para o autor.</td> 
   </tr> 
   <tr> 
    <td>Importadores - <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">Ativar árvore</a></td> 
    <td> </td> 
-   <td>Na guia Sites é possível ativar as páginas individuais. Ao entrar ou atualizar um número considerável de páginas de conteúdo - todos residentes na mesma página raiz - é possível que seja mais fácil ativar toda a árvore em uma ação. Também é possível a execução de prática para emular uma ativação e destacar quais as páginas foram ativadas.</td> 
+   <td>Na guia Sites é possível ativar as páginas individuais. Ao entrar ou atualizar um número considerável de páginas de conteúdo - todos residentes na mesma página raiz - pode ser mais fácil ativar toda a árvore em uma ação. Também é possível executar um exercício de prática para emular uma ativação e destacar quais páginas foram ativadas.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/reporting.md">Relatórios</a></td> 
    <td> </td> 
-   <td>AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva seus próprios relatórios.</td> 
+   <td>O AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva os seus próprios relatórios.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">Scaffolding da página padrão </a></td> 
    <td> </td> 
-   <td>Com o scaffolding, é possível criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar este formulário para criar facilmente as páginas com base nesta estrutura.</td> 
+   <td>Com o scaffolding, você pode criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar esse formulário para criar facilmente páginas com base nessa estrutura.</td> 
   </tr> 
   <tr> 
-   <td>Segurança - <a href="/help/sites-administering/notification.md">Configuração Self-Service </a> </td> 
+   <td>Segurança - <a href="/help/sites-administering/notification.md">Configuração de autoatendimento </a> </td> 
    <td> </td> 
-   <td>Permite que você configure os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirme uma senha que foi redefinida.</td> 
+   <td>Permite configurar os emails que os usuários recebem automaticamente ao criar uma conta ou redefinir uma senha e confirmar uma senha que foi redefinida.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentação</a></td> 
    <td> </td> 
-   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. A segmentação ajuda a alcançar isso ao analisar e caracterizar os detalhes de um visitante.<br /> </td> 
+   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Entender essas metas e atender às expectativas é um fator importante de sucesso para o marketing online. A segmentação ajuda a conseguir isso ao analisar e caracterizar os detalhes do visitante.<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Configuração SRP padrão. Consulte <a href="/help/communities/srp-config.md">console Configuração do Armazenamento</a>.</td> 
+   <td>Configuração SRP padrão. Consulte <a href="/help/communities/srp-config.md">Configuração de armazenamento</a> console.</td> 
   </tr> 
   <tr> 
    <td>gerenciamento de tarefas</td> 
@@ -171,29 +174,29 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Nenhuma funcionalidade ativa relacionada a esta entrada.</td> 
   </tr> 
   <tr> 
-   <td>Controle de versão - <a href="/help/sites-deploying/version-purging.md">Expurgar Versões</a></td> 
+   <td>Controle de versão - <a href="/help/sites-deploying/version-purging.md">Limpar versões</a></td> 
    <td> </td> 
-   <td>Permite que você expurgue as versões de página, conforme necessário.</td> 
+   <td>Permite limpar versões de página, conforme necessário.</td> 
   </tr> 
   <tr> 
    <td>Repositórios virtuais</td> 
    <td> </td> 
-   <td>Você pode configurar um Repositório Virtual usando o recurso de montagem de espaço de trabalho para fornecer aplicativos de conteúdo habilitados para JCR com acesso simplificado à infraestrutura de conteúdo JCR com base no CRX e nos Conectores JCR.</td> 
+   <td>Você pode configurar um Repositório Virtual usando o recurso de montagem do espaço de trabalho para fornecer aplicativos de conteúdo habilitados para JCR com acesso simplificado à infraestrutura de conteúdo JCR com base no CRX e nos Conectores JCR.</td> 
   </tr> 
   <tr> 
-   <td>palavras</td> 
+   <td>palavras de ordem</td> 
    <td> </td> 
-   <td>Desaprovado. Consulte <a href="/help/communities/moderate-ugc.md#watchwords">Moderação do conteúdo da comunidade</a></td> 
+   <td>Obsoleto. Consulte <a href="/help/communities/moderate-ugc.md#watchwords">Moderação de conteúdo da comunidade</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Fluxo de trabalho</a></td> 
    <td> </td> 
-   <td>Os workflows controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td> 
+   <td>Os fluxos de trabalho controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Ferramentas - Interface otimizada ao toque {#tools-touch-optimized-ui}
+## Ferramentas - Interface otimizada para toque {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -225,7 +228,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-authoring/task-content.md">Caixa de entrada</a></td> 
-   <td>Gerencie seus itens da Caixa de entrada.</td> 
+   <td>Gerencie os itens da Caixa de entrada.</td> 
   </tr> 
   <tr> 
    <td>Operações</td> 
@@ -290,7 +293,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/offloading.md#administering-topologies">Topologia do navegador</a></td> 
-   <td>Visualização da topologia de instâncias.</td> 
+   <td>Exiba a topologia de instâncias.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -310,7 +313,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   <tr> 
    <td> </td> 
    <td>Dumping de configurações do Console da Web<br /> </td> 
-   <td>Baixe o status de configuração do console da Web.<br /> </td> 
+   <td>Baixe o status de configuração no console da Web.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -343,4 +346,3 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
 >[!NOTE]
 >
 >Algumas das opções acima são vinculadas à interface clássica.
-

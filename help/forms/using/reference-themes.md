@@ -1,23 +1,27 @@
 ---
 title: Temas de Referência
 seo-title: Reference Themes
-description: 'O AEM Forms fornece temas de formulários adaptáveis que podem ser obtidos da Distribuição de software e usados para criar um estilo em um formulário. '
+description: O AEM Forms fornece temas de formulários adaptáveis que podem ser obtidos da Distribuição de software e usados para criar um estilo em um formulário.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 0%
+source-wordcount: '588'
+ht-degree: 1%
 
 ---
 
 # Temas de Referência {#reference-themes}
 
-[](/help/forms/using/themes.md) Os temas permitem estilizar seus formulários sem o conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o pacote complementar[AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+[Temas](/help/forms/using/themes.md) permite criar estilos em seus formulários sem conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o[Pacote do complemento AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * Beril
 * Exec
@@ -38,9 +42,9 @@ Para obter mais informações sobre como instalar o pacote, consulte [Como traba
 
 ## Beril {#beryl}
 
-O tema Beryl é usado pelo [Formulário adaptável We.Gov](/help/forms/using/gov-reference-site-walkthrough.md), e enfatiza o uso de imagem de fundo, transparência e ícones grandes e planos. Na captura de tela abaixo, você pode ver a aparência do tema Beryl e como ele pode melhorar o estilo de seu formulário.
-![Beryl ](assets/beryl.png)
-[themeClique para ampliar](assets/beryl-1.png)
+O tema Beryl é usado por [Formulário adaptável We.Gov](/help/forms/using/gov-reference-site-walkthrough.md), e enfatiza o uso da imagem de fundo, a transparência e os ícones grandes e planos. Na captura de tela abaixo, você pode ver a aparência do tema Beryl e como ele pode melhorar o estilo de seu formulário.
+![Tema de berilo](assets/beryl.png)
+[Clique para ampliar](assets/beryl-1.png)
 
 ## Exec {#exec}
 

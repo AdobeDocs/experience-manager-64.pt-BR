@@ -2,23 +2,27 @@
 title: Processar ativos usando manipuladores de mídia e fluxos de trabalho
 description: Saiba mais sobre vários manipuladores de mídia e como usá-los em fluxos de trabalho para executar tarefas em ativos.
 contentOwner: AG
-feature: Fluxo De Trabalho,Representações
+feature: Workflow,Renditions
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 3%
+source-wordcount: '2261'
+ht-degree: 4%
 
 ---
 
 # Processar ativos usando manipuladores de mídia e fluxos de trabalho {#processing-assets-using-media-handlers-and-workflows}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 O Adobe Experience Manager Assets fornece um conjunto de fluxos de trabalho padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define uma tarefa típica de processamento e gerenciamento de ativos e, em seguida, delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
 
-Um workflow pode ser definido e executado automaticamente quando um ativo de um tipo ou formato específico é carregado no servidor. As etapas de processamento são definidas como uma série de manipuladores de mídia do Experience Manager Assets. O Adobe Experience Manager fornece alguns [manipuladores internos,](#default-media-handlers) e mais podem ser [desenvolvidos ](#creating-a-new-media-handler) ou definidos delegando o processo a uma [ferramenta de linha de comando](#command-line-based-media-handler).
+Um workflow pode ser definido e executado automaticamente quando um ativo de um tipo ou formato específico é carregado no servidor. As etapas de processamento são definidas como uma série de manipuladores de mídia do Experience Manager Assets. O Adobe Experience Manager fornece alguns [manipuladores integrados,](#default-media-handlers) e mais pode ser [desenvolvido personalizado](#creating-a-new-media-handler) ou definido pela delegação do processo a um [ferramenta de linha de comando](#command-line-based-media-handler).
 
-Os manipuladores de mídia são serviços no Experience Manager Assets que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado no Experience Manager, um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Os manipuladores de mídia são usados com fluxos de trabalho. Os tipos MIME mais comuns são suportados no Experience Manager. Você pode executar tarefas específicas em ativos executando qualquer um dos seguintes procedimentos
+Os manipuladores de mídia são serviços dentro da Experience Manager Assets que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado no Experience Manager, um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Os manipuladores de mídia são usados com fluxos de trabalho. Os tipos MIME mais comuns são suportados no Experience Manager. Você pode executar tarefas específicas em ativos executando qualquer um dos seguintes procedimentos
 
 * Extensão ou criação de fluxos de trabalho.
 * Extensão ou criação de manipuladores de mídia.
@@ -26,7 +30,7 @@ Os manipuladores de mídia são serviços no Experience Manager Assets que execu
 
 >[!NOTE]
 >
->Consulte a página [Formatos compatíveis com os ativos](assets-formats.md) para obter uma descrição de todos os formatos compatíveis com os ativos Experience Manager e os recursos compatíveis com cada formato.
+>Consulte [Formatos compatíveis com os ativos](assets-formats.md) para obter uma descrição de todos os formatos compatíveis com o Experience Manager Assets e os recursos compatíveis com cada formato.
 
 ## Manipuladores de mídia padrão {#default-media-handlers}
 
@@ -37,7 +41,7 @@ Os seguintes manipuladores de mídia estão disponíveis no Experience Manager A
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>aplicativo/ilustrador</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Ao carregar um arquivo MP3, ele é [processado usando uma biblioteca de terceiros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). A biblioteca calcula um comprimento aproximado não preciso se o MP3 tiver uma taxa de bits variável (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | áudio/mpeg<br><b>Importante</b> - Ao carregar um arquivo MP3, ele é [processado usando uma biblioteca de terceiros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). A biblioteca calcula um comprimento aproximado não preciso se o MP3 tiver uma taxa de bits variável (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>aplicativo/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -64,11 +68,11 @@ Todos os manipuladores executam as seguintes tarefas:
 
 Os manipuladores de mídia são serviços usados com fluxos de trabalho.
 
-O Experience Manager tem alguns workflows padrão para processar ativos. Para visualizá-los, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que começam com o Experience Manager Assets são os específicos dos ativos.
+O Experience Manager tem alguns workflows padrão para processar ativos. Para visualizá-las, abra o console Fluxo de trabalho e clique no botão **[!UICONTROL Modelos]** guia : os títulos de fluxo de trabalho que começam com o Experience Manager Assets são específicos dos ativos.
 
 Os workflows existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
 
-O exemplo a seguir mostra como aprimorar o workflow de **[!UICONTROL Sincronização do AEM Assets]** para que os subativos sejam gerados para todos os ativos, exceto documentos PDF.
+O exemplo a seguir mostra como aprimorar a variável **[!UICONTROL Sincronização AEM Assets]** fluxo de trabalho para que os subativos sejam gerados para todos os ativos, exceto documentos PDF.
 
 ### Desabilitar/habilitar um manipulador de mídia {#disabling-enabling-a-media-handler}
 
@@ -79,7 +83,7 @@ Para ativar/desativar um manipulador de mídia:
 1. No navegador, navegue até `https://<host>:<port>/system/console/components`.
 1. Clique em **[!UICONTROL Desativar]** ao lado do nome do manipulador de mídia. Por exemplo: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Atualize a página: um ícone é exibido ao lado do manipulador de mídia, indicando que está desativado.
-1. Para ativar o manipulador de mídia, clique em **[!UICONTROL Ativar]** ao lado do nome do manipulador de mídia.
+1. Para ativar o manipulador de mídia, clique em **[!UICONTROL Habilitar]** ao lado do nome do manipulador de mídia.
 
 ### Criação de um manipulador de mídia {#creating-a-new-media-handler}
 
@@ -87,7 +91,7 @@ Para suportar um novo tipo de mídia ou executar tarefas específicas em um ativ
 
 #### Classes e interfaces importantes {#important-classes-and-interfaces}
 
-A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: a classe `com.day.cq.dam.core.AbstractAssetHandler`.
+A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: o `com.day.cq.dam.core.AbstractAssetHandler` classe .
 
 Essa classe já fornece um descritor de serviço abstrato. Portanto, se você herdar dessa classe e usar o maven-sling-plugin, certifique-se de definir o sinalizador de herança como `true`.
 
@@ -136,11 +140,11 @@ Consulte [Ferramentas de desenvolvimento](../sites-developing/dev-tools.md) para
 
 Após executar o procedimento a seguir, ao fazer upload de um arquivo de texto no Experience Manager, os metadados do arquivo são extraídos e duas miniaturas com uma marca d&#39;água são geradas.
 
-1. No Eclipse, crie `myBundle` o projeto Maven:
+1. No Eclipse, crie `myBundle` Projeto Maven:
 
    1. Na barra de Menu, clique em **[!UICONTROL Arquivo > Novo > Outro]**.
    1. Na caixa de diálogo, expanda a pasta Maven, selecione Projeto Maven e clique em **[!UICONTROL Próximo]**.
-   1. Marque a caixa **[!UICONTROL Create a simple project]** e a caixa **[!UICONTROL Use default Workspace locations]** e clique em **[!UICONTROL Next]**.
+   1. Verifique a **[!UICONTROL Criar um projeto simples]** e a **[!UICONTROL Usar locais padrão do Workspace]** e, em seguida, clique em **[!UICONTROL Próximo]**.
    1. Defina o projeto Maven com os seguintes valores:
 
       * Id Do Grupo: com.day.cq5.myhandler
@@ -152,7 +156,7 @@ Após executar o procedimento a seguir, ao fazer upload de um arquivo de texto n
 
 1. Defina o Compilador Java™ para a versão 1.5:
 
-   1. Clique com o botão direito do mouse no projeto `myBundle` e selecione Propriedades.
+   1. Clique com o botão direito do mouse no `myBundle` selecione Propriedades.
    1. Selecione Java™ Compiler e defina as seguintes propriedades como 1.5:
 
       * Nível de conformidade do compilador
@@ -278,16 +282,16 @@ Após executar o procedimento a seguir, ao fazer upload de um arquivo de texto n
     </dependencies>
    ```
 
-1. Crie o pacote `com.day.cq5.myhandler` que contém as classes Java™ em `myBundle/src/main/java`:
+1. Criar o pacote `com.day.cq5.myhandler` que contém as classes Java™ em `myBundle/src/main/java`:
 
-   1. Em myBundle, clique com o botão direito do mouse em `src/main/java`, selecione New e Package.
+   1. Em myBundle, clique com o botão direito do mouse `src/main/java`, selecione Novo, Pacote.
    1. Nomeie-o `com.day.cq5.myhandler` e clique em Finish.
 
 1. Crie a classe Java™ `MyHandler`:
 
-   1. No Eclipse, em `myBundle/src/main/java`, clique com o botão direito do mouse no pacote `com.day.cq5.myhandler`, selecione New e Class.
+   1. No Eclipse, em `myBundle/src/main/java`, clique com o botão direito do mouse no botão `com.day.cq5.myhandler` , selecione Novo e, em seguida, Classe.
    1. Na janela de diálogo, nomeie o Java™ Class MyHandler e clique em Finish. O Eclipse cria e abre o arquivo MyHandler.java.
-   1. Em `MyHandler.java`, substitua o código existente pelo seguinte e salve as alterações:
+   1. Em `MyHandler.java` substitua o código existente pelo seguinte e salve as alterações:
 
    ```java
    package com.day.cq5.myhandler; 
@@ -431,18 +435,18 @@ Após executar o procedimento a seguir, ao fazer upload de um arquivo de texto n
 
 1. Compile a classe Java™ e crie o pacote:
 
-   1. Clique com o botão direito do mouse no projeto myBundle, selecione **[!UICONTROL Executar como]**, em seguida **[!UICONTROL Instalar Maven]**.
-   1. O pacote `myBundle-0.0.1-SNAPSHOT.jar` (que contém a classe compilada) é criado em `myBundle/target`.
+   1. Clique com o botão direito do mouse no projeto myBundle e selecione **[!UICONTROL Executar como]**, em seguida **[!UICONTROL Instalação do Maven]**.
+   1. O pacote `myBundle-0.0.1-SNAPSHOT.jar` (contendo a classe compilada) é criado em `myBundle/target`.
 
 1. No CRX Explorer, crie um nó em `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
-1. Copie o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazene-o em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo no Experience Manager.
+1. Copiar o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazene-o em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo no Experience Manager.
 1. No seu navegador, abra o Console de Gerenciamento da Web Apache Felix. Selecione a guia Componentes e desative o manipulador de texto padrão `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Manipulador de mídia baseado em linha de comando {#command-line-based-media-handler}
 
-O Experience Manager permite executar qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como o ImageMagick) e adicionar a nova representação ao ativo. Instale a ferramenta de linha de comando no disco que hospeda o servidor do Experience Manager e adicione e configure uma etapa do processo para o fluxo de trabalho. O processo invocado, chamado `CommandLineProcess`, filtra de acordo com tipos MIME específicos e cria várias miniaturas com base na nova representação.
+O Experience Manager permite executar qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como o ImageMagick) e adicionar a nova representação ao ativo. Instale a ferramenta de linha de comando no disco que hospeda o servidor do Experience Manager e adicione e configure uma etapa do processo para o fluxo de trabalho. O processo chamado `CommandLineProcess`, filtra de acordo com tipos MIME específicos e cria várias miniaturas com base na nova representação.
 
-As seguintes conversões podem ser executadas e armazenadas automaticamente em [!DNL Experience Manager Assets]:
+As conversões a seguir podem ser executadas e armazenadas automaticamente no [!DNL Experience Manager Assets]:
 
 * Transformação de EPS e AI usando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/)
 * Transcodificação de vídeo FLV usando [FFmpeg](https://ffmpeg.org/)
@@ -453,7 +457,7 @@ As seguintes conversões podem ser executadas e armazenadas automaticamente em [
 >
 >Em sistemas que não são Windows, a ferramenta FFMpeg retorna um erro ao gerar representações para um ativo de vídeo que tem uma aspa simples (&#39;) no nome do arquivo. Se o nome do arquivo de vídeo incluir uma aspa simples, remova-o antes de fazer upload para o Experience Manager.
 
-O processo `CommandLineProcess` executa as seguintes operações na ordem em que são listadas:
+O `CommandLineProcess` O processo executa as seguintes operações na ordem em que são listadas:
 
 * Filtra o arquivo de acordo com tipos MIME específicos, se especificado.
 * Cria um diretório temporário no disco que hospeda o servidor Experience Manager.
@@ -465,12 +469,12 @@ O processo `CommandLineProcess` executa as seguintes operações na ordem em que
 
 ### Um exemplo usando o ImageMagick {#an-example-using-imagemagick}
 
-O exemplo a seguir mostra como configurar a etapa do processo da linha de comando. Toda vez que um ativo com o tipo MIME gif ou tiff é adicionado a `/content/dam` no servidor do Experience Manager, uma imagem invertida do original é criada junto com mais três miniaturas (140x100, 48x48 e 10x250).
+O exemplo a seguir mostra como configurar a etapa do processo da linha de comando. Toda vez que um ativo com o tipo MIME gif ou tiff é adicionado a `/content/dam` no servidor Experience Manager, uma imagem invertida do original é criada junto com mais três miniaturas (140x100, 48x48 e 10x250).
 
 Para fazer essa etapa do processo, use ImageMagick. Instale o ImageMagick no disco que hospeda o servidor Experience Manager:
 
-1. Instale o ImageMagick. Consulte a [documentação do ImageMagick](https://www.imagemagick.org/script/download.php) para obter mais informações.
-1. Configure a ferramenta para poder executar `convert` na linha de comando.
+1. Instale o ImageMagick. Consulte [Documentação do ImageMagick](https://www.imagemagick.org/script/download.php) para obter mais informações.
+1. Configure a ferramenta para que você possa executá-la `convert` na linha de comando.
 1. Para ver se a ferramenta está instalada corretamente, execute o seguinte comando `convert -h` na linha de comando.
 
    Ele exibe uma tela de Ajuda com todas as opções possíveis da ferramenta de conversão.
@@ -485,9 +489,9 @@ Para fazer essa etapa do processo, use ImageMagick. Instale o ImageMagick no dis
 
 Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalho **[!UICONTROL Atualizar ativo do DAM]**:
 
-1. Vá para o console **[!UICONTROL Workflow]**.
-1. Na guia **[!UICONTROL Modelos]**, edite o modelo **[!UICONTROL Ativo de atualização DAM]**.
-1. Altere as configurações da etapa **[!UICONTROL representação ativada pela Web]** da seguinte maneira:
+1. Vá para o **[!UICONTROL Fluxo de trabalho]** console.
+1. No **[!UICONTROL Modelos]** edite a guia **[!UICONTROL Ativo de atualização DAM]** modelo.
+1. Altere as configurações do **[!UICONTROL Representação ativada pela Web]** da seguinte maneira:
 
    `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
@@ -495,34 +499,34 @@ Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalh
 
 Para testar o fluxo de trabalho modificado, adicione um ativo a `/content/dam`.
 
-1. No sistema de arquivos, obtenha uma imagem TIFF de sua escolha. Renomeie-o para `myImage.tiff` e copie-o para `/content/dam`, por exemplo, usando o WebDAV.
-1. Vá para o console **[!UICONTROL CQ5 DAM]**, por exemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. No sistema de arquivos, obtenha uma imagem TIFF de sua escolha. Renomeie-o para `myImage.tiff` e copie para `/content/dam`, por exemplo, usando o WebDAV.
+1. Vá para o **[!UICONTROL DAM CQ5]** , por exemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra o ativo `myImage.tiff` e verifique se a imagem invertida e as três miniaturas foram criadas.
 
 #### Configurar a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Esta seção descreve como definir os **[!UICONTROL Argumentos de processo]** do `CommandLineProcess`. Separe os valores de [!UICONTROL Process Arguments] usando uma vírgula e não inicie um valor com um espaço em branco.
+Esta seção descreve como definir os **[!UICONTROL Argumentos de processo]** do `CommandLineProcess`. Separe os valores de [!UICONTROL Argumentos do processo] usar vírgula e não iniciar um valor com um espaço em branco.
 
 | Argumento-Formato | Descrição |
 |---|---|
 | mime:&lt;mime-type> | Argumento opcional. O processo é aplicado se o ativo tiver o mesmo tipo MIME que um dos argumentos. <br>Vários tipos MIME podem ser definidos. |
 | tn:&lt;width>:&lt;height> | Argumento opcional. O processo cria uma miniatura com as dimensões definidas no argumento . <br>Várias miniaturas podem ser definidas. |
-| cmd: &lt;comando> | Define o comando que é executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As variáveis a seguir podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, por exemplo original.jpg  <br> `${file}`: nome completo do caminho do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`: diretório do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp  <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo original  <br>`${extension}`: extensão do arquivo de entrada, por exemplo jpg |
+| cmd: &lt;command> | Define o comando que é executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As variáveis a seguir podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, por exemplo original.jpg <br> `${file}`: nome completo do caminho do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: diretório do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo original <br>`${extension}`: extensão do arquivo de entrada, por exemplo jpg |
 
-Por exemplo, se ImageMagick estiver instalado no disco que hospeda o servidor do Experience Manager e se você criar uma etapa do processo usando **CommandLineProcess** como Implementação e os seguintes valores como **Argumentos de Processo**:
+Por exemplo, se o ImageMagick estiver instalado no disco que hospeda o servidor do Experience Manager e se você criar uma etapa do processo usando **CommandLineProcess** como Implementação e os seguintes valores como **Argumentos do processo**:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-Em seguida, quando o workflow é executado, a etapa se aplica somente a ativos que têm `image/gif` ou `mime:image/tiff` como tipos MIME. Ele cria uma imagem invertida do original, a converte em .jpg e cria três miniaturas que têm as dimensões: 140x100, 48x48 e 10x250.
+Em seguida, quando o workflow é executado, a etapa se aplica somente aos ativos que têm `image/gif` ou `mime:image/tiff` como mime-types. Ele cria uma imagem invertida do original, a converte em .jpg e cria três miniaturas que têm as dimensões: 140x100, 48x48 e 10x250.
 
-Use os seguintes [!UICONTROL Argumentos de processo] para criar as três miniaturas padrão usando o ImageMagick:
+Use o seguinte [!UICONTROL Argumentos do processo] para criar as três miniaturas padrão usando o ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Use os seguintes [!UICONTROL Argumentos de processo] para criar a representação ativada pela Web usando o ImageMagick:
+Use o seguinte [!UICONTROL Argumentos do processo] para criar a representação ativada para Web usando o ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->A etapa `CommandLineProcess` se aplica somente a Ativos (nós do tipo `dam:Asset`) ou descendentes de um ativo.
+>O `CommandLineProcess` a etapa se aplica somente aos Ativos (nós do tipo `dam:Asset`) ou descendentes de um ativo.

@@ -12,14 +12,18 @@ discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
-source-git-commit: 28bfeff17c8f753f4f0d3f23a0e3843f159060cc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3406'
+source-wordcount: '3442'
 ht-degree: 1%
 
 ---
 
 # Configuração de armazenamentos de nó e armazenamentos de dados no AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -222,8 +226,8 @@ Você pode usar o arquivo de configuração com as seguintes opções:
 
 * cacheSize: O tamanho do cache. O valor é especificado em bytes. O padrão é **64 GB**.
 * segredo: A ser usado somente se estiver usando replicação sem binários para configuração compartilhada do armazenamento de dados.
-* stagingSplitPercentage: A porcentagem do tamanho do cache configurado para ser usado para fazer uploads assíncronos de preparo. O valor padrão é **10**.
-* uploadThreads: O número de threads de uploads usados para uploads assíncronos. O valor padrão é **10**.
+* stagingSplitPercentage: A porcentagem do tamanho do cache configurado para ser usado para fazer uploads assíncronos de preparo. O valor padrão é **10º**.
+* uploadThreads: O número de threads de uploads usados para uploads assíncronos. O valor padrão é **10º**.
 * stagingPurgeInterval: O intervalo em segundos para limpar os uploads concluídos do cache de preparo. O valor padrão é **300** segundos (5 minutos).
 * stagingRetryInterval: O intervalo de nova tentativa em segundos para uploads com falha. O valor padrão é **600** segundos (10 minutos).
 
@@ -318,7 +322,7 @@ Para configurar a replicação sem binários com S3, as seguintes etapas são ne
 1. Crie esses dois arquivos dentro da `crx-quickstart` pasta:
 
    * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*config*
-   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*configuração*
+   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*config*
 
    Depois que os arquivos tiverem sido criados, adicione as opções de configuração conforme necessário.
 

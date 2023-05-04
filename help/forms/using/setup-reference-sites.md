@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2911'
-ht-degree: 2%
+source-wordcount: '2947'
+ht-degree: 3%
 
 ---
 
 # Configurar e configurar sites de referência do AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A AEM Forms fornece a implementação de referência do site para demonstrar como a AEM Forms ajuda as organizações do setor de serviços financeiros e do governo a transformar suas transações complexas em experiências digitais simples e envolventes, em qualquer lugar, a qualquer momento, em qualquer dispositivo.
 
@@ -46,7 +50,7 @@ Antes de configurar o site de referência, verifique se você tem o seguinte:
 
 * **AEM essenciais**
 
-   AEM QuickStart, pacote do complemento AEM Forms e pacotes do site de referência. Consulte [Versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para obter detalhes sobre pacotes de complementos e sites de referência.
+   AEM QuickStart, pacote do complemento AEM Forms e pacotes do site de referência. Consulte [Versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para obter detalhes sobre pacotes de complementos e sites de referência.
 
 * **Um serviço SMTP**
 Você pode usar qualquer serviço SMTP.
@@ -69,22 +73,22 @@ Execute as etapas a seguir na sequência recomendada para configurar e configura
   </tr> 
   <tr> 
    <td><a href="#installaemforms">Instalar e configurar o AEM Forms</a></td> 
-   <td>Autor e publicação</td> 
+   <td>Criação e publicação</td> 
    <td>Instale e configure as instâncias de criação e publicação do AEM Forms.</td> 
   </tr> 
   <tr> 
    <td><a href="#ssl">Configurar SSL</a></td> 
-   <td>Autor e publicação<br /> </td> 
+   <td>Criação e publicação<br /> </td> 
    <td>Ative HTTP por SSL para comunicações seguras com o Acrobat Sign.</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">Configurar o Day CQ Link Externalizer</a></p> </td> 
-   <td>Autor e publicação<br /> </td> 
+   <td>Criação e publicação<br /> </td> 
    <td><p>Casos de uso de referência do site enviam emails para transações diferentes. Essa configuração é necessária para o delivery do boletim informativo por email. Isso garante que URLs e imagens apontem para a instância de publicação. </p> </td> 
   </tr> 
   <tr> 
    <td><a href="#cqmail">Configurar o Day CQ Mail Service</a></td> 
-   <td>Autor e publicação</td> 
+   <td>Criação e publicação</td> 
    <td>Necessário para comunicação por email.</td> 
   </tr> 
   <tr> 
@@ -104,22 +108,22 @@ Execute as etapas a seguir na sequência recomendada para configurar e configura
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">Importar dados de amostra para o Microsoft Dynamics</a></td> 
-   <td>Autor e publicação</td> 
+   <td>Criação e publicação</td> 
    <td>Importar dados de amostra para o aplicativo de cartão de crédito, o aplicativo de hipoteca de casa e a apresentação do aplicativo de seguro de casa</td> 
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Configurar o serviço de nuvem OAuth para o Microsoft Dynamics</a></td> 
-   <td>Autor e publicação</td> 
+   <td>Criação e publicação</td> 
    <td>Configure o serviço de nuvem OAuth no AEM Forms para permitir a comunicação entre o AEM Forms e o Microsoft Dynamics. </td> 
   </tr> 
   <tr> 
    <td><a href="#scheduler">Configurar o Acrobat Sign Scheduler</a></td> 
-   <td>Autor e publicação<br /> </td> 
+   <td>Criação e publicação<br /> </td> 
    <td>Altere a configuração do agendador para verificar o status a cada dois minutos.</td> 
   </tr> 
   <tr> 
    <td><a href="#sign-service">Configurar o Cloud Service Acrobat Sign do site de referência</a></td> 
-   <td>Autor e publicação<br /> </td> 
+   <td>Criação e publicação<br /> </td> 
    <td>Uma configuração que vem com pacotes de sites de referência e precisa ser reconfigurada com credenciais válidas.</td> 
   </tr> 
   <tr> 
@@ -129,7 +133,7 @@ Execute as etapas a seguir na sequência recomendada para configurar e configura
   </tr> 
   <tr> 
    <td><a href="#fdm">Modificar o arquivo Rest Service Swagger para o Modelo de dados de formulário</a></td> 
-   <td>Autor e publicação<br /> </td> 
+   <td>Criação e publicação<br /> </td> 
    <td>Modifique o serviço para seu ambiente.</td> 
   </tr> 
  </tbody> 

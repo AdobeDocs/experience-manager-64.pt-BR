@@ -1,30 +1,33 @@
 ---
 title: Conteúdo essencial em destaque
-seo-title: Conteúdo essencial em destaque
-description: Trabalhar com conteúdo de recursos
-seo-description: Trabalhar com conteúdo de recursos
+seo-title: Featured Content Essentials
+description: Trabalhar com conteúdo de recurso
+seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 4805db0f-18d2-4bbc-a4d6-eaafa7a4c152
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 6%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
-
 # Conteúdo essencial em destaque {#featured-content-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Esta página fornece as informações essenciais para trabalhar com conteúdo em destaque.
 
-Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permite que o conteúdo seja destacado em qualquer lugar no site da comunidade.
+Em contraste com a definição de uma publicação no topo de um fórum, esse recurso permite que o conteúdo seja destacado em qualquer lugar no site da comunidade.
 
-## Essentials for Client-Side {#essentials-for-client-side}
+## Fundamentos para o lado do cliente {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -33,7 +36,7 @@ Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permi
    <td>social/commons/components/hbs/featuredcontent</td> 
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusivo</strong></a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td> 
    <td>Não</td> 
   </tr>
   <tr>
@@ -41,7 +44,7 @@ Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permi
    <td> <i>default</i></td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>modelos</strong></td> 
    <td> /libs/social/commons/components/hbs/featuredcontent/featuredcontent.hbs<br /> /libs/social/commons/components/hbs/featuredtopic/featuredtopic.hbs</td> 
   </tr>
   <tr>
@@ -55,8 +58,8 @@ Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permi
  </tbody>
 </table>
 
-* [Personalizações do cliente](client-customize.md)
+* [Personalizações do lado do cliente](client-customize.md)
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui a [função de Conteúdo em destaque](functions.md#featured-content-function), inclui um componente `featured content` configurado.
+Uma estrutura de site da comunidade que inclui a variável [Função de conteúdo em destaque](functions.md#featured-content-function), inclui um `featured content` componente.

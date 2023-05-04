@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Reports
 role: Architect,Admin
 exl-id: b0154c9c-a671-43fb-8733-274a35307a34
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 3%
 
 ---
 
 # Usar o rastreador de página e incorporar código em páginas da Web {#using-page-tracker-and-embed-code-in-web-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Rastreador de página é uma parte do código JavaScript que você inclui no código de sites de terceiros para permitir que o Adobe Analytics capture dados de uso em ativos do Adobe Experience Manager nesses sites.
 

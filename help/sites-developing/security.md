@@ -4,14 +4,18 @@ seo-title: Security
 description: A segurança do aplicativo é iniciada durante a fase de desenvolvimento
 seo-description: Application Security starts during the development phase
 exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
-source-git-commit: 70d86d2a8c9654a52a2d2c4a000cc101c54a4552
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 0%
+source-wordcount: '462'
+ht-degree: 2%
 
 ---
 
 # Segurança{#security}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A segurança do aplicativo é iniciada durante a fase de desenvolvimento. O Adobe recomenda aplicar as seguintes práticas recomendadas de segurança.
 

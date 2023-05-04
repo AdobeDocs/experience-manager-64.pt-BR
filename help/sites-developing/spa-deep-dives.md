@@ -4,14 +4,18 @@ seo-title: SPA Deep Dives
 description: O SDK do Editor de SPA AEM foi apresentado em uma série de sessões AEM Gems. Hospedada pelos engenheiros de Adobe, essa série pode servir como um excelente guia para obter uma compreensão mais profunda do SDK do Editor de SPA AEM em um nível baixo, hospedado pelos engenheiros de Adobe.
 seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
 exl-id: 4724e321-1c1b-4f2f-b867-5d9f7e8b2cfa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 2%
+source-wordcount: '324'
+ht-degree: 4%
 
 ---
 
 # Aprofundamentos de SPA{#spa-deep-dives}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O SDK do Editor de SPA AEM foi apresentado em uma série de sessões AEM Gems. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de aprofundamentos técnicos fornecidos por especialistas em Adobe. Hospedada pelos engenheiros de Adobe, essa série pode servir como um excelente guia para obter uma compreensão mais profunda do SDK do Editor de SPA AEM em um nível baixo.
 

@@ -12,14 +12,18 @@ discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 75%
+source-wordcount: '496'
+ht-degree: 71%
 
 ---
 
 # Fragmentos de conteúdo - Considerações sobre a exclusão {#content-fragments-delete-considerations}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >

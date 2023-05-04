@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 1%
+source-wordcount: '1931'
+ht-degree: 2%
 
 ---
 
 # Dia difícil{#tough-day}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## O que é o Dia difícil 2 {#what-is-tough-day}
 
@@ -130,7 +134,7 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 | `--host=<Val>` | O nome do host ou IP que será direcionado. |  |  |
 | `--port=<Val>` | A porta do host. | 4502 |  |
 | `--user=<Val>` | O nome de usuário da instância. | admin |  |
-| `--password=<Val>` | Senha para o usuário em questão. | administrador |  |
+| `--password=<Val>` | Senha para o usuário em questão. | admin |  |
 | `--duration=<Val>` | A duração dos testes. Pode ser expresso em (**s**)segundos, (**m**), (**h**)e (**d**). | 1d |  |
 | `--timeout=<Val>` | Por quanto tempo um teste será executado antes de ser interrompido e marcado como defeituoso. Expressa em segundos. | 180 |  |
 | `--suite=<Val>` | O valor pode ser uma lista ou uma lista (separada por vírgulas) de conjuntos de testes predefinidos. | dilema |  |

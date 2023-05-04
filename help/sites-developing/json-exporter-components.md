@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: ce9a1c1f-a37b-4765-b87e-5b2359312cfe
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 8%
+source-wordcount: '572'
+ht-degree: 9%
 
 ---
 
 # Ativação de exportação em JSON para um componente{#enabling-json-export-for-a-component}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 
@@ -98,4 +102,4 @@ Para obter mais detalhes, consulte:
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para serviços de conteúdo](/help/sites-developing/json-exporter.md)
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e [Componente do fragmento de conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Componente do fragmento de conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

@@ -11,14 +11,18 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '861'
 ht-degree: 9%
 
 ---
 
 # Atualizar para AEM 6.4 Forms no OSGi {#upgrade-to-aem-forms-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Use um dos seguintes caminhos de atualização, conforme apropriado para seu ambiente.
 
@@ -59,7 +63,7 @@ Você pode fazer uma atualização direta do AEM 6.2 Forms ou AEM 6.3 Forms para
    1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
    1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-      Você também pode baixar o pacote usando o link direto listado em [Versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) artigo 10. o
+      Você também pode baixar o pacote usando o link direto listado em [Versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artigo 10. o
 
       >[!NOTE]
       >

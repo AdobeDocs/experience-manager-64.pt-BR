@@ -1,38 +1,41 @@
 ---
-title: Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerente
-seo-title: Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerente
-description: Como os gerentes e os chefes de organização podem acessar e trabalhar nas tarefas de seus relatórios diretos e indiretos na guia Fazer na área de trabalho do AEM Forms.
-seo-description: Como os gerentes e os chefes de organização podem acessar e trabalhar nas tarefas de seus relatórios diretos e indiretos na guia Fazer na área de trabalho do AEM Forms.
+title: Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerenciador
+seo-title: Managing tasks in an organizational hierarchy using Manager View
+description: Como os gerentes e chefes de organização podem acessar e trabalhar nas tarefas de seus relatórios diretos e indiretos na guia Tarefas no espaço de trabalho do AEM Forms.
+seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 28877528-2f91-4ee0-b9d8-c7df364ed803
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 2%
 
 ---
 
+# Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerenciador {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-# Gerenciando tarefas em uma hierarquia organizacional usando a Visualização do Gerente {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia - relatórios diretos ou indiretos - e executar várias ações. As tarefas estão disponíveis na guia Fazer na área de trabalho do AEM Forms. As ações suportadas nas tarefas dos relatórios diretos são:
+Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia (relatórios diretos ou indiretos) e executar várias ações com eles. As tarefas estão disponíveis na guia To-do no espaço de trabalho do AEM Forms. As ações apoiadas nas tarefas dos relatórios diretos são:
 
-**** EncaminharEncaminhe uma tarefa do relatório direto para qualquer usuário.
+**Avançar** Encaminhe uma tarefa do relatório direto para qualquer usuário.
 
-**** ReivindicaçãoReivindica uma tarefa de um relatório direto.
+**Reclamação** Reivindica uma tarefa de relatório direto.
 
-**Reivindicar e** abrirReivindicação uma tarefa de um relatório direto e abri-lo automaticamente na lista de Tarefas do gerente.
+**Reivindicação e abertura** Reivindica uma tarefa de um relatório direto e o abre automaticamente na lista De Tarefas do gerente.
 
-**** RejeitarRejeitar uma tarefa encaminhada a um relatório direto por outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um relatório direto.
+**Rejeitar** Rejeitar uma tarefa encaminhada a um relatório direto por algum outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um relatório direto.
 
-A AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que o usuário possa buscar somente as tarefas nas quais o usuário tenha permissões de acesso. Usando serviços e implementações da Web de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerentes e relatórios diretos de acordo com suas necessidades.
+O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que um usuário possa buscar apenas as tarefas nas quais o usuário tem permissões de acesso. Usando serviços e implementações da Web de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerente e relatórios diretos para atender às suas necessidades.
 
-1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para formulários AEM&quot; no guia [Programação com AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para AEM Forms&quot; em [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
 1. No DSC, defina um novo SPI para o gerenciamento de hierarquia para definir relatórios diretos e hierarquia dentro dos usuários do AEM Forms. A seguir, há um exemplo de trecho de código Java™.
 
    ```as3
@@ -68,7 +71,7 @@ A AEM Forms restringe o acesso de um usuário somente às tarefas para as quais 
    }
    ```
 
-1. Crie um arquivo component.xml. Certifique-se de que spec-id seja o mesmo que mostrado no trecho de código abaixo. Veja a seguir um trecho de código de amostra que pode ser redefinido.
+1. Crie um arquivo component.xml. Certifique-se de que a spec-id deve ser a mesma mostrada no trecho de código abaixo. A seguir, há um trecho de código de amostra que pode ser redefinido.
 
    ```as3
    <component xmlns="https://adobe.com/idp/dsc/component/document"> 
@@ -112,12 +115,11 @@ A AEM Forms restringe o acesso de um usuário somente às tarefas para as quais 
    </component>
    ```
 
-1. Implante o DSC por meio do Workbench. Reinicie o serviço `ProcessManagementTeamTasksService`.
+1. Implante o DSC por meio do Workbench. Reiniciar `ProcessManagementTeamTasksService` serviço.
 1. Talvez seja necessário atualizar seu navegador ou fazer logout/login com o usuário novamente.
 
 A tela a seguir ilustra o acesso às tarefas dos relatórios diretos e às ações disponíveis.
 
-![cu_manager_visualização](assets/cu_manager_view.png)
+![cu_manager_view](assets/cu_manager_view.png)
 
-Acessar tarefas de relatórios diretos e agir nas tarefas
-
+Acesse as tarefas dos relatórios diretos e execute as tarefas

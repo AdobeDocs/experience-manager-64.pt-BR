@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: ead4306a-6337-4dae-8839-14fada0ae0e5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 33%
+source-wordcount: '477'
+ht-degree: 32%
 
 ---
 
 # Exportador JSON para serviços de conteúdo{#json-exporter-for-content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os Serviços de conteúdo do AEM foram criados para generalizar a descrição e a entrega de conteúdo de e para o AEM para além do foco em páginas da Web.
 

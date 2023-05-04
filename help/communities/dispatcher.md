@@ -1,50 +1,53 @@
 ---
 title: Configuração do Dispatcher para Comunidades
-seo-title: Configuração do Dispatcher para Comunidades
+seo-title: Configuring Dispatcher for Communities
 description: Configurar o dispatcher para AEM Communities
-seo-description: Configurar o dispatcher para AEM Communities
+seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: dc4e27dd-fb2e-485d-8c7f-ab830bde1d3d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 2%
+source-wordcount: '663'
+ht-degree: 9%
 
 ---
 
+# Configuração do Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
 
-# Configurando o Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## AEM Communities {#aem-communities}
 
-Para AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos [sites da comunidade](overview.md#community-sites). Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
+Para o AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento adequado do [sites da comunidade](overview.md#community-sites). Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e logon social.
 
-Para saber o que é necessário para sua implantação específica e o design do site
+Para saber o que é necessário para sua implantação específica e design de site
 
-* Entre em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
+* Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
-Consulte também a documentação principal [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Veja também o [Documentação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Cache do Dispatcher {#dispatcher-caching}
+## Armazenamento em cache do Dispatcher {#dispatcher-caching}
 
 ### Visão geral {#overview}
 
-O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
+O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do Dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
 
-Atualmente, ele é compatível apenas com visitantes anônimos do site, como usuários que navegam no site da comunidade ou que chegam em uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. A vantagem é que os usuários anônimos e os mecanismos de pesquisa experimentarão um melhor desempenho.
+Atualmente, é compatível apenas com visitantes anônimos do site, como usuários que navegam no site da comunidade ou chegam em uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. O benefício é que usuários anônimos e mecanismos de pesquisa experimentarão um desempenho aprimorado.
 
-Para membros conectados, o dispatcher ignora o cache, retransmitindo solicitações diretamente ao editor, de modo que todas as páginas sejam geradas e entregues dinamicamente.
+Para membros conectados, o dispatcher ignora o cache, retransmitindo as solicitações diretamente ao editor, de modo que todas as páginas sejam geradas e entregues dinamicamente.
 
-Quando configurado para suportar o cache do dispatcher, uma expiração de &quot;idade máxima&quot; baseada em TTL é adicionada ao cabeçalho para garantir que as páginas em cache do dispatcher estejam atualizadas.
+Quando configurada para oferecer suporte ao armazenamento em cache do dispatcher, uma expiração de &quot;idade máxima&quot; baseada em TTL é adicionada ao cabeçalho para garantir que as páginas em cache do dispatcher sejam atuais.
 
 ### Requisitos {#requirements}
 
-* Dispatcher versão 4.1.2 ou posterior (consulte [Instalação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para obter a versão mais recente)
+* Dispatcher versão 4.1.2 ou posterior (consulte [Instalação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para a versão mais recente)
 * [Pacote ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versão 3.3.2 ou posterior
@@ -52,14 +55,14 @@ Quando configurado para suportar o cache do dispatcher, uma expiração de &quot
 
 ### Configuração {#configuration}
 
-A configuração do OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache que aparecem em um caminho especificado.
+A configuração do OSGi **ACS AEM Commons - Cabeçalho de Controle de Cache do Dispatcher - Idade Máxima** define a expiração de páginas em cache que aparecem em um caminho especificado.
 
-* Do [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* No [Console da Web](../../help/sites-deploying/configuring-osgi.md)
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Localizar `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
-* Selecione o ícone &#39;+&#39; para criar uma nova configuração de conexão
+* Selecione o ícone &quot;+&quot; para criar uma nova configuração de conexão
 
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
@@ -69,62 +72,102 @@ A configuração do OSGi **ACS AEM Commons - Dispatcher Cache Control Header - M
 
 * **Idade máxima do controle de cache**
 
-   *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho de Controle de cache. O valor deve ser maior que zero (0).
+   *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho Controle de Cache. O valor deve ser maior que zero (0).
 
-## Cabeçalhos do Cliente Dispatcher {#dispatcher-client-headers}
+## Cabeçalhos do Cliente do Dispatcher {#dispatcher-client-headers}
 
-Na seção /clientheaders de `dispatcher.any`, se estiver listando um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o [recurso de Ativação](enablement.md) funcione corretamente.
+Na seção /clientheaders de `dispatcher.any`, se você listar um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para [Recurso de ativação](enablement.md) para funcionar adequadamente.
 
 ## Filtros do Dispatcher {#dispatcher-filters}
 
-A seção /filter do arquivo `dispatcher.any` está documentada em [Configuração do acesso ao conteúdo - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+A seção /filter do `dispatcher.any` o arquivo está documentado em [Configuração do acesso ao conteúdo - /filtro](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
-Esta seção descreve as entradas que são provavelmente necessárias para o correto funcionamento dos recursos das Comunidades.
+Esta seção descreve entradas que são provavelmente necessárias para o bom funcionamento dos recursos das Comunidades.
 
-Os nomes das propriedades do filtro seguem a convenção de uso de um número de quatro dígitos para indicar a ordem na qual aplicar padrões de filtro. Quando vários padrões de filtros se aplicam a uma solicitação, o último padrão de filtro aplicado é efetivo. Assim, o primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os seguintes padrões servem para restaurar o acesso de forma controlada.
+Os nomes de propriedades do filtro seguem a convenção de uso de um número de quatro dígitos para indicar a ordem na qual aplicar padrões de filtro. Quando vários padrões de filtros se aplicam a uma solicitação, o último padrão de filtro que se aplica é efetivo. Assim, o primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os padrões a seguir servem para restaurar o acesso de forma controlada.
 
-As amostras a seguir usam nomes de propriedade que provavelmente precisarão ser modificados para se ajustarem a qualquer arquivo dispatcher.any específico.
+As amostras a seguir usam nomes de propriedades que provavelmente precisarão ser modificadas para se encaixarem em qualquer arquivo dispatcher.any específico.
 
 Consulte também:
 
-* [Lista de Verificação de Segurança do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=pt-BR#getting-started)
 
 >[!NOTE]
 >
 >**Exemplos de nome da propriedade**
->Todos os nomes de propriedade mostrados, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um dispatcher.qualquer arquivo de configuração.
+>Todos os nomes de propriedades mostrados, como **/0050** e **0170**, deve ser ajustado para se ajustar a um arquivo de configuração dispatcher.any existente.
 
-As seguintes entradas devem ser adicionadas ao final da seção /filter, especialmente depois de todas as entradas de negação.
+As entradas a seguir devem ser adicionadas ao final da seção /filter , especialmente depois de todas as entradas de negação.
 
 ```shell
 # design and template assets
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0050 { /type "allow" /glob "GET /etc/designs/*" }
 
 # collected JS/CSS from the components and design
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0051 { /type "allow" /glob "GET /etc/clientlibs/*" }
 
 # foundation search component - write stats
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0052 { /type "allow" /glob "GET /bin/statistics/tracker/*" }
 
 # allow users to edit profile page
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0054 { /type "allow" /glob "* /home/users/*/*/profile.form.html*" }
 
 # all profile data
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0057 { /type "allow" /glob "GET /home/users/*/profile/*" }
 
 # required for social "Sign In" link.
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0059 { /type "allow" /glob "GET /etc/clientcontext/*" }
 
 # required for "Sign Out" operation
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0063 { /type "allow" /glob "* /system/sling/logout*" }
 
 # enable Facebook and Twitter signin
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0064 { /type "allow" /glob "GET /etc/cloudservices/*" }
 
 # enable personalization
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0062 { /type "allow" /url "/libs/cq/personalization/*" }
 
 # for Enablement features
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0170 { /type "allow" /url "/libs/granite/csrf/token.json*" }
 /0171 { /type "allow" /glob "POST /content/sites/*/resources/en/*" }
 /0172 { /type "allow" /glob "GET /content/communities/enablement/reports/*" }
@@ -135,72 +178,136 @@ As seguintes entradas devem ser adicionadas ao final da seção /filter, especia
 /0177 { /type "allow" /url "GET /libs/granite/security/currentuser.json" }
 
 # Enable CSRF token otherwise nothings works.
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /5001 { /type "allow" /glob "GET /libs/granite/csrf/token.json *"}        
 # Allow SCF User Model to bootstrap as it depends on the granite user
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /5002 { /type "allow" /glob "GET /libs/granite/security/currentuser.json*" }
    
 # Allow Communities Site Logout button work
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /5003 { /type "allow" /glob "GET /system/sling/logout.html*" }
    
 # Allow i18n to load correctly
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /5004 { /type "allow" /glob "GET /libs/cq/i18n/dict.en.json *" }
 
 # Allow social json get pattern.
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /6002 { /type "allow" /glob "GET *.social.*.json*" }
    
 # Allow loading of templates
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /6003 { /type "allow" /glob "GET /services/social/templates*" }
    
 # Allow SCF User model to check moderator rules
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /6005 { /type "allow" /glob "GET /services/social/getLoggedInUser?moderatorCheck=*" }
    
 # Allow CKEditor to load which uses a query pattern not sufficed by regular glob above.
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /6006 { /type "allow" /glob "GET /etc/clientlibs/social/thirdparty/ckeditor/*.js?t=*" }
 /6007 { /type "allow" /glob "GET /etc/clientlibs/social/thirdparty/ckeditor/*.css?t=*" }
    
 # Allow Fonts from Communities to load
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /6050 { /type "allow" /glob "GET *.woff *" }
 /6051 { /type "allow" /glob "GET *.ttf *" }
 
 # Enable CQ Security checkpoint for component guide.
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
 ## Regras do Dispatcher {#dispatcher-rules}
 
-A seção de regras de `dispatcher.any` define quais respostas devem ser armazenadas em cache com base no URL solicitado. Para Comunidades, a seção de regras é usada para definir o que nunca deve ser armazenado em cache.
+A seção de regras de `dispatcher.any` define quais respostas devem ser armazenadas em cache com base no URL solicitado. Para Comunidades, a seção Regras é usada para definir o que nunca deve ser armazenado em cache.
 
 ```shell
 # Never cache the client-side .social.json calls
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0001 { /type "deny" /glob "*.social.json*" }
 
 # Never cache the user-specific .json requests
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0002 { /type "deny" /glob "/libs/granite/csrf/token.json*" }
 /0003 { /type "deny" /glob "/libs/granite/security/currentuser.json*" }
 /0004 { /type "deny" /glob "/libs/granite/security/userinfo.json*" }
 
 # Never cache the private community groups pages in case - add your own deny rules in there
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0005 { /type "deny" /glob "/content/*/groups/*" }
 
 # Never cache the assignments page in case the Enablement feature is in use - add your own deny rules in there
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0006 { /type "deny" /glob "/content/*/assignments/*" }
 
 # Never cache user generated content
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /0208 { /type "deny" /glob "/content/usergenerated/*" }
 ```
 
 ## Resolução de problemas {#troubleshooting}
 
-Uma fonte importante de problemas é inserir regras de filtro sem prestar atenção ao efeito em regras anteriores, especialmente ao adicionar uma regra para negar acesso.
+Uma grande fonte de problemas é inserir regras de filtro sem prestar atenção ao efeito nas regras anteriores, especialmente ao adicionar uma regra para negar acesso.
 
-O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os filtros a seguir restaurem o acesso de forma controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é aquele em vigor.
+O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os seguintes filtros restaurem o acesso de maneira controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é aquele em vigor.
 
-## Amostra do dispatcher.any {#sample-dispatcher-any}
+## Exemplo de dispatcher.any {#sample-dispatcher-any}
 
-A seguir, há um arquivo de amostra `dispatcher.any` que inclui Comunidades /filtros e /regras.
+Veja a seguir uma amostra `dispatcher.any` arquivo que inclui Comunidades /filtros e /regras.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 /farms
   {
   # First farm entry
@@ -268,20 +375,60 @@ A seguir, há um arquivo de amostra `dispatcher.any` que inclui Comunidades /fil
       
       # Open consoles
 #     /0011 { /type "allow" /url "/admin/*"  }  # allow servlet engine admin
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 #     /0012 { /type "allow" /url "/crx/*"    }  # allow content repository
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 #     /0013 { /type "allow" /url "/system/*" }  # allow OSGi console
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
         
       # Allow non-public content directories
 #     /0021 { /type "allow" /url "/apps/*"   }  # allow apps access
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 #     /0022 { /type "allow" /url "/bin/*"    }
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
       /0023 { /type "allow" /url "/content*" }  # disable this rule to allow mapped content only
       
 #     /0024 { /type "allow" /url "/libs/*"   }
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 #     /0025 { /type "deny"  /url "/libs/shindig/proxy*" } # if you enable /libs close access to proxy
 
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
+
 #     /0026 { /type "allow" /url "/home/*"   }
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 #     /0027 { /type "allow" /url "/tmp/*"    }
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 #     /0028 { /type "allow" /url "/var/*"    }
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 
       # Enable specific mime types in non-public content directories 
       /0041 { /type "allow" /url "*.css"   }  # enable css
@@ -302,6 +449,10 @@ A seguir, há um arquivo de amostra `dispatcher.any` que inclui Comunidades /fil
       
       /0086 { /type "deny"  /url "*.*[0-9].json" }
 #     /0087 { /type "allow" /method "GET" /url "*.1.json" }  # allow one-level json requests
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 
       # Deny query
    /0090 { /type "deny"  /url "*.query.json" }
@@ -519,4 +670,3 @@ A seguir, há um arquivo de amostra `dispatcher.any` que inclui Comunidades /fil
     }
   }
 ```
-

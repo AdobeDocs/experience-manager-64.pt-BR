@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 5%
+source-wordcount: '2948'
+ht-degree: 3%
 
 ---
 
 # Administração de comércio eletrônico genérico{#administering-generic-ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A solução genérica de AEM fornece métodos para gerenciar as informações comerciais contidas no repositório (em vez de usar um mecanismo de comércio externo). Isso inclui:
 
@@ -47,7 +51,7 @@ Antes de criar produtos, você precisa definir um [andaime](/help/sites-authorin
 
 Um scaffold é necessário para cada tipo de produto distinto. O scaffold apropriado é associado aos produtos por:
 
-* path
+* caminho
 * o produto pode fazer referência ao scaffold
 
 >[!NOTE]
@@ -459,7 +463,7 @@ Para gerar um catálogo:
 
 1. Abra o console Sites (por exemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Navegue até o local onde deseja criar a nova página.
-1. Para abrir a lista de opções, use o ícone **Criar**:
+1. Para abrir a lista de opções, use o **Criar** ícone :
 
    ![](do-not-localize/chlimage_1-23.png)
 

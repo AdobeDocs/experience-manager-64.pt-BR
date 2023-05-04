@@ -1,24 +1,27 @@
 ---
 title: Registrar-se como um usuário
-seo-title: Registrar-se como um usuário
+seo-title: Registering as a User
 description: Saiba como você pode usar documentos protegidos por políticas recebidos de um usuário de segurança de documento, mesmo que seja externo à organização do usuário.
-seo-description: Saiba como você pode usar documentos protegidos por políticas recebidos de um usuário de segurança de documento, mesmo que seja externo à organização do usuário.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 24641bf5-7c1c-4c92-8c11-2134039085f7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 6%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
+# Registrar-se como um usuário {#registering-as-a-user}
 
-# Registrando-se como um usuário {#registering-as-a-user}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Você pode usar documentos protegidos por políticas recebidos de um usuário de segurança de documento, mesmo que seja externo à organização do usuário. Para usar um documento protegido por política, você deve se registrar na segurança do documento. Se você não tiver sido previamente convidado para se registrar, a segurança do documento iniciará o processo de registro quando esses eventos ocorrerem:
 
@@ -37,7 +40,7 @@ Você pode usar documentos protegidos por políticas recebidos de um usuário de
 >
 >Se você receber um documento protegido por uma política, mas não receber um convite por email de registro, entre em contato com a pessoa que enviou o documento para obter mais informações.
 
-## Registrar como um usuário convidado {#register-as-an-invited-user}
+## Registrar como usuário convidado {#register-as-an-invited-user}
 
 Se você for um usuário convidado e receber uma mensagem de registro por email da segurança do documento, poderá se registrar usando o URL na mensagem para abrir a página de registro online. Depois de se registrar, você receberá um segundo aviso sobre como ativar sua conta.
 
@@ -58,7 +61,7 @@ Sua conta permanece ativa até que o administrador a desative ou a exclua.
 1. Na caixa Nome de usuário, digite o endereço de email em que você se registrou com segurança de documento. Esse endereço de email é o nome de usuário padrão da segurança do documento.
 1. Na caixa Senha, digite a senha que você criou ao se registrar e clique em Logon.
 
-## Redefina sua senha {#reset-your-password}
+## Redefinir senha {#reset-your-password}
 
 Se você esquecer sua senha, o administrador da política poderá redefini-la para você. A redefinição de uma senha gera um email que solicita que você faça logon usando uma senha temporária. Em seguida, você pode criar uma nova senha.
 
@@ -70,4 +73,3 @@ Para obter informações sobre como entrar em contato com um administrador de se
 1. Clique em Opções no canto superior direito da página. A página Usuários externos é exibida.
 1. Selecione Alterar senha e digite a senha temporária na caixa Senha antiga.
 1. Na caixa Nova senha, digite uma nova senha e, em seguida, digite-a novamente na caixa Confirmar senha.
-

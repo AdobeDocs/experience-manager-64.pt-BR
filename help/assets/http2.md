@@ -12,14 +12,18 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
 feature: Asset Management
 role: Admin,User
-source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 2%
+source-wordcount: '741'
+ht-degree: 3%
 
 ---
 
 # Entrega de conteúdo HTTP2 {#http-delivery-of-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A Adobe está animada em anunciar a disponibilidade da entrega de conteúdo HTTP/2 com o benefício geral de um melhor desempenho.
 
@@ -60,7 +64,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 Você deve iniciar a solicitação para mudar para HTTP/2; isso não é feito automaticamente para você.
 
-1. Inicie uma solicitação do Suporte Técnico para mudar para HTTP2. Consulte [Acessando o Portal de Suporte ao Cliente](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Inicie uma solicitação do Suporte Técnico para mudar para HTTP2. Consulte [Acessar o portal de suporte ao cliente](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Forneça as seguintes informações em sua solicitação de suporte:
 

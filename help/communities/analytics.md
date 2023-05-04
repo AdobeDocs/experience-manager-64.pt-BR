@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2800'
 ht-degree: 4%
 
 ---
 
 # Configuração do Analytics para recursos das Comunidades {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
@@ -45,7 +49,7 @@ Os recursos suportados das Comunidades incluem:
 
 * [Recursos de habilitação](resources.md)
 * [Fórum](forum.md)
-* [Perguntas e respostas](working-with-qna.md)
+* [QnA](working-with-qna.md)
 * [Blog](blog-feature.md)
 * [Biblioteca de arquivos](file-library.md)
 * [Calendário](calendar.md)
@@ -102,7 +106,7 @@ Ao fazer logon em [Adobe Marketing Cloud](https://experienceleague.adobe.com/doc
    * **`event1`** through **`event7`** ativado
    * Tipo **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * não **`Counter (no subrelations)`**
    * Pode redefinir (renomear) os eventos existentes ou criar novos eventos para usar nos recursos das Comunidades
 
 
@@ -339,8 +343,20 @@ Para que o rastreamento e a importação do Analytics funcionem corretamente par
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"
@@ -390,14 +406,14 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
 
 |  | Ativar Tipo de Recurso | Título do Site | Tipo de função | Título do grupo | Caminho do grupo | Tipo de UGC | Título do UGC | Usuário (Membro) | Caminho UGC | Caminho do site |
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
-|  | **eVar1** | **eVar2** | **eVar3** | **eVar 4** | **eVar 5** | **eVar 6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
+|  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
 | event1Resource Play | (a) | - | - | - | - | - | - | - | i) | - |
-| event2SCFView | a) | (b) | c) | (d) | (e) | (f) | (g) | (h) | i) | j) |
-| event3SCFCreate (Post) | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event4SCFFollow | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event5SCFVoteUp | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event6SCFVoteDown | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event7SCFRate | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
+| event2SCFView | (a) | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event3SCFCreate (Post) | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event4SCFFollow | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event5SCFVoteUp | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event6SCFVoteDown | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event7SCFRate | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
 
 **Exemplos de valores de eVar:**
 

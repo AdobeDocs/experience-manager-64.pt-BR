@@ -1,8 +1,8 @@
 ---
-title: Criação de lançamentos
-seo-title: Criação de lançamentos
-description: 'É possível criar um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura. '
-seo-description: 'É possível criar um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura. '
+title: Criação de inicializações
+seo-title: Creating Launches
+description: Você pode criar um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura.
+seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,44 +10,47 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 4b9d2f5f-aae7-4366-b6a6-a8277155cee9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 93%
+source-wordcount: '1022'
+ht-degree: 49%
 
 ---
 
+# Criação de inicializações{#creating-launches}
 
-# Criação de lançamentos{#creating-launches}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem:
+Crie um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem:
 
-* O título aparece no painel [Referências](/help/sites-authoring/author-environment-tools.md#references), a partir do qual os autores podem acessá-los para trabalhar neles.
-* As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar apenas a página de origem, se desejar.
-* Por padrão, a [Live Copy](/help/sites-administering/msm.md) atualiza automaticamente as páginas de lançamento conforme as páginas de origem são alteradas. Você pode especificar que uma cópia estática seja criada para evitar alterações automáticas.
+* O título é exibido no painel [Referências](/help/sites-authoring/author-environment-tools.md#references), onde os autores podem acessá-lo para trabalhar nele.
+* As páginas filhas da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
+* Por padrão, [Live Copy](/help/sites-administering/msm.md) O atualiza automaticamente as páginas de lançamento conforme as páginas de origem são alteradas. Você pode especificar que uma cópia estática seja criada para evitar alterações automáticas.
 
 Como opção, especifique a **Data de inicialização** (e a hora) para definir quando as páginas de inicialização devem ser promovidas e ativadas. No entanto, a **Data de inicialização** só funciona em combinação com o sinalizador **Pronto para produção** (consulte [Editar uma configuração de inicialização](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); para que as ações realmente ocorram automaticamente, ambas devem ser definidas.
 
 ## Criação de um lançamento {#creating-a-launch}
 
-É possível criar um lançamento do console Sites ou Lançamentos:
+Você pode criar um lançamento no console Sites ou Lançamentos :
 
-1. Abra o console **Sites** ou **Lançamentos**.
+1. Abra o console **Sites** ou **Inicializações**.
 
    >[!NOTE]
    >
-   >Ao usar o console **Sites**, é normal navegar até o local da página de origem, mas isso não é obrigatório, pois você pode navegar para selecionar **Iniciar origem** no assistente.
+   >Ao usar a variável **Sites** no console, é normal navegar até o local da página de origem, mas isso não é obrigatório, pois você pode navegar ao selecionar o **Origem do Launch** no assistente.
 
-1. Dependendo do console que está usando:
+1. Dependendo do console usado:
 
-   * **Lançamentos**:
+   * **Inicializações**:
 
-      1. Selecione **Criar lançamento** na barra de ferramentas para abrir o assistente.
+      1. Selecionar **Criar lançamento** na barra de ferramentas para abrir o assistente.
    * **Sites**:
 
       1. Selecione **Criar** na barra de ferramentas para abrir a caixa de seleção.
-      1. Aqui, selecione **Criar lançamento** para abrir o assistente.
+      1. Nesta seleção **Criar lançamento** para abrir o assistente.
 
    >[!NOTE]
    >
@@ -58,7 +61,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 1. Na etapa **Selecionar origem**, é necessário **Adicionar páginas**. É possível selecionar várias páginas, especificando o caminho de cada uma delas:
 
    * Navegue até o local necessário.
-   * Selecione as páginas de origem e confirme-as (marca de verificação).
+   * Selecione as páginas de origem e confirme (marca de seleção).
 
    Repita conforme necessário.
 
@@ -66,108 +69,107 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    >[!NOTE]
    >
-   >Para adicionar páginas e/ou ramificações a um lançamento, elas devem estar em um site (ou seja, abaixo de uma raiz de nível superior comum).
+   >Para adicionar páginas e/ou ramificações a um lançamento, elas devem estar em um site; ou seja, abaixo de uma raiz comum de nível superior.
    >
-   >Se o site contém raízes de idioma abaixo do nível superior, as páginas e as ramificações de um lançamento devem estar abaixo de uma raiz de idioma comum.
+   >Se um site contém raízes de idioma abaixo do nível superior, as páginas e ramificações de um lançamento devem estar abaixo de uma raiz de idioma comum.
 
-1. Para cada entrada, é possível especificar:
+1. Para cada entrada, você pode especificar se deve:
 
    * **Incluir subpáginas**:
 
-      * Especifique se você deseja criar o lançamento com ou sem as páginas secundárias.  Por padrão, essas subpáginas são incluídas.
+      * Especifique se você deseja criar a inicialização com ou sem as páginas secundárias.  Por padrão, essas subpáginas são incluídas.
 
-   Continue com **Próximo**.
+   Continue clicando em **Próximo**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
 1. Na etapa **Propriedades** do assistente, é possível especificar:
 
-   * **Título do lançamento**: o nome do lançamento. O nome deve ser significativo para os autores.
-   * **com conteúdo existente**: o conteúdo original será usado para criar o lançamento.
-   * **usar um novo modelo para substituir a página**: consulte[ Criar lançamento com o novo modelo](#create-launch-with-new-template) para obter mais detalhes.
-   * **Herdar dados online de página fonte:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de lançamento quando as páginas de origem forem alteradas. Essa opção consegue isso fazendo com que a inicialização seja uma [live copy](/help/sites-administering/msm.md).
+   * **Título do lançamento**: O nome do Launch. O nome deve ser significativo para os autores.
+   * **com conteúdo existente**: o conteúdo original será usado para criar a inicialização.
+   * **usar um novo modelo para substituir a página**: consulte [Criar inicialização com um novo modelo](#create-launch-with-new-template) para obter mais detalhes.
+   * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Esta opção consegue-o tornando o lançamento uma [live copy](/help/sites-administering/msm.md).
 
       Por padrão, esta opção é selecionada.
 
-   * **Data de lançamento**: a data e a hora em que a cópia de lançamento deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Lançamentos - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Data da inicialização**: a data e a hora em que a cópia de inicialização deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
-1. Use **Criar** para concluir o processo e criar seu novo lançamento. A caixa de diálogo de confirmação irá perguntar se deseja abrir o lançamento imediatamente.
+1. Use **Criar** para concluir o processo e criar seu novo lançamento. A caixa de diálogo de confirmação perguntará se você deseja abrir o lançamento imediatamente.
 
-   Se retornar ao console (com a opção **Concluído**), poderá visualizar (e acessar) seu lançamento:
+   Se você retornar ao console (com **Concluído**) é possível visualizar (e acessar) seu lançamento por meio de:
 
-   * o [**** console Lançamentos](/help/sites-authoring/launches.md#the-launches-console)
-   * das [**Referências** no console **Sites** ](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * o [**Lançamentos** console](/help/sites-authoring/launches.md#the-launches-console)
+   * o [**Referências** no **Sites** console](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
-### Criar lançamento com o novo modelo {#create-launch-with-new-template}
+### Criar inicialização com um novo modelo {#create-launch-with-new-template}
 
-Ao [criar um lançamento](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), é possível escolher se deseja usar um novo modelo:
+When [criação de um lançamento](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) você pode selecionar se deseja usar um novo modelo:
 
 **utilizando um novo modelo para substituir a página**
 
 >[!CAUTION]
 >
->Essa opção está disponível apenas ao criar um lançamento no console **Sites**. Não está disponível ao criar um lançamento no console **Lançamentos**.
+>Essa opção está disponível apenas ao criar uma inicialização no console **Sites**. Não está disponível ao criar uma inicialização no console **Inicializações**.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
 Selecionar isso irá:
 
 * atualizar as outras opções disponíveis,
-* incluir uma nova etapa, que permite selecionar o modelo obrigatório.
+* inclua uma nova etapa, na qual você pode selecionar o modelo necessário.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
->Como um modelo diferente foi usado, a nova página estará em branco. Devido a uma estrutura de página diferente, nenhum conteúdo será copiado.
+>Como um modelo diferente é usado, a nova página estará vazia. Devido à estrutura de página diferente, nenhum conteúdo será copiado.
 >
->Este mecanismo pode ser usado para alterar o modelo de uma [página existente](/help/sites-authoring/managing-pages.md#creating-a-new-page), embora a perda de conteúdo deva ser levada em consideração.
+>Esse mecanismo pode ser usado para alterar o modelo de um [página existente](/help/sites-authoring/managing-pages.md#creating-a-new-page) - embora a perda de conteúdo deva ser considerada.
 
 ### Criação de um lançamento aninhado {#creating-a-nested-launch}
 
-Criar um lançamento aninhado (um lançamento dentro de outro) permite criar um lançamento a partir de um lançamento existente, de modo os autores possam aproveitar as alterações feitas, em vez de ter que fazer as mesmas alterações várias vezes para cada lançamento.
+Criar um lançamento aninhado (lançamento dentro de um lançamento) permite criar um lançamento a partir de um lançamento existente, para que os autores possam aproveitar as alterações já feitas, em vez de terem que fazer as mesmas alterações várias vezes para cada lançamento.
 
 >[!NOTE]
 >
->Consulte também [Promover um lançamento aninhado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch).
+>Consulte também [Promover uma inicialização aninhada](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch).
 
-#### Criação de um lançamento aninhado - Console Lançamentos {#creating-a-nested-launch-launches-console}
+#### Criação de uma inicialização aninhada - Console Inicializações {#creating-a-nested-launch-launches-console}
 
-Criar uma inicialização aninhada do console **Inicializações** é basicamente o mesmo que criar qualquer outra forma de inicialização, com a exceção de que você precisa navegar até a ramificação de inicializações `/content/launches`:
+A criação de uma inicialização aninhada no console **Inicializações** segue basicamente o mesmo processo de criação de qualquer outra forma de inicialização, com a exceção de que você precisa acessar a ramificação de inicializações `/content/launches`:
 
-1. No console **Lançamentos** selecione **Criar**.
+1. No console **Inicializações**, selecione **Criar**.
 1. Selecione **Adicionar páginas** e navegue até a ramificação de inicializações especificando `/content/launches` no filtro. Selecione a inicialização necessária e confirme com **Selecionar**:
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Continue com **Próximo** e preencha as **Propriedades** como faria com qualquer outro lançamento.
+1. Continue com **Próximo** e conclua o **Propriedades** como com qualquer outro lançamento.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-#### Criação de um lançamento aninhado - Console Sites {#creating-a-nested-launch-sites-console}
+#### Criação de uma inicialização aninhada - Console Sites {#creating-a-nested-launch-sites-console}
 
-Para criar um lançamento aninhado no console **Sites**, com base em um lançamento existente:
+Para criar uma inicialização aninhada no console **Sites**, com base em uma inicialização existente:
 
-1. Acesse [Lançamento a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
-1. Selecione **Criar inicialização** para abrir o assistente (como a fonte já foi selecionada, ele ignorará a etapa **Selecionar fonte**).
+1. Acesse [Inicialização a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
+1. Selecione **Criar inicialização** para abrir o assistente (como a origem já foi selecionada, ele ignorará a etapa **Selecionar origem**).
 
-1. Insira o **Título do lançamento** e todos os outros detalhes necessários (como com um lançamento normal).
+1. Insira o **Título da inicialização** e todos os outros detalhes necessários (como em uma inicialização normal).
 
-1. Use **Criar** para concluir o processo e criar seu novo lançamento. A caixa de diálogo de confirmação irá perguntar se deseja abrir o lançamento imediatamente.
+1. Use **Criar** para concluir o processo e criar seu novo lançamento. A caixa de diálogo de confirmação perguntará se você deseja abrir o lançamento imediatamente.
 
-   Se você selecionar **Concluído**, retornará ao painel **Referências** do console **Sites**, se selecionar a página apropriada, a nova inicialização será mostrada.
+   Ao selecionar **Concluído**, você retornará ao painel **Referências** do console **Sites**. Ao selecionar a página apropriada, a nova inicialização será exibida.
 
 ### Exclusão de um lançamento {#deleting-a-launch}
 
-É possível excluir um lançamento do console [Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
+Você pode excluir um lançamento do [inicia o console](/help/sites-authoring/launches.md#the-launches-console):
 
-* Selecione o lançamento, tocando/clicando na miniatura.
+* Selecione o lançamento tocando/clicando na miniatura.
 * A barra de ferramentas será exibida; selecione Excluir.
 * Confirme a ação.
 
 >[!CAUTION]
 >
 >Excluir um lançamento removerá o próprio lançamento e qualquer lançamento descendente aninhado.
-

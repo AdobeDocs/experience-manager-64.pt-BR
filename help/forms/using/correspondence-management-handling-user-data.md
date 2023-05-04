@@ -1,22 +1,26 @@
 ---
 title: Gerenciamento de correspondência | Tratamento de dados de utilizadores
-seo-title: Gerenciamento de correspondência | Tratamento de dados de utilizadores
+seo-title: Correspondence Management | Handling user data
 description: O AEM Forms Correspondence Management permite criar, gerenciar e simplificar correspondências seguras e personalizadas do cliente. Saiba como configurar o armazenamento de dados para rascunho e cartas enviadas em AEM repositório, acessar dados armazenados e excluir dados armazenados.
-seo-description: O AEM Forms Correspondence Management permite criar, gerenciar e simplificar correspondências seguras e personalizadas do cliente. Saiba como configurar o armazenamento de dados para rascunho e cartas enviadas em AEM repositório, acessar dados armazenados e excluir dados armazenados.
+seo-description: AEM Forms Correspondence Management enables you to create, manage, and streamline secure and personalized customer correspondences. Learn how to configure storing data for draft and submitted letters in AEM repository, access stored data, and delete stored data.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 0%
+source-wordcount: '608'
+ht-degree: 1%
 
 ---
 
 # Gerenciamento de correspondência | Tratamento de dados de utilizadores {#correspondence-management-handling-user-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O AEM Forms Correspondence Management permite criar, gerenciar e simplificar correspondências seguras e personalizadas do cliente. Ela oferece uma interface de usuário intuitiva para usuários empresariais criarem correspondências usando blocos de conteúdo e elementos de mídia pré-aprovados. Para obter mais informações sobre como criar correspondências, consulte [Criar correspondência](/help/forms/using/create-correspondence.md).
 
@@ -52,13 +56,13 @@ Dependendo da persistência do armazenamento de dados configurada para a implant
  </tbody>
 </table>
 
-No local do repositório AEM acima especificado:
+No local de repositório AEM especificado acima:
 
 * `[yyyy]/[mm]/[dd]` é a estrutura do nó com base na data em que a instância da carta foi criada
 * `[node-id]` é o ID atribuído à pasta que contém a carta
 * `[letter-instance-name]` é o nome especificado ao salvar ou enviar uma carta
 
-No nó [letter-instance-name], a seguinte estrutura de nó é criada e os dados para cada instância de carta são armazenados no repositório AEM:
+Em [letter-instance-name] , a seguinte estrutura de nó é criada e os dados para cada instância de carta são armazenados no repositório de AEM:
 
 | Nó | Descrição |
 |---|---|
@@ -73,9 +77,9 @@ Você pode acessar dados de rascunho e enviar a correspondência nos armazenamen
 
 ### Acessar dados do usuário {#access-user-data}
 
-O gerenciamento de correspondência fornece APIs que podem ser usadas para localizar e acessar instâncias de rascunho e de carta enviada. Usando as APIs, é possível encontrar e abrir instâncias de carta usando a ID da instância de carta ou o usuário que salvou ou enviou a correspondência. Para obter mais informações, consulte [APIs para acessar instâncias de carta](/help/forms/using/cm-apis-to-access-letter-instances.md).
+O gerenciamento de correspondência fornece APIs que podem ser usadas para localizar e acessar instâncias de rascunho e de carta enviada. Usando as APIs, é possível encontrar e abrir instâncias de carta usando a ID da instância de carta ou o usuário que salvou ou enviou a correspondência. Para obter mais informações, consulte [APIs para acessar instâncias de cartas](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Como alternativa, você pode navegar até a instância da carta AEM repositório usando o CRX DELite. Consulte [Dados do usuário e armazenamentos de dados](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre os dados armazenados e o local do repositório.
+Como alternativa, você pode navegar até a instância da carta AEM repositório usando o CRX DELite. Consulte [Armazenamento de dados e dados do usuário](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre dados armazenados e o local do repositório.
 
 ### Excluir dados do usuário {#delete-user-data}
 

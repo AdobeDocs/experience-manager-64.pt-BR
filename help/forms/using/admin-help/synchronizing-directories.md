@@ -1,5 +1,5 @@
 ---
-title: 'Sincronização de diretórios '
+title: Sincronização de diretórios
 seo-title: Synchronizing directories
 description: Saiba como sincronizar o banco de dados de Gerenciamento de usuários com alterações nos servidores de diretório de origem usando sincronização manual ou agendada.
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
 
 # Sincronização de diretórios {#synchronizing-directories}
 
-Para sincronizar domínios, você pode optar por fazer uma sincronização manual ou agendada. Uma *sincronização manual* sincroniza todos os domínios selecionados. Uma *sincronização agendada* sincroniza todos os domínios.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Para sincronizar domínios, você pode optar por fazer uma sincronização manual ou agendada. A *sincronização manual* sincroniza qualquer domínio selecionado. A *sincronização agendada* sincroniza todos os domínios.
 
 A sincronização de diretórios é usada para extrair detalhes dos servidores de diretórios especificados nas configurações de diretório para o banco de dados de Gerenciamento de Usuários. Posteriormente, você também poderá fazer uma sincronização manual se ocorrerem alterações ou atualizações nos servidores de diretório. Por exemplo, você pode fazer uma sincronização manual se usuários e grupos forem adicionados ou se alterações forem feitas na conta de um usuário.
 
@@ -35,7 +39,7 @@ Você também pode definir um agendamento diário de sincronização para sincro
 
 >[!NOTE]
 >
->O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados em seres humanos. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados em seres humanos. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte [Documento de ciclo de vida do produto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Ativar a sincronização do diretório delta {#enable-delta-directory-synchronization}
 
@@ -53,7 +57,7 @@ O Gerenciamento de usuários executa as seguintes etapas quando a sincronizaçã
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuário > Gerenciamento de domínio.
 1. Em Sincronização delta, marque a caixa de seleção e clique em Salvar.
-1. Edite as configurações de diretório para cada um dos domínios corporativos que usarão o recurso de sincronização de diretório delta. Nas páginas Configurações do usuário e Configurações do grupo , localize a configuração Modificar carimbo de data e hora e digite `modify TimeStamp` como o valor. Para obter detalhes sobre como editar domínios corporativos, consulte [Editar e converter domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Edite as configurações de diretório para cada um dos domínios corporativos que usarão o recurso de sincronização de diretório delta. Nas páginas Configurações do usuário e Configurações do grupo , localize a configuração Modificar carimbo de data e hora e insira `modify TimeStamp` como o valor. Para obter detalhes sobre como editar domínios corporativos, consulte [Edição e conversão de domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Ativar ou desativar o registro detalhado durante a sincronização {#enable-or-disable-detailed-logging-during-synchronization}
 

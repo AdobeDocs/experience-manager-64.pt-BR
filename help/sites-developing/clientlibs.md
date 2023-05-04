@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 exl-id: ba604611-03cb-4f97-8ff6-1a559b52263b
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 2%
+source-wordcount: '2884'
+ht-degree: 3%
 
 ---
 
 # Uso de bibliotecas do cliente{#using-client-side-libraries}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Sites modernos dependem muito de processamento no lado do cliente impulsionado por códigos complexos de JavaScript e CSS. Organizar e otimizar a veiculação desse código pode ser um problema complicado.
 

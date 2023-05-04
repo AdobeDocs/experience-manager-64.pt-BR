@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4285'
 ht-degree: 2%
 
 ---
 
 # Instalar e configurar serviços de documento {#installing-and-configuring-document-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A AEM Forms fornece um conjunto de serviços OSGi para realizar operações de nível de documento diferentes, por exemplo, serviços para criar, montar, distribuir e arquivar documentos do PDF, adicionar assinaturas digitais para limitar o acesso a documentos e decodificar formulários com códigos de barras. Esses serviços estão incluídos no pacote complementar do AEM Forms. Coletivamente, esses serviços são conhecidos como serviços de documento. A lista de serviços de documento disponíveis e seus principais recursos é a seguinte:
 
@@ -393,7 +397,7 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
 1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) artigo 10. o
+   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artigo 10. o
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não pare imediatamente o servidor.** Antes de parar o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no `[AEM-Installation-Directory]/crx-quickstart/logs/error`Arquivo .log e o log é estável.
 

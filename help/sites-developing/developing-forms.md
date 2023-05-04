@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 5%
+source-wordcount: '1977'
+ht-degree: 1%
 
 ---
 
 # Desenvolvimento do Forms (interface clássica){#developing-forms-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A estrutura básica de um formulário é:
 
@@ -47,7 +51,7 @@ O componente de início do formulário fornece um campo para a variável **Carre
 
 O Caminho de carregamento é o caminho para as propriedades do nó, usado para carregar valores predefinidos em vários campos no formulário.
 
-Isso é um campo opcional que especifica o caminho para um nó no repositório. Quando este nó tem propriedades que correspondem aos nomes do campo, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Caso não exista nenhuma correspondência, o campo vai conter o valor padrão.
+Este é um campo opcional que especifica o caminho para um nó no repositório. Quando esse nó tem propriedades que correspondem aos nomes dos campos, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Se não houver correspondência, o campo conterá o valor padrão.
 
 >[!NOTE]
 >
@@ -63,7 +67,7 @@ O **Caminho de carregamento dos itens** é o caminho para as propriedades do nó
 
 ### Exemplo - Pré-Carregamento De Uma Lista Suspensa Com Vários Valores {#example-preloading-a-dropdown-list-with-multiple-values}
 
-Uma lista suspensa pode ser configurada com o intervalo de valores para a seleção.
+Uma lista suspensa pode ser configurada com o intervalo de valores para seleção.
 
 O **Caminho de carregamento dos itens** pode ser usada para acessar uma lista de uma pasta no repositório e pré-carregá-las no campo :
 
@@ -92,7 +96,7 @@ Esse recurso pode, por exemplo, ser aproveitado em uma configuração de vários
 
 ### Desenvolvimento de suas próprias ações de formulário {#developing-your-own-form-actions}
 
-Um formulário exige uma ação. Uma ação define a operação que é executada quando o formulário é enviado com os dados do usuário.
+Um formulário precisa de uma ação. Uma ação define a operação que é executada quando o formulário é enviado com os dados do usuário.
 
 Uma variedade de ações são fornecidas com uma instalação padrão do AEM, essas ações podem ser vistas em:
 
@@ -257,7 +261,7 @@ Em seguida, é possível definir:
 
 É possível configurar o formulário para mostrar ou ocultar os componentes do formulário de acordo com o valor de outros campos no formulário.
 
-Alterar a visibilidade de um campo do formulário é útil, quando o campo é necessário apenas em condições específicas. Por exemplo, em um formulário de feedback, uma pergunta pergunta faz com que os clientes queiram que as informações do produto sejam enviadas a eles por email. Ao selecionar sim, um campo de texto é exibido para permitir que o cliente digite seu endereço de email.
+Alterar a visibilidade de um campo de formulário é útil quando o campo é necessário somente em condições específicas. Por exemplo, em um formulário de feedback, uma pergunta pergunta faz com que os clientes queiram que as informações do produto sejam enviadas a eles por email. Ao selecionar sim, um campo de texto é exibido para permitir que o cliente digite seu endereço de email.
 
 Use o **Editar Mostrar/Ocultar Regras** caixa de diálogo para especificar as condições em que um componente de formulário é exibido ou oculto.
 

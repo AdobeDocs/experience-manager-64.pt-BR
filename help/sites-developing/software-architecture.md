@@ -1,8 +1,8 @@
 ---
 title: Arquitetura de software
-seo-title: Arquitetura de software
+seo-title: Software Architecture
 description: Práticas recomendadas para a arquitetura do seu software
-seo-description: Práticas recomendadas para a arquitetura do seu software
+seo-description: Best practices for architecting your software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,24 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
-translation-type: tm+mt
-source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 0%
+source-wordcount: '650'
+ht-degree: 1%
 
 ---
 
 # Arquitetura de software{#software-architecture}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 ## Design para atualizações {#design-for-upgrades}
 
 Ao estender os comportamentos do OOTB, é importante ter em mente as atualizações. Sempre aplique personalizações no diretório /apps e sobreponha os nós correspondentes no diretório /libs ou use sling:resourceSuperType para estender o comportamento pronto para uso. Embora algumas modificações possam ser necessárias para oferecer suporte a uma nova versão de AEM, a nova versão não deve substituir as personalizações caso essa prática seja seguida.
 
-### Reutilizar modelos e componentes quando possível {#reuse-template-and-components-when-possible}
+### Reutilizar modelos e componentes sempre que possível {#reuse-template-and-components-when-possible}
 
 Isso permitirá que o site mantenha uma aparência mais consistente e simplifique a manutenção do código. Quando um novo modelo for necessário, certifique-se de estender de um modelo base compartilhado para que os requisitos globais, como a inclusão clientlib, possam ser codificados em um local. Quando um novo componente for necessário, procure oportunidades para se estender a partir de um componente existente.
 
@@ -36,11 +39,11 @@ Ao definir quais componentes podem ser incluídos em cada parsys na página, a c
 
 O SOLID é um acrônimo que descreve cinco princípios arquitetônicos que devem ser respeitados:
 
-* **** Princípio de responsabilidade única - cada módulo, classe, método etc. deve ter apenas uma responsabilidade.
-* **** Princípio Aberto/Fechado - os módulos devem ser abertos para extensão e fechados para modificação.
-* **** Princípio de substituição Liskov - os tipos devem ser substituíveis pelos seus subtipos.
-* **** Princípio de segmentação da interface - nenhum cliente deve ser forçado a depender de métodos que não usa.
-* **** Princípio de inversão de dependência - Os módulos de alto nível não devem depender dos módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
+* **S** Princípio de responsabilidade única - cada módulo, classe, método, etc. deve ter apenas uma responsabilidade.
+* **O** Princípio aberto/fechado - os módulos devem ser abertos para extensão e fechados para modificação.
+* **L** Princípio da substituição iskov - os tipos devem ser substituíveis pelos seus subtipos.
+* **I** Princípio de segmentação da interface - nenhum cliente deve ser forçado a depender de métodos que não usa.
+* **D** Princípio de inversão de dependência - Os módulos de alto nível não devem depender dos módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
 
 O cumprimento destes cinco princípios deve conduzir a um sistema que tenha uma separação rigorosa das preocupações.
 
@@ -50,7 +53,7 @@ O cumprimento destes cinco princípios deve conduzir a um sistema que tenha uma 
 >
 >Este é apenas um breve resumo apresentado para conscientização e você é encorajado a se familiarizar com esses conceitos mais a fundo.
 
-### Siga o princípio de robustez {#follow-the-robustness-principle}
+### Siga o princípio da robustez {#follow-the-robustness-principle}
 
 O Princípio da Robustez afirma que devemos ser conservadores no que enviamos, mas ser liberais no que aceitamos. Em outras palavras, ao enviar mensagens para terceiros, devemos estar em conformidade total com as especificações, mas ao receber mensagens de terceiros, devemos aceitar mensagens não conformes, desde que o significado da mensagem seja claro.
 

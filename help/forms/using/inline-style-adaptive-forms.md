@@ -1,32 +1,35 @@
 ---
 title: Estilo em linha de componentes de formulário adaptáveis
-seo-title: Propriedades CSS embutidas para componentes de formulário adaptáveis
+seo-title: Inline CSS properties for adaptive form components
 description: Embora seja possível aplicar estilos personalizados em um formulário adaptável, também é possível aplicar propriedades de CSS em linha em componentes individuais de um formulário adaptável.
-seo-description: Embora seja possível aplicar estilos personalizados em um formulário adaptável, também é possível aplicar propriedades de CSS em linha em componentes individuais de um formulário adaptável.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 3%
+source-wordcount: '562'
+ht-degree: 4%
 
 ---
 
-
 # Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
-Você pode definir a aparência e o estilo gerais de um formulário adaptável especificando estilos usando o [editor de temas](/help/forms/using/themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações dinamicamente. Os estilos em linha substituem o estilo fornecido no tema.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Você pode definir a aparência e o estilo gerais de um formulário adaptável especificando estilos usando [editor de temas](/help/forms/using/themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações dinamicamente. Os estilos em linha substituem o estilo fornecido no tema.
 
 ## Aplicar propriedades CSS em linha {#apply-inline-css-properties}
 
 Para adicionar estilos em linha a um componente:
 
-1. Abra o formulário no editor de formulário e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Selecione um componente na página e toque no botão de edição ![edit-button](assets/edit-button.png). Propriedades de estilo abertas na barra lateral.
+1. Abra o formulário no editor de formulário e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, toque em ![lista suspensa de tela](assets/canvas-drop-down.png) > **Estilo**.
+1. Selecione um componente na página e toque no botão Editar ![botão editar](assets/edit-button.png). Propriedades de estilo abertas na barra lateral.
 
    Você também pode selecionar componentes da árvore de hierarquia do formulário na barra lateral. A árvore da hierarquia do formulário está disponível como Objetos de formulário na barra lateral.
 
@@ -44,7 +47,7 @@ Para adicionar estilos em linha a um componente:
    * Avançado (Permite gravar CSS personalizado para o componente)
 
 1. Da mesma forma, é possível aplicar estilos para outras partes de um componente, como Widget, Legenda e Ajuda.
-1. Toque em **Concluído** para confirmar as alterações ou em **Cancelar** para descartar as alterações.
+1. Toque **Concluído** para confirmar as alterações ou **Cancelar** para descartar as alterações.
 
 ## Exemplo: estilos em linha para um componente de campo {#example-inline-styles-for-a-field-component}
 
@@ -91,18 +94,17 @@ Observe a alteração no estilo da caixa de texto, como mostrado na imagem a seg
   <tr> 
    <td><p>Descrição longa</p> </td> 
    <td><p>text-align</p> </td> 
-   <td><p>center</p> </td> 
+   <td><p>centro</p> </td> 
    <td><p>Alinha a descrição longa para a ajuda do centro</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-![Estilo da caixa de texto depois que o estilo em linha é ](assets/applied-style.png)
-**aplicadoFigura:** *componente da caixa de texto depois de aplicar as propriedades de estilo em linha*
+![Estilo da caixa de texto após a aplicação do estilo em linha](assets/applied-style.png)
+**Figura:** *Componente de caixa de texto após aplicar as propriedades de estilo em linha*
 
 Após as etapas acima, você pode selecionar e criar um estilo para outros componentes, como painéis, botões Enviar e botões de opção.
 
 >[!NOTE]
 >
 >As propriedades de estilo variam de acordo com o componente selecionado.
-

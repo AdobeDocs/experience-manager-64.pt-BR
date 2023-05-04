@@ -1,14 +1,14 @@
 ---
 title: Usar o Media Library para o gerenciamento básico de ativos digitais
-description: '"[!DNL Experience Manager Assets] e Media Library para gerenciamento de ativos."'
+description: "[!DNL Experience Manager Assets] e Media Library para gerenciamento de ativos."
 contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 0%
+source-wordcount: '572'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,10 @@ Define what is not included
 -->
 
 # Usar o Media Library para gerenciamento básico de ativos {#manage-assets-using-media-library}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 [!DNL Adobe Experience Manager] A plataforma fornece diferentes recursos para gerenciar ativos. O Media Library permite que os usuários façam upload de um pequeno número de ativos para o repositório, pesquisem e usem nas páginas da Web e realizem tarefas simples de gerenciamento de ativos nos ativos.
 
@@ -70,7 +74,7 @@ Para usar a funcionalidade do Media Library, é possível usar o [!DNL Experienc
 * Anotar ativos.
 * Adicionar ativos a [!DNL Sites] nas páginas do Localizador de conteúdo.
 * Uso [!DNL Content Fragments].
-* Usar REST HTTP e APIs GraphQL para [!DNL Content Fragments] e ativos de mídia referenciados, sob licença Sites.
+* Usar HTTP REST e APIs do GraphQL para [!DNL Content Fragments] e ativos de mídia referenciados, sob licença Sites.
 * Integração do Marketing Cloud.
 * Personalize e estenda a interface do usuário do gerenciamento de ativos.
 * Acesse o Query Builder (API) para estender a funcionalidade de pesquisa.

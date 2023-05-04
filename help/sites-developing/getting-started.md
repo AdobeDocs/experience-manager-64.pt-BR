@@ -1,7 +1,7 @@
 ---
 title: Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND
 seo-title: Getting Started Developing AEM Sites - WKND Tutorial
-description: Novo no desenvolvimento de AEM? Precisa de um revisor sobre as práticas recomendadas? Este é o lugar para começar! O objetivo deste tutorial de várias partes é ensinar um desenvolvedor novo a AEM como implementar um site no AEM usando os padrões e tecnologias mais recentes.
+description: Novo no desenvolvimento no AEM? Precisa revisar as práticas recomendadas? Este é o lugar para começar. A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AEM como implementar um site no AEM usando os padrões e tecnologias mais recentes.
 seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
 uuid: 42db7bc5-5818-40e4-83b4-0cafc1acac42
 contentOwner: User
@@ -10,26 +10,30 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 54e48abc-be75-4477-83fa-bd74d5b995af
 exl-id: 82554eb8-34a0-4877-b92c-56ee662dda97
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 21%
+source-wordcount: '289'
+ht-degree: 67%
 
 ---
 
 # Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 ## Visão geral {#overview}
 
-Novo no desenvolvimento de AEM? Precisa de um revisor sobre as práticas recomendadas? Este é o lugar para começar!
+Novo no desenvolvimento no AEM? Precisa revisar as práticas recomendadas? Este é o lugar para começar.
 
-O objetivo deste tutorial de várias partes é ensinar um desenvolvedor novo a AEM como implementar um site no AEM usando os padrões e tecnologias mais recentes. A esperança é que, no final deste tutorial, você entenda a base básica da plataforma de AEM e o conhecimento de alguns dos padrões comuns de design.
+A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AEM como implementar um site no AEM usando os padrões e tecnologias mais recentes. Esperamos que, no final deste tutorial, você entenda as noções fundamentais da plataforma do AEM e conheça alguns dos padrões comuns de design.
 
 ## Tutorial do desenvolvedor do WKND {#wknd-developer-tutorial}
 
 O tutorial está disponível [here](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) ou clique na imagem abaixo.
 
-[![clicar imagem](assets/screen_shot_2018-11-23at152453.png)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+[![clicar imagem](assets/screen_shot_2018-11-23at152453.png)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
 ## Conceitos principais {#core-concepts}
 

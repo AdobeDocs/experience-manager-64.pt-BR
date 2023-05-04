@@ -1,22 +1,26 @@
 ---
 title: Práticas recomendadas de descarregamento de ativos
-description: Casos de uso recomendados e práticas recomendadas para descarregar a assimilação de ativos e workflows de replicação no  [!DNL Experience Manager] Assets.
+description: Casos de uso recomendados e práticas recomendadas para descarregar a assimilação de ativos e workflows de replicação em [!DNL Experience Manager] Ativos.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1841'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas de descarregamento de ativos {#assets-offloading-best-practices}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 >[!WARNING]
 >
->Este recurso está obsoleto [!DNL Experience Manager] 6.4 em diante e é removido em [!DNL Experience Manager] 6.5. Planeje de acordo.
+>Esse recurso foi descontinuado [!DNL Experience Manager] 6.4 em diante e é removido em [!DNL Experience Manager] 6.5. Planejar em conformidade.
 
 O manuseio de arquivos grandes e a execução de fluxos de trabalho no Adobe Experience Manager Assets podem consumir recursos consideráveis de CPU, memória e E/S. Especificamente, o tamanho dos ativos, os fluxos de trabalho, o número de usuários e a frequência da assimilação de ativos podem afetar o desempenho geral do sistema. As operações com mais recursos incluem a assimilação de ativos e os workflows de replicação. O uso intenso desses workflows em uma única instância de criação pode afetar negativamente a eficiência da criação.
 
@@ -38,7 +42,7 @@ O fluxo de trabalho DAM Update Asset Offloading é executado no servidor princip
 
 ### Gerente de emprego {#job-manager}
 
-O gerenciador de tarefas distribui novos trabalhos para instâncias de trabalho. Ao projetar o mecanismo de distribuição, é importante levar a ativação do tópico em consideração. As tarefas só podem ser atribuídas a instâncias em que o tópico da tarefa está ativado. Desative o tópico `com/adobe/granite/workflow/offloading` no principal e ative-o no trabalhador para garantir que o trabalho seja atribuído ao trabalhador.
+O gerenciador de tarefas distribui novos trabalhos para instâncias de trabalho. Ao projetar o mecanismo de distribuição, é importante levar a ativação do tópico em consideração. As tarefas só podem ser atribuídas a instâncias em que o tópico da tarefa está ativado. Desativar o tópico `com/adobe/granite/workflow/offloading` no principal e habilite-o no trabalhador para garantir que o trabalho seja atribuído ao trabalhador.
 
 ### [!DNL Experience Manager] descarregamento {#aem-offloading}
 
@@ -46,11 +50,11 @@ A estrutura de descarregamento identifica tarefas de descarregamento de workflow
 
 ### Descarga de trabalho consumidor {#workflow-offloading-job-consumer}
 
-Depois que um trabalho é gravado no trabalhador, o gerenciador de trabalhos chama o consumidor do trabalho responsável pelo tópico *com/adobe/granite/workflow/offloading*. O consumidor de trabalho executa então o fluxo de trabalho Ativo de atualização do DAM no ativo.
+Depois que um trabalho é gravado no trabalhador, o gerente de trabalho chama o consumidor de trabalho responsável pela *com/adobe/granite/workflow/offloading* tópico. O consumidor de trabalho executa então o fluxo de trabalho Ativo de atualização do DAM no ativo.
 
 ## Topologia do Sling {#sling-topology}
 
-A topologia Sling agrupa [!DNL Experience Manager] instâncias e permite que elas estejam cientes umas das outras, independentemente da persistência subjacente. Essa característica da topologia Sling permite criar topologias para cenários não clusterizados, clusterizados e mistos. Uma instância pode expor propriedades à topologia inteira. A estrutura fornece retornos de chamada para acompanhar as alterações na topologia (instâncias e propriedades). A topologia Sling fornece a base para trabalhos distribuídos Sling.
+Os grupos de topologia Sling [!DNL Experience Manager] e permite que elas estejam cientes umas das outras, independentemente da persistência subjacente. Essa característica da topologia Sling permite criar topologias para cenários não clusterizados, clusterizados e mistos. Uma instância pode expor propriedades à topologia inteira. A estrutura fornece retornos de chamada para acompanhar as alterações na topologia (instâncias e propriedades). A topologia Sling fornece a base para trabalhos distribuídos Sling.
 
 ### Sling trabalhos distribuídos {#sling-distributed-jobs}
 
@@ -93,7 +97,7 @@ Com [!DNL Experience Manager] e Oak, há vários cenários de implantação poss
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-Para obter detalhes sobre como configurar um armazenamento de dados, consulte [Configurar armazenamentos de nó e armazenamentos de dados em AEM](../sites-deploying/data-store-config.md).
+Para obter detalhes sobre como configurar um armazenamento de dados, consulte [Configuração de armazenamentos de nó e armazenamentos de dados em AEM](../sites-deploying/data-store-config.md).
 
 ### Desativar o gerenciamento automático de agentes {#turning-off-automatic-agent-management}
 
@@ -107,10 +111,10 @@ O Adobe recomenda desativar o gerenciamento automático de agentes porque ele n�
 
 Por padrão, o descarregamento do transporte usa a replicação reversa para retornar os ativos descarregados do trabalhador para o principal. Os agentes de replicação inversa não suportam replicação sem binários. Você deve configurar a descarga para usar a replicação direta para empurrar os ativos descarregados de um trabalhador para o principal.
 
-1. Se você estiver migrando da configuração padrão usando replicação inversa, desative ou exclua todos os agentes chamados &quot; `offloading_outbox`&quot; e &quot; `offloading_reverse_*`&quot; no primário e no trabalhador, onde &amp;ast; representa o Sling id da instância de destino.
-1. Em cada trabalhador, crie um novo agente de replicação de encaminhamento apontando para o principal. O procedimento é o mesmo que criar agentes de encaminhamento do primário para o trabalhador. Consulte [Criação de agentes de replicação para descarregamento](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) para obter instruções sobre como configurar agentes de replicação de descarregamento.
-1. Abra a configuração para `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
-1. Altere o valor da propriedade `default.transport.agent-to-master.prefix` de `offloading_reverse` para `offloading`.
+1. Se você estiver migrando da configuração padrão usando replicação inversa, desative ou exclua todos os agentes nomeados como &quot; `offloading_outbox`&quot; e &quot; `offloading_reverse_*`&quot; no primário e no trabalhador, onde &amp;anterior; representa o Sling id da instância de destino.
+1. Em cada trabalhador, crie um novo agente de replicação de encaminhamento apontando para o principal. O procedimento é o mesmo que criar agentes de encaminhamento do primário para o trabalhador. Consulte [Criando Agentes De Replicação Para Descarregamento](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) para obter instruções sobre como configurar agentes de replicação de descarregamento.
+1. Abrir configuração para `OffloadingDefaultTransporter`  (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
+1. Alterar valor da propriedade `default.transport.agent-to-master.prefix` from `offloading_reverse` para `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
@@ -118,24 +122,24 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### Uso do armazenamento de dados compartilhado e da replicação sem binários entre autor e trabalhadores  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-Recomenda-se o uso de replicação sem binários para reduzir a sobrecarga de transporte para descarregamento de ativos. Para saber como configurar a replicação sem binários para um armazenamento de dados compartilhado, consulte [Configuração de armazenamentos de nó e armazenamento de dados em AEM](/help/sites-deploying/data-store-config.md). O procedimento não é diferente para descarregamento de Ativos, exceto que envolve outros agentes de replicação. Como a replicação sem binário só funciona com agentes de replicação de encaminhamento, você também deve usar a replicação de encaminhamento para todos os agentes de descarregamento.
+Recomenda-se o uso de replicação sem binários para reduzir a sobrecarga de transporte para descarregamento de ativos. Para saber como configurar a replicação sem binário para um armazenamento de dados compartilhado, consulte [Configuração de armazenamentos de nó e armazenamentos de dados em AEM](/help/sites-deploying/data-store-config.md). O procedimento não é diferente para descarregamento de Ativos, exceto que envolve outros agentes de replicação. Como a replicação sem binário só funciona com agentes de replicação de encaminhamento, você também deve usar a replicação de encaminhamento para todos os agentes de descarregamento.
 
 ### Desativação de pacotes de transporte {#turning-off-transport-packages}
 
 Por padrão, a descarga cria um pacote de conteúdo que contém o trabalho de descarregamento e a carga útil do trabalho (o ativo original) e transporta esse único pacote de descarregamento usando uma única solicitação de replicação. A criação desses pacotes de descarregamento é contraproducente ao usar a replicação sem binário, pois os binários são serializados no pacote novamente ao criar o pacote. O uso desses pacotes de transporte pode ser desativado, o que faz com que o trabalho de descarregamento e a carga sejam transportados em várias solicitações de replicação, uma para cada entrada de carga. Dessa forma, os benefícios da replicação sem binário podem ser utilizados.
 
-1. Abra a configuração do componente *OffloadingDefaultTransporter* em [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
-1. Desative a propriedade *Pacote de Replicação (default.transport.contentpackage)*.
+1. Abra a configuração do componente de *DescarregamentoPadrãoTransporter* componente em [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
+1. Desativar a propriedade *Pacote de Replicação (default.transport.contentpackage)*.
 
 ### Desabilitação do modelo de transporte de workflow {#disabling-the-transport-of-workflow-model}
 
-Por padrão, o workflow de descarregamento *DAM Update Asset Offloading* adiciona o modelo de fluxo de trabalho para chamar o trabalhador no payload do trabalho. Como esse workflow segue o modelo pronto para uso *Ativo de atualização do DAM* por padrão, essa carga adicional pode ser removida.
+Por padrão, a variável *Descarregamento de ativo de atualização DAM* o fluxo de trabalho offloading adiciona o modelo de fluxo de trabalho para chamar o trabalhador no conteúdo do trabalho. Porque esse fluxo de trabalho segue as *Ativo de atualização DAM* por padrão, essa carga adicional pode ser removida.
 
 Se o modelo de fluxo de trabalho estiver desativado na carga útil da tarefa, certifique-se de distribuir as alterações para o modelo de fluxo de trabalho referenciado usando outras ferramentas, como o gerenciador de pacotes.
 
 Para desabilitar o transporte do modelo de fluxo de trabalho, modifique o fluxo de trabalho Descarregamento de ativo de atualização do DAM .
 
-1. Abra o console de workflow a partir de [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
+1. Abra o console Fluxo de Trabalho em [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 1. Abra a guia Modelos .
 1. Abra o modelo de fluxo de trabalho Atualizar descarregamento de ativo do DAM .
 1. Abra as propriedades da etapa para a etapa Descarregamento do fluxo de trabalho do DAM .
@@ -146,7 +150,7 @@ Para desabilitar o transporte do modelo de fluxo de trabalho, modifique o fluxo 
 
 A descarregamento do workflow é implementada usando um workflow externo no principal, que pesquisa a conclusão do workflow descarregado no trabalhador. O intervalo de sondagem padrão para os processos de workflow externos é de cinco segundos. O Adobe recomenda que você aumente o intervalo de sondagem da etapa Descarga de ativos para pelo menos 15 segundos para reduzir a sobrecarga de descarga no principal.
 
-1. Abra o console de workflow a partir de [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
+1. Abra o console Fluxo de Trabalho em [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
 1. Abra a guia Modelos .
 1. Abra o modelo de fluxo de trabalho Atualizar descarregamento de ativo do DAM .

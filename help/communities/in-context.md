@@ -1,8 +1,8 @@
 ---
 title: Moderação no contexto
-seo-title: Moderação no contexto
+seo-title: In-Context Moderation
 description: Como executar ações de moderador
-seo-description: Como executar ações de moderador
+seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 1%
+source-wordcount: '825'
+ht-degree: 2%
 
 ---
 
 # Moderação no contexto {#in-context-moderation}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Para o AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada, onde o conteúdo da comunidade foi publicado.
 
@@ -26,7 +30,7 @@ Ao usar um [console de moderação](moderation.md), as informações exibidas pa
 
 ## Ações de moderação {#moderation-actions}
 
-Visite a visão geral da moderação para obter uma descrição das [ações de moderação](moderate-ugc.md#moderation-actions).
+Visite a visão geral de moderação para obter uma descrição do [ações de moderação](moderate-ugc.md#moderation-actions).
 
 ## Interface do usuário de moderação {#moderation-ui}
 
@@ -40,11 +44,11 @@ A interface do usuário apresentada ao moderador na instância de publicação e
 
 ## Exemplo {#example}
 
-Usando o site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) criado ao [Introdução ao AEM Communities](getting-started.md), é possível configurar rapidamente um thread em um fórum no qual você pode experimentar várias atividades de moderação no ambiente de publicação, conforme mostrado abaixo.
+Usar o [Envolvimento do Geometrixx](http://localhost:4503/content/sites/engage/en.html) site criado ao [Introdução ao AEM Communities](getting-started.md), é possível configurar rapidamente um thread em um fórum no qual você possa realizar várias atividades de moderação no ambiente de publicação, conforme mostrado abaixo.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) foi identificado como um membro confiável da comunidade ao adicioná-lo ao grupo de moderadores de engajamento da comunidade ao criar o site.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) pode ser adicionado como membro do grupo de membros engajados da comunidade usando o [console Membros](members.md).
+Rebekah Larsen (rebekah.larsen@trashymail.com) pode ser adicionado como membro do grupo de membros do engajamento da comunidade usando o [Console de membros](members.md).
 
 Para obter mais informações sobre grupos de usuários da comunidade, visite [Gerenciar usuários e grupos de usuários](users.md).
 
@@ -96,9 +100,9 @@ Um visitante anônimo do site só pode visualizar o fórum, mas não pode public
 
 ### Novo Membro (#4) {#new-member}
 
-Ao criar, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo de membros engajados da comunidade usando o [console Membros](members.md) e, em seguida, faça logoff.
+Na criação, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo de membros engajados da comunidade usando a variável [Console de membros](members.md), em seguida, Fazer logoff.
 
-Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum` e `Read more` para a publicação de beija-flor.
+Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum`e depois `Read more` para o posto de beija-flor.
 
 Aviso
 

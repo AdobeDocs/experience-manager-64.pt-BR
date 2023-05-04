@@ -1,106 +1,109 @@
 ---
 title: Publicar um email em provedores de serviços de email
-seo-title: Publicar um email em provedores de serviços de email
-description: É possível publicar informativos em serviços de email, como o ExactTarget e o Silverpop Engage.
-seo-description: É possível publicar informativos em serviços de email, como o ExactTarget e o Silverpop Engage.
+seo-title: Publishing an Email to Email Service Providers
+description: Você pode publicar boletins informativos em serviços de email, como ExactTarget e Silverpop Engage.
+seo-description: You can publish newsletters to e-mail services such as ExactTarget and Silverpop Engage.
 uuid: 1a7adcfe-8e52-49f4-9a00-99ac99881225
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 1353b302-7b8e-4c74-b3d2-8b0a3d4a0612
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 69%
+source-wordcount: '1144'
+ht-degree: 3%
 
 ---
 
-
 # Publicar um email em provedores de serviços de email{#publishing-an-email-to-email-service-providers}
 
-É possível publicar informativos em serviços de email, como o ExactTarget e o Silverpop Engage. Este documento descreve como configurar o AEM para publicar um informativo nesses serviços de email.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Você pode publicar boletins informativos em serviços de email, como ExactTarget e Silverpop Engage. Este documento descreve como configurar o AEM para publicar um informativo nesses serviços de email.
 
 >[!NOTE]
 >
->Você precisa configurar o provedor de serviços antes de poder criar e publicar um email. Consulte [Configurando o ExactTarget](/help/sites-administering/exacttarget.md) e [Configurando o Silverpop Engage](/help/sites-administering/silverpop.md) para obter mais informações.
+>Você precisa configurar o provedor de serviços antes de criar e publicar um email. Consulte [Configuração do ExactTarget](/help/sites-administering/exacttarget.md) e [Configuração do Silverpop Engage](/help/sites-administering/silverpop.md) para obter mais informações.
 
-Para publicar seu email no provedor de serviços de email, você precisa realizar as seguintes etapas:
+Para publicar seu email no provedor de serviços de email, você precisa executar as seguintes etapas:
 
-1. Criar um email.
-1. Aplicar a configuração de Serviço de email ao email.
-1. Publicar o email.
+1. Crie um email.
+1. Aplique a configuração do Serviço de email ao email.
+1. Publique o email.
 
 >[!NOTE]
 >
->Se você atualizar provedores de email, fazer um teste de envio ou enviar um informativo, essas operações falharão se o informativo não for publicado primeiro na Instância de publicação ou se a Instância de publicação não estiver disponível. Publique o informativo e verifique se a Instância de publicação está ativa e em execução.
+>Se você atualizar provedores de email, fazer um teste de envio ou enviar um boletim informativo, essas operações falharão se o boletim informativo não for publicado primeiro na Instância de publicação ou se a Instância de publicação não estiver disponível. Certifique-se de publicar seu informativo e verificar se a instância de publicação está ativa e em execução.
 
-## Criação de um email {#creating-an-email}
+## Criação de email {#creating-an-email}
 
-Um e-mail ou boletim informativo que você deseja publicar em um serviço de e-mail pode ser criado em uma campanha usando o modelo **Geometrixx Newsletter**. Você também pode usar o modelo **Email do Geometrixx Outdoors**. Os exemplos de e-mail/boletim informativo baseados no modelo **E-mail do Geometrixx Outdoors** estão disponíveis em `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+Um email ou informativo que você deseja publicar em um serviço de email pode ser criado em uma campanha usando o **Informativo do Geometrixx** modelo . Também é possível usar a variável **Email do Geometrixx Outdoors** modelo . Amostra de email/informativo com base no **Email do Geometrixx Outdoors** estão disponíveis em `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
 Para criar um novo email publicado no serviço de email configurado:
 
-1. Vá para **Sites** e **Campanha**. Selecione uma campanha.
-1. Clique em **Novo** para abrir a janela **Criar página**.
-1. Insira o título e o nome e selecione o modelo **Informativo do Geometrixx** na lista de modelos disponíveis.
+1. Ir para **Sites** e depois **Campanhas**. Selecione uma campanha.
+1. Clique em **Novo** para abrir o **Criar página** janela.
+1. Insira o título, o nome e selecione o **Informativo do Geometrixx** modelo da lista de modelos disponíveis.
 1. Clique em **Criar**.
 1. Abra o email criado.
-1. Alterne para o modo de design para selecionar os componentes que você deseja exibir no sidekick.
-1. Alterne para o modo de edição e comece a adicionar conteúdo (texto, imagens, [ferramentas de email](#adding-exacttarget-email-tools-to-your-email), [variáveis de personalização](#adding-text-and-personalization-tool-to-your-e-mail) e assim por diante) ao seu email.
+1. Alterne para o modo de design para selecionar os componentes que deseja exibir no sidekick.
+1. Alterne para o modo de edição e comece a adicionar conteúdo (texto, imagens, [ferramentas de email](#adding-exacttarget-email-tools-to-your-email), [variáveis de personalização](#adding-text-and-personalization-tool-to-your-e-mail)e assim por diante) ao seu email.
 
-### Adicionar Ferramentas de email do ExactTarget ao seu email {#adding-exacttarget-email-tools-to-your-email}
+### Adicionar ferramentas de email do ExactTarget ao seu email {#adding-exacttarget-email-tools-to-your-email}
 
 >[!NOTE]
 >
 >Esta seção é específica para o serviço ExactTarget.
 
-O componente **Ferramentas de email** para o ExactTarget pode adicionar mais funcionalidades de email ao seu email/informativo.
+O **Ferramentas de email** componente do ExactTarget pode adicionar mais funcionalidades de email ao seu email/informativo.
 
-1. Abra um email que será publicado no ExactTarget.
-1. Adicione o componente **ET - Ferramentas de email** à sua página usando o sidekick. Abra o componente no modo de edição.
+1. Abra um email a ser publicado no ExactTarget.
+1. Adicionar o componente **ET - Ferramentas de email** para sua página usando o sidekick. Abra o componente no modo de Edição.
 
    ![chlimage_1](assets/chlimage_1.gif)
 
-1. Selecione uma opção no menu **Opções**:
+1. Selecione uma opção no **Opções** menu:
 
 <table> 
  <tbody> 
   <tr> 
    <td>Endereço de correio físico (obrigatório)</td> 
-   <td>Este componente insere o endereço de correio físico da sua organização no seu email.</td> 
+   <td>Esse componente insere o endereço de correspondência físico da organização no email.</td> 
   </tr> 
   <tr> 
    <td>Centro de perfil (obrigatório)</td> 
-   <td>O centro do perfil é uma página da Web na qual os assinantes podem digitar e manter as informações pessoais que você mantém sobre eles.</td> 
+   <td>O centro de perfis é uma página da Web em que os assinantes podem inserir e manter as informações pessoais que você mantém sobre eles.</td> 
   </tr> 
   <tr> 
    <td>Visualizar e-mail como página da web</td> 
-   <td>Esse componente permite que o usuário visualização o email como uma página da Web.</td> 
+   <td>Esse componente permite que o usuário exiba o email como uma página da Web.</td> 
   </tr> 
   <tr> 
    <td>Política de privacidade</td> 
-   <td>Este componente insere o link para sua política de privacidade no email.<br /> </td> 
+   <td>Esse componente insere o link para sua política de privacidade no email.<br /> </td> 
   </tr> 
   <tr> 
    <td>Central para cancelar inscrição</td> 
-   <td>Dá ao usuário a opção de cancelar a inscrição da sua lista de correspondência.</td> 
+   <td>Oferece ao usuário a opção de cancelar a inscrição da lista de distribuição.</td> 
   </tr> 
   <tr> 
    <td>Centro de assinaturas</td> 
-   <td>Um centro de subscrições é uma página da Web na qual um assinante pode controlar as mensagens recebidas de sua organização.</td> 
+   <td>Um centro de assinaturas é uma página da Web em que um assinante pode controlar as mensagens que recebe de sua organização.</td> 
   </tr> 
   <tr> 
    <td>Rastrear aberturas de e-mail</td> 
-   <td>Um componente oculto que permite usar o recurso de rastreamento ExactTarget.<br /> </td> 
+   <td>Um componente oculto que permite usar o recurso de rastreamento do ExactTarget.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->O menu suspenso **Opções** apenas será preenchido se a configuração do ExactTarget for aplicada ao email. Consulte [Aplicando configuração de serviço de email às configurações de email](#applying-e-mail-service-configuration-to-e-mail-settings) para obter mais informações.
+>O **Opções** O menu suspenso é preenchido somente se a configuração ExactTarget for aplicada ao email. Consulte [Aplicação da configuração do serviço de email às configurações de email](#applying-e-mail-service-configuration-to-e-mail-settings) para obter mais informações.
 
 1. Publique o email no ExactTarget.
 
@@ -108,36 +111,33 @@ O componente **Ferramentas de email** para o ExactTarget pode adicionar mais fun
 
 >[!NOTE]
 >
->* Os URLs nas ferramentas de email são substituídos (no email recebido) pelos valores reais somente quando um email é enviado usando **Enviar simples** ou **Enviar guiado**, mas não **Testar envio**.
-   >
-   >
-* Duas das ferramentas de email são obrigatórias: **Endereço de correspondência físico (obrigatório)** e **Centro de perfil (obrigatório)**. Quando o email é publicado no ExactTarget, essas duas ferramentas de email são adicionadas à parte inferior de todas as mensagens por padrão.
-
+>* Os URLs nas ferramentas de email são substituídos (no email recebido) por seus valores reais somente quando um email é enviado usando **Envio simples** ou **Envio guiado** mas não **Enviar teste**.
+>
+>* Duas das ferramentas de email são necessárias: **Endereço de correspondência física (obrigatório)** e **Centro de perfis (obrigatório)**. Quando o email é publicado no ExactTarget, essas duas ferramentas de email são adicionadas à parte inferior de cada email por padrão.
 >
 
 
+### Adicionar ferramenta Texto e personalização ao seu email {#adding-text-and-personalization-tool-to-your-e-mail}
 
-### Adicionar a ferramenta Texto e personalização ao seu email  {#adding-text-and-personalization-tool-to-your-e-mail}
+Você pode adicionar campos personalizados em um email adicionando a variável **Texto e personalização** componente para a página:
 
-Você pode adicionar campos personalizados em um email, adicionando o componente **Texto e personalização** à página:
-
-1. Abra o email que será publicado no seu serviço de email.
-1. Para ativar o campo de personalização do seu serviço de email, adicione a configuração da estrutura ao configurar o serviço de email. Consulte [configurar o Silverpop Engage](/help/sites-administering/silverpop.md) e [configurar o Público alvo Exato](/help/sites-administering/exacttarget.md) para obter mais informações.
-1. Adicione o componente **Texto e personalização** do sidekick. Esse componente faz parte do grupo de informativos. Abra esse componente no modo de edição.
+1. Abra o e-mail a ser publicado no seu serviço de e-mail.
+1. Para ativar o campo de personalização do seu serviço de email, adicione a configuração da estrutura ao configurar o serviço de email. Consulte [configuração do Silverpop Engage](/help/sites-administering/silverpop.md) e [configuração do Direcionamento exato](/help/sites-administering/exacttarget.md) para obter mais informações.
+1. Adicionar o componente **Texto e personalização** do sidekick. Esse componente faz parte do grupo de boletins informativos. Abra esse componente no modo de edição.
 
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
 1. Adicione o campo personalizado necessário ao texto, selecionando o campo no menu suspenso e clicando em **Inserir**.
-1. Clique em **OK** para finalizar.
+1. Clique em **OK** para terminar.
 
-## Aplicação da configuração do serviço de email a configurações de email {#applying-e-mail-service-configuration-to-e-mail-settings}
+## Aplicação da configuração do serviço de email às configurações de email {#applying-e-mail-service-configuration-to-e-mail-settings}
 
-Para aplicar sua configuração de serviço de email a um informativo:
+Para aplicar sua configuração do serviço de email a um boletim informativo:
 
-1. Crie uma configuração de Serviço de email.
+1. Criar uma configuração do Serviço de email.
 1. Abra seu email/informativo.
-1. Abra as configurações de email/newsletter clicando em **Configurações** ou clicando em **Propriedades da página em** sidekick.
-1. Clique em **Adicionar serviço** na guia **Serviços em nuvem**. Você verá a lista de serviços. Selecione a configuração necessária, **ExactTarget** ou **Silverpop**, na lista suspensa.
+1. Abra as configurações de email/informativo clicando em **Configurações** ou clicando em **Propriedades da página em** o sidekick.
+1. Clique em **Adicionar Serviço** em **Cloud Services** guia . Você verá a lista de serviços. Selecione sua configuração necessária - ou **ExactTarget** ou **Silverpop** - na lista da lista suspensa.
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
@@ -145,37 +145,35 @@ Para aplicar sua configuração de serviço de email a um informativo:
 
 ## Publicar emails no serviço de email {#publishing-emails-to-email-service}
 
-Emails/informativos podem ser publicados no seu Serviço de email seguindo estas etapas:
+Emails/informativos podem ser publicados em seu Serviço de email seguindo estas etapas:
 
 1. Abra o email.
-1. Antes de publicar um email, verifique se você aplicou a configuração correta ao seu email.
-1. Clique em **Publicar**. Essa ação abre a janela **Publicar informativo no provedor de serviços de email.**
-1. Preencha o campo **Nome do informativo**. O email/informativo é publicado no Provedor de serviços de email com esse nome. No caso de um nome de email não ser fornecido, o email é publicado usando o nome da página do informativo no AEM.
+1. Antes de publicar um email, verifique se você aplicou a configuração correta ao email.
+1. Clique em **Publicar**. Isso abre o **Publicar informativo no provedor de serviços de email** janela.
+1. Preencha o **Nome do informativo** campo. O email/informativo é publicado no Provedor de serviços de email com esse nome. Caso um nome de email não seja fornecido, o email será publicado usando o nome da página do informativo no AEM.
 1. Clique em **Publicar**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-   Se o processo for bem-sucedido, o AEM confirmará que você pode visualizar o email no ExactTarget ou no Silverpop Engage.
+   Se bem-sucedido, o AEM confirma que você pode exibir o email no ExactTarget ou no Silverpop Engage.
 
-   No caso do ExactTarget, o email publicado pode ter sido visualizado clicando em **Visualização Email publicado**. Isso leva você diretamente para o boletim publicado no ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   No caso do ExactTarget, o email publicado pode ser visualizado clicando em **Exibir email publicado**. Isso leva você diretamente ao informativo publicado no ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >
->Se um email/informativo for publicado com o mesmo nome de um email/informativo já publicado, o email/informativo anterior não será substituído. Em vez disso, um novo email/informativo será criado com o mesmo nome (porém, as IDs dos dois informativos serão diferentes).
+>Se um email/informativo for publicado com o mesmo nome de um email/informativo já publicado, o email/informativo anterior não será substituído. Em vez disso, um novo email/informativo é criado com o mesmo nome (as IDs de dois boletins informativos, no entanto, são diferentes).
 >
 >A publicação do email/informativo no Provedor de serviços de email também publica o email/informativo na instância de publicação do AEM.
 
-
 ### Atualização de um email publicado {#updating-a-published-e-mail}
 
-O botão **Atualizar** na caixa de diálogo Publicar permite atualizar um boletim informativo já publicado em um Provedor de serviço de E-mail. Caso o informativo ainda não tenha sido publicado, e você clicar no botão **Atualizar**, a mensagem **O informativo não está publicado** será exibida.
+O **Atualizar** na caixa de diálogo Publicar permite atualizar um boletim informativo já publicado em um Provedor de serviços de email. Caso o boletim informativo ainda não tenha sido publicado, e a variável **Atualizar** for clicado, uma **O boletim informativo não é publicado** será exibida.
 
 Para atualizar um email publicado:
 
-1. Abra o email/informativo que foi publicado anteriormente em um provedor de serviços de email no qual você deseja publicar novamente depois de fazer alterações no email/informativo.
-1. Clique em **Publicar**. A janela **Publicar newsletter no Provedor de serviço de email** é exibida. Clique em **Atualizar**.
+1. Abra o email/informativo que foi publicado anteriormente em um provedor de serviços de email no qual deseja publicar novamente depois de fazer alterações no email/informativo.
+1. Clique em **Publicar**. O **Publicar informativo no provedor de serviços de email** será exibida. Clique em **Atualizar**.
 
-   Para verificar se o email/boletim informativo foi atualizado no ExactTarget, clique em **Email publicado da Visualização**. Essa ação leva você ao email publicado no ExactTarget.
+   Para verificar se o email/informativo foi atualizado no ExactTarget, clique em **Exibir email publicado**. Isso leva você ao email publicado no ExactTarget.
 
-   Para verificar se o email/informativo foi atualizado no serviço de email Silverpop, acesse o site do Silverpop Engage.
-
+   Para verificar se o email/informativo foi atualizado no Serviço de email do Silverpop, visite o site Silverpop Engage.

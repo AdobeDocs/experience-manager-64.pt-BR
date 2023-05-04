@@ -1,8 +1,8 @@
 ---
 title: Anotações ao editar uma página
-seo-title: Anotações ao editar uma página
-description: Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para ajudar, muitos componentes relacionados diretamente ao conteúdo permitem adicionar uma anotação.
-seo-description: Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para ajudar, muitos componentes relacionados diretamente ao conteúdo permitem adicionar uma anotação.
+seo-title: Annotations when Editing a Page
+description: Com frequência, a adição de conteúdo às páginas do seu site está sujeita a discussões antes da publicação efetiva. Para ajudar nisso, muitos componentes diretamente relacionados ao conteúdo permitem adicionar uma anotação.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -10,18 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 92%
+source-wordcount: '818'
+ht-degree: 8%
 
 ---
 
-
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
-Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem a adição de uma anotação.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Com frequência, a adição de conteúdo às páginas do seu site está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem adicionar uma anotação.
 
 Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação permite a você (ou outros usuários) deixar comentários e/ou perguntas para outros autores/revisores.
 
@@ -31,27 +34,27 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 >[!NOTE]
 >
->As anotações criadas na interface clássica também serão exibidas na interface otimizada para toque. No entanto, os esboços são específicos da interface do usuário e são exibidos somente na interface em que foram criados.
+>As anotações criadas na interface clássica também serão exibidas na interface otimizada para toque. No entanto, os rascunhos são específicos da interface do usuário e são mostrados somente na interface do usuário na qual foram criados.
 
 >[!CAUTION]
 >
->A exclusão de um recurso (por exemplo, parágrafo) exclui todas as anotações e recursos associados a esse recurso; independentemente da sua posição na página como um todo.
+>A exclusão de um recurso (por exemplo, parágrafo) exclui todas as anotações e rascunhos associados a ele; independentemente de sua posição na página como um todo.
 
 >[!NOTE]
 >
->Dependendo dos seus requisitos, você também pode desenvolver um fluxo de trabalho para enviar notificações quando as anotações forem adicionadas, atualizadas ou excluídas.
+>Dependendo dos seus requisitos, também é possível desenvolver um fluxo de trabalho para enviar notificações quando anotações são adicionadas, atualizadas ou excluídas.
 
 ## Anotações {#annotations}
 
-Dependendo do design do parágrafo, a anotação está disponível como uma opção no menu de contexto (geralmente, o botão direito do mouse quando sobre o parágrafo necessário), ou como um botão na barra de edição de parágrafo.
+Dependendo do design do parágrafo, a anotação está disponível como uma opção no menu de contexto (geralmente, o botão direito do mouse quando sobre o parágrafo necessário) ou como um botão na barra de edição de parágrafo.
 
 Em qualquer caso, selecione **Anotar**. Uma anotação adesiva colorida será aplicada ao parágrafo; você entrará imediatamente no modo Editar, o que lhe permitirá a adição direta de texto:
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-É possível mover a anotação para uma nova posição na página. Clique na área da borda superior e segure e arraste ao mesmo tempo a anotação para a nova posição. Essa posição pode estar em qualquer lugar da página, embora geralmente seja significativo mantê-la associada ao parágrafo de alguma forma.
+É possível mover a anotação para uma nova posição na página. Clique na área da borda superior e segure e arraste simultaneamente a anotação para a nova posição. Isso pode estar em qualquer lugar da página, embora geralmente seja significativo mantê-la conectada ao parágrafo de alguma forma.
 
-As anotações (incluindo os rascunhos relacionados) também são incluídas em qualquer ação de cópia, recorte ou exclusão executada no parágrafo ao qual estão associadas; no caso de ações de cópia ou recorte, a posição da anotação (e rascunhos relacionados) é mantida em relação ao parágrafo original.
+As anotações (incluindo os rascunhos relacionados) também são incluídas em qualquer ação de cópia, recorte ou exclusão executada no parágrafo ao qual estão anexadas; para ações de cópia ou recorte, a posição da anotação (e rascunhos relacionados) mantém sua posição em relação ao parágrafo original.
 
 O tamanho da anotação também pode ser aumentado ou diminuído ao arrastar o canto inferior direito.
 
@@ -63,9 +66,9 @@ Os três ícones no canto superior esquerdo permitem minimizar a anotação (jun
 
 >[!NOTE]
 >
->As anotações são visíveis apenas no Modo de edição do ambiente de criação.
+>As anotações são visíveis apenas no modo de Edição do ambiente do autor.
 >
->Elas não ficam visíveis em um ambiente de publicação, nem nos modos Visualizar ou Design disponíveis em um ambiente do autor.
+>Elas não estão visíveis em um ambiente de publicação, nem nos modos Visualizar ou Design disponíveis em um ambiente de criação.
 
 >[!NOTE]
 >
@@ -78,11 +81,9 @@ Os três ícones no canto superior esquerdo permitem minimizar a anotação (jun
 >
 >Os rascunhos não estão disponíveis no Internet Explorer, portanto:
 >
->* o ícone não será mostrado.
->* os rascunhos existentes, criados em outro navegador, não serão mostrados.
-
+>* o ícone não será exibido.
+>* os rascunhos existentes, criados em outro navegador, não serão exibidos.
 >
-
 
 
 Os rascunhos são um recurso de anotações que permitem criar gráficos de linhas simples em qualquer lugar na janela do navegador (porção visível):
@@ -98,13 +99,12 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 
    * reto:
 
-      mantenha pressionada a tecla `ALT` e clique no start e nos pontos finais; termine com um clique de duplo.
+      manter pressionado `ALT` e clique nos pontos de início e fim; termine com um clique duplo.
 
-* Depois que você sair do modo de rascunho, poderá clicar em uma linha de rascunho para selecionar esse rascunho.
+* Depois de sair do modo de rascunho, você pode clicar em uma linha de rascunho para selecionar esse rascunho.
 * Para mover um rascunho, selecione-o e depois arraste-o para a posição desejada.
 * Um rascunho se sobrepõe ao conteúdo. Isso significa que, nos 4 cantos do rascunho, não é possível clicar no parágrafo subjacente; por exemplo, se você precisar editar ou acessar um link. Se isso se tornar um problema (por exemplo, se houver um rascunho cobrindo uma área grande da página), minimize a anotação apropriada, pois isso também minimizará todos os rascunhos relacionados, fornecendo acesso à área subjacente.
-* Para excluir um rascunho individual - selecione o rascunho desejado e pressione a tecla **Excluir** **(fn**-**backspace** em um MAC).
+* Para excluir um rascunho individual - selecione o rascunho necessário e pressione a tecla **Excluir** tecla (**fn**-**backspace** em uma MAC).
 
-* Se você mover ou copiar um parágrafo; as anotações relacionadas e seus rascunhos também serão movidos ou copiados; sua posição em relação ao parágrafo permanecerá a mesma.
-* Se você excluir uma anotação; todos os rascunhos associados a essa anotação serão excluídos também.
-
+* Se você mover ou copiar um parágrafo, quaisquer anotações relacionadas e seus rascunhos também serão movidos ou copiados; a sua posição em relação ao parágrafo permanecerá a mesma.
+* Se você excluir uma anotação, todos os rascunhos associados a ela também serão excluídos.

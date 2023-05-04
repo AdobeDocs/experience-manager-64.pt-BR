@@ -12,14 +12,18 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 56d711eb5aa87a2aa4c5476bae0627afccc579d1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 7%
+source-wordcount: '2960'
+ht-degree: 8%
 
 ---
 
 # Perfis de imagem do Dynamic Media {#image-profiles}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Ao fazer upload de imagens, você pode cortar automaticamente a imagem ao fazer upload aplicando um Perfil de imagem à pasta.
 

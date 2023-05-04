@@ -1,26 +1,29 @@
 ---
 title: Otimização de formulários HTML5
-seo-title: Otimização de formulários HTML5
+seo-title: Optimizing HTML5 forms
 description: Você pode otimizar o tamanho de saída dos formulários HTML5.
-seo-description: Você pode otimizar o tamanho de saída dos formulários HTML5.
+seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8d2b5294-9763-4348-b927-706ebac90b95
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 0%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
-
 # Otimização de formulários HTML5 {#optimizing-html-forms}
 
-Formulários HTML5 renderizam formulários no formato HTML5. A saída resultante pode ser grande dependendo de fatores como o tamanho do formulário e as imagens no formulário. Para otimizar a transferência de dados, a abordagem recomendada é compactar a resposta HTML usando o Servidor da Web do qual a solicitação está sendo veiculada. Essa abordagem reduz o tamanho da resposta, o tráfego da rede e o tempo necessário para transmitir dados entre o servidor e as máquinas cliente.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Os formulários HTML5 renderizam formulários no formato HTML5. A saída resultante pode ser grande dependendo de fatores como o tamanho do formulário e as imagens no formulário. Para otimizar a transferência de dados, a abordagem recomendada é compactar a resposta do HTML usando o Servidor da Web do qual a solicitação está sendo veiculada. Essa abordagem reduz o tamanho da resposta, o tráfego da rede e o tempo necessário para transmitir dados entre o servidor e as máquinas cliente.
 
 Este artigo descreve as etapas necessárias para habilitar a compactação para o Apache Web Server 2.0 de 32 bits, com JBoss.
 
@@ -34,7 +37,7 @@ Obtenha o software do servidor Web Apache aplicável ao seu sistema operacional:
 
 O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
-1. Exclua as seguintes configurações de módulo no arquivo *APACHE_HOME/conf/httpd.conf*.
+1. Exclua as seguintes configurações de módulo no *APACHE_HOME/conf/httpd.conf* arquivo.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +51,7 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
 1. Configure o proxy na porta 8080 do JBoss.
 
-   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf*.
+   Adicione a seguinte configuração ao *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -66,7 +69,7 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
 1. Ative a compactação.
 
-   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf*.
+   Adicione a seguinte configuração ao *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
 
    ```java
    <Location /content/xfaforms>
@@ -84,5 +87,4 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
    </Location>
    ```
 
-1. Para acessar o servidor AEM, use https://[Apache_server]:80.
-
+1. Para acessar o servidor AEM, use https://[Apache_server]80.

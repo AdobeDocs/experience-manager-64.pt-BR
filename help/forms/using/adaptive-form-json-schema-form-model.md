@@ -1,23 +1,26 @@
 ---
 title: Criação de formulários adaptáveis usando o esquema JSON
-seo-title: Criação de formulários adaptáveis usando o esquema JSON
-description: 'Os formulários adaptáveis podem usar o esquema JSON como modelo de formulário, permitindo aproveitar os esquemas JSON existentes para criar formulários adaptáveis. '
-seo-description: 'Os formulários adaptáveis podem usar o esquema JSON como modelo de formulário, permitindo aproveitar os esquemas JSON existentes para criar formulários adaptáveis. '
+seo-title: Creating adaptive forms using JSON Schema
+description: Os formulários adaptáveis podem usar o esquema JSON como modelo de formulário, permitindo aproveitar os esquemas JSON existentes para criar formulários adaptáveis.
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1243'
 ht-degree: 4%
 
 ---
 
-
 # Criação de formulários adaptáveis usando o esquema JSON {#creating-adaptive-forms-using-json-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -26,9 +29,9 @@ A criação de um formulário adaptável usando um Esquema JSON como seu modelo 
 * [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
-## Uso de um Esquema JSON como modelo de formulário {#using-a-json-schema-as-form-model}
+## Uso de um esquema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
 
-O AEM Forms suporta a criação de um formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse Esquema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na organização. O Esquema JSON que você usa deve ser compatível com [v4 Specification](https://json-schema.org/draft-04/schema).
+O AEM Forms suporta a criação de um formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse Esquema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na organização. O Esquema JSON que você usa deve ser compatível com [especificações v4](https://json-schema.org/draft-04/schema).
 
 Os principais recursos do uso de um Esquema JSON são:
 
@@ -68,11 +71,11 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
   </tr> 
   <tr> 
    <td>propriedade number<br /> </td> 
-   <td>Campo numérico com subtipo definido para float<br /> </td> 
+   <td>Campo numérico com subtipo definido para flutuante<br /> </td> 
   </tr> 
   <tr> 
    <td>propriedade integer<br /> </td> 
-   <td>Campo numérico com subtipo definido como integer<br /> </td> 
+   <td>Campo numérico com subtipo definido como inteiro<br /> </td> 
   </tr> 
   <tr> 
    <td>propriedade booleana<br /> </td> 
@@ -318,9 +321,9 @@ As chaves de definição são usadas para identificar esquemas reutilizáveis. A
 
 O exemplo acima define um registro de cliente, em que cada cliente tem um endereço de envio e de faturamento. A estrutura de ambos os endereços é a mesma — os endereços têm um endereço de rua, cidade e estado — portanto, é uma boa ideia não duplicar os endereços. Também facilita a adição e exclusão de campos para qualquer alteração futura.
 
-## Pré-configuração de campos na Definição de esquema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Pré-configuração de campos na definição do esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo é listado abaixo:
+Você pode usar o **aem:afProperties** propriedade para pré-configurar o campo Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo é listado abaixo:
 
 ```
 {
@@ -340,7 +343,7 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 }
 ```
 
-## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limite valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
 Você pode adicionar as seguintes restrições aos elementos do Esquema JSON para limitar os valores aceitáveis para um componente de formulário adaptável:
 
@@ -354,24 +357,24 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr> 
   <tr> 
    <td><p><code>maximum</code></p> </td> 
-   <td><p>Sequência de caracteres</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Especifica o limite superior para valores numéricos e datas. Por padrão, o valor máximo é incluído.</p> </td> 
    <td> 
     <ul> 
      <li>Caixa numérica</li> 
-     <li>Escalonador Numérico<br /> </li> 
-     <li>Seletor de datas</li> 
+     <li>Escalonador numérico<br /> </li> 
+     <li>Seletor de data</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p><code>minimum</code></p> </td> 
-   <td><p>Sequência de caracteres</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Especifica o limite inferior para valores numéricos e datas. Por padrão, o valor mínimo é incluído.</p> </td> 
    <td> 
     <ul> 
      <li>Caixa numérica</li> 
-     <li>Escalonador Numérico</li> 
-     <li>Seletor de datas</li> 
+     <li>Escalonador numérico</li> 
+     <li>Seletor de data</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -381,8 +384,8 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
    <td> 
     <ul> 
      <li>Caixa numérica</li> 
-     <li>Escalonador Numérico</li> 
-     <li>Seletor de datas</li> 
+     <li>Escalonador numérico</li> 
+     <li>Seletor de data</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -392,13 +395,13 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
    <td> 
     <ul> 
      <li>Caixa numérica</li> 
-     <li>Escalonador Numérico</li> 
-     <li>Seletor de datas</li> 
+     <li>Escalonador numérico</li> 
+     <li>Seletor de data</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p><code>minLength</code></p> </td> 
-   <td><p>Sequência de caracteres</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Especifica o número mínimo de caracteres permitidos em um componente. O comprimento mínimo deve ser igual ou superior a zero.</p> </td> 
    <td> 
     <ul> 
@@ -407,7 +410,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr> 
   <tr> 
    <td><code>maxLength</code></td> 
-   <td>Sequência de caracteres</td> 
+   <td>String</td> 
    <td>Especifica o número máximo de caracteres permitidos em um componente. O comprimento máximo deve ser igual ou superior a zero.</td> 
    <td> 
     <ul> 
@@ -416,7 +419,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr> 
   <tr> 
    <td><p><code>pattern</code></p> </td> 
-   <td><p>Sequência de caracteres</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Especifica a sequência de caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade pattern mapeia para o padrão de validação do componente de formulário adaptável correspondente.</p> </td> 
    <td> 
     <ul> 
@@ -425,20 +428,20 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr> 
   <tr> 
    <td>maxItems</td> 
-   <td>Sequência de caracteres</td> 
+   <td>String</td> 
    <td>Especifica o número máximo de itens em uma matriz. Os itens máximos devem ser iguais ou maiores que zero.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>minItems</td> 
-   <td>Sequência de caracteres</td> 
+   <td>String</td> 
    <td>Especifica o número mínimo de itens em uma matriz. Os itens mínimos devem ser iguais ou maiores que zero.</td> 
    <td> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Construções não suportadas {#non-supported-constructs}
+## Construções não suportadas  {#non-supported-constructs}
 
 Os formulários adaptáveis não são compatíveis com as seguintes construções do Esquema JSON:
 
@@ -459,4 +462,3 @@ Você tem duas opções:
 
 * Rolar pela estrutura de árvore
 * Use a caixa Pesquisar para localizar um elemento
-

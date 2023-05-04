@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
-source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 2%
 
 ---
 
 # Trabalhar com pontos de partida {#working-with-startpoints}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Um ponto de partida chama um processo criado no Workbench. Ele é associado a um formulário que chama o processo quando o formulário é enviado. Consulte [Apresentação do Site de Referência do Geometrixx Finance](/help/forms/using/finance-reference-site-walkthrough.md) para entender os processos.
 

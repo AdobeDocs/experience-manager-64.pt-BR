@@ -1,39 +1,43 @@
 ---
 title: Referência de esquemas de metadados
-description: 'Saiba mais sobre as convenções padrão para descrever metadados de ativos, incluindo Dublin Core, IPTC e outros esquemas de metadados. '
+description: Saiba mais sobre as convenções padrão para descrever metadados de ativos, incluindo Dublin Core, IPTC e outros esquemas de metadados.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
 # Referência de esquemas de metadados {#metadata-schemata-reference}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 A referência a seguir inclui informações sobre um esquema de metadados específico (em ordem alfabética), bem como uma lista de propriedades e suas definições.
 
 ## Dublin Core {#dublin-core}
 
-Os metadados Dublin Core fornecem um conjunto padronizado de convenções para descrever ativos para facilitar a localização. Em [!DNL Experience Manager] Assets, o Dublin Core descreve os ativos digitais, incluindo vídeo, som, imagens e documentos.
+Os metadados Dublin Core fornecem um conjunto padronizado de convenções para descrever ativos para facilitar a localização. Em [!DNL Experience Manager] Assets, o Dublin Core descreve ativos digitais, incluindo vídeo, som, imagens e documentos.
 
 O Conjunto de elementos de metadados principal simples de Dublin (DCMES) contém 15 elementos de metadados, conforme listados na tabela a seguir. Cada elemento Dublin Core é opcional e pode ser repetido. Você pode adicionar ou excluir informações de metadados Dublin Core da mesma maneira que faria para metadados específicos de tipo de mídia.
 
-Além do DCMES, existem outros elementos de metadados criados pela iniciativa Dublin Core. Consulte a [Iniciativa de Dublin Core](https://dublincore.org/) para obter mais informações.
+Além do DCMES, existem outros elementos de metadados criados pela iniciativa Dublin Core. Consulte a [Iniciativa de base de Dublim](https://dublincore.org/) para obter mais informações.
 
 | Propriedade | Descrição |
 |---|---|
 | colaborador | A pessoa ou empresa responsável pela contribuição para o conteúdo. |
 | cobertura | A localização geográfica ou período que o ativo cobre. |
 | criador | A pessoa ou empresa responsável pela criação do conteúdo. |
-| date | Data ou período associado ao ativo. |
+| data | Data ou período associado ao ativo. |
 | descrição | Mais informações sobre o ativo. |
-| format | O formato de arquivo, a mídia física ou as dimensões do ativo. [!DNL Experience Manager] usa dc:format para indicar o tipo MIME do ativo. |
+| format | O formato de arquivo, a mídia física ou as dimensões do ativo. [!DNL Experience Manager] O usa dc:format para indicar o tipo MIME do ativo. |
 | identifier | Uma referência exclusiva ao ativo. |
-| language | O idioma do ativo (por exemplo, en para inglês). |
+| idioma | O idioma do ativo (por exemplo, en para inglês). |
 | editor | A pessoa ou empresa responsável pela disponibilização do ativo. |
 | relation | Um ativo relacionado. |
 | direitos | Informações sobre quem tem os direitos a esse ativo. |

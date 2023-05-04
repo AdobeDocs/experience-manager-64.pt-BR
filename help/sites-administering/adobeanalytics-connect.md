@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 exl-id: 654387e3-d837-4bde-a9e4-962862ad69e9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1570'
 ht-degree: 8%
 
 ---
 
 # Conectar ao Adobe Analytics e Criar Frameworks{#connecting-to-adobe-analytics-and-creating-frameworks}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Para rastrear dados da Web de suas páginas de AEM no Adobe Analytics, crie uma configuração dos Serviços Adobe Analytics Cloud e uma estrutura do Adobe Analytics:
 
@@ -94,7 +98,7 @@ Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/confi
 >
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
->O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) deve ser usada.
+>O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) deve ser usada.
 
 ## Criação de uma estrutura do Adobe Analytics {#creating-a-adobe-analytics-framework}
 

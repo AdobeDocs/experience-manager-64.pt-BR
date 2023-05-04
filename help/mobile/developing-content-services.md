@@ -1,23 +1,26 @@
 ---
 title: Content Services
-seo-title: Serviços de conteúdo
-description: Serviços de conteúdo
-seo-description: 'null'
+seo-title: Content Services
+description: Content Services
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e900d93e-f7cd-4a0d-a866-7fc6c7882797
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 3%
+source-wordcount: '337'
+ht-degree: 5%
 
 ---
 
-
 # Content Services{#content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -43,9 +46,9 @@ Os Serviços de conteúdo podem fornecer o conteúdo como ativos, HTML empacotad
 >
 >Antes de começar a usar os Serviços de conteúdo, ative o sinalizador de Serviços de conteúdo . Para habilitar a criação e o gerenciamento de modelos em seu aplicativo, é necessário habilitar modelos de dados no Navegador de configuração.
 >
->Consulte **[Administração de serviços de conteúdo](/help/mobile/developing-content-services.md)** para obter detalhes.
+>Consulte **[Administração dos serviços de conteúdo](/help/mobile/developing-content-services.md)** para obter detalhes.
 >
->Consulte a [documentação do Navegador de configuração](/help/sites-administering/configurations.md) para obter mais informações.
+>Consulte a [Documentação do Navegador de configuração](/help/sites-administering/configurations.md) para obter mais informações.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -53,4 +56,3 @@ Depois de definir o sinalizador de Serviços de conteúdo e os modelos de dados 
 
 * Modelos no Repositório
 * Renderização e entrega
-

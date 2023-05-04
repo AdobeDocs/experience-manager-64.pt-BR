@@ -10,14 +10,18 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3741'
+source-wordcount: '3777'
 ht-degree: 2%
 
 ---
 
 # Lista de verificação - mais referência{#the-checklist-further-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Esta página fornece mais detalhes para elaborar e/ou aumentar os documentos e princípios cobertos pela [Gerenciamento de projetos - Lista de verificação de práticas recomendadas](/help/managing/best-practices.md).
 
@@ -143,7 +147,7 @@ Esses indicadores podem ser:
    * Usado para medir objetivos-chave de negócios.
    * É importante escolher os KPIs apropriados para sua empresa/cenário com definições claras do que são, como serão medidos, como serão usados e por quem.
 
-* Show:
+* Desempenho:
 
    * Defina como medir o desempenho do sistema.
    * Alguns exemplos incluem tempo de carregamento de página, tempo de resposta do servidor e desempenho de consulta do banco de dados.
@@ -218,7 +222,7 @@ Dependendo da sua situação e do significado estratégico do site, isso ajudar�
 * número de servidores
 * número de instâncias AEM (autor e publicação)
 
-### Show {#performance}
+### Desempenho {#performance}
 
 Há vários fatores de desempenho que podem ser avaliados:
 
@@ -337,7 +341,7 @@ As metas para o número de usuários simultâneos dependem do tipo de ambiente:
 * **Ambiente de publicação**
 
    * Isso é mais difícil de prever, portanto, você deve selecionar um valor de meta. Novamente, isso deve se basear na experiência do seu site atual, juntamente com expectativas realistas do seu novo site.
-   * Eventos especiais (por exemplo, quando você publica conteúdo novo e muito popular) podem exceder as expectativas, ou até mesmo os recursos (como por vezes reportado na imprensa quando ingressos para determinados eventos são disponibilizados para venda).
+   * Os eventos especiais (por exemplo, quando você publica um conteúdo novo e muito popular) podem exceder as expectativas, ou até mesmo os recursos (como por vezes reportado na imprensa quando ingressos para determinados eventos são disponibilizados para venda).
 
 ### Capacidade e volume {#capacity-and-volume}
 
@@ -356,7 +360,7 @@ Antes de discutir as métricas relacionadas, uma definição rápida dos termos:
 
    | O que / Onde | Capacidade | Volume |
    |---|---|---|
-   | Cliente | Potência computacional do computador do usuário. | Complexidade do layout da página. |
+   | Client | Potência computacional do computador do usuário. | Complexidade do layout da página. |
    | Rede | Largura de banda de rede. | Tamanho da página (código, imagens e assim por diante). |
    | Cache do Dispatcher | Memória do servidor Web (memória principal e disco rígido). | Servidor Web (memória principal e disco rígido). Número e tamanho das páginas em cache. |
    | Cache de saída | Memória do servidor AEM (memória principal e disco rígido). | Número e tamanho das páginas no cache de saída, o número de dependências por página. O cache do dispatcher baixa esse volume. |

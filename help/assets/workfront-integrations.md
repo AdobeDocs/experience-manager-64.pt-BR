@@ -4,14 +4,18 @@ description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 598be71d-88f1-4ace-aa99-c8ea22e907ed
-source-git-commit: 333150f824fa57f807621978612055f4929a3b69
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1171'
 ht-degree: 5%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] integração com [!DNL Adobe Workfront] {#assets-integration-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o tempo de comercialização, conectando intrinsecamente o trabalho e o gerenciamento de ativos digitais. No contexto do gerenciamento de seu trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
@@ -42,7 +46,7 @@ Consulte o suporte da plataforma e [pré-requisitos para o conector aprimorado](
 
 Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários tipos de integrações entre [!DNL Assets] e [!DNL Workfront].
 
-| Recurso | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Sem conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requer conector* | Workfront e [!DNL Experience Manager as a Cloud Service] *Sem conector (OOTB)* |
+| Destaque | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Sem conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requer conector* | Workfront e [!DNL Experience Manager as a Cloud Service] *Sem conector (OOTB)* |
 |----|----|----|-----|-----|
 | Métodos de implantação | Adequado [!DNL Assets] oferta. | Assets Essentials | Adobe Managed Services, no local | Serviço em nuvem |
 | **Geral** |

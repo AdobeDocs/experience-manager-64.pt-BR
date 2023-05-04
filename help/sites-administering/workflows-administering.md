@@ -1,112 +1,115 @@
 ---
-title: Administração de instâncias de fluxo de trabalho
-seo-title: Administração de instâncias de fluxo de trabalho
-description: Saiba como administrar Instâncias de Fluxo de Trabalho.
-seo-description: Saiba como administrar Instâncias de Fluxo de Trabalho.
+title: Administração de instâncias do fluxo de trabalho
+seo-title: Administering Workflow Instances
+description: Saiba como administrar instâncias de fluxo de trabalho.
+seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 0%
+source-wordcount: '854'
+ht-degree: 80%
 
 ---
 
+# Administração de instâncias do fluxo de trabalho{#administering-workflow-instances}
 
-# Administração de instâncias de fluxo de trabalho{#administering-workflow-instances}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-O console de fluxo de trabalho fornece várias ferramentas para administrar instâncias de fluxo de trabalho para garantir que elas estejam sendo executadas conforme esperado.
+O console do fluxo de trabalho fornece várias ferramentas para administrar instâncias do fluxo de trabalho e garantir que elas estejam em execução conforme esperado.
 
 >[!NOTE]
 >
->O [console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornece operações adicionais de manutenção do fluxo de trabalho.
+>O [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) O fornece operações adicionais de manutenção de workflow.
 
-Vários consoles estão disponíveis para administrar seus workflows. Use a [navegação global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir o painel **Ferramentas** e selecione **Fluxo de trabalho**:
+Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use a [navegação global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir o painel **Ferramentas** e selecione **Fluxo de trabalho**:
 
-* **Modelos**: Gerenciar definições de fluxo de trabalho
-* **Instâncias**: Visualização e gerenciamento de instâncias de fluxo de trabalho em execução
-* **Iniciadores**: Gerenciar como os workflows devem ser iniciados
-* **Arquivo**: Histórico de visualizações concluídos com êxito
-* **Falhas**: Histórico de visualizações que foram concluídos com erros
+* **Modelos**: gerenciar definições de fluxo de trabalho
+* **Instâncias**: exibir e gerenciar instâncias de fluxos de trabalho em execução
+* **Iniciadores**: gerenciar o modo como os fluxos de trabalho devem ser inicializados
+* **Arquivo**: exibir o histórico de fluxos de trabalho que foram concluídos com sucesso
+* **Falhas**: exibir o histórico de fluxos de trabalho que foram concluídos com erros
 
-## Monitorando o Status das Instâncias de Fluxo de Trabalho {#monitoring-the-status-of-workflow-instances}
+## Monitorar o status de instâncias de fluxo de trabalho {#monitoring-the-status-of-workflow-instances}
 
-1. Usando Navegação, selecione **Ferramentas**, em seguida **Fluxo de trabalho**.
+1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
 1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento.
 
    ![wf-96](assets/wf-96.png)
 
-1. Selecione um item específico e **Abrir histórico** para ver mais detalhes:
+1. Selecione um item específico e **Abra o histórico** para ver mais detalhes:
 
    ![wf-97](assets/wf-97.png)
 
-## Suspendendo, Retomando e Encerrando uma Instância de Fluxo de Trabalho {#suspending-resuming-and-terminating-a-workflow-instance}
+## Suspensão, retomada e encerramento de uma instância de fluxo de trabalho {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Usando Navegação, selecione **Ferramentas**, em seguida **Fluxo de trabalho**.
+1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
 1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento.
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. Selecione um item específico e use **Terminar**, **Suspender** ou **Retomar**, conforme apropriado; a confirmação e/ou outros detalhes são necessários:
+1. Selecione um item específico e use **Encerrar**, **Suspender** ou **Retomar**, conforme adequado; é necessária uma confirmação e/ou outros pormenores:
 
    ![wf-97-1](assets/wf-97-1.png)
 
-## Exibindo Workflows Arquivados {#viewing-archived-workflows}
+## Visualização de fluxos de trabalho arquivados {#viewing-archived-workflows}
 
-1. Usando Navegação, selecione **Ferramentas**, em seguida **Fluxo de trabalho**.
-1. Selecione **Arquivar** para exibir a lista de instâncias de fluxo de trabalho concluídas com êxito.
+1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
+1. Selecione **Arquivo** para exibir a lista de instâncias de fluxo de trabalho concluídas com sucesso.
 
    ![wf-98](assets/wf-98.png)
 
    >[!NOTE]
    >
-   >O status de anulação é considerado como uma terminação bem-sucedida, pois ocorre como resultado da ação do usuário; por exemplo:
+   >O status interrompido é considerado um encerramento bem-sucedido, pois ocorre como resultado da ação do usuário; por exemplo:
    >
-   >* uso da ação **Terminar**
-   >* quando uma página sujeita a um fluxo de trabalho é (forçar) excluída, o fluxo de trabalho será encerrado
+   >* o uso da ação **Encerrar**
+   >* quando uma página que está sujeita a um fluxo de trabalho é excluída (à força), o fluxo de trabalho é encerrado
 
 
-1. Selecione um item específico e **Abrir histórico** para ver mais detalhes:
+1. Selecione um item específico e **Abra o histórico** para ver mais detalhes:
 
    ![wf-99](assets/wf-99.png)
 
-## Corrigindo Falhas de Instância de Fluxo de Trabalho {#fixing-workflow-instance-failures}
+## Correção de falhas na instância do fluxo de trabalho {#fixing-workflow-instance-failures}
 
-Quando um fluxo de trabalho falha, AEM fornece o console **Failures** para permitir que você investigue e execute a ação apropriada assim que a causa original for tratada:
+Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
-* **Detalhes**
-da falhaAbre uma janela para mostrar a variável 
-**Mensagem** de falha,  **** Stepand  **Failure Stack**.
+* **Detalhes da falha**
+Abre uma janela para mostrar a  
+**Mensagem de falha**, **Etapa** e **Pilha de falhas**.
 
-* **Abrir**
-históricoMostra detalhes do histórico de fluxo de trabalho.
+* **Abrir histórico**
+Mostra detalhes do histórico do fluxo de trabalho.
 
-* **Repetir** StepExecuta a instância do componente Etapa de script novamente. Use o comando Repetir etapa depois de corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um bug no script que a Etapa do processo executa.
-* **** TerminarEncerra o fluxo de trabalho se o erro tiver causado uma situação irrevogável para o fluxo de trabalho. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
-* **Encerrar e** Tentar novamenteSemelhante ao  **** Encerrar, exceto que uma nova instância do fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
+* **Repetir etapa** Executa a instância do componente Etapa do script novamente. Use o comando Repetir etapa após corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um erro no script que a Etapa do processo executa.
+* **Encerrar** Encerre o fluxo de trabalho se o erro tiver causado uma situação irreversível para o fluxo de trabalho. Por exemplo, o workflow pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do workflow.
+* **Encerrar e repetir** Semelhante a **Encerrar**, exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
 
-Para investigar falhas, retome ou encerre o fluxo de trabalho depois, use as seguintes etapas:
+Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, use as seguintes etapas:
 
-1. Usando Navegação, selecione **Ferramentas**, em seguida **Fluxo de trabalho**.
-1. Selecione **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com êxito.
+1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
+1. Selecione **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com sucesso.
 1. Selecione um item específico e, em seguida, a ação apropriada:
 
    ![wf-47](assets/wf-47.png)
 
-## Expurgação Regular de Instâncias de Fluxo de Trabalho {#regular-purging-of-workflow-instances}
+## Limpeza regular de instâncias de fluxo de trabalho {#regular-purging-of-workflow-instances}
 
-Minimizar o número de instâncias do fluxo de trabalho aumenta o desempenho do motor de workflow, para que você possa expurgar regularmente as instâncias do fluxo de trabalho concluídas ou em execução do repositório.
+Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
-Configure **Configuração de Expurgação de Fluxo de Trabalho do Adobe Granite** para expurgar instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode expurgar instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
+Configure a **Configuração de limpeza de fluxos de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
 
-Você também pode criar várias configurações do serviço para expurgar instâncias de fluxo de trabalho que atendam a critérios diferentes. Por exemplo, crie uma configuração que elimine as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que elimine todos os workflows concluídos após um determinado número de dias para minimizar o tamanho do repositório.
+Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após um determinado número de dias para minimizar o tamanho do repositório.
 
-Para configurar o serviço, você pode usar o [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve as propriedades necessárias para qualquer um dos métodos.
+Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve as propriedades necessárias para qualquer método.
 
 >[!NOTE]
 >
@@ -114,47 +117,47 @@ Para configurar o serviço, você pode usar o [Web Console](/help/sites-deployin
 >
 >`com.adobe.granite.workflow.purge.Scheduler`
 >
->Como o serviço é um serviço de fábrica, o nome do nó `sling:OsgiConfig` requer um sufixo de identificador, por exemplo:
+>Como o serviço é de fábrica, o nome do nó `sling:OsgiConfig` requer um sufixo identificador. Por exemplo:
 >
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table> 
  <tbody> 
   <tr> 
-   <th>Nome da propriedade (Console da Web)</th> 
+   <th>Nome da propriedade (console da Web)</th> 
    <th>Nome da propriedade OSGi</th> 
    <th>Descrição</th> 
   </tr> 
   <tr> 
    <td>Nome da tarefa</td> 
    <td>scheduledpurge.name</td> 
-   <td>Um nome descritivo para a expurgação programada.</td> 
+   <td>Um nome descritivo para a limpeza agendada.</td> 
   </tr> 
   <tr> 
    <td>Status do fluxo de trabalho</td> 
    <td>scheduledpurge.workflowStatus</td> 
-   <td><p>O status das instâncias do fluxo de trabalho a serem expurgadas. Os seguintes valores são válidos:</p> 
+   <td><p>O status das instâncias de fluxo de trabalho a serem removidas. Os seguintes valores são válidos:</p> 
     <ul> 
-     <li>CONCLUÍDO: As instâncias de fluxo de trabalho concluídas são removidas.</li> 
-     <li>EM EXECUÇÃO: A execução de instâncias de fluxo de trabalho é removida.</li> 
+     <li>CONCLUÍDO: as instâncias de fluxo de trabalho concluídas são removidas.</li> 
+     <li>EM EXECUÇÃO: as instâncias de fluxo de trabalho em execução são removidas.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Modelos a Serem Expurgados</td> 
+   <td>Modelos a remover</td> 
    <td>scheduledpurge.modelIds</td> 
-   <td><p>A ID dos modelos de fluxo de trabalho a serem expurgados. A ID é o caminho para o nó do modelo, por exemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Não especifique nenhum valor para expurgar instâncias de todos os modelos de fluxo de trabalho.</p> <p>Para especificar vários modelos, clique no botão + no Console da Web. </p> </td> 
+   <td><p>A ID dos modelos de fluxo de trabalho a serem removidos. A ID é o caminho para o nó do modelo, por exemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Não especifique nenhum valor para remover instâncias de todos os modelos de fluxo de trabalho.</p> <p>Para especificar vários modelos, clique no botão + no console da Web. </p> </td> 
   </tr> 
   <tr> 
    <td>Idade do fluxo de trabalho</td> 
    <td>scheduledpurge.daysold</td> 
-   <td>A idade das instâncias do fluxo de trabalho a serem expurgadas, em dias.</td> 
+   <td>A idade das instâncias de fluxo de trabalho a serem removidas, em dias.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Configuração do Tamanho Máximo da Caixa de Entrada {#setting-the-maximum-size-of-the-inbox}
+## Configuração do tamanho máximo da caixa de entrada {#setting-the-maximum-size-of-the-inbox}
 
-Você pode definir o tamanho máximo da caixa de entrada configurando o **Serviço de Fluxo de Trabalho de Granite do Adobe**, usando o [Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade configurada para qualquer método.
+Você pode definir o tamanho máximo da caixa de entrada configurando o **Serviço de fluxo de trabalho do Adobe Granite**, usando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade configurada para qualquer método.
 
 >[!NOTE]
 >
@@ -162,7 +165,6 @@ Você pode definir o tamanho máximo da caixa de entrada configurando o **Servi�
 >
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
-| Nome da propriedade (Console da Web) | Nome da propriedade OSGi |
+| Nome da propriedade (console da Web) | Nome da propriedade OSGi |
 |---|---|
-| Tamanho Máximo do Query da Caixa de Entrada | granite.workflow.inboxQuerySize |
-
+| Tamanho máximo da consulta da caixa de entrada | granite.workflow.inboxQuerySize |

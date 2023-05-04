@@ -6,14 +6,18 @@ feature: Asset Management,Search,Renditions,Collaboration
 role: User
 mini-toc-levels: 4
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 14633d278f1e6fe7c1a47168006b8387c150e63d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10145'
-ht-degree: 3%
+source-wordcount: '10181'
+ht-degree: 2%
 
 ---
 
 # Organize seus ativos digitais {#managing-assets-with-the-touch-optimized-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Saiba mais sobre várias tarefas de gerenciamento e edição de ativos que você pode realizar usando a interface otimizada para toque de [!DNL Experience Manager] Ativos.
 
@@ -288,7 +292,7 @@ Você pode transcodificar um arquivo de vídeo escolhendo entre várias predefin
 |---|---|---|
 | Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer proporção para criar vídeos para entrega em dispositivos móveis, tablets e desktops. Os vídeos de origem carregados codificados com essa predefinição são definidos com uma altura fixa. No entanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação Adaptive Video. |
 | Predefinições de codificação única | Ordenar predefinições de codificação | Selecione Nome ou Tamanho para classificar as predefinições de codificação listadas em Desktop, Móvel e Tablet por nome ou tamanho de resolução. |
-|  | Área de trabalho | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo a computadores desktop.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
+|  | Desktop | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo a computadores desktop.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 |  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 |  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 
@@ -591,7 +595,7 @@ Para obter informações específicas de [!DNL Dynamic Media], consulte [publica
 
 1. Ao publicar, se um ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências são exibidas, que não são publicadas ou modificadas desde a última publicação. Escolha as referências que deseja publicar.
 
-1. Ao cancelar a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Clique em **[!UICONTROL Cancelar publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação ou clique em **[!UICONTROL Cancelar publicação]** para confirmar que a publicação dos ativos deve ser cancelada na data especificada.
+1. Ao cancelar a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Clique em **[!UICONTROL Desfazer a publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação ou clique em **[!UICONTROL Cancelar publicação]** para confirmar que a publicação dos ativos deve ser cancelada na data especificada.
 
 Entenda as seguintes limitações e dicas relacionadas à publicação ou ao cancelamento da publicação de ativos ou pastas:
 
@@ -634,7 +638,7 @@ Isso ocorre porque [!DNL Experience Manager] Os ativos aguardam até o fim de um
 
 ## Usar ações rápidas {#quick-actions}
 
-Os ícones de ação rápida estão disponíveis para um único ativo por vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
+Os ícones de ação rápida estão disponíveis para um único ativo de cada vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
 * Dispositivos de toque: Toque e segure. Por exemplo, em uma iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
 * Dispositivos sem toque: Ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
@@ -724,7 +728,7 @@ No [Console Coleções](managing-collections-touch-ui.md#navigating-the-collecti
 1. Abra a página de ativo de um ativo ou selecione-o na interface do usuário do Assets.
 1. Toque no **[!UICONTROL Navegação global]** e escolha **[Linha do tempo]** na lista.
 
-   ![linha do tempo](assets/timeline.png)
+   ![linha de tempo](assets/timeline.png)
 
 1. Na lista que aparece, use **[!UICONTROL Mostrar tudo]** para filtrar os resultados com base em comentários, versões, fluxos de trabalho e atividades.
 

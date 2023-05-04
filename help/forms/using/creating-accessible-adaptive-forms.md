@@ -1,23 +1,26 @@
 ---
 title: Criação de formulários adaptáveis acessíveis
-seo-title: Criação de formulários adaptáveis acessíveis
+seo-title: Creating accessible adaptive forms
 description: O AEM Forms fornece ferramentas e para criar formulários adaptáveis acessíveis, além de ajudar a estar em conformidade com os padrões de acessibilidade.
-seo-description: O AEM Forms fornece ferramentas e para criar formulários adaptáveis acessíveis, além de ajudar a estar em conformidade com os padrões de acessibilidade.
+seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
 
+# Criação de formulários adaptáveis acessíveis {#creating-accessible-adaptive-forms}
 
-# Criar formulários adaptáveis acessíveis {#creating-accessible-adaptive-forms}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -47,15 +50,15 @@ Para usar a opção Acessibilidade , siga estas etapas:
 
 ![Opções de acessibilidade em componentes de formulário](assets/accessibility-options.png)
 
-**Os autores** de TextForm personalizados fornecem o conteúdo na opção acessibilidade Campo de texto personalizado. A tecnologia de assistência, como leitores de tela, usa esse texto personalizado. Usar a configuração de Título é a melhor opção na maioria dos cenários. Considere criar Reader de tela personalizada somente texto ao usar o Título ou uma breve descrição não é possível.
+**Texto personalizado** Os autores de formulários fornecem o conteúdo na opção acessibilidade Campo de texto personalizado. A tecnologia de assistência, como leitores de tela, usa esse texto personalizado. Usar a configuração de Título é a melhor opção na maioria dos cenários. Considere criar Reader de tela personalizada somente texto ao usar o Título ou uma breve descrição não é possível.
 
-**Breve** descriçãoPara a maioria dos componentes, a breve descrição é exibida no tempo de execução quando o usuário passa o ponteiro sobre o componente. É possível definir essa opção no campo de descrição curta, na opção de conteúdo da ajuda.
+**Descrição curta** Para a maioria dos componentes, a breve descrição é exibida no tempo de execução, quando o usuário passa o ponteiro sobre o componente. É possível definir essa opção no campo de descrição curta, na opção de conteúdo da ajuda.
 
-**** TítuloUse esta opção para permitir que o AEM Forms use o rótulo visual associado ao campo de formulário como o texto do leitor de tela.
+**Título** Use essa opção para permitir que o AEM Forms use o rótulo visual associado ao campo de formulário como o texto do leitor de tela.
 
-**** NomeVocê pode especificar um valor no campo Nome da guia Vínculo. O nome não pode conter espaços.
+**Nome** Você pode especificar um valor no campo Nome da guia Vínculo. O nome não pode conter espaços.
 
-**** NenhumSelecionar Nenhum faz com que o objeto de formulário não tenha um nome no formulário publicado. Nenhum não é uma configuração recomendada para controles de formulário.
+**Nenhum** Selecionar Nenhum faz com que o objeto de formulário não tenha um nome no formulário publicado. Nenhum não é uma configuração recomendada para controles de formulário.
 
 >[!NOTE]
 >
@@ -83,9 +86,9 @@ Os usuários portadores de deficiência visual dependem de um alto contraste ent
 
 É recomendável usar as cores padrão de fonte e plano de fundo — conteúdo em preto em um plano de fundo branco. Se você alterar as cores padrão, escolha uma cor de primeiro plano escura em uma cor de plano de fundo clara ou vice-versa.
 
-Consulte [Criação de temas personalizados para formulários adaptáveis](/help/forms/using/creating-custom-adaptive-form-themes.md), para obter mais informações sobre como alterar o contraste de cores e o tema para os formulários adaptáveis.
+Consulte [Criar temas personalizados para formulários adaptáveis](/help/forms/using/creating-custom-adaptive-form-themes.md), para obter mais informações sobre como alterar o contraste de cores e o tema dos formulários adaptáveis.
 
-## Certifique-se de que os controles de formulário sejam acessíveis pelo teclado {#ensure-that-form-controls-are-keyboard-accessible}
+## Verifique se os controles de formulário são acessíveis ao teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
 Um formulário acessível pode ser preenchido completamente usando apenas o teclado ou um dispositivo de entrada equivalente. Usuários com mobilidade reduzida ou visão deficiente podem não ter escolha senão usar o teclado e muitos usuários que podem usar um mouse, preferir a entrada do teclado. Ao permitir os vários métodos de entrada, você não apenas cria formulários acessíveis, como também cria formulários mais adequados para as preferências de todos os usuários.
 

@@ -1,24 +1,27 @@
 ---
-title: Recurso do fórum de perguntas e respostas
-seo-title: Recurso do fórum de perguntas e respostas
+title: Recurso do Fórum de Perguntas e Respostas
+seo-title: Q&A Forum Feature
 description: Adicionar o recurso de fórum QnA a uma página
-seo-description: Adicionar o recurso de fórum QnA a uma página
+seo-description: Adding the QnA forum feature to a page
 uuid: 006c0bf0-c230-4890-8080-65651f4b4dac
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: bbbe32bb-9d97-461e-822f-a7ddc6c9f9ef
-translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+exl-id: af16f4df-ed8e-40e4-b117-3d612e122947
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 0%
+source-wordcount: '1240'
+ht-degree: 1%
 
 ---
 
+# Recurso do Fórum de Perguntas e Respostas {#q-a-forum-feature}
 
-# Recurso do fórum de perguntas e respostas {#q-a-forum-feature}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -26,158 +29,158 @@ O recurso de fórum QnA (perguntas e respostas) fornece uma área para os membro
 
 * Criar novas perguntas
 * Imagens embutidas (com suporte para arrastar e soltar)
-* Visualização e perguntas de resposta
-* Procurar uma pergunta
-* Ajuda a moderar o conteúdo QnA
+* Exibir e responder perguntas
+* Pesquisar uma pergunta
+* Ajuda a moderar o conteúdo de QnA
 * Identificar as melhores respostas
 * Mover perguntas QnA de uma página para outra
 
 Esta seção da documentação descreve
 
 * Adicionar o recurso de fórum QnA a um site AEM
-* Configurações do componente `QnA`
+* Configurações para o `QnA`componente
 
-## Adicionar um fórum de P&amp;R a uma página {#adding-a-q-a-forum-to-a-page}
+## Adicionar um fórum de perguntas e respostas a uma página {#adding-a-q-a-forum-to-a-page}
 
-Para adicionar um componente `QnA` a uma página no modo de autor, use o navegador de componentes para localizar `Communities / QnA` e arraste-o para o lugar em uma página onde o fórum QnA deve aparecer.
+Para adicionar uma `QnA` para uma página no modo autor, use o navegador de componentes para localizar `Communities / QnA` e arraste-o para o local em uma página onde o fórum QnA deve aparecer.
 
-Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
+Para obter as informações necessárias, visite [Noções básicas sobre componentes do Communities](basics.md).
 
-Quando as [bibliotecas obrigatórias do lado do cliente](qna-essentials.md#essentials-for-client-side) forem incluídas, o componente `QnA` aparecerá desta forma:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](qna-essentials.md#essentials-for-client-side) são incluídos, é assim que a variável `QnA` componente será exibido:
 
 ![chlimage_1-280](assets/chlimage_1-280.png)
 
-### Configurando o QnA {#configuring-qna}
+### Configuração de QnA {#configuring-qna}
 
-Selecione o componente `QnA` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
+Selecione o `QnA` para acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![chlimage_1-281](assets/chlimage_1-281.png) ![chlimage_1-282](assets/chlimage_1-282.png)
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **[!UICONTROL Configurações]**, especifique as configurações para tópicos (perguntas) e respostas (respostas):
+Em **[!UICONTROL Configurações]** , especifique as configurações dos tópicos (perguntas) e respostas (respostas):
 
-* **[!UICONTROL Tópicos por]**
-páginaDefine o número de perguntas/postagens exibidas por página. O padrão é 10.
+* **[!UICONTROL Tópicos por página]**
+Define o número de perguntas/postagens exibidas por página. O padrão é 10.
 
-* ****
-ModeradoSe marcado, a publicação de tópicos e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
+* **[!UICONTROL Moderado]**
+Se marcada, a publicação de tópicos e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
-* ****
-FechadoSe marcado, o fórum é fechado para novas perguntas e comentários. O padrão está desmarcado.
+* **[!UICONTROL Fechado]**
+Se marcada, o fórum é fechado para novas perguntas e comentários. O padrão está desmarcado.
 
-* **[!UICONTROL Rich Text]**
-EditorSe marcado, os tópicos e os comentários podem ser inseridos com marcação. O padrão está desmarcado.
+* **[!UICONTROL Editor de Rich Text]**
+Se marcada, tópicos e comentários podem ser inseridos com marcação. O padrão está desmarcado.
 
-* **[!UICONTROL Permitir]**
-marcaçãoSe marcada, permita que os membros adicionem etiquetas à sua postagem (consulte  **[!UICONTROL Tag]** field tab). O padrão está desmarcado.
+* **[!UICONTROL Permitir marcação]**
+Se marcada, permitir que membros adicionem rótulos de tag à publicação (consulte **[!UICONTROL Campo de tag]** ). O padrão está desmarcado.
 
-* **[!UICONTROL Permitir]**
-uploads de arquivoSe marcada, permita que os anexos de arquivo sejam adicionados à pergunta ou ao comentário. O padrão está desmarcado.
+* **[!UICONTROL Permitir uploads de arquivo]**
+Se marcada, permita que anexos de arquivo sejam adicionados à pergunta ou ao comentário. O padrão está desmarcado.
 
-* **[!UICONTROL Tamanho máx.]**
-do arquivoRelevante somente se 
+* **[!UICONTROL Tamanho máximo do arquivo]**
+Relevante apenas se 
 `Allow File Uploads` está marcada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **[!UICONTROL Permitidos]**
-Tipos de ArquivoRelevante somente se 
-`Allow File Uploads` está marcada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+* **[!UICONTROL Tipos de arquivo permitidos]**
+Relevante apenas se 
+`Allow File Uploads` está marcada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se qualquer tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivo são permitidos.
 
-* **[!UICONTROL Tamanho máx. do arquivo de imagem anexadaRelevante somente se Permitir uploads de arquivo estiver marcado.]**
-Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
+* **[!UICONTROL Tamanho máximo do arquivo de imagem anexada]**
+Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
 
-* **[!UICONTROL Permitir]**
-seguidoresSe marcada, inclua o seguinte recurso para postagens do fórum, que permite que os membros sejam  [](notifications.md) notificados sobre novas postagens. O padrão está desmarcado.
+* **[!UICONTROL Permitir Seguindo]**
+Se marcada, inclua o seguinte recurso para publicações do fórum, que permite que os membros sejam [notificado](notifications.md) de novos posts. O padrão está desmarcado.
 
-* **[!UICONTROL Permitir]**
-fixaçãoSe marcada, os tópicos do fórum podem ser fixados na parte superior da lista de tópicos. O padrão está desmarcado.
+* **[!UICONTROL Permitir Prender]**
+Se marcada, os tópicos do fórum podem ser fixados ao topo da lista de tópicos. O padrão está desmarcado.
 
-* **[!UICONTROL Permitir]**
-assinaturas de e-mailSe marcada, permita que os membros sejam notificados de novas publicações por e-mail ([subscrição](subscriptions.md)). Exige que `Allow Following` seja verificado e [e-mail configurado](email.md). O padrão está desmarcado.
+* **[!UICONTROL Permitir assinaturas por email]**
+Se marcada, permita que os membros sejam notificados sobre novas postagens por email ([assinatura](subscriptions.md)). Exige `Allow Following` a verificar e [email configurado](email.md). O padrão está desmarcado.
 
-* **[!UICONTROL Permitir]**
-respostasSe marcada, permita respostas a comentários postados na pergunta. O padrão está desmarcado.
+* **[!UICONTROL Permitir respostas]**
+Se marcada, permita respostas para comentários postados na pergunta. O padrão está desmarcado.
 
-* **[!UICONTROL Permitir que os usuários excluam comentários e]**
-tópicosSe marcada, permita que os membros excluam os comentários e perguntas que publicaram. O padrão está desmarcado.
+* **[!UICONTROL Permitir que os usuários excluam comentários e tópicos]**
+Se marcada, permita que os membros excluam os comentários e perguntas publicados. O padrão está desmarcado.
 
-* **[!UICONTROL Permitir]**
-votaçãoSe marcada, inclua o recurso de votação com uma pergunta. O padrão está desmarcado.
+* **[!UICONTROL Permitir votação]**
+Se marcada, inclua o recurso Votação com uma pergunta. O padrão está desmarcado.
 
-* **[!UICONTROL Mover a resposta selecionada para o]**
-inícioSe marcada, a primeira resposta mostrada é uma resposta selecionada. O padrão está marcado.
+* **[!UICONTROL Mover A Resposta Selecionada Para O Topo]**
+Se marcada, a primeira resposta mostrada é uma resposta selecionada. O padrão está marcado.
 
-* **[!UICONTROL Exibir]**
-emblemasSe marcada, exibe os  [](implementing-scoring.md) emblemas ganhados e atribuídos com a entrada do blog de um membro. O padrão está desmarcado.
+* **[!UICONTROL Exibir emblemas]**
+Se marcada, exibir ganhado e atribuído [emblemas](implementing-scoring.md) com a entrada de um membro no blog. O padrão está desmarcado.
 
-* **[!UICONTROL Se a opção Permitir]**
-conteúdo em destaque estiver marcada, a ideia poderá ser identificada como conteúdo [ em ](featured.md)destaque. O padrão está desmarcado.
+* **[!UICONTROL Permitir conteúdo em destaque]**
+se marcada, a ideia poderá ser identificada como [conteúdo em destaque](featured.md). O padrão está desmarcado.
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia **[!UICONTROL Moderação do usuário]**, especifique como os tópicos publicados (perguntas) e as respostas (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
+Em **[!UICONTROL Moderação do usuário]** , especifique como os tópicos publicados (perguntas) e as respostas (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-* **[!UICONTROL Negar]**
-respostasSe marcada, os moderadores de membros confiáveis poderão negar as respostas publicadas e impedir que a resposta apareça no fórum público de perguntas e respostas. O padrão está desmarcado.
+* **[!UICONTROL Negar respostas]**
+Se marcada, os moderadores de membros confiáveis poderão negar as respostas publicadas e impedir que elas apareçam no fórum público de perguntas e respostas. O padrão está desmarcado.
 
-* **[!UICONTROL Fechar / Reabrir]**
-tópicosSe marcada, os moderadores de membros confiáveis podem fechar uma pergunta (tópico) para outras edições e respostas, e também podem reabrir uma pergunta. O padrão está desmarcado.
+* **[!UICONTROL Fechar / Reabrir Tópicos]**
+Se marcada, os moderadores de membros confiáveis podem fechar uma pergunta (tópico) para outras edições e respostas, e também podem reabrir uma pergunta. O padrão está desmarcado.
 
-* **[!UICONTROL Mover]**
-tópicosSe marcada, permita que os moderadores do lado da publicação movam perguntas. O padrão está desmarcado.
+* **[!UICONTROL Mover tópicos]**
+Se marcada, permita que os moderadores do lado da publicação movam perguntas. O padrão está desmarcado.
 
-* **[!UICONTROL Sinalizar]**
-postagensSe marcada, permita que os membros sinalizem as perguntas ou respostas de outras pessoas como inadequadas. O padrão está desmarcado.
+* **[!UICONTROL Sinalizar publicações]**
+Se marcada, permita que os membros sinalizem as perguntas ou respostas de outras pessoas como inapropriadas. O padrão está desmarcado.
 
-* **[!UICONTROL Sinalizar]**
-lista de motivosSe estiver marcada, permita que os membros escolham, em uma lista suspensa, o motivo para sinalizar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
+* **[!UICONTROL Lista de Motivos do Sinalizador]**
+Se marcada, permita que os membros escolham, em uma lista suspensa, o motivo para marcar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
 
-* **[!UICONTROL Sinalizador personalizado]**
-MotivoSe estiver marcado, permita que os membros insiram seu próprio motivo para sinalizar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
+* **[!UICONTROL Motivo do Sinalizador Personalizado]**
+Se marcada, permita que os membros insiram seu próprio motivo para marcar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
 
-* **[!UICONTROL Limiar de moderaçãoInsira o número de vezes que uma pergunta ou resposta deve ser sinalizada pelos membros antes que os moderadores sejam notificados.]**
-O padrão é 1 (uma vez).
+* **[!UICONTROL Limite de moderação]**
+Insira o número de vezes que uma pergunta ou resposta deve ser sinalizada por membros antes que os moderadores sejam notificados. O padrão é 1 ( uma vez).
 
-* **[!UICONTROL Limite]**
-de sinalizaçãoInsira o número de vezes que uma pergunta ou resposta deve ser sinalizada antes de ser ocultada da visualização pública. Se definido como -1, a pergunta ou resposta sinalizada nunca será ocultada da visualização pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+* **[!UICONTROL Limite de sinalização]**
+Insira o número de vezes que uma pergunta ou resposta deve ser sinalizada antes de ser ocultada da exibição pública. Se definida como -1, a pergunta ou resposta sinalizada nunca será ocultada da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia **[!UICONTROL Campo de tag]**, as tags que podem ser aplicadas, se permitidas na guia **[!UICONTROL Settings]**, são limitadas de acordo com as namespaces escolhidas.
+Em **[!UICONTROL Campo de tag]** , as tags que podem ser aplicadas, se permitidas sob a variável **[!UICONTROL Configurações]** , são limitadas de acordo com os namespaces escolhidos.
 
-* **[!UICONTROL Espaços de]**
-nomes permitidosRelevante se 
-`Allow Tagging` está marcada na guia  **** Configurações. As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+* **[!UICONTROL Espaços de nomes permitidos]**
+Relevante se 
+`Allow Tagging` é verificada sob o **Configurações** guia . As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
 
-* **[!UICONTROL Limite de]**
-sugestãoInsira o número de tags a serem exibidas como uma sugestão para o membro postar no fórum. Um valor de 
+* **[!UICONTROL Limite de Sugestão]**
+Insira o número de tags a serem exibidas como sugestão para o membro postando no fórum. Um valor de 
 `-1` significa que não há limites. O padrão é 0.
 
-#### guia Configurações de classificação {#sort-settings-tab}
+#### Guia Configurações de classificação {#sort-settings-tab}
 
-Na guia **[!UICONTROL Classificar configurações]**, especifique como os comentários publicados são classificados quando exibidos.
+Em **[!UICONTROL Classificar configurações]** , especifique como os comentários publicados são classificados quando exibidos.
 
-* **[!UICONTROL Classificar]**
-porMarque todas as seleções de classificação permitidas: 
+* **[!UICONTROL Ordenar por]**
+Marque todas as seleções de classificação permitidas: 
 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. O padrão é `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Defina como]**
-DefaultPull para baixo para selecionar uma das opções de classificação marcadas para serem exibidas como padrão. O padrão é 
+* **[!UICONTROL Definir como padrão]**
+Puxe para baixo para selecionar uma das opções de classificação marcadas que serão exibidas como padrão. O padrão é 
 `Newest`.
 
-* **[!UICONTROL Selecione Opções de tempo para]**
-classificação do AnalyticsPuxe para baixo para selecionar uma das opções de 
+* **[!UICONTROL Selecionar opções de tempo para classificação do Analytics]**
+Puxe para baixo para selecionar um dos 
 `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 
-## Experiência de Visitante do site {#site-visitor-experience}
+## Experiência de visitante do site {#site-visitor-experience}
 
-### Identificando respostas {#identifying-answers}
+### Identificação de respostas {#identifying-answers}
 
-Uma resposta pode ser marcada como uma resposta correta ou útil usando o botão `Select Answer`. Quando uma pergunta é marcada como Respondida, outra resposta não pode ser selecionada até que a primeira seja desmarcada usando o botão `Unmark Chosen Answer`.
+Uma resposta pode ser marcada como uma resposta correta ou útil usando o `Select Answer` botão. Depois que uma Pergunta é marcada como Respondida, outra resposta não poderá ser selecionada até que a primeira seja desmarcada usando o `Unmark Chosen Answer`botão.
 
-Depois de selecionada como uma resposta viável, ela pode ser desmarcada usando o botão `Unmark Chosen Answer`.
+Depois de selecionado como uma resposta viável, ele pode ser desmarcado usando o `Unmark Chosen Answer` botão.
 
-Depois que uma resposta é selecionada como resposta viável, uma indicação de que a pergunta foi `Answered`é exibida ao lado do tópico da pergunta na página principal de QnA.
+Depois que uma resposta é selecionada como resposta viável, uma indicação de que a pergunta foi `Answered`é exibida ao lado do tópico da pergunta na página principal do QnA.
 
 ### Moderadores e administradores {#moderators-and-administrators}
 
@@ -187,21 +190,21 @@ Eles também têm a capacidade de identificar respostas.
 
 ### Membros {#members}
 
-Quando o visitante do site estiver conectado, dependendo da configuração, eles poderão
+Quando o visitante do site está conectado, dependendo da configuração, ele pode
 
-* Publicar uma nova pergunta
-* Editar ou excluir perguntas que eles criaram
+* Postar uma nova pergunta
+* Editar ou excluir perguntas criadas por eles
 * Pode também sinalizar perguntas ou respostas de outras pessoas
-* Pode identificar respostas para perguntas que eles criaram
+* Pode identificar respostas para perguntas criadas por eles
 
 ### Anônimo {#anonymous}
 
-Os visitantes do site que não estão conectados só podem ler perguntas e respostas publicadas, traduzi-las se houver suporte, mas não podem adicionar nem perguntas nem respostas, nem sinalizar as publicações de outras pessoas.
+Os visitantes do site que não estiverem conectados só poderão ler perguntas e respostas publicadas, traduzi-las se houver suporte, mas não poderão adicionar perguntas nem respostas, nem sinalizar publicações de outros.
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [QnA Essentials](qna-essentials.md) para desenvolvedores.
+Mais informações podem ser encontradas no [Fundamentos de QnA](qna-essentials.md) página para desenvolvedores.
 
-Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
+Para obter moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
 Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo gerado pelo usuário](tag-ugc.md).

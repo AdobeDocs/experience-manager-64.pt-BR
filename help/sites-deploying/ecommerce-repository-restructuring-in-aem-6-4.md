@@ -1,26 +1,29 @@
 ---
 title: Reestruturação do repositório de comércio eletrônico no AEM 6.4
-seo-title: Reestruturação do repositório de comércio eletrônico no AEM 6.4
+seo-title: E-Commerce Repository Restructuring in AEM 6.4
 description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 for E-Commerce.
-seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 for E-Commerce.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 3%
+source-wordcount: '237'
+ht-degree: 5%
 
 ---
 
-
 # Reestruturação do repositório de comércio eletrônico no AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações do repositório que afetam a solução AEM de comércio eletrônico. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para o AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações do repositório que afetam a solução AEM de comércio eletrônico. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
 ## Com a atualização 6.4 {#with-upgrade}
 
@@ -38,7 +41,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td> 
-   <td><p>Você pode usar uma tarefa <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> para migrar dados de E-Commerce.</p> <p>Ele executa as seguintes etapas:</p> 
+   <td><p>Você pode usar um <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migração preguiçosa</a> tarefa para migrar dados de Comércio Eletrônico.</p> <p>Ele executa as seguintes etapas:</p> 
     <ul> 
      <li>ajusta referências à localização antiga para apontar para a nova localização</li> 
      <li>move o conteúdo do local antigo para o novo local</li> 
@@ -58,4 +61,3 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.4
   </tr>
  </tbody>
 </table>
-

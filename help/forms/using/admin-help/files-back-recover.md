@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2178'
 ht-degree: 0%
 
 ---
 
 # Arquivos para backup e recuperação {#files-to-back-up-and-recover}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O aplicativo e os arquivos de dados que devem ser submetidos a backup são descritos com mais detalhes nas seções a seguir.
 
@@ -29,11 +33,11 @@ Considere os seguintes pontos em relação ao backup e à recuperação:
 
 ## Diretório de armazenamento de documentos global {#global-document-storage-directory}
 
-O GDS é um diretório usado para armazenar arquivos de longa duração usados em um processo. O tempo de vida dos arquivos de longa duração destina-se a cobrir uma ou mais inicializações de um sistema de formulários de AEM e pode durar dias e até anos. Esses arquivos de longa duração podem incluir PDFs, políticas e modelos de formulário. Arquivos de longa duração são uma parte essencial do estado geral de muitas implantações de formulários AEM. Se alguns ou todos os documentos de longa duração forem perdidos ou corrompidos, o servidor de formulários poderá se tornar instável.
+O GDS é um diretório usado para armazenar arquivos de longa duração usados em um processo. O tempo de vida dos arquivos de longa duração destina-se a cobrir uma ou mais inicializações de um sistema de formulários de AEM e pode durar dias e até anos. Esses arquivos de longa duração podem incluir PDF, políticas e modelos de formulário. Arquivos de longa duração são uma parte essencial do estado geral de muitas implantações de formulários AEM. Se alguns ou todos os documentos de longa duração forem perdidos ou corrompidos, o servidor de formulários poderá se tornar instável.
 
 Os documentos de entrada para invocação assíncrona de trabalho também são armazenados no GDS e devem estar disponíveis para processar solicitações. Portanto, é importante que você considere a confiabilidade do sistema de arquivos que hospeda o GDS e utilize uma matriz redundante de discos independentes (RAID) ou outra tecnologia, conforme apropriado para seus requisitos de qualidade e nível de serviço.
 
-O local do GDS é determinado durante o processo de instalação dos formulários AEM ou posteriormente usando o console de administração. Além de manter um local de alta disponibilidade para GDS, você também pode ativar o armazenamento de banco de dados para documentos. Consulte [Opções de backup quando o banco de dados for usado para armazenamento de documento](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
+O local do GDS é determinado durante o processo de instalação dos formulários AEM ou posteriormente usando o console de administração. Além de manter um local de alta disponibilidade para GDS, você também pode ativar o armazenamento de banco de dados para documentos. Consulte [Opções de backup quando o banco de dados é usado para armazenamento de documentos](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
 ### Localização GDS {#gds-location}
 
@@ -50,7 +54,7 @@ Se você alterou o local GDS para um local não padrão, é possível determiná
 
 Em um ambiente em cluster, o GDS normalmente aponta para um diretório que é compartilhado na rede e é acessível para leitura/gravação em cada nó do cluster.
 
-A localização do GDS pode ser alterada durante uma recuperação se a localização original já não estiver disponível. (Consulte [Alteração do local do GDS durante a recuperação](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
+A localização do GDS pode ser alterada durante uma recuperação se a localização original já não estiver disponível. (Consulte [Alteração da localização do GDS durante a recuperação](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
 ### Opções de backup quando o banco de dados é usado para armazenamento de documentos {#backup-options-when-database-is-used-for-document-storage}
 
@@ -80,7 +84,7 @@ O AEM Forms Workspace corresponde aos recursos do Flex Workspace (obsoleto para 
 >
 >O Flex Workspace está obsoleto para a versão AEM formulários.
 
-Permite o gerenciamento de tarefas em clientes sem o Flash Player e o Adobe Reader. Ele facilita a representação de Forms HTML, além de formulários PDF forms e Flex.
+Permite o gerenciamento de tarefas em clientes sem o Flash Player e o Adobe Reader. Ele facilita a representação do HTML Forms, além de formulários PDF forms e Flex.
 
 ## Banco de dados de formulários AEM {#aem-forms-database}
 
@@ -92,7 +96,7 @@ Para fazer o backup do banco de dados em tempo real, você deve usar o modo de i
 
 >[!NOTE]
 >
->O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados em seres humanos. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>O Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários criem, gerenciem, monitorem e otimizem processos centrados em seres humanos. O suporte aos Serviços de conteúdo (obsoleto) termina em 31/12/2014. Consulte [Documento de ciclo de vida do produto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -104,8 +108,8 @@ Configure seu banco de dados do DB2 para ser executado no modo de log de arquiva
 
 A IBM tem um conjunto de ferramentas e sistemas de ajuda para ajudar os administradores de bancos de dados a gerenciar suas tarefas de backup e recuperação:
 
-* IBM DB2 Archive Log Accelerator
-* Especialista em arquivamento de dados IBM DB2 (consulte [IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
+* Acelerador de registro do arquivo IBM DB2
+* Especialista em Arquivo de dados IBM DB2 (consulte [Guia e referência do usuário especialista do IBM DB2 Data Archive](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
 
 O DB2 tem recursos incorporados para fazer backup de um banco de dados no Tivoli Storage Manager. Ao usar o Tivoli Storage Manager, os backups do DB2 podem ser armazenados em outras mídias ou no disco rígido local.
 
@@ -115,11 +119,11 @@ Para obter mais informações sobre backup e recuperação do banco de dados DB2
 
 Use backups de snapshot ou configure o banco de dados do Oracle para ser executado no modo de log de arquivamento. (Consulte [Backup do Oracle: Uma Introdução](https://www.databasedesign-resource.com/oracle-backup.md).) Para obter mais informações sobre como fazer backup e recuperar o banco de dados do Oracle, acesse estes sites:
 
-[Backup e recuperação do Oracle: ](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explica os conceitos de backup e recuperação e as técnicas mais comuns de uso do RMAN (Recovery Manager, Gerenciador de recuperação) para backup, recuperação e emissão de relatórios com mais detalhes, além de fornecer mais informações sobre como planejar uma estratégia de backup e recuperação.
+[Backup e recuperação do Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica os conceitos de backup e recuperação e as técnicas mais comuns de uso do RMAN (Recovery Manager, Gerenciador de Recuperação) para backup, recuperação e emissão de relatórios com mais detalhes, além de fornecer mais informações sobre como planejar uma estratégia de backup e recuperação.
 
-[Oracle Database Backup and Recovery User&#39;s Guide: ](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) fornece informações detalhadas sobre arquitetura RMAN, conceitos e mecanismos de backup e recuperação, técnicas avançadas de recuperação, como recursos point-in-time de recuperação e flashback de banco de dados e ajuste de desempenho de backup e recuperação. Também abrange backup e recuperação gerenciados pelo usuário, usando recursos do sistema operacional host em vez de RMAN. Esse volume é essencial para backup e recuperação de implantações de banco de dados mais sofisticadas e para cenários de recuperação avançados.
+[Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fornece informações detalhadas sobre arquitetura RMAN, conceitos e mecanismos de backup e recuperação, técnicas avançadas de recuperação, como recursos point-in-time de recuperação e flashback de banco de dados, e ajuste do desempenho de backup e recuperação. Também abrange backup e recuperação gerenciados pelo usuário, usando recursos do sistema operacional host em vez de RMAN. Esse volume é essencial para backup e recuperação de implantações de banco de dados mais sofisticadas e para cenários de recuperação avançados.
 
-[Referência de backup e recuperação do banco de dados do Oracle: ](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) fornece informações completas sobre sintaxe e semântica para todos os comandos RMAN e descreve as exibições do banco de dados disponíveis para relatórios sobre atividades de backup e recuperação.
+[Referência de Backup e Recuperação do Banco de Dados do Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Fornece informações completas sobre sintaxe e semântica para todos os comandos RMAN e descreve as visualizações de banco de dados disponíveis para relatórios sobre atividades de backup e recuperação.
 
 ### SQL Server {#sql-server}
 
@@ -130,11 +134,11 @@ O SQL Server também fornece duas ferramentas de backup e recuperação:
 * SQL Server Management Studio (GUI)
 * T-SQL (linha de comando)
 
-Para obter mais informações, consulte [Backup and Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Para obter mais informações, consulte [Backup e restauração](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
-Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco de dados MySQL para ser executado no modo de log binário. (Consulte [Registro binário do MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Uma ferramenta de backup em funcionamento para MySQL também está disponível no software InnoBase. (Consulte [Innobase Hot Backup](https://www.innodb.com/hot-backup/features.md).)
+Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco de dados MySQL para ser executado no modo de log binário. (Consulte [Registro binário do MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Uma ferramenta de hot backup para MySQL também está disponível no software InnoBase. (Consulte [Innobase Hot Backup](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >
@@ -142,9 +146,9 @@ Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco
 >
 >`binlog_format=mixed log-bin=logname`
 
-Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. São necessários backups completos, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, certifique-se de iniciar o servidor com a opção - `log-bin` conforme descrito na seção anterior. Cada vez que o servidor MySQL é reiniciado, ele para de escrever no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. Você pode forçar um switch manualmente com o comando `FLUSH LOGS SQL`. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o comando `flush-logs`, que cria o próximo arquivo de log.
+Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. São necessários backups completos, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, certifique-se de iniciar o servidor com o - `log-bin` conforme descrito na seção anterior. Cada vez que o servidor MySQL é reiniciado, ele para de escrever no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. Você pode forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` , que cria o próximo arquivo de log.
 
-Consulte [Resumo da Estratégia de Backup](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
+Consulte [Resumo da estratégia de backup](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
 ```as3
 binlog_format=mixed 
@@ -159,7 +163,7 @@ O diretório raiz do armazenamento de conteúdo contém o repositório Content S
 
 O diretório raiz do armazenamento de conteúdo é criado quando o Content Services (obsoleto) é instalado. A localização do diretório raiz do armazenamento de conteúdo é determinada durante o processo de instalação dos formulários AEM.
 
-O local padrão do diretório Raiz do Armazenamento de Conteúdo é *[aem-forms root]*/lccs_data.
+O local padrão do diretório raiz do armazenamento de conteúdo é *[raiz do aem-forms]*/lccs_data.
 
 Faça backup dos seguintes diretórios localizados no diretório raiz do armazenamento de conteúdo:
 
@@ -177,11 +181,11 @@ Se o diretório /backup-lucene-indexes não estiver presente, faça backup do di
 
 Quando você instala os Serviços de conteúdo (obsoletos) em um ambiente em cluster, o diretório Raiz do armazenamento de conteúdo é dividido em dois diretórios separados:
 
-**Diretório raiz do armazenamento de conteúdo:** normalmente, um diretório de rede compartilhado que é acessível para leitura/gravação para todos os nós no cluster
+**Diretório raiz do armazenamento de conteúdo:** Normalmente, um diretório de rede compartilhado que é acessível para leitura/gravação para todos os nós no cluster
 
-**Diretório raiz de índice:**  um diretório criado em cada nó no cluster, sempre com o mesmo caminho e nome de diretório
+**Diretório raiz de índice:** Um diretório criado em cada nó no cluster, sempre com o mesmo caminho e nome de diretório
 
-O local padrão do diretório Raiz do Armazenamento de Conteúdo é *[Raiz GDS]*/lccs_data, onde *[Raiz GDS]* é o local descrito em [Localização GDS](files-back-recover.md#gds-location). Faça backup dos seguintes diretórios localizados no diretório raiz do armazenamento de conteúdo:
+O local padrão do diretório raiz do armazenamento de conteúdo é *[Raiz GDS]*/lccs_data, onde *[Raiz GDS]* é o local descrito em [Localização GDS](files-back-recover.md#gds-location). Faça backup dos seguintes diretórios localizados no diretório raiz do armazenamento de conteúdo:
 
 /audit.contentstore
 
@@ -193,7 +197,7 @@ O local padrão do diretório Raiz do Armazenamento de Conteúdo é *[Raiz GDS]*
 
 Se o diretório /backup-lucene-indexes não estiver presente, faça backup do diretório /lucene-indexes, também localizado no diretório raiz do armazenamento de conteúdo. Se o diretório /backup-lucene-indexes estiver presente, não faça backup do diretório /lucene-indexes porque pode causar erros.
 
-O local padrão do diretório Raiz de Índice é *[aem-forms root]*/lucene-indexes em cada nó.
+O local padrão do diretório Raiz de Índice é *[raiz do aem-forms]*/lucene-indexes em cada nó.
 
 ## Fontes instaladas pelo cliente {#customer-installed-fonts}
 
@@ -201,6 +205,6 @@ Se você instalou fontes adicionais no seu ambiente de formulários AEM, é nece
 
 >[!NOTE]
 >
->Por padrão, as fontes do Adobe instaladas com AEM formulários estão localizadas no diretório [aem-forms root]/fonts.
+>Por padrão, as fontes do Adobe instaladas com AEM formulários estão localizadas na variável [raiz do aem-forms]diretório /fonts.
 
 Se você estiver reinicializando o sistema operacional no computador host e quiser usar fontes do sistema operacional anterior, o conteúdo do diretório de fontes do sistema também deverá ser copiado em backup. (Para obter instruções específicas, consulte a documentação do seu sistema operacional).

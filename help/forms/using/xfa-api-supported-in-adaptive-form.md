@@ -1,23 +1,26 @@
 ---
 title: Suporte XFA em formulários adaptáveis baseados em XDP
-seo-title: Suporte XFA em formulários adaptáveis baseados em XDP
+seo-title: XFA support in XDP-based adaptive forms
 description: Lista eventos XFA, propriedades, scripts e validação suportados em formulários adaptáveis.
-seo-description: Lista eventos XFA, propriedades, scripts e validação suportados em formulários adaptáveis.
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 86596819-8108-409e-af14-4634e8a1959d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 7%
+source-wordcount: '719'
+ht-degree: 6%
 
 ---
 
-
 # Suporte XFA em formulários adaptáveis baseados em XDP {#xfa-support-in-xdp-based-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -33,7 +36,7 @@ Este artigo lista eventos, propriedades e validações XFA compatíveis honrados
 
 ## Elementos XFA suportados e mapeamento em formulários adaptáveis {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
-### Fields {#fields}
+### Campos {#fields}
 
 Quando um formulário adaptável é criado usando um arquivo XDP, você pode arrastar e soltar um campo XFA no formulário adaptável. A tabela a seguir lista como os campos XFA são mapeados para campos de formulário adaptáveis.
 
@@ -57,7 +60,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
   </tr>
   <tr>
    <td><p>Campo de data/hora </p> </td> 
-   <td><p>Seletor de datas</p> </td> 
+   <td><p>Seletor de data</p> </td> 
   </tr>
   <tr>
    <td><p>Scribble de assinatura</p> </td> 
@@ -153,7 +156,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade value no Formulário adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>itens<em> (Caixa de Listagem, Caixa de Seleção)</em></p> </td> 
+   <td><p>items<em> (Caixa De Listagem, Caixa De Seleção)</em></p> </td> 
    <td><p>Mapeado para a propriedade options no formulário adaptável. É possível substituí-lo usando a expressão Options .</p> </td> 
   </tr>
   <tr>
@@ -161,7 +164,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade Máximo de caracteres permitidos no formulário adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>várias linhas<em> (Campo de texto)</em></p> </td> 
+   <td><p>multiline<em> (Campo de texto)</em></p> </td> 
    <td><p>Mapeado para a propriedade Permitir várias linhas no formulário adaptável.</p> </td> 
   </tr>
   <tr>
@@ -173,7 +176,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade de dígitos de lead na forma adaptável.</p> </td> 
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Caixa de Listagem)</em></p> </td> 
+   <td><p>multiSelect<em> (Caixa de listagem)</em></p> </td> 
    <td><p>Mapeado para a propriedade Permitir várias seleções no formulário adaptável.</p> </td> 
   </tr>
  </tbody>
@@ -203,10 +206,10 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
   </tr>
   <tr>
    <td><p>validationState </p> </td> 
-   <td><p>Este script é executado no tempo de execução e não pode ser substituído na forma adaptável.<br /> </p> </td> 
+   <td><p>Esse script é executado no tempo de execução e não pode ser substituído na forma adaptável.<br /> </p> </td> 
   </tr>
   <tr>
-   <td><p>exit </p> </td> 
+   <td><p>sair </p> </td> 
    <td><p>Esse script é executado no tempo de execução e não pode ser substituído na forma adaptável.</p> </td> 
   </tr>
   <tr>
@@ -268,4 +271,3 @@ A tabela a seguir captura como as validações XFA mapeiam para validações em 
 >[!NOTE]
 >
 >Não é possível substituir a propriedade obrigatória de botões de opção de formulário adaptáveis e grupos de caixas de seleção vinculados a botões de seleção XFA.
-

@@ -2,14 +2,19 @@
 title: Usar imagem inteligente com relação de pixels de dispositivo do lado do cliente
 description: Saiba como usar a Proporção de pixels de dispositivo do lado do cliente com imagens inteligentes no Adobe Experience Manager as a Cloud Service com Dynamic Media.
 role: Admin,User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
 # Sobre a Smart Imaging com DPR (Device Pixel Ratio, rácio de pixels de dispositivo) do lado do cliente {#client-side-dpr}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A solução atual de Smart Imaging usa strings do agente do usuário para determinar o tipo de dispositivo (desktop, tablet, móvel e assim por diante) que está sendo usado.
 
@@ -69,3 +74,4 @@ Os arquivos JavaScript a seguir no download são fornecidos somente como referê
 >[!MORELIKETHIS]
 >
 >* [Imagem inteligente](/help/assets/imaging-faq.md)
+

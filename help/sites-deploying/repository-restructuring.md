@@ -11,14 +11,18 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
 # Reestruturação do repositório no AEM 6.4{#repository-restructuring-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -44,7 +48,7 @@ Ao planejar uma atualização para o AEM 6.4, as seguintes páginas por soluçã
 
 * [Restruturação do repositório comum a todas as soluções AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [reestruturação de repositório AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [reestruturação de repositório AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
+* [reestruturação de repositório AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
 * [Reestruturação de repositório AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [reestruturação de repositório AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [reestruturação de repositório AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)

@@ -1,7 +1,7 @@
 ---
-title: Componentes fundamentais
+title: Componentes básicos
 seo-title: Foundation Components
-description: Componentes fundamentais
+description: Componentes básicos
 seo-description: null
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
@@ -12,22 +12,26 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: c85e442a-eb24-4eda-a49b-089e5988150d
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6642'
-ht-degree: 78%
+source-wordcount: '6678'
+ht-degree: 8%
 
 ---
 
-# Componentes fundamentais{#foundation-components}
+# Componentes básicos{#foundation-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Esta seção aborda os componentes fundamentais, que estão disponíveis com o AEM para várias versões e estão disponíveis prontamente em uma configuração padrão do AEM. No entanto, vários componentes fundamentais foram descontinuados com o AEM 6.4.
+>Esta seção aborda os componentes fundamentais, que foram disponibilizados com AEM para várias versões e estão disponíveis prontamente em uma instalação AEM padrão. No entanto, vários componentes fundamentais foram descontinuados com o AEM 6.4.
 >
 >A Adobe recomenda o aproveitamento dos recursos mais modernos e extensíveis [componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). Eles fazem parte do [Conteúdo de amostra We.Retail](/help/sites-developing/we-retail.md) e também pode [instalados separadamente e utilizados para o desenvolvimento](https://helpx.adobe.com/experience-manager/core-components/using/using.html) pelo administrador.
 
-Os componentes fundamentais foram projetados para uso ao criar conteúdo autoral em uma página da Web padrão. Eles formam um subconjunto de componentes disponíveis out-of-the-box em uma instalação padrão do AEM.
+Os componentes fundamentais foram projetados para uso durante a criação de conteúdo em uma página da Web padrão. Eles formam um subconjunto dos componentes disponíveis prontamente para uma instalação padrão de AEM.
 
 Alguns estão imediatamente disponíveis por meio do navegador de componentes, vários outros também estão disponíveis usando [modo de design](/help/sites-authoring/default-components-designmode.md) (se a página for baseada em um modelo estático) ou [editar o modelo](/help/sites-authoring/templates.md) (se a página for baseada em um modelo editável).
 
@@ -35,32 +39,32 @@ O uso de componentes fundamentais é suportado, mas eles foram substituídos por
 
 >[!NOTE]
 >
->Esta seção discute somente os componentes que estão disponíveis out-of-the-box em uma instalação padrão do AEM.
+>Esta seção discute apenas os componentes que estão disponíveis prontamente em uma instalação padrão do AEM.
 >
->Dependendo do seu caso, você pode ter componentes personalizados desenvolvidos explicitamente para as suas necessidades. Eles podem até ter o mesmo nome que alguns dos componentes discutidos aqui.
+>Dependendo do seu caso, você pode ter componentes personalizados desenvolvidos explicitamente para suas necessidades. Eles podem até ter o mesmo nome de alguns dos componentes discutidos aqui.
 
-Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página](/help/sites-authoring/editing-content.md).
+Os componentes estão disponíveis no **Componentes** guia do painel lateral do editor de páginas ao [edição de uma página](/help/sites-authoring/editing-content.md).
 
-Você pode selecionar um componente e arrastá-lo para o local desejado na sua página. Em seguida, você pode editar usando:
+Você pode selecionar um componente e arrastá-lo para o local desejado na página. Em seguida, você pode editá-lo usando:
 
 * [Configurar propriedades](/help/sites-authoring/editing-page-properties.md)
 * [Editar conteúdo](/help/sites-authoring/editing-content.md)
 * [Editar conteúdo - Modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Os componentes são classificados de acordo com as várias categorias chamadas grupos de componentes, incluindo:
+Os componentes são classificados de acordo com várias categorias chamadas grupos de componentes, incluindo:
 
-* [Geral:](#general) inclui componentes básicos, como texto, imagens, tabelas e gráficos.
-* [Colunas:](#columns) inclui os componentes necessários para organizar o layout do conteúdo.
-* [Formulário:](#form) inclui todos os componentes necessários para criar um formulário.
+* [Geral](#general): Inclui componentes básicos, como texto, imagens, tabelas e gráficos.
+* [Colunas](#columns): Inclui componentes necessários para organizar o layout do conteúdo.
+* [Formulário](#form): Inclui todos os componentes necessários para criar um formulário.
 
 ## Geral {#general}
 
-Os componentes Gerais são os componentes básicos usados na criação de conteúdo.
+Os componentes Gerais são os componentes básicos usados para criar conteúdo.
 
-### Item de conta {#account-item}
+### Item da conta {#account-item}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em vez disso.
 
 Você pode definir um link com título e descrição.
 
@@ -71,18 +75,18 @@ Você pode definir um link com título e descrição.
 >[!CAUTION]
 >Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componente de imagem dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) em vez disso.
 
-O componente de base da Imagem adaptativa gera imagens que são dimensionadas para caber na janela na qual a página da Web está aberta. Para usar o componente, você fornece um recurso de imagem do sistema de arquivos ou DAM. Quando a página da Web está aberta, o navegador baixa uma cópia da imagem que foi redimensionada para que seja adequada à janela atual.
+O componente de base da Imagem adaptativa gera imagens que são dimensionadas para caber na janela em que a página da Web é aberta. Para usar o componente, você fornece um recurso de imagem do sistema de arquivos ou do DAM. Quando a página da Web é aberta, o navegador baixa uma cópia da imagem que foi redimensionada para que seja adequada à janela atual.
 
-As características seguintes podem determinar o tamanho da janela:
+As seguintes características podem determinar o tamanho da janela:
 
-* Tela do dispositivo: os dispositivos móveis geralmente exibem as páginas da Web, para que estendem-se por toda a tela.
-* Tamanho da janela do navegador da Web: os usuários de laptop e desktop podem redimensionar as janelas do navegador da Web.
+* Tela do dispositivo: Dispositivos móveis geralmente exibem páginas da Web, de modo que se estendem por toda a tela.
+* Tamanho da janela do navegador da Web: Os usuários de laptop e desktop podem redimensionar as janelas do navegador da Web.
 
-Por exemplo, o componente gera uma imagem pequena, quando a página da Web é aberta em um telefone celular e, uma imagem de tamanho médio quando é aberta em um tablet. Em um laptop, o componente cria e oferece uma imagem grande, quando a página é aberta em um navegador da Web maximizado. Quando o navegador da Web é redimensionado para caber em uma parte da tela, o componente se adapta, fornecendo uma imagem menor e, atualiza a visualização.
+Por exemplo, o componente gera uma imagem pequena quando a página da Web é aberta em um telefone celular e uma imagem de tamanho médio quando é aberta em um tablet. Em um laptop, o componente cria e fornece uma imagem grande quando a página é aberta em um navegador da Web maximizado. Quando o navegador da Web é redimensionado para caber em uma parte da tela, o componente se adapta, fornecendo uma imagem menor e atualizando a visualização.
 
 #### Formatos de imagem suportados {#supported-image-formats}
 
-Você pode usar os arquivos de imagem das seguintes extensões de nome de arquivo com o componente da Imagem adaptativa:
+Você pode usar arquivos de imagem das seguintes extensões de nome de arquivo com o componente Imagem adaptativa :
 
 * .jpg
 * .jpeg
@@ -93,34 +97,34 @@ Você pode usar os arquivos de imagem das seguintes extensões de nome de arquiv
 >
 >&amp;ast;&amp;ast; Arquivos .gif animados não são aceitos no AEM para representações adaptáveis.
 
-#### Tamanhos e qualidade de imagens {#images-sizes-and-quality}
+#### Tamanhos e qualidade das imagens {#images-sizes-and-quality}
 
-A tabela a seguir lista a largura da imagem que é gerada para a largura da janela de exibição fornecida. A altura da imagem gerada é calculada para manter uma proporção do aspecto constante e, nenhum espaço em branco ocorre dentro da borda da imagem. O comando Recortar pode ser usado para evitar espaços em branco.
+A tabela a seguir lista a largura da imagem gerada para a largura da janela de visualização fornecida. A altura da imagem gerada é calculada para manter uma proporção de aspecto constante e nenhum espaço em branco ocorre dentro da borda da imagem. O comando Recortar pode ser usado para evitar espaços em branco.
 
-Quando a imagem é uma imagem JPEG, o tamanho do visor também pode influenciar a qualidade de JPEG. As seguintes qualidades de JPEG são possíveis:
+Quando a imagem é uma imagem JPEG, o tamanho do visor também pode influenciar a qualidade do JPEG. As seguintes qualidades de JPEG são possíveis:
 
 * Baixa (0,42)
-* Média (0,82)
+* Médio (0,82)
 * Alta (1,00)
 
-| Limite de largura do visor (pixels) | Largura da imagem (pixels) | Qualidade JPEG | Tipo de dispositivo de destino |
+| Intervalo de largura da janela de visualização (pixels) | Largura da imagem (pixels) | Qualidade JPEG | Tipo de dispositivo de destino |
 |---|---|---|---|
-| largura &lt;= 319 | 320 | low |  |
-| largura = 320 | 320 | médio | Telefone móvel (retrato) |
+| largura &lt;= 319 | 320 | baixa |  |
+| largura = 320 | 320 | médio | Telefone celular (retrato) |
 | 320 &lt; largura &lt; 481 | 480 | médio | Telefone móvel (paisagem) |
-| 480 &lt; largura &lt; 769 | 476 | alto | Tablet (retrato) |
-| 768 &lt; largura &lt; 1025 | 620 | alto | Tablet (paisagem) |
-| largura &lt;= 1025 | completo (tamanho original) | alto | Área de trabalho |
+| 480 &lt; largura &lt; 769 | 476 | alta | Comprimido (retrato) |
+| 768 &lt; largura &lt; 1025 | 620 | alta | Tablet (paisagem) |
+| largura &lt;= 1025 | full (tamanho original) | alta | Desktop |
 
 #### Propriedades {#properties}
 
-A caixa de diálogo permite editar as propriedades da sua instância do componente de Imagem adaptativa, muitas das quais são comuns com o componente de imagem na qual são baseadas. As propriedades estão disponíveis em duas guias:
+A caixa de diálogo permite editar as propriedades da sua instância do componente de Imagem adaptativa, muitas das quais são comuns com o componente de Imagem na qual são baseadas. As propriedades estão disponíveis em duas guias:
 
 * **Imagem**
 
    * **Imagem**
 
-      Arraste uma imagem do localizador de conteúdo ou clique para abrir uma janela de navegação, onde é possível carregar uma imagem. Depois que a imagem é carregada, você pode recortar a imagem, girá-la ou excluí-la. Para ampliar e reduzir a imagem, use a barra de rolagem abaixo da imagem (acima dos botões OK e Cancelar)
+      Arraste uma imagem do localizador de conteúdo ou clique para abrir uma janela de navegação, onde é possível carregar uma imagem. Após carregar a imagem, você pode recortar a imagem, girá-la ou excluí-la. Para ampliar e reduzir a imagem, use a barra de rolagem abaixo da imagem (acima dos botões OK e Cancelar)
 
    * **Cortar**
 
@@ -128,9 +132,10 @@ A caixa de diálogo permite editar as propriedades da sua instância do componen
 
    * **Girar**
 
-      Clique em Girar repetidamente até que a imagem seja girada como desejado.
+      Clique em Girar repetidamente até que a imagem seja girada conforme desejado.
 
-   * **Apagar** Remova a imagem atual.
+   * **Limpar**
+Remova a imagem atual.
 
 * **Avançado**
 
@@ -138,9 +143,9 @@ A caixa de diálogo permite editar as propriedades da sua instância do componen
 
       O componente da Imagem adaptativa não utiliza essa propriedade.
 
-   * **Texto alternativo**
+   * **Alternar texto**
 
-      O texto alternativo para usar com a imagem.
+      O texto alternativo a ser usado para a imagem.
 
    * **Vincular ao**
 
@@ -150,9 +155,9 @@ A caixa de diálogo permite editar as propriedades da sua instância do componen
 
       O componente da Imagem adaptativa não utiliza essa propriedade.
 
-#### Estender o componente adaptável de imagem {#extending-the-adaptive-image-component}
+#### Extensão do componente de imagem adaptativa {#extending-the-adaptive-image-component}
 
-Para obter informações sobre como personalizar o componente Imagem adaptativa, consulte [Noções sobre o Componente de imagem adaptativa ](/help/sites-developing/responsive.md#using-adaptive-images).
+Para obter informações sobre como personalizar o componente Imagem adaptativa, consulte [Noções básicas sobre o componente de imagem adaptativa](/help/sites-developing/responsive.md#using-adaptive-images).
 
 ### Carrossel {#carousel}
 
@@ -163,11 +168,11 @@ O componente Carrossel permite exibir imagens associadas a páginas individuais:
 * em uma ordem especificada por você
 * com um atraso de tempo especificado por você
 
-Os controles clicáveis também permitem que o usuário alterne entre as páginas exibidas em tempo real, sob demanda. Clicar na imagem da página visível atualmente leva você para essa página. Em outras palavras, o carrossel atua como um controle de navegação.
+Os controles clicáveis também permitem que o usuário alterne entre as páginas exibidas em tempo real, sob demanda. Clicar na imagem da página visível no momento leva você para essa página. Em outras palavras, o carrossel atua como um controle de navegação.
 
 #### Propriedades {#properties-1}
 
-Estão disponíveis em duas guias:
+Eles estão disponíveis em duas guias:
 
 * **Carrossel**
 
@@ -193,18 +198,19 @@ Estão disponíveis em duas guias:
 
       Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa Avançada (todas descritas abaixo).
 
-      Observe que não importa qual o método escolhido, cada página que você incluir na sua lista deve ter uma imagem associada à página. É esta imagem que será exibida no carrossel. Caso não haja imagens para uma determinada página na opção Propriedades da página, você deve associar uma imagem à página antes de começar, caso contrário, o carrossel exibirá uma página em branco (ou na maior parte em branco). Consulte [Editar as propriedades da página](/help/sites-authoring/editing-page-properties.md).
+      Observe que não importa qual o método escolhido, cada página que você incluir na lista deve ter uma imagem associada à página. É essa imagem que será exibida no carrossel. Se não houver imagem para uma determinada página nas Propriedades da página, você deverá associar uma imagem à página antes de começar, caso contrário, o carrossel exibirá uma página em branco (ou em sua maioria em branco). Consulte [Editar as propriedades da página](/help/sites-authoring/editing-page-properties.md).
 
       Dependendo do item que você escolher, um novo painel será exibido:
 
-      * **Opções de páginas filhas**
+      * **Opções de páginas filho**
 
-         * **Página principal** Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
-      * **Opções para a lista fixa**
+         * **Página principal**
+Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
+      * **Opções de lista fixa**
 
          * **Páginas**
-Selecione uma lista de páginas. Use 
-`+` para adicionar mais entradas e os botões Para cima/Para baixo para ajustar a ordem.
+Selecione uma lista de páginas. Utilização 
+`+` para adicionar mais entradas e os botões para cima/para baixo para ajustar a ordem.
       * **Opções de pesquisa**
 
          * **Começa em**
@@ -218,9 +224,9 @@ Selecione uma lista de páginas. Use
 
          * **Notação do predicativo do Querybuilder**
 
-            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
+            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, você pode inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
 
-            Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
+            Consulte [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para uma discussão completa de expressões de query e mais exemplos.
    * **Ordenar por**
 
       Selecionar `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` no menu suspenso.
@@ -235,27 +241,27 @@ Selecione uma lista de páginas. Use
 
 >[!NOTE]
 >
->Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe os ativos digitais localizados no DAM AEM. Para obter informações, consulte [Criação de componentes personalizados do carrossel para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
+>Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe os ativos digitais localizados no DAM AEM. Para obter mais informações, consulte [Criação de componentes personalizados do carrossel para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
 ### Gráfico {#chart}
 
-O componente Gráfico permite que você adicione um gráfico de barras, de linhas o de pizza. O AEM cria um gráfico a partir dos dados fornecidos. Você fornece os dados, digitando diretamente na guia de Dados ou copiando e colando em uma planilha.
+O componente Gráfico permite adicionar um gráfico de barras, de linhas ou de pizza. AEM cria um gráfico a partir dos dados fornecidos. Você fornece dados digitando diretamente na guia Dados ou copiando e colando em uma planilha.
 
 * **Dados**
 
    * **Dados do gráfico**
 
-      Insira os dados do gráfico usando o formato CSV; o formato de Valores separados por vírgulas, usa vírgulas (“,”) como separador de campo.
+      Insira os dados do gráfico usando o formato CSV; o formato Valores separados por vírgula usa vírgulas (&quot;,&quot;) como separador de campo.
 
 * **Avançado**
 
    * **Tipo de gráfico**
 
-      Selecione a partir do gráfico de pizza, de linhas e de barras.
+      Selecione a partir do Gráfico de pizza, do Gráfico de linhas e do Gráfico de barras.
 
    * **Texto alternativo**
 
-      O texto alternativo é exibido, em vez do gráfico.
+      O texto alternativo é exibido em vez do gráfico.
 
    * **Largura**
 
@@ -265,25 +271,25 @@ O componente Gráfico permite que você adicione um gráfico de barras, de linha
 
       Altura do gráfico em pixels.
 
-O exemplo a seguir mostra um gráfico de dados seguido pelo gráfico de barras resultante:
+O exemplo a seguir mostra os dados do gráfico seguido pelo gráfico de barras resultante:
 
 ![chlimage_1-192](assets/chlimage_1-192.png) ![dc_chart_use](assets/dc_chart_use.png)
 
 >[!NOTE]
 >
->Você pode criar um controle gráfico AEM personalizado que exibe os dados localizados no JCR AEM. Para obter informações, consulte [Exibição dos dados do Adobe Experience Manager em um gráfico](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
+>Você pode criar um controle de gráfico de AEM personalizado que exibe os dados localizados no JCR AEM. Para obter mais informações, consulte [Exibição dos dados do Adobe Experience Manager em um gráfico](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
 
 ### Fragmento de conteúdo {#content-fragment}
 
-Os [Fragmentos de conteúdo](/help/sites-authoring/content-fragments.md) são criados e gerenciados como ativos independentes da página. Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
+[Fragmentos de conteúdo](/help/sites-authoring/content-fragments.md) são criados e gerenciados como ativos independentes da página. Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
 
 ### Importador de design {#design-importer}
 
-Isso permite fazer upload de um arquivo zip com um pacote de design.
+Isso permite carregar um arquivo zip contendo um pacote de design.
 
 ### Download {#download}
 
-O componente de download cria um link na página da Web selecionada para baixar um arquivo específico. Você pode arrastar um ativo do Localizador de conteúdo ou fazer o upload de um arquivo.
+O componente de download cria um link na página da Web selecionada para baixar um arquivo específico. Você pode arrastar um ativo do Localizador de conteúdo ou fazer upload de um arquivo.
 
 * **Download**
 
@@ -293,7 +299,7 @@ O componente de download cria um link na página da Web selecionada para baixar 
 
    * **Arquivo**
 
-      Arquivo disponível para download na página da Web resultante. Arraste um ativo do localizador de conteúdo ou clique na área para fazer o upload do arquivo disponível para download.
+      Arquivo disponível para download na página da Web resultante. Arraste um ativo do localizador de conteúdo ou clique na área para fazer upload do arquivo que estará disponível para download.
 
 O exemplo a seguir mostra o componente de Download no Geometrixx:
 
@@ -301,7 +307,7 @@ O exemplo a seguir mostra o componente de Download no Geometrixx:
 
 ### Externo {#external}
 
-O componente externo de integração do aplicativo (**Externo**) permite que você incorpore aplicativos externos na página do AEM usando um iframe.
+O componente externo de integração do aplicativo (**Externo**) permite que você incorpore aplicativos externos à sua página AEM usando um iframe.
 
 * **Externo**
 
@@ -319,7 +325,7 @@ O componente externo de integração do aplicativo (**Externo**) permite que voc
 
    * **Largura e altura**
 
-      Define o tamanho do iframe
+      Definir o tamanho do iframe
 
 O aplicativo externo é integrado ao sistema de parágrafo da página de AEM; por exemplo, ao usar um aplicativo Target de `https://en.wikipedia.org/wiki/Main_Page`:
 
@@ -327,18 +333,18 @@ O aplicativo externo é integrado ao sistema de parágrafo da página de AEM; po
 
 >[!NOTE]
 >
->Dependendo do caso de uso, outras opções estão disponíveis para integração de aplicativos externos, por exemplo, a [Integração de portlets](/help/sites-administering/aem-as-portal.md).
+>Dependendo do caso de uso, outras opções estão disponíveis para integração de aplicativos externos, por exemplo. o [Integração de portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em vez disso.
 
 >[!CAUTION]
 >
 >Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
-O componente Flash permite que você carregue um filme em Flash. Você pode arrastar um ativo em Flash do localizador de conteúdo para o componente ou usar a caixa de diálogo:
+O componente Flash permite carregar um filme do Flash. Você pode arrastar um ativo flash do localizador de conteúdo para o componente ou usar a caixa de diálogo:
 
 * **Flash**
 
@@ -348,11 +354,11 @@ O componente Flash permite que você carregue um filme em Flash. Você pode arra
 
    * **Tamanho**
 
-      Dimensões em pixels da área de exibição contendo o filme.
+      Dimension em pixels da área de exibição contendo o filme.
 
 * **Imagem alternativa**
 
-   Uma imagem alternativa para ser exibida
+   Uma imagem alternativa a ser mostrada
 
 * **Avançado**
 
@@ -362,15 +368,15 @@ O componente Flash permite que você carregue um filme em Flash. Você pode arra
 
    * **Modo de janela**
 
-      A forma como a janela aparece, por exemplo opaca, transparente ou como uma janela distinta (sólida).
+      Como a janela aparece, por exemplo opaca, transparente ou como uma janela distinta (sólida).
 
    * **Cor do plano de fundo**
 
-      A cor do plano de fundo selecionada a partir do gráfico de cores fornecido.
+      Uma cor de plano de fundo selecionada no gráfico de cores fornecido.
 
    * **Versão mínima**
 
-      A versão mínima do Adobe Flash Player necessária para executar o filme. O padrão é 9.0.0.
+      A versão mínima do Flash Player Adobe necessária para executar o filme. O padrão é 9.0.0.
 
    * **Atributos**
 
@@ -378,23 +384,23 @@ O componente Flash permite que você carregue um filme em Flash. Você pode arra
 
 ### Imagem {#image}
 
-O componente de imagem exibe uma imagem e texto respectivo de acordo com os parâmetros especificados.
+O componente de imagem exibe uma imagem e o texto respectivo de acordo com os parâmetros especificados.
 
-Você pode fazer upload de uma imagem, editar e manipulá-la (por exemplo, cortar, girar, adicionar link/título/texto).
+Você pode fazer upload de uma imagem, em seguida, editá-la e manipulá-la (por exemplo, recortar, girar, adicionar link/título/texto).
 
-Você pode arrastar e soltar uma imagem do [Navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser) diretamente no componente ou na caixa de diálogo [Configurar](/help/sites-authoring/editing-content.md#component-edit-dialog). Você também pode fazer upload de uma imagem na caixa de diálogo Configurar; esta caixa de diálogo também controla todas as definições e manipulações da imagem:
+Você pode arrastar e soltar uma imagem do [Navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser) diretamente no componente ou em seu [Caixa de diálogo Configurar](/help/sites-authoring/editing-content.md#component-edit-dialog). Também é possível fazer upload de uma imagem na caixa de diálogo Configurar ; essa caixa de diálogo também controla todas as definições e manipulações da imagem:
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Assim que a imagem for carregada (e não antes), você poderá usar a [edição local ](/help/sites-authoring/editing-content.md#edit-content) para cortar/girar a imagem conforme necessário:
+Assim que a imagem for carregada (e não antes), você poderá usar [edição no local](/help/sites-authoring/editing-content.md#edit-content) para cortar/girar a imagem conforme necessário:
 
 ![](do-not-localize/chlimage_1-14.png)
 
 >[!NOTE]
 >
->O editor local usa o tamanho e a proporção original da imagem durante a edição. Você também pode especificar as propriedades de altura e largura. Qualquer restrição de tamanho e aspecto definida nas propriedades será aplicada ao salvar as alterações de edição.
+>O editor local usa o tamanho e a proporção original da imagem durante a edição. Também é possível especificar as propriedades de altura e largura. Qualquer restrição de tamanho e aspecto definida nas propriedades será aplicada ao salvar as alterações de edição.
 >
->Dependendo do seu caso, restrições mínimas e máximas também podem ser impostas pelo [design da página ](/help/sites-developing/designer.md); estas são desenvolvidas durante a implementação do projeto.
+>Dependendo do seu caso, restrições mínimas e máximas também podem ser impostas pelo [design da página](/help/sites-developing/designer.md); são desenvolvidos durante a implementação do projeto.
 
 Várias opções adicionais estão disponíveis no modo de edição de tela cheia; por exemplo, mapa e zoom:
 
@@ -402,9 +408,9 @@ Várias opções adicionais estão disponíveis no modo de edição de tela chei
 
 >[!NOTE]
 >
->O progresso do upload não pode ser monitorado com o Internet Explorer.
+>O progresso do carregamento não pode ser monitorado com o Internet Explorer.
 >
->Os usuários do Internet Explorer precisam fazer upload da imagem e clique em **Ok** e abra novamente a imagem para ver o arquivo carregado na visualização e para poder realizar as modificações (isto é, cortar).
+>Os usuários do Internet Explorer precisam fazer upload da imagem e clicar em **Ok** em seguida, abra novamente a imagem para ver o arquivo carregado na visualização e para poder executar modificações (ou seja, cortar).
 >
 >Consulte a [Plataformas compatíveis](/help/release-notes/release-notes.md#supported-platforms) para obter mais informações sobre os recursos do HTML5 usados pelo AEM.
 
@@ -412,7 +418,7 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
 * **Mapa**
 
-   Para mapear uma imagem, selecione Mapa. É possível selecionar como deseja criar o mapa de imagem (retângulo, polígono e assim por diante) e especificar para onde a área deve apontar.
+   Para mapear uma imagem, selecione Mapa. Você pode especificar como deseja criar o mapa de imagem (retângulo, polígono e assim por diante) e para onde a área deve apontar.
 
 * **Cortar**
 
@@ -420,7 +426,7 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
 * **Girar**
 
-   Para girar uma imagem, selecione Girar. Clique repetidamente até que a imagem seja girada da maneira que desejar.
+   Para girar uma imagem, selecione Girar. Use repetidamente até que a imagem seja girada da maneira que desejar.
 
 * **Limpar**
 
@@ -430,7 +436,7 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
    O título da imagem.
 
-* **Texto alternativo**
+* **Alternar texto**
 
    Um texto alternativo para usar na criação de conteúdo acessível.
 
@@ -440,7 +446,7 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
 * **Descrição**
 
-   A descrição da imagem.
+   Uma descrição da imagem.
 
 * **Tamanho**
 
@@ -450,38 +456,38 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 >
 >Algumas opções só estão disponíveis no editor de tela cheia.
 
-A imagem final (com **Título** e **Descrição**) pode ser mostrada como:
+A imagem final (com **Título** e **Descrição**) pode ser exibido como:
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### Contêiner de layout {#layout-container}
 
-Este componente fornece um sistema de parágrafo que usa grades, para que você possa adicionar e posicionar componentes dentro de uma [grade responsiva ](/help/sites-authoring/responsive-layout.md). Isso permite definir diferentes layouts de conteúdo com base na largura dos dispositivos de destino, incluindo uma variedade de telefones, tablets e áreas de trabalho. 
+Este componente fornece um sistema de parágrafo de grade para que você possa adicionar e posicionar componentes em um [grade responsiva](/help/sites-authoring/responsive-layout.md). Isso permite definir diferentes layouts de conteúdo com base na largura dos dispositivos de destino, incluindo uma variedade de telefones, tablets e desktops.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 >[!NOTE]
 >
->Este componente foi implementado com [Linguagem do modelo HTML (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html).
+>Este componente foi implementado com [Linguagem de modelo do HTML (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html).
 
 ### Lista {#list}
 
-O componente de Lista permite que você configure os critérios de pesquisa para a exibição de uma lista:
+O componente Lista permite que você configure critérios de pesquisa para exibir uma lista:
 
 * **Lista**
 
    * **Criar uso da lista**
 
-      Aqui, você especifica em qual lista recuperará o conteúdo. Existem vários métodos:
+      Aqui, você especifica onde a lista recuperará seu conteúdo. Existem vários métodos:
 
    * Dependendo do item que você escolher, um novo painel será exibido:
 
-      * **Opções de páginas filhas**
+      * **Opções de páginas filho**
 
          * **Filhos de** (Página principal)
 
             Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
-      * **Opções para a lista fixa**
+      * **Opções de lista fixa**
 
          * **Páginas**
 
@@ -499,19 +505,19 @@ O componente de Lista permite que você configure os critérios de pesquisa para
 
          * **Notação do predicativo do Querybuilder**
 
-            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
+            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, você pode inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
 
-            Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
+            Consulte [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para uma discussão completa de expressões de query e mais exemplos.
       * **Tags**
 
-         Especifique a **página principal**, **tags/palavras-chave** e critérios de correspondência.
+         Especifique a **Página principal**, **Tags/Palavras-chave** e os critérios de correspondência necessários.
    * **Exibir como**
 
-      A forma como deseja que os itens sejam listados; inclui links, teasers e notícias.
+      Como deseja que os itens sejam listados; inclui links, teasers e notícias.
 
    * **Ordenar por**
 
-      Caso a lista deva ser ordenada, e, se assim for, os critérios a serem usados para a classificação. Você pode inserir um critério ou selecionar um da lista suspensa fornecida.
+      Se a lista deve ser ordenada e, se assim for, os critérios a serem usados para a classificação. Você pode inserir um critério ou selecionar um na lista suspensa fornecida.
 
    * **Limite**
 
@@ -523,21 +529,21 @@ O componente de Lista permite que você configure os critérios de pesquisa para
 
    * **Paginar após**
 
-      Aqui, você pode especificar o número de itens da lista para serem exibidos ao mesmo tempo. Uma lista com mais itens do que o especificado usará a paginação para exibir a lista em várias porções.
+      Aqui, você pode especificar o número de itens da lista a serem exibidos ao mesmo tempo. Uma lista com mais itens do que o especificado usará a paginação para exibir a lista em várias porções.
 
 
 
 
 
 
-O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá exibir uma lista de páginas filhas (o design é controlado pelas definições CSS personalizadas do site).
+O exemplo a seguir mostra um **Lista** O componente da forma como ele pode exibir uma lista de páginas filhas (o design é controlado pelas definições CSS personalizadas de um design de site).
 
 ![dc_list_use](assets/dc_list_use.png)
 
 ### Logon {#login}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em vez disso.
 
 >[!CAUTION]
 >
@@ -547,9 +553,9 @@ Fornece os campos Nome de usuário e Senha.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-É possível configurar:
+Você pode configurar:
 
-* Logon
+* Fazer Logon
 
    * Rótulo da seção
 
@@ -571,7 +577,7 @@ Fornece os campos Nome de usuário e Senha.
 
       Você pode especificar a página em seu site que deve ser aberta assim que o usuário fizer logon.
 
-* Já está conectado
+* Já está conectado.
 
    * Continuar a etiqueta do botão
 
@@ -601,15 +607,15 @@ Fornece os campos Nome de usuário e Senha.
 
 ### Referência {#reference}
 
-O componente de **referência** permite referenciar o texto em outra página do site AEM (dentro da ocorrência atual). O conteúdo do parágrafo referenciado aparecerá como se fosse na página atual. O conteúdo será atualizado quando o parágrafo de origem for alterado (pode ser necessário uma atualização de página).
+O **Referência** permite referenciar o texto de outra página do site da AEM (na instância atual). O conteúdo do parágrafo referenciado aparece como se fosse na página atual. O conteúdo será atualizado quando o parágrafo de origem for alterado (pode ser necessário uma atualização de página).
 
-* **Parágrafo de referência**
+* **Referência do parágrafo**
 
    * **Referência**
 
       Especifique o caminho para a página e o parágrafo que deseja referenciar (inclua o conteúdo).
 
-Para especificar o caminho para um parágrafo, você precisa colocar o caminho (para a página) como um sufixo com:
+Para especificar o caminho para um parágrafo, é necessário adicionar o caminho (para a página) ao sufixo por:
 
 `.../jcr:content/par/<paragraph-ID>`
 
@@ -617,7 +623,7 @@ Por exemplo:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par/similar-products`
 
-Além de referenciar um número específico, o caminho também pode ser modificado para especificar um sistema de parágrafo completo. Você pode fazer isso usando como sufixo o caminho com:
+Além de referenciar um parágrafo específico, o caminho também pode ser modificado para especificar um sistema de parágrafo inteiro. Você pode fazer isso usando o sufixo do caminho com:
 
 `/jcr:content/par`
 
@@ -625,18 +631,18 @@ Por exemplo:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par`
 
-Uma vez configurado, o conteúdo será exibido exatamente como na página de origem. O fato de que é uma referência só é visto quando você abre o componente para edição: 
+Após a configuração, o conteúdo será exibido exatamente como na página de origem. O fato de que é uma referência só é visto quando você abre o componente para edição:
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
 ### Pesquisar {#search-features}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de pesquisa rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componente principal de pesquisa rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html) em vez disso.
 
-O componente de pesquisa adiciona o recurso de pesquisa à sua página.
+O componente de Pesquisa adiciona o recurso de pesquisa à página.
 
-É possível configurar:
+Você pode configurar:
 
 * Pesquisar
 
@@ -650,11 +656,11 @@ O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
    * **Texto do botão de pesquisa**
 
-      O nome exibido no botão de pesquisa atual.
+      O nome exibido no botão de pesquisa real.
 
-   * **Texto de estatística**
+   * **Texto da estatística**
 
-      O texto exibido acima dos resultados de pesquisa.
+      O texto exibido acima dos resultados da pesquisa.
 
    * **Nenhum texto de resultados**
 
@@ -662,25 +668,25 @@ O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
    * **Verificar a ortografia do texto**
 
-      Caso alguém insira um termo semelhante, esse texto será exibido antes do termo.
+      Se alguém inserir um termo semelhante, esse texto será exibido antes do termo.
 
-      Por exemplo, caso digite geometrixxe, o sistema exibirá &quot;Você quer dizer? geometrixx&quot;.
+      Por exemplo, se você digitar geometrixxe, o sistema exibirá &quot;Você quer dizer? geometrixx&quot;.
 
-   * **Texto com páginas semelhantes**
+   * **Texto de páginas semelhantes**
 
-      O texto que é exibido ao lado de um resultado para as páginas semelhantes. Clique neste link para visualizar as páginas com conteúdo semelhante.
+      O texto que é exibido ao lado de um resultado para páginas semelhantes. Clique neste link para ver as páginas com conteúdo semelhante.
 
-   * **Texto com buscas relacionadas**
+   * **Texto de pesquisa relacionada**
 
       O texto que aparece ao lado das pesquisas para os termos e tópicos relacionados.
 
-   * **Pesquisar textos de tendências**
+   * **Pesquisar texto de tendências**
 
       O título acima dos termos de pesquisa inseridos pelos usuários.
 
-   * **Rótulo das páginas resultantes**
+   * **Rótulo de Páginas de Resultado**
 
-      O texto que aparece na parte inferior da lista, com links para outras páginas de resultados.
+      O texto que aparece na parte inferior da lista com links para outras páginas de resultados.
 
    * **Rótulo anterior**
 
@@ -690,11 +696,11 @@ O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
       O nome que aparece no link para as páginas de pesquisa subsequentes.
 
-O exemplo a seguir mostra o componente de Pesquisa depois de pesquisar a palavra *geometrixx* no diretório raiz de uma instalação padrão. Também ilustra a paginação dos resultados:
+O exemplo a seguir mostra o componente de Pesquisa após uma pesquisa pela palavra *geometrixx* no diretório raiz de uma instalação padrão. Isso também ilustra a paginação dos resultados:
 
 ![dc_search_use](assets/dc_search_use.png)
 
-O exemplo a seguir mostra um termo de pesquisa escrito incorretamente e não está disponível:
+O exemplo a seguir mostra um termo de pesquisa com ortografia incorreta e não disponível:
 
 ![dc_search_usenotfound](assets/dc_search_usenotfound.png)
 
@@ -707,26 +713,26 @@ Uma lista de mapa do site automático, que (com as configurações padrão) list
 
 ![dc_sitemap_use](assets/dc_sitemap_use.png)
 
-Se necessário, é possível configurar:
+Se necessário, você pode configurar:
 
 * **Mapa do site**
 
    * **Caminho raiz**
 
-      O caminho onde a lista inicia.
+      Caminho onde a listagem deve começar.
 
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componente principal do carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt-BR) em vez disso.
 
 >[!CAUTION]
 >
 >Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
-Este componente permite que você carregue uma série de imagens a serem exibidas como um slideshow em sua página. Você pode adicionar ou remover imagens e atribuí-las um título. Em Avançado, também é possível especificar o tamanho da área de exibição.
+Este componente permite que você carregue uma série de imagens a serem exibidas como um slideshow em sua página. Você pode adicionar ou remover imagens e atribuir cada uma a um título. Em Avançado , também é possível especificar o tamanho da área de exibição.
 
-É possível configurar:
+Você pode configurar:
 
 * **Slides**
 
@@ -744,27 +750,27 @@ Este componente permite que você carregue uma série de imagens a serem exibida
 
       Especifique a largura e a altura em pixels.
 
-O componente de slideshow exibe repetidamente em cada sequência, durante um curto período de tempo, antes de esmaecer para o próximo slide:
+O componente de slideshow exibe repetidamente em cada sequência, por um curto período de tempo, antes de esmaecer para o próximo slide:
 
 ![dc_slideshow_use](assets/dc_slideshow_use.png)
 
 ### Tabela {#table}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) em vez disso.
 
 >[!NOTE]
 >
->O componente de **Tabela** baseia-se no [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md), já que é o componente de **[Texto](#text)**.
+>O **Tabela** O componente é baseado na variável [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md), como está no **[Texto](#text)** componente.
 >
->Recomenda-se usar o componente de **Tabela** para tabelas, embora também possam ser construídas com o componente de **Texto**.
+>É recomendável usar a variável **Tabela** componente para tabelas, embora também possam ser construídas com a variável **Texto** componente.
 
-O componente de **Tabela** é pré-configurado para permitir a você construir, preencher e formatar uma tabela. Usando a caixa de diálogo, você pode configurar a sua tabela e criar o conteúdo da seguinte maneira:
+O **Tabela** é pré-configurado para permitir construir, preencher e formatar uma tabela. Usando a caixa de diálogo, é possível configurar a tabela e criar o conteúdo da seguinte maneira:
 
-* desde o início
-* copiando e colando uma planilha ou uma tabela em um editor externo (como Excel, OpenOffice, Bloco de notas, etc).
+* do zero
+* copiando e colando uma planilha ou uma tabela de um editor externo (como Excel, OpenOffice, Bloco de notas, etc.).
 
-É possível fazer alterações básicas ao conteúdo usando um editor em linha:
+Você pode fazer alterações básicas no conteúdo usando o editor em linha:
 
 ![dc_table](assets/dc_table.png)
 
@@ -772,7 +778,7 @@ No modo de tela cheia, é possível configurar o layout da tabela:
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-A captura de tela a seguir mostra um exemplo do uso do componente de tabela; o design é determinado pelo CSS específico do site:
+A captura de tela a seguir mostra um exemplo do componente de tabela; o design é determinado pelo CSS específico do site:
 
 ![dc_table_use](assets/dc_table_use.png)
 
@@ -782,7 +788,7 @@ Uma nuvem de tags mostra uma seleção apresentada graficamente das tags aplicad
 
 ![dc_tagclouduse](assets/dc_tagclouduse.png)
 
-Ao configurar o componente de Nuvem de tags, você pode especificar:
+Ao configurar o componente Nuvem de tags, você pode especificar:
 
 * **Tags a exibir**
 
@@ -796,46 +802,46 @@ Ao configurar o componente de Nuvem de tags, você pode especificar:
 
    Se as tags exibidas devem agir como links.
 
-Para obter mais informações sobre como aplicar tags, acesse [Usando tags ](/help/sites-authoring/tags.md).
+Para obter mais informações sobre como aplicar tags, visite [Uso de tags](/help/sites-authoring/tags.md).
 
 ### Texto {#text}
 
 >[!NOTE]
 >
->O componente de **Texto** baseia-se no [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md), já que é o componente de **[Tabela](#table)**.
+>O **Texto** O componente é baseado na variável [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md), como está no **[Tabela](#table)** componente.
 >
->Recomenda-se usar o componente de **Tabela** para tabelas, embora também possam ser construídas com o componente de **Texto**.
+>É recomendável usar a variável **Tabela** componente para tabelas, embora também possam ser construídas com a variável **Texto** componente.
 
-O componente de Texto permite que você insira um bloco de texto usando um editor WYSIWYG, com funcionalidade fornecida pelo [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md). Uma seleção de ícones permite que você formate o texto, incluindo características da fonte, alinhamento, links, listas e recuo.
+O componente de Texto permite que você insira um bloco de texto usando um editor WYSIWYG, com a funcionalidade fornecida pelo [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md). Uma seleção de ícones permite que você formate o texto, incluindo características da fonte, alinhamento, links, listas e recuo.
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
 Ao abrir o **Configurar** você também pode definir:
 
 * **Espaçador**
-* **Estilo de texto**
+* **Estilo do texto**
 
-O texto formatado será exibido na página; o design atual dependerá do CSS do site:
+O texto formatado será então exibido na página; o design real dependerá do CSS do site:
 
 ![dc_text_use](assets/dc_text_use.png)
 
-Para obter informações mais detalhadas sobre o componente de texto, consulte a página do [Editor de Rich Text.](/help/sites-authoring/rich-text-editor.md)
+Para obter informações mais detalhadas sobre o componente de Texto e a funcionalidade fornecida pelo Editor de Rich Text, consulte o [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md) página.
 
-#### Edição local {#inplace-editing}
+#### Edição no local {#inplace-editing}
 
-Além do texto da caixa de diálogo baseada no modo de edição de Rich Text, o AEM também oferece a [edição no local](/help/sites-authoring/editing-content.md), que permite a edição direta do texto da forma como é exibido no layout da página.
+Além do modo de edição Rich Text baseado na caixa de diálogo, o AEM também fornece [Edição no local](/help/sites-authoring/editing-content.md), que permite a edição direta do texto da forma como ele é exibido no layout da página.
 
 ### Texto e imagem {#text-image}
 
-O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você também pode adicionar e editar texto e imagens separadamente. Consulte os componentes [Texto](#text) e [Imagem](#image) para obter detalhes.
+O componente Texto e imagem adiciona um bloco de texto e uma imagem. Você também pode adicionar e editar texto e imagens separadamente. Consulte a [Texto](#text) e [Imagem](#image) componentes para obter detalhes.
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-É possível configurar:
+Você pode configurar:
 
 * **Estilos de componentes** (**Estilos**)
 
-   Aqui, você pode alinhar à esquerda ou à direita da imagem. O padrão é alinhamento à **Esquerda,** com a imagem à esquerda.
+   Aqui, você pode alinhar à esquerda ou à direita da imagem. O padrão é **Left** alinhado, com a imagem à esquerda.
 
 * **Propriedades da imagem** (**Propriedades avançadas de imagem**)
 
@@ -849,7 +855,7 @@ O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você ta
 
       O título do bloco; será exibido ao passar o mouse.
 
-   * **Texto alternativo**
+   * **Alternar texto**
 
       Texto alternativo a ser exibido se a imagem não puder ser exibida. Caso deixado em branco, o título será usado.
 
@@ -859,13 +865,13 @@ O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você ta
 
    * **Descrição**
 
-      A descrição da imagem.
+      Uma descrição da imagem.
 
    * **Tamanho**
 
       Define a altura e a largura da imagem.
 
-O exemplo a seguir mostra um componente de Imagem de texto exibindo a imagem alinhada à esquerda:
+O exemplo a seguir mostra um Componente de imagem de texto exibindo a imagem alinhada à esquerda:
 
 ![dc_textimage_use](assets/dc_textimage_use.png)
 
@@ -873,19 +879,21 @@ O exemplo a seguir mostra um componente de Imagem de texto exibindo a imagem ali
 
 O componente de título pode:
 
-* exibir o nome da página atual; isso pode ser feito ao deixar o campo Título em branco
-* exibir um texto que você especificar no campo Título.
+* exibir o nome da página atual; isso é feito ao deixar o campo Título em branco
+* exibir um texto especificado no campo Título .
 
-É possível configurar:
+Você pode configurar:
 
-* **Título** Caso deseje usar um nome diferente do título da página, insira-o aqui.
+* **Título**
+Se quiser usar um nome diferente do título da página, insira-o aqui.
 
-* **Link** O URI caso o título funcione como um link.
+* **Link**
+O URI se o título deve funcionar como um link.
 
-* **Tipo/Tamanho**
+* **Tipo/tamanho**
 Selecione Pequeno ou Grande na lista suspensa. Pequeno é gerado como uma imagem. Grande é gerado como texto.
 
-O exemplo a seguir mostra um componente de **Título** sendo exibido; o design é determinado pelo CSS específico do site.
+O exemplo a seguir mostra um **Título** componente sendo exibido; o design é determinado pelo CSS específico do site.
 
 ![dc_title_use](assets/dc_title_use.png)
 
@@ -895,11 +903,11 @@ O exemplo a seguir mostra um componente de **Título** sendo exibido; o design �
 >
 >Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
-O componente de **Vídeo** permite que você coloque um elemento “out-of-the-box” de vídeo predefinido em uma página.
+O **Vídeo** permite que você coloque um elemento de vídeo predefinido e pronto para uso em uma página.
 
 Consulte também [Configurar o componente de Vídeo](/help/sites-administering/config-video.md) para uso com elementos HTML5.
 
-Depois de adicionar uma instância de componente em sua página, você pode configurar:
+Depois de colocar uma instância do componente na página, você pode configurar:
 
 * Vídeo
 
@@ -924,69 +932,69 @@ Depois de adicionar uma instância de componente em sua página, você pode conf
 
 ## Colunas {#columns}
 
-As colunas são um mecanismo para controlar o layout de conteúdo no AEM. Em uma instalação padrão, são fornecidos componentes para a criação de duas e/ou três colunas.
+As colunas são um mecanismo para controlar o layout do conteúdo no AEM. Em uma instalação padrão, são fornecidos componentes para a criação de duas e/ou três colunas.
 
-O exemplo a seguir mostra o componente de 2 colunas em uso. É possível usar os espaços reservados para os novos componentes:
+O exemplo a seguir mostra o componente de 2 colunas em uso. Você pode usar os espaços reservados para os novos componentes:
 
 ![dc_columncontroverse](assets/dc_columncontroluse.png)
 
 ### 2 colunas {#columns-1}
 
-Um componente de controle de coluna que padroniza 2 colunas iguais.
+Um componente de Controle de coluna que padroniza 2 colunas iguais.
 
 ### 3 colunas {#columns-2}
 
-Um componente de controle de coluna que padroniza 3 colunas iguais.
+Um componente de Controle de coluna que padroniza 3 colunas iguais.
 
 ### Controle de coluna {#column-control}
 
-O componente de Controle de coluna permite que os usuários escolham como dividir o conteúdo no painel principal da página da Web em várias colunas. Os usuários podem escolher o número de colunas necessárias (de uma lista predefinida) e, em seguida, criam, excluem ou movem o conteúdo dentro de cada uma das colunas.
+O componente de Controle de coluna permite que os usuários escolham como dividir o conteúdo no painel principal da página da Web em várias colunas. Os usuários podem selecionar o número de colunas necessárias (de uma lista predefinida) e, em seguida, criar, excluir ou mover o conteúdo dentro de cada uma das colunas.
 
 * **Controle de coluna**
 
    * **Layout da coluna**
 
-      Selecione o número de colunas que deseja apresentar. Depois da criação, cada coluna tem seu próprio link para arrastar componentes ou ativos aqui ao adicionar conteúdo.
+      Selecione o número de colunas que você deseja renderizar. Depois de criadas, cada coluna tem seu próprio link para arrastar componentes ou ativos ao adicionar conteúdo.
 
 ## Formulário {#form}
 
-Os componentes do formulário são usados para criar formulários para os visitantes enviarem informações. Os formulários e os componentes do formulário podem ser usado para coletar informações, incluindo o feedback do usuário (por exemplo, um questionário de satisfação do cliente) e as informações do usuário (por exemplo, o registro do usuário).
+Os componentes do formulário são usados para criar formulários para os visitantes enviarem informações. O Forms e os componentes do formulário podem ser usados para coletar informações, incluindo o feedback do usuário (por exemplo, um questionário de satisfação do cliente) e as informações do usuário (por exemplo, o registro do usuário).
 
 >[!NOTE]
 >
->Consulte [Ajuda com os AEM Forms](/help/forms/home.md) para obter informações sobre os AEM Forms.
+>Consulte [Ajuda do AEM Forms](/help/forms/home.md) para obter informações sobre o AEM Forms.
 
-Os formulários são criados de vários componentes diferentes:
+Os Forms são criados de vários componentes diferentes:
 
 * **Formulário**
 
-   O componente de formulário define o início e o fim de um novo formulário em uma página. Outros componentes podem, então, ser colocados entre esses elementos, tais como tabelas, downloads e assim por diante.
+   O componente de formulário define o início e o fim de um novo formulário em uma página. Outros componentes podem ser colocados entre esses elementos, como tabelas, downloads e assim por diante.
 
 * **Elementos e campos de formulário**
 
-   Os campos e elementos do formulário podem incluir caixas de texto, botões de opção, imagens e assim por diante. O usuário geralmente completa uma ação em um campo de formulário, como digitar um texto. Consulte os elementos de formulário individuais para obter mais informações.
+   Os campos e elementos do formulário podem incluir caixas de texto, botões de opção, imagens e assim por diante. O usuário geralmente conclui uma ação em um campo de formulário, como digitar um texto. Consulte os elementos de formulário individuais para obter mais informações.
 
 * **Componentes de perfil**
 
    Os componentes de perfil estão relacionados aos perfis de visitantes usados para a colaboração social e outras áreas onde é necessária a personalização do visitante.
 
-A seguir, há um formulário de exemplo. Ele contém o componente do **Formulário** (início e fim) com dois campos de **texto de formulário** usados para inserir, um campo de **texto geral** usado para o texto principal e um botão **Enviar.**
+A seguir, há um exemplo de formulário. Ele é composto pela variável **Formulário** componente (início e fim), com dois **Texto do formulário** campos usados para entrada, um **Texto geral** campo usado para o texto de lead e um **Enviar** botão.
 
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
 >
->Informações sobre o desenvolvimento e a personalização de seus formulários está disponível na página de [Desenvolvimento de formulários.](/help/sites-developing/developing-forms.md)Isso inclui a adição de ações e restrições, o pré-carregamento de campos e a utilização de scripts para chamar um serviço para tomar uma ação, entre outros. 
+>Informações sobre o desenvolvimento e a personalização de seus formulários estão disponíveis no [Página Desenvolvimento do Forms](/help/sites-developing/developing-forms.md). Isso inclui adicionar ações, restrições, pré-carregar campos e usar scripts para chamar um serviço para tomar uma ação, entre outros.
 
-### Configurações comuns a (diversos) componentes de formulários {#settings-common-to-many-form-components}
+### Configurações comuns a (muitos) componentes de formulário {#settings-common-to-many-form-components}
 
-Embora cada um dos componentes do formulário tenha uma finalidade diferente, muitos são compostos de opções e parâmetros similares.
+Embora cada um dos componentes do formulário tenha uma finalidade diferente, muitos são compostos de opções e parâmetros semelhantes.
 
-Ao configurar qualquer um dos componentes do formulário, as seguintes guias estarão disponíveis na caixa de diálogo:
+Ao configurar qualquer um dos componentes do formulário, as seguintes guias estão disponíveis na caixa de diálogo:
 
 * **Título e texto**
 
-   Aqui é necessário especificar informações básicas, como o título do formulário e qualquer texto que o acompanha. Se for o caso, também é possível definir outras informações importantes, como se o campo é de seleção múltipla e se os itens estão disponíveis para seleção.
+   Aqui é necessário especificar informações básicas, como o título do formulário e qualquer texto que o acompanha. Quando apropriado, também permite definir outras informações importantes, como se o campo é de seleção múltipla e se os itens estão disponíveis para seleção.
 
 * **Valores iniciais**
 
@@ -1004,13 +1012,13 @@ Ao configurar qualquer um dos componentes do formulário, as seguintes guias est
 >
 >Os campos variam muito, dependendo do componente individual.
 
-Essas guias fornecem os parâmetros necessários; estes dependem do tipo de componente individual, mas podem incluir:
+Essas guias fornecem os parâmetros necessários; eles podem depender do tipo de componente individual, mas podem incluir:
 
 * **Título e texto**
 
    * **Nome do elemento**
 
-      Nome do elemento de formulário. Indica onde os dados são armazenados no repositório.
+      Nome do elemento de formulário. Isso indica onde os dados são armazenados no repositório.
 
       Este é um campo obrigatório e deve conter apenas os seguintes caracteres:
 
@@ -1022,7 +1030,7 @@ Essas guias fornecem os parâmetros necessários; estes dependem do tipo de comp
 
    * **Descrição**
 
-      Permite fornecer informações adicionais para o usuário, se necessário. No formulário isso é exibido abaixo do campo, em uma fonte menor do que o título.
+      Permite fornecer informações adicionais para o usuário, se necessário. No formulário, isso é mostrado abaixo do campo, em uma fonte menor do que o título.
 
    * **Exibir / Ocultar**
 
@@ -1067,19 +1075,19 @@ Essas guias fornecem os parâmetros necessários; estes dependem do tipo de comp
 
 ### Formulário (componente) {#form-component}
 
-O componente Formulário define o início e o final de um formulário usando os elementos **Início do formulário** e **Fim do formulário**. São sempre pareados para garantir que o formulário esteja definido corretamente.
+O componente Formulário define o início e o fim de um formulário usando o **Início do formulário** e **Fim do formulário** elementos. Elas são sempre pareadas para garantir que o formulário esteja definido corretamente.
 
 ![dc_form-1](assets/dc_form-1.png)
 
-Entre o início e o fim de um formulário, você pode adicionar componentes do formulário que definem os campos de entrada atuais para os usuários.
+Entre o início e o fim de um formulário, é possível adicionar componentes de formulário que definem os campos de entrada reais para os usuários.
 
 >[!NOTE]
 >
->O componente de formulário dos componentes fundamentais suporta somente o uso de outros componentes de formulário dos componente fundamentais (botão, texto, oculto etc.). Não há suporte para o uso de componentes de formulário dos [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em um formulário de componente fundamental (e vice-versa).
+>O componente de formulário dos componentes fundamentais suporta apenas o uso de outros componentes de formulário dos componentes fundamentais (botão, texto, oculto, etc.). Usando [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) os componentes de formulário em um formulário de componente de base (e vice-versa) não são compatíveis.
 
 #### Início do formulário {#start-of-form}
 
-Esse componente é necessário para definir o início de um novo formulário em uma página. É possível configurar:
+Esse componente é necessário para definir o início de um novo formulário em uma página. Você pode configurar:
 
 * **Formulário**
 
@@ -1087,7 +1095,8 @@ Esse componente é necessário para definir o início de um novo formulário em 
 
       A página a ser referenciada para agradecer aos visitantes por suas informações. Caso deixado em branco, o formulário será exibido novamente após o envio.
 
-   * **Fluxo de trabalho de início** Determina qual fluxo de trabalho é acionado após o envio do formulário.
+   * **Iniciar fluxo de trabalho**
+Determina qual fluxo de trabalho é acionado após o envio do formulário.
 
 * **Avançado**
 
@@ -1095,15 +1104,15 @@ Esse componente é necessário para definir o início de um novo formulário em 
 Um formulário precisa de uma ação. A ação define a operação acionada para execução com os dados enviados pelo usuário (semelhante a action= in HTML). Alguns precisam de um 
 **Configurações de ação**.
 
-      Uma seleção de tipos de ação está incluída em uma instalação padrão do AEM:
+      Uma seleção de tipos de ação está incluída em uma instalação de AEM padrão:
 
       * **Solicitação de conta**
       * **Criar conteúdo**
-      * **Criar lead**
+      * **Criar cliente em potencial**
       * **Criar e atualizar a conta**
-      * **Serviço de email: criar assinante e adicionar à lista**
-      * **Serviço de email: enviar email de resposta automática**
-      * **Serviço de email: cancelar a inscrição do usuário da lista**
+      * **Serviço de e-mail: Criar assinante e adicionar à lista**
+      * **Servio de e-mail: enviar e-mail de resposta automática**
+      * **Serviço de e-mail: cancelar a inscrição do usuário da lista**
       * **Editar comunidade**
       * **Editar recursos**
       * **Editar recursos controlados pelo fluxo de trabalho**
@@ -1122,23 +1131,23 @@ Um formulário precisa de uma ação. A ação define a operação acionada para
       * **Atualizar a ordem**
    * **Identificador de formulário**
 
-      O identificador de formulário identifica-o. Use o identificador de formulário caso tenha vários formulários em uma única página; verifique se eles têm identificadores diferentes.
+      O identificador de formulário identifica-o exclusivamente. Use o identificador de formulário se você tiver vários formulários em uma única página; verifique se eles têm identificadores diferentes.
 
    * **Carregar caminho**
 
       O caminho para as propriedades do nó usadas para carregar valores predefinidos nos campos do formulário.
 
-      Isso é um campo opcional que especifica o caminho para um nó no repositório. Quando este nó tem propriedades que correspondem aos nomes do campo, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Caso não exista nenhuma correspondência, o campo vai conter o valor padrão.
+      Este é um campo opcional que especifica o caminho para um nó no repositório. Quando esse nó tem propriedades que correspondem aos nomes dos campos, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Se não houver correspondência, o campo conterá o valor padrão.
 
-      Com o uso do **Caminho de carga,** é possível pré-carregar o formulário com valores nos campos necessários. Consulte [Pré-carregar valores do formulário](/help/sites-developing/developing-forms.md#preloading-form-values).
+      Usando **Carregar caminho** é possível pré-carregar o formulário com valores nos campos obrigatórios. Consulte [Pré-carregar valores do formulário](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **Validação do cliente**
 
-      ** Isso pode ser obtido em conjunto com o componente **Captcha de formulários**.
+      Indica se a validação do cliente é necessária para este formulário (validação do servidor) *always* ocorre.). Isso pode ser feito juntamente com o **Forms Captcha** componente.
 
    * **Tipo de recurso de validação**
 
-      Define o tipo de recurso de validação do formulário, caso deseje validar o formulário inteiro (em vez de campos individuais). Caso esteja validando o formulário completo, inclua também um dos itens a seguir:
+      Define o tipo de recurso de validação do formulário se você quiser validar o formulário inteiro (em vez de campos individuais). Caso esteja validando o formulário completo, inclua também um dos seguintes itens:
 
       * Um script de validação do cliente:
 
@@ -1160,7 +1169,7 @@ Um formulário precisa de uma ação. A ação define a operação acionada para
 
          * Caminho do conteúdo
 
-            O caminho do conteúdo para qualquer conteúdo que o formulário acumule. Insira um caminho terminado por uma barra `/`. A barra significa que para cada porta de formulário, um novo nó é criado no local indicado; por exemplo:
+            O caminho do conteúdo para qualquer conteúdo que o formulário acumule. Insira um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
 
             `/forms/feedback/`
 
@@ -1181,7 +1190,7 @@ Um formulário precisa de uma ação. A ação define a operação acionada para
             Se definido, isso será adicionado a cada comentário como `sling:resourceType`
 
          * **Exibir seletor**
-      * **Criar lead**
+      * **Criar cliente em potencial**
 
          * **O cliente em potencial  será adicionado a esta lista**
 
@@ -1217,7 +1226,7 @@ Um formulário precisa de uma ação. A ação define a operação acionada para
 
             Insira os endereços de email CC.
 
-         * **CCO**
+         * **BCC**
 
             Insira os endereços de email CCO.
 
@@ -1233,13 +1242,13 @@ Um formulário precisa de uma ação. A ação define a operação acionada para
 
          * **Caminho do conteúdo**
 
-            O caminho do conteúdo para qualquer conteúdo que o formulário acumule. Insira um caminho terminado por uma barra `/`. A barra significa que para cada porta de formulário, um novo nó é criado no local indicado; por exemplo:
+            O caminho do conteúdo para qualquer conteúdo que o formulário acumule. Insira um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
 
             `/forms/feedback/`
 
          * **Exibir dados...**
 
-            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. Aqui, você pode exportar as informações para um arquivo .tsv (separado por tabulações) (para ser usado, por exemplo, em uma planilha do Excel).
+            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. Aqui, é possível exportar as informações para um arquivo .tsv (separado por tabulações) (para ser usado, por exemplo, em uma planilha do Excel).
       * **Armazenar conteúdo com os uploads**
 
          Isso tem as mesmas opções que **Armazenar conteúdo**.
@@ -1261,7 +1270,7 @@ Um formulário precisa de uma ação. A ação define a operação acionada para
 
 #### Final do formulário {#end-of-form}
 
-Isso marca o fim do formulário. É possível configurar:
+Isso marca o fim do formulário. Você pode configurar:
 
 * **Fim do formulário**
 
@@ -1291,51 +1300,51 @@ Isso marca o fim do formulário. É possível configurar:
 
 ### Nome da conta {#account-name}
 
-Isso permite que você insira um nome de conta:
+Isso permite que o usuário insira um nome de conta:
 
 ![dc_form_accountname](assets/dc_form_accountname.png)
 
 ### Endereço {#address}
 
-Isso permite que você adicione um campo de endereço internacional, com o seguinte formato:
+Isso permite adicionar um campo de endereço internacional com o seguinte formato:
 
 ![dc_form_address](assets/dc_form_addressfield.png)
 
-O componente está configurado para uso imediato, mas é possível alterar a configuração, se necessário. Por exemplo, as restrições podem ser adicionadas para os elementos individuais do endereço. As configurações padrão serão usadas caso haja campos vazios.
+O componente está configurado para uso imediato, mas é possível alterar a configuração, se necessário. Por exemplo, as restrições podem ser adicionadas para os elementos individuais do endereço. Deixar campos vazios usará as configurações padrão.
 
 ### Captcha {#captcha}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em vez disso.
 
 >[!CAUTION]
 >
 >Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
-O componente Captcha exige que o usuário digite uma sequência alfanumérica como exibido na tela. A sequência muda a cada atualização.
+O componente Captcha requer que o usuário digite uma sequência alfanumérica como exibido na tela. A string muda a cada atualização.
 
 ![dc_form_captcha](assets/dc_form_captcha.png)
 
-Você pode configurar vários parâmetros para este componente, incluindo uma mensagem a ser exibida quando a sequência captcha for inválida.
+Você pode configurar vários parâmetros para esse componente, incluindo uma mensagem a ser mostrada quando a string de captcha for inválida.
 
 ### Grupos de caixa de seleção {#checkbox-group}
 
-Uma caixa de seleção permite que você crie uma lista de uma ou mais caixas de seleção, algumas das quais, podem ser selecionadas ao mesmo tempo.
+Uma caixa de seleção permite criar uma lista de uma ou mais caixas de seleção, várias das quais podem ser selecionadas ao mesmo tempo.
 
 ![dc_form_checkboxgroupse](assets/dc_form_checkboxgroupuse.png)
 
-É possível especificar vários parâmetros, incluindo um título, descrição e nome do elemento. Ao usar os botões + e -, você pode adicionar ou remover itens, em seguida, posicioná-los com as setas para cima e para baixo.
+Você pode especificar vários parâmetros, incluindo um título, descrição e nome do elemento. Ao usar os botões + e -, você pode adicionar ou remover itens, em seguida, posicioná-los com as setas para cima e para baixo.
 
 >[!NOTE]
 >
->Usando **Caminho de carga de itens**, você pode pré-carregar a lista de grupos de caixas de seleção com valores.
+>Usando **Caminho de carregamento dos itens** você pode pré-carregar a lista de grupos de caixas de seleção com valores.
 >
->Consulte [Pré-carregar campos de formulário com vários valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consulte [Pré-carregamento de campos de formulário com vários valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Detalhes do cartão de crédito {#credit-card-details}
 
 >[!CAUTION]
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em vez disso.
 
 Isso permite fornecer os campos necessários para inserir os detalhes do cartão de crédito. Você pode configurá-lo para especificar os tipos de cartão aceitos e as informações necessárias (por exemplo, código de segurança).
 
@@ -1343,55 +1352,55 @@ Isso permite fornecer os campos necessários para inserir os detalhes do cartão
 
 ### Lista suspensa {#dropdown-list}
 
-Uma lista suspensa pode ser configurada para fornecer ao usuário um intervalo de valores para seleção:
+Uma lista suspensa pode ser configurada para fornecer ao usuário um intervalo de valores para a seleção:
 
 ![dc_form_dropdownlistuse](assets/dc_form_dropdownlistuse.png)
 
-É possível especificar um título e os itens que serão exibidos na lista. Ao usar os botões + e -, você pode adicionar ou remover itens de lista, em seguida, posicioná-los com os botões para cima e para baixo. Você pode especificar se os usuários podem selecionar vários itens da lista e quaisquer itens que devem ser selecionados automaticamente na primeira vez que a lista for aberta (valores iniciais).
+Você pode especificar um título e itens para serem exibidos na lista. Usando os botões + e -, você pode adicionar ou remover os itens da lista, em seguida, posicioná-los com os botões Para cima e Para baixo. Você pode especificar se os usuários têm permissão para selecionar vários itens da lista e quaisquer itens que devem ser selecionados automaticamente na primeira vez que abrirem a lista (valores iniciais).
 
 >[!NOTE]
 >
->Usando o **Caminho de carga de itens** você pode pré-carregar a lista suspensa com valores.
+>Usando **Caminho de carregamento dos itens** é possível pré-carregar a lista suspensa com valores.
 >
->Consulte [Pré-carregar campos de formulário com vários valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consulte [Pré-carregamento de campos de formulário com vários valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Upload de arquivo {#file-upload}
 
-O componente de upload de arquivos fornece ao usuário um mecanismo para selecionar e enviar um arquivo.
+O componente de upload de arquivo fornece ao usuário um mecanismo para selecionar e carregar um arquivo.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
 >[!NOTE]
 >
->Você pode criar um componente de upload personalizado para fazer o upload de arquivos para um Sling Servlet. Para obter informações, consulte [Upload de arquivos no Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
+>Você pode criar um componente de upload personalizado para fazer upload de arquivos para um Sling Servlet. Para obter mais informações, consulte [Upload de arquivos para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
 ### Campo oculto {#hidden-field}
 
-Esse componente permite a criação de um campo oculto. Estes podem ser utilizados para diversos fins; por exemplo, quando você precisa executar uma ação após enviar o formulário ou quando dados ocultos são necessários no processamento posterior. 
+Esse componente permite criar um campo oculto. Podem ser utilizados para diversos fins; por exemplo, quando você precisa executar uma ação após enviar o formulário ou quando dados ocultos são necessários no pós-processamento.
 
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
 >
->Você também pode personalizar o seu formulário para mostrar ou ocultar componentes do formulário específicos, de acordo com o valor de outros campos no formulário. Alterar a visibilidade de um campo do formulário é útil, quando o campo é necessário apenas em condições específicas.
+>Você também pode personalizar o formulário para mostrar ou ocultar componentes específicos de formulário de acordo com o valor de outros campos no formulário. Alterar a visibilidade de um campo de formulário é útil quando o campo é necessário somente em condições específicas.
 >
 >Consulte [Mostrar e ocultar componentes de formulário](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Botão de imagem {#image-button}
 
-Um botão de imagem permite que você crie um botão com seu próprio texto e imagem:
+Um botão de imagem permite criar um botão com sua própria imagem e texto:
 
 ![dc_form_imagebutton](assets/dc_form_imagebutton.png)
 
-### Upload de imagem {#image-upload}
+### Carregamento de imagem {#image-upload}
 
-O componente de upload da imagem fornece ao usuário um mecanismo para selecionar e enviar um arquivo de imagem.
+O componente de upload de imagem fornece ao usuário um mecanismo para selecionar e carregar um arquivo de imagem.
 
 ![dc_form_imageupload](assets/dc_form_imageupload.png)
 
 ### Campo de link {#link-field}
 
-O campo do link permite que o usuário especifique um URL:
+O campo link permite que o usuário especifique um URL:
 
 ![dc_form_link](assets/dc_form_link.png)
 
@@ -1399,7 +1408,7 @@ Mais usado para o formulário de evento do calendário, onde é usado para o cam
 
 ### Campo de senha {#password-field}
 
-Isso é usado para permitir ao usuário inserir a senha:
+Isso é usado para permitir que o usuário insira sua senha:
 
 ![dc_form_password](assets/dc_form_password.png)
 
@@ -1407,8 +1416,8 @@ Isso é usado para permitir ao usuário inserir a senha:
 
 Esse componente fornece ao usuário dois campos para:
 
-* inserir uma senha
-* inserir repetidamente a senha para confirmar que a mesma está correta.
+* a introdução de uma senha
+* introdução repetida da senha para verificar se a entrada está correta.
 
 Com as configurações padrão, o componente será exibido como:
 
@@ -1416,39 +1425,39 @@ Com as configurações padrão, o componente será exibido como:
 
 ### Grupo radial {#radio-group}
 
-Um grupo radial fornece uma lista de uma ou mais caixas de seleção radial, onde apenas uma poderá ser selecionada em um determinado momento.
+Um grupo de opções fornece uma lista de uma ou mais caixas de seleção de opções de rádio, das quais apenas uma pode ser selecionada em um determinado momento.
 
-É possível especificar o nome do elemento com um título e descrição. Ao usar os botões + e -, você pode adicionar ou remover itens, posicioná-los com as setas para cima e para baixo e especificar um valor padrão, se necessário:
+Você pode especificar o nome do elemento junto com um título e descrição. Ao usar os botões + e -, você pode adicionar ou remover itens, posicioná-los com as setas para cima e para baixo e especificar um valor padrão, se necessário:
 
 ![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
 >
->Usando o **Caminho de carga do item** você pode pré-carregar o grupo de opções com valores.
+>Usando **Caminho de carregamento dos itens** você pode pré-carregar o grupo de opções com valores.
 >
->Consulte [Pré-carregar campos de formulário com vários valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consulte [Pré-carregamento de campos de formulário com vários valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Botão enviar {#submit-button}
+### Botão Enviar {#submit-button}
 
-Esse componente permite que você crie um botão de envio, com o texto padrão:
+Esse componente permite criar um botão Enviar, com o texto padrão:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
-Ou o seu próprio texto:
+Ou com seu próprio texto:
 
 ![dc_form_submitbuttonuse](assets/dc_form_submitbuttonuse.png)
 
 ### Campo de tags {#tags-field}
 
-Esse campo permite que você selecione as tags:
+Este campo permite que você selecione tags:
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 
-Você pode especificar diversos parâmetros, incluindo os espaços de nomes que podem ser usados na guia especializada:
+Você pode especificar vários parâmetros, incluindo os namespaces, que podem ser usados na guia especializada:
 
-* **Campo de tags**
+* **Campo de tag**
 
-   * **Espaços de nomes permitidos**
+   * **Namespaces permitidos**
 
       * **Geometrixx Outdoors**
       * **Fluxo de trabalho**
@@ -1457,19 +1466,19 @@ Você pode especificar diversos parâmetros, incluindo os espaços de nomes que 
       * **Geometrixx Media**
       * **Tags padrão**
       * **Marketing**
-      * **Propriedades de ativos**
+      * **Propriedades do ativo**
    * **Largura em pixels**
-   * **Tamanho da pop-up**
+   * **Tamanho do popup**
 
 
 ### Campo de texto {#text-field}
 
-O campo de texto padrão pode ser configurado no tamanho necessário e com o seu próprio lead na mensagem:
+O campo de texto padrão pode ser configurado para o tamanho necessário e com seu próprio lead na mensagem:
 
 ![dc_form_text](assets/dc_form_text.png)
 
 ### Botões de envio do fluxo de trabalho {#workflow-submit-button-s}
 
-Esse componente permite que você crie um botão de envio para usar em um fluxo de trabalho.
+Isso permite criar um botão Enviar para uso em um fluxo de trabalho.
 
 ![chlimage_1-204](assets/chlimage_1-204.png)

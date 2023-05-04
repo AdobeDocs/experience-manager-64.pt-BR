@@ -1,30 +1,33 @@
 ---
-title: Alterar a ordem de avaliação para autenticação
-seo-title: Alterar a ordem de avaliação para autenticação
-description: 'É possível alterar a ordem na qual AEM formulários avalia vários provedores de autenticação. '
-seo-description: 'É possível alterar a ordem na qual AEM formulários avalia vários provedores de autenticação. '
+title: Alterar a ordem da avaliação para autenticação
+seo-title: Change the order of evaluation for authentication
+description: É possível alterar a ordem em que AEM formulários avalia vários provedores de autenticação.
+seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: cac16c50-a85d-4e40-a590-8a0a52be893c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 4%
 
 ---
 
+# Alterar a ordem da avaliação para autenticação {#change-the-order-of-evaluation-for-authentication}
 
-# Alterar a ordem de avaliação para autenticação {#change-the-order-of-evaluation-for-authentication}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Se você tiver configurado vários provedores de autenticação, poderá alterar a ordem em que AEM formulários os avaliam para autenticação. A ordem dos provedores de autenticação listados no arquivo config.xml determina a ordem de avaliação para autenticação.
+Se você configurou vários provedores de autenticação, é possível alterar a ordem em que AEM formulários os avalia para autenticação. A ordem dos provedores de autenticação listados no arquivo config.xml determina a ordem da avaliação para autenticação.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração.
 1. Para exportar a configuração atual para um arquivo, clique em Exportar e salve o arquivo de configuração em outro local.
-1. Encontre o seguinte nó no arquivo:
+1. Localize o seguinte nó no arquivo :
 
    ```as3
     <node name="AuthSchemes"> 
@@ -48,4 +51,3 @@ Se você tiver configurado vários provedores de autenticação, poderá alterar
 
 1. Para importar o arquivo atualizado, em Gerenciamento de usuários, clique em Configuração > Importar e exportar arquivos de configuração.
 1. Clique em Procurar para localizar o arquivo, clique em Importar e em OK.
-

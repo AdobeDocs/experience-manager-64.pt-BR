@@ -1,18 +1,22 @@
 ---
 title: Aprimoramentos na experiência do usuário em ativos
-description: Este artigo descreve as melhorias na experiência do usuário nos ativos  [!DNL Experience Manager] 6.4.
+description: Este artigo descreve as melhorias na experiência do usuário em [!DNL Experience Manager] 6.4 Ativo.
 contentOwner: AG
 feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 1%
+source-wordcount: '677'
+ht-degree: 2%
 
 ---
 
 # Aprimoramentos na experiência do usuário em ativos {#user-experience-enhancements-in-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager] 6.4 Os ativos incluem várias melhorias de usabilidade que proporcionam uma experiência contínua do usuário e melhoram a produtividade. O aumento na velocidade com que você pode criar/gerenciar seu conteúdo do mercado melhora a velocidade do conteúdo da empresa.
 
@@ -22,7 +26,7 @@ A interface é mais ágil, o que ajuda a gerenciar com eficiência um grande por
 
 ## Carregamento lento {#lazy-loading}
 
-Ao procurar/procurar ativos em [!DNL Experience Manager] 6.4 Assets, até 200 ativos são exibidos de cada vez. Você pode rolar os resultados mais rapidamente, o que é especialmente útil ao navegar por uma longa lista de resultados. Como um número significativo de ativos é carregado de cada vez, a experiência de navegação é tranquila.
+Ao procurar/procurar ativos em [!DNL Experience Manager] 6.4 Ativos, até 200 ativos são exibidos de cada vez. Você pode rolar os resultados mais rapidamente, o que é especialmente útil ao navegar por uma longa lista de resultados. Como um número significativo de ativos é carregado de cada vez, a experiência de navegação é tranquila.
 
 Se você tocar/clicar em um ativo para revisar sua página de detalhes, é possível retornar à página de resultados simplesmente tocando/clicando no botão Voltar na barra de ferramentas.
 
@@ -32,11 +36,11 @@ Dependendo do dispositivo usado e da quantidade de detalhes necessários, é pos
 
 Para redimensionar miniaturas na exibição de Cartão, execute estas etapas:
 
-1. Toque/clique no ícone Layout na barra de ferramentas e escolha a opção **[!UICONTROL Configurações de exibição]**.
+1. Toque/clique no ícone Layout na barra de ferramentas e escolha o **[!UICONTROL Exibir configurações]** opção.
 
    ![view_settings](assets/view_settings.png)
 
-1. Na caixa de diálogo **[!UICONTROL Exibir configurações]**, selecione o tamanho da miniatura desejado e toque/clique em **[!UICONTROL Atualizar]**.
+1. No **[!UICONTROL Exibir configurações]** , selecione o tamanho da miniatura desejado e toque/clique **[!UICONTROL Atualizar]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -54,13 +58,13 @@ Na exibição de Lista, a primeira coluna agora exibe os nomes de arquivo dos at
 
 ![list_view](assets/list_view.png)
 
-Você pode optar por configurar a quantidade de detalhes que deseja exibir. Toque/clique no ícone Layout, escolha a opção **[!UICONTROL Configurações de exibição]** e especifique as colunas que deseja exibir na caixa de diálogo **[!UICONTROL Configurações de exibição]**.
+Você pode optar por configurar a quantidade de detalhes que deseja exibir. Toque/clique no ícone Layout , escolha a variável **[!UICONTROL Exibir configurações]** e especifique as colunas que deseja exibir no **[!UICONTROL Exibir configurações]** caixa de diálogo.
 
 ![view_settings_dialog_listview](assets/view_settings_dialoglistview.png)
 
 ## Melhorias na exibição de coluna {#column-view-improvements}
 
-Além das exibições Cartão e Lista, agora é possível navegar até a página de detalhes de um ativo na exibição Coluna. Selecione um ativo na exibição Coluna e toque/clique em **[!UICONTROL Mais detalhes]** no instantâneo do ativo.
+Além das exibições Cartão e Lista, agora é possível navegar até a página de detalhes de um ativo na exibição Coluna. Selecione um ativo na exibição Coluna e toque/clique **[!UICONTROL Mais detalhes]** no instantâneo do ativo.
 
 ![more_details](assets/more_details.png)
 
@@ -68,7 +72,7 @@ Além das exibições Cartão e Lista, agora é possível navegar até a página
 
 [!DNL Experience Manager] 6.4 Os ativos incluem uma visualização em Árvore que permite navegar convenientemente pela hierarquia de ativos e navegar até o ativo ou a pasta desejada.
 
-Para abrir a exibição em Árvore, toque/clique no ícone Navegação global no `Assets UI` e escolha **[!UICONTROL Árvore de conteúdo]** no menu.
+Para abrir a exibição em Árvore, toque/clique no ícone Navegação global na `Assets UI`e escolha **[!UICONTROL Árvore de conteúdo]** no menu .
 
 ![árvore_de_conteúdo](assets/content_tree.png)
 
@@ -87,7 +91,7 @@ Dependendo do layout escolhido, você pode abrir a página de detalhes de um ati
 | **Exibir** | **Como abrir a página de detalhes do ativo** |
 |---|---|
 | [!UICONTROL Exibição de cartão] | Toque/clique no bloco de ativos. |
-| [!UICONTROL Exibição de lista  ] | Toque/clique na entrada de linha do ativo na lista. |
+| [!UICONTROL Exibição de lista] | Toque/clique na entrada de linha do ativo na lista. |
 | [!UICONTROL Exibição de coluna] | Toque/clique no botão **[!UICONTROL Mais detalhes]** no instantâneo do ativo. |
 
 Use os botões Anterior/Próximo para avançar e voltar entre os ativos.

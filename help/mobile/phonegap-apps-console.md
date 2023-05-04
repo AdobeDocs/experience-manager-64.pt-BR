@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 7317fd2f-9756-4231-b343-ea808ea159ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2617'
-ht-degree: 0%
+source-wordcount: '2653'
+ht-degree: 1%
 
 ---
 
 # Criação e edição de aplicativos usando o console Aplicativos{#creating-and-editing-apps-using-the-apps-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >

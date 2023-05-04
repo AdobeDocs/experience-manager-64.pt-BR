@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
 # Início rápido da API Java (SOAP) de componentes e serviços {#components-and-services-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Início rápido da API Java (SOAP) está disponível para componentes e serviços.
 
@@ -42,11 +46,11 @@ As operações do AEM Forms podem ser executadas usando a API altamente digitada
 
 >[!NOTE]
 >
->As inicializações rápidas localizadas em Programação com AEM formulários são baseadas no servidor Forms que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>As inicializações rápidas localizadas em Programação com AEM formulários são baseadas no servidor Forms que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->Se você tiver um componente personalizado e estiver usando protocolos SOAP ou EJB para invocar DSCs no mesmo servidor local, e essas invocações deixarem de funcionar após uma atualização, use a estratégia de invocação in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Use o método de invocação DSC in-VM com ServiceClientFactory padrão e não construa ServiceClientFactory usando protocolos SOAP ou EJB.
+>Se você tiver um componente personalizado e estiver usando protocolos SOAP ou EJB para chamar DSCs no mesmo servidor local, e essas invocações deixarem de funcionar após uma atualização, use in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)) estratégia de invocação. Use o método de invocação DSC in-VM com ServiceClientFactory padrão e não construa ServiceClientFactory usando protocolos SOAP ou EJB.
 
 ## Início rápido (modo SOAP): Implantar um componente usando a API do Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
@@ -152,7 +156,7 @@ O exemplo de Java a seguir implanta um componente baseado em um arquivo JAR cham
 
 ## Início rápido (modo SOAP): Definir o contexto de execução de um serviço usando a API do Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-O exemplo de código Java a seguir define o contexto de execução Run-As Invoker em um serviço de exemplo chamado *EncryptDocument*.
+O exemplo de código Java a seguir define o contexto de execução do Invocador Run-As para um serviço de exemplo chamado *EncryptDocument*.
 
 ```as3
  /* 

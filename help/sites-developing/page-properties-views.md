@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 25dad368-8227-424d-960b-1664d8e20a21
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '515'
+ht-degree: 3%
 
 ---
 
 # Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-page-properties.md) que podem ser visualizadas e editadas pelos usuários; alguns são necessários ao criar a página (criar exibição), outros podem ser visualizados e editados (editar exibição) em um estágio posterior. Essas propriedades da página são definidas e disponibilizadas pela caixa de diálogo ( `cq:dialog`) do componente de página apropriado.
 

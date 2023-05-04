@@ -12,14 +12,18 @@ discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 0%
+source-wordcount: '1004'
+ht-degree: 1%
 
 ---
 
 # Criação de projetos de tradução para fragmentos de conteúdo {#creating-translation-projects-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Além dos ativos, o Adobe Experience Manager (AEM) Assets suporta fluxos de trabalho de cópia de idioma para [fragmentos de conteúdo](content-fragments.md) (incluindo alterações). Nenhuma otimização adicional é necessária para executar fluxos de trabalho de cópia de idioma em fragmentos de conteúdo. Em cada workflow, todo o fragmento de conteúdo é enviado para tradução.
 

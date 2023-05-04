@@ -6,14 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 3%
+source-wordcount: '600'
+ht-degree: 5%
 
 ---
 
 # Configurações do Cloud Service{#cloud-service-configurations}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 As configurações são projetadas para fornecer a lógica e a estrutura para armazenar configurações de serviço.
 

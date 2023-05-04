@@ -1,24 +1,27 @@
 ---
 title: Integração de dados do AEM Forms
-seo-title: Integração de dados do AEM Forms
+seo-title: AEM Forms Data Integration
 description: A Integração de dados permite integrar o AEM Forms a diferentes fontes de dados e criar um modelo de dados de formulário para criar e trabalhar com formulários adaptáveis e comunicações interativas.
-seo-description: A Integração de dados permite integrar o AEM Forms a diferentes fontes de dados e criar um modelo de dados de formulário para criar e trabalhar com formulários adaptáveis e comunicações interativas.
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
-
 # Introdução à integração de dados do AEM Forms {#aem-forms-data-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A Integração de dados permite integrar o AEM Forms a diferentes fontes de dados e criar um modelo de dados de formulário para criar e trabalhar com formulários adaptáveis e comunicações interativas.
 
@@ -60,4 +63,3 @@ Analise o seguinte para começar, entender e implementar a integração de dados
 * [Criar modelo de dados de formulário](/help/forms/using/create-form-data-models.md)
 * [Trabalhar com o modelo de dados de formulário](/help/forms/using/work-with-form-data-model.md)
 * [Usar modelo de dados de formulário](/help/forms/using/using-form-data-model.md)
-

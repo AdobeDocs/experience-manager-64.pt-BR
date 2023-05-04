@@ -1,24 +1,27 @@
 ---
 title: Pós-processamento de cartas e comunicações interativas
-seo-title: Pós-processamento de cartas
+seo-title: Post Processing of Letters
 description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de postagem do AEM e Forms, como impressão e email, e integrá-los às suas cartas.
-seo-description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de postagem do AEM e Forms, como impressão e email, e integrá-los às suas cartas.
+seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
 uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: d2dfdab8-815e-4378-b287-81e31c9d9333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 0%
+source-wordcount: '868'
+ht-degree: 1%
 
 ---
 
-
 # Pós-processamento de cartas e comunicações interativas {#post-processing-of-letters-and-interactive-communications}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Pós-processamento {#post-processing}
 
@@ -28,9 +31,9 @@ Os agentes podem associar e executar fluxos de trabalho de pós-processamento em
 
 Para associar processos de publicação a letras ou comunicações interativas, primeiro é necessário configurar os processos de publicação. Dois tipos de workflows podem ser executados em cartas enviadas:
 
-1. **Forms Workflow:** Estes são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configuração de [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Esses são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configuração [Forms Workflow](#formsworkflow).
 
-1. **Fluxo de trabalho AEM:** AEM fluxos de trabalho também podem ser usados como processos de publicação para cartas enviadas. Instruções para configurar [AEM Fluxo de trabalho](/help/forms/using/aem-forms-workflow.md).
+1. **Fluxo de trabalho AEM:** AEM workflows também podem ser usados como processos de publicação para cartas enviadas. Instruções para configuração [Fluxo de trabalho AEM](/help/forms/using/aem-forms-workflow.md).
 
 ## Fluxo de trabalho dos formulários {#formsworkflow}
 
@@ -58,27 +61,27 @@ Para associar processos de publicação a letras ou comunicações interativas, 
 
 1. Para usar o AEM Forms em workflows JEE para pós-processamento, configure os parâmetros e as saídas necessários. Os valores padrão dos parâmetros são indicados abaixo.
 
-   Vá para a página Configurações do console da Web do Adobe Experience Manager > **[!UICONTROL Configurações do gerenciamento de correspondência]** e configure os seguintes parâmetros:
+   Vá para a página Configurações do console da Web do Adobe Experience Manager > **[!UICONTROL Configurações de gerenciamento de correspondência]** e configure os seguintes parâmetros:
 
-   1. **inPDFDoc (parâmetro de documento PDF):** um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetro indicados são configuráveis. Eles podem ser configurados nas configurações do Gerenciamento de correspondência na configuração.
-   1. **inXMLDoc (parâmetro de dados XML):** um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário no formato XML.
-   1. **inXDPDoc (parâmetro de documento XDP):** um documento XML como entrada. Esta entrada contém layout subjacente (XDP).
-   1. **inAttachmentDocs (parâmetro Attachment Documents):** um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
-   1. **redirectURL (Redirect URL Output):** um tipo de saída que indica o url para o qual redirecionar.
+   1. **inPDFDoc (parâmetro de documento de PDF):** Um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetro indicados são configuráveis. Eles podem ser configurados nas configurações do Gerenciamento de correspondência na configuração.
+   1. **inXMLDoc (parâmetro de dados XML):** Um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário no formato XML.
+   1. **inXDPDoc (parâmetro do documento XDP):** Um documento XML como entrada. Esta entrada contém layout subjacente (XDP).
+   1. **inAttachmentDocs (parâmetro Attachment Documents ):** Um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
+   1. **redirectURL (Redirecionar saída de URL):** Um tipo de saída que indica o url para o qual redirecionar.
 
    Seu fluxo de trabalho de formulários deve ter um parâmetro de documento PDF ou um parâmetro de dados XML como entrada com o mesmo nome especificado em **[!UICONTROL Configurações de gerenciamento de correspondência]**. Isso é necessário para que o processo seja listado na lista suspensa Processo de postagem .
 
 ## Configurações na instância de publicação {#settings-on-the-publish-instance}
 
-1. faça logon em `http://localhost:publishport/aem/forms`.
-1. Navegue até **[!UICONTROL Cartas]** para exibir a carta publicada que está disponível na instância de publicação.
-1. Defina as Configurações do AEM DS. Consulte [Definir AEM configurações do DS](/help/forms/using/configuring-the-processing-server-url-.md).
+1. fazer logon no `http://localhost:publishport/aem/forms`.
+1. Navegar para **[!UICONTROL Letras]** para exibir a carta publicada disponível na instância de publicação.
+1. Defina as Configurações do AEM DS. Consulte [Definir configurações AEM DS](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
 >Ao usar workflows do Forms ou AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Caso contrário, a apresentação do formulário não será válida.
 
-## Recuperação de instâncias de cartas {#letter-instances-retrieval}
+## Recuperação de instâncias de carta {#letter-instances-retrieval}
 
 As instâncias de carta salvas podem ser mais manipuladas, como recuperação de instâncias de carta e exclusão de instâncias de carta, usando as seguintes APIs definidas em LetterInstanceService.
 
@@ -112,14 +115,14 @@ As instâncias de carta salvas podem ser mais manipuladas, como recuperação de
  </tbody> 
 </table>
 
-## Associar um processo de publicação a uma letra {#associating-a-post-process-with-a-letter}
+## Associar um processo de publicação a uma carta {#associating-a-post-process-with-a-letter}
 
 Na interface do usuário do CCR, conclua as seguintes etapas para associar um processo de publicação a uma letra:
 
-1. Passe o mouse sobre uma letra e toque em **Exibir propriedades**.
+1. Passe o mouse sobre uma carta e toque em **Propriedades da exibição**.
 1. Selecione **Editar**.
 1. Nas Propriedades básicas, usando o menu suspenso Processo de postagem , selecione o processo de postagem a ser associado à carta. Os processos de publicação relacionados ao AEM e ao Forms estão listados na lista suspensa.
-1. Toque em **Salvar**.
+1. Toque **Salvar**.
 1. Depois de configurar a carta com o Processo de postagem, publique a carta e, opcionalmente, na instância de publicação, especifique o URL de processamento no serviço de Configurações AEM DS. Isso garante que o processo de publicação seja executado na instância de processamento.
 
 ## Recarregar uma instância de carta de rascunho  {#reloaddraft}

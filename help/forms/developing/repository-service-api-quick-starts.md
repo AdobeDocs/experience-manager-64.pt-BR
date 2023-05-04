@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 859a2b57-df90-4030-9061-c454d07cb753
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 1%
 
 ---
 
 # Início rápido da API do Serviço de Repositório {#repository-service-api-quick-starts}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os seguintes Quick Starts estão disponíveis para o serviço AEM Forms Repository.
 
@@ -46,9 +50,9 @@ As operações do AEM Forms podem ser executadas usando a API altamente digitada
 
 **Aplicativos/FormsApplication**
 
-A maioria dos primeiros passos do serviço de repositório do AEM Forms interagem com um aplicativo chamado `Applications/FormsApplication,`, conforme mostrado na ilustração a seguir.
+A maioria dos serviços de repositório da AEM Forms começa a interagir com um aplicativo chamado `Applications/FormsApplication,` conforme mostrado na ilustração a seguir.
 
-A pasta FormsFolder é um local no repositório AEM Forms. Você pode, por exemplo, adicionar esta pasta de forma programática a `Applications/FormsApplication`. (Consulte [Início rápido (modo SOAP): Criação de uma pasta usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+A pasta FormsFolder é um local no repositório AEM Forms. Você pode, por exemplo, adicionar programaticamente esta pasta a `Applications/FormsApplication`. (Consulte [Início rápido (modo SOAP): Criação de uma pasta usando a API do Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 O caminho para um recurso localizado no repositório do AEM Forms é:
 
@@ -56,7 +60,7 @@ O caminho para um recurso localizado no repositório do AEM Forms é:
 
 >[!NOTE]
 >
->Você pode navegar pelo AEM Forms Repository usando um navegador da Web. Para navegar pelo repositório, insira o seguinte URL em um navegador da Web https://[server name]:[server port]/repository. Você pode verificar os resultados de início rápido usando um navegador da Web. Por exemplo, se você adicionar conteúdo ao Repositório AEM Forms, poderá ver o conteúdo em um navegador da Web.
+>Você pode navegar pelo AEM Forms Repository usando um navegador da Web. Para navegar pelo repositório, insira o seguinte URL em um navegador da Web https://[nome do servidor]:[porta do servidor]/repository. Você pode verificar os resultados de início rápido usando um navegador da Web. Por exemplo, se você adicionar conteúdo ao Repositório AEM Forms, poderá ver o conteúdo em um navegador da Web.
 
 >[!NOTE]
 >
@@ -170,7 +174,7 @@ O exemplo de código Java a seguir cria uma pasta chamada *FormsFolder* no segui
 
 ## Início rápido (modo SOAP): Gravação de um recurso usando a API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-O exemplo de código Java a seguir grava um recurso chamado *loan.xdp* no repositório. O recurso é adicionado ao local `/Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Gravando Recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+O seguinte exemplo de código Java grava um recurso chamado *loan.xdp* no repositório. O recurso é adicionado ao `/Applications/FormsApplication/1.0/FormsFolder` local. (Consulte [Escrever recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```as3
  /* 
@@ -298,7 +302,7 @@ O exemplo de código Java a seguir grava um recurso chamado *loan.xdp* no reposi
 
 ## Início rápido (modo SOAP): Listar recursos usando a API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-O exemplo de código Java a seguir lista os recursos que estão localizados em `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Listando Recursos](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+O exemplo de código Java a seguir lista os recursos que estão localizados em `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Listando recursos](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```as3
  /* 
@@ -397,7 +401,7 @@ O exemplo de código Java a seguir lista os recursos que estão localizados em `
 
 ## Início rápido (modo SOAP): Leitura de um recurso usando a API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-O exemplo de código Java a seguir lê um recurso chamado *Loan.xdp* do repositório. O arquivo XDP está localizado em `/Applications/FormsApplication/1.0/FormsFolder/`. (Consulte [Lendo Recursos](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+O exemplo de código Java a seguir lê um recurso chamado *Loan.xdp* do repositório. O arquivo XDP está localizado em `/Applications/FormsApplication/1.0/FormsFolder/`. (Consulte [Lendo recursos](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```as3
  /* 
@@ -498,7 +502,7 @@ O exemplo de código Java a seguir lê um recurso chamado *Loan.xdp* do reposit�
 
 ## Início rápido (modo SOAP): Atualização de um recurso usando a API do Java {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-O exemplo de código Java a seguir atualiza `/Applications/FormsApplication/1.0/FormsFolder` modificando sua descrição. (Consulte [Atualizando Recursos](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+As seguintes atualizações de exemplo de código Java `/Applications/FormsApplication/1.0/FormsFolder` modificando sua descrição. (Consulte [Atualização de recursos](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```as3
  /* 
@@ -610,7 +614,7 @@ O exemplo de código Java a seguir atualiza `/Applications/FormsApplication/1.0/
 
 ## Início rápido (modo SOAP): Pesquisar recursos usando a API do Java {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
-O exemplo de código Java a seguir pesquisa por Loan.xdp em `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Pesquisando recursos](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
+O exemplo de código Java a seguir pesquisa por Loan.xdp em `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Pesquisar recursos](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
 ```as3
  /* 
@@ -875,7 +879,7 @@ O exemplo de código Java a seguir cria uma relação entre dois recursos no rep
 
 ## Início rápido (modo SOAP): Bloquear um recurso usando a API Java {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
-O exemplo de código Java a seguir bloqueia /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Consulte [Bloqueando recursos](/help/forms/developing/aem-forms-repository.md#locking-resources).)
+O exemplo de código Java a seguir bloqueia /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Consulte [Bloquear recursos](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
 ```as3
  /* 
@@ -1101,7 +1105,7 @@ O exemplo de código Java a seguir lê e cria listas de controle de acesso (ACLs
 
 ## Início rápido (modo SOAP): Excluir um recurso usando a API Java {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
-O seguinte exemplo de código Java exclui Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Se esse arquivo XDP não estiver localizado nessa pasta, uma exceção será lançada. (Consulte [Excluindo Recursos](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
+O seguinte exemplo de código Java exclui Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Se esse arquivo XDP não estiver localizado nessa pasta, uma exceção será lançada. (Consulte [Exclusão de recursos](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
 ```as3
  /* 

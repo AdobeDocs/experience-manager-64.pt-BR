@@ -10,14 +10,18 @@ topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: d0cdb15d-196a-44e3-bd98-91588b6979ab
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1495'
 ht-degree: 1%
 
 ---
 
 # Restruturação do repositório de sites no AEM 6.4{#sites-repository-restructuring-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para o AEM 6.4 devem usar esta página para avaliar o esforço de trabalho associado às alterações do repositório que afetam a solução da AEM Sites. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.4, enquanto outras podem ser adiadas até uma atualização do 6.5.
 
@@ -311,7 +315,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.4](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
-   <td>N/D<br /> </td> 
+   <td>N/A<br /> </td> 
   </tr>
  </tbody>
 </table>

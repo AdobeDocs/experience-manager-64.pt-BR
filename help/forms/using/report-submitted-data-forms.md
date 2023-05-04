@@ -1,30 +1,33 @@
 ---
 title: APIs para trabalhar com formulários enviados no portal de formulários
-seo-title: APIs para trabalhar com formulários enviados no portal de formulários
-description: 'O AEM Forms fornece APIs que você pode usar para consultar e realizar ações nos dados de formulários enviados no portal de formulários. '
-seo-description: 'O AEM Forms fornece APIs que você pode usar para consultar e realizar ações nos dados de formulários enviados no portal de formulários. '
+seo-title: APIs to work with submitted forms on forms portal
+description: O AEM Forms fornece APIs que você pode usar para consultar e realizar ações nos dados de formulários enviados no portal de formulários.
+seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6d860fe3-6884-4141-ad3a-5315c514c843
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 7%
+source-wordcount: '577'
+ht-degree: 8%
 
 ---
 
-
 # APIs para trabalhar com formulários enviados no portal de formulários {#apis-to-work-with-submitted-forms-on-forms-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O AEM Forms fornece APIs que podem ser usadas para consultar dados de formulários enviados pelo portal de formulários. Além disso, você pode postar comentários ou atualizar propriedades de formulários enviados usando as APIs explicadas neste documento.
 
 >[!NOTE]
 >
->Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores, conforme descrito em [Associando revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
+>Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores, conforme descrito em [Associar revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -48,7 +51,7 @@ O objeto response contém uma matriz JSON que inclui nomes de formulários e seu
 
 ### Exemplo {#example}
 
-**URL da solicitação**
+**URL de solicitação**
 
 ```
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
@@ -84,7 +87,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
   </tr> 
   <tr> 
    <td><code>limit</code> (opcional)</td> 
-   <td>Limita o número de resultados. O valor padrão é <strong>30</strong>.</td> 
+   <td>Limita o número de resultados. O valor padrão é <strong>30º</strong>.</td> 
   </tr> 
   <tr> 
    <td><code>orderby</code> <br /> (opcional)</td> 
@@ -118,7 +121,7 @@ O objeto response contém uma matriz JSON que inclui detalhes dos formulários e
 
 ### Exemplo {#example-1}
 
-**URL da solicitação**
+**URL de solicitação**
 
 ```
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
@@ -149,7 +152,7 @@ Retorna uma ID de comentário sobre a postagem bem-sucedida de um comentário.
 
 ### Exemplo {#example-2}
 
-**URL da solicitação**
+**URL de solicitação**
 
 ```
 https://[host:[port]/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
@@ -187,7 +190,7 @@ O objeto response contém uma matriz JSON que inclui todos os comentários assoc
 
 ### Exemplo {#example-3}
 
-**URL da solicitação**
+**URL de solicitação**
 
 ```
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
@@ -219,7 +222,7 @@ Retorna um objeto JSON com informações sobre a atualização publicada.
 
 ### Exemplo {#example-4}
 
-**URL da solicitação**
+**URL de solicitação**
 
 ```
 https://[host]:[port]/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
@@ -230,4 +233,3 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=updateSub
 ```java
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
-

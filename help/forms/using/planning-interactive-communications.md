@@ -1,49 +1,52 @@
 ---
-title: '"Tutorial: Planejar a comunicação interativa"'
-seo-title: Planeje sua comunicação interativa
+title: "Tutorial: Planejar a comunicação interativa"
+seo-title: Plan your Interactive Communication
 description: Planeje a anatomia de sua comunicação interativa
-seo-description: Planeje a anatomia de sua comunicação interativa
+seo-description: Plan the anatomy for your Interactive Communication
 uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 40f6297d-7238-4e56-9fd1-6df3a6362724
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '690'
 ht-degree: 3%
 
 ---
 
+# Tutorial: Planejar a comunicação interativa {#tutorial-plan-the-interactive-communication}
 
-# Tutorial: Planeje a comunicação interativa {#tutorial-plan-the-interactive-communication}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Planeje a anatomia de sua comunicação interativa
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Este tutorial é uma etapa da série [Create your first Interative Communication](/help/forms/using/create-your-first-interactive-communication.md). É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso tutorial completo.
+Este tutorial é uma etapa do [Criar sua primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso tutorial completo.
 
 A primeira etapa no planejamento de uma comunicação interativa é finalizar o conteúdo da comunicação interativa. Especialistas de assuntos de departamentos como jurídico, financeiro, suporte ou marketing podem ajudá-lo a finalizar o conteúdo. Após a finalização do conteúdo, é necessário analisá-lo para identificar os vários tipos de ativos necessários para criar a Comunicação interativa.
 
-## Considerações de planejamento {#planning-considerations}
+## Considerações sobre planejamento {#planning-considerations}
 
 Uma comunicação interativa inclui os seguintes elementos:
 
-* **O** texto estático inclui, em sua maioria, as partes da comunicação interativa que são genéricas e estão incluídas na comunicação com todos os clientes. Por exemplo, cabeçalho, rodapé, saudação ou isenções de responsabilidade.
-* **Os dados provenientes de um sistema de back-end (modelo de dados de formulário)** são específicos do cliente e são dinamicamente combinados com a comunicação interativa. Por exemplo, o número ou o endereço da política podem ser obtidos usando o modelo de dados de formulário.
-* **Layout ou** modelos para a versão Imprimir e Web da Comunicação Interativa.
-* **** Ordem na qual os vários parágrafos de texto aparecem na Comunicação interativa.
-* **Dados inseridos por um funcionário de linha de frente (interface do usuário do agente)**  que está personalizando a comunicação antes de enviá-la. Por exemplo, a data de vencimento do pagamento.
+* **Texto estático** A maioria inclui as partes da comunicação interativa que são de natureza genérica e estão incluídas na comunicação com todos os clientes. Por exemplo, cabeçalho, rodapé, saudação ou isenções de responsabilidade.
+* **Dados provenientes de um sistema de back-end (modelo de dados de formulário)** O é específico do cliente e é dinamicamente mesclado com a comunicação interativa. Por exemplo, o número ou o endereço da política podem ser obtidos usando o modelo de dados de formulário.
+* **Layout ou modelos** para as versões Imprimir e Web da Comunicação Interativa.
+* **Pedido** em que os vários parágrafos de texto aparecem na Comunicação interativa.
+* **Dados inseridos por um funcionário de linha de frente (interface do usuário do agente)** quem está personalizando a comunicação antes de enviá-la. Por exemplo, a data de vencimento do pagamento.
 
-* **Dados condicionais** que são preenchidos com base em condições predefinidas. Por exemplo, a data em que a comunicação interativa é gerada.
+* **Dados condicionais** que é preenchida com base em condições predefinidas. Por exemplo, a data em que a comunicação interativa é gerada.
 * **Imagens armazenadas em um repositório**, como logotipos e imagens de assinatura. Imagens como logotipos corporativos apareceriam na maioria ou em toda a comunicação interativa.
-* **Gráficos e** tabelas necessários para simplificar a representação de dados complexos em uma Comunicação Interativa
+* **Tabelas e gráficos** necessário para simplificar a representação de dados complexos em uma comunicação interativa
 
-## Anatomia da comunicação interativa {#anatomy-of-the-interactive-communication}
+## Anatomia da Comunicação Interativa {#anatomy-of-the-interactive-communication}
 
-Após finalizar o conteúdo e os elementos usados para criar sua Comunicação interativa, você pode criar uma anatomia da Comunicação interativa. A anatomia deve ter os detalhes listados na seção [Considerações de Planejamento](/help/forms/using/planning-interactive-communications.md#planning-considerations). Baseado no nosso caso de uso, o exemplo a seguir é uma anatomia da conta mensal que um operador de telecom envia para seus clientes.
+Após finalizar o conteúdo e os elementos usados para criar sua Comunicação interativa, você pode criar uma anatomia da Comunicação interativa. A anatomia deve ter os detalhes listados no [Considerações sobre planejamento](/help/forms/using/planning-interactive-communications.md#planning-considerations) seção. Baseado no nosso caso de uso, o exemplo a seguir é uma anatomia da conta mensal que um operador de telecom envia para seus clientes.
 
 A anatomia inclui dados com os seguintes modos de entrada:
 
@@ -69,7 +72,7 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
   <tr>
    <td>Detalhes da Lista</td> 
    <td><p>Números da fatura</p> <p>Data da Cobrança</p> <p>Período de Faturamento</p> <p>Seu plano</p> </td> 
-   <td><p>Valor para o campo <strong>Plano </strong></p> <p>Tabela - cliente</p> </td> 
+   <td><p>Valor para <strong>Seu plano </strong>campo</p> <p>Tabela - cliente</p> </td> 
    <td><p>Valores para os seguintes campos:</p> 
     <ul> 
      <li>Números da fatura</li> 
@@ -95,12 +98,12 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
      <li>Código do Estado</li> 
      <li>Número de Conexões</li> 
     </ul> </td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Resumo da Lista</td> 
    <td><p>Saldo anterior</p> <p>Pagamentos</p> <p>Ajustamentos</p> <p>Encargos do período de faturamento atual</p> <p>Valor devido</p> <p>Data de vencimento</p> </td> 
-   <td><p>Valor para o campo <strong>Encargos período de faturamento atual </strong></p> <p>Tabela - faturas</p> </td> 
+   <td><p>Valor para a variável <strong>Encargos do período de faturamento atual </strong> campo</p> <p>Tabela - faturas</p> </td> 
    <td><p>Valores para os seguintes campos:</p> 
     <ul> 
      <li>Saldo anterior</li> 
@@ -109,7 +112,7 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
      <li>Valor devido</li> 
      <li>Data de vencimento</li> 
     </ul> </td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Resumo dos encargos</td> 
@@ -127,7 +130,7 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
      <li>TOTAL PAGÁVEL (taxas de utilização calculadas, campo)</li> 
     </ul> <p>Tabela - faturas</p> </td> 
    <td>Nenhum campo</td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Chamadas discriminadas - Saída</td> 
@@ -141,22 +144,21 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
     </ul> </td> 
    <td><p>Todos os valores</p> <p>Tabela - chamadas</p> </td> 
    <td>Nenhum campo</td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Pagar Agora</td> 
-   <td>—</td> 
-   <td>—</td> 
-   <td>—</td> 
+   <td>--</td> 
+   <td>--</td> 
+   <td>--</td> 
    <td>PagarAgora</td> 
   </tr>
   <tr>
    <td>Serviços de valor agregado</td> 
-   <td>—</td> 
-   <td>—</td> 
-   <td>—</td> 
+   <td>--</td> 
+   <td>--</td> 
+   <td>--</td> 
    <td>ValueAddedServices</td> 
   </tr>
  </tbody>
 </table>
-

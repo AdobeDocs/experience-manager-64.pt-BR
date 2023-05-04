@@ -1,74 +1,76 @@
 ---
-title: Criar uma caixa de proteção SCF
-seo-title: Criar uma caixa de proteção SCF
-description: Este tutorial destina-se principalmente a desenvolvedores, novos AEM, interessados em usar componentes SCF.  Ele percorre a criação de um site de segurança do SCF
-seo-description: Este tutorial destina-se principalmente a desenvolvedores, novos AEM, interessados em usar componentes SCF.  Ele percorre a criação de um site de segurança do SCF
+title: Criar uma sandbox SCF
+seo-title: Create An SCF Sandbox
+description: Este tutorial é principalmente para desenvolvedores, novos em AEM, que estão interessados em usar componentes SCF.  Ele aborda a criação de um site de sandbox do SCF
+seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
 uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
-translation-type: tm+mt
-source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+exl-id: f8cd2866-6e4d-47e6-b9aa-c2190b0b1b7b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 0%
+source-wordcount: '534'
+ht-degree: 1%
 
 ---
 
+# Criar uma sandbox SCF {#create-an-scf-sandbox}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 
-# Criar uma caixa de proteção SCF {#create-an-scf-sandbox}
+A partir AEM Comunidades 6.1, a maneira mais fácil de criar rapidamente uma sandbox é criar um site da comunidade. Consulte [Introdução ao AEM Communities](getting-started.md).
 
+Outra ferramenta útil para desenvolvedores é a [Guia de componentes da comunidade](components-guide.md), que permite a exploração e o protótipo rápido de componentes e recursos do Communities.
 
-Desde AEM Comunidades 6.1, a maneira mais fácil de criar rapidamente uma caixa de proteção é criar um site da comunidade. Consulte [Introdução ao AEM Communities](getting-started.md).
+O exercício de criar um site pode ser útil para entender a estrutura de um site AEM que pode incluir recursos das Comunidades, além de fornecer páginas simples nas quais explorar o trabalho com a [quadro de componentes sociais (SCF)](scf.md).
 
-Outra ferramenta útil para desenvolvedores é o [Guia de componentes da comunidade](components-guide.md), que permite a exploração e o protótipo rápido de componentes e recursos das Comunidades.
+Este tutorial é principalmente para desenvolvedores, novos em AEM, que estão interessados em usar componentes SCF. Ele aborda a criação de um site Sandbox de SCF, semelhante ao tutorial para [Como criar um site da Internet em destaque](../../help/sites-developing/website.md) que se concentra nas estruturas do site, como navegação, logotipo, pesquisa, barra de ferramentas e listagem de páginas filhas.
 
-O exercício de criar um site pode ser útil para entender a estrutura de um site AEM que pode incluir recursos das Comunidades, além de fornecer páginas simples nas quais explorar o trabalho com a [estrutura de componentes sociais (SCF)](scf.md).
-
-Este tutorial destina-se principalmente a desenvolvedores, novos AEM, interessados em usar componentes SCF. Ele percorre a criação de um site da Caixa de proteção SCF, semelhante ao tutorial para [Como criar um site da Internet com recursos completos](../../help/sites-developing/website.md) que foca nas estruturas do site, como navegação, logotipo, pesquisa, barra de ferramentas e listagem de páginas filhas.
-
-O desenvolvimento ocorre em uma instância do autor, enquanto o teste com o site é melhor em uma instância de publicação.
+O desenvolvimento ocorre em uma instância do autor, enquanto o experimento com o site é melhor em uma instância de publicação.
 
 As etapas neste tutorial são:
 
 * [Configurar estrutura do site](setup-website.md)
-* [Aplicativo Sandbox Inicial](initial-app.md)
-* [Conteúdo inicial do sandbox](initial-content.md)
-* [Desenvolver aplicativo Sandbox](develop-app.md)
+* [Aplicativo de sandbox inicial](initial-app.md)
+* [Conteúdo inicial da sandbox](initial-content.md)
+* [Desenvolver aplicativo de sandbox](develop-app.md)
 * [Adicionar Clientlibs](add-clientlibs.md)
 * [Desenvolver conteúdo do Sandbox](develop-content.md)
 
 >[!CAUTION]
 >
->Este tutorial não cria um site da comunidade com a funcionalidade criada usando o console [Communities Sites](sites-console.md). Por exemplo, este tutorial não descreve como configurar o logon, o autoregistro, [login social](social-login.md), as mensagens, os perfis e assim por diante.
+>Este tutorial não cria um site da comunidade com a funcionalidade criada usando o [Console de sites das comunidades](sites-console.md). Por exemplo, este tutorial não descreve como configurar o logon, o registro automático, [logon social](social-login.md), mensagens, perfis e assim por diante.
 >
->Se um site de comunidade simples for o preferido, siga o tutorial [Criar uma página de amostra](create-sample-page.md).
+>Se preferir um site de comunidade simples, siga as [Criar uma página de exemplo](create-sample-page.md) tutorial.
 
 ## Pré-requisitos {#prerequisites}
 
-Este tutorial supõe que você tenha um autor AEM e uma instância de publicação AEM instalada que tenha a [versão mais recente](deploy-communities.md#latest-releases) das Comunidades.
+Este tutorial supõe que você tenha um autor de AEM e uma instância de publicação de AEM instalada que tenha o [versão mais recente](deploy-communities.md#latest-releases) das Comunidades.
 
-Veja a seguir alguns links úteis para desenvolvedores novos à plataforma AEM:
+A seguir estão alguns links úteis para desenvolvedores novos na plataforma AEM:
 
-* [Introdução](../../help/sites-deploying/deploy.md#getting-started)  - Para implantar instâncias AEM
+* [Introdução](../../help/sites-deploying/deploy.md#getting-started) - Para implantar instâncias de AEM
 
-   * [Conceitos básicos](../../help/sites-developing/the-basics.md)  - Para desenvolvedores de sites e recursos
-   * [Primeiras etapas para autores](../../help/sites-authoring/first-steps.md)  - Para criar conteúdo de página
+   * [Noções básicas](../../help/sites-developing/the-basics.md) - Para desenvolvedores de sites e recursos
+   * [Primeiros passos para autores](../../help/sites-authoring/first-steps.md) - Para criação de conteúdo de página
 
-## Usando o Ambiente de desenvolvimento de CRXDE Lite {#using-crxde-lite-development-environment}
+## Usar o ambiente de desenvolvimento do CRXDE Lite {#using-crxde-lite-development-environment}
 
-AEM desenvolvedores passam boa parte do seu tempo no ambiente de desenvolvimento [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor. O CRXDE Lite fornece um acesso menos restrito ao repositório CRX. As ferramentas de interface clássica e os consoles de interface habilitada para toque fornecem acesso mais estruturado a partes específicas do repositório CRX.
+Os desenvolvedores do AEM passam a maior parte do tempo na [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) ambiente de desenvolvimento em uma instância do autor. O CRXDE Lite fornece um acesso menos restrito ao repositório CRX. As ferramentas da interface clássica e os consoles de interface habilitada para toque fornecem acesso mais estruturado a partes específicas do repositório CRX.
 
 Depois de fazer logon com privilégios administrativos, há várias maneiras de acessar o CRXDE Lite:
 
-1. Na navegação global, selecione navigation **[!UICONTROL Tools > CRXDE Lite]**.
+1. Na navegação global, selecione navegação **[!UICONTROL Ferramentas > CRXDE Lite]**.
 
    ![chlimage_1-350](assets/chlimage_1-350.png)
 
-2. Na página de boas-vindas [interface clássica](http://localhost:4502/welcome.html), role para baixo e clique em **[!UICONTROL CRXDE Lite]** no painel direito.
+2. No [página de boas-vindas da interface clássica](http://localhost:4502/welcome.html), role para baixo e clique em **[!UICONTROL CRXDE Lite]** no painel direito.
 
    ![chlimage_1-351](assets/chlimage_1-351.png)
 
@@ -76,16 +78,16 @@ Depois de fazer logon com privilégios administrativos, há várias maneiras de 
 
    Por exemplo, em uma instância de autor local: ` [http://localhost:4502/crx/de](http://localhost:4502/crx/de)`
 
-Para trabalhar com o CRXDE Lite, você deve fazer logon com privilégios de desenvolvedor ou administrador. Para a instância padrão localhost, você pode fazer logon com
+Para trabalhar com o CRXDE Lite, você deve fazer logon com privilégios de desenvolvedor ou de administrador. Para a instância padrão do host local, você pode fazer logon com a
 
 * `username: admin`
 * `password: admin`
 
 
-**Esteja ciente de** que esse logon atingirá o tempo limite e que você precisará fazer login novamente periodicamente usando a lista suspensa na extremidade direita da barra de ferramentas CRXDe Lite.
+**Esteja ciente** que esse logon atingirá o tempo limite e você precisará fazer logon novamente periodicamente usando a opção suspensa na extremidade direita da barra de ferramentas do CRXDe Lite.
 
-Se não estiver conectado, você não poderá navegar no repositório JCR nem executar operações de edição/salvamento.
+Se não estiver conectado, você não poderá navegar pelo repositório JCR ou executar operações de edição/salvamento.
 
-***Na dúvida, faça login novamente!***
+***Em caso de dúvida, faça logon novamente!***
 
 ![chlimage_1-352](assets/chlimage_1-352.png)

@@ -1,8 +1,8 @@
 ---
 title: Fornecimento de informações seguras de alto volume
-seo-title: Fornecimento de informações seguras de alto volume
+seo-title: High-volume secure information delivery
 description: A segurança de documentos oferece suporte à associação de licenças aos usuários, em vez de aos documentos em ambientes de produção em massa.
-seo-description: A segurança de documentos oferece suporte à associação de licenças aos usuários, em vez de aos documentos em ambientes de produção em massa.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,19 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 78fc7c4a-a634-4628-927a-c9622bdc13fc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 0%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
+# Fornecimento de informações seguras de alto volume {#high-volume-secure-information-delivery}
 
-# Entrega de informações seguras de alto volume {#high-volume-secure-information-delivery}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Em um ambiente de produção em massa, como o que gera faturas mensais seguras para uma empresa de telecomunicações, criar licenças específicas para cada documento pode se tornar um processo que consome muitos recursos. Nesses casos, a segurança dos documentos é compatível com a associação de licenças aos usuários, e não com os documentos. A licença gerada para um usuário é usada para todos os documentos protegidos para esse usuário.
 

@@ -8,14 +8,18 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1959'
 ht-degree: 6%
 
 ---
 
 # Conjuntos de rotação {#spin-sets}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Um Conjunto de rotação simula o ato real de girar um objeto para examiná-lo. Os Conjuntos de rotação permitem visualizar itens de qualquer ângulo, obtendo os detalhes visuais principais de qualquer ângulo.
 

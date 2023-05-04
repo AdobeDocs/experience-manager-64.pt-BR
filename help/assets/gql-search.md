@@ -1,20 +1,24 @@
 ---
 title: Pesquisa de texto completo GQL
-description: Explore o recurso de pesquisa de texto completo do GQL no  [!DNL Experience Manager] Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
+description: Explore o recurso de pesquisa de texto completo do GQL em [!DNL Experience Manager] Ativos. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '909'
 ht-degree: 2%
 
 ---
 
 # Pesquisa de texto completo GQL {#gql-full-text-search}
 
-Explore o recurso de pesquisa de texto completo do GQL no [!DNL Experience Manager] Assets. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Explore o recurso de pesquisa de texto completo do GQL em [!DNL Experience Manager] Ativos. Use-o para pesquisar ativos com base em metadados específicos, como título, descrição e nome do autor.
 
 O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base em metadados específicos, como título, descrição, autor e assim por diante.
 
@@ -24,12 +28,12 @@ Por exemplo, para procurar ativos com o título &quot;Target&quot;, execute esta
 
 ## Pesquisar ativos {#searching-assets}
 
-1. Na barra de ferramentas da interface do usuário do Assets, clique ou toque no ícone **[!UICONTROL Pesquisar]** para exibir a caixa Omnisearch.
+1. Na barra de ferramentas da interface do usuário do Assets, clique ou toque no **[!UICONTROL Pesquisar]** ícone para exibir a caixa Omnisearch.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Com o cursor na caixa Omnisearch, pressione Enter.
-1. Clique ou toque no ícone de Navegação global para exibir o painel **[!UICONTROL Filtros]**.
+1. Clique ou toque no ícone de Navegação global para exibir o **[!UICONTROL Filtros]** painel.
 1. Na caixa Pesquisa Omni , especifique o valor &quot;Target&quot;. Para limitar sua pesquisa a uma pasta específica, clique ou toque no ícone Procurar no painel Filtros e selecione a pasta. Nesse caso, a correspondência é pesquisada somente na pasta e nas subpastas abaixo dela.
 
    >[!NOTE]
@@ -38,7 +42,7 @@ Por exemplo, para procurar ativos com o título &quot;Target&quot;, execute esta
 
    ![gql_search](assets/gql_search.png)
 
-1. Pressione **[!UICONTROL Enter]**. A interface do usuário [!DNL Assets] exibe apenas os ativos cujo título corresponde exatamente a &quot;Target&quot;.
+1. Press **[!UICONTROL Enter]**. O [!DNL Assets] a interface do usuário exibe somente os ativos cujo título corresponde exatamente ao &quot;Target&quot;.
 
 O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base no seguinte:
 
@@ -63,19 +67,19 @@ O recurso de pesquisa de texto completo do GQL permite pesquisar ativos com base
 | [!UICONTROL Proprietário de direitos autorais] | copyrights towner: &quot;Adobe Systems&quot; |
 | [!UICONTROL Contribuinte] | colaborador:John |
 | [!UICONTROL Termos de Uso ] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Criado] | criado:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Expira Data] | expira:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL No horário] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Hora de desligar] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Intervalo de tempo]  (expira o dateontime, offtime) | campo de faceta: limite inferior..upperbound |
-| [!UICONTROL Caminho] | /content/dam/&lt;nome da pasta> |
+| [!UICONTROL Criado] | criado:YYYY-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Expira Data] | expira:YYYY-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL No horário] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Hora de desligar] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Intervalo de tempo] (expira dateontime, offtime) | campo de faceta: limite inferior..upperbound |
+| [!UICONTROL Caminho] | /content/dam/&lt;folder name=&quot;&quot;> |
 | [!UICONTROL Título do PDF] | pdftitle:&quot;Documento do Adobe&quot; |
 | [!UICONTROL Assunto] | assunto: &quot;Formação&quot; |
 | [!UICONTROL Tags] | Tags: &quot;Localização E Viagem&quot; |
 | [!UICONTROL Tipo] | type: &quot;image\png&quot; |
 | [!UICONTROL Largura da imagem] | largura:limite inferior..upperbound |
 | [!UICONTROL Altura da imagem] | altura:limite inferior..upperbound |
-| [!UICONTROL Person] | pessoa:John |
+| [!UICONTROL Pessoa] | pessoa:John |
 
 Estes são alguns exemplos de formatos de pesquisa para consultas complexas:
 
@@ -105,7 +109,7 @@ Título: &quot;Reunião&quot;;
 
 * Para exibir ativos que contêm uma string específica e têm um valor de propriedade específico (por exemplo: procure por Adobe de sequência em ativos com title=John Doe)
 
-&amp;ast;Adobe&amp;ast; title: &quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
+&amp;ast;Adobe; title: &quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
 
 >[!NOTE]
 >
@@ -124,13 +128,13 @@ A pesquisa de texto completo também é compatível com operadores como -, ^ e a
 Você pode melhorar a relevância das palavras-chave para ativos específicos para ajudar a aumentar as pesquisas com base nas palavras-chave. Em outras palavras, as imagens para as quais você promove palavras-chave específicas são exibidas na parte superior dos resultados da pesquisa quando você pesquisa com base nessas palavras-chave.
 
 1. Na interface do usuário do Assets, abra a página de propriedades do ativo para o qual deseja promover uma palavra-chave.
-1. Alterne para a guia **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]** em **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
+1. Alterne para **[!UICONTROL Avançado]** e clique/toque **[!UICONTROL Adicionar]** under **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. Na caixa **[!UICONTROL Promover de pesquisa]**, especifique uma palavra-chave para a qual deseja impulsionar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. Se necessário, especifique várias palavras-chave da mesma maneira.
+1. No **[!UICONTROL Promover pesquisa]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. Se necessário, especifique várias palavras-chave da mesma maneira.
 
    ![add_search_word](assets/add_search_word.png)
 
-1. Clique/toque em **[!UICONTROL Salvar e fechar]**.
+1. Clicar/tocar **[!UICONTROL Salvar e fechar]**.
 1. Procure a palavra-chave usando a caixa Omnisearch . O ativo para o qual você promoveu essa palavra-chave aparece entre os principais resultados de pesquisa.

@@ -1,63 +1,66 @@
 ---
-title: Sideload do componente
-seo-title: Sideload do componente
-description: O sideload de componentes das Comunidades é útil quando uma página da Web é projetada como um aplicativo de página simples que altera dinamicamente o que é exibido, dependendo do que for selecionado pelo visitante do site
-seo-description: O sideload de componentes das Comunidades é útil quando uma página da Web é projetada como um aplicativo de página simples que altera dinamicamente o que é exibido, dependendo do que for selecionado pelo visitante do site
+title: Sideload de Componente
+seo-title: Component Sideloading
+description: O sideload do componente Comunidades é útil quando uma página da Web é projetada como um aplicativo de página simples que altera dinamicamente o que é exibido, dependendo do que é selecionado pelo visitante do site
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
-translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+exl-id: 12fdc503-29b6-4970-a883-c22162f7a9eb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
+# Sideload de Componente {#component-sideloading}
 
-# Sideload do componente {#component-sideloading}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Visão geral {#overview}
 
-O sideload de componentes das Comunidades é útil quando uma página da Web é projetada como um aplicativo de página simples que altera dinamicamente o que é exibido, dependendo do que for selecionado pelo visitante do site.
+O sideload do componente Comunidades é útil quando uma página da Web é projetada como um aplicativo de página simples que altera dinamicamente o que é exibido, dependendo do que é selecionado pelo visitante do site.
 
-Isso é realizado quando os componentes Comunidades não existem no modelo de página, mas são adicionados dinamicamente após a seleção do visitante do site.
+Isso é feito quando os componentes Comunidades não existem no modelo da página, mas são adicionados dinamicamente após a seleção de um visitante do site.
 
-Como o SCF (Social Component Framework) tem uma presença leve, somente os componentes do SCF que existem no momento do carregamento da página inicial são registrados. Para que um componente SCF adicionado dinamicamente seja registrado após o carregamento da página, o SCF deve ser chamado para &quot;sideload&quot; do componente.
+Como a estrutura de componentes sociais (SCF) tem uma presença leve, somente os componentes SCF existentes no momento do carregamento da página inicial são registrados. Para que um componente SCF adicionado dinamicamente seja registrado após o carregamento da página, o SCF deve ser chamado para &quot;sideload&quot; do componente.
 
-Quando uma página é projetada para fazer sideload dos componentes das Comunidades, é possível fazer o cache de toda a página.
+Quando uma página é projetada para fazer o sideload dos componentes do Communities, é possível fazer o cache de toda a página.
 
 As etapas para adicionar dinamicamente componentes SCF são:
 
-1. [Adicionar o componente ao DOM](#dynamically-add-component-to-dom)
+1. [Adicione o componente ao DOM](#dynamically-add-component-to-dom)
 
-1. [Carregue o ](#sideload-by-invoking-scf) componente de maneira auxiliar usando um dos dois métodos:
+1. [Carregar o componente de maneira secundária](#sideload-by-invoking-scf) usando um dos dois métodos:
 
 * [Inclusão dinâmica](#dynamic-inclusion)
-   * Boostrap de todos os componentes adicionados dinamicamente
+   * Inicialize todos os componentes adicionados dinamicamente
 * [Carregamento dinâmico](#dynamic-loading)
    * Adicionar um componente específico sob demanda
 
 >[!NOTE]
 >
->Não há suporte para sideload de [recursos não existentes](scf.md#add-or-include-a-communities-component).
+>Sideload de [recursos não existentes](scf.md#add-or-include-a-communities-component) não é suportado.
 
 ## Adicionar componente dinamicamente ao DOM {#dynamically-add-component-to-dom}
 
 Independentemente de o componente ser incluído dinamicamente ou carregado dinamicamente, ele deve primeiro ser adicionado ao DOM.
 
-Ao adicionar o componente SCF, a tag mais comum a ser usada é a tag DIV, mas outras tags também podem ser usadas. Como o SCF examina somente o DOM quando a página é carregada inicialmente, essa adição ao DOM passará despercebida até que o SCF seja explicitamente chamado.
+Ao adicionar o componente SCF, a tag mais comum a ser usada é a tag DIV, mas outras tags também podem ser usadas. Como o SCF examina apenas o DOM quando a página é carregada inicialmente, essa adição ao DOM passa despercebida até que o SCF seja chamado explicitamente.
 
-Seja qual for a tag usada, no mínimo, o elemento deve estar em conformidade com o padrão normal do elemento raiz SCF, contendo estes dois atributos:
+Qualquer tag usada, no mínimo, o elemento deve estar em conformidade com o padrão normal do elemento raiz SCF contendo esses dois atributos:
 
-* **data-component-**
-idO caminho efetivo para o componente adicionado
+* **data-component-id**
+O caminho efetivo para o componente adicionado
 
-* **data-scf-**
-componentO resourceType do componente
+* **data-scf-component**
+O resourceType do componente
 
 Veja a seguir um exemplo de um componente de comentários adicionados:
 
@@ -70,22 +73,22 @@ Veja a seguir um exemplo de um componente de comentários adicionados:
 </div>
 ```
 
-## Carregamento auxiliar chamando SCF {#sideload-by-invoking-scf}
+## Sideload chamando SCF {#sideload-by-invoking-scf}
 
 ### Inclusão dinâmica {#dynamic-inclusion}
 
-A inclusão dinâmica usa uma solicitação de inicialização que resulta em SCF examinando o DOM e inicializando todos os componentes do SCF encontrados na página.
+A inclusão dinâmica usa uma solicitação de reforço que resulta na análise do SCF no DOM e na inicialização de todos os componentes do SCF encontrados na página.
 
 Para inicializar componentes SCF a qualquer momento após o carregamento da página, basta disparar um evento JQuery como este:
 
-$(documento).trigger(SCF.eventos.BOOTSTRAP_REQUEST);
+$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);
 
 ### Carregamento dinâmico {#dynamic-loading}
 
 O carregamento dinâmico fornece controle sobre o carregamento de componentes SCF.
 
-Em vez de fazer o carregamento de todos os componentes SCF encontrados no DOM, é possível especificar um componente SCF específico para carregar usando este método JavaScript:
+Em vez de bootstrapping de todos os componentes SCF encontrados no DOM, é possível especificar um componente SCF específico para carregar usando este método JavaScript:
 
-SCF.addComponent(documento.getElementById(*someId*));
+SCF.addComponent(document.getElementById(*someId*);
 
-Em que *someId* é o valor do atributo **data-component-id**.
+Onde *someId* é o valor da variável **data-component-id** atributo.

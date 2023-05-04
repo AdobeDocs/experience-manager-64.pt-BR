@@ -1,32 +1,35 @@
 ---
-title: Extração de strings para tradução
-seo-title: Extração de strings para tradução
+title: Extraindo strings para tradução
+seo-title: Extracting Strings for Translating
 description: Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas
-seo-description: Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas
+seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
-translation-type: tm+mt
-source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
+exl-id: 50c2479b-72b6-42fa-8e48-45c8e9596161
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 1%
+source-wordcount: '512'
+ht-degree: 2%
 
 ---
 
-
 # Extraindo strings para tradução{#extracting-strings-for-translating}
 
-Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai strings para um arquivo XLIFF que você envia para tradução. As strings são extraídas dos seguintes locais:
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai cadeias de caracteres para um arquivo XLIFF que você envia para tradução. As cadeias de caracteres são extraídas dos seguintes locais:
 
 * Arquivos de origem Java
-* Arquivos de origem JavaScript
+* Arquivos de origem do JavaScript
 * Representações XML de recursos SVN (nós JCR)
 
-## Configurando a Extração de string {#configuring-string-extraction}
+## Configuração da extração de cadeia de caracteres {#configuring-string-extraction}
 
 Configure como a ferramenta xgettext-maven-plugin extrai strings para o seu projeto.
 
@@ -49,14 +52,14 @@ Configure como a ferramenta xgettext-maven-plugin extrai strings para o seu proj
 | Seção | Descrição |
 |---|---|
 | /filter | Identifica os arquivos que são analisados. |
-| /parsers/vaultxml | Configura a análise de arquivos Vault. Identifica os nós JCR que contêm sequências de caracteres externalizadas e dicas de localização. Também identifica nós JCR a serem ignorados. |
-| /parsers/javascript | Identifica as funções do Javascript que externalizam strings. Não é necessário alterar esta seção. |
-| /parsers/regexp | Configura a análise de arquivos Java, JSP e ExtJS Template. Não é necessário alterar esta seção. |
-| /potenciais | A fórmula para detectar strings para internacionalizar. |
+| /parsers/vaultxml | Configura a análise de arquivos Vault. Identifica os nós do JCR que contêm strings externalizadas e dicas de localização. Também identifica nós JCR para ignorar. |
+| /parsers/javascript | Identifica as funções do Javascript que externalizam cadeias de caracteres. Não é necessário alterar esta seção. |
+| /parsers/regexp | Configura a análise de arquivos Java, JSP e Modelo ExtJS. Não é necessário alterar esta seção. |
+| /potenciais | A fórmula para detectar cadeias de caracteres a serem internacionalizadas. |
 
-### Como identificar os arquivos a serem analisados {#identifying-the-files-to-parse}
+### Identificação dos arquivos a serem analisados {#identifying-the-files-to-parse}
 
-A seção /filter do arquivo i18n.any identifica os arquivos que a ferramenta xgettext-maven-plugin analisa. Adicione várias regras de inclusão e exclusão que identificam arquivos que são analisados e ignorados, respectivamente. Você deve incluir todos os arquivos e excluir os arquivos que não deseja analisar. Normalmente, você exclui tipos de arquivos que não contribuem com a interface do usuário ou que definem a interface do usuário, mas que não estão sendo traduzidos. As regras de inclusão e exclusão têm o seguinte formato:
+A seção /filter do arquivo i18n.any identifica os arquivos que a ferramenta xgettext-maven-plugin analisa. Adicione várias regras de inclusão e exclusão que identificam arquivos que são analisados e ignorados, respectivamente. Você deve incluir todos os arquivos e, em seguida, excluir os arquivos que não deseja analisar. Normalmente, você exclui tipos de arquivos que não contribuem para a interface do usuário ou arquivos que definem a interface do usuário, mas não estão sendo traduzidos. As regras de inclusão e exclusão têm o seguinte formato:
 
 ```
 { /include "pattern" }
@@ -69,9 +72,9 @@ A parte do padrão de uma regra é usada para corresponder aos nomes dos arquivo
 |---|---|
 | / | Indica um caminho JCR. Portanto, esse prefixo corresponde arquivos abaixo do diretório jcr_root. |
 | &amp;ast; | Indica um arquivo regular no sistema de arquivos. |
-| nenhum | Nenhum prefixo, ou padrão que começa com um nome de pasta ou arquivo, indica um arquivo regular no sistema de arquivos. |
+| nenhuma | Nenhum prefixo ou padrão que começa com uma pasta ou nome de arquivo indica um arquivo normal no sistema de arquivos. |
 
-Quando usado em um padrão, o caractere / indica um subdiretório e o &amp;ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
+Quando usado em um padrão, o caractere / indica um subdiretório e o &amp;último; corresponde a todos. A tabela a seguir lista vários exemplos de regras.
 
 <table> 
  <tbody> 
@@ -89,26 +92,26 @@ Quando usado em um padrão, o caractere / indica um subdiretório e o &amp;ast; 
   </tr> 
   <tr> 
    <td><code> { /exclude "*/pom.xml" }</code></td> 
-   <td>Excluir arquivos POM.</td> 
+   <td>Exclua arquivos POM.</td> 
   </tr> 
   <tr> 
    <td><code class="code">{ /exclude "/content/*" }
       { /include "/content/catalogs/geometrixx/templatepages" }
       { /include "/content/catalogs/geometrixx/templatepages/*" }</code></td> 
-   <td><p>Exclua todos os arquivos abaixo do nó /content.</p> <p>Inclua o nó /content/catalogs/geometrixx/templatepages.</p> <p>Inclua todos os nós filhos de /content/catalogs/geometrixx/templatepages.</p> </td> 
+   <td><p>Exclua todos os arquivos abaixo do nó /content.</p> <p>Inclua o nó /content/catalogs/geometrixx/templatepages .</p> <p>Inclua todos os nós secundários de /content/catalogs/geometrixx/templatepages.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Extração das strings {#extracting-the-strings}
+### Extração das cadeias de caracteres  {#extracting-the-strings}
 
-sem POM:
+Sem POM:
 
 ```shell
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-Com POM: Adicione isso ao POM:
+Com POM: Adicione ao POM:
 
 ```xml
 <build>
@@ -137,10 +140,9 @@ mvn xgettext:extract
 ### Arquivos de saída {#output-files}
 
 * `raw.xliff`: strings extraídas
-* `warn.log`: avisos (se houver), se a  `CQ.I18n.getMessage()` API for usada incorretamente. Eles sempre precisam de uma correção e depois de uma nova execução.
+* `warn.log`: avisos (se houver), se `CQ.I18n.getMessage()` A API é usada incorretamente. Eles sempre precisam de uma correção e, em seguida, uma nova execução.
 
-* `parserwarn.log`: avisos do analisador (se houver), por exemplo, problemas com o analisador js
-* `potentials.xliff`: Candidatos &quot;potenciais&quot; que não são extraídos, mas podem ser strings legíveis para humanos que precisam de tradução (podem ser ignorados, ainda produzem uma enorme quantidade de falsos positivos)
+* `parserwarn.log`: avisos do analisador (se houver), por exemplo problemas do analisador js
+* `potentials.xliff`: candidatos &quot;potenciais&quot; que não são extraídos, mas podem ser strings legíveis para humanos que precisam de tradução (podem ser ignorados, ainda produzem uma enorme quantidade de falsos positivos)
 * `strings.xliff`: arquivo xliff nivelado, a ser importado para ALF
-* `backrefs.txt`: permite uma pesquisa rápida de locais de código-fonte para uma determinada string
-
+* `backrefs.txt`: permite pesquisa rápida de locais do código-fonte para uma determinada string

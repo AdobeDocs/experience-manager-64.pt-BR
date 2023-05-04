@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 # Plataformas compatíveis com AEM Forms no JEE {#supported-platforms-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Plataformas compatíveis {#supported-platforms}
 
@@ -73,7 +77,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>Plataforma</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>Nível de compatibilidade</strong></p> </th> 
    <th><p><strong>Definições de patch compatíveis</strong></p> </th> 
   </tr> 
@@ -104,7 +108,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Plataforma</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> Descrição</strong></p> </td> 
    <td><p><strong>Nível de compatibilidade</strong></p> </td> 
   </tr> 
@@ -152,7 +156,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Plataforma</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> Descrição</strong></p> </td> 
    <td><p><strong>Nível de suporte AEM 6.4</strong></p> </td> 
    <td><p><strong>Nível de suporte AEM Forms 6.4 no JEE</strong></p> </td> 
@@ -190,7 +194,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
  <tbody> 
   <tr> 
    <th>Banco de dados </th> 
-   <th><p><strong>Plataforma</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>Definições de patch compatíveis</strong></p> </th> 
   </tr> 
   <tr> 
@@ -226,7 +230,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> Plataforma</strong></p> </td> 
+   <td><p><strong> Platform</strong></p> </td> 
    <td><p><strong>Nível de compatibilidade</strong></p> </td> 
    <td><p><strong>Definições de patch compatíveis</strong></p> </td> 
   </tr> 
@@ -259,7 +263,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong> Plataforma</strong></p> </th> 
+   <th><p><strong> Platform</strong></p> </th> 
    <th><p><strong>Nível de suporte</strong></p> </th> 
    <th><p><strong>Definições de patch compatíveis</strong></p> </th> 
   </tr> 
@@ -432,7 +436,7 @@ Além disso, considere os seguintes pontos ao escolher o software para o Adobe A
   </tr> 
   <tr> 
    <td>IBM Filenet</td> 
-   <td>5.2.</td> 
+   <td>5.2</td> 
   </tr> 
   <tr> 
    <td>Microsoft Sharepoint</td> 
@@ -541,7 +545,7 @@ Os seguintes subsistemas do AEM Forms não são [508](https://www.section508.gov
 <table> 
  <tbody> 
   <tr> 
-   <td>Plataforma</td> 
+   <td>Platform</td> 
    <td>Requisito mínimo de hardware</td> 
   </tr> 
   <tr> 
@@ -593,7 +597,7 @@ Para obter requisitos adicionais, consulte:
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>Plataforma</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>Definições de patch compatíveis</strong></p> </th> 
   </tr> 
   <tr> 
@@ -748,7 +752,7 @@ Para obter requisitos adicionais, consulte:
 
 O aplicativo AEM Forms está disponível nas seguintes plataformas:
 
-| **Plataforma** | **Dispositivos compatíveis** |
+| **Platform** | **Dispositivos compatíveis** |
 |---|---|
 | Apple iOS | Apple iPhone, iPad, iPad Air e iPad mini executando o iOS 15.1 e superior. |
 | Google Android | Android 4.4 (Kit Android) e superior *[API Nível 19 e superior]*. O aplicativo AEM Forms é certificado em tablets Samsung Galaxy de 7 e 10 polegadas e em tablet Google Nexus de 7 polegadas e smartphones populares. |

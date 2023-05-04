@@ -1,36 +1,38 @@
 ---
 title: Campanhas
-seo-title: Campanhas
-description: Saiba mais sobre as noções básicas de usar AEM Campanhas.
-seo-description: Saiba mais sobre as noções básicas de usar AEM Campanhas.
+seo-title: Campaigns
+description: Saiba mais sobre as noções básicas do uso de Campanhas AEM.
+seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 4a3a2ad7-40b0-4f19-a012-167453f58bc2
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 2bc23d5a-11ee-4d29-be3d-1a8cac306aa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 2%
+source-wordcount: '178'
+ht-degree: 5%
 
 ---
 
-
 # Campanhas{#campaigns}
 
-A gestão de campanha oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e criar experiências dedicadas para visitantes.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Se estiver a administrar campanhas (incluindo o landing page) poderá ter de fazer o seguinte:
+O gerenciamento de campanhas fornece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e criar experiências dedicadas para os visitantes.
 
-* **Definir segmentos**  - é necessário definir segmentos e estratégias para o conteúdo direcionado.
-* **Preparar HTML para landing page**  - o Landing page permite que os autores importem design e conteúdo diretamente para uma página AEM de forma rápida e fácil. É necessário preparar o HTML para que os ativos possam ser importados corretamente. As landings page são úteis ao criar landings page de marketing que estão ativas apenas por um tempo limitado e precisam ser criadas rapidamente.
-* **Integrar-se ao SiteCatalyst**  - você pode integrar landings page ao SiteCatalyst.
+Se você estiver administrando campanhas (incluindo landing pages), talvez precise fazer o seguinte:
+
+* **Definir segmentos** - É necessário definir segmentos e estratégias para o seu conteúdo direcionado.
+* **Preparar o HTML para landing pages** - As Landing pages permitem que os autores importem design e conteúdo diretamente para uma página de AEM de forma rápida e fácil. Você precisa preparar o HTML para que os ativos possam ser importados corretamente. As landing pages são úteis ao criar landing pages de marketing que ficam ativas apenas por um tempo limitado e precisam ser criadas rapidamente.
+* **Integrar ao SiteCatalyst** - É possível integrar landing pages com o SiteCatalyst.
 
 Consulte as seguintes páginas:
 
 * [Configuração da segmentação](/help/sites-administering/campaign-segmentation.md)
-* [Extensão e configuração do Importador de design para Landing page](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-* [Integração do Landing page com o Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
-
+* [Extensão e configuração do Importador de design para páginas de aterrissagem](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+* [Integração de páginas de aterrissagem com o Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

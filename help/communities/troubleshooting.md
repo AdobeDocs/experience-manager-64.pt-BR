@@ -1,8 +1,8 @@
 ---
 title: Resolução de problemas
-seo-title: Resolução de problemas
+seo-title: Troubleshooting
 description: Solução de problemas da comunidade, incluindo problemas conhecidos
-seo-description: Solução de problemas da comunidade, incluindo problemas conhecidos
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # Resolução de problemas {#troubleshooting}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Esta seção contém preocupações comuns e problemas conhecidos.
 
@@ -54,7 +58,7 @@ Portanto, qualquer código que use a API RelativeTimeFormat() precisaria ser alt
 
 A falha é diferente no autor e na publicação. Ao criar, ele falha silenciosamente e simplesmente não exibe os tópicos do fórum. Ao publicar, ele exibe o erro na página.
 
-Consulte a API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obter mais informações.
+Consulte a [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obter mais informações.
 
 ## Preocupações comuns {#common-concerns}
 
@@ -62,9 +66,9 @@ Consulte a API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.
 
 Durante a inicialização (não o primeiro, mas todos depois disso), o seguinte aviso pode ser visto nos logs:
 
-* 11.04.2014 08:38:07.223 **AVISO** [FelixStartLevel]com.github.jkack.handlebars.Handlebars O Auxiliar &#39;i18n&#39; foi substituído por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* 11.4.2014 08:38:07.223 **AVISO** [FelixStartLevel]com.github.jkack.handlebars.Handlebars Helper &#39;i18n&#39; foi substituído por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Este aviso pode ser ignorado com segurança como jkack.handlebars.Handlebars, usado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Na inicialização, ele é substituído por um AEM [i18n helper](handlebars-helpers.md#i-n) específico. Esse aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
+Este aviso pode ser ignorado com segurança como jkack.handlebars.Handlebars, usado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Na inicialização, é substituído por um AEM específico [Auxiliar i18n](handlebars-helpers.md#i-n). Esse aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
 
 ### Aviso em logs: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

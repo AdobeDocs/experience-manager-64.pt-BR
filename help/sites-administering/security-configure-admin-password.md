@@ -1,42 +1,45 @@
 ---
-title: Configure a senha do administrador na instalação
-seo-title: Configure a senha do administrador na instalação
-description: Saiba como alterar a senha de administrador AEM instalação.
-seo-description: Saiba como alterar a senha de administrador AEM instalação.
+title: Configure a senha de administrador na instalação
+seo-title: Configure the Admin Password on Installation
+description: Saiba como alterar a Senha de administrador na instalação AEM.
+seo-description: Learn how to change the Admin Password on AEM Installation.
 uuid: 06da9890-ed63-4fb6-88d5-fd0e16bc4ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 6dd289ee-13fd-46be-82cd-aa69852397c9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '342'
+ht-degree: 2%
 
 ---
 
-
-# Configure a senha do administrador na instalação{#configure-the-admin-password-on-installation}
-
-## Visão geral {#overview}
-
-Desde a versão 6.3, AEM permite que a senha do administrador seja definida usando a linha de comando ao instalar uma nova instância.
-
-Com versões anteriores do AEM, a senha da conta do administrador, juntamente com a senha de vários outros consoles, precisavam ser alterados após a instalação.
-
-Este recurso adiciona a facilidade de definir uma nova senha de administrador para o repositório e o Mecanismo Servlet durante a instalação de uma instância AEM, eliminando a necessidade de fazê-la manualmente depois.
+# Configure a senha de administrador na instalação{#configure-the-admin-password-on-installation}
 
 >[!CAUTION]
 >
->Observe que o recurso não abrange o Console do Felix, para o qual a senha precisa ser alterada manualmente. Para obter mais informações, consulte a seção relevante [Lista de verificação de segurança](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+## Visão geral {#overview}
+
+Desde a versão 6.3, o AEM permite que a senha do administrador seja definida usando a linha de comando ao instalar uma nova instância.
+
+Com versões anteriores do AEM, a senha da conta de administrador, juntamente com a senha de vários outros consoles, precisavam ser alteradas após a instalação.
+
+Esse recurso adiciona o recurso de definir uma nova senha de administrador para o repositório e o Mecanismo Servlet durante a instalação de uma instância do AEM, eliminando a necessidade de fazer isso manualmente depois.
+
+>[!CAUTION]
+>
+>Observe que o recurso não abrange o Felix Console, para o qual a senha precisa ser alterada manualmente. Para obter mais informações, consulte o [Seção Lista de verificação de segurança](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
 
 ## Como Usá-Lo? {#how-do-i-use-it}
 
-Esse recurso será acionado automaticamente se você optar por instalar AEM pela linha de comando, em vez de clicar no duplo no JAR de um explorador de sistemas de arquivos.
+Esse recurso será acionado automaticamente se você optar por instalar o AEM por meio da linha de comando, em vez de clicar duas vezes no JAR de um explorador de sistema de arquivos.
 
-A sintaxe geral para executar uma instância AEM a partir da linha de comando é:
+A sintaxe geral para executar uma instância de AEM a partir da linha de comando é:
 
 ```shell
 java -jar aem6.3.jar
@@ -48,19 +51,19 @@ Ao executar a instância a partir da linha de comando, você terá a opção de 
 
 >[!NOTE]
 >
->O prompt para alterar a senha do administrador só será exibido durante a instalação de uma nova instância AEM.
+>O prompt para alterar a senha do administrador só será exibido durante a instalação de uma nova instância do AEM.
 
-## Usando o sinalizador -nointerativo {#using-the-nointeractive-flag}
+## Utilização do sinalizador -nointerativo {#using-the-nointeractive-flag}
 
-Você também pode especificar a senha de um arquivo de propriedades. Isso é feito usando o sinalizador `-nointeractive` combinado com a propriedade do sistema `-Dadmin.password.file`.
+Você também pode optar por especificar a senha de um arquivo de propriedades. Isso é feito usando a variável `-nointeractive` sinalizador combinado com `-Dadmin.password.file` propriedade do sistema.
 
-Veja abaixo um exemplo:
+Veja um exemplo:
 
 ```shell
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-A senha no arquivo `passwordfile.properties` precisa ter o formato abaixo:
+A senha dentro do `passwordfile.properties` O arquivo precisa ter o formato abaixo:
 
 ```xml
 admin.password = 12345678
@@ -68,5 +71,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Se você simplesmente usar o parâmetro `-nointeractive` sem a propriedade `-Dadmin.password.file` do sistema, AEM usará a senha de administrador padrão sem solicitar que você a altere, essencialmente replicando o comportamento de versões anteriores. Esse modo não interativo pode ser usado para instalações automatizadas usando a linha de comando em um script de instalação.
-
+>Se você simplesmente usar a variável `-nointeractive` sem o `-Dadmin.password.file` propriedade do sistema, AEM usará a senha padrão do administrador sem solicitar que você a altere, essencialmente replicando o comportamento de versões anteriores. Esse modo não interativo pode ser usado para instalações automatizadas usando a linha de comando em um script de instalação.

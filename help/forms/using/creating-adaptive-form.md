@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 feature: Adaptive Forms
 exl-id: 4b6d3533-cd1f-4944-b580-49fd90fcf87a
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2053'
 ht-degree: 0%
 
 ---
 
 # Criação de um formulário adaptável {#creating-an-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## <strong>Criar um formulário adaptável</strong> {#strong-create-an-adaptive-form-strong}
 
@@ -184,7 +188,7 @@ Por padrão, a opção de salvar automaticamente não está ativada. Você pode 
 1. Para acessar a seção de salvamento automático nas propriedades, selecione um componente e toque em ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e toque em ![cmppr](assets/cmppr.png).
 1. No **[!UICONTROL Salvar automaticamente]** seção, **[!UICONTROL Habilitar]** a opção salvar automaticamente.
 1. No **[!UICONTROL Evento de formulário adaptável]** , especifique 1 ou TRUE para iniciar automaticamente o salvamento do formulário quando o formulário for carregado no navegador. Também é possível especificar uma expressão condicional para um evento, que, quando acionada e retorna true, começa a salvar o conteúdo do formulário.
-1. Especifique o Acionador. O salvamento automático é acionado com base em sua configuração. Suas opções são:
+1. Especifique o Acionador. O salvamento automático é acionado com base em sua configuração. As opções são:
 
    * **[!UICONTROL Baseado em tempo:]** Selecione a opção para começar a salvar o conteúdo com base em um intervalo de tempo específico.
    * **[!UICONTROL Baseado em evento:]** Selecione a opção para começar a salvar o conteúdo com base em quando um evento for acionado.

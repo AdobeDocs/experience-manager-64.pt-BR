@@ -4,14 +4,18 @@ seo-title: Query Builder API
 description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java e uma API REST.
 seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
 exl-id: ff305c6d-c11e-4e1c-b262-4802b4f54592
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2348'
 ht-degree: 0%
 
 ---
 
 # API do Construtor de consulta{#query-builder-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A funcionalidade do [Construtor de consultas de compartilhamento de ativos](/help/assets/assets-finder-editor.md) é exposta por meio de uma API Java e uma REST API. Esta seção descreve essas APIs.
 

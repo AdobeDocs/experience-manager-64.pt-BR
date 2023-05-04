@@ -1,8 +1,8 @@
 ---
 title: Trabalho com seletores
-seo-title: Trabalho com seletores
+seo-title: Working with Selectors
 description: Selecionar ativos para imagens interativas, vídeo interativo e banners de carrossel
-seo-description: Selecionar ativos para imagens interativas, vídeo interativo e banners de carrossel
+seo-description: Selecting assets for interactive images, interactive video, and carousel banners
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,16 +10,20 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
-feature: Seletores
+feature: Selectors
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 20%
+source-wordcount: '762'
+ht-degree: 19%
 
 ---
 
 # Trabalho com seletores {#working-with-selectors}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Ao trabalhar com uma Imagem interativa, Vídeo interativo ou Banner de carrossel, você seleciona ativos e seleciona sites e produtos para pontos de acesso e mapas de imagem para os quais vincular. Ao trabalhar com Conjuntos de imagens, Conjuntos de rotação e Conjuntos de multimídia, você também seleciona ativos com o Seletor de ativo.
 
@@ -39,23 +43,23 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
 1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
-   O seletor de Produto está na área **[!UICONTROL Tipo de Ação]**.
+   O seletor de Produto está no **[!UICONTROL Tipo de ação]** área.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Toque no ícone **[!UICONTROL Seletor de produto]** (lupa) e navegue até um produto no catálogo.
+1. Toque no **[!UICONTROL Seletor de produto]** ícone (lupa) e navegue até um produto no catálogo.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   Você também pode filtrar por palavra-chave ou tag tocando em **[!UICONTROL Filtro]** e inserindo palavras-chave, ou selecionando tags, ou ambos.
+   Também é possível filtrar por palavra-chave ou tag ao tocar em **[!UICONTROL Filtro]** e inserir palavras-chave, ou selecionar tags, ou ambos.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Você pode alterar o local em que AEM procura dados do produto tocando **[!UICONTROL Procurar]** e navegando para outra pasta.
+   Você pode alterar o local em que AEM procura dados do produto ao tocar em **[!UICONTROL Procurar]** e navegar para outra pasta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque em **[!UICONTROL Classificar]** para alterar se o AEM classifica por mais novo ou mais antigo até o mais recente.
+   Toque **[!UICONTROL Classificar]** para alterar se o AEM classifica do mais novo para o mais antigo ou do mais antigo para o mais recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -67,7 +71,7 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Quando estiver no modo **[!UICONTROL Visualização]**, você pode tocar no ponto de acesso ou mapa de imagem e ver a aparência do Quickview.
+1. Quando em **[!UICONTROL Visualizar]** , você pode tocar no ponto de acesso ou mapa de imagem e ver a aparência do Quickview.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
@@ -89,15 +93,15 @@ Use o seletor de site para escolher uma página da Web quando quiser um ponto de
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Quando estiver no modo **[!UICONTROL Visualizar]** se tocar no ponto de acesso ou mapa de imagem, você navegará até a página do site AEM que você especificou.
+1. Quando em **[!UICONTROL Visualizar]** modo , se você tocar no ponto de acesso ou mapa de imagem, navegará até a página do site AEM que você especificou.
 
-## Selecionar ativos {#selecting-assets}
+## Seleção de ativos {#selecting-assets}
 
-Use este seletor para escolher imagens para usar em um Banner de carrossel, um Vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível ao tocar em **[!UICONTROL Selecionar ativos]** na guia **[!UICONTROL Conteúdo]**. Em Conjuntos de carrossel, o seletor de ativos fica disponível ao criar um novo slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativo estará disponível ao criar um novo Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
+Use este seletor para escolher imagens para usar em um Banner de carrossel, um Vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível ao tocar em **[!UICONTROL Selecionar ativos]** no **[!UICONTROL Conteúdo]** guia . Em Conjuntos de carrossel, o seletor de ativos fica disponível ao criar um novo slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativo estará disponível ao criar um novo Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
 
 Consulte também [Seletor de ativos](asset-selector.md) para obter mais informações.
 
-1. Navegue até o Conjunto de carrossel e crie um novo slide. Ou navegue até o Vídeo interativo, vá até a guia **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídias mistas, um Conjunto de imagens ou um Conjunto de rotação.
+1. Navegue até o Conjunto de carrossel e crie um novo slide. Ou navegue até o Vídeo interativo, vá para **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídias mistas, um Conjunto de imagens ou um Conjunto de rotação.
 1. Toque no ícone **[!UICONTROL Seletor de ativos]** (pasta com uma lupa) e navegue até um ativo.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
@@ -106,9 +110,9 @@ Consulte também [Seletor de ativos](asset-selector.md) para obter mais informa�
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Você pode alterar o local em que AEM procura ativos navegando até outra pasta no campo **[!UICONTROL Path]**.
+   Você pode alterar o local em que o AEM procura por ativos navegando até outra pasta no **[!UICONTROL Caminho]** campo.
 
-   Toque em **[!UICONTROL Coleção]** para pesquisar apenas ativos nas coleções.
+   Toque **[!UICONTROL Coleção]** para pesquisar apenas ativos nas coleções.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 

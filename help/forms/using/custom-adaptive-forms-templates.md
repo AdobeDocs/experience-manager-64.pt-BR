@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 exl-id: 83f978ca-d451-4d27-820f-3620331285cf
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 0%
+source-wordcount: '1181'
+ht-degree: 1%
 
 ---
 
 # Criação de um modelo de formulário adaptável personalizado {#creating-a-custom-adaptive-form-template}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Pré-requisitos {#prerequisites}
 

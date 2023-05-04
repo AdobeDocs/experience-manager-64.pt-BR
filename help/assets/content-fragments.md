@@ -1,5 +1,5 @@
 ---
-title: Trabalho com fragmentos de conteúdo
+title: Trabalho com Fragmentos de conteúdo
 seo-title: Working with Content Fragments
 description: Saiba como os Fragmentos de conteúdo permitem projetar, criar, preparar e usar conteúdo independente da página.
 seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
@@ -12,14 +12,18 @@ discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 76%
+source-wordcount: '2020'
+ht-degree: 74%
 
 ---
 
-# Trabalho com fragmentos de conteúdo {#working-with-content-fragments}
+# Trabalho com Fragmentos de conteúdo {#working-with-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -87,7 +91,7 @@ Juntamente com os recursos de exportação em JSON dos componentes principais do
 >
 >**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)** são recursos diferentes no AEM:
 >
->* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
+>* **Fragmentos de conteúdo** são conteúdo editorial, principalmente texto e imagens relacionadas. São conteúdo puro, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
@@ -268,7 +272,7 @@ Conteúdo intermediário:
 
 >[!CAUTION]
 >
->O conteúdo intermediário é o conteúdo da página. Não é armazenado no fragmento de conteúdo.
+>O conteúdo intermediário é o conteúdo da página. Ele não é armazenado no fragmento de conteúdo.
 
 ### Exigido por fragmentos {#required-by-fragments}
 

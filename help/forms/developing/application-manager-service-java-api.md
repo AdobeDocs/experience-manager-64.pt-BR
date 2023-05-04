@@ -1,8 +1,8 @@
 ---
 title: Início rápido de JavaAPI do serviço do Application Manager (SOAP)
-seo-title: Início rápido de JavaAPI do serviço do Application Manager (SOAP)
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Use o serviço Application Manager para implantar e remover aplicativos usando o Início rápido da API Java.
-seo-description: Use o serviço Application Manager para implantar e remover aplicativos usando o Início rápido da API Java.
+seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 3%
 
 ---
 
+# Início rápido de JavaAPI (SOAP) do Serviço do Application Manager {#application-manager-service-javaapi-quick-start-soap}
 
-# Início rápido de JavaAPI (SOAP) do serviço do Application Manager {#application-manager-service-javaapi-quick-start-soap}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Java API Quick Start (SOAP) está disponível para o serviço do Application Manager.
 
@@ -35,9 +38,9 @@ As operações do AEM Forms podem ser executadas usando a API altamente digitada
 
 >[!NOTE]
 >
->O Início rápido da API Java (SOAP), localizado em Programação com formulários de AEM, é baseado na Forms se você estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>O Início rápido da API Java (SOAP), localizado em Programação com formulários de AEM, é baseado na Forms se você estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Início rápido (modo SOAP): Implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Início rápido (modo SOAP): Implantação de aplicativos usando a API do Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 O seguinte exemplo de código Java importa um aplicativo com base em um arquivo LCA existente chamado *EncryptDocument.lca*.
 
@@ -139,7 +142,7 @@ O seguinte exemplo de código Java importa um aplicativo com base em um arquivo 
  
 ```
 
-## Início rápido (modo SOAP): Remover um aplicativo usando a API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Início rápido (modo SOAP): Remoção de um aplicativo usando a API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 O seguinte exemplo de código Java remove um aplicativo chamado *EncryptDocument*.
 
@@ -250,4 +253,3 @@ O seguinte exemplo de código Java remove um aplicativo chamado *EncryptDocument
  } 
  
 ```
-

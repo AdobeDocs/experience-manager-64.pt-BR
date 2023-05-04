@@ -1,22 +1,26 @@
 ---
 title: Fluxos de trabalho centrados na Forms no OSGi | Tratamento de dados de utilizadores
-seo-title: Fluxos de trabalho centrados na Forms no OSGi | Tratamento de dados de utilizadores
+seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Os fluxos de trabalho de AEM centrados no Forms permitem automatizar processos de negócios centrados no Forms. Saiba mais sobre os dados e armazenamentos de dados do usuário. Saiba como acessar e excluir dados do usuário.
-seo-description: Os fluxos de trabalho de AEM centrados no Forms permitem automatizar processos de negócios centrados no Forms. Saiba mais sobre os dados e armazenamentos de dados do usuário. Saiba como acessar e excluir dados do usuário.
+seo-description: Forms-centric AEM workflows enable you to automate real-world Forms-centric business processes. Dig deeper on user data and data stores. Learn how to access and delete user data.
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 0%
+source-wordcount: '1069'
+ht-degree: 1%
 
 ---
 
 # Fluxos de trabalho centrados na Forms no OSGi | Tratamento de dados de utilizadores {#forms-centric-workflows-on-osgi-handling-user-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os fluxos de trabalho de AEM centrados no Forms permitem automatizar processos de negócios centrados no Forms. Os workflows consistem em uma série de etapas executadas em uma ordem especificada no modelo de workflow associado. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços. Portanto, os workflows podem coordenar atividades complicadas que envolvem qualquer aspecto do Experience Manager.
 
@@ -28,7 +32,7 @@ Um fluxo de trabalho centrado em formulários pode ser acionado ou iniciado por 
 * Uso de uma pasta assistida
 * Envio de uma comunicação interativa ou uma carta
 
-Para obter mais informações sobre fluxos de trabalho e recursos de AEM centrados no Forms, consulte [Fluxo de trabalho centrado no Forms em OSGi](/help/forms/using/aem-forms-workflow.md).
+Para obter mais informações sobre fluxos de trabalho e recursos de AEM centrados no Forms, consulte [Fluxo de trabalho centrado no Forms no OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
@@ -48,7 +52,7 @@ Os locais padrão do repositório onde reside a carga, os rascunhos e o históri
    <td>AEM 6.3 Forms</td> 
   </tr> 
   <tr> 
-   <td><strong>Instância <br /> do fluxo de trabalho</strong></td> 
+   <td><strong>Fluxo de trabalho <br /> instância</strong></td> 
    <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td> 
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td> 
   </tr> 
@@ -59,12 +63,12 @@ Os locais padrão do repositório onde reside a carga, os rascunhos e o históri
   </tr> 
   <tr> 
    <td><strong>Rascunhos</strong></td> 
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [data]/[workflow-instance]/rascunho/[workitem]/</td> 
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [data]/[workflow-instance]/rascunho/[workitem]/</td> 
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/rascunho/[workitem]/</td> 
+   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/rascunho/[workitem]/</td> 
   </tr> 
   <tr> 
    <td><strong>História</strong></td> 
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [data]/[workflow_instance]/history/</td> 
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td> 
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td> 
   </tr> 
  </tbody> 
@@ -76,16 +80,16 @@ Você pode acessar e excluir dados do usuário de uma instância de workflow no 
 
 No entanto, você não pode identificar ou os resultados podem ser ambíguos ao identificar workflows associados a um iniciador nos seguintes cenários:
 
-* **O fluxo de trabalho é acionado por meio de uma pasta** monitorada: Uma instância de workflow não pode ser identificada usando seu iniciador se o workflow for acionado por uma pasta monitorada. Nesse caso, as informações do usuário são codificadas nos dados armazenados.
-* **Fluxo de trabalho iniciado da instância** de publicação AEM: Todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando formulários adaptáveis, comunicações interativas ou cartas são enviadas AEM instância de publicação. Nesses casos, o nome de usuário do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
+* **Fluxo de trabalho acionado por meio de uma pasta monitorada**: Uma instância de workflow não pode ser identificada usando seu iniciador se o workflow for acionado por uma pasta monitorada. Nesse caso, as informações do usuário são codificadas nos dados armazenados.
+* **Fluxo de trabalho iniciado a partir da instância de publicação AEM**: Todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando formulários adaptáveis, comunicações interativas ou cartas são enviadas AEM instância de publicação. Nesses casos, o nome de usuário do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
 
 ### Acessar dados do usuário {#access}
 
 Para identificar e acessar os dados do usuário armazenados para uma instância de workflow, execute as seguintes etapas:
 
-1. Em AEM instância do autor, vá para `https://[server]:[port]/crx/de` e navegue até **[!UICONTROL Ferramentas > Consulta]**.
+1. Na instância AEM autor, acesse `https://[server]:[port]/crx/de` e navegue até **[!UICONTROL Ferramentas > Consulta]**.
 
-   Selecione **[!UICONTROL SQL2]** no menu suspenso **[!UICONTROL Type]**.
+   Selecionar **[!UICONTROL SQL2]** do **[!UICONTROL Tipo]** lista suspensa.
 
 1. Dependendo das informações disponíveis, execute uma das seguintes consultas:
 
@@ -99,7 +103,7 @@ Para identificar e acessar os dados do usuário armazenados para uma instância 
 
    A query retorna o local de todas as instâncias de fluxo de trabalho para o iniciador do fluxo de trabalho especificado ou o destinatário do fluxo de trabalho atual.
 
-   Por exemplo, a consulta a seguir retorna dois caminhos de instâncias de fluxo de trabalho do nó `/var/workflow/instances` cujo iniciador do fluxo de trabalho é `srose`.
+   Por exemplo, a consulta a seguir retorna dois caminhos de instâncias de fluxo de trabalho da variável `/var/workflow/instances` nó cujo iniciador do fluxo de trabalho é `srose`.
 
    ![instância de fluxo de trabalho](assets/workflow-instance.png)
 
@@ -107,7 +111,7 @@ Para identificar e acessar os dados do usuário armazenados para uma instância 
 
    ![status](assets/status.png)
 
-1. No nó da instância do fluxo de trabalho, navegue até `data/payload/`. A propriedade `path` armazena o caminho para a carga da instância do fluxo de trabalho. Você pode navegar até o caminho para acessar dados armazenados no payload.
+1. No nó da instância do fluxo de trabalho, navegue até `data/payload/`. O `path` armazena o caminho para a carga da instância do fluxo de trabalho. Você pode navegar até o caminho para acessar dados armazenados no payload.
 
    ![payload-path](assets/payload-path.png)
 
@@ -129,25 +133,25 @@ Para identificar e acessar os dados do usuário armazenados para uma instância 
 
 Você deve ser um administrador AEM para excluir dados do usuário das instâncias do fluxo de trabalho, executando as seguintes etapas:
 
-1. Siga as instruções em [Acessar dados do usuário](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) e anote o seguinte:
+1. Siga as instruções em [Acessar dados do usuário](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) e tomar nota do seguinte:
 
    * Caminhos para instâncias de fluxo de trabalho associadas ao usuário
    * Status das instâncias de fluxo de trabalho
    * Caminhos para cargas das instâncias do fluxo de trabalho
    * Caminhos para rascunhos e histórico das instâncias do fluxo de trabalho
 
-1. Execute esta etapa para instâncias de fluxo de trabalho em **EXECUTANDO**, **SUSPENDIDO** ou **ESCALA** status:
+1. Execute esta etapa para instâncias de fluxo de trabalho em **EM EXECUÇÃO**, **SUSPENSA** ou **STALE** status:
 
-   1. Vá para `https://[server]:[port]/aem/start.html` e faça logon com credenciais de administrador.
-   1. Navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho> Instâncias]**.
-   1. Selecione as instâncias de fluxo de trabalho relevantes para o usuário e toque em **[!UICONTROL Encerrar]** para encerrar as instâncias em execução.
+   1. Ir para `https://[server]:[port]/aem/start.html` e faça logon com credenciais de administrador.
+   1. Navegar para **[!UICONTROL Ferramentas > Fluxo de trabalho > Instâncias]**.
+   1. Selecione as instâncias de fluxo de trabalho relevantes para o usuário e toque em **[!UICONTROL Encerrar]** para encerrar instâncias em execução.
 
    Para obter mais informações sobre como trabalhar com instâncias de fluxo de trabalho, consulte [Administração de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md).
 
-1. Vá para o console CRXDE Lite, navegue até o caminho de carga de uma instância de fluxo de trabalho e exclua o nó `payload`.
-1. Navegue até o caminho de rascunhos de uma instância de fluxo de trabalho e exclua o nó `draft`.
-1. Navegue até o caminho do histórico para uma instância de workflow e exclua o nó `history`.
-1. Navegue até o caminho da instância do fluxo de trabalho para uma instância do fluxo de trabalho e exclua o nó `[workflow-instance-ID]` do fluxo de trabalho.
+1. Vá para o console CRXDE Lite, navegue até o caminho de carga de uma instância de fluxo de trabalho e exclua o `payload` nó .
+1. Navegue até o caminho de rascunhos de uma instância de fluxo de trabalho e exclua o `draft` nó .
+1. Navegue até o caminho do histórico para uma instância de fluxo de trabalho e exclua o `history` nó .
+1. Navegue até o caminho da instância do fluxo de trabalho para uma instância do fluxo de trabalho e exclua o `[workflow-instance-ID]` nó do fluxo de trabalho.
 
    >[!NOTE]
    >

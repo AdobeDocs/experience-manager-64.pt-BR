@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
 # Práticas recomendadas para converter ativos com eficiência {#best-practices-for-translating-assets-efficiently}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Adobe Experience Manager Assets oferece suporte a fluxos de trabalho multilíngues para traduzir binários, metadados e tags de ativos digitais em várias localidades e gerenciar os ativos traduzidos. Para obter detalhes, consulte [Ativos multilíngues](multilingual-assets.md).
 
@@ -28,22 +32,22 @@ O File Data Store e o Amazon S3 Data Store fornecem uma infraestrutura de armaze
 
 Você também pode fazer algumas alterações na configuração de alguns fluxos de trabalho e na estrutura de integração de tradução para simplificar ainda mais o processo.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * [Configurar Arquivo Data Store](/help/sites-deploying/data-store-config.md)
    * [Configurar o Data Store do Amazon S3](/help/sites-deploying/data-store-config.md)
 
-1. Desative o workflow [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading)
+1. Desative o [Writeback de MetaData do DAM](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow
 
-   Como o nome sugere, o workflow *DAM Metadata Writeback* reescreve os metadados para o arquivo binário. Como os metadados mudam após a tradução, a gravação de volta no arquivo binário gera um binário diferente para uma cópia de idioma.
+   Como o nome sugere, a variável *Writeback de metadados DAM* O workflow reescreve os metadados para o arquivo binário. Como os metadados mudam após a tradução, a gravação de volta no arquivo binário gera um binário diferente para uma cópia de idioma.
 
    >[!NOTE]
    >
-   >Desativar o fluxo de trabalho *DAM MetaData Writeback* desativa XMP gravação de metadados em binários de ativos. Consequentemente, alterações futuras de metadados não são mais salvas nos ativos. Avalie as consequências antes de desabilitar esse workflow.
+   >Desabilitação do *Writeback de MetaData do DAM* O fluxo de trabalho desativa XMP gravação de metadados em binários de ativos. Consequentemente, alterações futuras de metadados não são mais salvas nos ativos. Avalie as consequências antes de desabilitar esse workflow.
 
-1. Habilite o workflow *Definir data da última modificação*.
+1. Ative o *Definir data da última modificação* fluxo de trabalho.
 
-   O workflow *DAM MetaData Writeback* configura a data da última modificação para um ativo. Como você desativa esse fluxo de trabalho na etapa 2, [!DNL Experience Manager Assets] não é mais capaz de manter a data da última modificação dos ativos atualizada. Portanto, ative o workflow *Definir data da última modificação* para garantir que as datas da última modificação dos ativos estejam atualizadas. Os ativos com datas da última modificação desatualizadas podem causar erros.
+   O *Writeback de MetaData do DAM* O fluxo de trabalho configura a data da última modificação de um ativo. Como você desativa esse fluxo de trabalho na etapa 2, [!DNL Experience Manager Assets] O não pode mais manter a data da última modificação dos ativos atualizada. Portanto, ative a *Definir data da última modificação* fluxo de trabalho para garantir que as datas da última modificação dos ativos estejam atualizadas. Os ativos com datas da última modificação desatualizadas podem causar erros.
 
-1. [Configure a ](/help/sites-administering/tc-tic.md) estrutura de integração de tradução para parar a tradução de binários de ativos. Desmarque a opção &quot;Traduzir ativos&quot; na guia Ativos para interromper a tradução dos binários do ativo.
+1. [Configurar a estrutura de integração de tradução](/help/sites-administering/tc-tic.md) para interromper a tradução de binários de ativos. Desmarque a opção &quot;Traduzir ativos&quot; na guia Ativos para interromper a tradução dos binários do ativo.
 1. Traduza metadados/tags de ativos usando [Fluxos de trabalho de ativos multilíngues](multilingual-assets.md).

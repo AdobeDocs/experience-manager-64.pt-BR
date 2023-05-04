@@ -1,44 +1,47 @@
 ---
-title: Configurar o componente Vídeo
-seo-title: Configurar o componente Vídeo
+title: Configurar o componente de Vídeo
+seo-title: Configure the Video component
 description: Saiba como configurar o Componente de vídeo.
-seo-description: Saiba como configurar o Componente de vídeo.
+seo-description: Learn how to configure the Video Component.
 uuid: f4755a13-08ea-4096-a951-46a590f8d766
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
-translation-type: tm+mt
-source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
+exl-id: 46d0765d-fb77-4332-8fbb-5bd2abcd6806
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 8%
+source-wordcount: '460'
+ht-degree: 2%
 
 ---
 
-
 # Configurar o componente de Vídeo {#configure-the-video-component}
-
-O [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) permite que você coloque um elemento de vídeo OOTB (out-of-the-box) predefinido na sua página.
-
-Para que ocorra a transcodificação correta, o administrador deve [Instalar FFmpeg e configurar AEM](#install-ffmpeg) separadamente. Eles também podem [Configurar os perfis de vídeo](#configure-video-profiles) para uso com elementos de HTML5.
 
 >[!CAUTION]
 >
->Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+O [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) permite colocar um elemento de vídeo OOTB (pronto para uso) predefinido na sua página.
+
+Para que ocorra a transcodificação adequada, o administrador deve [Instale o FFmpeg e configure o AEM](#install-ffmpeg) separadamente. Eles também podem [Configurar os perfis de vídeo](#configure-video-profiles) para uso com elementos HTML5.
+
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione imediatamente sem uma personalização abrangente no nível do projeto.
 
 ## Configurar perfis de vídeo {#configure-video-profiles}
 
-Talvez você queira definir perfis de vídeo para usar em elementos HTML5. Os escolhidos aqui são usados em ordem. Para acessar, use o [Modo de design](/help/sites-authoring/default-components-designmode.md) (Somente interface clássica) e selecione a guia **[!UICONTROL Perfis]**:
+Talvez você queira definir perfis de vídeo para usar em elementos do HTML5. Os escolhidos aqui são usados em ordem. Para acessar, use [Modo Design](/help/sites-authoring/default-components-designmode.md) (Somente interface clássica) e selecione o **[!UICONTROL Perfis]** guia :
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-Você também pode configurar o design dos componentes e parâmetros do vídeo para [!UICONTROL Reprodução], [!UICONTROL Flash] e [!UICONTROL Avançado].
+Você também pode configurar o design dos componentes e parâmetros de vídeo para [!UICONTROL Reprodução], [!UICONTROL Flash]e [!UICONTROL Avançado].
 
-## Instalar FFmpeg e configurar AEM {#install-ffmpeg}
+## Instale o FFmpeg e configure o AEM {#install-ffmpeg}
 
-O Componente de vídeo depende do produto FFmpeg de código aberto de terceiros para a transcodificação adequada de vídeos que podem ser baixados de [https://ffmpeg.org/](https://ffmpeg.org/). Depois de instalar o FFmpeg, é necessário configurar o AEM para usar um codec de áudio específico e opções específicas de tempo de execução.
+O Componente de vídeo depende do produto FFmpeg de código aberto de terceiros para obter a transcodificação adequada dos vídeos que podem ser baixados de [https://ffmpeg.org/](https://ffmpeg.org/). Após instalar o FFmpeg, é necessário configurar o AEM para usar um codec de áudio específico e opções específicas de tempo de execução.
 
 **Para instalar o FFmpeg para a sua plataforma**:
 
@@ -46,7 +49,7 @@ O Componente de vídeo depende do produto FFmpeg de código aberto de terceiros 
 
    1. Baixe o binário compilado como `ffmpeg.zip`
    1. Descompacte para uma pasta.
-   1. Defina a variável de ambiente do sistema `PATH` como `<*your-ffmpeg-locatio*n>\bin`
+   1. Definir a variável de ambiente do sistema `PATH` para `<*your-ffmpeg-locatio*n>\bin`
    1. Reinicie o AEM.
 
 * **No Mac OS X:**
@@ -58,20 +61,20 @@ O Componente de vídeo depende do produto FFmpeg de código aberto de terceiros 
 
       `sudo port install ffmpeg`
 
-      `FFmpeg` deve estar dentro  `PATH` para que AEM possa pegá-lo pela linha de comando.
+      `FFmpeg` deve estar em `PATH` para que AEM possa selecioná-lo por meio da linha de comando.
 
-* **Usar a versão pré-compilada para o OS X 10.6:**
+* **Uso da versão pré-compilada para o OS X 10.6:**
 
    1. Baixe a versão pré-compilada.
-   1. Extraia-o para o diretório `/usr/local`.
+   1. Extraia-o para o `/usr/local` diretório.
    1. No terminal, execute:
 
       `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`
 
 **Para configurar AEM**:
 
-1. Abra [!UICONTROL CRXDE Lite] no navegador da Web. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Selecione o nó `/libs/settings/dam/video/format_aac/jcr:content` e verifique se as propriedades do nó são as seguintes:
+1. Abrir [!UICONTROL CRXDE Lite] no navegador da Web. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Selecione o `/libs/settings/dam/video/format_aac/jcr:content` e garanta que as propriedades do nó sejam as seguintes:
 
    * audioCodec:
 
@@ -85,15 +88,14 @@ O Componente de vídeo depende do produto FFmpeg de código aberto de terceiros 
        -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
       ```
 
-1. Para personalizar a configuração, crie uma sobreposição no nó `/apps/settings/` e mova a mesma estrutura no nó `/conf/global/settings/`. Não pode ser editado no nó `/libs`. Por exemplo, para sobrepor o caminho `/libs/settings/dam/video/fullhd-bp`, crie-o em `/conf/global/settings/dam/video/fullhd-bp`.
+1. Para personalizar a configuração, crie uma sobreposição em `/apps/settings/` nó e mova a mesma estrutura em `/conf/global/settings/` nó . Não pode ser editado em `/libs` nó . Por exemplo, para sobrepor o caminho `/libs/settings/dam/video/fullhd-bp`, crie-o em `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
-   >Sobreponha e edite todo o nó do perfil e não apenas a propriedade que precisa de modificação. Tais recursos não são resolvidos através da SlingResourceFusão.
+   >Sobreponha e edite todo o nó do perfil e não apenas a propriedade que precisa de modificação. Esses recursos não são resolvidos através do SlingResourceMerger.
 
-1. Se você alterou qualquer uma das propriedades, clique em **[!UICONTROL Salvar tudo]**.
+1. Se tiver alterado qualquer uma das propriedades, clique em **[!UICONTROL Salvar tudo]**.
 
 >[!NOTE]
 >
->Os modelos de fluxo de trabalho OTB não são preservados quando você atualiza sua instância AEM. O Adobe recomenda que você copie modelos de fluxo de trabalho OTB antes de editá-los. Por exemplo, copie o modelo de Ativo de atualização de DAM OOTB antes de editar a etapa de Transcodificação FFmpeg no modelo de Ativo de atualização de DAM para selecionar nomes de perfis de vídeo existentes antes da atualização. Em seguida, você pode sobrepor o nó `/apps` para permitir que AEM recupere as alterações personalizadas no modelo OTB.
-
+>Os modelos de fluxo de trabalho OOTB não são preservados quando você atualiza sua instância do AEM. O Adobe recomenda que você copie modelos de fluxo de trabalho OTB antes de editá-los. Por exemplo, copie o modelo de Ativo de atualização do DAM OOTB antes de editar a etapa Transcodificação do FFmpeg no modelo de Ativo de atualização do DAM para escolher nomes de perfil de vídeo existentes antes da atualização. Em seguida, é possível sobrepor o `/apps` nó para permitir AEM recuperar as alterações personalizadas no modelo OOTB.

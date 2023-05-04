@@ -13,39 +13,43 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
 feature: Viewer Presets
 role: Admin,User
-source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4256'
 ht-degree: 12%
 
 ---
 
 # Gerenciar predefinições do visualizador do Dynamic Media {#managing-viewer-presets}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 Uma predefinição do visualizador do Dynamic Media é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Se você for um administrador, poderá criar Predefinições do visualizador. As configurações estão disponíveis para uma matriz de opções de configuração do visualizador. Por exemplo, você pode alterar o tamanho de exibição do visualizador ou o comportamento de zoom.
 
-Para obter instruções sobre como criar e personalizar suas próprias predefinições do visualizador do HTML5, consulte a Documentação da API do SDK do visualizador do HTML *5 do Adobe Dynamic Media.* O SDK está disponível no servidor de publicação do IS incorporado no próprio SDK. Cada versão da biblioteca tem sua própria documentação do SDK incluída.
+Para obter instruções sobre como criar e personalizar suas próprias predefinições do visualizador do HTML5, consulte o Adobe Dynamic Media *Documentação da API do SDK do visualizador do HTML5*. O SDK está disponível no servidor de publicação do IS incorporado no próprio SDK. Cada versão da biblioteca tem sua própria documentação do SDK incluída.
 
 Caminho: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Por exemplo, 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte também o [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+Consulte também a [Guia de referência de visualizadores do Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 Esta seção descreve como criar, editar e gerenciar predefinições do visualizador. Você pode aplicar uma predefinição do visualizador a um ativo a qualquer momento que o visualizar. Consulte [Aplicação de predefinições do visualizador](viewer-presets.md).
 
 >[!NOTE]
 >
->Observe que a edição de qualquer *predefinições predefinidas e predefinidas do visualizador* não é um cenário suportado. Se você tentar editar uma predefinição do visualizador pronta para uso, será solicitado que você salve a predefinição do visualizador usando um novo nome.
+>Esteja ciente de que editar qualquer *predefinições predefinidas e prontas para uso do visualizador* não é um cenário compatível. Se você tentar editar uma predefinição do visualizador pronta para uso, será solicitado que você salve a predefinição do visualizador usando um novo nome.
 
 ## Acessibilidade de teclado para visualizadores {#keyboard-accessibility-for-viewers}
 
 Todos os visualizadores prontos para uso suportam acessibilidade do teclado.
 
-Consulte também [Acessibilidade do teclado e navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
+Consulte também [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
 ## Gerenciar predefinições do visualizador do Dynamic Media {#managing-presets}
 
-Adicione, edite, exclua, publique, cancele a publicação e visualize predefinições do visualizador no AEM ao tocar em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
+Você pode adicionar, editar, excluir, publicar, cancelar a publicação e visualizar predefinições do visualizador no AEM ao tocar em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
 
 ![ativos-ferramentas](assets/tools-assets.png)
 
@@ -53,16 +57,16 @@ Adicione, edite, exclua, publique, cancele a publicação e visualize predefini�
 >
 >Por padrão, o sistema mostra 15 predefinições do visualizador ao selecionar Visualizadores na exibição detalhada de um ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições do visualizador exibidas](#increasing-the-number-of-viewer-presets-that-display).
 
-## Suporte de visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
+## Suporte para visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
 
-Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador do HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador do HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser *responsivo* e exibido de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
+Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador do HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador do HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser *responsivo* e são exibidos de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
 
-Consulte [Biblioteca de imagens responsivas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) na *Ajuda da API de disponibilização de imagens* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
+Consulte [Biblioteca de imagens responsivas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) no *Ajuda da API de disponibilização de imagens* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
 
 >[!NOTE]
 >
 >Observe que você deve publicar todos os visualizadores prontos para uso antes de usá-los pela primeira vez.\
->Consulte [Predefinições do Visualizador de Publicação.](#publishing-viewer-presets)
+>Consulte [Predefinições do visualizador de publicação.](#publishing-viewer-presets)
 
 ## Compatibilidade do sistema predefinido do visualizador  {#viewer-preset-system-compatibility}
 
@@ -73,7 +77,7 @@ Todas as predefinições do visualizador prontas para uso que acompanham o Dynam
 * Apple iPad
 * Android Smartphone
 * Tablet Android
-* Para vídeo, é fornecido suporte adicional para reprodução MP4 para [Blackberry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
+* Para vídeo, é fornecido suporte adicional para reprodução MP4 para [BlackBerry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
 
 ### Tipos de mídia avançada para predefinições do visualizador {#rich-media-types-for-viewer-presets}
 
@@ -103,19 +107,19 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
 
 A tabela a seguir identifica todas as predefinições do visualizador predefinidas e prontas para uso que acompanham o Dynamic Media.
 
-Consulte também [Demonstrações em tempo real](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Consulte também [Demonstrações ao vivo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Para obter informações sobre versões compatíveis de navegadores da Web e sistemas operacionais para visualizadores, consulte as Notas de versão dos visualizadores.
 
-Consulte *Notas de versão dos visualizadores* no índice do [Guia de referência dos visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+Consulte *Notas de versão dos visualizadores* no índice do [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 >[!NOTE]
 >
 >Todas as predefinições do visualizador prontas para uso no Dynamic Media já estão ativadas (ativadas), mas você deve publicá-las.\
 >Consulte [Predefinições do visualizador de publicação](#publishing-viewer-presets).
 >
->Todas as novas predefinições do visualizador criadas e adicionadas devem ser ativadas *e* publicadas.\
->Consulte [Ativando ou desativando predefinições do visualizador](#activating-or-deactivating-viewer-presets) e [Predefinições do visualizador de publicação](#publishing-viewer-presets).
+>Todas as novas predefinições do visualizador criadas e adicionadas devem ser ativadas *e* publicado.\
+>Consulte [Ativar ou desativar predefinições do visualizador](#activating-or-deactivating-viewer-presets) e [Predefinições do visualizador de publicação](#publishing-viewer-presets).
 
 | Título da predefinição do visualizador | Tipo | Nome do arquivo CSS |
 |:---|:---|:---|
@@ -149,10 +153,10 @@ Consulte *Notas de versão dos visualizadores* no índice do [Guia de referênci
 
 A tabela a seguir identifica os gestos do visualizador móvel que são compatíveis com dispositivos iOS, Android 2.x e Android 3.x.
 
-| Gesto | Zoom do Flyout | Zoom | Rotação |
+| Gesto | Flyout Zoom | Zoom | Rotação |
 |---|---|---|---|
 | **Arrastar** | Canetas | Canetas | Canetas |
-| **Tocar** | Mostra a janela do flyout | Mostra ou oculta a interface do usuário | Mostra ou oculta a interface do usuário |
+| **Toque** | Mostra a janela do flyout | Mostra ou oculta a interface do usuário | Mostra ou oculta a interface do usuário |
 | **Toque duplo** | Não se aplica | Amplia ou redefine | Amplia ou redefine |
 | **Pinça aberta** | Não se aplica | Ampliação (somente iOS e Android 3x) | Ampliação (somente iOS e Android 3x) |
 | **Feche a pinça** | Não se aplica | Diminui o zoom (somente iOS e Android 3x) | Diminui o zoom (somente iOS e Android 3x) |
@@ -165,7 +169,7 @@ AEM mostra uma grande variedade de predefinições do visualizador ao visualizar
 
 **Para aumentar o número de predefinições do visualizador do Dynamic Media exibidas**:
 
-1. Navegue até **[!UICONTROL CRXDE Lite]** ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Navegar para **[!UICONTROL CRXDE Lite]** ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Navegue até o nó da listagem de predefinições do visualizador em `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
@@ -175,52 +179,52 @@ AEM mostra uma grande variedade de predefinições do visualizador ao visualizar
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. Na propriedade **[!UICONTROL limit]**, altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Toque em **[!UICONTROL Salvar tudo]**.
+1. No **[!UICONTROL limite]** , altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Toque **[!UICONTROL Salvar tudo]**.
 
 ## Criação de uma nova predefinição do visualizador do Dynamic Media {#creating-a-new-viewer-preset}
 
 A criação de predefinições do visualizador permite aplicar várias configurações para visualizar e interagir com ativos. No entanto, não é necessário criar novas predefinições do visualizador. Se preferir, você pode usar as predefinições padrão do visualizador pronto para uso que já vêm com o AEM Assets.
 
-Se você optar por criar uma nova predefinição do visualizador, depois de salvá-la, o estado do visualizador será ativado automaticamente (definido como **On**) na página **[!UICONTROL Predefinições do visualizador]**. Esse estado significa que está visível no componente **[!UICONTROL Dynamic Media]** e no componente **[!UICONTROL Mídia interativa]** e sempre que você visualiza uma imagem ou vídeo.
+Se você optar por criar uma nova predefinição do visualizador, depois de salvá-la, o estado do visualizador será ativado automaticamente (definido como **Ligado**) na **[!UICONTROL Predefinições do visualizador]** página. Esse estado significa que é visível no **[!UICONTROL Dynamic Media]** e o **[!UICONTROL Mídia interativa]** e sempre que você visualizar uma imagem ou vídeo.
 
 Algumas predefinições do visualizador têm configurações exclusivas que podem afetar o uso e o comportamento geral do visualizador. Dependendo da predefinição do visualizador que você estiver criando, talvez você queira estar ciente dessas considerações especiais.
 
 Consulte [Considerações especiais para criar uma predefinição do Visualizador interativo](#special-considerations-for-creating-an-interactive-viewer-preset).
 
-Consulte [Considerações especiais para criar uma predefinição do Visualizador do banner do carrossel](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
+Consulte [Considerações especiais para criar uma predefinição de Visualizador de banner do carrossel](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
-**Para criar uma nova predefinição** do visualizador do Dynamic Media:
+**Para criar uma nova predefinição do visualizador do Dynamic Media**:
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
 
    ![predefinições do visualizador](assets/viewerpresets.png)
 
-1. Na página **[!UICONTROL Predefinições do visualizador]** , na barra de ferramentas, toque em **[!UICONTROL Criar]**.
-1. Na caixa de diálogo **[!UICONTROL New Viewer Preset]**, no campo **[!UICONTROL Preset Name]**, digite o nome da nova predefinição. Escolha um nome com cuidado, eles não são editáveis depois de tocar em **[!UICONTROL Create]**.
+1. No **[!UICONTROL Predefinições do visualizador]** na barra de ferramentas, toque em **[!UICONTROL Criar]**.
+1. No **[!UICONTROL Nova predefinição do visualizador]** na caixa de diálogo , na **[!UICONTROL Nome da predefinição]** , insira o nome da nova predefinição. Escolha um nome com cuidado, eles não são editáveis depois de tocar em **[!UICONTROL Criar]**.
 
-   Quando você salvar a predefinição posteriormente nessas etapas, o nome aparecerá na página Predefinições do visualizador no cabeçalho da coluna **[!UICONTROL Título da predefinição]**.
+   Quando você salvar a predefinição posteriormente nessas etapas, o nome aparecerá na página Predefinições do visualizador sob a **[!UICONTROL Título da predefinição]** cabeçalho da coluna.
 
-1. No menu suspenso **[!UICONTROL Rich Media Type]**, selecione o tipo de predefinição do visualizador que deseja criar e, no canto superior direito da página, toque em **[!UICONTROL Criar]**.
+1. No **[!UICONTROL Tipo de mídia avançada]** no menu suspenso, selecione o tipo de predefinição do visualizador que deseja criar e, no canto superior direito da página, toque em **[!UICONTROL Criar]**.
 
    Consulte [Tipos de mídia avançada para predefinições do visualizador](#rich-media-types-for-viewer-presets).
 
-1. Na página **Editar predefinição do visualizador**, toque na guia **[!UICONTROL Aparência]**.
-1. Faça uma das seguintes opções:
+1. No **Editar predefinição do visualizador** toque na página **[!UICONTROL Aparência]** guia .
+1. Siga uma das seguintes opções:
 
-   * No menu suspenso **[!UICONTROL Tipo selecionado]**, selecione um componente cujo design visual você deseja personalizar. Como alternativa, toque em qualquer elemento visual no visualizador para selecioná-lo para configuração.
+   * No **[!UICONTROL Tipo selecionado]** selecione um componente cujo design visual você deseja personalizar. Como alternativa, toque em qualquer elemento visual no visualizador para selecioná-lo para configuração.
 
       O editor visual permite ver qual efeito uma determinada propriedade tem em um estilo. Basta definir ou ajustar qualquer propriedade para ver instantaneamente qual efeito ela tem no visualizador usando a amostra à esquerda do editor.
 
-      As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas no tópico de Ajuda &quot;Personalizando *&lt;nome_do_visualizador>* visualizador&quot; no [Guia de referência do visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+      As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas em qualquer &quot;Personalização *&lt;viewer_name>* Visualizador&quot; Tópico de Ajuda na [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
-      Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizando visualizador de mídia mista](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obter uma lista e uma descrição de cada propriedade.
+      Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalização do Visualizador de mídia mista](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obter uma lista e a descrição de cada propriedade.
 
-   * Se você tiver definido as configurações de estilo em um arquivo CSS separado, é possível fazer upload do arquivo CSS para o AEM Assets. Toque em **[!UICONTROL Importar CSS]** abaixo do menu suspenso **[!UICONTROL Tipo selecionado]** (talvez seja necessário rolar o editor visual para cima para vê-lo) para encontrar o arquivo CSS carregado e associá-lo à predefinição do visualizador.
+   * Se você tiver definido as configurações de estilo em um arquivo CSS separado, é possível fazer upload do arquivo CSS para o AEM Assets. Toque **[!UICONTROL Importar CSS]** abaixo do **[!UICONTROL Tipo selecionado]** menu suspenso (talvez seja necessário rolar o editor visual para cima para vê-lo) para localizar o arquivo CSS carregado e associá-lo à predefinição do visualizador.
 
-      Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores do visualizador corretos. Por exemplo, se você estiver criando um visualizador de Zoom, todas as regras de CSS importadas devem ser definidas usando o nome da classe do visualizador `.s7mixedmediaviewer` definido em um elemento do visualizador pai.
+      Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores do visualizador corretos. Por exemplo, se você estiver criando um visualizador de Zoom, todas as regras de CSS importadas devem ser definidas usando o nome da classe do visualizador `.s7mixedmediaviewer` definido em um elemento de visualizador pai.
 
-      Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores de CSS para um determinado visualizador. (Os marcadores CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando *&lt;nome do visualizador>* visualizador&quot; no [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalizando Visualizador de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) No entanto, é possível que o editor visual não entenda alguns valores de CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
+      Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores de CSS para um determinado visualizador. (Os marcadores CSS são descritos em qualquer &quot;Personalização *&lt;viewer name=&quot;&quot;>* Visualizador&quot; Tópico de Ajuda na [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalização do Visualizador de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) No entanto, é possível que o editor visual não entenda alguns valores de CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
    >[!NOTE]
    >
    >Se preferir editar o CSS diretamente em sua forma bruta, toque em **[!UICONTROL Mostrar/Ocultar CSS]** abaixo do menu suspenso Tipo selecionado (talvez seja necessário rolar o editor visual para cima para vê-lo).****
@@ -231,8 +235,8 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
    >
    >Para arte-final de botão, escolha a imagem 2x e faça upload de arte de alta resolução. Ao trabalhar com imagens interativas e banners que podem ser comprados, também é possível selecionar a partir de vários botões de ponto de acesso prontos para uso.
 
-1. (Opcional) Próximo à parte superior da página **[!UICONTROL Editar predefinição do visualizador]**, toque em **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** ou **[!UICONTROL Telefone]** para definir estilos visuais de forma exclusiva para diferentes tipos de dispositivo e tela.
-1. Na página **[!UICONTROL Editar predefinição do visualizador]**, toque na guia **Comportamento**. Como alternativa, toque ou clique em qualquer elemento visual no visualizador para selecioná-lo para configuração.
+1. (Opcional) Próximo à parte superior do **[!UICONTROL Editar predefinição do visualizador]** página, toque em **[!UICONTROL Desktop]**, **[!UICONTROL Comprimido]** ou **[!UICONTROL Telefone]** para definir estilos visuais de forma exclusiva para diferentes tipos de dispositivos e telas.
+1. No **[!UICONTROL Editar predefinição do visualizador]** toque na página **Comportamento** guia . Como alternativa, toque ou clique em qualquer elemento visual no visualizador para selecioná-lo para configuração.
 1. No menu suspenso **[!UICONTROL Tipo selecionado]**, selecione um componente cujos comportamentos você deseja alterar.
 
    Muitos componentes no editor visual têm uma descrição detalhada associada a ela. Essas descrições são exibidas em caixas azuis quando você expande um componente para revelar seus parâmetros associados.
@@ -254,19 +258,19 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
 
 **Sobre modos de exibição para miniaturas de imagem no painel**
 
-Ao criar ou editar uma predefinição do visualizador de Vídeo interativo, você tem a opção de qual configuração **[!UICONTROL Modo de exibição]** usar ao selecionar `InteractiveSwatches` no menu suspenso **[!UICONTROL Componente selecionado]** sob a guia **[!UICONTROL Comportamento]**. O modo de exibição escolhido afeta a forma como e quando as miniaturas são exibidas durante a reprodução do vídeo. Você pode escolher um `segment`modo de exibição (padrão) ou um `continuous`modo de exibição.
+Ao criar ou editar uma predefinição do visualizador de Vídeo interativo, você pode escolher qual **[!UICONTROL Modo de exibição]** configuração a ser usada ao selecionar `InteractiveSwatches` do **[!UICONTROL Componente selecionado]** menu suspenso abaixo do **[!UICONTROL Comportamento]** guia . O modo de exibição escolhido afeta a forma como e quando as miniaturas são exibidas durante a reprodução do vídeo. Você pode escolher uma `segment`modo de exibição (padrão) ou um `continuous`modo de exibição.
 
 | Modo de exibição | Descrição |
 |---|---|
-| [!UICONTROL Segmento] |  Segmenta o modo de exibição padrão das predefinições do Visualizador de vídeo interativo prontas para uso do Visualizador de vídeo interativo Shoppable_Video_light e Shoppable_Video_dark, além de qualquer predefinição do Visualizador de vídeo interativo que você mesmo cria. |
+| [!UICONTROL Segmento] | [!UICONTROL Segmento] é o modo de exibição padrão para as predefinições prontas para uso do Visualizador de vídeo interativo Shoppable_Video_light e Shoppable_Video_dark e qualquer predefinição do Visualizador de vídeo interativo que você mesmo cria. |
 |  | Nesse modo, quando há menos miniaturas atribuídas a um segmento de vídeo do que o número de pontos visíveis no painel de exibição, as miniaturas do subsegmento seguinte ou anterior não são recebidas para preencher nenhum ponto vazio no painel. Ou seja, preserva a exibição de amostras atribuídas ao segmento específico do vídeo. |
-| [!UICONTROL Contínuo] | No modo de exibição [!UICONTROL Continuous], se o número de miniaturas em um segmento for menor que o número visível no painel, o visualizador incluirá automaticamente a exibição de miniaturas do próximo segmento ou do segmento anterior, nos casos em que a última miniatura for exibida. |
+| [!UICONTROL Contínuo] | Em [!UICONTROL Contínuo] modo de exibição, se o número de miniaturas em um segmento for menor que o número visível no painel, o visualizador incluirá automaticamente a exibição de miniaturas do segmento seguinte ou do segmento anterior, nos casos em que a última miniatura for exibida. |
 
 **Sobre o comportamento de rolagem automática no visualizador de vídeo interativo**
 
 O comportamento de rolagem automática das miniaturas no visualizador de Vídeo interativo funciona independentemente do modo de exibição escolhido.
 
-Ao criar ou editar uma predefinição interativa do visualizador de vídeo, você acessa **[!UICONTROL Rolagem automática]** na guia **[!UICONTROL Comportamento]**. Na guia Comportamento, no menu suspenso **[!UICONTROL Componentes selecionados]**, toque em **[!UICONTROL InteractiveSwatches]**. A caixa de seleção **[!UICONTROL Rolagem automática]** está listada abaixo do campo de texto Comando IS.
+Ao criar ou editar uma predefinição interativa do visualizador de vídeo, você acessa **[!UICONTROL Rolagem automática]** do **[!UICONTROL Comportamento]** guia . Na guia Comportamento, no menu suspenso **[!UICONTROL Componentes selecionados]**, toque em **[!UICONTROL InteractiveSwatches]**. O **[!UICONTROL Rolagem automática]** A caixa de seleção está listada abaixo do campo de texto Comando IS .
 
 Se desativar a opção **[!UICONTROL Rolagem automática]** (desmarcar a caixa de seleção) na predefinição do visualizador, durante a reprodução do vídeo pelo usuário, o painel exibirá apenas a primeira imagem em miniatura em toda a duração do vídeo. Entretanto, um usuário pode rolar manualmente pelas miniaturas usando os ícones de seta para cima e para baixo, se desejar.
 
@@ -302,66 +306,66 @@ Ao criar predefinições do visualizador de banner do carrossel, a alteração d
 
 |  | **Descrição** | **Ações** |
 |---|---|---|
-| **Ícone do ponto de acesso** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na guia **[!UICONTROL Aparência]**, em **[!UICONTROL Componente selecionado]**, toque em **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Plano de fundo]** e, no campo **[!UICONTROL Imagem]**, navegue até a imagem de plano de fundo desejada. |
+| **Ícone do ponto de acesso** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, no **[!UICONTROL Aparência]** guia , em **[!UICONTROL Componente selecionado]**, toque em **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Plano de fundo]** e, no campo **[!UICONTROL Imagem]**, navegue até a imagem de plano de fundo desejada. |
 
 ## Ativação ou desativação das predefinições do visualizador do Dynamic Media {#activating-or-deactivating-viewer-presets}
 
-As Predefinições do visualizador disponíveis na interface do usuário dependem de quais estão ativas no modo Autor. Por padrão, uma predefinição do visualizador é *On* depois de criá-la. Se você desativar a predefinição, ela não será exibida no modo Autor. Se a predefinição for publicada. ele sempre será publicado independentemente de estar ligado ou desligado. Talvez você queira desativar as predefinições do visualizador se a lista se tornar muito difícil ou se não quiser que uma predefinição do visualizador seja disponibilizada para uso.
+As Predefinições do visualizador disponíveis na interface do usuário dependem de quais estão ativas no modo Autor. Por padrão, uma predefinição do visualizador é *Ligado* depois de criá-lo. Se você desativar a predefinição, ela não será exibida no modo Autor. Se a predefinição for publicada. ele sempre será publicado independentemente de estar ligado ou desligado. Talvez você queira desativar as predefinições do visualizador se a lista se tornar muito difícil ou se não quiser que uma predefinição do visualizador seja disponibilizada para uso.
 
-**Para ativar ou desativar as predefinições** do visualizador do Dynamic Media:
+**Para ativar ou desativar as predefinições do visualizador do Dynamic Media**:
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
-1. Na página **[!UICONTROL Predefinição do visualizador]**, no cabeçalho da coluna **[!UICONTROL Estado]**, toque no botão para ativar ou desativar uma predefinição do visualizador.
+1. No **[!UICONTROL Predefinição do visualizador]** na página **[!UICONTROL Estado]** no cabeçalho da coluna, toque no botão para ativar ou desativar uma predefinição do visualizador.
 
    As predefinições do visualizador ativadas têm o botão de alternância exibido à direita, dentro de uma caixa azul; as predefinições do visualizador desativadas têm o botão de alternância exibido à esquerda, dentro de uma caixa cinza-claro.
 
 ## Publicar predefinições do visualizador do Dynamic Media {#publishing-viewer-presets}
 
-Ativar (ou ativar *Ativado*) o estado de uma predefinição do visualizador significa que ela está visível no componente Dynamic Media, no componente Mídia interativa e sempre que você exibe um ativo.
+Ativar (ou ativar) *Ligado*) o estado de uma predefinição do visualizador significa que ela está visível no componente Dynamic Media, no componente Mídia interativa e sempre que você exibe um ativo.
 
-No entanto, para fornecer um ativo com uma predefinição do visualizador, a predefinição do visualizador também deve ser publicada. Todas as predefinições do visualizador devem ser ativadas *e* publicadas para obter o URL ou código incorporado de um ativo. Ative e publique todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media. As predefinições do visualizador personalizado criadas e adicionadas são ativadas automaticamente, mas também devem ser publicadas.
+No entanto, para fornecer um ativo com uma predefinição do visualizador, a predefinição do visualizador também deve ser publicada. Todas as predefinições do visualizador devem ser ativadas *e* publicado para obter o URL ou código incorporado de um ativo. Ative e publique todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media. As predefinições do visualizador personalizado criadas e adicionadas são ativadas automaticamente, mas também devem ser publicadas.
 
-Consulte [Ativando ou desativando predefinições do visualizador](#activating-or-deactivating-viewer-presets).
+Consulte [Ativar ou desativar predefinições do visualizador](#activating-or-deactivating-viewer-presets).
 
 Consulte também [Visualização de ativos](previewing-assets.md).
 
-**Para publicar predefinições** do visualizador do Dynamic Media:
+**Para publicar predefinições do visualizador do Dynamic Media**:
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
 1. Selecione uma ou mais predefinições do visualizador que você deseja publicar.
-1. Na barra de ferramentas, toque no ícone **[!UICONTROL Publish]**.
+1. Na barra de ferramentas, toque no botão **[!UICONTROL Publicar]** ícone .
 
 ## Classificação de predefinições do visualizador do Dynamic Media {#sorting-viewer-presets}
 
-**Para classificar as predefinições** do visualizador do Dynamic Media:
+**Para classificar as predefinições do visualizador do Dynamic Media**:
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, toque em **Ferramentas** (ícone de martelo) **[!UICONTROL > Ativos > Predefinições do visualizador]**.
 1. Clique em **[!UICONTROL Título da predefinição]**, **[!UICONTROL Tipo]**, **[!UICONTROL Publicado]** ou **[!UICONTROL Estado]** para classificar pelo cabeçalho da coluna. Por exemplo, clique em **[!UICONTROL Tipo]** para classificar os tipos de predefinição do visualizador em ordem alfabética ou não.
 
 ## Editar predefinições do visualizador do Dynamic Media {#editing-viewer-presets}
 
-Observe que a edição de qualquer *predefinições predefinidas e predefinidas do visualizador* não é um cenário suportado. Se você editar uma predefinição do visualizador pronta para uso, será solicitado que ela seja salva com um novo nome.
+Esteja ciente de que editar qualquer *predefinições predefinidas e prontas para uso do visualizador* não é um cenário compatível. Se você editar uma predefinição do visualizador pronta para uso, será solicitado que ela seja salva com um novo nome.
 
-**Para editar as predefinições** do visualizador do Dynamic Media:
+**Para editar predefinições do visualizador do Dynamic Media**:
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
 1. Selecione uma predefinição marcando a caixa à esquerda do título da predefinição do visualizador.
 1. Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
-1. Na página **[!UICONTROL Editar predefinição do visualizador]** faça as alterações desejadas na predefinição do visualizador.
-1. Faça uma das seguintes opções:
+1. No **[!UICONTROL Editar predefinição do visualizador]** faça as alterações desejadas na predefinição do visualizador.
+1. Siga uma das seguintes opções:
 
-   * Toque em **[!UICONTROL Salvar]** para salvar suas alterações e retornar à página **[!UICONTROL Predefinição do visualizador]**.
-   * Toque em **[!UICONTROL Cancelar]** para evitar alterações feitas e retornar à página **[!UICONTROL Predefinição do visualizador]**.
+   * Toque **[!UICONTROL Salvar]** para salvar suas alterações e retornar ao **[!UICONTROL Predefinição do visualizador]** página.
+   * Toque **[!UICONTROL Cancelar]** para evitar alterações feitas e retornar ao **[!UICONTROL Predefinição do visualizador]** página.
 
 ## Exclusão de predefinições personalizadas do visualizador do Dynamic Media {#deleting-custom-viewer-presets}
 
 É possível excluir as Predefinições do visualizador que você criou e adicionou ao Dynamic Media.
 
-**Para excluir predefinições** personalizadas do visualizador do Dynamic Media:
+**Para excluir predefinições personalizadas do visualizador do Dynamic Media**:
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
-1. Na página **[!UICONTROL Predefinições do visualizador]**, marque um **[!UICONTROL Título da predefinição]** e toque no ícone **[!UICONTROL Lixeira]**.
-1. Toque em **[!UICONTROL Excluir]**.
+1. No **[!UICONTROL Predefinições do visualizador]** verifique uma **[!UICONTROL Título da predefinição]** e toque em **[!UICONTROL Lixeira]** ícone .
+1. Toque **[!UICONTROL Excluir]**.
 
 ## Aplicar uma predefinição do visualizador do Dynamic Media a um ativo {#applying-a-viewer-preset-to-an-asset}
 
@@ -377,7 +381,7 @@ Se já tiver publicado o ativo e o visualizador selecionado, os botões **[!UICO
 
 1. Selecione uma predefinição do visualizador no painel esquerdo para aplicá-la ao ativo.
 
-   Você pode [copiar o URL para compartilhar](linking-urls-to-yourwebapplication.md) com outros usuários.
+   Você pode [copie o URL para compartilhar](linking-urls-to-yourwebapplication.md) com outros usuários.
 
 ## Entrega de ativos com predefinições do visualizador do Dynamic Media {#delivering-assets-with-viewer-presets}
 

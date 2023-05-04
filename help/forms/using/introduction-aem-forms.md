@@ -1,36 +1,39 @@
 ---
 title: Introdução ao AEM Forms
-seo-title: Introdução ao AEM Forms
+seo-title: Introduction to AEM Forms
 description: Com o Adobe Experience Manager Forms, os usuários empresariais podem integrar formulários envolventes, responsivos e adaptáveis a sites da Web e móveis, simplificando o processo de inscrição digital e aumentando as taxas de conversão do cliente.
-seo-description: Com o Adobe Experience Manager Forms, os usuários empresariais podem integrar formulários envolventes, responsivos e adaptáveis a sites da Web e móveis, simplificando o processo de inscrição digital e aumentando as taxas de conversão do cliente.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: 9e9a164a-4a74-4096-98b8-800ea610edd8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 3%
+source-wordcount: '946'
+ht-degree: 10%
 
 ---
 
-
 # Introdução ao AEM Forms {#introduction-to-aem-forms}
 
-Para obter informações sobre os recursos e aprimoramentos mais recentes no AEM Forms, consulte [Novidades no AEM Forms](/help/forms/using/whats-new.md).
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Para obter informações sobre os recursos e as melhorias mais recentes no AEM Forms, consulte [Novidades no AEM Forms](/help/forms/using/whats-new.md).
 
 ## Sobre o AEM Forms {#about-aem-forms}
 
 O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos ao integrar-se a processos back-end, regras de negócios e dados.
 
-O AEM Forms combinam a criação, o gerenciamento e a publicação de formulários, bem como recursos de gerenciamento de correspondência, segurança do documento e análises integradas para criar experiências interessantes e completas. Projetada para funcionar na Web e em canais móveis, a AEM Forms pode ser integrada com eficiência em seus processos comerciais, reduzindo processos e erros de papel e melhorando a eficiência.
+O AEM Forms combina criação, gerenciamento e publicação de formulários, além de recursos de gerenciamento de correspondência, segurança de documentos e análises integradas para criar experiências envolventes e completas. Projetada para funcionar na Web e em canais móveis, a AEM Forms pode ser integrada com eficiência em seus processos comerciais, reduzindo processos e erros de papel e melhorando a eficiência.
 
 A AEM Forms aproveita e estende os recursos de seus investimentos existentes em formulários XFA e na solução de LiveCycle Adobe.
 
-Em grandes empresas, os formulários geralmente são criados uma vez e reutilizados, copiando para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los descobertos pode ser um desafio considerável. O AEM oferece um Forms Portal personalizável que garante que os clientes encontrem e acessem formulários necessários em canais móveis e da Web.
+Frequentemente em grandes empresas, os formulários são criados uma vez e reutilizados, por meio de uma cópia enviada para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los descobertos pode ser um desafio considerável. O AEM fornece um portal de formulários personalizável que garante que os clientes encontrem e acessem os formulários de que precisam, tanto na web quanto em canais móveis.
 
 O AEM Forms fornece ferramentas de gerenciamento de formulários que não apenas permitem gerenciar formulários adaptáveis, como formulários XFA, PDF forms e ativos relacionados também. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](/help/forms/using/introduction-managing-forms.md).
 
@@ -59,9 +62,9 @@ O AEM Forms permite estender formulários novos e existentes para criar:
 
 O PDF forms pode ser preenchido offline, salvo localmente e os dados do formulário podem ser enviados na próxima vez que você estiver online. Você pode usar códigos de barras 2D para capturar dados de formulários e usar assinaturas digitais para validar a autenticidade dos usuários.
 
-**Formulários HTML**
+**HTML forms**
 
-Formulários baseados em navegador HTML5 podem ser exibidos em dispositivos móveis e navegadores de desktop. Você pode assinar eletronicamente formulários HTML usando os serviços Scribble ou eSign.
+Os formulários baseados no navegador HTML5 podem ser exibidos em dispositivos móveis e navegadores de desktop. Você pode assinar eletronicamente formulários HTML usando os serviços Scribble ou eSign.
 
 **Formulários adaptáveis**
 
@@ -94,7 +97,7 @@ Capturar dados offline e sincronizá-los na próxima vez que você retornar onli
 * Ambiente de design de fluxo de trabalho de arrastar e soltar
 * Conectores de gerenciamento de conteúdo corporativo (ECM)
 * Suporte a padrões abertos, incluindo XML e SOAP para conectar dados de formulários com sistemas corporativos
-* Relatórios HTML prontos para uso monitoram backlogs, filas de trabalho e KPIs (Key Performance Indicators, Indicadores-chave de desempenho)
+* Relatórios de HTML prontos para uso monitoram os backlogs, as filas de trabalho e os KPIs (indicadores-chave de desempenho)
 * Painéis personalizáveis para obter informações em tempo real sobre operações comerciais
 * API para conexão com ferramentas de relatórios de terceiros
 
@@ -102,11 +105,11 @@ Capturar dados offline e sincronizá-los na próxima vez que você retornar onli
 
 ## Comunicação personalizada {#personalized-communication}
 
-Um componente importante de uma experiência digital de autoatendimento eficiente é comunicar informações oportunas e personalizadas que os usuários podem acessar de qualquer lugar e em qualquer dispositivo. Comunicações personalizadas e oportunas podem melhorar as taxas de conversão e a satisfação do usuário.
+Uma parte importante de uma experiência digital de autoatendimento eficiente é fornecer informações oportunas e personalizadas que os usuários possam acessar de qualquer lugar e em qualquer dispositivo. Comunicações personalizadas e oportunas podem melhorar as taxas de conversão e a satisfação do usuário.
 
 Usando o AEM Forms, os usuários empresariais podem criar experiências de usuário personalizadas atraentes, personalizando modelos de documento, incorporando informações de processos back-end e incluindo componentes interativos. Uma interface de usuário intuitiva ajuda usuários não técnicos a desenvolver regras de negócios que decidem quando gerar uma comunicação com base em uma pesquisa ou iniciar uma resposta gerada pelo usuário.
 
-Documentos personalizados, como recibos, kits de boas-vindas e declarações podem ser facilmente entregues em vários canais. As organizações podem direcionar o tráfego para portais da Web personalizados, resultando na inscrição ou compra de serviços adicionais.
+Documentos personalizados, como recibos, kits de boas-vindas e declarações podem ser facilmente entregues em vários canais. As organizações podem direcionar o tráfego para portais da web personalizados, resultando na inscrição ou compra de serviços adicionais.
 
 **Principais recursos**
 
@@ -118,5 +121,4 @@ Documentos personalizados, como recibos, kits de boas-vindas e declarações pod
 * Suplemento de segurança de documento para AEM Forms, incluindo criptografia, políticas de uso, rastreamento e auditoria
 
 ![](do-not-localize/layout-02.png)
-**Figura:** *Fluxo de trabalho de comunicação personalizada simplificado*
-
+**Figura:** *Fluxo de trabalho de comunicação personalizado simplificado*

@@ -1,26 +1,29 @@
 ---
-title: 'Exportar para CSV  '
-seo-title: 'Exportar para CSV  '
-description: Exportar informações sobre suas páginas em um arquivo CSV em seu sistema local
-seo-description: Exportar informações sobre suas páginas em um arquivo CSV em seu sistema local
+title: Exportar para CSV
+seo-title: Export to CSV
+description: Exportar informações sobre suas páginas para um arquivo CSV em seu sistema local
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 78%
+source-wordcount: '226'
+ht-degree: 51%
 
 ---
 
-
 # Exportar para CSV  {#export-to-csv}
 
-**Criar exportação de arquivos CSV** permite exportar informações sobre suas páginas para um arquivo CSV em seu sistema local.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+**Criar exportação de arquivos CSV** O permite exportar informações sobre suas páginas para um arquivo CSV em seu sistema local.
 
 * O arquivo baixado é chamado de `export.csv`
 * Os conteúdos dependem das propriedades que você selecionar.
@@ -38,7 +41,7 @@ O assistente Criar exportação de arquivos CSV permite selecionar:
 
       * Modificado
       * Publicado
-   * Análise
+   * Analytics
 
       * Exibições da página
       * Visitantes únicos
@@ -56,17 +59,16 @@ O arquivo `export.csv` resultante pode ser aberto no Excel ou qualquer outro apl
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-A opção criar **CSV Export** está disponível ao navegar pelo console **Sites** (na visualização da Lista): é uma opção do menu suspenso **Criar**:
+A criação **Exportação de CSV** está disponível ao navegar pelo **Sites** console (na exibição de Lista): é uma opção do **Criar** menu suspenso:
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 Para criar uma exportação de arquivos CSV:
 
 1. Abra o console **Sites** e navegue até o local desejado, se necessário.
-1. Na barra de ferramentas, selecione **Criar** e **Exportação CSV** para abrir o assistente:
+1. Na barra de ferramentas, selecione **Criar** then **Exportação de CSV** para abrir o assistente:
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
 1. Selecione as propriedades desejadas para exportar.
 1. Selecione **Criar**.
-

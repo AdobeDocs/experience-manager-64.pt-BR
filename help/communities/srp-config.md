@@ -1,8 +1,8 @@
 ---
 title: Configuração de armazenamento
-seo-title: Configuração de armazenamento
+seo-title: Storage Configuration
 description: Como acessar o Console de Configuração de Armazenamento
-seo-description: Como acessar o Console de Configuração de Armazenamento
+seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 905b6dc5-cf17-4f58-a687-27e2910a0729
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 3%
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
 # Configuração de armazenamento {#storage-configuration}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A configuração de armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
 
@@ -42,9 +46,9 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 * selecionar uma opção
 * Configurar adequadamente
 
-   * Veja detalhes para [selecionar MSRP](msrp.md#select-msrp)
-   * Veja detalhes para [selecionar DSRP](dsrp.md#select-dsrp)
-   * Veja detalhes para [selecionar ASRP](asrp.md#select-asrp)
+   * Veja detalhes para [selecionando o MSRP](msrp.md#select-msrp)
+   * Veja detalhes para [selecionando DSRP](dsrp.md#select-dsrp)
+   * Veja detalhes para [selecionando ASRP](asrp.md#select-asrp)
 
 * Selecione **[!UICONTROL Enviar]**
 
@@ -52,10 +56,10 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 Esteja ciente de que se nenhuma seleção for feita, o padrão será o repositório AEM, o JCR.
 
-O JCR é *e não* um armazenamento comum compartilhado pelos ambientes de autor e publicação. O conteúdo da comunidade será visível somente no ambiente de criação ou publicação em que foi criado.
+JCR é *not* uma loja comum compartilhada pelos ambientes de criação e publicação. O conteúdo da comunidade será visível somente no ambiente de criação ou publicação em que foi criado.
 
-Visite [JCR Store](jsrp.md) para obter mais informações.
+Visita [Loja JCR](jsrp.md) para obter mais informações.
 
 >[!NOTE]
 >
->A ausência do nó `srpc`em `/etc/socialconfig` indica o [armazenamento JCR padrão](jsrp.md).
+>A ausência do nó `srpc`under `/etc/socialconfig` indica o padrão [Loja JCR](jsrp.md).

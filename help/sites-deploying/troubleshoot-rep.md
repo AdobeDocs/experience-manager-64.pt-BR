@@ -1,8 +1,8 @@
 ---
 title: Solução de problemas de replicação
-seo-title: Solução de problemas de replicação
+seo-title: Troubleshooting Replication
 description: Este artigo fornece informações sobre como solucionar problemas de replicação.
-seo-description: Este artigo fornece informações sobre como solucionar problemas de replicação.
+seo-description: This article provides information on how to troubleshoot replication issues.
 uuid: 7c3fdaad-0916-4159-a26c-17ff8c6617fe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e83317bb-e69c-4e2c-92f8-4f613786e7ae
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 0%
+source-wordcount: '1306'
+ht-degree: 1%
 
 ---
 
-
 # Solução de problemas de replicação{#troubleshooting-replication}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Esta página fornece informações sobre como solucionar problemas de replicação.
 
@@ -43,8 +46,8 @@ Verifique isso indo para /etc/replication/agents.author.html e clique nos agente
 
 **Se uma fila de agente ou algumas filas de agente estiverem presas:**
 
-1. A fila mostra o status **bloqueado**? Em caso afirmativo, a instância de publicação não está em execução ou não responde totalmente? Verifique a instância de publicação para ver o que há de errado com ela (ou seja, verifique os logs e veja se há um erro OutOfMemory ou algum outro problema. Em seguida, se estiver apenas lento, pegue os despejos de encadeamento e analise-os.
-1. O status da fila mostra **A fila está ativa - # pending**? Basicamente, o trabalho de replicação pode estar preso em uma leitura de soquete aguardando a instância de publicação ou o dispatcher responder. Isso pode significar que a instância de publicação ou o dispatcher está sob alta carga ou preso em um bloqueio. Pegue despejos de encadeamento do autor e publique neste caso.
+1. A fila aparece **bloqueado** status? Em caso afirmativo, a instância de publicação não está em execução ou não responde totalmente? Verifique a instância de publicação para ver o que há de errado com ela (ou seja, verifique os logs e veja se há um erro OutOfMemory ou algum outro problema. Em seguida, se estiver apenas lento, pegue os despejos de encadeamento e analise-os.
+1. O status da fila é exibido **A fila está ativa - # pendente**? Basicamente, o trabalho de replicação pode estar preso em uma leitura de soquete aguardando a instância de publicação ou o dispatcher responder. Isso pode significar que a instância de publicação ou o dispatcher está sob alta carga ou preso em um bloqueio. Pegue despejos de encadeamento do autor e publique neste caso.
 
    * Abra os dumps de encadeamento do autor em um analisador de despejo de encadeamento, verifique se ele mostra que o trabalho de evento de sling do agente de replicação está preso em um socketRead.
    * Abra os dumps de encadeamento da publicação em um analisador de dump de encadeamento, analise o que pode estar fazendo com que a instância de publicação não responda. Você deve ver um thread com POST /bin/receive em seu nome, que é o thread que recebe a replicação do autor.
@@ -53,7 +56,7 @@ Verifique isso indo para /etc/replication/agents.author.html e clique nos agente
 
 1. É possível que um determinado conteúdo não possa ser serializado em /var/replication/data devido a corrupção do repositório ou algum outro problema. Verifique se há um erro relacionado no logs/error.log. Para limpar o item de replicação incorreto, faça o seguinte:
 
-   1. Vá para https://&lt;host>:&lt;port>/crx e faça logon como usuário administrador. No CQ5.5, acesse https://&lt;host>:&lt;port>/crx/explorer.
+   1. Vá para https://&lt;host>:&lt;port>/crx e fazer logon como usuário administrador. No CQ5.5, acesse https://&lt;host>:&lt;port>/crx/explorer em vez disso.
    1. Clique em &quot;Explorador de conteúdo&quot;.
    1. Na janela &quot;Content Explorer&quot;, clique no botão de lupa na parte superior direita da janela e uma caixa de diálogo de pesquisa será exibida.
    1. Selecione o botão de opção &quot;XPath&quot;.
@@ -68,15 +71,15 @@ Verifique isso indo para /etc/replication/agents.author.html e clique nos agente
 
 1. Também pode ser o caso em que a configuração DefaultJobManager fica em um estado inconsistente. Isso pode acontecer quando alguém modifica manualmente a configuração do &quot;Manipulador de evento do trabalho do Apache Sling&quot; por meio do console OSG (por exemplo, desative e reative a propriedade &quot;Processamento de trabalho ativado&quot; e salve a configuração).
 
-   * Neste ponto, a configuração DefaultJobManager que é armazenada em crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config entra em um estado inconsistente. E mesmo que a propriedade &#39;Manipulador de Evento de Trabalho do Apache Sling&#39; mostre &#39;Processamento de Trabalho Ativado&#39; como estando no estado marcado, quando se navega até a guia Evento do Sling, ela mostra a mensagem - O PROCESSAMENTO DO JOB ESTÁ DESATIVADO e a replicação não funciona.
+   * Neste ponto, a configuração DefaultJobManager que é armazenada em crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config entra em um estado inconsistente. E mesmo que a propriedade &#39;Manipulador de Evento de Trabalho do Apache Sling&#39; mostre &#39;Processamento de Trabalho Ativado&#39; para estar no estado marcado, quando se navega até a guia Evento do Sling, ela mostra a mensagem - O PROCESSAMENTO DO JOB ESTÁ DESATIVADO e a replicação não funciona.
    * Para resolver esse problema, seria necessário navegar até a página Configuração do console OSGi e excluir a configuração &quot;Manipulador de evento do trabalho do Apache&quot;. Em seguida, reinicie o nó Principal do cluster para obter a configuração de volta a um estado consistente. Isso deve corrigir o problema e a replicação começará a funcionar novamente.
 
 **Criar um replication.log**
 
 Às vezes, pode ser muito útil definir todos os logs de replicação a serem adicionados em um arquivo de log separado no nível DEBUG. Para fazer isso:
 
-1. Vá para `https://host:port/system/console/configMgr` e faça logon como administrador.
-1. Localize a fábrica Apache Sling Logging Logger e crie uma instância clicando no botão **+** à direita da configuração de fábrica. Isso criará um novo logger de registro.
+1. Ir para `https://host:port/system/console/configMgr` e faça logon como administrador.
+1. Encontre a fábrica do Apache Sling Logging Logger e crie uma instância clicando no botão **+** à direita da configuração de fábrica. Isso criará um novo logger de registro.
 1. Defina a configuração desta forma:
 
    * Nível de registro: DEPURAR
@@ -85,7 +88,7 @@ Verifique isso indo para /etc/replication/agents.author.html e clique nos agente
 
 1. Se você suspeitar que o problema esteja relacionado a eventos/trabalhos do sling de alguma forma, também poderá adicionar este pacote java em categories:org.apache.sling.event
 
-### Pausando Fila do Agente de Replicação {#pausing-replication-agent-queue}
+### Pausando Fila do Agente de Replicação  {#pausing-replication-agent-queue}
 
 Às vezes, pode ser adequado pausar a fila de replicação para reduzir a carga no sistema de autor, sem desativá-la. Atualmente, isso só é possível por meio de uma pilha de configuração temporária de uma porta inválida. A partir da 5.4, você pode ver o botão pausar na fila do agente de replicação, ele tem alguma limitação
 
@@ -98,19 +101,18 @@ As permissões de página não são replicadas porque são armazenadas nos nós 
 
 Em geral, as permissões de página não devem ser replicadas do autor para publicação e não são por padrão. Isso ocorre porque os direitos de acesso devem ser diferentes nesses dois ambientes. Portanto, é recomendável configurar ACLs na publicação separadamente do autor.
 
-### Fila de replicação bloqueada ao replicar informações do namespace do Autor para Publicar {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+### Fila de replicação bloqueada ao replicar informações de namespace do Autor para Publicação {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-Em alguns casos, a fila de replicação é bloqueada ao tentar replicar informações do namespace da instância do autor para a instância de publicação. Isso acontece porque o usuário de replicação não tem privilégio `jcr:namespaceManagement`. Para evitar esse problema, verifique se:
+Em alguns casos, a fila de replicação é bloqueada ao tentar replicar informações do namespace da instância do autor para a instância de publicação. Isso acontece porque o usuário de replicação não tem `jcr:namespaceManagement` privilégio. Para evitar esse problema, verifique se:
 
-* O usuário de replicação (conforme configurado na guia [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)>User) também existe na instância Publish .
+* O usuário de replicação (conforme configurado no [Transportes](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>User) também existe na instância Publish .
 * O usuário tem privilégios de leitura e gravação no caminho em que o conteúdo é instalado.
-* O usuário tem privilégio `jcr:namespaceManagement` no nível do repositório. É possível conceder o privilégio da seguinte maneira:
+* O usuário tem `jcr:namespaceManagement` privilégio no nível do repositório. É possível conceder o privilégio da seguinte maneira:
 
 1. Faça logon no CRX/DE ( `http://localhost:4502/crx/de/index.jsp`) como administrador.
-1. Clique na guia **Controle de acesso**.
-1. Selecione **Repositório**.
-1. Clique em **Adicionar entrada** (o ícone de adição).
+1. Clique no botão **Controle de acesso** guia .
+1. Selecionar **Repositório**.
+1. Clique em **Adicionar entrada** (o ícone de mais).
 1. Insira o nome do usuário.
-1. Selecione `jcr:namespaceManagement` na lista de privilégios.
+1. Selecionar `jcr:namespaceManagement` na lista de privilégios.
 1. Clique em OK.
-

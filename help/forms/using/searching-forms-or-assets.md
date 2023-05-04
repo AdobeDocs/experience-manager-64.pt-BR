@@ -1,8 +1,8 @@
 ---
 title: Pesquisar formulários e ativos
-seo-title: Pesquisar formulários e ativos
+seo-title: Searching for forms and assets
 description: Você pode pesquisar formulários e ativos na sua instância do AEM usando AEM pesquisa. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
-seo-description: Você pode pesquisar formulários e ativos na sua instância do AEM usando AEM pesquisa. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,20 +10,24 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '720'
 ht-degree: 4%
 
 ---
 
 # Pesquisar formulários e ativos {#searching-for-forms-and-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 Você pode pesquisar seus formulários ou ativos de formulário usando uma sequência de texto ou uma sequência de texto juntamente com caracteres curingas. Também é possível restringir sua pesquisa usando os critérios disponíveis em várias categorias no painel Pesquisar .
 
 Ao selecionar um ou mais critérios e também especificar uma string de texto, a interseção do texto e dos critérios são retornadas como resultados de pesquisa. Os resultados da pesquisa são tão bons quanto os metadados de formulário e ativo fornecidos.
 
-Clique em ![aem6forms_search](assets/aem6forms_search.png) para mostrar ou ocultar o painel de pesquisa.
+Clique em ![aem6forms_search](assets/aem6forms_search.png), para mostrar ou ocultar o painel de pesquisa.
 
 ## Pesquisa básica {#basic-search}
 
@@ -37,7 +41,7 @@ Observe os seguintes pontos sobre a pesquisa básica:
 
 * A pesquisa é realizada usando as propriedades de formulário e metadados do ativo.
 * Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo para pesquisa.
-* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, quando você digita `geometrixx`, os ativos com títulos `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx` são exibidos nos resultados da pesquisa.
+* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, ao digitar `geometrixx`, ativos com títulos `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` são exibidos nos resultados da pesquisa.
 
 * Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando strings parciais, use &amp;ast; curinga. No entanto, se a consulta de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
 * Espaços extras são respeitados e não são aparados durante a pesquisa. Por exemplo, `My form` não é a mesma consulta de pesquisa que `My form`.
@@ -91,14 +95,14 @@ Você pode pesquisar ativos usando um dos seguintes status:
   </tr>
   <tr>
    <td>Formulário PDF</td> 
-   <td>Pesquise em todos os documentos PDF.</td> 
+   <td>Pesquise em todos os documentos do PDF.</td> 
   </tr>
   <tr>
    <td>Documento</td> 
    <td>Pesquise em todos os documentos.</td> 
   </tr>
   <tr>
-   <td>Formulário adaptativo<br /> </td> 
+   <td>Formulário adaptável<br /> </td> 
    <td>Pesquise em todos os formulários adaptáveis.</td> 
   </tr>
   <tr>

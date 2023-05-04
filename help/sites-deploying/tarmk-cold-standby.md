@@ -11,14 +11,18 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: ce025f42bcd7105b83aa6a931e091aa21269a6f3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2760'
 ht-degree: 0%
 
 ---
 
 # Como executar AEM com o TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
@@ -65,7 +69,7 @@ Uma implantação típica do TarMK Cold Standby:
 
 O fluxo de dados foi projetado para detectar e lidar automaticamente com problemas relacionados à conexão e à rede. Todos os pacotes são empacotados com somas de verificação e assim que ocorrem problemas com a conexão ou pacotes danificados, os mecanismos de repetição são acionados.
 
-### Show {#performance}
+### Desempenho {#performance}
 
 Ativar o TarMK Cold Standby na instância primária quase não tem impacto mensurável no desempenho. O consumo adicional da CPU é muito baixo e o disco rígido extra e a E/S de rede não devem gerar problemas de desempenho.
 
@@ -89,7 +93,6 @@ Além disso, você pode especificar as instâncias de standby que podem se conec
 >
 >* de org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService para org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService para org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
 

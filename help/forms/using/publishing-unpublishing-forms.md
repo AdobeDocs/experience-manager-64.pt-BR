@@ -10,14 +10,18 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 exl-id: 1afef311-c1e6-48ec-ae23-dbd553a99ac6
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 0%
+source-wordcount: '1449'
+ht-degree: 1%
 
 ---
 
 # Publicar e desfazer a publicação de formulários e documentos {#publishing-and-unpublishing-forms-and-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O AEM Forms permite criar, publicar e desfazer a publicação de formulários com facilidade. Para obter mais informações sobre o AEM Forms, consulte [Introdução ao gerenciamento de formulários](/help/forms/using/introduction-managing-forms.md).
 

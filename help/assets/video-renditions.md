@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Video,Renditions
 role: User
 exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 0%
+source-wordcount: '256'
+ht-degree: 3%
 
 ---
 
 # Representações de vídeo {#video-renditions}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Adobe Experience Manager Assets gera representações de vídeo para ativos de vídeo de vários formatos, incluindo OGG, FLV e assim por diante.
 
@@ -28,13 +32,13 @@ Para exibir as representações de um ativo de vídeo específico, abra a págin
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-A lista de representações de vídeo é exibida no painel **[!UICONTROL Representações]**.
+A lista de representações de vídeo é exibida no **[!UICONTROL Representações]** painel.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Para configurar o servidor proxy para representações codificadas em DM, [configure os serviços da Dynamic Media Cloud.](config-dynamic.md)
+Para configurar o servidor proxy para representações codificadas em DM, [configurar os serviços da Dynamic Media Cloud.](config-dynamic.md)
 
-Para gerar representações de vídeo com os parâmetros desejados, [crie um perfil de vídeo correspondente](video-profiles.md).
+Para gerar representações de vídeo com os parâmetros desejados, [criar um perfil de vídeo correspondente](video-profiles.md).
 
 Após configurar o servidor proxy e criar perfis de vídeo, é possível incluir essa predefinição de vídeo em um perfil de processamento e aplicar o perfil de processamento a uma pasta.
 

@@ -1,35 +1,37 @@
 ---
-title: Aceitação e logoff
-seo-title: Aceitação e logoff
+title: Aceitação e aprovação
+seo-title: Acceptance and Sign-off
 description: Testes de aceitação são uma categoria especial de teste usada para verificar se o projeto atende aos requisitos do cliente e se o cliente aceita o projeto
-seo-description: Testes de aceitação são uma categoria especial de teste usada para verificar se o projeto atende aos requisitos do cliente e se o cliente aceita o projeto
+seo-description: Acceptance Tests are a special category of test used to verify that the project fulfils the customer's requirements and that the customer accepts the project
 uuid: 6bdd2a99-d141-43ef-9102-99e65aba02d3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: e6dd95d2-9444-40e6-a83a-2c4f9e4cfcef
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 0%
+source-wordcount: '143'
+ht-degree: 5%
 
 ---
 
+# Aceitação e aprovação{#acceptance-and-sign-off}
 
-# Aceitação e logoff{#acceptance-and-sign-off}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Conforme mencionado, [Ensaios de aceitação](/help/sites-developing/planning.md) são uma categoria especial de teste usada para verificar se:
+Tal como mencionado, [Testes de aceitação](/help/sites-developing/planning.md) são uma categoria especial de ensaio utilizada para verificar que:
 
 * O projeto atende aos requisitos do cliente.
 * O cliente aceita o projeto.
 
-Eles devem ser definidos pelo cliente e pelo gerente do projeto. Têm um significado particular, uma vez que estão muitas vezes relacionados com a faturação final.
+Eles devem ser definidos pelo cliente e pelo gerente do projeto. Têm um significado especial, uma vez que estão frequentemente relacionadas com a faturação final.
 
-Por esta razão, devem ser:
+Por isso, devem ser:
 
 * Definido o mais cedo possível.
 * Atualizado sempre que necessário.
-* Quaisquer alterações devem ser formalmente aceitas e assinadas por ambas as partes (parceiro e cliente).
-
+* Todas as alterações devem ser formalmente aceitas e assinadas por ambas as partes (parceiro e cliente).

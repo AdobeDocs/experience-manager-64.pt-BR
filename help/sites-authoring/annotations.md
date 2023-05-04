@@ -1,26 +1,29 @@
 ---
 title: Anotações ao editar uma página
-seo-title: Anotações ao editar uma página
+seo-title: Annotations when Editing a Page
 description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação
-seo-description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 98%
+source-wordcount: '670'
+ht-degree: 41%
 
 ---
 
-
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
-Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem a adição de uma anotação.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+Com frequência, a adição de conteúdo às páginas do seu site está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem adicionar uma anotação.
 
 Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação permite a você (ou outros usuários) deixar comentários e/ou perguntas para outros autores/revisores.
 
@@ -30,7 +33,7 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 >[!NOTE]
 >
->As anotações criadas na interface do usuário clássica serão exibidas na interface do usuário habilitada para toque. No entanto, rascunhos são específicos da interface do usuário e são exibidos apenas na interface do usuário na qual foram criados.
+>As anotações criadas na interface clássica serão exibidas na interface habilitada para toque. No entanto, os rascunhos são específicos da interface do usuário e são mostrados somente na interface do usuário na qual foram criados.
 
 >[!CAUTION]
 >
@@ -52,16 +55,14 @@ Um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) é usado
 >
 >É possível fazer anotações em vários recursos:
 >
->* [Anotação de ativos](/help/assets/managing-assets-touch-ui.md#annotating)
+>* [Anotar ativos](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Anotação de ativos de vídeo](/help/assets/managing-video-assets.md#annotating-video-assets)
-
 >
-
 
 
 ### Anotação em componente {#annotating-a-component}
 
-O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteúdo:
+O modo Anotar permite criar, editar, mover ou excluir anotações em seu conteúdo:
 
 1. Você pode entrar no modo Anotar usando o ícone na barra de ferramentas (canto superior direito) ao editar uma página:
 
@@ -77,7 +78,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
 
    >[!NOTE]
    >
-   >Para parar de adicionar as anotações (e voltar à exibição), toque/clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
+   >Para interromper a adição de anotações (e retornar à exibição), toque/clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
 
 1. Clique/toque no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
@@ -85,7 +86,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
 
    Aqui, você pode usar o campo e/ou ícone apropriado para:
 
-   * Inserir o texto da anotação.
+   * Insira o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
       O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
@@ -115,7 +116,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
       * As anotações relacionadas e seus rascunhos também serão movidos ou copiados, e sua posição em relação ao parágrafo permanecerá a mesma.
 
 
-1. Para sair do modo de Anotação e voltar ao modo usado anteriormente, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
+1. Para sair do modo Anotar e retornar ao modo usado anteriormente, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
 
 >[!NOTE]
 >As anotações não podem ser adicionadas a uma página que foi bloqueada por outro usuário.
@@ -125,4 +126,3 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
 As anotações não aparecem no modo Editar, mas o selo na parte superior direita da barra de ferramentas mostra quantas anotações existem para a página atual. O selo substitui o ícone de Anotações padrão, mas ainda funciona como um link rápido que alterna de/para o modo Anotar:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-

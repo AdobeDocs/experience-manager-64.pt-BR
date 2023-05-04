@@ -1,35 +1,38 @@
 ---
 title: Design de layout
-seo-title: Design de layout
+seo-title: Layout Design
 description: Detalhes de design do layout explica como você pode criar layouts para serem usados em cartas ou comunicações interativas.
-seo-description: Detalhes de design do layout explica como você pode criar layouts para serem usados em cartas ou comunicações interativas.
+seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
 
-
 # Design de layout {#layout-design}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os modelos de formulário XFA ou XDPs são os modelos para:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Imprimir ](/help/forms/using/web-channel-print-channel.md#printchannel) canal de Comunicações  [Interativas](/help/forms/using/interactive-communications-overview.md)
+* [Canal de impressão](/help/forms/using/web-channel-print-channel.md#printchannel) de [Comunicações interativas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de layout
 
 Um XDP foi projetado no Adobe Forms Designer. Este artigo fornece detalhes sobre como projetar seus XDPs para criar correspondências/Comunicações interativas eficazes, como onde usar campos de formulário ou áreas de destino e quando usar fragmentos de layout.
 
-## Criação de um layout para letras ou para o canal de impressão das Comunicações interativas {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## Criação de um layout para letras ou para o canal de impressão do Interative Communications {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
 Um layout define o layout gráfico de um canal de letra/impressão de uma Comunicação interativa. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Também contém subformulários vazios que indicam áreas de destino. Crie o layout no designer de formulários e, quando concluído, o Application Specialist o fará upload para AEM servidor. A partir daí, é possível selecionar o layout ao criar um template de correspondência ou um canal de impressão de uma Comunicação interativa.
 
@@ -57,15 +60,15 @@ Você pode usar um esquema em um layout ou fragmento de layout , mas ele não é
 1. O layout e todos os layouts de fragmento usados em uma carta/Comunicação interativa usam o mesmo esquema da letra/Comunicação interativa.
 1. Todos os campos necessários para serem preenchidos com dados estão vinculados ao esquema .
 
-## Criar campos relacionados {#creating-relatable-fields}
+## Criação de campos relacionados {#creating-relatable-fields}
 
 Por padrão, todos os campos são considerados relacionáveis a várias outras fontes de dados. Se o seu layout contiver quaisquer campos que não sejam relacionados a uma fonte de dados, nomeie o campo com um sufixo &quot;_int&quot; (interno); por exemplo, pageCount_int.
 
 Um campo relativo deve:
 
-* ser um XFA &lt;field> ou &lt;exclGroup>
+* ser um XFA &lt;field> ou &lt;exclgroup>
 * ter uma referência de vínculo XFA
-* se for um &lt;exclGroup>, deve ter pelo menos um campo de botão de opção filho; caso contrário, seu tipo de valor não poderá ser determinado
+* se for um &lt;exclgroup>, deve ter pelo menos um campo de botão de opção filho; caso contrário, seu tipo de valor não poderá ser determinado
 
 Um campo relativo deve:
 
@@ -75,7 +78,7 @@ Um campo relativo não deve:
 
 * Incluir um sufixo &quot;_int&quot; em seu nome
 * têm vínculo definido como &quot;nenhum&quot;
-* ser filho de um elemento &lt;exclGroup>
+* ser um filho de um &lt;exclgroup> elemento
 
 Desde que um campo relativo atenda aos critérios descritos acima, ele pode estar em qualquer local e em qualquer profundidade de aninhamento no layout. Você pode usar campos relacionados em páginas principais.
 
@@ -129,4 +132,3 @@ Quando elementos como o logotipo e o endereço de sua organização forem exibid
 Use o formato de renderização do servidor do layout para Formulário XML dinâmico; caso contrário, as letras/Comunicações interativas baseadas nesse layout não poderão ser renderizadas corretamente. Por padrão, o formato de renderização do servidor no Forms Designer é definido como Formulário XML dinâmico. Para garantir que você esteja usando o formato correto:
 
 * No Designer, clique em **[!UICONTROL Arquivo > Propriedades do formulário > Padrão]** e verifique se a configuração Renderizar/Formatar PDF está definida como Formulário XML dinâmico.
-

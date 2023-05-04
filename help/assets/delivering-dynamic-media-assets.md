@@ -1,8 +1,8 @@
 ---
-title: Entrega de ativos de Mídia dinâmica
-seo-title: Entrega de ativos de Mídia dinâmica
+title: Entrega de ativos da Dynamic Media
+seo-title: Delivering Dynamic Media Assets
 description: Saiba como fornecer ativos de mídia dinâmica
-seo-description: Saiba como fornecer ativos de mídia dinâmica
+seo-description: Learn how to deliver dynamic media assets
 uuid: e87754a9-4c34-4658-9971-cd7ceb26523f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,22 +10,26 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 25%
+source-wordcount: '353'
+ht-degree: 13%
 
 ---
 
-# Entrega de ativos de Mídia dinâmica {#delivering-dynamic-media-assets}
+# Entrega de ativos da Dynamic Media {#delivering-dynamic-media-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 A maneira de fornecer ativos de mídia dinâmica (vídeo e imagens) depende de como o site está implementado.
 
-Com a Mídia dinâmica, você tem várias opções:
+Com o Dynamic Media, você tem várias opções:
 
-* Se o seu site estiver hospedado no AEM, convém adicionar os ativos de mídia dinâmica diretamente à sua página.
+* Se o seu site estiver hospedado em AEM, você deseja adicionar os ativos de mídia dinâmica diretamente à sua página.
 * Se o seu site não estiver no AEM, você terá a opção de:
 
    * Incorporação do vídeo ou imagem ao seu site.

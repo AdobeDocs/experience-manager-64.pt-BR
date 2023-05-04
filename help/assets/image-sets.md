@@ -12,14 +12,18 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2182'
 ht-degree: 11%
 
 ---
 
 # Conjuntos de imagem {#image-sets}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Os Conjuntos de imagens fornecem aos usuários uma experiência de visualização integrada, onde os usuários podem ver diferentes visualizações de um item clicando em uma imagem em miniatura. Os Conjuntos de imagens permitem que você apresente visualizações alternativas de um item e o visualizador oferece ferramentas de zoom para examinar imagens cuidadosamente.
 
@@ -142,7 +146,7 @@ Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recome
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| Número de ativos duplicados por conjunto | Sem duplicatas | 20º |
+| Número de ativos duplicados por conjunto | Sem duplicatas | 20 |
 | Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).

@@ -1,37 +1,40 @@
 ---
 title: Alteração da fonte na interface
-seo-title: Alteração da fonte na interface
-description: Como alterar as fontes na interface do usuário de forma seletiva.
-seo-description: Como alterar as fontes na interface do usuário de forma seletiva.
+seo-title: Changing the font on the interface
+description: Como alterar as fontes na interface do usuário seletivamente.
+seo-description: How to change the fonts on the user interface selectively.
 uuid: d079f656-76f8-4908-9989-dde79e215eb2
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: bd7ec9d6-b1d2-4f01-8cef-05e5e1eceda1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
-
 # Alteração da fonte na interface {#changing-the-font-on-the-interface}
 
-Você pode alterar a fonte exibida na área de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário de forma seletiva.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Siga as [etapas genéricas para personalização do espaço de trabalho AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
+Você pode alterar a fonte exibida no espaço de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. Você pode alterar as fontes na interface do usuário seletivamente.
+
+Siga as [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) e dependendo de suas necessidades, siga as etapas para personalizar o CSS, o HTML ou ambos.
 
 1. Altere ou adicione a família de fontes em um estilo existente.
 1. Altere ou adicione a família de fontes em linha para o elemento HTML.
 1. Adicione um estilo e use-o para o elemento HTML.
 
-Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação superior para Courier New, siga estas etapas:
+Como exemplo, para alterar a fonte do texto da âncora da barra de navegação superior para Courier New, siga estas etapas:
 
 1. Faça logon no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    1. Para alterar a família de fontes em um estilo existente, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
 
@@ -41,7 +44,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
       }
       ```
 
-   1. Para adicionar a família de fontes em linha para o elemento HTML, copie o arquivo `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Para adicionar a família de fontes em linha para o elemento HTML, copie a variável `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
@@ -52,9 +55,9 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Abra o arquivo /apps/ws/js/registry.js para edição e substitua `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` por `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Abra o arquivo /apps/ws/js/registry.js para edição e substituição `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` com `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Para adicionar um estilo que defina a família de fontes, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
+   1. Para adicionar um estilo definindo a família de fontes, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
 
       ```css
       .myNewFontStyle a {
@@ -62,7 +65,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
       }
       ```
 
-      Para adicionar a família de fontes em linha para o elemento HTML, adicione o seguinte no arquivo appnavigation.html em /apps/ws/js/runtime/models.
+      Para adicionar a família de fontes em linha para o elemento HTML, adicione o seguinte no arquivo appnavigation.html em /apps/ws/js/runtime/templates.
 
       ```css
       <div id="topnav" class="myNewFontStyle">
@@ -77,8 +80,8 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
 1. Reinicie o espaço de trabalho e limpe o cache do navegador para que as alterações fiquem visíveis.
 
-![change_font_](assets/change_font_before.png)
-**beforeFigure:Barra de navegação** *superior antes da personalização de fontes*
+![change_font_before](assets/change_font_before.png)
+**Figura:** *Barra de navegação superior antes da personalização de fontes*
 
-![change_font_](assets/change_font_after.png)
-**afterFigure:Barra de navegação** *superior após a personalização da primeira guia*
+![change_font_after](assets/change_font_after.png)
+**Figura:** *Barra de navegação superior após personalização de fonte da primeira guia*

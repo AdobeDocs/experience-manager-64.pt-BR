@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 24%
+source-wordcount: '847'
+ht-degree: 22%
 
 ---
 
 # Revisar ativos e coleções de pastas {#review-folder-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Configure fluxos de trabalho de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para buscar feedback.
 
@@ -31,17 +35,17 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Opcional) Na lista **[!UICONTROL Project]**, selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL None]** é selecionada. Se não quiser associar um projeto à tarefa de revisão, mantenha essa seleção.
+1. (Opcional) Na **[!UICONTROL Projeto]** selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a variável **[!UICONTROL Nenhum]** está selecionada. Se não quiser associar um projeto à tarefa de revisão, mantenha essa seleção.
 
    >[!NOTE]
    >
-   >Somente os projetos para os quais você tem permissões de nível de Editor (ou superior) estão visíveis na lista **[!UICONTROL Projetos]**.
+   >Somente os projetos para os quais você tem permissões de nível de Editor (ou superior) estão visíveis na variável **[!UICONTROL Projetos]** lista.
 
-1. Insira um nome para a tarefa de revisão e selecione um aprovador na lista **[!UICONTROL Atribuir a]**.
+1. Insira um nome para a tarefa de revisão e selecione um aprovador na **[!UICONTROL Atribuir a]** lista.
 
    >[!NOTE]
    >
-   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores na lista **[!UICONTROL Atribuir a]**.
+   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores no **[!UICONTROL Atribuir a]** lista.
 
 1. Insira uma descrição, a prioridade da tarefa e a data de vencimento da tarefa de revisão.
 
@@ -52,7 +56,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![nome_da_revisão](assets/review_name.png)
 
 1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon em [!DNL Experience Manager] Ativos como Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, clique/toque no ícone **[!UICONTROL Notifications]** e selecione a tarefa de revisão na lista.
+1. Faça logon em [!DNL Experience Manager] Ativos como Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, clique/toque na guia **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 
    ![notificação](assets/notification.png)
 
@@ -61,7 +65,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![review_task](assets/review_task.png)
 
-1. Toque/clique no ícone **[!UICONTROL Concluído]** na barra de ferramentas. Na caixa de diálogo, insira um comentário e toque/clique em **[!UICONTROL Concluir]** para confirmar.
+1. Toque/clique no botão **[!UICONTROL Concluído]** ícone na barra de ferramentas. Na caixa de diálogo, insira um comentário e toque/clique  **[!UICONTROL Concluído]** para confirmar.
 1. Navegue até a interface do usuário do Assets e abra a pasta . Os ícones de status de aprovação dos ativos são exibidos nas exibições Cartão e Lista.
 
    **Exibição de cartão**
@@ -79,30 +83,30 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Opcional) Na lista **[!UICONTROL Project]**, selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL None]** é selecionada. Se não quiser associar um projeto à tarefa de revisão, mantenha essa seleção.
+1. (Opcional) Na **[!UICONTROL Projeto]** selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a variável **[!UICONTROL Nenhum]** está selecionada. Se não quiser associar um projeto à tarefa de revisão, mantenha essa seleção.
 
    >[!NOTE]
    >
-   >Somente os projetos para os quais você tem permissões de nível de Editor (ou superior) estão visíveis na lista **[!UICONTROL Projetos]**.
+   >Somente os projetos para os quais você tem permissões de nível de Editor (ou superior) estão visíveis na variável **[!UICONTROL Projetos]** lista.
 
-1. Insira um nome para a tarefa de revisão e selecione um aprovador na lista **[!UICONTROL Atribuir a]**.
+1. Insira um nome para a tarefa de revisão e selecione um aprovador na **[!UICONTROL Atribuir a]** lista.
 
    >[!NOTE]
    >
-   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores na lista **[!UICONTROL Atribuir a]**.
+   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores no **[!UICONTROL Atribuir a]** lista.
 
 1. Insira uma descrição, a prioridade da tarefa e a data de vencimento da tarefa de revisão.
 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon em [!DNL Experience Manager] Ativos como Aprovador e navegue até o console Ativos . Para aprovar ativos, toque/clique no ícone **[!UICONTROL Notifications]** e selecione a tarefa de revisão na lista.
+1. Faça logon em [!DNL Experience Manager] Ativos como Aprovador e navegue até o console Ativos . Para aprovar ativos, toque/clique no botão **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 1. Na página **[!UICONTROL Tarefa de revisão]**, examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
-1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e toque/clique no ícone **[!UICONTROL Approve/Reject]** para aprovar ou rejeitar ativos, conforme apropriado.
+1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e toque/clique no botão **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar ativos, conforme apropriado.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Toque/clique no ícone **[!UICONTROL Concluído]** na barra de ferramentas. Na caixa de diálogo, insira um comentário e toque/clique em **[!UICONTROL Concluir]** para confirmar.
+1. Toque/clique no botão **[!UICONTROL Concluído]** ícone na barra de ferramentas. Na caixa de diálogo, insira um comentário e toque/clique **[!UICONTROL Concluído]** para confirmar.
 1. Navegue até o console Coleções e abra a coleção. Os ícones de status de aprovação dos ativos são exibidos nas exibições Cartão e Lista.
 
    **Exibição de cartão**

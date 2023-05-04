@@ -1,26 +1,29 @@
 ---
 title: Práticas recomendadas de gerenciamento de SEO e URL
-seo-title: Práticas recomendadas de gerenciamento de SEO e URL
-description: Saiba mais sobre as práticas recomendadas e recomendações de SEO para atingi-las em uma implementação AEM.
-seo-description: Saiba mais sobre as práticas recomendadas e recomendações de SEO para atingi-las em uma implementação AEM.
+seo-title: SEO and URL Management Best Practices
+description: Saiba mais sobre as práticas recomendadas da SEO e as recomendações para atingi-las em uma implementação de AEM.
+seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
-translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+exl-id: d45fe856-4709-437b-b193-e8243a695d2c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3117'
-ht-degree: 98%
+source-wordcount: '3133'
+ht-degree: 97%
 
 ---
 
-
 # Práticas recomendadas de gerenciamento de SEO e URL{#seo-and-url-management-best-practices}
 
-A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Consequentemente, é necessário abordar as preocupações das SEO em muitos projetos AEM.
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
+A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Por conseguinte, é necessário dar resposta às preocupações relativas às SEO em muitos projetos AEM.
 
 Este documento descreve primeiramente algumas [práticas recomendadas da SEO](#seo-best-practices) e recomendações para atingi-las em uma implementação do AEM Em seguida, ele detalha algumas [etapas de implementação mais complexas](#aem-configurations) abordadas na primeira seção.
 
@@ -236,7 +239,7 @@ Em uma instalação padrão do AEM:
 
    (`resource.resolver.map.location`)
 
-* assume como padrão:
+* O padrão é:
 
    `/etc/map`
 
@@ -264,10 +267,10 @@ No entanto, há também uma maneira mais simples de gerenciar isso:
 
    Usando o console da Web (por exemplo, localhost:4502/system/console/configMgr), você pode configurar o Sling Resource Resolver:
 
-   * **Apache Sling Resource Resolver Fatory**
+   * **Apache Sling Resource Resolver Factory**
 
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
-   É recomendável criar os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, definir essas configurações em um nó OsgiConfig, `config.publish`, incluído na sua versão.
+   É recomendável criar os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, definir essas configurações em um nó OsgiConfignode, `config.publish`, incluído na sua versão.
 
    Em vez de definir os mapeamentos no `/etc/map`, eles podem ser atribuídos diretamente à propriedade **Mapeamentos de URL** ( `resource.resolver.mapping`):
 

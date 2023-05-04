@@ -8,14 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 11%
+source-wordcount: '341'
+ht-degree: 5%
 
 ---
 
 # Notas de versão do Serviço de conteúdo inteligente {#smart-content-service-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Visão geral do Serviço de conteúdo inteligente e problemas conhecidos do serviço.
 
@@ -41,7 +45,7 @@ O Serviço de conteúdo inteligente inclui as seguintes melhorias principais:
 
 ## Acesso e suporte ao produto (sites restritos) {#product-access-and-support-restricted-sites}
 
-Estes sites estão disponíveis somente para clientes. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta do Adobe.
+Esses sites só estão disponíveis para clientes do . Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta do Adobe.
 
 * [Acesso ao produto](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Baixe o produto em licensing.adobe.com](https://licensing.adobe.com/).

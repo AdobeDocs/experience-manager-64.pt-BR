@@ -8,14 +8,18 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10401'
+source-wordcount: '10437'
 ht-degree: 4%
 
 ---
 
 # Vídeo {#video}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Esta seção descreve como trabalhar com vídeo no Dynamic Media.
 
@@ -106,7 +110,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
       * Integrar vídeo usando URL:
 
-         [Vincular URLs do ao aplicativo da Web](linking-urls-to-yourwebapplication.md).
+         [Vincular URLs ao aplicativo da Web](linking-urls-to-yourwebapplication.md).
       * Integre o vídeo usando o código incorporado na página da Web:
 
          [Incorporação do visualizador de vídeo em uma página da Web](embed-code.md).
@@ -181,7 +185,7 @@ Para streaming de vídeo adaptável para desktop e dispositivos móveis, os víd
 
 A reprodução de vídeo ocorre usando streaming de vídeo HLS (HTTP Live Streaming) ou download de vídeo progressivo. Em versões anteriores do AEM, como 6.0, 6.1 e 6.2, os vídeos eram transmitidos via HTTP.
 
-No entanto, no AEM 6.3 e mais, os vídeos agora são transmitidos por HTTPS (ou seja, streaming de vídeo HLS), pois o URL do serviço de gateway do DM sempre usa HTTPS também. Observe que não há impacto do cliente nesse comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá por HTTPS, a menos que não seja suportado pelo navegador. (ver quadro seguinte). Portanto,
+No entanto, no AEM 6.3 e mais, os vídeos agora são transmitidos por HTTPS (ou seja, streaming de vídeo HLS), pois o URL do serviço de gateway do DM sempre usa HTTPS também. Observe que não há impacto do cliente nesse comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá por HTTPS, a menos que não seja suportado pelo navegador. (ver quadro seguinte). Por conseguinte,
 
 * Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming estará bom.
 * Se você tiver um site HTTP com streaming de vídeo HTTPS, o streaming estará correto e não haverá problemas de conteúdo misto no navegador da Web.
@@ -200,32 +204,32 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
    <td><strong>Modo de reprodução de vídeo</strong></td>
   </tr>
   <tr> 
-   <td>Área de trabalho</td>
+   <td>Desktop</td>
    <td>Internet Explorer 9 e 10</td>
    <td>Download progressivo.</td>
   </tr>
   <tr> 
-   <td>Área de trabalho</td>
+   <td>Desktop</td>
    <td>Internet Explorer 11+</td>
    <td>No Windows 8 e no Windows 10 - Forçar o uso de HTTPS sempre que HLS for solicitado. Limitação conhecida: HTTP no HLS não funciona nesta combinação de navegador/sistema operacional<br /> <br /> No Windows 7 - Download progressivo. Usa a lógica padrão para selecionar o protocolo HTTP versus HTTPS.</td>
   </tr>
   <tr> 
-   <td>Área de trabalho</td>
+   <td>Desktop</td>
    <td>Firefox 23-44</td>
    <td>Download progressivo.</td>
   </tr>
   <tr> 
-   <td>Área de trabalho</td>
+   <td>Desktop</td>
    <td>Firefox 45 ou superior</td>
    <td>Transmissão de vídeo HLS.</td>
   </tr>
   <tr> 
-   <td>Área de trabalho</td>
+   <td>Desktop</td>
    <td>Chrome</td>
    <td>Transmissão de vídeo HLS.</td>
   </tr>
   <tr> 
-   <td>Área de trabalho</td>
+   <td>Desktop</td>
    <td>Safari (Mac)</td>
    <td>Transmissão de vídeo HLS.</td>
   </tr>
@@ -296,7 +300,7 @@ A tabela a seguir descreve o tamanho recomendado, a proporção e a taxa mínima
 |--- |--- |--- |
 | 1024 X 768 | 4:3 | 4500 kbps para a maioria dos vídeos. |
 | 1280 X 720 | 16:9 | 3000 - 6000 kbps, dependendo da quantidade de movimento no vídeo. |
-| 1920 X 1080 | 16:99 | 6000 - 8000 kbps, dependendo da quantidade de movimento no vídeo. |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, dependendo da quantidade de movimento no vídeo. |
 
 ### Obter os metadados de um arquivo {#obtaining-a-file-s-metadata}
 
@@ -318,10 +322,10 @@ A tabela a seguir descreve como os resultados da fórmula são traduzidos para o
 
 | Resultado da fórmula | Taxa de proporção |
 |--- |--- |
-| 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:99 |
-| 0,56 | 9:16 |
+| 1.33 | 4:3 |
+| 0.75 | 3:4 |
+| 1.78 | 16:9 |
+| 0.56 | 9:16 |
 
 Por exemplo, um vídeo com 1440 largura x 1080 altura tem uma proporção largura/altura de 1440/1080 ou 1,33. Nesse caso, você escolhe uma predefinição de codificação de vídeo com uma proporção de aspecto 4:3 para codificar o arquivo de vídeo.
 
@@ -363,8 +367,8 @@ A resolução e a taxa de dados são dois fatores totalmente vinculados que dete
 
 | Resolução | Pixels por quadro |
 |--- |--- |
-| 320 x 240 | 76 800 |
-| 640 x 480 | 307 200 |
+| 320 x 240 | 76,800 |
+| 640 x 480 | 307,200 |
 
 O arquivo de 640 x 480 tem quatro vezes mais pixels por quadro. Para atingir a mesma taxa de dados para essas duas resoluções de exemplo, aplique quatro vezes a compactação no arquivo 640 x 480, o que pode reduzir a qualidade do vídeo. Portanto, uma taxa de dados de vídeo de 250 Kbps produz uma exibição de alta qualidade com uma resolução de 320 x 240, mas não com resolução de 640 x 480.
 
@@ -494,7 +498,7 @@ Para publicar no YouTube, você precisa de uma conta do Google. Se você tiver u
 1. Para usar a API, talvez você precise de credenciais. Se necessário, toque em **[!UICONTROL Criar credenciais]**.
 1. No **[!UICONTROL De onde você chamará a API?]** , selecione **[!UICONTROL Servidor da Web (por exemplo, node.js, Tomcat)]**.
 1. Em **[!UICONTROL Que dados você acessará?]** select **[!UICONTROL Dados do usuário]**.
-1. Toque **[!UICONTROL Quais credenciais são necessárias?]**.
+1. Toque **[!UICONTROL Quais credenciais são necessárias?]** botão.
 1. Em **[!UICONTROL Criar uma ID de cliente OAuth 2.0]** digite um nome exclusivo.
 1. No campo de texto sob a variável **[!UICONTROL Origens Javascript autorizadas]** , insira o seguinte caminho, substituindo seu próprio domínio e número da porta no caminho e pressione **[!UICONTROL Enter]** para adicionar o caminho à lista:
 
@@ -1009,7 +1013,7 @@ Consulte [Fornecer conteúdo estático (não imagem)](https://experienceleague.a
 
    Consulte [Publicar ativos.](publishing-dynamicmedia-assets.md)
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para obter uma experiência do visualizador de vídeo pop-up, toque em **[!UICONTROL URL]**. Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, passe o URL para um editor de texto simples. Anexe o URL copiado do vídeo com a seguinte sintaxe:
 
@@ -1072,9 +1076,9 @@ Consulte [WebVTT: O formato de Rastreamento de texto da Web](https://dev.w3.org/
    Geralmente, você deseja nomear o arquivo VTT do capítulo com o mesmo nome do arquivo de vídeo e anexá-lo a capítulos. Ao fazer isso, ele pode ajudá-lo a automatizar a geração dos URLs de vídeo usando seu sistema de gerenciamento de conteúdo da Web existente.
 1. No AEM, faça upload do arquivo de capítulo WebVTT.
 
-   Consulte [Upload de ativos](managing-assets-touch-ui.md#uploading-assets).
+   Consulte [Fazer upload de ativos](managing-assets-touch-ui.md#uploading-assets).
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    <table> 
      <tbody> 

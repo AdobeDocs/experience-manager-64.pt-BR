@@ -1,8 +1,8 @@
 ---
 title: AEM Forms em grupos e privilégios OSGi
-seo-title: AEM Forms em grupos e privilégios OSGi
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
-seo-description: Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,20 +11,24 @@ topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 role: Admin
 exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '290'
+ht-degree: 4%
 
 ---
 
 # AEM Forms em grupos e privilégios OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
+
 Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
 
 Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos em AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
 
-Depois de instalar [Pacote do complemento AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como forms-user e forms-power-user, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições de grupo:
+Depois de instalar [Pacote do complemento AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como usuários de formulários e usuários avançados de formulários, estão automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições de grupo:
 
 <table> 
  <tbody>
@@ -33,7 +37,7 @@ Depois de instalar [Pacote do complemento AEM Forms](/help/forms/using/installin
    <td>Tarefas</td> 
   </tr>
   <tr>
-   <td>forms-user <sup>[1]</sup></td> 
+   <td>usuário de formulários <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Criar, visualizar, publicar e enviar formulários adaptáveis</li> 

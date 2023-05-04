@@ -1,24 +1,27 @@
 ---
 title: Criar e gerenciar revisões de ativos nos formulários
-seo-title: Criar e gerenciar revisões de ativos nos formulários
-description: 'Uma Revisão é um mecanismo que permite a um ou mais revisores comentar um ativo que está disponível em um formulário. '
-seo-description: 'Uma Revisão é um mecanismo que permite a um ou mais revisores comentar um ativo que está disponível em um formulário. '
+seo-title: Creating and managing reviews for assets in forms
+description: Uma Revisão é um mecanismo que permite a um ou mais revisores comentar um ativo que está disponível em um formulário.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 6b1aa54f-d03c-483a-a398-6522b285194c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: ff113288-a69a-4083-82a6-4c65c5062411
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 0%
+source-wordcount: '695'
+ht-degree: 1%
 
 ---
 
+# Criar e gerenciar revisões de ativos nos formulários {#creating-and-managing-reviews-for-assets-in-forms}
 
-# Criação e gerenciamento de revisões de ativos em formulários {#creating-and-managing-reviews-for-assets-in-forms}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Análise {#review}
 
@@ -27,7 +30,7 @@ Uma Revisão é um mecanismo que permite a um ou mais revisores comentar um ativ
 ## Configurar uma revisão {#setting-up-a-review}
 
 1. Navegue até a guia Forms e selecione um formulário.
-1. Se o ativo não tiver uma revisão em andamento, um ícone Iniciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparecerá na barra de Ações. Clique no ícone Iniciar Revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+1. Se o ativo não tiver uma revisão em andamento, uma revisão de Início ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) é exibido na barra Ação. Clique em Iniciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) ícone .
 1. Insira as seguintes informações:
 
    * Nome da revisão: Obrigatório, pode conter caracteres alfanuméricos, hífen ou sublinhado.
@@ -49,7 +52,7 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 
 1. A caixa de comentário está disponível para o iniciador e os revisores do ativo. Outros podem exibir os comentários, mas não podem escrever comentários.
 
-## Gerenciar uma revisão {#managing-a-review}
+## Gerenciamento de uma revisão {#managing-a-review}
 
 >[!NOTE]
 >
@@ -57,23 +60,23 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 
 1. Navegue até a guia Forms e selecione um formulário.
 
-1. Se um ativo tiver uma revisão em andamento e você for o iniciador da revisão, um ícone Gerenciar Revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) será exibido na barra de Ação. Somente o iniciador de revisão pode gerenciar (atualizar/encerrar) a revisão.
+1. Se um ativo tiver uma revisão em andamento e você for o iniciador da revisão, uma Análise de gerenciamento ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) ícones é exibido na barra Ação. Somente o iniciador de revisão pode gerenciar (atualizar/encerrar) a revisão.
 
-   Clique no ícone Gerenciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+   Clique em Gerenciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)ícone .
 
    Para outro usuário que não iniciador, o ícone Gerenciar Revisão está desativado.
 
 1. Você recebe uma tela que exibe informações:
 
-   * **Nome** da revisão: Não pode ser editado.
-   * **Descrição** da revisão: Disponível para edição.
-   * **Prazo** de revisão: Disponível para edição. É possível modificar o prazo para qualquer data e hora além da data e hora atuais.
+   * **Nome da revisão**: Não pode ser editado.
+   * **Descrição da revisão**: Disponível para edição.
+   * **Prazo de revisão**: Disponível para edição. É possível modificar o prazo para qualquer data e hora além da data e hora atuais.
    * **Revisores**: Disponível para edição. Você pode adicionar ou remover revisores. Se uma tarefa estiver vencida, você poderá adicionar revisores somente após estender o prazo além da data atual.
 
 1. Edite os campos necessários e clique em Atualizar.
 
    ![Rever o estado atualizado no Gerenciador de Tarefas](assets/tskmgr.png)
-   **Figura:** *Revisar o estado atualizado no Gerenciador de tarefas*
+   **Figura:** *Rever o estado atualizado no Gerenciador de Tarefas*
 
 1. Para encerrar a revisão, clique em Finalizar.
 
@@ -87,7 +90,7 @@ Esta seção descreve o que acontece no final / modificação da revisão:
 1. Se um revisor for removido:
 
    ![Remover um revisor](assets/removeduser.png)
-   **Figura:** *Remoção de um revisor*
+   **Figura:** *Remover um revisor*
 
    1. Se estiver incompleta, a tarefa atribuída será encerrada.
    1. O revisor não pode mais comentar o ativo.
@@ -105,4 +108,3 @@ Esta seção descreve o que acontece no final / modificação da revisão:
    1. **Revisores**: Para cada revisor, a tarefa incompleta relacionada à revisão é encerrada. A tarefa não é mais exibida como &quot;Pendente&quot; na seção Notificações do revisor.
    1. **Iniciador**: A tarefa atribuída ao iniciador Revisar está marcada como concluída. A tarefa é removida da seção Notification do iniciador de revisão.
    1. **Todos**: A revisão é exibida na seção Revisões anteriores . Não podem ser acrescentadas outras observações.
-

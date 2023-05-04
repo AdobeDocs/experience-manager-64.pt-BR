@@ -1,8 +1,8 @@
 ---
-title: Criação de lançamentos
-seo-title: Criação de lançamentos
-description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem.
-seo-description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem.
+title: Criação de inicializações
+seo-title: Creating Launches
+description: Crie um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2f5c022e-bd98-4912-9409-d08137a1caf1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 95%
+source-wordcount: '406'
+ht-degree: 28%
 
 ---
 
+# Criação de inicializações{#creating-launches}
 
-# Criação de lançamentos{#creating-launches}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem:
+Crie um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem:
 
-* O título aparece no **Sidekick**, a partir do qual os autores podem acessá-los para trabalhar neles.
-* As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar apenas a página de origem, se desejar.
-* Por padrão, a [Live Copy](/help/sites-administering/msm.md) atualiza automaticamente as páginas de lançamento conforme as páginas de origem são alteradas. Você pode especificar que uma cópia estática seja criada para evitar alterações automáticas.
+* O título aparece no **Sidekick**, de onde os autores podem acessá-los para trabalhar com eles.
+* As páginas filhas da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
+* Por padrão, [Live Copy](/help/sites-administering/msm.md) O atualiza automaticamente as páginas de lançamento conforme as páginas de origem são alteradas. Você pode especificar que uma cópia estática seja criada para evitar alterações automáticas.
 
 Como opção, especifique a **Data de inicialização** (e a hora) para definir quando as páginas de inicialização devem ser promovidas e ativadas. No entanto, a **Data de inicialização** só funciona em combinação com o sinalizador **Pronto para produção** (consulte [Editar uma configuração de inicialização](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration)); para que as ações realmente ocorram automaticamente, ambas devem ser definidas.
 
@@ -33,15 +36,15 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
 O procedimento a seguir cria um lançamento.
 
-1. Abra a página de administração do Site ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
-1. Clique em **Novo...** e depois em **Novo lançamento...**.
-1. Na caixa de diálogo **Criar lançamento**, especifique valores para as seguintes propriedades:
+1. Abra a página de administração do site ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
+1. Clique em **Novo...** then **Novo lançamento...**.
+1. No **Criar lançamento** , especifique valores para as seguintes propriedades:
 
-   * **Título do lançamento**: o nome do lançamento. O nome deve ser significativo para os autores.
-   * **Página de origem**: o caminho da página para a qual criar o lançamento. Por padrão, todas as páginas filho são incluídas.
-   * **Excluir subpáginas**: selecione essa opção para criar o lançamento somente para a página de origem, e não para as páginas filho. Por padrão, essa opção não está selecionada.
-   * **Manter em sincronia**: selecione essa opção para atualizar automaticamente o conteúdo das páginas de lançamento quando as páginas de origem forem alteradas. Isso é feito transformando o lançamento em uma [live copy](/help/sites-administering/msm.md).
-   * **Data de lançamento**: a data e a hora em que a cópia de lançamento deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Lançamentos - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Título do lançamento**: O nome do Launch. O nome deve ser significativo para os autores.
+   * **Página de origem**: O caminho para a página para a qual criar o lançamento. Por padrão, todas as páginas filhas são incluídas.
+   * **Excluir subpáginas**: Selecione essa opção para criar o lançamento somente para a página de origem e não para as páginas secundárias. Por padrão, essa opção não está selecionada.
+   * **Manter Sincronizado**: Selecione essa opção para atualizar automaticamente o conteúdo das páginas de lançamento quando as páginas de origem forem alteradas. Isso é feito fazendo com que o lançamento [live copy](/help/sites-administering/msm.md).
+   * **Data da inicialização**: a data e a hora em que a cópia de inicialização deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -49,14 +52,13 @@ O procedimento a seguir cria um lançamento.
 
 ## Exclusão de um lançamento {#deleting-a-launch}
 
-Você também pode excluir um lançamento.
+Também é possível excluir um lançamento.
 
-1. No console [Lançamentos](/help/sites-classic-ui-authoring/classic-launches.md), selecione o lançamento necessário.
-1. Clique em **Excluir** - uma confirmação é necessária:
+1. No [inicia o console](/help/sites-classic-ui-authoring/classic-launches.md), selecione o lançamento necessário.
+1. Clique em **Excluir** - a confirmação é necessária:
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!CAUTION]
    >
    >Ao excluir lançamentos aninhados, você deve excluir os níveis inferiores primeiro.
-

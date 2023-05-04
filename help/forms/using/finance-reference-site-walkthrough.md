@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9201'
+source-wordcount: '9237'
 ht-degree: 0%
 
 ---
 
 # Apresentação do site de referência do We.Finance {#we-finance-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Pré-requisitos {#pre-requisites}
 

@@ -1,31 +1,34 @@
 ---
-title: Adicionar ação personalizada em itens do lister de formulários
-seo-title: Adicionar ação personalizada em itens do lister de formulários
-description: Os desenvolvedores de formulários podem adicionar mais ações à listagem de formulários na página do portal de formulários. Por padrão, a lista de formulários permite acessar o formulário, preenchê-lo e enviá-lo.
-seo-description: Os desenvolvedores de formulários podem adicionar mais ações à listagem de formulários na página do portal de formulários. Por padrão, a lista de formulários permite acessar o formulário, preenchê-lo e enviá-lo.
+title: Adicionar ação personalizada aos itens da lista de formulários
+seo-title: Adding custom action on form lister items
+description: Os desenvolvedores de formulários podem adicionar mais ações à listagem de formulários na página do portal de formulários. Por padrão, a listagem de formulários permite acessar o formulário, preenchê-lo e enviá-lo.
+seo-description: Form developers can add more actions to the listing of forms on the forms portal page. By default, the form listing allows you to access the form, fill it, and submit it.
 uuid: 02c64f7d-f726-4a5b-a303-ec96934e9c01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: d8f60be3-474a-4dd1-aaa5-7b6a97e1a9bd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 0%
+source-wordcount: '301'
+ht-degree: 2%
 
 ---
 
+# Adicionar ação personalizada aos itens da lista de formulários {#adding-custom-action-on-form-lister-items}
 
-# Adicionar ação personalizada em itens do lister de formulários {#adding-custom-action-on-form-lister-items}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-No AEM Forms, você pode criar uma página de portal que lista os formulários disponíveis. Por padrão, você pode pesquisar e lista formulários em uma página do portal. Você pode abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas prontamente para formulários listados em uma página do portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criar uma página de portal de formulários](/help/forms/using/creating-form-portal-page.md).
+No AEM Forms, você pode criar uma página de portal listando os formulários disponíveis. Por padrão, você pode pesquisar e listar formulários em uma página de portal. Você pode abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas imediatamente para os formulários listados em uma página de portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criação de uma página de portal de formulários](/help/forms/using/creating-form-portal-page.md).
 
 É possível adicionar outras opções à página do portal. Essas opções ou ações podem ser personalizadas personalizando o modelo do portal de formulários.
 
-Este artigo mostra como criar um botão para enviar o link de um formulário, diretamente de uma página do portal de formulários. Esta personalização requer a atualização do modelo para o componente de Pesquisa e Lister.
+Este artigo mostra como criar um botão para enviar o link de um formulário, diretamente de uma página do portal de formulários. Esta personalização requer a atualização do modelo para o componente Pesquisa e Lister .
 
-O código necessário para adicionar a ação ao modelo está disponível abaixo. O atributo `onclick` no trecho de código tem um script para enviar um link de um formulário por email.
+O código necessário para adicionar a ação ao template está disponível abaixo. O `onclick` no snippet de código tem um script para enviar um link de formulário por email.
 
 ```mxml
 <div class="__FP_boxes-container __FP_single-color">
@@ -46,9 +49,8 @@ O código necessário para adicionar a ação ao modelo está disponível abaixo
 </div>
 ```
 
-É possível adicionar ações semelhantes no modelo personalizado. Para definir uma função JavaScript, adicione a função em um script de nível de página e vincule-a ao elemento HTML necessário. No exemplo acima, a expressão `onclick` é a função vinculada.
+Você pode adicionar ações semelhantes no modelo personalizado. Para definir uma função JavaScript, adicione a função em um script de página e vincule-a ao elemento HTML de requisito. No exemplo acima, a variável `onclick` expression é a função vinculada.
 
-Depois de fazer as edições no modelo, a página do portal de amostra contém um botão para enviar o link do formulário por email, como mostrado abaixo.
+Depois de fazer as edições no modelo, a página do portal de amostra contém um botão para enviar o link do formulário por email, conforme mostrado abaixo.
 
 ![email](assets/email.png)
-

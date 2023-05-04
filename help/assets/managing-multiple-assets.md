@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 13%
+source-wordcount: '469'
+ht-degree: 14%
 
 ---
 
 # Gerenciar vários ativos e coleções {#managing-multiple-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Saiba como editar os metadados de vários ativos e coleções simultaneamente para propagar rapidamente alterações de metadados comuns.
 
@@ -33,10 +37,10 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
 
 1. Na interface do usuário do Assets, navegue até o local dos ativos que deseja editar.
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
-1. Na barra de ferramentas, clique em **[!UICONTROL Properties]** para abrir a página de propriedades dos ativos selecionados.
+1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]** para abrir a página de propriedades dos ativos selecionados.
 1. Modifique as propriedades de metadados para ativos selecionados nas várias guias.
-1. Para exibir os metadados de um ativo específico, cancele a seleção dos ativos restantes na lista. Se você cancelar a seleção de alguns ativos na página [!UICONTROL Propriedades], os metadados desses ativos não serão atualizados.
-1. Para selecionar um esquema de metadados diferente para os ativos, clique em **[!UICONTROL Settings]** na barra de ferramentas e selecione um esquema. Clique em **[!UICONTROL Salvar e fechar]**.
+1. Para exibir os metadados de um ativo específico, cancele a seleção dos ativos restantes na lista. Se você cancelar a seleção de alguns ativos na [!UICONTROL Propriedades] , os metadados desses ativos não são atualizados.
+1. Para selecionar um esquema de metadados diferente para os ativos, clique em **[!UICONTROL Configurações]** na barra de ferramentas e selecione um schema. Clique em **[!UICONTROL Salvar e fechar]**.
 1. Para anexar os novos metadados aos existentes em campos que contêm vários valores, selecione o **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Clique em **[!UICONTROL Enviar]**.
 
 ![O esquema de metadados em massa se aplica a vários ativos](assets/metadata-schema-bulk-edit.gif)
@@ -51,7 +55,7 @@ Para evitar uma situação semelhante ao DOS, [!DNL Experience Manager] limita o
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para alterar o limite, acesse **[!UICONTROL Ferramentas > Operações > Console da Web]** e altere o valor de [!UICONTROL Parâmetros de POST máximo] na configuração OSGi da [!UICONTROL Manipulação de parâmetro da solicitação do Apache].
+Para alterar o limite, acesse **[!UICONTROL Ferramentas > Operações > Console da Web]** e alterar o valor de [!UICONTROL Parâmetros de POST máximo] em [!UICONTROL Manuseio de parâmetro da solicitação do Apache Sling] Configuração do OSGi.
 
 >[!MORELIKETHIS]
 >

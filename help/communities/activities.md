@@ -1,90 +1,93 @@
 ---
-title: Recurso de fluxos de atividade
-seo-title: Recurso de fluxos de atividade
-description: Atividades de um membro da comunidade conectado
-seo-description: Atividades de um membro da comunidade conectado
+title: Recurso Fluxos de atividade
+seo-title: Activity Streams Feature
+description: Atividades de um membro da comunidade com sessão iniciada
+seo-description: Activities of a signed-in community member
 uuid: 8a05a5ed-0edf-4528-a145-f9dc37d10247
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: e62b7c0d-5004-4672-9fdc-566ece2785c9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
 
+# Recurso Fluxos de atividade {#activity-streams-feature}
 
-# Recurso de fluxos de atividade {#activity-streams-feature}
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 ## Introdução {#introduction}
 
-As atividades de um membro da comunidade conectado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras pela configuração do componente `Activity Streams`.
+As atividades de um membro da comunidade assinado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras pela configuração do `Activity Streams` componente.
 
-A habilidade de seguir adiciona outra visualização de atividades quando os membros da comunidade seguem postagens de interesse ou seguem as atividades de outros membros da comunidade.
+A capacidade de seguir adiciona outra exibição de atividades quando os membros da comunidade seguem postagens de interesse ou seguem as atividades de outros membros da comunidade.
 
 Esta seção da documentação descreve
 
-* Adicionar o componente de Fluxos de Atividade a um site AEM
-* Configurações do componente Fluxos de Atividade
+* Adicionar o componente Fluxos de atividade a um site AEM
+* Configurações do componente Fluxos de atividade
 
-## Adicionando fluxos de Atividade a uma página {#adding-activity-streams-to-a-page}
+## Adicionar fluxos de atividade a uma página {#adding-activity-streams-to-a-page}
 
-Se desejar adicionar um componente `Activity Streams` a uma página no modo de autor, use o navegador de componentes para localizar
+Se desejar adicionar uma `Activity Streams` para uma página no modo autor, use o navegador de componentes para localizar
 
 * `Communities / Activity Streams`
 
 e arraste-o para o lugar em uma página onde os fluxos de atividade devem aparecer.
 
-Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
+Para obter as informações necessárias, visite [Noções básicas sobre componentes do Communities](basics.md).
 
-Quando as [bibliotecas obrigatórias do lado do cliente](essentials-activities.md#essentials-for-client-side) forem incluídas, o componente `Activity Streams` aparecerá desta forma:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](essentials-activities.md#essentials-for-client-side) são incluídos, é assim que a variável `Activity Streams` componente será exibido:
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-## Configurando fluxos de Atividade {#configuring-activity-streams}
+## Configuração de fluxos de atividade {#configuring-activity-streams}
 
-Selecione o componente `Activity Streams` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
+Selecione o `Activity Streams` para acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-Na guia **[!UICONTROL Atividades do usuário]**, especifique as atividades a serem exibidas:
+Em **[!UICONTROL Atividades do usuário]** , especifique quais atividades exibir:
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-* **[!UICONTROL Número máximo de]**
-atividadesO número de atividades a serem exibidas
-* **[!UICONTROL Caminho]**
-do recurso de fluxoDeixe em branco como padrão para o site da comunidade ou grupo da comunidade. O caminho do recurso de fluxo identifica a origem do atividade. O padrão está em branco.
-* **[!UICONTROL Exibição de Atividades de usuário]**
-marcada, a página de atividades incluirá uma guia que filtros atividades com base nas  geradas na comunidade pelo membro atual. O padrão está marcado.
-* **[!UICONTROL Exibir todas as Atividades]**
-VisualizaçãoSe marcada, a página atividades incluirá uma guia que inclui todas as atividades geradas na comunidade à qual o membro atual tem acesso. O padrão está marcado.
-* **[!UICONTROL Exibir]**
-exibição seguinteSe marcada, a página do atividade incluirá uma guia que filtros atividades com base nos  que o membro atual está seguindo. O padrão está marcado.
+* **[!UICONTROL Número máximo de atividades]**
+O número de atividades a serem exibidas
+* **[!UICONTROL Caminho do recurso de fluxo]**
+Deixe em branco como padrão para o site da comunidade ou grupo da comunidade. O caminho do recurso de fluxo identifica a origem das atividades. O padrão está em branco.
+* **[!UICONTROL Exibir exibição de atividades do usuário]**
+se marcada, a página de atividades incluirá uma guia que filtra as atividades com base nas geradas na comunidade pelo membro atual. O padrão está marcado.
+* **[!UICONTROL Exibir visualização de todas as atividades]**
+Se marcada, a página de atividades incluirá uma guia que inclui todas as atividades geradas na comunidade às quais o membro atual tem acesso. O padrão está marcado.
+* **[!UICONTROL Exibir a seguinte exibição]**
+Se marcada, a página de atividades incluirá uma guia que filtra as atividades com base nas atividades que o membro atual está seguindo. O padrão está marcado.
 
-## Visualização a seguir {#following-view}
+## Seguinte exibição {#following-view}
 
-Os componentes devem ser configurados para permitir o seguinte. Os recursos que permitem o seguinte são [blog](blog-feature.md), [fórum](forum.md), [QnA](working-with-qna.md), [calendário](calendar.md), [filelibrary](file-library.md) e [comentários](comments.md).
+Os componentes devem ser configurados para ativar o seguinte. Os recursos que permitem o seguinte são [blog](blog-feature.md), [fórum](forum.md), [QnA](working-with-qna.md), [calendário](calendar.md), [filelibrary](file-library.md)e [comentários](comments.md).
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-O botão **Seguir** fornece um meio de seguir as entradas como atividade, [notificações](notifications.md) e/ou [subscrição](subscriptions.md). Sempre que o botão **Seguir** for selecionado, é possível ativar ou desativar uma seleção. A seleção `Email Subscriptions` só está presente quando configurada.
+O **Seguir** fornece um meio de seguir entradas como atividades, [notificações](notifications.md)e/ou [assinaturas](subscriptions.md). Sempre que a variável **Seguir** for selecionado, é possível ativar ou desativar uma seleção. O `Email Subscriptions` A seleção só está presente quando configurada.
 
-Se algum método do seguinte for selecionado, o texto do botão mudará para **Seguindo**. Para conveniência, é possível selecionar `Unfollow All` para desativar todos os métodos.
+Se qualquer método de seguir for selecionado, o texto do botão será alterado para **Seguindo**. Para maior comodidade, é possível selecionar `Unfollow All` para desativar todos os métodos.
 
-O botão **Seguir** será exibido:
+O **Seguir** será exibido:
 
-* Ao exibir o perfil de outro membro
-* Em uma página principal de recursos, como fóruns, QnA e blogs
-   * Segue toda a atividade desse recurso geral
+* Ao visualizar o perfil de outro membro
+* Em uma página principal do recurso, como fóruns, QnA e blogs
+   * Segue todas as atividades para esse recurso geral
 
-* Para uma entrada específica, como um tópico do fórum, uma pergunta de QnA ou um artigo do blog
-   * Segue toda a atividade para essa entrada específica
+* Para uma entrada específica, como um tópico de fórum, pergunta de QnA ou artigo de blog
+   * Segue todas as atividades para essa entrada específica
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [Atividade Streams Essentials](essentials-activities.md) para desenvolvedores.
+Mais informações podem ser encontradas no [Fundamentos dos fluxos de atividade](essentials-activities.md) página para desenvolvedores.

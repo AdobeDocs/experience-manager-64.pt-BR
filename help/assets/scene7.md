@@ -8,14 +8,18 @@ topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
 role: User
-source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2824'
-ht-degree: 27%
+source-wordcount: '2860'
+ht-degree: 0%
 
 ---
 
 # Adicionar componentes do Dynamic Media Classic às páginas {#adding-scene-features-to-your-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 O Adobe Dynamic Media Classic é uma solução hospedada para gerenciar, aprimorar, publicar e fornecer ativos de mídia avançada para Web, dispositivos móveis, email, impressão e monitores conectados à Internet.
 
@@ -24,7 +28,7 @@ Você pode visualizar AEM ativos publicados no Dynamic Media Classic em vários 
 * Zoom
 * Flyout
 * Vídeo
-* Modelo de imagem
+* Modelo da imagem
 * Imagem
 
 Você pode publicar ativos digitais diretamente do AEM para o Dynamic Media Classic e pode publicar ativos digitais do Dynamic Media Classic para o AEM.
@@ -57,7 +61,7 @@ Os seguintes componentes do Dynamic Media Classic estão disponíveis no AEM:
 
 * Zoom
 * Flyout (Zoom)
-* Modelo de imagem
+* Modelo da imagem
 * Imagem
 * Vídeo
 
@@ -102,7 +106,7 @@ Adicionar um componente do Dynamic Media Classic (Scene7) a uma página é o mes
 
 ### Adicionar experiências de visualização interativas a um site responsivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
-Design responsivo para seus ativos significa que eles se adaptam dependendo de onde são exibidos. Com o design responsivo, os mesmos ativos podem ser exibidos de maneira eficaz em diversos dispositivos.
+Design responsivo para seus ativos significa que eles se adaptam dependendo de onde são exibidos. Com um design responsivo, os mesmos ativos podem ser exibidos eficientemente em vários dispositivos.
 
 Consulte também [Design responsivo para páginas da Web](/help/sites-developing/responsive.md).
 
@@ -120,7 +124,7 @@ Consulte também [Design responsivo para páginas da Web](/help/sites-developing
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
-1. Verifique se os visualizadores estão sendo redimensionados de maneira adequada e de que todas as interações sejam otimizadas para desktop, tablet e dispositivo móvel.
+1. Confirme se os visualizadores estão sendo redimensionados de forma responsiva e se todas as interações estão otimizadas para desktop, tablet e dispositivo móvel.
 
 ### Configurações comuns a todos os componentes do Dynamic Media Classic {#settings-common-to-all-scene-components}
 
@@ -167,34 +171,34 @@ A Dynamic Media Classic **[!UICONTROL Imagem]** permite adicionar a funcionalida
 No **[!UICONTROL Avançado]** , adicione um título à imagem e um texto alternativo para os usuários que tenham os gráficos desativados.
 
 * **[!UICONTROL URL, Abrir em]**
-É possível definir um ativo de para abrir um link. Defina o **[!UICONTROL URL]** e, em **[!UICONTROL Abrir em]**, indique se você deseja que ele abra na mesma janela ou em uma nova.
+É possível definir um ativo de para abrir um link. Defina as **[!UICONTROL URL]** e **[!UICONTROL Abrir em]** indique se deseja que ele seja aberto na mesma janela ou em uma nova janela.
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
 * **[!UICONTROL Predefinição do visualizador]**
-Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md). Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
+Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição do visualizador que você está procurando não estiver visível, talvez seja necessário torná-la visível. Consulte [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md). Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
 * **[!UICONTROL Configuração do Dynamic Media Classic]**
 Selecione a configuração do Dynamic Media Classic que deseja usar para buscar predefinições de imagens ativas do SPS.
 
 * **[!UICONTROL Predefinição de imagem]**
-Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md). Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
+Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, talvez seja necessário torná-la visível. Consulte [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md). Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
 * **[!UICONTROL Formato de saída]**
 Selecione o formato de saída da imagem, por exemplo jpeg. Dependendo do formato de saída selecionado, você pode ter opções de configuração adicionais. Consulte [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options).
 
 * **[!UICONTROL Nitidez]**
-Selecione como deseja ajustar a nitidez da imagem. A nitidez é explicada detalhadamente em [Práticas recomendadas da predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options) e [Práticas recomendadas de nitidez](/help/assets/assets/sharpening_images.pdf).
+Selecione como deseja ajustar a nitidez da imagem. A nitidez é explicada detalhadamente em [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options) e [Práticas recomendadas de nitidez](/help/assets/assets/sharpening_images.pdf).
 
 * **[!UICONTROL Modificadores de URL]**
-Você pode alterar os efeitos da imagem fornecendo comandos adicionais de imagem do Dynamic Media Classic. Eles estão descritos em [Predefinições de imagem](/help/assets/managing-image-presets.md) e na [Referência de comandos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+Você pode alterar os efeitos da imagem fornecendo comandos adicionais de imagem do Dynamic Media Classic. Estes são descritos em [Predefinições de imagem](/help/assets/managing-image-presets.md) e [Referência de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 * **[!UICONTROL Pontos de interrupção]**
 Se seu site for responsivo, você deseja ajustar os pontos de interrupção. Os pontos de interrupção devem ser separados por vírgulas ( , ).
 
-### Modelo de imagem {#image-template}
+### Modelo da imagem {#image-template}
 
-[Modelos de imagem do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating-the-initial-template) são conteúdo em camadas do Photoshop que foi importado para o Dynamic Media Classic, onde o conteúdo e as propriedades foram parametrizadas para oferecer variabilidade. O componente do **[!UICONTROL Modelo de imagem]** permite importar imagens e alterar dinamicamente o texto no AEM. Além disso, é possível configurar o componente do **[!UICONTROL Modelo de imagem]** para usar valores do contexto de cliente, de modo que cada usuário experiencie a imagem de uma maneira personalizada.
+[Modelos de imagem do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating-the-initial-template) são conteúdo em camadas do Photoshop que foi importado para o Dynamic Media Classic, onde o conteúdo e as propriedades foram parametrizadas para oferecer variabilidade. O **[!UICONTROL Modelo de imagem]** permite importar imagens e alterar o texto dinamicamente no AEM. Além disso, você pode configurar a variável **[!UICONTROL Modelo de imagem]** componente para usar valores do contexto do cliente, de modo que cada usuário experimente a imagem de uma maneira personalizada.
 
 Toque **[!UICONTROL Editar]** para configurar o componente. Você pode configurar [configurações comuns a todos os componentes do Dynamic Media Classic](#settings-common-to-all-scene-components) assim como outras configurações descritas nesta seção.
 
@@ -205,45 +209,45 @@ Consulte as configurações comuns a todos os componentes do Dynamic Media Class
 
    >[!NOTE]
    >
-   >Comandos e parâmetros de URL do Dynamic Media Classic não podem ser adicionados diretamente ao URL de referência de arquivo. Eles podem ser definidos somente na interface do componente no painel **[!UICONTROL Parâmetro]**.
+   >Comandos e parâmetros de URL do Dynamic Media Classic não podem ser adicionados diretamente ao URL de referência de arquivo. Eles só podem ser definidos na interface do componente no **[!UICONTROL Parâmetro]** painel.
 
 * **[!UICONTROL Título, Texto alternativo]**
 Na guia Modelo de imagem do Dynamic Media Classic , adicione um título à imagem e um texto alternativo para os usuários que tenham os gráficos desativados.
 
 * **[!UICONTROL URL, Abrir em]**
-É possível definir um ativo de para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
+É possível definir um ativo de para abrir um link. Defina o URL e, em Abrir em , indique se deseja que ele seja aberto na mesma janela ou em uma nova janela.
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **[!UICONTROL Painel de parâmetros]**
-Ao importar uma imagem, os parâmetros são preenchidos previamente com informações da imagem. Caso nenhum conteúdo possa ser alterado dinamicamente, essa janela fica vazia.
+Ao importar uma imagem, os parâmetros são preenchidos previamente com informações da imagem. Se não houver conteúdo que possa ser alterado dinamicamente, essa janela ficará vazia.
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
-#### Alterar o texto dinamicamente {#changing-text-dynamically}
+#### Alteração dinâmica do texto {#changing-text-dynamically}
 
-Para alterar o texto dinamicamente, insira o novo texto nos campos e clique em **[!UICONTROL OK]**. Neste exemplo, o **[!UICONTROL Preço]** agora é $50 e o frete é de 99 centavos de dólar.
+Para alterar o texto dinamicamente, insira o novo texto nos campos e clique em **[!UICONTROL OK]**. Neste exemplo, a variável **[!UICONTROL Preço]** agora é de US$ 50 e o frete é de 99 centavos.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-O texto na imagem é alterado. Você pode redefinir o texto de volta para o valor original tocando em **[!UICONTROL Redefinir]** ao lado do campo .
+O texto na imagem muda. Você pode redefinir o texto de volta para o valor original tocando em **[!UICONTROL Redefinir]** ao lado do campo .
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-#### Alterar o texto para refletir o valor de contexto do cliente {#changing-text-to-reflect-the-value-of-a-client-context-value}
+#### Alteração do texto para refletir o valor de contexto do cliente {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Para vincular um campo a um valor de contexto de cliente, toque em **[!UICONTROL Selecionar]** para abrir o menu de contexto do cliente, selecione o contexto do cliente e toque em **[!UICONTROL OK]**. Neste exemplo, o nome é alterado com base na vinculação do Nome com o nome formatado no perfil.
+Para vincular um campo a um valor de contexto de cliente, toque em **[!UICONTROL Selecionar]** para abrir o menu de contexto do cliente, selecione o contexto do cliente e toque em **[!UICONTROL OK]**. Neste exemplo, o nome é alterado com base na vinculação do Nome ao nome formatado no perfil.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
-O texto reflete o nome do cliente conectado no momento. É possível redefinir o texto de volta para o valor original ao clicar em **[!UICONTROL Redefinir]** próximo ao campo.
+O texto reflete o nome do usuário conectado no momento. Você pode redefinir o texto de volta ao valor original clicando em **[!UICONTROL Redefinir]** ao lado do campo .
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
 #### Como tornar o modelo de imagem do Dynamic Media Classic um link {#making-the-scene-image-template-a-link}
 
 1. Na página com a Dynamic Media Classic **[!UICONTROL Modelo de imagem]** componente, toque **[!UICONTROL Editar]**.
-1. No **[!UICONTROL URL]** , insira o URL para o qual os usuários são direcionados quando a imagem é tocada. No campo **[!UICONTROL Abrir em]**, selecione se deseja onde o destino seja aberto (uma nova janela ou na mesma).
+1. No **[!UICONTROL URL]** , insira o URL para o qual os usuários são direcionados quando a imagem é tocada. No **[!UICONTROL Abrir em]** , selecione se deseja que o target seja aberto (uma nova janela ou a mesma).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -251,17 +255,17 @@ O texto reflete o nome do cliente conectado no momento. É possível redefinir o
 
 ### Componente de vídeo {#video-component}
 
-A Dynamic Media Classic **[!UICONTROL Vídeo]** O componente (disponível na seção Dynamic Media Classic do sidekick) usa a detecção de dispositivo e de largura de banda para veicular o vídeo correto em cada tela. Este componente é um reprodutor de vídeo HTML5; é um visualizador único que pode ser usado em todos os canais.
+A Dynamic Media Classic **[!UICONTROL Vídeo]** O componente (disponível na seção Dynamic Media Classic do sidekick) usa a detecção de dispositivo e de largura de banda para veicular o vídeo correto em cada tela. Este componente é um reprodutor de vídeo HTML5; é um visualizador único que pode ser usado entre canais.
 
-Ele pode ser usado pra conjuntos de vídeos adaptáveis, um único vídeo MP4 ou um único vídeo F4V.
+Ele pode ser usado para conjuntos de vídeos adaptáveis, um único vídeo MP4 ou um único vídeo F4V.
 
 Consulte [Vídeo](s7-video.md) para obter mais informações sobre como os vídeos funcionam com a integração do Dynamic Media Classic. Além disso, consulte [o componente Vídeo do Dynamic Media Classic versus o componente Vídeo de base](s7-video.md).
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-### Restrições conhecidas do componente de vídeo {#known-limitations-for-the-video-component}
+### Limitações conhecidas do componente de vídeo {#known-limitations-for-the-video-component}
 
-O Adobe DAM e o WCM mostram se um vídeo principal é carregado por upload. Eles não mostram os ativos de proxy a seguir:
+O Adobe DAM e o WCM mostram se um vídeo principal foi carregado. Eles não mostram esses ativos de proxy:
 
 * Representações codificadas do Dynamic Media Classic
 * Conjuntos de vídeo adaptáveis Dynamic Media Classic
@@ -272,7 +276,7 @@ Ao usar um conjunto de vídeos adaptáveis com o componente de vídeo do Dynamic
 
 O navegador de conteúdo do Dynamic Media Classic permite exibir o conteúdo do Dynamic Media Classic diretamente no AEM. Para acessar o navegador de conteúdo, no **[!UICONTROL Localizador de conteúdo]**, selecione **[!UICONTROL Dynamic Media Classic]** na interface otimizada para toque ou na **[!UICONTROL S7]** na interface do usuário clássica. A funcionalidade é idêntica em ambas as interfaces do usuário.
 
-Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração padrão](/help/sites-administering/scene7.md#configuring-a-default-configuration). Você pode selecionar configurações diferentes diretamente no navegador de conteúdo do Dynamic Media Classic no menu suspenso.
+Se você tiver várias configurações, AEM por padrão, a variável [configuração padrão](/help/sites-administering/scene7.md#configuring-a-default-configuration). Você pode selecionar configurações diferentes diretamente no navegador de conteúdo do Dynamic Media Classic no menu suspenso.
 
 >[!NOTE]
 >
@@ -280,7 +284,7 @@ Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração
 >* When [A Visualização segura está ativada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), os ativos publicados e não publicados no Dynamic Media Classic aparecem no navegador de conteúdo do Dynamic Media Classic.
 >* Se você não vir **[!UICONTROL Dynamic Media Classic]** ou **[!UICONTROL S7]** como uma opção no navegador de conteúdo, é necessário [configurar o Dynamic Media Classic para funcionar com o AEM](/help/sites-administering/scene7.md).
 >* Para vídeo, o navegador de conteúdo do Dynamic Media Classic é compatível com:
-   >   * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
+   >   * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução contínua em várias telas
    >   * Vídeo MP4 único
    >   * Vídeo F4V único
 
@@ -297,7 +301,6 @@ Navegue pelos ativos do Dynamic Media Classic selecionando **[!UICONTROL Dynamic
 >
 >* O navegador de conteúdo do Dynamic Media Classic carrega cerca de 100 ativos e os classifica por nome.
 >* Se você tiver um servidor de visualização seguro definido, o navegador usará esse servidor de visualização para renderizar miniaturas e ativos.
-
 >
 
 
@@ -314,21 +317,21 @@ Além disso, você pode navegar pelas informações de resolução, tamanho, dia
 
 Pesquisar ativos do Dynamic Media Classic é semelhante a pesquisar ativos AEM exceto que, ao pesquisar, você está realmente vendo uma visualização remota dos ativos no sistema Dynamic Media Classic, em vez de importá-los diretamente para o AEM.
 
-É possível usar a interface do usuário clássica ou a otimizada para toque para visualizar e pesquisar ativos. Dependendo da interface, a maneira como você pesquisa é levemente diferente.
+Você pode usar a interface clássica ou a interface otimizada para toque para exibir e procurar ativos. Dependendo da interface, a forma como você pesquisa é um pouco diferente.
 
-Ao pesquisar em qualquer uma das interfaces de usuário, você pode filtrar pelos seguintes critérios (mostrados aqui na interface otimizada para toque):
+Ao pesquisar em qualquer uma das interfaces do usuário, você pode filtrar pelos seguintes critérios (mostrados aqui na interface otimizada para toque):
 
 * **[!UICONTROL Inserir palavras-chave]**
-Você pode pesquisar ativos por nome. Ao pesquisar, as palavras-chave inseridas corresponderão às palavras com as quais o nome de arquivo come. Por exemplo, digitar a palavra “nadar” pesquisaria todos os nomes de arquivo de ativo que comecem com as letras nessa ordem. Toque em Inserir depois de digitar o termo para localizar o ativo.
+Você pode pesquisar ativos por nome. Ao pesquisar as palavras-chave inseridas, o nome do arquivo começa com isso. Por exemplo, digitar a palavra &quot;nadar&quot; procuraria quaisquer nomes de arquivo de ativo que comecem com essas letras nessa ordem. Toque em Inserir depois de digitar o termo para localizar o ativo.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
 * **[!UICONTROL Pasta/caminho]**
-O nome da pasta que aparece é baseado na configuração selecionada. Você pode detalhar para níveis inferiores tocando no ícone de pasta, selecionando uma subpasta e tocando na marca de seleção para selecioná-la.
+O nome da pasta que aparece é baseado na configuração selecionada. Você pode detalhar para níveis inferiores tocando no ícone de pasta e selecionando uma subpasta, em seguida tocando na marca de seleção para selecioná-la.
 
-Se você inserir uma palavra-chave e selecionar uma pasta, o AEM procura nessa pasta e em todas as subpastas. No entanto, se você não digitar nenhuma palavra-chave ao pesquisar, selecionar a pasta exibirá somente os ativos nessa pasta e não incluirá nenhuma subpasta.
+Se você inserir uma palavra-chave e selecionar uma pasta, o AEM pesquisará essa pasta e quaisquer subpastas. No entanto, se você não inserir nenhuma palavra-chave ao pesquisar, selecionar a pasta mostrará apenas os ativos nessa pasta e não incluirá nenhuma subpasta.
 
-Por padrão, o AEM procura na pasta selecionada e em todas as subpastas.
+Por padrão, o AEM pesquisa a pasta selecionada e todas as subpastas.
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -343,17 +346,16 @@ Se você tiver mais de uma configuração Dynamic Media Classic definida em [!UI
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
 * **[!UICONTROL Tipo de ativo]**
-No navegador Dynamic Media Classic, você pode filtrar resultados para incluir qualquer um dos seguintes itens: imagens, modelos, vídeos e conjuntos de vídeos adaptáveis. Se você não selecionar nenhum tipo de ativo, o AEM procura todos os tipos de ativo por padrão.
+No navegador Dynamic Media Classic, você pode filtrar resultados para incluir qualquer um dos seguintes itens: imagens, modelos, vídeos e conjuntos de vídeos adaptáveis. Se você não selecionar nenhum tipo de ativo, AEM por padrão pesquisa todos os tipos de ativo.
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
 >[!NOTE]
 >
->* Na interface do usuário clássica, também é possível procurar pelo **Flash** e pelo **FXG**. A filtragem para eles na interface otimizada para toque não é compatível atualmente.
+>* Na interface clássica, você também pode pesquisar por **Flash** e **FXG**. No momento, a filtragem desses itens na interface otimizada para toque não é compatível.
 >
->* Ao pesquisar por vídeo, você estará procurando uma única representação. Os resultados retornam a representação original (somente o &amp;ast;.mp4) e a representação codificada.
->* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Caso não tenha adicionado uma palavra-chave, o AEM não pesquisará nas subpastas.
-
+>* Ao pesquisar vídeo, você está pesquisando uma única representação. Os resultados retornam a representação original (somente o &amp;ast;.mp4) e a representação codificada.
+>* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o AEM não pesquisará nas subpastas.
 >
 
 

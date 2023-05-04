@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 exl-id: 43376dfd-9cef-46f5-af14-21e379fbb79a
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 3%
+source-wordcount: '1214'
+ht-degree: 6%
 
 ---
 
 # Introdução ao SPA no AEM - React {#getting-started-with-spas-in-aem-react}
+
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
 Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar com facilidade o conteúdo no AEM para um site criado usando estruturas SPA.
 
@@ -124,7 +128,7 @@ Depois de criado, o pacote pode ser carregado em uma instância de AEM.
 
 ### Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 

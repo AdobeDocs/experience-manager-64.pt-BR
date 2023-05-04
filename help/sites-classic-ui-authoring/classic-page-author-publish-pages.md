@@ -1,28 +1,31 @@
 ---
 title: Publicar páginas
-seo-title: Publicar páginas
-description: Após criar e revisar seu conteúdo no ambiente de criação, o objetivo é que ele seja disponibilizado no seu site público.
-seo-description: Após criar e revisar seu conteúdo no ambiente de criação, o objetivo é que ele seja disponibilizado no seu site público.
+seo-title: Publishing Pages
+description: Depois de criar e revisar seu conteúdo no ambiente de criação, o objetivo é disponibilizá-lo em seu site público.
+seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
 uuid: 2b1cb08b-dbe9-4032-8527-15a11aa59d51
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7b3f58df-036e-46a8-913e-e695de34ddd7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 79%
+source-wordcount: '1082'
+ht-degree: 6%
 
 ---
 
-
 # Publicar páginas{#publishing-pages}
 
-Depois de criar (e revisar) seu conteúdo no ambiente de criação, o objetivo é disponibilizá-lo em seu site público (seu ambiente de publicação).
+>[!CAUTION]
+>
+>AEM 6.4 chegou ao fim do suporte estendido e esta documentação não é mais atualizada. Para obter mais detalhes, consulte nossa [períodos de assistência técnica](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões compatíveis [here](https://experienceleague.adobe.com/docs/).
 
-Isso é referido como a publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente de criação para modificações adicionais até que você a exclua.
+Depois de criar e revisar seu conteúdo no ambiente de criação, o objetivo é disponibilizá-lo em seu site público (seu ambiente de publicação).
+
+Isso é chamado de publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente de criação para outras alterações até que você a exclua.
 
 Você também pode publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida posteriormente.
 
@@ -32,149 +35,143 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >* **Publicar/Desfazer a publicação**
    >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
-   >
-   >
-* **Ativar / Desativar**
+>
+>* **Ativar / Desativar**
    >  Estes termos são sinônimos de publicar/desfazer a publicação.
-   >
-   >
-* **Replicar / Replicação**
+>
+>* **Replicar / Replicação**
    >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 >
 
 
-
 >[!NOTE]
 >
->Caso não tenha os privilégios necessários para a publicação de uma página específica:
+>Se você não tiver os privilégios necessários para publicar uma página específica:
 >
->* Um fluxo de trabalho será acionado para notificar a pessoa adequada sobre a sua solicitação para publicação.
+>* Um fluxo de trabalho será acionado para notificar a pessoa apropriada de sua solicitação para publicação.
 >* Uma mensagem será exibida (por um curto período) para notificá-lo sobre isso.
-
 >
-
 
 
 ## Publicar uma página {#publishing-a-page}
 
-Existem dois métodos para a ativação de uma página:
+Há dois métodos para ativar uma página:
 
 * [do console Sites](#activating-a-page-from-the-websites-console)
 * [do sidekick na própria página](#activating-a-page-from-sidekick)
 
 >[!NOTE]
 >
->Também é possível ativar uma subárvore de várias páginas usando a opção [Ativar árvore](#howtoactivateacompletesectiontreeofyourwebsite) no console Ferramentas.
+>Também é possível ativar uma subárvore de várias páginas usando [Ativar árvore](#howtoactivateacompletesectiontreeofyourwebsite) no console Ferramentas .
 
-### Activating a Page from the Websites Console {#activating-a-page-from-the-websites-console}
+### Ativar uma página do console Sites {#activating-a-page-from-the-websites-console}
 
-É possível ativar as páginas no console Sites. Após ter aberto uma página e modificado o conteúdo, volte ao console Sites:
+Você pode ativar páginas no console Sites. Depois de ter aberto uma página e modificado seu conteúdo, você volta ao console Sites :
 
 1. No console Sites, selecione a página que deseja ativar.
-1. Selecione **Ativar**, no menu superior ou no suspenso, no item da página selecionada.
+1. Selecionar **Ativar**, no menu superior ou no suspenso, no item da página selecionada.
 
-   Para ativar o conteúdo da página e todas as suas subpáginas, use o [**console Ferramentas**](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Para ativar o conteúdo da página e todas as suas subpáginas, use o [**Ferramentas** console](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
    >[!NOTE]
    >
-   >Se necessário, o AEM solicita que você ative ou ative novamente quaisquer ativos relacionadas com a página. É possível selecionar ou desmarcar as caixas de seleção para ativar esses ativos.
+   >Se necessário, o AEM solicita que você ative ou reative quaisquer ativos vinculados à página. Você pode marcar ou desmarcar as caixas de seleção para ativar esses ativos.
 
-1. Se necessário, o AEM solicita que você ative ou ative novamente quaisquer ativos relacionadas com a página. É possível selecionar ou desmarcar as caixas de seleção para ativar esses ativos.
+1. Se necessário, o AEM solicita que você ative ou reative quaisquer ativos vinculados à página. Você pode marcar ou desmarcar as caixas de seleção para ativar esses ativos.
 
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
-1. O AEM WCM ativa o conteúdo selecionado. A página ou páginas publicadas aparecem no console [Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado em verde) com as informações sobre quem ativou o conteúdo, bem como a data e a hora da ativação.
+1. AEM WCM ativa o conteúdo selecionado. A página ou páginas publicadas aparecem no [Console de sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado em verde) com informações sobre quem ativou o conteúdo, bem como a data e a hora da ativação.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Activating a Page from Sidekick {#activating-a-page-from-sidekick}
+### Ativar uma página do Sidekick {#activating-a-page-from-sidekick}
 
-Também é possível ativar uma página quando estiver aberta para edição.
+Você também pode ativar uma página quando ela estiver aberta para edição.
 
-Após ter aberto a página e o conteúdo modificado:
+Após ter aberto a página e modificado seu conteúdo, você:
 
-1. Selecione a guia **Página** no Sidekick.
+1. Selecione o **Página** no Sidekick.
 1. Clique em **Ativar página**.
 
-   Uma mensagem é exibida no canto superior direito da janela, confirmando que a página foi ativada.
+   Uma mensagem é exibida na parte superior direita da janela, confirmando que a página foi ativada.
 
-## Desfazer publicação de uma página {#unpublishing-a-page}
+## Desfazer a publicação de uma página {#unpublishing-a-page}
 
-Para remover uma página do ambiente de publicação é necessário desativar o conteúdo.
+Para remover uma página do ambiente de publicação, você desativa o conteúdo.
 
 Para desativar uma página:
 
 1. No console Sites, selecione a página que deseja desativar.
-1. Selecione **Desativar**, no menu superior ou no suspenso, no item da página selecionada. Será solicitado que você confirme a exclusão.
+1. Selecionar **Desativar**, no menu superior ou no suspenso, no item da página selecionada. Você receberá uma solicitação para confirmar a exclusão.
 
    ![screen_shot_2012-02-08at14859pm](assets/screen_shot_2012-02-08at14859pm.png)
 
-1. Atualize o console [Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) e o conteúdo é marcado em vermelho, indicando que não está mais publicado.
+1. Atualize o [Console de sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) e o conteúdo é marcado em vermelho, indicando que não está mais publicado.
 
    ![screen_shot_2012-02-08at15018pm](assets/screen_shot_2012-02-08at15018pm.png)
 
-## Ativar/desativar posteriormente {#activate-deactivate-later}
+## Ativar/desativar mais tarde {#activate-deactivate-later}
 
 ### Ativar mais tarde {#activate-later}
 
 Para agendar a ativação para um momento posterior:
 
-1. No console Sites, vá para o menu **Ativar** e selecione **Ativar mais tarde**.
-1. Na caixa de diálogo que é aberta, forneça a data e a hora para a ativação e clique em **OK**. Isso cria uma versão da página que é ativada no horário especificado.
+1. No console Sites, acesse **Ativar** e selecione **Ativar mais tarde**.
+1. Na caixa de diálogo que é aberta, forneça a data e hora para a ativação e clique em **OK**. Isso cria uma versão da página que é ativada no horário especificado.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
-Ao ativar mais tarde, um fluxo de trabalho é iniciado para ativar esta versão de página na hora especificada. Por outro lado, a desativação mais tarde inicia um fluxo de trabalho para desativar esta versão de página em uma hora específica.
+A ativação posterior inicia um fluxo de trabalho para ativar esta versão de página no horário especificado. Por outro lado, a desativação mais tarde inicia um fluxo de trabalho para desativar esta versão de página em um horário específico.
 
-Caso deseje cancelar essa ativação/desativação, acesse o console [Fluxo de trabalho ](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) para encerrar o fluxo de trabalho correspondente.
+Caso deseje cancelar essa ativação/desativação, acesse o [Console do fluxo de trabalho](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) para encerrar o fluxo de trabalho correspondente.
 
-### Desativar mais tarde  {#deactivate-later}
+### Desativar mais tarde {#deactivate-later}
 
 Para agendar a desativação para um momento posterior:
 
-1. No console Sites, vá para o menu **Desativar** e selecione **Desativar mais tarde**.
+1. No console Sites, acesse **Desativar** e selecione **Desativar mais tarde**.
 
-1. Na caixa de diálogo que é aberta, forneça a data e a hora para a desativação e clique em **OK**.
+1. Na caixa de diálogo que é aberta, forneça a data e hora para a desativação e clique em **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
-**Ao desativar mais tarde,** um fluxo de trabalho é iniciado para desativar esta versão de página na hora específica.
+**Desativação posterior** r inicia um fluxo de trabalho para desativar esta versão de página em um horário específico.
 
-Caso deseje cancelar essa desativação, acesse o console [Fluxo de trabalho ](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) para encerrar o fluxo de trabalho correspondente.
+Caso deseje cancelar a desativação, acesse [Console do fluxo de trabalho](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) para encerrar o fluxo de trabalho correspondente.
 
-## Ativação/Desativação agendada (Tempo desligado/ligado)  {#scheduled-activation-deactivation-on-off-time}
+## Ativação/Desativação Programada (Tempo Ligado/Desligado) {#scheduled-activation-deactivation-on-off-time}
 
-Você pode agendar horários para publicar/desfazer a publicação de uma página usando o **Tempo ligado** e **Tempo desligado** que podem ser definidos nas [Propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+Você pode agendar horários para publicar/desfazer a publicação de uma página usando o **Hora de ligar** e **Hora de desligar** que pode ser definido na variável [Propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-### Determinar o status de publicação da página - Interface do usuário clássica {#determining-page-publication-status-classic-ui}
+### Determinar o status de publicação da página - Interface clássica {#determining-page-publication-status-classic-ui}
 
-O status pode ser visualizado no [console Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). As cores indicam o status da publicação.
+O status pode ser visualizado na [Console de sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). As cores indicam o status da publicação.
 
-## Ativar uma seção completa (árvore) do seu site  {#activating-a-complete-section-tree-of-your-website}
+## Ativar uma seção completa (árvore) do seu site {#activating-a-complete-section-tree-of-your-website}
 
-Na guia **Sites** é possível ativar as páginas individuais. Ao entrar ou atualizar um número considerável de páginas de conteúdo - todos residentes na mesma página raiz - pode ser mais fácil ativar toda a árvore em uma ação. Também é possível a execução de prática para emular uma ativação e destacar quais as páginas foram ativadas.
+No **Sites** é possível ativar as páginas individuais. Ao entrar ou atualizar um número considerável de páginas de conteúdo - todas residentes na mesma página raiz - pode ser mais fácil ativar toda a árvore em uma ação. Também é possível executar um exercício de prática para emular uma ativação e destacar quais páginas foram ativadas.
 
-1. Abra o console **Ferramentas** selecionando-o na página **Bem-vindo** e, em seguida, clique com o duplo **Replicação** para abrir o console ( `http://localhost:4502/etc/replication.html`).
+1. Abra o **Ferramentas** ao selecioná-lo no **Welcome** e clique duas vezes em **Replicação** para abrir o console ( `http://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. No console **Replicação**, clique na **árvore Activate**.
+1. No **Replicação** , clique em **Ativar árvore**.
 
    A seguinte janela ( `http://localhost:4502/etc/replication/treeactivation.html`) será exibida.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Insira **Caminho do Start**. Isso especifica o caminho para a raiz da seção que você deseja ativar (publicar). Esta página e todas as páginas abaixo são consideradas para ativação (ou usadas na emulação se uma Execução de prática for selecionada).
+1. Insira o **Caminho de início**. Isso especifica o caminho para a raiz da seção que você deseja ativar (publicar). Esta página e todas as páginas embaixo são consideradas para a ativação (ou usadas na emulação caso uma Execução de prática seja selecionada).
 1. Ative os critérios de seleção conforme necessário:
 
    * **Somente modificados**: ativar apenas as páginas que foram modificadas.
-   * **Somente ativados**: somente ativar páginas que (já) foram ativadas. Atua como uma forma de reativação.
-   * **Ignorar desativados**: ignorar todas as páginas que foram desativadas.
+   * **Somente ativados**: ativar apenas as páginas que (já) foram ativadas. Atua como uma forma de reativação.
+   * **Ignorar desativado**: ignorar quaisquer páginas que tenham sido desativadas.
 
 1. Selecione a ação que deseja executar:
 
-   1. Selecione **Execução de prática** se quiser verificar quais páginas *iriam* serão ativadas. Isto é apenas uma emulação, nenhuma página será ativada.
-   1. Selecione **Ativar** se quiser ativar as páginas.
-
+   1. Selecionar **Execução de prática** se você deseja verificar quais páginas *will* ser ativada. Isso é apenas uma emulação, nenhuma página será ativada.
+   1. Selecionar **Ativar** se desejar ativar as páginas.
